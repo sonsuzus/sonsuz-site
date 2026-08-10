@@ -15,7 +15,7 @@ redirect_from:
 
 Javascript' de veri tutmak için kullandığımız javascript veri tiplerini **2 ayrı grupta** ele alabiliriz.
 
-**Basit Veri Tipleri:** [String](https://sonsuzus.github.io/search.html?q=string), [Number](https://sonsuzus.github.io/search.html?q=number), [Boolean](https://sonsuzus.github.io/search.html?q=boolean) ve undefined.
+**Basit Veri Tipleri:** [String](https://program.sonsuz.us/search.html?q=string), [Number](https://program.sonsuz.us/search.html?q=number), [Boolean](https://program.sonsuz.us/search.html?q=boolean) ve undefined.
 
 **Referans Tipler:** **Dizi**, **Nesne, Fonksiyon**ve **null** veri tipleridir. 
 

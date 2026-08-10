@@ -288,7 +288,7 @@ Uzun tamsayı değeri oluşturmanın üç yolu vardır. İlki normal bir tamsay�
 
 ## 12.7 Harfleri saymak
 
-[7.bölümde](https://sonsuzus.github.io/posts/python-programlama-ders-07/), bir karakter dizisindeki harfleri sayan bir fonksiyon yazmıştık. Bu problemin daha genel bir biçimi karakter dizisindeki her bir harfin ne kadar yer aldığını gösteren bir sıklık grafiğinin (histogram) oluşturulmasıdır.
+[7.bölümde](https://program.sonsuz.us/posts/python-programlama-ders-07/), bir karakter dizisindeki harfleri sayan bir fonksiyon yazmıştık. Bu problemin daha genel bir biçimi karakter dizisindeki her bir harfin ne kadar yer aldığını gösteren bir sıklık grafiğinin (histogram) oluşturulmasıdır.
 
 Bu şekildeki bir sıklık grafiği bir metin dosyasının sıkıştırılmasında yararlı olacaktır. Çünkü farklı harfler farklı sıklıklarla yer alacaktır, böylece sık karşılaşılan harfler için daha kısa kodlar, seyrek harfler için daha uzun kodlar kullanabiliriz.
 
@@ -438,7 +438,7 @@ def add_fruit(inventory, fruit, quantity=0):
 
 Çözümünüz doctestleri geçmelidir.
 
-- `alice_words.py` isminde bir program yazın, programınız [alice_in_wonderland.txt](https://sonsuzus.github.io/dosya/alice_in_wonderland.txt) dosyasındaki tüm kelimelerin alfabetik listesini her bir kelimenin kaç kere yer aldığıyla birlikte `alice_words.txt` adındaki metin dosyasına yazsın. Çıktınızın ilk 10 satırı aşağıdakine benzeyecektir:
+- `alice_words.py` isminde bir program yazın, programınız [alice_in_wonderland.txt](https://program.sonsuz.us/dosya/alice_in_wonderland.txt) dosyasındaki tüm kelimelerin alfabetik listesini her bir kelimenin kaç kere yer aldığıyla birlikte `alice_words.txt` adındaki metin dosyasına yazsın. Çıktınızın ilk 10 satırı aşağıdakine benzeyecektir:
 
 ```
 Kelime            Adet

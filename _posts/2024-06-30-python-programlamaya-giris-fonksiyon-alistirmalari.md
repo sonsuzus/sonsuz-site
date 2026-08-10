@@ -16,9 +16,9 @@ redirect_from:
 
 
 
-[Python fonksiyonlarının uygulamalarının](https://sonsuzus.github.io/posts/python-programlamaya-giris-fonksiyonlara-ornekler/) ardından, şimdi kendiniz uygulayabileceğiniz birkaç fonksiyon alıştırması verelim. Çözümleri bulmak size ait. Buradaki alıştırmaların ötesinde, daha önceki bölümlerde verdiğimiz örnekleri de bir fonksiyona dönüştürmeyi deneyebilirsiniz. Ayrıca internet kaynaklarında pek çok değişik konuda alıştırma örneği bulabilirsiniz.
+[Python fonksiyonlarının uygulamalarının](https://program.sonsuz.us/posts/python-programlamaya-giris-fonksiyonlara-ornekler/) ardından, şimdi kendiniz uygulayabileceğiniz birkaç fonksiyon alıştırması verelim. Çözümleri bulmak size ait. Buradaki alıştırmaların ötesinde, daha önceki bölümlerde verdiğimiz örnekleri de bir fonksiyona dönüştürmeyi deneyebilirsiniz. Ayrıca internet kaynaklarında pek çok değişik konuda alıştırma örneği bulabilirsiniz.
 
-Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://sonsuzus.github.io/category/program) kategorimize bakabilirsiniz. 
+Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://program.sonsuz.us/category/program) kategorimize bakabilirsiniz. 
 
 * Fonksiyona verilen en küçük parametreyi bulma
 * Fibonacci sayıları

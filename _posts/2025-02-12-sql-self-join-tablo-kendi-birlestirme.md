@@ -18,9 +18,9 @@ redirect_from:
 
 ![](/img/sql/petronas-twin-towers.png)
 
-İlişkisel veri tabanları ile çalışırken veriler tek bir tabloda olabildiği gibi birden fazla tabloda da bulunabilir. [JOIN](https://sonsuzus.github.io/search.html?q=join) işlemleri ile birden fazla [tablo](https://sonsuzus.github.io/search.html?q=tablo), ortak bulunan kolonlar yardımı ile birleştirilerek sorgulama işlemleri yapılabilmektedir. 
+İlişkisel veri tabanları ile çalışırken veriler tek bir tabloda olabildiği gibi birden fazla tabloda da bulunabilir. [JOIN](https://program.sonsuz.us/search.html?q=join) işlemleri ile birden fazla [tablo](https://program.sonsuz.us/search.html?q=tablo), ortak bulunan kolonlar yardımı ile birleştirilerek sorgulama işlemleri yapılabilmektedir. 
 
-[Self Join](https://sonsuzus.github.io/search.html?q=self%20join) ifadesi SQL’de bulunan **özel bir JOIN** işlemidir. Birbirinden farklı iki veya daha çok tablonun birleştirildiği diğer JOIN metotlarının aksine, Self Join işleminde **tek bir tablo vardır ve bu tablo kendisi ile birleştirilir.** Join işlemi tablo ve tablonun bir kopyası ile gerçekleşir.
+[Self Join](https://program.sonsuz.us/search.html?q=self%20join) ifadesi SQL’de bulunan **özel bir JOIN** işlemidir. Birbirinden farklı iki veya daha çok tablonun birleştirildiği diğer JOIN metotlarının aksine, Self Join işleminde **tek bir tablo vardır ve bu tablo kendisi ile birleştirilir.** Join işlemi tablo ve tablonun bir kopyası ile gerçekleşir.
 ``
 ![](/img/sql/sql-join-tipleri.png)
 
@@ -57,7 +57,7 @@ Yazının geri kalanında teorik olarak bahsettiğimiz self join ifadesini gerç
 
 **Örnek veri seti:** Northwind Veri Tabanı (Türkçe)
 
-[Örnek Veriyi İndir](https://sonsuzus.github.io/dosya/Northwind.rar)
+[Örnek Veriyi İndir](https://program.sonsuz.us/dosya/Northwind.rar)
 
 ---
 

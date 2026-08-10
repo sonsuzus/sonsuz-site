@@ -30,13 +30,13 @@ tags:
   - kitap
 ---
 
-Geometri problemlerinde kolay koda dökülebilecek bir çözüm bulmak genellikle zordur; özel durum sayısı fazladır. İyi bir yaklaşım, özel durumları minimize eden matematiksel araçlar seçmektir. Bu bölümdeki temel araçlar **[karmaşık sayılar](https://sonsuzus.github.io/search.html?q=karma%C5%9F%C4%B1k%20say%C4%B1lar)** ve **[vektörel çarpım](https://sonsuzus.github.io/search.html?q=vekt%C3%B6rel%20%C3%A7arp%C4%B1m)** olacaktır.
+Geometri problemlerinde kolay koda dökülebilecek bir çözüm bulmak genellikle zordur; özel durum sayısı fazladır. İyi bir yaklaşım, özel durumları minimize eden matematiksel araçlar seçmektir. Bu bölümdeki temel araçlar **[karmaşık sayılar](https://program.sonsuz.us/search.html?q=karma%C5%9F%C4%B1k%20say%C4%B1lar)** ve **[vektörel çarpım](https://program.sonsuz.us/search.html?q=vekt%C3%B6rel%20%C3%A7arp%C4%B1m)** olacaktır.
 
 **Örnek:** Bir dörtgenin alanı, köşeleri $s = (a+b+c)/2$ olmak üzere Heron Formülü ile iki üçgene bölerek hesaplanabilir; ama hangi köşegen seçileceği özel durumlar doğurur. Bunun yerine doğrudan genel formül:
 
 $$\text{Alan} = \frac{|x_1 y_2 - x_2 y_1 + x_2 y_3 - x_3 y_2 + x_3 y_4 - x_4 y_3 + x_4 y_1 - x_1 y_4|}{2}$$
 
-Bu formülün avantajı **[hiç özel durum içermemesi](https://sonsuzus.github.io/search.html?q=hi%C3%A7%20%C3%B6zel%20durum%20i%C3%A7ermemesi)** ve tüm çokgenlere genellenebilmesidir.
+Bu formülün avantajı **[hiç özel durum içermemesi](https://program.sonsuz.us/search.html?q=hi%C3%A7%20%C3%B6zel%20durum%20i%C3%A7ermemesi)** ve tüm çokgenlere genellenebilmesidir.
 ``
 
 ## 29.1 Karmaşık Sayılar

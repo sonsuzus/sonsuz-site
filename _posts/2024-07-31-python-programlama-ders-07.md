@@ -271,7 +271,7 @@ Bu tarz hesaplama şablonuna **euraka gezinimi** denilmektedir çünkü sonucu b
 
 ## 7.9 Döngü ve sayma
 
-Aşağıdaki program `a` harfinin bir karakter dizisinde kaç kere gözüktüğünü sayar, ve [6. bölümde](https://sonsuzus.github.io/posts/python-programlama-ders-06/) anlattığımız sayma şablonunun bir başka örneğidir:
+Aşağıdaki program `a` harfinin bir karakter dizisinde kaç kere gözüktüğünü sayar, ve [6. bölümde](https://program.sonsuz.us/posts/python-programlama-ders-06/) anlattığımız sayma şablonunun bir başka örneğidir:
 
 ```py
 fruit = "banana"

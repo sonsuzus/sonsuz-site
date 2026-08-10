@@ -18,7 +18,7 @@ redirect_from:
 
 ## 3.1 Tanımlar ve kullanım
 
-Programlama bağlamın, bir **[fonksiyon](https://sonsuzus.github.io/search.html?q=fonksiyon) (işlev)** belli bir işlemi gerçekleştirmek üzere isimlendirilmiş cümle (komut) serisidir. Bu işlem **fonksiyon tanımında** belirlenmiştir. Python'da, fonksiyon tanımı için sözdizimi şu şekildedir:
+Programlama bağlamın, bir **[fonksiyon](https://program.sonsuz.us/search.html?q=fonksiyon) (işlev)** belli bir işlemi gerçekleştirmek üzere isimlendirilmiş cümle (komut) serisidir. Bu işlem **fonksiyon tanımında** belirlenmiştir. Python'da, fonksiyon tanımı için sözdizimi şu şekildedir:
 ``
 
 ```py
@@ -26,9 +26,9 @@ def ISIM( PARAMETRE LISTESI ):
     CUMLELER
 ```
 
-Fonksiyonlar için dilediğiniz ismi kullanabilirsiniz, ancak değişkenlerde de olduğu gibi Python anahtar kelimelerini kullanamazsınız. [Parametre](https://sonsuzus.github.io/search.html?q=parametre) listesi fonksiyon tarafından kullanılması gereken, varsa, bilgileri belirtmek için kullanılır.
+Fonksiyonlar için dilediğiniz ismi kullanabilirsiniz, ancak değişkenlerde de olduğu gibi Python anahtar kelimelerini kullanamazsınız. [Parametre](https://program.sonsuz.us/search.html?q=parametre) listesi fonksiyon tarafından kullanılması gereken, varsa, bilgileri belirtmek için kullanılır.
 
-Fonksiyon içerisinde herhangi sayıda cümle bulunabilir, ancak `def`'e göre daha içerden başlamaları gerekiyor. Bu kitaptaki örneklerde standart içeriden başlama ([indentation](https://sonsuzus.github.io/search.html?q=indentation) - girinti) olan dört boşluk kullanılacaktır. Fonksiyon tanımlamaları **bileşik cümlelerin** ilk örneğidir, ileride de anlaşılacağı gibi hepsinin kalıbı aynıdır:
+Fonksiyon içerisinde herhangi sayıda cümle bulunabilir, ancak `def`'e göre daha içerden başlamaları gerekiyor. Bu kitaptaki örneklerde standart içeriden başlama ([indentation](https://program.sonsuz.us/search.html?q=indentation) - girinti) olan dört boşluk kullanılacaktır. Fonksiyon tanımlamaları **bileşik cümlelerin** ilk örneğidir, ileride de anlaşılacağı gibi hepsinin kalıbı aynıdır:
 
 1. Bir **başlık**, bir anahtar kelime ile başlar ve iki nokta üst üste ile biter
 2. Bir **gövde**, bir veya daha fazla Python cümlesi içerir ve herbiri başlığa göre eşit oranda içeriden - *Python standartı 4 boşluk karakteridir* - başlar.

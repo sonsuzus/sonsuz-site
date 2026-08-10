@@ -16,7 +16,7 @@ redirect_from:
 ---
 
 
-NumPy, [Python](https://sonsuzus.github.io/tags.html#python) programlama diline ait çok boyutlu dizilerle ve matrislerle çalışmamıza yardım eden ileri düzey matematiksel işlemler yapabileceğimiz bir kütüphanedir. Günümüzde özellikle [veri bilimi](https://sonsuzus.github.io/tags.html#veri) üzerine çalışanlar başta olmak üzere Numpy, Python programlayanlar tarafından çok sık kullanılan bir **kütüphanedir.**
+NumPy, [Python](https://program.sonsuz.us/tags.html#python) programlama diline ait çok boyutlu dizilerle ve matrislerle çalışmamıza yardım eden ileri düzey matematiksel işlemler yapabileceğimiz bir kütüphanedir. Günümüzde özellikle [veri bilimi](https://program.sonsuz.us/tags.html#veri) üzerine çalışanlar başta olmak üzere Numpy, Python programlayanlar tarafından çok sık kullanılan bir **kütüphanedir.**
 
 ## Numpy Nedir?
 

@@ -14,7 +14,7 @@ redirect_from:
 
 
 
-Önceki yazılarda verdiğimiz basit örneklerin ötesine geçip biraz daha elle tutulur [fonksiyon](https://sonsuzus.github.io/search.html?q=fonksiyon) örnekleri verelim.
+Önceki yazılarda verdiğimiz basit örneklerin ötesine geçip biraz daha elle tutulur [fonksiyon](https://program.sonsuz.us/search.html?q=fonksiyon) örnekleri verelim.
 
 * Asallık testi
 * Asal çarpanlar
@@ -24,7 +24,7 @@ redirect_from:
 
 ## Asallık testi
 
-[Döngülerden bahsederken](https://sonsuzus.github.io/posts/python-programlamaya-giris-donguler/), bir sayının asal olup olmadığını belirleyen bir program yazmıştık. Şimdi bunu bir fonksiyon haline getirelim. Parametre değeri bir asal sayıysa fonksiyonumuz `True` verecek, değilse `False` verecek.
+[Döngülerden bahsederken](https://program.sonsuz.us/posts/python-programlamaya-giris-donguler/), bir sayının asal olup olmadığını belirleyen bir program yazmıştık. Şimdi bunu bir fonksiyon haline getirelim. Parametre değeri bir asal sayıysa fonksiyonumuz `True` verecek, değilse `False` verecek.
 
 In [1]:
 
@@ -78,7 +78,7 @@ True
 
 ## Asal çarpanlar
 
-[Önceki bir bölümde](https://sonsuzus.github.io/posts/python-programlamaya-giris-dongulerle-problem-cozme/) bir sayının asal çarpanlarını ekrana basan bir döngü yazmıştık. O döngüyü bir fonksiyon içine koyalım ve verilen sayının asal çarpanları bir liste olarak geri verilsin.
+[Önceki bir bölümde](https://program.sonsuz.us/posts/python-programlamaya-giris-dongulerle-problem-cozme/) bir sayının asal çarpanlarını ekrana basan bir döngü yazmıştık. O döngüyü bir fonksiyon içine koyalım ve verilen sayının asal çarpanları bir liste olarak geri verilsin.
 
 In [4]:
 
@@ -262,7 +262,7 @@ Out[9]:
 
 ## Collatz dizisi uzunluğu
 
-Collatz dizisini [önceki bölümlerde görmüştük](https://sonsuzus.github.io/posts/python-programlamaya-giris-dongulerle-problem-cozme/). Bir dizide belli bir $n_0$ sayısından başlayıp $n_1$’i buluruz, $n_1$ ile $n_2$’yi buluruz, ve böyle gider. Collatz dizisinde bir sonraki sayıyı bulma kuralı şöyledir:
+Collatz dizisini [önceki bölümlerde görmüştük](https://program.sonsuz.us/posts/python-programlamaya-giris-dongulerle-problem-cozme/). Bir dizide belli bir $n_0$ sayısından başlayıp $n_1$’i buluruz, $n_1$ ile $n_2$’yi buluruz, ve böyle gider. Collatz dizisinde bir sonraki sayıyı bulma kuralı şöyledir:
 
 * $n_i$ çift sayıysa: $n_{i+1} = n_i/2$
 * $n_i$ tek sayıysa: $n_{i+1} = 3n_i+1$
@@ -336,7 +336,7 @@ Başlangıç = 79, dizi uzunluğu = 35, en büyük değer = 808.0
 
 ## Taylor serisiyle üstel fonksiyon
 
-[Döngü alıştırmaları bölümünde](https://sonsuzus.github.io/posts/python-programlamaya-giris-dongu-alistirmalari/) üstel fonksiyon $e^x$ değerini Taylor serisi ile bulmaktan bahsetmiştik.
+[Döngü alıştırmaları bölümünde](https://program.sonsuz.us/posts/python-programlamaya-giris-dongu-alistirmalari/) üstel fonksiyon $e^x$ değerini Taylor serisi ile bulmaktan bahsetmiştik.
 
 $$ e^x = \sum_{n=0}^{\infty} \frac {x^n}{n!} = 1 + x + \frac{1}{2}x^2 + \frac{1}{6}x^3 + \cdots$$
 

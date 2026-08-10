@@ -15,10 +15,10 @@ redirect_from:
 
 
 
-1. En uzun [Collatz](https://sonsuzus.github.io/search.html?q=collatz) zinciri
-2. Üstel fonksiyon [Taylor](https://sonsuzus.github.io/search.html?q=taylor) serisi
+1. En uzun [Collatz](https://program.sonsuz.us/search.html?q=collatz) zinciri
+2. Üstel fonksiyon [Taylor](https://program.sonsuz.us/search.html?q=taylor) serisi
 3. Karekök bulma
-4. Machin formülüyle [pi](https://sonsuzus.github.io/search.html?q=pi)’yi bulma
+4. Machin formülüyle [pi](https://program.sonsuz.us/search.html?q=pi)’yi bulma
 5. Lojistik fonksiyon ve kaos
 6. SIR salgın modeli
 

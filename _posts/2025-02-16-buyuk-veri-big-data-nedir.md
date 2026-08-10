@@ -19,7 +19,7 @@ redirect_from:
 ---
 
 
-Büyük [veri](https://sonsuzus.github.io/search.html?q=veri) (big data), geleneksel veri yönetim sistemleriyle depolanması, yönetilmesi ve analizi mümkün olmayan verilerdir. Büyük veri, [analiz](https://sonsuzus.github.io/search.html?q=analiz) edilmesi ve verimliliği arttırması için toplanan, anlamlı ve işlenebilir veriler bütünüdür.
+Büyük [veri](https://program.sonsuz.us/search.html?q=veri) (big data), geleneksel veri yönetim sistemleriyle depolanması, yönetilmesi ve analizi mümkün olmayan verilerdir. Büyük veri, [analiz](https://program.sonsuz.us/search.html?q=analiz) edilmesi ve verimliliği arttırması için toplanan, anlamlı ve işlenebilir veriler bütünüdür.
 
 Büyük verinin temel özellikleri şunlardır:
 

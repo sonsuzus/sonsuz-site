@@ -19,7 +19,7 @@ redirect_from:
 ---
 
 
-Bilimsel Programlama’ya Kolay Başlangıç serisinin [ilk yazısında](https://sonsuzus.github.io/posts/bilimsel-programlamaya-kolay-baslangic-1/) Hazırlık, Hesaplama ve Sonuçları Görselleştirme adımlarından bahsetmiş ve bunları serbest düşüş problemine uygulamıştık. [İkinci yazıda](https://sonsuzus.github.io/posts/bilimsel-programlamaya-kolay-baslangic-2/) ise Hesaplama adımından sonra Veri/Hata Analizi adımını eklemiş ve eğik atış problemini Euler sayısal metodu ile hesaplayarak hatamızı incelemiştik. Lakin tüm bunları Python’un kendi matematik kütüphanesi olan `math` ile gerçekleştirdik.
+Bilimsel Programlama’ya Kolay Başlangıç serisinin [ilk yazısında](https://program.sonsuz.us/posts/bilimsel-programlamaya-kolay-baslangic-1/) Hazırlık, Hesaplama ve Sonuçları Görselleştirme adımlarından bahsetmiş ve bunları serbest düşüş problemine uygulamıştık. [İkinci yazıda](https://program.sonsuz.us/posts/bilimsel-programlamaya-kolay-baslangic-2/) ise Hesaplama adımından sonra Veri/Hata Analizi adımını eklemiş ve eğik atış problemini Euler sayısal metodu ile hesaplayarak hatamızı incelemiştik. Lakin tüm bunları Python’un kendi matematik kütüphanesi olan `math` ile gerçekleştirdik.
 
 Serinin üçüncü yazısında ise `math`‘a oranla (genellikle) daha hızlı ve çok daha yetenekli olan `numpy` ve sonrasında da bunun üstüne bir kat daha çıkarak `scipy` kütüphanelerine terfi edeceğiz ve kolay yoldan bir ikinci derece diferansiyel denklem çözeceğiz. Bunun için Eğik Atış problemi yerine, nonlineer bir problem olan “iki cisim problemini”, yani Dünya’nın çevresindeki uyduların dinamiğini kullanacağız.
 
@@ -411,7 +411,7 @@ plt.show()
 
 ![](/img/bpg02.png)
 
-Grafikleri oluşturduğumuz kod [bir önceki yazıdakinden](https://sonsuzus.github.io/posts/bilimsel-programlamaya-kolay-baslangic-2/) pek farklı değil, ama eklediğimiz iki satırla eksenlerin ölçeklerini birbirine eşitlediğimize dikkat edin. Böylece daha gerçekçi bir fiziksel gösterim elde ettik.
+Grafikleri oluşturduğumuz kod [bir önceki yazıdakinden](https://program.sonsuz.us/posts/bilimsel-programlamaya-kolay-baslangic-2/) pek farklı değil, ama eklediğimiz iki satırla eksenlerin ölçeklerini birbirine eşitlediğimize dikkat edin. Böylece daha gerçekçi bir fiziksel gösterim elde ettik.
 
 Grafiklere yakından bakınca bir tuhaflık göze çarpıyor: ilk grafikte “saat 12” konumundan başlayıp saat yönünde dönüyoruz, ama başladığımız yere geri dönemiyoruz. Aynı durum hız için de geçerli. Normalde iki cisim problemi *periyodik* bir problem, enerji korunuyor ve bu nedenle de -gördüğümüz grafiklerin aksine- başladığımız konum ve hıza geri dönmeyi bekliyoruz. Diğer bir deyişle, potansiyel ve kinetik enerjinin toplamının değişmemesi gerekiyor. Bizim çözümümüzde enerjinin korunup korunmadığını test etmek için, başlangıç konum ve hızından hesapladığımız “referans” enerji değerinden, her yeni zaman adımında ne kadar sapıldığını kontrol etmemiz yeterli:
 

@@ -38,7 +38,7 @@ var names = 'çınar,sena,ada,yiğit';
 
 Bu şekilde bir string değişken tanımlaması yapabiliriz. Ancak her bir isme ulaşma ihtiyacı duyduğumuzda zorlanırız.
 
-Daha önceki [javascript string ve string metotları](https://sonsuzus.github.io/posts/js-string-metotlari/) dersinde öğrendiğimiz split() metodunu kullanarak string bilgiyi virgülden ayırarak elemanlara teker teker ulaşabiliriz.
+Daha önceki [javascript string ve string metotları](https://program.sonsuz.us/posts/js-string-metotlari/) dersinde öğrendiğimiz split() metodunu kullanarak string bilgiyi virgülden ayırarak elemanlara teker teker ulaşabiliriz.
 
 ```js
 var names = 'çınar,sena,ada,yiğit';

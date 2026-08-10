@@ -20,11 +20,11 @@ redirect_from:
 
 
 
-`Pandas` ile ilgili bu yazımızda [veri çerçevesi](https://sonsuzus.github.io/search.html?q=veri%20%C3%A7er%C3%A7evesi) (`DataFrame`) isimli veri yapısını ele alacağız. Önceki yazımızda etiketli verilerden oluşan [serileri](https://sonsuzus.github.io/posts/pandasa-giris-seriler/) görmüştük. [Seriler](https://sonsuzus.github.io/search.html?q=seriler) tek boyutlu bir veri yapısıyken, veri çerçevelerini her sütunu bir seriden oluşan iki boyutlu bir matris olarak düşünebiliriz. Serilerde bahsettiğimiz birçok yöntemi veri çerçevelerinde de kullanmak mümkün. Ayrıca SQL tablolarında kullanılan tablo birleştirme (`JOIN`) gibi işlemleri de `Pandas` ile yapmak mümkün.
+`Pandas` ile ilgili bu yazımızda [veri çerçevesi](https://program.sonsuz.us/search.html?q=veri%20%C3%A7er%C3%A7evesi) (`DataFrame`) isimli veri yapısını ele alacağız. Önceki yazımızda etiketli verilerden oluşan [serileri](https://program.sonsuz.us/posts/pandasa-giris-seriler/) görmüştük. [Seriler](https://program.sonsuz.us/search.html?q=seriler) tek boyutlu bir veri yapısıyken, veri çerçevelerini her sütunu bir seriden oluşan iki boyutlu bir matris olarak düşünebiliriz. Serilerde bahsettiğimiz birçok yöntemi veri çerçevelerinde de kullanmak mümkün. Ayrıca SQL tablolarında kullanılan tablo birleştirme (`JOIN`) gibi işlemleri de `Pandas` ile yapmak mümkün.
 
 ## Veri Çerçeveleri
 
-Veri çerçevelerini birden fazla serinin bir araya gelmiş hali olarak düşünebiliriz. Veri çerçeveleri de seriler gibi etiketli bir veri yapısıdır, ancak serilerden farkı iki boyutlu olmasıdır. Serilerdeki gibi etiket değerlerine [indeks](https://sonsuzus.github.io/search.html?q=indeks) (`index`) denir. Veri çerçeveleri `index` alanının yanında `columns` alanını da içeriyor. `columns` sütunların isimlerini içeren bir sıralı nesne.
+Veri çerçevelerini birden fazla serinin bir araya gelmiş hali olarak düşünebiliriz. Veri çerçeveleri de seriler gibi etiketli bir veri yapısıdır, ancak serilerden farkı iki boyutlu olmasıdır. Serilerdeki gibi etiket değerlerine [indeks](https://program.sonsuz.us/search.html?q=indeks) (`index`) denir. Veri çerçeveleri `index` alanının yanında `columns` alanını da içeriyor. `columns` sütunların isimlerini içeren bir sıralı nesne.
 
 Veri çerçevesi oluşturmak için serileri kullanmak mümkün. [Linkten](https://www.imf.org/external/pubs/ft/weo/2017/02/weodata/download.aspx) erişebileceğiniz IMF’nin gayrisafi yurt içi hasıla verisi ile ilk denemeyi yapabiliriz. 2016 ve 2017 yılları için serileri anlattığımız yazıdaki veri kümelerini oluşturalım.
 
@@ -120,7 +120,7 @@ Kore                   NaN   1411.04
 İtalya             1921.14   1850.74
 ```
 
-Veri çerçevesindeki değerlerin serilerdeki yerinden bağımsız olarak indeks alanına göre eşleştirildiğini görüyoruz. Ondalık işaretini virgüle çevirmek için aşağıdaki yerel ayarları kullanabiliriz. Aşağıdaki kutucukta yerel ayarları değiştiriyoruz ve ondalıklı sayıları formatlıyoruz. Son satırdaki `grouping = False` binlik işaretini kullanmayacağımızı belirtiyor. Yerel ayarların formatlama konusunda [dizeler](https://sonsuzus.github.io/posts/python-programlamaya-giris-15-dize-metodlari/) için yazılan yazıları incelemenizi tavsiye ederim.
+Veri çerçevesindeki değerlerin serilerdeki yerinden bağımsız olarak indeks alanına göre eşleştirildiğini görüyoruz. Ondalık işaretini virgüle çevirmek için aşağıdaki yerel ayarları kullanabiliriz. Aşağıdaki kutucukta yerel ayarları değiştiriyoruz ve ondalıklı sayıları formatlıyoruz. Son satırdaki `grouping = False` binlik işaretini kullanmayacağımızı belirtiyor. Yerel ayarların formatlama konusunda [dizeler](https://program.sonsuz.us/posts/python-programlamaya-giris-15-dize-metodlari/) için yazılan yazıları incelemenizi tavsiye ederim.
 
 In [3]:
 
@@ -420,7 +420,7 @@ print(df.head())
 4 2010-12-01 08:26:00        3,39      17850  United Kingdom   20,34  
 ```
 
-`FaturaNo` ve o faturaya ait toplam miktarı içeren yeni bir veri çerçevesi oluşturalım. `groupby` fonksiyonuyla her alışverişin toplam miktarını bulabiliriz. `Groupby` fonksiyonunun kullanımını [linkte](https://sonsuzus.github.io/posts/groupby/) anlatmıştık.
+`FaturaNo` ve o faturaya ait toplam miktarı içeren yeni bir veri çerçevesi oluşturalım. `groupby` fonksiyonuyla her alışverişin toplam miktarını bulabiliriz. `Groupby` fonksiyonunun kullanımını [linkte](https://program.sonsuz.us/posts/groupby/) anlatmıştık.
 
 In [15]:
 
@@ -511,7 +511,7 @@ print(df_yeni[df_yeni['FaturaNo'] == 536365])
 6        139,12  
 ```
 
-Tekrar eden verileri tekilleştirmek için `drop_duplicates` fonksiyonunu kullanabiliriz. Aşağıda müşteri numaralarını tekilleştirerek kaç müşteri olduğunu buluyoruz. Ben sütunları kopyalamayı tercih ettim. Bunu yapmamanız durumunda Python referans modelinden kaynaklı bir uyarı mesajı alacaksınız. Bu konu hakkında [referans modeli, sığ ve derin kopyalama](https://sonsuzus.github.io/posts/python-programlamaya-giris-18-python-referans-modeli-sig-ve-derin-kopyalama/) yazısını okumanızı tavsiye ederim.
+Tekrar eden verileri tekilleştirmek için `drop_duplicates` fonksiyonunu kullanabiliriz. Aşağıda müşteri numaralarını tekilleştirerek kaç müşteri olduğunu buluyoruz. Ben sütunları kopyalamayı tercih ettim. Bunu yapmamanız durumunda Python referans modelinden kaynaklı bir uyarı mesajı alacaksınız. Bu konu hakkında [referans modeli, sığ ve derin kopyalama](https://program.sonsuz.us/posts/python-programlamaya-giris-18-python-referans-modeli-sig-ve-derin-kopyalama/) yazısını okumanızı tavsiye ederim.
 
 In [17]:
 

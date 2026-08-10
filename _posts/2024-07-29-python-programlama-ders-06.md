@@ -22,7 +22,7 @@ redirect_from:
 
 Bilgisayarlar sıklıkla tekrarlayan görevleri otomatikleştirmek için kullanılmaktadır. Aynı veya benzer görevleri hatasız bir şekilde tekrarlama işlemi bilgisayarların iyi yaptığı, insanların ise zorlandığı bir şeydir.
 
-Bir komutlar kümesinin tekrar tekrar yürütülmesi işlemine **[yineleme](https://sonsuzus.github.io/search.html?q=yineleme) (iteration)** adı verilir. Yineleme çok yaygın olduğu için, Python bunu kolaylaştırmak için birkaç özellik sağlar. Daha önceki bölümlerde `for` deyimini gördük. `for` deyimi en sık kullanacağınız döngü komutu olacaktır. Fakat bu bölümde `while` deyimine bakacağız. Bu, azıcık farklı durumlarda yineleme yapmanın başka değişik yoludur.
+Bir komutlar kümesinin tekrar tekrar yürütülmesi işlemine **[yineleme](https://program.sonsuz.us/search.html?q=yineleme) (iteration)** adı verilir. Yineleme çok yaygın olduğu için, Python bunu kolaylaştırmak için birkaç özellik sağlar. Daha önceki bölümlerde `for` deyimini gördük. `for` deyimi en sık kullanacağınız döngü komutu olacaktır. Fakat bu bölümde `while` deyimine bakacağız. Bu, azıcık farklı durumlarda yineleme yapmanın başka değişik yoludur.
 ``
 
 ## 6.1 Birden fazla atama
@@ -36,7 +36,7 @@ bruce = 7
 print(bruce)
 ```
 
-Yukarıdaki programın çıktısı `5 7` şeklindedir, çünkü `bruce` değişkenini ilk görüntülememizden önce,değeri 5'tir, ve daha sonra ikinci görüntülemede 7 olmaktadır. İlk `print` cümlesindeki `bruce` değişkeninden sonra gelen end parametresi yeni bir satır yaratılmasını engeller, bu yüzden iki `print` cümlesinin çıktısı da aynı satırdadır. print() fonksiyonu hakkında daha detaylı kullanımı şu konuda bulabilirsiniz [print fonksiyonu](https://sonsuzus.github.io/posts/print-fonksiyonu/)
+Yukarıdaki programın çıktısı `5 7` şeklindedir, çünkü `bruce` değişkenini ilk görüntülememizden önce,değeri 5'tir, ve daha sonra ikinci görüntülemede 7 olmaktadır. İlk `print` cümlesindeki `bruce` değişkeninden sonra gelen end parametresi yeni bir satır yaratılmasını engeller, bu yüzden iki `print` cümlesinin çıktısı da aynı satırdadır. print() fonksiyonu hakkında daha detaylı kullanımı şu konuda bulabilirsiniz [print fonksiyonu](https://program.sonsuz.us/posts/print-fonksiyonu/)
 
 Aşağıda **birden fazla atama**'nın bir durum diyagramında nasıl gözüktüğünü inceleyebilirsiniz:
 
@@ -342,7 +342,7 @@ Buraya kadar herşey güzel. Bir sonraki adım **sarma (encapsulate)** ve **gene
 
 ## 6.10 Sarma (Encapsulation) ve genelleştirme
 
-Sarma (encapsulation) bir kod parçasını fonksiyon içerisine koymadır. Böylece fonksiyonlar tarafından sağlanan tüm avantajlardan yararlanmış olacağız. Şimdiye kadar iki sarma örneği gördük: [4. bölüm](https://sonsuzus.github.io/posts/python-programlama-ders-04/)deki `print_parity` ve [5. bölüm](https://sonsuzus.github.io/posts/python-programlama-ders-05/)deki `is_divisible` fonksiyonları.
+Sarma (encapsulation) bir kod parçasını fonksiyon içerisine koymadır. Böylece fonksiyonlar tarafından sağlanan tüm avantajlardan yararlanmış olacağız. Şimdiye kadar iki sarma örneği gördük: [4. bölüm](https://program.sonsuz.us/posts/python-programlama-ders-04/)deki `print_parity` ve [5. bölüm](https://program.sonsuz.us/posts/python-programlama-ders-05/)deki `is_divisible` fonksiyonları.
 
 Genelleştirme özgü bir şeyi alıp, örneğin ikinin çarpım katlarını yazmak gibi, onu daha genel bir hale getirmektir, herhangi bir tamsayının tüm çarpım katlarını yazmak gibi.
 

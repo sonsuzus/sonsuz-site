@@ -178,10 +178,10 @@ YazıYazıYazıYazıYazıYazıYazıYazı.
 #### Resimin Boyutunu Değiştirerek (HTML Kullanarak)
 
 ```html
-<img src="https://sonsuzus.github.io/img/son.jpg" alt="alt yazı" width="320">
+<img src="https://program.sonsuz.us/img/son.jpg" alt="alt yazı" width="320">
 ```
  
-<img src="https://sonsuzus.github.io/img/son.jpg" alt="Proje" width="320">
+<img src="https://program.sonsuz.us/img/son.jpg" alt="Proje" width="320">
 
 ### Kod
 

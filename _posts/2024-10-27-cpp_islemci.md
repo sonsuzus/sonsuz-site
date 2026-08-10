@@ -20,7 +20,7 @@ redirect_from:
 
 ## Aritmetik işlemciler
 
-C++ dilinde kullanılan 5 adet aritmetik [işlemci](https://sonsuzus.github.io/search.html?q=i%C5%9Flemci) aşağıda gösterilmektedir. İşlemciler [öncelik](https://sonsuzus.github.io/search.html?q=%C3%B6ncelik) sırasına göre sıralanmıştır:
+C++ dilinde kullanılan 5 adet aritmetik [işlemci](https://program.sonsuz.us/search.html?q=i%C5%9Flemci) aşağıda gösterilmektedir. İşlemciler [öncelik](https://program.sonsuz.us/search.html?q=%C3%B6ncelik) sırasına göre sıralanmıştır:
 
 C++ ilişkisel işlemcileri
 
@@ -31,7 +31,7 @@ C++ ilişkisel işlemcileri
 | / | Bölme |
 | % | Bölme işleminde kalanı verme |
 
-C++'da, işlemciler arasında öncelik sırası adı verilen bir kural vardır. İşlemci önceliği kavramının matematik derslerinde gördüğümüz konudan hiçbir farkı yoktur. Buna göre, eğer bir işlem satırında birden fazla işlemci kullanırsak, C++ işlemcilere öncelik sırasına göre işlem yapar. Bu şekilde işlem yapılınca, programlar bizim düşündüğünüzden farklı sonuçlar verebilir. Bazı işlemlerin önceliğini normal kuralların dışında belirlemek istediğimizde, işlemi [parantez](https://sonsuzus.github.io/search.html?q=parantez) içine almak yeterlidir.
+C++'da, işlemciler arasında öncelik sırası adı verilen bir kural vardır. İşlemci önceliği kavramının matematik derslerinde gördüğümüz konudan hiçbir farkı yoktur. Buna göre, eğer bir işlem satırında birden fazla işlemci kullanırsak, C++ işlemcilere öncelik sırasına göre işlem yapar. Bu şekilde işlem yapılınca, programlar bizim düşündüğünüzden farklı sonuçlar verebilir. Bazı işlemlerin önceliğini normal kuralların dışında belirlemek istediğimizde, işlemi [parantez](https://program.sonsuz.us/search.html?q=parantez) içine almak yeterlidir.
 
 > % işlemcisi dışında kalan bütün aritmetik işlemcilerini temel veri türlerinin tamamı ile birlikte kullanabiliiz. % işlemcisi ise bölme işleminin kalanını verdiğinden sadece int veri türü ile kullanılabilir.
 {: .prompt-tip }

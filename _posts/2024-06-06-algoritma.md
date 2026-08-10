@@ -10,11 +10,11 @@ tags:
 title: Algoritma
 ---
 
-Bir işin veya programın yapılması için adımlara bölünmüş halidir. Aslında hayatımızın her noktasında algoritmaları kullanırız farkında olmadan. Yemek yapmaktan araba kullanmaya kadar hepsi birer [algoritma](https://sonsuzus.github.io/tags.html#algoritma) içerir. Bu başlığımızda algoritma kurma yöntemlerini inceleyeceğiz. Takıldığınız konuları [discussions](https://github.com/sonsuzus/sonsuzus.github.io/discussions) bölümünde sorabilirsiniz.
+Bir işin veya programın yapılması için adımlara bölünmüş halidir. Aslında hayatımızın her noktasında algoritmaları kullanırız farkında olmadan. Yemek yapmaktan araba kullanmaya kadar hepsi birer [algoritma](https://program.sonsuz.us/tags.html#algoritma) içerir. Bu başlığımızda algoritma kurma yöntemlerini inceleyeceğiz. Takıldığınız konuları [discussions](https://github.com/sonsuzus/sonsuzus.github.io/discussions) bölümünde sorabilirsiniz.
 
 ## Programlama soruları
 
-Bu bölümde [programlama](https://sonsuzus.github.io/tags.html#programlama) ile ilgili sorular sorulacaktır. Çözümlerine ilgili programlama sayfalarından ulaşabilirsiniz.
+Bu bölümde [programlama](https://program.sonsuz.us/tags.html#programlama) ile ilgili sorular sorulacaktır. Çözümlerine ilgili programlama sayfalarından ulaşabilirsiniz.
 
 Kullanıcıya hikayesindeki karakterlerin isimleri sorulur ve o isimlerle hikaye yazdırılır.
 
@@ -111,7 +111,7 @@ Girilen bir sayının palindrom olup olmadığını tespit eder. (tersinden de o
 
 1000 e kadar olan asal sayıları yazdırması istenir.
 
-100 kişi bir pastayı bölüşmektedir. 1. kişi pastanın %1 ini, 2. kişi kalan pastanın %2 sini, 3. kişi kalan pastanın %3 nü ve böylece devam edip 100. kişi de kalan pastanın %100 ünü alır. [Soru](https://sonsuzus.github.io/tags.html#soru) en çok payı kaçıncı kişi almıştır.
+100 kişi bir pastayı bölüşmektedir. 1. kişi pastanın %1 ini, 2. kişi kalan pastanın %2 sini, 3. kişi kalan pastanın %3 nü ve böylece devam edip 100. kişi de kalan pastanın %100 ünü alır. [Soru](https://program.sonsuz.us/tags.html#soru) en çok payı kaçıncı kişi almıştır.
 
 Girilen 5 sayıdan en büyüğünü bulan programı yazınız.
 

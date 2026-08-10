@@ -102,7 +102,7 @@ Yazının geri kalanında, teorik olarak kullanım alanlarından bahsettiğimiz 
 
 **Örnek veri seti:** Northwind Veri Tabanı (Türkçe)
 
-[Örnek Veriyi İndir](https://sonsuzus.github.io/dosya/Northwind.rar)
+[Örnek Veriyi İndir](https://program.sonsuz.us/dosya/Northwind.rar)
 
 ---
 

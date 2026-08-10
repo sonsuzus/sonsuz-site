@@ -28,14 +28,14 @@ Geliştirdiğimiz veya parçası olduğumuz çalışmaları, temel dinamiklerine
 Bilimsel düşünceyi teşvik etmek, analitik problem çözme becerilerini geliştirmek ve teknolojiyi üretime dönüştürmek amacıyla yürütülen (veya danışmanlık yapılan) araştırma projeleridir. Teorik bilginin somut ve faydalı modellere dönüşmesinin en güzel örneklerini içerir.
 
 **MetaBilsem Projesi**
-Bilim ve Sanat Merkezleri (BİLSEM) arasında dijital bir köprü kurmayı hedefleyen; blok zincir (blockchain) uygulamaları ve metaverse kavramlarını eğitime entegre eden yenilikçi bir ağ projesidir. Sistem mimarisi ve proje detayları [MetaBilsem](https://sonsuzus.github.io) adresi üzerinden takip edilebilir.
+Bilim ve Sanat Merkezleri (BİLSEM) arasında dijital bir köprü kurmayı hedefleyen; blok zincir (blockchain) uygulamaları ve metaverse kavramlarını eğitime entegre eden yenilikçi bir ağ projesidir. Sistem mimarisi ve proje detayları [MetaBilsem](https://program.sonsuz.us) adresi üzerinden takip edilebilir.
 
 ### Strateji, Mantık ve Satranç
 
 Satranç, olasılıkların ve algoritmik düşüncenin en saf halidir. Profesyonel satranç geçmişimin bir yansıması olarak, yıllar içinde bu alanda büyük çaplı platformlar geliştirdim:
 * **Satranc.net:** 2000'li yıllarda Türkiye'de satranç kültürünü dijitale taşıyan ve alanında öncü olan platform.
 * **Chessmoon.com:** PHP ve SQL altyapısının Ajax ile harmanlanmasıyla kurulan, dünyanın farklı yerlerinden oyuncuların canlı turnuvalar yapabildiği dinamik satranç sunucusu.
-* **Alternatif Varyantlar:** Klasik kuralların sınırlarını zorlayan; rakipten alınan taşların kendi renginize dönüşerek tahtanın istenilen yerine tekrar sürülebildiği [Crazyhouse](https://sonsuzus.github.io/category/proje) gibi zihinsel esneklik gerektiren satranç türleri.
+* **Alternatif Varyantlar:** Klasik kuralların sınırlarını zorlayan; rakipten alınan taşların kendi renginize dönüşerek tahtanın istenilen yerine tekrar sürülebildiği [Crazyhouse](https://program.sonsuz.us/category/proje) gibi zihinsel esneklik gerektiren satranç türleri.
 
 ### Yapay Zeka ve Otomasyon Sistemleri
 

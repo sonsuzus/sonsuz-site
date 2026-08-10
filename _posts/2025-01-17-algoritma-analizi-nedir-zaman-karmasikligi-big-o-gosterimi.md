@@ -17,7 +17,7 @@ redirect_from:
   - /posts/algoritma-analizi-nedir-zaman-karmasikligi-big-o-gosterimi/
 ---
 
-**[Algoritma analizi](https://sonsuzus.github.io/search.html?q=algoritma%20analizi)**, algoritmanın yürütülmesi için gerekli kaynak miktarının belirlenmesidir. Belirli bir problemi çözen herhangi bir algoritmanın ihtiyaç duyduğu kaynaklar için teorik tahminler sağlar. Başka bir ifadeyle, *algoritmanın [performansı](https://sonsuzus.github.io/search.html?q=performans%C4%B1) ve [kaynak kullanımı](https://sonsuzus.github.io/search.html?q=kaynak%20kullan%C4%B1m%C4%B1)* konusunda yapılan teorik çalışmaların tümüne **algoritma analizi** denir.
+**[Algoritma analizi](https://program.sonsuz.us/search.html?q=algoritma%20analizi)**, algoritmanın yürütülmesi için gerekli kaynak miktarının belirlenmesidir. Belirli bir problemi çözen herhangi bir algoritmanın ihtiyaç duyduğu kaynaklar için teorik tahminler sağlar. Başka bir ifadeyle, *algoritmanın [performansı](https://program.sonsuz.us/search.html?q=performans%C4%B1) ve [kaynak kullanımı](https://program.sonsuz.us/search.html?q=kaynak%20kullan%C4%B1m%C4%B1)* konusunda yapılan teorik çalışmaların tümüne **algoritma analizi** denir.
 
 Buradaki çalışmalar, herhangi bir *programlama dilinden bağımsız* bir şekilde yürütülür ki gerçek anlamda sadece algoritmanın kendisini analiz edip bilimsel bir yaklaşım benimseyebilelim.
 
@@ -203,7 +203,7 @@ Bu üç durumu incelediğimize göre, *karmaşıklık analizinde* neden daha ço
 
 Aşağıdaki TA ve TB fonksiyonların çalışma zamanının, veri boyutuna göre nasıl değiştiğini gözlemleyelim.
 
-![Algoritma Analizi Çalışma Zamanı Veri Boyutu](/img/algo/Algoritma-analizi-çalışma-zamanı-veri-boyutu.png)
+![Algoritma Analizi Çalışma Zamanı Veri Boyutu](/img/algo/algoritma-analizi-calisma-zamani-veri-boyutu.png)
 
 Algoritma Analizinde Zaman Karmaşıklığı - Büyüme Oranı
 
@@ -277,7 +277,7 @@ while(i < 100):
 	# işlemler
 ```
 
-![Big-O Gösterimi -  Doğrusal Lineer Döngü - Algoritma](/img/algo/big-o-notasyonu-lineer-döngü.png)
+![Big-O Gösterimi -  Doğrusal Lineer Döngü - Algoritma](/img/algo/big-o-notasyonu-lineer-dongu.png)
 
 Big O Notasyonu Doğrusal Lineer Algoritma Grafiği
 
@@ -298,7 +298,7 @@ while(i >= 1):
 	# işlemler
 ```
 
-![big-o-notasyonu-logaritmik-döngü](/img/algo/big-o-notasyonu-logaritmik-döngü.png)
+![big-o-notasyonu-logaritmik-döngü](/img/algo/big-o-notasyonu-logaritmik-dongu.png)
 
 Büyük O Gösterimi Logaritmik Algoritma Örneği
 
@@ -322,7 +322,7 @@ while(i <= 100):
 	i += 1
 ```
 
-![big-o-notasyonu-karesel-döngü](/img/algo/big-o-notasyonu-karesel-döngü.png)
+![big-o-notasyonu-karesel-döngü](/img/algo/big-o-notasyonu-karesel-dongu.png)
 
 Big O Notation Karesel Algoritma (Loop)
 
@@ -337,7 +337,7 @@ while(i <= 10):
 	i += 1
 ```
 
-![big-o-notasyonu-lineer-logaritmik-döngü](/img/algo/big-o-notasyonu-lineer-logaritmik-döngü.png)
+![big-o-notasyonu-lineer-logaritmik-döngü](/img/algo/big-o-notasyonu-lineer-logaritmik-dongu.png)
 
 Büyük O Notasyonu Lineer-Logaritmik Algoritma Örneği
 

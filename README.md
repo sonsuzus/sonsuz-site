@@ -10,7 +10,7 @@ SonsuzUs, felsefe, mitoloji, matematik, fizik, kuantum fiziği, sosyoloji, psiko
 
 Web sitesini canlı olarak ziyaret etmek için aşağıdaki bağlantıyı kullanabilirsiniz:
 
-[https://sonsuzus.github.io](https://sonsuzus.github.io)
+[https://program.sonsuz.us](https://program.sonsuz.us)
 
 ## İçerik Kategorileri
 
@@ -64,7 +64,7 @@ SonsuzUs projesine katkıda bulunmaktan memnuniyet duyarız! Her türlü katkı 
 
 ## Lisans
 
-Bu proje, `LICENSE.md` dosyasında belirtilen lisans koşulları altında yayınlanmıştır.
+Bu proje, `lisans.md` dosyasında belirtilen lisans koşulları altında yayınlanmıştır.
 
 ## İletişim
 

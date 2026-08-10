@@ -19,7 +19,7 @@ Sator kareleri meşhur bir kelime dizilimi programıdır. Örneği şu şekilded
 
 ![](/img/sator-karesi.jpg)
 
-Kurallardan anlaşılacağa üzere her satır ve sütunda anlamlı kelimeler bulunuyor ve bunlar bazen birbirinin tersi olabiliyor. Anlamlı sator karelerini bulabilmek için öncelikle elimizde bir kelime veri tabanı olması gerekiyor. 60bin anlamlı kelimelerden oluşan veri tabanını indirmek için: [Türkçe Sözcük veritabanı](https://sonsuzus.github.io/dosya/words.py) na tıklayabilirsiniz. Ben doğrudan import ettiğim için .py dosyası haline getirdim, siz elinizdeki başka veritabanlarını da kullanabilirsiniz.
+Kurallardan anlaşılacağa üzere her satır ve sütunda anlamlı kelimeler bulunuyor ve bunlar bazen birbirinin tersi olabiliyor. Anlamlı sator karelerini bulabilmek için öncelikle elimizde bir kelime veri tabanı olması gerekiyor. 60bin anlamlı kelimelerden oluşan veri tabanını indirmek için: [Türkçe Sözcük veritabanı](https://program.sonsuz.us/dosya/words.py) na tıklayabilirsiniz. Ben doğrudan import ettiğim için .py dosyası haline getirdim, siz elinizdeki başka veritabanlarını da kullanabilirsiniz.
 
 Bundan sonra kodumuz bir kaç aşamadan geçiyor. Aşağıda kodlarla sator karelerini bulma girişimlerimiz olmuştur.
 

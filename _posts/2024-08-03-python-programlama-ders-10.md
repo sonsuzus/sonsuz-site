@@ -484,7 +484,7 @@ F
 >>>
 ```
 
-Aşağıdaki `countletters.py` programı [Alice in Wonderland](https://sonsuzus.github.io/dosya/alice_in_wonderland.txt) kitabındaki her bir karakterin kaç kere geçtiğini sayar:
+Aşağıdaki `countletters.py` programı [Alice in Wonderland](https://program.sonsuz.us/dosya/alice_in_wonderland.txt) kitabındaki her bir karakterin kaç kere geçtiğini sayar:
 
 ```py
 #
@@ -946,7 +946,7 @@ def longestword(wordset):
 
 Bu modülü kaydedin, daha sonra programlarınızda bu araçları kullanabilirsiniz.
 
-- [unsorted_fruits.txt](https://sonsuzus.github.io/dosya/unsorted_fruits.txt) dosyası her biri farklı bir karakterle başlayan 26 tane meyve içermektedir.
+- [unsorted_fruits.txt](https://program.sonsuz.us/dosya/unsorted_fruits.txt) dosyası her biri farklı bir karakterle başlayan 26 tane meyve içermektedir.
   
 Bu dosyayı (`unsorted_fruits.txt`) okuyan ve içerisindeki meyveleri alfabetik olarak sıralı bir şekilde `sorted_fruits.txt` dosyasına yazan `sort_fruits.py` isminde bir program yazın.
 

@@ -33,7 +33,7 @@ Geçen bölümde karakter dizilerinin genel özelliklerinden söz ettik. Bu böl
 
 ### replace()
 
-Karakter dizisi metotları arasında inceleyeceğimiz ilk [metot](https://sonsuzus.github.io/search.html?q=metot) `replace()` metodu olacak. [replace](https://sonsuzus.github.io/search.html?q=replace) kelimesi Türkçede *‘değiştirmek, yerine koymak’* gibi anlamlar taşır. İşte bu metodun yerine getirdiği görev de tam olarak budur. Yani bu metodu kullanarak bir karakter dizisi içindeki karakterleri başka karakterlerle değiştirebileceğiz.
+Karakter dizisi metotları arasında inceleyeceğimiz ilk [metot](https://program.sonsuz.us/search.html?q=metot) `replace()` metodu olacak. [replace](https://program.sonsuz.us/search.html?q=replace) kelimesi Türkçede *‘değiştirmek, yerine koymak’* gibi anlamlar taşır. İşte bu metodun yerine getirdiği görev de tam olarak budur. Yani bu metodu kullanarak bir karakter dizisi içindeki karakterleri başka karakterlerle değiştirebileceğiz.
 
 Peki bu metodu nasıl kullanacağız? Hemen bir örnek verelim:
 
@@ -50,7 +50,7 @@ Gördüğünüz gibi, `replace()` son derece yararlı ve kullanımı oldukça ko
 
 `karakter_dizisi.metot(parametre)`
 
-Metotlar karakter dizilerinden nokta ile ayrılır. Python’da bu yönteme *‘[noktalı gösterim](https://sonsuzus.github.io/search.html?q=noktal%C4%B1%20g%C3%B6sterim)’ (dot notation)* adı verilir.
+Metotlar karakter dizilerinden nokta ile ayrılır. Python’da bu yönteme *‘[noktalı gösterim](https://program.sonsuz.us/search.html?q=noktal%C4%B1%20g%C3%B6sterim)’ (dot notation)* adı verilir.
 
 Bu arada metotların görünüş ve kullanım olarak fonksiyonlara ne kadar benzediğine dikkat edin. Tıpkı fonksiyonlarda olduğu gibi, metotlar da birtakım parametreler alabiliyor.
 

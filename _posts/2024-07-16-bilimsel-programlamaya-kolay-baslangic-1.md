@@ -114,8 +114,8 @@ Bahsettiğimiz 3 adımdan Hazırlık kısmını hallettiğimize göre, Hesaplama
 
 Bu işi yapmanın iki yöntemi var:
 
-1. Karmaşık işler için eski usül “fonksiyon” tanımlama (hatırlatma için [buraya](https://sonsuzus.github.io/posts/python-programlamaya-giris-fonksiyonlar) ve [buraya](https://sonsuzus.github.io/posts/python-programlamaya-giris-fonksiyon-parametreleri/) bakabilirsiniz.)
-2. Basit sayılabilecek işler için *lambda* mekanizması (hatırlatma için [buraya](https://sonsuzus.github.io/posts/python-programlamaya-giris-isimsiz-fonksiyonlar) bakabilirsiniz)
+1. Karmaşık işler için eski usül “fonksiyon” tanımlama (hatırlatma için [buraya](https://program.sonsuz.us/posts/python-programlamaya-giris-fonksiyonlar) ve [buraya](https://program.sonsuz.us/posts/python-programlamaya-giris-fonksiyon-parametreleri/) bakabilirsiniz.)
+2. Basit sayılabilecek işler için *lambda* mekanizması (hatırlatma için [buraya](https://program.sonsuz.us/posts/python-programlamaya-giris-isimsiz-fonksiyonlar) bakabilirsiniz)
 
 İkisini de gösterecek örneklere bakalım; konumu eski usül fonksiyonla, hızı da lambda ile hesaplayalım:
 

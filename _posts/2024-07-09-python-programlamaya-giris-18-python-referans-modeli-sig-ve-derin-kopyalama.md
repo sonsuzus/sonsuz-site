@@ -17,7 +17,7 @@ redirect_from:
 
 
 
-Python Programlamaya Giriş yazı dizimizin bu bölümünün konusu, Python’da isimler ve nesnelerin eşleştirilmesinin ayrıntıları, ve bu ayrıntıların bazen nasıl bizi şaşırtabileceği. Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://sonsuzus.github.io/category/program) kategorimize bakabilirsiniz. 
+Python Programlamaya Giriş yazı dizimizin bu bölümünün konusu, Python’da isimler ve nesnelerin eşleştirilmesinin ayrıntıları, ve bu ayrıntıların bazen nasıl bizi şaşırtabileceği. Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://program.sonsuz.us/category/program) kategorimize bakabilirsiniz. 
 
 ## Nesneler ve referanslar
 

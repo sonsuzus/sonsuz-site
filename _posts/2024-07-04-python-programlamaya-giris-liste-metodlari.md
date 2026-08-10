@@ -16,13 +16,13 @@ redirect_from:
 
 
 
-Yazı dizimizin önceki bir bölümünde [Python’un öntanımlı veri tiplerini](https://sonsuzus.github.io/posts/python-programlamaya-giris-sayilar-aritmetik-temel-veri-yapilari/) yüzeysel bir şekilde işlemiştik. Bu yazıda ve takip eden birkaç yazıda liste, dize, sözlük ve küme veri tiplerini daha ayrıntılı işleyeceğiz ve bu tip verilerle yapılabilecek işlemleri sıralayacağız. Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://sonsuzus.github.io/category/program) kategorimize bakabilirsiniz.
+Yazı dizimizin önceki bir bölümünde [Python’un öntanımlı veri tiplerini](https://program.sonsuz.us/posts/python-programlamaya-giris-sayilar-aritmetik-temel-veri-yapilari/) yüzeysel bir şekilde işlemiştik. Bu yazıda ve takip eden birkaç yazıda liste, dize, sözlük ve küme veri tiplerini daha ayrıntılı işleyeceğiz ve bu tip verilerle yapılabilecek işlemleri sıralayacağız. Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://program.sonsuz.us/category/program) kategorimize bakabilirsiniz.
 
 ## Nesneler ve metodlar
 
-Temel kullanım için bunu bilmek çok gerekmese de, [Python](https://sonsuzus.github.io/search.html?q=python) nesneye yönelik (object-oriented) bir dildir. Python’da tanımladığınız her şey bir *nesnedir*. Nesneler özel veri yapılarıdır; içlerinde verilerin yanı sıra, o verilerle yapılabilecek işlemleri tanımlayan fonksiyonlar barındırırlar. Söz gelişi, bir liste nesnesinin içinde elemanların değerleri, elemanların ne tipte olduğu, kaç eleman bulunduğu gibi veriler bulunur. Ayrıca listeye eleman ekleme, eleman çıkarma, sıralama gibi işlemler yapan fonksiyonlar da listeyi tanımlayan kodun içindedir. Veri tipinin (sınıfın) tanımı içinde bulunan fonksiyonlara o nesnenin *metodları* denir.
+Temel kullanım için bunu bilmek çok gerekmese de, [Python](https://program.sonsuz.us/search.html?q=python) nesneye yönelik (object-oriented) bir dildir. Python’da tanımladığınız her şey bir *nesnedir*. Nesneler özel veri yapılarıdır; içlerinde verilerin yanı sıra, o verilerle yapılabilecek işlemleri tanımlayan fonksiyonlar barındırırlar. Söz gelişi, bir liste nesnesinin içinde elemanların değerleri, elemanların ne tipte olduğu, kaç eleman bulunduğu gibi veriler bulunur. Ayrıca listeye eleman ekleme, eleman çıkarma, sıralama gibi işlemler yapan fonksiyonlar da listeyi tanımlayan kodun içindedir. Veri tipinin (sınıfın) tanımı içinde bulunan fonksiyonlara o nesnenin *metodları* denir.
 
-Herhangi bir veri tipi içinde tanımlanmış isimleri (veri veya [metod](https://sonsuzus.github.io/search.html?q=metod)) `dir` fonksiyonuyla görebilirsiniz.
+Herhangi bir veri tipi içinde tanımlanmış isimleri (veri veya [metod](https://program.sonsuz.us/search.html?q=metod)) `dir` fonksiyonuyla görebilirsiniz.
 
 In [1]:
 
@@ -494,7 +494,7 @@ Out[7]:
 [1, 5, 1, 6, 4]
 ```
 
-Böyle bir kopya, `reverse` veya `sort` gibi [nesne](https://sonsuzus.github.io/search.html?q=nesne) içinde (in-place) değişiklik yapan metodlar kullanırken orijinal listenin değiştirilmemesini sağlar.
+Böyle bir kopya, `reverse` veya `sort` gibi [nesne](https://program.sonsuz.us/search.html?q=nesne) içinde (in-place) değişiklik yapan metodlar kullanırken orijinal listenin değiştirilmemesini sağlar.
 
 Aynı kopyalamayı dilimleme işlemi ile de yapabiliriz.
 

@@ -30,7 +30,7 @@ Tabii bu örnek bir kerelik işlemler için geçerli. Eğer bu işi binlerce ker
 
 Python’un başarısı sadece güzel tasarımından ve kullanım kolaylığından kaynaklanmıyor. Benzer kolaylıkta başka diller de var. Sözgelişi Ruby de sade, kolay öğrenilen ve güçlü bir dildir, ama Python kadar yaygınlaşamadı. Python’un sevilmesinin en büyük sebeplerinden biri, akla gelebilecek neredeyse her uygulama alanında çok kaliteli kütüphaneler ve API’lerin geliştirilmiş olması. Örneğin Web programlama çatısı Django, üç boyutlu veri görselleme için MayaVi, bilimsel hesaplama için SciPy, veri analizi için pandas, sembolik matematik için SymPy, dinamik web sayfalarından veri almak için Scrapy, görüntü işlemek için PIL, oyun geliştirmek için PyGame, grafik arayüz oluşturmak için wxWidgets ve pyQt, ve daha niceleri…
 
-![](https://sonsuzus.github.io/img/pythonveri.png)
+![](https://program.sonsuz.us/img/pythonveri.png)
 
 Bugün bir veri bilimci Python’u tek başına kullanmaz. Python çekirdeğinin çevresinde oluşan bir ekosistem içindeki modüller ve yazılımlar, veri bilimcilerin alet çantasının vazgeçilmez araçlarıdır. Hepsi açık kaynaklı olan bu araçların bazılarına göz atalım.
 

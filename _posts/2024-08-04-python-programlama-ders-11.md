@@ -159,7 +159,7 @@ Bu fonksiyon hata mesajı üretmeden çalışacaktır, ama yapmak istediğimizi 
 
 ## 11.4 Saf fonksiyonlar ve değiştiriciler - gözden geçirme
 
-[9. bölümde](https://sonsuzus.github.io/posts/python-programlama-ders-09/) listelerle ilişkili olarak *saf fonksiyonları* ve *değiştiricileri (modifier)* tartışmıştık. Tuplelar değiştirilemez olduklarına göre üzerlerine bir değiştirici yazamayız.
+[9. bölümde](https://program.sonsuz.us/posts/python-programlama-ders-09/) listelerle ilişkili olarak *saf fonksiyonları* ve *değiştiricileri (modifier)* tartışmıştık. Tuplelar değiştirilemez olduklarına göre üzerlerine bir değiştirici yazamayız.
 
 Burada değiştirici listenin ortasına yeni bir değer eklemektedir:
 

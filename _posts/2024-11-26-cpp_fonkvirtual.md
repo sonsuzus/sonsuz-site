@@ -36,14 +36,14 @@ class türetilen-sınıf public: ana-sınıf {
 
 ```
 
-Sanal bir fonksiyon oluşturmak için, ana sınıf içindeki fonksiyon bildiriminden önce [virtual](https://sonsuzus.github.io/search.html?q=virtual) anahtar kelimesi kullanılır. Sanal fonksiyon içeren bir sınıftan yeni bir sınıf türetildiğinde, türetilen her sınıf içinde sanal fonksiyon, virtual anahtar kelimesi kullanılmadan, yeniden tanımlanır ve fonksiyon içeriği yeniden düzenlenir.
+Sanal bir fonksiyon oluşturmak için, ana sınıf içindeki fonksiyon bildiriminden önce [virtual](https://program.sonsuz.us/search.html?q=virtual) anahtar kelimesi kullanılır. Sanal fonksiyon içeren bir sınıftan yeni bir sınıf türetildiğinde, türetilen her sınıf içinde sanal fonksiyon, virtual anahtar kelimesi kullanılmadan, yeniden tanımlanır ve fonksiyon içeriği yeniden düzenlenir.
 
-> Sanal fonksiyon ile, aynı isme sahip bir fonksiyon her sınıf için ayrı bir işlem yapacak şekilde tanımlanabilmektedir. Bu durum nesneye yönelik [programlamada çok biçimlilik](https://sonsuzus.github.io/posts/cpp_poly/) ([Polymorphism](https://sonsuzus.github.io/search.html?q=polymorphism)) özelliğinin bir sonucudur.
+> Sanal fonksiyon ile, aynı isme sahip bir fonksiyon her sınıf için ayrı bir işlem yapacak şekilde tanımlanabilmektedir. Bu durum nesneye yönelik [programlamada çok biçimlilik](https://program.sonsuz.us/posts/cpp_poly/) ([Polymorphism](https://program.sonsuz.us/search.html?q=polymorphism)) özelliğinin bir sonucudur.
 {: .prompt-tip }
 
 Sanal fonksiyonlar çalışma zamanı çok biçimlilik (Runtime Polymorphism) özelliği sağlar. Bu özellikle, virtual anahtar kelimesi derleyiciye fonksiyon bağlama işlemini derleme zamanında değil çalışma zamanında yapmasını bildirir.
 
-[İşaretçi](https://sonsuzus.github.io/posts/cpp_isaretci/) kullanarak erişim sağlamak sanal fonksiyonları sınıf içindeki diğer fonksiyonlardan farklı hale getirir. Ana sınıf türünden oluşturulan bir işaretçi ana sınıf ve ana sınıftan türetilen tüm sınıflar içindeki sanal fonksiyonlara erişim sağlayabilir.
+[İşaretçi](https://program.sonsuz.us/posts/cpp_isaretci/) kullanarak erişim sağlamak sanal fonksiyonları sınıf içindeki diğer fonksiyonlardan farklı hale getirir. Ana sınıf türünden oluşturulan bir işaretçi ana sınıf ve ana sınıftan türetilen tüm sınıflar içindeki sanal fonksiyonlara erişim sağlayabilir.
 
 İlk bakışta, ana sınıf içinde bildirimi yapılan sanal bir fonksiyonunun ana sınıftan türetilen bir sınıf içinde yeniden tanımlanması, fonksiyon için çoklu işlem tanımlama (overloading) işlemi ile benzerlik gösterir. Ancak, türetilen sınıf içindeki sanal fonksiyonun yeniden tanımlanmasında kullanılan bildirim yapısı ana sınıf içindeki sanal fonksiyon ile aynı olmalıdır. Fonksiyon çoklu işlem tanımlama işleminde fonksiyon parametre sayısı ve veri türlerinden birisi mutlaka farklı olmalıdır. Ayrıca, fonksiyonun geri döndürdüğü değer de farklı olabilir. Eğer türetilen sınıf içindeki sanal fonksiyon bildirim yapısı ana sınıf içindekinden farklı olursa, fonksiyonun sanal özelliği kaybolur ve fonksiyon çoklu işlem tanımlama işlemi uygulanır.
 

@@ -15,7 +15,7 @@ redirect_from:
   - /posts/cpp-vektor-kullanimi/
 ---
 
-Bu yazıda, C++ Standart Kütüphanesi'nin (STL - Standard Template Library) en güçlü ve sık kullanılan veri yapılarından biri olan **vektörleri (vectors)** detaylı bir şekilde inceleyeceğiz. [Vektörler](https://sonsuzus.github.io/search.html?q=vekt%C3%B6rler), C++ programcılarına dinamik boyutlu dizilerle çalışma imkanı sunarak bellek yönetimi ve veri depolama konularında büyük kolaylık sağlar. Gelin, vektörlerin ne olduğuna, nasıl kullanıldığına ve geleneksel C-stili dizilere göre avantajlarına birlikte göz atalım.
+Bu yazıda, C++ Standart Kütüphanesi'nin (STL - Standard Template Library) en güçlü ve sık kullanılan veri yapılarından biri olan **vektörleri (vectors)** detaylı bir şekilde inceleyeceğiz. [Vektörler](https://program.sonsuz.us/search.html?q=vekt%C3%B6rler), C++ programcılarına dinamik boyutlu dizilerle çalışma imkanı sunarak bellek yönetimi ve veri depolama konularında büyük kolaylık sağlar. Gelin, vektörlerin ne olduğuna, nasıl kullanıldığına ve geleneksel C-stili dizilere göre avantajlarına birlikte göz atalım.
 
 ## Vektör Nedir?
 
@@ -27,9 +27,9 @@ Vektörler, `vector` başlık dosyası (`#include <vector>`) altında tanımlanm
 
 Geleneksel C-stili dizilere kıyasla vektörlerin birçok avantajı vardır:
 
-**[Dinamik Boyutlandırma](https://sonsuzus.github.io/search.html?q=dinamik%20boyutland%C4%B1rma):** En önemli avantajıdır. Dizilerin boyutu derleme zamanında sabitken, vektörlerin boyutu çalışma zamanında değişebilir.
+**[Dinamik Boyutlandırma](https://program.sonsuz.us/search.html?q=dinamik%20boyutland%C4%B1rma):** En önemli avantajıdır. Dizilerin boyutu derleme zamanında sabitken, vektörlerin boyutu çalışma zamanında değişebilir.
 
-**[Otomatik Bellek Yönetimi](https://sonsuzus.github.io/search.html?q=otomatik%20bellek%20y%C3%B6netimi):** Vektörler, elemanlar eklendikçe veya çıkarıldıkça belleği otomatik olarak yönetir. Bu, `new` ve `delete` (veya `malloc` ve `free`) ile manuel bellek yönetimi ihtiyacını azaltır ve bellek sızıntıları (memory leaks) gibi hataların önüne geçer.
+**[Otomatik Bellek Yönetimi](https://program.sonsuz.us/search.html?q=otomatik%20bellek%20y%C3%B6netimi):** Vektörler, elemanlar eklendikçe veya çıkarıldıkça belleği otomatik olarak yönetir. Bu, `new` ve `delete` (veya `malloc` ve `free`) ile manuel bellek yönetimi ihtiyacını azaltır ve bellek sızıntıları (memory leaks) gibi hataların önüne geçer.
 
 **Zengin Fonksiyon Seti:** Vektörler, eleman ekleme, silme, boyut sorgulama, kapasite yönetimi gibi birçok kullanışlı üye fonksiyona sahiptir.
 

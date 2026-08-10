@@ -17,7 +17,7 @@ redirect_from:
 
 
 
-*Python Programlamaya Giriş* dizimizin [bir önceki bölümünde](https://sonsuzus.github.io/posts/python-programlamaya-giris-15-dize-metodlari) dizelerle yapılabilecek işlemleri ve yaygın dize metodlarını özetledik. Bu yazıda dize metodlarından biri olan `format()` ile dize biçimlendirmeyi daha ayrıntılı işleyeceğiz. Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://sonsuzus.github.io/category/program) kategorimize bakabilirsiniz. 
+*Python Programlamaya Giriş* dizimizin [bir önceki bölümünde](https://program.sonsuz.us/posts/python-programlamaya-giris-15-dize-metodlari) dizelerle yapılabilecek işlemleri ve yaygın dize metodlarını özetledik. Bu yazıda dize metodlarından biri olan `format()` ile dize biçimlendirmeyi daha ayrıntılı işleyeceğiz. Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://program.sonsuz.us/category/program) kategorimize bakabilirsiniz. 
 
 Birçok durumda bir değişkende barındırılan bir değeri uygun bir biçimde düzenleyerek ekrana basmamız gerekir. Bu düzenlemeler ve biçimlendirmeler örneğin şöyle olabilirler:
 
@@ -41,7 +41,7 @@ Dize biçimlendirmenin bütün ayrıntıları için [Python belgelerine](https:/
 
 ## Konumla yerleştirme ve isimle yerleştirme
 
-En basit kullanımda, `format()`‘a verilen [değerler](https://sonsuzus.github.io/search.html?q=de%C4%9Ferler), kalıp dizesinin içinde küme parantezleri (`{}`) ile bırakılan boşluklara sırayla yerleştirilir.
+En basit kullanımda, `format()`‘a verilen [değerler](https://program.sonsuz.us/search.html?q=de%C4%9Ferler), kalıp dizesinin içinde küme parantezleri (`{}`) ile bırakılan boşluklara sırayla yerleştirilir.
 
 In [1]:
 
@@ -89,7 +89,7 @@ Out[3]:
 'Alıcı Adı: Fatma, Yaşı: 32, Şehir: Tekirdağ'
 ```
 
-Örneklerden gördüğümüz gibi, `format()` fonksiyonu kalıp dizesindeki boşluklarla değerleri eşleştirirken, fonksiyonlardaki [parametre eşleştirme](https://sonsuzus.github.io/posts/python-programlamaya-giris-fonksiyon-parametreleri) kurallarını kullanıyor. İlk gördüğümüz örnek *konumla eşleştirmeye* denk iken, son örneğimiz *isimle eşleştirme* yapıyor.
+Örneklerden gördüğümüz gibi, `format()` fonksiyonu kalıp dizesindeki boşluklarla değerleri eşleştirirken, fonksiyonlardaki [parametre eşleştirme](https://program.sonsuz.us/posts/python-programlamaya-giris-fonksiyon-parametreleri) kurallarını kullanıyor. İlk gördüğümüz örnek *konumla eşleştirmeye* denk iken, son örneğimiz *isimle eşleştirme* yapıyor.
 
 Bu sebepten, fonksiyon çağrılarındaki *parametre çözme* kuralları da aynen uygulanabilir. Mesela:
 
