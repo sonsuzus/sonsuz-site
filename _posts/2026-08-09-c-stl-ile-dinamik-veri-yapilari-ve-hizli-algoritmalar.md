@@ -14,7 +14,7 @@ tags:
 
 C++ Standart Şablon Kütüphanesi, yani STL (Standard Template Library), tekerleği yeniden icat etmek yerine güvenilir parçalarla hızlı yazılım üretmenin yoludur. Dinamik diziler, bağlı listeler, yığınlar ve hazır algoritmalar sayesinde hem kod miktarı azalır hem de yıllardır test edilmiş uygulamalardan yararlanılır. Asıl güç, veri yapısını doğru probleme; algoritmayı da doğru veri düzenine eşleştirmekte yatar.
 
-<!--more-->
+``
 
 STL üç ana fikrin birleşimidir: **container** (veriyi tutar), **iterator** (veri üzerinde dolaşır) ve **algorithm** (veriye işlem uygular). Bu ayrım oldukça değerlidir: `std::sort`, hangi sınıftan geldiğini umursamadan rastgele erişim sunan bir aralık üzerinde çalışır. Böylece veri ile işlem birbirine sıkı sıkıya bağlanmaz.
 

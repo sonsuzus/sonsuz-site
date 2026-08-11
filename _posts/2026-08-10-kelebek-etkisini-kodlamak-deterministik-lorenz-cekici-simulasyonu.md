@@ -12,7 +12,7 @@ tags:
 
 Bir kelebeğin kanat çırpışı gerçekten fırtına yaratır mı? Meteorolojik anlamda bu cümle biraz şiirseldir; fakat Lorenz çekicisi, çok daha ilginç bir gerçeği gösterir: Sistem tamamen deterministik kurallarla çalışsa bile başlangıçtaki ufacık farklar zamanla devasa sonuçlara dönüşebilir. Bu projede aynı denklemleri iki neredeyse özdeş başlangıç noktasıyla çözecek, ardından yollarının nasıl ayrıldığını izleyeceğiz.
 
-<!--more-->
+``
 
 Lorenz sistemi, atmosferdeki konveksiyon hareketini basitleştirmek için Edward Lorenz tarafından geliştirilen üç diferansiyel denklemden oluşur:
 
