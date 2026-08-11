@@ -12,7 +12,7 @@ tags:
 
 Ham bir ses kaydı, zaman içinde ölçülmüş örneklerden oluşan bir dizidir: $x[n]$. Bu diziyi yalnızca dinlemek yerine matematiksel olarak dönüştürmek; örneğin elektrik şebekesi uğultusunu temizlemek, mekânsal yankı eklemek veya stereo algısını değiştirmek mümkündür. Çentik filtre, yankı ve faz kaydırma; sinyal işlemenin frekans, zaman ve faz eksenlerinde nasıl çalıştığını gösteren üç güçlü efekttir.
 
-<!--more-->
+``
 
 Dijital ses, sürekli zamanlı $x(t)$ dalgasının örneklenmiş hâlidir. Örnekleme frekansı $f_s$ ise, Nyquist kuralına göre temsil edilebilecek en yüksek frekans $f_s/2$ olur. Örneğin 44.100 Hz ile kaydedilen bir sesin teorik üst sınırı 22.050 Hz'dir. Efekt tasarlarken gecikme sürelerini örnek sayısına, hedef frekansları ise normalize açısal frekansa çevirmek gerekir:
 
