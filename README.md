@@ -6,6 +6,8 @@ Bu depo, **SonsuzUs** web sitesinin kaynak kodunu barındırmaktadır. SonsuzUs,
 
 SonsuzUs, felsefe, mitoloji, matematik, fizik, kuantum fiziği, sosyoloji, psikoloji, satranç, zeka soruları ve programlama gibi geniş bir yelpazede konuları ele almaktadır. Bu depo, sitenin GitHub Pages üzerinden yayınlanan statik içeriğini yönetmek için kullanılmaktadır.
 
+Bazı değişimleri ve gelişmeleri burada belirteceğim.
+
 ## Canlı Site
 
 Web sitesini canlı olarak ziyaret etmek için aşağıdaki bağlantıyı kullanabilirsiniz:
