@@ -19,9 +19,9 @@ $$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$$
 
 Burada $\alpha$ ve $\beta$ karmaşık sayılardır; ölçüm olasılıkları ise Born kuralıyla hesaplanır: $P(0)=|\alpha|^2$, $P(1)=|\beta|^2$ ve toplamları 1 olmalıdır. Klasik bit kesin bir kutudayken, kübit ölçülene kadar iki kutunun da kapısını aralık bırakır. Bu, “aynı anda her cevabı hesaplıyor” gibi romantik ama eksik bir anlatımdır: Asıl güç, doğru cevapları güçlendiren **girişim** desenlerindedir.
 
-| Kavram | Klasik karşılığı | Kuantum davranışı |
-|---|---|---|
-| Bit / kübit | 0 veya 1 | $\alpha|0\rangle+\beta|1\rangle$ |
+| Kavram      | Klasik karşılığı | Kuantum davranışı                            |
+| ----------- | ---------------- | -------------------------------------------- |
+| Bit / kübit | 0 veya 1         | $\alpha\lvert 0\rangle+\beta\lvert 1\rangle$ |
 | Rastgelelik | İşlemden önce veya sonra seçilir | Ölçüm anında olasılıksal sonuç oluşur |
 | Bağıntı | Ayrı değişkenlerle saklanır | Dolanıklıkta tek bir ortak durum vardır |
 | Maliyet | $n$ bit için $n$ değer | $n$ kübit için $2^n$ genlik |
