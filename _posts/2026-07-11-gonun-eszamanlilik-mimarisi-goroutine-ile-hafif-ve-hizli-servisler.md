@@ -12,6 +12,9 @@ tags:
 ---
 
 Go’da eşzamanlılık, “aynı anda çok iş yapıyormuş gibi” görünen kod yazmaktan daha fazlasıdır; dilin tasarım felsefesine gömülü bir üretkenlik süper gücüdür. Binlerce arka plan görevini, ağ isteğini, kuyruk işini veya zamanlayıcıyı klasik thread maliyetlerine boğulmadan yönetmek istiyorsanız, goroutine’ler tam olarak bu sahneye davul zurna ile girer.
+
+![Go concurrency ve goroutine mimarisi](/img/goroutine-concurrency.svg)
+
 ``
 
 Go’nun concurrency yaklaşımını anlamanın ilk adımı şu ayrımı netleştirmektir: **Concurrency** aynı zaman aralığında birden fazla işle ilerleyebilme yeteneğidir; **parallelism** ise gerçekten aynı anda, farklı CPU çekirdeklerinde çalışmaktır. Yani concurrency bir tasarım modeli, parallelism ise donanımın sunduğu fiziksel imkândır.

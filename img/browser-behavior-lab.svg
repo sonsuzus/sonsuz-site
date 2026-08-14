@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Tarayıcı davranış laboratuvarı</title>
+  <desc id="desc">JavaScript ile kullanıcı tepkileri, DOM etkileşimleri ve davranış ölçümünü gösteren teknik grafik.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9ff"/>
+      <stop offset="100%" stop-color="#f3f7ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef5ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#6b8cff"/>
+      <stop offset="100%" stop-color="#4ad6c0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#4a5571" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" rx="22" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="52" y="52" width="236" height="214" rx="18" fill="url(#panel)" stroke="#dfeaff" stroke-width="2"/>
+    <rect x="68" y="68" width="204" height="18" rx="9" fill="#eef3ff"/>
+    <circle cx="86" cy="77" r="5" fill="#ff6b6b"/>
+    <circle cx="103" cy="77" r="5" fill="#ffd93d"/>
+    <circle cx="120" cy="77" r="5" fill="#6ee7a8"/>
+
+    <rect x="80" y="118" width="180" height="34" rx="10" fill="#edf4ff"/>
+    <rect x="80" y="164" width="180" height="14" rx="7" fill="#e7eefc"/>
+    <rect x="80" y="190" width="150" height="14" rx="7" fill="#e7eefc"/>
+    <rect x="80" y="216" width="120" height="14" rx="7" fill="#e7eefc"/>
+
+    <circle cx="100" cy="136" r="22" fill="#6b8cff" opacity="0.18"/>
+    <rect x="92" y="128" width="16" height="16" rx="4" fill="#6b8cff"/>
+    <text x="130" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#2f4d7a">A/B</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="332" y="58" width="250" height="214" rx="18" fill="url(#panel)" stroke="#dfeaff" stroke-width="2"/>
+
+    <rect x="356" y="82" width="96" height="52" rx="12" fill="#edf4ff"/>
+    <text x="404" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b5e87">Tepki</text>
+    <text x="404" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" font-weight="700" fill="#2f4d7a">412ms</text>
+
+    <rect x="468" y="82" width="96" height="52" rx="12" fill="#edf4ff"/>
+    <text x="516" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b5e87">Doğruluk</text>
+    <text x="516" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" font-weight="700" fill="#2f4d7a">86%</text>
+
+    <g>
+      <rect x="356" y="154" width="208" height="82" rx="16" fill="#eef9ff" stroke="#cfe2ff"/>
+      <path d="M370 210 L420 190 L465 200 L510 170 L548 184" stroke="url(#accent)" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="370" cy="210" r="5" fill="#4f7cff"/>
+      <circle cx="420" cy="190" r="5" fill="#4f7cff"/>
+      <circle cx="465" cy="200" r="5" fill="#4f7cff"/>
+      <circle cx="510" cy="170" r="5" fill="#4f7cff"/>
+      <circle cx="548" cy="184" r="5" fill="#4f7cff"/>
+    </g>
+
+    <g>
+      <rect x="356" y="246" width="208" height="12" rx="6" fill="#e6edf9"/>
+      <rect x="356" y="246" width="116" height="12" rx="6" fill="url(#accent)"/>
+    </g>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" fill="#3f5b86">
+    <text x="52" y="300" font-size="18" font-weight="700">DOM + event + timing</text>
+    <text x="248" y="300" font-size="12">user behavior analytics</text>
+  </g>
+</svg>

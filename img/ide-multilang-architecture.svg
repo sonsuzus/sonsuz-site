@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title"> Çoklu dil IDE mimarisi </title>
+  <desc id="desc">Tek çalışma alanında editör, LSP, DAP, görev çalıştırıcısı ve eklentilerden oluşan modern IDE grafik tasarımı.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6f9ff"/>
+      <stop offset="100%" stop-color="#eff7f4"/>
+    </linearGradient>
+    <linearGradient id="ideGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#2d6cdf"/>
+      <stop offset="100%" stop-color="#5ab3ff"/>
+    </linearGradient>
+    <linearGradient id="layerGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f3f8ff"/>
+      <stop offset="100%" stop-color="#eef7ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#2d3b53" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" rx="22" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="62" y="58" width="168" height="204" rx="20" fill="#ffffff" stroke="#dfeaff" stroke-width="2"/>
+    <text x="146" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#294d7d">Editor</text>
+
+    <rect x="90" y="108" width="112" height="12" rx="6" fill="#dfe9ff"/>
+    <rect x="90" y="130" width="98" height="12" rx="6" fill="#eaf0ff"/>
+    <rect x="90" y="152" width="110" height="12" rx="6" fill="#dfe9ff"/>
+    <rect x="90" y="174" width="82" height="12" rx="6" fill="#eaf0ff"/>
+    <rect x="90" y="196" width="94" height="12" rx="6" fill="#dfe9ff"/>
+    <rect x="90" y="218" width="120" height="12" rx="6" fill="#eaf0ff"/>
+
+    <g>
+      <rect x="258" y="74" width="132" height="50" rx="16" fill="url(#layerGrad)" stroke="#bfd9ff"/>
+      <text x="324" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#355f9c">LSP</text>
+
+      <rect x="258" y="138" width="132" height="50" rx="16" fill="url(#layerGrad)" stroke="#bfd9ff"/>
+      <text x="324" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#355f9c">DAP</text>
+
+      <rect x="258" y="202" width="132" height="50" rx="16" fill="url(#layerGrad)" stroke="#bfd9ff"/>
+      <text x="324" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#355f9c">Tasks</text>
+    </g>
+
+    <g>
+      <rect x="432" y="74" width="132" height="50" rx="16" fill="#eef7ff" stroke="#bfd9ff"/>
+      <text x="498" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#355f9c">Python</text>
+
+      <rect x="432" y="138" width="132" height="50" rx="16" fill="#eef7ff" stroke="#bfd9ff"/>
+      <text x="498" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#355f9c">TypeScript</text>
+
+      <rect x="432" y="202" width="132" height="50" rx="16" fill="#eef7ff" stroke="#bfd9ff"/>
+      <text x="498" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#355f9c">Go</text>
+    </g>
+
+    <g stroke="#5b8fe8" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M230 160 H258"/>
+      <path d="M390 99 H432"/>
+      <path d="M390 163 H432"/>
+      <path d="M390 227 H432"/>
+    </g>
+
+    <g>
+      <rect x="292" y="10" width="170" height="42" rx="14" fill="url(#ideGrad)"/>
+      <text x="377" y="37" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#ffffff">IDE</text>
+    </g>
+
+    <g>
+      <circle cx="302" cy="120" r="9" fill="#69c2ff"/>
+      <circle cx="302" cy="184" r="9" fill="#69c2ff"/>
+      <circle cx="302" cy="248" r="9" fill="#69c2ff"/>
+      <circle cx="520" cy="120" r="9" fill="#7ad9a1"/>
+      <circle cx="520" cy="184" r="9" fill="#7ad9a1"/>
+      <circle cx="520" cy="248" r="9" fill="#7ad9a1"/>
+    </g>
+  </g>
+</svg>

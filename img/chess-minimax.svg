@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Satranç motoru ve minimax karar ağacı</title>
+  <desc id="desc">Küçük, hafif ve satranç motoru temalı SVG görseli.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f9f7f2"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <linearGradient id="boardGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f7efe4"/>
+      <stop offset="100%" stop-color="#e9d9b0"/>
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f4c96d"/>
+      <stop offset="100%" stop-color="#e8a93d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6a6a6a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="22"/>
+
+  <g filter="url(#shadow)">
+    <rect x="62" y="54" width="220" height="220" rx="18" fill="url(#boardGrad)" stroke="#d9b985" stroke-width="2"/>
+
+    <g transform="translate(80 72)">
+      <g>
+        <rect width="28" height="28" fill="#f4e9d3"/>
+        <rect x="28" width="28" height="28" fill="#b78d57"/>
+        <rect x="56" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="84" width="28" height="28" fill="#b78d57"/>
+        <rect x="112" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="140" width="28" height="28" fill="#b78d57"/>
+        <rect x="168" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="196" width="28" height="28" fill="#b78d57"/>
+
+        <rect y="28" width="28" height="28" fill="#b78d57"/>
+        <rect x="28" y="28" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="56" y="28" width="28" height="28" fill="#b78d57"/>
+        <rect x="84" y="28" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="112" y="28" width="28" height="28" fill="#b78d57"/>
+        <rect x="140" y="28" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="168" y="28" width="28" height="28" fill="#b78d57"/>
+        <rect x="196" y="28" width="28" height="28" fill="#f4e9d3"/>
+
+        <rect y="56" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="28" y="56" width="28" height="28" fill="#b78d57"/>
+        <rect x="56" y="56" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="84" y="56" width="28" height="28" fill="#b78d57"/>
+        <rect x="112" y="56" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="140" y="56" width="28" height="28" fill="#b78d57"/>
+        <rect x="168" y="56" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="196" y="56" width="28" height="28" fill="#b78d57"/>
+
+        <rect y="84" width="28" height="28" fill="#b78d57"/>
+        <rect x="28" y="84" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="56" y="84" width="28" height="28" fill="#b78d57"/>
+        <rect x="84" y="84" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="112" y="84" width="28" height="28" fill="#b78d57"/>
+        <rect x="140" y="84" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="168" y="84" width="28" height="28" fill="#b78d57"/>
+        <rect x="196" y="84" width="28" height="28" fill="#f4e9d3"/>
+
+        <rect y="112" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="28" y="112" width="28" height="28" fill="#b78d57"/>
+        <rect x="56" y="112" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="84" y="112" width="28" height="28" fill="#b78d57"/>
+        <rect x="112" y="112" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="140" y="112" width="28" height="28" fill="#b78d57"/>
+        <rect x="168" y="112" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="196" y="112" width="28" height="28" fill="#b78d57"/>
+
+        <rect y="140" width="28" height="28" fill="#b78d57"/>
+        <rect x="28" y="140" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="56" y="140" width="28" height="28" fill="#b78d57"/>
+        <rect x="84" y="140" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="112" y="140" width="28" height="28" fill="#b78d57"/>
+        <rect x="140" y="140" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="168" y="140" width="28" height="28" fill="#b78d57"/>
+        <rect x="196" y="140" width="28" height="28" fill="#f4e9d3"/>
+
+        <rect y="168" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="28" y="168" width="28" height="28" fill="#b78d57"/>
+        <rect x="56" y="168" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="84" y="168" width="28" height="28" fill="#b78d57"/>
+        <rect x="112" y="168" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="140" y="168" width="28" height="28" fill="#b78d57"/>
+        <rect x="168" y="168" width="28" height="28" fill="#f4e9d3"/>
+        <rect x="196" y="168" width="28" height="28" fill="#b78d57"/>
+      </g>
+
+      <g>
+        <circle cx="84" cy="142" r="10" fill="#f3f5f7" stroke="#343a40" stroke-width="1.5"/>
+        <circle cx="112" cy="170" r="10" fill="#2d3748" stroke="#dfe7f6" stroke-width="1.5"/>
+        <circle cx="168" cy="96" r="10" fill="#f3f5f7" stroke="#343a40" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+
+  <g stroke="#7a8aa3" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M330 110 L410 90"/>
+    <path d="M330 110 L410 150"/>
+    <path d="M410 90 L490 70"/>
+    <path d="M410 90 L490 110"/>
+    <path d="M410 150 L490 150"/>
+    <path d="M410 150 L490 190"/>
+  </g>
+
+  <g>
+    <circle cx="330" cy="110" r="18" fill="url(#treeGrad)" stroke="#c98c2f" stroke-width="2"/>
+    <circle cx="410" cy="90" r="16" fill="#e7f1ff" stroke="#5f7ea4" stroke-width="2"/>
+    <circle cx="410" cy="150" r="16" fill="#e7f1ff" stroke="#5f7ea4" stroke-width="2"/>
+    <circle cx="490" cy="70" r="14" fill="#f7df9c" stroke="#b77a16" stroke-width="2"/>
+    <circle cx="490" cy="110" r="14" fill="#f7df9c" stroke="#b77a16" stroke-width="2"/>
+    <circle cx="490" cy="150" r="14" fill="#f7df9c" stroke="#b77a16" stroke-width="2"/>
+    <circle cx="490" cy="190" r="14" fill="#f7df9c" stroke="#b77a16" stroke-width="2"/>
+
+    <text x="330" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">MAX</text>
+    <text x="410" y="96" text-anchor="middle" font-size="10" font-weight="700" fill="#355c8a">M</text>
+    <text x="410" y="156" text-anchor="middle" font-size="10" font-weight="700" fill="#355c8a">M</text>
+    <text x="490" y="75" text-anchor="middle" font-size="10" font-weight="700" fill="#6b4a12">+</text>
+    <text x="490" y="115" text-anchor="middle" font-size="10" font-weight="700" fill="#6b4a12">-</text>
+    <text x="490" y="155" text-anchor="middle" font-size="10" font-weight="700" fill="#6b4a12">+</text>
+    <text x="490" y="195" text-anchor="middle" font-size="10" font-weight="700" fill="#6b4a12">-</text>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" fill="#465365">
+    <text x="92" y="286" font-size="18" font-weight="700">Minimax</text>
+    <text x="214" y="286" font-size="12" fill="#5b6a7c">karar ağacı</text>
+  </g>
+</svg>

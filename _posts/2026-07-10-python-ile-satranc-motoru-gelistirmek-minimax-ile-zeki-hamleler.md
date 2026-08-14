@@ -12,6 +12,8 @@ tags:
 ---
 
 Satranç motoru yazmak, kulağa “büyük ustaların laboratuvarı” gibi gelse de aslında algoritmik düşünceyi öğrenmek için harika bir oyun alanıdır. Python ile basit bir bot geliştirerek taşların değerini hesaplayabilir, olası hamleleri ağaç gibi düşünebilir ve minimax algoritmasıyla “ben oynarsam ne olur, rakip cevap verirse ne olur?” sorusunu kodla cevaplayabilirsiniz.
+![Satranç motoru ve minimax karar ağacı](/img/chess-minimax.svg)
+
 ``
 Satrançta her hamle yeni bir oyun durumu üretir. Bu durumları düğüm, hamleleri de kenar kabul edersek elimizde kocaman bir **karar ağacı** oluşur. Motorun amacı bu ağacı tamamen gezmek değildir; çünkü satrançta olası oyun sayısı astronomiktir. Bunun yerine belirli bir derinliğe kadar bakar, konumu puanlar ve en mantıklı yolu seçer.
 

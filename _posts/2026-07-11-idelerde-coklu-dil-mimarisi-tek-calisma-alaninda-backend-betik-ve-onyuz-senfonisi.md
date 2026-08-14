@@ -13,7 +13,11 @@ tags:
 ---
 
 Modern bir IDE artık sadece renkli parantez gösteren bir metin editörü değil; adeta küçük bir yazılım işletim sistemi. Aynı çalışma alanında TypeScript ile önyüz geliştirirken, Python betikleriyle otomasyon çalıştırabilir, Go ya da Java servislerini debug edebilir ve tüm bu parçaları tek bir proje akışı gibi yönetebilirsiniz. Çoklu dil mimarisi tam da burada devreye girer: IDE, farklı dillerin araçlarını ortak bir orkestrada buluşturur.
+
+![IDE çoklu dil mimarisi](/img/ide-multilang-architecture.svg)
+
 ``
+
 Bu mimarinin kalbinde şu fikir vardır: IDE her dili doğrudan kendi içinde yeniden icat etmez; bunun yerine dil sunucuları, hata ayıklama adaptörleri, görev çalıştırıcıları ve eklentilerle konuşur. Yani editör kısmı kullanıcı arayüzüdür, zeka ise çoğunlukla arka plandaki servislerden gelir. Bu ayrım sayesinde aynı ekranda React bileşeni yazarken, arka planda veritabanı migrasyonu hazırlayan bir betik de çalışabilir.
 
 Teorik olarak sistemi şu denklemle düşünebiliriz: $IDE = Editör + LSP + DAP + TaskRunner + Eklenti$. Burada LSP, Language Server Protocol yani dil sunucusu protokolüdür. Kod tamamlama, sembole gitme, hata işaretleme gibi özellikleri sağlar. DAP, Debug Adapter Protocol ile hata ayıklama dünyasını standartlaştırır. TaskRunner ise derleme, test, lint ve deploy gibi komutları yönetir.

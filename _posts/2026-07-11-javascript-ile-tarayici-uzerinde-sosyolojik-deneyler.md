@@ -12,6 +12,9 @@ tags:
 ---
 
 Tarayıcı, sadece butonlara tıkladığımız bir ekran değil; aynı zamanda küçük ölçekli davranış deneyleri yapabileceğimiz harika bir laboratuvardır. JavaScript sayesinde kullanıcıların seçimlerini, tepki sürelerini, dikkat kaymalarını ve karar örüntülerini analiz eden etkileşimli psikoloji ya da zeka testleri tasarlayabiliriz. Elbette burada amaç “insanı çözmek” değil; etik sınırlar içinde, anonim ve öğretici deneyimler üretmektir.
+
+![Tarayıcı davranış laboratuvarı](/img/browser-behavior-lab.svg)
+
 ``
 
 Bu tür uygulamaların temelinde üç kavram vardır: **uyaran**, **tepki** ve **ölçüm**. Uyaran; ekranda gösterilen soru, görsel, renk ya da görevdir. Tepki; kullanıcının tıklaması, yazması, sürüklemesi veya beklemesidir. Ölçüm ise bu tepkinin zamana, doğruluğa veya tutarlılığa göre sayısallaştırılmasıdır. Basit bir modelle kullanıcı davranış skoru şöyle düşünülebilir: $S = w_1 x_1 + w_2 x_2 + w_3 x_3$. Burada $x$ değerleri davranış ölçümlerini, $w$ değerleri ise bu ölçümlerin ağırlıklarını temsil eder.

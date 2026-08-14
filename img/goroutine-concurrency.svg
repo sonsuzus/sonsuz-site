@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Go concurrency and goroutine architecture</title>
+  <desc id="desc">Goroutine, channel ve scheduler temalı hafif Go görseli.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f5faff"/>
+      <stop offset="100%" stop-color="#edf3ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#5aa9ff"/>
+      <stop offset="100%" stop-color="#1b7ef2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#5d6d83" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" rx="22" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="52" y="52" width="210" height="216" rx="18" fill="url(#panel)" stroke="#d5e5ff" stroke-width="2"/>
+
+    <g font-family="Segoe UI, Tahoma, sans-serif" fill="#2b4d75">
+      <text x="78" y="84" font-size="18" font-weight="700">Goroutine</text>
+      <text x="80" y="120" font-size="12">go worker()</text>
+      <text x="80" y="146" font-size="12">go fetch()</text>
+      <text x="80" y="172" font-size="12">go send()</text>
+      <text x="80" y="198" font-size="12">go retry()</text>
+      <text x="80" y="224" font-size="12">go queue()</text>
+      <text x="80" y="250" font-size="12">go stream()</text>
+    </g>
+
+    <g>
+      <rect x="296" y="78" width="110" height="36" rx="18" fill="url(#accent)"/>
+      <text x="351" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#ffffff">P</text>
+
+      <rect x="432" y="78" width="110" height="36" rx="18" fill="#f0f5ff" stroke="#a8c1f0"/>
+      <text x="487" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#3d6ca8">M</text>
+
+      <rect x="296" y="166" width="110" height="36" rx="18" fill="#f0f5ff" stroke="#a8c1f0"/>
+      <text x="351" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#3d6ca8">P</text>
+
+      <rect x="432" y="166" width="110" height="36" rx="18" fill="#f0f5ff" stroke="#a8c1f0"/>
+      <text x="487" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#3d6ca8">M</text>
+    </g>
+
+    <g stroke="#77a5ea" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M258 105 H296"/>
+      <path d="M406 96 H432"/>
+      <path d="M258 180 H296"/>
+      <path d="M406 183 H432"/>
+      <path d="M351 114 V166"/>
+      <path d="M487 114 V166"/>
+    </g>
+
+    <g>
+      <circle cx="274" cy="110" r="12" fill="#a5d4ff" stroke="#2b6ee8" stroke-width="2"/>
+      <circle cx="274" cy="184" r="12" fill="#a5d4ff" stroke="#2b6ee8" stroke-width="2"/>
+      <circle cx="351" cy="230" r="16" fill="#dff0d8" stroke="#4f9f64" stroke-width="2"/>
+      <circle cx="487" cy="230" r="16" fill="#dff0d8" stroke="#4f9f64" stroke-width="2"/>
+    </g>
+
+    <g font-family="Segoe UI, Tahoma, sans-serif" fill="#46607d">
+      <text x="328" y="236" font-size="12" font-weight="700">channel</text>
+      <text x="463" y="236" font-size="12" font-weight="700">queue</text>
+    </g>
+  </g>
+</svg>
