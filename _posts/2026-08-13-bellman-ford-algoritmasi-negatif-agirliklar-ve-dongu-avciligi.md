@@ -20,7 +20,7 @@ Bellman-Ford'un temel fikri **gevşetme** (relaxation) işlemidir. Bir kenar üz
 
 $$d[v] = \min(d[v],\ d[u] + w(u,v))$$
 
-Bu formülün küçük ama güçlü bir anlamı vardır: Kaynağa giden en iyi yolun, bir önceki düğüme kadar olan en iyi yolun üzerine son kenarın maliyetinin eklenmesiyle kurulabileceğini söyler. Algoritma tüm kenarları $|V|-1$ kez dolaşır. Çünkü negatif döngü içermeyen basit bir yol en fazla $|V|-1$ kenardan oluşabilir.
+Bu formülün küçük ama güçlü bir anlamı vardır: Kaynağa giden en iyi yolun, bir önceki düğüme kadar olan en iyi yolun üzerine son kenarın maliyetinin eklenmesiyle kurulabileceğini söyler. Algoritma tüm kenarları $$|V|-1$$ kez dolaşır. Çünkü negatif döngü içermeyen basit bir yol en fazla $$|V|-1$$ kenardan oluşabilir.
 
 | Özellik | Dijkstra | Bellman-Ford |
 |---|---|---|
@@ -34,7 +34,7 @@ Negatif ağırlığın neden sorun çıkardığını düşünelim. Dijkstra, en 
 
 Asıl dramatik durum negatif döngüdür. Örneğin $A \to B$ maliyeti $2$, $B \to C$ maliyeti $-5$ ve $C \to A$ maliyeti $1$ olsun. Döngünün toplamı $2-5+1=-2$ olur. Bu döngü her turda toplam maliyeti 2 azaltır. Dolayısıyla gerçek bir “en kısa” yol yoktur; döngü istenildiği kadar dönülerek maliyet $-\infty$ değerine yaklaştırılabilir.
 
-Algoritma, $|V|-1$ tur bittikten sonra tüm kenarları bir kez daha kontrol eder. Hâlâ bir kenar gevşetilebiliyorsa kaynak düğümden erişilebilen negatif döngü vardır. Python ile temel uygulama şöyledir:
+Algoritma, $$|V|-1$$ tur bittikten sonra tüm kenarları bir kez daha kontrol eder. Hâlâ bir kenar gevşetilebiliyorsa kaynak düğümden erişilebilen negatif döngü vardır. Python ile temel uygulama şöyledir:
 
 ```python
 def bellman_ford(vertex_count, edges, source):
