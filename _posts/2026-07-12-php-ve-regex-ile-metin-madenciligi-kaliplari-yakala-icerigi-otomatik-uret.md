@@ -80,3 +80,6 @@ echo $clean;
 Bu yaklaşım özellikle moderasyon sistemlerinde, log temizleme işlemlerinde ve veri anonimleştirmede işe yarar. Yine de regex her sorunun çekici değildir. HTML ayrıştırma için karmaşık yapılarda DOMDocument daha güvenlidir; parola doğrulamada regex yardımcıdır ama tek başına güvenlik politikası değildir.
 
 Sonuç olarak PHP ve regex ikilisi, metin yığınları içinde düzen arayan geliştiriciler için hızlı, ekonomik ve güçlü bir araç setidir. Mantığı kavradığınızda, bir log satırından hata kodu çekmek de, makalelerden otomatik etiket üretmek de aynı temel fikre dayanır: kalıbı tanımla, eşleşmeyi yakala, sonucu anlamlı bir çıktıya dönüştür.
+
+![php-ve-regex-24](/img/php-ve-regex-24.svg)
+

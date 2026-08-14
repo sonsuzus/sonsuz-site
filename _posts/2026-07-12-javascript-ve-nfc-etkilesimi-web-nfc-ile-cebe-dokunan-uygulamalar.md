@@ -12,6 +12,9 @@ tags:
 ---
 
 Telefonunuzu bir etikete yaklaştırıp kapıyı açmak, Wi-Fi bilgisini almak ya da bir ürünün bakım geçmişini okumak kulağa biraz sihir gibi gelir; ama aslında sahnede NFC ve JavaScript vardır. Modern Android tarayıcılarında Web NFC API sayesinde web uygulamaları, yakın alan iletişimi sensörleriyle veri okuyup yazabilir. Yani bazen bir buton, bazen de 3 cm mesafe bütün deneyimi değiştirir.
+
+![javascript-ve-nfc-51](/img/javascript-ve-nfc-51.svg)
+
 ``
 
 NFC, Near Field Communication ifadesinin kısaltmasıdır ve çok kısa mesafede çalışan kablosuz iletişim teknolojisidir. Genellikle $d ≤ 4cm$ gibi yakın bir aralıkta anlamlıdır. Bunun sebebi güvenlik kadar fiziksel çalışma mantığıdır: NFC, radyo dalgasından çok manyetik alan eşleşmesine dayanır. Mesafe arttıkça alan etkisi yaklaşık $P ≈ 1/r^3$ gibi hızlı azalır; yani etiketi masanın öbür ucundan okumaya çalışmak, kedinize SQL öğretmeye benzer: teorik olarak konuşulur, pratikte zordur.
