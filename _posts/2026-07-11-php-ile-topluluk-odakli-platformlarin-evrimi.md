@@ -11,6 +11,9 @@ tags:
 ---
 
 Bir forum sitesine girdiğinizde gördüğünüz şey birkaç başlık, avatar ve cevap kutusundan ibaret gibi durur. Oysa arka planda PHP, HTTP isteğini yakalar, oturumu kontrol eder, veritabanından konuları çeker, izinleri hesaplar ve size dinamik bir HTML sayfası üretir. Topluluk odaklı platformların evrimi tam da burada başlar: statik sayfalardan, kullanıcı davranışına göre şekillenen yaşayan sistemlere geçiş.
+
+![php-ile-topluluk-27](/img/php-ile-topluluk-27.svg)
+
 ``
 PHP’nin forum dünyasındaki popülerliği tesadüf değildir. 2000’lerde phpBB, vBulletin ve SMF gibi yazılımlar, paylaşımlı hostinglerde kolay kurulabildiği için topluluk kültürünü hızla büyüttü. İlk dönemlerde mantık genellikle tek dosyada toplanırdı: `viewtopic.php` hem veriyi çeker, hem iş kurallarını uygular, hem de HTML basardı. Bugün ise daha katmanlı bir yaklaşım tercih edilir: yönlendirme, servis, veri erişimi ve şablonlama birbirinden ayrılır.
 
@@ -70,3 +73,4 @@ Dinamik sayfa üretirken güvenlik sadece veritabanı ile bitmez. Mesaj içeriğ
 Ayrıca forumlar sosyal sistemlerdir; teknik tasarım topluluk davranışını etkiler. Bildirimler, rozetler, beğeniler ve moderasyon kuyrukları sadece özellik değil, katılım mekanizmasıdır. Ancak her yeni özellik yeni veri ilişkileri ve yeni güvenlik kontrolleri demektir.
 
 Modern PHP ekosisteminde Laravel veya Symfony gibi çatılar, yönlendirme, ORM, middleware ve CSRF koruması sunarak bu yükü azaltır. Yine de temeli anlamak önemlidir: istek gelir, kimlik doğrulanır, yetki kontrol edilir, güvenli sorgu çalışır, veri temizlenir ve şablona aktarılır. Kısacası iyi bir topluluk platformu, yalnızca konuşma alanı değil; veritabanı, güvenlik ve kullanıcı deneyiminin dengeli bir orkestrasıdır.
+

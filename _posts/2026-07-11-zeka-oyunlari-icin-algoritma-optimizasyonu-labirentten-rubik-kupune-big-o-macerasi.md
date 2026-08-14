@@ -24,6 +24,9 @@ Temel fikir, arama ağacını küçültmektir. Bunun için üç ana silahımız 
 | A* | $O(b^d)$, pratikte daha iyi | $O(b^d)$ | İyi sezgisel varsa |
 | IDA* | $O(b^d)$ | $O(d)$ | Rubik gibi dev durum uzaylarında |
 
+![zeka-oyunlari-icin-26](/img/zeka-oyunlari-icin-26.svg)
+
+
 Labirent için A* genellikle yıldız oyuncudur. Çünkü hedefe olan Manhattan mesafesi gibi basit bir sezgisel, algoritmanın boş koridorlarda kaybolmasını engeller. A* şu puanı kullanır: $f(n)=g(n)+h(n)$. Burada $g(n)$ başlangıçtan gelinen maliyet, $h(n)$ ise hedefe tahmini uzaklıktır. Eğer $h(n)$ asla gerçek maliyeti aşmıyorsa, yani kabul edilebilir ise, A* en kısa yolu bulur.
 
 ```python

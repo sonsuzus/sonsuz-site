@@ -11,6 +11,9 @@ tags:
   - bellek yönetimi
 ---
 
+![c-dilinin-minimalizmi-42](/img/c-dilinin-minimalizmi-42.svg)
+
+
 C dili, modern bilişimin perde arkasındaki sessiz kahramanlardan biridir. Bugün web uygulamaları, yapay zekâ servisleri ve oyun motorları konuşulurken, tüm bu katmanların altında hâlâ donanıma yakın, sade ve tahmin edilebilir bir dil yatar. C’nin minimalizmi; az anahtar kelime, doğrudan bellek erişimi ve çalışma zamanında sihir yapmayan yapısıyla özellikle işletim sistemi çekirdekleri için idealdir.
 ``
 Bir işletim sistemi çekirdeği, donanım ile uygulamalar arasındaki en kritik aracıdır. Klavyeden gelen kesme, diske yazılan veri, RAM’de ayrılan sayfa veya işlemci modları gibi konular kernel tarafından yönetilir. C burada devreye girer çünkü ne yaptığını saklamaz. Bir pointer, gerçekten bir adrestir; bir struct, bellekte belirli bir düzendir; bir volatile değişken, derleyiciye bu değerin dış dünya tarafından değişebileceğini söyler.

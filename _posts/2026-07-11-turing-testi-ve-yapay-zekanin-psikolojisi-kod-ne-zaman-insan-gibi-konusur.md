@@ -26,6 +26,9 @@ Basitçe ifade edersek, bir cevap üretme sistemi şu olasılığı büyütmeye 
 | Dil yapısı | Düz ve kalıplı | Vurgu, bağlaç, küçük sapmalar içerir |
 | Bellek kullanımı | Son mesaja odaklanır | Önceki niyetleri ve ilişki tonunu taşır |
 
+![turing-testi-ve-77](/img/turing-testi-ve-77.svg)
+
+
 Böyle sistemler geliştirmek için önce konuşmayı parçalara ayırmak gerekir. Niyet tanıma, duygu analizi, bağlam takibi ve cevap üretimi ayrı katmanlar gibi düşünülebilir. Aşağıdaki küçük Python örneği, oyuncak seviyesinde bir sohbet değerlendiricisi kurar. Amaç, cevabın yalnızca anahtar kelimeye değil, duygu tonuna da tepki vermesidir.
 
 ```python

@@ -12,7 +12,11 @@ tags:
 
 Felsefi metinler bazen bir veritabanı gibi davranır: kavramlar tablolar, alıntılar ilişkiler, kelimeler de satırlar gibidir. Platon’dan Kant’a, İbn Sînâ’dan Nietzsche’ye uzanan devasa bir külliyatı SQL ile sorguladığınızda yalnızca kaç kez akıl kelimesi geçtiğini değil, hangi kökten gelen kelimelerin hangi düşünürlerde birlikte yoğunlaştığını da görebilirsiniz.
 
+![SQL ile felsefi metin madenciliği](/img/sql-philosophy-text-mining.svg)
+
 Bu işin teorik temeli üç katmandan oluşur: ilişkisel model, dilsel ön işleme ve semantik yakınlık. İlişkisel modelde her metin; yazar, eser, bölüm, cümle ve token gibi parçalara ayrılır. Dilsel ön işlemede kelimeler küçük harfe çevrilir, noktalama temizlenir, kök veya lemma bulunur. Semantik yakınlıkta ise kelimelerin aynı bağlamlarda görünme sıklığı ölçülür. Basit fikir şudur: İki kavram benzer cümlelerde sık görünüyorsa anlam uzayında birbirine yakındır.
+
+
 ``
 
 Matematiksel olarak birlikte görünme oranını şöyle düşünebiliriz: $P(a,b)=\frac{count(a,b)}{N}$, burada $count(a,b)$ iki kelimenin aynı pencere içinde kaç kez geçtiğini, $N$ ise toplam pencere sayısını gösterir. Daha kullanışlı bir ölçü olan PMI ise $PMI(a,b)=\log\frac{P(a,b)}{P(a)P(b)}$ formülüyle beklenenden güçlü ilişkileri yakalar. Örneğin töz ve nitelik sıradan sıklıkta görünse bile birlikte görünmeleri beklenenden fazlaysa felsefi açıdan anlamlı bir bağ oluşur.

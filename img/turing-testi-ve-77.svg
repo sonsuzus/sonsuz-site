@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <!-- Shadow Filters -->
+    <filter id="shadow" x="-5%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadow-sm" x="-5%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/>
+    </marker>
+    
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    
+    <!-- Color Gradients for Boxes -->
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A7F3D0"/>
+      <stop offset="100%" stop-color="#6EE7B7"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD"/>
+      <stop offset="100%" stop-color="#7DD3FC"/>
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBCFE8"/>
+      <stop offset="100%" stop-color="#F9A8D4"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E9D5FF"/>
+      <stop offset="100%" stop-color="#D8B4FE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12" />
+
+  <!-- Caption -->
+  <text x="15" y="15" font-size="10" font-weight="600" fill="#94A3B8" text-anchor="start" dominant-baseline="middle">TURING TESTİ &amp; YAPAY ZEKA PSİKOLOJİSİ</text>
+
+  <!-- === CONNECTIONS (ARROWS) === -->
+  <g id="connections">
+    <!-- Top Flow -->
+    <path d="M 160,55 L 245,55" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M 385,55 L 470,55" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+    <!-- Feedback Loop (Machine to Human) -->
+    <path d="M 545,80 L 545,105 L 95,105 L 95,80" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,2" fill="none" marker-end="url(#arrow)" />
+    
+    <!-- Middle Connections -->
+    <path d="M 320,80 L 320,125" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M 120,80 L 120,125" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- Psychology to Pipeline -->
+    <path d="M 120,195 L 120,242" stroke="#EC4899" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M 120,195 L 120,215 L 197,215 L 197,242" stroke="#EC4899" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+    <path d="M 120,195 L 120,215 L 325,215 L 325,242" stroke="#EC4899" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+    <!-- Equation to Pipeline -->
+    <path d="M 420,195 L 420,242" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M 420,195 L 420,215 L 581,215 L 581,242" stroke="#8B5CF6" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+    <!-- Pipeline Internal Arrows -->
+    <path d="M 123,242 L 143,242" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M 251,242 L 271,242" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M 379,242 L 399,242" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M 507,242 L 527,242" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- Downwards to Comparison -->
+    <path d="M 325,270 L 325,280 L 165,280 L 165,290" stroke="#94A3B8" stroke-width="1.5" fill="none" marker-end="url(#arrow)" />
+    <path d="M 581,270 L 581,290" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- === TOP SECTION: EVALUATION FLOW === -->
+  <g id="top-boxes">
+    <!-- Human Evaluator -->
+    <g filter="url(#shadow)">
+      <rect x="30" y="30" width="140" height="50" rx="12" fill="url(#yellowGrad)" />
+      <circle cx="55" cy="45" r="8" fill="#fff" opacity="0.8" />
+      <rect x="45" y="58" width="20" height="12" rx="4" fill="#fff" opacity="0.8" />
+      <text x="95" y="45" font-size="13" font-weight="700" fill="#334155" text-anchor="middle" dominant-baseline="middle">İnsan</text>
+      <text x="95" y="62" font-size="10" fill="#475569" text-anchor="middle" dominant-baseline="middle">Değerlendirici</text>
+    </g>
+
+    <!-- Turing Test -->
+    <g filter="url(#shadow)">
+      <rect x="250" y="30" width="140" height="50" rx="12" fill="url(#greenGrad)" />
+      <path d="M 265 45 h 15 M 272.5 40 v 15 M 260 55 h 25" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <text x="320" y="45" font-size="13" font-weight="700" fill="#334155" text-anchor="middle" dominant-baseline="middle">Turing Testi</text>
+      <text x="320" y="62" font-size="10" fill="#475569" text-anchor="middle" dominant-baseline="middle">Taklit Oyunu</text>
+    </g>
+
+    <!-- Machine / Code -->
+    <g filter="url(#shadow)">
+      <rect x="480" y="30" width="140" height="50" rx="12" fill="url(#blueGrad)" />
+      <rect x="495" y="40" width="16" height="16" rx="2" fill="#fff" opacity="0.8" />
+      <rect x="499" y="44" width="8" height="8" rx="1" fill="#BAE6FD" />
+      <text x="545" y="45" font-size="13" font-weight="700" fill="#334155" text-anchor="middle" dominant-baseline="middle">Makine / Kod</text>
+      <text x="545" y="62" font-size="10" fill="#475569" text-anchor="middle" dominant-baseline="middle">LLM + NLP</text>
+    </g>
+  </g>
+
+  <!-- === MIDDLE SECTION: PSYCHOLOGY & FORMULA === -->
+  <g id="middle-boxes">
+    <!-- Psychology Layer -->
+    <g filter="url(#shadow)">
+      <rect x="30" y="125" width="180" height="70" rx="12" fill="url(#pinkGrad)" />
+      <text x="120" y="142" font-size="13" font-weight="700" fill="#334155" text-anchor="middle" dominant-baseline="middle">İnsan Psikolojisi</text>
+      <text x="120" y="160" font-size="10" fill="#475569" text-anchor="middle" dominant-baseline="middle">Empati / Niyet / Ritim</text>
+      <text x="120" y="177" font-size="10" fill="#475569" text-anchor="middle" dominant-baseline="middle">İma, tereddüt, bağlam</text>
+    </g>
+
+    <!-- Equation / Weighted Model -->
+    <g filter="url(#shadow)">
+      <rect x="230" y="125" width="380" height="70" rx="12" fill="url(#purpleGrad)" />
+      <text x="420" y="142" font-size="18" font-weight="800" fill="#2E1065" text-anchor="middle" dominant-baseline="middle">S = αT + βD + γB</text>
+      <text x="420" y="160" font-size="11" fill="#4C1D95" text-anchor="middle" dominant-baseline="middle">T: Tutarlılık | D: Duygusal Uygunluk | B: Bağlam</text>
+      <text x="420" y="177" font-size="10" font-style="italic" fill="#6D28D9" text-anchor="middle" dominant-baseline="middle">"Doğru cevap değil, inandırıcı izlenim"</text>
+    </g>
+  </g>
+
+  <!-- === PIPELINE SECTION: SYSTEM ARCHITECTURE === -->
+  <g id="pipeline-boxes">
+    <!-- Niyet Tanıma -->
+    <g filter="url(#shadow)">
+      <rect x="15" y="215" width="108" height="55" rx="10" fill="url(#yellowGrad)" />
+      <text x="69" y="235" font-size="12" font-weight="700" fill="#334155" text-anchor="middle" dominant-baseline="middle">Niyet Tanıma</text>
+      <text x="69" y="252" font-size="9" fill="#475569" text-anchor="middle" dominant-baseline="middle">Intent</text>
+    </g>
+
+    <!-- Duygu Analizi -->
+    <g filter="url(#shadow)">
+      <rect x="143" y="215" width="108" height="55" rx="10" fill="url(#pinkGrad)" />
+      <text x="197" y="235" font-size="12" font-weight="700" fill="#334155" text-anchor="middle" dominant-baseline="middle">Duygu Analizi</text>
+      <text x="197" y="252" font-size="9" fill="#475569" text-anchor="middle" dominant-baseline="middle">Emotion</text>
+    </g>
+
+    <!-- Bağlam Takibi -->
+    <g filter="url(#shadow)">
+      <rect x="271" y="215" width="108" height="55" rx="10" fill="url(#blueGrad)" />
+      <text x="325" y="235" font-size="12" font-weight="700" fill="#334155" text-anchor="middle" dominant-baseline="middle">Bağlam Takibi</text>
+      <text x="325" y="252" font-size="9" fill="#475569" text-anchor="middle" dominant-baseline="middle">Context</text>
+    </g>
+
+    <!-- Cevap Üretimi -->
+    <g filter="url(#shadow)">
+      <rect x="399" y="215" width="108" height="55" rx="10" fill="url(#greenGrad)" />
+      <text x="453" y="235" font-size="12" font-weight="700" fill="#334155" text-anchor="middle" dominant-baseline="middle">Cevap Üretimi</text>
+      <text x="453" y="252" font-size="9" fill="#475569" text-anchor="middle" dominant-baseline="middle">Generation</text>
+    </g>
+
+    <!-- İnsansı Tepki -->
+    <g filter="url(#shadow)">
+      <rect x="527" y="215" width="108" height="55" rx="10" fill="url(#purpleGrad)" />
+      <text x="581" y="235" font-size="12" font-weight="700" fill="#334155" text-anchor="middle" dominant-baseline="middle">İnsansı Tepki</text>
+      <text x="581" y="252" font-size="9" fill="#475569" text-anchor="middle" dominant-baseline="middle">Human-like</text>
+    </g>
+  </g>
+
+  <!-- === BOTTOM SECTION: COMPARISON === -->
+  <g id="bottom-boxes">
+    <!-- Logical Bot -->
+    <g filter="url(#shadow-sm)">
+      <rect x="15" y="290" width="300" height="25" rx="13" fill="#FFE4E6" stroke="#FDA4AF" />
+      <text x="165" y="303" font-size="11" font-weight="500" fill="#881337" text-anchor="middle" dominant-baseline="middle">Mantıksal Bot: hatayı gizler, kalıplı dil</text>
+    </g>
+
+    <!-- Human-like Bot -->
+    <g filter="url(#shadow-sm)">
+      <rect x="325" y="290" width="300" height="25" rx="13" fill="#D1FAE5" stroke="#6EE7B7" />
+      <text x="475" y="303" font-size="11" font-weight="500" fill="#064E3B" text-anchor="middle" dominant-baseline="middle">İnsansı Bot: "hmm, bunu biraz açalım"</text>
+    </g>
+  </g>
+</svg>
