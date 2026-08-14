@@ -66,7 +66,7 @@ void integrate(RigidBody* body, float dt) {
 
 Bu kodda `RigidBody* body`, fizik nesnesinin adresini taşır. Fonksiyon nesneyi kopyalamaz; doğrudan orijinal veriyi günceller. Bu, özellikle binlerce gövdeyi her kare güncelleyen fizik sistemlerinde ciddi fark yaratır.
 
-![](img/c-oyun-motoru.svg)
+![](/img/c-oyun-motoru.svg)
 
 ## Bellek havuzları: Motorun gizli turbo modu
 

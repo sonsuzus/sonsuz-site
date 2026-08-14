@@ -15,6 +15,8 @@ Görüntü işleme, bilgisayara bir resmi sadece ‘görmeyi’ değil, onu anla
 
 En basit haliyle bir görüntü, sayılardan oluşan bir matristir. Gri tonlamalı bir resimde her piksel 0 ile 255 arasında değer alır. 0 siyahı, 255 beyazı temsil eder. Renkli görüntülerde ise genellikle üç kanal bulunur: kırmızı, yeşil ve mavi. Yani bir piksel aslında şöyle düşünülebilir: $(R, G, B)$.
 
+![](/img/python-ile-goruntu-isleme.svg)
+
 ``
 
 ## Görüntü İşleme İçin Popüler Python Kütüphaneleri
