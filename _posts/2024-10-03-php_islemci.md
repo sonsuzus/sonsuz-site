@@ -237,8 +237,8 @@ Yukarıdaki PHP dosyasında, $deg01 değişkenine sıra ile 128, 64, 32, 16, 8, 
     ikili_yazdir($deg02);    
     echo ($deg01 & $deg02);
     ikili_yazdir($deg01 & $deg02);
-    echo ($deg01 | $deg02);
-    ikili_yazdir($deg01 | $deg02);
+    echo ($deg01  \vert  $deg02);
+    ikili_yazdir($deg01  \vert  $deg02);
     echo ($deg01 ^ $deg02);
     ikili_yazdir($deg01 ^ $deg02);
     echo (~$deg01);

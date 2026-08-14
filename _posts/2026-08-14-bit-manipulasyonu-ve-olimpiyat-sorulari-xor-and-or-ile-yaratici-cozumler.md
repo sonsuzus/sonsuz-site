@@ -53,7 +53,7 @@ AND, “herkesin kabul ettiği” bitleri bulur. Örneğin bir takımın tüm ü
 
 OR ise kapsama sorularında parlar. Her proje bir beceri maskesi taşısın; hedef, tüm becerileri kapsayan en az sayıda projeyi seçmek olsun. Durum `dp[mask]`, elde edilen beceri kümesi `mask` iken minimum proje sayısı olabilir. Yeni proje için geçiş şöyledir:
 
-$$dp[mask \;|\; project] = \min(dp[mask \;|\; project], dp[mask]+1)$$
+$$dp[mask \; \vert \; project] = \min(dp[mask \; \vert \; project], dp[mask]+1)$$
 
 ```cpp
 for (int mask = 0; mask < (1 << skills); ++mask)

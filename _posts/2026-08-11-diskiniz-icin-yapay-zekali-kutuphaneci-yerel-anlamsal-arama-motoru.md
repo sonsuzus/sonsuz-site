@@ -20,7 +20,7 @@ Anahtar kelime yaklaşımı, sorgudaki karakter dizisini belgede arar. Bu nedenl
 
 Bir belgenin vektörü $\vec{d}$, kullanıcının sorgu vektörü $\vec{q}$ olsun. En yaygın benzerlik hesabı kosinüs benzerliğidir:
 
-$$\operatorname{cosine}(\vec{q}, \vec{d}) = \frac{\vec{q} \cdot \vec{d}}{||\vec{q}|| \; ||\vec{d}||}$$
+$$\operatorname{cosine}(\vec{q}, \vec{d}) = \frac{\vec{q} \cdot \vec{d}}{ \vert  \vert \vec{q} \vert  \vert  \;  \vert  \vert \vec{d} \vert  \vert }$$
 
 Sonuç 1'e yaklaştıkça anlamsal yakınlık artar. Böylece `fatura ödemeleri` sorgusu, içinde yalnızca `ödeme`, `tahsilat` veya `mali belge` geçen dosyaları da yakalayabilir.
 

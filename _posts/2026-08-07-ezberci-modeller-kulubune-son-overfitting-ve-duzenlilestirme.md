@@ -36,7 +36,7 @@ Burada $L$ tahmin hatası, $R(w)$ ceza fonksiyonu ve $\lambda$ cezanın gücüd�
 
 | Yöntem | Ceza | Temel etkisi |
 |---|---|---|
-| L1 (Lasso) | $\lambda \sum_i |w_i|$ | Bazı ağırlıkları sıfırlar, özellik seçimi sağlar |
+| L1 (Lasso) | $\lambda \sum_i  \vert w_i \vert $ | Bazı ağırlıkları sıfırlar, özellik seçimi sağlar |
 | L2 (Ridge) | $\lambda \sum_i w_i^2$ | Ağırlıkları küçültür, daha dengeli dağıtır |
 
 L1, gereksiz özellikleri oyundan çıkaran sert bir teknik direktör gibidir. L2 ise oyuncuları kovmak yerine hepsinin egosunu küçültür. Birlikte kullanıldıklarında **Elastic Net** yaklaşımı ortaya çıkar.

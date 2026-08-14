@@ -279,7 +279,7 @@ $$\sum_{x=1}^{n} \frac{1}{x} = 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}
 
 ### Küme Teorisi
 
-Bir **küme** elemanların grubudur. Temel notasyonlar: $\emptyset$ boş küme, $|S|$ kümenin eleman sayısı, $x \in S$ eleman üyeliği.
+Bir **küme** elemanların grubudur. Temel notasyonlar: $\emptyset$ boş küme, $ \vert S \vert $ kümenin eleman sayısı, $x \in S$ eleman üyeliği.
 
 Temel küme işlemleri:
 
@@ -288,7 +288,7 @@ Temel küme işlemleri:
 - **Tamlayan** $\bar{A}$: $A$'da bulunmayan elemanlar (evrensel kümeye göre).
 - **Fark** $A \setminus B = A \cap \bar{B}$: $A$'da olup $B$'de olmayan elemanlar.
 
-$|S|$ elemanlı bir kümenin $2^{|S|}$ alt kümesi vardır. Örneğin $\{2, 4, 7\}$ kümesinin alt kümeleri: $\emptyset, \{2\}, \{4\}, \{7\}, \{2,4\}, \{2,7\}, \{4,7\}, \{2,4,7\}$.
+$ \vert S \vert $ elemanlı bir kümenin $2^{ \vert S \vert }$ alt kümesi vardır. Örneğin $\{2, 4, 7\}$ kümesinin alt kümeleri: $\emptyset, \{2\}, \{4\}, \{7\}, \{2,4\}, \{2,7\}, \{4,7\}, \{2,4,7\}$.
 
 Sık kullanılan kümeler: $\mathbb{N}$ (doğal sayılar), $\mathbb{Z}$ (tamsayılar), $\mathbb{Q}$ (rasyonel sayılar), $\mathbb{R}$ (reel sayılar).
 

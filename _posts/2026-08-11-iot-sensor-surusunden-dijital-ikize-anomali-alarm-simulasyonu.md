@@ -31,7 +31,7 @@ Bu örnekte her sensör için sıcaklık, nem ve titreşim üreteceğiz. Normal 
 
 $$z = \frac{x - \mu}{\sigma}$$
 
-Burada $x$ anlık ölçüm, $\mu$ hareketli pencerenin ortalaması, $\sigma$ ise standart sapmasıdır. Genel kural olarak $|z| > 3$ değerleri nadir kabul edilir. Ancak sıfıra yakın standart sapma durumunda bölme hatasını önlemek için küçük bir $\epsilon$ kullanmak iyi bir mühendislik refleksidir.
+Burada $x$ anlık ölçüm, $\mu$ hareketli pencerenin ortalaması, $\sigma$ ise standart sapmasıdır. Genel kural olarak $ \vert z \vert  > 3$ değerleri nadir kabul edilir. Ancak sıfıra yakın standart sapma durumunda bölme hatasını önlemek için küçük bir $\epsilon$ kullanmak iyi bir mühendislik refleksidir.
 
 ```python
 import random

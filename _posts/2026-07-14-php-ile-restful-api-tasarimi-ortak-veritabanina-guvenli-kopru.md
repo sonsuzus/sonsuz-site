@@ -53,7 +53,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $path = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 $parts = explode('/', $path);
 
-if ($parts[0] !== 'api' || $parts[1] !== 'users') {
+if ($parts[0] !== 'api'  \vert  \vert  $parts[1] !== 'users') {
     json_response(404, false, null, 'Kaynak bulunamadı');
 }
 

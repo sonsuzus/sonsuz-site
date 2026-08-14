@@ -46,7 +46,7 @@ Yanıt ülkeye göre değişir. Bazı hukuk sistemlerinde metin ve veri madencil
 
 Benzerlik denetimi yararlı olsa da hukuki hüküm vermez. Örneğin iki görselin özellik vektörleri arasındaki kosinüs benzerliği şöyle hesaplanabilir:
 
-$$S(A,B)=\frac{A\cdot B}{\|A\|\|B\|}$$
+$$S(A,B)=\frac{A\cdot B}{\ \vert A\ \vert \ \vert B\ \vert }$$
 
 Aşağıdaki örnek, iki özellik vektörünü karşılaştıran basit bir denetim aracıdır:
 

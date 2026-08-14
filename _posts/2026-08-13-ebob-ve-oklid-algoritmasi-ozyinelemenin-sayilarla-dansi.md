@@ -66,6 +66,6 @@ Algoritmanın çalışma süresi kabaca $O(\log(\min(a,b)))$ düzeyindedir. Bu, 
 
 EBOB yalnızca bir ders kitabı konusu değildir. Kesirleri sadeleştirme, modüler aritmetik, kriptografi ve en küçük ortak katı (EKOK) hesaplama gibi alanlarda sıkça kullanılır. İki pozitif sayı için ilişki şöyledir:
 
-$$\operatorname{ekok}(a,b)=\frac{|a \cdot b|}{\gcd(a,b)}$$
+$$\operatorname{ekok}(a,b)=\frac{ \vert a \cdot b \vert }{\gcd(a,b)}$$
 
 Kısacası Öklid algoritması, iyi bir algoritmanın küçük bir özeti gibidir: Doğru matematiksel gözlemi bulur, problemi her adımda küçültür ve net bir bitiş koşuluyla sonucu güvenle üretir.

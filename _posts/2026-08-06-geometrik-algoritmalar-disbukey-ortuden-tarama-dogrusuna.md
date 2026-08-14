@@ -50,7 +50,7 @@ Bu fonksiyon; dönüş yönü, doğru parçalarının kesişimi ve dışbükeyli
 
 Köşeleri sırayla verilen basit bir çokgenin alanı, ayakkabı bağı formülüyle bulunabilir:
 
-$$2A=\left|\sum_{i=0}^{n-1}(x_i y_{i+1}-y_i x_{i+1})\right|$$
+$$2A=\left \vert \sum_{i=0}^{n-1}(x_i y_{i+1}-y_i x_{i+1})\right \vert $$
 
 İndisler döngüseldir; yani son noktadan sonra yeniden ilk nokta gelir. Mutlak değer alınmadan önce toplamın işareti, köşelerin saat yönünde mi yoksa ters yönde mi sıralandığını da gösterir.
 

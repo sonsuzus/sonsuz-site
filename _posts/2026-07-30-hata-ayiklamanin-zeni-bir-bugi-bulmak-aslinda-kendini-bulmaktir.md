@@ -18,7 +18,7 @@ Kod çalışmadığında ilk şüphelimiz çoğu zaman bilgisayardır. Oysa bilg
 
 Bir programın beklenen çıktısını $E$, gözlenen çıktısını $O$ ile gösterelim. İncelediğimiz sapma kabaca şöyle düşünülebilir:
 
-$$D = |E - O|$$
+$$D =  \vert E - O \vert $$
 
 Buradaki asıl mesele $D$ değerini sıfırlamak değil, farkın hangi koşulda doğduğunu açıklayabilmektir. Açıklayamadığımız ama geçici olarak susturduğumuz hata, genellikle daha dramatik bir kostümle geri döner.
 

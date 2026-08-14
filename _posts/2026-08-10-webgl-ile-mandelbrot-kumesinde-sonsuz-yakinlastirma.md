@@ -22,9 +22,9 @@ Kümenin temeli şu yinelemeli fonksiyondur:
 
 $$z_{n+1}=z_n^2+c$$
 
-Burada başlangıç değeri $z_0=0$ seçilir; $c$, karmaşık düzlemdeki her pikselin karşılığıdır. Bir nokta için değerler sınırsız büyümezse nokta Mandelbrot kümesine dahildir. Pratikte sonsuz adım atamayacağımız için bir **iterasyon sınırı** koyarız. Eğer herhangi bir adımda $|z|>2$ olursa kaçış garanti edilir. Hesaplama maliyetini azaltmak için karekök yerine şu kontrol yapılır:
+Burada başlangıç değeri $z_0=0$ seçilir; $c$, karmaşık düzlemdeki her pikselin karşılığıdır. Bir nokta için değerler sınırsız büyümezse nokta Mandelbrot kümesine dahildir. Pratikte sonsuz adım atamayacağımız için bir **iterasyon sınırı** koyarız. Eğer herhangi bir adımda $ \vert z \vert >2$ olursa kaçış garanti edilir. Hesaplama maliyetini azaltmak için karekök yerine şu kontrol yapılır:
 
-$$|z|^2=x^2+y^2>4$$
+$$ \vert z \vert ^2=x^2+y^2>4$$
 
 | Kavram | Matematikteki rolü | Uygulamadaki karşılığı |
 |---|---|---|

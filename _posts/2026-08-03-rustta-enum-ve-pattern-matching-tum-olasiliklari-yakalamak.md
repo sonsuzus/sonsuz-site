@@ -17,9 +17,9 @@ Bir verinin yalnızca tek bir biçimi olmak zorunda değildir. Örneğin bir öd
 
 Enum, bir değerin önceden belirlenmiş varyasyonlardan **yalnızca biri** olabileceğini ifade eden veri tipidir. Matematiksel olarak bir enum'u ayrık birleşim biçiminde düşünebiliriz:
 
-$$Durum = Bekliyor \;|\; Basarili \;|\; Reddedildi$$
+$$Durum = Bekliyor \; \vert \; Basarili \; \vert \; Reddedildi$$
 
-Buradaki $|$ işareti, “bu seçeneklerden biri” anlamına gelir. Her varyasyon kendi verisini de taşıyabilir. Böylece yalnızca durumun adı değil, o durumla ilişkili bilgi de aynı yapı içinde güvenli şekilde saklanır.
+Buradaki $ \vert $ işareti, “bu seçeneklerden biri” anlamına gelir. Her varyasyon kendi verisini de taşıyabilir. Böylece yalnızca durumun adı değil, o durumla ilişkili bilgi de aynı yapı içinde güvenli şekilde saklanır.
 
 ```rust
 enum OdemeDurumu {

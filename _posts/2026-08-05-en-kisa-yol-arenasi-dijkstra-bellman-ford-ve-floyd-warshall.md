@@ -64,7 +64,7 @@ def dijkstra(graph, source):
 
 ### Bellman-Ford: Yavaş ama kuşkucu
 
-Bellman-Ford bütün kenarları en fazla $|V|-1$ tur gevşetir. Gevşetme işlemi şu eşitsizliği kontrol eder:
+Bellman-Ford bütün kenarları en fazla $ \vert V \vert -1$ tur gevşetir. Gevşetme işlemi şu eşitsizliği kontrol eder:
 
 $$d(v)>d(u)+w(u,v)$$
 

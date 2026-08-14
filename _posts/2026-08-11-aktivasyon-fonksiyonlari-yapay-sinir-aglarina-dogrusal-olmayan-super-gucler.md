@@ -33,7 +33,7 @@ Hiperbolik tanjant, sigmoidin -1 ile 1 arasında çalışan kuzenidir:
 
 $$\tanh(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$$
 
-Çıktısının sıfır merkezli olması, özellikle gizli katmanlardaki ağırlık güncellemelerini daha dengeli hâle getirebilir. Buna rağmen Tanh da doygunluğa ulaşır: $|z|$ büyüdükçe türev azalır. Bu yüzden derin ağların her gizli katmanında varsayılan tercih olmaktan büyük ölçüde çıkmıştır.
+Çıktısının sıfır merkezli olması, özellikle gizli katmanlardaki ağırlık güncellemelerini daha dengeli hâle getirebilir. Buna rağmen Tanh da doygunluğa ulaşır: $ \vert z \vert $ büyüdükçe türev azalır. Bu yüzden derin ağların her gizli katmanında varsayılan tercih olmaktan büyük ölçüde çıkmıştır.
 
 | Fonksiyon | Çıktı aralığı | Güçlü yönü | Temel riski |
 |---|---:|---|---|

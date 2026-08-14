@@ -53,7 +53,7 @@ alias ..='cd ..'
 # Proje klasörüne geçip editörü açan küçük bir iş akışı fonksiyonu.
 workon() {
   local project="$HOME/projects/$1"
-  [ -d "$project" ] || { echo "Proje bulunamadı: $1"; return 1; }
+  [ -d "$project" ]  \vert  \vert  { echo "Proje bulunamadı: $1"; return 1; }
   cd "$project" && code .
 }
 

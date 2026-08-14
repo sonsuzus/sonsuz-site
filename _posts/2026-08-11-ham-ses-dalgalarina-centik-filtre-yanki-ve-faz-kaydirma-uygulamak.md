@@ -42,7 +42,7 @@ $D$, gecikmenin örnek sayısıdır. 250 ms gecikme için $D = 0.25f_s$ seçilir
 
 $$y[n] = x[n] + g\,y[n-D]$$
 
-Bu modelde $|g|<1$ şartı önemlidir; aksi takdirde yankı sönmek yerine büyüyebilir. Çıkışın genliği yükseldiğinden, son aşamada kırpılmayı önlemek için normalizasyon yapılmalıdır.
+Bu modelde $ \vert g \vert <1$ şartı önemlidir; aksi takdirde yankı sönmek yerine büyüyebilir. Çıkışın genliği yükseldiğinden, son aşamada kırpılmayı önlemek için normalizasyon yapılmalıdır.
 
 ## Faz kaydırma: Genlik aynı, algı farklı
 
@@ -56,7 +56,7 @@ Tek başına faz değişimi çoğu zaman aynı genlik spektrumunu korur. Ancak �
 |---|---|---|---|
 | $r$ | Geniş çentik | Dar çentik | Uğultu için dar ayar tercih edilir |
 | $D$ | Kısa ambiyans | Belirgin tekrar | Milisaniyeden örneğe çevrilir |
-| $g$ | Hızlı sönüm | Uzun kuyruk | $|g|<1$ korunmalıdır |
+| $g$ | Hızlı sönüm | Uzun kuyruk | $ \vert g \vert <1$ korunmalıdır |
 | $\phi$ | Hafif fark | Belirgin girişim | Kuru sinyalle karıştırınca etkili |
 
 Aşağıdaki Python örneği, WAV verisine 50 Hz çentik filtre ve basit geri beslemeli yankı uygular. `scipy.signal.iirnotch` katsayıları üretir; `lfilter` ise fark denklemini örnek örnek çalıştırır.

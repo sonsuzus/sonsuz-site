@@ -79,7 +79,7 @@ Bu çözümün zaman ve bellek maliyeti $O(nm)$’dir. Yalnızca uzunluk gerekiy
 
 Ham LCS değeri uzun metinleri doğal olarak avantajlı kılar. Bu nedenle normalize edilmiş bir skor kullanabiliriz:
 
-$$S(A,B)=\frac{2\cdot LCS(A,B)}{|A|+|B|}$$
+$$S(A,B)=\frac{2\cdot LCS(A,B)}{ \vert A \vert + \vert B \vert }$$
 
 Skor $0$ ile $1$ arasındadır; $1$, dizilerin tamamen aynı olduğunu gösterir.
 

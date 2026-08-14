@@ -14,7 +14,7 @@ Pekiştirmeli öğrenme (Reinforcement Learning, RL), bir ajanın hazır doğru 
 
 ``
 
-RL'nin temel modeli **Markov Karar Süreci** (MDP) ile anlatılır. MDP; durumlar kümesi $S$, eylemler kümesi $A$, geçiş olasılığı $P$, ödül fonksiyonu $R$ ve indirim katsayısı $\gamma$ bileşenlerinden oluşur. Ajanın politikası $\pi(a|s)$, belirli bir $s$ durumunda $a$ eylemini seçme davranışını temsil eder. Belirsizlik önemlidir: Aynı eylem, farklı zamanlarda çevrenin durumuna göre farklı sonuçlar doğurabilir.
+RL'nin temel modeli **Markov Karar Süreci** (MDP) ile anlatılır. MDP; durumlar kümesi $S$, eylemler kümesi $A$, geçiş olasılığı $P$, ödül fonksiyonu $R$ ve indirim katsayısı $\gamma$ bileşenlerinden oluşur. Ajanın politikası $\pi(a \vert s)$, belirli bir $s$ durumunda $a$ eylemini seçme davranışını temsil eder. Belirsizlik önemlidir: Aynı eylem, farklı zamanlarda çevrenin durumuna göre farklı sonuçlar doğurabilir.
 
 Ajanın takip ettiği temel döngü şöyledir: çevre bir durum $s_t$ sunar; ajan $a_t$ eylemini uygular; ardından $r_t$ ödülünü ve yeni $s_{t+1}$ durumunu gözlemler. Öğrenme hedefi, gelecekteki indirgenmiş ödüllerin toplamını büyütmektir:
 

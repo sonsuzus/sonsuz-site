@@ -57,7 +57,7 @@ Gözetimsiz öğrenmede doğru cevap anahtarı yoktur. Algoritma, verinin iç ya
 
 Kümeleme için kullanılan K-Means algoritması, noktaları $k$ kümeye ayırırken küme içi uzaklığı küçültmeyi hedefler:
 
-$$\min \sum_{j=1}^{k}\sum_{x_i \in C_j} ||x_i - \mu_j||^2$$
+$$\min \sum_{j=1}^{k}\sum_{x_i \in C_j}  \vert  \vert x_i - \mu_j \vert  \vert ^2$$
 
 Burada $\mu_j$, ilgili kümenin merkezidir. Ancak “kaç küme olmalı?” sorusu çoğu zaman algoritmadan çok iş bilgisi gerektirir. Gözetimsiz öğrenme kesin cevap üretmekten ziyade, analiste keşfedilecek bir harita sunar.
 

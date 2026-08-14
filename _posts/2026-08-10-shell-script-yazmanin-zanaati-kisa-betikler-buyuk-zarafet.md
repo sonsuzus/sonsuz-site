@@ -43,7 +43,7 @@ set -euo pipefail
 kaynak=${1:-}
 hedef_dizin=${2:-./yedekler}
 
-if [[ -z "$kaynak" || ! -d "$kaynak" ]]; then
+if [[ -z "$kaynak"  \vert  \vert  ! -d "$kaynak" ]]; then
   echo "Kullanım: $0 <kaynak-dizin> [hedef-dizin]" >&2
   exit 1
 fi

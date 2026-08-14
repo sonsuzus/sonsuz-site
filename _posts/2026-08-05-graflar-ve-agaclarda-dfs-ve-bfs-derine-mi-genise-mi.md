@@ -81,7 +81,7 @@ Bir düğüm kuyruğa eklenirken ziyaret edilmiş sayılır. Böylece aynı dü�
 | Tipik kullanım | Çevrim, bileşen, topolojik sıralama | En kısa yol, seviye analizi |
 | Tamlık | Sonsuz derinlikte sorun yaşayabilir | Sonlu dallanmada çözümü bulur |
 
-Komşuluk listesi kullanılan bir grafta her düğüm ve kenar en fazla sabit sayıda işlendiği için iki algoritmanın zaman karmaşıklığı da $O(|V|+|E|)$ olur. Bellek karmaşıklığı genel durumda $O(|V|)$ düzeyindedir.
+Komşuluk listesi kullanılan bir grafta her düğüm ve kenar en fazla sabit sayıda işlendiği için iki algoritmanın zaman karmaşıklığı da $O( \vert V \vert + \vert E \vert )$ olur. Bellek karmaşıklığı genel durumda $O( \vert V \vert )$ düzeyindedir.
 
 Arama ağacının dallanma katsayısı $b$, çözüm derinliği $d$ ise BFS yaklaşık $1+b+b^2+...+b^d$ düğüm üretir; baskın terim nedeniyle bu miktar $O(b^d)$ kabul edilir. DFS ise aynı anda çoğunlukla tek yol ile alternatifleri tuttuğundan bellekte daha tutumlu olabilir.
 

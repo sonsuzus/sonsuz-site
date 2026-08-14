@@ -28,7 +28,7 @@ $T$ yükseldikçe sistemin insanı taklit etme başarısı artar. Fakat yüksek 
 
 Büyük dil modelleri, çok büyük metin koleksiyonlarından bir sonraki kelime veya belirtecin olasılığını öğrenir. Temel hedef kabaca şöyledir:
 
-$$P(x_t | x_1, x_2, ..., x_{t-1})$$
+$$P(x_t  \vert  x_1, x_2, ..., x_{t-1})$$
 
 Bu mekanizma şaşırtıcı derecede yeteneklidir; fakat modelin söylediği her şeyi doğruladığını göstermez. Üstelik kısa bir sohbette kusurlar gizlenebilir. Bilgi kesim tarihi, halüsinasyonlar, uzun görevlerde hedef kaybı ve nedensellik hataları ancak sistematik deneylerle ortaya çıkar.
 

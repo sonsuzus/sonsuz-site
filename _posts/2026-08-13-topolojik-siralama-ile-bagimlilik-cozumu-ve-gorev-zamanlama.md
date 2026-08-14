@@ -74,7 +74,7 @@ Kodun kritik kontrolü `len(plan) != len(gorevler)` satırıdır. Döngüdeki d�
 
 | Yaklaşım | Ana fikir | Karmaşıklık | Güçlü yön |
 |---|---|---:|---|
-| Kahn | Giriş derecesi sıfır düğümleri seçilir | $O(|V|+|E|)$ | Döngü tespiti çok nettir |
-| DFS tabanlı | Ziyaret sonrası düğüm yığına eklenir | $O(|V|+|E|)$ | Özyinelemeli ve kısa olabilir |
+| Kahn | Giriş derecesi sıfır düğümleri seçilir | $O( \vert V \vert + \vert E \vert )$ | Döngü tespiti çok nettir |
+| DFS tabanlı | Ziyaret sonrası düğüm yığına eklenir | $O( \vert V \vert + \vert E \vert )$ | Özyinelemeli ve kısa olabilir |
 
 Gerçek zamanlama sistemlerinde topolojik sıra yalnızca başlangıçtır. Hazır görevler arasından en kısa süreni, en yüksek öncelikliyi veya kaynak tüketimi en düşük olanı seçebilirsiniz. Ancak hangi politika uygulanırsa uygulansın, topolojik sıralama bağımlılık ihlallerini engelleyen temel güvenlik ağıdır: önce temel, sonra katlar; önce derleme, sonra kutlama!

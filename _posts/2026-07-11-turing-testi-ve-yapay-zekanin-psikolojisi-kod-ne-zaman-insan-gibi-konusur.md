@@ -17,7 +17,7 @@ Alan Turing’in 1950’de önerdiği ünlü “taklit oyunu”, bir makinenin d
 
 Burada psikoloji devreye girer. İnsan iletişimi yalnızca bilgi aktarımı değildir; niyet, bağlam, bellek, duygu tonu ve beklenti yönetimi içerir. Bir kullanıcı “Bugün berbat geçti” dediğinde iyi bir sistem sadece “Üzgünüm” dememeli; cümlenin duygusal ağırlığını, devam sorusu ihtiyacını ve fazla mekanik görünmeme riskini de hesaba katmalıdır. Bu yüzden modern yapay zekâ sistemlerinde dil modeli kadar “sohbet dinamiği modeli” de önemlidir.
 
-Basitçe ifade edersek, bir cevap üretme sistemi şu olasılığı büyütmeye çalışır: $P(cevap | bağlam)$. Ancak Turing benzeri inandırıcılık için hedef biraz daha karmaşıktır: $S = αT + βD + γB$. Burada $T$ tutarlılığı, $D$ duygusal uygunluğu, $B$ bağlama bağlılığı temsil eder. Katsayılar, sistemin hangi özelliğe daha çok önem vereceğini belirler.
+Basitçe ifade edersek, bir cevap üretme sistemi şu olasılığı büyütmeye çalışır: $P(cevap  \vert  bağlam)$. Ancak Turing benzeri inandırıcılık için hedef biraz daha karmaşıktır: $S = αT + βD + γB$. Burada $T$ tutarlılığı, $D$ duygusal uygunluğu, $B$ bağlama bağlılığı temsil eder. Katsayılar, sistemin hangi özelliğe daha çok önem vereceğini belirler.
 
 | Boyut | Mantıksal Bot | İnsan Benzeri Bot |
 |---|---|---|

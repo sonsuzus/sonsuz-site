@@ -25,7 +25,7 @@ Netfilter, Linux kernel içinde paketlerin geçtiği kontrol noktaları sunar. B
 | Kullanıcı alanı proxy | HTTP yanıtını değiştirir | Pillow gibi araçlar kullanılabilir |
 | Tarayıcı | Değişmiş resmi görür | Kullanıcıya sihir gibi gelir |
 
-Teorik olarak karar fonksiyonumuzu şöyle yazabiliriz: $F(p) = 1$ ise paket proxyye gider, $F(p) = 0$ ise normal akar. Pratikte $F(p)$, hedef portun 80 olup olmadığına bakar. Kedi tespiti ise daha yukarı katmanda yapılır: URL içinde `cat`, `kitten`, `kedi` geçmesi veya `Content-Type: image/jpeg` gibi başlıkların görülmesi. Basit skor mantığıyla $P(cat|url) = score/total$ diyebiliriz; eşik üstündeyse görsel çevrilir.
+Teorik olarak karar fonksiyonumuzu şöyle yazabiliriz: $F(p) = 1$ ise paket proxyye gider, $F(p) = 0$ ise normal akar. Pratikte $F(p)$, hedef portun 80 olup olmadığına bakar. Kedi tespiti ise daha yukarı katmanda yapılır: URL içinde `cat`, `kitten`, `kedi` geçmesi veya `Content-Type: image/jpeg` gibi başlıkların görülmesi. Basit skor mantığıyla $P(cat \vert url) = score/total$ diyebiliriz; eşik üstündeyse görsel çevrilir.
 
 Kernel tarafındaki iskelet kod, paketin TCP ve hedef portunun 80 olup olmadığını kontrol eder. Aşağıdaki örnek tam bir modül değil, mantığı gösteren orta seviye bir kesittir:
 

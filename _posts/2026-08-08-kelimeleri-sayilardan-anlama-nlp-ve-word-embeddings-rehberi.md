@@ -45,7 +45,7 @@ Word2Vec, kelimelerin yakın çevresinden yararlanır ve iki temel mimari sunar:
 
 İki vektörün anlamsal yakınlığı sıklıkla kosinüs benzerliğiyle ölçülür:
 
-$$cos(\theta) = \frac{A \cdot B}{||A||\,||B||}$$
+$$cos(\theta) = \frac{A \cdot B}{ \vert  \vert A \vert  \vert \, \vert  \vert B \vert  \vert }$$
 
 Sonuç 1’e yaklaştıkça yönler ve dolayısıyla anlamlar daha benzerdir. Ünlü vektör aritmetiği örneği de şöyledir:
 

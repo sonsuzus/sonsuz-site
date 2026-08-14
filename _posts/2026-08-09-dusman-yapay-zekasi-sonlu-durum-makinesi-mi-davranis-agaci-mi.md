@@ -59,7 +59,7 @@ void ExecuteState()
 }
 ```
 
-Bu kod, sensör verilerini tek bir duruma dönüştürür ve ilgili eylemi çalıştırır. Küçük düşmanlar için okunaklıdır; fakat onlarca durum eklendiğinde her durumdan diğerlerine geçiş ihtimali doğar. En kötü durumda geçiş sayısı yaklaşık $|S|(|S|-1)$ olur. İşte spagetti canavarı burada doğar!
+Bu kod, sensör verilerini tek bir duruma dönüştürür ve ilgili eylemi çalıştırır. Küçük düşmanlar için okunaklıdır; fakat onlarca durum eklendiğinde her durumdan diğerlerine geçiş ihtimali doğar. En kötü durumda geçiş sayısı yaklaşık $ \vert S \vert ( \vert S \vert -1)$ olur. İşte spagetti canavarı burada doğar!
 
 ## Davranış Ağacı
 

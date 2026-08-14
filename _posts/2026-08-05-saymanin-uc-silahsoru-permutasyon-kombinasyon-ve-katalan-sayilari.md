@@ -55,7 +55,7 @@ Sekiz kişiden üç kişilik bir ekip seçersek $inom{8}{3}=56$ sonuç elde ede
 
 Sonuçların eş olasılıklı olduğu sonlu bir deneyde bir $A$ olayının olasılığı:
 
-$$P(A)=\frac{|A|}{|\Omega|}$$
+$$P(A)=\frac{ \vert A \vert }{ \vert \Omega \vert }$$
 
 Örneğin 52 karttan seçilen beş kartın tamamının kupa olma olasılığında sıralama önemli değildir:
 

@@ -40,7 +40,7 @@ $tfidf(t,d)=tf(t,d) \times idf(t)$
 
 Bir cümleyi ve tüm belgeyi vektör olarak düşündüğümüzde, aralarındaki açı bize benzerliği verir:
 
-$cos(\theta)=\frac{A \cdot B}{\|A\|\|B\|}$
+$cos(\theta)=\frac{A \cdot B}{\ \vert A\ \vert \ \vert B\ \vert }$
 
 Açı küçüldükçe benzerlik artar. Yani cümle, makalenin genel fikrine yaklaşıyorsa özet için güçlü bir adaydır.
 

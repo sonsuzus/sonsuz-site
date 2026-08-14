@@ -31,7 +31,7 @@ Ancak bu denklem neyin **adil** olduğunu kendiliğinden bilmez. Eğitim verisin
 
 Adalet denetiminde yalnızca genel doğruluk yeterli değildir. Örneğin iki grup için doğru pozitif oranları karşılaştırılabilir:
 
-$$\Delta_{TPR} = |TPR_A - TPR_B|$$
+$$\Delta_{TPR} =  \vert TPR_A - TPR_B \vert $$
 
 Fark büyüdükçe modelin gruplar arasında eşit fırsat sağlamadığı düşünülebilir. Yine de hiçbir adalet metriği evrensel değildir; demografik eşitlik, eşit fırsat ve hata oranı eşitliği bazı durumlarda birbiriyle çelişebilir.
 

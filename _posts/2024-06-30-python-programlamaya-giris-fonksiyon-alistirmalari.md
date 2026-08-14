@@ -149,7 +149,7 @@ Sonuç:
 
 * `N`‘nin karekökü için en iyi tahmin
 
-Fonksiyon içinde, yukarıdaki formülü tekrar tekrar işleterek daha iyi tahminlere ulaşan bir döngü yazın. Her adımda hata değeri $|x_n^2 – N|$ ile tolerans `tol` karşılaştırılsın. Hata,i toleransın altına düşünce döngü sonlansın. Ayrıca, döngü iterasyonları sayısı `maxiter`‘den fazla olursa yine döngü sonlansın. Bu durumda bir uyarı mesajı ekrana yazılsın ve fonksiyon döngüde elde edilen son sonucu versin.
+Fonksiyon içinde, yukarıdaki formülü tekrar tekrar işleterek daha iyi tahminlere ulaşan bir döngü yazın. Her adımda hata değeri $ \vert x_n^2 – N \vert $ ile tolerans `tol` karşılaştırılsın. Hata,i toleransın altına düşünce döngü sonlansın. Ayrıca, döngü iterasyonları sayısı `maxiter`‘den fazla olursa yine döngü sonlansın. Bu durumda bir uyarı mesajı ekrana yazılsın ve fonksiyon döngüde elde edilen son sonucu versin.
 
 Örnekler:
 

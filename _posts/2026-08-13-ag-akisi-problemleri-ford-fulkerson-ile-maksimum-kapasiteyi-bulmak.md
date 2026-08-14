@@ -22,7 +22,7 @@ Geçerli bir çözüm iki temel kurala uymalıdır:
 
 $$\sum_{u} f(u,v) = \sum_{w} f(v,w)$$
 
-Amaç fonksiyonu, kaynaktan çıkan net akışı mümkün olduğunca büyütmektir. Bu değer genellikle $|f|$ ile yazılır. Önemli fikir şudur: En kısa yol her zaman en fazla akışı taşıyan yol değildir. Çünkü darboğazı belirleyen, bir yol üzerindeki **en küçük kapasitedir**.
+Amaç fonksiyonu, kaynaktan çıkan net akışı mümkün olduğunca büyütmektir. Bu değer genellikle $ \vert f \vert $ ile yazılır. Önemli fikir şudur: En kısa yol her zaman en fazla akışı taşıyan yol değildir. Çünkü darboğazı belirleyen, bir yol üzerindeki **en küçük kapasitedir**.
 
 | Kavram | Anlamı | Günlük hayattan karşılığı |
 |---|---|---|

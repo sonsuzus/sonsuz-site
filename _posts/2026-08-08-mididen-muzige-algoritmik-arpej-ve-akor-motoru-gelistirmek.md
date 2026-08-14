@@ -35,7 +35,7 @@ Bir gamı, kök notaya eklenecek yarım ses aralıkları listesi şeklinde tanı
 
 Nota gam dışındaysa en yakın geçerli perdeye yuvarlayabiliriz:
 
-$$q=\operatorname*{argmin}_{s\in S}|p-s|$$
+$$q=\operatorname*{argmin}_{s\in S} \vert p-s \vert $$
 
 Bu yaklaşım basittir; ancak eşit uzaklıktaki iki nota arasında sürekli aynı yönü seçmek mekanik duyulabilir. Daha müzikal bir sonuç için melodinin önceki yönünü veya velocity değerini karar sürecine katmak mümkündür.
 

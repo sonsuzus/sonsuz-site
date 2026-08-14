@@ -73,7 +73,7 @@ WHERE yas >= 25
 ORDER BY ad ASC;
 ```
 
-`WHERE` sonuçları filtreler, `ORDER BY` ise sıralar. Bu örnek, yaşı en az 25 olan kullanıcıları ada göre artan biçimde getirir. Koşulu sağlayan kayıtların kümesini $S$ olarak düşünürsek sonuç sayısı $|S| \leq N$ olur.
+`WHERE` sonuçları filtreler, `ORDER BY` ise sıralar. Bu örnek, yaşı en az 25 olan kullanıcıları ada göre artan biçimde getirir. Koşulu sağlayan kayıtların kümesini $S$ olarak düşünürsek sonuç sayısı $ \vert S \vert  \leq N$ olur.
 
 ## Update: UPDATE ile Kayıt Güncelleme
 

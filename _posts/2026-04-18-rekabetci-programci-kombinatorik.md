@@ -149,19 +149,19 @@ Katalan sayıları ağaç sayma problemlerinde de ortaya çıkar:
 
 İki küme için:
 
-$$|A \cup B| = |A| + |B| - |A \cap B|$$
+$$ \vert A \cup B \vert  =  \vert A \vert  +  \vert B \vert  -  \vert A \cap B \vert $$
 
 Üç küme için:
 
-$$|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$$
+$$ \vert A \cup B \cup C \vert  =  \vert A \vert  +  \vert B \vert  +  \vert C \vert  -  \vert A \cap B \vert  -  \vert A \cap C \vert  -  \vert B \cap C \vert  +  \vert A \cap B \cap C \vert $$
 
 Genel kural: Tek sayıda kümenin kesişimi **eklenir**, çift sayıda kümenin kesişimi **çıkarılır**.
 
 Simetrik olarak kesişim büyüklükleri de birleşimden hesaplanabilir. Örneğin:
 
-$$|A \cap B| = |A| + |B| - |A \cup B|$$
+$$ \vert A \cap B \vert  =  \vert A \vert  +  \vert B \vert  -  \vert A \cup B \vert $$
 
-$$|A \cap B \cap C| = |A| + |B| + |C| - |A \cup B| - |A \cup C| - |B \cup C| + |A \cup B \cup C|$$
+$$ \vert A \cap B \cap C \vert  =  \vert A \vert  +  \vert B \vert  +  \vert C \vert  -  \vert A \cup B \vert  -  \vert A \cup C \vert  -  \vert B \cup C \vert  +  \vert A \cup B \cup C \vert $$
 
 ### Düzensizlikler (Derangements)
 
@@ -169,11 +169,11 @@ $\{1, 2, \ldots, n\}$ elemanlarının **düzensizliği**, hiçbir elemanın kend
 
 **İçerme-dışarma ile:** $X_k$, $k$. pozisyonda $k$ elemanını içeren permütasyon kümesi olsun. Düzensizlik sayısı:
 
-$$n! - |X_1 \cup X_2 \cup \cdots \cup X_n|$$
+$$n! -  \vert X_1 \cup X_2 \cup \cdots \cup X_n \vert $$
 
 $n = 3$ için:
 
-$$|X_1 \cup X_2 \cup X_3| = 2 + 2 + 2 - 1 - 1 - 1 + 1 = 4$$
+$$ \vert X_1 \cup X_2 \cup X_3 \vert  = 2 + 2 + 2 - 1 - 1 - 1 + 1 = 4$$
 
 Düzensizlik sayısı $= 3! - 4 = 2$.
 

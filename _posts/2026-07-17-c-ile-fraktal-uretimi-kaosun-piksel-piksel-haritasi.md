@@ -13,7 +13,7 @@ tags:
 
 Fraktallar, matematiğin “az kural, çok karmaşa” diyen asi çocuklarıdır. C++ ile fraktal üretmek ise bu çocuklara bir tuval vermek gibidir: basit bir formül yazarsınız, bilgisayar milyonlarca kez tekrarlar ve ekranda sonsuz kıvrımlara benzeyen görsel bir evren belirir. Özellikle Mandelbrot kümesi, kaos teorisinin en popüler posteridir; çünkü minicik bir başlangıç farkı, bambaşka görsel sonuçlar doğurabilir.
 ``
-Fraktal mantığının kalbinde yineleme, yani aynı işlemi tekrar tekrar uygulama fikri vardır. Mandelbrot için temel formül oldukça kısa görünür: $z_{n+1}=z_n^2+c$. Burada $z$ karmaşık bir sayıdır, $c$ ise ekrandaki her pikselin temsil ettiği noktadır. Başlangıçta $z_0=0$ alınır. Sonra bu formül belirli sayıda çalıştırılır. Eğer $|z_n| > 2$ olursa noktanın “kaçtığını” söyleriz; kaçmazsa Mandelbrot kümesinin içinde veya sınırında olabilir.
+Fraktal mantığının kalbinde yineleme, yani aynı işlemi tekrar tekrar uygulama fikri vardır. Mandelbrot için temel formül oldukça kısa görünür: $z_{n+1}=z_n^2+c$. Burada $z$ karmaşık bir sayıdır, $c$ ise ekrandaki her pikselin temsil ettiği noktadır. Başlangıçta $z_0=0$ alınır. Sonra bu formül belirli sayıda çalıştırılır. Eğer $ \vert z_n \vert  > 2$ olursa noktanın “kaçtığını” söyleriz; kaçmazsa Mandelbrot kümesinin içinde veya sınırında olabilir.
 
 Bu basitlik aldatıcıdır. Çünkü her piksel için aynı işlem yapılmasına rağmen sonuçlar dramatik biçimde değişir. Bir piksel 10 yinelemede kaçarken komşusu 500 yineleme boyunca dayanabilir. İşte renkleri de genellikle bu kaçış hızına göre veririz.
 
@@ -21,7 +21,7 @@ Bu basitlik aldatıcıdır. Çünkü her piksel için aynı işlem yapılmasına
 |---|---|---|
 | Karmaşık sayı $c$ | Pikselin matematiksel koordinatı | Fraktalda konum belirler |
 | Yineleme sayısı | Döngü limiti | Detay seviyesi artar |
-| Kaçış koşulu $|z|>2$ | Döngüden çıkma şartı | Renk yoğunluğunu belirler |
+| Kaçış koşulu $ \vert z \vert >2$ | Döngüden çıkma şartı | Renk yoğunluğunu belirler |
 | Yakınlaştırma | Koordinat aralığını daraltma | Sonsuz detay hissi verir |
 
 Aşağıdaki C++ kodu, Mandelbrot kümesini PPM formatında bir görsele yazar. PPM seçmemizin nedeni eğlenceli derecede basit olmasıdır: dosyanın başına birkaç bilgi, ardından RGB değerleri. Yani kütüphane canavarı çağırmadan piksel piksel resim üretebiliriz.

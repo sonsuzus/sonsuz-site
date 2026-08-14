@@ -18,13 +18,13 @@ Klasik bilgisayarların dünyasında bitler uslu çocuklardır: Ya 0’dırlar y
 
 Bir klasik bitin durumu yalnızca $0$ veya $1$ olabilir. Kübit ise şu biçimde gösterilir:
 
-$$|psi> = alpha|0> + beta|1>$$
+$$ \vert psi> = alpha \vert 0> + beta \vert 1>$$
 
 Buradaki $alpha$ ve $beta$, olasılık genlikleridir ve
 
-$$|alpha|^2 + |beta|^2 = 1$$
+$$ \vert alpha \vert ^2 +  \vert beta \vert ^2 = 1$$
 
-koşulunu sağlar. Ölçüm yaptığımızda $|alpha|^2$ olasılıkla 0, $|beta|^2$ olasılıkla 1 elde ederiz. Kübit, ölçümden önce gizlice seçilmiş sıradan bir değeri cebinde taşımak zorunda değildir. Süperpozisyon, yalnızca “sonucu bilmiyoruz” demek değil; girişim deneylerinde fiziksel etkileri görülebilen bir kuantum durumudur.
+koşulunu sağlar. Ölçüm yaptığımızda $ \vert alpha \vert ^2$ olasılıkla 0, $ \vert beta \vert ^2$ olasılıkla 1 elde ederiz. Kübit, ölçümden önce gizlice seçilmiş sıradan bir değeri cebinde taşımak zorunda değildir. Süperpozisyon, yalnızca “sonucu bilmiyoruz” demek değil; girişim deneylerinde fiziksel etkileri görülebilen bir kuantum durumudur.
 
 | Özellik | Klasik bit | Kübit |
 |---|---|---|

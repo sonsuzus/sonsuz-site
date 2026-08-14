@@ -15,9 +15,9 @@ Kuantum bilgisayarlar, bilgiyi yalnızca 0 veya 1 olarak değil, bu durumların 
 
 Bir kübitin genel durumu aşağıdaki karmaşık vektördür:
 
-$$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$$
+$$ \vert \psi\rangle = \alpha \vert 0\rangle + \beta \vert 1\rangle$$
 
-Burada $\alpha$ ve $\beta$ karmaşık sayılardır; ölçüm olasılıkları ise Born kuralıyla hesaplanır: $P(0)=|\alpha|^2$, $P(1)=|\beta|^2$ ve toplamları 1 olmalıdır. Klasik bit kesin bir kutudayken, kübit ölçülene kadar iki kutunun da kapısını aralık bırakır. Bu, “aynı anda her cevabı hesaplıyor” gibi romantik ama eksik bir anlatımdır: Asıl güç, doğru cevapları güçlendiren **girişim** desenlerindedir.
+Burada $\alpha$ ve $\beta$ karmaşık sayılardır; ölçüm olasılıkları ise Born kuralıyla hesaplanır: $P(0)= \vert \alpha \vert ^2$, $P(1)= \vert \beta \vert ^2$ ve toplamları 1 olmalıdır. Klasik bit kesin bir kutudayken, kübit ölçülene kadar iki kutunun da kapısını aralık bırakır. Bu, “aynı anda her cevabı hesaplıyor” gibi romantik ama eksik bir anlatımdır: Asıl güç, doğru cevapları güçlendiren **girişim** desenlerindedir.
 
 | Kavram      | Klasik karşılığı | Kuantum davranışı                            |
 | ----------- | ---------------- | -------------------------------------------- |
@@ -26,7 +26,7 @@ Burada $\alpha$ ve $\beta$ karmaşık sayılardır; ölçüm olasılıkları ise
 | Bağıntı | Ayrı değişkenlerle saklanır | Dolanıklıkta tek bir ortak durum vardır |
 | Maliyet | $n$ bit için $n$ değer | $n$ kübit için $2^n$ genlik |
 
-Simülatörün kalbi, $n$ kübitlik sistemi uzunluğu $2^n$ olan bir NumPy vektörüyle temsil etmektir. Başlangıç durumu $|00\ldots0\rangle$ olduğundan ilk genlik 1, diğerleri 0’dır. Hadamard kapısı süperpozisyon üretir; CNOT ise kontrol kübiti 1 olduğunda hedefi çevirir. Aşağıdaki örnek, iki kübitte Bell durumu $\frac{|00\rangle+|11\rangle}{\sqrt{2}}$ oluşturur:
+Simülatörün kalbi, $n$ kübitlik sistemi uzunluğu $2^n$ olan bir NumPy vektörüyle temsil etmektir. Başlangıç durumu $ \vert 00\ldots0\rangle$ olduğundan ilk genlik 1, diğerleri 0’dır. Hadamard kapısı süperpozisyon üretir; CNOT ise kontrol kübiti 1 olduğunda hedefi çevirir. Aşağıdaki örnek, iki kübitte Bell durumu $\frac{ \vert 00\rangle+ \vert 11\rangle}{\sqrt{2}}$ oluşturur:
 
 ```python
 import numpy as np
@@ -44,7 +44,7 @@ state = CNOT @ state                            # ilk kübit kontrol
 print(np.round(state, 3))
 ```
 
-Çıktıda yalnızca $|00\rangle$ ve $|11\rangle$ genliklerinin dolu olması dolanıklığı gösterir. Bu, “ilk kübit 0, ikinci 0; ilk 1, ikinci 1” diye iki ayrı klasik kayıt tutmak değildir. Tek tek kübitler ölçülmeden belirli değere sahip değildir; ama birlikte ölçüldüklerinde sonuçları mükemmel biçimde ilişkilidir.
+Çıktıda yalnızca $ \vert 00\rangle$ ve $ \vert 11\rangle$ genliklerinin dolu olması dolanıklığı gösterir. Bu, “ilk kübit 0, ikinci 0; ilk 1, ikinci 1” diye iki ayrı klasik kayıt tutmak değildir. Tek tek kübitler ölçülmeden belirli değere sahip değildir; ama birlikte ölçüldüklerinde sonuçları mükemmel biçimde ilişkilidir.
 
 Shor algoritması, $N$ sayısını çarpanlara ayırmayı periyot bulma problemine dönüştürür. Rastgele bir $a$ seçilir ve
 

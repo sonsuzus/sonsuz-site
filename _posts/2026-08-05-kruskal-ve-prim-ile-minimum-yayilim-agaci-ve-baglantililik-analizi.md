@@ -16,7 +16,7 @@ tags:
 
 ## Minimum yayılım ağacı nedir?
 
-Ağırlıklı ve yönsüz bir grafı $G=(V,E)$ biçiminde gösterelim. Burada $V$ düğümleri, $E$ kenarları temsil eder. Bir **yayılım ağacı**, grafın bütün düğümlerini kapsayan, bağlantılı ve döngüsüz alt graftır. $|V|=n$ olan her yayılım ağacında tam olarak $n-1$ kenar bulunur.
+Ağırlıklı ve yönsüz bir grafı $G=(V,E)$ biçiminde gösterelim. Burada $V$ düğümleri, $E$ kenarları temsil eder. Bir **yayılım ağacı**, grafın bütün düğümlerini kapsayan, bağlantılı ve döngüsüz alt graftır. $ \vert V \vert =n$ olan her yayılım ağacında tam olarak $n-1$ kenar bulunur.
 
 Minimum yayılım ağacı (MST), kenar ağırlıkları toplamı en küçük olan yayılım ağacıdır:
 
@@ -80,7 +80,7 @@ def prim(graph, start):
     return tree, visited
 ```
 
-Prim tamamlandığında `visited` kümesinin boyutu $|V|$ değerine eşitse graf bağlantılıdır. Eşit değilse algoritma yalnızca başlangıç düğümünün bulunduğu bileşeni dolaşmıştır. Tüm bileşenleri bulmak için ziyaret edilmemiş her düğümden Prim, DFS veya BFS yeniden başlatılabilir.
+Prim tamamlandığında `visited` kümesinin boyutu $ \vert V \vert $ değerine eşitse graf bağlantılıdır. Eşit değilse algoritma yalnızca başlangıç düğümünün bulunduğu bileşeni dolaşmıştır. Tüm bileşenleri bulmak için ziyaret edilmemiş her düğümden Prim, DFS veya BFS yeniden başlatılabilir.
 
 ## Kruskal mı, Prim mi?
 

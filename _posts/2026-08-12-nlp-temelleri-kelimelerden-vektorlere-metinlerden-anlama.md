@@ -49,7 +49,7 @@ $$\vec{\text{kral}}-\vec{\text{erkek}}+\vec{\text{kadın}}\approx\vec{\text{kral
 
 Vektörlerin yakınlığını ölçmek için çoğunlukla kosinüs benzerliği kullanılır. Vektörlerin uzunluğundan çok yönünü karşılaştırdığı için pratikte kullanışlıdır:
 
-$$\cos(\theta)=\frac{\vec{u}\cdot\vec{v}}{\|\vec{u}\|\|\vec{v}\|}$$
+$$\cos(\theta)=\frac{\vec{u}\cdot\vec{v}}{\ \vert \vec{u}\ \vert \ \vert \vec{v}\ \vert }$$
 
 Aşağıdaki küçük örnek, önceden eğitilmiş bir modelle benzer kelimeleri sorgulama fikrini gösterir:
 

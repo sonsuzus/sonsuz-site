@@ -90,7 +90,7 @@ try {
 $body = file_get_contents('php://input');
 $input = json_decode($body, true);
 
-if (!is_array($input) || empty($input['name'])) {
+if (!is_array($input)  \vert  \vert  empty($input['name'])) {
     http_response_code(422);
     echo json_encode(['error' => 'name alanı zorunludur.']);
     exit;

@@ -55,7 +55,7 @@ Ekleme sırasında yeni düğüm kırmızı eklenir. Ebeveyni siyahsa iş biter.
 
 | İşlem | AVL yaklaşımı | Kırmızı-Siyah yaklaşımı |
 |---|---|---|
-| Ekleme | Yükseklik güncelle, $|BF|>1$ ise döndür | Renk ihlalini boya/döndür |
+| Ekleme | Yükseklik güncelle, $ \vert BF \vert >1$ ise döndür | Renk ihlalini boya/döndür |
 | Silme | Her atada denge faktörünü izle | Siyah yükseklik eksilmesini onar |
 | Garanti | Çok sıkı yükseklik | En uzun yol $\leq 2$ kat kısa yol |
 

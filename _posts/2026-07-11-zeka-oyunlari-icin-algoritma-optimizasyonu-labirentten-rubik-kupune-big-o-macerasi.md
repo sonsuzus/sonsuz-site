@@ -50,7 +50,7 @@ def astar(start, goal, neighbors, heuristic):
     return None
 ```
 
-Bu kodda öncelik kuyruğu, en umut verici düğümü öne alır. Böylece algoritma her yeri eşit merakla gezmez; hedefe doğru kibarca burnunu uzatır. Labirentte `neighbors` fonksiyonu geçilebilir hücreleri döndürür, `heuristic` ise örneğin $|x_1-x_2|+|y_1-y_2|$ hesaplar.
+Bu kodda öncelik kuyruğu, en umut verici düğümü öne alır. Böylece algoritma her yeri eşit merakla gezmez; hedefe doğru kibarca burnunu uzatır. Labirentte `neighbors` fonksiyonu geçilebilir hücreleri döndürür, `heuristic` ise örneğin $ \vert x_1-x_2 \vert + \vert y_1-y_2 \vert $ hesaplar.
 
 Rubik Küp tarafında mesele daha serttir. Her durumda 18 temel hamle düşünürsek dallanma faktörü yüksektir. Burada IDA* öne çıkar: A* mantığını derinlik sınırıyla birleştirir, ancak devasa öncelik kuyruğu tutmaz. Özellikle desen veritabanları, yani pattern database, sezgisel değeri önceden hesaplayarak büyük hız kazandırır. Bunun bedeli bellektir; klasik takas: zaman mı, RAM mi?
 

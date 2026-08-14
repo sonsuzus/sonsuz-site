@@ -24,7 +24,7 @@ $$L \approx R$$
 
 Zamanla iki tarafta farklı commit’ler oluşabilir. Ayrışma miktarını basitçe şu şekilde düşünebiliriz:
 
-$$\Delta = |C_L \triangle C_R|$$
+$$\Delta =  \vert C_L \triangle C_R \vert $$
 
 Burada $C_L$ ve $C_R$ yerel ve uzak commit kümelerini, $\triangle$ ise iki küme arasındaki farklılığı temsil eder. `fetch`, `pull` ve `push` işlemleri bu farkı yönetmemizi sağlar.
 

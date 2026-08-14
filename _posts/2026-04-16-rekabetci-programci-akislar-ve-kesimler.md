@@ -133,7 +133,7 @@ Bu yapıdaki maksimum akış değeri, iki parçalı çizgenin maksimum eşleşme
 
 Hall'ın Teoremi, tüm sol (veya sağ) düğümleri kapsayan bir eşleşmenin var olup olmadığını belirler. $X$ sol düğümlerden oluşan herhangi bir alt küme, $f(X)$ ise $X$'in komşularının kümesi olsun. Tüm sol düğümleri kapsayan bir eşleşme vardır ancak ve ancak:
 
-$$\forall X \subseteq L : |X| \leq |f(X)|$$
+$$\forall X \subseteq L :  \vert X \vert  \leq  \vert f(X) \vert $$
 
 Başka bir deyişle, sol tarafın hiçbir alt kümesi sağ taraftaki komşularından daha kalabalık olmamalıdır. Bu koşul bozulduğunda, $X$ grubu neden mükemmel eşleşmenin imkânsız olduğunu doğrudan gösterir.
 

@@ -162,7 +162,7 @@ $p$ örüntüsünün $s$ yazısında geçtiği yerleri bulmak için:
 
 $$t = p \# s$$
 
-oluşturulur; `#` karakteri ne $p$'de ne $s$'de geçer. $t$'nin Z-dizisinde $|p|$ değerine eşit olan pozisyonlar örüntünün başlangıç noktalarıdır.
+oluşturulur; `#` karakteri ne $p$'de ne $s$'de geçer. $t$'nin Z-dizisinde $ \vert p \vert $ değerine eşit olan pozisyonlar örüntünün başlangıç noktalarıdır.
 
 **Örnek:** $s = \text{HATTIVATTI}$, $p = \text{ATT}$
 
@@ -171,7 +171,7 @@ oluşturulur; `#` karakteri ne $p$'de ne $s$'de geçer. $t$'nin Z-dizisinde $|p|
 | A | T | T | # | H | A | T | T | I | V | A | T | T | I |
 | – | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 |
 
-5. ve 10. pozisyonlar $z = 3 = |p|$ → `ATT`, `HATTIVATTI`'da 1. ve 6. indislerde geçer.
+5. ve 10. pozisyonlar $z = 3 =  \vert p \vert $ → `ATT`, `HATTIVATTI`'da 1. ve 6. indislerde geçer.
 
 ### Implementasyon
 

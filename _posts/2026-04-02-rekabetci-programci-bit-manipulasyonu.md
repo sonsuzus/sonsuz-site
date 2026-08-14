@@ -88,7 +88,7 @@ AND operasyonu ile bir $x$ sayısının çift olup olmadığını kontrol edebil
 
 ### Veya (OR) Operasyonu
 
-`x | y`, $x$ veya $y$'den en az birinde 1 biti olan pozisyonlarda 1 içerir. Örneğin $22\ |\ 26 = 30$:
+`x | y`, $x$ veya $y$'den en az birinde 1 biti olan pozisyonlarda 1 içerir. Örneğin $22\  \vert \ 26 = 30$:
 
 ```
   10110  (22)

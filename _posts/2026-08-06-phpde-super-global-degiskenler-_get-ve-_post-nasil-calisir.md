@@ -66,7 +66,7 @@ Form gönderildiğinde PHP alanlara `$_POST` üzerinden erişir:
 $kullanici = trim($_POST['kullanici'] ?? '');
 $parola = $_POST['parola'] ?? '';
 
-if ($kullanici === '' || $parola === '') {
+if ($kullanici === ''  \vert  \vert  $parola === '') {
     exit('Tüm alanları doldurun.');
 }
 

@@ -38,7 +38,7 @@ Birçok pekiştirmeli öğrenme problemi, Markov Karar Süreci ile modellenir ve
 
 Bir durumun değerini hesaplayan Bellman eşitliği, bugünkü ödülle gelecekteki olası değeri birleştirir:
 
-$$V^{\pi}(s)=\sum_a \pi(a|s)\sum_{s'}P(s'|s,a)\left[R(s,a,s')+\gamma V^{\pi}(s')\right]$$
+$$V^{\pi}(s)=\sum_a \pi(a \vert s)\sum_{s'}P(s' \vert s,a)\left[R(s,a,s')+\gamma V^{\pi}(s')\right]$$
 
 Bu ifade ilk bakışta matematik canavarı gibi görünse de mesajı basittir: “Bir durumun değeri, şimdi kazanacağım ödül ile sonra ulaşacağım durumların değeridir.”
 

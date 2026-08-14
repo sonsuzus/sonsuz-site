@@ -21,7 +21,7 @@ $$Bool = True + False$$
 
 `Pair Int Bool` ise iki değeri birlikte taşıdığı için çarpım tipidir:
 
-$$|Pair\ Int\ Bool| = |Int| \times |Bool|$$
+$$ \vert Pair\ Int\ Bool \vert  =  \vert Int \vert  \times  \vert Bool \vert $$
 
 Bu bakış açısı yalnızca matematiksel süs değildir. Derleyici, bir `case` ifadesinin tüm olasılıkları kapsayıp kapsamadığını bu yapı üzerinden inceleyebilir.
 

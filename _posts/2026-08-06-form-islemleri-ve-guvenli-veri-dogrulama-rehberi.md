@@ -37,9 +37,9 @@ Sağlıklı bir veri akışı şu aşamalardan oluşur:
 
 Bir alanın kabul koşulunu matematiksel olarak şöyle düşünebiliriz:
 
-$$V(x)=T(x) \land L_{min}\leq |x|\leq L_{max} \land B(x)$$
+$$V(x)=T(x) \land L_{min}\leq  \vert x \vert \leq L_{max} \land B(x)$$
 
-Burada $T(x)$ biçim ve tür kontrolünü, $|x|$ uzunluğu, $B(x)$ ise uygulamanın iş kurallarını temsil eder. Koşullardan biri bile yanlışsa veri reddedilmelidir. Hatalı girdiyi sessizce değiştirmek yerine kullanıcıya anlaşılır bir mesaj göstermek çoğu zaman daha doğrudur.
+Burada $T(x)$ biçim ve tür kontrolünü, $ \vert x \vert $ uzunluğu, $B(x)$ ise uygulamanın iş kurallarını temsil eder. Koşullardan biri bile yanlışsa veri reddedilmelidir. Hatalı girdiyi sessizce değiştirmek yerine kullanıcıya anlaşılır bir mesaj göstermek çoğu zaman daha doğrudur.
 
 ## Sunucu tarafında güvenli örnek
 
@@ -60,15 +60,15 @@ $age = filter_input(INPUT_POST, 'age', FILTER_VALIDATE_INT, [
 
 $errors = [];
 
-if ($name === '' || mb_strlen($name) > 80) {
+if ($name === ''  \vert  \vert  mb_strlen($name) > 80) {
     $errors[] = 'Ad alanı 1-80 karakter olmalıdır.';
 }
 
-if ($email === false || $email === null) {
+if ($email === false  \vert  \vert  $email === null) {
     $errors[] = 'Geçerli bir e-posta adresi girilmelidir.';
 }
 
-if ($age === false || $age === null) {
+if ($age === false  \vert  \vert  $age === null) {
     $errors[] = 'Yaş 18 ile 120 arasında olmalıdır.';
 }
 

@@ -38,7 +38,7 @@ $pdo = new PDO(
 $title = trim($_POST['title'] ?? '');
 $userId = $_SESSION['user_id'] ?? null;
 
-if ($title === '' || !$userId) {
+if ($title === ''  \vert  \vert  !$userId) {
     http_response_code(400);
     exit('Geçersiz istek');
 }

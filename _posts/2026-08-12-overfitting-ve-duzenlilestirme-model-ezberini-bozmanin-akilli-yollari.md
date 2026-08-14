@@ -25,7 +25,7 @@ Burada $\lambda$, cezanın şiddetini belirleyen hiperparametredir; $R(w)$ ise a
 
 | Teknik | Ceza | Temel etkisi | Ne zaman öne çıkar? |
 |---|---:|---|---|
-| L1 (Lasso) | $\lambda \sum_i |w_i|$ | Bazı ağırlıkları tam sıfıra iter | Özellik seçimi önemliyse |
+| L1 (Lasso) | $\lambda \sum_i  \vert w_i \vert $ | Bazı ağırlıkları tam sıfıra iter | Özellik seçimi önemliyse |
 | L2 (Ridge / weight decay) | $\lambda \sum_i w_i^2$ | Büyük ağırlıkları yumuşakça küçültür | Sinir ağlarında genel amaçlı kullanımda |
 | Dropout | Rastgele nöron kapatma | Nöronların birbirine bağımlılığını azaltır | Derin ağlarda |
 | Early stopping | Eğitim zamanını sınırlama | Doğrulama performansını korur | Hızlı ve etkili koruma gerektiğinde |

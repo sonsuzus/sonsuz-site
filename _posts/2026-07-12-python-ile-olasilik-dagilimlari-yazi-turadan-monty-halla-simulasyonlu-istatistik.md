@@ -91,7 +91,7 @@ Burada 0’dan 10’a kadar yazı sayılarının göreli frekanslarını görür
 
 Koşullu olasılık, bir olayın gerçekleştiğini bildiğimizde başka bir olayın olasılığını günceller. Formül şöyledir:
 
-$$P(A|B)=\frac{P(A\cap B)}{P(B)}$$
+$$P(A \vert B)=\frac{P(A\cap B)}{P(B)}$$
 
 Monty Hall probleminde 3 kapı vardır. Birinde araba, ikisinde keçi bulunur. Oyuncu bir kapı seçer. Sunucu, arabanın olmadığı bir kapıyı açar. Oyuncuya seçim değiştirme hakkı verilir. Sezgisel cevap “fark etmez, olasılık yarı yarıya” olabilir; ama doğru strateji değiştirmektir.
 

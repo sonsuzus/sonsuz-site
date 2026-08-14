@@ -34,7 +34,7 @@ Geometri problemlerinde kolay koda dökülebilecek bir çözüm bulmak genellikl
 
 **Örnek:** Bir dörtgenin alanı, köşeleri $s = (a+b+c)/2$ olmak üzere Heron Formülü ile iki üçgene bölerek hesaplanabilir; ama hangi köşegen seçileceği özel durumlar doğurur. Bunun yerine doğrudan genel formül:
 
-$$\text{Alan} = \frac{|x_1 y_2 - x_2 y_1 + x_2 y_3 - x_3 y_2 + x_3 y_4 - x_4 y_3 + x_4 y_1 - x_1 y_4|}{2}$$
+$$\text{Alan} = \frac{ \vert x_1 y_2 - x_2 y_1 + x_2 y_3 - x_3 y_2 + x_3 y_4 - x_4 y_3 + x_4 y_1 - x_1 y_4 \vert }{2}$$
 
 Bu formülün avantajı **[hiç özel durum içermemesi](https://program.sonsuz.us/search.html?q=hi%C3%A7%20%C3%B6zel%20durum%20i%C3%A7ermemesi)** ve tüm çokgenlere genellenebilmesidir.
 ``
@@ -61,7 +61,7 @@ cout << s.X << " " << s.Y << "\n"; // 5 3
 
 **Koordinat tipi seçimi:**
 - `long long` → tam sayı koordinatlar; hesaplamalar **kesin**tir, tercih edilir.
-- `long double` → reel koordinatlar; kayan nokta hatalarına dikkat! Eşitlik kontrolü için $|a - b| < \varepsilon$ kullanılır ($\varepsilon = 10^{-9}$ gibi).
+- `long double` → reel koordinatlar; kayan nokta hatalarına dikkat! Eşitlik kontrolü için $ \vert a - b \vert  < \varepsilon$ kullanılır ($\varepsilon = 10^{-9}$ gibi).
 
 ### Hazır Fonksiyonlar
 
@@ -121,11 +121,11 @@ $ab$ ve $cd$ parçalarının kesişip kesişmediğini kontrol etmek için **üç
 
 $s_1$ ve $s_2$'den geçen doğruya $p$ noktasının en kısa mesafesi:
 
-$$d = \frac{|(s_1 - p) \times (s_2 - p)|}{|s_2 - s_1|}$$
+$$d = \frac{ \vert (s_1 - p) \times (s_2 - p) \vert }{ \vert s_2 - s_1 \vert }$$
 
 **Kanıt:** $s_1$, $s_2$, $p$ köşeli üçgenin alanı iki şekilde yazılabilir:
-- $\frac{1}{2}|s_2 - s_1| \cdot d$
-- $\frac{1}{2}|(s_1 - p) \times (s_2 - p)|$
+- $\frac{1}{2} \vert s_2 - s_1 \vert  \cdot d$
+- $\frac{1}{2} \vert (s_1 - p) \times (s_2 - p) \vert $
 
 Bunlar eşitlenerek $d$ elde edilir.
 
@@ -145,13 +145,13 @@ Bir $p$ noktasının çokgenin içinde mi dışında mı olduğunu bulmak için 
 
 Köşeleri sırasıyla $p_1 = (x_1, y_1), p_2 = (x_2, y_2), \ldots, p_n = (x_n, y_n)$ olan bir çokgenin alanı:
 
-$$\text{Alan} = \frac{1}{2} \left| \sum_{i=1}^{n-1} (x_i y_{i+1} - x_{i+1} y_i) \right|$$
+$$\text{Alan} = \frac{1}{2} \left \vert  \sum_{i=1}^{n-1} (x_i y_{i+1} - x_{i+1} y_i) \right \vert $$
 
 ($p_1 = p_n$ yani ilk ve son köşe aynıdır.)
 
 **Örnek:** Köşeleri $(2,4), (5,5), (7,3), (4,1), (4,3)$ olan çokgen için:
 
-$$\text{Alan} = \frac{|(2 \cdot 5 - 5 \cdot 4) + (5 \cdot 3 - 7 \cdot 5) + (7 \cdot 1 - 4 \cdot 3) + (4 \cdot 3 - 4 \cdot 1) + (4 \cdot 4 - 2 \cdot 3)|}{2} = \frac{17}{2}$$
+$$\text{Alan} = \frac{ \vert (2 \cdot 5 - 5 \cdot 4) + (5 \cdot 3 - 7 \cdot 5) + (7 \cdot 1 - 4 \cdot 3) + (4 \cdot 3 - 4 \cdot 1) + (4 \cdot 4 - 2 \cdot 3) \vert }{2} = \frac{17}{2}$$
 
 **Formülün fikri:** Her kenar için $y = 0$ çizgisine uzanan bir yamuk düşünülür. Yamuğun işaretli alanı:
 
@@ -182,13 +182,13 @@ $$\text{Alan} = 6 + \frac{7}{2} - 1 = \frac{17}{2} \checkmark$$
 
 $$d_{\text{Öklid}} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
 
-$$d_{\text{Manhattan}} = |x_1 - x_2| + |y_1 - y_2|$$
+$$d_{\text{Manhattan}} =  \vert x_1 - x_2 \vert  +  \vert y_1 - y_2 \vert $$
 
 **Örnek:** $(2, 1)$ ve $(5, 2)$ noktaları için:
 
 $$d_{\text{Öklid}} = \sqrt{3^2 + 1^2} = \sqrt{10} \approx 3.162$$
 
-$$d_{\text{Manhattan}} = |2-5| + |1-2| = 4$$
+$$d_{\text{Manhattan}} =  \vert 2-5 \vert  +  \vert 1-2 \vert  = 4$$
 
 Geometrik yorum: Öklid uzaklığındaki "1 birim bölge" bir **daire**, Manhattan uzaklığında ise 45° döndürülmüş bir **kare** (elmas) şeklindedir.
 
@@ -200,7 +200,7 @@ $$(x, y) \;\longrightarrow\; (x + y,\; y - x)$$
 
 Bu dönüşümün temel özelliği:
 
-$$|x_1 - x_2| + |y_1 - y_2| = \max\bigl(|x_1' - x_2'|,\; |y_1' - y_2'|\bigr)$$
+$$ \vert x_1 - x_2 \vert  +  \vert y_1 - y_2 \vert  = \max\bigl( \vert x_1' - x_2' \vert ,\;  \vert y_1' - y_2' \vert \bigr)$$
 
 Yani **Manhattan uzaklığı**, döndürülmüş koordinatlarda **Çebyşev uzaklığına** dönüşür. Bu sayede $x$ ve $y$ koordinatları birbirinden bağımsız ele alınabilir.
 
@@ -209,13 +209,13 @@ Yani **Manhattan uzaklığı**, döndürülmüş koordinatlarda **Çebyşev uzak
 $n$ nokta arasındaki maksimum Manhattan uzaklığını bulmak:
 
 1. Her $(x, y)$ noktasını $(x+y, y-x)$'e dönüştür.
-2. $\max(|x_1' - x_2'|, |y_1' - y_2'|)$ değerini bul.
+2. $\max( \vert x_1' - x_2' \vert ,  \vert y_1' - y_2' \vert )$ değerini bul.
 3. Bu değer ya $x'$ koordinatlarının, ya da $y'$ koordinatlarının maksimum farkından gelir.
 4. Her eksen için fark $(\max - \min)$ olarak hesaplanır → **$O(n)$**.
 
 Örneğin $p_1 = (1, 0)$ ve $p_2 = (3, 3)$: Döndürülmüş koordinatlar $p_1' = (1, -1)$, $p_2' = (6, 0)$:
 
-$$|1-3| + |0-3| = \max(|1-6|, |-1-0|) = 5$$
+$$ \vert 1-3 \vert  +  \vert 0-3 \vert  = \max( \vert 1-6 \vert ,  \vert -1-0 \vert ) = 5$$
 
 ---
 
@@ -225,7 +225,7 @@ $$|1-3| + |0-3| = \max(|1-6|, |-1-0|) = 5$$
 |---|---|---|
 | Vektörel çarpım | $x_1 y_2 - x_2 y_1$ | $O(1)$ |
 | Nokta lokasyonu | $(p-s_1) \times (p-s_2)$ işareti | $O(1)$ |
-| Çizgiye mesafe | $|(s_1-p)\times(s_2-p)| / |s_2-s_1|$ | $O(1)$ |
+| Çizgiye mesafe | $ \vert (s_1-p)\times(s_2-p) \vert  /  \vert s_2-s_1 \vert $ | $O(1)$ |
 | Çokgen içinde nokta | Işın atma, kesişim sayısı | $O(n)$ |
 | Çokgen alanı | Ayakkabı bağı formülü | $O(n)$ |
 | Çokgen alanı (tamsayı) | Pick Teoremi: $a + b/2 - 1$ | $O(n)$ |

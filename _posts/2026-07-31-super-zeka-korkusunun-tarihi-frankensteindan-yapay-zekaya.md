@@ -40,7 +40,7 @@ Burada $P(K)$ kontrol kaybı olasılığını, $Z$ ise gerçekleşmesi hâlindek
 
 Bir sistemin hedefi ile insanın gerçek niyeti arasındaki farkı ise kabaca şöyle düşünebiliriz:
 
-$$Uyum\ Hatası = |H_{insan} - H_{model}|$$
+$$Uyum\ Hatası =  \vert H_{insan} - H_{model} \vert $$
 
 Bu matematik gerçek dünyayı eksiksiz açıklamaz; yalnızca “zekâ” ile “doğru amaç” kavramlarının aynı şey olmadığını gösterir. Çok iyi satranç oynayan bir motor, neden satranç oynadığını bilmez.
 

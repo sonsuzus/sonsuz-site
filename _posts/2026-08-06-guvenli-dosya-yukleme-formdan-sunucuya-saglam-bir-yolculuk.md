@@ -61,7 +61,7 @@ if (!hash_equals($_SESSION['csrf_token'] ?? '', $_POST['csrf_token'] ?? '')) {
 
 $file = $_FILES['document'] ?? null;
 
-if (!$file || $file['error'] !== UPLOAD_ERR_OK) {
+if (!$file  \vert  \vert  $file['error'] !== UPLOAD_ERR_OK) {
     exit('Dosya yüklenemedi.');
 }
 
