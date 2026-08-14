@@ -20,7 +20,7 @@ Bellman-Ford'un temel fikri **gevşetme** (relaxation) işlemidir. Bir kenar üz
 
 $$d[v] = \min(d[v],\ d[u] + w(u,v))$$
 
-Bu formülün küçük ama güçlü bir anlamı vardır: Kaynağa giden en iyi yolun, bir önceki düğüme kadar olan en iyi yolun üzerine son kenarın maliyetinin eklenmesiyle kurulabileceğini söyler. Algoritma tüm kenarları $$|V|-1$$ kez dolaşır. Çünkü negatif döngü içermeyen basit bir yol en fazla $$|V|-1$$ kenardan oluşabilir.
+Bu formülün küçük ama güçlü bir anlamı vardır: Kaynağa giden en iyi yolun, bir önceki düğüme kadar olan en iyi yolun üzerine son kenarın maliyetinin eklenmesiyle kurulabileceğini söyler. Algoritma tüm kenarları $$\vert V \vert-1$$ kez dolaşır. Çünkü negatif döngü içermeyen basit bir yol en fazla $$ \vert V \vert -1$$ kenardan oluşabilir.
 
 | Özellik | Dijkstra | Bellman-Ford |
 |---|---|---|
