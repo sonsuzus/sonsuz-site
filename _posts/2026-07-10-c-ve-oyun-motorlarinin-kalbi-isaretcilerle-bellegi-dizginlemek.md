@@ -66,6 +66,8 @@ void integrate(RigidBody* body, float dt) {
 
 Bu kodda `RigidBody* body`, fizik nesnesinin adresini taşır. Fonksiyon nesneyi kopyalamaz; doğrudan orijinal veriyi günceller. Bu, özellikle binlerce gövdeyi her kare güncelleyen fizik sistemlerinde ciddi fark yaratır.
 
+![](img/c-oyun-motoru.svg)
+
 ## Bellek havuzları: Motorun gizli turbo modu
 
 Bir sahnede sürekli mermi, parçacık, düşman veya geçici temas noktası oluşturup yok etmek klasik `new/delete` ile maliyetli olabilir. Çünkü işletim sisteminden sık sık bellek istemek yavaştır ve bellek parçalanmasına yol açar. Çözüm: önceden büyük bir blok ayırmak ve nesneleri bu bloktan dağıtmak.
