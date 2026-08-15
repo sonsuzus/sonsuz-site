@@ -9,6 +9,7 @@ tags:
   - swi-prolog
   - vscode
   - mantıksal-programlama
+image: /img/prolog-kurulumu-ve-15.png
 ---
 
 Prolog, programcıya “nasıl yapılır?” yerine “ne doğrudur?” diye sorduran hoş bir zihin jimnastiğidir. Bu yazıda SWI-Prolog kurulumunu tamamlayacak, derleyici/yorumlayıcı ayarlarını kontrol edecek ve VS Code üzerinde teorik bilgiyi pratiğe dökeceğimiz küçük bir laboratuvar hazırlayacağız.
@@ -110,3 +111,6 @@ Kurulumda sorun yaşarsanız şu küçük liste hayat kurtarır:
 - Değişkenler büyük harfle, atomlar küçük harfle mi başlıyor?
 
 Prolog öğrenirken en güzel yöntem, küçük bilgi tabanları kurup bol bol sorgu sormaktır. Çünkü Prolog’da program yazmak biraz şehir haritası çizmek gibidir: yolları siz tanımlarsınız, hedefe giden rotayı mantık motoru bulur.
+
+![prolog-kurulumu-ve-15](/img/prolog-kurulumu-ve-15.svg)
+

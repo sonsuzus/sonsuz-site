@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadow2" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Sol taraf: Sembolik dünya -->
+  <rect x="30" y="60" width="180" height="70" rx="14" fill="#e8f0fe" stroke="#a0b8d8" stroke-width="1.5" filter="url(#shadow1)"/>
+  <text x="120" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Sembolik Formül</text>
+  <text x="120" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">2 + 3 terimdir</text>
+
+  <!-- Sağ taraf: Sayısal dünya -->
+  <rect x="430" y="60" width="180" height="70" rx="14" fill="#eafaf1" stroke="#a0d8b0" stroke-width="1.5" filter="url(#shadow1)"/>
+  <text x="520" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Sayısal Sonuç</text>
+  <text x="520" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">5 değeridir</text>
+
+  <!-- Orta: is operatörü -->
+  <rect x="255" y="40" width="130" height="50" rx="25" fill="#fdebd0" stroke="#f0b870" stroke-width="1.5" filter="url(#shadow2)"/>
+  <text x="320" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7e5100" font-weight="bold">is</text>
+  <text x="320" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6a1a">hesapla ve bağla</text>
+
+  <!-- Sol -> is oku -->
+  <path d="M210,95 L250,95" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="253,95 243,89 243,101" fill="#5a7a9a"/>
+
+  <!-- is -> Sağ oku -->
+  <path d="M385,95 L425,95" stroke="#5a9a70" stroke-width="2" fill="none"/>
+  <polygon points="428,95 418,89 418,101" fill="#5a9a70"/>
+
+  <!-- Alt: = operatörü -->
+  <rect x="155" y="190" width="130" height="50" rx="12" fill="#fce8e8" stroke="#e0a0a0" stroke-width="1.5" filter="url(#shadow2)"/>
+  <text x="220" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a3030" font-weight="bold">= birleştirir</text>
+  <text x="220" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a05050">sembolik kalır</text>
+
+  <rect x="355" y="190" width="130" height="50" rx="12" fill="#e8f0fe" stroke="#a0b8d8" stroke-width="1.5" filter="url(#shadow2)"/>
+  <text x="420" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">=:= karşılaştırır</text>
+  <text x="420" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6a8a">aritmetik eşitlik</text>
+
+  <!-- Alt ok sol -->
+  <path d="M160,135 L190,185" stroke="#c08080" stroke-width="1.8" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="193,188 183,180 187,192" fill="#c08080"/>
+
+  <!-- Alt ok sağ -->
+  <path d="M480,135 L450,185" stroke="#5a8ab0" stroke-width="1.8" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="447,188 457,180 453,192" fill="#5a8ab0"/>
+
+  <!-- Üst bilgi -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6a8a" font-weight="bold">Prolog Aritmetik: Sembolden Sonuca</text>
+
+  <!-- Alt örnek küçük kutu -->
+  <rect x="100" y="260" width="440" height="42" rx="10" fill="#ffffff80" stroke="#c0d0e0" stroke-width="1" filter="url(#shadow2)"/>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">X is 2 + 3  →  X = 5</text>
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8a9a">X = 2 + 3  →  X = 2 + 3 (sembolik)</text>
+</svg>

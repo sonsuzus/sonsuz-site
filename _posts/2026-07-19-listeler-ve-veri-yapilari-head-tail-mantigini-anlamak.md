@@ -8,7 +8,11 @@ tags:
   - listeler
   - veri-yapıları
   - programlama-temelleri
+image: /img/listeler-ve-veri-14.png
 ---
+
+![listeler-ve-veri-14](/img/listeler-ve-veri-14.svg)
+
 
 Birden fazla veriyi tek tek değişkenlerde taşımak, market poşetlerini tek parmakla taşımaya benzer: mümkün ama gereksiz acı verici. Listeler, verileri köşeli parantezler içinde tek bir bütün gibi saklamamızı sağlar: `[10, 20, 30]`. Daha önemlisi, bu bütünün ilk elemanını **baş** yani **head**, geri kalan kısmını ise **kuyruk** yani **tail** olarak düşünebiliriz.
 ``

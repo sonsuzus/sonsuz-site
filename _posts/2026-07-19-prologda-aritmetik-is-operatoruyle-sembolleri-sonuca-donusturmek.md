@@ -8,6 +8,7 @@ tags:
   - prolog
   - aritmetik
   - mantıksal-programlama
+image: /img/prologda-aritmetik-is-34.png
 ---
 
 Programlamada aritmetik deyince çoğu dilde `x = 2 + 3` yazıp sonucu bekleriz. Prolog ise biraz daha felsefi davranır: Önce sembolleri, terimleri ve ilişkileri düşünür; hesaplama ise özel olarak istendiğinde yapılır. İşte `is` operatörü tam bu noktada sahneye çıkar: Matematiksel formülü sadece sembolik bir yapı olarak tutmak yerine, gerçekten hesaplar ve kesin sonucu yeni bir değişkene bağlar.
@@ -97,3 +98,6 @@ Bu kurallar şu şekilde çalışır:
 Teorik olarak burada yaptığımız şey, bir bağıntının içinde deterministik bir hesaplama adımı tanımlamaktır. `alan_dikdortgen(5, 8, A)` ilişkisi, $A = 5 \times 8$ formülünü kullanır ve `A` değişkenini kesin sonuç olan 40’a bağlar.
 
 Özetle: Prolog’da matematiksel formül yazmak, onun otomatik hesaplanacağı anlamına gelmez. `=` sembolik dünyada kalır; `is` ise hesaplama motorunu çalıştırır. Eğer formülün gerçekten değerlendirilmesini ve sonucun yeni bir değişkene atanmasını istiyorsanız, doğru araç `is` operatörüdür. Prolog’un büyüsü de burada başlar: Sembollerle düşünür, gerektiğinde sayılarla hesaplar.
+
+![prologda-aritmetik-is-34](/img/prologda-aritmetik-is-34.svg)
+

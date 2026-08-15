@@ -8,9 +8,13 @@ tags:
   - programlama
   - mantıksal-operatörler
   - karşılaştırma
+image: /img/mantiksal-karsilastirma-islemleri-34.png
 ---
 
 Programlamada bir uygulamanın “akıllı” görünmesini sağlayan şey çoğu zaman çok basit bir sorudur: “Bu doğru mu, değil mi?” Mantıksal karşılaştırma işlemleri; değişkenler veya sabit değerler arasında büyüklük, küçüklük, eşitlik ya da denklik gibi ilişkileri kontrol eder ve sonucu genellikle `true` veya `false` olarak üretir. Yani kod dünyasının trafik lambaları gibidirler: geç, dur, bekle!
+
+
+![mantiksal-karsilastirma-islemleri-34](/img/mantiksal-karsilastirma-islemleri-34.svg)
 
 ``
 

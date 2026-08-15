@@ -8,7 +8,11 @@ tags:
   - Prolog
   - Mantıksal Programlama
   - Unification
+image: /img/prologda-birlestirme-unification-47.png
 ---
+
+![prologda-birlestirme-unification-47](/img/prologda-birlestirme-unification-47.svg)
+
 
 Prolog yazarken bazen tek satırlık bir sorgu, sanki arka planda küçük bir dedektif ordusu çalışıyormuş gibi sonuç üretir. İşte bu dedektiflerin en çalışkanı birleştirme, yani unification sürecidir. Birleştirme; iki terimi, değişkeni veya yapıyı, mantıksal olarak aynı hale getirecek değer atamalarını bulma işlemidir. Prolog motoru bunu otomatik yapar ve çoğu zaman biz fark etmeden programın kaderini belirler.
 ``

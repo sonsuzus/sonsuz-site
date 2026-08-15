@@ -8,9 +8,13 @@ tags:
   - Prolog
   - Mantıksal Programlama
   - Programlama Paradigmaları
+image: /img/prolog-temelleri-ve-42.png
 ---
 
 Bir emirsel dilde bilgisayara adım adım ne yapacağını söylersin; Prolog gibi mantıksal bir dilde ise evrenin kurallarını tarif eder, sonra ona soru sorarsın. Bu küçük fark, programlama zihniyetinde büyük bir deprem yaratır: döngülerden, sayaçlardan ve durum güncellemelerinden uzaklaşıp olgular, kurallar ve çıkarımlar dünyasına gireriz.
+
+![prolog-temelleri-ve-42](/img/prolog-temelleri-ve-42.svg)
+
 ``
 Prolog, adını Programming in Logic ifadesinden alır ve temel fikri oldukça şiirseldir: Program, çalıştırılacak komut listesi değil, doğru kabul edilen bilgilerin ve bu bilgilerden türetilebilecek sonuçların bir kümesidir. Matematiksel olarak düşünürsek Prolog programını kabaca şöyle görebiliriz: $Program = Olgular + Kurallar$, çalıştırma ise $Sorgu \Rightarrow Kanıt arama$ sürecidir.
 

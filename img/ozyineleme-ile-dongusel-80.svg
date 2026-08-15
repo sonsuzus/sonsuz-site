@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2fc"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#cceccc"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe8ec"/>
+      <stop offset="100%" stop-color="#ffd0d8"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2fc"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Matruşka halkaları (dairesel özyineleme metaforu) -->
+  <circle cx="320" cy="160" r="120" fill="none" stroke="#c8daf5" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="320" cy="160" r="90" fill="none" stroke="#b8cff0" stroke-width="1.2" opacity="0.6"/>
+  <circle cx="320" cy="160" r="60" fill="none" stroke="#a0c0ea" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- Merkez etiket -->
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Özyineleme</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a6d7e">Matruşka düzeni</text>
+
+  <!-- Sol üst: Temel durum -->
+  <rect x="40" y="40" width="140" height="56" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#b0c8e8" stroke-width="0.8"/>
+  <text x="110" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5c" font-weight="bold">Temel Durum</text>
+  <text x="110" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34567a">Çağrıyı durdurur</text>
+
+  <!-- Sağ üst: Özyinelemeli adım -->
+  <rect x="460" y="40" width="140" height="56" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#e0c8a0" stroke-width="0.8"/>
+  <text x="530" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a3a1a" font-weight="bold">Özyinelemeli Adım</text>
+  <text x="530" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a5a34">Problemi küçültür</text>
+
+  <!-- Sol alt: Çağrı yığını -->
+  <rect x="40" y="240" width="140" height="56" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#a8d0a8" stroke-width="0.8"/>
+  <text x="110" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a4a1a" font-weight="bold">Çağrı Yığını</text>
+  <text x="110" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a3a">Görünmeyen merdiven</text>
+
+  <!-- Sağ alt: Sonuç dönüşü -->
+  <rect x="460" y="240" width="140" height="56" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#e0a0b0" stroke-width="0.8"/>
+  <text x="530" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a1a2a" font-weight="bold">Cevap Dönüşü</text>
+  <text x="530" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a3a4a">Geri taşınır</text>
+
+  <!-- Üst bilgi paneli -->
+  <rect x="180" y="75" width="280" height="36" rx="8" fill="url(#box5)" filter="url(#shadow)" stroke="#b0c8e8" stroke-width="0.6" opacity="0.85"/>
+  <text x="320" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">S(n) = S(n-1) + a</text>
+  <text x="320" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">S(0) = 0</text>
+
+  <!-- Alt bilgi paneli -->
+  <rect x="210" y="190" width="220" height="32" rx="8" fill="url(#box3)" filter="url(#shadow)" stroke="#a8d0a8" stroke-width="0.6" opacity="0.8"/>
+  <text x="320" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a4a1a">Kural tabanlı düşünme</text>
+
+  <!-- Oklar (manuel çizilmiş uçlar) -->
+  <!-- Temel durumdan merkeze -->
+  <path d="M 180 68 L 205 68 L 245 130" stroke="#8aa8cc" stroke-width="1.5" fill="none"/>
+  <polygon points="245,130 238,122 242,134 248,128" fill="#8aa8cc" transform="rotate(-20 245 130)"/>
+
+  <!-- Özyinelemeli adımdan merkeze -->
+  <path d="M 460 68 L 435 68 L 395 130" stroke="#ccb08a" stroke-width="1.5" fill="none"/>
+  <polygon points="395,130 402,122 398,134 392,128" fill="#ccb08a" transform="rotate(20 395 130)"/>
+
+  <!-- Çağrı yığınından merkeze -->
+  <path d="M 180 268 L 205 268 L 265 205" stroke="#8ac08a" stroke-width="1.5" fill="none"/>
+  <polygon points="265,205 258,210 270,207 264,200" fill="#8ac08a" transform="rotate(-45 265 205)"/>
+
+  <!-- Cevap dönüşünden merkeze -->
+  <path d="M 460 268 L 435 268 L 375 205" stroke="#e0a0b0" stroke-width="1.5" fill="none"/>
+  <polygon points="375,205 382,200 378,212 370,208" fill="#e0a0b0" transform="rotate(-135 375 205)"/>
+
+  <!-- Döngüsel kontrol akışı (kavisli ok) -->
+  <path d="M 395 160 Q 440 160 460 120" stroke="#7a9abe" stroke-width="1.2" fill="none" stroke-dasharray="4,3" opacity="0.7"/>
+  <polygon points="460,120 453,124 461,127 457,118" fill="#7a9abe" opacity="0.7"/>
+
+  <path d="M 245 160 Q 200 160 180 120" stroke="#7a9abe" stroke-width="1.2" fill="none" stroke-dasharray="4,3" opacity="0.7"/>
+  <polygon points="180,120 187,124 179,127 183,118" fill="#7a9abe" opacity="0.7"/>
+
+  <!-- Döngüsel ok etiketi -->
+  <text x="320" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a7a9a" opacity="0.8">kendi kendini çağırır</text>
+
+  <!-- Küçük sembolik noktalar -->
+  <circle cx="110" cy="110" r="4" fill="#5a8ab0" opacity="0.5"/>
+  <circle cx="530" cy="110" r="4" fill="#c0a050" opacity="0.5"/>
+  <circle cx="110" cy="200" r="4" fill="#50a050" opacity="0.5"/>
+  <circle cx="530" cy="200" r="4" fill="#c05070" opacity="0.5"/>
+
+  <!-- Çerçeve başlığı -->
+  <text x="320" y="20" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" fill="#1a2a3a" font-weight="bold">Döngüsüz Tekrar: Özyinelemeli Kontrol</text>
+
+</svg>

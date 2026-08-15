@@ -8,7 +8,11 @@ tags:
   - özyineleme
   - recursion
   - algoritma
+image: /img/ozyineleme-ile-dongusel-80.png
 ---
+
+![ozyineleme-ile-dongusel-80](/img/ozyineleme-ile-dongusel-80.svg)
+
 
 Bir listeyi gezmek, bir dizindeki dosyaları taramak ya da ardışık adımlarla sonuca ulaşmak denince akla genellikle for ve while döngüleri gelir. Özyineleme ise aynı işi farklı bir zihinsel modelle yapar: Bir kural, problemin daha küçük bir sürümünü çözmek için kendini yeniden çağırır. Yani kontrol akışı dışarıdan dönen bir çark gibi değil, iç içe açılan matruşka bebekleri gibi ilerler.
 ``

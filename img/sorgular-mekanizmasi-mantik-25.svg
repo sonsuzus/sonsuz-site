@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="query" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cbdfff"/>
+    </linearGradient>
+    <linearGradient id="engine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3dafd"/>
+      <stop offset="100%" stop-color="#d3c4f3"/>
+    </linearGradient>
+    <linearGradient id="fact" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f4e8"/>
+      <stop offset="100%" stop-color="#bce7d4"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0cf"/>
+      <stop offset="100%" stop-color="#f8db9b"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d6f2db"/>
+      <stop offset="100%" stop-color="#aee0b9"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66809a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="576" cy="48" r="72" fill="#dceeff" opacity="0.45"/>
+  <circle cx="69" cy="283" r="85" fill="#dff3e6" opacity="0.42"/>
+  <path d="M24 42 H616" stroke="#c9dbea" stroke-width="1" opacity="0.65"/>
+
+  <text x="28" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496178">Sorgu Mekanizması</text>
+  <text x="612" y="28" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8294">Geriye doğru zincirleme</text>
+
+  <!-- Query -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="122" width="130" height="82" rx="18" fill="url(#query)" stroke="#a9c8ed"/>
+  </g>
+  <circle cx="55" cy="149" r="15" fill="#ffffff" opacity="0.78"/>
+  <path d="M50 146 C50 141 59 141 59 146 C59 151 54 151 54 156" fill="none" stroke="#5782b3" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="54" cy="161" r="1.7" fill="#5782b3"/>
+  <text x="80" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355574">Sorgu</text>
+  <text x="47" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48667e">büyükanne?</text>
+
+  <!-- Arrow query to engine -->
+  <path d="M159 163 H205" fill="none" stroke="#7797b5" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="211,163 202,158 202,168" fill="#7797b5"/>
+
+  <!-- Engine -->
+  <g filter="url(#shadow)">
+    <rect x="214" y="95" width="190" height="137" rx="24" fill="url(#engine)" stroke="#b6a5df"/>
+  </g>
+  <circle cx="309" cy="133" r="27" fill="#ffffff" opacity="0.55"/>
+  <circle cx="309" cy="133" r="18" fill="none" stroke="#7661a9" stroke-width="2"/>
+  <path d="M301 133 H317 M309 125 V141" stroke="#7661a9" stroke-width="2" stroke-linecap="round"/>
+  <text x="309" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514277">Mantık Motoru</text>
+  <text x="309" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685a88">alt hedefleri çöz</text>
+  <path d="M258 213 H360" stroke="#a695ce" stroke-width="1" opacity="0.65"/>
+
+  <!-- Split paths -->
+  <path d="M405 139 C428 139 426 89 450 89" fill="none" stroke="#8299aa" stroke-width="2.1" stroke-linecap="round"/>
+  <polygon points="456,89 447,84 448,94" fill="#8299aa"/>
+  <path d="M405 190 C428 190 426 244 450 244" fill="none" stroke="#8299aa" stroke-width="2.1" stroke-linecap="round"/>
+  <polygon points="456,244 447,239 448,249" fill="#8299aa"/>
+
+  <!-- Facts -->
+  <g filter="url(#soft)">
+    <rect x="458" y="51" width="154" height="77" rx="17" fill="url(#fact)" stroke="#9bcfb8"/>
+  </g>
+  <circle cx="483" cy="77" r="12" fill="#ffffff" opacity="0.75"/>
+  <path d="M478 77 H488 M483 72 V82" stroke="#4d9878" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="503" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e735e">Gerçekler</text>
+  <text x="477" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7667">ayşe → mehmet</text>
+
+  <!-- Rules -->
+  <g filter="url(#soft)">
+    <rect x="458" y="206" width="154" height="77" rx="17" fill="url(#rule)" stroke="#e0bf76"/>
+  </g>
+  <circle cx="483" cy="232" r="12" fill="#ffffff" opacity="0.75"/>
+  <path d="M477 228 H489 M477 233 H489 M477 238 H485" stroke="#a8782d" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="503" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#846022">Kurallar</text>
+  <text x="477" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80652e">ebeveyn zinciri</text>
+
+  <!-- Result downward from engine -->
+  <path d="M309 233 V260" fill="none" stroke="#7797b5" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="309,267 304,257 314,257" fill="#7797b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="220" y="267" width="178" height="39" rx="15" fill="url(#result)" stroke="#90c9a0"/>
+  </g>
+  <circle cx="246" cy="286.5" r="11" fill="#ffffff" opacity="0.72"/>
+  <path d="M241 286 L245 290 L252 282" fill="none" stroke="#4c9764" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="270" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376e4a">Sonuç: doğru</text>
+</svg>

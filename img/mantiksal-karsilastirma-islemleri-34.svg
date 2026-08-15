@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7ddff"/>
+      <stop offset="100%" stop-color="#d5c7f7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#65748b" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#65748b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="54" r="48" fill="#dff2ee" opacity="0.55"/>
+  <circle cx="575" cy="277" r="62" fill="#e7ddff" opacity="0.42"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40506a">KARŞILAŞTIRMA İLE KARAR</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">Değerler → koşullar → mantıksal sonuç</text>
+
+  <g filter="url(#soft)">
+    <rect x="32" y="91" width="126" height="48" rx="14" fill="#dff2ff"/>
+    <rect x="32" y="157" width="126" height="48" rx="14" fill="#fff0cf"/>
+    <rect x="32" y="223" width="126" height="48" rx="14" fill="#dff4e5"/>
+  </g>
+
+  <circle cx="55" cy="115" r="12" fill="#83c6e7"/>
+  <text x="51" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#fff">18</text>
+  <text x="77" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40506a">Yaş</text>
+  <text x="77" y="127" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617087">20</text>
+
+  <circle cx="55" cy="181" r="12" fill="#edbb5e"/>
+  <path d="M50 181 L54 185 L61 176" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="77" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40506a">Hesap</text>
+  <text x="77" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617087">aktif</text>
+
+  <circle cx="55" cy="247" r="12" fill="#77bf95"/>
+  <text x="51" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#fff">3</text>
+  <text x="77" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40506a">Hak</text>
+  <text x="77" y="259" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617087">deneme</text>
+
+  <path d="M158 115 H194" fill="none" stroke="#86a5b9" stroke-width="2"/>
+  <polygon points="194,115 187,111 187,119" fill="#86a5b9"/>
+  <path d="M158 181 H194" fill="none" stroke="#86a5b9" stroke-width="2"/>
+  <polygon points="194,181 187,177 187,185" fill="#86a5b9"/>
+  <path d="M158 247 H194" fill="none" stroke="#86a5b9" stroke-width="2"/>
+  <polygon points="194,247 187,243 187,251" fill="#86a5b9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="194" y="77" width="182" height="208" rx="22" fill="url(#core)"/>
+  </g>
+  <text x="285" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c4772">KOŞUL MOTORU</text>
+
+  <rect x="215" y="121" width="140" height="35" rx="10" fill="#faf9ff" opacity="0.9"/>
+  <text x="285" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5171">yaş ≥ 18</text>
+
+  <rect x="215" y="164" width="140" height="35" rx="10" fill="#faf9ff" opacity="0.9"/>
+  <text x="285" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5171">hesap === doğru</text>
+
+  <rect x="215" y="207" width="140" height="35" rx="10" fill="#faf9ff" opacity="0.9"/>
+  <text x="285" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5171">hak &gt; 0</text>
+
+  <path d="M285 243 V260" fill="none" stroke="#786ca4" stroke-width="2"/>
+  <polygon points="285,267 280,259 290,259" fill="#786ca4"/>
+  <text x="306" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#665b91">ve</text>
+
+  <path d="M376 181 H421" fill="none" stroke="#7e89a6" stroke-width="2.5"/>
+  <polygon points="421,181 413,176 413,186" fill="#7e89a6"/>
+
+  <g filter="url(#shadow)">
+    <path d="M476 119 L531 181 L476 243 L421 181 Z" fill="#f9e4a8"/>
+  </g>
+  <text x="476" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#725c25">Tümü</text>
+  <text x="476" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#725c25">doğru mu?</text>
+
+  <path d="M531 181 H559 V126 H578" fill="none" stroke="#6ca986" stroke-width="2.5" stroke-linejoin="round"/>
+  <polygon points="578,126 570,121 570,131" fill="#6ca986"/>
+  <text x="543" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#579071">doğru</text>
+
+  <path d="M531 181 H559 V245 H578" fill="none" stroke="#d17b7b" stroke-width="2.5" stroke-linejoin="round"/>
+  <polygon points="578,245 570,240 570,250" fill="#d17b7b"/>
+  <text x="541" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b66464">yanlış</text>
+
+  <g filter="url(#soft)">
+    <rect x="578" y="99" width="54" height="54" rx="15" fill="#d9f1df"/>
+    <rect x="578" y="218" width="54" height="54" rx="15" fill="#fde0df"/>
+  </g>
+  <path d="M595 126 L601 132 L615 117" fill="none" stroke="#49956b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="605" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47775b">İzin</text>
+
+  <path d="M596 234 L614 252 M614 234 L596 252" stroke="#c46666" stroke-width="3" stroke-linecap="round"/>
+  <text x="605" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9e5757">Red</text>
+</svg>

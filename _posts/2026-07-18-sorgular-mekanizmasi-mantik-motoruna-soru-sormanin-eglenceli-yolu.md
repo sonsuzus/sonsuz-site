@@ -9,6 +9,7 @@ tags:
   - sorgular
   - Prolog
   - kural motoru
+image: /img/sorgular-mekanizmasi-mantik-25.png
 ---
 
 Bir bilgi tabanınız olduğunu düşünün: içinde gerçekler, kurallar ve biraz da dedektiflik kokan ilişkiler var. Sorgular mekanizması, bu yapıya dışarıdan soru sormamızı sağlar: Bu sonuç doğru mu, yanlış mı, yoksa sistemin bildikleriyle kanıtlanamıyor mu? Kısacası sorgu, mantık motoruna yöneltilen kontrollü bir mercek gibidir; veriyi ezberlemek yerine, sonuç çıkarmayı otomatikleştirir.
@@ -71,3 +72,6 @@ Bu örnek, kural motorunun yaptığı işi sadeleştirerek gösterir. Gerçekler
 Elbette gerçek sistemlerde işler biraz daha karmaşıktır. Değişken bağlama, geri izleme, çakışan kurallar, sonsuz döngüler ve kapalı dünya varsayımı gibi konular devreye girer. Kapalı dünya varsayımı özellikle önemlidir: Sistem bir bilgiyi kanıtlayamıyorsa onu yanlış kabul eder. Bu, günlük hayattaki bilmiyorum ile aynı şey değildir. Mantıksal sistem açısından kanıt yoksa cevap çoğu zaman false olur.
 
 Sonuç olarak sorgular mekanizması, kural ve gerçeklerden oluşan bir bilgi tabanını pasif bir veri yığını olmaktan çıkarır. Ona soru sorabilir, ilişkileri test edebilir ve yeni sonuçları otomatik olarak keşfedebiliriz. İyi tasarlanmış sorgular, yazılımınıza küçük ama çalışkan bir mantık asistanı eklemek gibidir: az konuşur, çok çıkarım yapar.
+
+![sorgular-mekanizmasi-mantik-25](/img/sorgular-mekanizmasi-mantik-25.svg)
+

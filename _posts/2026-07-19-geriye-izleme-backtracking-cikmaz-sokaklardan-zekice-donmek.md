@@ -8,9 +8,13 @@ tags:
   - algoritma
   - backtracking
   - veri-yapıları
+image: /img/geriye-izleme-backtracking-49.png
 ---
 
 Bir labirentte yürüdüğünü düşün: Önünde üç yol var, birini seçiyorsun, ilerliyorsun ve duvara çarpıyorsun. Panik yok! Son karar noktasına geri dönüp denenmemiş diğer yolu seçiyorsun. İşte geriye izleme, yani backtracking, bilgisayarın bu “hmm olmadı, başka kapı deneyelim” refleksidir. Özellikle bulmaca çözme, rota arama, kombinasyon üretme ve kısıt sağlama problemlerinde sistematik şekilde alternatifleri dener.
+
+![geriye-izleme-backtracking-49](/img/geriye-izleme-backtracking-49.svg)
+
 ``
 Backtracking’in kalbinde “seç, ilerle, kontrol et, gerekirse geri al” döngüsü vardır. Algoritma bir çözüm adayını parça parça inşa eder. Her adımda mevcut durumun hedefe götürme ihtimali kontrol edilir. Eğer durum kurallara aykırıysa veya artık çözüm üretme şansı yoksa, algoritma o dalı terk eder. Buna budama (pruning) denir. Budama, gereksiz yolları erkenden keserek aramayı hızlandırır.
 
