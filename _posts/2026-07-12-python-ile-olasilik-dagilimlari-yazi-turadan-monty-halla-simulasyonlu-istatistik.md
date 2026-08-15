@@ -9,7 +9,9 @@ tags:
   - olasılık
   - simülasyon
   - istatistik
-image: /img/python-ile-olasilik-46.png
+image: 
+    path: /img/python-ile-olasilik-46.png
+    alt: "python ile olasılık"
 ---
 
 Olasılık teorisi ilk bakışta zarlar, paralar ve renkli toplarla oynanan masum bir oyun gibi görünür; fakat arka planda belirsizliği ölçmeye yarayan güçlü bir matematik dili vardır. Python ise bu dili deney masasına yatırmak için harika bir laboratuvardır. Yazı-tura simülasyonlarıyla büyük sayılar yasasını gözlemleyebilir, koşullu olasılık paradokslarıyla sezgilerimizin nasıl tökezlediğini görebiliriz.
