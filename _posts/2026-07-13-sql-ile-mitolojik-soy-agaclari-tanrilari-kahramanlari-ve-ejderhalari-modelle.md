@@ -9,7 +9,11 @@ tags:
   - veritabanı tasarımı
   - mitoloji
   - recursive CTE
+image: /img/sql-ile-mitolojik-71.png
 ---
+
+![sql-ile-mitolojik-71](/img/sql-ile-mitolojik-71.svg)
+
 
 Mitoloji, veritabanı tasarımcıları için adeta boss seviyesi bir problemdir: Zeus hem baba, hem eş, hem de bazen kuğu kılığına giren kaotik bir kayıt üreticisidir. İskandinavlarda Loki’nin aile ilişkileri türler arası sınırları zorlar; Türk destanlarında soy, kutsal kurt ya da göksel kökenlerle birleşir. Bu yüzden antik tanrılar ve destan karakterleri için bir SQL soy ağacı kurmak, sadece tablo açmak değil, belirsizlikleri, kültürel kaynakları ve çoklu ilişki tiplerini modellemektir.
 ``

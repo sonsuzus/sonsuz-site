@@ -9,7 +9,11 @@ tags:
   - reverse-proxy
   - load-balancing
   - networking
+image: /img/go-ile-ters-78.png
 ---
+
+![go-ile-ters-78](/img/go-ile-ters-78.svg)
+
 
 Modern web sistemlerinde istemci ile servisler arasına akıllı bir kapı koymak çoğu zaman hayat kurtarır. Go ile yazılmış hafif bir ters proxy, gelen HTTP trafiğini uygun backend servisine yönlendirebilir, temel güvenlik kontrolleri yapabilir ve yükü birden fazla sunucuya dağıtabilir. Üstelik Go’nun standart kütüphanesindeki `net/http` ve `httputil` paketleri sayesinde bunu devasa framework’lere ihtiyaç duymadan kurabilirsiniz.
 ``

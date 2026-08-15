@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#c8dcf7"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7c97aa" flood-opacity=".22"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#6f8292"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#8b78ad"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="66" cy="45" r="54" fill="#dceeff" opacity=".48"/>
+  <circle cx="590" cy="276" r="74" fill="#dff1db" opacity=".55"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526676">MİTOLOJİK BİLGİ GRAFİĞİ</text>
+
+  <!-- left schema -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="82" width="138" height="74" rx="16" fill="#fff4d9"/>
+    <rect x="35" y="82" width="138" height="25" rx="16" fill="#f6d99a"/>
+    <path d="M35 98h138v9H35z" fill="#f6d99a"/>
+  </g>
+  <text x="53" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#715a2c">VARLIKLAR</text>
+  <text x="53" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f6870">Tanrı · Kahraman</text>
+  <text x="53" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f6870">Canavar · Kültür</text>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="193" width="138" height="66" rx="16" fill="#e7f3e2"/>
+    <rect x="35" y="193" width="138" height="25" rx="16" fill="#c8e4bd"/>
+    <path d="M35 209h138v9H35z" fill="#c8e4bd"/>
+  </g>
+  <text x="53" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486a48">KAYNAKLAR</text>
+  <text x="53" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f6870">Gelenek · Güven</text>
+
+  <!-- connectors to core -->
+  <path d="M173 119 C205 119 210 137 235 145" fill="none" stroke="#8496a2" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M173 226 C205 226 211 197 235 185" fill="none" stroke="#8496a2" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- core -->
+  <g filter="url(#shadow)">
+    <rect x="236" y="103" width="168" height="122" rx="24" fill="url(#core)" stroke="#a9c3e0"/>
+  </g>
+  <circle cx="320" cy="137" r="22" fill="#fff" opacity=".7"/>
+  <path d="M311 137h18M320 128v18" stroke="#6583a0" stroke-width="2.3" stroke-linecap="round"/>
+  <text x="320" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e5b76">İLİŞKİLER</text>
+  <text x="320" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b80">tür · yön · kesinlik</text>
+
+  <!-- graph right -->
+  <path d="M405 161 C429 161 427 90 453 90" fill="none" stroke="#718594" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M405 163 C432 163 432 162 464 162" fill="none" stroke="#8b78ad" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <path d="M405 169 C429 169 430 240 453 240" fill="none" stroke="#718594" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="466" y="61" width="130" height="56" rx="16" fill="#fce4e7"/>
+    <circle cx="486" cy="89" r="11" fill="#e99ca8"/>
+    <text x="505" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#744b55">ZEUS</text>
+    <text x="505" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80646a">ebeveyn</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="478" y="134" width="128" height="57" rx="16" fill="#eee7fb"/>
+    <circle cx="498" cy="162" r="11" fill="#ac97d3"/>
+    <text x="517" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5e507a">ATHENA</text>
+    <text x="517" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756b88">düğüm</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="466" y="212" width="130" height="56" rx="16" fill="#def2ef"/>
+    <circle cx="486" cy="240" r="11" fill="#83c9bd"/>
+    <text x="505" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f716c">ODIN</text>
+    <text x="505" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607d7a">atalık</text>
+  </g>
+
+  <!-- recursive loop -->
+  <path d="M458 277 C418 300 260 300 218 258 C197 237 202 215 221 202" fill="none" stroke="#7893a7" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+  <rect x="248" y="277" width="143" height="25" rx="12" fill="#ffffff" opacity=".88"/>
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506b7c">Özyinelemeli CTE · Atalar</text>
+
+  <text x="614" y="31" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718694">SQL + grafik yaklaşımı</text>
+</svg>
