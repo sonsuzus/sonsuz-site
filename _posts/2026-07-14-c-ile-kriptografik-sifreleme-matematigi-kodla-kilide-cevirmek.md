@@ -9,6 +9,7 @@ tags:
   - Kriptografi
   - RSA
   - Veri Güvenliği
+image: /img/c-ile-kriptografik-47.png
 ---
 
 Kriptografi, bilgisayar biliminin en havalı sihirbazlık numaralarından biridir: okunabilir bir mesajı, matematiksel işlemlerle anlamsız görünen bir yığına dönüştürür; sonra doğru anahtarla tekrar eski haline getirir. C++ ise belleğe yakın çalışması, hızlı aritmetik işlemleri ve sistem seviyesinde kontrol sunması sayesinde bu algoritmaları anlamak için harika bir laboratuvardır.
@@ -24,6 +25,9 @@ Temel ayrım şudur:
 | Simetrik şifreleme | Aynı gizli anahtar | Çok hızlı | Dosya, disk, veri akışı |
 | Asimetrik şifreleme | Açık + özel anahtar | Daha yavaş | Anahtar değişimi, imza |
 | Hash | Anahtar yok / opsiyonel | Hızlı | Bütünlük kontrolü, parola özeti |
+
+![c-ile-kriptografik-47](/img/c-ile-kriptografik-47.svg)
+
 
 Bu yazıda eğitim amacıyla küçük bir RSA benzeri yapı kuracağız. Gerçek dünyada kendi kriptonuzu üretip canlı sistemde kullanmak genellikle kötü fikirdir; AES, ChaCha20, RSA-OAEP gibi incelenmiş standartlar ve OpenSSL/libsodium gibi kütüphaneler tercih edilmelidir. Ama mantığı kodlamak öğrenmenin en iyi yollarından biridir.
 

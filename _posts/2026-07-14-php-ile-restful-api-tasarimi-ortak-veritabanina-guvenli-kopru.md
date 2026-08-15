@@ -8,6 +8,7 @@ tags:
   - PHP
   - RESTful API
   - Backend
+image: /img/php-ile-restful-97.png
 ---
 
 Bir mobil uygulama, web paneli ve masaüstü istemcisi aynı veriye ulaşmak istediğinde ortada bir hakem gerekir: RESTful API. PHP ile yazacağımız API, cihazların doğrudan veritabanına dalmasını engeller; bunun yerine standart JSON yanıtları, HTTP metodları ve güvenlik katmanlarıyla düzenli bir trafik polisi gibi çalışır. Böylece iOS, Android, React, Vue ya da başka bir sistem aynı kurallarla konuşur.
@@ -22,6 +23,9 @@ Küçük bir matematiksel sezgiyle API yükünü şöyle düşünebiliriz: Topla
 | Kullanıcı ekleme | `/addUser.php` | `POST /api/users` |
 | Yanıt formatı | Karışık metin | Standart JSON |
 | Hata yönetimi | Her zaman 200 | Uygun HTTP durum kodu |
+
+![php-ile-restful-97](/img/php-ile-restful-97.svg)
+
 
 Standart yanıt yapısı API’nin farklı platformlarda tahmin edilebilir olmasını sağlar. Örneğin her cevapta `success`, `data`, `message` ve `errors` alanlarını kullanmak, istemci tarafındaki kodu sadeleştirir. Başarılı listeleme için durum kodu $200$, kayıt oluşturma için $201$, yetkisiz erişim için $401$, bulunamayan kaynak için $404$ tercih edilir.
 

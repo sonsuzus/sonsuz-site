@@ -8,11 +8,14 @@ tags:
   - C
   - donanım
   - sürücü-geliştirme
+image: /img/c_donanim_surucu_katmanlari.png
 ---
 
 Eski bir IDE disk, USB-SATA dönüştürücü ya da seri port adaptörü elinize geçtiğinde ilk soru genelde şudur: “Bunu işletim sistemiyle nasıl konuştururum?” C dili burada hâlâ sahnenin başrol oyuncusudur; çünkü donanıma yakın, bellek düzenini tahmin edilebilir kılan ve kesme, DMA, I/O portu gibi düşük seviye kavramları açıkça modelleyebilen bir araçtır.
 ``
 Donanım iletişimini sürücü seviyesinde düşünürken üç katmanı ayırmak gerekir: fiziksel aygıt, denetleyici protokolü ve işletim sistemi arayüzü. Örneğin eski bir ATA disk doğrudan “dosya” bilmez; sektör okur, sektör yazar. Dosya sistemi ise bu ham blokların üzerine kurulan daha üst seviye bir soyutlamadır. Sürücü algoritmanızın görevi, işletim sisteminden gelen “şu blokları oku” isteğini aygıtın anlayacağı komutlara çevirmektir.
+
+![](/img/c_donanim_surucu_katmanlari.svg)
 
 Teorik olarak blok tabanlı aygıtlarda en küçük adreslenebilir birim genellikle sektördür. Klasik disklerde sektör boyutu çoğunlukla 512 bayt, yeni disklerde ise 4096 bayt olabilir. Bir okuma işleminin yaklaşık maliyeti şu şekilde düşünülebilir:
 
