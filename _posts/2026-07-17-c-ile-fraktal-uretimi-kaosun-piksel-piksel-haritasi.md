@@ -9,6 +9,7 @@ tags:
   - Fraktal
   - Mandelbrot
   - Kaos Teorisi
+image: /img/c-ile-fraktal-74.png
 ---
 
 Fraktallar, matematiğin “az kural, çok karmaşa” diyen asi çocuklarıdır. C++ ile fraktal üretmek ise bu çocuklara bir tuval vermek gibidir: basit bir formül yazarsınız, bilgisayar milyonlarca kez tekrarlar ve ekranda sonsuz kıvrımlara benzeyen görsel bir evren belirir. Özellikle Mandelbrot kümesi, kaos teorisinin en popüler posteridir; çünkü minicik bir başlangıç farkı, bambaşka görsel sonuçlar doğurabilir.
@@ -81,3 +82,6 @@ Renk seçimi tamamen deney alanıdır. Yukarıdaki örnekte mod alma ile basit a
 Fraktalların büyüsü, deterministik olmalarına rağmen organik görünmeleridir. Aynı formül, aynı başlangıç, aynı sonuç; fakat sonuç, doğadaki kıyı çizgilerini, bulutları ve damar yapılarını hatırlatır. Kaos teorisi burada “rastgelelik” değil, başlangıç koşullarına aşırı duyarlılık demektir.
 
 Bu programı geliştirmek için yakınlaştırma parametreleri ekleyebilir, PNG çıktısı almak için `stb_image_write` kullanabilir veya çok çekirdekli işlem için pikselleri paralel hesaplatabilirsiniz. Sonuçta C++ ile fraktal üretimi sadece görsel bir oyuncak değildir; matematik, performans ve yaratıcılığın aynı döngüde buluştuğu küçük bir evrendir.
+
+![c-ile-fraktal-74](/img/c-ile-fraktal-74.svg)
+

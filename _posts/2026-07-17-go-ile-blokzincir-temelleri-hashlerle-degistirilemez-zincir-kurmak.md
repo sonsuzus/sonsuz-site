@@ -8,9 +8,12 @@ tags:
   - Go
   - Blockchain
   - Kriptografi
+image: /img/go-ile-blokzincir-77.png
 ---
 
 Blokzincir kulağa bazen uzay teknolojisi gibi gelir; ama temel fikir oldukça nettir: Verileri bloklar halinde sakla, her bloğu bir öncekinin kriptografik iziyle bağla ve zincirin ortasından bir parçayı değiştirmeyi neredeyse imkânsız hale getir. Bu yazıda Go kullanarak küçük ama öğretici bir blokzincir modeli kuracağız; amaç coin üretmek değil, değiştirilemezlik fikrini programlayarak anlamak.
+
+![go zincir](/img/go-ile-blokzincir-45.svg)
 ``
 
 Blokzincirin kalbinde **kriptografik özetleme fonksiyonu** yani hash vardır. Bir hash fonksiyonu, herhangi uzunluktaki girdiyi sabit uzunlukta bir çıktıya dönüştürür. Örneğin SHA-256 çıktısı 256 bittir. Matematiksel olarak şöyle düşünebiliriz:
@@ -25,6 +28,9 @@ Burada $x$ veri, $y$ ise özet değerdir. İyi bir hash fonksiyonunda küçük b
 | Çıktı | Genelde kısa | Sabit ve güçlü |
 | Çakışmaya direnç | Zayıf olabilir | Çok güçlü olmalıdır |
 | Küçük değişime tepki | Sınırlı | Büyük, tahmin edilemez |
+
+![go-ile-blokzincir-77](/img/go-ile-blokzincir-77.svg)
+
 
 Bir blok genellikle şu alanlardan oluşur: veri, zaman damgası, kendi hash değeri ve önceki bloğun hash değeri. İşin sihri son alandadır. Çünkü her blok, kendinden öncekinin özetini taşır. Böylece üçüncü bloğu değiştirmek isterseniz sadece üçüncü bloğun hash’i değil, dördüncü, beşinci ve devamındaki tüm bloklar bozulur.
 

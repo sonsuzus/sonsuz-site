@@ -9,11 +9,12 @@ tags:
   - segment ağacı
   - aralık sorgusu
   - algoritma
-redirect_from:
-  - /posts/segment-tree-ile-aralik-maksimumu-bulma/
+image: /img/segment_agaci_aralik_sorgusu.png
 ---
 
 Bu kod, bir dizi üzerinde [aralık maksimumu](https://program.sonsuz.us/search.html?q=aral%C4%B1k%20maksimumu) sorgularını [verimli](https://program.sonsuz.us/search.html?q=verimli) bir şekilde gerçekleştirmek için bir [Segment Ağacı](https://program.sonsuz.us/search.html?q=segment%20a%C4%9Fac%C4%B1) kullanır. Segment Ağacı, bir dizi üzerinde tanımlanmış bir ağaç yapısıdır ve her düğüm, dizinin bir alt aralığını temsil eder. Bu sayede, belirli bir aralıktaki maksimum değeri bulma işlemi, dizinin tamamını taramak yerine ağaç üzerinde daha az sayıda düğümü ziyaret ederek gerçekleştirilebilir.
+
+![segment agaci](/img/segment_agaci_aralik_sorgusu.svg)
 
 Bu kodda, Segment Ağacı kullanılarak, verilen bir dizideki belirli bir aralıktaki en büyük elemanı bulmak için `query` fonksiyonu ve bir elemanın değerini güncellemek için `update` fonksiyonu uygulanmaktadır. `build` fonksiyonu ise Segment Ağacını oluşturmak için kullanılır.
 
@@ -73,3 +74,5 @@ int main(){
 	}
 }
 ```
+
+![segment agac](/img/segment-agac.svg)

@@ -10,6 +10,7 @@ tags:
   - derleyici
   - parser
   - bytecode
+image: /img/c-ile-kendi-92.png
 ---
 
 Derleyiciler bazen kara kutu gibi görünür: kodu yazarsın, bir şeyler olur ve işlemci “tamamdır” der. Oysa içeride oldukça sistemli bir mutfak çalışır. Bu yazıda C ile minicik bir dil motoru tasarlayarak `SET x 5`, `ADD x 3`, `PRINT x` gibi komutları okuyacak, sözdizimini analiz edecek ve bunları basit bir “makine dili” yani bytecode’a çevireceğiz.
@@ -137,3 +138,6 @@ Derleme sonucunda yaklaşık olarak şu bytecode dizisi oluşur:
 | `PRINT x` | `OP_PRINT, 23, 0` |
 
 Çıktı doğal olarak `17` olur. Küçük ama güçlü bir fikir yakaladık: sözdizimi sadece metin kontrolü değildir; anlamlı eylemlere açılan kapıdır. Buradan sonra ifadeler, koşullar, döngüler ve hata mesajları ekleyerek mini dilinizi büyütebilirsiniz. Bir noktadan sonra fark edeceksiniz: derleyiciler büyü yapmıyor, sadece çok disiplinli bir çeviri işi gerçekleştiriyor.
+
+![c-ile-kendi-92](/img/c-ile-kendi-92.svg)
+

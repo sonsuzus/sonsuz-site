@@ -8,7 +8,11 @@ tags:
   - PHP
   - Mikro Servis
   - Yazılım Mimarisi
+image: /img/php-ile-mikro-69.png
 ---
+
+![php-ile-mikro-69](/img/php-ile-mikro-69.svg)
+
 
 Büyük bir PHP uygulaması zamanla dev bir apartmana dönüşebilir: kullanıcı yönetimi bir katta, ödeme sistemi başka katta, raporlama bodrumda, bildirimler ise çatı arasında çalışır. Her şey aynı kod tabanındaysa küçük bir değişiklik bile tüm binayı sallayabilir. Mikro servis mimarisi, bu apartmanı bağımsız küçük evlere ayırma fikridir. Her servis belirli bir iş yapar, kendi yaşam döngüsüne sahip olur ve gerektiğinde tek başına geliştirilip ölçeklenebilir.
 ``

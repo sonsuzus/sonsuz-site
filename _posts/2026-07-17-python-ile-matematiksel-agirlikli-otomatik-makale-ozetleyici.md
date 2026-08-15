@@ -8,7 +8,11 @@ tags:
   - Python
   - Doğal Dil İşleme
   - Otomatik Özetleme
+image: /img/python-ile-matematiksel-48.png
 ---
+
+![python-ile-matematiksel-48](/img/python-ile-matematiksel-48.svg)
+
 
 Uzun bir makaleyi okumadan önce “bana özü ver” demek, modern yazılımcının kahve istemesi kadar doğal hale geldi. Python ile geliştireceğimiz otomatik özetleyici, metindeki cümleleri matematiksel olarak puanlayıp en önemli olanları seçer. Yani modelimiz metni yeniden yazmaz; metnin içinden en temsilî cümleleri avlar. Bu yönteme çıkarımsal özetleme denir ve haberlerden akademik yazılara kadar birçok alanda oldukça kullanışlıdır.
 

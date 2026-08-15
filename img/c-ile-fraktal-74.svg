@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#eef9f1"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#715ce5"/>
+      <stop offset="100%" stop-color="#9d74ed"/>
+    </linearGradient>
+    <linearGradient id="palette" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6252d7"/>
+      <stop offset="32%" stop-color="#3b9cdb"/>
+      <stop offset="65%" stop-color="#f19a65"/>
+      <stop offset="100%" stop-color="#f2d76b"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#66849a" flood-opacity=".18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6e8da0" flood-opacity=".16"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8Z" fill="#7894a7"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="98" cy="52" r="72" fill="#dff2fb" opacity=".55"/>
+  <circle cx="575" cy="279" r="88" fill="#dff3e6" opacity=".7"/>
+
+  <text x="28" y="31" fill="#496477" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">C++ ile Mandelbrot Üretimi</text>
+  <text x="28" y="48" fill="#8299a8" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Pikselden fraktal evrene</text>
+
+  <g filter="url(#shadow)">
+    <rect x="29" y="86" width="130" height="142" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="43" y="101" width="102" height="24" rx="12" fill="#e5f3fb"/>
+  <text x="94" y="117" text-anchor="middle" fill="#397490" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Piksel Izgarası</text>
+  <g stroke="#aac9d9" stroke-width="1">
+    <path d="M53 141H135 M53 158H135 M53 175H135 M53 192H135 M53 209H135"/>
+    <path d="M53 141V209 M69 141V209 M85 141V209 M101 141V209 M117 141V209 M135 141V209"/>
+  </g>
+  <rect x="70" y="158" width="15" height="16" rx="3" fill="#f39475"/>
+  <text x="94" y="221" text-anchor="middle" fill="#718b9b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">x, y → c</text>
+
+  <path d="M161 157 H207" fill="none" stroke="#7894a7" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="184" y="145" text-anchor="middle" fill="#7894a7" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">koordinat</text>
+
+  <g filter="url(#shadow)">
+    <circle cx="282" cy="157" r="69" fill="#ffffff"/>
+  </g>
+  <circle cx="282" cy="157" r="53" fill="#f0edff" stroke="#d9d2fb" stroke-width="2"/>
+  <circle cx="282" cy="157" r="31" fill="url(#core)"/>
+  <text x="282" y="153" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yineleme</text>
+  <text x="282" y="169" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">z² + c</text>
+  <path d="M239 127 C256 105 293 100 315 121" fill="none" stroke="#8d7de8" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="282" y="218" text-anchor="middle" fill="#7569b8" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">z₀ = 0 · döngü</text>
+
+  <path d="M354 157 H393" fill="none" stroke="#7894a7" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g filter="url(#soft)">
+    <rect x="398" y="107" width="105" height="99" rx="17" fill="#ffffff"/>
+  </g>
+  <path d="M418 131 h19" stroke="#e68968" stroke-width="3" stroke-linecap="round"/>
+  <path d="M427 122 v18" stroke="#e68968" stroke-width="3" stroke-linecap="round"/>
+  <text x="456" y="151" text-anchor="middle" fill="#4e6e7e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kaçış mı?</text>
+  <text x="456" y="171" text-anchor="middle" fill="#8197a4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">|z| &gt; 2</text>
+  <path d="M421 185 H491" stroke="#d7e7ed" stroke-width="2"/>
+
+  <path d="M505 157 H534" fill="none" stroke="#7894a7" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="520" y="145" text-anchor="middle" fill="#7894a7" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">n</text>
+
+  <g filter="url(#shadow)">
+    <rect x="540" y="85" width="73" height="144" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="576.5" y="111" text-anchor="middle" fill="#536f80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Renk</text>
+  <rect x="554" y="124" width="45" height="13" rx="6.5" fill="url(#palette)"/>
+  <rect x="554" y="143" width="45" height="13" rx="6.5" fill="url(#palette)" opacity=".76"/>
+  <rect x="554" y="162" width="45" height="13" rx="6.5" fill="url(#palette)" opacity=".48"/>
+  <rect x="554" y="181" width="45" height="13" rx="6.5" fill="#1f2940"/>
+  <text x="576.5" y="215" text-anchor="middle" fill="#7e96a4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">PPM</text>
+
+  <path d="M282 238 V265 H456" fill="none" stroke="#a7bbc6" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <g filter="url(#soft)">
+    <rect x="270" y="252" width="186" height="43" rx="14" fill="#eaf7ef"/>
+  </g>
+  <text x="363" y="270" text-anchor="middle" fill="#4c816a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yakınlaştırma + Detay</text>
+  <text x="363" y="285" text-anchor="middle" fill="#719787" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">çözünürlük · maxIter</text>
+</svg>

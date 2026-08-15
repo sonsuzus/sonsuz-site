@@ -23,6 +23,8 @@ C++'ta `std::vector`, elemanları aynı türden olan ve dinamik olarak yeniden b
 
 Vektörler, `vector` başlık dosyası (`#include <vector>`) altında tanımlanmıştır ve `std` isim alanı (namespace) içinde bulunurlar.
 
+![](/img/c-vektor-34.svg)
+
 ## Neden Vektör Kullanmalıyız?
 
 Geleneksel C-stili dizilere kıyasla vektörlerin birçok avantajı vardır:

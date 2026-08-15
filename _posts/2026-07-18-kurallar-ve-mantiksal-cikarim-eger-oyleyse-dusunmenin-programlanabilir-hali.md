@@ -8,7 +8,11 @@ tags:
   - mantıksal çıkarım
   - kural tabanlı sistemler
   - yapay zeka
+image: /img/kurallar-ve-mantiksal-67.png
 ---
+
+![kurallar-ve-mantiksal-67](/img/kurallar-ve-mantiksal-67.svg)
+
 
 Bilgisayara akıl yürütmeyi öğretmek ilk bakışta bilim kurgu gibi durabilir; ama işin temelinde oldukça tanıdık bir yapı vardır: eğer bir koşul doğruysa, o koşuldan yeni bir sonuç çıkar. Kurallar ve mantıksal çıkarım, önceden tanımlanmış gerçekleri referans alarak yeni bilgiler üretmemizi sağlar. Yani sistem, elindeki bilgi kartlarını karıştırır, eşleşenleri bulur ve mantıklı yeni kartlar üretir.
 ``

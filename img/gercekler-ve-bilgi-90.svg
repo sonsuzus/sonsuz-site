@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000022"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Arkaplan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Bilgi Tabanı ve Çıkarım</text>
+
+  <!-- Bilgi Tabanı Kutusu (merkez) -->
+  <rect x="240" y="95" width="160" height="48" rx="10" fill="#e8f4f8" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Bilgi Tabanı</text>
+  <text x="320" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">Gerçekler + Kurallar</text>
+
+  <!-- Gerçekler Kutusu (sol üst) -->
+  <rect x="50" y="50" width="130" height="60" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="115" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Gerçekler</text>
+  <text x="115" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">kedi(Pamuk)</text>
+  <text x="115" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">sahibi(Pamuk, Zeynep)</text>
+
+  <!-- Kurallar Kutusu (sol alt) -->
+  <rect x="50" y="200" width="130" height="60" rx="10" fill="#fdebd0" stroke="#e67e22" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="115" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ca6f1e">Kurallar</text>
+  <text x="115" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">kedi(X) → memeli(X)</text>
+  <text x="115" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">memeli(X) → canlı(X)</text>
+
+  <!-- Çıkarım Motoru (sağ üst) -->
+  <rect x="460" y="50" width="130" height="60" rx="10" fill="#ebdef0" stroke="#8e44ad" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="525" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6c3483">Çıkarım Motoru</text>
+  <text x="525" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">Mantıksal sonuç</text>
+  <text x="525" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">üretir</text>
+
+  <!-- Sorgu Kutusu (sağ alt) -->
+  <rect x="460" y="200" width="130" height="60" rx="10" fill="#f9ebea" stroke="#c0392b" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="525" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a93226">Sorgu</text>
+  <text x="525" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">? memeli(Pamuk)</text>
+  <text x="525" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">→ Evet</text>
+
+  <!-- Örnek Veri Kutusu (en üst orta) -->
+  <rect x="240" y="42" width="160" height="40" rx="8" fill="#ffffff" stroke="#bdc3c7" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="320" y="58" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#34495e">Üçlü Yapı (Özne, Yüklem, Nesne)</text>
+  <text x="320" y="73" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Pamuk - tür - kedi</text>
+
+  <!-- Çizgiler (Gerçekler → Bilgi Tabanı) -->
+  <path d="M 180 80 C 210 80, 210 105, 235 110" fill="none" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="238,111 226,105 230,117" fill="#27ae60"/>
+
+  <!-- Kurallar → Bilgi Tabanı -->
+  <path d="M 180 225 C 210 225, 210 140, 235 125" fill="none" stroke="#e67e22" stroke-width="1.5"/>
+  <polygon points="238,124 226,118 230,130" fill="#e67e22"/>
+
+  <!-- Bilgi Tabanı → Çıkarım Motoru -->
+  <path d="M 400 108 C 430 108, 430 80, 455 78" fill="none" stroke="#8e44ad" stroke-width="1.5"/>
+  <polygon points="458,77 446,73 448,84" fill="#8e44ad"/>
+
+  <!-- Bilgi Tabanı → Sorgu -->
+  <path d="M 400 125 C 430 125, 430 220, 455 222" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+  <polygon points="458,222 446,217 449,228" fill="#c0392b"/>
+
+  <!-- Çıkarım Motoru → Sorgu (dolaylı) -->
+  <path d="M 525 115 C 525 160, 525 175, 525 195" fill="none" stroke="#8e44ad" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <polygon points="525,198 521,186 529,190" fill="#8e44ad"/>
+
+  <!-- Örnek Veri → Bilgi Tabanı -->
+  <path d="M 320 85 C 320 88, 320 90, 320 93" fill="none" stroke="#bdc3c7" stroke-width="1.2"/>
+  <polygon points="320,96 316,86 324,86" fill="#bdc3c7"/>
+
+  <!-- Alt açıklama bölümü -->
+  <rect x="160" y="278" width="320" height="30" rx="6" fill="#ffffff88" stroke="none"/>
+  <text x="320" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Gerçekler + Kurallar → Anlam ve Çıkarım</text>
+</svg>

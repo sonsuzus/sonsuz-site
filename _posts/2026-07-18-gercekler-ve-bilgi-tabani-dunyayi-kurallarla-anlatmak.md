@@ -8,9 +8,13 @@ tags:
   - bilgi-tabanı
   - yapay-zeka
   - mantıksal-programlama
+image: /img/gercekler-ve-bilgi-90.png
 ---
 
 Bir yazılıma dünyayı öğretmek isteseydik nereden başlardık? Kedilerin memeli olduğu, Ankara’nın Türkiye’nin başkenti olduğu, suyun 0°C’de donduğu gibi kesin kabul ettiğimiz küçük bilgi parçacıklarıyla. İşte bu küçük, değişmez ve doğrulanabilir ifadelere yapay zekâ ve mantıksal sistemlerde “gerçek” denir. Gerçekler bir araya geldiğinde ise yazılımın akıl yürütebileceği bir bilgi tabanı oluşur.
+
+![gercekler-ve-bilgi-90](/img/gercekler-ve-bilgi-90.svg)
+
 ``
 Bilgi tabanı, klasik veritabanından biraz farklı düşünülmelidir. Bir veritabanı genellikle “ne saklıyorum?” sorusuna odaklanır; bilgi tabanı ise “bu saklananlardan ne çıkarabilirim?” sorusunu da önemser. Örneğin `insan(Ayşe)` ve `insanlar ölümlüdür` bilgilerini biliyorsak, sistem `Ayşe ölümlüdür` sonucuna ulaşabilir. Bu, ham veri depolamaktan daha fazlasıdır: kurallar üzerinden anlam üretmektir.
 

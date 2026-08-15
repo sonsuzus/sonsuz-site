@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="perm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#c7ddf5"/>
+    </linearGradient>
+    <linearGradient id="comb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2f3e5"/>
+      <stop offset="1" stop-color="#cfe7d5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#718096" flood-opacity=".18"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#7b8794"/>
+    </marker>
+    <style>
+      text { font-family:"Segoe UI",Tahoma,sans-serif; font-size:12px; fill:#334155; }
+      .title { font-size:15px; font-weight:600; fill:#26364a; }
+      .formula { font-size:14px; font-weight:600; fill:#34495e; }
+      .small { font-size:11px; }
+      .line { fill:none; stroke:#7b8794; stroke-width:2; marker-end:url(#arrow); }
+      .box { stroke:#d5dee8; stroke-width:1; }
+    </style>
+  </defs>
+
+  <rect width="640" height="320" rx="18" fill="url(#bg)"/>
+
+<text x="320" y="28" text-anchor="middle" class="title">Sayma Problemleri: Seçim mi, Sıralama mı?</text>
+
+  <!-- Common set -->
+
+  <rect x="24" y="112" width="112" height="92" rx="16" fill="#fff" class="box" filter="url(#shadow)"/>
+  <text x="80" y="136" text-anchor="middle" class="title">Küme</text>
+
+  <circle cx="50" cy="164" r="12" fill="#dcecff"/>
+  <circle cx="80" cy="164" r="12" fill="#dcecff"/>
+  <circle cx="110" cy="164" r="12" fill="#dcecff"/>
+  <text x="50" y="168" text-anchor="middle">A</text>
+  <text x="80" y="168" text-anchor="middle">B</text>
+  <text x="110" y="168" text-anchor="middle">C</text>
+  <text x="80" y="190" text-anchor="middle" class="small">n eleman</text>
+
+  <!-- Split arrows -->
+
+  <path d="M136 145 C160 105 180 88 205 82" class="line"/>
+  <path d="M136 172 C165 205 178 220 205 230" class="line"/>
+
+  <!-- Permutation -->
+
+  <rect x="205" y="48" width="190" height="108" rx="18" fill="url(#perm)" class="box" filter="url(#shadow)"/>
+  <text x="300" y="73" text-anchor="middle" class="title">Permütasyon</text>
+  <text x="300" y="94" text-anchor="middle">Sıralama önemli</text>
+
+  <rect x="235" y="111" width="34" height="28" rx="8" fill="#fff"/>
+  <rect x="275" y="111" width="34" height="28" rx="8" fill="#fff"/>
+  <rect x="315" y="111" width="34" height="28" rx="8" fill="#fff"/>
+  <text x="252" y="130" text-anchor="middle">A</text>
+  <text x="292" y="130" text-anchor="middle">B</text>
+  <text x="332" y="130" text-anchor="middle">C</text>
+
+<text x="370" y="129" text-anchor="middle" class="small">≠</text> <text x="300" y="149" text-anchor="middle" class="formula">P(n,r)=n!/(n-r)!</text>
+
+  <!-- Combination -->
+
+  <rect x="205" y="184" width="190" height="108" rx="18" fill="url(#comb)" class="box" filter="url(#shadow)"/>
+  <text x="300" y="209" text-anchor="middle" class="title">Kombinasyon</text>
+  <text x="300" y="230" text-anchor="middle">Sıralama önemsiz</text>
+
+  <rect x="235" y="247" width="34" height="28" rx="8" fill="#fff"/>
+  <rect x="275" y="247" width="34" height="28" rx="8" fill="#fff"/>
+  <text x="252" y="266" text-anchor="middle">A</text>
+  <text x="292" y="266" text-anchor="middle">B</text>
+  <text x="335" y="265" text-anchor="middle" class="small">{A,B} = {B,A}</text>
+
+<text x="300" y="285" text-anchor="middle" class="formula">C(n,r)=n!/[r!(n-r)!]</text>
+
+  <!-- Decision node -->
+
+  <rect x="435" y="105" width="175" height="112" rx="20" fill="#fff" class="box" filter="url(#shadow)"/>
+  <text x="522" y="132" text-anchor="middle" class="title">Temel soru</text>
+
+  <path d="M458 153 L485 153 L485 178 L458 178 Z" fill="#f4e8ff" rx="6"/>
+  <text x="500" y="160" class="small">Sıra</text>
+  <text x="500" y="174" class="small">önemli mi?</text>
+
+  <path d="M395 102 C414 102 418 153 435 153" class="line"/>
+  <path d="M395 238 C414 238 418 177 435 177" class="line"/>
+
+  <rect x="457" y="190" width="128" height="18" rx="9" fill="#edf2f7"/>
+  <text x="521" y="203" text-anchor="middle" class="small">sayma kuralları</text>
+
+  <!-- Bottom conceptual flow -->
+
+<text x="522" y="246" text-anchor="middle" class="small">Toplama + Çarpma</text> <circle cx="463" cy="266" r="13" fill="#ffe9d8"/> <circle cx="500" cy="266" r="13" fill="#e7eefb"/> <circle cx="537" cy="266" r="13" fill="#e5f3e7"/> <text x="463" y="270" text-anchor="middle" class="small">A</text> <text x="500" y="270" text-anchor="middle" class="small">B</text> <text x="537" y="270" text-anchor="middle" class="small">C</text> <path d="M476 266 L487 266" class="line"/> <path d="M513 266 L524 266" class="line"/> </svg>

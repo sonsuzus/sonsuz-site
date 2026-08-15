@@ -8,6 +8,7 @@ tags:
   - SQL
   - Davranışsal Analiz
   - Kişiselleştirme
+image: /img/sql-ile-davranissal-83.png
 ---
 
 Bir kullanıcının uygulamada attığı her adım, aslında küçük bir dijital ayak izidir: ana sayfayı açar, kategori gezer, ürüne bakar, sepete ekler, bazen de sessizce kaybolur. SQL ile davranışsal analiz, bu izleri düzenleyip anlamlı bir hikâyeye dönüştürme sanatıdır. Amaç sadece rapor çıkarmak değil; kullanıcının niyetini tahmin edip ona doğru zamanda doğru içerik, kampanya veya öneriyi sunmaktır.
@@ -22,6 +23,9 @@ Matematiksel olarak kullanıcı yolculuğunu bir dizi gibi düşünebiliriz: $J_
 | Sıralı davranış | Bir olaydan sonra ne geliyor? | LAG, LEAD |
 | Segmentasyon | Benzer kullanıcılar kimler? | CASE WHEN, GROUP BY |
 | Kişiselleştirme | Kime ne önerelim? | Skorlama, JOIN |
+
+![sql-ile-davranissal-83](/img/sql-ile-davranissal-83.svg)
+
 
 Örneğin farklı platformlarda ürün görüntüleme sonrası sepete ekleme oranını ölçmek isteyelim. Aşağıdaki sorgu, kullanıcıların olay sırasını inceler ve `view_product` olayından sonra gelen adımı yakalar:
 

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c9bd1"/>
+      <stop offset="100%" stop-color="#5a8cc7"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7ab8a8"/>
+      <stop offset="100%" stop-color="#68a897"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a86c"/>
+      <stop offset="100%" stop-color="#bf9d5e"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c47f8f"/>
+      <stop offset="100%" stop-color="#b96e7f"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez küre -->
+  <circle cx="320" cy="160" r="55" fill="url(#box1)" opacity="0.15"/>
+  <circle cx="320" cy="160" r="45" fill="url(#box1)" opacity="0.25"/>
+  <circle cx="320" cy="160" r="35" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#fff">3D Veri</text>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#fff">Sahnesi</text>
+
+  <!-- Oklar ve kutular -->
+  <!-- Sol üst: Veri Eşleme -->
+  <path d="M 285 135 L 215 95" stroke="#5a8cc7" stroke-width="2" fill="none"/>
+  <polygon points="215,95 224,98 218,105" fill="#5a8cc7"/>
+  <rect x="85" y="55" width="130" height="65" rx="10" fill="#e8f0fa" filter="url(#shadow)" stroke="#b8d0ea" stroke-width="1.5"/>
+  <text x="150" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6ea5">Veri Eşleme</text>
+  <text x="150" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a8cc7">x y z → koordinat</text>
+
+  <!-- Sol alt: Renk & Boyut -->
+  <path d="M 290 185 L 210 230" stroke="#68a897" stroke-width="2" fill="none"/>
+  <polygon points="210,230 220,225 216,234" fill="#68a897"/>
+  <rect x="75" y="220" width="140" height="65" rx="10" fill="#e6f4ee" filter="url(#shadow)" stroke="#b0d8c8" stroke-width="1.5"/>
+  <text x="145" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a8a7a">Renk & Boyut</text>
+  <text x="145" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#68a897">değer → görsel</text>
+
+  <!-- Sağ üst: Kamera -->
+  <path d="M 355 138 L 430 95" stroke="#bf9d5e" stroke-width="2" fill="none"/>
+  <polygon points="430,95 420,100 425,91" fill="#bf9d5e"/>
+  <rect x="425" y="55" width="130" height="65" rx="10" fill="#faf3e6" filter="url(#shadow)" stroke="#e8d4aa" stroke-width="1.5"/>
+  <text x="490" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a08040">Three.js</text>
+  <text x="490" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#bf9d5e">kamera & render</text>
+
+  <!-- Sağ alt: Etkileşim -->
+  <path d="M 350 185 L 425 230" stroke="#b96e7f" stroke-width="2" fill="none"/>
+  <polygon points="425,230 416,234 423,225" fill="#b96e7f"/>
+  <rect x="425" y="215" width="140" height="65" rx="10" fill="#fae8ec" filter="url(#shadow)" stroke="#e8b8c2" stroke-width="1.5"/>
+  <text x="495" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a05060">Etkileşim</text>
+  <text x="495" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#c47f8f">döndür & keşfet</text>
+
+  <!-- Küçük veri noktaları -->
+  <circle cx="295" cy="145" r="4" fill="#44aaff" opacity="0.6"/>
+  <circle cx="335" cy="150" r="5" fill="#44aaff" opacity="0.7"/>
+  <circle cx="310" cy="175" r="3" fill="#44aaff" opacity="0.5"/>
+  <circle cx="330" cy="170" r="6" fill="#44aaff" opacity="0.8"/>
+  <circle cx="305" cy="155" r="4" fill="#44aaff" opacity="0.6"/>
+
+  <!-- Alt başlık -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8899aa" font-style="italic">Veriyi ekrandan taşımak</text>
+</svg>

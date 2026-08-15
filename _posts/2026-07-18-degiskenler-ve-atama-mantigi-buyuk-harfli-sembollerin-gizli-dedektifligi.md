@@ -8,9 +8,13 @@ tags:
   - değişkenler
   - mantıksal-programlama
   - prolog
+image: /img/degiskenler-ve-atama-38.png
 ---
 
 Bir programlama dilinde değişken deyince aklımıza çoğu zaman kutular, etiketler ve bellekte duran değerler gelir. Mantıksal programlamada, özellikle Prolog tarzı dillerde ise değişken biraz daha dedektif gibidir: Büyük harfle başlayan bir sembol, sorgu anında henüz bilinmeyen bir değeri temsil eder ve sistem arka planda onu uygun gerçeklerle eşleştirmeye çalışır.
+
+![degiskenler-ve-atama-38](/img/degiskenler-ve-atama-38.svg)
+
 ``
 Bu yaklaşımın kalbinde atama değil, daha doğru adıyla eşleştirme yani unification vardır. Klasik dillerde x = 5 dediğimizde x isimli yere 5 değerini koyarız. Mantıksal programlamada ise X = 5 ifadesi, X bilinmiyorsa onu 5 ile uyumlu hale getirir. Eğer X zaten başka bir değerle eşleşmişse, sistem bu eşleşmenin çelişip çelişmediğine bakar.
 

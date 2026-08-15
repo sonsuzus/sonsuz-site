@@ -9,6 +9,7 @@ tags:
   - anomali tespiti
   - log analizi
   - veri analizi
+image: /img/sql-ile-anomali-30.png
 ---
 
 Sistem logları bazen sakin bir göl, bazen de üretim ortamında patlayan bir mısır tenceresi gibidir. Milyonlarca satır arasında “bir şeyler ters gidiyor” hissini elle aramak yerine, SQL ile olağandışı örüntüleri yakalayabiliriz. Üstelik bunun için her zaman dev bir yapay zekâ modeli gerekmez; iyi kurulmuş istatistiksel mantık, pencere fonksiyonları ve birkaç akıllı sorgu çoğu alarm zilini çaldırmaya yeter.
@@ -108,3 +109,6 @@ Bu sorgu, isteklerin yüzde 95’inin altında kaldığı gecikme değerini bulu
 Son olarak, SQL ile anomali tespiti sadece alarm üretmek değildir; açıklanabilirlik de sağlar. “Bir model söyledi” yerine “son 15 dakikada `payment-api` hata sayısı normalin 4.7 standart sapma üstüne çıktı” diyebilirsiniz. Bu da hem geliştiricinin hem SRE ekibinin hızlı aksiyon almasını kolaylaştırır.
 
 Özetle SQL, log okyanusunda el feneri gibidir. Doğru gruplama, istatistiksel eşikler, pencere fonksiyonları ve bağlamsal düşünme ile beklenmeyen sistem hatalarını üretim ortamı yangına dönmeden yakalayabilirsiniz.
+
+![sql-ile-anomali-30](/img/sql-ile-anomali-30.svg)
+

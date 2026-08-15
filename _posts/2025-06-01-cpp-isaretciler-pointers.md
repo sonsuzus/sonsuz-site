@@ -10,8 +10,6 @@ tags:
   - işaretçi
   - bellek
   - dizi
-redirect_from:
-  - /posts/cpp-isaretciler-pointers/
 ---
 
 İşaretçiler, C++ programlamada bellekteki diğer değişkenlerin adreslerini tutan özel değişkenlerdir. Bellek yönetimi, dinamik veri yapıları oluşturma ve fonksiyonlara argümanları referans yoluyla geçirme gibi birçok güçlü programlama tekniği için temel teşkil ederler.
@@ -19,6 +17,8 @@ redirect_from:
 ## İşaretçi Nedir?
 
 Bir işaretçi, bir veri türünün bellekteki konumunu (adresini) saklar. Bir değişkenin adresini bir işaretçide sakladığınızda, o işaretçi o değişkene "işaret eder".
+
+![cpp pointer](/img/cpp-pointer.svg)
 
 ## İşaretçi Tanımlama
 

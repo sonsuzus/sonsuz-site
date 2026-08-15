@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f0f9e8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7ec8e3;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a8e6cf;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="branchGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffb347;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffd89b;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="branchGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6a9bd4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a5c8e4;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="branchGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b6ab4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c9a5d8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="leafGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffb3a7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffd5cc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="leafGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a7d8ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#cceaff;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="leafGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b4e6b4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d5f0d5;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="leafGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e6b4d8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f0d5e8;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect x="0" y="0" width="640" height="320" fill="url(#bgGrad)"/>
+
+  <!-- Merkez Kapsül: JavaScript 3D Veri Görselleştirme -->
+  <ellipse cx="320" cy="160" rx="90" ry="50" fill="url(#centerGrad)" opacity="0.9" filter="url(#softShadow)"/>
+  <text x="320" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">JavaScript</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">3D Veri Görselleştirme</text>
+
+  <!-- Çevresel Halkalar (3D Sahne Teması) -->
+  <ellipse cx="320" cy="160" rx="140" ry="75" fill="none" stroke="#7ec8e3" stroke-width="1.5" stroke-dasharray="8,6" opacity="0.5"/>
+  <ellipse cx="320" cy="160" rx="200" ry="105" fill="none" stroke="#a8e6cf" stroke-width="1" stroke-dasharray="6,8" opacity="0.4"/>
+
+  <!-- Bağlantı Çizgileri -->
+  <!-- Sol Üst: Veri Yönetimi -->
+  <line x1="280" y1="130" x2="120" y2="60" stroke="#5a9e6f" stroke-width="2" opacity="0.7"/>
+  <!-- Ok Başı -->
+  <polygon points="120,60 132,65 124,73" fill="#5a9e6f" opacity="0.8"/>
+
+  <!-- Sağ Üst: Temel Bileşenler -->
+  <line x1="370" y1="130" x2="520" y2="60" stroke="#4a7fb5" stroke-width="2" opacity="0.7"/>
+  <polygon points="520,60 508,65 516,73" fill="#4a7fb5" opacity="0.8"/>
+
+  <!-- Sol Alt: Etkileşim -->
+  <line x1="280" y1="190" x2="100" y2="250" stroke="#c0455a" stroke-width="2" opacity="0.7"/>
+  <polygon points="100,250 113,244 107,256" fill="#c0455a" opacity="0.8"/>
+
+  <!-- Sağ Alt: Performans -->
+  <line x1="370" y1="190" x2="530" y2="260" stroke="#8e5ab8" stroke-width="2" opacity="0.7"/>
+  <polygon points="530,260 517,256 525,246" fill="#8e5ab8" opacity="0.8"/>
+
+  <!-- Sol Üst Dal: Veri Yönetimi -->
+  <rect x="20" y="20" width="130" height="50" rx="12" fill="url(#branchGrad3)" opacity="0.85" filter="url(#shadow)"/>
+  <text x="85" y="40" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Veri Yönetimi</text>
+  <text x="85" y="56" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">d = (a, b, c)</text>
+
+  <!-- Sol Üst Alt Yapraklar -->
+  <rect x="15" y="85" width="100" height="35" rx="8" fill="url(#leafGrad1)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="65" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">Ölçekleme</text>
+
+  <rect x="15" y="130" width="100" height="35" rx="8" fill="url(#leafGrad2)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="65" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">Normalizasyon</text>
+
+  <rect x="15" y="175" width="100" height="35" rx="8" fill="url(#leafGrad3)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="65" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">Renk Eşleme</text>
+
+  <!-- Sağ Üst Dal: Temel Bileşenler -->
+  <rect x="490" y="20" width="130" height="50" rx="12" fill="url(#branchGrad2)" opacity="0.85" filter="url(#shadow)"/>
+  <text x="555" y="40" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Temel Bileşenler</text>
+  <text x="555" y="56" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Three.js</text>
+
+  <!-- Sağ Üst Alt Yapraklar -->
+  <rect x="525" y="85" width="95" height="35" rx="8" fill="url(#leafGrad2)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="573" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">Sahne</text>
+
+  <rect x="525" y="130" width="95" height="35" rx="8" fill="url(#leafGrad3)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="573" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">Kamera</text>
+
+  <rect x="525" y="175" width="95" height="35" rx="8" fill="url(#leafGrad4)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="573" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">Renderer</text>
+
+  <!-- Sol Alt Dal: Etkileşim -->
+  <rect x="15" y="235" width="130" height="50" rx="12" fill="url(#branchGrad1)" opacity="0.85" filter="url(#shadow)"/>
+  <text x="80" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Etkileşim</text>
+  <text x="80" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">OrbitControls</text>
+
+  <!-- Sol Alt Alt Yapraklar -->
+  <rect x="145" y="220" width="90" height="30" rx="8" fill="url(#leafGrad1)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="190" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">Raycasting</text>
+
+  <rect x="145" y="260" width="90" height="30" rx="8" fill="url(#leafGrad3)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="190" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">Tooltip</text>
+
+  <!-- Sağ Alt Dal: Performans -->
+  <rect x="495" y="240" width="130" height="50" rx="12" fill="url(#branchGrad1)" opacity="0.85" filter="url(#shadow)"/>
+  <text x="560" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Performans</text>
+  <text x="560" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Optimizasyon</text>
+
+  <!-- Sağ Alt Alt Yapraklar -->
+  <rect x="405" y="220" width="80" height="30" rx="8" fill="url(#leafGrad4)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="445" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">InstancedMesh</text>
+
+  <rect x="405" y="260" width="80" height="30" rx="8" fill="url(#leafGrad2)" opacity="0.8" filter="url(#shadow)"/>
+  <text x="445" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">BufferGeometry</text>
+
+  <!-- Merkeze Yakın Yüzen Küreler (Veri Noktalarını Sembolize Eder) -->
+  <circle cx="290" cy="180" r="4" fill="#e74c3c" opacity="0.7"/>
+  <circle cx="340" cy="145" r="5" fill="#3498db" opacity="0.7"/>
+  <circle cx="355" cy="175" r="3" fill="#2ecc71" opacity="0.7"/>
+  <circle cx="305" cy="140" r="4" fill="#f1c40f" opacity="0.7"/>
+  <circle cx="330" cy="185" r="6" fill="#9b59b6" opacity="0.7"/>
+
+  <!-- Altta Bağlam Etiketi -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-style="italic" fill="#5d6d7e" opacity="0.8">Veriyle sohbet etmek: 3D keşif ve analiz</text>
+
+  <!-- Sol Üstten Merkeze Bağlanan İnce Çizgiler -->
+  <line x1="220" y1="100" x2="290" y2="140" stroke="#9b6ab4" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="220" y1="145" x2="295" y2="155" stroke="#9b6ab4" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
+
+  <!-- Sağ Üstten Merkeze Bağlanan İnce Çizgiler -->
+  <line x1="420" y1="100" x2="350" y2="140" stroke="#6a9bd4" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="420" y1="145" x2="345" y2="155" stroke="#6a9bd4" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
+</svg>

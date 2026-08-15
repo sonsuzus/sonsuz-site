@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e3f2fd"/>
+      <stop offset="100%" stop-color="#bbdefb"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e1f5fe"/>
+      <stop offset="100%" stop-color="#b3e5fc"/>
+    </linearGradient>
+    <linearGradient id="boxGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5f5"/>
+      <stop offset="100%" stop-color="#e1bee7"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Log Denizi (kaynak) -->
+  <g>
+    <path d="M-10,120 Q40,95 90,115 Q120,105 160,135 Q200,115 240,145 Q280,125 320,140 Q360,120 400,145 Q440,125 480,150 Q520,130 560,145 Q600,125 650,150" fill="none" stroke="#64b5f6" stroke-width="2" opacity="0.4"/>
+    <path d="M-10,140 Q50,125 100,140 Q150,120 200,145 Q250,130 300,150 Q350,135 400,155 Q450,140 500,160 Q550,145 600,160 Q630,150 650,155" fill="none" stroke="#64b5f6" stroke-width="2" opacity="0.3"/>
+    <path d="M-10,100 Q60,85 120,105 Q180,90 240,115 Q300,100 360,120 Q420,105 480,125 Q540,110 600,130 Q630,120 650,130" fill="none" stroke="#64b5f6" stroke-width="2" opacity="0.5"/>
+    <rect x="25" y="18" rx="12" width="150" height="42" fill="url(#boxGrad1)" filter="url(#shadow)"/>
+    <text x="100" y="37" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1565c0" font-weight="bold">Ham Log Verileri</text>
+    <text x="100" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1565c0">app_logs tablosu</text>
+  </g>
+
+  <!-- Ok: Ham Loglar -> Dönüşüm -->
+  <g>
+    <path d="M175,45 L210,45" fill="none" stroke="#455a64" stroke-width="2"/>
+    <polygon points="215,40 225,45 215,50" fill="#455a64"/>
+  </g>
+
+  <!-- Dönüşüm / Ön İşleme -->
+  <rect x="230" y="18" rx="12" width="160" height="42" fill="url(#boxGrad2)" filter="url(#shadow)"/>
+  <text x="310" y="37" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c62828" font-weight="bold">Dönüşüm / Ön İşleme</text>
+  <text x="310" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c62828">parçala · grupla · zamanla</text>
+
+  <!-- Ok: Dönüşüm -> Zaman Serisi -->
+  <g>
+    <path d="M390,39 L420,39" fill="none" stroke="#455a64" stroke-width="2"/>
+    <polygon points="425,34 435,39 425,44" fill="#455a64"/>
+  </g>
+
+  <!-- Zaman Serisi Verisi -->
+  <rect x="440" y="18" rx="12" width="170" height="42" fill="url(#boxGrad3)" filter="url(#shadow)"/>
+  <text x="525" y="37" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold">Zaman Serisi Metrikleri</text>
+  <text x="525" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2e7d32">dakikalık hata/gecikme</text>
+
+  <!-- Oklar: Zaman Serisi -> Anomali Tespit Yöntemleri -->
+  <g>
+    <path d="M470,60 L300,110" fill="none" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <polygon points="295,105 292,116 303,111" fill="#546e7a"/>
+    <text x="375" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#455a64" font-weight="bold">sapma analizi</text>
+  </g>
+  <g>
+    <path d="M570,60 L580,110" fill="none" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <polygon points="578,105 575,116 585,109" fill="#546e7a"/>
+  </g>
+
+  <!-- Z-Skoru Yöntemi -->
+  <rect x="120" y="115" rx="12" width="180" height="52" fill="url(#boxGrad4)" filter="url(#shadow)"/>
+  <text x="210" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e65100" font-weight="bold">Z-Skoru Yöntemi</text>
+  <text x="210" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e65100">μ ve σ ile sapma ölçümü</text>
+  <text x="210" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#bf360c">eşik: z &gt; 3</text>
+
+  <!-- Yüzdelik Yöntemi -->
+  <rect x="380" y="115" rx="12" width="180" height="52" fill="url(#boxGrad5)" filter="url(#shadow)"/>
+  <text x="470" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#0277bd" font-weight="bold">Yüzdelik Yöntemi</text>
+  <text x="470" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#0277bd">p95 / p99 gecikme analizi</text>
+  <text x="470" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#01579b">eşik: p95 &gt; 1000ms</text>
+
+  <!-- Bağlamsal Analiz -->
+  <rect x="240" y="195" rx="12" width="200" height="42" fill="url(#boxGrad6)" filter="url(#shadow)"/>
+  <text x="340" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a1b9a" font-weight="bold">Bağlamsal Analiz</text>
+  <text x="340" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a1b9a">saat/gün bazlı baz çizgisi</text>
+
+  <!-- Oklar: Yöntemler -> Sonuç -->
+  <g>
+    <path d="M210,167 L290,195" fill="none" stroke="#455a64" stroke-width="1.5"/>
+    <polygon points="285,190 283,200 293,194" fill="#455a64"/>
+  </g>
+  <g>
+    <path d="M470,167 L385,195" fill="none" stroke="#455a64" stroke-width="1.5"/>
+    <polygon points="390,190 380,192 388,200" fill="#455a64"/>
+  </g>
+  <g>
+    <path d="M340,237 L340,210" fill="none" stroke="#455a64" stroke-width="1.5"/>
+  </g>
+
+  <!-- Sonuç / Alarm -->
+  <rect x="210" y="250" rx="14" width="260" height="42" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#1e88e5" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="340" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#0d47a1" font-weight="bold">Anomali Tespiti ve Alarm</text>
+  <text x="340" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1565c0">açıklanabilir sapma raporu</text>
+
+  <!-- Oklar: Bağlamsal -> Sonuç -->
+  <g>
+    <path d="M340,237 L340,250" fill="none" stroke="#455a64" stroke-width="1.5"/>
+    <polygon points="335,246 340,256 345,246" fill="#455a64"/>
+  </g>
+
+  <!-- Aktör / SRE -->
+  <g>
+    <circle cx="55" cy="270" r="18" fill="#64b5f6" filter="url(#shadow)"/>
+    <text x="55" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">SRE</text>
+  </g>
+  <g>
+    <path d="M135,270 L190,270" fill="none" stroke="#455a64" stroke-width="1.5"/>
+    <polygon points="195,265 205,270 195,275" fill="#455a64"/>
+    <text x="165" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#37474f">aksiyon</text>
+  </g>
+</svg>

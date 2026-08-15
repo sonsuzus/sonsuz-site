@@ -10,13 +10,14 @@ tags:
   - olimpiyat
 math: true
 excerpt_separator: "``"
-redirect_from:
-  - /posts/kombinasyon-permutasyon/
+
 ---
 
 
 
 Bu belge, permütasyon ve kombinasyon kavramlarını kısaca açıklamakta ve örnek sorularla pekiştirmektedir.
+
+![permutasyon kombinasyon](/img/permutasyon-kombinasyon.svg)
 
 ## Permütasyon (Sıralama)
 

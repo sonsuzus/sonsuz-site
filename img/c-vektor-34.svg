@@ -1,0 +1,117 @@
+<svg width="640" height="320" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#f5f9ff"/>
+    <stop offset="100%" stop-color="#f3f8ef"/>
+  </linearGradient>
+  <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#64748b" flood-opacity="0.14"/>
+  </filter>
+  <filter id="softShadow2" x="-15%" y="-15%" width="130%" height="130%">
+    <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#64748b" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="640" height="320" rx="18" fill="url(#bgGrad)"/>
+
+<!-- Soldaki tanımlama blokları -->
+<g filter="url(#softShadow)">
+  <rect x="24" y="22" width="132" height="56" rx="14" fill="#dbeafe"/>
+</g>
+<text x="90" y="42" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#1e293b">Vektör</text>
+<text x="90" y="58" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#334155">Tanımlama</text>
+
+<g filter="url(#softShadow2)">
+  <rect x="24" y="92" width="132" height="52" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+</g>
+<text x="90" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#1e293b">Otomatik</text>
+<text x="90" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#334155">Yönetim</text>
+
+<g filter="url(#softShadow2)">
+  <rect x="24" y="156" width="132" height="52" rx="14" fill="#fef3c7"/>
+</g>
+<text x="90" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#1e293b">Yeniden</text>
+<text x="90" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#334155">Boyutlandırma</text>
+
+<!-- Merkez bellek yönetimi -->
+<g filter="url(#softShadow)">
+  <rect x="184" y="20" width="260" height="210" rx="18" fill="#ffffff" stroke="#e6eef8" stroke-width="1.2"/>
+</g>
+<text x="314" y="42" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#1e293b">Bellek Yönetimi</text>
+
+<!-- Eleman slotları -->
+<g filter="url(#softShadow2)">
+  <rect x="204" y="56" width="40" height="40" rx="11" fill="#c7d2fe"/>
+  <rect x="252" y="56" width="40" height="40" rx="11" fill="#bae6fd"/>
+  <rect x="300" y="56" width="40" height="40" rx="11" fill="#a7f3d0"/>
+  <rect x="348" y="56" width="40" height="40" rx="11" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <rect x="396" y="56" width="40" height="40" rx="11" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+</g>
+<text x="224" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#3730a3">10</text>
+<text x="272" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#075985">20</text>
+<text x="320" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#065f46">30</text>
+<text x="368" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#94a3b8">boş</text>
+<text x="416" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#94a3b8">boş</text>
+
+<!-- Boyut / Kapasite etiketleri -->
+<rect x="204" y="108" width="72" height="22" rx="11" fill="#fef9c3"/>
+<text x="240" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#713f12">Boyut: 3</text>
+<rect x="286" y="108" width="88" height="22" rx="11" fill="#dcfce7"/>
+<text x="330" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#14532d">Kapasite: 5</text>
+
+<!-- Alt fonksiyonlar merkezde -->
+<g filter="url(#softShadow2)">
+  <rect x="204" y="142" width="74" height="26" rx="10" fill="#e0f2fe"/>
+  <rect x="288" y="142" width="98" height="26" rx="10" fill="#ffedd5"/>
+  <rect x="204" y="178" width="58" height="26" rx="10" fill="#f3e8ff"/>
+  <rect x="272" y="178" width="52" height="26" rx="10" fill="#fce7f3"/>
+  <rect x="334" y="178" width="88" height="26" rx="10" fill="#e0f2e9"/>
+</g>
+<text x="241" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#0c4a6e">reserve</text>
+<text x="337" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#7c2d12">shrink_to_fit</text>
+<text x="233" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#581c87">size</text>
+<text x="298" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#831843">empty</text>
+<text x="378" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#14532d">capacity</text>
+
+<!-- Sağ taraf operasyonlar -->
+<g filter="url(#softShadow)">
+  <rect x="472" y="22" width="142" height="44" rx="13" fill="#fef3c7"/>
+</g>
+<text x="543" y="40" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#713f12">Dinamik Büyüme</text>
+<text x="543" y="54" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#92400e">çalışma zamanı</text>
+
+<g filter="url(#softShadow2)">
+  <rect x="472" y="76" width="142" height="54" rx="13" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+</g>
+<text x="543" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#1e293b">push_back</text>
+<text x="543" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#334155">emplace_back</text>
+
+<g filter="url(#softShadow2)">
+  <rect x="472" y="140" width="142" height="50" rx="13" fill="#e9e5ff"/>
+</g>
+<text x="543" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#3730a3">Güvenli Erişim</text>
+<text x="543" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#4338ca">at() • front() • back()</text>
+
+<g filter="url(#softShadow2)">
+  <rect x="472" y="200" width="142" height="48" rx="13" fill="#dcfce7"/>
+</g>
+<text x="543" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" font-weight="600" fill="#14532d">STL Uyumlu</text>
+<text x="543" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#166534">sırala • ara • gez</text>
+
+<!-- Bağlantı okları -->
+<path d="M 156 50 C 168 50, 172 42, 184 42" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr)"/>
+<path d="M 156 118 C 168 118, 172 108, 184 110" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<path d="M 156 182 C 168 182, 174 154, 184 154" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<path d="M 444 50 C 458 50, 462 44, 472 44" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr)"/>
+<path d="M 444 108 C 458 108, 462 103, 472 103" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr)"/>
+<path d="M 444 170 C 458 170, 462 165, 472 165" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr)"/>
+<path d="M 444 200 C 458 200, 462 224, 472 224" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr)"/>
+
+<!-- Alt akış göstergesi -->
+<g filter="url(#softShadow2)">
+  <rect x="184" y="244" width="260" height="36" rx="12" fill="#f1f5f9"/>
+</g>
+<text x="314" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12px" fill="#475569">veri akışı: ekle → yönet → eriş</text>
+</svg>

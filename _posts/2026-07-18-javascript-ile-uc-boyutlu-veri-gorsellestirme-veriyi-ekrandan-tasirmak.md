@@ -9,6 +9,7 @@ tags:
   - Three.js
   - Veri Görselleştirme
   - 3D Grafik
+image: /img/javascript-ile-uc-66.png
 ---
 
 Bir tablo düşünün: binlerce satır, onlarca metrik, ilişkiler, kümeler ve zaman değişimleri... Excel bile iç çekiyor. İşte JavaScript ile üç boyutlu veri görselleştirme, bu karmaşayı döndürülebilir, yakınlaştırılabilir ve keşfedilebilir bir sahneye çevirir. Kullanıcı yalnızca grafiğe bakmaz; grafiğin içinde gezinir, düğümlere tıklar, kümeleri ayırır ve istatistiğin sakladığı hikâyeyi daha sezgisel biçimde yakalar.
@@ -25,6 +26,9 @@ Basit bir eşleme şöyle düşünülebilir: veri noktası $d = (a, b, c)$ ise s
 | 2D Grafik | Hızlı anlaşılır | Boyut sayısı sınırlı | Raporlar, dashboardlar |
 | 3D Grafik | Çok değişkenli keşif | Yanlış tasarlanırsa kafa karıştırır | Ağlar, kümeler, uzamsal veriler |
 | Etkileşimli 3D | Kullanıcı keşfi sağlar | Performans optimizasyonu ister | Büyük veri analizi, simülasyon |
+
+![javascript-ile-uc-66](/img/javascript-ile-uc-66.svg)
+
 
 ## Temel Teori: Sahne, Kamera, Nesne
 
