@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67b8f7"/>
+      <stop offset="100%" stop-color="#4a90d9"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#82c785"/>
+      <stop offset="100%" stop-color="#5aa85e"/>
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5a97f"/>
+      <stop offset="100%" stop-color="#e08d5b"/>
+    </linearGradient>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ee7f9d"/>
+      <stop offset="100%" stop-color="#d85c7d"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000025"/>
+    </filter>
+    <filter id="shadowLight">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Tam Metin Arama Mimarisi</text>
+  <line x1="100" y1="38" x2="540" y2="38" stroke="#4a90d9" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Ana kutular -->
+  <!-- Kullanıcı Sorgusu -->
+  <rect x="45" y="60" width="110" height="42" rx="10" fill="url(#grad1)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="100" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Kullanıcı Sorgusu</text>
+  <text x="100" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e3f0fd">"sql indeks"</text>
+
+  <!-- Tokenization -->
+  <rect x="45" y="120" width="110" height="52" rx="10" fill="#fff" stroke="#67b8f7" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="100" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Tokenization</text>
+  <text x="100" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7b9f">Parçalama ve</text>
+  <text x="100" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7b9f">kelime ayrıştırma</text>
+
+  <!-- Filtreleme -->
+  <rect x="45" y="190" width="110" height="52" rx="10" fill="#fff" stroke="#67b8f7" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="100" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Filtreleme</text>
+  <text x="100" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7b9f">Stop-word ve kök</text>
+  <text x="100" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7b9f">indirgeme</text>
+
+  <!-- Ters İndeks -->
+  <rect x="230" y="85" width="150" height="70" rx="12" fill="url(#grad2)" filter="url(#shadow)"/>
+  <text x="305" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#fff">Ters İndeks</text>
+  <text x="305" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f7e8">Kelime → Belge eşlemesi</text>
+  <text x="305" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#c8e6c9">GIN / FULLTEXT</text>
+
+  <!-- Arama Motoru -->
+  <rect x="230" y="175" width="150" height="52" rx="12" fill="#fff" stroke="#82c785" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="305" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c5e2e">Arama Motoru</text>
+  <text x="305" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a4a">tsvector + tsquery</text>
+  <text x="305" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a4a">(PostgreSQL / MySQL)</text>
+
+  <!-- Alakalılık Skoru -->
+  <rect x="460" y="80" width="135" height="65" rx="12" fill="url(#grad3)" filter="url(#shadow)"/>
+  <text x="527" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Alakalılık Skoru</text>
+  <text x="527" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff5ee">tf × log(N / df)</text>
+  <text x="527" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ffe0cc">+ Başlık ağırlığı</text>
+
+  <!-- Sonuçlar -->
+  <rect x="460" y="165" width="135" height="52" rx="12" fill="url(#grad4)" filter="url(#shadow)"/>
+  <text x="527" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Sıralı Sonuçlar</text>
+  <text x="527" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ffe0ea">İlk 10, en alakalı</text>
+
+  <!-- Oklar -->
+  <!-- Kullanıcı -> Tokenization -->
+  <line x1="100" y1="102" x2="100" y2="120" stroke="#67b8f7" stroke-width="2"/>
+  <polygon points="95,118 100,128 105,118" fill="#67b8f7"/>
+
+  <!-- Tokenization -> Filtreleme -->
+  <line x1="100" y1="172" x2="100" y2="190" stroke="#67b8f7" stroke-width="2"/>
+  <polygon points="95,188 100,198 105,188" fill="#67b8f7"/>
+
+  <!-- Filtreleme -> Ters İndeks -->
+  <path d="M 155 216 C 185 210 195 140 230 120" stroke="#82c785" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="228,115 238,120 228,125" fill="#82c785"/>
+
+  <!-- Ters İndeks -> Arama Motoru -->
+  <line x1="305" y1="155" x2="305" y2="175" stroke="#82c785" stroke-width="2"/>
+  <polygon points="300,173 305,183 310,173" fill="#82c785"/>
+
+  <!-- Ters İndeks -> Alakalılık -->
+  <path d="M 380 120 C 410 115 430 90 460 90" stroke="#f5a97f" stroke-width="2" fill="none"/>
+  <polygon points="458,85 468,90 458,95" fill="#f5a97f"/>
+
+  <!-- Arama Motoru -> Alakalılık -->
+  <path d="M 380 195 C 410 190 430 140 460 130" stroke="#f5a97f" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="458,125 468,130 458,135" fill="#f5a97f"/>
+
+  <!-- Alakalılık -> Sonuçlar -->
+  <line x1="527" y1="145" x2="527" y2="165" stroke="#ee7f9d" stroke-width="2"/>
+  <polygon points="522,163 527,173 532,163" fill="#ee7f9d"/>
+
+  <!-- Alt bilgi tablosu -->
+  <rect x="60" y="262" width="520" height="40" rx="8" fill="#fff" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="80" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Yaklaşım:</text>
+  <text x="155" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e08d5b">LIKE → O(n) tarama</text>
+  <text x="310" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5aa85e">Full-Text → O(log n) indeksli arama</text>
+  <text x="80" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">Önceden ağırlık + GIN → milisaniye cevap süresi</text>
+</svg>

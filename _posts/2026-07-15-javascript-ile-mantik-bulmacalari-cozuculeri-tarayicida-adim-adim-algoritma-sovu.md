@@ -10,6 +10,7 @@ tags:
   - bulmaca
   - backtracking
   - web
+image: /img/javascript-ile-mantik-65.png
 ---
 
 Bir Sudoku karesine bakıp beyninizin fanlarının hızlandığını hissettiyseniz, yalnız değilsiniz. Güzel haber şu: JavaScript ile tarayıcı üzerinde çalışan, hem bulmacayı çözen hem de çözüm adımlarını görselleştiren etkileşimli çözücüler yazabiliriz. Bu yazıda mantık bulmacalarını sadece kodla çözmeyi değil, algoritmanın nasıl düşündüğünü kullanıcıya sahne sahne göstermeyi konuşacağız.
@@ -27,6 +28,9 @@ Teorik olarak her boş hücre için olasılıkları deneriz. Eğer $b$ her adım
 | Backtracking | Hatalı yolda geri döner | Pratik ve anlaşılır | Kötü seçimlerde dallanır |
 | Constraint propagation | İmkansız seçenekleri erken eler | Çok hızlandırır | Kuralları modellemek gerekir |
 | Heuristic seçim | En az seçenekli hücreyi seçer | Aramayı küçültür | Ek hesaplama ister |
+
+![javascript-ile-mantik-65](/img/javascript-ile-mantik-65.svg)
+
 
 ## Tarayıcı neden harika bir oyun alanı?
 

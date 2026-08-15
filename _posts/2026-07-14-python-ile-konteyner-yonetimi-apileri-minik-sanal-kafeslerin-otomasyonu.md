@@ -10,9 +10,13 @@ tags:
   - konteyner
   - api
   - devops
+image: /img/python-ile-konteyner-41.png
 ---
 
 Bir uygulamayı çalıştırırken “benim bilgisayarımda çalışıyordu” cümlesini tarihe gömmek istiyorsak, konteynerler en eğlenceli araçlardan biridir. Python ile konteyner yönetimi API’leri ise bu küçük, izole çalışma ortamlarını elle komut yazmadan oluşturmayı, başlatmayı, durdurmayı ve gözlemlemeyi sağlar. Yani terminalde tek tek `docker run` yazmak yerine, orkestrayı Python şefliğinde yönetiriz.
+
+![python-ile-konteyner-41](/img/python-ile-konteyner-41.svg)
+
 ``
 
 Konteyner mantığını anlamak için önce şu fikri netleştirelim: Konteyner, tam bir sanal makine değildir. İşletim sisteminin çekirdeğini paylaşır; fakat dosya sistemi, ağ, süreçler ve ortam değişkenleri açısından izole davranır. Bu yüzden hızlı başlar, az kaynak tüketir ve taşınabilirdir. Basitçe kaynak maliyetini şöyle düşünebiliriz: $M_{toplam}=M_{imaj}+M_{runtime}+M_{veri}$. Sanal makinelerde buna çoğu zaman ayrı bir işletim sistemi maliyeti de eklenir.

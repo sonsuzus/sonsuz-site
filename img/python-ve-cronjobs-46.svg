@@ -1,0 +1,146 @@
+Okay - I’ll create a conceptual, abstract SVG diagram that captures the automated API reporting flow with Python and cronjobs. It uses a soft, pastel visual style with clear reading order and compact Turkish labels throughout.
+```svg
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f1fb"/>
+      <stop offset="100%" stop-color="#e6f2e9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f9fcff"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fafcff"/>
+    </linearGradient>
+    <linearGradient id="accentCron" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b8dd4"/>
+      <stop offset="100%" stop-color="#3f6fb0"/>
+    </linearGradient>
+    <linearGradient id="accentPython" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d9e6e"/>
+      <stop offset="100%" stop-color="#2e7d58"/>
+    </linearGradient>
+    <linearGradient id="accentApi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d98f4f"/>
+      <stop offset="100%" stop-color="#c1732e"/>
+    </linearGradient>
+    <linearGradient id="accentReport" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a06cd5"/>
+      <stop offset="100%" stop-color="#8350b8"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7a9cc6"/>
+      <stop offset="100%" stop-color="#5f8bb5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#2c3e50" flood-opacity="0.18"/>
+    </filter>
+    <filter id="shadowLight" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#2c3e50" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#5f8bb5"/>
+    </marker>
+    <marker id="arrowheadGreen" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#2e7d58"/>
+    </marker>
+    <marker id="arrowheadOrange" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#c1732e"/>
+    </marker>
+    <marker id="arrowheadPurple" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8350b8"/>
+    </marker>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="0"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="600" fill="#2c3e50" opacity="0.7">OTOMATİK API RAPORLAMA SİSTEMİ</text>
+  <line x1="180" y1="40" x2="460" y2="40" stroke="#2c3e50" stroke-width="1" opacity="0.15"/>
+
+  <!-- Zamanlayıcı (Cron) bloğu -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="80" width="150" height="80" rx="12" fill="url(#boxGrad1)" stroke="#5b8dd4" stroke-width="2"/>
+    <rect x="40" y="80" width="150" height="28" rx="12" fill="url(#accentCron)"/>
+    <rect x="40" y="94" width="150" height="14" fill="url(#accentCron)"/>
+    <text x="115" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">CRONJOB</text>
+    <text x="115" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Zamanlayıcı</text>
+    <text x="115" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">"0 9 * * *"</text>
+  </g>
+
+  <!-- Python bloğu -->
+  <g filter="url(#shadow)">
+    <rect x="245" y="80" width="150" height="80" rx="12" fill="url(#boxGrad1)" stroke="#3d9e6e" stroke-width="2"/>
+    <rect x="245" y="80" width="150" height="28" rx="12" fill="url(#accentPython)"/>
+    <rect x="245" y="94" width="150" height="14" fill="url(#accentPython)"/>
+    <text x="320" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">PYTHON SCRIPTİ</text>
+    <text x="320" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Veri çek & işle</text>
+    <text x="320" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">CSV üret</text>
+  </g>
+
+  <!-- API bloğu -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="80" width="150" height="80" rx="12" fill="url(#boxGrad1)" stroke="#d98f4f" stroke-width="2"/>
+    <rect x="450" y="80" width="150" height="28" rx="12" fill="url(#accentApi)"/>
+    <rect x="450" y="94" width="150" height="14" fill="url(#accentApi)"/>
+    <text x="525" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">API SERVİSİ</text>
+    <text x="525" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Satış/Stok verisi</text>
+    <text x="525" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">JSON döndürür</text>
+  </g>
+
+  <!-- Rapor bloğu -->
+  <g filter="url(#shadow)">
+    <rect x="245" y="220" width="150" height="80" rx="12" fill="url(#boxGrad2)" stroke="#a06cd5" stroke-width="2"/>
+    <rect x="245" y="220" width="150" height="28" rx="12" fill="url(#accentReport)"/>
+    <rect x="245" y="234" width="150" height="14" fill="url(#accentReport)"/>
+    <text x="320" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">RAPOR</text>
+    <text x="320" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">CSV & E-posta</text>
+    <text x="320" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">Toplam satış</text>
+  </g>
+
+  <!-- Ok: Cron -> Python -->
+  <line x1="190" y1="120" x2="235" y2="120" stroke="#5f8bb5" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+  <text x="212" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">tetikler</text>
+
+  <!-- Ok: Python -> API (sağa gidiş) -->
+  <path d="M395 105 C420 105 425 105 440 105" stroke="#c1732e" stroke-width="2.5" fill="none" marker-end="url(#arrowheadOrange)"/>
+  <text x="418" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">istek</text>
+
+  <!-- Ok: API -> Python (geri dönüş) -->
+  <path d="M450 135 C430 150 410 150 395 135" stroke="#2e7d58" stroke-width="2.5" fill="none" marker-end="url(#arrowheadGreen)"/>
+  <text x="422" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">JSON veri</text>
+
+  <!-- Ok: Python -> Rapor -->
+  <path d="M320 160 L320 210" stroke="#8350b8" stroke-width="2.5" fill="none" marker-end="url(#arrowheadPurple)"/>
+  <text x="338" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">yazar</text>
+
+  <!-- Saat ikonu + açıklama -->
+  <g filter="url(#shadowLight)" opacity="0.9">
+    <rect x="40" y="225" width="150" height="70" rx="10" fill="#ffffff" stroke="#d5e0eb" stroke-width="1.5"/>
+    <text x="115" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#2c3e50">Her gün 09:00</text>
+    <text x="115" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">Periyodik görev</text>
+    <text x="115" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">T = n × Δt</text>
+  </g>
+
+  <!-- Log bloğu -->
+  <g filter="url(#shadowLight)" opacity="0.9">
+    <rect x="450" y="225" width="150" height="70" rx="10" fill="#ffffff" stroke="#d5e0eb" stroke-width="1.5"/>
+    <text x="525" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#2c3e50">Log & Hata Takibi</text>
+    <text x="525" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">2>&1</text>
+    <text x="525" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">Yol kontrolü</text>
+  </g>
+
+  <!-- Dekoratif oklar için -->
+  <line x1="190" y1="260" x2="235" y2="260" stroke="#aab7c9" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+
+  <!-- Alt ve üst zaman çizgisi dekoru -->
+  <circle cx="40" cy="80" r="4" fill="#5b8dd4" opacity="0.3"/>
+  <circle cx="640" cy="80" r="4" fill="#3d9e6e" opacity="0.3"/>
+  <circle cx="40" cy="300" r="4" fill="#a06cd5" opacity="0.3"/>
+  <circle cx="640" cy="300" r="4" fill="#d98f4f" opacity="0.3"/>
+</svg>
+```
+The layout shows cronjob as the timer, Python as the processing core, API as the data source, and report output for CSV or email. Arrows and short labels like “tetikler”, “istek”, “JSON veri”, and “yazar” make the flow intuitive, while the bottom cards highlight schedule, logging, and path control.

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#9aa7b8" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="cronGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb74d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff9800" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="pyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64b5f6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#2196f3" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="apiGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#81c784" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4caf50" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="repGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ba68c8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#9c27b0" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="mailGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e57373" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f44336" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="320" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#37474f">Otomatik API Raporlama Sistemi</text>
+
+  <!-- Center concept: Zamanlayıcı + Python İşbirliği -->
+  <rect x="255" y="90" width="130" height="44" rx="22" fill="url(#cronGrad)" filter="url(#shadow)"/>
+  <text x="320" y="108" text-anchor="middle" font-weight="bold" fill="#fff">Cronjob</text>
+  <text x="320" y="124" text-anchor="middle" font-size="10" fill="#fff8e1">Zamanlayıcı / Alarm</text>
+
+  <rect x="255" y="152" width="130" height="44" rx="22" fill="url(#pyGrad)" filter="url(#shadow)"/>
+  <text x="320" y="170" text-anchor="middle" font-weight="bold" fill="#fff">Python</text>
+  <text x="320" y="186" text-anchor="middle" font-size="10" fill="#e3f2fd">Veri Çek + İşle</text>
+
+  <!-- Connection vertical between Cron and Python -->
+  <line x1="320" y1="134" x2="320" y2="152" stroke="#90a4ae" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="335" y="145" font-size="10" fill="#546e7a">tetikler</text>
+
+  <!-- Left branch: API -->
+  <rect x="55" y="128" width="120" height="38" rx="10" fill="url(#apiGrad)" filter="url(#shadow)"/>
+  <text x="115" y="144" text-anchor="middle" font-weight="bold" fill="#fff">API</text>
+  <text x="115" y="158" text-anchor="middle" font-size="10" fill="#e8f5e9">JSON Veri Kaynağı</text>
+
+  <!-- Right branch: Rapor -->
+  <rect x="465" y="128" width="130" height="38" rx="10" fill="url(#repGrad)" filter="url(#shadow)"/>
+  <text x="530" y="144" text-anchor="middle" font-weight="bold" fill="#fff">Rapor Üretimi</text>
+  <text x="530" y="158" text-anchor="middle" font-size="10" fill="#f3e5f5">CSV / Özet</text>
+
+  <!-- Connections from Python to API and Rapor -->
+  <line x1="255" y1="174" x2="175" y2="155" stroke="#90a4ae" stroke-width="2" marker-end="url(#arrowLeft)"/>
+  <line x1="385" y1="174" x2="465" y2="155" stroke="#90a4ae" stroke-width="2" marker-end="url(#arrowRight)"/>
+
+  <!-- Arrowheads -->
+  <defs>
+    <marker id="arrowLeft" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8" fill="#90a4ae"/>
+    </marker>
+    <marker id="arrowRight" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8" fill="#90a4ae"/>
+    </marker>
+  </defs>
+
+  <!-- Labels on connections -->
+  <text x="215" y="148" text-anchor="middle" font-size="10" fill="#546e7a">istek</text>
+  <text x="425" y="148" text-anchor="middle" font-size="10" fill="#546e7a">işlenmiş veri</text>
+
+  <!-- Bottom: E-posta / Dağıtım -->
+  <rect x="245" y="230" width="150" height="38" rx="10" fill="url(#mailGrad)" filter="url(#shadow)"/>
+  <text x="320" y="246" text-anchor="middle" font-weight="bold" fill="#fff">E-posta / Log</text>
+  <text x="320" y="260" text-anchor="middle" font-size="10" fill="#ffebee">Bilgilendirme</text>
+
+  <!-- Connection from Rapor to E-posta -->
+  <line x1="530" y1="166" x2="395" y2="240" stroke="#90a4ae" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="480" y="202" text-anchor="middle" font-size="10" fill="#546e7a">otomatik gönderim</text>
+
+  <!-- Left bottom: Cron expression snippet -->
+  <rect x="30" y="238" width="155" height="46" rx="8" fill="#fff" stroke="#cfd8dc" stroke-width="1" filter="url(#shadow)"/>
+  <text x="107" y="254" text-anchor="middle" font-size="10" fill="#37474f" font-family="monospace">0 9 * * *</text>
+  <text x="107" y="270" text-anchor="middle" font-size="10" fill="#546e7a">Cron ifadesi</text>
+
+  <!-- Right bottom: Örnek formül -->
+  <rect x="455" y="238" width="155" height="46" rx="8" fill="#fff" stroke="#cfd8dc" stroke-width="1" filter="url(#shadow)"/>
+  <text x="532" y="258" text-anchor="middle" font-size="11" fill="#37474f">R = Σ tutar</text>
+  <text x="532" y="274" text-anchor="middle" font-size="10" fill="#546e7a">Raporlama formülü</text>
+
+  <!-- Decorative timer icon in cron box -->
+  <circle cx="275" cy="98" r="8" fill="none" stroke="#fff" stroke-width="1.5"/>
+  <line x1="275" y1="98" x2="275" y2="92" stroke="#fff" stroke-width="1.5"/>
+  <line x1="275" y1="98" x2="279" y2="101" stroke="#fff" stroke-width="1.5"/>
+
+  <!-- Decorative Python icon -->
+  <circle cx="280" cy="160" r="8" fill="none" stroke="#fff" stroke-width="1.5"/>
+  <text x="277" y="164" fill="#fff" font-size="10" font-weight="bold">Py</text>
+
+  <!-- Cycle indicator -->
+  <path d="M 60 108 Q 60 70 320 66 Q 580 70 580 108" fill="none" stroke="#26a69a" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="320" y="58" text-anchor="middle" font-size="10" fill="#26a69a">her sabah 09:00'da tekrarlanır</text>
+</svg>

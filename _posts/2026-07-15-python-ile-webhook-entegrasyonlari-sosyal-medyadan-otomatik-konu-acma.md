@@ -9,6 +9,7 @@ tags:
   - webhook
   - otomasyon
   - api
+image: /img/python-ile-webhook-13.png
 ---
 
 Sosyal medyada biri markanızdan bahsettiğinde, yeni bir gönderi paylaştığında veya belirli bir etiketi kullandığında başka bir sitede otomatik konu açıldığını düşünün. İşte webhook entegrasyonları tam olarak bu küçük dijital domino taşlarını devirir: bir olay olur, Python dinler, doğrular, işler ve hedef sisteme aksiyon aldırır.
@@ -34,6 +35,9 @@ Burada $event$ sosyal medya hareketini, $action$ ise başka sitede konu açma i�
 | Polling | Belirli aralıklarla API sorgulanır | Kurulumu basit | Gereksiz trafik ve gecikme |
 | Webhook | Olay olunca platform size istek atar | Anlık ve verimli | Güvenlik ve erişilebilirlik ister |
 | Kuyruklu Webhook | Olay kuyruğa alınır, sonra işlenir | Dayanıklı ve ölçeklenebilir | Ek altyapı gerekir |
+
+![python-ile-webhook-13](/img/python-ile-webhook-13.svg)
+
 
 Güvenlik tarafında en önemli noktalardan biri imza doğrulamadır. Platform genellikle gövde verisini gizli anahtarla imzalar. Siz de aynı hesabı yapıp gelen imzayla karşılaştırırsınız:
 

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0.5" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="brand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e5f7"/>
+    </linearGradient>
+    <linearGradient id="algo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7f6e8"/>
+      <stop offset="100%" stop-color="#cdeccf"/>
+    </linearGradient>
+    <linearGradient id="vis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="loop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7a8b99"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="320" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">JavaScript Bulmaca Çözücüleri</text>
+  <text x="320" y="46" text-anchor="middle" font-size="11" fill="#6b7b8c">Algoritma Şovu: Cam Kutu Deneyimi</text>
+
+  <!-- Ana Akış - Soldan Sağa -->
+  
+  <!-- 1. Girdi: Bulmaca Durumu -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="75" width="120" height="55" rx="10" fill="url(#brand)" stroke="#b0c4de" stroke-width="1"/>
+    <text x="90" y="96" text-anchor="middle" font-weight="bold" fill="#2c3e50">Bulmaca Durumu</text>
+    <text x="90" y="112" text-anchor="middle" fill="#4a5a6a">Durum Uzayı + Kısıtlar</text>
+  </g>
+
+  <!-- Ok 1 -->
+  <line x1="150" y1="102" x2="185" y2="102" stroke="#7a8b99" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 2. Arama Stratejisi -->
+  <g filter="url(#shadow)">
+    <rect x="188" y="68" width="140" height="68" rx="10" fill="url(#algo)" stroke="#a0c4a8" stroke-width="1"/>
+    <text x="258" y="88" text-anchor="middle" font-weight="bold" fill="#2c3e50">Arama Stratejisi</text>
+    <text x="258" y="104" text-anchor="middle" fill="#4a6a52">Backtracking + MRV</text>
+    <text x="258" y="120" text-anchor="middle" fill="#4a6a52">Kısıt Yayılımı</text>
+  </g>
+
+  <!-- Ok 2 -->
+  <line x1="328" y1="102" x2="363" y2="102" stroke="#7a8b99" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 3. Adım Motoru -->
+  <g filter="url(#shadow)">
+    <rect x="366" y="68" width="120" height="68" rx="10" fill="url(#vis)" stroke="#e0b88a" stroke-width="1"/>
+    <text x="426" y="88" text-anchor="middle" font-weight="bold" fill="#2c3e50">Adım Motoru</text>
+    <text x="426" y="104" text-anchor="middle" fill="#6a5a3a">async/await</text>
+    <text x="426" y="120" text-anchor="middle" fill="#6a5a3a">sleep + render</text>
+  </g>
+
+  <!-- Ok 3 -->
+  <line x1="486" y1="102" x2="521" y2="102" stroke="#7a8b99" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 4. Görselleştirme -->
+  <g filter="url(#shadow)">
+    <rect x="524" y="68" width="96" height="68" rx="10" fill="url(#loop)" stroke="#d4a0b0" stroke-width="1"/>
+    <text x="572" y="88" text-anchor="middle" font-weight="bold" fill="#2c3e50">Görselleştir</text>
+    <text x="572" y="104" text-anchor="middle" fill="#6a3a4a">Yeşil: Dene</text>
+    <text x="572" y="120" text-anchor="middle" fill="#6a3a4a">Kırmızı: Geri Dön</text>
+  </g>
+
+  <!-- Geri Besleme Döngüsü -->
+  <path d="M 572 136 L 572 175 Q 572 185 562 185 L 110 185 Q 100 185 100 175 L 100 148" fill="none" stroke="#7a8b99" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <text x="330" y="200" text-anchor="middle" font-size="11" fill="#5a6a7a" font-style="italic">Geri Besleme: Görselleştirme &amp; Açıklamalar</text>
+
+  <!-- Alt Bölüm: Algoritma Kalbi -->
+  <g filter="url(#shadowLight)">
+    <rect x="80" y="228" width="200" height="55" rx="8" fill="#fafafa" stroke="#c8d0d8" stroke-width="1"/>
+    <text x="180" y="248" text-anchor="middle" font-weight="bold" fill="#2c3e50">Etkileşimli Öğrenme</text>
+    <text x="180" y="264" text-anchor="middle" fill="#4a5a6a">Hız Kontrolü, Duraklat</text>
+    <text x="180" y="278" text-anchor="middle" fill="#4a5a6a">Adım Geçmişi</text>
+  </g>
+
+  <g filter="url(#shadowLight)">
+    <rect x="320" y="228" width="240" height="55" rx="8" fill="#fafafa" stroke="#c8d0d8" stroke-width="1"/>
+    <text x="440" y="248" text-anchor="middle" font-weight="bold" fill="#2c3e50">Genişletilebilir Model</text>
+    <text x="440" y="264" text-anchor="middle" fill="#4a5a6a">Sudoku, Nonogram, KenKen</text>
+    <text x="440" y="278" text-anchor="middle" fill="#4a5a6a">Labirent, Satranç</text>
+  </g>
+
+  <!-- Bağlantı çizgileri -->
+  <line x1="180" y1="228" x2="180" y2="205" stroke="#7a8b99" stroke-width="1" opacity="0.6"/>
+  <line x1="440" y1="228" x2="440" y2="205" stroke="#7a8b99" stroke-width="1" opacity="0.6"/>
+
+  <!-- Zaman Karmaşıklığı ve MRV Notu -->
+  <g>
+    <rect x="30" y="270" width="240" height="28" rx="6" fill="#f0f4f8" stroke="#d0d8e0" stroke-width="1" filter="url(#shadowLight)"/>
+    <text x="150" y="288" text-anchor="middle" font-size="11" fill="#6b7b8c">Kaba Kuvvet: O(b^d) → Optimize: Çok daha hızlı</text>
+  </g>
+
+  <g>
+    <rect x="320" y="270" width="130" height="28" rx="6" fill="#f0f4f8" stroke="#d0d8e0" stroke-width="1" filter="url(#shadowLight)"/>
+    <text x="385" y="288" text-anchor="middle" font-size="11" fill="#6b7b8c">MRV: En az aday</text>
+  </g>
+
+</svg>

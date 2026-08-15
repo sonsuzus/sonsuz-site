@@ -9,9 +9,13 @@ tags:
   - auto-grader
   - eğitim teknolojileri
   - test otomasyonu
+image: /img/python-ile-otomatik-84.png
 ---
 
 Bir öğrencinin yazdığı kodu saniyeler içinde çalıştırıp çıktısını kontrol eden, puanını hesaplayan ve geri bildirim veren sistemler kulağa küçük bir sihirbazlık gibi gelir. Aslında bu sihrin adı auto-grader: test senaryoları, izole çalışma ortamı ve adil puanlama mantığının birleşimi. Python ile böyle bir sistem geliştirmek hem eğitim platformları hem de kodlama yarışmaları için çok güçlü bir projedir.
+
+![python-ile-otomatik-84](/img/python-ile-otomatik-84.svg)
+
 ``
 Auto-grader sisteminin temel problemi şudur: Kullanıcının gönderdiği kodu çalıştırmak istiyoruz, ama bu kod güvenilmez olabilir. Sonsuz döngüye girebilir, dosya sistemini kurcalayabilir, çok fazla bellek tüketebilir veya gizli testleri okumaya çalışabilir. Bu yüzden auto-grader yalnızca `subprocess.run()` çağırıp sonucu okumaktan ibaret değildir; güvenlik, zaman sınırı, kaynak sınırı ve test tasarımı birlikte düşünülmelidir.
 

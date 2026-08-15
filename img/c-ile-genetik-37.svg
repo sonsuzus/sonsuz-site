@@ -1,0 +1,97 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(135deg, #e8f4f8, #f0f9f0); font-family: 'Segoe UI', Tahoma, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000022"/>
+    </filter>
+    <linearGradient id="popGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#6db3f2"/>
+    </linearGradient>
+    <linearGradient id="fitGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b5e7a0"/>
+      <stop offset="100%" stop-color="#86c976"/>
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3d9a4"/>
+      <stop offset="100%" stop-color="#e6b85c"/>
+    </linearGradient>
+    <linearGradient id="mutGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9b8e6"/>
+      <stop offset="100%" stop-color="#b78ad1"/>
+    </linearGradient>
+    <linearGradient id="selectGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4b8c0"/>
+      <stop offset="100%" stop-color="#e08e9c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Konumlandırma: popülasyon -> uygunluk -> seçim -> çaprazlama -> mutasyon -> yeni nesil, dairesel ok döngüsü -->
+
+  <!-- Popülasyon merkezi -->
+  <ellipse cx="320" cy="110" rx="90" ry="40" fill="url(#popGrad)" opacity="0.9" filter="url(#shadow)" stroke="#3a7ca5" stroke-width="1.5"/>
+  <text x="320" y="105" text-anchor="middle" fill="#1a3d5c" font-size="14" font-weight="bold">Popülasyon</text>
+  <text x="320" y="122" text-anchor="middle" fill="#1a3d5c" font-size="11">Aday Çözümler</text>
+
+  <!-- Uygunluk - sağ üst -->
+  <rect x="480" y="45" width="110" height="45" rx="12" fill="url(#fitGrad)" filter="url(#shadow)" stroke="#4a7c3a" stroke-width="1.5"/>
+  <text x="535" y="62" text-anchor="middle" fill="#2b4a1a" font-size="13" font-weight="bold">Uygunluk</text>
+  <text x="535" y="80" text-anchor="middle" fill="#2b4a1a" font-size="11">f(x) skoru</text>
+
+  <!-- Seçim - sağ alt -->
+  <rect x="480" y="180" width="110" height="45" rx="12" fill="url(#selectGrad)" filter="url(#shadow)" stroke="#8e3a4a" stroke-width="1.5"/>
+  <text x="535" y="197" text-anchor="middle" fill="#5a1a2a" font-size="13" font-weight="bold">Turnuva</text>
+  <text x="535" y="215" text-anchor="middle" fill="#5a1a2a" font-size="11">Seçilim</text>
+
+  <!-- Çaprazlama - sol alt -->
+  <rect x="80" y="180" width="110" height="45" rx="12" fill="url(#crossGrad)" filter="url(#shadow)" stroke="#8a6a1a" stroke-width="1.5"/>
+  <text x="135" y="197" text-anchor="middle" fill="#5a3a0a" font-size="13" font-weight="bold">Çaprazlama</text>
+  <text x="135" y="215" text-anchor="middle" fill="#5a3a0a" font-size="11">Üreme</text>
+
+  <!-- Mutasyon - sol üst -->
+  <rect x="80" y="45" width="110" height="45" rx="12" fill="url(#mutGrad)" filter="url(#shadow)" stroke="#6a2a8a" stroke-width="1.5"/>
+  <text x="135" y="62" text-anchor="middle" fill="#3a0a5a" font-size="13" font-weight="bold">Mutasyon</text>
+  <text x="135" y="80" text-anchor="middle" fill="#3a0a5a" font-size="11">Rastgele</text>
+
+  <!-- Yeni nesil - alt merkez -->
+  <ellipse cx="320" cy="240" rx="95" ry="35" fill="url(#popGrad)" opacity="0.7" filter="url(#shadow)" stroke="#3a7ca5" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="320" y="236" text-anchor="middle" fill="#1a3d5c" font-size="13" font-weight="bold">Yeni Nesil</text>
+  <text x="320" y="252" text-anchor="middle" fill="#1a3d5c" font-size="11">İyileştirilmiş</text>
+
+  <!-- Ok çizgileri (akış) -->
+  <!-- Popülasyon -> Uygunluk -->
+  <line x1="410" y1="105" x2="480" y2="72" stroke="#2b4a1a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <!-- Uygunluk -> Seçim -->
+  <line x1="535" y1="90" x2="535" y2="180" stroke="#8e3a4a" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <!-- Seçim -> Çaprazlama -->
+  <line x1="480" y1="205" x2="190" y2="205" stroke="#8a6a1a" stroke-width="2" marker-end="url(#arrowYellow)"/>
+  <!-- Çaprazlama -> Mutasyon -->
+  <line x1="135" y1="180" x2="135" y2="90" stroke="#6a2a8a" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <!-- Mutasyon -> Popülasyon -->
+  <line x1="190" y1="62" x2="230" y2="95" stroke="#3a7ca5" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Yeni nesil geri bildirim (döngü) -->
+  <path d="M 320 205 Q 320 160 320 150" fill="none" stroke="#3a7ca5" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowBlue)"/>
+  <text x="335" y="180" fill="#1a3d5c" font-size="10">döngü</text>
+
+  <!-- Etiketler -->
+  <text x="320" y="300" text-anchor="middle" fill="#2c3e50" font-size="12" font-style="italic">Genetik Algoritma Akışı</text>
+
+  <!-- Ok tanımları -->
+  <defs>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#4a7c3a"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#8e3a4a"/>
+    </marker>
+    <marker id="arrowYellow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#8a6a1a"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#6a2a8a"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3a7ca5"/>
+    </marker>
+  </defs>
+</svg>

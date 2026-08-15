@@ -9,9 +9,13 @@ tags:
   - Full-Text Search
   - Veritabanı
   - Arama Motoru
+image: /img/sql-ve-tam-36.png
 ---
 
 Bir forumda yüz binlerce tartışma, bir blogda yıllarca birikmiş yazılar olduğunu düşünün. Kullanıcı arama kutusuna sadece iki kelime yazar: SQL indeks. Beklentisi nettir: saniyeler değil, milisaniyeler içinde en alakalı sonuçlar gelsin. İşte SQL tabanlı tam metin arama, klasik LIKE sorgularının el feneriyle mağara gezmesine benzeyen dünyasından çıkıp, elimize projektör ve harita verdiğimiz yerdir.
+
+![sql-ve-tam-36](/img/sql-ve-tam-36.svg)
+
 ``
 
 ## Neden LIKE Yetmez?

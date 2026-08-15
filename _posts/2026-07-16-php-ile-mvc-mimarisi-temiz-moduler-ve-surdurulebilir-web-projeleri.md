@@ -9,6 +9,7 @@ tags:
   - MVC
   - Web Geliştirme
   - Mimari
+image: /img/php-ile-mvc-22.png
 ---
 
 PHP projeleri büyüdükçe en büyük düşman genellikle veritabanı sorgularının, HTML çıktısının ve iş kurallarının aynı dosyada çorba olmasıdır. MVC mimarisi tam da bu noktada sahneye çıkar: Model veriyi, View kullanıcı arayüzünü, Controller ise akışı yönetir. Böylece projeniz “çalışıyor ama dokunmayalım” seviyesinden “geliştirebiliriz, test edebiliriz, bakım yapabiliriz” seviyesine yükselir.
@@ -96,3 +97,6 @@ Ayrıca View dosyalarında mümkün olduğunca az PHP mantığı bulundurun. Vie
 ## Sonuç
 
 PHP ile MVC mimarisi, projeyi daha profesyonel hale getiren güçlü bir düşünme biçimidir. Veritabanı sorgularını Model’e, kullanıcı arayüzünü View’e, istek akışını Controller’a taşıyarak hem bug bulmayı kolaylaştırır hem de yeni özellik eklemeyi daha güvenli hale getirirsiniz. Küçük projelerde bile bu alışkanlığı kazanmak, büyük projelerde sizi ciddi teknik borçtan kurtarır. Kısacası MVC, PHP dünyasında düzenli masa, etiketli çekmece ve kaybolmayan tornavida etkisi yaratır.
+
+![php-ile-mvc-22](/img/php-ile-mvc-22.svg)
+

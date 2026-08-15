@@ -10,7 +10,11 @@ tags:
   - otomasyon
   - api
   - raporlama
+image: /img/python-ve-cronjobs-68.png
 ---
+
+![python-ve-cronjobs-68](/img/python-ve-cronjobs-68.svg)
+
 
 Sunucunuzun her sabah siz kahvenizi almadan önce API'lerden veri çekip rapor hazırladığını hayal edin. İşte Python ve cronjobs ikilisi tam olarak bu küçük dijital asistanı kurmanızı sağlar: Python işi yapar, cron ise doğru zamanda düğmeye basar.
 ``

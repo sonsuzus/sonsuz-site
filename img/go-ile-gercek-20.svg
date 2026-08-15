@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#2c3e50" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#e0f2e9"/>
+    </linearGradient>
+    <linearGradient id="hubGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6dd5ed"/>
+      <stop offset="100%" stop-color="#4a90d9"/>
+    </linearGradient>
+    <linearGradient id="clientGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8e6cf"/>
+      <stop offset="100%" stop-color="#56ab91"/>
+    </linearGradient>
+    <linearGradient id="wsGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd3b6"/>
+      <stop offset="100%" stop-color="#ffa07a"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="320" fill="url(#bg)" rx="8"/>
+
+  <!-- Title -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Go Gerçek Zamanlı Sohbet Mimarisi</text>
+
+  <!-- Central Hub -->
+  <rect x="245" y="125" width="150" height="70" rx="12" fill="url(#hubGrad)" filter="url(#shadow)"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#fff">Hub</text>
+  <text x="320" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8f4f8">mesaj dağıtım merkezi</text>
+
+  <!-- Client boxes -->
+  <rect x="40" y="60" width="110" height="55" rx="10" fill="url(#clientGrad)" filter="url(#shadow)"/>
+  <text x="95" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Client 1</text>
+  <text x="95" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#fff">goroutine + kanal</text>
+
+  <rect x="40" y="135" width="110" height="55" rx="10" fill="url(#clientGrad)" filter="url(#shadow)"/>
+  <text x="95" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Client 2</text>
+  <text x="95" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#fff">goroutine + kanal</text>
+
+  <rect x="40" y="210" width="110" height="55" rx="10" fill="url(#clientGrad)" filter="url(#shadow)"/>
+  <text x="95" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Client N</text>
+  <text x="95" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#fff">goroutine + kanal</text>
+
+  <!-- WebSocket Box -->
+  <rect x="475" y="125" width="130" height="70" rx="10" fill="url(#wsGrad)" filter="url(#shadow)"/>
+  <text x="540" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">WebSocket API</text>
+  <text x="540" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#fff">/ws endpoint</text>
+  <text x="540" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#fff">Upgrade: TCP</text>
+
+  <!-- Connecting lines: Clients to Hub -->
+  <line x1="150" y1="87" x2="245" y2="145" stroke="#4a90d9" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="150" y1="162" x2="245" y2="160" stroke="#4a90d9" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="150" y1="237" x2="245" y2="175" stroke="#4a90d9" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- Hub to WebSocket -->
+  <line x1="395" y1="160" x2="475" y2="160" stroke="#ffa07a" stroke-width="2.5"/>
+
+  <!-- Labels on lines -->
+  <text x="195" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#4a90d9">register</text>
+  <text x="195" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#4a90d9">broadcast</text>
+  <text x="195" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#4a90d9">mesajlar</text>
+
+  <text x="435" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#ffa07a">çift yönlü iletişim</text>
+
+  <!-- Bottom annotation -->
+  <rect x="120" y="285" width="400" height="25" rx="8" fill="#fff" opacity="0.7" filter="url(#shadow)"/>
+  <text x="320" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Basit mesaj: "al, herkese gönder"</text>
+
+  <!-- Protocol comparisons -->
+  <rect x="45" y="283" width="60" height="20" rx="4" fill="#f0f4f8" opacity="0.6"/>
+  <text x="75" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="8" fill="#666">HTTP vs WS</text>
+</svg>

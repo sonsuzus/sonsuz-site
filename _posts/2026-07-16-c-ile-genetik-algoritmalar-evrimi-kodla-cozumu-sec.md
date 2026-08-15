@@ -8,7 +8,11 @@ tags:
   - C++
   - Genetik Algoritma
   - Optimizasyon
+image: /img/c-ile-genetik-37.png
 ---
+
+![c-ile-genetik-37](/img/c-ile-genetik-37.svg)
+
 
 Bir problemi çözmeye çalışırken bazen “en iyi” cevabı doğrudan hesaplamak zordur; özellikle seçenek sayısı devasa ise klasik yöntemler yorulabilir. İşte genetik algoritmalar burada sahneye çıkar: Doğadaki seçilim, çaprazlama ve mutasyon fikrini taklit ederek veri havuzundaki aday çözümleri nesilden nesle iyileştirir. C++ ise performansı ve bellek kontrolü sayesinde bu evrimsel deneyi hızlıca çalıştırmak için harika bir araçtır.
 

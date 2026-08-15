@@ -9,7 +9,11 @@ tags:
   - WebSocket
   - Gerçek Zamanlı Uygulamalar
   - Backend
+image: /img/go-ile-gercek-20.png
 ---
+
+![go-ile-gercek-20](/img/go-ile-gercek-20.svg)
+
 
 Bir sohbet uygulaması yazmak ilk bakışta “mesajı al, herkese gönder” kadar basit görünür; fakat işin içine binlerce aktif kullanıcı, kopan bağlantılar, eşzamanlı mesajlar ve düşük gecikme girince konu bir anda backend spor salonuna dönüşür. Go burada hafif goroutine’leri, kanal tabanlı iletişim modeli ve sade sözdizimiyle harika bir adaydır.
 ``

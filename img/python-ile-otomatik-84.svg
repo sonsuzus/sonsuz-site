@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="code" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8efff"/>
+      <stop offset="100%" stop-color="#dce9ff"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3f8ee"/>
+      <stop offset="100%" stop-color="#d2f0e3"/>
+    </linearGradient>
+    <linearGradient id="test" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff5dc"/>
+      <stop offset="100%" stop-color="#ffebbd"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4e9ff"/>
+      <stop offset="100%" stop-color="#e9d8fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60738a" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#7190a3"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="38" r="55" fill="#dceeff" opacity="0.42"/>
+  <circle cx="598" cy="276" r="74" fill="#dff3dc" opacity="0.42"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566c">OTOMATİK DEĞERLENDİRME AKIŞI</text>
+
+  <path d="M142 162 H181" fill="none" stroke="#7190a3" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M303 162 H342" fill="none" stroke="#7190a3" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M464 162 H503" fill="none" stroke="#7190a3" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="111" width="118" height="102" rx="18" fill="url(#code)" stroke="#bed2ee"/>
+  </g>
+  <rect x="62" y="128" width="41" height="35" rx="8" fill="#fff" opacity="0.9"/>
+  <path d="M74 138 l-7 7 7 7 M91 138 l7 7 -7 7 M86 135 l-5 20" fill="none" stroke="#5b7fa8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="83" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365c82">Öğrenci Kodu</text>
+  <text x="83" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66819c">Python çözümü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="182" y="87" width="121" height="151" rx="18" fill="url(#safe)" stroke="#b7dfc9"/>
+  </g>
+  <path d="M243 108 l25 10 v20 c0 21-15 32-25 37 c-10-5-25-16-25-37v-20z" fill="#fff" opacity="0.84" stroke="#65a982" stroke-width="1.6"/>
+  <path d="M233 139 l7 7 14-16" fill="none" stroke="#4b9870" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="243" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#347154">Sandbox</text>
+  <text x="243" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8f73">İzole çalıştırma</text>
+
+  <g>
+    <rect x="194" y="245" width="98" height="25" rx="10" fill="#e9f7ef" stroke="#b7dfc9"/>
+    <text x="243" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39775a">Ağ kapalı</text>
+  </g>
+  <g>
+    <rect x="194" y="276" width="98" height="25" rx="10" fill="#e9f7ef" stroke="#b7dfc9"/>
+    <text x="243" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39775a">Süre • Bellek</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="343" y="99" width="121" height="126" rx="18" fill="url(#test)" stroke="#efd49a"/>
+  </g>
+  <rect x="370" y="118" width="67" height="12" rx="6" fill="#fff" opacity="0.9"/>
+  <rect x="370" y="138" width="50" height="12" rx="6" fill="#fff" opacity="0.9"/>
+  <rect x="370" y="158" width="61" height="12" rx="6" fill="#fff" opacity="0.9"/>
+  <circle cx="442" cy="124" r="5" fill="#77b88a"/>
+  <circle cx="442" cy="144" r="5" fill="#77b88a"/>
+  <circle cx="442" cy="164" r="5" fill="#e69a79"/>
+  <text x="403" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b681e">Test Havuzu</text>
+  <text x="403" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b7b3a">Görünür • Gizli</text>
+
+  <g filter="url(#shadow)">
+    <rect x="504" y="87" width="112" height="151" rx="18" fill="url(#result)" stroke="#d4bce9"/>
+  </g>
+  <circle cx="560" cy="134" r="28" fill="#fff" opacity="0.9"/>
+  <path d="M560 113 A21 21 0 1 1 541 143" fill="none" stroke="#9d71c6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M541 143 l2-10 8 6" fill="#9d71c6"/>
+  <text x="560" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765295">75%</text>
+  <text x="560" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6b478b">Puanlama</text>
+  <text x="560" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8667a1">Geri Bildirim</text>
+
+  <path d="M403 99 V63 H83 V104" fill="none" stroke="#a8bbc7" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="243" y="57" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718794">Test girdileri ve beklenen çıktı</text>
+</svg>

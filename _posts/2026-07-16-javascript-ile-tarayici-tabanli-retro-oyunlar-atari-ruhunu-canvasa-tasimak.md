@@ -8,6 +8,7 @@ tags:
   - javascript
   - canvas
   - retro-oyun
+image: /img/javascript-ile-tarayici-36.png
 ---
 
 Eski atari oyunlarının büyüsü, devasa grafik motorlarından değil; basit kuralların, hızlı geri bildirimin ve akıcı kontrollerin birleşiminden gelir. JavaScript, HTML ve biraz CSS ile tarayıcıda çalışan mini retro oyunlar yapmak, hem temel programlama mantığını pekiştirir hem de “oyun döngüsü” gibi yazılım dünyasının çok önemli kavramlarını eğlenceli biçimde öğretir.
@@ -112,3 +113,6 @@ Bu yapı, oyuncunun paddle’ını yukarı-aşağı hareket ettirir ve ekran dı
 Retro hissi artırmak için piksel fontlar, sınırlı renk paleti, basit ses efektleri ve düşük çözünürlüklü görseller kullanabilirsiniz. Önemli olan, oyunu karmaşıklaştırmadan “oynanabilir döngüyü” hızlıca kurmaktır: başlat, oyna, kaybet, tekrar dene.
 
 Sonuç olarak JavaScript ile retro oyun yapmak; değişkenler, fonksiyonlar, döngüler, olaylar, matematik ve durum yönetimi gibi temel konuları tek bir eğlenceli projede birleştirir. Bir topu sektirmekle başlayan yolculuk, kısa sürede kendi Pong’unuza, Snake’inize veya uzay nişancı oyununuza dönüşebilir. Üstelik tek ihtiyacınız olan şey bir tarayıcı, biraz merak ve bolca “bir tur daha” isteği!
+
+![javascript-ile-tarayici-36](/img/javascript-ile-tarayici-36.svg)
+
