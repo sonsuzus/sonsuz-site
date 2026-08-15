@@ -8,6 +8,7 @@ tags:
   - C++
   - Yapay Sinir Ağları
   - Optimizasyon
+image: /img/c-ile-yapay-39.png
 ---
 
 Yapay sinir ağları kulağa çoğu zaman Python kütüphanelerinin sihirli düğmeleri gibi gelir; fakat sahnenin arkasında olan şey oldukça “mekanik”tir: vektörler çarpılır, matrisler toplanır, türevler hesaplanır ve bellekten veri taşınır. C++ burada devreye girer; çünkü düşük seviyeli bellek kontrolü sayesinde yalnızca modeli değil, modelin öğrenirken yürüdüğü matematiksel yolu da optimize edebiliriz.
@@ -68,3 +69,6 @@ Performans için dikkat edilmesi gerekenlerden biri gereksiz kopyalardır. Büy�
 Daha ileri seviyede `alignas(64)`, SIMD komutları, OpenMP veya BLAS kütüphaneleri kullanılabilir. Ancak temeli anlamadan bu araçlara atlamak, turbo motoru bisiklete takmaya benzer. Önce veri yerleşimi, döngü sırası ve matematiksel akış net olmalıdır.
 
 C++ ile sinir ağı yazmak, hazır kütüphane kullanmaya göre daha zahmetlidir; fakat karşılığında modelin kalp atışını duyarsınız. Her çarpım, her toplama, her bellek erişimi sizin kontrolünüzdedir. İşte bu yüzden C++, yapay sinir ağlarını yalnızca kullanmak değil, gerçekten anlamak isteyenler için harika bir laboratuvardır.
+
+![c-ile-yapay-39](/img/c-ile-yapay-39.svg)
+
