@@ -11,11 +11,14 @@ tags:
   - özyineleme
   - fonksiyon
   - itertools
+image: /img/flatten_ozyinelemeli_karar_akisi.png
 ---
 
 Python'da programlama yaparken, bazen karşımıza iç içe geçmiş listeler, demetler (tuple), kümeler (set) ve hatta sözlükler (dictionary) gibi farklı veri tiplerini bir arada barındıran karmaşık veri yapıları çıkabilir. Bu tür bir yapıyı analiz etmek veya üzerinde işlem yapmak için genellikle onu "[düzleştirmek](https://program.sonsuz.us/search.html?q=düzleştirmek)", yani tek bir liste haline getirmek isteriz.
 
 Bu yazıda, karmaşık bir listedeki tüm sayısal değerleri ayıklayıp tek ve düz bir liste oluşturmanın farklı yollarını inceleyeceğiz.
+
+![karışık listeyi düz yap](/img/flatten_ozyinelemeli_karar_akisi.svg)
 
 ### Zorlu Bir Örnek: Karışık Veri Yapısı
 

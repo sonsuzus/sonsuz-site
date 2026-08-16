@@ -9,6 +9,7 @@ tags:
   - Go Modules
   - Paket Yönetimi
   - Bağımlılık Yönetimi
+image: /img/paket-yonetimi-ve-41.png
 ---
 
 Bir Go projesi büyüdükçe kodu tek dosyada tutmak, mutfakta tüm malzemeleri aynı çekmeceye atmaya benzer: başta pratik görünür, sonra tarçınla tornavidayı karıştırırsın. Paket yönetimi ve Go Modules, kodu yeniden kullanılabilir parçalara ayırmayı, dış kütüphaneleri doğru sürümle projeye dahil etmeyi ve aynı projenin farklı makinelerde aynı şekilde çalışmasını sağlar.
@@ -92,3 +93,6 @@ go mod tidy
 `go mod tidy`, projenin oda toparlayan robot süpürgesi gibidir: gereksizleri kaldırır, eksikleri yerine koyar. CI/CD süreçlerinde de bu dosyaların tutarlı olması önemlidir. `go.mod` ve `go.sum` dosyaları mutlaka sürüm kontrolüne eklenmelidir; çünkü ekip arkadaşlarının ve sunucuların aynı bağımlılık ağacını kurmasını sağlar.
 
 Sonuç olarak Go Modules, sadece “kütüphane indirme aracı” değildir. Kodun sınırlarını çizen, bağımlılıkları matematiksel bir kesinlikle sürümlere bağlayan ve projeyi taşınabilir hale getiren bir sistemdir. Paketler kodu okunabilir kılar, modüller ise projeyi güvenilir yapar. İyi organize edilmiş bir Go projesinde her paket kendi işini bilir, her bağımlılığın sürümü bellidir ve geliştirici de hata ayıklamak yerine keyifle üretmeye odaklanır.
+
+![paket-yonetimi-ve-41](/img/paket-yonetimi-ve-41.svg)
+
