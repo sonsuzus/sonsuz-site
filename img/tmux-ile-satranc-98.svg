@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="konsol" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#27384a"/>
+      <stop offset="100%" stop-color="#1d2b3a"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#506778" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#506778" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+
+  <circle cx="74" cy="58" r="52" fill="#dbeeff" opacity="0.55"/>
+  <circle cx="590" cy="278" r="70" fill="#dff3df" opacity="0.5"/>
+  <path d="M42 272 C125 245 147 294 226 272 S368 244 432 270" fill="none" stroke="#cde4db" stroke-width="2" opacity="0.7"/>
+
+  <g filter="url(#golge)">
+    <rect x="28" y="66" width="145" height="184" rx="18" fill="#ffffff"/>
+    <rect x="28" y="66" width="145" height="37" rx="18" fill="#dcecff"/>
+    <rect x="28" y="86" width="145" height="17" fill="#dcecff"/>
+  </g>
+  <rect x="43" y="78" width="18" height="14" rx="4" fill="#557ea6"/>
+  <path d="M47 82h10M47 86h7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="70" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#294968">monitor.sh</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40586a">
+    <rect x="43" y="118" width="112" height="25" rx="8" fill="#edf5ff"/>
+    <text x="56" y="135">Oturum oluştur</text>
+    <rect x="43" y="151" width="112" height="25" rx="8" fill="#eef8f0"/>
+    <text x="56" y="168">Bölmeleri aç</text>
+    <rect x="43" y="184" width="112" height="25" rx="8" fill="#fff5df"/>
+    <text x="56" y="201">Komutları gönder</text>
+    <rect x="43" y="217" width="112" height="19" rx="8" fill="#f4eefc"/>
+    <text x="56" y="231">Yeniden bağlan</text>
+  </g>
+
+  <path d="M174 157 H213" stroke="#7e9caf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="220,157 210,151 210,163" fill="#7e9caf"/>
+
+  <g filter="url(#golge)">
+    <rect x="225" y="40" width="387" height="239" rx="19" fill="url(#konsol)"/>
+    <rect x="225" y="40" width="387" height="31" rx="19" fill="#32495d"/>
+    <rect x="225" y="57" width="387" height="14" fill="#32495d"/>
+  </g>
+
+  <circle cx="246" cy="55" r="4" fill="#ff9587"/>
+  <circle cx="259" cy="55" r="4" fill="#f6cf73"/>
+  <circle cx="272" cy="55" r="4" fill="#85d6a3"/>
+  <text x="290" y="59" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#e4f1fa">tmux · watchboard</text>
+  <rect x="528" y="48" width="67" height="16" rx="8" fill="#46677c"/>
+  <text x="539" y="60" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#d9ecf7">2 × 3 karo</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="241" y="83" width="112" height="80" rx="10" fill="#263a4a" stroke="#4d6777"/>
+    <rect x="363" y="83" width="112" height="80" rx="10" fill="#263a4a" stroke="#4d6777"/>
+    <rect x="485" y="83" width="112" height="80" rx="10" fill="#263a4a" stroke="#4d6777"/>
+    <rect x="241" y="174" width="112" height="80" rx="10" fill="#263a4a" stroke="#4d6777"/>
+    <rect x="363" y="174" width="112" height="80" rx="10" fill="#263a4a" stroke="#4d6777"/>
+    <rect x="485" y="174" width="112" height="80" rx="10" fill="#263a4a" stroke="#4d6777"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="251" y="93" width="53" height="18" rx="6" fill="#466e89"/>
+    <text x="260" y="106" fill="#e9f6ff" font-weight="700">API Log</text>
+    <path d="M251 127h45M251 136h72M251 145h55" stroke="#79b8d3" stroke-width="2" opacity="0.8" stroke-linecap="round"/>
+    <circle cx="333" cy="102" r="5" fill="#70d49d"/>
+
+    <rect x="373" y="93" width="52" height="18" rx="6" fill="#6b5988"/>
+    <text x="383" y="106" fill="#f0eaff" font-weight="700">Worker</text>
+    <path d="M373 131h31M373 140h73M373 149h48" stroke="#bba9df" stroke-width="2" opacity="0.85" stroke-linecap="round"/>
+    <circle cx="455" cy="102" r="5" fill="#70d49d"/>
+
+    <rect x="495" y="93" width="49" height="18" rx="6" fill="#4d7d71"/>
+    <text x="505" y="106" fill="#e8fff6" font-weight="700">Sistem</text>
+    <path d="M497 146 L508 138 L518 141 L529 122 L539 132 L550 116 L563 125 L580 112" fill="none" stroke="#81ddbd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="577" cy="102" r="5" fill="#70d49d"/>
+
+    <rect x="251" y="184" width="52" height="18" rx="6" fill="#8a6952"/>
+    <text x="261" y="197" fill="#fff3e8" font-weight="700">Docker</text>
+    <rect x="252" y="213" width="76" height="7" rx="3.5" fill="#425a67"/>
+    <rect x="252" y="213" width="51" height="7" rx="3.5" fill="#f1af75"/>
+    <rect x="252" y="229" width="76" height="7" rx="3.5" fill="#425a67"/>
+    <rect x="252" y="229" width="35" height="7" rx="3.5" fill="#8ed5ba"/>
+
+    <rect x="373" y="184" width="37" height="18" rx="6" fill="#9a7550"/>
+    <text x="382" y="197" fill="#fff6e9" font-weight="700">Test</text>
+    <path d="M377 222l8 8 17-20" fill="none" stroke="#91d8a9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="414" y="227" fill="#cce9d7">başarılı</text>
+
+    <rect x="495" y="184" width="35" height="18" rx="6" fill="#527da0"/>
+    <text x="504" y="197" fill="#eaf6ff" font-weight="700">Disk</text>
+    <circle cx="516" cy="228" r="15" fill="none" stroke="#425a67" stroke-width="6"/>
+    <path d="M516 213 A15 15 0 0 1 530 232" fill="none" stroke="#f2b56e" stroke-width="6" stroke-linecap="round"/>
+    <text x="542" y="232" fill="#dceef5">68%</text>
+  </g>
+
+  <path d="M225 157 H205" stroke="#9bc3b4" stroke-width="2" opacity="0.75"/>
+  <text x="37" y="281" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808c">Tek oturum · canlı izleme</text>
+  <text x="421" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808c">Kritik süreçler aynı ekranda</text>
+</svg>

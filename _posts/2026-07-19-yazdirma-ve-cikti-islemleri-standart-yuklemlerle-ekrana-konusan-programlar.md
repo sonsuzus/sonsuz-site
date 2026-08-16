@@ -8,6 +8,7 @@ tags:
   - Prolog
   - çıktı işlemleri
   - standart yüklemler
+image: /img/yazdirma-ve-cikti-22.png
 ---
 
 Bir programın kullanıcıyla ilk selamlaşması çoğu zaman ekrana yazdırdığı küçücük bir metinle başlar. Mantıksal programlama dünyasında, özellikle Prolog gibi dillerde, bu iş “fonksiyon çağırmak”tan çok “yüklem çalıştırmak” şeklinde düşünülür. Yani ekrana metin basmak, değişkenin değerini görmek veya satır atlamak için sisteme gömülü standart yüklemlerden yararlanırız.
@@ -87,3 +88,6 @@ Bu yüklem, ürün bilgilerini hesaplayıp okunabilir biçimde gösterir. `is/2`
 $ToplamDeger = Fiyat \times Stok$
 
 Sonuç olarak çıktı işlemleri, programın dış dünyaya açılan penceresidir. `write/1` hızlı ve basittir, `nl/0` satır düzenini sağlar, `writeln/1` pratiklik sunar, `format/2` ise ciddi raporların yıldızıdır. Kodunuz doğru çalışabilir; ama iyi biçimlendirilmiş çıktı, kullanıcının “Evet, bu program ne yaptığını biliyor!” demesini sağlar.
+
+![yazdirma-ve-cikti-22](/img/yazdirma-ve-cikti-22.svg)
+

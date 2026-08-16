@@ -8,20 +8,14 @@ tags:
   - modül
   - paket
   - kütüphane
-redirect_from:
-  - /posts/python-programlamaya-giris-23-moduller-ve-paketler/
+
 ---
-
-
-
-
-
 
 
 Her programlama dilinde olduğu gibi Python’da da tekrar tekrar kullanılabilen fonksiyon ve sınıfların bir [kütüphane](https://program.sonsuz.us/search.html?q=k%C3%BCt%C3%BCphane) şeklinde ayrı dosyalarda saklanması ve yeni yazılan programlara entegre edilmesi için bir mekanizma vardır. Standart kütüphaneler, SciPy ve benzeri paketler, veya kendi kişisel fonksiyon kütüphaneniz bu [modül](https://program.sonsuz.us/search.html?q=mod%C3%BCl) sistemiyle inşa edilir.
 
 Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://program.sonsuz.us/category/program) kategorimize bakabilirsiniz. 
-
+``
 ## Modüller
 
 Python’da bir modül yaratmak için özel bir işleme gerek yoktur. Python kodu içeren, `.py` uzantılı herhangi bir dosya bir modül olabilir. Sözgelişi, aşağıdaki kodu `basitmodul.py` isimli bir dosyaya yazıp kaydettiğinizde, bir modül yaratmış olursunuz.

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#eef7ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#8899aa" flood-opacity="0.25"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#778899" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Ana konteynır: Uinput merkezli dairesel kompozisyon -->
+
+  <!-- Merkez blok: /dev/uinput -->
+  <rect x="255" y="125" width="130" height="50" rx="12" fill="#5a8fbf" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="146" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="12">/dev/uinput</text>
+  <text x="320" y="162" text-anchor="middle" fill="#d8ecff" font-size="11">Sanal aygıt çekirdeği</text>
+
+  <!-- Üst sol: Kullanıcı Uzayı -->
+  <rect x="40" y="45" width="130" height="48" rx="10" fill="#a8c8e8" filter="url(#shadowLight)"/>
+  <text x="105" y="63" text-anchor="middle" fill="#2c4a66" font-weight="bold">Kullanıcı Uzayı</text>
+  <text x="105" y="79" text-anchor="middle" fill="#3d5c7d">Programlar</text>
+
+  <!-- Üst sağ: Çekirdek -->
+  <rect x="470" y="45" width="130" height="48" rx="10" fill="#a8d0a8" filter="url(#shadowLight)"/>
+  <text x="535" y="63" text-anchor="middle" fill="#2c5a2c" font-weight="bold">Linux Çekirdeği</text>
+  <text x="535" y="79" text-anchor="middle" fill="#3d7a3d">Input Alt Sistemi</text>
+
+  <!-- Sol alt: Fiziksel Aygıtlar -->
+  <rect x="40" y="230" width="130" height="48" rx="10" fill="#e8c8a0" filter="url(#shadowLight)"/>
+  <text x="105" y="248" text-anchor="middle" fill="#66441e" font-weight="bold">Fiziksel Aygıtlar</text>
+  <text x="105" y="264" text-anchor="middle" fill="#8a6a3a">Fare / Klavye</text>
+
+  <!-- Sağ alt: Masaüstü Ortamı -->
+  <rect x="470" y="230" width="130" height="48" rx="10" fill="#c8b0d8" filter="url(#shadowLight)"/>
+  <text x="535" y="248" text-anchor="middle" fill="#4a2c66" font-weight="bold">Masaüstü Ortamı</text>
+  <text x="535" y="264" text-anchor="middle" fill="#6a4a8a">Olay Tüketimi</text>
+
+  <!-- Ok: Kullanıcı Uzayı -> uinput -->
+  <polygon points="172,72 252,138 246,145 168,80" fill="#5a8fbf" opacity="0.7"/>
+  <text x="190" y="102" fill="#5a8fbf" font-size="11">kayıt</text>
+
+  <!-- Ok: uinput -> Çekirdek -->
+  <polygon points="387,138 467,72 473,80 392,145" fill="#5a8fbf" opacity="0.7"/>
+  <text x="430" y="102" fill="#5a8fbf" font-size="11">enjeksiyon</text>
+
+  <!-- Ok: Fiziksel Aygıtlar -> Çekirdek -->
+  <polygon points="172,248 467,68 473,76 180,255" fill="#88aa88" opacity="0.5"/>
+  <text x="300" y="120" fill="#88aa88" font-size="11">/dev/input/eventX</text>
+
+  <!-- Ok: Çekirdek -> Masaüstü -->
+  <polygon points="535,95 535,227" fill="#88aa88" opacity="0.5"/>
+
+  <!-- Olay üçlüsü: (tip, kod, değer) -->
+  <rect x="240" y="210" width="160" height="36" rx="8" fill="#ffffff" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="320" y="225" text-anchor="middle" fill="#335577" font-weight="bold">Olay = (tip, kod, değer)</text>
+  <text x="320" y="239" text-anchor="middle" fill="#557799" font-size="11">EV_KEY, KEY_A, 1</text>
+
+  <!-- Bağlantı çizgisi: uinput -> Olay üçlüsü -->
+  <polygon points="305,177 305,207" fill="#5a8fbf" opacity="0.6"/>
+
+  <!-- Olay tipleri etiketi -->
+  <rect x="30" y="130" width="118" height="76" rx="8" fill="#f5f0e0" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="89" y="147" text-anchor="middle" fill="#665522" font-weight="bold">Olay Tipleri</text>
+  <text x="40" y="164" fill="#887744">EV_KEY: tuş / buton</text>
+  <text x="40" y="179" fill="#887744">EV_REL: göreli hareket</text>
+  <text x="40" y="194" fill="#887744">EV_ABS: mutlak konum</text>
+  <text x="40" y="209" fill="#887744">EV_SYN: senkronizasyon</text>
+
+  <!-- Ok: Olay tipleri -> uinput -->
+  <polygon points="150,168 252,150 253,158 152,176" fill="#c8b060" opacity="0.6"/>
+
+  <!-- Güvenlik notu -->
+  <rect x="490" y="150" width="128" height="46" rx="8" fill="#e8d8d8" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="554" y="167" text-anchor="middle" fill="#883333" font-weight="bold">Güvenlik</text>
+  <text x="500" y="182" fill="#aa5555" font-size="11">Yetki kontrolü</text>
+  <text x="500" y="196" fill="#aa5555" font-size="11">Sanal giriş tehlikesi</text>
+
+  <!-- Ok: güvenlik -> uinput -->
+  <polygon points="487,162 388,148 388,157 485,172" fill="#cc7777" opacity="0.5"/>
+
+  <!-- Sağ alt bilgi: Python evdev -->
+  <text x="535" y="292" text-anchor="middle" fill="#557799" font-size="11" opacity="0.8">evdev kütüphanesi ile kontrol</text>
+</svg>

@@ -24,7 +24,10 @@ tags:
   - kodlama
   - matematik
   - kitap
+image: /img/nim_1_2_3_durum_cizgesi.png
 ---
+
+![oyun teorisi](/img/nim_1_2_3_durum_cizgesi.svg)
 
 **Oyun teorisi**, rastgele eleman içermeyen iki kişilik oyunları analiz eder. Amaç; rakip ne yaparsa yapsın, eğer varsa oyunu kesinlikle kazandıracak bir strateji bulmaktır. Bu oyunlar **nim teorisi** ile analiz edilir.
 ``

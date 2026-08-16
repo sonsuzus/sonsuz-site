@@ -10,7 +10,11 @@ tags:
   - debugging
   - stack
   - reverse-engineering
+image: /img/gdb-python-ile-26.png
 ---
+
+![gdb-python-ile-26](/img/gdb-python-ile-26.svg)
+
 
 Debug oturumunda bazen en değerli ipucu, register’larda değil yığının arasında saklanan minicik bir stringdir: bir token, hata mesajı, dosya yolu ya da “buradayım!” diye bağıran bir parola. GNU Debugger, Python API’si sayesinde yalnızca komut çalıştırdığımız bir araç olmaktan çıkar; kendi mini dedektif komutlarımızı yazabileceğimiz genişletilebilir bir platforma dönüşür.
 ``

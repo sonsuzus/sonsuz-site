@@ -10,6 +10,7 @@ tags:
   - Ağ Gözlemleme
   - Python
   - BCC
+image: /img/ebpf-ile-cekirdegi-59.png
 ---
 
 Linux çekirdeğinin içine küçük, güvenli ve olay odaklı programlar bırakabildiğinizi düşünün; üstelik kernel modülü yazmadan, sistemi yeniden başlatmadan ve çekirdeği yeniden derlemeden. İşte eBPF tam olarak bu büyülü tornavida. Bu yazıda gelen TCP bağlantı isteklerini anlık sayan ve saniyelik değerleri terminalde histogram olarak gösteren mini bir ağ trafiği gözlemcisi tasarlayacağız.
@@ -30,6 +31,9 @@ Burada $\Delta N$ belirli sürede gelen bağlantı sayısı, $\Delta t$ ise öl�
 | tcpdump | Kullanıcı uzayı | Esnek paket analizi | Yoğun trafikte maliyetli |
 | Kernel modülü | Çekirdek | Çok güçlü | Riskli, derleme ve bakım ister |
 | eBPF | Çekirdek içinde doğrulanmış VM | Güvenli, dinamik, hızlı | Kernel sembolleri değişebilir |
+
+![ebpf-ile-cekirdegi-59](/img/ebpf-ile-cekirdegi-59.svg)
+
 
 ## Mimari
 

@@ -13,8 +13,6 @@ tags:
   - matplotlib
   - fizik
   - serbest düşüş
-redirect_from:
-  - /posts/bilimsel-programlamaya-kolay-baslangic-1/
 ---
 
 
@@ -33,7 +31,7 @@ Bilimsel Programlama her disiplin için farklı şeyler ifade etse de, öğrenci
 3. Sonuçları Görselleştirme
 
 Olan biteni daha net anlatabilmek için son derece basit, lise seviyesinde bir problemi ele alalım: Serbest Düşüş Hareketi.
-
+``
 Problemin matematiksel modeli bu kadarcık:  
 
 *Konum değişimi:*  

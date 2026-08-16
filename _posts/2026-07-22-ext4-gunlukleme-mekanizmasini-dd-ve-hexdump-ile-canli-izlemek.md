@@ -10,7 +10,11 @@ tags:
   - dd
   - hexdump
   - dosya-sistemi
+image: /img/ext4-gunlukleme-mekanizmasini-52.png
 ---
+
+![ext4-gunlukleme-mekanizmasini-52](/img/ext4-gunlukleme-mekanizmasini-52.svg)
+
 
 ext4 dosya sisteminde bir dosya yazdığınızda verinin diske “hop diye” gitmediğini bilmek, Linux’un perde arkasını anlamak için harika bir başlangıçtır. Bu yazıda güvenli bir loop imaj üzerinde ext4 günlük bölgesini bulup, yazma işlemi sırasında `dd` ve `hexdump` ile anlık izleyen küçük bir Bash betiği hazırlayacağız. Gerçek diskinize dokunmadan, dosya sisteminin kalp atışlarını dinleyeceğiz.
 ``

@@ -10,7 +10,11 @@ tags:
   - tc-netem
   - devops
   - test
+image: /img/linux-ile-kotu-26.png
 ---
+
+![linux-ile-kotu-26](/img/linux-ile-kotu-26.svg)
+
 
 Uygulamanız lokal makinede ışık hızında çalışıyor olabilir; peki kullanıcı metroda, otel Wi‑Fi’ında ya da yağmurlu bir günde 4G’deyken ne olacak? Bu yazıda Linux üzerinde sanal bir ağ arayüzü oluşturup gelen paketlere yapay olarak %5 paket kaybı ve rastgele gecikme ekleyen küçük ama çok faydalı bir “kötü ağ simülatörü” kuracağız.
 ``

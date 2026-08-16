@@ -10,7 +10,11 @@ tags:
   - bash
   - namespace
   - cgroup
+image: /img/kabuk-betikleriyle-mini-33.png
 ---
+
+![kabuk-betikleriyle-mini-33](/img/kabuk-betikleriyle-mini-33.svg)
+
 
 Konteyner denince akla hemen Docker gelir; ama sahnenin arkasında sihirli bir ejderha değil, Linux çekirdeğinin çok ciddi iki mekanizması çalışır: ad alanları ve kontrol grupları. Bu yazıda hazır bir konteyner motoru kullanmadan, kabuk betikleriyle küçük ama öğretici bir motor kuracağız. Amaç üretim ortamına rakip çıkarmak değil; kaputun altındaki pistonları tek tek görmek.
 ``

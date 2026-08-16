@@ -10,6 +10,7 @@ tags:
   - devops
   - terminal
   - izleme
+image: /img/tmux-ile-satranc-98.png
 ---
 
 Bir sunucuda log, kuyruk, API, veritabanı ve sistem metriklerini aynı anda izlemek bazen dedektiflik oyunu gibidir: ipucu bir yerde akar, hata başka yerde patlar. Bu yazıda kabuk betikleri ve tmux kullanarak ekranı satranç tahtası gibi bölen, her bölmede ayrı bir sürecin canlı çıktısını gösteren eğlenceli ama işe yarar bir izleme konsolu hazırlayacağız.
@@ -31,6 +32,9 @@ Burada $r$ satır sayısı, $c$ sütun sayısıdır. Örneğin 3 satır ve 2 sü
 | 2x3 | 6 | API + worker + DB + log | İyi |
 | 3x3 | 9 | Yoğun geliştirme ortamı | Orta |
 | 4x4 | 16 | Gösterişli demo | Zayıf |
+
+![tmux-ile-satranc-98](/img/tmux-ile-satranc-98.svg)
+
 
 ## İzlenecek Süreçleri Tanımlamak
 

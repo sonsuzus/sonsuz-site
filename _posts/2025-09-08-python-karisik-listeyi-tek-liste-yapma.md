@@ -11,11 +11,9 @@ tags:
   - özyineleme
   - fonksiyon
   - itertools
-redirect_from:
-  - /posts/python-karisik-listeyi-tek-liste-yapma/
 ---
 
-Python'da programlama yaparken, bazen karşımıza iç içe geçmiş listeler, demetler (tuple), kümeler (set) ve hatta sözlükler (dictionary) gibi farklı veri tiplerini bir arada barındıran karmaşık veri yapıları çıkabilir. Bu tür bir yapıyı analiz etmek veya üzerinde işlem yapmak için genellikle onu "düzleştirmek", yani tek bir liste haline getirmek isteriz.
+Python'da programlama yaparken, bazen karşımıza iç içe geçmiş listeler, demetler (tuple), kümeler (set) ve hatta sözlükler (dictionary) gibi farklı veri tiplerini bir arada barındıran karmaşık veri yapıları çıkabilir. Bu tür bir yapıyı analiz etmek veya üzerinde işlem yapmak için genellikle onu "[düzleştirmek](https://program.sonsuz.us/search.html?q=düzleştirmek)", yani tek bir liste haline getirmek isteriz.
 
 Bu yazıda, karmaşık bir listedeki tüm sayısal değerleri ayıklayıp tek ve düz bir liste oluşturmanın farklı yollarını inceleyeceğiz.
 
@@ -29,7 +27,7 @@ karmaşık_liste = [1, 2, 3, [4, 5, [6, 7]], [8, 9], [10, 11, [100], 12, (1, 1),
 
 Amacımız, bu yapı içindeki tüm sayıları ayıklayarak `[1, 2, 3, 4, 5, ...]` şeklinde tek bir liste elde etmek.
 
-### Çözüm 1: Özyinelemeli (Recursive) Fonksiyon
+### Çözüm 1: [Özyinelemeli](https://program.sonsuz.us/search.html?q=özyinelemeli) (Recursive) Fonksiyon
 
 Bu tür derin ve karmaşık yapıları çözmenin en esnek yollarından biri özyinelemeli, yani kendi kendini çağıran bir fonksiyon yazmaktır.
 
@@ -86,7 +84,7 @@ print(düz_liste_gen)
 
 `yield from` ifadesi, başka bir generator'dan gelen tüm değerleri sanki bu fonksiyondan geliyormuş gibi aktarır ve kodu daha temiz hale getirir.
 
-### Çözüm 3: Basit Durumlar İçin `itertools`
+### Çözüm 3: Basit Durumlar İçin [itertools](https://program.sonsuz.us/search.html?q=itertools)
 
 Eğer listemiz sadece bir seviye derinliğe sahipse (örneğin `[[1, 2], [3, 4]]` gibi), Python'un standart `itertools` kütüphanesi en hızlı ve etkili çözümü sunar.
 

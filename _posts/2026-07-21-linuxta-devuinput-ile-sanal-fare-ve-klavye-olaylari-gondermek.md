@@ -10,7 +10,11 @@ tags:
   - input-simulation
   - python
   - evdev
+image: /img/linuxta-devuinput-ile-94.png
 ---
+
+![linuxta-devuinput-ile-94](/img/linuxta-devuinput-ile-94.svg)
+
 
 Bazen fiziksel bir fareye ya da klavyeye dokunmadan sisteme giriş olayı göndermek isteriz: test otomasyonu, erişilebilirlik araçları, kiosk sistemleri, oyun botu prototipleri veya uzaktan kontrol yazılımları buna örnektir. Linux tarafında bu işin en temiz yollarından biri `/dev/uinput` aygıtıdır. Kısaca uinput, kullanıcı alanındaki bir programın çekirdeğe “Ben bir input aygıtıyım” demesini ve gerçek donanım gibi olay üretmesini sağlar.
 ``

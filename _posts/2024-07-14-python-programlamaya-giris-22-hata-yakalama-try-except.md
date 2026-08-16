@@ -8,8 +8,6 @@ tags:
   - try
   - except
   - hata yakalama
-redirect_from:
-  - /posts/python-programlamaya-giris-22-hata-yakalama-try-except/
 ---
 
 
@@ -20,7 +18,7 @@ redirect_from:
 **[Hata yakalama](https://program.sonsuz.us/search.html?q=hata%20yakalama)** ([exception handling](https://program.sonsuz.us/search.html?q=exception%20handling)) beklenmedik durumlarda programınızın bir hata mesajı vermesi ve çalışmayı durdurması yerine, hataya kendi istediğimiz şekilde cevap vermesini sağlamanın bir yoludur. Hata yakalama Python programcılığının önemli bir parçasıdır, kaynak kodunu çok karışık hale getirmeden programınızın güvenilir bir şekilde çalışmasını sağlar.
 
 Dizinin bütün yazılarına erişmek için [*Python Programlamaya Giriş*](https://program.sonsuz.us/category/program) kategorimize bakabilirsiniz. 
-
+``
 ## Hatalı girdiyi yakalamak
 
 Bir örnekle başlayalım: Etkileşimli çalışarak kullanıcıdan sayılar alan ve aldığı sayıların karesini ekrana basan bir program yazalım. Boş satır okuduğunda program sonlansın.

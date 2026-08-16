@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f9f0"/>
+    </linearGradient>
+    <linearGradient id="engine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce5fb"/>
+    </linearGradient>
+    <linearGradient id="failBox" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe7e1"/>
+      <stop offset="100%" stop-color="#ffd5d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7890a3" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7890a3" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="45" r="70" fill="#dceffc" opacity="0.45"/>
+  <circle cx="586" cy="278" r="92" fill="#dff2d9" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456078">Prolog: fail ile kapsamlı arama</text>
+
+  <g filter="url(#shadow)">
+    <rect x="29" y="105" width="116" height="88" rx="18" fill="#fffdf8"/>
+    <rect x="29" y="105" width="116" height="88" rx="18" fill="none" stroke="#d8e1e4"/>
+  </g>
+  <circle cx="58" cy="133" r="15" fill="#d8f0e4"/>
+  <path d="M51 133 L56 138 L66 127" fill="none" stroke="#39866a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#334b5b">Sorgu</text>
+  <text x="82" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617582">başarılı(X)</text>
+  <text x="47" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7e88">Hedef aranır</text>
+
+  <path d="M145 149 L176 149" stroke="#7890a3" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="176,149 167,144 167,154" fill="#7890a3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="179" y="72" width="158" height="155" rx="23" fill="url(#engine)"/>
+    <rect x="179" y="72" width="158" height="155" rx="23" fill="none" stroke="#b7d1e6"/>
+  </g>
+  <text x="258" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355b76">Arama Motoru</text>
+  <text x="258" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58778d">Derinlemesine ara</text>
+
+  <circle cx="217" cy="155" r="17" fill="#ffffff" filter="url(#softShadow)"/>
+  <circle cx="258" cy="155" r="17" fill="#ffffff" filter="url(#softShadow)"/>
+  <circle cx="299" cy="155" r="17" fill="#ffffff" filter="url(#softShadow)"/>
+  <text x="217" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48718d">1</text>
+  <text x="258" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48718d">2</text>
+  <text x="299" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48718d">3</text>
+  <path d="M234 155 L240 155 M275 155 L281 155" stroke="#76a1bd" stroke-width="2"/>
+  <text x="258" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58778d">Seçim noktaları</text>
+
+  <path d="M337 149 L368 149" stroke="#7890a3" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="368,149 359,144 359,154" fill="#7890a3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="371" y="105" width="105" height="88" rx="18" fill="#fffef9"/>
+    <rect x="371" y="105" width="105" height="88" rx="18" fill="none" stroke="#d8e1e4"/>
+  </g>
+  <circle cx="397" cy="133" r="14" fill="#fbe2ac"/>
+  <path d="M391 133 L396 138 L405 127" fill="none" stroke="#a27520" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="424" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#465967">Eşleşme</text>
+  <text x="390" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#697a84">Sonuç yazılır</text>
+
+  <path d="M476 149 L505 149" stroke="#7890a3" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="505,149 496,144 496,154" fill="#7890a3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="508" y="105" width="99" height="88" rx="18" fill="url(#failBox)"/>
+    <rect x="508" y="105" width="99" height="88" rx="18" fill="none" stroke="#edbab5"/>
+  </g>
+  <circle cx="535" cy="134" r="15" fill="#fff5f2"/>
+  <path d="M529 128 L541 140 M541 128 L529 140" stroke="#c65c58" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="560" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a4545">fail</text>
+  <text x="524" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a5753">Bilerek reddet</text>
+
+  <path d="M557 105 C557 57 445 53 337 79" stroke="#d37670" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="337,79 346,74 345,84" fill="#d37670"/>
+  <text x="439" y="54" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b25e59">Geri izleme</text>
+
+  <path d="M590 193 C602 220 570 245 523 245 L353 245 C332 245 320 255 320 269" stroke="#65a58c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="320,269 315,260 325,260" fill="#65a58c"/>
+
+  <g filter="url(#shadow)">
+    <rect x="210" y="266" width="218" height="39" rx="16" fill="#dff2e6"/>
+    <rect x="210" y="266" width="218" height="39" rx="16" fill="none" stroke="#b7dfc7"/>
+  </g>
+  <circle cx="235" cy="285" r="10" fill="#fff"/>
+  <path d="M230 285 L234 289 L241 281" fill="none" stroke="#3c8c6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="250" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39735e">Alternatifler biter → Başarı</text>
+</svg>

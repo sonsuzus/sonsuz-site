@@ -10,6 +10,7 @@ tags:
   - xinput
   - linux
   - python
+image: /img/x11de-xinput-ve-34.png
 ---
 
 Fare imlecini ekranda minik bir robot kalem gibi gezdirip, geçtiği yolu canlı olarak çizen bir tuval uygulaması kulağa biraz büyücülük gibi gelebilir. Aslında X11 dünyasında bu işin arkasında çok net bir mantık var: imleç konumunu oku, konumu bir önceki noktayla birleştir, gerekiyorsa imleci programatik olarak bir piksel kaydır ve tekrar et.
@@ -111,3 +112,6 @@ Koordinat dönüşümü önemlidir. Örnekte ekran koordinatlarını doğrudan t
 | `xinput` olay ayrıştırma | Daha gerçek zamanlı | Çıktı parse etmek zahmetli |
 
 Bu proje X11’in ne kadar esnek olduğunu gösteren eğlenceli bir örnektir. Wayland oturumlarında güvenlik nedeniyle bu komutların bazıları çalışmayabilir; bu yüzden denemeyi X11 oturumunda yapmalısınız. Sonuçta birkaç komut satırı aracı, biraz Python ve basit vektör mantığıyla imleci hem hareket ettiren hem de izini çizen canlı bir dijital eskiz defteri elde etmiş olduk.
+
+![x11de-xinput-ve-34](/img/x11de-xinput-ve-34.svg)
+

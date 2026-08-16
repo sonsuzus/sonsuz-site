@@ -12,8 +12,6 @@ tags:
   - matplotlib
   - python
   - programlama
-redirect_from:
-  - /posts/bilimsel-programlamaya-kolay-baslangic-2/
 ---
 
 
@@ -33,7 +31,7 @@ Bilimsel Programlamaya Kolay Başlangıç serisinin ilk yazısında sadece grafi
 Bu yazıda öncelikle eğik atış problemini çözeceğiz ve sayısal yöntemlerin ne kadar başarılı olduğuna bakacağız. Elimiz değmişken sınıf (class) yapılarının nasıl kullanıldığına dair de basit bir örnek yapmış olacağız.
 
 Eğik atış problemi iki eksende çözülüyor, yatay eksen x ve düşey eksen y.
-
+``
 İki eksendeki konum değişimi şu şekilde gösterilebilir:  
 
 $t$ anında yatay eksendeki konum: $ r_x(t) = r_x(0) + v_x(0) t $  

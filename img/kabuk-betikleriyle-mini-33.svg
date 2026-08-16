@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5d6a7"/>
+      <stop offset="100%" stop-color="#66bb6a"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#90caf9"/>
+      <stop offset="100%" stop-color="#42a5f5"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ce93d8"/>
+      <stop offset="100%" stop-color="#ab47bc"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffcc80"/>
+      <stop offset="100%" stop-color="#fb8c00"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="8"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Mini Konteyner Motoru: Namespace ve Cgroup</text>
+
+  <!-- Merkez: Kabuk Betiği -->
+  <rect x="245" y="55" width="150" height="45" rx="10" fill="url(#box1)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Kabuk Betiği</text>
+  <text x="320" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8f5e9">mini-run.sh</text>
+
+  <!-- Unshare kutusu -->
+  <rect x="60" y="140" width="160" height="45" rx="10" fill="url(#box2)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="140" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">unshare</text>
+  <text x="140" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e3f2fd">izolasyon hissi</text>
+
+  <!-- Cgroup kutusu -->
+  <rect x="420" y="140" width="160" height="45" rx="10" fill="url(#box3)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="500" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">cgroup v2</text>
+  <text x="500" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#f3e5f5">kaynak limiti</text>
+
+  <!-- Rootfs kutusu -->
+  <rect x="245" y="230" width="150" height="45" rx="10" fill="url(#box4)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">rootfs</text>
+  <text x="320" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff3e0">ayrı dosya sistemi</text>
+
+  <!-- Oklar: merkezden dışa -->
+  <!-- Sol ok (unshare) -->
+  <path d="M 275 100 L 165 138" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="160,140 172,132 170,146" fill="#546e7a"/>
+
+  <!-- Sağ ok (cgroup) -->
+  <path d="M 365 100 L 475 138" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="480,140 468,132 470,146" fill="#546e7a"/>
+
+  <!-- Alt ok (rootfs) -->
+  <path d="M 320 100 L 320 228" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="320,233 314,221 326,221" fill="#546e7a"/>
+
+  <!-- Alt detay: Konteyner formülü -->
+  <rect x="20" y="290" width="600" height="24" rx="6" fill="#ffffff" opacity="0.6"/>
+  <text x="320" y="307" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#37474f">Konteyner = Namespace + Cgroup + Rootfs</text>
+
+  <!-- Küçük etiketler -->
+  <text x="140" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#455a64" opacity="0.8">--fork --pid --mount --uts --net</text>
+  <text x="500" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#455a64" opacity="0.8">cpu.max · memory.max · pids.max</text>
+
+  <!-- Ağ kavramı -->
+  <rect x="20" y="200" width="105" height="30" rx="6" fill="#b0bec5" filter="url(#shadow)" opacity="0.7"/>
+  <text x="72" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff">boş ağ namespace</text>
+
+  <path d="M 130 215 L 240 215" stroke="#78909c" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="245,215 234,210 234,220" fill="#78909c"/>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="journal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe9bc"/>
+      <stop offset="100%" stop-color="#ffd7a8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5c7188" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#546f87" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="573" cy="42" r="72" fill="#dff3ed" opacity="0.55"/>
+  <circle cx="70" cy="294" r="78" fill="#e5efff" opacity="0.55"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556b">ext4 GÜNLÜKLEME: CANLI İZLEME</text>
+  <text x="32" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Önce kaydet, sonra uygula</text>
+
+  <path d="M151 128 H190" stroke="#8fa4b4" stroke-width="2.5" fill="none"/>
+  <polygon points="190,128 181,122 181,134" fill="#8fa4b4"/>
+  <path d="M315 128 H354" stroke="#8fa4b4" stroke-width="2.5" fill="none"/>
+  <polygon points="354,128 345,122 345,134" fill="#8fa4b4"/>
+  <path d="M479 128 H518" stroke="#8fa4b4" stroke-width="2.5" fill="none"/>
+  <polygon points="518,128 509,122 509,134" fill="#8fa4b4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="82" width="120" height="92" rx="18" fill="#dceafb"/>
+    <rect x="39" y="90" width="104" height="76" rx="13" fill="#edf5ff" opacity="0.9"/>
+  </g>
+  <path d="M73 119 h35 a8 8 0 0 1 8 8 v20 a8 8 0 0 1-8 8 H73 a8 8 0 0 1-8-8 v-20 a8 8 0 0 1 8-8z" fill="#7ea9d8"/>
+  <path d="M65 132 h51" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+  <path d="M80 113 v12 M102 113 v12" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <text x="91" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e5f7d">Dosya yazma</text>
+  <text x="91" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8499">Meta veri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="195" y="72" width="120" height="112" rx="18" fill="url(#journal)"/>
+    <rect x="203" y="80" width="104" height="96" rx="13" fill="#fff5dc" opacity="0.72"/>
+  </g>
+  <path d="M229 109 h52 v41 h-52z" fill="#e79b55" opacity="0.92"/>
+  <path d="M239 120 h32 M239 130 h32 M239 140 h20" stroke="#fff7e8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="276" cy="105" r="12" fill="#78b899"/>
+  <path d="M271 105 l4 4 7-8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="255" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76532d">Journal</text>
+  <text x="255" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#94744e">Commit bloğu</text>
+
+  <g filter="url(#shadow)">
+    <rect x="359" y="82" width="120" height="92" rx="18" fill="#dff3e9"/>
+    <rect x="367" y="90" width="104" height="76" rx="13" fill="#effaf4" opacity="0.88"/>
+  </g>
+  <ellipse cx="419" cy="119" rx="31" ry="10" fill="#72b99a"/>
+  <path d="M388 119 v26 c0 6 14 10 31 10s31-4 31-10v-26" fill="#8ed0b2"/>
+  <path d="M388 132 c0 6 14 10 31 10s31-4 31-10 M388 144 c0 6 14 10 31 10s31-4 31-10" fill="none" stroke="#eafaf2" stroke-width="1.5"/>
+  <text x="419" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416c5a">Asıl bloklar</text>
+  <text x="419" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668d7c">Checkpoint</text>
+
+  <g filter="url(#shadow)">
+    <rect x="523" y="82" width="86" height="92" rx="18" fill="#e9e2f8"/>
+    <rect x="531" y="90" width="70" height="76" rx="13" fill="#f5f0ff" opacity="0.85"/>
+  </g>
+  <path d="M549 119 l8 8 18-20" fill="none" stroke="#927bc1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="566" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#63527f">Tutarlılık</text>
+  <text x="566" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#817295">Kurtarma</text>
+
+  <path d="M255 230 C255 252 228 251 228 262" stroke="#9aaebb" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <polygon points="228,262 223,253 233,253" fill="#9aaebb"/>
+
+  <g filter="url(#soft)">
+    <rect x="110" y="259" width="358" height="45" rx="15" fill="#ffffff"/>
+  </g>
+  <rect x="124" y="270" width="58" height="23" rx="8" fill="#d8eafd"/>
+  <text x="153" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426789">debugfs</text>
+  <path d="M188 281 h24" stroke="#a0b1bf" stroke-width="2"/>
+  <polygon points="212,281 205,276 205,286" fill="#a0b1bf"/>
+  <rect x="218" y="270" width="45" height="23" rx="8" fill="#dff3e9"/>
+  <text x="240" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#477761">dd</text>
+  <path d="M269 281 h24" stroke="#a0b1bf" stroke-width="2"/>
+  <polygon points="293,281 286,276 286,286" fill="#a0b1bf"/>
+  <rect x="299" y="270" width="77" height="23" rx="8" fill="#ffe8c6"/>
+  <text x="337" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#815d32">hexdump</text>
+  <path d="M382 281 h22" stroke="#a0b1bf" stroke-width="2"/>
+  <polygon points="404,281 397,276 397,286" fill="#a0b1bf"/>
+  <text x="425" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#536c80">Canlı izleme</text>
+</svg>

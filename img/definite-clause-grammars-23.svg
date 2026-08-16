@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7ddfb"/>
+      <stop offset="100%" stop-color="#d9ecff"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cfeafb"/>
+      <stop offset="100%" stop-color="#d8f2dc"/>
+    </linearGradient>
+    <linearGradient id="tree" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#ffe4cf"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#70869b" flood-opacity="0.19"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#70869b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="43" r="48" fill="#dceeff" opacity="0.46"/>
+  <circle cx="584" cy="272" r="74" fill="#ddefd9" opacity="0.45"/>
+  <path d="M30 271 C128 234 189 286 277 258 S456 218 612 247" fill="none" stroke="#d6e8e2" stroke-width="2" opacity="0.7"/>
+
+  <text x="30" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52677b" font-weight="600" letter-spacing="1.2">DCG · MANTIKSAL AYRIŞTIRMA</text>
+
+  <!-- Input -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="105" width="142" height="112" rx="19" fill="#ffffff"/>
+    <rect x="30" y="105" width="142" height="30" rx="19" fill="#dceefa"/>
+    <rect x="30" y="120" width="142" height="15" fill="#dceefa"/>
+  </g>
+  <text x="101" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31536b" font-weight="700">Kelime Listesi</text>
+  <g filter="url(#smallShadow)">
+    <rect x="47" y="148" width="32" height="30" rx="8" fill="#e9f5ff"/>
+    <rect x="84" y="148" width="35" height="30" rx="8" fill="#e9f5ff"/>
+    <rect x="124" y="148" width="32" height="30" rx="8" fill="#e9f5ff"/>
+  </g>
+  <text x="63" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d647d">the</text>
+  <text x="101" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d647d">cat</text>
+  <text x="140" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d647d">runs</text>
+  <text x="101" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718396">Girdi dizisi</text>
+
+  <!-- arrows -->
+  <path d="M180 160 H213" fill="none" stroke="#7999ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="220,160 210,154 210,166" fill="#7999ad"/>
+
+  <!-- grammar -->
+  <g filter="url(#shadow)">
+    <rect x="223" y="72" width="190" height="176" rx="22" fill="url(#rule)"/>
+    <rect x="235" y="85" width="166" height="34" rx="11" fill="#ffffff" opacity="0.77"/>
+  </g>
+  <text x="318" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a4c77" font-weight="700">DCG Kuralları</text>
+  <path d="M249 139 H273" stroke="#907caf" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="244" cy="139" r="4" fill="#a990c4"/>
+  <text x="281" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#514c68">Cümle → İsim + Fiil</text>
+  <path d="M249 169 H273" stroke="#907caf" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="244" cy="169" r="4" fill="#a990c4"/>
+  <text x="281" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#514c68">İsim → Belirteç + Ad</text>
+  <path d="M249 199 H273" stroke="#907caf" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="244" cy="199" r="4" fill="#a990c4"/>
+  <text x="281" y="203" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#514c68">Fiil → [runs]</text>
+  <path d="M299 224 H338" stroke="#a18ab9" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
+  <text x="318" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d6481">Bildirimsel yapı</text>
+
+  <!-- parser -->
+  <path d="M421 160 H446" fill="none" stroke="#7999ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="453,160 443,154 443,166" fill="#7999ad"/>
+  <g filter="url(#shadow)">
+    <rect x="456" y="105" width="150" height="112" rx="19" fill="url(#core)"/>
+    <circle cx="490" cy="150" r="20" fill="#ffffff" opacity="0.82"/>
+    <path d="M480 149 L487 156 L501 141" fill="none" stroke="#5a9980" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="548" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356452" font-weight="700">Prolog Araması</text>
+  <text x="548" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527465">Eşleme</text>
+  <text x="548" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527465">Geri izleme</text>
+
+  <!-- logical feedback -->
+  <path d="M531 225 C530 274 411 285 387 255" fill="none" stroke="#8da6a2" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="382,248 393,252 386,260" fill="#8da6a2"/>
+  <text x="478" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f8581">Mantıksal deneme</text>
+
+  <!-- Tree badge -->
+  <g filter="url(#smallShadow)">
+    <rect x="463" y="47" width="132" height="42" rx="14" fill="url(#tree)"/>
+  </g>
+  <path d="M492 70 V61 M492 61 H478 M492 61 H510 M478 61 V68 M510 61 V68" fill="none" stroke="#a87752" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="547" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805c45" font-weight="600">Ayrıştırma Ağacı</text>
+
+  <!-- connection to tree -->
+  <path d="M531 100 V94" fill="none" stroke="#c49a73" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="531,89 526,97 536,97" fill="#c49a73"/>
+</svg>

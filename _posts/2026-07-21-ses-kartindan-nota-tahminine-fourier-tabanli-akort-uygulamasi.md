@@ -10,9 +10,13 @@ tags:
   - python
   - akort
   - dsp
+image: /img/ses-kartindan-nota-79.png
 ---
 
 Bir akort uygulaması kulağa basit gelir: teli çal, ekranda notayı gör. Ama perdenin arkasında ses kartından gelen ham örnekler, gürültü, pencereleme, Fourier dönüşümü ve biraz müzik teorisi birlikte dans eder. Bu yazıda, mikrofon ya da ses kartı girişinden alınan ham sinyali frekans analizine sokup enstrümanın notasını tahmin eden orta seviye bir uygulamanın mantığını kuracağız.
+
+![ses-kartindan-nota-79](/img/ses-kartindan-nota-79.svg)
+
 ``
 Ses kartı aslında sürekli bir analog hava titreşimini sayılara çevirir. Bu işleme örnekleme denir. Saniyede alınan örnek sayısı $f_s$ ile gösterilir; örneğin 44100 Hz, saniyede 44100 ölçüm demektir. Bir buffer içinde $N$ adet örnek toplarsak, analiz edebileceğimiz frekans çözünürlüğü yaklaşık olarak şudur:
 

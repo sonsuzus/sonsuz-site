@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="stackGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dce9ff"/>
+      <stop offset="100%" stop-color="#bed7f5"/>
+    </linearGradient>
+    <linearGradient id="cmdGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ece3ff"/>
+      <stop offset="100%" stop-color="#d9c9fa"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddf6e7"/>
+      <stop offset="100%" stop-color="#c3ebd4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8497" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#597086" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="47" r="55" fill="#dceefa" opacity="0.55"/>
+  <circle cx="587" cy="278" r="75" fill="#dff1d6" opacity="0.55"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37526b">GDB Python ile Yığın String Tarama</text>
+  <text x="30" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718498">Yığın belleğinden yazdırılabilir dizileri ayıkla</text>
+
+  <!-- Stack source -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="76" width="139" height="206" rx="18" fill="#fafdff"/>
+    <rect x="42" y="91" width="115" height="32" rx="10" fill="url(#stackGrad)"/>
+    <text x="99.5" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345579">Yığın Belleği</text>
+
+    <rect x="43" y="137" width="113" height="22" rx="6" fill="#e9f3ff"/>
+    <text x="55" y="152" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526f89">0x7fff...f0</text>
+    <rect x="43" y="163" width="113" height="22" rx="6" fill="#d7eaff"/>
+    <text x="55" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d86">"token_42"</text>
+    <rect x="43" y="189" width="113" height="22" rx="6" fill="#e9f3ff"/>
+    <text x="55" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8293">00 8F 31 C2</text>
+    <rect x="43" y="215" width="113" height="22" rx="6" fill="#d7eaff"/>
+    <text x="55" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d86">"/tmp/log"</text>
+    <path d="M99 256 L99 243" stroke="#7899b6" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="99,240 94,247 104,247" fill="#7899b6"/>
+    <text x="99" y="273" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718498">Aşağı büyür</text>
+  </g>
+
+  <!-- Connector 1 -->
+  <path d="M177 178 L210 178" stroke="#8aa6bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="216,178 207,173 207,183" fill="#8aa6bb"/>
+
+  <!-- GDB command center -->
+  <g filter="url(#shadow)">
+    <rect x="222" y="69" width="203" height="220" rx="20" fill="#fcfaff"/>
+    <rect x="238" y="85" width="171" height="43" rx="13" fill="url(#cmdGrad)"/>
+    <circle cx="260" cy="106" r="11" fill="#7356b5"/>
+    <path d="M256 102 L263 106 L256 110" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="278" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#503c86">stackstrings</text>
+    <text x="278" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#705c9c">GDB Python Komutu</text>
+
+    <rect x="239" y="142" width="170" height="31" rx="9" fill="#f2edfc"/>
+    <circle cx="255" cy="157.5" r="6" fill="#987bd1"/>
+    <text x="268" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#574575">Yığın sınırını bul</text>
+
+    <path d="M324 176 L324 182" stroke="#a18ebf" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="324,186 320,180 328,180" fill="#a18ebf"/>
+
+    <rect x="239" y="189" width="170" height="31" rx="9" fill="#f2edfc"/>
+    <circle cx="255" cy="204.5" r="6" fill="#5c87c3"/>
+    <text x="268" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#574575">read_memory ile oku</text>
+
+    <path d="M324 223 L324 229" stroke="#a18ebf" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="324,233 320,227 328,227" fill="#a18ebf"/>
+
+    <rect x="239" y="236" width="170" height="37" rx="9" fill="#f2edfc"/>
+    <circle cx="255" cy="254.5" r="6" fill="#65ad83"/>
+    <text x="268" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#574575">Yazdırılabilir koşu</text>
+    <text x="268" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81729a">min. uzunluk filtresi</text>
+  </g>
+
+  <!-- Connector 2 -->
+  <path d="M433 178 L465 178" stroke="#8aa6bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="471,178 462,173 462,183" fill="#8aa6bb"/>
+
+  <!-- Output -->
+  <g filter="url(#shadow)">
+    <rect x="477" y="94" width="133" height="166" rx="18" fill="#fbfffc"/>
+    <rect x="490" y="109" width="107" height="31" rx="10" fill="url(#outGrad)"/>
+    <text x="543.5" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#336b4d">Renkli Çıktı</text>
+
+    <rect x="490" y="151" width="107" height="28" rx="7" fill="#eef8f1"/>
+    <text x="498" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2679bb">0x7fff...a0</text>
+
+    <rect x="490" y="184" width="107" height="28" rx="7" fill="#eef8f1"/>
+    <text x="498" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#249259">token_42</text>
+
+    <rect x="490" y="217" width="107" height="28" rx="7" fill="#fff9df"/>
+    <text x="543.5" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7820">3 string bulundu</text>
+  </g>
+
+  <!-- Supporting pills -->
+  <g filter="url(#smallShadow)">
+    <rect x="174" y="300" width="120" height="20" rx="10" fill="#e4effa"/>
+    <text x="234" y="314" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7190">/proc/pid/maps</text>
+    <rect x="306" y="300" width="102" height="20" rx="10" fill="#eee8fb"/>
+    <text x="357" y="314" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665287">O(N) tarama</text>
+    <rect x="420" y="300" width="116" height="20" rx="10" fill="#e3f4e8"/>
+    <text x="478" y="314" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42785a">Python API</text>
+  </g>
+</svg>

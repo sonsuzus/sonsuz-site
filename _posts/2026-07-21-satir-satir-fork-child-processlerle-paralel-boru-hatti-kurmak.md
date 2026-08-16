@@ -10,9 +10,13 @@ tags:
   - process
   - pipe
   - fork
+image: /img/satir-satir-fork-69.png
 ---
 
 Bir metin dosyasındaki her satırı ayrı bir iş birimi gibi düşünelim: Her satır küçük bir paket, her child process de bu paketi işleyen minik bir işçi. Sistem çağrısı seviyesinde paralel boru hattı kurmanın amacı, bu işçileri `fork()`, `pipe()`, `dup2()`, `exec()` ve `wait()` gibi yapı taşlarıyla yönetip çıktıları tek bir satırda birleştirmektir. Bu yaklaşım, shell komutlarını taklit etmekten öte, işletim sisteminin süreç ve dosya tanımlayıcı mantığını gerçekten kavratır.
+
+![satir-satir-fork-69](/img/satir-satir-fork-69.svg)
+
 ``
 
 ## Temel fikir: satır = görev, process = işçi

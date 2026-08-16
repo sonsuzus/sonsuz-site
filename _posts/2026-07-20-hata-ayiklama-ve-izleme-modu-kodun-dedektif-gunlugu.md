@@ -8,7 +8,11 @@ tags:
   - debugging
   - trace
   - programlama
+image: /img/hata-ayiklama-ve-55.png
 ---
+
+![hata-ayiklama-ve-55](/img/hata-ayiklama-ve-55.svg)
+
 
 Kod yazmak bazen yemek tarifi uygulamak gibidir: Malzemeler doğru, fırın çalışıyor, ama kek yine de çöker. İşte hata ayıklama ve özellikle izleme yani trace modu, bu çöküşün hangi adımda başladığını görmemizi sağlar. Programın satır satır nasıl ilerlediğini, değişkenlerin hangi değerleri aldığını ve mantığın nerede ters köşe yaptığını takip ederek “bence çalışmalıydı” cümlesini “şurada yanlış düşünmüşüm” seviyesine taşırız.
 ``

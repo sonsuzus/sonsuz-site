@@ -8,7 +8,11 @@ tags:
   - LUKS
   - Linux Güvenliği
   - Honeypot
+image: /img/luks-icin-sahte-54.png
 ---
+
+![luks-icin-sahte-54](/img/luks-icin-sahte-54.svg)
+
 
 Bir saldırganın cihazınızı ele geçirdiğini ve LUKS parolasını denediğini düşünün. Normalde yanlış parola yalnızca “erişim yok” demektir; fakat savunmacı aldatma yaklaşımında sistem, belirli sayıda hatadan sonra sanki parola kabul edilmiş gibi davranıp izole bir sahte masaüstü başlatabilir. Bu yazıda bunu kötüye kullanım değil, yalnızca kendi cihazınızda ve laboratuvar ortamında uygulanacak bir güvenlik tasarımı olarak ele alacağız.
 ``

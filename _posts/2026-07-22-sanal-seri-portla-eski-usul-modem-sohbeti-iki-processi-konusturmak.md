@@ -10,6 +10,7 @@ tags:
   - python
   - modem
   - process-communication
+image: /img/sanal-seri-portla-22.png
 ---
 
 Bir zamanlar internete bağlanmak, kulak tırmalayan bir modem serenadı eşliğinde gerçekleşirdi. Bugün TCP soketleri, REST API’leri ve mesaj kuyruklarıyla yaşıyoruz; ama iki process arasında sanal seri port çifti kurup bir taraftan AT komutları gönderirken diğer taraftan cevap okumak, haberleşmenin temel mantığını anlamak için hâlâ şahane bir laboratuvar deneyidir.
@@ -27,6 +28,9 @@ Seri haberleşmede sık duyulan `9600 8N1` ifadesi şunu anlatır: saniyede 9600
 | Komut dili | AT komutları | Bizim taklit ettiğimiz metin protokolü |
 | Gecikme | Hat kalitesi ve modem | Process zamanlaması |
 | Hata kaynağı | Gürültü, kopma | Buffer, timeout, yanlış ayar |
+
+![sanal-seri-portla-22](/img/sanal-seri-portla-22.svg)
+
 
 ## Sanal Port Çiftini Kurmak
 

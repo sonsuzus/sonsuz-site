@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2faef"/>
+    </linearGradient>
+    <linearGradient id="hostGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#c8ddf6"/>
+    </linearGradient>
+    <linearGradient id="netemGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe4e6"/>
+      <stop offset="100%" stop-color="#fecdd3"/>
+    </linearGradient>
+    <linearGradient id="nsGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcfce7"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3e8ff"/>
+      <stop offset="100%" stop-color="#e9d5ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#64748b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="42" r="68" fill="#dff2fb" opacity="0.55"/>
+  <circle cx="573" cy="280" r="92" fill="#dff4dc" opacity="0.55"/>
+
+  <text x="28" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516c">Kötü Ağ Simülasyonu</text>
+  <text x="28" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7f91">Linux · sanal arayüz · kontrollü test alanı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="26" y="91" width="136" height="157" rx="20" fill="url(#hostGrad)" stroke="#9bbfe2"/>
+  </g>
+  <rect x="43" y="109" width="102" height="29" rx="10" fill="#ffffff" opacity="0.72"/>
+  <text x="94" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315878">Host</text>
+  <rect x="43" y="155" width="102" height="68" rx="13" fill="#edf7ff" stroke="#afd0ec"/>
+  <path d="M65 183 h18 M65 191 h37 M65 199 h27" stroke="#5d91b7" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="119" cy="184" r="11" fill="#bfdcf1"/>
+  <path d="M115 184 h8 M119 180 v8" stroke="#4d86ac" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="94" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416681">bad0</text>
+
+  <path d="M163 185 C180 185 183 185 199 185" fill="none" stroke="#618ca8" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="198,179 211,185 198,191" fill="#618ca8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="212" y="73" width="202" height="195" rx="25" fill="url(#netemGrad)" stroke="#f0a4b4"/>
+  </g>
+  <rect x="235" y="92" width="156" height="34" rx="12" fill="#fff8f8" opacity="0.82"/>
+  <text x="313" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9b4258">tc · netem</text>
+
+  <g filter="url(#soft)">
+    <rect x="235" y="143" width="70" height="82" rx="15" fill="#fff3df" stroke="#f3c886"/>
+    <circle cx="270" cy="166" r="16" fill="#ffd7a0"/>
+    <path d="M264 159 l12 14 M276 159 l-12 14" stroke="#bd6c38" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="270" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9b5630">Kayıp</text>
+    <text x="270" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b5630">%5</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="320" y="143" width="71" height="82" rx="15" fill="#f0eaff" stroke="#cfb6ef"/>
+    <circle cx="355" cy="166" r="16" fill="#d9c5fb"/>
+    <path d="M355 156 v11 l8 5" fill="none" stroke="#7950a8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="355" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#714b9a">Gecikme</text>
+    <text x="355" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#714b9a">120 ms</text>
+  </g>
+  <text x="313" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#995064">Rastgele sapma: 60 ms</text>
+
+  <path d="M415 185 C429 185 435 185 450 185" fill="none" stroke="#618ca8" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="449,179 462,185 449,191" fill="#618ca8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="463" y="91" width="151" height="157" rx="20" fill="url(#nsGrad)" stroke="#9ed6ac"/>
+  </g>
+  <rect x="480" y="109" width="117" height="29" rx="10" fill="#ffffff" opacity="0.74"/>
+  <text x="538" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33724d">Ağ alanı</text>
+  <rect x="480" y="155" width="117" height="68" rx="13" fill="#effdf4" stroke="#afe3bd"/>
+  <rect x="493" y="169" width="31" height="25" rx="6" fill="#b6ecc5"/>
+  <path d="M499 177 h19 M499 184 h13" stroke="#4e9a67" stroke-width="2" stroke-linecap="round"/>
+  <path d="M539 181 h40" stroke="#62a878" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="580" cy="181" r="5" fill="#62a878"/>
+  <text x="538" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#407957">badnet · eth0</text>
+
+  <path d="M538 249 C538 269 538 278 538 286" fill="none" stroke="#71a582" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="532,285 538,296 544,285" fill="#71a582"/>
+  <g filter="url(#soft)">
+    <path d="M509 293 C510 284 518 282 523 285 C526 276 540 276 543 285 C551 281 560 286 560 293 C560 299 554 302 548 302 H520 C513 302 509 299 509 293Z" fill="url(#cloudGrad)" stroke="#bda1dc"/>
+  </g>
+  <text x="571" y="300" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75539c">Dış ağ</text>
+
+  <path d="M74 275 C126 289 179 289 229 281" fill="none" stroke="#8aa1b3" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <text x="151" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657c8e">İzole test trafiği</text>
+</svg>

@@ -10,7 +10,11 @@ tags:
   - proxy
   - http
   - kernel
+image: /img/netfilter-ile-kedi-95.png
 ---
+
+![netfilter-ile-kedi-95](/img/netfilter-ile-kedi-95.svg)
+
 
 Bazen yazılım projeleri ciddi bir problemi çözer; bazen de ağdan geçen kedi fotoğraflarını baş aşağı çevirerek ekip arkadaşlarını hafifçe şaşırtır. Bu yazıda Linux ağ alt sistemindeki netfilter kancalarına takılan, giden HTTP trafiğini yakalayan ve kedi görseli dönen yanıtları kullanıcı alanındaki küçük bir proxy ile ters çeviren deneysel bir modül tasarlıyoruz. Not: HTTPS şifreli olduğu için bu oyun yalnızca düz HTTP ve laboratuvar ortamı içindir.
 ``

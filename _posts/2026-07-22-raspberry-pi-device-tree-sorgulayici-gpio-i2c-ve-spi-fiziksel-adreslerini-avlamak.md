@@ -10,7 +10,11 @@ tags:
   - linux
   - gpio
   - python
+image: /img/raspberry-pi-device-67.png
 ---
+
+![raspberry-pi-device-67](/img/raspberry-pi-device-67.svg)
+
 
 Raspberry Pi üzerinde GPIO, I2C, SPI ya da UART gibi çevre birimlerinin fiziksel adreslerini öğrenmek istiyorsan genelde datasheet, forum ve kernel kaynak kodu üçgeninde kaybolursun. Oysa Linux zaten bu bilgilerin büyük kısmını Device Tree üzerinden çekirdeğe sunar. Bu yazıda /proc/device-tree dosyalarını okuyarak çevre birimlerini ve adres aralıklarını listeleyen küçük ama güçlü bir sorgu aracı tasarlayacağız.
 ``

@@ -8,7 +8,11 @@ tags:
   - dosya işlemleri
   - python
   - veri işleme
+image: /img/dosya-okuma-ve-48.png
 ---
+
+![dosya-okuma-ve-48](/img/dosya-okuma-ve-48.svg)
+
 
 Bir programın dış dünyayla tokalaşmasının en klasik yolu dosyalardır. Kullanıcıdan gelen ham metinler, log kayıtları, CSV benzeri raporlar veya analizden sonra üretilen sonuç belgeleri; hepsi dosya okuma ve yazma işlemleriyle sisteme girer ya da sistemden çıkar. Kısacası dosya işlemleri, bellekte uçuşan veriyi kalıcı ve paylaşılabilir bilgiye dönüştüren köprüdür.
 ``

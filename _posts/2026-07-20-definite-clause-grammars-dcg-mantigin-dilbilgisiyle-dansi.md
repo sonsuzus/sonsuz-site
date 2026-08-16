@@ -9,9 +9,13 @@ tags:
   - dcg
   - doğal dil işleme
   - mantıksal programlama
+image: /img/definite-clause-grammars-23.png
 ---
 
 Bir cümleyi okurken beynimiz kelimeleri tek tek saymaz; özne nerede, yüklem ne söylüyor, hangi sözcük hangi görevi üstlenmiş gibi yapısal ilişkileri hızla kurar. Definite Clause Grammars, yani DCG, tam da bu sezgisel süreci mantıksal kurallara dökmenin zarif bir yoludur. Özellikle Prolog dünyasında DCG, insan dilini parçalamak, cümleleri çözümlemek ve sembolik doğal dil işleme sistemleri kurmak için küçük ama güçlü bir laboratuvar gibidir.
+
+![definite-clause-grammars-23](/img/definite-clause-grammars-23.svg)
+
 ``
 DCG fikrinin temeli şudur: Bir dil, rastgele kelime dizilerinden değil, kurallı yapılardan oluşur. Örneğin Türkçede basit bir cümle için kabaca $Cümle \rightarrow Özne\ Yüklem$ diyebiliriz. İngilizce örnekte ise klasik gösterim $S \rightarrow NP\ VP$ şeklindedir. Burada S cümleyi, NP isim öbeğini, VP fiil öbeğini temsil eder. DCG bu üretim kurallarını Prolog cümleciklerine çevirir ve böylece dilbilgisi, sorgulanabilir bir mantık programına dönüşür.
 

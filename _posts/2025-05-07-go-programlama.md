@@ -8,11 +8,12 @@ tags:
   - golang
   - programlama dili
   - backend
-redirect_from:
-  - /posts/go-programlama/
+image: /img/go-ile-gercek-20.png
 ---
 
 Go, Google tarafından geliştirilen, açık kaynaklı bir programlama dilidir. Hız, basitlik ve güvenilirlik üzerine odaklanmıştır. Özellikle sistem programlama, ağ programlama ve büyük ölçekli yazılım projeleri için uygundur.
+
+![go programlama](/img/go-ile-gercek-20.svg)
 
 ### Go'nun Özellikleri
 
@@ -24,6 +25,8 @@ Go'nun bazı temel özellikleri şunlardır:
 * **Güvenlik:** Go, bellek güvenliği konusunda titizdir ve çöp toplama özelliği sayesinde bellek sızıntılarını önler.
 * **Statik Tiplendirme:** Go, statik tiplendirme ile derleme zamanında hataları yakalar.
 * **Platform Bağımsızlığı:** Go, farklı işletim sistemlerinde (Windows, macOS, Linux) çalışabilir.
+
+``
 
 ### Go'nun Kullanım Alanları
 

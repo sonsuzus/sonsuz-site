@@ -18,11 +18,9 @@ tags:
   - kodlama
   - matematik
   - kitap
-redirect_from:
-  - /posts/rekabetci-programci-siralama/
 ---
 
-Sıralama, temel algoritma sorularından biridir. Çoğu algoritmanın içeriğinde, veriyi sıralı halde işlemek daha kolay olduğu için sıralama bulunur. Örneğin "Bu dizide birbiriyle aynı iki eleman var mı?" sorusu sıralamayla çok kolay bir şekilde çözülebilir. Eğer dizi birbiriyle aynı iki eleman içeriyorsa, dizi sıralandıktan sonra bu elemanlar ardışık olacaktır.
+[Sıralama](https://program.sonsuz.us/search.html?q=sıralama), temel algoritma sorularından biridir. Çoğu algoritmanın içeriğinde, veriyi sıralı halde işlemek daha kolay olduğu için sıralama bulunur. Örneğin "Bu dizide birbiriyle aynı iki eleman var mı?" sorusu sıralamayla çok kolay bir şekilde çözülebilir. Eğer dizi birbiriyle aynı iki eleman içeriyorsa, dizi sıralandıktan sonra bu elemanlar ardışık olacaktır.
 
 Verimli çalışan sıralama algoritmaları $O(n \log n)$ zamanda çalışır ve genelde içeriğinde sıralama bulunan algoritmalar da bu zaman karmaşıklığına sahiptir.
 
@@ -33,7 +31,7 @@ Temel sıralama problemi şöyledir: n elemana sahip bir diziyi artan sırada s�
 
 ### $O(n^2)$ Algoritmalar
 
-Basit dizi sıralama algoritmaları $O(n^2)$ zamanda çalışır. Bu algoritmalar kısa olup genelde iki `for` döngüsüyle çalışır. Çok bilinen $O(n^2)$ algoritmalarından biri olan **kabarcık sıralaması (bubble sort)**, dizideki elemanların değerlerine göre "kabarcık" gibi yer değiştirmesiyle çalışır.
+Basit dizi sıralama algoritmaları $O(n^2)$ zamanda çalışır. Bu algoritmalar kısa olup genelde iki `for` döngüsüyle çalışır. Çok bilinen $O(n^2)$ algoritmalarından biri olan **[kabarcık sıralaması](https://program.sonsuz.us/search.html?q=kabarcık%20sıralaması) (bubble sort)**, dizideki elemanların değerlerine göre "kabarcık" gibi yer değiştirmesiyle çalışır.
 
 ![](/img/kabarcik-siralama.jpg)
 
@@ -55,7 +53,7 @@ Bir dizide `a < b` iken `array[a] > array[b]` olması durumuna **ters eleman (in
 
 ### $O(n \log n)$ Algoritmalar
 
-Bir diziyi, sadece ardışık eleman değiştirmeye bağlı kalmayarak $O(n \log n)$'lık algoritmalarla sıralayabiliriz. Bu tip algoritmalardan biri özyinelemeye (recursion) dayalı **birleştirme sıralamasıdır (merge sort)**[^1].
+Bir diziyi, sadece ardışık eleman değiştirmeye bağlı kalmayarak $O(n \log n)$'lık algoritmalarla sıralayabiliriz. Bu tip algoritmalardan biri özyinelemeye (recursion) dayalı **[birleştirme sıralamasıdır](https://program.sonsuz.us/search.html?q=birleştirme%20sıralaması) (merge sort)**[^1].
 
 Birleştirme sıralaması `array[a...b]` alt dizisini aşağıdaki gibi sıralar:
 

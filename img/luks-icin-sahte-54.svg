@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f8f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="realGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="decoyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="decisionGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="auditGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arkaplan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="8"/>
+
+  <!-- Başlık etiketi -->
+  <text x="320" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937" opacity="0.9">LUKS Savunmacı Aldatma Mimarisi</text>
+
+  <!-- 1. Blok: Giriş / Parola Denemesi -->
+  <rect x="30" y="80" width="120" height="52" rx="10" fill="#ffffff" filter="url(#shadow)" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="90" y="100" text-anchor="middle" font-weight="bold" fill="#1f2937">Initramfs</text>
+  <text x="90" y="114" text-anchor="middle" fill="#4b5563">Parola Deneme</text>
+  <text x="90" y="126" text-anchor="middle" fill="#4b5563">Döngüsü</text>
+
+  <!-- 2. Karar Blok -->
+  <rect x="200" y="80" width="120" height="52" rx="10" fill="url(#decisionGrad)" filter="url(#shadow)" stroke="#6ee7b7" stroke-width="1.2"/>
+  <text x="260" y="100" text-anchor="middle" font-weight="bold" fill="#1f2937">Karar Katmanı</text>
+  <text x="260" y="113" text-anchor="middle" fill="#374151">Doğru mu?</text>
+  <text x="260" y="126" text-anchor="middle" fill="#374151">Hata Sayacı</text>
+
+  <!-- 3a. Gerçek Sistem Bloğu (üst) -->
+  <rect x="380" y="40" width="150" height="70" rx="10" fill="url(#realGrad)" filter="url(#shadow)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="455" y="60" text-anchor="middle" font-weight="bold" fill="#1e3a8a">Gerçek LUKS Bölümü</text>
+  <text x="455" y="74" text-anchor="middle" fill="#1e40af">Asıl Veri + OS</text>
+  <text x="455" y="88" text-anchor="middle" fill="#1e40af" opacity="0.8">K=KDF(parola + salt)</text>
+  <text x="455" y="101" text-anchor="middle" fill="#1e40af" opacity="0.8">Kilidi Açar</text>
+
+  <!-- 3b. Decoy Sistem Bloğu (alt) -->
+  <rect x="380" y="170" width="150" height="70" rx="10" fill="url(#decoyGrad)" filter="url(#shadow)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="455" y="190" text-anchor="middle" font-weight="bold" fill="#78350f">Decoy Masaüstü</text>
+  <text x="455" y="204" text-anchor="middle" fill="#92400e">İzole Sahte Sistem</text>
+  <text x="455" y="218" text-anchor="middle" fill="#92400e" opacity="0.8">Salt-okunur İmaj</text>
+  <text x="455" y="231" text-anchor="middle" fill="#92400e" opacity="0.8">Gerçek Veri Yok</text>
+
+  <!-- 4. Audit Bloch (sağ alt) -->
+  <rect x="570" y="190" width="55" height="45" rx="8" fill="url(#auditGrad)" filter="url(#shadow)" stroke="#a5b4fc" stroke-width="1.2"/>
+  <text x="597" y="207" text-anchor="middle" font-weight="bold" fill="#3730a3" font-size="10">Audit</text>
+  <text x="597" y="220" text-anchor="middle" fill="#4338ca" font-size="10">Kaydı</text>
+  <text x="597" y="231" text-anchor="middle" fill="#4338ca" font-size="8">Olay</text>
+
+  <!-- Oklar ve bağlantılar -->
+  <!-- Initramfs -> Karar -->
+  <path d="M150 106 L200 106" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <polygon points="197,101 207,106 197,111" fill="#6b7280"/>
+
+  <!-- Karar -> Gerçek (başarı) -->
+  <path d="M320 95 L380 75" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  <polygon points="377,70 388,72 378,80" fill="#3b82f6"/>
+  <text x="348" y="78" text-anchor="middle" fill="#2563eb" font-size="10">Evet</text>
+
+  <!-- Karar -> Decoy (eşik aşımı) -->
+  <path d="M320 115 L380 205" stroke="#f59e0b" stroke-width="2" fill="none"/>
+  <polygon points="376,201 386,207 375,211" fill="#f59e0b"/>
+  <text x="342" y="170" text-anchor="middle" fill="#d97706" font-size="10">3 hata</text>
+
+  <!-- Decoy -> Audit -->
+  <path d="M530 215 L570 212" stroke="#818cf8" stroke-width="1.5" fill="none"/>
+  <polygon points="567,207 577,212 567,217" fill="#818cf8"/>
+
+  <!-- Gerçek sistemden dışa ok (montaj) -->
+  <path d="M530 60 L570 60" stroke="#3b82f6" stroke-width="1.5" fill="none"/>
+
+  <!-- Aksesuar çizgiler -->
+  <rect x="570" y="48" width="55" height="24" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1" opacity="0.8"/>
+  <text x="597" y="60" text-anchor="middle" fill="#1e40af" font-size="9">Normal Boot</text>
+  <text x="597" y="70" text-anchor="middle" fill="#1e40af" font-size="8">Kabul</text>
+
+  <!-- Notlar -->
+  <line x1="200" y1="140" x2="200" y2="155" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="260" y="158" text-anchor="middle" fill="#6b7280" font-size="9">Eşik denetimi: yanlış parola sayımı</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="305" text-anchor="middle" fill="#6b7280" font-size="10">Savunmacı Aldatma Tasarımı – Yalnızca Laboratuvar Kullanımı</text>
+</svg>

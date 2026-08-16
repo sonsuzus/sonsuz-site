@@ -9,9 +9,13 @@ tags:
   - mantıksal programlama
   - fail operatörü
   - backtracking
+image: /img/prologda-fail-operatoru-46.png
 ---
 
 Prolog’da bazen cevabı bulmak yetmez; tüm cevapları, tüm kombinasyonları, hatta köşede saklanan o utangaç olasılığı da görmek isteriz. İşte `fail` operatörü burada sahneye çıkar: Sisteme bilinçli olarak başarısızlık dayatır ve Prolog motorunu geri izleme, yani backtracking yapmaya zorlar.
+
+![prologda-fail-operatoru-46](/img/prologda-fail-operatoru-46.svg)
+
 ``
 
 İlk bakışta kulağa tuhaf gelir: Neden çalışan bir kuralı bilerek başarısız yapalım? Çünkü Prolog’un arama mantığı, başarısızlık anında alternatif yolları denemeye dayanır. Prolog, bir hedefi kanıtlamaya çalışırken bilgi tabanındaki olası eşleşmeleri sırayla inceler. Bir eşleşme bulunduğunda durabilir; fakat `fail` kullanırsak motor şöyle der: “Tamam, bu sonuç güzel ama başarılı sayılmadık, başka ihtimal var mı?”

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="diskGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8eaff"/>
+      <stop offset="100%" stop-color="#bcd8f4"/>
+    </linearGradient>
+    <linearGradient id="inodeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0cb"/>
+      <stop offset="100%" stop-color="#f8dca5"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#54708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="51" cy="36" r="72" fill="#dff2eb" opacity="0.48"/>
+  <circle cx="606" cy="278" r="94" fill="#dcecff" opacity="0.58"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54718b" font-weight="600">SİLİNMİŞ DOSYA KURTARMA AKIŞI</text>
+
+  <!-- Disk image -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="75" width="124" height="165" rx="20" fill="#edf6ff"/>
+    <ellipse cx="89" cy="100" rx="43" ry="13" fill="#b4d3ef"/>
+    <path d="M46 100v92c0 8 19 14 43 14s43-6 43-14v-92" fill="url(#diskGrad)"/>
+    <ellipse cx="89" cy="192" rx="43" ry="14" fill="#9fc5e4"/>
+    <ellipse cx="89" cy="188" rx="32" ry="8" fill="#d9edfb" opacity="0.8"/>
+    <rect x="60" y="129" width="58" height="23" rx="7" fill="#f8fcff" opacity="0.88"/>
+    <text x="89" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42667e" font-weight="600">disk.img</text>
+  </g>
+  <text x="89" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567086">İmaj kopyası</text>
+
+  <!-- arrow to hex -->
+  <path d="M157 152 H189" fill="none" stroke="#7494ac" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="189,152 181,147 181,157" fill="#7494ac"/>
+
+  <!-- Hex reader -->
+  <g filter="url(#softShadow)">
+    <rect x="196" y="91" width="128" height="122" rx="17" fill="#e9f7f2"/>
+    <rect x="210" y="108" width="100" height="81" rx="10" fill="#355b69"/>
+    <text x="220" y="126" font-family="Tahoma, sans-serif" font-size="12" fill="#b9e6d4">0A F3 01 00</text>
+    <text x="220" y="145" font-family="Tahoma, sans-serif" font-size="12" fill="#d8f0a3">00 10 00 00</text>
+    <text x="220" y="164" font-family="Tahoma, sans-serif" font-size="12" fill="#b9e6d4">2A 00 00 00</text>
+    <circle cx="294" cy="121" r="4" fill="#f6d678"/>
+    <circle cx="294" cy="140" r="4" fill="#8ee0c0"/>
+  </g>
+  <text x="260" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567086">Hex inceleme</text>
+
+  <!-- arrow to central -->
+  <path d="M330 152 H351" fill="none" stroke="#7494ac" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="351,152 343,147 343,157" fill="#7494ac"/>
+
+  <!-- Inode center -->
+  <g filter="url(#shadow)">
+    <rect x="358" y="67" width="130" height="170" rx="24" fill="url(#inodeGrad)"/>
+    <circle cx="423" cy="112" r="27" fill="#fff9e9" opacity="0.85"/>
+    <path d="M413 112h20M423 102v20" stroke="#d2934f" stroke-width="3" stroke-linecap="round"/>
+    <rect x="378" y="151" width="90" height="18" rx="7" fill="#fffaf0"/>
+    <rect x="378" y="176" width="64" height="12" rx="5" fill="#ebbf74" opacity="0.65"/>
+    <rect x="378" y="195" width="79" height="12" rx="5" fill="#ebbf74" opacity="0.45"/>
+    <text x="423" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805b32" font-weight="700">INODE</text>
+    <text x="423" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805b32">Extent izi</text>
+  </g>
+  <text x="423" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567086">Adres ve bloklar</text>
+
+  <!-- Upper branch ext4 -->
+  <path d="M490 123 C510 123 510 85 527 85" fill="none" stroke="#748faa" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="527,85 519,80 519,90" fill="#748faa"/>
+  <g filter="url(#softShadow)">
+    <rect x="533" y="49" width="83" height="72" rx="16" fill="#e3ecff"/>
+    <rect x="548" y="65" width="53" height="10" rx="4" fill="#88aee0"/>
+    <rect x="548" y="81" width="41" height="10" rx="4" fill="#abc8ec"/>
+    <rect x="548" y="97" width="48" height="8" rx="4" fill="#c9dcf3"/>
+    <text x="574" y="40" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e6e91" font-weight="700">Ext4</text>
+  </g>
+
+  <!-- Lower branch btrfs -->
+  <path d="M490 181 C510 181 510 221 527 221" fill="none" stroke="#748faa" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="527,221 519,216 519,226" fill="#748faa"/>
+  <g filter="url(#softShadow)">
+    <rect x="533" y="187" width="83" height="72" rx="16" fill="#e0f4e9"/>
+    <circle cx="552" cy="214" r="8" fill="#7ac5a4"/>
+    <circle cx="592" cy="214" r="8" fill="#7ac5a4"/>
+    <circle cx="572" cy="238" r="8" fill="#93d5b6"/>
+    <path d="M558 218 L567 233 M586 218 L577 233 M560 214h24" fill="none" stroke="#519879" stroke-width="2"/>
+    <text x="574" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427a62" font-weight="700">Btrfs</text>
+  </g>
+
+  <!-- bottom recovery strip -->
+  <g filter="url(#softShadow)">
+    <rect x="179" y="278" width="283" height="29" rx="14" fill="#ffffff" opacity="0.9"/>
+    <circle cx="198" cy="292" r="8" fill="#8bd0aa"/>
+    <path d="M194 292l3 3 6-7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="214" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527063">Blokları oku</text>
+    <path d="M293 292h24" stroke="#92aa9d" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="317,292 311,288 311,296" fill="#92aa9d"/>
+    <text x="332" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527063">Dosyayı çıkar</text>
+  </g>
+</svg>

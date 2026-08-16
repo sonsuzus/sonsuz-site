@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#5a6a7a" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef5ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a5c8e4"/>
+      <stop offset="100%" stop-color="#c9e2f5"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0c987"/>
+      <stop offset="100%" stop-color="#fce4b8"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8fd3b6"/>
+      <stop offset="100%" stop-color="#b8e6d2"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0a7b8"/>
+      <stop offset="100%" stop-color="#f2c9d6"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9bb8e8"/>
+      <stop offset="100%" stop-color="#c3d6f5"/>
+    </linearGradient>
+    <linearGradient id="circleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7ebdc9"/>
+      <stop offset="100%" stop-color="#a6d5e8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c4a5e">Ses Kartından Nota Tahminine</text>
+
+  <!-- Merkez düğüm -->
+  <circle cx="320" cy="160" r="46" fill="url(#circleGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a4a">Fourier</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a4a">Dönüşümü</text>
+
+  <!-- Blok 1: Ses Kartı -->
+  <rect x="40" y="48" width="120" height="48" rx="10" fill="url(#box1)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="100" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a4a">Ses Kartı</text>
+  <text x="100" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c4a5e">Örnekleme</text>
+
+  <!-- Blok 2: Buffer -->
+  <rect x="40" y="130" width="120" height="48" rx="10" fill="url(#box2)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="100" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a4a2a">Buffer</text>
+  <text x="100" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a2a">N = 4096</text>
+
+  <!-- Blok 3: Pencereleme -->
+  <rect x="40" y="212" width="120" height="48" rx="10" fill="url(#box3)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="100" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4a3a">Pencereleme</text>
+  <text x="100" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a4a3a">Hann</text>
+
+  <!-- Blok 4: Spektrum -->
+  <rect x="240" y="260" width="130" height="48" rx="10" fill="url(#box4)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="305" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a2a3a">Spektrum</text>
+  <text x="305" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a2a3a">Tepe Bulma</text>
+
+  <!-- Blok 5: Nota Eşleme -->
+  <rect x="470" y="36" width="140" height="48" rx="10" fill="url(#box5)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="540" y="56" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a3a6a">Nota Eşleme</text>
+  <text x="540" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a3a6a">MIDI + Cent</text>
+
+  <!-- Blok 6: Gösterge -->
+  <rect x="470" y="132" width="140" height="48" rx="10" fill="url(#box2)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="540" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a4a2a">Gösterge</text>
+  <text x="540" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a2a">Sapma + Renk</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <defs>
+    <g id="arrowDown">
+      <path d="M8,20 L8,52 M8,52 L4,44 M8,52 L12,44" stroke="#4a6a8a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <polygon points="8,52 4,44 12,44" fill="#4a6a8a"/>
+    </g>
+  </defs>
+
+  <!-- Ok 1: Ses Kartı -> Buffer -->
+  <line x1="100" y1="96" x2="100" y2="128" stroke="#4a6a8a" stroke-width="1.8"/>
+  <polygon points="100,128 95,119 105,119" fill="#4a6a8a"/>
+
+  <!-- Ok 2: Buffer -> Pencereleme -->
+  <line x1="100" y1="178" x2="100" y2="210" stroke="#4a6a8a" stroke-width="1.8"/>
+  <polygon points="100,210 95,201 105,201" fill="#4a6a8a"/>
+
+  <!-- Ok 3: Pencereleme -> Fourier -->
+  <path d="M160,236 L274,190" stroke="#4a6a8a" stroke-width="1.8" fill="none"/>
+  <polygon points="274,190 263,190 268,184" fill="#4a6a8a"/>
+
+  <!-- Ok 4: Fourier -> Spektrum -->
+  <line x1="360" y1="170" x2="400" y2="240" stroke="#4a6a8a" stroke-width="1.8"/>
+  <polygon points="400,240 392,235 399,229" fill="#4a6a8a"/>
+
+  <!-- Ok 5: Spektrum -> Nota Eşleme -->
+  <path d="M370,280 L470,82" stroke="#4a6a8a" stroke-width="1.8" fill="none"/>
+  <polygon points="470,82 461,86 463,76" fill="#4a6a8a"/>
+
+  <!-- Ok 6: Nota Eşleme -> Gösterge -->
+  <line x1="540" y1="84" x2="540" y2="130" stroke="#4a6a8a" stroke-width="1.8"/>
+  <polygon points="540,130 535,121 545,121" fill="#4a6a8a"/>
+
+  <!-- Ok 7: Buffer -> Fourier (yan yol) -->
+  <path d="M160,154 L274,160" stroke="#7a8a9a" stroke-width="1.2" stroke-dasharray="5,3" fill="none"/>
+  <polygon points="274,160 265,157 265,163" fill="#7a8a9a"/>
+
+  <!-- Etiketler -->
+  <text x="355" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a6a7a">FFT</text>
+  <text x="448" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a6a7a">Tepe</text>
+  <text x="480" y="60" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a6a7a">Frekans</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a8a9a" opacity="0.7">Ses işleme ve müzikal akort akışı</text>
+</svg>

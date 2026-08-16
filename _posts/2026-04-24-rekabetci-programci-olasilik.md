@@ -24,7 +24,10 @@ tags:
   - kodlama
   - matematik
   - kitap
+image: /img/olasilik_kavram_haritasi.png
 ---
+
+![olasilik kavram](/img/olasilik_kavram_haritasi.svg)
 
 **Olasılık**, rastgele bir sürecin sonuçlarını sayısal olarak ifade eder. $0$ ile $1$ arasında bir değer olan $P(A)$, $A$ olayının gerçekleşme ihtimalini verir; $P(A) = 0$ imkânsızı, $P(A) = 1$ kesinliği temsil eder.
 

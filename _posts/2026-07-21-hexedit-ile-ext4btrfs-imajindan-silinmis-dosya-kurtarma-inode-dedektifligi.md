@@ -10,6 +10,7 @@ tags:
   - forensics
   - hexedit
   - inode
+image: /img/hexedit-ile-ext4btrfs-84.png
 ---
 
 Bir dosya silindiğinde çoğu zaman verinin kendisi anında buharlaşmaz; dosya sisteminin “bu alan artık boş” dediği muhasebe kayıtları değişir. İşte ham disk imajını `hexedit` ile açıp inode ve blok adreslerini elle okumak, biraz arkeoloji biraz dedektiflik gibidir: kumların altından byte byte hikâye çıkarırız.
@@ -136,3 +137,6 @@ Btrfs’te klasik “inode tablosu” beklentisi boşa düşer. Metadata B-tree 
 ## Sonuç
 
 Ext4’te manuel kurtarma; süperbloktan parametreleri okumak, inode adresini hesaplamak, extent kayıtlarını yorumlamak ve fiziksel blokları `dd` ile çekmekten ibarettir. Btrfs ise daha modern ve güçlüdür ama elle analizde daha fazla ağaç gezmeyi gerektirir. Kısacası: Ext4 düz bir harita, Btrfs ise üç boyutlu labirenttir. İkisi de çözülebilir; yeter ki byte’lar hâlâ yerinde olsun.
+
+![hexedit-ile-ext4btrfs-84](/img/hexedit-ile-ext4btrfs-84.svg)
+

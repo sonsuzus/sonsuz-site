@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="mainCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#edf5ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#69809b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5d7289" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="40" r="72" fill="#dceeff" opacity="0.45"/>
+  <circle cx="582" cy="286" r="94" fill="#dff3df" opacity="0.42"/>
+
+  <text x="32" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516b">PROLOG ARAMA AKIŞI</text>
+  <text x="32" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8091">Geriye izleme ve kesme operatörü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="78" width="142" height="194" rx="18" fill="url(#mainCard)" stroke="#d5e5f3"/>
+  </g>
+  <text x="48" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536e">Geriye İzleme</text>
+  <text x="48" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728595">Seçim noktaları</text>
+
+  <g stroke="#8ea4b5" stroke-width="2" fill="none">
+    <path d="M70 158 L96 143 L125 158"/>
+    <path d="M96 143 L96 186"/>
+    <path d="M70 158 L70 210"/>
+    <path d="M125 158 L125 210"/>
+  </g>
+  <g fill="#ffffff" stroke="#7a94a9" stroke-width="2" filter="url(#softShadow)">
+    <circle cx="96" cy="143" r="10"/>
+    <circle cx="70" cy="158" r="10"/>
+    <circle cx="125" cy="158" r="10"/>
+    <circle cx="70" cy="210" r="10"/>
+    <circle cx="96" cy="186" r="10"/>
+    <circle cx="125" cy="210" r="10"/>
+  </g>
+  <g fill="#7991a4">
+    <circle cx="96" cy="143" r="3"/>
+    <circle cx="70" cy="158" r="3"/>
+    <circle cx="125" cy="158" r="3"/>
+    <circle cx="70" cy="210" r="3"/>
+    <circle cx="96" cy="186" r="3"/>
+    <circle cx="125" cy="210" r="3"/>
+  </g>
+  <text x="48" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62798d">Çoklu alternatif</text>
+
+  <path d="M177 174 L231 174" stroke="#718ca3" stroke-width="2.5" fill="none"/>
+  <polygon points="231,174 221,168 221,180" fill="#718ca3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="238" y="104" width="144" height="140" rx="22" fill="#fff6d9" stroke="#f0d88c"/>
+  </g>
+  <circle cx="310" cy="144" r="25" fill="#ffce68" filter="url(#softShadow)"/>
+  <text x="303" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="25" font-weight="700" fill="#70500f">!</text>
+  <text x="274" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765719">Kesme</text>
+  <text x="259" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a723c">Önceki yolları kapat</text>
+
+  <path d="M389 174 L432 174" stroke="#5d9981" stroke-width="2.5" fill="none"/>
+  <polygon points="432,174 422,168 422,180" fill="#5d9981"/>
+
+  <g filter="url(#shadow)">
+    <rect x="439" y="78" width="172" height="194" rx="18" fill="#f4fbf4" stroke="#cfe7d3"/>
+  </g>
+  <text x="460" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386a50">Odaklı Arama</text>
+  <text x="460" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8e78">Tek koridorda ilerleme</text>
+
+  <path d="M481 156 L530 156 L566 200" stroke="#69a883" stroke-width="3" fill="none"/>
+  <path d="M481 156 L506 199" stroke="#d7aaa9" stroke-width="2" stroke-dasharray="5 4" fill="none" opacity="0.9"/>
+  <path d="M530 156 L550 178" stroke="#d7aaa9" stroke-width="2" stroke-dasharray="5 4" fill="none" opacity="0.9"/>
+  <circle cx="481" cy="156" r="12" fill="#bce5ca" stroke="#62a47e" stroke-width="2"/>
+  <circle cx="530" cy="156" r="12" fill="#bce5ca" stroke="#62a47e" stroke-width="2"/>
+  <circle cx="566" cy="200" r="15" fill="#8dcd9f" stroke="#4c9a68" stroke-width="2" filter="url(#softShadow)"/>
+  <path d="M559 200 L564 205 L573 194" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M497 191 L514 208 M514 191 L497 208" stroke="#d77d7a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M541 169 L558 186 M558 169 L541 186" stroke="#d77d7a" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="462" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7c61">Daha az deneme</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="202" y="277" width="108" height="28" rx="14" fill="#dff2e5"/>
+    <rect x="325" y="277" width="112" height="28" rx="14" fill="#fde5e2"/>
+  </g>
+  <circle cx="218" cy="291" r="5" fill="#55a673"/>
+  <text x="230" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39704d">Yeşil cut</text>
+  <circle cx="341" cy="291" r="5" fill="#d66e69"/>
+  <text x="353" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b4844">Kırmızı cut</text>
+</svg>

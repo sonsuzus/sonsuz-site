@@ -9,7 +9,11 @@ tags:
   - ses sistemleri
   - linux
   - etik güvenlik
+image: /img/ssh-mikrofon-ve-10.png
 ---
+
+![ssh-mikrofon-ve-10](/img/ssh-mikrofon-ve-10.svg)
+
 
 Uzaktaki bir makinenin mikrofonunu açıp hoparlöre yönlendirmek teknik olarak ses yönlendirme, gecikme ve kazanç yönetimi konularına dokunur; fakat aynı zamanda çok ciddi mahremiyet riski taşır. Bu nedenle bu yazı, bir odayı gizlice dinleten bir düzenek kurma rehberi değil; yalnızca yetkili laboratuvar, konferans odası testi veya kendi cihazında yapılan kapalı devre akustik doğrulama için teorik ve güvenli bir çerçevedir.
 ``

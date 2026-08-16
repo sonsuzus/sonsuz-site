@@ -20,7 +20,7 @@ Metin editörü olarak notepad, emacs, gedit gibi programlar kullanılabilir. An
 
 
 Python yorumlayıcısını [Python resmi sayfasından](https://www.python.org/) indirip kolayca kurabilirsiniz. Her platformda (Windows, MacOS, Unix, Linux,…) çalışabilen bir Python derleyicisi vardır. Bir makinede yazdığınız bir Python programını, gerekli yorumlayıcının mevcut olduğu başka bir makinede, farklı bir işletim sistemi kullansa bile, çalıştırabilirsiniz.
-
+``
 
 Python yorumlayıcısı sisteminizde mevcut bile olabilir. Linux kullanıyorsanız zaten kuruludur çünkü birçok sistem programı Python kullanır. Ubuntu, Fedora vs gibi paket yönetim sistemi olan bir dağıtım kullanıyorsanız, paket yöneticisi aracılığıyla kurmanız daha iyi olabilir.
 

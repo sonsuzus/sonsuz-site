@@ -9,6 +9,7 @@ tags:
   - cut-operator
   - mantıksal-programlama
   - optimizasyon
+image: /img/prologda-kesme-cut-27.png
 ---
 
 Prolog dünyasında program yazmak biraz labirentte akıllı bir dedektif gezdirmeye benzer: Dedektif her kapıyı dener, çıkmaz sokak görünce geri döner ve başka bir kapıya yönelir. Bu mekanizmaya geriye izleme denir. Kesme operatörü, yani `!`, dedektife şunu söyler: Buraya kadar geldiysen artık önceki kapıları kurcalama, bu yoldan devam et. Doğru kullanıldığında arama uzayını küçültür, performansı artırır ve programın niyetini daha net ifade eder.
@@ -24,6 +25,9 @@ Prolog, bir hedefi kanıtlamak için kuralları sırayla dener. Her alternatif b
 | Performans | Gereksiz denemeler olabilir | Daha odaklı çalışır |
 | Okunabilirlik | Mantıksal olarak daha saf | Niyet doğruysa daha net olabilir |
 | Risk | Daha yavaş sonuç | Yanlış yerde kullanılırsa eksik sonuç |
+
+![prologda-kesme-cut-27](/img/prologda-kesme-cut-27.svg)
+
 
 ## Cut nasıl çalışır?
 

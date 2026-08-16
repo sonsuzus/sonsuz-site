@@ -7,17 +7,15 @@ tags:
   - simulasyon
   - c
   - unity
-redirect_from:
-  - /posts/karincalarin-yon-bulma-yeteneklerini-inceleyen-simulasyon/
 ---
 
-C# programlama dili ve Unity oyun motoru kullanılarak hazırlanan simülasyon aracılığıyla karıncaların koloni ve besin kaynağı arasında feromon izlerini takip etmesi incelenmiştir.
+C# programlama dili ve Unity oyun motoru kullanılarak hazırlanan [simülasyon](https://program.sonsuz.us/search.html?q=simülasyon) aracılığıyla karıncaların koloni ve besin kaynağı arasında feromon izlerini takip etmesi incelenmiştir.
 
 ## Giriş
 
-Karıncalar, tek başlarına hayatta kalamayan, basit görevleri üstlenen canlılardır. Ancak pek çok adedi bir araya geldiğinde bir bütün olarak organizma gibi davranırlar. Karıncalar, feromon adı verilen kimyasallar aracılığıyla yönlerini bulurlar. Hem feromon salgılarlar, hem de feromona duyarlı canlılardır.
+Karıncalar, tek başlarına hayatta kalamayan, basit görevleri üstlenen canlılardır. Ancak pek çok adedi bir araya geldiğinde bir bütün olarak organizma gibi davranırlar. Karıncalar, [feromon](https://program.sonsuz.us/search.html?q=feromon) adı verilen kimyasallar aracılığıyla yönlerini bulurlar. Hem feromon salgılarlar, hem de feromona duyarlı canlılardır.
 
-Karıncalar her an az miktarda feromon salgılarlar ve etrafta rastgele hareket ederek yiyecek ararlar. Karıncalar feromon algılamaları halinde, feromonun yoğunluğuna bağlı olarak feromona yönelebilir veya rastgele gezmeye devam edebilir. Yiyecek bulan bir karıncanın feromon salgılaması artar. Bu durum yiyeceğe ulaşmış karıncaların dönüş yolundayken feromon izini güçlendirmesine ve daha çok karıncanın izi takip ederek yiyeceğe ulaşmasına sebep olur. 
+Karıncalar her an az miktarda feromon salgılarlar ve etrafta rastgele hareket ederek yiyecek ararlar. [Karıncalar](https://program.sonsuz.us/search.html?q=karınca) feromon algılamaları halinde, feromonun yoğunluğuna bağlı olarak feromona yönelebilir veya rastgele gezmeye devam edebilir. Yiyecek bulan bir karıncanın feromon salgılaması artar. Bu durum yiyeceğe ulaşmış karıncaların dönüş yolundayken feromon izini güçlendirmesine ve daha çok karıncanın izi takip ederek yiyeceğe ulaşmasına sebep olur. 
 
 Bir iz, en çok karıncanın en kısa sürede geçişiyle en verimli haline ulaşır. Dolayısıyla  zaman içerisinde besin kaynağı ve koloni arasındaki yol, iki nokta arasındaki en kısa yol haline gelecektir.
 

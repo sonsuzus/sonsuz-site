@@ -9,6 +9,7 @@ tags:
   - yapay-zeka
   - veritabani-yonetimi
   - mantiksal-programlama
+image: /img/dinamik-veri-tabani-28.png
 ---
 
 Bir programın çalışırken fikrini değiştirebilmesi kulağa biraz bilim kurgu gibi gelir, değil mi? Dinamik veri tabanı yönetimi tam olarak bunu sağlar: sistem, bellekte tuttuğu gerçekleri ve kuralları çalışma anında ekler, siler ve yeni duruma göre farklı sonuçlar üretir. Özellikle Prolog gibi mantıksal programlama dillerinde `assert` ve `retract`, programı sabit bir tarif defteri olmaktan çıkarıp mutfakta karar değiştirebilen bir şefe dönüştürür.
@@ -22,6 +23,9 @@ Bu fikir özellikle uzman sistemlerde, oyun yapay zekasında, kural motorlarınd
 | Statik bilgi tabanı | Program başında tanımlanır | Basit ve tahmin edilebilir | Değişen dünyaya uyum zayıf |
 | Dinamik bilgi tabanı | Çalışma anında değişir | Esnek ve etkileşimli | Tutarsızlık yönetimi gerekir |
 | Harici veritabanı | Program dışı saklanır | Kalıcı ve büyük ölçekli | Mantıksal çıkarımla entegrasyon zor olabilir |
+
+![dinamik-veri-tabani-28](/img/dinamik-veri-tabani-28.svg)
+
 
 Prolog tarafında `assert` yeni bir gerçeği veya kuralı belleğe ekler. `retract` ise eşleşen bir bilgiyi siler. Mini bir örnekle görelim:
 
