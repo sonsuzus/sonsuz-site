@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f4ea"/>
+      <stop offset="100%" stop-color="#d1e8d8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef7e0"/>
+      <stop offset="100%" stop-color="#fcefc7"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce8e6"/>
+      <stop offset="100%" stop-color="#f5d0cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Go Bellek Modeli ve İşaretçiler</text>
+
+  <!-- Merkez: İşaretçi kavramı -->
+  <rect x="245" y="55" width="150" height="42" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#7baaf7" stroke-width="1.5"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a6b">İşaretçi (p)</text>
+  <text x="320" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c5aa0">Adres tutar</text>
+
+  <!-- Sol üst: Değişken -->
+  <rect x="55" y="55" width="130" height="42" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#5cb87a" stroke-width="1.5"/>
+  <text x="120" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5c2e">Değişken (x)</text>
+  <text x="120" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2e7d4a">Değer: 42</text>
+
+  <!-- Sağ üst: Dereference -->
+  <rect x="455" y="55" width="130" height="42" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#e57368" stroke-width="1.5"/>
+  <text x="520" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a1f1a">Dereference (*p)</text>
+  <text x="520" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a03028">Değere erişim</text>
+
+  <!-- Ok: x -> p -->
+  <path d="M185 76 L240 76" stroke="#5cb87a" stroke-width="2" fill="none"/>
+  <polygon points="240,71 250,76 240,81" fill="#5cb87a"/>
+
+  <!-- Ok: p -> *p -->
+  <path d="M395 76 L450 76" stroke="#e57368" stroke-width="2" fill="none"/>
+  <polygon points="450,71 460,76 450,81" fill="#e57368"/>
+
+  <!-- Alt sol: Stack -->
+  <rect x="55" y="150" width="130" height="55" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#5cb87a" stroke-width="1.5"/>
+  <text x="120" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5c2e">Stack</text>
+  <text x="120" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2e7d4a">Hızlı, otomatik</text>
+  <text x="120" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2e7d4a">Fonksiyonla temizlenir</text>
+
+  <!-- Alt orta: Escape Analysis -->
+  <rect x="245" y="150" width="150" height="55" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#e6b84c" stroke-width="1.5"/>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a5a10">Escape Analysis</text>
+  <text x="320" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9a7a20">Derleyici karar verir</text>
+  <text x="320" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9a7a20">Stack veya Heap</text>
+
+  <!-- Alt sağ: Heap -->
+  <rect x="455" y="150" width="130" height="55" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#e57368" stroke-width="1.5"/>
+  <text x="520" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a1f1a">Heap</text>
+  <text x="520" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#a03028">Garbage Collector</text>
+  <text x="520" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#a03028">Uzun ömürlü veriler</text>
+
+  <!-- Oklar: Stack -> Escape -->
+  <path d="M185 177 L240 177" stroke="#e6b84c" stroke-width="2" fill="none"/>
+  <polygon points="240,172 250,177 240,182" fill="#e6b84c"/>
+
+  <!-- Oklar: Escape -> Heap -->
+  <path d="M395 177 L450 177" stroke="#e57368" stroke-width="2" fill="none"/>
+  <polygon points="450,172 460,177 450,182" fill="#e57368"/>
+
+  <!-- En alt: Güvenlik -->
+  <rect x="170" y="245" width="300" height="42" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#7baaf7" stroke-width="1.5"/>
+  <text x="320" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a6b">Güvenli İşaretçiler</text>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c5aa0">Pointer arithmetic yok</text>
+
+  <!-- Oklar: Heap -> Güvenlik -->
+  <path d="M520 205 L520 230 Q520 245 470 250 L475 245" stroke="#7baaf7" stroke-width="2" fill="none"/>
+  <polygon points="475,240 465,248 478,250" fill="#7baaf7"/>
+
+  <!-- Oklar: Stack -> Güvenlik -->
+  <path d="M120 205 L120 230 Q120 245 170 250 L165 245" stroke="#7baaf7" stroke-width="2" fill="none"/>
+  <polygon points="165,240 155,248 168,250" fill="#7baaf7"/>
+
+  <!-- Küçük etiketler -->
+  <text x="55" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">Bellek Bölgeleri</text>
+  <text x="455" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">Yönetim</text>
+
+  <!-- & ve * operatörleri -->
+  <text x="120" y="50" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5cb87a" font-weight="bold">&amp;x</text>
+  <text x="520" y="50" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e57368" font-weight="bold">*p</text>
+</svg>

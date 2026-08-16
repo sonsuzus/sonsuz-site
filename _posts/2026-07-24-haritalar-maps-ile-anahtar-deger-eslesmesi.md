@@ -8,7 +8,11 @@ tags:
   - map
   - veri-yapilari
   - javascript
+image: /img/haritalar-maps-ile-42.png
 ---
+
+![haritalar-maps-ile-42](/img/haritalar-maps-ile-42.svg)
+
 
 Bir veri koleksiyonunu düşün: Elinde bir öğrenci listesi var ama öğrencileri 0, 1, 2 gibi indekslerle değil, okul numarası, e-posta adresi veya kullanıcı adı gibi anlamlı anahtarlarla bulmak istiyorsun. İşte haritalar, yani Maps, tam bu noktada sahneye çıkar. Map yapısı, veriyi anahtar-değer çifti olarak saklar ve arama, ekleme, silme gibi işlemleri oldukça okunabilir hale getirir.
 ``

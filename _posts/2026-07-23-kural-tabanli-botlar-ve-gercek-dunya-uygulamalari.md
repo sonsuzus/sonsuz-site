@@ -8,7 +8,11 @@ tags:
   - kural tabanlı botlar
   - doğal dil işleme
   - karar destek sistemleri
+image: /img/kural-tabanli-botlar-50.png
 ---
+
+![kural-tabanli-botlar-50](/img/kural-tabanli-botlar-50.svg)
+
 
 Kural tabanlı botlar, yapay zekanın sihirli değneği gibi görünmeyebilir; ama gerçek dünyada birçok otomasyonun sessiz kahramanıdır. Bir metni okuyup sınıflandıran müşteri destek botu, başvuru formundaki riskleri işaretleyen karar destek sistemi veya moderasyon kuyruğuna mesaj düşüren filtreler çoğu zaman öğrenilmiş devasa modellerden önce mantık, koşul ve iyi tasarlanmış kurallar üzerine kurulur.
 

@@ -10,6 +10,7 @@ tags:
   - linux
   - initramfs
   - alpine
+image: /img/tmpfs-ile-ramde-46.png
 ---
 
 Bilgisayarınız her açılışta tertemiz başlasın, hiçbir iz bırakmasın ve disk yerine RAM hızında çalışsın ister miydiniz? Bu yazıda tmpfs üzerinde bir ramdisk oluşturup, içine minimal bir Linux kök dosya sistemi yerleştirerek tamamen RAM’de çalışan ve güç kesilince sıfırlanan bir sistemin mantığını kuracağız. Bunu bir “kullan-at işletim sistemi” gibi düşünebilirsiniz: hızlı, geçici ve eğlenceli derecede deneysel.
@@ -21,6 +22,8 @@ Bilgisayarınız her açılışta tertemiz başlasın, hiçbir iz bırakmasın v
 | Disk üzerindeki Linux | Orta/Yüksek | Var | Günlük kullanım |
 | Live ISO | Orta | Genelde yok | Kurtarma, test |
 | tmpfs RAM Linux | Çok yüksek | Yok | Kiosk, güvenli oturum, laboratuvar |
+
+![tmpfs-ile-ramde-46](/img/tmpfs-ile-ramde-46.svg)
 
 Bu proje için Alpine Linux güzel bir adaydır; çünkü küçüktür, hızlı kurulur ve minimal sistemlere yakışır. Fakat mantık Debian `debootstrap`, BusyBox veya kendi initramfs’inizle de aynıdır: çekirdek başlar, initramfs devreye girer, RAM’de bir kök dosya sistemi hazırlanır ve sistem `switch_root` ile oraya geçer.
 
@@ -85,3 +88,6 @@ Burada `/rootfs.tar.gz`, initramfs içine gömülmüş minimal sistem arşividir
 Bu mimarinin en güzel yanı güvenlik ve tekrarlanabilirliktir. Bir eğitim laboratuvarında öğrenciler sistemi bozabilir, zararlı yazılım bulaşabilir veya konfigürasyon darmadağın olabilir. Yeniden başlatınca her şey başlangıç haline döner. Dezavantajı ise doğal olarak kalıcılığın olmamasıdır. Log, ayar veya dosya saklamak istiyorsanız ayrı bir kalıcı bölüm bağlamanız gerekir.
 
 Sonuç olarak tmpfs tabanlı RAM Linux; çekirdek, initramfs ve minimal rootfs üçlüsünün dansıdır. Disk sadece kıvılcımı çakar, asıl parti RAM’de döner. Doğru boyutlandırma, küçük dağıtım seçimi ve sade init betiğiyle açılışta doğan, kapanışta hafızalardan silinen sevimli bir işletim sistemi elde edebilirsiniz.
+
+
+

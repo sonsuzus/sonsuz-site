@@ -9,9 +9,13 @@ tags:
   - C++
   - Programlama Dilleri
   - Sözdizimi
+image: /img/go-temelleri-ve-21.png
 ---
 
 Go, yani Gopher’ların neşeli dünyası, ilk bakışta C ailesinden gelmiş gibi görünür: süslü parantezler, tipler, fonksiyonlar... Fakat birkaç satır yazınca anlarız ki Go’nun derdi yalnızca kod çalıştırmak değil, geliştiriciyi karmaşadan korumaktır. C/C++ bize büyük güç ve büyük sorumluluk verirken, Go daha çok “ekipçe okunabilir, hızlı derlenebilir, güvenli varsayılanlara sahip yazılım” fikrini merkeze alır.
+
+![go-temelleri-ve-21](/img/go-temelleri-ve-21.svg)
+
 ``
 
 Go’nun sözdizimi C’ye benzer ama felsefesi farklıdır. C ve C++ tarihsel olarak donanıma yakınlık, performans ve düşük seviyeli kontrol üzerine kuruludur. Go ise modern sunucu yazılımları, ağ programlama, eşzamanlılık ve bakım kolaylığı için tasarlanmıştır. Bu farkı kabaca şöyle düşünebiliriz: C/C++ programcıya motorun tüm parçalarını verir; Go ise iyi ayarlanmış bir araç sunar ve gereksiz kolları panelden kaldırır.

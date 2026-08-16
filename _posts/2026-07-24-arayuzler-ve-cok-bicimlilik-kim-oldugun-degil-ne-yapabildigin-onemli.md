@@ -8,9 +8,13 @@ tags:
   - arayüzler
   - çok biçimlilik
   - yazılım tasarımı
+image: /img/arayuzler-ve-cok-29.png
 ---
 
 Yazılım dünyasında bazen nesnelere fazla kimlik sorarız: “Sen gerçekten User mısın, Admin misin, Robot musun?” Oysa esnek tasarımın daha havalı sorusu şudur: “Ne yapabiliyorsun?” Arayüzler, tam da bu bakış açısını kodun merkezine koyar. Bir nesnenin sınıf soy ağacına değil, sunduğu davranış sözleşmesine odaklanır. Böylece kodumuz daha az dedikoducu, daha çok iş bitirici olur.
+
+![arayuzler-ve-cok-29](/img/arayuzler-ve-cok-29.svg)
+
 ``
 
 Arayüzü teorik olarak bir **sözleşme** gibi düşünebiliriz. Bir arayüz, “Beni uygulayan her yapı şu metotları, özellikleri veya davranışları sağlayacak” der. Ancak bunu nasıl yapacağını söylemez. Matematiksel olarak bir arayüzü, nesneler kümesinden davranışlar kümesine kurulan bir beklenti ilişkisi gibi görebiliriz: $I = {b_1, b_2, b_3}$ ise, bu arayüzü uygulayan her nesne bu davranışları sağlamalıdır. Burada önemli olan nesnenin iç yapısı değil, dışarıdan gözlemlenebilen davranışıdır.

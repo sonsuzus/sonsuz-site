@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#7fb8d0"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8e0c8"/>
+      <stop offset="100%" stop-color="#8fc4a8"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d0a9"/>
+      <stop offset="100%" stop-color="#e0b080"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8b8e8"/>
+      <stop offset="100%" stop-color="#a898d0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0b8c8"/>
+      <stop offset="100%" stop-color="#d898b0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">ALSA Loopback ile Gerçek Zamanlı Ses Efekti Pedalı</text>
+
+  <!-- Akış Yönü Okları (manuel çizim) -->
+  <!-- Ok 1: Mikrofon -> ALSA Buffer -->
+  <path d="M 60 120 L 140 120" stroke="#555" stroke-width="2" fill="none"/>
+  <polygon points="140,115 150,120 140,125" fill="#555"/>
+
+  <!-- Ok 2: ALSA Buffer -> Efekt İşlemcisi -->
+  <path d="M 250 120 L 330 120" stroke="#555" stroke-width="2" fill="none"/>
+  <polygon points="330,115 340,120 330,125" fill="#555"/>
+
+  <!-- Ok 3: Efekt İşlemcisi -> Loopback Çıkışı -->
+  <path d="M 450 120 L 530 120" stroke="#555" stroke-width="2" fill="none"/>
+  <polygon points="530,115 540,120 530,125" fill="#555"/>
+
+  <!-- Ok 4: Loopback Çıkışı -> Hoparlör -->
+  <path d="M 640 120 L 700 120" stroke="#555" stroke-width="2" fill="none" visibility="hidden"/>
+  <polygon points="700,115 710,120 700,125" fill="#555" visibility="hidden"/>
+
+  <!-- Ana Akış Kutuları -->
+  <!-- Mikrofon Girişi -->
+  <rect x="20" y="95" width="80" height="50" rx="10" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="60" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Mikrofon</text>
+  <text x="60" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff">Giriş</text>
+
+  <!-- ALSA Buffer -->
+  <rect x="160" y="95" width="80" height="50" rx="10" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="200" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">ALSA</text>
+  <text x="200" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff">Buffer</text>
+
+  <!-- Efekt İşlemcisi -->
+  <rect x="350" y="85" width="90" height="70" rx="10" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="395" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Efekt</text>
+  <text x="395" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff">İşlemcisi</text>
+  <text x="395" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#fff">Yankı + Pitch</text>
+
+  <!-- Loopback Çıkışı -->
+  <rect x="550" y="95" width="80" height="50" rx="10" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="590" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Loopback</text>
+  <text x="590" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff">Çıkış</text>
+
+  <!-- Hoparlör -->
+  <rect x="550" y="200" width="80" height="50" rx="10" fill="url(#box5)" filter="url(#shadow)"/>
+  <text x="590" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Hoparlör</text>
+  <text x="590" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff">veya Uygulama</text>
+
+  <!-- Dikey Ok: Loopback Çıkışı -> Hoparlör -->
+  <path d="M 590 150 L 590 190" stroke="#555" stroke-width="2" fill="none"/>
+  <polygon points="585,190 590,200 595,190" fill="#555"/>
+
+  <!-- Geri Besleme Oku (Efekt İşlemcisi -> ALSA Buffer) -->
+  <path d="M 350 140 C 280 180, 240 180, 200 155" stroke="#888" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
+  <polygon points="200,160 195,150 205,155" fill="#888"/>
+  <text x="270" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#666">Geri Besleme</text>
+
+  <!-- Gecikme Formülü -->
+  <rect x="20" y="200" width="180" height="50" rx="8" fill="#ffffff" opacity="0.8" filter="url(#shadow)"/>
+  <text x="110" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50" font-weight="bold">Gecikme Formülü</text>
+  <text x="110" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e74c3c">L = N / f_s</text>
+
+  <!-- Parametreler -->
+  <rect x="230" y="200" width="180" height="50" rx="8" fill="#ffffff" opacity="0.8" filter="url(#shadow)"/>
+  <text x="320" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50" font-weight="bold">Temel Parametreler</text>
+  <text x="320" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">Buffer, Feedback, Mix, Pitch</text>
+
+  <!-- Kontrol Etkileşimi -->
+  <rect x="440" y="200" width="90" height="50" rx="8" fill="#ffffff" opacity="0.8" filter="url(#shadow)"/>
+  <text x="485" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50" font-weight="bold">Kontrol</text>
+  <text x="485" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">MIDI / Pot</text>
+
+  <!-- Kontrol -> Efekt İşlemcisi Oku -->
+  <path d="M 485 195 L 440 160" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="440,165 435,155 445,160" fill="#888"/>
+
+  <!-- Döngü Etiketi -->
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">snd-aloop sanal kablo bağlantısı</text>
+</svg>

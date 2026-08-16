@@ -9,9 +9,15 @@ tags:
   - algoritmalar
   - kod arkeolojisi
   - refactoring
+image: /img/kod-arkeolojisi-terk-66.png
 ---
 
+![kod-arkeolojisi-terk-66](/img/kod-arkeolojisi-terk-66.svg)
+
+
 Terk edilmiş açık kaynak repoları, yazılım dünyasının tozlu tavan araları gibidir: kırık README’ler, çalışmayan CI rozetleri ve arada bir “Bunu kim, nasıl düşünmüş?” dedirten parlak fikirler. Kod arkeolojisi tam da burada başlar; amaç eski kodu kutsamak değil, içindeki zekice çözümü bugünün diliyle yeniden anlamaktır.
+
+
 ``
 Bir repoya yıllardır commit gelmemiş olması, içindeki fikrin bayatladığı anlamına gelmez. Hatta bazen eski projeler, güncel framework kalabalığından uzakta, problemi çıplak haliyle çözer. Yeni kütüphaneler katman eklerken, eski kodlar çoğu zaman doğrudan algoritmanın kalbine gider. Bu yüzden kod arkeoloğunun ilk sorusu “Bu proje hâlâ çalışıyor mu?” değil, “Burada hangi problem, hangi kısıt altında çözülmüş?” olmalıdır.
 
@@ -73,5 +79,7 @@ Kod arkeolojisi yaparken commit geçmişi, issue tartışmaları ve test dosyala
 | Testler | Kenar durumlar | Eksik senaryo sanmak |
 | Benchmark | Gerçek darboğaz | Mikro optimizasyona kapılmak |
 | README | Tasarım niyeti | Güncel sanmak |
+
+![kod-arkeolojisi-terk-84](/img/kod-arkeolojisi-terk-84.svg)
 
 Sonuçta terk edilmiş repolar birer mezarlık değil, fikir fosili yatağıdır. Her eski hileyi bugüne taşımak gerekmez; bazıları sadece döneminin kısıtlarına uygundur. Ama iyi bir kod arkeoloğu, paslı satırların arasından şu soruyu çıkarır: “Bu çözüm hangi basit ilkeye dayanıyor?” Cevap çoğu zaman hâlâ değerlidir: daha az iş yap, veriyi doğru biçimde tut, sınır durumunu baştan tasarla ve algoritmanın matematiğini unutma.

@@ -8,6 +8,7 @@ tags:
   - go
   - kontrol-yapıları
   - for-döngüsü
+image: /img/goda-karar-vermek-36.png
 ---
 
 Bir programı ilginç yapan şey yalnızca komutları sırayla çalıştırması değil, koşullara göre karar verebilmesi ve gerektiğinde aynı işi tekrar tekrar yapabilmesidir. Go dilinde bu akış yönetiminin iki ana kahramanı vardır: karar almak için `if-else`, tekrar etmek için ise neredeyse her role bürünen `for` döngüsü.
@@ -160,3 +161,6 @@ for i := 1; i <= 10; i++ {
 Bu kod 7’ye gelince durur, çift sayıları ise yazdırmadan geçer. Yani çıktı yalnızca 1, 3 ve 5 olur.
 
 Özetle Go’da akış yönetimi sade ama güçlüdür. `if-else` programın karar mekanizmasını kurar; `for` ise tekrar eden işleri tek bir esnek yapı altında toplar. Bu iki aracı iyi kavramak, Go’da okunabilir ve kontrollü programlar yazmanın temelidir.
+
+![goda-karar-vermek-36](/img/goda-karar-vermek-36.svg)
+

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="goGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ADD8"/>
+      <stop offset="100%" stop-color="#5DC9E2"/>
+    </linearGradient>
+    <linearGradient id="clientGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C8EBF"/>
+      <stop offset="100%" stop-color="#8FB3D9"/>
+    </linearGradient>
+    <linearGradient id="handlerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7FB5A0"/>
+      <stop offset="100%" stop-color="#A3D4C0"/>
+    </linearGradient>
+    <linearGradient id="routeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#E6C79C"/>
+    </linearGradient>
+    <linearGradient id="respGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C77DBA"/>
+      <stop offset="100%" stop-color="#DDA8D4"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Ana Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">Go HTTP Sunucu Mimarisi</text>
+  <line x1="180" y1="38" x2="460" y2="38" stroke="#00ADD8" stroke-width="2" opacity="0.5"/>
+
+  <!-- İstemci Kutusu -->
+  <rect x="40" y="65" width="110" height="50" rx="10" fill="url(#clientGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="95" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">İstemci</text>
+  <text x="95" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#E8F0FE">Tarayıcı / curl</text>
+
+  <!-- İstek Oku -->
+  <path d="M 150 90 L 210 90" stroke="#2C3E50" stroke-width="2" fill="none"/>
+  <polygon points="210,85 222,90 210,95" fill="#2C3E50"/>
+
+  <!-- Go Sunucu Kutusu -->
+  <rect x="225" y="55" width="170" height="70" rx="12" fill="url(#goGrad)" filter="url(#shadow)"/>
+  <text x="310" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#fff">Go Sunucu</text>
+  <text x="310" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#E8F6FB">net/http</text>
+  <text x="310" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#E8F6FB">ListenAndServe :8080</text>
+
+  <!-- Route Kutusu -->
+  <rect x="440" y="55" width="160" height="70" rx="10" fill="url(#routeGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="520" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Route Yönlendirme</text>
+  <text x="520" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#FFF8EE">/  /hello  /api</text>
+  <text x="520" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#FFF8EE">HandleFunc</text>
+
+  <!-- Sunucuya bağlanan ok -->
+  <path d="M 395 90 L 435 90" stroke="#2C3E50" stroke-width="2" fill="none"/>
+  <polygon points="435,85 447,90 435,95" fill="#2C3E50"/>
+
+  <!-- Handler Kutusu -->
+  <rect x="225" y="165" width="170" height="65" rx="10" fill="url(#handlerGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="310" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Handler Fonksiyonu</text>
+  <text x="310" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#EAF7F1">homeHandler</text>
+  <text x="310" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#EAF7F1">helloHandler</text>
+
+  <!-- Route'tan Handler'a ok -->
+  <path d="M 480 125 L 480 155 L 400 155 L 400 165" stroke="#2C3E50" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="395,162 400,175 405,162" fill="#2C3E50"/>
+
+  <!-- Yanıt Kutusu -->
+  <rect x="440" y="165" width="160" height="65" rx="10" fill="url(#respGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="520" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Yanıt Üretimi</text>
+  <text x="520" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#FDEFFB">ResponseWriter</text>
+  <text x="520" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#FDEFFB">JSON / Metin</text>
+
+  <!-- Handler'dan Yanıt'a ok -->
+  <path d="M 395 197 L 435 197" stroke="#2C3E50" stroke-width="2" fill="none"/>
+  <polygon points="435,192 447,197 435,202" fill="#2C3E50"/>
+
+  <!-- İstemciye dönüş oku -->
+  <path d="M 520 230 L 520 260 L 95 260 L 95 120" stroke="#2C3E50" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="90,117 95,130 100,117" fill="#2C3E50"/>
+
+  <!-- Metod Kontrolü etiketi -->
+  <rect x="225" y="255" width="170" height="35" rx="8" fill="#E8F0FE" filter="url(#shadowLight)" opacity="0.8"/>
+  <text x="310" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2C3E50">Metod Kontrolü</text>
+  <text x="310" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#5A7A9A">GET / POST</text>
+
+  <!-- Handler'dan Metod'a ok -->
+  <path d="M 310 230 L 310 250" stroke="#2C3E50" stroke-width="2" fill="none"/>
+  <polygon points="305,250 310,258 315,250" fill="#2C3E50"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7F8C8D" opacity="0.7">İstek + İşleyici = Yanıt</text>
+</svg>

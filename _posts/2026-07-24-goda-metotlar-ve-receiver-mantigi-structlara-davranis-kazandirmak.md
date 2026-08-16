@@ -10,6 +10,7 @@ tags:
   - struct
   - receiver
   - nesne-yönelimli-programlama
+image: /img/goda-metotlar-ve-11.png
 ---
 
 Go’da bir `struct` yalnızca veri taşımak zorunda değildir; ona metotlar bağlayarak belirli davranışlar kazandırabiliriz. Bu yaklaşım, klasik sınıf tabanlı nesne yönelimli programlamadan farklıdır: Go’da `class`, kalıtım veya `this` yoktur; bunun yerine sade, açık ve güçlü bir `receiver` mantığı vardır.
@@ -111,3 +112,6 @@ func (t Task) Status() string {
 Bu örnekte `Task`, sadece iki alanlı basit bir veri yapısıdır. Ancak `Complete` ve `Status` metotlarıyla birlikte artık küçük bir davranış modeline dönüşür. Kod başka bir yerde `task.Complete()` gördüğünde niyet hemen anlaşılır: görev tamamlanıyor.
 
 Sonuç olarak Go’daki metot ve receiver sistemi, nesne yönelimli düşüncenin pratik tarafını korur: veriyle ilişkili davranışları bir araya getirir. Fakat bunu sınıf, kalıtım ve karmaşık hiyerarşiler olmadan yapar. Eğer bir struct’ın “ne olduğunu” alanları belirliyorsa, “ne yapabildiğini” de metotları belirler. Go’nun felsefesi de tam burada parlar: az sihir, çok netlik.
+
+![goda-metotlar-ve-11](/img/goda-metotlar-ve-11.svg)
+

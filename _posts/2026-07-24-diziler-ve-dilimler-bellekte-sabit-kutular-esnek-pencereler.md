@@ -9,6 +9,7 @@ tags:
   - Arrays
   - Slices
   - Bellek Yönetimi
+image: /img/diziler-ve-dilimler-81.png
 ---
 
 Bir veri koleksiyonunu saklamak istediğimizde aklımıza ilk gelen yapı genellikle dizidir; ama Go gibi dillerde sahneye bir de dilimler, yani slices çıkar. Dizi, bellekte yan yana duran sabit sayıda kutu gibidir; dilim ise bu kutuların tamamını ya da bir bölümünü gösteren akıllı bir pencere. Aralarındaki farkı anlamak, sadece sözdizimini değil, performans ve bellek davranışını da doğru okumayı sağlar.
@@ -33,6 +34,9 @@ Matematiksel olarak temel kural şudur: $0 \le len(slice) \le cap(slice)$. Yani 
 | Kopyalama | Tüm elemanlar kopyalanır | Başlık kopyalanır, veri paylaşılabilir |
 | Bellek modeli | Doğrudan veri | Alttaki diziye referans |
 | Esneklik | Düşük | Yüksek |
+
+![diziler-ve-dilimler-81](/img/diziler-ve-dilimler-81.svg)
+
 
 ## Diziler: Sabit Boyutlu Disiplin
 

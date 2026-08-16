@@ -10,6 +10,7 @@ tags:
   - type inference
   - statik tip
   - tip dönüşümü
+image: /img/degiskenler-veri-tipleri-39.png
 ---
 
 Programlamada değişkenler, veriyi sakladığımız küçük kutular gibi anlatılır; ama işin arka tarafında derleyicinin yürüttüğü ciddi bir kimlik kontrolü vardır. Bir değerin sayı mı, metin mi, mantıksal sonuç mu olduğunu bilmek; hataları erken yakalamak, belleği doğru kullanmak ve kodun niyetini açık göstermek için kritiktir.
@@ -26,6 +27,9 @@ Basit düşünelim: `int` tam sayıları, `double` ondalıklı sayıları, `stri
 | Veri tipi | Değerin biçimini ve sınırlarını belirler | `int`, `string` |
 | Statik tip | Tip derleme zamanında bilinir | `int count = 5;` |
 | Dinamik tip | Tip çalışma zamanında değişebilir | Bazı script dilleri |
+
+![degiskenler-veri-tipleri-39](/img/degiskenler-veri-tipleri-39.svg)
+
 
 Statik tipli dillerde tipleri her zaman uzun uzun yazmak zorunda değiliz. Burada otomatik tip belirleme, yani type inference devreye girer. Derleyici sağ taraftaki değere bakarak sol taraftaki değişkenin tipini çıkarır. Ancak bu, değişkenin tipsiz olduğu anlamına gelmez; sadece tipi bizim yerimize derleyici yazar.
 

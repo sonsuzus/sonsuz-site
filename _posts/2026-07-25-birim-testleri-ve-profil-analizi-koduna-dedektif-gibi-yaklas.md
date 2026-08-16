@@ -10,7 +10,11 @@ tags:
   - profiling
   - performans
   - yazılım-kalitesi
+image: /img/birim-testleri-ve-54.png
 ---
+
+![birim-testleri-ve-54](/img/birim-testleri-ve-54.svg)
+
 
 Kod yazmak bazen Lego yapmak gibidir: Parçalar tek tek güzel görünür ama kuleyi kaldırınca ortadan ikiye ayrılıyorsa bir yerde hata vardır. Birim testleri, bu Lego parçalarının tek başına sağlam olup olmadığını kontrol eder. Profil analizi ise aynı parçaların ne kadar hızlı, ne kadar bellekle ve hangi maliyetle çalıştığını gösterir. Yani biri doğruluk dedektifi, diğeri performans dedektifidir.
 ``

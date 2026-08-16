@@ -8,6 +8,7 @@ tags:
   - Go
   - JSON
   - Serileştirme
+image: /img/go-ile-json-46.png
 ---
 
 Modern yazılımlar artık tek başına yaşayan küçük adacıklar değil; API’ler, mikroservisler, mobil uygulamalar ve üçüncü parti sistemlerle sürekli konuşan sosyal kelebekler. Go tarafında bu sohbetin en popüler dili JSON’dır. Bir Go yapısını JSON’a çevirmek, valize kıyafet yerleştirmeye benzer: veriyi dış dünyaya taşınabilir, okunabilir ve standart bir forma sokarız. Gelen JSON’u tekrar Go struct’ına çözmek ise valizi açıp eşyaları doğru çekmecelere yerleştirmektir.
@@ -113,3 +114,6 @@ Ayrıca JSON, sistemler arası bir sözleşmedir. Bu sözleşmenin maliyetini ba
 ## Sonuç
 
 Go’nun `encoding/json` paketi, dış sistemlerle konuşmak için sade ama güçlü bir araçtır. Struct tag’leriyle alan adlarını kontrol eder, `Marshal` ile veriyi dışarı yollar, `Unmarshal` ile gelen veriyi güvenli şekilde içeri alırız. İyi modellenmiş struct’lar, dikkatli hata yönetimi ve tip farkındalığı sayesinde JSON iletişimi kaotik bir mesajlaşma grubu olmaktan çıkar, düzenli bir protokole dönüşür.
+
+![go-ile-json-46](/img/go-ile-json-46.svg)
+

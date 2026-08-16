@@ -8,6 +8,7 @@ tags:
   - go
   - hata-yönetimi
   - panic-recover
+image: /img/hata-yonetimi-error-39.png
 ---
 
 Bir programın gerçek dünyayla ilk teması genellikle bir hatadır: dosya yoktur, ağ isteği zaman aşımına uğrar, kullanıcı sayı yerine “patates” yazar. Bazı diller bu anlarda istisna fırlatıp akışı dramatik biçimde keserken, Go gibi yaklaşımlar hatayı sıradan bir değer olarak masaya koyar. Yani hata, programın çökmesine çalışan bir canavar değil; kontrol edilmesi gereken bir dönüş değeridir.
@@ -36,6 +37,9 @@ Burada `error`, özel bir büyü değil; `Error() string` metoduna sahip bir ara
 | Exception | Akış aniden başka bloğa zıplar | Kısa ama gizli yollar içerir | Yakalanmazsa çökme |
 | Error value | Hata açıkça kontrol edilir | Daha fazla satır ama netlik yüksek | Kontrol unutulursa mantık hatası |
 | Panic | Normal akışı durdurur | Acil durumlar için belirgin | Yanlış kullanımda sert çöküş |
+
+![hata-yonetimi-error-39](/img/hata-yonetimi-error-39.svg)
+
 
 Bu tablo Go’nun neden “hata varsa söyle, saklama” dediğini gösterir. Kod biraz daha uzun görünür; evet, `if err != nil` satırları çoğalır. Ama karşılığında fonksiyonun başarısız olabileceği yerler neon tabela gibi görünür.
 

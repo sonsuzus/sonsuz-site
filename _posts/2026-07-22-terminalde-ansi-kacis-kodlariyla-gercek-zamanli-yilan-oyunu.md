@@ -10,6 +10,7 @@ tags:
   - python
   - oyun-programlama
   - kaçış-kodları
+image: /img/terminalde-ansi-kacis-49.png
 ---
 
 Terminali sadece komut yazılan siyah bir kutu sanıyorsan, bugün biraz sihir yapıyoruz: ANSI kaçış kodlarıyla imleci piksel gibi oynatıp, renkleri değiştirip, gerçek zamanlı bir yılan oyunu tasarlayacağız. Buradaki amaç yalnızca “Snake yaptık” demek değil; terminalin nasıl çizim alanına dönüştüğünü, klavye girişinin nasıl anlık okunduğunu ve oyun döngüsünün nasıl çalıştığını anlamak.
@@ -25,6 +26,9 @@ Yılan oyununu modellemek için birkaç kavram yeterlidir. Yılanın gövdesi ko
 | `\x1b[y;xH` | İmleci taşır | Yılan ve yem çizimi |
 | `\x1b[32m` | Yeşil renk | Yılan gövdesi |
 | `\x1b[0m` | Stili sıfırlar | Renk sızıntısını engeller |
+
+![terminalde-ansi-kacis-49](/img/terminalde-ansi-kacis-49.svg)
+
 
 Gerçek zamanlılık için klasik `input()` kullanamayız; çünkü Enter bekler. Python’da terminali “raw mode”a alarak tuşları anında okuyabiliriz. Aşağıdaki örnek, Linux/macOS terminallerinde çalışacak sade bir çekirdektir. Windows tarafında ANSI desteği yeni terminallerde vardır, fakat anlık tuş okuma için ek uyarlama gerekebilir.
 

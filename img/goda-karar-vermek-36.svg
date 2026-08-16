@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64b5f6"/>
+      <stop offset="100%" stop-color="#42a5f5"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81c784"/>
+      <stop offset="100%" stop-color="#66bb6a"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb74d"/>
+      <stop offset="100%" stop-color="#ffa726"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ba68c8"/>
+      <stop offset="100%" stop-color="#ab47bc"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4dd0e1"/>
+      <stop offset="100%" stop-color="#26c6da"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#37474f">Go Akış Yönetimi</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="255" y="55" width="130" height="40" rx="20" fill="url(#g1)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Akış Kontrolü</text>
+
+  <!-- Sol üst: if-else -->
+  <rect x="40" y="120" width="150" height="50" rx="10" fill="url(#g2)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="115" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">if-else</text>
+  <text x="115" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f5e9">Karar Mekanizması</text>
+
+  <!-- Sağ üst: for -->
+  <rect x="450" y="120" width="150" height="50" rx="10" fill="url(#g3)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="525" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">for Döngüsü</text>
+  <text x="525" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff3e0">Tekrar Yapısı</text>
+
+  <!-- Sol alt: koşullar -->
+  <rect x="30" y="220" width="130" height="40" rx="8" fill="url(#g4)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="95" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff">Koşullu Dallanma</text>
+
+  <!-- Orta alt: döngü tipleri -->
+  <rect x="255" y="220" width="130" height="40" rx="8" fill="url(#g5)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff">while ve range</text>
+
+  <!-- Sağ alt: kontrol -->
+  <rect x="480" y="220" width="130" height="40" rx="8" fill="url(#g1)" filter="url(#shadow)" opacity="0.85"/>
+  <text x="545" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff">break ve continue</text>
+
+  <!-- Oklar: merkezden sol üst -->
+  <path d="M 260 80 L 190 120" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="190,120 200,116 195,125" fill="#546e7a"/>
+
+  <!-- Oklar: merkezden sağ üst -->
+  <path d="M 380 80 L 450 120" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="450,120 440,116 445,125" fill="#546e7a"/>
+
+  <!-- Oklar: sol üstten sol alta -->
+  <path d="M 100 170 L 95 220" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="95,220 99,210 90,215" fill="#546e7a"/>
+
+  <!-- Oklar: sağ üstten sağ alta -->
+  <path d="M 540 170 L 545 220" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="545,220 541,210 550,215" fill="#546e7a"/>
+
+  <!-- Oklar: merkezden orta alta -->
+  <path d="M 320 95 L 320 220" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="320,220 316,210 324,210" fill="#546e7a"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#78909c">Koşullar ve tekrarlar Go'da esnek ve sade yapılarla yönetilir</text>
+
+  <!-- Dekoratif noktalar -->
+  <circle cx="580" cy="50" r="4" fill="#64b5f6" opacity="0.4"/>
+  <circle cx="60" cy="50" r="3" fill="#81c784" opacity="0.4"/>
+  <circle cx="590" cy="280" r="3" fill="#ffb74d" opacity="0.4"/>
+  <circle cx="50" cy="280" r="4" fill="#ba68c8" opacity="0.4"/>
+</svg>

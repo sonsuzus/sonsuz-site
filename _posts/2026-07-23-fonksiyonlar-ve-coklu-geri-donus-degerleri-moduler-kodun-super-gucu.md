@@ -8,7 +8,11 @@ tags:
   - fonksiyonlar
   - modüler kod
   - çoklu geri dönüş
+image: /img/fonksiyonlar-ve-coklu-88.png
 ---
+
+![fonksiyonlar-ve-coklu-88](/img/fonksiyonlar-ve-coklu-88.svg)
+
 
 Kod yazarken aynı işlemi tekrar tekrar kopyalamak, mutfakta her çay demleyişte ocağı yeniden icat etmeye benzer. Fonksiyonlar tam da bu noktada devreye girer: Bir işi isimlendirir, sınırlarını çizer ve gerektiğinde çağırmamızı sağlar. Daha da güzeli, bazı dillerde bir fonksiyon tek seferde birden fazla sonuç döndürebilir; örneğin hem işlem sonucunu hem de durum bilgisini aynı anda almak mümkündür.
 ``

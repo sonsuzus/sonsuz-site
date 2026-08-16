@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Merkezi Düğüm -->
+  <rect x="245" y="115" width="150" height="50" rx="12" fill="#5b8db8" filter="url(#shadow)"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Statik Tip Sistemi</text>
+
+  <!-- Sol Üst: Değişkenler -->
+  <rect x="40" y="40" width="130" height="45" rx="10" fill="#a8c5da" filter="url(#shadowLight)"/>
+  <text x="105" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Değişkenler</text>
+  <text x="105" y="77" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">isimli veri alanı</text>
+
+  <!-- Sol Alt: Veri Tipleri -->
+  <rect x="40" y="220" width="130" height="45" rx="10" fill="#b5d4c0" filter="url(#shadowLight)"/>
+  <text x="105" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Veri Tipleri</text>
+  <text x="105" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">int, double, string</text>
+
+  <!-- Sağ Üst: Tip Çıkarımı -->
+  <rect x="470" y="40" width="130" height="45" rx="10" fill="#d4c5e2" filter="url(#shadowLight)"/>
+  <text x="535" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Tip Çıkarımı</text>
+  <text x="535" y="77" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">var ile otomatik</text>
+
+  <!-- Sağ Alt: Güvenli Dönüşüm -->
+  <rect x="470" y="220" width="130" height="45" rx="10" fill="#f0d5b0" filter="url(#shadowLight)"/>
+  <text x="535" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Güvenli Dönüşüm</text>
+  <text x="535" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">TryParse, checked</text>
+
+  <!-- Oklar: Sol Üst -->
+  <path d="M170 62 L235 120" stroke="#5b8db8" stroke-width="2" fill="none"/>
+  <polygon points="235,120 226,112 228,123" fill="#5b8db8"/>
+
+  <!-- Oklar: Sol Alt -->
+  <path d="M170 242 L235 155" stroke="#5b8db8" stroke-width="2" fill="none"/>
+  <polygon points="235,155 226,160 230,149" fill="#5b8db8"/>
+
+  <!-- Oklar: Sağ Üst -->
+  <path d="M470 62 L405 120" stroke="#5b8db8" stroke-width="2" fill="none"/>
+  <polygon points="405,120 414,112 412,123" fill="#5b8db8"/>
+
+  <!-- Oklar: Sağ Alt -->
+  <path d="M470 242 L405 155" stroke="#5b8db8" stroke-width="2" fill="none"/>
+  <polygon points="405,155 414,160 410,149" fill="#5b8db8"/>
+
+  <!-- Alt Bilgi: Derleyici Kontrolü -->
+  <rect x="200" y="270" width="240" height="35" rx="8" fill="#e8eef5" filter="url(#shadowLight)"/>
+  <text x="320" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6a8a">Derleyici erken hata yakalar</text>
+  <text x="320" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6a8a">ve bellek kullanımını doğrular</text>
+
+  <!-- Bağlantı çizgisi alt -->
+  <line x1="320" y1="165" x2="320" y2="270" stroke="#5b8db8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="320,270 315,262 325,262" fill="#5b8db8"/>
+</svg>

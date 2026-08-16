@@ -9,6 +9,7 @@ tags:
   - Pointers
   - Garbage Collector
   - Bellek Yönetimi
+image: /img/isaretciler-ve-bellek-59.png
 ---
 
 Programlama dünyasında işaretçiler, belleğin haritasını elinize alıp “şu adrese git, oradaki değeri getir” demenin yoludur. C ve C++ tarafında bu harita bazen hazineye, bazen de mayın tarlasına çıkar; Go ise aynı fikri daha güvenli korkuluklarla sunar. Yani adresleri görebiliriz, değerleri dolaylı yoldan değiştirebiliriz ama rastgele bellek aritmetiğiyle sistemi yakmamıza izin verilmez.
@@ -44,6 +45,9 @@ Bu örnekte `p`, `x` değişkeninin adresini saklar. `*p = 100` dediğimizde “
 | Adres | Verinin bellekteki konumu | `&x` |
 | İşaretçi | Adresi tutan değişken | `p := &x` |
 | Dereference | Adresteki değere erişme | `*p` |
+
+![isaretciler-ve-bellek-59](/img/isaretciler-ve-bellek-59.svg)
+
 
 Peki bu neden önemli? Çünkü büyük veri yapıları kopyalanmak yerine adres üzerinden taşınabilir. Diyelim ki elimizde büyük bir `struct` var. Bunu fonksiyona değer olarak verirsek kopya oluşur. İşaretçiyle verirsek aynı nesne üzerinde çalışırız.
 

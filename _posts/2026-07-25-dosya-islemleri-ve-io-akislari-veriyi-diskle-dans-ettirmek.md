@@ -8,9 +8,13 @@ tags:
   - dosya-islemleri
   - io-akislari
   - programlama
+image: /img/dosya-islemleri-ve-10.png
 ---
 
 Bir programın dış dünyayla konuşmasının en eski ama en vazgeçilmez yolu dosyalardır. Günlük tutan bir uygulama, JSON ayarı okuyan bir oyun, CSV raporu üreten bir analiz aracı ya da büyük veri parçasını satır satır işleyen bir servis... Hepsi aslında aynı soruyu sorar: Veriyi güvenli, hızlı ve anlaşılır biçimde nasıl okur/yazarım?
+
+![dosya-islemleri-ve-10](/img/dosya-islemleri-ve-10.svg)
+
 ``
 Dosya işlemlerini sadece open-read-write-close ezberi gibi görmek büyük haksızlık olur. Arka planda işletim sistemi, disk, bellek, tamponlar ve akışlar arasında minik bir lojistik şirketi çalışır. Programımız dosyanın tamamını çoğu zaman doğrudan diske gidip almaz; işletim sistemi veriyi parça parça getirir, tamponlar, gerektiğinde diske yazar. Bu yüzden I/O yani Input/Output işlemlerinde performansın anahtarı, veriyi doğru boyutta ve doğru biçimde taşımaktır.
 

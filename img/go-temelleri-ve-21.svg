@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="goGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7fd4e8"/>
+      <stop offset="100%" stop-color="#5bb8d4"/>
+    </linearGradient>
+    <linearGradient id="cGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0a8b8"/>
+      <stop offset="100%" stop-color="#d48898"/>
+    </linearGradient>
+    <linearGradient id="cppGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8a8f0"/>
+      <stop offset="100%" stop-color="#9888d4"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8e8c8"/>
+      <stop offset="100%" stop-color="#78c8a8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="125" width="150" height="70" rx="14" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="320" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a3a2a">Go Dili</text>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a3a2a">Sadelik ve Güvenlik</text>
+
+  <!-- Sol üst: C -->
+  <rect x="40" y="40" width="130" height="60" rx="12" fill="url(#cGrad)" filter="url(#shadow)"/>
+  <text x="105" y="65" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#3a1a2a">C</text>
+  <text x="105" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a1a2a">Donanım ve Kontrol</text>
+
+  <!-- Sol alt: C++ -->
+  <rect x="40" y="220" width="130" height="60" rx="12" fill="url(#cppGrad)" filter="url(#shadow)"/>
+  <text x="105" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2a1a3a">C++</text>
+  <text x="105" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a1a3a">Esneklik ve Performans</text>
+
+  <!-- Sağ üst: Goroutine -->
+  <rect x="470" y="40" width="130" height="60" rx="12" fill="url(#goGrad)" filter="url(#shadow)"/>
+  <text x="535" y="65" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a2a3a">Goroutine</text>
+  <text x="535" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a2a3a">Hafif Eşzamanlılık</text>
+
+  <!-- Sağ alt: Interface -->
+  <rect x="470" y="220" width="130" height="60" rx="12" fill="url(#goGrad)" filter="url(#shadow)"/>
+  <text x="535" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a2a3a">Interface</text>
+  <text x="535" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a2a3a">Örtük Uygulama</text>
+
+  <!-- C'den Go'ya ok -->
+  <path d="M170 70 C 210 70, 210 140, 240 145" stroke="#5a8a9a" stroke-width="2" fill="none"/>
+  <polygon points="240,145 230,138 232,150" fill="#5a8a9a"/>
+
+  <!-- C++'dan Go'ya ok -->
+  <path d="M170 250 C 210 250, 210 190, 240 185" stroke="#5a8a9a" stroke-width="2" fill="none"/>
+  <polygon points="240,185 230,192 232,180" fill="#5a8a9a"/>
+
+  <!-- Go'dan Goroutine'e ok -->
+  <path d="M400 145 C 430 145, 440 100, 465 75" stroke="#4a9a7a" stroke-width="2" fill="none"/>
+  <polygon points="465,75 453,72 458,83" fill="#4a9a7a"/>
+
+  <!-- Go'dan Interface'e ok -->
+  <path d="M400 185 C 430 185, 440 240, 465 250" stroke="#4a9a7a" stroke-width="2" fill="none"/>
+  <polygon points="465,250 453,253 458,242" fill="#4a9a7a"/>
+
+  <!-- Alt etiketler -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a5a">Karmaşıklık Paydasını Küçült</text>
+  <text x="320" y="314" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8a7a">Okunabilirlik ve Güvenli Varsayılanlar</text>
+
+  <!-- Küçük dekoratif öğeler -->
+  <circle cx="580" cy="160" r="4" fill="#a8d8c8" opacity="0.6"/>
+  <circle cx="60" cy="160" r="4" fill="#d8a8b8" opacity="0.6"/>
+  <circle cx="320" cy="30" r="3" fill="#88c8a8" opacity="0.5"/>
+  <circle cx="320" cy="290" r="3" fill="#88c8a8" opacity="0.5"/>
+</svg>

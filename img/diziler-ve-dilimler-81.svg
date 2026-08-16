@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="arrayGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7eb8da"/>
+      <stop offset="100%" stop-color="#5a9bc7"/>
+    </linearGradient>
+    <linearGradient id="sliceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0b27a"/>
+      <stop offset="100%" stop-color="#e59866"/>
+    </linearGradient>
+    <linearGradient id="ptrGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#82e0aa"/>
+      <stop offset="100%" stop-color="#58d68d"/>
+    </linearGradient>
+    <linearGradient id="lenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#85c1e9"/>
+      <stop offset="100%" stop-color="#5dade2"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d7bde2"/>
+      <stop offset="100%" stop-color="#bb8fce"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Diziler ve Dilimler: Bellek Modeli</text>
+
+  <!-- Dizi Kutusu -->
+  <rect x="40" y="55" width="180" height="90" rx="10" fill="url(#arrayGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="130" y="75" text-anchor="middle" font-weight="bold" fill="#fff">Dizi (Array)</text>
+  <text x="130" y="95" text-anchor="middle" fill="#fff" opacity="0.9">Sabit boyutlu kutular</text>
+  <text x="130" y="112" text-anchor="middle" fill="#fff" opacity="0.9">[3]int ve [4]int farklı tür</text>
+  <text x="130" y="129" text-anchor="middle" fill="#fff" opacity="0.9">Kopyalama: O(n) maliyet</text>
+
+  <!-- Dilim Kutusu -->
+  <rect x="420" y="55" width="180" height="90" rx="10" fill="url(#sliceGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="510" y="75" text-anchor="middle" font-weight="bold" fill="#fff">Dilim (Slice)</text>
+  <text x="510" y="95" text-anchor="middle" fill="#fff" opacity="0.9">Esnek pencere</text>
+  <text x="510" y="112" text-anchor="middle" fill="#fff" opacity="0.9">Alttaki diziye referans</text>
+  <text x="510" y="129" text-anchor="middle" fill="#fff" opacity="0.9">Kopyalama: başlık (hafif)</text>
+
+  <!-- Ok: Dizi -> Dilim -->
+  <path d="M 225 100 L 415 100" stroke="#34495e" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+  <polygon points="415,94 427,100 415,106" fill="#34495e"/>
+
+  <!-- Dilim Başlığı Bileşenleri -->
+  <rect x="420" y="175" width="180" height="35" rx="8" fill="url(#ptrGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="510" y="197" text-anchor="middle" font-weight="bold" fill="#1a5276">İşaretçi (Ptr)</text>
+
+  <rect x="420" y="220" width="85" height="35" rx="8" fill="url(#lenGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="462" y="242" text-anchor="middle" font-weight="bold" fill="#1a5276">Uzunluk</text>
+
+  <rect x="515" y="220" width="85" height="35" rx="8" fill="url(#capGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="557" y="242" text-anchor="middle" font-weight="bold" fill="#1a5276">Kapasite</text>
+
+  <!-- Alt kural -->
+  <text x="320" y="280" text-anchor="middle" fill="#2c3e50" font-size="11">0 ≤ len(slice) ≤ cap(slice)</text>
+
+  <!-- Append notu -->
+  <rect x="140" y="270" width="180" height="35" rx="8" fill="#f9e79f" filter="url(#shadow)" opacity="0.9"/>
+  <text x="230" y="291" text-anchor="middle" fill="#7d6608" font-size="11">append: kapasite yetmezse yeni dizi</text>
+
+  <!-- Yan etki uyarısı -->
+  <rect x="340" y="270" width="160" height="35" rx="8" fill="#f5b7b1" filter="url(#shadow)" opacity="0.9"/>
+  <text x="420" y="291" text-anchor="middle" fill="#922b21" font-size="11">Paylaşım: yan etki riski</text>
+
+  <!-- Ok: Dilim -> Bileşenler -->
+  <path d="M 510 150 L 510 170" stroke="#34495e" stroke-width="1.5" fill="none"/>
+  <polygon points="504,170 510,178 516,170" fill="#34495e"/>
+
+  <!-- Ok: Dilim -> Uzunluk/Kapasite -->
+  <path d="M 480 150 L 462 215" stroke="#34495e" stroke-width="1.5" fill="none"/>
+  <polygon points="459,215 462,223 466,215" fill="#34495e"/>
+  <path d="M 540 150 L 557 215" stroke="#34495e" stroke-width="1.5" fill="none"/>
+  <polygon points="554,215 557,223 561,215" fill="#34495e"/>
+
+  <!-- Alt etiketler -->
+  <text x="130" y="165" text-anchor="middle" fill="#5a9bc7" font-size="11">Sabit boyut, doğrudan veri</text>
+  <text x="510" y="165" text-anchor="middle" fill="#e59866" font-size="11">3 parçalı başlık</text>
+</svg>

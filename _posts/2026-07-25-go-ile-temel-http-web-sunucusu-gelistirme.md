@@ -9,7 +9,11 @@ tags:
   - http
   - web-sunucusu
   - standart-kutuphane
+image: /img/go-ile-temel-14.png
 ---
+
+![go-ile-temel-14](/img/go-ile-temel-14.svg)
+
 
 Go ile web sunucusu yazmak, mutfağa girip “Ben bugün internet pişireceğim” demek gibidir: az malzemeyle şaşırtıcı derecede doyurucu sonuç alırsın. Go’nun standart kütüphanesindeki `net/http` paketi, harici framework kurmadan HTTP isteklerini dinleyen, yönlendiren ve yanıtlayan sade ama güçlü bir sunucu ayağa kaldırmamızı sağlar.
 ``

@@ -8,7 +8,11 @@ tags:
   - struct
   - veri-odaklı-tasarım
   - programlama
+image: /img/yapilar-structs-ve-64.png
 ---
+
+![yapilar-structs-ve-64](/img/yapilar-structs-ve-64.svg)
+
 
 Programlamada bazen bir şeyi nesne gibi davranışlarıyla değil, taşıdığı verilerle düşünmek daha doğrudur. İşte yapılar, yani structs, tam bu noktada sahneye çıkar. Bir koordinat, renk, sağlık değeri, tarih aralığı veya fiziksel hız vektörü düşünün: Bunlar genellikle küçük, anlamlı ve birlikte taşınması gereken veri paketleridir. Struct, farklı tiplerdeki alanları mantıksal bir bütün halinde gruplar ve özellikle veri odaklı tasarımda gereksiz soyutlama sisini dağıtarak işlemciye daha dost bir programlama modeli sunar.
 ``

@@ -10,9 +10,13 @@ tags:
   - vscode
   - kurulum
   - geliştirme ortamı
+image: /img/go-kurulumu-ve-52.png
 ---
 
 Go öğrenmeye başlamak, yeni bir müzik aleti almak gibidir: önce akort edersin, sonra şarkı çalmaya başlarsın. Bu yazıda Go derleyicisini kurup VS Code üzerinde sade, hızlı ve teoriyi pratiğe çevirmeye uygun bir geliştirme ortamı hazırlayacağız. Amacımız “her şeyi kurdum ama neden çalışmıyor?” paniğini azaltmak ve ilk Go programını güvenle koşturmak.
+
+![go-kurulumu-ve-52](/img/go-kurulumu-ve-52.svg)
+
 ``
 Go, Google tarafından geliştirilen derlenebilir, statik tipli ve sade söz dizimine sahip bir programlama dilidir. Derlenebilir olması şu anlama gelir: yazdığınız `.go` dosyaları doğrudan makineye daha yakın çalıştırılabilir programa dönüştürülür. Kabaca süreç şöyle düşünülebilir: kaynak kod $K$, derleyici $D$ tarafından işlenir ve çalıştırılabilir çıktı $C$ üretilir: $D(K) = C$. Bu model, Go’nun hızlı çalışmasına ve dağıtımının kolay olmasına katkı sağlar.
 

@@ -8,6 +8,7 @@ tags:
   - go
   - goroutines
   - eşzamanlılık
+image: /img/eszamanlilik-temelleri-ve-57.png
 ---
 
 Bilgisayarlarımız artık tek bir hızlı çekirdekten ibaret değil; çoğu makinede birden fazla çekirdek sessizce iş bekliyor. Go dilinin goroutine yaklaşımı tam da burada devreye girer: işletim sistemi iş parçacıklarına göre çok daha hafif görevler başlatarak aynı anda birçok işi düzenli, okunabilir ve verimli biçimde yürütmemizi sağlar.
@@ -90,3 +91,6 @@ Burada `WaitGroup`, ana programın tüm goroutine’ler bitene kadar beklemesini
 Go’nun scheduler’ı goroutine’leri işletim sistemi thread’leri üzerinde gezdirir. `GOMAXPROCS` değeri aynı anda kaç OS thread’in Go kodu çalıştırabileceğini belirler. Modern Go sürümlerinde bu değer genellikle makinedeki CPU çekirdeği sayısına göre otomatik ayarlanır. Yani çoğu zaman ayar yapmadan çok çekirdekli gücü kullanmaya başlarsınız.
 
 Sonuç olarak goroutine, Go’nun en keyifli ve güçlü özelliklerinden biridir. Ama amaç her yere `go` yazmak değildir. Doğru soru şudur: Bu işler bağımsız mı, bekleme içeriyor mu, sonuçlar güvenli şekilde birleşiyor mu? Cevap evetse goroutine’ler uygulamanıza roket takabilir. Cevap hayırsa, roket yerine mutfakta havai fişek yakmış olabilirsiniz.
+
+![eszamanlilik-temelleri-ve-57](/img/eszamanlilik-temelleri-ve-57.svg)
+

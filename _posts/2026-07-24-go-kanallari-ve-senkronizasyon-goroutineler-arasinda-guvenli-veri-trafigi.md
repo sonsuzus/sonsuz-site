@@ -9,9 +9,13 @@ tags:
   - goroutine
   - channels
   - senkronizasyon
+image: /img/go-kanallari-ve-87.png
 ---
 
 Go dünyasında goroutine’ler sahneye çıktığında ortalık bir anda kalabalıklaşır: aynı anda çalışan fonksiyonlar, paralel iş akışları ve bolca hız! Fakat hızın yanında klasik bir soru gelir: Bu çalışan parçalar birbirleriyle nasıl güvenli konuşacak? Go’nun cevabı nettir: Belleği paylaşarak iletişim kurma; iletişim kurarak belleği paylaş.
+
+![go-kanallari-ve-87](/img/go-kanallari-ve-87.svg)
+
 ``
 Bu felsefenin merkezinde **channels**, yani kanallar bulunur. Kanalı, iki goroutine arasında uzanan tip güvenli bir boru gibi düşünebilirsin. Bir goroutine boruya veri bırakır, diğeri o veriyi alır. Böylece aynı değişkene aynı anda erişme, kilit unutma, yarış durumu üretme gibi klasik eşzamanlılık kabusları ciddi ölçüde azalır.
 

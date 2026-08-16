@@ -10,7 +10,11 @@ tags:
   - DSP
   - Python
   - Ses Efekti
+image: /img/alsa-loopback-ile-20.png
 ---
+
+![alsa-loopback-ile-20](/img/alsa-loopback-ile-20.svg)
+
 
 Linux üzerinde gitar pedalı gibi çalışan bir ses efekti sistemi kurmak kulağa stüdyo büyüsü gibi gelebilir; ama ALSA’nın loopback cihazı ve biraz DSP bilgisiyle mikrofon girişini yakalayıp yankı ve pitch değişimi uygulayan gerçek zamanlı bir pedal yapmak gayet mümkün. Bu yazıda hedefimiz: mikrofonu sanal bir ses hattına bağlamak, sesi küçük tamponlar halinde işlemek ve çıktıyı hoparlöre ya da başka bir uygulamaya göndermek.
 ``

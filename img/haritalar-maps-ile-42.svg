@@ -1,0 +1,98 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6f7e9"/>
+      <stop offset="100%" stop-color="#cdeacf"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fae0b3"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde8e8"/>
+      <stop offset="100%" stop-color="#f5c6c6"/>
+    </linearGradient>
+    <linearGradient id="center" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a7ed9"/>
+      <stop offset="100%" stop-color="#3b66b5"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2.5" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="320" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Map: Anahtar-Değer Eşleşmesi</text>
+
+  <!-- Central Map node -->
+  <rect x="250" y="120" width="140" height="52" rx="10" fill="url(#center)" filter="url(#shadow)"/>
+  <text x="320" y="142" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="13">Map</text>
+  <text x="320" y="158" text-anchor="middle" fill="#d0e0ff" font-size="11">anahtar → değer</text>
+
+  <!-- Key nodes (left side) -->
+  <rect x="40" y="45" width="130" height="40" rx="8" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="105" y="62" text-anchor="middle" fill="#1a3a6b" font-weight="bold">Anahtar (K)</text>
+  <text x="105" y="76" text-anchor="middle" fill="#3a5a8b" font-size="11">string, nesne, fonksiyon</text>
+
+  <rect x="40" y="135" width="130" height="40" rx="8" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="105" y="152" text-anchor="middle" fill="#1a3a6b" font-weight="bold">set(key, değer)</text>
+  <text x="105" y="166" text-anchor="middle" fill="#3a5a8b" font-size="11">ekle / güncelle</text>
+
+  <rect x="40" y="225" width="130" height="40" rx="8" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="105" y="242" text-anchor="middle" fill="#1a3a6b" font-weight="bold">get(key)</text>
+  <text x="105" y="256" text-anchor="middle" fill="#3a5a8b" font-size="11">değeri getir</text>
+
+  <!-- Value nodes (right side) -->
+  <rect x="470" y="45" width="130" height="40" rx="8" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="535" y="62" text-anchor="middle" fill="#1a5a2a" font-weight="bold">Değer (V)</text>
+  <text x="535" y="76" text-anchor="middle" fill="#3a7a4a" font-size="11">her tür olabilir</text>
+
+  <rect x="470" y="135" width="130" height="40" rx="8" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="535" y="152" text-anchor="middle" fill="#1a5a2a" font-weight="bold">has(key)</text>
+  <text x="535" y="166" text-anchor="middle" fill="#3a7a4a" font-size="11">varlık kontrolü</text>
+
+  <rect x="470" y="225" width="130" height="40" rx="8" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="535" y="242" text-anchor="middle" fill="#1a5a2a" font-weight="bold">delete(key)</text>
+  <text x="535" y="256" text-anchor="middle" fill="#3a7a4a" font-size="11">eşleşmeyi kaldır</text>
+
+  <!-- Arrows from keys to Map -->
+  <path d="M170 65 L245 130" stroke="#5a7ab5" stroke-width="1.8" fill="none"/>
+  <polygon points="245,130 236,122 237,132" fill="#5a7ab5"/>
+
+  <path d="M170 155 L245 145" stroke="#5a7ab5" stroke-width="1.8" fill="none"/>
+  <polygon points="245,145 236,139 236,149" fill="#5a7ab5"/>
+
+  <path d="M170 245 L245 160" stroke="#5a7ab5" stroke-width="1.8" fill="none"/>
+  <polygon points="245,160 236,154 237,164" fill="#5a7ab5"/>
+
+  <!-- Arrows from Map to values -->
+  <path d="M395 130 L465 65" stroke="#4a9a5a" stroke-width="1.8" fill="none"/>
+  <polygon points="465,65 454,62 458,72" fill="#4a9a5a"/>
+
+  <path d="M395 145 L465 155" stroke="#4a9a5a" stroke-width="1.8" fill="none"/>
+  <polygon points="465,155 456,149 456,159" fill="#4a9a5a"/>
+
+  <path d="M395 160 L465 245" stroke="#4a9a5a" stroke-width="1.8" fill="none"/>
+  <polygon points="465,245 456,238 457,248" fill="#4a9a5a"/>
+
+  <!-- Bottom info boxes -->
+  <rect x="40" y="280" width="260" height="30" rx="6" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="170" y="299" text-anchor="middle" fill="#7a5a1a" font-size="11">Ortalama: O(1) arama, ekleme, silme</text>
+
+  <rect x="340" y="280" width="260" height="30" rx="6" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="470" y="299" text-anchor="middle" fill="#7a2a2a" font-size="11">Dizi ile arama: O(n) maliyet</text>
+
+  <!-- Small decorative key-value pair -->
+  <rect x="240" y="75" width="160" height="28" rx="6" fill="#ffffff" opacity="0.7" filter="url(#shadow)"/>
+  <text x="320" y="93" text-anchor="middle" fill="#2c3e50" font-size="11">"basari" → "yesil"</text>
+</svg>
