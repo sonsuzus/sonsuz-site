@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="wasmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d5f5"/>
+      <stop offset="100%" stop-color="#d1b3e8"/>
+    </linearGradient>
+    <linearGradient id="rustGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d5d5"/>
+      <stop offset="100%" stop-color="#e8b8b8"/>
+    </linearGradient>
+    <linearGradient id="jsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e8c8"/>
+      <stop offset="100%" stop-color="#e8d4a8"/>
+    </linearGradient>
+    <linearGradient id="videoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8e8d4"/>
+      <stop offset="100%" stop-color="#a8d4bc"/>
+    </linearGradient>
+    <linearGradient id="workerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4d8f5"/>
+      <stop offset="100%" stop-color="#b8bce8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2d3a4a">WebAssembly ile Görüntü İşleme ve Video Kodlama</text>
+
+  <!-- Rust Çekirdeği -->
+  <rect x="30" y="55" width="140" height="70" rx="10" fill="url(#rustGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="100" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a2d2d">Rust Çekirdeği</text>
+  <text x="100" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a3a3a">gri tonlama</text>
+  <text x="100" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a3a3a">RGBA işleme</text>
+
+  <!-- Derleme oku -->
+  <path d="M 170 90 L 205 90" stroke="#4a6a5a" stroke-width="2" fill="none"/>
+  <polygon points="205,84 215,90 205,96" fill="#4a6a5a"/>
+
+  <!-- WebAssembly Modülü -->
+  <rect x="220" y="55" width="140" height="70" rx="10" fill="url(#wasmGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="290" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a2d4a">Wasm Modülü</text>
+  <text x="290" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a3a5a">wasm-pack build</text>
+  <text x="290" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a3a5a">SIMD desteği</text>
+
+  <!-- JavaScript oku -->
+  <path d="M 360 90 L 395 90" stroke="#4a6a5a" stroke-width="2" fill="none"/>
+  <polygon points="395,84 405,90 395,96" fill="#4a6a5a"/>
+
+  <!-- JavaScript Katmanı -->
+  <rect x="410" y="55" width="140" height="70" rx="10" fill="url(#jsGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="480" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a3a2d">JavaScript</text>
+  <text x="480" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a3a">Canvas API</text>
+  <text x="480" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a3a">getImageData</text>
+
+  <!-- Web Worker oku -->
+  <path d="M 480 125 L 480 155" stroke="#4a6a5a" stroke-width="2" fill="none"/>
+  <polygon points="474,155 480,165 486,155" fill="#4a6a5a"/>
+
+  <!-- Web Worker -->
+  <rect x="410" y="170" width="140" height="60" rx="10" fill="url(#workerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="480" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d2d4a">Web Worker</text>
+  <text x="480" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a3a5a">OffscreenCanvas</text>
+
+  <!-- Video Kodlama oku -->
+  <path d="M 360 90 L 340 90 L 340 200 L 395 200" stroke="#4a6a5a" stroke-width="2" fill="none"/>
+  <polygon points="395,194 405,200 395,206" fill="#4a6a5a"/>
+
+  <!-- WebCodecs -->
+  <rect x="410" y="170" width="140" height="60" rx="10" fill="url(#videoGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="480" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d4a3a">WebCodecs</text>
+  <text x="480" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a4a">VideoFrame</text>
+
+  <!-- VideoEncoder oku -->
+  <path d="M 480 230 L 480 255" stroke="#4a6a5a" stroke-width="2" fill="none"/>
+  <polygon points="474,255 480,265 486,255" fill="#4a6a5a"/>
+
+  <!-- VideoEncoder -->
+  <rect x="410" y="270" width="140" height="35" rx="8" fill="url(#videoGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="480" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d4a3a">VideoEncoder</text>
+
+  <!-- Performans notu -->
+  <rect x="30" y="170" width="200" height="60" rx="10" fill="#e8f0e8" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="130" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#3a5a3a">Performans</text>
+  <text x="130" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a4a">O(WxH) karmaşıklık</text>
+  <text x="130" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a4a">4K görüntü desteği</text>
+
+  <!-- Veri akışı oku -->
+  <path d="M 170 200 L 205 200" stroke="#4a6a5a" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="205,194 215,200 205,206" fill="#4a6a5a"/>
+
+  <!-- Gizlilik notu -->
+  <rect x="30" y="255" width="200" height="45" rx="10" fill="#e8f0f5" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="130" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#3a5a6a">Gizlilik Dostu</text>
+  <text x="130" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a7a">Sunucuya göndermeden</text>
+
+  <!-- Karşılaştırma etiketi -->
+  <rect x="30" y="55" width="0" height="0" rx="0" fill="none"/>
+</svg>

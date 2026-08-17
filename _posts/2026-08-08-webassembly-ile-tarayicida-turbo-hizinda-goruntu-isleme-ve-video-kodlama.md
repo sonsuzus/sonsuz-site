@@ -8,9 +8,13 @@ tags:
   - WebAssembly
   - Rust
   - Görüntü İşleme
+image: /img/webassembly-ile-tarayicida-29.png
 ---
 
 Tarayıcıda bir fotoğrafa filtre uygularken arayüzün donması veya video dönüştürürken fanların uçuşa geçmesi tanıdık geliyor mu? WebAssembly, hesaplama yoğun algoritmaları JavaScript’in tek başına zorlanabileceği noktalarda yüksek performansla çalıştırmamızı sağlar. Bu projede Rust ile yazılmış bir görüntü işleme çekirdeğini WebAssembly’ye derleyecek, JavaScript üzerinden çağıracak ve video kodlama seçeneklerini inceleyeceğiz.
+
+![webassembly-ile-tarayicida-29](/img/webassembly-ile-tarayicida-29.svg)
+
 ``
 
 ## WebAssembly neden hızlıdır?

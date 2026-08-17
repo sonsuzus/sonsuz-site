@@ -8,7 +8,11 @@ tags:
   - GAN
   - Difüzyon Modelleri
   - Üretken Yapay Zekâ
+image: /img/gan-ve-difuzyon-94.png
 ---
+
+![gan-ve-difuzyon-94](/img/gan-ve-difuzyon-94.svg)
+
 
 Bir yapay zekânın sıfırdan insan yüzü çizdiğini, kısa bir melodi bestelediğini veya birkaç kelimelik komuttan video ürettiğini düşünün. Bu sihrin arkasında çoğunlukla iki güçlü yaklaşım bulunur: birbirini alt etmeye çalışan ağlardan oluşan **Üretken Çekişmeli Ağlar (GAN)** ve gürültüyü adım adım temizleyen **difüzyon modelleri**. İkisi de öğrendiği veri dağılımından yeni örnekler üretir; ancak hedefe giderken tamamen farklı yollar izler.
 
