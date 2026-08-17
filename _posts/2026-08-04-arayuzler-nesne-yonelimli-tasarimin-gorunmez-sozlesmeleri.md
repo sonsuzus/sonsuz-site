@@ -8,6 +8,7 @@ tags:
   - arayüzler
   - nesne yönelimli programlama
   - yazılım tasarımı
+image: /img/arayuzler-nesne-yonelimli-16.png
 ---
 
 Bir orkestrada her müzisyen farklı bir enstrüman çalabilir; ancak şefin verdiği işaretlerin ne anlama geldiğini hepsi bilir. Nesne yönelimli programlamadaki **arayüzler (interfaces)** de benzer biçimde çalışır. Bir sınıfın iç dünyasını yönetmez, fakat dışarıya hangi özellikleri ve davranışları sunması gerektiğini açıkça bildirir. Böylece birbirinden farklı nesneler, ortak bir sözleşmeye uyarak aynı sistem içinde güvenle çalışabilir.
@@ -82,3 +83,6 @@ Bir sınıf başka bir somut sınıfa doğrudan bağımlıysa değişiklikler zi
 Hayır. Tek uygulaması bulunan ve değişme ihtimali düşük, küçük yapılara sırf “kurumsal görünsün” diye arayüz eklemek gereksiz karmaşıklık yaratabilir. Arayüzler özellikle birden fazla uygulama beklendiğinde, dış sistemler soyutlandığında veya bileşenlerin bağımsız test edilmesi gerektiğinde değerlidir.
 
 Kısacası arayüzler yalnızca metot listeleri değildir; ekipler ve bileşenler arasında kurulmuş teknik anlaşmalardır. İyi tasarlanmış bir arayüz, nesnenin iç ayrıntılarını gizlerken beklentileri netleştirir. Kod değiştikçe sözleşme sabit kalabiliyorsa sistem daha esnek, test edilebilir ve sürdürülebilir hâle gelir.
+
+![arayuzler-nesne-yonelimli-16](/img/arayuzler-nesne-yonelimli-16.svg)
+

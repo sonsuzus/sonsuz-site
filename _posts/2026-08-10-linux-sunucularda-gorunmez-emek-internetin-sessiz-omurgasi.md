@@ -10,9 +10,13 @@ tags:
   - sunucu yönetimi
   - altyapı
   - görünmez emek
+image: /img/linux-sunucularda-gorunmez-28.png
 ---
 
 Bir web sitesine girdiğimizde gördüğümüz şey genellikle tasarım, içerik ve birkaç saniyelik kullanıcı deneyimidir. Oysa bu kısa anın arkasında; paketleri güncelleyen, disk doluluklarını takip eden, sertifikaları yenileyen, gecenin üçünde alarm mesajına uyanan insanlar ve çoğunlukla Linux çalışan makineler vardır. İnternetin büyük bölümü, kullanıcı için görünmez kalması hedeflenen bu altyapı sayesinde ayaktadır. İlginç paradoks da tam burada başlar: Bir sistem ne kadar iyi yönetilirse, onu yöneten emeğin fark edilme ihtimali o kadar azalır.
+
+
+![linux-sunucularda-gorunmez-28](/img/linux-sunucularda-gorunmez-28.svg)
 
 ``
 

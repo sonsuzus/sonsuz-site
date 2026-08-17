@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="stringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7eb8e8"/>
+      <stop offset="100%" stop-color="#5a9bd5"/>
+    </linearGradient>
+    <linearGradient id="strGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0a58e"/>
+      <stop offset="100%" stop-color="#e07b5a"/>
+    </linearGradient>
+    <linearGradient id="utfGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9bc4a0"/>
+      <stop offset="100%" stop-color="#6da575"/>
+    </linearGradient>
+    <linearGradient id="heapGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4c5e2"/>
+      <stop offset="100%" stop-color="#b39ddb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Rust String Mimarisi</text>
+
+  <!-- String kutusu -->
+  <rect x="40" y="50" width="180" height="90" rx="10" fill="url(#stringGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="130" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#fff">String</text>
+  <text x="130" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f0fe">Sahip + Heap</text>
+  <text x="130" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f0fe">Pointer, Uzunluk, Kapasite</text>
+  <text x="130" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f0fe">Değiştirilebilir</text>
+
+  <!-- &str kutusu -->
+  <rect x="420" y="50" width="180" height="90" rx="10" fill="url(#strGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="510" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#fff">&amp;str</text>
+  <text x="510" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fdeee8">Ödünç Görünüm</text>
+  <text x="510" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fdeee8">Pointer + Uzunluk</text>
+  <text x="510" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fdeee8">Sabit Boyut</text>
+
+  <!-- UTF-8 kutusu -->
+  <rect x="230" y="50" width="180" height="90" rx="10" fill="url(#utfGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#fff">UTF-8</text>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#eaf5ec">Bayt ≥ Karakter</text>
+  <text x="320" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#eaf5ec">Geçerli Sınırlar</text>
+  <text x="320" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#eaf5ec">chars() ve bytes()</text>
+
+  <!-- Heap kutusu -->
+  <rect x="230" y="180" width="180" height="70" rx="10" fill="url(#heapGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3e2a5a">Heap Bellek</text>
+  <text x="320" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a3a6a">Veri + Kapasite</text>
+  <text x="320" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a3a6a">Büyüme Yeniden Ayrılır</text>
+
+  <!-- Ok: String -> UTF-8 -->
+  <path d="M 220 95 L 230 95" stroke="#5a9bd5" stroke-width="2" fill="none"/>
+  <polygon points="228,90 238,95 228,100" fill="#5a9bd5"/>
+
+  <!-- Ok: UTF-8 -> &str -->
+  <path d="M 410 95 L 420 95" stroke="#e07b5a" stroke-width="2" fill="none"/>
+  <polygon points="418,90 428,95 418,100" fill="#e07b5a"/>
+
+  <!-- Ok: String -> Heap -->
+  <path d="M 130 140 L 130 170 L 230 190" stroke="#5a9bd5" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="225,184 238,190 225,196" fill="#5a9bd5"/>
+
+  <!-- Ok: &str -> Heap -->
+  <path d="M 510 140 L 510 170 L 410 190" stroke="#e07b5a" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="415,184 402,190 415,196" fill="#e07b5a"/>
+
+  <!-- Alt bilgi -->
+  <rect x="40" y="275" width="560" height="30" rx="8" fill="#ffffff" filter="url(#shadow)" opacity="0.7"/>
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">String ev sahibi, &amp;str misafir, UTF-8 oda planıdır</text>
+</svg>

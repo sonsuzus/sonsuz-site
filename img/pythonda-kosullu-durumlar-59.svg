@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7f0"/>
+    </linearGradient>
+    <linearGradient id="startGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c9ce0"/>
+      <stop offset="100%" stop-color="#5a8ad0"/>
+    </linearGradient>
+    <linearGradient id="ifGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7bc47f"/>
+      <stop offset="100%" stop-color="#5da862"/>
+    </linearGradient>
+    <linearGradient id="elifGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0b45a"/>
+      <stop offset="100%" stop-color="#e09f3c"/>
+    </linearGradient>
+    <linearGradient id="elseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e87a6a"/>
+      <stop offset="100%" stop-color="#d45f4f"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b9dc3"/>
+      <stop offset="100%" stop-color="#7a8cb5"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlangıç düğümü -->
+  <rect x="265" y="15" width="110" height="38" rx="19" fill="url(#startGrad)" filter="url(#shadow)"/>
+  <text x="320" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Program Başlar</text>
+
+  <!-- Ok: Başlangıç -> if -->
+  <path d="M320 53 L320 75" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="315,73 320,83 325,73" fill="#5a7a9a"/>
+
+  <!-- if bloğu -->
+  <rect x="225" y="85" width="190" height="48" rx="10" fill="url(#ifGrad)" filter="url(#shadow)"/>
+  <text x="320" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">if koşul</text>
+  <text x="320" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eaffea">puan >= 85</text>
+
+  <!-- Ok: if -> elif -->
+  <path d="M225 109 L185 109 L185 155 L225 155" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="223,150 233,155 223,160" fill="#5a7a9a"/>
+
+  <!-- elif bloğu -->
+  <rect x="225" y="135" width="190" height="48" rx="10" fill="url(#elifGrad)" filter="url(#shadow)"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">elif koşul</text>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff8e0">puan >= 70</text>
+
+  <!-- Ok: elif -> else -->
+  <path d="M225 159 L185 159 L185 205 L225 205" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="223,200 233,205 223,210" fill="#5a7a9a"/>
+
+  <!-- else bloğu -->
+  <rect x="225" y="185" width="190" height="48" rx="10" fill="url(#elseGrad)" filter="url(#shadow)"/>
+  <text x="320" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">else</text>
+  <text x="320" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffe8e5">diğer tüm durumlar</text>
+
+  <!-- Ok: if -> sonuç (Pekiyi) -->
+  <path d="M415 109 L480 109 L480 75 L520 75" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="518,70 528,75 518,80" fill="#5a7a9a"/>
+
+  <!-- Sonuç: Pekiyi -->
+  <rect x="530" y="55" width="95" height="40" rx="8" fill="url(#resultGrad)" filter="url(#shadow)"/>
+  <text x="577" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Pekiyi</text>
+
+  <!-- Ok: elif -> sonuç (İyi) -->
+  <path d="M415 159 L480 159 L480 125 L520 125" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="518,120 528,125 518,130" fill="#5a7a9a"/>
+
+  <!-- Sonuç: İyi -->
+  <rect x="530" y="105" width="95" height="40" rx="8" fill="url(#resultGrad)" filter="url(#shadow)"/>
+  <text x="577" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">İyi</text>
+
+  <!-- Ok: else -> sonuç (Kaldı) -->
+  <path d="M415 209 L480 209 L480 175 L520 175" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="518,170 528,175 518,180" fill="#5a7a9a"/>
+
+  <!-- Sonuç: Kaldı -->
+  <rect x="530" y="155" width="95" height="40" rx="8" fill="url(#resultGrad)" filter="url(#shadow)"/>
+  <text x="577" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Kaldı</text>
+
+  <!-- Koşul notu -->
+  <rect x="30" y="95" width="140" height="55" rx="8" fill="#ffffff" opacity="0.85" filter="url(#shadow)"/>
+  <text x="100" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3a5a7a" font-weight="bold">Koşullar</text>
+  <text x="100" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6a8a">True ve False</text>
+  <text x="100" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6a8a">ile değerlendirilir</text>
+
+  <!-- Ok: Koşul notu -> if -->
+  <path d="M170 122 L225 122" stroke="#5a7a9a" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="223,117 233,122 223,127" fill="#5a7a9a"/>
+
+  <!-- Sıralama notu -->
+  <rect x="30" y="185" width="140" height="55" rx="8" fill="#ffffff" opacity="0.85" filter="url(#shadow)"/>
+  <text x="100" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3a5a7a" font-weight="bold">Sıralama Önemli</text>
+  <text x="100" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6a8a">Özel durumdan</text>
+  <text x="100" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6a8a">genel duruma</text>
+
+  <!-- Ok: Sıralama notu -> else -->
+  <path d="M170 212 L225 212" stroke="#5a7a9a" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="223,207 233,212 223,217" fill="#5a7a9a"/>
+
+  <!-- Alt açıklama -->
+  <text x="320" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7a9a">if-elif-else ile Akış Yönetimi</text>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a9aba">Karşılaştırma ve mantıksal operatörlerle</text>
+  <text x="320" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a9aba">dinamik karar mekanizması</text>
+</svg>

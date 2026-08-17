@@ -8,6 +8,7 @@ tags:
   - Python
   - String
   - Metin İşleme
+image: /img/pythonda-karakter-dizileri-69.png
 ---
 
 Programlama dünyasında isimlerden e-posta adreslerine, kullanıcı mesajlarından dosya içeriklerine kadar pek çok veri metin biçiminde karşımıza çıkar. Python, bu metinleri `str` yani karakter dizisi türüyle temsil eder. String’leri yalnızca ekrana yazdırılan cümleler olarak değil, indekslenebilen ve güçlü metotlarla dönüştürülebilen karakter koleksiyonları olarak düşünmek gerekir.
@@ -39,6 +40,9 @@ print(kelime[-2])   # o
 | `kelime[2]` | Üçüncü karakter | `t` |
 | `kelime[-1]` | Son karakter | `n` |
 | `len(kelime)` | Karakter sayısı | `6` |
+
+![pythonda-karakter-dizileri-69](/img/pythonda-karakter-dizileri-69.svg)
+
 
 Var olmayan bir indekse erişmek `IndexError` üretir. Örneğin altı karakterli bir string’de `kelime[6]` kullanılamaz.
 

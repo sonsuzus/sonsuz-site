@@ -8,6 +8,7 @@ tags:
   - Python
   - Dekoratörler
   - İleri Düzey Fonksiyonlar
+image: /img/python-dekoratorleri-fonksiyonlara-51.png
 ---
 
 Bir fonksiyona zaman ölçümü, yetki kontrolü veya kayıt tutma özelliği eklemek istediğinizi düşünün. Aynı kodları her fonksiyonun içine yerleştirmek çalışır; ancak kısa sürede bakım kâbusuna dönüşür. Python dekoratörleri, mevcut fonksiyonun kaynak kodunu değiştirmeden onu başka bir fonksiyonla sarar ve yeni davranışlar kazandırır. Kısacası dekoratör, fonksiyonunuzun üzerine giydirilen akıllı bir monttur.
@@ -38,6 +39,9 @@ Bu örnekte fonksiyon çalıştırılmadan `fonksiyon` değişkenine aktarılır
 | `selamla('Ada')` | Fonksiyon çağrısı | Bir değer üretir |
 | `dekorator(selamla)` | Fonksiyonu dönüştürme | Yeni bir fonksiyon döndürür |
 | `@dekorator` | Sözdizimsel kısayol | Otomatik sarma sağlar |
+
+![python-dekoratorleri-fonksiyonlara-51](/img/python-dekoratorleri-fonksiyonlara-51.svg)
+
 
 ## İlk dekoratörümüz
 

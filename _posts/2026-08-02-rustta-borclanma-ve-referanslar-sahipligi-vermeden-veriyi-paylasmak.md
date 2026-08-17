@@ -8,7 +8,11 @@ tags:
   - Rust
   - Borrowing
   - Referanslar
+image: /img/rustta-borclanma-ve-70.png
 ---
+
+![rustta-borclanma-ve-70](/img/rustta-borclanma-ve-70.svg)
+
 
 Rust’ın bellek güvenliğindeki süper gücü, verileri sürekli kopyalamak veya çöp toplayıcı kullanmak değil; sahiplik ile borçlanmayı derleme aşamasında denetlemektir. Bir değeri başka bir fonksiyona gönderirken sahipliğini devretmek istemiyorsak `&` işaretiyle referans oluştururuz. Böylece fonksiyon veriyi geçici olarak ödünç alır; fakat onun kalıcı sahibi olmaz.
 ``

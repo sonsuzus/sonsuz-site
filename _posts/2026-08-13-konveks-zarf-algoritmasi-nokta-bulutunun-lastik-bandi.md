@@ -9,6 +9,7 @@ tags:
   - hesaplamalı geometri
   - python
   - convex hull
+image: /img/konveks-zarf-algoritmasi-73.png
 ---
 
 Bir harita üzerindeki sensörleri, bir oyundaki çarpışma sınırlarını veya bir görseldeki nesnenin dış konturunu düşünün. Konveks zarf (convex hull), verilen nokta kümesini içine alan en küçük dışbükey çokgendir. Sezgisel olarak noktaların etrafına lastik bir bant geçirirsek, bant gevşediğinde oluşan şekil konveks zarftır. İçeride kalan noktalar bantla temas etmez; yalnızca sınırdaki kritik noktalar sonuçta yer alır.
@@ -79,3 +80,6 @@ Kodda `<= 0` kullanılması, aynı doğru üzerindeki ara noktaları sonuçtan �
 | Jarvis March | $O(nh)$ | Az köşeli kümelerde iyi | Çok köşede yavaşlar |
 
 Konveks zarf, daha gelişmiş geometri araçlarının da temelidir: en uzak iki nokta, minimum alanlı sınırlayıcı dikdörtgen ve çarpışma tespiti gibi problemler çoğu zaman önce bu “lastik bant” sınırını çıkararak sadeleşir.
+
+![konveks-zarf-algoritmasi-73](/img/konveks-zarf-algoritmasi-73.svg)
+

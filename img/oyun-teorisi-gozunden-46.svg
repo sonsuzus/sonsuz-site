@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="mitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4edda"/>
+      <stop offset="100%" stop-color="#b7e4c7"/>
+    </linearGradient>
+    <linearGradient id="gplGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cce5ff"/>
+      <stop offset="100%" stop-color="#b8d4f0"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5cc"/>
+      <stop offset="100%" stop-color="#ffeaa7"/>
+    </linearGradient>
+    <linearGradient id="actorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d5f5"/>
+      <stop offset="100%" stop-color="#d8b4e2"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Lisans Strateji Oyunu</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="120" width="150" height="48" rx="12" fill="url(#centerGrad)" filter="url(#shadow)" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a4a00">Açık Kaynak</text>
+  <text x="320" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a4a00">Lisans Seçimi</text>
+
+  <!-- MIT kutusu -->
+  <rect x="40" y="60" width="130" height="52" rx="10" fill="url(#mitGrad)" filter="url(#shadow)" stroke="#28a745" stroke-width="1.5"/>
+  <text x="105" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#155724">MIT</text>
+  <text x="105" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#155724">Hızlı yayılma</text>
+
+  <!-- GPL kutusu -->
+  <rect x="470" y="60" width="130" height="52" rx="10" fill="url(#gplGrad)" filter="url(#shadow)" stroke="#007bff" stroke-width="1.5"/>
+  <text x="535" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#004085">GPL</text>
+  <text x="535" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#004085">Ortak havuz</text>
+
+  <!-- Aktörler -->
+  <rect x="40" y="220" width="130" height="48" rx="10" fill="url(#actorGrad)" filter="url(#shadow)" stroke="#6f42c1" stroke-width="1.2"/>
+  <text x="105" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a2d7a">Geliştirici</text>
+  <text x="105" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a2d7a">İtibar + katkı</text>
+
+  <rect x="255" y="230" width="130" height="48" rx="10" fill="url(#actorGrad)" filter="url(#shadow)" stroke="#6f42c1" stroke-width="1.2"/>
+  <text x="320" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a2d7a">Şirket</text>
+  <text x="320" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a2d7a">Rekabet avantajı</text>
+
+  <rect x="470" y="220" width="130" height="48" rx="10" fill="url(#actorGrad)" filter="url(#shadow)" stroke="#6f42c1" stroke-width="1.2"/>
+  <text x="535" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a2d7a">Topluluk</text>
+  <text x="535" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a2d7a">Ortak fayda</text>
+
+  <!-- Oklar: MIT bağlantıları -->
+  <path d="M 170 86 L 235 120" stroke="#28a745" stroke-width="2" fill="none"/>
+  <polygon points="235,120 226,114 228,124" fill="#28a745"/>
+
+  <path d="M 105 112 L 105 210" stroke="#6f42c1" stroke-width="1.8" fill="none"/>
+  <polygon points="105,210 100,201 110,201" fill="#6f42c1"/>
+
+  <!-- Oklar: GPL bağlantıları -->
+  <path d="M 470 86 L 405 120" stroke="#007bff" stroke-width="2" fill="none"/>
+  <polygon points="405,120 414,114 412,124" fill="#007bff"/>
+
+  <path d="M 535 112 L 535 210" stroke="#6f42c1" stroke-width="1.8" fill="none"/>
+  <polygon points="535,210 530,201 540,201" fill="#6f42c1"/>
+
+  <!-- Merkezden aktörlere oklar -->
+  <path d="M 320 168 L 320 220" stroke="#d4a017" stroke-width="1.8" fill="none"/>
+  <polygon points="320,220 315,211 325,211" fill="#d4a017"/>
+
+  <!-- Strateji etiketleri -->
+  <text x="320" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a6d00" font-style="italic">strateji</text>
+
+  <!-- Alt bilgi: kazanç matrisi ipucu -->
+  <rect x="180" y="285" width="280" height="28" rx="8" fill="#e8f4f8" filter="url(#shadow)" stroke="#5bc0de" stroke-width="1"/>
+  <text x="320" y="303" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Tekrarlanan oyun: gelecek değeri iş birliğini belirler</text>
+
+  <!-- Oyun teorisi sembolü -->
+  <text x="590" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" fill="#6c757d" opacity="0.6">δ ↑</text>
+</svg>

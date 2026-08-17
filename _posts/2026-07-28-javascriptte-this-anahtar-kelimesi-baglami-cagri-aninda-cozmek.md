@@ -8,6 +8,7 @@ tags:
   - JavaScript
   - this
   - fonksiyonlar
+image: /img/javascriptte-this-anahtar-92.png
 ---
 
 JavaScript’te `this`, ilk bakışta “fonksiyonun sahibi” gibi görünür; ancak gerçekte değeri fonksiyonun nerede tanımlandığından çok **nasıl çağrıldığına** bağlıdır. Aynı fonksiyon bir çağrıda kullanıcı nesnesini, başka bir çağrıda global nesneyi, hatta `undefined` değerini gösterebilir. Bu yüzden `this`, değişmez bir adres etiketi değil, çalışma zamanında çözülen dinamik bir bağlam referansıdır.
@@ -112,3 +113,6 @@ console.log(arac.marka);
 ```
 
 Özet çözüm sırası şöyledir: Önce `new` kullanımını, sonra `bind`, `call` veya `apply` bağlamasını, ardından metot çağrısını kontrol edin. Hiçbiri yoksa strict mod durumuna bakın. Ok fonksiyonunda ise çağrı biçimini değil, dış kapsamı inceleyin. Böylece `this`, gizemli bir JavaScript büyüsü olmaktan çıkıp kuralları olan bir bağlam sistemi hâline gelir.
+
+![javascriptte-this-anahtar-92](/img/javascriptte-this-anahtar-92.svg)
+

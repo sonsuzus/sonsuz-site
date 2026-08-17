@@ -9,7 +9,11 @@ tags:
   - heap
   - öncelik kuyruğu
   - python
+image: /img/heap-veri-yapisi-72.png
 ---
+
+![heap-veri-yapisi-72](/img/heap-veri-yapisi-72.svg)
+
 
 Bir iş kuyruğunda herkes sırayla beklemek zorunda değildir: acil bir hata kaydı, normal bir rapordan önce işlenmelidir. İşte **öncelik kuyruğu** bu ihtiyacı çözer; **heap (ikili yığın)** ise en yüksek ya da en düşük öncelikli elemana son derece hızlı ulaşmanın pratik yoludur. Heap, "tam sıralı dizi" kadar katı davranmaz; yalnızca her ebeveynin çocuklarıyla olan ilişkisini düzenler. Bu küçük kural, büyük performans kazancı sağlar.
 ``

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="latent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddd6fe"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="output" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde6c6"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#64748b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#64748b" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="574" cy="45" r="75" fill="#d9f4ed" opacity="0.42"/>
+  <circle cx="85" cy="284" r="84" fill="#dcecff" opacity="0.48"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#334155">Görüntü modelinin sayısal görme akışı</text>
+  <line x1="28" y1="39" x2="612" y2="39" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Input visual -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="70" width="115" height="132" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="40" y="83" width="91" height="72" rx="11" fill="#c8e6f5"/>
+  <path d="M40 135 C54 114 66 121 77 134 C88 109 107 111 131 132 L131 155 L40 155 Z" fill="#91b8d0"/>
+  <circle cx="111" cy="100" r="10" fill="#fff2b5"/>
+  <path d="M57 98 L53 112 M70 94 L65 109 M83 99 L78 114 M96 92 L91 108" stroke="#7aa2bd" stroke-width="2" stroke-linecap="round"/>
+  <text x="85.5" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#334155">Görüntü</text>
+  <text x="85.5" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">piksel tensörü</text>
+
+  <!-- Prompt -->
+  <g filter="url(#soft)">
+    <rect x="28" y="218" width="115" height="48" rx="16" fill="#e1f3e8"/>
+  </g>
+  <path d="M49 237 h18 M49 244 h43 M49 251 h31" stroke="#4d8c72" stroke-width="2" stroke-linecap="round"/>
+  <text x="92" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386451">Metin istemi</text>
+
+  <!-- arrows inputs -->
+  <path d="M143 132 H169 V143 H181" fill="none" stroke="#829ab0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="181,143 172,138 172,148" fill="#829ab0"/>
+  <path d="M143 242 H160 V176 H181" fill="none" stroke="#829ab0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="181,176 172,171 172,181" fill="#829ab0"/>
+
+  <!-- Encoder -->
+  <g filter="url(#shadow)">
+    <rect x="181" y="101" width="116" height="117" rx="20" fill="#dceff5"/>
+  </g>
+  <rect x="201" y="123" width="76" height="42" rx="10" fill="#f7fdff" stroke="#a8cbd7" stroke-width="1.5"/>
+  <path d="M213 144 H226 M231 136 V152 M238 130 V158 M245 134 V154 M252 127 V161 M260 138 V150" stroke="#5a91a3" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="239" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#28586a">Kodlayıcı</text>
+  <text x="239" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547787">özellik çıkarımı</text>
+
+  <!-- Encoder arrow -->
+  <path d="M297 160 H324" fill="none" stroke="#829ab0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="324,160 315,155 315,165" fill="#829ab0"/>
+
+  <!-- Latent Space -->
+  <g filter="url(#shadow)">
+    <circle cx="385" cy="160" r="70" fill="url(#latent)"/>
+  </g>
+  <circle cx="385" cy="160" r="54" fill="none" stroke="#ffffff" stroke-opacity="0.65" stroke-width="1.5"/>
+  <circle cx="359" cy="137" r="8" fill="#fff" opacity="0.95"/>
+  <circle cx="401" cy="127" r="7" fill="#b8f0df"/>
+  <circle cx="416" cy="162" r="10" fill="#fbb6ce"/>
+  <circle cx="372" cy="177" r="9" fill="#fde68a"/>
+  <circle cx="393" cy="192" r="6" fill="#fff"/>
+  <path d="M359 137 L401 127 L416 162 L393 192 L372 177 L359 137 M372 177 L416 162 M401 127 L393 192" fill="none" stroke="#7669aa" stroke-width="1.4" opacity="0.7"/>
+  <text x="385" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#443b70">Gizil uzay</text>
+  <text x="385" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b5785">ilişki örüntüleri</text>
+
+  <!-- Latent arrow -->
+  <path d="M455 160 H475" fill="none" stroke="#829ab0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="475,160 466,155 466,165" fill="#829ab0"/>
+
+  <!-- Diffusion -->
+  <g filter="url(#shadow)">
+    <rect x="475" y="91" width="137" height="137" rx="21" fill="#f4e3f3"/>
+  </g>
+  <path d="M503 130 C518 113 549 113 567 130 C583 145 581 172 564 184 C546 197 516 190 505 173" fill="none" stroke="#9d6d9d" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="502,173 512,172 507,181" fill="#9d6d9d"/>
+  <circle cx="516" cy="147" r="3.5" fill="#a78bba"/>
+  <circle cx="532" cy="132" r="3.5" fill="#a78bba"/>
+  <circle cx="552" cy="146" r="3.5" fill="#a78bba"/>
+  <circle cx="550" cy="169" r="3.5" fill="#a78bba"/>
+  <circle cx="527" cy="174" r="3.5" fill="#a78bba"/>
+  <text x="543.5" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#70476f">Difüzyon</text>
+
+  <!-- Output branch -->
+  <path d="M543 228 V245" fill="none" stroke="#829ab0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="543,245 538,236 548,236" fill="#829ab0"/>
+  <g filter="url(#soft)">
+    <rect x="477" y="251" width="135" height="45" rx="15" fill="url(#output)"/>
+  </g>
+  <path d="M493 279 C503 263 512 273 520 280 C532 261 549 265 563 280 L563 285 L493 285 Z" fill="#d985a8" opacity="0.82"/>
+  <circle cx="552" cy="265" r="5" fill="#fff0b4"/>
+  <text x="580" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#704256">Yeni görüntü</text>
+
+  <!-- conceptual annotation -->
+  <g filter="url(#soft)">
+    <rect x="185" y="254" width="250" height="39" rx="15" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="204" cy="273.5" r="8" fill="#b8e5d0"/>
+  <path d="M200 274 L203 277 L209 270" fill="none" stroke="#39745a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="220" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#475569">Anlam değil: olasılıksal temsil ve örnekleme</text>
+</svg>

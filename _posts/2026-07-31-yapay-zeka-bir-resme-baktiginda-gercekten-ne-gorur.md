@@ -8,6 +8,7 @@ tags:
   - yapay zekâ
   - üretken sanat
   - bilgisayarlı görü
+image: /img/yapay-zeka-bir-38.png
 ---
 
 Bir görsel üreticiye “yağmurlu bir İstanbul akşamını Van Gogh tarzında çiz” dediğimizde ortaya çıkan görüntü bizi şaşırtabilir. Model; yağmuru, İstanbul’u ve Van Gogh’u gerçekten görmüş, hatta anlamış gibi davranır. Peki ortada bir görme deneyimi mi vardır, yoksa yalnızca matematiksel örüntülerin ustaca yeniden düzenlenmesi mi? Bu soru, yapay zekâ sanatını teknik olduğu kadar felsefi bir tartışmaya dönüştürüyor.
@@ -68,3 +69,6 @@ Burada $x_0$ özgün görüntü, $\epsilon$ rastgele gürültü, $x_t$ ise belir
 “Model görüyor mu?” sorusunun yanıtı, görmeyi nasıl tanımladığımıza bağlıdır. Görmek; görsel özellikleri ayırt etmek ve nesneler arasında ilişki kurmaksa model işlevsel anlamda görüyor sayılabilir. Görmek; bedensel deneyim, bilinç, niyet ve dünyayla yaşanmış bağ gerektiriyorsa bugünkü modellerin gördüğünü söylemek zordur.
 
 Yine de onları basit birer fotokopi makinesi saymak da yetersizdir. Modeller öğrendikleri temsilleri yeni bileşimlerde kullanabilir; fakat seçimleri eğitim verisinin kültürel önyargılarını ve insan üreticilerin kararlarını taşır. Belki de yapay zekâ ne bütünüyle sanatçı ne de edilgen bir fırçadır. O, insan kültürünün sayısal bir aynasıdır: Görmeden görüntü üretir, yaşamadan üslup taklit eder ve tam da bu çelişki sayesinde sanatın ne olduğunu yeniden sormamıza yol açar.
+
+![yapay-zeka-bir-38](/img/yapay-zeka-bir-38.svg)
+

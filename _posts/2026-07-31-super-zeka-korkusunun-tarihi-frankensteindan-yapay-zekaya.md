@@ -8,7 +8,11 @@ tags:
   - yapay zekâ
   - teknoloji tarihi
   - Frankenstein kompleksi
+image: /img/super-zeka-korkusunun-92.png
 ---
+
+![super-zeka-korkusunun-92](/img/super-zeka-korkusunun-92.svg)
+
 
 İnsanlık, yaptığı aletlerin işini kolaylaştırmasını ister; fakat aynı aletler bağımsız hareket etmeye başladığında huzursuz olur. Bir çekiç tehdit sayılmazken düşünen, karar veren veya sahibine itiraz eden bir makine neden korkutucudur? Süper zekâ tartışmalarının arkasında yalnızca teknik riskler değil, yüzyıllardır tekrarlanan kültürel bir hikâye vardır: Yaratıcının, kontrolünü kaybettiği yaratığıyla yüzleşmesi.
 

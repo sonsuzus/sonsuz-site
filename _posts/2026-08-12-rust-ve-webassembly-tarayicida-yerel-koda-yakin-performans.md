@@ -10,6 +10,7 @@ tags:
   - WASM
   - Frontend
   - Performans
+image: /img/rust-ve-webassembly-18.png
 ---
 
 Web uygulamalarında JavaScript hâlâ merkezdedir; ancak yoğun hesaplama, görüntü işleme, fizik simülasyonu ve sıkıştırma gibi görevlerde tek başına ideal olmayabilir. Rust ile WebAssembly (WASM) ikilisi, tarayıcı içinde güvenli bellek yönetimi ve yerel koda yakın çalışma hızı sunarak bu açığı kapatır. Buradaki amaç JavaScript’i tamamen kovmak değil; arayüzü JavaScript’e, hesaplama motorunu ise Rust’a vermektir.
@@ -96,3 +97,6 @@ WASM her problem için sihirli hız iksiri değildir. DOM güncellemek, buton ol
 | Kriptografik veya sıkıştırma işlemleri | Rust + WASM |
 
 Sonuç olarak Rust ve WASM, frontend’in yerine geçen değil, onu güçlendiren bir ikilidir. Ölçüm yapmadan optimizasyon kararı vermeyin: önce tarayıcı profil aracında darboğazı bulun, sonra hesaplama yoğun bölümü WASM’a taşıyın. Böylece hem JavaScript’in çevikliğini hem de Rust’ın disiplinli performansını aynı uygulamada kullanabilirsiniz.
+
+![rust-ve-webassembly-18](/img/rust-ve-webassembly-18.svg)
+

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="rootGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7cb8e8"/>
+      <stop offset="100%" stop-color="#5a9bd5"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#8bc4d9"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c8e6c9"/>
+      <stop offset="100%" stop-color="#a5d6a7"/>
+    </linearGradient>
+    <linearGradient id="opGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="queueGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8eaf6"/>
+      <stop offset="100%" stop-color="#c5cae9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowSmall" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000025"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Heap ve Öncelik Kuyruğu</text>
+  <line x1="120" y1="36" x2="520" y2="36" stroke="#b0bec5" stroke-width="1" opacity="0.5"/>
+
+  <!-- Heap ağacı - kök -->
+  <rect x="280" y="52" width="48" height="32" rx="8" fill="url(#rootGrad)" filter="url(#shadow)"/>
+  <text x="304" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">3</text>
+
+  <!-- Seviye 1 -->
+  <rect x="190" y="108" width="42" height="28" rx="7" fill="url(#nodeGrad)" filter="url(#shadowSmall)"/>
+  <text x="211" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a237e">7</text>
+
+  <rect x="376" y="108" width="42" height="28" rx="7" fill="url(#nodeGrad)" filter="url(#shadowSmall)"/>
+  <text x="397" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a237e">12</text>
+
+  <!-- Seviye 2 - yapraklar -->
+  <rect x="110" y="164" width="38" height="26" rx="6" fill="url(#leafGrad)" filter="url(#shadowSmall)"/>
+  <text x="129" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b5e20">19</text>
+
+  <rect x="200" y="164" width="38" height="26" rx="6" fill="url(#leafGrad)" filter="url(#shadowSmall)"/>
+  <text x="219" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b5e20">25</text>
+
+  <rect x="330" y="164" width="38" height="26" rx="6" fill="url(#leafGrad)" filter="url(#shadowSmall)"/>
+  <text x="349" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b5e20">36</text>
+
+  <rect x="420" y="164" width="38" height="26" rx="6" fill="url(#leafGrad)" filter="url(#shadowSmall)"/>
+  <text x="439" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b5e20">49</text>
+
+  <!-- Bağlantı çizgileri - kök ile seviye 1 -->
+  <line x1="290" y1="84" x2="215" y2="106" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="318" y1="84" x2="392" y2="106" stroke="#78909c" stroke-width="1.5"/>
+
+  <!-- Bağlantı çizgileri - seviye 1 ile seviye 2 -->
+  <line x1="200" y1="136" x2="135" y2="162" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="222" y1="136" x2="215" y2="162" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="386" y1="136" x2="355" y2="162" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="408" y1="136" x2="435" y2="162" stroke="#78909c" stroke-width="1.5"/>
+
+  <!-- Ok uçları - elle çizilmiş -->
+  <polygon points="215,106 222,102 219,110" fill="#78909c"/>
+  <polygon points="392,106 385,102 388,110" fill="#78909c"/>
+  <polygon points="135,162 142,158 139,166" fill="#78909c"/>
+  <polygon points="215,162 222,158 219,166" fill="#78909c"/>
+  <polygon points="355,162 362,158 359,166" fill="#78909c"/>
+  <polygon points="435,162 442,158 439,166" fill="#78909c"/>
+
+  <!-- Min-heap etiketi -->
+  <rect x="96" y="198" width="120" height="22" rx="6" fill="#e3f2fd" opacity="0.8"/>
+  <text x="156" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1565c0">Min-Heap Kuralı</text>
+
+  <!-- Öncelik kuyruğu bloğu -->
+  <rect x="480" y="52" width="140" height="90" rx="10" fill="url(#queueGrad)" filter="url(#shadow)"/>
+  <text x="550" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#283593">Öncelik Kuyruğu</text>
+  <line x1="490" y1="78" x2="610" y2="78" stroke="#7986cb" stroke-width="0.8"/>
+  <text x="550" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3949ab">peek: O(1)</text>
+  <text x="550" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3949ab">push: O(log n)</text>
+  <text x="550" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3949ab">pop: O(log n)</text>
+
+  <!-- İşlemler bloğu -->
+  <rect x="480" y="160" width="140" height="80" rx="10" fill="url(#opGrad)" filter="url(#shadow)"/>
+  <text x="550" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Temel İşlemler</text>
+  <line x1="490" y1="186" x2="610" y2="186" stroke="#ffb74d" stroke-width="0.8"/>
+  <text x="550" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#bf360c">sift-up (ekleme)</text>
+  <text x="550" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#bf360c">sift-down (çıkarma)</text>
+  <text x="550" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#bf360c">kök: en öncelikli</text>
+
+  <!-- Heap ile kuyruk arası ok -->
+  <line x1="430" y1="80" x2="478" y2="80" stroke="#546e7a" stroke-width="1.5"/>
+  <polygon points="478,80 468,75 468,85" fill="#546e7a"/>
+
+  <!-- Kuyruk ile işlemler arası ok -->
+  <line x1="550" y1="142" x2="550" y2="158" stroke="#546e7a" stroke-width="1.5"/>
+  <polygon points="550,158 545,148 555,148" fill="#546e7a"/>
+
+  <!-- Alt bilgi - dizi gösterimi -->
+  <rect x="96" y="240" width="280" height="40" rx="8" fill="#eceff1" opacity="0.7"/>
+  <text x="236" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">Dizi: [3, 7, 12, 19, 25, 36, 49]</text>
+  <text x="236" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#607d8b">sol(i)=2i+1, sağ(i)=2i+2, ebeveyn(i)=(i-1)/2</text>
+
+  <!-- Kısmi sıralama notu -->
+  <rect x="400" y="250" width="120" height="24" rx="6" fill="#fce4ec" opacity="0.8"/>
+  <text x="460" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ad1457">Kısmi sıralama</text>
+
+  <!-- Kardeşler arası bağlantı notu -->
+  <path d="M 129 190 Q 129 230 460 230 Q 460 274 460 250" stroke="#b0bec5" stroke-width="0.8" fill="none" stroke-dasharray="4,3"/>
+</svg>

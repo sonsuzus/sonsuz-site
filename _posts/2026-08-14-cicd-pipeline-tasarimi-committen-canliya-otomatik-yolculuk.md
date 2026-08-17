@@ -8,6 +8,7 @@ tags:
   - CI/CD
   - DevOps
   - GitHub Actions
+image: /img/cicd-pipeline-tasarimi-54.png
 ---
 
 Bir geliştiricinin `git push` komutundan sonra kahvesini yudumlarken testlerin çalışması, güvenlik kontrollerinin yapılması ve uygulamanın güvenle dağıtılması kulağa sihir gibi gelir. Aslında bunun adı CI/CD pipeline tasarımıdır. İyi kurulmuş bir pipeline, tekrarlanan insan işlerini otomatikleştirir; hataları erken yakalar ve sürüm alma stresini öngörülebilir bir sürece dönüştürür.
@@ -29,6 +30,9 @@ Bu formül akademik bir ölçüm değildir; önemli mesaj şudur: yalnızca çok
 | Entegrasyon testi | Servislerin birlikte çalışmasını denemek | Ortam veya API uyumsuzluğu görünür |
 | Paketleme | Değişmez dağıtım artefaktı üretmek | Sürüm yayınlanmaz |
 | Deploy | Artefaktı hedef ortama taşımak | Önceki sürüme dönülür |
+
+![cicd-pipeline-tasarimi-54](/img/cicd-pipeline-tasarimi-54.svg)
+
 
 Örnek olarak Node.js tabanlı bir servis için GitHub Actions kullanabiliriz. Aşağıdaki iş akışı, `main` dalına yapılan her gönderimde kodu kurar, test eder, Docker imajı üretir ve kayıt defterine yollar. Gerçek projede kayıt defteri kimlik bilgileri kesinlikle repository secret olarak saklanmalıdır.
 

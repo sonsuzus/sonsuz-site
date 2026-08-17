@@ -8,6 +8,7 @@ tags:
   - oyun teorisi
   - açık kaynak
   - yazılım lisansları
+image: /img/oyun-teorisi-gozunden-46.png
 ---
 
 Bir açık kaynak lisansı seçmek, yalnızca hukuk metinleri arasında tercih yapmak değildir; geliştiriciler, şirketler ve kullanıcılar arasında oynanan uzun vadeli bir strateji oyununa katılmaktır. MIT özgürlüğü en az koşulla dağıtırken GPL, bu özgürlüğün sonraki sürümlerde de korunmasını ister. Peki rasyonel aktörlerin bulunduğu bir ekosistemde hangi yaklaşım kazanır?
@@ -33,6 +34,9 @@ Burada $A$ benimsenme oranını, $C$ topluluğa dönen katkıyı, $R$ rekabet av
 | Katkının geri dönmesi | Gönüllülüğe bağlı | Lisansla teşvik edilir |
 | Uyumluluk maliyeti | Düşük | Daha yüksek |
 | Ekosistem etkisi | Hızlı yayılma | Ortak havuzu koruma |
+
+![oyun-teorisi-gozunden-46](/img/oyun-teorisi-gozunden-46.svg)
+
 
 ## Tekrarlanan oyun neden önemli?
 

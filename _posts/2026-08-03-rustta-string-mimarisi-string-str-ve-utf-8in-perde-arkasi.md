@@ -8,9 +8,13 @@ tags:
   - Rust
   - String
   - UTF-8
+image: /img/rustta-string-mimarisi-30.png
 ---
 
 Rust’ta metinlerle çalışmaya başlayanların karşısına kısa sürede iki oyuncu çıkar: `String` ve `&str`. İlk bakışta ikisi de yazı tutuyor gibi görünür; ancak bellek yönetimi, sahiplik ve boyut açısından aralarında önemli farklar vardır. Bu ayrımı anlamak, hem gereksiz kopyalamaları önler hem de Rust’ın ödünç alma sistemini çok daha anlaşılır hâle getirir.
+
+![rustta-string-mimarisi-30](/img/rustta-string-mimarisi-30.svg)
+
 ``
 ## İki Farklı Metin Görünümü
 

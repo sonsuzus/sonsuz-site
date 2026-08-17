@@ -10,6 +10,7 @@ tags:
   - Bilimsel Hesaplama
   - Performans
   - Sayısal Analiz
+image: /img/julia-ile-bilimsel-50.png
 ---
 
 Bilimsel hesaplamada hız yalnızca “kod ne kadar çabuk bitti?” sorusu değildir; algoritma, bellek erişimi, derleyici ve kullanılan kütüphanelerin ortak sonucudur. Julia, MATLAB benzeri okunabilir sözdizimini derlenen bir dilin performans hedefiyle birleştirirken; Python çoğunlukla NumPy, SciPy ve Numba gibi araçlarla yüksek performansa ulaşır. Doğru karşılaştırma, saf döngüler ile vektörleştirilmiş işlemleri birbirinden ayırmayı gerektirir.
@@ -26,6 +27,9 @@ Julia’nın temel kozu **JIT (just-in-time) derleme** ve tür uzmanlaşmasıdı
 | Dizi işlemleri | Yerleşik yayınlama (`.`) | NumPy vektörleştirmesi | Genellikle yakın |
 | Doğrusal cebir | BLAS/LAPACK çağrıları | NumPy/SciPy üzerinden BLAS | Çoğunlukla benzer |
 | İlk çalıştırma | Derleme maliyeti var | Genellikle daha hızlı başlar | Python avantajlı olabilir |
+
+![julia-ile-bilimsel-50](/img/julia-ile-bilimsel-50.svg)
+
 
 Örneğin aşağıdaki çekirdek, her eleman için $f(x)=\sin(x)^2+\cos(x)^2$ hesaplar. Matematiksel olarak sonuç $1$ olsa da örnek, döngü maliyetini gözlemlemek için kullanışlıdır. Julia’da noktasal işleç kullanmak, ara diziler üretmeden füzyon yapmaya yardımcı olur.
 

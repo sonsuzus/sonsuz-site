@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eafaf1"/>
+      <stop offset="100%" stop-color="#d5f5e3"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef9e7"/>
+      <stop offset="100%" stop-color="#fdebd0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4ecf7"/>
+      <stop offset="100%" stop-color="#e8daef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdedec"/>
+      <stop offset="100%" stop-color="#fadbd8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">CI/CD Pipeline Yolculuğu</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="255" y="55" width="130" height="40" rx="20" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#85c1e9" stroke-width="1.5"/>
+  <text x="320" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">git push</text>
+
+  <!-- Aşama 1: Lint ve Build -->
+  <rect x="60" y="130" width="140" height="45" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#82e0aa" stroke-width="1.5"/>
+  <text x="130" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Lint ve Build</text>
+  <text x="130" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">Sözdizimi + Derleme</text>
+
+  <!-- Aşama 2: Unit Test -->
+  <rect x="250" y="130" width="140" height="45" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#f9e79f" stroke-width="1.5"/>
+  <text x="320" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9a7d0a">Unit Test</text>
+  <text x="320" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">Fonksiyon Doğrulama</text>
+
+  <!-- Aşama 3: Entegrasyon Testi -->
+  <rect x="440" y="130" width="140" height="45" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#d7bde2" stroke-width="1.5"/>
+  <text x="510" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6c3483">Entegrasyon Testi</text>
+  <text x="510" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">Servis Uyumu</text>
+
+  <!-- Aşama 4: Paketleme -->
+  <rect x="60" y="220" width="140" height="45" rx="10" fill="url(#boxGrad5)" filter="url(#shadow)" stroke="#f1948a" stroke-width="1.5"/>
+  <text x="130" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#943126">Paketleme</text>
+  <text x="130" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">Docker İmajı</text>
+
+  <!-- Aşama 5: Deploy -->
+  <rect x="250" y="220" width="140" height="45" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#85c1e9" stroke-width="1.5"/>
+  <text x="320" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Deploy</text>
+  <text x="320" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">Canlı Ortam</text>
+
+  <!-- Aşama 6: İzleme -->
+  <rect x="440" y="220" width="140" height="45" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#82e0aa" stroke-width="1.5"/>
+  <text x="510" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">İzleme</text>
+  <text x="510" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">Health Check</text>
+
+  <!-- Oklar: merkezden aşamalara -->
+  <!-- Merkezden Aşama 1 -->
+  <path d="M 270 95 Q 130 100 130 125" fill="none" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="130,130 124,118 136,118" fill="#5d6d7e"/>
+
+  <!-- Merkezden Aşama 2 -->
+  <path d="M 320 95 L 320 125" fill="none" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="320,130 314,118 326,118" fill="#5d6d7e"/>
+
+  <!-- Merkezden Aşama 3 -->
+  <path d="M 370 95 Q 510 100 510 125" fill="none" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="510,130 504,118 516,118" fill="#5d6d7e"/>
+
+  <!-- Aşama 1'den Aşama 4'e -->
+  <path d="M 130 175 L 130 215" fill="none" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="130,220 124,208 136,208" fill="#5d6d7e"/>
+
+  <!-- Aşama 2'den Aşama 5'e -->
+  <path d="M 320 175 L 320 215" fill="none" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="320,220 314,208 326,208" fill="#5d6d7e"/>
+
+  <!-- Aşama 3'ten Aşama 6'ya -->
+  <path d="M 510 175 L 510 215" fill="none" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="510,220 504,208 516,208" fill="#5d6d7e"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d" font-style="italic">Build once, deploy many</text>
+</svg>

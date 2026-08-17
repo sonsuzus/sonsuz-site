@@ -8,7 +8,11 @@ tags:
   - JavaScript
   - LocalStorage
   - Fetch API
+image: /img/localstorage-ve-fetch-23.png
 ---
+
+![localstorage-ve-fetch-23](/img/localstorage-ve-fetch-23.svg)
+
 
 Modern web uygulamaları yalnızca ekranda bilgi göstermez; kullanıcı tercihlerini hatırlar, sunuculardan güncel veriler alır ve bağlantı kesildiğinde bile belirli işlevleri sürdürebilir. JavaScript’in **LocalStorage** ve **Fetch API** araçları, bu deneyimi oluşturmanın iki temel parçasıdır. Biri verileri tarayıcıda saklarken diğeri uygulamanın dış dünyayla konuşmasını sağlar.
 

@@ -8,7 +8,11 @@ tags:
   - Python
   - Akış Kontrolü
   - Koşullu İfadeler
+image: /img/pythonda-kosullu-durumlar-59.png
 ---
+
+![pythonda-kosullu-durumlar-59](/img/pythonda-kosullu-durumlar-59.svg)
+
 
 Bir programın yalnızca komutları sırayla çalıştırması çoğu zaman yeterli değildir. Kullanıcının yaşına göre farklı mesaj göstermek, hatalı girişleri engellemek veya bir oyundaki karakterin canı sıfıra düştüğünde macerayı bitirmek için programın karar vermesi gerekir. Python’daki `if`, `elif` ve `else` blokları, kodumuza tam olarak bu karar mekanizmasını kazandırır.
 

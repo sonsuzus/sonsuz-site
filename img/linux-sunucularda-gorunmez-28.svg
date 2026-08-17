@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f4ea"/>
+      <stop offset="100%" stop-color="#d0e8d8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef7e0"/>
+      <stop offset="100%" stop-color="#fdecc8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce8e6"/>
+      <stop offset="100%" stop-color="#f8d7d3"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e8fd"/>
+      <stop offset="100%" stop-color="#e8d5f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Görünmez Altyapı Emeği</text>
+
+  <!-- Merkez kutu: Linux Sunucu -->
+  <rect x="245" y="130" width="150" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#a0b8d8" stroke-width="1.5"/>
+  <text x="320" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a5c">Linux Sunucu</text>
+  <text x="320" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7c">Sessiz Omurga</text>
+
+  <!-- Üst sol: Kullanıcı Deneyimi -->
+  <rect x="30" y="45" width="130" height="45" rx="10" fill="url(#boxGrad2)" filter="url(#shadowLight)" stroke="#a0c8a8" stroke-width="1.5"/>
+  <text x="95" y="63" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a5c3a">Kullanıcı Deneyimi</text>
+  <text x="95" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7c5a">Görünür Katman</text>
+
+  <!-- Üst orta: Web Servisleri -->
+  <rect x="220" y="45" width="130" height="45" rx="10" fill="url(#boxGrad3)" filter="url(#shadowLight)" stroke="#d4b878" stroke-width="1.5"/>
+  <text x="285" y="63" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a5c1a">Web Servisleri</text>
+  <text x="285" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#9a7c3a">HTTP, DNS, TLS</text>
+
+  <!-- Üst sağ: Veri Katmanı -->
+  <rect x="410" y="45" width="130" height="45" rx="10" fill="url(#boxGrad4)" filter="url(#shadowLight)" stroke="#d8a0a0" stroke-width="1.5"/>
+  <text x="475" y="63" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7c2a2a">Veri Katmanı</text>
+  <text x="475" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#9c4a4a">DB, Depolama</text>
+
+  <!-- Alt sol: Operasyonel Emek -->
+  <rect x="30" y="230" width="130" height="50" rx="10" fill="url(#boxGrad5)" filter="url(#shadowLight)" stroke="#b8a0d8" stroke-width="1.5"/>
+  <text x="95" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a2a7c">Operasyonel Emek</text>
+  <text x="95" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a4a9c">İzleme, Bakım</text>
+
+  <!-- Alt orta: Otomasyon -->
+  <rect x="220" y="230" width="130" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadowLight)" stroke="#a0b8d8" stroke-width="1.5"/>
+  <text x="285" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a5c">Otomasyon</text>
+  <text x="285" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7c">Betikler, CI/CD</text>
+
+  <!-- Alt sağ: Toplumsal Algı -->
+  <rect x="410" y="230" width="130" height="50" rx="10" fill="url(#boxGrad2)" filter="url(#shadowLight)" stroke="#a0c8a8" stroke-width="1.5"/>
+  <text x="475" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a5c3a">Toplumsal Algı</text>
+  <text x="475" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7c5a">Görünmezlik</text>
+
+  <!-- Bağlantılar: Üst katmandan merkeze -->
+  <!-- Kullanıcı Deneyimi -> Linux Sunucu -->
+  <path d="M 95 90 L 95 110 L 270 110 L 270 125" stroke="#7a9a7a" stroke-width="1.8" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="265,120 270,130 275,120" fill="#7a9a7a"/>
+
+  <!-- Web Servisleri -> Linux Sunucu -->
+  <path d="M 285 90 L 285 125" stroke="#b8a060" stroke-width="1.8" fill="none"/>
+  <polygon points="280,120 285,130 290,120" fill="#b8a060"/>
+
+  <!-- Veri Katmanı -> Linux Sunucu -->
+  <path d="M 475 90 L 475 110 L 370 110 L 370 125" stroke="#b87878" stroke-width="1.8" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="365,120 370,130 375,120" fill="#b87878"/>
+
+  <!-- Alt katmandan merkeze -->
+  <!-- Operasyonel Emek -> Linux Sunucu -->
+  <path d="M 95 230 L 95 210 L 270 210 L 270 185" stroke="#8a6ab8" stroke-width="1.8" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="265,190 270,180 275,190" fill="#8a6ab8"/>
+
+  <!-- Otomasyon -> Linux Sunucu -->
+  <path d="M 285 230 L 285 185" stroke="#6a8ab8" stroke-width="1.8" fill="none"/>
+  <polygon points="280,190 285,180 290,190" fill="#6a8ab8"/>
+
+  <!-- Toplumsal Algı -> Linux Sunucu -->
+  <path d="M 475 230 L 475 210 L 370 210 L 370 185" stroke="#6a9a8a" stroke-width="1.8" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="365,190 370,180 375,190" fill="#6a9a8a"/>
+
+  <!-- Yan bağlantılar -->
+  <!-- Kullanıcı Deneyimi <-> Web Servisleri -->
+  <path d="M 160 67 L 215 67" stroke="#a0b8a0" stroke-width="1.2" fill="none" stroke-dasharray="3,3"/>
+  <polygon points="210,63 218,67 210,71" fill="#a0b8a0"/>
+
+  <!-- Web Servisleri <-> Veri Katmanı -->
+  <path d="M 350 67 L 405 67" stroke="#a0b8a0" stroke-width="1.2" fill="none" stroke-dasharray="3,3"/>
+  <polygon points="400,63 408,67 400,71" fill="#a0b8a0"/>
+
+  <!-- Operasyonel Emek <-> Otomasyon -->
+  <path d="M 160 255 L 215 255" stroke="#a0a0b8" stroke-width="1.2" fill="none" stroke-dasharray="3,3"/>
+  <polygon points="210,251 218,255 210,259" fill="#a0a0b8"/>
+
+  <!-- Otomasyon <-> Toplumsal Algı -->
+  <path d="M 350 255 L 405 255" stroke="#a0a0b8" stroke-width="1.2" fill="none" stroke-dasharray="3,3"/>
+  <polygon points="400,251 408,255 400,259" fill="#a0a0b8"/>
+
+  <!-- Formül etiketi -->
+  <rect x="480" y="130" width="130" height="40" rx="8" fill="#ffffff" opacity="0.7" filter="url(#shadowLight)" stroke="#c0d0e0" stroke-width="1"/>
+  <text x="545" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#3a5a7c">Güvenilirlik</text>
+  <text x="545" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a7a9c">Donanım × Ağ × Yazılım × Emek</text>
+
+  <!-- Bilgi notu -->
+  <rect x="30" y="130" width="130" height="40" rx="8" fill="#ffffff" opacity="0.7" filter="url(#shadowLight)" stroke="#c0d0e0" stroke-width="1"/>
+  <text x="95" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#3a5a7c">Paradoks</text>
+  <text x="95" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a7a9c">İyi yönetim = Görünmezlik</text>
+</svg>

@@ -8,9 +8,13 @@ tags:
   - programlama dilleri
   - MBTI
   - dil tasarımı
+image: /img/programlama-dillerinin-kisilik-42.png
 ---
 
 Programlama dilleri bir kişilik testine girseydi sonuçları nasıl çıkardı? Python planlı, özgüvenli bir INTJ mi olurdu; Haskell ise soyut düşüncelere dalıp öğle yemeğini unutan bir INTP mi? Elbette dillerin gerçek kişilikleri yok. Yine de MBTI benzetmesi; sözdizimi, tip sistemi ve paradigma gibi kuru görünen kavramları eğlenceli biçimde karşılaştırmak için şaşırtıcı derecede kullanışlıdır.
+
+
+![programlama-dillerinin-kisilik-42](/img/programlama-dillerinin-kisilik-42.svg)
 
 ``
 

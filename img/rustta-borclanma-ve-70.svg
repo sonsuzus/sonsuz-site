@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#8899aa" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f5ff"/>
+      <stop offset="100%" stop-color="#eef7f0"/>
+    </linearGradient>
+    <linearGradient id="ownerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7eb8da"/>
+      <stop offset="100%" stop-color="#5a9fc4"/>
+    </linearGradient>
+    <linearGradient id="borrowGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9ad0a0"/>
+      <stop offset="100%" stop-color="#6fbf7a"/>
+    </linearGradient>
+    <linearGradient id="mutGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0c97a"/>
+      <stop offset="100%" stop-color="#e0a84e"/>
+    </linearGradient>
+    <linearGradient id="ruleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8a0a0"/>
+      <stop offset="100%" stop-color="#d47a7a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a5a7a">Rust Borçlanma ve Referanslar</text>
+
+  <!-- Sahiplik Devri (sol) -->
+  <rect x="30" y="50" width="170" height="52" rx="10" fill="url(#ownerGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="115" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Sahiplik Devri</text>
+  <text x="115" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f0ff">islem(mesaj)</text>
+
+  <!-- Borçlanma (sağ) -->
+  <rect x="440" y="50" width="170" height="52" rx="10" fill="url(#borrowGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="525" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Borçlanma</text>
+  <text x="525" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f0ff">islem(&amp;mesaj)</text>
+
+  <!-- Ok: sahiplik devri -->
+  <path d="M200 76 L280 76" stroke="#5a9fc4" stroke-width="2" fill="none"/>
+  <polygon points="280,71 292,76 280,81" fill="#5a9fc4"/>
+
+  <!-- Ok: borçlanma -->
+  <path d="M440 76 L360 76" stroke="#6fbf7a" stroke-width="2" fill="none"/>
+  <polygon points="360,71 348,76 360,81" fill="#6fbf7a"/>
+
+  <!-- Merkez değer kutusu -->
+  <rect x="270" y="58" width="100" height="36" rx="8" fill="#ffffff" stroke="#8899aa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a5a7a">String</text>
+
+  <!-- Değişmez borç bölümü -->
+  <rect x="30" y="140" width="270" height="70" rx="10" fill="#d8ecf5" filter="url(#shadow)" opacity="0.85"/>
+  <text x="165" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a8a">&amp;T Değişmez Borç</text>
+  <text x="165" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a9a">Birden fazla okuma</text>
+  <text x="165" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a9a">Yazma yok</text>
+
+  <!-- Değiştirilebilir borç bölümü -->
+  <rect x="340" y="140" width="270" height="70" rx="10" fill="#f5e8c8" filter="url(#shadow)" opacity="0.85"/>
+  <text x="475" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#8a6a2a">&amp;mut T Değiştirilebilir Borç</text>
+  <text x="475" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a6a2a">Tek yazma izni</text>
+  <text x="475" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a6a2a">Okuma da yazma da var</text>
+
+  <!-- Kural kutusu -->
+  <rect x="140" y="240" width="360" height="60" rx="10" fill="url(#ruleGrad)" filter="url(#shadow)" opacity="0.85"/>
+  <text x="320" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Borrow Checker Kuralı</text>
+  <text x="320" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ffe8e8">Ya çoklu &amp;T ya da tek &amp;mut T</text>
+
+  <!-- Bağlantı çizgileri -->
+  <path d="M165 140 L165 120 Q165 110 175 110 L300 110 Q320 110 320 94" stroke="#8899aa" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <path d="M475 140 L475 120 Q475 110 465 110 L340 110 Q320 110 320 94" stroke="#8899aa" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a9aaa">Sahiplik verilmeden güvenli veri paylaşımı</text>
+</svg>

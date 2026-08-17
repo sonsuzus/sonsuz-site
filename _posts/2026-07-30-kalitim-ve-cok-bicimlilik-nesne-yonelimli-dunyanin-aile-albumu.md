@@ -8,7 +8,11 @@ tags:
   - OOP
   - Kalıtım
   - Çok Biçimlilik
+image: /img/kalitim-ve-cok-52.png
 ---
+
+![kalitim-ve-cok-52](/img/kalitim-ve-cok-52.svg)
+
 
 Nesne yönelimli programlamada bazı sınıflar birbirine şaşırtıcı derecede benzer. Örneğin kedi de köpek de bir hayvandır; ikisinin de adı, yaşı ve ses çıkarma davranışı vardır. Ancak çıkardıkları sesler aynı değildir. Kalıtım ortak özellikleri tek bir temel sınıfta toplamamızı, çok biçimlilik ise ortak görünen davranışların nesneye göre farklı sonuç üretmesini sağlar. Böylece kodumuz hem tekrar etmekten kurtulur hem de yeni türlere daha kolay uyum sağlar.
 ``

@@ -8,6 +8,7 @@ tags:
   - C++
   - Smart Pointers
   - RAII
+image: /img/c-akilli-isaretciler-76.png
 ---
 
 C++’ta `new` ile bellek ayırmak kolay, onu her yürütme yolunda doğru zamanda `delete` etmek ise şaşırtıcı derecede zordur. Erken `return`, fırlatılan bir istisna veya sahipliği belirsiz bir işaretçi; bellek sızıntısı, çift silme ve geçersiz belleğe erişim gibi klasik hatalara davetiye çıkarır. Modern C++’ın cevabı akıllı işaretçilerdir: Kaynağın ömrünü nesnenin ömrüne bağlayan, RAII tabanlı küçük ama güçlü sınıflar.
@@ -89,3 +90,6 @@ Ancak `shared_ptr`, varsayılan seçim olmamalıdır. Kontrol bloğu, atomik say
 | Geri referans / ebeveyn bağlantısı | `weak_ptr` | Döngüsel sahipliği önler |
 
 Özet kural nettir: Önce `unique_ptr` düşünün, zorunlu ortak sahiplik varsa `shared_ptr` seçin ve ham `new`/`delete` ikilisini uygulama kodundan uzak tutun. Akıllı işaretçiler yalnızca belleği temizlemez; sahiplik niyetini kodun bir parçası hâline getirerek hataları daha oluşmadan görünür kılar.
+
+![c-akilli-isaretciler-76](/img/c-akilli-isaretciler-76.svg)
+

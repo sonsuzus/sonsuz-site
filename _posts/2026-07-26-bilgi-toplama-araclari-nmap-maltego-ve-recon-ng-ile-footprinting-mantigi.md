@@ -9,6 +9,7 @@ tags:
   - information gathering
   - nmap
   - osint
+image: /img/bilgi-toplama-araclari-86.png
 ---
 
 Bir sistemi güvenli hâle getirmenin ilk adımı, saldırgan gözüyle ne kadar görünür olduğunu anlamaktır. Bilgi toplama, yani footprinting, hedef hakkında alan adları, IP aralıkları, açık portlar, kullanılan teknolojiler, ilişkili e-posta adresleri ve organizasyon yapısı gibi ipuçlarını sistemli biçimde toplamaktır. Elbette bu süreç yalnızca izinli testlerde, kendi laboratuvarında veya kurum içi güvenlik çalışmalarında yapılmalıdır; çünkü aynı teknikler savunma kadar kötüye kullanım için de değerlidir.
@@ -49,3 +50,6 @@ Bu komutlar, seçilen modül destekliyorsa `example.com` için host kayıtların
 Pratikte iyi bir bilgi toplama süreci sırayla ilerler: kapsamı belirle, pasif kaynaklardan veri topla, veriyi temizle, aktif taramayı yalnızca izinli aralıkta çalıştır, sonuçları ilişkilendir ve raporla. En sık yapılan hata, araç çıktısını doğrudan gerçek kabul etmektir. Oysa aynı IP üzerinde CDN, paylaşımlı hosting veya bulut yük dengeleyici olabilir. Bu yüzden her bulguya güven puanı vermek faydalıdır: $G = \frac{D}{T}$ gibi basit bir oran düşünebiliriz; burada $D$ doğrulanan kaynak sayısı, $T$ toplam iddia sayısıdır.
 
 Sonuç olarak Nmap sana teknik kapıları, Maltego ilişkisel haritayı, Recon-ng ise tekrarlanabilir OSINT akışını sunar. Üçünü birlikte kullandığında hedefin dijital siluetini daha net görürsün. Ama unutma: iyi bir güvenlik uzmanını araç listesi değil, etik sınırları, metodolojisi ve bulguları doğru yorumlama becerisi güçlü yapar.
+
+![bilgi-toplama-araclari-86](/img/bilgi-toplama-araclari-86.svg)
+

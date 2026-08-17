@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5c6bc0"/>
+      <stop offset="100%" stop-color="#3f51b5"/>
+    </linearGradient>
+    <linearGradient id="node1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8a80"/>
+      <stop offset="100%" stop-color="#ef5350"/>
+    </linearGradient>
+    <linearGradient id="node2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#80cbc4"/>
+      <stop offset="100%" stop-color="#4db6ac"/>
+    </linearGradient>
+    <linearGradient id="node3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffcc80"/>
+      <stop offset="100%" stop-color="#ffb74d"/>
+    </linearGradient>
+    <linearGradient id="node4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#90caf9"/>
+      <stop offset="100%" stop-color="#42a5f5"/>
+    </linearGradient>
+    <linearGradient id="node5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ce93d8"/>
+      <stop offset="100%" stop-color="#ab47bc"/>
+    </linearGradient>
+    <linearGradient id="node6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a5d6a7"/>
+      <stop offset="100%" stop-color="#66bb6a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#37474f">Süper Zekâ Korkusunun Tarihi</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#78909c">Frankenstein Kompleksi ve Yapay Zekâ</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="255" y="120" width="130" height="52" rx="14" fill="url(#centerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Yapay Zekâ</text>
+  <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8eaf6">Kontrol Kaybı Riski</text>
+
+  <!-- Bağlantı çizgileri ve oklar -->
+  <!-- Sol üst: Golem -->
+  <path d="M 255 135 L 145 95" stroke="#78909c" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="148,97 140,92 143,100" fill="#78909c" opacity="0.6"/>
+
+  <!-- Sol orta: Frankenstein -->
+  <path d="M 255 150 L 145 160" stroke="#78909c" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="148,159 140,158 144,165" fill="#78909c" opacity="0.6"/>
+
+  <!-- Sol alt: Sanayi Devrimi -->
+  <path d="M 255 165 L 145 225" stroke="#78909c" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="148,222 140,227 145,219" fill="#78909c" opacity="0.6"/>
+
+  <!-- Sağ üst: R.U.R. -->
+  <path d="M 385 135 L 495 95" stroke="#78909c" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="492,97 500,92 497,100" fill="#78909c" opacity="0.6"/>
+
+  <!-- Sağ orta: Modern YZ -->
+  <path d="M 385 150 L 495 160" stroke="#78909c" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="492,159 500,158 496,165" fill="#78909c" opacity="0.6"/>
+
+  <!-- Sağ alt: Matematiksel Risk -->
+  <path d="M 385 165 L 495 225" stroke="#78909c" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="492,222 500,227 495,219" fill="#78909c" opacity="0.6"/>
+
+  <!-- Sol düğümler -->
+  <!-- Golem -->
+  <rect x="55" y="72" width="90" height="46" rx="10" fill="url(#node1)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Golem</text>
+  <text x="100" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ffebee">Büyü ve Kontrol</text>
+
+  <!-- Frankenstein -->
+  <rect x="55" y="137" width="90" height="46" rx="10" fill="url(#node2)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="100" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Frankenstein</text>
+  <text x="100" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e0f2f1">Yaratıcı Kaçışı</text>
+
+  <!-- Sanayi Devrimi -->
+  <rect x="55" y="202" width="90" height="46" rx="10" fill="url(#node3)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="100" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Sanayi Devrimi</text>
+  <text x="100" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff8e1">Otomasyon Kaygısı</text>
+
+  <!-- Sağ düğümler -->
+  <!-- R.U.R. -->
+  <rect x="495" y="72" width="90" height="46" rx="10" fill="url(#node4)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="540" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">R.U.R.</text>
+  <text x="540" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e3f2fd">Robot İsyanı</text>
+
+  <!-- Modern YZ -->
+  <rect x="495" y="137" width="90" height="46" rx="10" fill="url(#node5)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="540" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Modern YZ</text>
+  <text x="540" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#f3e5f5">Amaç Sapması</text>
+
+  <!-- Matematiksel Risk -->
+  <rect x="495" y="202" width="90" height="46" rx="10" fill="url(#node6)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="540" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Risk Hesabı</text>
+  <text x="540" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8f5e9">Olasılık ve Zarar</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#90a4ae" opacity="0.8">Kültürel anlatılar ve teknik riskler aynı kökten beslenir</text>
+
+  <!-- Alt vurgu çizgisi -->
+  <line x1="200" y1="300" x2="440" y2="300" stroke="#b0bec5" stroke-width="1" opacity="0.4"/>
+  <circle cx="200" cy="300" r="2" fill="#b0bec5" opacity="0.4"/>
+  <circle cx="440" cy="300" r="2" fill="#b0bec5" opacity="0.4"/>
+</svg>

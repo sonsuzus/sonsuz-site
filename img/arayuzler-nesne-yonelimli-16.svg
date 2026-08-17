@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4fc"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f4fa"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f2f7f0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fef7f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0.5" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect x="0" y="0" width="640" height="320" fill="url(#bg)" rx="8"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Arayüzler: Görünmez Sözleşmeler</text>
+
+  <!-- Merkez: Arayüz Sözleşmesi -->
+  <ellipse cx="320" cy="160" rx="105" ry="55" fill="url(#centerGrad)" stroke="#7baaf7" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="152" text-anchor="middle" font-weight="bold" fill="#1a3a6b" font-size="13">Arayüz</text>
+  <text x="320" y="170" text-anchor="middle" fill="#2c4a7c" font-size="11">Sözleşme</text>
+  <text x="320" y="186" text-anchor="middle" fill="#3a5a8c" font-size="10">ne yapılacağını bildirir</text>
+
+  <!-- Sol üst: Somut Sınıf -->
+  <rect x="60" y="70" width="120" height="52" rx="10" fill="url(#boxGrad1)" stroke="#a0b4cc" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="120" y="92" text-anchor="middle" font-weight="bold" fill="#2c3e50">Somut Sınıf</text>
+  <text x="120" y="108" text-anchor="middle" fill="#5a6a7a" font-size="10">davranışı uygular</text>
+
+  <!-- Sağ üst: Soyut Sınıf -->
+  <rect x="460" y="70" width="120" height="52" rx="10" fill="url(#boxGrad2)" stroke="#a8c4a0" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="520" y="92" text-anchor="middle" font-weight="bold" fill="#2c3e50">Soyut Sınıf</text>
+  <text x="520" y="108" text-anchor="middle" fill="#5a7a5a" font-size="10">kısmi temel sunar</text>
+
+  <!-- Sol alt: Gevşek Bağlılık -->
+  <rect x="60" y="210" width="120" height="52" rx="10" fill="url(#boxGrad3)" stroke="#d4b08c" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="120" y="232" text-anchor="middle" font-weight="bold" fill="#2c3e50">Gevşek Bağlılık</text>
+  <text x="120" y="248" text-anchor="middle" fill="#8a6a4a" font-size="10">esneklik ve test</text>
+
+  <!-- Sağ alt: Çoklu Uygulama -->
+  <rect x="460" y="210" width="120" height="52" rx="10" fill="url(#boxGrad1)" stroke="#a0b4cc" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="520" y="232" text-anchor="middle" font-weight="bold" fill="#2c3e50">Çoklu Uygulama</text>
+  <text x="520" y="248" text-anchor="middle" fill="#5a6a7a" font-size="10">birden fazla sınıf</text>
+
+  <!-- Üst: Açık/Kapalı Prensibi -->
+  <rect x="250" y="48" width="140" height="40" rx="8" fill="#eaf4e8" stroke="#8ab87a" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="320" y="64" text-anchor="middle" font-weight="bold" fill="#2c5a2c" font-size="11">Açık/Kapalı Prensibi</text>
+  <text x="320" y="78" text-anchor="middle" fill="#4a7a4a" font-size="10">değişime kapalı, genişlemeye açık</text>
+
+  <!-- Alt: Bağımlılıkların Tersine Çevrilmesi -->
+  <rect x="230" y="262" width="180" height="40" rx="8" fill="#fdf2e6" stroke="#d4a06a" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="320" y="278" text-anchor="middle" font-weight="bold" fill="#7a4a2a" font-size="11">Bağımlılıkların Tersine Çevrilmesi</text>
+  <text x="320" y="292" text-anchor="middle" fill="#9a6a4a" font-size="10">soyuta bağımlı ol</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Sol üstten merkeze -->
+  <path d="M 180 96 L 215 130" stroke="#7baaf7" stroke-width="1.5" fill="none"/>
+  <polygon points="215,130 207,124 210,133" fill="#7baaf7"/>
+
+  <!-- Sağ üstten merkeze -->
+  <path d="M 460 96 L 425 130" stroke="#7baaf7" stroke-width="1.5" fill="none"/>
+  <polygon points="425,130 433,124 430,133" fill="#7baaf7"/>
+
+  <!-- Sol alttan merkeze -->
+  <path d="M 180 236 L 215 202" stroke="#7baaf7" stroke-width="1.5" fill="none"/>
+  <polygon points="215,202 207,208 210,199" fill="#7baaf7"/>
+
+  <!-- Sağ alttan merkeze -->
+  <path d="M 460 236 L 425 202" stroke="#7baaf7" stroke-width="1.5" fill="none"/>
+  <polygon points="425,202 433,208 430,199" fill="#7baaf7"/>
+
+  <!-- Üstten merkeze -->
+  <path d="M 320 88 L 320 105" stroke="#8ab87a" stroke-width="1.2" fill="none"/>
+  <polygon points="320,105 316,97 324,97" fill="#8ab87a"/>
+
+  <!-- Alttan merkeze -->
+  <path d="M 320 262 L 320 215" stroke="#d4a06a" stroke-width="1.2" fill="none"/>
+  <polygon points="320,215 316,223 324,223" fill="#d4a06a"/>
+
+  <!-- Sahte servis etiketi -->
+  <rect x="555" y="140" width="70" height="30" rx="6" fill="#f0f4fa" stroke="#b0c0d0" stroke-width="0.8" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="590" y="152" text-anchor="middle" fill="#4a5a6a" font-size="9">Sahte Servis</text>
+  <text x="590" y="163" text-anchor="middle" fill="#6a7a8a" font-size="8">testlerde</text>
+
+  <!-- Priz benzetmesi -->
+  <rect x="30" y="140" width="70" height="30" rx="6" fill="#f0f4fa" stroke="#b0c0d0" stroke-width="0.8" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="65" y="152" text-anchor="middle" fill="#4a5a6a" font-size="9">Priz Standardı</text>
+  <text x="65" y="163" text-anchor="middle" fill="#6a7a8a" font-size="8">benzetmesi</text>
+
+  <!-- Küçük bağlantı çizgileri -->
+  <path d="M 100 140 L 120 130" stroke="#b0c0d0" stroke-width="0.8" fill="none" stroke-dasharray="3,2"/>
+  <path d="M 540 140 L 520 130" stroke="#b0c0d0" stroke-width="0.8" fill="none" stroke-dasharray="3,2"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="312" text-anchor="middle" fill="#8899aa" font-size="9">Arayüzler: ekipler ve bileşenler arasında teknik anlaşmalar</text>
+</svg>

@@ -8,7 +8,11 @@ tags:
   - Python
   - List Comprehension
   - Pythonik Kod
+image: /img/list-comprehensions-ile-53.png
 ---
+
+![list-comprehensions-ile-53](/img/list-comprehensions-ile-53.svg)
+
 
 Python’da bir listedeki verileri dönüştürmek veya belirli koşullara göre süzmek için uzun döngüler yazmak zorunda değilsiniz. **List comprehension**, klasik `for` döngülerini daha kısa, çoğu zaman daha okunaklı ve verimli bir ifadeye dönüştürür. Fakat mesele yalnızca satır sayısını azaltmak değildir; asıl amaç, yeni listenin nasıl üretildiğini doğrudan anlatan Pythonik bir sözdizimi kullanmaktır.
 ``

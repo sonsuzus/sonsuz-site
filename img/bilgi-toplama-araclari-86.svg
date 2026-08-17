@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="100%" stop-color="#5b6abf"/>
+    </linearGradient>
+    <linearGradient id="passive" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8e6cf"/>
+      <stop offset="100%" stop-color="#88d8b0"/>
+    </linearGradient>
+    <linearGradient id="active" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd3b6"/>
+      <stop offset="100%" stop-color="#ffb88a"/>
+    </linearGradient>
+    <linearGradient id="hybrid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dcedc1"/>
+      <stop offset="100%" stop-color="#bfe3a0"/>
+    </linearGradient>
+    <linearGradient id="tool1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a1c4fd"/>
+      <stop offset="100%" stop-color="#8ba8e8"/>
+    </linearGradient>
+    <linearGradient id="tool2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c3a6f0"/>
+      <stop offset="100%" stop-color="#a98add"/>
+    </linearGradient>
+    <linearGradient id="tool3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d5f7"/>
+      <stop offset="100%" stop-color="#e3b3e8"/>
+    </linearGradient>
+    <linearGradient id="risk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9a9e"/>
+      <stop offset="100%" stop-color="#fad0c4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <rect x="160" y="12" width="320" height="36" rx="18" fill="url(#header)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="35" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Bilgi Toplama Araçları</text>
+
+  <!-- Merkez düğüm -->
+  <circle cx="320" cy="120" r="28" fill="#5b6abf" filter="url(#shadow)" opacity="0.85"/>
+  <text x="320" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff" font-weight="bold">Bilgi</text>
+  <text x="320" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff" font-weight="bold">Toplama</text>
+
+  <!-- Pasif OSINT -->
+  <rect x="40" y="80" width="130" height="52" rx="10" fill="url(#passive)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="105" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d5a3d">Pasif OSINT</text>
+  <text x="105" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a7a50">Hedefe temas yok</text>
+
+  <!-- Aktif Tarama -->
+  <rect x="470" y="80" width="130" height="52" rx="10" fill="url(#active)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="535" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#8a4d2a">Aktif Tarama</text>
+  <text x="535" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#a8653a">Paket gönderilir</text>
+
+  <!-- Hibrit Analiz -->
+  <rect x="255" y="200" width="130" height="46" rx="10" fill="url(#hybrid)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a6a2a">Hibrit Analiz</text>
+  <text x="320" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a8a3a">Kontrollü korelasyon</text>
+
+  <!-- Oklar merkezden -->
+  <path d="M292 110 L175 100" stroke="#5b6abf" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="175 100 186 96 186 104" fill="#5b6abf" opacity="0.7"/>
+
+  <path d="M348 110 L465 100" stroke="#5b6abf" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="465 100 454 96 454 104" fill="#5b6abf" opacity="0.7"/>
+
+  <path d="M320 148 L320 195" stroke="#5b6abf" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="320 195 316 184 324 184" fill="#5b6abf" opacity="0.7"/>
+
+  <!-- Araçlar -->
+  <rect x="40" y="170" width="130" height="40" rx="8" fill="url(#tool1)" filter="url(#shadow)" opacity="0.85"/>
+  <text x="105" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Maltego</text>
+  <text x="105" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8e0ff">İlişki haritası</text>
+
+  <rect x="255" y="260" width="130" height="40" rx="8" fill="url(#tool2)" filter="url(#shadow)" opacity="0.85"/>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Recon-ng</text>
+  <text x="320" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8e0ff">Modüler OSINT</text>
+
+  <rect x="470" y="170" width="130" height="40" rx="8" fill="url(#tool3)" filter="url(#shadow)" opacity="0.85"/>
+  <text x="535" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Nmap</text>
+  <text x="535" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#f0e0f0">Port ve servis</text>
+
+  <!-- Risk formülü -->
+  <rect x="40" y="250" width="130" height="50" rx="8" fill="url(#risk)" filter="url(#shadow)" opacity="0.8"/>
+  <text x="105" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#7a3030">Risk Modeli</text>
+  <text x="105" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a4040">R = A x E x V</text>
+
+  <!-- Araç bağlantıları -->
+  <path d="M105 132 L105 165" stroke="#5b6abf" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+  <polygon points="105 165 101 155 109 155" fill="#5b6abf" opacity="0.5"/>
+
+  <path d="M535 132 L535 165" stroke="#5b6abf" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+  <polygon points="535 165 531 155 539 155" fill="#5b6abf" opacity="0.5"/>
+
+  <path d="M320 246 L320 255" stroke="#5b6abf" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+  <polygon points="320 255 316 245 324 245" fill="#5b6abf" opacity="0.5"/>
+
+  <!-- Alt not -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888" opacity="0.8">Etik sınırlar ve doğru yorumlama esastır</text>
+</svg>

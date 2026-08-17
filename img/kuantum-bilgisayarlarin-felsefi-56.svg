@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#607d8b" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#607d8b" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Merkez: Kübit süperpozisyonu -->
+  <ellipse cx="320" cy="160" rx="70" ry="70" fill="#e1bee7" opacity="0.3"/>
+  <ellipse cx="320" cy="160" rx="55" ry="55" fill="#ce93d8" opacity="0.4"/>
+
+  <!-- Kübit dairesi -->
+  <circle cx="320" cy="160" r="42" fill="#ab47bc" filter="url(#shadow)"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Kübit</text>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f3e5f5">|0⟩ + |1⟩</text>
+
+  <!-- Dış halka: süperpozisyon etkisi -->
+  <circle cx="320" cy="160" r="58" fill="none" stroke="#ba68c8" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+
+  <!-- Sol üst: Klasik bit -->
+  <rect x="80" y="50" width="110" height="60" rx="10" fill="#64b5f6" filter="url(#shadow)"/>
+  <text x="135" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Klasik Bit</text>
+  <text x="135" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e3f2fd">0 veya 1</text>
+
+  <!-- Sağ üst: Determinizm -->
+  <rect x="450" y="50" width="120" height="60" rx="10" fill="#ef5350" filter="url(#shadow)"/>
+  <text x="510" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Determinizm</text>
+  <text x="510" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffebee">Laplace'ın Cini</text>
+
+  <!-- Sol alt: Ölçüm -->
+  <rect x="80" y="220" width="110" height="60" rx="10" fill="#81c784" filter="url(#shadow)"/>
+  <text x="135" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Ölçüm</text>
+  <text x="135" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e8f5e9">Olasılık</text>
+
+  <!-- Sağ alt: Özgür irade -->
+  <rect x="450" y="220" width="120" height="60" rx="10" fill="#ffb74d" filter="url(#shadow)"/>
+  <text x="510" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Özgür İrade</text>
+  <text x="510" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff8e1">Sorumluluk</text>
+
+  <!-- Oklar: Klasik bit → Kübit -->
+  <path d="M 190 80 L 270 130" stroke="#78909c" stroke-width="2" fill="none"/>
+  <polygon points="270,130 260,122 263,133" fill="#78909c"/>
+
+  <!-- Oklar: Determinizm → Kübit -->
+  <path d="M 450 80 L 370 130" stroke="#78909c" stroke-width="2" fill="none"/>
+  <polygon points="370,130 380,122 377,133" fill="#78909c"/>
+
+  <!-- Oklar: Kübit → Ölçüm -->
+  <path d="M 290 195 L 200 230" stroke="#78909c" stroke-width="2" fill="none"/>
+  <polygon points="200,230 212,228 205,238" fill="#78909c"/>
+
+  <!-- Oklar: Kübit → Özgür İrade -->
+  <path d="M 350 195 L 440 230" stroke="#78909c" stroke-width="2" fill="none"/>
+  <polygon points="440,230 428,228 435,238" fill="#78909c"/>
+
+  <!-- Üst bağlantı çizgisi -->
+  <path d="M 135 110 L 135 130 Q 135 140 145 140 L 275 140 Q 285 140 285 150" stroke="#90a4ae" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+  <path d="M 510 110 L 510 130 Q 510 140 500 140 L 365 140 Q 355 140 355 150" stroke="#90a4ae" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+
+  <!-- Alt bağlantı çizgisi -->
+  <path d="M 135 220 L 135 200 Q 135 190 145 190 L 275 190 Q 285 190 285 180" stroke="#90a4ae" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+  <path d="M 510 220 L 510 200 Q 510 190 500 190 L 365 190 Q 355 190 355 180" stroke="#90a4ae" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+
+  <!-- Rastgelelik etiketi -->
+  <rect x="250" y="285" width="140" height="28" rx="14" fill="#b0bec5" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="320" y="304" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#37474f">Rastgelelik ≠ Özgürlük</text>
+
+  <!-- Soru işareti -->
+  <text x="590" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="28" fill="#ef5350" opacity="0.5" font-weight="bold">?</text>
+
+  <!-- Kübit etrafında küçük noktalar -->
+  <circle cx="270" cy="120" r="3" fill="#ba68c8" opacity="0.6"/>
+  <circle cx="370" cy="120" r="3" fill="#ba68c8" opacity="0.6"/>
+  <circle cx="270" cy="200" r="3" fill="#ba68c8" opacity="0.6"/>
+  <circle cx="370" cy="200" r="3" fill="#ba68c8" opacity="0.6"/>
+</svg>

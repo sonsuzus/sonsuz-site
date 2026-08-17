@@ -8,9 +8,13 @@ tags:
   - yapay zeka
   - sosyal izolasyon
   - dijital psikoloji
+image: /img/chatbotlarla-kurulan-yalnizlik-90.png
 ---
 
 Gece yarısı konuşacak kimse bulamadığınızda bir chatbot saniyeler içinde yanıt verir, anlattıklarınızı yargılamaz ve sohbeti aniden “görüldü” ile bitirmez. Bu erişilebilirlik, sosyal izolasyon yaşayan biri için gerçekten rahatlatıcı olabilir. Ancak sürekli hazır bulunan dijital bir muhatap, yalnızlığı azaltan bir köprü mü kurar; yoksa insan ilişkilerinin belirsiz ama gerekli dünyasından kaçışı mı kolaylaştırır?
+
+
+![chatbotlarla-kurulan-yalnizlik-90](/img/chatbotlarla-kurulan-yalnizlik-90.svg)
 
 ``
 

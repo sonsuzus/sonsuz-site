@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf9"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8eaf6"/>
+      <stop offset="100%" stop-color="#c5cae9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Tarayıcıda Dinamik Veri Yönetimi</text>
+
+  <!-- Merkez: JavaScript Uygulaması -->
+  <rect x="245" y="120" width="150" height="50" rx="12" fill="url(#box5)" filter="url(#shadow)" stroke="#7986cb" stroke-width="1.5"/>
+  <text x="320" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#283593">JavaScript</text>
+  <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3949ab">Uygulama</text>
+
+  <!-- Sol üst: LocalStorage -->
+  <rect x="40" y="60" width="140" height="60" rx="12" fill="url(#box1)" filter="url(#shadow)" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="110" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#0277bd">LocalStorage</text>
+  <text x="110" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#0288d1">Anahtar-Değer</text>
+  <text x="110" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#0288d1">Metin Deposu</text>
+
+  <!-- Sol alt: JSON Dönüşümü -->
+  <rect x="40" y="220" width="140" height="60" rx="12" fill="url(#box2)" filter="url(#shadow)" stroke="#66bb6a" stroke-width="1.5"/>
+  <text x="110" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">JSON Dönüşümü</text>
+  <text x="110" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#388e3c">stringify ve parse</text>
+  <text x="110" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#388e3c">Nesne ve Metin</text>
+
+  <!-- Sağ üst: Fetch API -->
+  <rect x="460" y="60" width="140" height="60" rx="12" fill="url(#box3)" filter="url(#shadow)" stroke="#ffa726" stroke-width="1.5"/>
+  <text x="530" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Fetch API</text>
+  <text x="530" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ef6c00">HTTP İstekleri</text>
+  <text x="530" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ef6c00">Promise Tabanlı</text>
+
+  <!-- Sağ alt: Sunucu -->
+  <rect x="460" y="220" width="140" height="60" rx="12" fill="url(#box4)" filter="url(#shadow)" stroke="#ec407a" stroke-width="1.5"/>
+  <text x="530" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#c2185b">Sunucu</text>
+  <text x="530" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#d81b60">Uzak Veritabanı</text>
+  <text x="530" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#d81b60">Güvenli Depolama</text>
+
+  <!-- Oklar: LocalStorage -> JS -->
+  <path d="M 180 90 L 235 130" stroke="#4fc3f7" stroke-width="2" fill="none"/>
+  <polygon points="235,130 225,124 228,134" fill="#4fc3f7"/>
+
+  <!-- Oklar: JS -> LocalStorage -->
+  <path d="M 280 120 L 190 85" stroke="#4fc3f7" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="190,85 200,90 197,80" fill="#4fc3f7"/>
+
+  <!-- Oklar: JSON -> JS -->
+  <path d="M 180 250 L 235 175" stroke="#66bb6a" stroke-width="2" fill="none"/>
+  <polygon points="235,175 225,180 230,170" fill="#66bb6a"/>
+
+  <!-- Oklar: JS -> JSON -->
+  <path d="M 280 170 L 190 245" stroke="#66bb6a" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="190,245 200,240 197,250" fill="#66bb6a"/>
+
+  <!-- Oklar: Fetch -> JS -->
+  <path d="M 460 90 L 405 130" stroke="#ffa726" stroke-width="2" fill="none"/>
+  <polygon points="405,130 415,124 412,134" fill="#ffa726"/>
+
+  <!-- Oklar: JS -> Fetch -->
+  <path d="M 360 120 L 450 85" stroke="#ffa726" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="450,85 440,90 443,80" fill="#ffa726"/>
+
+  <!-- Oklar: Sunucu -> Fetch -->
+  <path d="M 530 220 L 530 130" stroke="#ec407a" stroke-width="2" fill="none"/>
+  <polygon points="530,130 526,140 534,140" fill="#ec407a"/>
+
+  <!-- Oklar: Fetch -> Sunucu -->
+  <path d="M 530 120 L 530 210" stroke="#ec407a" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="530,210 526,200 534,200" fill="#ec407a"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#78909c">Çevrimdışı önbellek ve güvenli veri akışı</text>
+</svg>
