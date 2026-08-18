@@ -8,6 +8,7 @@ tags:
   - yapay zekâ
   - yaratıcılık
   - üretken yapay zekâ
+image: /img/yapay-zekanin-yaraticilik-24.png
 ---
 
 Bir yapay zekâ birkaç saniyede resim çizebilir, beste yazabilir veya şaşırtıcı bir hikâye oluşturabilir. Fakat ortaya çıkan eser gerçekten özgün müdür, yoksa geçmişte üretilmiş insan eserlerinin son derece gelişmiş bir kolajı mıdır? Bu soru yalnızca teknolojiyi değil; ilham, niyet ve yaratıcılık hakkındaki kabullerimizi de yeniden düşünmemizi gerektiriyor.
@@ -72,3 +73,6 @@ Bununla birlikte niyetin bulunmaması, çıktının yaratıcı değer taşımad�
 Belki de doğru soru “Makine yaratıcı mı?” değil, “İnsan ile makinenin kurduğu sistem yaratıcı sonuçlar üretiyor mu?” olmalıdır. İstemleri seçen, çıktıları eleyen, bağlam ekleyen ve etik sorumluluğu üstlenen insan hâlâ sürecin belirleyici parçasıdır.
 
 Geleceğin özgünlüğü, hiçbir etkilenme içermeyen mucizevi eserler anlamına gelmeyebilir. Daha gerçekçi tanım; bilinen parçaları yeni, değerli ve bağlama duyarlı biçimde birleştirebilmektir. Yapay zekâ bu denkleme hız ve çeşitlilik katar; anlamı, amacı ve sorumluluğu ise şimdilik bizden ödünç alır.
+
+![yapay-zekanin-yaraticilik-24](/img/yapay-zekanin-yaraticilik-24.svg)
+

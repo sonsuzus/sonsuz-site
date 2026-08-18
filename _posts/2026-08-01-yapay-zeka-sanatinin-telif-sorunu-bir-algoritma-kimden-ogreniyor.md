@@ -8,6 +8,7 @@ tags:
   - yapay zekâ
   - telif hakkı
   - dijital sanat
+image: /img/yapay-zeka-sanatinin-53.png
 ---
 
 Bir ressam binlerce tablo görüp kendi üslubunu geliştirirse buna eğitim deriz. Bir yapay zekâ aynı tablolarla eğitildiğinde ise sorular değişir: Öğreniyor mu, kopyalıyor mu, yoksa devasa bir istatistik makinesini mi çalıştırıyor? Üretken yapay zekâ sanatı, özgünlüğü yalnızca estetik açıdan değil; hukuk, emek ve yaratıcılık bakımından da yeniden düşünmemizi gerektiriyor.
@@ -30,6 +31,9 @@ Ancak “model yalnızca örüntü öğrenir” demek tartışmayı bitirmez. A�
 | Eser seçimi | Sanatçı karar verir | Veri setini geliştirici seçer |
 | Sorumluluk | Sanatçıya yüklenebilir | Kullanıcı, geliştirici ve platform arasında dağılır |
 | Birebir benzerlik | İhlal riski doğurabilir | Aynı risk, ezberleme yoluyla oluşabilir |
+
+![yapay-zeka-sanatinin-53](/img/yapay-zeka-sanatinin-53.svg)
+
 
 ## Hukuk hangi noktada devreye giriyor?
 

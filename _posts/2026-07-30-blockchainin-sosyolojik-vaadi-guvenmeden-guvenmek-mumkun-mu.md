@@ -8,6 +8,7 @@ tags:
   - blockchain
   - merkeziyetsizlik
   - toplumsal güven
+image: /img/blockchainin-sosyolojik-vaadi-74.png
 ---
 
 Blockchain çoğu zaman “güveni ortadan kaldıran teknoloji” diye tanıtılır. Bu ifade etkileyicidir; fakat sosyolojik açıdan biraz fazla iddialıdır. İnsanlar Bitcoin gönderirken bankaya güvenmek zorunda olmayabilir, ancak yazılıma, kriptografiye, ağ katılımcılarına ve protokolün değişmeyeceğine ilişkin beklentilere hâlâ sahiptir. Dolayısıyla asıl soru, güvenin yok olup olmadığı değil, **kimden neye aktarıldığıdır**.
@@ -70,3 +71,6 @@ Bu kod parayı emanette tutar ve alıcı teslimatı onayladığında satıcıya 
 Merkeziyetsizlik, iktidarı otomatik olarak dağıtmaz. Büyük madencilik havuzları, doğrulayıcılar, token sahipleri ve geliştiriciler karar süreçlerinde diğer kullanıcılardan daha etkili olabilir. “Bir kişi, bir oy” yerine “bir token, bir oy” kullanıldığında ekonomik eşitsizlik doğrudan siyasal güce dönüşebilir.
 
 Bu nedenle blockchain'in gerçek vaadi **güvenmeden güvenmek** değil, güven ilişkilerini görünür, denetlenebilir ve alternatifli hâle getirmektir. Teknoloji belirli aracılara bağımlılığı azaltabilir; ancak ortak normların, hukukun ve topluluk uzlaşmasının yerini tamamen alamaz. Kısacası blockchain güveni silmez: onu kurumdan protokole, yöneticiden topluluğa ve kapalı defterden incelenebilir koda taşır.
+
+![blockchainin-sosyolojik-vaadi-74](/img/blockchainin-sosyolojik-vaadi-74.svg)
+
