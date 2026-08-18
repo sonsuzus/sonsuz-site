@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfeaff"/>
+      <stop offset="100%" stop-color="#cfe2fb"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66809a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="74" cy="50" r="58" fill="#dcecf5" opacity="0.42"/>
+  <circle cx="588" cy="278" r="76" fill="#dff1d8" opacity="0.42"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">JavaScript Çalışma Bağlamı</text>
+
+  <path d="M210 153 L243 153" fill="none" stroke="#7d96ad" stroke-width="2"/>
+  <polygon points="243,153 235,148 235,158" fill="#7d96ad"/>
+  <path d="M397 153 L430 153" fill="none" stroke="#7d96ad" stroke-width="2"/>
+  <polygon points="430,153 422,148 422,158" fill="#7d96ad"/>
+
+  <rect x="30" y="102" width="180" height="104" rx="18" fill="#fff4df" filter="url(#golge)"/>
+  <rect x="30" y="102" width="180" height="30" rx="18" fill="#f7dca9"/>
+  <rect x="30" y="119" width="180" height="13" fill="#f7dca9"/>
+  <text x="120" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#704d1c">1. Oluşturma</text>
+  <circle cx="55" cy="151" r="7" fill="#e9b960"/>
+  <path d="M52 151 L54 154 L59 148" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+  <text x="70" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c5140">Bellek kayıtları</text>
+  <circle cx="55" cy="178" r="7" fill="#e9b960"/>
+  <path d="M52 178 L54 181 L59 175" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+  <text x="70" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c5140">Kapsam ve this</text>
+
+  <rect x="243" y="74" width="154" height="158" rx="24" fill="url(#merkez)" filter="url(#golge)"/>
+  <circle cx="320" cy="112" r="23" fill="#ffffff" opacity="0.85"/>
+  <path d="M309 107 C309 101 314 97 320 97 C326 97 331 101 331 107 L331 117 L309 117 Z" fill="#7197c1"/>
+  <rect x="303" y="119" width="34" height="5" rx="2.5" fill="#7197c1"/>
+  <text x="320" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365575">Çalışma</text>
+  <text x="320" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365575">Bağlamı</text>
+  <rect x="272" y="185" width="96" height="25" rx="12" fill="#ffffff" opacity="0.78"/>
+  <text x="320" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c85">Hoisting hazırlığı</text>
+
+  <rect x="430" y="102" width="180" height="104" rx="18" fill="#e7f4e6" filter="url(#golge)"/>
+  <rect x="430" y="102" width="180" height="30" rx="18" fill="#bee2bf"/>
+  <rect x="430" y="119" width="180" height="13" fill="#bee2bf"/>
+  <text x="520" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386341">2. Yürütme</text>
+  <circle cx="455" cy="151" r="7" fill="#69b579"/>
+  <path d="M452 151 L454 154 L459 148" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+  <text x="470" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#415c46">Satır sırası</text>
+  <circle cx="455" cy="178" r="7" fill="#69b579"/>
+  <path d="M452 178 L454 181 L459 175" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+  <text x="470" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#415c46">Atama ve çağrı</text>
+
+  <path d="M151 242 L151 255 L80 255 L80 266" fill="none" stroke="#9aabb7" stroke-width="1.5"/>
+  <path d="M269 232 L269 255 L241 255 L241 266" fill="none" stroke="#9aabb7" stroke-width="1.5"/>
+  <path d="M371 232 L371 255 L399 255 L399 266" fill="none" stroke="#9aabb7" stroke-width="1.5"/>
+  <path d="M489 242 L489 255 L559 255 L559 266" fill="none" stroke="#9aabb7" stroke-width="1.5"/>
+
+  <rect x="24" y="266" width="112" height="39" rx="12" fill="#fffdf7" filter="url(#hafifGolge)"/>
+  <text x="80" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b651f">var</text>
+  <text x="80" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c6d68">undefined</text>
+
+  <rect x="185" y="266" width="112" height="39" rx="12" fill="#fffafa" filter="url(#hafifGolge)"/>
+  <text x="241" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ad5364">let</text>
+  <text x="241" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71656a">TDZ koruması</text>
+
+  <rect x="343" y="266" width="112" height="39" rx="12" fill="#fffafa" filter="url(#hafifGolge)"/>
+  <text x="399" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a4f74">const</text>
+  <text x="399" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71656a">TDZ koruması</text>
+
+  <rect x="503" y="266" width="112" height="39" rx="12" fill="#f9fbff" filter="url(#hafifGolge)"/>
+  <text x="559" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#506fb1">Fonksiyon</text>
+  <text x="559" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58697d">Gövde hazır</text>
+</svg>

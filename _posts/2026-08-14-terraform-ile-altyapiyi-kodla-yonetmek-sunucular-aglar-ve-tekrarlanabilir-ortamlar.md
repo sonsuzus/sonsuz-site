@@ -8,6 +8,7 @@ tags:
   - Terraform
   - Infrastructure as Code
   - DevOps
+image: /img/terraform-ile-altyapiyi-88.png
 ---
 
 Bir sunucuyu panelden tek tek oluşturmak, ağ kurallarını elle yazmak ve hangi ayarın nerede değiştiğini hatırlamaya çalışmak; küçük projelerde bile hızla yorucu hâle gelir. **Infrastructure as Code (IaC)** yaklaşımı, altyapıyı Terraform dosyalarında tanımlayarak bu süreci yazılım geliştirmeye benzetir: değişiklikler sürüm kontrolüne girer, gözden geçirilir ve aynı ortam tekrar tekrar üretilebilir.
@@ -95,3 +96,6 @@ terraform apply     # Onay sonrası planı uygular
 `plan` çıktısı özellikle önemlidir: yanlış bölge, beklenmeyen silme işlemi veya maliyetli bir kaynak hemen fark edilebilir. Ekip çalışmalarında state dosyasını yerel bilgisayarda bırakmak yerine S3 gibi uzak bir backend'de, kilitleme mekanizmasıyla saklamak gerekir. Böylece iki kişinin aynı anda altyapıyı değiştirmesiyle oluşabilecek çakışmalar önlenir.
 
 Terraform, altyapıyı sihirli biçimde hatasız yapmaz; fakat altyapı kararlarını görünür, denetlenebilir ve tekrarlanabilir kılar. Küçük bir VPC ile başlayıp modüller, uzak state ve CI/CD doğrulamaları ekledikçe, sunucu kurma süreci kişisel bir bilgi olmaktan çıkar; ekibin güvenle çalıştırabildiği bir yazılım sürecine dönüşür.
+
+![terraform-ile-altyapiyi-88](/img/terraform-ile-altyapiyi-88.svg)
+

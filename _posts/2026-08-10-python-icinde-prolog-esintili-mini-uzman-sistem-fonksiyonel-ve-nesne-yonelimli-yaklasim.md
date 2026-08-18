@@ -8,7 +8,11 @@ tags:
   - Python
   - Prolog
   - Uzman Sistemler
+image: /img/python-icinde-prolog-48.png
 ---
+
+![python-icinde-prolog-48](/img/python-icinde-prolog-48.svg)
+
 
 Bir uzman sistem, belirli bir alandaki bilgileri kurallar hâlinde saklar ve bu bilgilerden yeni sonuçlar üretir. Bu projede Python'ın nesne yönelimli yapısını bilgi temsili için, fonksiyonel yaklaşımını ise sorgu sonuçlarını akış hâlinde üretmek için birleştiriyoruz. Ortaya çıkan yapı tam bir Prolog yorumlayıcısı değildir; ancak `ebeveyn(ali, ayse)` gibi olgular ve `buyukebeveyn(X, Z) :- ebeveyn(X, Y), ebeveyn(Y, Z)` benzeri kurallarla mantıksal çıkarım yapabilen, Python içine gömülü küçük ama öğretici bir motor olacaktır.
 ``

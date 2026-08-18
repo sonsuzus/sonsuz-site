@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#d1e8f0"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0e8"/>
+      <stop offset="100%" stop-color="#d4e4d4"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0e8f8"/>
+      <stop offset="100%" stop-color="#e0d4f0"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f0e8"/>
+      <stop offset="100%" stop-color="#f0e0d4"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f0f8"/>
+      <stop offset="100%" stop-color="#e0e0f0"/>
+    </linearGradient>
+    <linearGradient id="box6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f8e8"/>
+      <stop offset="100%" stop-color="#f0f0d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Elasticsearch Ters İndeks Mimarisi</text>
+
+  <!-- Merkez: Ters İndeks -->
+  <rect x="240" y="100" width="160" height="60" rx="12" fill="url(#box1)" filter="url(#shadow)" stroke="#5b9bd5" stroke-width="1.5"/>
+  <text x="320" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Ters İndeks</text>
+  <text x="320" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Kelime → Belge Listesi</text>
+
+  <!-- Sol: Ham Metin -->
+  <rect x="30" y="105" width="130" height="50" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#82b366" stroke-width="1.5"/>
+  <text x="95" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d5016">Ham Metin</text>
+  <text x="95" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Belgeler</text>
+
+  <!-- Ok: Ham Metin -> Ters İndeks -->
+  <path d="M160 130 L235 130" stroke="#5b9bd5" stroke-width="2" fill="none"/>
+  <polygon points="235,124 245,130 235,136" fill="#5b9bd5"/>
+
+  <!-- Sağ: Sorgu -->
+  <rect x="480" y="105" width="130" height="50" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#9b59b6" stroke-width="1.5"/>
+  <text x="545" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a235a">Sorgu</text>
+  <text x="545" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Kelimeler</text>
+
+  <!-- Ok: Ters İndeks -> Sorgu -->
+  <path d="M400 130 L475 130" stroke="#9b59b6" stroke-width="2" fill="none"/>
+  <polygon points="475,124 485,130 475,136" fill="#9b59b6"/>
+
+  <!-- Üst: Analiz Zinciri -->
+  <rect x="240" y="20" width="160" height="45" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="320" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7e4a12">Analiz Zinciri</text>
+  <text x="320" y="54" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Tokenizer + Filtreler</text>
+
+  <!-- Ok: Analiz -> Ters İndeks -->
+  <path d="M320 65 L320 95" stroke="#e67e22" stroke-width="2" fill="none"/>
+  <polygon points="314,95 320,105 326,95" fill="#e67e22"/>
+
+  <!-- Alt: Skorlama -->
+  <rect x="240" y="195" width="160" height="45" rx="10" fill="url(#box5)" filter="url(#shadow)" stroke="#3498db" stroke-width="1.5"/>
+  <text x="320" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">BM25 Skorlama</text>
+  <text x="320" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">TF-IDF + Norm</text>
+
+  <!-- Ok: Ters İndeks -> Skorlama -->
+  <path d="M320 160 L320 190" stroke="#3498db" stroke-width="2" fill="none"/>
+  <polygon points="314,190 320,200 326,190" fill="#3498db"/>
+
+  <!-- Sağ Alt: Shard Yapısı -->
+  <rect x="480" y="195" width="130" height="45" rx="10" fill="url(#box6)" filter="url(#shadow)" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="545" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e6e3e">Shard Yapısı</text>
+  <text x="545" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Primary + Replica</text>
+
+  <!-- Ok: Skorlama -> Shard -->
+  <path d="M400 217 L475 217" stroke="#27ae60" stroke-width="2" fill="none"/>
+  <polygon points="475,211 485,217 475,223" fill="#27ae60"/>
+
+  <!-- Alt: Sonuçlar -->
+  <rect x="240" y="270" width="160" height="35" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#5b9bd5" stroke-width="1.5"/>
+  <text x="320" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Sıralı Sonuçlar</text>
+
+  <!-- Ok: Skorlama -> Sonuç -->
+  <path d="M320 240 L320 265" stroke="#5b9bd5" stroke-width="2" fill="none"/>
+  <polygon points="314,265 320,275 326,265" fill="#5b9bd5"/>
+
+  <!-- Sol Alt: Filtreler -->
+  <rect x="30" y="195" width="130" height="45" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#82b366" stroke-width="1.5"/>
+  <text x="95" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d5016">Filtreler</text>
+  <text x="95" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">keyword, range</text>
+
+  <!-- Ok: Filtre -> Skorlama -->
+  <path d="M160 217 L235 217" stroke="#82b366" stroke-width="2" fill="none"/>
+  <polygon points="235,211 245,217 235,223" fill="#82b366"/>
+
+  <!-- Sol Üst: Alan Türleri -->
+  <rect x="30" y="20" width="130" height="45" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#9b59b6" stroke-width="1.5"/>
+  <text x="95" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a235a">Alan Türleri</text>
+  <text x="95" y="54" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">text, keyword, sayı</text>
+
+  <!-- Ok: Alan -> Analiz -->
+  <path d="M160 42 L235 42" stroke="#9b59b6" stroke-width="2" fill="none"/>
+  <polygon points="235,36 245,42 235,48" fill="#9b59b6"/>
+
+  <!-- Sağ Üst: Sorgu Tipleri -->
+  <rect x="480" y="20" width="130" height="45" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="545" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7e4a12">Sorgu Tipleri</text>
+  <text x="545" y="54" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">match, term, bool</text>
+
+  <!-- Ok: Sorgu Tipleri -> Sorgu -->
+  <path d="M545 65 L545 100" stroke="#e67e22" stroke-width="2" fill="none"/>
+  <polygon points="539,100 545,110 551,100" fill="#e67e22"/>
+
+  <!-- Etiket: O(N) -> O(1) -->
+  <text x="320" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d" font-style="italic">O(N) → O(1) erişim</text>
+
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4fc"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e9"/>
+      <stop offset="100%" stop-color="#c8ecd0"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ede7f6"/>
+      <stop offset="100%" stop-color="#d1c4e9"/>
+    </linearGradient>
+    <linearGradient id="center" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2f1"/>
+      <stop offset="100%" stop-color="#b2dfdb"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Terraform ile Altyapıyı Kodla Yönetmek</text>
+
+  <!-- Merkez: Terraform Çekirdeği -->
+  <rect x="245" y="120" width="150" height="70" rx="14" fill="url(#center)" filter="url(#shadow)" stroke="#80cbc4" stroke-width="1.5"/>
+  <text x="320" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#00695c">Terraform</text>
+  <text x="320" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#00695c">Çekirdek Motor</text>
+  <text x="320" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4db6ac">İstenen Durum - Mevcut Durum</text>
+
+  <!-- Üst: IaC Dosyaları -->
+  <rect x="60" y="55" width="180" height="55" rx="12" fill="url(#box1)" filter="url(#shadow)" stroke="#a0b8e8" stroke-width="1.5"/>
+  <text x="150" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a6e">IaC Dosyaları</text>
+  <text x="150" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a5a8e">HCL (.tf)</text>
+  <text x="150" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a5a8e">Nihai durum tanımı</text>
+
+  <!-- Üst: State Dosyası -->
+  <rect x="400" y="55" width="180" height="55" rx="12" fill="url(#box5)" filter="url(#shadow)" stroke="#b39ddb" stroke-width="1.5"/>
+  <text x="490" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a148c">State Dosyası</text>
+  <text x="490" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a3a9e">terraform.tfstate</text>
+  <text x="490" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a3a9e">Mevcut durum bilgisi</text>
+
+  <!-- Sol: Provider -->
+  <rect x="20" y="210" width="140" height="55" rx="12" fill="url(#box2)" filter="url(#shadow)" stroke="#81c784" stroke-width="1.5"/>
+  <text x="90" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">Provider</text>
+  <text x="90" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2e7d32">AWS, Azure, GCP</text>
+  <text x="90" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2e7d32">API bağlantısı</text>
+
+  <!-- Sağ: Kaynaklar -->
+  <rect x="480" y="210" width="140" height="55" rx="12" fill="url(#box3)" filter="url(#shadow)" stroke="#ffb74d" stroke-width="1.5"/>
+  <text x="550" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Kaynaklar</text>
+  <text x="550" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#f57c00">VPC, Subnet, EC2</text>
+  <text x="550" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#f57c00">Somut nesneler</text>
+
+  <!-- Alt: Plan ve Apply -->
+  <rect x="230" y="245" width="180" height="50" rx="12" fill="url(#box4)" filter="url(#shadow)" stroke="#f48fb1" stroke-width="1.5"/>
+  <text x="320" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#880e4f">Plan ve Apply</text>
+  <text x="320" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ad1457">init → plan → apply</text>
+
+  <!-- Oklar: IaC -> Terraform -->
+  <path d="M 240 85 L 260 120" stroke="#5c6bc0" stroke-width="2" fill="none"/>
+  <polygon points="260,120 252,112 254,122" fill="#5c6bc0"/>
+
+  <!-- Oklar: State -> Terraform -->
+  <path d="M 400 85 L 380 120" stroke="#7e57c2" stroke-width="2" fill="none"/>
+  <polygon points="380,120 388,112 386,122" fill="#7e57c2"/>
+
+  <!-- Oklar: Terraform -> Provider -->
+  <path d="M 245 155 L 165 210" stroke="#43a047" stroke-width="2" fill="none"/>
+  <polygon points="165,210 175,206 168,200" fill="#43a047"/>
+
+  <!-- Oklar: Terraform -> Kaynaklar -->
+  <path d="M 395 155 L 475 210" stroke="#fb8c00" stroke-width="2" fill="none"/>
+  <polygon points="475,210 465,206 472,200" fill="#fb8c00"/>
+
+  <!-- Oklar: Terraform -> Plan Apply -->
+  <path d="M 320 190 L 320 245" stroke="#d81b60" stroke-width="2" fill="none"/>
+  <polygon points="320,245 316,237 324,237" fill="#d81b60"/>
+
+  <!-- Oklar: Provider -> Kaynaklar (dolaylı) -->
+  <path d="M 160 240 L 480 240" stroke="#78909c" stroke-width="1.5" stroke-dasharray="6,4" fill="none"/>
+  <polygon points="480,240 472,236 472,244" fill="#78909c"/>
+
+  <!-- Alt not -->
+  <text x="320" y="312" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#78909c">Idempotency: Aynı tanım tekrar uygulandığında beklenmedik değişiklik olmaz</text>
+</svg>

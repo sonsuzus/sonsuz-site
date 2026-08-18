@@ -8,6 +8,7 @@ tags:
   - yapay zekâ
   - satranç
   - insan-makine etkileşimi
+image: /img/yapay-zekaya-mat-59.png
 ---
 
 Bir insana karşı satranç kaybettiğimizde rakibimizin yüzündeki ifadeyi, hamleler arasındaki tereddüdü ve zafer sevincini görürüz. Yapay zekâya yenildiğimizdeyse karşımızda sevinen biri yoktur; yalnızca soğuk bir değerlendirme puanı ve kaçırdığımız hamleyi gösteren acımasız bir ok vardır. Buna rağmen yenilgi bazen daha ağır gelir. Çünkü makine bizi küçümsemese bile kendi zihnimiz bunu başarıyla yapabilir.
@@ -68,3 +69,6 @@ Kod, hamlelerin hikâyesini veya estetiğini anlamaz. `max` fonksiyonu yalnızca
 Yapay zekâya karşı oynamanın en sağlıklı yolu onu egonun hâkimi değil, geri bildirim aracı olarak görmektir. Motorun “+3.2” değerlendirmesi karakter notu değildir; belirli bir konumdaki avantaj tahminidir. Kaybedilen oyun, kimliğimiz hakkında hüküm değil, kararlarımız hakkında veri sunar.
 
 İşin ironik yanı şudur: Makine zaferiyle gururlanmaz, fakat insan yenilgiden utanabilir. Demek ki mücadelenin önemli bölümü tahtada değil, zihnimizde gerçekleşir. Yapay zekâ bize yalnızca daha iyi hamleleri değil, rekabeti neden kişiselleştirdiğimizi de gösterebilir. Bazen en öğretici oyun, mat olduğumuz değil; matı egomuza açıklamayı başardığımız oyundur.
+
+![yapay-zekaya-mat-59](/img/yapay-zekaya-mat-59.svg)
+

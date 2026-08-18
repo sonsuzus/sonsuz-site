@@ -8,6 +8,7 @@ tags:
   - Metasploit
   - Sızma Testi
   - Siber Güvenlik
+image: /img/sizma-ve-metasploit-44.png
 ---
 
 Bir zafiyetin tespit edilmesi, sistemin gerçekten ele geçirilebildiği anlamına gelmez; yalnızca araştırılması gereken bir kapı bulunduğunu gösterir. Sızma, bu kapının yetkili ve izole bir laboratuvar ortamında kontrollü biçimde açılmasıdır. Metasploit Framework ise hazır istismar modülleri, payload seçenekleri ve oturum yönetimiyle bu süreci standartlaştıran güçlü bir güvenlik test platformudur.
@@ -31,6 +32,9 @@ Metasploit ekosisteminin temel parçaları şunlardır:
 | Auxiliary | Tarama ve yardımcı işlemler yapar | Sürüm doğrulama |
 | Encoder | Bayt biçimini dönüştürür | Uyumluluk sağlama |
 | Post | Açılmış oturumda test yapar | Yetki ve sistem bilgisi kontrolü |
+
+![sizma-ve-metasploit-44](/img/sizma-ve-metasploit-44.svg)
+
 
 Exploit kapıyı açan mekanizma, payload ise kapı açıldıktan sonra yapılacak iştir. Bu ayrım, yanlış payload seçildiğinde exploit doğru olsa bile neden oturum alınamadığını açıklar.
 

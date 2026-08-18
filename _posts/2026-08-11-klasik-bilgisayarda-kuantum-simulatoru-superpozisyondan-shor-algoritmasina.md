@@ -8,6 +8,7 @@ tags:
   - kuantum-bilgisayar
   - python
   - shor-algoritması
+image: /img/klasik-bilgisayarda-kuantum-55.png
 ---
 
 Kuantum bilgisayarlar, bilgiyi yalnızca 0 veya 1 olarak değil, bu durumların olasılıksal birleşimi olarak işler. Peki bu tuhaf dünyayı evimizdeki klasik bilgisayarda deneyebilir miyiz? Evet: Bir kuantum **simülatörü**, kuantum donanımının fiziksel hız avantajını vermez; ancak kübitlerin durumlarını matematiksel olarak takip ederek süperpozisyon, girişim ve dolanıklığı görünür hâle getirir. Hedefimiz küçük devreleri simüle etmek ve Shor algoritmasının periyot bulma fikrini anlamaktır.
@@ -25,6 +26,9 @@ Burada $\alpha$ ve $\beta$ karmaşık sayılardır; ölçüm olasılıkları ise
 | Rastgelelik | İşlemden önce veya sonra seçilir | Ölçüm anında olasılıksal sonuç oluşur |
 | Bağıntı | Ayrı değişkenlerle saklanır | Dolanıklıkta tek bir ortak durum vardır |
 | Maliyet | $n$ bit için $n$ değer | $n$ kübit için $2^n$ genlik |
+
+![klasik-bilgisayarda-kuantum-55](/img/klasik-bilgisayarda-kuantum-55.svg)
+
 
 Simülatörün kalbi, $n$ kübitlik sistemi uzunluğu $2^n$ olan bir NumPy vektörüyle temsil etmektir. Başlangıç durumu $ \vert 00\ldots0\rangle$ olduğundan ilk genlik 1, diğerleri 0’dır. Hadamard kapısı süperpozisyon üretir; CNOT ise kontrol kübiti 1 olduğunda hedefi çevirir. Aşağıdaki örnek, iki kübitte Bell durumu $\frac{ \vert 00\rangle+ \vert 11\rangle}{\sqrt{2}}$ oluşturur:
 

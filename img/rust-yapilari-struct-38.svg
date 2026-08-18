@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="anaKart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dfeeff"/>
+      <stop offset="100%" stop-color="#c9def5"/>
+    </linearGradient>
+    <linearGradient id="implKart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4f5df"/>
+      <stop offset="100%" stop-color="#ccebc7"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d89a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d89a0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="94" cy="58" r="72" fill="#dcefff" opacity="0.5"/>
+  <circle cx="575" cy="265" r="96" fill="#e0f2da" opacity="0.55"/>
+  <circle cx="526" cy="54" r="38" fill="#fff4d6" opacity="0.6"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">Rust Veri Modeli</text>
+
+  <path d="M218 124 L273 124" fill="none" stroke="#7f9bb1" stroke-width="2"/>
+  <polygon points="273,124 265,119 265,129" fill="#7f9bb1"/>
+  <path d="M367 124 L419 124" fill="none" stroke="#7f9bb1" stroke-width="2"/>
+  <polygon points="419,124 411,119 411,129" fill="#7f9bb1"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="36" y="67" width="182" height="114" rx="18" fill="#fff8e8"/>
+    <rect x="36" y="67" width="182" height="32" rx="18" fill="#ffe6aa"/>
+    <rect x="36" y="83" width="182" height="16" fill="#ffe6aa"/>
+  </g>
+  <text x="58" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#72571d">Alanlar</text>
+  <circle cx="59" cy="117" r="5" fill="#76a9d6"/>
+  <text x="73" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#455b70">ad: String</text>
+  <circle cx="59" cy="142" r="5" fill="#8ebf88"/>
+  <text x="73" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#455b70">yaş: u8</text>
+  <circle cx="59" cy="167" r="5" fill="#d49c84"/>
+  <text x="73" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#455b70">aktif: bool</text>
+
+  <g filter="url(#golge)">
+    <rect x="273" y="70" width="94" height="108" rx="20" fill="url(#anaKart)" stroke="#a9c8e4"/>
+    <rect x="288" y="84" width="64" height="29" rx="10" fill="#ffffff" opacity="0.72"/>
+    <text x="320" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31546e">struct</text>
+    <path d="M291 128 H349" stroke="#8aacca" stroke-width="1.5"/>
+    <text x="320" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31546e">Kullanıcı</text>
+    <text x="320" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54738a">tek değer</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="419" y="58" width="184" height="134" rx="18" fill="url(#implKart)"/>
+    <rect x="419" y="58" width="184" height="32" rx="18" fill="#bde4b7"/>
+    <rect x="419" y="74" width="184" height="16" fill="#bde4b7"/>
+  </g>
+  <text x="441" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376237">impl Kullanıcı</text>
+  <rect x="438" y="103" width="144" height="22" rx="8" fill="#ffffff" opacity="0.62"/>
+  <text x="450" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406640">yeni()  •  Self</text>
+  <rect x="438" y="132" width="144" height="22" rx="8" fill="#ffffff" opacity="0.62"/>
+  <text x="450" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406640">yetiskin_mi()  •  &amp;self</text>
+  <rect x="438" y="161" width="144" height="22" rx="8" fill="#ffffff" opacity="0.62"/>
+  <text x="450" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406640">devre_disi()  •  &amp;mut</text>
+
+  <path d="M320 190 L320 224" fill="none" stroke="#6f99a8" stroke-width="2"/>
+  <polygon points="320,224 315,216 325,216" fill="#6f99a8"/>
+
+  <g filter="url(#golge)">
+    <rect x="174" y="226" width="292" height="66" rx="18" fill="#ffffff" opacity="0.94"/>
+    <rect x="189" y="241" width="80" height="36" rx="11" fill="#e3f0ff"/>
+    <text x="229" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c6687">Tip güvenliği</text>
+    <rect x="280" y="241" width="80" height="36" rx="11" fill="#e6f5df"/>
+    <text x="320" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b7846">Anlamlı veri</text>
+    <rect x="371" y="241" width="80" height="36" rx="11" fill="#fff0d2"/>
+    <text x="411" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#89632b">Davranış</text>
+  </g>
+</svg>

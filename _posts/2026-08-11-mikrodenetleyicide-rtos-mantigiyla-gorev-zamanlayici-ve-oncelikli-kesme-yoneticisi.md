@@ -8,7 +8,11 @@ tags:
   - mikrodenetleyici
   - rtos
   - gömülü sistemler
+image: /img/mikrodenetleyicide-rtos-mantigiyla-17.png
 ---
+
+![mikrodenetleyicide-rtos-mantigiyla-17](/img/mikrodenetleyicide-rtos-mantigiyla-17.svg)
+
 
 Bir mikrodenetleyicide aynı anda ekran güncellemek, sensör okumak, haberleşme paketi göndermek ve motor kontrol etmek isterseniz, `delay()` çağrılarıyla dolu bir program kısa sürede kontrolden çıkar. Gerçek zamanlı işletim sistemi (RTOS) prensipleri, bu karmaşayı görevleri bölerek, zamanlayarak ve kritik olaylara doğru önceliği vererek yönetir. Bu yazıda tam teşekküllü bir RTOS yazmak yerine, onun temel fikirlerini taşıyan küçük bir görev zamanlayıcı ve öncelikli kesme yöneticisi tasarlayacağız.
 ``

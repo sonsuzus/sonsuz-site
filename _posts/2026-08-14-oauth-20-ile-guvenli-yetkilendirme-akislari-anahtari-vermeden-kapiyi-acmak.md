@@ -8,6 +8,7 @@ tags:
   - OAuth 2.0
   - Kimlik Doğrulama
   - API Güvenliği
+image: /img/oauth-20-ile-41.png
 ---
 
 Bir uygulamanın kullanıcı adına Google Drive dosyalarına erişmesi, GitHub depolarını listelemesi veya Spotify çalma listesi oluşturması sık rastlanan bir ihtiyaçtır. Ancak uygulamanın kullanıcının parolasını istemesi hem tehlikeli hem de gereksizdir. OAuth 2.0, parolayı paylaşmadan, sınırlı ve süreli erişim izinleri vermeyi sağlayan yetkilendirme çerçevesidir. Kısacası uygulamaya evinizin anahtarını değil, yalnızca belirli odalara girebilen ve süresi dolan bir ziyaretçi kartı verirsiniz.
@@ -21,6 +22,9 @@ OAuth 2.0 öncelikle bir **kimlik doğrulama** protokolü değil, bir **yetkilen
 | Authorization Server | İzin veren ve token üreten sunucu | Google OAuth sunucusu |
 | Resource Server | Korunan API/veri sunucusu | Google Drive API |
 | Access Token | API çağrılarında taşınan kısa ömürlü izin belgesi | `Bearer eyJ...` |
+
+![oauth-20-ile-41](/img/oauth-20-ile-41.svg)
+
 
 Sistemin merkezinde **access token** bulunur. Bu token çoğunlukla kısa ömürlüdür; örneğin bir saat geçerli olabilir. Süre dolduğunda, uygun koşullarda **refresh token** kullanılarak yeni bir access token alınır. Süreli token yaklaşımı, bir sızıntının etkisini azaltır. Basitçe token geçerliliğini şöyle düşünebiliriz:
 

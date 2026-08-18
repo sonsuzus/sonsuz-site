@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#d1e8f0"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0e8f8"/>
+      <stop offset="100%" stop-color="#e0d0f0"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f8e8"/>
+      <stop offset="100%" stop-color="#d0f0d0"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f0e8"/>
+      <stop offset="100%" stop-color="#f0e0d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Kayan Pencere Algoritması</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7a8a">Alt Dizilerde Maksimum ve Minimumu Hızlandırma</text>
+
+  <!-- Sol blok: Problem -->
+  <rect x="30" y="70" width="170" height="90" rx="10" fill="url(#box1)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="115" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Problem</text>
+  <text x="115" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a6a">Naif Tarama</text>
+  <text x="115" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a6a">O(nk) Karmaşıklık</text>
+  <text x="115" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a6a">Tekrar Eden İş</text>
+
+  <!-- Ok 1 -->
+  <polygon points="210,115 230,115 230,110 245,118 230,126 230,121 210,121" fill="#5a8a9a"/>
+
+  <!-- Orta blok: Çözüm -->
+  <rect x="255" y="60" width="170" height="110" rx="10" fill="url(#box2)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="340" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Monotonik Kuyruk</text>
+  <text x="340" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a3a6a">Deque ile İndeksler</text>
+  <text x="340" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a3a6a">Azalan / Artan Düzen</text>
+  <text x="340" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a3a6a">Amortize O(1)</text>
+  <text x="340" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a3a6a">Toplam O(n)</text>
+
+  <!-- Ok 2 -->
+  <polygon points="435,115 455,115 455,110 470,118 455,126 455,121 435,121" fill="#5a8a9a"/>
+
+  <!-- Sağ blok: Sonuç -->
+  <rect x="480" y="70" width="130" height="90" rx="10" fill="url(#box3)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="545" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Sonuç</text>
+  <text x="545" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a3a">Maksimum / Minimum</text>
+  <text x="545" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a3a">Tek Geçiş</text>
+  <text x="545" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a3a">Milyonlarca Veri</text>
+
+  <!-- Alt akış: Adımlar -->
+  <rect x="30" y="200" width="120" height="70" rx="8" fill="url(#box4)" filter="url(#shadow)" opacity="0.85"/>
+  <text x="90" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Adım 1</text>
+  <text x="90" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a3a">Pencere Kayar</text>
+  <text x="90" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a3a">Eski Eleman Çıkar</text>
+
+  <polygon points="160,235 175,235 175,231 188,238 175,245 175,241 160,241" fill="#8a7a6a"/>
+
+  <rect x="198" y="200" width="120" height="70" rx="8" fill="url(#box4)" filter="url(#shadow)" opacity="0.85"/>
+  <text x="258" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Adım 2</text>
+  <text x="258" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a3a">Yeni Değer Gelir</text>
+  <text x="258" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a3a">Küçükler Silinir</text>
+
+  <polygon points="328,235 343,235 343,231 356,238 343,245 343,241 328,241" fill="#8a7a6a"/>
+
+  <rect x="366" y="200" width="120" height="70" rx="8" fill="url(#box4)" filter="url(#shadow)" opacity="0.85"/>
+  <text x="426" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Adım 3</text>
+  <text x="426" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a3a">Baştaki İndeks</text>
+  <text x="426" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a3a">Sonucu Belirler</text>
+
+  <polygon points="496,235 511,235 511,231 524,238 511,245 511,241 496,241" fill="#8a7a6a"/>
+
+  <rect x="534" y="200" width="80" height="70" rx="8" fill="url(#box3)" filter="url(#shadow)" opacity="0.85"/>
+  <text x="574" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Sonuç</text>
+  <text x="574" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a3a">Dizi</text>
+  <text x="574" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a3a">Yazılır</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a8a9a">Zaman Serileri • Sensör Verileri • Borsa Grafikleri • Log Analizi</text>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e3f2fd"/>
+      <stop offset="100%" stop-color="#bbdefb"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ede7f6"/>
+      <stop offset="100%" stop-color="#d1c4e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#90a4ae" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#b0bec5" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect x="0" y="0" width="640" height="320" rx="12" fill="url(#bgGrad)"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#37474f">Dağıtık Mesaj Kuyruğu Mimarisi</text>
+
+  <!-- Dış API kaynağı -->
+  <rect x="30" y="55" width="120" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="90" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a237e">Uzak API</text>
+  <text x="90" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#283593">Sürekli veri akışı</text>
+
+  <!-- Üretici / Poller -->
+  <rect x="30" y="135" width="120" height="60" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#ffb74d" stroke-width="1.5"/>
+  <text x="90" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Üretici</text>
+  <text x="90" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#bf360c">Poller + Checkpoint</text>
+
+  <!-- API'dan Üreticiye ok -->
+  <path d="M 90 105 L 90 135" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="84,128 90,140 96,128" fill="#546e7a"/>
+
+  <!-- Kafka benzeri kuyruk -->
+  <rect x="220" y="95" width="180" height="140" rx="12" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#66bb6a" stroke-width="1.5"/>
+  <text x="310" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">Kafka Benzeri Kuyruk</text>
+
+  <!-- Topic kutusu -->
+  <rect x="240" y="130" width="140" height="35" rx="6" fill="#ffffff" filter="url(#shadowLight)" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="310" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2e7d32">Topic</text>
+  <text x="310" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#388e3c">Olay sınıflandırma</text>
+
+  <!-- Partition kutusu -->
+  <rect x="240" y="175" width="140" height="35" rx="6" fill="#ffffff" filter="url(#shadowLight)" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="310" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2e7d32">Partition</text>
+  <text x="310" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#388e3c">Sıralı günlük parçası</text>
+
+  <!-- Offset kutusu -->
+  <rect x="240" y="220" width="140" height="35" rx="6" fill="#ffffff" filter="url(#shadowLight)" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="310" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2e7d32">Offset</text>
+  <text x="310" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#388e3c">Mesaj konumu takibi</text>
+
+  <!-- Üreticiden Kuyruğa ok -->
+  <path d="M 150 165 L 220 150" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="212,148 224,148 214,157" fill="#546e7a"/>
+
+  <!-- Replica kutusu -->
+  <rect x="220" y="245" width="180" height="35" rx="8" fill="url(#boxGrad5)" filter="url(#shadowLight)" stroke="#b39ddb" stroke-width="1.5"/>
+  <text x="310" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#4527a0">Replica</text>
+  <text x="310" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5e35b1">Düğüm arızasına tolerans</text>
+
+  <!-- Tüketici grubu -->
+  <rect x="470" y="55" width="140" height="60" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#ef5350" stroke-width="1.5"/>
+  <text x="540" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#b71c1c">Tüketici Grubu</text>
+  <text x="540" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#c62828">Yatay paralellik</text>
+
+  <!-- Kuyruktan Tüketiciye ok -->
+  <path d="M 400 150 L 470 95" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="462,93 472,92 465,102" fill="#546e7a"/>
+
+  <!-- Tüketici 1 -->
+  <rect x="470" y="135" width="140" height="40" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#ef9a9a" stroke-width="1.5"/>
+  <text x="540" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#b71c1c">Analiz Servisi</text>
+  <text x="540" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#c62828">Idempotent yazım</text>
+
+  <!-- Tüketici 2 -->
+  <rect x="470" y="190" width="140" height="40" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#ef9a9a" stroke-width="1.5"/>
+  <text x="540" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#b71c1c">Bildirim Servisi</text>
+  <text x="540" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#c62828">eventId ile tekrar koruması</text>
+
+  <!-- Tüketici 3 -->
+  <rect x="470" y="245" width="140" height="40" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#ef9a9a" stroke-width="1.5"/>
+  <text x="540" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#b71c1c">Arşiv Servisi</text>
+  <text x="540" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#c62828">Bağımsız okuma</text>
+
+  <!-- Tüketici grubundan alt tüketicilere bağlantılar -->
+  <path d="M 540 115 L 540 135" stroke="#546e7a" stroke-width="1.5" fill="none"/>
+  <polygon points="534,128 540,138 546,128" fill="#546e7a"/>
+
+  <path d="M 540 175 L 540 190" stroke="#546e7a" stroke-width="1.5" fill="none"/>
+  <polygon points="534,183 540,193 546,183" fill="#546e7a"/>
+
+  <path d="M 540 230 L 540 245" stroke="#546e7a" stroke-width="1.5" fill="none"/>
+  <polygon points="534,238 540,248 546,238" fill="#546e7a"/>
+
+  <!-- Teslimat modeli etiketi -->
+  <rect x="30" y="230" width="160" height="55" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#90a4ae" stroke-width="1.5"/>
+  <text x="110" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#37474f">Teslimat Modeli</text>
+  <text x="110" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#546e7a">At-least-once</text>
+  <text x="110" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#546e7a">+ Idempotency</text>
+
+  <!-- Kuyruk ile teslimat modeli arası bağlantı -->
+  <path d="M 220 262 L 190 262" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+</svg>

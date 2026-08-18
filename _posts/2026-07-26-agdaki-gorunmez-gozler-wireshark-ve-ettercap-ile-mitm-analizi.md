@@ -8,6 +8,7 @@ tags:
   - Wireshark
   - Ettercap
   - ağ güvenliği
+image: /img/agdaki-gorunmez-gozler-89.png
 ---
 
 Bir ağdan geçen veriler gerçekten görünmez mi? Ne yazık ki hayır. Özellikle şifrelenmemiş protokoller kullanıldığında paketler, aynı ağı paylaşan kötü niyetli kişiler tarafından okunabilir. Wireshark ve Ettercap, yalnızca izinli laboratuvar ortamlarında kullanıldığında bu riski gözlemlemek, paketlerin yapısını öğrenmek ve savunma yöntemlerini test etmek için oldukça güçlü araçlardır.
@@ -72,3 +73,6 @@ HTTP kullanıldığında istek yolu, başlıklar ve form alanları açık biçim
 | Güvensiz Wi-Fi | Dinlemeye daha açık | VPN ve HTTPS kullanılmalı |
 
 Savunma için HTTPS zorunluluğu, güvenli DNS seçenekleri, VPN, dinamik ARP denetimi, istemci izolasyonu ve sertifika uyarılarının ciddiye alınması önemlidir. Wireshark ile olağan dışı ARP yanıtları veya tekrarlanan adres değişimleri araştırılabilir. Kısacası bu araçların en değerli kullanımı başkalarının verisini yakalamak değil, kendi ağımızın hangi koşullarda savunmasız kaldığını görüp şifrelemeyi doğru uygulamaktır.
+
+![agdaki-gorunmez-gozler-89](/img/agdaki-gorunmez-gozler-89.svg)
+

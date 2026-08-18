@@ -12,6 +12,7 @@ tags:
 
 Güçlendirme öğrenmesinde (Reinforcement Learning, RL) bir ajanın amacı, deneme-yanılma yoluyla en yüksek toplam ödülü getiren davranışı öğrenmektir. Q-learning ve Derin Q-Network (DQN), bu hedefe ulaşmak için kullanılan iki popüler yöntemdir; ancak biri küçük dünyaların tablo ustasıyken, diğeri yüksek boyutlu problemlerde sahneye çıkan derin öğrenme oyuncusudur.
 
+``
 
 Bir RL problemi genellikle durum $s$, eylem $a$, ödül $r$ ve bir sonraki durum $s'$ bileşenleriyle tanımlanır. Ajandaki temel soru şudur: “Bu durumda bu eylemi seçersem, gelecekte ne kadar ödül beklemeliyim?” Bu beklentiyi temsil eden fonksiyon, eylem-değer fonksiyonu ya da $Q$ fonksiyonudur:
 

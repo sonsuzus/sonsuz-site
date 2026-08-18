@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="apiGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#c8ddf5"/>
+    </linearGradient>
+    <linearGradient id="ruleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1c9"/>
+      <stop offset="100%" stop-color="#f8dc99"/>
+    </linearGradient>
+    <linearGradient id="botGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f4e8"/>
+      <stop offset="100%" stop-color="#bde4d2"/>
+    </linearGradient>
+    <linearGradient id="sideGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eee5fb"/>
+      <stop offset="100%" stop-color="#d9cdf2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8497" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8497" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="40" r="76" fill="#dcedff" opacity="0.42"/>
+  <circle cx="578" cy="282" r="104" fill="#d8f0d7" opacity="0.40"/>
+
+  <text x="320" y="30" text-anchor="middle" fill="#39536b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kural Tabanlı API Otomasyonu</text>
+
+  <path d="M176 150 L227 150" fill="none" stroke="#7a98ae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="227,150 217,144 217,156" fill="#7a98ae"/>
+  <path d="M400 150 L451 150" fill="none" stroke="#7a98ae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="451,150 441,144 441,156" fill="#7a98ae"/>
+
+  <path d="M313 215 C313 244 270 245 246 245" fill="none" stroke="#9b88b4" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="246,245 256,239 256,251" fill="#9b88b4"/>
+  <path d="M393 245 C423 245 439 222 439 194" fill="none" stroke="#8aab91" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="439,194 433,204 445,204" fill="#8aab91"/>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="99" width="136" height="102" rx="20" fill="url(#apiGrad)"/>
+    <rect x="50" y="109" width="116" height="82" rx="15" fill="#ffffff" opacity="0.32"/>
+  </g>
+  <circle cx="78" cy="132" r="18" fill="#ffffff" opacity="0.75"/>
+  <path d="M68 132 C68 126 72 122 78 122 C84 122 88 126 88 132 C88 138 84 142 78 142 C72 142 68 138 68 132Z" fill="none" stroke="#4a82ad" stroke-width="2"/>
+  <path d="M78 122 L78 142 M68 132 L88 132" stroke="#4a82ad" stroke-width="1.5"/>
+  <text x="109" y="132" fill="#355c7b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Dış API</text>
+  <text x="109" y="151" fill="#527188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">HTTP istek</text>
+  <text x="109" y="170" fill="#527188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">JSON yanıt</text>
+
+  <g filter="url(#shadow)">
+    <rect x="227" y="78" width="173" height="137" rx="22" fill="url(#ruleGrad)"/>
+    <rect x="238" y="89" width="151" height="115" rx="17" fill="#ffffff" opacity="0.28"/>
+  </g>
+  <circle cx="272" cy="124" r="22" fill="#ffffff" opacity="0.70"/>
+  <path d="M261 114 L271 114 L276 124 L270 134 L260 134" fill="none" stroke="#9b6b1a" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M281 114 L287 114 L287 134 L281 134" fill="none" stroke="#9b6b1a" stroke-width="2.2" stroke-linejoin="round"/>
+  <text x="313" y="117" fill="#73531b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kural Motoru</text>
+  <text x="313" y="139" fill="#84682c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sıcaklık analizi</text>
+  <text x="313" y="159" fill="#84682c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">if · elif · else</text>
+  <rect x="253" y="176" width="120" height="17" rx="8" fill="#f3ca73" opacity="0.65"/>
+  <text x="313" y="189" text-anchor="middle" fill="#76541a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Mesaj üret</text>
+
+  <g filter="url(#shadow)">
+    <rect x="451" y="99" width="149" height="102" rx="20" fill="url(#botGrad)"/>
+    <rect x="461" y="109" width="129" height="82" rx="15" fill="#ffffff" opacity="0.30"/>
+  </g>
+  <circle cx="487" cy="132" r="18" fill="#ffffff" opacity="0.76"/>
+  <path d="M478 128 L496 121 L491 141 L485 134 L481 138 L478 128Z" fill="none" stroke="#357d69" stroke-width="2" stroke-linejoin="round"/>
+  <text x="516" y="132" fill="#326b5b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Telegram Bot</text>
+  <text x="516" y="151" fill="#4f8274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Bildirim</text>
+  <text x="516" y="170" fill="#4f8274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kullanıcı</text>
+
+  <g filter="url(#soft)">
+    <rect x="91" y="226" width="155" height="48" rx="15" fill="url(#sideGrad)"/>
+  </g>
+  <circle cx="115" cy="250" r="11" fill="#ffffff" opacity="0.70"/>
+  <path d="M110 250 L114 254 L121 246" fill="none" stroke="#765e9c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="133" y="247" fill="#66507e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Önbellek</text>
+  <text x="133" y="263" fill="#7e6994" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">ve zamanlayıcı</text>
+
+  <g filter="url(#soft)">
+    <rect x="394" y="226" width="155" height="48" rx="15" fill="#dcefdc"/>
+  </g>
+  <circle cx="418" cy="250" r="11" fill="#ffffff" opacity="0.70"/>
+  <path d="M413 246 C418 242 424 246 423 251 C422 255 417 257 413 254" fill="none" stroke="#4d8760" stroke-width="2" stroke-linecap="round"/>
+  <path d="M413 254 L413 249 L418 252" fill="#4d8760"/>
+  <text x="436" y="247" fill="#416f50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Hata yönetimi</text>
+  <text x="436" y="263" fill="#5d8569" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">yeniden deneme</text>
+
+  <text x="201" y="141" text-anchor="middle" fill="#718a9d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">veri</text>
+  <text x="426" y="141" text-anchor="middle" fill="#718a9d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">mesaj</text>
+</svg>

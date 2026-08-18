@@ -8,7 +8,11 @@ tags:
   - Elasticsearch
   - Tam Metin Arama
   - Ters İndeks
+image: /img/elasticsearch-ile-olceklenebilir-22.png
 ---
+
+![elasticsearch-ile-olceklenebilir-22](/img/elasticsearch-ile-olceklenebilir-22.svg)
+
 
 Milyonlarca ürün, makale ya da log kaydı arasında kullanıcıların yazdığı birkaç kelimeyi milisaniyeler içinde bulmak, ilk bakışta samanlıkta iğne aramaya benzer. Elasticsearch bu işi belgeleri tek tek okumak yerine **ters indeks** (inverted index) kurarak çözer. Bu yapı, klasik veritabanı sorgularındaki satır taramasını arama motoruna uygun, hızlı bir erişim modeline dönüştürür.
 ``

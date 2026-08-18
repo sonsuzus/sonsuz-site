@@ -8,6 +8,7 @@ tags:
   - Rust
   - Cargo
   - VS Code
+image: /img/rust-kurulumu-ve-85.png
 ---
 
 Rust öğrenme yolculuğunun ilk durağı, derleyiciyi kurup editörü hazırlamaktır. Neyse ki Rust dünyasında kurulum, farklı araçları tek tek avlamaktan çok daha düzenlidir: `rustup` araç zincirini yönetir, `rustc` kodu derler, Cargo ise proje ve bağımlılık işlerini üstlenir. VS Code eklentileri de eklenince geriye yalnızca güvenli ve hızlı kod yazmak kalır.
@@ -103,3 +104,6 @@ cargo run      # Uygulamayı derleyip başlatır
 ```
 
 Bağımlılıklar `Cargo.toml` içindeki `[dependencies]` bölümünde tutulur ve kesin sürümler `Cargo.lock` dosyasına kaydedilir. Böylece ekipteki herkes aynı bağımlılıklarla tekrarlanabilir derlemeler yapar. Son kontrol olarak `cargo run` çıktısında “Hello, world!” görüyorsanız tebrikler: Rust atölyeniz üretime hazır!
+
+![rust-kurulumu-ve-85](/img/rust-kurulumu-ve-85.svg)
+

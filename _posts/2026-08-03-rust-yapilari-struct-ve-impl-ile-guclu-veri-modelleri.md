@@ -8,7 +8,11 @@ tags:
   - Rust
   - Struct
   - Veri Modelleme
+image: /img/rust-yapilari-struct-38.png
 ---
+
+![rust-yapilari-struct-38](/img/rust-yapilari-struct-38.svg)
+
 
 Bir uygulamada kullanıcı adı, yaş, e-posta adresi ve aktiflik durumu gibi birbirleriyle ilişkili değerleri ayrı değişkenlerde tutmak mümkündür. Ancak proje büyüdükçe bu yaklaşım, çekmeceleri etiketlenmemiş bir dolaba dönüşür. Rust dilindeki `struct` yapıları, farklı tiplerdeki verileri anlamlı bir isim altında birleştirerek kendi veri tiplerimizi oluşturmamızı sağlar.
 ``

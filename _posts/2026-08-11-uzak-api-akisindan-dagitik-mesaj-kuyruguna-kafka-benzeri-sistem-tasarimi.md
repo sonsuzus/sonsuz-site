@@ -8,7 +8,11 @@ tags:
   - sistem tasarımı
   - Kafka
   - dağıtık sistemler
+image: /img/uzak-api-akisindan-71.png
 ---
+
+![uzak-api-akisindan-71](/img/uzak-api-akisindan-71.svg)
+
 
 Uzak bir API’den durmaksızın veri çekmek, ilk bakışta basit bir `while` döngüsü gibi görünür. Ancak ağ gecikmeleri, API kota sınırları, yinelenen kayıtlar, çöken düğümler ve tüketicilerin farklı hızları devreye girince bu iş küçük bir dağıtık sistem macerasına dönüşür. Amaç; veriyi kaybetmeden almak, sıralı şekilde saklamak, birden çok tüketiciye dağıtmak ve tek bir makinenin arızasında sistemi ayakta tutmaktır.
 

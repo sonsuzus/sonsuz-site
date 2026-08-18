@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - makine öğrenmesi
   - turing testi
+image: /img/yapay-zeka-temelleri-23.png
 ---
 
 Yapay zeka (YZ), makinelerin yalnızca hesap yapmasını değil; algılamasını, öğrenmesini, karar vermesini ve kimi zaman yaratıcı görünen çıktılar üretmesini hedefleyen disiplinler arası bir alandır. Bugünkü üretken modeller bir anda ortaya çıkmadı: mantık, olasılık, bilişsel bilim, istatistik ve bilgisayar mühendisliğinin onlarca yıllık ortak birikimiyle şekillendi. Bu tarihi anlamak, güncel "akıllı" sistemlerin neden bazen etkileyici, bazen de şaşırtıcı biçimde hatalı davranabildiğini kavramanın en iyi yoludur.
@@ -24,6 +25,9 @@ Alanı popülerleştiren sorulardan biri Alan Turing’in 1950’deki önerisiyd
 | Sembolik YZ | Kurallar ve mantıkla çıkarım | Açıklanabilir kararlar | Gerçek dünyanın belirsizliği |
 | Makine öğrenmesi | Veriden örüntü öğrenme | Uyarlanabilirlik | Veri kalitesine bağımlılık |
 | Derin öğrenme | Çok katmanlı sinir ağları | Görüntü ve dil başarısı | Yüksek hesaplama maliyeti |
+
+![yapay-zeka-temelleri-23](/img/yapay-zeka-temelleri-23.svg)
+
 
 ## Kurallardan veriye: Öğrenmenin yükselişi
 

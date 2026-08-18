@@ -8,6 +8,7 @@ tags:
   - JavaScript
   - Hoisting
   - Execution Context
+image: /img/javascriptte-hoisting-ve-18.png
 ---
 
 JavaScript kodu satır satır çalışan basit bir tarif gibi görünür; ancak motor, ilk satırı yürütmeden önce mutfağı çoktan düzenlemiştir. Değişken ve fonksiyon bildirimleri için bellek ayırır, kapsamları oluşturur ve erişim kurallarını belirler. **Hoisting** adı verilen davranış, bildirimlerin gerçekten kaynak kodun başına taşınması değil, çalışma bağlamının hazırlanma aşamasında belleğe kaydedilmesidir. Bu ayrım bilinmediğinde kod, küçük bir sihir gösterisinden hızla hata avına dönüşebilir.
@@ -33,6 +34,9 @@ Hoisting ilk bölümün sonucudur. Motor, `var` bildirimlerini `undefined` ile b
 | `let` | Başlatılmamış kayıt | Hayır, `ReferenceError` | Evet |
 | `const` | Başlatılmamış kayıt | Hayır, `ReferenceError` | Hayır |
 | Function declaration | Fonksiyon gövdesiyle hazırdır | Evet | İlgili bağlama göre |
+
+![javascriptte-hoisting-ve-18](/img/javascriptte-hoisting-ve-18.svg)
+
 
 ## `var`: Sessiz ama tehlikeli
 

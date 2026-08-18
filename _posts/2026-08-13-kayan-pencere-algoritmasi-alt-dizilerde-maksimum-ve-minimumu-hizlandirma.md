@@ -8,6 +8,7 @@ tags:
   - algoritmalar
   - sliding window
   - deque
+image: /img/kayan-pencere-algoritmasi-94.png
 ---
 
 Bir dizide ardışık $k$ elemanlık her grubun maksimumunu veya minimumunu bulmak, ilk bakışta basit görünür: Her konumda pencereyi tara, sonucu yaz. Ancak veri büyüdüğünde bu yaklaşım bir performans tuzağına dönüşür. Kayan Pencere (Sliding Window), pencerenin her adımda yalnızca bir eleman kaybettiği ve bir eleman kazandığı fikrinden yararlanarak tekrar eden işi ortadan kaldırır. Özellikle zaman serileri, sensör verileri, borsa grafikleri ve log analizi gibi alanlarda oldukça kullanışlıdır.
@@ -77,3 +78,6 @@ Kodda her indeks kuyruğa yalnızca bir kez eklenir ve en fazla bir kez çıkar�
 En yaygın hata değer yerine indeks tutmamaktır. İndeks olmadan bir elemanın pencere dışına çıkıp çıkmadığını güvenilir biçimde anlayamazsınız; aynı değerlerin tekrarlandığı dizilerde hata daha da görünür olur. Ayrıca `<=` ve `>=` seçimleri önemlidir: Eşit değerlerde daha yeni indeksi tutmak, eski indeksin daha erken geçersizleşmesini doğal biçimde yönetir.
 
 Kısacası kayan pencere yalnızca bir optimizasyon numarası değildir; hareket eden veri aralıklarında gereksiz hesaplamayı fark etme alışkanlığıdır. Maksimum ve minimum problemlerinde monotonik kuyrukla birleştiğinde, milyonlarca veriyi tek geçişte işleyen zarif bir çözüme dönüşür.
+
+![kayan-pencere-algoritmasi-94](/img/kayan-pencere-algoritmasi-94.svg)
+

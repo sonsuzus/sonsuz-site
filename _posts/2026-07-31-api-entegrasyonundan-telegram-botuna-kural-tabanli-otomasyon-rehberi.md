@@ -8,7 +8,11 @@ tags:
   - API
   - Telegram Bot
   - Otomasyon
+image: /img/api-entegrasyonundan-telegram-69.png
 ---
+
+![api-entegrasyonundan-telegram-69](/img/api-entegrasyonundan-telegram-69.svg)
+
 
 Bir uygulamanın dış dünyayla konuşmasını istiyorsanız kapısını API’lere açmanız gerekir. Hava durumu, döviz kuru, haberler veya sensör verileri gibi bilgiler bir web servisinden alınabilir; algoritmalarla işlenip Telegram botu üzerinden kullanıcıya sunulabilir. Böylece değişkenler, koşullar, döngüler ve fonksiyonlar gerçek hayatta çalışan eğlenceli bir otomasyon projesine dönüşür.
 ``
