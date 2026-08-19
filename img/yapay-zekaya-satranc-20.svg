@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9e1ff"/>
+      <stop offset="100%" stop-color="#d9ecff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#61758a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#61758a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="73" cy="42" r="62" fill="#d8f0ea" opacity="0.38"/>
+  <circle cx="587" cy="280" r="79" fill="#e5dcfa" opacity="0.34"/>
+  <path d="M25 267 C138 226 160 296 271 278 S470 218 620 251" fill="none" stroke="#c9dfeb" stroke-width="2" opacity="0.55"/>
+
+  <!-- left intuition -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="103" width="124" height="112" rx="19" fill="#fff5d9"/>
+    <rect x="38" y="114" width="104" height="90" rx="14" fill="#fffaf0" stroke="#f0dba6"/>
+  </g>
+  <circle cx="90" cy="143" r="20" fill="#ffe3a5"/>
+  <path d="M82 145 C82 136 88 130 96 133 C102 135 104 141 101 146 C99 149 95 150 94 155 L87 155 C87 150 82 150 82 145Z" fill="#c98335"/>
+  <rect x="86" y="158" width="12" height="3" rx="1.5" fill="#c98335"/>
+  <text x="90" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765425" font-weight="600">İnsan sezgisi</text>
+  <text x="90" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7540">Örtük örüntü</text>
+
+  <!-- arrow -->
+  <path d="M157 159 L188 159" fill="none" stroke="#7d91a2" stroke-width="2.5"/>
+  <polygon points="188,159 180,154 180,164" fill="#7d91a2"/>
+  <text x="172" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a7e90">çevir</text>
+
+  <!-- center chess encoding -->
+  <g filter="url(#shadow)">
+    <rect x="195" y="62" width="190" height="196" rx="25" fill="url(#core)" stroke="#c7b9ed"/>
+  </g>
+  <text x="290" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554878" font-weight="700">Çalıştırılabilir model</text>
+
+  <!-- chess board -->
+  <g transform="translate(239 104)" filter="url(#soft)">
+    <rect x="-5" y="-5" width="112" height="112" rx="10" fill="#fff" opacity="0.78"/>
+    <rect x="0" y="0" width="102" height="102" rx="6" fill="#f4dcae"/>
+    <g fill="#957c9c">
+      <rect x="0" y="0" width="25.5" height="25.5"/><rect x="51" y="0" width="25.5" height="25.5"/>
+      <rect x="25.5" y="25.5" width="25.5" height="25.5"/><rect x="76.5" y="25.5" width="25.5" height="25.5"/>
+      <rect x="0" y="51" width="25.5" height="25.5"/><rect x="51" y="51" width="25.5" height="25.5"/>
+      <rect x="25.5" y="76.5" width="25.5" height="25.5"/><rect x="76.5" y="76.5" width="25.5" height="25.5"/>
+    </g>
+    <text x="63" y="72" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#493c54">♞</text>
+    <text x="38" y="47" text-anchor="middle" font-family="Georgia, serif" font-size="27" fill="#fffdf5">♟</text>
+    <text x="88" y="96" text-anchor="middle" font-family="Georgia, serif" font-size="25" fill="#fffdf5">♙</text>
+  </g>
+  <rect x="218" y="220" width="144" height="23" rx="11.5" fill="#ffffff" opacity="0.75"/>
+  <text x="290" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554878">Konum → sayısal temsil</text>
+
+  <!-- right branches -->
+  <path d="M390 159 L407 159 L407 82 L424 82" fill="none" stroke="#7d91a2" stroke-width="2.3"/>
+  <polygon points="424,82 416,77 416,87" fill="#7d91a2"/>
+  <path d="M390 159 L424 159" fill="none" stroke="#7d91a2" stroke-width="2.3"/>
+  <polygon points="424,159 416,154 416,164" fill="#7d91a2"/>
+  <path d="M390 159 L407 159 L407 236 L424 236" fill="none" stroke="#7d91a2" stroke-width="2.3"/>
+  <polygon points="424,236 416,231 416,241" fill="#7d91a2"/>
+
+  <g filter="url(#soft)">
+    <rect x="430" y="48" width="127" height="68" rx="16" fill="#dff3ec"/>
+    <circle cx="453" cy="82" r="15" fill="#aee0d1"/>
+    <path d="M445 85 L451 79 L456 83 L463 75" fill="none" stroke="#387c6d" stroke-width="2.5"/>
+    <text x="505" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#28695c" font-weight="700">Değerlendirme</text>
+    <text x="505" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a887c">Puan ve ağırlık</text>
+
+    <rect x="430" y="125" width="127" height="68" rx="16" fill="#dcecff"/>
+    <circle cx="453" cy="159" r="15" fill="#b8d9f8"/>
+    <path d="M445 154 L451 149 L451 169 M451 149 L459 154 M451 159 L462 164" fill="none" stroke="#4179ae" stroke-width="2"/>
+    <text x="505" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#316998" font-weight="700">Arama</text>
+    <text x="505" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8bb2">Minimax ve budama</text>
+
+    <rect x="430" y="202" width="127" height="68" rx="16" fill="#f0e2fa"/>
+    <circle cx="453" cy="236" r="15" fill="#d7b9ed"/>
+    <circle cx="447" cy="231" r="3" fill="#7d4b9b"/><circle cx="459" cy="228" r="3" fill="#7d4b9b"/><circle cx="457" cy="241" r="3" fill="#7d4b9b"/>
+    <path d="M450 231 L456 229 M449 233 L456 240 M459 231 L458 238" stroke="#7d4b9b" stroke-width="1.5"/>
+    <text x="505" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72428e" font-weight="700">Öğrenme</text>
+    <text x="505" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9466ae">Politika ve değer</text>
+  </g>
+
+  <!-- output -->
+  <path d="M563 159 L587 159" fill="none" stroke="#7d91a2" stroke-width="2.5"/>
+  <polygon points="587,159 579,154 579,164" fill="#7d91a2"/>
+  <g filter="url(#shadow)">
+    <rect x="590" y="125" width="42" height="68" rx="16" fill="#ffddd7"/>
+  </g>
+  <text x="611" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#a95050">♛</text>
+  <text x="611" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#914849" font-weight="700">Hamle</text>
+</svg>

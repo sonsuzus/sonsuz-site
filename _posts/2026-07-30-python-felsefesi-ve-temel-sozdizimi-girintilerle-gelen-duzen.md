@@ -8,7 +8,11 @@ tags:
   - Python
   - Sözdizimi
   - Temiz Kod
+image: /img/python-felsefesi-ve-91.png
 ---
+
+![python-felsefesi-ve-91](/img/python-felsefesi-ve-91.svg)
+
 
 Python öğrenmeye başladığınızda ilk şaşkınlık genellikle şudur: “Süslü parantezler nerede?” Cevap basit ama önemlidir: Python, kod bloklarını `{}` karakterleriyle değil, girintiyle tanımlar. Bu tercih yalnızca farklı bir sözdizimi oluşturmaz; programcıyı düzenli, sade ve okunabilir kod yazmaya yönlendiren bilinçli bir tasarım felsefesini temsil eder.
 

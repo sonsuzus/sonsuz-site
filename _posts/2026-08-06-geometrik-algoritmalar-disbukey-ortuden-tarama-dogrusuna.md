@@ -8,6 +8,7 @@ tags:
   - geometri
   - algoritma
   - dışbükey örtü
+image: /img/geometrik-algoritmalar-disbukey-62.png
 ---
 
 Haritadaki noktaları çevreleyen en kısa çiti bulmak, kesişen yol parçalarını tespit etmek veya bir çokgenin alanını hesaplamak… Bilgisayarlı geometrinin bu klasik problemleri, birkaç temel işlem üzerine kurulur. Nokta, doğru ve çokgenleri matematiksel olarak temsil etmeyi öğrendiğimizde dışbükey örtü ve tarama doğrusu gibi ilk bakışta ürkütücü görünen algoritmalar oldukça anlaşılır hâle gelir.
@@ -95,3 +96,6 @@ Tarama doğrusu yaklaşımında hayali bir doğru düzlem boyunca hareket eder. 
 Örneğin yatay doğru parçalarının çakışmasını ararken başlangıç noktası aktif kümeye eklenir, bitiş noktası geldiğinde çıkarılır. Dikey bir parça işlendiğinde aktif kümede onun $y$ aralığına düşen parçalar sorgulanır. Dengeli bir arama ağacı kullanılırsa ekleme, silme ve arama işlemleri $O(\log n)$ zamanda yapılabilir.
 
 Tarama doğrusu uygulamalarındaki kritik ayrıntı, aynı koordinattaki olayların sırasıdır. Bir parçanın bitişi, diğerinin başlangıcıyla çakışıyorsa kesişimin sayılıp sayılmayacağına göre olay öncelikleri belirlenmelidir. Geometride şeytan ayrıntıda, hata ise çoğunlukla eşitlik durumundadır!
+
+![geometrik-algoritmalar-disbukey-62](/img/geometrik-algoritmalar-disbukey-62.svg)
+

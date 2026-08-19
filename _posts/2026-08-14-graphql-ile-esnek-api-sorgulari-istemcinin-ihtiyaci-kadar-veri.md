@@ -8,7 +8,11 @@ tags:
   - GraphQL
   - API
   - JavaScript
+image: /img/graphql-ile-esnek-73.png
 ---
+
+![graphql-ile-esnek-73](/img/graphql-ile-esnek-73.svg)
+
 
 Modern uygulamalarda bir ekranın ihtiyaç duyduğu veri çoğu zaman tek bir kaynaktan gelmez: kullanıcı bilgisi, siparişler, ürün görselleri ve izinler farklı kaynaklara dağılmış olabilir. REST yaklaşımında bu durum genellikle birden fazla endpoint çağrısı veya gereğinden büyük JSON yanıtları anlamına gelir. GraphQL ise istemcinin, sunucuya *hangi alanları istediğini* açıkça söylediği sorgu tabanlı bir API mimarisidir. Böylece mobil uygulama, web arayüzü ve yönetim paneli aynı veri grafiğini kendi ihtiyaçlarına göre gezebilir.
 ``

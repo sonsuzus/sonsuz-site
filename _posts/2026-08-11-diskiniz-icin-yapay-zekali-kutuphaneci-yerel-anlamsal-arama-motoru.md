@@ -8,7 +8,11 @@ tags:
   - Python
   - Yerel Yapay Zeka
   - Vektör Arama
+image: /img/diskiniz-icin-yapay-55.png
 ---
+
+![diskiniz-icin-yapay-55](/img/diskiniz-icin-yapay-55.svg)
+
 
 Klasik dosya arama araçları dosya adına ve tam anahtar kelime eşleşmesine bağımlıdır. Oysa `toplantı notları` diye aradığınızda adı `2025-03-14_musteri_gorusmesi.docx` olan belgeyi bulmak istersiniz. Bu projede sabit diskteki dosyaları tarayan, metinlerini çıkaran, içeriklerinden otomatik etiket üreten ve internet bağlantısı olmadan anlamsal arama yapan yerel bir masaüstü arama motoru tasarlayacağız. Hedefimiz, diskinizi yalnızca dosyaların durduğu bir depo olmaktan çıkarıp bağlamı anlayan kişisel bir bilgi tabanına dönüştürmek.
 

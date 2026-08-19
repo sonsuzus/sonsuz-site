@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d5b7"/>
+      <stop offset="100%" stop-color="#d4b896"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8c6db"/>
+      <stop offset="100%" stop-color="#9aadc4"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#87c0d8"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c3d9b0"/>
+      <stop offset="100%" stop-color="#a9c98f"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9c7e0"/>
+      <stop offset="100%" stop-color="#c0a8cc"/>
+    </linearGradient>
+    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c4a8"/>
+      <stop offset="100%" stop-color="#e0a880"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a4a5a">Şifreleme Tarihi ve Geleceği</text>
+
+  <!-- Zaman çizelgesi çizgisi -->
+  <line x1="40" y1="60" x2="600" y2="60" stroke="#8899aa" stroke-width="2" opacity="0.5"/>
+
+  <!-- Dönemler -->
+  <!-- Antik -->
+  <rect x="50" y="75" width="90" height="55" rx="10" fill="url(#g1)" filter="url(#shadow)"/>
+  <text x="95" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a3a2a">Antik Çağ</text>
+  <text x="95" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a4a3a">Skytale</text>
+  <text x="95" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a4a3a">Sezar Şifresi</text>
+
+  <!-- Orta Çağ -->
+  <rect x="170" y="75" width="90" height="55" rx="10" fill="url(#g2)" filter="url(#shadow)"/>
+  <text x="215" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a3a4a">Orta Çağ</text>
+  <text x="215" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a4a5a">El-Kindî</text>
+  <text x="215" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a4a5a">Frekans Analizi</text>
+
+  <!-- Rönesans -->
+  <rect x="290" y="75" width="90" height="55" rx="10" fill="url(#g3)" filter="url(#shadow)"/>
+  <text x="335" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a4a">Rönesans</text>
+  <text x="335" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a4a5a">Vigenère</text>
+  <text x="335" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a4a5a">Çoklu Kaydırma</text>
+
+  <!-- 20. Yüzyıl -->
+  <rect x="410" y="75" width="90" height="55" rx="10" fill="url(#g4)" filter="url(#shadow)"/>
+  <text x="455" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a4a2a">20. Yüzyıl</text>
+  <text x="455" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a5a3a">Enigma</text>
+  <text x="455" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a5a3a">Turing</text>
+
+  <!-- Modern -->
+  <rect x="530" y="75" width="90" height="55" rx="10" fill="url(#g5)" filter="url(#shadow)"/>
+  <text x="575" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a2a4a">Modern</text>
+  <text x="575" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a3a5a">AES ve RSA</text>
+
+  <!-- Oklar -->
+  <polygon points="140,102 150,97 150,107" fill="#8899aa" opacity="0.6"/>
+  <polygon points="260,102 270,97 270,107" fill="#8899aa" opacity="0.6"/>
+  <polygon points="380,102 390,97 390,107" fill="#8899aa" opacity="0.6"/>
+  <polygon points="500,102 510,97 510,107" fill="#8899aa" opacity="0.6"/>
+
+  <!-- Alt bölüm: Kuantum -->
+  <rect x="50" y="160" width="250" height="65" rx="12" fill="url(#g6)" filter="url(#shadow)"/>
+  <text x="175" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a2a1a">Kuantum Tehdidi</text>
+  <text x="175" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a3a2a">Shor Algoritması</text>
+  <text x="175" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a3a2a">RSA ve Eliptik Eğri</text>
+
+  <!-- Alt bölüm: Kuantum sonrası -->
+  <rect x="340" y="160" width="250" height="65" rx="12" fill="url(#g5)" filter="url(#shadow)"/>
+  <text x="465" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a2a4a">Kuantum Sonrası</text>
+  <text x="465" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a3a5a">Kafes Tabanlı</text>
+  <text x="465" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a3a5a">ML-KEM</text>
+
+  <!-- Ok -->
+  <polygon points="300,192 320,187 320,197" fill="#8899aa" opacity="0.6"/>
+
+  <!-- Alt bölüm: Simetrik ve Asimetrik -->
+  <rect x="50" y="250" width="180" height="50" rx="10" fill="url(#g3)" filter="url(#shadow)"/>
+  <text x="140" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a4a">Simetrik</text>
+  <text x="140" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a4a5a">Tek Anahtar</text>
+
+  <rect x="260" y="250" width="180" height="50" rx="10" fill="url(#g4)" filter="url(#shadow)"/>
+  <text x="350" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a4a2a">Asimetrik</text>
+  <text x="350" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a5a3a">Açık ve Özel Anahtar</text>
+
+  <!-- Alt bölüm: Gelecek -->
+  <rect x="470" y="250" width="150" height="50" rx="10" fill="url(#g1)" filter="url(#shadow)"/>
+  <text x="545" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a3a2a">Gelecek</text>
+  <text x="545" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a4a3a">Uyum Sanatı</text>
+
+  <!-- Oklar -->
+  <polygon points="230,275 240,270 240,280" fill="#8899aa" opacity="0.6"/>
+  <polygon points="440,275 450,270 450,280" fill="#8899aa" opacity="0.6"/>
+
+  <!-- Dikey bağlantılar -->
+  <line x1="95" y1="130" x2="95" y2="160" stroke="#8899aa" stroke-width="1.5" opacity="0.4"/>
+  <line x1="575" y1="130" x2="575" y2="160" stroke="#8899aa" stroke-width="1.5" opacity="0.4"/>
+</svg>

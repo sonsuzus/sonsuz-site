@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff4ff"/>
+      <stop offset="100%" stop-color="#dff7e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#62758a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#556b7b" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="52" r="58" fill="#d9ebff" opacity="0.48"/>
+  <circle cx="584" cy="265" r="77" fill="#dff3dc" opacity="0.52"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40566c" font-weight="600">Kara Kutudan Cam Kutuya</text>
+
+  <!-- Inputs -->
+  <g filter="url(#soft)">
+    <rect x="28" y="89" width="110" height="45" rx="13" fill="#fff4dc"/>
+    <circle cx="51" cy="111" r="12" fill="#f4c978"/>
+    <path d="M46 113 L51 106 L56 113 L51 117 Z" fill="#fffaf0"/>
+    <text x="93" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68533a" font-weight="600">Veri</text>
+    <text x="93" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806b50">geçmiş kayıtlar</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="177" width="110" height="45" rx="13" fill="#eee5ff"/>
+    <circle cx="51" cy="199" r="12" fill="#af95e8"/>
+    <path d="M46 199 H56 M51 194 V204" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="93" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d4c83" font-weight="600">Başvuru</text>
+    <text x="93" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76658f">özellikler</text>
+  </g>
+
+  <!-- arrows to model -->
+  <path d="M138 111 H177" fill="none" stroke="#8293a3" stroke-width="2"/>
+  <polygon points="177,111 169,106 169,116" fill="#8293a3"/>
+  <path d="M138 199 H177" fill="none" stroke="#8293a3" stroke-width="2"/>
+  <polygon points="177,199 169,194 169,204" fill="#8293a3"/>
+
+  <!-- black box -->
+  <g filter="url(#shadow)">
+    <rect x="180" y="73" width="146" height="164" rx="22" fill="#33485d"/>
+    <rect x="190" y="83" width="126" height="144" rx="17" fill="#283b4e"/>
+    <circle cx="253" cy="145" r="37" fill="#1c2b3a"/>
+    <path d="M232 130 C242 116 264 116 274 130 M228 155 C241 142 266 143 278 157 M239 170 C247 163 259 163 268 170" fill="none" stroke="#7c92a8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="238" cy="132" r="3" fill="#f2c76e"/>
+    <circle cx="270" cy="132" r="3" fill="#f2c76e"/>
+    <text x="253" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf5fc" font-weight="600">Kara Kutu Model</text>
+    <text x="253" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b9c8d5">neden belirsiz</text>
+  </g>
+
+  <!-- transition arrow -->
+  <path d="M330 155 H365" fill="none" stroke="#5d8490" stroke-width="3"/>
+  <polygon points="365,155 355,148 355,162" fill="#5d8490"/>
+  <text x="348" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d727d">XAI</text>
+
+  <!-- glass box -->
+  <g filter="url(#shadow)">
+    <rect x="369" y="63" width="151" height="183" rx="22" fill="url(#glass)" stroke="#a6d5d7" stroke-width="1.5"/>
+    <rect x="383" y="78" width="123" height="31" rx="9" fill="#ffffff" opacity="0.72"/>
+    <circle cx="400" cy="93" r="8" fill="#69b9cb"/>
+    <text x="450" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355b67" font-weight="600">Karar Mantığı</text>
+
+    <path d="M397 126 H487" stroke="#8bbbc3" stroke-width="1.5"/>
+    <circle cx="400" cy="126" r="5" fill="#78c99c"/>
+    <text x="414" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42636a">Gelir etkisi</text>
+    <rect x="456" y="119" width="30" height="10" rx="5" fill="#77cda0"/>
+
+    <path d="M397 153 H487" stroke="#8bbbc3" stroke-width="1.5"/>
+    <circle cx="400" cy="153" r="5" fill="#f0ad72"/>
+    <text x="414" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42636a">Gecikme</text>
+    <rect x="443" y="146" width="43" height="10" rx="5" fill="#edb37e"/>
+
+    <path d="M397 180 H487" stroke="#8bbbc3" stroke-width="1.5"/>
+    <circle cx="400" cy="180" r="5" fill="#9c8cdf"/>
+    <text x="414" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42636a">Veri kökeni</text>
+    <rect x="452" y="173" width="34" height="10" rx="5" fill="#ae9ae7"/>
+
+    <rect x="391" y="199" width="107" height="31" rx="9" fill="#ffffff" opacity="0.75"/>
+    <text x="444" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38626b" font-weight="600">İzlenebilir karar</text>
+  </g>
+
+  <!-- outputs -->
+  <path d="M522 108 H550" fill="none" stroke="#7a9ba1" stroke-width="2"/>
+  <polygon points="550,108 542,103 542,113" fill="#7a9ba1"/>
+  <path d="M522 153 H550" fill="none" stroke="#7a9ba1" stroke-width="2"/>
+  <polygon points="550,153 542,148 542,158" fill="#7a9ba1"/>
+  <path d="M522 198 H550" fill="none" stroke="#7a9ba1" stroke-width="2"/>
+  <polygon points="550,198 542,193 542,203" fill="#7a9ba1"/>
+
+  <g filter="url(#soft)">
+    <rect x="553" y="84" width="67" height="47" rx="12" fill="#e1f5e6"/>
+    <path d="M570 108 l7 7 l15 -16" fill="none" stroke="#54a776" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="598" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6c50" font-weight="600">Karar</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="553" y="139" width="67" height="47" rx="12" fill="#e6f1ff"/>
+    <path d="M570 153 h17 M570 160 h25 M570 167 h12" stroke="#6392c8" stroke-width="2" stroke-linecap="round"/>
+    <text x="598" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456b98" font-weight="600">Gerekçe</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="553" y="194" width="67" height="47" rx="12" fill="#fff0eb"/>
+    <path d="M570 210 h18 v14 h-18 z M574 214 h10 M574 219 h7" fill="none" stroke="#c77861" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="598" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#93604f" font-weight="600">Denetim</text>
+  </g>
+
+  <!-- bottom ethics strip -->
+  <g filter="url(#soft)">
+    <rect x="151" y="269" width="371" height="34" rx="15" fill="#ffffff" opacity="0.9"/>
+    <circle cx="177" cy="286" r="8" fill="#f3bd77"/>
+    <text x="191" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e6873">Adalet</text>
+    <path d="M250 286 H272" stroke="#bdcbd0" stroke-width="1.5"/>
+    <circle cx="289" cy="286" r="8" fill="#83b9d7"/>
+    <text x="303" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e6873">Şeffaflık</text>
+    <path d="M383 286 H405" stroke="#bdcbd0" stroke-width="1.5"/>
+    <circle cx="422" cy="286" r="8" fill="#8bc89a"/>
+    <text x="436" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e6873">Sorumluluk</text>
+  </g>
+</svg>

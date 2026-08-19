@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="nodeA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcecff"/>
+      <stop offset="1" stop-color="#c9ddf7"/>
+    </linearGradient>
+    <linearGradient id="nodeB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbf4e8"/>
+      <stop offset="1" stop-color="#c8e9da"/>
+    </linearGradient>
+    <linearGradient id="nodeC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0cc"/>
+      <stop offset="1" stop-color="#f7dfaa"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#70849a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71879a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="40" r="68" fill="#d7ecff" opacity="0.34"/>
+  <circle cx="578" cy="274" r="90" fill="#dff2d9" opacity="0.38"/>
+  <path d="M35 260 C145 230, 195 286, 306 257 S495 216, 609 245" fill="none" stroke="#b8d8d1" stroke-width="1.5" opacity="0.55"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">Prototip Zinciri ve Özellik Arama</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72879a">Önce kendi özellikleri, sonra bağlı nesneler</text>
+
+  <rect x="37" y="91" width="159" height="155" rx="18" fill="url(#nodeA)" filter="url(#shadow)"/>
+  <rect x="37" y="91" width="159" height="34" rx="18" fill="#86b4e1"/>
+  <path d="M37 108 Q37 125 55 125 H178 Q196 125 196 108" fill="#86b4e1"/>
+  <circle cx="61" cy="108" r="10" fill="#eef7ff" opacity="0.9"/>
+  <path d="M57 110 C59 105,63 105,65 110 M59 109 L59 113 M63 109 L63 113" fill="none" stroke="#4a7da9" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="78" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">kedi</text>
+  <text x="56" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34536c">Kendi özellikler</text>
+  <rect x="54" y="162" width="125" height="27" rx="8" fill="#f8fcff" filter="url(#smallShadow)"/>
+  <text x="67" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#416178">isim: Tekir</text>
+  <rect x="54" y="198" width="125" height="27" rx="8" fill="#f8fcff" filter="url(#smallShadow)"/>
+  <text x="67" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#416178">miyavla()</text>
+
+  <rect x="241" y="91" width="159" height="155" rx="18" fill="url(#nodeB)" filter="url(#shadow)"/>
+  <rect x="241" y="91" width="159" height="34" rx="18" fill="#75bda2"/>
+  <path d="M241 108 Q241 125 259 125 H382 Q400 125 400 108" fill="#75bda2"/>
+  <circle cx="265" cy="108" r="10" fill="#f0fff8" opacity="0.9"/>
+  <path d="M261 112 C261 106,269 104,270 110 C270 114,266 116,265 117 C264 115,261 114,261 112Z" fill="#4c987e"/>
+  <text x="282" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">canli</text>
+  <text x="260" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#326451">Paylaşılan davranış</text>
+  <rect x="258" y="164" width="125" height="39" rx="8" fill="#f8fffb" filter="url(#smallShadow)"/>
+  <text x="271" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#36725c">nefesAl()</text>
+  <text x="260" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e8172">[[Prototype]]</text>
+
+  <rect x="445" y="91" width="159" height="155" rx="18" fill="url(#nodeC)" filter="url(#shadow)"/>
+  <rect x="445" y="91" width="159" height="34" rx="18" fill="#d6a85a"/>
+  <path d="M445 108 Q445 125 463 125 H586 Q604 125 604 108" fill="#d6a85a"/>
+  <circle cx="469" cy="108" r="10" fill="#fff9eb" opacity="0.92"/>
+  <path d="M465 111 L469 104 L473 111 L471 115 L467 115 Z" fill="#aa7b30"/>
+  <text x="486" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">nesne prototipi</text>
+  <text x="464" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79603a">Temel zincir halkası</text>
+  <rect x="462" y="164" width="125" height="39" rx="8" fill="#fffdf6" filter="url(#smallShadow)"/>
+  <text x="475" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#846737">genel metotlar</text>
+  <text x="464" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#917a54">sonraki: null</text>
+
+  <path d="M196 168 H229" fill="none" stroke="#70a8b9" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="238,168 227,162 227,174" fill="#70a8b9"/>
+  <path d="M400 168 H433" fill="none" stroke="#70a8b9" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="442,168 431,162 431,174" fill="#70a8b9"/>
+
+  <rect x="103" y="271" width="434" height="31" rx="15" fill="#ffffff" opacity="0.88" filter="url(#smallShadow)"/>
+  <circle cx="124" cy="286.5" r="7" fill="#78b798"/>
+  <path d="M121 286 L123.5 289 L128 283.5" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="140" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466477">isim bulundu</text>
+  <path d="M222 286.5 H251" fill="none" stroke="#9bb6c3" stroke-width="1.5"/>
+  <polygon points="259,286.5 249,281.5 249,291.5" fill="#9bb6c3"/>
+  <circle cx="279" cy="286.5" r="7" fill="#e3aa57"/>
+  <text x="294" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466477">nefesAl() zincirde bulunur</text>
+  <path d="M458 286.5 H481" fill="none" stroke="#9bb6c3" stroke-width="1.5"/>
+  <polygon points="489,286.5 479,281.5 479,291.5" fill="#9bb6c3"/>
+  <text x="499" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6b47">null: son</text>
+</svg>

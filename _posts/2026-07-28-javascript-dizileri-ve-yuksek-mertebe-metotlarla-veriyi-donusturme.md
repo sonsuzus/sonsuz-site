@@ -8,6 +8,7 @@ tags:
   - JavaScript
   - Diziler
   - Fonksiyonel Programlama
+image: /img/javascript-dizileri-ve-63.png
 ---
 
 Bir alışveriş sepetindeki ürünlerden sınav notlarına kadar pek çok veri, yazılım dünyasında listeler hâlinde karşımıza çıkar. JavaScript dizileri bu verileri tek bir değişkende düzenli biçimde saklarken `map`, `filter` ve `reduce` gibi yüksek mertebe metotlar, döngü karmaşasına kapılmadan verileri dönüştürmemizi sağlar.
@@ -37,6 +38,9 @@ Yüksek mertebe fonksiyon, başka bir fonksiyonu parametre olarak alabilen veya 
 | `filter` | Koşula uyanları seçmek | Yeni ve çoğunlukla daha kısa dizi |
 | `reduce` | Elemanları tek sonuçta birleştirmek | Sayı, nesne, dizi veya başka bir değer |
 | `forEach` | Her eleman için işlem yapmak | `undefined` |
+
+![javascript-dizileri-ve-63](/img/javascript-dizileri-ve-63.svg)
+
 
 Bu metotlar kaynak diziyi doğrudan değiştirmez. Böylece beklenmedik yan etkiler azalır ve veri akışı daha kolay takip edilir.
 

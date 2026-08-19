@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Davranışçılık ve Pekiştirmeli Öğrenme</text>
+
+  <!-- Sol taraf: Skinner Kutusu -->
+  <rect x="30" y="55" width="220" height="50" rx="10" fill="#d4e6f1" filter="url(#shadow)"/>
+  <text x="140" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Skinner Kutusu</text>
+  <text x="140" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Güvercin + Düğme + Yem</text>
+
+  <!-- Sağ taraf: Yapay Zeka Ajanı -->
+  <rect x="390" y="55" width="220" height="50" rx="10" fill="#d5f5e3" filter="url(#shadow)"/>
+  <text x="500" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Yapay Zekâ Ajanı</text>
+  <text x="500" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Oyun + Puan + Simülasyon</text>
+
+  <!-- Orta bağlantı: benzer mantık -->
+  <rect x="270" y="68" width="100" height="30" rx="15" fill="#fef9e7" filter="url(#shadowLight)"/>
+  <text x="320" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7d6608">Benzer Mantık</text>
+
+  <!-- Ok çizgileri (manuel ok başları) -->
+  <line x1="250" y1="80" x2="268" y2="80" stroke="#7d6608" stroke-width="2"/>
+  <polygon points="268,75 278,80 268,85" fill="#7d6608"/>
+  <line x1="370" y1="80" x2="388" y2="80" stroke="#7d6608" stroke-width="2"/>
+  <polygon points="388,75 398,80 388,85" fill="#7d6608"/>
+
+  <!-- Kavram eşleştirme tablosu -->
+  <text x="320" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Kavram Eşleştirme</text>
+
+  <!-- Kavram kutuları -->
+  <rect x="40" y="150" width="120" height="35" rx="8" fill="#ebdef0" filter="url(#shadowLight)"/>
+  <text x="100" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a235a">Organizma</text>
+
+  <rect x="180" y="150" width="120" height="35" rx="8" fill="#ebdef0" filter="url(#shadowLight)"/>
+  <text x="240" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a235a">Çevre</text>
+
+  <rect x="320" y="150" width="120" height="35" rx="8" fill="#ebdef0" filter="url(#shadowLight)"/>
+  <text x="380" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a235a">Uyarıcı</text>
+
+  <rect x="460" y="150" width="120" height="35" rx="8" fill="#ebdef0" filter="url(#shadowLight)"/>
+  <text x="520" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a235a">Pekiştireç</text>
+
+  <!-- Ok bağlantıları -->
+  <line x1="160" y1="167" x2="178" y2="167" stroke="#4a235a" stroke-width="1.5"/>
+  <polygon points="178,163 186,167 178,171" fill="#4a235a"/>
+  <line x1="300" y1="167" x2="318" y2="167" stroke="#4a235a" stroke-width="1.5"/>
+  <polygon points="318,163 326,167 318,171" fill="#4a235a"/>
+  <line x1="440" y1="167" x2="458" y2="167" stroke="#4a235a" stroke-width="1.5"/>
+  <polygon points="458,163 466,167 458,171" fill="#4a235a"/>
+
+  <!-- Alt kısım: Q-learning döngüsü -->
+  <text x="320" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Q-Learning Döngüsü</text>
+
+  <!-- Döngü kutuları -->
+  <rect x="50" y="230" width="110" height="40" rx="8" fill="#fadbd8" filter="url(#shadowLight)"/>
+  <text x="105" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#922b21">Durum (s)</text>
+
+  <rect x="200" y="230" width="110" height="40" rx="8" fill="#fadbd8" filter="url(#shadowLight)"/>
+  <text x="255" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#922b21">Eylem (a)</text>
+
+  <rect x="350" y="230" width="110" height="40" rx="8" fill="#fadbd8" filter="url(#shadowLight)"/>
+  <text x="405" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#922b21">Ödül (r)</text>
+
+  <rect x="500" y="230" width="110" height="40" rx="8" fill="#fadbd8" filter="url(#shadowLight)"/>
+  <text x="555" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#922b21">Yeni Durum</text>
+
+  <!-- Döngü okları -->
+  <line x1="160" y1="250" x2="198" y2="250" stroke="#922b21" stroke-width="1.5"/>
+  <polygon points="198,246 206,250 198,254" fill="#922b21"/>
+  <line x1="310" y1="250" x2="348" y2="250" stroke="#922b21" stroke-width="1.5"/>
+  <polygon points="348,246 356,250 348,254" fill="#922b21"/>
+  <line x1="460" y1="250" x2="498" y2="250" stroke="#922b21" stroke-width="1.5"/>
+  <polygon points="498,246 506,250 498,254" fill="#922b21"/>
+
+  <!-- Geri bildirim döngüsü -->
+  <path d="M555 270 C555 295, 320 305, 105 270" fill="none" stroke="#1a5276" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="105,266 95,270 105,274" fill="#1a5276"/>
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">Geri Bildirim Döngüsü</text>
+
+  <!-- Alt not -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Skinner: Hangi sonuç hangi davranışı güçlendiriyor?</text>
+</svg>

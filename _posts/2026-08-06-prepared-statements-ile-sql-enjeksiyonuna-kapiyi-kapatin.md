@@ -8,9 +8,13 @@ tags:
   - SQL
   - Siber Güvenlik
   - Prepared Statements
+image: /img/prepared-statements-ile-91.png
 ---
 
 Bir giriş formu düşünün: Kullanıcı adını ve parolayı alıp veritabanında arıyorsunuz. Masum görünen bu işlem, kullanıcı girdisini doğrudan SQL metnine eklerseniz saldırgana sorgunuzu yeniden yazma fırsatı verebilir. Prepared statements, yani hazırlanmış ifadeler, SQL komutunu veri parçalarından ayırarak bu tehlikeli kapıyı kapatır.
+
+
+![prepared-statements-ile-91](/img/prepared-statements-ile-91.svg)
 
 ``
 

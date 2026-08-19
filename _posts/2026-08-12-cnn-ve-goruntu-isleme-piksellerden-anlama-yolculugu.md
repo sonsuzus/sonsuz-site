@@ -8,6 +8,7 @@ tags:
   - CNN
   - Derin Öğrenme
   - Görüntü İşleme
+image: /img/cnn-ve-goruntu-12.png
 ---
 
 Bir fotoğrafı insan gözüyle tanımak birkaç saniye sürer; fakat bilgisayar için bu fotoğraf başlangıçta yalnızca devasa bir sayı tablosudur. Evrişimli Sinir Ağları ya da CNN'ler, bu sayıları anlamlı görsel örüntülere dönüştürmek için tasarlanmış derin öğrenme mimarileridir. Kedi kulağı, trafik levhası, tümör dokusu veya videodaki hareket gibi ayrıntıları; piksellerin birbirine komşu olma ilişkisini koruyarak öğrenirler.
@@ -24,6 +25,9 @@ CNN'nin temel fikri basittir: Küçük bir filtre, görüntü üzerinde gezdiril
 | Tam bağlantılı ağ | Büyük ölçüde kaybolur | Çok yüksek | Sınırlı |
 | CNN | Korunur | Paylaşılan filtrelerle düşük | Yüksek |
 | Vision Transformer | Parçalara ayırarak işler | Genellikle yüksek | Büyük veriyle güçlü |
+
+![cnn-ve-goruntu-12](/img/cnn-ve-goruntu-12.svg)
+
 
 ## Evrişim işlemi: Filtrenin dedektifliği
 

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Dizi Dönüşüm Metotları</text>
+
+  <!-- Kaynak Dizi Kutusu -->
+  <rect x="40" y="60" width="140" height="52" rx="10" fill="#e8f4f8" stroke="#b8d4e3" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="110" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Kaynak Dizi</text>
+  <text x="110" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7a8a">[x₁, x₂, ..., xₙ]</text>
+
+  <!-- Ok: Kaynak -> map -->
+  <path d="M180 86 L230 86" stroke="#7fb3d3" stroke-width="2" fill="none"/>
+  <polygon points="230,80 242,86 230,92" fill="#7fb3d3"/>
+
+  <!-- map Kutusu -->
+  <rect x="245" y="55" width="130" height="62" rx="10" fill="#d5e8d4" stroke="#a9cba8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c6e2c">map</text>
+  <text x="310" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a4a">f(x) → yeni dizi</text>
+
+  <!-- Ok: map -> filter -->
+  <path d="M375 86 L425 86" stroke="#7fb3d3" stroke-width="2" fill="none"/>
+  <polygon points="425,80 437,86 425,92" fill="#7fb3d3"/>
+
+  <!-- filter Kutusu -->
+  <rect x="440" y="55" width="130" height="62" rx="10" fill="#fde9d9" stroke="#f0c8a8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="505" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#b85c1a">filter</text>
+  <text x="505" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a4a2a">koşul → seçim</text>
+
+  <!-- Ok: filter -> reduce -->
+  <path d="M570 86 L590 86" stroke="#7fb3d3" stroke-width="2" fill="none"/>
+  <polygon points="590,80 602,86 590,92" fill="#7fb3d3"/>
+
+  <!-- reduce Kutusu -->
+  <rect x="470" y="150" width="140" height="62" rx="10" fill="#e8d8f0" stroke="#c8b0d8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="540" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#6a2c8a">reduce</text>
+  <text x="540" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a7a">biriktir → tek sonuç</text>
+
+  <!-- Ok: filter -> reduce (dikey) -->
+  <path d="M540 117 L540 150" stroke="#7fb3d3" stroke-width="2" fill="none"/>
+  <polygon points="534,150 540,162 546,150" fill="#7fb3d3"/>
+
+  <!-- Sonuç Kutusu -->
+  <rect x="470" y="245" width="140" height="52" rx="10" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="540" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Sonuç</text>
+  <text x="540" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7a8a">tek değer / dizi</text>
+
+  <!-- Ok: reduce -> Sonuç -->
+  <path d="M540 212 L540 245" stroke="#7fb3d3" stroke-width="2" fill="none"/>
+  <polygon points="534,245 540,257 546,245" fill="#7fb3d3"/>
+
+  <!-- Yan Not: forEach -->
+  <rect x="40" y="150" width="140" height="52" rx="10" fill="#fef9e7" stroke="#f0d8a8" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="110" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#8a6a1a">forEach</text>
+  <text x="110" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a5a3a">işlem → undefined</text>
+
+  <!-- Ok: Kaynak -> forEach -->
+  <path d="M110 112 L110 150" stroke="#d4c8a8" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="104,150 110,160 116,150" fill="#d4c8a8"/>
+
+  <!-- Zincir açıklama -->
+  <rect x="40" y="245" width="380" height="52" rx="10" fill="#ffffff" stroke="#d0dce8" stroke-width="1.5" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="230" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Zincirleme Kullanım</text>
+  <text x="230" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7a8a">filter → map → reduce</text>
+
+  <!-- Ok: Sonuç -> Zincir (geri bildirim) -->
+  <path d="M470 271 L420 271" stroke="#a8c8d8" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="420,265 408,271 420,277" fill="#a8c8d8"/>
+</svg>

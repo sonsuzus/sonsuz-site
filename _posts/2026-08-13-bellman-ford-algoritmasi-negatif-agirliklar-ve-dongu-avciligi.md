@@ -8,9 +8,13 @@ tags:
   - algoritmalar
   - graf teorisi
   - bellman-ford
+image: /img/bellman-ford-algoritmasi-70.png
 ---
 
 En kısa yol problemleri, haritalardaki rota bulmadan ağ paketlerinin yönlendirilmesine kadar pek çok sistemin kalbinde yer alır. Ancak her yolun maliyeti pozitif olmak zorunda değildir: indirimler, kazançlar veya enerji geri kazanımı gibi senaryolar negatif ağırlıklı kenarlar üretir. Dijkstra bu durumda güvenilirliğini kaybederken Bellman-Ford algoritması sahneye çıkar. Üstelik yalnızca en kısa mesafeleri bulmaz; maliyetin sonsuza kadar azaltılabildiği negatif döngüleri de yakalar.
+
+
+![bellman-ford-algoritmasi-70](/img/bellman-ford-algoritmasi-70.svg)
 
 ``
 

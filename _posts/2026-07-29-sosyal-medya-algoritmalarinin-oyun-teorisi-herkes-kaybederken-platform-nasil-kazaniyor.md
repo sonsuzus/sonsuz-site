@@ -8,6 +8,7 @@ tags:
   - oyun teorisi
   - sosyal medya algoritmaları
   - dikkat ekonomisi
+image: /img/sosyal-medya-algoritmalarinin-54.png
 ---
 
 Bir sosyal medya uygulamasını “yalnızca beş dakika” kullanmak için açıp kırk dakika sonra kendinizi hiç tanımadığınız insanların tartışmasını izlerken bulduysanız, bu sadece irade eksikliği değildir. Kullanıcılar, içerik üreticileri, reklamverenler ve platform aynı oyun masasında farklı ödüllerin peşindedir. Algoritma ise tarafsız bir krupiye değil; masanın kurallarını belirleyen ve oyun uzadıkça kazanan işletmecidir.
@@ -33,6 +34,9 @@ $E$ etkileşim ve ekranda kalma süresi, $r$ bunların reklam gelirine dönüşm
 | Üretici | Görünürlük ve gelir | Daha sık, çarpıcı içerik üretmek | Sansasyon ve tükenmişlik |
 | Reklamveren | Dönüşüm | En dikkat çekici mesajı vermek | Mahremiyet baskısı |
 | Platform | Etkileşim ve gelir | Akışı kişiselleştirmek | Kutuplaşmanın ödüllendirilmesi |
+
+![sosyal-medya-algoritmalarinin-54](/img/sosyal-medya-algoritmalarinin-54.svg)
+
 
 ## Dijital Mahkûmlar İkilemi
 

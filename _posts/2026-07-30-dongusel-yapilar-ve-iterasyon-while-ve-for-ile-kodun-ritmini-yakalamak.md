@@ -8,6 +8,7 @@ tags:
   - döngüler
   - iterasyon
   - programlama temelleri
+image: /img/dongusel-yapilar-ve-94.png
 ---
 
 Programlamada aynı işlemi defalarca elle yazmak, yüz tabaklı bir sofrada her tabağı ayrı tarifle yıkamaya benzer. Döngüler bu zahmeti ortadan kaldırır: Bir koşul geçerli olduğu sürece veya bir koleksiyondaki bütün elemanlar işlenene kadar aynı kod bloğunu tekrar çalıştırırlar. Böylece daha kısa, okunabilir ve ölçeklenebilir programlar oluşturabiliriz.
@@ -93,3 +94,6 @@ for sayi in range(1, 11):
 Bu kod tek sayıları atlar, çift sayıları yazdırır ve 8’e ulaştığında döngüyü bitirir. `%` operatörü kalanı verdiği için $sayi \bmod 2 = 0$ koşulu çift sayıları belirler.
 
 Döngü seçerken temel soru şudur: “Bir koşul gerçekleşene kadar mı bekliyorum, yoksa elimdeki elemanları mı geziyorum?” İlk durumda `while`, ikinci durumda `for` çoğunlukla daha doğal seçimdir. Doğru döngü; kodu yalnızca kısaltmaz, niyetini de okuyucuya açıkça anlatır.
+
+![dongusel-yapilar-ve-94](/img/dongusel-yapilar-ve-94.svg)
+

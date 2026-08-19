@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c7d2fe"/>
+      <stop offset="100%" stop-color="#a5b4fc"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Yerel Anlamsal Arama Motoru Mimarisi</text>
+
+  <!-- Sol: Disk ve Dosya Keşfi -->
+  <rect x="20" y="50" width="130" height="80" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)"/>
+  <text x="85" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">Dosya Keşfi</text>
+  <text x="85" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e3a8a">pathlib ile</text>
+  <text x="85" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e3a8a">disk tarama</text>
+
+  <!-- Alt: Metin Çıkarma -->
+  <rect x="20" y="155" width="130" height="80" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)"/>
+  <text x="85" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#92400e">Metin Çıkarma</text>
+  <text x="85" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#92400e">PDF, DOCX,</text>
+  <text x="85" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#92400e">Markdown</text>
+
+  <!-- Orta: Zenginleştirme ve Parçalama -->
+  <rect x="200" y="100" width="150" height="90" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)"/>
+  <text x="275" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#064e3b">Zenginleştirme</text>
+  <text x="275" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#064e3b">Otomatik etiketler</text>
+  <text x="275" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#064e3b">Parçalama</text>
+  <text x="275" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#064e3b">400-800 kelime</text>
+
+  <!-- Sağ Üst: Embedding -->
+  <rect x="400" y="50" width="130" height="80" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)"/>
+  <text x="465" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#831843">Embedding</text>
+  <text x="465" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#831843">MiniLM modeli</text>
+  <text x="465" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#831843">vektör üretimi</text>
+
+  <!-- Sağ Alt: Vektör Veritabanı -->
+  <rect x="400" y="155" width="130" height="80" rx="10" fill="url(#boxGrad5)" filter="url(#shadow)"/>
+  <text x="465" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#312e81">ChromaDB</text>
+  <text x="465" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#312e81">Vektör indeksi</text>
+  <text x="465" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#312e81">kalıcı depolama</text>
+
+  <!-- En Sağ: Arama ve Arayüz -->
+  <rect x="570" y="100" width="55" height="90" rx="10" fill="#e2e8f0" filter="url(#shadow)"/>
+  <text x="597" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#334155">Arama</text>
+  <text x="597" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#334155">ve</text>
+  <text x="597" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#334155">Arayüz</text>
+
+  <!-- Oklar -->
+  <!-- Keşif -> Metin Çıkarma -->
+  <path d="M85 130 L85 155" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="80,152 85,162 90,152" fill="#64748b"/>
+
+  <!-- Metin Çıkarma -> Zenginleştirme -->
+  <path d="M150 195 L200 160" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="196,165 202,157 192,157" fill="#64748b"/>
+
+  <!-- Zenginleştirme -> Embedding -->
+  <path d="M350 115 L400 90" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="397,95 403,87 393,87" fill="#64748b"/>
+
+  <!-- Zenginleştirme -> Vektör DB -->
+  <path d="M350 160 L400 195" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="396,190 403,198 393,198" fill="#64748b"/>
+
+  <!-- Embedding -> Vektör DB -->
+  <path d="M465 130 L465 155" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="460,152 465,162 470,152" fill="#64748b"/>
+
+  <!-- Vektör DB -> Arama -->
+  <path d="M530 195 L570 160" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="566,165 573,157 563,157" fill="#64748b"/>
+
+  <!-- Arama -> Geri bildirim döngüsü (kesikli) -->
+  <path d="M597 100 L597 50 L85 50" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="88,53 80,50 88,47" fill="#94a3b8"/>
+
+  <!-- Altyazı -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#64748b">Kosinüs benzerliği ile anlamsal sıralama</text>
+</svg>

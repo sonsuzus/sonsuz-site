@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#d8f2e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#69809a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#69809a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="158" r="118" fill="#dff1ed" opacity="0.38"/>
+  <circle cx="320" cy="158" r="91" fill="none" stroke="#b9d9d9" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <path d="M126 91 C176 45, 238 49, 280 107" fill="none" stroke="#8aadd6" stroke-width="2" opacity="0.75"/>
+  <polygon points="280,107 270,101 273,112" fill="#8aadd6"/>
+  <path d="M149 223 C192 255, 246 259, 285 211" fill="none" stroke="#96bb9c" stroke-width="2" opacity="0.75"/>
+  <polygon points="285,211 275,207 281,218" fill="#96bb9c"/>
+  <path d="M501 89 C450 45, 393 54, 358 108" fill="none" stroke="#bf98c6" stroke-width="2" opacity="0.75"/>
+  <polygon points="358,108 365,99 368,110" fill="#bf98c6"/>
+  <path d="M494 224 C445 260, 389 253, 354 210" fill="none" stroke="#dfad78" stroke-width="2" opacity="0.75"/>
+  <polygon points="354,210 365,208 359,218" fill="#dfad78"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="42" y="66" width="110" height="50" rx="15" fill="#e7f0ff"/>
+    <rect x="42" y="198" width="110" height="50" rx="15" fill="#e8f6eb"/>
+    <rect x="488" y="66" width="110" height="50" rx="15" fill="#f3eafa"/>
+    <rect x="488" y="198" width="110" height="50" rx="15" fill="#fff0df"/>
+  </g>
+
+  <text x="97" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35516f" font-weight="600">Query</text>
+  <text x="97" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35516f">Ne arar?</text>
+
+  <text x="97" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38634a" font-weight="600">Value</text>
+  <text x="97" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38634a">Bilgi aktarır</text>
+
+  <text x="543" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70477b" font-weight="600">Key</text>
+  <text x="543" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70477b">Ne sunar?</text>
+
+  <text x="543" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#825a2b" font-weight="600">Konum</text>
+  <text x="543" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#825a2b">Sıra bilgisi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="234" y="94" width="172" height="128" rx="25" fill="url(#core)" stroke="#b4d2dc" stroke-width="1.5"/>
+    <circle cx="320" cy="145" r="35" fill="#f8fcff" stroke="#9fc5d5" stroke-width="1.5"/>
+    <path d="M294 141 C304 127, 321 125, 340 134" fill="none" stroke="#739ac2" stroke-width="2.5"/>
+    <polygon points="340,134 332,130 334,139" fill="#739ac2"/>
+    <path d="M342 151 C332 165, 314 168, 298 157" fill="none" stroke="#75ad8e" stroke-width="2.5"/>
+    <polygon points="298,157 306,161 304,152" fill="#75ad8e"/>
+    <circle cx="294" cy="141" r="4" fill="#8cafd5"/>
+    <circle cx="342" cy="151" r="4" fill="#91cba6"/>
+    <text x="320" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31556a" font-weight="700">Self-Attention</text>
+    <text x="320" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527383">İlişki ağırlıkları</text>
+  </g>
+
+  <path d="M152 91 L225 122" fill="none" stroke="#88aace" stroke-width="2"/>
+  <polygon points="225,122 216,115 214,125" fill="#88aace"/>
+  <path d="M152 223 L228 190" fill="none" stroke="#91b79a" stroke-width="2"/>
+  <polygon points="228,190 218,188 222,198" fill="#91b79a"/>
+  <path d="M488 91 L414 122" fill="none" stroke="#bd97c3" stroke-width="2"/>
+  <polygon points="414,122 424,125 422,115" fill="#bd97c3"/>
+  <path d="M488 223 L412 191" fill="none" stroke="#d9aa78" stroke-width="2"/>
+  <polygon points="412,191 419,199 423,189" fill="#d9aa78"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="101" y="270" width="438" height="34" rx="14" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <text x="124" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c6880" font-weight="600">Tokenlar</text>
+
+  <g>
+    <rect x="190" y="278" width="53" height="18" rx="7" fill="#dbeaff"/>
+    <text x="216.5" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6288">Robot</text>
+    <rect x="252" y="278" width="58" height="18" rx="7" fill="#e7f3dc"/>
+    <text x="281" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7545">kitabı</text>
+    <rect x="319" y="278" width="42" height="18" rx="7" fill="#f4e4fa"/>
+    <text x="340" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78517d">onu</text>
+    <rect x="370" y="278" width="53" height="18" rx="7" fill="#ffe9d5"/>
+    <text x="396.5" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#885b32">merak</text>
+    <rect x="432" y="278" width="50" height="18" rx="7" fill="#dcefeb"/>
+    <text x="457" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42756d">etti</text>
+  </g>
+
+  <path d="M340 278 C339 254, 300 248, 281 248" fill="none" stroke="#a478b0" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="281,248 289,253 289,243" fill="#a478b0"/>
+  <text x="328" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806186">bağlam</text>
+</svg>

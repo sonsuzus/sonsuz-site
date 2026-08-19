@@ -65,6 +65,8 @@ Burada semboller vezir, kale, fil, at, piyon ve hareketlilik farklarını temsil
 
 2017’de tanıtılan **AlphaZero**, açılış kitapları veya insan oyunları olmadan yalnızca kuralları öğrendi. Kendisine karşı milyonlarca oyun oynayarak iki önemli çıktı üreten bir sinir ağı geliştirdi: hamle olasılıklarını veren **politika** $p(a \vert s)$ ve konumun kazanma beklentisini veren **değer** $v(s)$.
 
+![satranc motorlari evrimi](/img/satranc_motorlari_evrim_zaman_cizgisi.svg)
+
 Bu ağ, **Monte Carlo Ağaç Araması** ile birleşir. Sistem her dalı eşit biçimde araştırmak yerine umut vadeden hamlelere yoğunlaşır; arama sonuçları da ağı yeniden eğitir. Böylece döngü oluşur: oyna, değerlendir, öğren ve daha güçlü yeniden oyna. AlphaZero’nun fedaları bazen romantik bir büyükustayı andırır; ancak bu estetik, önceden öğretilmiş ilkelerden değil, kazanma olasılığını optimize etmekten doğar.
 
 ## Zekâ gerçekten nerede?

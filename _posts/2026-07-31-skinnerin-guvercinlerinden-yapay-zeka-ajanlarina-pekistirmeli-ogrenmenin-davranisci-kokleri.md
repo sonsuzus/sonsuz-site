@@ -8,6 +8,7 @@ tags:
   - pekiştirmeli öğrenme
   - davranışçılık
   - yapay zekâ
+image: /img/skinnerin-guvercinlerinden-yapay-84.png
 ---
 
 Bir güvercinin doğru düğmeyi gagalamasıyla bir yapay zekâ ajanının oyunda puan toplaması arasında gerçekten bağlantı olabilir mi? Şaşırtıcı biçimde evet! B. F. Skinner’ın davranışçı psikoloji deneyleri ile modern pekiştirmeli öğrenme algoritmaları, zekânın iç dünyasından çok davranışların sonuçlarına odaklanan benzer bir mantık kullanır.
@@ -25,6 +26,9 @@ Skinner kutusundaki bir güvercin, belirli bir ışık yandığında düğmeyi g
 | Uyarıcı/durum | State | Işığın yanması veya oyundaki konum |
 | Davranış | Action | Gagalamak veya sağa gitmek |
 | Pekiştireç | Reward | Yem veya puan |
+
+![skinnerin-guvercinlerinden-yapay-84](/img/skinnerin-guvercinlerinden-yapay-84.svg)
+
 
 ## Ajanın matematiksel Skinner kutusu
 

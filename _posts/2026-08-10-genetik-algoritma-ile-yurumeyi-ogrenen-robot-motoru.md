@@ -8,7 +8,11 @@ tags:
   - genetik algoritma
   - robotik
   - python
+image: /img/genetik-algoritma-ile-55.png
 ---
+
+![genetik-algoritma-ile-55](/img/genetik-algoritma-ile-55.svg)
+
 
 Bir robotun yürümeyi öğrenmesi, ona tek tek “sol bacağını kaldır, şimdi sağa bas” komutları vermekten çok daha eğlenceli bir problemdir. Bunun yerine robotun hareket kontrolcülerini bir DNA dizisi gibi düşünebilir, yüzlerce farklı davranışı sanal ortamda yarıştırabiliriz. Başarılı hareket edenler hayatta kalır, başarılı özellikler çaprazlanır ve küçük rastlantısal mutasyonlar yeni çözümler üretir. İşte genetik algoritma motorunun temel fikri budur.
 

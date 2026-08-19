@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="inputGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d5f5"/>
+      <stop offset="100%" stop-color="#d4b8e8"/>
+    </linearGradient>
+    <linearGradient id="convGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8d4e8"/>
+      <stop offset="100%" stop-color="#a0c4d9"/>
+    </linearGradient>
+    <linearGradient id="poolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4e8b8"/>
+      <stop offset="100%" stop-color="#a8d99e"/>
+    </linearGradient>
+    <linearGradient id="fcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e6b8"/>
+      <stop offset="100%" stop-color="#e8d49e"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0b8b8"/>
+      <stop offset="100%" stop-color="#e09e9e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">CNN Görsel Algı Mimarisi</text>
+
+  <!-- Girdi görüntüsü -->
+  <rect x="30" y="55" width="90" height="70" rx="10" fill="url(#inputGrad)" filter="url(#shadow)"/>
+  <text x="75" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a235a" font-weight="bold">Girdi</text>
+  <text x="75" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a235a">Görüntü</text>
+  <text x="75" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a235a">HxWx3</text>
+
+  <!-- Ok: Girdi -> Evrişim -->
+  <path d="M120,90 L155,90" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="155,84 165,90 155,96" fill="#5a7a9a"/>
+
+  <!-- Evrişim katmanı -->
+  <rect x="165" y="45" width="100" height="70" rx="10" fill="url(#convGrad)" filter="url(#shadow)"/>
+  <text x="215" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5a" font-weight="bold">Evrişim</text>
+  <text x="215" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a3a5a">Filtre Gezdirme</text>
+  <text x="215" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a3a5a">Kenar Bulma</text>
+
+  <!-- Ok: Evrişim -> Havuzlama -->
+  <path d="M265,80 L300,80" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="300,74 310,80 300,86" fill="#5a7a9a"/>
+
+  <!-- Havuzlama katmanı -->
+  <rect x="310" y="45" width="100" height="70" rx="10" fill="url(#poolGrad)" filter="url(#shadow)"/>
+  <text x="360" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5a2a" font-weight="bold">Havuzlama</text>
+  <text x="360" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a5a2a">Max / Ortalama</text>
+  <text x="360" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a5a2a">Boyut Küçültme</text>
+
+  <!-- Ok: Havuzlama -> Tam bağlı -->
+  <path d="M410,80 L445,80" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="445,74 455,80 445,86" fill="#5a7a9a"/>
+
+  <!-- Tam bağlı katman -->
+  <rect x="455" y="45" width="90" height="70" rx="10" fill="url(#fcGrad)" filter="url(#shadow)"/>
+  <text x="500" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a4a1a" font-weight="bold">Tam Bağlı</text>
+  <text x="500" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a1a">Özellik</text>
+  <text x="500" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a1a">Birleştirme</text>
+
+  <!-- Ok: Tam bağlı -> Çıktı -->
+  <path d="M545,80 L575,80" stroke="#5a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="575,74 585,80 575,86" fill="#5a7a9a"/>
+
+  <!-- Çıktı -->
+  <rect x="585" y="55" width="40" height="50" rx="10" fill="url(#outGrad)" filter="url(#shadow)"/>
+  <text x="605" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a1a1a" font-weight="bold">Sınıf</text>
+
+  <!-- Alt katman detayları -->
+  <text x="320" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Hiyerarşik Öğrenme</text>
+
+  <!-- Hiyerarşi kutuları -->
+  <rect x="40" y="165" width="130" height="55" rx="8" fill="#e8f0fe" filter="url(#shadow)" stroke="#a0b8d0" stroke-width="1"/>
+  <text x="105" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Erken Katman</text>
+  <text x="105" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">Kenarlar ve Renk</text>
+
+  <rect x="255" y="165" width="130" height="55" rx="8" fill="#e8f0fe" filter="url(#shadow)" stroke="#a0b8d0" stroke-width="1"/>
+  <text x="320" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Orta Katman</text>
+  <text x="320" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">Doku ve Parçalar</text>
+
+  <rect x="470" y="165" width="130" height="55" rx="8" fill="#e8f0fe" filter="url(#shadow)" stroke="#a0b8d0" stroke-width="1"/>
+  <text x="535" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Derin Katman</text>
+  <text x="535" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">Nesne Tanıma</text>
+
+  <!-- Hiyerarşi okları -->
+  <path d="M170,192 L255,192" stroke="#7a9ab0" stroke-width="2" fill="none"/>
+  <polygon points="255,186 265,192 255,198" fill="#7a9ab0"/>
+
+  <path d="M385,192 L470,192" stroke="#7a9ab0" stroke-width="2" fill="none"/>
+  <polygon points="470,186 480,192 470,198" fill="#7a9ab0"/>
+
+  <!-- Alt bilgi -->
+  <rect x="40" y="245" width="560" height="55" rx="8" fill="#e8f0fe" filter="url(#shadow)" stroke="#a0b8d0" stroke-width="1"/>
+  <text x="320" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Temel Bileşenler</text>
+  <text x="320" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">Filtre: Yerel özellik ara | Stride: Adım boyu | Padding: Kenar koruma | Aktivasyon: Doğrusal olmayanlık</text>
+</svg>

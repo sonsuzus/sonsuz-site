@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#90a4ae" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#90a4ae" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#37474f">CNN ve Görüntü İşleme</text>
+
+  <!-- Giriş: Piksel Tensörü -->
+  <rect x="30" y="55" width="120" height="70" rx="10" fill="#e3f2fd" filter="url(#shadow)" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="90" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1565c0">Görüntü</text>
+  <text x="90" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">H x W x 3</text>
+  <text x="90" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Sayı Tablosu</text>
+
+  <!-- Ok 1 -->
+  <polygon points="155,90 170,90 170,86 180,93 170,100 170,96 155,96" fill="#78909c"/>
+
+  <!-- Evrişim Bloğu -->
+  <rect x="185" y="45" width="130" height="90" rx="10" fill="#fff3e0" filter="url(#shadow)" stroke="#ffcc80" stroke-width="1.5"/>
+  <text x="250" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Evrişim</text>
+  <text x="250" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">Filtre Gezdirme</text>
+  <text x="250" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Kernel 3x3</text>
+  <text x="250" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Stride + Padding</text>
+
+  <!-- Ok 2 -->
+  <polygon points="320,90 335,90 335,86 345,93 335,100 335,96 320,96" fill="#78909c"/>
+
+  <!-- Aktivasyon -->
+  <rect x="350" y="55" width="90" height="70" rx="10" fill="#fce4ec" filter="url(#shadow)" stroke="#f48fb1" stroke-width="1.5"/>
+  <text x="395" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#c2185b">ReLU</text>
+  <text x="395" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">max(0, x)</text>
+
+  <!-- Ok 3 -->
+  <polygon points="445,90 460,90 460,86 470,93 460,100 460,96 445,96" fill="#78909c"/>
+
+  <!-- Pooling -->
+  <rect x="475" y="55" width="100" height="70" rx="10" fill="#e8f5e9" filter="url(#shadow)" stroke="#a5d6a7" stroke-width="1.5"/>
+  <text x="525" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">Pooling</text>
+  <text x="525" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">Özetleme</text>
+
+  <!-- Ok 4 -->
+  <polygon points="580,90 595,90 595,86 605,93 595,100 595,96 580,96" fill="#78909c"/>
+
+  <!-- Sınıflandırıcı -->
+  <rect x="500" y="155" width="110" height="65" rx="10" fill="#ede7f6" filter="url(#shadow)" stroke="#b39ddb" stroke-width="1.5"/>
+  <text x="555" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4527a0">Sınıflandırıcı</text>
+  <text x="555" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">Tam Bağlı</text>
+
+  <!-- Dikey ok 4 -->
+  <polygon points="555,150 555,135 551,135 558,125 565,135 561,135 561,150" fill="#78909c"/>
+
+  <!-- Özellik Hiyerarşisi -->
+  <rect x="30" y="155" width="200" height="65" rx="10" fill="#e0f7fa" filter="url(#shadow)" stroke="#80deea" stroke-width="1.5"/>
+  <text x="130" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#00838f">Özellik Hiyerarşisi</text>
+  <text x="130" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">Kenar → Doku → Parça</text>
+  <text x="130" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Nesne Tespiti</text>
+
+  <!-- Dikey ok 1 -->
+  <polygon points="130,150 130,135 126,135 133,125 140,135 136,135 136,150" fill="#78909c"/>
+
+  <!-- Veri Etkisi -->
+  <rect x="270" y="155" width="180" height="65" rx="10" fill="#fff8e1" filter="url(#shadow)" stroke="#ffe082" stroke-width="1.5"/>
+  <text x="360" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#f57f17">Veri Etkisi</text>
+  <text x="360" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">Etiketler + Artırma</text>
+  <text x="360" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Sınıf Dengesi</text>
+
+  <!-- Yatay ok veri etkisi -->
+  <polygon points="235,190 250,190 250,186 260,193 250,200 250,196 235,196" fill="#78909c"/>
+
+  <!-- Video Uzantısı -->
+  <rect x="500" y="240" width="110" height="55" rx="10" fill="#fbe9e7" filter="url(#shadow)" stroke="#ffab91" stroke-width="1.5"/>
+  <text x="555" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#d84315">Video Analizi</text>
+  <text x="555" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">LSTM / 3D Evrişim</text>
+
+  <!-- Dikey ok video -->
+  <polygon points="555,238 555,223 551,223 558,213 565,223 561,223 561,238" fill="#78909c"/>
+
+  <!-- Karşılaştırma Küçük Kutu -->
+  <rect x="30" y="245" width="200" height="50" rx="10" fill="#f3e5f5" filter="url(#shadowLight)" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="130" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a1b9a">CNN vs Tam Bağlı</text>
+  <text x="130" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">Komşuluk + Düşük Parametre</text>
+
+  <!-- Dikey ok karşılaştırma -->
+  <polygon points="130,238 130,223 126,223 133,213 140,223 136,223 136,238" fill="#78909c"/>
+
+</svg>

@@ -8,7 +8,11 @@ tags:
   - JavaScript
   - Scope
   - Değişkenler
+image: /img/modern-javascriptte-var-27.png
 ---
+
+![modern-javascriptte-var-27](/img/modern-javascriptte-var-27.svg)
+
 
 JavaScript’te değişken tanımlamak kolay görünür: Bir anahtar kelime seçer, isim verir ve değeri atarsınız. Ancak `var`, `let` ve `const` arasındaki seçim yalnızca sözdizimsel bir tercih değildir. Bu kelimeler; değişkenin nerede erişilebilir olduğunu, ne zaman oluşturulduğunu ve yeniden atanıp atanamayacağını belirler. Yanlış seçim, özellikle iç içe bloklarda oldukça şaşırtıcı hatalar doğurabilir.
 

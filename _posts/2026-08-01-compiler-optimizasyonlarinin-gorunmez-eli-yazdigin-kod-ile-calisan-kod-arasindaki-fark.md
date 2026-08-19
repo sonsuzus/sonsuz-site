@@ -8,9 +8,13 @@ tags:
   - compiler
   - optimizasyon
   - soyutlama
+image: /img/compiler-optimizasyonlarinin-gorunmez-64.png
 ---
 
 Bir programcı kaynak koda bakar ve bilgisayarın satırları sırayla uyguladığını hayal eder. Oysa modern bir compiler, kodu harfiyen yerine getiren sadık bir tercüman değil; davranışı koruduğu sürece programı yeniden düzenleyebilen son derece girişken bir mühendistir. Yazdığımız kod niyetimizi, çalışan makine kodu ise compiler’ın bu niyetten çıkardığı sonucu temsil eder.
+
+![compiler-optimizasyonlarinin-gorunmez-64](/img/compiler-optimizasyonlarinin-gorunmez-64.svg)
+
 ``
 ## Kaynak Kod Bir Sözleşmedir
 

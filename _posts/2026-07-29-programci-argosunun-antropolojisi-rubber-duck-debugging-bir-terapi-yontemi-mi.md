@@ -8,6 +8,7 @@ tags:
   - rubber-duck-debugging
   - yazılım-psikolojisi
   - hata-ayıklama
+image: /img/programci-argosunun-antropolojisi-98.png
 ---
 
 Bir programcının masasındaki plastik ördeğe ciddi ciddi kod anlatması, dışarıdan bakıldığında teknoloji çağının en tuhaf ritüellerinden biri olabilir. Ancak **rubber duck debugging**, yalnızca eğlenceli bir programcı argosu değildir. Problemi sesli biçimde açıklamak; düşünceleri dışsallaştırma, varsayımları sorgulama ve zihinsel çarpıtmaları fark etme bakımından bilişsel terapi teknikleriyle şaşırtıcı benzerlikler taşır.
@@ -37,6 +38,9 @@ Bilişsel davranışçı terapide kişi, otomatik düşüncelerini tanımayı ve
 | Gizli varsayımı bulmak | Otomatik düşünceyi fark etmek |
 | Alternatif algoritma üretmek | Alternatif yorum geliştirmek |
 | Test sonucuyla doğrulamak | Kanıtlarla düşünceyi sınamak |
+
+![programci-argosunun-antropolojisi-98](/img/programci-argosunun-antropolojisi-98.svg)
+
 
 Elbette rubber duck debugging, klinik bir terapi yöntemi değildir ve psikolojik destek yerine geçmez. Benzerlik, her iki pratiğin de **metabiliş** kullanmasından kaynaklanır: Kişi yalnızca düşünmez, nasıl düşündüğünü de gözlemler.
 

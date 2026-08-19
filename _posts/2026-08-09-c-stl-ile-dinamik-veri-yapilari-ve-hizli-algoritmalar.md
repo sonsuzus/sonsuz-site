@@ -10,6 +10,7 @@ tags:
   - Veri Yapıları
   - Algoritmalar
   - Performans
+image: /img/c-stl-ile-92.png
 ---
 
 C++ Standart Şablon Kütüphanesi, yani STL (Standard Template Library), tekerleği yeniden icat etmek yerine güvenilir parçalarla hızlı yazılım üretmenin yoludur. Dinamik diziler, bağlı listeler, yığınlar ve hazır algoritmalar sayesinde hem kod miktarı azalır hem de yıllardır test edilmiş uygulamalardan yararlanılır. Asıl güç, veri yapısını doğru probleme; algoritmayı da doğru veri düzenine eşleştirmekte yatar.
@@ -26,6 +27,9 @@ En sık kullanılan container'lar aşağıdaki gibi karşılaştırılabilir:
 | `std::list` | Bilinen konuma ekleme ve silme hızlıdır | İndeksle erişim yoktur; önbellek dostu değildir | Sık düğüm silinen zincirler |
 | `std::deque` | Başta ve sonda ekleme hızlıdır | Bellek düzeni `vector` kadar sade değildir | Çift uçlu kuyruk |
 | `std::stack` | LIFO işlemlerini sadeleştirir | Sadece üst elemana erişilir | Geri alma, parantez kontrolü |
+
+![c-stl-ile-92](/img/c-stl-ile-92.svg)
+
 
 Bir `vector` fiziksel olarak çoğunlukla bitişik bellekte yaşar. Bu nedenle `v[i]` erişimi $O(1)$ zamanlıdır ve işlemci önbelleğinden iyi yararlanır. Sona ekleme (`push_back`) normalde $O(1)$, kapasite dolduğunda ise yeni alan ayırma nedeniyle $O(n)$ maliyetli olabilir. Buna rağmen büyümenin seyrek gerçekleşmesi sebebiyle amortize maliyet şöyledir:
 

@@ -8,7 +8,11 @@ tags:
   - transformer
   - attention
   - yapay zeka
+image: /img/transformer-mimarisi-attention-73.png
 ---
+
+![transformer-mimarisi-attention-73](/img/transformer-mimarisi-attention-73.svg)
+
 
 Bir cümleyi anlamak, kelimeleri soldan sağa doğru ezberlemekten çok daha fazlasıdır. Örneğin “Robot, masadaki kitabı aldı çünkü onu merak etti” cümlesindeki “onu” sözcüğünün kitabı işaret ettiğini bağlam sayesinde anlarız. Transformer mimarisi de benzer biçimde çalışır: Cümledeki kelimelerin birbirleriyle ilişkilerini aynı anda inceler ve hangilerinin daha önemli olduğuna karar verir.
 

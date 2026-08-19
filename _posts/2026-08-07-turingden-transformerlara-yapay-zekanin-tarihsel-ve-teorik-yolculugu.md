@@ -8,7 +8,11 @@ tags:
   - yapay zeka
   - Alan Turing
   - makine öğrenmesi
+image: /img/turingden-transformerlara-yapay-48.png
 ---
+
+![turingden-transformerlara-yapay-48](/img/turingden-transformerlara-yapay-48.svg)
+
 
 Yapay zekâ, makinelerin yalnızca hesap yapmasını değil; algılama, öğrenme, akıl yürütme ve karar verme gibi zekâyla ilişkilendirilen görevleri gerçekleştirmesini amaçlayan disiplinler arası bir alandır. Bugün sohbet botlarından otonom araçlara kadar her yerde karşımıza çıksa da bu yolculuk, “Makineler düşünebilir mi?” sorusuyla başladı.
 ``

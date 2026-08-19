@@ -8,6 +8,7 @@ tags:
   - LLM
   - Üretken Yapay Zeka
   - Transformer
+image: /img/llm-ve-uretken-61.png
 ---
 
 Büyük Dil Modelleri (Large Language Models, LLM), ilk bakışta insan gibi konuşan sihirli makineler gibi görünür. Perdenin arkasında ise milyarlarca sayısal ağırlık, devasa metin koleksiyonları ve oldukça basit görünen bir hedef vardır: Bir sonraki token'ın ne olacağını tahmin etmek. Bu tahmin görevi; sohbet, özetleme, çeviri, kod üretimi ve hatta adım adım problem çözme gibi şaşırtıcı yeteneklere dönüşür.
@@ -68,3 +69,6 @@ Bu örnek, üretimin özündeki olasılıksal seçimi gösterir; gerçek LLM'ler
 Ön eğitim modeli genel dil yeteneğiyle donatır. Sonrasında talimat örnekleriyle yapılan ince ayar, modelin “soruyu anlayıp yararlı cevap verme” davranışını geliştirir. İnsan geri bildirimi veya yapay geri bildirimle hizalama yapılması da daha güvenli ve tercih edilen yanıtları destekler.
 
 Ancak LLM'ler bir veritabanı ya da mutlak doğruluk makinesi değildir. Akıcı biçimde yanlış bilgi üretebilir; buna **halüsinasyon** denir. Bu nedenle kritik alanlarda kaynak doğrulama, araç kullanımı, testler ve insan denetimi zorunludur. LLM'i her şeyi bilen bir kâhin değil, çok hızlı bir taslak yazarı ve olasılık motoru olarak görmek en sağlıklı yaklaşımdır.
+
+![llm-ve-uretken-61](/img/llm-ve-uretken-61.svg)
+

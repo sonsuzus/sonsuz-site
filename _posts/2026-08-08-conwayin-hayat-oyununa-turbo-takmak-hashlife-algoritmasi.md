@@ -8,7 +8,11 @@ tags:
   - hashlife
   - conway-hayat-oyunu
   - algoritma
+image: /img/conwayin-hayat-oyununa-44.png
 ---
+
+![conwayin-hayat-oyununa-44](/img/conwayin-hayat-oyununa-44.svg)
+
 
 Conway'in Hayat Oyunu basit kurallardan şaşırtıcı derecede karmaşık yapılar üretir. Ancak milyonlarca hücreden oluşan bir evreni klasik yöntemle simüle etmek, her nesilde bütün ızgarayı taramak anlamına gelir. Glider filoları büyüdükçe işlemciniz de küçük bir yaşam krizi geçirebilir! Hashlife, tekrar eden uzay-zaman desenlerini tanıyıp sonuçlarını önbelleğe alarak devasa ve seyrek evrenlerde inanılmaz sıçramalar yapar.
 ``

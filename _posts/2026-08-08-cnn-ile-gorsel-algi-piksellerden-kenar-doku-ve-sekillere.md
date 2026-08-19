@@ -8,6 +8,7 @@ tags:
   - CNN
   - Görüntü İşleme
   - Derin Öğrenme
+image: /img/cnn-ile-gorsel-14.png
 ---
 
 Bir bilgisayar için fotoğraf, sevimli bir kedi veya kırmızı bir otomobil değil; yalnızca sayılardan oluşan çok boyutlu bir matristir. Evrişimli Sinir Ağları, yani CNN’ler, bu sayı yığınını anlamlandırarak kenarları, dokuları, şekilleri ve sonunda nesneleri keşfeder. Bunu yaparken görüntünün mekânsal yapısını koruyan evrişim filtrelerinden ve gereksiz ayrıntıları azaltan havuzlama işlemlerinden yararlanır.
@@ -84,3 +85,6 @@ class MiniCNN(nn.Module):
 İlk evrişim katmanı RGB görüntüden 16 özellik haritası çıkarır. ReLU negatif değerleri sıfırlayarak modele doğrusal olmayanlık kazandırır. İki havuzlama işlemi görüntüyü $32 \times 32$ boyutundan $8 \times 8$ boyutuna indirir. Son katman ise çıkarılan özellikleri sınıf puanlarına dönüştürür.
 
 CNN’lerin asıl gücü hiyerarşik öğrenmedir: erken katmanlar kenarları, orta katmanlar dokuları ve parçaları, derin katmanlar ise bütün nesneleri temsil eder. Bu nedenle CNN’ler yüz tanıma, tıbbi görüntü analizi, otonom sürüş ve kalite kontrol gibi alanlarda dijital dünyanın keskin gözleri hâline gelmiştir.
+
+![cnn-ile-gorsel-14](/img/cnn-ile-gorsel-14.svg)
+

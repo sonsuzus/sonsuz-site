@@ -8,6 +8,7 @@ tags:
   - TypeScript
   - tsconfig
   - JavaScript
+image: /img/tsconfigjson-rehberi-typescript-56.png
 ---
 
 TypeScript kodu yazmak işin yalnızca yarısıdır; diğer yarısı, bu kodun hangi JavaScript sürümüne, hangi modül sistemine ve ne kadar katı kurallarla dönüştürüleceğini belirlemektir. Projenin kontrol paneli sayılan `tsconfig.json`, derleyiciye adeta “Bu kodu nereye götürüyoruz ve yolda hangi kurallara uyuyoruz?” sorularının cevabını verir.
@@ -58,6 +59,9 @@ Bu üç ayar sıkça karıştırılır fakat farklı sorumluluklara sahiptir:
 | `target` | Üretilecek JavaScript sürümünü belirler | `ES2018`, `ES2022`, `ESNext` |
 | `module` | Çıktının modül biçimini seçer | `CommonJS`, `ESNext`, `NodeNext` |
 | `moduleResolution` | Import yollarının nasıl çözüleceğini belirler | `Node`, `NodeNext`, `Bundler` |
+
+![tsconfigjson-rehberi-typescript-56](/img/tsconfigjson-rehberi-typescript-56.svg)
+
 
 Eski tarayıcıları desteklemek daha düşük bir `target` gerektirebilir. Ancak düşük hedef, daha fazla dönüşüm ve daha büyük çıktı anlamına gelebilir. Kabaca:
 

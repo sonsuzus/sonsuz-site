@@ -9,9 +9,13 @@ tags:
   - XAI
   - Etik
   - Makine Öğrenmesi
+image: /img/kara-kutudan-cam-47.png
 ---
 
 Yapay zeka sistemleri kredi başvurularından işe alıma, tıbbi önceliklendirmeden içerik önerilerine kadar hayatı etkileyen kararlar veriyor. Ancak yüksek doğruluk oranı, tek başına güvenilirlik anlamına gelmez: Bir modelin *neden* belirli bir sonucu ürettiğini anlayamıyorsak, hatayı, önyargıyı ve sorumluluğu da izleyemeyiz. Açıklanabilir Yapay Zeka (XAI), bu kara kutuyu herkesin tüm matematiğini ezberlemesini beklemeden denetlenebilir bir “cam kutuya” dönüştürme çabasıdır.
+
+![kara-kutudan-cam-47](/img/kara-kutudan-cam-47.svg)
+
 ``
 
 ## Etik neden sadece doğruluk değildir?

@@ -8,7 +8,11 @@ tags:
   - Python
   - Veri Yapıları
   - Dictionary ve Set
+image: /img/python-sozlukleri-ve-93.png
 ---
+
+![python-sozlukleri-ve-93](/img/python-sozlukleri-ve-93.svg)
+
 
 Bir kullanıcıyı adına göre bulmak veya tekrar eden ürün kodlarını ayıklamak istediğinizde listeler işe yarar; ancak veri büyüdükçe tek tek arama yapmak yorucu hâle gelir. Python’ın sözlükleri (`dict`) ve kümeleri (`set`), hash tabanlı yapıları sayesinde arama, ekleme ve silme işlemlerini çoğu durumda son derece hızlı gerçekleştirir. Biri anahtarları değerlerle eşleştirirken diğeri yalnızca benzersiz elemanları saklar.
 ``

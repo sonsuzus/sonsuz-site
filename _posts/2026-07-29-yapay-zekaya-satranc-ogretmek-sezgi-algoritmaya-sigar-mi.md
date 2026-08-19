@@ -8,7 +8,11 @@ tags:
   - yapay zekâ
   - satranç
   - algoritma
+image: /img/yapay-zekaya-satranc-20.png
 ---
+
+![yapay-zekaya-satranc-20](/img/yapay-zekaya-satranc-20.svg)
+
 
 Bir satranç ustası bazen tahtaya birkaç saniye bakıp “Bu konum tehlikeli” der. Hangi kareyi hesapladığını sorduğunuzda ise omuz silkip “Öyle hissettim” cevabını verebilir. Bilgisayarlar omuz silkeme konusunda henüz etkileyici değildir; onlara sezgiyi oluşturan ölçütleri, olasılıkları ve hedefleri açıkça vermek gerekir. İşte yapay zekâya satranç öğretmenin asıl güçlüğü budur: İnsan zihnindeki sessiz bilgiyi çalıştırılabilir bir algoritmaya dönüştürmek.
 

@@ -8,6 +8,7 @@ tags:
   - algoritmalar
   - dinamik programlama
   - açgözlü yaklaşım
+image: /img/kesirli-ve-0-83.png
 ---
 
 Bir kamp çantanızın kapasitesi sınırlı, önünüzdeki eşyaların ise ağırlıkları ve değerleri farklı olsun. Amaç, çantanın taşıma sınırını aşmadan mümkün olan en yüksek toplam değeri elde etmektir. Bilgisayar bilimindeki **sırt çantası problemi**, bu basit senaryo üzerinden algoritma tasarımının önemli bir dersini gösterir: Aynı görünen problemlerde küçük bir kural değişikliği, doğru çözüm yaklaşımını tamamen değiştirebilir.
@@ -33,6 +34,9 @@ $$\sum_{i=1}^{n} w_i x_i \leq W$$
 | Uygun yaklaşım | Açgözlü algoritma | Dinamik programlama |
 | Tipik zaman karmaşıklığı | $O(n \log n)$ | $O(nW)$ |
 | Yerel en iyi seçim yeterli mi? | Evet | Her zaman değil |
+
+![kesirli-ve-0-83](/img/kesirli-ve-0-83.svg)
+
 
 Kesirli modelde bir eşyanın yüzde 40’ını almak mümkündür. Altın, yakıt veya tahıl gibi bölünebilen ürünler buna uygundur. 0-1 modelinde ise dizüstü bilgisayarın yarısını çantaya koymak pek işe yaramaz; eşya ya tamamen alınır ya da bırakılır.
 

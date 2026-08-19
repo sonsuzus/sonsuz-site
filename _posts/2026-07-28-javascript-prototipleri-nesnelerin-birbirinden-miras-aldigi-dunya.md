@@ -8,6 +8,7 @@ tags:
   - JavaScript
   - Prototipler
   - Kalıtım
+image: /img/javascript-prototipleri-nesnelerin-57.png
 ---
 
 JavaScript’te bir nesne kayıp bir özelliğini nerede arar? Cevap, klasik sınıf tabanlı dillerden biraz farklıdır: başka bir nesnede! JavaScript’in prototip tabanlı kalıtım sistemi, nesnelerin davranış ve özellikleri doğrudan diğer nesnelerden devralmasını sağlar. İlk bakışta gizemli görünen bu mekanizma; nesne metotlarından `class` sözdizimine kadar dilin önemli bir bölümünün perde arkasında çalışır.
@@ -103,3 +104,6 @@ Prototipi incelemek için standart `Object.getPrototypeOf()` kullanılmalıdır.
 Bir özelliğin doğrudan nesneye ait olup olmadığını kontrol etmek için `Object.hasOwn(nesne, "özellik")` tercih edilebilir. `for...in` döngüsünün prototipten gelen numaralandırılabilir özellikleri de dolaşabileceği unutulmamalıdır. Ayrıca yerleşik prototiplere, örneğin `Array.prototype` üzerine rastgele metot eklemek çakışmalara ve zor bulunan hatalara yol açabilir.
 
 Özetle JavaScript kalıtımı, görünmez sınıf şablonlarından çok birbirine bağlanan nesneler üzerine kuruludur. Prototip zincirini anladığınızda `new`, `class`, `extends` ve metot paylaşımı sihir olmaktan çıkar; hepsi aynı mekanizmanın farklı yüzleri hâline gelir.
+
+![javascript-prototipleri-nesnelerin-57](/img/javascript-prototipleri-nesnelerin-57.svg)
+
