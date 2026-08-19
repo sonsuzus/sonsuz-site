@@ -8,6 +8,7 @@ tags:
   - Web3
   - merkeziyetsizlik
   - blokzincir
+image: /img/merkeziyetsiz-internetin-utopyasi-92.png
 ---
 
 Web3; kullanıcıların verilerine, kimliklerine ve dijital varlıklarına sahip olduğu, aracıların yerini açık protokollerin aldığı bir internet vaat ediyor. Kulağa dijital bir ütopya gibi geliyor. Ancak cüzdan adreslerinin arkasındaki sermayeyi, doğrulayıcıları ve altyapı şirketlerini takip ettiğimizde rahatsız edici bir soruyla karşılaşıyoruz: Merkeziyetsiz internet gerçekten kullanıcıların mı, yoksa yalnızca yeni merkezlerin mi elinde?
@@ -79,3 +80,6 @@ Merkeziyetsizlik yalnızca blokzincir katmanında değerlendirilmemelidir. Kulla
 Web3 bütünüyle merkeziyetsiz değildir; fakat bütünüyle sahte de değildir. Açık kaynak istemciler, kendi düğümünü çalıştırma imkânı ve izinsiz işlem yapabilme önemli kazanımlardır. Asıl hata, merkeziyetsizliği bir açma-kapama düğmesi gibi görmektir.
 
 Daha sağlıklı sistemler için doğrulayıcı çeşitliliği, karesel oylama, zaman kilitli yönetişim, açık kaynak arayüzler ve alternatif RPC bağlantıları desteklenmelidir. Sonuçta mesele merkezin tamamen yok olması değil, gücün denetlenebilir, terk edilebilir ve rekabete açık olmasıdır. Web3'ün gerçek sahibi de logosu en büyük proje değil; protokolü gerektiğinde kimseye izin sormadan kullanabilen topluluktur.
+
+![merkeziyetsiz-internetin-utopyasi-92](/img/merkeziyetsiz-internetin-utopyasi-92.svg)
+

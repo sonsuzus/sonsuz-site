@@ -8,6 +8,7 @@ tags:
   - C
   - C++
   - Sistem Programlama
+image: /img/sistem-programlama-felsefesi-49.png
 ---
 
 Sistem programlama, bilgisayarın yalnızca ne yaptığını değil, bunu **hangi maliyetle** yaptığını da önemser. Bellek adresleri, işlemci önbelleği, kesmeler, dosya tanıtıcıları ve eşzamanlılık burada günlük araçlardır. C ile C++ arasındaki seçim de basitçe “eski mi yeni mi?” sorusu değildir: C doğrudanlık ve evrensel uyumluluk sunarken, C++ aynı donanım düzeyinde daha sağlam soyutlamalar kurmayı hedefler.
@@ -80,3 +81,6 @@ Bu sınıfın amacı dosya okumak değil, `close` çağrısının unutulmasını
 | Büyük motor veya altyapı | C++ | Karmaşıklığı modüllere ayırma avantajı |
 
 Sonuçta C “her ayrıntıyı ben yönetirim” felsefesidir; C++ ise “ayrıntıyı yönetirim, ama tekrar eden hataları dile devrederim” yaklaşımıdır. İyi sistem yazılımı dil savaşından değil, gecikme bütçesi, hata toleransı, ekip deneyimi ve hedef platformun gerçeklerinden doğar.
+
+![sistem-programlama-felsefesi-49](/img/sistem-programlama-felsefesi-49.svg)
+

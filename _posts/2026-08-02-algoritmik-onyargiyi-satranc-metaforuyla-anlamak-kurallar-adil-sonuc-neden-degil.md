@@ -8,7 +8,11 @@ tags:
   - algoritmik önyargı
   - etik
   - kural tabanlı sistemler
+image: /img/algoritmik-onyargiyi-satranc-90.png
 ---
+
+![algoritmik-onyargiyi-satranc-90](/img/algoritmik-onyargiyi-satranc-90.svg)
+
 
 Satrançta kurallar herkes için aynıdır: Piyon bir kare ilerler, fil çapraz gider, şah tehdit altındaysa korunmalıdır. Yine de bir oyuncuya vezir, diğerine yalnızca birkaç piyon vererek oyunu başlatırsak kuralların eşit olması karşılaşmayı adil yapmaz. Kural tabanlı yazılımlarda algoritmik önyargı da çoğu zaman böyle doğar. Kod herkese aynı koşulları uygulayabilir; fakat başlangıç koşulları, kullanılan göstergeler ve geçmişten alınan veriler eşit değilse sonuçlar sistematik biçimde bazı grupları dezavantajlı hâle getirebilir.
 

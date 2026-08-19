@@ -8,6 +8,7 @@ tags:
   - Rust
   - eşzamanlılık
   - veri güvenliği
+image: /img/korkusuz-eszamanlilik-rust-83.png
 ---
 
 Eşzamanlı programlama, performans kapısını açarken içeri veri yarışları, kilitlenmeler ve gizemli üretim hataları da sokabilir. Rust’ın “korkusuz eşzamanlılık” yaklaşımı ise sahiplik kurallarını ve tip sistemini bir güvenlik görevlisi gibi kullanır. Böylece birçok tehlikeli thread senaryosu, program çalıştırılmadan önce derleyici tarafından reddedilir. Kısacası Rust, “Önce çalıştıralım, sonra ne patlıyor bakarız” geleneğine pek sıcak bakmaz.
@@ -43,6 +44,9 @@ Bu kural thread sınırlarında da uygulandığı için güvensiz ortak yazma i�
 | Thread güvenliği | Programcının disiplinine bağlıdır | `Send` ve `Sync` tip özellikleriyle denetlenir |
 | Ortak değişken | Kilitleme unutulabilir | `Mutex<T>` veriye erişimi kilit korumasına bağlar |
 | Mesajlaşma | Harici araçlar gerekebilir | Standart kanallar doğrudan kullanılabilir |
+
+![korkusuz-eszamanlilik-rust-83](/img/korkusuz-eszamanlilik-rust-83.svg)
+
 
 `Send`, bir değerin sahipliğinin başka bir thread’e aktarılabileceğini; `Sync` ise `&T` referansının thread’ler arasında güvenle paylaşılabileceğini belirtir. Bu özelliklerin çoğunu Rust uygun tipler için otomatik belirler.
 

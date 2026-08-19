@@ -8,6 +8,7 @@ tags:
   - derin öğrenme
   - yapay sinir ağları
   - GPU
+image: /img/derin-ogrenmeye-giris-29.png
 ---
 
 Bir bilgisayara kediyi tanımayı öğretmek istediğimizi düşünelim. Geleneksel yaklaşımda sivri kulak, bıyık ve kuyruk gibi özellikleri tek tek tarif etmemiz gerekebilir. Derin öğrenmede ise modele yeterli sayıda örnek gösteririz; hangi ayrıntıların önemli olduğunu katmanlar boyunca kendisi keşfeder. İşin büyülü görünen, fakat matematik ve bol miktarda hesaplama gücüne dayanan kısmı tam olarak budur.
@@ -79,3 +80,6 @@ print(device, predictions.shape)
 Derin öğrenme; görüntü tanıma, doğal dil işleme, ses analizi ve üretken yapay zekâda elle özellik çıkarma ihtiyacını azaltır. Büyük ve karmaşık verilerde klasik yöntemlerden daha yüksek başarı sağlayabilir. Ayrıca önceden eğitilmiş modeller, transfer öğrenme ile daha küçük veri kümelerine uyarlanabilir.
 
 Buna karşılık derin mimariler çok veri, enerji, zaman ve dikkatli hiperparametre ayarı ister. Katman eklemek başarıyı otomatik olarak artırmaz; aşırı öğrenme, kaybolan gradyan ve yüksek gecikme gibi sorunlar doğabilir. En iyi yaklaşım, probleme yetecek kadar derin bir model seçmek ve donanım gücünü ölçüm sonuçlarına göre kullanmaktır.
+
+![derin-ogrenmeye-giris-29](/img/derin-ogrenmeye-giris-29.svg)
+

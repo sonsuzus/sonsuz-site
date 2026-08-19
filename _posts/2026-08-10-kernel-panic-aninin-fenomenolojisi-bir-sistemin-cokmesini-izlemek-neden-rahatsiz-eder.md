@@ -8,6 +8,7 @@ tags:
   - kernel panic
   - psikoloji
   - sistem yönetimi
+image: /img/kernel-panic-aninin-73.png
 ---
 
 Bir kernel panic ekranı teknik olarak yalnızca işletim sisteminin devam etmenin güvenli olmadığına karar verdiği andır. Fakat ekrana düşen anlaşılmaz adresler, donmuş imleç ve tepki vermeyen klavye; kullanıcıda basit bir hata mesajından çok daha güçlü bir his uyandırır: Kontrol kaybı. Bu deneyim, dijital araçlarla kurduğumuz ilişkinin ne kadar duygusal ve bedensel olabildiğini gösterir.
@@ -29,6 +30,9 @@ Burada $C$ algılanan kontrolü, $E$ kullanıcının eylem seçeneklerini, $G$ e
 | Uygulama çöktü | Uygulamayı kapatıp açabilirim | İşletim sistemi çalışır | Sınırlı ama sürdürülen kontrol |
 | Sistem yavaşladı | Bekler, görev yöneticisini açarım | Gecikmeli yanıt | Sabırsızlık ve endişe |
 | Kernel panic | Ne yapacağımı bilmiyorum | Tam veya kritik yanıt kaybı | Çaresizlik, tehdit algısı |
+
+![kernel-panic-aninin-73](/img/kernel-panic-aninin-73.svg)
+
 
 İkinci kaynak, **emeğin görünmezliği**dir. Bir geliştirici için panic yalnızca makinenin kapanması değildir; kaydedilmemiş değişiklikler, yarıda kalan testler, yeniden kurulacak bağlam ve bozulmuş akış demektir. Özellikle “flow” hâlinde çalışırken kişi problemin zihinsel haritasını aktif belleğinde taşır. Çöküş, dosyayı değil bu bağlamı da keser. Yeniden başlatma süresi kısa olsa bile işe zihinsel geri dönüş maliyeti yüksek olabilir.
 

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7dcff"/>
+      <stop offset="100%" stop-color="#d9efff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e87a0" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#70869c" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="44" r="60" fill="#d8eefb" opacity="0.45"/>
+  <circle cx="586" cy="280" r="76" fill="#dff3d6" opacity="0.50"/>
+
+  <text x="32" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536a">Korkusuz Eşzamanlılık</text>
+  <text x="32" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748397">Derleme zamanında güvenlik</text>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="106" width="135" height="116" rx="20" fill="#fff7e8"/>
+    <rect x="34" y="106" width="135" height="34" rx="20" fill="#ffe5b5"/>
+    <rect x="34" y="123" width="135" height="17" fill="#ffe5b5"/>
+  </g>
+  <text x="101.5" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79552a">Thread'ler</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="52" y="154" width="45" height="45" rx="12" fill="#fffdf8" stroke="#efc875"/>
+    <rect x="107" y="154" width="45" height="45" rx="12" fill="#fffdf8" stroke="#efc875"/>
+  </g>
+  <circle cx="74.5" cy="168" r="7" fill="#94bfd4"/>
+  <path d="M62 190 Q74.5 176 87 190" fill="none" stroke="#7198af" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="129.5" cy="168" r="7" fill="#c1a0de"/>
+  <path d="M117 190 Q129.5 176 142 190" fill="none" stroke="#9675b7" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M169 164 H214" fill="none" stroke="#7893a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="221,164 211,158 211,170" fill="#7893a8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="221" y="76" width="202" height="173" rx="28" fill="url(#core)" stroke="#b7c9e3"/>
+  </g>
+  <text x="322" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a5780">Rust Derleyicisi</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="248" y="119" width="148" height="39" rx="13" fill="#ffffff"/>
+    <rect x="248" y="170" width="148" height="52" rx="13" fill="#effaf2"/>
+  </g>
+  <path d="M270 134 l5 5 10 -11" fill="none" stroke="#4fa778" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="326" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#475870">Sahiplik ve Tipler</text>
+  <rect x="264" y="184" width="28" height="24" rx="6" fill="#c9ead4"/>
+  <path d="M270 184 v-5 a8 8 0 0 1 16 0 v5" fill="none" stroke="#4c9a6c" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="278" cy="196" r="2.5" fill="#4c9a6c"/>
+  <text x="340" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476552">Güvenli erişim</text>
+  <text x="340" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#678271">Send • Sync • Mutex</text>
+
+  <path d="M423 163 H459" fill="none" stroke="#7893a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="466,163 456,157 456,169" fill="#7893a8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="466" y="83" width="143" height="164" rx="23" fill="#eef9ee" stroke="#bbdbbf"/>
+  </g>
+  <text x="537.5" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6d52">Güvenli Çalışma</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="487" y="126" width="101" height="35" rx="11" fill="#ffffff"/>
+    <rect x="487" y="177" width="101" height="35" rx="11" fill="#ffffff"/>
+  </g>
+  <path d="M503 143 h17 M512 134 v18" stroke="#589a71" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="553" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476552">Arc ve Mutex</text>
+  <path d="M501 194 h14 l-4 -4 M515 194 l-4 4" fill="none" stroke="#5e92b1" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="553" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476552">Mesaj kanalı</text>
+
+  <path d="M305 249 V273 H159" fill="none" stroke="#d77d78" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="152,273 162,267 162,279" fill="#d77d78"/>
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="250" width="116" height="46" rx="14" fill="#fff0ef" stroke="#edb4af"/>
+  </g>
+  <circle cx="64" cy="273" r="12" fill="#f4b0aa"/>
+  <path d="M59 268 l10 10 M69 268 l-10 10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="110" y="269" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9b4e4a">Veri yarışı</text>
+  <text x="110" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a56863">reddedildi</text>
+
+  <text x="321" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63788d">Derlemeden önce fren</text>
+</svg>

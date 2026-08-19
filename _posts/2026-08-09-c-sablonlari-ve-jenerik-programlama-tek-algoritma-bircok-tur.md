@@ -8,6 +8,7 @@ tags:
   - C++
   - Templates
   - Jenerik Programlama
+image: /img/c-sablonlari-ve-60.png
 ---
 
 C++'ta aynı algoritmayı `int`, `double`, `std::string` ya da kendi sınıflarımız için tekrar tekrar yazmak, kodun bakım maliyetini hızla artırır. Şablonlar (templates), algoritmayı türden ayırarak bu sorunu çözer: Bir kez kuralları tanımlar, tür seçimini derleyiciye bırakırsınız. Sonuç, çalışma anında tür kontrolü yapan yapılardan farklı olarak, derleme anında üretilen hızlı ve tür güvenli koddur.
@@ -46,6 +47,9 @@ int main() {
 | Fonksiyon aşırı yükleme | Derleme anı | Düşük | Her tür için kod gerekir |
 | Sanal fonksiyon/polimorfizm | Çalışma anı | Dolaylı çağrı olabilir | Ortak taban sınıf ister |
 | Template | Derleme anı | Genellikle sıfır ek maliyet | Uygun işlemleri sağlayan tür yeterlidir |
+
+![c-sablonlari-ve-60](/img/c-sablonlari-ve-60.svg)
+
 
 ## Sınıf şablonları ve tür parametreleri
 

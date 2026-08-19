@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3dc"/>
+      <stop offset="100%" stop-color="#ffe0ae"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="56" r="44" fill="#dceffd" opacity="0.55"/>
+  <circle cx="587" cy="278" r="62" fill="#dff2d8" opacity="0.48"/>
+  <path d="M42 250 C120 214 139 277 204 251" fill="none" stroke="#c8e6df" stroke-width="2" opacity="0.7"/>
+  <path d="M440 54 C510 25 550 78 613 44" fill="none" stroke="#d5e6f5" stroke-width="2" opacity="0.8"/>
+
+  <!-- Bağlantılar -->
+  <path d="M320 112 L320 132 L135 132 L135 151" fill="none" stroke="#87a9c4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="129,148 141,148 135,157" fill="#87a9c4"/>
+  <path d="M320 112 L320 151" fill="none" stroke="#87a9c4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="314,148 326,148 320,157" fill="#87a9c4"/>
+  <path d="M320 112 L320 132 L505 132 L505 151" fill="none" stroke="#87a9c4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="499,148 511,148 505,157" fill="#87a9c4"/>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <rect x="211" y="40" width="218" height="72" rx="19" fill="url(#core)" stroke="#e7bd6c" stroke-width="1.2"/>
+  </g>
+  <rect x="231" y="59" width="35" height="35" rx="10" fill="#f59e68"/>
+  <path d="M242 67 L252 67 L256 72 L252 78 L256 84 L246 88 L240 81 L244 75 L240 71 Z" fill="#fff8ee" opacity="0.95"/>
+  <text x="280" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a3c2b">Rust değişkeni</text>
+  <text x="280" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735c43">Önce değişmez kabul edilir</text>
+
+  <!-- Sol: değişmez -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="157" width="200" height="125" rx="18" fill="#e8f3ff" stroke="#a9cde8" stroke-width="1.2"/>
+  </g>
+  <rect x="53" y="175" width="31" height="31" rx="9" fill="#75add9"/>
+  <path d="M62 189 L67 194 L76 183" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="94" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285270">Değişmez</text>
+  <text x="94" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54758d">Varsayılan: let</text>
+  <rect x="54" y="221" width="161" height="39" rx="10" fill="#f8fcff" stroke="#c7dfef"/>
+  <text x="67" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365c75">puan = 10</text>
+  <path d="M67 249 L133 249" stroke="#e26d6d" stroke-width="2"/>
+  <text x="144" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#bd5151">yeniden atama: hata</text>
+
+  <!-- Orta: mut -->
+  <g filter="url(#shadow)">
+    <rect x="250" y="157" width="140" height="125" rx="18" fill="#e6f6eb" stroke="#a8d8b8" stroke-width="1.2"/>
+  </g>
+  <rect x="268" y="175" width="31" height="31" rx="9" fill="#65b987"/>
+  <path d="M276 190 C276 184 292 182 292 188 C292 194 277 191 277 197 C277 202 292 201 292 195" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="308" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#276344">Bilinçli değişim</text>
+  <text x="308" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54816a">let mut</text>
+  <rect x="268" y="221" width="104" height="39" rx="10" fill="#f8fffa" stroke="#c8e6d0"/>
+  <text x="280" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#326d4b">10</text>
+  <path d="M302 234 L327 234" fill="none" stroke="#62a87c" stroke-width="2"/>
+  <polygon points="323,229 333,234 323,239" fill="#62a87c"/>
+  <text x="339" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#326d4b">15</text>
+  <text x="279" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#659078">aynı değer güncellenir</text>
+
+  <!-- Sağ: shadowing -->
+  <g filter="url(#shadow)">
+    <rect x="405" y="157" width="200" height="125" rx="18" fill="#f2eafa" stroke="#d0b9e5" stroke-width="1.2"/>
+  </g>
+  <rect x="423" y="175" width="31" height="31" rx="9" fill="#a783ce"/>
+  <path d="M432 183 L445 183 L445 198 L432 198 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <path d="M435 187 L442 187 M435 192 L442 192" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="464" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c397c">Gölgeleme</text>
+  <text x="464" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#83669c">Yeni let oluşturur</text>
+  <rect x="424" y="220" width="47" height="40" rx="10" fill="#fcfaff" stroke="#dfd0ed"/>
+  <text x="436" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a4b88">"42"</text>
+  <path d="M477 240 L493 240" fill="none" stroke="#a783ce" stroke-width="2"/>
+  <polygon points="489,235 499,240 489,245" fill="#a783ce"/>
+  <rect x="504" y="220" width="75" height="40" rx="10" fill="#fcfaff" stroke="#dfd0ed"/>
+  <text x="516" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a4b88">42 × 2</text>
+  <text x="428" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#876ba0">Tür dönüşümü mümkün</text>
+
+  <!-- Alt açıklama -->
+  <g filter="url(#smallShadow)">
+    <rect x="181" y="293" width="278" height="20" rx="10" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <circle cx="198" cy="303" r="4" fill="#f2a65a"/>
+  <text x="210" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526576">Değişim görünür, niyet açık, hata riski düşük</text>
+</svg>

@@ -8,6 +8,7 @@ tags:
   - Rust
   - Option
   - Hata Yönetimi
+image: /img/null-kabusuna-son-69.png
 ---
 
 Bir nesnenin var olduğunu düşünerek kod yazarsınız, uygulamayı çalıştırırsınız ve aniden meşhur “null reference” hatasıyla karşılaşırsınız. Rust, bu sürprizi çalışma zamanına bırakmak yerine bir değerin yokluğunu `Option` enum’u ile açıkça modellememizi ister. Böylece “Belki vardır, belki yoktur” ihtimali, derleyicinin denetleyebildiği güvenli bir tipe dönüşür.
@@ -104,3 +105,6 @@ fn bol(a: f64, b: f64) -> Option<f64> {
 Bu örnekte yokluk sebebi zaten açıktır. Dosya okuma gibi bir işlemde ise “dosya yok”, “izin reddedildi” veya “disk hatası” ayrımı gerektiğinden `Result` seçilmelidir.
 
 Kısacası `Option`, null değerini sihirli ve tehlikeli bir istisna olmaktan çıkarıp tip sisteminin parçası yapar. Rust size “Bu değer kesinlikle var mı?” sorusunu kod derlenmeden önce sordurur. Biraz disiplin karşılığında daha az gece yarısı hatası alınır; bu da oldukça kârlı bir takastır.
+
+![null-kabusuna-son-69](/img/null-kabusuna-son-69.svg)
+

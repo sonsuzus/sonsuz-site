@@ -8,6 +8,7 @@ tags:
   - Python
   - Markov Zinciri
   - Müzik Teorisi
+image: /img/cember-modulasyonu-ile-76.png
 ---
 
 Rastgele nota seçmek kolaydır; kulağa müzik gibi gelmesini sağlamak ise bambaşka bir problemdir. Bu projede Markov zincirini, tonal müzikteki akor ilişkileriyle birleştirerek sürekli yeni piyano melodileri üreteceğiz. Sistem, yalnızca bir sonraki notayı değil, bulunduğu tonal merkezi ve bu merkezin çember üzerindeki komşularını da dikkate alacak. Sonuç: zar atan bir robot değil, küçük ama şaşırtıcı derecede terbiyeli bir besteci.
@@ -90,3 +91,6 @@ print(melody())
 Buradaki önemli ayrıntı, geçişlerin mutlak notalar yerine derecelerle tanımlanmasıdır. Böylece `V → I` davranışı C'de `G → C`, G'de `D → G` olarak otomatik uyarlanır. Gerçek bir uygulamada tüm 12 majör ve minör gamı ekleyin; ayrıca ritmi ikinci bir Markov zinciriyle üretin. Uzun notaları kadanslarda, kısa notaları geçişlerde daha olası yaparak sistemin piyano cümleleri nefes almasını sağlayabilirsiniz.
 
 Sonsuzluk, tamamen başıboşluk anlamına gelmez. İyi üretici; kuralları yeterince sıkı tutarak tonal kimliği korur, yeterince esnek tutarak da aynı melodiyi iki kez söylemez.
+
+![cember-modulasyonu-ile-76](/img/cember-modulasyonu-ile-76.svg)
+

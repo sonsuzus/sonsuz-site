@@ -8,9 +8,13 @@ tags:
   - sıralama algoritmaları
   - algoritma analizi
   - performans optimizasyonu
+image: /img/siralama-algoritmalarinin-ic-61.png
 ---
 
 Bir veri kümesini sıralamak, programlamanın “çorapları renklerine göre ayırma” problemidir: sonuç basit görünür, fakat doğru yöntem seçilmezse işlem gereksiz yere uzar. Bubble Sort, Merge Sort, Quick Sort ve Heap Sort aynı çıktıyı üretse de bunu yaparken farklı miktarda zaman, bellek ve karşılaştırma harcar. Optimizasyon sorularını çözebilmek için algoritmaların yalnızca karmaşıklıklarını ezberlemek değil, içeride nasıl çalıştıklarını anlamak gerekir.
+
+![siralama-algoritmalarinin-ic-61](/img/siralama-algoritmalarinin-ic-61.svg)
+
 ``
 ## Performansı nasıl ölçeriz?
 

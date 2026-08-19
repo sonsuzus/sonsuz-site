@@ -1,0 +1,82 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="16"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Çember Modülasyonlu Markov Piyano Üretici</text>
+
+  <!-- Merkez: Markov Çekirdeği -->
+  <rect x="240" y="105" width="160" height="70" rx="14" fill="#ffffff" stroke="#7fb3d5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Markov Çekirdek</text>
+  <text x="320" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">(tonalite, derece, oktav)</text>
+  <text x="320" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">geçiş matrisi</text>
+
+  <!-- Sol: Girdi / Rastgelelik -->
+  <rect x="40" y="120" width="130" height="55" rx="12" fill="#eaf2f8" stroke="#85c1e9" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="105" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Rastgele Nota</text>
+  <text x="105" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">P(n)=1/12</text>
+
+  <!-- Sağ: Çıktı / Melodi -->
+  <rect x="470" y="120" width="130" height="55" rx="12" fill="#eafaf1" stroke="#82e0aa" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="535" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Piyano Melodisi</text>
+  <text x="535" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">MIDI nota adları</text>
+
+  <!-- Üst: Beşliler Çemberi -->
+  <circle cx="320" cy="60" r="28" fill="none" stroke="#aab7b8" stroke-width="1" stroke-dasharray="4 3"/>
+  <circle cx="320" cy="60" r="2.5" fill="#5d6d7e"/>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">C</text>
+  <text x="348" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">G</text>
+  <text x="292" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">F</text>
+  <text x="320" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#95a5a6">beşliler çemberi</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Sol → Merkez -->
+  <path d="M170 147 L232 147" stroke="#5d6d7e" stroke-width="1.5" fill="none"/>
+  <polygon points="238,147 228,142 228,152" fill="#5d6d7e"/>
+
+  <!-- Merkez → Sağ -->
+  <path d="M400 147 L462 147" stroke="#5d6d7e" stroke-width="1.5" fill="none"/>
+  <polygon points="468,147 458,142 458,152" fill="#5d6d7e"/>
+
+  <!-- Üst (çember) → Merkez -->
+  <path d="M320 90 L320 100" stroke="#5d6d7e" stroke-width="1.5" fill="none"/>
+  <polygon points="320,106 315,96 325,96" fill="#5d6d7e"/>
+
+  <!-- Merkez → Üst (geri besleme) -->
+  <path d="M300 105 L300 92" stroke="#5d6d7e" stroke-width="1.2" stroke-dasharray="4 3" fill="none"/>
+  <polygon points="300,86 295,96 305,96" fill="#5d6d7e"/>
+
+  <!-- Alt: Modülasyon kuralları -->
+  <rect x="140" y="220" width="170" height="55" rx="12" fill="#fef9e7" stroke="#f7dc6f" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="225" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Modülasyon Kuralı</text>
+  <text x="225" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">%70 kal, %15 komşu</text>
+  <text x="225" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">V→I, IV→V, ii→V</text>
+
+  <!-- Alt: Derece geçişleri -->
+  <rect x="340" y="220" width="160" height="55" rx="12" fill="#f4ecf7" stroke="#bb8fce" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="420" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Derece Geçişleri</text>
+  <text x="420" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">(tonalite, derece, oktav)</text>
+  <text x="420" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">ağırlıklı rastgele seçim</text>
+
+  <!-- Alt oklar -->
+  <path d="M225 215 L225 205 L300 180" stroke="#5d6d7e" stroke-width="1.2" fill="none"/>
+  <polygon points="305,176 295,177 299,185" fill="#5d6d7e"/>
+
+  <path d="M420 215 L420 205 L350 180" stroke="#5d6d7e" stroke-width="1.2" fill="none"/>
+  <polygon points="345,176 355,177 351,185" fill="#5d6d7e"/>
+
+  <!-- Etiket: Sonsuz döngü -->
+  <text x="320" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-style="italic" fill="#7f8c8d">Sonsuz ama tonal kimliğini koruyan melodi akışı</text>
+</svg>

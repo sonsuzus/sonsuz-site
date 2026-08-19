@@ -8,7 +8,11 @@ tags:
   - Python
   - Kaos Teorisi
   - Lorenz Çekici
+image: /img/kelebek-etkisini-kodlamak-31.png
 ---
+
+![kelebek-etkisini-kodlamak-31](/img/kelebek-etkisini-kodlamak-31.svg)
+
 
 Bir kelebeğin kanat çırpışı gerçekten fırtına yaratır mı? Meteorolojik anlamda bu cümle biraz şiirseldir; fakat Lorenz çekicisi, çok daha ilginç bir gerçeği gösterir: Sistem tamamen deterministik kurallarla çalışsa bile başlangıçtaki ufacık farklar zamanla devasa sonuçlara dönüşebilir. Bu projede aynı denklemleri iki neredeyse özdeş başlangıç noktasıyla çözecek, ardından yollarının nasıl ayrıldığını izleyeceğiz.
 

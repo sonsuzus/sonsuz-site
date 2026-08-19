@@ -8,6 +8,7 @@ tags:
   - uzaktan çalışma
   - yazılımcı psikolojisi
   - problem çözme
+image: /img/terminaldeki-yalnizlik-uzaktan-62.png
 ---
 
 Uzaktan çalışmak ilk bakışta yazılımcının doğal yaşam alanı gibi görünür: Sessiz bir oda, güçlü bir bilgisayar ve toplantılar arasında uzanan kesintisiz kodlama saatleri… Ancak ofis sohbetleri, omuz üzerinden yapılan kısa yardımlar ve birlikte içilen kahveler kaybolduğunda yalnızca çalışma ortamı değil, zihnin problem çözme biçimi de değişir. Terminal aynı terminaldir; fakat ona bakan kişi artık farklı bir bilişsel haritada ilerler.
@@ -71,3 +72,6 @@ Verimliliği yalnızca yazılan kod satırıyla ölçmek de yanıltıcıdır. Da
 $$V = \frac{Değer \times Sürdürülebilirlik}{Bilişsel\ Yorgunluk + Yeniden\ İşleme}$$
 
 Saatlerce yalnız çalışmak kısa vadede üretken görünebilir; ancak yorgunluk ve yeniden işleme arttığında gerçek verim düşer. Uzaktan çalışan yazılımcının ihtiyacı sürekli çevrim içi olmak değil, gerektiğinde erişilebilir insan bağlantıları kurmaktır. Çünkü bazen en zor hata kod tabanında değil, “Bunu tek başıma çözmeliyim” varsayımında saklanır.
+
+![terminaldeki-yalnizlik-uzaktan-62](/img/terminaldeki-yalnizlik-uzaktan-62.svg)
+

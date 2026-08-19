@@ -1,0 +1,87 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Kernel Panic Fenomenolojisi</text>
+
+  <!-- Merkez: Kernel Panic -->
+  <rect x="245" y="105" width="150" height="48" rx="10" fill="#e74c3c" opacity="0.9" filter="url(#shadow)"/>
+  <text x="320" y="127" text-anchor="middle" fill="#fff" font-weight="bold">KERNEL PANIC</text>
+  <text x="320" y="142" text-anchor="middle" fill="#ffeaa7" font-size="11">Ani sistem durması</text>
+
+  <!-- Sol üst: Nedenler -->
+  <rect x="35" y="55" width="130" height="40" rx="8" fill="#ff7675" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="100" y="72" text-anchor="middle" fill="#2d3436" font-weight="bold">Nedenler</text>
+  <text x="100" y="86" text-anchor="middle" fill="#2d3436" font-size="11">Bellek hatası</text>
+
+  <rect x="35" y="105" width="130" height="40" rx="8" fill="#fab1a0" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="100" y="122" text-anchor="middle" fill="#2d3436">Sürücü çakışması</text>
+  <text x="100" y="136" text-anchor="middle" fill="#2d3436" font-size="11">Donanım uyumsuzluğu</text>
+
+  <rect x="35" y="155" width="130" height="40" rx="8" fill="#ff7675" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="100" y="172" text-anchor="middle" fill="#2d3436">Kritik tutarsızlık</text>
+  <text x="100" y="186" text-anchor="middle" fill="#2d3436" font-size="11">Koruma mekanizması</text>
+
+  <!-- Sağ üst: Kullanıcı tepkileri -->
+  <rect x="475" y="55" width="130" height="40" rx="8" fill="#74b9ff" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="540" y="72" text-anchor="middle" fill="#2d3436" font-weight="bold">Kontrol kaybı</text>
+  <text x="540" y="86" text-anchor="middle" fill="#2d3436" font-size="11">Öngörülemezlik</text>
+
+  <rect x="475" y="105" width="130" height="40" rx="8" fill="#a29bfe" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="540" y="122" text-anchor="middle" fill="#2d3436">Geri bildirim yok</text>
+  <text x="540" y="136" text-anchor="middle" fill="#2d3436" font-size="11">Çaresizlik hissi</text>
+
+  <rect x="475" y="155" width="130" height="40" rx="8" fill="#74b9ff" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="540" y="172" text-anchor="middle" fill="#2d3436">Emeğin kaybı</text>
+  <text x="540" y="186" text-anchor="middle" fill="#2d3436" font-size="11">Bağlam kesintisi</text>
+
+  <!-- Alt: Müdahale ve iyileşme -->
+  <rect x="155" y="245" width="140" height="40" rx="8" fill="#55efc4" opacity="0.85" filter="url(#shadowLight)"/>
+  <text x="225" y="262" text-anchor="middle" fill="#2d3436" font-weight="bold">Log analizi</text>
+  <text x="225" y="276" text-anchor="middle" fill="#2d3436" font-size="11">journalctl / dmesg</text>
+
+  <rect x="330" y="245" width="140" height="40" rx="8" fill="#00b894" opacity="0.85" filter="url(#shadowLight)"/>
+  <text x="400" y="262" text-anchor="middle" fill="#fff" font-weight="bold">Hipotez üretme</text>
+  <text x="400" y="276" text-anchor="middle" fill="#dfe6e9" font-size="11">Test edilebilir durum</text>
+
+  <!-- Oklar: Nedenlerden Panic'e -->
+  <path d="M165 75 C200 75, 220 100, 245 115" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="245,115 236,110 238,120" fill="#636e72"/>
+
+  <path d="M165 125 C200 125, 220 120, 245 125" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="245,125 236,120 238,130" fill="#636e72"/>
+
+  <path d="M165 175 C200 175, 220 140, 245 135" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="245,135 236,130 238,140" fill="#636e72"/>
+
+  <!-- Oklar: Panic'ten Tepkilere -->
+  <path d="M395 115 C430 100, 450 80, 475 75" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="475,75 466,72 468,82" fill="#636e72"/>
+
+  <path d="M395 125 C430 125, 450 125, 475 125" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="475,125 466,120 468,130" fill="#636e72"/>
+
+  <path d="M395 135 C430 150, 450 170, 475 175" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="475,175 466,172 468,182" fill="#636e72"/>
+
+  <!-- Oklar: Panic'ten İyileşmeye -->
+  <path d="M320 153 C320 180, 320 200, 320 220" stroke="#00b894" stroke-width="2" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="320,220 315,211 325,211" fill="#00b894"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="308" text-anchor="middle" fill="#636e72" font-size="11" opacity="0.8">Kontrol: Eylem × Geri bildirim / Belirsizlik</text>
+</svg>

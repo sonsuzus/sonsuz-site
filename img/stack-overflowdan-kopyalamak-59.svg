@@ -1,0 +1,109 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fda4af"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#1e293b">Kopyalamadan Öğrenmeye Yolculuk</text>
+
+  <!-- Kaynak kutu -->
+  <rect x="40" y="55" width="140" height="50" rx="10" fill="url(#g1)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="110" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Stack Overflow</text>
+  <text x="110" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">Kopyalanan Kod</text>
+
+  <!-- Ok 1 -->
+  <path d="M180 80 L230 80" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="230,74 242,80 230,86" fill="#64748b"/>
+
+  <!-- Taklit kutusu -->
+  <rect x="245" y="55" width="130" height="50" rx="10" fill="url(#g2)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="310" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Taklit</text>
+  <text x="310" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">Modelleme</text>
+
+  <!-- Ok 2 -->
+  <path d="M375 80 L425 80" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="425,74 437,80 425,86" fill="#64748b"/>
+
+  <!-- Anlama kutusu -->
+  <rect x="440" y="55" width="150" height="50" rx="10" fill="url(#g3)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="515" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Açıklama</text>
+  <text x="515" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">Kavramsal Model</text>
+
+  <!-- Alt akış - Döngü -->
+  <!-- Ok 3 aşağı -->
+  <path d="M515 105 L515 135" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="509,135 515,147 521,135" fill="#64748b"/>
+
+  <!-- Değiştirme kutusu -->
+  <rect x="440" y="150" width="150" height="50" rx="10" fill="url(#g4)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="515" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Değiştir</text>
+  <text x="515" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">Dene ve Boz</text>
+
+  <!-- Ok 4 aşağı -->
+  <path d="M515 200 L515 230" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="509,230 515,242 521,230" fill="#64748b"/>
+
+  <!-- Yeniden üret kutusu -->
+  <rect x="440" y="245" width="150" height="50" rx="10" fill="url(#g5)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="515" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Yeniden Üret</text>
+  <text x="515" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">Aktif Hatırlama</text>
+
+  <!-- Geri bildirim döngüsü -->
+  <path d="M440 270 L310 270 L310 105 L245 105" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,4" fill="none"/>
+  <polygon points="245,99 233,105 245,111" fill="#94a3b8"/>
+  <text x="330" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#64748b" font-style="italic">Geri Bildirim</text>
+
+  <!-- Öğrenme formülü -->
+  <rect x="40" y="150" width="340" height="90" rx="12" fill="#ffffff" filter="url(#shadow)" opacity="0.85"/>
+  <text x="210" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Öğrenme Formülü</text>
+  <text x="210" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" fill="#334155">Öğrenme = Taklit + Açıklama</text>
+  <text x="210" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" fill="#334155">+ Değiştirme + Geri Bildirim</text>
+
+  <!-- Sonuç oku -->
+  <path d="M515 295 L515 305" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="509,305 515,315 521,305" fill="#64748b"/>
+
+  <!-- Özgünlük kutusu -->
+  <rect x="440" y="150" width="150" height="50" rx="10" fill="url(#g5)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="515" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Özgünlük</text>
+  <text x="515" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">Transfer Becerisi</text>
+
+  <!-- Öğrenme kutusu -->
+  <rect x="440" y="245" width="150" height="50" rx="10" fill="url(#g3)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="515" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Kalıcı Öğrenme</text>
+  <text x="515" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">Bilgi Transferi</text>
+
+  <!-- Etiketler -->
+  <text x="110" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#64748b">Hızlı çözüm</text>
+  <text x="310" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#64748b">Geçici bağımlılık</text>
+  <text x="515" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#64748b">Kalıcı beceri</text>
+</svg>

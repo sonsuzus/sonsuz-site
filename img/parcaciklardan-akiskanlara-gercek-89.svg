@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Parçacık Tabanlı Akışkan Simülasyonu</text>
+
+  <!-- Merkez: Fizik Motoru -->
+  <rect x="245" y="120" width="150" height="60" rx="12" fill="#4a90d9" opacity="0.9" filter="url(#shadow)"/>
+  <text x="320" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Fizik Motoru</text>
+  <text x="320" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f0fe">Kuvvet + Euler</text>
+
+  <!-- Sol: Parçacık Sistemi -->
+  <rect x="40" y="120" width="140" height="60" rx="12" fill="#7f8c8d" opacity="0.85" filter="url(#shadow)"/>
+  <text x="110" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Parçacık Sistemi</text>
+  <text x="110" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#f0f0f0">Konum, Hız, Ömür</text>
+
+  <!-- Sağ: Görsel Sunum -->
+  <rect x="460" y="120" width="140" height="60" rx="12" fill="#9b59b6" opacity="0.85" filter="url(#shadow)"/>
+  <text x="530" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Görsel Sunum</text>
+  <text x="530" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#f0e6f6">Canvas + WebGL</text>
+
+  <!-- Oklar: Sol -> Merkez -> Sağ -->
+  <!-- Sol -> Merkez -->
+  <path d="M180 150 L235 150" stroke="#34495e" stroke-width="2" fill="none"/>
+  <polygon points="240,150 230,145 230,155" fill="#34495e"/>
+
+  <!-- Merkez -> Sağ -->
+  <path d="M395 150 L450 150" stroke="#34495e" stroke-width="2" fill="none"/>
+  <polygon points="455,150 445,145 445,155" fill="#34495e"/>
+
+  <!-- Üst: Üç akışkan türü -->
+  <!-- Su -->
+  <rect x="60" y="40" width="120" height="50" rx="10" fill="#3498db" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="120" y="60" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Su</text>
+  <text x="120" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#d6eaf8">Yerçekimi + Basınç</text>
+
+  <!-- Ateş -->
+  <rect x="260" y="40" width="120" height="50" rx="10" fill="#e67e22" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="320" y="60" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Ateş</text>
+  <text x="320" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fdebd0">Kaldırma + Türbülans</text>
+
+  <!-- Duman -->
+  <rect x="460" y="40" width="120" height="50" rx="10" fill="#95a5a6" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="520" y="60" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Duman</text>
+  <text x="520" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ecf0f1">Rüzgar + Dağınık</text>
+
+  <!-- Üst türlerden merkeze oklar -->
+  <path d="M120 90 L120 110 L245 135" stroke="#34495e" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="248,137 238,132 239,142" fill="#34495e"/>
+
+  <path d="M320 90 L320 110" stroke="#34495e" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="320,115 315,107 325,107" fill="#34495e"/>
+
+  <path d="M520 90 L520 110 L395 135" stroke="#34495e" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="392,137 400,132 399,142" fill="#34495e"/>
+
+  <!-- Alt: Performans ve Optimizasyon -->
+  <rect x="200" y="230" width="240" height="50" rx="10" fill="#2ecc71" opacity="0.75" filter="url(#shadowLight)"/>
+  <text x="320" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Performans</text>
+  <text x="320" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f8f0">Izgara Hücreleri + O(n²) Azaltma</text>
+
+  <!-- Merkezden alt kutuya ok -->
+  <path d="M320 180 L320 220" stroke="#34495e" stroke-width="2" fill="none"/>
+  <polygon points="320,225 315,217 325,217" fill="#34495e"/>
+
+  <!-- Sağ alt: Görsel Efektler -->
+  <rect x="470" y="230" width="130" height="50" rx="10" fill="#e74c3c" opacity="0.7" filter="url(#shadowLight)"/>
+  <text x="535" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Görsel Efektler</text>
+  <text x="535" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fdecea">Additive Blending</text>
+
+  <!-- Sol alt: Çarpışma -->
+  <rect x="40" y="230" width="130" height="50" rx="10" fill="#1abc9c" opacity="0.7" filter="url(#shadowLight)"/>
+  <text x="105" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Çarpışma</text>
+  <text x="105" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8faf5">Zemin + Sönümlü Sekme</text>
+
+  <!-- Alt kutular arası bağlantılar -->
+  <path d="M170 255 L200 255" stroke="#34495e" stroke-width="1.5" fill="none"/>
+  <polygon points="205,255 197,251 197,259" fill="#34495e"/>
+
+  <path d="M440 255 L470 255" stroke="#34495e" stroke-width="1.5" fill="none"/>
+  <polygon points="475,255 467,251 467,259" fill="#34495e"/>
+
+  <!-- Küçük parçacık noktaları (dekoratif) -->
+  <circle cx="70" cy="200" r="3" fill="#3498db" opacity="0.6"/>
+  <circle cx="85" cy="210" r="2" fill="#3498db" opacity="0.5"/>
+  <circle cx="95" cy="195" r="4" fill="#3498db" opacity="0.4"/>
+  <circle cx="550" cy="200" r="3" fill="#e67e22" opacity="0.6"/>
+  <circle cx="565" cy="208" r="2" fill="#e67e22" opacity="0.5"/>
+  <circle cx="575" cy="195" r="4" fill="#e67e22" opacity="0.4"/>
+  <circle cx="300" cy="290" r="3" fill="#95a5a6" opacity="0.5"/>
+  <circle cx="315" cy="298" r="2" fill="#95a5a6" opacity="0.4"/>
+  <circle cx="330" cy="288" r="4" fill="#95a5a6" opacity="0.3"/>
+</svg>

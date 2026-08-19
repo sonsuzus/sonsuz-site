@@ -8,9 +8,13 @@ tags:
   - Python
   - PIP
   - Paket Yönetimi
+image: /img/python-paket-yonetimi-96.png
 ---
 
 Bir projede HTTP isteği göndermek, Excel dosyası okumak veya görsel işlemek istediğinizi düşünün. Bunların tamamını sıfırdan geliştirmek mümkün olsa da pek mantıklı değildir. Python modülleri ve paket yönetimi, başkalarının test edilmiş çözümlerini projemize güvenli ve düzenli biçimde dahil etmemizi sağlar. Böylece enerjimizi tekerleği yeniden icat etmeye değil, gerçekten özgün problemlere ayırabiliriz.
+
+![python-paket-yonetimi-96](/img/python-paket-yonetimi-96.svg)
+
 ``
 ## Modül, paket ve kütüphane nedir?
 

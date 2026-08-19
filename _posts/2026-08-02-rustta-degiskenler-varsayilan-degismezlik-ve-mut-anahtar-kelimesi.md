@@ -8,7 +8,11 @@ tags:
   - Rust
   - değişkenler
   - mutability
+image: /img/rustta-degiskenler-varsayilan-73.png
 ---
+
+![rustta-degiskenler-varsayilan-73](/img/rustta-degiskenler-varsayilan-73.svg)
+
 
 Rust’ta bir değişken tanımladığınızda, derleyici onu varsayılan olarak değişmez yani salt okunur kabul eder. İlk bakışta “Değişken değişmeyecekse neden adı değişken?” diye düşünebilirsiniz. Rust’ın cevabı nettir: Bir değerin değişmesi mümkün olabilir, fakat bu yetki açıkça verilmelidir. Böylece kodun hangi noktalarında durum değişikliği yaşanabileceği görünür hâle gelir ve sürprizlerin yerini bilinçli tercihler alır.
 

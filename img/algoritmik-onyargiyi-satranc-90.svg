@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dceeff"/>
+      <stop offset="1" stop-color="#e8f3df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="591" cy="42" r="78" fill="#d9f0e5" opacity="0.52"/>
+  <circle cx="51" cy="294" r="77" fill="#dcecff" opacity="0.58"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355168">Aynı Kural, Farklı Başlangıç</text>
+
+  <!-- Left panel: unequal board -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="62" width="184" height="202" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426078">Başlangıç koşulları</text>
+  <rect x="48" y="103" width="144" height="112" rx="10" fill="url(#board)" stroke="#b7cfe1"/>
+
+  <!-- chess grid -->
+  <g>
+    <rect x="48" y="103" width="36" height="28" fill="#edf6df"/>
+    <rect x="120" y="103" width="36" height="28" fill="#edf6df"/>
+    <rect x="84" y="131" width="36" height="28" fill="#edf6df"/>
+    <rect x="156" y="131" width="36" height="28" fill="#edf6df"/>
+    <rect x="48" y="159" width="36" height="28" fill="#edf6df"/>
+    <rect x="120" y="159" width="36" height="28" fill="#edf6df"/>
+    <rect x="84" y="187" width="36" height="28" fill="#edf6df"/>
+    <rect x="156" y="187" width="36" height="28" fill="#edf6df"/>
+    <path d="M84 103V215 M120 103V215 M156 103V215 M48 131H192 M48 159H192 M48 187H192" stroke="#c5dae5" stroke-width="1"/>
+  </g>
+
+  <!-- rich pieces -->
+  <g fill="#527ca5" filter="url(#smallShadow)">
+    <circle cx="66" cy="120" r="7"/>
+    <path d="M64 128h4l4 12H60z"/>
+    <circle cx="102" cy="120" r="7"/>
+    <path d="M100 128h4l4 12H96z"/>
+    <path d="M132 115h12l-2 7 5 8h-18l5-8z"/>
+    <rect x="131" y="130" width="14" height="8" rx="2"/>
+    <circle cx="174" cy="120" r="7"/>
+    <path d="M172 128h4l4 12h-12z"/>
+    <circle cx="66" cy="176" r="7"/>
+    <path d="M64 184h4l4 12H60z"/>
+  </g>
+
+  <!-- limited pieces -->
+  <g fill="#d88474" filter="url(#smallShadow)">
+    <circle cx="102" cy="176" r="7"/>
+    <path d="M100 184h4l4 12H96z"/>
+    <circle cx="138" cy="176" r="7"/>
+    <path d="M136 184h4l4 12h-12z"/>
+  </g>
+  <text x="63" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527ca5">Grup A</text>
+  <text x="137" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c36f62">Grup B</text>
+  <text x="48" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8393">Geçmiş veri farkı</text>
+
+  <!-- arrow 1 -->
+  <path d="M219 157 H257" fill="none" stroke="#7c98aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="264,157 254,151 254,163" fill="#7c98aa"/>
+
+  <!-- Rule engine -->
+  <g filter="url(#shadow)">
+    <rect x="272" y="89" width="126" height="142" rx="18" fill="#fffdf8"/>
+  </g>
+  <rect x="290" y="108" width="90" height="27" rx="8" fill="#e7eff9"/>
+  <text x="335" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426078">Kural motoru</text>
+  <path d="M296 150 H374" stroke="#bdd0dc" stroke-width="1.5"/>
+  <circle cx="303" cy="165" r="4" fill="#7ea5c7"/>
+  <text x="314" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c7d">Gelir eşiği</text>
+  <circle cx="303" cy="190" r="4" fill="#7ea5c7"/>
+  <text x="314" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c7d">Geçmiş: 24 ay</text>
+  <text x="335" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8796a0">Herkese aynı</text>
+
+  <!-- arrow 2 -->
+  <path d="M405 157 H442" fill="none" stroke="#7c98aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="449,157 439,151 439,163" fill="#7c98aa"/>
+
+  <!-- outcomes -->
+  <g filter="url(#shadow)">
+    <rect x="457" y="62" width="155" height="202" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="477" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426078">Karar sonuçları</text>
+
+  <rect x="477" y="105" width="115" height="43" rx="11" fill="#daf0e1"/>
+  <circle cx="495" cy="126" r="10" fill="#77b48b"/>
+  <path d="M490 126l4 4 7-8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="515" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47765a">Kabul</text>
+  <text x="515" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f806c">Grup A yüksek</text>
+
+  <rect x="477" y="161" width="115" height="43" rx="11" fill="#fde1dc"/>
+  <circle cx="495" cy="182" r="10" fill="#d77c70"/>
+  <path d="M491 178l8 8m0-8l-8 8" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="515" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a95850">Ret</text>
+  <text x="515" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d6e68">Grup B yüksek</text>
+
+  <path d="M477 222 H592" stroke="#d6e1e7" stroke-width="1"/>
+  <text x="534" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667f8e">Oranları denetle</text>
+
+  <!-- audit loop -->
+  <path d="M535 270 C535 294 379 301 335 258" fill="none" stroke="#9bb7a1" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="332,251 342,257 333,263" fill="#9bb7a1"/>
+  <rect x="245" y="276" width="154" height="25" rx="12" fill="#e4f1e5" opacity="0.95"/>
+  <text x="322" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#52795c">Denetim ve itiraz</text>
+</svg>

@@ -8,6 +8,7 @@ tags:
   - parçacık sistemi
   - fizik motoru
   - akışkan simülasyonu
+image: /img/parcaciklardan-akiskanlara-gercek-89.png
 ---
 
 Bir avuç noktanın su gibi akmasını, ateş gibi yükselmesini veya duman gibi havada süzülmesini sağlamak ilk bakışta büyücülük gibi görünebilir. Oysa gerçek zamanlı akışkan simülasyonlarının temelinde parçacıklar, kuvvetler ve her karede tekrarlanan birkaç fizik hesabı bulunur. Tam ölçekli bilimsel doğruluk yerine görsel inandırıcılığı hedefleyerek tarayıcıda bile çalışan eğlenceli bir mini fizik motoru geliştirebiliriz.
@@ -39,6 +40,9 @@ Aynı motoru kullanıp kuvvetleri ve görsel özellikleri değiştirerek üç fa
 | Hareket | Yoğun ve yapışkan | Hızlı ve titreşimli | Yavaş ve dağınık |
 | Görünüm | Mavi, yüksek opaklık | Sarıdan kırmızıya | Gri, giderek saydam |
 | Çarpışma | Zemin ve kaplarla önemli | Genellikle gereksiz | Genellikle gereksiz |
+
+![parcaciklardan-akiskanlara-gercek-89](/img/parcaciklardan-akiskanlara-gercek-89.svg)
+
 
 Su için yerçekimi, yüzey çarpışmaları ve komşu parçacıklar arasında itme kuvveti gerekir. Basitleştirilmiş basınç kuvveti, iki parçacık arasındaki uzaklık $r$ etkileşim yarıçapı $h$ değerinden küçükse uygulanabilir:
 

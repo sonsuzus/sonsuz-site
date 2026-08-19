@@ -8,9 +8,13 @@ tags:
   - sürü zekâsı
   - boids
   - simülasyon
+image: /img/suru-zekasi-simulasyonu-67.png
 ---
 
 Gökyüzünde aynı anda yön değiştiren kuşlar veya suda tek bir canlıymış gibi ilerleyen balıklar merkezi bir komut sistemine sahip değildir. Buna rağmen ortaya son derece düzenli ve karmaşık hareketler çıkar. Sürü zekâsı simülasyonu, her bireye birkaç basit kural vererek bu şaşırtıcı davranışları bilgisayar ortamında yeniden üretmemizi sağlar.
+
+![suru-zekasi-simulasyonu-67](/img/suru-zekasi-simulasyonu-67.svg)
+
 ``
 
 ## Sürü zekâsı nedir?

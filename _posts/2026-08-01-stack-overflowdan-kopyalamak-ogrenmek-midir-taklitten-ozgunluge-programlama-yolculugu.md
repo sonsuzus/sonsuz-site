@@ -8,6 +8,7 @@ tags:
   - programlama öğrenme
   - Stack Overflow
   - yazılım pedagojisi
+image: /img/stack-overflowdan-kopyalamak-59.png
 ---
 
 Bir hata mesajını arama motoruna yapıştırıp Stack Overflow’daki en yüksek oylu cevabı koda eklemek, yazılımcıların gizli kabul töreni gibidir. Kod çalışınca kısa süreliğine dâhi hissederiz; fakat aynı sorun ertesi gün geri döndüğünde büyü bozulur. Öyleyse kopyalamak gerçekten öğrenmek midir, yoksa yalnızca çalışan bir sonuca ulaşmanın hızlı yolu mudur?
@@ -34,6 +35,9 @@ Bu denklemde yalnızca taklit varsa sonuç öğrenme değil, geçici bağımlıl
 | Kodu satır satır açıklamak | Daha fazla zaman alır | Kavramsal model oluşur |
 | Örneği değiştirip denemek | Yeni hatalar çıkarabilir | Bilginin sınırları keşfedilir |
 | Çözümü sıfırdan yeniden yazmak | Başlangıçta zordur | Hatırlama ve transfer güçlenir |
+
+![stack-overflowdan-kopyalamak-59](/img/stack-overflowdan-kopyalamak-59.svg)
+
 
 Buradaki kritik kavram **transfer**dir: Öğrenilen bilginin farklı bir probleme uygulanabilmesi. Bir Stack Overflow cevabını yalnızca kendi bağlamında kullanabiliyorsanız çözümü edinmiş, fakat ilkeyi öğrenmemiş olabilirsiniz.
 

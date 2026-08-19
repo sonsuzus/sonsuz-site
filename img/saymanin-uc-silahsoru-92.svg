@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB3BA"/>
+      <stop offset="100%" stop-color="#FF8A94"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BAFFC9"/>
+      <stop offset="100%" stop-color="#8CE99A"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BAE1FF"/>
+      <stop offset="100%" stop-color="#85C7F2"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFBA"/>
+      <stop offset="100%" stop-color="#FFE66D"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8BAFF"/>
+      <stop offset="100%" stop-color="#D28CEE"/>
+    </linearGradient>
+    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD4BA"/>
+      <stop offset="100%" stop-color="#F7B985"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Saymanın Üç Silahşörü</text>
+
+  <!-- Merkez düğüm: Kombinatorik -->
+  <rect x="255" y="120" width="130" height="44" rx="12" fill="url(#g1)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#5c1a1a">Kombinatorik</text>
+
+  <!-- Çarpma kuralı (üst) -->
+  <rect x="255" y="52" width="130" height="36" rx="10" fill="url(#g4)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5c4a00">Çarpma Kuralı</text>
+  <!-- Ok: Çarpma Kuralı -> Kombinatorik -->
+  <path d="M320,88 L320,116" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="314,112 320,124 326,112" fill="#7f8c8d"/>
+
+  <!-- Permütasyon (sol) -->
+  <rect x="55" y="190" width="130" height="44" rx="12" fill="url(#g2)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="120" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5c2a">Permütasyon</text>
+  <text x="120" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a5c2a">Sıra önemli</text>
+  <!-- Ok: Kombinatorik -> Permütasyon -->
+  <path d="M255,142 L190,190" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="196,182 184,194 198,196" fill="#7f8c8d"/>
+
+  <!-- Kombinasyon (sağ) -->
+  <rect x="455" y="190" width="130" height="44" rx="12" fill="url(#g3)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="520" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a5c">Kombinasyon</text>
+  <text x="520" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a3a5c">Sıra önemsiz</text>
+  <!-- Ok: Kombinatorik -> Kombinasyon -->
+  <path d="M385,142 L450,190" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="444,182 456,194 442,196" fill="#7f8c8d"/>
+
+  <!-- Katalan Sayıları (alt) -->
+  <rect x="255" y="190" width="130" height="44" rx="12" fill="url(#g5)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a1a5c">Katalan Sayıları</text>
+  <text x="320" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a1a5c">Yapısal kısıt</text>
+  <!-- Ok: Kombinatorik -> Katalan -->
+  <path d="M320,164 L320,186" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="314,182 320,194 326,182" fill="#7f8c8d"/>
+
+  <!-- Olasılık (sağ alt) -->
+  <rect x="455" y="260" width="130" height="40" rx="10" fill="url(#g6)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="520" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5c2a1a">Olasılık</text>
+  <!-- Ok: Kombinasyon -> Olasılık -->
+  <path d="M520,234 L520,256" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="514,252 520,264 526,252" fill="#7f8c8d"/>
+
+  <!-- Formül etiketleri -->
+  <text x="120" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">P(n,r) = n!/(n-r)!</text>
+  <text x="520" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">C(n,r) = n!/(r!(n-r)!)</text>
+  <text x="320" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">C(n) = (1/(n+1))·C(2n,n)</text>
+
+  <!-- Örnekler -->
+  <text x="120" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#777">Yarış dereceleri</text>
+  <text x="520" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#777">Komite seçimi</text>
+  <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#777">Dengeli parantezler</text>
+
+  <!-- Olasılık formülü -->
+  <text x="520" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#777">P(A) = |A| / |Ω|</text>
+
+  <!-- Soru akışı (alt) -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">Önce sıra mı? Sonra tekrar mı? Sonra kısıt mı?</text>
+</svg>

@@ -8,7 +8,11 @@ tags:
   - tip güvenliği
   - fonksiyonlar
   - modüler programlama
+image: /img/fonksiyonlarda-tip-belirtimiyle-92.png
 ---
+
+![fonksiyonlarda-tip-belirtimiyle-92](/img/fonksiyonlarda-tip-belirtimiyle-92.svg)
+
 
 Bir fonksiyonun yalnızca ne yaptığını değil, hangi verileri kabul edip hangi türde sonuç ürettiğini bilmek, yazılım geliştirmeyi tahmin oyunundan çıkarır. Parametre ve dönüş tipi belirtimleri; modüller arasındaki sözleşmeyi görünür kılar, hataları erkenden yakalar ve kod tamamlama araçlarını daha kullanışlı hâle getirir. Kısacası tipler, fonksiyonların kapısındaki “Giriş şartları ve çıkış garantisi” tabelasıdır.
 
