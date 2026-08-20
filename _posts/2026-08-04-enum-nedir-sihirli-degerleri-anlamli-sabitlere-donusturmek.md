@@ -8,6 +8,7 @@ tags:
   - enum
   - veri yapıları
   - temiz kod
+toc: true
 ---
 
 Bir siparişin durumunu `1`, kullanıcı rolünü `"A"`, haftanın gününü ise `4` ile temsil ettiğinizi düşünün. Bu değerler çalışır; fakat kodu aylar sonra okuyan geliştirici için küçük bir bilmeceye dönüşür: “1 hazırlanıyor mu, kargoda mı?” Enum, ilişkili sabitleri anlamlı isimlerden oluşan tek bir tür altında toplayarak bu bilmeceleri ortadan kaldırır.

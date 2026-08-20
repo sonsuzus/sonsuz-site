@@ -8,6 +8,7 @@ tags:
   - git
   - self-hosted
   - devops
+toc: true
 ---
 
 GitHub, açık kaynak dünyasının kalabalık meydanı olabilir; ancak bütün kodlarımızı tek bir ekosisteme emanet etmek zorunda değiliz. Gizlilik, maliyet, kurum politikaları, çevrim dışı çalışma veya eğitim ihtiyaçları nedeniyle kendi Git platformumuzu barındırabiliriz. GitLab ve Gitea gibi çözümler, sıradan bir bulut sunucusunu bağımsız bir yazılım geliştirme merkezine dönüştürür.

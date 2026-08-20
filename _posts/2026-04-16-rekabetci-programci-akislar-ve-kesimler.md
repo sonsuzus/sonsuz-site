@@ -28,6 +28,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Bu bölümde iki temel soru üzerine yoğunlaşıyoruz:

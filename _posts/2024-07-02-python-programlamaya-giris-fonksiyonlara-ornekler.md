@@ -9,6 +9,7 @@ tags:
   - fonksiyon
 redirect_from:
   - /posts/python-programlamaya-giris-fonksiyonlara-ornekler/
+toc: true
 ---
 
 

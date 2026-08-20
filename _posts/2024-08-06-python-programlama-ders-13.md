@@ -14,6 +14,7 @@ tags:
   - programlama
 redirect_from:
   - /posts/python-programlama-ders-13/
+toc: true
 ---
 
 

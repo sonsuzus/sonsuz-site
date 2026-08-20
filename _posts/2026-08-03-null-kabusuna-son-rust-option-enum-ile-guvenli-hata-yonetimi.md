@@ -9,6 +9,7 @@ tags:
   - option
   - hata yönetimi
 image: /img/null-kabusuna-son-69.png
+toc: true
 ---
 
 Bir nesnenin var olduğunu düşünerek kod yazarsınız, uygulamayı çalıştırırsınız ve aniden meşhur “null reference” hatasıyla karşılaşırsınız. Rust, bu sürprizi çalışma zamanına bırakmak yerine bir değerin yokluğunu `Option` enum’u ile açıkça modellememizi ister. Böylece “Belki vardır, belki yoktur” ihtimali, derleyicinin denetleyebildiği güvenli bir tipe dönüşür.

@@ -12,6 +12,7 @@ tags:
   - fonksiyon
 redirect_from:
   - /posts/js-tarih-ve-zaman/
+toc: true
 ---
 
 **[Javascript date](https://program.sonsuz.us/search.html?q=javascript%20date)** nesnesi ile tarayıcının o anki tarih ve saat bilgisini alabiliriz.

@@ -8,6 +8,7 @@ tags:
   - git
   - github
   - versiyon kontrolü
+toc: true
 ---
 
 Bir projeyi yalnızca kendi bilgisayarında tutmak, bütün yumurtaları aynı sepete koymaya benzer. Git’in uzak depo mekanizması sayesinde kodlar GitHub, GitLab veya Bitbucket gibi servislerde saklanabilir; ekip üyeleri aynı proje üzerinde çalışabilir ve yerel değişiklikler dış dünyayla paylaşılabilir. Bu süreçte `clone`, `remote`, `fetch`, `pull` ve `push` komutları başrolü üstlenir.

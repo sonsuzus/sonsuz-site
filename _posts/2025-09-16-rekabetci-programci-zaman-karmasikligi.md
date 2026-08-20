@@ -22,6 +22,7 @@ tags:
   - kitap
 redirect_from:
   - /posts/rekabetci-programci-zaman-karmasikligi/
+toc: true
 ---
 
 

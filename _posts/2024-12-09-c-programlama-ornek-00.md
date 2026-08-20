@@ -11,6 +11,7 @@ tags:
   - örnek
 redirect_from:
   - /posts/c-programlama-ornek-00/
+toc: true
 ---
 
 

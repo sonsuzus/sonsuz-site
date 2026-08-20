@@ -12,6 +12,7 @@ tags:
   - ders
 redirect_from:
   - /posts/python-programlama-ders-03/
+toc: true
 ---
 
 

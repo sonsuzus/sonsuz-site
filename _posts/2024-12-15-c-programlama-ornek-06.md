@@ -13,6 +13,7 @@ tags:
   - rekürsif
 redirect_from:
   - /posts/c-programlama-ornek-06/
+toc: true
 ---
 
 ## C Programlama Faktöriyel Hesaplama (Rekürsif fonksiyon)

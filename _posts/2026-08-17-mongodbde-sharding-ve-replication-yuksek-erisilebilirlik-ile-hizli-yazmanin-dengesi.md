@@ -8,6 +8,7 @@ tags:
   - mongodb
   - sharding
   - replication
+toc: true
 ---
 
 MongoDB, büyüyen uygulamalarda yalnızca daha fazla veri saklama problemiyle değil, aynı anda gelen binlerce isteği güvenle işleme problemiyle de karşılaşır. Bu noktada **replication**, sistemin ayakta kalmasını sağlayan güvenlik ağıdır; **sharding** ise veriyi ve yazma yükünü birden fazla makineye dağıtan ölçekleme motorudur. İkisini birlikte doğru tasarlamak, hem kesintilere dayanıklı hem de yüksek yazma kapasiteli bir mimari oluşturur.

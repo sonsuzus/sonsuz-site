@@ -8,6 +8,7 @@ tags:
   - promela
   - spin
   - model kontrolü
+toc: true
 ---
 
 Dağıtık sistemlerde ve eşzamanlı programlarda hata çoğu zaman kodun tek bir satırında değil, olayların talihsiz sıralanışında saklanır. Bir istemci mesajı erken gönderir, sunucu zaman aşımına düşer, iki iş parçacığı aynı kaynağı bekler ve sistem sessizce kilitlenir. Promela (Process Meta Language) ile çalışan Spin model denetleyicisi, bu tür senaryoları rastgele test etmeye bırakmak yerine sistemin olası durumlarını sistematik biçimde tarar. Böylece protokolünüzü henüz üretime taşımadan mantıksal açıdan sorgulayabilirsiniz.

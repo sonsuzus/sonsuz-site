@@ -9,6 +9,7 @@ tags:
   - satranç
   - insan-makine etkileşimi
 image: /img/yapay-zekaya-mat-59.png
+toc: true
 ---
 
 Bir insana karşı satranç kaybettiğimizde rakibimizin yüzündeki ifadeyi, hamleler arasındaki tereddüdü ve zafer sevincini görürüz. Yapay zekâya yenildiğimizdeyse karşımızda sevinen biri yoktur; yalnızca soğuk bir değerlendirme puanı ve kaçırdığımız hamleyi gösteren acımasız bir ok vardır. Buna rağmen yenilgi bazen daha ağır gelir. Çünkü makine bizi küçümsemese bile kendi zihnimiz bunu başarıyla yapabilir.

@@ -13,6 +13,7 @@ tags:
   - else
 redirect_from:
   - /posts/js-kosul-ifadeleri/
+toc: true
 ---
 
 Javascript uygulamalarında belli bir duruma bağlı olan farklı kod bloklarını çalıştırmak istediğimizde if-else ve else-if bloklarını kullanırız.

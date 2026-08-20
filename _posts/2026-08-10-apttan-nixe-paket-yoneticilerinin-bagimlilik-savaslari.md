@@ -11,6 +11,7 @@ tags:
   - bağımlılık yönetimi
   - linux
 image: /img/apttan-nixe-paket-71.png
+toc: true
 ---
 
 Bir yazılımı çalıştırmak eskiden “dosyayı kopyala ve aç” kadar basitti. Sonra kütüphaneler, sürüm beklentileri, derleyiciler ve işletim sistemi paketleri sahneye çıktı. Bugün bir projenin çalışması için yalnızca kodun değil, kodun konuştuğu bütün çevrenin de doğru biçimde kurulması gerekir. Paket yöneticilerinin tarihi, aslında bu görünmez bağımlılık ağını evcilleştirme girişimlerinin kısa ama oldukça hareketli tarihidir.

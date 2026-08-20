@@ -8,6 +8,7 @@ tags:
   - typescript
   - javascript
   - tip güvenliği
+toc: true
 ---
 
 TypeScript kullanırken bazen elimizdeki değerin tipini gerçekten bilemeyiz. Bir API cevabı, kullanıcı girdisi veya eski bir JavaScript kütüphanesi her şeyi döndürebilir. İşte bu belirsizlik karşısında `any` ve `unknown` sahneye çıkar. İkisi de “Bu değerin tipi şimdilik belli değil” diyebilir; ancak biri güvenlik kapısını açık bırakırken diğeri kimlik kontrolü yapmadan kimseyi içeri almaz.

@@ -8,6 +8,7 @@ tags:
   - oyun teorisi
   - minimax
   - algoritma
+toc: true
 ---
 
 Satrançta rakibin vezirini tehdit ettiğinde neden hemen sevinmemelisin? Çünkü rakibin de plan yapıyor! Oyun teorisi, kararlarımızın sonucunun yalnızca bize değil, başka oyuncuların seçimlerine de bağlı olduğu durumları matematiksel olarak inceler. Minimax algoritması ise bu fikirleri bilgisayarların anlayabileceği bir oyun ağacına dönüştürerek mümkün olan en güvenli hamleyi seçmelerini sağlar.

@@ -8,6 +8,7 @@ tags:
   - rnn
   - lstm
   - derin öğrenme
+toc: true
 ---
 
 Bir cümleyi anlamak, yalnızca son kelimeye bakmakla mümkün değildir; önceki kelimeleri de hatırlamak gerekir. Zaman serileri, borsa fiyatları, ses sinyalleri ve sensör kayıtları da benzer biçimde geçmişten izler taşır. Tekrarlayan Sinir Ağları, yani RNN’ler, bu ardışık bağı yakalamak için geliştirilmiş bellekli mimarilerdir. LSTM ise RNN’in unutkanlığını azaltan daha gelişmiş kuzenidir.

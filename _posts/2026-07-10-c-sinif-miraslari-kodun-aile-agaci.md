@@ -10,6 +10,7 @@ tags:
   - oop
   - miras
   - nesne yönelimli programlama
+toc: true
 ---
 
 C++’ta sınıf mirası, bir sınıfın başka bir sınıftan özellik ve davranış devralmasını sağlayan güçlü bir nesne yönelimli programlama mekanizmasıdır. Kısaca: “Zaten yazdığım kodu neden tekrar yazayım?” sorusuna C++’ın verdiği cevaptır. Bir oyun düşün: tüm karakterlerin adı, canı ve hareket etme davranışı var; ama büyücü ayrıca büyü yapıyor, savaşçı kılıç sallıyor. İşte miras, bu ortak ve özel tarafları düzenli biçimde ayırmamıza yardım eder.

@@ -12,6 +12,7 @@ tags:
   - dosya
 redirect_from:
   - /posts/python-programlama-ders-10/
+toc: true
 ---
 
 

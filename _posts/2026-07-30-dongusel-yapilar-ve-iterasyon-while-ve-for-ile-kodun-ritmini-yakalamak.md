@@ -9,6 +9,7 @@ tags:
   - iterasyon
   - programlama temelleri
 image: /img/dongusel-yapilar-ve-94.png
+toc: true
 ---
 
 Programlamada aynı işlemi defalarca elle yazmak, yüz tabaklı bir sofrada her tabağı ayrı tarifle yıkamaya benzer. Döngüler bu zahmeti ortadan kaldırır: Bir koşul geçerli olduğu sürece veya bir koleksiyondaki bütün elemanlar işlenene kadar aynı kod bloğunu tekrar çalıştırırlar. Böylece daha kısa, okunabilir ve ölçeklenebilir programlar oluşturabiliriz.

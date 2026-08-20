@@ -8,6 +8,7 @@ tags:
   - siber güvenlik
   - hashcat
   - john the ripper
+toc: true
 ---
 
 Parolalar çoğu sistemde doğrudan saklanmaz; bunun yerine tek yönlü bir fonksiyondan geçirilerek elde edilen özetler saklanır. Parola denetimi ya da kurtarma çalışmaları, tahmin edilen adayların özetlerini hesaplayıp kayıtlı değerle karşılaştırır. Hashcat ve John the Ripper bu işlemi hızlandıran güçlü araçlardır; ancak yalnızca sahibi olduğunuz veya test izni aldığınız sistemlerde kullanılmalıdır. Aksi hâlde eğitici görünen bir deneme, hukuki sonuçları olan yetkisiz erişime dönüşebilir.

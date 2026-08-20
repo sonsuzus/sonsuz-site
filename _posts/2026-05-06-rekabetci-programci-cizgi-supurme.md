@@ -24,6 +24,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 **Çizgi süpürme algoritmaları**, geometrik problemleri düzlemdeki noktaları temsil eden **olaylar** kümesine dönüştürerek çözer. Olaylar $x$ veya $y$ koordinatına göre sıralanır ve soldan sağa (ya da aşağıdan yukarıya) sırayla işlenir; böylece iki boyutlu problem tek boyutlu bir taramaya indirgenir.

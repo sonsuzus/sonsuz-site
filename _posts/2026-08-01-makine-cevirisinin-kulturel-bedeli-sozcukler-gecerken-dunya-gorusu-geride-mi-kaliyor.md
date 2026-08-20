@@ -9,6 +9,7 @@ tags:
   - dilsel görecelik
   - yapay zekâ
 image: /img/makine-cevirisinin-kulturel-59.png
+toc: true
 ---
 
 ![makine-cevirisinin-kulturel-59](/img/makine-cevirisinin-kulturel-59.svg)

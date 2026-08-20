@@ -10,6 +10,7 @@ tags:
   - yönlendirme
   - otonom sistem
   - siber güvenlik
+toc: true
 ---
 
 İnternet, tek bir kurumun yönettiği dev bir ağ değildir; binlerce bağımsız ağın uzlaşarak oluşturduğu küresel bir ekosistemdir. Bir kullanıcının tarayıcısından çıkan paket, hedefe ulaşana kadar operatörler, bulut sağlayıcıları, üniversiteler ve içerik dağıtım ağları arasında dolaşabilir. Bu ağlar arası yol seçiminin temel dili ise **Border Gateway Protocol (BGP)**'dir. BGP, en kısa fiziksel yolu bulmaktan çok, ağların ticari ilişkilerini ve yönetim politikalarını dikkate alan bir rota müzakere sistemidir.

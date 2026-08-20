@@ -10,6 +10,7 @@ tags:
   - yazma
 redirect_from:
   - /posts/python-programlamaya-giris-20-dosya-okuma-ve-yazma/
+toc: true
 ---
 
 

@@ -9,6 +9,7 @@ tags:
   - localstorage
   - fetch apı
 image: /img/localstorage-ve-fetch-23.png
+toc: true
 ---
 
 ![localstorage-ve-fetch-23](/img/localstorage-ve-fetch-23.svg)

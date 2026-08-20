@@ -10,6 +10,7 @@ tags:
   - dil
 redirect_from:
   - /posts/euphoria-programlama/
+toc: true
 ---
 
 [Euphoria](https://program.sonsuz.us/search.html?q=euphoria), Rob Craig tarafından geliştirilmiş, öğrenmesi kolay ve güçlü bir betik dilidir. Özellikle [hızlı prototipleme](https://program.sonsuz.us/search.html?q=h%C4%B1zl%C4%B1%20prototipleme), eğitim amaçlı uygulamalar ve otomasyon görevleri için tasarlanmıştır. Söz diziminin sadeliği, yeni başlayanlar için bile kısa sürede temel kavramları öğrenmeyi mümkün kılar. Dinamik tiplendirme ve otomatik bellek yönetimi gibi özellikleri sayesinde, geliştiriciler karmaşık detaylarla uğraşmak yerine programın mantığına odaklanabilirler.

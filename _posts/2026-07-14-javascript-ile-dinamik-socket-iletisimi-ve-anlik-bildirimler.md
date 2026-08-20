@@ -9,6 +9,7 @@ tags:
   - socket.io
   - websocket
   - anlık-bildirim
+toc: true
 ---
 
 Bir forumda yeni cevap geldiğinde sayfayı yenilemeden bildirim almak ya da mesajlaşma uygulamasında karşı tarafın yazdığını anında görmek artık lüks değil, kullanıcı beklentisi. JavaScript ile dinamik socket iletişimi kurarak istemci ve sunucu arasında sürekli açık kalan, düşük gecikmeli bir kanal oluşturabiliriz. Amaç basit: kullanıcı beklemeden, sistem bağırmadan, veri doğru zamanda doğru kişiye ulaşsın.

@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - perceptron
   - makine öğrenmesi
+toc: true
 ---
 
 İnsan beyni, milyarlarca nöronun elektriksel ve kimyasal sinyaller aracılığıyla haberleştiği olağanüstü bir bilgi işleme sistemidir. Yapay zekânın ilk araştırmacıları da “Bir nöronun karar verme mekanizmasını matematikle taklit edebilir miyiz?” sorusundan yola çıktı. Bu merak, modern sinir ağlarının mütevazı fakat tarihî atası olan **algılayıcıyı**, yani perceptronu ortaya çıkardı.

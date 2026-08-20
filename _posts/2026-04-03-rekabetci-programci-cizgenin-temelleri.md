@@ -19,6 +19,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Çoğu kodlama sorusu bir çizge problemi olarak modellenip uygun bir çizge algoritmasıyla çözülebilir. Tipik bir örnek, bir ülkedeki yolları ve şehirleri temsil eden ağdır. Bazen çizge sorunun içinde gizli olduğundan fark edilmesi güçleşir. Bu bölümde çizgelerle ilgili temel kavramları ele alıp algoritmalarda çizgeleri göstermenin farklı yollarını inceleyeceğiz.

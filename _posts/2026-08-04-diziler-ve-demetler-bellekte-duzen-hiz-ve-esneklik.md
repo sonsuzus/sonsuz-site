@@ -8,6 +8,7 @@ tags:
   - arrays
   - tuples
   - bellek yönetimi
+toc: true
 ---
 
 Bir alışveriş sepetinde aynı türden ürünleri yan yana dizmek kolaydır; fakat ürünün adı, fiyatı ve stok durumu gibi farklı bilgileri tek paket hâlinde taşımak başka bir düzen gerektirir. Programlamada dinamik diziler aynı türdeki elemanları büyüyebilen bir koleksiyonda saklarken demetler, farklı türdeki belirli sayıda değeri sıralı bir bütün olarak tutar. Aralarındaki asıl fark yalnızca sözdiziminde değil, belleğin nasıl ayrıldığı ve veriye nasıl erişildiğindedir.

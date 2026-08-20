@@ -9,6 +9,7 @@ tags:
   - veri yapıları
   - dictionary ve set
 image: /img/python-sozlukleri-ve-93.png
+toc: true
 ---
 
 ![python-sozlukleri-ve-93](/img/python-sozlukleri-ve-93.svg)

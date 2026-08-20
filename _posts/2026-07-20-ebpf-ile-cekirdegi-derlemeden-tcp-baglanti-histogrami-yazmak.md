@@ -11,6 +11,7 @@ tags:
   - python
   - bcc
 image: /img/ebpf-ile-cekirdegi-59.png
+toc: true
 ---
 
 Linux çekirdeğinin içine küçük, güvenli ve olay odaklı programlar bırakabildiğinizi düşünün; üstelik kernel modülü yazmadan, sistemi yeniden başlatmadan ve çekirdeği yeniden derlemeden. İşte eBPF tam olarak bu büyülü tornavida. Bu yazıda gelen TCP bağlantı isteklerini anlık sayan ve saniyelik değerleri terminalde histogram olarak gösteren mini bir ağ trafiği gözlemcisi tasarlayacağız.

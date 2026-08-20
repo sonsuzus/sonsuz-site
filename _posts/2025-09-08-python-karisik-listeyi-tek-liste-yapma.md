@@ -12,6 +12,7 @@ tags:
   - fonksiyon
   - itertools
 image: /img/flatten_ozyinelemeli_karar_akisi.png
+toc: true
 ---
 
 Python'da programlama yaparken, bazen karşımıza iç içe geçmiş listeler, demetler (tuple), kümeler (set) ve hatta sözlükler (dictionary) gibi farklı veri tiplerini bir arada barındıran karmaşık veri yapıları çıkabilir. Bu tür bir yapıyı analiz etmek veya üzerinde işlem yapmak için genellikle onu "[düzleştirmek](https://program.sonsuz.us/search.html?q=düzleştirmek)", yani tek bir liste haline getirmek isteriz.

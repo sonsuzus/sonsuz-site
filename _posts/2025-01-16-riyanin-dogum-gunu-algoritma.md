@@ -12,6 +12,7 @@ tags:
 math: true
 redirect_from:
   - /posts/riyanin-dogum-gunu-algoritma/
+toc: true
 ---
 
 Problem: Madhav Riya’nın Doğum Günü Partisine gider. O bir inek olduğundan, bu yüzden hangi hediye hoşuna gideceği konusunda hiçbir fikri yoktur. Bu yüzden bir dizi tamsayıyı yanına alır. Dizi belirli bir düzene uyar. Dizinin ilk elemanı 1’dir. Dizinin ikinci elemanı 6 dır.

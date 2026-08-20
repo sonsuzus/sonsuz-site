@@ -8,6 +8,7 @@ tags:
   - nginx
   - reverse proxy
   - devops
+toc: true
 ---
 
 Modern bir web uygulaması çoğu zaman tek bir sunucudan ibaret değildir: arayüz, API, kimlik doğrulama ve dosya servisleri farklı süreçlerde hatta farklı makinelerde çalışabilir. Nginx reverse proxy, istemcinin tek bir alan adına yaptığı isteği uygun arka uç (backend) servisine ileterek bu karmaşıklığı görünmez kılar. Tarayıcı `example.com/api/users` adresini görür; Nginx ise isteği örneğin `localhost:3000` üzerindeki API uygulamasına taşır.

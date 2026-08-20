@@ -19,6 +19,7 @@ tags:
   - veri-yapisi
   - kodlama
   - kitap
+toc: true
 ---
 
 Bu bölümde iki temel çizge dolaşma algoritması ele alınacaktır: **derinlik öncelikli arama** (DFS) ve **genişlik öncelikli arama** (BFS). Her ikisinin de bir başlangıç noktası vardır ve başlangıç düğümünden ulaşılabilen tüm düğümleri gezerler. İki algoritma arasındaki fark, düğümleri dolaşma sırasıdır.

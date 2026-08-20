@@ -18,6 +18,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 [Sıralama](https://program.sonsuz.us/search.html?q=sıralama), temel algoritma sorularından biridir. Çoğu algoritmanın içeriğinde, veriyi sıralı halde işlemek daha kolay olduğu için sıralama bulunur. Örneğin "Bu dizide birbiriyle aynı iki eleman var mı?" sorusu sıralamayla çok kolay bir şekilde çözülebilir. Eğer dizi birbiriyle aynı iki eleman içeriyorsa, dizi sıralandıktan sonra bu elemanlar ardışık olacaktır.

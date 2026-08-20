@@ -10,6 +10,7 @@ tags:
   - arch linux
   - debian
   - açık kaynak
+toc: true
 ---
 
 Linux dünyasında “en iyi dağıtım hangisi?” sorusu, teknik bir öneri istemekten çok kimlik, alışkanlık ve değerler hakkında konuşma başlatır. Ubuntu kullanıcısı bilgisayarın işini kolaylaştırmasını beklerken, Arch kullanıcısı sistemin her vidasını tanımak isteyebilir; Debian kullanıcısı ise yıllarca değişmeden çalışan bir altyapıyı en büyük başarı sayabilir. Bu yüzden tartışmanın tek bir kazananı yoktur: “en iyi”, kullanıcının öncelik fonksiyonuna bağlıdır.

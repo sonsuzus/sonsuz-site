@@ -27,6 +27,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Bu bölümde yönlü çizgelerin iki türünden bahsedeceğiz:

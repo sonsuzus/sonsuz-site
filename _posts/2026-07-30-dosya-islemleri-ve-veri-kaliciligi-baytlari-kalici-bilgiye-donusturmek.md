@@ -8,6 +8,7 @@ tags:
   - dosya işlemleri
   - veri kalıcılığı
   - python
+toc: true
 ---
 
 Bir program çalışırken üretilen değişkenler çoğunlukla RAM üzerinde yaşar; program kapanınca da küçük bir vedalaşma töreni bile yapmadan kaybolur. Dosya işlemleri, dışarıdaki ham veriyi belleğe almayı ve işlenmiş sonuçları kalıcı depolamaya yazmayı sağlar. Böylece uygulamamız yalnızca “anı yaşayan” bir süreç olmaktan çıkar, geçmişini hatırlayan bir sisteme dönüşür.

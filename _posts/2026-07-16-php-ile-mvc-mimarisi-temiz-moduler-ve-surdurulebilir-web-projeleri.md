@@ -10,6 +10,7 @@ tags:
   - web geliştirme
   - mimari
 image: /img/php-ile-mvc-22.png
+toc: true
 ---
 
 PHP projeleri büyüdükçe en büyük düşman genellikle veritabanı sorgularının, HTML çıktısının ve iş kurallarının aynı dosyada çorba olmasıdır. MVC mimarisi tam da bu noktada sahneye çıkar: Model veriyi, View kullanıcı arayüzünü, Controller ise akışı yönetir. Böylece projeniz “çalışıyor ama dokunmayalım” seviyesinden “geliştirebiliriz, test edebiliriz, bakım yapabiliriz” seviyesine yükselir.

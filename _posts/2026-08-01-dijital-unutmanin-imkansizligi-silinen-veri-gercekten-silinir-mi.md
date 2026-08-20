@@ -9,6 +9,7 @@ tags:
   - dijital hafıza
   - veri güvenliği
 image: /img/dijital-unutmanin-imkansizligi-77.png
+toc: true
 ---
 
 Bir fotoğrafı sildiğimizde onun yok olduğuna inanmak isteriz. Çöp kutusu boşalır, dosya ekrandan kaybolur ve dijital dünya bize unutmuş gibi görünür. Oysa bilgisayarların “unutması”, insan hafızasındaki unutmaya pek benzemez. Çoğu zaman veri ortadan kaldırılmaz; yalnızca ona giden yol tabelası sökülür. Bu teknik ayrıntı, dijital çağın en ilginç felsefi sorularından birini doğurur: Hatırlanabilecek bir şey gerçekten unutulmuş sayılabilir mi?

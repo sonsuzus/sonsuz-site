@@ -9,6 +9,7 @@ tags:
   - teknoloji tarihi
   - frankenstein kompleksi
 image: /img/super-zeka-korkusunun-92.png
+toc: true
 ---
 
 ![super-zeka-korkusunun-92](/img/super-zeka-korkusunun-92.svg)

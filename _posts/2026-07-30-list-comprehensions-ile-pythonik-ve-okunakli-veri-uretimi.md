@@ -9,6 +9,7 @@ tags:
   - list comprehension
   - pythonik kod
 image: /img/list-comprehensions-ile-53.png
+toc: true
 ---
 
 ![list-comprehensions-ile-53](/img/list-comprehensions-ile-53.svg)

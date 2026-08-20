@@ -8,6 +8,7 @@ tags:
   - operatörler
   - programlama temelleri
   - ifadeler
+toc: true
 ---
 
 Bir programın karar vermesi, hesaplama yapması ve veriyi dönüştürmesi çoğunlukla operatörler sayesinde gerçekleşir. Fiyat hesaplayan bir e-ticaret uygulamasından oyuncunun canını kontrol eden bir oyuna kadar her yerde ifadelerle karşılaşırız. Operatörleri, veriler üzerinde çalışan küçük araçlar; ifadeleri ise bu araçlarla kurulan anlamlı cümleler gibi düşünebiliriz.

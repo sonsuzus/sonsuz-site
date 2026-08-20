@@ -14,6 +14,7 @@ tags:
   - süzme
 redirect_from:
   - /posts/sqlde-case-when-kullanimi/
+toc: true
 ---
 
 

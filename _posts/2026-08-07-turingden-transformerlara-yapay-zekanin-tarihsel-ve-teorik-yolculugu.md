@@ -9,6 +9,7 @@ tags:
   - alan turing
   - makine öğrenmesi
 image: /img/turingden-transformerlara-yapay-48.png
+toc: true
 ---
 
 ![turingden-transformerlara-yapay-48](/img/turingden-transformerlara-yapay-48.svg)

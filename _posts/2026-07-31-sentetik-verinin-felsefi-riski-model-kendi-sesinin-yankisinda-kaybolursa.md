@@ -8,6 +8,7 @@ tags:
   - sentetik veri
   - yapay zekâ
   - model çöküşü
+toc: true
 ---
 
 Bir yapay zekâ modelinin ürettiği metinler, görseller veya kodlar yeni modellerin eğitim verisine karıştığında tuhaf bir döngü başlar: Makine, dünyayı doğrudan gözlemlemek yerine kendi yankısını dinlemeye koyulur. İlk bakışta ucuz ve sınırsız görünen sentetik veri, kontrol edilmediğinde bilgi kirliliğini büyütebilir; istisnaları silebilir ve özgünlüğü istatistiksel bir ortalamaya dönüştürebilir.

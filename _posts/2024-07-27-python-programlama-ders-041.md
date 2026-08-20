@@ -14,6 +14,7 @@ tags:
   - for
 redirect_from:
   - /posts/python-programlama-ders-041/
+toc: true
 ---
 
 Kendi programlarımız içinde kullanabileceğimiz Python modülleri, oldukça

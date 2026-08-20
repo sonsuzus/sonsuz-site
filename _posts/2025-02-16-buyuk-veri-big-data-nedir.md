@@ -16,6 +16,7 @@ tags:
   - pandas
 redirect_from:
   - /posts/buyuk-veri-big-data-nedir/
+toc: true
 ---
 
 

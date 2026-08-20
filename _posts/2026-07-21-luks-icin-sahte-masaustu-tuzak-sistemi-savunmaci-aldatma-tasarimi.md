@@ -9,6 +9,7 @@ tags:
   - linux güvenliği
   - honeypot
 image: /img/luks-icin-sahte-54.png
+toc: true
 ---
 
 ![luks-icin-sahte-54](/img/luks-icin-sahte-54.svg)

@@ -8,6 +8,7 @@ tags:
   - git
   - branching
   - versiyon kontrolü
+toc: true
 ---
 
 Yeni bir özelliği denerken ana uygulamayı bozmak, çalışan motora tornavidayla yaklaşmaya benzer: Küçük bir değişiklik bütün sistemi durdurabilir. Git dalları sayesinde geliştiriciler ana kod tabanından bağımsız çalışma alanları oluşturabilir, deneylerini güvenle yapabilir ve yalnızca hazır olan değişiklikleri projeye ekleyebilir.

@@ -9,6 +9,7 @@ tags:
   - promise
   - asenkron programlama
 image: /img/javascript-promiselari-ile-82.png
+toc: true
 ---
 
 Bir API isteğinin ne zaman tamamlanacağını, dosyanın ne zaman okunacağını veya kullanıcının konum bilgisinin ne zaman geleceğini önceden bilemeyiz. JavaScript bu bekleme süresinde uygulamayı durdurmak yerine diğer işleri yürütür. Ancak sonuçları callback fonksiyonlarıyla takip etmeye çalışmak, kısa sürede girintilerle dolu bir “callback cehennemine” dönüşebilir. Promise nesneleri, gelecekte tamamlanacak işlemleri düzenli, zincirlenebilir ve güvenilir biçimde temsil ederek bu karmaşaya çözüm sunar.

@@ -8,6 +8,7 @@ tags:
   - rust
   - hashmap
   - sahiplik
+toc: true
 ---
 
 Bir telefon rehberinde kişileri sayfa sayfa aramak yerine isimlerini doğrudan yazarak numaralarına ulaştığınızı düşünün. Hash haritaları tam olarak bu fikri programlama dünyasına taşır: Veriler, anahtar ve değer çiftleri hâlinde saklanır. Rust’ın `HashMap` koleksiyonu ise bu pratik yapıyı dilin sahiplik, ödünç alma ve yaşam süresi kurallarıyla birleştirerek hem hızlı hem de güvenli veri yönetimi sunar.

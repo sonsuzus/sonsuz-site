@@ -8,6 +8,7 @@ tags:
   - programlama dili
   - lexer-parser
   - yorumlayıcı
+toc: true
 ---
 
 Bir programlama dili yapmak, bilgisayara yeni kelimeler öğretmekten çok daha fazlasıdır: Önce metni parçalara ayırır, sonra bu parçaların dilbilgisine uyup uymadığını denetler ve en sonunda anlamlarını çalıştırırsınız. Bu projede değişkenleri, aritmetik işlemleri, koşulları ve döngüleri destekleyen MiniLang adında küçük ama teorik olarak Turing tam bir dil tasarlayacağız.

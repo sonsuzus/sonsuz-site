@@ -8,6 +8,7 @@ tags:
   - rust
   - kontrol akışı
   - döngüler
+toc: true
 ---
 
 Bir programın karar verebilmesi ve tekrarlanan işleri otomatikleştirebilmesi, kontrol akışı yapıları sayesinde mümkündür. Rust; `if-else`, `loop`, `while` ve `for` yapılarını tanıdık bir söz dizimiyle sunarken ifade tabanlı yaklaşımı, güvenli tür sistemi ve döngü etiketleri gibi kendine özgü özelliklerle işleri daha kontrollü hâle getirir.

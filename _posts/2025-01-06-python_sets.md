@@ -10,6 +10,7 @@ tags:
   - set
 redirect_from:
   - /posts/python_sets/
+toc: true
 ---
 
 [Küme](https://program.sonsuz.us/search.html?q=k%C3%BCme), birden fazla değerin yer aldığı bir yapıdır. Küme içindeki verilerin aynı veri türünden olması gerekli değildir. Elemanlar düzenli değildir ve elemanlarda değişiklik yapılamaz. Küme oluşturmak için parantezler ({ }) veya set() fonksiyonu kullanılır.

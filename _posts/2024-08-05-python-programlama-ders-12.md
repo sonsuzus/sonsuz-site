@@ -12,6 +12,7 @@ tags:
   - küme
 redirect_from:
   - /posts/python-programlama-ders-12/
+toc: true
 ---
 
 

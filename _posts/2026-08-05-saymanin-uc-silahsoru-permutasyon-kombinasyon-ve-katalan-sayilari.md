@@ -9,6 +9,7 @@ tags:
   - olasılık
   - katalan-sayıları
 image: /img/saymanin-uc-silahsoru-92.png
+toc: true
 ---
 
 Bir kart destesini karıştırırken, takım kurarken veya parantezleri hatasız biçimde dizerken aslında aynı matematiksel soruyla karşılaşırız: Kaç farklı sonuç mümkündür? Kombinatorik bu soruyu sistematik biçimde yanıtlar; olasılık ise mümkün sonuçların içinden ilgilendiğimiz olayların payını hesaplar. Permütasyon, kombinasyon ve Katalan sayıları bu dünyada farklı kapıları açan üç güçlü anahtardır.

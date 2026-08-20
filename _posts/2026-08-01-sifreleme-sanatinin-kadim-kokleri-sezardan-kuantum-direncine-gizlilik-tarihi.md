@@ -9,6 +9,7 @@ tags:
   - siber güvenlik
   - kuantum bilişim
 image: /img/sifreleme-sanatinin-kadim-48.png
+toc: true
 ---
 
 Mahremiyet, akıllı telefonlarla ortaya çıkmış modern bir endişe değil. İnsanlar; savaş planlarını, ticari sırlarını ve kişisel düşüncelerini başkalarının meraklı gözlerinden korumaya binlerce yıldır çalışıyor. Kil tabletten bulut sunucusuna uzanan bu hikâyede araçlar değişse de temel soru aynı kaldı: Bir mesajı yalnızca doğru kişinin anlayabilmesini nasıl sağlarız?

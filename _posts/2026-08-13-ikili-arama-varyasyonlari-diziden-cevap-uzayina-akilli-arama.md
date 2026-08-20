@@ -10,6 +10,7 @@ tags:
   - binary search
   - optimizasyon
   - python
+toc: true
 ---
 
 İkili arama denince çoğu kişinin aklına sıralı bir dizide hedef sayıyı bulmak gelir. Oysa bu algoritmanın asıl süper gücü, yalnızca elemanları değil, **monotonik kararları** aramasıdır. Bir problemde “Bu cevap mümkün mü?” sorusuna verilen yanıt, belirli bir eşikten sonra sürekli evet ya da sürekli hayır oluyorsa, cevap uzayında ikili arama yapabiliriz. Böylece devasa olasılıkları logaritmik sayıda denemeyle küçültürüz.

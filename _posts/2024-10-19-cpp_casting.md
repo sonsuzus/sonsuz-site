@@ -9,6 +9,7 @@ tags:
   - veri türü
 redirect_from:
   - /posts/cpp_casting/
+toc: true
 ---
 
 

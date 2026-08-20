@@ -10,6 +10,7 @@ tags:
   - b-ağacı
   - sql
   - performans
+toc: true
 ---
 
 Bir veritabanı tablosunda milyonlarca kayıt varken `WHERE email = '...'` sorgusunun milisaniyeler içinde dönmesi sihir değildir; çoğu zaman arka planda çalışan bir B-ağacı indeksidir. İndeksler, kitabın sonundaki alfabetik dizin gibidir: Her sayfayı tek tek okumak yerine, aranan bilginin bulunduğu yere yönlendirir. Ancak her sütuna gelişigüzel indeks koymak da çözüm değildir; doğru indeks stratejisi, okuma performansı ile yazma maliyeti arasında dikkatli bir denge kurar.

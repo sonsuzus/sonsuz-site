@@ -9,6 +9,7 @@ tags:
   - tip güvenliği
   - type assertions
 image: /img/typescriptte-tip-zorlama-79.png
+toc: true
 ---
 
 TypeScript derleyicisi çoğu zaman değişkenlerin tipini başarıyla çıkarır; ancak DOM işlemleri, API yanıtları veya genel amaçlı kütüphaneler söz konusu olduğunda elindeki bilgi yetersiz kalabilir. Tip zorlama, yani *type assertion*, geliştiricinin “Bu verinin tipini senden daha iyi biliyorum” diyerek sorumluluğu devralmasıdır. Bu işlem genellikle `as` anahtar kelimesiyle yapılır; fakat adına rağmen veriyi çalışma zamanında gerçekten dönüştürmez.

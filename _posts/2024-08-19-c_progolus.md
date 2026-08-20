@@ -10,6 +10,7 @@ tags:
   - ide
 redirect_from:
   - /posts/c_progolus/
+toc: true
 ---
 
 

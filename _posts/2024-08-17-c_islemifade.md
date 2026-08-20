@@ -11,6 +11,7 @@ tags:
   - ifade
 redirect_from:
   - /posts/c_islemifade/
+toc: true
 ---
 
 ## İşlem satırı

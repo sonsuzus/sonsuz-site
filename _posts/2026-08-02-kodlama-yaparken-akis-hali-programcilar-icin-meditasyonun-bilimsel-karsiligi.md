@@ -8,6 +8,7 @@ tags:
   - akış hali
   - yazılım geliştirme
   - üretkenlik
+toc: true
 ---
 
 Bazen kod yazarken saatler dakikaya dönüşür; klavye sanki düşüncelerin uzantısı olur ve dış dünya sessize alınır. Psikolog Mihaly Csikszentmihalyi bu yoğun odaklanma, kontrol ve içsel tatmin deneyimini **akış hali** olarak tanımlar. Programcıların sıkça yaşadığı bu durum meditasyona benzese de mistik bir trans değil; dikkat, beceri ve geri bildirim arasındaki ölçülebilir dengenin sonucudur.

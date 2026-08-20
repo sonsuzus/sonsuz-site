@@ -8,6 +8,7 @@ tags:
   - blockchain
   - proof-of-work
   - python
+toc: true
 ---
 
 Blok zinciri çoğu zaman kripto paralarla özdeşleştirilse de temelinde oldukça anlaşılır bir fikir vardır: Kayıtları bloklar hâlinde birbirine bağlamak ve geçmişi değiştirmeyi hesaplama açısından pahalılaştırmak. Bu projede hazır blockchain kütüphanelerine dokunmadan Python ile blok, zincir ve Proof of Work mekanizması oluşturacağız.

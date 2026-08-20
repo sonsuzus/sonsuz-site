@@ -8,6 +8,7 @@ tags:
   - özyineleme
   - geri izleme
   - algoritmalar
+toc: true
 ---
 
 Bir labirentin girişinde durduğunuzu düşünün: Her kavşakta bir yön seçiyor, çıkmaza girerseniz son karar noktasına dönüyorsunuz. Özyinelemeli düşünme ve geri izleme tam olarak böyle çalışır. Büyük bir problemi daha küçük benzer problemlere ayırır, olası seçimleri dener ve başarısız seçimlerden vazgeçerek çözümü sistematik biçimde arar.

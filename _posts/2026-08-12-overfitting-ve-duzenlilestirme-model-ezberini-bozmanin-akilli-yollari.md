@@ -8,6 +8,7 @@ tags:
   - makine öğrenmesi
   - deep learning
   - regularization
+toc: true
 ---
 
 Bir öğrencinin sadece geçen yılın sınav sorularını ezberlediğini düşünün: Aynı sorularda kusursuzdur, fakat soru biçimi biraz değişince bocalar. Makine öğrenmesindeki **aşırı öğrenme (overfitting)** tam olarak budur. Model, eğitim verisindeki gerçek örüntüleri öğrenmek yerine gürültüyü, istisnaları ve tesadüfi ayrıntıları da belleğine kaydeder. Sonuçta eğitim başarımı yüksek, gerçek hayattaki yeni verilerdeki başarımı ise şaşırtıcı derecede düşük olur.

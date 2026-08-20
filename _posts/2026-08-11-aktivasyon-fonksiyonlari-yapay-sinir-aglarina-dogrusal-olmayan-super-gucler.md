@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - derin öğrenme
   - aktivasyon fonksiyonları
+toc: true
 ---
 
 Yapay sinir ağları ilk bakışta katman katman matris çarpımı yapan hesap makineleri gibi görünür. Fakat bu yapı tek başına karmaşık karar sınırları öğrenemez: Ne kadar çok doğrusal katman eklenirse eklensin, sonuç hâlâ doğrusal bir dönüşümdür. Aktivasyon fonksiyonları tam bu noktada devreye girer; nöronların çıktısına kıvrım, eşik ve seçicilik katarak ağın görüntü tanıma, dil işleme veya tahmin gibi zor problemleri çözmesini sağlar.

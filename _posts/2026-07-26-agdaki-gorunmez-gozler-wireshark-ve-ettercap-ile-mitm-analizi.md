@@ -9,6 +9,7 @@ tags:
   - ettercap
   - ağ güvenliği
 image: /img/agdaki-gorunmez-gozler-89.png
+toc: true
 ---
 
 Bir ağdan geçen veriler gerçekten görünmez mi? Ne yazık ki hayır. Özellikle şifrelenmemiş protokoller kullanıldığında paketler, aynı ağı paylaşan kötü niyetli kişiler tarafından okunabilir. Wireshark ve Ettercap, yalnızca izinli laboratuvar ortamlarında kullanıldığında bu riski gözlemlemek, paketlerin yapısını öğrenmek ve savunma yöntemlerini test etmek için oldukça güçlü araçlardır.

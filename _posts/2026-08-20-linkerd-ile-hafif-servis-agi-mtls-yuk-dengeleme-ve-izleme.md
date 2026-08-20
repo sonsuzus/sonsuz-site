@@ -8,6 +8,7 @@ tags:
   - linkerd
   - kubernetes
   - service mesh
+toc: true
 ---
 
 Mikroservis mimarisinde servis sayısı arttıkça ağ trafiğini güvenli, görünür ve dayanıklı yönetmek zorlaşır. Linkerd, uygulama koduna dokunmadan servisler arasına küçük bir veri düzlemi ekleyen, Kubernetes odaklı ve kaynak tüketimi düşük bir service mesh çözümüdür. Her pod’a eklenen hafif proxy sayesinde otomatik mTLS, gecikme ölçümü, başarı oranı takibi ve akıllı yük dengeleme sunar. Ağ katmanındaki bu işleri merkezi bir altyapıya taşıdığı için geliştiriciler iş mantığına odaklanabilir.

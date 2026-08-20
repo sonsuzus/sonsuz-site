@@ -8,6 +8,7 @@ tags:
   - rust
   - result enum
   - hata yönetimi
+toc: true
 ---
 
 Bir dosyanın bulunamaması, kullanıcının harf yerine sayı girmesi veya sunucunun geçici olarak yanıt vermemesi programın kıyamet senaryosu değildir. Bunlar beklenebilen ve çoğu zaman düzeltilebilen durumlardır. Rust, böyle hataları görünmez bir kontrol akışına teslim etmek yerine `Result` enum'u aracılığıyla açıkça modellememizi sağlar. Böylece hata yönetimi, kodun kenarında unutulan bir ayrıntı değil, fonksiyonun sözleşmesinin parçası olur.

@@ -20,6 +20,7 @@ tags:
   - rekürsiyon
 redirect_from:
   - /posts/python-programlama-ders-11/
+toc: true
 ---
 
 

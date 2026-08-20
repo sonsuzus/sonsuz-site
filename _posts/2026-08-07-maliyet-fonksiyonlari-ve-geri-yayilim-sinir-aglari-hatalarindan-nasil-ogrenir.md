@@ -8,6 +8,7 @@ tags:
   - makine öğrenmesi
   - geri yayılım
   - sinir ağları
+toc: true
 ---
 
 Bir sinir ağı ilk tahminini yaptığında genellikle pek de parlak değildir. Kedi fotoğrafına tost makinesi diyebilir veya ev fiyatını küçük bir servet kadar yanlış hesaplayabilir. Neyse ki modelin elinde iki güçlü araç vardır: hatanın büyüklüğünü ölçen **maliyet fonksiyonu** ve bu hatadan sorumlu ağırlıkları bulup düzelten **geri yayılım algoritması**.

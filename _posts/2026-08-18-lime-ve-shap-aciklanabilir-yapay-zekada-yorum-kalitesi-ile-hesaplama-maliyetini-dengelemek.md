@@ -10,6 +10,7 @@ tags:
   - lıme
   - shap
   - makine öğrenmesi
+toc: true
 ---
 
 Bir kredi risk modelinin neden “reddet” dediğini ya da bir görüntü sınıflandırıcının neden “kedi” gördüğünü bilmek, model doğruluğu kadar önemlidir. Açıklanabilir yapay zekâ (XAI), kara kutu modellerin kararlarını insan diline yaklaştırmayı hedefler. Bu alanda en popüler iki yaklaşım LIME ve SHAP’tir. İkisi de özellik katkılarını sunar; ancak açıklamanın güvenilirliği, tutarlılığı ve üretim ortamındaki maliyeti bakımından oldukça farklı karakterlere sahiptir.

@@ -8,6 +8,7 @@ tags:
   - tla+
   - dağıtık sistemler
   - formal metotlar
+toc: true
 ---
 
 Dağıtık sistemlerde hata ayıklamak bazen sisli bir ormanda kaybolmaya benzer: Her servis tek başına doğru görünür, fakat belirli bir zamanlama gerçekleştiğinde sistem beklenmedik biçimde kilitlenir. TLA+, bu tür sorunları üretime taşınmadan önce durum uzayını matematiksel olarak incelemeye yarayan güçlü bir formal doğrulama dilidir. Özellikle yarış koşulları, lider seçimi ve karşılıklı dışlama gibi eşzamanlılık problemlerinde “bu hata hiç oluşamaz” iddiasını test edilebilir bir kanıta dönüştürür.

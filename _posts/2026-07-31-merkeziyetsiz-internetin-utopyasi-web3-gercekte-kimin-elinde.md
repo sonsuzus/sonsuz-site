@@ -9,6 +9,7 @@ tags:
   - merkeziyetsizlik
   - blokzincir
 image: /img/merkeziyetsiz-internetin-utopyasi-92.png
+toc: true
 ---
 
 Web3; kullanıcıların verilerine, kimliklerine ve dijital varlıklarına sahip olduğu, aracıların yerini açık protokollerin aldığı bir internet vaat ediyor. Kulağa dijital bir ütopya gibi geliyor. Ancak cüzdan adreslerinin arkasındaki sermayeyi, doğrulayıcıları ve altyapı şirketlerini takip ettiğimizde rahatsız edici bir soruyla karşılaşıyoruz: Merkeziyetsiz internet gerçekten kullanıcıların mı, yoksa yalnızca yeni merkezlerin mi elinde?

@@ -8,6 +8,7 @@ tags:
   - python
   - vs code
   - geliştirme ortamı
+toc: true
 ---
 
 Python öğrenmeye başlarken ilk programdan önce küçük ama önemli bir görevimiz var: bilgisayara Python dilini çalıştıracak yorumlayıcıyı tanıtmak ve kod yazacağımız ortamı hazırlamak. Bu süreç, bir mutfakta yemek yapmadan önce ocağı bağlamaya ve araçları tezgâha dizmeye benzer. Doğru kurulan bir ortam sayesinde ileride “Kodum mu bozuk, bilgisayar mı naz yapıyor?” ikilemiyle daha az karşılaşırız.

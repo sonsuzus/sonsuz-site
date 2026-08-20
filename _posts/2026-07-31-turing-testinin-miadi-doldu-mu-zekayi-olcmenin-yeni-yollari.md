@@ -8,6 +8,7 @@ tags:
   - yapay zekâ
   - turing testi
   - llm değerlendirme
+toc: true
 ---
 
 Bir makineyle yazıştığınızı bilmeden onun insan olduğuna ikna olursanız, karşınızdaki sistem gerçekten zeki midir? Alan Turing’in 1950’de ortaya attığı taklit oyunu, bu soruya davranış üzerinden yaklaşan son derece etkili bir düşünce deneyiydi. Ancak günümüzün büyük dil modelleri akıcı metin üretirken yanlış bilgi uydurabiliyor, basit mantık hataları yapabiliyor ve fiziksel dünyayı deneyimlemiyor. Dolayısıyla artık yalnızca “İnsan gibi konuşuyor mu?” sorusu yeterli görünmüyor.

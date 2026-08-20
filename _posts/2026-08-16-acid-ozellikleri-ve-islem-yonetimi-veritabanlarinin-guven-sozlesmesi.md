@@ -9,6 +9,7 @@ tags:
   - acıd
   - sql
   - işlem yönetimi
+toc: true
 ---
 
 Bir banka hesabından para transferi düşünün: Gönderenin bakiyesi azalırken alıcının bakiyesi artmalıdır; arada elektrik kesilse, iki kullanıcı aynı hesaba erişse veya sistem yeniden başlasa bile sonuç güvenilir kalmalıdır. Veritabanı işlemleri (transaction), birden fazla sorguyu tek bir mantıksal iş olarak paketler. ACID ise bu paketin kaotik gerçek dünyada güvenle çalışmasını sağlayan dört temel ilkedir.

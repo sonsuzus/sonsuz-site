@@ -9,6 +9,7 @@ tags:
   - dinamik
 redirect_from:
   - /posts/python-programlamaya-giris-21-dinamik-kod-uretme/
+toc: true
 ---
 
 

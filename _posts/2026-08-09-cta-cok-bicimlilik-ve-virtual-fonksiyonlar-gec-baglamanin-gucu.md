@@ -9,6 +9,7 @@ tags:
   - nesne yönelimli programlama
   - polymorphism
   - virtual fonksiyonlar
+toc: true
 ---
 
 C++ nesne yönelimli programlamanın en etkileyici fikirlerinden biri, aynı arayüzün farklı nesnelerde farklı sonuçlar üretmesidir. Buna **çok biçimlilik** (*polymorphism*) denir. Bir `Animal*` işaretçisiyle hem kediye hem köpeğe ses çıkarttırabilmek, kodun her somut sınıfı tek tek tanımasına gerek kalmadan genişlemesini sağlar. Bu esneklik, özellikle oyun motorları, ödeme sistemleri ve eklenti mimarilerinde hayat kurtarır.

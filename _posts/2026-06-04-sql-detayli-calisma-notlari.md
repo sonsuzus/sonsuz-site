@@ -18,6 +18,7 @@ tags:
   - sorgu
   - programlama
   - veri
+toc: true
 ---
 
 SQL temellerini bilen ama sorguları daha bilinçli yazmak isteyenler için 70 konu, açıklama, örnek ve pratik notlarla hazırlanmış kapsamlı bir çalışma rehberi.

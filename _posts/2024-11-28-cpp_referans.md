@@ -9,6 +9,7 @@ tags:
   - referans
 redirect_from:
   - /posts/cpp_referans/
+toc: true
 ---
 
 

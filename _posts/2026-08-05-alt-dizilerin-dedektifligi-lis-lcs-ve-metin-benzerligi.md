@@ -8,6 +8,7 @@ tags:
   - dinamik programlama
   - alt dizi
   - metin işleme
+toc: true
 ---
 
 Bir sayı dizisindeki yükselişleri bulmakla iki metnin ne kadar benzediğini ölçmek ilk bakışta ayrı dünyaların işi gibi görünebilir. Oysa En Uzun Artan Alt Dizi (LIS) ve En Uzun Ortak Alt Dizi (LCS), aynı temel sorunun akrabalarıdır: Sırayı bozmadan hangi elemanları seçebiliriz? Bu yaklaşım; sürüm karşılaştırma, intihal tespiti, DNA analizi ve yazım düzeltme gibi birçok alanda karşımıza çıkar.

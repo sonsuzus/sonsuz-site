@@ -8,6 +8,7 @@ tags:
   - fonksiyonel programlama
   - saf fonksiyonlar
   - değişmezlik
+toc: true
 ---
 
 Bir fonksiyonun dış dünyaya tutunmadan yalnızca aldığı değerlerle çalışması, zihnin geçmişe ve beklentilere tutunmadan ânı gözlemlemesine şaşırtıcı biçimde benzer. Fonksiyonel programlama ile Budist düşünce aynı şey değildir; fakat **saflık**, **değişmezlik** ve **bağımlılıkların farkında olma** kavramları üzerinden verimli bir benzetme kurabiliriz. Belki aydınlanmaya ulaşamayız ama en azından üretimde gizemli biçimde değişen global değişkenlerden kurtulabiliriz.

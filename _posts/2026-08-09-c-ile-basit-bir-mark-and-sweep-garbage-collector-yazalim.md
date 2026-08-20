@@ -8,6 +8,7 @@ tags:
   - c
   - bellek yönetimi
   - garbage collector
+toc: true
 ---
 
 Bellek yönetimi, programlamanın “ışıkları kapattım mı?” sorusudur: Bir nesneyi ayırdığımızı hatırlarız ama serbest bırakıp bırakmadığımızdan asla tam emin olamayız. Bu projede C ile küçük bir **mark-and-sweep garbage collector** geliştirerek manuel bellek yönetimini, nesne erişilebilirliğini ve sanal belleğin süreçteki rolünü birlikte inceleyeceğiz.

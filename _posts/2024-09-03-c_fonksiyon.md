@@ -12,6 +12,7 @@ tags:
   - return
 redirect_from:
   - /posts/c_fonksiyon/
+toc: true
 ---
 
 C'de, [fonksiyon](https://program.sonsuz.us/search.html?q=fonksiyon) bir veya daha fazla işlem satırından oluşan kodların bir kod bloğu şeklinde yapılandırılması ile oluşturulur. Fonksiyonlar oluşturulduktan sonra programın herhangi bir yerinden sadece fonksiyon adı kullanılarak çağrılabilir. Bu sayede, çok fazla sayıda [işlem satırı](https://program.sonsuz.us/search.html?q=i%C5%9Flem%20sat%C4%B1r%C4%B1) tek bir isim kullanılarak çalıştırılmış olur.

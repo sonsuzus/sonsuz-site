@@ -9,6 +9,7 @@ tags:
   - yazılım-psikolojisi
   - hata-ayıklama
 image: /img/programci-argosunun-antropolojisi-98.png
+toc: true
 ---
 
 Bir programcının masasındaki plastik ördeğe ciddi ciddi kod anlatması, dışarıdan bakıldığında teknoloji çağının en tuhaf ritüellerinden biri olabilir. Ancak **rubber duck debugging**, yalnızca eğlenceli bir programcı argosu değildir. Problemi sesli biçimde açıklamak; düşünceleri dışsallaştırma, varsayımları sorgulama ve zihinsel çarpıtmaları fark etme bakımından bilişsel terapi teknikleriyle şaşırtıcı benzerlikler taşır.

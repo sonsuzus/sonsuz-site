@@ -9,6 +9,7 @@ tags:
   - algoritmik önyargı
   - veri etiği
 image: /img/makine-ogreniminde-onyarginin-97.png
+toc: true
 ---
 
 Bir makine öğrenimi modeli ayrımcı bir karar verdiğinde ilk şüpheli genellikle algoritmadır. Oysa algoritma çoğu zaman toplumsal gerçekliği yansıtan, hatta büyüten bir ayna gibi çalışır. İşe alımdan kredi değerlendirmesine kadar geçmiş kararlarla oluşturulan veri kümeleri; eşitsizlikleri, eksik temsili ve insan önyargılarını sessizce modele taşıyabilir. Kısacası mesele yalnızca “kötü kod” değil, hangi dünyanın sayılara dönüştürüldüğüdür.

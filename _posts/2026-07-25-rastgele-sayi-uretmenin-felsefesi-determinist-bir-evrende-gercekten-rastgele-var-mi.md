@@ -10,6 +10,7 @@ tags:
   - felsefe
   - kriptografi
 image: /img/rastgele-sayi-uretmenin-44.png
+toc: true
 ---
 
 Bilgisayarların zar atabildiğini düşünmek tatlı bir yanılsamadır; çünkü işlemcinin içinde minik bir kumarbaz yoktur. Bir programın ürettiği sayı çoğu zaman, sadece iyi gizlenmiş bir düzenin sonucudur. İşte bu yüzden rastgele sayı üretimi, hem yazılım mühendisliğinin pratik bir konusu hem de ‘evren gerçekten öngörülebilir mi?’ sorusuna açılan küçük ama derin bir kapıdır.

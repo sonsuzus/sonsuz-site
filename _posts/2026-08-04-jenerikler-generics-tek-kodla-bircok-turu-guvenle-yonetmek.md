@@ -8,6 +8,7 @@ tags:
   - generics
   - csharp
   - tip-güvenliği
+toc: true
 ---
 
 Bir fonksiyonu `int` için yazıp ardından `string`, `double` ve kendi sınıflarımız için kopyalamak, yazılım dünyasının pek de eğlenceli olmayan tekrarlarından biridir. Jenerikler (generics), algoritmayı veri tipinden ayırarak aynı kodun farklı türlerle güvenli biçimde çalışmasını sağlar. C++ şablonlarını andıran bu yaklaşım, özellikle C#, Java ve TypeScript gibi dillerde yeniden kullanılabilir yapıların temelini oluşturur.

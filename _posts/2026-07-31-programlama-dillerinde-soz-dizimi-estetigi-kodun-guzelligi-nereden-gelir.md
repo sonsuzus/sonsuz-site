@@ -8,6 +8,7 @@ tags:
   - söz dizimi
   - programlama dilleri
   - kod kalitesi
+toc: true
 ---
 
 Bir kod parçasına bakıp daha çalıştırmadan onun güzel ya da çirkin olduğunu düşündüğünüz oldu mu? Girintiler, parantezler, anahtar kelimeler ve semboller; programın davranışını değiştirmese bile algımızı etkiler. Kod estetiği yalnızca kişisel zevk değildir: Okunabilirlik, aşinalık, görsel yoğunluk ve dilin sakladığı ayrıntılar birlikte çalışarak zihnimizde bir düzen hissi oluşturur.

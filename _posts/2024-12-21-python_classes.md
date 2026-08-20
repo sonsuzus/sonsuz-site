@@ -10,6 +10,7 @@ tags:
   - class
 redirect_from:
   - /posts/python_classes/
+toc: true
 ---
 
 

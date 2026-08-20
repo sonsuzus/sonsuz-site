@@ -8,6 +8,7 @@ tags:
   - sonlu otomatlar
   - teorik bilgisayar bilimi
   - durum makineleri
+toc: true
 ---
 
 Sabah alarmı çalar, ertelersin, yeniden çalar ve sonunda yataktan kalkarsın. Kavşakta kırmızı söner, yeşil yanar; bir süre sonra sıra sarıya gelir. Bu olaylar farklı görünse de ortak bir fikir taşır: Sistem, bulunduğu **duruma** ve aldığı **girdiye** göre başka bir duruma geçer. Teorik bilgisayar biliminde bu davranışı modellemek için sonlu otomatlardan yararlanırız.

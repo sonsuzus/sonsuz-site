@@ -8,6 +8,7 @@ tags:
   - topolojik sıralama
   - graf algoritmaları
   - görev planlama
+toc: true
 ---
 
 Bir projedeki görevleri gelişigüzel sıraya koymak, çatıyı temelden önce inşa etmeye benzeyebilir. Bazı işler ancak başka işler tamamlandıktan sonra başlayabilir. Topolojik sıralama, bu bağımlılıkları bozmadan geçerli bir çalışma sırası üretir; döngü tespiti ise planın kendi kuyruğunu kovalayan bir yılana dönüşüp dönüşmediğini gösterir.

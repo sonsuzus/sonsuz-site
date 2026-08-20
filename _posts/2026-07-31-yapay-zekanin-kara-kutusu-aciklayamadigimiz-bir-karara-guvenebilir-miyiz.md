@@ -9,6 +9,7 @@ tags:
   - açıklanabilir yapay zeka
   - makine öğrenmesi
 image: /img/yapay-zekanin-kara-67.png
+toc: true
 ---
 
 Bir yapay zekâ sistemi kredi başvurunuzu reddettiğinde, işe alım sürecinde sizi elediğinde veya tıbbi görüntünüzü “riskli” olarak işaretlediğinde yalnızca sonuca bakmak yeterli midir? Model yüksek doğruluk oranına sahip olsa bile “Neden?” sorusuna cevap veremiyorsa ortada teknik olduğu kadar etik bir sorun da vardır. İşte **kara kutu sorunu**, modelin girdileri ile çıktıları arasındaki mantığın insanlar tarafından anlaşılmasının güç olduğu bu noktada ortaya çıkar.

@@ -11,6 +11,7 @@ tags:
   - dil
 redirect_from:
   - /posts/chapel-programlama/
+toc: true
 ---
 
 

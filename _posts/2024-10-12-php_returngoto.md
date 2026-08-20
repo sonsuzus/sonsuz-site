@@ -10,6 +10,7 @@ tags:
   - return
 redirect_from:
   - /posts/php_returngoto/
+toc: true
 ---
 
 

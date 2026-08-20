@@ -8,6 +8,7 @@ tags:
   - nesneler
   - json
   - veri modelleme
+toc: true
 ---
 
 Bir kullanıcıyı, otomobili veya kahve makinesini yazılım dünyasına taşımak istediğimizde yalnızca birkaç bağımsız değişken kullanmak kısa sürede karmaşaya yol açar. Nesneler, bir varlığa ait bilgileri anlamlı bir bütün hâlinde toplar. JSON ise bu anahtar-değer düzenini sistemler arasında aktarılabilen standart bir metne dönüştürür.

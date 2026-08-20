@@ -9,6 +9,7 @@ tags:
   - üretken yapay zeka
   - transformer
 image: /img/llm-ve-uretken-61.png
+toc: true
 ---
 
 Büyük Dil Modelleri (Large Language Models, LLM), ilk bakışta insan gibi konuşan sihirli makineler gibi görünür. Perdenin arkasında ise milyarlarca sayısal ağırlık, devasa metin koleksiyonları ve oldukça basit görünen bir hedef vardır: Bir sonraki token'ın ne olacağını tahmin etmek. Bu tahmin görevi; sohbet, özetleme, çeviri, kod üretimi ve hatta adım adım problem çözme gibi şaşırtıcı yeteneklere dönüşür.

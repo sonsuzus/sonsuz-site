@@ -16,6 +16,7 @@ tags:
   - join
 redirect_from:
   - /posts/pandasa-giris-veri-cerceveleri/
+toc: true
 ---
 
 

@@ -8,6 +8,7 @@ tags:
   - rust
   - enum
   - pattern matching
+toc: true
 ---
 
 Bir verinin yalnızca tek bir biçimi olmak zorunda değildir. Örneğin bir ödeme başarılı, reddedilmiş veya hâlâ bekliyor olabilir. Bu durumları metinlerle temsil etmek mümkün olsa da küçük bir yazım hatası programın mantığını bozabilir. Rust'ın `enum` ve `match` araçları, farklı veri varyasyonlarını güvenli biçimde modelleyerek derleyiciyi adeta hata avlayan bir ekip arkadaşına dönüştürür.

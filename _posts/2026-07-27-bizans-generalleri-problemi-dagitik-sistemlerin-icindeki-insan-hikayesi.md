@@ -8,6 +8,7 @@ tags:
   - dağıtık sistemler
   - bizans hata toleransı
   - sosyal güven
+toc: true
 ---
 
 Bir grup insanın ortak karar vermesi gerektiğini düşünün: Bazıları dürüst, bazıları kararsız, bazılarıysa kasıtlı olarak yalan söylüyor. Üstelik kimse aynı odada değil; iletişim gecikebilir, mesajlar kaybolabilir ve farklı kişilere farklı bilgiler ulaşabilir. Bu senaryo bir aile grubunu, şirket toplantısını veya siyasi ittifakı çağrıştırsa da dağıtık sistemlerin en ünlü problemlerinden birini anlatır: **Bizans Generalleri Problemi**. Bilgisayar bilimindeki bu teknik mesele, özünde güvenilir bir otorite olmadan işbirliği yapabilmenin hikâyesidir.

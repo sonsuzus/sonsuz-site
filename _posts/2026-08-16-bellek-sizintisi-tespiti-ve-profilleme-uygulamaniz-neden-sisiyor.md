@@ -10,6 +10,7 @@ tags:
   - debugging
   - performans
   - memory leak
+toc: true
 ---
 
 Uzun süre çalışan bir servis ilk gün kusursuz, üçüncü gün ise ağır davranıyorsa şüpheli genellikle CPU değil bellektir. Bellek sızıntısı, artık ihtiyaç duyulmayan nesnelerin hâlâ erişilebilir kalması veya işletim sistemi kaynaklarının serbest bırakılmaması durumudur. Bu sorun, yalnızca uygulamayı yavaşlatmaz; konteynerin OOM Killer tarafından sonlandırılmasına, gecikmelerin artmasına ve maliyetlerin yükselmesine de yol açabilir.

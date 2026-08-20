@@ -10,6 +10,7 @@ tags:
   - adapter
   - büyük dil modelleri
   - makine öğrenmesi
+toc: true
 ---
 
 Büyük dil modellerini her yeni görev için baştan ince ayar yapmak, devasa bir gemiyi limanda döndürmeye benzer: mümkündür ama yakıtı, zamanı ve donanımı bolca tüketir. Parametre-verimli ince ayar (PEFT) yöntemleri ise modelin ana gövdesini büyük ölçüde dondurur; yalnızca küçük, öğrenilebilir bileşenleri eğitir. LoRA ve adaptörler bu yaklaşımın en popüler iki temsilcisidir. İkisi de depolama maliyetini düşürür, görev başına ayrı model saklama sorununu hafifletir ve sınırlı GPU belleğiyle özelleştirme yapmayı mümkün kılar.

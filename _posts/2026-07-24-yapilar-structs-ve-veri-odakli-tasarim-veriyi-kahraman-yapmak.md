@@ -9,6 +9,7 @@ tags:
   - veri-odaklı-tasarım
   - programlama
 image: /img/yapilar-structs-ve-64.png
+toc: true
 ---
 
 ![yapilar-structs-ve-64](/img/yapilar-structs-ve-64.svg)

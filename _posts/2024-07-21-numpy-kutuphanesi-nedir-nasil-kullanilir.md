@@ -13,6 +13,7 @@ tags:
   - kütüphane
 redirect_from:
   - /posts/numpy-kutuphanesi-nedir-nasil-kullanilir/
+toc: true
 ---
 
 

@@ -8,6 +8,7 @@ tags:
   - otomasyon
   - işgücü
   - yapay zeka
+toc: true
 ---
 
 Bir robotun kahve hazırlaması, yapay zekânın sözleşme özetlemesi veya yazılımın faturaları işlemesi aynı soruyu gündeme getiriyor: “Mesleğim elimden gidecek mi?” Ancak otomasyon, meslekleri tek hamlede yok eden teknolojik bir kötü karakter değildir. Tarih, çoğunlukla mesleklerin değil, mesleklerin içindeki belirli görevlerin otomatikleştiğini; işgücü piyasasının da sınıf, eğitim, gelir ve pazarlık gücü eksenlerinde yeniden şekillendiğini gösteriyor.

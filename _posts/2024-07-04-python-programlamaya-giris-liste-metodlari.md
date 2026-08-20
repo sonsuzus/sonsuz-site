@@ -9,6 +9,7 @@ tags:
   - metod
 redirect_from:
   - /posts/python-programlamaya-giris-liste-metodlari/
+toc: true
 ---
 
 

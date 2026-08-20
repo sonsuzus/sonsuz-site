@@ -9,6 +9,7 @@ tags:
   - llm
   - programlama tarihi
 image: /img/kendi-kendini-yazan-22.png
+toc: true
 ---
 
 ![kendi-kendini-yazan-22](/img/kendi-kendini-yazan-22.svg)

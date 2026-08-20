@@ -8,6 +8,7 @@ tags:
   - git
   - merge
   - conflict
+toc: true
 ---
 
 Yazılım ekiplerinde herkes aynı dosyaya sırayla dokunsaydı hayat kolay, geliştirme süreci ise epey yavaş olurdu. Git dalları sayesinde geliştiriciler paralel çalışabilir; ancak bu çalışmaların eninde sonunda yeniden buluşması gerekir. `merge`, farklı dallardaki değişiklikleri ortak bir geçmişte birleştirirken conflict çözümü Git'in karar veremediği noktalarda insan muhakemesini devreye sokar.

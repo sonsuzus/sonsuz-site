@@ -8,6 +8,7 @@ tags:
   - git
   - pull request
   - code review
+toc: true
 ---
 
 Bir özellik geliştirdiniz, testleri çalıştırdınız ve kodunuz bilgisayarınızda kusursuz görünüyor. Peki bu kod doğrudan ana projeye eklenmeli mi? Genellikle hayır! Pull Request ve Code Review süreçleri, kodun ana dala ulaşmadan önce teknik doğruluk, okunabilirlik, güvenlik ve ekip standartları açısından denetlendiği bir kalite kapısı oluşturur.

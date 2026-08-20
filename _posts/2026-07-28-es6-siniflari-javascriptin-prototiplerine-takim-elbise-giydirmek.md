@@ -9,6 +9,7 @@ tags:
   - es6
   - nesne yönelimli programlama
 image: /img/es6-siniflari-javascriptin-19.png
+toc: true
 ---
 
 JavaScript’te `class` anahtar sözcüğünü gördüğünüzde dilin prototipleri bırakıp C++ veya Java gibi tamamen sınıf tabanlı bir modele geçtiğini düşünebilirsiniz. Fakat perde arkasında hâlâ prototip zinciri çalışır. ES6 sınıfları, mevcut sistemi değiştiren yeni bir nesne modeli değil; yapıcıları, metotları ve kalıtımı daha okunabilir biçimde tanımlayan modern bir sözdizimidir.

@@ -8,6 +8,7 @@ tags:
   - hashicorp vault
   - siber güvenlik
   - devops
+toc: true
 ---
 
 Bir uygulamanın Git deposunda unutulmuş API anahtarı, paylaşılan bir Excel dosyasındaki veritabanı parolası veya aylarca yenilenmeyen TLS sertifikası; güvenlik ihlalinin klasik başlangıç noktalarıdır. HashiCorp Vault, bu hassas değerleri uygulama kodundan ve kişisel hafızalardan ayıran merkezi bir sır yönetimi platformudur. Temel hedef yalnızca sırları şifrelemek değil; kimin, ne zaman, hangi sırra ve hangi koşulla eriştiğini denetlenebilir hâle getirmektir.

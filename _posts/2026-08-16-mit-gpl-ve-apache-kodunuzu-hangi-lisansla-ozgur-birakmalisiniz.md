@@ -10,6 +10,7 @@ tags:
   - mıt
   - gpl
   - apache
+toc: true
 ---
 
 Açık kaynak dünyasında kod yazmak işin yalnızca yarısıdır; diğer yarısı ise insanların o kodla neler yapabileceğini belirlemektir. Bir lisans, projenizin kullanım, değiştirilme ve dağıtılma kurallarını tanımlayan hukuki bir sözleşmedir. MIT, GPL ve Apache 2.0 sıkça aynı sepete atılsa da ticari kullanım, kaynak kodun paylaşımı ve patent hakları konusunda oldukça farklı karakterlere sahiptir.

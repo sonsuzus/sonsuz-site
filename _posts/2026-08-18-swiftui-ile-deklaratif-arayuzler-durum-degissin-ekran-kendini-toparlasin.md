@@ -10,6 +10,7 @@ tags:
   - ios
   - durum yönetimi
   - deklaratif programlama
+toc: true
 ---
 
 SwiftUI, Apple platformlarında arayüz yazmayı “hangi pikseli nereye taşıyayım?” sorusundan “mevcut durumda kullanıcı ne görmeli?” sorusuna taşır. Bu yaklaşımın süper gücü, görünüm ile veri arasındaki bağı açıkça kurmasıdır. Bir değer değiştiğinde ekrana yeniden çizim emri yağdırmak yerine SwiftUI yeni durumu değerlendirir, eski görünüm ağacıyla karşılaştırır ve yalnızca gerekli bölümü günceller. Sonuç: daha az tören, daha okunabilir kod ve animasyonlara hazır modern ekranlar.

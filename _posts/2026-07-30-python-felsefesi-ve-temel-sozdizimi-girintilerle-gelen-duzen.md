@@ -9,6 +9,7 @@ tags:
   - sözdizimi
   - temiz kod
 image: /img/python-felsefesi-ve-91.png
+toc: true
 ---
 
 ![python-felsefesi-ve-91](/img/python-felsefesi-ve-91.svg)

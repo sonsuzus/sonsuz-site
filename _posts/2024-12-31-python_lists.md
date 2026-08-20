@@ -11,6 +11,7 @@ tags:
   - dizi
 redirect_from:
   - /posts/python_lists/
+toc: true
 ---
 
 [Liste](https://program.sonsuz.us/search.html?q=liste), birden fazla değerin yer aldığı bir yapıdır. Listede yer alan verilerin aynı veri türünden olması gerekli değildir. Elemanlarda değişiklik yapılabilir. Liste oluşturmak için köşeli parantezler ([ ]) veya list() fonksiyonu kullanılır.

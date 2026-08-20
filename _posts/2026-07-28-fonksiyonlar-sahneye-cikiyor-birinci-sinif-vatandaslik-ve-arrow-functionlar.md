@@ -8,6 +8,7 @@ tags:
   - javascript
   - fonksiyonel programlama
   - arrow functions
+toc: true
 ---
 
 Programlamada fonksiyonları yalnızca çağrıldığında çalışan kod paketleri olarak düşünmek eksik kalır. JavaScript gibi dillerde fonksiyonlar aynı zamanda değişkenlere atanabilir, başka fonksiyonlara gönderilebilir ve sonuç olarak döndürülebilir. Kısacası fonksiyonlar, dilin ayrıcalıklı üyeleri değil; diğer değerlerle aynı haklara sahip **birinci sınıf vatandaşlarıdır**.

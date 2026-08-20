@@ -10,6 +10,7 @@ tags:
   - xor
   - olimpiyat soruları
   - c++
+toc: true
 ---
 
 Olimpiyat tipi algoritma sorularında bit operatörleri, yalnızca sayıları ikili tabanda kurcalamak için değil, büyük durum uzaylarını küçük maskelere sıkıştırmak için kullanılır. XOR, AND ve OR; kümeleri, pariteleri, alt kümeleri ve izin verilen seçimleri tek bir makine kelimesinde temsil edebilir. Doğru yerde kullanıldıklarında hem çözümü zarifleştirir hem de karmaşıklığı dramatik biçimde düşürür.

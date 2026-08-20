@@ -9,6 +9,7 @@ tags:
   - tsconfig
   - javascript
 image: /img/tsconfigjson-rehberi-typescript-56.png
+toc: true
 ---
 
 TypeScript kodu yazmak işin yalnızca yarısıdır; diğer yarısı, bu kodun hangi JavaScript sürümüne, hangi modül sistemine ve ne kadar katı kurallarla dönüştürüleceğini belirlemektir. Projenin kontrol paneli sayılan `tsconfig.json`, derleyiciye adeta “Bu kodu nereye götürüyoruz ve yolda hangi kurallara uyuyoruz?” sorularının cevabını verir.

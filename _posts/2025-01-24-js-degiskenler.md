@@ -9,6 +9,7 @@ tags:
   - değişken
 redirect_from:
   - /posts/js-degiskenler/
+toc: true
 ---
 
 

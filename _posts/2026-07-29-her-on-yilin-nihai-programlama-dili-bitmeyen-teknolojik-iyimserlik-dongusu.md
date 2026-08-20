@@ -9,6 +9,7 @@ tags:
   - teknoloji tarihi
   - yazılım kültürü
 image: /img/her-on-yilin-60.png
+toc: true
 ---
 
 Yazılım dünyası belirli aralıklarla aynı heyecanı yeniden yaşar: Yeni bir programlama dili çıkar, eski dillerin bütün kusurlarını çözdüğü söylenir ve kısa süre içinde onun “geleceğin tek dili” olacağı ilan edilir. Fakat gelecek geldiğinde o dil ya belirli bir alana yerleşmiş, başka araçlarla birlikte kullanılmaya başlanmış ya da sessizce teknoloji tarihindeki yerini almıştır. Bu durum yalnızca pazarlama hevesi değil; yazılımın doğasından kaynaklanan döngüsel bir iyimserliktir.

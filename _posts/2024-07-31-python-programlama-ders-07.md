@@ -18,6 +18,7 @@ tags:
   - for
 redirect_from:
   - /posts/python-programlama-ders-07/
+toc: true
 ---
 
 

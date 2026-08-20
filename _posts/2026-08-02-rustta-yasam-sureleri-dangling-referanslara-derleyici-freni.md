@@ -9,6 +9,7 @@ tags:
   - lifetimes
   - bellek güvenliği
 image: /img/rustta-yasam-sureleri-29.png
+toc: true
 ---
 
 ![rustta-yasam-sureleri-29](/img/rustta-yasam-sureleri-29.svg)

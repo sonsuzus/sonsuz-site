@@ -10,6 +10,7 @@ tags:
   - üreteç ifade
 redirect_from:
   - /posts/python-programlamaya-giris-19-liste-kurma-sozluk-kurma-uretec-ifadeler/
+toc: true
 ---
 
 

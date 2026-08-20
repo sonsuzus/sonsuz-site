@@ -9,6 +9,7 @@ tags:
   - sinir ağları
   - feedforward
   - kayıp fonksiyonu
+toc: true
 ---
 
 Bir sinir ağını, ham veriyi alıp anlamlı bir tahmine dönüştüren katmanlı bir üretim hattı gibi düşünebiliriz. İleri besleme (feedforward), verinin girişten çıkışa doğru tek yönlü akışıdır; hata hesaplama ise hattın sonunda üretilen sonucun ne kadar başarılı olduğunu söyler. Bu iki adım, eğitimin temel döngüsünü oluşturur: tahmin et, gerçeğe bak, farkı ölç ve sonraki turda daha iyi ol.

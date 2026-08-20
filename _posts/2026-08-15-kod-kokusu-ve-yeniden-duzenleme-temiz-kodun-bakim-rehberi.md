@@ -8,6 +8,7 @@ tags:
   - kod kokusu
   - refactoring
   - temiz kod
+toc: true
 ---
 
 Bir yazılım ilk gününde pırıl pırıl görünebilir; asıl sınavı ise üçüncü özellik isteği, acil hata düzeltmesi ve ekip değişikliği geldiğinde verir. Kod kokuları, programın mutlaka hatalı olduğunu değil, tasarımın gelecekte pahalılaşabileceğini söyleyen uyarı işaretleridir. Yeniden düzenleme (refactoring), dışarıdan gözlemlenen davranışı değiştirmeden bu iç yapıyı iyileştirme disiplinidir. Amaç daha kısa kod yazmak değil; değişime daha güvenle cevap verebilen kod üretmektir.

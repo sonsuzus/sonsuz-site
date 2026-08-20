@@ -11,6 +11,7 @@ tags:
   - hexedit
   - inode
 image: /img/hexedit-ile-ext4btrfs-84.png
+toc: true
 ---
 
 Bir dosya silindiğinde çoğu zaman verinin kendisi anında buharlaşmaz; dosya sisteminin “bu alan artık boş” dediği muhasebe kayıtları değişir. İşte ham disk imajını `hexedit` ile açıp inode ve blok adreslerini elle okumak, biraz arkeoloji biraz dedektiflik gibidir: kumların altından byte byte hikâye çıkarırız.

@@ -8,6 +8,7 @@ tags:
   - bit-maskeleme
   - bitsel-operatorler
   - algoritmalar
+toc: true
 ---
 
 Bir grup anahtarı, özelliği veya seçimi tek bir tamsayı içinde saklamak kulağa sihir gibi gelebilir. Bit maskeleme tam olarak bunu yapar: Her biti bir elemanın varlığına ya da bir durumun açık olup olmadığına ayırır. Böylece klasik veri yapılarına göre daha az bellek kullanabilir, küme işlemlerini birkaç işlemci komutuyla gerçekleştirebilir ve özellikle kombinasyon problemlerini zarif biçimde çözebiliriz.

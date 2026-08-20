@@ -9,6 +9,7 @@ tags:
   - bloom filter
   - algoritmalar
   - olasılıksal programlama
+toc: true
 ---
 
 Bir web tarayıcısının daha önce ziyaret edilmiş bir URL’yi, bir e-posta sunucusunun şüpheli adresi veya bir veritabanının diskte bulunmayan anahtarı saniyeler değil mikrosaniyeler içinde kontrol etmesi gerekir. Bloom Filter tam bu tür senaryolarda parlayan, olasılıksal bir veri yapısıdır: Bir elemanın kümede **kesinlikle olmadığını** söyler ya da **muhtemelen bulunduğunu** bildirir. Bu küçük belirsizlik, inanılmaz düşük bellek tüketimi ve sabit zamana yakın sorgu performansı karşılığında kabul edilir.

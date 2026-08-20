@@ -9,6 +9,7 @@ tags:
   - veri-yapilari
   - javascript
 image: /img/haritalar-maps-ile-42.png
+toc: true
 ---
 
 ![haritalar-maps-ile-42](/img/haritalar-maps-ile-42.svg)

@@ -8,6 +8,7 @@ tags:
   - opentelemetry
   - gözlemlenebilirlik
   - dağıtık sistemler
+toc: true
 ---
 
 Modern uygulamalar nadiren tek bir sunucuda yaşayan, tek parça yapılar hâlindedir. Bir kullanıcı isteği; API Gateway, kimlik doğrulama servisi, ödeme sistemi, mesaj kuyruğu ve veritabanı arasında dolaşabilir. Sorun çıktığında ise klasik “sunucu çalışıyor mu?” sorusu yetersiz kalır. OpenTelemetry (OTel), bu karmaşık yolculuğu iz, metrik ve log sinyallerini ortak bir standart altında birleştirerek görünür hâle getirir.

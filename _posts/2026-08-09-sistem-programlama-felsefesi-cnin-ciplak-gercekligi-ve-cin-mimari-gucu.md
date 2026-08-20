@@ -9,6 +9,7 @@ tags:
   - c++
   - sistem programlama
 image: /img/sistem-programlama-felsefesi-49.png
+toc: true
 ---
 
 Sistem programlama, bilgisayarın yalnızca ne yaptığını değil, bunu **hangi maliyetle** yaptığını da önemser. Bellek adresleri, işlemci önbelleği, kesmeler, dosya tanıtıcıları ve eşzamanlılık burada günlük araçlardır. C ile C++ arasındaki seçim de basitçe “eski mi yeni mi?” sorusu değildir: C doğrudanlık ve evrensel uyumluluk sunarken, C++ aynı donanım düzeyinde daha sağlam soyutlamalar kurmayı hedefler.

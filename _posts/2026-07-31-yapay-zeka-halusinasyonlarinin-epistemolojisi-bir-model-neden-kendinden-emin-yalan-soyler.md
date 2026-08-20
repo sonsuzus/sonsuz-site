@@ -9,6 +9,7 @@ tags:
   - halüsinasyon
   - epistemoloji
 image: /img/yapay-zeka-halusinasyonlarinin-35.png
+toc: true
 ---
 
 ![yapay-zeka-halusinasyonlarinin-35](/img/yapay-zeka-halusinasyonlarinin-35.svg)

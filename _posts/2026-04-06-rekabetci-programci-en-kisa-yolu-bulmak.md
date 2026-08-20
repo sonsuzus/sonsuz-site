@@ -20,6 +20,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Bir çizgede iki düğüm arasındaki [en kısa yolu](https://program.sonsuz.us/search.html?q=en%20k%C4%B1sa%20yolu) bulmak, pek çok pratik uygulamaya sahip temel bir problemdir. Klasik bir örnek, yol uzunlukları bilinen bir ağda iki şehir arasındaki en kısa rotayı hesaplamaktır. Ağırlıksız çizgelerde yol uzunluğu kenar sayısına eşit olduğundan BFS ile çözülebilir; bu bölümde ise ağırlıklı çizgeler için geliştirilmiş algoritmalara bakacağız.

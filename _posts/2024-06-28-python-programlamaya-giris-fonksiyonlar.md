@@ -9,6 +9,7 @@ tags:
   - kütüphane
 redirect_from:
   - /posts/python-programlamaya-giris-fonksiyonlar/
+toc: true
 ---
 
 

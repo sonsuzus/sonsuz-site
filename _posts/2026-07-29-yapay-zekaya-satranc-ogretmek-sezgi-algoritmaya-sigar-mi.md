@@ -9,6 +9,7 @@ tags:
   - satranç
   - algoritma
 image: /img/yapay-zekaya-satranc-20.png
+toc: true
 ---
 
 ![yapay-zekaya-satranc-20](/img/yapay-zekaya-satranc-20.svg)

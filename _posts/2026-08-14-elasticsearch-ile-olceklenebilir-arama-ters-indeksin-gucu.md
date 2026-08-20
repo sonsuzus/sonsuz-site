@@ -9,6 +9,7 @@ tags:
   - tam metin arama
   - ters indeks
 image: /img/elasticsearch-ile-olceklenebilir-22.png
+toc: true
 ---
 
 ![elasticsearch-ile-olceklenebilir-22](/img/elasticsearch-ile-olceklenebilir-22.svg)

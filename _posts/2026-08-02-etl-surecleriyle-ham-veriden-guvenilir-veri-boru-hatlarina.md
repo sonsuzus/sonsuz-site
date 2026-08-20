@@ -8,6 +8,7 @@ tags:
   - etl
   - veri mühendisliği
   - data pipeline
+toc: true
 ---
 
 Bir e-ticaret şirketinde siparişler PostgreSQL’de, reklam verileri bir API’de, müşteri yorumları JSON dosyalarında tutulabilir. Analiz ekibinin bütün bunları tek tek toplaması hem zaman kaybettirir hem de hata üretir. ETL süreçleri, dağınık ham veriyi otomatik biçimde çekip temizleyerek analiz edilmeye hazır, güvenilir bir veri kaynağına dönüştürür.

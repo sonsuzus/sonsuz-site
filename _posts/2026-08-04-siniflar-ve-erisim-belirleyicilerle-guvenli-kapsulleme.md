@@ -8,6 +8,7 @@ tags:
   - nesne yönelimli programlama
   - sınıflar
   - kapsülleme
+toc: true
 ---
 
 Bir sınıfı yalnızca değişkenleri ve metotları bir araya getiren bir kutu olarak düşünmek eksik kalır. İyi tasarlanmış bir sınıf, kendi verisini koruyan ve dış dünyaya kontrollü bir kullanım alanı sunan küçük bir kale gibidir. `public`, `private` ve `protected` erişim belirleyicileri ise bu kalenin hangi kapılarının herkese, hangilerinin yalnızca içeridekilere açılacağını belirler.

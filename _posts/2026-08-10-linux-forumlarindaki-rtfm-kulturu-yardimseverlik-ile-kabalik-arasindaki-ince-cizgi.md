@@ -10,6 +10,7 @@ tags:
   - rtfm
   - açık kaynak
   - forumlar
+toc: true
 ---
 
 Linux forumlarında yeni bir kullanıcının ilk hata mesajıyla karşılaşması, çoğu zaman yalnızca teknik değil, kültürel bir eşiktir. “RTFM” — *Read The Fine Manual* ya da daha sert tarihsel yorumuyla *Read The Fucking Manual* — bilgiye erişimin kolay olduğu bir dünyada emeğe saygı çağrısıdır. Fakat bu kısa cevap, bağlama göre öğretici bir yönlendirme de olabilir, kapıyı suratına kapatan bir topluluk ritüeli de.

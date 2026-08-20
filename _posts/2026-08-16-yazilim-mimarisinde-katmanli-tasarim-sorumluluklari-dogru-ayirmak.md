@@ -8,6 +8,7 @@ tags:
   - yazılım mimarisi
   - katmanlı tasarım
   - clean code
+toc: true
 ---
 
 Katmanlı tasarım, büyük ve küçük ölçekli uygulamalarda kodun bir "spagetti tabağına" dönüşmesini engelleyen mimari yaklaşımlardan biridir. Temel fikir basittir: Kullanıcıyla konuşan kod, iş kurallarını uygulayan kod ve veriyi saklayan kod aynı sorumluluğu paylaşmamalıdır. Böylece bir veritabanı değişikliği ekranları, bir arayüz yenilemesi de kritik hesaplama kurallarını doğrudan etkilemez.

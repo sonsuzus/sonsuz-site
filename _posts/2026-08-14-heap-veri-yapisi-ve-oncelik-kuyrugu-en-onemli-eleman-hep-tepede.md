@@ -10,6 +10,7 @@ tags:
   - öncelik kuyruğu
   - python
 image: /img/heap-veri-yapisi-72.png
+toc: true
 ---
 
 ![heap-veri-yapisi-72](/img/heap-veri-yapisi-72.svg)

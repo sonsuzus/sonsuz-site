@@ -8,6 +8,7 @@ tags:
   - mikroservisler
   - api gateway
   - service mesh
+toc: true
 ---
 
 Mikroservis mimarisinde her servis kendi başına küçük ve bağımsız görünür; fakat sistem büyüdükçe aralarındaki iletişim hızla karmaşıklaşır. Bir kullanıcının tek isteği, kimlik doğrulama, katalog, stok, ödeme ve bildirim servislerine uğrayabilir. API Gateway dış dünyadan gelen trafiğin kontrol kulesiyken, servis ağı (service mesh) iç ağdaki servisler arası konuşmanın trafik polisi gibidir. Birlikte kullanıldıklarında güvenlik, yönlendirme, hata toleransı ve gözlemlenebilirlik için düzenli bir omurga oluştururlar.

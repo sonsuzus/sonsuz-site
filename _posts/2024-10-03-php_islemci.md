@@ -13,6 +13,7 @@ tags:
   - işlemci
 redirect_from:
   - /posts/php_islemci/
+toc: true
 ---
 
 

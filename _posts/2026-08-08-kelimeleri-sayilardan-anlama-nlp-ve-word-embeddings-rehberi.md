@@ -8,6 +8,7 @@ tags:
   - nlp
   - word2vec
   - glove
+toc: true
 ---
 
 İnsanlar için “kedi”, “köpek” ve “uçak” kelimelerini ayırmak kolaydır: İlk ikisi hayvandır, üçüncüsü ise gökyüzünde dolaşan metal bir araçtır. Bilgisayar açısından bakıldığındayse hepsi yalnızca karakter dizileridir. Doğal Dil İşleme (NLP), bu karakterlerin ardındaki anlamı makinelerin işleyebileceği matematiksel temsillere dönüştürür. Kelime gömme yöntemleri de tam burada devreye girerek kelimelere sayısal birer kimlik değil, anlamsal birer koordinat kazandırır.

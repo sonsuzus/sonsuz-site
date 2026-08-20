@@ -9,6 +9,7 @@ tags:
   - fonksiyon
 redirect_from:
   - /posts/php_fonksiyon/
+toc: true
 ---
 
 

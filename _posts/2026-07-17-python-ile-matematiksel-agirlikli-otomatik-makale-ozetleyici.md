@@ -9,6 +9,7 @@ tags:
   - doğal dil işleme
   - otomatik özetleme
 image: /img/python-ile-matematiksel-48.png
+toc: true
 ---
 
 ![python-ile-matematiksel-48](/img/python-ile-matematiksel-48.svg)

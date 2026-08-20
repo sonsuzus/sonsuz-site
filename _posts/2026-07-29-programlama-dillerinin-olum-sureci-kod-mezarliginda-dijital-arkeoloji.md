@@ -9,6 +9,7 @@ tags:
   - dijital arkeoloji
   - yazılım tarihi
 image: /img/programlama-dillerinin-olum-18.png
+toc: true
 ---
 
 Bir programlama dili nadiren tek bir gün içinde ölür. Genellikle önce yeni projelerden çekilir, sonra geliştiricilerini kaybeder, paket depoları sessizleşir ve en sonunda yalnızca eski bankacılık sistemlerinde ya da unutulmuş bir GitHub deposunda yaşamaya devam eder. Dolayısıyla bir dilin ölümünü anlamak, mezar taşındaki tarihi okumaktan çok geride bıraktığı dijital izleri incelemeye benzer.

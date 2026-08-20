@@ -12,6 +12,7 @@ tags:
   - bellek
 redirect_from:
   - /posts/c_isaretci/
+toc: true
 ---
 
 

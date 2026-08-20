@@ -11,6 +11,7 @@ tags:
   - sunucu
 redirect_from:
   - /posts/php_veridonusum/
+toc: true
 ---
 
 

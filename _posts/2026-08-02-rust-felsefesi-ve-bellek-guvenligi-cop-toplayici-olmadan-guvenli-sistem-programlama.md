@@ -8,6 +8,7 @@ tags:
   - rust
   - bellek güvenliği
   - sistem programlama
+toc: true
 ---
 
 C ve C++, programcıya belleğin anahtarlarını teslim eder; fakat anahtarlığın yanında kullanım kılavuzu vermez. Rust ise aynı donanım kontrolünü korurken “Bu bellek hâlâ geçerli mi?” sorusunu çalışma anına bırakmak yerine derleme sırasında yanıtlamaya çalışır. Üstelik bunu kodun arkasında dolaşan bir garbage collector olmadan gerçekleştirir.

@@ -15,6 +15,7 @@ tags:
   - mantık
 redirect_from:
   - /posts/python-programlama-ders-04/
+toc: true
 ---
 
 

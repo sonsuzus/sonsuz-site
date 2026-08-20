@@ -9,6 +9,7 @@ tags:
   - fsk
   - python
 image: /img/ses-dalgalariyla-konusan-65.png
+toc: true
 ---
 
 Eski çevirmeli modemlerin çıkardığı robotik sesler rastgele gürültü değildi; bilgisayarların veriyi ses dalgalarına dönüştürerek telefon hattından taşıma yöntemiydi. Bu projede aynı fikri daha küçük ölçekte uygulayacak, Frekans Kaydırmalı Anahtarlama (FSK) kullanarak hoparlörden veri gönderen ve mikrofonla çözen basit bir akustik modem tasarlayacağız.

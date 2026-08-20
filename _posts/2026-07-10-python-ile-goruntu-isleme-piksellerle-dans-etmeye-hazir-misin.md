@@ -9,6 +9,7 @@ tags:
   - görüntü işleme
   - opencv
   - numpy
+toc: true
 ---
 
 Görüntü işleme, bilgisayara bir resmi sadece ‘görmeyi’ değil, onu anlamayı da öğretme sanatıdır. Python ise bu iş için adeta İsviçre çakısı gibidir: kolay sözdizimi, güçlü kütüphaneler ve bolca topluluk desteği. Bir fotoğrafı siyah-beyaza çevirmekten yüz tanımaya, belge taramadan otonom araçlara kadar pek çok alanda görüntü işleme kullanılır.

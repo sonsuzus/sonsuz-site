@@ -10,6 +10,7 @@ tags:
   - vscode
   - mantıksal-programlama
 image: /img/prolog-kurulumu-ve-15.png
+toc: true
 ---
 
 Prolog, programcıya “nasıl yapılır?” yerine “ne doğrudur?” diye sorduran hoş bir zihin jimnastiğidir. Bu yazıda SWI-Prolog kurulumunu tamamlayacak, derleyici/yorumlayıcı ayarlarını kontrol edecek ve VS Code üzerinde teorik bilgiyi pratiğe dökeceğimiz küçük bir laboratuvar hazırlayacağız.

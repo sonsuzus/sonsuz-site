@@ -10,6 +10,7 @@ tags:
   - fonksiyon
 redirect_from:
   - /posts/cpp_ilkprog/
+toc: true
 ---
 
 

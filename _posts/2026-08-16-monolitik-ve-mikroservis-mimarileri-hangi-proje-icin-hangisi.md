@@ -8,6 +8,7 @@ tags:
   - yazılım mimarisi
   - monolit
   - mikroservis
+toc: true
 ---
 
 Bir yazılım projesi büyümeye başladığında en kritik sorulardan biri şudur: Uygulamayı tek parça hâlinde mi tutmalı, yoksa küçük ve bağımsız servisler olarak mı bölmeliyiz? Monolitik ve mikroservis mimarileri, yalnızca kodun klasör yapısını değil; ekip organizasyonunu, dağıtım süreçlerini, maliyeti ve hata yönetimini de belirler. Bu nedenle doğru seçim, modaya değil projenin gerçek ihtiyaçlarına dayanmalıdır.

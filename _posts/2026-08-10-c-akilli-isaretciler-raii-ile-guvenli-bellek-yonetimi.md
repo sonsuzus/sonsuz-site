@@ -9,6 +9,7 @@ tags:
   - smart pointers
   - raıı
 image: /img/c-akilli-isaretciler-76.png
+toc: true
 ---
 
 C++’ta `new` ile bellek ayırmak kolay, onu her yürütme yolunda doğru zamanda `delete` etmek ise şaşırtıcı derecede zordur. Erken `return`, fırlatılan bir istisna veya sahipliği belirsiz bir işaretçi; bellek sızıntısı, çift silme ve geçersiz belleğe erişim gibi klasik hatalara davetiye çıkarır. Modern C++’ın cevabı akıllı işaretçilerdir: Kaynağın ömrünü nesnenin ömrüne bağlayan, RAII tabanlı küçük ama güçlü sınıflar.

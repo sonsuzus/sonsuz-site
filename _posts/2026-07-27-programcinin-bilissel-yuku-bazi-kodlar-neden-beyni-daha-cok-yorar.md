@@ -8,6 +8,7 @@ tags:
   - bilişsel yük
   - kod okunabilirliği
   - çalışan bellek
+toc: true
 ---
 
 Bir kod bloğunu okurken bazen her şey ilk bakışta yerine oturur; bazen de üç satır sonra değişkenlerin neyi temsil ettiğini unutup başa dönersiniz. Sorun her zaman algoritmanın karmaşıklığı değildir. Kod, bilgisayar için kusursuz çalışırken insan zihni için yorucu olabilir. Bunun nedeni, beynimizin aynı anda işleyebildiği bilgi miktarının sınırlı olmasıdır.

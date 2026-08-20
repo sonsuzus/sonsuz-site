@@ -9,6 +9,7 @@ tags:
   - quicksort
   - algoritmik adalet
 image: /img/pivot-kim-olacak-76.png
+toc: true
 ---
 
 Bir sınıftaki öğrencileri nota, çalışanları performansa veya kredi başvurularını risk puanına göre sıraladığımızı düşünelim. İlk bakışta bu işlemler Quicksort’un yaptığına benzer: Bir ölçüt seçilir, herkes bu ölçüte göre gruplara ayrılır ve düzen ortaya çıkar. Ancak insanları sıralarken kullanılan “pivot”, yalnızca teknik bir değişken değildir; fırsatları, görünürlüğü ve gücü belirleyen toplumsal bir tercihe dönüşebilir.

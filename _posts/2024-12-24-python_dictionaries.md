@@ -9,6 +9,7 @@ tags:
   - sözlük
 redirect_from:
   - /posts/python_dictionaries/
+toc: true
 ---
 
 [Anahtar](https://program.sonsuz.us/search.html?q=anahtar) ve [değer](https://program.sonsuz.us/search.html?q=de%C4%9Fer) ikililerinden oluşan sıralanmamış verilerdir. Değere ulaşmak için anahtar adı kullanılır. [Sözlük](https://program.sonsuz.us/search.html?q=s%C3%B6zl%C3%BCk) içindeki verilerin aynı veri türünden olması gerekli değildir. Elemanlar düzenlidir ve elemanlarda değişiklik yapılabilir. Sözlük oluşturmak için parantezler ({ }) içinde anahtar ve değerler ikilisi şeklinde veriler tanımlanır.

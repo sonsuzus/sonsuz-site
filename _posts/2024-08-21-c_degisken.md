@@ -12,6 +12,7 @@ tags:
   - parametre
 redirect_from:
   - /posts/c_degisken/
+toc: true
 ---
 
 

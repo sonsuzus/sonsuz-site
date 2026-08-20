@@ -9,6 +9,7 @@ tags:
   - prototipler
   - kalıtım
 image: /img/javascript-prototipleri-nesnelerin-57.png
+toc: true
 ---
 
 JavaScript’te bir nesne kayıp bir özelliğini nerede arar? Cevap, klasik sınıf tabanlı dillerden biraz farklıdır: başka bir nesnede! JavaScript’in prototip tabanlı kalıtım sistemi, nesnelerin davranış ve özellikleri doğrudan diğer nesnelerden devralmasını sağlar. İlk bakışta gizemli görünen bu mekanizma; nesne metotlarından `class` sözdizimine kadar dilin önemli bir bölümünün perde arkasında çalışır.

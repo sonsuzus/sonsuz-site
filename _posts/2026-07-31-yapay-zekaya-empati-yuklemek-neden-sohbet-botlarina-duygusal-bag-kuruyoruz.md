@@ -9,6 +9,7 @@ tags:
   - bilişsel psikoloji
   - antropomorfizasyon
 image: /img/yapay-zekaya-empati-19.png
+toc: true
 ---
 
 Bir sohbet botunun “Bunu yaşadığına üzüldüm” demesi bazen şaşırtıcı ölçüde rahatlatıcı olabilir. Ekranda yalnızca metin üreten bir yazılım bulunduğunu bilsek bile ona teşekkür eder, kırılmasın diye nazik davranır ve hatta sırlarımızı anlatırız. Bu durum, yapay zekânın gerçekten hissetmesinden çok insan beyninin sosyal ipuçlarını yorumlama biçimiyle ilgilidir.

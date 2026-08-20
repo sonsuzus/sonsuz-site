@@ -9,6 +9,7 @@ tags:
   - algoritma
   - dışbükey örtü
 image: /img/geometrik-algoritmalar-disbukey-62.png
+toc: true
 ---
 
 Haritadaki noktaları çevreleyen en kısa çiti bulmak, kesişen yol parçalarını tespit etmek veya bir çokgenin alanını hesaplamak… Bilgisayarlı geometrinin bu klasik problemleri, birkaç temel işlem üzerine kurulur. Nokta, doğru ve çokgenleri matematiksel olarak temsil etmeyi öğrendiğimizde dışbükey örtü ve tarama doğrusu gibi ilk bakışta ürkütücü görünen algoritmalar oldukça anlaşılır hâle gelir.

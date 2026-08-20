@@ -10,6 +10,7 @@ tags:
   - işaretçi
   - bellek
   - dizi
+toc: true
 ---
 
 İşaretçiler, C++ programlamada bellekteki diğer değişkenlerin adreslerini tutan özel değişkenlerdir. Bellek yönetimi, dinamik veri yapıları oluşturma ve fonksiyonlara argümanları referans yoluyla geçirme gibi birçok güçlü programlama tekniği için temel teşkil ederler.

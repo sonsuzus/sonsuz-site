@@ -12,6 +12,7 @@ tags:
   - liste
 redirect_from:
   - /posts/python-programlamaya-giris-sirali-nesnelerle-islemler/
+toc: true
 ---
 
 

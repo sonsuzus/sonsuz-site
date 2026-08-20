@@ -9,6 +9,7 @@ tags:
   - doh
   - gizlilik
   - ağ güvenliği
+toc: true
 ---
 
 İnternette bir siteye girmeden önce tarayıcınızın yaptığı ilk iş, alan adını IP adresine çevirmektir. Klasik DNS sorguları çoğu zaman şifresiz taşındığından, aynı ağdaki bir gözlemci hangi alan adlarını ziyaret etmek istediğinizi görebilir. DNS-over-HTTPS (DoH), bu sorguları HTTPS trafiğinin içine alarak meraklı ağ yöneticileri, açık Wi-Fi dinleyicileri ve bazı servis sağlayıcıları için görünürlüğü önemli ölçüde azaltır.

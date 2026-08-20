@@ -9,6 +9,7 @@ tags:
   - programlama
 redirect_from:
   - /posts/cpp_degisken/
+toc: true
 ---
 
 

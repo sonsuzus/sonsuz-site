@@ -9,6 +9,7 @@ tags:
   - 3b-render
   - python
 image: /img/ray-tracing-ile-69.png
+toc: true
 ---
 
 Bir ışık ışınının kameradan çıkıp sahnedeki nesnelere çarptığını, oradan ışık kaynaklarına ve aynalara doğru sekerek yolculuğunu sürdürdüğünü hayal edin. Ray tracing, gerçek dünyadaki optik davranışları ters yönde izleyerek yansıma, aydınlatma ve gölgeleri hesaplar. Bu projede kürelerden oluşan küçük bir sahneyi render eden, gölge ışınları ve yansımalar kullanan basit bir Python motoru kuracağız.

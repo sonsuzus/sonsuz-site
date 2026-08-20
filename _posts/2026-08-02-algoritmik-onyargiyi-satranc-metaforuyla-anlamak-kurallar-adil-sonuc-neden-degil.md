@@ -9,6 +9,7 @@ tags:
   - etik
   - kural tabanlı sistemler
 image: /img/algoritmik-onyargiyi-satranc-90.png
+toc: true
 ---
 
 ![algoritmik-onyargiyi-satranc-90](/img/algoritmik-onyargiyi-satranc-90.svg)

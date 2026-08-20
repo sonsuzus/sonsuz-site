@@ -9,6 +9,7 @@ tags:
   - hata-yönetimi
   - panic-recover
 image: /img/hata-yonetimi-error-39.png
+toc: true
 ---
 
 Bir programın gerçek dünyayla ilk teması genellikle bir hatadır: dosya yoktur, ağ isteği zaman aşımına uğrar, kullanıcı sayı yerine “patates” yazar. Bazı diller bu anlarda istisna fırlatıp akışı dramatik biçimde keserken, Go gibi yaklaşımlar hatayı sıradan bir değer olarak masaya koyar. Yani hata, programın çökmesine çalışan bir canavar değil; kontrol edilmesi gereken bir dönüş değeridir.

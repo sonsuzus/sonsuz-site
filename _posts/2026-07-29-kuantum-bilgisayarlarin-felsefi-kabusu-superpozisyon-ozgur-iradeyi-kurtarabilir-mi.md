@@ -9,6 +9,7 @@ tags:
   - özgür irade
   - determinizm
 image: /img/kuantum-bilgisayarlarin-felsefi-56.png
+toc: true
 ---
 
 Klasik bilgisayarların dünyasında bitler uslu çocuklardır: Ya 0’dırlar ya da 1. Kuantum bilgisayarlardaki kübitler ise ölçülene kadar her iki olasılığı da taşıyabilir. Bu tuhaflık, “Evren önceden yazılmış bir program mı?” sorusunu yeniden gündeme getiriyor. Fakat küçük bir uyarı: Bir kübitin kararsız görünmesi, insanın özgür olduğu anlamına otomatik olarak gelmez.

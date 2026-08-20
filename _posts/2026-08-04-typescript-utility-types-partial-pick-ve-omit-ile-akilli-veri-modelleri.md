@@ -8,6 +8,7 @@ tags:
   - typescript
   - utility types
   - tip güvenliği
+toc: true
 ---
 
 Bir kullanıcı modeliniz olduğunu ve kayıt, güncelleme, listeleme gibi her işlem için neredeyse aynı arayüzü tekrar tekrar yazdığınızı düşünün. TypeScript’in yerleşik yardımcı tipleri tam bu noktada devreye girer. `Partial`, `Pick` ve `Omit`, mevcut bir veri modelini kopyalamadan dönüştürmemizi sağlar; böylece hem kod tekrarı azalır hem de modeller arasındaki ilişki derleyici tarafından korunur.

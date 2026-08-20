@@ -10,6 +10,7 @@ tags:
   - tip
 redirect_from:
   - /posts/js-veri-tipleri/
+toc: true
 ---
 
 

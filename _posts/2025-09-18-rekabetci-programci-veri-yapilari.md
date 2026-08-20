@@ -19,6 +19,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 [Veri yapısı](https://program.sonsuz.us/search.html?q=veri%20yap%C4%B1s%C4%B1), bilgisayarın hafızasında veri saklamak için bir yoldur. Ele alınan problem için uygun bir veri yapısı seçimi yapmak önemlidir çünkü her veri yapısının kendine göre avantajları ve dezavantajları bulunmaktadır. Bu noktada cevaplanması gereken ana soru, hangi işlemlerin seçtiğimiz veri yapısında verimli olacağıdır.

@@ -10,6 +10,7 @@ tags:
   - metod
 redirect_from:
   - /posts/python-programlamaya-giris-16-dize-bicimlendirme/
+toc: true
 ---
 
 

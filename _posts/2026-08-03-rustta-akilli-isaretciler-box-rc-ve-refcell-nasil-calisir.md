@@ -9,6 +9,7 @@ tags:
   - akıllı işaretçiler
   - bellek yönetimi
 image: /img/rustta-akilli-isaretciler-11.png
+toc: true
 ---
 
 Rust, çöp toplayıcı kullanmadan bellek güvenliği sağlamasıyla ünlüdür. Ancak boyutu derleme anında bilinmeyen veriler, birden fazla sahip gerektiren nesneler veya çalışma zamanında değişebilirlik isteyen yapılar, temel sahiplik kurallarının ötesine geçmemizi gerektirir. İşte `Box`, `Rc` ve `RefCell`, heap belleğin karanlık koridorlarında el feneri görevi görür.

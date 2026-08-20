@@ -20,6 +20,7 @@ tags:
   - metod
 redirect_from:
   - /posts/python-programlama-ders-08/
+toc: true
 ---
 
 

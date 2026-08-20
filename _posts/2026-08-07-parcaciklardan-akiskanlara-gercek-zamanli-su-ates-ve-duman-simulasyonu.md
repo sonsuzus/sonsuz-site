@@ -9,6 +9,7 @@ tags:
   - fizik motoru
   - akışkan simülasyonu
 image: /img/parcaciklardan-akiskanlara-gercek-89.png
+toc: true
 ---
 
 Bir avuç noktanın su gibi akmasını, ateş gibi yükselmesini veya duman gibi havada süzülmesini sağlamak ilk bakışta büyücülük gibi görünebilir. Oysa gerçek zamanlı akışkan simülasyonlarının temelinde parçacıklar, kuvvetler ve her karede tekrarlanan birkaç fizik hesabı bulunur. Tam ölçekli bilimsel doğruluk yerine görsel inandırıcılığı hedefleyerek tarayıcıda bile çalışan eğlenceli bir mini fizik motoru geliştirebiliriz.

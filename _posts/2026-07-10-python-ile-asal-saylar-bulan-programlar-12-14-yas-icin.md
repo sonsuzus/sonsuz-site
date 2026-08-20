@@ -9,6 +9,7 @@ tags:
   - asal sayılar
   - başlangıç seviyesi
   - algoritma
+toc: true
 ---
 
 Bu yazıda Python kullanarak **asal sayıları bulan programlar** yazacağız. Konu, 12-14 yaş seviyesine uygun olacak şekilde basit örneklerle anlatılmıştır.

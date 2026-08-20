@@ -9,6 +9,7 @@ tags:
   - kalıtım
   - çok biçimlilik
 image: /img/kalitim-ve-cok-52.png
+toc: true
 ---
 
 ![kalitim-ve-cok-52](/img/kalitim-ve-cok-52.svg)

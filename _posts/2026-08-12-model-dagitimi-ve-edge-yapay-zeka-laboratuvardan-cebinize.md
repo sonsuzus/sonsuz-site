@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - model deployment
   - edge ai
+toc: true
 ---
 
 Bir makine öğrenmesi modelinin yüksek doğrulukla eğitilmesi, ürün yolculuğunun yalnızca başlangıcıdır. Asıl heyecanlı bölüm, modelin gerçek kullanıcıların fotoğraflarını sınıflandırdığı, sesli komutlarını anladığı veya dolandırıcılık işlemlerini yakaladığı **dağıtım (deployment)** aşamasıdır. Bu aşamada model; bulutta çalışan bir web API'sine, bir mobil uygulamaya, akıllı saate ya da internet bağlantısı sınırlı bir cihaza yerleştirilir.

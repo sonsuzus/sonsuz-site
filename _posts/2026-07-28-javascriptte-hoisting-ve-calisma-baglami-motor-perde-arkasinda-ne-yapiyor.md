@@ -9,6 +9,7 @@ tags:
   - hoisting
   - execution context
 image: /img/javascriptte-hoisting-ve-18.png
+toc: true
 ---
 
 JavaScript kodu satır satır çalışan basit bir tarif gibi görünür; ancak motor, ilk satırı yürütmeden önce mutfağı çoktan düzenlemiştir. Değişken ve fonksiyon bildirimleri için bellek ayırır, kapsamları oluşturur ve erişim kurallarını belirler. **Hoisting** adı verilen davranış, bildirimlerin gerçekten kaynak kodun başına taşınması değil, çalışma bağlamının hazırlanma aşamasında belleğe kaydedilmesidir. Bu ayrım bilinmediğinde kod, küçük bir sihir gösterisinden hızla hata avına dönüşebilir.

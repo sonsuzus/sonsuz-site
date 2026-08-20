@@ -13,6 +13,7 @@ tags:
   - çokuz
 redirect_from:
   - /posts/python-programlamaya-giris-sayilar-aritmetik-temel-veri-yapilari/
+toc: true
 ---
 
 

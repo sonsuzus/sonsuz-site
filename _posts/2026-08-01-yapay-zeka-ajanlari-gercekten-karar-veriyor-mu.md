@@ -8,6 +8,7 @@ tags:
   - yapay zekâ
   - özerk ajanlar
   - makine etiği
+toc: true
 ---
 
 Bir yapay zekâ ajanı e-posta gönderdiğinde, hisse senedi aldığında veya bir robotun yönünü değiştirdiğinde genellikle “karar verdi” deriz. Ancak bu ifade, gündelik dilin kullanışlı bir kısaltması mı, yoksa sistemin gerçekten özerk ve niyet sahibi olduğunu mu gösteriyor? Yanıt, karar kavramını hangi teknik ve felsefi ölçütlerle tanımladığımıza bağlı.

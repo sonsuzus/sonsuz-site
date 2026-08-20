@@ -12,6 +12,7 @@ tags:
   - taklit
 redirect_from:
   - /posts/simulasyon-nedir/
+toc: true
 ---
 
 ![](/img/simulasyon.jpg) Günümüzde, simülasyonlar giderek daha fazla önem kazanmaktadır. Simülasyonlar, gerçek

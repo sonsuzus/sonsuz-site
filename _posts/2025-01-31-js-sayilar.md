@@ -10,6 +10,7 @@ tags:
   - sayı
 redirect_from:
   - /posts/js-sayilar/
+toc: true
 ---
 
 Javascript 'de bir sayı veri türü vardır. Tanımladığımız her sayısal veri tam sayı ya da ondalıklı sayı olabilir. 

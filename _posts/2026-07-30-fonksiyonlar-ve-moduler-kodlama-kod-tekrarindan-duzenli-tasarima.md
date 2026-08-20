@@ -8,6 +8,7 @@ tags:
   - fonksiyonlar
   - modüler programlama
   - temiz kod
+toc: true
 ---
 
 Bir program büyüdükçe aynı işlemleri yapan kod satırları farklı yerlerde tekrar belirmeye başlar. Başlangıçta masum görünen bu kopyalar, değişiklik zamanı geldiğinde küçük birer baş ağrısı fabrikasına dönüşür. Fonksiyonlar, belirli bir görevi yerine getiren kod bloklarını isimlendirip ihtiyaç duyduğumuzda çağırmamızı sağlar. Böylece program, devasa bir komut yığını yerine anlaşılır ve yeniden kullanılabilir parçalardan oluşur.

@@ -11,6 +11,7 @@ tags:
   - olasılık
   - simülasyon
 math: true
+toc: true
 ---
 
 Bir [kurbağa](https://program.sonsuz.us/search.html?q=kurba%C4%9Fa) düşünelim: her sıçrayışında ya bir ya da iki [basamak](https://program.sonsuz.us/search.html?q=basamak) yukarı çıkıyor. Amacı 75. basamağa ulaşmak. Ancak ortada bir tehlike var: 38. basamak **[kırık](https://program.sonsuz.us/search.html?q=k%C4%B1r%C4%B1k)** ve kurbağa o basamağa basarsa düşüyor. Bu yazıda, bu eğlenceli ama çetin problemi hem simülasyonla hem de matematiksel yöntemlerle ele alacağız.

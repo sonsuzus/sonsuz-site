@@ -8,6 +8,7 @@ tags:
   - big o
   - algoritma analizi
   - zaman karmaşıklığı
+toc: true
 ---
 
 Bir problemi çözen ilk algoritmayı bulmak güzeldir; ancak milyonlarca veri geldiğinde hâlâ çalışan algoritmayı bulmak çok daha güzeldir. Big O notasyonu, farklı algoritmaların veri büyüdükçe nasıl davranacağını karşılaştırmamızı sağlar. Böylece yalnızca çalışan değil, zaman ve bellek açısından sürdürülebilir çözümler seçebiliriz.

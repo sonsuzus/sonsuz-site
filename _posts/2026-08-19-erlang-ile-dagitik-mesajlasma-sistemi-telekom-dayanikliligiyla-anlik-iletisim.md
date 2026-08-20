@@ -10,6 +10,7 @@ tags:
   - mesajlaşma
   - otp
   - fault tolerance
+toc: true
 ---
 
 Anlık mesajlaşma sunucusu yazmak, ekrana iki baloncuk düşürmekten çok daha fazlasıdır: Kullanıcılar çevrimdışı olabilir, makineler kapanabilir, ağ paketleri kaybolabilir ve en kritik anda bir süreç çökebilir. Erlang tam bu kaosun içinden doğdu. Telekom santrallerinin yıllarca durmadan çalışması hedefiyle tasarlanan dil; hafif süreçler, mesaj geçirme, denetim ağaçları ve dağıtık düğümler sayesinde sohbet sistemlerine doğal bir dayanıklılık kazandırır.

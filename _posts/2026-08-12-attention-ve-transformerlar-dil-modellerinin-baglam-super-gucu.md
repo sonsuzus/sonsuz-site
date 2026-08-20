@@ -9,6 +9,7 @@ tags:
   - transformer
   - attention
 image: /img/attention-ve-transformerlar-13.png
+toc: true
 ---
 
 Bir cümledeki her kelime eşit derecede önemli değildir: “Banka nehir kenarında yeni bir şube açtı” ifadesinde *banka* kelimesinin anlamını çözmek için “nehir kenarında” bölümü kritik ipucudur. Modern dil modelleri bu tür bağlantıları, dikkat (attention) mekanizması sayesinde yakalar. Transformer mimarisi ise bu mekanizmayı merkeze alarak sıralı işlem zorunluluğunu azaltmış, büyük ölçekli dil modellerinin önünü açmıştır.

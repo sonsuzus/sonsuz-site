@@ -10,6 +10,7 @@ tags:
   - web-sunucusu
   - standart-kutuphane
 image: /img/go-ile-temel-14.png
+toc: true
 ---
 
 ![go-ile-temel-14](/img/go-ile-temel-14.svg)

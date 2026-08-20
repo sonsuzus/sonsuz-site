@@ -8,6 +8,7 @@ tags:
   - yazılım mühendisliği
   - mükemmeliyetçilik
   - refactoring
+toc: true
 ---
 
 Bir özellik testlerden geçiyor, gereksinimleri karşılıyor ve kullanıcıya değer sunuyor. Yine de içimizdeki küçük yazılım mimarı fısıldıyor: “Şu sınıfı da bölelim, isimleri düzeltelim, hatta altyapıyı baştan yazalım.” Böylece iki saatlik görev, üç günlük mimari yolculuğa dönüşüyor. Refactoring yararlı bir pratik olsa da kusursuzluk arayışının bahanesine dönüştüğünde teslim tarihlerini, ekip güvenini ve geliştiricinin psikolojik dayanıklılığını tehdit edebilir.

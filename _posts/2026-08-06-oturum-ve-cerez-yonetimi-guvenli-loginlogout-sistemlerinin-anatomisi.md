@@ -8,6 +8,7 @@ tags:
   - session
   - cookie
   - kimlik doğrulama
+toc: true
 ---
 
 Bir kullanıcı giriş yaptığında uygulamanın onu sonraki istekte hatırlaması gerekir. HTTP ise doğası gereği durumsuzdur; yani sunucu, arka arkaya gelen iki isteğin aynı kişiye ait olduğunu kendiliğinden bilmez. Oturum ve çerez mekanizmaları bu hafıza problemini çözer. Biri bilgiyi çoğunlukla sunucuda, diğeri tarayıcıda taşır; doğru kullanıldıklarında güvenli ve akıcı bir kullanıcı deneyimi oluştururlar.

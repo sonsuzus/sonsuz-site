@@ -9,6 +9,7 @@ tags:
   - sosyal medya algoritmaları
   - dikkat ekonomisi
 image: /img/sosyal-medya-algoritmalarinin-54.png
+toc: true
 ---
 
 Bir sosyal medya uygulamasını “yalnızca beş dakika” kullanmak için açıp kırk dakika sonra kendinizi hiç tanımadığınız insanların tartışmasını izlerken bulduysanız, bu sadece irade eksikliği değildir. Kullanıcılar, içerik üreticileri, reklamverenler ve platform aynı oyun masasında farklı ödüllerin peşindedir. Algoritma ise tarafsız bir krupiye değil; masanın kurallarını belirleyen ve oyun uzadıkça kazanan işletmecidir.

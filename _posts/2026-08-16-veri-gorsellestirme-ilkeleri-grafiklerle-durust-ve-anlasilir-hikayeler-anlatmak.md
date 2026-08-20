@@ -10,6 +10,7 @@ tags:
   - istatistik
   - python
   - tasarım
+toc: true
 ---
 
 Karmaşık bir veri kümesi, doğru görselleştirildiğinde onlarca sütun ve binlerce satır yerine birkaç saniyede kavranabilen bir hikâyeye dönüşür. Ancak grafikler yalnızca estetik araçlar değildir: eksen seçimi, renk, ölçek ve bağlam kararları okuyucunun sonucu nasıl yorumlayacağını doğrudan etkiler. İyi bir görselleştirme, veriyi “daha güzel” değil; daha doğru, daha erişilebilir ve daha sorgulanabilir hâle getirir.

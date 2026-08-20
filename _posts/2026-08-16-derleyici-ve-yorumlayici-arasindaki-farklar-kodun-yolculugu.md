@@ -9,6 +9,7 @@ tags:
   - yorumlayıcı
   - programlama
   - makine dili
+toc: true
 ---
 
 Bir program yazdığınızda bilgisayar aslında `if`, `while` ya da `print` kelimelerinin ne anlama geldiğini doğrudan bilmez. İşlemcinin anlayabildiği şey, makine komutları olarak adlandırılan ikili talimatlardır. Kaynak kod ile işlemci arasındaki tercümanlık görevini ise iki temel yaklaşım üstlenir: **derleme (compilation)** ve **yorumlama (interpretation)**. Bu fark yalnızca programın ne kadar hızlı açıldığını değil; hata ayıklama, dağıtım, taşınabilirlik ve güvenlik tercihlerini de etkiler.

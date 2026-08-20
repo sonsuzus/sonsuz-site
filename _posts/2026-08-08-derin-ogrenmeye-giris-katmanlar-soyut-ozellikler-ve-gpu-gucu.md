@@ -9,6 +9,7 @@ tags:
   - yapay sinir ağları
   - gpu
 image: /img/derin-ogrenmeye-giris-29.png
+toc: true
 ---
 
 Bir bilgisayara kediyi tanımayı öğretmek istediğimizi düşünelim. Geleneksel yaklaşımda sivri kulak, bıyık ve kuyruk gibi özellikleri tek tek tarif etmemiz gerekebilir. Derin öğrenmede ise modele yeterli sayıda örnek gösteririz; hangi ayrıntıların önemli olduğunu katmanlar boyunca kendisi keşfeder. İşin büyülü görünen, fakat matematik ve bol miktarda hesaplama gücüne dayanan kısmı tam olarak budur.

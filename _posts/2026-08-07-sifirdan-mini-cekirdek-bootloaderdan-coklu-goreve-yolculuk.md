@@ -8,6 +8,7 @@ tags:
   - işletim sistemi
   - kernel geliştirme
   - multitasking
+toc: true
 ---
 
 Bilgisayar açıldığında bizi masaüstü, pencereler ve uygulamalar karşılamadan önce oldukça ilkel bir dünya vardır. İşlemci, bellekteki belirli bir adresten komut yürütmeye başlar; ne dosya sistemi ne süreçler ne de yardım isteyebileceğimiz bir işletim sistemi bulunur. Bu projede x86 mimarisi üzerinde küçük bir çekirdek geliştirerek bootloader, korumalı kip, kesmeler ve çoklu görev arasındaki zinciri kuracağız.

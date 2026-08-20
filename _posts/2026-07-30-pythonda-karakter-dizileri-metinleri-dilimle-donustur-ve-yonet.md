@@ -9,6 +9,7 @@ tags:
   - string
   - metin işleme
 image: /img/pythonda-karakter-dizileri-69.png
+toc: true
 ---
 
 Programlama dünyasında isimlerden e-posta adreslerine, kullanıcı mesajlarından dosya içeriklerine kadar pek çok veri metin biçiminde karşımıza çıkar. Python, bu metinleri `str` yani karakter dizisi türüyle temsil eder. String’leri yalnızca ekrana yazdırılan cümleler olarak değil, indekslenebilen ve güçlü metotlarla dönüştürülebilen karakter koleksiyonları olarak düşünmek gerekir.

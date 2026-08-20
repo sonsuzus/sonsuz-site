@@ -11,6 +11,7 @@ tags:
   - backtracking
   - web
 image: /img/javascript-ile-mantik-65.png
+toc: true
 ---
 
 Bir Sudoku karesine bakıp beyninizin fanlarının hızlandığını hissettiyseniz, yalnız değilsiniz. Güzel haber şu: JavaScript ile tarayıcı üzerinde çalışan, hem bulmacayı çözen hem de çözüm adımlarını görselleştiren etkileşimli çözücüler yazabiliriz. Bu yazıda mantık bulmacalarını sadece kodla çözmeyi değil, algoritmanın nasıl düşündüğünü kullanıcıya sahne sahne göstermeyi konuşacağız.

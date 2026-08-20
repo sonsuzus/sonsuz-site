@@ -9,6 +9,7 @@ tags:
   - üretken sanat
   - bilgisayarlı görü
 image: /img/yapay-zeka-bir-38.png
+toc: true
 ---
 
 Bir görsel üreticiye “yağmurlu bir İstanbul akşamını Van Gogh tarzında çiz” dediğimizde ortaya çıkan görüntü bizi şaşırtabilir. Model; yağmuru, İstanbul’u ve Van Gogh’u gerçekten görmüş, hatta anlamış gibi davranır. Peki ortada bir görme deneyimi mi vardır, yoksa yalnızca matematiksel örüntülerin ustaca yeniden düzenlenmesi mi? Bu soru, yapay zekâ sanatını teknik olduğu kadar felsefi bir tartışmaya dönüştürüyor.

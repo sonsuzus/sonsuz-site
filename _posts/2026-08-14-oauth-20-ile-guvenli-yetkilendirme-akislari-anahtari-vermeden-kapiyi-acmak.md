@@ -9,6 +9,7 @@ tags:
   - kimlik doğrulama
   - apı güvenliği
 image: /img/oauth-20-ile-41.png
+toc: true
 ---
 
 Bir uygulamanın kullanıcı adına Google Drive dosyalarına erişmesi, GitHub depolarını listelemesi veya Spotify çalma listesi oluşturması sık rastlanan bir ihtiyaçtır. Ancak uygulamanın kullanıcının parolasını istemesi hem tehlikeli hem de gereksizdir. OAuth 2.0, parolayı paylaşmadan, sınırlı ve süreli erişim izinleri vermeyi sağlayan yetkilendirme çerçevesidir. Kısacası uygulamaya evinizin anahtarını değil, yalnızca belirli odalara girebilen ve süresi dolan bir ziyaretçi kartı verirsiniz.

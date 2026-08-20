@@ -13,6 +13,7 @@ tags:
   - atama
 redirect_from:
   - /posts/python_operators/
+toc: true
 ---
 
 Python'da işlemciler ile değişkenler ve sabitler üzerinde işlem yapılır. Python'da, aşağıda gösterilen 7 kategori içinde sınıflandırılan toplam 27 adet işlemci kullanılır.

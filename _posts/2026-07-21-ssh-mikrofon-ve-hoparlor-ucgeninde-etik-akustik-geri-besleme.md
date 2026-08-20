@@ -10,6 +10,7 @@ tags:
   - linux
   - etik güvenlik
 image: /img/ssh-mikrofon-ve-10.png
+toc: true
 ---
 
 ![ssh-mikrofon-ve-10](/img/ssh-mikrofon-ve-10.svg)

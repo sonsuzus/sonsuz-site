@@ -8,6 +8,7 @@ tags:
   - linux
   - sistem yönetimi
   - log analizi
+toc: true
 ---
 
 Bir bilgisayar sustuğunda bile geçmişi konuşmaya devam eder: log dosyaları, sistemin tuttuğu olay günlüğüdür. Başarısız bir SSH denemesi, gece yarısı yeniden başlayan bir servis, dolan disk ya da çöken bir uygulama; hepsi doğru katmanda iz bırakır. Bu nedenle `/var/log`, yalnızca hata ayıklama klasörü değil, dijital arkeoloğun kazı alanıdır. Amaç tek satırdaki hatayı bulmak değil; zaman, süreç ve neden-sonuç bağlamını birleştirerek sistemin hikâyesini yeniden kurmaktır.

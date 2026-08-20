@@ -9,6 +9,7 @@ tags:
   - conway-hayat-oyunu
   - algoritma
 image: /img/conwayin-hayat-oyununa-44.png
+toc: true
 ---
 
 ![conwayin-hayat-oyununa-44](/img/conwayin-hayat-oyununa-44.svg)

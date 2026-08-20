@@ -8,6 +8,7 @@ tags:
   - llm
   - istem mühendisliği
   - fine-tuning
+toc: true
 ---
 
 Bir büyük dil modeliyle sohbet etmek bazen her şeyi bilen bir kütüphaneciyle, bazen de özgüveni bilgisinden yüksek bir stajyerle konuşmaya benzer. Sonuçların arasındaki bu fark yalnızca modelin büyüklüğünden değil; eğitim verisinden, ince ayar yönteminden, bağlam penceresinden ve yazdığımız istemin kalitesinden doğar. Milyarlarca parametre etkileyici görünse de modeli gerçekten kullanışlı yapan şey, bu dev matematik makinesinin nasıl yönlendirildiğini anlamaktır.

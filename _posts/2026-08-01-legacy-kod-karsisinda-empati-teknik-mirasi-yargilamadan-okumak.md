@@ -8,6 +8,7 @@ tags:
   - legacy-code
   - yazılım-kültürü
   - teknik-borç
+toc: true
 ---
 
 Bir gün yıllardır çalışan bir projeyi açar, 900 satırlık bir metotla karşılaşır ve refleks olarak “Bunu kim yazdı?” diye sorarsınız. Git geçmişi birkaç saniye sonra cevabı verir: Üç yıl önce siz! Legacy kod, yalnızca eski kod değildir; geçmiş kararların, teslim tarihlerinin, eksik bilgilerin ve değişen ihtiyaçların donmuş hâlidir. Bu nedenle onu anlamanın ilk adımı, suçlu aramak yerine dönemin koşullarını araştırmaktır.

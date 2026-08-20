@@ -11,6 +11,7 @@ tags:
   - metot
 redirect_from:
   - /posts/js-string-metotlari/
+toc: true
 ---
 
 

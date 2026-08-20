@@ -8,6 +8,7 @@ tags:
   - php
   - diziler
   - döngüler
+toc: true
 ---
 
 Bir web sayfasındaki ürün kartlarını tek tek elle yazmak, aynı şarkıyı yüz kez başa sarmaya benzer: yapılabilir ama hiç eğlenceli değildir. Diziler verileri düzenli biçimde saklarken `for` ve `foreach` döngüleri bu verileri sırayla işler. Böylece birkaç satırlık PHP koduyla onlarca HTML bloğunu dinamik, tutarlı ve kolay güncellenebilir biçimde ekrana basabiliriz.

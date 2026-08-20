@@ -9,6 +9,7 @@ tags:
   - rtos
   - gömülü sistemler
 image: /img/mikrodenetleyicide-rtos-mantigiyla-17.png
+toc: true
 ---
 
 ![mikrodenetleyicide-rtos-mantigiyla-17](/img/mikrodenetleyicide-rtos-mantigiyla-17.svg)

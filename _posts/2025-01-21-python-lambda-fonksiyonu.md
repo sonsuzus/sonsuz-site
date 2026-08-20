@@ -10,6 +10,7 @@ tags:
   - filter
 redirect_from:
   - /posts/python-lambda-fonksiyonu/
+toc: true
 ---
 
 

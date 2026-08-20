@@ -10,6 +10,7 @@ tags:
   - veritabanı
   - arama motoru
 image: /img/sql-ve-tam-36.png
+toc: true
 ---
 
 Bir forumda yüz binlerce tartışma, bir blogda yıllarca birikmiş yazılar olduğunu düşünün. Kullanıcı arama kutusuna sadece iki kelime yazar: SQL indeks. Beklentisi nettir: saniyeler değil, milisaniyeler içinde en alakalı sonuçlar gelsin. İşte SQL tabanlı tam metin arama, klasik LIKE sorgularının el feneriyle mağara gezmesine benzeyen dünyasından çıkıp, elimize projektör ve harita verdiğimiz yerdir.

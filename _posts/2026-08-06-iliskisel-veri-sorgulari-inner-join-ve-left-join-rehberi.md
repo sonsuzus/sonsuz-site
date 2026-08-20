@@ -8,6 +8,7 @@ tags:
   - sql
   - joın
   - veritabanı
+toc: true
 ---
 
 Bir e-ticaret sisteminde müşteriler bir tabloda, siparişler başka bir tabloda tutulur. Peki “Hangi müşteri hangi siparişi verdi?” sorusunu nasıl yanıtlarız? SQL dünyasının çöpçatanı `JOIN`, farklı tablolardaki ilişkili satırları ortak sütunlar üzerinden buluşturur ve sonuçları tek bir sanal tablo gibi sunar.

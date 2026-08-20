@@ -13,6 +13,7 @@ tags:
   - dinamik dizi
 redirect_from:
   - /posts/cpp-vektor-kullanimi/
+toc: true
 ---
 
 Bu yazıda, C++ Standart Kütüphanesi'nin (STL - Standard Template Library) en güçlü ve sık kullanılan veri yapılarından biri olan **vektörleri (vectors)** detaylı bir şekilde inceleyeceğiz. [Vektörler](https://program.sonsuz.us/search.html?q=vekt%C3%B6rler), C++ programcılarına dinamik boyutlu dizilerle çalışma imkanı sunarak bellek yönetimi ve veri depolama konularında büyük kolaylık sağlar. Gelin, vektörlerin ne olduğuna, nasıl kullanıldığına ve geleneksel C-stili dizilere göre avantajlarına birlikte göz atalım.

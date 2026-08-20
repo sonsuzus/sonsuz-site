@@ -10,6 +10,7 @@ tags:
   - preprocessor
   - derleme
   - makro
+toc: true
 ---
 
 C ve C++ kodu, derleyicinin eline doğrudan yazdığımız hâliyle ulaşmaz. Arada metin tabanlı ama etkisi büyük bir aşama vardır: **ön işlemci** (preprocessor). `#include`, `#define` ve `#ifdef` gibi satırlarla çalışan bu mekanizma, kaynak kodu derlenmeden hemen önce dönüştürür. Bunu bir tiyatro oyununun sahne arkası ekibi gibi düşünebilirsiniz: oyuncular (derleyici) sahneye çıkmadan dekorlar yerleşir, bazı replikler değiştirilir ve şartlara uymayan sahneler tamamen kaldırılır.

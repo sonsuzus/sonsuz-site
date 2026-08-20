@@ -10,6 +10,7 @@ tags:
   - veri görselleştirme
   - 3d grafik
 image: /img/javascript-ile-uc-66.png
+toc: true
 ---
 
 Bir tablo düşünün: binlerce satır, onlarca metrik, ilişkiler, kümeler ve zaman değişimleri... Excel bile iç çekiyor. İşte JavaScript ile üç boyutlu veri görselleştirme, bu karmaşayı döndürülebilir, yakınlaştırılabilir ve keşfedilebilir bir sahneye çevirir. Kullanıcı yalnızca grafiğe bakmaz; grafiğin içinde gezinir, düğümlere tıklar, kümeleri ayırır ve istatistiğin sakladığı hikâyeyi daha sezgisel biçimde yakalar.

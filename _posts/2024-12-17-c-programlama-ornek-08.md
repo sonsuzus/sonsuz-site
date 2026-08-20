@@ -13,6 +13,7 @@ tags:
   - data
 redirect_from:
   - /posts/c-programlama-ornek-08/
+toc: true
 ---
 
 ## C Program Tek Bağlı Liste (Singly Linked List) Uygulaması

@@ -9,6 +9,7 @@ tags:
   - dağıtık ekipler
   - saat dilimleri
 image: /img/dagitik-ekiplerde-ortak-67.png
+toc: true
 ---
 
 Uzaktan çalışma ofisi ortadan kaldırırken zamanı da görünmez biçimde yeniden tasarladı. İstanbul’daki bir geliştirici güne başlarken San Francisco’daki ekip arkadaşı uyuyor, Tokyo’daki tasarımcı ise bilgisayarını kapatıyor olabilir. Böyle bir ekipte “hemen konuşalım” masum bir öneri değil, coğrafi bir ayrıcalıktır. Ortak bir “şimdi” yaratmak, herkesi aynı anda çevrim içi tutmak değil; eşzamanlı ve eşzamansız çalışmayı bilinçli biçimde dengelemektir.

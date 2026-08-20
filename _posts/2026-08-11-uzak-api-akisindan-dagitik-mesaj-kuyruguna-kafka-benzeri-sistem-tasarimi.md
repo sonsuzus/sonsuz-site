@@ -9,6 +9,7 @@ tags:
   - kafka
   - dağıtık sistemler
 image: /img/uzak-api-akisindan-71.png
+toc: true
 ---
 
 ![uzak-api-akisindan-71](/img/uzak-api-akisindan-71.svg)

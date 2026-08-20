@@ -8,6 +8,7 @@ tags:
   - veri yapıları
   - bellek yönetimi
   - c++ vector
+toc: true
 ---
 
 Sabit boyutlu bir dizi, kaç misafir geleceğini aylar öncesinden bilerek masa hazırlamaya benzer. Dinamik koleksiyon ise kapı çaldıkça masaya yeni sandalye ekler; gerektiğinde sandalyeleri kaldırır. Vektörler bu esnekliği sunarken arka planda heap belleği, kapasite hesaplarını ve eleman taşıma işlemlerini yönetir.

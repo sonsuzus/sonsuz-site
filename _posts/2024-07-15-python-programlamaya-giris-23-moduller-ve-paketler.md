@@ -9,6 +9,7 @@ tags:
   - paket
   - kütüphane
 
+toc: true
 ---
 
 

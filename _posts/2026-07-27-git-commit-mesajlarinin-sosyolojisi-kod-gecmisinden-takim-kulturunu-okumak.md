@@ -9,6 +9,7 @@ tags:
   - takım kültürü
   - yazılım geliştirme
 image: /img/git-commit-mesajlarinin-65.png
+toc: true
 ---
 
 ![git-commit-mesajlarinin-65](/img/git-commit-mesajlarinin-65.svg)

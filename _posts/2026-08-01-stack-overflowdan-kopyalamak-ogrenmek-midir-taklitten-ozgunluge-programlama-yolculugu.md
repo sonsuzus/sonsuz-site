@@ -9,6 +9,7 @@ tags:
   - stack overflow
   - yazılım pedagojisi
 image: /img/stack-overflowdan-kopyalamak-59.png
+toc: true
 ---
 
 Bir hata mesajını arama motoruna yapıştırıp Stack Overflow’daki en yüksek oylu cevabı koda eklemek, yazılımcıların gizli kabul töreni gibidir. Kod çalışınca kısa süreliğine dâhi hissederiz; fakat aynı sorun ertesi gün geri döndüğünde büyü bozulur. Öyleyse kopyalamak gerçekten öğrenmek midir, yoksa yalnızca çalışan bir sonuca ulaşmanın hızlı yolu mudur?

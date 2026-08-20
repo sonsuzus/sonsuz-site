@@ -8,6 +8,7 @@ tags:
   - teknik borç
   - yazılım etiği
   - sürdürülebilir yazılım
+toc: true
 ---
 
 Teknik borç çoğu zaman eski kod, eksik test veya aceleyle verilmiş mimari kararlar şeklinde tanımlanır. Ancak mesele yalnızca kod kalitesi değildir. Bugün birkaç saat kazanmak için seçtiğimiz kestirme yol, aylar sonra sistemi devralan başka bir geliştiricinin gecesini, dikkatini ve hatta sağlığını tüketebilir. Bu nedenle teknik borç, ekonomik bir metafor olmanın ötesinde, yazılım ekiplerinin farklı kuşakları arasında aktarılan etik bir yükümlülüktür.

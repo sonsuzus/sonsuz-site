@@ -9,6 +9,7 @@ tags:
   - açık kaynak
   - yazılım lisansları
 image: /img/oyun-teorisi-gozunden-46.png
+toc: true
 ---
 
 Bir açık kaynak lisansı seçmek, yalnızca hukuk metinleri arasında tercih yapmak değildir; geliştiriciler, şirketler ve kullanıcılar arasında oynanan uzun vadeli bir strateji oyununa katılmaktır. MIT özgürlüğü en az koşulla dağıtırken GPL, bu özgürlüğün sonraki sürümlerde de korunmasını ister. Peki rasyonel aktörlerin bulunduğu bir ekosistemde hangi yaklaşım kazanır?

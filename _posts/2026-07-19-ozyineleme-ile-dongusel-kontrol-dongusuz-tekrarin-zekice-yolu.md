@@ -9,6 +9,7 @@ tags:
   - recursion
   - algoritma
 image: /img/ozyineleme-ile-dongusel-80.png
+toc: true
 ---
 
 ![ozyineleme-ile-dongusel-80](/img/ozyineleme-ile-dongusel-80.svg)

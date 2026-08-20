@@ -9,6 +9,7 @@ tags:
   - fonksiyonlar
   - modüler programlama
 image: /img/fonksiyonlarda-tip-belirtimiyle-92.png
+toc: true
 ---
 
 ![fonksiyonlarda-tip-belirtimiyle-92](/img/fonksiyonlarda-tip-belirtimiyle-92.svg)

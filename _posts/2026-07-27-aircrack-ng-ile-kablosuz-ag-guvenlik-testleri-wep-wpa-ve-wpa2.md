@@ -9,6 +9,7 @@ tags:
   - wi-fi güvenliği
   - sızma testi
 image: /img/aircrack-ng-ile-74.png
+toc: true
 ---
 
 Kablosuz ağ güvenlik testi, yalnızca parolayı “kırmayı” denemek değildir; kullanılan protokolün güvenlik modelini, istemci davranışlarını ve parola politikasını birlikte değerlendirmektir. Aircrack-ng paketi bu süreçte trafiği izleme, paket yakalama ve parola dayanıklılığını çevrimdışı sınama gibi görevler sunar. Bu çalışmaları yalnızca sahibi olduğunuz veya test iznini yazılı olarak aldığınız, izole bir laboratuvar ağında gerçekleştirmelisiniz.

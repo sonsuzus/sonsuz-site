@@ -9,6 +9,7 @@ tags:
   - json
   - serileştirme
 image: /img/go-ile-json-46.png
+toc: true
 ---
 
 Modern yazılımlar artık tek başına yaşayan küçük adacıklar değil; API’ler, mikroservisler, mobil uygulamalar ve üçüncü parti sistemlerle sürekli konuşan sosyal kelebekler. Go tarafında bu sohbetin en popüler dili JSON’dır. Bir Go yapısını JSON’a çevirmek, valize kıyafet yerleştirmeye benzer: veriyi dış dünyaya taşınabilir, okunabilir ve standart bir forma sokarız. Gelen JSON’u tekrar Go struct’ına çözmek ise valizi açıp eşyaları doğru çekmecelere yerleştirmektir.

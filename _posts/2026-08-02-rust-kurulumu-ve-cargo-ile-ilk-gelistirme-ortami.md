@@ -9,6 +9,7 @@ tags:
   - cargo
   - vs code
 image: /img/rust-kurulumu-ve-85.png
+toc: true
 ---
 
 Rust öğrenme yolculuğunun ilk durağı, derleyiciyi kurup editörü hazırlamaktır. Neyse ki Rust dünyasında kurulum, farklı araçları tek tek avlamaktan çok daha düzenlidir: `rustup` araç zincirini yönetir, `rustc` kodu derler, Cargo ise proje ve bağımlılık işlerini üstlenir. VS Code eklentileri de eklenince geriye yalnızca güvenli ve hızlı kod yazmak kalır.

@@ -10,6 +10,7 @@ tags:
   - parametre
 redirect_from:
   - /posts/cpp_fonksiyon/
+toc: true
 ---
 
 

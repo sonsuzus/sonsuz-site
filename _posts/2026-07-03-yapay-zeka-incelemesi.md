@@ -21,6 +21,7 @@ tags:
   - veri
   - felsefe
   - teknoloji
+toc: true
 ---
 
 Yapay zeka, makinelerin insana özgü sanılan davranışları — öğrenme, akıl yürütme, örüntü tanıma — sergilemesini sağlayan bir disiplindir. Ama dikkat: bu bir tanım değil, bir davettir. Asıl soru şu: *özgü* kelimesini ne zamana kadar kullanabileceğiz?

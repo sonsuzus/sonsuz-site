@@ -9,6 +9,7 @@ tags:
   - node.js
   - vs code
 image: /img/javascript-kurulumu-tarayici-53.png
+toc: true
 ---
 
 ![javascript-kurulumu-tarayici-53](/img/javascript-kurulumu-tarayici-53.svg)

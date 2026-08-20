@@ -13,6 +13,7 @@ tags:
   - get
 redirect_from:
   - /posts/php_superglobals/
+toc: true
 ---
 
 

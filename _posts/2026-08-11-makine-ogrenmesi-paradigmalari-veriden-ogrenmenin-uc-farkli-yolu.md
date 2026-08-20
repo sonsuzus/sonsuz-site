@@ -10,6 +10,7 @@ tags:
   - gözetimli öğrenme
   - gözetimsiz öğrenme
   - pekiştirmeli öğrenme
+toc: true
 ---
 
 Makine öğrenmesi, bilgisayara her kuralı tek tek yazdırmak yerine örnekler, örüntüler ve geri bildirimler aracılığıyla davranış öğretme sanatıdır. Aynı mutfakta farklı tariflerin bulunması gibi, öğrenme probleminin elindeki veri ve hedefe göre üç temel paradigma öne çıkar: gözetimli, gözetimsiz ve pekiştirmeli öğrenme.

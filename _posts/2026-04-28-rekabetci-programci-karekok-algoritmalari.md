@@ -24,6 +24,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 **Karekök algoritmaları**, zaman karmaşıklığı $O(\sqrt{n})$ bileşeni içeren algoritmalardır. Karekök, "fakir adamın logaritması" olarak nitelendirilebilir:

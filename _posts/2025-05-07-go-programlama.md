@@ -9,6 +9,7 @@ tags:
   - programlama dili
   - backend
 image: /img/go-ile-gercek-20.png
+toc: true
 ---
 
 Go, Google tarafından geliştirilen, açık kaynaklı bir programlama dilidir. Hız, basitlik ve güvenilirlik üzerine odaklanmıştır. Özellikle sistem programlama, ağ programlama ve büyük ölçekli yazılım projeleri için uygundur.

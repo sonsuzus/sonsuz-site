@@ -20,6 +20,7 @@ tags:
   - küme-teorisi
   - ioc
   - icpc
+toc: true
 ---
 
 **Rekabetçi programlama** iki temel konudan oluşur: uygun algoritmayı bulmak (algoritmanın tasarımı) ve bu algoritmayı doğru biçimde koda geçirmek (implementasyonu).

@@ -8,6 +8,7 @@ tags:
   - closures
   - sözcüksel kapsam
   - javascript
+toc: true
 ---
 
 Bir fonksiyon çalışmasını tamamladığında yerel değişkenlerinin ortadan kaybolmasını bekleriz. Ancak kapanışlar, iç içe geçmiş fonksiyonlara şaşırtıcı bir yetenek kazandırır: İç fonksiyon, onu oluşturan dış fonksiyon çoktan sona ermiş olsa bile dış kapsamdaki değişkenlere erişebilir. Bu davranış sihir değil; sözcüksel kapsam, fonksiyon değerleri ve çalışma zamanı ortamlarının birlikte çalışmasının sonucudur.

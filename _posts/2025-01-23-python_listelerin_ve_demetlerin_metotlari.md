@@ -11,6 +11,7 @@ tags:
   - metot
 redirect_from:
   - /posts/python_listelerin_ve_demetlerin_metotlari/
+toc: true
 ---
 
 Burada, geçen bölümde kaldığımız yerden devam edeceğiz listeleri anlatmaya.

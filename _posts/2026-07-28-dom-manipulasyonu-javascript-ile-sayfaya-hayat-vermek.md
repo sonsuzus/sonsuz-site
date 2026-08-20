@@ -8,6 +8,7 @@ tags:
   - javascript
   - dom
   - web geliştirme
+toc: true
 ---
 
 Bir web sayfasındaki başlığın aniden değişmesi, yeni bir kartın listeye eklenmesi veya bir düğmeye basınca menünün açılması sihir değildir. Perdenin arkasında çoğunlukla JavaScript ve DOM birlikte çalışır. DOM, statik görünen HTML belgesini programlama yoluyla okunabilen ve değiştirilebilen canlı bir yapıya dönüştürür.

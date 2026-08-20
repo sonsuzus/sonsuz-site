@@ -8,6 +8,7 @@ tags:
   - yazılım mimarisi
   - monolitik sistemler
   - siyaset felsefesi
+toc: true
 ---
 
 Monolitik bir uygulamaya ilk kez giren geliştirici, kendisini devasa bir devlet dairesinde hissedebilir: Her şey aynı binadadır, kurallar merkezden belirlenir ve küçük bir değişiklik için bile sistemin bütünüyle konuşmak gerekir. Bu düzen güven verir; çünkü sınırlar, yetkiler ve sorumlular bellidir. Fakat aynı düzen zamanla bunaltıcı olabilir. Monolit ile siyasal totaliterlik arasındaki benzetme de tam burada başlar: İkisinde de koordinasyon kolaylığı ile özerklik kaybı arasında ciddi bir gerilim bulunur.

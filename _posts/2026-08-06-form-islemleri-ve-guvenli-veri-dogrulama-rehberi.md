@@ -8,6 +8,7 @@ tags:
   - form işlemleri
   - veri doğrulama
   - web güvenliği
+toc: true
 ---
 
 Bir web formu, kullanıcı ile sunucu arasındaki dijital köprüdür. Ancak bu köprüden yalnızca isimler ve e-posta adresleri geçmez; hatalı değerler, bot istekleri ve kötü niyetli SQL parçaları da geçmeye çalışabilir. Bu nedenle veriyi doğrudan veritabanına göndermek, kapının anahtarını paspasın altına bırakmaya benzer.

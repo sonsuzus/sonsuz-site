@@ -8,6 +8,7 @@ tags:
   - tip çıkarımı
   - derleyici
   - statik tipleme
+toc: true
 ---
 
 Bir değişken tanımlarken veri türünü yazmadığınız hâlde editörünüzün onun sayı mı, metin mi yoksa daha karmaşık bir nesne mi olduğunu bilmesi sihir gibi görünebilir. Aslında perde arkasında çalışan mekanizma **tip çıkarımıdır**. Derleyici, atanan ifadeyi inceleyerek uygun türü belirler; böylece kod kısalırken statik tip güvenliği büyük ölçüde korunur.

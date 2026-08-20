@@ -11,6 +11,7 @@ tags:
   - metot
 redirect_from:
   - /posts/python_listeler_ve_demetler/
+toc: true
 ---
 
 Bu bölüme gelene kadar yalnızca iki farklı veri tipi görmüştük. Bunlardan biri

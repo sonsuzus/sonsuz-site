@@ -9,6 +9,7 @@ tags:
   - ınfrastructure as code
   - devops
 image: /img/terraform-ile-altyapiyi-88.png
+toc: true
 ---
 
 Bir sunucuyu panelden tek tek oluşturmak, ağ kurallarını elle yazmak ve hangi ayarın nerede değiştiğini hatırlamaya çalışmak; küçük projelerde bile hızla yorucu hâle gelir. **Infrastructure as Code (IaC)** yaklaşımı, altyapıyı Terraform dosyalarında tanımlayarak bu süreci yazılım geliştirmeye benzetir: değişiklikler sürüm kontrolüne girer, gözden geçirilir ve aynı ortam tekrar tekrar üretilebilir.

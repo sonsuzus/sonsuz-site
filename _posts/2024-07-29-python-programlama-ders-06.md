@@ -16,6 +16,7 @@ tags:
   - ders
 redirect_from:
   - /posts/python-programlama-ders-06/
+toc: true
 ---
 
 ## Yineleme (Döngü)

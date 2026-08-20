@@ -8,6 +8,7 @@ tags:
   - fonksiyonlar
   - stack
   - bellek yönetimi
+toc: true
 ---
 
 Fonksiyonlar, büyük bir programı yönetilebilir görevlere ayırır; yığın (stack) ise bu görevlerin kim tarafından, hangi parametrelerle ve nereye dönmek üzere çağrıldığını düzenler. Bir fonksiyon çağrısı yalnızca kodun başka bir satıra atlaması değildir: İşletim sistemi, derleyici ve işlemci birlikte çalışarak geçici veriler için düzenli bir bellek kaydı oluşturur. Bu mekanizma sayesinde iç içe çağrılar, özyineleme ve yerel değişkenler güvenle yönetilir.

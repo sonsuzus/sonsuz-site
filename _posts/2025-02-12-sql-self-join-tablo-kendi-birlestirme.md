@@ -14,6 +14,7 @@ tags:
 excerpt_separator: "``"
 redirect_from:
   - /posts/sql-self-join-tablo-kendi-birlestirme/
+toc: true
 ---
 
 ![](/img/sql/petronas-twin-towers.png)

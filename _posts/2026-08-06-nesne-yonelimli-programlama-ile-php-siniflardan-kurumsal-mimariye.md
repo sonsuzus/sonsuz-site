@@ -8,6 +8,7 @@ tags:
   - php
   - oop
   - yazılım mimarisi
+toc: true
 ---
 
 PHP ile birkaç sayfalık bir uygulama geliştirirken fonksiyonlar ve değişkenler yeterli görünebilir. Ancak proje büyüyüp kullanıcılar, siparişler, ödemeler ve raporlar devreye girdiğinde kod tabanı hızla spagettiye dönüşebilir. Nesne Yönelimli Programlama, yani OOP, bu karmaşayı gerçek dünyadaki varlıkları sınıflar ve nesneler biçiminde modelleyerek yönetmemizi sağlar.

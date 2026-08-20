@@ -9,6 +9,7 @@ tags:
   - aktivite seçimi
   - algoritma analizi
 image: /img/acgozlu-algoritmalar-ne-91.png
+toc: true
 ---
 
 Açgözlü algoritmalar, her adımda o an için en cazip seçeneği tercih eder. Geleceği ayrıntılı biçimde hesaplamaz, geçmiş kararlarını da değiştirmezler. Bu yaklaşım biraz “önce en güzel kurabiyeyi kap, gerisini sonra düşünürüz” tavrına benzer. Şaşırtıcı biçimde bazı problemlerde bu basit strateji gerçekten optimal sonucu verirken, bazılarında bizi kurabiye kırıntılarıyla baş başa bırakır.

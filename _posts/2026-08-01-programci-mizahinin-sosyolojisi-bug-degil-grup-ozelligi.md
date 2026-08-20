@@ -8,6 +8,7 @@ tags:
   - programcı mizahı
   - yazılım kültürü
   - grup kimliği
+toc: true
 ---
 
 Bir yazılımcı toplantıda “Bende çalışıyor” dediğinde odadaki programcılar gülerken diğerleri neden endişeyle birbirine bakar? Çünkü programcı mizahı yalnızca komik cümlelerden değil; ortak deneyimlerden, teknik bilgiden ve mesleki hayal kırıklıklarından oluşur. Şakayı anlamak, çoğu zaman şifreli bir paketi açmak gibidir: Doğru kültürel anahtar sizde yoksa veri anlamsız görünür.

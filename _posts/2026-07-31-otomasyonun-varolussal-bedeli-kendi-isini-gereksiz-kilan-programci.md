@@ -8,6 +8,7 @@ tags:
   - otomasyon
   - yazılım felsefesi
   - yapay zeka
+toc: true
 ---
 
 Bir programcı, üç saatlik işi üç saniyeye indiren bir betik yazdığında önce kahraman gibi hisseder. Ardından rahatsız edici bir soru belirir: “Bu işlem artık bana ihtiyaç duymuyorsa ben neden buradayım?” Otomasyon, yazılım dünyasının en büyük başarı ölçütlerinden biridir; fakat başarıya ulaştıkça onu üreten kişinin görünürlüğünü azaltır. Böylece programcı yalnızca görevleri değil, görevler üzerinden kurduğu mesleki kimliği de otomatikleştirmeye başlar.

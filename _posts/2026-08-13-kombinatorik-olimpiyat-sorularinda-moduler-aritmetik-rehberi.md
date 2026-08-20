@@ -9,6 +9,7 @@ tags:
   - modüler aritmetik
   - olimpiyat soruları
 image: /img/kombinatorik-olimpiyat-sorularinda-44.png
+toc: true
 ---
 
 Kombinatorik olimpiyat sorularında ilk bakışta masum görünen $n!$, $\binom{n}{k}$ ve permütasyon ifadeleri, $n$ büyüdükçe devasa sayılara dönüşür. Neyse ki çoğu sorunun gerçekten istediği şey sayının tamamı değil, belirli bir sayıya bölümünden kalanıdır. İşte modüler aritmetik burada sahneye çıkar: Büyük sayıları yazmak yerine kalıntıları yönetir, akıllı sadeleştirmelerle imkânsız görünen hesapları birkaç satıra indirir.

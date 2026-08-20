@@ -9,6 +9,7 @@ tags:
   - eşzamanlılık
   - veri güvenliği
 image: /img/korkusuz-eszamanlilik-rust-83.png
+toc: true
 ---
 
 Eşzamanlı programlama, performans kapısını açarken içeri veri yarışları, kilitlenmeler ve gizemli üretim hataları da sokabilir. Rust’ın “korkusuz eşzamanlılık” yaklaşımı ise sahiplik kurallarını ve tip sistemini bir güvenlik görevlisi gibi kullanır. Böylece birçok tehlikeli thread senaryosu, program çalıştırılmadan önce derleyici tarafından reddedilir. Kısacası Rust, “Önce çalıştıralım, sonra ne patlıyor bakarız” geleneğine pek sıcak bakmaz.

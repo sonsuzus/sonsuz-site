@@ -10,6 +10,7 @@ tags:
   - mantıksal-programlama
   - optimizasyon
 image: /img/prologda-kesme-cut-27.png
+toc: true
 ---
 
 Prolog dünyasında program yazmak biraz labirentte akıllı bir dedektif gezdirmeye benzer: Dedektif her kapıyı dener, çıkmaz sokak görünce geri döner ve başka bir kapıya yönelir. Bu mekanizmaya geriye izleme denir. Kesme operatörü, yani `!`, dedektife şunu söyler: Buraya kadar geldiysen artık önceki kapıları kurcalama, bu yoldan devam et. Doğru kullanıldığında arama uzayını küçültür, performansı artırır ve programın niyetini daha net ifade eder.

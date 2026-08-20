@@ -8,6 +8,7 @@ tags:
   - c
   - epoll
   - asenkron-programlama
+toc: true
 ---
 
 Bir web sunucusunun aynı anda binlerce istemciyle konuşabilmesi, her bağlantıya ayrı bir iş parçacığı tahsis etmekten çok daha akıllı bir yaklaşım gerektirir. Bu projede Linux üzerinde `epoll`, BSD ve macOS tarafında ise benzer görev üstlenen `kqueue` mantığını inceleyerek bloklamayan, olay güdümlü ve küçük ama öğretici bir HTTP sunucusunun temelini kuracağız.

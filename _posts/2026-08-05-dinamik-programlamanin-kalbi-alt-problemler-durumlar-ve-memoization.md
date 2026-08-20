@@ -8,6 +8,7 @@ tags:
   - dinamik programlama
   - algoritmalar
   - memoization
+toc: true
 ---
 
 Bazı algoritmalar aynı hesabı tekrar tekrar yaparak işlemciyi küçük bir hamster çarkına sokar. Dinamik programlama, bu gereksiz tekrarları fark edip sonuçları saklayan güçlü bir problem çözme yaklaşımıdır. Temel fikir; büyük bir problemi daha küçük alt problemlere ayırmak, her alt problemi doğru biçimde temsil eden durumları tanımlamak ve hesaplanan sonuçları yeniden kullanmaktır.

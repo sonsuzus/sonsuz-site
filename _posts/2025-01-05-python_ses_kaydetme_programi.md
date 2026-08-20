@@ -16,6 +16,7 @@ tags:
   - scipy
 redirect_from:
   - /posts/python_ses_kaydetme_programi/
+toc: true
 ---
 
 

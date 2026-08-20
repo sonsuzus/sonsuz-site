@@ -8,6 +8,7 @@ tags:
   - oop
   - nesne yönelimli programlama
   - sınıflar
+toc: true
 ---
 
 Bir otomobili yazılımla temsil etmek istediğimizi düşünelim. Otomobilin rengi, hızı ve yakıt miktarı gibi verileri; hızlanma veya fren yapma gibi davranışları vardır. Nesne Yönelimli Programlama (Object-Oriented Programming — OOP), birbiriyle ilişkili bu verileri ve davranışları tek bir yapı içinde toplamamızı sağlar. Böylece kodumuz, gerçek dünyadaki kavramlara benzeyen, anlaşılır ve yeniden kullanılabilir parçalardan oluşur.

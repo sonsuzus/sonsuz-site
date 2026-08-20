@@ -8,6 +8,7 @@ tags:
   - veritabanı
   - normalizasyon
   - denormalizasyon
+toc: true
 ---
 
 Veritabanı tasarımı, yalnızca tabloları yan yana dizmek değildir; verinin doğru, tutarlı ve hızlı erişilebilir kalmasını sağlayan bir mimari karar sürecidir. Normalizasyon tekrarları azaltarak veri bütünlüğünü korur, denormalizasyon ise bazı tekrarları bilinçli biçimde kabul ederek okuma performansını artırır. İyi tasarımcı, bu iki yaklaşımı rakip değil, farklı ihtiyaçlara hizmet eden araçlar olarak görür.

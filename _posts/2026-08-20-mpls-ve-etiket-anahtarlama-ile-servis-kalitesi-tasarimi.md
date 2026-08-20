@@ -9,6 +9,7 @@ tags:
   - qos
   - ağ mimarisi
   - etiket anahtarlama
+toc: true
 ---
 
 Modern ağlarda her paketin IP başlığını tekrar tekrar incelemek, yoğun trafikte gişede kimlik kontrolü yapmaya benzer: güvenlidir ama yavaştır. MPLS (Multiprotocol Label Switching), paketleri sınıflandırılmış kısa etiketlerle taşıyarak bu süreci hızlandırır. Daha önemlisi, ses, video ve kritik iş uygulamalarına öngörülebilir gecikme sağlayan Servis Kalitesi (QoS) politikalarının ağ boyunca tutarlı uygulanmasına yardım eder.

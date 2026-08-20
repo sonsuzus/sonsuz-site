@@ -10,6 +10,7 @@ tags:
   - llvm ır
   - optimizasyon
   - c++
+toc: true
 ---
 
 Derleyiciler yalnızca kaynak kodunu makine koduna çeviren araçlar değildir; aynı zamanda programın yaptığı gereksiz işleri ayıklayan, sıcak kod yollarını hızlandıran ve hedef işlemcinin yeteneklerinden yararlanan analiz motorlarıdır. LLVM ekosisteminde bu işin merkezinde **LLVM IR (Intermediate Representation)** bulunur. Platformdan bağımsız olan bu ara temsil, C++, Rust, Swift veya başka bir ön uçtan geldikten sonra aynı optimizasyon boru hattında işlenebilir. Bu yazıda, arka uç optimizasyonlarının iki klasik yıldızını inceleyeceğiz: döngü açılımı (loop unrolling) ve ölü kod eleme (dead code elimination).

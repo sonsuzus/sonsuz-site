@@ -8,6 +8,7 @@ tags:
   - operatörler
   - akış kontrolü
   - döngüler
+toc: true
 ---
 
 Bir programı yalnızca sırayla çalışan komutlar bütünü olmaktan çıkaran şey, karar verebilmesi ve belirli işlemleri tekrarlayabilmesidir. Operatörler verileri işlerken akış kontrol yapıları programın hangi yoldan ilerleyeceğini belirler. Kısacası operatörler mutfaktaki araçlar, koşullar ve döngüler ise şefin tarif planıdır.

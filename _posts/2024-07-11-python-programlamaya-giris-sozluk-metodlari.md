@@ -7,6 +7,7 @@ tags:
   - python
   - sözlük
   - metod
+toc: true
 ---
 
 

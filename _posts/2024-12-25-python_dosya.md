@@ -9,6 +9,7 @@ tags:
   - dosya
 redirect_from:
   - /posts/python_dosya/
+toc: true
 ---
 
 Şimdi, [dosya](https://program.sonsuz.us/search.html?q=dosya) açma ve kapama işlemlerini incelemeye çalışacağız. Bir dosya ile işlem yapmak istediğimizde, önce dosyayı açmamız, gerekli yazma ve/veya okuma işlemlerini gerçekleştirdikten sonra dosyayı kapatmamız gerekir. Dosya açma işlemi için aşağıda genel yapısı verilen [open](https://program.sonsuz.us/search.html?q=open)() fonksiyonu kullanılır.

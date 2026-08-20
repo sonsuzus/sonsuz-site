@@ -9,6 +9,7 @@ tags:
   - markov zinciri
   - müzik teorisi
 image: /img/cember-modulasyonu-ile-76.png
+toc: true
 ---
 
 Rastgele nota seçmek kolaydır; kulağa müzik gibi gelmesini sağlamak ise bambaşka bir problemdir. Bu projede Markov zincirini, tonal müzikteki akor ilişkileriyle birleştirerek sürekli yeni piyano melodileri üreteceğiz. Sistem, yalnızca bir sonraki notayı değil, bulunduğu tonal merkezi ve bu merkezin çember üzerindeki komşularını da dikkate alacak. Sonuç: zar atan bir robot değil, küçük ama şaşırtıcı derecede terbiyeli bir besteci.

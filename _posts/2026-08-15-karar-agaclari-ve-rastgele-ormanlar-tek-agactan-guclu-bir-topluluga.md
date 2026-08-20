@@ -8,6 +8,7 @@ tags:
   - makine öğrenmesi
   - sınıflandırma
   - karar ağaçları
+toc: true
 ---
 
 Bir müşterinin aboneliğini iptal edip etmeyeceğini, bir e-postanın spam olup olmadığını veya bir görüntüde kedi bulunup bulunmadığını tahmin etmek sınıflandırma problemlerinin klasik örnekleridir. Karar ağaçları bu görevlerde anlaşılır kurallar üretir; rastgele ormanlar ise tek bir ağacın kararsızlığını çok sayıda ağacın ortak kararıyla dengeler. Kısacası: Tek bir uzman hata yapabilir, ama farklı uzmanlardan oluşan iyi bir kurul çoğu zaman daha isabetlidir.

@@ -19,6 +19,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 

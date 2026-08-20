@@ -9,6 +9,7 @@ tags:
   - yazılımcı psikolojisi
   - problem çözme
 image: /img/terminaldeki-yalnizlik-uzaktan-62.png
+toc: true
 ---
 
 Uzaktan çalışmak ilk bakışta yazılımcının doğal yaşam alanı gibi görünür: Sessiz bir oda, güçlü bir bilgisayar ve toplantılar arasında uzanan kesintisiz kodlama saatleri… Ancak ofis sohbetleri, omuz üzerinden yapılan kısa yardımlar ve birlikte içilen kahveler kaybolduğunda yalnızca çalışma ortamı değil, zihnin problem çözme biçimi de değişir. Terminal aynı terminaldir; fakat ona bakan kişi artık farklı bir bilişsel haritada ilerler.

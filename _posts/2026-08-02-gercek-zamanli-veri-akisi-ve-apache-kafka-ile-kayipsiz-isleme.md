@@ -8,6 +8,7 @@ tags:
   - apache kafka
   - streaming
   - gerçek zamanlı veri
+toc: true
 ---
 
 Bir web sitesindeki tıklamalar, sunucu logları veya fabrikadaki sıcaklık sensörleri kimsenin “Kaydet” düğmesine basmasını beklemez. Veriler saniyede yüzlerce, hatta milyonlarca olay hâlinde kesintisiz akar. Gerçek zamanlı veri akışı, bu olayları oluştukları anda yakalayıp güvenilir biçimde taşıma ve gecikmeyi mümkün olduğunca düşük tutarak işleme yaklaşımıdır. Apache Kafka ise bu yoğun veri trafiğinin ortasında çalışan dayanıklı bir dijital konveyör bandı gibidir.

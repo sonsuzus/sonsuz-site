@@ -10,6 +10,7 @@ tags:
   - gcn
   - gat
   - makine öğrenmesi
+toc: true
 ---
 
 Graf sinir ağları (GNN), kullanıcılar, ürünler, makaleler veya moleküller gibi ilişkili nesneleri öğrenmek için düğüm özelliklerini bağlantı yapısıyla birleştirir. Düğüm sınıflandırmada amaç her düğüme bir etiket vermek; bağlantı tahmininde ise iki düğüm arasında yeni ya da eksik bir kenar olup olmadığını kestirmektir. GCN, GraphSAGE ve GAT aynı sahnede oynasa da bilgiyi komşulardan toplama biçimleri oldukça farklıdır.

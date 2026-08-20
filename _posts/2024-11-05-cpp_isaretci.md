@@ -11,6 +11,7 @@ tags:
   - adres
 redirect_from:
   - /posts/cpp_isaretci/
+toc: true
 ---
 
 

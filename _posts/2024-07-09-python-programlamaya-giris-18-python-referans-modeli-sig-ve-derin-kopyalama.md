@@ -10,6 +10,7 @@ tags:
   - kopyalama
 redirect_from:
   - /posts/python-programlamaya-giris-18-python-referans-modeli-sig-ve-derin-kopyalama/
+toc: true
 ---
 
 

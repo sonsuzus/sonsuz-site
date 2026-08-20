@@ -9,6 +9,7 @@ tags:
   - fonksiyon
 redirect_from:
   - /posts/python_functions/
+toc: true
 ---
 
 

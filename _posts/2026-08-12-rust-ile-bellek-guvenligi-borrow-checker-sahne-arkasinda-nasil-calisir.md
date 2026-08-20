@@ -9,6 +9,7 @@ tags:
   - bellek güvenliği
   - borrow checker
 image: /img/rust-ile-bellek-21.png
+toc: true
 ---
 
 Rust'ın en iddialı vaadi, çöp toplayıcıya ihtiyaç duymadan bellek güvenliği sunmasıdır. Bu vaat; `null` işaretçileri, use-after-free, veri yarışları ve çift bellek serbest bırakma gibi klasik hataların büyük bölümünü program daha çalışmadan yakalamasına dayanır. Bu işin başrolünde, Rust derleyicisinin sahiplik kurallarını denetleyen titiz bir kapı görevlisi olan **borrow checker** vardır.

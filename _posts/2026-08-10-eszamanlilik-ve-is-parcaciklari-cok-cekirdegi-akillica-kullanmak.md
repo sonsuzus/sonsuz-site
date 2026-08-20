@@ -10,6 +10,7 @@ tags:
   - thread
   - senkronizasyon
   - çok çekirdekli
+toc: true
 ---
 
 Modern işlemciler artık saat hızını sınırsız artırmak yerine birden fazla çekirdekle güçleniyor. Bir uygulamanın bu gücü kullanabilmesi için işleri bağımsız parçalara bölmesi, bu parçaları iş parçacıklarında (thread) çalıştırması ve ortak belleğe erişimi dikkatle düzenlemesi gerekir. Ancak multithreading, uygulamayı otomatik olarak hızlandıran sihirli bir değnek değildir; doğru tasarlanmadığında yarış koşulları, kilitlenmeler ve zor tekrarlanan hatalar üretir.

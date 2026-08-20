@@ -10,6 +10,7 @@ tags:
   - kurulum
 redirect_from:
   - /posts/temel-python-programlama-ilk-adimlar/
+toc: true
 ---
 
 

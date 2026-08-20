@@ -9,6 +9,7 @@ tags:
   - metod
 redirect_from:
   - /posts/python-programlamaya-giris-17-kume-metodlari/
+toc: true
 ---
 
 

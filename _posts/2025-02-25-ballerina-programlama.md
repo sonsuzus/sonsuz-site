@@ -11,6 +11,7 @@ tags:
   - dil
 redirect_from:
   - /posts/ballerina-programlama/
+toc: true
 ---
 
 Ballerina aslında Java ve Go ile benzerlik gösteren bir dildir. Java ile dilin hedefleri ve amacı açısından, Go ile de eş zamanlı programlama hızlı derleme gibi özellikleri açısından benzerdir.

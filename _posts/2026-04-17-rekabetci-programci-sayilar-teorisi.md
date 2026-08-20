@@ -31,6 +31,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Sayılar teorisi, matematiğin tam sayılarla ilgilenen alt dalıdır. İlginç bir konudur; çünkü tam sayı içeren pek çok soru ilk bakışta kolay görünse de çözümü son derece zor olabilir. Örneğin $x^3 + y^3 + z^3 = 33$ eşitliğini sağlayan üç tam sayı bulmak hâlâ açık bir matematik problemidir.

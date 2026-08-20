@@ -9,6 +9,7 @@ tags:
   - semver
   - paket yönetimi
   - yazılım geliştirme
+toc: true
 ---
 
 Bir kütüphanenin yanında görünen `v2.7.1` etiketi, yalnızca geliştiricilerin düzen takıntısını tatmin eden bir sayı dizisi değildir. Bu numara; güncellemenin güvenli olup olmadığını, mevcut kodun kırılma ihtimalini ve yeni yetenekler kazanıp kazanmayacağınızı anlatan küçük bir sözleşmedir. Semantik Versiyonlama ya da yaygın adıyla **SemVer**, bu sözleşmeyi herkesin aynı şekilde okuyabilmesini sağlar.

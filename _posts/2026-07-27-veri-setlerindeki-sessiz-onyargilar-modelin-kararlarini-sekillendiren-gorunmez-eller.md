@@ -9,6 +9,7 @@ tags:
   - veri önyargısı
   - makine öğrenmesi
 image: /img/veri-setlerindeki-sessiz.png
+toc: true
 ---
 
 Bir makine öğrenmesi modeli dünyayı doğrudan gözlemlemez; ona sunduğumuz veri setinin penceresinden bakar. Pencerenin camı çizik, renkli veya yalnızca belirli bir sokağa dönükse model de gerçeği öyle sanır. Bu nedenle toplumsal önyargılar, kötü niyetli bir algoritma yazılmasa bile veri toplama, etiketleme ve örnekleme süreçlerinden modele sessizce sızabilir.

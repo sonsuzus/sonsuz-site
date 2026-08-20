@@ -22,6 +22,7 @@ tags:
   - tür
 redirect_from:
   - /posts/python-programlama-ders-02/
+toc: true
 ---
 
 

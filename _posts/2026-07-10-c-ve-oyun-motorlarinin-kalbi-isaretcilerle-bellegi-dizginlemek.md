@@ -9,6 +9,7 @@ tags:
   - oyun motoru
   - bellek yönetimi
   - fizik motoru
+toc: true
 ---
 
 Bir oyun motorunu devasa bir lunapark gibi düşünün: fizik simülasyonu hız trenidir, render sistemi ışıklı dönme dolaptır, yapay zekâ ise pamuk şeker kuyruğunda karar vermeye çalışan NPC’dir. Bu lunaparkın elektriği ise bellektir. C++ burada sahneye çıkar; çünkü işaretçiler, düşük seviyeli bellek kontrolü ve veri yerleşimi sayesinde üç boyutlu dünyaların milisaniyeler içinde hesaplanmasını sağlar.

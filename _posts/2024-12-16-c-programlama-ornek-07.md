@@ -16,6 +16,7 @@ tags:
   - pointer
 redirect_from:
   - /posts/c-programlama-ornek-07/
+toc: true
 ---
 
 ## C Programlama Dinamik olarak ayrılan bir hafıza bölgesine 1 ile 100 arasında rastgele oluşturulan 10 tane tam sayıyı yazan program

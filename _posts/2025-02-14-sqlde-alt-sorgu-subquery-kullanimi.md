@@ -14,6 +14,7 @@ tags:
   - programlama
 redirect_from:
   - /posts/sqlde-alt-sorgu-subquery-kullanimi/
+toc: true
 ---
 
 

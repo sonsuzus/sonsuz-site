@@ -9,6 +9,7 @@ tags:
   - borrowing
   - referanslar
 image: /img/rustta-borclanma-ve-70.png
+toc: true
 ---
 
 ![rustta-borclanma-ve-70](/img/rustta-borclanma-ve-70.svg)

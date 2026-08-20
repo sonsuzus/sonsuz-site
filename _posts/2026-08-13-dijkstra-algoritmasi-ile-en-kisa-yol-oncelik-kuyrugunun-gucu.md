@@ -11,6 +11,7 @@ tags:
   - dijkstra
   - veri yapıları
 image: /img/dijkstra-algoritmasi-ile-15.png
+toc: true
 ---
 
 Bir harita uygulamasının sizi en kısa rotadan götürmesi, ağ paketlerinin hızlı yolu seçmesi veya bir oyundaki karakterin hedefe ulaşması çoğu zaman aynı soruya dayanır: Ağırlıklı bir graf üzerinde iki nokta arasındaki en düşük maliyetli yol nedir? Dijkstra algoritması, kenar ağırlıkları negatif olmadığı sürece bu soruyu sistematik ve oldukça verimli biçimde çözer.

@@ -8,6 +8,7 @@ tags:
   - derin öğrenme
   - yapay sinir ağları
   - makine öğrenmesi
+toc: true
 ---
 
 Derin öğrenme, yapay zekânın veriye “hangi özelliğe bakması gerektiğini” tek tek öğretmek yerine bunu katmanlar aracılığıyla öğrenmesini sağlayan yaklaşımdır. Temel fikir basittir: Geleneksel sinir ağlarına çok sayıda gizli katman eklenir; böylece model, ham ve yüksek boyutlu verilerden giderek daha soyut temsiller çıkarabilir. Bir görüntüde önce kenarları, sonra şekilleri, en sonunda da “bu bir kedi” fikrini yakalaması tam olarak bu katmanlı maceradır.

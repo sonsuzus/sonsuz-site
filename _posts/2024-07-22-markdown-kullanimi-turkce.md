@@ -12,6 +12,7 @@ tags:
   - yazı
 redirect_from:
   - /posts/markdown-kullanimi-turkce/
+toc: true
 ---
 
 ## Markdown Kullanımı Türkçe

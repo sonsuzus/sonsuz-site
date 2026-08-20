@@ -8,6 +8,7 @@ tags:
   - web güvenliği
   - parola hashleme
   - xss
+toc: true
 ---
 
 Bir web uygulamasında güvenlik, kapıya pahalı bir kilit takıp anahtarı paspasın altında bırakmamaktır. Kullanıcı parolalarını düz metin olarak saklamak tam da böyle bir hatadır. Veritabanı sızdırıldığında saldırganlar yalnızca uygulamadaki hesaplara değil, parola tekrar kullanılmışsa başka servislere de erişebilir. Benzer şekilde XSS açıkları, güvenilmeyen içeriğin tarayıcıda kod gibi çalışmasına izin vererek kullanıcı oturumlarını ve verilerini tehlikeye atar.

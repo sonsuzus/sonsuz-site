@@ -11,6 +11,7 @@ tags:
   - web
 redirect_from:
   - /posts/php_ifkosulu/
+toc: true
 ---
 
 

@@ -11,6 +11,7 @@ tags:
   - define
 redirect_from:
   - /posts/cpp_onislemci/
+toc: true
 ---
 
 

@@ -9,6 +9,7 @@ tags:
   - dil felsefesi
   - insan-makine etkileşimi
 image: /img/yapay-zeka-ile-44.png
+toc: true
 ---
 
 Bir yapay zekâ modeline “Bugün nasılsın?” diye sorduğumuzda karşımıza çoğu zaman doğal, tutarlı ve hatta duygulu görünen bir yanıt çıkar. Peki bu alışveriş gerçekten konuşma mıdır, yoksa konuşmaya benzeyen gelişmiş bir hesaplama gösterisi mi? Sorunun yanıtı; dil, anlam ve niyet kavramlarından ne beklediğimize göre değişir.

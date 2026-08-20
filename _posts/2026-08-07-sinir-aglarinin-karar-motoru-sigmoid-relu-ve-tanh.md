@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - derin öğrenme
   - aktivasyon fonksiyonları
+toc: true
 ---
 
 Bir sinir ağını yalnızca matris çarpımları yapan dev bir hesap makinesi olmaktan çıkarıp görüntü tanıyan, metin üreten ve karmaşık kararlar veren bir modele dönüştüren temel bileşen aktivasyon fonksiyonudur. Sigmoid, ReLU ve Tanh gibi fonksiyonlar, nöronların hangi bilgiyi ne ölçüde sonraki katmana aktaracağını belirler. Kısacası ağın matematiksel reflekslerini oluştururlar.

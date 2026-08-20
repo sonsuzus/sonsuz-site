@@ -8,6 +8,7 @@ tags:
   - büyük veri
   - 3v kuralı
   - veri mühendisliği
+toc: true
 ---
 
 Bir e-ticaret sitesindeki tıklamalar, akıllı saatlerin ölçtüğü nabız değerleri, sosyal medya paylaşımları ve fabrikalardaki sensör kayıtları… Modern dünyada veri yalnızca çoğalmıyor; hızlanıyor ve biçim değiştiriyor. **Büyük Veri (Big Data)**, tek başına “çok fazla veri” anlamına gelmez. Geleneksel sistemlerin makul süre ve maliyetle saklamakta, işleyip analiz etmekte zorlandığı veri kümelerini ve bu sorunu çözmek için geliştirilen yöntemleri ifade eder.

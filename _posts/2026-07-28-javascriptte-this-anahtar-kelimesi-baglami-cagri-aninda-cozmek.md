@@ -9,6 +9,7 @@ tags:
   - this
   - fonksiyonlar
 image: /img/javascriptte-this-anahtar-92.png
+toc: true
 ---
 
 JavaScript’te `this`, ilk bakışta “fonksiyonun sahibi” gibi görünür; ancak gerçekte değeri fonksiyonun nerede tanımlandığından çok **nasıl çağrıldığına** bağlıdır. Aynı fonksiyon bir çağrıda kullanıcı nesnesini, başka bir çağrıda global nesneyi, hatta `undefined` değerini gösterebilir. Bu yüzden `this`, değişmez bir adres etiketi değil, çalışma zamanında çözülen dinamik bir bağlam referansıdır.

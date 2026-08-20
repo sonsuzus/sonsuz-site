@@ -11,6 +11,7 @@ tags:
   - liste işlemleri
 redirect_from:
   - /posts/python-programlama-ders-09/
+toc: true
 ---
 
 

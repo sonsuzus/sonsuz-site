@@ -26,6 +26,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Yönlü bir çizgede kenarlar yalnızca tek yönlü geçilir. Bu nedenle çizge bağlı olsa bile her düğümden diğerine gidileceği garanti edilemez. Daha güçlü bir bağlanırlık kavramına ihtiyaç vardır.

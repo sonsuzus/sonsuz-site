@@ -21,6 +21,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Bir **ağaç** (tree), $n$ düğüm ve $n - 1$ kenardan oluşan bağlı ve asiklik (döngüsüz) bir çizgedir. Ağaçtan herhangi bir kenarı çıkarmak onu iki parçaya böler; herhangi bir kenar eklemek ise bir döngü oluşturur. Her iki düğüm arasında tam olarak bir yol bulunur.

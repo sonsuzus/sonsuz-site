@@ -9,6 +9,7 @@ tags:
   - operatör
 redirect_from:
   - /posts/js-operatorler/
+toc: true
 ---
 
 

@@ -11,6 +11,7 @@ tags:
   - örnek
 redirect_from:
   - /posts/c-programlama-ornek-05/
+toc: true
 ---
 
 ## C programlama ile Her Harfin Tekrar Sayısını Bulma

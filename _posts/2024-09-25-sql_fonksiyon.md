@@ -11,6 +11,7 @@ tags:
   - veri tabanı
 redirect_from:
   - /posts/sql_fonksiyon/
+toc: true
 ---
 
 

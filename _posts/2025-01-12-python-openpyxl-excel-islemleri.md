@@ -17,6 +17,7 @@ tags:
   - sütun
 redirect_from:
   - /posts/python-openpyxl-excel-islemleri/
+toc: true
 ---
 
 Excel ile ilgili [dosya oluşturma](https://program.sonsuz.us/search.html?q=dosya%20olu%C5%9Fturma), [sayfa oluşturma](https://program.sonsuz.us/search.html?q=sayfa%20olu%C5%9Fturma), dosyaya veri yazma, verileri okuma ve kaydetme işlemleri için aşağıda bilgileri ve sanal ortamda kurulum komutları verilen kütüphaneyi kullanacağız:

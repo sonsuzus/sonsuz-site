@@ -13,6 +13,7 @@ tags:
   - kalıtım
 redirect_from:
   - /posts/cpp_inheritance/
+toc: true
 ---
 
 

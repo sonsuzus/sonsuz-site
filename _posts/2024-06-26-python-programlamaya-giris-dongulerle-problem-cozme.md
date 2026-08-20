@@ -11,6 +11,7 @@ tags:
   - problem
 redirect_from:
   - /posts/python-programlamaya-giris-dongulerle-problem-cozme/
+toc: true
 ---
 
 

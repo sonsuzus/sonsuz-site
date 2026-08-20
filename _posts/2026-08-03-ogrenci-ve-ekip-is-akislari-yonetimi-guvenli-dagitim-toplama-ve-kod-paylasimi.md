@@ -8,6 +8,7 @@ tags:
   - iş akışı yönetimi
   - git
   - rol tabanlı erişim
+toc: true
 ---
 
 Kalabalık bir sınıfta yüz ödevi toplamak veya büyük bir geliştirici ekibinde ortak kod tabanını yönetmek, yalnızca dosya paylaşmak değildir. Kim neyi görebilir, hangi değişikliği yapabilir ve teslim edilen çalışma nasıl doğrulanır? Sağlam bir iş akışı; hiyerarşi, otomasyon, izlenebilirlik ve en az yetki ilkelerini birlikte kullanarak dijital koridordaki kargaşayı düzenli bir üretim hattına dönüştürür.

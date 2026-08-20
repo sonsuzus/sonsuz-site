@@ -9,6 +9,7 @@ tags:
   - difüzyon modelleri
   - üretken yapay zekâ
 image: /img/gan-ve-difuzyon-94.png
+toc: true
 ---
 
 ![gan-ve-difuzyon-94](/img/gan-ve-difuzyon-94.svg)

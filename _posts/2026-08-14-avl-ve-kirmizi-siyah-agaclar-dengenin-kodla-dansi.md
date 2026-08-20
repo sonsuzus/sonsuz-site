@@ -8,6 +8,7 @@ tags:
   - veri yapıları
   - algoritmalar
   - ikili arama ağacı
+toc: true
 ---
 
 İkili arama ağaçları (BST), küçük anahtarları solunda, büyük anahtarları sağında tutarak aramayı hızlandırır. Ancak anahtarlar sıralı gelirse ağaç, bir ağacın heybetinden çok bağlı listeye benzeyen eğik bir yapıya dönüşür. Bu durumda arama, ekleme ve silme maliyeti $O(n)$ olur. AVL ve Kırmızı-Siyah ağaçları, her güncellemeden sonra küçük yapısal müdahaleler yaparak yüksekliği $O(\log n)$ sınırında tutan iki ünlü çözümdür.

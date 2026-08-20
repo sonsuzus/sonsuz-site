@@ -8,6 +8,7 @@ tags:
   - hdfs
   - hadoop
   - dağıtık sistemler
+toc: true
 ---
 
 Bir petabayt veriyi dizüstü bilgisayarınıza kopyalamaya çalıştığınızı düşünün. Diskin itiraz etmesi bir yana, işlem tamamlanmadan bilgisayarınız emekli olabilir! Hadoop Dağıtık Dosya Sistemi, yani HDFS, bu problemi devasa ve pahalı bir sunucu almak yerine veriyi yüzlerce sıradan makineye dağıtarak çözer. Üstelik disk arızalarını istisna değil, sistemin doğal bir parçası kabul eder.

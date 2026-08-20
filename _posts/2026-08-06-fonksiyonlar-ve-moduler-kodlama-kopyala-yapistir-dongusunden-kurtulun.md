@@ -8,6 +8,7 @@ tags:
   - fonksiyonlar
   - modüler programlama
   - temiz kod
+toc: true
 ---
 
 Bir program büyüdükçe aynı işlemleri farklı yerlerde tekrar tekrar yazmak, başlangıçta masum görünen bir alışkanlıktan ciddi bir bakım sorununa dönüşür. Fonksiyonlar ve modüler kodlama, bu tekrarları anlamlı parçalara ayırarak kodu daha okunabilir, test edilebilir ve yeniden kullanılabilir hâle getirir. Kısacası amaç, bilgisayara yalnızca ne yapacağını söylemek değil, bunu düzenli ve sürdürülebilir bir biçimde söylemektir.

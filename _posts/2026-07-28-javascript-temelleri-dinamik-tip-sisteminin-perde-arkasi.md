@@ -9,6 +9,7 @@ tags:
   - dinamik tipleme
   - programlama temelleri
 image: /img/javascript-temelleri-dinamik-74.png
+toc: true
 ---
 
 JavaScript’e C veya C++ dünyasından gelenlerin ilk şaşkınlığı genellikle şudur: Bir değişken nasıl olur da önce sayı, birkaç satır sonra metin olabilir? Bunun nedeni JavaScript’in **dinamik tipli** bir dil olmasıdır. Tür bilgisi değişken adına değil, çalışma zamanındaki değere bağlıdır. Bu esneklik hızlı geliştirme sağlarken bazı sürprizleri de beraberinde getirir.

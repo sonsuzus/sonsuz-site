@@ -8,6 +8,7 @@ tags:
   - typescript
   - fonksiyonlar
   - tip güvenliği
+toc: true
 ---
 
 Bir fonksiyonun her çağrıda aynı miktarda bilgiye ihtiyaç duymaması oldukça doğaldır. Kullanıcı adını zorunlu tutarken selamlama biçimini çağırana bırakmak isteyebiliriz. TypeScript’in isteğe bağlı ve varsayılan parametreleri, bu esnekliği tip güvenliğinden vazgeçmeden sağlar. Böylece fonksiyonlarımız hem rahat kullanılır hem de “Bu değer acaba var mı?” sürprizleri kontrol altında tutulur.

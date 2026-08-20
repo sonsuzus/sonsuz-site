@@ -9,6 +9,7 @@ tags:
   - singleton
   - factory
   - observer
+toc: true
 ---
 
 Yazılım geliştirmede bazı problemler, proje değişse bile inatla geri gelir: Uygulama genelinde tek bir ayar yöneticisi nasıl tutulur? Nesne üretimini hangi sınıfın yapacağı nasıl saklanır? Bir veri değiştiğinde onu dinleyen ekranlar nasıl haberdar edilir? Tasarım kalıpları, bu sorulara kopyala-yapıştır tarifler değil; test edilmiş iletişim ve sorumluluk dağıtma stratejileri sunar.

@@ -8,6 +8,7 @@ tags:
   - huffman
   - lzw
   - veri sıkıştırma
+toc: true
 ---
 
 Bir metin dosyasını küçültmek sihir değil; tekrarları ve olasılıkları akıllıca temsil etme sanatıdır. Bu projede kayıpsız sıkıştırmanın iki klasiğini, Huffman ağacını ve LZW algoritmasını Python ile sıfırdan kuracağız. Böylece hazır kütüphanelerin düğmesine basmak yerine makinenin veriyi nasıl “katladığını” göreceğiz.

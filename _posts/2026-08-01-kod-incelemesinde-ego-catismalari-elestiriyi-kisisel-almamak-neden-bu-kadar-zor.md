@@ -9,6 +9,7 @@ tags:
   - yazılım psikolojisi
   - geri bildirim
 image: /img/kod-incelemesinde-ego-19.png
+toc: true
 ---
 
 Kod incelemesinde bırakılan masum bir “Bu fonksiyon fazla karmaşık” yorumu, bazen geliştiricinin zihninde “Sen yetersiz bir programcısın” cümlesine dönüşür. Pull request birkaç satırlık teknik tartışma olmaktan çıkar; özsaygının savunulduğu küçük bir arenaya dönüşür. Peki profesyonel geri bildirim ile benlik algısı neden bu kadar kolay birbirine karışır?

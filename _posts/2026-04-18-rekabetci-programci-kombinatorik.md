@@ -28,6 +28,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Kombinatorik, nesnelerin kombinasyonlarını sayma yöntemlerini araştırır. Genelde amaç her kombinasyonu ayrı ayrı oluşturmadan toplam sayıyı hesaplamaktır.

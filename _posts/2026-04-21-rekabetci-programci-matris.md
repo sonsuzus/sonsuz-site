@@ -26,6 +26,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 **Matris**, programlamadaki iki boyutlu dizinin matematikteki karşılığıdır. $m \times n$ büyüklüğündeki bir matris $m$ satır ve $n$ sütundan oluşur; $A[i, j]$ gösterimi $i$. satır ve $j$. sütundaki elemanı verir. Özel bir durum olarak $n \times 1$ büyüklüğündeki matrise **vektör** denir.

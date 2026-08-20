@@ -9,6 +9,7 @@ tags:
   - görüntü işleme
   - derin öğrenme
 image: /img/cnn-ile-gorsel-14.png
+toc: true
 ---
 
 Bir bilgisayar için fotoğraf, sevimli bir kedi veya kırmızı bir otomobil değil; yalnızca sayılardan oluşan çok boyutlu bir matristir. Evrişimli Sinir Ağları, yani CNN’ler, bu sayı yığınını anlamlandırarak kenarları, dokuları, şekilleri ve sonunda nesneleri keşfeder. Bunu yaparken görüntünün mekânsal yapısını koruyan evrişim filtrelerinden ve gereksiz ayrıntıları azaltan havuzlama işlemlerinden yararlanır.

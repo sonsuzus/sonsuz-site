@@ -8,6 +8,7 @@ tags:
   - agı
   - yapay zeka
   - teknoloji felsefesi
+toc: true
 ---
 
 Bir araştırmacı “AGI henüz çok uzakta” derken bir şirket yöneticisi “AGI’ye yaklaştık” diyebilir; ikisi de kendi ölçütlerine göre haklı olabilir. Çünkü Yapay Genel Zekâ, yani AGI, herkesin üzerinde uzlaştığı teknik bir hedef olmaktan çok bilim, felsefe ve pazarlama arasında şekil değiştiren hareketli bir kavramdır.

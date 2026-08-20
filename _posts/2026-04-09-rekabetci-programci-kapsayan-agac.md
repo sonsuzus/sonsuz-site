@@ -24,6 +24,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 **Kapsayan ağaç** (spanning tree), bir çizgenin bütün düğümlerini bağlı olacak şekilde birleştiren, çizgenin bazı kenarlarını içeren bir ağaçtır. Ağaçlardaki gibi, kapsayan ağaçlar da bağlı ve asikliktir. Genelde, kapsayan ağaç oluşturmanın birkaç yolu vardır.

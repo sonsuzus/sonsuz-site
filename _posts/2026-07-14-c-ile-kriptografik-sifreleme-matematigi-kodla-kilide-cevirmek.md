@@ -10,6 +10,7 @@ tags:
   - rsa
   - veri güvenliği
 image: /img/c-ile-kriptografik-47.png
+toc: true
 ---
 
 Kriptografi, bilgisayar biliminin en havalı sihirbazlık numaralarından biridir: okunabilir bir mesajı, matematiksel işlemlerle anlamsız görünen bir yığına dönüştürür; sonra doğru anahtarla tekrar eski haline getirir. C++ ise belleğe yakın çalışması, hızlı aritmetik işlemleri ve sistem seviyesinde kontrol sunması sayesinde bu algoritmaları anlamak için harika bir laboratuvardır.

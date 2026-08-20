@@ -9,6 +9,7 @@ tags:
   - sızma testi
   - siber güvenlik raporlama
 image: /img/sizma-sonrasi-guvenlik-raporlama.png
+toc: true
 ---
 
 Bir sızma testinde ilk erişimi elde etmek final değil, yalnızca hikâyenin dönüm noktasıdır. Post-exploitation aşaması; ele geçirilen erişimin etkisini, saldırganın ilerleyebileceği yolları ve kurumun bu hareketleri fark etme kapasitesini **yetkilendirilmiş sınırlar içinde** incelemeyi amaçlar. Buradaki başarı, sisteme gizlice yerleşmekten çok riski güvenli biçimde kanıtlamak, iz bırakmadan değil kontrollü iz bırakarak çalışmak ve test sonunda ortamı başlangıç durumuna döndürmektir.

@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - makine öğrenmesi
   - python
+toc: true
 ---
 
 İnsan beyninin yaklaşık 86 milyar nörondan oluşan karmaşık yapısı, yapay zekânın en güçlü ilham kaynaklarından biridir. Yapay Sinir Ağları (Artificial Neural Networks, ANN), beynin birebir kopyası değildir; ancak nöronların bilgiyi alma, işleme ve iletme fikrini matematiksel bir çerçeveye taşır. Bu yaklaşımın en temel yapı taşı olan **perceptron**, sayısal girdilerden bir karar üretmeyi öğrenebilen dijital bir algılayıcıdır.

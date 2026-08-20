@@ -8,6 +8,7 @@ tags:
   - typescript
   - union types
   - ıntersection types
+toc: true
 ---
 
 TypeScript’in tip sistemi, değişkenleri tek bir kalıba hapsetmek yerine gerçek dünyadaki çeşitliliği modellememize yardımcı olur. Bir değerin alternatif tiplerden birini taşıyabildiği durumlarda **union**, farklı yapıların bütün özelliklerini aynı nesnede toplamak istediğimizde ise **intersection** tipleri devreye girer. İsimleri matematik dersini hatırlatsa da doğru kullanıldıklarında kodu hem güvenli hem de oldukça esnek hâle getirirler.

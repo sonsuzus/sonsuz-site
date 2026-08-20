@@ -8,6 +8,7 @@ tags:
   - yük dengeleme
   - round-robin
   - sunucu mimarisi
+toc: true
 ---
 
 Bir uygulama tek bir sunucuda kusursuz çalışabilir; ancak kullanıcı sayısı arttığında aynı sunucu, yoğun saatlerde dar boğaza dönüşebilir. Yük dengeleme (load balancing), gelen istekleri birden fazla sunucuya akıllıca dağıtarak performansı, erişilebilirliği ve hata toleransını yükselten mimari yaklaşımdır. Buradaki kritik soru şudur: Yeni gelen isteği hangi sunucu karşılamalıdır?

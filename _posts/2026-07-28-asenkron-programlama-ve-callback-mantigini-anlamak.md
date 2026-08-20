@@ -8,6 +8,7 @@ tags:
   - javascript
   - asenkron programlama
   - callback
+toc: true
 ---
 
 Bir web sayfası veri indirirken düğmeler çalışmıyor, animasyonlar takılıyor ve kullanıcı boş boş ekrana bakıyorsa tarayıcı muhtemelen uzun bir işlem tarafından meşgul edilmiştir. Asenkron programlama; ağ isteği, zamanlayıcı veya dosya okuma gibi sonucu hemen hazır olmayan işleri beklerken ana akışın çalışmaya devam etmesini sağlar. Callback, yani geri çağırım fonksiyonu ise işlem tamamlandığında “Bitti, şimdi ne yapayım?” sorusuna verilen cevaptır.

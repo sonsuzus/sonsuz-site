@@ -16,6 +16,7 @@ tags:
   - arttırımsal geliştirme
 redirect_from:
   - /posts/python-programlama-ders-05/
+toc: true
 ---
 
 

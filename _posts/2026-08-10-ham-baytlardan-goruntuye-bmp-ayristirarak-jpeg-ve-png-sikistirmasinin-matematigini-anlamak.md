@@ -11,6 +11,7 @@ tags:
   - jpeg
   - python
 image: /img/ham-baytlardan-goruntuye-46.png
+toc: true
 ---
 
 Bir görüntü dosyası, ekranda gördüğümüz renkli karelerden çok daha fazlasıdır: başlıklar, piksel dizileri, satır hizalama kuralları ve bazen karmaşık sıkıştırma akışları içerir. JPEG ya da PNG kod çözücüsünü çağırmadan bir dosyayı ham baytlarına ayırıp yeniden kurmak, bu katmanları görünür hâle getirir. Başlangıç için BMP idealdir; çoğu BMP dosyası pikselleri neredeyse doğrudan saklar. Ardından aynı bakış açısını PNG filtreleri ve JPEG dönüşümlerine taşıyabiliriz.

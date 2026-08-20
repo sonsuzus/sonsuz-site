@@ -8,6 +8,7 @@ tags:
   - javascript
   - event listeners
   - asenkron programlama
+toc: true
 ---
 
 Bir web sayfası kullanıcıya yalnızca bilgi gösteriyorsa dijital bir afişten pek farklı değildir. Onu gerçek bir arayüze dönüştüren şey; tıklamaları, tuşları, kaydırmaları ve form girişlerini algılayıp uygun tepkiler verebilmesidir. JavaScript'teki olay dinleyicileri, tarayıcı ile kullanıcı arasındaki bu konuşmayı yönetir.

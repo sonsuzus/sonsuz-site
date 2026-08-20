@@ -11,6 +11,7 @@ tags:
   - devops
   - pod
 image: /img/kubernetes-temelleri-ve-14.png
+toc: true
 ---
 
 ![kubernetes-temelleri-ve-14](/img/kubernetes-temelleri-ve-14.svg)

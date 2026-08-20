@@ -9,6 +9,7 @@ tags:
   - değişkenler
   - mutability
 image: /img/rustta-degiskenler-varsayilan-73.png
+toc: true
 ---
 
 ![rustta-degiskenler-varsayilan-73](/img/rustta-degiskenler-varsayilan-73.svg)

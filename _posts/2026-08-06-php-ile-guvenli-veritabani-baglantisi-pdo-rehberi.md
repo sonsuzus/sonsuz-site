@@ -8,6 +8,7 @@ tags:
   - php
   - pdo
   - mysql
+toc: true
 ---
 
 Bir PHP uygulamasının verilerle konuşabilmesi için güvenilir bir köprüye ihtiyacı vardır. PDO, yani PHP Data Objects, PHP ile MySQL gibi veritabanları arasında bu köprüyü kuran nesne yönelimli bir arayüzdür. Hazırlanmış sorgular, hata yönetimi ve farklı veritabanı sistemlerine uyum gibi özellikleri sayesinde hem güvenli hem de esnek uygulamalar geliştirmeyi kolaylaştırır.

@@ -8,6 +8,7 @@ tags:
   - paralel programlama
   - eşzamanlılık
   - yazılım mimarisi
+toc: true
 ---
 
 Bir programın aynı anda birkaç iş yapması kulağa verimlilik gibi gelir: dosya indirirken arayüz yanıt verir, sunucu binlerce isteği işler, işlemci çekirdekleri veriyi paylaşır. Ne var ki kod hızlanırken onu anlamaya çalışan insan zihni yavaşlayabilir. Çünkü beynimiz olayları öyküler gibi, çoğunlukla belirli bir sırayla kavrar; eşzamanlı programlarsa tek bir öykü yerine birbirine karışabilen çok sayıda olası senaryo üretir.

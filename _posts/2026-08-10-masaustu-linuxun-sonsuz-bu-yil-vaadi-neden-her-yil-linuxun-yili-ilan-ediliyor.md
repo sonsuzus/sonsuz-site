@@ -9,6 +9,7 @@ tags:
   - açık kaynak
   - masaüstü
   - teknoloji kültürü
+toc: true
 ---
 
 Her yıl teknoloji forumlarında, sosyal medyada ve yorum bölümlerinde aynı cümle yeniden doğar: “Bu yıl masaüstünde Linux'un yılı olacak.” Bazen yeni bir dağıtım, bazen Steam Deck, bazen Windows'un tartışmalı bir kararı bu kehaneti tetikler. Ancak Linux masaüstü pazar payı artarken bile neden bu ifade sürekli geleceğe ertelenir? Çünkü bu cümle yalnızca ölçülebilir bir pazar tahmini değil; özgür yazılım ideallerinin, teknik hayranlığın ve daha iyi bir bilgisayar deneyimi arzusunun kültürel sloganıdır.

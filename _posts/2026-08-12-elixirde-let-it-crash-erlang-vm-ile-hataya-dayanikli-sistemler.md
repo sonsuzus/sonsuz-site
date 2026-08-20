@@ -9,6 +9,7 @@ tags:
   - erlang vm
   - otp
   - hata toleransı
+toc: true
 ---
 
 Bir web sunucusunun, ödeme işleyicisinin veya mesajlaşma sisteminin hata alınca tamamen durması korkutucudur. Elixir ise bu korkuyu farklı bir tasarım yaklaşımıyla karşılar: Her hatayı tek tek engellemeye çalışmak yerine, hatalı küçük parçayı kontrollü biçimde öldürür ve güvenilir bir üst süreç aracılığıyla yeniden başlatır. Bu yaklaşımın adı **let it crash** felsefesidir. İlk bakışta cesur, hatta tehlikeli görünen bu fikir; Erlang VM’in süreç izolasyonu, denetim ağaçları ve hata yayılımı mekanizmaları sayesinde oldukça pratiktir.

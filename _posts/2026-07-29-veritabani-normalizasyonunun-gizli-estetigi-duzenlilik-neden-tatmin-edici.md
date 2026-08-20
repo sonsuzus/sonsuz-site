@@ -8,6 +8,7 @@ tags:
   - veritabanı
   - normalizasyon
   - yazılım psikolojisi
+toc: true
 ---
 
 Dağınık bir tabloyu küçük, anlamlı ve birbirine düzgün bağlanan tablolara dönüştürmek yalnızca teknik bir iyileştirme değildir. Tekrarlanan sütunların kaybolması, bağımlılıkların görünür hâle gelmesi ve her bilginin kendine ait bir yere kavuşması zihinsel bir rahatlama yaratır. Peki bu tatmin nereden gelir? Normalizasyonun estetiği; beynimizin örüntüleri tanıma, belirsizliği azaltma ve karmaşık sistemleri daha küçük parçalara ayırma eğilimiyle yakından ilişkilidir.

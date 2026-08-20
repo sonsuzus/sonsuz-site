@@ -9,6 +9,7 @@ tags:
   - modüler kod
   - çoklu geri dönüş
 image: /img/fonksiyonlar-ve-coklu-88.png
+toc: true
 ---
 
 ![fonksiyonlar-ve-coklu-88](/img/fonksiyonlar-ve-coklu-88.svg)

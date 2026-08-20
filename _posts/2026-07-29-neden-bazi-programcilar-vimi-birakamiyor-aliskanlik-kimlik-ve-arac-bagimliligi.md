@@ -9,6 +9,7 @@ tags:
   - programcı psikolojisi
   - geliştirici araçları
 image: /img/neden-bazi-programcilar-33.png
+toc: true
 ---
 
 Bir programcının Vim hakkında konuşmaya başlaması bazen teknik bir sohbetten çok aile yadigârını anlatmasına benzer. “Hızlı”, “hafif” ve “her sunucuda var” gibi makul gerekçeler sıralanır; ardından tuş kombinasyonları, nokta komutu ve fare kullanmamanın erdemleri gelir. Fakat Vim bağlılığını yalnızca verimlilikle açıklamak eksik kalır. Burada alışkanlık döngüleri, emekle kurulan duygusal bağ, topluluk üyeliği ve profesyonel kimlik aynı terminal penceresinde buluşur.

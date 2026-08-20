@@ -9,6 +9,7 @@ tags:
   - davranışçılık
   - yapay zekâ
 image: /img/skinnerin-guvercinlerinden-yapay-84.png
+toc: true
 ---
 
 Bir güvercinin doğru düğmeyi gagalamasıyla bir yapay zekâ ajanının oyunda puan toplaması arasında gerçekten bağlantı olabilir mi? Şaşırtıcı biçimde evet! B. F. Skinner’ın davranışçı psikoloji deneyleri ile modern pekiştirmeli öğrenme algoritmaları, zekânın iç dünyasından çok davranışların sonuçlarına odaklanan benzer bir mantık kullanır.

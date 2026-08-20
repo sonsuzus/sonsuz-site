@@ -25,6 +25,7 @@ tags:
   - matematik
   - kitap
 image: /img/olasilik_kavram_haritasi.png
+toc: true
 ---
 
 ![olasilik kavram](/img/olasilik_kavram_haritasi.svg)

@@ -8,6 +8,7 @@ tags:
   - kotlin
   - android
   - coroutine
+toc: true
 ---
 
 Android geliştirmede kullanıcıların sabrı, uygulamanın akıcılığı kadar değerlidir: Bir ekran donarsa, en şık arayüz bile puan kaybeder. Kotlin, Java ekosistemiyle uyumunu korurken null güvenliği ve coroutine gibi modern araçlarla bu soruna iki cepheden yaklaşır. İlki beklenmeyen çöküşleri azaltır; ikincisi ise uzun süren işleri ana iş parçacığını kilitlemeden yürütür. Bu ikiliyi doğru anlamak, yalnızca daha temiz kod değil, daha güvenilir ve hızlı hissedilen uygulamalar üretmenin temelidir.

@@ -8,6 +8,7 @@ tags:
   - dfs
   - bfs
   - graf algoritmaları
+toc: true
 ---
 
 Bir labirentte çıkış aradığınızı düşünün: Bir yolu sonuna kadar takip edip çıkmazda geri mi dönersiniz, yoksa önce size bir adım uzaklıktaki bütün yolları mı incelersiniz? İlk yaklaşım **derinlik öncelikli arama (DFS)**, ikincisi ise **genişlik öncelikli arama (BFS)** mantığıdır. Bu iki kapsamlı arama tekniği; ağaçların, grafların ve birçok yapay zekâ probleminin temel araçlarıdır.

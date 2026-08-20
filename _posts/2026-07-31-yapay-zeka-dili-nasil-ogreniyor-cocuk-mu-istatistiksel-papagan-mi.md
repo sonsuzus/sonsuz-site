@@ -9,6 +9,7 @@ tags:
   - dil edinimi
   - makine öğrenmesi
 image: /img/yapay-zeka-dili-16.png
+toc: true
 ---
 
 Bir çocuk “kedi” kelimesini öğrenirken tüylü bir canlıya dokunur, miyavlamasını duyar ve bazen kuyruğunun çekilmemesi gerektiğini deneyimleyerek keşfeder. Bir yapay zekâ modeli ise milyonlarca cümlede “kedi” sözcüğünün hangi kelimelerle yan yana geldiğini inceler. İkisi de örüntü öğrenir; fakat birinin dünyası oyuncaklar, insanlar ve duyulardan, diğerinin dünyası çoğunlukla veri ile matematikten oluşur.

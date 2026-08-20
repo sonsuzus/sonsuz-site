@@ -9,6 +9,7 @@ tags:
   - nesne yönelimli programlama
   - yazılım tasarımı
 image: /img/arayuzler-nesne-yonelimli-16.png
+toc: true
 ---
 
 Bir orkestrada her müzisyen farklı bir enstrüman çalabilir; ancak şefin verdiği işaretlerin ne anlama geldiğini hepsi bilir. Nesne yönelimli programlamadaki **arayüzler (interfaces)** de benzer biçimde çalışır. Bir sınıfın iç dünyasını yönetmez, fakat dışarıya hangi özellikleri ve davranışları sunması gerektiğini açıkça bildirir. Böylece birbirinden farklı nesneler, ortak bir sözleşmeye uyarak aynı sistem içinde güvenle çalışabilir.

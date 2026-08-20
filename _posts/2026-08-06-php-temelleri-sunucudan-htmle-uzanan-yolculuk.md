@@ -8,6 +8,7 @@ tags:
   - php
   - web programlama
   - sunucu tarafı
+toc: true
 ---
 
 Bir web sayfasındaki kullanıcı adı, ürün listesi veya sepet tutarı kendiliğinden ortaya çıkmaz. Perdenin arkasında çalışan PHP; isteği karşılar, verileri işler ve tarayıcıya gönderilecek HTML çıktısını üretir. Tarayıcı PHP kodunu görmez; yalnızca onun hazırladığı sonucu görür. Gelin bu mutfağa girip PHP’nin çalışma mantığını, sözdizimini ve veri tiplerini inceleyelim.

@@ -9,6 +9,7 @@ tags:
   - akış alanı
   - yol bulma
 image: /img/rts-oyunlari-icin-11.png
+toc: true
 ---
 
 ![rts-oyunlari-icin-11](/img/rts-oyunlari-icin-11.svg)

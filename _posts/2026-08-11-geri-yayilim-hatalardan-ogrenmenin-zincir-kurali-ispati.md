@@ -8,6 +8,7 @@ tags:
   - makine öğrenmesi
   - sinir ağları
   - backpropagation
+toc: true
 ---
 
 Bir sinir ağı ilk çalıştığında genellikle pek parlak değildir: kediyi köpek, 7’yi 1, hatta kahveyi çorba sanabilir. Onu zamanla iyileştiren mekanizma geri yayılımdır (backpropagation). Bu algoritma, ağın ürettiği hatayı çıkış katmanından girişe doğru dağıtır; her ağırlığın hataya ne kadar katkı yaptığını zincir kuralıyla hesaplar ve ağırlıkları doğru yönde günceller.

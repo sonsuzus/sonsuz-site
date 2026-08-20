@@ -8,6 +8,7 @@ tags:
   - veri ön işleme
   - öznitelik mühendisliği
   - makine öğrenmesi
+toc: true
 ---
 
 Bir makine öğrenmesi modelinin başarısı yalnızca seçilen algoritmaya bağlı değildir. Çoğu zaman modelden daha kritik olan şey, modele verilen verinin kalitesidir. Gürültülü, eksik veya tutarsız verilerle en gelişmiş algoritma bile bocalarken; iyi temizlenmiş ve anlamlı özniteliklerle zenginleştirilmiş bir veri kümesi, daha basit modelleri bile yıldız oyuncuya dönüştürebilir.

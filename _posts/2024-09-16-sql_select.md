@@ -12,6 +12,7 @@ tags:
   - sorgu
 redirect_from:
   - /posts/sql_select/
+toc: true
 ---
 
 

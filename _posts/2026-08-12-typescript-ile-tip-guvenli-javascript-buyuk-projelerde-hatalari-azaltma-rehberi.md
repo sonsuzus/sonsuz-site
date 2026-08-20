@@ -8,6 +8,7 @@ tags:
   - typescript
   - javascript
   - tip güvenliği
+toc: true
 ---
 
 JavaScript'in esnekliği hızlı prototip üretmek için harikadır; ancak ekip, dosya ve entegrasyon sayısı büyüdükçe bu esneklik pahalı sürprizlere dönüşebilir. TypeScript, JavaScript'in üzerine statik tip katmanı ekleyerek değişkenlerin, fonksiyonların ve veri sözleşmelerinin daha kod çalışmadan doğrulanmasını sağlar. Amaç JavaScript'i “daha katı” yapmak değil; hataları kullanıcıya ulaşmadan, geliştiricinin editöründe yakalamaktır.

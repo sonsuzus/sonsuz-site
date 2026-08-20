@@ -14,6 +14,7 @@ tags:
   - dosya
 redirect_from:
   - /posts/c-programlama-ornek-09/
+toc: true
 ---
 
 ## C Program Dosya Güncelleme

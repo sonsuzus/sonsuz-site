@@ -8,6 +8,7 @@ tags:
   - graf teorisi
   - kruskal algoritması
   - prim algoritması
+toc: true
 ---
 
 Şehirleri en düşük maliyetle birbirine bağlayan yolları, bilgisayarları buluşturan kabloları veya enerji hatlarını tasarladığımızı düşünelim. Gereksiz döngüler oluşturmadan bütün noktaları birbirine ulaştırmak istiyorsak karşımıza **minimum yayılım ağacı** problemi çıkar. Bu problemin iki meşhur kahramanı Kruskal ve Prim algoritmalarıdır; ancak işe başlamadan önce grafın gerçekten bağlantılı olup olmadığını da sorgulamamız gerekir.

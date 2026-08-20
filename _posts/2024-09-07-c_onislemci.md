@@ -9,6 +9,7 @@ tags:
   - önişlemci
 redirect_from:
   - /posts/c_onislemci/
+toc: true
 ---
 
 

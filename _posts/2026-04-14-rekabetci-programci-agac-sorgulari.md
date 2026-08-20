@@ -28,6 +28,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Bu bölümde köklü ağaçların alt ağaçları ve yolları üzerinde yapılan sorguları çözme yöntemlerini inceliyoruz. Ele alınan sorgu türleri şunlardır:

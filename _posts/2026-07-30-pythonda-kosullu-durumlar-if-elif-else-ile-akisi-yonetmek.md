@@ -9,6 +9,7 @@ tags:
   - akış kontrolü
   - koşullu ifadeler
 image: /img/pythonda-kosullu-durumlar-59.png
+toc: true
 ---
 
 ![pythonda-kosullu-durumlar-59](/img/pythonda-kosullu-durumlar-59.svg)

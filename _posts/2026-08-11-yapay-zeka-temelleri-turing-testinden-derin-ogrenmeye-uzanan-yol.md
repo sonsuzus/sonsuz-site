@@ -9,6 +9,7 @@ tags:
   - makine öğrenmesi
   - turing testi
 image: /img/yapay-zeka-temelleri-23.png
+toc: true
 ---
 
 Yapay zeka (YZ), makinelerin yalnızca hesap yapmasını değil; algılamasını, öğrenmesini, karar vermesini ve kimi zaman yaratıcı görünen çıktılar üretmesini hedefleyen disiplinler arası bir alandır. Bugünkü üretken modeller bir anda ortaya çıkmadı: mantık, olasılık, bilişsel bilim, istatistik ve bilgisayar mühendisliğinin onlarca yıllık ortak birikimiyle şekillendi. Bu tarihi anlamak, güncel "akıllı" sistemlerin neden bazen etkileyici, bazen de şaşırtıcı biçimde hatalı davranabildiğini kavramanın en iyi yoludur.

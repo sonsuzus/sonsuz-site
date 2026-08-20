@@ -8,6 +8,7 @@ tags:
   - denetimsiz öğrenme
   - k-means
   - hiyerarşik kümeleme
+toc: true
 ---
 
 Bir veri kümesinde hangi kayıtların birbirine benzediğini biliyor, fakat onları açıklayan hazır etiketlere sahip olmuyoruz. İşte denetimsiz öğrenme tam bu noktada sahneye çıkar: Veriye “Bunlar hangi sınıfa ait?” diye sormak yerine, “Burada kendiliğinden oluşan nasıl bir yapı var?” diye bakar. Müşteri segmentasyonu, belge gruplama, anomali keşfi ve biyolojik veri analizi bu yaklaşımın yaygın kullanım alanlarıdır.

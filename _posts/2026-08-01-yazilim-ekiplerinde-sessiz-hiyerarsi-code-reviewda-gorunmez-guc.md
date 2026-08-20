@@ -8,6 +8,7 @@ tags:
   - code-review
   - yazılım-kültürü
   - ekip-dinamikleri
+toc: true
 ---
 
 Bir pull request açılır, değişiklikler yüzlerce satırdır ve kıdemli geliştiricinin kodu birkaç dakika içinde “LGTM” alır. Aynı ekipte yeni başlayan birinin üç satırlık düzeltmesi ise isimlendirmeden mimariye kadar didiklenir. Bu fark yalnızca teknik deneyimle açıklanabilir mi? Code review, hataları yakalayan bir mühendislik pratiği olduğu kadar statü, güven ve otoritenin yeniden üretildiği küçük bir sosyal sahnedir.

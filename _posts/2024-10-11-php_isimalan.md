@@ -10,6 +10,7 @@ tags:
   - namespace
 redirect_from:
   - /posts/php_isimalan/
+toc: true
 ---
 
 

@@ -10,6 +10,7 @@ tags:
   - sanal fonksiyon
 redirect_from:
   - /posts/cpp_fonkvirtual/
+toc: true
 ---
 
 

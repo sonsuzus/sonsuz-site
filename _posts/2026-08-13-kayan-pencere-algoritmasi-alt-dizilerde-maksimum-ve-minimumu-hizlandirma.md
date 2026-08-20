@@ -9,6 +9,7 @@ tags:
   - sliding window
   - deque
 image: /img/kayan-pencere-algoritmasi-94.png
+toc: true
 ---
 
 Bir dizide ardışık $k$ elemanlık her grubun maksimumunu veya minimumunu bulmak, ilk bakışta basit görünür: Her konumda pencereyi tara, sonucu yaz. Ancak veri büyüdüğünde bu yaklaşım bir performans tuzağına dönüşür. Kayan Pencere (Sliding Window), pencerenin her adımda yalnızca bir eleman kaybettiği ve bir eleman kazandığı fikrinden yararlanarak tekrar eden işi ortadan kaldırır. Özellikle zaman serileri, sensör verileri, borsa grafikleri ve log analizi gibi alanlarda oldukça kullanışlıdır.

@@ -9,6 +9,7 @@ tags:
   - attention
   - yapay zeka
 image: /img/transformer-mimarisi-attention-73.png
+toc: true
 ---
 
 ![transformer-mimarisi-attention-73](/img/transformer-mimarisi-attention-73.svg)

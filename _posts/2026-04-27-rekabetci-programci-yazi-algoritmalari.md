@@ -23,6 +23,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 **Yazı algoritmaları**, metinleri verimli şekilde işlemek için kullanılır. Pek çok yazı problemi $O(n^2)$'de kolayca çözülse de asıl hedef $O(n)$ veya $O(n \log n)$'e inmektir. Temel örnek **örüntü bulma** problemidir: $n$ uzunluğundaki yazıda $m$ uzunluğundaki örüntü nerede geçiyor?

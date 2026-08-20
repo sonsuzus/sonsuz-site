@@ -8,6 +8,7 @@ tags:
   - veri yapıları
   - hash table
   - algoritmalar
+toc: true
 ---
 
 Hash tabloları, bir anahtarı hızlıca bir değere bağlamak için kullanılan en pratik veri yapılarındandır. İdeal senaryoda ekleme, arama ve silme işlemleri sabit zamanda çalışır; fakat iki farklı anahtarın aynı indekse düşmesi, yani **çakışma**, bu idealin küçük ama önemli düşmanıdır. Zincirleme ve açık adresleme, bu sorunu çözmek için iki temel yaklaşımdır.

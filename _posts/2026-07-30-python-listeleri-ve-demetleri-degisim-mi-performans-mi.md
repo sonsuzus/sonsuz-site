@@ -9,6 +9,7 @@ tags:
   - listeler
   - demetler
 image: /img/python-listeleri-ve-30.png
+toc: true
 ---
 
 ![python-listeleri-ve-30](/img/python-listeleri-ve-30.svg)

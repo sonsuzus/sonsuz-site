@@ -8,6 +8,7 @@ tags:
   - rust
   - ownership
   - bellek-yönetimi
+toc: true
 ---
 
 Rust öğrenmeye başlayanların karşısına çıkan ilk büyük bölüm sonu canavarı **ownership**, yani sahiplik sistemidir. İlk bakışta derleyicinin değişkenlerinize gereğinden fazla karıştığını düşünebilirsiniz. Oysa bu sistem; çöp toplayıcı kullanmadan bellek güvenliği sağlamak, sarkan işaretçileri önlemek ve kaynakların ne zaman temizleneceğini kesin biçimde belirlemek için tasarlanmıştır.

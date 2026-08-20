@@ -14,6 +14,7 @@ tags:
   - malloc
 redirect_from:
   - /posts/cpp_dinamik/
+toc: true
 ---
 
 

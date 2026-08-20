@@ -9,6 +9,7 @@ tags:
   - scope
   - değişkenler
 image: /img/modern-javascriptte-var-27.png
+toc: true
 ---
 
 ![modern-javascriptte-var-27](/img/modern-javascriptte-var-27.svg)

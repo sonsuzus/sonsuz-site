@@ -8,6 +8,7 @@ tags:
   - mysql
   - rdbms
   - veritabanı
+toc: true
 ---
 
 Bir uygulamanın kullanıcılarını, siparişlerini veya ürünlerini düz metin dosyalarında saklamak ilk bakışta kolay görünebilir. Ancak veri büyüdükçe arama yapmak, aynı kaydın tekrarını önlemek ve eş zamanlı işlemleri güvenle yönetmek zorlaşır. İlişkisel Veritabanı Yönetim Sistemleri, yani RDBMS’ler, bu karmaşayı tablolar, kurallar ve ilişkiler aracılığıyla düzenler. MySQL de bu dünyanın en yaygın temsilcilerinden biridir.

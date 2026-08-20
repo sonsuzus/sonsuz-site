@@ -8,6 +8,7 @@ tags:
   - yazılım kültürü
   - teknik borç
   - antropoloji
+toc: true
 ---
 
 Bir yazılım ekibinde yeterince uzun süre kalırsanız şu cümleyi mutlaka duyarsınız: “O satırı silmeyin; neden çalıştığını kimse bilmiyor.” Bu uyarı bazen yorum satırında, bazen ekip sohbetinde, bazen de yıllardır şirkette çalışan bir geliştiricinin ciddi bakışlarında yaşar. Kod artık yalnızca teknik bir yapı değildir; etrafında tabular, ritüeller ve kuşaktan kuşağa aktarılan efsaneler oluşmuştur.

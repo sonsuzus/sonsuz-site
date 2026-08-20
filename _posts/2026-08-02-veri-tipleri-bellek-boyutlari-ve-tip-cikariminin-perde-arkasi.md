@@ -8,6 +8,7 @@ tags:
   - veri tipleri
   - tip çıkarımı
   - bellek yönetimi
+toc: true
 ---
 
 Bir değişkeni yalnızca “değer saklayan kutu” olarak düşünmek kolaydır; ancak derleyici için bu kutunun biçimi, kapasitesi ve hangi işlemlere izin verdiği de önemlidir. Tam sayılar, ondalık sayılar ve mantıksal değerler tek bir veriyi temsil ederken; diziler ve demetler birden fazla değeri düzenli biçimde bir araya getirir. Statik tip analizi ise program çalışmadan önce bu yapıların uyumlu kullanılıp kullanılmadığını denetleyen görünmez bir güvenlik görevlisi gibidir.

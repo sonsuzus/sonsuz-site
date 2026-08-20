@@ -9,6 +9,7 @@ tags:
   - dekoratörler
   - ileri düzey fonksiyonlar
 image: /img/python-dekoratorleri-fonksiyonlara-51.png
+toc: true
 ---
 
 Bir fonksiyona zaman ölçümü, yetki kontrolü veya kayıt tutma özelliği eklemek istediğinizi düşünün. Aynı kodları her fonksiyonun içine yerleştirmek çalışır; ancak kısa sürede bakım kâbusuna dönüşür. Python dekoratörleri, mevcut fonksiyonun kaynak kodunu değiştirmeden onu başka bir fonksiyonla sarar ve yeni davranışlar kazandırır. Kısacası dekoratör, fonksiyonunuzun üzerine giydirilen akıllı bir monttur.

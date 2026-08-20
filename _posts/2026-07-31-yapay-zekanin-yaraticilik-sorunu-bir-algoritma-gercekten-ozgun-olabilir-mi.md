@@ -9,6 +9,7 @@ tags:
   - yaratıcılık
   - üretken yapay zekâ
 image: /img/yapay-zekanin-yaraticilik-24.png
+toc: true
 ---
 
 Bir yapay zekâ birkaç saniyede resim çizebilir, beste yazabilir veya şaşırtıcı bir hikâye oluşturabilir. Fakat ortaya çıkan eser gerçekten özgün müdür, yoksa geçmişte üretilmiş insan eserlerinin son derece gelişmiş bir kolajı mıdır? Bu soru yalnızca teknolojiyi değil; ilham, niyet ve yaratıcılık hakkındaki kabullerimizi de yeniden düşünmemizi gerektiriyor.

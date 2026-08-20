@@ -26,6 +26,7 @@ tags:
   - kodlama
   - matematik
   - kitap
+toc: true
 ---
 
 Bu bölümde çizgeler üzerindeki iki temel yol türü inceleniyor:

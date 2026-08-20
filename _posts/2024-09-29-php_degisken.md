@@ -10,6 +10,7 @@ tags:
   - web
 redirect_from:
   - /posts/php_degisken/
+toc: true
 ---
 
 

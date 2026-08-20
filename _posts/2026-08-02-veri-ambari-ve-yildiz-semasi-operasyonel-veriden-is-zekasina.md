@@ -8,6 +8,7 @@ tags:
   - veri ambarı
   - yıldız şeması
   - iş zekâsı
+toc: true
 ---
 
 Bir e-ticaret sisteminde sipariş vermek saniyeler sürerken, “Son üç yılda hangi şehirde, hangi ürün kategorisi daha kârlıydı?” sorusunun yanıtı milyonlarca kaydın incelenmesini gerektirebilir. Veri ambarı, günlük operasyonları yavaşlatmadan bu tür geriye dönük analizleri gerçekleştirmek için tasarlanmış merkezi veri yapısıdır.

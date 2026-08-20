@@ -11,6 +11,7 @@ tags:
   - siber-guvenlik
   - cvss
 image: /img/zafiyet-analizi-nessus-77.png
+toc: true
 ---
 
 Bir ağdaki güvenlik açıklarını elle bulmaya çalışmak, karanlık bir odada LEGO parçası aramaya benzer: mutlaka bir şeye basarsın ama acı biraz geç gelir. Zafiyet analizi, Nessus veya OpenVAS gibi entegre tarayıcılarla sistemlerdeki bilinen güvenlik açıklarının otomatik tespit edilmesi, önceliklendirilmesi ve raporlanması sürecidir. Amaç saldırmak değil; saldırganlardan önce eksikleri görmek, ölçmek ve kapatmaktır.

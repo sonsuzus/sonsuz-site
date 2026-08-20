@@ -11,6 +11,7 @@ tags:
   - örnek
 redirect_from:
   - /posts/c-programlama-ornek-02/
+toc: true
 ---
 
 ## Tek Sayıların Toplamı

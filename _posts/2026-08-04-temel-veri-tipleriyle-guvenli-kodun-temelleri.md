@@ -8,6 +8,7 @@ tags:
   - veri tipleri
   - typescript
   - tip güvenliği
+toc: true
 ---
 
 Bir programın dünyayı nasıl algıladığını hiç düşündünüz mü? Bizim için yaş, isim ve ışığın açık olup olmadığı farklı kavramlardır. Bilgisayar açısından da bunlar sırasıyla sayı, metin ve mantıksal değer olarak temsil edilir. Temel veri tipleri, verinin anlamını belirleyerek yanlış değerlerin daha kod çalışmadan yakalanmasını sağlar. Kısacası tipler, değişkenlerin kapısında bekleyen seçici güvenlik görevlileridir.

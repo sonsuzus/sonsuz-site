@@ -9,6 +9,7 @@ tags:
   - yapay zeka
   - makine öğrenmesi
 image: /img/veri-golleri-yapay-58.png
+toc: true
 ---
 
 Bir şirketin ürettiği metinleri, görselleri, sensör kayıtlarını, uygulama loglarını ve ses dosyalarını henüz nasıl kullanacağını bilmeden sakladığını düşünün. İlk bakışta bu yaklaşım dijital istifçilik gibi görünebilir. Oysa doğru yönetilen bir **veri gölü (data lake)**, gelecekte geliştirilecek yapay zekâ modellerine zengin ve yeniden işlenebilir bir veri kaynağı sunar.

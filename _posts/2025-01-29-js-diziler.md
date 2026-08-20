@@ -10,6 +10,7 @@ tags:
   - dizi
 redirect_from:
   - /posts/js-diziler/
+toc: true
 ---
 
 **Javascript array** ile birden fazla veriyi bir değişken içinde saklayabiliriz.

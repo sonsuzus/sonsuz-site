@@ -9,6 +9,7 @@ tags:
   - prolog
   - uzman sistemler
 image: /img/python-icinde-prolog-48.png
+toc: true
 ---
 
 ![python-icinde-prolog-48](/img/python-icinde-prolog-48.svg)

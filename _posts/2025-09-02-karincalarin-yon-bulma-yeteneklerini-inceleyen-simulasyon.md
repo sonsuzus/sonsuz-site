@@ -7,6 +7,7 @@ tags:
   - simulasyon
   - c
   - unity
+toc: true
 ---
 
 C# programlama dili ve Unity oyun motoru kullanılarak hazırlanan [simülasyon](https://program.sonsuz.us/search.html?q=simülasyon) aracılığıyla karıncaların koloni ve besin kaynağı arasında feromon izlerini takip etmesi incelenmiştir.

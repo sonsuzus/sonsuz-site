@@ -9,6 +9,7 @@ tags:
   - makine öğrenmesi
   - sinyal işleme
 image: /img/cep-telefonu-sensorleriyle-44.png
+toc: true
 ---
 
 ![cep-telefonu-sensorleriyle-44](/img/cep-telefonu-sensorleriyle-44.svg)

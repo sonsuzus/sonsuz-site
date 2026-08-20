@@ -8,6 +8,7 @@ tags:
   - bellek yönetimi
   - memory leak
   - hata ayıklama
+toc: true
 ---
 
 Bir program bazen hiçbir şeyi unutamaz. Kullanıcı pencereyi kapatır, işlem tamamlanır, nesnenin hikâyedeki rolü biter; fakat kod, geçmişiyle bağını kesmez. Belleğin karanlık bir köşesinde duran bu nesneler, dijital bilinçdışının bastırılmış anıları gibidir. Uygulama çalışmayı sürdürürken onların kapladığı alan büyür ve sonunda sistem, konuşamadığı meseleleri RAM tüketerek ifade etmeye başlar.

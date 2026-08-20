@@ -11,6 +11,7 @@ tags:
   - dil
 redirect_from:
   - /posts/littlelang-programlama/
+toc: true
 ---
 
 Bu makalede, genelde grafik kullanıcı arayüzleri yapmak için kullanılan Tcl programlama dilini, daha da C’ye benzer yazma stiline uyarlamak için yapılmış bir programlama dili olan “Little Lang”ın tanıtımını, ve bazı örneklerini yapacağım.

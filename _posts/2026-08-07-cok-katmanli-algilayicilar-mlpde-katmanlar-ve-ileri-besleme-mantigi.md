@@ -8,6 +8,7 @@ tags:
   - yapay sinir ağları
   - mlp
   - derin öğrenme
+toc: true
 ---
 
 Bir yapay sinir ağının fotoğraftaki rakamı tanıması, müşterinin alışveriş davranışını tahmin etmesi veya bir evin fiyatını hesaplaması ilk bakışta sihir gibi görünebilir. Oysa Çok Katmanlı Algılayıcıların, yani MLP’lerin arkasında düzenli bir matematiksel veri akışı vardır: Bilgiler girişten alınır, katmanlar boyunca dönüştürülür ve anlamlı bir çıktıya çevrilir.

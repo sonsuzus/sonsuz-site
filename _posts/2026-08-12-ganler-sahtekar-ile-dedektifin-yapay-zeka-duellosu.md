@@ -9,6 +9,7 @@ tags:
   - derin öğrenme
   - yapay zeka
 image: /img/ganler-sahtekar-ile-88.png
+toc: true
 ---
 
 Bir sanatçının sürekli yeni sahte tablolar yaptığını, karşısında ise bu tabloların gerçek olup olmadığını anlamaya çalışan keskin gözlü bir uzmanın bulunduğunu düşünün. Üretici Çekişmeli Ağlar (Generative Adversarial Networks, GAN), tam olarak bu rekabet fikrini makine öğrenmesine taşır. Bir ağ yeni veri üretirken, diğeri verinin gerçek mi yoksa üretilmiş mi olduğunu ayırt etmeye çalışır. Yarış ilerledikçe üretici daha ikna edici örnekler hazırlamayı, denetleyici ise daha zor kandırılmayı öğrenir.

@@ -8,6 +8,7 @@ tags:
   - try-catch
   - loglama
   - veritabanı
+toc: true
 ---
 
 Bir uygulamanın hiç hata üretmemesi güzel bir hayaldir; ancak gerçek dünyada ağ bağlantıları kopar, veritabanları kısa süreliğine erişilemez olur ve kullanıcılar sayısal alana “patates” yazabilir. Profesyonel yazılımın amacı hataları tamamen yok etmekten çok, oluşan hataları kontrollü biçimde yönetmek, kullanıcıya güvenli bir mesaj göstermek ve geliştiriciye sorunu araştırabileceği kayıtlar bırakmaktır.

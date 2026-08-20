@@ -9,6 +9,7 @@ tags:
   - derin öğrenme
   - görüntü işleme
 image: /img/cnn-ve-goruntu-12.png
+toc: true
 ---
 
 Bir fotoğrafı insan gözüyle tanımak birkaç saniye sürer; fakat bilgisayar için bu fotoğraf başlangıçta yalnızca devasa bir sayı tablosudur. Evrişimli Sinir Ağları ya da CNN'ler, bu sayıları anlamlı görsel örüntülere dönüştürmek için tasarlanmış derin öğrenme mimarileridir. Kedi kulağı, trafik levhası, tümör dokusu veya videodaki hareket gibi ayrıntıları; piksellerin birbirine komşu olma ilişkisini koruyarak öğrenirler.

@@ -14,6 +14,7 @@ tags:
   - virüs
 redirect_from:
   - /posts/siber-guvenlik/
+toc: true
 ---
 
 [Siber güvenlik](https://program.sonsuz.us/search.html?q=siber%20g%C3%BCvenlik), bilgisayar sistemleri, ağlar, cihazlar, veriler ve kullanıcıları siber saldırılara karşı

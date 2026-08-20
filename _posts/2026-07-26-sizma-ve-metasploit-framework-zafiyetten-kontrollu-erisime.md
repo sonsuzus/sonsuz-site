@@ -9,6 +9,7 @@ tags:
   - sızma testi
   - siber güvenlik
 image: /img/sizma-ve-metasploit-44.png
+toc: true
 ---
 
 Bir zafiyetin tespit edilmesi, sistemin gerçekten ele geçirilebildiği anlamına gelmez; yalnızca araştırılması gereken bir kapı bulunduğunu gösterir. Sızma, bu kapının yetkili ve izole bir laboratuvar ortamında kontrollü biçimde açılmasıdır. Metasploit Framework ise hazır istismar modülleri, payload seçenekleri ve oturum yönetimiyle bu süreci standartlaştıran güçlü bir güvenlik test platformudur.

@@ -8,6 +8,7 @@ tags:
   - veri modelleme
   - er diyagramı
   - veritabanı tasarımı
+toc: true
 ---
 
 Bir veritabanı tasarlamak, gerçek dünyayı kutulara ve sütunlara sığdırma sanatıdır. Müşteriler, ürünler, siparişler veya öğrenciler gibi nesneleri doğru tanımlamazsak en hızlı veritabanı bile kısa sürede dijital bir çekmece karmaşasına dönüşebilir. Varlık-ilişki modeli, henüz SQL yazmadan önce bu dünyayı görselleştirmemizi ve olası tasarım hatalarını erkenden yakalamamızı sağlar.

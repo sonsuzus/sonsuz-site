@@ -9,6 +9,7 @@ tags:
   - artırılmış gerçeklik
   - opencv
 image: /img/bilgisayar-gorusuyle-gercek-93.png
+toc: true
 ---
 
 ![bilgisayar-gorusuyle-gercek-93](/img/bilgisayar-gorusuyle-gercek-93.svg)

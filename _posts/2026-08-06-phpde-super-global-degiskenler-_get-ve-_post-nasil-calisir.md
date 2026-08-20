@@ -8,6 +8,7 @@ tags:
   - php
   - get ve post
   - web programlama
+toc: true
 ---
 
 Bir kullanıcı arama kutusuna kelime yazdığında, giriş formunu doldurduğunda veya bir bağlantıya tıkladığında tarayıcı ile sunucu arasında veri alışverişi gerçekleşir. PHP, gelen bu verilere erişebilmemiz için `$_GET` ve `$_POST` adlı süper global değişkenleri sunar. Adlarındaki “süper” ifadesi boşuna değildir; bu değişkenlere fonksiyonların içinden bile doğrudan erişilebilir.

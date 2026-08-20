@@ -9,6 +9,7 @@ tags:
   - es modules
   - kod organizasyonu
 image: /img/es-modules-ile-13.png
+toc: true
 ---
 
 Bir JavaScript projesi büyüdükçe tek dosyada yaşayan kod, çekmecesine ne bulursa atan bir geliştiricinin odasına dönüşebilir. Değişkenler çakışır, fonksiyonların nerede kullanıldığı belirsizleşir ve küçük bir değişiklik beklenmedik yerleri bozar. ES Modules, kodu anlamlı dosyalara bölerek bu karmaşayı yönetmemizi ve dosyalar arasındaki bağı açıkça tanımlamamızı sağlar.

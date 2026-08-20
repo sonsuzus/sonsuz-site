@@ -9,6 +9,7 @@ tags:
   - yerel yapay zeka
   - vektör arama
 image: /img/diskiniz-icin-yapay-55.png
+toc: true
 ---
 
 ![diskiniz-icin-yapay-55](/img/diskiniz-icin-yapay-55.svg)

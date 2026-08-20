@@ -10,6 +10,7 @@ tags:
   - binary
   - node.js
   - veri akışları
+toc: true
 ---
 
 Dosyalar, programların dış dünyayla kurduğu en kalıcı iletişim kanallarındandır. Bir günlük kaydı, CSV raporu, görsel ya da video; belleğe bir anda sığabilecek küçük bir metin de olabilir, gigabaytlarca süren ikili veri de. İşte stream (akış) yaklaşımı, verinin tamamını RAM'e yüklemek yerine onu küçük parçalar hâlinde sırayla işleyerek hem daha ölçeklenebilir hem de daha güvenli uygulamalar geliştirmeyi sağlar.

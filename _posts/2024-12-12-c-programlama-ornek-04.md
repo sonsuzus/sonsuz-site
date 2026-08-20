@@ -11,6 +11,7 @@ tags:
   - örnek
 redirect_from:
   - /posts/c-programlama-ornek-04/
+toc: true
 ---
 
 ## C Programlama ile Şans Oyunu

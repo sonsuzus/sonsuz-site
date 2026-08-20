@@ -9,6 +9,7 @@ tags:
   - telif hakkı
   - dijital sanat
 image: /img/yapay-zeka-sanatinin-53.png
+toc: true
 ---
 
 Bir ressam binlerce tablo görüp kendi üslubunu geliştirirse buna eğitim deriz. Bir yapay zekâ aynı tablolarla eğitildiğinde ise sorular değişir: Öğreniyor mu, kopyalıyor mu, yoksa devasa bir istatistik makinesini mi çalıştırıyor? Üretken yapay zekâ sanatı, özgünlüğü yalnızca estetik açıdan değil; hukuk, emek ve yaratıcılık bakımından da yeniden düşünmemizi gerektiriyor.

@@ -8,6 +8,7 @@ tags:
   - optimizasyon
   - gradient-descent
   - makine-öğrenmesi
+toc: true
 ---
 
 Bir makine öğrenmesi modelini eğitmek, sisli bir dağda en alçak noktayı bulmaya benzer. Modelin parametreleri bulunduğumuz konumu, hata fonksiyonu yüksekliği, optimizasyon algoritması ise hangi yöne adım atacağımızı belirler. Gradient Descent bu yolculuğun klasik pusulasıyken Adam ve RMSprop, arazi koşullarına göre adımlarını ayarlayan daha modern navigasyon sistemleridir.

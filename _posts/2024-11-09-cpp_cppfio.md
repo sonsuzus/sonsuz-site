@@ -12,6 +12,7 @@ tags:
   - io
 redirect_from:
   - /posts/cpp_cppfio/
+toc: true
 ---
 
 Dosya giriş/çıkış işlemlerini gerçekleştirmek için programlarımızın başına <fstream> başlık dosyasını eklememiz gerekir. Bu dosyada [ifstream](https://program.sonsuz.us/search.html?q=ifstream), [ofstream](https://program.sonsuz.us/search.html?q=ofstream) ve [fstream](https://program.sonsuz.us/search.html?q=fstream) sınıflarının da yer aldığı bazı sınıf bildirimleri yer alır. Bu sınıflar sırasıyla, ios sınıfından türetilen istream, ostream ve iostream sınıflarından türetilmiş olduğundan, ios sınıfı içindeki tüm değişken ve fonksiyonlara erişim sağlayabilirler.

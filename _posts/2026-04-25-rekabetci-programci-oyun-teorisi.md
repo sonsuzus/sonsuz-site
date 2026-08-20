@@ -25,6 +25,7 @@ tags:
   - matematik
   - kitap
 image: /img/nim_1_2_3_durum_cizgesi.png
+toc: true
 ---
 
 ![oyun teorisi](/img/nim_1_2_3_durum_cizgesi.svg)

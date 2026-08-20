@@ -11,6 +11,7 @@ tags:
   - modem
   - process-communication
 image: /img/sanal-seri-portla-22.png
+toc: true
 ---
 
 Bir zamanlar internete bağlanmak, kulak tırmalayan bir modem serenadı eşliğinde gerçekleşirdi. Bugün TCP soketleri, REST API’leri ve mesaj kuyruklarıyla yaşıyoruz; ama iki process arasında sanal seri port çifti kurup bir taraftan AT komutları gönderirken diğer taraftan cevap okumak, haberleşmenin temel mantığını anlamak için hâlâ şahane bir laboratuvar deneyidir.

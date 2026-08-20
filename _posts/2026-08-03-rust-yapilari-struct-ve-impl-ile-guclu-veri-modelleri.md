@@ -9,6 +9,7 @@ tags:
   - struct
   - veri modelleme
 image: /img/rust-yapilari-struct-38.png
+toc: true
 ---
 
 ![rust-yapilari-struct-38](/img/rust-yapilari-struct-38.svg)

@@ -8,6 +8,7 @@ tags:
   - makine öğrenmesi
   - overfitting
   - düzenlileştirme
+toc: true
 ---
 
 Bir makine öğrenmesi modeli eğitim örneklerini kusursuz tahmin ederken yeni veriler karşısında afallıyorsa karşımızda çalışkan değil, ezberci bir öğrenci vardır. **Aşırı öğrenme (overfitting)** adı verilen bu durum, modelin verideki gerçek örüntülerle birlikte gürültüyü ve tesadüfi ayrıntıları da öğrenmesiyle ortaya çıkar. Neyse ki Dropout, L1/L2 düzenlileştirme ve erken durdurma gibi yöntemlerle modele biraz disiplin kazandırabiliriz.

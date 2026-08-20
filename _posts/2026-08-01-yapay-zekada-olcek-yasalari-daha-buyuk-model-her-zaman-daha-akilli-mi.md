@@ -9,6 +9,7 @@ tags:
   - ölçek yasaları
   - büyük dil modelleri
 image: /img/yapay-zekada-olcek-60.png
+toc: true
 ---
 
 Bir dil modeline daha fazla parametre eklemek, ona otomatik olarak daha fazla “zekâ” mı kazandırır? Son yıllardaki dev modeller bu fikri destekliyor gibi görünse de gerçek tablo daha renkli: Boyut önemli, fakat veri kalitesi, eğitim bütçesi, mimari ve modelin nasıl kullanıldığı da en az boyut kadar belirleyici.

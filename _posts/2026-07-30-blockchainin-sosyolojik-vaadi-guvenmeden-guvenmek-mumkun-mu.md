@@ -9,6 +9,7 @@ tags:
   - merkeziyetsizlik
   - toplumsal güven
 image: /img/blockchainin-sosyolojik-vaadi-74.png
+toc: true
 ---
 
 Blockchain çoğu zaman “güveni ortadan kaldıran teknoloji” diye tanıtılır. Bu ifade etkileyicidir; fakat sosyolojik açıdan biraz fazla iddialıdır. İnsanlar Bitcoin gönderirken bankaya güvenmek zorunda olmayabilir, ancak yazılıma, kriptografiye, ağ katılımcılarına ve protokolün değişmeyeceğine ilişkin beklentilere hâlâ sahiptir. Dolayısıyla asıl soru, güvenin yok olup olmadığı değil, **kimden neye aktarıldığıdır**.

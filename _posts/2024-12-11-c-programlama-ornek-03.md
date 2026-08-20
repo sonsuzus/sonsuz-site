@@ -11,6 +11,7 @@ tags:
   - örnek
 redirect_from:
   - /posts/c-programlama-ornek-03/
+toc: true
 ---
 
 ## Dizideki Elemanların Ortalaması

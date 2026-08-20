@@ -11,6 +11,7 @@ tags:
   - frontend
   - performans
 image: /img/rust-ve-webassembly-18.png
+toc: true
 ---
 
 Web uygulamalarında JavaScript hâlâ merkezdedir; ancak yoğun hesaplama, görüntü işleme, fizik simülasyonu ve sıkıştırma gibi görevlerde tek başına ideal olmayabilir. Rust ile WebAssembly (WASM) ikilisi, tarayıcı içinde güvenli bellek yönetimi ve yerel koda yakın çalışma hızı sunarak bu açığı kapatır. Buradaki amaç JavaScript’i tamamen kovmak değil; arayüzü JavaScript’e, hesaplama motorunu ise Rust’a vermektir.

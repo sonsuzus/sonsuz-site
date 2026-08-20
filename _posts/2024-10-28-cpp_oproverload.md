@@ -10,6 +10,7 @@ tags:
   - overloading
 redirect_from:
   - /posts/cpp_oproverload/
+toc: true
 ---
 
 C++'da işlemci çoklu görev tanımlama işlemi yapılırken de çok biçimlilik özelliği kullanılır. Bir işlemci için çoklu görev tanımlama işlemi yapıldığında, işlemci, sahip olduğu özelliklerin yanı sıra, bir sınıfa bağlı olarak ek işlem yapma özelliği kazanır.

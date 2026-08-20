@@ -8,6 +8,7 @@ tags:
   - yapay zekâ
   - özgür irade
   - determinizm
+toc: true
 ---
 
 Bir dil modeli şiir yazmayı mı “seçer”, yoksa sayılarla döşenmiş görünmez bir ray üzerinde mi ilerler? Yapay zekâ sistemlerinin davranışlarını incelerken karşılaştığımız bu soru, felsefenin en eski tartışmalarından birini yeniden canlandırıyor: Eğer her sonuç önceki nedenler tarafından belirleniyorsa gerçekten özgür olabilir miyiz?

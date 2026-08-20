@@ -11,6 +11,7 @@ tags:
   - terminal
   - izleme
 image: /img/tmux-ile-satranc-98.png
+toc: true
 ---
 
 Bir sunucuda log, kuyruk, API, veritabanı ve sistem metriklerini aynı anda izlemek bazen dedektiflik oyunu gibidir: ipucu bir yerde akar, hata başka yerde patlar. Bu yazıda kabuk betikleri ve tmux kullanarak ekranı satranç tahtası gibi bölen, her bölmede ayrı bir sürecin canlı çıktısını gösteren eğlenceli ama işe yarar bir izleme konsolu hazırlayacağız.

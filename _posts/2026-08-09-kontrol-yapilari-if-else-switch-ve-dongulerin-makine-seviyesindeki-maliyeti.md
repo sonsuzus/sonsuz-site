@@ -11,6 +11,7 @@ tags:
   - assembly
   - algoritmalar
 image: /img/kontrol-yapilari-if-83.png
+toc: true
 ---
 
 Yüksek seviyeli bir dilde yazılan `if`, `switch` veya `for` satırları zararsız görünür; ancak işlemci bunları doğrudan "karar" olarak algılamaz. Arka planda karşılaştırmalar, koşullu sıçramalar (branch), bellek erişimleri ve bazen tablo üzerinden dolaylı atlamalar çalışır. Bu nedenle kontrol yapısının maliyeti yalnızca kaynak koddaki satır sayısıyla değil, veri dağılımı, derleyici optimizasyonu ve CPU’nun dal tahmin başarısıyla belirlenir.

@@ -9,6 +9,7 @@ tags:
   - dinamik programlama
   - açgözlü yaklaşım
 image: /img/kesirli-ve-0-83.png
+toc: true
 ---
 
 Bir kamp çantanızın kapasitesi sınırlı, önünüzdeki eşyaların ise ağırlıkları ve değerleri farklı olsun. Amaç, çantanın taşıma sınırını aşmadan mümkün olan en yüksek toplam değeri elde etmektir. Bilgisayar bilimindeki **sırt çantası problemi**, bu basit senaryo üzerinden algoritma tasarımının önemli bir dersini gösterir: Aynı görünen problemlerde küçük bir kural değişikliği, doğru çözüm yaklaşımını tamamen değiştirebilir.

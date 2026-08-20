@@ -8,6 +8,7 @@ tags:
   - closures
   - iteratörler
   - fonksiyonel programlama
+toc: true
 ---
 
 Kapanışlar (closures) ve iteratörler, veriyi “nasıl dolaşacağımızı” adım adım anlatmak yerine “hangi dönüşümleri istediğimizi” ifade etmemizi sağlar. Kapanışlar çevrelerindeki değişkenleri hatırlayan isimsiz fonksiyonlardır; iteratörler ise koleksiyon elemanlarını sırayla üreten soyutlamalardır. Birlikte kullanıldıklarında kısa, okunabilir ve yeniden kullanılabilir veri işleme zincirleri ortaya çıkar.

@@ -10,6 +10,7 @@ tags:
   - else
 redirect_from:
   - /posts/python-programlamaya-giris-secim-yapma-mantik-islemleri-karsilastirmalar/
+toc: true
 ---
 
 

@@ -9,6 +9,7 @@ tags:
   - live usb
   - linux kurulumu
 image: /img/kali-linux-kurulumu-61.png
+toc: true
 ---
 
 Kali Linux, siber güvenlik araçlarıyla dolu bir İsviçre çakısı gibidir; ama bu çakıyı cebine kalıcı olarak mı koyacaksın, yoksa gerektiğinde USB’den çıkarıp kullanacak mısın? Bu yazıda Kali’yi diske kurma ve canlı sistem olarak çalıştırma seçeneklerini teorik altyapısıyla inceleyeceğiz. Ama küçük not: Kali güçlü araçlar içerir; yalnızca kendi sistemlerinde, izinli laboratuvarlarda ve etik amaçlarla kullanılmalıdır.

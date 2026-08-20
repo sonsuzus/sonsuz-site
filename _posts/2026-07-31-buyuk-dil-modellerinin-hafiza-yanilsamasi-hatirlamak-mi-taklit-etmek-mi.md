@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - büyük dil modelleri
   - bellek felsefesi
+toc: true
 ---
 
 Bir sohbet botuna geçen hafta anlattığınız kedinizin adını sorduğunuzda doğru cevap alırsanız, model sizi gerçekten hatırlamış mı olur? Yoksa önüne yeniden konulan metindeki örüntüleri ustaca tamamlayan dijital bir oyuncuyla mı karşı karşıyasınızdır? Büyük dil modellerinin ikna edici dili, belleğe sahip oldukları izlenimini doğurur; ancak teknik mekanizma ile kullanıcı deneyimi arasında önemli bir felsefi boşluk vardır.

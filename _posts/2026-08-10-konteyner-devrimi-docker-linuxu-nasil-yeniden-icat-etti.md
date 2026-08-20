@@ -11,6 +11,7 @@ tags:
   - sanallaştırma
   - devops
 image: /img/konteyner-devrimi-docker-29.png
+toc: true
 ---
 
 Docker, Linux'a yeni bir çekirdek eklemedi; daha ilginç bir şey yaptı: Çekirdeğin yıllardır sunduğu izolasyon mekanizmalarını geliştiricinin günlük iş akışına taşıdı. Böylece “benim makinemde çalışıyor” cümlesi, yazılım dünyasının en meşhur mazeretlerinden biri olmaktan çıkmaya başladı. Konteynerler, uygulamayı kodu, bağımlılıkları, çalışma zamanı ve yapılandırmasıyla birlikte paketleyerek işletim sistemi tasarımına daha modüler bir bakış getirdi.

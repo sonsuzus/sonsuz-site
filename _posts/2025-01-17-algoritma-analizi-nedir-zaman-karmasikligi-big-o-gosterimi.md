@@ -15,6 +15,7 @@ tags:
   - karmaşıklık
 redirect_from:
   - /posts/algoritma-analizi-nedir-zaman-karmasikligi-big-o-gosterimi/
+toc: true
 ---
 
 **[Algoritma analizi](https://program.sonsuz.us/search.html?q=algoritma%20analizi)**, algoritmanın yürütülmesi için gerekli kaynak miktarının belirlenmesidir. Belirli bir problemi çözen herhangi bir algoritmanın ihtiyaç duyduğu kaynaklar için teorik tahminler sağlar. Başka bir ifadeyle, *algoritmanın [performansı](https://program.sonsuz.us/search.html?q=performans%C4%B1) ve [kaynak kullanımı](https://program.sonsuz.us/search.html?q=kaynak%20kullan%C4%B1m%C4%B1)* konusunda yapılan teorik çalışmaların tümüne **algoritma analizi** denir.

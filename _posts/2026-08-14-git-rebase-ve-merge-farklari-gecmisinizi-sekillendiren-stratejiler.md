@@ -9,6 +9,7 @@ tags:
   - rebase
   - merge
   - versiyon kontrol
+toc: true
 ---
 
 Git'te iki dalı bir araya getirmek yalnızca dosya değişikliklerini toplamak değildir; aynı zamanda projenin hikâyesini nasıl anlatacağınıza karar vermektir. `merge`, geçmişte yaşanan işbirliğini görünür tutan güvenli bir birleşim yaparken, `rebase` commit'leri başka bir başlangıç noktasına taşıyarak daha doğrusal bir tarihçe üretir. Doğru seçim; ekip düzenine, dalın paylaşılıp paylaşılmadığına ve hata ayıklama alışkanlıklarınıza bağlıdır.

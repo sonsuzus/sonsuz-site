@@ -8,6 +8,7 @@ tags:
   - typescript
   - type guards
   - narrowing
+toc: true
 ---
 
 TypeScript’te bir değişken bazen birden fazla olası tipe sahip olabilir. Böyle durumlarda derleyici, hangi tipe özgü işlemin güvenli olduğunu kendiliğinden bilemez. Tip korumaları (type guards), programın akışındaki kontrolleri kullanarak olası tip kümesini küçültür. Bu işleme **tip daraltma (narrowing)** denir. Böylece kod hem güvenli hem de gereksiz tür dönüşümlerinden uzak hâle gelir.

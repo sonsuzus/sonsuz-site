@@ -8,6 +8,7 @@ tags:
   - veri yapıları
   - segment ağacı
   - fenwick ağacı
+toc: true
 ---
 
 Bir dizideki elemanlar sürekli değişirken belirli bir aralığın toplamını hızlıca bulmak istediğimizi düşünelim. Her sorguda aralığı baştan dolaşmak kolaydır; ancak veri büyüdüğünde işlemciniz küçük bir maraton koşmaya başlar. Segment ağacı ve Fenwick ağacı, aralık sorguları ile nokta güncellemelerini verimli biçimde birleştirerek bu sorunu çözer.

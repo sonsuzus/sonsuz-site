@@ -10,6 +10,7 @@ tags:
   - linux
   - geliştirici kültürü
   - kişiselleştirme
+toc: true
 ---
 
 Bir geliştiricinin bilgisayarına kısa süreliğine oturduğunuzda, terminal açılır açılmaz karakteri hakkında ipuçları toplamaya başlarsınız: rengârenk bir prompt, dikkatle seçilmiş takma adlar, sessizce çalışan araçlar ve belki de yıllardır taşınan bir ASCII sanat eseri. Dotfiles — `.bashrc`, `.zshrc`, `.gitconfig`, `vimrc` ve benzerleri — yalnızca ayar deposu değildir; çalışma alışkanlıklarının, estetik tercihlerin ve teknik dünya görüşünün küçük bir arşividir.
