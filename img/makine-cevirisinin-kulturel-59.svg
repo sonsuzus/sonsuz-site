@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="source" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9ddf7"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6ddff"/>
+      <stop offset="100%" stop-color="#d7c9f4"/>
+    </linearGradient>
+    <linearGradient id="target" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f2e5"/>
+      <stop offset="100%" stop-color="#c4e5d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a8" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="87" cy="45" r="74" fill="#dcecff" opacity="0.42"/>
+  <circle cx="566" cy="282" r="102" fill="#daf1dd" opacity="0.38"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40536a">Makine Çevirisinde Kültürel Bağlam</text>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="88" width="152" height="134" rx="20" fill="url(#source)" stroke="#b8cfe9"/>
+  </g>
+  <text x="108" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#36536e">Kaynak Dil</text>
+  <rect x="51" y="131" width="114" height="27" rx="10" fill="#f8fbff" opacity="0.88"/>
+  <text x="108" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405b73">“O gelecek.”</text>
+  <path d="M62 178 H154" stroke="#91afd0" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="68" cy="178" r="4" fill="#6c9dcc"/>
+  <text x="79" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708b">Belirsizlik</text>
+  <text x="108" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708b">hitap • deyim • bağlam</text>
+
+  <path d="M193 155 H246" stroke="#7995b5" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="250,155 241,150 241,160" fill="#7995b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="252" y="70" width="140" height="170" rx="24" fill="url(#model)" stroke="#c2b5e4"/>
+  </g>
+  <circle cx="322" cy="113" r="27" fill="#f8f6ff" stroke="#b7a7dc" stroke-width="1.4"/>
+  <path d="M306 113 C311 101 321 99 327 106 C333 101 342 105 340 115 C339 123 331 126 323 132 C315 126 305 122 306 113Z" fill="#9d86ce" opacity="0.8"/>
+  <circle cx="316" cy="112" r="2.5" fill="#f8f6ff"/>
+  <circle cx="331" cy="112" r="2.5" fill="#f8f6ff"/>
+  <text x="322" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#554675">Olasılık Modeli</text>
+  <text x="322" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685b86">En olası seçim</text>
+  <rect x="277" y="195" width="90" height="24" rx="9" fill="#f7f4ff" opacity="0.9"/>
+  <text x="322" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#67558b">P(y | x)</text>
+
+  <path d="M399 155 H443" stroke="#7995b5" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="447,155 438,150 438,160" fill="#7995b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="450" y="71" width="158" height="168" rx="20" fill="url(#target)" stroke="#afd6c0"/>
+  </g>
+  <text x="529" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#356552">Hedef Dil</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="468" y="116" width="122" height="27" rx="9" fill="#fbfffc"/>
+    <rect x="468" y="150" width="122" height="27" rx="9" fill="#fbfffc"/>
+    <rect x="468" y="184" width="122" height="27" rx="9" fill="#fbfffc"/>
+  </g>
+  <text x="482" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40735e">He</text>
+  <text x="570" y="134" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7a68">%46</text>
+  <text x="482" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40735e">She</text>
+  <text x="570" y="168" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7a68">%41</text>
+  <text x="482" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40735e">They</text>
+  <text x="570" y="202" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7a68">%13</text>
+
+  <path d="M219 252 C249 275 293 281 334 268" fill="none" stroke="#d18b82" stroke-width="1.7" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="339,267 330,263 332,272" fill="#d18b82"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="79" y="246" width="202" height="48" rx="16" fill="#fff6ef" stroke="#ebc8b8"/>
+  </g>
+  <circle cx="101" cy="270" r="11" fill="#f1b7a5"/>
+  <path d="M96 270 H106 M101 265 V275" stroke="#fffaf7" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="118" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#8a554c">Kültürel katmanlar</text>
+  <text x="118" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6c62">aktarılmadan kalabilir</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="365" y="252" width="192" height="48" rx="16" fill="#f2faf5" stroke="#b9dcc4"/>
+  </g>
+  <circle cx="388" cy="276" r="11" fill="#9acbad"/>
+  <path d="M383 276 L387 280 L394 271" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="406" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#407158">Duyarlı çeviri</text>
+  <text x="406" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e8970">bağlam sorar ve seçenek sunar</text>
+</svg>

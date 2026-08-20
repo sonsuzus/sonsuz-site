@@ -10,6 +10,7 @@ tags:
   - Richard Stallman
   - Siyaset Felsefesi
   - GPL
+image: /img/linux-ve-ozgurluk-52.png
 ---
 
 Linux denince çoğu kişinin zihninde terminal ekranları, penguen maskotları ve “bedava işletim sistemi” fikri belirir. Richard Stallman’ın savunduğu özgür yazılım ise bunlardan daha büyük, hatta politik bir iddiadır: Yazılımı kullanan insan, onu üreten kurumun pasif müşterisi olmamalıdır. Buradaki özgürlük, fiyat etiketiyle değil; bireyin teknoloji karşısındaki iradesiyle ilgilidir.
@@ -49,3 +50,6 @@ Eğer yazılımı dağıtıyorsan:
 Bu model, klasik liberal mülkiyet anlayışıyla ilginç bir gerilim taşır. Özgür yazılım telif hakkını reddetmez; tersine telif hukukunu, paylaşım hakkını koruyacak biçimde kullanır. Yani “kimsenin hiçbir hakkı olmasın” demez. “Bir kişinin yazılım üzerindeki kontrolü, diğerlerinin bilgiye erişim ve işbirliği kapasitesini bütünüyle yok etmesin” der.
 
 Linux da bu metaforun güçlü sembolüdür; ancak teknik olarak Linux çekirdeği, daha geniş GNU araçları ve sayısız özgür bileşenle birlikte anlam kazanır. Özgür yazılımın asıl sorusu şudur: Teknoloji bizi sadece verimli tüketicilere mi dönüştürüyor, yoksa onu birlikte şekillendiren yurttaşlar olmamıza izin veriyor mu? Stallman için özgürlük, ekrandaki seçeneklerden birini seçmek değil; gerektiğinde seçenekleri yazabilme hakkıdır.
+
+![linux-ve-ozgurluk-52](/img/linux-ve-ozgurluk-52.svg)
+

@@ -8,9 +8,13 @@ tags:
   - debugging
   - problem çözme
   - yazılım geliştirme
+image: /img/hata-ayiklamanin-zeni-78.png
 ---
 
 Kod çalışmadığında ilk şüphelimiz çoğu zaman bilgisayardır. Oysa bilgisayar, talimatlarımızı rahatsız edici bir sadakatle uygulamıştır. Bug; beklentimiz, varsayımımız ve gerçek davranış arasındaki çatlakta yaşar. Bu nedenle hata ayıklamak yalnızca bozuk satırı bulmak değil, düşünme biçimimizi gözlemlemektir: Neyi bildiğimizi sandık, neyi kontrol etmedik ve hangi sonuca gereğinden hızlı âşık olduk?
+
+
+![hata-ayiklamanin-zeni-78](/img/hata-ayiklamanin-zeni-78.svg)
 
 ``
 

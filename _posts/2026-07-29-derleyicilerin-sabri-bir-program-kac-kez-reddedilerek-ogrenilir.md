@@ -8,6 +8,7 @@ tags:
   - derleyiciler
   - hata mesajları
   - programlama eğitimi
+image: /img/derleyicilerin-sabri-bir-84.png
 ---
 
 Programlama öğrenirken derleyicinin kırmızı hata mesajları bazen kişisel bir eleştiri gibi hissedilir: “Yine olmadı!” Oysa derleyici öfkeli bir kapı görevlisi değil, son derece katı kuralları olan bir dil öğretmenidir. Programımızı her reddedişinde neyi henüz doğru ifade edemediğimizi gösterir. Bu nedenle başarılı bir program, çoğu zaman ilk denemede kabul edilen değil; geri bildirimlerle adım adım düzeltilen programdır.
@@ -42,6 +43,9 @@ Aynı değişikliği düşünmeden on kez yapmak düşük; hata mesajını okuyu
 | Tür hatası | “Bu değer burada kullanılamaz.” | Veri türleri ve işlemlerin sınırları |
 | Bağlama hatası | “Bu adı bulamıyorum.” | Kapsam, bildirim ve modül ilişkileri |
 | Mantık hatası | Derleyici çoğunlukla sessizdir. | Test yazma, problem çözme ve algoritmik düşünme |
+
+![derleyicilerin-sabri-bir-84](/img/derleyicilerin-sabri-bir-84.svg)
+
 
 İlk üç grupta derleyici doğrudan yardımcı olabilir. Mantık hatalarında ise program geçerli olduğu hâlde yanlış sonuç üretir. Yani “derlendi” demek, “doğru çalışıyor” demek değildir.
 

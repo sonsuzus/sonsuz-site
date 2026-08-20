@@ -8,7 +8,11 @@ tags:
   - Rust
   - Lifetimes
   - Bellek Güvenliği
+image: /img/rustta-yasam-sureleri-29.png
 ---
+
+![rustta-yasam-sureleri-29](/img/rustta-yasam-sureleri-29.svg)
+
 
 Bir referans, işaret ettiği değer ortadan kalktıktan sonra kullanılmaya çalışılırsa ortaya **dangling reference** çıkar. C ve C++ gibi dillerde bu hata bazen program çalışana, hatta üretim ortamında gizemli bir çöküş yaşanana kadar fark edilmez. Rust ise yaşam sürelerini derleme aşamasında çözümleyerek “Bu referans hâlâ geçerli mi?” sorusunu program çalışmadan cevaplar.
 ``

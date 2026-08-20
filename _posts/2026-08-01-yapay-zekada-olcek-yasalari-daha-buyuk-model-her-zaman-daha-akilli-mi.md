@@ -8,6 +8,7 @@ tags:
   - yapay zekâ
   - ölçek yasaları
   - büyük dil modelleri
+image: /img/yapay-zekada-olcek-60.png
 ---
 
 Bir dil modeline daha fazla parametre eklemek, ona otomatik olarak daha fazla “zekâ” mı kazandırır? Son yıllardaki dev modeller bu fikri destekliyor gibi görünse de gerçek tablo daha renkli: Boyut önemli, fakat veri kalitesi, eğitim bütçesi, mimari ve modelin nasıl kullanıldığı da en az boyut kadar belirleyici.
@@ -70,3 +71,6 @@ Kod gerçek bir modelin performansını kesin olarak tahmin etmez; azalan getiri
 Daha büyük modeller genellikle daha iyi dil üretir, daha fazla bilgiyi sıkıştırır ve örneklerden daha esnek biçimde öğrenir. Buna rağmen halüsinasyon, güncellik, nedensel akıl yürütme ve güvenilirlik sorunları yalnızca parametre eklenerek çözülmez. İyi veri, araç kullanımı, bilgi getirme sistemleri, ince ayar ve insan geri bildirimi çoğu zaman daha ekonomik ilerleme sağlar.
 
 Sonuç olarak ölçek güçlü bir kaldıraçtır, zekânın tek ölçüsü değildir. En başarılı sistem, mutlaka en büyük model değil; boyut, veri, hesaplama ve kullanım maliyeti arasındaki dengeyi en iyi kuran modeldir.
+
+![yapay-zekada-olcek-60](/img/yapay-zekada-olcek-60.svg)
+

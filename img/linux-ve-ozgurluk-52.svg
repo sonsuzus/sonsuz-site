@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c9bcf"/>
+      <stop offset="100%" stop-color="#4a7ba6"/>
+    </linearGradient>
+    <linearGradient id="branch1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8fd3a8"/>
+      <stop offset="100%" stop-color="#6ab88a"/>
+    </linearGradient>
+    <linearGradient id="branch2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c987"/>
+      <stop offset="100%" stop-color="#e0b065"/>
+    </linearGradient>
+    <linearGradient id="branch3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a8e0"/>
+      <stop offset="100%" stop-color="#a884c9"/>
+    </linearGradient>
+    <linearGradient id="branch4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0a0a0"/>
+      <stop offset="100%" stop-color="#d47c7c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#3a5a7a">Özgür Yazılım ve Kullanıcı Özerkliği</text>
+
+  <!-- Merkez düğüm -->
+  <circle cx="320" cy="160" r="52" fill="url(#centerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Özgür</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Yazılım</text>
+
+  <!-- Bağlantı çizgileri ve oklar -->
+  <!-- Sol üst: Negatif özgürlük -->
+  <path d="M 275 135 Q 180 90 140 80" stroke="#6ab88a" stroke-width="2" fill="none"/>
+  <polygon points="140,80 150,76 146,84" fill="#6ab88a"/>
+
+  <!-- Sağ üst: Pozitif özgürlük -->
+  <path d="M 365 135 Q 460 90 500 80" stroke="#e0b065" stroke-width="2" fill="none"/>
+  <polygon points="500,80 490,76 494,84" fill="#e0b065"/>
+
+  <!-- Sol alt: Dört özgürlük -->
+  <path d="M 275 185 Q 180 230 140 240" stroke="#a884c9" stroke-width="2" fill="none"/>
+  <polygon points="140,240 150,244 146,236" fill="#a884c9"/>
+
+  <!-- Sağ alt: Copyleft / GPL -->
+  <path d="M 365 185 Q 460 230 500 240" stroke="#d47c7c" stroke-width="2" fill="none"/>
+  <polygon points="500,240 490,236 494,244" fill="#d47c7c"/>
+
+  <!-- Sol üst kutu: Negatif özgürlük -->
+  <rect x="20" y="52" width="120" height="56" rx="10" fill="url(#branch1)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="80" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d5a3a">Negatif</text>
+  <text x="80" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d5a3a">Özgürlük</text>
+  <text x="80" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2d5a3a" opacity="0.8">Dış müdahale yok</text>
+
+  <!-- Sağ üst kutu: Pozitif özgürlük -->
+  <rect x="500" y="52" width="120" height="56" rx="10" fill="url(#branch2)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="560" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a5a20">Pozitif</text>
+  <text x="560" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a5a20">Özgürlük</text>
+  <text x="560" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a5a20" opacity="0.8">Kendi iradesini kurma</text>
+
+  <!-- Sol alt kutu: Dört özgürlük -->
+  <rect x="20" y="212" width="120" height="76" rx="10" fill="url(#branch3)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="80" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a2d6a">Dört Özgürlük</text>
+  <text x="80" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a2d6a">Çalıştır</text>
+  <text x="80" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a2d6a">İncele ve değiştir</text>
+  <text x="80" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a2d6a">Paylaş ve dağıt</text>
+
+  <!-- Sağ alt kutu: Copyleft -->
+  <rect x="500" y="212" width="120" height="76" rx="10" fill="url(#branch4)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="560" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a2d2d">Copyleft</text>
+  <text x="560" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a2d2d">GPL Lisansı</text>
+  <text x="560" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a2d2d">Kaynak kod açık</text>
+  <text x="560" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a2d2d">Türevler de özgür</text>
+
+  <!-- Alt bilgi şeridi -->
+  <rect x="220" y="290" width="200" height="22" rx="8" fill="#4a7ba6" opacity="0.15"/>
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">Özgürlük ≠ Ücretsizlik</text>
+
+  <!-- Küçük vurgu: Kaynak kod -->
+  <rect x="270" y="118" width="100" height="18" rx="6" fill="#ffffff" opacity="0.5"/>
+  <text x="320" y="131" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a7ba6">Kaynak kod erişimi</text>
+
+  <!-- Küçük vurgu: Kullanıcı egemenliği -->
+  <rect x="270" y="184" width="100" height="18" rx="6" fill="#ffffff" opacity="0.5"/>
+  <text x="320" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a7ba6">Kullanıcı egemenliği</text>
+</svg>

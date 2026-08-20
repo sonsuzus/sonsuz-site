@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="txGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="rxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dcfce7"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+    <linearGradient id="chGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="modGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9d5ff"/>
+      <stop offset="100%" stop-color="#d8b4fe"/>
+    </linearGradient>
+    <linearGradient id="demGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Akustik Modem: FSK ile Veri İletimi</text>
+
+  <!-- TX Side -->
+  <!-- Text Input -->
+  <rect x="20" y="55" width="120" height="50" rx="10" fill="url(#txGrad)" filter="url(#shadow)"/>
+  <text x="80" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">Metin</text>
+  <text x="80" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3b5b9a">"Merhaba modem!"</text>
+
+  <!-- Bit Converter -->
+  <rect x="20" y="125" width="120" height="50" rx="10" fill="url(#txGrad)" filter="url(#shadow)"/>
+  <text x="80" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">Bit Dönüştürücü</text>
+  <text x="80" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3b5b9a">UTF-8 → 0/1</text>
+
+  <!-- FSK Modulator -->
+  <rect x="20" y="195" width="120" height="50" rx="10" fill="url(#modGrad)" filter="url(#shadow)"/>
+  <text x="80" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4c1d95">FSK Modülatör</text>
+  <text x="80" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6d28d9">1200 / 2200 Hz</text>
+
+  <!-- TX Arrow to Channel -->
+  <path d="M140 220 L210 220" stroke="#475569" stroke-width="2" fill="none"/>
+  <polygon points="210,220 200,215 200,225" fill="#475569"/>
+
+  <!-- Channel -->
+  <rect x="215" y="170" width="120" height="100" rx="12" fill="url(#chGrad)" filter="url(#shadow)"/>
+  <text x="275" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#92400e">Ses Dalgası</text>
+  <text x="275" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b45309">Hoparlör → Mikrofon</text>
+  <text x="275" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b45309">Preamble + Veri</text>
+  <text x="275" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b45309">Gürültü ve Yankı</text>
+
+  <!-- Channel Arrow to RX -->
+  <path d="M335 220 L410 220" stroke="#475569" stroke-width="2" fill="none"/>
+  <polygon points="410,220 400,215 400,225" fill="#475569"/>
+
+  <!-- RX Side -->
+  <!-- FSK Demodulator -->
+  <rect x="415" y="55" width="120" height="50" rx="10" fill="url(#demGrad)" filter="url(#shadow)"/>
+  <text x="475" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9d174d">FSK Çözücü</text>
+  <text x="475" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#be185d">Goertzel / FFT</text>
+
+  <!-- Bit Decoder -->
+  <rect x="415" y="125" width="120" height="50" rx="10" fill="url(#demGrad)" filter="url(#shadow)"/>
+  <text x="475" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9d174d">Bit Çözücü</text>
+  <text x="475" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#be185d">Enerji Karşılaştırma</text>
+
+  <!-- Text Output -->
+  <rect x="415" y="195" width="120" height="50" rx="10" fill="url(#demGrad)" filter="url(#shadow)"/>
+  <text x="475" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9d174d">Metin Çıktısı</text>
+  <text x="475" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#be185d">Bayt → UTF-8</text>
+
+  <!-- Vertical arrows on TX -->
+  <path d="M80 105 L80 125" stroke="#475569" stroke-width="2" fill="none"/>
+  <polygon points="80,125 75,115 85,115" fill="#475569"/>
+  <path d="M80 175 L80 195" stroke="#475569" stroke-width="2" fill="none"/>
+  <polygon points="80,195 75,185 85,185" fill="#475569"/>
+
+  <!-- Vertical arrows on RX -->
+  <path d="M475 105 L475 125" stroke="#475569" stroke-width="2" fill="none"/>
+  <polygon points="475,125 470,115 480,115" fill="#475569"/>
+  <path d="M475 175 L475 195" stroke="#475569" stroke-width="2" fill="none"/>
+  <polygon points="475,195 470,185 480,185" fill="#475569"/>
+
+  <!-- Frequency labels -->
+  <text x="275" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#64748b">f₀ = 1200 Hz, f₁ = 2200 Hz</text>
+
+  <!-- Bit rate note -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#64748b">Bit Süresi: 20 ms → 50 bit/s</text>
+</svg>

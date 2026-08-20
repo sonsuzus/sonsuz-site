@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="sensor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#c5e8f7"/>
+    </linearGradient>
+    <linearGradient id="process" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8e0c8"/>
+      <stop offset="100%" stop-color="#d4f0dc"/>
+    </linearGradient>
+    <linearGradient id="feature" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d4a8"/>
+      <stop offset="100%" stop-color="#fae8c8"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8b8e8"/>
+      <stop offset="100%" stop-color="#e0d4f5"/>
+    </linearGradient>
+    <linearGradient id="output" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0a8b8"/>
+      <stop offset="100%" stop-color="#f8c8d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Sensörden Aktivite Bilgisine Uçtan Uca Sistem</text>
+
+  <!-- Sol: İvmeölçer -->
+  <rect x="20" y="55" width="110" height="80" rx="10" fill="url(#sensor)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="75" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">İvmeölçer</text>
+  <text x="75" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">ax, ay, az</text>
+  <text x="75" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">50 Hz örnekleme</text>
+
+  <!-- Ok: sensör -> ön işleme -->
+  <path d="M130 95 L175 95" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="175,90 185,95 175,100" fill="#5d6d7e"/>
+
+  <!-- Ön işleme -->
+  <rect x="185" y="45" width="130" height="100" rx="10" fill="url(#process)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="250" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e6b3a">Ön İşleme</text>
+  <text x="250" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Büyüklük hesabı</text>
+  <text x="250" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Bant geçiren filtre</text>
+  <text x="250" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Pencereleme</text>
+  <text x="250" y="134" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Yerçekimi ayırma</text>
+
+  <!-- Ok: ön işleme -> özellik çıkarımı -->
+  <path d="M315 95 L360 95" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="360,90 370,95 360,100" fill="#5d6d7e"/>
+
+  <!-- Özellik çıkarımı -->
+  <rect x="370" y="45" width="120" height="100" rx="10" fill="url(#feature)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="430" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7e5109">Özellik Çıkarımı</text>
+  <text x="430" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Ortalama, std sapma</text>
+  <text x="430" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Enerji, tepe değeri</text>
+  <text x="430" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Baskın frekans</text>
+
+  <!-- Ok: özellik -> model -->
+  <path d="M490 95 L535 95" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="535,90 545,95 535,100" fill="#5d6d7e"/>
+
+  <!-- Model -->
+  <rect x="545" y="45" width="80" height="100" rx="10" fill="url(#model)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="585" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a235a">Model</text>
+  <text x="585" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Random</text>
+  <text x="585" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Forest</text>
+  <text x="585" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">SVM</text>
+
+  <!-- Adım sayma paralel dalı -->
+  <path d="M250 145 L250 170 L430 170" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <path d="M430 170 L430 145" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="425,145 430,135 435,145" fill="#5d6d7e"/>
+
+  <!-- Adım sayma kutusu -->
+  <rect x="370" y="170" width="120" height="55" rx="10" fill="url(#process)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="430" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e6b3a">Adım Sayma</text>
+  <text x="430" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Tepe tespiti</text>
+
+  <!-- Ok: adım sayma -> çıktı -->
+  <path d="M490 197 L535 197" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="535,192 545,197 535,202" fill="#5d6d7e"/>
+
+  <!-- Çıktı -->
+  <rect x="545" y="170" width="80" height="55" rx="10" fill="url(#output)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="585" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7b241c">Çıktı</text>
+  <text x="585" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Adım sayısı</text>
+
+  <!-- Ok: model -> çıktı -->
+  <path d="M585 145 L585 170" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="580,170 585,180 590,170" fill="#5d6d7e"/>
+
+  <!-- Aktivite sınıflandırma çıktısı -->
+  <rect x="545" y="235" width="80" height="55" rx="10" fill="url(#output)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="585" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7b241c">Aktivite</text>
+  <text x="585" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Yürüme</text>
+  <text x="585" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Koşma</text>
+
+  <!-- Ok: model -> aktivite çıktısı -->
+  <path d="M585 145 L585 235" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="580,235 585,245 590,235" fill="#5d6d7e"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">Gerçek zamanlı mobil aktivite takip sistemi</text>
+</svg>

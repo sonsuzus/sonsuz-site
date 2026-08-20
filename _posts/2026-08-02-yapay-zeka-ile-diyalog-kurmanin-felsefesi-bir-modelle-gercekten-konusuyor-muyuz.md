@@ -8,6 +8,7 @@ tags:
   - yapay zekâ
   - dil felsefesi
   - insan-makine etkileşimi
+image: /img/yapay-zeka-ile-44.png
 ---
 
 Bir yapay zekâ modeline “Bugün nasılsın?” diye sorduğumuzda karşımıza çoğu zaman doğal, tutarlı ve hatta duygulu görünen bir yanıt çıkar. Peki bu alışveriş gerçekten konuşma mıdır, yoksa konuşmaya benzeyen gelişmiş bir hesaplama gösterisi mi? Sorunun yanıtı; dil, anlam ve niyet kavramlarından ne beklediğimize göre değişir.
@@ -42,6 +43,9 @@ Ancak mekanizmanın istatistiksel olması, sonucun anlamsız olduğu anlamına g
 | Dünya bağlantısı | Bedensel ve duyusal deneyim | Eğitim verisi ve araçlardan gelen temsil |
 | Hata türü | Yanılma, unutma, önyargı | Halüsinasyon, bağlam kaybı, örüntü yanlılığı |
 | Anlam | Yaşantı ve kullanım içinde oluşur | Etkileşim sırasında kullanıcı tarafından yorumlanır |
+
+![yapay-zeka-ile-44](/img/yapay-zeka-ile-44.svg)
+
 
 ## Niyet gerçekten gerekli mi?
 

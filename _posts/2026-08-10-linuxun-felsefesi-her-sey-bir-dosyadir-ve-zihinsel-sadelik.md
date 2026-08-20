@@ -8,9 +8,13 @@ tags:
   - Linux
   - Unix felsefesi
   - bilişsel ekonomi
+image: /img/linuxun-felsefesi-her-98.png
 ---
 
 Linux terminalinde bir aygıtla konuşmak, bir günlük kaydını izlemek ve bir yapılandırmayı değiştirmek çoğu zaman aynı tanıdık araçlarla yapılır: `cat`, `echo`, `grep`, `read`, `write`. Bunun arkasındaki güçlü fikir, Unix dünyasının meşhur ilkesi olan **“her şey bir dosyadır”** yaklaşımıdır. Elbette bu ifade teknik olarak mutlak değildir; süreçler, soketler ve aygıtlar farklı çekirdek nesneleridir. Ancak kullanıcı alanında bunların önemli bir bölümü dosya benzeri arayüzlerle temsil edilir. Bu temsil tercihi, yalnızca mühendislik zarafeti değil, bilişsel ekonominin de başarılı bir örneğidir.
+
+![linuxun-felsefesi-her-98](/img/linuxun-felsefesi-her-98.svg)
+
 ``
 Bilişsel ekonomi, zihnin sınırlı dikkat, bellek ve karar verme kapasitesini mümkün olan en az maliyetle kullanma eğilimidir. Yeni bir sistem öğrenirken her nesne türü için ayrı bir etkileşim modeli öğrenmek pahalıdır. Linux ise farklı kaynakları ortak bir soyutlamada buluşturarak zihinsel model sayısını azaltır. Kullanıcının temel fikri şudur: “Bir şeye erişmek istiyorsam, önce onun yolunu bulur; sonra okur, yazar veya filtrelerim.”
 

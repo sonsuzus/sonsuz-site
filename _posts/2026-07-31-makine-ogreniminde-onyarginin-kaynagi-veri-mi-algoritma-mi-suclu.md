@@ -8,6 +8,7 @@ tags:
   - makine öğrenimi
   - algoritmik önyargı
   - veri etiği
+image: /img/makine-ogreniminde-onyarginin-97.png
 ---
 
 Bir makine öğrenimi modeli ayrımcı bir karar verdiğinde ilk şüpheli genellikle algoritmadır. Oysa algoritma çoğu zaman toplumsal gerçekliği yansıtan, hatta büyüten bir ayna gibi çalışır. İşe alımdan kredi değerlendirmesine kadar geçmiş kararlarla oluşturulan veri kümeleri; eşitsizlikleri, eksik temsili ve insan önyargılarını sessizce modele taşıyabilir. Kısacası mesele yalnızca “kötü kod” değil, hangi dünyanın sayılara dönüştürüldüğüdür.
@@ -76,3 +77,6 @@ Kod, her grup için gerçekten olumlu örneklerin ne kadarının doğru bulundu�
 Önyargı genellikle veri **veya** algoritma şeklinde ikili bir seçime indirgenemez. Veri toplumsal geçmişi taşır; algoritma onu optimize eder; kurum ise sonuçların nasıl kullanılacağını belirler. Çözüm, veri kaynağını belgelemek, eksik grupları temsil etmek, etiketleri denetlemek, grup bazlı metrikler yayımlamak ve modeli kullanım sonrasında izlemektir.
 
 En önemlisi de etkilenen toplulukları tasarım sürecine katmaktır. Çünkü adalet yalnızca matematikçilerin tanımladığı bir denklem değil, sonuçlarına insanların katlandığı toplumsal bir karardır. Makine tarafsız görünse de ona geçmişi biz anlatırız; hangi geleceği kuracağını da yine biz belirleriz.
+
+![makine-ogreniminde-onyarginin-97](/img/makine-ogreniminde-onyarginin-97.svg)
+

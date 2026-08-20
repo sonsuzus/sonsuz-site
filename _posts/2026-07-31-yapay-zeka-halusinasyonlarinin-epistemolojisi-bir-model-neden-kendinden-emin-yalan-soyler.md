@@ -8,7 +8,11 @@ tags:
   - yapay zekâ
   - halüsinasyon
   - epistemoloji
+image: /img/yapay-zeka-halusinasyonlarinin-35.png
 ---
+
+![yapay-zeka-halusinasyonlarinin-35](/img/yapay-zeka-halusinasyonlarinin-35.svg)
+
 
 Bir dil modeline az bilinen bir kitabın özetini sorduğunuzu düşünün. Model; yazarın niyetinden, karakterlerin çatışmalarından ve hatta hiç var olmamış bir bölümden büyük bir rahatlıkla bahsedebilir. Cümleleri düzgün, tonu kararlı, ayrıntıları ikna edicidir. Tek sorun, anlattıklarının uydurma olmasıdır. Bu davranış çoğu zaman “kendinden emin yalan söylemek” diye tanımlansa da mesele ahlaki değil, epistemolojiktir: Modelin doğruyu bilmesiyle doğru görünen bir cümle üretmesi aynı şey değildir.
 

@@ -8,9 +8,13 @@ tags:
   - TDD
   - yazılım etiği
   - test otomasyonu
+image: /img/test-odakli-gelistirmenin-75.png
 ---
 
 Bir testi üretim kodundan önce yazmak, yalnızca teknik bir çalışma yöntemi değildir. Geliştirici önce sistemin nasıl davranması gerektiğini açıkça söyler, ardından bu sözü yerine getiren kodu üretir. Bu açıdan Test Odaklı Geliştirme (TDD), küçük ama tekrarlanan etik taahhütlerden oluşur: Beklentiyi görünür kıl, başarısızlığı saklama ve verdiğin sözü doğrulanabilir biçimde tut.
+
+
+![test-odakli-gelistirmenin-75](/img/test-odakli-gelistirmenin-75.svg)
 
 ``
 

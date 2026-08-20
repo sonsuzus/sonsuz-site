@@ -8,7 +8,11 @@ tags:
   - Python
   - Listeler
   - Demetler
+image: /img/python-listeleri-ve-30.png
 ---
+
+![python-listeleri-ve-30](/img/python-listeleri-ve-30.svg)
+
 
 Python’da sıralı verileri saklamak istediğimizde karşımıza çoğunlukla iki güçlü seçenek çıkar: listeler (`list`) ve demetler (`tuple`). İlk bakışta ikisi de elemanları sırayla tutar, indekslenebilir ve döngülerde kullanılabilir. Ancak perde arkasında önemli bir ayrım vardır: Listeler değiştirilebilirken demetler oluşturulduktan sonra sabit kalır. Bu fark; güvenlikten performansa, bellek tüketiminden kodun okunabilirliğine kadar pek çok kararı etkiler.
 

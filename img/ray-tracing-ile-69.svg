@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4e6f1"/>
+      <stop offset="100%" stop-color="#a9cce3"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d5f5e3"/>
+      <stop offset="100%" stop-color="#a9dfbf"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdebd0"/>
+      <stop offset="100%" stop-color="#f5cba7"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8daef"/>
+      <stop offset="100%" stop-color="#d2b4de"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fadbd8"/>
+      <stop offset="100%" stop-color="#f5b7b1"/>
+    </linearGradient>
+    <linearGradient id="box6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d6eaf8"/>
+      <stop offset="100%" stop-color="#aed6f1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Ray Tracing ile 3B Render Motoru</text>
+
+  <!-- Kamera kutusu -->
+  <rect x="30" y="60" width="110" height="50" rx="10" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="85" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Kamera</text>
+  <text x="85" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">Birincil ışınlar</text>
+
+  <!-- Birincil ışın oku -->
+  <path d="M140 85 L200 85" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <polygon points="200,80 212,85 200,90" fill="#2c3e50"/>
+
+  <!-- Kesişim kutusu -->
+  <rect x="215" y="55" width="120" height="60" rx="10" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="275" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Küre Kesişimi</text>
+  <text x="275" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1e8449">t = min(t &gt; 0)</text>
+
+  <!-- Gölge ışını oku -->
+  <path d="M275 115 L275 155" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <polygon points="270,155 275,167 280,155" fill="#2c3e50"/>
+
+  <!-- Gölge kutusu -->
+  <rect x="215" y="170" width="120" height="55" rx="10" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="275" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9c640c">Gölge Işını</text>
+  <text x="275" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9c640c">Engel var mı?</text>
+
+  <!-- Yansıma oku -->
+  <path d="M335 85 L395 85" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <polygon points="395,80 407,85 395,90" fill="#2c3e50"/>
+
+  <!-- Yansıma kutusu -->
+  <rect x="410" y="55" width="120" height="60" rx="10" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="470" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6c3483">Yansıma</text>
+  <text x="470" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6c3483">R = D - 2(D·N)N</text>
+
+  <!-- Yansıma geri besleme oku -->
+  <path d="M470 115 L470 140 Q470 150 460 150 L395 150 Q385 150 385 140 L385 120" stroke="#6c3483" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="381,120 385,132 389,120" fill="#6c3483"/>
+
+  <!-- Aydınlatma oku -->
+  <path d="M275 55 L275 30 Q275 20 285 20 L395 20 Q405 20 405 30 L405 50" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+  <polygon points="401,50 405,62 409,50" fill="#2c3e50"/>
+
+  <!-- Aydınlatma kutusu -->
+  <rect x="410" y="140" width="120" height="55" rx="10" fill="url(#box5)" filter="url(#shadow)"/>
+  <text x="470" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#922b21">Aydınlatma</text>
+  <text x="470" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#922b21">N·L / (4πd²)</text>
+
+  <!-- Gölge engel oku -->
+  <path d="M335 197 L405 197" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+  <polygon points="405,192 417,197 405,202" fill="#2c3e50"/>
+
+  <!-- Renk oku -->
+  <path d="M530 85 L570 85" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <polygon points="570,80 582,85 570,90" fill="#2c3e50"/>
+
+  <!-- Piksel kutusu -->
+  <rect x="585" y="60" width="45" height="50" rx="10" fill="url(#box6)" filter="url(#shadow)"/>
+  <text x="607" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1a5276">Piksel</text>
+  <text x="607" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">Renk</text>
+
+  <!-- Özyineleme etiketi -->
+  <text x="470" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#6c3483" font-style="italic">derinlik + 1</text>
+
+  <!-- Alt açıklama -->
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#566573">Işık kaynağından değil, kameradan izleme yapılır</text>
+
+  <!-- Işık kaynağı simgesi -->
+  <circle cx="470" cy="20" r="8" fill="#f9e79f" stroke="#f1c40f" stroke-width="2" filter="url(#shadowLight)"/>
+  <text x="470" y="23" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="8" fill="#7d6608">Işık</text>
+
+  <!-- Küre simgesi -->
+  <circle cx="275" cy="85" r="5" fill="#aed6f1" stroke="#2c3e50" stroke-width="1" opacity="0.6"/>
+</svg>

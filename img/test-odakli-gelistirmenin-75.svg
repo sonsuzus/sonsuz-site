@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8d7da"/>
+      <stop offset="100%" stop-color="#f1c0c0"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4edda"/>
+      <stop offset="100%" stop-color="#b7dfb9"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d1ecf1"/>
+      <stop offset="100%" stop-color="#b8dbe3"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff5cc"/>
+      <stop offset="100%" stop-color="#ffeaa7"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">TDD: Etik Sözleşme Döngüsü</text>
+
+  <!-- Merkez düğüm -->
+  <ellipse cx="320" cy="165" rx="85" ry="38" fill="url(#centerGrad)" stroke="#d4a017" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6b5b00">Söz Vermek</text>
+  <text x="320" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a6a10">kanıtlanabilir dürüstlük</text>
+
+  <!-- Red - Sol üst -->
+  <rect x="60" y="70" width="120" height="52" rx="10" fill="url(#redGrad)" stroke="#c0392b" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="120" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7b241c">Kırmızı</text>
+  <text x="120" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8b3a2a">Beklentiyi tanımla</text>
+
+  <!-- Green - Sağ üst -->
+  <rect x="460" y="70" width="120" height="52" rx="10" fill="url(#greenGrad)" stroke="#27ae60" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="520" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e6b3a">Yeşil</text>
+  <text x="520" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2d7a4a">Sözünü en küçük kodla tut</text>
+
+  <!-- Refactor - Alt -->
+  <rect x="260" y="250" width="120" height="52" rx="10" fill="url(#blueGrad)" stroke="#2980b9" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="320" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Yeniden Düzenle</text>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c6b8a">Güvenceyi bozmadan iyileştir</text>
+
+  <!-- Ok: Red -> Merkez -->
+  <path d="M 180 96 C 220 96, 240 130, 260 148" stroke="#c0392b" stroke-width="1.8" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="260,148 251,142 253,152" fill="#c0392b"/>
+
+  <!-- Ok: Green -> Merkez -->
+  <path d="M 460 96 C 420 96, 400 130, 380 148" stroke="#27ae60" stroke-width="1.8" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="380,148 389,142 387,152" fill="#27ae60"/>
+
+  <!-- Ok: Merkez -> Refactor -->
+  <path d="M 320 203 C 320 220, 320 230, 320 248" stroke="#2980b9" stroke-width="1.8" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="320,248 315,239 325,239" fill="#2980b9"/>
+
+  <!-- Ok: Refactor -> Red (döngüyü kapat) -->
+  <path d="M 260 276 C 180 276, 80 250, 80 180 C 80 140, 90 120, 105 105" stroke="#7f8c8d" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="105,105 98,110 110,112" fill="#7f8c8d"/>
+
+  <!-- Ok: Refactor -> Green (döngüyü kapat) -->
+  <path d="M 380 276 C 460 276, 560 250, 560 180 C 560 140, 550 120, 535 105" stroke="#7f8c8d" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="535,105 542,110 530,112" fill="#7f8c8d"/>
+
+  <!-- Alt bilgi: Test denklemi -->
+  <rect x="30" y="140" width="130" height="40" rx="8" fill="#ffffff" opacity="0.7" filter="url(#shadowLight)"/>
+  <text x="95" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">T(f, x, y) = 1</text>
+  <text x="95" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">doğrulanabilir iddia</text>
+
+  <!-- Sağ bilgi: Güven formülü -->
+  <rect x="480" y="140" width="130" height="40" rx="8" fill="#ffffff" opacity="0.7" filter="url(#shadowLight)"/>
+  <text x="545" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">Güven ≈ Kapsam × Kalite</text>
+  <text x="545" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">bağımsız denetim</text>
+
+  <!-- Etiket: Red'den merkeze "önce" -->
+  <text x="215" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7b241c" font-style="italic">önce söz</text>
+
+  <!-- Etiket: Green'den merkeze "sonra" -->
+  <text x="425" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1e6b3a" font-style="italic">sonra tut</text>
+</svg>

@@ -8,7 +8,11 @@ tags:
   - makine çevirisi
   - dilsel görecelik
   - yapay zekâ
+image: /img/makine-cevirisinin-kulturel-59.png
 ---
+
+![makine-cevirisinin-kulturel-59](/img/makine-cevirisinin-kulturel-59.svg)
+
 
 Bir çeviri uygulamasına birkaç sözcük yazıp saniyeler içinde başka bir dilde karşılığını almak neredeyse sihir gibi görünüyor. Ancak dil yalnızca bilgi taşıyan nötr bir boru değildir; hitap biçimleri, toplumsal ilişkiler, tarihsel çağrışımlar ve dünyayı sınıflandırma alışkanlıkları da sözcüklerin içinde yolculuk eder. Makine çevirisi anlamı aktarırken bu görünmez yükün bir bölümünü peronda bırakabilir.
 

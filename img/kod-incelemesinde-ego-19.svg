@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#c8dcfb"/>
+    </linearGradient>
+    <linearGradient id="learnGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f3df"/>
+      <stop offset="100%" stop-color="#bde8c8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8299" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#65758a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="40" r="62" fill="#d9eff0" opacity="0.38"/>
+  <circle cx="584" cy="273" r="84" fill="#e4e5fb" opacity="0.42"/>
+  <path d="M40 78 C123 36, 162 42, 214 69" fill="none" stroke="#b6d8df" stroke-width="2" opacity="0.45"/>
+  <path d="M430 268 C499 224, 557 217, 622 238" fill="none" stroke="#c8d7b8" stroke-width="2" opacity="0.48"/>
+
+  <text x="320" y="26" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#536679">Kod İncelemesi: Tepkiyi Dönüştürmek</text>
+
+  <!-- Input -->
+  <g filter="url(#shadow)">
+    <rect x="45" y="116" width="132" height="88" rx="19" fill="url(#codeGrad)" stroke="#adc7ea"/>
+    <rect x="61" y="132" width="25" height="25" rx="8" fill="#ffffff" opacity="0.72"/>
+    <path d="M71 139 L66 144 L71 149 M77 139 L82 144 L77 149" fill="none" stroke="#5279a9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="96" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#345575">İnceleme</text>
+    <text x="111" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708c">“Fazla karmaşık”</text>
+    <text x="111" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708c">geri bildirim</text>
+  </g>
+
+  <!-- Arrow input -->
+  <path d="M178 160 L222 160" fill="none" stroke="#8ca4b6" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="222,160 213,155 213,165" fill="#8ca4b6"/>
+
+  <!-- Central interpretation -->
+  <g filter="url(#shadow)">
+    <circle cx="266" cy="160" r="49" fill="#fff8df" stroke="#e6d18b"/>
+    <circle cx="266" cy="160" r="34" fill="#fffdf3" opacity="0.76"/>
+    <path d="M252 149 C252 140, 260 135, 267 135 C276 135, 282 141, 282 149 C282 158, 275 162, 273 169 L259 169 C258 162, 252 158, 252 149Z" fill="#f5cf65" stroke="#b98c2d" stroke-width="1.4"/>
+    <path d="M260 175 L272 175 M262 180 L270 180" stroke="#b98c2d" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="266" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#766131">Yorumlama</text>
+  </g>
+
+  <!-- Branch top defense -->
+  <path d="M301 133 C332 105, 351 91, 382 87" fill="none" stroke="#d28d96" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="382,87 373,84 376,94" fill="#d28d96"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="390" y="51" width="190" height="81" rx="17" fill="#fde9eb" stroke="#efbdc3"/>
+    <circle cx="418" cy="78" r="16" fill="#f7c6cc"/>
+    <path d="M418 68 L421 74 L427 75 L422 79 L423 86 L418 82 L413 86 L414 79 L409 75 L415 74Z" fill="#c75d6d"/>
+    <text x="445" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#914653">Benlik odağı</text>
+    <text x="445" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a76872">“Ben yetersizim”</text>
+    <text x="445" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a76872">Savunmacılık artar</text>
+  </g>
+
+  <!-- Branch lower curiosity -->
+  <path d="M301 187 C333 216, 350 231, 382 235" fill="none" stroke="#71af83" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="382,235 375,227 373,237" fill="#71af83"/>
+
+  <g filter="url(#shadow)">
+    <rect x="390" y="198" width="190" height="81" rx="17" fill="url(#learnGrad)" stroke="#a8d5b4"/>
+    <circle cx="418" cy="225" r="16" fill="#b9e5c3"/>
+    <path d="M411 226 L416 231 L426 219 M418 211 L418 214 M405 225 L408 225 M428 225 L431 225" fill="none" stroke="#39794d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="445" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#326b44">Merak odağı</text>
+    <text x="445" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b8060">“Etkisi ne?”</text>
+    <text x="445" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b8060">Öğrenme artar</text>
+  </g>
+
+  <!-- Transformation cue -->
+  <g filter="url(#softShadow)">
+    <rect x="184" y="244" width="174" height="42" rx="14" fill="#ffffff" opacity="0.9" stroke="#d5e1e7"/>
+    <path d="M201 265 L214 265" stroke="#609080" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="214,265 207,261 207,269" fill="#609080"/>
+    <text x="224" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b63">Kişi değil, çıktı</text>
+  </g>
+
+  <!-- Tiny labels -->
+  <text x="335" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a3606b">tehdit</text>
+  <text x="337" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#518766">açıklama isteği</text>
+</svg>

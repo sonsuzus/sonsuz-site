@@ -8,6 +8,7 @@ tags:
   - Vim
   - programcı psikolojisi
   - geliştirici araçları
+image: /img/neden-bazi-programcilar-33.png
 ---
 
 Bir programcının Vim hakkında konuşmaya başlaması bazen teknik bir sohbetten çok aile yadigârını anlatmasına benzer. “Hızlı”, “hafif” ve “her sunucuda var” gibi makul gerekçeler sıralanır; ardından tuş kombinasyonları, nokta komutu ve fare kullanmamanın erdemleri gelir. Fakat Vim bağlılığını yalnızca verimlilikle açıklamak eksik kalır. Burada alışkanlık döngüleri, emekle kurulan duygusal bağ, topluluk üyeliği ve profesyonel kimlik aynı terminal penceresinde buluşur.
@@ -29,6 +30,9 @@ Burada $T(n)$, $n$ tekrar sonrasındaki işlem süresi; $T_0$ başlangıç süre
 | Modal yapı | Kafa karıştırıcıdır | Düzenleme dilidir |
 | Yapılandırma | Ek iş gibi görünür | Kişisel yatırım sayılır |
 | Araç değişimi | Kolay görünebilir | Akışı bozan maliyettir |
+
+![neden-bazi-programcilar-33](/img/neden-bazi-programcilar-33.svg)
+
 
 ## Alışkanlık döngüsü ve anlık ödül
 

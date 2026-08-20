@@ -8,7 +8,11 @@ tags:
   - ivmeölçer
   - makine öğrenmesi
   - sinyal işleme
+image: /img/cep-telefonu-sensorleriyle-44.png
 ---
+
+![cep-telefonu-sensorleriyle-44](/img/cep-telefonu-sensorleriyle-44.svg)
+
 
 Telefonunuz cebinizde sessizce duruyor gibi görünse de ivmeölçer sensörü her saniye onlarca ölçüm üretir. Bu ham veriyi doğru biçimde işlediğimizde kaç adım atıldığını hesaplayabilir; kullanıcının yürüdüğünü, koştuğunu veya hareketsiz kaldığını tahmin edebiliriz. Bu projede gürültülü sensör değerlerini anlamlı aktivite bilgisine dönüştüren uçtan uca bir sistem kuracağız.
 ``

@@ -8,6 +8,7 @@ tags:
   - Rust
   - Trait
   - Nesne Tabanlı Programlama
+image: /img/traitler-ile-ortak-58.png
 ---
 
 Bir uygulamada kuşlar uçar, uçaklar uçar, hatta yeterince kararlı bir geliştiricinin yazdığı kod bile bazen “uçar”. Bu nesneler birbirinden tamamen farklı veri yapılarına sahip olsa da ortak bir davranışı paylaşabilir. Rust’taki **trait** yapısı, farklı tiplerin sahip olması gereken yetenekleri ortak bir sözleşmeyle tanımlamamızı sağlar. Nesne tabanlı dillerdeki `interface` kavramına benzese de varsayılan metotlar, generic kısıtları ve güvenli çok biçimlilik gibi güçlü araçlarla daha geniş bir kullanım alanı sunar.
@@ -31,6 +32,9 @@ Yani “$T$ tipi, $D$ davranış sözleşmesini karşılar” deriz. Böylece ko
 | Birden fazla uygulanabilir | Evet | Evet | Dile bağlı |
 | Varsayılan metot içerebilir | Evet | Dile bağlı | Evet |
 | Tipler arasında güçlü bağ kurar | Hayır | Hayır | Evet |
+
+![traitler-ile-ortak-58](/img/traitler-ile-ortak-58.svg)
+
 
 ## İlk trait’imizi yazalım
 

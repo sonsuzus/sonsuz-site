@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="traitGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9d4ff"/>
+      <stop offset="100%" stop-color="#c6e5ff"/>
+    </linearGradient>
+    <linearGradient id="typeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff4cc"/>
+      <stop offset="100%" stop-color="#ffe2bc"/>
+    </linearGradient>
+    <linearGradient id="useGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f4df"/>
+      <stop offset="100%" stop-color="#c9e8f3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71839b" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71839b" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="50" cy="47" r="74" fill="#cfe8ff" opacity="0.30"/>
+  <circle cx="594" cy="280" r="95" fill="#d8f3d3" opacity="0.35"/>
+  <path d="M28 276 C134 244 176 302 273 280 S453 240 614 274" fill="none" stroke="#b9d9d0" stroke-width="2" opacity="0.42"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405269">ORTAK DAVRANIŞ SÖZLEŞMESİ</text>
+
+  <!-- Lines behind cards -->
+  <path d="M177 115 C203 115 207 119 230 126" fill="none" stroke="#8194ae" stroke-width="2.2"/>
+  <polygon points="230,126 221,120 223,130" fill="#8194ae"/>
+  <path d="M177 211 C202 211 208 196 230 184" fill="none" stroke="#8194ae" stroke-width="2.2"/>
+  <polygon points="230,184 221,181 225,190" fill="#8194ae"/>
+  
+  <path d="M410 140 C431 133 439 105 457 98" fill="none" stroke="#8194ae" stroke-width="2.2"/>
+  <polygon points="457,98 448,96 452,105" fill="#8194ae"/>
+  <path d="M410 170 C430 177 438 212 457 220" fill="none" stroke="#8194ae" stroke-width="2.2"/>
+  <polygon points="457,220 448,213 447,223" fill="#8194ae"/>
+
+  <!-- Type cards -->
+  <g filter="url(#softShadow)">
+    <rect x="38" y="77" width="139" height="77" rx="18" fill="url(#typeGrad)" stroke="#ead19d"/>
+    <circle cx="66" cy="113" r="17" fill="#fffaf0"/>
+    <path d="M54 116 Q64 102 74 116 Q67 113 61 120 Q61 113 54 116Z" fill="#e59c55"/>
+    <path d="M76 111 L85 108 L77 116Z" fill="#e59c55"/>
+    <text x="100" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f5965">Kuş</text>
+    <text x="100" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66717d">farklı veri</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="38" y="173" width="139" height="77" rx="18" fill="url(#typeGrad)" stroke="#ead19d"/>
+    <circle cx="66" cy="211" r="17" fill="#fffaf0"/>
+    <path d="M51 214 L80 214 L72 208 L64 199 L61 208 L54 211Z" fill="#639dcc"/>
+    <path d="M80 214 L86 217 L78 219Z" fill="#639dcc"/>
+    <path d="M58 216 L56 222 M74 216 L76 222" stroke="#4d7da7" stroke-width="2"/>
+    <text x="100" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f5965">Uçak</text>
+    <text x="100" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66717d">farklı veri</text>
+  </g>
+
+  <!-- Central trait -->
+  <g filter="url(#shadow)">
+    <rect x="230" y="82" width="180" height="137" rx="22" fill="url(#traitGrad)" stroke="#aeb7e7"/>
+    <rect x="247" y="97" width="146" height="31" rx="12" fill="#ffffff" opacity="0.72"/>
+    <path d="M267 112 C273 103 282 103 288 112 C282 120 273 120 267 112Z" fill="#7869b9"/>
+    <circle cx="278" cy="112" r="3" fill="#ffffff"/>
+    <text x="303" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d4776">Ucan Trait'i</text>
+    <path d="M253 144 H387" stroke="#9ba6d5" stroke-width="1.2"/>
+    <text x="264" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46526d">isim() · zorunlu</text>
+    <text x="264" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46526d">hiz() · zorunlu</text>
+    <text x="264" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46526d">bilgi_ver() · varsayılan</text>
+  </g>
+
+  <!-- Usage cards -->
+  <g filter="url(#softShadow)">
+    <rect x="457" y="63" width="145" height="76" rx="18" fill="url(#useGrad)" stroke="#aed5c4"/>
+    <circle cx="483" cy="101" r="16" fill="#f8fffb"/>
+    <path d="M476 105 L476 97 L485 97 L485 91 L493 101 L485 111 L485 105Z" fill="#4d9a79"/>
+    <text x="510" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b58">Trait Bound</text>
+    <text x="510" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66717d">T: Ucan</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="457" y="182" width="145" height="76" rx="18" fill="url(#useGrad)" stroke="#aed5c4"/>
+    <circle cx="483" cy="220" r="16" fill="#f8fffb"/>
+    <rect x="474" y="211" width="18" height="18" rx="4" fill="#5e9bb6"/>
+    <path d="M478 216 H488 M478 221 H488 M478 226 H484" stroke="#ffffff" stroke-width="1.4"/>
+    <text x="510" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b58">Dinamik</text>
+    <text x="510" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66717d">dyn Ucan</text>
+  </g>
+
+  <!-- Bottom concept -->
+  <g filter="url(#softShadow)">
+    <rect x="205" y="250" width="230" height="43" rx="16" fill="#ffffff" opacity="0.88" stroke="#d3e1e5"/>
+    <path d="M228 271 C234 263 243 263 249 271 C243 279 234 279 228 271Z" fill="#79a9a4"/>
+    <circle cx="238" cy="271" r="2.5" fill="#ffffff"/>
+    <text x="260" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#52656b">TİP DEĞİL · YETENEK</text>
+  </g>
+  <path d="M320 219 L320 244" fill="none" stroke="#8aabb0" stroke-width="2"/>
+  <polygon points="320,250 315,242 325,242" fill="#8aabb0"/>
+</svg>

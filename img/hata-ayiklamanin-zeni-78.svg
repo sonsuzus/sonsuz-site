@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5c6bc0"/>
+      <stop offset="100%" stop-color="#42a5f5"/>
+    </linearGradient>
+    <linearGradient id="leftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a65"/>
+      <stop offset="100%" stop-color="#ffb74d"/>
+    </linearGradient>
+    <linearGradient id="rightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66bb6a"/>
+      <stop offset="100%" stop-color="#26a69a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Merkez düğüm -->
+  <circle cx="320" cy="160" r="48" fill="url(#centerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="153" text-anchor="middle" fill="#fff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Hata Ayıklama</text>
+  <text x="320" y="170" text-anchor="middle" fill="#e3f2fd" font-family="Segoe UI, Tahoma, sans-serif" font-size="10">Zen ve Yöntem</text>
+
+  <!-- Sol üst: Beklenti -->
+  <rect x="60" y="40" width="120" height="56" rx="10" fill="url(#leftGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="120" y="63" text-anchor="middle" fill="#fff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Beklenti (E)</text>
+  <text x="120" y="80" text-anchor="middle" fill="#fff" font-family="Segoe UI, Tahoma, sans-serif" font-size="10">varsayım</text>
+
+  <!-- Sol alt: Gözlem -->
+  <rect x="60" y="220" width="120" height="56" rx="10" fill="url(#leftGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="120" y="243" text-anchor="middle" fill="#fff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Gözlem (O)</text>
+  <text x="120" y="260" text-anchor="middle" fill="#fff" font-family="Segoe UI, Tahoma, sans-serif" font-size="10">gerçeklik</text>
+
+  <!-- Sağ üst: Bilimsel süreç -->
+  <rect x="460" y="40" width="130" height="56" rx="10" fill="url(#rightGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="525" y="63" text-anchor="middle" fill="#fff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Bilimsel Süreç</text>
+  <text x="525" y="80" text-anchor="middle" fill="#fff" font-family="Segoe UI, Tahoma, sans-serif" font-size="10">gözlem, hipotez, test</text>
+
+  <!-- Sağ alt: İçe dönüş -->
+  <rect x="460" y="220" width="130" height="56" rx="10" fill="url(#rightGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="525" y="243" text-anchor="middle" fill="#fff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">İçe Dönük Bakış</text>
+  <text x="525" y="260" text-anchor="middle" fill="#fff" font-family="Segoe UI, Tahoma, sans-serif" font-size="10">kendini gözlem</text>
+
+  <!-- Üst: Görünür kıl -->
+  <rect x="250" y="20" width="140" height="40" rx="10" fill="#fff" filter="url(#shadowLight)" opacity="0.85" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="320" y="44" text-anchor="middle" fill="#1565c0" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Görünür Kıl</text>
+
+  <!-- Alt: İkiye böl -->
+  <rect x="250" y="260" width="140" height="40" rx="10" fill="#fff" filter="url(#shadowLight)" opacity="0.85" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="320" y="284" text-anchor="middle" fill="#1565c0" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">İkiye Böl ve Daralt</text>
+
+  <!-- Fark oku: Beklenti - Gözlem -->
+  <path d="M 180 68 L 272 148" stroke="#ef5350" stroke-width="2" fill="none" stroke-dasharray="6,3"/>
+  <polygon points="272,148 264,140 266,150" fill="#ef5350"/>
+
+  <path d="M 180 252 L 272 172" stroke="#ef5350" stroke-width="2" fill="none" stroke-dasharray="6,3"/>
+  <polygon points="272,172 264,180 266,170" fill="#ef5350"/>
+
+  <!-- Fark etiketi -->
+  <text x="218" y="158" text-anchor="middle" fill="#e53935" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Fark</text>
+  <text x="218" y="172" text-anchor="middle" fill="#e53935" font-family="Segoe UI, Tahoma, sans-serif" font-size="10">D = |E - O|</text>
+
+  <!-- Süreç okları: Merkez -> Sağ üst -->
+  <path d="M 368 140 L 458 68" stroke="#43a047" stroke-width="2" fill="none"/>
+  <polygon points="458,68 448,68 454,74" fill="#43a047"/>
+
+  <!-- Merkez -> Sağ alt -->
+  <path d="M 368 180 L 458 252" stroke="#43a047" stroke-width="2" fill="none"/>
+  <polygon points="458,252 448,252 454,246" fill="#43a047"/>
+
+  <!-- Üst -> Merkez -->
+  <path d="M 320 60 L 320 110" stroke="#1e88e5" stroke-width="2" fill="none"/>
+  <polygon points="320,110 315,102 325,102" fill="#1e88e5"/>
+
+  <!-- Merkez -> Alt -->
+  <path d="M 320 210 L 320 258" stroke="#1e88e5" stroke-width="2" fill="none"/>
+  <polygon points="320,258 315,250 325,250" fill="#1e88e5"/>
+
+  <!-- Döngü oku: Sağ alt -> Sağ üst (geri bildirim) -->
+  <path d="M 525 218 C 525 160, 525 140, 525 98" stroke="#00897b" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="525,98 520,106 530,106" fill="#00897b"/>
+
+  <!-- Debug günlüğü küçük not -->
+  <rect x="20" y="140" width="28" height="40" rx="6" fill="#fff" filter="url(#shadowLight)" opacity="0.7" stroke="#bdbdbd" stroke-width="1"/>
+  <text x="34" y="155" text-anchor="middle" fill="#757575" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" transform="rotate(-90, 34, 155)">günlük</text>
+
+  <!-- Kanıt küçük not -->
+  <rect x="592" y="140" width="28" height="40" rx="6" fill="#fff" filter="url(#shadowLight)" opacity="0.7" stroke="#bdbdbd" stroke-width="1"/>
+  <text x="606" y="155" text-anchor="middle" fill="#757575" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" transform="rotate(90, 606, 155)">kanıt</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" fill="#78909c" font-family="Segoe UI, Tahoma, sans-serif" font-size="10">Beklenti, gözlem ve bilimsel döngü arasındaki bilinçli yolculuk</text>
+</svg>

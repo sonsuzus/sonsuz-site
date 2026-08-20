@@ -8,9 +8,13 @@ tags:
   - fonksiyonel-programlama
   - derleyici
   - örüntü-eşleme
+image: /img/cebirsel-veri-tipleriyle-46.png
 ---
 
 Bir programlama dilinin nasıl çalıştığını anlamanın en eğlenceli yollarından biri, küçük ama gerçek bir derleyici yazmaktır. Bu projede Haskell benzeri, cebirsel veri tiplerini ve örüntü eşlemeyi destekleyen bir dili yığın tabanlı sanal makine komutlarına çevireceğiz. Hedefimiz yeni bir Haskell üretmek değil; sözdizimi ağacı, tipler, örüntüler ve kod üretimi arasındaki ilişkiyi elle tutulur hâle getirmek.
+
+![cebirsel-veri-tipleriyle-46](/img/cebirsel-veri-tipleriyle-46.svg)
+
 ``
 
 ## Dilimizin temel modeli

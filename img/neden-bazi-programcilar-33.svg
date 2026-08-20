@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4fc"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f7e9"/>
+      <stop offset="100%" stop-color="#d0f0d6"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce8f0"/>
+      <stop offset="100%" stop-color="#f8d4e2"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8e6fa"/>
+      <stop offset="100%" stop-color="#d6d2f5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="120" width="150" height="56" rx="14" fill="url(#g1)" filter="url(#shadow)" stroke="#b0c8e8" stroke-width="1.5"/>
+  <text x="320" y="142" text-anchor="middle" font-weight="bold" fill="#2c3e6b" font-size="13">Vim Bağlılığı</text>
+  <text x="320" y="160" text-anchor="middle" fill="#3a4a7a" font-size="11">Alışkanlık + Kimlik</text>
+
+  <!-- Üst sol: Modal yapı -->
+  <rect x="40" y="30" width="140" height="52" rx="12" fill="url(#g2)" filter="url(#shadow)" stroke="#e0c8a0" stroke-width="1.2"/>
+  <text x="110" y="52" text-anchor="middle" font-weight="bold" fill="#6b4a2c">Modal Yapı</text>
+  <text x="110" y="68" text-anchor="middle" fill="#7a5a3a" font-size="11">Komut dili</text>
+
+  <!-- Üst orta: Öğrenme eğrisi -->
+  <rect x="240" y="30" width="160" height="52" rx="12" fill="url(#g3)" filter="url(#shadow)" stroke="#a0d0b0" stroke-width="1.2"/>
+  <text x="320" y="52" text-anchor="middle" font-weight="bold" fill="#2c6b3a">Öğrenme Eğrisi</text>
+  <text x="320" y="68" text-anchor="middle" fill="#3a7a4a" font-size="11">Prosedürel bellek</text>
+
+  <!-- Üst sağ: Alışkanlık döngüsü -->
+  <rect x="460" y="30" width="140" height="52" rx="12" fill="url(#g4)" filter="url(#shadow)" stroke="#d0a0b8" stroke-width="1.2"/>
+  <text x="530" y="52" text-anchor="middle" font-weight="bold" fill="#6b2c4a">Alışkanlık Döngüsü</text>
+  <text x="530" y="68" text-anchor="middle" fill="#7a3a5a" font-size="11">Tetikleyici + Ödül</text>
+
+  <!-- Alt sol: IKEA etkisi -->
+  <rect x="40" y="230" width="140" height="52" rx="12" fill="url(#g5)" filter="url(#shadow)" stroke="#b0a8d8" stroke-width="1.2"/>
+  <text x="110" y="252" text-anchor="middle" font-weight="bold" fill="#3a2c6b">IKEA Etkisi</text>
+  <text x="110" y="268" text-anchor="middle" fill="#4a3a7a" font-size="11">Emek + Sahiplik</text>
+
+  <!-- Alt orta: Batık maliyet -->
+  <rect x="240" y="230" width="160" height="52" rx="12" fill="url(#g1)" filter="url(#shadow)" stroke="#b0c8e8" stroke-width="1.2"/>
+  <text x="320" y="252" text-anchor="middle" font-weight="bold" fill="#2c3e6b">Batık Maliyet</text>
+  <text x="320" y="268" text-anchor="middle" fill="#3a4a7a" font-size="11">Değiştirme maliyeti</text>
+
+  <!-- Alt sağ: Sosyal kimlik -->
+  <rect x="460" y="230" width="140" height="52" rx="12" fill="url(#g2)" filter="url(#shadow)" stroke="#e0c8a0" stroke-width="1.2"/>
+  <text x="530" y="252" text-anchor="middle" font-weight="bold" fill="#6b4a2c">Sosyal Kimlik</text>
+  <text x="530" y="268" text-anchor="middle" fill="#7a5a3a" font-size="11">Topluluk üyeliği</text>
+
+  <!-- Oklar: merkezden dışa -->
+  <!-- Üst sol ok -->
+  <path d="M 245 140 L 185 92" stroke="#8a9ab0" stroke-width="1.8" fill="none"/>
+  <polygon points="185,92 196,96 190,104" fill="#8a9ab0"/>
+
+  <!-- Üst orta ok -->
+  <path d="M 310 120 L 310 86" stroke="#8a9ab0" stroke-width="1.8" fill="none"/>
+  <polygon points="310,86 304,96 316,96" fill="#8a9ab0"/>
+
+  <!-- Üst sağ ok -->
+  <path d="M 395 140 L 465 92" stroke="#8a9ab0" stroke-width="1.8" fill="none"/>
+  <polygon points="465,92 454,96 460,104" fill="#8a9ab0"/>
+
+  <!-- Alt sol ok -->
+  <path d="M 245 180 L 185 228" stroke="#8a9ab0" stroke-width="1.8" fill="none"/>
+  <polygon points="185,228 196,224 190,216" fill="#8a9ab0"/>
+
+  <!-- Alt orta ok -->
+  <path d="M 310 176 L 310 226" stroke="#8a9ab0" stroke-width="1.8" fill="none"/>
+  <polygon points="310,226 304,216 316,216" fill="#8a9ab0"/>
+
+  <!-- Alt sağ ok -->
+  <path d="M 395 180 L 465 228" stroke="#8a9ab0" stroke-width="1.8" fill="none"/>
+  <polygon points="465,228 454,224 460,216" fill="#8a9ab0"/>
+
+  <!-- Bağlantı etiketleri -->
+  <text x="195" y="108" text-anchor="middle" fill="#6a7a90" font-size="10">dil</text>
+  <text x="330" y="100" text-anchor="middle" fill="#6a7a90" font-size="10">tekrar</text>
+  <text x="445" y="108" text-anchor="middle" fill="#6a7a90" font-size="10">ödül</text>
+  <text x="195" y="212" text-anchor="middle" fill="#6a7a90" font-size="10">değer</text>
+  <text x="330" y="204" text-anchor="middle" fill="#6a7a90" font-size="10">geçmiş</text>
+  <text x="445" y="212" text-anchor="middle" fill="#6a7a90" font-size="10">aidiyet</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="308" text-anchor="middle" fill="#8899aa" font-size="10" font-style="italic">:q çıkar ama psikolojik çıkış uzundur</text>
+</svg>
