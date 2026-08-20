@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - Borrowing
-  - Referanslar
+  - rust
+  - borrowing
+  - referanslar
 image: /img/rustta-borclanma-ve-70.png
 ---
 

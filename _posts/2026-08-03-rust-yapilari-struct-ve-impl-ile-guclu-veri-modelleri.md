@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - Struct
-  - Veri Modelleme
+  - rust
+  - struct
+  - veri modelleme
 image: /img/rust-yapilari-struct-38.png
 ---
 

@@ -6,10 +6,10 @@ categories:
   - Proje
 tags: 
   - görüntü işleme
-  - BMP
-  - PNG
-  - JPEG
-  - Python
+  - bmp
+  - png
+  - jpeg
+  - python
 image: /img/ham-baytlardan-goruntuye-46.png
 ---
 

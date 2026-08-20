@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - SQL
-  - Veri Madenciliği
-  - Doğal Dil İşleme
+  - sql
+  - veri madenciliği
+  - doğal dil işleme
 ---
 
 Felsefi metinler bazen bir veritabanı gibi davranır: kavramlar tablolar, alıntılar ilişkiler, kelimeler de satırlar gibidir. Platon’dan Kant’a, İbn Sînâ’dan Nietzsche’ye uzanan devasa bir külliyatı SQL ile sorguladığınızda yalnızca kaç kez akıl kelimesi geçtiğini değil, hangi kökten gelen kelimelerin hangi düşünürlerde birlikte yoğunlaştığını da görebilirsiniz.

@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C++
-  - STL
-  - Veri Yapıları
-  - Algoritmalar
-  - Performans
+  - c++
+  - stl
+  - veri yapıları
+  - algoritmalar
+  - performans
 image: /img/c-stl-ile-92.png
 ---
 

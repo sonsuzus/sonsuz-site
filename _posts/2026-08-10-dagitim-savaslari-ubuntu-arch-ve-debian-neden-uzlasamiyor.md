@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Linux
-  - Ubuntu
-  - Arch Linux
-  - Debian
+  - linux
+  - ubuntu
+  - arch linux
+  - debian
   - açık kaynak
 ---
 

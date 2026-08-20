@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - CI/CD
-  - DevOps
-  - GitHub Actions
+  - cı/cd
+  - devops
+  - github actions
 image: /img/cicd-pipeline-tasarimi-54.png
 ---
 

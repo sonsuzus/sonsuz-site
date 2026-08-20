@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Linux
+  - linux
   - dağıtım
   - dijital kimlik
   - alışkanlıklar

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - API
-  - Telegram Bot
-  - Otomasyon
+  - apı
+  - telegram bot
+  - otomasyon
 image: /img/api-entegrasyonundan-telegram-69.png
 ---
 

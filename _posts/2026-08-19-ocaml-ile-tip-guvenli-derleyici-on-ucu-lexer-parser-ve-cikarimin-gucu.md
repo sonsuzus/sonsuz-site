@@ -5,7 +5,7 @@ math: true
 categories: 
   - Proje
 tags: 
-  - OCaml
+  - ocaml
   - derleyici
   - tip çıkarımı
 ---

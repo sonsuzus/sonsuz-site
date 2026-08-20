@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Fortran
-  - HPC
-  - Sayısal Hesaplama
+  - fortran
+  - hpc
+  - sayısal hesaplama
 ---
 
 Fortran, “eski ama eskimeyen” dillerin en güçlü örneklerinden biridir. Fizik, iklim modelleme, hesaplamalı akışkanlar dinamiği ve sonlu elemanlar gibi alanlarda bugün hâlâ yoğun biçimde kullanılır. Bunun sebebi nostalji değil; dizilerle doğal çalışması, derleyicilerin agresif optimizasyon yapabilmesi ve paralel donanımdan iyi yararlanabilmesidir. Özellikle milyonlarca hücre veya parçacık içeren simülasyonlarda birkaç yüzde puanlık performans farkı, saatler süren bir hesabı dakikalarca kısaltabilir.

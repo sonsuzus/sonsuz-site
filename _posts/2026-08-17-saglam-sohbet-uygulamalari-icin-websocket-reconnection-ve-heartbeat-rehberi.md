@@ -5,11 +5,11 @@ math: true
 categories: 
   - Program
 tags: 
-  - WebSocket
-  - JavaScript
-  - Reconnection
-  - Heartbeat
-  - Sohbet Uygulaması
+  - websocket
+  - javascript
+  - reconnection
+  - heartbeat
+  - sohbet uygulaması
 ---
 
 Gerçek zamanlı sohbet uygulamalarında kullanıcılar bağlantının her zaman açık kalmasını bekler. Ancak mobil ağ değişimleri, tarayıcının uykuya geçmesi, sunucu yeniden başlatmaları ve geçici paket kayıpları bu beklentiyi kolayca bozar. Sağlam bir WebSocket istemcisi, kopmayı bir hata sonu değil, yönetilmesi gereken normal bir durum olarak görür. Bu noktada iki temel araç devreye girer: yeniden bağlanma (reconnection) ve heartbeat, yani nabız kontrolü.

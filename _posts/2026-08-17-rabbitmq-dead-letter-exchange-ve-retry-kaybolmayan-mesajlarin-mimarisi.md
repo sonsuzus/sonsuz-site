@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - RabbitMQ
-  - Dead Letter Exchange
-  - Retry
-  - Mesaj Kuyrukları
+  - rabbitmq
+  - dead letter exchange
+  - retry
+  - mesaj kuyrukları
 ---
 
 Dağıtık sistemlerde bir mesajın tüketiciye ulaşması, başarıyla işlendiği anlamına gelmez. Veritabanı geçici olarak kapalı olabilir, üçüncü taraf API'si hata verebilir ya da mesajın verisi gerçekten bozuk olabilir. RabbitMQ'nun **Dead Letter Exchange (DLX)** ve gecikmeli yeniden deneme kurgusu, bu durumlarda mesajları kaybetmeden kontrollü biçimde yönetmeyi sağlar. Amaç, aynı hatalı mesajı sonsuza kadar ana kuyruğu kilitleyecek şekilde tüketmek değil; geçici hatalara zaman tanımak, kalıcı hataları ise görünür ve incelenebilir hale getirmektir.

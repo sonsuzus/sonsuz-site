@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Linux
+  - linux
   - topluluk kültürü
-  - RTFM
+  - rtfm
   - açık kaynak
   - forumlar
 ---

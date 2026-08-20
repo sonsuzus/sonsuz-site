@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SAS
-  - Veri Analizi
-  - İş Zekası
-  - Veri Madenciliği
+  - sas
+  - veri analizi
+  - iş zekası
+  - veri madenciliği
 ---
 
 Kurumsal veri analizi, yalnızca milyonlarca satırlık tabloyu hızlıca işlemek değildir; veriyi güvenilir, denetlenebilir ve karar verilebilir bir hikâyeye dönüştürme sanatıdır. SAS, özellikle banka, sigorta, perakende ve kamu gibi düzenlemelerin yoğun olduğu sektörlerde bu hikâyeyi kurmak için uzun yıllardır kullanılan güçlü bir platformdur. Veri entegrasyonundan istatistiksel modellemeye, zamanlanmış raporlardan veri madenciliğine kadar tek bir ekosistemde çalışmayı mümkün kılar.

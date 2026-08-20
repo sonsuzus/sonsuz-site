@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - List Comprehension
-  - Pythonik Kod
+  - python
+  - list comprehension
+  - pythonik kod
 image: /img/list-comprehensions-ile-53.png
 ---
 

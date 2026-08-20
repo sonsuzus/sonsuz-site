@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - Go
-  - JSON
-  - Serileştirme
+  - go
+  - json
+  - serileştirme
 image: /img/go-ile-json-46.png
 ---
 

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Event Sourcing
-  - CQRS
-  - Mikroservisler
+  - event sourcing
+  - cqrs
+  - mikroservisler
 ---
 
 Geleneksel uygulamalar genellikle bir müşterinin mevcut bakiyesini, siparişin son durumunu veya kullanıcının güncel profilini saklar. Event Sourcing ise daha meraklı bir yaklaşım benimser: “Bu durum nasıl oluştu?” sorusunun cevabını da saklar. Sistem durumu, değişmez olayların kronolojik dizisinden yeniden üretilir. CQRS (Command Query Responsibility Segregation) bu fikri, yazma ve okuma modellerini ayırarak tamamlar. İkili birlikte kullanıldığında ilk bakışta karmaşık görünse de denetlenebilir, ölçeklenebilir ve geçmişi güçlü sistemler kurmayı sağlar.

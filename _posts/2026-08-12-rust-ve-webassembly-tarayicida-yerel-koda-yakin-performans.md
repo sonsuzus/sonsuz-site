@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - WebAssembly
-  - WASM
-  - Frontend
-  - Performans
+  - rust
+  - webassembly
+  - wasm
+  - frontend
+  - performans
 image: /img/rust-ve-webassembly-18.png
 ---
 

@@ -7,7 +7,7 @@ categories:
 tags: 
   - biyometri
   - örüntü tanıma
-  - Python
+  - python
 ---
 
 Telefonun kilidini parmağınla açarken cihazın içinde minik bir dedektif çalışır: Görüntüyü temizler, ayırt edici özellikleri çıkarır ve bunları kayıtlı şablonla karşılaştırır. Bu projede gerçek kişisel veriler toplamadan, parmak izi veya iris verisini temsil eden yapay özellik vektörleriyle temel bir biyometrik eşleştirme sisteminin mantığını inceleyeceğiz.

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Python
-  - Markov Zinciri
-  - Müzik Teorisi
+  - python
+  - markov zinciri
+  - müzik teorisi
 image: /img/cember-modulasyonu-ile-76.png
 ---
 

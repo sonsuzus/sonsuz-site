@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - Go
-  - Blockchain
-  - Kriptografi
+  - go
+  - blockchain
+  - kriptografi
 image: /img/go-ile-blokzincir-77.png
 ---
 

@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Kuantum Hesaplama
-  - Qiskit
-  - Grover Algoritması
-  - Python
+  - kuantum hesaplama
+  - qiskit
+  - grover algoritması
+  - python
 ---
 
 Bir telefon rehberinde adı bilinmeyen tek bir kişiyi bulduğunuzu düşünün: klasik bilgisayar kayıtları sırayla kontrol ederken, kuantum bilgisayar olasılıkları akıllıca yükselterek hedefe yönelmeyi amaçlar. Grover arama algoritması bu fikrin en ünlü örneklerinden biridir. Qiskit simülatörüyle algoritmayı çalıştırmak, kuantum donanımına erişmeden süperpozisyon, girişim ve ölçüm kavramlarını somut biçimde gözlemlemenin eğlenceli yoludur.

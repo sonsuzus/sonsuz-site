@@ -5,11 +5,11 @@ math: true
 categories: 
   - Program
 tags: 
-  - Lua
-  - C++
-  - Oyun Geliştirme
-  - Scripting
-  - Game Engine
+  - lua
+  - c++
+  - oyun geliştirme
+  - scripting
+  - game engine
 ---
 
 Bir oyunun tüm kurallarını C++ ile derlemek hızlıdır; ancak zıplama yüksekliği, düşman davranışı veya görev ödülleri için her değişiklikte motoru yeniden derlemek üretim hızını düşürür. Lua, hafif çalışma zamanı ve sade sözdizimiyle bu sorunu çözer: performans kritik çekirdek C++ içinde kalırken, tasarımcıların sık değiştirdiği oyun mantığı betiklere taşınır.

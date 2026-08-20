@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - Bellek Güvenliği
-  - Borrow Checker
+  - rust
+  - bellek güvenliği
+  - borrow checker
 image: /img/rust-ile-bellek-21.png
 ---
 

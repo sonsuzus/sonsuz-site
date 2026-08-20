@@ -2,13 +2,12 @@
 categories:
 - Program
 layout: post
-redirect_from:
-- /posts/small-basic/
 tags:
 - programlama
 - basic
 - small basic
 title: Small Basic Programlama
+toc: true
 ---
 
 Bilgisayar Programlaması, [programlama](https://program.sonsuz.us/search.html?q=programlama) dilleri kullanılarak, bilgisayar yazılımlarının oluşturulması

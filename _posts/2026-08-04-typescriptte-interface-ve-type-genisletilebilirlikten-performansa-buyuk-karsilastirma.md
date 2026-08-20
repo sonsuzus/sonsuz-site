@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - TypeScript
+  - typescript
   - interface
   - type
 ---

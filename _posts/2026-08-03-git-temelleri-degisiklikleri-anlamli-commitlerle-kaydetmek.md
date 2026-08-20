@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Git
-  - Versiyon Kontrolü
-  - Commit
+  - git
+  - versiyon kontrolü
+  - commit
 ---
 
 Bir projede kod yazarken yalnızca sonucun çalışması yeterli değildir; hangi değişikliğin ne zaman ve neden yapıldığını da bilmek gerekir. Git, projenin belirli anlarını yerel bir tarihçeye kaydederek geçmişe bakmayı, hataları izlemeyi ve güvenle deney yapmayı sağlar. Commit ise bu tarihçedeki sıradan bir kayıt değil, projenin belirli bir andaki anlamlı fotoğrafıdır.

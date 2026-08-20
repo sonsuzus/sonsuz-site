@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - Lifetimes
-  - Bellek Güvenliği
+  - rust
+  - lifetimes
+  - bellek güvenliği
 image: /img/rustta-yasam-sureleri-29.png
 ---
 

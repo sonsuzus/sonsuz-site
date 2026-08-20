@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SQL
-  - GROUP BY
-  - Veritabanı
+  - sql
+  - group by
+  - veritabanı
 ---
 
 Bir e-ticaret veritabanında binlerce sipariş olduğunu düşünün. Satırları tek tek incelemek yerine “Kaç sipariş aldık?”, “Toplam ciro nedir?” veya “En çok hangi kategori kazandırdı?” gibi sorular sormak isteriz. SQL toplama fonksiyonları ve `GROUP BY`, ham verileri anlamlı özetlere dönüştürerek bu sorulara hızlı cevaplar verir.

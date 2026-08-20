@@ -7,7 +7,7 @@ categories:
 tags: 
   - mantıksal programlama
   - sorgular
-  - Prolog
+  - prolog
   - kural motoru
 image: /img/sorgular-mekanizmasi-mantik-25.png
 ---

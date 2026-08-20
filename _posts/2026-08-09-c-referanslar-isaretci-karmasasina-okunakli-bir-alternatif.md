@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C++
-  - Referanslar
-  - İşaretçiler
-  - Bellek Yönetimi
+  - c++
+  - referanslar
+  - işaretçiler
+  - bellek yönetimi
 ---
 
 C++'ta referanslar (references), bir değişkene ikinci bir ad vermenin güvenli ve okunaklı yoludur. C'den gelen işaretçiler güçlüdür; ancak `*`, `&`, `->` ve `nullptr` kontrolleri özellikle fonksiyon imzalarını hızla zorlaştırabilir. Referans, adres fikrini tamamen gizlemez ama günlük kodda onu daha doğal bir sözdizimiyle sunar: Nesneyle uğraşıyor gibi yazarsınız, derleyici arka planda aynı belleğe erişimi sağlar.

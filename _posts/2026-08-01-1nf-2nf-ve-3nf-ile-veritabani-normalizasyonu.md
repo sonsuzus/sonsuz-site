@@ -7,7 +7,7 @@ categories:
 tags: 
   - veritabanı
   - normalizasyon
-  - SQL
+  - sql
 ---
 
 Bir veritabanı ilk bakışta düzenli görünebilir; fakat müşteri adı onlarca satırda tekrarlanıyor, bir ürünün fiyatını değiştirmek için yüzlerce kayıt güncelleniyorsa masanın altında veri canavarları saklanıyor demektir. Normalizasyon, tabloları belirli kurallara göre parçalayarak veri tekrarını azaltan, ilişkileri netleştiren ve veri bütünlüğünü koruyan sistematik bir tasarım yaklaşımıdır.

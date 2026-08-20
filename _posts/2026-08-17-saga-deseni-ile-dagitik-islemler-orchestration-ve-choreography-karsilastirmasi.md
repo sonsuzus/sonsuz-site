@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Saga
-  - Microservices
-  - Distributed Transactions
+  - saga
+  - microservices
+  - distributed transactions
 ---
 
 Mikroservis mimarisinde bir siparişin oluşturulması, ödemenin alınması ve stok rezervasyonu tek bir veritabanı işlemi değildir; her servis kendi verisine sahiptir. Klasik ACID transaction yaklaşımını servisler arasında yaymak hem pahalı hem de kırılgandır. Saga deseni, büyük işlemi yerel işlemlere böler ve bir adım başarısız olduğunda önceki adımları geri almak için **telafi edici işlemler** (compensating transactions) çalıştırır. Böylece sistem, anlık tutarlılık yerine kontrollü bir **eventual consistency** modeli benimser.

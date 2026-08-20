@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - ES6
-  - Nesne Yönelimli Programlama
+  - javascript
+  - es6
+  - nesne yönelimli programlama
 image: /img/es6-siniflari-javascriptin-19.png
 ---
 

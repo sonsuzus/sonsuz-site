@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Yapay Zeka
-  - Transformer
-  - Attention
+  - yapay zeka
+  - transformer
+  - attention
 image: /img/attention-ve-transformerlar-13.png
 ---
 

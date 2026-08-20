@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Apache Kafka
+  - apache kafka
   - streaming
   - gerçek zamanlı veri
 ---

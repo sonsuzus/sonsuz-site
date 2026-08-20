@@ -6,8 +6,8 @@ categories:
   - Bilgi
 tags: 
   - optimizasyon
-  - PSO
-  - ACO
+  - pso
+  - aco
 ---
 
 Doğadaki kolektif davranışlar, zor optimizasyon problemlerine şaşırtıcı derecede iyi fikirler verir. Parçacık Sürüsü Optimizasyonu (PSO), kuş sürülerinin hedefe birlikte yönelmesinden; Karınca Kolonisi Optimizasyonu (ACO) ise karıncaların feromon izleriyle en kısa yolu bulmasından esinlenir. İkisi de türev bilgisi istemeyen, yerel minimum tuzaklarını aşmaya çalışan metasezgisel yöntemlerdir. Ancak çözüm uzayının sürekli mi yoksa ayrık mı olduğu, kazananı ciddi biçimde değiştirir.

@@ -101,6 +101,8 @@ GEM
       nokogiri (~> 1.6)
       progressbar (~> 1.9)
       verbal_expressions (~> 0.1.5)
+    jekyll-archives (2.3.0)
+      jekyll (>= 3.6, < 5.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
@@ -112,6 +114,9 @@ GEM
       sass-embedded (~> 1.75)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-toc (0.19.0)
+      jekyll (>= 3.9)
+      nokogiri (~> 1.12)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     json (2.21.1)
@@ -207,9 +212,11 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.1, >= 2.1.4)
   jekyll-algolia
+  jekyll-archives
   jekyll-redirect-from
   jekyll-sitemap
   jekyll-theme-hydeout!
+  jekyll-toc
   wdm (~> 0.1)
 
 BUNDLED WITH

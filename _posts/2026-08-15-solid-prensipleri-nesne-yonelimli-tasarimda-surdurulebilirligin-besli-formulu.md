@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SOLID
-  - Nesne Yönelimli Programlama
-  - Yazılım Mimarisi
+  - solıd
+  - nesne yönelimli programlama
+  - yazılım mimarisi
 ---
 
 Bir yazılım projesi ilk gününde çoğu zaman düzenli görünür; sınıflar az, gereksinimler nettir ve herkes mutludur. Asıl sınav, yeni ödeme sağlayıcısı, farklı raporlama isteği veya beklenmedik bir iş kuralı geldiğinde başlar. SOLID, nesne yönelimli tasarımın değişime direnmek yerine değişimi yönetmesine yardım eden beş ilkedir. Amaç “daha çok sınıf” üretmek değil; bağımlılıkları bilinçli kurmak, kodun niyetini görünür kılmak ve değişikliğin etkisini sınırlamaktır.

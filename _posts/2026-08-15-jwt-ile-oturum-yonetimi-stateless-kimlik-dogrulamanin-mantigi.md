@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JWT
-  - Kimlik Doğrulama
-  - Web Güvenliği
+  - jwt
+  - kimlik doğrulama
+  - web güvenliği
 ---
 
 Modern web uygulamalarında kullanıcı oturumunu yönetmenin iki temel yolu vardır: sunucuda oturum bilgisi saklamak veya bu bilgiyi istemcinin taşıdığı imzalı bir belirtece emanet etmek. JSON Web Token (JWT), ikinci yaklaşımın popüler temsilcisidir. Kullanıcı giriş yaptığında sunucu, kimliği ve yetkileri içeren imzalı bir token üretir; sonraki isteklerde token gönderilir ve sunucu imzayı doğrulayarak kullanıcıyı tanır. Böylece her istekte veritabanına ya da merkezi bir oturum deposuna bakmak zorunda kalmazsınız.

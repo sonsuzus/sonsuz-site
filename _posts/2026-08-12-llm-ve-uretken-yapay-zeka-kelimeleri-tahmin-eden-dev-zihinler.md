@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - LLM
-  - Üretken Yapay Zeka
-  - Transformer
+  - llm
+  - üretken yapay zeka
+  - transformer
 image: /img/llm-ve-uretken-61.png
 ---
 

@@ -5,11 +5,11 @@ math: true
 categories: 
   - Proje
 tags: 
-  - WebGL
-  - GLSL
-  - Fraktal
-  - JavaScript
-  - Shader
+  - webgl
+  - glsl
+  - fraktal
+  - javascript
+  - shader
 ---
 
 Mandelbrot kümesi, basit bir denklemin ekranda bitmek bilmeyen kıvrımlar, spiraller ve minyatür evrenler üretmesinin en güzel kanıtıdır. Bu projede hesaplamayı JavaScript işlemcisine bırakmak yerine WebGL ve GLSL gölgelendiricilerine taşıyarak akıcı bir sonsuz yakınlaştırma deneyimi kuracağız. Fare tekerleğiyle yaklaşacak, sürükleyerek gezecek ve her pikselin kendi matematik macerasını ekran kartında yaşamasını sağlayacağız.

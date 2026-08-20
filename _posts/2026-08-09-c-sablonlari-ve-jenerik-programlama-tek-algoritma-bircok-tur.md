@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C++
-  - Templates
-  - Jenerik Programlama
+  - c++
+  - templates
+  - jenerik programlama
 image: /img/c-sablonlari-ve-60.png
 ---
 

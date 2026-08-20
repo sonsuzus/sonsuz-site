@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C++
-  - OOP
-  - Constructor
-  - Destructor
-  - Bellek Yönetimi
+  - c++
+  - oop
+  - constructor
+  - destructor
+  - bellek yönetimi
 ---
 
 C++'ta bir nesne yalnızca değişken tanımlandığında ortaya çıkan basit bir veri paketi değildir; doğar, kullanılır ve zamanı gelince yok olur. Bu yaşam döngüsünün iki başrol oyuncusu **yapıcı metotlar** (constructor) ile **yıkıcı metotlardır** (destructor). Constructor, nesne bellekte oluşturulurken başlangıç durumunu güvenle kurar; destructor ise nesne kapsam dışına çıkarken sahne arkasında kalan kaynakları toplar. Özellikle dosya, ağ bağlantısı, dinamik bellek ve kilit gibi kaynaklarda bu otomasyon, C++'ın en güçlü fikirlerinden biri olan RAII yaklaşımının temelidir.

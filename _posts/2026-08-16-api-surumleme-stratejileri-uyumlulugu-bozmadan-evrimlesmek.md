@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - API
-  - Sürümleme
-  - REST
-  - Geriye Dönük Uyumluluk
+  - apı
+  - sürümleme
+  - rest
+  - geriye dönük uyumluluk
 ---
 
 Bir API yayınlamak, taş tabletlere kural kazımak değildir; daha çok şehir içindeki bir metro hattını işletmeye benzer. Yeni duraklar eklemek istersiniz, fakat her gün o hattı kullanan yolcuların işe geç kalmaması gerekir. API sürümleme, istemcilerin mevcut davranışlarını korurken servisinizin veri modelini, uç noktalarını ve iş kurallarını güvenle geliştirme disiplinidir. Başarılı stratejinin merkezi yalnızca `/v2` etiketi değil; değişikliğin etkisini ölçmek, sözleşmeyi korumak ve geçişi yönetmektir.

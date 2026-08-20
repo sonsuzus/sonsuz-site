@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - dağıtık sistemler
-  - Bizans hata toleransı
+  - bizans hata toleransı
   - sosyal güven
 ---
 

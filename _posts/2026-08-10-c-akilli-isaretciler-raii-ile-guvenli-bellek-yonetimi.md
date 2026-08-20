@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C++
-  - Smart Pointers
-  - RAII
+  - c++
+  - smart pointers
+  - raıı
 image: /img/c-akilli-isaretciler-76.png
 ---
 

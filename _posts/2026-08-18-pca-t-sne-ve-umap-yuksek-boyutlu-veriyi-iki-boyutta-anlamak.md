@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Boyut İndirgeme
-  - Makine Öğrenmesi
-  - Veri Görselleştirme
+  - boyut indirgeme
+  - makine öğrenmesi
+  - veri görselleştirme
 ---
 
 Yüksek boyutlu veriler, makine öğrenmesinin kalabalık şehirleri gibidir: Her gözlem onlarca, yüzlerce hatta binlerce özelliğe sahiptir; fakat insan gözü en rahat iki veya üç boyutta gezinebilir. PCA, t-SNE ve UMAP bu karmaşık uzayı görselleştirilebilir bir haritaya dönüştürür. Ancak aynı veriye bakıp farklı hikâyeler anlatabilirler. Bu yüzden amaç yalnızca güzel kümeler üretmek değil, hangi yöntemin hangi geometrik bilgiyi koruduğunu anlamaktır.

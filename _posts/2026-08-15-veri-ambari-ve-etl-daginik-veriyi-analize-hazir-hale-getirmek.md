@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Veri Ambarı
-  - ETL
-  - SQL
+  - veri ambarı
+  - etl
+  - sql
 ---
 
 Bir şirketin verileri genellikle tek bir yerde ve kusursuz biçimde yaşamaz: satışlar bir PostgreSQL veritabanında, müşteri kayıtları CRM sisteminde, kampanya sonuçları CSV dosyalarında ve uygulama olayları API günlüklerinde bulunur. Veri ambarı, bu dağınık parçaları karar vermeyi kolaylaştıran tutarlı bir analitik yapıda buluşturur. ETL süreçleri ise bu yapının görünmez ama vazgeçilmez lojistiğidir.

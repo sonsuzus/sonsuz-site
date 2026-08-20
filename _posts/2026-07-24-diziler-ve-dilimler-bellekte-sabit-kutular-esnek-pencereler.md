@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Go
-  - Arrays
-  - Slices
-  - Bellek Yönetimi
+  - go
+  - arrays
+  - slices
+  - bellek yönetimi
 image: /img/diziler-ve-dilimler-81.png
 ---
 

@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - PHP
-  - MVC
-  - Web Geliştirme
-  - Mimari
+  - php
+  - mvc
+  - web geliştirme
+  - mimari
 image: /img/php-ile-mvc-22.png
 ---
 

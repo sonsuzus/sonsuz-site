@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SQL
-  - CRUD
-  - Veritabanı
+  - sql
+  - crud
+  - veritabanı
 ---
 
 Bir veritabanıyla çalışan hemen her uygulama aynı dört temel ihtiyaca sahiptir: yeni veri eklemek, mevcut verileri okumak, bilgileri güncellemek ve artık gerekli olmayan kayıtları silmek. Bu işlemler İngilizce karşılıklarının baş harfleriyle **CRUD** olarak adlandırılır. SQL dünyasında CRUD, karmaşık görünen veritabanı macerasının sağlam ve oldukça pratik başlangıç noktasıdır.

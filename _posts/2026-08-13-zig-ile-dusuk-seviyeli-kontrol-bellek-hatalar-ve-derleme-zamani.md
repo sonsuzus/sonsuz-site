@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Zig
-  - Sistem Programlama
-  - Bellek Yönetimi
-  - Compile Time
+  - zig
+  - sistem programlama
+  - bellek yönetimi
+  - compile time
 ---
 
 C, onlarca yıldır işletim sistemlerinden gömülü cihazlara kadar düşük seviyeli yazılımın ortak diliydi. Zig ise C'nin performans ve donanıma yakınlık avantajlarını korurken, bellek yönetimini daha görünür, hata takibini daha disiplinli ve derleme zamanını daha üretken hâle getirmeyi amaçlar. Çöp toplayıcıya ihtiyaç duymadan güvenli alışkanlıklar kazandırması, onu özellikle sistem programlama meraklıları için ilginç bir seçenek yapar.

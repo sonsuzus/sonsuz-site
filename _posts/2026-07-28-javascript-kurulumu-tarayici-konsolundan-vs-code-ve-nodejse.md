@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - Node.js
-  - VS Code
+  - javascript
+  - node.js
+  - vs code
 image: /img/javascript-kurulumu-tarayici-53.png
 ---
 

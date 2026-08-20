@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - OOP
-  - Kalıtım
-  - Çok Biçimlilik
+  - oop
+  - kalıtım
+  - çok biçimlilik
 image: /img/kalitim-ve-cok-52.png
 ---
 

@@ -5,11 +5,11 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Git
-  - Python
-  - Versiyon Kontrol
-  - Nesne Modeli
-  - Proje
+  - git
+  - python
+  - versiyon kontrol
+  - nesne modeli
+  - proje
 ---
 
 Git'i yalnızca `git add` ve `git commit` komutlarından ibaret görmek kolaydır; fakat perde arkasında Git, dosyaları ve geçmişi içerik adreslemeli küçük nesneler olarak saklar. Bu projede Python ile basit bir Git klonu yazacak, bir dosyadan **blob**, dosya listesinden **tree** ve geçmiş kaydından **commit** üreteceğiz. Amaç Git komutlarını kopyalamak değil; Git'in neden hızlı, güvenilir ve tekrar eden içeriklerde verimli olduğunu somut olarak anlamaktır.

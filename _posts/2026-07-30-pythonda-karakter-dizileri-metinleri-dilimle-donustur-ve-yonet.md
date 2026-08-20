@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - String
-  - Metin İşleme
+  - python
+  - string
+  - metin işleme
 image: /img/pythonda-karakter-dizileri-69.png
 ---
 

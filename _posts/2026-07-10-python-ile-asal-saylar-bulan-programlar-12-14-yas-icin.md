@@ -5,10 +5,10 @@ math: true
 categories: 
   - Program
 tags: 
-  - Python
-  - Asal Sayılar
-  - Başlangıç Seviyesi
-  - Algoritma
+  - python
+  - asal sayılar
+  - başlangıç seviyesi
+  - algoritma
 ---
 
 Bu yazıda Python kullanarak **asal sayıları bulan programlar** yazacağız. Konu, 12-14 yaş seviyesine uygun olacak şekilde basit örneklerle anlatılmıştır.

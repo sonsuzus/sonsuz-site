@@ -6,8 +6,8 @@ categories:
   - Proje
 tags: 
   - akustik modem
-  - FSK
-  - Python
+  - fsk
+  - python
 image: /img/ses-dalgalariyla-konusan-65.png
 ---
 

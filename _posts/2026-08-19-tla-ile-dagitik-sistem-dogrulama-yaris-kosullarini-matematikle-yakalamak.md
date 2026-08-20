@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - TLA+
+  - tla+
   - dağıtık sistemler
   - formal metotlar
 ---

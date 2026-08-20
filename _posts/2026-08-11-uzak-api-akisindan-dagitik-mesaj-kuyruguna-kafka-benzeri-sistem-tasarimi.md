@@ -6,7 +6,7 @@ categories:
   - Proje
 tags: 
   - sistem tasarımı
-  - Kafka
+  - kafka
   - dağıtık sistemler
 image: /img/uzak-api-akisindan-71.png
 ---

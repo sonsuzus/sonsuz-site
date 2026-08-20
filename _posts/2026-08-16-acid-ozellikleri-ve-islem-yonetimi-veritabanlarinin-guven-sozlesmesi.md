@@ -6,8 +6,8 @@ categories:
   - Bilgi
 tags: 
   - veritabanı
-  - ACID
-  - SQL
+  - acıd
+  - sql
   - işlem yönetimi
 ---
 

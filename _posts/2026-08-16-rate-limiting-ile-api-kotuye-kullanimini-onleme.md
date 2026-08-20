@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - API Güvenliği
-  - Rate Limiting
-  - Node.js
-  - Sistem Tasarımı
+  - apı güvenliği
+  - rate limiting
+  - node.js
+  - sistem tasarımı
 ---
 
 Bir API, internetin açık kapısı gibidir: doğru kullanıcılar için hızlı ve kullanışlı olmalı, fakat kapıyı saniyede binlerce kez çalan botlara da dayanmalıdır. Rate limiting (istek hız sınırlama), bir istemcinin belirli zaman aralığında yapabileceği istek sayısını kısıtlayarak servis kesintilerini, kaba kuvvet saldırılarını ve maliyet patlamalarını azaltır. Ancak tek başına “429 Too Many Requests” döndürmek sihirli bir kalkan değildir; doğru algoritma, doğru anahtar ve iyi gözlemlenebilirlik gerekir.

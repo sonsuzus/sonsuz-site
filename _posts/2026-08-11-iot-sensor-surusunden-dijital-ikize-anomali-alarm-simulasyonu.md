@@ -5,11 +5,11 @@ math: true
 categories: 
   - Proje
 tags: 
-  - IoT
-  - Python
-  - Anomali Tespiti
-  - Dijital İkiz
-  - Siber-Fiziksel Sistem
+  - ıot
+  - python
+  - anomali tespiti
+  - dijital ikiz
+  - siber-fiziksel sistem
 ---
 
 Bir fabrikanın, seranın ya da akıllı binanın yüzlerce sensörle konuştuğunu düşünün: sıcaklıklar yükseliyor, titreşimler dalgalanıyor, nem değerleri fısıldıyor. Bu verinin içinden gerçekten tehlikeli olanı seçmek, samanlıkta iğne aramaktan biraz daha zor; çünkü bazen iğne de hareket ediyor. Bu projede sahte IoT verileri üreten, fiziksel ortamın dijital ikizini güncelleyen ve olağandışı durumlarda alarm veren küçük ama genişletilebilir bir siber-fiziksel sistem simülasyonu kuracağız.

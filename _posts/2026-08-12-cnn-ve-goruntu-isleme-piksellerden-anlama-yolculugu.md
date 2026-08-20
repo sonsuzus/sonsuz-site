@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - CNN
-  - Derin Öğrenme
-  - Görüntü İşleme
+  - cnn
+  - derin öğrenme
+  - görüntü işleme
 image: /img/cnn-ve-goruntu-12.png
 ---
 

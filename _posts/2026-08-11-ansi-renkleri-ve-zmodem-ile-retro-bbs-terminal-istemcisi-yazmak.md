@@ -5,11 +5,11 @@ math: true
 categories: 
   - Proje
 tags: 
-  - BBS
-  - ANSI Art
-  - ZMODEM
-  - Terminal
-  - Python
+  - bbs
+  - ansı art
+  - zmodem
+  - terminal
+  - python
 ---
 
 İnternetin modem sesleriyle bağlandığı günlere küçük bir selam vermek istiyorsanız, konsol tabanlı bir BBS terminal istemcisi harika bir projedir. Hedefimiz; seri port veya TCP üzerinden bir BBS’e bağlanmak, ANSI kaçış dizileriyle çizilen renkli ekranları doğru göstermek ve ZMODEM sayesinde dosya indirip gönderebilmektir. Bu proje yalnızca nostaljik değildir: akış kontrolü, terminal emülasyonu, ikili protokoller ve olay tabanlı G/Ç gibi bugün de değerli olan kavramları aynı potada buluşturur.

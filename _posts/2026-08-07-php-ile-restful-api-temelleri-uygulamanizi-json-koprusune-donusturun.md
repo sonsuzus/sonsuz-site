@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - PHP
-  - REST API
-  - JSON
+  - php
+  - rest apı
+  - json
 ---
 
 Bir PHP uygulaması yalnızca HTML üretmek zorunda değildir. Aynı uygulama; mobil istemcilere, JavaScript arayüzlerine ve başka sunuculara dinamik veri sağlayan bir API olarak da çalışabilir. Bunun anahtarı, kaynakları HTTP üzerinden anlaşılır biçimde sunmak ve yanıtları ortak bir veri formatı olan JSON ile iletmektir.

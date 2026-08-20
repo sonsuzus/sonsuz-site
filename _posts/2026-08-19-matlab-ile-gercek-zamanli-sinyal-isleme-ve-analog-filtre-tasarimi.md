@@ -5,10 +5,10 @@ math: true
 categories: 
   - Program
 tags: 
-  - MATLAB
-  - Sinyal İşleme
-  - Fourier Dönüşümü
-  - Filtre Tasarımı
+  - matlab
+  - sinyal işleme
+  - fourier dönüşümü
+  - filtre tasarımı
 ---
 
 Bir mikrofonun uğultusunu temizlemek, titreşim sensöründen arıza belirtisi yakalamak veya kalp atışı verisindeki gürültüyü azaltmak; hepsi sinyal işlemenin günlük hayattaki süper güçleridir. MATLAB, güçlü matematik altyapısı ve Signal Processing Toolbox araçları sayesinde ham ses ya da sensör örneklerini anlamlı bilgiye dönüştürmek için oldukça uygundur. Üstelik doğru örnekleme hızı, Fourier analizi ve filtre seçimiyle bu işlemler gerçek zamana yakın biçimde yapılabilir.

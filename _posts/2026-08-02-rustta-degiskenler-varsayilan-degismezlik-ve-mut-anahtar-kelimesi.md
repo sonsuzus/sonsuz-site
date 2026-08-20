@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
+  - rust
   - değişkenler
   - mutability
 image: /img/rustta-degiskenler-varsayilan-73.png

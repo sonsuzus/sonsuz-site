@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Git
-  - Branching
-  - Versiyon Kontrolü
+  - git
+  - branching
+  - versiyon kontrolü
 ---
 
 Yeni bir özelliği denerken ana uygulamayı bozmak, çalışan motora tornavidayla yaklaşmaya benzer: Küçük bir değişiklik bütün sistemi durdurabilir. Git dalları sayesinde geliştiriciler ana kod tabanından bağımsız çalışma alanları oluşturabilir, deneylerini güvenle yapabilir ve yalnızca hazır olan değişiklikleri projeye ekleyebilir.

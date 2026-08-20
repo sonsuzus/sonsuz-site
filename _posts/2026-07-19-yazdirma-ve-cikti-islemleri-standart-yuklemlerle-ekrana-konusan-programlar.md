@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Prolog
+  - prolog
   - çıktı işlemleri
   - standart yüklemler
 image: /img/yazdirma-ve-cikti-22.png

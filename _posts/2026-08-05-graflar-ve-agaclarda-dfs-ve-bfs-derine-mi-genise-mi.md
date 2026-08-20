@@ -5,8 +5,8 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - DFS
-  - BFS
+  - dfs
+  - bfs
   - graf algoritmaları
 ---
 

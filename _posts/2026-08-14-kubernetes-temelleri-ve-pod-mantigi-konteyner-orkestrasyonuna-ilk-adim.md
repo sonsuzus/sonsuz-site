@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Kubernetes
-  - Docker
-  - Konteyner
-  - DevOps
-  - Pod
+  - kubernetes
+  - docker
+  - konteyner
+  - devops
+  - pod
 image: /img/kubernetes-temelleri-ve-14.png
 ---
 

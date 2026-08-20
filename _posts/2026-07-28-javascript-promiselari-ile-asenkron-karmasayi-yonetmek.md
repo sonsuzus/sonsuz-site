@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - Promise
-  - Asenkron Programlama
+  - javascript
+  - promise
+  - asenkron programlama
 image: /img/javascript-promiselari-ile-82.png
 ---
 

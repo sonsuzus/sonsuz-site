@@ -5,8 +5,8 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Linux
-  - Unix felsefesi
+  - linux
+  - unix felsefesi
   - bilişsel ekonomi
 image: /img/linuxun-felsefesi-her-98.png
 ---

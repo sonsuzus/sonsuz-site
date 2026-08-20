@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - AGI
+  - agı
   - yapay zeka
   - teknoloji felsefesi
 ---

@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Go
-  - Go Modules
-  - Paket Yönetimi
-  - Bağımlılık Yönetimi
+  - go
+  - go modules
+  - paket yönetimi
+  - bağımlılık yönetimi
 image: /img/paket-yonetimi-ve-41.png
 ---
 

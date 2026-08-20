@@ -5,10 +5,10 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Python
-  - Satranç Motoru
-  - Minimax
-  - Algoritmalar
+  - python
+  - satranç motoru
+  - minimax
+  - algoritmalar
 ---
 
 Satranç motoru yazmak, kulağa “büyük ustaların laboratuvarı” gibi gelse de aslında algoritmik düşünceyi öğrenmek için harika bir oyun alanıdır. Python ile basit bir bot geliştirerek taşların değerini hesaplayabilir, olası hamleleri ağaç gibi düşünebilir ve minimax algoritmasıyla “ben oynarsam ne olur, rakip cevap verirse ne olur?” sorusunu kodla cevaplayabilirsiniz.

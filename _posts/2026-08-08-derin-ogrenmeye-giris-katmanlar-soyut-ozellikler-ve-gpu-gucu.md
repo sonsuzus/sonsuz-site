@@ -7,7 +7,7 @@ categories:
 tags: 
   - derin öğrenme
   - yapay sinir ağları
-  - GPU
+  - gpu
 image: /img/derin-ogrenmeye-giris-29.png
 ---
 

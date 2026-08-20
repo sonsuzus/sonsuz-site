@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - WebRTC
-  - JavaScript
-  - NAT
-  - STUN
-  - TURN
+  - webrtc
+  - javascript
+  - nat
+  - stun
+  - turn
 ---
 
 Tarayıcıdan tarayıcıya görüntülü görüşme fikri kulağa sihir gibi gelir: video akışı merkezi bir medya sunucusundan geçmeden iki kullanıcı arasında akar. WebRTC bunu `getUserMedia`, `RTCPeerConnection` ve güvenli medya taşıma protokolleriyle mümkün kılar. Ancak internetin görünmez kapı bekçisi NAT yüzünden iki cihazın birbirini bulması çoğu zaman sandığınız kadar doğrudan değildir.

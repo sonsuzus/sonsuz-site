@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - yapay zeka
-  - Alan Turing
+  - alan turing
   - makine öğrenmesi
 image: /img/turingden-transformerlara-yapay-48.png
 ---

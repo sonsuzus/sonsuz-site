@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SQL
-  - Veritabanı
-  - Sayfalama
+  - sql
+  - veritabanı
+  - sayfalama
 ---
 
 Bir veritabanında binlerce ürün, kullanıcı veya sipariş bulunabilir. Fakat çoğu zaman bütün satırları değil, belirli koşulları sağlayan küçük bir bölümü görmek isteriz. SQL’in `WHERE`, `ORDER BY` ve `LIMIT` araçları; verileri süzmemizi, anlamlı biçimde sıralamamızı ve yönetilebilir parçalar hâlinde sunmamızı sağlar.

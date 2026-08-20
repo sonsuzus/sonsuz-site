@@ -5,7 +5,7 @@ math: true
 categories: 
   - Proje
 tags: 
-  - C
+  - c
   - epoll
   - asenkron-programlama
 ---

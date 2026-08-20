@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Go
-  - C++
-  - Programlama Dilleri
-  - Sözdizimi
+  - go
+  - c++
+  - programlama dilleri
+  - sözdizimi
 image: /img/go-temelleri-ve-21.png
 ---
 

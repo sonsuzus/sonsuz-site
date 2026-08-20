@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Yapay Zeka
-  - Derin Öğrenme
-  - RNN
+  - yapay zeka
+  - derin öğrenme
+  - rnn
 ---
 
 Bir cümlenin sonundaki kelimeyi tahmin ederken önceki kelimeleri, yarının hisse fiyatını öngörürken de dünkü hareketleri görmezden gelemezsiniz. Tekrarlayan Sinir Ağları (Recurrent Neural Network, RNN), tam bu noktada devreye girer: Veriyi tek seferlik bağımsız satırlar olarak değil, zaman içinde akan bir hikâye olarak işler. Dil çevirisi, duygu analizi, sensör verisi ve finansal zaman serileri gibi alanlarda RNN'in süper gücü, önceki adımlardan öğrendiği bilgiyi bir sonraki adıma taşıyan gizli durumudur.

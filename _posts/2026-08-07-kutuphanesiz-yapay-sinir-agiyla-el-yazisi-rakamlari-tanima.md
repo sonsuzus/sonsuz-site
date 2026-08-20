@@ -6,8 +6,8 @@ categories:
   - Proje
 tags: 
   - yapay sinir ağı
-  - Python
-  - MNIST
+  - python
+  - mnıst
 ---
 
 Bir yapay sinir ağının gerçekten nasıl öğrendiğini anlamanın en iyi yolu, hazır makine öğrenmesi kütüphanelerini bir kenara bırakıp bütün parçaları kendimiz yazmaktır. Bu projede yalnızca Python dilinin temel özelliklerini kullanarak MNIST benzeri el yazısı rakamlarını tanıyan, girişten çıkışa ve hatadan geriye doğru öğrenebilen küçük bir sinir ağı geliştireceğiz.

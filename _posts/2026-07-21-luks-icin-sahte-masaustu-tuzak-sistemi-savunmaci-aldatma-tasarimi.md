@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - LUKS
-  - Linux Güvenliği
-  - Honeypot
+  - luks
+  - linux güvenliği
+  - honeypot
 image: /img/luks-icin-sahte-54.png
 ---
 

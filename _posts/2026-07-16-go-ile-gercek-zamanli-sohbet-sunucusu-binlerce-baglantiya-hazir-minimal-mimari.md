@@ -5,10 +5,10 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Go
-  - WebSocket
-  - Gerçek Zamanlı Uygulamalar
-  - Backend
+  - go
+  - websocket
+  - gerçek zamanlı uygulamalar
+  - backend
 image: /img/go-ile-gercek-20.png
 ---
 

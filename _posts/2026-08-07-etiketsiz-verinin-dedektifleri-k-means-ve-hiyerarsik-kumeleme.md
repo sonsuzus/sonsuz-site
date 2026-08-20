@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - denetimsiz öğrenme
-  - K-Means
+  - k-means
   - hiyerarşik kümeleme
 ---
 

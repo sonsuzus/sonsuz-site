@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Dinamik Programlama
-  - Bitmask
-  - Algoritmalar
+  - dinamik programlama
+  - bitmask
+  - algoritmalar
 image: /img/bitmask-dinamik-programlama-72.png
 ---
 

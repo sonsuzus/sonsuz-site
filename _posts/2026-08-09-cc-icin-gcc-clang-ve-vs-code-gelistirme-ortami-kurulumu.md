@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C/C++
-  - VS Code
-  - GCC ve Clang
+  - c/c++
+  - vs code
+  - gcc ve clang
 ---
 
 C ve C++, işlemciye ve belleğe yakın çalışabilmeleri sayesinde işletim sistemlerinden oyun motorlarına kadar pek çok alanda karşımıza çıkar. Ancak ilk programı yazmadan önce derleyici, hata ayıklayıcı ve editör üçlüsünü doğru biçimde hazırlamak gerekir. Bu rehberde GCC/Clang altyapısını kuracak, VS Code'u yapılandıracak ve kaynak kodun çalıştırılabilir programa nasıl dönüştüğünü öğreneceğiz.

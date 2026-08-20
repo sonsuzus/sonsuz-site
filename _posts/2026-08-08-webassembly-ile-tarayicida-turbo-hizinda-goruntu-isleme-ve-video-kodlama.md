@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - WebAssembly
-  - Rust
-  - Görüntü İşleme
+  - webassembly
+  - rust
+  - görüntü işleme
 image: /img/webassembly-ile-tarayicida-29.png
 ---
 

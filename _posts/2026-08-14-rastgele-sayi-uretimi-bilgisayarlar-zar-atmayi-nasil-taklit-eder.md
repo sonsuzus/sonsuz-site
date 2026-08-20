@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - rastgelelik
-  - PRNG
+  - prng
   - kriptografi
 ---
 

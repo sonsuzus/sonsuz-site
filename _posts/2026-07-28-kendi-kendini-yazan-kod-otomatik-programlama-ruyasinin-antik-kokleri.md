@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - yapay zeka
-  - LLM
+  - llm
   - programlama tarihi
 image: /img/kendi-kendini-yazan-22.png
 ---

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SQL
-  - Siber Güvenlik
-  - Prepared Statements
+  - sql
+  - siber güvenlik
+  - prepared statements
 image: /img/prepared-statements-ile-91.png
 ---
 

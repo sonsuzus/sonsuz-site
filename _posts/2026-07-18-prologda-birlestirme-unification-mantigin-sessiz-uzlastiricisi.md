@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Prolog
-  - Mantıksal Programlama
-  - Unification
+  - prolog
+  - mantıksal programlama
+  - unification
 image: /img/prologda-birlestirme-unification-47.png
 ---
 

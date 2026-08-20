@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SQL
-  - JOIN
-  - Veritabanı
+  - sql
+  - joın
+  - veritabanı
 ---
 
 Bir e-ticaret sisteminde müşteriler bir tabloda, siparişler başka bir tabloda tutulur. Peki “Hangi müşteri hangi siparişi verdi?” sorusunu nasıl yanıtlarız? SQL dünyasının çöpçatanı `JOIN`, farklı tablolardaki ilişkili satırları ortak sütunlar üzerinden buluşturur ve sonuçları tek bir sanal tablo gibi sunar.

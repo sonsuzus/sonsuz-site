@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
+  - javascript
   - dinamik tipleme
   - programlama temelleri
 image: /img/javascript-temelleri-dinamik-74.png

@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Assembly
-  - Bootloader
+  - assembly
+  - bootloader
   - x86
-  - BIOS
-  - İşletim Sistemleri
+  - bıos
+  - işletim sistemleri
 ---
 
 Bir bilgisayarın açılışında işletim sistemi henüz sahnede değildir: ekran kartına görüntü çizdirecek sürücüler, dosya sistemi ve hatta bellek yöneticisi yoktur. Buna rağmen işlemci birkaç talimat çalıştırarak makineyi hayata döndürür. Bootloader yazmak, bu minimal ortamda BIOS, disk ve CPU ile doğrudan konuşmayı öğrenmektir. Küçücük bir 512 baytlık programla ekrana mesaj basmak, donanım ile işletim sistemi arasındaki köprünün ilk tahtasını yerleştirmek gibidir.

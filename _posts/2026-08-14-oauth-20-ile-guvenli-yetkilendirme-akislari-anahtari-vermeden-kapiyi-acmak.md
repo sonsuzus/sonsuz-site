@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - OAuth 2.0
-  - Kimlik Doğrulama
-  - API Güvenliği
+  - oauth 2.0
+  - kimlik doğrulama
+  - apı güvenliği
 image: /img/oauth-20-ile-41.png
 ---
 

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - Veri Yapıları
-  - Dictionary ve Set
+  - python
+  - veri yapıları
+  - dictionary ve set
 image: /img/python-sozlukleri-ve-93.png
 ---
 

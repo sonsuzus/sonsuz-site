@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - Trait
-  - Nesne Tabanlı Programlama
+  - rust
+  - trait
+  - nesne tabanlı programlama
 image: /img/traitler-ile-ortak-58.png
 ---
 

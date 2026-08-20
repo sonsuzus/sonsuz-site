@@ -7,7 +7,7 @@ categories:
 tags: 
   - dbt
   - veri mühendisliği
-  - SQL
+  - sql
   - versiyon kontrolü
   - analytics engineering
 ---
@@ -35,6 +35,8 @@ Pratikte iyi bir dbt projesi genellikle katmanlı tasarlanır. `staging` katman�
 
 Aşağıdaki model, ham siparişlerden tamamlanmış siparişleri seçer. `ref()` kullanımı, tablo adını doğrudan yazmaktan daha güvenlidir: Ortam değişse bile dbt doğru bağımlılığı derler.
 
+{% raw %}
+
 ```sql
 -- models/marts/fct_orders.sql
 select
@@ -46,6 +48,8 @@ select
 from {{ ref('stg_orders') }}
 where status = 'completed'
 ```
+
+{% endraw %}
 
 Bu modelin yalnızca çalışması yeterli değildir; beklenen kuralları da sağlamalıdır. Örneğin sipariş kimliği boş olmamalı ve tekrar etmemelidir. YAML ile tanımlanan testler, veri sözleşmesi gibi davranır:
 

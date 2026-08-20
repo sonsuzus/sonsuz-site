@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Terraform
-  - Infrastructure as Code
-  - DevOps
+  - terraform
+  - ınfrastructure as code
+  - devops
 image: /img/terraform-ile-altyapiyi-88.png
 ---
 

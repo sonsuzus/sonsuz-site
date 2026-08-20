@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C
-  - Diziler
-  - İşaretçiler
-  - Bellek Yönetimi
+  - c
+  - diziler
+  - işaretçiler
+  - bellek yönetimi
 ---
 
 Bir C dizisi, sadece aynı türden değerlerin listesi değildir; bellekte art arda yerleştirilmiş sabit boyutlu fiziksel blokların ta kendisidir. İşaretçi aritmetiği ise bu blokların adresleri üzerinde güvenli ve anlamlı biçimde gezinmenin yoludur. İlk bakışta `p + 1` ifadesi bir adresi yalnızca bir artırıyormuş gibi görünür. Oysa C burada tür bilgisini kullanır ve bir sonraki elemana sıçrar. Bu küçük ayrıntı, dizilerin performanslı çalışmasının temelidir.

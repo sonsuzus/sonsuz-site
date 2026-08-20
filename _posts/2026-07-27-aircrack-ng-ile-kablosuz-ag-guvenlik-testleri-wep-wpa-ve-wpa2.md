@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Aircrack-ng
-  - Wi-Fi Güvenliği
-  - Sızma Testi
+  - aircrack-ng
+  - wi-fi güvenliği
+  - sızma testi
 image: /img/aircrack-ng-ile-74.png
 ---
 

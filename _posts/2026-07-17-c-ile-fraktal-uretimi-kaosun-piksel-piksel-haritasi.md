@@ -5,10 +5,10 @@ math: true
 categories: 
   - Program
 tags: 
-  - C++
-  - Fraktal
-  - Mandelbrot
-  - Kaos Teorisi
+  - c++
+  - fraktal
+  - mandelbrot
+  - kaos teorisi
 image: /img/c-ile-fraktal-74.png
 ---
 

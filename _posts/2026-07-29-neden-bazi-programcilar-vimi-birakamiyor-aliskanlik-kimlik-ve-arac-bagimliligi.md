@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Vim
+  - vim
   - programcı psikolojisi
   - geliştirici araçları
 image: /img/neden-bazi-programcilar-33.png

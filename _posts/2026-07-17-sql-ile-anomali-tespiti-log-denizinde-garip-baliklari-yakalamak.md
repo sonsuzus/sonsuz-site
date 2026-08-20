@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SQL
+  - sql
   - anomali tespiti
   - log analizi
   - veri analizi

@@ -5,11 +5,11 @@ math: true
 categories: 
   - Program
 tags: 
-  - Verilog
-  - Sayısal Devreler
-  - Simülasyon
-  - FPGA
-  - İşlemci Tasarımı
+  - verilog
+  - sayısal devreler
+  - simülasyon
+  - fpga
+  - işlemci tasarımı
 ---
 
 Bir işlemcinin içinde mucize değil, saat sinyaliyle uyum içinde çalışan çok sayıda küçük devre vardır. Verilog, bu devreleri fiziksel olarak üretmeden önce davranışlarını modellemeyi ve simüle etmeyi sağlayan bir donanım tanımlama dilidir (HDL). Böylece bir ALU’nun toplama yapıp yapmadığını, register’ın veriyi doğru anda saklayıp saklamadığını veya kontrol biriminin yanlış sinyal üretip üretmediğini dalga şekilleri üzerinden görebiliriz.

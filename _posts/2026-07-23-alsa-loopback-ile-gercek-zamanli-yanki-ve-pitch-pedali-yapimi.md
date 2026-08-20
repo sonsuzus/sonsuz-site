@@ -5,11 +5,11 @@ math: true
 categories: 
   - Proje
 tags: 
-  - ALSA
-  - Linux Audio
-  - DSP
-  - Python
-  - Ses Efekti
+  - alsa
+  - linux audio
+  - dsp
+  - python
+  - ses efekti
 image: /img/alsa-loopback-ile-20.png
 ---
 

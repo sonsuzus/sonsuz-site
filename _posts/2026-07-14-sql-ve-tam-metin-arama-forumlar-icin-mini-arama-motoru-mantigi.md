@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SQL
-  - Full-Text Search
-  - Veritabanı
-  - Arama Motoru
+  - sql
+  - full-text search
+  - veritabanı
+  - arama motoru
 image: /img/sql-ve-tam-36.png
 ---
 

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Pekiştirmeli Öğrenme
-  - Makine Öğrenmesi
-  - Yapay Zeka
+  - pekiştirmeli öğrenme
+  - makine öğrenmesi
+  - yapay zeka
 ---
 
 Pekiştirmeli öğrenme (Reinforcement Learning, RL), bir ajanın hazır doğru cevaplarla eğitilmek yerine çevresiyle etkileşime girerek öğrenmesidir. Ajan bir durum görür, eylem seçer ve çevreden ödül ya da ceza sinyali alır. Amaç anlık olarak en parlak ödülü kapmak değil, uzun vadede mümkün olan en yüksek toplam getiriyi elde etmektir. Bu yaklaşım, satranç oynayan yapay zekâlardan depo robotlarına kadar oldukça geniş bir kullanım alanına sahiptir.

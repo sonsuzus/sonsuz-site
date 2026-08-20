@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Web3
+  - web3
   - merkeziyetsizlik
   - blokzincir
 image: /img/merkeziyetsiz-internetin-utopyasi-92.png

@@ -5,7 +5,7 @@ math: true
 categories: 
   - Program
 tags: 
-  - C
+  - c
   - donanım
   - sürücü-geliştirme
 image: /img/c_donanim_surucu_katmanlari.png

@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - nesneler
-  - JSON
+  - json
   - veri modelleme
 ---
 

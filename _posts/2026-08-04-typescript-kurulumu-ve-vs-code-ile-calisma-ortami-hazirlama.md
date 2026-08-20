@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - TypeScript
-  - Node.js
-  - VS Code
+  - typescript
+  - node.js
+  - vs code
 ---
 
 JavaScript projelerine tür güvenliği, daha güçlü editör desteği ve erken hata yakalama yeteneği kazandırmak istiyorsanız TypeScript harika bir başlangıç noktasıdır. Bu rehberde TypeScript derleyicisini Node.js üzerinden kuracak, temel yapılandırmayı gerçekleştirecek ve hazırladığımız çalışma ortamını VS Code içinde küçük bir örnekle sınayacağız.

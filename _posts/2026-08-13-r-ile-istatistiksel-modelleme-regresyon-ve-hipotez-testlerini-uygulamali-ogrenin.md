@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - R
+  - r
   - istatistik
   - regresyon
   - hipotez testi

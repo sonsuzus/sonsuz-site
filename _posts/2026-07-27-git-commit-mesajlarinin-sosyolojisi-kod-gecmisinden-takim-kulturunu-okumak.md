@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Git
-  - Takım Kültürü
-  - Yazılım Geliştirme
+  - git
+  - takım kültürü
+  - yazılım geliştirme
 image: /img/git-commit-mesajlarinin-65.png
 ---
 

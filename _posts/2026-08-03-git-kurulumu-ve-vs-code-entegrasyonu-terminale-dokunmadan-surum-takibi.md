@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Git
-  - VS Code
-  - Versiyon Kontrolü
+  - git
+  - vs code
+  - versiyon kontrolü
 ---
 
 Kod yazarken çalışan bir özelliği yanlışlıkla bozmak, çoğu geliştiricinin yaşadığı küçük çaplı bir korku filmidir. Git, projenin değişim geçmişini kaydederek bu filmi mutlu sonla bitirir. VS Code entegrasyonu sayesinde dosya değişikliklerini görmek, commit oluşturmak ve uzak depoya göndermek için terminal komutlarını ezberlemek de gerekmez.

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - Kubernetes
-  - Helm
-  - DevOps
+  - kubernetes
+  - helm
+  - devops
 ---
 
 Kubernetes üzerinde küçük bir uygulamayı dağıtmak çoğu zaman birkaç YAML dosyasıyla başlar; fakat uygulama büyüdükçe Deployment, Service, Ingress, ConfigMap, Secret, HPA ve RBAC tanımları hızla çoğalır. Helm, bu karmaşayı sürümlenebilir ve yeniden kullanılabilir paketlere dönüştüren Kubernetes paket yöneticisidir. Amaç yalnızca YAML üretmek değil; farklı ortamlar için aynı uygulamayı güvenilir, tutarlı ve tekrarlanabilir biçimde yayınlamaktır.
@@ -38,6 +38,8 @@ cd web-api
 
 Bu komut; `Chart.yaml`, `values.yaml` ve `templates/` dizinini içeren başlangıç iskeletini üretir. `Chart.yaml` paketin adı ve sürümü gibi bilgileri saklarken, `values.yaml` varsayılan değerlerin evidir. Aşağıdaki parça, Deployment şablonunda kullanıcı tanımlı değerlerin nasıl kullanıldığını gösterir:
 
+{% raw %}
+
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -53,6 +55,8 @@ spec:
           ports:
             - containerPort: {{ .Values.service.port }}
 ```
+
+{% endraw %}
 
 Burada `{{ .Values.image.tag }}` ifadesi, gerçek bir YAML değeri değil, Helm'in kurulum sırasında çözeceği bir yer tutucudur. Ortama özel bir dosya hazırlamak oldukça pratiktir:
 

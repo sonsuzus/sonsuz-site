@@ -5,11 +5,11 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Python
-  - ASCII Art
-  - Terminal
-  - Pillow
-  - ANSI
+  - python
+  - ascıı art
+  - terminal
+  - pillow
+  - ansı
 ---
 
 Bir fotoğrafı terminalde yalnızca karakterler ve renklerle yeniden üretmek, nostaljik görünen ama oldukça öğretici bir görüntü işleme projesidir. Temel fikir basittir: Görüntüdeki her küçük piksel bölgesini, parlaklığı temsil eden bir ASCII karakterine ve o bölgenin rengini taşıyan ANSI kaçış koduna dönüştürürüz. Sonuç, terminal penceresinde çalışan mini bir renkli mozaiktir.

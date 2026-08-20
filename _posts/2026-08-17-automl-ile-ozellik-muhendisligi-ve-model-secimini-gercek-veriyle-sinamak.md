@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - AutoML
-  - Makine Öğrenmesi
-  - Özellik Mühendisliği
+  - automl
+  - makine öğrenmesi
+  - özellik mühendisliği
 ---
 
 AutoML araçları, makine öğrenmesini “veriyi ver, sihri izle” düzeyine indirgeyen kutular değildir; iyi kullanıldıklarında veri hazırlama, özellik dönüşümü ve model arama süreçlerini sistematik biçimde hızlandırırlar. Ancak bir aracın gerçekten başarılı olup olmadığını anlamanın tek yolu, onu belirli bir veri setinde şeffaf ve tekrarlanabilir bir deneyle test etmektir. Buradaki amaç yalnızca en yüksek skoru bulmak değil, aracın hangi özellikleri faydalı gördüğünü ve hangi model ailesini neden seçtiğini değerlendirmektir.

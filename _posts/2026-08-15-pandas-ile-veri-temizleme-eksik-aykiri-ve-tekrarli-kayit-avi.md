@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - Pandas
-  - Veri Temizleme
+  - python
+  - pandas
+  - veri temizleme
 ---
 
 Gerçek hayattaki veri setleri nadiren analiz edilmeye hazır gelir: bazı hücreler boş, bazı ölçümler fizik kurallarına meydan okuyacak kadar uç, bazı satırlar ise aynı bilgiyi tekrar tekrar taşır. Pandas ile veri temizleme; veriyi körü körüne silmek değil, veri kalitesini ölçüp iş problemine uygun dönüşümler uygulamaktır. Amaç, modelin ve raporların sinyal yerine gürültü öğrenmesini engellemektir.

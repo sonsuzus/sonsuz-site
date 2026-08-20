@@ -9,8 +9,7 @@ tags:
   - post
   - requests
   - metod
-redirect_from:
-  - /posts/python-post-metodu/
+toc: true
 ---
 
 Tabiki öncelikle import etmemiz gereken bir modül var

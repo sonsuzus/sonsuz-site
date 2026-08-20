@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - Three.js
-  - Veri Görselleştirme
-  - 3D Grafik
+  - javascript
+  - three.js
+  - veri görselleştirme
+  - 3d grafik
 image: /img/javascript-ile-uc-66.png
 ---
 

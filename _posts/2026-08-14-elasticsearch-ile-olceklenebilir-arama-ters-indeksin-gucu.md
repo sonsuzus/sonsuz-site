@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Elasticsearch
-  - Tam Metin Arama
-  - Ters İndeks
+  - elasticsearch
+  - tam metin arama
+  - ters indeks
 image: /img/elasticsearch-ile-olceklenebilir-22.png
 ---
 

@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Perl
-  - Metin Madenciliği
-  - Log Analizi
-  - Regex
-  - DevOps
+  - perl
+  - metin madenciliği
+  - log analizi
+  - regex
+  - devops
 ---
 
 Sunucu günlükleri, bir sistemin hem kara kutusu hem de olay mahallidir: hatalar, ziyaretçi davranışları, şüpheli istekler ve performans darboğazları satır satır burada yaşar. Perl, modern dillerin gölgesinde kalsa da metin işleme konusunda hâlâ son derece etkili bir araçtır. Özellikle büyük log dosyalarında düzenli ifadelerle örüntü yakalama, akış halinde veri okuma ve hızlı özet rapor üretme işlerinde az kodla güçlü sonuçlar verir.

@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - programlama öğrenme
-  - Stack Overflow
+  - stack overflow
   - yazılım pedagojisi
 image: /img/stack-overflowdan-kopyalamak-59.png
 ---

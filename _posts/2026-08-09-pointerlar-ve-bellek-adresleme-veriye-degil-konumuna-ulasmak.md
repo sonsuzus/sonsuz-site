@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C
-  - C++
-  - Pointer
-  - Bellek Yönetimi
-  - Performans
+  - c
+  - c++
+  - pointer
+  - bellek yönetimi
+  - performans
 ---
 
 Bir değişkeni düşünün: çoğu zaman onun değerini kullanırız, fakat bilgisayar açısından asıl önemli soru şudur: Bu değer RAM’in *neresinde* duruyor? İşaretçiler (pointer), verinin kendisini taşımak yerine o verinin bellekteki adresini saklayan değişkenlerdir. Böylece büyük bir diziyi, karmaşık bir nesneyi veya bir yapıyı kopyalamak yerine ona doğrudan erişebiliriz. Bu yaklaşım sistem programlama, oyun motorları, gömülü yazılımlar ve yüksek performanslı uygulamaların görünmez turbo düğmesidir.

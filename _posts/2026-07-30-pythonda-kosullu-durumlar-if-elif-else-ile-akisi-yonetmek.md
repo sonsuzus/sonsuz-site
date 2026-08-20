@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - Akış Kontrolü
-  - Koşullu İfadeler
+  - python
+  - akış kontrolü
+  - koşullu ifadeler
 image: /img/pythonda-kosullu-durumlar-59.png
 ---
 

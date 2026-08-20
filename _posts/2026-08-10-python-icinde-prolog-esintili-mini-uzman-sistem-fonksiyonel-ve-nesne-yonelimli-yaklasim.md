@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Python
-  - Prolog
-  - Uzman Sistemler
+  - python
+  - prolog
+  - uzman sistemler
 image: /img/python-icinde-prolog-48.png
 ---
 

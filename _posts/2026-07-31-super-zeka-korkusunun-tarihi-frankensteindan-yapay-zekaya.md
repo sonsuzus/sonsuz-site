@@ -7,7 +7,7 @@ categories:
 tags: 
   - yapay zekâ
   - teknoloji tarihi
-  - Frankenstein kompleksi
+  - frankenstein kompleksi
 image: /img/super-zeka-korkusunun-92.png
 ---
 

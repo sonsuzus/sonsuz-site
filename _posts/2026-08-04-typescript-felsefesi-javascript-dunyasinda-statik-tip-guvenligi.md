@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - TypeScript
-  - JavaScript
-  - Statik Tipler
+  - typescript
+  - javascript
+  - statik tipler
 ---
 
 JavaScript, geliştiriciye büyük bir hareket özgürlüğü sunar; ancak bu özgürlük bazen üretim ortamında patlayan küçük sürpriz paketlerine dönüşebilir. TypeScript’in temel felsefesi, JavaScript’in esnekliğini ortadan kaldırmak değil, program çalışmadan önce olası hataları görünür hâle getiren bir düşünme katmanı eklemektir. C ve C++ dünyasındaki statik tip denetimini anımsatan bu yaklaşım, dinamik web ekosistemine daha güvenli ve ölçeklenebilir bir geliştirme modeli kazandırır.

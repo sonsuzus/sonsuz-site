@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - Dekoratörler
-  - İleri Düzey Fonksiyonlar
+  - python
+  - dekoratörler
+  - ileri düzey fonksiyonlar
 image: /img/python-dekoratorleri-fonksiyonlara-51.png
 ---
 

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - GAN
-  - Difüzyon Modelleri
-  - Üretken Yapay Zekâ
+  - gan
+  - difüzyon modelleri
+  - üretken yapay zekâ
 image: /img/gan-ve-difuzyon-94.png
 ---
 

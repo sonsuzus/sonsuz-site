@@ -5,11 +5,11 @@ math: true
 categories: 
   - Proje
 tags: 
-  - eBPF
-  - Linux
-  - Ağ Gözlemleme
-  - Python
-  - BCC
+  - ebpf
+  - linux
+  - ağ gözlemleme
+  - python
+  - bcc
 image: /img/ebpf-ile-cekirdegi-59.png
 ---
 

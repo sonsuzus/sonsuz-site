@@ -5,10 +5,10 @@ math: true
 categories: 
   - Program
 tags: 
-  - C++
-  - Kriptografi
-  - RSA
-  - Veri Güvenliği
+  - c++
+  - kriptografi
+  - rsa
+  - veri güvenliği
 image: /img/c-ile-kriptografik-47.png
 ---
 

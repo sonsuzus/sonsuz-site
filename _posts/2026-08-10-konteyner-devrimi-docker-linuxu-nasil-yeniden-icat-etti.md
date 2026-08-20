@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Docker
-  - Linux
-  - Konteyner
-  - Sanallaştırma
-  - DevOps
+  - docker
+  - linux
+  - konteyner
+  - sanallaştırma
+  - devops
 image: /img/konteyner-devrimi-docker-29.png
 ---
 

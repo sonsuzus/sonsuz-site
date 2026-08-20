@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - Sözdizimi
-  - Temiz Kod
+  - python
+  - sözdizimi
+  - temiz kod
 image: /img/python-felsefesi-ve-91.png
 ---
 

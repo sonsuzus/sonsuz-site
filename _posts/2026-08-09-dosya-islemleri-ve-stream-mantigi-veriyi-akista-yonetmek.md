@@ -8,7 +8,7 @@ tags:
   - dosya işlemleri
   - stream
   - binary
-  - Node.js
+  - node.js
   - veri akışları
 ---
 

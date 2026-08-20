@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Python
-  - Kaos Teorisi
-  - Lorenz Çekici
+  - python
+  - kaos teorisi
+  - lorenz çekici
 image: /img/kelebek-etkisini-kodlamak-31.png
 ---
 

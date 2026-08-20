@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Prolog
+  - prolog
   - mantıksal programlama
   - fail operatörü
   - backtracking

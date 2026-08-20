@@ -5,11 +5,11 @@ math: true
 categories: 
   - Program
 tags: 
-  - Dart
-  - Flutter
-  - Cross-Platform
-  - Animasyon
-  - Mobil Geliştirme
+  - dart
+  - flutter
+  - cross-platform
+  - animasyon
+  - mobil geliştirme
 ---
 
 Bir uygulamayı Android, iOS, web ve masaüstünde çalıştırmak eskiden ayrı ekipler, ayrı kod tabanları ve bolca senkronizasyon toplantısı anlamına gelirdi. Flutter bu tabloyu değiştirmeyi hedefler: Dart ile yazılan tek bir arayüz kodu, farklı platformlarda yerel hissi veren deneyimlere dönüşür. Üstelik mesele yalnızca “bir kere yaz, her yerde çalıştır” değildir; Flutter’ın güçlü çizim altyapısı sayesinde geçişler, mikro etkileşimler ve karmaşık animasyonlar da tutarlı biçimde üretilebilir.

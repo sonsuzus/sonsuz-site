@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - fine-tuning
-  - LoRA
+  - lora
   - adapter
   - büyük dil modelleri
   - makine öğrenmesi

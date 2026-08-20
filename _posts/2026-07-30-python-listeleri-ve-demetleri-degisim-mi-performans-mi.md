@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - Listeler
-  - Demetler
+  - python
+  - listeler
+  - demetler
 image: /img/python-listeleri-ve-30.png
 ---
 

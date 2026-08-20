@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - BGP
+  - bgp
   - ağ
   - yönlendirme
   - otonom sistem

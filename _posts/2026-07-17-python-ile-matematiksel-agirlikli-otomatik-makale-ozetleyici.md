@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Python
-  - Doğal Dil İşleme
-  - Otomatik Özetleme
+  - python
+  - doğal dil işleme
+  - otomatik özetleme
 image: /img/python-ile-matematiksel-48.png
 ---
 

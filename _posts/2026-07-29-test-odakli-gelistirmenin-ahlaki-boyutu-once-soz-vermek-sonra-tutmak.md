@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - TDD
+  - tdd
   - yazılım etiği
   - test otomasyonu
 image: /img/test-odakli-gelistirmenin-75.png

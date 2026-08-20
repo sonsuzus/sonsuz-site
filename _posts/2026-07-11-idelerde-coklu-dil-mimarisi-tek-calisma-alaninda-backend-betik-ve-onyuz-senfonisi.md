@@ -5,8 +5,8 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - IDE
-  - LSP
+  - ıde
+  - lsp
   - çoklu dil mimarisi
   - otomasyon
   - frontend

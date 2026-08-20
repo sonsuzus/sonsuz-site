@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - C++
-  - Genetik Algoritma
-  - Optimizasyon
+  - c++
+  - genetik algoritma
+  - optimizasyon
 image: /img/c-ile-genetik-37.png
 ---
 

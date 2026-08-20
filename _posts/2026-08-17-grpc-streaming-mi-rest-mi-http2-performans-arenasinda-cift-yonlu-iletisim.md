@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - gRPC
-  - HTTP/2
-  - REST
-  - Performans Testi
-  - Streaming
+  - grpc
+  - http/2
+  - rest
+  - performans testi
+  - streaming
 ---
 
 Modern servisler yalnızca istek alıp JSON döndüren yapılardan ibaret değil: canlı konum, borsa verisi, oyun olayları ve telemetri akışları sürekli iletişim bekliyor. Bu noktada gRPC’nin HTTP/2 üzerinde çalışan streaming modeli, REST’in klasik istek-cevap ritmine güçlü bir alternatif sunar. Ancak “gRPC her zaman hızlıdır” demek yerine; gecikme, mesaj boyutu, eşzamanlı bağlantı ve iş yükü türü üzerinden ölçüm yapmak gerekir.

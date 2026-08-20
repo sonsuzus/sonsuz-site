@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Haskell
-  - Fonksiyonel Programlama
-  - Oyun Geliştirme
+  - haskell
+  - fonksiyonel programlama
+  - oyun geliştirme
 ---
 
 Yılan oyunu, küçük görünmesine rağmen oyun programlamasının en önemli sorularını barındırır: Zaman nasıl ilerler, klavye girdisi nasıl alınır, rastgele yem nereye çıkar ve ekran nasıl çizilir? Haskell bu sorulara ilginç bir ayrım getirir: Oyunun **kuralları** saf fonksiyonlarda yaşar; klavye, saat, rastgelelik ve terminal gibi dış dünya ayrıntıları ise kontrollü biçimde `IO` içinde tutulur. Böylece test edilebilir, tahmin edilebilir ve genişletilebilir bir oyun döngüsü elde ederiz.

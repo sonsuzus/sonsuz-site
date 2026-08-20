@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - COBOL
-  - Anaframe
-  - Bankacılık
-  - Miras Kod
-  - JCL
+  - cobol
+  - anaframe
+  - bankacılık
+  - miras kod
+  - jcl
 ---
 
 Bir bankanın ekranında saniyeler içinde görünen bakiye, çoğu zaman bulut üzerindeki parlak bir mikroservisten değil, onlarca yıldır çalışan bir ana bilgisayar programından gelir. COBOL (Common Business-Oriented Language), insan diline yakın söz dizimi ve güçlü kayıt işleme modeli sayesinde bankacılıkta kalıcı olmuştur. Bu sistemleri anlamak, yalnızca eski bir dili öğrenmek değildir; faiz, tahakkuk, mutabakat, hesap hareketi ve denetim izlerinin iş kurallarına nasıl dönüştüğünü keşfetmektir.

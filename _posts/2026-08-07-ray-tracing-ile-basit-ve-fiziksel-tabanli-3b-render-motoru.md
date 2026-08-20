@@ -6,8 +6,8 @@ categories:
   - Proje
 tags: 
   - ray-tracing
-  - 3B-render
-  - Python
+  - 3b-render
+  - python
 image: /img/ray-tracing-ile-69.png
 ---
 

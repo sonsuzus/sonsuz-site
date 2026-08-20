@@ -8,7 +8,7 @@ tags:
   - veri görselleştirme
   - grafikler
   - istatistik
-  - Python
+  - python
   - tasarım
 ---
 

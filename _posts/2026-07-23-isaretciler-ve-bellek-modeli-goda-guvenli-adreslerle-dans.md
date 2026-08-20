@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Go
-  - Pointers
-  - Garbage Collector
-  - Bellek Yönetimi
+  - go
+  - pointers
+  - garbage collector
+  - bellek yönetimi
 image: /img/isaretciler-ve-bellek-59.png
 ---
 

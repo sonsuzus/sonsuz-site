@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Git
-  - GitHub
-  - Sürüm Kontrolü
+  - git
+  - github
+  - sürüm kontrolü
 ---
 
 Bir ekip projesinde kod yazmak kadar, yazılan kodu doğru yere ve doğru zamanda ulaştırmak da önemlidir. Git’in **push** ve **pull** komutları, yerel bilgisayarımız ile GitHub, GitLab veya Bitbucket gibi uzak sunucular arasında köprü kurar. Biri tamamladığımız çalışmaları dışarı gönderirken diğeri ekip arkadaşlarımızın değişikliklerini içeri alır; yani biri kargoyu yollar, diğeri kapıda teslim alır.

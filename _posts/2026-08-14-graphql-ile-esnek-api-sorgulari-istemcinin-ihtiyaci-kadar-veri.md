@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - GraphQL
-  - API
-  - JavaScript
+  - graphql
+  - apı
+  - javascript
 image: /img/graphql-ile-esnek-73.png
 ---
 

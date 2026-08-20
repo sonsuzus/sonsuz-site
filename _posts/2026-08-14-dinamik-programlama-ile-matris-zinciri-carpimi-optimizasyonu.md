@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Dinamik Programlama
-  - Algoritmalar
-  - Python
+  - dinamik programlama
+  - algoritmalar
+  - python
 ---
 
 Birden fazla matrisi çarpmak, sonuç matrisi aynı kaldığı için ilk bakışta basit görünür. Ancak parantezlerin yeri, bilgisayarın yapacağı skaler çarpım sayısını dramatik biçimde değiştirebilir. Matris Zinciri Çarpımı problemi, matrisleri gerçekten çarpmaktan çok **en ucuz çarpım sırasını** bulmayı hedefler. Dinamik programlamanın “küçük en iyi çözümlerden büyük en iyi çözümü kur” fikrini öğrenmek için de klasik ve son derece öğretici bir örnektir.

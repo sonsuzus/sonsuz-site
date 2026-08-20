@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Veri Yapıları
-  - Link-Cut Tree
-  - Dinamik Ağaçlar
+  - veri yapıları
+  - link-cut tree
+  - dinamik ağaçlar
 ---
 
 Sabit bir ağaç üzerinde yol sorguları yapmak görece kolaydır; ancak kenarlar sürekli eklenip siliniyorsa klasik DFS, Euler turu veya ağır-hafif ayrıştırması kısa sürede zorlanır. Link-Cut Tree (LCT), tam bu hareketli dünyada devreye girer: Ormanı dinamik biçimde yönetir, iki düğümün bağlı olup olmadığını sorar, kenar koparır ve yeni bağlantılar kurar. Üstelik doğru kullanımda her işlem amortize olarak logaritmiktir.

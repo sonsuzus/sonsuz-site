@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Julia
-  - Python
-  - Bilimsel Hesaplama
-  - Performans
-  - Sayısal Analiz
+  - julia
+  - python
+  - bilimsel hesaplama
+  - performans
+  - sayısal analiz
 image: /img/julia-ile-bilimsel-50.png
 ---
 

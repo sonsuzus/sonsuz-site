@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - IPv6
-  - Ağ Yönetimi
-  - Dual Stack
+  - ıpv6
+  - ağ yönetimi
+  - dual stack
 ---
 
 IPv4 adreslerinin tükenmesi, interneti bir gecede IPv6’ya taşımadı; bunun yerine iki protokolün uzun süre birlikte yaşadığı hibrit bir dönem başlattı. Çift yığın (dual stack) mimarisi, istemci, sunucu ve ağ cihazlarının aynı anda hem IPv4 hem de IPv6 adresi taşımasını sağlar. Doğru tasarlandığında kullanıcılar fark etmeden modern internete bağlanır; yanlış tasarlandığında ise DNS, güvenlik duvarı ve gecikme sorunları küçük bir ağ macerasını büyük bir operasyona dönüştürebilir.

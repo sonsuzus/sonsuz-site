@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Dependency Injection
-  - Yazılım Mimarisi
-  - Birim Testi
+  - dependency ınjection
+  - yazılım mimarisi
+  - birim testi
 ---
 
 Bir sınıfın çalışmak için ihtiyaç duyduğu nesneleri kendi içinde üretmesi, ilk bakışta pratik görünür: `new` yazılır ve iş biter. Ancak uygulama büyüdükçe bu küçük kolaylık; değiştirmesi zor, testleri pahalı ve bileşenleri birbirine yapışmış bir mimariye dönüşür. Bağımlılık Enjeksiyonu (Dependency Injection, DI), sınıfın ihtiyaç duyduğu bağımlılıkları oluşturmak yerine dışarıdan almasını sağlayarak bu yapışkanlığı azaltan güçlü bir tasarım tekniğidir.

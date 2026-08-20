@@ -7,8 +7,8 @@ categories:
 tags: 
   - yapay zeka
   - açıklanabilirlik
-  - LIME
-  - SHAP
+  - lıme
+  - shap
   - makine öğrenmesi
 ---
 

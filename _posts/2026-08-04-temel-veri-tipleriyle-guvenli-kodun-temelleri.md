@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - veri tipleri
-  - TypeScript
+  - typescript
   - tip güvenliği
 ---
 

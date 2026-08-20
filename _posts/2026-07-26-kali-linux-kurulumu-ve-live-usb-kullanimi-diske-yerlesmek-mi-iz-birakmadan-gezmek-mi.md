@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Kali Linux
-  - Live USB
-  - Linux Kurulumu
+  - kali linux
+  - live usb
+  - linux kurulumu
 image: /img/kali-linux-kurulumu-61.png
 ---
 

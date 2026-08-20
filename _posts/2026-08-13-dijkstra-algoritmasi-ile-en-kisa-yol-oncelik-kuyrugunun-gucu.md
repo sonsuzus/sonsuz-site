@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Algoritmalar
-  - Graf Teorisi
-  - Python
-  - Dijkstra
-  - Veri Yapıları
+  - algoritmalar
+  - graf teorisi
+  - python
+  - dijkstra
+  - veri yapıları
 image: /img/dijkstra-algoritmasi-ile-15.png
 ---
 

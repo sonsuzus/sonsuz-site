@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Clojure
-  - Makrolar
-  - Meta Programlama
+  - clojure
+  - makrolar
+  - meta programlama
 ---
 
 Clojure makroları, programın çalıştırdığı değerleri değil, programın kendisini dönüştürmenizi sağlar. Bu fikir ilk bakışta sihirli görünse de temelinde oldukça somut bir gerçek vardır: Clojure kodu, Lisp ailesinden geldiği için veri yapılarıyla aynı biçimde yazılır. Böylece bir fonksiyon çağrısı olan `(topla 2 3)` aynı zamanda liste olarak okunabilir; makro da bu listeyi alır, değiştirir ve derleyicinin işleyeceği yeni kodu üretir.

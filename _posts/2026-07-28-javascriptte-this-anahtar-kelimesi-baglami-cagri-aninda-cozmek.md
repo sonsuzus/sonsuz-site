@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
+  - javascript
   - this
   - fonksiyonlar
 image: /img/javascriptte-this-anahtar-92.png

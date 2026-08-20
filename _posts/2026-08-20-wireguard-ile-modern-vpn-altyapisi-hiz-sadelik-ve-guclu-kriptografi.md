@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - WireGuard
-  - VPN
-  - Ağ Güvenliği
+  - wireguard
+  - vpn
+  - ağ güvenliği
 ---
 
 Modern bir VPN kurmak, eskiden sertifika zincirleri, karmaşık şifre paketleri ve sayfalarca yapılandırma dosyası demekti. WireGuard bu yaklaşımı bilinçli biçimde tersine çevirir: küçük kod tabanı, az sayıda kriptografik tercih ve UDP üzerinde çalışan yalın bir tünel. Sonuç; yönetimi kolay, yüksek performanslı ve özellikle sunucu-istemci ya da site-to-site senaryolarında çok güçlü bir sanal özel ağ altyapısıdır.

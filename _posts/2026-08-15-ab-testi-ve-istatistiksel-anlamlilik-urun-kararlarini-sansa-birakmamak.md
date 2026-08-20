@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - A/B Testi
-  - İstatistik
-  - Ürün Analitiği
+  - a/b testi
+  - istatistik
+  - ürün analitiği
 ---
 
 Bir ürün ekibinin en tehlikeli cümlesi bazen şudur: “Yeni buton daha güzel görünüyor, yayınlayalım.” Güzel görünüm değerli olsa da dönüşümü gerçekten artırıp artırmadığını yalnızca kontrollü deney söyleyebilir. A/B testi, kullanıcıları rastgele iki veya daha fazla varyanta ayırarak tek bir değişikliğin davranış üzerindeki etkisini ölçme yöntemidir. Amaç, sezgiyi öldürmek değil; sezgiyi ölçülebilir kanıtla güçlendirmektir.

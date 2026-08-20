@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - ETL
+  - etl
   - veri mühendisliği
   - data pipeline
 ---

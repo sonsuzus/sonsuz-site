@@ -5,11 +5,11 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Linux
-  - TCP
-  - Raw Socket
-  - Ağ Programlama
-  - Python
+  - linux
+  - tcp
+  - raw socket
+  - ağ programlama
+  - python
 ---
 
 Linux’un TCP yığını çoğu uygulama için harika bir güvenlik ağıdır: bağlantıyı kurar, paketleri yeniden iletir ve pencereyi otomatik ayarlar. Fakat paket düzeyinde deney yapmak, özel bir protokol laboratuvarı kurmak veya TCP’nin iç işleyişini gerçekten anlamak istiyorsanız ham soketler ilginç bir kapı açar. Buradaki önemli düzeltme şudur: `SOCK_RAW`, ağ kartını ve çekirdeği tamamen atlamaz; paketi yine Linux üzerinden gönderir. Ancak çekirdeğin sizin adınıza TCP durum makinesi yönetmesini atlayıp TCP başlığını kendiniz üretmenizi sağlar.

@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Big O
+  - big o
   - algoritma analizi
   - zaman karmaşıklığı
 ---

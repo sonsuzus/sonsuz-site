@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - PHP
-  - Composer
-  - SemVer
+  - php
+  - composer
+  - semver
 ---
 
 PHP projesinde `composer update` komutunun bir paketi güncellerken başka bir kütüphaneyi bozması, çoğu geliştiricinin en az bir kez yaşadığı küçük bir bağımlılık dramıdır. Composer bu dramı sihirle değil; sürüm kısıtlamaları, paket metadatası ve Semantik Versiyonlama (SemVer) kurallarıyla yönetir. Doğru yazılmış bir `composer.json`, hem güvenli güncellemeye alan açar hem de ekipteki herkesin aynı bağımlılık ağını kurmasına yardımcı olur.

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JWT
-  - Refresh Token
-  - Kimlik Doğrulama
+  - jwt
+  - refresh token
+  - kimlik doğrulama
 ---
 
 JWT tabanlı kimlik doğrulama, stateless yapısı sayesinde ölçeklenebilir uygulamalarda oldukça popülerdir; ancak token çalınması, uzun oturumlar ve cihaz yönetimi gibi konular dikkatli tasarlanmadığında ciddi güvenlik açıkları doğurur. Bu noktada **kısa ömürlü access token** ve **rotasyona tabi refresh token** ikilisi, hem kullanıcı deneyimini hem de güvenlik seviyesini dengeler.

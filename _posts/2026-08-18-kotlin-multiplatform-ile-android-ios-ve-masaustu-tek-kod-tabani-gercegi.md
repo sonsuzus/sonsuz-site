@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - Kotlin Multiplatform
-  - Compose Multiplatform
-  - Mobil Geliştirme
+  - kotlin multiplatform
+  - compose multiplatform
+  - mobil geliştirme
 ---
 
 Android, iOS ve masaüstü için ayrı ekipler, ayrı iş listeleri ve aynı hatanın üç farklı yerde düzeltilmesi… Tanıdık bir senaryoysa Kotlin Multiplatform (KMP) güçlü bir çıkış noktasıdır. KMP, uygulamanın iş mantığını tek bir ortak modülde yazıp Android, iOS, Windows, macOS ve Linux hedeflerine derlemenizi sağlar. Amaç “her şeyi sihirli biçimde tek seferde yazmak” değil; tekrar eden mantığı merkezileştirip platforma özgü katmanları kontrollü biçimde ayırmaktır.

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - PHP
-  - Forum Mimarisi
-  - Veritabanı Güvenliği
+  - php
+  - forum mimarisi
+  - veritabanı güvenliği
 ---
 
 Bir forum sitesine girdiğinizde gördüğünüz şey birkaç başlık, avatar ve cevap kutusundan ibaret gibi durur. Oysa arka planda PHP, HTTP isteğini yakalar, oturumu kontrol eder, veritabanından konuları çeker, izinleri hesaplar ve size dinamik bir HTML sayfası üretir. Topluluk odaklı platformların evrimi tam da burada başlar: statik sayfalardan, kullanıcı davranışına göre şekillenen yaşayan sistemlere geçiş.

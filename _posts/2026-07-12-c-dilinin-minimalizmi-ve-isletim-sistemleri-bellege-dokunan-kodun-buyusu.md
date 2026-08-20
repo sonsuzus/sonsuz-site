@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C
+  - c
   - işletim sistemleri
   - kernel
   - bellek yönetimi

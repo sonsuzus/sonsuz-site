@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Haskell
-  - Fonksiyonel Programlama
-  - Saf Fonksiyonlar
-  - Tembel Değerlendirme
+  - haskell
+  - fonksiyonel programlama
+  - saf fonksiyonlar
+  - tembel değerlendirme
 ---
 
 Bir programın doğru çalıştığından emin olmak çoğu zaman yalnızca test yazmakla bitmez. Değişkenlerin beklenmedik biçimde güncellenmesi, dosya işlemleri, ağ çağrıları ve zaman bağımlılığı gibi etkiler kodun davranışını zorlaştırır. Haskell, **saf fonksiyonel programlama** yaklaşımıyla bu karmaşıklığı azaltmayı hedefler: Fonksiyonlar mümkün olduğunca yalnızca girdilerine bağlı sonuç üretir; yan etkiler ise açıkça modellenir.

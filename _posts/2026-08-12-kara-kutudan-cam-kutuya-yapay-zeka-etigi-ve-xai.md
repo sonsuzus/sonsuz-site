@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Yapay Zeka
-  - XAI
-  - Etik
-  - Makine Öğrenmesi
+  - yapay zeka
+  - xaı
+  - etik
+  - makine öğrenmesi
 image: /img/kara-kutudan-cam-47.png
 ---
 

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - Async/Await
-  - Asenkron Programlama
+  - javascript
+  - async/await
+  - asenkron programlama
 ---
 
 Bir web servisine istek gönderirken, dosya okurken veya veritabanından kayıt beklerken uygulamanın tamamen durmasını istemeyiz. JavaScript’in `async/await` sözdizimi, arka planda asenkron çalışan bu işlemleri sanki adım adım ilerleyen senkron kodlarmış gibi yazmamızı sağlar. Sonuç; daha az iç içe fonksiyon, daha anlaşılır hata yönetimi ve geliştiricinin saç baş yolma ihtimalinde kayda değer bir azalmadır.

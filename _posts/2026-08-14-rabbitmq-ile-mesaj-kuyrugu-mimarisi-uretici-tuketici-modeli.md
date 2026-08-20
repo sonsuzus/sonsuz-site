@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - RabbitMQ
-  - Mesaj Kuyruğu
-  - Node.js
+  - rabbitmq
+  - mesaj kuyruğu
+  - node.js
 ---
 
 Mikroservisler birbirini doğrudan ve senkron çağırdığında, küçük bir gecikme bile zincirleme arızaya dönüşebilir. RabbitMQ bu bağı gevşetir: sipariş servisi işi bir kuyruğa bırakır, bildirim servisi uygun olduğunda alır. Böylece servisler farklı hızlarda çalışabilir, yoğunluk dalgaları daha yönetilebilir hâle gelir.

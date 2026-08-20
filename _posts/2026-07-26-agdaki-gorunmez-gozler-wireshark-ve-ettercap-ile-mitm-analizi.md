@@ -5,8 +5,8 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Wireshark
-  - Ettercap
+  - wireshark
+  - ettercap
   - ağ güvenliği
 image: /img/agdaki-gorunmez-gozler-89.png
 ---

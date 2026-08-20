@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - Diziler
-  - Fonksiyonel Programlama
+  - javascript
+  - diziler
+  - fonksiyonel programlama
 image: /img/javascript-dizileri-ve-63.png
 ---
 

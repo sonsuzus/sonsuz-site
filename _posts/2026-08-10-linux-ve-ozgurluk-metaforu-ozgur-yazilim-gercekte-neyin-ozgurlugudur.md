@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Linux
-  - Özgür Yazılım
-  - Richard Stallman
-  - Siyaset Felsefesi
-  - GPL
+  - linux
+  - özgür yazılım
+  - richard stallman
+  - siyaset felsefesi
+  - gpl
 image: /img/linux-ve-ozgurluk-52.png
 ---
 

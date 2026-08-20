@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SDN
-  - Ağ Yönetimi
-  - OpenFlow
+  - sdn
+  - ağ yönetimi
+  - openflow
 ---
 
 Geleneksel ağlarda her yönlendirici ve anahtar kendi kararlarını verir; bu durum büyüyen altyapılarda yapılandırma karmaşası, tutarsız kurallar ve yavaş değişiklikler doğurur. Yazılım Tanımlı Ağlar (Software-Defined Networking, SDN), kontrol kararlarını merkezi bir yazılıma taşıyarak ağın davranışını programlanabilir hâle getirir. Böylece yönlendirme tabloları, güvenlik politikaları ve trafik öncelikleri tek tek cihazlara bağlanmadan dinamik biçimde yönetilebilir.

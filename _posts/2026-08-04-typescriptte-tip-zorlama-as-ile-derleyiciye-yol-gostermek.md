@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - TypeScript
-  - Tip Güvenliği
-  - Type Assertions
+  - typescript
+  - tip güvenliği
+  - type assertions
 image: /img/typescriptte-tip-zorlama-79.png
 ---
 

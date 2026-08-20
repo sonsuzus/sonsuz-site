@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - ES Modules
-  - Kod Organizasyonu
+  - javascript
+  - es modules
+  - kod organizasyonu
 image: /img/es-modules-ile-13.png
 ---
 

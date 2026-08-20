@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - COBOL
+  - cobol
   - miras sistemler
   - bankacılık teknolojileri
 image: /img/neden-eski-cobol-51.png

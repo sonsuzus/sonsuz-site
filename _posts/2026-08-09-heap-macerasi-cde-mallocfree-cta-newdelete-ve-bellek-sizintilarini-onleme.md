@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C
-  - C++
-  - Dinamik Bellek
-  - Heap
-  - Memory Leak
+  - c
+  - c++
+  - dinamik bellek
+  - heap
+  - memory leak
 ---
 
 Programlar çalışırken tüm veri boyutları baştan bilinmez: Kullanıcının gireceği metnin uzunluğu, dosyadaki kayıt sayısı veya oluşturulacak nesne miktarı değişkendir. İşte bu noktada **heap (öbek)** alanı devreye girer. Heap, çalışma zamanında bellek talep etmemizi sağlayan bölgedir. Bu bellek çağıran fonksiyon bittiğinde kendiliğinden kaybolmaz; programcı onu bilinçli biçimde iade etmelidir. Güç büyük, sorumluluk daha da büyüktür.

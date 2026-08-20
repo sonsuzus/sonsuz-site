@@ -7,7 +7,7 @@ categories:
 tags: 
   - veritabanı
   - transaction
-  - 2PL
+  - 2pl
   - deadlock
   - izolasyon
 ---

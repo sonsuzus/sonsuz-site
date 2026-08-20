@@ -5,10 +5,10 @@ math: true
 categories: 
   - Program
 tags: 
-  - JavaScript
-  - NFC
-  - Web NFC
-  - Mobil Web
+  - javascript
+  - nfc
+  - web nfc
+  - mobil web
 ---
 
 Telefonunuzu bir etikete yaklaştırıp kapıyı açmak, Wi-Fi bilgisini almak ya da bir ürünün bakım geçmişini okumak kulağa biraz sihir gibi gelir; ama aslında sahnede NFC ve JavaScript vardır. Modern Android tarayıcılarında Web NFC API sayesinde web uygulamaları, yakın alan iletişimi sensörleriyle veri okuyup yazabilir. Yani bazen bir buton, bazen de 3 cm mesafe bütün deneyimi değiştirir.

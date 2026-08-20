@@ -6,9 +6,9 @@ categories:
   - Bilgi
 tags: 
   - açık kaynak
-  - GPL
-  - MIT lisansı
-  - BSD lisansı
+  - gpl
+  - mıt lisansı
+  - bsd lisansı
   - yazılım hukuku
 ---
 

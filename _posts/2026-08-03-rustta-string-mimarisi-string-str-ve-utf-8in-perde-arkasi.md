@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - String
-  - UTF-8
+  - rust
+  - string
+  - utf-8
 image: /img/rustta-string-mimarisi-30.png
 ---
 

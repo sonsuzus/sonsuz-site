@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - PIP
-  - Paket Yönetimi
+  - python
+  - pıp
+  - paket yönetimi
 image: /img/python-paket-yonetimi-96.png
 ---
 

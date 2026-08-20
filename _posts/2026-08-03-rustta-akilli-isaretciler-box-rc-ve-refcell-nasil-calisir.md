@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - Akıllı İşaretçiler
-  - Bellek Yönetimi
+  - rust
+  - akıllı işaretçiler
+  - bellek yönetimi
 image: /img/rustta-akilli-isaretciler-11.png
 ---
 

@@ -5,8 +5,8 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Huffman
-  - LZW
+  - huffman
+  - lzw
   - veri sıkıştırma
 ---
 

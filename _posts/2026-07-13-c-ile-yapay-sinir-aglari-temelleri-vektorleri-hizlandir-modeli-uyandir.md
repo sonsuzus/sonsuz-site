@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - C++
-  - Yapay Sinir Ağları
-  - Optimizasyon
+  - c++
+  - yapay sinir ağları
+  - optimizasyon
 image: /img/c-ile-yapay-39.png
 ---
 

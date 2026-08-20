@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - PHP
-  - Mikro Servis
-  - Yazılım Mimarisi
+  - php
+  - mikro servis
+  - yazılım mimarisi
 image: /img/php-ile-mikro-69.png
 ---
 

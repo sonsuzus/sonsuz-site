@@ -5,8 +5,8 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - KMP
-  - Rabin-Karp
+  - kmp
+  - rabin-karp
   - palindrom
 ---
 

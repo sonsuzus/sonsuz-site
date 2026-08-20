@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - GAN
-  - Derin Öğrenme
-  - Yapay Zeka
+  - gan
+  - derin öğrenme
+  - yapay zeka
 image: /img/ganler-sahtekar-ile-88.png
 ---
 

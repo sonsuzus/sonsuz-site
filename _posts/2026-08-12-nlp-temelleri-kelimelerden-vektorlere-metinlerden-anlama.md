@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - NLP
-  - Makine Öğrenmesi
-  - Word2Vec
-  - GloVe
-  - Metin Madenciliği
+  - nlp
+  - makine öğrenmesi
+  - word2vec
+  - glove
+  - metin madenciliği
 ---
 
 Bir bilgisayara “Bu film harikaydı” dediğinizde onun heyecanlanmasını beklemeyiz; fakat cümlenin olumlu bir duygu taşıdığını hesaplayabilmesini isteriz. Doğal Dil İşleme (Natural Language Processing, NLP), insan dilinin kurallı ama bir o kadar da muğlak dünyasını algoritmaların çalışabileceği sayısal temsillere dönüştüren alandır. Arama motorlarından sohbet botlarına, otomatik çeviriden spam filtrelerine kadar pek çok sistemin mutfağında NLP vardır.

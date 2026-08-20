@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - PHP
-  - XAMPP
-  - MAMP
+  - php
+  - xampp
+  - mamp
 ---
 
 PHP ile dinamik bir web uygulaması geliştirirken dosyaya çift tıklamak yeterli değildir. Tarayıcı PHP kodunu doğrudan çalıştıramaz; isteğin bir web sunucusuna ulaşması, PHP yorumlayıcısından geçmesi ve gerekiyorsa veritabanıyla konuşması gerekir. XAMPP ve MAMP, bu parçaları tek pakette sunarak bilgisayarımızı internete açmadan küçük bir geliştirme sunucusuna dönüştürür.

@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SIMD
-  - Veri Paralelliği
-  - Performans
-  - C++
-  - AVX
+  - sımd
+  - veri paralelliği
+  - performans
+  - c++
+  - avx
 ---
 
 Modern işlemciler yalnızca daha yüksek saat hızlarıyla değil, aynı anda birden fazla veriyi işleyebilme yetenekleriyle de hız kazanır. SIMD (*Single Instruction, Multiple Data*), yani Tek Komut Çoklu Veri yaklaşımı, özellikle dizi, matris, görüntü, ses ve bilimsel hesaplama gibi birbirinden bağımsız sayısal işlemlerde büyük performans artışı sağlar. Fikir basittir: Dört sayıyı tek tek toplamak yerine, dört sayıyı taşıyan bir vektör kaydı üzerinde tek toplama komutu çalıştırılır.

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - TypeScript
-  - Type Aliases
-  - Tip Güvenliği
+  - typescript
+  - type aliases
+  - tip güvenliği
 ---
 
 Bir projede aynı uzun tip tanımını üçüncü kez yazarken parmaklarınız “Bunun daha kısa bir yolu olmalı!” diye isyan ediyorsa, TypeScript’in **tip takma adları** yardımınıza yetişir. Type alias, karmaşık veya sık kullanılan bir tipe anlamlı bir isim vererek kodun okunabilirliğini artırır; üstelik bunu çalışma zamanına ek yük getirmeden yapar.

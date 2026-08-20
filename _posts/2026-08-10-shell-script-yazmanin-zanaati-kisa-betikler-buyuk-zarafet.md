@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Shell Script
-  - Bash
-  - Yazılım Zanaatkarlığı
+  - shell script
+  - bash
+  - yazılım zanaatkarlığı
 ---
 
 Bir shell betiği bazen yalnızca üç satırdır: bir dosyayı bulur, dönüştürür ve sonucu kaydeder. Buna rağmen iyi yazılmış bir betik, iyi kurulmuş kısa bir şiir gibi hissedebilir. Her kelime iş yapar, her boşluk okunabilirliğe katkı sunar ve gereksiz hiçbir hareket yoktur. Shell script zanaatı; komutları art arda dizmekten çok, belirsizliği azaltma, niyeti görünür kılma ve gelecekteki kullanıcıya saygı duyma pratiğidir.

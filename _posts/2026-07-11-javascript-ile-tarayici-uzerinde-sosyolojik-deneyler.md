@@ -5,10 +5,10 @@ math: true
 categories: 
   - Proje
 tags: 
-  - JavaScript
-  - DOM Manipülasyonu
-  - Kullanıcı Davranışı
-  - Psikoloji Testleri
+  - javascript
+  - dom manipülasyonu
+  - kullanıcı davranışı
+  - psikoloji testleri
 ---
 
 Tarayıcı, sadece butonlara tıkladığımız bir ekran değil; aynı zamanda küçük ölçekli davranış deneyleri yapabileceğimiz harika bir laboratuvardır. JavaScript sayesinde kullanıcıların seçimlerini, tepki sürelerini, dikkat kaymalarını ve karar örüntülerini analiz eden etkileşimli psikoloji ya da zeka testleri tasarlayabiliriz. Elbette burada amaç “insanı çözmek” değil; etik sınırlar içinde, anonim ve öğretici deneyimler üretmektir.

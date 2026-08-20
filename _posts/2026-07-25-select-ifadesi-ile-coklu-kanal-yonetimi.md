@@ -5,10 +5,10 @@ math: true
 categories: 
   - Program
 tags: 
-  - Go
-  - Concurrency
-  - Channel
-  - Select
+  - go
+  - concurrency
+  - channel
+  - select
 image: /img/select-ifadesi-ile-73.png
 ---
 

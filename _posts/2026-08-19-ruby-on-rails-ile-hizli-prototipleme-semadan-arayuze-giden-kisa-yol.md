@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Ruby on Rails
-  - Hızlı Prototipleme
-  - Convention over Configuration
+  - ruby on rails
+  - hızlı prototipleme
+  - convention over configuration
 ---
 
 Bir fikri doğrulamak için haftalarca form, liste, doğrulama ve ilişki kodu yazmak zorunda değilsiniz. Ruby on Rails, **Convention over Configuration** yaklaşımıyla veritabanı şemasını uygulamanın omurgası kabul eder; doğru isimlendirilmiş tablolar, alanlar ve ilişkilerden yola çıkarak işlevsel bir yönetim arayüzü üretmeyi oldukça hızlandırır. Amaç kusursuz ürünü ilk günde yayınlamak değil, kullanıcıdan erken geri bildirim alacak kadar gerçek bir prototip oluşturmaktır.

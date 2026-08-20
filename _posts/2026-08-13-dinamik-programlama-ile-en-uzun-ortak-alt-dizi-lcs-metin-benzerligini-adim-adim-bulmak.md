@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Dinamik Programlama
-  - Algoritmalar
-  - LCS
+  - dinamik programlama
+  - algoritmalar
+  - lcs
 ---
 
 İki metnin ne kadar benzediğini yalnızca ortak kelimeleri sayarak ölçmek yanıltıcı olabilir. Çünkü sıralama da anlam taşır: `"programlama harikadır"` ile `"harikadır programlama"` aynı kelimeleri içerse de dizilişleri farklıdır. **En Uzun Ortak Alt Dizi** (Longest Common Subsequence, LCS), iki dizideki elemanların sırasını koruyarak bulunabilen en uzun ortak yapıyı hesaplar. Metin karşılaştırma, DNA analizi, sürüm kontrol sistemleri ve dosya farkı araçlarının temelinde bu fikir bulunur.

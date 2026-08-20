@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - Option
-  - Hata Yönetimi
+  - rust
+  - option
+  - hata yönetimi
 image: /img/null-kabusuna-son-69.png
 ---
 

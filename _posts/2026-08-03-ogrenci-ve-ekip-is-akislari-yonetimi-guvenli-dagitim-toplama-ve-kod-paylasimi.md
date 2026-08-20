@@ -6,7 +6,7 @@ categories:
   - Proje
 tags: 
   - iş akışı yönetimi
-  - Git
+  - git
   - rol tabanlı erişim
 ---
 

@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C
-  - Gömülü Sistemler
-  - Bellek Yönetimi
-  - Mikrodenetleyici
+  - c
+  - gömülü sistemler
+  - bellek yönetimi
+  - mikrodenetleyici
 ---
 
 Gömülü sistemlerde bellek yönetimi, masaüstü programlamadaki konforlu dünyadan biraz farklıdır: burada RAM bazen birkaç kilobayttır, heap kullanmak riskli olabilir ve yanlış boyutlandırılmış bir dizi tüm kontrol döngüsünü sabote edebilir. C dili bu dünyada hâlâ kraldır; çünkü donanıma yakın çalışır, maliyeti düşüktür ve geliştiriciye her byte üzerinde doğrudan kontrol verir.

@@ -7,7 +7,7 @@ categories:
 tags: 
   - graf algoritmaları
   - en kısa yol
-  - Python
+  - python
 ---
 
 Bir şehir haritasında en yakın kafeyi aramak, ağ paketlerini yönlendirmek veya bir oyundaki karaktere güvenli rota çizmek aynı temel soruya dayanır: Bir noktadan diğerine en düşük maliyetle nasıl gideriz? Dijkstra, Bellman-Ford ve Floyd-Warshall bu soruya farklı koşullarda cevap veren üç klasik algoritmadır. Ancak yanlış algoritmayı seçmek, navigasyon uygulamasını macera oyununa çevirebilir!

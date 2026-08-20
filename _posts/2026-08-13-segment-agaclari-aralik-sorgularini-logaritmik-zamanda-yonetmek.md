@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Veri Yapıları
-  - Algoritmalar
-  - Segment Ağacı
+  - veri yapıları
+  - algoritmalar
+  - segment ağacı
 ---
 
 Bir dizide belirli bir aralığın toplamını, minimumunu ya da maksimumunu sıkça hesaplamanız gerekiyorsa, düz bir yaklaşım hızla pahalılaşır. Örneğin her sorguda elemanları tek tek gezmek $O(n)$ sürer; dizi de güncelleniyorsa önceden hesaplanmış önek toplamları bile yetersiz kalır. Segment ağacı (segment tree), bu iki ihtiyacı dengeler: Hem aralık sorgularını hem de noktasal güncellemeleri $O(\log n)$ zamanda gerçekleştirir.

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - LocalStorage
-  - Fetch API
+  - javascript
+  - localstorage
+  - fetch apı
 image: /img/localstorage-ve-fetch-23.png
 ---
 

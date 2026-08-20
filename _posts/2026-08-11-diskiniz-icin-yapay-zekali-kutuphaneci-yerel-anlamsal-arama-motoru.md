@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Python
-  - Yerel Yapay Zeka
-  - Vektör Arama
+  - python
+  - yerel yapay zeka
+  - vektör arama
 image: /img/diskiniz-icin-yapay-55.png
 ---
 

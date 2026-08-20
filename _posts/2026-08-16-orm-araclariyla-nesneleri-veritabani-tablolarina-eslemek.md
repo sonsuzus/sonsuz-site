@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - ORM
-  - Veritabanı
-  - Nesne Yönelimli Programlama
+  - orm
+  - veritabanı
+  - nesne yönelimli programlama
 ---
 
 Uygulama geliştirirken nesnelerle çalışmak doğal gelir: `User`, `Order` ve `Product` gibi sınıflar tanımlar, davranışlarını metotlarda toplarız. Veritabanı ise daha farklı düşünür; satırlar, sütunlar, tablolar ve anahtarlarla konuşur. ORM (Object-Relational Mapping), bu iki dünyanın arasında çalışan tercümandır. Doğru kullanıldığında SQL tekrarını azaltır, veri erişimini okunur kılar ve geliştiricinin iş kurallarına odaklanmasına yardım eder.

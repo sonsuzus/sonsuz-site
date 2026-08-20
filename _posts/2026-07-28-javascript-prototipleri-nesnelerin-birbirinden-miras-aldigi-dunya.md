@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - Prototipler
-  - Kalıtım
+  - javascript
+  - prototipler
+  - kalıtım
 image: /img/javascript-prototipleri-nesnelerin-57.png
 ---
 

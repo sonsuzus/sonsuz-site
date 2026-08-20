@@ -7,8 +7,8 @@ categories:
 tags: 
   - anomali tespiti
   - makine öğrenmesi
-  - Isolation Forest
-  - One-Class SVM
+  - ısolation forest
+  - one-class svm
 ---
 
 Bir kredi kartı işlemi, sunucu metriği veya üretim hattındaki sensör verisi normal davranıştan uzaklaştığında alarm vermek isteriz. Ancak etiketli “sahte” ya da “arıza” örnekleri çoğu zaman azdır. İşte bu noktada denetimsiz ve yarı denetimli anomali tespiti yöntemleri devreye girer. Isolation Forest (IF) ve One-Class SVM (OCSVM), aynı hedefe ulaşırken dünyayı oldukça farklı yorumlayan iki güçlü araçtır.

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - CNN
-  - Görüntü İşleme
-  - Derin Öğrenme
+  - cnn
+  - görüntü işleme
+  - derin öğrenme
 image: /img/cnn-ile-gorsel-14.png
 ---
 

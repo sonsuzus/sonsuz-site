@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Linux
-  - Açık Kaynak
-  - Yönetişim
-  - Demokrasi
-  - Git
+  - linux
+  - açık kaynak
+  - yönetişim
+  - demokrasi
+  - git
 image: /img/linux-cekirdeginin-demokrasisi-76.png
 ---
 

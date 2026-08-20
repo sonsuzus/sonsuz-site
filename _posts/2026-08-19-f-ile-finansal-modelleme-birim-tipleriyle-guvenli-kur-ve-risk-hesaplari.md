@@ -5,7 +5,7 @@ math: true
 categories: 
   - Program
 tags: 
-  - F#
+  - f#
   - finansal modelleme
   - birim tipleri
   - risk yönetimi

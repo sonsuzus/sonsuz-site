@@ -5,11 +5,11 @@ math: true
 categories: 
   - Program
 tags: 
-  - Union-Find
-  - Disjoint Set
-  - Kruskal
-  - Algoritmalar
-  - Python
+  - union-find
+  - disjoint set
+  - kruskal
+  - algoritmalar
+  - python
 ---
 
 Bir sosyal ağdaki arkadaş gruplarını, şehirler arasındaki yol ağını veya bir labirentin hangi odalarının birbirine bağlı olduğunu düşünün. Her sorguda grafiği baştan sona gezmek mümkündür; fakat milyonlarca düğüm ve kenar varken bu yaklaşım pahalılaşır. **Union-Find** ya da diğer adıyla **Disjoint Set Union (DSU)**, birbirinden ayrık kümeleri temsil eder, iki kümeyi birleştirir ve iki elemanın aynı kümede olup olmadığını son derece hızlı biçimde söyler. Kruskal minimum yayılım ağacı algoritmasının motoru da tam olarak budur.

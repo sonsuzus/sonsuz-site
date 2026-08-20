@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Python
-  - Hata Yakalama
-  - İstisnalar
+  - python
+  - hata yakalama
+  - istisnalar
 ---
 
 Bir programın doğru kodlanmış olması, çalışırken asla sorun yaşamayacağı anlamına gelmez. Kullanıcı sayı yerine metin girebilir, beklenen dosya silinmiş olabilir veya uzak sunucu kısa süreliğine yanıt vermeyebilir. Python’daki `try-except` yapısı, bu beklenmedik durumları programı aniden çökertmeden yakalamamızı ve kontrollü biçimde yönetmemizi sağlar.

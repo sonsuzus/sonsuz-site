@@ -7,7 +7,7 @@ categories:
 tags: 
   - satranç motorları
   - yapay zeka
-  - AlphaZero
+  - alphazero
 ---
 
 Bir satranç motorunun tahtaya bakıp “Bu hamle bana mantıklı geliyor” dediğini hayal ederiz; oysa uzun yıllar boyunca makinelerin sezgisi değil, yalnızca yorulmak bilmeyen hesap gücü vardı. Satranç motorlarının Minimax’tan AlphaZero’ya uzanan tarihi, daha fazla pozisyon hesaplamanın ötesinde, “Zekâ nedir?” sorusuna verilen mühendislik cevaplarının da tarihidir.

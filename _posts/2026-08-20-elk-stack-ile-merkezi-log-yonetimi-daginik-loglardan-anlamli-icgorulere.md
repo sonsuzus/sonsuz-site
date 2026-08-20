@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - ELK Stack
-  - Elasticsearch
-  - Logstash
-  - Kibana
-  - DevOps
+  - elk stack
+  - elasticsearch
+  - logstash
+  - kibana
+  - devops
 ---
 
 Dağıtık bir sistemde sorun çözmek, farklı sunuculara bağlanıp milyonlarca satır log arasında iğne aramaya benzeyebilir. ELK Stack; uygulama, konteyner, sunucu ve servis loglarını tek merkezde toplayarak bu karmaşayı aranabilir, filtrelenebilir ve görselleştirilebilir bir veri akışına dönüştürür. Böylece “Kullanıcı neden hata aldı?” sorusu, uzun bir terminal maratonu yerine birkaç saniyelik bir sorguya dönüşür.

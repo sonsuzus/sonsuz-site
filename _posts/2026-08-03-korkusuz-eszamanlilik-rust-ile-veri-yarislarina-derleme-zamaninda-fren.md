@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
+  - rust
   - eşzamanlılık
   - veri güvenliği
 image: /img/korkusuz-eszamanlilik-rust-83.png

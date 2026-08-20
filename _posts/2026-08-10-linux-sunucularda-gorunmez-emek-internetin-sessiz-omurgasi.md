@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Linux
+  - linux
   - teknoloji sosyolojisi
   - sunucu yönetimi
   - altyapı

@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Ansible
-  - DevOps
-  - SSH
-  - Otomasyon
-  - Altyapı
+  - ansible
+  - devops
+  - ssh
+  - otomasyon
+  - altyapı
 ---
 
 Sunucu sayısı arttıkça “şu paketi hepsine kurar mısın?” cümlesi küçük bir ricadan operasyonel bir maratona dönüşür. Ansible, SSH tabanlı ajanssız mimarisiyle bu maratonu tekrarlanabilir playbook’lara çevirir. Tek bir kontrol makinesinden yüzlerce Linux sunucusuna bağlantı kurabilir, yapılandırma uygulayabilir, servisleri yönetebilir ve uygulama dağıtımları gerçekleştirebilirsiniz.

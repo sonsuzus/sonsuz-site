@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Prolog
-  - Mantıksal Programlama
-  - Programlama Paradigmaları
+  - prolog
+  - mantıksal programlama
+  - programlama paradigmaları
 image: /img/prolog-temelleri-ve-42.png
 ---
 

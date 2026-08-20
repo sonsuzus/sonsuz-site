@@ -5,9 +5,9 @@ math: true
 categories: 
   - Program
 tags: 
-  - PHP
-  - RESTful API
-  - Backend
+  - php
+  - restful apı
+  - backend
 image: /img/php-ile-restful-97.png
 ---
 

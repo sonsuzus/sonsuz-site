@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - VHDL
-  - FPGA
-  - Donanım Tasarımı
+  - vhdl
+  - fpga
+  - donanım tasarımı
 ---
 
 VHDL, yazılım yazıyormuş gibi görünen ama aslında fiziksel dijital devreleri tarif eden güçlü bir donanım tanımlama dilidir. Bir FPGA üzerinde VHDL ile sayaçtan görüntü işleme hızlandırıcısına, haberleşme denetleyicisinden makine öğrenmesi çıkarım motoruna kadar özel devreler kurulabilir. Kritik fark şudur: CPU’da yazılan komutlar sırayla yürütülürken, FPGA’ya sentezlenen mantık blokları aynı anda çalışır. Bu yüzden doğru tasarlanmış bir FPGA devresi, belirli bir işi çok düşük gecikmeyle ve yüksek enerji verimliliğiyle gerçekleştirebilir.

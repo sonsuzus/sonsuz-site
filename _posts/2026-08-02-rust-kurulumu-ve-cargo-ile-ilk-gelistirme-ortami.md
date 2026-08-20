@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rust
-  - Cargo
-  - VS Code
+  - rust
+  - cargo
+  - vs code
 image: /img/rust-kurulumu-ve-85.png
 ---
 

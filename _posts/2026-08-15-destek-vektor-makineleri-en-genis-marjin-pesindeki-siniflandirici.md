@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - makine öğrenmesi
-  - SVM
+  - svm
   - sınıflandırma
 ---
 

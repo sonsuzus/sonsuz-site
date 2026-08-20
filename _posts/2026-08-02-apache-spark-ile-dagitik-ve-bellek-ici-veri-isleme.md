@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Apache Spark
-  - Büyük Veri
-  - PySpark
+  - apache spark
+  - büyük veri
+  - pyspark
 ---
 
 Devasa bir veri setini tek bilgisayarda işlemeye çalışmak, taşınma günü bütün kolileri küçük bir otomobile doldurmaya benzer: Bir noktadan sonra ne bagaj kapanır ne de süreç ilerler. Apache Spark, verileri kümeye dağıtarak ve ara sonuçları mümkün olduğunca bellekte tutarak bu sorunu çözer. Böylece haritalama, filtreleme ve indirgeme gibi işlemler, her aşamada diske yazma zorunluluğuna takılmadan çok daha hızlı gerçekleştirilebilir.

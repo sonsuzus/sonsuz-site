@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - Hoisting
-  - Execution Context
+  - javascript
+  - hoisting
+  - execution context
 image: /img/javascriptte-hoisting-ve-18.png
 ---
 

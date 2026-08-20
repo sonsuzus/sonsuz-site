@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SQL
-  - Davranışsal Analiz
-  - Kişiselleştirme
+  - sql
+  - davranışsal analiz
+  - kişiselleştirme
 image: /img/sql-ile-davranissal-83.png
 ---
 

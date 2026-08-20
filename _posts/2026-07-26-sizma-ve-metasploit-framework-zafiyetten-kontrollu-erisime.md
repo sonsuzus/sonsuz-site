@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Metasploit
-  - Sızma Testi
-  - Siber Güvenlik
+  - metasploit
+  - sızma testi
+  - siber güvenlik
 image: /img/sizma-ve-metasploit-44.png
 ---
 

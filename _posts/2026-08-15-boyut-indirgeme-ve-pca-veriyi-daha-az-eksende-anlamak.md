@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - makine öğrenmesi
-  - PCA
+  - pca
   - boyut indirgeme
 ---
 

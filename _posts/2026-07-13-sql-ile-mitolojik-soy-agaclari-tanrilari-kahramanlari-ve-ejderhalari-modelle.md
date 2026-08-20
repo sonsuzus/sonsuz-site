@@ -5,10 +5,10 @@ math: true
 categories: 
   - Proje
 tags: 
-  - SQL
+  - sql
   - veritabanı tasarımı
   - mitoloji
-  - recursive CTE
+  - recursive cte
 image: /img/sql-ile-mitolojik-71.png
 ---
 

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JavaScript
-  - Scope
-  - Değişkenler
+  - javascript
+  - scope
+  - değişkenler
 image: /img/modern-javascriptte-var-27.png
 ---
 

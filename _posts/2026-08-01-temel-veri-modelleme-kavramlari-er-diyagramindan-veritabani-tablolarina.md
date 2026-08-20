@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - veri modelleme
-  - ER diyagramı
+  - er diyagramı
   - veritabanı tasarımı
 ---
 

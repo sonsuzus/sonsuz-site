@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Ada
-  - Gömülü Sistemler
-  - Havacılık
-  - Güvenlik Kritik Yazılım
+  - ada
+  - gömülü sistemler
+  - havacılık
+  - güvenlik kritik yazılım
 ---
 
 Bir uçakta yazılımın küçük bir hatası yalnızca uygulamanın çökmesi anlamına gelmez; yanlış sensör verisi, geciken bir kontrol komutu veya öngörülemez bellek davranışı ciddi sonuçlar doğurabilir. Ada, tam bu nedenle tasarlanmış bir programlama dilidir: derleme zamanında hataları yakalamayı, eşzamanlı görevleri disiplinli biçimde yönetmeyi ve yazılımın davranışını denetlenebilir hâle getirmeyi hedefler. Havacılık, uzay, demiryolu ve savunma gibi alanlarda Ada; “önce doğru çalışsın, sonra hızlı olsun” yaklaşımının güçlü bir temsilcisidir.

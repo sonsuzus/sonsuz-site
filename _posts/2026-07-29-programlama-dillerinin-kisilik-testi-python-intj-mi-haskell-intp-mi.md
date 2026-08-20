@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - programlama dilleri
-  - MBTI
+  - mbtı
   - dil tasarımı
 image: /img/programlama-dillerinin-kisilik-42.png
 ---

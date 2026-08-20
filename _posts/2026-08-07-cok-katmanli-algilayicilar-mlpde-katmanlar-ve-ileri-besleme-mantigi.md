@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - yapay sinir ağları
-  - MLP
+  - mlp
   - derin öğrenme
 ---
 

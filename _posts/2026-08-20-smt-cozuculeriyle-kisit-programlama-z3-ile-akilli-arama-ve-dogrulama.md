@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SMT
-  - Z3
-  - Kısıt Programlama
+  - smt
+  - z3
+  - kısıt programlama
 ---
 
 Karmaşık bir planı elle hazırlamak, binlerce olasılık içinden doğru kombinasyonu gözle seçmeye benzer: kısa süre sonra kahve biter, sabır biter, hata payı ise bitmez. SMT (Satisfiability Modulo Theories) çözücüleri bu noktada devreye girer. Z3 gibi araçlar, mantıksal kuralları ve matematiksel ilişkileri modele dönüştürerek bir problemin çözümü olup olmadığını otomatik biçimde araştırır; uygun olduğunda da somut bir çözüm üretir.

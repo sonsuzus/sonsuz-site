@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - TypeScript
+  - typescript
   - tsconfig
-  - JavaScript
+  - javascript
 image: /img/tsconfigjson-rehberi-typescript-56.png
 ---
 

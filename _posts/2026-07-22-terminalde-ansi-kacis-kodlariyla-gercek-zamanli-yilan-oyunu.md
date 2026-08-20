@@ -5,7 +5,7 @@ math: true
 categories: 
   - Proje
 tags: 
-  - ANSI
+  - ansı
   - terminal
   - python
   - oyun-programlama

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - C
-  - C++
-  - Sistem Programlama
+  - c
+  - c++
+  - sistem programlama
 image: /img/sistem-programlama-felsefesi-49.png
 ---
 
