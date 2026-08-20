@@ -8,6 +8,7 @@ tags:
   - kombinatorik
   - modüler aritmetik
   - olimpiyat soruları
+image: /img/kombinatorik-olimpiyat-sorularinda-44.png
 ---
 
 Kombinatorik olimpiyat sorularında ilk bakışta masum görünen $n!$, $\binom{n}{k}$ ve permütasyon ifadeleri, $n$ büyüdükçe devasa sayılara dönüşür. Neyse ki çoğu sorunun gerçekten istediği şey sayının tamamı değil, belirli bir sayıya bölümünden kalanıdır. İşte modüler aritmetik burada sahneye çıkar: Büyük sayıları yazmak yerine kalıntıları yönetir, akıllı sadeleştirmelerle imkânsız görünen hesapları birkaç satıra indirir.
@@ -32,6 +33,9 @@ $$
 | $100! \bmod 97$ | 158 basamaklı sayıyı üretmek | $97 \mid 100!$ olduğu için $0$ |
 | $2^{1000} \bmod 7$ | Bin kez çarpma | Kuvvet döngüsünü kullanmak |
 | $\binom{1000}{500} \bmod p$ | Dev kesir hesaplamak | Faktöriyel ve ters eleman kullanmak |
+
+![kombinatorik-olimpiyat-sorularinda-44](/img/kombinatorik-olimpiyat-sorularinda-44.svg)
+
 
 ## Permütasyonlarda döngüler ve Fermat'nın küçük teoremi
 

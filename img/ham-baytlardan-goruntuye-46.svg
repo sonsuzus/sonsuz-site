@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="bmpGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#c8ddf5"/>
+    </linearGradient>
+    <linearGradient id="pngGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff4dd"/>
+      <stop offset="100%" stop-color="#c8e8ce"/>
+    </linearGradient>
+    <linearGradient id="jpgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d5"/>
+      <stop offset="100%" stop-color="#f6d7a5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#64809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#64809a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="55" r="66" fill="#dceefa" opacity="0.46"/>
+  <circle cx="583" cy="276" r="84" fill="#dff0d9" opacity="0.5"/>
+
+  <text x="320" y="28" text-anchor="middle" fill="#4d6578" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Ham bayttan görüntüye</text>
+
+  <path d="M205 158 C229 158 236 158 258 158" fill="none" stroke="#8ba9c2" stroke-width="2.2"/>
+  <polygon points="258,158 250,153 250,163" fill="#8ba9c2"/>
+
+  <path d="M383 139 C414 112 425 94 447 91" fill="none" stroke="#80aa88" stroke-width="2.2"/>
+  <polygon points="447,91 438,89 442,98" fill="#80aa88"/>
+
+  <path d="M383 177 C412 205 425 224 447 227" fill="none" stroke="#d09b58" stroke-width="2.2"/>
+  <polygon points="447,227 442,220 438,229" fill="#d09b58"/>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="103" width="173" height="110" rx="20" fill="url(#bmpGrad)" stroke="#b7d0e8"/>
+  </g>
+  <text x="55" y="130" fill="#365a76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">BMP DOSYASI</text>
+  <rect x="54" y="143" width="128" height="16" rx="8" fill="#ffffff" opacity="0.72"/>
+  <text x="64" y="155" fill="#587187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Başlık · bilgi</text>
+  <rect x="54" y="166" width="128" height="16" rx="8" fill="#ffffff" opacity="0.72"/>
+  <text x="64" y="178" fill="#587187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">BGR piksel dizisi</text>
+  <rect x="54" y="189" width="128" height="16" rx="8" fill="#ffffff" opacity="0.72"/>
+  <text x="64" y="201" fill="#587187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Satır dolgusu</text>
+
+  <g filter="url(#shadow)">
+    <rect x="258" y="105" width="125" height="106" rx="22" fill="#eef5fb" stroke="#c5dbea"/>
+  </g>
+  <circle cx="320" cy="135" r="20" fill="#d3e6f5"/>
+  <path d="M309 135 L317 143 L333 125" fill="none" stroke="#4f87aa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="169" text-anchor="middle" fill="#365a76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">AYRIŞTIR</text>
+  <text x="320" y="190" text-anchor="middle" fill="#637b8d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Bayt kuralları</text>
+
+  <g filter="url(#shadow)">
+    <rect x="447" y="48" width="158" height="91" rx="19" fill="url(#pngGrad)" stroke="#b8dbbd"/>
+  </g>
+  <text x="470" y="76" fill="#3f7351" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">PNG</text>
+  <rect x="469" y="87" width="112" height="17" rx="8" fill="#ffffff" opacity="0.68"/>
+  <text x="480" y="100" fill="#587967" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Filtre tahmini</text>
+  <rect x="469" y="111" width="112" height="17" rx="8" fill="#ffffff" opacity="0.68"/>
+  <text x="480" y="124" fill="#587967" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">DEFLATE · kayıpsız</text>
+
+  <g filter="url(#shadow)">
+    <rect x="447" y="181" width="158" height="91" rx="19" fill="url(#jpgGrad)" stroke="#ecd09e"/>
+  </g>
+  <text x="470" y="209" fill="#87602f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">JPEG</text>
+  <rect x="469" y="220" width="112" height="17" rx="8" fill="#ffffff" opacity="0.68"/>
+  <text x="480" y="233" fill="#836c4a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">8×8 DCT blokları</text>
+  <rect x="469" y="244" width="112" height="17" rx="8" fill="#ffffff" opacity="0.68"/>
+  <text x="480" y="257" fill="#836c4a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kuantizasyon · kayıplı</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="219" y="239" width="201" height="43" rx="15" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <path d="M241 261 h18" stroke="#7196b3" stroke-width="2"/>
+  <polygon points="260,261 254,257 254,265" fill="#7196b3"/>
+  <text x="272" y="265" fill="#526d80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Piksel → tahmin → dönüşüm → kodlama</text>
+</svg>

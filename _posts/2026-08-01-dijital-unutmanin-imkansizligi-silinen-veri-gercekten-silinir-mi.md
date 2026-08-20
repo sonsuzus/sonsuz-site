@@ -8,6 +8,7 @@ tags:
   - veri kalıcılığı
   - dijital hafıza
   - veri güvenliği
+image: /img/dijital-unutmanin-imkansizligi-77.png
 ---
 
 Bir fotoğrafı sildiğimizde onun yok olduğuna inanmak isteriz. Çöp kutusu boşalır, dosya ekrandan kaybolur ve dijital dünya bize unutmuş gibi görünür. Oysa bilgisayarların “unutması”, insan hafızasındaki unutmaya pek benzemez. Çoğu zaman veri ortadan kaldırılmaz; yalnızca ona giden yol tabelası sökülür. Bu teknik ayrıntı, dijital çağın en ilginç felsefi sorularından birini doğurur: Hatırlanabilecek bir şey gerçekten unutulmuş sayılabilir mi?
@@ -30,6 +31,9 @@ Burada $P(B)$, veri bloklarının henüz üzerine yazılmamış olma olasılığ
 | Çöp kutusunu boşaltmak | Kalıcı silme hissi oluşur | Bloklar hâlâ durabilir |
 | Üzerine yazmak | Eski veri görünmez | Manyetik disklerde kurtarma zorlaşır |
 | Kriptografik silme | Anahtar yok edilir | Şifreli veri pratikte anlamsızlaşır |
+
+![dijital-unutmanin-imkansizligi-77](/img/dijital-unutmanin-imkansizligi-77.svg)
+
 
 ## İnsan hafızası ve dijital hafıza
 

@@ -8,9 +8,13 @@ tags:
   - COBOL
   - miras sistemler
   - bankacılık teknolojileri
+image: /img/neden-eski-cobol-51.png
 ---
 
 Bir banka kartıyla kahve aldığınızda, işleminizin arkasında sizden, baristadan ve muhtemelen kahve makinesinden daha yaşlı bir kod çalışıyor olabilir. 1959’da geliştirilen COBOL, modern görünmemesine rağmen hesap bakiyelerinden maaş ödemelerine kadar kritik finansal süreçleri yönetmeye devam ediyor. Bu durum yalnızca teknik bir nostalji değil; toplumun görünmez biçimde eski yazılımlara bağlandığını gösteren devasa bir mühendislik hikâyesidir.
+
+
+![neden-eski-cobol-51](/img/neden-eski-cobol-51.svg)
 
 ``
 

@@ -8,7 +8,11 @@ tags:
   - bilgisayar görüşü
   - artırılmış gerçeklik
   - opencv
+image: /img/bilgisayar-gorusuyle-gercek-93.png
 ---
+
+![bilgisayar-gorusuyle-gercek-93](/img/bilgisayar-gorusuyle-gercek-93.svg)
+
 
 Bir kameraya bakıp ekranda gözlüğü, şapkayı veya komik bir bıyığı yüzünüze kusursuzca oturtmak sihir gibi görünür. Aslında bu etki; yüz tespiti, yüz işaret noktaları (landmark), geometrik dönüşümler ve alfa harmanlama işlemlerinin hızlı bir orkestrasyonudur. Bu projede Python, OpenCV ve MediaPipe kullanarak kameradaki yüzü izleyen, üzerine gerçek zamanlı sanal aksesuar yerleştiren bir artırılmış gerçeklik filtresinin mantığını kuracağız.
 

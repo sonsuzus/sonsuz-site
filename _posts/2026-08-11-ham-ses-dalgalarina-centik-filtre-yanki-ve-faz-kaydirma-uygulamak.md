@@ -8,9 +8,13 @@ tags:
   - sinyal işleme
   - dijital ses
   - python
+image: /img/ham-ses-dalgalarina-36.png
 ---
 
 Ham bir ses kaydı, zaman içinde ölçülmüş örneklerden oluşan bir dizidir: $x[n]$. Bu diziyi yalnızca dinlemek yerine matematiksel olarak dönüştürmek; örneğin elektrik şebekesi uğultusunu temizlemek, mekânsal yankı eklemek veya stereo algısını değiştirmek mümkündür. Çentik filtre, yankı ve faz kaydırma; sinyal işlemenin frekans, zaman ve faz eksenlerinde nasıl çalıştığını gösteren üç güçlü efekttir.
+
+
+![ham-ses-dalgalarina-36](/img/ham-ses-dalgalarina-36.svg)
 
 ``
 

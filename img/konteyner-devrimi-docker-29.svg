@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="kernel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#758bc1"/>
+      <stop offset="100%" stop-color="#6079ae"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#4d6680" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#4d6680" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="558" cy="46" r="78" fill="#dceee8" opacity="0.52"/>
+  <circle cx="70" cy="286" r="88" fill="#dce9fa" opacity="0.55"/>
+
+  <text x="28" y="30" fill="#40556d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Docker: Paylaşılan Çekirdek Modeli</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="49" width="135" height="215" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="46" y="75" fill="#52687c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">İmaj Katmanları</text>
+
+  <g filter="url(#soft)">
+    <rect x="45" y="91" width="101" height="30" rx="9" fill="#d8e6fb"/>
+    <rect x="45" y="126" width="101" height="30" rx="9" fill="#d7f0e8"/>
+    <rect x="45" y="161" width="101" height="30" rx="9" fill="#f9e6c9"/>
+    <rect x="45" y="196" width="101" height="30" rx="9" fill="#eadcf7"/>
+  </g>
+  <text x="61" y="111" fill="#38546e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Uygulama</text>
+  <text x="59" y="146" fill="#386654" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Bağımlılık</text>
+  <text x="65" y="181" fill="#7a5b2c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Çalışma</text>
+  <text x="66" y="216" fill="#63477d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Temel</text>
+
+  <path d="M174 153 L199 153" stroke="#7890a7" stroke-width="2" fill="none"/>
+  <polygon points="199,153 191,148 191,158" fill="#7890a7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="207" y="49" width="294" height="177" rx="20" fill="#eef5fb" stroke="#d6e4ef"/>
+  </g>
+  <text x="225" y="75" fill="#405b72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Konteyner Çalışma Alanı</text>
+
+  <g filter="url(#soft)">
+    <rect x="226" y="91" width="76" height="108" rx="14" fill="#ffffff"/>
+    <rect x="316" y="91" width="76" height="108" rx="14" fill="#ffffff"/>
+    <rect x="406" y="91" width="76" height="108" rx="14" fill="#ffffff"/>
+  </g>
+
+  <rect x="237" y="104" width="54" height="25" rx="7" fill="#cce7fa"/>
+  <rect x="237" y="136" width="54" height="22" rx="7" fill="#d9f0e4"/>
+  <rect x="237" y="165" width="54" height="22" rx="7" fill="#f5e4be"/>
+  <text x="244" y="121" fill="#355c78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Web</text>
+  <text x="242" y="151" fill="#3d6b54" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Alan</text>
+  <text x="243" y="180" fill="#745a31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Süreç</text>
+
+  <rect x="327" y="104" width="54" height="25" rx="7" fill="#d9d9f4"/>
+  <rect x="327" y="136" width="54" height="22" rx="7" fill="#d9f0e4"/>
+  <rect x="327" y="165" width="54" height="22" rx="7" fill="#f5e4be"/>
+  <text x="334" y="121" fill="#50527a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">API</text>
+  <text x="332" y="151" fill="#3d6b54" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Alan</text>
+  <text x="333" y="180" fill="#745a31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Süreç</text>
+
+  <rect x="417" y="104" width="54" height="25" rx="7" fill="#f4d7d5"/>
+  <rect x="417" y="136" width="54" height="22" rx="7" fill="#d9f0e4"/>
+  <rect x="417" y="165" width="54" height="22" rx="7" fill="#f5e4be"/>
+  <text x="423" y="121" fill="#835050" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İşçi</text>
+  <text x="422" y="151" fill="#3d6b54" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Alan</text>
+  <text x="423" y="180" fill="#745a31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Süreç</text>
+
+  <g filter="url(#shadow)">
+    <rect x="207" y="240" width="294" height="43" rx="14" fill="url(#kernel)"/>
+  </g>
+  <text x="287" y="266" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Paylaşılan Linux Çekirdeği</text>
+
+  <path d="M264 203 L264 233" stroke="#6d88a3" stroke-width="2" fill="none"/>
+  <polygon points="264,233 259,225 269,225" fill="#6d88a3"/>
+  <path d="M354 203 L354 233" stroke="#6d88a3" stroke-width="2" fill="none"/>
+  <polygon points="354,233 349,225 359,225" fill="#6d88a3"/>
+  <path d="M444 203 L444 233" stroke="#6d88a3" stroke-width="2" fill="none"/>
+  <polygon points="444,233 439,225 449,225" fill="#6d88a3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="519" y="75" width="94" height="72" rx="16" fill="#fffdf9"/>
+    <rect x="519" y="162" width="94" height="72" rx="16" fill="#fffdf9"/>
+  </g>
+  <circle cx="539" cy="100" r="10" fill="#cce7fa"/>
+  <path d="M535 100 L538 103 L544 96" stroke="#48718c" stroke-width="2" fill="none"/>
+  <text x="555" y="104" fill="#4d6275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Namespace</text>
+  <text x="534" y="127" fill="#6b7d8d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İzolasyon</text>
+
+  <circle cx="539" cy="187" r="10" fill="#f7dfb5"/>
+  <path d="M534 190 L539 184 L544 190" stroke="#87652c" stroke-width="2" fill="none"/>
+  <text x="555" y="191" fill="#4d6275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">cgroup</text>
+  <text x="533" y="214" fill="#6b7d8d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kaynak kotası</text>
+
+  <path d="M502 112 L512 112" stroke="#7890a7" stroke-width="2" fill="none"/>
+  <polygon points="512,112 504,107 504,117" fill="#7890a7"/>
+  <path d="M502 198 L512 198" stroke="#7890a7" stroke-width="2" fill="none"/>
+  <polygon points="512,198 504,193 504,203" fill="#7890a7"/>
+
+  <text x="28" y="298" fill="#708397" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hafif • Taşınabilir • Hızlı başlatma</text>
+</svg>

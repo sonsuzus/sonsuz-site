@@ -9,6 +9,7 @@ tags:
   - meritokrasi
   - yazılım toplulukları
   - sosyoloji
+image: /img/acik-kaynakta-statu-52.png
 ---
 
 Açık kaynak dünyası ilk bakışta çekici bir vaatte bulunur: Kodun iyiyse, katkın görünürse ve problemi çözüyorsan saygıyı hak edersin. Bu anlatı, unvanlardan çok emeğin konuştuğu bir meritokrasi hayali kurar. Fakat bir depodaki commit sayısı, bir kişinin topluluk içindeki etkisini veya saygınlığını gerçekten ölçer mi? Sosyolojik açıdan yanıt, rahatsız edici derecede karmaşıktır.
@@ -54,3 +55,6 @@ Bu kod teknik bir “gerçek statü” hesabı değildir; yalnızca ağırlıkla
 | Çok boyutlu katkı modeli | Daha adil bir tablo sunar | Değerlendirmesi zaman ve özen ister |
 
 Sağlıklı bir açık kaynak topluluğu, commit sayılarını tamamen çöpe atmak zorunda değildir. Ancak onları statünün nihai kanıtı değil, bağlam isteyen bir sinyal olarak görmelidir. İyi bir proje; kod yazmayı, hata raporlamayı, inceleme yapmayı, dokümantasyonu, çeviriyi ve nazik iletişimi birlikte ödüllendirir. Gerçek meritokrasi, en çok görünenin değil, topluluğu gerçekten ileri taşıyan emeğin tanınmasıyla başlar.
+
+![acik-kaynakta-statu-52](/img/acik-kaynakta-statu-52.svg)
+

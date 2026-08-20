@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2d8ff"/>
+      <stop offset="100%" stop-color="#cfc2f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7591a0" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="159" r="115" fill="#dfeeff" opacity="0.38"/>
+  <circle cx="320" cy="159" r="88" fill="none" stroke="#b7cbe3" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7"/>
+
+  <!-- flow lines -->
+  <path d="M165 101 C195 106 207 120 230 133" fill="none" stroke="#7994b4" stroke-width="2"/>
+  <polygon points="230,133 220,127 222,138" fill="#7994b4"/>
+  <path d="M170 220 C195 211 211 199 230 185" fill="none" stroke="#7994b4" stroke-width="2"/>
+  <polygon points="230,185 220,181 226,191" fill="#7994b4"/>
+  <path d="M404 134 C427 119 442 105 467 98" fill="none" stroke="#7994b4" stroke-width="2"/>
+  <polygon points="467,98 457,96 461,106" fill="#7994b4"/>
+  <path d="M404 184 C430 198 446 211 467 221" fill="none" stroke="#7994b4" stroke-width="2"/>
+  <polygon points="467,221 458,213 454,223" fill="#7994b4"/>
+  <path d="M320 215 L320 253" fill="none" stroke="#7994b4" stroke-width="2"/>
+  <polygon points="320,253 315,243 325,243" fill="#7994b4"/>
+
+  <!-- contributors -->
+  <g filter="url(#softShadow)">
+    <rect x="36" y="63" width="130" height="76" rx="18" fill="#d8f2ee"/>
+    <circle cx="63" cy="93" r="13" fill="#7bbab2"/>
+    <circle cx="63" cy="89" r="5" fill="#ffffff"/>
+    <path d="M54 103 Q63 95 72 103" fill="#ffffff"/>
+    <text x="84" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#244958" font-weight="600">Katkıcılar</text>
+    <text x="84" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55747d">Yama önerisi</text>
+  </g>
+
+  <!-- email discussion -->
+  <g filter="url(#softShadow)">
+    <rect x="36" y="181" width="134" height="76" rx="18" fill="#fff0cf"/>
+    <rect x="55" y="204" width="29" height="21" rx="4" fill="#e9b85f"/>
+    <path d="M56 207 L69.5 217 L83 207" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <text x="96" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59482a" font-weight="600">E-posta</text>
+    <text x="96" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6841">Müzakere</text>
+  </g>
+
+  <!-- center -->
+  <g filter="url(#shadow)">
+    <rect x="230" y="101" width="176" height="116" rx="27" fill="url(#core)"/>
+    <circle cx="318" cy="132" r="22" fill="#ffffff" opacity="0.72"/>
+    <path d="M307 132 L315 140 L331 121" fill="none" stroke="#7564aa" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="318" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#433766" font-weight="700">Teknik İnceleme</text>
+    <text x="318" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655982">Kalite • Test • Uyum</text>
+  </g>
+
+  <!-- maintainer -->
+  <g filter="url(#softShadow)">
+    <rect x="467" y="60" width="137" height="78" rx="18" fill="#dce9ff"/>
+    <path d="M491 101 L503 89 L515 101 L503 113 Z" fill="#7197ce"/>
+    <path d="M503 93 L503 109 M497 101 L509 101" stroke="#ffffff" stroke-width="2"/>
+    <text x="529" y="90" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#304b70" font-weight="600">Bakımcı</text>
+    <text x="529" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59728f">Yetki devri</text>
+  </g>
+
+  <!-- upstream -->
+  <g filter="url(#softShadow)">
+    <rect x="467" y="184" width="137" height="76" rx="18" fill="#dff1d4"/>
+    <path d="M491 208 h23 v22 h-23 z" fill="#7fae73"/>
+    <path d="M496 215 h13 M496 220 h13" stroke="#ffffff" stroke-width="2"/>
+    <text x="529" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345a38" font-weight="600">Üst Düzey</text>
+    <text x="529" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587a58">Birleştirme</text>
+  </g>
+
+  <!-- git ledger -->
+  <g filter="url(#softShadow)">
+    <rect x="223" y="253" width="194" height="49" rx="16" fill="#f7dde4"/>
+    <circle cx="252" cy="277" r="13" fill="#d78099"/>
+    <path d="M247 277 h10 M252 272 v10" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="275" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e394a" font-weight="700">Git Kaydı</text>
+    <text x="275" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c5a69">İzlenebilir karar</text>
+  </g>
+
+  <!-- quality formula -->
+  <g opacity="0.9">
+    <rect x="482" y="274" width="122" height="28" rx="12" fill="#ffffff" filter="url(#softShadow)"/>
+    <text x="543" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526777" font-weight="600">K = U × İ × Ş</text>
+  </g>
+
+  <text x="35" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7c" font-weight="700">Açık Kaynak Yönetişimi</text>
+  <path d="M35 42 H184" stroke="#a7c4d3" stroke-width="2" stroke-linecap="round"/>
+</svg>

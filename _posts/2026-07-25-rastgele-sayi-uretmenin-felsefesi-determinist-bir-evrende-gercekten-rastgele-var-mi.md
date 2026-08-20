@@ -9,6 +9,7 @@ tags:
   - algoritmalar
   - felsefe
   - kriptografi
+image: /img/rastgele-sayi-uretmenin-44.png
 ---
 
 Bilgisayarların zar atabildiğini düşünmek tatlı bir yanılsamadır; çünkü işlemcinin içinde minik bir kumarbaz yoktur. Bir programın ürettiği sayı çoğu zaman, sadece iyi gizlenmiş bir düzenin sonucudur. İşte bu yüzden rastgele sayı üretimi, hem yazılım mühendisliğinin pratik bir konusu hem de ‘evren gerçekten öngörülebilir mi?’ sorusuna açılan küçük ama derin bir kapıdır.
@@ -85,3 +86,6 @@ Ama kuantum mekaniği sahneye çıkınca işler karışır. Bazı yorumlara gör
 Programcı için rastgele sayı üretimi, test verisi hazırlamak, oyun tasarlamak, simülasyon yapmak ve güvenlik sağlamak için vazgeçilmezdir. Filozof içinse aynı konu, özgür irade ve determinizm tartışmasının dijital bir modelidir. Bilgisayarların ürettiği çoğu rastgelelik aslında sözde rastgeleliktir; ama yeterince iyi tasarlandığında pratikte harika çalışır.
 
 Belki de en güzel cevap şudur: Bilgisayar rastgeleliği üretmez, rastgelelik hissini mühendislik eder. Ve bazen, yazılım dünyasında ihtiyacımız olan şey tam olarak budur.
+
+![rastgele-sayi-uretmenin-44](/img/rastgele-sayi-uretmenin-44.svg)
+

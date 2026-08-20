@@ -10,6 +10,7 @@ tags:
   - nix
   - bağımlılık yönetimi
   - linux
+image: /img/apttan-nixe-paket-71.png
 ---
 
 Bir yazılımı çalıştırmak eskiden “dosyayı kopyala ve aç” kadar basitti. Sonra kütüphaneler, sürüm beklentileri, derleyiciler ve işletim sistemi paketleri sahneye çıktı. Bugün bir projenin çalışması için yalnızca kodun değil, kodun konuştuğu bütün çevrenin de doğru biçimde kurulması gerekir. Paket yöneticilerinin tarihi, aslında bu görünmez bağımlılık ağını evcilleştirme girişimlerinin kısa ama oldukça hareketli tarihidir.
@@ -86,3 +87,6 @@ pkgs.mkShell {
 Bu geliştirme kabuğu, belirli Python sürümünü ve `requests` paketini tanımlar. `nix-shell` veya modern akışta `nix develop`, bu çevreyi projeye özel biçimde kurar. Nix sihirli değildir: paketleme dili, önbellek mantığı ve “saflık” kavramı ilk başta zorlayıcıdır. Buna rağmen bağımlılık grafını açık, izole ve yeniden üretilebilir hale getirmesi; CI sistemleri, ekip çalışması ve uzun ömürlü projeler için güçlü bir karşılıktır.
 
 Paket yöneticilerinin evrimi, daha çok paket indirmekten çok daha fazlasıdır. Amaç, “benim bilgisayarımda çalışıyor” cümlesini ölçülebilir bir yapı tarifine dönüştürmektir.
+
+![apttan-nixe-paket-71](/img/apttan-nixe-paket-71.svg)
+

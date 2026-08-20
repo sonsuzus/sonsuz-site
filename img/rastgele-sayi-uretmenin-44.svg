@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#d1e8f0"/>
+    </linearGradient>
+    <linearGradient id="prngGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f0ff"/>
+      <stop offset="100%" stop-color="#cce0ff"/>
+    </linearGradient>
+    <linearGradient id="entropyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="seedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="philoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5f5"/>
+      <stop offset="100%" stop-color="#e1bee7"/>
+    </linearGradient>
+    <linearGradient id="cryptoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffebee"/>
+      <stop offset="100%" stop-color="#ffcdd2"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Rastgele Sayı Üretiminin Felsefesi</text>
+
+  <!-- Merkez: Rastgelelik Kavramı -->
+  <ellipse cx="320" cy="155" rx="72" ry="42" fill="url(#centerGrad)" stroke="#90caf9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a237e">Rastgelelik</text>
+  <text x="320" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#455a64">Belirsizlik mi?</text>
+
+  <!-- Sol Üst: PRNG -->
+  <rect x="40" y="55" width="120" height="52" rx="10" fill="url(#prngGrad)" stroke="#64b5f6" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="100" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#0d47a1">Sözde RNG</text>
+  <text x="100" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#546e7a">LCG algoritması</text>
+
+  <!-- Sol Alt: Seed -->
+  <rect x="40" y="135" width="120" height="52" rx="10" fill="url(#seedGrad)" stroke="#ffb74d" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="100" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Seed Değeri</text>
+  <text x="100" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6d4c41">Başlangıç koşulu</text>
+
+  <!-- Sağ Üst: Entropi -->
+  <rect x="480" y="55" width="120" height="52" rx="10" fill="url(#entropyGrad)" stroke="#81c784" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="540" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">Entropi</text>
+  <text x="540" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#33691e">Fiziksel kaos</text>
+
+  <!-- Sağ Alt: Kriptografi -->
+  <rect x="480" y="135" width="120" height="52" rx="10" fill="url(#cryptoGrad)" stroke="#e57373" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="540" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#b71c1c">Kriptografi</text>
+  <text x="540" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4e342e">Güvenlik ihtiyacı</text>
+
+  <!-- Alt Orta: Felsefi Boyut -->
+  <rect x="230" y="245" width="180" height="50" rx="10" fill="url(#philoGrad)" stroke="#ba68c8" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="320" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a148c">Felsefi Boyut</text>
+  <text x="320" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a1b9a">Determinizm ve özgür irade</text>
+
+  <!-- Oklar: PRNG -> Merkez -->
+  <path d="M160,81 L248,125" stroke="#64b5f6" stroke-width="1.8" fill="none"/>
+  <polygon points="248,125 238,122 243,132" fill="#64b5f6"/>
+
+  <!-- Oklar: Seed -> Merkez -->
+  <path d="M160,161 L248,155" stroke="#ffb74d" stroke-width="1.8" fill="none"/>
+  <polygon points="248,155 238,151 239,161" fill="#ffb74d"/>
+
+  <!-- Oklar: Entropi -> Merkez -->
+  <path d="M480,81 L392,125" stroke="#81c784" stroke-width="1.8" fill="none"/>
+  <polygon points="392,125 400,132 397,122" fill="#81c784"/>
+
+  <!-- Oklar: Kriptografi -> Merkez -->
+  <path d="M480,161 L392,155" stroke="#e57373" stroke-width="1.8" fill="none"/>
+  <polygon points="392,155 401,159 400,149" fill="#e57373"/>
+
+  <!-- Oklar: Merkez -> Felsefe -->
+  <path d="M320,197 L320,245" stroke="#ba68c8" stroke-width="1.8" fill="none"/>
+  <polygon points="320,245 315,235 325,235" fill="#ba68c8"/>
+
+  <!-- Yan not: LCG formülü -->
+  <text x="320" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#78909c" font-style="italic">Xₙ₊₁ = (aXₙ + c) mod m</text>
+
+  <!-- Küçük etiketler -->
+  <text x="100" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#90a4ae">deterministik</text>
+  <text x="540" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#90a4ae">fiziksel kaynak</text>
+</svg>

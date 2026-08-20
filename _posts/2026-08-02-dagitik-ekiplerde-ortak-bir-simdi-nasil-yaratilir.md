@@ -8,6 +8,7 @@ tags:
   - uzaktan çalışma
   - dağıtık ekipler
   - saat dilimleri
+image: /img/dagitik-ekiplerde-ortak-67.png
 ---
 
 Uzaktan çalışma ofisi ortadan kaldırırken zamanı da görünmez biçimde yeniden tasarladı. İstanbul’daki bir geliştirici güne başlarken San Francisco’daki ekip arkadaşı uyuyor, Tokyo’daki tasarımcı ise bilgisayarını kapatıyor olabilir. Böyle bir ekipte “hemen konuşalım” masum bir öneri değil, coğrafi bir ayrıcalıktır. Ortak bir “şimdi” yaratmak, herkesi aynı anda çevrim içi tutmak değil; eşzamanlı ve eşzamansız çalışmayı bilinçli biçimde dengelemektir.
@@ -28,6 +29,9 @@ Dağıtık ekiplerde zamanın üç farklı biçimi vardır:
 | Kronolojik zaman | Takvim ve saatle ölçülen zaman | Sprint pazartesi başlar |
 | Biyolojik zaman | Bedenin uyku ve enerji ritmi | Gece toplantısında odak düşer |
 | Sosyal zaman | Aile ve toplum düzeni | Akşam yemeği, okul çıkışı |
+
+![dagitik-ekiplerde-ortak-67](/img/dagitik-ekiplerde-ortak-67.svg)
+
 
 İyi bir çalışma düzeni yalnızca kronolojik zamanı optimize etmez; diğer iki katmanı da hesaba katar.
 

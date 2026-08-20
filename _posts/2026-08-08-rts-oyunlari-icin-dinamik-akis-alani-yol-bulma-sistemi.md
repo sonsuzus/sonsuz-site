@@ -8,7 +8,11 @@ tags:
   - oyun geliştirme
   - akış alanı
   - yol bulma
+image: /img/rts-oyunlari-icin-11.png
 ---
+
+![rts-oyunlari-icin-11](/img/rts-oyunlari-icin-11.svg)
+
 
 Yüzlerce askerin aynı hedefe koştuğu bir gerçek zamanlı strateji oyununda her birim için ayrı ayrı A* çalıştırmak, işlemciyi kısa sürede savaş alanına çevirebilir. Akış alanı yol bulma, tek bir ortak yön haritası üreterek bütün birimlerin hedefe akmasını sağlar. Üstelik hareketli engeller ve değişen arazi maliyetleri hesaba katıldığında sistem hem performanslı hem de oldukça doğal sonuçlar verir.
 ``

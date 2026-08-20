@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="mainCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5efff"/>
+      <stop offset="100%" stop-color="#d9f3eb"/>
+    </linearGradient>
+    <linearGradient id="stepCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f9ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7c94ae" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8aa0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="77" cy="46" r="58" fill="#cfe5ff" opacity="0.35"/>
+  <circle cx="588" cy="278" r="78" fill="#d5f0d1" opacity="0.34"/>
+  <circle cx="589" cy="52" r="28" fill="#fce4c4" opacity="0.5"/>
+
+  <text x="34" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516c">EBOB ve Öklid Algoritması</text>
+  <text x="34" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8292">Kalan ile küçül, temel durumda dur</text>
+
+  <rect x="32" y="77" width="132" height="158" rx="20" fill="url(#mainCard)" filter="url(#shadow)"/>
+  <circle cx="98" cy="119" r="30" fill="#ffffff" opacity="0.82"/>
+  <text x="98" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b7b">Başlangıç</text>
+  <text x="98" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466c87">(252, 105)</text>
+  <path d="M57 167 H139" stroke="#83aeca" stroke-width="1.5"/>
+  <text x="98" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47667d">EBOB(a, b)</text>
+  <text x="98" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e788b">a mod b</text>
+
+  <path d="M166 156 H190" stroke="#78a7bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="197,156 188,150 188,162" fill="#78a7bd"/>
+
+  <rect x="202" y="89" width="112" height="65" rx="15" fill="url(#stepCard)" filter="url(#softShadow)"/>
+  <rect x="202" y="89" width="7" height="65" rx="4" fill="#8cb9ed"/>
+  <text x="222" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355770">1. çağrı</text>
+  <text x="222" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547086">(105, 42)</text>
+
+  <path d="M316 121 H335" stroke="#78a7bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="342,121 333,115 333,127" fill="#78a7bd"/>
+
+  <rect x="347" y="89" width="112" height="65" rx="15" fill="url(#stepCard)" filter="url(#softShadow)"/>
+  <rect x="347" y="89" width="7" height="65" rx="4" fill="#8fd0ba"/>
+  <text x="367" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355770">2. çağrı</text>
+  <text x="367" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547086">(42, 21)</text>
+
+  <path d="M461 121 H480" stroke="#78a7bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="487,121 478,115 478,127" fill="#78a7bd"/>
+
+  <rect x="492" y="89" width="116" height="65" rx="15" fill="#e6f5de" filter="url(#softShadow)"/>
+  <rect x="492" y="89" width="7" height="65" rx="4" fill="#78bd79"/>
+  <text x="512" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356843">Temel durum</text>
+  <text x="512" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7860">(21, 0)</text>
+
+  <path d="M550 156 V185" stroke="#69aa76" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="550,192 544,183 556,183" fill="#69aa76"/>
+
+  <rect x="469" y="201" width="139" height="55" rx="17" fill="#d9f2d4" filter="url(#shadow)"/>
+  <circle cx="495" cy="228" r="14" fill="#ffffff" opacity="0.85"/>
+  <path d="M488 228 L493 233 L503 222" fill="none" stroke="#4f9d60" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="518" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356843">Sonuç</text>
+  <text x="518" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7860">EBOB = 21</text>
+
+  <rect x="202" y="184" width="236" height="74" rx="18" fill="#ffffff" opacity="0.86" filter="url(#softShadow)"/>
+  <text x="222" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6477">Özyinelemeli kural</text>
+  <text x="222" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6d87">EBOB(a, b) → EBOB(b, a mod b)</text>
+  <text x="222" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8292">Her adımda ikinci sayı küçülür</text>
+
+  <path d="M259 154 C251 166 249 170 253 178" fill="none" stroke="#9bb7c9" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M403 154 C409 166 411 170 407 178" fill="none" stroke="#9bb7c9" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <rect x="33" y="267" width="574" height="29" rx="14" fill="#eaf3f9" opacity="0.9"/>
+  <circle cx="54" cy="281.5" r="6" fill="#78a7bd"/>
+  <text x="68" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6a7e">Hızlı çözüm: problem boyutu kalan sayesinde logaritmik olarak azalır.</text>
+</svg>

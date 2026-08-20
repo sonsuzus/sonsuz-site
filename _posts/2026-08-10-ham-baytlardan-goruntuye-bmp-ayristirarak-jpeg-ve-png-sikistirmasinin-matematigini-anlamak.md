@@ -10,6 +10,7 @@ tags:
   - PNG
   - JPEG
   - Python
+image: /img/ham-baytlardan-goruntuye-46.png
 ---
 
 Bir görüntü dosyası, ekranda gördüğümüz renkli karelerden çok daha fazlasıdır: başlıklar, piksel dizileri, satır hizalama kuralları ve bazen karmaşık sıkıştırma akışları içerir. JPEG ya da PNG kod çözücüsünü çağırmadan bir dosyayı ham baytlarına ayırıp yeniden kurmak, bu katmanları görünür hâle getirir. Başlangıç için BMP idealdir; çoğu BMP dosyası pikselleri neredeyse doğrudan saklar. Ardından aynı bakış açısını PNG filtreleri ve JPEG dönüşümlerine taşıyabiliriz.
@@ -26,6 +27,9 @@ Bir görüntü dosyası, ekranda gördüğümüz renkli karelerden çok daha faz
 | Kayıp durumu | Genellikle kayıpsız | Kayıpsız | Kayıplı |
 | Şeffaflık | Sınırlı / biçime bağlı | Doğal alfa desteği | Yerleşik alfa yok |
 | Öğrenme zorluğu | Düşük | Orta | Yüksek |
+
+![ham-baytlardan-goruntuye-46](/img/ham-baytlardan-goruntuye-46.svg)
+
 
 BMP satır genişliği $w$ ve bayt/piksel değeri $b$ ise satırdaki gerçek veri $w \cdot b$ olur. Dört bayt hizalama sonrası saklanan satır uzunluğu ise şöyledir:
 

@@ -8,6 +8,7 @@ tags:
   - Rust
   - Bellek Güvenliği
   - Borrow Checker
+image: /img/rust-ile-bellek-21.png
 ---
 
 Rust'ın en iddialı vaadi, çöp toplayıcıya ihtiyaç duymadan bellek güvenliği sunmasıdır. Bu vaat; `null` işaretçileri, use-after-free, veri yarışları ve çift bellek serbest bırakma gibi klasik hataların büyük bölümünü program daha çalışmadan yakalamasına dayanır. Bu işin başrolünde, Rust derleyicisinin sahiplik kurallarını denetleyen titiz bir kapı görevlisi olan **borrow checker** vardır.
@@ -72,3 +73,6 @@ fn uzun_olan<'a>(sol: &'a str, sag: &'a str) -> &'a str {
 Garbage collector kullanan diller, erişilemeyen nesneleri çalışma zamanında izleyip temizler. Rust ise sahiplik ve ödünç alma denetimini ağırlıkla derleme zamanında gerçekleştirir. Başarılı biçimde derlenen güvenli Rust kodunda referans denetimi için sürekli bir çalışma zamanı taraması gerekmez. Bu anlayış genellikle **zero-cost abstraction** ilkesiyle özetlenir: Güvenlik, gereksiz sürekli maliyet eklemeden sağlanır.
 
 Elbette Rust sihirli değildir. `unsafe` blokları, ham işaretçiler ve FFI çağrıları bazı derleyici garantilerini geliştiricinin sorumluluğuna bırakabilir. Ayrıca `RefCell<T>` gibi türler, esnekliğe karşılık ödünç alma kurallarını çalışma zamanında denetler ve kural ihlalinde panic üretebilir. Ancak günlük, güvenli Rust kodunda borrow checker; bellek hatalarını kullanıcıya ulaşmadan, daha editörde kırmızı çizgiye dönüştürür.
+
+![rust-ile-bellek-21](/img/rust-ile-bellek-21.svg)
+

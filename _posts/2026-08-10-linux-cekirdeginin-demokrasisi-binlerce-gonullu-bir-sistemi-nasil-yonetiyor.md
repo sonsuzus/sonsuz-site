@@ -10,6 +10,7 @@ tags:
   - Yönetişim
   - Demokrasi
   - Git
+image: /img/linux-cekirdeginin-demokrasisi-76.png
 ---
 
 Linux çekirdeği, tek bir merkezî otoritenin yazdığı dev bir program değildir; şirket çalışanları, bağımsız geliştiriciler, akademisyenler ve donanım üreticilerinden oluşan küresel bir ağın ortak ürünüdür. Bu ağın başarısı, “herkes eşit oy kullanır” türünden saf bir demokrasiye değil; teknik uzmanlık, itibar, şeffaf müzakere ve yetki devrine dayanan karma bir yönetişim modeline dayanır. Dolayısıyla Linux’u anlamak, yalnızca C kodu okumak değil, dijital çağda katılımın nasıl örgütlenebileceğini incelemektir.
@@ -49,3 +50,6 @@ git send-email 0000-cover-letter.patch 0001-foo-correct-timeout-handling.patch
 `-s` seçeneği, geliştiricinin katkı sertifikasını ekler; `format-patch` ise değişikliği e-posta ile tartışılabilir bir belgeye dönüştürür. Ardından inceleme yorumları gelir, geliştirici yeni sürüm gönderir ve bakımcı uygun bulursa değişikliği kendi dalına alır. Bu döngü, kanun tasarısının komisyonlarda olgunlaşmasına benzer; fakat burada nihai test çoğu zaman çalışan koddur.
 
 Yine de Linux kusursuz bir dijital cumhuriyet değildir. Teknik dil, zaman maliyeti, sert inceleme kültürü ve kurumsal sponsorların ağırlığı katılımı eşitsizleştirebilir. “Kim konuşabilir?” sorusu kadar “kimin kod yazmaya zamanı var?” sorusu da politiktir. Açık kaynak yönetişiminin büyük dersi şudur: Açıklık, yalnızca deponun herkese açık olması değildir; itirazın duyulabildiği, kararın gerekçelendirildiği ve katkının iz bırakabildiği süreçler kurmaktır.
+
+![linux-cekirdeginin-demokrasisi-76](/img/linux-cekirdeginin-demokrasisi-76.svg)
+

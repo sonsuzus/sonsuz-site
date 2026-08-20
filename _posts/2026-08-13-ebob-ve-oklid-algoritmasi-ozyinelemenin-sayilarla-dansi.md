@@ -8,6 +8,7 @@ tags:
   - matematik
   - algoritmalar
   - python
+image: /img/ebob-ve-oklid-56.png
 ---
 
 İki sayının ortak bölenlerini tek tek aramak, küçük sayılarda masum görünen ama sayılar büyüdükçe sabrımızı sınayan bir iştir. En Büyük Ortak Bölen (EBOB), iki ya da daha fazla tam sayıyı kalansız bölen en büyük pozitif sayıdır. Öklid algoritması ise bu değeri bulmak için binlerce yıldır kullanılan, şaşırtıcı derecede zarif ve verimli bir yöntemdir. Dahası, algoritmanın mantığı özyinelemeli fonksiyonlar için mükemmel bir uygulama alanı sunar.
@@ -36,6 +37,9 @@ Kalanın sıfır olduğu anda son sıfır olmayan bölen sonuçtur: $\gcd(252,10
 | Bölenleri tarama | Küçük sayıdan başlayarak ortak bölen aramak | Fazla deneme gerektirir |
 | Asal çarpanlara ayırma | Ortak asal çarpanları seçmek | Çarpanlara ayırma maliyetli olabilir |
 | Öklid algoritması | Kalanı kullanarak problemi küçültmek | Çok hızlı ve pratiktir |
+
+![ebob-ve-oklid-56](/img/ebob-ve-oklid-56.svg)
+
 
 Özyineleme, bir fonksiyonun daha küçük bir problem için kendisini çağırmasıdır. Öklid algoritmasında her çağrıdaki ikinci sayı, bir önceki adımdaki kalandır. Kalan sıfır olduğunda artık daha fazla küçültülecek problem kalmaz; bu da **temel durum**dur. Fonksiyon tasarımında temel durum unutulursa çağrılar sonsuza kadar devam eder ve program hata verir.
 

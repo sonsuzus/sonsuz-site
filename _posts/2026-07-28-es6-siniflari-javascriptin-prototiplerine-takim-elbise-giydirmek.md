@@ -8,6 +8,7 @@ tags:
   - JavaScript
   - ES6
   - Nesne Yönelimli Programlama
+image: /img/es6-siniflari-javascriptin-19.png
 ---
 
 JavaScript’te `class` anahtar sözcüğünü gördüğünüzde dilin prototipleri bırakıp C++ veya Java gibi tamamen sınıf tabanlı bir modele geçtiğini düşünebilirsiniz. Fakat perde arkasında hâlâ prototip zinciri çalışır. ES6 sınıfları, mevcut sistemi değiştiren yeni bir nesne modeli değil; yapıcıları, metotları ve kalıtımı daha okunabilir biçimde tanımlayan modern bir sözdizimidir.
@@ -108,3 +109,6 @@ console.log(MatematikAraci.ikiKat(6)); // 12
 ```
 
 Sonuç olarak ES6 sınıfları JavaScript’i klasik sınıf tabanlı bir dile dönüştürmez. Prototip modeline daha tanıdık, düzenli ve bakımı kolay bir arayüz sunar. Sihir yoktur; yalnızca prototiplerin üzerine giydirilmiş oldukça şık bir takım elbise vardır.
+
+![es6-siniflari-javascriptin-19](/img/es6-siniflari-javascriptin-19.svg)
+

@@ -10,7 +10,11 @@ tags:
   - Konteyner
   - DevOps
   - Pod
+image: /img/kubernetes-temelleri-ve-14.png
 ---
+
+![kubernetes-temelleri-ve-14](/img/kubernetes-temelleri-ve-14.svg)
+
 
 Modern uygulamalar tek bir sunucuda çalışan dev programlar olmaktan çıktı; küçük, bağımsız ve konteynerleşmiş servislerden oluşuyor. Ancak yüzlerce konteyneri doğru makineye yerleştirmek, çökenleri yeniden başlatmak ve trafik arttığında kapasiteyi büyütmek elle yapılabilecek bir iş değildir. Kubernetes, tam bu noktada konteyner kümelerini yöneten, dağıtımı otomatikleştiren ve uygulamanın arzu edilen durumunu koruyan orkestrasyon platformudur.
 ``

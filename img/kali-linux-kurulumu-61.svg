@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="isoGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#c5ddfa"/>
+    </linearGradient>
+    <linearGradient id="usbGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f4e9"/>
+      <stop offset="100%" stop-color="#bce8d8"/>
+    </linearGradient>
+    <linearGradient id="diskGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbe5d7"/>
+      <stop offset="100%" stop-color="#f5cdb8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#59718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#59718a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="44" r="80" fill="#dceeff" opacity="0.45"/>
+  <circle cx="578" cy="286" r="96" fill="#def1dc" opacity="0.42"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556a">Kali Linux: Çalışma Yolunu Seç</text>
+
+  <path d="M320 106 L320 128" fill="none" stroke="#758da2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="314,124 326,124 320,133" fill="#758da2"/>
+
+  <path d="M298 154 C248 154 217 157 184 171" fill="none" stroke="#6e9a89" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="190,165 180,174 193,176" fill="#6e9a89"/>
+
+  <path d="M342 154 C392 154 424 157 456 171" fill="none" stroke="#bd8268" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="447,176 460,174 450,165" fill="#bd8268"/>
+
+  <g filter="url(#shadow)">
+    <rect x="230" y="48" width="180" height="61" rx="18" fill="url(#isoGrad)"/>
+  </g>
+  <circle cx="265" cy="78" r="17" fill="#ffffff" opacity="0.72"/>
+  <path d="M257 78 L263 84 L274 71" fill="none" stroke="#4c83b7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="291" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b82">ISO Doğrulama</text>
+  <text x="291" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58738c">SHA-256 eşleşmesi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="46" y="178" width="245" height="112" rx="20" fill="url(#usbGrad)"/>
+  </g>
+  <rect x="65" y="197" width="54" height="42" rx="9" fill="#ffffff" opacity="0.76"/>
+  <rect x="76" y="204" width="31" height="28" rx="5" fill="#70bca1"/>
+  <rect x="83" y="198" width="7" height="7" rx="2" fill="#70bca1"/>
+  <rect x="94" y="198" width="7" height="7" rx="2" fill="#70bca1"/>
+  <path d="M91 239 L91 248" stroke="#5d9e88" stroke-width="4" stroke-linecap="round"/>
+  <text x="137" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#286451">Live USB</text>
+  <text x="137" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7e70">RAM üzerinde çalışır</text>
+  <text x="137" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7e70">Taşınabilir ve geçici</text>
+  <line x1="66" y1="260" x2="269" y2="260" stroke="#89cbb5" stroke-width="1"/>
+  <circle cx="79" cy="274" r="4" fill="#65ad94"/>
+  <text x="89" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477b6c">İz bırakmaz</text>
+  <circle cx="190" cy="274" r="4" fill="#65ad94"/>
+  <text x="200" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477b6c">Persistence</text>
+
+  <g filter="url(#shadow)">
+    <rect x="349" y="178" width="245" height="112" rx="20" fill="url(#diskGrad)"/>
+  </g>
+  <rect x="369" y="197" width="54" height="42" rx="9" fill="#ffffff" opacity="0.76"/>
+  <ellipse cx="396" cy="207" rx="17" ry="6" fill="#d18b6c"/>
+  <path d="M379 207 L379 226 C379 230 387 233 396 233 C405 233 413 230 413 226 L413 207" fill="#e6ad91"/>
+  <path d="M379 216 C379 220 387 223 396 223 C405 223 413 220 413 216" fill="none" stroke="#c77d60" stroke-width="1.4"/>
+  <text x="441" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#864b35">Kalıcı Kurulum</text>
+  <text x="441" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a624d">Disk bölümlerine yazılır</text>
+  <text x="441" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a624d">Hızlı ve sürekli kullanım</text>
+  <line x1="369" y1="260" x2="572" y2="260" stroke="#e4ad91" stroke-width="1"/>
+  <circle cx="382" cy="274" r="4" fill="#d18b6c"/>
+  <text x="392" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#925943">Yüksek hız</text>
+  <circle cx="492" cy="274" r="4" fill="#d18b6c"/>
+  <text x="502" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#925943">Kalıcı veri</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="270" y="133" width="100" height="26" rx="13" fill="#ffffff"/>
+  </g>
+  <text x="320" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#586d80">Kullanım amacı</text>
+</svg>

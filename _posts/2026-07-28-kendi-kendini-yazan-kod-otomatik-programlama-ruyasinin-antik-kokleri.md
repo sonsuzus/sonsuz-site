@@ -8,7 +8,11 @@ tags:
   - yapay zeka
   - LLM
   - programlama tarihi
+image: /img/kendi-kendini-yazan-22.png
 ---
+
+![kendi-kendini-yazan-22](/img/kendi-kendini-yazan-22.svg)
+
 
 Bugün bir LLM’ye “bana bir REST API yaz” dediğimizde birkaç saniye içinde kodla karşılaşmak büyüleyici görünüyor. Ancak makinenin talimat üretmesi, insanın niyetini biçimsel işlemlere dönüştürmesi ve hatta kendi davranışını kurması fikri yeni değil. Otomatik programlama rüyası; mekanik ördeklerden derleyicilere, mantık makinelerinden modern kod asistanlarına uzanan binlerce yıllık bir merakın son perdesi.
 ``

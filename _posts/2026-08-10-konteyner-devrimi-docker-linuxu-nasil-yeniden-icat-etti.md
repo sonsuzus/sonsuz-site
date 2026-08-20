@@ -10,6 +10,7 @@ tags:
   - Konteyner
   - Sanallaştırma
   - DevOps
+image: /img/konteyner-devrimi-docker-29.png
 ---
 
 Docker, Linux'a yeni bir çekirdek eklemedi; daha ilginç bir şey yaptı: Çekirdeğin yıllardır sunduğu izolasyon mekanizmalarını geliştiricinin günlük iş akışına taşıdı. Böylece “benim makinemde çalışıyor” cümlesi, yazılım dünyasının en meşhur mazeretlerinden biri olmaktan çıkmaya başladı. Konteynerler, uygulamayı kodu, bağımlılıkları, çalışma zamanı ve yapılandırmasıyla birlikte paketleyerek işletim sistemi tasarımına daha modüler bir bakış getirdi.
@@ -70,3 +71,6 @@ Bu Dockerfile'ın önemli noktası sıralamasıdır: Bağımlılık listesi önc
 ## İşletim sistemi tasarımına etkisi
 
 Docker, Linux'u tek bir büyük sunucu olarak değil, paylaşılabilir bir uygulama çalıştırma platformu olarak düşünmemizi sağladı. Süreç izolasyonu, kaynak kotaları ve deklaratif imajlar; mikroservisler, CI/CD hatları ve Kubernetes gibi orkestrasyon araçlarının temelini oluşturdu. Yine de konteyner bir güvenlik duvarı değildir: çekirdek ortak olduğu için güncel imajlar, en az yetki ilkesi ve güvenlik profilleri kritik önem taşır. Konteyner devriminin asıl başarısı, Linux'un eski ama güçlü yapıtaşlarını modern yazılım üretiminin ortak diline çevirmesidir.
+
+![konteyner-devrimi-docker-29](/img/konteyner-devrimi-docker-29.svg)
+

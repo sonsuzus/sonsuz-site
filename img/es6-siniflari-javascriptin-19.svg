@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="sinifKart" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9def7"/>
+    </linearGradient>
+    <linearGradient id="prototipKart" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e4f4e7"/>
+      <stop offset="100%" stop-color="#cde8d4"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60758b" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60758b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="67" cy="55" r="42" fill="#dceeff" opacity="0.45"/>
+  <circle cx="578" cy="258" r="62" fill="#dff2dc" opacity="0.46"/>
+  <path d="M35 270 C120 236 162 287 241 262 S389 226 456 258 S548 280 620 232" fill="none" stroke="#b9d8cb" stroke-width="2" opacity="0.45"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516b">ES6 SINIFLARI: PROTOTİP ÜZERİNDE DÜZENLİ ARAYÜZ</text>
+
+  <!-- Sol: örnek nesne -->
+  <g filter="url(#golge)">
+    <rect x="42" y="111" width="139" height="118" rx="20" fill="#fff8e6" stroke="#ead6a3"/>
+    <rect x="57" y="126" width="109" height="26" rx="10" fill="#f6dfaa"/>
+    <circle cx="74" cy="139" r="7" fill="#d59757"/>
+    <text x="89" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#694929">Nesne: ada</text>
+    <line x1="60" y1="164" x2="163" y2="164" stroke="#e6d5ae"/>
+    <text x="64" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70573d">ad: Ada</text>
+    <text x="64" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70573d">puan: 15</text>
+  </g>
+
+  <!-- bağlantı nesne -> sınıf -->
+  <path d="M181 170 L219 170" fill="none" stroke="#778fa5" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="219,170 210,165 210,175" fill="#778fa5"/>
+  <text x="199" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587086">new</text>
+
+  <!-- Merkez: sınıf takım elbisesi -->
+  <g filter="url(#golge)">
+    <rect x="220" y="67" width="205" height="171" rx="23" fill="url(#sinifKart)" stroke="#9ebddd" stroke-width="1.2"/>
+    <rect x="239" y="84" width="167" height="32" rx="11" fill="#eff7ff" opacity="0.9"/>
+    <text x="322" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315876">class Kullanici</text>
+
+    <!-- takım elbisesi / yaka -->
+    <path d="M253 127 L286 146 L322 126 L358 146 L391 127 L378 210 L266 210 Z" fill="#7ca8d1" opacity="0.8"/>
+    <path d="M286 146 L307 126 L322 150 L337 126 L358 146 L341 174 L322 160 L303 174 Z" fill="#f5f9ff"/>
+    <path d="M322 150 L330 165 L322 189 L314 165 Z" fill="#e98c91"/>
+    <circle cx="322" cy="198" r="3.4" fill="#557a9f"/>
+
+    <rect x="252" y="217" width="140" height="12" rx="6" fill="#a9c8e5"/>
+  </g>
+  <text x="322" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486984">constructor ve metotlar</text>
+
+  <!-- aşağı bağlantı -->
+  <path d="M322 239 L322 270" fill="none" stroke="#668ea3" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="322,278 316,268 328,268" fill="#668ea3"/>
+
+  <!-- altyapı prototip -->
+  <g filter="url(#hafifGolge)">
+    <rect x="224" y="279" width="197" height="29" rx="12" fill="url(#prototipKart)" stroke="#9fc6a8"/>
+    <circle cx="244" cy="293.5" r="7" fill="#6da67b"/>
+    <text x="258" y="298" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#396747">Kullanici.prototype</text>
+    <text x="391" y="298" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51775a">paylaşılan metotlar</text>
+  </g>
+
+  <!-- Sağ: kalıtım -->
+  <path d="M425 128 C450 128 451 106 469 106" fill="none" stroke="#778fa5" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="477,106 467,101 468,111" fill="#778fa5"/>
+  <text x="447" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587086">extends</text>
+
+  <g filter="url(#golge)">
+    <rect x="477" y="63" width="122" height="86" rx="18" fill="#eee5fb" stroke="#c6b0e5"/>
+    <rect x="490" y="77" width="96" height="23" rx="9" fill="#faf7ff"/>
+    <text x="538" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#60437e">Yonetici</text>
+    <text x="492" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#694f82">yetki</text>
+    <text x="492" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#694f82">super()</text>
+  </g>
+
+  <!-- sağ alt bilgi -->
+  <g filter="url(#hafifGolge)">
+    <rect x="465" y="182" width="142" height="71" rx="17" fill="#ffffff" opacity="0.88" stroke="#c7d9db"/>
+    <circle cx="486" cy="204" r="10" fill="#8bc5b1"/>
+    <path d="M482 204 L485 207 L491 200" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="505" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#406a63">Görünüm</text>
+    <line x1="481" y1="219" x2="590" y2="219" stroke="#d9e6e3"/>
+    <text x="481" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54726c">Şık sözdizimi</text>
+  </g>
+
+  <path d="M478 182 C460 177 453 170 435 170" fill="none" stroke="#9ab6b0" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <text x="425" y="158" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58786f">arka planda zincir</text>
+</svg>

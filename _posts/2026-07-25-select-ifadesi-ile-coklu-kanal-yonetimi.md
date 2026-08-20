@@ -9,6 +9,7 @@ tags:
   - Concurrency
   - Channel
   - Select
+image: /img/select-ifadesi-ile-73.png
 ---
 
 Modern yazılımlarda işler sırayla değil, çoğu zaman aynı anda olur: kullanıcıdan mesaj gelir, ağdan cevap döner, zamanlayıcı tetiklenir, iptal sinyali ulaşır. Go dilindeki `select` ifadesi tam bu karmaşada trafik polisi gibi davranır; birden fazla kanalı aynı anda dinler ve hangi kanal hazırsa onu bloklanmadan işleme alır.
@@ -27,6 +28,9 @@ Yani en erken hazır olan kanal, akışı belirler. Bu sayede yavaş bir işlem,
 | `select` | Birden çok kanalı dinler | Yanlış tasarımda karmaşa | Eşzamanlı sistemler |
 | `select + default` | Hazır kanal yoksa beklemez | CPU'yu yorabilir | Non-blocking kontrol |
 | `select + timeout` | Belirli süre sonra vazgeçer | Süre yanlış seçilebilir | API, ağ istekleri |
+
+![select-ifadesi-ile-73](/img/select-ifadesi-ile-73.svg)
+
 
 Basit bir örnekle başlayalım. Aşağıdaki kodda iki farklı kanal farklı sürelerde veri üretir. `select`, hangisi önce hazır olursa onu işler:
 

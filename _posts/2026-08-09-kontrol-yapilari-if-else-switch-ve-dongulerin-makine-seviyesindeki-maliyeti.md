@@ -10,6 +10,7 @@ tags:
   - runtime
   - assembly
   - algoritmalar
+image: /img/kontrol-yapilari-if-83.png
 ---
 
 Yüksek seviyeli bir dilde yazılan `if`, `switch` veya `for` satırları zararsız görünür; ancak işlemci bunları doğrudan "karar" olarak algılamaz. Arka planda karşılaştırmalar, koşullu sıçramalar (branch), bellek erişimleri ve bazen tablo üzerinden dolaylı atlamalar çalışır. Bu nedenle kontrol yapısının maliyeti yalnızca kaynak koddaki satır sayısıyla değil, veri dağılımı, derleyici optimizasyonu ve CPU’nun dal tahmin başarısıyla belirlenir.
@@ -85,3 +86,6 @@ long toplam(const int *veri, int n) {
 Teorik karmaşıklık $T(n) = an + b$ olduğundan çalışma $O(n)$’dir. Fakat pratikte asıl sınırlandırıcı unsur branch olmayabilir: `veri[i]` bellekten gelir ve önbellek kaçırmaları işlemciyi bekletebilir. Düzenli erişimli bu örnekte CPU öngetiricisi başarılıdır; düzensiz pointer takibi yapan döngülerde ise bellek gecikmesi baskın hale gelir.
 
 Döngü koşulu genellikle son tur dışında kolay tahmin edilir: branch çoğu kez "devam et", bir kez "çık" sonucunu verir. Buna karşılık döngü içindeki rastgele `if` koşulları tahminciyi zorlayabilir. Performans kritik kodda önce ölçüm yapmak, sonra gerekirse veriyi gruplayarak branch öngörülebilirliğini artırmak en sağlıklı yaklaşımdır. Kısacası iyi kontrol akışı, yalnızca doğru yolu seçmez; işlemcinin o yolu önceden sezmesine de yardım eder.
+
+![kontrol-yapilari-if-83](/img/kontrol-yapilari-if-83.svg)
+

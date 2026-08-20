@@ -8,7 +8,11 @@ tags:
   - JavaScript
   - Node.js
   - VS Code
+image: /img/javascript-kurulumu-tarayici-53.png
 ---
+
+![javascript-kurulumu-tarayici-53](/img/javascript-kurulumu-tarayici-53.svg)
+
 
 JavaScript öğrenmeye başlamak için devasa bir kurulum sihrine ihtiyacınız yoktur; modern bir tarayıcı bile ilk programınızı çalıştırmaya yeter. Ancak gerçek projeler geliştirmek istediğinizde tarayıcı konsolu, Node.js, VS Code ve canlı sunucu araçlarından oluşan düzenli bir çalışma ortamı kurmak büyük rahatlık sağlar. Gelin JavaScript atölyemizin ışıklarını birlikte açalım.
 ``

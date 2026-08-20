@@ -8,7 +8,11 @@ tags:
   - Dinamik Programlama
   - Bitmask
   - Algoritmalar
+image: /img/bitmask-dinamik-programlama-72.png
 ---
+
+![bitmask-dinamik-programlama-72](/img/bitmask-dinamik-programlama-72.svg)
+
 
 Bazı problemler vardır ki eleman sayısı küçük görünür, fakat olası seçimlerin sayısı astronomiktir. Örneğin 20 şehir arasındaki tüm ziyaret sıralamalarını denemek yaklaşık $20!$ olasılık demektir; bu, kahveniz soğumadan bitecek bir hesap değildir. Bitmask Dinamik Programlama (DP), küçük kümelerdeki alt kümeleri bitlerle temsil ederek tekrar eden hesapları saklar ve bu tür kombinasyon patlamalarını yönetilebilir hâle getirir.
 ``

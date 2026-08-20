@@ -8,6 +8,7 @@ tags:
   - Kali Linux
   - Live USB
   - Linux Kurulumu
+image: /img/kali-linux-kurulumu-61.png
 ---
 
 Kali Linux, siber güvenlik araçlarıyla dolu bir İsviçre çakısı gibidir; ama bu çakıyı cebine kalıcı olarak mı koyacaksın, yoksa gerektiğinde USB’den çıkarıp kullanacak mısın? Bu yazıda Kali’yi diske kurma ve canlı sistem olarak çalıştırma seçeneklerini teorik altyapısıyla inceleyeceğiz. Ama küçük not: Kali güçlü araçlar içerir; yalnızca kendi sistemlerinde, izinli laboratuvarlarda ve etik amaçlarla kullanılmalıdır.
@@ -75,3 +76,6 @@ Bu komut diskleri ve bölümleri listeler. Kurulumdan önce hangi diskin hangisi
 Eğer Kali’yi öğreniyor, araçları düzenli kullanıyor ve laboratuvar ortamı kuruyorsan kalıcı kurulum veya sanal makine daha konforludur. Eğer amacın taşınabilir analiz, geçici oturum veya ana sisteme dokunmadan deneme yapmaksa Live USB daha akıllıca olabilir.
 
 Özetle: kalıcı kurulum ev kurmak, Live USB ise kamp çadırı taşımak gibidir. Ev rahattır ama yer ister; çadır hafiftir ama her sabah yeniden toparlanırsın. En güvenli başlangıç ise çoğu kullanıcı için sanal makine ya da Live USB ile deneme yapmak, ardından ihtiyaç netleşince kalıcı kuruluma geçmektir.
+
+![kali-linux-kurulumu-61](/img/kali-linux-kurulumu-61.svg)
+

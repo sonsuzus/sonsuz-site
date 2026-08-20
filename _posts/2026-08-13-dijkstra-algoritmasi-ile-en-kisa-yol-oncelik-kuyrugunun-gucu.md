@@ -10,9 +10,13 @@ tags:
   - Python
   - Dijkstra
   - Veri Yapıları
+image: /img/dijkstra-algoritmasi-ile-15.png
 ---
 
 Bir harita uygulamasının sizi en kısa rotadan götürmesi, ağ paketlerinin hızlı yolu seçmesi veya bir oyundaki karakterin hedefe ulaşması çoğu zaman aynı soruya dayanır: Ağırlıklı bir graf üzerinde iki nokta arasındaki en düşük maliyetli yol nedir? Dijkstra algoritması, kenar ağırlıkları negatif olmadığı sürece bu soruyu sistematik ve oldukça verimli biçimde çözer.
+
+
+![dijkstra-algoritmasi-ile-15](/img/dijkstra-algoritmasi-ile-15.svg)
 
 ``
 

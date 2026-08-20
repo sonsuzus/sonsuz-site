@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f9f0"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeaff"/>
+      <stop offset="100%" stop-color="#ccefe2"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#56718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#56718a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="332" cy="156" r="109" fill="#ffffff" opacity="0.42"/>
+  <circle cx="332" cy="156" r="82" fill="none" stroke="#b8d4dd" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#28445b">
+    <g filter="url(#shadow)">
+      <rect x="25" y="123" width="116" height="73" rx="18" fill="#fffdf7"/>
+      <rect x="37" y="137" width="91" height="19" rx="8" fill="#e9dcff"/>
+      <text x="82.5" y="151" text-anchor="middle" font-weight="600">Kontrol akışı</text>
+      <text x="82.5" y="176" text-anchor="middle">if · switch · döngü</text>
+    </g>
+
+    <path d="M141 160 H194" fill="none" stroke="#7595ad" stroke-width="2.2"/>
+    <polygon points="194,160 185,155 185,165" fill="#7595ad"/>
+
+    <g filter="url(#shadow)">
+      <rect x="198" y="103" width="171" height="108" rx="25" fill="url(#core)" stroke="#b6d5df"/>
+      <text x="283.5" y="129" text-anchor="middle" font-weight="600" fill="#24465b">İşlemci karar noktası</text>
+      <rect x="223" y="145" width="57" height="33" rx="10" fill="#ffffff"/>
+      <text x="251.5" y="165" text-anchor="middle">Karşılaştır</text>
+      <path d="M289 161 H302" stroke="#7194a9" stroke-width="1.8"/>
+      <polygon points="302,161 295,157 295,165" fill="#7194a9"/>
+      <polygon points="324,145 347,161 324,177 301,161" fill="#fff6c9" stroke="#d4b96b"/>
+      <text x="324" y="165" text-anchor="middle" font-size="11">Sıçrama</text>
+      <text x="283.5" y="197" text-anchor="middle" fill="#557286">tahmin ve yürütme</text>
+    </g>
+
+    <path d="M370 142 C393 122 402 91 421 79" fill="none" stroke="#75a29c" stroke-width="2"/>
+    <polygon points="421,79 412,79 417,87" fill="#75a29c"/>
+    <path d="M370 177 C393 194 403 220 421 232" fill="none" stroke="#cf837e" stroke-width="2"/>
+    <polygon points="421,232 417,224 412,232" fill="#cf837e"/>
+
+    <g filter="url(#softShadow)">
+      <rect x="425" y="42" width="181" height="75" rx="17" fill="#e1f4e8"/>
+      <circle cx="449" cy="66" r="11" fill="#89c9a7"/>
+      <path d="M444 66 L448 70 L455 61" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="470" y="65" font-weight="600">Doğru tahmin</text>
+      <text x="470" y="87" fill="#52766a">Akıcı boru hattı</text>
+      <text x="470" y="104" fill="#52766a">düşük maliyet</text>
+    </g>
+
+    <g filter="url(#softShadow)">
+      <rect x="425" y="196" width="181" height="75" rx="17" fill="#ffe7e3"/>
+      <circle cx="449" cy="220" r="11" fill="#e9948b"/>
+      <path d="M445 216 L453 224 M453 216 L445 224" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+      <text x="470" y="219" font-weight="600">Yanlış tahmin</text>
+      <text x="470" y="241" fill="#8a5c58">Boru hattı temizleme</text>
+      <text x="470" y="258" fill="#8a5c58">10–20 çevrim</text>
+    </g>
+
+    <path d="M72 109 C72 84 106 67 159 67 H209" fill="none" stroke="#9a83bd" stroke-width="1.8"/>
+    <polygon points="209,67 201,63 201,71" fill="#9a83bd"/>
+    <g filter="url(#softShadow)">
+      <rect x="39" y="36" width="150" height="48" rx="14" fill="#f0e8ff"/>
+      <text x="114" y="57" text-anchor="middle" font-weight="600">switch stratejisi</text>
+      <text x="114" y="74" text-anchor="middle" fill="#705d91">zincir · ağaç · tablo</text>
+    </g>
+
+    <path d="M102 204 C110 243 151 262 210 262" fill="none" stroke="#5d9bb8" stroke-width="1.8"/>
+    <polygon points="210,262 202,258 202,266" fill="#5d9bb8"/>
+    <g filter="url(#softShadow)">
+      <rect x="38" y="247" width="166" height="49" rx="14" fill="#dff1fb"/>
+      <text x="121" y="268" text-anchor="middle" font-weight="600">Döngü ve bellek</text>
+      <text x="121" y="285" text-anchor="middle" fill="#53798e">erişim düzeni önemlidir</text>
+    </g>
+
+    <g filter="url(#softShadow)">
+      <rect x="232" y="242" width="158" height="48" rx="14" fill="#fff7d9"/>
+      <text x="311" y="263" text-anchor="middle" font-weight="600">Beklenen maliyet</text>
+      <text x="311" y="280" text-anchor="middle" fill="#7c7043">temel + hata olasılığı</text>
+    </g>
+    <path d="M311 242 V217" fill="none" stroke="#b79d57" stroke-width="1.8"/>
+    <polygon points="311,217 307,225 315,225" fill="#b79d57"/>
+  </g>
+</svg>

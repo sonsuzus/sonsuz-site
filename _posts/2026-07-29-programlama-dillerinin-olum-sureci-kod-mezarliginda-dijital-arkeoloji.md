@@ -8,6 +8,7 @@ tags:
   - programlama dilleri
   - dijital arkeoloji
   - yazılım tarihi
+image: /img/programlama-dillerinin-olum-18.png
 ---
 
 Bir programlama dili nadiren tek bir gün içinde ölür. Genellikle önce yeni projelerden çekilir, sonra geliştiricilerini kaybeder, paket depoları sessizleşir ve en sonunda yalnızca eski bankacılık sistemlerinde ya da unutulmuş bir GitHub deposunda yaşamaya devam eder. Dolayısıyla bir dilin ölümünü anlamak, mezar taşındaki tarihi okumaktan çok geride bıraktığı dijital izleri incelemeye benzer.
@@ -25,6 +26,9 @@ Bu nedenle üç farklı durumu ayırmak gerekir:
 | Yaşayan | Yeni sürümler, paketler ve projeler vardır | Ekosistem büyür |
 | Miras dili | Bakım sürer, yeni kullanım azalır | Kurumsal sistemlerde yaşar |
 | Ölü dil | Resmî bakım ve üretken topluluk yoktur | Arşiv veya hobi nesnesine dönüşür |
+
+![programlama-dillerinin-olum-18](/img/programlama-dillerinin-olum-18.svg)
+
 
 Ölüm burada teknik değil, **sosyoteknik** bir kavramdır. Derleyici hâlâ çalışabilir; ancak onu geliştiren, öğreten ve yeni problemlere uyarlayan topluluk ortadan kalkmış olabilir.
 

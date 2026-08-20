@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf1"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Ses Dalgalarına Dijital Efekt Uygulama</text>
+
+  <!-- Giriş sinyali -->
+  <rect x="30" y="60" width="100" height="50" rx="10" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="80" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Ham Ses</text>
+  <text x="80" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">x[n]</text>
+
+  <!-- Ok: girişten merkeze -->
+  <path d="M130 85 L195 85" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="195,80 205,85 195,90" fill="#5d6d7e"/>
+
+  <!-- Merkez işlem kutusu -->
+  <rect x="205" y="45" width="230" height="80" rx="12" fill="#ffffff" filter="url(#shadow)" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="320" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Dijital Sinyal İşleme</text>
+  <text x="320" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5d6d7e">Örnekleme: fₛ = 44.1 kHz</text>
+  <text x="320" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5d6d7e">Nyquist: fₛ/2 = 22.05 kHz</text>
+  <text x="320" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5d6d7e">ω₀ = 2π f₀ / fₛ</text>
+
+  <!-- Ok: merkezden çentik filtreye -->
+  <path d="M320 125 L320 155" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="315,155 320,165 325,155" fill="#5d6d7e"/>
+
+  <!-- Çentik filtre -->
+  <rect x="30" y="165" width="130" height="60" rx="10" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="95" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7e5109">Çentik Filtre</text>
+  <text x="95" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Frekans alanı</text>
+  <text x="95" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">50 Hz uğultu</text>
+
+  <!-- Ok: merkezden yankıya -->
+  <path d="M320 125 L320 155" stroke="#5d6d7e" stroke-width="2" fill="none" opacity="0"/>
+  <path d="M280 125 L180 155" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="180,150 170,160 185,158" fill="#5d6d7e"/>
+
+  <!-- Yankı -->
+  <rect x="170" y="165" width="130" height="60" rx="10" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="235" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">Yankı</text>
+  <text x="235" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Zaman alanı</text>
+  <text x="235" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">y[n] = x[n] + g·y[n-D]</text>
+
+  <!-- Ok: merkezden faz kaydırmaya -->
+  <path d="M360 125 L460 155" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="460,150 450,160 465,158" fill="#5d6d7e"/>
+
+  <!-- Faz kaydırma -->
+  <rect x="460" y="165" width="150" height="60" rx="10" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="535" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#880e4f">Faz Kaydırma</text>
+  <text x="535" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Faz ve frekans</text>
+  <text x="535" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">All-pass filtre</text>
+
+  <!-- Alt birleştirme okları -->
+  <path d="M95 225 L95 250 L320 250" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <path d="M235 225 L235 250" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <path d="M535 225 L535 250 L320 250" stroke="#5d6d7e" stroke-width="2" fill="none"/>
+  <polygon points="315,245 320,255 325,245" fill="#5d6d7e"/>
+
+  <!-- Çıkış kutusu -->
+  <rect x="250" y="255" width="140" height="45" rx="10" fill="#ffffff" filter="url(#shadow)" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">İşlenmiş Ses</text>
+  <text x="320" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5d6d7e">Normalizasyon</text>
+
+  <!-- Parametre notları -->
+  <rect x="30" y="270" width="180" height="35" rx="8" fill="#f9f9f9" filter="url(#shadowLight)" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="120" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">r: çentik genişliği</text>
+  <text x="120" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">D: gecikme örnek sayısı</text>
+
+  <rect x="430" y="270" width="180" height="35" rx="8" fill="#f9f9f9" filter="url(#shadowLight)" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="520" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">g: geri besleme kazancı</text>
+  <text x="520" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">φ: faz kayması</text>
+</svg>

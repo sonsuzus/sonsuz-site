@@ -8,6 +8,7 @@ tags:
   - JavaScript
   - Promise
   - Asenkron Programlama
+image: /img/javascript-promiselari-ile-82.png
 ---
 
 Bir API isteğinin ne zaman tamamlanacağını, dosyanın ne zaman okunacağını veya kullanıcının konum bilgisinin ne zaman geleceğini önceden bilemeyiz. JavaScript bu bekleme süresinde uygulamayı durdurmak yerine diğer işleri yürütür. Ancak sonuçları callback fonksiyonlarıyla takip etmeye çalışmak, kısa sürede girintilerle dolu bir “callback cehennemine” dönüşebilir. Promise nesneleri, gelecekte tamamlanacak işlemleri düzenli, zincirlenebilir ve güvenilir biçimde temsil ederek bu karmaşaya çözüm sunar.
@@ -25,6 +26,9 @@ Bir Promise üç durumdan birinde bulunur:
 | `pending` | İşlem devam ediyor | Beklenir |
 | `fulfilled` | İşlem başarıyla tamamlandı | Değer kullanılır |
 | `rejected` | İşlem başarısız oldu | Hata işlenir |
+
+![javascript-promiselari-ile-82](/img/javascript-promiselari-ile-82.svg)
+
 
 Bir Promise yalnızca bir kez sonuçlanır. `fulfilled` veya `rejected` durumuna geçtikten sonra tekrar değiştirilemez. Durum geçişini matematiksel olarak $pending \rightarrow fulfilled$ veya $pending \rightarrow rejected$ biçiminde gösterebiliriz. Ancak $fulfilled \rightarrow pending$ gibi bir geri dönüş mümkün değildir.
 

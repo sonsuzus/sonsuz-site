@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Modüler Aritmetik Strateji Haritası</text>
+
+  <!-- Merkez kutu: Büyük Sayı -->
+  <rect x="245" y="45" width="150" height="38" rx="10" fill="#e8f4f8" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="69" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5276" font-weight="bold">Büyük Sayı / n!</text>
+
+  <!-- Sol üst: Modülü Kontrol Et -->
+  <rect x="40" y="45" width="150" height="38" rx="10" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="115" y="69" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6608" font-weight="bold">Modülü Kontrol Et</text>
+
+  <!-- Sağ üst: Asal mı? -->
+  <rect x="450" y="45" width="150" height="38" rx="10" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="525" y="69" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#922b21" font-weight="bold">Asal mı?</text>
+
+  <!-- Oklar merkezden -->
+  <path d="M245,64 L190,64" stroke="#5b9bd5" stroke-width="1.5" fill="none"/>
+  <polygon points="190,64 198,59 198,69" fill="#5b9bd5"/>
+
+  <path d="M395,64 L450,64" stroke="#5b9bd5" stroke-width="1.5" fill="none"/>
+  <polygon points="450,64 442,59 442,69" fill="#5b9bd5"/>
+
+  <!-- Sol alt: Faktöriyel İçinde Mod Var mı? -->
+  <rect x="40" y="115" width="150" height="38" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="115" y="131" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449" font-weight="bold">Faktöriyel İçinde</text>
+  <text x="115" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449" font-weight="bold">Mod Var mı?</text>
+
+  <!-- Sağ alt: Lucas Teoremi -->
+  <rect x="450" y="115" width="150" height="38" rx="10" fill="#f4ecf7" stroke="#8e44ad" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="525" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c3483" font-weight="bold">Lucas Teoremi</text>
+
+  <!-- Alt orta: Ters Faktöriyel -->
+  <rect x="245" y="115" width="150" height="38" rx="10" fill="#ebf5fb" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#154360" font-weight="bold">Ters Faktöriyel</text>
+
+  <!-- Oklar -->
+  <path d="M115,83 L115,115" stroke="#27ae60" stroke-width="1.5" fill="none"/>
+  <polygon points="115,115 110,107 120,107" fill="#27ae60"/>
+
+  <path d="M525,83 L525,115" stroke="#8e44ad" stroke-width="1.5" fill="none"/>
+  <polygon points="525,115 520,107 530,107" fill="#8e44ad"/>
+
+  <path d="M320,83 L320,115" stroke="#2980b9" stroke-width="1.5" fill="none"/>
+  <polygon points="320,115 315,107 325,107" fill="#2980b9"/>
+
+  <!-- En alt: Sonuç -->
+  <rect x="195" y="185" width="250" height="38" rx="10" fill="#d5f5e3" stroke="#1abc9c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#0e6251" font-weight="bold">Kalanı Hesapla ve Sadeleştir</text>
+
+  <path d="M320,153 L320,185" stroke="#1abc9c" stroke-width="1.5" fill="none"/>
+  <polygon points="320,185 315,177 325,177" fill="#1abc9c"/>
+
+  <!-- Alt bilgi: Araçlar -->
+  <rect x="40" y="255" width="170" height="45" rx="10" fill="#fdf2e9" stroke="#e67e22" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="125" y="273" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a04000" font-weight="bold">Fermat: a^(p-1) = 1</text>
+  <text x="125" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a04000">Hızlı Üs Alma</text>
+
+  <rect x="235" y="255" width="170" height="45" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="320" y="273" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7d6608" font-weight="bold">Ters Eleman</text>
+  <text x="320" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7d6608">gcd(a,m)=1 Gerekli</text>
+
+  <rect x="430" y="255" width="170" height="45" rx="10" fill="#eafaf1" stroke="#2ecc71" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="515" y="273" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449" font-weight="bold">CRT / Bileşik Modül</text>
+  <text x="515" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449">Asal Çarpanlara Ayır</text>
+
+  <!-- Bağlantı çizgileri -->
+  <path d="M125,300 L125,320" stroke="#e67e22" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+  <path d="M320,300 L320,320" stroke="#f39c12" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+  <path d="M515,300 L515,320" stroke="#2ecc71" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+
+  <!-- Döngü periyodu notu -->
+  <rect x="40" y="185" width="150" height="38" rx="10" fill="#fdebd0" stroke="#f5b041" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="115" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#935116" font-weight="bold">Periyot Bul</text>
+  <text x="115" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#935116">Kuvvet Döngüsü</text>
+
+  <path d="M115,153 L115,185" stroke="#f5b041" stroke-width="1.2" fill="none"/>
+  <polygon points="115,185 110,177 120,177" fill="#f5b041"/>
+
+  <!-- Bölme tuzağı uyarısı -->
+  <rect x="450" y="185" width="150" height="38" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="525" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#922b21" font-weight="bold">Bölme Tuzağı</text>
+  <text x="525" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#922b21">Ters Yoksa Dikkat</text>
+
+  <path d="M525,153 L525,185" stroke="#e74c3c" stroke-width="1.2" fill="none"/>
+  <polygon points="525,185 520,177 530,177" fill="#e74c3c"/>
+</svg>

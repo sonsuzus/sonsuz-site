@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">COBOL ve Bankacılık Ekosistemi</text>
+
+  <!-- Merkez: COBOL Çekirdek Sistemi -->
+  <rect x="240" y="115" width="160" height="55" rx="10" fill="#e8f4f8" stroke="#5dade2" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="138" text-anchor="middle" font-weight="bold" fill="#1a5276">COBOL Çekirdek</text>
+  <text x="320" y="155" text-anchor="middle" fill="#2c3e50">Mainframe Sistemi</text>
+
+  <!-- Sol üst: Girdi -->
+  <rect x="40" y="55" width="130" height="45" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="105" y="73" text-anchor="middle" font-weight="bold" fill="#7d6608">Müşteri İşlemleri</text>
+  <text x="105" y="89" text-anchor="middle" fill="#2c3e50">Kart ve Ödeme</text>
+
+  <!-- Sol alt: Girdi -->
+  <rect x="40" y="220" width="130" height="45" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="105" y="238" text-anchor="middle" font-weight="bold" fill="#7d6608">Hesap Hareketleri</text>
+  <text x="105" y="254" text-anchor="middle" fill="#2c3e50">Bakiye ve Mutabakat</text>
+
+  <!-- Sağ üst: Çıktı -->
+  <rect x="470" y="55" width="130" height="45" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="535" y="73" text-anchor="middle" font-weight="bold" fill="#1e8449">Onay ve Kayıt</text>
+  <text x="535" y="89" text-anchor="middle" fill="#2c3e50">İşlem Sonuçları</text>
+
+  <!-- Sağ alt: Çıktı -->
+  <rect x="470" y="220" width="130" height="45" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="535" y="238" text-anchor="middle" font-weight="bold" fill="#1e8449">Raporlama</text>
+  <text x="535" y="254" text-anchor="middle" fill="#2c3e50">Günlük Kayıtlar</text>
+
+  <!-- Üst: Risk faktörü -->
+  <rect x="240" y="40" width="160" height="40" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="320" y="56" text-anchor="middle" font-weight="bold" fill="#922b21">Risk ve Uyum</text>
+  <text x="320" y="70" text-anchor="middle" fill="#2c3e50">Denetim Kontrolleri</text>
+
+  <!-- Alt: Modernizasyon -->
+  <rect x="240" y="245" width="160" height="40" rx="8" fill="#ebdef0" stroke="#8e44ad" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="320" y="261" text-anchor="middle" font-weight="bold" fill="#6c3483">Kademeli Dönüşüm</text>
+  <text x="320" y="275" text-anchor="middle" fill="#2c3e50">API Katmanları</text>
+
+  <!-- Oklar: Girdiden merkeze -->
+  <path d="M170 77 L232 130" stroke="#f39c12" stroke-width="2" fill="none"/>
+  <polygon points="232,130 224,122 226,132" fill="#f39c12"/>
+
+  <path d="M170 242 L232 160" stroke="#f39c12" stroke-width="2" fill="none"/>
+  <polygon points="232,160 224,152 226,162" fill="#f39c12"/>
+
+  <!-- Oklar: Merkezden çıktıya -->
+  <path d="M408 130 L462 77" stroke="#2ecc71" stroke-width="2" fill="none"/>
+  <polygon points="462,77 452,76 458,84" fill="#2ecc71"/>
+
+  <path d="M408 160 L462 242" stroke="#2ecc71" stroke-width="2" fill="none"/>
+  <polygon points="462,242 452,240 458,248" fill="#2ecc71"/>
+
+  <!-- Dikey oklar -->
+  <path d="M320 80 L320 115" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <polygon points="320,115 315,107 325,107" fill="#e74c3c"/>
+
+  <path d="M320 170 L320 245" stroke="#8e44ad" stroke-width="2" fill="none"/>
+  <polygon points="320,245 315,237 325,237" fill="#8e44ad"/>
+
+  <!-- Yan not: Uzman bilgisi -->
+  <rect x="40" y="140" width="130" height="40" rx="8" fill="#f4f6f7" stroke="#95a5a6" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="105" y="156" text-anchor="middle" font-weight="bold" fill="#5d6d7e">Uzman Erişimi</text>
+  <text x="105" y="170" text-anchor="middle" fill="#2c3e50">Azalan Bilgi</text>
+
+  <!-- Yan not: Kanıtlanmış -->
+  <rect x="470" y="140" width="130" height="40" rx="8" fill="#f4f6f7" stroke="#95a5a6" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="535" y="156" text-anchor="middle" font-weight="bold" fill="#5d6d7e">Kanıtlanmış Süre</text>
+  <text x="535" y="170" text-anchor="middle" fill="#2c3e50">On Yıllar</text>
+
+  <!-- Kesikli bağlantılar -->
+  <path d="M170 160 L240 142" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <path d="M400 142 L470 160" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="308" text-anchor="middle" font-size="10" fill="#7f8c8d">Eski kod değil; bilgi kaybı asıl kırılganlıktır</text>
+</svg>

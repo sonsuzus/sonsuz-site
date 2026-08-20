@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7cb8e8"/>
+      <stop offset="100%" stop-color="#5a9bd5"/>
+    </linearGradient>
+    <linearGradient id="syncGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8a8"/>
+      <stop offset="100%" stop-color="#88c88a"/>
+    </linearGradient>
+    <linearGradient id="asyncGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c88a"/>
+      <stop offset="100%" stop-color="#e8b060"/>
+    </linearGradient>
+    <linearGradient id="timeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8a8e8"/>
+      <stop offset="100%" stop-color="#b088d0"/>
+    </linearGradient>
+    <linearGradient id="protoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0a0a0"/>
+      <stop offset="100%" stop-color="#e08080"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Merkez düğüm -->
+  <circle cx="320" cy="160" r="58" fill="url(#centerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Ortak</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">"Şimdi"</text>
+
+  <!-- Dış düğümler -->
+  <!-- Kronolojik -->
+  <rect x="30" y="30" width="130" height="52" rx="10" fill="url(#timeGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="95" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Kronolojik</text>
+  <text x="95" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Takvim ve saat</text>
+
+  <!-- Biyolojik -->
+  <rect x="480" y="30" width="130" height="52" rx="10" fill="url(#timeGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="545" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Biyolojik</text>
+  <text x="545" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Uyku ve enerji</text>
+
+  <!-- Sosyal -->
+  <rect x="255" y="20" width="130" height="52" rx="10" fill="url(#timeGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="42" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Sosyal</text>
+  <text x="320" y="60" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Aile ve toplum</text>
+
+  <!-- Eşzamanlı -->
+  <rect x="30" y="240" width="130" height="52" rx="10" fill="url(#syncGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="95" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Eşzamanlı</text>
+  <text x="95" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Hızlı geri bildirim</text>
+
+  <!-- Eşzamansız -->
+  <rect x="480" y="240" width="130" height="52" rx="10" fill="url(#asyncGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="545" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Eşzamansız</text>
+  <text x="545" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Derin çalışma</text>
+
+  <!-- Protokol -->
+  <rect x="255" y="248" width="130" height="52" rx="10" fill="url(#protoGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Protokol</text>
+  <text x="320" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Güven inşası</text>
+
+  <!-- Bağlantı çizgileri ve oklar -->
+  <!-- Kronolojik -->
+  <path d="M 120 82 Q 200 130 268 160" stroke="#5a9bd5" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="268,160 258,154 260,166" fill="#5a9bd5" opacity="0.8"/>
+
+  <!-- Biyolojik -->
+  <path d="M 520 82 Q 440 130 372 160" stroke="#5a9bd5" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="372,160 382,154 380,166" fill="#5a9bd5" opacity="0.8"/>
+
+  <!-- Sosyal -->
+  <path d="M 320 72 L 320 100" stroke="#5a9bd5" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="320,102 315,94 325,94" fill="#5a9bd5" opacity="0.8"/>
+
+  <!-- Eşzamanlı -->
+  <path d="M 120 240 Q 200 200 268 170" stroke="#88c88a" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="268,170 258,174 262,162" fill="#88c88a" opacity="0.8"/>
+
+  <!-- Eşzamansız -->
+  <path d="M 520 240 Q 440 200 372 170" stroke="#e8b060" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="372,170 382,174 378,162" fill="#e8b060" opacity="0.8"/>
+
+  <!-- Protokol -->
+  <path d="M 320 248 L 320 220" stroke="#e08080" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="320,218 315,226 325,226" fill="#e08080" opacity="0.8"/>
+
+  <!-- Denge sembolü -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#666666" opacity="0.8">Denge ve adalet</text>
+
+</svg>

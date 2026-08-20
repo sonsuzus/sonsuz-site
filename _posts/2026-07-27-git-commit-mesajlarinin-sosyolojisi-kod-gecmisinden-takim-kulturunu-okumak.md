@@ -8,7 +8,11 @@ tags:
   - Git
   - Takım Kültürü
   - Yazılım Geliştirme
+image: /img/git-commit-mesajlarinin-65.png
 ---
+
+![git-commit-mesajlarinin-65](/img/git-commit-mesajlarinin-65.svg)
+
 
 Bir Git deposunun commit geçmişi yalnızca kodun nasıl değiştiğini anlatmaz; ekibin iletişim alışkanlıklarını, baskı altında nasıl davrandığını ve sorumluluğu nasıl paylaştığını da gösterir. “fix”, “nihayet çalıştı” veya “ödeme servisinde zaman aşımını düzelt” ifadeleri teknik olarak aynı değişikliği işaret edebilir; fakat her biri bambaşka bir ekip kültürünün izini taşır.
 
