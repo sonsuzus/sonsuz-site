@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#d9f3e5"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#718096" flood-opacity="0.20"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#718096" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="318" cy="160" r="116" fill="#ffffff" opacity="0.34"/>
+  <circle cx="318" cy="160" r="88" fill="none" stroke="#b7d8d1" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <path d="M247 119 C220 96 195 83 168 76" fill="none" stroke="#77a8d8" stroke-width="2"/>
+  <polygon points="169,71 157,74 166,82" fill="#77a8d8"/>
+  <path d="M388 118 C419 92 449 79 478 75" fill="none" stroke="#bd85aa" stroke-width="2"/>
+  <polygon points="477,70 490,73 480,81" fill="#bd85aa"/>
+  <path d="M319 218 C319 238 319 250 319 263" fill="none" stroke="#6ab891" stroke-width="2"/>
+  <polygon points="313,261 319,272 325,261" fill="#6ab891"/>
+
+  <g filter="url(#golge)">
+    <rect x="244" y="107" width="148" height="112" rx="25" fill="url(#merkez)" stroke="#a9d2c7" stroke-width="1.5"/>
+  </g>
+  <text x="318" y="134" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#28556b">EN KISA YOL</text>
+  <text x="318" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456474">Ağırlıklı Graf</text>
+
+  <g stroke="#5a8294" stroke-width="2" fill="#ffffff">
+    <circle cx="278" cy="179" r="8"/>
+    <circle cx="319" cy="164" r="8"/>
+    <circle cx="358" cy="182" r="8"/>
+    <circle cx="295" cy="196" r="8"/>
+  </g>
+  <path d="M284 176 L311 167 M327 167 L351 178 M287 184 L293 189 M302 194 L351 184 M280 171 L290 157 L312 160" fill="none" stroke="#5a8294" stroke-width="2"/>
+  <text x="318" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456474">en düşük maliyet</text>
+
+  <g filter="url(#golge)">
+    <rect x="26" y="30" width="164" height="94" rx="18" fill="#e7f1ff" stroke="#aac9e9"/>
+  </g>
+  <rect x="42" y="45" width="31" height="27" rx="9" fill="#a9cdf2"/>
+  <path d="M49 62 L56 54 L66 54 M66 54 L63 50 M66 54 L62 59" fill="none" stroke="#285d89" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="83" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285d89">Dijkstra</text>
+  <text x="42" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496a83">Tek kaynak</text>
+  <text x="42" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496a83">Negatif yok</text>
+  <text x="145" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285d89">Hızlı</text>
+
+  <g filter="url(#golge)">
+    <rect x="450" y="30" width="164" height="94" rx="18" fill="#faeaf3" stroke="#e2b5cd"/>
+  </g>
+  <rect x="466" y="45" width="31" height="27" rx="9" fill="#e9b8d2"/>
+  <path d="M473 55 L489 55 M473 62 L485 62 M486 51 L490 55 L486 59" fill="none" stroke="#8a3f6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="507" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#843b66">Bellman-Ford</text>
+  <text x="466" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78536a">Tek kaynak</text>
+  <text x="466" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78536a">Negatif kontrol</text>
+  <circle cx="588" cy="103" r="8" fill="#d982ae"/>
+  <path d="M584 103 L587 106 L593 99" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#golge)">
+    <rect x="225" y="267" width="186" height="45" rx="17" fill="#e4f5ea" stroke="#a9d8bd"/>
+  </g>
+  <rect x="240" y="277" width="29" height="25" rx="7" fill="#a6d9b9"/>
+  <path d="M247 284 H252 V289 H247 Z M257 284 H262 V289 H257 Z M247 294 H252 V299 H247 Z M257 294 H262 V299 H257 Z" fill="#37785b"/>
+  <text x="280" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#337255">Floyd-Warshall</text>
+  <text x="280" y="302" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527565">Tüm çiftler · Matris</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="28" y="160" width="166" height="112" rx="18" fill="#ffffff" opacity="0.84"/>
+  </g>
+  <text x="47" y="186" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6475">Seçim Kriteri</text>
+  <path d="M48 202 H174" stroke="#d4e1e7" stroke-width="1"/>
+  <circle cx="56" cy="219" r="5" fill="#80b5e5"/>
+  <text x="69" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d7d">Seyrek ağ</text>
+  <circle cx="56" cy="244" r="5" fill="#d98bb2"/>
+  <text x="69" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d7d">Negatif maliyet</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="447" y="160" width="166" height="112" rx="18" fill="#ffffff" opacity="0.84"/>
+  </g>
+  <text x="466" y="186" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6475">Kapsam</text>
+  <path d="M467 202 H593" stroke="#d4e1e7" stroke-width="1"/>
+  <path d="M474 219 H486 M480 213 V225" stroke="#6cae89" stroke-width="2" stroke-linecap="round"/>
+  <text x="497" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d7d">Bir kaynak</text>
+  <path d="M474 244 H486 M480 238 V250" stroke="#6cae89" stroke-width="2" stroke-linecap="round"/>
+  <text x="497" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d7d">Tüm düğümler</text>
+</svg>

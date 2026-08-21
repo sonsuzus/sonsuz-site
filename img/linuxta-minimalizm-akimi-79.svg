@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d4a3e"/>
+      <stop offset="100%" stop-color="#1a2e26"/>
+    </linearGradient>
+    <linearGradient id="layer1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0e4"/>
+      <stop offset="100%" stop-color="#d4e8d0"/>
+    </linearGradient>
+    <linearGradient id="layer2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dce8f5"/>
+      <stop offset="100%" stop-color="#c8daf0"/>
+    </linearGradient>
+    <linearGradient id="layer3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0e8dc"/>
+      <stop offset="100%" stop-color="#e8dcc8"/>
+    </linearGradient>
+    <linearGradient id="arrow1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5a7a6a"/>
+      <stop offset="100%" stop-color="#7a9a8a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2d4a3e">Linux Minimalizm Felsefesi</text>
+
+  <!-- Merkez çekirdek -->
+  <rect x="255" y="120" width="130" height="50" rx="12" fill="url(#core)" filter="url(#shadow)"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#f0f8f0">TTY + tmux</text>
+  <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#c0d8c8">odak oturumu</text>
+
+  <!-- Katman 1: Tam masaüstü -->
+  <rect x="40" y="50" width="150" height="44" rx="10" fill="url(#layer1)" filter="url(#shadowLight)" stroke="#b0c8a8" stroke-width="1"/>
+  <text x="115" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a5a4a">Tam Masaüstü</text>
+  <text x="115" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a7a6a">GNOME / KDE</text>
+
+  <!-- Katman 2: Fayanslı PM -->
+  <rect x="40" y="130" width="150" height="44" rx="10" fill="url(#layer2)" filter="url(#shadowLight)" stroke="#a8b8d0" stroke-width="1"/>
+  <text x="115" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a4a6a">Fayanslı PM</text>
+  <text x="115" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a6a8a">i3 / dwm</text>
+
+  <!-- Katman 3: TTY -->
+  <rect x="40" y="210" width="150" height="44" rx="10" fill="url(#layer3)" filter="url(#shadowLight)" stroke="#d0c0a8" stroke-width="1"/>
+  <text x="115" y="228" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a5a3a">TTY + Araçlar</text>
+  <text x="115" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8a7a5a">Neovim / mutt</text>
+
+  <!-- Oklar: soldan merkeze -->
+  <!-- Katman 1 → Merkez -->
+  <path d="M190 72 C 220 72, 220 130, 255 135" stroke="url(#arrow1)" stroke-width="2" fill="none"/>
+  <polygon points="255,135 245,130 247,140" fill="#5a7a6a"/>
+
+  <!-- Katman 2 → Merkez -->
+  <path d="M190 152 C 220 152, 220 145, 255 140" stroke="url(#arrow1)" stroke-width="2" fill="none"/>
+  <polygon points="255,140 245,136 247,146" fill="#5a7a6a"/>
+
+  <!-- Katman 3 → Merkez -->
+  <path d="M190 232 C 220 232, 220 155, 255 148" stroke="url(#arrow1)" stroke-width="2" fill="none"/>
+  <polygon points="255,148 245,143 247,153" fill="#5a7a6a"/>
+
+  <!-- Sağ taraf: Maliyet bileşenleri -->
+  <text x="470" y="55" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#4a6a5a">Maliyet Bileşenleri</text>
+
+  <rect x="420" y="70" width="100" height="32" rx="8" fill="#e8f0f8" filter="url(#shadowLight)" stroke="#b8c8d8" stroke-width="1"/>
+  <text x="470" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a6a">C_sistem</text>
+
+  <rect x="530" y="70" width="90" height="32" rx="8" fill="#e8f0f8" filter="url(#shadowLight)" stroke="#b8c8d8" stroke-width="1"/>
+  <text x="575" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a6a">C_uygulama</text>
+
+  <rect x="420" y="115" width="100" height="32" rx="8" fill="#e8f0f8" filter="url(#shadowLight)" stroke="#b8c8d8" stroke-width="1"/>
+  <text x="470" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a6a">C_arayüz</text>
+
+  <rect x="530" y="115" width="90" height="32" rx="8" fill="#f0e8e0" filter="url(#shadowLight)" stroke="#d8c8b8" stroke-width="1"/>
+  <text x="575" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#8a5a3a">C_dikkat</text>
+
+  <!-- Merkez → Sağ ok -->
+  <path d="M385 140 C 400 140, 400 100, 420 90" stroke="#7a9a8a" stroke-width="2" fill="none"/>
+  <polygon points="420,90 410,86 412,96" fill="#7a9a8a"/>
+
+  <path d="M385 145 C 400 145, 400 130, 420 130" stroke="#7a9a8a" stroke-width="2" fill="none"/>
+  <polygon points="420,130 410,126 412,136" fill="#7a9a8a"/>
+
+  <!-- Alt bilgi: Formül -->
+  <rect x="140" y="270" width="360" height="36" rx="8" fill="#e8f0e8" filter="url(#shadowLight)" stroke="#c0d8c0" stroke-width="1"/>
+  <text x="320" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3a5a3a" font-weight="bold">C_toplam = C_sistem + Σ C_uygulama + C_arayüz + C_dikkat</text>
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8a6a">amaç: C_dikkat terimini küçültmek</text>
+
+  <!-- Dekoratif noktalar -->
+  <circle cx="580" cy="200" r="3" fill="#a8c8b8" opacity="0.5"/>
+  <circle cx="560" cy="220" r="2" fill="#b8d8c8" opacity="0.4"/>
+  <circle cx="600" cy="230" r="2.5" fill="#98b8a8" opacity="0.3"/>
+  <circle cx="50" cy="280" r="2" fill="#c0d8c8" opacity="0.4"/>
+  <circle cx="70" cy="295" r="3" fill="#b0c8b8" opacity="0.3"/>
+</svg>

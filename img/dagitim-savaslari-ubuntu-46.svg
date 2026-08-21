@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="gradUbuntu" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="gradArch" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="gradDebian" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+    <linearGradient id="gradCenter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="125" width="150" height="70" rx="14" fill="url(#gradCenter)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Linux Dağıtımı</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e2e8f0">Sosyal Sözleşme</text>
+  <text x="320" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e2e8f0">U = wK + wS + wC + wF</text>
+
+  <!-- Ubuntu kutusu -->
+  <rect x="30" y="40" width="150" height="80" rx="12" fill="url(#gradUbuntu)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="105" y="65" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Ubuntu</text>
+  <text x="105" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffedd5">Kolaylık</text>
+  <text x="105" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffedd5">Hazır deneyim</text>
+  <text x="105" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffedd5">LTS sürümler</text>
+
+  <!-- Arch kutusu -->
+  <rect x="460" y="40" width="150" height="80" rx="12" fill="url(#gradArch)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="535" y="65" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Arch Linux</text>
+  <text x="535" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e0f2fe">Kontrol</text>
+  <text x="535" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e0f2fe">Güncellik</text>
+  <text x="535" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e0f2fe">Rolling release</text>
+
+  <!-- Debian kutusu -->
+  <rect x="245" y="215" width="150" height="80" rx="12" fill="url(#gradDebian)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Debian</text>
+  <text x="320" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f3e8ff">Stabilite</text>
+  <text x="320" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f3e8ff">Özgürlük</text>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f3e8ff">Yavaş sürümler</text>
+
+  <!-- Ok: Ubuntu -> Merkez -->
+  <path d="M180 80 L240 145" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="240,145 232,137 234,148" fill="#64748b" opacity="0.6"/>
+
+  <!-- Ok: Arch -> Merkez -->
+  <path d="M460 80 L400 145" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="400,145 408,137 406,148" fill="#64748b" opacity="0.6"/>
+
+  <!-- Ok: Debian -> Merkez -->
+  <path d="M320 215 L320 200" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="320,200 315,207 325,207" fill="#64748b" opacity="0.6"/>
+
+  <!-- Alt bilgi etiketi -->
+  <rect x="180" y="300" width="280" height="18" rx="9" fill="#e2e8f0" filter="url(#shadowLight)" opacity="0.8"/>
+  <text x="320" y="313" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#475569">En iyi dağıtım kullanıcıya göre değişir</text>
+</svg>

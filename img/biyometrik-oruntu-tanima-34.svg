@@ -1,0 +1,143 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 12px;">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#d1ecf1"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0e6ff"/>
+      <stop offset="100%" stop-color="#e0ccff"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5e6"/>
+      <stop offset="100%" stop-color="#ffe6cc"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6ffe6"/>
+      <stop offset="100%" stop-color="#ccffcc"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe6e6"/>
+      <stop offset="100%" stop-color="#ffcccc"/>
+    </linearGradient>
+    <linearGradient id="box6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f0ff"/>
+      <stop offset="100%" stop-color="#cce0ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="8"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Biyometrik Örüntü Tanıma Sistemi</text>
+
+  <!-- Akış şeması: soldan sağa -->
+  
+  <!-- 1. Sensör -->
+  <rect x="20" y="60" width="100" height="45" rx="8" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="70" y="80" text-anchor="middle" fill="#1a5276" font-weight="bold">Sensör</text>
+  <text x="70" y="95" text-anchor="middle" fill="#1a5276">Görüntü Alımı</text>
+
+  <!-- Ok 1 -->
+  <polygon points="125,82 140,82 140,78 150,85 140,92 140,88 125,88" fill="#5dade2"/>
+
+  <!-- 2. Ön İşleme -->
+  <rect x="155" y="60" width="100" height="45" rx="8" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="205" y="80" text-anchor="middle" fill="#4a235a" font-weight="bold">Ön İşleme</text>
+  <text x="205" y="95" text-anchor="middle" fill="#4a235a">Gürültü Azaltma</text>
+
+  <!-- Ok 2 -->
+  <polygon points="260,82 275,82 275,78 285,85 275,92 275,88 260,88" fill="#8e44ad"/>
+
+  <!-- 3. Özellik Çıkarımı -->
+  <rect x="290" y="60" width="100" height="45" rx="8" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="340" y="80" text-anchor="middle" fill="#7e5109" font-weight="bold">Özellik</text>
+  <text x="340" y="95" text-anchor="middle" fill="#7e5109">Çıkarımı</text>
+
+  <!-- Ok 3 -->
+  <polygon points="395,82 410,82 410,78 420,85 410,92 410,88 395,88" fill="#e67e22"/>
+
+  <!-- 4. Şablon Oluşturma -->
+  <rect x="425" y="60" width="100" height="45" rx="8" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="475" y="80" text-anchor="middle" fill="#145a32" font-weight="bold">Şablon</text>
+  <text x="475" y="95" text-anchor="middle" fill="#145a32">Oluşturma</text>
+
+  <!-- Ok 4 -->
+  <polygon points="530,82 545,82 545,78 555,85 545,92 545,88 530,88" fill="#27ae60"/>
+
+  <!-- 5. Eşleştirme -->
+  <rect x="560" y="60" width="60" height="45" rx="8" fill="url(#box5)" filter="url(#shadow)"/>
+  <text x="590" y="80" text-anchor="middle" fill="#922b21" font-weight="bold">Eşleştirme</text>
+  <text x="590" y="95" text-anchor="middle" fill="#922b21">Karar</text>
+
+  <!-- Alt bölüm: Benzerlik Hesaplama -->
+  <rect x="155" y="140" width="240" height="50" rx="8" fill="url(#box6)" filter="url(#shadow)"/>
+  <text x="275" y="160" text-anchor="middle" fill="#1b4f72" font-weight="bold">Benzerlik Hesaplama</text>
+  <text x="275" y="178" text-anchor="middle" fill="#1b4f72">Öklid Uzaklığı ve Skor</text>
+
+  <!-- Ok 5: Eşleştirmeden benzerliğe -->
+  <polygon points="590,108 590,130 586,130 593,140 600,130 596,130 596,108" fill="#3498db"/>
+
+  <!-- Ok 6: Benzerlikten eşleştirmeye -->
+  <polygon points="275,138 275,115 279,115 272,105 265,115 269,115 269,138" fill="#3498db"/>
+
+  <!-- Alt bölüm: Eşik Kararı -->
+  <rect x="425" y="140" width="160" height="50" rx="8" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="505" y="160" text-anchor="middle" fill="#1a5276" font-weight="bold">Eşik Kararı</text>
+  <text x="505" y="178" text-anchor="middle" fill="#1a5276">FAR ve FRR Dengesi</text>
+
+  <!-- Ok 7: Benzerlikten eşiğe -->
+  <polygon points="398,165 420,165 420,161 430,168 420,175 420,171 398,171" fill="#5dade2"/>
+
+  <!-- Alt bölüm: Değerlendirme -->
+  <rect x="155" y="220" width="200" height="50" rx="8" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="255" y="240" text-anchor="middle" fill="#4a235a" font-weight="bold">Değerlendirme</text>
+  <text x="255" y="258" text-anchor="middle" fill="#4a235a">FAR / FRR Metrikleri</text>
+
+  <!-- Ok 8: Eşikten değerlendirmeye -->
+  <polygon points="505,193 505,215 501,215 508,225 515,215 511,215 511,193" fill="#8e44ad"/>
+
+  <!-- Alt bölüm: Güvenlik -->
+  <rect x="400" y="220" width="190" height="50" rx="8" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="495" y="240" text-anchor="middle" fill="#7e5109" font-weight="bold">Güvenlik ve Gizlilik</text>
+  <text x="495" y="258" text-anchor="middle" fill="#7e5109">İptal Edilebilir Şablonlar</text>
+
+  <!-- Ok 9: Değerlendirmeden güvenliğe -->
+  <polygon points="358,245 395,245 395,241 405,248 395,255 395,251 358,251" fill="#e67e22"/>
+
+  <!-- Alt bölüm: Python Prototipi -->
+  <rect x="20" y="220" width="110" height="50" rx="8" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="75" y="240" text-anchor="middle" fill="#145a32" font-weight="bold">Python</text>
+  <text x="75" y="258" text-anchor="middle" fill="#145a32">Prototip</text>
+
+  <!-- Ok 10: Sensörden prototipe -->
+  <polygon points="70,108 70,215 66,215 73,225 80,215 76,215 76,108" fill="#27ae60"/>
+
+  <!-- Ok 11: Prototipten değerlendirmeye -->
+  <polygon points="133,245 150,245 150,241 160,248 150,255 150,251 133,251" fill="#3498db"/>
+
+  <!-- Parmak izi ve iris ikonları -->
+  <circle cx="45" cy="140" r="18" fill="#e8f4f8" stroke="#5dade2" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="45" y="145" text-anchor="middle" font-size="10" fill="#1a5276">Parmak</text>
+  <text x="45" y="155" text-anchor="middle" font-size="10" fill="#1a5276">İzi</text>
+
+  <circle cx="80" cy="140" r="18" fill="#f0e6ff" stroke="#8e44ad" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="80" y="145" text-anchor="middle" font-size="10" fill="#4a235a">İris</text>
+  <text x="80" y="155" text-anchor="middle" font-size="10" fill="#4a235a">Deseni</text>
+
+  <!-- Ok 12: Parmak izinden ön işleme -->
+  <polygon points="63,140 100,140 100,136 110,143 100,150 100,146 63,146" fill="#5dade2"/>
+
+  <!-- Ok 13: İristen ön işleme -->
+  <polygon points="98,140 120,140 120,136 130,143 120,150 120,146 98,146" fill="#8e44ad"/>
+
+  <!-- Bilgi notu -->
+  <text x="320" y="300" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">Sentetik vektörlerle çalışan temel biyometrik eşleştirme mantığı</text>
+</svg>

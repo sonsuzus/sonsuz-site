@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="blobGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#c7ecee"/>
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b5e7a0"/>
+      <stop offset="100%" stop-color="#d5f5c3"/>
+    </linearGradient>
+    <linearGradient id="commitGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8c291"/>
+      <stop offset="100%" stop-color="#fad390"/>
+    </linearGradient>
+    <linearGradient id="hashGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7bde2"/>
+      <stop offset="100%" stop-color="#e8daef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Mini Git: Nesne Modeli</text>
+
+  <!-- SHA-1 Merkez -->
+  <rect x="250" y="55" width="140" height="45" rx="10" fill="url(#hashGrad)" filter="url(#shadow)"/>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">SHA-1 Özeti</text>
+  <text x="320" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">İçerik Adresleme</text>
+
+  <!-- Blob -->
+  <rect x="50" y="130" width="140" height="55" rx="10" fill="url(#blobGrad)" filter="url(#shadow)"/>
+  <text x="120" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Blob</text>
+  <text x="120" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">Ham dosya içeriği</text>
+  <text x="120" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">İsim bilmez</text>
+
+  <!-- Tree -->
+  <rect x="250" y="130" width="140" height="55" rx="10" fill="url(#treeGrad)" filter="url(#shadow)"/>
+  <text x="320" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Tree</text>
+  <text x="320" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">İsim + blob kimliği</text>
+  <text x="320" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">Klasör indeksi</text>
+
+  <!-- Commit -->
+  <rect x="450" y="130" width="140" height="55" rx="10" fill="url(#commitGrad)" filter="url(#shadow)"/>
+  <text x="520" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Commit</text>
+  <text x="520" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">Tree + ebeveyn + mesaj</text>
+  <text x="520" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">Tarihli fotoğraf</text>
+
+  <!-- Oklar -->
+  <!-- Blob -> SHA -->
+  <path d="M 190 155 L 245 95" stroke="#2c3e50" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="245,95 238,90 240,98" fill="#2c3e50" opacity="0.6"/>
+
+  <!-- Tree -> SHA -->
+  <path d="M 320 130 L 320 100" stroke="#2c3e50" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="320,100 315,105 325,105" fill="#2c3e50" opacity="0.6"/>
+
+  <!-- Commit -> SHA -->
+  <path d="M 450 155 L 395 95" stroke="#2c3e50" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="395,95 390,100 398,98" fill="#2c3e50" opacity="0.6"/>
+
+  <!-- Tree -> Blob (geri bildirim) -->
+  <path d="M 250 165 L 195 165" stroke="#2c3e50" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="4,3"/>
+  <polygon points="195,165 202,161 202,169" fill="#2c3e50" opacity="0.4"/>
+
+  <!-- Commit -> Tree -->
+  <path d="M 450 155 L 395 155" stroke="#2c3e50" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="4,3"/>
+  <polygon points="395,155 402,151 402,159" fill="#2c3e50" opacity="0.4"/>
+
+  <!-- Alt bilgi: Zincir -->
+  <rect x="120" y="230" width="400" height="55" rx="10" fill="#ffffff" opacity="0.7" filter="url(#shadow)"/>
+  <text x="320" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Değişmez Nesne Zinciri</text>
+  <text x="320" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">Blob → Tree → Commit → Ebeveyn bağlantısı</text>
+  <text x="320" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">Aynı içerik → Aynı kimlik</text>
+
+  <!-- Küçük blob/tree/commit görselleri -->
+  <circle cx="160" cy="245" r="6" fill="#a8d8ea" opacity="0.8"/>
+  <circle cx="280" cy="245" r="6" fill="#b5e7a0" opacity="0.8"/>
+  <circle cx="400" cy="245" r="6" fill="#f8c291" opacity="0.8"/>
+  <circle cx="480" cy="245" r="6" fill="#d7bde2" opacity="0.8"/>
+
+  <!-- Bağlantı çizgileri -->
+  <line x1="166" y1="245" x2="274" y2="245" stroke="#2c3e50" stroke-width="1" opacity="0.3"/>
+  <line x1="286" y1="245" x2="394" y2="245" stroke="#2c3e50" stroke-width="1" opacity="0.3"/>
+  <line x1="406" y1="245" x2="474" y2="245" stroke="#2c3e50" stroke-width="1" opacity="0.3"/>
+</svg>

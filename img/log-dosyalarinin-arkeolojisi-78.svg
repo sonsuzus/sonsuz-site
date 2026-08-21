@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fae8c8"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#d0edd0"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde8e8"/>
+      <stop offset="100%" stop-color="#f5d0d0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8e0f0"/>
+      <stop offset="100%" stop-color="#d8cce8"/>
+    </linearGradient>
+    <linearGradient id="center" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8e1"/>
+      <stop offset="100%" stop-color="#ffeeb0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arkaplan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a4a5a">Log Arkeolojisi: Geçmişi Okumak</text>
+
+  <!-- Merkez: /var/log kazı alanı -->
+  <rect x="240" y="120" width="160" height="56" rx="14" fill="url(#center)" stroke="#d4a843" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#5a4a20">/var/log</text>
+  <text x="320" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a6a40">Kazı Alanı</text>
+
+  <!-- Katman 1: Zaman -->
+  <rect x="40" y="40" width="120" height="44" rx="10" fill="url(#box1)" stroke="#7a9cc6" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="100" y="58" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a4a6a">Zaman Damgası</text>
+  <text x="100" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">t: ne zaman</text>
+
+  <!-- Katman 2: Bileşen -->
+  <rect x="480" y="40" width="120" height="44" rx="10" fill="url(#box2)" stroke="#c6a060" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="540" y="58" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a4a20">Bileşen</text>
+  <text x="540" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a6a40">s: hangi servis</text>
+
+  <!-- Katman 3: Mesaj -->
+  <rect x="40" y="220" width="120" height="44" rx="10" fill="url(#box3)" stroke="#6aaa6a" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="100" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a5a2a">Mesaj</text>
+  <text x="100" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a4a">m: ne oldu</text>
+
+  <!-- Katman 4: Önem -->
+  <rect x="480" y="220" width="120" height="44" rx="10" fill="url(#box4)" stroke="#c66a6a" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="540" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a2a2a">Önem Derecesi</text>
+  <text x="540" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a4a4a">p: kritiklik</text>
+
+  <!-- Alt bilgi: Korelasyon -->
+  <rect x="200" y="260" width="240" height="36" rx="10" fill="url(#box5)" stroke="#8a7aaa" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="320" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a2a5a">Korelasyon ile Anlam</text>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a7a">neden-sonuç bağlamı</text>
+
+  <!-- Oklar: merkezden dışa -->
+  <!-- Sol üst ok -->
+  <path d="M 240 130 Q 180 110 160 84" fill="none" stroke="#7a9cc6" stroke-width="1.8"/>
+  <polygon points="160,84 170,90 164,76" fill="#7a9cc6"/>
+
+  <!-- Sağ üst ok -->
+  <path d="M 400 130 Q 460 110 480 84" fill="none" stroke="#c6a060" stroke-width="1.8"/>
+  <polygon points="480,84 470,90 476,76" fill="#c6a060"/>
+
+  <!-- Sol alt ok -->
+  <path d="M 240 176 Q 180 200 160 220" fill="none" stroke="#6aaa6a" stroke-width="1.8"/>
+  <polygon points="160,220 170,214 164,228" fill="#6aaa6a"/>
+
+  <!-- Sağ alt ok -->
+  <path d="M 400 176 Q 460 200 480 220" fill="none" stroke="#c66a6a" stroke-width="1.8"/>
+  <polygon points="480,220 470,214 476,228" fill="#c66a6a"/>
+
+  <!-- Alt ok: korelasyona -->
+  <path d="M 320 176 L 320 260" fill="none" stroke="#8a7aaa" stroke-width="1.8"/>
+  <polygon points="320,260 315,250 325,250" fill="#8a7aaa"/>
+
+  <!-- Üst bağlantı çizgileri -->
+  <line x1="160" y1="62" x2="240" y2="130" stroke="#a0b8d0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="480" y1="62" x2="400" y2="130" stroke="#d0b880" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="160" y1="242" x2="240" y2="176" stroke="#a0c8a0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="480" y1="242" x2="400" y2="176" stroke="#d0a0a0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Küçük etiketler -->
+  <text x="180" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a7a9a">L = (t, s, h, m, p)</text>
+  <text x="460" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9a7a4a">h: ana makine</text>
+  <text x="180" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a8a5a">ardışık olaylar</text>
+  <text x="460" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9a5a5a">filtreleme</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Kod Estetiği Modeli</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="110" width="150" height="50" rx="14" fill="#e8f4f8" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Estetik Algı</text>
+  <text x="320" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">E = αO + βT + γA - δY</text>
+
+  <!-- Okunabilirlik -->
+  <rect x="40" y="40" width="130" height="44" rx="12" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="105" y="58" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Okunabilirlik</text>
+  <text x="105" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">α katsayısı</text>
+
+  <!-- Tutarlılık -->
+  <rect x="40" y="130" width="130" height="44" rx="12" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="105" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Tutarlılık</text>
+  <text x="105" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">β katsayısı</text>
+
+  <!-- Aşinalık -->
+  <rect x="40" y="220" width="130" height="44" rx="12" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="105" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Aşinalık</text>
+  <text x="105" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">γ katsayısı</text>
+
+  <!-- Görsel Yük -->
+  <rect x="470" y="40" width="130" height="44" rx="12" fill="#fdebd0" stroke="#e67e22" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="535" y="58" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ca6f1e">Görsel Yük</text>
+  <text x="535" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">δ katsayısı</text>
+
+  <!-- Söz Dizimi -->
+  <rect x="470" y="130" width="130" height="44" rx="12" fill="#e8daef" stroke="#8e44ad" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="535" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6c3483">Söz Dizimi</text>
+  <text x="535" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Biçim ve Yapı</text>
+
+  <!-- Bağlam -->
+  <rect x="470" y="220" width="130" height="44" rx="12" fill="#fadbd8" stroke="#c0392b" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="535" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a93226">Bağlam</text>
+  <text x="535" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Deneyim ve Araç</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Okunabilirlik -> Merkez -->
+  <path d="M170 62 L240 125" stroke="#27ae60" stroke-width="1.8" fill="none"/>
+  <polygon points="240,125 231,118 232,128" fill="#27ae60"/>
+
+  <!-- Tutarlılık -> Merkez -->
+  <path d="M170 152 L240 135" stroke="#27ae60" stroke-width="1.8" fill="none"/>
+  <polygon points="240,135 231,129 232,139" fill="#27ae60"/>
+
+  <!-- Aşinalık -> Merkez -->
+  <path d="M170 242 L240 145" stroke="#27ae60" stroke-width="1.8" fill="none"/>
+  <polygon points="240,145 231,138 232,148" fill="#27ae60"/>
+
+  <!-- Görsel Yük -> Merkez -->
+  <path d="M470 62 L400 125" stroke="#e67e22" stroke-width="1.8" fill="none"/>
+  <polygon points="400,125 391,118 392,128" fill="#e67e22"/>
+
+  <!-- Söz Dizimi -> Merkez -->
+  <path d="M470 152 L400 135" stroke="#8e44ad" stroke-width="1.8" fill="none"/>
+  <polygon points="400,135 391,129 392,139" fill="#8e44ad"/>
+
+  <!-- Bağlam -> Merkez -->
+  <path d="M470 242 L400 145" stroke="#c0392b" stroke-width="1.8" fill="none"/>
+  <polygon points="400,145 391,138 392,148" fill="#c0392b"/>
+
+  <!-- Alt not -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d" font-style="italic">Katsayılar kişiden kişiye değişir</text>
+</svg>

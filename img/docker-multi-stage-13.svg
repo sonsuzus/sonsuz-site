@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="builder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3ecff"/>
+      <stop offset="100%" stop-color="#d4e2fb"/>
+    </linearGradient>
+    <linearGradient id="runtime" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff4e8"/>
+      <stop offset="100%" stop-color="#caead9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="81" cy="45" r="64" fill="#dcecff" opacity="0.42"/>
+  <circle cx="580" cy="272" r="82" fill="#d9f0de" opacity="0.45"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#30465d">Docker Multi-Stage Build</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62778c">Atölyeden yalın çalışma imajına</text>
+
+  <rect x="38" y="72" width="218" height="197" rx="20" fill="url(#builder)" stroke="#b9ceee" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="58" y="88" width="178" height="31" rx="11" fill="#5484ca" filter="url(#softShadow)"/>
+  <rect x="68" y="97" width="12" height="12" rx="3" fill="#dceaff"/>
+  <text x="147" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Builder Aşaması</text>
+
+  <rect x="58" y="132" width="178" height="29" rx="9" fill="#f7faff" stroke="#c5d7ef"/>
+  <circle cx="76" cy="146.5" r="5" fill="#779bd1"/>
+  <text x="89" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40566d">Kaynak kod</text>
+
+  <rect x="58" y="169" width="178" height="29" rx="9" fill="#f7faff" stroke="#c5d7ef"/>
+  <circle cx="76" cy="183.5" r="5" fill="#e5a85a"/>
+  <text x="89" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40566d">Derleyici ve araçlar</text>
+
+  <rect x="58" y="206" width="178" height="29" rx="9" fill="#f7faff" stroke="#c5d7ef"/>
+  <circle cx="76" cy="220.5" r="5" fill="#b781c3"/>
+  <text x="89" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40566d">Geliştirme bağımlılıkları</text>
+
+  <path d="M256 176 L295 176" stroke="#6d89a5" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="295,176 286,171 286,181" fill="#6d89a5"/>
+
+  <rect x="279" y="130" width="83" height="94" rx="17" fill="#fffdf5" stroke="#ecd99b" stroke-width="1.5" filter="url(#softShadow)"/>
+  <path d="M303 153 L337 153 L343 160 L343 196 L299 196 L299 158 Z" fill="#fff3c9" stroke="#d9b959" stroke-width="1.2"/>
+  <path d="M337 153 L337 160 L343 160" fill="none" stroke="#d9b959" stroke-width="1.2"/>
+  <text x="320" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#856622">dist</text>
+  <text x="320" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d7153">yalnız çıktı</text>
+
+  <path d="M362 176 L398 176" stroke="#5f9b75" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="398,176 389,171 389,181" fill="#5f9b75"/>
+
+  <rect x="400" y="72" width="202" height="197" rx="20" fill="url(#runtime)" stroke="#b6ddc6" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="420" y="88" width="162" height="31" rx="11" fill="#4d9b70" filter="url(#softShadow)"/>
+  <rect x="430" y="97" width="12" height="12" rx="3" fill="#dcf7e5"/>
+  <text x="511" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Runtime Aşaması</text>
+
+  <rect x="420" y="132" width="162" height="29" rx="9" fill="#fbfffc" stroke="#c3e1ce"/>
+  <circle cx="438" cy="146.5" r="5" fill="#e5b150"/>
+  <text x="451" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6050">dist çıktısı</text>
+
+  <rect x="420" y="169" width="162" height="29" rx="9" fill="#fbfffc" stroke="#c3e1ce"/>
+  <circle cx="438" cy="183.5" r="5" fill="#55a579"/>
+  <text x="451" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6050">Üretim bağımlılıkları</text>
+
+  <rect x="420" y="206" width="162" height="29" rx="9" fill="#fbfffc" stroke="#c3e1ce"/>
+  <circle cx="438" cy="220.5" r="5" fill="#6886b5"/>
+  <text x="451" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6050">node kullanıcısı</text>
+
+  <rect x="54" y="284" width="154" height="23" rx="11" fill="#edf3ff" stroke="#ceddf2"/>
+  <text x="131" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55708d">Önbellek: bağımlılıklar</text>
+
+  <rect x="226" y="284" width="137" height="23" rx="11" fill="#fff6dc" stroke="#ecdca7"/>
+  <text x="294.5" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#866d2b">.dockerignore</text>
+
+  <rect x="381" y="284" width="205" height="23" rx="11" fill="#e7f6eb" stroke="#c4e1cd"/>
+  <text x="483.5" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42785a">Küçük • güvenli • hızlı</text>
+</svg>
