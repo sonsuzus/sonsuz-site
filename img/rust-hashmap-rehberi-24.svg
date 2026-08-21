@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8e3f7"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="322" cy="160" r="132" fill="#dceef0" opacity="0.36"/>
+  <circle cx="322" cy="160" r="103" fill="none" stroke="#c9dfe5" stroke-width="1.5" stroke-dasharray="4 7"/>
+
+  <!-- bağlantılar -->
+  <path d="M172 88 C205 88 213 110 244 121" fill="none" stroke="#7d9dba" stroke-width="2"/>
+  <polygon points="244,121 235,115 237,126" fill="#7d9dba"/>
+  <path d="M465 88 C432 88 423 110 396 121" fill="none" stroke="#7d9dba" stroke-width="2"/>
+  <polygon points="396,121 403,114 405,125" fill="#7d9dba"/>
+  <path d="M174 235 C208 235 217 211 244 199" fill="none" stroke="#7d9dba" stroke-width="2"/>
+  <polygon points="244,199 235,198 239,208" fill="#7d9dba"/>
+  <path d="M466 235 C431 235 421 211 397 199" fill="none" stroke="#7d9dba" stroke-width="2"/>
+  <polygon points="397,199 403,208 406,197" fill="#7d9dba"/>
+
+  <!-- sol üst: anahtar -->
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="56" width="130" height="64" rx="16" fill="#fff8e6" stroke="#efdca6"/>
+    <circle cx="68" cy="88" r="15" fill="#f6d887"/>
+    <path d="M64 88 h17 M76 88 v7 M72 88 v5" fill="none" stroke="#886b26" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="94" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56616b">Anahtar</text>
+    <text x="94" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7c34">"Klavye"</text>
+  </g>
+
+  <!-- sağ üst: hash -->
+  <g filter="url(#smallShadow)">
+    <rect x="466" y="56" width="132" height="64" rx="16" fill="#f1eaff" stroke="#d8c9f1"/>
+    <circle cx="493" cy="88" r="15" fill="#d9c5f6"/>
+    <text x="486" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#6f538f">#</text>
+    <text x="519" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56616b">Özetleme</text>
+    <text x="519" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765a9a">İndeks</text>
+  </g>
+
+  <!-- merkez hashmap -->
+  <g filter="url(#shadow)">
+    <rect x="244" y="93" width="153" height="134" rx="22" fill="url(#core)" stroke="#a9c9df" stroke-width="1.5"/>
+    <text x="320" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365973">HashMap</text>
+    <rect x="260" y="132" width="121" height="24" rx="7" fill="#ffffff" opacity="0.82"/>
+    <text x="274" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f687b">Klavye</text>
+    <text x="365" y="148" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#277565">1250</text>
+    <rect x="260" y="162" width="121" height="24" rx="7" fill="#ffffff" opacity="0.82"/>
+    <text x="274" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f687b">Fare</text>
+    <text x="365" y="178" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#277565">700</text>
+    <rect x="260" y="192" width="121" height="20" rx="7" fill="#ffffff" opacity="0.65"/>
+    <text x="320" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#648094">Anahtar → Değer</text>
+  </g>
+
+  <!-- sol alt: sahiplik -->
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="202" width="132" height="67" rx="16" fill="#e8f6ed" stroke="#b9dec7"/>
+    <path d="M68 219 l13 5 v10 c0 10-6 16-13 20 c-7-4-13-10-13-20 v-10 z" fill="#a9d7b9" stroke="#528a68" stroke-width="1.4"/>
+    <path d="M63 235 l4 4 l7-9" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="94" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56616b">Sahiplik</text>
+    <text x="94" y="249" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#438260">Güvenli taşıma</text>
+  </g>
+
+  <!-- sağ alt: işlemler -->
+  <g filter="url(#smallShadow)">
+    <rect x="466" y="202" width="132" height="67" rx="16" fill="#fff0ec" stroke="#f0c9bc"/>
+    <circle cx="492" cy="226" r="14" fill="#f4c5b8"/>
+    <path d="M486 226 h12 M492 220 v12" stroke="#9a5647" stroke-width="2" stroke-linecap="round"/>
+    <text x="518" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56616b">Ekle ve bul</text>
+    <text x="518" y="247" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a46151">Ortalama O(1)</text>
+  </g>
+
+  <!-- alt akış -->
+  <path d="M279 252 H354" fill="none" stroke="#75a797" stroke-width="2"/>
+  <polygon points="354,252 345,247 345,257" fill="#75a797"/>
+  <text x="316" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#628277">Ödünç alma denetimi</text>
+
+  <!-- küçük çakışma işareti -->
+  <g opacity="0.9">
+    <circle cx="213" cy="157" r="18" fill="#fff4dc" stroke="#ead29b"/>
+    <path d="M205 151 l16 12 M221 151 l-16 12" stroke="#bd8935" stroke-width="2"/>
+    <text x="213" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a744d">Çakışma</text>
+  </g>
+</svg>

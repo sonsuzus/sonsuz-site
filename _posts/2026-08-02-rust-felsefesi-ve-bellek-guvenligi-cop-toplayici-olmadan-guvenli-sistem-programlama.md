@@ -9,6 +9,7 @@ tags:
   - bellek güvenliği
   - sistem programlama
 toc: true
+image: /img/rust-felsefesi-ve-64.png
 ---
 
 C ve C++, programcıya belleğin anahtarlarını teslim eder; fakat anahtarlığın yanında kullanım kılavuzu vermez. Rust ise aynı donanım kontrolünü korurken “Bu bellek hâlâ geçerli mi?” sorusunu çalışma anına bırakmak yerine derleme sırasında yanıtlamaya çalışır. Üstelik bunu kodun arkasında dolaşan bir garbage collector olmadan gerçekleştirir.
@@ -91,3 +92,6 @@ Döngüsel yapılarda güçlü bağlantılardan biri `Weak` referansa çevrilere
 Rust sıfır maliyetli soyutlamaları benimser: Kullanılmayan çalışma zamanı denetimleri programa eklenmez ve ownership kontrollerinin çoğu derleme sırasında tamamlanır. Gerektiğinde `unsafe`, ham işaretçiler ve FFI aracılığıyla düşük seviyeli kontrol sağlanır; ancak riskli bölge görünür biçimde sınırlandırılır.
 
 Sonuç olarak Rust, programcıdan kontrolü almak yerine kontrolün sorumluluğunu kurallara bağlar. Derleyici zaman zaman huysuz bir ekip arkadaşı gibi görünse de üretimde gece yarısı çalan hata alarmından çok daha naziktir.
+
+![rust-felsefesi-ve-64](/img/rust-felsefesi-ve-64.svg)
+

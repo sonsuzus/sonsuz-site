@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="proxyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C8EBF"/>
+      <stop offset="100%" stop-color="#4A6FA5"/>
+    </linearGradient>
+    <linearGradient id="browserGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7FB5D9"/>
+      <stop offset="100%" stop-color="#5A9BC2"/>
+    </linearGradient>
+    <linearGradient id="serverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#88B04B"/>
+      <stop offset="100%" stop-color="#6B8E3A"/>
+    </linearGradient>
+    <linearGradient id="sqliGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8A87C"/>
+      <stop offset="100%" stop-color="#D98E5A"/>
+    </linearGradient>
+    <linearGradient id="xssGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9A7D9"/>
+      <stop offset="100%" stop-color="#B08CC2"/>
+    </linearGradient>
+    <linearGradient id="authGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4B8C8"/>
+      <stop offset="100%" stop-color="#E89AAD"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">Web Uygulama Güvenliği Analizi</text>
+
+  <!-- Tarayıcı kutusu -->
+  <rect x="30" y="60" width="130" height="70" rx="10" fill="url(#browserGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="95" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Tarayıcı</text>
+  <text x="95" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#E8F0FE">İstek / Yanıt</text>
+
+  <!-- Proxy kutusu (merkez) -->
+  <rect x="255" y="45" width="130" height="100" rx="12" fill="url(#proxyGrad)" filter="url(#shadow)"/>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Proxy Araçları</text>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#D0E0F0">Burp Suite</text>
+  <text x="320" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#D0E0F0">OWASP ZAP</text>
+  <text x="320" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#B0C8E0">HTTP Mikroskobu</text>
+
+  <!-- Sunucu kutusu -->
+  <rect x="480" y="60" width="130" height="70" rx="10" fill="url(#serverGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="545" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Web Sunucusu</text>
+  <text x="545" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#E8F5E0">Veritabanı</text>
+
+  <!-- Ok: Tarayıcı -> Proxy -->
+  <path d="M160 95 L245 95" stroke="#5A9BC2" stroke-width="2" fill="none"/>
+  <polygon points="245,90 255,95 245,100" fill="#5A9BC2"/>
+
+  <!-- Ok: Proxy -> Sunucu -->
+  <path d="M385 95 L470 95" stroke="#6B8E3A" stroke-width="2" fill="none"/>
+  <polygon points="470,90 480,95 470,100" fill="#6B8E3A"/>
+
+  <!-- Ok: Sunucu -> Proxy (geri dönüş) -->
+  <path d="M470 115 L385 115" stroke="#6B8E3A" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="385,110 375,115 385,120" fill="#6B8E3A"/>
+
+  <!-- Ok: Proxy -> Tarayıcı (geri dönüş) -->
+  <path d="M245 115 L160 115" stroke="#5A9BC2" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="160,110 150,115 160,120" fill="#5A9BC2"/>
+
+  <!-- Zayıflık kategorileri -->
+  <!-- SQLi -->
+  <rect x="30" y="200" width="170" height="55" rx="8" fill="url(#sqliGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="115" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">SQL Enjeksiyonu</text>
+  <text x="115" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#FFF5E8">Veri-komut ayrımı</text>
+
+  <!-- XSS -->
+  <rect x="235" y="200" width="170" height="55" rx="8" fill="url(#xssGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="320" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">XSS</text>
+  <text x="320" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#F5E8FF">Çıktı kodlama</text>
+
+  <!-- Yetki -->
+  <rect x="440" y="200" width="170" height="55" rx="8" fill="url(#authGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="525" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Yetki Hataları</text>
+  <text x="525" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#FFF0F5">Erişim kontrolü</text>
+
+  <!-- Bağlantı çizgileri: Proxy -> Zayıflıklar -->
+  <path d="M320 145 L320 190" stroke="#8A9BA8" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="315,190 320,200 325,190" fill="#8A9BA8"/>
+
+  <path d="M200 145 L130 190" stroke="#8A9BA8" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="130,185 125,195 135,195" fill="#8A9BA8"/>
+
+  <path d="M440 145 L510 190" stroke="#8A9BA8" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="510,185 505,195 515,195" fill="#8A9BA8"/>
+
+  <!-- Risk formülü -->
+  <rect x="180" y="275" width="280" height="30" rx="15" fill="#2C3E50" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ECF0F1">Risk = Olasılık × Etki</text>
+
+  <!-- Etik sınır vurgusu -->
+  <text x="590" y="310" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="8" fill="#7F8C8D" font-style="italic">Etik test ilkeleri</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Monolitik Sistem ve Merkezi Kontrol Dengesi</text>
+
+  <!-- Merkez büyük kutu -->
+  <rect x="230" y="55" width="180" height="50" rx="12" fill="#e8f4f8" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Monolitik Sistem</text>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">Tek dağıtım birimi</text>
+
+  <!-- Sol üst: Güvenlik -->
+  <rect x="40" y="55" width="150" height="50" rx="10" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="115" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">Güvenlik Hissi</text>
+  <text x="115" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a4a">Merkezi denetim</text>
+
+  <!-- Sağ üst: Bunaltı -->
+  <rect x="450" y="55" width="150" height="50" rx="10" fill="#fce4ec" stroke="#e57373" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="525" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#c62828">Bunaltı Hissi</text>
+  <text x="525" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a05050">Özerklik kaybı</text>
+
+  <!-- Ok: Güvenlik -> Merkez -->
+  <path d="M190 80 L225 80" stroke="#66bb6a" stroke-width="2" fill="none"/>
+  <polygon points="228,75 228,85 238,80" fill="#66bb6a"/>
+
+  <!-- Ok: Bunaltı -> Merkez -->
+  <path d="M450 80 L415 80" stroke="#e57373" stroke-width="2" fill="none"/>
+  <polygon points="412,75 412,85 402,80" fill="#e57373"/>
+
+  <!-- Alt sol: Koordinasyon -->
+  <rect x="40" y="145" width="150" height="50" rx="10" fill="#fff3e0" stroke="#ffb74d" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="115" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Koordinasyon</text>
+  <text x="115" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a5a20">Kolaylık</text>
+
+  <!-- Alt sağ: Özerklik -->
+  <rect x="450" y="145" width="150" height="50" rx="10" fill="#e3f2fd" stroke="#42a5f5" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="525" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1565c0">Özerklik</text>
+  <text x="525" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a9a">Sınırlı bağımsızlık</text>
+
+  <!-- Ok: Koordinasyon -> Merkez -->
+  <path d="M115 195 L115 215 L320 215 L320 110" stroke="#ffb74d" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="315,105 325,105 320,115" fill="#ffb74d"/>
+
+  <!-- Ok: Özerklik -> Merkez -->
+  <path d="M525 195 L525 215 L320 215 L320 110" stroke="#42a5f5" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="315,105 325,105 320,115" fill="#42a5f5"/>
+
+  <!-- Alt orta: Modüler monolit -->
+  <rect x="230" y="145" width="180" height="50" rx="10" fill="#f3e5f5" stroke="#ab47bc" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="320" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a1b9a">Modüler Monolit</text>
+  <text x="320" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a4a8a">Dengeli yaklaşım</text>
+
+  <!-- Ok: Modüler -> Merkez -->
+  <path d="M320 145 L320 110" stroke="#ab47bc" stroke-width="2" fill="none"/>
+  <polygon points="315,105 325,105 320,115" fill="#ab47bc"/>
+
+  <!-- Alt bilgi çubuğu -->
+  <rect x="80" y="230" width="480" height="40" rx="8" fill="#f0f4f8" stroke="#b0bec5" stroke-width="1" opacity="0.8"/>
+  <text x="320" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Merkezi kontrol: Riskleri azaltır, etkiyi artırır</text>
+  <text x="320" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Çözüm: Kontrolü sınırlamak ve görünür kılmak</text>
+
+  <!-- Denge oku -->
+  <line x1="115" y1="280" x2="525" y2="280" stroke="#78909c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="115" cy="280" r="4" fill="#66bb6a"/>
+  <circle cx="525" cy="280" r="4" fill="#e57373"/>
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Güven ve özgürlük arasında denge</text>
+</svg>

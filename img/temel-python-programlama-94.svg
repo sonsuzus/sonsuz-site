@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7eb8da"/>
+      <stop offset="100%" stop-color="#5a9bc7"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0a868"/>
+      <stop offset="100%" stop-color="#e08a45"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8bc98a"/>
+      <stop offset="100%" stop-color="#6ab868"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b89ad4"/>
+      <stop offset="100%" stop-color="#9e7ec0"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e58a9e"/>
+      <stop offset="100%" stop-color="#d47085"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Python Programlamaya Giriş</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7a9a">İlk Adımlar: Araçlar ve Akış</text>
+
+  <!-- Merkez: Python Yorumlayıcı -->
+  <ellipse cx="320" cy="170" rx="85" ry="38" fill="url(#g1)" opacity="0.9" filter="url(#shadow)"/>
+  <text x="320" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Python</text>
+  <text x="320" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e8f4ff">Yorumlayıcı</text>
+
+  <!-- Üst sol: Metin Editörü -->
+  <rect x="40" y="90" width="120" height="52" rx="10" fill="url(#g2)" opacity="0.9" filter="url(#shadow)"/>
+  <text x="100" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Metin Editörü</text>
+  <text x="100" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff5e8">Notepad, Emacs, Gedit</text>
+
+  <!-- Üst sağ: IDE -->
+  <rect x="480" y="90" width="120" height="52" rx="10" fill="url(#g4)" opacity="0.9" filter="url(#shadow)"/>
+  <text x="540" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">IDE</text>
+  <text x="540" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#f0e8ff">IDLE, Spyder, PyCharm</text>
+
+  <!-- Alt sol: Dağıtımlar -->
+  <rect x="40" y="230" width="120" height="52" rx="10" fill="url(#g3)" opacity="0.9" filter="url(#shadow)"/>
+  <text x="100" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Dağıtımlar</text>
+  <text x="100" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#eaffea">Anaconda, Canopy</text>
+
+  <!-- Alt sağ: Jupyter -->
+  <rect x="480" y="230" width="120" height="52" rx="10" fill="url(#g5)" opacity="0.9" filter="url(#shadow)"/>
+  <text x="540" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Jupyter</text>
+  <text x="540" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ffe8ec">Notebook</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Editör -> Yorumlayıcı -->
+  <path d="M160,116 L230,150" stroke="#5a9bc7" stroke-width="2" fill="none"/>
+  <polygon points="230,150 220,144 222,154" fill="#5a9bc7"/>
+
+  <!-- IDE -> Yorumlayıcı -->
+  <path d="M480,116 L410,150" stroke="#9e7ec0" stroke-width="2" fill="none"/>
+  <polygon points="410,150 420,144 418,154" fill="#9e7ec0"/>
+
+  <!-- Dağıtım -> Yorumlayıcı -->
+  <path d="M160,256 L230,200" stroke="#6ab868" stroke-width="2" fill="none"/>
+  <polygon points="230,200 220,204 226,194" fill="#6ab868"/>
+
+  <!-- Jupyter -> Yorumlayıcı -->
+  <path d="M480,256 L410,200" stroke="#d47085" stroke-width="2" fill="none"/>
+  <polygon points="410,200 420,204 414,194" fill="#d47085"/>
+
+  <!-- Etkileşimli kullanım (alt orta) -->
+  <rect x="250" y="260" width="140" height="40" rx="8" fill="#ffffff" opacity="0.8" filter="url(#shadow)" stroke="#b0c4de" stroke-width="1"/>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Etkileşimli Mod</text>
+  <text x="320" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8aaa">&gt;&gt;&gt; 2+2</text>
+
+  <!-- Program çalıştırma (üst orta) -->
+  <rect x="250" y="60" width="140" height="40" rx="8" fill="#ffffff" opacity="0.8" filter="url(#shadow)" stroke="#b0c4de" stroke-width="1"/>
+  <text x="320" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Program Çalıştırma</text>
+  <text x="320" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8aaa">python ortalama.py</text>
+
+  <!-- Yorumlayıcı ile bağlantılar -->
+  <line x1="320" y1="98" x2="320" y2="130" stroke="#b0c4de" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="320,130 316,122 324,122" fill="#b0c4de"/>
+
+  <line x1="320" y1="210" x2="320" y2="258" stroke="#b0c4de" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="320,258 316,250 324,250" fill="#b0c4de"/>
+
+  <!-- Alıştırmalar etiketi -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8aa4bc">Alıştırmalar: Hesaplamalar, Ortalama Programı, İstatistikler</text>
+</svg>

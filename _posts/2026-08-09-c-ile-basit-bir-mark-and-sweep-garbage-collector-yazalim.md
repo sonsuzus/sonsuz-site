@@ -9,6 +9,7 @@ tags:
   - bellek yönetimi
   - garbage collector
 toc: true
+image: /img/c-ile-basit-26.png
 ---
 
 Bellek yönetimi, programlamanın “ışıkları kapattım mı?” sorusudur: Bir nesneyi ayırdığımızı hatırlarız ama serbest bırakıp bırakmadığımızdan asla tam emin olamayız. Bu projede C ile küçük bir **mark-and-sweep garbage collector** geliştirerek manuel bellek yönetimini, nesne erişilebilirliğini ve sanal belleğin süreçteki rolünü birlikte inceleyeceğiz.
@@ -34,6 +35,9 @@ Garbage collector’ın amacı, artık kök nesnelerden erişilemeyen $M_{erişi
 | Temel risk | Sızıntı, çift `free` | Duraklama, ek metadata |
 | Kontrol | Programcıda | Çalışma zamanı sisteminde |
 | Sanal bellek ilişkisi | Heap sayfalarını kullanır | Aynı heap içinde canlı nesneleri belirler |
+
+![c-ile-basit-26](/img/c-ile-basit-26.svg)
+
 
 ## Mark-and-sweep nasıl çalışır?
 

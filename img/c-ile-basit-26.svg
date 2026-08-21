@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Mark-and-Sweep Garbage Collector</text>
+
+  <!-- Sanal Bellek Katmanı -->
+  <rect x="20" y="45" width="600" height="55" rx="10" fill="#e8f4f8" filter="url(#shadowLight)" stroke="#b8d4e3" stroke-width="1"/>
+  <text x="40" y="65" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2980b9">Sanal Adres Alanı</text>
+  <text x="40" y="85" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">Kod | Global Veri | Stack | Heap</text>
+
+  <!-- Heap Bölgesi -->
+  <rect x="180" y="55" width="120" height="35" rx="6" fill="#d5e8d4" filter="url(#shadowLight)" stroke="#a9c4a8" stroke-width="1"/>
+  <text x="240" y="77" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d5016">Heap</text>
+
+  <!-- Ok: Sanal Bellek -> Heap -->
+  <polygon points="300,72 315,72 315,68 330,75 315,82 315,78 300,78" fill="#7f8c8d"/>
+
+  <!-- GC Ana Kutusu -->
+  <rect x="340" y="45" width="280" height="55" rx="10" fill="#fef9e7" filter="url(#shadow)" stroke="#f0d78c" stroke-width="1.5"/>
+  <text x="480" y="65" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7d6608">Garbage Collector</text>
+  <text x="480" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#9a7d0a">Otomatik Bellek Yönetimi</text>
+
+  <!-- Kökler -->
+  <rect x="20" y="125" width="120" height="45" rx="8" fill="#eaf2f8" filter="url(#shadowLight)" stroke="#aed6f1" stroke-width="1"/>
+  <text x="80" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#21618c">Kökler</text>
+  <text x="80" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5d8aa8">Stack + Global</text>
+
+  <!-- Ok: Kökler -> Mark -->
+  <polygon points="140,147 155,147 155,143 170,150 155,157 155,153 140,153" fill="#7f8c8d"/>
+
+  <!-- Mark Aşaması -->
+  <rect x="175" y="125" width="130" height="45" rx="8" fill="#d5f5e3" filter="url(#shadow)" stroke="#82e0aa" stroke-width="1.5"/>
+  <text x="240" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Mark</text>
+  <text x="240" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#27ae60">Erişilebilirleri İşaretle</text>
+
+  <!-- Ok: Mark -> Sweep -->
+  <polygon points="305,147 320,147 320,143 335,150 320,157 320,153 305,153" fill="#7f8c8d"/>
+
+  <!-- Sweep Aşaması -->
+  <rect x="340" y="125" width="130" height="45" rx="8" fill="#fadbd8" filter="url(#shadow)" stroke="#f1948a" stroke-width="1.5"/>
+  <text x="405" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#c0392b">Sweep</text>
+  <text x="405" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e74c3c">İşaretsizleri Temizle</text>
+
+  <!-- Ok: Sweep -> Serbest -->
+  <polygon points="470,147 485,147 485,143 500,150 485,157 485,153 470,153" fill="#7f8c8d"/>
+
+  <!-- Serbest Bellek -->
+  <rect x="505" y="125" width="115" height="45" rx="8" fill="#ebdef0" filter="url(#shadowLight)" stroke="#d2b4de" stroke-width="1"/>
+  <text x="562" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6c3483">Serbest Bellek</text>
+  <text x="562" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a569bd">Yeniden Kullanılabilir</text>
+
+  <!-- Nesne Grafiği -->
+  <text x="40" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Nesne Grafiği</text>
+
+  <!-- Kök Nesne -->
+  <rect x="20" y="215" width="70" height="35" rx="6" fill="#aed6f1" filter="url(#shadowLight)" stroke="#5dade2" stroke-width="1.5"/>
+  <text x="55" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Kök</text>
+
+  <!-- Ok: Kök -> A -->
+  <polygon points="90,232 105,232 105,228 120,235 105,242 105,238 90,238" fill="#7f8c8d"/>
+
+  <!-- Nesne A -->
+  <rect x="125" y="215" width="70" height="35" rx="6" fill="#82e0aa" filter="url(#shadowLight)" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="160" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">A</text>
+
+  <!-- Ok: A -> B -->
+  <polygon points="195,232 210,232 210,228 225,235 210,242 210,238 195,238" fill="#7f8c8d"/>
+
+  <!-- Nesne B -->
+  <rect x="230" y="215" width="70" height="35" rx="6" fill="#82e0aa" filter="url(#shadowLight)" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="265" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">B</text>
+
+  <!-- Erişilemez Nesne -->
+  <rect x="230" y="265" width="70" height="35" rx="6" fill="#f1948a" filter="url(#shadowLight)" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="265" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#922b21">Erişilemez</text>
+
+  <!-- Ok: B -> Erişilemez (kesikli) -->
+  <line x1="265" y1="250" x2="265" y2="262" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="260,262 265,272 270,262" fill="#e74c3c"/>
+
+  <!-- Referans Döngüsü -->
+  <path d="M 160 250 Q 160 275 230 275" fill="none" stroke="#f39c12" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <polygon points="230,272 230,278 238,275" fill="#f39c12"/>
+  <text x="195" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#b9770e">Döngü</text>
+
+  <!-- Özet Formül -->
+  <rect x="350" y="215" width="270" height="85" rx="10" fill="#fdf2e9" filter="url(#shadowLight)" stroke="#f5cba7" stroke-width="1"/>
+  <text x="485" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a04000">Özet</text>
+  <text x="485" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e2c00">M_etkin = M_ayrılan - M_erişilemeyen</text>
+  <text x="485" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#935116">free işlemi otomatikleşir</text>
+
+  <!-- Bağlantı çizgileri -->
+  <line x1="480" y1="100" x2="405" y2="122" stroke="#bdc3c7" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="480" y1="100" x2="240" y2="122" stroke="#bdc3c7" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>

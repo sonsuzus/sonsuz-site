@@ -9,7 +9,11 @@ tags:
   - algoritmalar
   - python
 toc: true
+image: /img/diziden-kuyruga-veri-34.png
 ---
+
+![diziden-kuyruga-veri-34](/img/diziden-kuyruga-veri-34.svg)
+
 
 Bir algoritmanın başarısı yalnızca doğru sonucu üretmesine değil, bunu ne kadar hızlı ve az bellek kullanarak yaptığına da bağlıdır. Diziler, bağlı listeler, yığınlar ve kuyruklar bu noktada programcının alet çantasındaki temel araçlardır. Doğru veri yapısını seçmek bazen yüzlerce satır kod yazmaktan daha değerlidir; yanlış seçim ise hızlı görünen bir çözümü kaplumbağaya çevirebilir.
 ``

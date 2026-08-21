@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f9ff"/>
+      <stop offset="100%" style="stop-color:#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="termGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748"/>
+      <stop offset="100%" style="stop-color:#1a202c"/>
+    </linearGradient>
+    <linearGradient id="guiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e2e8f0"/>
+      <stop offset="100%" style="stop-color:#cbd5e0"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#edf2f7"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2d3748">Terminal Estetiği ve Bilişsel Yük</text>
+
+  <!-- Sol: GUI -->
+  <rect x="30" y="55" width="180" height="130" rx="10" fill="url(#guiGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="120" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a5568">Grafiksel Arayüz</text>
+  <rect x="45" y="85" width="40" height="30" rx="4" fill="#a0aec0" opacity="0.7"/>
+  <rect x="95" y="85" width="40" height="30" rx="4" fill="#a0aec0" opacity="0.7"/>
+  <rect x="145" y="85" width="40" height="30" rx="4" fill="#a0aec0" opacity="0.7"/>
+  <rect x="45" y="125" width="60" height="20" rx="4" fill="#a0aec0" opacity="0.5"/>
+  <rect x="115" y="125" width="60" height="20" rx="4" fill="#a0aec0" opacity="0.5"/>
+  <rect x="45" y="155" width="140" height="15" rx="3" fill="#a0aec0" opacity="0.3"/>
+  <text x="120" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#718096">Yüksek dışsal yük</text>
+
+  <!-- Sağ: Terminal -->
+  <rect x="430" y="55" width="180" height="130" rx="10" fill="url(#termGrad)" filter="url(#shadow)"/>
+  <text x="520" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a0aec0">Terminal</text>
+  <text x="445" y="95" font-family="Consolas, monospace" font-size="11" fill="#68d391">$ ls</text>
+  <text x="445" y="112" font-family="Consolas, monospace" font-size="11" fill="#e2e8f0">dosya1  dosya2</text>
+  <text x="445" y="129" font-family="Consolas, monospace" font-size="11" fill="#68d391">$ git status</text>
+  <text x="445" y="146" font-family="Consolas, monospace" font-size="11" fill="#e2e8f0">temiz çalışma ağacı</text>
+  <text x="445" y="163" font-family="Consolas, monospace" font-size="11" fill="#68d391">$</text>
+  <rect x="580" y="160" width="8" height="14" fill="#68d391" opacity="0.8"/>
+  <text x="520" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#a0aec0">Düşük dışsal yük</text>
+
+  <!-- Orta: Bilişsel yük modeli -->
+  <rect x="245" y="70" width="150" height="100" rx="12" fill="url(#centerGrad)" filter="url(#shadowLight)" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="320" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d3748">Bilişsel Yük</text>
+  <text x="320" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a5568">L = Löz + Ldış + Lyapıcı</text>
+  <line x1="270" y1="120" x2="370" y2="120" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="320" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#718096">Terminal Ldış değerini düşürür</text>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#718096">Odak ve kontrol hissi artar</text>
+
+  <!-- Oklar: GUI -> Model -->
+  <path d="M210 115 L245 115" stroke="#a0aec0" stroke-width="2" fill="none"/>
+  <polygon points="245,110 255,115 245,120" fill="#a0aec0"/>
+
+  <!-- Oklar: Terminal -> Model -->
+  <path d="M430 115 L395 115" stroke="#68d391" stroke-width="2" fill="none"/>
+  <polygon points="395,110 385,115 395,120" fill="#68d391"/>
+
+  <!-- Alt bölüm: Öngörülebilirlik ve kontrol -->
+  <rect x="80" y="215" width="200" height="80" rx="10" fill="#e6fffa" filter="url(#shadowLight)" opacity="0.8"/>
+  <text x="180" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c7a7b">Öngörülebilirlik</text>
+  <text x="180" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#285e61">Aynı komut, aynı sonuç</text>
+  <text x="180" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#285e61">Kısa eylem-sonuç mesafesi</text>
+  <text x="180" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#285e61">Güvenlik hissi üretir</text>
+
+  <rect x="360" y="215" width="200" height="80" rx="10" fill="#fefcbf" filter="url(#shadowLight)" opacity="0.8"/>
+  <text x="460" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#975a16">Kontrol Duygusu</text>
+  <text x="460" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#744210">Doğrudan talimat verme</text>
+  <text x="460" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#744210">Anlamlı biçimde boş ekran</text>
+  <text x="460" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#744210">Niyet okunabilirliği</text>
+
+  <!-- Alt bağlantı çizgileri -->
+  <path d="M180 195 L180 215" stroke="#a0aec0" stroke-width="1.5" fill="none"/>
+  <path d="M460 195 L460 215" stroke="#a0aec0" stroke-width="1.5" fill="none"/>
+
+  <!-- Alt merkez not -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#718096" opacity="0.8">Minimalizm huzur getirir, ancak güvenli varsayılanlar ve anlaşılır hata mesajları şarttır</text>
+</svg>

@@ -9,6 +9,7 @@ tags:
   - monolitik sistemler
   - siyaset felsefesi
 toc: true
+image: /img/yazilim-mimarisinde-totaliterlik-70.png
 ---
 
 Monolitik bir uygulamaya ilk kez giren geliştirici, kendisini devasa bir devlet dairesinde hissedebilir: Her şey aynı binadadır, kurallar merkezden belirlenir ve küçük bir değişiklik için bile sistemin bütünüyle konuşmak gerekir. Bu düzen güven verir; çünkü sınırlar, yetkiler ve sorumlular bellidir. Fakat aynı düzen zamanla bunaltıcı olabilir. Monolit ile siyasal totaliterlik arasındaki benzetme de tam burada başlar: İkisinde de koordinasyon kolaylığı ile özerklik kaybı arasında ciddi bir gerilim bulunur.
@@ -27,6 +28,9 @@ Siyaset felsefesinde totaliterlik ise iktidarın yalnızca yönetimi değil, top
 | Özerklik | Modüllerin bağımsızlığı sınırlı | Yerel aktörlerin yetkisi sınırlı |
 | Kriz yönetimi | Tek noktadan hızlı müdahale | Merkezden hızlı karar |
 | Temel risk | Tek hata alanının büyümesi | Gücün denetimsiz yoğunlaşması |
+
+![yazilim-mimarisinde-totaliterlik-70](/img/yazilim-mimarisinde-totaliterlik-70.svg)
+
 
 ## Güvenlik hissi nereden geliyor?
 

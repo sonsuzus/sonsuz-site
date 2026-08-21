@@ -10,6 +10,7 @@ tags:
   - owasp-zap
   - sqli
   - xss
+image: /img/web-uygulama-guvenligi-75.png
 ---
 
 Bir web uygulamasını güvenli sanmak, kapıyı kilitleyip pencereyi açık bırakmaya benzer. Burp Suite ve OWASP ZAP gibi proxy araçları, tarayıcı ile sunucu arasına oturarak HTTP trafiğini görünür kılar; böylece SQL enjeksiyonu, XSS ve yetkilendirme hataları gibi mimari zayıflıkları kontrollü ve izinli ortamlarda analiz edebiliriz.
@@ -25,6 +26,9 @@ Web güvenliğinde risk çoğu zaman şu sezgisel modelle düşünülür: $Risk 
 | Burp Suite | Manuel test akışı ve eklenti ekosistemi | İstek yakalama, tekrar gönderme, oturum analizi | Community sürümü öğrenmek için yeterlidir |
 | OWASP ZAP | Açık kaynak ve otomasyon dostu yapı | Pasif tarama, CI/CD güvenlik kontrolleri | Başlangıç için çok erişilebilirdir |
 | Tarayıcı DevTools | Hızlı istemci tarafı inceleme | DOM, network ve console analizi | Proxy kadar derin manipülasyon sunmaz |
+
+![web-uygulama-guvenligi-75](/img/web-uygulama-guvenligi-75.svg)
+
 
 SQL enjeksiyonunun kökü, kullanıcı girdisinin SQL komutunun parçası gibi ele alınmasıdır. Yani veri ile komut ayrımı kaybolur. Güvensiz bir yaklaşım şu şekilde görünür:
 

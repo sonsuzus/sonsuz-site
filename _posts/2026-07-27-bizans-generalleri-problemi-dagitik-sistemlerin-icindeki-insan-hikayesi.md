@@ -9,6 +9,7 @@ tags:
   - bizans hata toleransı
   - sosyal güven
 toc: true
+image: /img/bizans-generalleri-problemi-14.png
 ---
 
 Bir grup insanın ortak karar vermesi gerektiğini düşünün: Bazıları dürüst, bazıları kararsız, bazılarıysa kasıtlı olarak yalan söylüyor. Üstelik kimse aynı odada değil; iletişim gecikebilir, mesajlar kaybolabilir ve farklı kişilere farklı bilgiler ulaşabilir. Bu senaryo bir aile grubunu, şirket toplantısını veya siyasi ittifakı çağrıştırsa da dağıtık sistemlerin en ünlü problemlerinden birini anlatır: **Bizans Generalleri Problemi**. Bilgisayar bilimindeki bu teknik mesele, özünde güvenilir bir otorite olmadan işbirliği yapabilmenin hikâyesidir.
@@ -75,3 +76,6 @@ Bizans Generalleri Problemi’nin en insani dersi şudur: Sağlam işbirliği, h
 Toplumlarda bunu şeffaf kayıtlar, bağımsız denetim ve görev ayrılığıyla yaparız. Yazılımda ise çoğaltma, dijital imza, quorum ve hata toleranslı protokoller kullanırız. Güven böylece “Sana inanıyorum” cümlesinden çıkarak “Yanlış davransan bile sistem çalışmaya devam ediyor” güvencesine dönüşür.
 
 Sonuçta Bizans generalleri yalnızca sunucuların hikâyesi değildir. Farklı bilgilere, çıkarlara ve niyetlere sahip aktörlerin ortak bir gerçeklik üretme çabasıdır. Dağıtık sistemler bize kusursuz insanları değil, kusurlara rağmen işbirliğini mümkün kılan kuralları tasarlamamız gerektiğini hatırlatır.
+
+![bizans-generalleri-problemi-14](/img/bizans-generalleri-problemi-14.svg)
+

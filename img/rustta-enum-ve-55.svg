@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="enumGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#c9ddfa"/>
+    </linearGradient>
+    <linearGradient id="matchGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6dffd"/>
+      <stop offset="100%" stop-color="#d8ccf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e8298" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6e8298" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="42" r="70" fill="#d9edff" opacity="0.42"/>
+  <circle cx="593" cy="273" r="92" fill="#dcf2d9" opacity="0.42"/>
+  <path d="M25 280 C126 238 153 292 250 262 S419 230 620 274" fill="none" stroke="#cfe5dc" stroke-width="2" opacity="0.65"/>
+
+  <text x="34" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426078">Enum ve Pattern Matching</text>
+  <text x="34" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718497">Olasılıkları tip ile güvenceye al</text>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="91" width="157" height="151" rx="20" fill="url(#enumGrad)" stroke="#b8d0ed"/>
+    <rect x="51" y="108" width="123" height="29" rx="10" fill="#f8fbff" opacity="0.88"/>
+    <text x="112.5" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385574">ÖdemeDurumu</text>
+
+    <rect x="51" y="150" width="123" height="22" rx="8" fill="#fff5d6"/>
+    <circle cx="64" cy="161" r="4" fill="#edbd55"/>
+    <text x="75" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665336">Bekliyor</text>
+
+    <rect x="51" y="179" width="123" height="22" rx="8" fill="#dff3e3"/>
+    <circle cx="64" cy="190" r="4" fill="#5aae77"/>
+    <text x="75" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356949">Başarılı + veri</text>
+
+    <rect x="51" y="208" width="123" height="22" rx="8" fill="#fde3e2"/>
+    <circle cx="64" cy="219" r="4" fill="#d56b6b"/>
+    <text x="75" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b4141">Reddedildi + neden</text>
+  </g>
+
+  <path d="M198 167 H247" fill="none" stroke="#8496ac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="247,161 259,167 247,173" fill="#8496ac"/>
+
+  <g filter="url(#shadow)">
+    <rect x="261" y="111" width="132" height="112" rx="20" fill="url(#matchGrad)" stroke="#c6b9e8"/>
+    <rect x="280" y="128" width="94" height="30" rx="10" fill="#fbfaff" opacity="0.9"/>
+    <text x="327" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#55477a">match</text>
+    <path d="M285 175 H369" stroke="#ad9cd8" stroke-width="1.5"/>
+    <text x="327" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d5277">Desen eşleştir</text>
+    <text x="327" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d5277">Veriyi çıkar</text>
+  </g>
+
+  <path d="M400 167 H421 V94 H435" fill="none" stroke="#8496ac" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="435,88 447,94 435,100" fill="#8496ac"/>
+  <path d="M400 167 H421 V167 H435" fill="none" stroke="#8496ac" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="435,161 447,167 435,173" fill="#8496ac"/>
+  <path d="M400 167 H421 V240 H435" fill="none" stroke="#8496ac" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="435,234 447,240 435,246" fill="#8496ac"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="448" y="65" width="158" height="58" rx="15" fill="#fff7dd" stroke="#eed28c"/>
+    <circle cx="470" cy="94" r="11" fill="#f3c65e"/>
+    <path d="M466 94 L469 97 L475 90" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="490" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#715a27">Bekliyor</text>
+    <text x="490" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#826e42">işlem sürüyor</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="448" y="138" width="158" height="58" rx="15" fill="#e1f4e5" stroke="#a8d6b6"/>
+    <circle cx="470" cy="167" r="11" fill="#65b982"/>
+    <path d="M466 167 L469 170 L475 163" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="490" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7550">Başarılı</text>
+    <text x="490" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557962">işlem no, tutar</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="448" y="211" width="158" height="58" rx="15" fill="#fde4e3" stroke="#e9b5b1"/>
+    <circle cx="470" cy="240" r="11" fill="#d97070"/>
+    <path d="M466 236 L474 244 M474 236 L466 244" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="490" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#824747">Reddedildi</text>
+    <text x="490" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#88605e">neden bilgisi</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="208" y="258" width="223" height="39" rx="15" fill="#ffffff" opacity="0.94" stroke="#cce1d6"/>
+    <circle cx="231" cy="277.5" r="10" fill="#78b590"/>
+    <path d="M227 278 L230 281 L236 274" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="251" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416c53">Derleyici: tüm dallar kapsandı</text>
+  </g>
+  <path d="M327 229 V251" fill="none" stroke="#78a98a" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="321,251 327,258 333,251" fill="#78a98a"/>
+</svg>

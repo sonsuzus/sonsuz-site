@@ -9,6 +9,7 @@ tags:
   - hashcat
   - john the ripper
 toc: true
+image: /img/parola-ozetlerini-anlamak-36.png
 ---
 
 Parolalar çoğu sistemde doğrudan saklanmaz; bunun yerine tek yönlü bir fonksiyondan geçirilerek elde edilen özetler saklanır. Parola denetimi ya da kurtarma çalışmaları, tahmin edilen adayların özetlerini hesaplayıp kayıtlı değerle karşılaştırır. Hashcat ve John the Ripper bu işlemi hızlandıran güçlü araçlardır; ancak yalnızca sahibi olduğunuz veya test izni aldığınız sistemlerde kullanılmalıdır. Aksi hâlde eğitici görünen bir deneme, hukuki sonuçları olan yetkisiz erişime dönüşebilir.
@@ -67,3 +68,6 @@ john --show --format=raw-sha256 hash.txt
 | John the Ripper | Esnek biçim algılama ve kurallar | Denetim ve eğitim laboratuvarları |
 
 Başarıyla bulunan parola, aracın “sihirli” olduğunu değil, parolanın tahmin edilebilir veya saklama yönteminin yetersiz olduğunu gösterir. Savunmada Argon2id, scrypt ya da bcrypt gibi uygun maliyet parametrelerine sahip fonksiyonlar; benzersiz salt, parola yöneticisi, uzun ve benzersiz parolalar, hız sınırlaması ve çok faktörlü kimlik doğrulama birlikte kullanılmalıdır. Ayrıca eski MD5 ve SHA-1 özetleri yalnızca yeniden hashlenmemeli; kullanıcı doğrulandıktan sonra modern algoritmaya güvenli biçimde taşınmalıdır. En iyi parola kırma deneyi, sonunda daha sağlam bir sistemi doğuran deneydir.
+
+![parola-ozetlerini-anlamak-36](/img/parola-ozetlerini-anlamak-36.svg)
+

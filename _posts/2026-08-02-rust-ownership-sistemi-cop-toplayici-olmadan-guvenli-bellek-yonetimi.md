@@ -9,6 +9,7 @@ tags:
   - ownership
   - bellek-yönetimi
 toc: true
+image: /img/rust-ownership-sistemi-31.png
 ---
 
 Rust öğrenmeye başlayanların karşısına çıkan ilk büyük bölüm sonu canavarı **ownership**, yani sahiplik sistemidir. İlk bakışta derleyicinin değişkenlerinize gereğinden fazla karıştığını düşünebilirsiniz. Oysa bu sistem; çöp toplayıcı kullanmadan bellek güvenliği sağlamak, sarkan işaretçileri önlemek ve kaynakların ne zaman temizleneceğini kesin biçimde belirlemek için tasarlanmıştır.
@@ -36,6 +37,9 @@ Kaynağın sahibi kapsamdan çıktığında Rust, `drop` mekanizmasını çalı�
 | C/C++ manuel yönetim | Programcı yapar | Düşük | Sızıntı, çift temizleme |
 | Garbage Collector | Çöp toplayıcı yapar | Değişken | Duraklama ve ek yük |
 | Rust ownership | Kapsam sonunda otomatik | Çok düşük | Derleme zamanı hataları |
+
+![rust-ownership-sistemi-31](/img/rust-ownership-sistemi-31.svg)
+
 
 ## Taşıma: Değer yeni sahibine gidiyor
 

@@ -10,6 +10,7 @@ tags:
   - bilişsel yük
   - komut satırı
   - yazılım kültürü
+image: /img/terminalin-estetigi-komut-61.png
 ---
 
 Bir terminal penceresinin siyah ya da koyu renkli zemini, yanıp sönen imleci ve birkaç satır metni ilk bakışta soğuk görünebilir. Buna rağmen pek çok geliştirici, sistem yöneticisi ve meraklı kullanıcı için terminal yalnızca bir araç değildir: düzen, odak ve hatta küçük bir sığınaktır. Bunun nedeni nostalji kadar, minimal arayüzlerin zihnimizde yarattığı bilişsel ekonomi ve kontrol duygusudur.
@@ -52,3 +53,6 @@ Bu örneğin estetik değeri, renkli bir panel üretmesinde değil; niyetin okun
 Elbette minimalizm her zaman huzur demek değildir. Terminalde yanlış bir komutun etkisi büyük olabilir; ayrıca komut ezberleme gereksinimi yeni başlayanlarda kaygı yaratabilir. Özellikle `rm`, izinler veya üretim ortamı işlemlerinde kontrol hissi, dikkatli olunmazsa sahte bir güvene dönüşebilir. Minimal arayüzün iyi çalışması için hata mesajlarının anlaşılır, varsayılanların güvenli ve geri alma yollarının erişilebilir olması gerekir.
 
 Sonuçta terminalin çekiciliği, ekranın boş olmasından çok **anlamlı biçimde boş** olmasında yatar. Kullanıcıya yüz seçenek sunmak yerine, birkaç kesin araç ve net bir dil verir. Bu dil öğrenildikçe kişi yalnızca komut çalıştırmaz; bilgisayarla pazarlık etmeden, ne istediğini tarif edebildiğini hisseder. Huzur da çoğu zaman tam burada başlar: daha az dikkat dağıtıcı unsur, daha çok niyet ve daha görünür bir kontrol alanı.
+
+![terminalin-estetigi-komut-61](/img/terminalin-estetigi-komut-61.svg)
+
