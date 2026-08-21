@@ -11,6 +11,7 @@ tags:
   - debian
   - açık kaynak
 toc: true
+image: /img/dagitim-savaslari-ubuntu-46.png
 ---
 
 Linux dünyasında “en iyi dağıtım hangisi?” sorusu, teknik bir öneri istemekten çok kimlik, alışkanlık ve değerler hakkında konuşma başlatır. Ubuntu kullanıcısı bilgisayarın işini kolaylaştırmasını beklerken, Arch kullanıcısı sistemin her vidasını tanımak isteyebilir; Debian kullanıcısı ise yıllarca değişmeden çalışan bir altyapıyı en büyük başarı sayabilir. Bu yüzden tartışmanın tek bir kazananı yoktur: “en iyi”, kullanıcının öncelik fonksiyonuna bağlıdır.
@@ -42,6 +43,9 @@ Arch Linux, minimal kurulum ve rolling release modeliyle kullanıcıyı sistemin
 
 ```bash
 sudo pacman -S neovim git
+
+![dagitim-savaslari-ubuntu-46](/img/dagitim-savaslari-ubuntu-46.svg)
+
 ```
 
 Bu komut `pacman` paket yöneticisiyle Neovim ve Git’i kurar. Fakat Arch deneyimi yalnızca komut kolaylığı değildir; güncelleme notlarını takip etmek, yapılandırma değişikliklerini anlamak ve gerektiğinde müdahale etmek de paketin parçasıdır. “KISS” ilkesi burada “basit kullanım” değil, **basit ve şeffaf tasarım** anlamına gelir.

@@ -9,6 +9,7 @@ tags:
   - nfc
   - web nfc
   - mobil web
+image: /img/javascript-ve-nfc-51.png
 ---
 
 Telefonunuzu bir etikete yaklaştırıp kapıyı açmak, Wi-Fi bilgisini almak ya da bir ürünün bakım geçmişini okumak kulağa biraz sihir gibi gelir; ama aslında sahnede NFC ve JavaScript vardır. Modern Android tarayıcılarında Web NFC API sayesinde web uygulamaları, yakın alan iletişimi sensörleriyle veri okuyup yazabilir. Yani bazen bir buton, bazen de 3 cm mesafe bütün deneyimi değiştirir.
@@ -101,3 +102,6 @@ Elbette her etikete sonsuz veri yazamayız. NFC etiketlerinin kapasitesi sınır
 Güvenlik tarafında en kritik ilke şudur: NFC’den gelen veriye asla körü körüne güvenmeyin. Etiket kopyalanabilir, değiştirilebilir veya kötü niyetli URL içerebilir. Okunan değerler sunucuda doğrulanmalı, hassas işlemler için kullanıcı oturumu ve yetki kontrolü yapılmalıdır. Matematiksel olarak düşünürsek, güvenlik sadece $veri + cihaz$ değil; $veri + cihaz + kullanıcı + sunucu doğrulaması$ birleşimidir.
 
 Sonuç olarak Web NFC, mobil web uygulamalarına fiziksel dünya ile tatlı bir tokalaşma imkânı verir. Depo yönetimi, akıllı kartvizitler, müze deneyimleri, eğitim materyalleri ve hızlı yapılandırma ekranları için oldukça kullanışlıdır. Yeter ki tarayıcı desteğini kontrol edin, kullanıcı iznini saygıyla isteyin ve NFC etiketlerini minik ama güçlü anahtarlar gibi tasarlayın.
+
+![javascript-ve-nfc-51](/img/javascript-ve-nfc-51.svg)
+

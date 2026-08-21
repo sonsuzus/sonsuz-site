@@ -9,7 +9,11 @@ tags:
   - big-o
   - yapay-zeka
   - optimizasyon
+image: /img/zeka-oyunlari-icin-26.png
 ---
+
+![zeka-oyunlari-icin-26](/img/zeka-oyunlari-icin-26.svg)
+
 
 Zekâ oyunları, bilgisayara sadece çözüm buldurduğumuz oyuncaklar değil; algoritmaların kas geliştirdiği küçük spor salonlarıdır. Bir labirent çözücü ya da Rubik Küp algoritması yazarken asıl soru şudur: Çözümü bulabilir miyiz? Evet. Peki çözümü makul sürede ve belleği yakmadan bulabilir miyiz? İşte eğlence burada başlar.
 ``

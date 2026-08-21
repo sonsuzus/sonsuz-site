@@ -8,6 +8,7 @@ tags:
   - php
   - regex
   - metin-isleme
+image: /img/php-ve-regex-24.png
 ---
 
 Sunucu tarafında çalışan küçük bir PHP betiği, doğru düzenli ifadelerle birleştiğinde devasa log dosyalarını, kullanıcı yorumlarını, haber metinlerini veya HTML parçalarını akıllı bir içerik fabrikasına çevirebilir. Regex, metnin içinde saklanan düzeni bulma sanatıdır; PHP ise bu sanatı otomasyona bağlayan pratik mutfaktır.
@@ -36,6 +37,9 @@ preg_match_all($pattern, $text, $matches);
 foreach ($matches[0] as $email) {
     echo $email . PHP_EOL;
 }
+
+![php-ve-regex-24](/img/php-ve-regex-24.svg)
+
 ```
 
 Bu kodun yaptığı iş basit ama güçlüdür: metin içindeki e-posta biçimine benzeyen tüm parçaları toplar. `\b` kelime sınırını, `[A-Z0-9._%+-]+` kullanıcı adını, `@` zorunlu karakteri, devamındaki bölüm ise alan adını temsil eder. Buradaki `+` operatörü en az bir tekrar anlamına gelir. Yani matematiksel olarak `x+`, $x$ karakterinin $n \ge 1$ kez tekrar etmesi demektir.

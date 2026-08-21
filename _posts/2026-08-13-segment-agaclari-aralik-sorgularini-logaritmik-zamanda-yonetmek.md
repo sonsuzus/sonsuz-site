@@ -8,6 +8,7 @@ tags:
   - veri yapıları
   - algoritmalar
   - segment ağacı
+image: /img/segment-agac.png
 ---
 
 Bir dizide belirli bir aralığın toplamını, minimumunu ya da maksimumunu sıkça hesaplamanız gerekiyorsa, düz bir yaklaşım hızla pahalılaşır. Örneğin her sorguda elemanları tek tek gezmek $O(n)$ sürer; dizi de güncelleniyorsa önceden hesaplanmış önek toplamları bile yetersiz kalır. Segment ağacı (segment tree), bu iki ihtiyacı dengeler: Hem aralık sorgularını hem de noktasal güncellemeleri $O(\log n)$ zamanda gerçekleştirir.
@@ -29,6 +30,9 @@ Buradaki $m = \lfloor(l+r)/2\rfloor$ orta noktadır. Bu yapı yalnızca toplama 
 | Önek toplamı | $O(1)$ | $O(n)$ | Değişmeyen diziler |
 | Fenwick ağacı | $O(\log n)$ | $O(\log n)$ | Özellikle toplamlar |
 | Segment ağacı | $O(\log n)$ | $O(\log n)$ | Min, max, GCD ve esnek sorgular |
+
+![segment-agac](/img/segment-agac.svg)
+
 
 Aşağıdaki Python örneği, toplam sorgusu yapan ve tek bir indeksi güncelleyen bir segment ağacını gösterir. Dizi tabanlı temsil kullanıldığı için düğüm çocukları `2*node` ve `2*node+1` indislerinde tutulur.
 

@@ -10,6 +10,7 @@ tags:
   - devops
   - konteyner
   - node.js
+image: /img/docker-multi-stage-13.png
 ---
 
 Docker imajları, uygulamanın taşınabilir paketleridir; ancak pakete derleyici, kaynak kod, test araçları ve geçici dosyalar da girerse taşıması pahalı bir bavula dönüşür. Multi-stage build, derleme ortamını çalışma ortamından ayırarak bu bavulu sadeleştirir. Temel fikir basittir: Uygulamayı ilk aşamada üretin, yalnızca ortaya çıkan çalıştırılabilir çıktıyı ikinci aşamaya taşıyın. Böylece üretim imajı, geliştiricinin bütün atölyesini değil, müşterinin gerçekten kullanacağı ürünü içerir.
@@ -31,6 +32,9 @@ Tek aşamalı modelde ise yaklaşık olarak $S_{single}=S_{final}+S_{source}+S_{
 | Güvenlik yüzeyi | Daha geniş | Daha dar |
 | İmaj boyutu | Çoğunlukla büyük | Genellikle daha küçük |
 | Hata ayıklama | Her araç içeride olabilir | Ayrı debug hedefi gerekebilir |
+
+![docker-multi-stage-13](/img/docker-multi-stage-13.svg)
+
 
 Aşağıdaki örnek, TypeScript tabanlı bir Node.js uygulamasını iki aşamada paketler. İlk aşama derler, ikinci aşama yalnızca üretim bağımlılıklarını ve `dist` klasörünü taşır:
 

@@ -9,7 +9,11 @@ tags:
   - yapay zekâ
   - algoritmalar
 toc: true
+image: /img/makine-ogrenmesi-paradigmalari-28.png
 ---
+
+![makine-ogrenmesi-paradigmalari-28](/img/makine-ogrenmesi-paradigmalari-28.svg)
+
 
 Makine öğrenmesi, bilgisayarlara her olasılık için ayrı bir kural yazmak yerine örneklerden davranış geliştirme imkânı verir. Ancak “veriden öğrenmek” tek bir yöntemi ifade etmez. Kimi sistemler doğru cevaplarla çalışır, kimileri verinin içindeki gizli yapıyı keşfeder, kimileri ise deneme-yanılma yoluyla ödül toplamayı öğrenir. Denetimli, denetimsiz ve pekiştirmeli öğrenme; yalnızca farklı algoritmalar değil, öğrenmenin doğasına ilişkin üç ayrı felsefi yaklaşımdır.
 ``

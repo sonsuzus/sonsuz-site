@@ -11,6 +11,7 @@ tags:
   - açık kaynak
   - forumlar
 toc: true
+image: /img/linux-forumlarindaki-rtfm-56.png
 ---
 
 Linux forumlarında yeni bir kullanıcının ilk hata mesajıyla karşılaşması, çoğu zaman yalnızca teknik değil, kültürel bir eşiktir. “RTFM” — *Read The Fine Manual* ya da daha sert tarihsel yorumuyla *Read The Fucking Manual* — bilgiye erişimin kolay olduğu bir dünyada emeğe saygı çağrısıdır. Fakat bu kısa cevap, bağlama göre öğretici bir yönlendirme de olabilir, kapıyı suratına kapatan bir topluluk ritüeli de.
@@ -56,3 +57,6 @@ Bu blok doğrudan çözümü garanti etmez; fakat teşhis zincirini öğretir. �
 Sağlıklı bir norm için soru soranın da sorumluluğu vardır: dağıtım ve sürüm bilgisi paylaşmak, hata çıktısını eklemek, denediği adımları yazmak ve arama yaptığını belirtmek. Yanıtlayanın sorumluluğu ise küçümsemeden sınır çizmektir. “Bu konu belgede var” demek yerine “Şu bölüm buna odaklanıyor; takıldığın çıktıyı paylaşırsan birlikte yorumlayalım” demek, aynı verimlilik hedefini daha insani biçimde taşır.
 
 RTFM kültürü, bilgiye saygıyı savunduğunda değerlidir; bilgisizliği ahlaki kusur saydığında ise dışlayıcılaşır. Linux’un özgürlük vaadi yalnızca kaynak koduna erişim değildir. Aynı zamanda öğrenme yoluna erişimdir.
+
+![linux-forumlarindaki-rtfm-56](/img/linux-forumlarindaki-rtfm-56.svg)
+

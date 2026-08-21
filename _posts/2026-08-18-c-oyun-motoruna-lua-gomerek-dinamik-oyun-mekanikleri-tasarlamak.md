@@ -11,6 +11,7 @@ tags:
   - scripting
   - game engine
 toc: true
+image: /img/c-oyun-motoru.png
 ---
 
 Bir oyunun tüm kurallarını C++ ile derlemek hızlıdır; ancak zıplama yüksekliği, düşman davranışı veya görev ödülleri için her değişiklikte motoru yeniden derlemek üretim hızını düşürür. Lua, hafif çalışma zamanı ve sade sözdizimiyle bu sorunu çözer: performans kritik çekirdek C++ içinde kalırken, tasarımcıların sık değiştirdiği oyun mantığı betiklere taşınır.
@@ -43,6 +44,9 @@ if (luaL_dofile(L, "scripts/player.lua") != LUA_OK) {
     std::cerr << "Lua hatası: " << lua_tostring(L, -1) << "\n";
     lua_pop(L, 1);
 }
+
+![c-oyun-motoru](/img/c-oyun-motoru.svg)
+
 ```
 
 Bu kod `player.lua` dosyasını yükler ve çalıştırır. Hata mesajı Lua yığınının en üstünde bulunur; `lua_pop` çağrısı, sonraki işlemlerde yığının kirlenmesini engeller. Oyuncu hareketini C++ içinde tutup hasar kuralını Lua'ya vermek yaygın bir hibrittir.

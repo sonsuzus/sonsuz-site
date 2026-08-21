@@ -10,7 +10,11 @@ tags:
   - zmodem
   - terminal
   - python
+image: /img/ansi-renkleri-ve-13.png
 ---
+
+![ansi-renkleri-ve-13](/img/ansi-renkleri-ve-13.svg)
+
 
 İnternetin modem sesleriyle bağlandığı günlere küçük bir selam vermek istiyorsanız, konsol tabanlı bir BBS terminal istemcisi harika bir projedir. Hedefimiz; seri port veya TCP üzerinden bir BBS’e bağlanmak, ANSI kaçış dizileriyle çizilen renkli ekranları doğru göstermek ve ZMODEM sayesinde dosya indirip gönderebilmektir. Bu proje yalnızca nostaljik değildir: akış kontrolü, terminal emülasyonu, ikili protokoller ve olay tabanlı G/Ç gibi bugün de değerli olan kavramları aynı potada buluşturur.
 

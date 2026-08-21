@@ -9,6 +9,7 @@ tags:
   - javascript
   - tip güvenliği
 toc: true
+image: /img/typescript-ile-tip-22.png
 ---
 
 JavaScript'in esnekliği hızlı prototip üretmek için harikadır; ancak ekip, dosya ve entegrasyon sayısı büyüdükçe bu esneklik pahalı sürprizlere dönüşebilir. TypeScript, JavaScript'in üzerine statik tip katmanı ekleyerek değişkenlerin, fonksiyonların ve veri sözleşmelerinin daha kod çalışmadan doğrulanmasını sağlar. Amaç JavaScript'i “daha katı” yapmak değil; hataları kullanıcıya ulaşmadan, geliştiricinin editöründe yakalamaktır.
@@ -81,3 +82,6 @@ Bir `User` alanını `fullName` olarak değiştirdiğinizi düşünün. JavaScri
 Yeni bir projede `strict: true` ile başlayın; eski projelerde ise modül modül geçiş yapın. `any` kullanmak kısa vadede engelleri kaldırır ama tip güvenliği zincirini koparır. Onun yerine bilinmeyen dış veriler için `unknown`, farklı durumlar için ayrık birleşimler (`union`) ve daraltma kontrolleri kullanın.
 
 TypeScript'i testlerin alternatifi değil, ilk savunma hattı olarak konumlandırın. Tipler kodun şeklinin doğru olduğunu; testler ise davranışın doğru olduğunu doğrular. Bu ikili, büyük ölçekli web projelerinde daha öngörülebilir sürümler, daha güvenli refaktörler ve daha az gece yarısı hata avı anlamına gelir.
+
+![typescript-ile-tip-22](/img/typescript-ile-tip-22.svg)
+

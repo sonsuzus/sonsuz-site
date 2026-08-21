@@ -10,6 +10,7 @@ tags:
   - opencv
   - numpy
 toc: true
+image: /img/python-ile-goruntu-isleme.png
 ---
 
 Görüntü işleme, bilgisayara bir resmi sadece ‘görmeyi’ değil, onu anlamayı da öğretme sanatıdır. Python ise bu iş için adeta İsviçre çakısı gibidir: kolay sözdizimi, güçlü kütüphaneler ve bolca topluluk desteği. Bir fotoğrafı siyah-beyaza çevirmekten yüz tanımaya, belge taramadan otonom araçlara kadar pek çok alanda görüntü işleme kullanılır.
@@ -113,3 +114,6 @@ Bu proje hem OpenCV pratiği kazandırır hem de gerçek hayatta işe yarar. Üs
 ## Sonuç
 
 Python ile görüntü işleme, ilk bakışta karmaşık görünse de temel mantık oldukça basittir: görüntüleri matris olarak düşün, pikseller üzerinde işlem yap ve sonucu görselleştir. OpenCV, NumPy ve Matplotlib üçlüsüyle kısa sürede etkileyici uygulamalar geliştirebilirsin. Bir sonraki adımda kamera akışından canlı görüntü işleme, yüz algılama veya nesne takibi gibi daha havalı konulara geçebilirsin. Kısacası, pikseller seni bekliyor!
+
+![python-ile-goruntu-isleme](/img/python-ile-goruntu-isleme.svg)
+

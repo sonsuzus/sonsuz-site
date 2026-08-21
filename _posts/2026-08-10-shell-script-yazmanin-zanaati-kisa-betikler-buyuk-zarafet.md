@@ -9,6 +9,7 @@ tags:
   - bash
   - yazılım zanaatkarlığı
 toc: true
+image: /img/shell-script-yazmanin-92.png
 ---
 
 Bir shell betiği bazen yalnızca üç satırdır: bir dosyayı bulur, dönüştürür ve sonucu kaydeder. Buna rağmen iyi yazılmış bir betik, iyi kurulmuş kısa bir şiir gibi hissedebilir. Her kelime iş yapar, her boşluk okunabilirliğe katkı sunar ve gereksiz hiçbir hareket yoktur. Shell script zanaatı; komutları art arda dizmekten çok, belirsizliği azaltma, niyeti görünür kılma ve gelecekteki kullanıcıya saygı duyma pratiğidir.
@@ -71,3 +72,6 @@ Shell betiklerinde erken soyutlama da bir tuzaktır. Her iki satır için genel 
 | Kullanıcı verisi işleniyor | Tırnaklayın ve doğrulayın |
 
 Sonuçta güzel shell script, zekâ gösterisi değildir. Başka birinin — hatta altı ay sonraki sizin — güvenle okuyup değiştirebildiği bir araçtır. Şiir gibi hissettirmesinin sebebi de budur: Kısıtlı bir dilde, az sayıda sözcükle açık, ritmik ve güvenilir bir anlam kurar.
+
+![shell-script-yazmanin-92](/img/shell-script-yazmanin-92.svg)
+

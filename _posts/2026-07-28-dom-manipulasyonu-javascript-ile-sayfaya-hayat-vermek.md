@@ -9,6 +9,7 @@ tags:
   - dom
   - web geliştirme
 toc: true
+image: /img/dom-manipulasyonu-javascript-16.png
 ---
 
 Bir web sayfasındaki başlığın aniden değişmesi, yeni bir kartın listeye eklenmesi veya bir düğmeye basınca menünün açılması sihir değildir. Perdenin arkasında çoğunlukla JavaScript ve DOM birlikte çalışır. DOM, statik görünen HTML belgesini programlama yoluyla okunabilen ve değiştirilebilen canlı bir yapıya dönüştürür.
@@ -28,6 +29,9 @@ DOM, yani **Document Object Model**, tarayıcının HTML belgesini bellekte tems
     </ul>
   </main>
 </body>
+
+![dom-manipulasyonu-javascript-16](/img/dom-manipulasyonu-javascript-16.svg)
+
 ```
 
 Bu yapıda `body`, `main` elemanının; `main` ise `h1` ve `ul` elemanlarının ebeveynidir. `li` düğümü de `ul` altında bulunur. DOM yalnızca etiketlerden oluşmaz: metinler, yorumlar ve belgenin kendisi de birer düğümdür.

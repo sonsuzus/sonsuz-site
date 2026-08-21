@@ -9,6 +9,7 @@ tags:
   - programlama dilleri
   - kod kalitesi
 toc: true
+image: /img/programlama-dillerinde-soz-14.png
 ---
 
 Bir kod parçasına bakıp daha çalıştırmadan onun güzel ya da çirkin olduğunu düşündüğünüz oldu mu? Girintiler, parantezler, anahtar kelimeler ve semboller; programın davranışını değiştirmese bile algımızı etkiler. Kod estetiği yalnızca kişisel zevk değildir: Okunabilirlik, aşinalık, görsel yoğunluk ve dilin sakladığı ayrıntılar birlikte çalışarak zihnimizde bir düzen hissi oluşturur.
@@ -87,3 +88,6 @@ Bir dili uzun süre kullandığımızda onun alışkanlıklarını doğal kabul 
 Bu nedenle söz dizimi estetiği tamamen nesnel değildir; fakat tamamen keyfî de değildir. Tutarlılık, düşük bilişsel yük, niyetin görünürlüğü ve araç desteği ölçülebilir faydalar sağlar. Biçimlendiriciler de tartışmayı azaltır: `Black`, `Prettier` veya `rustfmt`, kişisel tercihleri ortak bir görsel ritme dönüştürür.
 
 Sonuçta güzel kod, en az karakterle yazılan değil; okuyucunun zihninde en az sürtünmeyle anlam kazanan koddur. İyi söz dizimi programcıya kendini sürekli hatırlatmaz. Geri çekilir, fikri öne çıkarır ve kodu noktalama işaretleriyle yapılan bir mücadeleden okunabilir bir anlatıya dönüştürür.
+
+![programlama-dillerinde-soz-14](/img/programlama-dillerinde-soz-14.svg)
+

@@ -9,6 +9,7 @@ tags:
   - örüntü tanıma
   - python
 toc: true
+image: /img/biyometrik-oruntu-tanima-34.png
 ---
 
 Telefonun kilidini parmağınla açarken cihazın içinde minik bir dedektif çalışır: Görüntüyü temizler, ayırt edici özellikleri çıkarır ve bunları kayıtlı şablonla karşılaştırır. Bu projede gerçek kişisel veriler toplamadan, parmak izi veya iris verisini temsil eden yapay özellik vektörleriyle temel bir biyometrik eşleştirme sisteminin mantığını inceleyeceğiz.
@@ -95,6 +96,9 @@ accepted, score = matcher.verify(
     [0.11, 0.75, 0.34, 0.53, 0.20]
 )
 print(f"Kabul: {accepted}, skor: {score:.3f}")
+
+![biyometrik-oruntu-tanima-34](/img/biyometrik-oruntu-tanima-34.svg)
+
 ```
 
 `enroll` metodu özellik vektörünü normalize ederek saklar. `verify` ise yeni örnekle kayıtlı şablonun uzaklığını hesaplar. Normalizasyon, ölçüm ölçeğindeki farklılıkların etkisini azaltır; fakat gerçek sistemlerde dönüş, konum ve sensör kalitesi için çok daha gelişmiş işlemler gerekir.

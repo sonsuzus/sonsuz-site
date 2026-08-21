@@ -9,6 +9,7 @@ tags:
   - async/await
   - asenkron programlama
 toc: true
+image: /img/asyncawait-ile-modern-24.png
 ---
 
 Bir web servisine istek gönderirken, dosya okurken veya veritabanından kayıt beklerken uygulamanın tamamen durmasını istemeyiz. JavaScript’in `async/await` sözdizimi, arka planda asenkron çalışan bu işlemleri sanki adım adım ilerleyen senkron kodlarmış gibi yazmamızı sağlar. Sonuç; daha az iç içe fonksiyon, daha anlaşılır hata yönetimi ve geliştiricinin saç baş yolma ihtimalinde kayda değer bir azalmadır.
@@ -47,6 +48,9 @@ async function kullaniciGetir(id) {
 
   return await yanit.json();
 }
+
+![asyncawait-ile-modern-24](/img/asyncawait-ile-modern-24.svg)
+
 ```
 
 Bu fonksiyon önce HTTP yanıtını, ardından JSON dönüşümünü bekler. Kod yukarıdan aşağı okunur; fakat iki bekleme sırasında da çalışma ortamı başka görevlerle ilgilenebilir.

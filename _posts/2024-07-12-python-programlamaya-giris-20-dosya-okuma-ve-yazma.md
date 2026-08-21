@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-20-dosya-okuma-ve-yazma/
 toc: true
+image: /img/dosya-okuma-ve-48.png
 ---
 
 
@@ -745,3 +746,6 @@ with open("data.p", "rb") as f:
 Bazı nesneler *pickle* ile kaydedilemezler; ağ bağlantıları, veri tabanı bağlantıları, açık dosya nesneleri gibi.
 
 Dikkat: *pickle* işlemleri herhangi bir emniyet tedbiri içermez. Pickle dosyasının içindeki nesne `load()` ile doğrudan doğruya çalıştırılır. Bu nesnenin içinde kötü amaçlı bir kod parçası varsa sisteminize zarar gelebilir. Bu yüzden bilmediğiniz bir yerden gelen pickle dosyalarını açmayın.
+
+![dosya-okuma-ve-48](/img/dosya-okuma-ve-48.svg)
+

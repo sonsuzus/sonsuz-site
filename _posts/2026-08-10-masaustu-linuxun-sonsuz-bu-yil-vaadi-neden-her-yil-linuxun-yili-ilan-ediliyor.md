@@ -10,6 +10,7 @@ tags:
   - masaüstü
   - teknoloji kültürü
 toc: true
+image: /img/masaustu-linuxun-sonsuz-59.png
 ---
 
 Her yıl teknoloji forumlarında, sosyal medyada ve yorum bölümlerinde aynı cümle yeniden doğar: “Bu yıl masaüstünde Linux'un yılı olacak.” Bazen yeni bir dağıtım, bazen Steam Deck, bazen Windows'un tartışmalı bir kararı bu kehaneti tetikler. Ancak Linux masaüstü pazar payı artarken bile neden bu ifade sürekli geleceğe ertelenir? Çünkü bu cümle yalnızca ölçülebilir bir pazar tahmini değil; özgür yazılım ideallerinin, teknik hayranlığın ve daha iyi bir bilgisayar deneyimi arzusunun kültürel sloganıdır.
@@ -31,6 +32,9 @@ Burada $L$ Linux kullanan cihazları, $W$ Windows'u, $M$ macOS'u ve $O$ diğer s
 | Donanım desteği | Wi-Fi, GPU ve uyku modunun çalışması | Her cihazda aynı deneyim oluşmaz |
 | Yazılım ekosistemi | Tarayıcı, IDE ve oyun seçenekleri | Bazı sektör uygulamaları eksik kalabilir |
 | Kullanıcı özgürlüğü | Şeffaflık ve özelleştirme | Her kullanıcı özelleştirme istemez |
+
+![masaustu-linuxun-sonsuz-59](/img/masaustu-linuxun-sonsuz-59.svg)
+
 
 ## Tekrarlayan iyimserliğin motoru
 

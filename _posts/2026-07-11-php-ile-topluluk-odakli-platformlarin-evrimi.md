@@ -8,6 +8,7 @@ tags:
   - php
   - forum mimarisi
   - veritabanı güvenliği
+image: /img/php-ile-topluluk-27.png
 ---
 
 Bir forum sitesine girdiğinizde gördüğünüz şey birkaç başlık, avatar ve cevap kutusundan ibaret gibi durur. Oysa arka planda PHP, HTTP isteğini yakalar, oturumu kontrol eder, veritabanından konuları çeker, izinleri hesaplar ve size dinamik bir HTML sayfası üretir. Topluluk odaklı platformların evrimi tam da burada başlar: statik sayfalardan, kullanıcı davranışına göre şekillenen yaşayan sistemlere geçiş.
@@ -24,6 +25,9 @@ Dinamik sayfa oluşturmanın temel fikri basittir: kullanıcıdan gelen istek, s
 | Statik HTML | Her sayfa elle hazırlanır | Hızlı ve basit | Etkileşim yok |
 | Klasik PHP | PHP içinde HTML ve SQL birlikte | Kolay geliştirme | Bakım ve güvenlik zor |
 | Modern PHP | MVC, ORM, şablon motoru | Ölçeklenebilir | Mimari disiplin ister |
+
+![php-ile-topluluk-27](/img/php-ile-topluluk-27.svg)
+
 
 Bir forumun veritabanı modeli genellikle birkaç ana tablo etrafında döner: kullanıcılar, konular, mesajlar, kategoriler ve roller. Basit ilişki şöyle kurulabilir: bir kullanıcının birçok mesajı vardır, bir konunun birçok mesajı vardır. Matematiksel olarak bunu $User \rightarrow Posts$ ve $Topic \rightarrow Posts$ ilişkileriyle düşünebiliriz. Trafik arttığında sorgu sayısı da önem kazanır; toplam maliyet kabaca $T_{toplam}=T_{sql}+T_{php}+T_{network}$ şeklinde okunabilir.
 

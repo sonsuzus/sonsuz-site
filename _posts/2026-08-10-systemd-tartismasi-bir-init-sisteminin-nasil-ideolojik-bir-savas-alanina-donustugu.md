@@ -10,7 +10,11 @@ tags:
   - açık kaynak
   - sosyoloji
   - init sistemi
+image: /img/systemd-tartismasi-bir-84.png
 ---
+
+![systemd-tartismasi-bir-84](/img/systemd-tartismasi-bir-84.svg)
+
 
 Linux dünyasında `systemd` tartışması, ilk bakışta önyükleme süresini, servis yönetimini ve günlük kayıtlarını ilgilendiren teknik bir ayrıntı gibi görünür. Ancak konu hızla “Unix felsefesi mi, entegre platform mu?” sorusuna; oradan da özgürlük, kontrol, gelenek ve topluluk kimliği üzerine bir mücadeleye dönüşmüştür. Bir init sisteminin neden bu kadar hararetli tartışıldığını anlamak için yalnızca kodun ne yaptığına değil, toplulukların teknolojiye yüklediği anlama da bakmak gerekir.
 ``

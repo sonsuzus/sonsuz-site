@@ -9,6 +9,7 @@ tags:
   - hata yakalama
   - istisnalar
 toc: true
+image: /img/pythonda-hata-yakalama-93.png
 ---
 
 Bir programın doğru kodlanmış olması, çalışırken asla sorun yaşamayacağı anlamına gelmez. Kullanıcı sayı yerine metin girebilir, beklenen dosya silinmiş olabilir veya uzak sunucu kısa süreliğine yanıt vermeyebilir. Python’daki `try-except` yapısı, bu beklenmedik durumları programı aniden çökertmeden yakalamamızı ve kontrollü biçimde yönetmemizi sağlar.
@@ -35,6 +36,9 @@ sonuc = 10 / 0
 | Mantık hatası | Program çalışırken | Yanlış formül | Otomatik olarak hayır |
 | İstisna | Çalışma zamanında | Sıfıra bölme | Evet |
 | Sistem hatası | Kaynağa erişirken | Dosyanın bulunamaması | Evet |
+
+![pythonda-hata-yakalama-93](/img/pythonda-hata-yakalama-93.svg)
+
 
 ## `try-except` nasıl çalışır?
 

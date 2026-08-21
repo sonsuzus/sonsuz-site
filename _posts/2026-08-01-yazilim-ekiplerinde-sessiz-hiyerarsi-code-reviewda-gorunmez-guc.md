@@ -9,6 +9,7 @@ tags:
   - yazılım-kültürü
   - ekip-dinamikleri
 toc: true
+image: /img/yazilim-ekiplerinde-sessiz-40.png
 ---
 
 Bir pull request açılır, değişiklikler yüzlerce satırdır ve kıdemli geliştiricinin kodu birkaç dakika içinde “LGTM” alır. Aynı ekipte yeni başlayan birinin üç satırlık düzeltmesi ise isimlendirmeden mimariye kadar didiklenir. Bu fark yalnızca teknik deneyimle açıklanabilir mi? Code review, hataları yakalayan bir mühendislik pratiği olduğu kadar statü, güven ve otoritenin yeniden üretildiği küçük bir sosyal sahnedir.
@@ -33,6 +34,9 @@ Burada $Q_r$, review sırasında sorulan anlamlı soru sayısını; $L_c$ ise ko
 | Çok sayıda yorum | Kod gerçekten sorunludur | Junior geliştiriciyi aşırı denetleme |
 | Yorumsuz onay | Reviewer konuya hâkim değildir | Otorite sahibine karşı sessiz kalma |
 | Uzayan tartışma | Mimari belirsizlik vardır | Statü mücadelesi yaşanıyordur |
+
+![yazilim-ekiplerinde-sessiz-40](/img/yazilim-ekiplerinde-sessiz-40.svg)
+
 
 Tablo bir suçlama listesi değildir. Aynı davranışın hem teknik hem sosyal nedenleri bulunabilir. Ama yalnızca teknik açıklamayı kabul etmek, ekibin kör noktalarını büyütür.
 

@@ -9,6 +9,7 @@ tags:
   - event listeners
   - asenkron programlama
 toc: true
+image: /img/javascript-olay-dinleyicileri-27.png
 ---
 
 Bir web sayfası kullanıcıya yalnızca bilgi gösteriyorsa dijital bir afişten pek farklı değildir. Onu gerçek bir arayüze dönüştüren şey; tıklamaları, tuşları, kaydırmaları ve form girişlerini algılayıp uygun tepkiler verebilmesidir. JavaScript'teki olay dinleyicileri, tarayıcı ile kullanıcı arasındaki bu konuşmayı yönetir.
@@ -36,6 +37,9 @@ Bunu basitçe şu maliyet karşılaştırmasıyla düşünebiliriz. Sürekli kon
 | Sürekli kontrol | Durumu tekrar tekrar sorgular | Mantığı basittir | Kaynak tüketebilir |
 | Olay dinleme | Olay gerçekleşince çalışır | Verimli ve ölçeklenebilir | Olay akışını anlamak gerekir |
 | HTML içi olay | `onclick` niteliği kullanır | Hızlı prototip sağlar | HTML ile JavaScript'i karıştırır |
+
+![javascript-olay-dinleyicileri-27](/img/javascript-olay-dinleyicileri-27.svg)
+
 
 ## Event loop ve asenkron tepki
 

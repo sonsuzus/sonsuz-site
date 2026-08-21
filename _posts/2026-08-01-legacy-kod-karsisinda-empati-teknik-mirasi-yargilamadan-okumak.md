@@ -9,6 +9,7 @@ tags:
   - yazılım-kültürü
   - teknik-borç
 toc: true
+image: /img/legacy-kod-karsisinda-77.png
 ---
 
 Bir gün yıllardır çalışan bir projeyi açar, 900 satırlık bir metotla karşılaşır ve refleks olarak “Bunu kim yazdı?” diye sorarsınız. Git geçmişi birkaç saniye sonra cevabı verir: Üç yıl önce siz! Legacy kod, yalnızca eski kod değildir; geçmiş kararların, teslim tarihlerinin, eksik bilgilerin ve değişen ihtiyaçların donmuş hâlidir. Bu nedenle onu anlamanın ilk adımı, suçlu aramak yerine dönemin koşullarını araştırmaktır.
@@ -29,6 +30,9 @@ Bugün bildiğimiz güvenlik açığı, performans sorunu veya tasarım deseni o
 | “Neden test yok?” | “O dönemde test altyapısı var mıydı?” | Eksikliği bağlama yerleştirir |
 | “Baştan yazalım.” | “Mevcut davranışın ne kadarını biliyoruz?” | Yeniden yazım riskini azaltır |
 | “Yazan kişi beceriksizmiş.” | “Hangi kısıtlar altında çalışmış?” | Kişiyi karardan ayırır |
+
+![legacy-kod-karsisinda-77](/img/legacy-kod-karsisinda-77.svg)
+
 
 ## Kod arkeolojisi yapmak
 

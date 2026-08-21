@@ -9,6 +9,7 @@ tags:
   - iteratörler
   - fonksiyonel programlama
 toc: true
+image: /img/satranc_motorlari_evrim_zaman_cizgisi.png
 ---
 
 Kapanışlar (closures) ve iteratörler, veriyi “nasıl dolaşacağımızı” adım adım anlatmak yerine “hangi dönüşümleri istediğimizi” ifade etmemizi sağlar. Kapanışlar çevrelerindeki değişkenleri hatırlayan isimsiz fonksiyonlardır; iteratörler ise koleksiyon elemanlarını sırayla üreten soyutlamalardır. Birlikte kullanıldıklarında kısa, okunabilir ve yeniden kullanılabilir veri işleme zincirleri ortaya çıkar.
@@ -33,6 +34,9 @@ Burada $a$, açıkça parametre olarak verilmemesine rağmen hesaplamanın parç
 | Dış değişken yakalar mı? | Genellikle hayır | Evet |
 | Kısa işlemlerde kullanım | Daha törensel | Oldukça pratik |
 | Durum taşıyabilir mi? | Ek yapı gerekir | Yakalanan değerlerle taşıyabilir |
+
+![satranc_motorlari_evrim_zaman_cizgisi](/img/satranc_motorlari_evrim_zaman_cizgisi.svg)
+
 
 Rust’ta bir kapanış çevresindeki değeri referansla ödünç alabilir, değiştirilebilir biçimde ödünç alabilir veya sahipliğini üstlenebilir. Derleyici buna göre kapanışı `Fn`, `FnMut` ya da `FnOnce` davranışlarından biriyle ilişkilendirir.
 

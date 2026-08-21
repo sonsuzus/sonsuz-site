@@ -9,7 +9,11 @@ tags:
   - cron
   - otomasyon
 toc: true
+image: /img/sistem-betikleri-ve-12.png
 ---
+
+![sistem-betikleri-ve-12](/img/sistem-betikleri-ve-12.svg)
+
 
 Bir geliştiricinin aynı komutu her sabah elle çalıştırması, kahve makinesinin başında suyun kaynamasını izlemek kadar gereksizdir. Sistem betikleri; dosya yedekleme, günlük temizleme, servis denetleme ve rapor üretme gibi işleri kodla yönetmemizi sağlar. Bu işleri belirli aralıklarla kendiliğinden çalıştırdığımızda ise küçük ama yorulmayan bir dijital asistana sahip oluruz.
 ``

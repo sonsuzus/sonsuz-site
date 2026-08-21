@@ -9,6 +9,7 @@ tags:
   - vs code
   - geliştirme ortamı
 toc: true
+image: /img/python-kurulumu-ve-36.png
 ---
 
 Python öğrenmeye başlarken ilk programdan önce küçük ama önemli bir görevimiz var: bilgisayara Python dilini çalıştıracak yorumlayıcıyı tanıtmak ve kod yazacağımız ortamı hazırlamak. Bu süreç, bir mutfakta yemek yapmadan önce ocağı bağlamaya ve araçları tezgâha dizmeye benzer. Doğru kurulan bir ortam sayesinde ileride “Kodum mu bozuk, bilgisayar mı naz yapıyor?” ikilemiyle daha az karşılaşırız.
@@ -99,3 +100,6 @@ python main.py
 ```
 
 Artık yorumlayıcı, editör, terminal ve sanal ortam aynı ekipte çalışıyor. Kısacası sahne hazır; bundan sonra hatalar bile öğrenme macerasının eğlenceli karakterleri olacak!
+
+![python-kurulumu-ve-36](/img/python-kurulumu-ve-36.svg)
+

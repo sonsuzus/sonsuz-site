@@ -8,7 +8,11 @@ tags:
   - turing-testi
   - yapay-zeka
   - doğal-dil-işleme
+image: /img/turing-testi-ve-77.png
 ---
+
+![turing-testi-ve-77](/img/turing-testi-ve-77.svg)
+
 
 Bir sohbet botu size doğru cevabı verdiğinde etkilenirsiniz; ama size duraksayarak, şaka yaparak, konuyu hafifçe yanlış anlayıp sonra toparlayarak cevap verdiğinde ona neredeyse kişilik atfedersiniz. Turing Testi tam da bu bulanık bölgede yaşar: Mesele yalnızca kodun mantıklı çıktı üretmesi değil, insan bilişini, dil alışkanlıklarını ve sohbetin sosyal ritmini ne kadar inandırıcı taklit edebildiğidir.
 ``

@@ -21,6 +21,7 @@ tags:
   - matematik
   - kitap
 toc: true
+image: /img/en-kisa-yol-55.png
 ---
 
 Bir çizgede iki düğüm arasındaki [en kısa yolu](https://program.sonsuz.us/search.html?q=en%20k%C4%B1sa%20yolu) bulmak, pek çok pratik uygulamaya sahip temel bir problemdir. Klasik bir örnek, yol uzunlukları bilinen bir ağda iki şehir arasındaki en kısa rotayı hesaplamaktır. Ağırlıksız çizgelerde yol uzunluğu kenar sayısına eşit olduğundan BFS ile çözülebilir; bu bölümde ise ağırlıklı çizgeler için geliştirilmiş algoritmalara bakacağız.
@@ -223,3 +224,6 @@ for (int k = 1; k <= n; k++) {
 [^2]: E. W. Dijkstra algoritmayı 1959 yılında yayınlamıştır; ancak orijinal makalesinde verimli bir implementasyondan bahsetmemiştir.
 [^3]: Kendi öncelikli kuyruk yapısı tanımlanarak pozitif değerler de kullanılabilir; ancak implementasyon biraz daha uzun olur.
 [^4]: Algoritma R. W. Floyd ve S. Warshall tarafından birbirinden habersiz biçimde 1962 yılında yayınlanmıştır.
+
+![en-kisa-yol-55](/img/en-kisa-yol-55.svg)
+

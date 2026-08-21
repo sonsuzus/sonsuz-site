@@ -9,7 +9,11 @@ tags:
   - sistem programlama
   - bellek yönetimi
   - compile time
+image: /img/zig-ile-dusuk-22.png
 ---
+
+![zig-ile-dusuk-22](/img/zig-ile-dusuk-22.svg)
+
 
 C, onlarca yıldır işletim sistemlerinden gömülü cihazlara kadar düşük seviyeli yazılımın ortak diliydi. Zig ise C'nin performans ve donanıma yakınlık avantajlarını korurken, bellek yönetimini daha görünür, hata takibini daha disiplinli ve derleme zamanını daha üretken hâle getirmeyi amaçlar. Çöp toplayıcıya ihtiyaç duymadan güvenli alışkanlıklar kazandırması, onu özellikle sistem programlama meraklıları için ilginç bir seçenek yapar.
 

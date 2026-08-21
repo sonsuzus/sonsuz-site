@@ -9,6 +9,7 @@ tags:
   - yapay zekâ
   - model çöküşü
 toc: true
+image: /img/sentetik-verinin-felsefi-48.png
 ---
 
 Bir yapay zekâ modelinin ürettiği metinler, görseller veya kodlar yeni modellerin eğitim verisine karıştığında tuhaf bir döngü başlar: Makine, dünyayı doğrudan gözlemlemek yerine kendi yankısını dinlemeye koyulur. İlk bakışta ucuz ve sınırsız görünen sentetik veri, kontrol edilmediğinde bilgi kirliliğini büyütebilir; istisnaları silebilir ve özgünlüğü istatistiksel bir ortalamaya dönüştürebilir.
@@ -35,6 +36,9 @@ Burada $\alpha$, sentetik verinin ağırlığıdır. Değer büyüdükçe modeli
 | Hata yapısı | Hatalar farklı kaynaklardan gelir | Aynı hata nesiller boyunca çoğalabilir |
 | Özgünlük | Yeni deneyimler ve bakışlar içerir | Önceki üretimlerin türevlerini üretir |
 | İzlenebilirlik | Kaynağa ulaşmak görece mümkündür | İlk kaynağın insan mı model mi olduğu bulanıklaşır |
+
+![sentetik-verinin-felsefi-48](/img/sentetik-verinin-felsefi-48.svg)
+
 
 İlk risk **model çöküşüdür**. Model, az rastlanan durumları unutup en olası cevaplara sıkışır. İkinci risk **epistemik aklama**dır: Dayanağı olmayan bir iddia, binlerce sentetik metinde tekrarlandığı için yaygın ve güvenilir görünür. Üçüncüsü ise **özgünlük kaybıdır**. Kültür, yalnızca çoğunluk örüntülerinden oluşmaz; aykırı fikirler, yerel ifadeler ve başarısız denemeler de yaratıcı ilerlemenin hammaddesidir.
 

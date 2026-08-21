@@ -9,6 +9,7 @@ tags:
   - word2vec
   - glove
 toc: true
+image: /img/kelimeleri-sayilardan-anlama-60.png
 ---
 
 İnsanlar için “kedi”, “köpek” ve “uçak” kelimelerini ayırmak kolaydır: İlk ikisi hayvandır, üçüncüsü ise gökyüzünde dolaşan metal bir araçtır. Bilgisayar açısından bakıldığındayse hepsi yalnızca karakter dizileridir. Doğal Dil İşleme (NLP), bu karakterlerin ardındaki anlamı makinelerin işleyebileceği matematiksel temsillere dönüştürür. Kelime gömme yöntemleri de tam burada devreye girerek kelimelere sayısal birer kimlik değil, anlamsal birer koordinat kazandırır.
@@ -77,3 +78,6 @@ for word, score in model.most_similar("computer", topn=5):
 ```
 
 Model, “software” veya “computers” gibi sözcükleri yüksek benzerlik puanlarıyla döndürebilir. Ancak klasik Word2Vec ve GloVe modellerinde her kelimenin yalnızca tek vektörü vardır. Bu nedenle “yüz” kelimesinin insan yüzü ve sayı anlamları bağlama göre ayrılamaz. BERT gibi bağlamsal modeller bu sınırlamayı giderse de kelime gömmeler; arama, öneri sistemleri, duygu analizi ve metin sınıflandırma projelerinde hâlâ hızlı, öğretici ve güçlü bir başlangıç noktasıdır.
+
+![kelimeleri-sayilardan-anlama-60](/img/kelimeleri-sayilardan-anlama-60.svg)
+

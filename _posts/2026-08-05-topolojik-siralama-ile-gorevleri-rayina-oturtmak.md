@@ -9,6 +9,7 @@ tags:
   - graf algoritmaları
   - görev planlama
 toc: true
+image: /img/topolojik-siralama-ile-86.png
 ---
 
 Bir projedeki görevleri gelişigüzel sıraya koymak, çatıyı temelden önce inşa etmeye benzeyebilir. Bazı işler ancak başka işler tamamlandıktan sonra başlayabilir. Topolojik sıralama, bu bağımlılıkları bozmadan geçerli bir çalışma sırası üretir; döngü tespiti ise planın kendi kuyruğunu kovalayan bir yılana dönüşüp dönüşmediğini gösterir.
@@ -64,6 +65,9 @@ def planla(graf):
         raise ValueError('Döngü var: geçerli plan üretilemedi!')
 
     return plan
+
+![topolojik-siralama-ile-86](/img/topolojik-siralama-ile-86.svg)
+
 ```
 
 Burada `hazir` kuyruğu, bütün ön koşulları tamamlanan görevleri tutar. Algoritma sonunda plana eklenen düğüm sayısı toplam düğüm sayısından küçükse bazı görevlerin giriş derecesi sıfıra inmemiştir. Bu durum bir döngü bulunduğunu kanıtlar.

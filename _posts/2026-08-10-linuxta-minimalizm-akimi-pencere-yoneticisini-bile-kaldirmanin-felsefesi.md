@@ -8,6 +8,7 @@ tags:
   - linux
   - minimalizm
   - pencere yöneticisi
+image: /img/linuxta-minimalizm-akimi-79.png
 ---
 
 Linux dünyasında minimalizm, yalnızca daha az RAM tüketmek veya eski bir dizüstünü hızlandırmak anlamına gelmez. Bazı kullanıcılar masaüstü ortamını GNOME ya da KDE’den i3’e, i3’ten dwm’ye, oradan da doğrudan TTY terminaline taşır. Hatta pencere yöneticisini tamamen kaldırır. Bu ilk bakışta “neden kullanılabilir bir arayüzden vazgeçilsin?” sorusunu doğurur. Cevap performanstan daha geniştir: dikkat ekonomisine direnmek, araçlar üzerinde kontrol kurmak ve dijital hayatı bilinçli biçimde sadeleştirmek.
@@ -44,3 +45,6 @@ Bu betik bir “masaüstü” kurar, ancak pencereleri grafiksel olarak değil t
 Yine de bu yaklaşımı evrensel reçete saymak doğru olmaz. Tasarım, video kurgu, erişilebilirlik araçları veya yoğun görüntülü iletişim gerektiren işler grafik arayüzden ciddi yarar sağlar. Minimalizm, özellik düşmanlığı değildir; ihtiyaçla araç arasındaki mesafeyi azaltmaktır. Bir pencere yöneticisini kaldırmak ancak iş akışını iyileştiriyorsa anlamlıdır.
 
 En sağlıklı başlangıç, sisteminizi bir gecede TTY’ye sürüklemek değildir. Önce bildirimleri azaltın, gereksiz otomatik başlayan servisleri inceleyin, bir hafta boyunca terminal tabanlı bir aracı deneyin. Ardından şu soruyu sorun: “Bu bileşen işimi mi kolaylaştırıyor, yoksa yalnızca dikkatimi mi istiyor?” Linux minimalizminin özü, daha az yazılım kullanmak değil; her çalışan sürecin ve her görünen pikselin gerekçesini bilmektir.
+
+![linuxta-minimalizm-akimi-79](/img/linuxta-minimalizm-akimi-79.svg)
+

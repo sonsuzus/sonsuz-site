@@ -9,6 +9,7 @@ tags:
   - işletim sistemleri
   - kernel
   - bellek yönetimi
+image: /img/c-dilinin-minimalizmi-42.png
 ---
 
 ![c-dilinin-minimalizmi-42](/img/c-dilinin-minimalizmi-42.svg)
@@ -27,6 +28,9 @@ C’nin minimalizmini anlamak için onu daha yüksek seviyeli dillerle karşıla
 | Çalışma zamanı | Çok küçük veya yok | Genellikle büyük runtime |
 | Tahmin edilebilirlik | Yüksek | Dil ve VM davranışına bağlı |
 | Kernel geliştirme | Çok uygun | Genellikle uygun değil |
+
+![c-dilinin-minimalizmi-42](/img/c-dilinin-minimalizmi-42.svg)
+
 
 Bellek adresleriyle konuşmak, C’nin en güçlü ama en dikkat isteyen tarafıdır. Örneğin 32 bitlik bir sistemde adres uzayı teorik olarak $2^{32}$ bayttır, yani yaklaşık 4 GB. Bir aygıtın kontrol register’ı belirli bir adrese eşlenmişse, kernel bu adrese yazarak aygıta komut verebilir. Buradaki temel fikir şudur: $Adres = Taban + Ofset$. Basit görünüyor, ama bu denklem ekran kartından zamanlayıcıya kadar pek çok donanım etkileşiminin temelidir.
 

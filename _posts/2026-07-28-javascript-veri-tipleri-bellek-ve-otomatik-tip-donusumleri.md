@@ -9,7 +9,11 @@ tags:
   - veri tipleri
   - type coercion
 toc: true
+image: /img/javascript-veri-tipleri-31.png
 ---
+
+![javascript-veri-tipleri-31](/img/javascript-veri-tipleri-31.svg)
+
 
 JavaScript’te `"5" + 2` işleminin `"52"`, `"5" - 2` işleminin ise `3` üretmesi ilk bakışta motorun zar attığını düşündürebilir. Oysa bu davranışların arkasında belirli dönüşüm kuralları bulunur. İlkel ve referans tiplerinin bellekte nasıl temsil edildiğini, değerlerin nasıl kopyalandığını ve otomatik tip dönüşümünün hangi adımlarla gerçekleştiğini anlamak; şaşırtıcı hataları önlemenin en etkili yollarından biridir.
 

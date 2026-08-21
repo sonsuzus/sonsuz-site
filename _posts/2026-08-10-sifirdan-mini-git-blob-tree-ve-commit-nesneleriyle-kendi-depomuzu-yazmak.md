@@ -11,6 +11,7 @@ tags:
   - nesne modeli
   - proje
 toc: true
+image: /img/sifirdan-mini-git-11.png
 ---
 
 Git'i yalnızca `git add` ve `git commit` komutlarından ibaret görmek kolaydır; fakat perde arkasında Git, dosyaları ve geçmişi içerik adreslemeli küçük nesneler olarak saklar. Bu projede Python ile basit bir Git klonu yazacak, bir dosyadan **blob**, dosya listesinden **tree** ve geçmiş kaydından **commit** üreteceğiz. Amaç Git komutlarını kopyalamak değil; Git'in neden hızlı, güvenilir ve tekrar eden içeriklerde verimli olduğunu somut olarak anlamaktır.
@@ -54,6 +55,9 @@ def write_object(kind: str, content: bytes) -> str:
 
 def make_blob(filename: str) -> str:
     return write_object("blob", Path(filename).read_bytes())
+
+![sifirdan-mini-git-11](/img/sifirdan-mini-git-11.svg)
+
 ```
 
 `make_blob("merhaba.txt")` çağrısı dosyanın içeriğini bir blob'a dönüştürür. Aynı dosyayı yeniden işlemek aynı `oid` değerini döndürür; `if not path.exists()` satırı gereksiz yazmayı engeller.

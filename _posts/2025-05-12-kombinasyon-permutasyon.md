@@ -12,6 +12,7 @@ math: true
 excerpt_separator: "``"
 
 toc: true
+image: /img/permutasyon-kombinasyon.png
 ---
 
 
@@ -207,3 +208,5 @@ Kaynak çözümünün formülü şöyledir:
 $$ \text{Toplam Farklı Diziliş} = \frac{\binom{7}{2} \binom{5}{2}}{2} + \binom{7}{3} \cdot 2 + \binom{7}{2} $$
 $$ \text{Toplam} = 105 + 70 + 21 = 196 $$
 Kaynak çözüm bu üç terimin toplamını 196 olarak vermiştir [8]. Ancak, problemde verilen seçenekler arasında 196 bulunmamaktadır [7]. Mantıksal olarak, iki transpozisyonun çarpımı ya birim permütasyondur (1 farklı diziliş), ya bir 3-döngüdür (70 farklı diziliş), ya da iki ayrı transpozisyonun çarpımıdır (105 farklı diziliş). Bu durumda toplam farklı diziliş sayısı $1 + 70 + 105 = 176$ olmalıdır, ki bu da seçenekler arasında d) şıkkına karşılık gelir [7]. Kaynak çözümündeki son $+21$ teriminin kaynağı ve anlamı, sağlanan metin parçalarına göre net değildir ve nihai sonuç seçeneklerden biriyle uyuşmamaktadır. Yine de, kaynağın sunduğu çözümü buraya aktardım.
+![permutasyon-kombinasyon](/img/permutasyon-kombinasyon.svg)
+
