@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#eef7ed"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="box6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fee2e2"/>
+      <stop offset="100%" stop-color="#fecaca"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Dinamik Kod Üretme</text>
+
+  <!-- Merkez: Python Dinamik -->
+  <rect x="245" y="120" width="150" height="48" rx="12" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">Python</text>
+  <text x="320" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a8a">Dinamik Dil</text>
+
+  <!-- Sol üst: eval -->
+  <rect x="40" y="50" width="130" height="48" rx="12" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="105" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3730a3">eval()</text>
+  <text x="105" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3730a3">İfade Değerlendir</text>
+
+  <!-- Sol alt: exec -->
+  <rect x="40" y="220" width="130" height="48" rx="12" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="105" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3730a3">exec()</text>
+  <text x="105" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3730a3">Komut Çalıştır</text>
+
+  <!-- Sağ üst: Değişkenler -->
+  <rect x="470" y="50" width="130" height="48" rx="12" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="535" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9d174d">globals</text>
+  <text x="535" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d174d">locals</text>
+
+  <!-- Sağ alt: Güvenlik -->
+  <rect x="470" y="220" width="130" height="48" rx="12" fill="url(#box6)" filter="url(#shadow)"/>
+  <text x="535" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#991b1b">Güvenlik</text>
+  <text x="535" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#991b1b">Riskler</text>
+
+  <!-- Alt orta: Kullanım Alanları -->
+  <rect x="220" y="260" width="200" height="40" rx="12" fill="url(#box5)" filter="url(#shadow)"/>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#065f46">Kullanım Alanları</text>
+  <text x="320" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#065f46">Hesap Makinesi</text>
+
+  <!-- Üst orta: Örnekler -->
+  <rect x="220" y="50" width="200" height="40" rx="12" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="320" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#92400e">Örnekler</text>
+  <text x="320" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92400e">Yardım Dökümanları</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- eval -> Merkez -->
+  <path d="M170 74 L240 120" stroke="#6366f1" stroke-width="2" fill="none"/>
+  <polygon points="240,120 231,112 233,123" fill="#6366f1"/>
+
+  <!-- exec -> Merkez -->
+  <path d="M170 244 L240 168" stroke="#6366f1" stroke-width="2" fill="none"/>
+  <polygon points="240,168 231,172 237,162" fill="#6366f1"/>
+
+  <!-- Merkez -> globals/locals -->
+  <path d="M395 130 L465 74" stroke="#ec4899" stroke-width="2" fill="none"/>
+  <polygon points="465,74 454,72 461,81" fill="#ec4899"/>
+
+  <!-- Merkez -> Güvenlik -->
+  <path d="M395 168 L465 244" stroke="#ef4444" stroke-width="2" fill="none"/>
+  <polygon points="465,244 456,239 458,250" fill="#ef4444"/>
+
+  <!-- Merkez -> Kullanım -->
+  <path d="M320 168 L320 255" stroke="#10b981" stroke-width="2" fill="none"/>
+  <polygon points="320,255 315,246 325,246" fill="#10b981"/>
+
+  <!-- Örnekler -> Merkez -->
+  <path d="M320 95 L320 115" stroke="#f59e0b" stroke-width="2" fill="none"/>
+  <polygon points="320,115 315,106 325,106" fill="#f59e0b"/>
+
+  <!-- Alt not -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">Dikkatli kullanın</text>
+</svg>

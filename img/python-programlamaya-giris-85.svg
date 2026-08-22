@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7f0"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez: Python Modül Sistemi -->
+  <rect x="220" y="115" width="200" height="50" rx="12" fill="url(#box1)" filter="url(#shadow)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="320" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1e3a8a">Python Modül Sistemi</text>
+  <text x="320" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e40af">.py dosyaları ve paketler</text>
+
+  <!-- Sol üst: Modül Oluşturma -->
+  <rect x="30" y="30" width="160" height="55" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="110" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3730a3">Modül Oluşturma</text>
+  <text x="110" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4338ca">basitmodul.py</text>
+  <text x="110" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4f46e5">Fonksiyon + Değişken</text>
+
+  <!-- Sağ üst: İçe Aktarma -->
+  <rect x="450" y="30" width="160" height="55" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="530" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3730a3">İçe Aktarma</text>
+  <text x="530" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4338ca">import, from ... import</text>
+  <text x="530" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4f46e5">as ile kısa isim</text>
+
+  <!-- Sol orta: İsim Alanı -->
+  <rect x="30" y="135" width="160" height="55" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="110" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#065f46">İsim Alanı</text>
+  <text x="110" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#047857">Nokta notasyonu</text>
+  <text x="110" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#059669">modul.fonksiyon()</text>
+
+  <!-- Sağ orta: Paket Yapısı -->
+  <rect x="450" y="135" width="160" height="55" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="530" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#065f46">Paket Yapısı</text>
+  <text x="530" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#047857">Dizin + __init__.py</text>
+  <text x="530" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#059669">Alt dizinler</text>
+
+  <!-- Sol alt: Yeniden Yükleme -->
+  <rect x="30" y="240" width="160" height="55" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="110" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#78350f">Yeniden Yükleme</text>
+  <text x="110" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#92400e">importlib.reload()</text>
+  <text x="110" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#b45309">Güncel dosya</text>
+
+  <!-- Sağ alt: Hazır Paketler -->
+  <rect x="450" y="240" width="160" height="55" rx="10" fill="url(#box5)" filter="url(#shadow)" stroke="#f472b6" stroke-width="1.5"/>
+  <text x="530" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#831843">Hazır Paketler</text>
+  <text x="530" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#9d174d">SciPy, NumPy</text>
+  <text x="530" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#be185d">Standart kütüphane</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Sol üst -> Merkez -->
+  <path d="M190 72 L215 130" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="215,130 207,119 209,131" fill="#64748b"/>
+
+  <!-- Sağ üst -> Merkez -->
+  <path d="M450 72 L425 130" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="425,130 417,119 419,131" fill="#64748b"/>
+
+  <!-- Sol orta -> Merkez -->
+  <path d="M190 162 L215 145" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="215,145 205,140 207,147" fill="#64748b"/>
+
+  <!-- Sağ orta -> Merkez -->
+  <path d="M450 162 L425 145" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="425,145 415,140 417,147" fill="#64748b"/>
+
+  <!-- Sol alt -> Merkez -->
+  <path d="M190 267 L215 170" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="215,170 205,166 207,173" fill="#64748b"/>
+
+  <!-- Sağ alt -> Merkez -->
+  <path d="M450 267 L425 170" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="425,170 415,166 417,173" fill="#64748b"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="312" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#94a3b8">Modüller ve paketler: kod tekrarını önler</text>
+</svg>

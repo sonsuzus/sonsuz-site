@@ -1,0 +1,72 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#888" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Bilimsel Programlama: Serbest Düşüş</text>
+
+  <!-- 1. Hazırlık Kutusu -->
+  <rect x="30" y="50" width="170" height="90" rx="10" fill="#e8f4f8" stroke="#5dade2" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="115" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">1. Hazırlık</text>
+  <text x="115" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Sabitler: g, t</text>
+  <text x="115" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Listeler: t, h, v</text>
+  <text x="115" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Fonksiyonlar: h(t), v(t)</text>
+
+  <!-- 2. Hesaplama Kutusu -->
+  <rect x="235" y="50" width="170" height="90" rx="10" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7d6608">2. Hesaplama</text>
+  <text x="320" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">while döngüsü</text>
+  <text x="320" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">h = h0 - ½·g·t²</text>
+  <text x="320" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">v = v0 - g·t</text>
+
+  <!-- 3. Görselleştirme Kutusu -->
+  <rect x="440" y="50" width="170" height="90" rx="10" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="525" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#922b21">3. Görselleştirme</text>
+  <text x="525" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">matplotlib</text>
+  <text x="525" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">plt.plot(t, h)</text>
+  <text x="525" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">plt.plot(t, v)</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Ok 1: Hazırlık -> Hesaplama -->
+  <line x1="200" y1="95" x2="230" y2="95" stroke="#555" stroke-width="2"/>
+  <polygon points="235,95 225,90 225,100" fill="#555"/>
+
+  <!-- Ok 2: Hesaplama -> Görselleştirme -->
+  <line x1="405" y1="95" x2="435" y2="95" stroke="#555" stroke-width="2"/>
+  <polygon points="440,95 430,90 430,100" fill="#555"/>
+
+  <!-- Formül Kutusu (Alt) -->
+  <rect x="30" y="180" width="270" height="110" rx="10" fill="#f4f6f7" stroke="#7f8c8d" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="165" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Matematiksel Model</text>
+  <text x="165" y="228" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">h(t) = h₀ - ½·g·t²</text>
+  <text x="165" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">v(t) = v₀ - g·t</text>
+  <text x="165" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">g = 9.81 m/s² (Dünya)</text>
+
+  <!-- Karşılaştırma Kutusu (Alt Sağ) -->
+  <rect x="340" y="180" width="270" height="110" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="475" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Genişletme: Dünya ve Ay</text>
+  <text x="475" y="228" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">gAy = 1.625 m/s²</text>
+  <text x="475" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Aynı fonksiyonlar, farklı g</text>
+  <text x="475" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">subplot ile karşılaştırma</text>
+
+  <!-- Döngü Oku (Hesaplama -> Formül) -->
+  <path d="M 320 145 C 320 160, 165 160, 165 175" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="165,180 160,170 170,170" fill="#888"/>
+
+  <!-- Döngü Oku (Formül -> Karşılaştırma) -->
+  <path d="M 300 235 C 320 235, 320 235, 335 235" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="340,235 330,230 330,240" fill="#888"/>
+
+  <!-- Etiketler -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">Döngü: her adımda formülü uygula, listelere ekle</text>
+</svg>

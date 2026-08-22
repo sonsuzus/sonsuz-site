@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Python Hata Yakalama</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6d7e">try / except Yapısı</text>
+
+  <!-- Merkez blok: try -->
+  <rect x="255" y="70" width="130" height="45" rx="10" fill="#aed6f1" filter="url(#shadow)"/>
+  <text x="320" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a5276">try</text>
+
+  <!-- Hata oluştu oku -->
+  <path d="M 320 115 L 320 145" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <polygon points="314,140 320,152 326,140" fill="#e74c3c"/>
+
+  <!-- Hata tespit kutusu -->
+  <rect x="240" y="155" width="160" height="40" rx="10" fill="#f9e79f" filter="url(#shadow)"/>
+  <text x="320" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7d6608">Hata Oluştu</text>
+
+  <!-- Ayrım çizgileri -->
+  <path d="M 240 195 L 240 230" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <path d="M 320 195 L 320 230" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <path d="M 400 195 L 400 230" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+
+  <!-- Alt bloklar -->
+  <!-- except ValueError -->
+  <rect x="155" y="235" width="130" height="45" rx="10" fill="#a9dfbf" filter="url(#shadow)"/>
+  <text x="220" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#145a32">except ValueError</text>
+  <text x="220" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1e8449">Geçersiz sayı</text>
+
+  <!-- except ZeroDivisionError -->
+  <rect x="295" y="235" width="130" height="45" rx="10" fill="#f5b7b1" filter="url(#shadow)"/>
+  <text x="360" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#922b21">ZeroDivisionError</text>
+  <text x="360" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#c0392b">Sıfıra bölme</text>
+
+  <!-- except genel -->
+  <rect x="435" y="235" width="130" height="45" rx="10" fill="#d5dbdb" filter="url(#shadow)"/>
+  <text x="500" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">except Exception</text>
+  <text x="500" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">Genel hata</text>
+
+  <!-- Oklar alt bloklara -->
+  <path d="M 220 195 L 220 230" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <path d="M 360 195 L 360 230" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <path d="M 500 195 L 500 230" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+
+  <!-- Alt bloklardan geri dönüş -->
+  <path d="M 155 257 L 90 257 L 90 92 L 250 92" stroke="#2ecc71" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
+  <polygon points="245,88 255,92 245,96" fill="#2ecc71"/>
+  <text x="75" y="175" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#27ae60" transform="rotate(-90,75,175)">Devam</text>
+
+  <!-- raise kutusu -->
+  <rect x="30" y="200" width="100" height="35" rx="8" fill="#d2b4de" filter="url(#shadow)"/>
+  <text x="80" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6c3483">raise</text>
+
+  <!-- Hata hiyerarşisi -->
+  <rect x="500" y="70" width="120" height="100" rx="8" fill="#d6eaf8" filter="url(#shadow)"/>
+  <text x="560" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1a5276">Hata Hiyerarşisi</text>
+  <text x="560" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">BaseException</text>
+  <text x="560" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">└ Exception</text>
+  <text x="560" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">  └ ValueError</text>
+  <text x="560" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">  └ ZeroDivisionError</text>
+
+  <!-- Bağlantı çizgisi -->
+  <path d="M 385 92 L 495 92" stroke="#7f8c8d" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+</svg>

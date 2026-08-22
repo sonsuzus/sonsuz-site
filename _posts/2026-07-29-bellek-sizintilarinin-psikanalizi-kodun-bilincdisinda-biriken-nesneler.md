@@ -9,6 +9,7 @@ tags:
   - memory leak
   - hata ayıklama
 toc: true
+image: /img/bellek-sizintilarinin-psikanalizi-45.png
 ---
 
 Bir program bazen hiçbir şeyi unutamaz. Kullanıcı pencereyi kapatır, işlem tamamlanır, nesnenin hikâyedeki rolü biter; fakat kod, geçmişiyle bağını kesmez. Belleğin karanlık bir köşesinde duran bu nesneler, dijital bilinçdışının bastırılmış anıları gibidir. Uygulama çalışmayı sürdürürken onların kapladığı alan büyür ve sonunda sistem, konuşamadığı meseleleri RAM tüketerek ifade etmeye başlar.
@@ -29,6 +30,9 @@ Burada $M_0$ başlangıç belleği, $A(t)$ ayrılan toplam alan, $F(t)$ ise geri
 | Koparılamayan bağ | Gereksiz nesne referansı | Çöp toplayıcının nesneyi silememesi |
 | Tekrarlama dürtüsü | Her istekte yeniden kaynak ayırma | Düzenli ve basamaklı artış |
 | Terapi | Profiling ve hata ayıklama | Sızıntı kaynağının görünür olması |
+
+![bellek-sizintilarinin-psikanalizi-45](/img/bellek-sizintilarinin-psikanalizi-45.svg)
+
 
 ## Manuel yönetim: Unutma sorumluluğu geliştiricide
 

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="memory" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceeff"/>
+      <stop offset="1" stop-color="#c8ddf7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#65819a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8799" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="49" r="48" fill="#dff3ed" opacity="0.48"/>
+  <circle cx="578" cy="275" r="67" fill="#dcecff" opacity="0.52"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546b">KOD OKUMA VE BİLİŞSEL YÜK</text>
+
+  <g filter="url(#shadow)">
+    <rect x="229" y="55" width="182" height="103" rx="22" fill="url(#memory)" stroke="#a9c5df"/>
+    <rect x="248" y="72" width="144" height="24" rx="12" fill="#f8fcff" opacity="0.87"/>
+    <text x="320" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536d">Çalışan bellek</text>
+    <text x="320" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547188">Küçük çalışma masası</text>
+
+    <rect x="252" y="123" width="27" height="20" rx="7" fill="#ffffff"/>
+    <rect x="286" y="123" width="27" height="20" rx="7" fill="#ffffff"/>
+    <rect x="320" y="123" width="27" height="20" rx="7" fill="#ffffff"/>
+    <rect x="354" y="123" width="27" height="20" rx="7" fill="#ffffff"/>
+    <text x="265" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6990ac">1</text>
+    <text x="299" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6990ac">2</text>
+    <text x="333" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6990ac">3</text>
+    <text x="367" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6990ac">4</text>
+  </g>
+
+  <path d="M185 98 L216 98 L216 105 L229 105" fill="none" stroke="#d9878a" stroke-width="2"/>
+  <polygon points="229,105 220,100 220,110" fill="#d9878a"/>
+  <path d="M455 98 L424 98 L424 105 L411 105" fill="none" stroke="#70a98f" stroke-width="2"/>
+  <polygon points="411,105 420,100 420,110" fill="#70a98f"/>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="59" width="151" height="104" rx="18" fill="#fff5f3" stroke="#edc5c2"/>
+    <rect x="50" y="74" width="86" height="22" rx="8" fill="#efb9b5"/>
+    <text x="93" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#864d55">Yüksek yük</text>
+    <text x="51" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765961">x · tmp · d</text>
+    <path d="M52 130 H77 V140 H97 V150 H123" fill="none" stroke="#d8797c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="52" cy="130" r="4" fill="#d8797c"/>
+    <circle cx="77" cy="140" r="4" fill="#d8797c"/>
+    <circle cx="97" cy="150" r="4" fill="#d8797c"/>
+    <circle cx="123" cy="150" r="4" fill="#d8797c"/>
+    <text x="142" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6267">iç içe</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="455" y="59" width="151" height="104" rx="18" fill="#f1fbf5" stroke="#bddfc9"/>
+    <rect x="475" y="74" width="105" height="22" rx="8" fill="#b9dfc7"/>
+    <text x="527" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356d51">Düşük yük</text>
+    <text x="472" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527664">anlamlı adlar</text>
+    <path d="M473 143 H570" fill="none" stroke="#64a982" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="473" cy="143" r="5" fill="#64a982"/>
+    <circle cx="521" cy="143" r="5" fill="#64a982"/>
+    <circle cx="570" cy="143" r="5" fill="#64a982"/>
+    <text x="521" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52806a">düz akış</text>
+  </g>
+
+  <path d="M320 162 V185" fill="none" stroke="#7594aa" stroke-width="2"/>
+  <polygon points="320,192 315,183 325,183" fill="#7594aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="142" y="193" width="356" height="98" rx="20" fill="#ffffff" stroke="#d6e4e5"/>
+    <text x="320" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426175">Bilişsel yük dengesi</text>
+
+    <rect x="159" y="232" width="91" height="39" rx="12" fill="#fce7e5"/>
+    <circle cx="178" cy="251" r="9" fill="#e69a99"/>
+    <text x="205" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#875359">İçsel</text>
+    <text x="205" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c7072">problem</text>
+
+    <text x="265" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#8ba0ad">+</text>
+
+    <rect x="280" y="232" width="91" height="39" rx="12" fill="#fff1d9"/>
+    <circle cx="299" cy="251" r="9" fill="#e8b567"/>
+    <text x="326" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#80643d">Dışsal</text>
+    <text x="326" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7a4e">sunum</text>
+
+    <text x="387" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#8ba0ad">+</text>
+
+    <rect x="402" y="232" width="79" height="39" rx="12" fill="#e6f4eb"/>
+    <circle cx="420" cy="251" r="9" fill="#7bb993"/>
+    <text x="451" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49725a">Öğrenme</text>
+    <text x="451" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#658773">model</text>
+  </g>
+
+  <text x="320" y="309" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#577488">Temiz kod • niyeti görünür kıl • belleği koru</text>
+</svg>

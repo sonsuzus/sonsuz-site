@@ -11,7 +11,11 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-19-liste-kurma-sozluk-kurma-uretec-ifadeler/
 toc: true
+image: /img/python-programlamaya-giris-44.png
 ---
+
+![python-programlamaya-giris-44](/img/python-programlamaya-giris-44.svg)
+
 
 
 

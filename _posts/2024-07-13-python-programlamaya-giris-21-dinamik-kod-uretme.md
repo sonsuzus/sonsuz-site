@@ -10,7 +10,11 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-21-dinamik-kod-uretme/
 toc: true
+image: /img/python-programlamaya-giris-50.png
 ---
+
+![python-programlamaya-giris-50](/img/python-programlamaya-giris-50.svg)
+
 
 
 

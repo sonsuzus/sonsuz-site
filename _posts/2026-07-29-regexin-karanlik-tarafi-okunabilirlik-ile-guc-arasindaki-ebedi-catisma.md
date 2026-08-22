@@ -9,7 +9,11 @@ tags:
   - okunabilirlik
   - yazılım geliştirme
 toc: true
+image: /img/regexin-karanlik-tarafi-42.png
 ---
+
+![regexin-karanlik-tarafi-42](/img/regexin-karanlik-tarafi-42.svg)
+
 
 Düzenli ifadeler, yani regex, programcının araç çantasındaki İsviçre çakısı gibidir: Metin arar, veriyi ayıklar, biçimi doğrular ve bazen tek satırda küçük bir mucize gerçekleştirir. Ne var ki bu mucizeyi altı ay sonra yeniden gören geliştirici, kendisini antik bir yazıtı çözmeye çalışırken bulabilir. Regex’in aynı anda hem sevilmesinin hem de nefret edilmesinin temelinde tam olarak bu çelişki vardır: Olağanüstü ifade gücü, kolayca okunabilirliğin düşmanına dönüşebilir.
 ``

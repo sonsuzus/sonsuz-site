@@ -10,6 +10,7 @@ tags:
   - kütüphane
 
 toc: true
+image: /img/python-programlamaya-giris-85.png
 ---
 
 
@@ -808,3 +809,6 @@ Out[35]:
 ```py
 array([0.05399097, 0.24197072, 0.39894228, 0.24197072, 0.05399097])
 ```
+
+![python-programlamaya-giris-85](/img/python-programlamaya-giris-85.svg)
+

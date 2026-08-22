@@ -14,12 +14,16 @@ tags:
   - python
   - programlama
   - scipy
+image: /img/bilimsel-programlamaya-kolay-96.png
 ---
 
 
 Bilimsel Programlama’ya Kolay Başlangıç serisinin [ilk yazısında](https://program.sonsuz.us/posts/bilimsel-programlamaya-kolay-baslangic-1/) Hazırlık, Hesaplama ve Sonuçları Görselleştirme adımlarından bahsetmiş ve bunları serbest düşüş problemine uygulamıştık. [İkinci yazıda](https://program.sonsuz.us/posts/bilimsel-programlamaya-kolay-baslangic-2/) ise Hesaplama adımından sonra Veri/Hata Analizi adımını eklemiş ve eğik atış problemini Euler sayısal metodu ile hesaplayarak hatamızı incelemiştik. Lakin tüm bunları Python’un kendi matematik kütüphanesi olan `math` ile gerçekleştirdik.
 
 Serinin üçüncü yazısında ise `math`‘a oranla (genellikle) daha hızlı ve çok daha yetenekli olan `numpy` ve sonrasında da bunun üstüne bir kat daha çıkarak `scipy` kütüphanelerine terfi edeceğiz ve kolay yoldan bir ikinci derece diferansiyel denklem çözeceğiz. Bunun için Eğik Atış problemi yerine, nonlineer bir problem olan “iki cisim problemini”, yani Dünya’nın çevresindeki uyduların dinamiğini kullanacağız.
+
+
+![bilimsel-programlamaya-kolay-96](/img/bilimsel-programlamaya-kolay-96.svg)
 
 ``
 

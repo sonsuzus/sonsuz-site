@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7f0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python Referans Modeli</text>
+
+  <!-- Merkez: Python Nesnesi -->
+  <ellipse cx="320" cy="160" rx="55" ry="38" fill="#7fb3d5" opacity="0.9" filter="url(#shadow)"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Nesne</text>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#eaf2f8">referans</text>
+
+  <!-- Sol üst: İsim a -->
+  <rect x="80" y="55" width="90" height="38" rx="10" fill="#a9cce3" filter="url(#shadow)"/>
+  <text x="125" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b4f72" font-weight="bold">isim: a</text>
+
+  <!-- Sağ üst: İsim b -->
+  <rect x="470" y="55" width="90" height="38" rx="10" fill="#a9cce3" filter="url(#shadow)"/>
+  <text x="515" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b4f72" font-weight="bold">isim: b</text>
+
+  <!-- Ok a -> nesne -->
+  <path d="M 170 74 Q 245 74 270 130" fill="none" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="270,130 262,116 278,122" fill="#5d6d7e"/>
+
+  <!-- Ok b -> nesne -->
+  <path d="M 470 74 Q 395 74 370 130" fill="none" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="370,130 362,116 378,122" fill="#5d6d7e"/>
+
+  <!-- Alt sol: Sığ Kopya -->
+  <rect x="55" y="230" width="130" height="48" rx="10" fill="#f9e79f" filter="url(#shadow)"/>
+  <text x="120" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6608" font-weight="bold">Sığ Kopya</text>
+  <text x="120" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#9a7d0a">copy()</text>
+
+  <!-- Alt sağ: Derin Kopya -->
+  <rect x="455" y="230" width="130" height="48" rx="10" fill="#abebc6" filter="url(#shadow)"/>
+  <text x="520" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#145a32" font-weight="bold">Derin Kopya</text>
+  <text x="520" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449">deepcopy()</text>
+
+  <!-- Alt orta: Atama -->
+  <rect x="255" y="250" width="130" height="38" rx="10" fill="#d5dbdb" filter="url(#shadow)"/>
+  <text x="320" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Atama =</text>
+
+  <!-- Bağlantılar alt -->
+  <path d="M 120 230 Q 120 200 200 170" fill="none" stroke="#5d6d7e" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="200,170 188,172 196,184" fill="#5d6d7e"/>
+
+  <path d="M 520 230 Q 520 200 440 170" fill="none" stroke="#5d6d7e" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="440,170 428,172 436,184" fill="#5d6d7e"/>
+
+  <path d="M 320 250 L 320 200" fill="none" stroke="#5d6d7e" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="320,200 314,212 326,212" fill="#5d6d7e"/>
+
+  <!-- Üst bilgi notu -->
+  <text x="320" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">is  kontrolü: a is b → True / False</text>
+</svg>

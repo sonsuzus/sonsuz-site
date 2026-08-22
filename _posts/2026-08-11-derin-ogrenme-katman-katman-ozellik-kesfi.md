@@ -9,6 +9,7 @@ tags:
   - yapay sinir ağları
   - makine öğrenmesi
 toc: true
+image: /img/derin-ogrenme-katman-22.png
 ---
 
 Derin öğrenme, yapay zekânın veriye “hangi özelliğe bakması gerektiğini” tek tek öğretmek yerine bunu katmanlar aracılığıyla öğrenmesini sağlayan yaklaşımdır. Temel fikir basittir: Geleneksel sinir ağlarına çok sayıda gizli katman eklenir; böylece model, ham ve yüksek boyutlu verilerden giderek daha soyut temsiller çıkarabilir. Bir görüntüde önce kenarları, sonra şekilleri, en sonunda da “bu bir kedi” fikrini yakalaması tam olarak bu katmanlı maceradır.
@@ -33,6 +34,9 @@ Aktivasyon fonksiyonu kritik bir oyuncudur. Eğer tüm katmanlar yalnızca doğr
 | Geleneksel makine öğrenmesi | Uzman tarafından elle tasarlanır | Görece az | Tablo verileri, basit sınıflandırma |
 | Sığ sinir ağı | Sınırlı otomatik öğrenme | Orta | Basit tahmin problemleri |
 | Derin öğrenme | Katmanlar tarafından otomatik öğrenilir | Genellikle yüksek | Görüntü, ses, metin, video |
+
+![derin-ogrenme-katman-22](/img/derin-ogrenme-katman-22.svg)
+
 
 ## Katmanların öğrenme hiyerarşisi
 

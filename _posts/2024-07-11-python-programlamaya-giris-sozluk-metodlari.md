@@ -8,6 +8,7 @@ tags:
   - sözlük
   - metod
 toc: true
+image: /img/python-programlamaya-giris-64.png
 ---
 
 
@@ -632,3 +633,6 @@ print(D) # sözlüğe "def" anahtarı eklendi.
 
 
 ```
+
+![python-programlamaya-giris-64](/img/python-programlamaya-giris-64.svg)
+

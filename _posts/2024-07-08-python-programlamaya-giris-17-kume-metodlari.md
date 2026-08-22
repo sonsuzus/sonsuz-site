@@ -10,6 +10,7 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-17-kume-metodlari/
 toc: true
+image: /img/python-programlamaya-giris-73.png
 ---
 
 
@@ -239,6 +240,9 @@ Out[13]:
 ## Bileşim, kesişim, fark, simetrik fark
 
 İki kümenin bileşim kümesini `|` işlemi ile elde ederiz.
+
+![python-programlamaya-giris-73](/img/python-programlamaya-giris-73.svg)
+
 
 In [14]:
 

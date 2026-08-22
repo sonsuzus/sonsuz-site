@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-18-python-referans-modeli-sig-ve-derin-kopyalama/
 toc: true
+image: /img/python-programlamaya-giris-97.png
 ---
 
 
@@ -431,3 +432,6 @@ Out[28]:
 ```py
 [['abc', 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]
 ```
+
+![python-programlamaya-giris-97](/img/python-programlamaya-giris-97.svg)
+

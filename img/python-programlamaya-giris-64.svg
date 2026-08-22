@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez: Sözlük Metodları -->
+  <rect x="245" y="125" width="150" height="60" rx="14" fill="#6c9bd1" filter="url(#shadow)"/>
+  <text x="320" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Sözlük</text>
+  <text x="320" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e8f0fe">Metodları</text>
+
+  <!-- Sol üst: Oluşturma -->
+  <rect x="30" y="30" width="140" height="55" rx="12" fill="#a8d8b9" filter="url(#shadow)"/>
+  <text x="100" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d5a3d">Oluşturma</text>
+  <text x="100" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6b4e">dict, zip, atama</text>
+
+  <!-- Sol alt: Erişim -->
+  <rect x="30" y="235" width="140" height="55" rx="12" fill="#f5d0a9" filter="url(#shadow)"/>
+  <text x="100" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a4a1d">Erişim</text>
+  <text x="100" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a5a2d">get, setdefault</text>
+
+  <!-- Sağ üst: Güncelleme -->
+  <rect x="470" y="30" width="140" height="55" rx="12" fill="#c5b8e5" filter="url(#shadow)"/>
+  <text x="540" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3d2a6b">Güncelleme</text>
+  <text x="540" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4d3a7b">update, clear</text>
+
+  <!-- Sağ alt: Dönüşüm -->
+  <rect x="470" y="235" width="140" height="55" rx="12" fill="#f2b8c6" filter="url(#shadow)"/>
+  <text x="540" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a2a3d">Dönüşüm</text>
+  <text x="540" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a3a4d">keys, values, items</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Sol üst -> Merkez -->
+  <path d="M170 70 L235 140" stroke="#5a8ab5" stroke-width="2" fill="none"/>
+  <polygon points="235,140 226,132 228,145" fill="#5a8ab5"/>
+
+  <!-- Sol alt -> Merkez -->
+  <path d="M170 262 L235 185" stroke="#5a8ab5" stroke-width="2" fill="none"/>
+  <polygon points="235,185 226,193 228,180" fill="#5a8ab5"/>
+
+  <!-- Sağ üst -> Merkez -->
+  <path d="M470 70 L405 140" stroke="#5a8ab5" stroke-width="2" fill="none"/>
+  <polygon points="405,140 414,132 412,145" fill="#5a8ab5"/>
+
+  <!-- Sağ alt -> Merkez -->
+  <path d="M470 262 L405 185" stroke="#5a8ab5" stroke-width="2" fill="none"/>
+  <polygon points="405,185 414,193 412,180" fill="#5a8ab5"/>
+
+  <!-- Alt not -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a8a9a">Anahtar-Değer Yapısı</text>
+</svg>

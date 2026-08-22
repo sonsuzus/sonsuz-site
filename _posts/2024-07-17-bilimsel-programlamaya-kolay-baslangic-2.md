@@ -12,7 +12,11 @@ tags:
   - matplotlib
   - python
   - programlama
+image: /img/bilimsel-programlamaya-kolay-70.png
 ---
+
+![bilimsel-programlamaya-kolay-70](/img/bilimsel-programlamaya-kolay-70.svg)
+
 
 
 

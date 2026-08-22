@@ -9,6 +9,7 @@ tags:
   - except
   - hata yakalama
 toc: true
+image: /img/python-programlamaya-giris-24.png
 ---
 
 
@@ -264,6 +265,9 @@ BaseException
       +-- ArithmeticError
 
       |    +-- FloatingPointError
+
+![python-programlamaya-giris-24](/img/python-programlamaya-giris-24.svg)
+
 
       |    +-- OverflowError
 

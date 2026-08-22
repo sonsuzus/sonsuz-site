@@ -9,6 +9,7 @@ tags:
   - yazılım kültürü
   - grup kimliği
 toc: true
+image: /img/programci-mizahinin-sosyolojisi-27.png
 ---
 
 Bir yazılımcı toplantıda “Bende çalışıyor” dediğinde odadaki programcılar gülerken diğerleri neden endişeyle birbirine bakar? Çünkü programcı mizahı yalnızca komik cümlelerden değil; ortak deneyimlerden, teknik bilgiden ve mesleki hayal kırıklıklarından oluşur. Şakayı anlamak, çoğu zaman şifreli bir paketi açmak gibidir: Doğru kültürel anahtar sizde yoksa veri anlamsız görünür.
@@ -61,3 +62,6 @@ Bu örnek, şakayı yasaklamak yerine bağlam eklemeyi önerir. İyi ekipler iç
 ## Sonuç: Kahkaha bir kimlik protokolüdür
 
 Programcı mizahı; stres boşaltma, uzmanlık gösterme ve aidiyet kurma aracıdır. Ortak bir bug’a gülmek, “Bu kaosu birlikte tanıyoruz” demektir. Ancak en sağlıklı topluluklar mizahı güvenlik duvarına çevirmeyenlerdir. Şaka grubun kapısını kilitlemek yerine yeni gelenlere README sunabiliyorsa, hem komik hem de sürdürülebilirdir.
+
+![programci-mizahinin-sosyolojisi-27](/img/programci-mizahinin-sosyolojisi-27.svg)
+

@@ -10,7 +10,11 @@ tags:
   - terminal
   - pillow
   - ansı
+image: /img/goruntuleri-renkli-ascii-50.png
 ---
+
+![goruntuleri-renkli-ascii-50](/img/goruntuleri-renkli-ascii-50.svg)
+
 
 Bir fotoğrafı terminalde yalnızca karakterler ve renklerle yeniden üretmek, nostaljik görünen ama oldukça öğretici bir görüntü işleme projesidir. Temel fikir basittir: Görüntüdeki her küçük piksel bölgesini, parlaklığı temsil eden bir ASCII karakterine ve o bölgenin rengini taşıyan ANSI kaçış koduna dönüştürürüz. Sonuç, terminal penceresinde çalışan mini bir renkli mozaiktir.
 ``
