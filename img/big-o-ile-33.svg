@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="timeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cce9ff"/>
+      <stop offset="1" stop-color="#a9d4f5"/>
+    </linearGradient>
+    <linearGradient id="memGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9f1cb"/>
+      <stop offset="1" stop-color="#b9dfad"/>
+    </linearGradient>
+    <linearGradient id="choiceGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7e3bd"/>
+      <stop offset="1" stop-color="#efc980"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f89a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f89a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="45" r="72" fill="#dceffd" opacity="0.55"/>
+  <circle cx="578" cy="275" r="90" fill="#dff0d9" opacity="0.55"/>
+  <path d="M34 267 C120 232, 145 292, 225 267 S355 241, 430 269 S555 296, 621 250" fill="none" stroke="#b9d8db" stroke-width="2" opacity="0.38"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#29465a">
+    <text x="32" y="33" font-weight="700" font-size="14">Big O: kaynak dengesi</text>
+    <text x="32" y="51" fill="#66808f">Girdi büyüdükçe sürdürülebilir seçim</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="92" width="132" height="108" rx="18" fill="#ffffff"/>
+    <rect x="45" y="105" width="40" height="30" rx="10" fill="#d9edff"/>
+    <path d="M57 120 h16 M65 112 v16" stroke="#5296c7" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="96" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29465a">Girdi</text>
+    <text x="96" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808f">n büyür</text>
+    <path d="M52 162 h93" stroke="#d7e5ec" stroke-width="1.5"/>
+    <circle cx="59" cy="180" r="4" fill="#7cc4e8"/>
+    <circle cx="73" cy="180" r="5" fill="#7cc4e8"/>
+    <circle cx="89" cy="180" r="6" fill="#7cc4e8"/>
+    <circle cx="108" cy="180" r="7" fill="#7cc4e8"/>
+    <circle cx="130" cy="180" r="8" fill="#7cc4e8"/>
+  </g>
+
+  <path d="M168 146 H205" fill="none" stroke="#7896a5" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="205,146 196,141 196,151" fill="#7896a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="208" y="75" width="224" height="145" rx="22" fill="#ffffff"/>
+    <rect x="230" y="91" width="180" height="29" rx="10" fill="url(#choiceGrad)"/>
+    <text x="320" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#70541f">Algoritma Seçimi</text>
+
+    <path d="M320 131 L320 151" stroke="#607b8b" stroke-width="2.2" stroke-linecap="round"/>
+    <polygon points="320,158 315,149 325,149" fill="#607b8b"/>
+    <path d="M252 159 H388" stroke="#607b8b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M320 158 L265 186 M320 158 L375 186" stroke="#607b8b" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="250" cy="189" r="8" fill="#8fc9e9"/>
+    <circle cx="390" cy="189" r="8" fill="#9ecf93"/>
+    <rect x="234" y="198" width="62" height="15" rx="7.5" fill="#e3f3ff"/>
+    <rect x="344" y="198" width="62" height="15" rx="7.5" fill="#e3f3df"/>
+    <text x="265" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356783">Zaman</text>
+    <text x="375" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41723a">Bellek</text>
+  </g>
+
+  <path d="M434 146 H464" fill="none" stroke="#7896a5" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="464,146 455,141 455,151" fill="#7896a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="467" y="67" width="140" height="166" rx="19" fill="#ffffff"/>
+    <text x="537" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29465a">Adaylar</text>
+
+    <rect x="482" y="105" width="110" height="27" rx="9" fill="#f6d7d7"/>
+    <text x="496" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9b4e51">Çift döngü</text>
+    <text x="579" y="123" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b4e51">O(n²)</text>
+
+    <rect x="482" y="140" width="110" height="27" rx="9" fill="url(#timeGrad)"/>
+    <text x="496" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356783">Sıralama</text>
+    <text x="579" y="158" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356783">O(n log n)</text>
+
+    <rect x="482" y="175" width="110" height="27" rx="9" fill="url(#memGrad)"/>
+    <text x="496" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41723a">Küme</text>
+    <text x="579" y="193" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41723a">O(n)</text>
+
+    <path d="M488 216 H586" stroke="#d8e5e8" stroke-width="1.5"/>
+    <text x="537" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808f">Kısıta göre seç</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="108" y="250" width="176" height="42" rx="15" fill="#ffffff"/>
+    <rect x="121" y="261" width="20" height="20" rx="7" fill="#d9edff"/>
+    <path d="M126 271 h10 M131 266 v10" stroke="#5296c7" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="152" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36576b">Hız: O(n²) → O(n)</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="357" y="250" width="176" height="42" rx="15" fill="#ffffff"/>
+    <rect x="370" y="261" width="20" height="20" rx="7" fill="#e3f3df"/>
+    <path d="M376 275 v-8 h8 v8 M378 267 v-3 h4 v3" fill="none" stroke="#57914e" stroke-width="1.7" stroke-linejoin="round"/>
+    <text x="401" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36576b">Bellek: O(1) → O(n)</text>
+  </g>
+
+  <path d="M281 271 H355" fill="none" stroke="#89a4af" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="355,271 347,266 347,276" fill="#89a4af"/>
+</svg>

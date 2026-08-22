@@ -9,7 +9,11 @@ tags:
   - model deployment
   - edge ai
 toc: true
+image: /img/model-dagitimi-ve-30.png
 ---
+
+![model-dagitimi-ve-30](/img/model-dagitimi-ve-30.svg)
+
 
 Bir makine öğrenmesi modelinin yüksek doğrulukla eğitilmesi, ürün yolculuğunun yalnızca başlangıcıdır. Asıl heyecanlı bölüm, modelin gerçek kullanıcıların fotoğraflarını sınıflandırdığı, sesli komutlarını anladığı veya dolandırıcılık işlemlerini yakaladığı **dağıtım (deployment)** aşamasıdır. Bu aşamada model; bulutta çalışan bir web API'sine, bir mobil uygulamaya, akıllı saate ya da internet bağlantısı sınırlı bir cihaza yerleştirilir.
 

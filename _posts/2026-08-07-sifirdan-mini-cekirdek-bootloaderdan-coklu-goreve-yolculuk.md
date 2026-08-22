@@ -9,6 +9,7 @@ tags:
   - kernel geliştirme
   - multitasking
 toc: true
+image: /img/sifirdan-mini-cekirdek-33.png
 ---
 
 Bilgisayar açıldığında bizi masaüstü, pencereler ve uygulamalar karşılamadan önce oldukça ilkel bir dünya vardır. İşlemci, bellekteki belirli bir adresten komut yürütmeye başlar; ne dosya sistemi ne süreçler ne de yardım isteyebileceğimiz bir işletim sistemi bulunur. Bu projede x86 mimarisi üzerinde küçük bir çekirdek geliştirerek bootloader, korumalı kip, kesmeler ve çoklu görev arasındaki zinciri kuracağız.
@@ -25,6 +26,9 @@ BIOS tabanlı klasik bir sistemde ilk sektör, yani 512 baytlık boot sektörü,
 | Korumalı kipe geçiş | 32-bit | GDT kurmak ve segmentleri ayarlamak |
 | Çekirdek başlangıcı | 32-bit C/Assembly | Bellek, ekran ve kesmeleri hazırlamak |
 | Zamanlayıcı | Kesme destekli | Görevler arasında bağlam değiştirmek |
+
+![sifirdan-mini-cekirdek-33](/img/sifirdan-mini-cekirdek-33.svg)
+
 
 Boot sektörünün sonunu hazırlayan minimal NASM kodu şöyledir:
 

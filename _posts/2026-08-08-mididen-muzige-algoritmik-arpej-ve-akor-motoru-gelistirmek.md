@@ -9,9 +9,13 @@ tags:
   - algoritmik beste
   - python
 toc: true
+image: /img/mididen-muzige-algoritmik-27.png
 ---
 
 Bir MIDI klavyede tek bir notaya basıp karşılığında tonaliteye uygun akorlar, kıvrak arpejler ve küçük beste fikirleri duyduğunuzu düşünün. Bunu yapmak için yapay zekâ ordusuna ihtiyacımız yok; biraz müzik teorisi, MIDI mesajları ve iyi tasarlanmış olasılık kuralları yeterli. Bu projede gelen notaları analiz eden ve seçilen gama sadık kalarak gerçek zamanlı müzikal çıktılar üreten bir beste motorunun temelini kuracağız.
+
+![mididen-muzige-algoritmik-27](/img/mididen-muzige-algoritmik-27.svg)
+
 ``
 ## MIDI tarafında gerçekte ne geliyor?
 

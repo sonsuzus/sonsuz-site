@@ -13,7 +13,11 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-donguler/
 toc: true
+image: /img/python-programlamaya-giris-17.png
 ---
+
+![python-programlamaya-giris-17](/img/python-programlamaya-giris-17.svg)
+
 
 Döngüler, daha önce bahsettiğimiz karar yapısı `if` ile benzer bir yapıya sahiptir. Blok kaydırma yapısı ve mantıksal şartlara aşina değilseniz önce [python mantık işlemleri ve karşılaştırmaları](https://program.sonsuz.us/posts/python-programlamaya-giris-secim-yapma-mantik-islemleri-karsilastirmalar/) okumanız iyi olur.
 

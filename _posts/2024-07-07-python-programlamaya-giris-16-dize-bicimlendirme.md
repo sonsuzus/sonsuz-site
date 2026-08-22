@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-16-dize-bicimlendirme/
 toc: true
+image: /img/python-programlamaya-giris-34.png
 ---
 
 
@@ -704,3 +705,6 @@ Out[31]:
 ```py
 'Gerçek kısım 3.0, sanal kısım 2.0'
 ```
+
+![python-programlamaya-giris-34](/img/python-programlamaya-giris-34.svg)
+

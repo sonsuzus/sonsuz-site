@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez Fonksiyon Kutusu -->
+  <rect x="245" y="125" width="150" height="60" rx="12" fill="#6c9bd1" filter="url(#shadow)"/>
+  <text x="320" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">FONKSİYON</text>
+  <text x="320" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f0fe">def f(*pargs, **kwargs)</text>
+
+  <!-- Sol Üst: Konum Eşleştirme -->
+  <rect x="40" y="30" width="140" height="70" rx="10" fill="#a8d8ea" filter="url(#shadow)"/>
+  <text x="110" y="55" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a5c">KONUM EŞLEŞTİRME</text>
+  <text x="110" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c5f8a">f(1, 2, 3)</text>
+  <text x="110" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c5f8a">Sıra önemli</text>
+
+  <!-- Sağ Üst: İsim Eşleştirme -->
+  <rect x="460" y="30" width="140" height="70" rx="10" fill="#b8e0c8" filter="url(#shadow)"/>
+  <text x="530" y="55" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4a2a">İSİM EŞLEŞTİRME</text>
+  <text x="530" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a6a3a">f(c=4, a=1)</text>
+  <text x="530" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a6a3a">Sıra önemsiz</text>
+
+  <!-- Sol Alt: Varsayılan Değerler -->
+  <rect x="40" y="220" width="140" height="70" rx="10" fill="#f5d0a9" filter="url(#shadow)"/>
+  <text x="110" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a3a1a">VARSAYILAN DEĞER</text>
+  <text x="110" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a5a2a">def f(a, b=2, c=3)</text>
+  <text x="110" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a5a2a">Eksik parametreler</text>
+
+  <!-- Sağ Alt: Parametre Çözme -->
+  <rect x="460" y="220" width="140" height="70" rx="10" fill="#d4b8e8" filter="url(#shadow)"/>
+  <text x="530" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a1a5a">PARAMETRE ÇÖZME</text>
+  <text x="530" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a2a7a">f(*x) veya f(**D)</text>
+  <text x="530" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a2a7a">Paket açma</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Sol Üstten Merkeze -->
+  <path d="M180 65 L235 65 L235 145 L240 145" stroke="#4a7a9a" stroke-width="2" fill="none"/>
+  <polygon points="240,145 232,140 232,150" fill="#4a7a9a"/>
+
+  <!-- Sağ Üstten Merkeze -->
+  <path d="M460 65 L405 65 L405 145 L400 145" stroke="#4a9a6a" stroke-width="2" fill="none"/>
+  <polygon points="400,145 408,140 408,150" fill="#4a9a6a"/>
+
+  <!-- Sol Alttan Merkeze -->
+  <path d="M180 255 L235 255 L235 190 L240 190" stroke="#9a7a3a" stroke-width="2" fill="none"/>
+  <polygon points="240,190 232,185 232,195" fill="#9a7a3a"/>
+
+  <!-- Sağ Alttan Merkeze -->
+  <path d="M460 255 L405 255 L405 190 L400 190" stroke="#6a3a9a" stroke-width="2" fill="none"/>
+  <polygon points="400,190 408,185 408,195" fill="#6a3a9a"/>
+
+  <!-- Alt Bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#667788">Python Fonksiyon Parametreleri</text>
+</svg>

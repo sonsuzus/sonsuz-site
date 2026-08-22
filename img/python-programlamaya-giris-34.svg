@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="35" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Python Dize Biçimlendirme</text>
+
+  <!-- Ana format kutusu -->
+  <rect x="220" y="55" width="200" height="50" rx="10" fill="#e8f4f8" stroke="#5dade2" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">format() Metodu</text>
+  <text x="320" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Kalıp Dizesi + Değerler</text>
+
+  <!-- Ok: ana kutu -> yerleştirme -->
+  <path d="M 320 105 L 320 125" stroke="#5dade2" stroke-width="2" fill="none"/>
+  <polygon points="315,123 320,133 325,123" fill="#5dade2"/>
+
+  <!-- Yerleştirme türleri -->
+  <rect x="80" y="135" width="150" height="45" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="155" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7d6608">Konumla</text>
+  <text x="155" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">{0} {1} {2}</text>
+
+  <rect x="245" y="135" width="150" height="45" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7d6608">İsimle</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">{isim} {yaş}</text>
+
+  <rect x="410" y="135" width="150" height="45" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="485" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7d6608">İndeksleme</text>
+  <text x="485" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">{0[0]} {D[isim]}</text>
+
+  <!-- Oklar: yerleştirme -> biçimlendirme -->
+  <path d="M 155 180 L 155 205" stroke="#f1c40f" stroke-width="2" fill="none"/>
+  <polygon points="150,203 155,213 160,203" fill="#f1c40f"/>
+
+  <path d="M 320 180 L 320 205" stroke="#f1c40f" stroke-width="2" fill="none"/>
+  <polygon points="315,203 320,213 325,203" fill="#f1c40f"/>
+
+  <path d="M 485 180 L 485 205" stroke="#f1c40f" stroke-width="2" fill="none"/>
+  <polygon points="480,203 485,213 490,203" fill="#f1c40f"/>
+
+  <!-- Biçimlendirme türleri -->
+  <rect x="40" y="215" width="130" height="55" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="105" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Hizalama</text>
+  <text x="105" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">&lt; &gt; ^</text>
+  <text x="105" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Genişlik</text>
+
+  <rect x="185" y="215" width="130" height="55" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="250" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Sayılar</text>
+  <text x="250" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">d f e g %</text>
+  <text x="250" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">b o x</text>
+
+  <rect x="330" y="215" width="130" height="55" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="395" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Dolgu</text>
+  <text x="395" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">0 * Boşluk</text>
+  <text x="395" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">İşaret + -</text>
+
+  <rect x="475" y="215" width="130" height="55" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="540" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Yerelleştirme</text>
+  <text x="540" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">locale</text>
+  <text x="540" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">tr_TR.UTF-8</text>
+
+  <!-- Alt not -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d" font-style="italic">Nesne içi değişkenler: {0.real} {0.imag}</text>
+</svg>

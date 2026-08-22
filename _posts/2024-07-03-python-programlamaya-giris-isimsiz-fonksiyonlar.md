@@ -9,7 +9,11 @@ tags:
   - lambda
 redirect_from:
   - /posts/python-programlamaya-giris-isimsiz-fonksiyonlar/
+image: /img/python-programlamaya-giris-94.png
 ---
+
+![python-programlamaya-giris-94](/img/python-programlamaya-giris-94.svg)
+
 
 
 

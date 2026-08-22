@@ -9,9 +9,13 @@ tags:
   - etik hacking
   - siber güvenlik
 toc: true
+image: /img/kali-linux-felsefesi-27.png
 ---
 
 Kali Linux, çoğu kişinin aklına kapüşonlu hacker sahneleri getirse de gerçekte bir “sihirli saldırı kutusu” değil; güvenlik uzmanlarının sistemleri kontrollü, izinli ve ölçülebilir biçimde test etmesi için hazırlanmış bir ofansif güvenlik laboratuvarıdır. Felsefesi basittir: Bir açığı kötü niyetli biri keşfetmeden önce sen bul, kanıtla, raporla ve kapatılmasını sağla.
+
+![kali-linux-felsefesi-27](/img/kali-linux-felsefesi-27.svg)
+
 ``
 
 ## Kali’nin Vizyonu: Araç Değil, Metodoloji

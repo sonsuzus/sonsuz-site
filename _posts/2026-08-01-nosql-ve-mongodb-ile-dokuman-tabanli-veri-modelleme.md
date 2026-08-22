@@ -9,7 +9,11 @@ tags:
   - mongodb
   - veri modelleme
 toc: true
+image: /img/nosql-ve-mongodb-68.png
 ---
+
+![nosql-ve-mongodb-68](/img/nosql-ve-mongodb-68.svg)
+
 
 Bir e-ticaret ürününün renkleri, kampanyaları, kullanıcı yorumları ve kategoriye göre değişen özellikleri olduğunu düşünün. Bu verileri ilişkisel tablolara dağıtmak mümkündür; ancak tablo sayısı ve JOIN işlemleri kısa sürede küçük bir yapboza dönüşebilir. Doküman tabanlı veritabanları, ilişkili bilgileri JSON benzeri tek bir yapı içinde saklayarak bu karmaşıklığa farklı bir çözüm sunar. MongoDB bu yaklaşımın en tanınmış temsilcilerindendir; fakat sunduğu esneklik, kuralsız veri depolamak anlamına gelmez.
 

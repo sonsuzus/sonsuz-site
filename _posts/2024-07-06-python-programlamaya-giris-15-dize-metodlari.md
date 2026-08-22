@@ -10,7 +10,11 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-15-dize-metodlari/
 toc: true
+image: /img/python-programlamaya-giris-19.png
 ---
+
+![python-programlamaya-giris-19](/img/python-programlamaya-giris-19.svg)
+
 
 
 

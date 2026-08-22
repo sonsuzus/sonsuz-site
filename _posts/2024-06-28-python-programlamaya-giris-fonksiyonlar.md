@@ -10,6 +10,7 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-fonksiyonlar/
 toc: true
+image: /img/python-programlamaya-giris-78.png
 ---
 
 
@@ -865,3 +866,6 @@ fntoplam(f, a, b)
 ```
 
 Bütünleşik geliştirme ortamlarında (IDE’lerde) çalışırken, fonksiyonu yazdığınız sırada bu belgeleme dizesine ulaşabilirsiniz. Sözgelişi Jupyter defterinde `Shift-Tab` basarsanız bir yardım penceresi açılır.
+
+![python-programlamaya-giris-78](/img/python-programlamaya-giris-78.svg)
+

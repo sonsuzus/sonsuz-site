@@ -10,6 +10,7 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-liste-metodlari/
 toc: true
+image: /img/python-programlamaya-giris-33.png
 ---
 
 
@@ -151,6 +152,9 @@ Help on class list in module builtins:
 class list(object)
 
  |  list() -> new empty list
+
+![python-programlamaya-giris-33](/img/python-programlamaya-giris-33.svg)
+
 
  |  list(iterable) -> new list initialized from iterable's items
 

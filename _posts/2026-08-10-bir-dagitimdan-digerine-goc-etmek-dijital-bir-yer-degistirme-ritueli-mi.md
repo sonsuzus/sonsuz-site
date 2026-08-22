@@ -10,6 +10,7 @@ tags:
   - dijital kimlik
   - alışkanlıklar
   - sistem yönetimi
+image: /img/bir-dagitimdan-digerine-70.png
 ---
 
 Bir Linux dağıtımından diğerine geçmek, çoğu zaman yalnızca paket yöneticisini değiştirmek değildir. Fedora’dan Debian’a, Arch’tan NixOS’a ya da Ubuntu’dan openSUSE’ye giden kişi; komutlarını, hata çözme reflekslerini, masaüstü düzenini ve hatta bilgisayarıyla kurduğu güven ilişkisini yeniden müzakere eder. Bu nedenle sistem göçü, teknik bir kurulum işlemi olmanın yanında küçük ölçekli bir dijital yer değiştirme ritüelidir.
@@ -64,3 +65,6 @@ Ancak her şeyi taşımak her zaman iyi fikir değildir. Eski yapılandırmalar,
 Kimlik boyutu burada belirginleşir. “Arch kullanıcısıyım” ya da “Debian kararlılığını severim” cümleleri, araç tercihinden fazlasını anlatır: öğrenme biçimi, risk toleransı ve toplulukla ilişki biçimi hakkında ipucu verir. Dağıtım değiştirmek bazen bu kimlik etiketini bırakmak, bazen de onu daha bilinçli yeniden kurmaktır.
 
 Sonuçta dijital göçte kaybedilen şey çoğunlukla dosyalar değil, otomatikleşmiş küçük davranışlardır. Kazanılan şey ise yeni bir sistemden çok, kendi çalışma düzenine dışarıdan bakabilme fırsatıdır. En iyi geçiş planı; yedek alan, not tutan, eski alışkanlıkları sorgulayan ve ilk hafta biraz kaybolmayı normal kabul eden plandır.
+
+![bir-dagitimdan-digerine-70](/img/bir-dagitimdan-digerine-70.svg)
+

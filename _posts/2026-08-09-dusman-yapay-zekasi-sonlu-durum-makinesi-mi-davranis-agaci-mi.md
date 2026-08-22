@@ -9,7 +9,11 @@ tags:
   - sonlu durum makinesi
   - davranış ağacı
 toc: true
+image: /img/dusman-yapay-zekasi-14.png
 ---
+
+![dusman-yapay-zekasi-14](/img/dusman-yapay-zekasi-14.svg)
+
 
 Bir düşmanın oyuncuyu görünce kovalamaya başlaması, canı azalınca kaçması ve hedefini kaybedince devriye rotasına dönmesi basit görünür. Ancak bu kararlar doğrudan kodun içine serpiştirildiğinde kısa sürede yönetilemeyen bir koşul çorbası oluşur. Sonlu Durum Makinesi ve Davranış Ağacı, aynı düşman davranışını daha düzenli, test edilebilir ve genişletilebilir biçimde modelleyen iki klasik oyun yapay zekâsı tekniğidir.
 ``

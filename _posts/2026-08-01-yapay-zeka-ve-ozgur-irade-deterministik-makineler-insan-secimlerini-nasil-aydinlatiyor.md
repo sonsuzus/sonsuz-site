@@ -9,6 +9,7 @@ tags:
   - özgür irade
   - determinizm
 toc: true
+image: /img/yapay-zeka-ve-85.png
 ---
 
 Bir dil modeli şiir yazmayı mı “seçer”, yoksa sayılarla döşenmiş görünmez bir ray üzerinde mi ilerler? Yapay zekâ sistemlerinin davranışlarını incelerken karşılaştığımız bu soru, felsefenin en eski tartışmalarından birini yeniden canlandırıyor: Eğer her sonuç önceki nedenler tarafından belirleniyorsa gerçekten özgür olabilir miyiz?
@@ -31,6 +32,9 @@ Ancak “temperature” gibi örnekleme ayarları devreye girdiğinde farklı ç
 | Geçmişten etkilenme | Parametreler ve girdi | Parametreler, girdi ve rastgelelik | Genetik, çevre ve deneyimler |
 | Amaç farkındalığı | Yok | Yok | En azından öznel olarak var |
 | Sorumluluk yüklenmesi | Geliştirici veya kullanıcıya | Geliştirici veya kullanıcıya | Genellikle bireye |
+
+![yapay-zeka-ve-85](/img/yapay-zeka-ve-85.svg)
+
 
 ## Determinizm küçük bir kodda
 

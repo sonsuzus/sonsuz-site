@@ -13,7 +13,11 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-sirali-nesnelerle-islemler/
 toc: true
+image: /img/python-programlamaya-giris-36.png
 ---
+
+![python-programlamaya-giris-36](/img/python-programlamaya-giris-36.svg)
+
 
 
 

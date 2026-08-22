@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcfce7"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="box6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ccfbf1"/>
+      <stop offset="100%" stop-color="#99f6e4"/>
+    </linearGradient>
+    <linearGradient id="box7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe4e6"/>
+      <stop offset="100%" stop-color="#fecdd3"/>
+    </linearGradient>
+    <linearGradient id="box8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="box9" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez kutu -->
+  <rect x="245" y="120" width="150" height="50" rx="12" fill="url(#box1)" filter="url(#shadow)" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">Sıralı Nesneler</text>
+  <text x="320" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a8a">liste, çokuz, dize</text>
+
+  <!-- Oklar merkezden dışa -->
+  <!-- Ok 1: Dilimleme -->
+  <path d="M 245 135 L 120 135" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="120,135 132,129 132,141" fill="#64748b"/>
+  <rect x="20" y="105" width="100" height="60" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#86efac" stroke-width="1.5"/>
+  <text x="70" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#14532d">Dilimleme</text>
+  <text x="70" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#14532d">L[a:b]</text>
+  <text x="70" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#14532d">adım, negatif</text>
+
+  <!-- Ok 2: range -->
+  <path d="M 395 135 L 520 135" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="520,135 508,129 508,141" fill="#64748b"/>
+  <rect x="520" y="105" width="100" height="60" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#fcd34d" stroke-width="1.5"/>
+  <text x="570" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#78350f">range</text>
+  <text x="570" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78350f">baş, son, adım</text>
+  <text x="570" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78350f">tembel dizi</text>
+
+  <!-- Ok 3: len ve del -->
+  <path d="M 245 170 L 120 215" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="120,215 133,207 130,220" fill="#64748b"/>
+  <rect x="20" y="195" width="100" height="60" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#f9a8d4" stroke-width="1.5"/>
+  <text x="70" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#831843">len, del</text>
+  <text x="70" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#831843">eleman sayısı</text>
+  <text x="70" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#831843">dilim silme</text>
+
+  <!-- Ok 4: dönüşümler -->
+  <path d="M 395 170 L 520 215" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="520,215 507,207 510,220" fill="#64748b"/>
+  <rect x="520" y="195" width="100" height="60" rx="10" fill="url(#box5)" filter="url(#shadow)" stroke="#a5b4fc" stroke-width="1.5"/>
+  <text x="570" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#312e81">list, tuple</text>
+  <text x="570" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#312e81">join</text>
+  <text x="570" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#312e81">tip dönüşümü</text>
+
+  <!-- Ok 5: all any -->
+  <path d="M 245 120 L 120 75" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="120,75 132,81 130,68" fill="#64748b"/>
+  <rect x="20" y="25" width="100" height="60" rx="10" fill="url(#box6)" filter="url(#shadow)" stroke="#5eead4" stroke-width="1.5"/>
+  <text x="70" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#134e4a">all, any</text>
+  <text x="70" y="64" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#134e4a">mantıksal</text>
+  <text x="70" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#134e4a">denetim</text>
+
+  <!-- Ok 6: enumerate -->
+  <path d="M 395 120 L 520 75" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="520,75 508,81 510,68" fill="#64748b"/>
+  <rect x="520" y="25" width="100" height="60" rx="10" fill="url(#box7)" filter="url(#shadow)" stroke="#fda4af" stroke-width="1.5"/>
+  <text x="570" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#881337">enumerate</text>
+  <text x="570" y="64" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#881337">indeks + değer</text>
+  <text x="570" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#881337">döngü desteği</text>
+
+  <!-- Ok 7: max min sorted -->
+  <path d="M 320 170 L 320 215" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="320,215 314,203 326,203" fill="#64748b"/>
+  <rect x="245" y="215" width="150" height="60" rx="10" fill="url(#box8)" filter="url(#shadow)" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="320" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">max, min, sorted</text>
+  <text x="320" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e293b">key, reverse</text>
+  <text x="320" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e293b">Türkçe sıralama</text>
+
+  <!-- Ok 8: sum zip -->
+  <path d="M 320 275 L 320 295" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="320,295 314,285 326,285" fill="#64748b"/>
+  <rect x="245" y="285" width="150" height="30" rx="8" fill="url(#box9)" filter="url(#shadow)" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="320" y="304" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#334155">sum, zip</text>
+</svg>

@@ -14,7 +14,11 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-sayilar-aritmetik-temel-veri-yapilari/
 toc: true
+image: /img/python-programlamaya-giris-60.png
 ---
+
+![python-programlamaya-giris-60](/img/python-programlamaya-giris-60.svg)
+
 
 
 

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#90a4ae" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#90a4ae" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#37474f">Python'da İsimsiz Fonksiyonlar</text>
+  <line x1="120" y1="40" x2="520" y2="40" stroke="#b0bec5" stroke-width="1" opacity="0.5"/>
+
+  <!-- Lambda ifadesi - merkez blok -->
+  <rect x="220" y="55" width="200" height="50" rx="10" fill="#e3f2fd" filter="url(#shadow)" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1565c0">lambda x: x*x</text>
+  <text x="320" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Fonksiyon nesnesi üretir</text>
+
+  <!-- def karşılaştırma -->
+  <rect x="60" y="55" width="120" height="50" rx="10" fill="#fff3e0" filter="url(#shadowLight)" stroke="#ffcc80" stroke-width="1.2"/>
+  <text x="120" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">def f(x)</text>
+  <text x="120" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Komut, değer döndürmez</text>
+
+  <rect x="460" y="55" width="120" height="50" rx="10" fill="#e8f5e9" filter="url(#shadowLight)" stroke="#a5d6a7" stroke-width="1.2"/>
+  <text x="520" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">lambda ifade</text>
+  <text x="520" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">İfade, nesne döndürür</text>
+
+  <!-- Ok: def -> lambda -->
+  <path d="M180 80 L215 80" stroke="#78909c" stroke-width="1.5" fill="none"/>
+  <polygon points="218,80 210,76 210,84" fill="#78909c"/>
+
+  <!-- Ok: lambda -> def -->
+  <path d="M425 80 L455 80" stroke="#78909c" stroke-width="1.5" fill="none"/>
+  <polygon points="458,80 450,76 450,84" fill="#78909c"/>
+
+  <!-- Kullanım alanları -->
+  <text x="320" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#455a64">Kullanım Alanları</text>
+
+  <!-- Üç kullanım kutusu -->
+  <rect x="40" y="145" width="170" height="65" rx="10" fill="#fce4ec" filter="url(#shadowLight)" stroke="#f48fb1" stroke-width="1.2"/>
+  <text x="125" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#c2185b">Seri Toplamı</text>
+  <text x="125" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">seritoplam(lambda x:</text>
+  <text x="125" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">2.0**(-x), 0, 10)</text>
+
+  <rect x="235" y="145" width="170" height="65" rx="10" fill="#e1f5fe" filter="url(#shadowLight)" stroke="#4fc3f7" stroke-width="1.2"/>
+  <text x="320" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#0277bd">Sıralama</text>
+  <text x="320" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">sorted(L, key=</text>
+  <text x="320" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">lambda i: i[1])</text>
+
+  <rect x="430" y="145" width="170" height="65" rx="10" fill="#e8f5e9" filter="url(#shadowLight)" stroke="#81c784" stroke-width="1.2"/>
+  <text x="515" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#388e3c">Sayısal İntegral</text>
+  <text x="515" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">quad(lambda x:</text>
+  <text x="515" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">6*x**3 - 4*x**2, -2, 4)</text>
+
+  <!-- Oklar: lambda merkez -> kullanım alanları -->
+  <path d="M280 108 L160 140" stroke="#90a4ae" stroke-width="1.2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="157,142 166,138 163,147" fill="#90a4ae"/>
+
+  <path d="M320 108 L320 140" stroke="#90a4ae" stroke-width="1.2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="320,143 316,135 324,135" fill="#90a4ae"/>
+
+  <path d="M360 108 L480 140" stroke="#90a4ae" stroke-width="1.2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="483,142 474,138 477,147" fill="#90a4ae"/>
+
+  <!-- Özellikler -->
+  <text x="320" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#455a64">Özellikler</text>
+
+  <rect x="60" y="250" width="160" height="45" rx="8" fill="#fff8e1" filter="url(#shadowLight)" stroke="#ffd54f" stroke-width="1"/>
+  <text x="140" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Tek ifade, komut yok</text>
+  <text x="140" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Atama yapılamaz</text>
+
+  <rect x="240" y="250" width="160" height="45" rx="8" fill="#fff8e1" filter="url(#shadowLight)" stroke="#ffd54f" stroke-width="1"/>
+  <text x="320" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Çoklu parametre</text>
+  <text x="320" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Varsayılan değer destekler</text>
+
+  <rect x="420" y="250" width="160" height="45" rx="8" fill="#fff8e1" filter="url(#shadowLight)" stroke="#ffd54f" stroke-width="1"/>
+  <text x="500" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Kısa ve okunaklı</text>
+  <text x="500" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a">Kullan-at fonksiyonlar</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="312" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#90a4ae" opacity="0.8">Python Programlamaya Giriş - Bölüm 11</text>
+</svg>

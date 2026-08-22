@@ -9,6 +9,7 @@ tags:
   - rest apı
   - json
 toc: true
+image: /img/php-ile-restful-63.png
 ---
 
 Bir PHP uygulaması yalnızca HTML üretmek zorunda değildir. Aynı uygulama; mobil istemcilere, JavaScript arayüzlerine ve başka sunuculara dinamik veri sağlayan bir API olarak da çalışabilir. Bunun anahtarı, kaynakları HTTP üzerinden anlaşılır biçimde sunmak ve yanıtları ortak bir veri formatı olan JSON ile iletmektir.
@@ -101,3 +102,6 @@ if (!is_array($input)  \vert  \vert  empty($input['name'])) {
 Burada `422 Unprocessable Content`, JSON okunabilse bile doğrulama kurallarının sağlanmadığını anlatır. Geçersiz JSON için `400 Bad Request`, bulunamayan kaynak için `404 Not Found` kullanılmalıdır. Her hataya `200` dönmek, yangın alarmını ne olursa olsun yeşil yakmaya benzer!
 
 Son olarak API'yi HTTPS, token tabanlı kimlik doğrulama, giriş doğrulama, hız sınırlama ve sürümleme ile güçlendirin. `/api/v1/products` gibi sürümlü adresler, gelecekte yapılacak değişikliklerin mevcut istemcileri bozmamasına yardımcı olur. Böylece PHP uygulamanız bir web sayfası üreticisinden, farklı sistemlerin güvenle konuşabildiği gerçek bir veri köprüsüne dönüşür.
+
+![php-ile-restful-63](/img/php-ile-restful-63.svg)
+

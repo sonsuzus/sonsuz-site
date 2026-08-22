@@ -9,9 +9,13 @@ tags:
   - algoritmik-önyargı
   - xaı
 toc: true
+image: /img/yapay-zekanin-vicdani-86.png
 ---
 
 Yapay zekâ modelleri tarafsız matematik makineleri gibi görünse de insanların ürettiği verilerle öğrenir. Dolayısıyla toplumdaki eşitsizlikleri, eksik temsilleri ve geçmiş kararların hatalarını da miras alabilirler. Bir işe alım modelinin belirli grupları sistematik biçimde elemesi veya sağlık uygulamasının bazı hastalarda daha fazla yanılması, yalnızca teknik bir hata değil; etik, hukuki ve toplumsal bir sorundur.
+
+
+![yapay-zekanin-vicdani-86](/img/yapay-zekanin-vicdani-86.svg)
 
 ``
 

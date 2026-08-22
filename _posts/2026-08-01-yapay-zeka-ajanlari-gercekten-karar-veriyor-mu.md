@@ -9,6 +9,7 @@ tags:
   - özerk ajanlar
   - makine etiği
 toc: true
+image: /img/yapay-zeka-ajanlari-25.png
 ---
 
 Bir yapay zekâ ajanı e-posta gönderdiğinde, hisse senedi aldığında veya bir robotun yönünü değiştirdiğinde genellikle “karar verdi” deriz. Ancak bu ifade, gündelik dilin kullanışlı bir kısaltması mı, yoksa sistemin gerçekten özerk ve niyet sahibi olduğunu mu gösteriyor? Yanıt, karar kavramını hangi teknik ve felsefi ölçütlerle tanımladığımıza bağlı.
@@ -69,3 +70,6 @@ Bu kod farklı koşullarda farklı eylemler üretir; fakat hedefleri ve öncelik
 Yine de niyet kavramını işlevsel biçimde kullanabiliriz. Bir sistem hedefini zaman boyunca koruyor, plan yapıyor, başarısızlıkta planını yeniliyor ve eylemlerini açıklayabiliyorsa ona **niyet atfetmek** tahmin yapmayı kolaylaştırır. Bu, sistemin bilinçli olduğunu değil, niyet diliyle verimli biçimde modellenebildiğini gösterir.
 
 Sonuç olarak bir sistem, seçenekleri değerlendirip bağlama göre eylem seçtiğinde teknik anlamda karar veriyor sayılabilir. Ancak güçlü özerklik için yalnızca “nasıl” sorusunu değil, hedeflerin kaynağını açıklayan “neden” sorusunu da incelemeliyiz. Ajanlarımız giderek daha bağımsız davranabilir; yine de onların amaçları çoğu zaman insan tasarımının görünmez parmak izlerini taşır.
+
+![yapay-zeka-ajanlari-25](/img/yapay-zeka-ajanlari-25.svg)
+

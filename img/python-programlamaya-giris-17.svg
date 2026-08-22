@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#f0f9e8"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dcfce7"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="box6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlangıç -->
+  <rect x="270" y="15" width="100" height="36" rx="18" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="320" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">Döngüler</text>
+
+  <!-- Ok: Başlangıç -> while -->
+  <path d="M320,51 L320,72" stroke="#4a7a9c" stroke-width="2" fill="none"/>
+  <polygon points="315,70 320,80 325,70" fill="#4a7a9c"/>
+
+  <!-- while kutusu -->
+  <rect x="240" y="80" width="160" height="40" rx="10" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="320" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4d2e">while şart</text>
+
+  <!-- Ok: while -> iç -->
+  <path d="M320,120 L320,140" stroke="#4a7a9c" stroke-width="2" fill="none"/>
+  <polygon points="315,138 320,148 325,138" fill="#4a7a9c"/>
+
+  <!-- İç blok -->
+  <rect x="180" y="148" width="280" height="55" rx="10" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="320" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c4a1e">Komutlar</text>
+  <text x="320" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c4a1e">Değişken güncelle</text>
+
+  <!-- Döngü oku (sağdan dönüş) -->
+  <path d="M460,175 L520,175 L520,100 L400,100" stroke="#4a7a9c" stroke-width="2" fill="none" stroke-dasharray="6,3"/>
+  <polygon points="398,95 408,100 398,105" fill="#4a7a9c"/>
+  <text x="530" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a7a9c" transform="rotate(90,530,140)">şart doğru</text>
+
+  <!-- Ok: iç blok -> break/continue -->
+  <path d="M180,175 L120,175" stroke="#4a7a9c" stroke-width="2" fill="none"/>
+  <polygon points="122,170 112,175 122,180" fill="#4a7a9c"/>
+
+  <!-- break/continue kutusu -->
+  <rect x="20" y="155" width="100" height="40" rx="10" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="70" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6b2142">break</text>
+  <text x="70" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6b2142">continue</text>
+
+  <!-- Ok: iç blok -> dış -->
+  <path d="M320,203 L320,230" stroke="#4a7a9c" stroke-width="2" fill="none"/>
+  <polygon points="315,228 320,238 325,228" fill="#4a7a9c"/>
+
+  <!-- Dış blok -->
+  <rect x="200" y="238" width="240" height="36" rx="10" fill="url(#box5)" filter="url(#shadow)"/>
+  <text x="320" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#312e81">Döngü sonu</text>
+
+  <!-- Ok: dış -> for -->
+  <path d="M320,274 L320,290" stroke="#4a7a9c" stroke-width="2" fill="none"/>
+  <polygon points="315,288 320,298 325,288" fill="#4a7a9c"/>
+
+  <!-- for kutusu -->
+  <rect x="230" y="290" width="180" height="24" rx="12" fill="url(#box6)" filter="url(#shadow)"/>
+  <text x="320" y="306" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7c2d12">for eleman in dizi</text>
+
+</svg>

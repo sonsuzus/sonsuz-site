@@ -9,6 +9,7 @@ tags:
   - kontrol akışı
   - döngüler
 toc: true
+image: /img/rustta-kontrol-akisi-83.png
 ---
 
 Bir programın karar verebilmesi ve tekrarlanan işleri otomatikleştirebilmesi, kontrol akışı yapıları sayesinde mümkündür. Rust; `if-else`, `loop`, `while` ve `for` yapılarını tanıdık bir söz dizimiyle sunarken ifade tabanlı yaklaşımı, güvenli tür sistemi ve döngü etiketleri gibi kendine özgü özelliklerle işleri daha kontrollü hâle getirir.
@@ -132,3 +133,6 @@ Rust, hangi döngünün kırılacağını belirtmek için `'etiket` söz dizimin
 ```
 
 Sonuç olarak koşullu seçimlerde `if-else`, değer üretmekte `loop`, koşullu tekrarlarda `while`, koleksiyon gezilerinde ise `for` öne çıkar. Doğru yapıyı seçmek kodu yalnızca çalışır değil, Rust’ın ruhuna uygun biçimde güvenli ve okunabilir de yapar.
+
+![rustta-kontrol-akisi-83](/img/rustta-kontrol-akisi-83.svg)
+

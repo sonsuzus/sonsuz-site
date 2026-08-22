@@ -12,6 +12,7 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-dongulerle-problem-cozme/
 toc: true
+image: /img/python-programlamaya-giris-29.png
 ---
 
 
@@ -20,6 +21,9 @@ toc: true
 Verilen bir (N) sayısından küçükeşit bütün asalları listeleyen bir program yazalım.
 
 Bir önceki yazıda, belli bir sayının asal olup olmadığını tespit eden bir program yazmıştık. Burada, o programı 2 ile $N$ arasındaki her tamsayı için çalıştıracağız.
+
+![python-programlamaya-giris-29](/img/python-programlamaya-giris-29.svg)
+
 ``
 In [1]:
 

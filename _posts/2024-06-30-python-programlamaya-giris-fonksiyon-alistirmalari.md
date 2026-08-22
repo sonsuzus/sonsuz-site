@@ -10,7 +10,11 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-fonksiyon-alistirmalari/
 toc: true
+image: /img/python-programlamaya-giris-67.png
 ---
+
+![python-programlamaya-giris-67](/img/python-programlamaya-giris-67.svg)
+
 
 
 

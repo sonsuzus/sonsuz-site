@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cfe2fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7d92a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#70869b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="45" r="58" fill="#dff3ee" opacity="0.55"/>
+  <circle cx="590" cy="275" r="78" fill="#e2e9ff" opacity="0.55"/>
+  <path d="M48 258 C112 221 146 282 204 251 S300 217 344 254" fill="none" stroke="#c9e5db" stroke-width="2" opacity="0.65"/>
+  <path d="M410 72 C462 41 515 79 584 48" fill="none" stroke="#cddcf3" stroke-width="2" opacity="0.7"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40566d">Rust Kontrol Akışı</text>
+
+  <!-- central input -->
+  <g filter="url(#shadow)">
+    <rect x="244" y="48" width="152" height="52" rx="18" fill="url(#core)" stroke="#aac6e3"/>
+    <circle cx="270" cy="74" r="13" fill="#ffffff" opacity="0.85"/>
+    <path d="M266 68 L266 80 M274 68 L274 80 M262 72 L278 72 M262 77 L278 77" stroke="#5e88b1" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="330" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#345574">Komut Akışı</text>
+    <text x="330" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56728b">koşul ve tekrar</text>
+  </g>
+
+  <!-- connector core to decision -->
+  <path d="M320 101 L320 121" fill="none" stroke="#7b9cb8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="315,116 325,116 320,123" fill="#7b9cb8"/>
+
+  <!-- decision diamond -->
+  <g filter="url(#smallShadow)">
+    <path d="M320 121 L369 155 L320 189 L271 155 Z" fill="#fff6d8" stroke="#e0be67" stroke-width="1.4"/>
+    <text x="320" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#705625">Koşul</text>
+    <text x="320" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a713d">bool</text>
+  </g>
+
+  <!-- branch paths -->
+  <path d="M271 155 L203 155 L203 184" fill="none" stroke="#849fb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="198,179 208,179 203,186" fill="#849fb6"/>
+  <path d="M369 155 L437 155 L437 184" fill="none" stroke="#849fb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="432,179 442,179 437,186" fill="#849fb6"/>
+  <path d="M320 189 L320 207" fill="none" stroke="#849fb6" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="315,202 325,202 320,209" fill="#849fb6"/>
+
+  <text x="226" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4f8d72">doğru</text>
+  <text x="415" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#ba6b73">yanlış</text>
+
+  <!-- if card -->
+  <g filter="url(#shadow)">
+    <rect x="104" y="185" width="198" height="75" rx="16" fill="#e5f5ec" stroke="#abd9c3"/>
+    <rect x="120" y="201" width="46" height="42" rx="12" fill="#c9ebd9"/>
+    <path d="M135 211 L126 222 L135 233 M151 211 L160 222 L151 233" fill="none" stroke="#4d9a76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="232" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#37765a">if-else</text>
+    <text x="232" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527a67">dal seçimi</text>
+    <text x="232" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527a67">uyumlu tür</text>
+  </g>
+
+  <!-- false alternative card -->
+  <g filter="url(#shadow)">
+    <rect x="338" y="185" width="198" height="75" rx="16" fill="#fcebed" stroke="#edbdc3"/>
+    <rect x="354" y="201" width="46" height="42" rx="12" fill="#f8d7dc"/>
+    <path d="M366 213 L388 231 M388 213 L366 231" stroke="#bd6d78" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="466" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#9b505b">else</text>
+    <text x="466" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d6670">alternatif dal</text>
+    <text x="466" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d6670">değer üretimi</text>
+  </g>
+
+  <!-- loop family line -->
+  <path d="M320 209 L320 276" fill="none" stroke="#7b9cb8" stroke-width="2" stroke-linecap="round"/>
+  <path d="M320 276 L112 276" fill="none" stroke="#7b9cb8" stroke-width="2" stroke-linecap="round"/>
+  <path d="M320 276 L528 276" fill="none" stroke="#7b9cb8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="117,271 117,281 109,276" fill="#7b9cb8"/>
+  <polygon points="523,271 523,281 531,276" fill="#7b9cb8"/>
+
+  <!-- loop chips -->
+  <g filter="url(#smallShadow)">
+    <rect x="55" y="268" width="112" height="39" rx="13" fill="#e9e3fa" stroke="#cabde9"/>
+    <path d="M77 289 A10 10 0 1 1 91 294" fill="none" stroke="#7c69b5" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="87,291 94,294 89,298" fill="#7c69b5"/>
+    <text x="125" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5b4a8b">loop</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="264" y="268" width="112" height="39" rx="13" fill="#dff3ef" stroke="#b6dcd5"/>
+    <path d="M282 288 C287 278 298 278 302 286 C305 293 299 299 290 296" fill="none" stroke="#438d83" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="287,293 294,297 287,300" fill="#438d83"/>
+    <text x="334" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#33736b">while</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="473" y="268" width="112" height="39" rx="13" fill="#e5effc" stroke="#bdd1ec"/>
+    <path d="M491 280 L501 280 M491 287 L505 287 M491 294 L509 294" stroke="#5583b5" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="543" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#426b98">for</text>
+  </g>
+</svg>

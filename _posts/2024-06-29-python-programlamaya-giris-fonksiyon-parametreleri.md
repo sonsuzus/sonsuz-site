@@ -10,6 +10,7 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-fonksiyon-parametreleri/
 toc: true
+image: /img/python-programlamaya-giris-46.png
 ---
 
 
@@ -561,3 +562,6 @@ f( *(1,2), **{'c':"merhaba", 'd':[5,6]} )
 
 
 ```
+
+![python-programlamaya-giris-46](/img/python-programlamaya-giris-46.svg)
+

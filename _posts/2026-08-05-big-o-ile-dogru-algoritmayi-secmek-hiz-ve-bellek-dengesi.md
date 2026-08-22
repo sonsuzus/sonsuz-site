@@ -9,6 +9,7 @@ tags:
   - algoritma analizi
   - zaman karmaşıklığı
 toc: true
+image: /img/big-o-ile-33.png
 ---
 
 Bir problemi çözen ilk algoritmayı bulmak güzeldir; ancak milyonlarca veri geldiğinde hâlâ çalışan algoritmayı bulmak çok daha güzeldir. Big O notasyonu, farklı algoritmaların veri büyüdükçe nasıl davranacağını karşılaştırmamızı sağlar. Böylece yalnızca çalışan değil, zaman ve bellek açısından sürdürülebilir çözümler seçebiliriz.
@@ -83,3 +84,6 @@ plant ## En verimli algoritmayı seçme yöntemi
 Küçük $n$ değerlerinde basit bir $O(n^2)$ çözüm, düşük sabit maliyetleri sayesinde yeterli olabilir. Buna karşılık $n=1\,000\,000$ olduğunda karesel bir yaklaşım yaklaşık $10^{12}$ işlem anlamına gelir. Bu noktada $O(n\log n)$ veya $O(n)$ seçenekleri belirgin biçimde avantajlıdır.
 
 Son olarak teorik analizi gerçek ölçümlerle doğrula. Profil çıkarma araçları, önbellek davranışı ve veri dağılımı gibi Big O’nun göstermediği ayrıntıları ortaya çıkarır. En iyi seçim her zaman en küçük notasyon değildir; ihtiyaçları karşılayan, anlaşılır ve kaynak dengesini doğru kuran algoritmadır.
+
+![big-o-ile-33](/img/big-o-ile-33.svg)
+

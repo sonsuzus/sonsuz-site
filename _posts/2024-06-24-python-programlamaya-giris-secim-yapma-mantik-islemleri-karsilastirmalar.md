@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/python-programlamaya-giris-secim-yapma-mantik-islemleri-karsilastirmalar/
 toc: true
+image: /img/python-programlamaya-giris-78.png
 ---
 
 
@@ -794,3 +795,6 @@ sinif = "A" if rating > 100 else "B" if rating > 50 else "C"
 ```
 
 yazılabilir. Ama aşırıya kaçırırsanız programın okunması zorlaşır.
+
+![python-programlamaya-giris-78](/img/python-programlamaya-giris-78.svg)
+
