@@ -17,7 +17,11 @@ tags:
 redirect_from:
   - /posts/python-itertools-kullanimi/
 toc: true
+image: /img/python-itertools-kullanimi-96.png
 ---
+
+![python-itertools-kullanimi-96](/img/python-itertools-kullanimi-96.svg)
+
 
 Python'un [Itertool](https://program.sonsuz.us/search.html?q=itertool)'u, karmaşık [döngüler](https://program.sonsuz.us/search.html?q=d%C3%B6ng%C3%BCler) üretmek için döngüler ve listeler üzerinde çalışan çeşitli işlevler sağlayan bir modüldür .
 

@@ -9,7 +9,11 @@ tags:
   - rdbms
   - veritabanı
 toc: true
+image: /img/veritabani-temelleri-duz-93.png
 ---
+
+![veritabani-temelleri-duz-93](/img/veritabani-temelleri-duz-93.svg)
+
 
 Bir uygulamanın kullanıcılarını, siparişlerini veya ürünlerini düz metin dosyalarında saklamak ilk bakışta kolay görünebilir. Ancak veri büyüdükçe arama yapmak, aynı kaydın tekrarını önlemek ve eş zamanlı işlemleri güvenle yönetmek zorlaşır. İlişkisel Veritabanı Yönetim Sistemleri, yani RDBMS’ler, bu karmaşayı tablolar, kurallar ve ilişkiler aracılığıyla düzenler. MySQL de bu dünyanın en yaygın temsilcilerinden biridir.
 

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#d0edd0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce8e8"/>
+      <stop offset="100%" stop-color="#f8d4d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Tuple ve Değişebilirlik</text>
+
+  <!-- Üst kavramlar -->
+  <rect x="40" y="55" width="130" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)"/>
+  <text x="105" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a5c">Değiştirilebilir</text>
+  <text x="105" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5c">Liste</text>
+
+  <rect x="240" y="55" width="130" height="50" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)"/>
+  <text x="305" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5c3a1a">Değiştirilemez</text>
+  <text x="305" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c3a1a">Karakter Dizisi</text>
+
+  <rect x="440" y="55" width="160" height="50" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)"/>
+  <text x="520" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5c2a">Değiştirilemez</text>
+  <text x="520" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5c2a">Tuple</text>
+
+  <!-- Oklar üst kavramlardan tuple'a -->
+  <path d="M 175 80 L 230 80" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+  <polygon points="230,75 240,80 230,85" fill="#2c3e50"/>
+
+  <path d="M 370 80 L 430 80" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+  <polygon points="430,75 440,80 430,85" fill="#2c3e50"/>
+
+  <!-- Alt bölüm: Sözdizim -->
+  <rect x="40" y="135" width="260" height="155" rx="12" fill="#ffffff" filter="url(#shadow)" opacity="0.9"/>
+  <text x="170" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Tuple Sözdizimi</text>
+
+  <rect x="60" y="170" width="220" height="35" rx="6" fill="#f0f4f8"/>
+  <text x="170" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5c">tup = 2, 4, 6, 8, 10</text>
+  <text x="170" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#666">virgülle ayrılmış</text>
+
+  <rect x="60" y="215" width="220" height="35" rx="6" fill="#f0f4f8"/>
+  <text x="170" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5c">tup = (2, 4, 6, 8, 10)</text>
+  <text x="170" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#666">parantez geleneksel</text>
+
+  <!-- Alt bölüm: Tek öğe -->
+  <rect x="340" y="135" width="260" height="155" rx="12" fill="#ffffff" filter="url(#shadow)" opacity="0.9"/>
+  <text x="470" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Tek Öğeli Tuple</text>
+
+  <rect x="360" y="170" width="220" height="35" rx="6" fill="#fef3e2"/>
+  <text x="470" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c3a1a">tup = (5,)</text>
+  <text x="470" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#666">virgül zorunlu</text>
+
+  <rect x="360" y="215" width="220" height="35" rx="6" fill="#fce8e8"/>
+  <text x="470" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a1a1a">tup = (5)</text>
+  <text x="470" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#666">tamsayı olarak davranır</text>
+
+  <!-- Alt oklar -->
+  <path d="M 170 130 L 170 135" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+  <polygon points="165,135 170,143 175,135" fill="#2c3e50"/>
+
+  <path d="M 470 130 L 470 135" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+  <polygon points="465,135 470,143 475,135" fill="#2c3e50"/>
+
+  <!-- Tür gösterimi -->
+  <rect x="130" y="275" width="100" height="30" rx="8" fill="#e8f0fe" filter="url(#shadow)"/>
+  <text x="180" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5c">type: tuple</text>
+
+  <rect x="380" y="275" width="100" height="30" rx="8" fill="#fce8e8" filter="url(#shadow)"/>
+  <text x="430" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a1a1a">type: int</text>
+
+  <path d="M 230 290 L 370 290" stroke="#2c3e50" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+</svg>

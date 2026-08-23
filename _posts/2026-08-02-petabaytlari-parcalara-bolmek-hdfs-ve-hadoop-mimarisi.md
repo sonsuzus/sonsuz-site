@@ -9,6 +9,7 @@ tags:
   - hadoop
   - dağıtık sistemler
 toc: true
+image: /img/petabaytlari-parcalara-bolmek-73.png
 ---
 
 Bir petabayt veriyi dizüstü bilgisayarınıza kopyalamaya çalıştığınızı düşünün. Diskin itiraz etmesi bir yana, işlem tamamlanmadan bilgisayarınız emekli olabilir! Hadoop Dağıtık Dosya Sistemi, yani HDFS, bu problemi devasa ve pahalı bir sunucu almak yerine veriyi yüzlerce sıradan makineye dağıtarak çözer. Üstelik disk arızalarını istisna değil, sistemin doğal bir parçası kabul eder.
@@ -76,3 +77,6 @@ Bu aktarım zinciri, istemcinin her kopyayı ayrı ayrı göndermesini önleyere
 HDFS; günlük kayıtları, video arşivleri, sensör verileri ve toplu analitik işlemler için mükemmeldir. Buna karşılık milyonlarca küçük dosya NameNode belleğini tüketebilir. Sürekli rastgele güncelleme isteyen işlemler ve milisaniyelik yanıt bekleyen uygulamalar da HDFS'nin uzmanlık alanı değildir.
 
 Kısacası HDFS, tek bir süper bilgisayar yerine birlikte çalışan sıradan makinelerden güvenilir bir depolama ordusu kurar. Hadoop ekosistemindeki MapReduce veya Spark gibi araçlar da hesaplamayı ilgili blokların bulunduğu düğümlere yaklaştırarak petabaytların ağda gereksiz yere dolaşmasını engeller.
+
+![petabaytlari-parcalara-bolmek-73](/img/petabaytlari-parcalara-bolmek-73.svg)
+

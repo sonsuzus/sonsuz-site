@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="getFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#c8e1fb"/>
+    </linearGradient>
+    <linearGradient id="postFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7dcff"/>
+      <stop offset="100%" stop-color="#d8c9fa"/>
+    </linearGradient>
+    <linearGradient id="coreFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3e7"/>
+      <stop offset="100%" stop-color="#c2e7d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#65809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#65809a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="322" cy="161" r="118" fill="#ffffff" opacity="0.34"/>
+  <circle cx="322" cy="161" r="91" fill="none" stroke="#b8d4d7" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7"/>
+
+  <text x="28" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536a">PHP İSTEK DÖNGÜSÜ</text>
+  <text x="28" y="50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668090">Tarayıcıdan güvenli yanıta</text>
+
+  <path d="M151 139 C178 139 183 119 205 111" fill="none" stroke="#77a9ca" stroke-width="2.5"/>
+  <polygon points="205,106 217,110 206,117" fill="#77a9ca"/>
+  <path d="M151 185 C177 185 184 204 205 211" fill="none" stroke="#9b82c6" stroke-width="2.5"/>
+  <polygon points="206,205 217,212 204,216" fill="#9b82c6"/>
+
+  <path d="M322 132 L322 119" fill="none" stroke="#54a77c" stroke-width="2.5"/>
+  <polygon points="316,120 322,109 328,120" fill="#54a77c"/>
+  <path d="M397 161 L449 161" fill="none" stroke="#54a77c" stroke-width="2.5"/>
+  <polygon points="447,155 458,161 447,167" fill="#54a77c"/>
+  <path d="M522 189 C522 218 491 232 451 232" fill="none" stroke="#e09964" stroke-width="2.5"/>
+  <polygon points="453,226 442,232 453,238" fill="#e09964"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="108" width="123" height="108" rx="18" fill="#ffffff"/>
+    <rect x="40" y="120" width="38" height="30" rx="9" fill="#d8eefc"/>
+    <rect x="47" y="126" width="24" height="15" rx="3" fill="none" stroke="#4788ae" stroke-width="1.6"/>
+    <circle cx="59" cy="146" r="1.8" fill="#4788ae"/>
+    <text x="89" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536a">Tarayıcı</text>
+    <text x="89" y="152" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668090">İstemci</text>
+    <line x1="41" y1="167" x2="138" y2="167" stroke="#dce8ed"/>
+    <text x="41" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c7d">Form ve bağlantı</text>
+    <text x="41" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c7d">HTTP isteği</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="205" y="76" width="117" height="69" rx="15" fill="url(#getFill)"/>
+    <circle cx="224" cy="98" r="10" fill="#ffffff" opacity="0.72"/>
+    <path d="M220 98 L228 98 M225 94 L229 98 L225 102" fill="none" stroke="#4886aa" stroke-width="1.5"/>
+    <text x="243" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34627f">GET</text>
+    <text x="218" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52738a">URL sorgu dizesi</text>
+    <text x="218" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52738a">Paylaşılabilir</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="205" y="178" width="117" height="69" rx="15" fill="url(#postFill)"/>
+    <circle cx="224" cy="200" r="10" fill="#ffffff" opacity="0.72"/>
+    <path d="M224 194 L224 205 M220 201 L224 205 L228 201" fill="none" stroke="#775ca5" stroke-width="1.5"/>
+    <text x="243" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#604586">POST</text>
+    <text x="218" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#715c8c">İstek gövdesi</text>
+    <text x="218" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#715c8c">Form verisi</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="322" y="121" width="76" height="80" rx="20" fill="url(#coreFill)"/>
+    <circle cx="360" cy="145" r="15" fill="#ffffff" opacity="0.72"/>
+    <path d="M354 140 L349 145 L354 150 M366 140 L371 145 L366 150" fill="none" stroke="#438866" stroke-width="1.7"/>
+    <text x="338" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356e52">PHP</text>
+    <text x="331" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e8068">İşleme</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="270" y="43" width="104" height="55" rx="14" fill="#fff4d8"/>
+    <path d="M289 59 L301 59 L303 73 L287 73 Z" fill="none" stroke="#bd8a38" stroke-width="1.5"/>
+    <path d="M290 64 L300 64 M290 68 L298 68" stroke="#bd8a38" stroke-width="1.3"/>
+    <text x="313" y="66" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#886124">$_GET</text>
+    <text x="282" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6d3e">Süper global</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="458" y="118" width="128" height="86" rx="18" fill="#ffffff"/>
+    <rect x="472" y="132" width="30" height="30" rx="9" fill="#e0f2e8"/>
+    <path d="M481 146 L486 151 L495 140" fill="none" stroke="#429165" stroke-width="2"/>
+    <text x="512" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356e52">Güvenlik</text>
+    <text x="512" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7c69">Doğrulama</text>
+    <line x1="472" y1="174" x2="571" y2="174" stroke="#dce8e2"/>
+    <text x="472" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527262">HTTPS ve güvenli çıktı</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="442" y="219" width="163" height="54" rx="15" fill="#ffe8d8"/>
+    <circle cx="463" cy="246" r="12" fill="#ffffff" opacity="0.74"/>
+    <path d="M457 246 L469 246 M465 242 L469 246 L465 250" fill="none" stroke="#c27042" stroke-width="1.6"/>
+    <text x="485" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#92532f">HTTP yanıtı</text>
+    <text x="485" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a684c">İçerik tarayıcıya döner</text>
+  </g>
+
+  <text x="32" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718897">GET: okunabilir sorgu</text>
+  <circle cx="185" cy="287" r="3" fill="#91bfe0"/>
+  <text x="202" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718897">POST: değişiklik işlemi</text>
+  <circle cx="389" cy="287" r="3" fill="#b29ada"/>
+  <text x="406" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718897">Her veri doğrulanır</text>
+</svg>

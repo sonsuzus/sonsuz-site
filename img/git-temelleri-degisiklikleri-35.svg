@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="work" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddecff"/>
+      <stop offset="100%" stop-color="#cfe1fb"/>
+    </linearGradient>
+    <linearGradient id="stage" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5dafd"/>
+      <stop offset="100%" stop-color="#d9cbf5"/>
+    </linearGradient>
+    <linearGradient id="repo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f2df"/>
+      <stop offset="100%" stop-color="#bee6ca"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8ba0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8ba0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="584" cy="42" r="82" fill="#dff2ed" opacity="0.5"/>
+  <circle cx="65" cy="286" r="92" fill="#dceaff" opacity="0.42"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39536b">Anlamlı Commit Akışı</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71879a">Seç → İncele → Kaydet → Geçmişe Bağla</text>
+
+  <path d="M183 145 L217 145" fill="none" stroke="#7694ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="217,145 207,139 207,151" fill="#7694ad"/>
+  <text x="200" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d788f">git add</text>
+
+  <path d="M402 145 L436 145" fill="none" stroke="#7694ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="436,145 426,139 426,151" fill="#7694ad"/>
+  <text x="419" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d788f">git commit</text>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="88" width="150" height="115" rx="18" fill="url(#work)" stroke="#b6cde8"/>
+  </g>
+  <rect x="50" y="105" width="33" height="30" rx="8" fill="#ffffff" opacity="0.82"/>
+  <path d="M60 114 L72 114 M60 120 L72 120 M60 126 L68 126" stroke="#6281a0" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="98" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385673">Çalışma Dizini</text>
+  <text x="98" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607b92">Dosyaları düzenle</text>
+  <rect x="50" y="159" width="118" height="26" rx="9" fill="#ffffff" opacity="0.72"/>
+  <text x="109" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456782">git status</text>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="88" width="184" height="115" rx="18" fill="url(#stage)" stroke="#c5b7e6"/>
+  </g>
+  <rect x="234" y="105" width="33" height="30" rx="8" fill="#ffffff" opacity="0.82"/>
+  <path d="M242 120 L248 126 L259 113" fill="none" stroke="#755aa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="282" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#554273">Sahneleme Alanı</text>
+  <text x="282" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71618b">Seçili değişiklikler</text>
+  <rect x="234" y="159" width="152" height="26" rx="9" fill="#ffffff" opacity="0.72"/>
+  <text x="310" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66547f">diff --staged</text>
+
+  <g filter="url(#shadow)">
+    <rect x="437" y="88" width="169" height="115" rx="18" fill="url(#repo)" stroke="#aad7b9"/>
+  </g>
+  <rect x="453" y="105" width="33" height="30" rx="8" fill="#ffffff" opacity="0.82"/>
+  <ellipse cx="469.5" cy="113" rx="9" ry="4" fill="none" stroke="#4f8c66" stroke-width="1.7"/>
+  <path d="M460.5 113 L460.5 126 C460.5 131 478.5 131 478.5 126 L478.5 113 M460.5 120 C460.5 125 478.5 125 478.5 120" fill="none" stroke="#4f8c66" stroke-width="1.7"/>
+  <text x="500" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39694d">Yerel Depo</text>
+  <text x="500" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8069">Kalıcı tarihçe</text>
+  <rect x="453" y="159" width="137" height="26" rx="9" fill="#ffffff" opacity="0.72"/>
+  <text x="521.5" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477558">git log</text>
+
+  <path d="M521 218 L521 232 L449 232" fill="none" stroke="#719782" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="449,232 459,226 459,238" fill="#719782"/>
+  <text x="500" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597863">önceki kayıt</text>
+
+  <g filter="url(#soft)">
+    <rect x="279" y="239" width="170" height="58" rx="16" fill="#ffffff" stroke="#c7dccd"/>
+  </g>
+  <circle cx="303" cy="268" r="15" fill="#c8ead3"/>
+  <path d="M297 268 L301 272 L309 263" fill="none" stroke="#43815a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="325" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f644d">Commit Fotoğrafı</text>
+  <text x="325" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668071">Mesaj · Yazar · Tarih</text>
+
+  <path d="M279 268 L241 268 L241 214" fill="none" stroke="#8ba7b5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="241,214 235,224 247,224" fill="#8ba7b5"/>
+  <text x="225" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66818c">anlamlı kapsam</text>
+
+  <path d="M449 268 L487 268 L487 214" fill="none" stroke="#8ba7b5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="487,214 481,224 493,224" fill="#8ba7b5"/>
+  <text x="510" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66818c">kimlik ve bağ</text>
+</svg>

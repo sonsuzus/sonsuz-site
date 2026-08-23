@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5c6bc0"/>
+      <stop offset="100%" stop-color="#42a5f5"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a65"/>
+      <stop offset="100%" stop-color="#ffab91"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66bb6a"/>
+      <stop offset="100%" stop-color="#81c784"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffa726"/>
+      <stop offset="100%" stop-color="#ffb74d"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ab47bc"/>
+      <stop offset="100%" stop-color="#ba68c8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#26c6da"/>
+      <stop offset="100%" stop-color="#4dd0e1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Bağlantı çizgileri (merkezden dışa) -->
+  <!-- Yukarı -->
+  <path d="M 320 130 L 320 70" stroke="#78909c" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="320,62 316,72 324,72" fill="#78909c" opacity="0.6"/>
+  
+  <!-- Sağ üst -->
+  <path d="M 350 145 L 470 85" stroke="#78909c" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="478,80 468,82 472,90" fill="#78909c" opacity="0.6"/>
+
+  <!-- Sağ alt -->
+  <path d="M 355 175 L 470 230" stroke="#78909c" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="478,234 468,232 472,224" fill="#78909c" opacity="0.6"/>
+
+  <!-- Sol üst -->
+  <path d="M 290 145 L 170 85" stroke="#78909c" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="162,80 172,82 168,90" fill="#78909c" opacity="0.6"/>
+
+  <!-- Sol alt -->
+  <path d="M 285 175 L 170 230" stroke="#78909c" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="162,234 172,232 168,224" fill="#78909c" opacity="0.6"/>
+
+  <!-- Alt -->
+  <path d="M 320 190 L 320 250" stroke="#78909c" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="320,258 316,248 324,248" fill="#78909c" opacity="0.6"/>
+
+  <!-- Merkez blok: itertools -->
+  <rect x="270" y="130" width="100" height="60" rx="14" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">itertools</text>
+  <text x="320" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e3f2fd">verimli döngü</text>
+
+  <!-- Dış bloklar -->
+  <!-- Üst: Sonsuz döngüler -->
+  <rect x="260" y="20" width="120" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadowLight)"/>
+  <text x="320" y="42" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Sonsuz Döngüler</text>
+  <text x="320" y="58" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff3e0">count, cycle, repeat</text>
+
+  <!-- Sağ üst: Kombinasyonlar -->
+  <rect x="480" y="55" width="130" height="50" rx="10" fill="url(#boxGrad2)" filter="url(#shadowLight)"/>
+  <text x="545" y="77" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Kombinasyonlar</text>
+  <text x="545" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8f5e9">permütasyon, ürün</text>
+
+  <!-- Sağ alt: Verimlilik -->
+  <rect x="480" y="210" width="130" height="50" rx="10" fill="url(#boxGrad3)" filter="url(#shadowLight)"/>
+  <text x="545" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Bellek Verimliliği</text>
+  <text x="545" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fff8e1">tembel değerlendirme</text>
+
+  <!-- Sol üst: Map işlevi -->
+  <rect x="30" y="55" width="130" height="50" rx="10" fill="url(#boxGrad4)" filter="url(#shadowLight)"/>
+  <text x="95" y="77" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Map İşlevi</text>
+  <text x="95" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#f3e5f5">operator.mul</text>
+
+  <!-- Sol alt: Liste işlemleri -->
+  <rect x="30" y="210" width="130" height="50" rx="10" fill="url(#boxGrad5)" filter="url(#shadowLight)"/>
+  <text x="95" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Liste İşlemleri</text>
+  <text x="95" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e0f7fa">eşzamanlı çarpma</text>
+
+  <!-- Alt: Yineleyici cebiri -->
+  <rect x="260" y="260" width="120" height="45" rx="10" fill="#7986cb" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="320" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Yineleyici Cebiri</text>
+  <text x="320" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8eaf6">modüler yapı</text>
+
+  <!-- Küçük bilgi rozetleri -->
+  <circle cx="140" cy="140" r="4" fill="#ff7043" opacity="0.8"/>
+  <circle cx="500" cy="140" r="4" fill="#26a69a" opacity="0.8"/>
+  <circle cx="320" cy="115" r="4" fill="#7e57c2" opacity="0.8"/>
+</svg>

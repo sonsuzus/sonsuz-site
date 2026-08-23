@@ -12,6 +12,7 @@ tags:
 redirect_from:
   - /posts/program-algoritma-ornekleri/
 toc: true
+image: /img/program-algoritma-ornekleri-74.png
 ---
 
 Problem çözmede, soruna hemen girişmek yerine, dikkatli ve sistematik yaklaşım ilke olmalıdır. Problem iyice anlaşılmalı ve mümkün olduğu kadar küçük parçalara ayırılmaladır.
@@ -111,3 +112,6 @@ Girdi : iki tamsayı
         *  İncelenen sınav kağıdı sayısını bir arttır
     -  Ortalamayı notların toplamını incelenen sınav kağıdına bölerek hesapla
     -  Ortalamayı yaz
+
+![program-algoritma-ornekleri-74](/img/program-algoritma-ornekleri-74.svg)
+

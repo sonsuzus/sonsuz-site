@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c9bd1"/>
+      <stop offset="100%" stop-color="#4a7ab5"/>
+    </linearGradient>
+    <linearGradient id="seriesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0b27a"/>
+      <stop offset="100%" stop-color="#e59866"/>
+    </linearGradient>
+    <linearGradient id="dfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#82c8a0"/>
+      <stop offset="100%" stop-color="#5daa7f"/>
+    </linearGradient>
+    <linearGradient id="ioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b39ddb"/>
+      <stop offset="100%" stop-color="#9575cd"/>
+    </linearGradient>
+    <linearGradient id="opGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f06292"/>
+      <stop offset="100%" stop-color="#ec407a"/>
+    </linearGradient>
+    <linearGradient id="vizGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4dd0e1"/>
+      <stop offset="100%" stop-color="#26c6da"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Merkez Pandas çekirdeği -->
+  <rect x="245" y="120" width="150" height="80" rx="16" fill="url(#coreGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="152" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">Pandas</text>
+  <text x="320" y="172" text-anchor="middle" fill="#e8f0fe" font-size="11">Veri Analizi Paketi</text>
+
+  <!-- Üst: Seri ve DataFrame -->
+  <rect x="60" y="45" width="130" height="55" rx="12" fill="url(#seriesGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="125" y="68" text-anchor="middle" fill="#fff" font-weight="bold">Seri</text>
+  <text x="125" y="85" text-anchor="middle" fill="#fff8f0" font-size="11">Tek Boyutlu Dizi</text>
+
+  <rect x="450" y="45" width="130" height="55" rx="12" fill="url(#dfGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="515" y="68" text-anchor="middle" fill="#fff" font-weight="bold">DataFrame</text>
+  <text x="515" y="85" text-anchor="middle" fill="#f0fff5" font-size="11">İki Boyutlu Matris</text>
+
+  <!-- Ok: Seri -> Pandas -->
+  <path d="M190 72 L240 130" stroke="#e59866" stroke-width="2" fill="none"/>
+  <polygon points="240,130 232,120 234,132" fill="#e59866"/>
+
+  <!-- Ok: DataFrame -> Pandas -->
+  <path d="M450 72 L400 130" stroke="#5daa7f" stroke-width="2" fill="none"/>
+  <polygon points="400,130 408,120 406,132" fill="#5daa7f"/>
+
+  <!-- Alt: Temel İşlemler -->
+  <rect x="30" y="225" width="120" height="55" rx="12" fill="url(#ioGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="90" y="248" text-anchor="middle" fill="#fff" font-weight="bold">Veri Girişi</text>
+  <text x="90" y="265" text-anchor="middle" fill="#f3e5ff" font-size="11">Dosya Okuma/Yazma</text>
+
+  <rect x="180" y="225" width="120" height="55" rx="12" fill="url(#opGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="240" y="248" text-anchor="middle" fill="#fff" font-weight="bold">Veri Temizleme</text>
+  <text x="240" y="265" text-anchor="middle" fill="#ffe0ec" font-size="11">Eksik Değerler</text>
+
+  <rect x="330" y="225" width="120" height="55" rx="12" fill="url(#vizGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="390" y="248" text-anchor="middle" fill="#fff" font-weight="bold">Birleştirme</text>
+  <text x="390" y="265" text-anchor="middle" fill="#e0faff" font-size="11">Join ve Merge</text>
+
+  <rect x="480" y="225" width="130" height="55" rx="12" fill="#aed581" filter="url(#shadow)" opacity="0.9"/>
+  <text x="545" y="248" text-anchor="middle" fill="#fff" font-weight="bold">Grafik ve Gruplama</text>
+  <text x="545" y="265" text-anchor="middle" fill="#f0fce0" font-size="11">Görselleştirme</text>
+
+  <!-- Oklar: Pandas -> Alt işlemler -->
+  <path d="M270 200 L120 222" stroke="#9575cd" stroke-width="2" fill="none"/>
+  <polygon points="120,222 130,218 126,230" fill="#9575cd"/>
+
+  <path d="M300 200 L240 222" stroke="#ec407a" stroke-width="2" fill="none"/>
+  <polygon points="240,222 250,218 246,230" fill="#ec407a"/>
+
+  <path d="M350 200 L390 222" stroke="#26c6da" stroke-width="2" fill="none"/>
+  <polygon points="390,222 380,218 384,230" fill="#26c6da"/>
+
+  <path d="M380 200 L545 222" stroke="#8bc34a" stroke-width="2" fill="none"/>
+  <polygon points="545,222 535,218 539,230" fill="#8bc34a"/>
+
+  <!-- Sağ üst: SQL benzeri not -->
+  <rect x="450" y="130" width="130" height="40" rx="10" fill="#ffd54f" filter="url(#shadow)" opacity="0.85"/>
+  <text x="515" y="148" text-anchor="middle" fill="#5d4037" font-weight="bold">SQL Benzeri</text>
+  <text x="515" y="162" text-anchor="middle" fill="#6d4c41" font-size="11">Tablo İşlemleri</text>
+
+  <!-- Ok: SQL -> Pandas -->
+  <path d="M450 150 L400 155" stroke="#f9a825" stroke-width="2" fill="none"/>
+  <polygon points="400,155 410,149 410,161" fill="#f9a825"/>
+
+  <!-- Sol üst: Numpy bağlantısı -->
+  <rect x="60" y="130" width="110" height="40" rx="10" fill="#90caf9" filter="url(#shadow)" opacity="0.85"/>
+  <text x="115" y="148" text-anchor="middle" fill="#0d47a1" font-weight="bold">Numpy Tabanlı</text>
+  <text x="115" y="162" text-anchor="middle" fill="#1565c0" font-size="11">Hızlı Hesaplama</text>
+
+  <!-- Ok: Numpy -> Pandas -->
+  <path d="M170 150 L240 155" stroke="#42a5f5" stroke-width="2" fill="none"/>
+  <polygon points="240,155 230,149 230,161" fill="#42a5f5"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" fill="#78909c" font-size="11" opacity="0.8">Veri Bilimi ve Analitik Altyapısı</text>
+</svg>

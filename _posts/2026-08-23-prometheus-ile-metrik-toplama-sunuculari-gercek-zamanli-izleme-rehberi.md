@@ -5,9 +5,10 @@ math: true
 categories: 
   - Program
 tags: 
-  - Prometheus
-  - Monitoring
-  - DevOps
+  - prometheus
+  - monitoring
+  - devops
+toc: true
 ---
 
 Bir sunucunun CPU kullanımı %95'e ulaştığında bunu kullanıcılar şikâyet etmeden önce görmek, modern operasyon ekiplerinin süper gücüdür. Prometheus; sunucular, uygulamalar ve konteynerler için zaman serisi verisi toplayan, sorgulayan ve alarm üreten açık kaynaklı bir izleme sistemidir. Temel hedefi basittir: “Şu anda ne oluyor, geçmişte ne oldu ve kötüye giderse bana kim haber verecek?” sorularını ölçülebilir verilerle yanıtlamak.

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="dfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#7ec8e3"/>
+    </linearGradient>
+    <linearGradient id="seriesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b5e2c8"/>
+      <stop offset="100%" stop-color="#8fd6a8"/>
+    </linearGradient>
+    <linearGradient id="joinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d0a9"/>
+      <stop offset="100%" stop-color="#f0b87a"/>
+    </linearGradient>
+    <linearGradient id="indexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4c5f0"/>
+      <stop offset="100%" stop-color="#b9a5e0"/>
+    </linearGradient>
+    <linearGradient id="colGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c5d4"/>
+      <stop offset="100%" stop-color="#e0a5b9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#3a5a7a">Pandas Veri Çerçeveleri</text>
+
+  <!-- Ana Veri Çerçevesi bloğu -->
+  <rect x="200" y="55" width="240" height="100" rx="12" fill="url(#dfGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#1a3a5a">DataFrame</text>
+  <text x="320" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5a">İki boyutlu matris</text>
+  <text x="320" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5a">Etiketli veri yapısı</text>
+  <text x="320" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5a">Sütunlar + İndeks</text>
+
+  <!-- Seri bağlantısı - sol üst -->
+  <rect x="30" y="70" width="130" height="70" rx="10" fill="url(#seriesGrad)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="95" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a4a2a">Seriler</text>
+  <text x="95" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a4a2a">Tek boyutlu</text>
+  <text x="95" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a4a2a">Etiketli veri</text>
+
+  <!-- Ok: Seri -> DataFrame -->
+  <path d="M160,105 L195,105" stroke="#4a8a5a" stroke-width="2" fill="none"/>
+  <polygon points="195,100 205,105 195,110" fill="#4a8a5a"/>
+
+  <!-- İndeks bloğu - sol alt -->
+  <rect x="30" y="170" width="130" height="60" rx="10" fill="url(#indexGrad)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="95" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#3a2a6a">İndeks</text>
+  <text x="95" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a2a6a">Satır etiketleri</text>
+
+  <!-- Ok: İndeks -> DataFrame -->
+  <path d="M160,200 L195,140" stroke="#6a5a9a" stroke-width="2" fill="none"/>
+  <polygon points="195,135 203,143 190,147" fill="#6a5a9a"/>
+
+  <!-- Sütunlar bloğu - sağ üst -->
+  <rect x="480" y="70" width="130" height="60" rx="10" fill="url(#colGrad)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="545" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#6a2a4a">Sütunlar</text>
+  <text x="545" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a2a4a">Sıralı isimler</text>
+
+  <!-- Ok: Sütunlar -> DataFrame -->
+  <path d="M480,100 L445,100" stroke="#9a4a6a" stroke-width="2" fill="none"/>
+  <polygon points="445,95 435,100 445,105" fill="#9a4a6a"/>
+
+  <!-- JOIN bloğu - sağ alt -->
+  <rect x="460" y="180" width="160" height="70" rx="10" fill="url(#joinGrad)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="540" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#6a3a1a">JOIN İşlemleri</text>
+  <text x="540" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a3a1a">SQL benzeri</text>
+  <text x="540" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a3a1a">Tablo birleştirme</text>
+
+  <!-- Ok: DataFrame -> JOIN -->
+  <path d="M400,140 L460,195" stroke="#9a6a3a" stroke-width="2" fill="none"/>
+  <polygon points="460,190 468,198 455,202" fill="#9a6a3a"/>
+
+  <!-- Alt not -->
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7a9a" opacity="0.8">Her sütun bir seriden oluşur</text>
+  <text x="320" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7a9a" opacity="0.8">Seri yöntemleri DataFrame için de geçerlidir</text>
+</svg>

@@ -13,6 +13,7 @@ tags:
 
 Bilgisayarınızdaki ekran kartı yalnızca oyunlardaki gölgeleri ve piksel efektlerini çizmek için çalışmaz; doğru programlandığında binlerce küçük işlemciyi aynı anda kullanan güçlü bir hesaplama laboratuvarına dönüşür. NVIDIA'nın CUDA platformu, C/C++ bilgisine sahip geliştiricilerin bu paralel güce erişmesini sağlar. Ancak CUDA'yı öğrenmenin anahtarı, daha fazla çekirdek demek yerine, problemi **binlerce bağımsız işe nasıl bölebileceğinizi** anlamaktır.
 
+``
 
 CUDA'nın teorik temeli, aynı komutun çok sayıda veri üzerinde yürütülmesine dayanan **SIMT** (Single Instruction, Multiple Threads) modelidir. Örneğin bir görüntüdeki her pikselin parlaklığını hesaplamak, her piksel için bağımsız bir görevdir. CPU bu işi birkaç güçlü çekirdekle sırayla veya sınırlı paralellikle yaparken GPU, binlerce iş parçacığını (*thread*) eş zamanlı planlayabilir.
 

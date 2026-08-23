@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="raw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dcecff"/>
+      <stop offset="1" stop-color="#c9dcf5"/>
+    </linearGradient>
+    <linearGradient id="process" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e7dcff"/>
+      <stop offset="1" stop-color="#d7c7f4"/>
+    </linearGradient>
+    <linearGradient id="feature" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9f3e5"/>
+      <stop offset="1" stop-color="#bde4cf"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe8bf"/>
+      <stop offset="1" stop-color="#f5d598"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8192" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#718594" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="42" r="58" fill="#cfe7f4" opacity="0.32"/>
+  <circle cx="577" cy="276" r="82" fill="#d9eed0" opacity="0.36"/>
+  <path d="M28 280 C130 248, 166 290, 259 269 S430 231, 617 264" fill="none" stroke="#bcd9d0" stroke-width="1.5" opacity="0.45"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385166">Ham Veriden Güçlü Modele</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718494">Kaliteli girdi · anlamlı öznitelik · güvenilir sonuç</text>
+
+  <!-- raw data -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="103" width="117" height="137" rx="18" fill="url(#raw)"/>
+    <rect x="39" y="119" width="93" height="17" rx="6" fill="#f8fcff" opacity="0.85"/>
+    <rect x="39" y="143" width="93" height="17" rx="6" fill="#f8fcff" opacity="0.72"/>
+    <rect x="39" y="167" width="93" height="17" rx="6" fill="#f8fcff" opacity="0.72"/>
+    <rect x="39" y="191" width="93" height="17" rx="6" fill="#f8fcff" opacity="0.72"/>
+    <path d="M62 119V208 M94 119V208" stroke="#abc8e3" stroke-width="1"/>
+    <path d="M39 136H132 M39 160H132 M39 184H132" stroke="#abc8e3" stroke-width="1"/>
+    <circle cx="78" cy="151" r="4" fill="#f1b6b3"/>
+    <path d="M108 174 L116 174" stroke="#8aaed1" stroke-width="3" stroke-linecap="round"/>
+    <text x="85.5" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355675">Ham Veri</text>
+  </g>
+
+  <!-- arrow 1 -->
+  <path d="M151 171 H174" fill="none" stroke="#7896ab" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="181,171 172,166 172,176" fill="#7896ab"/>
+
+  <!-- preprocessing -->
+  <g filter="url(#shadow)">
+    <rect x="188" y="78" width="150" height="187" rx="20" fill="url(#process)"/>
+    <text x="263" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d4275">Veri Ön İşleme</text>
+    
+    <g filter="url(#softShadow)">
+      <rect x="205" y="119" width="116" height="30" rx="10" fill="#f9f7ff"/>
+      <circle cx="221" cy="134" r="7" fill="#ae9bdd"/>
+      <path d="M218 134 L220 137 L225 130" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="236" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50466e">Temizleme</text>
+    </g>
+    <g filter="url(#softShadow)">
+      <rect x="205" y="158" width="116" height="30" rx="10" fill="#f9f7ff"/>
+      <circle cx="221" cy="173" r="7" fill="#ae9bdd"/>
+      <path d="M218 173 H224 M221 170 V176" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="236" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50466e">Eksik değer</text>
+    </g>
+    <g filter="url(#softShadow)">
+      <rect x="205" y="197" width="116" height="30" rx="10" fill="#f9f7ff"/>
+      <circle cx="221" cy="212" r="7" fill="#ae9bdd"/>
+      <path d="M218 215 L221 209 L224 215" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="236" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50466e">Ölçekleme</text>
+    </g>
+    <text x="263" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#766b96">Eğitim verisinden öğren</text>
+  </g>
+
+  <!-- arrow 2 -->
+  <path d="M345 171 H368" fill="none" stroke="#7896ab" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="375,171 366,166 366,176" fill="#7896ab"/>
+
+  <!-- feature engineering -->
+  <g filter="url(#shadow)">
+    <rect x="382" y="91" width="139" height="160" rx="20" fill="url(#feature)"/>
+    <text x="451.5" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356453">Öznitelik</text>
+    <text x="451.5" y="134" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356453">Mühendisliği</text>
+    
+    <g filter="url(#softShadow)">
+      <rect x="400" y="149" width="103" height="29" rx="10" fill="#f7fffa"/>
+      <text x="451.5" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416c5d">Dönüştür</text>
+    </g>
+    <g filter="url(#softShadow)">
+      <rect x="400" y="187" width="103" height="29" rx="10" fill="#f7fffa"/>
+      <text x="451.5" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416c5d">Türet ve seç</text>
+    </g>
+    <path d="M408 229 H495" stroke="#91c8aa" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="421" cy="229" r="4" fill="#73b891"/>
+    <circle cx="451" cy="229" r="4" fill="#73b891"/>
+    <circle cx="481" cy="229" r="4" fill="#73b891"/>
+  </g>
+
+  <!-- arrow 3 -->
+  <path d="M528 171 H548" fill="none" stroke="#7896ab" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="555,171 546,166 546,176" fill="#7896ab"/>
+
+  <!-- model -->
+  <g filter="url(#shadow)">
+    <rect x="562" y="114" width="57" height="114" rx="18" fill="url(#model)"/>
+    <circle cx="590.5" cy="142" r="16" fill="#fff8e9" opacity="0.9"/>
+    <path d="M582 145 L588 139 L593 143 L600 135" fill="none" stroke="#c18439" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M597 135 L600 135 L600 138" fill="none" stroke="#c18439" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="590.5" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79502b">Model</text>
+    <text x="590.5" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6845">Başarı</text>
+  </g>
+
+  <!-- leakage protection -->
+  <g filter="url(#softShadow)">
+    <rect x="216" y="278" width="208" height="27" rx="13.5" fill="#ffffff" opacity="0.88"/>
+    <path d="M235 291 L240 286 L245 291 L240 297 Z" fill="#e29c78"/>
+    <text x="326" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e625d">Eğitim-test ayrımı · veri sızıntısını önle</text>
+  </g>
+</svg>

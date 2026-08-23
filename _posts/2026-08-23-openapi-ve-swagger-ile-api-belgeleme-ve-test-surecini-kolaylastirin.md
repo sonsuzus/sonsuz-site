@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - OpenAPI
-  - Swagger
-  - API
-  - REST
-  - Dokümantasyon
+  - openapı
+  - swagger
+  - apı
+  - rest
+  - dokümantasyon
+toc: true
 ---
 
 Bir API geliştirmek, yalnızca çalışan endpoint'ler yazmaktan ibaret değildir. Bu endpoint'lerin hangi veriyi beklediği, hangi yanıtları döndüğü, hata durumlarında nasıl davranacağı ve yetkilendirmenin nasıl yapılacağı da açıkça anlatılmalıdır. İşte OpenAPI ve Swagger, API geliştiricileri ile API tüketicileri arasındaki bu iletişim sorununu standartlaştırılmış, canlı ve test edilebilir bir sözleşmeye dönüştürür.

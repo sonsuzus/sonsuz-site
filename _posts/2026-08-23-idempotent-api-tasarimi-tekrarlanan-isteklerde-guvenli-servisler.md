@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - API
-  - REST
-  - Idempotency
-  - Backend
+  - apı
+  - rest
+  - ıdempotency
+  - backend
 ---
 
 Dağıtık sistemlerde aynı HTTP isteğinin yalnızca bir kez ulaştığını varsaymak, yağmurda şemsiyesiz dolaşmak gibidir: bazen sorun çıkmaz, ama çıktığında ıslanırsınız. Ağ zaman aşımları, istemcinin otomatik yeniden denemesi ve kullanıcıların iki kez tıklaması; ödeme alma, sipariş oluşturma veya e-posta gönderme gibi işlemleri istemeden çoğaltabilir. İdempotent API tasarımı, aynı isteğin tekrar edilmesi hâlinde sistemin nihai durumunu güvenli biçimde korur.

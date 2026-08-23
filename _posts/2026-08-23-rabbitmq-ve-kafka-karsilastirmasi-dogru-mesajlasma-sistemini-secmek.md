@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - RabbitMQ
-  - Apache Kafka
-  - Mesaj Kuyruğu
+  - rabbitmq
+  - apache kafka
+  - mesaj kuyruğu
+toc: true
 ---
 
 Dağıtık sistemlerde servislerin birbirini beklemeden iletişim kurması, hem performans hem de dayanıklılık için kritik önemdedir. RabbitMQ ve Apache Kafka bu ihtiyacı karşılayan iki güçlü araçtır; ancak aynı problemi farklı felsefelerle çözerler. Biri görev dağıtan hızlı bir postacı, diğeri ise olayların değişmez tarihçesini tutan dev bir günlük gibi düşünülebilir.

@@ -5,10 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Elastic Stack
-  - Elasticsearch
-  - Kibana
-  - Log Analizi
+  - elastic stack
+  - elasticsearch
+  - kibana
+  - log analizi
+toc: true
 ---
 
 Büyük ölçekli bir sistemde loglar, uygulamanın kara kutu uçuş kayıtları gibidir: hata anını, kullanıcı davranışını ve altyapıdaki küçük titreşimleri saklarlar. Ancak binlerce sunucu saniyede milyonlarca satır ürettiğinde, metin dosyalarını tek tek incelemek hem yavaş hem de yanıltıcıdır. Elastic Stack; logları toplamak, dönüştürmek, indekslemek ve görselleştirmek için merkezi, ölçeklenebilir bir yaklaşım sunar.

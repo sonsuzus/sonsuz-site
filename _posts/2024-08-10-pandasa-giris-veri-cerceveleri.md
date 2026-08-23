@@ -17,6 +17,7 @@ tags:
 redirect_from:
   - /posts/pandasa-giris-veri-cerceveleri/
 toc: true
+image: /img/pandasa-giris-veri-71.png
 ---
 
 
@@ -540,3 +541,6 @@ Müşteri sayısı: 4372
 ```
 
 Veri çerçeveleri `scikit-learn`, `statsmodel` gibi bir çok paket tarafından destekleniyor. `Tensorflow` ve `lightgbm` gibi popüler paketlerle de veri çerçevelerini kullanabilirsiniz.
+
+![pandasa-giris-veri-71](/img/pandasa-giris-veri-71.svg)
+

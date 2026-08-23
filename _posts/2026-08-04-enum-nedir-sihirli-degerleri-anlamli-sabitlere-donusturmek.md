@@ -9,6 +9,7 @@ tags:
   - veri yapıları
   - temiz kod
 toc: true
+image: /img/enum-nedir-sihirli-50.png
 ---
 
 Bir siparişin durumunu `1`, kullanıcı rolünü `"A"`, haftanın gününü ise `4` ile temsil ettiğinizi düşünün. Bu değerler çalışır; fakat kodu aylar sonra okuyan geliştirici için küçük bir bilmeceye dönüşür: “1 hazırlanıyor mu, kargoda mı?” Enum, ilişkili sabitleri anlamlı isimlerden oluşan tek bir tür altında toplayarak bu bilmeceleri ortadan kaldırır.
@@ -30,6 +31,9 @@ Bir sipariş durumu değişkeni için $d \in S$ koşulu geçerlidir. `Patates` g
 | Sihirli sayı | `durum == 2` | Düşük | Yüksek |
 | Metin | `durum == "Kargoda"` | Orta | Yazım hatasına açık |
 | Enum | `durum == SiparisDurumu.Kargoda` | Yüksek | Düşük |
+
+![enum-nedir-sihirli-50](/img/enum-nedir-sihirli-50.svg)
+
 
 ## Temel kullanım
 

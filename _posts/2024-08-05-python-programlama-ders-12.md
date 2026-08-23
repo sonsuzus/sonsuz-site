@@ -13,6 +13,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-12/
 toc: true
+image: /img/python-programlama-ders-82.png
 ---
 
 
@@ -457,3 +458,6 @@ absurd            2
 `alice` kelimesi kitapta kaç kere yer almaktadır?
 
 - Alice in Wonderland (Alice Harikalar Diyarında)'ki en uzun kelime hangisidir? Kelime kaç karakter içermektedir??
+
+![python-programlama-ders-82](/img/python-programlama-ders-82.svg)
+

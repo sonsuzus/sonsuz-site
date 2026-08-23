@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="nodeBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e4f1ff"/>
+      <stop offset="100%" stop-color="#cfe5fb"/>
+    </linearGradient>
+    <linearGradient id="nodeGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e4f7eb"/>
+      <stop offset="100%" stop-color="#ccecd7"/>
+    </linearGradient>
+    <linearGradient id="nodeLavender" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0eaff"/>
+      <stop offset="100%" stop-color="#ddd1f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#66809a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#66809a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="52" r="75" fill="#dceeff" opacity="0.45"/>
+  <circle cx="578" cy="275" r="92" fill="#dff2dc" opacity="0.48"/>
+
+  <text x="28" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516b">HDFS • Dağıtık Depolama Akışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="75" width="112" height="78" rx="17" fill="url(#nodeLavender)" stroke="#b9a9de"/>
+  </g>
+  <rect x="45" y="91" width="24" height="19" rx="5" fill="#9377c8"/>
+  <path d="M49 96h16M49 101h16M49 106h10" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="80" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d3f70">İstemci</text>
+  <text x="45" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#625478">Dosya yükleme</text>
+
+  <path d="M140 114H183" stroke="#829ab1" stroke-width="2.2" fill="none"/>
+  <polygon points="183,114 175,109 175,119" fill="#829ab1"/>
+  <text x="146" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688096">izin ve konum</text>
+
+  <g filter="url(#shadow)">
+    <rect x="185" y="58" width="160" height="112" rx="20" fill="url(#nodeBlue)" stroke="#9dc7e8"/>
+  </g>
+  <circle cx="218" cy="95" r="19" fill="#5797ca"/>
+  <path d="M208 91h20M212 96h12M215 101h6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="246" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#265374">NameNode</text>
+  <text x="246" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426d8d">Meta veri</text>
+  <text x="246" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426d8d">Blok konumları</text>
+  <rect x="204" y="143" width="122" height="12" rx="6" fill="#b6d8ef"/>
+  <rect x="204" y="143" width="78" height="12" rx="6" fill="#6eadd9"/>
+
+  <path d="M345 102H389" stroke="#829ab1" stroke-width="2.2" fill="none"/>
+  <polygon points="389,102 381,97 381,107" fill="#829ab1"/>
+  <text x="353" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688096">düğüm seçimi</text>
+
+  <g filter="url(#soft)">
+    <rect x="392" y="54" width="215" height="144" rx="20" fill="#f8fcf8" stroke="#b5d7bd"/>
+  </g>
+  <text x="410" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6f4d">Veri düğümleri</text>
+  <text x="526" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66866e">Kopya: 3</text>
+
+  <g filter="url(#soft)">
+    <rect x="409" y="94" width="52" height="80" rx="11" fill="url(#nodeGreen)" stroke="#9bc9a6"/>
+    <rect x="473" y="94" width="52" height="80" rx="11" fill="url(#nodeGreen)" stroke="#9bc9a6"/>
+    <rect x="537" y="94" width="52" height="80" rx="11" fill="url(#nodeGreen)" stroke="#9bc9a6"/>
+  </g>
+
+  <rect x="420" y="106" width="30" height="9" rx="3" fill="#5da36e"/>
+  <rect x="420" y="121" width="30" height="9" rx="3" fill="#8bc797"/>
+  <rect x="420" y="136" width="30" height="9" rx="3" fill="#5da36e"/>
+  <text x="417" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f7250">Düğüm 1</text>
+
+  <rect x="484" y="106" width="30" height="9" rx="3" fill="#5da36e"/>
+  <rect x="484" y="121" width="30" height="9" rx="3" fill="#8bc797"/>
+  <rect x="484" y="136" width="30" height="9" rx="3" fill="#5da36e"/>
+  <text x="481" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f7250">Düğüm 2</text>
+
+  <rect x="548" y="106" width="30" height="9" rx="3" fill="#5da36e"/>
+  <rect x="548" y="121" width="30" height="9" rx="3" fill="#8bc797"/>
+  <rect x="548" y="136" width="30" height="9" rx="3" fill="#5da36e"/>
+  <text x="545" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f7250">Düğüm 3</text>
+
+  <path d="M140 153 C164 188 207 208 250 210" stroke="#7f9ab0" stroke-width="2.2" fill="none"/>
+  <polygon points="250,210 241,204 242,215" fill="#7f9ab0"/>
+  <text x="150" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688096">blok akışı</text>
+
+  <path d="M278 170V211" stroke="#8babc0" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <polygon points="278,211 273,203 283,203" fill="#8babc0"/>
+  <text x="288" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688096">kalp atışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="198" y="216" width="254" height="77" rx="18" fill="#ffffff" opacity="0.96" stroke="#c9dbe6"/>
+  </g>
+  <text x="218" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365b72">Dosya bloklara ayrılır</text>
+
+  <rect x="218" y="254" width="47" height="20" rx="6" fill="#8bbce0"/>
+  <rect x="271" y="254" width="47" height="20" rx="6" fill="#93caa0"/>
+  <rect x="324" y="254" width="47" height="20" rx="6" fill="#b7a2dc"/>
+  <text x="226" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">B1</text>
+  <text x="279" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">B2</text>
+  <text x="332" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">B3</text>
+  <path d="M378 264H421" stroke="#78a886" stroke-width="2"/>
+  <polygon points="421,264 413,259 413,269" fill="#78a886"/>
+  <text x="383" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7d5b">çoğaltma</text>
+
+  <path d="M470 204 C470 222 445 226 432 226" stroke="#86a7ba" stroke-width="1.8" stroke-dasharray="4 4" fill="none"/>
+  <polygon points="432,226 440,221 440,231" fill="#86a7ba"/>
+
+  <text x="28" y="298" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617a8b">Hesaplamayı veriye taşı • Arıza beklenen durumdur</text>
+</svg>

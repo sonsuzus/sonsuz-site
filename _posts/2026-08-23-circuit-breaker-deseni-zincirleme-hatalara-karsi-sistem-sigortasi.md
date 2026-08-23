@@ -9,6 +9,7 @@ tags:
   - mikroservisler
   - dayanıklılık
   - yazılım mimarisi
+toc: true
 ---
 
 Dağıtık sistemlerde bir servisin yavaşlaması, yalnızca o servisin problemi olarak kalmaz. Ödeme API’sini bekleyen sipariş servisi, sipariş servisini bekleyen sepet uygulaması ve en sonunda kullanıcı deneyimi etkilenir. Circuit Breaker (devre kesici) deseni, başarısız çağrıları sonsuza dek tekrarlamak yerine bağlantıyı geçici olarak keserek kaynakları koruyan bir dayanıklılık yaklaşımıdır. Elektrik sigortası nasıl aşırı yükte devreyi kapatıyorsa, yazılımsal devre kesici de sorunlu bağımlılığa yapılan çağrıları kontrollü biçimde durdurur.

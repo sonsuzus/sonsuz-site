@@ -9,9 +9,13 @@ tags:
   - veritabanı
   - sayfalama
 toc: true
+image: /img/sql-ile-nokta-53.png
 ---
 
 Bir veritabanında binlerce ürün, kullanıcı veya sipariş bulunabilir. Fakat çoğu zaman bütün satırları değil, belirli koşulları sağlayan küçük bir bölümü görmek isteriz. SQL’in `WHERE`, `ORDER BY` ve `LIMIT` araçları; verileri süzmemizi, anlamlı biçimde sıralamamızı ve yönetilebilir parçalar hâlinde sunmamızı sağlar.
+
+![sql-ile-nokta-53](/img/sql-ile-nokta-53.svg)
+
 ``
 ## Üç aşamalı veri hunisi
 

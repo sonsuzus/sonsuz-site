@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - OpenTelemetry
-  - Gözlemlenebilirlik
-  - Dağıtık Sistemler
+  - opentelemetry
+  - gözlemlenebilirlik
+  - dağıtık sistemler
 ---
 
 Dağıtık uygulamalarda bir isteğin nerede yavaşladığını bulmak, tek sunuculu günlerin rahatlığını özletebilir. Kullanıcı "sipariş ver" düğmesine basar; istek API ağ geçidinden ödeme servisine, stok servisine, kuyruk sistemine ve veritabanına uğrar. Hata ekranı ise yalnızca 500 döndürür. OpenTelemetry (OTel), bu karmaşık yolculuğu standart araçlarla görünür hâle getirerek izleme, hata ayıklama ve kapasite planlama süreçlerini aynı dilde buluşturur.

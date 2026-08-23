@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="modGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4fc"/>
+    </linearGradient>
+    <linearGradient id="pydocGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="classGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce8f0"/>
+      <stop offset="100%" stop-color="#fad0e0"/>
+    </linearGradient>
+    <linearGradient id="funcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0e0"/>
+      <stop offset="100%" stop-color="#ffe0c0"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f8e8"/>
+      <stop offset="100%" stop-color="#d0f0d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık etiketi -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a5a7a">Python Modüller ve pydoc</text>
+
+  <!-- Merkez: Python Modülü -->
+  <rect x="240" y="50" width="160" height="50" rx="12" fill="url(#modGrad)" stroke="#7aa5d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c4a6e">Python Modülü</text>
+  <text x="320" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a6a8e">tanımlar ve cümleler</text>
+
+  <!-- Standart Kütüphane kutusu -->
+  <rect x="40" y="60" width="130" height="40" rx="10" fill="#e0f0e8" stroke="#6abf9a" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="105" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2a6e4a">Standart Kütüphane</text>
+  <text x="105" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#4a8e6a">doctest, string</text>
+
+  <!-- pydoc kutusu -->
+  <rect x="450" y="55" width="150" height="50" rx="12" fill="url(#pydocGrad)" stroke="#d4a84a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="525" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a5a1a">pydoc</text>
+  <text x="525" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9a7a3a">arama ve belgeleme</text>
+
+  <!-- Komut satırı kutusu -->
+  <rect x="450" y="130" width="150" height="40" rx="10" fill="#f0f0f8" stroke="#a0a0c0" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="525" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#4a4a6a">Komut Satırı</text>
+  <text x="525" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#6a6a8a">pydoc -g</text>
+
+  <!-- Tarayıcı kutusu -->
+  <rect x="450" y="195" width="150" height="40" rx="10" fill="#f0f8f0" stroke="#80b080" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="525" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#3a6a3a">Ağ Tarayıcı</text>
+  <text x="525" y="227" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#5a8a5a">belgeleri görüntüle</text>
+
+  <!-- Belge türleri başlığı -->
+  <text x="180" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#5a5a7a">Belge Türleri</text>
+
+  <!-- Sınıflar -->
+  <rect x="40" y="195" width="120" height="36" rx="8" fill="url(#classGrad)" stroke="#d47a9a" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <circle cx="58" cy="213" r="5" fill="#e88aaa"/>
+  <text x="72" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a3a5a">Sınıflar</text>
+
+  <!-- Fonksiyonlar -->
+  <rect x="180" y="195" width="130" height="36" rx="8" fill="url(#funcGrad)" stroke="#d4a04a" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <circle cx="198" cy="213" r="5" fill="#e8b060"/>
+  <text x="212" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a5a1a">Fonksiyonlar</text>
+
+  <!-- Veri -->
+  <rect x="330" y="195" width="100" height="36" rx="8" fill="url(#dataGrad)" stroke="#6abf6a" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <circle cx="348" cy="213" r="5" fill="#80d080"/>
+  <text x="362" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a6a2a">Veri</text>
+
+  <!-- Oklar (manuel çizim) -->
+
+  <!-- Modül -> Standart Kütüphane -->
+  <line x1="170" y1="80" x2="235" y2="75" stroke="#6a9a6a" stroke-width="1.5"/>
+  <polygon points="235,75 225,70 225,80" fill="#6a9a6a"/>
+
+  <!-- Modül -> pydoc -->
+  <line x1="405" y1="80" x2="445" y2="80" stroke="#c0a04a" stroke-width="1.5"/>
+  <polygon points="445,80 435,75 435,85" fill="#c0a04a"/>
+
+  <!-- pydoc -> Komut Satırı -->
+  <line x1="525" y1="108" x2="525" y2="126" stroke="#a0a0c0" stroke-width="1.5"/>
+  <polygon points="525,126 520,118 530,118" fill="#a0a0c0"/>
+
+  <!-- Komut Satırı -> Tarayıcı -->
+  <line x1="525" y1="172" x2="525" y2="191" stroke="#80b080" stroke-width="1.5"/>
+  <polygon points="525,191 520,183 530,183" fill="#80b080"/>
+
+  <!-- pydoc -> Belge Türleri -->
+  <path d="M 450 90 C 400 130, 300 150, 240 170" stroke="#c0a04a" stroke-width="1.2" fill="none"/>
+  <polygon points="240,170 248,163 240,160" fill="#c0a04a"/>
+
+  <!-- Belge Türleri bağlantıları -->
+  <line x1="100" y1="195" x2="100" y2="190" stroke="#d47a9a" stroke-width="1"/>
+  <line x1="245" y1="195" x2="245" y2="190" stroke="#d4a04a" stroke-width="1"/>
+  <line x1="380" y1="195" x2="380" y2="190" stroke="#6abf6a" stroke-width="1"/>
+
+  <!-- Alt not -->
+  <text x="320" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8a9aaa">Modüller: yeniden kullanılabilir Python kod dosyaları</text>
+  <text x="320" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8a9aaa">pydoc: kurulu kütüphanelerde arama ve belgeleme aracı</text>
+
+  <!-- Dekoratif öğe: küçük kod satırı -->
+  <rect x="40" y="250" width="200" height="22" rx="6" fill="#e8ecf4" stroke="#c0c8d8" stroke-width="0.8" opacity="0.7"/>
+  <text x="50" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#6a7a8a">import modül</text>
+
+  <rect x="400" y="250" width="200" height="22" rx="6" fill="#e8ecf4" stroke="#c0c8d8" stroke-width="0.8" opacity="0.7"/>
+  <text x="410" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#6a7a8a">from modül import fonk</text>
+</svg>

@@ -15,6 +15,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-13/
 toc: true
+image: /img/python-programlama-ders-44.png
 ---
 
 
@@ -26,6 +27,9 @@ Python **nesne yönelimli programlama dilidir**, bunun anlamı **nesne yöneliml
 Nesne yönelimli programlama 1960larda ortaya çıkmasına rağmen 1980lerin ortasına kadar yeni yazılım üretmede ana **programlama paradigması** haline gelmedi. Hızlı bir şekilde büyüyen ve karmaşıklaşan yazılım sistemlerini kotarmak ve bu büyük ve karmaşık sistemleri zaman içerisinde daha kolay değiştirmek için geliştirilmiştir.
 
 Şu ana kadar programları **yordamsal (procedural) programlama** paradigmasını kullanarak yazdık. Yordamsal programlamada fonksiyonları veya *yordamları* yazmaya odaklanma sözkonusudur. Fonksiyonlar/yordamlar veri üzerinde işlem yaparlar. Nesne yönelimli programlamada odak **nesnelerin** yaratılmasındadır, nesneler hem veriyi hem de işlevselliği birlikte barındırır.
+
+![python-programlama-ders-44](/img/python-programlama-ders-44.svg)
+
 ``
 
 ## 13.2 Kullanıcı tanımlı bileşik tipler

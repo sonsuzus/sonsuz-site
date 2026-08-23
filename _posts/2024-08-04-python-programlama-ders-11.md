@@ -21,7 +21,11 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-11/
 toc: true
+image: /img/python-programlama-ders-80.png
 ---
+
+![python-programlama-ders-80](/img/python-programlama-ders-80.svg)
+
 
 
 

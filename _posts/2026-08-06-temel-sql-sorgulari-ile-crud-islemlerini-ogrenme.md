@@ -9,6 +9,7 @@ tags:
   - crud
   - veritabanı
 toc: true
+image: /img/temel-sql-sorgulari-76.png
 ---
 
 Bir veritabanıyla çalışan hemen her uygulama aynı dört temel ihtiyaca sahiptir: yeni veri eklemek, mevcut verileri okumak, bilgileri güncellemek ve artık gerekli olmayan kayıtları silmek. Bu işlemler İngilizce karşılıklarının baş harfleriyle **CRUD** olarak adlandırılır. SQL dünyasında CRUD, karmaşık görünen veritabanı macerasının sağlam ve oldukça pratik başlangıç noktasıdır.
@@ -121,3 +122,6 @@ SELECT * FROM kullanicilar WHERE id = 3;
 | Her zaman `SELECT *` yazmak | Gerekli sütunları seçmek |
 
 CRUD komutları basit görünse de uygulamaların veri katmanının temelini oluşturur. `INSERT`, `SELECT`, `UPDATE` ve `DELETE` komutlarını doğru filtreler, kısıtlamalar ve transaction mantığıyla kullanmak; hem veriyi korur hem de daha güvenilir uygulamalar geliştirmenizi sağlar.
+
+![temel-sql-sorgulari-76](/img/temel-sql-sorgulari-76.svg)
+

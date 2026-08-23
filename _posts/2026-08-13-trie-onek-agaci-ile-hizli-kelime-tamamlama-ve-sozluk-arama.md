@@ -10,9 +10,13 @@ tags:
   - python
   - algoritmalar
   - otomatik tamamlama
+image: /img/trie-onek-agaci-15.png
 ---
 
 Arama kutusuna birkaç harf yazdığınızda önerilerin anında belirmesi sihir değil; çoğu zaman arka planda çalışan akıllı bir veri yapısıdır: **Trie**. “Prefix Tree” yani önek ağacı olarak da bilinen Trie, kelimeleri karakter karakter dallandırarak saklar. Bu yaklaşım, özellikle sözlük araması, yazım denetimi, URL yönlendirme ve otomatik tamamlama gibi senaryolarda klasik liste taramasından çok daha verimli olabilir.
+
+![trie-onek-agaci-15](/img/trie-onek-agaci-15.svg)
+
 ``
 
 Trie’nin temel fikri oldukça sezgiseldir: Ortak başlangıca sahip kelimeler, ağacın aynı dallarını paylaşır. Örneğin `araba`, `arama` ve `armut` kelimeleri ilk iki karakter olan `ar` düğümlerini ortak kullanır. Her düğüm bir karakteri temsil eder; ayrıca o düğümde biten geçerli bir kelime olup olmadığını belirten bir işaret bulunur. Böylece `ara` bir kelimeyse, `a → r → a` yolunun son düğümünde `is_end = true` tutulur.

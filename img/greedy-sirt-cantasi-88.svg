@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6d9ff"/>
+      <stop offset="100%" stop-color="#cfc4f4"/>
+    </linearGradient>
+    <linearGradient id="good" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f4e6"/>
+      <stop offset="100%" stop-color="#bfe4d0"/>
+    </linearGradient>
+    <linearGradient id="warn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe6d7"/>
+      <stop offset="100%" stop-color="#f6cbbb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#597089" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#597089" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="69" cy="48" r="72" fill="#dbeeff" opacity="0.38"/>
+  <circle cx="584" cy="278" r="92" fill="#dff1d6" opacity="0.32"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536a">Açgözlü Sırt Çantası</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">Yoğunluğa göre seçim: değer / ağırlık</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="85" width="156" height="155" rx="19" fill="#ffffff"/>
+  </g>
+  <text x="48" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536a">Nesneler</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="45" y="126" width="120" height="26" rx="10" fill="#e3f1ff"/>
+    <rect x="45" y="160" width="120" height="26" rx="10" fill="#e8f5df"/>
+    <rect x="45" y="194" width="120" height="26" rx="10" fill="#fff0d7"/>
+  </g>
+  <text x="56" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#395b76">A · 10 / 60 · r=6</text>
+  <text x="56" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456451">B · 20 / 100 · r=5</text>
+  <text x="56" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#775b3d">C · 30 / 120 · r=4</text>
+
+  <path d="M184 162 L227 162" stroke="#8194a6" stroke-width="2.2" fill="none"/>
+  <polygon points="227,162 218,157 218,167" fill="#8194a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="235" y="104" width="164" height="116" rx="22" fill="url(#core)"/>
+  </g>
+  <path d="M282 136 C294 123 321 121 340 134 C354 143 355 169 340 182 C323 196 289 193 278 177 C269 164 271 146 282 136Z" fill="#ffffff" opacity="0.7"/>
+  <text x="266" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f4a78">Greedy seçimi</text>
+  <text x="263" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f4a78">Önce en yüksek oran</text>
+  <text x="270" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f4a78">A → B → C</text>
+  <text x="270" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#625d84">Kapasite: W = 50</text>
+
+  <path d="M399 143 C420 132 426 107 442 98" stroke="#65a781" stroke-width="2.2" fill="none"/>
+  <polygon points="442,98 432,98 438,107" fill="#65a781"/>
+  <path d="M399 182 C420 193 425 220 442 230" stroke="#d28a70" stroke-width="2.2" fill="none"/>
+  <polygon points="442,230 438,221 432,230" fill="#d28a70"/>
+
+  <g filter="url(#shadow)">
+    <rect x="449" y="56" width="163" height="102" rx="18" fill="url(#good)"/>
+  </g>
+  <circle cx="475" cy="83" r="13" fill="#ffffff" opacity="0.72"/>
+  <path d="M469 83 L473 87 L481 78" fill="none" stroke="#4b9670" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="497" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39674e">Kesirli çanta</text>
+  <text x="469" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39674e">A + B + C'nin 20/30'u</text>
+  <text x="469" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39674e">Optimum değer: 240</text>
+
+  <g filter="url(#shadow)">
+    <rect x="449" y="187" width="163" height="102" rx="18" fill="url(#warn)"/>
+  </g>
+  <circle cx="475" cy="214" r="13" fill="#ffffff" opacity="0.72"/>
+  <path d="M469 208 L481 220 M481 208 L469 220" stroke="#c76f58" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="497" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#87503f">0/1 çanta</text>
+  <text x="469" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#87503f">Greedy: A + B = 160</text>
+  <text x="469" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#87503f">En iyi: B + C = 220</text>
+
+  <path d="M404 247 L438 247" stroke="#8a7194" stroke-width="1.8" stroke-dasharray="4 4" fill="none"/>
+  <polygon points="438,247 430,243 430,251" fill="#8a7194"/>
+  <text x="258" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a5f72">Çözüm: dinamik programlama</text>
+</svg>

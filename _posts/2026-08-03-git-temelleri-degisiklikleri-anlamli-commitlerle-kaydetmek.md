@@ -9,9 +9,13 @@ tags:
   - versiyon kontrolü
   - commit
 toc: true
+image: /img/git-temelleri-degisiklikleri-35.png
 ---
 
 Bir projede kod yazarken yalnızca sonucun çalışması yeterli değildir; hangi değişikliğin ne zaman ve neden yapıldığını da bilmek gerekir. Git, projenin belirli anlarını yerel bir tarihçeye kaydederek geçmişe bakmayı, hataları izlemeyi ve güvenle deney yapmayı sağlar. Commit ise bu tarihçedeki sıradan bir kayıt değil, projenin belirli bir andaki anlamlı fotoğrafıdır.
+
+![git-temelleri-degisiklikleri-35](/img/git-temelleri-degisiklikleri-35.svg)
+
 ``
 ## Git’in temel yaklaşımı: Anlık fotoğraflar
 

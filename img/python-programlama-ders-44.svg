@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7f0"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dcfce7"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9d5ff"/>
+      <stop offset="100%" stop-color="#d8b4fe"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <linearGradient id="box6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cffafe"/>
+      <stop offset="100%" stop-color="#a5f3fc"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Python OOP: Sınıflar ve Nesneler</text>
+
+  <!-- Merkez: Sınıf -->
+  <rect x="255" y="55" width="130" height="50" rx="12" fill="url(#box1)" filter="url(#shadow)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="320" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">Sınıf (Class)</text>
+  <text x="320" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e40af">Kullanıcı tanımlı tip</text>
+
+  <!-- Sol üst: OOP -->
+  <rect x="40" y="60" width="130" height="45" rx="12" fill="url(#box2)" filter="url(#shadow)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="105" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#065f46">Nesne Yönelimli</text>
+  <text x="105" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#047857">Programlama (OOP)</text>
+
+  <!-- Sol alt: Yordamsal -->
+  <rect x="40" y="135" width="130" height="45" rx="12" fill="url(#box3)" filter="url(#shadow)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="105" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#92400e">Yordamsal</text>
+  <text x="105" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b45309">Programlama</text>
+
+  <!-- Sağ üst: Nesne -->
+  <rect x="470" y="60" width="130" height="45" rx="12" fill="url(#box4)" filter="url(#shadow)" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="535" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5b21b6">Nesne (Object)</text>
+  <text x="535" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6d28d9">Veri + İşlevsellik</text>
+
+  <!-- Sağ alt: Nokta -->
+  <rect x="470" y="135" width="130" height="45" rx="12" fill="url(#box5)" filter="url(#shadow)" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="535" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9d174d">Nokta</text>
+  <text x="535" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#be185d">2D Uzayda Koordinat</text>
+
+  <!-- Alt orta: Veri Tipleri -->
+  <rect x="255" y="230" width="130" height="45" rx="12" fill="url(#box6)" filter="url(#shadow)" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="320" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#155e75">Veri Tipleri</text>
+  <text x="320" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#0e7490">İçsel + Kullanıcı Tanımlı</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- OOP -> Sınıf -->
+  <path d="M170 82 L250 82" stroke="#10b981" stroke-width="2" fill="none"/>
+  <polygon points="250,77 260,82 250,87" fill="#10b981"/>
+
+  <!-- Yordamsal -> Sınıf (dolaylı bağlantı) -->
+  <path d="M105 135 L105 120 L320 120 L320 110" stroke="#f59e0b" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="315,110 320,105 325,110" fill="#f59e0b"/>
+
+  <!-- Sınıf -> Nesne -->
+  <path d="M385 82 L465 82" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+  <polygon points="465,77 475,82 465,87" fill="#8b5cf6"/>
+
+  <!-- Sınıf -> Nokta -->
+  <path d="M320 105 L320 130 L535 130 L535 135" stroke="#ec4899" stroke-width="1.5" fill="none"/>
+  <polygon points="530,135 535,140 540,135" fill="#ec4899"/>
+
+  <!-- Sınıf -> Veri Tipleri -->
+  <path d="M320 105 L320 225" stroke="#06b6d4" stroke-width="2" fill="none"/>
+  <polygon points="315,225 320,230 325,225" fill="#06b6d4"/>
+
+  <!-- Nesne -> Nokta (örnek) -->
+  <path d="M535 105 L535 130" stroke="#ec4899" stroke-width="1.5" fill="none" stroke-dasharray="3,3"/>
+  <polygon points="530,130 535,135 540,130" fill="#ec4899"/>
+
+  <!-- Alt açıklama -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#64748b">Sınıflar yeni veri tipleri tanımlar; nesneler veriyi ve işlevselliği birlikte barındırır</text>
+</svg>

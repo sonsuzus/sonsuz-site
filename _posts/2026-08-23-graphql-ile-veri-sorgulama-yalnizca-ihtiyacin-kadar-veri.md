@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - GraphQL
-  - API
-  - JavaScript
+  - graphql
+  - apı
+  - javascript
+toc: true
 ---
 
 Modern uygulamalarda veriyi almak, çoğu zaman veriyi göstermekten daha karmaşık hâle gelir. Geleneksel REST API'lerde bir ekran için birden fazla uç noktaya istek atmak veya gereğinden büyük JSON yanıtları indirmek sık rastlanan bir durumdur. GraphQL, istemcinin ihtiyaç duyduğu alanları açıkça tarif ettiği bir sorgu dili ve API çalışma zamanı sunar. Böylece mobil uygulama, web arayüzü ve yönetim paneli aynı veri kaynağından farklı şekillerde beslenebilir.

@@ -8,6 +8,7 @@ tags:
   - rate limiting
   - sistem tasarımı
   - algoritmalar
+toc: true
 ---
 
 Bir API’nin başarısı bazen aldığı istek sayısıyla ölçülür; fakat kontrolsüz trafik, başarı hikâyesini saniyeler içinde kesinti raporuna dönüştürebilir. Rate limiting, belirli bir kullanıcı, IP adresi, API anahtarı veya uç nokta için kabul edilen istek miktarını sınırlayan savunma katmanıdır. Amaç yalnızca kötü niyetli botları engellemek değildir: adil kaynak paylaşımı sağlamak, maliyetleri öngörülebilir tutmak ve veritabanı gibi hassas bağımlılıkları korumaktır.

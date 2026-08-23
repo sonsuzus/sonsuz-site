@@ -9,7 +9,11 @@ tags:
   - greedy
   - sırt-çantası
   - dinamik-programlama
+image: /img/greedy-sirt-cantasi-88.png
 ---
+
+![greedy-sirt-cantasi-88](/img/greedy-sirt-cantasi-88.svg)
+
 
 Açgözlü algoritmalar, her adımda o an için en avantajlı görünen seçimi yapar ve geriye dönüp kararlarını değiştirmez. Bu yaklaşım kulağa biraz aceleci gelse de doğru problemde inanılmaz hızlı ve zariftir. Sırt çantası problemi ise bu stratejinin sınırlarını görmek için mükemmel bir laboratuvardır: Aynı fikir, kesirli eşyalar için optimum sonucu verirken 0/1 sürümünde bizi tuzağa düşürebilir.
 ``

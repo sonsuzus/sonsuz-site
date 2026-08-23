@@ -1,0 +1,90 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#82c4d8"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b8e0c8"/>
+      <stop offset="100%" stop-color="#96d0aa"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5d0a9"/>
+      <stop offset="100%" stop-color="#e8b88a"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9b8e8"/>
+      <stop offset="100%" stop-color="#b09ad8"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0b8c8"/>
+      <stop offset="100%" stop-color="#e09ab0"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#3a5a7a">Python Groupby Kullanımı</text>
+
+  <!-- Veri Kaynağı Kutusu -->
+  <rect x="40" y="55" width="130" height="55" rx="10" fill="url(#box1)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="105" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a5a">Veri Kaynağı</text>
+  <text x="105" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a3a5a">Excel, CSV, TXT</text>
+
+  <!-- Ok 1 -->
+  <polygon points="175,82 195,75 195,89" fill="#5a8aaa"/>
+  <line x1="170" y1="82" x2="190" y2="82" stroke="#5a8aaa" stroke-width="2"/>
+
+  <!-- Pandas Kutusu -->
+  <rect x="200" y="50" width="140" height="65" rx="10" fill="url(#box2)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="270" y="73" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4a2a">Pandas</text>
+  <text x="270" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a4a2a">DataFrame</text>
+  <text x="270" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a4a2a">read_excel</text>
+
+  <!-- Ok 2 -->
+  <polygon points="345,82 365,75 365,89" fill="#5a8aaa"/>
+  <line x1="340" y1="82" x2="360" y2="82" stroke="#5a8aaa" stroke-width="2"/>
+
+  <!-- Groupby Kutusu -->
+  <rect x="370" y="45" width="140" height="75" rx="10" fill="url(#box3)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="440" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a3a1a">groupby()</text>
+  <text x="440" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a3a1a">Gruplama</text>
+  <text x="440" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a3a1a">İstatistik</text>
+  <text x="440" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a3a1a">Analiz</text>
+
+  <!-- Ok 3 (aşağı) -->
+  <polygon points="440,125 433,145 447,145" fill="#5a8aaa"/>
+  <line x1="440" y1="120" x2="440" y2="140" stroke="#5a8aaa" stroke-width="2"/>
+
+  <!-- Sonuç Kutusu -->
+  <rect x="370" y="150" width="140" height="55" rx="10" fill="url(#box4)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="440" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a2a5a">Sonuçlar</text>
+  <text x="440" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a2a5a">Yeni DataFrame</text>
+
+  <!-- Yardımcı Paketler -->
+  <rect x="40" y="150" width="130" height="55" rx="10" fill="url(#box5)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="105" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a1a2a">Yardımcılar</text>
+  <text x="105" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a1a2a">NumPy</text>
+
+  <!-- Ok 4 (NumPy'den Pandas'a) -->
+  <polygon points="175,165 195,158 195,172" fill="#5a8aaa"/>
+  <line x1="170" y1="165" x2="190" y2="165" stroke="#5a8aaa" stroke-width="2"/>
+
+  <!-- Alt Bilgi -->
+  <rect x="40" y="240" width="560" height="55" rx="10" fill="#ffffff" opacity="0.6" filter="url(#shadow)"/>
+  <text x="320" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a5a7a">Kullanım Alanları</text>
+  <text x="320" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">Alışveriş verisi, satış analizi, istatistiksel özet</text>
+
+  <!-- Bağlantı Çizgisi -->
+  <line x1="105" y1="210" x2="105" y2="235" stroke="#5a8aaa" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="440" y1="210" x2="440" y2="235" stroke="#5a8aaa" stroke-width="1.5" stroke-dasharray="4,3"/>
+</svg>

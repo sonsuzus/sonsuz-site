@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - JWT
-  - Web Güvenliği
-  - Kimlik Doğrulama
+  - jwt
+  - web güvenliği
+  - kimlik doğrulama
+toc: true
 ---
 
 JWT’ler (JSON Web Token), oturum bilgisini sunucu yerine imzalı bir belirteçte taşıyarak ölçeklenebilir kimlik doğrulama sağlar. Ancak “imzalı” olması, token’ın otomatik olarak güvenli olduğu anlamına gelmez. Güvenlik; imza algoritması, anahtar yönetimi, claim doğrulaması, tarayıcıda saklama biçimi ve token yaşam döngüsünün birlikte doğru tasarlanmasına bağlıdır.

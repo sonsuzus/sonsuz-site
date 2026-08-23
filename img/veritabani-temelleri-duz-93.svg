@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff0ff"/>
+      <stop offset="100%" stop-color="#c9e5f7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8496" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8496" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="320" cy="157" r="100" fill="#dfeffc" opacity="0.42"/>
+  <circle cx="320" cy="157" r="77" fill="#edf7ff" opacity="0.82"/>
+
+  <g filter="url(#shadow)">
+    <rect x="226" y="93" width="188" height="128" rx="23" fill="url(#core)" stroke="#9dc9e4" stroke-width="1.5"/>
+  </g>
+  <rect x="246" y="113" width="148" height="40" rx="12" fill="#ffffff" opacity="0.78"/>
+  <ellipse cx="270" cy="133" rx="12" ry="5" fill="#77abd0"/>
+  <path d="M258 133v11c0 3 5 5 12 5s12-2 12-5v-11c0 3-5 5-12 5s-12-2-12-5z" fill="#8bc2e2"/>
+  <path d="M258 139c0 3 5 5 12 5s12-2 12-5M258 144c0 3 5 5 12 5s12-2 12-5" fill="none" stroke="#5791ba" stroke-width="1"/>
+  <text x="293" y="132" fill="#285d7e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">MySQL</text>
+  <text x="293" y="146" fill="#58748a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">RDBMS</text>
+
+  <path d="M256 172h128" stroke="#91bad3" stroke-width="1.5"/>
+  <g fill="#ffffff" opacity="0.86">
+    <rect x="249" y="183" width="36" height="22" rx="7"/>
+    <rect x="302" y="183" width="36" height="22" rx="7"/>
+    <rect x="355" y="183" width="30" height="22" rx="7"/>
+  </g>
+  <text x="254" y="198" fill="#44718f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Şema</text>
+  <text x="307" y="198" fill="#44718f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">SQL</text>
+  <text x="359" y="198" fill="#44718f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İşlem</text>
+
+  <path d="M182 157h37" fill="none" stroke="#819baa" stroke-width="2"/>
+  <polygon points="219,157 210,152 210,162" fill="#819baa"/>
+  <path d="M421 157h31" fill="none" stroke="#819baa" stroke-width="2"/>
+  <polygon points="452,157 443,152 443,162" fill="#819baa"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="28" y="92" width="154" height="132" rx="18" fill="#fff7ed" stroke="#eccda9" stroke-width="1.4"/>
+  </g>
+  <text x="48" y="119" fill="#8a5a2d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Düz Dosya</text>
+  <rect x="48" y="132" width="111" height="57" rx="7" fill="#ffffff" stroke="#efd8bd"/>
+  <path d="M48 146h111M48 160h111M48 174h111M78 132v57M120 132v57" stroke="#eedbc4" stroke-width="1"/>
+  <text x="54" y="143" fill="#a16b3d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ad</text>
+  <text x="84" y="143" fill="#a16b3d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Adres</text>
+  <text x="125" y="143" fill="#a16b3d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sipariş</text>
+  <text x="54" y="157" fill="#8e806f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ayşe</text>
+  <text x="84" y="157" fill="#8e806f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">...</text>
+  <text x="125" y="157" fill="#8e806f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">101</text>
+  <text x="54" y="171" fill="#8e806f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ayşe</text>
+  <text x="84" y="171" fill="#8e806f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">...</text>
+  <text x="125" y="171" fill="#8e806f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">102</text>
+  <text x="48" y="208" fill="#bd7146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tekrar ve çakışma</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="455" y="45" width="157" height="104" rx="17" fill="#eef8ef" stroke="#b8d8ba" stroke-width="1.4"/>
+  </g>
+  <text x="474" y="69" fill="#47784e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kullanıcılar</text>
+  <rect x="473" y="78" width="120" height="51" rx="6" fill="#ffffff" stroke="#d4e8d4"/>
+  <path d="M473 94h120M503 78v51M553 78v51" stroke="#d5e8d5"/>
+  <text x="481" y="90" fill="#52845a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">id</text>
+  <text x="510" y="90" fill="#52845a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">ad</text>
+  <text x="559" y="90" fill="#52845a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">e-posta</text>
+  <text x="481" y="112" fill="#657c68" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">1</text>
+  <text x="510" y="112" fill="#657c68" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ayşe</text>
+  <path d="M435 112h14" stroke="#8cae90" stroke-width="1.5"/>
+  <polygon points="449,112 442,108 442,116" fill="#8cae90"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="455" y="171" width="157" height="105" rx="17" fill="#f3effd" stroke="#cbbce9" stroke-width="1.4"/>
+  </g>
+  <text x="474" y="195" fill="#68518e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Siparişler</text>
+  <rect x="473" y="204" width="120" height="52" rx="6" fill="#ffffff" stroke="#e2daf2"/>
+  <path d="M473 220h120M503 204v52M548 204v52" stroke="#e0d8f0"/>
+  <text x="481" y="216" fill="#735c99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">id</text>
+  <text x="509" y="216" fill="#735c99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">kullanıcı</text>
+  <text x="555" y="216" fill="#735c99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">tutar</text>
+  <text x="481" y="239" fill="#766b86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">101</text>
+  <text x="514" y="239" fill="#766b86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">1</text>
+  <text x="556" y="239" fill="#766b86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">450</text>
+  <path d="M435 207h14" stroke="#a896c4" stroke-width="1.5"/>
+  <polygon points="449,207 442,203 442,211" fill="#a896c4"/>
+
+  <path d="M533 149v17" fill="none" stroke="#8b9fa7" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="533,171 529,163 537,163" fill="#8b9fa7"/>
+  <text x="545" y="164" fill="#647a83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">1:N</text>
+
+  <g>
+    <rect x="52" y="250" width="119" height="30" rx="15" fill="#ffe8d5" opacity="0.92"/>
+    <text x="69" y="270" fill="#9b6841" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Manuel kontrol</text>
+    <rect x="236" y="250" width="168" height="30" rx="15" fill="#d8edf9" opacity="0.92"/>
+    <text x="260" y="270" fill="#3f7598" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Anahtar ve kısıt</text>
+    <rect x="466" y="286" width="127" height="24" rx="12" fill="#ddf0df" opacity="0.95"/>
+    <text x="481" y="303" fill="#4d7b54" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">JOIN ile okuma</text>
+  </g>
+</svg>
