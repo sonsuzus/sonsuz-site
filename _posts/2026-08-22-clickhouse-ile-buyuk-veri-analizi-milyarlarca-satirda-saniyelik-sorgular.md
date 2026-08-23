@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - ClickHouse
-  - Büyük Veri
-  - SQL
-  - OLAP
-  - Veri Analizi
+  - clickhouse
+  - büyük veri
+  - sql
+  - olap
+  - veri analizi
+toc: true
 ---
 
 Bir analistin önünde milyarlarca olay kaydı olduğunu düşünün: tıklamalar, siparişler, sensör ölçümleri ve uygulama logları… Klasik satır tabanlı veritabanlarında bu tabloyu taramak bazen kahve molası gerektirir. ClickHouse ise analitik iş yükleri için tasarlanmış sütun tabanlı mimarisiyle, doğru veri modelinde bu molayı birkaç saniyelik bekleyişe dönüştürür. Sırrı yalnızca “hızlı SQL” değildir; veriyi diskten nasıl okuduğu, nasıl sıkıştırdığı ve sorguyu paralel nasıl yürüttüğüdür.

@@ -8,6 +8,7 @@ tags:
   - veri yapıları
   - algoritmalar
   - link-cut tree
+toc: true
 ---
 
 Bir ağacın kenarlarını çalışma anında ekleyip silmek, ardından iki düğüm arasındaki yolun toplamını saniyeler içinde sormak ilk bakışta masum görünür. Ancak klasik DFS, BFS veya sabit köklenmiş ağır-hafif ayrıştırması bu dünyada zorlanır. Link-Cut Tree (LCT), dinamik ormanlar üzerinde bağlantı, yol sorgusu ve kök değiştirme işlemlerini amortize olarak $O(\log n)$ sürede gerçekleştiren gelişmiş bir veri yapısıdır.

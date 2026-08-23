@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Turtle Modülü ve Döngü Yapısı</text>
+
+  <!-- Merkez: Turtle Modülü -->
+  <rect x="245" y="50" width="150" height="45" rx="10" fill="#a8d8ea" filter="url(#shadow)"/>
+  <text x="320" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a5276">Turtle Modülü</text>
+
+  <!-- Sol üst: Ekran -->
+  <rect x="40" y="50" width="130" height="40" rx="8" fill="#d5f5e3" filter="url(#shadow)"/>
+  <text x="105" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e8449">Ekran (Pencere)</text>
+
+  <!-- Sol alt: Kaplumbağa Nesnesi -->
+  <rect x="40" y="130" width="130" height="40" rx="8" fill="#fdebd0" filter="url(#shadow)"/>
+  <text x="105" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a04000">Kaplumbağa Nesnesi</text>
+
+  <!-- Sağ üst: Yöntemler -->
+  <rect x="470" y="50" width="130" height="40" rx="8" fill="#e8daef" filter="url(#shadow)"/>
+  <text x="535" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c3483">Yöntemler</text>
+
+  <!-- Sağ alt: For Döngüsü -->
+  <rect x="470" y="130" width="130" height="40" rx="8" fill="#fadbd8" filter="url(#shadow)"/>
+  <text x="535" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#922b21">For Döngüsü</text>
+
+  <!-- Alt: Çizim Alanı -->
+  <rect x="220" y="200" width="200" height="40" rx="8" fill="#d6dbdf" filter="url(#shadow)"/>
+  <text x="320" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Çizim (Kanvas)</text>
+
+  <!-- Oklar: Merkezden dışa -->
+  <!-- Ekran -->
+  <path d="M245 70 L170 70" stroke="#1e8449" stroke-width="2" fill="none"/>
+  <polygon points="170,65 182,70 170,75" fill="#1e8449"/>
+
+  <!-- Kaplumbağa -->
+  <path d="M245 90 L170 145" stroke="#a04000" stroke-width="2" fill="none"/>
+  <polygon points="175,140 168,152 182,147" fill="#a04000"/>
+
+  <!-- Yöntemler -->
+  <path d="M395 70 L470 70" stroke="#6c3483" stroke-width="2" fill="none"/>
+  <polygon points="470,65 458,70 470,75" fill="#6c3483"/>
+
+  <!-- For Döngüsü -->
+  <path d="M395 90 L470 145" stroke="#922b21" stroke-width="2" fill="none"/>
+  <polygon points="465,140 472,152 458,147" fill="#922b21"/>
+
+  <!-- Alt bağlantılar -->
+  <path d="M105 90 L105 130" stroke="#1e8449" stroke-width="1.5" fill="none"/>
+  <polygon points="100,130 105,138 110,130" fill="#1e8449"/>
+
+  <path d="M535 90 L535 130" stroke="#6c3483" stroke-width="1.5" fill="none"/>
+  <polygon points="530,130 535,138 540,130" fill="#6c3483"/>
+
+  <path d="M170 170 L280 200" stroke="#34495e" stroke-width="1.5" fill="none"/>
+  <polygon points="275,195 283,205 287,193" fill="#34495e"/>
+
+  <path d="M470 170 L360 200" stroke="#34495e" stroke-width="1.5" fill="none"/>
+  <polygon points="365,195 357,205 353,193" fill="#34495e"/>
+
+  <!-- Alt not -->
+  <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">Nesne Durumu: renk, konum, yön, kalem</text>
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">Örnekler: ahmet, tamer, tess</text>
+</svg>

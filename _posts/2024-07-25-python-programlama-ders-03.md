@@ -13,6 +13,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-03/
 toc: true
+image: /img/python-programlama-ders-69.png
 ---
 
 
@@ -20,6 +21,9 @@ toc: true
 ## 3.1 Tanımlar ve kullanım
 
 Programlama bağlamın, bir **[fonksiyon](https://program.sonsuz.us/search.html?q=fonksiyon) (işlev)** belli bir işlemi gerçekleştirmek üzere isimlendirilmiş cümle (komut) serisidir. Bu işlem **fonksiyon tanımında** belirlenmiştir. Python'da, fonksiyon tanımı için sözdizimi şu şekildedir:
+
+![python-programlama-ders-69](/img/python-programlama-ders-69.svg)
+
 ``
 
 ```py

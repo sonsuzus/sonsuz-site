@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - FFT
-  - Polinom Çarpımı
-  - Algoritmalar
+  - fft
+  - polinom çarpımı
+  - algoritmalar
+toc: true
 ---
 
 İki uzun polinomu klasik yöntemle çarpmak, her katsayının diğer tüm katsayılarla buluştuğu pahalı bir danstır. Derecesi milyonlara yaklaşan polinomlarda veya binlerce basamaklı tamsayılarda bu dans hızla kabusa dönüşür. Hızlı Fourier Dönüşümü (FFT), çarpma işlemini farklı bir uzaya taşıyarak problemi akıllıca küçültür: çarpmak yerine değerlendirir, noktasal çarpar ve geri dönüştürür.

@@ -19,6 +19,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-07/
 toc: true
+image: /img/python-programlama-ders-61.png
 ---
 
 
@@ -699,3 +700,6 @@ Tüm doctestlerin başarılı olması gerektiğini unutmayın.
 	2. "%s %s %s" % ('yes', 'no', 'up', 'down')
 
 	3. "%d %f %f" % (3, 3, 'three')
+
+![python-programlama-ders-61](/img/python-programlama-ders-61.svg)
+

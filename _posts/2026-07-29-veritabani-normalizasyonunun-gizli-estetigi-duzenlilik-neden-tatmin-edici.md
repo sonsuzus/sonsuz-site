@@ -9,6 +9,7 @@ tags:
   - normalizasyon
   - yazılım psikolojisi
 toc: true
+image: /img/veritabani-normalizasyonunun-gizli-32.png
 ---
 
 Dağınık bir tabloyu küçük, anlamlı ve birbirine düzgün bağlanan tablolara dönüştürmek yalnızca teknik bir iyileştirme değildir. Tekrarlanan sütunların kaybolması, bağımlılıkların görünür hâle gelmesi ve her bilginin kendine ait bir yere kavuşması zihinsel bir rahatlama yaratır. Peki bu tatmin nereden gelir? Normalizasyonun estetiği; beynimizin örüntüleri tanıma, belirsizliği azaltma ve karmaşık sistemleri daha küçük parçalara ayırma eğilimiyle yakından ilişkilidir.
@@ -26,6 +27,9 @@ Veritabanı normalizasyonu, verileri belirli kurallara göre ayrıştırarak tek
 | Tek büyük tablo | İlk bakışta kolay, zamanla yorucu | Tekrar ve tutarsızlık |
 | Normalize edilmiş yapı | Sınırları belirgin, öngörülebilir | Daha güvenli güncelleme |
 | Aşırı normalizasyon | Fazla parçalı, takip etmesi zor | Çok sayıda JOIN işlemi |
+
+![veritabani-normalizasyonunun-gizli-32](/img/veritabani-normalizasyonunun-gizli-32.svg)
+
 
 Bu karşılaştırma önemli bir gerçeği gösterir: Estetik, mutlak sadelikten değil, **doğru miktarda düzenlenmiş karmaşıklıktan** doğar.
 

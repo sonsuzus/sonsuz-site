@@ -5,10 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Raft
-  - Dağıtık Sistemler
-  - Konsensüs
-  - Lider Seçimi
+  - raft
+  - dağıtık sistemler
+  - konsensüs
+  - lider seçimi
+toc: true
 ---
 
 Dağıtık sistemlerde aynı veriyi birden fazla makinede tutmak harikadır; tek bir sunucu bozulduğunda sistem ayakta kalır. Fakat işin zor kısmı şudur: Ağ gecikebilir, makineler sessizce kapanabilir ve iki sunucu aynı anda farklı şeylerin doğru olduğuna inanabilir. Raft, bu kaosu yönetmek için tasarlanmış, anlaşılabilirliği önceleyen bir konsensüs algoritmasıdır. Temel hedefi, tüm sağlıklı düğümlerin işlemleri aynı sırayla uygulamasını sağlamaktır.

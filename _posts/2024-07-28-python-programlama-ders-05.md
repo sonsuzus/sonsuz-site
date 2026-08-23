@@ -17,6 +17,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-05/
 toc: true
+image: /img/python-programlama-ders-45.png
 ---
 
 
@@ -24,6 +25,9 @@ toc: true
 ## 5.1 Geri dönüş değerleri
 
 Şimdiye kadar kullandığımız `abs`, `pow` ve `max` benzeri içsel olarak tanımlı fonksiyonlar sonuç ürettiler, yani bir değer döndürdüler. Her bu fonksiyonları çağırmamız bir değer üretmektedir, bu üretilen değeri genellikle bir değişkene atama veya bir deyimin parçası haline getirdik.
+
+![python-programlama-ders-45](/img/python-programlama-ders-45.svg)
+
 ``
 
 ```py

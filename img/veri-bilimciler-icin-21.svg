@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#357ABD"/>
+    </linearGradient>
+    <linearGradient id="libGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6BBF6A"/>
+      <stop offset="100%" stop-color="#4CAF50"/>
+    </linearGradient>
+    <linearGradient id="libGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB74D"/>
+      <stop offset="100%" stop-color="#F57C00"/>
+    </linearGradient>
+    <linearGradient id="libGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64B5F6"/>
+      <stop offset="100%" stop-color="#1E88E5"/>
+    </linearGradient>
+    <linearGradient id="libGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BA68C8"/>
+      <stop offset="100%" stop-color="#8E24AA"/>
+    </linearGradient>
+    <linearGradient id="toolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC7063"/>
+      <stop offset="100%" stop-color="#CB4335"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">Python Veri Bilimi Ekosistemi</text>
+
+  <!-- Merkez: Python Çekirdeği -->
+  <ellipse cx="320" cy="160" rx="62" ry="52" fill="url(#coreGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">Python</text>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#D6EAF8">Çekirdek</text>
+
+  <!-- Etrafındaki halka: Kütüphaneler -->
+  <!-- Numpy -->
+  <rect x="180" y="52" width="86" height="38" rx="10" fill="url(#libGrad1)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="223" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">Numpy</text>
+
+  <!-- Pandas -->
+  <rect x="374" y="52" width="86" height="38" rx="10" fill="url(#libGrad2)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="417" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">Pandas</text>
+
+  <!-- Matplotlib -->
+  <rect x="180" y="230" width="86" height="38" rx="10" fill="url(#libGrad3)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="223" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">Matplotlib</text>
+
+  <!-- SciPy -->
+  <rect x="374" y="230" width="86" height="38" rx="10" fill="url(#libGrad4)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="417" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">SciPy</text>
+
+  <!-- Araçlar -->
+  <!-- Jupyter -->
+  <rect x="52" y="140" width="90" height="38" rx="10" fill="url(#toolGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="97" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">Jupyter</text>
+
+  <!-- IDE -->
+  <rect x="498" y="140" width="90" height="38" rx="10" fill="url(#toolGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="543" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">IDE</text>
+
+  <!-- Bağlantılar (Oklar) -->
+  <!-- Numpy bağlantısı -->
+  <path d="M 260 78 Q 290 100 300 120" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <polygon points="300,124 296,114 304,114" fill="#4CAF50"/>
+
+  <!-- Pandas bağlantısı -->
+  <path d="M 380 78 Q 350 100 340 120" stroke="#F57C00" stroke-width="2" fill="none"/>
+  <polygon points="340,124 336,114 344,114" fill="#F57C00"/>
+
+  <!-- Matplotlib bağlantısı -->
+  <path d="M 260 242 Q 290 220 300 200" stroke="#1E88E5" stroke-width="2" fill="none"/>
+  <polygon points="300,196 304,206 296,206" fill="#1E88E5"/>
+
+  <!-- SciPy bağlantısı -->
+  <path d="M 380 242 Q 350 220 340 200" stroke="#8E24AA" stroke-width="2" fill="none"/>
+  <polygon points="340,196 344,206 336,206" fill="#8E24AA"/>
+
+  <!-- Jupyter bağlantısı -->
+  <path d="M 142 155 Q 180 155 250 155" stroke="#CB4335" stroke-width="2" fill="none"/>
+  <polygon points="254,155 244,151 244,159" fill="#CB4335"/>
+
+  <!-- IDE bağlantısı -->
+  <path d="M 498 155 Q 460 155 390 155" stroke="#CB4335" stroke-width="2" fill="none"/>
+  <polygon points="386,155 396,151 396,159" fill="#CB4335"/>
+
+  <!-- Alt açıklama -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7F8C8D">Açık kaynak araçlar ve kütüphaneler</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000022"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez: Fonksiyon Tanımı -->
+  <rect x="245" y="120" width="150" height="60" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="143" text-anchor="middle" font-weight="bold" fill="#1e3a8a">Fonksiyon Tanımı</text>
+  <text x="320" y="160" text-anchor="middle" fill="#1e40af">def isim(parametreler):</text>
+  <text x="320" y="174" text-anchor="middle" fill="#1e40af">gövde</text>
+
+  <!-- Sol Üst: Fonksiyon Çağrısı -->
+  <rect x="60" y="50" width="140" height="55" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="130" y="73" text-anchor="middle" font-weight="bold" fill="#14532d">Fonksiyon Çağrısı</text>
+  <text x="130" y="90" text-anchor="middle" fill="#166534">isim(argümanlar)</text>
+
+  <!-- Sol Alt: Parametreler -->
+  <rect x="60" y="220" width="140" height="55" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="130" y="243" text-anchor="middle" font-weight="bold" fill="#78350f">Parametreler</text>
+  <text x="130" y="260" text-anchor="middle" fill="#92400e">değer aktarımı</text>
+
+  <!-- Sağ Üst: Yürütme Akışı -->
+  <rect x="440" y="50" width="140" height="55" rx="10" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="510" y="73" text-anchor="middle" font-weight="bold" fill="#831843">Yürütme Akışı</text>
+  <text x="510" y="90" text-anchor="middle" fill="#9d174d">çağrı → gövde → dönüş</text>
+
+  <!-- Sağ Alt: Kompozisyon -->
+  <rect x="440" y="220" width="140" height="55" rx="10" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="510" y="243" text-anchor="middle" font-weight="bold" fill="#4c1d95">Kompozisyon</text>
+  <text x="510" y="260" text-anchor="middle" fill="#5b21b6">fonksiyon içinde fonksiyon</text>
+
+  <!-- Oklar -->
+  <!-- Çağrı → Tanım -->
+  <path d="M200 77 L240 135" fill="none" stroke="#64748b" stroke-width="1.8"/>
+  <polygon points="240,135 232,126 233,137" fill="#64748b"/>
+
+  <!-- Tanım → Parametreler -->
+  <path d="M290 180 L200 238" fill="none" stroke="#64748b" stroke-width="1.8"/>
+  <polygon points="200,238 210,233 202,226" fill="#64748b"/>
+
+  <!-- Tanım → Akış -->
+  <path d="M395 135 L435 77" fill="none" stroke="#64748b" stroke-width="1.8"/>
+  <polygon points="435,77 425,80 432,88" fill="#64748b"/>
+
+  <!-- Tanım → Kompozisyon -->
+  <path d="M350 180 L440 238" fill="none" stroke="#64748b" stroke-width="1.8"/>
+  <polygon points="440,238 430,233 432,243" fill="#64748b"/>
+
+  <!-- Alt Bilgi -->
+  <text x="320" y="305" text-anchor="middle" fill="#475569" font-size="11">Python Ders 3: Fonksiyonlar — tanım, çağrı, parametre, akış ve kompozisyon</text>
+</svg>

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="etl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6dcff"/>
+      <stop offset="100%" stop-color="#d3ecff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52677e" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52677e" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="92" cy="43" r="65" fill="#dff3f4" opacity="0.45"/>
+  <circle cx="576" cy="272" r="88" fill="#e8e0ff" opacity="0.4"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38506a">GÜVENİLİR VERİ BORU HATTI</text>
+  <text x="28" y="50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708399">Ham veriden analize hazır veriye</text>
+
+  <!-- Source group -->
+  <rect x="28" y="79" width="135" height="189" rx="18" fill="#f9fcff" stroke="#d7e5ef" filter="url(#shadow)"/>
+  <text x="47" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416079">KAYNAKLAR</text>
+
+  <rect x="45" y="120" width="101" height="34" rx="10" fill="#d8ebff" filter="url(#softShadow)"/>
+  <ellipse cx="62" cy="132" rx="7" ry="3" fill="#5689b7"/>
+  <path d="M55 132v8c0 2 14 4 14 0v-8" fill="none" stroke="#5689b7" stroke-width="1.5"/>
+  <text x="78" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355774">Siparişler</text>
+
+  <rect x="45" y="166" width="101" height="34" rx="10" fill="#dff5e7" filter="url(#softShadow)"/>
+  <path d="M56 183h13M59 178h7M59 188h7" stroke="#4c9671" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="78" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356b52">Reklam API</text>
+
+  <rect x="45" y="212" width="101" height="34" rx="10" fill="#fff0d8" filter="url(#softShadow)"/>
+  <path d="M57 222h10l4 4v10H57z" fill="none" stroke="#b9823c" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M67 222v5h4" fill="none" stroke="#b9823c" stroke-width="1.5"/>
+  <text x="78" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805d32">JSON yorumlar</text>
+
+  <!-- incoming paths -->
+  <path d="M163 137H196" fill="none" stroke="#7b9db8" stroke-width="2"/>
+  <polygon points="202,137 194,132 194,142" fill="#7b9db8"/>
+  <path d="M163 183H196" fill="none" stroke="#7b9db8" stroke-width="2"/>
+  <polygon points="202,183 194,178 194,188" fill="#7b9db8"/>
+  <path d="M163 229H196" fill="none" stroke="#7b9db8" stroke-width="2"/>
+  <polygon points="202,229 194,224 194,234" fill="#7b9db8"/>
+
+  <!-- ETL -->
+  <rect x="202" y="75" width="211" height="198" rx="22" fill="url(#etl)" stroke="#c8d5ed" filter="url(#shadow)"/>
+  <text x="282" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a5785">ETL MOTORU</text>
+
+  <rect x="223" y="119" width="169" height="37" rx="11" fill="#fafcff" filter="url(#softShadow)"/>
+  <circle cx="243" cy="137" r="10" fill="#c9e5ff"/>
+  <path d="M239 137h8M244 132v10" stroke="#4583b5" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="264" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41637e">ÇEK</text>
+  <text x="302" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869b">artımlı veri</text>
+
+  <path d="M307 156v13" fill="none" stroke="#7d8ba6" stroke-width="2"/>
+  <polygon points="307,175 302,167 312,167" fill="#7d8ba6"/>
+
+  <rect x="223" y="177" width="169" height="37" rx="11" fill="#fafcff" filter="url(#softShadow)"/>
+  <circle cx="243" cy="195" r="10" fill="#e3d6ff"/>
+  <path d="M238 190l10 10M248 190l-10 10" stroke="#7659ae" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="264" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d4a8a">DÖNÜŞTÜR</text>
+  <text x="337" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869b">temizle</text>
+
+  <path d="M307 214v13" fill="none" stroke="#7d8ba6" stroke-width="2"/>
+  <polygon points="307,233 302,225 312,225" fill="#7d8ba6"/>
+
+  <rect x="223" y="235" width="169" height="23" rx="9" fill="#f9fcff" filter="url(#softShadow)"/>
+  <text x="243" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c7b62">YÜKLE</text>
+  <text x="290" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869b">upsert ve kayıt</text>
+
+  <!-- Quality shield -->
+  <rect x="245" y="278" width="125" height="27" rx="11" fill="#d9f3e4" stroke="#bfe5d0" filter="url(#softShadow)"/>
+  <path d="M260 284l6-3 6 3v6c0 5-6 8-6 8s-6-3-6-8z" fill="#54a579"/>
+  <path d="M263 289l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="280" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39755a">Kalite kontrolü</text>
+
+  <!-- output -->
+  <path d="M413 196H449" fill="none" stroke="#6e91aa" stroke-width="2.3"/>
+  <polygon points="455,196 447,191 447,201" fill="#6e91aa"/>
+
+  <rect x="455" y="137" width="157" height="119" rx="19" fill="#fbfdff" stroke="#d4e1eb" filter="url(#shadow)"/>
+  <text x="477" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#406079">GÜVENİLİR HEDEF</text>
+
+  <rect x="476" y="180" width="115" height="29" rx="9" fill="#dcefff"/>
+  <ellipse cx="493" cy="188" rx="7" ry="3" fill="#538bbb"/>
+  <path d="M486 188v9c0 3 14 4 14 0v-9" fill="none" stroke="#538bbb" stroke-width="1.4"/>
+  <text x="511" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365c79">Veri ambarı</text>
+
+  <rect x="476" y="217" width="115" height="24" rx="8" fill="#e2f5e9"/>
+  <circle cx="492" cy="229" r="5" fill="#55a779"/>
+  <path d="M490 229l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.3"/>
+  <text x="505" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397257">Analize hazır</text>
+
+  <!-- exception branch -->
+  <path d="M392 195h25v71h17" fill="none" stroke="#d39769" stroke-width="1.7" stroke-dasharray="4 4"/>
+  <polygon points="440,266 432,261 432,271" fill="#d39769"/>
+  <rect x="441" y="252" width="117" height="28" rx="10" fill="#fff0e5" stroke="#f0d3be" filter="url(#softShadow)"/>
+  <path d="M458 259l7 12h-14z" fill="#d98c56"/>
+  <text x="456" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#895836">Hata kuyruğu</text>
+
+  <!-- monitoring -->
+  <path d="M525 137V106H460" fill="none" stroke="#83ae9b" stroke-width="1.7" stroke-dasharray="4 4"/>
+  <polygon points="454,106 462,101 462,111" fill="#83ae9b"/>
+  <rect x="438" y="77" width="151" height="29" rx="11" fill="#e0f4e9" stroke="#c6e7d4" filter="url(#softShadow)"/>
+  <circle cx="456" cy="91" r="7" fill="#6db58b"/>
+  <path d="M453 91h6M456 88v6" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
+  <text x="470" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39745a">İzleme ve uyarı</text>
+</svg>

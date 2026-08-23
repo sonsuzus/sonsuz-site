@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Apache Arrow
-  - Veri Mühendisliği
-  - Analitik
-  - Python
-  - Sütun Bazlı Veri
+  - apache arrow
+  - veri mühendisliği
+  - analitik
+  - python
+  - sütun bazlı veri
+toc: true
 ---
 
 Modern veri ekiplerinde aynı tablo; Python, SQL motorları, veri gölleri ve makine öğrenmesi araçları arasında sürekli taşınır. Sorun şu ki bu araçların her biri veriyi farklı bellek düzenleriyle temsil edebilir. Apache Arrow, bu dönüşüm maliyetini azaltmak için tasarlanmış, dil bağımsız ve bellek içi sütun bazlı bir veri formatıdır. Amaç yalnızca dosya okumayı hızlandırmak değil; analitik araçların veriyi kopyalamadan veya çok az kopyalayarak paylaşabilmesini sağlamaktır.

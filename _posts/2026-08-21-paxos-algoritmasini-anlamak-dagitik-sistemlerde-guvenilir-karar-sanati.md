@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Paxos
-  - Dağıtık Sistemler
-  - Hata Toleransı
+  - paxos
+  - dağıtık sistemler
+  - hata toleransı
 ---
 
 Dağıtık sistemlerde en zor soru çoğu zaman “veri nerede?” değil, “herkes aynı kararı verdi mi?” sorusudur. Ağ gecikebilir, makineler kapanabilir ve mesajlar kaybolabilir; buna rağmen banka bakiyesinin, lider seçiminin ya da sipariş durumunun tek bir doğru geçmişi olmalıdır. Paxos, düğümlerin çökebildiği bu kaotik ortamda ortak bir değerde uzlaşmayı sağlayan klasik consensus algoritmasıdır.

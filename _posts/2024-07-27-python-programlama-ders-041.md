@@ -15,6 +15,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-041/
 toc: true
+image: /img/python-programlama-ders-24.png
 ---
 
 Kendi programlarımız içinde kullanabileceğimiz Python modülleri, oldukça
@@ -546,6 +547,9 @@ sonlandırma koşulu
     :   | `Ocak yılın bir ayıdır.`
         | `Şubat yılın bir ayıdır.`
         | \...
+
+![python-programlama-ders-24](/img/python-programlama-ders-24.svg)
+
 
 4. `tamer` kaplumbağınız yüzünü doğuya doğru 0 derecee ile çevirmiş
     olsun. Eğer `tamer.left(3645)` komutu verirsek, `tamer` ne yapar ve

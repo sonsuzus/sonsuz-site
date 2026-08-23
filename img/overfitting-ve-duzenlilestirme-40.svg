@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="modelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8e9ff"/>
+      <stop offset="100%" stop-color="#c9f0dc"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#54718a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="122" fill="#d7edff" opacity="0.24"/>
+  <circle cx="320" cy="160" r="91" fill="#e4f5dc" opacity="0.32"/>
+
+  <g stroke="#8eabc0" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M169 85 C205 98 220 112 244 129"/>
+    <path d="M169 235 C205 220 220 207 244 190"/>
+    <path d="M471 85 C435 98 420 112 396 129"/>
+    <path d="M471 235 C435 220 420 207 396 190"/>
+  </g>
+
+  <g fill="#8eabc0">
+    <polygon points="244,129 235,126 239,135"/>
+    <polygon points="244,190 239,184 235,193"/>
+    <polygon points="396,129 401,135 405,126"/>
+    <polygon points="396,190 405,193 401,184"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="42" y="51" width="128" height="68" rx="16" fill="#fff2d9"/>
+    <rect x="42" y="201" width="128" height="68" rx="16" fill="#ffe4e8"/>
+    <rect x="470" y="51" width="128" height="68" rx="16" fill="#e8defb"/>
+    <rect x="470" y="201" width="128" height="68" rx="16" fill="#d9f2ed"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#354b5d" text-anchor="middle">
+    <text x="106" y="76" font-weight="700">L1 ve L2</text>
+    <text x="106" y="96">Ağırlık freni</text>
+    <path d="M74 105 H138" stroke="#dbaf62" stroke-width="2"/>
+    <circle cx="83" cy="105" r="4" fill="#dbaf62"/>
+    <circle cx="106" cy="105" r="4" fill="#dbaf62"/>
+    <circle cx="129" cy="105" r="4" fill="#dbaf62"/>
+
+    <text x="106" y="226" font-weight="700">Dropout</text>
+    <text x="106" y="246">Rastgele kapatma</text>
+    <circle cx="78" cy="255" r="5" fill="#e8909e"/>
+    <circle cx="96" cy="255" r="5" fill="#e8909e" opacity="0.3"/>
+    <circle cx="114" cy="255" r="5" fill="#e8909e"/>
+    <circle cx="132" cy="255" r="5" fill="#e8909e"/>
+
+    <text x="534" y="76" font-weight="700">Erken durdurma</text>
+    <text x="534" y="96">Doğrulama takibi</text>
+    <path d="M496 106 H572" stroke="#9b82c7" stroke-width="2"/>
+    <path d="M506 106 L520 96 L534 101 L548 82" stroke="#9b82c7" stroke-width="2.5" fill="none"/>
+    <path d="M548 82 L548 104" stroke="#df7185" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <text x="534" y="226" font-weight="700">Çeşitli veri</text>
+    <text x="534" y="246">Genelleme</text>
+    <circle cx="508" cy="255" r="5" fill="#61b89c"/>
+    <rect x="522" y="250" width="11" height="11" rx="3" fill="#61b89c"/>
+    <polygon points="548,260 555,249 562,260" fill="#61b89c"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="244" y="104" width="152" height="112" rx="25" fill="url(#modelGrad)" stroke="#9fc6bd" stroke-width="1.2"/>
+    <rect x="264" y="122" width="112" height="46" rx="14" fill="#ffffff" opacity="0.76"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="320" y="143" fill="#294d62" font-weight="700">Model</text>
+    <text x="320" y="159" fill="#476778">Dengeli öğrenme</text>
+    <text x="320" y="193" fill="#397d67" font-weight="700">Genelleme</text>
+  </g>
+
+  <g stroke="#7393a8" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M244 276 C292 266 349 265 397 276"/>
+  </g>
+  <polygon points="397,276 388,271 390,281" fill="#7393a8"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="188" y="273" width="264" height="35" rx="14" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#415b6b">
+    <text x="205" y="296" font-weight="700">Kayıp:</text>
+    <path d="M253 292 C270 280 287 280 302 292 C319 303 337 302 352 288" stroke="#66a1d0" stroke-width="2.4" fill="none"/>
+    <path d="M358 292 C374 282 388 278 405 285" stroke="#df7588" stroke-width="2.4" fill="none" stroke-dasharray="4 3"/>
+    <text x="418" y="296">doğrulama korunur</text>
+  </g>
+
+  <g opacity="0.55">
+    <circle cx="24" cy="28" r="4" fill="#8fc5dc"/>
+    <circle cx="614" cy="287" r="5" fill="#a6d4a8"/>
+    <circle cx="613" cy="32" r="3" fill="#b9a6dd"/>
+    <circle cx="25" cy="290" r="3" fill="#e5a9af"/>
+  </g>
+</svg>

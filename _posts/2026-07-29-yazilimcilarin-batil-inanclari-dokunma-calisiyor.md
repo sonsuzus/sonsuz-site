@@ -9,6 +9,7 @@ tags:
   - teknik borç
   - antropoloji
 toc: true
+image: /img/yazilimcilarin-batil-inanclari-48.png
 ---
 
 Bir yazılım ekibinde yeterince uzun süre kalırsanız şu cümleyi mutlaka duyarsınız: “O satırı silmeyin; neden çalıştığını kimse bilmiyor.” Bu uyarı bazen yorum satırında, bazen ekip sohbetinde, bazen de yıllardır şirkette çalışan bir geliştiricinin ciddi bakışlarında yaşar. Kod artık yalnızca teknik bir yapı değildir; etrafında tabular, ritüeller ve kuşaktan kuşağa aktarılan efsaneler oluşmuştur.
@@ -66,3 +67,6 @@ Sağlıklı ekipler kişiyi küçümsemek yerine bilgisini görünür kılar. Ol
 “Dokunmayın” uyarısıyla karşılaştığınızda kodu kahramanca silmek de başka bir irrasyonel ritüeldir. Önce geçmiş olayları araştırın, log ve metrik ekleyin, davranışı testlerle sabitleyin ve değişikliği kademeli yayımlayın. Amaç ekip folklorunu yok etmek değil, içindeki teknik sinyali ayıklamaktır.
 
 Sonuçta yazılımcı batıl inançları cehaletten çok belirsizliğin ürünüdür. İyi mühendislik, insanlara “korkmayın” demekle yetinmez; korkunun yerine deney, ölçüm ve geri dönüş planı koyar. Böylece kutsal kod sıradan koda, şaman bilgisi dokümantasyona, gizemli ritüeller de anlaşılır süreçlere dönüşür.
+
+![yazilimcilarin-batil-inanclari-48](/img/yazilimcilarin-batil-inanclari-48.svg)
+

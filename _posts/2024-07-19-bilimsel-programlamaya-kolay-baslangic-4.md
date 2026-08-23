@@ -12,12 +12,16 @@ tags:
   - scipy
   - yörünge
   - integral
+image: /img/bilimsel-programlamaya-kolay-28.png
 ---
 
 
 [Yazı dizimizin bir önceki bölümünde](https://program.sonsuz.us/posts/bilimsel-programlamaya-kolay-baslangic-3)  `numpy` kullanımına basit bir giriş yapmıştık, şimdi ise daha ileri matematiksel yöntemleri içeren `scipy`‘a bir göz atalım. Yapmaya çalıştığımız “ivmenin nümerik integrasyonu” işi, aslında bir “ikinci derece diferansiyel denklem çözümü” ile eşdeğer. Konumun zamana göre ikinci türevi olan ivme diferansiyel denklemini analitik olarak çözebilseydik, konum ve hız vektörlerinin geçmiş ve gelecekteki tüm değerlerini bulabilirdik. Lakin bunu analitik olarak çözmeye hiç niyetimiz yok – işi bilgisayar yapabilecekken biz niye uğraşalım ki?
 
 `scipy` bu tür diferansiyel denklemleri çözmek için bize `integrate` paketi altında `solve_ivp` adlı kütüphaneyi sunuyor. Bu kütüphane altındaki metodlarla diferansiyel denklemleri sayısal olarak kolayca çözebiliriz. Ancak öncelikle denklemleri bu yöntemlerin anlayacağı halde yazmamız gerek, diğer bir deyişle ikinci derece diferansiyel denklemi iki tane birinci derece diferansiyel denklem haline getirmemiz gerekiyor. Öncelikle kullanacağımız ara değişkenleri belirleyelim:
+
+
+![bilimsel-programlamaya-kolay-28](/img/bilimsel-programlamaya-kolay-28.svg)
 
 ``
 

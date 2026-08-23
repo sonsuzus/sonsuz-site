@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Programlama Yolu</text>
+
+  <!-- Merkez kavram -->
+  <rect x="240" y="55" width="160" height="45" rx="10" fill="#6c9bcf" filter="url(#shadow)"/>
+  <text x="320" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Problem Çözme</text>
+
+  <!-- Ana dallar -->
+  <!-- Sol üst: Diller -->
+  <rect x="40" y="55" width="140" height="40" rx="8" fill="#a8d8ea" filter="url(#shadowLight)"/>
+  <text x="110" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5276">Diller</text>
+
+  <rect x="40" y="110" width="140" height="35" rx="6" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="110" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Yüksek Seviyeli</text>
+
+  <rect x="40" y="155" width="140" height="35" rx="6" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="110" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Düşük Seviyeli</text>
+
+  <!-- Sol alt: Çalıştırma -->
+  <rect x="40" y="210" width="140" height="40" rx="8" fill="#a8d8ea" filter="url(#shadowLight)"/>
+  <text x="110" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5276">Çalıştırma</text>
+
+  <rect x="40" y="260" width="65" height="35" rx="6" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="72" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Yorumlama</text>
+
+  <rect x="115" y="260" width="65" height="35" rx="6" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="147" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Derleme</text>
+
+  <!-- Sağ üst: Program -->
+  <rect x="460" y="55" width="140" height="40" rx="8" fill="#a8d8ea" filter="url(#shadowLight)"/>
+  <text x="530" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5276">Program</text>
+
+  <rect x="460" y="110" width="140" height="35" rx="6" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="530" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Girdi / Çıktı</text>
+
+  <rect x="460" y="155" width="140" height="35" rx="6" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="530" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Matematik</text>
+
+  <!-- Sağ alt: Hatalar -->
+  <rect x="460" y="210" width="140" height="40" rx="8" fill="#a8d8ea" filter="url(#shadowLight)"/>
+  <text x="530" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5276">Hata Ayıklama</text>
+
+  <rect x="460" y="260" width="65" height="35" rx="6" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="492" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Sözdizim</text>
+
+  <rect x="535" y="260" width="65" height="35" rx="6" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="567" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Anlambilim</text>
+
+  <!-- Bağlantı çizgileri (oklar manuel) -->
+  <!-- Merkezden sol üst -->
+  <path d="M240 75 L180 75" stroke="#5b8db8" stroke-width="2" fill="none"/>
+  <polygon points="180,70 190,75 180,80" fill="#5b8db8"/>
+
+  <!-- Merkezden sağ üst -->
+  <path d="M400 75 L460 75" stroke="#5b8db8" stroke-width="2" fill="none"/>
+  <polygon points="460,70 450,75 460,80" fill="#5b8db8"/>
+
+  <!-- Merkezden sol alt -->
+  <path d="M240 100 L110 210" stroke="#5b8db8" stroke-width="2" fill="none"/>
+  <polygon points="110,210 112,200 118,208" fill="#5b8db8"/>
+
+  <!-- Merkezden sağ alt -->
+  <path d="M400 100 L530 210" stroke="#5b8db8" stroke-width="2" fill="none"/>
+  <polygon points="530,210 522,208 528,200" fill="#5b8db8"/>
+
+  <!-- Sol üst alt bağlantılar -->
+  <path d="M110 95 L110 110" stroke="#7fa8c9" stroke-width="1.5" fill="none"/>
+  <polygon points="105,110 110,116 115,110" fill="#7fa8c9"/>
+
+  <path d="M110 145 L110 155" stroke="#7fa8c9" stroke-width="1.5" fill="none"/>
+  <polygon points="105,155 110,161 115,155" fill="#7fa8c9"/>
+
+  <!-- Sol alt bağlantılar -->
+  <path d="M110 250 L72 260" stroke="#7fa8c9" stroke-width="1.5" fill="none"/>
+  <polygon points="72,260 78,256 78,264" fill="#7fa8c9"/>
+
+  <path d="M110 250 L147 260" stroke="#7fa8c9" stroke-width="1.5" fill="none"/>
+  <polygon points="147,260 140,256 140,264" fill="#7fa8c9"/>
+
+  <!-- Sağ üst alt bağlantılar -->
+  <path d="M530 95 L530 110" stroke="#7fa8c9" stroke-width="1.5" fill="none"/>
+  <polygon points="525,110 530,116 535,110" fill="#7fa8c9"/>
+
+  <path d="M530 145 L530 155" stroke="#7fa8c9" stroke-width="1.5" fill="none"/>
+  <polygon points="525,155 530,161 535,155" fill="#7fa8c9"/>
+
+  <!-- Sağ alt bağlantılar -->
+  <path d="M530 250 L492 260" stroke="#7fa8c9" stroke-width="1.5" fill="none"/>
+  <polygon points="492,260 498,256 498,264" fill="#7fa8c9"/>
+
+  <path d="M530 250 L567 260" stroke="#7fa8c9" stroke-width="1.5" fill="none"/>
+  <polygon points="567,260 560,256 560,264" fill="#7fa8c9"/>
+
+  <!-- Python vurgusu -->
+  <rect x="240" y="120" width="160" height="35" rx="8" fill="#e8daef" filter="url(#shadowLight)"/>
+  <text x="320" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6c3483">Python</text>
+
+  <path d="M320 100 L320 120" stroke="#8e7cc3" stroke-width="2" fill="none"/>
+  <polygon points="315,120 320,126 325,120" fill="#8e7cc3"/>
+
+  <!-- Python alt bağlantıları -->
+  <rect x="240" y="175" width="75" height="30" rx="6" fill="#f4ecf7" filter="url(#shadowLight)"/>
+  <text x="277" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a235a">Kabuk</text>
+
+  <rect x="325" y="175" width="75" height="30" rx="6" fill="#f4ecf7" filter="url(#shadowLight)"/>
+  <text x="362" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a235a">Betik</text>
+
+  <path d="M277 155 L277 175" stroke="#a58ec6" stroke-width="1.5" fill="none"/>
+  <polygon points="272,175 277,181 282,175" fill="#a58ec6"/>
+
+  <path d="M362 155 L362 175" stroke="#a58ec6" stroke-width="1.5" fill="none"/>
+  <polygon points="357,175 362,181 367,175" fill="#a58ec6"/>
+
+  <!-- Alt not -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d" font-style="italic">Bilgisayar bilimci gibi düşünme</text>
+</svg>

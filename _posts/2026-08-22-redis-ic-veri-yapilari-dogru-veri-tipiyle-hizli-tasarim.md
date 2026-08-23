@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Redis
-  - Veri Yapıları
-  - Performans
+  - redis
+  - veri yapıları
+  - performans
+toc: true
 ---
 
 Redis, çoğu zaman yalnızca "anahtar-değer önbelleği" olarak tanıtılır; ancak bu tanım onun asıl gücünü biraz saklar. Redis, bellekte yaşayan ve her anahtar altında farklı veri yapıları sunan bir veri sunucusudur. Doğru veri tipini seçmek, hem komut sayısını hem de bellek tüketimini azaltır. Daha da önemlisi, veriye erişim maliyetini uygulamanın kullanım senaryosuna uygun hale getirir.

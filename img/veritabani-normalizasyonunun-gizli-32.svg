@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="center" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6f1ff"/>
+      <stop offset="100%" stop-color="#d9f1e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6c8499" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6c8499" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="321" cy="160" r="119" fill="#ffffff" opacity="0.36"/>
+  <circle cx="321" cy="160" r="90" fill="none" stroke="#c8deeb" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456174">Dağınık veri</text>
+  <text x="511" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456174">Anlaşılır yapı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="48" width="164" height="204" rx="16" fill="#fff7ed" stroke="#f0cfad"/>
+    <rect x="47" y="65" width="134" height="29" rx="8" fill="#f6b978"/>
+    <text x="59" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#70451f">Siparişler</text>
+
+    <rect x="47" y="104" width="134" height="27" rx="6" fill="#ffffff"/>
+    <text x="57" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62717a">Sipariş No</text>
+    <rect x="47" y="136" width="134" height="27" rx="6" fill="#fff0e1"/>
+    <text x="57" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a5c24">Müşteri Adı ×</text>
+    <rect x="47" y="168" width="134" height="27" rx="6" fill="#fff0e1"/>
+    <text x="57" y="186" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a5c24">Adres ×</text>
+    <rect x="47" y="200" width="134" height="27" rx="6" fill="#fff0e1"/>
+    <text x="57" y="218" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a5c24">Ürün ×</text>
+    <text x="48" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b06b2c">Tekrar · belirsizlik</text>
+  </g>
+
+  <path d="M206 150 C228 150 235 150 247 150" fill="none" stroke="#7b9cad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="250,150 241,144 241,156" fill="#7b9cad"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="321" cy="160" r="66" fill="url(#center)" stroke="#a9cfbf" stroke-width="1.5"/>
+    <circle cx="321" cy="160" r="50" fill="#ffffff" opacity="0.56"/>
+    <path d="M294 139 L316 128 L344 139 L344 169 L321 181 L294 169 Z" fill="#78b9a0" opacity="0.18" stroke="#55977f" stroke-width="1.4"/>
+    <path d="M294 139 L321 151 L344 139 M321 151 L321 181" fill="none" stroke="#55977f" stroke-width="1.4"/>
+    <text x="321" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e7262">Normalizasyon</text>
+    <text x="321" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8276">Doğru sınırlar</text>
+  </g>
+
+  <path d="M393 150 C410 150 417 150 431 150" fill="none" stroke="#7b9cad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="434,150 425,144 425,156" fill="#7b9cad"/>
+
+  <g filter="url(#soft)">
+    <rect x="444" y="51" width="164" height="61" rx="13" fill="#e9f1ff" stroke="#bdd3ed"/>
+    <rect x="458" y="64" width="52" height="18" rx="5" fill="#93b9eb"/>
+    <text x="466" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315e92">Müşteri</text>
+    <text x="458" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526f87">ID → Ad, Adres</text>
+
+    <rect x="444" y="130" width="164" height="61" rx="13" fill="#e9f8ef" stroke="#b9ddc9"/>
+    <rect x="458" y="143" width="49" height="18" rx="5" fill="#85c6a3"/>
+    <text x="466" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326c4d">Sipariş</text>
+    <text x="458" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#537968">Sipariş ID, Müşteri ID</text>
+
+    <rect x="444" y="209" width="164" height="61" rx="13" fill="#f3ecff" stroke="#d4c3ef"/>
+    <rect x="458" y="222" width="38" height="18" rx="5" fill="#b69ade"/>
+    <text x="465" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#654986">Ürün</text>
+    <text x="458" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756486">Ürün ID → Bilgi</text>
+  </g>
+
+  <path d="M526 112 L526 126" stroke="#82a7bb" stroke-width="1.8"/>
+  <polygon points="526,130 522,123 530,123" fill="#82a7bb"/>
+  <path d="M526 192 L526 205" stroke="#82a7bb" stroke-width="1.8"/>
+  <polygon points="526,209 522,202 530,202" fill="#82a7bb"/>
+
+  <g filter="url(#soft)">
+    <rect x="212" y="269" width="218" height="32" rx="14" fill="#ffffff" stroke="#d5e4e7"/>
+    <circle cx="231" cy="285" r="6" fill="#77b89d"/>
+    <text x="245" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456674">Tek kaynak · tutarlılık · denge</text>
+  </g>
+</svg>

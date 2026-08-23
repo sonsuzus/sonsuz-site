@@ -21,6 +21,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-08/
 toc: true
+image: /img/python-programlama-ders-53.png
 ---
 
 
@@ -1227,3 +1228,5 @@ Orta: '      Hello, World!      '
 - f-string metodunu kullanarak 3 kişinin 3 sınav notunu ve ortalamasını tablo gibi yazdırınız. (öğrenci isimleri ve sınav notları giriş yapılacak.)
 
 - maketrans ve translate metodları ile bir şifreleme programı yazınız.
+![python-programlama-ders-53](/img/python-programlama-ders-53.svg)
+

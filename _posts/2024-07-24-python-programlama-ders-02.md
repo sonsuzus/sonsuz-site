@@ -23,6 +23,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-02/
 toc: true
+image: /img/python-programlama-ders-50.png
 ---
 
 
@@ -31,6 +32,9 @@ toc: true
 **Değer** programın işlediği temel şeylerden - harf veya rakam gibi - biridir. Şimdiye kadar gördüğümüz değerler `2` (`1 + 1` işleminin sonucu), ve `"Merhaba, Dünya!"`.
 
 Bu değerler farklı **tiplere** aittir: `2` bir *tamsayı (integer)*dır, ve `"Merhaba, Dünya!"` bir *karakter dizisi (string)*dir, çünkü karakterlerden oluşan bir dizidir. Siz (ve yorumlayıcı) karakter dizilerini ayırtedebilir, çünkü tırnak işaretleri arasında yazılmıştır. Şimdilik *sınıf* (class) ve *type* (tür) kelimelerini birbirinin yerine kullanabilirsiniz. Sınıfın ne olduğunu daha iyi anlamak için ileriki bölümlerde geri döneceğiz.
+
+![python-programlama-ders-50](/img/python-programlama-ders-50.svg)
+
 ``
 
 print cümlesi tamsayılar için de çalışır.

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="golge" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#a0b8d0" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="arka" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7ec"/>
+    </linearGradient>
+    <linearGradient id="kirmizi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb3b3"/>
+      <stop offset="100%" stop-color="#ff8a8a"/>
+    </linearGradient>
+    <linearGradient id="mavi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b3d9ff"/>
+      <stop offset="100%" stop-color="#80bfff"/>
+    </linearGradient>
+    <linearGradient id="yesil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b3f0c0"/>
+      <stop offset="100%" stop-color="#85e0a0"/>
+    </linearGradient>
+    <linearGradient id="sari" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe699"/>
+      <stop offset="100%" stop-color="#ffd966"/>
+    </linearGradient>
+    <linearGradient id="mor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9c2f0"/>
+      <stop offset="100%" stop-color="#c2a5e0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="320" fill="url(#arka)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python Döngü Yapıları</text>
+
+  <!-- Merkez: Döngü Kavramı -->
+  <ellipse cx="320" cy="165" rx="52" ry="42" fill="url(#kirmizi)" filter="url(#golge)" opacity="0.95"/>
+  <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5c1a1a">Döngü</text>
+  <text x="320" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5c1a1a">Yineleme</text>
+
+  <!-- Sol üst: for döngüsü -->
+  <rect x="60" y="55" width="130" height="55" rx="10" fill="url(#mavi)" filter="url(#golge)" opacity="0.95"/>
+  <text x="125" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3d5c">for Döngüsü</text>
+  <text x="125" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a3d5c">Belirli Yineleme</text>
+
+  <!-- Sağ üst: while döngüsü -->
+  <rect x="450" y="55" width="130" height="55" rx="10" fill="url(#yesil)" filter="url(#golge)" opacity="0.95"/>
+  <text x="515" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4d2e">while Döngüsü</text>
+  <text x="515" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a4d2e">Belirsiz Yineleme</text>
+
+  <!-- Sol alt: range -->
+  <rect x="60" y="230" width="130" height="55" rx="10" fill="url(#sari)" filter="url(#golge)" opacity="0.95"/>
+  <text x="125" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5c4a1a">range()</text>
+  <text x="125" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5c4a1a">Sayı Üretimi</text>
+
+  <!-- Sağ alt: break ve continue -->
+  <rect x="450" y="230" width="130" height="55" rx="10" fill="url(#mor)" filter="url(#golge)" opacity="0.95"/>
+  <text x="515" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3d1a5c">break / continue</text>
+  <text x="515" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3d1a5c">Akış Kontrolü</text>
+
+  <!-- Alt orta: İç içe döngü -->
+  <rect x="255" y="255" width="130" height="45" rx="10" fill="#f0c2c2" filter="url(#golge)" opacity="0.95"/>
+  <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5c1a1a">İç İçe Döngü</text>
+  <text x="320" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5c1a1a">Matris İşlemleri</text>
+
+  <!-- Oklar: for -> merkez -->
+  <path d="M 190 85 Q 250 110 275 145" stroke="#4a7a9e" stroke-width="2" fill="none"/>
+  <polygon points="275,148 268,135 282,140" fill="#4a7a9e"/>
+
+  <!-- Oklar: while -> merkez -->
+  <path d="M 450 85 Q 390 110 365 145" stroke="#2d6e4e" stroke-width="2" fill="none"/>
+  <polygon points="365,148 358,135 372,140" fill="#2d6e4e"/>
+
+  <!-- Oklar: range -> merkez -->
+  <path d="M 190 255 Q 250 225 275 200" stroke="#8a7a2e" stroke-width="2" fill="none"/>
+  <polygon points="275,197 282,210 268,205" fill="#8a7a2e"/>
+
+  <!-- Oklar: break/continue -> merkez -->
+  <path d="M 450 255 Q 390 225 365 200" stroke="#6e4a9e" stroke-width="2" fill="none"/>
+  <polygon points="365,197 372,210 358,205" fill="#6e4a9e"/>
+
+  <!-- Oklar: iç içe -> merkez -->
+  <path d="M 320 255 L 320 210" stroke="#9e4a4a" stroke-width="2" fill="none"/>
+  <polygon points="320,207 315,218 325,218" fill="#9e4a4a"/>
+
+  <!-- Üst bilgi notu -->
+  <text x="320" y="312" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a8a9a">Atama, Güncelleme, Sayaç, Algoritma</text>
+</svg>

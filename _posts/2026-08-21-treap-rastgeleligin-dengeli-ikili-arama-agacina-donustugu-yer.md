@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Veri Yapıları
-  - Treap
-  - Algoritmalar
+  - veri yapıları
+  - treap
+  - algoritmalar
 ---
 
 Bir ikili arama ağacında (BST) hızlı arama, ekleme ve silme isteriz; ancak anahtarlar sıralı gelirse ağaç bir çubuğa dönüşebilir. Treap, bu talihsiz senaryoyu rastgelelik yardımıyla büyük ölçüde engeller. Adı, **tree** ve **heap** kelimelerinin birleşimidir: Anahtarlara göre BST, rastgele önceliklere göre ise heap davranışı sergiler. Böylece AVL veya Kırmızı-Siyah ağaçların katı dengeleme kurallarına alternatif, zarif bir yaklaşım sunar.

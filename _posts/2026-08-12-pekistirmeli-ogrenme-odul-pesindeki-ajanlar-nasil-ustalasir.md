@@ -8,6 +8,7 @@ tags:
   - pekiştirmeli öğrenme
   - makine öğrenmesi
   - yapay zeka
+image: /img/pekistirmeli-ogrenme-odul-15.png
 ---
 
 Pekiştirmeli öğrenme (Reinforcement Learning, RL), bir ajanın hazır doğru cevaplarla eğitilmek yerine çevresiyle etkileşime girerek öğrenmesidir. Ajan bir durum görür, eylem seçer ve çevreden ödül ya da ceza sinyali alır. Amaç anlık olarak en parlak ödülü kapmak değil, uzun vadede mümkün olan en yüksek toplam getiriyi elde etmektir. Bu yaklaşım, satranç oynayan yapay zekâlardan depo robotlarına kadar oldukça geniş bir kullanım alanına sahiptir.
@@ -52,3 +53,6 @@ Bu kodda `alpha` öğrenme hızıdır; çok büyük olursa ajan her sonuca aşı
 Bir diğer temel gerilim **keşif ve sömürü** dengesidir. Ajan bildiği en iyi eylemi sürekli seçerse yeni fırsatları kaçırabilir; her seferinde rastgele denerse de ustalaşamaz. $\epsilon$-greedy stratejisi bu soruna pratik bir çözüm getirir: Olasılık $\epsilon$ ile rastgele hareket edilir, aksi durumda en yüksek Q-değerli eylem seçilir.
 
 Gerçek dünyada ödül tasarımı dikkat ister. Robotu yalnızca hız için ödüllendirmek, onun güvenliği tamamen unutmasına yol açabilir. Bu nedenle ödül fonksiyonu hedefi, güvenlik sınırlarını ve istenmeyen kestirmeleri birlikte yansıtmalıdır. İyi kurulmuş bir çevre ve dengeli ödül, deneme-yanılmayı pahalı bir kaostan akıllı bir öğrenme macerasına dönüştürür.
+
+![pekistirmeli-ogrenme-odul-15](/img/pekistirmeli-ogrenme-odul-15.svg)
+

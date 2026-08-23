@@ -13,6 +13,7 @@ tags:
 redirect_from:
   - /posts/markdown-kullanimi-turkce/
 toc: true
+image: /img/markdown-kullanimi-turkce-34.png
 ---
 
 ## Markdown Kullanımı Türkçe
@@ -20,6 +21,9 @@ toc: true
 ## Markdown Nedir, Ne Amaçla Kullanılır?
 
 Markdown, yazılarımızı düz metin olarak yazmamıza imkan veren işaretleme/biçimlendirme dilidir (_markup language_).  Markdown'ın temel amacı, metnimizi kolayca hazırlamak ve düz metin haliyle bile metnin rahatça okunmasını sağlamaktır. 
+
+![markdown-kullanimi-turkce-34](/img/markdown-kullanimi-turkce-34.svg)
+
 ``
 ## Örneklerle Sözdizim (_syntax_) kuralları
 

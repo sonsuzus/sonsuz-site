@@ -11,7 +11,11 @@ tags:
   - senkronizasyon
   - çok çekirdekli
 toc: true
+image: /img/eszamanlilik-ve-is-56.png
 ---
+
+![eszamanlilik-ve-is-56](/img/eszamanlilik-ve-is-56.svg)
+
 
 Modern işlemciler artık saat hızını sınırsız artırmak yerine birden fazla çekirdekle güçleniyor. Bir uygulamanın bu gücü kullanabilmesi için işleri bağımsız parçalara bölmesi, bu parçaları iş parçacıklarında (thread) çalıştırması ve ortak belleğe erişimi dikkatle düzenlemesi gerekir. Ancak multithreading, uygulamayı otomatik olarak hızlandıran sihirli bir değnek değildir; doğru tasarlanmadığında yarış koşulları, kilitlenmeler ve zor tekrarlanan hatalar üretir.
 ``

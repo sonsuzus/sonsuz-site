@@ -14,7 +14,11 @@ tags:
 redirect_from:
   - /posts/numpy-kutuphanesi-nedir-nasil-kullanilir/
 toc: true
+image: /img/numpy-kutuphanesi-nedir-20.png
 ---
+
+![numpy-kutuphanesi-nedir-20](/img/numpy-kutuphanesi-nedir-20.svg)
+
 
 
 NumPy, [Python](https://program.sonsuz.us/tags.html#python) programlama diline ait çok boyutlu dizilerle ve matrislerle çalışmamıza yardım eden ileri düzey matematiksel işlemler yapabileceğimiz bir kütüphanedir. Günümüzde özellikle [veri bilimi](https://program.sonsuz.us/tags.html#veri) üzerine çalışanlar başta olmak üzere Numpy, Python programlayanlar tarafından çok sık kullanılan bir **kütüphanedir.**

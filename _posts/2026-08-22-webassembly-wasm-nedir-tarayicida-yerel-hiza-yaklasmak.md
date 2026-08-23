@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - WebAssembly
-  - WASM
-  - JavaScript
-  - Performans
-  - Tarayıcı
+  - webassembly
+  - wasm
+  - javascript
+  - performans
+  - tarayıcı
+toc: true
 ---
 
 Web uygulamaları yıllarca JavaScript motorlarının omuzlarında yükseldi. Ancak görüntü işleme, 3B modelleme, oyun motorları ve bilimsel hesaplamalar gibi yoğun işlerde JavaScript tek başına her zaman ideal değildir. WebAssembly (WASM), derlenmiş kodun tarayıcı içinde güvenli biçimde, yerel uygulamalara yakın performansla çalışmasını sağlayan ikili bir komut formatıdır. Kısacası WASM, web platformuna takılmış küçük ama güçlü bir turbo motordur.

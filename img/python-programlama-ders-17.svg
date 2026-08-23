@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#f0f8f0"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#7fb8d0"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8e0c8"/>
+      <stop offset="100%" stop-color="#8cc9a8"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5d0a9"/>
+      <stop offset="100%" stop-color="#e8b88a"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4c5f0"/>
+      <stop offset="100%" stop-color="#b8a8e0"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0b8c0"/>
+      <stop offset="100%" stop-color="#d890a0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a5a7a">Python Döngüler: while</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="50" width="150" height="42" rx="12" fill="url(#g1)" filter="url(#shadow)"/>
+  <text x="320" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">while Döngüsü</text>
+
+  <!-- Ok: koşul -->
+  <path d="M 320 92 L 320 118" stroke="#5a8aa0" stroke-width="2" fill="none"/>
+  <polygon points="315,115 320,125 325,115" fill="#5a8aa0"/>
+
+  <!-- Koşul kutusu -->
+  <rect x="245" y="128" width="150" height="42" rx="12" fill="url(#g2)" filter="url(#shadow)"/>
+  <text x="320" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Koşul Doğru?</text>
+
+  <!-- Sağ ok: hayır -->
+  <path d="M 395 149 L 480 149 L 480 210" stroke="#d08080" stroke-width="2" fill="none"/>
+  <polygon points="475,205 480,215 485,205" fill="#d08080"/>
+  <text x="438" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#d08080">Hayır</text>
+
+  <!-- Sağ kutu: çıkış -->
+  <rect x="430" y="214" width="100" height="38" rx="10" fill="url(#g5)" filter="url(#shadow)"/>
+  <text x="480" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Döngüden Çık</text>
+
+  <!-- Aşağı ok: evet -->
+  <path d="M 320 170 L 320 196" stroke="#5a9a6a" stroke-width="2" fill="none"/>
+  <polygon points="315,193 320,203 325,193" fill="#5a9a6a"/>
+  <text x="338" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a9a6a">Evet</text>
+
+  <!-- Gövde kutusu -->
+  <rect x="245" y="206" width="150" height="42" rx="12" fill="url(#g3)" filter="url(#shadow)"/>
+  <text x="320" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Gövdeyi Çalıştır</text>
+  <text x="320" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ffffff" opacity="0.9">Değişkenleri Güncelle</text>
+
+  <!-- Geri dönüş oku -->
+  <path d="M 245 227 L 120 227 L 120 76 L 240 76" stroke="#5a8aa0" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+  <polygon points="235,71 245,76 235,81" fill="#5a8aa0"/>
+  <text x="130" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a8aa0" transform="rotate(-90,130,155)">Koşula Geri Dön</text>
+
+  <!-- Alt bilgi: sonsuz döngü uyarısı -->
+  <rect x="30" y="270" width="180" height="36" rx="8" fill="#fff8e8" filter="url(#shadow)" stroke="#e0c890" stroke-width="1"/>
+  <text x="120" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a7040" font-weight="bold">Dikkat: Sonsuz Döngü</text>
+  <text x="120" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#a08050">Koşul yanlışlanmazsa</text>
+
+  <!-- Alt bilgi: sayaç -->
+  <rect x="430" y="270" width="180" height="36" rx="8" fill="#e8f8f0" filter="url(#shadow)" stroke="#90c8a8" stroke-width="1"/>
+  <text x="520" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a7a5a" font-weight="bold">Sayaç Kullanımı</text>
+  <text x="520" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a9a7a">count += 1</text>
+
+  <!-- Yan not: for karşılaştırma -->
+  <rect x="30" y="50" width="100" height="36" rx="8" fill="url(#g4)" filter="url(#shadow)" opacity="0.8"/>
+  <text x="80" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ffffff" font-weight="bold">for Döngüsü</text>
+  <path d="M 130 68 L 240 68" stroke="#8a7ab0" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <text x="185" y="60" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#8a7ab0">karşılaştır</text>
+
+  <!-- Yan not: iç içe döngü -->
+  <rect x="510" y="50" width="100" height="36" rx="8" fill="url(#g4)" filter="url(#shadow)" opacity="0.8"/>
+  <text x="560" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ffffff" font-weight="bold">İç İçe Döngü</text>
+  <path d="M 510 68 L 400 68" stroke="#8a7ab0" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <text x="455" y="60" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#8a7ab0">iç içe</text>
+</svg>

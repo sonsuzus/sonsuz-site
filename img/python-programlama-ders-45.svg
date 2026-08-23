@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#eef7ed"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcfce7"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="box6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez fonksiyon kutusu -->
+  <rect x="245" y="120" width="150" height="60" rx="12" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="320" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">Fonksiyonlar</text>
+  <text x="320" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">Değer Döndüren</text>
+
+  <!-- Üst sol: Geri dönüş değeri -->
+  <rect x="30" y="30" width="160" height="50" rx="10" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="110" y="50" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#14532d">return</text>
+  <text x="110" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#14532d">Geri Dönüş Değeri</text>
+
+  <!-- Üst orta: None -->
+  <rect x="240" y="30" width="160" height="50" rx="10" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="320" y="50" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#713f12">None</text>
+  <text x="320" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#713f12">Özel Değer</text>
+
+  <!-- Üst sağ: Boolean -->
+  <rect x="450" y="30" width="160" height="50" rx="10" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="530" y="50" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#831843">True / False</text>
+  <text x="530" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#831843">Boolean Fonksiyon</text>
+
+  <!-- Alt sol: Arttırımsal -->
+  <rect x="30" y="230" width="160" height="55" rx="10" fill="url(#box5)" filter="url(#shadow)"/>
+  <text x="110" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#312e81">Arttırımsal</text>
+  <text x="110" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#312e81">Geliştirme</text>
+
+  <!-- Alt orta: Kompozisyon -->
+  <rect x="240" y="230" width="160" height="55" rx="10" fill="url(#box6)" filter="url(#shadow)"/>
+  <text x="320" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7c2d12">Kompozisyon</text>
+  <text x="320" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c2d12">Fonksiyon Birleştirme</text>
+
+  <!-- Alt sağ: Doctest -->
+  <rect x="450" y="230" width="160" height="55" rx="10" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="530" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">doctest</text>
+  <text x="530" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">Birim Sınama</text>
+
+  <!-- Oklar: Üst sol -->
+  <path d="M 110 80 L 110 105 Q 110 115 120 115 L 235 115 Q 245 115 245 120" fill="none" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="245,118 235,115 235,121" fill="#475569"/>
+
+  <!-- Oklar: Üst orta -->
+  <path d="M 320 80 L 320 120" fill="none" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="320,122 315,114 325,114" fill="#475569"/>
+
+  <!-- Oklar: Üst sağ -->
+  <path d="M 530 80 L 530 105 Q 530 115 520 115 L 405 115 Q 395 115 395 120" fill="none" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="395,118 405,115 405,121" fill="#475569"/>
+
+  <!-- Oklar: Alt sol -->
+  <path d="M 110 230 L 110 205 Q 110 195 120 195 L 235 195 Q 245 195 245 185" fill="none" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="245,188 235,185 235,191" fill="#475569"/>
+
+  <!-- Oklar: Alt orta -->
+  <path d="M 320 230 L 320 185" fill="none" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="320,183 315,191 325,191" fill="#475569"/>
+
+  <!-- Oklar: Alt sağ -->
+  <path d="M 530 230 L 530 205 Q 530 195 520 195 L 405 195 Q 395 195 395 185" fill="none" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="395,188 405,185 405,191" fill="#475569"/>
+
+  <!-- Yan etiketler -->
+  <text x="15" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b" transform="rotate(-90 15 180)">Değer Üretimi</text>
+  <text x="625" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b" transform="rotate(90 625 180)">Kod Geliştirme</text>
+</svg>

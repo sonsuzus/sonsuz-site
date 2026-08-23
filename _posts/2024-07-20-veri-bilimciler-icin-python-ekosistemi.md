@@ -14,7 +14,11 @@ tags:
 redirect_from:
   - /posts/veri-bilimciler-icin-python-ekosistemi/
 toc: true
+image: /img/veri-bilimciler-icin-21.png
 ---
+
+![veri-bilimciler-icin-21](/img/veri-bilimciler-icin-21.svg)
+
 
 
 Veri bilimi deyince bugün akla ilk gelen programlama dillerinden biri Python. Python 1996’da doğdu, ama uzun zaman bilimsel uygulamalarda diğer dillerin gölgesinde kaldı. Hakettiği yere son on yıl içinde ulaştı ancak. Son yıllarda programlama dillerinin yaygınlığı sıralamalarında düzenli olarak ilk üçe yerleşiyor.

@@ -9,6 +9,7 @@ tags:
   - rastgeleleştirilmiş algoritmalar
   - olasılık
   - quicksort
+toc: true
 ---
 
 Bazı algoritmalar yazı tura atar, rastgele sayılar üretir ve buna rağmen cevabı asla yanlış vermez. İlk bakışta çelişki gibi duran bu fikir, **Las Vegas algoritmalarının** temelidir: Rastgelelik sonucun doğruluğunu değil, çalışmanın süresini ve izlediği yolu etkiler. Yani algoritma biraz şans oyunları şehrinden esinlenmiş gibi davranır; bazen hızlıca kazanır, bazen biraz daha uzun bekletir, fakat masadan yanlış cevapla kalkmaz.

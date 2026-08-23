@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - DuckDB
-  - Veri Analitiği
-  - SQL
+  - duckdb
+  - veri analitiği
+  - sql
 ---
 
 Büyük veri analitiği denince çoğu kişinin aklına sunucular, kümeler ve karmaşık veri boru hatları gelir. DuckDB ise bu algıyı tersine çevirir: Uygulamanızın içinde çalışır, tek bir dosyada veriyi saklar ve milyonlarca satırlık CSV ya da Parquet dosyasında oldukça hızlı SQL sorguları koşturabilir. Özellikle veri bilimi, keşifsel analiz ve yerel raporlama işlerinde “küçük ama çok güçlü” bir araçtır.

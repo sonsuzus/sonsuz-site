@@ -9,6 +9,7 @@ tags:
   - android
   - coroutine
 toc: true
+image: /img/kotlin-ile-android-66.png
 ---
 
 Android geliştirmede kullanıcıların sabrı, uygulamanın akıcılığı kadar değerlidir: Bir ekran donarsa, en şık arayüz bile puan kaybeder. Kotlin, Java ekosistemiyle uyumunu korurken null güvenliği ve coroutine gibi modern araçlarla bu soruna iki cepheden yaklaşır. İlki beklenmeyen çöküşleri azaltır; ikincisi ise uzun süren işleri ana iş parçacığını kilitlemeden yürütür. Bu ikiliyi doğru anlamak, yalnızca daha temiz kod değil, daha güvenilir ve hızlı hissedilen uygulamalar üretmenin temelidir.
@@ -67,3 +68,6 @@ Bu örnekte `fetchProducts()` ağ veya veritabanı işi yaptığı için `Dispat
 Coroutine performansı yalnızca “arka plana atmak” değildir. Yapılandırılmış eşzamanlılık sayesinde görevlerin yaşam döngüsü sahipleri bellidir. Bir ekran kapanınca ona ait istekleri iptal etmek, artık görünmeyen bir ekrana veri basmayı önler. Ayrıca `async` yalnızca gerçekten paralel iki sonucu birleştirmeniz gerektiğinde kullanılmalıdır; her fonksiyona `async` serpmek hız değil, karmaşıklık üretir.
 
 Sonuçta null güvenliği uygulamanın hata toleransını, coroutine ise tepki hızını güçlendirir. Kotlin'in asıl avantajı bu özellikleri ayrı numaralar olarak değil, okunabilir bir tasarım dili olarak sunmasıdır: Verinin belirsizliğini türlerle anlatın, yavaş işleri doğru bağlamda çalıştırın ve kullanıcıya hiçbir zaman “uygulama düşünürken” donmuş bir ekran bırakmayın.
+
+![kotlin-ile-android-66](/img/kotlin-ile-android-66.svg)
+

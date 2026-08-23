@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Monte Carlo
-  - Rastgele Algoritmalar
-  - Python
+  - monte carlo
+  - rastgele algoritmalar
+  - python
 ---
 
 Bir algoritmanın zar atarak ciddi bir problemi çözmesi ilk anda şaka gibi gelebilir. Oysa Monte Carlo algoritmaları, belirsizliği kontrollü örneklemeye dönüştürür: Çok sayıda rastgele deneme yapar, sonuçların istatistiksel davranışını gözlemler ve yaklaşık ya da olasılıksal bir cevap üretir. Özellikle kesin çözümün pahalı olduğu yüksek boyutlu problemlerde, fizik simülasyonlarında, finansal risk analizinde ve makine öğrenmesinde güçlü bir araçtır.

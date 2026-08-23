@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+  
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+  
+  <!-- Ana Başlık -->
+  <rect x="180" y="15" width="280" height="36" rx="18" fill="#e8f0fe" filter="url(#shadow)"/>
+  <text x="320" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python Karakter Dizileri</text>
+  
+  <!-- Merkez düğüm -->
+  <rect x="250" y="70" width="140" height="40" rx="20" fill="#4a90d9" filter="url(#shadow)"/>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">String Metotları</text>
+  
+  <!-- Bağlantı çizgileri -->
+  <!-- Sol üst -->
+  <path d="M 250 90 L 120 90 L 120 130" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <polygon points="115,130 125,130 120,140" fill="#7f8c8d"/>
+  
+  <!-- Sağ üst -->
+  <path d="M 390 90 L 520 90 L 520 130" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <polygon points="515,130 525,130 520,140" fill="#7f8c8d"/>
+  
+  <!-- Sol alt -->
+  <path d="M 250 110 L 120 110 L 120 230" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <polygon points="115,230 125,230 120,240" fill="#7f8c8d"/>
+  
+  <!-- Sağ alt -->
+  <path d="M 390 110 L 520 110 L 520 230" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <polygon points="515,230 525,230 520,240" fill="#7f8c8d"/>
+  
+  <!-- Sol üst kutu: Değiştirici Metotlar -->
+  <rect x="40" y="140" width="160" height="80" rx="10" fill="#d4e6f1" filter="url(#shadow)"/>
+  <text x="120" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Değiştirici</text>
+  <text x="120" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">replace, upper, lower</text>
+  <text x="120" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">capitalize, title, swapcase</text>
+  
+  <!-- Sağ üst kutu: Sorgulayıcı Metotlar -->
+  <rect x="440" y="140" width="160" height="80" rx="10" fill="#d5f5e3" filter="url(#shadow)"/>
+  <text x="520" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Sorgulayıcı</text>
+  <text x="520" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">isalpha, isdigit, isalnum</text>
+  <text x="520" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">islower, isupper, isdecimal</text>
+  
+  <!-- Sol alt kutu: Bölme ve Birleştirme -->
+  <rect x="40" y="240" width="160" height="60" rx="10" fill="#fdebd0" filter="url(#shadow)"/>
+  <text x="120" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a04000">Bölme / Birleştirme</text>
+  <text x="120" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">split, rsplit, splitlines, join</text>
+  
+  <!-- Sağ alt kutu: Arama ve Konum -->
+  <rect x="440" y="240" width="160" height="60" rx="10" fill="#e8daef" filter="url(#shadow)"/>
+  <text x="520" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6c3483">Arama ve Konum</text>
+  <text x="520" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">find, rfind, index, count</text>
+  
+  <!-- Alt merkez: Biçimlendirme -->
+  <rect x="230" y="230" width="180" height="70" rx="10" fill="#f9e79f" filter="url(#shadow)"/>
+  <text x="320" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7d6608">Biçimlendirme</text>
+  <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">format() metodu</text>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">f-string yapısı</text>
+  
+  <!-- Alt bağlantılar -->
+  <path d="M 320 110 L 320 225" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <polygon points="315,225 325,225 320,235" fill="#7f8c8d"/>
+  
+  <!-- Dönüşüm okları -->
+  <path d="M 200 180 L 235 180" stroke="#bdc3c7" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="235,176 235,184 242,180" fill="#bdc3c7"/>
+  
+  <path d="M 440 180 L 405 180" stroke="#bdc3c7" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="405,176 405,184 398,180" fill="#bdc3c7"/>
+</svg>

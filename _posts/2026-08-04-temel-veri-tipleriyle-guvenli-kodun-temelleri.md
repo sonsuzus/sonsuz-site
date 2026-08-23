@@ -9,6 +9,7 @@ tags:
   - typescript
   - tip güvenliği
 toc: true
+image: /img/temel-veri-tipleriyle-23.png
 ---
 
 Bir programın dünyayı nasıl algıladığını hiç düşündünüz mü? Bizim için yaş, isim ve ışığın açık olup olmadığı farklı kavramlardır. Bilgisayar açısından da bunlar sırasıyla sayı, metin ve mantıksal değer olarak temsil edilir. Temel veri tipleri, verinin anlamını belirleyerek yanlış değerlerin daha kod çalışmadan yakalanmasını sağlar. Kısacası tipler, değişkenlerin kapısında bekleyen seçici güvenlik görevlileridir.
@@ -40,6 +41,9 @@ Tip sistemi ilk bölümde değerin sayı olmasını garanti edebilir. Aralık gi
 | `undefined` | `undefined` | Henüz atanmamış değer | Kesin sonuç |
 | `bigint` | `9007199254740993n` | Çok büyük tam sayılar | Ondalıklı işlemler |
 | `symbol` | `Symbol("id")` | Benzersiz anahtarlar | Kullanıcı metni |
+
+![temel-veri-tipleriyle-23](/img/temel-veri-tipleriyle-23.svg)
+
 
 `null` ve `undefined` birbirine benzese de aynı şeyi anlatmaz. `null`, geliştiricinin bilinçli biçimde “burada değer yok” demesidir. `undefined` ise değerin henüz tanımlanmadığını belirtir. Bu ayrım, özellikle API yanıtlarında oldukça önemlidir.
 

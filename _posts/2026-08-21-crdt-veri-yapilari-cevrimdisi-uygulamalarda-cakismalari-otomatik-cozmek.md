@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - CRDT
-  - Dağıtık Sistemler
-  - Çevrimdışı Uygulamalar
+  - crdt
+  - dağıtık sistemler
+  - çevrimdışı uygulamalar
 ---
 
 Bir not alma uygulamasını iki telefonda, internet bağlantısı olmadan kullandığınızı düşünün. Aynı notu bir cihazda silerken diğerinde yeni bir madde eklediniz. Bağlantı geri geldiğinde klasik bir sistem genellikle “hangi sürüm doğru?” diye panikler. CRDT'ler ise bu tartışmayı matematiksel kurallarla çözer: Her cihaz değişiklik yapabilir, ardından veriler sıradan bağımsız biçimde birleşerek aynı sonuca ulaşır.

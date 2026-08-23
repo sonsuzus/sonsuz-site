@@ -9,6 +9,7 @@ tags:
   - merge
   - conflict
 toc: true
+image: /img/git-merge-ve-67.png
 ---
 
 Yazılım ekiplerinde herkes aynı dosyaya sırayla dokunsaydı hayat kolay, geliştirme süreci ise epey yavaş olurdu. Git dalları sayesinde geliştiriciler paralel çalışabilir; ancak bu çalışmaların eninde sonunda yeniden buluşması gerekir. `merge`, farklı dallardaki değişiklikleri ortak bir geçmişte birleştirirken conflict çözümü Git'in karar veremediği noktalarda insan muhakemesini devreye sokar.
@@ -28,6 +29,9 @@ Git, $\Delta_M$ ile $\Delta_F$ değişikliklerini uyumlu biçimde uygulayabiliyo
 | Fast-forward | Hedef dalda yeni commit yoksa | Dal işaretçisi ileri taşınır |
 | Three-way merge | Her iki dal da ilerlediyse | Yeni bir merge commit'i oluşur |
 | Conflict | Aynı içerik uyumsuz değiştirildiyse | Manuel çözüm gerekir |
+
+![git-merge-ve-67](/img/git-merge-ve-67.svg)
+
 
 ## Temel Bir Merge İşlemi
 

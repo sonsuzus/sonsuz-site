@@ -8,6 +8,7 @@ tags:
   - veri yapıları
   - skip list
   - algoritmalar
+toc: true
 ---
 
 Sıralı verilerde arama yapmak istediğinizde bağlı listeler basit ama yavaştır; dengeli ikili arama ağaçları ise hızlı ama uygulaması görece karmaşıktır. Skip List, bu iki dünyanın arasına eğlenceli bir olasılık fikri yerleştirir: Bazı düğümlere rastgele seçilen ek “hız şeritleri” verir. Böylece listeyi tamamen yeniden dengelemeden, ortalama durumda oldukça hızlı arama, ekleme ve silme işlemleri sunar.

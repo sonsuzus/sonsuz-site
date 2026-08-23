@@ -5,7 +5,7 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - HyperLogLog
+  - hyperloglog
   - algoritmalar
   - veri mühendisliği
 ---

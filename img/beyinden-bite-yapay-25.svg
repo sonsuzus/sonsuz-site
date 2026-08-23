@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8edff"/>
+      <stop offset="100%" stop-color="#cde8dd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6c8ba0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8ba0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="88" cy="35" r="72" fill="#dcefff" opacity="0.42"/>
+  <circle cx="590" cy="279" r="90" fill="#ddf1d8" opacity="0.42"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38556b">Perceptron: sinyalden karara</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="26" y="76" width="106" height="48" rx="16" fill="#fff" stroke="#b8d7eb"/>
+    <circle cx="48" cy="100" r="11" fill="#b9ddf6"/>
+    <path d="M44 100h8M48 96v8" stroke="#4d7fa2" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="91" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36556b">Girdi x₁</text>
+    <text x="91" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71889a">sinyal</text>
+
+    <rect x="26" y="172" width="106" height="48" rx="16" fill="#fff" stroke="#b8d7eb"/>
+    <circle cx="48" cy="196" r="11" fill="#c7ead3"/>
+    <path d="M44 196h8M48 192v8" stroke="#478564" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="91" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36556b">Girdi x₂</text>
+    <text x="91" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71889a">sinyal</text>
+  </g>
+
+  <path d="M132 100 C157 100 159 126 184 139" fill="none" stroke="#79a8c7" stroke-width="2.3"/>
+  <polygon points="184,139 175,134 177,144" fill="#79a8c7"/>
+  <path d="M132 196 C157 196 160 171 184 158" fill="none" stroke="#78ae8b" stroke-width="2.3"/>
+  <polygon points="184,158 176,154 179,164" fill="#78ae8b"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="142" y="91" width="56" height="25" rx="10" fill="#edf7ff" stroke="#c0ddef"/>
+    <text x="170" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47799a">w₁</text>
+    <rect x="142" y="181" width="56" height="25" rx="10" fill="#edf9f0" stroke="#bee1ca"/>
+    <text x="170" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#43805c">w₂</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="204" y="78" width="168" height="144" rx="26" fill="url(#core)" stroke="#a8ccda"/>
+    <circle cx="288" cy="145" r="43" fill="#f9fdff" stroke="#95c5d3" stroke-width="2"/>
+    <text x="288" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#326078">Toplama</text>
+    <text x="288" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567889">Σ w·x + b</text>
+    <rect x="235" y="184" width="106" height="23" rx="10" fill="#fff4db" stroke="#ecd49d"/>
+    <text x="288" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#886a2b">Sapma b</text>
+  </g>
+
+  <path d="M372 145 L407 145" fill="none" stroke="#6e9eb4" stroke-width="2.4"/>
+  <polygon points="407,145 397,139 397,151" fill="#6e9eb4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="416" y="101" width="104" height="88" rx="22" fill="#fdf3dd" stroke="#e7c981"/>
+    <path d="M447 154h43" fill="none" stroke="#d49d3e" stroke-width="2"/>
+    <path d="M448 155 C458 155 458 132 468 132 C478 132 478 114 489 114" fill="none" stroke="#b87719" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="468" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#745621">Aktivasyon</text>
+  </g>
+
+  <path d="M520 145 L548 145" fill="none" stroke="#d09a3b" stroke-width="2.4"/>
+  <polygon points="548,145 538,139 538,151" fill="#d09a3b"/>
+
+  <g filter="url(#shadow)">
+    <rect x="555" y="111" width="62" height="68" rx="19" fill="#e3f2e4" stroke="#a9d4b1"/>
+    <circle cx="586" cy="136" r="14" fill="#7ab98b"/>
+    <text x="586" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#fff">y</text>
+    <text x="586" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a7656">Karar</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="65" y="256" width="510" height="40" rx="16" fill="#fff" stroke="#d3e4db"/>
+    <circle cx="91" cy="276" r="11" fill="#f4d9dc"/>
+    <path d="M86 276h10M91 271v10" stroke="#b55f6b" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="113" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536c7b">Hata</text>
+    <path d="M151 276 L207 276" fill="none" stroke="#bd7b86" stroke-width="2"/>
+    <polygon points="207,276 198,271 198,281" fill="#bd7b86"/>
+    <text x="240" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a5b63">Öğrenme oranı η</text>
+    <path d="M306 276 L363 276" fill="none" stroke="#7ba78b" stroke-width="2"/>
+    <polygon points="363,276 354,271 354,281" fill="#7ba78b"/>
+    <text x="455" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e785c">Ağırlıkları güncelle</text>
+    <path d="M543 265 C580 235 415 225 334 217" fill="none" stroke="#79a68a" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <polygon points="334,217 343,216 339,225" fill="#79a68a"/>
+  </g>
+</svg>

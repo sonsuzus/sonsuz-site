@@ -17,6 +17,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-06/
 toc: true
+image: /img/python-programlama-ders-17.png
 ---
 
 ## Yineleme (Döngü)
@@ -734,3 +735,6 @@ def sum_of_squares_of_digits(n):
 ```
 
 Çözümünüzü yukarıdaki doctestler bağlamında sınayın.
+
+![python-programlama-ders-17](/img/python-programlama-ders-17.svg)
+

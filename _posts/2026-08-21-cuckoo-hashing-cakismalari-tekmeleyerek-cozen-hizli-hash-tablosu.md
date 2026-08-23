@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Veri Yapıları
-  - Hash Tablosu
-  - Algoritmalar
+  - veri yapıları
+  - hash tablosu
+  - algoritmalar
 ---
 
 Hash tabloları, anahtarları ortalama $O(1)$ sürede bulma vaadiyle programlamanın görünmez kahramanlarıdır. Ancak iki anahtar aynı konuma düştüğünde ortaya çıkan çakışma, bu vaadi zorlayabilir. Cuckoo Hashing, çakışmayı zincirleme listelerle uzatmak yerine iki farklı olası yuva sunar ve gerekirse mevcut elemanı yerinden “tekmeleyerek” taşır. Adını da yumurtasını başka kuşların yuvasına bırakan guguk kuşundan alır.

@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Saga Pattern
-  - Mikroservisler
-  - Dağıtık Sistemler
+  - saga pattern
+  - mikroservisler
+  - dağıtık sistemler
 ---
 
 Mikroservis mimarisinde tek bir kullanıcı işlemi; ödeme, stok, sipariş ve kargo gibi bağımsız servisleri aynı anda etkileyebilir. Tek veritabanlı sistemlerde alıştığımız `BEGIN` ve `COMMIT` yaklaşımı burada yetersiz kalır: Her servis kendi verisini yönetir, ağ gecikebilir ve bir servis geçici olarak erişilemez olabilir. Saga Pattern, bu karmaşayı dağıtık bir işlemi küçük yerel adımlara bölerek ve hata durumunda telafi işlemleri çalıştırarak yönetir.

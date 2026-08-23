@@ -17,6 +17,7 @@ tags:
 redirect_from:
   - /posts/python-programlama-ders-061/
 toc: true
+image: /img/python-programlama-ders-73.png
 ---
 
  
@@ -28,6 +29,9 @@ Bilgisayarlar sıklıkla tekrarlayan görevleri otomatikleştirmek için kullan�
 Bir komutlar kümesinin tekrar tekrar yürütülmesi işlemine **yineleme (iteration)** adı verilir. Yineleme çok yaygın olduğu için, Python bunu kolaylaştırmak için birkaç özellik sağlar.
 
 Bu konuya girmeden önce, birkaç fikirin üstünden yeniden geçelim.
+
+![python-programlama-ders-73](/img/python-programlama-ders-73.svg)
+
 ``
 ## Atama
 

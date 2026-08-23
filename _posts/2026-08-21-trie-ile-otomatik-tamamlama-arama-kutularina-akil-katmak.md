@@ -5,9 +5,10 @@ math: true
 categories: 
   - Proje
 tags: 
-  - Trie
-  - Veri Yapıları
-  - JavaScript
+  - trie
+  - veri yapıları
+  - javascript
+toc: true
 ---
 
 Bir arama kutusuna `pro` yazdığınızda saniyeler değil, milisaniyeler içinde `programlama`, `proje` ve `profil` önerilerinin belirmesi sihir değildir: sahnenin arkasında çoğu zaman Trie veri yapısı çalışır. Prefix tree olarak da bilinen Trie, kelimeleri karakter karakter dallandırarak saklar. Böylece tüm kelime listesini her tuş vuruşunda baştan sona dolaşmak yerine, yalnızca yazılan öneke karşılık gelen dalı takip ederiz.

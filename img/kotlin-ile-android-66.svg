@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8067d8"/>
+      <stop offset="100%" stop-color="#5a9fce"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2f4eb"/>
+      <stop offset="100%" stop-color="#c8e9da"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6efff"/>
+      <stop offset="100%" stop-color="#d8e7fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#58718b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58718b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="42" r="72" fill="#dceefd" opacity="0.55"/>
+  <circle cx="594" cy="283" r="94" fill="#dff1db" opacity="0.52"/>
+  <circle cx="316" cy="158" r="117" fill="#ffffff" opacity="0.40"/>
+
+  <path d="M227 160 C245 160 252 160 267 160" fill="none" stroke="#80a7bb" stroke-width="2.5"/>
+  <polygon points="267,160 258,155 258,165" fill="#80a7bb"/>
+  <path d="M374 160 C391 160 400 160 416 160" fill="none" stroke="#80a7bb" stroke-width="2.5"/>
+  <polygon points="416,160 407,155 407,165" fill="#80a7bb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="267" y="102" width="108" height="116" rx="28" fill="url(#core)"/>
+    <circle cx="321" cy="133" r="19" fill="#ffffff" opacity="0.18"/>
+    <path d="M313 123 L327 123 L327 128 L321 134 L327 140 L327 145 L313 145 L313 140 L319 134 L313 128 Z" fill="#ffffff"/>
+    <text x="321" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Kotlin</text>
+    <text x="321" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eef4ff">Güvenli ve akıcı</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="72" width="194" height="177" rx="22" fill="url(#safe)"/>
+    <rect x="49" y="87" width="77" height="25" rx="12" fill="#77b89c"/>
+    <text x="87.5" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Null güvenliği</text>
+
+    <g filter="url(#softShadow)">
+      <rect x="50" y="126" width="160" height="33" rx="11" fill="#ffffff"/>
+      <circle cx="67" cy="142.5" r="8" fill="#71b89a"/>
+      <path d="M63 142 L66 145 L71 138" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="84" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406157">Tür sistemi</text>
+      <text x="186" y="147" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b8c72">String?</text>
+    </g>
+
+    <g filter="url(#softShadow)">
+      <rect x="50" y="169" width="160" height="33" rx="11" fill="#ffffff"/>
+      <circle cx="67" cy="185.5" r="8" fill="#8bbda7"/>
+      <path d="M64 185 L67 188 L71 182" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="84" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406157">Güvenli çağrı</text>
+      <text x="186" y="190" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b8c72">?.</text>
+    </g>
+
+    <g filter="url(#softShadow)">
+      <rect x="50" y="212" width="160" height="23" rx="10" fill="#f7fffa"/>
+      <text x="130" y="228" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7565">Çöküş riski azalır</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="413" y="52" width="193" height="215" rx="22" fill="url(#flow)"/>
+    <rect x="429" y="67" width="91" height="25" rx="12" fill="#729ed1"/>
+    <text x="474.5" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Coroutine</text>
+
+    <g filter="url(#softShadow)">
+      <rect x="430" y="107" width="72" height="43" rx="12" fill="#ffffff"/>
+      <circle cx="446" cy="126" r="8" fill="#efbc72"/>
+      <path d="M446 121 L446 126 L450 129" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="469" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#597697">IO</text>
+      <text x="466" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69839b">Ağ ve disk</text>
+    </g>
+
+    <path d="M505 128 L526 128" fill="none" stroke="#719bc9" stroke-width="2"/>
+    <polygon points="526,128 518,123 518,133" fill="#719bc9"/>
+
+    <g filter="url(#softShadow)">
+      <rect x="529" y="107" width="60" height="43" rx="12" fill="#ffffff"/>
+      <rect x="543" y="117" width="32" height="18" rx="5" fill="#88bc9d"/>
+      <path d="M550 139 L568 139" stroke="#88bc9d" stroke-width="2" stroke-linecap="round"/>
+      <text x="559" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597697">Ana</text>
+    </g>
+
+    <path d="M559 153 L559 171" fill="none" stroke="#719bc9" stroke-width="2"/>
+    <polygon points="559,171 554,163 564,163" fill="#719bc9"/>
+
+    <g filter="url(#softShadow)">
+      <rect x="454" y="175" width="135" height="38" rx="12" fill="#ffffff"/>
+      <circle cx="473" cy="194" r="8" fill="#7eacd8"/>
+      <path d="M470 194 L472 197 L477 191" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="490" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7196">Arayüz güncelle</text>
+    </g>
+
+    <g filter="url(#softShadow)">
+      <rect x="430" y="225" width="159" height="25" rx="11" fill="#f7fbff"/>
+      <text x="509.5" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597997">Akıcı ekran ve iptal</text>
+    </g>
+  </g>
+
+  <path d="M159 61 C198 30 253 36 284 91" fill="none" stroke="#94bca9" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.8"/>
+  <path d="M389 84 C413 54 437 39 469 35" fill="none" stroke="#8aaed0" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.8"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="244" y="261" width="154" height="31" rx="15" fill="#ffffff"/>
+    <circle cx="263" cy="276.5" r="7" fill="#789fd3"/>
+    <path d="M260 277 L263 280 L268 273" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="324" y="281" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#536f89">Güvenilir deneyim</text>
+  </g>
+</svg>

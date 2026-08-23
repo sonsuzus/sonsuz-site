@@ -9,6 +9,7 @@ tags:
   - eşzamanlılık
   - yazılım mimarisi
 toc: true
+image: /img/paralel-programlamanin-zihinsel-88.png
 ---
 
 Bir programın aynı anda birkaç iş yapması kulağa verimlilik gibi gelir: dosya indirirken arayüz yanıt verir, sunucu binlerce isteği işler, işlemci çekirdekleri veriyi paylaşır. Ne var ki kod hızlanırken onu anlamaya çalışan insan zihni yavaşlayabilir. Çünkü beynimiz olayları öyküler gibi, çoğunlukla belirli bir sırayla kavrar; eşzamanlı programlarsa tek bir öykü yerine birbirine karışabilen çok sayıda olası senaryo üretir.
@@ -88,3 +89,6 @@ Kilidin bedeli yalnızca performans değildir. Programcı artık kilidin nerede 
 En güvenli strateji, beynimizi daha fazla iş parçacığı düşünmeye zorlamak değil, düşünülmesi gereken durum sayısını azaltmaktır. Paylaşılan değişkenleri sınırlamak, saf fonksiyonlar kullanmak, görev sahipliğini açıkça belirtmek ve zaman aşımı tasarlamak kodu anlatılabilir hale getirir.
 
 Sonuçta paralel programlama yalnızca işlemci çekirdeklerini yönetme sanatı değildir; olasılık uzayını insan zihninin taşıyabileceği boyuta indirme sanatıdır. İyi eşzamanlı kod, sadece hızlı çalışan değil, sabah kahvesinden önce bile hangi olayın kimi beklediği anlaşılabilen koddur.
+
+![paralel-programlamanin-zihinsel-88](/img/paralel-programlamanin-zihinsel-88.svg)
+

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="guard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#c9f0df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#58708d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="54" r="52" fill="#dcecff" opacity="0.48"/>
+  <circle cx="583" cy="270" r="70" fill="#d7f2e2" opacity="0.52"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38526d">VERİ DEĞERLERİ</text>
+  <text x="441" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38526d">GÜVENLİ KOD</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="48" width="142" height="42" rx="14" fill="#fff4d9"/>
+    <circle cx="53" cy="69" r="12" fill="#f6c867"/>
+    <text x="48" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765718">42</text>
+    <text x="76" y="66" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#495a67">number</text>
+    <text x="76" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72808b">puan, fiyat</text>
+
+    <rect x="30" y="105" width="142" height="42" rx="14" fill="#efe3ff"/>
+    <circle cx="53" cy="126" r="12" fill="#b997e5"/>
+    <text x="48" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">A</text>
+    <text x="76" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#495a67">string</text>
+    <text x="76" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72808b">isim, açıklama</text>
+
+    <rect x="30" y="162" width="142" height="42" rx="14" fill="#dff4ed"/>
+    <circle cx="53" cy="183" r="12" fill="#72c9aa"/>
+    <path d="M48 183 L52 187 L59 178" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="76" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#495a67">boolean</text>
+    <text x="76" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72808b">açık, kapalı</text>
+  </g>
+
+  <path d="M172 69 H213" fill="none" stroke="#91a9bd" stroke-width="2"/>
+  <polygon points="213,69 205,64 205,74" fill="#91a9bd"/>
+  <path d="M172 126 H204 Q213 126 218 135" fill="none" stroke="#91a9bd" stroke-width="2"/>
+  <polygon points="221,142 212,136 218,130" fill="#91a9bd"/>
+  <path d="M172 183 H204 Q213 183 218 174" fill="none" stroke="#91a9bd" stroke-width="2"/>
+  <polygon points="221,167 212,173 218,179" fill="#91a9bd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="70" width="188" height="158" rx="28" fill="url(#guard)" stroke="#b5d9cf" stroke-width="1.5"/>
+    <circle cx="312" cy="118" r="29" fill="#ffffff" opacity="0.88"/>
+    <path d="M312 98 L332 106 L329 125 C327 137 320 145 312 149 C304 145 297 137 295 125 L292 106 Z" fill="#5b9d92"/>
+    <path d="M303 121 L309 127 L321 114" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="312" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355f62">TİP DENETİMİ</text>
+    <text x="312" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597179">Beklenen değer kümesi</text>
+    <rect x="257" y="199" width="110" height="17" rx="8.5" fill="#ffffff" opacity="0.68"/>
+    <text x="312" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7070">derleme öncesi</text>
+  </g>
+
+  <path d="M406 132 H449" fill="none" stroke="#65a98c" stroke-width="2.5"/>
+  <polygon points="449,132 441,127 441,137" fill="#65a98c"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="450" y="79" width="159" height="106" rx="18" fill="#ffffff" stroke="#cde6da" stroke-width="1.5"/>
+    <circle cx="480" cy="109" r="15" fill="#84cdae"/>
+    <path d="M473 109 L478 114 L488 103" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="504" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365c54">Geçerli atama</text>
+    <text x="504" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a7d7a">puan: number</text>
+    <line x1="471" y1="141" x2="587" y2="141" stroke="#d9ebe3"/>
+    <text x="471" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b8872">puan = 100</text>
+  </g>
+
+  <path d="M311 228 V260 H421" fill="none" stroke="#d28585" stroke-width="2"/>
+  <polygon points="421,260 413,255 413,265" fill="#d28585"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="422" y="232" width="187" height="61" rx="16" fill="#fff0ef" stroke="#f0c7c3" stroke-width="1.5"/>
+    <circle cx="448" cy="262" r="14" fill="#e48680"/>
+    <path d="M443 257 L453 267 M453 257 L443 267" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round"/>
+    <text x="472" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a4a4a">Hatalı değer</text>
+    <text x="472" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a16868">"doksan" reddedildi</text>
+  </g>
+
+  <text x="32" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718392">Tipler veri sözleşmesini korur</text>
+</svg>

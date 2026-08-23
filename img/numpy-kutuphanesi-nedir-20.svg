@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#2c3e50" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5b9bd5"/>
+      <stop offset="100%" stop-color="#4a8bc2"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#70ad47"/>
+      <stop offset="100%" stop-color="#5d9b3a"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ed7d31"/>
+      <stop offset="100%" stop-color="#d96a1f"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9b59b6"/>
+      <stop offset="100%" stop-color="#8e44ad"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1abc9c"/>
+      <stop offset="100%" stop-color="#16a085"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Merkez: NumPy Kütüphanesi -->
+  <rect x="245" y="115" width="150" height="50" rx="12" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="320" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">NumPy</text>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#d4e6f1">Python Kütüphanesi</text>
+
+  <!-- Üst: Python Entegrasyonu -->
+  <rect x="245" y="25" width="150" height="40" rx="10" fill="#ffffff" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Python</text>
+
+  <!-- Ok: Python -> NumPy -->
+  <path d="M320,65 L320,113" stroke="#5b9bd5" stroke-width="2" fill="none"/>
+  <polygon points="314,108 320,120 326,108" fill="#5b9bd5"/>
+
+  <!-- Sol Üst: Dizi Oluşturma -->
+  <rect x="30" y="80" width="140" height="55" rx="10" fill="#eaf2f8" stroke="#5b9bd5" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="100" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Dizi Oluşturma</text>
+  <text x="100" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">array, arange, zeros</text>
+  <text x="100" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">ones, full, random</text>
+
+  <!-- Ok: NumPy -> Sol Üst -->
+  <path d="M245,130 L172,130" stroke="#5b9bd5" stroke-width="1.8" fill="none"/>
+  <polygon points="178,124 168,130 178,136" fill="#5b9bd5"/>
+
+  <!-- Sağ Üst: Lineer Cebir -->
+  <rect x="470" y="80" width="140" height="55" rx="10" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="540" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Lineer Cebir</text>
+  <text x="540" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7d6608">dot, matmul, T</text>
+  <text x="540" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7d6608">determinant, inverse</text>
+
+  <!-- Ok: NumPy -> Sağ Üst -->
+  <path d="M395,130 L468,130" stroke="#f1c40f" stroke-width="1.8" fill="none"/>
+  <polygon points="462,124 472,130 462,136" fill="#f1c40f"/>
+
+  <!-- Sol Alt: İstatistik -->
+  <rect x="30" y="210" width="140" height="55" rx="10" fill="#e8f8f5" stroke="#1abc9c" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="100" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">İstatistik</text>
+  <text x="100" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#0e6655">median, mean, std</text>
+  <text x="100" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#0e6655">varyans, korelasyon</text>
+
+  <!-- Ok: NumPy -> Sol Alt -->
+  <path d="M270,165 L140,208" stroke="#1abc9c" stroke-width="1.8" fill="none"/>
+  <polygon points="146,202 134,210 148,214" fill="#1abc9c"/>
+
+  <!-- Sağ Alt: Avantajlar -->
+  <rect x="470" y="210" width="140" height="55" rx="10" fill="#f4ecf7" stroke="#9b59b6" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="540" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Avantajlar</text>
+  <text x="540" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6c3483">Hızlı, az bellek</text>
+  <text x="540" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6c3483">Matematiksel işlemler</text>
+
+  <!-- Ok: NumPy -> Sağ Alt -->
+  <path d="M370,165 L500,208" stroke="#9b59b6" stroke-width="1.8" fill="none"/>
+  <polygon points="494,202 504,210 492,214" fill="#9b59b6"/>
+
+  <!-- Alt Merkez: Veri Bilimi Bağlantısı -->
+  <rect x="245" y="255" width="150" height="40" rx="10" fill="#ffffff" stroke="#70ad47" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Veri Bilimi</text>
+
+  <!-- Ok: NumPy -> Alt Merkez -->
+  <path d="M320,165 L320,253" stroke="#70ad47" stroke-width="2" fill="none"/>
+  <polygon points="314,248 320,260 326,248" fill="#70ad47"/>
+
+  <!-- Yan Not: Pandas -->
+  <rect x="30" y="145" width="100" height="30" rx="8" fill="#fdebd0" stroke="#ed7d31" stroke-width="1" filter="url(#shadow)"/>
+  <text x="80" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a04000">Pandas</text>
+
+  <path d="M130,160 L243,140" stroke="#ed7d31" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="238,135 248,138 240,146" fill="#ed7d31"/>
+</svg>

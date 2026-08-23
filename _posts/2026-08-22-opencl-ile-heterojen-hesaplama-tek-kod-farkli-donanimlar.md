@@ -5,10 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - OpenCL
-  - Paralel Programlama
-  - GPU
-  - Heterojen Hesaplama
+  - opencl
+  - paralel programlama
+  - gpu
+  - heterojen hesaplama
+toc: true
 ---
 
 Modern bilgisayarlarda CPU, GPU ve kimi zaman yapay zekâ hızlandırıcıları aynı problemi farklı güçlü yönleriyle çözebilir. OpenCL (Open Computing Language), bu donanım çeşitliliğini tek bir programlama modeli altında birleştiren açık bir standarttır. Amaç, yalnızca ekran kartını kullanmak değildir: Uygun işi uygun işlemciye vererek performans, enerji tüketimi ve taşınabilirlik arasında akıllı bir denge kurmaktır.

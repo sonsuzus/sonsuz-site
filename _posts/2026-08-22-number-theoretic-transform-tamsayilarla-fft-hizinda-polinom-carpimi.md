@@ -10,6 +10,7 @@ tags:
   - algoritmalar
   - modüler aritmetik
   - fft
+toc: true
 ---
 
 Büyük tamsayıları, polinomları veya konvolüsyonları hızlı çarpmak istediğinizde klasik FFT ilk akla gelen araçtır. Ancak FFT genellikle kayan noktalı sayılarla çalışır; yuvarlama hataları, özellikle katsayılar büyüdüğünde can sıkıcı sonuçlar doğurabilir. Number Theoretic Transform (NTT), FFT’nin aynı böl-ve-yönet fikrini sonlu bir cisimde, yani tamamen tamsayı ve modüler aritmetikle uygular. Sonuç: deterministik, hassas ve yarışma programlamacıları için oldukça keyifli bir algoritma.

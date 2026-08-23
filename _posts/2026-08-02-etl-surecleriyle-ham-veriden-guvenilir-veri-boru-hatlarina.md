@@ -9,6 +9,7 @@ tags:
   - veri mühendisliği
   - data pipeline
 toc: true
+image: /img/etl-surecleriyle-ham-44.png
 ---
 
 Bir e-ticaret şirketinde siparişler PostgreSQL’de, reklam verileri bir API’de, müşteri yorumları JSON dosyalarında tutulabilir. Analiz ekibinin bütün bunları tek tek toplaması hem zaman kaybettirir hem de hata üretir. ETL süreçleri, dağınık ham veriyi otomatik biçimde çekip temizleyerek analiz edilmeye hazır, güvenilir bir veri kaynağına dönüştürür.
@@ -75,3 +76,6 @@ Temizlenen veri; Snowflake, BigQuery, Redshift gibi veri ambarlarına veya bir d
 Airflow, Dagster veya Prefect görevlerin sırasını ve zamanlamasını yönetebilir. Kafka gerçek zamanlı veri akışında, dbt ise SQL tabanlı dönüşümlerde öne çıkar. Araç seçiminden önce veri hacmi, gecikme beklentisi, maliyet ve ekip deneyimi değerlendirilmelidir.
 
 Sonuç olarak ETL, veriyi A noktasından B noktasına taşıyan basit bir kargo hizmeti değildir. Kaynakları uzlaştıran, kaliteyi koruyan ve analitik kararların güvenilir temelini oluşturan otomatik bir üretim hattıdır. Boru hattı görünmez çalıştığında herkes mutludur; durduğunda ise neden veri mühendislerine ihtiyaç duyulduğu hemen anlaşılır!
+
+![etl-surecleriyle-ham-44](/img/etl-surecleriyle-ham-44.svg)
+

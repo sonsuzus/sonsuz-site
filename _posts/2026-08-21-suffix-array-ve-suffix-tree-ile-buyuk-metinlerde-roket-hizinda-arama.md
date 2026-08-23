@@ -8,6 +8,7 @@ tags:
   - algoritmalar
   - veri yapıları
   - metin işleme
+toc: true
 ---
 
 Bir kitap arşivinde, DNA dizisinde ya da milyonlarca log satırında belirli bir ifadeyi aradığınızı düşünün. Klasik yöntemle metni baştan sona taramak çoğu zaman yeterlidir; fakat aynı dev metinde binlerce farklı sorgu çalıştırılacaksa maliyet hızla büyür. Suffix Tree ve Suffix Array, metni bir kez ön işleyip sonraki örüntü aramalarını çok daha hızlı hale getiren iki güçlü veri yapısıdır.

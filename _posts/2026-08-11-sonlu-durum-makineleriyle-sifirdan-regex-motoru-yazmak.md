@@ -8,7 +8,11 @@ tags:
   - regex
   - sonlu durum makineleri
   - python
+image: /img/sonlu-durum-makineleriyle-48.png
 ---
+
+![sonlu-durum-makineleriyle-48](/img/sonlu-durum-makineleriyle-48.svg)
+
 
 Düzenli ifadeler ilk bakışta sihirli karakter dizileri gibi görünür: `a*b`, `[0-9]+` ya da `^mail@alan\.com$`. Ancak perde arkasında oldukça matematiksel ve anlaşılır bir fikir vardır: sonlu durum makineleri. Küçük bir regex motoru yazmak, hem regex desenlerinin nasıl yorumlandığını hem de derleyicilerin temel prensiplerini öğrenmenin eğlenceli bir yoludur. Bu yazıda hedefimiz, tam özellikli bir PCRE canavarı üretmek değil; karakterler, birleştirme, `|` alternatifi ve `*` tekrarı için çalışan bir çekirdek tasarlamaktır.
 ``

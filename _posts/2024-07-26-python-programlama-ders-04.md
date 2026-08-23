@@ -23,6 +23,9 @@ toc: true
 ## 4.1 Modül (Kalan) işleci
 
 **Modül işleci** tamsayılarla (ve tamsayı deyimlerle) çalışan ve ilk işlenen ikinci işlenene bölünmesiyle oluşan kalanı veren bir işleçtir. Python'da, modül işleci yüzde işareti(`%`)'dir. Sözdizimi diğer işleçlerle aynıdır:
+
+![python-programlama-ders-67](/img/python-programlama-ders-67.svg)
+
 ``
 
 ```py
