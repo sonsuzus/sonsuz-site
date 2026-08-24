@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="rootGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9c9f4"/>
+      <stop offset="100%" stop-color="#bca8e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#50627a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#50627a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="156" r="126" fill="#dcecf2" opacity="0.3"/>
+  <circle cx="320" cy="156" r="91" fill="none" stroke="#b5cde0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52657a" font-weight="600">YETKİ • ALGI • KORUMA</text>
+  <line x1="28" y1="40" x2="612" y2="40" stroke="#c7d8df" stroke-width="1"/>
+
+  <!-- Connections -->
+  <path d="M264 129 C237 111,223 100,194 95" fill="none" stroke="#90aabb" stroke-width="2"/>
+  <polygon points="196,90 185,93 194,100" fill="#90aabb"/>
+
+  <path d="M376 129 C405 111,421 100,450 95" fill="none" stroke="#90aabb" stroke-width="2"/>
+  <polygon points="447,90 457,93 448,100" fill="#90aabb"/>
+
+  <path d="M263 184 C233 201,221 216,194 225" fill="none" stroke="#90aabb" stroke-width="2"/>
+  <polygon points="196,220 185,226 196,230" fill="#90aabb"/>
+
+  <path d="M377 184 C407 201,419 216,446 225" fill="none" stroke="#90aabb" stroke-width="2"/>
+  <polygon points="444,220 455,226 444,230" fill="#90aabb"/>
+
+  <path d="M320 213 L320 255" fill="none" stroke="#7898a6" stroke-width="2.5"/>
+  <polygon points="315,252 320,263 325,252" fill="#7898a6"/>
+
+  <!-- top left -->
+  <g filter="url(#softShadow)">
+    <rect x="48" y="60" width="140" height="68" rx="16" fill="#e2f1fb"/>
+    <rect x="61" y="73" width="27" height="27" rx="9" fill="#9ecbea"/>
+    <path d="M68 87 L76 87 M72 82 L72 92 M80 82 L80 92" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="99" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38566d" font-weight="700">Kontrol Hissi</text>
+    <text x="99" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587286">Yüksek algı</text>
+  </g>
+
+  <!-- top right -->
+  <g filter="url(#softShadow)">
+    <rect x="452" y="60" width="140" height="68" rx="16" fill="#fde8df"/>
+    <rect x="465" y="73" width="27" height="27" rx="9" fill="#f0b59d"/>
+    <path d="M478 79 L486 94 L470 94 Z" fill="#ffffff"/>
+    <circle cx="478" cy="90" r="1.4" fill="#e69a79"/>
+    <path d="M478 83 L478 87" stroke="#e69a79" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="503" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#725044" font-weight="700">Etki Riski</text>
+    <text x="503" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a695c">Sistem geneli</text>
+  </g>
+
+  <!-- center root -->
+  <g filter="url(#shadow)">
+    <rect x="250" y="108" width="140" height="105" rx="25" fill="url(#rootGrad)"/>
+    <circle cx="320" cy="142" r="23" fill="#ffffff" opacity="0.9"/>
+    <path d="M310 142 C310 136,314 132,320 132 C326 132,330 136,330 142 L330 145 L334 145 L334 159 L306 159 L306 145 L310 145 Z" fill="#8065b3"/>
+    <circle cx="320" cy="142" r="3" fill="#ffffff"/>
+    <path d="M320 145 L320 152" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="320" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#483766" font-weight="700">ROOT / UID=0</text>
+    <text x="320" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d4a7e">Mutlak yetki</text>
+  </g>
+
+  <!-- bottom left -->
+  <g filter="url(#softShadow)">
+    <rect x="48" y="192" width="140" height="68" rx="16" fill="#f9edcf"/>
+    <rect x="61" y="205" width="27" height="27" rx="9" fill="#e8c878"/>
+    <path d="M68 213 L81 213 M68 219 L78 219 M68 225 L75 225" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="99" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#705b32" font-weight="700">Rutinleşme</text>
+    <text x="99" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#887343">Dikkat azalması</text>
+  </g>
+
+  <!-- bottom right -->
+  <g filter="url(#softShadow)">
+    <rect x="452" y="192" width="140" height="68" rx="16" fill="#dff1e6"/>
+    <rect x="465" y="205" width="27" height="27" rx="9" fill="#91cfa9"/>
+    <path d="M471 219 L476 224 L484 213" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="503" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6851" font-weight="700">Sorumluluk</text>
+    <text x="503" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#577966">Bilerek karar</text>
+  </g>
+
+  <!-- guard rail -->
+  <g filter="url(#softShadow)">
+    <rect x="177" y="265" width="286" height="39" rx="15" fill="#ffffff"/>
+    <circle cx="200" cy="284.5" r="12" fill="#9bc9bc"/>
+    <path d="M194 285 L198 289 L206 280" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="220" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#43655c" font-weight="700">Durakla ve doğrula</text>
+    <text x="220" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667f78">Hedef • Etki • Geri dönüş • Kayıt</text>
+  </g>
+
+  <!-- formula -->
+  <g>
+    <rect x="494" y="276" width="112" height="25" rx="10" fill="#eef4f5" stroke="#d4e0e2"/>
+    <text x="550" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536b73" font-weight="700">Risk = Hata × Etki</text>
+  </g>
+</svg>

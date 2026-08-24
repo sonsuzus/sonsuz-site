@@ -11,9 +11,13 @@ tags:
   - bsd lisansı
   - yazılım hukuku
 toc: true
+image: /img/acik-kaynak-lisanslarinin-64.png
 ---
 
 Bir depoyu herkese açık yapmak, kodu ahlaki olarak “sahipsiz” ilan etmek değildir. Açık kaynak lisansları, üreticinin emeği ile topluluğun yeniden kullanma hakkı arasında kurulan sosyal sözleşmelerdir. GPL, MIT ve BSD aynı kaynak koduna erişim fikrini paylaşsa da özgürlüğün ne anlama geldiği konusunda farklı bir mimari önerir: Özgürlük, sonraki kullanıcıya garanti edilen bir hak mıdır; yoksa ilk kullanıcının olabildiğince az engelle karşılaşması mı?
+
+
+![acik-kaynak-lisanslarinin-64](/img/acik-kaynak-lisanslarinin-64.svg)
 
 ``
 

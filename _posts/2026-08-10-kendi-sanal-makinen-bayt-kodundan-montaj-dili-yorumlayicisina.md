@@ -8,6 +8,7 @@ tags:
   - sanal makine
   - bayt kodu
   - yorumlayıcı
+image: /img/kendi-sanal-makinen-60.png
 ---
 
 Bir sanal makine (VM) tasarlamak, bilgisayarların sihirli görünen çalışma biçimini küçük ve yönetilebilir parçalara ayırmanın harika yoludur. Bu projede gerçek bir işlemciyi taklit etmeye çalışmayacağız; bunun yerine kendi komut kümesine, kayıtçılarına ve belleğine sahip minik bir işlemci oluşturacağız. Ardından bu işlemcinin anlayacağı bayt kodunu tanımlayıp, insanlar için daha okunabilir bir montaj dili yorumlayıcısı yazacağız. Sonuç: `LOAD`, `ADD` ve `JMP` gibi komutlarla program çalıştıran oyuncak ama öğretici bir bilgisayar.
@@ -26,6 +27,9 @@ Durum; bellek, kayıtçılar, yığın ve program sayacından oluşur. Gerçek i
 | Program sayacı | Sıradaki komutun adresi | `pc` değişkeni |
 | RAM | Kod ve veriyi saklar | 256 baytlık liste |
 | Opcode | İşlem türünü belirtir | `1 = LOAD`, `2 = ADD` |
+
+![kendi-sanal-makinen-60](/img/kendi-sanal-makinen-60.svg)
+
 
 Önce komutlarımızın ikili biçimini seçelim. Basitlik için her komut iki bayt olsun: ilk bayt opcode, ikinci bayt operand. Örneğin `LOAD 7`, `R0` içine 7 yüklerken `ADD 3`, `R0` değerine 3 eklesin. `PRINT` ise operand gerektirmese de sabit uzunluğu korumak için ikinci baytı görmezden gelebilir.
 

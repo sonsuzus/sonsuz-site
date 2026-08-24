@@ -9,9 +9,13 @@ tags:
   - joın
   - veritabanı
 toc: true
+image: /img/iliskisel-veri-sorgulari-78.png
 ---
 
 Bir e-ticaret sisteminde müşteriler bir tabloda, siparişler başka bir tabloda tutulur. Peki “Hangi müşteri hangi siparişi verdi?” sorusunu nasıl yanıtlarız? SQL dünyasının çöpçatanı `JOIN`, farklı tablolardaki ilişkili satırları ortak sütunlar üzerinden buluşturur ve sonuçları tek bir sanal tablo gibi sunar.
+
+![iliskisel-veri-sorgulari-78](/img/iliskisel-veri-sorgulari-78.svg)
+
 ``
 ## İlişkisel modelin temel mantığı
 

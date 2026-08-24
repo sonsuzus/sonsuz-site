@@ -11,6 +11,7 @@ tags:
   - javascript
   - shader
 toc: true
+image: /img/webgl-ile-mandelbrot-32.png
 ---
 
 Mandelbrot kümesi, basit bir denklemin ekranda bitmek bilmeyen kıvrımlar, spiraller ve minyatür evrenler üretmesinin en güzel kanıtıdır. Bu projede hesaplamayı JavaScript işlemcisine bırakmak yerine WebGL ve GLSL gölgelendiricilerine taşıyarak akıcı bir sonsuz yakınlaştırma deneyimi kuracağız. Fare tekerleğiyle yaklaşacak, sürükleyerek gezecek ve her pikselin kendi matematik macerasını ekran kartında yaşamasını sağlayacağız.
@@ -33,6 +34,9 @@ $$ \vert z \vert ^2=x^2+y^2>4$$
 | $z$ | Her turdaki ara değer | Shader içindeki `vec2` |
 | İterasyon | Yaklaşık üyelik testi | Renk ayrıntısı ve performans |
 | Zoom | Daha küçük alanı inceleme | `scale` değerinin azalması |
+
+![webgl-ile-mandelbrot-32](/img/webgl-ile-mandelbrot-32.svg)
+
 
 ## Neden WebGL?
 

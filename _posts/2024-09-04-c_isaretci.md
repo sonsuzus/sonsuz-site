@@ -1491,3 +1491,6 @@ Yukarıdaki programı derleyip çalıştırdığımızda, aşağıdaki ifadeleri
 ```
 
 Program, oluşturduğu idizi adlı int bir diziye 1'den 10'a kadar olan sayıları atar ve dizi içeriğini ekrana yazar. Dizi başlangıç adresini argüman olarak geçirerek fonk() fonksiyonunu çağırır. fonk() fonksiyonu dizi eleman değerlerine 10 değeri ekler. Program, dizi içeriğini tekrar ekrana yazar.
+
+![c_isaretci-91](/img/c_isaretci-91.svg)
+

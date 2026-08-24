@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7ee"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="initGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="uninitGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce8f0"/>
+      <stop offset="100%" stop-color="#f8d4e3"/>
+    </linearGradient>
+    <linearGradient id="stackGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f7f0"/>
+      <stop offset="100%" stop-color="#cdeee0"/>
+    </linearGradient>
+    <linearGradient id="heapGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0e8fa"/>
+      <stop offset="100%" stop-color="#e0d4f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">C Programlama Bellek Mimarisi</text>
+
+  <!-- Ok ucu tanımları (manuel) -->
+  <!-- Yukarı ok ucu -->
+  <polygon points="320,58 314,68 326,68" fill="#7f8c8d"/>
+  <!-- Aşağı ok ucu -->
+  <polygon points="320,292 314,282 326,282" fill="#7f8c8d"/>
+
+  <!-- Dikey bellek hiyerarşisi çizgisi -->
+  <line x1="320" y1="68" x2="320" y2="282" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- 1. Kod (Metin) Bölümü -->
+  <rect x="130" y="70" width="380" height="42" rx="10" fill="url(#codeGrad)" filter="url(#shadow)" stroke="#b0c4de" stroke-width="1.5"/>
+  <text x="320" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Kod (Metin) Bölümü</text>
+  <text x="320" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">Salt okunur, fonksiyonlar ve sabitler</text>
+
+  <!-- 2. İlk Değer Atanmış Veri -->
+  <rect x="130" y="122" width="380" height="42" rx="10" fill="url(#initGrad)" filter="url(#shadow)" stroke="#e8c9a0" stroke-width="1.5"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">İlk Değer Atanmış Veri</text>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a6a3a">Global ve static değişkenler</text>
+
+  <!-- 3. İlk Değer Atanmamış Veri -->
+  <rect x="130" y="174" width="380" height="42" rx="10" fill="url(#uninitGrad)" filter="url(#shadow)" stroke="#d4a0b8" stroke-width="1.5"/>
+  <text x="320" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">İlk Değer Atanmamış Veri</text>
+  <text x="320" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a4a6a">BSS, sıfır başlangıçlı</text>
+
+  <!-- 4. Heap -->
+  <rect x="130" y="226" width="380" height="42" rx="10" fill="url(#heapGrad)" filter="url(#shadow)" stroke="#c0b0d8" stroke-width="1.5"/>
+  <text x="320" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Heap</text>
+  <text x="320" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a7a">Dinamik bellek, malloc ile büyür</text>
+
+  <!-- 5. Stack -->
+  <rect x="130" y="278" width="380" height="34" rx="10" fill="url(#stackGrad)" filter="url(#shadow)" stroke="#a0d0b8" stroke-width="1.5"/>
+  <text x="320" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Stack</text>
+
+  <!-- Sol tarafta büyüme yönü etiketleri -->
+  <text x="110" y="250" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d" transform="rotate(-90,110,250)">Heap büyüme yönü</text>
+  <text x="530" y="295" text-anchor="start" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d" transform="rotate(90,530,295)">Stack büyüme yönü</text>
+
+  <!-- Sağ tarafta adres yönü okları -->
+  <text x="555" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#95a5a6">Yüksek</text>
+  <text x="555" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#95a5a6">Adres</text>
+  <polygon points="555,190 550,198 560,198" fill="#95a5a6"/>
+  <line x1="555" y1="198" x2="555" y2="250" stroke="#95a5a6" stroke-width="1.5"/>
+  <polygon points="555,250 550,242 560,242" fill="#95a5a6"/>
+  <text x="555" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#95a5a6">Düşük</text>
+  <text x="555" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#95a5a6">Adres</text>
+
+  <!-- Sol tarafta bölüm okları -->
+  <line x1="120" y1="91" x2="120" y2="295" stroke="#bdc3c7" stroke-width="1" stroke-dasharray="3,3"/>
+  <polygon points="120,91 115,99 125,99" fill="#bdc3c7"/>
+  <polygon points="120,295 115,287 125,287" fill="#bdc3c7"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#95a5a6">Bellek düzeni: alt bölgelerden üst bölgelere doğru</text>
+</svg>

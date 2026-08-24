@@ -9,7 +9,11 @@ tags:
   - kruskal algoritması
   - prim algoritması
 toc: true
+image: /img/kruskal-ve-prim-50.png
 ---
+
+![kruskal-ve-prim-50](/img/kruskal-ve-prim-50.svg)
+
 
 Şehirleri en düşük maliyetle birbirine bağlayan yolları, bilgisayarları buluşturan kabloları veya enerji hatlarını tasarladığımızı düşünelim. Gereksiz döngüler oluşturmadan bütün noktaları birbirine ulaştırmak istiyorsak karşımıza **minimum yayılım ağacı** problemi çıkar. Bu problemin iki meşhur kahramanı Kruskal ve Prim algoritmalarıdır; ancak işe başlamadan önce grafın gerçekten bağlantılı olup olmadığını da sorgulamamız gerekir.
 

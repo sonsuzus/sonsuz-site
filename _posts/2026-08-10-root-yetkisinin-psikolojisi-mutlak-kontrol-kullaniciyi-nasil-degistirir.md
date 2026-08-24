@@ -10,9 +10,13 @@ tags:
   - sistem yönetimi
   - insan faktörleri
   - psikoloji
+image: /img/root-yetkisinin-psikolojisi-80.png
 ---
 
 Root yetkisi teknik olarak bir erişim seviyesi, psikolojik olarak ise kararların sonuçlarını doğrudan üretme gücüdür. Bir dosyayı silmek, servisi durdurmak veya güvenlik politikasını değiştirmek için onay beklemeyen kişi, zamanla sistemi yalnızca yönetilen bir yapı değil, kendi iradesinin uzantısı gibi algılayabilir. Bu algı verimliliği artırırken dikkat, sorumluluk ve risk değerlendirmesi üzerinde beklenmedik etkiler yaratır.
+
+![root-yetkisinin-psikolojisi-80](/img/root-yetkisinin-psikolojisi-80.svg)
+
 ``
 
 Unix dünyasında root, erişim kontrolünün tepesindedir: izin denetimlerini aşabilir, süreçleri sonlandırabilir ve çekirdek davranışını dolaylı biçimde etkileyebilir. Bu güç teknik açıdan `UID=0` ile temsil edilse de davranışsal sonuçları daha geniştir. Kullanıcının algıladığı kontrol seviyesi yükseldikçe, bir işlemin geri döndürülemez maliyetini küçümseme riski de artabilir.

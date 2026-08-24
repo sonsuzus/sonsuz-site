@@ -11,7 +11,11 @@ tags:
 redirect_from:
   - /posts/c-programlama-alistirmalar/
 toc: true
+image: /img/c-programlama-alistirmalar-96.png
 ---
+
+![c-programlama-alistirmalar-96](/img/c-programlama-alistirmalar-96.svg)
+
 
 #### İşaretsiz 2'lik sayı sisteminde _(unsigned binary system)_ 8 bitlik alanda aşağıdaki tam sayıları ifade ediniz:
 

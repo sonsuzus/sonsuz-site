@@ -11,9 +11,13 @@ tags:
   - geliştirici kültürü
   - kişiselleştirme
 toc: true
+image: /img/dotfiles-kulturu-bashrc-67.png
 ---
 
 Bir geliştiricinin bilgisayarına kısa süreliğine oturduğunuzda, terminal açılır açılmaz karakteri hakkında ipuçları toplamaya başlarsınız: rengârenk bir prompt, dikkatle seçilmiş takma adlar, sessizce çalışan araçlar ve belki de yıllardır taşınan bir ASCII sanat eseri. Dotfiles — `.bashrc`, `.zshrc`, `.gitconfig`, `vimrc` ve benzerleri — yalnızca ayar deposu değildir; çalışma alışkanlıklarının, estetik tercihlerin ve teknik dünya görüşünün küçük bir arşividir.
+
+![dotfiles-kulturu-bashrc-67](/img/dotfiles-kulturu-bashrc-67.svg)
+
 ``
 
 Elbette bir `.bashrc` dosyasından insanın tüm kişiliğini çıkarmak bilimsel bir karakter analizi değildir. Ancak bu dosya, kullanıcının bilgisayarla nasıl ilişki kurduğunu gösterir. Terminali yalnızca komut yazılan bir araç olarak gören biriyle, onu kişisel bir çalışma stüdyosuna dönüştüren biri aynı yapılandırmayı yazmaz. Dotfiles kültürünün çekiciliği de burada başlar: Tekrarlanan işleri azaltırken kişinin dijital ortamına bir imza atmasına izin verir.

@@ -9,7 +9,11 @@ tags:
   - ikili arama
   - iki işaretçi
 toc: true
+image: /img/ikili-arama-ve-90.png
 ---
+
+![ikili-arama-ve-90](/img/ikili-arama-ve-90.svg)
+
 
 Bir dizide değer bulmak kolay görünebilir; ancak veri büyüdükçe doğrusal arama, samanlıkta iğne aramaya dönüşür. İkili arama ve iki işaretçi tekniği, yalnızca ezberlenecek kod kalıpları değil, farklı problemlere uyarlanabilen düşünme biçimleridir. Biri arama uzayını sürekli yarıya indirirken diğeri iki konumu koordineli hareket ettirerek gereksiz denemeleri ortadan kaldırır.
 
