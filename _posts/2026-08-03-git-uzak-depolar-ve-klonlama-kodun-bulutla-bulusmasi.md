@@ -9,6 +9,7 @@ tags:
   - github
   - versiyon kontrolü
 toc: true
+image: /img/git-uzak-depolar-20.png
 ---
 
 Bir projeyi yalnızca kendi bilgisayarında tutmak, bütün yumurtaları aynı sepete koymaya benzer. Git’in uzak depo mekanizması sayesinde kodlar GitHub, GitLab veya Bitbucket gibi servislerde saklanabilir; ekip üyeleri aynı proje üzerinde çalışabilir ve yerel değişiklikler dış dünyayla paylaşılabilir. Bu süreçte `clone`, `remote`, `fetch`, `pull` ve `push` komutları başrolü üstlenir.
@@ -35,6 +36,9 @@ Burada $C_L$ ve $C_R$ yerel ve uzak commit kümelerini, $\triangle$ ise iki küm
 | İnternet gereksinimi | Çoğu işlemde gerekmez | Veri alışverişinde gerekir |
 | Temel amaç | Geliştirme ve commit oluşturma | Paylaşım, yedekleme ve iş birliği |
 | Tipik dallar | `main`, özellik dalları | `origin/main`, ekip dalları |
+
+![git-uzak-depolar-20](/img/git-uzak-depolar-20.svg)
+
 
 ## Bir projeyi klonlamak
 

@@ -14,6 +14,9 @@ redirect_from:
 toc: true
 ---
 
+![c_islemifade-67](/img/c_islemifade-67.svg)
+
+
 ## İşlem satırı
 
 main() fonksiyonu ve diğer fonksiyonlarda yer alan ve noktalı virgül (;) karakteri ile sona eren satırlara işlem satırı adı verilir. Şimdi, işlem satırlarının hangi değerlerden oluşabileceğini incelemeye çalışalım:

@@ -9,6 +9,7 @@ tags:
   - 3v kuralı
   - veri mühendisliği
 toc: true
+image: /img/buyuk-verinin-temelleri-49.png
 ---
 
 Bir e-ticaret sitesindeki tıklamalar, akıllı saatlerin ölçtüğü nabız değerleri, sosyal medya paylaşımları ve fabrikalardaki sensör kayıtları… Modern dünyada veri yalnızca çoğalmıyor; hızlanıyor ve biçim değiştiriyor. **Büyük Veri (Big Data)**, tek başına “çok fazla veri” anlamına gelmez. Geleneksel sistemlerin makul süre ve maliyetle saklamakta, işleyip analiz etmekte zorlandığı veri kümelerini ve bu sorunu çözmek için geliştirilen yöntemleri ifade eder.
@@ -77,3 +78,6 @@ Bu fonksiyon eksik alanlara varsayılan değerler atar ve değişken kaynaklarda
 | Merkezi hata noktası | Çoğaltma ve hata toleransı |
 
 Hadoop, Spark, Kafka ve NoSQL sistemleri birer moda sözcük değil; 3V’nin oluşturduğu teknik baskılara verilmiş farklı cevaplardır. Bununla birlikte her proje Büyük Veri projesi değildir. Küçük bir veri kümesini karmaşık kümelerde çalıştırmak, roketle markete gitmeye benzer. Doğru yaklaşım; hacmi, gecikme beklentisini, veri biçimlerini ve maliyeti ölçerek en sade yeterli mimariyi seçmektir. Büyük Verinin özü teknoloji yığını değil, verinin doğasına uygun ölçeklenebilir düşünme biçimidir.
+
+![buyuk-verinin-temelleri-49](/img/buyuk-verinin-temelleri-49.svg)
+

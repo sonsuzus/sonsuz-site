@@ -13,6 +13,7 @@ tags:
 redirect_from:
   - /posts/c_degisken/
 toc: true
+image: /img/c_degisken-67.png
 ---
 
 
@@ -1309,3 +1310,6 @@ restrict değişken tanımlayıcısı, C99 standardı ile getirilmiş olan ve i�
 restrict değişken tanımlayıcısı ile tanımlanan işaretçilerle tasarlanan kodlar daha hızlı çalışır.
 
 restrict değişken tanımlayıcısı sadece işaretçilerle birlikte kullanılabilir.
+
+![c_degisken-67](/img/c_degisken-67.svg)
+

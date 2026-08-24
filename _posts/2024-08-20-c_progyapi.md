@@ -10,6 +10,7 @@ tags:
   - yapı
 redirect_from:
   - /posts/c_progyapi/
+image: /img/c_progyapi-40.png
 ---
 
 
@@ -57,3 +58,6 @@ dönüş-değeri fonk-adı(parametreler);
 ```
 
 Bir C programının temelini fonksiyonlar oluşturmaktadır. Bir programda en az bir main() fonksiyonu bulunmalıdır.
+
+![c_progyapi-40](/img/c_progyapi-40.svg)
+

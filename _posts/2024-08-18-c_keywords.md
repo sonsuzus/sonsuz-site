@@ -9,6 +9,7 @@ tags:
   - anahtar kelimeler
 redirect_from:
   - /posts/c_keywords/
+image: /img/c_keywords-58.png
 ---
 
 
@@ -22,6 +23,9 @@ C dilinde farklı amaçlarla kullanılmak üzere tahsis edilmiş olan kelimelere
 | goto | if | int | long | register | return | short |
 | signed | sizeof | static | struct | switch | type | void |
 | volatile | while | union | unsigned |  |  |  |
+
+![c_keywords-58](/img/c_keywords-58.svg)
+
 
 C derleyicilerinden bazıları yukarıdaki tabloya ek olarak bazı anahtar kelimeler daha kullanmaktadırlar. Bu kelimelerden en çok kullanılanlar aşağıda gösterilmektedir:
 

@@ -9,6 +9,7 @@ tags:
   - bfs
   - graf algoritmaları
 toc: true
+image: /img/graflar-ve-agaclarda-17.png
 ---
 
 Bir labirentte çıkış aradığınızı düşünün: Bir yolu sonuna kadar takip edip çıkmazda geri mi dönersiniz, yoksa önce size bir adım uzaklıktaki bütün yolları mı incelersiniz? İlk yaklaşım **derinlik öncelikli arama (DFS)**, ikincisi ise **genişlik öncelikli arama (BFS)** mantığıdır. Bu iki kapsamlı arama tekniği; ağaçların, grafların ve birçok yapay zekâ probleminin temel araçlarıdır.
@@ -91,3 +92,6 @@ Arama ağacının dallanma katsayısı $b$, çözüm derinliği $d$ ise BFS yakl
 Hedefin başlangıca yakın olduğu veya ağırlıksız en kısa yolun istendiği durumlarda BFS güçlü seçimdir. Arama alanı çok genişse, çözümün derinde olduğu düşünülüyorsa ya da bütün yapısal ilişkiler araştırılacaksa DFS daha uygun olabilir. Ancak kenarlar farklı ağırlıklara sahipse BFS yerine Dijkstra gibi algoritmalar gerekir.
 
 Özetle DFS meraklı bir mağara kâşifi gibi tek tünele dalar; BFS ise düzenli bir arama ekibi gibi bütün katmanı tarar. Doğru algoritma, yalnızca grafın biçimine değil, aradığınız cevabın türüne ve kullanabileceğiniz belleğe de bağlıdır.
+
+![graflar-ve-agaclarda-17](/img/graflar-ve-agaclarda-17.svg)
+

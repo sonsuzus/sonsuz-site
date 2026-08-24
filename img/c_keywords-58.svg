@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7ef"/>
+    </linearGradient>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b8cc9"/>
+      <stop offset="100%" stop-color="#4a7ab5"/>
+    </linearGradient>
+    <linearGradient id="cat1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7fa8d9"/>
+      <stop offset="100%" stop-color="#6d9bd0"/>
+    </linearGradient>
+    <linearGradient id="cat2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9fc5e8"/>
+      <stop offset="100%" stop-color="#8db8df"/>
+    </linearGradient>
+    <linearGradient id="cat3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b7d7a8"/>
+      <stop offset="100%" stop-color="#a9cb99"/>
+    </linearGradient>
+    <linearGradient id="cat4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d5a6bd"/>
+      <stop offset="100%" stop-color="#c998b0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#2c3e50" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#2c3e50" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <rect x="220" y="12" width="200" height="34" rx="17" fill="url(#mainGrad)" filter="url(#shadow)"/>
+  <text x="320" y="34" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">C Anahtar Kelimeler</text>
+
+  <!-- Merkez düğüm -->
+  <circle cx="320" cy="165" r="42" fill="url(#mainGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">32</text>
+  <text x="320" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Anahtar</text>
+  <text x="320" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Kelime</text>
+
+  <!-- Kategori 1: ANSI C -->
+  <rect x="30" y="70" width="130" height="38" rx="10" fill="url(#cat1)" filter="url(#shadowLight)"/>
+  <text x="95" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">ANSI C (32)</text>
+
+  <!-- Kategori 2: Derleyici -->
+  <rect x="480" y="70" width="130" height="38" rx="10" fill="url(#cat2)" filter="url(#shadowLight)"/>
+  <text x="545" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Derleyici</text>
+
+  <!-- Kategori 3: C99 -->
+  <rect x="480" y="220" width="130" height="38" rx="10" fill="url(#cat3)" filter="url(#shadowLight)"/>
+  <text x="545" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">C99 Ekleri</text>
+
+  <!-- Kategori 4: Kural -->
+  <rect x="30" y="220" width="130" height="38" rx="10" fill="url(#cat4)" filter="url(#shadowLight)"/>
+  <text x="95" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Kural</text>
+
+  <!-- Oklar: merkezden kategorilere -->
+  <!-- Merkez -> ANSI C -->
+  <path d="M 282 148 L 165 105" stroke="#5b8cc9" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="165,105 176,104 170,113" fill="#5b8cc9" opacity="0.8"/>
+
+  <!-- Merkez -> Derleyici -->
+  <path d="M 358 148 L 475 105" stroke="#6d9bd0" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="475,105 464,104 470,113" fill="#6d9bd0" opacity="0.8"/>
+
+  <!-- Merkez -> C99 -->
+  <path d="M 358 182 L 475 225" stroke="#a9cb99" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="475,225 464,226 470,217" fill="#a9cb99" opacity="0.8"/>
+
+  <!-- Merkez -> Kural -->
+  <path d="M 282 182 L 165 225" stroke="#c998b0" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="165,225 176,226 170,217" fill="#c998b0" opacity="0.8"/>
+
+  <!-- ANSI C anahtar kelime örnekleri -->
+  <rect x="30" y="118" width="130" height="88" rx="8" fill="#eaf2fb" stroke="#7fa8d9" stroke-width="1" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="95" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">auto, break, case</text>
+  <text x="95" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">char, const, int</text>
+  <text x="95" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">float, double, void</text>
+  <text x="95" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">struct, union, enum</text>
+  <text x="95" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">if, else, for, while</text>
+
+  <!-- Derleyici anahtar kelime örnekleri -->
+  <rect x="480" y="118" width="130" height="88" rx="8" fill="#eaf2fb" stroke="#9fc5e8" stroke-width="1" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="545" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">asm, cdecl, far</text>
+  <text x="545" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">near, huge, pascal</text>
+  <text x="545" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">interrupt, _cs, _ds</text>
+  <text x="545" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">_es, _ss</text>
+
+  <!-- C99 anahtar kelime örnekleri -->
+  <rect x="480" y="268" width="130" height="40" rx="8" fill="#eaf7e8" stroke="#b7d7a8" stroke-width="1" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="545" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a3a">_Bool, _Complex</text>
+  <text x="545" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a3a">inline, restrict</text>
+
+  <!-- Kural açıklaması -->
+  <rect x="30" y="268" width="130" height="40" rx="8" fill="#fdf0f6" stroke="#d5a6bd" stroke-width="1" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="95" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a3a5a">Küçük harf</text>
+  <text x="95" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a3a5a">zorunludur</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a8a9a" opacity="0.8">Değişken ve fonksiyon adı olarak kullanılamaz</text>
+</svg>

@@ -9,7 +9,11 @@ tags:
   - literal types
   - tip güvenliği
 toc: true
+image: /img/typescript-birebir-tipler-43.png
 ---
+
+![typescript-birebir-tipler-43](/img/typescript-birebir-tipler-43.svg)
+
 
 Bir fonksiyona “herhangi bir metin” vermek ile yalnızca `"başlat"` veya `"durdur"` değerlerinden birini vermek arasında büyük bir güvenlik farkı vardır. TypeScript’in birebir tipleri (literal types), değişkenlerin alabileceği değerleri kesin biçimde sınırlandırır. Böylece hem hatalar daha kod çalıştırılmadan yakalanır hem de editör önerileri çok daha anlamlı hâle gelir.
 ``

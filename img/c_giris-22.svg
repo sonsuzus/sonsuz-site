@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5d6a7"/>
+      <stop offset="100%" stop-color="#81c784"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#90caf9"/>
+      <stop offset="100%" stop-color="#64b5f6"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffcc80"/>
+      <stop offset="100%" stop-color="#ffb74d"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ce93d8"/>
+      <stop offset="100%" stop-color="#ba68c8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef9a9a"/>
+      <stop offset="100%" stop-color="#e57373"/>
+    </linearGradient>
+    <linearGradient id="boxGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#80cbc4"/>
+      <stop offset="100%" stop-color="#4db6ac"/>
+    </linearGradient>
+    <linearGradient id="boxGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f48fb1"/>
+      <stop offset="100%" stop-color="#f06292"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#37474f">C Programlama Dili Gelişim Yapısı</text>
+
+  <!-- Tarihsel gelişim akışı (soldan sağa) -->
+  <!-- BCPL -->
+  <rect x="30" y="55" width="100" height="45" rx="8" fill="url(#boxGrad1)" filter="url(#shadow)"/>
+  <text x="80" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b5e20" font-weight="bold">BCPL</text>
+  <text x="80" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2e7d32">Martin Richards</text>
+
+  <!-- Ok BCPL -> B -->
+  <line x1="130" y1="77" x2="165" y2="77" stroke="#546e7a" stroke-width="1.5"/>
+  <polygon points="165,77 157,73 157,81" fill="#546e7a"/>
+
+  <!-- B -->
+  <rect x="170" y="55" width="90" height="45" rx="8" fill="url(#boxGrad2)" filter="url(#shadow)"/>
+  <text x="215" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#0d47a1" font-weight="bold">B Dili</text>
+  <text x="215" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1565c0">Ken Thompson</text>
+
+  <!-- Ok B -> C -->
+  <line x1="260" y1="77" x2="295" y2="77" stroke="#546e7a" stroke-width="1.5"/>
+  <polygon points="295,77 287,73 287,81" fill="#546e7a"/>
+
+  <!-- C -->
+  <rect x="300" y="55" width="100" height="45" rx="8" fill="url(#boxGrad3)" filter="url(#shadow)"/>
+  <text x="350" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e65100" font-weight="bold">C Dili</text>
+  <text x="350" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ef6c00">Kernighan ve Ritchie</text>
+
+  <!-- Ok C -> ANSI C -->
+  <line x1="400" y1="77" x2="435" y2="77" stroke="#546e7a" stroke-width="1.5"/>
+  <polygon points="435,77 427,73 427,81" fill="#546e7a"/>
+
+  <!-- ANSI C -->
+  <rect x="440" y="55" width="110" height="45" rx="8" fill="url(#boxGrad4)" filter="url(#shadow)"/>
+  <text x="495" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a148c" font-weight="bold">ANSI C (C89)</text>
+  <text x="495" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a1b9a">1983 Komitesi</text>
+
+  <!-- Alt kısım: Temel program yapısı (merkezi) -->
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#37474f">C Programının Temel Yapısı</text>
+
+  <!-- Merkez blok -->
+  <rect x="245" y="155" width="150" height="40" rx="10" fill="url(#boxGrad5)" filter="url(#shadow)"/>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b71c1c" font-weight="bold">Basit Program</text>
+  <text x="320" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#c62828">main() fonksiyonu</text>
+
+  <!-- Bağlantılar (merkezden dışa) -->
+  <!-- Üst sol -->
+  <line x1="245" y1="170" x2="165" y2="170" stroke="#546e7a" stroke-width="1.2"/>
+  <polygon points="165,170 173,166 173,174" fill="#546e7a"/>
+  <rect x="55" y="155" width="105" height="35" rx="8" fill="url(#boxGrad6)" filter="url(#shadow)"/>
+  <text x="107" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#004d40" font-weight="bold">Önişlemci</text>
+  <text x="107" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#00695c">#include</text>
+
+  <!-- Üst sağ -->
+  <line x1="395" y1="170" x2="475" y2="170" stroke="#546e7a" stroke-width="1.2"/>
+  <polygon points="475,170 467,166 467,174" fill="#546e7a"/>
+  <rect x="480" y="155" width="105" height="35" rx="8" fill="url(#boxGrad7)" filter="url(#shadow)"/>
+  <text x="532" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#880e4f" font-weight="bold">Kütüphaneler</text>
+  <text x="532" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ad1457">stdio.h vb.</text>
+
+  <!-- Alt sol -->
+  <line x1="270" y1="195" x2="160" y2="235" stroke="#546e7a" stroke-width="1.2"/>
+  <polygon points="160,235 170,232 168,240" fill="#546e7a"/>
+  <rect x="45" y="225" width="115" height="35" rx="8" fill="url(#boxGrad1)" filter="url(#shadow)"/>
+  <text x="102" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1b5e20" font-weight="bold">Değişkenler</text>
+  <text x="102" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2e7d32">int, char, float</text>
+
+  <!-- Alt sağ -->
+  <line x1="370" y1="195" x2="480" y2="235" stroke="#546e7a" stroke-width="1.2"/>
+  <polygon points="480,235 470,232 472,240" fill="#546e7a"/>
+  <rect x="480" y="225" width="115" height="35" rx="8" fill="url(#boxGrad2)" filter="url(#shadow)"/>
+  <text x="537" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#0d47a1" font-weight="bold">Deyimler</text>
+  <text x="537" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1565c0">if, for, while</text>
+
+  <!-- Alt orta -->
+  <line x1="320" y1="195" x2="320" y2="225" stroke="#546e7a" stroke-width="1.2"/>
+  <polygon points="320,225 316,217 324,217" fill="#546e7a"/>
+  <rect x="255" y="228" width="130" height="35" rx="8" fill="url(#boxGrad3)" filter="url(#shadow)"/>
+  <text x="320" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e65100" font-weight="bold">Fonksiyonlar</text>
+  <text x="320" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ef6c00">printf, scanf</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#607d8b" font-style="italic">ANSI C standartları ile uyumlu</text>
+</svg>

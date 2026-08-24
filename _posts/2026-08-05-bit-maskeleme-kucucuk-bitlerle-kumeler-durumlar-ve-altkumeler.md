@@ -9,6 +9,7 @@ tags:
   - bitsel-operatorler
   - algoritmalar
 toc: true
+image: /img/bit-maskeleme-kucucuk-78.png
 ---
 
 Bir grup anahtarı, özelliği veya seçimi tek bir tamsayı içinde saklamak kulağa sihir gibi gelebilir. Bit maskeleme tam olarak bunu yapar: Her biti bir elemanın varlığına ya da bir durumun açık olup olmadığına ayırır. Böylece klasik veri yapılarına göre daha az bellek kullanabilir, küme işlemlerini birkaç işlemci komutuyla gerçekleştirebilir ve özellikle kombinasyon problemlerini zarif biçimde çözebiliriz.
@@ -33,6 +34,9 @@ olur. Bu nedenle bit maskeleri genellikle $n$ değerinin küçük olduğu, fakat
 | `~` | Bitsel DEĞİL | Tümleyen |
 | `<<` | Sola kaydırma | İstenen bit için maske üretme |
 | `>>` | Sağa kaydırma | Bitleri konumlandırma veya okuma |
+
+![bit-maskeleme-kucucuk-78](/img/bit-maskeleme-kucucuk-78.svg)
+
 
 ## Eleman ekleme, silme ve sorgulama
 

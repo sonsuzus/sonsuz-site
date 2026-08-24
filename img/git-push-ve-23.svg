@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="localGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f0ff"/>
+      <stop offset="100%" stop-color="#d9e9fb"/>
+    </linearGradient>
+    <linearGradient id="remoteGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4f7e8"/>
+      <stop offset="100%" stop-color="#d4efd8"/>
+    </linearGradient>
+    <linearGradient id="stageGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3d9"/>
+      <stop offset="100%" stop-color="#f9e4ba"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#49637c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#49637c" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="40" r="70" fill="#dbeeff" opacity="0.45"/>
+  <circle cx="580" cy="278" r="88" fill="#d9f2df" opacity="0.48"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">Git Senkronizasyon Akışı</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718398">Yerel çalışma ve ortak uzak depo</text>
+
+  <path d="M119 158 L148 158" fill="none" stroke="#7192af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="148,158 139,153 139,163" fill="#7192af"/>
+  <path d="M242 158 L271 158" fill="none" stroke="#7192af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="271,158 262,153 262,163" fill="#7192af"/>
+  <path d="M371 158 L402 158" fill="none" stroke="#4e9b75" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="402,158 392,152 392,164" fill="#4e9b75"/>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="119" width="90" height="78" rx="16" fill="url(#localGrad)" stroke="#bcd3ec"/>
+    <rect x="150" y="119" width="92" height="78" rx="16" fill="url(#stageGrad)" stroke="#ebd19b"/>
+    <rect x="272" y="119" width="99" height="78" rx="16" fill="url(#localGrad)" stroke="#bcd3ec"/>
+    <rect x="402" y="104" width="178" height="108" rx="20" fill="url(#remoteGrad)" stroke="#acd7b4"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M54 145 h18 v18 H54z M58 150 h10 M58 155 h10" stroke="#5a82a9" stroke-width="2"/>
+    <path d="M177 143 h25 v31 h-25z M183 151 h13 M183 157 h13 M183 163 h9" stroke="#b88431" stroke-width="2"/>
+    <path d="M300 144 h31 v8 h-31z M300 158 h31 v8 h-31z M300 172 h31 v8 h-31z" stroke="#5a82a9" stroke-width="2"/>
+    <path d="M450 138 h58 v35 h-58z M462 150 h34 M462 158 h27 M462 166 h39" stroke="#4e9b75" stroke-width="2"/>
+    <path d="M521 143 q16 8 0 16 q16 8 0 16" stroke="#4e9b75" stroke-width="2"/>
+  </g>
+
+  <text x="75" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345a7d">Çalışma Alanı</text>
+  <text x="196" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805d24">Hazırlama</text>
+  <text x="321" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345a7d">Yerel Depo</text>
+  <text x="491" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326c4a">Uzak Depo</text>
+  <text x="491" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8a6c">Ortak ekip geçmişi</text>
+
+  <text x="134" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647a90">add</text>
+  <text x="257" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647a90">commit</text>
+
+  <path d="M354 102 C397 65 472 62 519 91" fill="none" stroke="#438d68" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="519,91 507,87 511,98" fill="#438d68"/>
+  <g filter="url(#smallShadow)">
+    <rect x="407" y="61" width="72" height="28" rx="14" fill="#d9f1df"/>
+  </g>
+  <text x="443" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#367b57">push</text>
+
+  <path d="M529 226 C477 266 400 267 338 224" fill="none" stroke="#627fa5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="338,224 348,226 343,236" fill="#627fa5"/>
+  <g filter="url(#smallShadow)">
+    <rect x="406" y="252" width="70" height="28" rx="14" fill="#dfeafd"/>
+  </g>
+  <text x="441" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526f98">pull</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="50" y="236" width="236" height="50" rx="15" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="73" cy="261" r="13" fill="#f4ddad"/>
+  <path d="M68 261 l4 4 7-9" fill="none" stroke="#98702d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="96" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53687c">Sağlıklı akış</text>
+  <text x="96" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718398">Önce pull • Test • Sonra push</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="489" y="232" width="106" height="46" rx="15" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <text x="542" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53687c">pull işlemi</text>
+  <text x="542" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718398">fetch + merge</text>
+</svg>

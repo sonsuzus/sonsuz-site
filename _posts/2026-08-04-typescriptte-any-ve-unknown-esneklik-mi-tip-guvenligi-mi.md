@@ -9,6 +9,7 @@ tags:
   - javascript
   - tip güvenliği
 toc: true
+image: /img/typescriptte-any-ve-39.png
 ---
 
 TypeScript kullanırken bazen elimizdeki değerin tipini gerçekten bilemeyiz. Bir API cevabı, kullanıcı girdisi veya eski bir JavaScript kütüphanesi her şeyi döndürebilir. İşte bu belirsizlik karşısında `any` ve `unknown` sahneye çıkar. İkisi de “Bu değerin tipi şimdilik belli değil” diyebilir; ancak biri güvenlik kapısını açık bırakırken diğeri kimlik kontrolü yapmadan kimseyi içeri almaz.
@@ -99,3 +100,6 @@ if (kullaniciMi(hamVeri)) {
 Yeni kod yazarken varsayılan tercih `unknown` olmalıdır. `any`; tip tanımı bulunmayan eski kütüphaneleri bağlamak, aşamalı JavaScript dönüşümü yapmak veya kısa süreli prototip geliştirmek için kullanılabilir. Yine de mümkün olan en küçük alana hapsedilmelidir.
 
 Kısacası `any`, “Ne yaptığımı biliyorum, bana karışma” der. `unknown` ise “Önce kanıtla, sonra devam et” yaklaşımını benimser. Büyük ve uzun ömürlü projelerde ikinci cümle genellikle daha az hata, daha iyi otomatik tamamlama ve daha huzurlu geliştiriciler anlamına gelir.
+
+![typescriptte-any-ve-39](/img/typescriptte-any-ve-39.svg)
+

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf9"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ede7f6"/>
+      <stop offset="100%" stop-color="#d1c4e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">C Programlama - Koşul ve if Yapıları</text>
+
+  <!-- Merkez karar elması -->
+  <polygon points="320,70 390,115 320,160 250,115" fill="url(#box1)" stroke="#5b9bd5" stroke-width="2" filter="url(#shadow)"/>
+  <text x="320" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">if</text>
+  <text x="320" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">(ifade)</text>
+
+  <!-- Koşul doğru / yanlış etiketleri -->
+  <text x="275" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#27ae60" font-weight="bold">Doğru</text>
+  <text x="365" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e74c3c" font-weight="bold">Yanlış</text>
+
+  <!-- Doğru yolu - işlem satırı -->
+  <path d="M 250,115 L 120,115" stroke="#27ae60" stroke-width="2" fill="none"/>
+  <polygon points="130,110 120,115 130,120" fill="#27ae60"/>
+
+  <!-- Yanlış yolu - atla -->
+  <path d="M 390,115 L 520,115" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <polygon points="510,110 520,115 510,120" fill="#e74c3c"/>
+
+  <!-- İşlem kutusu (doğru) -->
+  <rect x="20" y="85" width="100" height="60" rx="10" fill="url(#box3)" stroke="#4caf50" stroke-width="2" filter="url(#shadow)"/>
+  <text x="70" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">İşlem</text>
+  <text x="70" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2e7d32">satır(lar)ı</text>
+  <text x="70" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2e7d32">çalışır</text>
+
+  <!-- Atlama kutusu (yanlış) -->
+  <rect x="530" y="85" width="100" height="60" rx="10" fill="url(#box4)" stroke="#e57373" stroke-width="2" filter="url(#shadow)"/>
+  <text x="580" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#b71c1c">Atlama</text>
+  <text x="580" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#c62828">işlem yapılmaz</text>
+
+  <!-- Alt bölüm: else if ve else yapıları -->
+  <text x="320" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Çeşitli if Yapıları</text>
+
+  <!-- Tek if -->
+  <rect x="30" y="215" width="130" height="55" rx="10" fill="url(#box1)" stroke="#5b9bd5" stroke-width="2" filter="url(#shadow)"/>
+  <text x="95" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">if (ifade)</text>
+  <text x="95" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">tek işlem satırı</text>
+  <text x="95" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">veya blok</text>
+
+  <!-- if else -->
+  <rect x="185" y="215" width="130" height="55" rx="10" fill="url(#box2)" stroke="#f39c12" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">if / else</text>
+  <text x="250" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">koşul doğru/yanlış</text>
+  <text x="250" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">iki farklı yol</text>
+
+  <!-- else if -->
+  <rect x="340" y="215" width="130" height="55" rx="10" fill="url(#box5)" stroke="#9575cd" stroke-width="2" filter="url(#shadow)"/>
+  <text x="405" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4527a0">else if</text>
+  <text x="405" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">çoklu koşul</text>
+  <text x="405" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">sıralı kontrol</text>
+
+  <!-- İç içe if -->
+  <rect x="495" y="215" width="130" height="55" rx="10" fill="url(#box3)" stroke="#66bb6a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="560" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">İç içe if</text>
+  <text x="560" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">if bloğu içinde</text>
+  <text x="560" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">başka if</text>
+
+  <!-- Bağlantı okları (alt bölüm) -->
+  <line x1="160" y1="242" x2="185" y2="242" stroke="#999" stroke-width="1.5"/>
+  <polygon points="181,238 185,242 181,246" fill="#999"/>
+
+  <line x1="315" y1="242" x2="340" y2="242" stroke="#999" stroke-width="1.5"/>
+  <polygon points="336,238 340,242 336,246" fill="#999"/>
+
+  <line x1="470" y1="242" x2="495" y2="242" stroke="#999" stroke-width="1.5"/>
+  <polygon points="491,238 495,242 491,246" fill="#999"/>
+
+  <!-- Alt not -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Koşul sonucu 0'dan farklı ise ifade doğru kabul edilir</text>
+  <text x="320" y="314" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Program Kontrol Terimleri ile esnek program akışı sağlanır</text>
+</svg>

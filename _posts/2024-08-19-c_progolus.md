@@ -11,7 +11,11 @@ tags:
 redirect_from:
   - /posts/c_progolus/
 toc: true
+image: /img/c_progolus-76.png
 ---
+
+![c_progolus-76](/img/c_progolus-76.svg)
+
 
 
 ## Bir C programının oluşturulması, derlenmesi ve çalıştırılması

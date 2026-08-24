@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="dfsGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8dfff"/>
+      <stop offset="100%" stop-color="#d6c5f5"/>
+    </linearGradient>
+    <linearGradient id="bfsGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f4ed"/>
+      <stop offset="100%" stop-color="#bde8dc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#546878" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="44" r="66" fill="#dceeff" opacity="0.48"/>
+  <circle cx="591" cy="281" r="82" fill="#dff2dc" opacity="0.52"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385064">Graf Arama Yaklaşımları</text>
+
+  <rect x="22" y="48" width="278" height="241" rx="20" fill="#fbfaff" filter="url(#shadow)"/>
+  <rect x="340" y="48" width="278" height="241" rx="20" fill="#fbfffd" filter="url(#shadow)"/>
+
+  <rect x="42" y="65" width="118" height="32" rx="12" fill="url(#dfsGrad)"/>
+  <text x="101" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c3979">DFS · Derine</text>
+  <rect x="184" y="68" width="92" height="26" rx="10" fill="#eee9fb"/>
+  <text x="230" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#654d92">Yığın</text>
+
+  <rect x="360" y="65" width="122" height="32" rx="12" fill="url(#bfsGrad)"/>
+  <text x="421" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#28665d">BFS · Genişe</text>
+  <rect x="504" y="68" width="91" height="26" rx="10" fill="#e1f4ef"/>
+  <text x="549.5" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#33756b">Kuyruk</text>
+
+  <path d="M76 137 L128 164 L180 137 M128 164 L128 218 M180 137 L231 164 M231 164 L231 218" fill="none" stroke="#b5a5d8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M76 137 L128 164 L180 137 M128 164 L128 218 M180 137 L231 164 M231 164 L231 218" fill="none" stroke="#9f75e7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 18"/>
+
+  <circle cx="76" cy="137" r="15" fill="#b396ed" filter="url(#softShadow)"/>
+  <circle cx="128" cy="164" r="15" fill="#c7aff5" filter="url(#softShadow)"/>
+  <circle cx="180" cy="137" r="15" fill="#dfd2f8" filter="url(#softShadow)"/>
+  <circle cx="231" cy="164" r="15" fill="#eee9fb" filter="url(#softShadow)"/>
+  <circle cx="128" cy="218" r="15" fill="#8b62d2" filter="url(#softShadow)"/>
+  <circle cx="231" cy="218" r="15" fill="#ddd0f7" filter="url(#softShadow)"/>
+  <text x="76" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">A</text>
+  <text x="128" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">B</text>
+  <text x="180" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#63488d">C</text>
+  <text x="231" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765d9f">D</text>
+  <text x="128" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">E</text>
+  <text x="231" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#70588f">F</text>
+
+  <path d="M129 180 L123 170 L134 171 Z" fill="#7047bb"/>
+  <path d="M128 199 L122 189 L134 189 Z" fill="#7047bb"/>
+  <text x="161" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c4b76">Dal boyunca ilerle</text>
+  <text x="161" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765f91">Geri izleme</text>
+
+  <path d="M395 139 L465 139 M395 139 L395 187 M465 139 L535 139 M465 139 L465 187 M535 139 L570 187" fill="none" stroke="#9ecfc4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M395 139 L465 139 M395 139 L395 187 M465 139 L535 139 M465 139 L465 187 M535 139 L570 187" fill="none" stroke="#48a995" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 17"/>
+
+  <circle cx="395" cy="139" r="15" fill="#55b9a5" filter="url(#softShadow)"/>
+  <circle cx="465" cy="139" r="15" fill="#91d8c9" filter="url(#softShadow)"/>
+  <circle cx="535" cy="139" r="15" fill="#d1eee6" filter="url(#softShadow)"/>
+  <circle cx="395" cy="187" r="15" fill="#91d8c9" filter="url(#softShadow)"/>
+  <circle cx="465" cy="187" r="15" fill="#d1eee6" filter="url(#softShadow)"/>
+  <circle cx="570" cy="187" r="15" fill="#dff4ee" filter="url(#softShadow)"/>
+  <text x="395" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">A</text>
+  <text x="465" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">B</text>
+  <text x="535" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39776c">C</text>
+  <text x="395" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">D</text>
+  <text x="465" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39776c">E</text>
+  <text x="570" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c847a">F</text>
+
+  <path d="M438 222 L454 222 L454 215 L467 228 L454 241 L454 234 L438 234 Z" fill="#47a992"/>
+  <text x="479" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426e68">Katman katman ilerle</text>
+  <text x="479" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#317d70">En kısa yol</text>
+
+  <rect x="285" y="139" width="70" height="57" rx="16" fill="#ffffff" filter="url(#softShadow)"/>
+  <text x="320" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#465d70">Graf</text>
+  <text x="320" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708292">Düğüm ağı</text>
+</svg>

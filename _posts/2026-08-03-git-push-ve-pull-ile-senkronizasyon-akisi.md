@@ -9,6 +9,7 @@ tags:
   - github
   - sürüm kontrolü
 toc: true
+image: /img/git-push-ve-23.png
 ---
 
 Bir ekip projesinde kod yazmak kadar, yazılan kodu doğru yere ve doğru zamanda ulaştırmak da önemlidir. Git’in **push** ve **pull** komutları, yerel bilgisayarımız ile GitHub, GitLab veya Bitbucket gibi uzak sunucular arasında köprü kurar. Biri tamamladığımız çalışmaları dışarı gönderirken diğeri ekip arkadaşlarımızın değişikliklerini içeri alır; yani biri kargoyu yollar, diğeri kapıda teslim alır.
@@ -43,6 +44,9 @@ $Fark > 0$ ise gönderilecek yerel commit’lerimiz vardır. $Fark < 0$ ise uzak
 | Geçmişe etkisi | Uzak dalı ilerletir | Yerel dalı birleştirir |
 | Olası sorun | Push reddedilebilir | Birleştirme çakışması oluşabilir |
 | Güvenli alışkanlık | Önce pull yapmak | Değişiklikleri kontrol etmek |
+
+![git-push-ve-23](/img/git-push-ve-23.svg)
+
 
 ## Değişiklikleri Uzak Sunucuya Göndermek
 

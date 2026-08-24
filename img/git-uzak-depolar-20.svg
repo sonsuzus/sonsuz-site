@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="localGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#cfe2f7"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4dcff"/>
+      <stop offset="100%" stop-color="#d4c9f5"/>
+    </linearGradient>
+    <linearGradient id="teamGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddf4e6"/>
+      <stop offset="100%" stop-color="#c9e9d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#8295a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71869a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="318" cy="162" r="121" fill="#dcecf2" opacity="0.38"/>
+  <circle cx="318" cy="162" r="94" fill="none" stroke="#bad4dc" stroke-width="1.5" stroke-dasharray="5 6" opacity="0.7"/>
+
+  <path d="M210 116 C235 93, 255 91, 270 94" fill="none" stroke="#7197b8" stroke-width="2.2"/>
+  <polygon points="270,94 260,90 263,100" fill="#7197b8"/>
+  <rect x="203" y="75" width="76" height="25" rx="12" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="241" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e6380">clone</text>
+
+  <path d="M245 153 C286 139, 318 135, 367 138" fill="none" stroke="#6f95b6" stroke-width="2.3"/>
+  <polygon points="367,138 357,133 359,143" fill="#6f95b6"/>
+  <rect x="272" y="119" width="72" height="25" rx="12" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="308" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e6380">fetch</text>
+
+  <path d="M246 185 C286 204, 323 202, 366 187" fill="none" stroke="#638baa" stroke-width="2.3"/>
+  <polygon points="366,187 357,184 360,194" fill="#638baa"/>
+  <rect x="278" y="199" width="66" height="25" rx="12" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="311" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e6380">pull</text>
+
+  <path d="M423 169 C393 201, 363 217, 245 222" fill="none" stroke="#7f719d" stroke-width="2.4"/>
+  <polygon points="245,222 255,216 255,227" fill="#7f719d"/>
+  <rect x="307" y="227" width="69" height="25" rx="12" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="341" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62567c">push</text>
+
+  <path d="M481 135 C508 128, 525 121, 543 111" fill="none" stroke="#6d9d84" stroke-width="2.2"/>
+  <polygon points="543,111 533,110 538,119" fill="#6d9d84"/>
+  <path d="M481 181 C508 191, 526 197, 543 204" fill="none" stroke="#6d9d84" stroke-width="2.2"/>
+  <polygon points="543,204 535,197 532,207" fill="#6d9d84"/>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="116" width="202" height="122" rx="20" fill="url(#localGrad)" stroke="#afcce3"/>
+    <rect x="58" y="136" width="170" height="75" rx="12" fill="#f8fcff" opacity="0.78"/>
+  </g>
+  <rect x="68" y="150" width="30" height="23" rx="4" fill="#6d9fc7"/>
+  <rect x="72" y="154" width="22" height="15" rx="2" fill="#dff1ff"/>
+  <path d="M79 175 L87 175 L84 181 Z" fill="#6d9fc7"/>
+  <text x="112" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31536f" font-weight="600">Yerel Depo</text>
+  <text x="112" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7488">Çalışma dizini</text>
+  <text x="112" y="197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7488">Commit geçmişi</text>
+  <rect x="62" y="218" width="68" height="17" rx="8" fill="#b8d9ef"/>
+  <text x="96" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345d7d">main</text>
+  <rect x="136" y="218" width="80" height="17" rx="8" fill="#c7e1f3"/>
+  <text x="176" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345d7d">özellik</text>
+
+  <g filter="url(#shadow)">
+    <rect x="367" y="94" width="122" height="111" rx="23" fill="url(#cloudGrad)" stroke="#bbaee1"/>
+  </g>
+  <path d="M394 143 C394 133, 402 126, 412 126 C416 115, 429 110, 439 117 C451 111, 464 120, 463 132 C473 133, 480 141, 480 151 C480 162, 471 169, 460 169 L409 169 C400 169, 393 162, 393 153 C393 149, 393 146, 394 143 Z" fill="#faf8ff" stroke="#957fbd" stroke-width="1.5"/>
+  <text x="428" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#594779" font-weight="600">origin</text>
+  <text x="428" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#594779">Uzak Depo</text>
+
+  <g filter="url(#shadow)">
+    <rect x="543" y="79" width="67" height="157" rx="20" fill="url(#teamGrad)" stroke="#aed7bd"/>
+  </g>
+  <circle cx="576" cy="109" r="14" fill="#75b58c"/>
+  <circle cx="576" cy="105" r="5" fill="#effbf2"/>
+  <path d="M566 119 C568 112, 584 112, 586 119" fill="#effbf2"/>
+  <circle cx="576" cy="159" r="14" fill="#82bd96"/>
+  <circle cx="576" cy="155" r="5" fill="#effbf2"/>
+  <path d="M566 169 C568 162, 584 162, 586 169" fill="#effbf2"/>
+  <circle cx="576" cy="209" r="14" fill="#8ac49d"/>
+  <circle cx="576" cy="205" r="5" fill="#effbf2"/>
+  <path d="M566 219 C568 212, 584 212, 586 219" fill="#effbf2"/>
+  <text x="576" y="64" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427258" font-weight="600">Ekip</text>
+
+  <rect x="254" y="272" width="132" height="29" rx="14" fill="#ffffff" filter="url(#smallShadow)"/>
+  <circle cx="272" cy="286" r="5" fill="#8aaed0"/>
+  <circle cx="287" cy="286" r="5" fill="#a28bc8"/>
+  <path d="M293 286 L345 286" stroke="#8da3ad" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="356" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526a79">Senkronizasyon</text>
+</svg>

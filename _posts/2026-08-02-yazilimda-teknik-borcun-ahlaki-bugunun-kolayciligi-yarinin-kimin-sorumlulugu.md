@@ -9,6 +9,7 @@ tags:
   - yazılım etiği
   - sürdürülebilir yazılım
 toc: true
+image: /img/yazilimda-teknik-borcun-36.png
 ---
 
 Teknik borç çoğu zaman eski kod, eksik test veya aceleyle verilmiş mimari kararlar şeklinde tanımlanır. Ancak mesele yalnızca kod kalitesi değildir. Bugün birkaç saat kazanmak için seçtiğimiz kestirme yol, aylar sonra sistemi devralan başka bir geliştiricinin gecesini, dikkatini ve hatta sağlığını tüketebilir. Bu nedenle teknik borç, ekonomik bir metafor olmanın ötesinde, yazılım ekiplerinin farklı kuşakları arasında aktarılan etik bir yükümlülüktür.
@@ -73,3 +74,6 @@ Bu sürüm biraz daha fazla kod içerir; fakat davranışın anlamını açıkla
 Teknik borcu etik biçimde yönetmek için borç kayıtları tutulmalı, mimari kararlar gerekçeleriyle belgelenmeli ve refaktör çalışmaları planlamada görünür olmalıdır. Kod incelemelerinde yalnızca “çalışıyor mu?” değil, “bunu altı ay sonra devralan kişi anlayabilecek mi?” sorusu da sorulmalıdır. Ayrıca bakım işi görünmez kahramanlık olarak değil, ürün geliştirme faaliyetinin parçası olarak değerlendirilmelidir.
 
 Sonuçta hiçbir kod sonsuza kadar temiz kalmaz. Etik sorumluluk kusursuz sistemler üretmek değil; aldığımız kestirmelerin bedelini dürüstçe göstermek, faydayı bugün toplarken maliyeti yarının isimsiz geliştiricilerine bırakmamaktır. Git geçmişi unutabilir, ekip değişebilir; fakat kötü kararların faizi düzenli çalışır.
+
+![yazilimda-teknik-borcun-36](/img/yazilimda-teknik-borcun-36.svg)
+

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3e9ff"/>
+      <stop offset="100%" stop-color="#ccd9fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#587094" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#587094" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="123" fill="#dbeef0" opacity="0.27"/>
+  <circle cx="320" cy="160" r="91" fill="none" stroke="#b8d7d2" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.75"/>
+
+  <!-- Bağlantı çizgileri -->
+  <path d="M256 145 C221 123 204 103 173 90" fill="none" stroke="#829bb6" stroke-width="2"/>
+  <polygon points="174,84 160,84 169,96" fill="#829bb6"/>
+  <path d="M384 145 C418 123 436 103 467 90" fill="none" stroke="#829bb6" stroke-width="2"/>
+  <polygon points="466,84 480,84 471,96" fill="#829bb6"/>
+  <path d="M256 175 C218 195 204 219 176 233" fill="none" stroke="#829bb6" stroke-width="2"/>
+  <polygon points="177,227 163,239 181,240" fill="#829bb6"/>
+  <path d="M384 175 C422 195 436 219 464 233" fill="none" stroke="#829bb6" stroke-width="2"/>
+  <polygon points="463,227 477,239 459,240" fill="#829bb6"/>
+
+  <!-- Üst sol: GitLab -->
+  <g filter="url(#soft)">
+    <rect x="52" y="52" width="120" height="72" rx="16" fill="#fff8eb"/>
+    <rect x="52" y="52" width="120" height="72" rx="16" fill="none" stroke="#efc878"/>
+    <path d="M92 83 L103 70 L114 83 L103 104 Z" fill="#f39b54"/>
+    <path d="M92 83 L103 87 L114 83 L103 104 Z" fill="#e8704b"/>
+    <path d="M92 83 L103 70 L103 87 Z" fill="#f7bd63"/>
+    <text x="126" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a4a32" font-weight="600">GitLab</text>
+    <text x="126" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78684d">DevOps</text>
+  </g>
+
+  <!-- Üst sağ: Gitea -->
+  <g filter="url(#soft)">
+    <rect x="468" y="52" width="120" height="72" rx="16" fill="#effaf4"/>
+    <rect x="468" y="52" width="120" height="72" rx="16" fill="none" stroke="#9ed8b7"/>
+    <circle cx="500" cy="84" r="15" fill="#5bbd82"/>
+    <path d="M491 86 H509 M495 80 H505 M495 92 H505" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="526" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315a43" font-weight="600">Gitea</text>
+    <text x="526" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54735f">Hafif</text>
+  </g>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <rect x="246" y="116" width="148" height="88" rx="22" fill="url(#core)" stroke="#92a9da"/>
+    <rect x="268" y="133" width="38" height="32" rx="7" fill="#617bb5"/>
+    <path d="M276 145 H298 M276 153 H294" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M319 142 H368 M319 151 H358 M319 160 H364" stroke="#687b9f" stroke-width="3" stroke-linecap="round"/>
+    <text x="320" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#384d7c" font-weight="700">Kendi Git Sunucusu</text>
+  </g>
+
+  <!-- Alt sol: Güvenlik -->
+  <g filter="url(#soft)">
+    <rect x="48" y="214" width="128" height="72" rx="16" fill="#f2efff"/>
+    <rect x="48" y="214" width="128" height="72" rx="16" fill="none" stroke="#c0afe8"/>
+    <path d="M84 231 L98 226 L112 231 V244 C112 253 106 260 98 264 C90 260 84 253 84 244 Z" fill="#9177cf"/>
+    <path d="M92 244 L96 248 L104 239" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="123" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554174" font-weight="600">Güvenlik</text>
+    <text x="123" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76648f">SSH ve 2FA</text>
+  </g>
+
+  <!-- Alt sağ: Yedek -->
+  <g filter="url(#soft)">
+    <rect x="464" y="214" width="128" height="72" rx="16" fill="#eaf8fa"/>
+    <rect x="464" y="214" width="128" height="72" rx="16" fill="none" stroke="#9bcfd6"/>
+    <ellipse cx="499" cy="235" rx="15" ry="6" fill="#55aebc"/>
+    <path d="M484 235 V251 C484 255 491 258 499 258 C507 258 514 255 514 251 V235" fill="#74c5ce"/>
+    <ellipse cx="499" cy="251" rx="15" ry="6" fill="#55aebc"/>
+    <path d="M494 246 H504 M499 241 V251" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="528" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#37646c" font-weight="600">Yedek</text>
+    <text x="528" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a858b">Geri yükleme</text>
+  </g>
+
+  <!-- Alt bilgi şeridi -->
+  <g opacity="0.88">
+    <rect x="214" y="270" width="212" height="29" rx="14" fill="#ffffff" filter="url(#soft)"/>
+    <circle cx="233" cy="284.5" r="5" fill="#72b991"/>
+    <text x="246" y="288.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526477">Kod, kontrol ve bağımsızlık</text>
+  </g>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4f7"/>
+    </linearGradient>
+    <linearGradient id="mainGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f4ea"/>
+      <stop offset="100%" stop-color="#d1ebd9"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef7e0"/>
+      <stop offset="100%" stop-color="#fde9c8"/>
+    </linearGradient>
+    <linearGradient id="commentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3e8fd"/>
+      <stop offset="100%" stop-color="#e6d5f5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a4a6b">C İlk Program - Yapı ve Akış</text>
+
+  <!-- 1. Önişlemci Kutusu -->
+  <rect x="40" y="50" width="160" height="70" rx="10" fill="url(#headerGrad)" filter="url(#shadow)" stroke="#b0c4de" stroke-width="1.5"/>
+  <text x="120" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e5c">Önişlemci</text>
+  <text x="120" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3d516e">#include</text>
+  <text x="120" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3d516e">&lt;stdio.h&gt;</text>
+
+  <!-- 2. Ana Fonksiyon Kutusu -->
+  <rect x="240" y="50" width="170" height="70" rx="10" fill="url(#mainGrad)" filter="url(#shadow)" stroke="#a8c8b0" stroke-width="1.5"/>
+  <text x="325" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e4a2e">Ana Fonksiyon</text>
+  <text x="325" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a5c3a">int main(void)</text>
+  <text x="325" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a5c3a">printf(...)</text>
+
+  <!-- 3. Çıktı Kutusu -->
+  <rect x="450" y="50" width="150" height="70" rx="10" fill="url(#outputGrad)" filter="url(#shadow)" stroke="#d4b88a" stroke-width="1.5"/>
+  <text x="525" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6b4e1e">Ekran Çıktısı</text>
+  <text x="525" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a5c28">"C Programlama Dili"</text>
+  <text x="525" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a5c28">return 0</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Ok 1: Önişlemci -> Ana Fonksiyon -->
+  <line x1="200" y1="85" x2="235" y2="85" stroke="#5a7a9a" stroke-width="2"/>
+  <polygon points="240,85 230,79 230,91" fill="#5a7a9a"/>
+
+  <!-- Ok 2: Ana Fonksiyon -> Çıktı -->
+  <line x1="410" y1="85" x2="445" y2="85" stroke="#5a7a9a" stroke-width="2"/>
+  <polygon points="450,85 440,79 440,91" fill="#5a7a9a"/>
+
+  <!-- Yorum Kutusu -->
+  <rect x="40" y="155" width="560" height="55" rx="10" fill="url(#commentGrad)" filter="url(#shadow)" stroke="#c8b5e0" stroke-width="1.5"/>
+  <text x="320" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a2a6b">Yorum Satırları</text>
+  <text x="320" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a3a7b">/* ... */ ile tanımlanır, derleyici tarafından yok sayılır</text>
+
+  <!-- Büyük/Küçük Harf Kutusu -->
+  <rect x="40" y="235" width="260" height="60" rx="10" fill="#fde8e8" filter="url(#shadow)" stroke="#e0b0b0" stroke-width="1.5"/>
+  <text x="170" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6b2a2a">Harf Duyarlılığı</text>
+  <text x="170" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a3a3a">"Fonksiyon" ve "fonksiyon"</text>
+  <text x="170" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a3a3a">farklı kabul edilir</text>
+
+  <!-- Derleme Kutusu -->
+  <rect x="340" y="235" width="260" height="60" rx="10" fill="#e8f0fe" filter="url(#shadow)" stroke="#b0c4de" stroke-width="1.5"/>
+  <text x="470" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e5c">Derleme Süreci</text>
+  <text x="470" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3d516e">Önişlemci işlemleri</text>
+  <text x="470" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3d516e">derlemeden önce yapılır</text>
+
+  <!-- Bağlantı çizgileri alt kısım -->
+  <line x1="170" y1="155" x2="170" y2="230" stroke="#9a8ab0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="470" y1="155" x2="470" y2="230" stroke="#9a8ab0" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Döngü oku: Çıktı -> Yorum -->
+  <path d="M 525 120 L 525 140 L 320 140 L 320 150" fill="none" stroke="#9a8ab0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="320,155 315,147 325,147" fill="#9a8ab0"/>
+
+  <!-- Küçük etiketler -->
+  <text x="120" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8899aa">1. Adım</text>
+  <text x="325" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8899aa">2. Adım</text>
+  <text x="525" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8899aa">3. Adım</text>
+</svg>

@@ -9,6 +9,7 @@ tags:
   - segment ağacı
   - fenwick ağacı
 toc: true
+image: /img/aralik-sorgularinin-iki-97.png
 ---
 
 Bir dizideki elemanlar sürekli değişirken belirli bir aralığın toplamını hızlıca bulmak istediğimizi düşünelim. Her sorguda aralığı baştan dolaşmak kolaydır; ancak veri büyüdüğünde işlemciniz küçük bir maraton koşmaya başlar. Segment ağacı ve Fenwick ağacı, aralık sorguları ile nokta güncellemelerini verimli biçimde birleştirerek bu sorunu çözer.
@@ -27,6 +28,9 @@ $n$ elemanlı bir dizide `a[i]` değerini değiştiren nokta güncellemeleri ve 
 | Prefix toplam | $O(1)$ | $O(n)$ | $O(n)$ |
 | Fenwick ağacı | $O(\log n)$ | $O(\log n)$ | $O(n)$ |
 | Segment ağacı | $O(\log n)$ | $O(\log n)$ | $O(n)$ |
+
+![aralik-sorgularinin-iki-97](/img/aralik-sorgularinin-iki-97.svg)
+
 
 ## Fenwick ağacı: Bitlerle çalışan kompakt çözüm
 

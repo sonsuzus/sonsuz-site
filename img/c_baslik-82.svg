@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9d5ff"/>
+      <stop offset="100%" stop-color="#d8b4fe"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fecdd3"/>
+      <stop offset="100%" stop-color="#fda4af"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#94a3b8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#1e293b">C Başlık Dosyası ve Önişlemci</text>
+
+  <!-- Kaynak kod kutusu -->
+  <rect x="30" y="55" width="180" height="70" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="120" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">Kaynak Kod</text>
+  <text x="120" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e40af">#include &lt;stdio.h&gt;</text>
+  <text x="120" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e40af">int main(void)</text>
+
+  <!-- Önişlemci kutusu -->
+  <rect x="270" y="55" width="160" height="70" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#fcd34d" stroke-width="1.5"/>
+  <text x="350" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#92400e">Önişlemci</text>
+  <text x="350" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b45309">Direktif İşlenir</text>
+  <text x="350" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b45309">Derleme Öncesi</text>
+
+  <!-- Başlık dosyası kutusu -->
+  <rect x="490" y="55" width="130" height="70" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#6ee7b7" stroke-width="1.5"/>
+  <text x="555" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#065f46">stdio.h</text>
+  <text x="555" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#047857">Başlık Dosyası</text>
+  <text x="555" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#047857">İçerik Dahil Edilir</text>
+
+  <!-- Ok 1: Kaynak -> Önişlemci -->
+  <path d="M210,90 L260,90" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="260,84 272,90 260,96" fill="#64748b"/>
+
+  <!-- Ok 2: Önişlemci -> Başlık -->
+  <path d="M430,90 L480,90" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="480,84 492,90 480,96" fill="#64748b"/>
+
+  <!-- Derleyici kutusu -->
+  <rect x="230" y="165" width="180" height="60" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#c4b5fd" stroke-width="1.5"/>
+  <text x="320" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5b21b6">Derleyici</text>
+  <text x="320" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6d28d9">Derleme İşlemi</text>
+
+  <!-- Çalıştırılabilir dosya kutusu -->
+  <rect x="230" y="255" width="180" height="50" rx="10" fill="url(#boxGrad5)" filter="url(#shadow)" stroke="#fda4af" stroke-width="1.5"/>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9f1239">Çalıştırılabilir</text>
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#be123c">Program</text>
+
+  <!-- Ok 3: Önişlemci -> Derleyici -->
+  <path d="M350,125 L350,155" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="344,155 350,167 356,155" fill="#64748b"/>
+
+  <!-- Ok 4: Derleyici -> Çalıştırılabilir -->
+  <path d="M320,225 L320,245" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="314,245 320,257 326,245" fill="#64748b"/>
+
+  <!-- printf fonksiyon kutusu -->
+  <rect x="440" y="165" width="170" height="60" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#6ee7b7" stroke-width="1.5"/>
+  <text x="525" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#065f46">printf()</text>
+  <text x="525" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#047857">Kütüphane Fonksiyonu</text>
+
+  <!-- Ok 5: Başlık -> printf -->
+  <path d="M555,125 L555,155" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="549,155 555,167 561,155" fill="#64748b"/>
+
+  <!-- Ekran çıktısı kutusu -->
+  <rect x="440" y="255" width="170" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="525" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">Ekran Çıktısı</text>
+  <text x="525" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e40af">"C Programlama Dili"</text>
+
+  <!-- Ok 6: printf -> Ekran -->
+  <path d="M525,225 L525,245" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="519,245 525,257 531,245" fill="#64748b"/>
+
+  <!-- Bilgi notu -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#64748b" font-style="italic">#include direktifi derleme öncesi başlık dosyasını programa dahil eder</text>
+</svg>
