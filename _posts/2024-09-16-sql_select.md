@@ -13,6 +13,7 @@ tags:
 redirect_from:
   - /posts/sql_select/
 toc: true
+image: /img/sql_select-99.png
 ---
 
 
@@ -37,6 +38,9 @@ Aşağıdaki personel adlı örnek tablo üzerinde işlemler yapmaya çalışal�
 | Mehmet | Keskin | Öğrenci | Kars | 28.08.1998 |
 | Seyfi | Coşar | Öğrenci | Kırşehir | 09.11.1996 |
 | Cihan | Özkan | Öğrenci | Sivas | 15.03.1997 |
+
+![sql_select-99](/img/sql_select-99.svg)
+
 
 Eğer aşağıdaki komutu kullanırsanız; personel tablosunda yer alan tüm sütunlarda yer alan veriler sonuç tablosuna aktarılır:
 

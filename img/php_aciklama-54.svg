@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="phpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8892bf"/>
+      <stop offset="100%" stop-color="#6a75a8"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e0f5"/>
+    </linearGradient>
+    <linearGradient id="commentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7e8"/>
+      <stop offset="100%" stop-color="#e2f0d8"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8e6"/>
+      <stop offset="100%" stop-color="#fdf0d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#4a5568">PHP Açıklama Yapıları</text>
+
+  <!-- PHP Dosyası Kutusu -->
+  <rect x="40" y="55" width="180" height="90" rx="10" fill="url(#phpGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="130" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">PHP Dosyası</text>
+  <text x="130" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e2e8f0">Kod + Açıklamalar</text>
+  <text x="130" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#cbd5e1">Birlikte İşlenir</text>
+
+  <!-- Açıklama Türleri -->
+  <!-- C Tipi -->
+  <rect x="260" y="55" width="160" height="70" rx="10" fill="url(#commentGrad)" filter="url(#shadow)"/>
+  <text x="340" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a5568">C Tipi</text>
+  <text x="340" y="96" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#2d3748">/* ... */</text>
+  <text x="340" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#718096">Çok Satırlı</text>
+
+  <!-- C++ Tipi -->
+  <rect x="260" y="140" width="160" height="70" rx="10" fill="url(#commentGrad)" filter="url(#shadow)"/>
+  <text x="340" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a5568">C++ Tipi</text>
+  <text x="340" y="181" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#2d3748">// ...</text>
+  <text x="340" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#718096">Tek Satırlı</text>
+
+  <!-- PHP Çevirici -->
+  <rect x="460" y="90" width="140" height="80" rx="10" fill="url(#codeGrad)" filter="url(#shadow)"/>
+  <text x="530" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a5568">PHP Çevirici</text>
+  <text x="530" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#718096">Açıklamaları</text>
+  <text x="530" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#718096">Görmezden Gelir</text>
+
+  <!-- Çıktı -->
+  <rect x="460" y="220" width="140" height="60" rx="10" fill="url(#outputGrad)" filter="url(#shadow)"/>
+  <text x="530" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a5568">Web Çıktısı</text>
+  <text x="530" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#718096">Sadece Kodlar</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- PHP Dosyası -> C Tipi -->
+  <line x1="220" y1="80" x2="255" y2="80" stroke="#718096" stroke-width="2"/>
+  <polygon points="258,80 248,75 248,85" fill="#718096"/>
+
+  <!-- PHP Dosyası -> C++ Tipi -->
+  <line x1="220" y1="100" x2="255" y2="165" stroke="#718096" stroke-width="2"/>
+  <polygon points="258,165 248,158 250,170" fill="#718096"/>
+
+  <!-- C Tipi -> PHP Çevirici -->
+  <line x1="420" y1="85" x2="455" y2="105" stroke="#718096" stroke-width="2"/>
+  <polygon points="458,107 447,103 452,114" fill="#718096"/>
+
+  <!-- C++ Tipi -> PHP Çevirici -->
+  <line x1="420" y1="165" x2="455" y2="145" stroke="#718096" stroke-width="2"/>
+  <polygon points="458,143 447,147 452,136" fill="#718096"/>
+
+  <!-- PHP Çevirici -> Çıktı -->
+  <line x1="530" y1="170" x2="530" y2="215" stroke="#718096" stroke-width="2"/>
+  <polygon points="530,218 525,208 535,208" fill="#718096"/>
+
+  <!-- Örnek Kod Küçük Kutusu -->
+  <rect x="40" y="180" width="180" height="100" rx="8" fill="#ffffff" filter="url(#shadow)" opacity="0.9"/>
+  <text x="50" y="200" font-family="Courier New, monospace" font-size="10" fill="#2d3748">&lt;?php</text>
+  <text x="50" y="216" font-family="Courier New, monospace" font-size="10" fill="#2d3748">echo "Merhaba";</text>
+  <text x="50" y="232" font-family="Courier New, monospace" font-size="10" fill="#6a75a8">/* yorum */</text>
+  <text x="50" y="248" font-family="Courier New, monospace" font-size="10" fill="#2d3748">echo "Dünya";</text>
+  <text x="50" y="264" font-family="Courier New, monospace" font-size="10" fill="#6a75a8">// yorum</text>
+  <text x="50" y="276" font-family="Courier New, monospace" font-size="10" fill="#2d3748">?&gt;</text>
+
+  <!-- Açıklama etiketi -->
+  <text x="130" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#718096" font-style="italic">Örnek Yapı</text>
+</svg>

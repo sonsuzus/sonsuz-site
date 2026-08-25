@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#d1ecf1"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3cd"/>
+      <stop offset="100%" stop-color="#ffeaa7"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4edda"/>
+      <stop offset="100%" stop-color="#c3e6cb"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8d7da"/>
+      <stop offset="100%" stop-color="#f1c0c0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d1ecf1"/>
+      <stop offset="100%" stop-color="#b8daff"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">C Önişlemci Direktifleri</text>
+
+  <!-- Ana Akış: Kaynak Kod -> Önişlemci -> Derleyici -->
+  <!-- Kaynak Kod Kutusu -->
+  <rect x="30" y="60" width="140" height="60" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#5bc0de" stroke-width="1.5"/>
+  <text x="100" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Kaynak Kod</text>
+  <text x="100" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">#define MAK01</text>
+
+  <!-- Ok 1: Kaynak -> Önişlemci -->
+  <path d="M170 90 L210 90" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <polygon points="210,84 222,90 210,96" fill="#2c3e50"/>
+
+  <!-- Önişlemci Kutusu -->
+  <rect x="225" y="60" width="140" height="60" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#f0ad4e" stroke-width="1.5"/>
+  <text x="295" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7d6608">Önişlemci</text>
+  <text x="295" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Makro Değişimi</text>
+
+  <!-- Ok 2: Önişlemci -> Derleyici -->
+  <path d="M365 90 L405 90" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <polygon points="405,84 417,90 405,96" fill="#2c3e50"/>
+
+  <!-- Derleyici Kutusu -->
+  <rect x="420" y="60" width="140" height="60" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#28a745" stroke-width="1.5"/>
+  <text x="490" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e5631">Derleyici</text>
+  <text x="490" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Çalıştırılabilir Kod</text>
+
+  <!-- Alt Bölüm: #define Yapısı -->
+  <text x="320" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">#define Yapısı</text>
+
+  <!-- Makro Adı Kutusu -->
+  <rect x="60" y="185" width="120" height="50" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#d9534f" stroke-width="1.5"/>
+  <text x="120" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#721c24">Makro Adı</text>
+  <text x="120" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">MAK01</text>
+
+  <!-- Karakter Dizisi Kutusu -->
+  <rect x="260" y="185" width="140" height="50" rx="10" fill="url(#box5)" filter="url(#shadow)" stroke="#0275d8" stroke-width="1.5"/>
+  <text x="330" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#0c5460">Karakter Dizisi</text>
+  <text x="330" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">"ABCDE"</text>
+
+  <!-- Kullanım Kutusu -->
+  <rect x="470" y="185" width="120" height="50" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#5bc0de" stroke-width="1.5"/>
+  <text x="530" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Kullanım</text>
+  <text x="530" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">printf(MAK01)</text>
+
+  <!-- Oklar arası -->
+  <path d="M180 210 L255 210" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <polygon points="255,204 267,210 255,216" fill="#2c3e50"/>
+
+  <path d="M400 210 L465 210" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <polygon points="465,204 477,210 465,216" fill="#2c3e50"/>
+
+  <!-- Alt Not -->
+  <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6c757d">Noktalı virgül kullanılmaz</text>
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6c757d">Büyük harf tercih edilir</text>
+</svg>

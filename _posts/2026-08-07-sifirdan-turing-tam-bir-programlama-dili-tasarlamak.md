@@ -9,6 +9,7 @@ tags:
   - lexer-parser
   - yorumlayıcı
 toc: true
+image: /img/sifirdan-turing-tam-40.png
 ---
 
 Bir programlama dili yapmak, bilgisayara yeni kelimeler öğretmekten çok daha fazlasıdır: Önce metni parçalara ayırır, sonra bu parçaların dilbilgisine uyup uymadığını denetler ve en sonunda anlamlarını çalıştırırsınız. Bu projede değişkenleri, aritmetik işlemleri, koşulları ve döngüleri destekleyen MiniLang adında küçük ama teorik olarak Turing tam bir dil tasarlayacağız.
@@ -24,6 +25,9 @@ Bir dil, yeterli zaman ve bellek verildiğinde herhangi bir hesaplanabilir algor
 | Hesaplama | `+`, `-`, `*`, `/` | Veriyi dönüştürmek |
 | Karar | `if` | Farklı yürütme yolları oluşturmak |
 | Tekrar | `while` | Sınırsız adım gerçekleştirmek |
+
+![sifirdan-turing-tam-40](/img/sifirdan-turing-tam-40.svg)
+
 
 Özellikle `while` döngüsü ve teorik olarak sınırsız büyüyebilen sayılar sayesinde dilimiz, bir sayaç makinesini simüle edebilir. Örneğin bir sayıyı tekrar tekrar azaltmak şu geçişi oluşturur:
 

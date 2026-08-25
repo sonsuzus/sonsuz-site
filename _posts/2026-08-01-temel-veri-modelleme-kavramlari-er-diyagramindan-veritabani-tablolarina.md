@@ -9,6 +9,7 @@ tags:
   - er diyagramı
   - veritabanı tasarımı
 toc: true
+image: /img/temel-veri-modelleme-53.png
 ---
 
 Bir veritabanı tasarlamak, gerçek dünyayı kutulara ve sütunlara sığdırma sanatıdır. Müşteriler, ürünler, siparişler veya öğrenciler gibi nesneleri doğru tanımlamazsak en hızlı veritabanı bile kısa sürede dijital bir çekmece karmaşasına dönüşebilir. Varlık-ilişki modeli, henüz SQL yazmadan önce bu dünyayı görselleştirmemizi ve olası tasarım hatalarını erkenden yakalamamızı sağlar.
@@ -85,3 +86,6 @@ Bu kodda `Siparis.musteri_id`, $1:N$ ilişkisinin çok tarafına yerleştirilmi�
 Tekrarlanan verileri azaltmak için her sütun tek bir gerçeği temsil etmeli, türetilebilen değerler gereksiz yere saklanmamalı ve yabancı anahtarlar bağlantı bütünlüğünü korumalıdır. Ayrıca opsiyonel ilişkiler ile zorunlu ilişkiler ayırt edilmelidir: Her siparişin müşterisi olmalıysa yabancı anahtar `NOT NULL` tanımlanır.
 
 İyi bir ER diyagramı yalnızca güzel kutulardan oluşmaz; iş kurallarının görsel sözleşmesidir. Önce varlıkları, ardından anahtarları ve çoklukları belirlemek, SQL aşamasında daha tutarlı, genişletilebilir ve bakımı kolay bir veritabanı ortaya çıkarır.
+
+![temel-veri-modelleme-53](/img/temel-veri-modelleme-53.svg)
+

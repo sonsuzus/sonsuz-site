@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d4eaf7"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9e8"/>
+      <stop offset="100%" stop-color="#e2f3d4"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf6e3"/>
+      <stop offset="100%" stop-color="#f9edd0"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde8f0"/>
+      <stop offset="100%" stop-color="#f8d4e3"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8eafd"/>
+      <stop offset="100%" stop-color="#d4d8f7"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">C Standart Kütüphanesi</text>
+
+  <!-- Merkez kutu -->
+  <rect x="245" y="50" width="150" height="50" rx="10" fill="url(#box1)" stroke="#7fb3d5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">ANSI C</text>
+  <text x="320" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Standart Kütüphane</text>
+
+  <!-- Başlık dosyaları grubu -->
+  <rect x="60" y="140" width="180" height="55" rx="10" fill="url(#box2)" stroke="#82c785" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="150" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Başlık Dosyaları</text>
+  <text x="150" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">.H uzantılı</text>
+
+  <rect x="400" y="140" width="180" height="55" rx="10" fill="url(#box3)" stroke="#d4a843" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="490" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">#include</text>
+  <text x="490" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Ön İşlemci Direktifi</text>
+
+  <!-- Alt gruplar -->
+  <rect x="60" y="230" width="120" height="55" rx="10" fill="url(#box4)" stroke="#d47fa8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="120" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Fonksiyonlar</text>
+  <text x="120" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Makrolar</text>
+
+  <rect x="220" y="230" width="120" height="55" rx="10" fill="url(#box5)" stroke="#8a8fd4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="280" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Veri Türleri</text>
+  <text x="280" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">Prototipler</text>
+
+  <rect x="380" y="230" width="120" height="55" rx="10" fill="url(#box2)" stroke="#82c785" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="440" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Girdi/Çıktı</text>
+  <text x="440" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">stdio.h</text>
+
+  <rect x="540" y="230" width="80" height="55" rx="10" fill="url(#box1)" stroke="#7fb3d5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Bellek</text>
+  <text x="580" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">stdlib.h</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Merkezden başlık dosyalarına -->
+  <path d="M 320 100 L 320 115 L 150 115 L 150 140" stroke="#7fb3d5" stroke-width="1.5" fill="none"/>
+  <polygon points="150,140 145,130 155,130" fill="#7fb3d5"/>
+
+  <!-- Merkezden include'a -->
+  <path d="M 320 100 L 320 115 L 490 115 L 490 140" stroke="#7fb3d5" stroke-width="1.5" fill="none"/>
+  <polygon points="490,140 485,130 495,130" fill="#7fb3d5"/>
+
+  <!-- Başlık dosyalarından fonksiyonlara -->
+  <path d="M 150 195 L 150 215 L 120 215 L 120 230" stroke="#82c785" stroke-width="1.5" fill="none"/>
+  <polygon points="120,230 115,220 125,220" fill="#82c785"/>
+
+  <!-- Başlık dosyalarından veri türlerine -->
+  <path d="M 150 195 L 150 215 L 280 215 L 280 230" stroke="#82c785" stroke-width="1.5" fill="none"/>
+  <polygon points="280,230 275,220 285,220" fill="#82c785"/>
+
+  <!-- Include'dan girdi/çıktıya -->
+  <path d="M 490 195 L 490 215 L 440 215 L 440 230" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+  <polygon points="440,230 435,220 445,220" fill="#d4a843"/>
+
+  <!-- Include'dan belleğe -->
+  <path d="M 490 195 L 490 215 L 580 215 L 580 230" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+  <polygon points="580,230 575,220 585,220" fill="#d4a843"/>
+
+  <!-- Yan not -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7f8c8d" font-style="italic">Derleyici ve IDE üreticileri özel kütüphaneler de sunar</text>
+</svg>

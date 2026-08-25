@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f7ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#eef7f0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e8f0fe;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fde8e8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e6f7e6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fef3e2;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect x="0" y="0" width="640" height="320" rx="12" fill="url(#bgGrad)"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">SQL DELETE Komutu</text>
+
+  <!-- Ana kutu: DELETE FROM -->
+  <rect x="220" y="55" width="200" height="45" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#b0c4de" stroke-width="1.5"/>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">DELETE FROM tablo</text>
+  <text x="320" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a6a7a">tablo_adı</text>
+
+  <!-- Ok: ana kutu -> WHERE -->
+  <path d="M 320 100 L 320 125" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="315,123 320,133 325,123" fill="#7f8c8d"/>
+
+  <!-- WHERE kutusu -->
+  <rect x="220" y="133" width="200" height="45" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#e8a0a0" stroke-width="1.5"/>
+  <text x="320" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">WHERE koşul</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a6a7a">sütun = değer</text>
+
+  <!-- İki yönlü dallanma -->
+  <path d="M 220 155 L 130 155" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <path d="M 420 155 L 510 155" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+
+  <!-- Sol: WHERE yok -->
+  <path d="M 130 155 L 130 200 L 160 200" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <polygon points="158,195 168,200 158,205" fill="#e74c3c"/>
+  <rect x="30" y="185" width="130" height="35" rx="8" fill="url(#boxGrad2)" filter="url(#shadowLight)" stroke="#e8a0a0" stroke-width="1.2"/>
+  <text x="95" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#c0392b">WHERE yok</text>
+  <text x="95" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a6a7a">Tüm kayıtlar silinir</text>
+
+  <!-- Sağ: WHERE var -->
+  <path d="M 510 155 L 510 200 L 480 200" stroke="#27ae60" stroke-width="2" fill="none"/>
+  <polygon points="482,195 472,200 482,205" fill="#27ae60"/>
+  <rect x="480" y="185" width="130" height="35" rx="8" fill="url(#boxGrad3)" filter="url(#shadowLight)" stroke="#a0d8a0" stroke-width="1.2"/>
+  <text x="545" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#27ae60">WHERE var</text>
+  <text x="545" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a6a7a">Koşula uyanlar silinir</text>
+
+  <!-- Alt kısım: Örnek -->
+  <rect x="140" y="245" width="360" height="55" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#e8c880" stroke-width="1.5"/>
+  <text x="320" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Örnek: personel tablosu</text>
+  <text x="320" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a6a7a">Adi='Seyfi' ve Soyadi='Coşar'</text>
+
+  <!-- Ok: WHERE -> Örnek -->
+  <path d="M 320 178 L 320 240" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="315,238 320,248 325,238" fill="#7f8c8d"/>
+
+  <!-- Silinen kayıt görseli -->
+  <rect x="530" y="245" width="90" height="55" rx="8" fill="#f9f9f9" filter="url(#shadowLight)" stroke="#d0d0d0" stroke-width="1"/>
+  <text x="575" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#e74c3c">Silinen</text>
+  <text x="575" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">Seyfi Coşar</text>
+  <line x1="540" y1="288" x2="610" y2="288" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="575" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#e74c3c">kayıt</text>
+
+  <!-- Ok: Örnek -> Silinen -->
+  <path d="M 500 272 L 525 272" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <polygon points="523,267 533,272 523,277" fill="#e74c3c"/>
+</svg>

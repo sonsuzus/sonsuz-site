@@ -9,9 +9,13 @@ tags:
   - gradient-descent
   - makine-öğrenmesi
 toc: true
+image: /img/hata-yuzeyinde-yolculuk-54.png
 ---
 
 Bir makine öğrenmesi modelini eğitmek, sisli bir dağda en alçak noktayı bulmaya benzer. Modelin parametreleri bulunduğumuz konumu, hata fonksiyonu yüksekliği, optimizasyon algoritması ise hangi yöne adım atacağımızı belirler. Gradient Descent bu yolculuğun klasik pusulasıyken Adam ve RMSprop, arazi koşullarına göre adımlarını ayarlayan daha modern navigasyon sistemleridir.
+
+![hata-yuzeyinde-yolculuk-54](/img/hata-yuzeyinde-yolculuk-54.svg)
+
 ``
 ## Optimizasyonun temel amacı
 

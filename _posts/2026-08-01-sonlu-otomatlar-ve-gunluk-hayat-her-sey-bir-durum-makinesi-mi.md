@@ -9,6 +9,7 @@ tags:
   - teorik bilgisayar bilimi
   - durum makineleri
 toc: true
+image: /img/sonlu-otomatlar-ve-25.png
 ---
 
 Sabah alarmı çalar, ertelersin, yeniden çalar ve sonunda yataktan kalkarsın. Kavşakta kırmızı söner, yeşil yanar; bir süre sonra sıra sarıya gelir. Bu olaylar farklı görünse de ortak bir fikir taşır: Sistem, bulunduğu **duruma** ve aldığı **girdiye** göre başka bir duruma geçer. Teorik bilgisayar biliminde bu davranışı modellemek için sonlu otomatlardan yararlanırız.
@@ -86,3 +87,6 @@ Birçok sistemi durum makinesi **olarak modelleyebiliriz**, fakat bu onların b�
 Örneğin sonlu otomat dengeli parantezleri sınırsız uzunlukta doğrulayamaz; kaç parantezin açık kaldığını hatırlamak için yığıt gerekir. Bu görevde **yığıtlı otomat** daha uygundur.
 
 Sonlu otomatların gündelik hayata uygulanmasındaki asıl kazanç, insanı robota indirgemek değildir. Kazanç; karmaşık bir süreci durumlara, girdilere ve geçişlere ayırarak daha net düşünmektir. Bir dahaki sefere “Neden yine erteledim?” diye sorduğunda belki de suçlu karakterin değil, yanlış tasarlanmış geçiş fonksiyonundur!
+
+![sonlu-otomatlar-ve-25](/img/sonlu-otomatlar-ve-25.svg)
+

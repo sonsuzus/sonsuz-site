@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="entity" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#c9e1fb"/>
+    </linearGradient>
+    <linearGradient id="relation" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#f8dfa0"/>
+    </linearGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3f4e5"/>
+      <stop offset="100%" stop-color="#cce9d3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#658096" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#658096" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="59" cy="38" r="65" fill="#d8eff4" opacity="0.48"/>
+  <circle cx="600" cy="281" r="86" fill="#dff0d4" opacity="0.5"/>
+
+  <text x="26" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5c6e">ER MODELİ</text>
+  <text x="461" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6d58">İLİŞKİSEL TABLOLAR</text>
+
+  <!-- ER side connections -->
+  <path d="M148 103 L194 139" fill="none" stroke="#7194aa" stroke-width="2"/>
+  <polygon points="194,139 185,136 189,130" fill="#7194aa"/>
+  <path d="M148 218 L194 177" fill="none" stroke="#7194aa" stroke-width="2"/>
+  <polygon points="194,177 187,186 182,179" fill="#7194aa"/>
+  <path d="M267 157 L297 157" fill="none" stroke="#7194aa" stroke-width="2"/>
+  <polygon points="297,157 288,152 288,162" fill="#7194aa"/>
+  <path d="M381 157 L408 157" fill="none" stroke="#7194aa" stroke-width="2"/>
+  <polygon points="408,157 399,152 399,162" fill="#7194aa"/>
+
+  <!-- customer entity -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="61" width="114" height="80" rx="16" fill="url(#entity)" stroke="#a8cae2"/>
+    <rect x="35" y="61" width="114" height="29" rx="16" fill="#b9daf2"/>
+    <path d="M35 76 L149 76" stroke="#a1c6e0"/>
+  </g>
+  <text x="92" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566f">Müşteri</text>
+  <text x="48" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466879">● musteri_id</text>
+  <text x="48" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466879">ad, eposta</text>
+
+  <!-- product entity -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="178" width="114" height="80" rx="16" fill="url(#entity)" stroke="#a8cae2"/>
+    <rect x="35" y="178" width="114" height="29" rx="16" fill="#b9daf2"/>
+    <path d="M35 193 L149 193" stroke="#a1c6e0"/>
+  </g>
+  <text x="92" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566f">Ürün</text>
+  <text x="48" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466879">● urun_id</text>
+  <text x="48" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466879">ad, fiyat</text>
+
+  <!-- relationship -->
+  <g filter="url(#smallShadow)">
+    <path d="M230 120 L267 157 L230 194 L193 157 Z" fill="url(#relation)" stroke="#e3bb60"/>
+  </g>
+  <text x="230" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79571b">Sipariş</text>
+  <text x="230" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79571b">verir</text>
+  <text x="163" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#54768c">1</text>
+  <text x="165" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#54768c">N</text>
+
+  <!-- order entity -->
+  <g filter="url(#shadow)">
+    <rect x="298" y="113" width="84" height="88" rx="16" fill="url(#entity)" stroke="#a8cae2"/>
+    <rect x="298" y="113" width="84" height="29" rx="16" fill="#b9daf2"/>
+    <path d="M298 128 L382 128" stroke="#a1c6e0"/>
+  </g>
+  <text x="340" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566f">Sipariş</text>
+  <text x="309" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466879">● siparis_id</text>
+  <text x="309" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466879">tarih</text>
+  <text x="389" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#54768c">N:M</text>
+
+  <!-- transform arrow -->
+  <path d="M422 70 L422 256" stroke="#8ca7a2" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="422,256 416,245 428,245" fill="#71928b"/>
+  <text x="434" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58726e">Dönüşüm</text>
+
+  <!-- Tables -->
+  <g filter="url(#shadow)">
+    <rect x="454" y="47" width="151" height="66" rx="14" fill="url(#table)" stroke="#acd2b6"/>
+    <rect x="454" y="47" width="151" height="27" rx="14" fill="#bfe1c5"/>
+    <path d="M454 61 L605 61" stroke="#9fcaa8"/>
+  </g>
+  <text x="529" y="66" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d45">Musteri</text>
+  <text x="466" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6e53">PK  musteri_id</text>
+  <text x="466" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6e53">ad, eposta</text>
+
+  <g filter="url(#shadow)">
+    <rect x="454" y="128" width="151" height="72" rx="14" fill="url(#table)" stroke="#acd2b6"/>
+    <rect x="454" y="128" width="151" height="27" rx="14" fill="#bfe1c5"/>
+    <path d="M454 142 L605 142" stroke="#9fcaa8"/>
+  </g>
+  <text x="529" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d45">Siparis</text>
+  <text x="466" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6e53">PK  siparis_id</text>
+  <text x="466" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6e53">FK  musteri_id</text>
+
+  <g filter="url(#shadow)">
+    <rect x="454" y="216" width="151" height="76" rx="14" fill="url(#table)" stroke="#acd2b6"/>
+    <rect x="454" y="216" width="151" height="27" rx="14" fill="#bfe1c5"/>
+    <path d="M454 230 L605 230" stroke="#9fcaa8"/>
+  </g>
+  <text x="529" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d45">SiparisKalemi</text>
+  <text x="466" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6e53">PK  siparis_id</text>
+  <text x="466" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6e53">PK  urun_id, miktar</text>
+
+  <!-- foreign key connectors -->
+  <path d="M529 113 L529 127" stroke="#629577" stroke-width="2"/>
+  <polygon points="529,127 524,119 534,119" fill="#629577"/>
+  <path d="M529 200 L529 215" stroke="#629577" stroke-width="2"/>
+  <polygon points="529,215 524,207 534,207" fill="#629577"/>
+</svg>

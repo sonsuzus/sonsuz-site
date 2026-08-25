@@ -8,9 +8,13 @@ tags:
   - makine öğrenmesi
   - gradient descent
   - optimizasyon
+image: /img/gradyan-inisi-kayip-93.png
 ---
 
 Makine öğrenmesinde model eğitmek, çoğu zaman sisli ve çok boyutlu bir vadide en alçak noktayı aramaya benzer. Bu vadinin yüksekliği **kayıp fonksiyonu** ile ölçülür: Modelin tahminleri hedeflerden ne kadar uzaksa rakım o kadar artar. Gradyan inişi (Gradient Descent), hangi yöne yürünürse kaybın en hızlı azalacağını hesaplayıp modeli adım adım daha iyi parametrelere taşıyan temel optimizasyon algoritmasıdır.
+
+![gradyan-inisi-kayip-93](/img/gradyan-inisi-kayip-93.svg)
+
 ``
 
 Bir modelin parametrelerini $\theta$ ile, kayıp fonksiyonunu ise $J(\theta)$ ile gösterelim. Amaç basittir: $J(\theta)$ değerini mümkün olduğunca küçültmek. Ancak parametre sayısı yüzlerce, milyonlarca hatta milyarlarca olabilir. Bu nedenle tüm olasılıkları denemek hem pratik dışıdır hem de hesaplama açısından pahalıdır.

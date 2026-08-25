@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf9"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ede7f6"/>
+      <stop offset="100%" stop-color="#d1c4e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Ana başlık -->
+  <text x="320" y="35" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">typedef ile Veri Türü Tanımlama</text>
+
+  <!-- Merkez kutu: typedef -->
+  <rect x="245" y="55" width="150" height="45" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="320" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1565c0">typedef</text>
+
+  <!-- Sol üst: Genel yapı -->
+  <rect x="40" y="55" width="170" height="55" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#ffb74d" stroke-width="1.5"/>
+  <text x="125" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Genel Yapı</text>
+  <text x="125" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#bf360c">typedef eski-isim yeni-isim;</text>
+
+  <!-- Sağ üst: Örnek kullanım -->
+  <rect x="430" y="55" width="170" height="55" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#81c784" stroke-width="1.5"/>
+  <text x="515" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">Örnek Tanım</text>
+  <text x="515" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b5e20">typedef int tms;</text>
+
+  <!-- Oklar merkezden -->
+  <!-- Sol ok -->
+  <path d="M245 77 L215 77" stroke="#90a4ae" stroke-width="2" fill="none"/>
+  <polygon points="210,77 220,72 220,82" fill="#90a4ae"/>
+
+  <!-- Sağ ok -->
+  <path d="M395 77 L425 77" stroke="#90a4ae" stroke-width="2" fill="none"/>
+  <polygon points="430,77 420,72 420,82" fill="#90a4ae"/>
+
+  <!-- Alt sol: Değişken bildirimi -->
+  <rect x="40" y="150" width="170" height="55" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#f06292" stroke-width="1.5"/>
+  <text x="125" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#c2185b">Değişken Bildirimi</text>
+  <text x="125" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#880e4f">tms id;</text>
+
+  <!-- Alt orta: Program -->
+  <rect x="245" y="150" width="150" height="55" rx="10" fill="url(#box5)" filter="url(#shadow)" stroke="#9575cd" stroke-width="1.5"/>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4527a0">Program</text>
+  <text x="320" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#311b92">id = 21;</text>
+
+  <!-- Alt sağ: Çıktı -->
+  <rect x="430" y="150" width="170" height="55" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#64b5f6" stroke-width="1.5"/>
+  <text x="515" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1565c0">Ekran Çıktısı</text>
+  <text x="515" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#0d47a1">21</text>
+
+  <!-- Alt oklar -->
+  <path d="M125 115 L125 145" stroke="#90a4ae" stroke-width="2" fill="none"/>
+  <polygon points="125,150 120,140 130,140" fill="#90a4ae"/>
+
+  <path d="M320 105 L320 145" stroke="#90a4ae" stroke-width="2" fill="none"/>
+  <polygon points="320,150 315,140 325,140" fill="#90a4ae"/>
+
+  <path d="M515 115 L515 145" stroke="#90a4ae" stroke-width="2" fill="none"/>
+  <polygon points="515,150 510,140 520,140" fill="#90a4ae"/>
+
+  <!-- Alt bağlantılar -->
+  <path d="M125 205 L125 240" stroke="#90a4ae" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <path d="M320 205 L320 240" stroke="#90a4ae" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <path d="M515 205 L515 240" stroke="#90a4ae" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+
+  <!-- Alt bilgi -->
+  <rect x="170" y="245" width="300" height="45" rx="10" fill="#ffffff" filter="url(#shadow)" stroke="#b0bec5" stroke-width="1" opacity="0.9"/>
+  <text x="320" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#37474f">typedef mevcut türü geçersiz kılmaz</text>
+  <text x="320" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#546e7a">int hala kullanılabilir</text>
+
+  <!-- Alt bilgiye bağlantı -->
+  <path d="M200 245 L200 235" stroke="#90a4ae" stroke-width="1.5" fill="none"/>
+  <path d="M320 245 L320 235" stroke="#90a4ae" stroke-width="1.5" fill="none"/>
+  <path d="M440 245 L440 235" stroke="#90a4ae" stroke-width="1.5" fill="none"/>
+</svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="valley" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#d7eaff"/>
+      <stop offset="0.48" stop-color="#bdd9f4"/>
+      <stop offset="1" stop-color="#9cc8bc"/>
+    </linearGradient>
+    <linearGradient id="adam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9c8fa"/>
+      <stop offset="1" stop-color="#b6a3e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#57708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#426378" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="68" cy="48" r="52" fill="#cce9ee" opacity="0.3"/>
+  <circle cx="588" cy="276" r="72" fill="#dcebd1" opacity="0.35"/>
+  <path d="M21 242 C90 209 130 271 194 238 S310 207 376 238 S500 276 620 214" fill="none" stroke="#c5ddd5" stroke-width="2" opacity="0.6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="28" width="139" height="70" rx="18" fill="#ffffff"/>
+    <circle cx="50" cy="53" r="13" fill="#f6c9bd"/>
+    <path d="M44 53 L49 58 L58 47" fill="none" stroke="#a85047" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355269">Kayıp Fonksiyonu</text>
+    <text x="72" y="71" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718796">J(θ) · hata yüzeyi</text>
+  </g>
+
+  <path d="M164 63 L197 63" fill="none" stroke="#7895a6" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="199,63 191,58 191,68" fill="#7895a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="200" y="24" width="238" height="80" rx="20" fill="#ffffff"/>
+    <text x="222" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5970">Hata Yüzeyi</text>
+    <text x="222" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738897">Gradyanın tersine ilerle</text>
+    <path d="M349 43 C373 33 405 41 417 61 C426 77 405 88 378 85 C348 82 333 70 349 43Z" fill="#e5f2f0"/>
+    <path d="M356 49 C374 42 397 48 405 61 C410 70 396 78 380 76 C363 75 350 64 356 49Z" fill="#c4e1d7"/>
+    <circle cx="381" cy="63" r="6" fill="#4fa082"/>
+    <path d="M340 38 L353 46" stroke="#7a96ac" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="355,47 347,45 350,40" fill="#7a96ac"/>
+  </g>
+
+  <path d="M439 63 L469 63" fill="none" stroke="#7895a6" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="471,63 463,58 463,68" fill="#7895a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="472" y="28" width="143" height="70" rx="18" fill="#ffffff"/>
+    <circle cx="499" cy="53" r="13" fill="#cce8d6"/>
+    <path d="M493 54 L497 58 L506 47" fill="none" stroke="#3e9271" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="520" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355269">Parametreler</text>
+    <text x="520" y="71" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718796">θ → θ*</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="113" y="140" width="414" height="142" rx="25" fill="#ffffff"/>
+    <text x="137" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5b72">Optimizasyon Yolculuğu</text>
+
+    <path d="M138 239 C164 176 201 253 228 228 C255 203 266 172 294 201 C318 226 338 258 373 240 C412 220 435 176 497 183 L497 253 L138 253Z" fill="url(#valley)" opacity="0.85"/>
+    <path d="M138 239 C164 176 201 253 228 228 C255 203 266 172 294 201 C318 226 338 258 373 240 C412 220 435 176 497 183" fill="none" stroke="#8cb7c7" stroke-width="2.2"/>
+    <path d="M147 245 C178 222 201 242 229 230 C257 218 269 195 295 204 C324 214 344 250 376 240 C410 230 438 191 492 190" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.65"/>
+
+    <g filter="url(#softShadow)">
+      <rect x="137" y="177" width="94" height="35" rx="12" fill="#ffe6bf"/>
+      <text x="157" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a6032">Gradient</text>
+    </g>
+    <path d="M184 213 L194 230" fill="none" stroke="#d29143" stroke-width="2.3" stroke-linecap="round"/>
+    <polygon points="195,233 187,228 193,225" fill="#d29143"/>
+
+    <g filter="url(#softShadow)">
+      <rect x="252" y="136" width="100" height="36" rx="12" fill="#d8eff2"/>
+      <text x="272" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#367582">Momentum</text>
+    </g>
+    <path d="M300 173 C304 181 305 187 302 193" fill="none" stroke="#4c9ba9" stroke-width="2.3" stroke-linecap="round"/>
+    <polygon points="302,196 297,188 306,189" fill="#4c9ba9"/>
+
+    <g filter="url(#softShadow)">
+      <rect x="384" y="151" width="91" height="35" rx="12" fill="#d7ead0"/>
+      <text x="401" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#54834b">RMSprop</text>
+    </g>
+    <path d="M424 187 L405 223" fill="none" stroke="#609b5b" stroke-width="2.3" stroke-linecap="round"/>
+    <polygon points="403,226 404,217 412,221" fill="#609b5b"/>
+
+    <circle cx="373" cy="240" r="14" fill="#ffffff" opacity="0.9"/>
+    <circle cx="373" cy="240" r="8" fill="#4da486"/>
+    <circle cx="373" cy="240" r="3" fill="#ffffff"/>
+    <text x="356" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39745f">Minimum θ*</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="451" y="212" width="137" height="64" rx="18" fill="url(#adam)"/>
+    <circle cx="477" cy="237" r="13" fill="#f1ebff"/>
+    <path d="M470 240 C475 229 481 229 485 240" fill="none" stroke="#735ca5" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="475" cy="235" r="1.7" fill="#735ca5"/>
+    <circle cx="481" cy="235" r="1.7" fill="#735ca5"/>
+    <text x="500" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#44356d">Adam</text>
+    <text x="500" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665587">Uyarlanır adım</text>
+  </g>
+
+  <path d="M451 244 L423 244" fill="none" stroke="#826dac" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="421,244 429,239 429,249" fill="#826dac"/>
+
+  <g opacity="0.72">
+    <circle cx="72" cy="279" r="4" fill="#89b8c4"/>
+    <circle cx="86" cy="279" r="4" fill="#aacdd2"/>
+    <circle cx="100" cy="279" r="4" fill="#d2e3c4"/>
+    <text x="24" y="306" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f8792">Öğrenme oranı · η</text>
+  </g>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f4e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7c9bb5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7791aa" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="42" r="48" fill="#dcedfa" opacity="0.45"/>
+  <circle cx="590" cy="285" r="72" fill="#dff3d9" opacity="0.48"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426078">Beyinden Koda</text>
+  <text x="28" y="46" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71899a">Algılayıcı ve karar sınırı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="78" width="126" height="178" rx="18" fill="#fffdf9"/>
+  </g>
+  <text x="48" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6678">Girdiler</text>
+
+  <g filter="url(#soft)">
+    <rect x="45" y="122" width="89" height="28" rx="11" fill="#e6f1ff"/>
+    <rect x="45" y="165" width="89" height="28" rx="11" fill="#eaf8e9"/>
+    <rect x="45" y="208" width="89" height="28" rx="11" fill="#fff0d9"/>
+  </g>
+  <circle cx="61" cy="136" r="6" fill="#76aee7"/>
+  <circle cx="61" cy="179" r="6" fill="#76c493"/>
+  <circle cx="61" cy="222" r="6" fill="#edb76c"/>
+  <text x="76" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486277">x₁ · w₁</text>
+  <text x="76" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486277">x₂ · w₂</text>
+  <text x="76" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486277">bias · b</text>
+
+  <path d="M134 136 C159 136 161 143 184 143" fill="none" stroke="#87a7c0" stroke-width="2.2"/>
+  <polygon points="184,143 176,138 176,148" fill="#87a7c0"/>
+  <path d="M134 179 C158 179 163 160 184 160" fill="none" stroke="#87a7c0" stroke-width="2.2"/>
+  <polygon points="184,160 176,155 176,165" fill="#87a7c0"/>
+  <path d="M134 222 C157 222 163 178 184 178" fill="none" stroke="#87a7c0" stroke-width="2.2"/>
+  <polygon points="184,178 176,173 176,183" fill="#87a7c0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="184" y="91" width="185" height="153" rx="25" fill="url(#core)" stroke="#c3dbeb"/>
+  </g>
+  <circle cx="276" cy="151" r="42" fill="#f8fcff" stroke="#a6c8df" stroke-width="2"/>
+  <path d="M252 151 H300 M276 127 V175" stroke="#7eabc8" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="276" cy="151" r="10" fill="#8bc5a0"/>
+  <text x="225" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6075">Algılayıcı</text>
+  <text x="212" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547184">Ağırlıklı toplam</text>
+  <text x="238" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547184">z ve aktivasyon</text>
+
+  <path d="M369 159 H397" fill="none" stroke="#709fbd" stroke-width="2.5"/>
+  <polygon points="397,159 388,154 388,164" fill="#709fbd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="397" y="110" width="96" height="98" rx="17" fill="#fffdf8"/>
+  </g>
+  <path d="M417 177 H473" stroke="#d4e1e9" stroke-width="1.4"/>
+  <path d="M418 183 L472 130" stroke="#668fb2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="429" cy="168" r="5" fill="#e98587"/>
+  <circle cx="444" cy="154" r="5" fill="#e98587"/>
+  <circle cx="456" cy="144" r="5" fill="#79bc91"/>
+  <circle cx="468" cy="132" r="5" fill="#79bc91"/>
+  <text x="412" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b687c">Karar sınırı</text>
+  <text x="421" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688294">Doğrusal</text>
+
+  <path d="M493 159 H517" fill="none" stroke="#709fbd" stroke-width="2.5"/>
+  <polygon points="517,159 508,154 508,164" fill="#709fbd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="517" y="125" width="94" height="68" rx="18" fill="#e9f7ec"/>
+  </g>
+  <circle cx="541" cy="159" r="15" fill="#8ac69d"/>
+  <path d="M534 159 L539 164 L549 153" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="563" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426c55">Tahmin</text>
+  <text x="574" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638271">y: 0 veya 1</text>
+
+  <path d="M446 217 C423 279 280 291 230 250" fill="none" stroke="#c28eb6" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <polygon points="230,250 237,252 234,243" fill="#c28eb6"/>
+  <g filter="url(#soft)">
+    <rect x="290" y="257" width="137" height="36" rx="14" fill="#f9eafa"/>
+  </g>
+  <text x="307" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76526f">Hata ile güncelle</text>
+
+  <g filter="url(#soft)">
+    <rect x="470" y="244" width="140" height="48" rx="15" fill="#fff5e5"/>
+  </g>
+  <text x="485" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#86623c">XOR sınırı</text>
+  <text x="485" y="281" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#957653">Tek doğru yetmez</text>
+  <circle cx="578" cy="258" r="4" fill="#df7d7d"/>
+  <circle cx="593" cy="276" r="4" fill="#df7d7d"/>
+  <circle cx="593" cy="258" r="4" fill="#78b88c"/>
+  <circle cx="578" cy="276" r="4" fill="#78b88c"/>
+</svg>

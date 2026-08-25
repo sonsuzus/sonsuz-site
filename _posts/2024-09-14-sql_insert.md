@@ -11,7 +11,11 @@ tags:
   - veri tabanı
 redirect_from:
   - /posts/sql_insert/
+image: /img/sql_insert-51.png
 ---
+
+![sql_insert-51](/img/sql_insert-51.svg)
+
 
 
 INSERT INTO komutu bir veritabanında yer alan tablolara yeni kayıt eklemek için kullanılır. Eklenen her bir kayıt tabloya yeni bir satır ekler.

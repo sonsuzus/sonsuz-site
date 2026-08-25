@@ -10,6 +10,7 @@ tags:
   - açıklama
 redirect_from:
   - /posts/php_aciklama/
+image: /img/php_aciklama-54.png
 ---
 
 
@@ -59,3 +60,6 @@ Bu ikinci PHP yazısıdır!
 ```
 
 PHP komutları içinde kullanılan açıklama satırları hiç yazılmamış gibi işlem görmektedir.
+
+![php_aciklama-54](/img/php_aciklama-54.svg)
+

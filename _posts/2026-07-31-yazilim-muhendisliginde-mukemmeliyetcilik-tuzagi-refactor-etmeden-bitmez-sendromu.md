@@ -9,6 +9,7 @@ tags:
   - mükemmeliyetçilik
   - refactoring
 toc: true
+image: /img/yazilim-muhendisliginde-mukemmeliyetcilik-96.png
 ---
 
 Bir özellik testlerden geçiyor, gereksinimleri karşılıyor ve kullanıcıya değer sunuyor. Yine de içimizdeki küçük yazılım mimarı fısıldıyor: “Şu sınıfı da bölelim, isimleri düzeltelim, hatta altyapıyı baştan yazalım.” Böylece iki saatlik görev, üç günlük mimari yolculuğa dönüşüyor. Refactoring yararlı bir pratik olsa da kusursuzluk arayışının bahanesine dönüştüğünde teslim tarihlerini, ekip güvenini ve geliştiricinin psikolojik dayanıklılığını tehdit edebilir.
@@ -34,6 +35,9 @@ Her düzenleme kısa süreli rahatlama sağlar. Ancak teslim tarihi yaklaştık�
 | Teknik borcu bilinçli yönetir | Her borcu hemen kapatmaya çalışır |
 | Geri bildirimi erken alır | Eleştiriden kaçınmak için teslimi erteler |
 | Küçük ve güvenli değişiklikler yapar | Büyük yeniden yazımlara yönelir |
+
+![yazilim-muhendisliginde-mukemmeliyetcilik-96](/img/yazilim-muhendisliginde-mukemmeliyetcilik-96.svg)
+
 
 Ekonomik açıdan da her iyileştirme mantıklı değildir. Bir refactoring kararının yaklaşık değeri şu şekilde düşünülebilir:
 

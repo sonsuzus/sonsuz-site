@@ -9,6 +9,7 @@ tags:
   - k-means
   - hiyerarşik kümeleme
 toc: true
+image: /img/etiketsiz-verinin-dedektifleri-46.png
 ---
 
 Bir veri kümesinde hangi kayıtların birbirine benzediğini biliyor, fakat onları açıklayan hazır etiketlere sahip olmuyoruz. İşte denetimsiz öğrenme tam bu noktada sahneye çıkar: Veriye “Bunlar hangi sınıfa ait?” diye sormak yerine, “Burada kendiliğinden oluşan nasıl bir yapı var?” diye bakar. Müşteri segmentasyonu, belge gruplama, anomali keşfi ve biyolojik veri analizi bu yaklaşımın yaygın kullanım alanlarıdır.
@@ -85,3 +86,6 @@ Ward yöntemi, birleşmeler sonucunda oluşan küme içi varyans artışını d�
 ## Hangisini seçmeliyiz?
 
 Büyük, sayısal ve yaklaşık küresel gruplara sahip verilerde K-Means iyi bir başlangıçtır. Küme sayısı bilinmiyorsa veya gruplar arasındaki soy ağacı benzeri ilişki incelenecekse hiyerarşik kümeleme daha açıklayıcıdır. Yine de sonuçlar mutlak gerçek olarak görülmemelidir. Özellik seçimi, ölçekleme, uzaklık metriği ve alan bilgisi değiştiğinde kümeler de değişebilir. Denetimsiz öğrenme sihirli bir etiket makinesi değil; verinin fısıltılarını duyulur hâle getiren güçlü bir keşif aracıdır.
+
+![etiketsiz-verinin-dedektifleri-46](/img/etiketsiz-verinin-dedektifleri-46.svg)
+

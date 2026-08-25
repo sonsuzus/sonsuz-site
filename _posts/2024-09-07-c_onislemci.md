@@ -10,7 +10,11 @@ tags:
 redirect_from:
   - /posts/c_onislemci/
 toc: true
+image: /img/c_onislemci-49.png
 ---
+
+![c_onislemci-49](/img/c_onislemci-49.svg)
+
 
 
 Derleme işleminin ilk safhasında, önişlemci derleyiciye bazı direktifler ulaştırır. Derleyici tarafından bazı özel işlemlerin yapılmasını sağlayan bu direktiflere Önişlemci Direktifleri adı verilir. Şimdi, önişlemci direktiflerini sıra ile incelemeye çalışalım:

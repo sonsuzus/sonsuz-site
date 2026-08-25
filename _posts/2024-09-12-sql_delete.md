@@ -11,7 +11,11 @@ tags:
   - veri tabanı
 redirect_from:
   - /posts/sql_delete/
+image: /img/sql_delete-14.png
 ---
+
+![sql_delete-14](/img/sql_delete-14.svg)
+
 
 
 DELETE komutu bir veritabanındaki tablolarda yer alan kayıtları silmek için kullanılır.

@@ -9,6 +9,7 @@ tags:
   - loglama
   - veritabanı
 toc: true
+image: /img/try-catch-ve-59.png
 ---
 
 Bir uygulamanın hiç hata üretmemesi güzel bir hayaldir; ancak gerçek dünyada ağ bağlantıları kopar, veritabanları kısa süreliğine erişilemez olur ve kullanıcılar sayısal alana “patates” yazabilir. Profesyonel yazılımın amacı hataları tamamen yok etmekten çok, oluşan hataları kontrollü biçimde yönetmek, kullanıcıya güvenli bir mesaj göstermek ve geliştiriciye sorunu araştırabileceği kayıtlar bırakmaktır.
@@ -29,6 +30,9 @@ Loglama hata olasılığını azaltmaz; fakat teşhis süresini ve dolayısıyla
 | Hata yakalanmaz | Teknik hata veya kapanan uygulama | Eksik bilgi | Kötü deneyim |
 | Sadece `catch` kullanılır | Genel mesaj | Çok az ayrıntı | Sorun gizlenebilir |
 | `catch` ve loglama kullanılır | Güvenli, anlaşılır mesaj | Zaman, konum ve hata ayrıntısı | Kontrollü yönetim |
+
+![try-catch-ve-59](/img/try-catch-ve-59.svg)
+
 
 ## Basit bir C# örneği
 

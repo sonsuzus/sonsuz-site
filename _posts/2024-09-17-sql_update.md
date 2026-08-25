@@ -11,6 +11,7 @@ tags:
   - update
 redirect_from:
   - /posts/sql_update/
+image: /img/sql_update-37.png
 ---
 
 
@@ -33,6 +34,9 @@ Aşağıdaki personel adlı örnek tablo üzerinde işlemler yapmaya çalışal�
 | Mehmet | Keskin | Öğrenci | Kars | 28.08.1998 |
 | Seyfi | Coşar | Öğrenci | Kırşehir | 09.11.1996 |
 | Cihan | Özkan | Öğrenci | Sivas | 15.03.1997 |
+
+![sql_update-37](/img/sql_update-37.svg)
+
 
 Eğer aşağıdaki komutu kullanırsanız; "Seyfi Coşar" isimli kaydın ismi "Nedim Özdemir" olarak değiştirilir:
 

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#d1e8f0"/>
+    </linearGradient>
+    <linearGradient id="binaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e3f2fd"/>
+      <stop offset="100%" stop-color="#bbdefb"/>
+    </linearGradient>
+    <linearGradient id="octalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="decimalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Merkez düğüm -->
+  <circle cx="320" cy="160" r="52" fill="url(#centerGrad)" stroke="#90caf9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="320" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1565c0">Sayı</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1565c0">Sistemleri</text>
+
+  <!-- İkili -->
+  <rect x="30" y="40" width="140" height="70" rx="10" fill="url(#binaryGrad)" stroke="#64b5f6" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="100" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#0d47a1">İkili</text>
+  <text x="100" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1565c0">Binary</text>
+  <text x="100" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e88e5">0 1</text>
+
+  <!-- Sekizli -->
+  <rect x="30" y="210" width="140" height="70" rx="10" fill="url(#octalGrad)" stroke="#81c784" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="100" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">Sekizli</text>
+  <text x="100" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2e7d32">Octal</text>
+  <text x="100" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#43a047">0-7</text>
+
+  <!-- Onlu -->
+  <rect x="470" y="40" width="140" height="70" rx="10" fill="url(#decimalGrad)" stroke="#ffb74d" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="540" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Onlu</text>
+  <text x="540" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ef6c00">Decimal</text>
+  <text x="540" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f57c00">0-9</text>
+
+  <!-- Onaltılı -->
+  <rect x="470" y="210" width="140" height="70" rx="10" fill="url(#hexGrad)" stroke="#f06292" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="540" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#880e4f">Onaltılı</text>
+  <text x="540" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ad1457">Hexadecimal</text>
+  <text x="540" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c2185b">0-9 A-F</text>
+
+  <!-- Bağlantı çizgileri ve oklar (manuel) -->
+  <!-- İkili -> Merkez -->
+  <line x1="170" y1="75" x2="268" y2="145" stroke="#64b5f6" stroke-width="2"/>
+  <polygon points="268,145 260,138 262,150" fill="#64b5f6"/>
+
+  <!-- Sekizli -> Merkez -->
+  <line x1="170" y1="245" x2="268" y2="175" stroke="#81c784" stroke-width="2"/>
+  <polygon points="268,175 260,168 262,180" fill="#81c784"/>
+
+  <!-- Merkez -> Onlu -->
+  <line x1="372" y1="145" x2="470" y2="75" stroke="#ffb74d" stroke-width="2"/>
+  <polygon points="470,75 462,72 466,83" fill="#ffb74d"/>
+
+  <!-- Merkez -> Onaltılı -->
+  <line x1="372" y1="175" x2="470" y2="245" stroke="#f06292" stroke-width="2"/>
+  <polygon points="470,245 462,238 466,250" fill="#f06292"/>
+
+  <!-- Alt bilgi kutusu -->
+  <rect x="180" y="275" width="280" height="34" rx="8" fill="#ffffff" stroke="#b0bec5" stroke-width="1" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#546e7a">Dönüşüm: basamak × (taban)^konum</text>
+  <text x="320" y="304" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909c">Tüm sistemler onluya çevrilebilir</text>
+
+  <!-- Üst bilgi -->
+  <text x="320" y="22" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#37474f">Programlama Dillerinde Sayı Sistemleri</text>
+</svg>

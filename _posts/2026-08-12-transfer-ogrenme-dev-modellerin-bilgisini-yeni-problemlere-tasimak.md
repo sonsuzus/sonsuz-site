@@ -8,6 +8,7 @@ tags:
   - makine öğrenmesi
   - derin öğrenme
   - transfer learning
+image: /img/transfer-ogrenme-dev-48.png
 ---
 
 Transfer öğrenme, sıfırdan bir uzman yetiştirmek yerine deneyimli bir uzmanın bilgisini yeni bir göreve uyarlamaktır. ImageNet gibi devasa veri kümeleriyle eğitilmiş bir görüntü modeli; kenarları, dokuları, şekilleri ve nesne parçalarını zaten öğrenmiştir. Bu birikim, az etiketli kedi-köpek fotoğraflarından tıbbi görüntü sınıflandırmaya kadar birçok benzer problemde eğitim süresini, maliyeti ve veri ihtiyacını dramatik biçimde azaltır.
@@ -63,3 +64,6 @@ Transfer her zaman sihir değildir. Kaynak ve hedef dağılımları çok farklı
 | Çok veri, radikal görev farkı | Baştan eğitim veya alan ön eğitimi | Kaynak bilgi yanıltıcı olabilir |
 
 Özetle transfer öğrenme, hazır modeli körü körüne kullanmak değil, onun hangi bilgisinin taşınabilir olduğunu test etmektir. Doğru ön eğitimli modeli, ölçülü fine-tuning'i ve sağlam doğrulamayı birleştirdiğinizde küçük bir veri kümesi bile şaşırtıcı derecede güçlü bir ürüne dönüşebilir.
+
+![transfer-ogrenme-dev-48](/img/transfer-ogrenme-dev-48.svg)
+

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="tryGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9ddf6"/>
+    </linearGradient>
+    <linearGradient id="catchGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe6d3"/>
+      <stop offset="100%" stop-color="#f9cfae"/>
+    </linearGradient>
+    <linearGradient id="logGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f2e4"/>
+      <stop offset="100%" stop-color="#b9e2cb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5b7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#587189" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="67" cy="46" r="62" fill="#d8edff" opacity="0.38"/>
+  <circle cx="592" cy="275" r="86" fill="#d9f1d6" opacity="0.38"/>
+  <circle cx="539" cy="51" r="34" fill="#fff0d9" opacity="0.55"/>
+
+  <text x="32" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546b">KONTROLLÜ HATA YÖNETİMİ</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718493">Riskli işlem güvenli mesaj ve tanı kaydı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="103" width="142" height="112" rx="18" fill="url(#tryGrad)"/>
+  </g>
+  <rect x="48" y="118" width="40" height="27" rx="9" fill="#ffffff" opacity="0.72"/>
+  <path d="M60 126h16M60 132h12M60 138h16" stroke="#5b7fa4" stroke-width="2" stroke-linecap="round"/>
+  <text x="102" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36556f">TRY</text>
+  <text x="53" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456378">Riskli İşlem</text>
+  <text x="53" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638093">Bağlantı · Veri · Ağ</text>
+
+  <path d="M178 159H240" stroke="#6e93ac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="240,159 230,153 230,165" fill="#6e93ac"/>
+  <text x="188" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#628095">Hata oluşursa</text>
+
+  <g filter="url(#shadow)">
+    <rect x="250" y="92" width="148" height="135" rx="20" fill="url(#catchGrad)"/>
+  </g>
+  <circle cx="291" cy="132" r="20" fill="#fff8f1" opacity="0.88"/>
+  <path d="M291 117v18M291 145v2" stroke="#d46d3e" stroke-width="3" stroke-linecap="round"/>
+  <text x="323" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#874b31">CATCH</text>
+  <text x="274" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81523d">Hatayı Yakala</text>
+  <text x="274" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a705d">Tür ve kaynak belirle</text>
+
+  <path d="M399 126H453" stroke="#6e93ac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="453,126 443,120 443,132" fill="#6e93ac"/>
+  <path d="M399 191H453" stroke="#6e93ac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="453,191 443,185 443,197" fill="#6e93ac"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="463" y="77" width="142" height="99" rx="18" fill="url(#logGrad)"/>
+  </g>
+  <path d="M484 103h38a5 5 0 0 1 5 5v40a5 5 0 0 1-5 5h-38a5 5 0 0 1-5-5v-40a5 5 0 0 1 5-5z" fill="#f8fffb" opacity="0.85"/>
+  <path d="M490 116h27M490 125h27M490 134h20M490 143h25" stroke="#4f9a73" stroke-width="2" stroke-linecap="round"/>
+  <text x="540" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397255">LOG</text>
+  <text x="540" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d8067">Zaman</text>
+  <text x="540" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d8067">Detay</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="463" y="192" width="142" height="72" rx="18" fill="#eee5fb"/>
+  </g>
+  <path d="M484 214c0-8 6-14 14-14s14 6 14 14v4h-28z" fill="#ffffff" opacity="0.8"/>
+  <circle cx="498" cy="207" r="5" fill="#8a6db0"/>
+  <text x="526" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#65507f">Kullanıcı</text>
+  <text x="526" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b668f">Güvenli Mesaj</text>
+
+  <path d="M324 228V269" stroke="#8aa0ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="324,279 318,269 330,269" fill="#8aa0ad"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="216" y="279" width="216" height="29" rx="14" fill="#dbeaf1"/>
+  </g>
+  <path d="M237 294h18M264 294h18M291 294h18" stroke="#66889b" stroke-width="2" stroke-linecap="round"/>
+  <text x="322" y="298" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496878">Temizlik: finally veya using</text>
+</svg>

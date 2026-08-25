@@ -9,6 +9,7 @@ tags:
   - yazılım felsefesi
   - yapay zeka
 toc: true
+image: /img/otomasyonun-varolussal-bedeli-66.png
 ---
 
 Bir programcı, üç saatlik işi üç saniyeye indiren bir betik yazdığında önce kahraman gibi hisseder. Ardından rahatsız edici bir soru belirir: “Bu işlem artık bana ihtiyaç duymuyorsa ben neden buradayım?” Otomasyon, yazılım dünyasının en büyük başarı ölçütlerinden biridir; fakat başarıya ulaştıkça onu üreten kişinin görünürlüğünü azaltır. Böylece programcı yalnızca görevleri değil, görevler üzerinden kurduğu mesleki kimliği de otomatikleştirmeye başlar.
@@ -77,3 +78,6 @@ Bu nedenle etik bir otomasyon sürecinde programcı üç soruyu sormalıdır:
 Programcının güvenli yeri belirli bir araç, dil veya görev değildir. Bugünün vazgeçilmez framework’ü yarının nostaljik blog yazısı olabilir. Daha sağlam konum; problemi tanımlamak, varsayımları sorgulamak, insan sonuçlarını görmek ve gerektiğinde otomasyona “hayır” diyebilmektir.
 
 Kendi işini otomatikleştirmek bu yüzden mesleki intihar olmak zorunda değildir. Eski rolün bilinçli biçimde terk edilmesi ve daha yüksek sorumluluğa geçiş olabilir. Fakat kurum yalnızca verimlilik kazancını sahiplenip insanı dışarıda bırakıyorsa paradoks acımasızlaşır: Programcı geleceği inşa eder, fakat gelecekte kendisine sandalye ayrılmadığını görür. Mesele kodun bizi gereksiz kılması değil; gereksizliğin ekonomik ve ahlaki tanımını kimin yazdığıdır.
+
+![otomasyonun-varolussal-bedeli-66](/img/otomasyonun-varolussal-bedeli-66.svg)
+

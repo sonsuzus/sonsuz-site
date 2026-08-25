@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7ef"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5b7db1"/>
+      <stop offset="100%" stop-color="#6a9bd4"/>
+    </linearGradient>
+    <linearGradient id="dqlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#c5e6f5"/>
+    </linearGradient>
+    <linearGradient id="dmlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b8e0c8"/>
+      <stop offset="100%" stop-color="#d2f0de"/>
+    </linearGradient>
+    <linearGradient id="ddlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5d4a8"/>
+      <stop offset="100%" stop-color="#fae3c5"/>
+    </linearGradient>
+    <linearGradient id="dclGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0c8e8"/>
+      <stop offset="100%" stop-color="#eeddf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0.5" dy="1" stdDeviation="2" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect x="0" y="0" width="640" height="320" rx="12" fill="url(#bg)"/>
+
+  <!-- Başlık -->
+  <rect x="180" y="12" width="280" height="34" rx="17" fill="url(#headerGrad)" filter="url(#shadow)"/>
+  <text x="320" y="34" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">SQL Komut Grupları</text>
+
+  <!-- Merkez düğüm -->
+  <circle cx="320" cy="165" r="38" fill="#4a6fa5" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">SQL</text>
+  <text x="320" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#dce6f5">Komutlar</text>
+
+  <!-- DQL Grubu -->
+  <rect x="30" y="70" width="130" height="52" rx="10" fill="url(#dqlGrad)" filter="url(#shadowLight)" stroke="#7fb8d9" stroke-width="1"/>
+  <text x="95" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c5f7a">DQL</text>
+  <text x="95" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a6f8a">Veri Sorgulama</text>
+
+  <rect x="30" y="132" width="130" height="30" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#7fb8d9" stroke-width="0.8"/>
+  <text x="95" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c5f7a">SELECT</text>
+
+  <!-- DML Grubu -->
+  <rect x="180" y="70" width="130" height="52" rx="10" fill="url(#dmlGrad)" filter="url(#shadowLight)" stroke="#7ec8a3" stroke-width="1"/>
+  <text x="245" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d6e4e">DML</text>
+  <text x="245" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a805e">Veri Kullanma</text>
+
+  <rect x="180" y="132" width="130" height="30" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#7ec8a3" stroke-width="0.8"/>
+  <text x="245" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d6e4e">INSERT</text>
+
+  <rect x="180" y="168" width="130" height="30" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#7ec8a3" stroke-width="0.8"/>
+  <text x="245" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d6e4e">UPDATE</text>
+
+  <rect x="180" y="204" width="130" height="30" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#7ec8a3" stroke-width="0.8"/>
+  <text x="245" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d6e4e">DELETE</text>
+
+  <!-- DDL Grubu -->
+  <rect x="330" y="70" width="130" height="52" rx="10" fill="url(#ddlGrad)" filter="url(#shadowLight)" stroke="#d4a56a" stroke-width="1"/>
+  <text x="395" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a5a2e">DDL</text>
+  <text x="395" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8a6a3e">Veri Tanımlama</text>
+
+  <rect x="330" y="132" width="130" height="30" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#d4a56a" stroke-width="0.8"/>
+  <text x="395" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a5a2e">CREATE</text>
+
+  <rect x="330" y="168" width="130" height="30" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#d4a56a" stroke-width="0.8"/>
+  <text x="395" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a5a2e">ALTER</text>
+
+  <rect x="330" y="204" width="130" height="30" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#d4a56a" stroke-width="0.8"/>
+  <text x="395" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a5a2e">DROP</text>
+
+  <!-- DCL Grubu -->
+  <rect x="480" y="70" width="130" height="52" rx="10" fill="url(#dclGrad)" filter="url(#shadowLight)" stroke="#b58ac7" stroke-width="1"/>
+  <text x="545" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a3a7a">DCL</text>
+  <text x="545" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a4a8a">Veri Kontrol</text>
+
+  <rect x="480" y="132" width="130" height="30" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#b58ac7" stroke-width="0.8"/>
+  <text x="545" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a3a7a">GRANT</text>
+
+  <rect x="480" y="168" width="130" height="30" rx="8" fill="#ffffff" filter="url(#shadowLight)" stroke="#b58ac7" stroke-width="0.8"/>
+  <text x="545" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a3a7a">REVOKE</text>
+
+  <!-- Bağlantı çizgileri (merkezden gruplara) -->
+  <!-- DQL bağlantısı -->
+  <path d="M 285 150 Q 200 140 165 110" stroke="#7fb8d9" stroke-width="1.8" fill="none"/>
+  <polygon points="165,110 172,114 168,105" fill="#7fb8d9"/>
+
+  <!-- DML bağlantısı -->
+  <path d="M 290 155 L 250 125" stroke="#7ec8a3" stroke-width="1.8" fill="none"/>
+  <polygon points="250,125 256,130 254,120" fill="#7ec8a3"/>
+
+  <!-- DDL bağlantısı -->
+  <path d="M 350 155 L 390 125" stroke="#d4a56a" stroke-width="1.8" fill="none"/>
+  <polygon points="390,125 384,130 386,120" fill="#d4a56a"/>
+
+  <!-- DCL bağlantısı -->
+  <path d="M 355 150 Q 440 140 475 110" stroke="#b58ac7" stroke-width="1.8" fill="none"/>
+  <polygon points="475,110 468,114 472,105" fill="#b58ac7"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8899aa">DQL: Sorgulama • DML: Veri İşleme • DDL: Yapı Tanımlama • DCL: Yetki Kontrolü</text>
+</svg>

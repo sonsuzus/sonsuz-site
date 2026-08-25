@@ -10,6 +10,7 @@ tags:
   - anomali tespiti
   - dijital ikiz
   - siber-fiziksel sistem
+image: /img/iot-sensor-surusunden-33.png
 ---
 
 Bir fabrikanın, seranın ya da akıllı binanın yüzlerce sensörle konuştuğunu düşünün: sıcaklıklar yükseliyor, titreşimler dalgalanıyor, nem değerleri fısıldıyor. Bu verinin içinden gerçekten tehlikeli olanı seçmek, samanlıkta iğne aramaktan biraz daha zor; çünkü bazen iğne de hareket ediyor. Bu projede sahte IoT verileri üreten, fiziksel ortamın dijital ikizini güncelleyen ve olağandışı durumlarda alarm veren küçük ama genişletilebilir bir siber-fiziksel sistem simülasyonu kuracağız.
@@ -26,6 +27,9 @@ Anomali kavramı yalnızca "eşik aşıldı" demek değildir. Normal sıcaklık 
 | Z-skoru | Dağılımdan sapmayı bulur | Ortalama kaymalara duyarlı | Kararlı sensörler |
 | Hareketli pencere | Yerel davranışı izler | Pencere boyutu önemlidir | Zaman serileri |
 | ML tabanlı model | Karmaşık örüntüleri yakalar | Eğitim verisi ister | Büyük filolar |
+
+![iot-sensor-surusunden-33](/img/iot-sensor-surusunden-33.svg)
+
 
 Bu örnekte her sensör için sıcaklık, nem ve titreşim üreteceğiz. Normal veriler küçük rastgele gürültü taşırken, belirli olasılıkla sıcaklık sıçraması veya titreşim patlaması enjekte edeceğiz. Z-skoru şu mantıkla hesaplanır:
 
