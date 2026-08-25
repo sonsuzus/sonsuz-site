@@ -11,6 +11,7 @@ tags:
   - glove
   - metin madenciliği
 toc: true
+image: /img/nlp-temelleri-kelimelerden-64.png
 ---
 
 Bir bilgisayara “Bu film harikaydı” dediğinizde onun heyecanlanmasını beklemeyiz; fakat cümlenin olumlu bir duygu taşıdığını hesaplayabilmesini isteriz. Doğal Dil İşleme (Natural Language Processing, NLP), insan dilinin kurallı ama bir o kadar da muğlak dünyasını algoritmaların çalışabileceği sayısal temsillere dönüştüren alandır. Arama motorlarından sohbet botlarına, otomatik çeviriden spam filtrelerine kadar pek çok sistemin mutfağında NLP vardır.
@@ -31,6 +32,9 @@ Burada $\mathrm{TF}(t,d)$ terimin belgede görülme sıklığı, $N$ toplam belg
 | BoW | Basit, yorumlanabilir ve hızlıdır | Kelime sırasını ve bağlamı saklamaz |
 | TF-IDF | Ayırt edici kelimeleri öne çıkarır | Anlamsal benzerliği doğrudan öğrenmez |
 | Kelime gömmeleri | Anlam ve ilişki örüntülerini yakalar | Büyük veri ve dikkatli eğitim gerektirir |
+
+![nlp-temelleri-kelimelerden-64](/img/nlp-temelleri-kelimelerden-64.svg)
+
 
 ## Vektör uzayında anlam
 

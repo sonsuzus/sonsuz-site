@@ -12,7 +12,11 @@ tags:
   - web
 redirect_from:
   - /posts/php_veritur/
+image: /img/php_veritur-68.png
 ---
+
+![php_veritur-68](/img/php_veritur-68.svg)
+
 
 
 PHP'de 4 farklı temel veri türü vardır:

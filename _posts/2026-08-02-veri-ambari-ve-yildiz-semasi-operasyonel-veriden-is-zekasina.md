@@ -9,6 +9,7 @@ tags:
   - yıldız şeması
   - iş zekâsı
 toc: true
+image: /img/veri-ambari-ve-63.png
 ---
 
 Bir e-ticaret sisteminde sipariş vermek saniyeler sürerken, “Son üç yılda hangi şehirde, hangi ürün kategorisi daha kârlıydı?” sorusunun yanıtı milyonlarca kaydın incelenmesini gerektirebilir. Veri ambarı, günlük operasyonları yavaşlatmadan bu tür geriye dönük analizleri gerçekleştirmek için tasarlanmış merkezi veri yapısıdır.
@@ -26,6 +27,9 @@ Operasyonel sistemler, yani **OLTP** uygulamaları; sipariş oluşturma, ödeme 
 | Sorgu türü | Kısa ekleme ve güncelleme | Büyük tarama ve toplulaştırma |
 | Modelleme | Genellikle normalize | Genellikle boyutsal |
 | Kullanıcı | Uygulama ve operasyon ekibi | Analist ve yöneticiler |
+
+![veri-ambari-ve-63](/img/veri-ambari-ve-63.svg)
+
 
 Normalize edilmiş operasyonel veritabanlarında tekrar azaltılır. Ancak raporlama sırasında çok sayıda tabloyu birleştirmek gerekebilir. Veri ambarı, kontrollü veri tekrarını kabul ederek sorguları anlaşılır ve hızlı hâle getirir. Kısacası biri kasadaki kuyruğu hızlandırır, diğeri geçen yıl kasadan ne kadar kazandığımızı araştırır.
 

@@ -9,6 +9,7 @@ tags:
   - büyük veri
   - pyspark
 toc: true
+image: /img/apache-spark-ile-45.png
 ---
 
 Devasa bir veri setini tek bilgisayarda işlemeye çalışmak, taşınma günü bütün kolileri küçük bir otomobile doldurmaya benzer: Bir noktadan sonra ne bagaj kapanır ne de süreç ilerler. Apache Spark, verileri kümeye dağıtarak ve ara sonuçları mümkün olduğunca bellekte tutarak bu sorunu çözer. Böylece haritalama, filtreleme ve indirgeme gibi işlemler, her aşamada diske yazma zorunluluğuna takılmadan çok daha hızlı gerçekleştirilebilir.
@@ -82,3 +83,6 @@ Buradaki dönüşümler hemen çalışmaz. Spark, **lazy evaluation** yaklaşım
 Modern projelerde çoğunlukla DataFrame API tercih edilir. Çünkü Spark’ın Catalyst optimizer bileşeni sorgu planını inceleyerek filtreleri erkene alma ve gereksiz sütunları okumama gibi iyileştirmeler yapabilir.
 
 Spark sihirli bir hızlandırma düğmesi değildir; doğru partition sayısı, uygun cache kullanımı ve shuffle maliyetlerinin izlenmesi gerekir. Yine de büyük veri setlerinde tekrarlı analiz, makine öğrenmesi, ETL ve akış işleme ihtiyaçları söz konusu olduğunda bellek içi yaklaşımı, klasik disk merkezli modellere karşı son derece güçlü bir avantaj sağlar.
+
+![apache-spark-ile-45](/img/apache-spark-ile-45.svg)
+

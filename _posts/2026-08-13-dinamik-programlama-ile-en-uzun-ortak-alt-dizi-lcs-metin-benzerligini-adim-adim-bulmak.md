@@ -9,9 +9,13 @@ tags:
   - algoritmalar
   - lcs
 toc: true
+image: /img/dinamik-programlama-ile-45.png
 ---
 
 İki metnin ne kadar benzediğini yalnızca ortak kelimeleri sayarak ölçmek yanıltıcı olabilir. Çünkü sıralama da anlam taşır: `"programlama harikadır"` ile `"harikadır programlama"` aynı kelimeleri içerse de dizilişleri farklıdır. **En Uzun Ortak Alt Dizi** (Longest Common Subsequence, LCS), iki dizideki elemanların sırasını koruyarak bulunabilen en uzun ortak yapıyı hesaplar. Metin karşılaştırma, DNA analizi, sürüm kontrol sistemleri ve dosya farkı araçlarının temelinde bu fikir bulunur.
+
+![dinamik-programlama-ile-45](/img/dinamik-programlama-ile-45.svg)
+
 ``
 
 Önce kritik ayrımı netleştirelim: LCS, **alt dize** (substring) değil, **alt dizi**dir (subsequence). Alt dizide karakterlerin veya kelimelerin yan yana olması gerekmez; yalnızca kendi iç sıraları korunmalıdır. Örneğin `ABCBDAB` ve `BDCABA` dizileri için olası bir LCS sonucu `BCBA` olabilir. Harfler kaynak dizilerde aralıklı görünse bile sıraları bozulmaz.

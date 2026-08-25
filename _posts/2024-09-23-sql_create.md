@@ -12,7 +12,11 @@ tags:
   - veri tabanı
 redirect_from:
   - /posts/sql_create/
+image: /img/sql_create-35.png
 ---
+
+![sql_create-35](/img/sql_create-35.svg)
+
 
 
 CREATE DATABASE komutu veritabanı oluşturmak için kullanılır.

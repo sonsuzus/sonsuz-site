@@ -9,6 +9,7 @@ tags:
   - akış kontrolü
   - döngüler
 toc: true
+image: /img/operatorlerden-dongulere-programlarda-36.png
 ---
 
 Bir programı yalnızca sırayla çalışan komutlar bütünü olmaktan çıkaran şey, karar verebilmesi ve belirli işlemleri tekrarlayabilmesidir. Operatörler verileri işlerken akış kontrol yapıları programın hangi yoldan ilerleyeceğini belirler. Kısacası operatörler mutfaktaki araçlar, koşullar ve döngüler ise şefin tarif planıdır.
@@ -30,6 +31,9 @@ Aritmetik operatörler sayısal hesaplamalarda kullanılır:
 | `/` | Bölme | `8 / 2` | `4` |
 | `%` | Kalan | `8 % 3` | `2` |
 | `**` | Üs alma | `2 ** 3` | `8` |
+
+![operatorlerden-dongulere-programlarda-36](/img/operatorlerden-dongulere-programlarda-36.svg)
+
 
 Kalan operatörü özellikle bir sayının çift olup olmadığını anlamakta kullanışlıdır. Bir $n$ sayısı için $n \bmod 2=0$ ise sayı çifttir.
 

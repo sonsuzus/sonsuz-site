@@ -11,7 +11,11 @@ tags:
 redirect_from:
   - /posts/php_degisken/
 toc: true
+image: /img/php_degisken-73.png
 ---
+
+![php_degisken-73](/img/php_degisken-73.svg)
+
 
 
 PHP'de değişkenler, herhangi bir veri türündeki değeri depolamak için kullanılan ve bir isim ile ifade edilen bir kavramdır. Bir değişkene bir değer atadıktan sonra, PHP kodları içinde aynı değeri değişken adı ile istediğimiz zaman kullanabiliriz.

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Ana Başlık -->
+  <rect x="220" y="15" width="200" height="38" rx="10" fill="#4a90d9" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="39" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">ALTER TABLE</text>
+
+  <!-- Merkez Düğüm -->
+  <rect x="245" y="80" width="150" height="44" rx="12" fill="#5b9bd5" filter="url(#shadow)"/>
+  <text x="320" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Tablo Yapısı</text>
+
+  <!-- Oklar (manuel ok uçları) -->
+  <!-- Başlıktan merkeze -->
+  <line x1="320" y1="53" x2="320" y2="75" stroke="#4a90d9" stroke-width="2"/>
+  <polygon points="315,73 320,82 325,73" fill="#4a90d9"/>
+
+  <!-- Sol Üst: ADD -->
+  <rect x="40" y="140" width="150" height="50" rx="10" fill="#6fbf73" filter="url(#shadowLight)"/>
+  <text x="115" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">ADD</text>
+  <text x="115" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f5e9">Sütun Ekle</text>
+
+  <line x1="245" y1="102" x2="195" y2="135" stroke="#6fbf73" stroke-width="2"/>
+  <polygon points="198,128 190,140 205,138" fill="#6fbf73"/>
+
+  <!-- Sağ Üst: DROP -->
+  <rect x="450" y="140" width="150" height="50" rx="10" fill="#e57373" filter="url(#shadowLight)"/>
+  <text x="525" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">DROP</text>
+  <text x="525" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ffebee">Sütun Sil</text>
+
+  <line x1="395" y1="102" x2="445" y2="135" stroke="#e57373" stroke-width="2"/>
+  <polygon points="438,128 450,140 435,138" fill="#e57373"/>
+
+  <!-- Alt Orta: ALTER COLUMN / MODIFY -->
+  <rect x="220" y="230" width="200" height="50" rx="10" fill="#f0a500" filter="url(#shadowLight)"/>
+  <text x="320" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">ALTER COLUMN</text>
+  <text x="320" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff8e1">Veri Türü Değiştir</text>
+
+  <line x1="320" y1="124" x2="320" y2="225" stroke="#f0a500" stroke-width="2"/>
+  <polygon points="315,220 320,230 325,220" fill="#f0a500"/>
+
+  <!-- Alt Bilgi Kutuları -->
+  <rect x="40" y="250" width="160" height="40" rx="8" fill="#ffffff" stroke="#b0bec5" stroke-width="1" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="120" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">SQL Server, MS Access</text>
+  <text x="120" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#78909c">ALTER COLUMN</text>
+
+  <rect x="440" y="250" width="160" height="40" rx="8" fill="#ffffff" stroke="#b0bec5" stroke-width="1" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="520" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">MySQL, Oracle</text>
+  <text x="520" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#78909c">MODIFY COLUMN</text>
+
+  <!-- Örnek Tablo Mini Gösterim -->
+  <rect x="40" y="15" width="130" height="38" rx="8" fill="#ffffff" stroke="#90caf9" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="105" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1565c0">personel</text>
+  <text x="105" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#546e7a">Örnek Tablo</text>
+
+  <line x1="170" y1="34" x2="215" y2="34" stroke="#90caf9" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="212,29 222,34 212,39" fill="#90caf9"/>
+
+  <!-- Sütun Etiketleri -->
+  <rect x="470" y="15" width="130" height="38" rx="8" fill="#ffffff" stroke="#ef9a9a" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="535" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#c62828">DTarihi</text>
+  <text x="535" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#546e7a">Yeni Sütun</text>
+
+  <line x1="470" y1="34" x2="425" y2="34" stroke="#ef9a9a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="428,29 418,34 428,39" fill="#ef9a9a"/>
+
+  <!-- Küçük Veri Türü Etiketi -->
+  <rect x="245" y="180" width="150" height="28" rx="7" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1" opacity="0.9"/>
+  <text x="320" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1565c0">ADD DTarihi date</text>
+
+  <line x1="320" y1="180" x2="320" y2="225" stroke="#64b5f6" stroke-width="1.5" stroke-dasharray="3,3"/>
+</svg>

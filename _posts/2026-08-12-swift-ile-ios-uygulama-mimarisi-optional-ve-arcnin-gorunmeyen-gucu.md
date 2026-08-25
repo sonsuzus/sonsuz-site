@@ -11,9 +11,13 @@ tags:
   - arc
   - uygulama mimarisi
 toc: true
+image: /img/swift-ile-ios-29.png
 ---
 
 iOS uygulamalarında iyi mimari yalnızca ekranları MVVM, MVC veya Clean Architecture klasörlerine ayırmak değildir. Asıl kalite; verinin belirsizliğini doğru modellemek ve nesnelerin yaşam döngüsünü güvenle yönetmekle başlar. Swift’in `Optional` tipi ile Automatic Reference Counting (ARC) sistemi, Apple ekosistemindeki bu iki temel problemi dil seviyesinde ele alır: “Bu değer gerçekten var mı?” ve “Bu nesne artık bellekte kalmalı mı?”
+
+
+![swift-ile-ios-29](/img/swift-ile-ios-29.svg)
 
 ``
 

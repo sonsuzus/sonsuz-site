@@ -8,9 +8,13 @@ tags:
   - algoritmalar
   - two pointers
   - olimpiyat programlama
+image: /img/iki-isaretci-teknigi-58.png
 ---
 
 İki İşaretçi (Two Pointers), özellikle sıralı dizilerde “hangi iki elemanın toplamı hedefe eşit?” sorusunu doğrusal zamanda çözmeye yarayan klasik bir olimpiyat programlama tekniğidir. İlk bakışta tüm ikilileri denemek doğal görünür; ancak bu yaklaşım dizinin büyüklüğü arttıkça pahalılaşır. İki uçtan yürüyen işaretçiler, sıralama bilgisini bir pusula gibi kullanır: toplam küçükse büyütmek, büyükse küçültmek için hangi yönde ilerleyeceğini bilir.
+
+![iki-isaretci-teknigi-58](/img/iki-isaretci-teknigi-58.svg)
+
 ``
 
 Elimizde artan sırada bir $a$ dizisi ve hedef $T$ olsun. Sol işaretçi $l=0$, sağ işaretçi ise $r=n-1$ konumunda başlar. Her adımda $s=a[l]+a[r]$ hesaplanır. Eğer $s=T$ ise cevap bulunmuştur. Eğer $s<T$ ise soldaki değer daha büyük bir değerle değiştirilmelidir; dolayısıyla $l$ artırılır. Eğer $s>T$ ise sağdaki değer küçültülmelidir; bu nedenle $r$ azaltılır.

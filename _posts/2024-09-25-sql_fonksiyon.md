@@ -12,6 +12,7 @@ tags:
 redirect_from:
   - /posts/sql_fonksiyon/
 toc: true
+image: /img/sql_fonksiyon-55.png
 ---
 
 
@@ -51,6 +52,9 @@ Bu fonksiyonlar bir sütunda yer alan tek bir değere işlem yapar ve tek bir de
 | 3 | Kitaplık | 310 |
 | 4 | Sehpa | 120 |
 | 5 | Koltuk | 250 |
+
+![sql_fonksiyon-55](/img/sql_fonksiyon-55.svg)
+
 
 ## AVG() fonksiyonu
 

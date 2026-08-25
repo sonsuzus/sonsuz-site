@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#1e3a5f">İlk PHP Programı - Akış Şeması</text>
+
+  <!-- Sol: Metin Düzenleyici -->
+  <rect x="30" y="60" width="130" height="70" rx="10" fill="url(#box1)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="95" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">Metin Düzenleyici</text>
+  <text x="95" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">Notepad++</text>
+  <text x="95" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">PHP kodu yaz</text>
+
+  <!-- Ok: Düzenleyici -> Sunucu -->
+  <path d="M160 95 L210 95" stroke="#4a6fa5" stroke-width="2" fill="none"/>
+  <polygon points="210,90 220,95 210,100" fill="#4a6fa5"/>
+
+  <!-- Orta: PHP Dosyası -->
+  <rect x="225" y="55" width="180" height="80" rx="10" fill="url(#box2)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="315" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">PHP Dosyası</text>
+  <text x="315" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">&lt;?php ... ?&gt;</text>
+  <text x="315" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">index.php</text>
+
+  <!-- Ok: PHP Dosyası -> Sunucu -->
+  <path d="M405 95 L455 95" stroke="#4a6fa5" stroke-width="2" fill="none"/>
+  <polygon points="455,90 465,95 455,100" fill="#4a6fa5"/>
+
+  <!-- Sağ: Sunucu -->
+  <rect x="470" y="55" width="140" height="80" rx="10" fill="url(#box3)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="540" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">Sunucu</text>
+  <text x="540" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">PHP Yorumlayıcı</text>
+  <text x="540" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">Wampserver</text>
+
+  <!-- Ok: Sunucu -> Tarayıcı (aşağı) -->
+  <path d="M540 135 L540 185" stroke="#4a6fa5" stroke-width="2" fill="none"/>
+  <polygon points="535,185 540,195 545,185" fill="#4a6fa5"/>
+
+  <!-- Alt: Tarayıcı -->
+  <rect x="470" y="200" width="140" height="70" rx="10" fill="url(#box4)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="540" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">Tarayıcı</text>
+  <text x="540" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">HTML çıktısı</text>
+  <text x="540" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">Görüntüleme</text>
+
+  <!-- Alt sol: echo komutu -->
+  <rect x="30" y="200" width="180" height="70" rx="10" fill="url(#box1)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="120" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">echo Komutu</text>
+  <text x="120" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">'Bu ilk PHP yazısıdır!'</text>
+  <text x="120" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">Noktalı virgül ile biter</text>
+
+  <!-- Ok: echo -> Tarayıcı -->
+  <path d="M210 235 L460 235" stroke="#4a6fa5" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+  <polygon points="460,230 470,235 460,240" fill="#4a6fa5"/>
+
+  <!-- Alt orta: Yerel klasör -->
+  <rect x="225" y="200" width="180" height="70" rx="10" fill="url(#box2)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="315" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">Yerel Klasör</text>
+  <text x="315" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">C:\wamp\www\deneme</text>
+  <text x="315" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1e3a5f">http://localhost</text>
+
+  <!-- Ok: Yerel klasör -> Tarayıcı -->
+  <path d="M405 235 L460 235" stroke="#4a6fa5" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+  <polygon points="460,230 470,235 460,240" fill="#4a6fa5"/>
+
+  <!-- Döngü oku: Tarayıcı -> Düzenleyici (üst) -->
+  <path d="M540 200 L540 45 L95 45 L95 60" stroke="#8b5cf6" stroke-width="1.5" fill="none" stroke-dasharray="4,4" opacity="0.6"/>
+  <polygon points="90,60 95,70 100,60" fill="#8b5cf6" opacity="0.6"/>
+
+  <!-- Etiket: döngü -->
+  <text x="320" y="40" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b5cf6" opacity="0.8">Geliştirme Döngüsü</text>
+
+  <!-- Bilgi notu -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6fa5" opacity="0.7">PHP kodları sunucuda işlenir, tarayıcıya HTML olarak döner</text>
+</svg>

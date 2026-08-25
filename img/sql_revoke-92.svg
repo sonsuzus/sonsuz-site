@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#7ec8e3"/>
+    </linearGradient>
+    <linearGradient id="revokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb3ba"/>
+      <stop offset="100%" stop-color="#ff8a95"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b5ead7"/>
+      <stop offset="100%" stop-color="#8fd9b6"/>
+    </linearGradient>
+    <linearGradient id="roleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffdac1"/>
+      <stop offset="100%" stop-color="#ffc4a3"/>
+    </linearGradient>
+    <linearGradient id="publicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c7ceea"/>
+      <stop offset="100%" stop-color="#b0b8e0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">REVOKE Komutu - Yetki Geri Alma</text>
+
+  <!-- Veritabanı nesnesi (merkez sol) -->
+  <rect x="40" y="120" width="160" height="70" rx="12" fill="url(#dbGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="120" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">VERİTABANI NESNESİ</text>
+  <text x="120" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a5276">Tablo / View / Stored Proc</text>
+
+  <!-- REVOKE komutu (merkez) -->
+  <rect x="250" y="105" width="140" height="100" rx="14" fill="url(#revokeGrad)" filter="url(#shadow)"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#7b1e2b">REVOKE</text>
+  <text x="320" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7b1e2b">yetki_adı</text>
+  <text x="320" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7b1e2b">ON nesne_adı</text>
+  <text x="320" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7b1e2b">FROM kullanıcı</text>
+
+  <!-- Kullanıcılar (sağ üst) -->
+  <rect x="460" y="45" width="150" height="55" rx="10" fill="url(#userGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="535" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e6b4a">KULLANICI</text>
+  <text x="535" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e6b4a">kullanıcı_adı</text>
+
+  <!-- Rol (sağ orta) -->
+  <rect x="460" y="115" width="150" height="55" rx="10" fill="url(#roleGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="535" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#8a4b1e">ROL</text>
+  <text x="535" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a4b1e">rol_adı</text>
+
+  <!-- PUBLIC (sağ alt) -->
+  <rect x="460" y="185" width="150" height="55" rx="10" fill="url(#publicGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="535" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3d4a7a">PUBLIC</text>
+  <text x="535" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3d4a7a">Tüm kullanıcılar</text>
+
+  <!-- Ok: Nesne -> REVOKE -->
+  <line x1="200" y1="155" x2="248" y2="155" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="248,150 260,155 248,160" fill="#5d6d7e"/>
+
+  <!-- Ok: REVOKE -> Kullanıcı -->
+  <line x1="390" y1="125" x2="458" y2="80" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="458,75 468,80 458,85" fill="#5d6d7e"/>
+
+  <!-- Ok: REVOKE -> Rol -->
+  <line x1="390" y1="155" x2="458" y2="145" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="458,140 468,145 458,150" fill="#5d6d7e"/>
+
+  <!-- Ok: REVOKE -> PUBLIC -->
+  <line x1="390" y1="175" x2="458" y2="215" stroke="#5d6d7e" stroke-width="2"/>
+  <polygon points="458,210 468,215 458,220" fill="#5d6d7e"/>
+
+  <!-- Alt bilgi: Örnek komut -->
+  <rect x="120" y="260" width="400" height="40" rx="8" fill="#e8f8f5" stroke="#a3e4d7" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Örnek:</text>
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">REVOKE SELECT ON personel FROM PUBLIC</text>
+
+  <!-- Yetki etiketi -->
+  <rect x="40" y="45" width="160" height="40" rx="8" fill="#d5f5e3" stroke="#82e0aa" stroke-width="1" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="120" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1e6b4a">GRANT ile verilen</text>
+  <text x="120" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e6b4a">yetkiler geri alınır</text>
+
+  <!-- Geri alma oku -->
+  <line x1="120" y1="85" x2="120" y2="118" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="115,118 120,128 125,118" fill="#e74c3c"/>
+</svg>

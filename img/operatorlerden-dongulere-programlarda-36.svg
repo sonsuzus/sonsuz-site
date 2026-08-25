@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#c7ddf5"/>
+    </linearGradient>
+    <filter id="golge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7c96ae" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#8ea4b0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="321" cy="158" r="116" fill="#dff0eb" opacity="0.34"/>
+  <circle cx="321" cy="158" r="86" fill="none" stroke="#b9d6d3" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.65"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#486174">Program Akış Kontrolü</text>
+  <text x="32" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7990a0">veri • karar • tekrar</text>
+
+  <g filter="url(#golge)">
+    <rect x="34" y="106" width="112" height="100" rx="18" fill="#fffdf8"/>
+    <rect x="34" y="106" width="112" height="100" rx="18" fill="none" stroke="#e1e8e7"/>
+  </g>
+  <circle cx="59" cy="132" r="13" fill="#ffe6af"/>
+  <text x="59" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8d6515">5</text>
+  <circle cx="91" cy="132" r="13" fill="#ccefe7"/>
+  <text x="91" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#24736a">3</text>
+  <line x1="71" y1="132" x2="78" y2="132" stroke="#92a5ae" stroke-width="1.5"/>
+  <text x="90" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#506775">Veri</text>
+  <text x="90" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8397a2">Operandlar</text>
+
+  <path d="M146 156 H186" fill="none" stroke="#839dad" stroke-width="2"/>
+  <polygon points="192,156 183,151 183,161" fill="#839dad"/>
+
+  <g filter="url(#golge)">
+    <rect x="193" y="103" width="112" height="106" rx="18" fill="url(#merkez)"/>
+    <rect x="193" y="103" width="112" height="106" rx="18" fill="none" stroke="#b6cfe8"/>
+  </g>
+  <text x="249" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#37566e">Operatörler</text>
+  <rect x="210" y="146" width="23" height="23" rx="7" fill="#ffffff" opacity="0.8"/>
+  <rect x="238" y="146" width="23" height="23" rx="7" fill="#ffffff" opacity="0.8"/>
+  <rect x="266" y="146" width="23" height="23" rx="7" fill="#ffffff" opacity="0.8"/>
+  <text x="221.5" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#547795">+</text>
+  <text x="249.5" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#547795">%</text>
+  <text x="277.5" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#547795">=</text>
+  <text x="249" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668195">Hesapla ve karşılaştır</text>
+
+  <path d="M305 156 H335" fill="none" stroke="#839dad" stroke-width="2"/>
+  <polygon points="341,156 332,151 332,161" fill="#839dad"/>
+
+  <g filter="url(#golge)">
+    <path d="M403 99 L460 156 L403 213 L346 156 Z" fill="#fdebc7" stroke="#e7c77f"/>
+  </g>
+  <text x="403" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#806221">Koşul</text>
+  <text x="403" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#987b3d">doğru mu?</text>
+
+  <path d="M460 156 H488" fill="none" stroke="#6b9e8e" stroke-width="2"/>
+  <polygon points="494,156 485,151 485,161" fill="#6b9e8e"/>
+  <text x="472" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d8877">Evet</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="495" y="112" width="109" height="88" rx="17" fill="#d8f1e8" stroke="#acd9ca"/>
+  </g>
+  <circle cx="519" cy="137" r="10" fill="#6dbb9f"/>
+  <path d="M514 137 L518 141 L525 133" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="557" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#336d5d">Dal çalışır</text>
+  <text x="550" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8b7e">if ve else</text>
+
+  <path d="M403 213 V254 H330" fill="none" stroke="#7794ab" stroke-width="2"/>
+  <polygon points="324,254 333,249 333,259" fill="#7794ab"/>
+  <text x="425" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f8291">Hayır</text>
+
+  <g filter="url(#golge)">
+    <rect x="164" y="226" width="161" height="67" rx="18" fill="#e7def7" stroke="#cfc1e8"/>
+  </g>
+  <text x="206" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#66517c">Döngü</text>
+  <text x="206" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806c94">for • while</text>
+  <path d="M280 248 C301 248 302 275 279 276" fill="none" stroke="#8b78a2" stroke-width="1.8"/>
+  <polygon points="275,276 283,271 282,281" fill="#8b78a2"/>
+  <text x="273" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806c94">tekrar</text>
+
+  <path d="M325 259 H515 V211" fill="none" stroke="#7794ab" stroke-width="1.7" stroke-dasharray="5 4"/>
+  <polygon points="515,205 510,214 520,214" fill="#7794ab"/>
+  <text x="431" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718797">koşul sağlandıkça</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="486" y="236" width="119" height="46" rx="14" fill="#ffffff" stroke="#d7e4e2"/>
+  </g>
+  <text x="545.5" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#536b77">Akış Sonucu</text>
+  <text x="545.5" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a929a">çıktı</text>
+</svg>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="driver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#c5dafa"/>
+    </linearGradient>
+    <linearGradient id="exec" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4f6e9"/>
+      <stop offset="100%" stop-color="#cdebd8"/>
+    </linearGradient>
+    <linearGradient id="memory" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff5d9"/>
+      <stop offset="100%" stop-color="#f9e5a9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7390a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#7892a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="36" r="52" fill="#dceef8" opacity="0.48"/>
+  <circle cx="584" cy="282" r="75" fill="#deefe1" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38566d">Dağıtık Bellek İçi İşleme</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8492">Apache Spark akışı</text>
+
+  <!-- Girdi -->
+  <g filter="url(#shadow)">
+    <rect x="25" y="119" width="112" height="84" rx="18" fill="#ffffff" stroke="#d6e3e9"/>
+    <rect x="44" y="137" width="36" height="48" rx="7" fill="#d6edf5"/>
+    <path d="M54 150h16M54 159h16M54 168h11" stroke="#6ba0b4" stroke-width="2" stroke-linecap="round"/>
+    <text x="91" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38566d">Büyük</text>
+    <text x="91" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38566d">veri</text>
+  </g>
+
+  <!-- Arrow input to driver -->
+  <path d="M143 161H173" stroke="#7594a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="173,161 165,156 165,166" fill="#7594a5"/>
+
+  <!-- Driver -->
+  <g filter="url(#shadow)">
+    <rect x="178" y="100" width="128" height="121" rx="20" fill="url(#driver)" stroke="#b8d0ec"/>
+    <circle cx="242" cy="132" r="20" fill="#f7fbff" opacity="0.9"/>
+    <path d="M232 132h20M242 122v20M227 151c6 6 24 6 30 0" fill="none" stroke="#5483ad" stroke-width="2" stroke-linecap="round"/>
+    <text x="217" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d87">Sürücü</text>
+    <text x="203" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52738b">DAG planlama</text>
+  </g>
+
+  <!-- outbound branches -->
+  <path d="M312 159H332V81H354" fill="none" stroke="#7594a5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="354,81 346,76 346,86" fill="#7594a5"/>
+  <path d="M312 161H354" fill="none" stroke="#7594a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="354,161 346,156 346,166" fill="#7594a5"/>
+  <path d="M312 163H332V241H354" fill="none" stroke="#7594a5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="354,241 346,236 346,246" fill="#7594a5"/>
+
+  <!-- Executor 1 -->
+  <g filter="url(#soft)">
+    <rect x="360" y="43" width="153" height="76" rx="17" fill="url(#exec)" stroke="#b8dfc4"/>
+    <rect x="374" y="57" width="46" height="48" rx="10" fill="#ffffff" opacity="0.78"/>
+    <path d="M385 70h24M385 78h24M385 86h15" stroke="#5d9c76" stroke-width="2" stroke-linecap="round"/>
+    <text x="433" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7760">Executor</text>
+    <text x="433" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527b66">Bölüm 1</text>
+  </g>
+
+  <!-- Executor 2 -->
+  <g filter="url(#soft)">
+    <rect x="360" y="123" width="153" height="76" rx="17" fill="url(#exec)" stroke="#b8dfc4"/>
+    <rect x="374" y="137" width="46" height="48" rx="10" fill="#ffffff" opacity="0.78"/>
+    <path d="M385 150h24M385 158h24M385 166h15" stroke="#5d9c76" stroke-width="2" stroke-linecap="round"/>
+    <text x="433" y="152" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7760">Executor</text>
+    <text x="433" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527b66">Bölüm 2</text>
+  </g>
+
+  <!-- Executor 3 -->
+  <g filter="url(#soft)">
+    <rect x="360" y="203" width="153" height="76" rx="17" fill="url(#exec)" stroke="#b8dfc4"/>
+    <rect x="374" y="217" width="46" height="48" rx="10" fill="#ffffff" opacity="0.78"/>
+    <path d="M385 230h24M385 238h24M385 246h15" stroke="#5d9c76" stroke-width="2" stroke-linecap="round"/>
+    <text x="433" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7760">Executor</text>
+    <text x="433" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527b66">Bölüm 3</text>
+  </g>
+
+  <!-- Memory area -->
+  <path d="M519 81H538" stroke="#7594a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="538,81 530,76 530,86" fill="#7594a5"/>
+  <path d="M519 161H538" stroke="#7594a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="538,161 530,156 530,166" fill="#7594a5"/>
+  <path d="M519 241H538" stroke="#7594a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="538,241 530,236 530,246" fill="#7594a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="543" y="69" width="76" height="185" rx="19" fill="url(#memory)" stroke="#ecd28f"/>
+    <text x="558" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b6c26">RAM</text>
+    <rect x="558" y="112" width="46" height="10" rx="5" fill="#fdfaf0"/>
+    <rect x="558" y="130" width="46" height="10" rx="5" fill="#fdfaf0"/>
+    <rect x="558" y="148" width="46" height="10" rx="5" fill="#fdfaf0"/>
+    <path d="M557 179h48" stroke="#c6a659" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="553" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6c26">Önbellek</text>
+    <text x="555" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a8050">Disk</text>
+    <ellipse cx="581" cy="239" rx="22" ry="6" fill="#ddc787"/>
+    <path d="M559 239v7c0 4 44 4 44 0v-7" fill="#e9d79d"/>
+  </g>
+
+  <!-- bottom process badges -->
+  <g filter="url(#soft)">
+    <rect x="91" y="258" width="80" height="31" rx="13" fill="#ffffff" stroke="#dce6e9"/>
+    <text x="106" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e6c7b">Dönüşüm</text>
+    <rect x="184" y="258" width="72" height="31" rx="13" fill="#ffffff" stroke="#dce6e9"/>
+    <text x="198" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e6c7b">Shuffle</text>
+    <rect x="269" y="258" width="70" height="31" rx="13" fill="#ffffff" stroke="#dce6e9"/>
+    <text x="283" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e6c7b">Sonuç</text>
+  </g>
+</svg>

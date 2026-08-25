@@ -9,6 +9,7 @@ tags:
   - epoll
   - asenkron-programlama
 toc: true
+image: /img/c-ile-epoll-89.png
 ---
 
 Bir web sunucusunun aynı anda binlerce istemciyle konuşabilmesi, her bağlantıya ayrı bir iş parçacığı tahsis etmekten çok daha akıllı bir yaklaşım gerektirir. Bu projede Linux üzerinde `epoll`, BSD ve macOS tarafında ise benzer görev üstlenen `kqueue` mantığını inceleyerek bloklamayan, olay güdümlü ve küçük ama öğretici bir HTTP sunucusunun temelini kuracağız.
@@ -102,3 +103,6 @@ Bloklamayan `send()` yanıtın yalnızca bir bölümünü yazabilir. Bu nedenle 
 | Edge-triggered seçenek | `EPOLLET` | `EV_CLEAR` |
 
 Taşınabilirlik için olay kayıtlarını soyutlayan küçük bir arayüz yazılabilir. Güvenli bir gerçek dünya sunucusunda ayrıca zaman aşımı kuyruğu, maksimum istek boyutu, HTTP ayrıştırıcısı, TLS, sinyal yönetimi ve bağlantı başına geri basınç bulunmalıdır. Böylece oyuncak sunucu, internetin huysuz istemcilerine karşı dayanıklı bir altyapıya dönüşür.
+
+![c-ile-epoll-89](/img/c-ile-epoll-89.svg)
+

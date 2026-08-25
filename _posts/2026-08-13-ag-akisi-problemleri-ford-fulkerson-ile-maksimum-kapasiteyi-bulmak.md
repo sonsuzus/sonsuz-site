@@ -8,7 +8,11 @@ tags:
   - algoritmalar
   - graf teorisi
   - python
+image: /img/ag-akisi-problemleri-82.png
 ---
+
+![ag-akisi-problemleri-82](/img/ag-akisi-problemleri-82.svg)
+
 
 Bir lojistik ağında kamyonların, internet omurgasında paketlerin veya bir üretim hattında ham maddelerin taşındığını düşünün. Her bağlantının bir kapasitesi vardır ve amaç, başlangıç noktasından hedefe toplamda ne kadar malzeme gönderebileceğimizi bulmaktır. İşte **maksimum akış (max flow)** problemi tam olarak bu soruyu matematiksel bir modele dönüştürür. Ford-Fulkerson yöntemi ise kapasite sınırlarına çarpmadan akışı adım adım büyüten klasik ve öğretici bir yaklaşımdır.
 ``

@@ -11,6 +11,7 @@ tags:
   - veri tabanı
 redirect_from:
   - /posts/sql_revoke/
+image: /img/sql_revoke-92.png
 ---
 
 Birden fazla kullanıcının işlem yaptığı veritabanı sistemlerinde Veri Kontrol Dili (Data Control Language - DCL) komutları kullanılarak güvenlik sağlanır. Veritabanı yöneticisi bir veritabanı veya tablo üzerindeki işlem yetkilerini verir veya kaldırır.
@@ -40,3 +41,6 @@ Aşağıdaki komut personel tablosu üzerinde SELECT komutunu kullanma yetkisini
 ```sql
 REVOKE SELECT ON personel FROM *.*
 ```
+
+![sql_revoke-92](/img/sql_revoke-92.svg)
+

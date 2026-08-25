@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9edff"/>
+      <stop offset="100%" stop-color="#c9e4f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8aa0" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8aa0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="103" cy="74" r="74" fill="#dff2ec" opacity="0.42"/>
+  <circle cx="566" cy="258" r="91" fill="#dcecff" opacity="0.42"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426174">Bloklamayan HTTP Sunucusu</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718998">binlerce bağlantı · az iş parçacığı</text>
+
+  <!-- clients -->
+  <g filter="url(#softShadow)">
+    <rect x="28" y="91" width="115" height="42" rx="14" fill="#fff7db"/>
+    <circle cx="51" cy="112" r="11" fill="#f8d986"/>
+    <path d="M45 111c2-5 10-5 12 0M47 118c3 3 8 3 10 0" fill="none" stroke="#9c7626" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="70" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5f5535">İstemciler</text>
+    <text x="70" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7a50">çok sayıda</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="28" y="151" width="115" height="42" rx="14" fill="#fff7db"/>
+    <circle cx="51" cy="172" r="11" fill="#f8d986"/>
+    <path d="M45 171c2-5 10-5 12 0M47 178c3 3 8 3 10 0" fill="none" stroke="#9c7626" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="70" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5f5535">Yavaş ağ</text>
+    <text x="70" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7a50">bekletmez</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="28" y="211" width="115" height="42" rx="14" fill="#fff7db"/>
+    <circle cx="51" cy="232" r="11" fill="#f8d986"/>
+    <path d="M45 231c2-5 10-5 12 0M47 238c3 3 8 3 10 0" fill="none" stroke="#9c7626" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="70" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5f5535">Soketler</text>
+    <text x="70" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7a50">O_NONBLOCK</text>
+  </g>
+
+  <!-- incoming lines -->
+  <path d="M143 112 H184" fill="none" stroke="#80a6b8" stroke-width="2"/>
+  <polygon points="184,112 176,107 176,117" fill="#80a6b8"/>
+  <path d="M143 172 H184" fill="none" stroke="#80a6b8" stroke-width="2"/>
+  <polygon points="184,172 176,167 176,177" fill="#80a6b8"/>
+  <path d="M143 232 H184" fill="none" stroke="#80a6b8" stroke-width="2"/>
+  <polygon points="184,232 176,227 176,237" fill="#80a6b8"/>
+
+  <!-- event loop -->
+  <g filter="url(#shadow)">
+    <rect x="184" y="78" width="186" height="188" rx="25" fill="url(#core)" stroke="#b3d2e5"/>
+    <circle cx="277" cy="137" r="42" fill="#eff9ff" stroke="#95bfd7" stroke-width="2"/>
+    <path d="M277 105 A32 32 0 1 1 248 150" fill="none" stroke="#4f9bc1" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="247,150 249,140 257,147" fill="#4f9bc1"/>
+    <text x="247" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b86">epoll</text>
+    <text x="242" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54798d">olay döngüsü</text>
+
+    <rect x="204" y="196" width="146" height="24" rx="9" fill="#ffffff" opacity="0.84"/>
+    <text x="221" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45697c">yalnız hazır olaylar</text>
+    <rect x="204" y="228" width="146" height="22" rx="9" fill="#b8dcea" opacity="0.68"/>
+    <text x="230" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45697c">O(K) yaklaşımı</text>
+  </g>
+
+  <!-- fanout -->
+  <path d="M370 137 H397 V92 H423" fill="none" stroke="#70a7a8" stroke-width="2"/>
+  <polygon points="423,92 415,87 415,97" fill="#70a7a8"/>
+  <path d="M370 155 H423" fill="none" stroke="#70a7a8" stroke-width="2"/>
+  <polygon points="423,155 415,150 415,160" fill="#70a7a8"/>
+  <path d="M370 174 H397 V220 H423" fill="none" stroke="#70a7a8" stroke-width="2"/>
+  <polygon points="423,220 415,215 415,225" fill="#70a7a8"/>
+
+  <!-- states -->
+  <g filter="url(#softShadow)">
+    <rect x="423" y="67" width="178" height="51" rx="15" fill="#e5f5e8"/>
+    <circle cx="447" cy="92" r="13" fill="#bce4c4"/>
+    <path d="M441 92h12M447 86v12" stroke="#3d8c58" stroke-width="2" stroke-linecap="round"/>
+    <text x="470" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6e4c">Kabul et</text>
+    <text x="470" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63856b">EAGAIN olana dek</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="423" y="130" width="178" height="51" rx="15" fill="#eee8fb"/>
+    <circle cx="447" cy="155" r="13" fill="#d8c9f3"/>
+    <path d="M440 150h14v10h-14zM443 147h8" fill="none" stroke="#7456a6" stroke-width="1.6" stroke-linejoin="round"/>
+    <text x="470" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c4384">Oku ve ayrıştır</text>
+    <text x="470" y="167" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b679b">EPOLLIN</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="423" y="194" width="178" height="51" rx="15" fill="#ffe9df"/>
+    <circle cx="447" cy="219" r="13" fill="#f6c5af"/>
+    <path d="M440 219h11M448 214l5 5-5 5" fill="none" stroke="#ad6545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="470" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b5038">Kısmi yaz</text>
+    <text x="470" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a77460">EPOLLOUT gerektiğinde</text>
+  </g>
+
+  <!-- bottom platform -->
+  <g filter="url(#softShadow)">
+    <rect x="185" y="279" width="416" height="25" rx="10" fill="#ffffff" opacity="0.88"/>
+    <circle cx="205" cy="291.5" r="6" fill="#76b8dd"/>
+    <text x="218" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486d7f">Linux: epoll</text>
+    <path d="M306 291.5 H337" stroke="#a4bdc7" stroke-width="1.5"/>
+    <polygon points="337,291.5 331,288 331,295" fill="#a4bdc7"/>
+    <circle cx="357" cy="291.5" r="6" fill="#9d8bd2"/>
+    <text x="370" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486d7f">BSD ve macOS: kqueue</text>
+  </g>
+</svg>
