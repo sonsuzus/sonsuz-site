@@ -9,7 +9,11 @@ tags:
   - anahtar kelimeler
 redirect_from:
   - /posts/cpp_keywords/
+image: /img/cpp_keywords-19.png
 ---
+
+![cpp_keywords-19](/img/cpp_keywords-19.svg)
+
 
 C++ dilinde farklı amaçlarla kullanılmak üzere tahsis edilmiş olan kelimelere anahtar kelimeler denir. ANSI standartlarına göre C++'da kullanılmakta olan toplam 63 adet anahtar kelime vardır. Bu kelimeler değişken ve fonksiyon adı olarak kullanılamaz.
 

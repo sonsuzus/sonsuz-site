@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/cpp_ilkprog/
 toc: true
+image: /img/cpp_ilkprog-63.png
 ---
 
 
@@ -291,3 +292,6 @@ C++ Programlama Dili
 ```
 
 Program, main() fonksiyonu içinde yer alan işlem satırı ile fonk() adlı fonksiyonu çağırır. Fonksiyon bir karakter dizisini ekrana yazar.
+
+![cpp_ilkprog-63](/img/cpp_ilkprog-63.svg)
+

@@ -14,6 +14,7 @@ tags:
 redirect_from:
   - /posts/php_superglobals/
 toc: true
+image: /img/php_superglobals-83.png
 ---
 
 
@@ -448,3 +449,6 @@ Daha önceden, $\_COOKIE dizinine ders adı altında Kimya değeri verdiğimizi 
 Dersin adı: Kimya
 
 ```
+
+![php_superglobals-83](/img/php_superglobals-83.svg)
+

@@ -9,6 +9,7 @@ tags:
   - sözcüksel kapsam
   - javascript
 toc: true
+image: /img/kapanislar-ve-sozcuksel-85.png
 ---
 
 Bir fonksiyon çalışmasını tamamladığında yerel değişkenlerinin ortadan kaybolmasını bekleriz. Ancak kapanışlar, iç içe geçmiş fonksiyonlara şaşırtıcı bir yetenek kazandırır: İç fonksiyon, onu oluşturan dış fonksiyon çoktan sona ermiş olsa bile dış kapsamdaki değişkenlere erişebilir. Bu davranış sihir değil; sözcüksel kapsam, fonksiyon değerleri ve çalışma zamanı ortamlarının birlikte çalışmasının sonucudur.
@@ -93,3 +94,6 @@ b(); // 101
 Kapanışlar veri gizleme, olay işleyicileri, kısmi uygulama ve önbellekleme için çok kullanışlıdır. Yine de büyük nesneleri gereksiz yere yakalayan uzun ömürlü fonksiyonlar bellek tüketimini artırabilir. Özellikle olay dinleyicileri kaldırılmadığında ilgili çevreler de erişilebilir kalabilir.
 
 Özetle kapanış, dış fonksiyonun çalışmasını sonsuza kadar sürdürmez; yalnızca ihtiyaç duyulan sözcüksel çevrenin yaşam süresini uzatır. Fonksiyon böylece kod taşıyan bir kutudan fazlasına dönüşür: Nerede doğduğunu hatırlayan, kontrollü ve durum sahibi bir davranış birimi olur.
+
+![kapanislar-ve-sozcuksel-85](/img/kapanislar-ve-sozcuksel-85.svg)
+

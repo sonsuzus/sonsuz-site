@@ -9,6 +9,7 @@ tags:
   - normalizasyon
   - sql
 toc: true
+image: /img/1nf-2nf-ve-41.png
 ---
 
 Bir veritabanı ilk bakışta düzenli görünebilir; fakat müşteri adı onlarca satırda tekrarlanıyor, bir ürünün fiyatını değiştirmek için yüzlerce kayıt güncelleniyorsa masanın altında veri canavarları saklanıyor demektir. Normalizasyon, tabloları belirli kurallara göre parçalayarak veri tekrarını azaltan, ilişkileri netleştiren ve veri bütünlüğünü koruyan sistematik bir tasarım yaklaşımıdır.
@@ -101,3 +102,6 @@ CREATE TABLE Musteri (
 | 3NF | Geçişli bağımlılık olmamalıdır | Anahtar dışı sütunlar arası bağımlılık |
 
 Normalizasyon depolamayı ve bütünlüğü iyileştirir; ancak çok sayıda tablo, raporlama sorgularında daha fazla `JOIN` gerektirebilir. Bu nedenle işlem ağırlıklı sistemlerde 3NF güçlü bir başlangıç noktasıyken, analitik sistemlerde performans amacıyla kontrollü **denormalizasyon** uygulanabilir. Altın kural şudur: Önce doğru modeli kur, ardından ölçüm yap ve yalnızca gerçek bir darboğaz varsa bilinçli tekrar ekle.
+
+![1nf-2nf-ve-41](/img/1nf-2nf-ve-41.svg)
+

@@ -10,6 +10,7 @@ tags:
   - kruskal
   - algoritmalar
   - python
+image: /img/union-find-ile-85.png
 ---
 
 Bir sosyal ağdaki arkadaş gruplarını, şehirler arasındaki yol ağını veya bir labirentin hangi odalarının birbirine bağlı olduğunu düşünün. Her sorguda grafiği baştan sona gezmek mümkündür; fakat milyonlarca düğüm ve kenar varken bu yaklaşım pahalılaşır. **Union-Find** ya da diğer adıyla **Disjoint Set Union (DSU)**, birbirinden ayrık kümeleri temsil eder, iki kümeyi birleştirir ve iki elemanın aynı kümede olup olmadığını son derece hızlı biçimde söyler. Kruskal minimum yayılım ağacı algoritmasının motoru da tam olarak budur.
@@ -26,6 +27,9 @@ Naif bir uygulamada kökler zincir gibi uzayabilir. Örneğin 1, 2'nin; 2, 3'ün
 | Naif ebeveyn dizisi | $O(n)$ | Yüksek | Küçük örnekler |
 | Sadece boyuta göre birleştirme | $O(\log n)$ | Düşük | Dengeli kümeler |
 | Boyut + yol sıkıştırma | $O(\alpha(n))$ amortize | Çok düşük | Büyük grafikler |
+
+![union-find-ile-85](/img/union-find-ile-85.svg)
+
 
 Buradaki $\alpha(n)$, ters Ackermann fonksiyonudur. Matematiksel olarak yavaş büyür; gerçek hayatta karşılaşacağınız tüm veri boyutlarında neredeyse sabit kabul edilir. Başka bir deyişle, yüz binlerce `find` ve `union` çağrısı genellikle göz açıp kapayıncaya kadar tamamlanır.
 

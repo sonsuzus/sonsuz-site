@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="cGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#90caf9"/>
+      <stop offset="100%" stop-color="#64b5f6"/>
+    </linearGradient>
+    <linearGradient id="cppGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5c6bc0"/>
+      <stop offset="100%" stop-color="#3f51b5"/>
+    </linearGradient>
+    <linearGradient id="oopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#26a69a"/>
+      <stop offset="100%" stop-color="#00897b"/>
+    </linearGradient>
+    <linearGradient id="stdGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffa726"/>
+      <stop offset="100%" stop-color="#fb8c00"/>
+    </linearGradient>
+    <linearGradient id="modernGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef5350"/>
+      <stop offset="100%" stop-color="#e53935"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">C++ Programlama: Gelişim ve Yapı</text>
+
+  <!-- Zaman çizgisi -->
+  <line x1="60" y1="70" x2="580" y2="70" stroke="#b0bec5" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- C Dili -->
+  <rect x="50" y="52" width="110" height="36" rx="8" fill="url(#cGrad)" filter="url(#shadow)"/>
+  <text x="105" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">C Dili (C99)</text>
+
+  <!-- C++ Doğuşu -->
+  <rect x="210" y="52" width="120" height="36" rx="8" fill="url(#cppGrad)" filter="url(#shadow)"/>
+  <text x="270" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">C++ (1983-85)</text>
+
+  <!-- OOP -->
+  <rect x="380" y="52" width="130" height="36" rx="8" fill="url(#oopGrad)" filter="url(#shadow)"/>
+  <text x="445" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Nesne Tabanlı OOP</text>
+
+  <!-- Modern C++ -->
+  <rect x="540" y="52" width="80" height="36" rx="8" fill="url(#modernGrad)" filter="url(#shadow)"/>
+  <text x="580" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">Modern</text>
+
+  <!-- Ok işaretleri (manuel) -->
+  <polygon points="165,70 175,65 175,75" fill="#78909c"/>
+  <polygon points="335,70 345,65 345,75" fill="#78909c"/>
+  <polygon points="515,70 525,65 525,75" fill="#78909c"/>
+
+  <!-- Ana yapı: Basit Program -->
+  <rect x="220" y="120" width="200" height="40" rx="10" fill="#ffffff" stroke="#5c6bc0" stroke-width="2" filter="url(#shadowLight)"/>
+  <text x="320" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#3f51b5">Basit Program Yapısı</text>
+
+  <!-- Alt bileşenler -->
+  <rect x="60" y="200" width="130" height="36" rx="8" fill="#e3f2fd" stroke="#90caf9" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="125" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1565c0">Kütüphaneler</text>
+
+  <rect x="255" y="200" width="130" height="36" rx="8" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="320" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2e7d32">Ana Fonksiyon</text>
+
+  <rect x="450" y="200" width="130" height="36" rx="8" fill="#fff3e0" stroke="#ffa726" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="515" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e65100">Komutlar</text>
+
+  <!-- Bağlantı çizgileri -->
+  <line x1="280" y1="160" x2="125" y2="196" stroke="#90caf9" stroke-width="1.5"/>
+  <line x1="320" y1="160" x2="320" y2="196" stroke="#66bb6a" stroke-width="1.5"/>
+  <line x1="360" y1="160" x2="515" y2="196" stroke="#ffa726" stroke-width="1.5"/>
+
+  <!-- Alt açıklama -->
+  <rect x="130" y="265" width="380" height="36" rx="8" fill="#fce4ec" stroke="#ef5350" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="320" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c62828">Büyük programlar için düzenli ve esnek yapı</text>
+
+  <!-- Bağlantı -->
+  <line x1="320" y1="240" x2="320" y2="261" stroke="#ef5350" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Küçük rozetler -->
+  <circle cx="55" cy="120" r="12" fill="#e3f2fd" stroke="#90caf9" stroke-width="1"/>
+  <text x="55" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1565c0">C</text>
+
+  <circle cx="585" cy="120" r="12" fill="#fce4ec" stroke="#ef5350" stroke-width="1"/>
+  <text x="585" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#c62828">++</text>
+</svg>

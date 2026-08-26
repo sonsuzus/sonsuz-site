@@ -9,7 +9,11 @@ tags:
   - yorum satırı
 redirect_from:
   - /posts/cpp_comments/
+image: /img/cpp_comments-72.png
 ---
+
+![cpp_comments-72](/img/cpp_comments-72.svg)
+
 
 
 Kaynak kodlarının bulunduğu dosyaların içine bazen programın daha kolay anlaşılması için açıklayıcı satırlar eklenebilir. Bu satırlara "Yorum Satırı" adı verilir. Yorum satırlarının yazılan programla herhangi bir ilgisi yoktur. Sadece, programı inceleyenlerin, programı daha kolay bir şekilde anlamalarına yardımcı olur. Ayrıca, geçici olarak iptal etmek istediğiniz işlem satırlarını silmeden devre dışı bırakmak için de yorum satırı kavramını kullanabiliriz. Yorum satırlarına derleyici tarafından kesinlikle herhangi bir işlem yapılmaz ve hiç yokmuş gibi işlem görür.

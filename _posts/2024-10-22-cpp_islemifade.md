@@ -10,6 +10,7 @@ tags:
   - ifade
 redirect_from:
   - /posts/cpp_islemifade/
+image: /img/cpp_islemifade-22.png
 ---
 
 main() fonksiyonu ve diğer fonksiyonlarda yer alan ve noktalı virgül (;) karakteri ile sona eren satırlara işlem satırı adı verilir. Şimdi, işlem satırlarının hangi değerlerden oluşabileceğini incelemeye çalışalım:
@@ -93,3 +94,6 @@ C++ Programlama Dili
 ```
 
 Program, id1 adlı int bir değişken bildirimi yaparken 7 sabit değerini değişkene atar. id2, id3 ve id4 adlı üç adet int değişken bildirimi yapar. id2 değişkenine 21 değerini atar. id1 ve id2 değişken değerlerini toplayarak, sonucu id3 değişkenine atar. id3 değişken değeri ile 35 sabit değerini toplayarak, sonucu id4 değişken değerine atar. Önce, id1 ve id2 değişken değerlerini sonra id3 ve id4 değişken değerlerini cout komutuyla ekrana yazar. fonk() adlı fonksiyonu çağırarak bir karakter dizisini ekrana yazar.
+
+![cpp_islemifade-22](/img/cpp_islemifade-22.svg)
+

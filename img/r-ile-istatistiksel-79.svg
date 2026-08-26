@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d8f1e3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8294" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8294" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="64" cy="40" r="64" fill="#dcecff" opacity="0.48"/>
+  <circle cx="596" cy="276" r="86" fill="#dcefe2" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42566a">R ile İstatistiksel Modelleme</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718294">veriden kanıta analiz akışı</text>
+
+  <!-- Bağlantılar -->
+  <path d="M174 152 C200 152 202 146 222 142" fill="none" stroke="#8aa9c3" stroke-width="2"/>
+  <polygon points="222,142 213,138 215,147" fill="#8aa9c3"/>
+  <path d="M405 132 C427 105 436 91 455 82" fill="none" stroke="#8aa9c3" stroke-width="2"/>
+  <polygon points="455,82 445,83 449,91" fill="#8aa9c3"/>
+  <path d="M405 168 C429 189 435 215 455 226" fill="none" stroke="#8aa9c3" stroke-width="2"/>
+  <polygon points="455,226 447,218 444,227" fill="#8aa9c3"/>
+  <path d="M530 122 L530 149" fill="none" stroke="#9bb5a3" stroke-width="2"/>
+  <polygon points="530,149 526,140 534,140" fill="#9bb5a3"/>
+  <path d="M530 242 L530 268" fill="none" stroke="#9bb5a3" stroke-width="2"/>
+  <polygon points="530,268 526,259 534,259" fill="#9bb5a3"/>
+
+  <!-- Veri -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="101" width="146" height="103" rx="18" fill="#fffdf9"/>
+    <rect x="28" y="101" width="146" height="30" rx="18" fill="#d9ebff"/>
+    <rect x="28" y="116" width="146" height="15" fill="#d9ebff"/>
+  </g>
+  <text x="48" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385773">mtcars verisi</text>
+  <line x1="48" y1="145" x2="153" y2="145" stroke="#d7e2e7"/>
+  <text x="49" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53697b">wt</text>
+  <text x="84" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53697b">mpg</text>
+  <text x="123" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53697b">am</text>
+  <line x1="48" y1="171" x2="153" y2="171" stroke="#e6ecee"/>
+  <line x1="48" y1="182" x2="153" y2="182" stroke="#e6ecee"/>
+  <circle cx="55" cy="177" r="2.5" fill="#78a7d0"/>
+  <circle cx="91" cy="177" r="2.5" fill="#9ecda9"/>
+  <circle cx="130" cy="177" r="2.5" fill="#e4a073"/>
+  <text x="48" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b8c96">temizle ve incele</text>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <rect x="221" y="102" width="185" height="100" rx="22" fill="url(#core)"/>
+  </g>
+  <circle cx="255" cy="143" r="19" fill="#ffffff" opacity="0.85"/>
+  <path d="M245 151 L251 143 L256 146 L265 133" fill="none" stroke="#497ca5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="245" cy="151" r="2.4" fill="#497ca5"/>
+  <circle cx="251" cy="143" r="2.4" fill="#497ca5"/>
+  <circle cx="256" cy="146" r="2.4" fill="#497ca5"/>
+  <circle cx="265" cy="133" r="2.4" fill="#497ca5"/>
+  <text x="285" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38576c">Modelleme</text>
+  <text x="285" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526d7b">R kodu ile analiz</text>
+  <text x="242" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49708a">soru → ölçüm → yorum</text>
+
+  <!-- Regresyon -->
+  <g filter="url(#soft)">
+    <rect x="455" y="48" width="151" height="100" rx="18" fill="#fffdfb"/>
+    <rect x="455" y="48" width="151" height="28" rx="18" fill="#f9dfd0"/>
+    <rect x="455" y="62" width="151" height="14" fill="#f9dfd0"/>
+  </g>
+  <text x="475" y="67" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#784b39">Doğrusal regresyon</text>
+  <line x1="475" y1="127" x2="475" y2="88" stroke="#8fa1aa" stroke-width="1.5"/>
+  <line x1="475" y1="127" x2="582" y2="127" stroke="#8fa1aa" stroke-width="1.5"/>
+  <path d="M484 94 L573 118" fill="none" stroke="#c8624d" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="490" cy="98" r="3" fill="#76a9cd"/>
+  <circle cx="507" cy="104" r="3" fill="#76a9cd"/>
+  <circle cx="526" cy="104" r="3" fill="#76a9cd"/>
+  <circle cx="544" cy="114" r="3" fill="#76a9cd"/>
+  <circle cx="563" cy="116" r="3" fill="#76a9cd"/>
+  <text x="478" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d7f87">mpg ~ wt</text>
+
+  <!-- t testi -->
+  <g filter="url(#soft)">
+    <rect x="455" y="188" width="151" height="72" rx="18" fill="#fffdfb"/>
+    <rect x="455" y="188" width="151" height="28" rx="18" fill="#dceedd"/>
+    <rect x="455" y="202" width="151" height="14" fill="#dceedd"/>
+  </g>
+  <text x="475" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42644e">t testi</text>
+  <rect x="478" y="230" width="35" height="12" rx="5" fill="#a9c8e4"/>
+  <rect x="548" y="221" width="35" height="21" rx="5" fill="#e5ab86"/>
+  <text x="474" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657a6c">Otomatik</text>
+  <text x="546" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657a6c">Manuel</text>
+
+  <!-- Sonuçlar -->
+  <g filter="url(#shadow)">
+    <rect x="455" y="269" width="151" height="35" rx="16" fill="#e3daf4"/>
+  </g>
+  <circle cx="477" cy="286" r="10" fill="#ffffff" opacity="0.8"/>
+  <path d="M473 286 L476 289 L482 282" fill="none" stroke="#7960a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="494" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5e4c7d">Kanıt ve yorum</text>
+
+  <!-- Alt açıklama -->
+  <g filter="url(#soft)">
+    <rect x="28" y="243" width="377" height="61" rx="17" fill="#ffffff" opacity="0.83"/>
+  </g>
+  <text x="48" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#506676">Hipotez</text>
+  <text x="121" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637785">H₀: etki veya fark yok</text>
+  <text x="48" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#506676">Çıktılar</text>
+  <text x="121" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637785">katsayı · R² · p-değeri · güven aralığı</text>
+</svg>

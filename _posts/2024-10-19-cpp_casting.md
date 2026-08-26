@@ -10,6 +10,7 @@ tags:
 redirect_from:
   - /posts/cpp_casting/
 toc: true
+image: /img/cpp_casting-57.png
 ---
 
 
@@ -950,3 +951,6 @@ Yukarıdaki programı derleyip çalıştırdığımızda, aşağıdaki ifadeleri
 ```
 
 Progam, id1 ve id2 adlı iki adet int ve dd adlı bir adet double veri türünden değişken tanımlar. dd değişken değerini id1 değişkenini id2 değişkenine bölerek elde ettiği sonuca böler. Elde edilen sonuç double veri türünden olur.
+
+![cpp_casting-57](/img/cpp_casting-57.svg)
+

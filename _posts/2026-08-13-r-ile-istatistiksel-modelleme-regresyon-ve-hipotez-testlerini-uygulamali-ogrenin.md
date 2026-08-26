@@ -11,9 +11,13 @@ tags:
   - hipotez testi
   - veri analizi
 toc: true
+image: /img/r-ile-istatistiksel-79.png
 ---
 
 R dili, istatistiksel modelleme dünyasında hem akademisyenlerin hem de veri analistlerinin vazgeçilmez araçlarından biridir. Bunun sebebi yalnızca zengin paket ekosistemi değildir: R, veri temizlemeden görselleştirmeye, regresyondan hipotez testlerine kadar analiz sürecini okunabilir kodlarla kurmayı sağlar. Bu yazıda yerleşik `mtcars` veri setini kullanarak doğrusal regresyon kuracak, model sonuçlarını yorumlayacak ve iki grubun ortalamasını t testiyle karşılaştıracağız.
+
+![r-ile-istatistiksel-79](/img/r-ile-istatistiksel-79.svg)
+
 ``
 
 ## Modelleme mantığı: Soruyu denkleme dönüştürmek

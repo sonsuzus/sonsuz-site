@@ -9,7 +9,11 @@ tags:
   - merge sort
   - böl-fethet
   - karmaşıklık analizi
+image: /img/merge-sort-ve-44.png
 ---
+
+![merge-sort-ve-44](/img/merge-sort-ve-44.svg)
+
 
 Merge Sort, karmaşık görünen bir sıralama işini şaşırtıcı derecede düzenli bir plana dönüştürür: Büyük diziyi sürekli ikiye böl, tek elemanlı parçalara ulaştığında bu parçaları sıralı biçimde geri birleştir. Bu yaklaşım, **böl-fethet** (divide and conquer) stratejisinin en tanınan örneklerinden biridir. Özellikle milyonlarca kayıt, log satırı veya zaman damgalı olay işlenirken öngörülebilir çalışma süresi sayesinde güven verir.
 ``

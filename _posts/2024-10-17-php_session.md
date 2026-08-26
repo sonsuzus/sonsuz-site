@@ -12,6 +12,7 @@ tags:
   - çerez
 redirect_from:
   - /posts/php_session/
+image: /img/php_session-39.png
 ---
 
 
@@ -89,3 +90,6 @@ Veriler: 35 Oturum karakter dizisi
 Veriler: 35 Oturum karakter dizisi
 
 ```
+
+![php_session-39](/img/php_session-39.svg)
+

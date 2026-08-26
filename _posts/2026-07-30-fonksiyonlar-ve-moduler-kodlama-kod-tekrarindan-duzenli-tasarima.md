@@ -9,6 +9,7 @@ tags:
   - modüler programlama
   - temiz kod
 toc: true
+image: /img/fonksiyonlar-ve-moduler-49.png
 ---
 
 Bir program büyüdükçe aynı işlemleri yapan kod satırları farklı yerlerde tekrar belirmeye başlar. Başlangıçta masum görünen bu kopyalar, değişiklik zamanı geldiğinde küçük birer baş ağrısı fabrikasına dönüşür. Fonksiyonlar, belirli bir görevi yerine getiren kod bloklarını isimlendirip ihtiyaç duyduğumuzda çağırmamızı sağlar. Böylece program, devasa bir komut yığını yerine anlaşılır ve yeniden kullanılabilir parçalardan oluşur.
@@ -96,3 +97,6 @@ Fonksiyon yalnızca toplam hesaplama sorumluluğunu üstlenir. Ekrana yazdırma,
 İyi bir fonksiyon kısa, anlamlı isimli ve tahmin edilebilir olmalıdır. `islem()` yerine `vergi_hesapla()` gibi niyeti açıklayan adlar seçilmelidir. Fonksiyon mümkünse dışarıdaki değişkenleri değiştirmemeli; girdiden çıktı üretmelidir. Böyle fonksiyonlara saf fonksiyon denir ve test edilmeleri çok daha kolaydır.
 
 Kısacası fonksiyonlar yalnızca satır sayısını azaltmaz; kodun düşünce yapısını düzenler. Tekrar eden bir blok gördüğünüzde kendinize şu soruyu sorun: “Bu davranışın bir adı olsaydı ne olurdu?” Cevap büyük ihtimalle yeni fonksiyonunuzun adıdır.
+
+![fonksiyonlar-ve-moduler-49](/img/fonksiyonlar-ve-moduler-49.svg)
+

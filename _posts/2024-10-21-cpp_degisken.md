@@ -10,7 +10,11 @@ tags:
 redirect_from:
   - /posts/cpp_degisken/
 toc: true
+image: /img/cpp_degisken-73.png
 ---
+
+![cpp_degisken-73](/img/cpp_degisken-73.svg)
+
 
 
 C++ dilinde bilgisayar belleğinin bir kısmına belirli bir isim vererek bu bellek alanını kendimiz için ayırabilir ve bu alana değerler yerleştirebiliriz. Bu değerleri de istediğimiz zaman değiştirebiliriz.

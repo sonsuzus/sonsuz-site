@@ -11,6 +11,7 @@ tags:
   - web
 redirect_from:
   - /posts/php_switch/
+image: /img/php_switch-62.png
 ---
 
 
@@ -206,3 +207,6 @@ Değişken değeri: 1, 2 veya 3'ten farklıdır!
 ```
 
 Yukarıdaki PHP dosyasında, ilk 3 case satırında doğru sonuç edilmediğinden default satırı için tanımlanan işlem satırı çalıştırılmıştır.
+
+![php_switch-62](/img/php_switch-62.svg)
+

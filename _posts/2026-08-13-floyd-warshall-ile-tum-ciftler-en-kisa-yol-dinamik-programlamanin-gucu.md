@@ -9,6 +9,7 @@ tags:
   - dinamik programlama
   - graf
   - floyd-warshall
+image: /img/floyd-warshall-ile-32.png
 ---
 
 Bir şehir haritasında her kavşaktan diğer tüm kavşaklara en kısa yolu aynı anda bulmak istediğinizi düşünün. Floyd-Warshall algoritması tam olarak bu işi yapar: ağırlıklı bir graftaki **tüm düğüm çiftleri** arasındaki en kısa mesafeleri hesaplar. Tek kaynaklı Dijkstra'nın aksine, başlangıç düğümünü tekrar tekrar değiştirmek zorunda kalmazsınız. Negatif ağırlıklı kenarları da desteklemesi, onu özellikle maliyet farkları, kur dönüşümleri ve bağımlılık analizleri gibi senaryolarda değerli kılar.
@@ -29,6 +30,9 @@ Başlangıç koşulları da önemlidir. Bir düğümün kendisine uzaklığı `0
 | `i = j` | `0` |
 | `i → j` doğrudan kenarı var | Kenarın ağırlığı |
 | Doğrudan bağlantı yok | $\infty$ |
+
+![floyd-warshall-ile-32](/img/floyd-warshall-ile-32.svg)
+
 
 Python ile temel uygulama aşağıdaki gibidir. Kritik ayrıntı, en dış döngünün ara düğüm `k` olmasıdır; döngü sırası değiştirilirse dinamik programlama varsayımı bozulabilir.
 
