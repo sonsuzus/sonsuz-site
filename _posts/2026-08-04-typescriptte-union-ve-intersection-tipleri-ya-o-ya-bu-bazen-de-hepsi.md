@@ -37,7 +37,7 @@ Bu fonksiyon hem `number` hem de `string` kabul eder. Ancak TypeScript, değerin
 Çözüm, **type narrowing**, yani tip daraltmadır:
 
 ```typescript
-function kimlikBicimlendir(kimlik: string | number): string {
+function kimlikBicimlendir(kimlik: string \vert  number): string {
   if (typeof kimlik === "string") {
     return kimlik.toUpperCase();
   }

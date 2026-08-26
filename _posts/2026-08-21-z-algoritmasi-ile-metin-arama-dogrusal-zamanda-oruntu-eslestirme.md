@@ -19,13 +19,13 @@ Temel fikir, bir dizinin her konumunda dizinin başıyla eşleşen en uzun önek
 
 $$S = P + \$ + T$$
 
-Buradaki `$`, hem örüntüde hem metinde bulunmadığı garanti edilen bir ayraç karakteridir. Z dizisinde `|P|` değerini gördüğümüz her indeks, metinde örüntünün eksiksiz bulunduğu bir konuma karşılık gelir. Ayraç, örüntünün metin bölümüne taşarak sahte bir eşleşme üretmesini engeller.
+Buradaki `$`, hem örüntüde hem metinde bulunmadığı garanti edilen bir ayraç karakteridir. Z dizisinde `\vert P\vert ` değerini gördüğümüz her indeks, metinde örüntünün eksiksiz bulunduğu bir konuma karşılık gelir. Ayraç, örüntünün metin bölümüne taşarak sahte bir eşleşme üretmesini engeller.
 
-| Yaklaşım | En kötü durum karmaşıklığı | Önceki eşleşmeleri kullanır mı? |
-|---|---:|---|
-| Naif arama | $O(n \cdot m)$ | Hayır |
-| Z Algoritması | $O(n+m)$ | Evet |
-| KMP | $O(n+m)$ | Evet |
+\vert  Yaklaşım \vert  En kötü durum karmaşıklığı \vert  Önceki eşleşmeleri kullanır mı? \vert 
+\vert ---\vert ---:\vert ---\vert 
+\vert  Naif arama \vert  $O(n \cdot m)$ \vert  Hayır \vert 
+\vert  Z Algoritması \vert  $O(n+m)$ \vert  Evet \vert 
+\vert  KMP \vert  $O(n+m)$ \vert  Evet \vert 
 
 Z Algoritmasının hız sırrı **Z kutusu**dur. `[L, R]` aralığı, dizinin başlangıcıyla eşleştiği bilinen en sağdaki aralığı temsil eder. Yeni bir `i` indeksi bu kutunun dışındaysa karşılaştırmalar doğrudan yapılır. `i` kutunun içindeyse, simetrik konumdaki önceden hesaplanmış Z değeri başlangıç tahmini sağlar. Sadece bu tahmin kutunun sağ sınırını aşarsa yeni karakter karşılaştırmaları gerekir.
 

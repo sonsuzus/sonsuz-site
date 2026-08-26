@@ -71,7 +71,7 @@ Uzak atlama, işlemcinin komut kuyruğunu temizler ve yeni kod segmentini yükle
 volatile unsigned short *vga = (unsigned short *)0xB8000;
 
 void put_char(char c, int position) {
-    vga[position] = (0x0F << 8) | c;
+    vga[position] = (0x0F << 8) \vert  c;
 }
 
 void kernel_main(void) {

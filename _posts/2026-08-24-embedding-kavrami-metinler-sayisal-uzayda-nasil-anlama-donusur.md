@@ -30,7 +30,7 @@ Embedding ise her öğeyi daha küçük boyutlu, yoğun bir vektöre taşır. Ö
 
 Vektörlerin yönü, çoğu senaryoda uzunluğundan daha anlamlıdır. Bu nedenle en sık kullanılan ölçü **kosinüs benzerliği**dir:
 
-$$\cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|}$$
+$$\cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{\\vert \mathbf{u}\\vert \\vert \mathbf{v}\\vert }$$
 
 Sonuç `1` değerine yaklaştıkça vektörler aynı yöne, yani benzer anlama sahiptir. `0` civarı ilişkisizliği; negatif değerler ise zıt yönleri ifade eder. Örneğin “yazılım geliştirme” sorgusu, “Python ile uygulama programlama” belgesine; anahtar kelimeleri birebir aynı olmasa bile yüksek benzerlik verebilir.
 

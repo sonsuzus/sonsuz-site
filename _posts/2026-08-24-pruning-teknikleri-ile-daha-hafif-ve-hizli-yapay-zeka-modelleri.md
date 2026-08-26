@@ -17,7 +17,7 @@ Derin öğrenme modelleri büyüdükçe doğrulukları genellikle artar; ancak b
 
 Bir sinir ağındaki bağlantıyı ağırlık değeri $w$ ile düşünelim. Ağırlığın mutlak değeri küçükse, ilgili bağlantının çıktıya katkısı çoğu zaman sınırlıdır. Basit eşik tabanlı budamada kural şöyledir:
 
-$$w' = \begin{cases} 0, & |w| < \tau \\ w, & |w| \geq \tau \end{cases}$$
+$$w' = \begin{cases} 0, & \vert w\vert  < \tau \\ w, & \vert w\vert  \geq \tau \end{cases}$$
 
 Burada $\tau$ budama eşiğidir. Eşik arttıkça daha fazla ağırlık sıfırlanır; model küçülür ama doğruluk kaybetme riski de yükselir. Bu nedenle pruning, "ne kadarını silebiliriz?" sorusundan çok, "hangi parçalar gerçekten önemli?" sorusudur.
 
@@ -60,7 +60,7 @@ print(f"Seyreklik oranı: {sparsity:.0%}")
 
 Bu kod yalnızca ağırlıkları sıfırlar; modelin doğruluğunu otomatik olarak garanti etmez. Budama sonrası eğitimde daha düşük bir öğrenme oranı kullanmak, modelin kalan bağlantılara yeniden uyum sağlamasına yardım eder. Bu süreçte kayıp fonksiyonu tipik olarak $\mathcal{L}_{task}$ iken, seyrekliği teşvik etmek için $L_1$ cezası da eklenebilir:
 
-$$\mathcal{L} = \mathcal{L}_{task} + \lambda \sum_i |w_i|$$
+$$\mathcal{L} = \mathcal{L}_{task} + \lambda \sum_i \vert w_i\vert $$
 
 $\lambda$ büyüdükçe küçük ağırlıklar sıfıra yaklaşma eğilimi gösterir. Ancak aşırı büyük bir değer, modelin öğrenme kapasitesini erkenden kısıtlayabilir.
 

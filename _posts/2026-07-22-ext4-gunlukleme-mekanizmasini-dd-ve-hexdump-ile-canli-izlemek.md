@@ -63,15 +63,15 @@ if [[ ! -f "$IMG" ]]; then
   exit 1
 fi
 
-BS=$(dumpe2fs -h "$IMG" 2>/dev/null | awk -F: '/Block size/ {gsub(/ /,"",$2); print $2}')
+BS=$(dumpe2fs -h "$IMG" 2>/dev/null \vert  awk -F: '/Block size/ {gsub(/ /,"",$2); print $2}')
 
 JOURNAL_RANGE=$(debugfs -R 'stat <8>' "$IMG" 2>/dev/null \
-  | awk '
+  \vert  awk '
     match($0, /\):([0-9]+)-([0-9]+)/, a) { print a[1], a[2]; exit }
     match($0, /\):([0-9]+)/, a) { print a[1], a[1]; exit }
   ')
 
-START_BLOCK=$(echo "$JOURNAL_RANGE" | awk '{print $1}')
+START_BLOCK=$(echo "$JOURNAL_RANGE" \vert  awk '{print $1}')
 END_BLOCK=$(echo "$JOURNAL_RANGE" | awk '{print $2}')
 
 if [[ -z "${START_BLOCK:-}" ]]; then

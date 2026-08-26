@@ -9,9 +9,13 @@ tags:
   - swift
   - temiz kod
 toc: true
+image: /img/jenerikler-ile-tek-72.png
 ---
 
 Aynı işlemi `Int`, `String` ve özel veri tipleri için ayrı ayrı yazdığınızı düşünün. Kod çalışır; fakat proje büyüdükçe kopyalanmış fonksiyonlar küçük bir klon ordusuna dönüşür. Jenerikler (Generics), fonksiyonları, yapıları ve enum’ları belirli bir tipe kilitlemeden tanımlamamızı sağlar. Böylece tip güvenliğinden vazgeçmeden daha esnek, yeniden kullanılabilir ve bakımı kolay kod üretiriz.
+
+
+![jenerikler-ile-tek-72](/img/jenerikler-ile-tek-72.svg)
 
 ``
 

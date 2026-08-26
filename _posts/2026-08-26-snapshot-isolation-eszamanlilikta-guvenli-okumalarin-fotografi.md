@@ -8,6 +8,7 @@ tags:
   - veritabanı
   - snapshot isolation
   - eşzamanlılık
+toc: true
 ---
 
 Bir veritabanında aynı anda yüzlerce kullanıcının işlem yaptığını düşünün: biri bakiyesini güncellerken diğeri rapor alıyor, üçüncüsü aynı ürünü satın almaya çalışıyor. Snapshot Isolation (SI), her işleme verinin tutarlı bir “anlık görüntüsünü” vererek bu karmaşayı yönetmeye yardımcı olan izolasyon seviyesidir. Okuyucuların yazarları beklememesi sayesinde özellikle yoğun okuma yüklerinde oldukça akıcı bir deneyim sunar.

@@ -64,14 +64,14 @@ PHP değişken adları büyük-küçük harfe duyarlıdır. Dolayısıyla `$isim
 
 PHP’nin sık kullanılan veri tipleri aşağıdaki gibidir:
 
-| Veri tipi | Örnek | Kullanım amacı |
-|---|---|---|
-| `string` | `"Merhaba"` | Metin saklamak |
-| `int` | `42` | Tam sayılar |
-| `float` | `19.95` | Ondalıklı sayılar |
-| `bool` | `true` | Mantıksal durumlar |
-| `array` | `["PHP", "HTML"]` | Birden fazla değer |
-| `null` | `null` | Değer bulunmadığını belirtmek |
+\vert  Veri tipi \vert  Örnek \vert  Kullanım amacı \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  `string` \vert  `"Merhaba"` \vert  Metin saklamak \vert 
+\vert  `int` \vert  `42` \vert  Tam sayılar \vert 
+\vert  `float` \vert  `19.95` \vert  Ondalıklı sayılar \vert 
+\vert  `bool` \vert  `true` \vert  Mantıksal durumlar \vert 
+\vert  `array` \vert  `["PHP", "HTML"]` \vert  Birden fazla değer \vert 
+\vert  `null` \vert  `null` \vert  Değer bulunmadığını belirtmek \vert 
 
 ```php
 <?php

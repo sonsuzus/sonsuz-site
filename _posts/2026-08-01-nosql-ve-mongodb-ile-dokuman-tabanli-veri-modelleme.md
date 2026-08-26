@@ -79,12 +79,12 @@ Bu kod, zorunlu alanları ve kabul edilen veri türlerini belirleyerek esneklik 
 
 Doküman modellemenin kritik kararı, ilişkili veriyi ana dokümana **gömmek** veya başka koleksiyona koyup **referans vermektir**. Birlikte okunan ve sınırlı büyüyen veriler gömülebilir. Sürekli büyüyen, bağımsız güncellenen ya da birçok doküman tarafından paylaşılan veriler referanslanmalıdır.
 
-| Durum | Tercih |
-|---|---|
-| Sipariş içindeki teslimat adresi | Gömme |
-| Ürünün birkaç teknik özelliği | Gömme |
-| Milyonlarca kullanıcı yorumu | Referans |
-| Birçok üründe kullanılan marka | Referans |
+\vert  Durum \vert  Tercih \vert 
+\vert ---\vert ---\vert 
+\vert  Sipariş içindeki teslimat adresi \vert  Gömme \vert 
+\vert  Ürünün birkaç teknik özelliği \vert  Gömme \vert 
+\vert  Milyonlarca kullanıcı yorumu \vert  Referans \vert 
+\vert  Birçok üründe kullanılan marka \vert  Referans \vert 
 
 Basit bir karar ölçüsü şöyle düşünülebilir:
 

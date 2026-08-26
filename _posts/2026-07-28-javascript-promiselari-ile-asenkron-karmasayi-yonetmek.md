@@ -70,12 +70,12 @@ Her `then` yeni bir Promise döndürür. Böylece sonuçlar sırayla aktarılır
 
 ## Callback ve Promise karşılaştırması
 
-| Özellik | Callback yaklaşımı | Promise yaklaşımı |
-|---|---|---|
-| Okunabilirlik | İç içe yapılar oluşabilir | Doğrusal zincir kurulur |
-| Hata yönetimi | Her seviyede ayrı kontrol gerekebilir | Tek `catch` zinciri yakalayabilir |
-| Birleştirme | Elle koordinasyon gerekir | Hazır yardımcı metotlar vardır |
-| Sonuç aktarımı | Parametrelerle yapılır | `return` ile zincire iletilir |
+\vert  Özellik \vert  Callback yaklaşımı \vert  Promise yaklaşımı \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Okunabilirlik \vert  İç içe yapılar oluşabilir \vert  Doğrusal zincir kurulur \vert 
+\vert  Hata yönetimi \vert  Her seviyede ayrı kontrol gerekebilir \vert  Tek `catch` zinciri yakalayabilir \vert 
+\vert  Birleştirme \vert  Elle koordinasyon gerekir \vert  Hazır yardımcı metotlar vardır \vert 
+\vert  Sonuç aktarımı \vert  Parametrelerle yapılır \vert  `return` ile zincire iletilir \vert 
 
 ## Birden fazla işlemi yönetmek
 

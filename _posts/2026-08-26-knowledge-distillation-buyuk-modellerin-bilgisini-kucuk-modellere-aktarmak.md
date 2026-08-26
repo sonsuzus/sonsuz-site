@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Yapay Zeka
-  - Derin Öğrenme
-  - Knowledge Distillation
+  - yapay zeka
+  - derin öğrenme
+  - knowledge distillation
+toc: true
 ---
 
 Büyük dil ve görüntü modelleri etkileyici sonuçlar üretir; ancak çoğu zaman pahalı, yavaş ve cihaz üzerinde çalıştırılamayacak kadar hantaldırlar. **Knowledge Distillation** (bilgi damıtma), büyük bir *öğretmen* modelin öğrendiği davranışları daha küçük bir *öğrenci* modele aktararak bu sorunu hedefler. Amaç öğretmeni birebir kopyalamak değil, onun karar verme ipuçlarını sıkıştırılmış bir biçimde öğrencide yaşatmaktır.

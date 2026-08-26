@@ -46,7 +46,7 @@ HyperLogLog, elemanların tamamını depolamadan farklı eleman sayısını tahm
 
 Temel fikir kabaca şudur: Gözlenen nadirlik arttıkça evrende daha fazla farklı eleman bulunma olasılığı yükselir. Tahmin $\hat{N}$, gerçek sayı $N$ için küçük bir bağıl hata taşır:
 
-$$\text{bağıl hata} = \frac{|\hat{N} - N|}{N}$$
+$$\text{bağıl hata} = \frac{\vert \hat{N} - N\vert }{N}$$
 
 Redis HyperLogLog için standart hata oranı yaklaşık %0,81'dir. Bu, analitik paneller ve erişim metrikleri için çoğu zaman mükemmel bir dengedir; fakat faturalandırma veya kesin ödül dağıtımı için uygun değildir.
 

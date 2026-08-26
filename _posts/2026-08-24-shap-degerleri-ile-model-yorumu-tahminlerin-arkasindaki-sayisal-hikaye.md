@@ -19,7 +19,7 @@ SHAP, kooperatif oyun teorisindeki **Shapley değerlerinden** gelir. Burada mode
 
 Bir özellik için Shapley değeri genel olarak şöyledir:
 
-$$\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{|S|!(|F|-|S|-1)!}{|F|!}\left[f(S \cup \{i\}) - f(S)\right]$$
+$$\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{\vert S\vert !(\vert F\vert -\vert S\vert -1)!}{\vert F\vert !}\left[f(S \cup \{i\}) - f(S)\right]$$
 
 Burada $F$ tüm özellik kümesini, $S$ ise $i$ özelliği eklenmeden önce kullanılan özellik alt kümesini temsil eder. Formül göz korkutucu görünse de ana fikir basittir: Bir özelliğin katkısı, tek bir senaryoda değil, katılabileceği tüm ekip kombinasyonlarında adil biçimde ölçülür.
 
@@ -36,7 +36,7 @@ SHAP hem tek bir müşterinin tahminini hem de modelin genel davranışını inc
 | Yaklaşım | Sorduğu soru | Tipik SHAP çıktısı | Kullanım örneği |
 |---|---|---|---|
 | Yerel açıklama | “Bu kayıt neden yüksek risk aldı?” | Waterfall/force plot | Tek kredi başvurusunu inceleme |
-| Küresel açıklama | “Model genel olarak en çok neye bakıyor?” | Summary plot, ortalama $|SHAP|$ | Özellik önceliği analizi |
+| Küresel açıklama | “Model genel olarak en çok neye bakıyor?” | Summary plot, ortalama $\vert SHAP\vert $ | Özellik önceliği analizi |
 | Etkileşim analizi | “İki özellik birlikte nasıl davranıyor?” | Dependence plot | Yaş ve gelir ilişkisini inceleme |
 
 Örneğin bir müşterinin terk olasılığı %72 çıktıysa, uzun süre destek kaydı açmış olması tahmini yukarı çekebilir; yıllık abonelik kullanması ise aşağı indirebilir. Bu, o müşteri için yerel açıklamadır. Tüm müşterilerde “destek kaydı sayısı”nın ortalama mutlak SHAP değerinin yüksek olması ise bu değişkenin küresel önemini gösterir.

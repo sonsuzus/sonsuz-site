@@ -16,7 +16,7 @@ Bir görüntü sınıflandırıcısının yüksek doğruluk vermesi, onun güven
 
 Karşıt saldırıların temelinde modelin karar sınırları bulunur. Bir sınıflandırıcı, girdiyi $x$, gerçek etiketi $y$ ve parametreleri $\theta$ ile gösterildiğinde genellikle $f_\theta(x)$ fonksiyonu olarak yazılır. Saldırgan, girdiye küçük bir $\delta$ bozuntusu ekleyerek kaybı yükseltmeye çalışır:
 
-$$\max_{\|\delta\|_\infty \leq \epsilon} \mathcal{L}(f_\theta(x + \delta), y)$$
+$$\max_{\\vert \delta\\vert _\infty \leq \epsilon} \mathcal{L}(f_\theta(x + \delta), y)$$
 
 Buradaki $\epsilon$, değişikliğin büyüklüğünü sınırlar. FGSM saldırısında bu amaç için kaybın girişe göre gradyan işareti kullanılır: $x_{adv}=x+\epsilon\,\mathrm{sign}(\nabla_x\mathcal{L})$. PGD ise aynı fikri birçok küçük adımda uygular; bu nedenle savunmaları değerlendirmek için daha güçlü ve daha güvenilir bir başlangıç noktasıdır.
 
@@ -30,7 +30,7 @@ Gradient masking, adından dolayı ilk bakışta çekici görünür: Gradyanlar 
 
 Daha sağlam yaklaşım olan adversarial training, iç optimizasyonla üretilen saldırılı örnekleri eğitime dahil eder. Amaç artık temiz kaybı değil, bozuntu kümesindeki en kötü kaybı azaltmaktır:
 
-$$\min_\theta\; \mathbb{E}_{(x,y)}\left[\max_{\|\delta\|_\infty\leq\epsilon}\mathcal{L}(f_\theta(x+\delta),y)\right]$$
+$$\min_\theta\; \mathbb{E}_{(x,y)}\left[\max_{\\vert \delta\\vert _\infty\leq\epsilon}\mathcal{L}(f_\theta(x+\delta),y)\right]$$
 
 PyTorch ile basitleştirilmiş bir eğitim adımı aşağıdaki gibi kurulabilir. Kod, her mini-batch için kısa bir PGD saldırısı üretir ve modelin bu örneklerde öğrenmesini sağlar.
 

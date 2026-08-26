@@ -27,8 +27,8 @@ $$T(n) = c \cdot n$$
 
 | Yapı | Kullanım biçimi | En uygun olduğu durum |
 |---|---|---|
-| İndeksli dizi | `$renkler[0]` | Basit ve sıralı değer listeleri |
-| İlişkisel dizi | `$urun['ad']` | Özellikleri bulunan kayıtlar |
+| İndeksli dizi | `$renkler[0]` \vert  Basit ve sıralı değer listeleri \vert 
+\vert  İlişkisel dizi \vert  `$urun['ad']` | Özellikleri bulunan kayıtlar |
 | `for` | Sayaç ve indeks kullanır | Konum bilgisi gerektiğinde |
 | `foreach` | Elemanı doğrudan verir | Koleksiyonları okunaklı biçimde dolaşırken |
 

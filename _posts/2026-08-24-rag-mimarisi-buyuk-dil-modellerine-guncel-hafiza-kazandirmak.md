@@ -21,7 +21,7 @@ Bir RAG hattı iki ana aşamadan oluşur: **indeksleme** ve **sorgulama**. İnde
 
 Benzerlik çoğunlukla kosinüs benzerliği ile hesaplanır:
 
-$$\operatorname{cosine}(q,d)=\frac{q \cdot d}{\|q\|\|d\|}$$
+$$\operatorname{cosine}(q,d)=\frac{q \cdot d}{\\vert q\\vert \\vert d\\vert }$$
 
 Burada $q$ sorgu vektörü, $d$ ise doküman parçası vektörüdür. Skoru yüksek olan ilk $k$ parça seçilir. Ardından kullanıcı sorusu ve seçilen içerikler bir istemde birleştirilerek LLM'e gönderilir. Bu süreci basitçe şöyle ifade edebiliriz:
 

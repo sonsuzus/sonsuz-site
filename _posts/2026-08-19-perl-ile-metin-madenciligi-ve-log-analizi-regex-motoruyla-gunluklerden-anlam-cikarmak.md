@@ -44,7 +44,7 @@ my %path_count;
 while (my $line = <>) {
     chomp $line;
 
-    if ($line =~ m{^(\S+) \S+ \S+ \[[^\]]+\] "(GET|POST|PUT|DELETE|PATCH) (\S+) HTTP/[^ ]+" (\d{3})}) {
+    if ($line =~ m{^(\S+) \S+ \S+ \[[^\]]+\] "(GET\vert POST\vert PUT\vert DELETE\vert PATCH) (\S+) HTTP/[^ ]+" (\d{3})}) {
         my ($ip, $method, $path, $status) = ($1, $2, $3, $4);
         $status_count{$status}++;
         $path_count{$path}++ if $status >= 400;
@@ -67,12 +67,12 @@ $$
 
 Bu oran ani artış gösterdiğinde uygulama, veritabanı veya ağ katmanında bir sorun araştırılmalıdır. Benzer biçimde, tek bir IP'nin çok sayıda farklı URL'ye kısa sürede 404 isteği göndermesi tarama botuna ya da keşif girişimine işaret edebilir.
 
-| Gözlem | Olası yorum | İlk aksiyon |
-|---|---|---|
-| 500 kodlarında sıçrama | Uygulama veya bağımlılık hatası | Hata logunu zaman damgasıyla eşleştir |
-| Çok sayıda 404 | Bozuk bağlantı veya bot taraması | En çok istenen yolları listele |
-| Tek IP'den yoğun POST | Brute-force veya otomasyon | Oran sınırlama ve kimlik doğrulama kayıtlarını incele |
-| Uzun yanıt süreleri | Performans darboğazı | URL ve zaman aralığı bazında grupla |
+\vert  Gözlem \vert  Olası yorum \vert  İlk aksiyon \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  500 kodlarında sıçrama \vert  Uygulama veya bağımlılık hatası \vert  Hata logunu zaman damgasıyla eşleştir \vert 
+\vert  Çok sayıda 404 \vert  Bozuk bağlantı veya bot taraması \vert  En çok istenen yolları listele \vert 
+\vert  Tek IP'den yoğun POST \vert  Brute-force veya otomasyon \vert  Oran sınırlama ve kimlik doğrulama kayıtlarını incele \vert 
+\vert  Uzun yanıt süreleri \vert  Performans darboğazı \vert  URL ve zaman aralığı bazında grupla \vert 
 
 ## Regex performansı için küçük ama etkili kurallar
 

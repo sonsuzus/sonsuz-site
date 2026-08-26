@@ -83,14 +83,14 @@ echo 'Veriler işlenmeye hazır.';
 
 ## GET ve POST karşılaştırması
 
-| Özellik | GET | POST |
-|---|---|---|
-| Veri konumu | URL sorgu dizesi | İstek gövdesi |
-| Görünürlük | Adres çubuğunda görünür | URL’de görünmez |
-| Paylaşılabilirlik | Kolaydır | Doğrudan mümkün değildir |
-| Tipik kullanım | Arama ve filtreleme | Kayıt ve güncelleme |
-| Veri miktarı | URL sınırlarına bağlı | Sunucu ayarlarına bağlı |
-| Güvenlik | Hassas veriye uygun değil | HTTPS ile daha uygundur |
+\vert  Özellik \vert  GET \vert  POST \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Veri konumu \vert  URL sorgu dizesi \vert  İstek gövdesi \vert 
+\vert  Görünürlük \vert  Adres çubuğunda görünür \vert  URL’de görünmez \vert 
+\vert  Paylaşılabilirlik \vert  Kolaydır \vert  Doğrudan mümkün değildir \vert 
+\vert  Tipik kullanım \vert  Arama ve filtreleme \vert  Kayıt ve güncelleme \vert 
+\vert  Veri miktarı \vert  URL sınırlarına bağlı \vert  Sunucu ayarlarına bağlı \vert 
+\vert  Güvenlik \vert  Hassas veriye uygun değil \vert  HTTPS ile daha uygundur \vert 
 
 ## Güvenlik altın kuralı
 

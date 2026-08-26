@@ -61,12 +61,12 @@ $stmt->execute([
 
 Bu kodun görevi yeni bir konu başlığı eklemektir. Dikkat ederseniz `$title` doğrudan SQL içine gömülmez; `:title` parametresine bağlanır. Böylece kullanıcı başlığa garip karakterler yazsa bile sorgunun yapısı bozulmaz.
 
-| Tehdit | Kötü Uygulama | Güvenli Yaklaşım |
-|---|---|---|
-| SQL Injection | String birleştirme | Prepared statement |
-| XSS | Ham HTML basmak | `htmlspecialchars` kullanmak |
-| CSRF | Formsuz doğrulama | CSRF token kontrolü |
-| Yetki aşımı | Sadece arayüzü gizlemek | Sunucu tarafı rol kontrolü |
+\vert  Tehdit \vert  Kötü Uygulama \vert  Güvenli Yaklaşım \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  SQL Injection \vert  String birleştirme \vert  Prepared statement \vert 
+\vert  XSS \vert  Ham HTML basmak \vert  `htmlspecialchars` kullanmak \vert 
+\vert  CSRF \vert  Formsuz doğrulama \vert  CSRF token kontrolü \vert 
+\vert  Yetki aşımı \vert  Sadece arayüzü gizlemek \vert  Sunucu tarafı rol kontrolü \vert 
 
 Dinamik sayfa üretirken güvenlik sadece veritabanı ile bitmez. Mesaj içeriğini ekrana basarken HTML kaçışlama gerekir. Aksi halde biri konuya zararlı JavaScript yazabilir. Basit çıktı örneği:
 

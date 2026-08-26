@@ -19,7 +19,7 @@ Temel fikir, her sınıf için destek kümesindeki (*support set*) örneklerin g
 Bir bölümde $N$ sınıf ve sınıf başına $K$ destek örneği olsun. Kodlayıcı ağımız $f_\theta(x)$ ile bir örneği vektöre dönüştürsün. $k$ sınıfının prototipi şu şekilde hesaplanır:
 
 $$
-\mathbf{c}_k = \frac{1}{|S_k|}\sum_{(x_i, y_i) \in S_k} f_\theta(x_i)
+\mathbf{c}_k = \frac{1}{\vert S_k\vert }\sum_{(x_i, y_i) \in S_k} f_\theta(x_i)
 $$
 
 Sorgu örneği $x$ için sınıf olasılığı ise negatif uzaklıkların softmax'ı ile elde edilir:
@@ -32,8 +32,8 @@ Buradaki kritik karakter **benzerlik metriğidir**. Kodlayıcı iyi olsa bile se
 
 | Metrik | Formül | Güçlü yanı | Dikkat edilmesi gereken |
 |---|---|---|---|
-| Öklidyen | $\|a-b\|_2^2$ | Prototip ağlarının klasik ve kararlı seçeneği | Vektör büyüklüğüne duyarlıdır |
-| Kosinüs | $1-\frac{a\cdot b}{\|a\|\|b\|}$ | Yön bilgisini öne çıkarır | Norm bilgisi kaybolabilir |
+| Öklidyen | $\\vert a-b\\vert _2^2$ | Prototip ağlarının klasik ve kararlı seçeneği | Vektör büyüklüğüne duyarlıdır |
+| Kosinüs | $1-\frac{a\cdot b}{\\vert a\\vert \\vert b\\vert }$ | Yön bilgisini öne çıkarır | Norm bilgisi kaybolabilir |
 | Mahalanobis | $(a-b)^T\Sigma^{-1}(a-b)$ | Özelliklerin ölçek ve ilişkilerini hesaba katar | Kovaryans tahmini küçük veride kararsız olabilir |
 
 Aşağıdaki PyTorch örneği, gömülmüş destek verilerinden prototip üretir ve sorguları kareli Öklidyen uzaklıkla sınıflandırır. Gerçek bir projede `encoder`, görüntüler için CNN veya metinler için bir Transformer olabilir.

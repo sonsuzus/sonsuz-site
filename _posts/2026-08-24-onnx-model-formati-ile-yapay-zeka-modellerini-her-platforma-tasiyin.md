@@ -92,4 +92,4 @@ print(sonuc[0].shape)
 | Mobil/edge cihaz | Daha hafif çalışma zamanı | Model boyutu ve operatör desteği |
 | Çoklu dil desteği | Ortak model artefaktı | Opset sürümü |
 
-Son olarak, ONNX dönüşümünü bir "kaydet ve unut" işlemi saymayın. Kaynak model ile ONNX çıktılarının sayısal olarak yakın olduğunu test edin. Örneğin ortalama mutlak hata için $MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i-\hat{y}_i|$ ölçülebilir. Doğru doğrulama, ONNX'i sadece taşınabilir değil, güvenilir bir üretim köprüsü hâline getirir.
+Son olarak, ONNX dönüşümünü bir "kaydet ve unut" işlemi saymayın. Kaynak model ile ONNX çıktılarının sayısal olarak yakın olduğunu test edin. Örneğin ortalama mutlak hata için $MAE = \frac{1}{n}\sum_{i=1}^{n}\vert y_i-\hat{y}_i\vert $ ölçülebilir. Doğru doğrulama, ONNX'i sadece taşınabilir değil, güvenilir bir üretim köprüsü hâline getirir.

@@ -21,12 +21,12 @@ Programın belleği kavramsal olarak kod, global veri, heap ve stack gibi bölü
 
 Her çağrıda stack üzerinde bir **stack frame** (çağrı çerçevesi) oluşturulur. Bu çerçeve tipik olarak dönüş adresini, parametreleri, yerel değişkenleri, kaydedilmiş kayıtçıları ve hizalama için ayrılan alanı içerir. Stack işaretçisi `$SP`, yığının güncel tepesini; frame pointer ise çoğu mimaride mevcut çerçevenin sabit bir referans noktasını gösterir.
 
-| Bellek bölgesi | Temel kullanım | Ömür | Yönetim |
-|---|---|---|---|
-| Kod bölgesi | Derlenmiş komutlar | Program boyunca | İşletim sistemi / yükleyici |
-| Global veri | Global ve statik değişkenler | Program boyunca | Çalışma zamanı |
-| Heap | Dinamik nesneler | İhtiyaca bağlı | `malloc/free` veya GC |
-| Stack | Çağrılar ve yerel veriler | Fonksiyon bitene kadar | Otomatik |
+\vert  Bellek bölgesi \vert  Temel kullanım \vert  Ömür \vert  Yönetim \vert 
+\vert ---\vert ---\vert ---\vert ---\vert 
+\vert  Kod bölgesi \vert  Derlenmiş komutlar \vert  Program boyunca \vert  İşletim sistemi / yükleyici \vert 
+\vert  Global veri \vert  Global ve statik değişkenler \vert  Program boyunca \vert  Çalışma zamanı \vert 
+\vert  Heap \vert  Dinamik nesneler \vert  İhtiyaca bağlı \vert  `malloc/free` veya GC \vert 
+\vert  Stack \vert  Çağrılar ve yerel veriler \vert  Fonksiyon bitene kadar \vert  Otomatik \vert 
 
 ## Bir çağrının anatomisi
 
@@ -51,11 +51,11 @@ Basitleştirilmiş yığın görünümü şöyledir:
 ```text
 Yüksek adresler
 +-------------------+
-| main'in frame'i   |
+\vert  main'in frame'i   \vert 
 +-------------------+
-| dönüş adresi      |
-| kaydedilmiş kayıt |
-| yerel: araSonuc   | <- topla'nın frame'i
+\vert  dönüş adresi      \vert 
+\vert  kaydedilmiş kayıt \vert 
+\vert  yerel: araSonuc   \vert  <- topla'nın frame'i
 +-------------------+
 Düşük adresler
 ```
@@ -70,12 +70,12 @@ Burada $P$ parametre alanı, $L$ yerel değişkenler, $R$ saklanan kayıtçılar
 
 Çağrı sözleşmesi, parametrelerin nerede duracağını ve kimin temizleme yapacağını belirler. Güncel 64-bit mimariler ilk birkaç parametreyi kayıtçılarla aktararak bellek erişimini azaltır; fazlası stack'e taşar. Kayıtçıların sınırlı olması, büyük yapıların veya çok sayıda argümanın stack kullanımını hâlâ gerekli kılar.
 
-| Yaklaşım | Avantaj | Dikkat edilmesi gereken |
-|---|---|---|
-| Kayıtçı ile aktarım | Hızlı, az bellek erişimi | Kayıtçı sayısı sınırlıdır |
-| Stack ile aktarım | Çok sayıda argümanı destekler | Daha fazla bellek trafiği |
-| Değer ile aktarım | Çağıranın verisi korunur | Büyük veriler kopyalanabilir |
-| Referans/işaretçi ile aktarım | Kopyalama maliyeti düşer | Yan etkiler oluşabilir |
+\vert  Yaklaşım \vert  Avantaj \vert  Dikkat edilmesi gereken \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Kayıtçı ile aktarım \vert  Hızlı, az bellek erişimi \vert  Kayıtçı sayısı sınırlıdır \vert 
+\vert  Stack ile aktarım \vert  Çok sayıda argümanı destekler \vert  Daha fazla bellek trafiği \vert 
+\vert  Değer ile aktarım \vert  Çağıranın verisi korunur \vert  Büyük veriler kopyalanabilir \vert 
+\vert  Referans/işaretçi ile aktarım \vert  Kopyalama maliyeti düşer \vert  Yan etkiler oluşabilir \vert 
 
 Özyinelemeli fonksiyonlar stack'in önemini dramatik biçimde gösterir. Her `faktoriyel(n)` çağrısı ayrı bir frame açar; dolayısıyla bellek tüketimi yaklaşık olarak $O(n)$ olur. Kontrolsüz derinlik, **stack overflow** üretir. Ayrıca bir fonksiyondan yerel dizinin adresini döndürmek tehlikelidir: Fonksiyon bittiğinde frame geçersizdir.
 

@@ -27,7 +27,7 @@ Burada $f$ kara kutu model, $g$ yerel açıklama modeli, $\pi_x$ örneklerin inc
 
 **SHAP** ise oyun teorisindeki Shapley değerlerini kullanır. Her özellik, tahmin oyununa katkı yapan bir oyuncu kabul edilir. Bir özelliğin katkısı, tüm olası özellik sıralamalarındaki marjinal katkısının ortalamasıdır:
 
-$$\phi_i=\sum_{S\subseteq F\setminus\{i\}}\frac{|S|!(|F|-|S|-1)!}{|F|!}[f(S\cup\{i\})-f(S)]$$
+$$\phi_i=\sum_{S\subseteq F\setminus\{i\}}\frac{\vert S\vert !(\vert F\vert -\vert S\vert -1)!}{\vert F\vert !}[f(S\cup\{i\})-f(S)]$$
 
 Bu yaklaşım, tahmini genellikle başlangıç değeri ile katkıların toplamı olarak ifade eder: $f(x)=\phi_0+\sum_i\phi_i$. Matematik güzel; fakat tüm alt kümeleri hesaplamak, özellik sayısı arttığında pahalılaşır.
 

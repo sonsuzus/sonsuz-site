@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - guardrails
   - llm güvenliği
+toc: true
 ---
 
 Bir yapay zeka uygulamasının etkileyici cevaplar üretmesi tek başına başarı değildir; doğru bağlamda, güvenli sınırlar içinde ve tutarlı kalitede çalışması gerekir. Guardrail sistemleri, büyük dil modellerinin (LLM) girişlerini, araç kullanımını ve çıktılarını denetleyen koruyucu katmanlardır. Amaç modeli “sansürlemek” değil; kullanıcı, kurum verisi ve iş süreçleri için öngörülebilir bir çalışma alanı tanımlamaktır.

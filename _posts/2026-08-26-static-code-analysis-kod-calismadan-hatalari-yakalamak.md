@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Static Analysis
-  - Kod Kalitesi
-  - Güvenlik
-  - Linting
-  - CI/CD
+  - static analysis
+  - kod kalitesi
+  - güvenlik
+  - linting
+  - cı/cd
 ---
 
 Bir uygulamayı çalıştırmadan önce onun hakkında ne kadar çok şey öğrenebiliriz? Static Code Analysis (statik kod analizi), kaynak kodu derleme ya da çalıştırma aşamasına ihtiyaç duymadan inceleyerek olası hataları, standart ihlallerini ve güvenlik risklerini bulmaya çalışan yöntemlerin genel adıdır. Kısacası, kodunuzun içine el feneri tutar: Her gölge gerçek bir hata değildir ama araştırmaya değer olabilir.
@@ -50,12 +50,12 @@ function findUser(db, username) {
 
 İkinci örnekte `username`, SQL komutunun parçası olmak yerine parametre olarak değerlendirilir. Bu, analiz aracının izlediği önemli bir prensiple ilişkilidir: **taint analysis**. Araç, dışarıdan gelen “kirli” verinin (`request.body`, URL parametresi, dosya içeriği) güvenli bir temizleme veya parametreleme adımından geçmeden hassas bir noktaya ulaşıp ulaşmadığını takip eder.
 
-| Araç türü | Örnekler | Tipik kullanım |
-|---|---|---|
-| Linter | ESLint, Pylint, RuboCop | Stil, olası mantık hataları |
-| Tip denetleyici | TypeScript, mypy | Tür uyuşmazlıkları |
-| Güvenlik tarayıcısı | Semgrep, SonarQube, CodeQL | Zafiyet desenleri |
-| Bağımlılık tarayıcısı | Dependabot, Snyk | Bilinen paket açıkları |
+\vert  Araç türü \vert  Örnekler \vert  Tipik kullanım \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Linter \vert  ESLint, Pylint, RuboCop \vert  Stil, olası mantık hataları \vert 
+\vert  Tip denetleyici \vert  TypeScript, mypy \vert  Tür uyuşmazlıkları \vert 
+\vert  Güvenlik tarayıcısı \vert  Semgrep, SonarQube, CodeQL \vert  Zafiyet desenleri \vert 
+\vert  Bağımlılık tarayıcısı \vert  Dependabot, Snyk \vert  Bilinen paket açıkları \vert 
 
 Bu araçlardan verim almak için onları geliştiricinin düşmanı değil, hızlı geri bildirim sağlayan ekip arkadaşı olarak konumlandırın. IDE eklentileriyle anlık uyarı alın; CI/CD hattında ise kritik güvenlik kurallarını “build fail” koşulu yapın. Ancak her uyarıyı körü körüne hata kabul etmeyin. Statik analiz, programın niyetini her zaman tam anlayamaz ve **false positive** üretebilir. Ölçülebilir bir oranla düşünürsek, doğruluk kabaca $Precision = TP / (TP + FP)$ biçiminde ifade edilir; burada $TP$ doğru, $FP$ yanlış pozitif bulgulardır.
 

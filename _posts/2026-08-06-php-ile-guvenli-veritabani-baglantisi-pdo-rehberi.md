@@ -84,11 +84,11 @@ if ($user) {
 
 Buradaki `:email` isimlendirilmiş bir parametredir. `prepare()` sorgu şablonunu hazırlar, `execute()` ise gerçek değeri güvenli biçimde bağlar. Çıktıda `htmlspecialchars()` kullanılması da veritabanı güvenliğinden farklı bir konu olan XSS riskini azaltır.
 
-| Yöntem | Güvenlik | Okunabilirlik |
-|---|---|---|
-| Değeri sorguya eklemek | Tehlikeli | Kısa ama riskli |
-| Prepared statement | Yüksek | Açık ve düzenli |
-| Parametre türü belirtmek | Daha kontrollü | Biraz daha ayrıntılı |
+\vert  Yöntem \vert  Güvenlik \vert  Okunabilirlik \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Değeri sorguya eklemek \vert  Tehlikeli \vert  Kısa ama riskli \vert 
+\vert  Prepared statement \vert  Yüksek \vert  Açık ve düzenli \vert 
+\vert  Parametre türü belirtmek \vert  Daha kontrollü \vert  Biraz daha ayrıntılı \vert 
 
 ## Veri ekleme ve işlem yönetimi
 

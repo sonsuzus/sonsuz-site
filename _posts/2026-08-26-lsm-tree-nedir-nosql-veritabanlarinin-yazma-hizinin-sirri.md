@@ -5,10 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - LSM Tree
-  - NoSQL
-  - Veritabanı
-  - Veri Yapıları
+  - lsm tree
+  - nosql
+  - veritabanı
+  - veri yapıları
+toc: true
 ---
 
 Modern uygulamalar saniyede binlerce olay, sipariş, metrik veya log üretiyor. Bu kadar yoğun yazma trafiğinde klasik B-Tree tabanlı yapıların disk üzerinde yaptığı rastgele güncellemeler pahalılaşabilir. LSM Tree (Log-Structured Merge Tree), yazmaları önce sıralı ve hızlı alanlara yönlendirip düzenleme işini sonraya bırakan veri yapısı ailesidir. RocksDB, LevelDB, Apache Cassandra ve birçok zaman serisi çözümünün performans hikâyesinde bu yaklaşım bulunur.

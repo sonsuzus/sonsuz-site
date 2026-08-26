@@ -72,7 +72,7 @@ try {
         'success' => true,
         'data' => $products,
         'count' => count($products)
-    ], JSON_UNESCAPED_UNICODE | JSON_PRESERVE_ZERO_FRACTION);
+    ], JSON_UNESCAPED_UNICODE \vert  JSON_PRESERVE_ZERO_FRACTION);
 } catch (Throwable $error) {
     http_response_code(500);
     echo json_encode([

@@ -5,11 +5,11 @@ math: true
 categories: 
   - Program
 tags: 
-  - MCP
-  - Yapay Zeka
-  - Python
-  - Güvenlik
-  - API
+  - mcp
+  - yapay zeka
+  - python
+  - güvenlik
+  - apı
 ---
 
 Büyük dil modelleri metin üretmekte harikadır; fakat takviminize bakmak, veritabanından sipariş sorgulamak veya dosya oluşturmak gibi gerçek dünya işleri için araçlara ihtiyaç duyarlar. Model Context Protocol (MCP), modeller ile bu araçlar arasında standart, denetlenebilir ve güvenli bir köprü kurar. Bir MCP sunucusu geliştirirken amaç, modele sınırsız sistem yetkisi vermek değil; iyi tanımlanmış yetenekleri kontrollü biçimde sunmaktır.

@@ -73,12 +73,12 @@ Bu kodun yaptığı şey basit: Gelen isteğin metodunu ve yolunu okur, `/api/us
 
 Güvenlik tarafında en kritik konu kimlik doğrulamadır. Oturum tabanlı klasik yaklaşım yerine API’lerde genellikle token kullanılır. Kullanıcı giriş yapınca bir erişim token’ı alır ve sonraki isteklerde `Authorization: Bearer TOKEN` başlığıyla gönderir. Token doğrulanmadan hassas kaynaklara erişim verilmemelidir.
 
-| Önlem | Neden Gerekli? | PHP Tarafındaki Karşılığı |
-|---|---|---|
-| HTTPS | Token sızıntısını önler | Sunucu SSL yapılandırması |
-| Prepared statement | SQL injection engeller | PDO parametre bağlama |
-| Rate limit | Bot saldırılarını yavaşlatır | IP bazlı sayaç |
-| CORS kontrolü | İzinli istemcileri belirler | `Access-Control-Allow-Origin` |
+\vert  Önlem \vert  Neden Gerekli? \vert  PHP Tarafındaki Karşılığı \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  HTTPS \vert  Token sızıntısını önler \vert  Sunucu SSL yapılandırması \vert 
+\vert  Prepared statement \vert  SQL injection engeller \vert  PDO parametre bağlama \vert 
+\vert  Rate limit \vert  Bot saldırılarını yavaşlatır \vert  IP bazlı sayaç \vert 
+\vert  CORS kontrolü \vert  İzinli istemcileri belirler \vert  `Access-Control-Allow-Origin` \vert 
 
 Basit bir token kontrolü şöyle kurgulanabilir:
 

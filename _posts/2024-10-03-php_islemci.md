@@ -432,10 +432,10 @@ Safe mode devrede ise veya shell\_exec() fonksiyonu devre dışı ise ters tırn
 
 Artırma ve azaltma işlemcileri tek bir değere işlem yapan işlem yapılan değişken değerini 1 artıran ya da azaltan işlemcilerdir.
 
-| İşlemci | Adı | Açıklama |
-| --- | --- | --- |
-| ++ | Artırma | İşlem yapılan değişkenin değerini 1 artırır. |
-| \-\- | Azaltma | İşlem yapılan değişkenin değerini 1 azaltır. |
+\vert  İşlemci \vert  Adı \vert  Açıklama \vert 
+\vert  --- \vert  --- \vert  --- \vert 
+\vert  ++ \vert  Artırma \vert  İşlem yapılan değişkenin değerini 1 artırır. \vert 
+\vert  \-\- \vert  Azaltma \vert  İşlem yapılan değişkenin değerini 1 azaltır. \vert 
 
 Artırma ve azaltma işlemcileri bir değişkenin önüne gelirse elde edilen sonuç işlemcinin kullanıldığı ifade içinde, arkasına gelirse daha sonraki işlem satırlarında kullanılır:
 
@@ -478,12 +478,12 @@ Mantıksal işlemcileri kullanarak iki değeri karşılaştırabilir ve sonuç o
 
 Ve ve veya işlemcilerinin 2 farklı şekilde kullanılmasının nedeni, işlemcilerin farklı önceliğe sahip olmasıdır.
 
-| İşlemci | Adı | Açıklama |
-| --- | --- | --- |
-| && (and) | Ve | İşleme giren değerlerin her ikisi de doğru ise sonuç TRUE olur. |
-| \|\| (or) | Veya | İşleme giren değerlerin herhangi birinin değeri doğru ise sonuç TRUE olur. |
-| xor | Ayrıcalıklı Veya | İşleme giren değerler farklı ise sonuç TRUE olur. |
-| ! | Değil | İşleme giren değerin değili alınır (TRUE ise FALSE, FALSE ise TRUE). |
+\vert  İşlemci \vert  Adı \vert  Açıklama \vert 
+\vert  --- \vert  --- \vert  --- \vert 
+\vert  && (and) \vert  Ve \vert  İşleme giren değerlerin her ikisi de doğru ise sonuç TRUE olur. \vert 
+\vert  \\vert \\vert  (or) \vert  Veya \vert  İşleme giren değerlerin herhangi birinin değeri doğru ise sonuç TRUE olur. \vert 
+\vert  xor \vert  Ayrıcalıklı Veya \vert  İşleme giren değerler farklı ise sonuç TRUE olur. \vert 
+\vert  ! \vert  Değil \vert  İşleme giren değerin değili alınır (TRUE ise FALSE, FALSE ise TRUE). \vert 
 
 Örnek
 
@@ -497,7 +497,7 @@ Ve ve veya işlemcilerinin 2 farklı şekilde kullanılmasının nedeni, işlemc
    
     printf ("%d %d" . "<br/>", $deg01 > $deg02, $deg01 < $deg02);
 
-    printf ("%d %d", $deg01 < $deg02 && $deg01 > $deg02, $deg01 < $deg02 || $deg01 > $deg02);
+    printf ("%d %d", $deg01 < $deg02 && $deg01 > $deg02, $deg01 < $deg02 \Vert  $deg01 > $deg02);
 ?>
 
 </body>

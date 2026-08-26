@@ -25,7 +25,7 @@ Bir kaydın yalnızca vektörü tutulmaz. Genellikle özgün metin, belge kimli�
 
 | Metrik | Formül | Ne zaman uygundur? |
 |---|---|---|
-| Kosinüs benzerliği | $\cos(\theta)=\frac{q\cdot x}{\|q\|\|x\|}$ | Yönün, yani anlamsal ilişkinin önemli olduğu metin aramalarında |
+| Kosinüs benzerliği | $\cos(\theta)=\frac{q\cdot x}{\\vert q\\vert \\vert x\\vert }$ | Yönün, yani anlamsal ilişkinin önemli olduğu metin aramalarında |
 | Öklid uzaklığı | $d(q,x)=\sqrt{\sum_i(q_i-x_i)^2}$ | Vektör büyüklüğünün de anlam taşıdığı uzaylarda |
 | İç çarpım | $q\cdot x$ | Bazı öneri sistemleri ve modele özgü embeddinglerde |
 

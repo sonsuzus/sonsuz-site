@@ -24,7 +24,7 @@ Modeli hızlandırmak yalnızca $T_{hesaplama}$ bölümünü düşürür. Sunucu
 | Latency | Tek isteği hızlandırmak | Daha hızlı yanıt | ms/istek |
 | Throughput | Daha çok isteği işlemek | Yoğun saatte kararlılık | istek/saniye |
 | TTFT | İlk çıktıyı erkene almak | Arayüz daha akıcı görünür | ms |
-| Maliyet | Kaynak tüketimini azaltmak | Daha sürdürülebilir servis | TL veya $/istek |
+| Maliyet | Kaynak tüketimini azaltmak | Daha sürdürülebilir servis | TL veya $/istek \vert 
 
 İlk güçlü teknik **quantization**, yani ağırlıkların daha düşük hassasiyetle temsil edilmesidir. Örneğin FP32 yerine FP16, BF16 veya INT8 kullanmak bellek ihtiyacını ve veri taşıma yükünü azaltır. 7 milyar parametreli bir model için yalnızca ağırlık belleği teorik olarak $7\times10^9\times4\approx28$ GB iken, INT8 ile yaklaşık 7 GB seviyesine iner. Ancak düşük bit sayısı her zaman bedava değildir: kalite kaybı, donanım uyumluluğu ve kalibrasyon gereksinimi değerlendirilmelidir.
 

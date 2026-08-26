@@ -23,9 +23,9 @@ $$\hat{y} = \operatorname{sign}(w^T x + b)$$
 
 SVM'nin sihri, bu sınırın iki yanındaki en yakın örneklerde saklıdır. Bu kritik gözlemlere **destek vektörleri** denir. Sınırın çok uzağındaki yüzlerce veri noktası değişse bile model çoğu zaman aynı kalabilir; ama bir destek vektörünün yeri değişirse karar sınırı da değişebilir. Adeta ipi gergin tutan birkaç kilit nokta vardır.
 
-Marj genişliği yaklaşık olarak $\frac{2}{||w||}$ ile ilişkilidir. Dolayısıyla en geniş marjı aramak, matematiksel olarak $||w||$ değerini küçültmeye dönüşür. Veriler kusursuz ayrılabiliyorsa SVM şu optimizasyon fikrini izler:
+Marj genişliği yaklaşık olarak $\frac{2}{\Vert w\Vert }$ ile ilişkilidir. Dolayısıyla en geniş marjı aramak, matematiksel olarak $\Vert w\Vert $ değerini küçültmeye dönüşür. Veriler kusursuz ayrılabiliyorsa SVM şu optimizasyon fikrini izler:
 
-$$\min_{w,b} \frac{1}{2}||w||^2 \quad \text{koşuluyla} \quad y_i(w^T x_i+b) \geq 1$$
+$$\min_{w,b} \frac{1}{2}\Vert w\Vert ^2 \quad \text{koşuluyla} \quad y_i(w^T x_i+b) \geq 1$$
 
 Gerçek hayat verileri ise nadiren usludur. Bir spam e-postası normal e-postaya, bir tümör ölçümü de sağlıklı örneğe benzeyebilir. Bu durumda **soft margin** yaklaşımı devreye girer. $C$ parametresi, geniş marj isteği ile eğitim hatalarını cezalandırma isteği arasındaki dengeyi kurar.
 
@@ -37,7 +37,7 @@ Gerçek hayat verileri ise nadiren usludur. Bir spam e-postası normal e-postaya
 
 Doğrusal bir çizgi yeterli olmadığında SVM, **çekirdek hilesi** (kernel trick) kullanır. Veriyi gerçekten yüksek boyutlu bir uzaya taşımak yerine, iki noktanın o uzaydaki benzerliğini doğrudan hesaplar. En yaygın seçeneklerden RBF çekirdeği şöyledir:
 
-$$K(x,z)=\exp(-\gamma ||x-z||^2)$$
+$$K(x,z)=\exp(-\gamma \Vert x-z\Vert ^2)$$
 
 Bu sayede dairesel, kıvrımlı veya daha karmaşık ayrımlar yakalanabilir. Ancak çekirdek seçimi ve hiperparametre ayarı dikkat ister.
 

@@ -76,10 +76,10 @@ Bu yapı, `Baslik` alanındaki metni aranabilir token’lara ayırır. Ancak sto
 Bir `match` sorgusu yalnızca eşleşen belgeleri döndürmez; onların ne kadar ilgili olduğunu da hesaplar. Elasticsearch’ün varsayılan benzerlik algoritması **BM25**’tir. Basitleştirilmiş haliyle skor şu fikre dayanır:
 
 $$
-score(D,Q) = \sum_{t \in Q} IDF(t) \cdot \frac{f(t,D) \cdot (k_1 + 1)}{f(t,D) + k_1 \cdot (1-b+b\cdot\frac{|D|}{avgdl})}
+score(D,Q) = \sum_{t \in Q} IDF(t) \cdot \frac{f(t,D) \cdot (k_1 + 1)}{f(t,D) + k_1 \cdot (1-b+b\cdot\frac{\vert D\vert }{avgdl})}
 $$
 
-Burada $f(t,D)$ terimin belgedeki sıklığı, $|D|$ belge uzunluğu, $avgdl$ ortalama belge uzunluğudur. $IDF(t)$ ise nadir terimlere daha yüksek değer verir. Yani “elma” binlerce belgede geçiyorsa daha az ayırt edicidir; nadir bir model adı ise skoru daha fazla yükseltir.
+Burada $f(t,D)$ terimin belgedeki sıklığı, $\vert D\vert $ belge uzunluğu, $avgdl$ ortalama belge uzunluğudur. $IDF(t)$ ise nadir terimlere daha yüksek değer verir. Yani “elma” binlerce belgede geçiyorsa daha az ayırt edicidir; nadir bir model adı ise skoru daha fazla yükseltir.
 
 BM25’in önemli bir nüansı vardır: Aynı kelimeyi onlarca kez yazmak skoru sonsuza kadar şişirmez. Terim sıklığının katkısı zamanla doygunluğa ulaşır. Ayrıca uzun belgeler, yalnızca çok kelime içeriyor diye haksız avantaj elde etmesin diye uzunluk normalizasyonu uygulanır.
 

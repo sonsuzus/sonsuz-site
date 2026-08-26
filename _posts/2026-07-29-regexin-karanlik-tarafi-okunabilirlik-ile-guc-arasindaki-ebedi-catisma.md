@@ -37,19 +37,19 @@ Bu ifade, kullanıcı adının harfle başlamasını ve toplam uzunluğunun 3 il
 
 Regex soldan sağa okunan doğal bir cümle değildir. Nokta, yıldız, soru işareti ve parantez gibi sembollerin her biri bağlama göre farklı davranır. Bu nedenle karakter sayısının az olması, kodun basit olduğu anlamına gelmez.
 
-| Yaklaşım | Güçlü yanı | Zayıf yanı | Uygun kullanım |
-|---|---|---|---|
-| Tek ve yoğun regex | Kısa, hızlı uygulanabilir | Okuması ve değiştirmesi zor | Basit, sabit kurallar |
-| Parçalara ayrılmış regex | Niyet daha görünürdür | Biraz daha uzun kod üretir | Karmaşık doğrulamalar |
-| Normal programlama kodu | Hata mesajları ve akış nettir | Daha fazla satır gerektirir | İş kuralları ve ayrıntılı doğrulama |
-| Ayrıştırıcı kütüphanesi | Yapısal veride güvenilirdir | Ek bağımlılık getirir | HTML, SQL veya programlama dilleri |
+\vert  Yaklaşım \vert  Güçlü yanı \vert  Zayıf yanı \vert  Uygun kullanım \vert 
+\vert ---\vert ---\vert ---\vert ---\vert 
+\vert  Tek ve yoğun regex \vert  Kısa, hızlı uygulanabilir \vert  Okuması ve değiştirmesi zor \vert  Basit, sabit kurallar \vert 
+\vert  Parçalara ayrılmış regex \vert  Niyet daha görünürdür \vert  Biraz daha uzun kod üretir \vert  Karmaşık doğrulamalar \vert 
+\vert  Normal programlama kodu \vert  Hata mesajları ve akış nettir \vert  Daha fazla satır gerektirir \vert  İş kuralları ve ayrıntılı doğrulama \vert 
+\vert  Ayrıştırıcı kütüphanesi \vert  Yapısal veride güvenilirdir \vert  Ek bağımlılık getirir \vert  HTML, SQL veya programlama dilleri \vert 
 
 Örneğin JavaScript’te tarih parçalarını yakalayan ifadeye doğrudan saldırmak yerine parçaları adlandırabiliriz:
 
 ```javascript
 const year = "(?<year>\\d{4})";
-const month = "(?<month>0[1-9]|1[0-2])";
-const day = "(?<day>0[1-9]|[12]\\d|3[01])";
+const month = "(?<month>0[1-9]\vert 1[0-2])";
+const day = "(?<day>0[1-9]\vert [12]\\d\vert 3[01])";
 
 // Parçaları birleştirerek YYYY-MM-DD biçimini kontrol eder.
 const datePattern = new RegExp(`^${year}-${month}-${day}$`);

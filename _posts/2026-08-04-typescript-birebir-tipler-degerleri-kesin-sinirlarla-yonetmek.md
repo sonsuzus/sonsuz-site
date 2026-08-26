@@ -57,11 +57,11 @@ durumGuncelle("tamamlandı"); // Geçerli
 
 Bu fonksiyon artık rastgele bir metin değil, yalnızca tanımlanmış üç komuttan birini kabul eder. Yazım hatası yapılırsa problem üretime gitmeden görünür.
 
-| Yaklaşım | Kabul edilen değerler | Yazım hatası kontrolü | Editör desteği |
-|---|---|---|---|
-| `string` | Her metin | Zayıf | Genel |
-| Birebir birleşim | Belirlenen metinler | Güçlü | Otomatik tamamlama |
-| `enum` | Tanımlı üyeler | Güçlü | Üye adı üzerinden |
+\vert  Yaklaşım \vert  Kabul edilen değerler \vert  Yazım hatası kontrolü \vert  Editör desteği \vert 
+\vert ---\vert ---\vert ---\vert ---\vert 
+\vert  `string` \vert  Her metin \vert  Zayıf \vert  Genel \vert 
+\vert  Birebir birleşim \vert  Belirlenen metinler \vert  Güçlü \vert  Otomatik tamamlama \vert 
+\vert  `enum` \vert  Tanımlı üyeler \vert  Güçlü \vert  Üye adı üzerinden \vert 
 
 ## Tip genişlemesi ve `const` farkı
 
@@ -93,7 +93,7 @@ const ayarlar = {
 Birebir tipler yalnızca metinlere özel değildir. Bir arayüzde izin verilen sütun sayısını sınırlandırabiliriz:
 
 ```ts
-type SutunSayisi = 1 | 2 | 3 | 4;
+type SutunSayisi = 1 \vert  2 \vert  3 \vert  4;
 
 function izgaraOlustur(sutun: SutunSayisi): string {
   return `${sutun} sütunlu ızgara oluşturuldu.`;

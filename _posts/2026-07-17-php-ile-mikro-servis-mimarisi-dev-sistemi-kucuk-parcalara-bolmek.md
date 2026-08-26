@@ -67,11 +67,11 @@ Bu örnekte küçük bir kullanıcı servisi, `/users/{id}` adresinden JSON veri
 
 Mikro servislerde en kritik konulardan biri veri yönetimidir. Her servisin kendi veritabanına sahip olması önerilir. Çünkü ortak veritabanı kullanılırsa servisler görünmez şekilde birbirine bağlanır. Bu durum mikro servis görünümünde monolit üretir; yani tabelada mikro servis yazar ama içeride herkes aynı mutfağı kullanır.
 
-| Veri Yaklaşımı | Avantaj | Risk |
-|---|---|---|
-| Ortak veritabanı | Başlangıçta kolaydır | Servis bağımsızlığını bozar |
-| Servis başına veritabanı | Gevşek bağlılık sağlar | Veri senkronizasyonu gerekir |
-| Event-driven yapı | Esnek ve ölçeklenebilir | İzleme ve hata ayıklama zorlaşır |
+\vert  Veri Yaklaşımı \vert  Avantaj \vert  Risk \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Ortak veritabanı \vert  Başlangıçta kolaydır \vert  Servis bağımsızlığını bozar \vert 
+\vert  Servis başına veritabanı \vert  Gevşek bağlılık sağlar \vert  Veri senkronizasyonu gerekir \vert 
+\vert  Event-driven yapı \vert  Esnek ve ölçeklenebilir \vert  İzleme ve hata ayıklama zorlaşır \vert 
 
 Örneğin ödeme tamamlandığında Payment Service, `payment.completed` adlı bir olay yayınlayabilir. Order Service bu olayı dinleyip sipariş durumunu günceller. Böylece servisler birbirini doğrudan çağırmak zorunda kalmaz. Bu modelde sistemin toplam güvenilirliği için basitçe $R_{sistem} = R_1 \times R_2 \times ... \times R_n$ gibi düşünebiliriz. Servis sayısı arttıkça gözlemleme, retry ve circuit breaker gibi mekanizmalar daha önemli hale gelir.
 

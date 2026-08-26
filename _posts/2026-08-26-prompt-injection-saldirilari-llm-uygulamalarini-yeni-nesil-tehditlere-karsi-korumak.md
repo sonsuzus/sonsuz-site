@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Yapay Zeka Güvenliği
-  - LLM
-  - Prompt Injection
+  - yapay zeka güvenliği
+  - llm
+  - prompt ınjection
+toc: true
 ---
 
 Büyük dil modelleri (LLM), doğal dili hem arayüz hem de komut kanalı olarak kullandığı için klasik yazılımlardan farklı bir saldırı yüzeyine sahiptir. Prompt injection, saldırganın modele verilen güvenilir talimatları gölgeleyerek hedef davranışı değiştirmeye çalışmasıdır. Bir sohbet botunun gizli yönergelerini açıklatmak, bir belge özetleyicisine yanlış sonuç ürettirmek veya araç kullanan bir ajana yetkisiz işlem yaptırmak bu tehdidin tipik sonuçlarıdır.

@@ -25,12 +25,12 @@ $$\text{Değer} = \frac{\text{Doğruluk} \times \text{Okunabilirlik} \times \tex
 
 Bu bir mühendislik ölçümü değil, düşünme aracıdır. Özellikle shell dünyasında komutların varsayılan davranışları, boşluk içeren dosya adları ve hata kodları görünmez karmaşıklık üretir. Zanaatkâr programcı, bu görünmez ayrıntıları betiğin tasarımının parçası sayar.
 
-| Yaklaşım | Kısa vadeli görünüm | Uzun vadeli sonuç |
-|---|---|---|
-| Tek satırda her şey | Hızlı ve etkileyici | Hata ayıklaması zor |
-| Açıklamalı küçük fonksiyonlar | Biraz daha uzun | Niyeti ve bakımı kolay |
-| Varsayımlara güvenmek | Az yazı | Beklenmedik veride kırılganlık |
-| Girdiyi doğrulamak | Birkaç ek satır | Daha güvenli otomasyon |
+\vert  Yaklaşım \vert  Kısa vadeli görünüm \vert  Uzun vadeli sonuç \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Tek satırda her şey \vert  Hızlı ve etkileyici \vert  Hata ayıklaması zor \vert 
+\vert  Açıklamalı küçük fonksiyonlar \vert  Biraz daha uzun \vert  Niyeti ve bakımı kolay \vert 
+\vert  Varsayımlara güvenmek \vert  Az yazı \vert  Beklenmedik veride kırılganlık \vert 
+\vert  Girdiyi doğrulamak \vert  Birkaç ek satır \vert  Daha güvenli otomasyon \vert 
 
 ## Sessizlik Değil, Anlamlı Sadelik
 

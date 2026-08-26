@@ -8,6 +8,7 @@ tags:
   - makine öğrenmesi
   - cross validation
   - model değerlendirme
+toc: true
 ---
 
 Bir makine öğrenmesi modelinin eğitim verisinde yüksek doğruluk vermesi, onun gerçek dünyada da başarılı olacağı anlamına gelmez. Model belki gerçekten örüntüyü öğrenmiştir; belki de eğitim kümesini ezberlemiştir. Cross validation (çapraz doğrulama), bu ikisini ayırmak için veriyi akıllıca ve tekrarlanabilir biçimde bölerek modelin genelleme yeteneğini ölçer. Kısacası, tek bir sınav yerine modeli birden fazla sınava sokar.

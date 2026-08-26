@@ -24,7 +24,7 @@ Birim testleri belirlediğiniz örnek girdileri yürütür. Model kontrolü ise 
 
 Bir sistemin durum uzayı kabaca süreçlerin yerel durumları, paylaşılan değişkenler ve kanal içeriklerinin çarpımıdır. Basit bir sezgisel ifade ile:
 
-$$|S| \approx \prod_{i=1}^{n}|L_i| \times |G| \times \prod_{j=1}^{m}|C_j|$$
+$$\vert S\vert  \approx \prod_{i=1}^{n}\vert L_i\vert  \times \vert G\vert  \times \prod_{j=1}^{m}\vert C_j\vert $$
 
 Burada $L_i$ süreçlerin yerel durumlarını, $G$ ortak durumu, $C_j$ ise iletişim kanallarının olası içeriklerini temsil eder. Bu sayı hızla büyür; buna **durum uzayı patlaması** denir. Spin, kısmi sıralama indirgeme gibi tekniklerle gereksiz eşdeğer zamanlamaları azaltmaya çalışır.
 

@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - MVCC
-  - Veritabanı
-  - Eşzamanlılık
+  - mvcc
+  - veritabanı
+  - eşzamanlılık
+toc: true
 ---
 
 Bir veritabanında aynı müşteri kaydını yüzlerce kullanıcının aynı anda okumak ve güncellemek istediğini düşünün. Geleneksel kilitleme yaklaşımında bir yazma işlemi, okuyucuları bekletebilir; okuyucular da yazarı geciktirebilir. MVCC (Multi-Version Concurrency Control), yani Çok Sürümlü Eşzamanlılık Denetimi, bu trafik sıkışıklığını azaltmak için verinin tek bir kopyası yerine zaman damgalı birden fazla mantıksal sürümünü kullanır. PostgreSQL, MySQL InnoDB ve SQLite gibi sistemlerin farklı biçimlerde kullandığı bu fikir, yüksek eşzamanlılığın temel araçlarından biridir.

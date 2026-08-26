@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Yapay Zeka
-  - Büyük Dil Modelleri
-  - Mixture of Experts
+  - yapay zeka
+  - büyük dil modelleri
+  - mixture of experts
 ---
 
 Bir büyük dil modelini, her soruya cevap vermek için şirketin tüm çalışanlarını aynı toplantıya çağıran bir kurum gibi düşünebilirsiniz. Herkes katılır, herkes hesap yapar; fakat bu hem pahalı hem de yavaştır. **Mixture of Experts (MoE)** yaklaşımı ise doğru soruyu doğru uzman ekibe yönlendirir. Böylece model, çok büyük bir bilgi kapasitesine sahipken her kelime üretiminde bu kapasitenin yalnızca ilgili bölümünü çalıştırır.

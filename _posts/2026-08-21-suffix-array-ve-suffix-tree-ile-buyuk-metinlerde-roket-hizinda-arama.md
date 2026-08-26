@@ -32,12 +32,12 @@ Suffix Array, tüm son eklerin kendisini değil, **sıralanmış son eklerin ba�
 
 Arama, örüntüyü son eklerle karşılaştıran ikili arama ile yapılır. Örüntünün başlayabileceği ilk ve son aralığı bulduktan sonra ilgili indeksler eşleşme konumlarıdır. Basit modelde maliyet $O(m\log n)$ kabul edilir. LCP (Longest Common Prefix) dizisi ve gelişmiş arama teknikleriyle karakter karşılaştırmaları azaltılabilir.
 
-| Özellik | Suffix Tree | Suffix Array |
-|---|---|---|
-| Arama süresi | $O(m+k)$ | Genellikle $O(m\log n+k)$ |
-| Bellek kullanımı | Yüksek | Daha düşük, dizi dostu |
-| Uygulama zorluğu | Daha karmaşık | Görece daha kolay |
-| Önbellek davranışı | İşaretçiler nedeniyle zayıf olabilir | Ardışık bellek sayesinde güçlü |
+\vert  Özellik \vert  Suffix Tree \vert  Suffix Array \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Arama süresi \vert  $O(m+k)$ \vert  Genellikle $O(m\log n+k)$ \vert 
+\vert  Bellek kullanımı \vert  Yüksek \vert  Daha düşük, dizi dostu \vert 
+\vert  Uygulama zorluğu \vert  Daha karmaşık \vert  Görece daha kolay \vert 
+\vert  Önbellek davranışı \vert  İşaretçiler nedeniyle zayıf olabilir \vert  Ardışık bellek sayesinde güçlü \vert 
 
 Aşağıdaki Python örneği, eğitim amaçlı basit bir Suffix Array üretir. Büyük veride daha gelişmiş $O(n\log n)$ veya $O(n)$ kurulum algoritmaları tercih edilmelidir.
 

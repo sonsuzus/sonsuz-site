@@ -20,9 +20,9 @@ Klasik birim testlerinde geliştirici, giriş ve beklenen çıktıyı çoğunluk
 
 Basit bir modelde toplam test uzayı şöyle düşünülebilir:
 
-$$N = |A|^L$$
+$$N = \vert A\vert ^L$$
 
-Burada $|A|$ kullanılabilecek karakter veya bayt sayısını, $L$ ise girdi uzunluğunu ifade eder. Örneğin 256 farklı bayttan oluşan yalnızca 10 baytlık bir alan için olası kombinasyon sayısı $256^{10}$ olur. Bu devasa uzay, saf rastgeleliğin neden her zaman yeterli olmadığını açıklar. Akıllı fuzzer'lar, yeni kod dallarına ulaşan girdileri saklayıp onların üzerinde değişiklik yaparak aramayı yönlendirir.
+Burada $\vert A\vert $ kullanılabilecek karakter veya bayt sayısını, $L$ ise girdi uzunluğunu ifade eder. Örneğin 256 farklı bayttan oluşan yalnızca 10 baytlık bir alan için olası kombinasyon sayısı $256^{10}$ olur. Bu devasa uzay, saf rastgeleliğin neden her zaman yeterli olmadığını açıklar. Akıllı fuzzer'lar, yeni kod dallarına ulaşan girdileri saklayıp onların üzerinde değişiklik yaparak aramayı yönlendirir.
 
 | Yaklaşım | Girdi üretimi | Güçlü yanı | Sınırlaması |
 |---|---|---|---|

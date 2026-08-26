@@ -7,9 +7,10 @@ categories:
 tags: 
   - yapay zeka
   - büyük dil modelleri
-  - LLM
+  - llm
   - inference
   - performans
+toc: true
 ---
 
 Büyük dil modelleri etkileyici metinler üretirken her token için devasa hesaplamalar yapar. Bu durum, özellikle uzun yanıtlar ve eşzamanlı kullanıcılar söz konusu olduğunda gecikmeyi büyütür. Speculative decoding (spekülatif çözümleme), kaliteyi belirgin biçimde düşürmeden üretimi hızlandırmak için küçük ve hızlı bir modelin yaptığı tahminleri büyük modelle topluca doğrulayan yaratıcı bir çıkarım tekniğidir.

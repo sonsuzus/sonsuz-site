@@ -48,10 +48,10 @@ Bu örnekte ortak katman Android sınıflarını bilmez. Aynı `PlatformInfo` s�
 
 Arayüz tarafında iki temel strateji vardır:
 
-| Strateji | Avantajı | Dikkat edilmesi gereken |
-|---|---|---|
-| Native UI + ortak mantık | Platform hissi ve olgun bileşenler | Android/iOS ekranları ayrı yazılır |
-| Compose Multiplatform | Daha fazla UI paylaşımı ve hızlı prototipleme | iOS davranışları, erişilebilirlik ve tasarım testleri gerekir |
+\vert  Strateji \vert  Avantajı \vert  Dikkat edilmesi gereken \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Native UI + ortak mantık \vert  Platform hissi ve olgun bileşenler \vert  Android/iOS ekranları ayrı yazılır \vert 
+\vert  Compose Multiplatform \vert  Daha fazla UI paylaşımı ve hızlı prototipleme \vert  iOS davranışları, erişilebilirlik ve tasarım testleri gerekir \vert 
 
 Compose Multiplatform, özellikle Android ve masaüstünde oldukça üretkendir; iOS hedefi de hızla olgunlaşmaktadır. Yine de “tek UI” kararını teknik heyecanla değil, ürün ihtiyacıyla verin. Örneğin iOS tasarım kurallarına sıkı uyum gerektiren bir bankacılık ekranında native SwiftUI tercih edilebilir. Buna karşılık yönetim paneli, eğitim uygulaması veya içerik odaklı bir ürün Compose ile ciddi hız kazanabilir.
 

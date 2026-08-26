@@ -64,7 +64,7 @@ MutualExclusion == Cardinality(inCritical) <= 1
 ================================================
 ```
 
-Bu modelde `Enter`, yalnızca kilit boşsa çalışabilir. `MutualExclusion` ise değişmezdir: Her durumda kritik bölgede en fazla bir süreç bulunmalıdır. Matematiksel karşılığı $|inCritical| \leq 1$ şeklindedir. TLC model denetleyicisi bu özelliği her erişilebilir durum için sınar. Eğer modelde bir geçiş unutulmuşsa ya da kilit yanlış güncellenmişse, TLC yalnızca “başarısız” demez; hataya götüren işlem sırasını da üretir.
+Bu modelde `Enter`, yalnızca kilit boşsa çalışabilir. `MutualExclusion` ise değişmezdir: Her durumda kritik bölgede en fazla bir süreç bulunmalıdır. Matematiksel karşılığı $\vert inCritical\vert  \leq 1$ şeklindedir. TLC model denetleyicisi bu özelliği her erişilebilir durum için sınar. Eğer modelde bir geçiş unutulmuşsa ya da kilit yanlış güncellenmişse, TLC yalnızca “başarısız” demez; hataya götüren işlem sırasını da üretir.
 
 ## Güvenlik ve canlılık farkı
 

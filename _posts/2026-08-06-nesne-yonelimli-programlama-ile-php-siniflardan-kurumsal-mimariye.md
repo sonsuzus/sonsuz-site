@@ -32,9 +32,9 @@ Durum; ad, e-posta veya bakiye gibi verilerden, davranış ise giriş yapma, öd
 |---|---|---|
 | Sınıf | Nesnenin şablonunu tanımlar | `class User` |
 | Nesne | Sınıftan üretilen örnektir | `new User()` |
-| Özellik | Nesnenin verisini tutar | `$email` |
-| Metot | Nesnenin davranışını tanımlar | `login()` |
-| Constructor | İlk değerleri nesneye aktarır | `__construct()` |
+| Özellik | Nesnenin verisini tutar | `$email` \vert 
+\vert  Metot \vert  Nesnenin davranışını tanımlar \vert  `login()` \vert 
+\vert  Constructor \vert  İlk değerleri nesneye aktarır \vert  `__construct()` \vert 
 
 ## PHP ile ilk sınıfımız
 

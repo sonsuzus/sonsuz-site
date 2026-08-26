@@ -30,7 +30,7 @@ Boyut indirgeme, $X \in \mathbb{R}^{n \times d}$ biçimindeki yüksek boyutlu ve
 Principal Component Analysis (PCA), veriyi en fazla varyansın bulunduğu yönlere projekte eder. İlk ana bileşen şu optimizasyonla düşünülebilir:
 
 $$
-\max_{\|w\|=1} \operatorname{Var}(Xw)
+\max_{\\vert w\\vert =1} \operatorname{Var}(Xw)
 $$
 
 Ardından ikinci bileşen, ilkine dik kalacak şekilde kalan varyansı yakalar. PCA'nın en önemli avantajı, sonuçlarının yorumlanabilir olmasıdır: Bileşen yükleri sayesinde hangi değişkenlerin ayrışmayı etkilediği görülebilir. Ayrıca hızlıdır; büyük veri setleri için çoğu zaman ilk keşif aracı olmalıdır.
@@ -42,7 +42,7 @@ Buna karşılık PCA, eğri veya kıvrımlı manifoldları düz bir düzleme aç
 t-SNE, yüksek boyutta noktalar arasındaki komşulukları olasılıksal olarak tanımlar; düşük boyutta ise benzer komşuluk olasılıklarını korumaya çalışır. Amaç kabaca yüksek boyutlu $P$ ve düşük boyutlu $Q$ dağılımları arasındaki KL sapmasını azaltmaktır:
 
 $$
-KL(P\|Q)=\sum_{i,j} p_{ij}\log\frac{p_{ij}}{q_{ij}}
+KL(P\\vert Q)=\sum_{i,j} p_{ij}\log\frac{p_{ij}}{q_{ij}}
 $$
 
 Bu yaklaşım, yerel kümeleri olağanüstü görünür kılar. Gen ifade verileri, görüntü gömlemeleri ve belge vektörleri için t-SNE grafikleri çoğu zaman etkileyicidir. Fakat bu görsel çekiciliğin bir bedeli vardır: İki küme arasındaki boşluğun büyüklüğü, kümelerin gerçek uzaklığını temsil etmek zorunda değildir. Küme boyutları ve yoğunlukları da yanıltıcı olabilir.

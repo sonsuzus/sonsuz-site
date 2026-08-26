@@ -37,7 +37,7 @@ XAI yaklaşımları iki temel eksende sınıflanır:
 **Yerel açıklamalar** ise tek bir kararın izini sürer. LIME, seçilen örneğin çevresinde sentetik örnekler üretir ve karmaşık modele yakın basit, çoğunlukla doğrusal bir model uydurur. SHAP ise oyun teorisindeki Shapley değerlerinden yararlanır. Her özelliğin katkısını, tüm olası özellik kombinasyonlarındaki marjinal etkisinin ortalaması olarak hesaplar:
 
 $$
-\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{|S|!(|F|-|S|-1)!}{|F|!}[f(S \cup \{i\}) - f(S)]
+\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{\vert S\vert !(\vert F\vert -\vert S\vert -1)!}{\vert F\vert !}[f(S \cup \{i\}) - f(S)]
 $$
 
 SHAP değerlerinde pozitif katkı tahmini yukarı, negatif katkı aşağı iter. Örneğin kredi riskini artıran “gecikmiş ödeme sayısı” kırmızı, riski azaltan “düzenli gelir” mavi bir grafikle gösterilebilir.

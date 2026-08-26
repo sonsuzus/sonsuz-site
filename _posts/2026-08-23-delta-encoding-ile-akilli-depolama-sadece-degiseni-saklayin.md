@@ -20,7 +20,7 @@ $$T = Apply(B, \Delta(B,T))$$
 
 Depolama açısından kazanç, delta boyutunun hedef dosyadan belirgin biçimde küçük olmasına bağlıdır. Yaklaşık tasarruf oranı şöyle ifade edilebilir:
 
-$$Tasarruf = 1 - \frac{|B| + |\Delta|}{|B| + |T|}$$
+$$Tasarruf = 1 - \frac{\vert B\vert  + \vert \Delta\vert }{\vert B\vert  + \vert T\vert }$$
 
 Örneğin 100 MB'lık bir dosyanın sonraki sürümünde 2 MB değişmişse, iyi üretilmiş bir delta birkaç MB civarında olabilir. Ancak dosyanın tamamı değiştiyse delta, baz dosya kadar hatta bazı algoritmalarda daha büyük bile olabilir. Yani delta encoding sihir değil; benzerlikten güç alan bir tekniktir.
 

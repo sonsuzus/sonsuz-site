@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Apache Iceberg
-  - Veri Gölü
-  - Büyük Veri
+  - apache ıceberg
+  - veri gölü
+  - büyük veri
+toc: true
 ---
 
 Veri gölleri, ham veriyi düşük maliyetle saklamak için harikadır; fakat klasik dosya klasörü yaklaşımı büyüdükçe yönetim kabusa dönüşebilir. Hangi Parquet dosyası güncel, silinen kayıt gerçekten silindi mi, iki farklı işlem aynı anda yazarsa ne olur? Apache Iceberg, bu sorulara modern bir tablo katmanı ekleyerek veri gölünü SQL dünyasının güvenilirliğiyle buluşturur.

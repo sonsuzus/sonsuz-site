@@ -71,12 +71,12 @@ setInterval(timerExpired, 2000);
 
 Bir çalışma alışkanlığını “boşta”, “hazırlanıyor”, “odaklanmış” ve “mola” durumlarıyla modelleyebiliriz. Masaya oturmak hazırlığı, zamanlayıcıyı başlatmak odaklanmayı, sürenin dolması ise molayı tetikleyebilir.
 
-| Özellik | Trafik ışığı | İnsan alışkanlığı |
-|---|---|---|
-| Durumlar | Açık ve ölçülebilir | Yoruma açık olabilir |
-| Geçişler | Büyük ölçüde sabit | Duygu ve çevreden etkilenir |
-| Aynı girdinin sonucu | Genellikle aynıdır | Kişiye ve güne göre değişebilir |
-| Bellek ihtiyacı | Sınırlıdır | Geçmiş deneyimler önemli olabilir |
+\vert  Özellik \vert  Trafik ışığı \vert  İnsan alışkanlığı \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Durumlar \vert  Açık ve ölçülebilir \vert  Yoruma açık olabilir \vert 
+\vert  Geçişler \vert  Büyük ölçüde sabit \vert  Duygu ve çevreden etkilenir \vert 
+\vert  Aynı girdinin sonucu \vert  Genellikle aynıdır \vert  Kişiye ve güne göre değişebilir \vert 
+\vert  Bellek ihtiyacı \vert  Sınırlıdır \vert  Geçmiş deneyimler önemli olabilir \vert 
 
 İşte kritik ayrım burada ortaya çıkar: Trafik ışığı iyi tanımlanmış bir makinedir; insan ise her zaman deterministik değildir. “Bildirim geldi” girdisi bir gün dikkati dağıtırken başka bir gün görmezden gelinebilir. Bunu modellemek için olasılıklı geçişler kullanılabilir. Örneğin odaklanmış durumdan dağınık duruma geçiş olasılığı $P(D\mid B)=0.35$ olarak tanımlanabilir.
 

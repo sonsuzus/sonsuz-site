@@ -10,6 +10,7 @@ tags:
   - veri ambarı
   - veri gölü
   - delta lake
+toc: true
 ---
 
 Kuruluşlar uzun süre verilerini iki ayrı dünyada yönetti: Raporlama ve karar destek için düzenli veri ambarları, ham ve büyük hacimli veriler için ise veri gölleri. Lakehouse mimarisi, bu iki yaklaşımın güçlü yanlarını tek bir platformda buluşturarak hem analitik ekiplerin hem de makine öğrenmesi ekiplerinin aynı veriye güvenle erişmesini hedefler. Kısacası gölün özgürlüğünü, ambarın düzeniyle birleştiren bir veri yerleşim planıdır.

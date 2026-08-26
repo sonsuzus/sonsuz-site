@@ -14,7 +14,7 @@ image: /img/sonlu-durum-makineleriyle-48.png
 ![sonlu-durum-makineleriyle-48](/img/sonlu-durum-makineleriyle-48.svg)
 
 
-Düzenli ifadeler ilk bakışta sihirli karakter dizileri gibi görünür: `a*b`, `[0-9]+` ya da `^mail@alan\.com$`. Ancak perde arkasında oldukça matematiksel ve anlaşılır bir fikir vardır: sonlu durum makineleri. Küçük bir regex motoru yazmak, hem regex desenlerinin nasıl yorumlandığını hem de derleyicilerin temel prensiplerini öğrenmenin eğlenceli bir yoludur. Bu yazıda hedefimiz, tam özellikli bir PCRE canavarı üretmek değil; karakterler, birleştirme, `|` alternatifi ve `*` tekrarı için çalışan bir çekirdek tasarlamaktır.
+Düzenli ifadeler ilk bakışta sihirli karakter dizileri gibi görünür: `a*b`, `[0-9]+` ya da `^mail@alan\.com$`. Ancak perde arkasında oldukça matematiksel ve anlaşılır bir fikir vardır: sonlu durum makineleri. Küçük bir regex motoru yazmak, hem regex desenlerinin nasıl yorumlandığını hem de derleyicilerin temel prensiplerini öğrenmenin eğlenceli bir yoludur. Bu yazıda hedefimiz, tam özellikli bir PCRE canavarı üretmek değil; karakterler, birleştirme, `\vert ` alternatifi ve `*` tekrarı için çalışan bir çekirdek tasarlamaktır.
 ``
 
 Bir **sonlu durum makinesi** (Finite Automaton), sınırlı sayıda durumdan oluşur. Makine bir giriş metnini karakter karakter gezer; her karakter, onu mevcut durumdan başka bir duruma taşır. Metin bittiğinde makine kabul durumundaysa eşleşme başarılıdır. En temel formülasyon şöyledir:
@@ -23,21 +23,21 @@ $$M = (Q, \Sigma, \delta, q_0, F)$$
 
 Burada $Q$ durum kümesi, $\Sigma$ alfabe, $\delta$ geçiş fonksiyonu, $q_0$ başlangıç durumu ve $F$ kabul durumlarıdır. Örneğin `ab` deseni için makine önce `a`, sonra `b` görmeyi bekler. Bu yaklaşımda regex bir metin değil, durumlar arasında yol tarifidir.
 
-| Kavram | Regex dünyasındaki karşılığı | Örnek |
-|---|---|---|
-| Durum | Desenin bir noktası | `a` okunduktan sonraki konum |
-| Geçiş | Bir karakter tüketme | `q0 --a--> q1` |
-| Kabul durumu | Eşleşmenin tamamlanması | `ab` sonunda `q2` |
-| ε-geçişi | Karakter tüketmeden ilerleme | `a|b` dallanması |
+\vert  Kavram \vert  Regex dünyasındaki karşılığı \vert  Örnek \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Durum \vert  Desenin bir noktası \vert  `a` okunduktan sonraki konum \vert 
+\vert  Geçiş \vert  Bir karakter tüketme \vert  `q0 --a--> q1` \vert 
+\vert  Kabul durumu \vert  Eşleşmenin tamamlanması \vert  `ab` sonunda `q2` \vert 
+\vert  ε-geçişi \vert  Karakter tüketmeden ilerleme \vert  `a\vert b` dallanması \vert 
 
 İki ana makine türü vardır. **DFA** (Deterministic Finite Automaton) her durum ve karakter için en fazla bir sonraki duruma sahiptir. Bu nedenle çalıştırması çok hızlıdır. **NFA** (Nondeterministic Finite Automaton) ise aynı karakterde birden çok seçeneğe ve ε-geçişlerine izin verir. Regex derlemede NFA üretmek kolay, DFA çalıştırmak ise çoğu zaman hızlıdır.
 
-| Özellik | NFA | DFA |
-|---|---|---|
-| Bir durumdan olası geçiş | Birden fazla olabilir | Yalnızca bir tane |
-| ε-geçişi | Vardır | Yoktur |
-| Regex'ten üretim | Kolaydır | Dönüşüm gerekir |
-| Çalışma maliyeti | Aktif durum kümesi yönetir | Genellikle $O(n)$ |
+\vert  Özellik \vert  NFA \vert  DFA \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Bir durumdan olası geçiş \vert  Birden fazla olabilir \vert  Yalnızca bir tane \vert 
+\vert  ε-geçişi \vert  Vardır \vert  Yoktur \vert 
+\vert  Regex'ten üretim \vert  Kolaydır \vert  Dönüşüm gerekir \vert 
+\vert  Çalışma maliyeti \vert  Aktif durum kümesi yönetir \vert  Genellikle $O(n)$ |
 
 Pratik bir başlangıç için Thompson yapısını kullanabiliriz. Her ifade parçası bir başlangıç ve bir bitiş durumu üretir. Birleştirme (`ab`) ilk parçanın sonunu ikinci parçanın başına bağlar. Alternatif (`a|b`) yeni bir başlangıçtan iki dala ayrılır. Yıldız (`a*`) ise hem boş eşleşmeye hem de tekrar döngüsüne izin verir.
 
