@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7ed"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C8EBF"/>
+      <stop offset="100%" stop-color="#4A6FA5"/>
+    </linearGradient>
+    <linearGradient id="leftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9E7B3"/>
+      <stop offset="100%" stop-color="#F5D98B"/>
+    </linearGradient>
+    <linearGradient id="rightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B8E0D2"/>
+      <stop offset="100%" stop-color="#8FCDB8"/>
+    </linearGradient>
+    <linearGradient id="bottomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4C5F0"/>
+      <stop offset="100%" stop-color="#BBA6E3"/>
+    </linearGradient>
+    <linearGradient id="topGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2B8C6"/>
+      <stop offset="100%" stop-color="#E89AAD"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#3D5A80">PHP SABİTLER</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5A7A9E">Değiştirilemez · Global · Tanımlı Değerler</text>
+
+  <!-- Merkez kutu -->
+  <rect x="245" y="105" width="150" height="50" rx="12" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="320" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">SABİT</text>
+  <text x="320" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#D0E0F0">Bir kez tanımlanır</text>
+
+  <!-- Üst: Özellikler -->
+  <rect x="60" y="70" width="130" height="42" rx="10" fill="url(#topGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="125" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6B3A4A">Değişmez</text>
+  <text x="125" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#7A4A5A">Tanımsız yapılamaz</text>
+
+  <rect x="450" y="70" width="130" height="42" rx="10" fill="url(#topGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="515" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6B3A4A">Global Kapsam</text>
+  <text x="515" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#7A4A5A">Tüm kodlarda erişim</text>
+
+  <!-- Sol: Tanımlama Yöntemleri -->
+  <rect x="20" y="175" width="150" height="55" rx="10" fill="url(#leftGrad)" filter="url(#shadowLight)"/>
+  <text x="95" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#7A5A20">define()</text>
+  <text x="95" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#8A6A30">Fonksiyon ile</text>
+  <text x="95" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#8A6A30">Her yerde kullanılır</text>
+
+  <rect x="20" y="245" width="150" height="55" rx="10" fill="url(#leftGrad)" filter="url(#shadowLight)"/>
+  <text x="95" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#7A5A20">const</text>
+  <text x="95" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#8A6A30">Dosya başında</text>
+  <text x="95" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#8A6A30">Derleme zamanı</text>
+
+  <!-- Sağ: Erişim ve Veri Tipleri -->
+  <rect x="470" y="175" width="150" height="55" rx="10" fill="url(#rightGrad)" filter="url(#shadowLight)"/>
+  <text x="545" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2A6A55">Erişim</text>
+  <text x="545" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#3A7A65">constant() fonksiyonu</text>
+  <text x="545" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#3A7A65">get_defined_constants()</text>
+
+  <rect x="470" y="245" width="150" height="55" rx="10" fill="url(#rightGrad)" filter="url(#shadowLight)"/>
+  <text x="545" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2A6A55">Veri Tipleri</text>
+  <text x="545" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#3A7A65">boolean · integer</text>
+  <text x="545" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#3A7A65">float · string</text>
+
+  <!-- Alt: İsim Kuralları -->
+  <rect x="245" y="245" width="150" height="55" rx="10" fill="url(#bottomGrad)" filter="url(#shadowLight)"/>
+  <text x="320" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#4A3A7A">İsim Kuralları</text>
+  <text x="320" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#5A4A8A">Harf veya alt çizgi ile başlar</text>
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#5A4A8A">Büyük harf kullanılır</text>
+
+  <!-- Bağlantı çizgileri ve oklar -->
+  <!-- Üst sol -->
+  <path d="M 190 91 L 240 115" stroke="#6B3A4A" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="240,115 232,110 233,119" fill="#6B3A4A" opacity="0.6"/>
+
+  <!-- Üst sağ -->
+  <path d="M 450 91 L 400 115" stroke="#6B3A4A" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="400,115 408,110 407,119" fill="#6B3A4A" opacity="0.6"/>
+
+  <!-- Sol orta -->
+  <path d="M 170 200 L 240 140" stroke="#7A5A20" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="240,140 232,138 234,147" fill="#7A5A20" opacity="0.6"/>
+
+  <!-- Sol alt -->
+  <path d="M 170 270 L 240 160" stroke="#7A5A20" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="240,160 233,156 233,166" fill="#7A5A20" opacity="0.6"/>
+
+  <!-- Sağ orta -->
+  <path d="M 470 200 L 400 140" stroke="#2A6A55" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="400,140 408,138 406,147" fill="#2A6A55" opacity="0.6"/>
+
+  <!-- Sağ alt -->
+  <path d="M 470 270 L 400 160" stroke="#2A6A55" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="400,160 407,156 407,166" fill="#2A6A55" opacity="0.6"/>
+
+  <!-- Alt bağlantı -->
+  <path d="M 320 155 L 320 240" stroke="#4A3A7A" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="320,240 316,232 324,232" fill="#4A3A7A" opacity="0.6"/>
+
+  <!-- Dekoratif küçük daireler -->
+  <circle cx="320" cy="65" r="4" fill="#6C8EBF" opacity="0.4"/>
+  <circle cx="100" cy="60" r="3" fill="#F2B8C6" opacity="0.5"/>
+  <circle cx="540" cy="60" r="3" fill="#F2B8C6" opacity="0.5"/>
+</svg>

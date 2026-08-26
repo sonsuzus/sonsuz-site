@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - NGINX
-  - Performans
-  - Web Sunucusu
-  - DevOps
+  - ngınx
+  - performans
+  - web sunucusu
+  - devops
 ---
 
 Yoğun trafikli bir web uygulamasında sorun çoğu zaman yalnızca sunucu işlemcisinin yetersiz olması değildir. Asıl mesele, her isteğin ne kadar kaynak tükettiği, bağlantıların nasıl yönetildiği ve statik içeriklerin uygulama katmanına uğramadan ne kadar hızlı servis edildiğidir. NGINX; olay güdümlü mimarisi, reverse proxy yetenekleri ve düşük bellek tüketimi sayesinde bu problemlerin çözümünde güçlü bir araçtır.

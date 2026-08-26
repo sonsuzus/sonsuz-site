@@ -8,6 +8,7 @@ tags:
   - işlemci
   - performans
   - branch prediction
+toc: true
 ---
 
 Modern bir işlemci, bir programdaki talimatları sırayla ve sabırla bekleyerek çalıştırmaz; adeta aceleci bir satranç oyuncusu gibi bir sonraki hamleyi önceden kestirmeye çalışır. Dallanma tahmini (branch prediction), `if`, `while`, `for` ve fonksiyon dönüşleri gibi karar noktalarında hangi kod yolunun izleneceğini tahmin eden donanım tekniğidir. Doğru tahminler işlem hattını dolu tutar, yanlış tahminler ise pahalı bir geri sarma etkisi yaratır.

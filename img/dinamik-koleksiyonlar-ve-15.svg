@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="stackGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9ddf6"/>
+    </linearGradient>
+    <linearGradient id="heapGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f6df"/>
+      <stop offset="100%" stop-color="#cceac8"/>
+    </linearGradient>
+    <linearGradient id="newGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#f8db9b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#56708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#56708a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <text x="32" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39516a">Dinamik Vektör</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#678096">Nesne küçük, eleman deposu heap üzerinde</text>
+
+  <rect x="32" y="78" width="146" height="182" rx="18" fill="#edf5ff" stroke="#c4d9ee"/>
+  <text x="52" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45627c">Stack</text>
+
+  <rect x="49" y="120" width="112" height="113" rx="13" fill="url(#stackGrad)" filter="url(#shadow)"/>
+  <text x="63" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#294861">Vektör</text>
+  <line x1="61" y1="156" x2="149" y2="156" stroke="#95b6d4"/>
+  <text x="63" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34546d">veri adresi</text>
+  <text x="63" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34546d">boyut: 4</text>
+  <text x="63" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34546d">kapasite: 4</text>
+
+  <path d="M178 176 C205 176, 205 149, 226 149" fill="none" stroke="#698ba7" stroke-width="2"/>
+  <polygon points="226,149 217,144 218,154" fill="#698ba7"/>
+
+  <rect x="226" y="78" width="198" height="182" rx="18" fill="#eff9ec" stroke="#c9e5c3"/>
+  <text x="246" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b7351">Heap</text>
+  <text x="333" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#719477">Bitişik blok</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="246" y="129" width="38" height="54" rx="8" fill="#a9d9ac"/>
+    <rect x="287" y="129" width="38" height="54" rx="8" fill="#a9d9ac"/>
+    <rect x="328" y="129" width="38" height="54" rx="8" fill="#a9d9ac"/>
+    <rect x="369" y="129" width="38" height="54" rx="8" fill="#a9d9ac"/>
+  </g>
+  <text x="260" y="161" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35663d">10</text>
+  <text x="301" y="161" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35663d">20</text>
+  <text x="342" y="161" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35663d">30</text>
+  <text x="383" y="161" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35663d">40</text>
+  <rect x="246" y="203" width="161" height="30" rx="10" fill="#dff1dc"/>
+  <text x="265" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a7650">boyut = kapasite</text>
+
+  <path d="M424 170 L454 170" fill="none" stroke="#df9b4b" stroke-width="2.5"/>
+  <polygon points="454,170 445,164 445,176" fill="#df9b4b"/>
+  <text x="427" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a56b26">push_back</text>
+
+  <rect x="454" y="53" width="157" height="219" rx="18" fill="#fff9eb" stroke="#f0d9a6"/>
+  <text x="473" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a682c">Kapasite dolu</text>
+  <text x="473" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ac7c43">Yeni blok ayrılır</text>
+
+  <path d="M488 117 C477 130,477 143,488 153" fill="none" stroke="#d39a50" stroke-width="2"/>
+  <polygon points="488,153 481,145 492,144" fill="#d39a50"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="475" y="164" width="27" height="43" rx="7" fill="url(#newGrad)"/>
+    <rect x="504" y="164" width="27" height="43" rx="7" fill="url(#newGrad)"/>
+    <rect x="533" y="164" width="27" height="43" rx="7" fill="url(#newGrad)"/>
+    <rect x="562" y="164" width="27" height="43" rx="7" fill="url(#newGrad)"/>
+    <rect x="475" y="210" width="27" height="43" rx="7" fill="#fff7dd"/>
+    <rect x="504" y="210" width="27" height="43" rx="7" fill="#fff7dd"/>
+    <rect x="533" y="210" width="27" height="43" rx="7" fill="#f7c87a"/>
+    <rect x="562" y="210" width="27" height="43" rx="7" fill="#fff7dd"/>
+  </g>
+  <text x="482" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#855c29">10</text>
+  <text x="511" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#855c29">20</text>
+  <text x="540" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#855c29">30</text>
+  <text x="569" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#855c29">40</text>
+  <text x="539" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#855c29">50</text>
+  <text x="475" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#93652c">boyut: 5  •  kapasite: 8</text>
+
+  <path d="M406 253 C425 281,454 288,481 281" fill="none" stroke="#8199a9" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="260" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607a89">Taşıma sonrası eski adres geçersiz</text>
+</svg>

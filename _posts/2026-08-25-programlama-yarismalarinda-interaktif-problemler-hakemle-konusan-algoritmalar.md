@@ -8,7 +8,7 @@ tags:
   - programlama yarışmaları
   - interaktif problemler
   - algoritmalar
-  - C++
+  - c++
 ---
 
 Programlama yarışmalarındaki klasik sorularda girdiyi bir kez okur, cevabı yazıp programı kapatırsınız. İnteraktif problemlerde ise karşınızda görünmez bir hakem vardır: Siz soru sorarsınız, hakem cevap verir, siz yeni bilgiye göre stratejinizi güncellersiniz. Bu yapı; ikili arama, bilgi teorisi, durum yönetimi ve iletişim protokolü gibi kavramları aynı sahnede buluşturur.

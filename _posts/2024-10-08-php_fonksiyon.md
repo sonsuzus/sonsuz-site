@@ -10,6 +10,7 @@ tags:
 redirect_from:
   - /posts/php_fonksiyon/
 toc: true
+image: /img/php_fonksiyon-11.png
 ---
 
 
@@ -277,3 +278,6 @@ Anonim fonksiyonlar
 ```
 
 Yukarıdaki PHP dosyasında, isimsiz olarak tanımlanan fonksiyon atandığı $fonk\_deg değişkeni yoluyla preg\_replace\_callback() fonksiyonu içinde callback fonksiyonu olarak kullanılır. Aynı fonksiyonun ilk parametresinin ("değişkenler") üçüncü parametre içinde eşleştiği kısım yerine "fonksiyonlar" ifadesini geri döndürür.
+
+![php_fonksiyon-11](/img/php_fonksiyon-11.svg)
+

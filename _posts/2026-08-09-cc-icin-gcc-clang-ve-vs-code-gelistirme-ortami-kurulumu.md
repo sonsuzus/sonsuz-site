@@ -9,6 +9,7 @@ tags:
   - vs code
   - gcc ve clang
 toc: true
+image: /img/cc-icin-gcc-22.png
 ---
 
 C ve C++, işlemciye ve belleğe yakın çalışabilmeleri sayesinde işletim sistemlerinden oyun motorlarına kadar pek çok alanda karşımıza çıkar. Ancak ilk programı yazmadan önce derleyici, hata ayıklayıcı ve editör üçlüsünü doğru biçimde hazırlamak gerekir. Bu rehberde GCC/Clang altyapısını kuracak, VS Code'u yapılandıracak ve kaynak kodun çalıştırılabilir programa nasıl dönüştüğünü öğreneceğiz.
@@ -116,3 +117,6 @@ Bu görev, açık olan dosyayı **Ctrl+Shift+B** ile derler. Clang tercih ediliy
 Hata ayıklama sırasında breakpoint kullanmak, değişkenlerin bellekteki değişimini adım adım izlemeyi sağlar. VS Code'un **Run and Debug** bölümünden C++ yapılandırması seçildiğinde GDB veya LLDB çalıştırılır. Böylece yalnızca programın sonucunu değil; çağrı yığınını, işaretçileri ve bellek adreslerini de inceleyebilirsiniz.
 
 Son olarak derleyici uyarılarını düşman değil, ücretsiz kod inceleme ekibi olarak görün. C/C++ öğrenirken `-Wall -Wextra` kullanmak ve küçük programları hata ayıklayıcıyla yürütmek, bellek yönetimi ile donanım arasındaki ilişkiyi çok daha görünür hâle getirir.
+
+![cc-icin-gcc-22](/img/cc-icin-gcc-22.svg)
+

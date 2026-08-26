@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Fuzz Testing
-  - Yazılım Testi
-  - Siber Güvenlik
+  - fuzz testing
+  - yazılım testi
+  - siber güvenlik
+toc: true
 ---
 
 Bir yazılımın mutlu yolunda çalışması, onun her koşulda güvenli olduğu anlamına gelmez. Kullanıcıların boş metin, devasa dosya, bozuk karakter kodlaması veya beklenmeyen veri türleri gönderebildiği gerçek dünyada asıl sorunlar köşe durumlarda yaşanır. **Fuzz testing** ya da kısa adıyla *fuzzing*, uygulamalara otomatik biçimde sıra dışı, hatalı veya rastgele girdiler göndererek çökmeleri, istisnaları ve güvenlik açıklarını bulma disiplinidir. Bir bakıma yazılımınıza kontrollü kaos yaşatırsınız.

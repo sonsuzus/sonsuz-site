@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - CPU Cache
-  - Performans
-  - C++
-  - Algoritmalar
-  - Bellek Yönetimi
+  - cpu cache
+  - performans
+  - c++
+  - algoritmalar
+  - bellek yönetimi
+toc: true
 ---
 
 Modern işlemciler inanılmaz hızlıdır; fakat RAM erişimi, işlemci çekirdeğinin hızına kıyasla şaşırtıcı derecede yavaştır. Bu yüzden performans darboğazı çoğu zaman karmaşık matematiksel işlem değil, verinin bellekte nerede durduğu ve hangi sırayla okunduğudur. Cache dostu kod yazımı; veriyi işlemcinin sevdiği biçimde, yakın adreslerde ve öngörülebilir bir akışla tüketme sanatıdır.

@@ -9,6 +9,7 @@ tags:
   - polyrepo
   - git
   - yazılım mimarisi
+toc: true
 ---
 
 Büyüyen bir yazılım organizasyonunda kod depoları yalnızca dosyaların yaşadığı klasörler değildir; ekip sınırlarını, dağıtım hızını ve bağımlılık yönetimini doğrudan etkileyen mimari kararlardır. Monorepo, birçok uygulama ve kütüphaneyi tek Git deposunda toplarken; polyrepo yaklaşımı her servis, uygulama veya bileşen için ayrı depo kullanır. Doğru tercih, moda olan aracı seçmekten çok ürününüzün değişim ritmini anlamaktır.

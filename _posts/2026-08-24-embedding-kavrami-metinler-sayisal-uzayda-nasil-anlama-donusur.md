@@ -8,6 +8,7 @@ tags:
   - embedding
   - doğal dil işleme
   - makine öğrenmesi
+toc: true
 ---
 
 Bilgisayarlar için “kedi” ile “köpek” kelimeleri, ilk bakışta yalnızca farklı karakter dizileridir. Oysa insan zihni ikisinin de hayvan olduğunu, “kedi” ile “miyav” arasında güçlü bir ilişki bulunduğunu sezebilir. **Embedding** (gömme), metin, kelime, cümle ya da belge gibi verileri; bu anlamsal ilişkileri korumaya çalışan sayısal vektörlere dönüştürme yöntemidir. Böylece arama motorları, öneri sistemleri ve yapay zekâ uygulamaları metnin yalnızca yazılışını değil, yaklaşık anlamını da karşılaştırabilir.

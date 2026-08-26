@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - RAG
-  - Büyük Dil Modelleri
-  - Yapay Zeka
+  - rag
+  - büyük dil modelleri
+  - yapay zeka
+toc: true
 ---
 
 Büyük dil modelleri (LLM), eğitim verilerindeki örüntülerden etkileyici yanıtlar üretir; ancak eğitim tarihinden sonra yaşanan gelişmeleri doğal olarak bilemezler. Daha da önemlisi, kurum içi dokümanlar, ürün katalogları veya sürekli değişen mevzuat gibi özel bilgileri doğrudan modelin parametrelerine koymak hem pahalı hem de risklidir. Retrieval-Augmented Generation (RAG), modeli yeniden eğitmek yerine doğru bilgiyi doğru anda bularak bu açığı kapatan mimaridir.

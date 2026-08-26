@@ -7,8 +7,9 @@ categories:
 tags: 
   - makine öğrenmesi
   - feature store
-  - MLOps
+  - mlops
   - veri mühendisliği
+toc: true
 ---
 
 Makine öğrenmesi projelerinde model seçimi çoğu zaman sahnenin yıldızı gibi görünür; ancak gerçek hayatta performansı belirleyen oyuncu genellikle verilerdir. Özellikle özellikler (feature) farklı ekipler, SQL sorguları, notebook'lar ve üretim servisleri arasında dağınıksa aynı müşteri yaşı, satın alma toplamı veya risk puanı birbirinden farklı hesaplanabilir. Feature Store, bu karmaşayı azaltmak için özellikleri merkezi, tekrar kullanılabilir, izlenebilir ve güvenilir biçimde yöneten veri platformu katmanıdır.

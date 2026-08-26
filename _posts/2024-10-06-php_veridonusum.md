@@ -12,6 +12,7 @@ tags:
 redirect_from:
   - /posts/php_veridonusum/
 toc: true
+image: /img/php_veridonusum-19.png
 ---
 
 
@@ -132,3 +133,6 @@ float 21
 ```
 
 Yukarıdaki PHP dosyasında, önce integer bir değişken tanımlanır. Integer değişkeninin veri tipi sırasıyla string, boolean ve float veri tiplerine geçici olarak dönüştürülüp farklı değişkenlere atanır. Daha sonra, var\_dump() fonksiyonu kullanılarak değişken türleri ve değerleri ekrana yazılmaktadır.
+
+![php_veridonusum-19](/img/php_veridonusum-19.svg)
+

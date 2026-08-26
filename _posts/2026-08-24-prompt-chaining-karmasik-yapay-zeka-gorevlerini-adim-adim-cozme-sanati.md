@@ -7,8 +7,9 @@ categories:
 tags: 
   - yapay zeka
   - prompt engineering
-  - LLM
+  - llm
   - otomasyon
+toc: true
 ---
 
 Bir büyük dil modelinden tek seferde kapsamlı bir rapor yazmasını, verileri analiz etmesini, kaynakları denetlemesini ve sonucu belirli bir formatta sunmasını istemek caziptir. Ancak bu yaklaşım çoğu zaman belirsiz, tutarsız veya kolayca doğrulanamayan çıktılar üretir. **Prompt chaining**, büyük bir hedefi birbirini besleyen küçük istemlere ayırarak bu sorunu azaltan tekniktir. Zincirde her adım, önceki adımın çıktısını girdi olarak kullanır; böylece görev hem denetlenebilir hem de yeniden üretilebilir hâle gelir.

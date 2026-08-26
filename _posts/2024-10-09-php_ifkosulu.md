@@ -12,6 +12,7 @@ tags:
 redirect_from:
   - /posts/php_ifkosulu/
 toc: true
+image: /img/php_ifkosulu-59.png
 ---
 
 
@@ -237,3 +238,6 @@ $deg01 değişken değeri 17'den büyüktür.
 ```
 
 Yukarıdaki PHP dosyasında, ilk iki işlem satırı ile son üç işlem satırı aynı işlemi gerçekleştirmektedir. İkinci yöntemde alternatif yazım şekli kullanılmaktadır.
+
+![php_ifkosulu-59](/img/php_ifkosulu-59.svg)
+

@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SHAP
-  - Makine Öğrenmesi
-  - Model Açıklanabilirliği
+  - shap
+  - makine öğrenmesi
+  - model açıklanabilirliği
+toc: true
 ---
 
 Bir makine öğrenmesi modeli yüksek doğruluk verdiğinde ilk soru genellikle “Ne kadar başarılı?” olur; ikinci ve çoğu zaman daha kritik soru ise “Bu karara neden vardı?”dır. SHAP (SHapley Additive exPlanations), bir tahmini özelliklerin katkılarına bölerek bu soruya sayısal bir yanıt verir. Böylece kredi reddi, müşteri terk tahmini veya fiyat tahmini gibi sonuçlarda modelin hangi sinyalleri ne yönde kullandığını görünür kılar.

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="35" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">PHP Diziler</text>
+
+  <!-- Ana dizi kutusu -->
+  <rect x="240" y="60" width="160" height="50" rx="12" fill="#e8f4fd" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Dizi (Array)</text>
+  <text x="320" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5b9bd5">array() fonksiyonu</text>
+
+  <!-- Sol üst: Key-Value -->
+  <rect x="30" y="130" width="160" height="55" rx="10" fill="#fde9d9" stroke="#e67e22" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="110" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#d35400">Değer Adı (Key)</text>
+  <text x="110" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e67e22">integer veya string</text>
+
+  <!-- Sol alt: Value -->
+  <rect x="30" y="215" width="160" height="55" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="110" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Değer (Value)</text>
+  <text x="110" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#27ae60">Herhangi bir tür</text>
+
+  <!-- Sağ: Atama yöntemleri -->
+  <rect x="430" y="130" width="180" height="140" rx="10" fill="#f4ecf7" stroke="#8e44ad" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="520" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6c3483">Atama Yöntemleri</text>
+
+  <rect x="445" y="165" width="150" height="28" rx="6" fill="#ffffff" stroke="#d2b4de" stroke-width="1"/>
+  <text x="520" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6c3483">Key =&gt; Value</text>
+
+  <rect x="445" y="200" width="150" height="28" rx="6" fill="#ffffff" stroke="#d2b4de" stroke-width="1"/>
+  <text x="520" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6c3483">Sadece Value</text>
+
+  <rect x="445" y="235" width="150" height="28" rx="6" fill="#ffffff" stroke="#d2b4de" stroke-width="1"/>
+  <text x="520" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6c3483">Karma (Karışık)</text>
+
+  <!-- Oklar -->
+  <!-- Ana kutu -> Sol üst -->
+  <path d="M 250 108 L 140 128" stroke="#5b9bd5" stroke-width="1.5" fill="none"/>
+  <polygon points="140,128 150,124 146,134" fill="#5b9bd5"/>
+
+  <!-- Ana kutu -> Sol alt -->
+  <path d="M 260 112 L 130 213" stroke="#5b9bd5" stroke-width="1.5" fill="none"/>
+  <polygon points="130,213 140,208 138,219" fill="#5b9bd5"/>
+
+  <!-- Ana kutu -> Sağ -->
+  <path d="M 400 90 L 440 135" stroke="#5b9bd5" stroke-width="1.5" fill="none"/>
+  <polygon points="440,135 432,132 438,143" fill="#5b9bd5"/>
+
+  <!-- Sol üst -> Sol alt bağlantı -->
+  <path d="M 110 185 L 110 213" stroke="#e67e22" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="110,213 106,204 114,204" fill="#e67e22"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Dizi içindeki her veriye key veya indeks ile erişilir</text>
+</svg>

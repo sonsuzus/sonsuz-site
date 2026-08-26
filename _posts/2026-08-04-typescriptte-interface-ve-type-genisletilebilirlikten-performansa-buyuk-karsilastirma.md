@@ -9,7 +9,11 @@ tags:
   - interface
   - type
 toc: true
+image: /img/typescriptte-interface-ve-24.png
 ---
+
+![typescriptte-interface-ve-24](/img/typescriptte-interface-ve-24.svg)
+
 
 TypeScript dünyasında `interface` ve `type`, nesnelerin biçimini tanımlarken sık sık aynı işi yapıyormuş gibi görünür. İkisi de özelliklerin türünü belirler, yeniden kullanılabilir modeller oluşturur ve editörün otomatik tamamlama yeteneklerini güçlendirir. Ancak konu genişletme, bildirim birleştirme ve karmaşık tür hesaplamalarına geldiğinde bu iki araç farklı karakterlere bürünür.
 

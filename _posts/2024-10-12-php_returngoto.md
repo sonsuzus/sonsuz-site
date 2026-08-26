@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/php_returngoto/
 toc: true
+image: /img/php_returngoto-65.png
 ---
 
 
@@ -135,3 +136,6 @@ Yukarıdaki dosyayı çalıştırdığımızda, web tarayıcımızda aşağıdak
 37
 
 ```
+
+![php_returngoto-65](/img/php_returngoto-65.svg)
+

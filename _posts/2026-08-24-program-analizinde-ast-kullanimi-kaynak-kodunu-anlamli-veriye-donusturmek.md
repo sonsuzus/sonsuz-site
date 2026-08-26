@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - AST
-  - Program Analizi
-  - Derleyiciler
+  - ast
+  - program analizi
+  - derleyiciler
 ---
 
 Bir programın kaynak kodu, insan gözüyle satırlardan oluşur; fakat analiz araçları için asıl değerli olan şey bu satırların taşıdığı yapıdır. Abstract Syntax Tree (AST), yani Soyut Sözdizim Ağacı, kodu değişken tanımı, fonksiyon çağrısı, koşul ve döngü gibi anlamlı düğümlere ayırır. Böylece otomatik kalite kontrolleri, güvenlik taramaları ve kod dönüşümleri düzenli ifadelerin kırılgan dünyasından kurtulur.

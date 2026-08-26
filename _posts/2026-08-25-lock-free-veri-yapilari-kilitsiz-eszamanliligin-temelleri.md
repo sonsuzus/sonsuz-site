@@ -8,6 +8,7 @@ tags:
   - lock-free
   - eşzamanlı programlama
   - atomik işlemler
+toc: true
 ---
 
 Modern uygulamalarda birden fazla iş parçacığının aynı veriye erişmesi kaçınılmazdır. Geleneksel çözüm mutex gibi kilitlerdir; ancak bir iş parçacığı kilidi bırakmayı unutursa, askıya alınırsa veya uzun süre çalışırsa diğerleri beklemeye mahkûm olur. Lock-free veri yapıları, bu bekleme zincirini kırmak için atomik donanım işlemlerini kullanır. Amaç, tek tek iş parçacıklarının değil, sistemin bütünüyle her zaman ilerlemesidir.

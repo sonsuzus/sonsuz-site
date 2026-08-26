@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="classGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4fc"/>
+    </linearGradient>
+    <linearGradient id="objGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e9"/>
+      <stop offset="100%" stop-color="#c8ebd0"/>
+    </linearGradient>
+    <linearGradient id="propGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef9e7"/>
+      <stop offset="100%" stop-color="#fdebd0"/>
+    </linearGradient>
+    <linearGradient id="methodGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8c9d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">PHP Nesne Yapısı</text>
+
+  <!-- CLASS KUTUSU -->
+  <rect x="40" y="55" width="240" height="230" rx="14" fill="url(#classGrad)" stroke="#7aa5d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="160" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a5276">class personel</text>
+
+  <!-- Özellikler bölümü -->
+  <rect x="55" y="95" width="210" height="90" rx="8" fill="url(#propGrad)" stroke="#e6c07a" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="160" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#7d6608">Özellikler (Veri)</text>
+  
+  <rect x="70" y="122" width="180" height="18" rx="4" fill="#fff" opacity="0.7"/>
+  <text x="160" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">$adi - String</text>
+  
+  <rect x="70" y="145" width="180" height="18" rx="4" fill="#fff" opacity="0.7"/>
+  <text x="160" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">$soyadi - String</text>
+  
+  <rect x="70" y="168" width="180" height="18" rx="4" fill="#fff" opacity="0.7"/>
+  <text x="160" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">$yasi - Integer</text>
+
+  <!-- Metot bölümü -->
+  <rect x="55" y="195" width="210" height="75" rx="8" fill="url(#methodGrad)" stroke="#e5989b" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="160" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#7b2d3e">Metotlar (Fonksiyon)</text>
+  
+  <rect x="70" y="222" width="180" height="18" rx="4" fill="#fff" opacity="0.7"/>
+  <text x="160" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">yaz_bilgi()</text>
+  
+  <rect x="70" y="245" width="180" height="18" rx="4" fill="#fff" opacity="0.7"/>
+  <text x="160" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">echo $this-&gt;adi ...</text>
+
+  <!-- Ok: class -> nesne -->
+  <path d="M 285 170 L 345 170" stroke="#5b8c5a" stroke-width="2" fill="none"/>
+  <polygon points="345,164 358,170 345,176" fill="#5b8c5a"/>
+
+  <!-- new ifadesi -->
+  <text x="320" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c6e2c" font-weight="bold">new</text>
+
+  <!-- NESNE KUTUSU -->
+  <rect x="365" y="55" width="235" height="230" rx="14" fill="url(#objGrad)" stroke="#6bbf7a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="482" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1e6e2e">Nesne (Object)</text>
+
+  <!-- Nesne özellikleri -->
+  <rect x="380" y="95" width="205" height="90" rx="8" fill="#ffffff" opacity="0.6" stroke="#a9dfbf" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="482" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1e6e2e">Veri Değerleri</text>
+  
+  <rect x="395" y="122" width="175" height="18" rx="4" fill="#d5f5e3"/>
+  <text x="482" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">$adi = "Ahmet"</text>
+  
+  <rect x="395" y="145" width="175" height="18" rx="4" fill="#d5f5e3"/>
+  <text x="482" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">$soyadi = "Yılmaz"</text>
+  
+  <rect x="395" y="168" width="175" height="18" rx="4" fill="#d5f5e3"/>
+  <text x="482" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">$yasi = 30</text>
+
+  <!-- Nesne metotları -->
+  <rect x="380" y="195" width="205" height="75" rx="8" fill="#ffffff" opacity="0.6" stroke="#a9dfbf" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="482" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1e6e2e">Davranışlar</text>
+  
+  <rect x="395" y="222" width="175" height="18" rx="4" fill="#d5f5e3"/>
+  <text x="482" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">yaz_bilgi() çalışır</text>
+  
+  <rect x="395" y="245" width="175" height="18" rx="4" fill="#d5f5e3"/>
+  <text x="482" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">"Ahmet Yılmaz 30" yazar</text>
+
+  <!-- Alt bağlantı çizgileri -->
+  <path d="M 160 285 L 160 300" stroke="#7aa5d9" stroke-width="1.5" fill="none"/>
+  <path d="M 482 285 L 482 300" stroke="#6bbf7a" stroke-width="1.5" fill="none"/>
+  
+  <rect x="95" y="300" width="130" height="16" rx="4" fill="#d4e4fc" opacity="0.8"/>
+  <text x="160" y="312" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">Şablon / Taslak</text>
+  
+  <rect x="417" y="300" width="130" height="16" rx="4" fill="#c8ebd0" opacity="0.8"/>
+  <text x="482" y="312" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1e6e2e">Somut Örnek</text>
+
+  <!-- Üst bilgi notu -->
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Sınıf tanımından türetilen yapı</text>
+</svg>

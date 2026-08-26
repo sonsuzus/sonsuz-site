@@ -5,10 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Grafana
-  - Gözlemlenebilirlik
-  - Dashboard
-  - Veri Görselleştirme
+  - grafana
+  - gözlemlenebilirlik
+  - dashboard
+  - veri görselleştirme
+toc: true
 ---
 
 Grafana panosu tasarlamak, ekrana mümkün olduğunca çok grafik sığdırmak değildir; doğru kişiye, doğru anda, doğru kararı verdirecek sinyali sunmaktır. Sunucu gecikmesi, hata oranı, kaynak tüketimi ve iş metrikleri aynı ekranda bulunabilir. Ancak bu veriler bir bağlam ve hiyerarşi olmadan sunulursa pano, kokpitten çok renkli bir duvar kâğıdına dönüşür. İyi bir dashboard, teknik karmaşayı birkaç saniyede okunabilir bir hikâyeye çevirir.

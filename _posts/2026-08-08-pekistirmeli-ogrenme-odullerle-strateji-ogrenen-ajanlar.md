@@ -9,9 +9,13 @@ tags:
   - yapay zeka
   - makine öğrenmesi
 toc: true
+image: /img/pekistirmeli-ogrenme-odullerle-45.png
 ---
 
 Bir labirentte olduğunuzu düşünün: Haritanız yok, bazı yollar çıkmaza ulaşıyor ve doğru kapıyı bulduğunuzda puan kazanıyorsunuz. Pekiştirmeli öğrenme, bir yapay zekâ ajanının benzer biçimde çevresiyle etkileşime girerek hangi kararların uzun vadede daha iyi sonuç verdiğini öğrenmesini sağlar. Ajana her adımı ezberletmek yerine ona hedefi, olası eylemleri ve geri bildirim mekanizmasını veririz; gerisini deneme, yanılma ve biraz da matematik halleder.
+
+
+![pekistirmeli-ogrenme-odullerle-45](/img/pekistirmeli-ogrenme-odullerle-45.svg)
 
 ``
 

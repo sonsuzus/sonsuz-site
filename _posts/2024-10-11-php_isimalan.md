@@ -11,7 +11,11 @@ tags:
 redirect_from:
   - /posts/php_isimalan/
 toc: true
+image: /img/php_isimalan-51.png
 ---
+
+![php_isimalan-51](/img/php_isimalan-51.svg)
+
 
 
 PHP 5.3.0 ile birlikte gelen isim alanlarını kullanarak, bir projede kullanılan sınıfları daha düzgün bir şekilde gruplandırabilir ve farklı isim alanlarında tanımlanan birden fazla sınıfın aynı sınıf ismi ile tanınlanmasını sağlayabiliriz.

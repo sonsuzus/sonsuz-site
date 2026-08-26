@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - AutoML
-  - Makine Öğrenmesi
-  - Hiperparametre Optimizasyonu
+  - automl
+  - makine öğrenmesi
+  - hiperparametre optimizasyonu
+toc: true
 ---
 
 Makine öğrenmesi projelerinde en zor kısım çoğu zaman modeli eğitmek değil, **hangi modeli denemek gerektiğine** ve bu modelin ayarlarının nasıl yapılacağına karar vermektir. Karar ağacı mı, gradyan artırma mı, yoksa lojistik regresyon mu? Öğrenme oranı kaç olmalı? İşte AutoML (Automated Machine Learning), bu tekrar eden deneme-yanılma döngüsünü akıllı bir otomasyona dönüştürür. Amaç, veri bilimcisini ortadan kaldırmak değil; onu sonsuz parametre ayarı ekranından kurtarmaktır.

@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - MCP
-  - Yapay Zekâ
-  - LLM
-  - API
-  - Model Context Protocol
+  - mcp
+  - yapay zekâ
+  - llm
+  - apı
+  - model context protocol
+toc: true
 ---
 
 Büyük dil modelleri metin üretmekte çok başarılıdır; ancak tek başlarına takviminize bakamaz, veritabanınızdan müşteri kaydı çekemez veya GitHub’daki bir depoyu analiz edemezler. Bu noktada **MCP (Model Context Protocol)**, yapay zekâ uygulamalarının harici araçlar ve veri kaynaklarıyla güvenli, düzenli ve standart bir biçimde konuşmasını sağlayan açık bir protokol olarak devreye girer.

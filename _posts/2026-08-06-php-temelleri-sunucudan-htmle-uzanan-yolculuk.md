@@ -9,6 +9,7 @@ tags:
   - web programlama
   - sunucu tarafı
 toc: true
+image: /img/php-temelleri-sunucudan-89.png
 ---
 
 Bir web sayfasındaki kullanıcı adı, ürün listesi veya sepet tutarı kendiliğinden ortaya çıkmaz. Perdenin arkasında çalışan PHP; isteği karşılar, verileri işler ve tarayıcıya gönderilecek HTML çıktısını üretir. Tarayıcı PHP kodunu görmez; yalnızca onun hazırladığı sonucu görür. Gelin bu mutfağa girip PHP’nin çalışma mantığını, sözdizimini ve veri tiplerini inceleyelim.
@@ -35,6 +36,9 @@ PHP kodunun tarayıcıya gönderilmemesi hem uygulama mantığını gizler hem d
 | Veritabanına doğrudan erişim | Yapabilir | Genellikle yapamaz |
 | Kaynak kodunu kullanıcı görür mü? | Hayır | Evet |
 | Temel görevi | Dinamik çıktı ve veri işlemleri | Arayüz ve kullanıcı etkileşimi |
+
+![php-temelleri-sunucudan-89](/img/php-temelleri-sunucudan-89.svg)
+
 
 ## Temel sözdizimi
 

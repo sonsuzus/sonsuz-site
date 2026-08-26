@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - CDN
-  - Web Performansı
-  - Ağ Teknolojileri
+  - cdn
+  - web performansı
+  - ağ teknolojileri
+toc: true
 ---
 
 Bir web sitesi yalnızca güzel tasarımdan ibaret değildir; ziyaretçi Tokyo'dayken sunucunuz İstanbul'da bulunuyorsa, aradaki fiziksel mesafe sayfanın açılışını yavaşlatır. CDN (Content Delivery Network / İçerik Dağıtım Ağı), görsel, JavaScript, CSS, video ve hatta önbelleğe alınabilir API yanıtlarını kullanıcıya en yakın noktadan ulaştıran küresel bir sunucu ağıdır. Temel hedef basittir: veriyi uzun bir kıtalararası yolculuğa çıkarmak yerine, ona mahalleden servis yapmaktır.

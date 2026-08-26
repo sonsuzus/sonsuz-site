@@ -7,9 +7,10 @@ categories:
 tags: 
   - yapay zeka
   - ajan sistemleri
-  - LLM
+  - llm
   - mimari
-  - Python
+  - python
+toc: true
 ---
 
 Tek bir büyük dil modeli etkileyici cevaplar üretebilir; ancak gerçek dünyadaki işler çoğunlukla araştırma, planlama, araç kullanımı, doğrulama ve raporlama gibi farklı uzmanlıklar ister. Ajan tabanlı yapay zeka mimarisi, bu yükü tek bir modele bırakmak yerine rolleri belirlenmiş birden fazla ajana dağıtır. Bunu küçük ama disiplinli bir yazılım ekibi gibi düşünebilirsiniz: biri işi parçalar, biri veri toplar, diğeri sonucu test eder, bir başkası da son kararı gözden geçirir.

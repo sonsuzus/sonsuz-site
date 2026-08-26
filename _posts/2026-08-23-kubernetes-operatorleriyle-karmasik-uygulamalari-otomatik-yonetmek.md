@@ -5,11 +5,11 @@ math: true
 categories: 
   - Program
 tags: 
-  - Kubernetes
-  - Operatör
-  - Go
-  - Otomasyon
-  - DevOps
+  - kubernetes
+  - operatör
+  - go
+  - otomasyon
+  - devops
 ---
 
 Kubernetes, konteynerleri çalıştırma işini oldukça iyi yapar; ancak veritabanı kümesi kurmak, yedek almak, sürüm yükseltmek veya arızalı bir düğümü güvenle değiştirmek gibi uygulamaya özgü işler daha fazla bilgi ister. Kubernetes Operatörü tam burada devreye girer: Bir uzmanın operasyonel bilgisini kodlayarak uygulamanın yaşam döngüsünü sürekli yöneten özel bir denetleyici oluşturur. Kısacası Operatör, YAML dosyalarınızın yanında nöbet tutan, yorulmayan bir SRE yardımcısıdır.

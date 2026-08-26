@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Yapay Zeka
-  - Explainable AI
-  - Makine Öğrenmesi
-  - Python
+  - yapay zeka
+  - explainable aı
+  - makine öğrenmesi
+  - python
 ---
 
 Bir kredi başvurusunun neden reddedildiğini, bir görüntünün neden “kedi” olarak sınıflandırıldığını veya bir tıbbi modelin neden yüksek risk uyarısı verdiğini bilmek isteriz. Klasik makine öğrenmesi modelleri çoğu zaman yüksek doğruluk sunarken karar süreçlerini gizleyen birer “kara kutu” gibi davranır. Explainable AI (XAI), yani Açıklanabilir Yapay Zeka, bu kutunun kapağını aralayarak modelin hangi verilere, hangi yönde ve ne kadar ağırlık vererek karar aldığını anlaşılır hale getiren yöntemler bütünüdür.

@@ -13,6 +13,7 @@ tags:
   - sunucu
 redirect_from:
   - /posts/php_integer/
+image: /img/php_integer-71.png
 ---
 
 Integer bir değer matematik derslerinde gösterilen tamsayılar kümesinin elemanı olan bir sayıdır:
@@ -86,3 +87,6 @@ float 2147484422
 ```
 
 Yukarıdaki PHP dosyasında, birer adet boolean, integer ve float değer sırasıyla $var\_bool, $var\_int ve $var\_float adlı değişkenlere, iki adet string değer ise sırasıyla $var\_str1 ve $var\_str2 adlı değişkenlere atanır. Daha sonra, değişken değerleri sırasıyla ekrana yazılır.
+
+![php_integer-71](/img/php_integer-71.svg)
+

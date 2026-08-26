@@ -10,6 +10,7 @@ tags:
   - pointer
   - bellek yönetimi
   - performans
+image: /img/pointerlar-ve-bellek-15.png
 ---
 
 Bir değişkeni düşünün: çoğu zaman onun değerini kullanırız, fakat bilgisayar açısından asıl önemli soru şudur: Bu değer RAM’in *neresinde* duruyor? İşaretçiler (pointer), verinin kendisini taşımak yerine o verinin bellekteki adresini saklayan değişkenlerdir. Böylece büyük bir diziyi, karmaşık bir nesneyi veya bir yapıyı kopyalamak yerine ona doğrudan erişebiliriz. Bu yaklaşım sistem programlama, oyun motorları, gömülü yazılımlar ve yüksek performanslı uygulamaların görünmez turbo düğmesidir.
@@ -29,6 +30,9 @@ Yani pointer değerin kendisi değil, değere ulaşan rotadır. Bu ayrım özell
 | Bellek tüketimi | Yeni kopya gerekir | Sadece adres saklanır |
 | Orijinali değiştirme | Genellikle etkilemez | Doğrudan etkileyebilir |
 | Güvenlik riski | Daha düşük | Geçersiz adres riski vardır |
+
+![pointerlar-ve-bellek-15](/img/pointerlar-ve-bellek-15.svg)
+
 
 Aşağıdaki C örneği, değer ve adres arasındaki ilişkiyi netleştirir:
 

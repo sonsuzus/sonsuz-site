@@ -8,6 +8,7 @@ tags:
   - algoritmalar
   - hash
   - veri yapıları
+toc: true
 ---
 
 Bir sözlüğün tüm kelimeleri, bir derleyicinin anahtar sözcükleri ya da bir servisin değişmeyen kimlik listesi için hızlı arama yapmak istediğinizi düşünün. Klasik hash tabloları güçlüdür; ancak çakışmalar, boş kovalar ve ek bellek maliyeti taşırlar. Veri kümesi oluşturulduktan sonra değişmeyecekse Minimal Perfect Hash Function (MPHF), her anahtarı çakışmasız biçimde tam gereken indeks aralığına yerleştirerek bu maliyeti dramatik biçimde azaltır.

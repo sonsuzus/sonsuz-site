@@ -14,7 +14,11 @@ tags:
 redirect_from:
   - /posts/php_islemci/
 toc: true
+image: /img/php_islemci-56.png
 ---
+
+![php_islemci-56](/img/php_islemci-56.svg)
+
 
 
 İşlemci aldığı bir veya daha fazla değere işlem yaparak farklı bir değer elde eden bir kavramdır. İşlemci aldığı değer veya değerlerle ifade kavramını oluşturur.

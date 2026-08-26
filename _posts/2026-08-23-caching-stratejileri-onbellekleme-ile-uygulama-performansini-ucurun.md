@@ -10,6 +10,7 @@ tags:
   - redis
   - backend
   - web geliştirme
+toc: true
 ---
 
 Bir uygulama yavaşsa suçlu her zaman veritabanı değildir; bazen aynı veriyi yüzlerce kez hesaplayan veya uzak bir servisten tekrar tekrar isteyen kodlardır. Önbellekleme (caching), sık kullanılan ve üretimi maliyetli sonuçları daha hızlı erişilebilen bir katmanda saklama tekniğidir. Doğru tasarlandığında gecikmeyi azaltır, altyapı maliyetini düşürür ve sistemin yoğun trafik altında daha sakin kalmasını sağlar. Ancak cache, “ekle ve unut” düğmesi değildir: veri güncelliği, bellek sınırları ve tutarlılık dikkatle yönetilmelidir.

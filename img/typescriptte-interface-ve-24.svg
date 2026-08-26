@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9efff"/>
+      <stop offset="100%" stop-color="#c9e6f5"/>
+    </linearGradient>
+    <linearGradient id="arayuz" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7ddff"/>
+      <stop offset="100%" stop-color="#d5c6f4"/>
+    </linearGradient>
+    <linearGradient id="tur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff3db"/>
+      <stop offset="100%" stop-color="#c8e8c3"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#597184" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#597184" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="82" cy="34" r="88" fill="#dcefff" opacity="0.42"/>
+  <circle cx="575" cy="282" r="110" fill="#dff2dc" opacity="0.38"/>
+  <path d="M30 164 C104 132 130 207 203 174 S323 136 383 162 S493 203 611 153" fill="none" stroke="#b8d9dc" stroke-width="2" opacity="0.38"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345263">TypeScript Tür Seçimi</text>
+
+  <g filter="url(#golge)">
+    <rect x="224" y="49" width="192" height="70" rx="20" fill="url(#merkez)" stroke="#9bc8dd"/>
+  </g>
+  <circle cx="252" cy="83" r="17" fill="#f7fcff" stroke="#8dbdd4"/>
+  <path d="M244 84 L250 90 L261 76" fill="none" stroke="#4380a0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#254758">Yapısal Tipleme</text>
+  <text x="320" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426575">Özellik kümesi uyumu</text>
+
+  <path d="M273 120 C234 135 189 141 157 153" fill="none" stroke="#8797b8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="153,151 163,148 159,158" fill="#8797b8"/>
+  <path d="M367 120 C405 135 450 141 483 153" fill="none" stroke="#789f83" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="487,151 477,148 481,158" fill="#789f83"/>
+
+  <g filter="url(#golge)">
+    <rect x="41" y="154" width="224" height="123" rx="18" fill="url(#arayuz)" stroke="#b8a8e0"/>
+  </g>
+  <rect x="58" y="171" width="42" height="30" rx="10" fill="#f7f3ff" stroke="#b7a4dc"/>
+  <path d="M70 179 L64 186 L70 193 M87 179 L93 186 L87 193" fill="none" stroke="#755aa7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e3b76">interface</text>
+  <text x="112" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685487">Nesne sözleşmesi</text>
+
+  <line x1="62" y1="216" x2="244" y2="216" stroke="#c2b5df"/>
+  <circle cx="70" cy="233" r="4" fill="#846bb3"/>
+  <text x="82" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56446f">extends ile büyür</text>
+  <circle cx="70" cy="255" r="4" fill="#846bb3"/>
+  <text x="82" y="259" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56446f">Bildirim birleşimi</text>
+
+  <g filter="url(#golge)">
+    <rect x="375" y="154" width="224" height="123" rx="18" fill="url(#tur)" stroke="#aacfa9"/>
+  </g>
+  <rect x="392" y="171" width="42" height="30" rx="10" fill="#f6fcf4" stroke="#a7cca5"/>
+  <path d="M402 180 H424 M402 187 H417 M402 194 H422" fill="none" stroke="#548558" stroke-width="2" stroke-linecap="round"/>
+  <text x="446" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365f3b">type</text>
+  <text x="446" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7551">Tür araç kutusu</text>
+
+  <line x1="396" y1="216" x2="578" y2="216" stroke="#b4d4b2"/>
+  <circle cx="404" cy="233" r="4" fill="#609563"/>
+  <text x="416" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426b46">Union ve tuple</text>
+  <circle cx="404" cy="255" r="4" fill="#609563"/>
+  <text x="416" y="259" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426b46">Kesişim ve koşul</text>
+
+  <path d="M265 248 C282 257 292 266 303 281" fill="none" stroke="#8b99a8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="306,285 297,278 306,275" fill="#8b99a8"/>
+  <path d="M375 248 C358 257 348 266 337 281" fill="none" stroke="#8b99a8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="334,285 334,275 343,278" fill="#8b99a8"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="235" y="278" width="170" height="31" rx="14" fill="#fffdf5" stroke="#dfd5aa"/>
+  </g>
+  <text x="320" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#665b38">Çalışma zamanı: sıfır maliyet</text>
+</svg>

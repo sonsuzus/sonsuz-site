@@ -5,8 +5,8 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - IOI
-  - ICPC
+  - ıoı
+  - ıcpc
   - algoritmalar
   - problem çözme
   - yarışma programlama

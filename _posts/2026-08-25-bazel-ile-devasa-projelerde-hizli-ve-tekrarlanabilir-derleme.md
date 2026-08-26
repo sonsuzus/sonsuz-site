@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Bazel
-  - Derleme Sistemleri
-  - Yazılım Mimarisi
+  - bazel
+  - derleme sistemleri
+  - yazılım mimarisi
+toc: true
 ---
 
 Büyük bir yazılım projesinde derleme süresi, kahve molasından uzun sürmeye başladıysa Bazel ile tanışma vakti gelmiş olabilir. Google tarafından geliştirilen Bazel; C++, Java, Python, Go ve daha birçok dili aynı depoda yönetebilen, bağımlılıkları açıkça tanımlayan ve sonuçları önbelleğe alan modern bir derleme sistemidir. Temel hedefi basittir: Makineniz, işletim sisteminiz veya ekip arkadaşınız değişse bile aynı kaynak kodundan aynı çıktıyı hızlı biçimde üretmek.

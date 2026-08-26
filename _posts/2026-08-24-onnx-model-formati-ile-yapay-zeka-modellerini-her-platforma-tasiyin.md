@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - ONNX
-  - Makine Öğrenmesi
-  - Model Dağıtımı
+  - onnx
+  - makine öğrenmesi
+  - model dağıtımı
+toc: true
 ---
 
 Bir yapay zeka modelini eğitmek çoğu zaman işin heyecanlı kısmıdır; asıl macera ise modeli üretime taşırken başlar. PyTorch ile eğitilmiş bir modeli Java tabanlı bir serviste, C# masaüstü uygulamasında veya edge cihazda çalıştırmak istediğinizde framework bağımlılıkları hız kesebilir. ONNX (Open Neural Network Exchange), modeller için ortak bir dil sunarak bu taşınabilirlik problemini çözmeyi hedefleyen açık standarttır.

@@ -5,10 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Apache Avro
-  - Veri Serileştirme
-  - Şema
-  - Kafka
+  - apache avro
+  - veri serileştirme
+  - şema
+  - kafka
+toc: true
 ---
 
 Dağıtık sistemlerde servislerin birbiriyle konuşması çoğu zaman “JSON gönder, mutlu ol” kadar basit görünür. Ancak milyonlarca olayın aktığı Kafka hatlarında, veri depolarında veya mikroservis ağlarında metin tabanlı ve şemasız veri hızla maliyetli hâle gelir. Apache Avro; veriyi ikili biçimde kompakt taşıyan, yapısını ise açık bir şema ile tanımlayan bir serileştirme formatıdır. En önemli numarası, yalnızca alan adlarını değil, verinin zaman içindeki değişimini de yönetilebilir kılmasıdır.

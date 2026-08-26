@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8dcf7"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52667d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52667d" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="319" cy="157" r="132" fill="#d9ecf2" opacity="0.34"/>
+  <circle cx="319" cy="157" r="101" fill="#ffffff" opacity="0.38"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40546a">TypeScript Tip Daraltma</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718297">Çalışma zamanı kanıtı → güvenli işlem</text>
+
+  <path d="M269 143 C232 117 207 94 177 82" fill="none" stroke="#7996ad" stroke-width="2"/>
+  <polygon points="177,82 186,81 181,89" fill="#7996ad"/>
+
+  <path d="M371 143 C408 117 433 94 464 82" fill="none" stroke="#7996ad" stroke-width="2"/>
+  <polygon points="464,82 455,81 460,89" fill="#7996ad"/>
+
+  <path d="M271 183 C232 209 207 228 177 239" fill="none" stroke="#7996ad" stroke-width="2"/>
+  <polygon points="177,239 182,231 186,240" fill="#7996ad"/>
+
+  <path d="M369 183 C408 209 433 228 464 239" fill="none" stroke="#7996ad" stroke-width="2"/>
+  <polygon points="464,239 455,240 460,231" fill="#7996ad"/>
+
+  <g filter="url(#golge)">
+    <rect x="248" y="119" width="143" height="76" rx="19" fill="url(#merkez)" stroke="#aac4df"/>
+  </g>
+  <circle cx="276" cy="151" r="15" fill="#ffffff" opacity="0.82"/>
+  <path d="M270 147 L276 142 L282 147 L282 156 L270 156 Z" fill="none" stroke="#6286a8" stroke-width="1.7" stroke-linejoin="round"/>
+  <text x="299" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#344c65">Birleşim Tipi</text>
+  <text x="299" y="167" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587088">string | number</text>
+  <text x="319" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49647a">Koruma ile filtrele</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="52" y="55" width="142" height="58" rx="15" fill="#fff4d9" stroke="#ebd49b"/>
+  </g>
+  <rect x="66" y="68" width="39" height="23" rx="8" fill="#f7ca70"/>
+  <text x="85.5" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#704d17">typeof</text>
+  <text x="116" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6a5734">İlkel değer</text>
+  <text x="116" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d725c">string seçildi</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="446" y="55" width="142" height="58" rx="15" fill="#eee5fb" stroke="#d0bde8"/>
+  </g>
+  <rect x="459" y="68" width="58" height="23" rx="8" fill="#c8a9e8"/>
+  <text x="488" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#543d78">instanceof</text>
+  <text x="527" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#625474">Sınıf örneği</text>
+  <text x="527" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c6d8e">Kedi seçildi</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="52" y="210" width="142" height="58" rx="15" fill="#ddf4ed" stroke="#acdccc"/>
+  </g>
+  <rect x="66" y="223" width="25" height="23" rx="8" fill="#77c8ae"/>
+  <text x="78.5" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245d52">in</text>
+  <text x="102" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#406b61">Özellik var mı?</text>
+  <text x="102" y="249" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668178">Araç seçildi</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="446" y="210" width="142" height="58" rx="15" fill="#ffe5e5" stroke="#efbbbb"/>
+  </g>
+  <path d="M465 241 L472 225 L479 241 Z" fill="#e69292"/>
+  <text x="493" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765052">Özel koruma</text>
+  <text x="493" y="249" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d686a">değer is Kullanıcı</text>
+
+  <path d="M209 84 L229 84" stroke="#b7cad6" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <path d="M411 84 L431 84" stroke="#b7cad6" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <path d="M209 240 L229 240" stroke="#b7cad6" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <path d="M411 240 L431 240" stroke="#b7cad6" stroke-width="1.5" stroke-dasharray="3 4"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="236" y="276" width="168" height="27" rx="13.5" fill="#ffffff" stroke="#d4e1e7"/>
+  </g>
+  <circle cx="255" cy="289.5" r="6" fill="#70b79c"/>
+  <path d="M252 289 L254.5 292 L259 286.5" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="319" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46665f">Doğrulanmış ve güvenli tip</text>
+</svg>

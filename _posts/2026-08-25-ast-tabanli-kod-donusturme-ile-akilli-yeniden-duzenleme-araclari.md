@@ -5,11 +5,12 @@ math: true
 categories: 
   - Proje
 tags: 
-  - AST
-  - Kod Dönüştürme
-  - Derleyici
-  - JavaScript
-  - Otomasyon
+  - ast
+  - kod dönüştürme
+  - derleyici
+  - javascript
+  - otomasyon
+toc: true
 ---
 
 Kaynak kodunu metin olarak bul-değiştir yapmak ilk bakışta caziptir; ancak bir fonksiyon adını yorum satırında, metin içinde veya farklı bir kapsamda yanlışlıkla değiştirmek saniyeler içinde karmaşaya dönüşebilir. AST (Abstract Syntax Tree / Soyut Sözdizim Ağacı) tabanlı dönüşüm araçları, kodu karakter dizisi olarak değil, anlamlı program yapıları olarak ele alır. Böylece güvenli yeniden adlandırma, modern sözdizimine geçiş ve ekip standartlarına otomatik uyum mümkün olur.

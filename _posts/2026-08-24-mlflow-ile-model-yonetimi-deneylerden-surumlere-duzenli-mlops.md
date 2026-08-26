@@ -5,10 +5,10 @@ math: true
 categories: 
   - Program
 tags: 
-  - MLflow
-  - MLOps
-  - Makine Öğrenmesi
-  - Model Sürümleme
+  - mlflow
+  - mlops
+  - makine öğrenmesi
+  - model sürümleme
 ---
 
 Bir makine öğrenmesi projesinde zor olan yalnızca yüksek doğruluk üreten modeli bulmak değildir; hangi veriyle, hangi parametrelerle ve hangi kod sürümüyle üretildiğini aylar sonra da kanıtlayabilmektir. MLflow, deney kayıtlarını, model dosyalarını ve dağıtıma uygun sürümleri aynı izlenebilir akışta toplayarak bu karmaşayı yönetir. Böylece “not defterimde çalışıyordu” cümlesi, yerini ölçülebilir ve tekrarlanabilir bir sürece bırakır.

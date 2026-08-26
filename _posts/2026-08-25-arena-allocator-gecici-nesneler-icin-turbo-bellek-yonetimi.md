@@ -9,6 +9,7 @@ tags:
   - bellek yönetimi
   - c++
   - performans
+toc: true
 ---
 
 Modern yazılımlarda performans sorunlarının önemli bir bölümü işlemciden değil, bellek tahsisinden doğar. Her geçici nesne için `malloc`, `new` ya da benzeri bir çağrı yapmak; ayırıcıyı kilitleme, uygun boş blok bulma ve parçalanmayı yönetme gibi ek maliyetler yaratır. Arena allocator yaklaşımı bu maliyeti dramatik biçimde azaltır: Büyük bir bellek bölgesi ayırır, küçük nesneleri bu bölge içinde sırayla yerleştirir ve iş bittiğinde hepsini tek hamlede temizler.

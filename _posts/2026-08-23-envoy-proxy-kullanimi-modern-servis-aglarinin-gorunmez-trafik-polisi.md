@@ -5,9 +5,10 @@ math: true
 categories: 
   - Program
 tags: 
-  - Envoy Proxy
-  - Mikroservisler
-  - Service Mesh
+  - envoy proxy
+  - mikroservisler
+  - service mesh
+toc: true
 ---
 
 Mikroservis mimarisinde her servis yalnızca iş mantığını çözmez; istek yönlendirme, TLS, yeniden deneme, gözlemlenebilirlik ve hata toleransı gibi ağ sorumluluklarıyla da uğraşır. Envoy Proxy, bu tekrar eden görevleri uygulama kodundan ayıran yüksek performanslı bir L7 proxy'dir. Basitçe söylemek gerekirse, servislerin önünde veya yanında duran, trafiği akıllıca yöneten görünmez bir trafik polisidir.

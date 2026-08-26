@@ -9,6 +9,7 @@ tags:
   - group by
   - veritabanı
 toc: true
+image: /img/sql-toplama-fonksiyonlari-52.png
 ---
 
 Bir e-ticaret veritabanında binlerce sipariş olduğunu düşünün. Satırları tek tek incelemek yerine “Kaç sipariş aldık?”, “Toplam ciro nedir?” veya “En çok hangi kategori kazandırdı?” gibi sorular sormak isteriz. SQL toplama fonksiyonları ve `GROUP BY`, ham verileri anlamlı özetlere dönüştürerek bu sorulara hızlı cevaplar verir.
@@ -115,3 +116,6 @@ FROM siparisler;
 Ancak sıfır ile bilinmeyen değer aynı şey değildir. Bu dönüşüm raporun anlamını değiştirebileceğinden iş kuralına göre uygulanmalıdır.
 
 Sonuç olarak toplama fonksiyonları veriyi özetler, `GROUP BY` bu özeti kategorilere böler, `WHERE` ham veriyi ve `HAVING` oluşan grupları süzer. Bu araçlar doğru kullanıldığında SQL, yalnızca kayıt saklayan bir dil olmaktan çıkar ve güçlü bir raporlama motoruna dönüşür.
+
+![sql-toplama-fonksiyonlari-52](/img/sql-toplama-fonksiyonlari-52.svg)
+

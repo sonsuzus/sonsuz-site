@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef9e7"/>
+      <stop offset="100%" stop-color="#fdebd0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eafaf1"/>
+      <stop offset="100%" stop-color="#d5f5e3"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4ecf7"/>
+      <stop offset="100%" stop-color="#e8daef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdedec"/>
+      <stop offset="100%" stop-color="#fadbd8"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">PHP Döngü Yapıları</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="130" width="150" height="50" rx="12" fill="url(#boxGrad1)" stroke="#85c1e9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Döngüler</text>
+  <text x="320" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">Koşula bağlı tekrar</text>
+
+  <!-- while döngüsü - sol üst -->
+  <rect x="40" y="55" width="150" height="60" rx="10" fill="url(#boxGrad2)" stroke="#f0b27a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="115" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7e5109">while</text>
+  <text x="115" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9c640c">Koşul doğru iken</text>
+  <text x="115" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9c640c">çalışmaya devam</text>
+
+  <!-- while alternatif - sol alt -->
+  <rect x="40" y="210" width="150" height="60" rx="10" fill="url(#boxGrad2)" stroke="#f0b27a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="115" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7e5109">while : endwhile</text>
+  <text x="115" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9c640c">Alternatif sözdizimi</text>
+  <text x="115" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9c640c">aynı mantık</text>
+
+  <!-- Koşul kontrolü - sağ üst -->
+  <rect x="450" y="55" width="150" height="60" rx="10" fill="url(#boxGrad3)" stroke="#82e0aa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="525" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#145a32">Koşul Kontrolü</text>
+  <text x="525" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1e8449">Her tekrar başında</text>
+  <text x="525" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1e8449">doğru / yanlış</text>
+
+  <!-- İşlem satırları - sağ alt -->
+  <rect x="450" y="210" width="150" height="60" rx="10" fill="url(#boxGrad4)" stroke="#bb8fce" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="525" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a235a">İşlem Satırları</text>
+  <text x="525" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6c3483">Döngü gövdesi</text>
+  <text x="525" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6c3483">tekrar eden kod</text>
+
+  <!-- Örnek çıktı - alt orta -->
+  <rect x="230" y="250" width="180" height="45" rx="10" fill="url(#boxGrad5)" stroke="#f1948a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#78281f">Örnek Çıktı</text>
+  <text x="320" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#922b21">1 2 3 4 5 6 7 8 9 10</text>
+
+  <!-- Oklar - merkezden while -->
+  <path d="M 245 145 L 195 145 L 195 90" stroke="#5d6d7e" stroke-width="1.8" fill="none"/>
+  <polygon points="195,82 190,92 200,92" fill="#5d6d7e"/>
+
+  <!-- Oklar - merkezden while alternatif -->
+  <path d="M 245 165 L 195 165 L 195 235" stroke="#5d6d7e" stroke-width="1.8" fill="none"/>
+  <polygon points="195,243 190,233 200,233" fill="#5d6d7e"/>
+
+  <!-- Oklar - merkezden koşul kontrolü -->
+  <path d="M 395 145 L 445 145 L 445 90" stroke="#5d6d7e" stroke-width="1.8" fill="none"/>
+  <polygon points="445,82 440,92 450,92" fill="#5d6d7e"/>
+
+  <!-- Oklar - merkezden işlem satırları -->
+  <path d="M 395 165 L 445 165 L 445 235" stroke="#5d6d7e" stroke-width="1.8" fill="none"/>
+  <polygon points="445,243 440,233 450,233" fill="#5d6d7e"/>
+
+  <!-- Koşul kontrolünden işlem satırlarına ok -->
+  <path d="M 525 120 L 525 205" stroke="#82e0aa" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="525,213 521,203 529,203" fill="#82e0aa"/>
+
+  <!-- while'dan örnek çıktıya ok -->
+  <path d="M 115 275 L 225 275" stroke="#f0b27a" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="233,275 223,271 223,279" fill="#f0b27a"/>
+
+  <!-- while alternatiften örnek çıktıya ok -->
+  <path d="M 195 270 L 225 270" stroke="#f0b27a" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="233,270 223,266 223,274" fill="#f0b27a"/>
+
+  <!-- İşlem satırlarından örnek çıktıya ok -->
+  <path d="M 525 275 L 415 275" stroke="#bb8fce" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="407,275 417,271 417,279" fill="#bb8fce"/>
+
+  <!-- Etiket: koşul doğru -->
+  <text x="180" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#7f8c8d">koşul</text>
+
+  <!-- Etiket: tekrar -->
+  <text x="470" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#7f8c8d">tekrar</text>
+
+  <!-- Döngü oku (dairesel) -->
+  <path d="M 525 100 C 580 100 580 180 525 180" stroke="#e74c3c" stroke-width="1.2" fill="none" stroke-dasharray="3,3"/>
+  <polygon points="517,180 527,176 527,184" fill="#e74c3c"/>
+  <text x="565" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#e74c3c" transform="rotate(90, 565, 145)">döngü</text>
+</svg>

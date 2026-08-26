@@ -7,8 +7,9 @@ categories:
 tags: 
   - tree-sitter
   - kod ayrıştırma
-  - AST
+  - ast
   - programlama dilleri
+toc: true
 ---
 
 Bir kod editörünün yazarken hataları anında kırmızıyla işaretlemesi, fonksiyonları katlaması veya imlecin altındaki yapıyı seçmesi sihir değildir: arka planda kodu anlayan bir ayrıştırıcı çalışır. Tree-sitter, bu işi onlarca dil için hızlı, dayanıklı ve artımlı biçimde yapan açık kaynaklı bir ayrıştırma kütüphanesidir. Özellikle eksik, hatalı ya da henüz yazılmakta olan kodla başa çıkabilmesi onu modern editörler, analiz araçları ve geliştirici deneyimi projeleri için güçlü bir aday yapar.

@@ -9,6 +9,7 @@ tags:
   - derin öğrenme
   - aktivasyon fonksiyonları
 toc: true
+image: /img/aktivasyon-fonksiyonlari-yapay-66.png
 ---
 
 Yapay sinir ağları ilk bakışta katman katman matris çarpımı yapan hesap makineleri gibi görünür. Fakat bu yapı tek başına karmaşık karar sınırları öğrenemez: Ne kadar çok doğrusal katman eklenirse eklensin, sonuç hâlâ doğrusal bir dönüşümdür. Aktivasyon fonksiyonları tam bu noktada devreye girer; nöronların çıktısına kıvrım, eşik ve seçicilik katarak ağın görüntü tanıma, dil işleme veya tahmin gibi zor problemleri çözmesini sağlar.
@@ -41,6 +42,9 @@ $$\tanh(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$$
 | Sigmoid | $(0, 1)$ | Olasılık yorumuna uygundur | Kaybolan gradyan, sıfır merkezli değildir |
 | Tanh | $(-1, 1)$ | Sıfır merkezli çıktı | Doygunluk ve kaybolan gradyan |
 | ReLU | $[0, \infty)$ | Hızlı ve seyrek aktivasyon | Ölü nöronlar |
+
+![aktivasyon-fonksiyonlari-yapay-66](/img/aktivasyon-fonksiyonlari-yapay-66.svg)
+
 
 ## ReLU: Basit Ama Etkili
 

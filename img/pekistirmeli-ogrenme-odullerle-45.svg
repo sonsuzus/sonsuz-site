@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#c6dafa"/>
+    </linearGradient>
+    <linearGradient id="envGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff3e5"/>
+      <stop offset="100%" stop-color="#c8e8d4"/>
+    </linearGradient>
+    <linearGradient id="qGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6e4ff"/>
+      <stop offset="100%" stop-color="#e9d3f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#60758c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60758c" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="156" r="122" fill="#ffffff" opacity="0.42"/>
+  <circle cx="320" cy="156" r="104" fill="none" stroke="#c9dce4" stroke-width="1.5" stroke-dasharray="5 7" opacity="0.7"/>
+
+  <text x="28" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556b">PEKİŞTİRMELİ ÖĞRENME DÖNGÜSÜ</text>
+  <text x="28" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708294">Deneyim → değer → strateji</text>
+
+  <!-- Q Öğrenme -->
+  <rect x="32" y="100" width="134" height="112" rx="18" fill="url(#qGrad)" filter="url(#shadow)"/>
+  <rect x="45" y="114" width="47" height="23" rx="11" fill="#ffffff" opacity="0.65"/>
+  <text x="56" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#704a80">Q</text>
+  <text x="48" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#59425f">Değer güncelleme</text>
+  <line x1="48" y1="172" x2="150" y2="172" stroke="#c7aeca" stroke-width="1"/>
+  <text x="48" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#705a76">ödül + gelecek</text>
+
+  <!-- connection Q to Agent -->
+  <path d="M166 156 C180 156, 184 156, 194 156" fill="none" stroke="#9b7fa4" stroke-width="2.2"/>
+  <polygon points="194,156 185,151 185,161" fill="#9b7fa4"/>
+
+  <!-- Agent -->
+  <rect x="204" y="104" width="151" height="105" rx="22" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <circle cx="231" cy="132" r="14" fill="#ffffff" opacity="0.76"/>
+  <circle cx="227" cy="130" r="3" fill="#52759d"/>
+  <circle cx="236" cy="130" r="3" fill="#52759d"/>
+  <path d="M225 138 Q231 143 237 138" fill="none" stroke="#52759d" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="254" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385a7c">AJAN</text>
+  <text x="222" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c6d8e">Durumdan karar üretir</text>
+  <rect x="222" y="179" width="113" height="17" rx="8.5" fill="#ffffff" opacity="0.54"/>
+  <text x="241" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416383">Politika π</text>
+
+  <!-- action to environment -->
+  <path d="M355 135 C372 125, 380 122, 393 122" fill="none" stroke="#6688a5" stroke-width="2.2"/>
+  <polygon points="393,122 384,117 386,127" fill="#6688a5"/>
+  <rect x="355" y="105" width="55" height="20" rx="10" fill="#ffffff" filter="url(#softShadow)"/>
+  <text x="366" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52718d">Eylem</text>
+
+  <!-- Environment -->
+  <rect x="402" y="70" width="177" height="112" rx="22" fill="url(#envGrad)" filter="url(#shadow)"/>
+  <text x="425" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35684e">ORTAM</text>
+  <path d="M425 116 h18 v14 h15 v-14 h18 v38 h-18 v-11 h-15 v11 h-18z" fill="#ffffff" opacity="0.67"/>
+  <path d="M493 120 l12 -9 12 9 v28 h-24z" fill="#ffffff" opacity="0.67"/>
+  <circle cx="548" cy="132" r="14" fill="#ffffff" opacity="0.64"/>
+  <path d="M541 133 l5 5 10 -12" fill="none" stroke="#4a936d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="425" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47765d">Yeni durum üretir</text>
+
+  <!-- Feedback return -->
+  <path d="M490 182 C475 226, 400 244, 334 229 C303 222, 282 215, 269 209" fill="none" stroke="#db8a67" stroke-width="2.2"/>
+  <polygon points="269,209 277,217 281,207" fill="#db8a67"/>
+  <rect x="379" y="211" width="82" height="21" rx="10.5" fill="#fff4e9" filter="url(#softShadow)"/>
+  <text x="391" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ae6045">Ödül r</text>
+
+  <!-- Feedback state -->
+  <path d="M418 182 C406 205, 384 215, 359 216" fill="none" stroke="#62a789" stroke-width="2.2"/>
+  <polygon points="359,216 367,221 366,211" fill="#62a789"/>
+  <rect x="363" y="190" width="66" height="20" rx="10" fill="#ffffff" filter="url(#softShadow)"/>
+  <text x="374" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47765d">Durum</text>
+
+  <!-- Bottom choice panel -->
+  <rect x="164" y="251" width="321" height="47" rx="16" fill="#ffffff" opacity="0.88" filter="url(#softShadow)"/>
+  <text x="183" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#536675">Denge</text>
+  <rect x="244" y="260" width="92" height="27" rx="13.5" fill="#fff0d9"/>
+  <text x="263" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a46b31">Keşif ε</text>
+  <path d="M339 274 H360" fill="none" stroke="#9baab4" stroke-width="1.8"/>
+  <polygon points="360,274 353,270 353,278" fill="#9baab4"/>
+  <rect x="364" y="260" width="101" height="27" rx="13.5" fill="#e2f1ff"/>
+  <text x="379" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42779c">Sömürü</text>
+
+  <!-- Accent dots -->
+  <circle cx="601" cy="58" r="5" fill="#b8d9ef"/>
+  <circle cx="615" cy="74" r="3" fill="#c9e7c8"/>
+  <circle cx="589" cy="78" r="3" fill="#e7c8df"/>
+</svg>

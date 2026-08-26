@@ -9,6 +9,7 @@ tags:
   - sinir ağları
   - backpropagation
 toc: true
+image: /img/geri-yayilim-hatalardan-79.png
 ---
 
 Bir sinir ağı ilk çalıştığında genellikle pek parlak değildir: kediyi köpek, 7’yi 1, hatta kahveyi çorba sanabilir. Onu zamanla iyileştiren mekanizma geri yayılımdır (backpropagation). Bu algoritma, ağın ürettiği hatayı çıkış katmanından girişe doğru dağıtır; her ağırlığın hataya ne kadar katkı yaptığını zincir kuralıyla hesaplar ve ağırlıkları doğru yönde günceller.
@@ -43,6 +44,9 @@ Amaç yalnızca hatayı ölçmek değil, $L$ değerini küçültecek ağırlıkl
 | Kayıp fonksiyonu | Tahminin başarısızlığını ölçme | Öğrenilecek hedefi belirler |
 | Gradyan | Hatanın değişim yönü | Güncellemenin pusulasıdır |
 | Geri yayılım | Gradyanı katmanlara dağıtma | Suçun ağırlıklara paylaştırılmasıdır |
+
+![geri-yayilim-hatalardan-79](/img/geri-yayilim-hatalardan-79.svg)
+
 
 ## Zincir kuralı neden her şeyi çözer?
 

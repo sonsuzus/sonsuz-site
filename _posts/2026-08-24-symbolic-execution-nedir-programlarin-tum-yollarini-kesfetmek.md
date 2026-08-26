@@ -8,6 +8,7 @@ tags:
   - symbolic execution
   - yazılım testi
   - program analizi
+toc: true
 ---
 
 Bir programı test ederken birkaç örnek girdi vermek çoğu zaman yeterli görünür: `0`, `42`, belki negatif bir sayı... Ancak bu yaklaşım, kodun karanlıkta kalan dallarını kolayca kaçırır. Symbolic Execution (sembolik çalıştırma), somut değerler yerine sembolik değişkenlerle ilerleyerek programın ulaşılabilir tüm mantıksal yollarını analiz etmeyi amaçlayan gelişmiş bir test ve hata bulma tekniğidir. Kısacası programı tek tek örneklerle değil, olası girdilerin matematiksel temsilcileriyle yürütür.

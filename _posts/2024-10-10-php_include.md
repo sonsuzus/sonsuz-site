@@ -11,6 +11,7 @@ tags:
   - web
 redirect_from:
   - /posts/php_include/
+image: /img/php_include-88.png
 ---
 
 
@@ -23,6 +24,9 @@ Dahil edilecek dosyalar, dosya yolu gösteren dizin tanımlanmış ise dosya yol
 Eğer bir yol tanımlaması yapılmışsa, include\_path değeri dikkate alınmaz.
 
 require() deyimi ile include() deyimi ile aynı işlemi gerçekleştirir. Tek farkı hata durumunda E\_COMPILE\_ERROR seviyesinde bir hata vermesidir. seviyesinden ölümcül bir hata vermesi dışında include() deyimi ile aynıdır. include() deyiminin sadece bir uyarı (E\_WARNING) vererek çalışmayı sürdürdüğü durumda require() deyimi PHP kodlarının durmasına neden olur.
+
+![php_include-88](/img/php_include-88.svg)
+
 ``
 include\_once() deyimi ile include() deyimi ile aynı işlemi gerçekleştirir. Tek farkı, önceden dahil edilmiş olan dosyaların tekrar dahil edilmemesidir. Böylelikle, bir dosyanın iki kez dahil edilmesi önlenmiş olur.
 

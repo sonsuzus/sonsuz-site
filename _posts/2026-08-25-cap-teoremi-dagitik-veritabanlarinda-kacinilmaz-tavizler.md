@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - CAP Teoremi
-  - Dağıtık Sistemler
-  - Veritabanı
-  - Tutarlılık
+  - cap teoremi
+  - dağıtık sistemler
+  - veritabanı
+  - tutarlılık
 ---
 
 Dağıtık veritabanları, veriyi birden fazla makineye yayarak ölçeklenebilirlik ve arıza toleransı sağlar. Ancak sistem farklı sunuculara, ağ bağlantılarına ve gecikmelere dağıldığında tek bir veritabanı gibi davranması zorlaşır. CAP Teoremi tam bu noktadaki temel gerçeği anlatır: Ağ bölünmesi yaşanırken **tutarlılık**, **erişilebilirlik** ve **bölünme toleransının** üçünü aynı anda eksiksiz sunamazsınız.

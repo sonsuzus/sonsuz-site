@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect x="0" y="0" width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#1e3a5f">PHP if Yapısı</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">Koşula Bağlı İşlem Akışı</text>
+
+  <!-- Giriş: İşlem Satırı -->
+  <rect x="40" y="75" width="130" height="44" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)"/>
+  <text x="105" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">İşlem Satırı</text>
+  <text x="105" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3b5a7a">(noktalı virgül ;)</text>
+
+  <!-- Grup Kutusu -->
+  <rect x="40" y="135" width="130" height="44" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)"/>
+  <text x="105" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">İşlem Grubu</text>
+  <text x="105" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3b5a7a">( { ... } )</text>
+
+  <!-- Ok: İşlem Satırı -> İf -->
+  <path d="M 170 97 L 230 97" stroke="#4a6a8a" stroke-width="2" fill="none"/>
+  <polygon points="232,97 222,92 222,102" fill="#4a6a8a"/>
+
+  <!-- Ok: İşlem Grubu -> İf -->
+  <path d="M 170 157 L 230 157" stroke="#4a6a8a" stroke-width="2" fill="none"/>
+  <polygon points="232,157 222,152 222,162" fill="#4a6a8a"/>
+
+  <!-- if Kutusu -->
+  <rect x="240" y="85" width="140" height="50" rx="12" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="310" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#78350f">if (ifade)</text>
+  <text x="310" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#92400e">koşul değerlendir</text>
+
+  <!-- Koşul sonucu etiketi -->
+  <text x="310" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#4a6a8a">Sonuç</text>
+
+  <!-- TRUE yolu -->
+  <path d="M 310 135 L 310 175" stroke="#059669" stroke-width="2" fill="none"/>
+  <polygon points="310,178 305,168 315,168" fill="#059669"/>
+  <text x="322" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#059669" font-weight="bold">TRUE</text>
+
+  <!-- FALSE yolu -->
+  <path d="M 380 110 L 520 110 L 520 230" stroke="#dc2626" stroke-width="2" fill="none"/>
+  <polygon points="520,233 515,223 525,223" fill="#dc2626"/>
+  <text x="530" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#dc2626" font-weight="bold">FALSE</text>
+
+  <!-- TRUE işlem kutusu -->
+  <rect x="240" y="185" width="140" height="44" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)"/>
+  <text x="310" y="204" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#064e3b">İşlem Satırı</text>
+  <text x="310" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#047857">çalıştır</text>
+
+  <!-- FALSE işlem kutusu -->
+  <rect x="440" y="210" width="160" height="44" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)"/>
+  <text x="520" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#831843">Dikkate Alma</text>
+  <text x="520" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9d174d">işlem yapılmaz</text>
+
+  <!-- TRUE işleminden çıkış -->
+  <path d="M 310 229 L 310 260 L 520 260" stroke="#059669" stroke-width="2" fill="none"/>
+
+  <!-- Birleşim noktası -->
+  <circle cx="520" cy="260" r="4" fill="#4a6a8a"/>
+
+  <!-- Devam akışı -->
+  <path d="M 520 260 L 520 280 L 590 280" stroke="#4a6a8a" stroke-width="2" fill="none"/>
+  <polygon points="593,280 583,275 583,285" fill="#4a6a8a"/>
+
+  <!-- Devam kutusu -->
+  <rect x="560" y="260" width="60" height="40" rx="8" fill="url(#boxGrad5)" filter="url(#shadow)"/>
+  <text x="590" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#3730a3">Devam</text>
+
+  <!-- Örnek alt bilgi -->
+  <rect x="40" y="270" width="180" height="36" rx="8" fill="#ffffff" opacity="0.7" filter="url(#shadow)"/>
+  <text x="130" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#475569">Örnek: $deg01 &gt; $deg02</text>
+  <text x="130" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#64748b">TRUE ise echo çalışır</text>
+
+  <!-- Dekoratif çizgiler -->
+  <line x1="40" y1="65" x2="600" y2="65" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="40" y1="255" x2="600" y2="255" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/>
+</svg>

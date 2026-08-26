@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="memory" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d9edff"/>
+      <stop offset="100%" stop-color="#dff5df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#69839b" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52758a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="58" r="58" fill="#d8eeff" opacity="0.42"/>
+  <circle cx="572" cy="276" r="76" fill="#dff3db" opacity="0.5"/>
+
+  <text x="38" y="38" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426176" font-weight="700">ARDIŞIK BELLEK</text>
+  <text x="38" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e8795">int sayilar[5] · her blok 4 bayt</text>
+
+  <g filter="url(#shadow)">
+    <rect x="39" y="88" width="512" height="104" rx="18" fill="#ffffff"/>
+    <rect x="54" y="109" width="94" height="62" rx="11" fill="#d5eaff"/>
+    <rect x="151" y="109" width="94" height="62" rx="11" fill="#d9f0ff"/>
+    <rect x="248" y="109" width="94" height="62" rx="11" fill="#daf4ed"/>
+    <rect x="345" y="109" width="94" height="62" rx="11" fill="#e2f3dd"/>
+    <rect x="442" y="109" width="94" height="62" rx="11" fill="#e8f2d9"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="101" y="130" fill="#426176" font-weight="700">[0]</text>
+    <text x="101" y="151" fill="#284b65">72</text>
+    <text x="198" y="130" fill="#426176" font-weight="700">[1]</text>
+    <text x="198" y="151" fill="#284b65">85</text>
+    <text x="295" y="130" fill="#426176" font-weight="700">[2]</text>
+    <text x="295" y="151" fill="#285b55">91</text>
+    <text x="392" y="130" fill="#426176" font-weight="700">[3]</text>
+    <text x="392" y="151" fill="#385e41">64</text>
+    <text x="489" y="130" fill="#426176" font-weight="700">[4]</text>
+    <text x="489" y="151" fill="#4c6533">78</text>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#69808d">
+    <text x="101" y="211">B + 0×S</text>
+    <text x="198" y="211">B + 1×S</text>
+    <text x="295" y="211">B + 2×S</text>
+    <text x="392" y="211">B + 3×S</text>
+    <text x="489" y="211">B + 4×S</text>
+  </g>
+
+  <g stroke="#80a8bf" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.8">
+    <line x1="101" y1="174" x2="101" y2="199"/>
+    <line x1="198" y1="174" x2="198" y2="199"/>
+    <line x1="295" y1="174" x2="295" y2="199"/>
+    <line x1="392" y1="174" x2="392" y2="199"/>
+    <line x1="489" y1="174" x2="489" y2="199"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="65" y="242" width="135" height="45" rx="14" fill="#ddecff"/>
+    <rect x="253" y="237" width="134" height="55" rx="14" fill="#d8f3e9"/>
+    <rect x="444" y="242" width="151" height="45" rx="14" fill="#fff0cf"/>
+  </g>
+
+  <text x="132" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365977">İşaretçi p</text>
+  <text x="132" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52728b">başlangıç: B</text>
+
+  <text x="320" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35665a">p + i</text>
+  <text x="320" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527b70">i × sizeof(int)</text>
+
+  <text x="519" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7a6330">Sınır sonu</text>
+  <text x="519" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#896f3d">dizi + adet</text>
+
+  <path d="M200 264 C218 264 228 264 243 264" fill="none" stroke="#6696b5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="245,264 237,259 237,269" fill="#6696b5"/>
+  <path d="M388 264 C408 264 420 264 434 264" fill="none" stroke="#74a783" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="436,264 428,259 428,269" fill="#74a783"/>
+
+  <path d="M132 241 C132 222 145 202 187 180" fill="none" stroke="#5d93b8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="190,178 181,179 186,186" fill="#5d93b8"/>
+
+  <path d="M320 236 C320 219 330 199 382 180" fill="none" stroke="#5caa91" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="385,179 376,178 380,186" fill="#5caa91"/>
+
+  <path d="M519 241 C529 225 548 210 558 191" fill="none" stroke="#c89547" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="559,188 552,194 561,196" fill="#c89547"/>
+
+  <g>
+    <line x1="542" y1="109" x2="574" y2="109" stroke="#d59c48" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="542" y1="171" x2="574" y2="171" stroke="#d59c48" stroke-width="2" stroke-dasharray="4 4"/>
+    <path d="M574 109 L574 171" fill="none" stroke="#d59c48" stroke-width="2" stroke-dasharray="4 4"/>
+    <path d="M565 129 L577 141 M577 129 L565 141" stroke="#c96d5d" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="586" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b26455">okuma yok</text>
+  </g>
+</svg>

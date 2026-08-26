@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Nix
-  - Paket Yönetimi
-  - DevOps
+  - nix
+  - paket yönetimi
+  - devops
+toc: true
 ---
 
 Bir projeyi yeni bir bilgisayarda çalıştırırken yaşanan “bende çalışıyordu” sendromu, çoğu zaman koddan değil ortamdan kaynaklanır. Farklı derleyici sürümleri, eksik kütüphaneler ve işletim sistemi farkları geliştirme sürecini tahmin edilmez hâle getirir. Nix, paketleri ve geliştirme ortamlarını deklaratif biçimde tanımlayarak bu kaosu kontrol altına alan güçlü bir paket yöneticisidir.

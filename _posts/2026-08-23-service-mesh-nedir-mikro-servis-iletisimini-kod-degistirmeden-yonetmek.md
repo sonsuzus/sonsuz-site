@@ -7,7 +7,7 @@ categories:
 tags: 
   - service mesh
   - mikro servisler
-  - Kubernetes
+  - kubernetes
 ---
 
 Mikro servis mimarisi büyüdükçe asıl zorluk yalnızca servis yazmak değildir; servislerin birbirini güvenli, hızlı ve gözlemlenebilir biçimde çağırmasını sağlamaktır. Service mesh, bu iletişim katmanını uygulama kodundan ayıran altyapı yaklaşımıdır. Böylece Java, Go, Python ya da Node.js ile yazılmış servisler; tekrar tekrar istemci kütüphanesi eklemeden ortak ağ politikalarından yararlanabilir.

@@ -9,6 +9,7 @@ tags:
   - bellek yönetimi
   - c++ vector
 toc: true
+image: /img/dinamik-koleksiyonlar-ve-15.png
 ---
 
 Sabit boyutlu bir dizi, kaç misafir geleceğini aylar öncesinden bilerek masa hazırlamaya benzer. Dinamik koleksiyon ise kapı çaldıkça masaya yeni sandalye ekler; gerektiğinde sandalyeleri kaldırır. Vektörler bu esnekliği sunarken arka planda heap belleği, kapasite hesaplarını ve eleman taşıma işlemlerini yönetir.
@@ -90,3 +91,6 @@ for (int i = 0; i < 1000; ++i) {
 Yeniden bellek ayırma gerçekleştiğinde eski bloğu gösteren işaretçiler, referanslar ve iterator’lar geçersiz hale gelebilir. Artık tahliye edilmiş bir evin adresine kargo göndermek gibi düşünün: adres tanıdık görünür, fakat içeride kimse yoktur.
 
 Vektörler hız, bitişik bellek düzeni ve esneklik arasında güçlü bir denge kurar. Yine de bu rahatlığın arkasında kapasite fazlası, taşıma maliyeti ve referans geçersizleşmesi bulunur. `size`, `capacity`, `reserve` ve yeniden ayırma mantığını bilmek, dinamik koleksiyonları yalnızca kullanmayı değil, verimli ve güvenli kullanmayı sağlar.
+
+![dinamik-koleksiyonlar-ve-15](/img/dinamik-koleksiyonlar-ve-15.svg)
+
