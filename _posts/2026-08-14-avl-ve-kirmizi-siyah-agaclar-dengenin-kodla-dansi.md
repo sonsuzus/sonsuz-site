@@ -9,6 +9,7 @@ tags:
   - algoritmalar
   - ikili arama ağacı
 toc: true
+image: /img/avl-ve-kirmizi-27.png
 ---
 
 İkili arama ağaçları (BST), küçük anahtarları solunda, büyük anahtarları sağında tutarak aramayı hızlandırır. Ancak anahtarlar sıralı gelirse ağaç, bir ağacın heybetinden çok bağlı listeye benzeyen eğik bir yapıya dönüşür. Bu durumda arama, ekleme ve silme maliyeti $O(n)$ olur. AVL ve Kırmızı-Siyah ağaçları, her güncellemeden sonra küçük yapısal müdahaleler yaparak yüksekliği $O(\log n)$ sınırında tutan iki ünlü çözümdür.
@@ -22,6 +23,9 @@ Dengeli olmanın temel hedefi, kökten en derin yaprağa giden yolun makul kalma
 | Arama | Genellikle daha hızlı | Çok iyi, fakat biraz daha gevşek |
 | Güncelleme | Daha fazla rotasyon gerekebilir | Güncellemelerde pratikte esnek |
 | Yaygın kullanım | Okuma ağırlıklı indeksler | `map`, `set` benzeri kütüphaneler |
+
+![avl-ve-kirmizi-27](/img/avl-ve-kirmizi-27.svg)
+
 
 ## AVL: Yükseklik Farkına Sıkı Denetim
 

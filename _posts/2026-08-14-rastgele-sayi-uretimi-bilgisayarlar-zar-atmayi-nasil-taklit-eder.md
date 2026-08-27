@@ -8,6 +8,7 @@ tags:
   - rastgelelik
   - prng
   - kriptografi
+image: /img/rastgele-sayi-uretimi-63.png
 ---
 
 Bilgisayarlar son derece düzenli makinelerdir: aynı girdiye, aynı koşullarda daima aynı çıktıyı verirler. Bu yüzden ekranda “rastgele” görünen bir oyun zarı, şifreleme anahtarı ya da simülasyon sonucu aslında çoğu zaman dikkatle tasarlanmış bir algoritmanın ürünüdür. Bu algoritmalar, tahmin edilmesi zor ve istatistiksel olarak dengeli diziler üretmeye çalışır; fakat geçmişteki durumları bilen biri için sonuçlar teorik olarak yeniden üretilebilir.
@@ -29,6 +30,9 @@ Burada $X_n$ mevcut durum, $a$ çarpan, $c$ artış değeri ve $m$ modüldür. �
 | Hız | Donanıma bağlıdır | Genellikle çok yüksektir |
 | Kullanım alanı | Anahtar üretimi, bilimsel ölçüm | Oyunlar, simülasyonlar, testler |
 | Tahmin edilebilirlik | İyi kaynakta çok düşüktür | Algoritmaya göre değişir |
+
+![rastgele-sayi-uretimi-63](/img/rastgele-sayi-uretimi-63.svg)
+
 
 Python’daki `random` modülü, Mersenne Twister adlı kaliteli bir genel amaçlı PRNG kullanır. Simülasyon ve oyun mantığı için oldukça başarılıdır. Aşağıdaki kod, sabit bir tohumla zar atışlarını her çalıştırmada aynı sırayla üretir:
 

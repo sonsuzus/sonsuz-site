@@ -8,6 +8,7 @@ tags:
   - rabbitmq
   - mesaj kuyruğu
   - node.js
+image: /img/rabbitmq-ile-mesaj-65.png
 ---
 
 Mikroservisler birbirini doğrudan ve senkron çağırdığında, küçük bir gecikme bile zincirleme arızaya dönüşebilir. RabbitMQ bu bağı gevşetir: sipariş servisi işi bir kuyruğa bırakır, bildirim servisi uygun olduğunda alır. Böylece servisler farklı hızlarda çalışabilir, yoğunluk dalgaları daha yönetilebilir hâle gelir.
@@ -24,6 +25,9 @@ Basit bir kapasite hesabı mimari kararları netleştirir. Üretim hızı $\lamb
 | Queue | Mesajı saklar | `email.notifications` |
 | Consumer | Mesajı işler | E-posta gönderici worker |
 | Ack | Başarılı işlemi bildirir | Mesajın güvenle silinmesi |
+
+![rabbitmq-ile-mesaj-65](/img/rabbitmq-ile-mesaj-65.svg)
+
 
 Örnekte Node.js ve `amqplib` kullanacağız. Önce bağımlılığı yükleyin: `npm install amqplib`. Ardından RabbitMQ'yu Docker ile ayağa kaldırabilirsiniz: `docker run -d --hostname rabbit --name rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management`. Yönetim arayüzü `http://localhost:15672` adresindedir.
 

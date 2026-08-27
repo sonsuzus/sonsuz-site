@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7ec"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#d4edd4"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce8e8"/>
+      <stop offset="100%" stop-color="#f8d4d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#3a4a5a">C++ Switch Kalıbı</text>
+
+  <!-- Giriş kutusu -->
+  <rect x="245" y="52" width="150" height="42" rx="10" fill="url(#box1)" stroke="#b0c4de" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">switch(ifade)</text>
+  <text x="320" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">değer üret</text>
+
+  <!-- Ok: switch -> case'ler -->
+  <path d="M320 94 L320 112" stroke="#7a9bb5" stroke-width="2" fill="none"/>
+  <polygon points="314,112 320,122 326,112" fill="#7a9bb5"/>
+
+  <!-- Case 1 -->
+  <rect x="60" y="128" width="150" height="46" rx="10" fill="url(#box2)" stroke="#e0c090" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="135" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a4a2a" font-weight="bold">case sabit1</text>
+  <text x="135" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a6a4a">işlem satırı</text>
+
+  <!-- Case 2 -->
+  <rect x="245" y="128" width="150" height="46" rx="10" fill="url(#box2)" stroke="#e0c090" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a4a2a" font-weight="bold">case sabit2</text>
+  <text x="320" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a6a4a">işlem satırı</text>
+
+  <!-- Case 3 -->
+  <rect x="430" y="128" width="150" height="46" rx="10" fill="url(#box2)" stroke="#e0c090" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="505" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a4a2a" font-weight="bold">case sabit3</text>
+  <text x="505" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a6a4a">işlem satırı</text>
+
+  <!-- Ok: switch -> case1 -->
+  <path d="M290 112 L135 124" stroke="#7a9bb5" stroke-width="1.8" fill="none"/>
+  <polygon points="135,124 145,120 141,130" fill="#7a9bb5"/>
+
+  <!-- Ok: switch -> case2 -->
+  <path d="M320 112 L320 124" stroke="#7a9bb5" stroke-width="1.8" fill="none"/>
+  <polygon points="314,124 320,134 326,124" fill="#7a9bb5"/>
+
+  <!-- Ok: switch -> case3 -->
+  <path d="M350 112 L505 124" stroke="#7a9bb5" stroke-width="1.8" fill="none"/>
+  <polygon points="505,124 495,120 499,130" fill="#7a9bb5"/>
+
+  <!-- break okları -->
+  <path d="M135 174 L135 200" stroke="#c0a080" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="129,200 135,210 141,200" fill="#c0a080"/>
+  <text x="150" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8a7a5a">break</text>
+
+  <path d="M320 174 L320 200" stroke="#c0a080" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="314,200 320,210 326,200" fill="#c0a080"/>
+  <text x="335" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8a7a5a">break</text>
+
+  <path d="M505 174 L505 200" stroke="#c0a080" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="499,200 505,210 511,200" fill="#c0a080"/>
+  <text x="520" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8a7a5a">break</text>
+
+  <!-- Default kutusu -->
+  <rect x="245" y="222" width="150" height="46" rx="10" fill="url(#box4)" stroke="#d4a0a0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a2a2a" font-weight="bold">default</text>
+  <text x="320" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a4a4a">işlem satırı</text>
+
+  <!-- Oklar: case -> default -->
+  <path d="M135 210 L135 230 L240 230" stroke="#c0a080" stroke-width="1.5" fill="none"/>
+  <polygon points="240,224 250,230 240,236" fill="#c0a080"/>
+
+  <path d="M320 210 L320 218" stroke="#c0a080" stroke-width="1.5" fill="none"/>
+  <polygon points="314,218 320,228 326,218" fill="#c0a080"/>
+
+  <path d="M505 210 L505 230 L400 230" stroke="#c0a080" stroke-width="1.5" fill="none"/>
+  <polygon points="400,224 390,230 400,236" fill="#c0a080"/>
+
+  <!-- Çıkış oku -->
+  <path d="M320 268 L320 290" stroke="#6a9a6a" stroke-width="2" fill="none"/>
+  <polygon points="314,290 320,300 326,290" fill="#6a9a6a"/>
+  <text x="335" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a4a">çıkış</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="312" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8899aa">ifade sonucu case sabitleriyle karşılaştırılır</text>
+</svg>

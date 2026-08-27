@@ -9,7 +9,11 @@ tags:
   - isim alanları
   - python
 toc: true
+image: /img/kapsam-ve-isim-11.png
 ---
+
+![kapsam-ve-isim-11](/img/kapsam-ve-isim-11.svg)
+
 
 Bir değişkeni tanımlamak, ona yalnızca bir değer vermek değildir; aynı zamanda bu ismin programın hangi bölümlerinde görülebileceğini de belirlemektir. Kapsam (scope), bir isme erişilebilen kod bölgesini; isim alanı (namespace) ise isimlerle nesneler arasındaki eşleşmelerin tutulduğu yapıyı ifade eder. Özellikle Python gibi girintinin blok yapısını belirlediği dillerde bu iki kavramı anlamak, beklenmedik hataları önlemenin anahtarıdır.
 ``

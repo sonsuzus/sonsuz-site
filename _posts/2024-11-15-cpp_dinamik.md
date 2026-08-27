@@ -15,6 +15,7 @@ tags:
 redirect_from:
   - /posts/cpp_dinamik/
 toc: true
+image: /img/cpp_dinamik-18.png
 ---
 
 
@@ -607,3 +608,6 @@ Karakter dizisi
 ```
 
 Program 5 elemanlı bir işaretçi dizisi oluşturur. Her bir işaretçi dizisine 20 byte boyutundaki belleğin başlangıç adresini atar. İşaretçi indeksleme yöntemi ile her bir işaretçiye "Karakter dizisi" ifadesini kopyalar ve ekrana yazdırır. Program sona ermeden önce, free() fonksiyonunu bir döngü içinde kullanarak tahsis edilen belleği boşaltır.
+
+![cpp_dinamik-18](/img/cpp_dinamik-18.svg)
+

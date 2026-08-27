@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7ef"/>
+    </linearGradient>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#88bde5"/>
+    </linearGradient>
+    <linearGradient id="elemGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd3b6"/>
+      <stop offset="100%" stop-color="#ffb88a"/>
+    </linearGradient>
+    <linearGradient id="elemGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dcedc1"/>
+      <stop offset="100%" stop-color="#b5e3a0"/>
+    </linearGradient>
+    <linearGradient id="elemGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8c8dc"/>
+      <stop offset="100%" stop-color="#f0a8c0"/>
+    </linearGradient>
+    <linearGradient id="elemGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c3b1e1"/>
+      <stop offset="100%" stop-color="#a88fd0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="35" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#3a5a7a">C++ Yapılar (Structures)</text>
+  <line x1="180" y1="45" x2="460" y2="45" stroke="#88bde5" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Ana yapı kutusu -->
+  <rect x="245" y="70" width="150" height="55" rx="12" fill="url(#mainGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a3a5a">struct Yapı</text>
+  <text x="320" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a4a6a">Kullanıcı Tanımlı Tür</text>
+
+  <!-- Bağlantı çizgileri -->
+  <line x1="245" y1="97" x2="170" y2="97" stroke="#5a9ab5" stroke-width="1.8" opacity="0.7"/>
+  <line x1="395" y1="97" x2="470" y2="97" stroke="#5a9ab5" stroke-width="1.8" opacity="0.7"/>
+  <line x1="170" y1="97" x2="170" y2="150" stroke="#5a9ab5" stroke-width="1.8" opacity="0.7"/>
+  <line x1="470" y1="97" x2="470" y2="150" stroke="#5a9ab5" stroke-width="1.8" opacity="0.7"/>
+
+  <!-- Sol ok başlığı (aşağı) -->
+  <polygon points="162,150 170,165 178,150" fill="#5a9ab5" opacity="0.8"/>
+  <!-- Sağ ok başlığı (aşağı) -->
+  <polygon points="462,150 470,165 478,150" fill="#5a9ab5" opacity="0.8"/>
+
+  <!-- Sol grup: Bildirim Yöntemleri -->
+  <rect x="55" y="165" width="230" height="130" rx="10" fill="#ffffff" opacity="0.5" filter="url(#shadowLight)"/>
+  <text x="170" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a8a">Bildirim Yöntemleri</text>
+
+  <!-- Yöntem 1 -->
+  <rect x="70" y="195" width="200" height="28" rx="6" fill="url(#elemGrad1)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="170" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a3a1a">1. Yapı ve Değişken Birlikte</text>
+
+  <!-- Yöntem 2 -->
+  <rect x="70" y="230" width="200" height="28" rx="6" fill="url(#elemGrad2)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="170" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a5a2a">2. Ayrı Ayrı Tanımlama</text>
+
+  <!-- Yöntem 3 -->
+  <rect x="70" y="265" width="200" height="28" rx="6" fill="url(#elemGrad3)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="170" y="283" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a2a4a">3. Adsız Yapı Değişkeni</text>
+
+  <!-- Sağ grup: Elemanlar -->
+  <rect x="355" y="165" width="230" height="130" rx="10" fill="#ffffff" opacity="0.5" filter="url(#shadowLight)"/>
+  <text x="470" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a8a">Yapı Elemanları</text>
+
+  <!-- Eleman 1 -->
+  <rect x="370" y="195" width="200" height="28" rx="6" fill="url(#elemGrad1)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="470" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a3a1a">Farklı Veri Türleri</text>
+
+  <!-- Eleman 2 -->
+  <rect x="370" y="230" width="200" height="28" rx="6" fill="url(#elemGrad2)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="470" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a5a2a">Aynı Türden Veriler</text>
+
+  <!-- Eleman 3 -->
+  <rect x="370" y="265" width="200" height="28" rx="6" fill="url(#elemGrad4)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="470" y="283" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a2a6a">Tek İsim Altında Grup</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a9ab0" opacity="0.8">Dizilerden farklı olarak türler birbirinden bağımsız olabilir</text>
+</svg>

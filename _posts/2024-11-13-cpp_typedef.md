@@ -10,6 +10,7 @@ tags:
   - veri türü
 redirect_from:
   - /posts/cpp_typedef/
+image: /img/cpp_typedef-28.png
 ---
 
 
@@ -260,3 +261,6 @@ Bilgisayar Programlama 21
 ```
 
 Program, bir yapı ve bu yapı ile bağlantılı bir adet işaretçi değişken bildirimi yapar. İşaretçi yoluyla yapı elemanlarına atadığı değerleri ekrana yazar. Bir yapı boyutu için bellekte yer ayırır ve ayırdığı belleğin başlangıç adresini yp işaretçisine atar.
+
+![cpp_typedef-28](/img/cpp_typedef-28.svg)
+

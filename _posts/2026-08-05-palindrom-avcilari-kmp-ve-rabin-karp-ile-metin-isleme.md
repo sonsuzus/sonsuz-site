@@ -9,7 +9,11 @@ tags:
   - rabin-karp
   - palindrom
 toc: true
+image: /img/palindrom-avcilari-kmp-12.png
 ---
+
+![palindrom-avcilari-kmp-12](/img/palindrom-avcilari-kmp-12.svg)
+
 
 Bir kelimeyi ters çevirdiğinizde aynı sonucu görüyorsanız karşınızda bir palindrom vardır: “kabak”, “level” ve “ada” gibi. Ancak metin milyonlarca karakterden oluştuğunda palindromları tek tek kontrol etmek pek eğlenceli değildir. Neyse ki KMP ve Rabin-Karp, örüntü arama yeteneklerini palindrom sorularına uyarlayarak bizi iç içe döngülerin karanlık dünyasından kurtarabilir.
 ``

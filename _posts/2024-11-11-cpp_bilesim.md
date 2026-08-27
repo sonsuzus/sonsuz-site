@@ -10,7 +10,11 @@ tags:
   - unions
 redirect_from:
   - /posts/cpp_bilesim/
+image: /img/cpp_bilesim-25.png
 ---
+
+![cpp_bilesim-25](/img/cpp_bilesim-25.svg)
+
 
 
 Bileşim, iki veya daha fazla değişken tarafından ortaklaşa kullanılan tek bir bellek birimidir. Burada bahsi geçen değişkenler farklı veri türünden olabilir. Ancak, aynı bellek bölgesini paylaşan değişkenlerden sadece bir tanesi aynı anda bellek bölgesini kullanabilir. Genel görünüşü ile yapılara benzeyen bileşimlerin genel yapısı aşağıdaki gösterilmektedir:

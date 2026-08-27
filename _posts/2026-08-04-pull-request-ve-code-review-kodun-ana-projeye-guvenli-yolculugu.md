@@ -9,6 +9,7 @@ tags:
   - pull request
   - code review
 toc: true
+image: /img/pull-request-ve-24.png
 ---
 
 Bir özellik geliştirdiniz, testleri çalıştırdınız ve kodunuz bilgisayarınızda kusursuz görünüyor. Peki bu kod doğrudan ana projeye eklenmeli mi? Genellikle hayır! Pull Request ve Code Review süreçleri, kodun ana dala ulaşmadan önce teknik doğruluk, okunabilirlik, güvenlik ve ekip standartları açısından denetlendiği bir kalite kapısı oluşturur.
@@ -60,6 +61,9 @@ Burada $D$ doğruluğu, $T$ test edilebilirliği, $O$ okunabilirliği ve $G$ gü
 | Testler | Kritik senaryolar sınanmış mı? | Regresyon |
 | Güvenlik | Girdi doğrulama yeterli mi? | Veri sızıntısı |
 | Performans | Gereksiz işlem veya sorgu var mı? | Yavaşlama |
+
+![pull-request-ve-24](/img/pull-request-ve-24.svg)
+
 
 ## İyi bir PR nasıl hazırlanır?
 

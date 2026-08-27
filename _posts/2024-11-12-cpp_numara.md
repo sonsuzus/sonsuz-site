@@ -10,6 +10,7 @@ tags:
   - enum
 redirect_from:
   - /posts/cpp_numara/
+image: /img/cpp_numara-56.png
 ---
 
 
@@ -177,3 +178,6 @@ int main(void)
 ```
 
 Program, girilen sabit bir değerin atandığı numaralandırma elemanının adını ekrana yazar.
+
+![cpp_numara-56](/img/cpp_numara-56.svg)
+

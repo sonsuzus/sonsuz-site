@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="gitCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8f2"/>
+      <stop offset="100%" stop-color="#fff1e7"/>
+    </linearGradient>
+    <linearGradient id="trunkCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1fbff"/>
+      <stop offset="100%" stop-color="#e6f6f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#587080" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-40%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#587080" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="47" cy="38" r="70" fill="#ddecfa" opacity="0.45"/>
+  <circle cx="603" cy="280" r="84" fill="#dff2df" opacity="0.48"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405767">Paralel Geliştirme Stratejileri</text>
+  <rect x="257" y="38" width="126" height="4" rx="2" fill="#82b9ca"/>
+
+  <g filter="url(#shadow)">
+    <rect x="25" y="58" width="276" height="223" rx="18" fill="url(#gitCard)" stroke="#f0c9ae"/>
+    <rect x="339" y="58" width="276" height="223" rx="18" fill="url(#trunkCard)" stroke="#b9dddd"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="47" y="74" width="126" height="28" rx="14" fill="#e88658" filter="url(#smallShadow)"/>
+    <text x="110" y="93" text-anchor="middle" font-weight="700" fill="#ffffff">Git Flow</text>
+    <text x="187" y="92" fill="#9a6753">Kontrollü şeritler</text>
+
+    <rect x="362" y="74" width="177" height="28" rx="14" fill="#55aeb0" filter="url(#smallShadow)"/>
+    <text x="450" y="93" text-anchor="middle" font-weight="700" fill="#ffffff">Trunk-Based</text>
+    <text x="550" y="92" fill="#487c7d">Hızlı entegrasyon</text>
+  </g>
+
+  <!-- Git Flow bağlantıları -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M68 224 L109 224 L139 194 L180 194" stroke="#506b7a" stroke-width="5"/>
+    <path d="M68 159 L109 159 L139 194" stroke="#d87951" stroke-width="5"/>
+    <path d="M68 127 L115 127 L144 159 L181 159" stroke="#bd80a4" stroke-width="5"/>
+    <path d="M180 194 L215 224 L258 224" stroke="#506b7a" stroke-width="5"/>
+    <path d="M180 159 L214 159 L244 190 L258 190" stroke="#d5a150" stroke-width="5"/>
+    <path d="M180 194 L207 168 L258 168" stroke="#bf6060" stroke-width="5"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="115" width="70" height="24" rx="8" fill="#f6dce8"/>
+    <rect x="48" y="147" width="70" height="24" rx="8" fill="#ffe2d3"/>
+    <rect x="48" y="212" width="70" height="24" rx="8" fill="#dce9f2"/>
+    <rect x="145" y="147" width="70" height="24" rx="8" fill="#ffe4ad"/>
+    <rect x="145" y="182" width="70" height="24" rx="8" fill="#dce9f2"/>
+    <rect x="248" y="156" width="35" height="24" rx="8" fill="#f4cccc"/>
+    <rect x="248" y="178" width="35" height="24" rx="8" fill="#f9e2ad"/>
+    <rect x="248" y="212" width="35" height="24" rx="8" fill="#dce9f2"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6170">
+    <text x="83" y="131" text-anchor="middle">özellik</text>
+    <text x="83" y="163" text-anchor="middle">geliştir</text>
+    <text x="83" y="228" text-anchor="middle">ana</text>
+    <text x="180" y="163" text-anchor="middle">develop</text>
+    <text x="180" y="198" text-anchor="middle">main</text>
+    <text x="265" y="172" text-anchor="middle">acil</text>
+    <text x="265" y="194" text-anchor="middle">sürüm</text>
+    <text x="265" y="228" text-anchor="middle">yayın</text>
+  </g>
+
+  <!-- TBD bağlantıları -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M370 191 L579 191" stroke="#3d8291" stroke-width="8"/>
+    <path d="M397 145 L429 145 L452 177" stroke="#7b83be" stroke-width="5"/>
+    <path d="M452 177 L469 191" stroke="#7b83be" stroke-width="5"/>
+    <path d="M486 230 L513 230 L537 202" stroke="#72a86f" stroke-width="5"/>
+    <path d="M537 202 L550 191" stroke="#72a86f" stroke-width="5"/>
+    <path d="M553 191 L574 191" stroke="#3d8291" stroke-width="5"/>
+  </g>
+
+  <!-- Manuel ok başı -->
+  <polygon points="579,191 569,185 569,197" fill="#3d8291"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="370" y="133" width="66" height="24" rx="8" fill="#e3e2f6"/>
+    <rect x="470" y="218" width="67" height="24" rx="8" fill="#e0f0dc"/>
+    <rect x="447" y="177" width="47" height="28" rx="10" fill="#ffffff" stroke="#afd3d4"/>
+    <rect x="507" y="177" width="47" height="28" rx="10" fill="#ffffff" stroke="#afd3d4"/>
+    <rect x="568" y="177" width="31" height="28" rx="10" fill="#d9efdb"/>
+    <rect x="512" y="119" width="58" height="22" rx="11" fill="#ffe8a9"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466773">
+    <text x="403" y="149" text-anchor="middle">kısa dal</text>
+    <text x="503" y="234" text-anchor="middle">kısa dal</text>
+    <text x="470" y="195" text-anchor="middle" font-weight="700">ana</text>
+    <text x="530" y="195" text-anchor="middle" font-weight="700">test</text>
+    <text x="583" y="195" text-anchor="middle">yayın</text>
+    <text x="541" y="134" text-anchor="middle" font-size="11">özellik bayrağı</text>
+  </g>
+
+  <path d="M541 141 L541 165" stroke="#d6a647" stroke-width="2" stroke-dasharray="3 3"/>
+  <circle cx="541" cy="166" r="4" fill="#d6a647"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="55" y="251" width="103" height="18" rx="9" fill="#f6d5bf"/>
+    <text x="106" y="264" text-anchor="middle" fill="#815646">Uzun dal ömrü</text>
+    <rect x="409" y="251" width="136" height="18" rx="9" fill="#cde9e4"/>
+    <text x="477" y="264" text-anchor="middle" fill="#397477">Sürekli doğrulama</text>
+  </g>
+
+  <path d="M309 119 L309 226" stroke="#aac4c5" stroke-width="2" stroke-dasharray="4 5"/>
+  <circle cx="309" cy="172" r="13" fill="#ffffff" stroke="#aac4c5"/>
+  <path d="M304 172 L309 167 L314 172 L309 177 Z" fill="#6e9da2"/>
+</svg>

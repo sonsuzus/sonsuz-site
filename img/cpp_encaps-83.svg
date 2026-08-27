@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="classGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4fc"/>
+    </linearGradient>
+    <linearGradient id="privateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde8e8"/>
+      <stop offset="100%" stop-color="#fbd5d5"/>
+    </linearGradient>
+    <linearGradient id="publicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#d0f0d0"/>
+    </linearGradient>
+    <linearGradient id="methodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="outerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#e8f0fe"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#a0b0c0" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#90a0b0" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">C++ Kapsülleme Mimarisi</text>
+
+  <!-- Dış sınıf kapsayıcı -->
+  <rect x="170" y="50" width="300" height="230" rx="16" fill="url(#outerGrad)" stroke="#b0c4de" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#34495e">Sınıf (Nesne)</text>
+
+  <!-- Private bölüm -->
+  <rect x="190" y="85" width="260" height="100" rx="10" fill="url(#privateGrad)" stroke="#e8a0a0" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="205" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#c0392b">private:</text>
+
+  <!-- Veri alanları -->
+  <rect x="205" y="115" width="110" height="28" rx="6" fill="#fff" stroke="#d5a0a0" stroke-width="1"/>
+  <text x="260" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">Veri 1</text>
+
+  <rect x="325" y="115" width="110" height="28" rx="6" fill="#fff" stroke="#d5a0a0" stroke-width="1"/>
+  <text x="380" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">Veri 2</text>
+
+  <!-- Metodlar -->
+  <rect x="205" y="150" width="110" height="28" rx="6" fill="url(#methodGrad)" stroke="#e0b080" stroke-width="1"/>
+  <text x="260" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">Metod A</text>
+
+  <rect x="325" y="150" width="110" height="28" rx="6" fill="url(#methodGrad)" stroke="#e0b080" stroke-width="1"/>
+  <text x="380" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">Metod B</text>
+
+  <!-- İç erişim okları -->
+  <path d="M260 143 L260 148" stroke="#c0392b" stroke-width="1.5"/>
+  <polygon points="256,148 260,154 264,148" fill="#c0392b"/>
+  <path d="M380 143 L380 148" stroke="#c0392b" stroke-width="1.5"/>
+  <polygon points="376,148 380,154 384,148" fill="#c0392b"/>
+
+  <!-- Public bölüm -->
+  <rect x="190" y="200" width="260" height="65" rx="10" fill="url(#publicGrad)" stroke="#a0d8a0" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="205" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#27ae60">public:</text>
+
+  <rect x="205" y="230" width="110" height="28" rx="6" fill="#fff" stroke="#a0d0a0" stroke-width="1"/>
+  <text x="260" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">Erişim Fonksiyonu</text>
+
+  <rect x="325" y="230" width="110" height="28" rx="6" fill="#fff" stroke="#a0d0a0" stroke-width="1"/>
+  <text x="380" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">Dış Arayüz</text>
+
+  <!-- Public'ten private'a erişim okları -->
+  <path d="M260 228 L260 180" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="256,184 260,178 264,184" fill="#27ae60"/>
+  <path d="M380 228 L380 180" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="376,184 380,178 384,184" fill="#27ae60"/>
+
+  <!-- Dışarıdan erişim engeli -->
+  <rect x="30" y="130" width="110" height="60" rx="10" fill="#e8ecf1" stroke="#b0b8c0" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="85" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#666">Dış Kod</text>
+  <text x="85" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#999">(erişemez)</text>
+
+  <!-- Engelli erişim oku -->
+  <path d="M140 160 L185 160" stroke="#e74c3c" stroke-width="2"/>
+  <line x1="155" y1="150" x2="170" y2="170" stroke="#e74c3c" stroke-width="2"/>
+  <polygon points="185,156 193,160 185,164" fill="#e74c3c"/>
+
+  <!-- Dışarıdan erişim -->
+  <rect x="500" y="130" width="110" height="60" rx="10" fill="#e8f4e8" stroke="#a0c8a0" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="555" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c5e2c">Dış Kod</text>
+  <text x="555" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#558855">(public erişir)</text>
+
+  <!-- Public erişim oku -->
+  <path d="M500 160 L455 160" stroke="#27ae60" stroke-width="2"/>
+  <polygon points="455,156 447,160 455,164" fill="#27ae60"/>
+
+  <!-- Alt açıklama -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">Veri ve metodlar tek isim altında korunur, dış müdahalelere kapatılır</text>
+</svg>

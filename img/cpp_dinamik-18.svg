@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7f0"/>
+    </linearGradient>
+    <linearGradient id="heapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#7ec8e3"/>
+    </linearGradient>
+    <linearGradient id="stackGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c3aed6"/>
+      <stop offset="100%" stop-color="#b39ddb"/>
+    </linearGradient>
+    <linearGradient id="newGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86e3ce"/>
+      <stop offset="100%" stop-color="#5fd9b0"/>
+    </linearGradient>
+    <linearGradient id="deleteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb88a"/>
+      <stop offset="100%" stop-color="#ff9a6c"/>
+    </linearGradient>
+    <linearGradient id="programGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd3b6"/>
+      <stop offset="100%" stop-color="#ffc4a3"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#3a3a5a">C++ Dinamik Bellek Kullanımı</text>
+
+  <!-- Program kutusu -->
+  <rect x="250" y="45" width="140" height="40" rx="10" fill="url(#programGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="69" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a2a1a" font-weight="bold">Program</text>
+
+  <!-- Stack bölgesi -->
+  <rect x="40" y="110" width="150" height="170" rx="12" fill="url(#stackGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="115" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a2a5a">Stack (Otomatik)</text>
+  
+  <!-- Stack içi küçük kutular -->
+  <rect x="60" y="145" width="110" height="22" rx="5" fill="#e8dff5" opacity="0.8"/>
+  <text x="115" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a4a7a">Dizi tanımlama</text>
+  
+  <rect x="60" y="175" width="110" height="22" rx="5" fill="#e8dff5" opacity="0.8"/>
+  <text x="115" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a4a7a">Yerel değişkenler</text>
+  
+  <rect x="60" y="205" width="110" height="22" rx="5" fill="#e8dff5" opacity="0.8"/>
+  <text x="115" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a4a7a">Otomatik tahsis</text>
+  
+  <rect x="60" y="235" width="110" height="22" rx="5" fill="#e8dff5" opacity="0.8"/>
+  <text x="115" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a4a7a">Derleme zamanı</text>
+
+  <!-- Heap bölgesi -->
+  <rect x="450" y="110" width="150" height="170" rx="12" fill="url(#heapGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="525" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a5a">Heap (Dinamik)</text>
+  
+  <!-- Heap içi küçük kutular -->
+  <rect x="470" y="145" width="110" height="22" rx="5" fill="#d0ecf5" opacity="0.8"/>
+  <text x="525" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a5a7a">new ile tahsis</text>
+  
+  <rect x="470" y="175" width="110" height="22" rx="5" fill="#d0ecf5" opacity="0.8"/>
+  <text x="525" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a5a7a">Çalışma zamanı</text>
+  
+  <rect x="470" y="205" width="110" height="22" rx="5" fill="#d0ecf5" opacity="0.8"/>
+  <text x="525" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a5a7a">Boyut esnek</text>
+  
+  <rect x="470" y="235" width="110" height="22" rx="5" fill="#d0ecf5" opacity="0.8"/>
+  <text x="525" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a5a7a">delete ile serbest</text>
+
+  <!-- Ok: Program -> Stack -->
+  <path d="M 290 85 L 150 108" stroke="#b39ddb" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="150,108 160,103 155,113" fill="#b39ddb"/>
+
+  <!-- Ok: Program -> Heap -->
+  <path d="M 350 85 L 490 108" stroke="#7ec8e3" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="490,108 480,103 485,113" fill="#7ec8e3"/>
+
+  <!-- new işlemcisi kutusu -->
+  <rect x="195" y="140" width="110" height="35" rx="8" fill="url(#newGrad)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="250" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4a3a">new</text>
+
+  <!-- delete işlemcisi kutusu -->
+  <rect x="335" y="140" width="110" height="35" rx="8" fill="url(#deleteGrad)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="390" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a2a1a">delete</text>
+
+  <!-- Ok: new -> Heap -->
+  <path d="M 305 157 L 468 157" stroke="#5fd9b0" stroke-width="2" fill="none"/>
+  <polygon points="468,157 458,152 458,162" fill="#5fd9b0"/>
+  <text x="386" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a8a6a">tahsis eder</text>
+
+  <!-- Ok: delete -> Heap -->
+  <path d="M 390 178 L 520 210" stroke="#ff9a6c" stroke-width="2" fill="none"/>
+  <polygon points="520,210 510,205 512,216" fill="#ff9a6c"/>
+  <text x="470" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#cc5a2a">serbest bırakır</text>
+
+  <!-- Alt açıklama -->
+  <rect x="120" y="275" width="400" height="30" rx="8" fill="#ffffff" opacity="0.6" filter="url(#shadowLight)"/>
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a4a6a">Dinamik bellek: program çalışırken ihtiyaca göre tahsis ve boşaltma</text>
+
+</svg>

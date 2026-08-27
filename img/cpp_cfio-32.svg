@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="streamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a8d8ea" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#c7f0db" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="deviceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8f4f8"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c9ebf"/>
+      <stop offset="100%" stop-color="#4a7a9e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a5a7a">C/C++ Dosya Giriş/Çıkış - Akış Modeli</text>
+
+  <!-- Merkez: Akış kavramı -->
+  <ellipse cx="320" cy="160" rx="95" ry="55" fill="url(#streamGrad)" stroke="#5b9bbd" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c5a7a">AKIŞ</text>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a8a">Mantıksal Arabirim</text>
+
+  <!-- Cihazlar (dış halka) -->
+  <!-- Disk -->
+  <g filter="url(#shadowLight)">
+    <rect x="30" y="55" width="100" height="50" rx="10" fill="url(#deviceGrad)" stroke="#a0c4d8" stroke-width="1.2"/>
+    <text x="80" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a8a">Disk</text>
+    <text x="80" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a8aaa">Dosya</text>
+  </g>
+
+  <!-- Klavye -->
+  <g filter="url(#shadowLight)">
+    <rect x="30" y="215" width="100" height="50" rx="10" fill="url(#deviceGrad)" stroke="#a0c4d8" stroke-width="1.2"/>
+    <text x="80" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a8a">Klavye</text>
+    <text x="80" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a8aaa">Giriş</text>
+  </g>
+
+  <!-- Ekran -->
+  <g filter="url(#shadowLight)">
+    <rect x="510" y="55" width="100" height="50" rx="10" fill="url(#deviceGrad)" stroke="#a0c4d8" stroke-width="1.2"/>
+    <text x="560" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a8a">Ekran</text>
+    <text x="560" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a8aaa">Çıkış</text>
+  </g>
+
+  <!-- Yazıcı -->
+  <g filter="url(#shadowLight)">
+    <rect x="510" y="215" width="100" height="50" rx="10" fill="url(#deviceGrad)" stroke="#a0c4d8" stroke-width="1.2"/>
+    <text x="560" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a8a">Yazıcı</text>
+    <text x="560" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a8aaa">Çıkış</text>
+  </g>
+
+  <!-- Port -->
+  <g filter="url(#shadowLight)">
+    <rect x="270" y="265" width="100" height="40" rx="10" fill="url(#deviceGrad)" stroke="#a0c4d8" stroke-width="1.2"/>
+    <text x="320" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a8a">Port</text>
+    <text x="320" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a8aaa">Donanım</text>
+  </g>
+
+  <!-- Bağlantı çizgileri ve oklar (manuel çizim) -->
+  <!-- Disk bağlantısı -->
+  <line x1="130" y1="80" x2="228" y2="135" stroke="#7ab8d4" stroke-width="2"/>
+  <polygon points="228,135 218,130 222,140" fill="#7ab8d4"/>
+
+  <!-- Klavye bağlantısı -->
+  <line x1="130" y1="240" x2="228" y2="185" stroke="#7ab8d4" stroke-width="2"/>
+  <polygon points="228,185 218,190 222,180" fill="#7ab8d4"/>
+
+  <!-- Ekran bağlantısı -->
+  <line x1="510" y1="80" x2="412" y2="135" stroke="#7ab8d4" stroke-width="2"/>
+  <polygon points="412,135 422,130 418,140" fill="#7ab8d4"/>
+
+  <!-- Yazıcı bağlantısı -->
+  <line x1="510" y1="240" x2="412" y2="185" stroke="#7ab8d4" stroke-width="2"/>
+  <polygon points="412,185 422,190 418,180" fill="#7ab8d4"/>
+
+  <!-- Port bağlantısı -->
+  <line x1="320" y1="265" x2="320" y2="215" stroke="#7ab8d4" stroke-width="2"/>
+  <polygon points="320,215 315,225 325,225" fill="#7ab8d4"/>
+
+  <!-- Alt açıklama -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a8aaa" font-style="italic">Tüm donanım elemanları akış ile benzer şekilde kullanılır</text>
+</svg>

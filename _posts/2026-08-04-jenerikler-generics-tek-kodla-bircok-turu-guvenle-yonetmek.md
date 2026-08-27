@@ -9,6 +9,7 @@ tags:
   - csharp
   - tip-güvenliği
 toc: true
+image: /img/jenerikler-generics-tek-96.png
 ---
 
 Bir fonksiyonu `int` için yazıp ardından `string`, `double` ve kendi sınıflarımız için kopyalamak, yazılım dünyasının pek de eğlenceli olmayan tekrarlarından biridir. Jenerikler (generics), algoritmayı veri tipinden ayırarak aynı kodun farklı türlerle güvenli biçimde çalışmasını sağlar. C++ şablonlarını andıran bu yaklaşım, özellikle C#, Java ve TypeScript gibi dillerde yeniden kullanılabilir yapıların temelini oluşturur.
@@ -30,6 +31,9 @@ Derleyici `T` yerine kullanılacak gerçek tipi izlediği için yanlış tür at
 | Her tür için ayrı kod | Düşük | Yüksek | Yok |
 | `object` kullanmak | Orta | Düşük | Genellikle var |
 | Jenerik kullanmak | Yüksek | Yüksek | Genellikle yok |
+
+![jenerikler-generics-tek-96](/img/jenerikler-generics-tek-96.svg)
+
 
 ## Jenerik fonksiyon örneği
 

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f9ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f3f8ef;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="iosGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d5f5;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d4b8e8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="istreamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9e4f7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a8d4f0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="ostreamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7d4c9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f0bca8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="iostreamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4f0c9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#b8e8a8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="ifstreamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8dff7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8ec9f0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="ofstreamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7c9b8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f0a88e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="fstreamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9f0b8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a8e08e;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a4a5a">C++ Dosya Giriş/Çıkış Mimarisi</text>
+  <text x="320" y="46" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a7a8a">&lt;fstream&gt; başlık dosyası</text>
+
+  <!-- ios ana kutusu -->
+  <rect x="270" y="62" width="100" height="40" rx="10" fill="url(#iosGrad)" filter="url(#shadow)" stroke="#b89ad0" stroke-width="1.5"/>
+  <text x="320" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#4a3a5a">ios</text>
+
+  <!-- Oklar: ios -> istream, ostream, iostream -->
+  <path d="M 290 102 L 170 138" stroke="#7a8a9a" stroke-width="1.5" fill="none"/>
+  <polygon points="170,142 176,132 164,132" fill="#7a8a9a"/>
+
+  <path d="M 350 102 L 470 138" stroke="#7a8a9a" stroke-width="1.5" fill="none"/>
+  <polygon points="470,142 476,132 464,132" fill="#7a8a9a"/>
+
+  <path d="M 320 102 L 320 138" stroke="#7a8a9a" stroke-width="1.5" fill="none"/>
+  <polygon points="320,142 326,132 314,132" fill="#7a8a9a"/>
+
+  <!-- Ara sınıflar -->
+  <rect x="105" y="145" width="130" height="36" rx="8" fill="url(#istreamGrad)" filter="url(#shadowLight)" stroke="#8ab8d8" stroke-width="1.2"/>
+  <text x="170" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a5a7a">istream</text>
+
+  <rect x="405" y="145" width="130" height="36" rx="8" fill="url(#ostreamGrad)" filter="url(#shadowLight)" stroke="#d8a88a" stroke-width="1.2"/>
+  <text x="470" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a4a2a">ostream</text>
+
+  <rect x="255" y="145" width="130" height="36" rx="8" fill="url(#iostreamGrad)" filter="url(#shadowLight)" stroke="#a8c88a" stroke-width="1.2"/>
+  <text x="320" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a2a">iostream</text>
+
+  <!-- Oklar: istream -> ifstream -->
+  <path d="M 170 181 L 170 218" stroke="#7a8a9a" stroke-width="1.5" fill="none"/>
+  <polygon points="170,222 176,212 164,212" fill="#7a8a9a"/>
+
+  <!-- Oklar: ostream -> ofstream -->
+  <path d="M 470 181 L 470 218" stroke="#7a8a9a" stroke-width="1.5" fill="none"/>
+  <polygon points="470,222 476,212 464,212" fill="#7a8a9a"/>
+
+  <!-- Oklar: iostream -> fstream -->
+  <path d="M 320 181 L 320 218" stroke="#7a8a9a" stroke-width="1.5" fill="none"/>
+  <polygon points="320,222 326,212 314,212" fill="#7a8a9a"/>
+
+  <!-- Türetilmiş sınıflar -->
+  <rect x="105" y="225" width="130" height="36" rx="8" fill="url(#ifstreamGrad)" filter="url(#shadowLight)" stroke="#6aa8d8" stroke-width="1.2"/>
+  <text x="170" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4a6a">ifstream</text>
+  <text x="170" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a7a9a">Giriş akışı</text>
+
+  <rect x="405" y="225" width="130" height="36" rx="8" fill="url(#ofstreamGrad)" filter="url(#shadowLight)" stroke="#d8886a" stroke-width="1.2"/>
+  <text x="470" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a3a1a">ofstream</text>
+  <text x="470" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9a6a4a">Çıkış akışı</text>
+
+  <rect x="255" y="225" width="130" height="36" rx="8" fill="url(#fstreamGrad)" filter="url(#shadowLight)" stroke="#8ab86a" stroke-width="1.2"/>
+  <text x="320" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a5a1a">fstream</text>
+  <text x="320" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a8a3a">Giriş ve çıkış</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8a9aaa">Tüm sınıflar ios üyelerine erişim sağlar</text>
+</svg>

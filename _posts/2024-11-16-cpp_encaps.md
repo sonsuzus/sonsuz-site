@@ -11,7 +11,11 @@ tags:
   - oop
 redirect_from:
   - /posts/cpp_encaps/
+image: /img/cpp_encaps-83.png
 ---
+
+![cpp_encaps-83](/img/cpp_encaps-83.svg)
+
 
 
 Kapsülleme, programda bir sınıf içinde tanımlanan verileri ve yine aynı sınıf içinde tanımlanan ve bu verilere erişim sağlayarak kullanan metod veya fonksiyon adı verilen sistemi ifade eder. Bu sistemle, sınıf içinde ye alan veriler ve bu verilere erişim sağlayan kodlar bir bütünlük içinde korunarak, dışarıdan erişimi kısıtlanır. Böylece, program kendi içinde bir kod ve veri güvenliği sağlar. Bu sistemde, kod ve veri tek bir isim altında tanımlanarak, oluşturulan bir sınıf içindeki veri ve kodlar (metodlar) korunur.

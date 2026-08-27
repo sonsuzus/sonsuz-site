@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="55%" stop-color="#f3faf6"/>
+      <stop offset="100%" stop-color="#f8f5ff"/>
+    </linearGradient>
+    <linearGradient id="unionGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9dcfa"/>
+    </linearGradient>
+    <linearGradient id="interGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcf4e5"/>
+      <stop offset="100%" stop-color="#c5e9d5"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eee4ff"/>
+      <stop offset="100%" stop-color="#ddd0f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60738c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60738c" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="46" r="68" fill="#d9eafa" opacity="0.35"/>
+  <circle cx="583" cy="275" r="82" fill="#d9f1df" opacity="0.42"/>
+  <circle cx="555" cy="42" r="42" fill="#eee3fb" opacity="0.45"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#526579">TypeScript Tip Modeli</text>
+
+  <g filter="url(#shadow)">
+    <rect x="253" y="49" width="134" height="57" rx="17" fill="url(#centerGrad)" stroke="#c6b5e6"/>
+  </g>
+  <circle cx="280" cy="77" r="14" fill="#ffffff" opacity="0.72"/>
+  <path d="M274 72 L280 68 L286 72 L280 76 Z" fill="#8062ad"/>
+  <path d="M274 81 L280 77 L286 81 L280 85 Z" fill="#9678bf"/>
+  <text x="330" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e3f68">Tip Sistemi</text>
+  <text x="330" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c5a82">Esnek ve güvenli</text>
+
+  <path d="M285 107 C235 121 197 129 164 143" fill="none" stroke="#8aa6c6" stroke-width="2"/>
+  <polygon points="164,143 174,137 172,148" fill="#8aa6c6"/>
+  <path d="M355 107 C405 121 443 129 476 143" fill="none" stroke="#86ad96" stroke-width="2"/>
+  <polygon points="476,143 466,137 468,148" fill="#86ad96"/>
+
+  <g filter="url(#shadow)">
+    <rect x="43" y="131" width="239" height="119" rx="19" fill="url(#unionGrad)" stroke="#b5cde9"/>
+  </g>
+  <rect x="61" y="148" width="87" height="27" rx="13" fill="#ffffff" opacity="0.74"/>
+  <text x="104" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365c83">Union</text>
+  <text x="185" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406987">A ∪ B</text>
+
+  <path d="M86 200 C94 184 119 184 128 200 C136 215 124 228 107 228 C90 228 78 215 86 200 Z" fill="#f7fbff" stroke="#79a4cf" stroke-width="1.5"/>
+  <text x="107" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48739b">metin</text>
+  <path d="M126 205 L159 205" stroke="#789cbf" stroke-width="1.6"/>
+  <polygon points="159,205 151,200 151,210" fill="#789cbf"/>
+  <path d="M182 200 C190 184 215 184 224 200 C232 215 220 228 203 228 C186 228 174 215 182 200 Z" fill="#f7fbff" stroke="#79a4cf" stroke-width="1.5"/>
+  <text x="203" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48739b">sayı</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="69" y="264" width="187" height="32" rx="11" fill="#f8fcff" stroke="#c4d9ee"/>
+  </g>
+  <path d="M86 280 L98 280" stroke="#668db6" stroke-width="2"/>
+  <polygon points="98,280 92,276 92,284" fill="#668db6"/>
+  <text x="168" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7194">Tip daraltma ile güvenli erişim</text>
+
+  <g filter="url(#shadow)">
+    <rect x="358" y="131" width="239" height="119" rx="19" fill="url(#interGrad)" stroke="#b7dcc4"/>
+  </g>
+  <rect x="376" y="148" width="98" height="27" rx="13" fill="#ffffff" opacity="0.74"/>
+  <text x="425" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356a50">Kesişim</text>
+  <text x="513" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42745a">A ∩ B</text>
+
+  <circle cx="452" cy="207" r="29" fill="#e1f3ee" stroke="#75b69a" stroke-width="1.5"/>
+  <circle cx="495" cy="207" r="29" fill="#e7f4d9" stroke="#86b772" stroke-width="1.5"/>
+  <path d="M468 183 C480 191 480 223 468 231 C456 223 456 191 468 183 Z" fill="#b7dfc4" opacity="0.95"/>
+  <text x="443" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#447a65">Kişi</text>
+  <text x="504" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527b43">Yetki</text>
+  <text x="473" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b47">+</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="380" y="264" width="195" height="32" rx="11" fill="#fbfffb" stroke="#c8e2d0"/>
+  </g>
+  <path d="M397 280 L409 280" stroke="#5c9874" stroke-width="2"/>
+  <polygon points="409,280 403,276 403,284" fill="#5c9874"/>
+  <text x="497" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7b5c">Tüm alanlar zorunlu</text>
+
+  <path d="M320 122 L320 257" stroke="#b7c6cf" stroke-width="1" stroke-dasharray="4 5" opacity="0.8"/>
+  <g filter="url(#smallShadow)">
+    <rect x="284" y="205" width="72" height="31" rx="11" fill="#fff5ec" stroke="#efd1b4"/>
+  </g>
+  <text x="320" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6340">Çelişki: never</text>
+</svg>

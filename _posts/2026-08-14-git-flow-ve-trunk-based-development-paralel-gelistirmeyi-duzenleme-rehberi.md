@@ -9,6 +9,7 @@ tags:
   - git flow
   - trunk-based development
 toc: true
+image: /img/git-flow-ve-39.png
 ---
 
 Bir ekipte aynı anda özellik geliştirmek, hata düzeltmek ve sürüm hazırlamak yalnızca `git branch` komutunu bilmekle çözülmez. Asıl mesele, değişikliklerin hangi dalda ne kadar yaşayacağını, ne zaman gözden geçirileceğini ve üretime hangi kuralla taşınacağını ortaklaştırmaktır. Git Flow ile Trunk-Based Development (TBD), bu ortak çalışma sözleşmesini kurmak için yaygın iki yaklaşımdır.
@@ -61,6 +62,9 @@ Bu örnekte kod ana hatta erken katılabilir; ancak `payment_retry` bayrağı a�
 | Yayın modeli | Planlı, sürüm odaklı | Sık, mümkünse sürekli |
 | Ana risk | Geç birleşme çatışmaları | Yetersiz testte hızlı hata yayılımı |
 | Güçlü olduğu ortam | Versiyonlu ürünler, kontrollü yayınlar | CI/CD olgunluğu yüksek ekipler |
+
+![git-flow-ve-39](/img/git-flow-ve-39.svg)
+
 
 ## Hangisini seçmeli?
 

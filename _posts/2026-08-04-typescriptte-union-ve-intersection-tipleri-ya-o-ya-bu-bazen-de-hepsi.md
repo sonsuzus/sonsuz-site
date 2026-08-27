@@ -9,6 +9,7 @@ tags:
   - union types
   - ıntersection types
 toc: true
+image: /img/typescriptte-union-ve-38.png
 ---
 
 TypeScript’in tip sistemi, değişkenleri tek bir kalıba hapsetmek yerine gerçek dünyadaki çeşitliliği modellememize yardımcı olur. Bir değerin alternatif tiplerden birini taşıyabildiği durumlarda **union**, farklı yapıların bütün özelliklerini aynı nesnede toplamak istediğimizde ise **intersection** tipleri devreye girer. İsimleri matematik dersini hatırlatsa da doğru kullanıldıklarında kodu hem güvenli hem de oldukça esnek hâle getirirler.
@@ -123,3 +124,6 @@ type Imkansiz = string & number; // never
 Benzer şekilde, aynı isimli alanlar uyumsuz tiplerle kesiştirildiğinde ilgili alan kullanılamaz hâle gelebilir. Bu nedenle intersection oluştururken arayüzlerin çelişmediği kontrol edilmelidir.
 
 Özetle union, “seçeneklerden biri”; intersection ise “gereksinimlerin tamamı” demektir. Alternatif akışları union ile, farklı yetenekleri taşıyan birleşik nesneleri intersection ile modellemek kodun niyetini görünür kılar. TypeScript de bu modelin dışına çıktığınız anda nazik ama kararlı bir bekçi gibi sizi uyarır.
+
+![typescriptte-union-ve-38](/img/typescriptte-union-ve-38.svg)
+
