@@ -9,9 +9,13 @@ tags:
   - duygu analizi
   - python
 toc: true
+image: /img/metinlerin-ruh-halini-40.png
 ---
 
 Bir bilgisayarın “Bu uygulamaya bayıldım!” ile “Bir daha asla kullanmam!” arasındaki farkı anlayabilmesi kulağa sihir gibi gelebilir. Oysa temel seviyede bir duygu analizi motoru; metni temizleme, kelimeleri puanlama ve sonuçları birleştirme adımlarından oluşur. Bu projede makine öğrenmesine dalmadan, sözlük tabanlı ve açıklanabilir bir doğal dil işleme motoru geliştireceğiz.
+
+
+![metinlerin-ruh-halini-40](/img/metinlerin-ruh-halini-40.svg)
 
 ``
 

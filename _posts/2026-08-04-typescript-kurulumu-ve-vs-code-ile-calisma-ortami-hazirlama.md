@@ -9,6 +9,7 @@ tags:
   - node.js
   - vs code
 toc: true
+image: /img/typescript-kurulumu-ve-10.png
 ---
 
 JavaScript projelerine tür güvenliği, daha güçlü editör desteği ve erken hata yakalama yeteneği kazandırmak istiyorsanız TypeScript harika bir başlangıç noktasıdır. Bu rehberde TypeScript derleyicisini Node.js üzerinden kuracak, temel yapılandırmayı gerçekleştirecek ve hazırladığımız çalışma ortamını VS Code içinde küçük bir örnekle sınayacağız.
@@ -125,3 +126,6 @@ node dist/index.js
 ```
 
 Terminalde `Ada: Usta` çıktısını görüyorsanız zincirin tamamı çalışıyor demektir: VS Code kodu analiz etti, `tsc` türleri denetleyip JavaScript üretti ve Node.js sonucu çalıştırdı. Artık daha büyük TypeScript maceralarına hazırsınız!
+
+![typescript-kurulumu-ve-10](/img/typescript-kurulumu-ve-10.svg)
+

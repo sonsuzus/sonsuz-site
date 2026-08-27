@@ -11,7 +11,11 @@ tags:
 redirect_from:
   - /posts/cpp_strclass/
 toc: true
+image: /img/cpp_strclass-83.png
 ---
+
+![cpp_strclass-83](/img/cpp_strclass-83.svg)
+
 
 C++'da karakter dizisi işlemleri için boş bir karakterle ('\0') sonlandırılan karakter dizilerinin yanı sıra, [string](https://program.sonsuz.us/search.html?q=string) veri türündeki sınıf nesnelerini de kullanabiliriz.
 

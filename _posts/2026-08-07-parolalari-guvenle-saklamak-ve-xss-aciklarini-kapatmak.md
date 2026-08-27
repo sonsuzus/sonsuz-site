@@ -9,6 +9,7 @@ tags:
   - parola hashleme
   - xss
 toc: true
+image: /img/parolalari-guvenle-saklamak-39.png
 ---
 
 Bir web uygulamasında güvenlik, kapıya pahalı bir kilit takıp anahtarı paspasın altında bırakmamaktır. Kullanıcı parolalarını düz metin olarak saklamak tam da böyle bir hatadır. Veritabanı sızdırıldığında saldırganlar yalnızca uygulamadaki hesaplara değil, parola tekrar kullanılmışsa başka servislere de erişebilir. Benzer şekilde XSS açıkları, güvenilmeyen içeriğin tarayıcıda kod gibi çalışmasına izin vererek kullanıcı oturumlarını ve verilerini tehlikeye atar.
@@ -23,6 +24,9 @@ Bir web uygulamasında güvenlik, kapıya pahalı bir kilit takıp anahtarı pas
 | Şifreleme | Anahtarla evet | Genellikle hayır | AES-GCM |
 | Hızlı hash | Pratikte hayır | Hayır | SHA-256 |
 | Parola hashleme | Pratikte hayır | Evet | Argon2id, scrypt, bcrypt |
+
+![parolalari-guvenle-saklamak-39](/img/parolalari-guvenle-saklamak-39.svg)
+
 
 SHA-256 kriptografik olarak güçlü olsa da çok hızlıdır. Saldırganların saniyede milyonlarca parola tahmini yapabilmesi burada avantaj değil, felakettir. Argon2id gibi algoritmalar zaman ve bellek maliyetini yükselterek tahmin saldırılarını pahalılaştırır.
 

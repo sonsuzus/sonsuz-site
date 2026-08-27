@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="memory" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c9d9ff"/>
+      <stop offset="1" stop-color="#b8f0df"/>
+    </linearGradient>
+    <linearGradient id="input" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff2c7"/>
+      <stop offset="1" stop-color="#ffe3ab"/>
+    </linearGradient>
+    <linearGradient id="output" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f9d9e8"/>
+      <stop offset="1" stop-color="#edc5dd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#66829a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#66829a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="38" r="92" fill="#dcecff" opacity="0.48"/>
+  <circle cx="585" cy="283" r="110" fill="#dff4dd" opacity="0.52"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d70">Zaman içinde açılmış RNN</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728896">Geçmiş hafıza bir sonraki adıma taşınır</text>
+
+  <rect x="25" y="78" width="590" height="160" rx="24" fill="#ffffff" opacity="0.68" filter="url(#shadow)"/>
+
+  <path d="M171 139 C184 115 210 115 223 139" fill="none" stroke="#6c94a8" stroke-width="2.2"/>
+  <polygon points="220,135 229,140 219,144" fill="#6c94a8"/>
+  <path d="M317 139 C330 115 356 115 369 139" fill="none" stroke="#6c94a8" stroke-width="2.2"/>
+  <polygon points="366,135 375,140 365,144" fill="#6c94a8"/>
+  <path d="M463 139 C476 115 502 115 515 139" fill="none" stroke="#6c94a8" stroke-width="2.2"/>
+  <polygon points="512,135 521,140 511,144" fill="#6c94a8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="102" y="127" width="70" height="58" rx="16" fill="url(#memory)" stroke="#8ab8ba"/>
+    <rect x="248" y="127" width="70" height="58" rx="16" fill="url(#memory)" stroke="#8ab8ba"/>
+    <rect x="394" y="127" width="70" height="58" rx="16" fill="url(#memory)" stroke="#8ab8ba"/>
+    <rect x="540" y="127" width="70" height="58" rx="16" fill="url(#memory)" stroke="#8ab8ba"/>
+  </g>
+
+  <text x="137" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566c">RNN</text>
+  <text x="137" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476f79">h₁</text>
+  <text x="283" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566c">RNN</text>
+  <text x="283" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476f79">h₂</text>
+  <text x="429" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566c">RNN</text>
+  <text x="429" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476f79">h₃</text>
+  <text x="575" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566c">RNN</text>
+  <text x="575" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476f79">hₜ</text>
+
+  <g filter="url(#soft)">
+    <rect x="105" y="202" width="64" height="26" rx="10" fill="url(#input)"/>
+    <rect x="251" y="202" width="64" height="26" rx="10" fill="url(#input)"/>
+    <rect x="397" y="202" width="64" height="26" rx="10" fill="url(#input)"/>
+    <rect x="543" y="202" width="64" height="26" rx="10" fill="url(#input)"/>
+  </g>
+  <text x="137" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765b25">x₁</text>
+  <text x="283" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765b25">x₂</text>
+  <text x="429" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765b25">x₃</text>
+  <text x="575" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765b25">xₜ</text>
+
+  <path d="M137 201 L137 191" stroke="#c09645" stroke-width="2"/>
+  <polygon points="133,194 137,187 141,194" fill="#c09645"/>
+  <path d="M283 201 L283 191" stroke="#c09645" stroke-width="2"/>
+  <polygon points="279,194 283,187 287,194" fill="#c09645"/>
+  <path d="M429 201 L429 191" stroke="#c09645" stroke-width="2"/>
+  <polygon points="425,194 429,187 433,194" fill="#c09645"/>
+  <path d="M575 201 L575 191" stroke="#c09645" stroke-width="2"/>
+  <polygon points="571,194 575,187 579,194" fill="#c09645"/>
+
+  <g filter="url(#soft)">
+    <rect x="105" y="83" width="64" height="26" rx="10" fill="url(#output)"/>
+    <rect x="251" y="83" width="64" height="26" rx="10" fill="url(#output)"/>
+    <rect x="397" y="83" width="64" height="26" rx="10" fill="url(#output)"/>
+    <rect x="543" y="83" width="64" height="26" rx="10" fill="url(#output)"/>
+  </g>
+  <text x="137" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#815069">y₁</text>
+  <text x="283" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#815069">y₂</text>
+  <text x="429" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#815069">y₃</text>
+  <text x="575" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#815069">tahmin</text>
+
+  <path d="M137 121 L137 111" stroke="#bd789c" stroke-width="2"/>
+  <polygon points="133,114 137,107 141,114" fill="#bd789c"/>
+  <path d="M283 121 L283 111" stroke="#bd789c" stroke-width="2"/>
+  <polygon points="279,114 283,107 287,114" fill="#bd789c"/>
+  <path d="M429 121 L429 111" stroke="#bd789c" stroke-width="2"/>
+  <polygon points="425,114 429,107 433,114" fill="#bd789c"/>
+  <path d="M575 121 L575 111" stroke="#bd789c" stroke-width="2"/>
+  <polygon points="571,114 575,107 579,114" fill="#bd789c"/>
+
+  <rect x="42" y="262" width="556" height="36" rx="15" fill="#eaf2f6" filter="url(#soft)"/>
+  <circle cx="64" cy="280" r="7" fill="#75b9af"/>
+  <text x="80" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416273">Gizli durum: geçmiş bağlamı korur</text>
+  <path d="M289 280 L305 280" stroke="#668fa2" stroke-width="2"/>
+  <polygon points="302,276 310,280 302,284" fill="#668fa2"/>
+  <text x="322" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416273">BPTT: hata geçmişe yayılır</text>
+  <path d="M532 280 L516 280" stroke="#c47a91" stroke-width="2"/>
+  <polygon points="519,276 511,280 519,284" fill="#c47a91"/>
+</svg>

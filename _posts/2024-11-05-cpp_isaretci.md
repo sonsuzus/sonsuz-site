@@ -12,7 +12,11 @@ tags:
 redirect_from:
   - /posts/cpp_isaretci/
 toc: true
+image: /img/cpp_isaretci-36.png
 ---
+
+![cpp_isaretci-36](/img/cpp_isaretci-36.svg)
+
 
 
 

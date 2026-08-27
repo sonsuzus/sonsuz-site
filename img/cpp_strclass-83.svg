@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6c9bd1"/>
+      <stop offset="100%" stop-color="#8ab4d8"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4f7"/>
+    </linearGradient>
+    <linearGradient id="left" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7e8"/>
+      <stop offset="100%" stop-color="#e2f0d4"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe8cc"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8dff5"/>
+      <stop offset="100%" stop-color="#d9cceb"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <rect x="180" y="15" width="280" height="36" rx="18" fill="url(#header)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">C++ String Sınıfı</text>
+
+  <!-- Merkez çekirdek -->
+  <rect x="245" y="95" width="150" height="50" rx="12" fill="url(#core)" stroke="#5b8db8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c5f8a">string Sınıfı</text>
+  <text x="320" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a7ba5">basic_string tabanlı</text>
+
+  <!-- Sol üst: C Dizisi -->
+  <rect x="30" y="70" width="160" height="55" rx="10" fill="url(#left)" stroke="#7aa85e" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="110" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a7a2e">C Karakter Dizisi</text>
+  <text x="110" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5c8a40">char dizi[]</text>
+  <text x="110" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5c8a40">'\0' sonlandırma</text>
+
+  <!-- Sol alt: cstring fonksiyonları -->
+  <rect x="30" y="200" width="160" height="55" rx="10" fill="url(#left)" stroke="#7aa85e" stroke-width="1.5" filter="url(#shadow)" opacity="0.85"/>
+  <text x="110" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a7a2e">cstring (string.h)</text>
+  <text x="110" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5c8a40">strcpy, strcat</text>
+  <text x="110" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5c8a40">fonksiyon tabanlı</text>
+
+  <!-- Sağ üst: wstring -->
+  <rect x="450" y="70" width="160" height="55" rx="10" fill="url(#right)" stroke="#d4a04a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="530" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a07020">wstring</text>
+  <text x="530" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#b08030">Geniş karakter</text>
+  <text x="530" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#b08030">desteği</text>
+
+  <!-- Sağ alt: Avantajlar -->
+  <rect x="450" y="200" width="160" height="70" rx="10" fill="url(#right)" stroke="#d4a04a" stroke-width="1.5" filter="url(#shadow)" opacity="0.85"/>
+  <text x="530" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a07020">Avantajlar</text>
+  <text x="530" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#b08030">İşlemci desteği</text>
+  <text x="530" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#b08030">Boyut sorunu yok</text>
+  <text x="530" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#b08030">Algoritma desteği</text>
+
+  <!-- Alt: Başlık dosyası -->
+  <rect x="220" y="265" width="200" height="36" rx="18" fill="url(#bottom)" stroke="#8b6bb5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a3d8a">&lt;string&gt; başlık dosyası</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Sol üstten merkeze -->
+  <path d="M190 97 L245 115" stroke="#7aa85e" stroke-width="2" fill="none"/>
+  <polygon points="245,115 236,110 237,119" fill="#7aa85e"/>
+
+  <!-- Sol alttan merkeze -->
+  <path d="M190 225 L245 135" stroke="#7aa85e" stroke-width="2" fill="none"/>
+  <polygon points="245,135 236,138 241,128" fill="#7aa85e"/>
+
+  <!-- Sağ üstten merkeze -->
+  <path d="M450 97 L395 115" stroke="#d4a04a" stroke-width="2" fill="none"/>
+  <polygon points="395,115 403,110 402,119" fill="#d4a04a"/>
+
+  <!-- Sağ alttan merkeze -->
+  <path d="M450 225 L395 135" stroke="#d4a04a" stroke-width="2" fill="none"/>
+  <polygon points="395,135 403,138 398,128" fill="#d4a04a"/>
+
+  <!-- Merkezden alta -->
+  <path d="M320 145 L320 265" stroke="#8b6bb5" stroke-width="2" fill="none"/>
+  <polygon points="320,265 315,256 325,256" fill="#8b6bb5"/>
+
+  <!-- Sol üstten sol alta bağlantı -->
+  <path d="M110 125 L110 200" stroke="#7aa85e" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="110,200 105,192 115,192" fill="#7aa85e" opacity="0.6"/>
+
+  <!-- Sağ üstten sağ alta bağlantı -->
+  <path d="M530 125 L530 200" stroke="#d4a04a" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="530,200 525,192 535,192" fill="#d4a04a" opacity="0.6"/>
+
+  <!-- Bilgi etiketi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8899aa">İşlemci tabanlı ve güvenli dizi yönetimi</text>
+</svg>

@@ -8,9 +8,13 @@ tags:
   - yapay zeka
   - derin öğrenme
   - rnn
+image: /img/rnn-ve-zaman-50.png
 ---
 
 Bir cümlenin sonundaki kelimeyi tahmin ederken önceki kelimeleri, yarının hisse fiyatını öngörürken de dünkü hareketleri görmezden gelemezsiniz. Tekrarlayan Sinir Ağları (Recurrent Neural Network, RNN), tam bu noktada devreye girer: Veriyi tek seferlik bağımsız satırlar olarak değil, zaman içinde akan bir hikâye olarak işler. Dil çevirisi, duygu analizi, sensör verisi ve finansal zaman serileri gibi alanlarda RNN'in süper gücü, önceki adımlardan öğrendiği bilgiyi bir sonraki adıma taşıyan gizli durumudur.
+
+![rnn-ve-zaman-50](/img/rnn-ve-zaman-50.svg)
+
 ``
 
 Klasik ileri beslemeli ağlarda her giriş birbirinden bağımsız kabul edilir. Örneğin bir görüntü sınıflandırıcısı, tek resmi inceler ve karar verir. Oysa `"Bugün hava çok"` ifadesinden sonra gelecek kelimenin `"güzel"` olma olasılığı, daha önce okunan bağlama bağlıdır. RNN, her zaman adımında hem yeni girdiyi $x_t$ hem de önceki hafızayı $h_{t-1}$ kullanır. Temel hesap şu şekildedir:

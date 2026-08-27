@@ -9,6 +9,7 @@ tags:
   - pdo
   - mysql
 toc: true
+image: /img/php-ile-guvenli-86.png
 ---
 
 Bir PHP uygulamasının verilerle konuşabilmesi için güvenilir bir köprüye ihtiyacı vardır. PDO, yani PHP Data Objects, PHP ile MySQL gibi veritabanları arasında bu köprüyü kuran nesne yönelimli bir arayüzdür. Hazırlanmış sorgular, hata yönetimi ve farklı veritabanı sistemlerine uyum gibi özellikleri sayesinde hem güvenli hem de esnek uygulamalar geliştirmeyi kolaylaştırır.
@@ -116,3 +117,6 @@ try {
 `commit()` değişiklikleri kalıcılaştırırken `rollBack()` başarısız işlemden önceki duruma döner. Özellikle sipariş, ödeme ve stok güncelleme süreçlerinde transaction kullanmak kritik öneme sahiptir.
 
 Sonuç olarak PDO; taşınabilirlik, prepared statement desteği, istisna tabanlı hata yönetimi ve transaction özellikleriyle modern PHP projelerinin güçlü araçlarından biridir. Bağlantı bilgilerini korumak, kullanıcı verilerini parametrelerle bağlamak ve hataları ziyaretçiye göstermeden kaydetmek güvenli bir veri katmanının temelini oluşturur.
+
+![php-ile-guvenli-86](/img/php-ile-guvenli-86.svg)
+

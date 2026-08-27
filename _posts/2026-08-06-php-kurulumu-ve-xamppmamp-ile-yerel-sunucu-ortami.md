@@ -9,6 +9,7 @@ tags:
   - xampp
   - mamp
 toc: true
+image: /img/php-kurulumu-ve-19.png
 ---
 
 PHP ile dinamik bir web uygulaması geliştirirken dosyaya çift tıklamak yeterli değildir. Tarayıcı PHP kodunu doğrudan çalıştıramaz; isteğin bir web sunucusuna ulaşması, PHP yorumlayıcısından geçmesi ve gerekiyorsa veritabanıyla konuşması gerekir. XAMPP ve MAMP, bu parçaları tek pakette sunarak bilgisayarımızı internete açmadan küçük bir geliştirme sunucusuna dönüştürür.
@@ -42,6 +43,9 @@ Yerel geliştirmede ağ gecikmesi çok düşük olduğundan kod ve veritabanı p
 | Veritabanı | MariaDB | MySQL |
 | Yönetim biçimi | Kontrol paneli | Masaüstü uygulaması |
 | Kullanım yaklaşımı | Esnek ve yaygın | Özellikle macOS'ta sade |
+
+![php-kurulumu-ve-19](/img/php-kurulumu-ve-19.svg)
+
 
 Her iki araç da başlangıç için uygundur. Windows kullanıcıları genellikle XAMPP'ı, macOS kullanıcıları ise MAMP'ı tercih eder. Seçim yaparken projenin kullanacağı PHP sürümünü kontrol etmek önemlidir.
 

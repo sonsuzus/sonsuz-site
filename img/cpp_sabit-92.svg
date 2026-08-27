@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7ec"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5b8fd9"/>
+      <stop offset="100%" stop-color="#7bb0e8"/>
+    </linearGradient>
+    <linearGradient id="intBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#e8f0fe"/>
+    </linearGradient>
+    <linearGradient id="floatBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf9ff"/>
+      <stop offset="100%" stop-color="#f3e8fd"/>
+    </linearGradient>
+    <linearGradient id="charBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#fdeedb"/>
+    </linearGradient>
+    <linearGradient id="stringBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2fff8"/>
+      <stop offset="100%" stop-color="#ddf5e8"/>
+    </linearGradient>
+    <linearGradient id="suffixBox" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f7f3ff"/>
+      <stop offset="100%" stop-color="#e8e0f5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arkaplan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <rect x="200" y="14" width="240" height="34" rx="17" fill="url(#header)" filter="url(#shadow)"/>
+  <text x="320" y="36" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">C++ Sabitler</text>
+
+  <!-- Sabit Türleri -->
+  <text x="40" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a5a8c">Sabit Türleri</text>
+
+  <!-- int sabiti -->
+  <rect x="30" y="82" width="130" height="42" rx="8" fill="url(#intBox)" stroke="#a0b8d8" stroke-width="1" filter="url(#shadow)"/>
+  <text x="95" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c4a7c" text-anchor="middle">int</text>
+  <text x="95" y="116" font-family="Consolas, monospace" font-size="11" fill="#3a5a8c" text-anchor="middle">21</text>
+
+  <!-- float sabiti -->
+  <rect x="180" y="82" width="130" height="42" rx="8" fill="url(#floatBox)" stroke="#c0a8d8" stroke-width="1" filter="url(#shadow)"/>
+  <text x="245" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a3a8c" text-anchor="middle">float</text>
+  <text x="245" y="116" font-family="Consolas, monospace" font-size="11" fill="#6a4a9c" text-anchor="middle">35.754</text>
+
+  <!-- char sabiti -->
+  <rect x="330" y="82" width="130" height="42" rx="8" fill="url(#charBox)" stroke="#d8b880" stroke-width="1" filter="url(#shadow)"/>
+  <text x="395" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#8c6a2c" text-anchor="middle">char</text>
+  <text x="395" y="116" font-family="Consolas, monospace" font-size="11" fill="#9c7a3c" text-anchor="middle">'B'</text>
+
+  <!-- string sabiti -->
+  <rect x="480" y="82" width="130" height="42" rx="8" fill="url(#stringBox)" stroke="#80c8a8" stroke-width="1" filter="url(#shadow)"/>
+  <text x="545" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c7c5c" text-anchor="middle">string</text>
+  <text x="545" y="116" font-family="Consolas, monospace" font-size="11" fill="#3c8c6c" text-anchor="middle">"Bilgisayar"</text>
+
+  <!-- Geniş karakter açıklaması -->
+  <rect x="180" y="136" width="280" height="28" rx="14" fill="#e8f0fa" stroke="#b0c8e0" stroke-width="0.8" filter="url(#shadow)"/>
+  <text x="320" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7c" text-anchor="middle">Geniş karakterler için L öneki: L'B' , L"Bilgisayar"</text>
+
+  <!-- Ok: türlerden aşağı -->
+  <line x1="95" y1="124" x2="95" y2="178" stroke="#a0b8d8" stroke-width="1.5"/>
+  <polygon points="90,178 100,178 95,185" fill="#a0b8d8"/>
+  <line x1="245" y1="124" x2="245" y2="178" stroke="#c0a8d8" stroke-width="1.5"/>
+  <polygon points="240,178 250,178 245,185" fill="#c0a8d8"/>
+  <line x1="395" y1="124" x2="395" y2="178" stroke="#d8b880" stroke-width="1.5"/>
+  <polygon points="390,178 400,178 395,185" fill="#d8b880"/>
+  <line x1="545" y1="124" x2="545" y2="178" stroke="#80c8a8" stroke-width="1.5"/>
+  <polygon points="540,178 550,178 545,185" fill="#80c8a8"/>
+
+  <!-- Tür Belirleme Ekleri -->
+  <rect x="140" y="188" width="360" height="34" rx="17" fill="url(#suffixBox)" stroke="#b8a8d8" stroke-width="1" filter="url(#shadow)"/>
+  <text x="320" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a3a7c" text-anchor="middle">Tür Belirleme Ekleri</text>
+
+  <!-- Ekler -->
+  <rect x="40" y="238" width="120" height="36" rx="8" fill="#f0f0ff" stroke="#b0b0d8" stroke-width="0.8" filter="url(#shadow)"/>
+  <text x="100" y="252" font-family="Consolas, monospace" font-size="12" font-weight="bold" fill="#3a3a8c" text-anchor="middle">U</text>
+  <text x="100" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a5a9c" text-anchor="middle">int</text>
+
+  <rect x="175" y="238" width="120" height="36" rx="8" fill="#fdf0ff" stroke="#d0b0d8" stroke-width="0.8" filter="url(#shadow)"/>
+  <text x="235" y="252" font-family="Consolas, monospace" font-size="12" font-weight="bold" fill="#7c3a8c" text-anchor="middle">F</text>
+  <text x="235" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9c5aac" text-anchor="middle">float</text>
+
+  <rect x="310" y="238" width="120" height="36" rx="8" fill="#fff5f0" stroke="#d8c0a8" stroke-width="0.8" filter="url(#shadow)"/>
+  <text x="370" y="252" font-family="Consolas, monospace" font-size="12" font-weight="bold" fill="#8c5a2c" text-anchor="middle">L</text>
+  <text x="370" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ac7a4c" text-anchor="middle">long int / double</text>
+
+  <rect x="445" y="238" width="120" height="36" rx="8" fill="#f0fff5" stroke="#a0d8b8" stroke-width="0.8" filter="url(#shadow)"/>
+  <text x="505" y="252" font-family="Consolas, monospace" font-size="12" font-weight="bold" fill="#2c7c5c" text-anchor="middle">LL</text>
+  <text x="505" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4c9c7c" text-anchor="middle">long long int</text>
+
+  <!-- Alt not -->
+  <text x="320" y="302" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7a9c" text-anchor="middle" font-style="italic">Sabitler program başında ilk değer atamak için kullanılır</text>
+</svg>

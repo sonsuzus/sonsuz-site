@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/cpp_fonksiyon/
 toc: true
+image: /img/cpp_fonksiyon-53.png
 ---
 
 
@@ -1821,3 +1822,6 @@ Yukarıdaki programı derleyip çalıştırdığımızda, aşağıdaki ifadeleri
 1 2 3 4 5 6 7 8 9 10
 
 ```
+
+![cpp_fonksiyon-53](/img/cpp_fonksiyon-53.svg)
+

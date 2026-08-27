@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="castle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6efff"/>
+      <stop offset="100%" stop-color="#d8e7fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7891aa" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#7891aa" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="320" cy="159" r="124" fill="#dceeff" opacity="0.34"/>
+  <circle cx="320" cy="159" r="104" fill="#ffffff" opacity="0.42"/>
+
+  <rect x="32" y="111" width="132" height="96" rx="18" fill="#fff8e8" filter="url(#shadow)"/>
+  <rect x="43" y="123" width="110" height="25" rx="10" fill="#f7dca7"/>
+  <text x="98" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f5420" font-weight="600">Dış Kod</text>
+  <circle cx="66" cy="169" r="10" fill="#f0c46e"/>
+  <path d="M57 190 Q66 178 75 190" fill="none" stroke="#b9872e" stroke-width="3" stroke-linecap="round"/>
+  <text x="112" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#715f42">Güvenli çağrı</text>
+  <text x="112" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#715f42">yalnızca metot</text>
+
+  <path d="M164 159 H200" fill="none" stroke="#6194bd" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="201,159 191,153 191,165" fill="#6194bd"/>
+
+  <rect x="202" y="52" width="238" height="215" rx="26" fill="url(#castle)" stroke="#a8c6e3" stroke-width="2" filter="url(#shadow)"/>
+  <path d="M224 92 V73 H247 V92 M278 92 V73 H301 V92 M332 92 V73 H355 V92 M386 92 V73 H409 V92" fill="#c7dcf3" stroke="#8eb2d4" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="222" y="91" width="198" height="34" rx="12" fill="#b9d5ef"/>
+  <text x="321" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d82" font-weight="700">BankAccount Sınıfı</text>
+
+  <rect x="226" y="140" width="190" height="44" rx="13" fill="#fff1f0" stroke="#e5b5b3" stroke-width="1.5" filter="url(#soft)"/>
+  <path d="M247 154 h14 v15 h-14z M250 154 v-5 q4-7 8 0 v5" fill="none" stroke="#b96968" stroke-width="2" stroke-linejoin="round"/>
+  <text x="276" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#944c4b" font-weight="700">private</text>
+  <text x="276" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c6464">balance ve owner</text>
+
+  <rect x="226" y="194" width="190" height="52" rx="13" fill="#e8f7ed" stroke="#a8d7b8" stroke-width="1.5" filter="url(#soft)"/>
+  <circle cx="253" cy="219" r="12" fill="#8ec9a5"/>
+  <path d="M247 219 l4 4 8-9" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="276" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36704d" font-weight="700">public</text>
+  <text x="276" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e6f5a">yatır ve çek kontrolü</text>
+
+  <path d="M416 215 H454 V159 H477" fill="none" stroke="#68a486" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="478,159 468,153 468,165" fill="#68a486"/>
+  <rect x="429" y="181" width="70" height="22" rx="9" fill="#d9f0e1"/>
+  <text x="464" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397252">public</text>
+
+  <path d="M416 161 H455 V91 H477" fill="none" stroke="#9a80c4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="478,91 468,85 468,97" fill="#9a80c4"/>
+  <rect x="426" y="105" width="86" height="22" rx="9" fill="#eee7fa"/>
+  <text x="469" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d538e">protected</text>
+
+  <rect x="478" y="48" width="132" height="87" rx="18" fill="#f3edff" filter="url(#shadow)"/>
+  <rect x="489" y="60" width="110" height="24" rx="9" fill="#d8c8f2"/>
+  <text x="544" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#604782" font-weight="600">Alt Sınıf</text>
+  <text x="544" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735e8e">Ödül Hesabı</text>
+  <text x="544" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735e8e">bonus metodu</text>
+
+  <rect x="478" y="141" width="132" height="92" rx="18" fill="#ecf8ef" filter="url(#shadow)"/>
+  <rect x="489" y="153" width="110" height="24" rx="9" fill="#c9ead2"/>
+  <text x="544" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39704d" font-weight="600">Geçerli Durum</text>
+  <text x="544" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7458">Bakiye ≥ 0</text>
+  <path d="M510 213 h68" stroke="#91c5a0" stroke-width="2" stroke-linecap="round"/>
+
+  <path d="M182 248 H199" fill="none" stroke="#d47d78" stroke-width="3" stroke-linecap="round"/>
+  <path d="M188 241 L199 255 M199 241 L188 255" stroke="#d47d78" stroke-width="3" stroke-linecap="round"/>
+  <text x="110" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a75c59">Doğrudan erişim yasak</text>
+
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#577087">Kapsülleme: veri içeride, kurallar kapıda</text>
+</svg>

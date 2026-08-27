@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4fc"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e9"/>
+      <stop offset="100%" stop-color="#c8ebd0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ede7f6"/>
+      <stop offset="100%" stop-color="#d1c4e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">C++ İşaretçiler</text>
+  <line x1="220" y1="38" x2="420" y2="38" stroke="#2c3e50" stroke-width="1" opacity="0.3"/>
+
+  <!-- Merkez: İşaretçi Değişkeni -->
+  <rect x="245" y="120" width="150" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#5b8def" stroke-width="1.5"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a3a6b">İşaretçi</text>
+  <text x="320" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a6b">int *ip</text>
+
+  <!-- Sol üst: Bellek Adresi -->
+  <rect x="40" y="55" width="130" height="45" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="105" y="73" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">Bellek Adresi</text>
+  <text x="105" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b5e20">0x7ffc...</text>
+
+  <!-- Sol alt: & İşlemcisi -->
+  <rect x="40" y="220" width="130" height="45" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="105" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Adres Alma</text>
+  <text x="105" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e65100">&amp;değişken</text>
+
+  <!-- Sağ üst: Değer -->
+  <rect x="470" y="55" width="130" height="45" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#e91e63" stroke-width="1.5"/>
+  <text x="535" y="73" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#880e4f">Değer</text>
+  <text x="535" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#880e4f">42</text>
+
+  <!-- Sağ alt: * İşlemcisi -->
+  <rect x="470" y="220" width="130" height="45" rx="10" fill="url(#boxGrad5)" filter="url(#shadow)" stroke="#9c27b0" stroke-width="1.5"/>
+  <text x="535" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a148c">Değer Erişimi</text>
+  <text x="535" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a148c">*ip</text>
+
+  <!-- Ok: Bellek Adresi -> İşaretçi -->
+  <path d="M 170 78 C 200 78, 215 120, 240 138" fill="none" stroke="#4caf50" stroke-width="2"/>
+  <polygon points="240,138 232,130 232,146" fill="#4caf50"/>
+
+  <!-- Ok: & İşlemcisi -> İşaretçi -->
+  <path d="M 170 242 C 200 242, 215 180, 240 162" fill="none" stroke="#ff9800" stroke-width="2"/>
+  <polygon points="240,162 232,170 232,154" fill="#ff9800"/>
+
+  <!-- Ok: İşaretçi -> Değer -->
+  <path d="M 400 138 C 430 120, 445 78, 465 78" fill="none" stroke="#e91e63" stroke-width="2"/>
+  <polygon points="465,78 455,72 455,84" fill="#e91e63"/>
+
+  <!-- Ok: İşaretçi -> * İşlemcisi -->
+  <path d="M 400 162 C 430 180, 445 242, 465 242" fill="none" stroke="#9c27b0" stroke-width="2"/>
+  <polygon points="465,242 455,248 455,236" fill="#9c27b0"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#666" opacity="0.8">İşaretçi, bellekteki bir adresi tutar ve * ile değere erişir</text>
+</svg>

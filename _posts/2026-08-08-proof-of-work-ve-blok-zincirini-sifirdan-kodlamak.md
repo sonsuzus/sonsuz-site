@@ -9,6 +9,7 @@ tags:
   - proof-of-work
   - python
 toc: true
+image: /img/proof-of-work-73.png
 ---
 
 Blok zinciri çoğu zaman kripto paralarla özdeşleştirilse de temelinde oldukça anlaşılır bir fikir vardır: Kayıtları bloklar hâlinde birbirine bağlamak ve geçmişi değiştirmeyi hesaplama açısından pahalılaştırmak. Bu projede hazır blockchain kütüphanelerine dokunmadan Python ile blok, zincir ve Proof of Work mekanizması oluşturacağız.
@@ -31,6 +32,9 @@ Proof of Work, geçerli hash üretimine ek bir şart koyar. Örneğin hash değe
 | Previous hash | Blokları birbirine bağlar | Zincir bağlantısı kopar |
 | Nonce | Yeni hash denemeleri sağlar | İş kanıtı aranır |
 | Zorluk | Gerekli sıfır sayısını belirler | Madencilik maliyeti artar |
+
+![proof-of-work-73](/img/proof-of-work-73.svg)
+
 
 Bir hash’in istenen $d$ adet sıfırla başlama olasılığı, onaltılık gösterimde yaklaşık $1/16^d$ olur. Beklenen deneme sayısı ise:
 

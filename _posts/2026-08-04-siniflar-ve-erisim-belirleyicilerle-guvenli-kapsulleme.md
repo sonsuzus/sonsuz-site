@@ -9,6 +9,7 @@ tags:
   - sınıflar
   - kapsülleme
 toc: true
+image: /img/siniflar-ve-erisim-28.png
 ---
 
 Bir sınıfı yalnızca değişkenleri ve metotları bir araya getiren bir kutu olarak düşünmek eksik kalır. İyi tasarlanmış bir sınıf, kendi verisini koruyan ve dış dünyaya kontrollü bir kullanım alanı sunan küçük bir kale gibidir. `public`, `private` ve `protected` erişim belirleyicileri ise bu kalenin hangi kapılarının herkese, hangilerinin yalnızca içeridekilere açılacağını belirler.
@@ -33,6 +34,9 @@ Java, C# ve C++ gibi dillerde ayrıntılar değişebilse de temel yaklaşım ben
 | `public` | Evet | Evet | Evet | Kullanıcıya sunulan metotlar |
 | `private` | Evet | Hayır | Hayır | Alanlar ve iç yardımcı metotlar |
 | `protected` | Evet | Evet | Genellikle hayır | Kalıtıma özel genişletme noktaları |
+
+![siniflar-ve-erisim-28](/img/siniflar-ve-erisim-28.svg)
+
 
 `public`, sınıfın dış dünyaya verdiği sözleşmedir. Bu nedenle her alanı veya metodu düşünmeden `public` yapmak, evin bütün kapılarını açık bırakmaya benzer. `private`, bir üyenin yalnızca tanımlandığı sınıf tarafından kullanılmasını sağlar. `protected` ise özellikle kalıtım sırasında alt sınıflara kontrollü erişim vermek için kullanılır.
 

@@ -9,9 +9,13 @@ tags:
   - kontrol akışı
   - javascript
 toc: true
+image: /img/degiskenler-ve-kontrol-65.png
 ---
 
 Bir web sayfasının kullanıcıya göre farklı davranmasını sağlayan temel güç, değişkenler ve kontrol akış yapılarından gelir. Değişkenler verileri hafızada tutarken `if-else` ve `switch-case` gibi yapılar programın hangi kod yolunu izleyeceğine karar verir. Kısacası değişkenler sahnedeki oyuncuları, kontrol yapıları ise senaryoyu temsil eder.
+
+
+![degiskenler-ve-kontrol-65](/img/degiskenler-ve-kontrol-65.svg)
 
 ``
 

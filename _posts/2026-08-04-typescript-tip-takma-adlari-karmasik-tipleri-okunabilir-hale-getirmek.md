@@ -9,7 +9,11 @@ tags:
   - type aliases
   - tip güvenliği
 toc: true
+image: /img/typescript-tip-takma-50.png
 ---
+
+![typescript-tip-takma-50](/img/typescript-tip-takma-50.svg)
+
 
 Bir projede aynı uzun tip tanımını üçüncü kez yazarken parmaklarınız “Bunun daha kısa bir yolu olmalı!” diye isyan ediyorsa, TypeScript’in **tip takma adları** yardımınıza yetişir. Type alias, karmaşık veya sık kullanılan bir tipe anlamlı bir isim vererek kodun okunabilirliğini artırır; üstelik bunu çalışma zamanına ek yük getirmeden yapar.
 ``

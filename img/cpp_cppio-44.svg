@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf9"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f7e9"/>
+      <stop offset="100%" stop-color="#c8efd0"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf2e3"/>
+      <stop offset="100%" stop-color="#fbe3c2"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0e8fd"/>
+      <stop offset="100%" stop-color="#e0d1f7"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">C++ Giriş/Çıkış Sistemi</text>
+  <line x1="180" y1="40" x2="460" y2="40" stroke="#4a90a4" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Merkez: Akış Kavramı -->
+  <rect x="245" y="120" width="150" height="48" rx="12" fill="url(#g1)" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a5276">Akış (Stream)</text>
+  <text x="320" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Mantıksal I/O Aygıtı</text>
+
+  <!-- Üst: Fiziksel Cihazlar -->
+  <rect x="60" y="55" width="130" height="40" rx="10" fill="url(#g3)" stroke="#e67e22" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="125" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7e5109">Fiziksel Cihazlar</text>
+  <text x="125" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">Dosya, Ekran, Yazıcı</text>
+
+  <rect x="450" y="55" width="130" height="40" rx="10" fill="url(#g3)" stroke="#e67e22" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="515" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7e5109">Aynı I/O Fonksiyonları</text>
+  <text x="515" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">Her Cihazda Çalışır</text>
+
+  <!-- Oklar: Üstten merkeze -->
+  <path d="M125 95 L125 110 L280 120" stroke="#5b9bd5" stroke-width="1.5" fill="none"/>
+  <polygon points="280,120 270,114 270,126" fill="#5b9bd5"/>
+
+  <path d="M515 95 L515 110 L360 120" stroke="#5b9bd5" stroke-width="1.5" fill="none"/>
+  <polygon points="360,120 350,114 350,126" fill="#5b9bd5"/>
+
+  <!-- Sol: basic_streambuf -->
+  <rect x="40" y="185" width="150" height="52" rx="10" fill="url(#g4)" stroke="#8e44ad" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="115" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5b2c6f">basic_streambuf</text>
+  <text x="115" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">Düşük Seviye I/O</text>
+
+  <!-- Sağ: Şablon Sınıflar -->
+  <rect x="450" y="185" width="150" height="52" rx="10" fill="url(#g2)" stroke="#27ae60" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="525" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Şablon Sınıflar</text>
+  <text x="525" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">8-bit ve Geniş Karakter</text>
+
+  <!-- Oklar: Merkezden yanlara -->
+  <path d="M245 144 L200 144 L190 185" stroke="#8e44ad" stroke-width="1.5" fill="none"/>
+  <polygon points="190,185 186,175 196,175" fill="#8e44ad"/>
+
+  <path d="M395 144 L440 144 L450 185" stroke="#27ae60" stroke-width="1.5" fill="none"/>
+  <polygon points="450,185 446,175 456,175" fill="#27ae60"/>
+
+  <!-- Alt: iostream Başlık Dosyası -->
+  <rect x="220" y="260" width="200" height="40" rx="10" fill="url(#g2)" stroke="#27ae60" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="320" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">&lt;iostream&gt;</text>
+  <text x="320" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5d6d7e">Sınıf Bildirimleri</text>
+
+  <!-- Oklar: Yanlardan alta -->
+  <path d="M115 237 L115 250 L220 270" stroke="#27ae60" stroke-width="1.5" fill="none"/>
+  <polygon points="220,270 210,266 210,276" fill="#27ae60"/>
+
+  <path d="M525 237 L525 250 L420 270" stroke="#27ae60" stroke-width="1.5" fill="none"/>
+  <polygon points="420,270 410,266 410,276" fill="#27ae60"/>
+
+  <!-- Bağlantı etiketleri -->
+  <text x="155" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">bağlanır</text>
+  <text x="485" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">soyutlar</text>
+  <text x="160" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">türetilir</text>
+  <text x="480" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">tanımlar</text>
+</svg>
