@@ -10,6 +10,7 @@ tags:
   - konteyner
 redirect_from:
   - /posts/cpp_algorithm/
+image: /img/cpp_algorithm-25.png
 ---
 
 Algoritmalar konteynerler üzerinde işlem yaparlar. Her konteyner kendi temel işlemleri için gerekli fonksiyonları sağlar. Standart algoritmalar ise daha genişletilmiş veya karmaşık işlemler için aynı anda iki farklı tipte konteyner ile çalışmaya olanak sağlar.
@@ -86,6 +87,9 @@ find_end: finds the last sequence of elements in a certain range
 | transform | Bir aralıktaki elemanlara bir fonksiyon çağırır ve elde edilen çıktıyı yeni bir eleman dizisine kaydeder. |
 | unique ve unique\_copy | Bir aralıktaki tekrar eden elemanları devere dışı bırakır. |
 | upper\_bound | Bir değerden büyük olmayan bir eleman dizisindeki son noktayı bulur. |
+
+![cpp_algorithm-25](/img/cpp_algorithm-25.svg)
+
 
 ## Bir konteyner içinde belirli bir değere sahip veya belirli bir koşulu sağlayan eleman sayısını bulma
 

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f7e9"/>
+      <stop offset="100%" stop-color="#cdeeda"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce8f0"/>
+      <stop offset="100%" stop-color="#f8d4e2"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8eaf6"/>
+      <stop offset="100%" stop-color="#d0d6ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#a0aec0" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#a0aec0" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect x="0" y="0" width="640" height="320" rx="12" fill="url(#bg)"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2d3748">C++ Fonksiyon Nesneleri</text>
+
+  <!-- Ana kavram kutusu -->
+  <rect x="220" y="52" width="200" height="48" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#b0c4de" stroke-width="1"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Fonksiyon Nesnesi</text>
+  <text x="320" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a5568">operator() aşırı yükleme</text>
+
+  <!-- Oklar: ana kavramdan alt kavramlara -->
+  <!-- Sol üst -->
+  <path d="M 240 100 L 120 140" stroke="#718096" stroke-width="1.5" fill="none"/>
+  <polygon points="120,140 128,134 126,144" fill="#718096"/>
+  
+  <!-- Sağ üst -->
+  <path d="M 400 100 L 520 140" stroke="#718096" stroke-width="1.5" fill="none"/>
+  <polygon points="520,140 512,134 514,144" fill="#718096"/>
+
+  <!-- Sol alt -->
+  <path d="M 260 100 L 140 200" stroke="#718096" stroke-width="1.5" fill="none"/>
+  <polygon points="140,200 148,194 146,204" fill="#718096"/>
+
+  <!-- Sağ alt -->
+  <path d="M 380 100 L 500 200" stroke="#718096" stroke-width="1.5" fill="none"/>
+  <polygon points="500,200 492,194 494,204" fill="#718096"/>
+
+  <!-- Orta alt -->
+  <path d="M 320 100 L 320 140" stroke="#718096" stroke-width="1.5" fill="none"/>
+  <polygon points="320,140 314,132 326,132" fill="#718096"/>
+
+  <!-- Tekli fonksiyon nesnesi -->
+  <rect x="50" y="140" width="140" height="44" rx="8" fill="url(#box2)" filter="url(#shadowLight)" stroke="#9bc4a8" stroke-width="1"/>
+  <text x="120" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d6a4f">Tekli</text>
+  <text x="120" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a5568">1 parametre</text>
+
+  <!-- İkili fonksiyon nesnesi -->
+  <rect x="450" y="140" width="140" height="44" rx="8" fill="url(#box2)" filter="url(#shadowLight)" stroke="#9bc4a8" stroke-width="1"/>
+  <text x="520" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d6a4f">İkili</text>
+  <text x="520" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a5568">2 parametre</text>
+
+  <!-- Yerleşik fonksiyon nesneleri -->
+  <rect x="230" y="140" width="180" height="44" rx="8" fill="url(#box3)" filter="url(#shadowLight)" stroke="#e2c792" stroke-width="1"/>
+  <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7c5e10">Yerleşik Nesneler</text>
+  <text x="320" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a5568">&lt;functional&gt; başlığı</text>
+
+  <!-- Alt kavramlar -->
+  <!-- Karşılaştırma -->
+  <rect x="30" y="210" width="130" height="40" rx="8" fill="url(#box4)" filter="url(#shadowLight)" stroke="#d4a0b8" stroke-width="1"/>
+  <text x="95" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6b2d4a">Karşılaştırma</text>
+  <text x="95" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a5568">less, greater, equal_to</text>
+
+  <!-- Aritmetik -->
+  <rect x="180" y="210" width="130" height="40" rx="8" fill="url(#box4)" filter="url(#shadowLight)" stroke="#d4a0b8" stroke-width="1"/>
+  <text x="245" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6b2d4a">Aritmetik</text>
+  <text x="245" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a5568">plus, minus, multiplies</text>
+
+  <!-- Mantıksal -->
+  <rect x="330" y="210" width="130" height="40" rx="8" fill="url(#box4)" filter="url(#shadowLight)" stroke="#d4a0b8" stroke-width="1"/>
+  <text x="395" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6b2d4a">Mantıksal</text>
+  <text x="395" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a5568">and, or, not</text>
+
+  <!-- Diğer -->
+  <rect x="480" y="210" width="130" height="40" rx="8" fill="url(#box4)" filter="url(#shadowLight)" stroke="#d4a0b8" stroke-width="1"/>
+  <text x="545" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6b2d4a">Diğer</text>
+  <text x="545" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a5568">negate, modulus</text>
+
+  <!-- Alt kutulardan yerleşik nesnelere oklar -->
+  <path d="M 95 210 L 95 184" stroke="#718096" stroke-width="1.2" fill="none"/>
+  <polygon points="95,184 89,192 101,192" fill="#718096"/>
+
+  <path d="M 245 210 L 245 184" stroke="#718096" stroke-width="1.2" fill="none"/>
+  <polygon points="245,184 239,192 251,192" fill="#718096"/>
+
+  <path d="M 395 210 L 395 184" stroke="#718096" stroke-width="1.2" fill="none"/>
+  <polygon points="395,184 389,192 401,192" fill="#718096"/>
+
+  <path d="M 545 210 L 545 184" stroke="#718096" stroke-width="1.2" fill="none"/>
+  <polygon points="545,184 539,192 551,192" fill="#718096"/>
+
+  <!-- Örnek kullanım -->
+  <rect x="200" y="268" width="240" height="36" rx="8" fill="url(#box5)" filter="url(#shadowLight)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="320" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2d3748">Örnek: plus&lt;float&gt;()</text>
+  <text x="320" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a5568">float veri türü için toplama</text>
+
+  <!-- Örnek kutusuna ok -->
+  <path d="M 320 250 L 320 268" stroke="#718096" stroke-width="1.2" fill="none"/>
+  <polygon points="320,268 314,260 326,260" fill="#718096"/>
+</svg>

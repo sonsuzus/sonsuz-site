@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7f0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4e6ff"/>
+      <stop offset="100%" stop-color="#b8d4f8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9f0d0"/>
+      <stop offset="100%" stop-color="#a8e0b5"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe9c7"/>
+      <stop offset="100%" stop-color="#f5d6a8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d4f8"/>
+      <stop offset="100%" stop-color="#d4b8f0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8d4e0"/>
+      <stop offset="100%" stop-color="#f0b8cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">C++ Map Yapısı</text>
+
+  <!-- Merkez Map kutusu -->
+  <rect x="245" y="55" width="150" height="50" rx="12" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#7aa8d8" stroke-width="1.5"/>
+  <text x="320" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a3a5c">Map</text>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c5a8c">anahtar/değer</text>
+
+  <!-- Şablon parametreleri -->
+  <text x="320" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">Şablon Parametreleri</text>
+
+  <!-- Key kutusu -->
+  <rect x="40" y="140" width="110" height="40" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#6aa87a" stroke-width="1.5"/>
+  <text x="95" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4a2a">Key</text>
+  <text x="95" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a6a3a">benzersiz</text>
+
+  <!-- T kutusu -->
+  <rect x="180" y="140" width="110" height="40" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#6aa87a" stroke-width="1.5"/>
+  <text x="235" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4a2a">T</text>
+  <text x="235" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2a6a3a">değer türü</text>
+
+  <!-- Comp kutusu -->
+  <rect x="320" y="140" width="110" height="40" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#c0a060" stroke-width="1.5"/>
+  <text x="375" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a3a10">Comp</text>
+  <text x="375" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a5a20">karşılaştırıcı</text>
+
+  <!-- Allocator kutusu -->
+  <rect x="460" y="140" width="130" height="40" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#9a7ab0" stroke-width="1.5"/>
+  <text x="525" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a1a5a">Allocator</text>
+  <text x="525" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a3a7a">tahsis edici</text>
+
+  <!-- Oklar: şablon parametrelerinden Map'e -->
+  <!-- Key -> Map -->
+  <path d="M 100 140 L 100 115 Q 100 100 115 100 L 240 100" fill="none" stroke="#6aa87a" stroke-width="1.8"/>
+  <polygon points="240,95 252,100 240,105" fill="#6aa87a"/>
+
+  <!-- T -> Map -->
+  <path d="M 235 140 L 235 115 Q 235 100 245 100 L 260 100" fill="none" stroke="#6aa87a" stroke-width="1.8"/>
+  <polygon points="260,95 272,100 260,105" fill="#6aa87a"/>
+
+  <!-- Comp -> Map -->
+  <path d="M 375 140 L 375 115 Q 375 100 365 100 L 350 100" fill="none" stroke="#c0a060" stroke-width="1.8"/>
+  <polygon points="350,95 338,100 350,105" fill="#c0a060"/>
+
+  <!-- Allocator -> Map -->
+  <path d="M 525 140 L 525 115 Q 525 100 510 100 L 400 100" fill="none" stroke="#9a7ab0" stroke-width="1.8"/>
+  <polygon points="400,95 388,100 400,105" fill="#9a7ab0"/>
+
+  <!-- Yapıcılar bölümü -->
+  <text x="320" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">Yapıcı Fonksiyonlar</text>
+
+  <!-- Constructor 1 -->
+  <rect x="40" y="225" width="170" height="35" rx="8" fill="url(#boxGrad5)" filter="url(#shadow)" stroke="#c08090" stroke-width="1.2"/>
+  <text x="125" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" font-weight="bold" fill="#5a1a2a">boş map</text>
+  <text x="125" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#7a3a4a">varsayılan</text>
+
+  <!-- Constructor 2 -->
+  <rect x="235" y="225" width="170" height="35" rx="8" fill="url(#boxGrad5)" filter="url(#shadow)" stroke="#c08090" stroke-width="1.2"/>
+  <text x="320" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" font-weight="bold" fill="#5a1a2a">kopyalama</text>
+  <text x="320" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#7a3a4a">mevcut map</text>
+
+  <!-- Constructor 3 -->
+  <rect x="430" y="225" width="170" height="35" rx="8" fill="url(#boxGrad5)" filter="url(#shadow)" stroke="#c08090" stroke-width="1.2"/>
+  <text x="515" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" font-weight="bold" fill="#5a1a2a">aralık</text>
+  <text x="515" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#7a3a4a">başlangıç-bitiş</text>
+
+  <!-- Oklar: Map'ten yapıcılara -->
+  <path d="M 320 105 L 320 125 Q 320 135 310 135 L 215 135 Q 205 135 205 145 L 205 220" fill="none" stroke="#c08090" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="205,225 200,215 210,215" fill="#c08090"/>
+
+  <path d="M 320 105 L 320 220" fill="none" stroke="#c08090" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="320,225 315,215 325,215" fill="#c08090"/>
+
+  <path d="M 320 105 L 320 125 Q 320 135 435 135 Q 445 135 445 145 L 445 220" fill="none" stroke="#c08090" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="445,225 440,215 450,215" fill="#c08090"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#888">Anahtarlar benzersizdir, değerler anahtar ile okunur</text>
+</svg>

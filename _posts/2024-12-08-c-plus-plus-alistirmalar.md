@@ -10,7 +10,11 @@ tags:
   - algoritma
 redirect_from:
   - /posts/c-plus-plus-alistirmalar/
+image: /img/c-plus-plus-79.png
 ---
+
+![c-plus-plus-79](/img/c-plus-plus-79.svg)
+
 
 Bu sayfada C++ ile ilgili alıştırmalar ve uygulamalar verilmiştir. Her birini eksiksiz çözmeniz sizin için güzel bir çalışma olacaktır.
 

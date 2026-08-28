@@ -10,6 +10,7 @@ tags:
   - polymorphism
   - virtual fonksiyonlar
 toc: true
+image: /img/cta-cok-bicimlilik-37.png
 ---
 
 C++ nesne yönelimli programlamanın en etkileyici fikirlerinden biri, aynı arayüzün farklı nesnelerde farklı sonuçlar üretmesidir. Buna **çok biçimlilik** (*polymorphism*) denir. Bir `Animal*` işaretçisiyle hem kediye hem köpeğe ses çıkarttırabilmek, kodun her somut sınıfı tek tek tanımasına gerek kalmadan genişlemesini sağlar. Bu esneklik, özellikle oyun motorları, ödeme sistemleri ve eklenti mimarilerinde hayat kurtarır.
@@ -33,6 +34,9 @@ Bu küçük görünen fark, kalıtım zincirinin gerçek gücünü açığa çı
 | Performans | Çok az daha doğrudan | Dolaylı çağrı maliyeti olabilir |
 | Esneklik | Düşük | Yüksek |
 | Kullanım alanı | Sabit davranış | Genişletilebilir hiyerarşiler |
+
+![cta-cok-bicimlilik-37](/img/cta-cok-bicimlilik-37.svg)
+
 
 ## Kedi mi konuşuyor, hayvan mı?
 

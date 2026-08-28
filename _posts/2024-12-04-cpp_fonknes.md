@@ -11,7 +11,11 @@ tags:
 redirect_from:
   - /posts/cpp_fonknes/
 toc: true
+image: /img/cpp_fonknes-34.png
 ---
+
+![cpp_fonknes-34](/img/cpp_fonknes-34.svg)
+
 
 Fonksiyonları nesneleri, fonksiyon çağırma işlemcisi olan () işlemcisine çoklu görev tanımlama (overloading) işlemi uygulanarak, bir sınıftan oluşturulan nesnelerin bir fonksiyon gibi çağrılmasını sağlanmasıyla oluşturulur.
 

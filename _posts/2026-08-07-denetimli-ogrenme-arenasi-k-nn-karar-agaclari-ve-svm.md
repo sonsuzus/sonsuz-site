@@ -9,7 +9,11 @@ tags:
   - sınıflandırma
   - python
 toc: true
+image: /img/denetimli-ogrenme-arenasi-47.png
 ---
+
+![denetimli-ogrenme-arenasi-47](/img/denetimli-ogrenme-arenasi-47.svg)
+
 
 Bir e-postanın spam olup olmadığını, bir müşterinin aboneliğini iptal edip etmeyeceğini veya bir tümörün iyi huylu olup olmadığını tahmin etmek istediğimizi düşünelim. Geçmiş örneklerin doğru cevapları elimizdeyse denetimli öğrenmenin kapısından içeri gireriz. Bu yaklaşımda algoritma, etiketlenmiş verilerden örüntüler öğrenerek daha önce görmediği örnekler hakkında karar verir.
 

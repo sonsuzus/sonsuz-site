@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce6f7"/>
+    </linearGradient>
+    <linearGradient id="knnGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9e2f0"/>
+      <stop offset="100%" stop-color="#eecbe0"/>
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3f4d5"/>
+      <stop offset="100%" stop-color="#cceab8"/>
+    </linearGradient>
+    <linearGradient id="svmGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0cb"/>
+      <stop offset="100%" stop-color="#f9dba4"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f1e9"/>
+      <stop offset="100%" stop-color="#bce4d7"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#628096" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#628096" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="570" cy="45" r="72" fill="#d9f0ed" opacity="0.45"/>
+  <circle cx="50" cy="285" r="85" fill="#e5edff" opacity="0.55"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556a">DENETİMLİ ÖĞRENME ARENASI</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8492">Etiketli veri → model yarışı → genelleme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="98" width="130" height="126" rx="20" fill="url(#dataGrad)"/>
+  </g>
+  <text x="53" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315674">Etiketli Veri</text>
+  <rect x="46" y="140" width="92" height="19" rx="9" fill="#ffffff" opacity="0.7"/>
+  <text x="59" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b82">Özellikler x</text>
+  <rect x="46" y="166" width="92" height="19" rx="9" fill="#ffffff" opacity="0.7"/>
+  <text x="61" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b82">Etiket y</text>
+  <circle cx="51" cy="202" r="4" fill="#4e90be"/>
+  <circle cx="66" cy="202" r="4" fill="#e4779b"/>
+  <circle cx="81" cy="202" r="4" fill="#62aa7d"/>
+  <text x="91" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547284">Örnekler</text>
+
+  <path d="M157 161 H187" fill="none" stroke="#66899b" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="187,161 179,156 179,166" fill="#66899b"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="190" y="72" width="170" height="184" rx="25" fill="#ffffff" opacity="0.86"/>
+  </g>
+  <text x="221" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#446172">MODEL ARENASI</text>
+  <line x1="213" y1="110" x2="337" y2="110" stroke="#d5e4e5" stroke-width="1.2"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="211" y="123" width="128" height="32" rx="12" fill="url(#knnGrad)"/>
+  </g>
+  <circle cx="229" cy="139" r="5" fill="#c85b87"/>
+  <circle cx="240" cy="134" r="4" fill="#8170c2"/>
+  <circle cx="241" cy="145" r="4" fill="#8170c2"/>
+  <text x="258" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#74435a">k-NN</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="211" y="164" width="128" height="32" rx="12" fill="url(#treeGrad)"/>
+  </g>
+  <path d="M228 187 V173 M228 177 H220 M228 177 H237 M220 177 V184 M237 177 V184" fill="none" stroke="#55835e" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="228" cy="171" r="3.5" fill="#6cae75"/>
+  <circle cx="219" cy="186" r="3.5" fill="#6cae75"/>
+  <circle cx="238" cy="186" r="3.5" fill="#6cae75"/>
+  <text x="258" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d7351">Karar Ağacı</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="211" y="205" width="128" height="32" rx="12" fill="url(#svmGrad)"/>
+  </g>
+  <path d="M219 227 L241 213 M225 230 L247 216" stroke="#b88229" stroke-width="1.5"/>
+  <circle cx="221" cy="216" r="3.4" fill="#d46f6f"/>
+  <circle cx="242" cy="228" r="3.4" fill="#588cc4"/>
+  <text x="258" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#85631d">SVM</text>
+
+  <path d="M360 139 H394" fill="none" stroke="#ba7d92" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="394,139 386,134 386,144" fill="#ba7d92"/>
+  <path d="M360 180 H394" fill="none" stroke="#6a9d72" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="394,180 386,175 386,185" fill="#6a9d72"/>
+  <path d="M360 221 H394" fill="none" stroke="#c29139" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="394,221 386,216 386,226" fill="#c29139"/>
+
+  <g filter="url(#shadow)">
+    <rect x="398" y="83" width="211" height="151" rx="22" fill="url(#resultGrad)"/>
+  </g>
+  <text x="430" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#316b62">DEĞERLENDİRME</text>
+
+  <rect x="418" y="124" width="170" height="28" rx="10" fill="#ffffff" opacity="0.74"/>
+  <text x="434" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46766d">Eğitim ve test</text>
+
+  <rect x="418" y="159" width="79" height="46" rx="12" fill="#ffffff" opacity="0.75"/>
+  <text x="434" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7167">Başarı</text>
+  <text x="433" y="197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d857b">F1 skoru</text>
+
+  <rect x="506" y="159" width="82" height="46" rx="12" fill="#ffffff" opacity="0.75"/>
+  <text x="518" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7167">Denge</text>
+  <text x="519" y="197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d857b">Genelleme</text>
+
+  <path d="M503 234 V268" fill="none" stroke="#5c8c83" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="503,276 497,267 509,267" fill="#5c8c83"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="408" y="277" width="191" height="29" rx="13" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="427" cy="291.5" r="7" fill="#63aa84"/>
+  <path d="M423 292 L426 295 L432 287" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="444" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426d62">Uygun model seçimi</text>
+
+  <text x="39" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75909c">Ölçekleme</text>
+  <path d="M39 278 H122" stroke="#accbd2" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="52" cy="278" r="4" fill="#7ab2bf"/>
+  <circle cx="80" cy="278" r="4" fill="#7ab2bf"/>
+  <circle cx="108" cy="278" r="4" fill="#7ab2bf"/>
+</svg>

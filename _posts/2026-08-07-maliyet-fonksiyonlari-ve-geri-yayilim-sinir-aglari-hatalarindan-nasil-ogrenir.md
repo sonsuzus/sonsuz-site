@@ -9,7 +9,11 @@ tags:
   - geri yayılım
   - sinir ağları
 toc: true
+image: /img/maliyet-fonksiyonlari-ve-82.png
 ---
+
+![maliyet-fonksiyonlari-ve-82](/img/maliyet-fonksiyonlari-ve-82.svg)
+
 
 Bir sinir ağı ilk tahminini yaptığında genellikle pek de parlak değildir. Kedi fotoğrafına tost makinesi diyebilir veya ev fiyatını küçük bir servet kadar yanlış hesaplayabilir. Neyse ki modelin elinde iki güçlü araç vardır: hatanın büyüklüğünü ölçen **maliyet fonksiyonu** ve bu hatadan sorumlu ağırlıkları bulup düzelten **geri yayılım algoritması**.
 

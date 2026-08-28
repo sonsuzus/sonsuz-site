@@ -9,6 +9,7 @@ tags:
   - minimax
   - algoritma
 toc: true
+image: /img/oyun-teorisinden-minimaxa-46.png
 ---
 
 Satrançta rakibin vezirini tehdit ettiğinde neden hemen sevinmemelisin? Çünkü rakibin de plan yapıyor! Oyun teorisi, kararlarımızın sonucunun yalnızca bize değil, başka oyuncuların seçimlerine de bağlı olduğu durumları matematiksel olarak inceler. Minimax algoritması ise bu fikirleri bilgisayarların anlayabileceği bir oyun ağacına dönüştürerek mümkün olan en güvenli hamleyi seçmelerini sağlar.
@@ -79,3 +80,6 @@ MIN her dalda en düşük değeri seçeceği için dalların değerleri sırası
 | Alfa-beta budama | Gereksiz dalları atlar | Hamle sıralamasına duyarlıdır |
 
 Alfa-beta budama, sonucu değiştirmeyeceği kesinleşen dalları incelemez. İyi bir hamle sıralamasıyla minimax’ın pratik performansını ciddi biçimde artırır. Sonuç olarak kazanma stratejisi; rakibin en güçlü cevabını hesaba katmak, en kötü sonucu güvenceye almak ve hesaplama sınırları varsa durumları doğru değerlendirmek üzerine kuruludur.
+
+![oyun-teorisinden-minimaxa-46](/img/oyun-teorisinden-minimaxa-46.svg)
+

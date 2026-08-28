@@ -9,6 +9,7 @@ tags:
   - algoritmalar
   - memoization
 toc: true
+image: /img/dinamik-programlamanin-kalbi-84.png
 ---
 
 Bazı algoritmalar aynı hesabı tekrar tekrar yaparak işlemciyi küçük bir hamster çarkına sokar. Dinamik programlama, bu gereksiz tekrarları fark edip sonuçları saklayan güçlü bir problem çözme yaklaşımıdır. Temel fikir; büyük bir problemi daha küçük alt problemlere ayırmak, her alt problemi doğru biçimde temsil eden durumları tanımlamak ve hesaplanan sonuçları yeniden kullanmaktır.
@@ -54,6 +55,9 @@ Burada `i` hangi eşyalara bakabildiğimizi, `c` ise kalan kapasiteyi belirtir. 
 | Durum | Alt problemi hangi bilgiler tanımlar? | `n` |
 | Geçiş | Sonraki sonuç nasıl üretilir? | `F(n-1) + F(n-2)` |
 | Başlangıç | Hesaplamayı nerede durdururum? | `F(0)` ve `F(1)` |
+
+![dinamik-programlamanin-kalbi-84](/img/dinamik-programlamanin-kalbi-84.svg)
+
 
 ## Üçüncü adım: Memoization ile tekrarları önlemek
 

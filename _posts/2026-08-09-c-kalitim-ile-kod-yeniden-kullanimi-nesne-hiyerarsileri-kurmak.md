@@ -8,9 +8,13 @@ tags:
   - c++
   - nesne yönelimli programlama
   - kalıtım
+image: /img/c-kalitim-ile-91.png
 ---
 
 Büyük bir C++ projesinde her nesneyi sıfırdan tanımlamak, kısa sürede kopyala-yapıştır bataklığına dönüşür. Bir aracın, çalışanın ya da oyun karakterinin ortak özellikleri varken bunları tekrar tekrar yazmak yerine kalıtım (inheritance) kullanırız. Kalıtım, bir temel sınıfın (base class) veri ve davranışlarını türetilmiş sınıflara (derived class) aktaran; böylece hem kod tekrarını azaltan hem de anlamlı nesne hiyerarşileri kuran nesne yönelimli programlama mekanizmasıdır.
+
+
+![c-kalitim-ile-91](/img/c-kalitim-ile-91.svg)
 
 ``
 

@@ -9,6 +9,7 @@ tags:
   - mlp
   - derin öğrenme
 toc: true
+image: /img/cok-katmanli-algilayicilar-62.png
 ---
 
 Bir yapay sinir ağının fotoğraftaki rakamı tanıması, müşterinin alışveriş davranışını tahmin etmesi veya bir evin fiyatını hesaplaması ilk bakışta sihir gibi görünebilir. Oysa Çok Katmanlı Algılayıcıların, yani MLP’lerin arkasında düzenli bir matematiksel veri akışı vardır: Bilgiler girişten alınır, katmanlar boyunca dönüştürülür ve anlamlı bir çıktıya çevrilir.
@@ -26,6 +27,9 @@ Bir MLP genellikle üç bölümden oluşur:
 | Girdi katmanı | Ham özellikleri kabul eder | Yaş, gelir, ürün fiyatı |
 | Gizli katmanlar | Özellikleri dönüştürür ve örüntüleri öğrenir | Fiyat-gelir ilişkisini keşfetmek |
 | Çıktı katmanı | Tahmin veya sınıf üretir | “Satın alır” olasılığı |
+
+![cok-katmanli-algilayicilar-62](/img/cok-katmanli-algilayicilar-62.svg)
+
 
 Girdi katmanında hesaplama genellikle yapılmaz; değerler yalnızca ilk gizli katmana aktarılır. Asıl öğrenme, ağırlık ve sapma değerlerini kullanan gizli katmanlarda gerçekleşir.
 

@@ -8,6 +8,7 @@ tags:
   - statik tip sistemi
   - bellek yönetimi
   - değişkenler
+image: /img/degiskenler-ve-bellek-45.png
 ---
 
 Bir değişkeni yalnızca `x = 42` diye düşünmek, buzdağının görünen kısmına bakmaktır. Statik tipli dillerde değişken; adı, tipi, yaşam süresi ve bellekte temsil edilme biçimi olan bir sözleşmedir. Derleyici bu sözleşmeyi program çalışmadan önce denetler: `int` bekleyen yere metin, belirli aralıkta sayı bekleyen yere taşacak bir değer koymaya çalışırsanız alarm çalar. Bu katılık ilk anda sınırlayıcı görünse de bellek düzenini öngörülebilir, hataları erken yakalanabilir ve performansı daha hesaplanabilir yapar.
@@ -24,6 +25,9 @@ Bir veri türünün teorik kapasitesi, bit sayısıyla doğrudan ilişkilidir. �
 | `uint8` | 1 bayt | İşaretsiz ikili sayı | 0 ile 255 |
 | `float64` | 8 bayt | IEEE 754 kayan nokta | Hassasiyet ve yuvarlama |
 | `char` | Dile bağlı | Karakter kodu | Kodlama standardı |
+
+![degiskenler-ve-bellek-45](/img/degiskenler-ve-bellek-45.svg)
+
 
 \*Donanım ve dil uygulamasına göre yerleşim değişebilir. Özellikle `bool`, yapılar içinde hizalama nedeniyle beklenenden fazla alan etkisi yaratabilir.
 

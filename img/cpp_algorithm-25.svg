@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#d1eed1"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0e8f8"/>
+      <stop offset="100%" stop-color="#e0d0f0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe8ec"/>
+      <stop offset="100%" stop-color="#fcd0d8"/>
+    </linearGradient>
+    <linearGradient id="center" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="100%" stop-color="#357abd"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">C++ STL Algoritmalar</text>
+  <text x="320" y="46" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7a9a">&lt;algorithm&gt; başlık dosyası</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="120" width="150" height="48" rx="24" fill="url(#center)" filter="url(#shadow)"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">STL</text>
+  <text x="320" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#d0e4ff">Algoritmalar</text>
+
+  <!-- Konteynerler (sol taraf) -->
+  <rect x="40" y="70" width="130" height="40" rx="8" fill="url(#box1)" filter="url(#shadowLight)" stroke="#b0c4de" stroke-width="1"/>
+  <text x="105" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">vector</text>
+
+  <rect x="40" y="130" width="130" height="40" rx="8" fill="url(#box1)" filter="url(#shadowLight)" stroke="#b0c4de" stroke-width="1"/>
+  <text x="105" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">list</text>
+
+  <rect x="40" y="190" width="130" height="40" rx="8" fill="url(#box1)" filter="url(#shadowLight)" stroke="#b0c4de" stroke-width="1"/>
+  <text x="105" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">deque</text>
+
+  <!-- Sağ taraf: algoritma örnekleri -->
+  <rect x="470" y="55" width="140" height="34" rx="8" fill="url(#box2)" filter="url(#shadowLight)" stroke="#e8cfa0" stroke-width="1"/>
+  <text x="540" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">find_end</text>
+
+  <rect x="470" y="105" width="140" height="34" rx="8" fill="url(#box2)" filter="url(#shadowLight)" stroke="#e8cfa0" stroke-width="1"/>
+  <text x="540" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">binary_search</text>
+
+  <rect x="470" y="155" width="140" height="34" rx="8" fill="url(#box2)" filter="url(#shadowLight)" stroke="#e8cfa0" stroke-width="1"/>
+  <text x="540" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">copy</text>
+
+  <rect x="470" y="205" width="140" height="34" rx="8" fill="url(#box2)" filter="url(#shadowLight)" stroke="#e8cfa0" stroke-width="1"/>
+  <text x="540" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">count_if</text>
+
+  <!-- Alt kısım: yardımcı kavramlar -->
+  <rect x="130" y="265" width="120" height="32" rx="16" fill="url(#box3)" filter="url(#shadowLight)" stroke="#a0c8a0" stroke-width="1"/>
+  <text x="190" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Range</text>
+
+  <rect x="270" y="265" width="120" height="32" rx="16" fill="url(#box4)" filter="url(#shadowLight)" stroke="#c0a8d8" stroke-width="1"/>
+  <text x="330" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Iterator</text>
+
+  <rect x="410" y="265" width="120" height="32" rx="16" fill="url(#box5)" filter="url(#shadowLight)" stroke="#e0a0b0" stroke-width="1"/>
+  <text x="470" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">Şablon</text>
+
+  <!-- Oklar: konteynerlerden merkeze -->
+  <!-- vector -->
+  <path d="M170,90 L240,130" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="240,130 231,124 233,134" fill="#7a9cc6"/>
+
+  <!-- list -->
+  <path d="M170,150 L240,145" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="240,145 231,140 231,150" fill="#7a9cc6"/>
+
+  <!-- deque -->
+  <path d="M170,210 L240,160" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="240,160 231,154 233,164" fill="#7a9cc6"/>
+
+  <!-- Oklar: merkezden algoritmalara -->
+  <path d="M395,130 L465,80" stroke="#d4a050" stroke-width="1.8" fill="none"/>
+  <polygon points="465,80 455,78 460,87" fill="#d4a050"/>
+
+  <path d="M395,138 L465,122" stroke="#d4a050" stroke-width="1.8" fill="none"/>
+  <polygon points="465,122 455,118 456,128" fill="#d4a050"/>
+
+  <path d="M395,146 L465,165" stroke="#d4a050" stroke-width="1.8" fill="none"/>
+  <polygon points="465,165 456,160 456,170" fill="#d4a050"/>
+
+  <path d="M395,155 L465,215" stroke="#d4a050" stroke-width="1.8" fill="none"/>
+  <polygon points="465,215 456,208 455,218" fill="#d4a050"/>
+
+  <!-- Oklar: merkezden alt kavramlara -->
+  <path d="M290,168 L210,260" stroke="#7a9c7a" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="210,260 215,251 204,252" fill="#7a9c7a"/>
+
+  <path d="M320,168 L325,260" stroke="#9a7ab0" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="325,260 320,251 330,251" fill="#9a7ab0"/>
+
+  <path d="M350,168 L440,260" stroke="#c07a90" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="440,260 431,255 433,265" fill="#c07a90"/>
+
+  <!-- Etiket: iki konteyner -->
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a7a9a" font-style="italic">aynı anda iki farklı konteyner</text>
+
+  <!-- Dekoratif çizgi -->
+  <line x1="60" y1="58" x2="580" y2="58" stroke="#c0d0e0" stroke-width="0.5" stroke-dasharray="2,4"/>
+</svg>

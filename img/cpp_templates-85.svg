@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c9bd1"/>
+      <stop offset="100%" stop-color="#4a7fb5"/>
+    </linearGradient>
+    <linearGradient id="funcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#88c1de"/>
+    </linearGradient>
+    <linearGradient id="classGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8e0c8"/>
+      <stop offset="100%" stop-color="#96c9ab"/>
+    </linearGradient>
+    <linearGradient id="varGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d4a8"/>
+      <stop offset="100%" stop-color="#e8bf8a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arkaplan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">C++ Şablonlar</text>
+  <line x1="220" y1="46" x2="420" y2="46" stroke="#4a7fb5" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Merkez kutu -->
+  <rect x="235" y="118" width="170" height="52" rx="12" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Şablonlar</text>
+  <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f0fe">Genel Amaçlı Kod</text>
+
+  <!-- Çizgiler -->
+  <!-- Sol üst çizgi -->
+  <path d="M 250 118 C 250 90, 130 90, 130 68" stroke="#5a8ab5" stroke-width="1.8" fill="none" opacity="0.6"/>
+  <!-- Sağ üst çizgi -->
+  <path d="M 390 118 C 390 90, 510 90, 510 68" stroke="#5a8ab5" stroke-width="1.8" fill="none" opacity="0.6"/>
+  <!-- Alt orta çizgi -->
+  <path d="M 320 170 L 320 198" stroke="#5a8ab5" stroke-width="1.8" fill="none" opacity="0.6"/>
+
+  <!-- Ok uçları (manuel) -->
+  <!-- Sol üst ok -->
+  <polygon points="130,62 126,72 134,72" fill="#5a8ab5" opacity="0.6"/>
+  <!-- Sağ üst ok -->
+  <polygon points="510,62 506,72 514,72" fill="#5a8ab5" opacity="0.6"/>
+  <!-- Alt ok -->
+  <polygon points="314,204 320,214 326,204" fill="#5a8ab5" opacity="0.6"/>
+
+  <!-- Fonksiyon Şablonları -->
+  <rect x="40" y="55" width="180" height="48" rx="10" fill="url(#funcGrad)" filter="url(#shadowLight)"/>
+  <text x="130" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Fonksiyon Şablonları</text>
+  <text x="130" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">template &lt;typename T&gt;</text>
+
+  <!-- Sınıf Şablonları -->
+  <rect x="420" y="55" width="180" height="48" rx="10" fill="url(#classGrad)" filter="url(#shadowLight)"/>
+  <text x="510" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e6b3a">Sınıf Şablonları</text>
+  <text x="510" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">template &lt;class T&gt;</text>
+
+  <!-- Değişken Şablonları -->
+  <rect x="235" y="210" width="170" height="48" rx="10" fill="url(#varGrad)" filter="url(#shadowLight)"/>
+  <text x="320" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a5a1a">Değişken Şablonları</text>
+  <text x="320" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">C++14 ile geldi</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5d6d7e" opacity="0.8">Veri türünü parametre olarak al • Kod tekrarını önler</text>
+
+  <!-- Dekoratif öğeler -->
+  <circle cx="580" cy="270" r="18" fill="#4a7fb5" opacity="0.06"/>
+  <circle cx="60" cy="270" r="14" fill="#6c9bd1" opacity="0.06"/>
+  <circle cx="590" cy="40" r="10" fill="#88c1de" opacity="0.08"/>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="maxGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#bcd8f5"/>
+    </linearGradient>
+    <linearGradient id="minGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce3dc"/>
+      <stop offset="100%" stop-color="#f5c8bd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#55708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#55708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="320" cy="155" r="125" fill="#dceef0" opacity="0.28"/>
+  <circle cx="320" cy="155" r="92" fill="#ffffff" opacity="0.27"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5870">MİNİMAX KARAR AĞACI</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72879a">Rakibin en iyi cevabına göre güvenli hamle seçimi</text>
+
+  <rect x="466" y="20" width="145" height="34" rx="17" fill="#ffffff" filter="url(#softShadow)"/>
+  <circle cx="485" cy="37" r="7" fill="#729fd3"/>
+  <text x="498" y="41" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49667d">Sıfır toplamlı oyun</text>
+
+  <!-- Bağlantılar -->
+  <path d="M320 106 L143 154" fill="none" stroke="#94afc1" stroke-width="2"/>
+  <path d="M320 106 L320 154" fill="none" stroke="#94afc1" stroke-width="2"/>
+  <path d="M320 106 L497 154" fill="none" stroke="#94afc1" stroke-width="2"/>
+
+  <path d="M143 204 L85 243" fill="none" stroke="#b4c5d1" stroke-width="1.7"/>
+  <path d="M143 204 L143 243" fill="none" stroke="#b4c5d1" stroke-width="1.7"/>
+  <path d="M143 204 L201 243" fill="none" stroke="#b4c5d1" stroke-width="1.7"/>
+
+  <path d="M320 204 L262 243" fill="none" stroke="#b4c5d1" stroke-width="1.7"/>
+  <path d="M320 204 L320 243" fill="none" stroke="#b4c5d1" stroke-width="1.7"/>
+  <path d="M320 204 L378 243" fill="none" stroke="#b4c5d1" stroke-width="1.7"/>
+
+  <path d="M497 204 L439 243" fill="none" stroke="#6f9ac2" stroke-width="2.4"/>
+  <path d="M497 204 L497 243" fill="none" stroke="#b4c5d1" stroke-width="1.7"/>
+  <path d="M497 204 L555 243" fill="none" stroke="#b4c5d1" stroke-width="1.7"/>
+
+  <!-- Budanan dal -->
+  <path d="M497 205 L597 239" fill="none" stroke="#d59b9b" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <path d="M585 231 L603 248 M603 231 L585 248" stroke="#d17e7e" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- MAX kökü -->
+  <rect x="253" y="62" width="134" height="45" rx="15" fill="url(#maxGrad)" filter="url(#shadow)"/>
+  <circle cx="276" cy="84.5" r="12" fill="#ffffff" opacity="0.76"/>
+  <path d="M271 89 L276 78 L281 89 L278.4 89 L278.4 93 L273.6 93 L273.6 89 Z" fill="#4e80b5"/>
+  <text x="297" y="81" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345d87">MAX</text>
+  <text x="297" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7190">en yüksek değer</text>
+
+  <!-- MIN düğümleri -->
+  <rect x="91" y="155" width="104" height="50" rx="14" fill="url(#minGrad)" filter="url(#shadow)"/>
+  <text x="112" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#91594d">MIN</text>
+  <text x="112" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9f6d62">en düşük: 2</text>
+
+  <rect x="268" y="155" width="104" height="50" rx="14" fill="url(#minGrad)" filter="url(#shadow)"/>
+  <text x="289" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#91594d">MIN</text>
+  <text x="289" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9f6d62">en düşük: 1</text>
+
+  <rect x="445" y="155" width="104" height="50" rx="14" fill="#d7efd9" filter="url(#shadow)"/>
+  <text x="466" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#477d55">MIN</text>
+  <text x="466" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#568762">en düşük: 6</text>
+
+  <!-- Yapraklar -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <rect x="63" y="243" width="44" height="35" rx="11" fill="#ffffff" filter="url(#softShadow)"/>
+    <text x="85" y="265" fill="#516d84">3</text>
+    <rect x="121" y="243" width="44" height="35" rx="11" fill="#ffffff" filter="url(#softShadow)"/>
+    <text x="143" y="265" fill="#516d84">5</text>
+    <rect x="179" y="243" width="44" height="35" rx="11" fill="#fff4d9" filter="url(#softShadow)"/>
+    <text x="201" y="265" fill="#916b27">2</text>
+
+    <rect x="240" y="243" width="44" height="35" rx="11" fill="#ffffff" filter="url(#softShadow)"/>
+    <text x="262" y="265" fill="#516d84">9</text>
+    <rect x="298" y="243" width="44" height="35" rx="11" fill="#fff0eb" filter="url(#softShadow)"/>
+    <text x="320" y="265" fill="#a15b51">1</text>
+    <rect x="356" y="243" width="44" height="35" rx="11" fill="#ffffff" filter="url(#softShadow)"/>
+    <text x="378" y="265" fill="#516d84">4</text>
+
+    <rect x="417" y="243" width="44" height="35" rx="11" fill="#dff2e2" filter="url(#softShadow)"/>
+    <text x="439" y="265" fill="#447853">6</text>
+    <rect x="475" y="243" width="44" height="35" rx="11" fill="#ffffff" filter="url(#softShadow)"/>
+    <text x="497" y="265" fill="#516d84">7</text>
+    <rect x="533" y="243" width="44" height="35" rx="11" fill="#ffffff" filter="url(#softShadow)"/>
+    <text x="555" y="265" fill="#516d84">8</text>
+  </g>
+
+  <!-- Seçim akışı -->
+  <path d="M442 291 L505 291" fill="none" stroke="#5c9a70" stroke-width="2"/>
+  <polygon points="505,291 497,286 497,296" fill="#5c9a70"/>
+  <rect x="509" y="276" width="103" height="29" rx="14" fill="#dff2e2" filter="url(#softShadow)"/>
+  <text x="560" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397248">Seçilen: 6</text>
+
+  <text x="28" y="300" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#768b9c">MIN: 2, 1, 6</text>
+  <text x="157" y="300" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c789e" font-weight="700">MAX: max(2, 1, 6) = 6</text>
+</svg>

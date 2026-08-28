@@ -10,7 +10,11 @@ tags:
 redirect_from:
   - /posts/cpp_vector/
 toc: true
+image: /img/cpp_vector-39.png
 ---
+
+![cpp_vector-39](/img/cpp_vector-39.svg)
+
 
 Konteynerlerin içinde genel amaçlı kullanımda ileri çıkan vektördür. Vektör sınıfı, ihtiyaç duyulduğunda boyutları artan dinamik dizileri destekler. C++'da bir dizinin boyutu derleme zamanında sabit hale getirilir. Bu uygulama, dizileri kullanmanın en verimli yolu olsa da, çalışma zamanında dizinin boyutu, değişen ihtiyaca göre ayarlanamadığından, esneklik konusunda yeterli değildir. Bir vektör, ihtiyaç duyulan belleği ayırarak bu sorunu çözer.
 

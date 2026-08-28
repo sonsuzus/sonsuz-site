@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">C++ List Konteyneri</text>
+  <text x="320" y="50" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5d6d7e">Çift Yönlü Doğrusal Liste</text>
+
+  <!-- Merkez liste düğümü -->
+  <rect x="255" y="80" width="130" height="44" rx="10" fill="#a8d8ea" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">list&lt;T&gt;</text>
+  <text x="320" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">template &lt;class T&gt;</text>
+
+  <!-- Sol ok: baştan sona -->
+  <path d="M 120 102 L 245 102" stroke="#5dade2" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="245,96 255,102 245,108" fill="#5dade2"/>
+
+  <!-- Sağ ok: sondan başa -->
+  <path d="M 395 102 L 520 102" stroke="#5dade2" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="520,96 530,102 520,108" fill="#5dade2"/>
+
+  <!-- Sol düğüm: başlangıç -->
+  <rect x="20" y="82" width="90" height="40" rx="8" fill="#f9e79f" filter="url(#shadowLight)"/>
+  <text x="65" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7d6608">Başlangıç</text>
+  <text x="65" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#9a7d0a">begin()</text>
+
+  <!-- Sağ düğüm: bitiş -->
+  <rect x="530" y="82" width="90" height="40" rx="8" fill="#f9e79f" filter="url(#shadowLight)"/>
+  <text x="575" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7d6608">Bitiş</text>
+  <text x="575" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#9a7d0a">end()</text>
+
+  <!-- Çift yönlü etiket -->
+  <text x="320" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">⇄ Sıralı erişim, rastgele erişim yok</text>
+
+  <!-- Alt bölüm: Constructor'lar -->
+  <rect x="30" y="170" width="280" height="130" rx="12" fill="#ffffff" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="170" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Constructor Fonksiyonlar</text>
+
+  <rect x="45" y="200" width="250" height="24" rx="6" fill="#eaf2f8"/>
+  <text x="170" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">list() → boş liste</text>
+
+  <rect x="45" y="230" width="250" height="24" rx="6" fill="#eaf2f8"/>
+  <text x="170" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">list(n, val) → n elemanlı</text>
+
+  <rect x="45" y="260" width="250" height="24" rx="6" fill="#eaf2f8"/>
+  <text x="170" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">list(nes) → kopya</text>
+
+  <!-- Sağ alt bölüm: Karşılaştırma -->
+  <rect x="330" y="170" width="280" height="130" rx="12" fill="#ffffff" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="470" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Karşılaştırma İşlemcileri</text>
+
+  <rect x="345" y="200" width="250" height="24" rx="6" fill="#e8f8f5"/>
+  <text x="470" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">== &lt; &lt;= &gt; &gt;= !=</text>
+
+  <rect x="345" y="230" width="250" height="24" rx="6" fill="#e8f8f5"/>
+  <text x="470" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">Sıralı karşılaştırma</text>
+
+  <rect x="345" y="260" width="250" height="24" rx="6" fill="#e8f8f5"/>
+  <text x="470" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">Allocator desteği</text>
+
+  <!-- Alt bağlantı çizgileri -->
+  <line x1="170" y1="170" x2="170" y2="155" stroke="#aab7b8" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="470" y1="170" x2="470" y2="155" stroke="#aab7b8" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- Küçük bağlantı noktaları -->
+  <circle cx="170" cy="158" r="3" fill="#aab7b8"/>
+  <circle cx="470" cy="158" r="3" fill="#aab7b8"/>
+</svg>

@@ -9,7 +9,11 @@ tags:
   - modüler aritmetik
   - hızlı üs alma
 toc: true
+image: /img/asal-sayilardan-hizli-98.png
 ---
+
+![asal-sayilardan-hizli-98](/img/asal-sayilardan-hizli-98.svg)
+
 
 Bilgisayarlar matematik konusunda hızlıdır; ancak sonsuz sabırlı değillerdir. Sayılar büyüdükçe sıradan yöntemler yavaşlar, bellek tüketimi artar ve taşma sorunları ortaya çıkar. Asal sayılar, modüler aritmetik ve hızlı üs alma teknikleri; kriptografiden algoritma yarışmalarına kadar bu sorunları çözmemizi sağlayan güçlü araçlardır.
 ``

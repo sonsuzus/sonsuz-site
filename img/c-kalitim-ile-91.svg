@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9eaff"/>
+      <stop offset="1" stop-color="#bdd8f5"/>
+    </linearGradient>
+    <linearGradient id="child" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6f7e7"/>
+      <stop offset="1" stop-color="#cbeccc"/>
+    </linearGradient>
+    <linearGradient id="comp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3d6"/>
+      <stop offset="1" stop-color="#f6dfaa"/>
+    </linearGradient>
+    <linearGradient id="poly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2e6ff"/>
+      <stop offset="1" stop-color="#dfc8f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66829a" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M28 55 C140 15 218 32 286 14" fill="none" stroke="#d7e8ed" stroke-width="2" opacity="0.7"/>
+  <path d="M423 290 C505 259 566 277 626 239" fill="none" stroke="#d8ead7" stroke-width="2" opacity="0.75"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486174">KALITIM HİYERARŞİSİ</text>
+  <text x="471" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718291">kod yeniden kullanımı</text>
+
+  <!-- Base class -->
+  <g filter="url(#shadow)">
+    <rect x="244" y="53" width="152" height="77" rx="16" fill="url(#base)" stroke="#9cc3e7"/>
+    <rect x="244" y="53" width="152" height="25" rx="16" fill="#a9ceef"/>
+    <path d="M244 70 H396" stroke="#a0c5e6"/>
+  </g>
+  <text x="320" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#254d68">Temel sınıf</text>
+  <text x="320" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315e7e">Araç</text>
+  <text x="320" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52728a">marka · hız · hareket</text>
+
+  <!-- inheritance connectors -->
+  <path d="M282 130 V151 H140 V169" fill="none" stroke="#74a681" stroke-width="2.2"/>
+  <polygon points="134,169 146,169 140,178" fill="#74a681"/>
+  <path d="M358 130 V151 H481 V169" fill="none" stroke="#74a681" stroke-width="2.2"/>
+  <polygon points="475,169 487,169 481,178" fill="#74a681"/>
+  <text x="188" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#568061">bir türüdür</text>
+  <text x="431" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#568061">bir türüdür</text>
+
+  <!-- derived 1 -->
+  <g filter="url(#shadow)">
+    <rect x="57" y="178" width="166" height="74" rx="15" fill="url(#child)" stroke="#a9d4ac"/>
+    <rect x="57" y="178" width="166" height="24" rx="15" fill="#c9eacb"/>
+    <path d="M57 195 H223" stroke="#aed6b1"/>
+  </g>
+  <text x="140" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386640">Türetilmiş sınıf</text>
+  <text x="140" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386640">Araba</text>
+  <text x="140" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53765a">ortak arayüz</text>
+
+  <!-- derived 2 -->
+  <g filter="url(#shadow)">
+    <rect x="398" y="178" width="166" height="74" rx="15" fill="url(#child)" stroke="#a9d4ac"/>
+    <rect x="398" y="178" width="166" height="24" rx="15" fill="#c9eacb"/>
+    <path d="M398 195 H564" stroke="#aed6b1"/>
+  </g>
+  <text x="481" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386640">Türetilmiş sınıf</text>
+  <text x="481" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386640">Elektrikli Araba</text>
+  <text x="481" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53765a">batarya · ezme</text>
+
+  <!-- composition relation -->
+  <path d="M223 215 H264" fill="none" stroke="#d39f42" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <polygon points="258,209 258,221 268,215" fill="#d39f42"/>
+  <text x="245" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a702b">sahiptir</text>
+  <g filter="url(#shadow)">
+    <rect x="269" y="187" width="95" height="55" rx="14" fill="url(#comp)" stroke="#eccd87"/>
+  </g>
+  <text x="316" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#856020">Motor</text>
+  <text x="316" y="227" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b783b">bileşim</text>
+
+  <!-- bottom polymorphism band -->
+  <g filter="url(#shadow)">
+    <rect x="104" y="270" width="432" height="35" rx="15" fill="url(#poly)" stroke="#ceb1e9"/>
+  </g>
+  <circle cx="126" cy="287" r="10" fill="#b98cdd"/>
+  <path d="M122 287 L125 290 L131 283" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="148" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#674785">Sanal metot</text>
+  <path d="M238 287 H278" stroke="#9d78bf" stroke-width="2"/>
+  <polygon points="272,281 272,293 282,287" fill="#9d78bf"/>
+  <text x="302" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#674785">Dinamik bağlama</text>
+  <path d="M422 287 H454" stroke="#9d78bf" stroke-width="2"/>
+  <polygon points="448,281 448,293 458,287" fill="#9d78bf"/>
+  <text x="474" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#674785">Doğru davranış</text>
+</svg>
