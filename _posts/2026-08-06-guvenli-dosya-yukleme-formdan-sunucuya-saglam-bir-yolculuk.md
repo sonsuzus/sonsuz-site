@@ -9,9 +9,13 @@ tags:
   - web-güvenliği
   - php
 toc: true
+image: /img/guvenli-dosya-yukleme-15.png
 ---
 
 Dosya yükleme özelliği, profil fotoğrafından PDF başvuru belgelerine kadar pek çok web uygulamasının vazgeçilmezidir. Ancak kullanıcıdan gelen bir dosyayı doğrudan sunucuya kabul etmek, kapıyı çalan herkese anahtarı teslim etmeye benzeyebilir. Güvenli bir sistem; dosyanın adını, boyutunu, gerçek türünü ve saklanacağı konumu denetlemelidir.
+
+
+![guvenli-dosya-yukleme-15](/img/guvenli-dosya-yukleme-15.svg)
 
 ``
 

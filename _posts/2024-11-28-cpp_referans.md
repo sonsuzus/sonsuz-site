@@ -10,7 +10,11 @@ tags:
 redirect_from:
   - /posts/cpp_referans/
 toc: true
+image: /img/cpp_referans-41.png
 ---
+
+![cpp_referans-41](/img/cpp_referans-41.svg)
+
 
 
 C++'da, [referans](https://program.sonsuz.us/search.html?q=referans) [değişken](https://program.sonsuz.us/search.html?q=de%C4%9Fi%C5%9Fken) adı verilen bir değişken tanımlayarak oluşturduğumuz değişenlere farklı bir isim ile erişim sağlayabiliriz.

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="classGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4fc"/>
+    </linearGradient>
+    <linearGradient id="varGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="funcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#cceacc"/>
+    </linearGradient>
+    <linearGradient id="objGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0e6fa"/>
+      <stop offset="100%" stop-color="#e0ccf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a5a8c">C++ Sınıf ve Nesne Yapısı</text>
+
+  <!-- Sınıf kutusu -->
+  <rect x="220" y="50" width="200" height="60" rx="10" fill="url(#classGrad)" filter="url(#shadow)" stroke="#7ba3d9" stroke-width="1.5"/>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2d4a7a">Sınıf (Class)</text>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a9a">class anahtar kelimesi</text>
+
+  <!-- Değişkenler kutusu -->
+  <rect x="40" y="150" width="180" height="70" rx="10" fill="url(#varGrad)" filter="url(#shadow)" stroke="#d9b36b" stroke-width="1.5"/>
+  <text x="130" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#8a6a2a">Değişkenler</text>
+  <text x="130" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a08040">Veriler</text>
+  <text x="130" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a08040">Özellikler</text>
+
+  <!-- Fonksiyonlar kutusu -->
+  <rect x="420" y="150" width="180" height="70" rx="10" fill="url(#funcGrad)" filter="url(#shadow)" stroke="#6bb36b" stroke-width="1.5"/>
+  <text x="510" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2a6a2a">Fonksiyonlar</text>
+  <text x="510" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a8a4a">Metodlar</text>
+  <text x="510" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a8a4a">Davranışlar</text>
+
+  <!-- Nesne kutusu -->
+  <rect x="220" y="250" width="200" height="55" rx="10" fill="url(#objGrad)" filter="url(#shadow)" stroke="#9a6ac9" stroke-width="1.5"/>
+  <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#5a2a8a">Nesne (Object)</text>
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a4aaa">Sınıf türünden değişken</text>
+
+  <!-- Sınıf ile değişkenler arası bağlantı -->
+  <path d="M 180 110 L 130 145" stroke="#b8935a" stroke-width="1.8" fill="none"/>
+  <polygon points="130,150 124,138 136,138" fill="#b8935a"/>
+
+  <!-- Sınıf ile fonksiyonlar arası bağlantı -->
+  <path d="M 460 110 L 510 145" stroke="#5a9a5a" stroke-width="1.8" fill="none"/>
+  <polygon points="510,150 504,138 516,138" fill="#5a9a5a"/>
+
+  <!-- Değişkenler ve fonksiyonlar arası etkileşim -->
+  <path d="M 225 185 L 415 185" stroke="#7a9ab0" stroke-width="1.5" stroke-dasharray="6,4" fill="none"/>
+  <polygon points="415,185 405,180 405,190" fill="#7a9ab0"/>
+  <text x="320" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8aa0">işlem yapar</text>
+
+  <!-- Sınıftan nesneye ok -->
+  <path d="M 320 115 L 320 245" stroke="#7a5aaa" stroke-width="1.8" fill="none"/>
+  <polygon points="320,250 313,238 327,238" fill="#7a5aaa"/>
+  <text x="340" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a5aaa">türetilir</text>
+
+  <!-- Nesneden erişim okları -->
+  <path d="M 215 270 L 130 225" stroke="#9a8aaa" stroke-width="1.2" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="130,225 140,228 136,218" fill="#9a8aaa"/>
+
+  <path d="M 425 270 L 510 225" stroke="#9a8aaa" stroke-width="1.2" stroke-dasharray="4,3" fill="none"/>
+  <polygon points="510,225 500,228 504,218" fill="#9a8aaa"/>
+
+  <text x="105" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#8a7a9a">erişim</text>
+  <text x="535" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#8a7a9a">erişim</text>
+</svg>

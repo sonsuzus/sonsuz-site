@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="history" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cfe0fb"/>
+    </linearGradient>
+    <linearGradient id="reset" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe5df"/>
+      <stop offset="100%" stop-color="#ffd2ca"/>
+    </linearGradient>
+    <linearGradient id="revert" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddf4e6"/>
+      <stop offset="100%" stop-color="#c8ead7"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55708d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-40%" width="160%" height="190%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55708d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="55" cy="54" r="58" fill="#d9eff2" opacity="0.42"/>
+  <circle cx="591" cy="272" r="81" fill="#e0edce" opacity="0.42"/>
+  <path d="M32 281 C141 246 188 290 274 271 S442 231 609 269" fill="none" stroke="#c9ddea" stroke-width="2" opacity="0.55"/>
+
+  <text x="34" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49627a">GİT TARİHÇESİNDE ZAMAN YOLCULUĞU</text>
+  <text x="34" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b8e9d">İncele · karar ver · güvenle geri al</text>
+
+  <!-- log -->
+  <g filter="url(#shadow)">
+    <rect x="34" y="82" width="122" height="112" rx="18" fill="#ffffff"/>
+    <rect x="34" y="82" width="122" height="34" rx="18" fill="#e9f3ff"/>
+    <path d="M34 99 Q34 116 51 116 H139 Q156 116 156 99" fill="#e9f3ff"/>
+  </g>
+  <circle cx="57" cy="99" r="11" fill="#9cc8ef"/>
+  <path d="M53 99 H62 M53 103 H59 M53 95 H59" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="76" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385875">Geçmişi oku</text>
+  <text x="51" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587087">git log</text>
+  <text x="51" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587087">git show</text>
+  <rect x="48" y="169" width="77" height="9" rx="4.5" fill="#dbe9f5"/>
+  <rect x="48" y="169" width="49" height="9" rx="4.5" fill="#9fc5e7"/>
+
+  <!-- arrow to history -->
+  <path d="M167 138 H191" fill="none" stroke="#7a9bb5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="198,138 189,133 189,143" fill="#7a9bb5"/>
+
+  <!-- history -->
+  <g filter="url(#shadow)">
+    <rect x="204" y="69" width="214" height="141" rx="21" fill="url(#history)"/>
+  </g>
+  <text x="225" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315675">Commit zinciri</text>
+  <text x="225" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55758f">Her kayıt öncekiyle bağlı</text>
+
+  <path d="M239 151 H365" fill="none" stroke="#6f98b9" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="372,151 362,145 362,157" fill="#6f98b9"/>
+  <g filter="url(#smallShadow)">
+    <circle cx="239" cy="151" r="16" fill="#ffffff"/>
+    <circle cx="281" cy="151" r="16" fill="#ffffff"/>
+    <circle cx="323" cy="151" r="16" fill="#fff4d8"/>
+    <circle cx="365" cy="151" r="16" fill="#ffffff"/>
+  </g>
+  <text x="235" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486981">A</text>
+  <text x="277" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486981">B</text>
+  <text x="319" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a6a25">C</text>
+  <text x="361" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486981">D</text>
+  <path d="M365 128 V116" fill="none" stroke="#426f94" stroke-width="2"/>
+  <polygon points="365,110 360,119 370,119" fill="#426f94"/>
+  <text x="349" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426f94">HEAD</text>
+  <text x="226" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597890">Kimlik · yazar · zaman · üst kayıt</text>
+
+  <!-- branch arrows -->
+  <path d="M428 120 C445 120 444 96 462 96" fill="none" stroke="#d38a7b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="469,96 460,91 460,101" fill="#d38a7b"/>
+  <path d="M428 164 C445 164 444 220 462 220" fill="none" stroke="#63a282" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="469,220 460,215 460,225" fill="#63a282"/>
+
+  <!-- reset -->
+  <g filter="url(#shadow)">
+    <rect x="475" y="62" width="132" height="94" rx="18" fill="url(#reset)"/>
+  </g>
+  <circle cx="499" cy="87" r="12" fill="#ee9989"/>
+  <path d="M504 83 C500 79 493 81 493 87 C493 93 501 94 504 90" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"/>
+  <polygon points="504,78 508,84 500,84" fill="#ffffff"/>
+  <text x="520" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#814b45">Reset</text>
+  <text x="490" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8e5a52">İşaretçiyi taşı</text>
+  <text x="490" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a36359">Yerel geçmiş</text>
+
+  <!-- revert -->
+  <g filter="url(#shadow)">
+    <rect x="475" y="184" width="132" height="94" rx="18" fill="url(#revert)"/>
+  </g>
+  <circle cx="499" cy="209" r="12" fill="#74b995"/>
+  <path d="M494 209 H504 M494 209 L498 205 M494 209 L498 213" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="520" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39735a">Revert</text>
+  <text x="490" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477b61">Ters kayıt ekle</text>
+  <text x="490" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56896d">Paylaşılmış geçmiş</text>
+
+  <!-- recovery bar -->
+  <g filter="url(#smallShadow)">
+    <rect x="46" y="233" width="372" height="49" rx="16" fill="#ffffff"/>
+  </g>
+  <circle cx="70" cy="257" r="12" fill="#c8b8e8"/>
+  <path d="M65 258 A6 6 0 1 1 70 263" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"/>
+  <polygon points="68,262 73,263 70,267" fill="#ffffff"/>
+  <text x="91" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b4b7d">Reflog</text>
+  <text x="91" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728293">Yanlış reset sonrası konumu bul</text>
+  <path d="M337 257 H386" fill="none" stroke="#a490cf" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="394,257 384,252 384,262" fill="#a490cf"/>
+</svg>

@@ -9,6 +9,7 @@ tags:
   - git
   - rol tabanlı erişim
 toc: true
+image: /img/ogrenci-ve-ekip-14.png
 ---
 
 Kalabalık bir sınıfta yüz ödevi toplamak veya büyük bir geliştirici ekibinde ortak kod tabanını yönetmek, yalnızca dosya paylaşmak değildir. Kim neyi görebilir, hangi değişikliği yapabilir ve teslim edilen çalışma nasıl doğrulanır? Sağlam bir iş akışı; hiyerarşi, otomasyon, izlenebilirlik ve en az yetki ilkelerini birlikte kullanarak dijital koridordaki kargaşayı düzenli bir üretim hattına dönüştürür.
@@ -86,3 +87,6 @@ $$T = N \times (t_k + t_g)$$
 - Denetim kayıtlarını düzenli olarak inceleyin.
 
 Doğru iş akışı insanları kısıtlayan bir bürokrasi değil, hataların etkisini küçülten güvenlik ağıdır. Roller açık, depolar ayrılmış, teslimler etiketlenmiş ve testler otomatik olduğunda yüz kişilik bir sınıf da hızlı büyüyen bir yazılım ekibi de düzenini koruyabilir.
+
+![ogrenci-ve-ekip-14](/img/ogrenci-ve-ekip-14.svg)
+

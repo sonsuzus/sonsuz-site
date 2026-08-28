@@ -9,6 +9,7 @@ tags:
   - stack
   - bellek yönetimi
 toc: true
+image: /img/fonksiyonlar-ve-yigin-81.png
 ---
 
 Fonksiyonlar, büyük bir programı yönetilebilir görevlere ayırır; yığın (stack) ise bu görevlerin kim tarafından, hangi parametrelerle ve nereye dönmek üzere çağrıldığını düzenler. Bir fonksiyon çağrısı yalnızca kodun başka bir satıra atlaması değildir: İşletim sistemi, derleyici ve işlemci birlikte çalışarak geçici veriler için düzenli bir bellek kaydı oluşturur. Bu mekanizma sayesinde iç içe çağrılar, özyineleme ve yerel değişkenler güvenle yönetilir.
@@ -80,3 +81,6 @@ Burada $P$ parametre alanı, $L$ yerel değişkenler, $R$ saklanan kayıtçılar
 Özyinelemeli fonksiyonlar stack'in önemini dramatik biçimde gösterir. Her `faktoriyel(n)` çağrısı ayrı bir frame açar; dolayısıyla bellek tüketimi yaklaşık olarak $O(n)$ olur. Kontrolsüz derinlik, **stack overflow** üretir. Ayrıca bir fonksiyondan yerel dizinin adresini döndürmek tehlikelidir: Fonksiyon bittiğinde frame geçersizdir.
 
 Özetle stack, modüler programlamanın görünmez sahne amiridir. Fonksiyonlar arası geçişi, dönüşü ve geçici verileri disiplinli biçimde düzenler. Bu yapıyı anlamak; performans analizi, hata ayıklama, güvenli kod yazımı ve assembly seviyesindeki davranışı yorumlama için güçlü bir temel sağlar.
+
+![fonksiyonlar-ve-yigin-81](/img/fonksiyonlar-ve-yigin-81.svg)
+

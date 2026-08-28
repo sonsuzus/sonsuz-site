@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e4fc"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5f5"/>
+      <stop offset="100%" stop-color="#e1bee7"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f7fa"/>
+      <stop offset="100%" stop-color="#b2ebf2"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">C++ Sınıf Şablonları</text>
+
+  <!-- Merkez Şablon Bildirimi -->
+  <rect x="195" y="50" width="250" height="60" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#90a4ae" stroke-width="1"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a237e">template &lt;typename T&gt;</text>
+  <text x="320" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a237e">class SinifAdi { ... }</text>
+
+  <!-- T yer tutucu açıklaması -->
+  <rect x="45" y="140" width="160" height="65" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#81c784" stroke-width="1"/>
+  <text x="125" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">T: Yer Tutucu</text>
+  <text x="125" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2e7d32">Veri türü parametresi</text>
+  <text x="125" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2e7d32">En az bir adet</text>
+
+  <!-- typename ve class eşdeğerliği -->
+  <rect x="435" y="140" width="160" height="65" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#ffb74d" stroke-width="1"/>
+  <text x="515" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">typename = class</text>
+  <text x="515" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ef6c00">Aynı işlemi yapar</text>
+  <text x="515" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ef6c00">İki anahtar kelime</text>
+
+  <!-- Nesne oluşturma -->
+  <rect x="45" y="235" width="160" height="60" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#ba68c8" stroke-width="1"/>
+  <text x="125" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a148c">Nesne Oluşturma</text>
+  <text x="125" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a1b9a">Veri türü belirlenir</text>
+  <text x="125" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a1b9a">Derleyici kopya üretir</text>
+
+  <!-- Avantaj -->
+  <rect x="435" y="235" width="160" height="60" rx="10" fill="url(#box5)" filter="url(#shadow)" stroke="#4dd0e1" stroke-width="1"/>
+  <text x="515" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#006064">Avantaj</text>
+  <text x="515" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#00838f">Farklı türler</text>
+  <text x="515" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#00838f">Aynı kod ile işlenir</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Merkezden sola -->
+  <path d="M 195 95 L 125 135" stroke="#78909c" stroke-width="1.8" fill="none"/>
+  <polygon points="120,140 130,133 128,143" fill="#78909c"/>
+
+  <!-- Merkezden sağa -->
+  <path d="M 445 95 L 515 135" stroke="#78909c" stroke-width="1.8" fill="none"/>
+  <polygon points="520,140 510,133 512,143" fill="#78909c"/>
+
+  <!-- Soldan aşağı -->
+  <path d="M 125 205 L 125 230" stroke="#78909c" stroke-width="1.8" fill="none"/>
+  <polygon points="125,236 120,228 130,228" fill="#78909c"/>
+
+  <!-- Sağdan aşağı -->
+  <path d="M 515 205 L 515 230" stroke="#78909c" stroke-width="1.8" fill="none"/>
+  <polygon points="515,236 510,228 520,228" fill="#78909c"/>
+
+  <!-- Alt bağlantı çizgisi -->
+  <path d="M 205 265 L 430 265" stroke="#b0bec5" stroke-width="1.2" stroke-dasharray="5,4" fill="none"/>
+</svg>

@@ -14,6 +14,7 @@ tags:
 redirect_from:
   - /posts/cpp_inheritance/
 toc: true
+image: /img/cpp_inheritance-54.png
 ---
 
 
@@ -1894,3 +1895,5 @@ Sonra, aynı nesne ile, deger\_ata\_tur1() ve deger\_ata\_tur2() fonksiyonları 
 
 ![](/img/cprog/inhvirtual03.png)
  
+![cpp_inheritance-54](/img/cpp_inheritance-54.svg)
+

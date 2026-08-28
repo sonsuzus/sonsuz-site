@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/cpp_fonktemp/
 toc: true
+image: /img/cpp_fonktemp-84.png
 ---
 
 
@@ -417,6 +418,9 @@ Program, önce kendisine geçirilen değişken veri türündeki ilk parametre de
 | İşlemler | Aynı isme sahip fonksiyonların hepsi aynı işlemleri yapar. | Aynı isme sahip fonksiyonların her biri farklı işlemler yapabilir. |
 | Parametre | Farklı parametre veri türleri için tek bir bildirim yeterlidir. | Her bir parametre veri türü için ayrı bir bildirim gerekir. |
 | Çağrılma esası | Derleyici, fonksiyon çağrısında kullanılan parametre veya parametrelerin veri türlerine göre hangi fonksiyonun kullanılacağına karar verir. | Derleyici, fonksiyon çağrısında kullanılan parametre sayısı, sırası ve veri türlerine göre hangi fonksiyonun kullanılacağına karar verir. |
+
+![cpp_fonktemp-84](/img/cpp_fonktemp-84.svg)
+
 
 Aynı veri türünden iki parametre ile toplama işlemi yapan bir şablon fonksiyonu ile çoklu görev tanımlama işlemi yapılmış fonksiyonların kullanılmasını bir örnek üzerinde incelemeye çalışalım:
 

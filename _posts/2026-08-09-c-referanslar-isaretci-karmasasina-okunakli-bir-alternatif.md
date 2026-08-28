@@ -9,6 +9,7 @@ tags:
   - referanslar
   - işaretçiler
   - bellek yönetimi
+image: /img/c-referanslar-isaretci-84.png
 ---
 
 C++'ta referanslar (references), bir değişkene ikinci bir ad vermenin güvenli ve okunaklı yoludur. C'den gelen işaretçiler güçlüdür; ancak `*`, `&`, `->` ve `nullptr` kontrolleri özellikle fonksiyon imzalarını hızla zorlaştırabilir. Referans, adres fikrini tamamen gizlemez ama günlük kodda onu daha doğal bir sözdizimiyle sunar: Nesneyle uğraşıyor gibi yazarsınız, derleyici arka planda aynı belleğe erişimi sağlar.
@@ -46,6 +47,9 @@ Burada `zamYap`, sonucu `return` etmek yerine çağıranın verisini değiştiri
 | Boş olabilme | Hayır | Normalde hayır | Evet, `nullptr` olabilir |
 | Yeniden hedefleme | Uygulanmaz | Bağlandıktan sonra hayır | Evet |
 | Kullanım amacı | Bağımsız kopya | Zorunlu geçerli nesne | Opsiyonel nesne/adres işlemleri |
+
+![c-referanslar-isaretci-84](/img/c-referanslar-isaretci-84.svg)
+
 
 Referansın en yaygın ve en güvenli kullanım biçimi, salt-okunur büyük verileri `const` referansla almaktır. Bir `std::string`, `std::vector` veya kendi sınıfınızı değerle geçirmek maliyetli kopyalar üretebilir. `const T&` ise kopyalamaz ve fonksiyonun nesneyi değiştirmeyeceğini derleyici düzeyinde garanti eder.
 

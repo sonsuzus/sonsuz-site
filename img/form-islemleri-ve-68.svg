@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="formGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9ddf7"/>
+    </linearGradient>
+    <linearGradient id="guardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f1df"/>
+      <stop offset="100%" stop-color="#bfe4cc"/>
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eee0ff"/>
+      <stop offset="100%" stop-color="#dbc7f3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55708a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="51" cy="37" r="72" fill="#dceeff" opacity="0.48"/>
+  <circle cx="599" cy="281" r="96" fill="#dcefdc" opacity="0.42"/>
+  <path d="M28 270 C138 233 182 290 285 264 S475 220 615 249" fill="none" stroke="#c8dfd3" stroke-width="2" opacity="0.5"/>
+
+  <!-- Akış çizgileri -->
+  <path d="M151 156 L184 156" fill="none" stroke="#7e9bae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="184,156 174,150 174,162" fill="#7e9bae"/>
+  <path d="M347 156 L381 156" fill="none" stroke="#7e9bae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="381,156 371,150 371,162" fill="#7e9bae"/>
+  <path d="M504 156 L535 156" fill="none" stroke="#7e9bae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="535,156 525,150 525,162" fill="#7e9bae"/>
+
+  <!-- Reddetme dalı -->
+  <path d="M266 219 L266 251 L204 251" fill="none" stroke="#d58a86" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="204,251 214,245 214,257" fill="#d58a86"/>
+
+  <!-- Form -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="101" width="123" height="110" rx="20" fill="url(#formGrad)" stroke="#b6cfea"/>
+    <rect x="45" y="121" width="40" height="40" rx="12" fill="#f9fcff" opacity="0.9"/>
+    <path d="M56 133 L74 133 M56 141 L74 141 M56 149 L68 149" stroke="#7297b8" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="98" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385c78" font-weight="600">Web</text>
+    <text x="98" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385c78" font-weight="600">Formu</text>
+    <text x="89" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59758e">GET / POST</text>
+  </g>
+
+  <!-- Güvenlik kapısı -->
+  <g filter="url(#shadow)">
+    <rect x="184" y="74" width="163" height="145" rx="23" fill="url(#guardGrad)" stroke="#aed7bb"/>
+    <circle cx="266" cy="111" r="24" fill="#f9fffa" stroke="#a8d0b3" stroke-width="2"/>
+    <path d="M266 94 L280 100 L278 115 C276 122 271 127 266 130 C261 127 256 122 254 115 L252 100 Z" fill="#7bb990"/>
+    <path d="M260 111 L264 115 L272 106" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="266" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35634a" font-weight="700">Sunucu Doğrulama</text>
+    <text x="266" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7760">Yöntem • Tür • Biçim</text>
+    <text x="266" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7760">Uzunluk • İş kuralı</text>
+  </g>
+
+  <!-- Hata -->
+  <g filter="url(#soft)">
+    <rect x="70" y="231" width="134" height="42" rx="15" fill="#fde5e2" stroke="#edc1bd"/>
+    <circle cx="91" cy="252" r="11" fill="#dc8079"/>
+    <path d="M91 246 L91 253 M91 258 L91 258" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="143" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a514d" font-weight="600">422 Reddet</text>
+  </g>
+
+  <!-- Parametreli sorgu -->
+  <g filter="url(#shadow)">
+    <rect x="381" y="101" width="123" height="110" rx="20" fill="#fff4d9" stroke="#ecd59c"/>
+    <rect x="400" y="120" width="85" height="34" rx="10" fill="#fffaf0"/>
+    <path d="M411 130 L420 130 M425 130 L438 130 M411 140 L429 140 M435 140 L473 140" stroke="#bd9860" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="442" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#836338" font-weight="700">Parametreli</text>
+    <text x="442" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#836338" font-weight="700">Sorgu</text>
+  </g>
+
+  <!-- Veritabanı -->
+  <g filter="url(#shadow)">
+    <rect x="535" y="101" width="77" height="110" rx="20" fill="url(#dbGrad)" stroke="#cdb9e5"/>
+    <ellipse cx="573.5" cy="126" rx="22" ry="9" fill="#faf7ff" stroke="#ad91cf" stroke-width="2"/>
+    <path d="M551.5 126 L551.5 166 C551.5 171 561.5 175 573.5 175 C585.5 175 595.5 171 595.5 166 L595.5 126" fill="#c8afe5" opacity="0.72"/>
+    <path d="M551.5 145 C551.5 150 561.5 154 573.5 154 C585.5 154 595.5 150 595.5 145 M551.5 164 C551.5 169 561.5 173 573.5 173 C585.5 173 595.5 169 595.5 164" fill="none" stroke="#9c7abc" stroke-width="1.5"/>
+    <text x="573" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#694d87" font-weight="700">Veritabanı</text>
+  </g>
+
+  <!-- Alt güvenlik notları -->
+  <g opacity="0.95">
+    <rect x="223" y="284" width="72" height="24" rx="12" fill="#e3f3fb" stroke="#c6e0ec"/>
+    <text x="259" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48758c">HTTPS</text>
+    <rect x="305" y="284" width="72" height="24" rx="12" fill="#e7f4e5" stroke="#c9dfc5"/>
+    <text x="341" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7654">CSRF</text>
+    <rect x="387" y="284" width="104" height="24" rx="12" fill="#f3eafb" stroke="#dfcfef"/>
+    <text x="439" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735986">Çıktı Kodlama</text>
+  </g>
+</svg>

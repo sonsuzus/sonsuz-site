@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6c9bd1"/>
+      <stop offset="100%" stop-color="#4a7fb5"/>
+    </linearGradient>
+    <linearGradient id="leftGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8fc0e8"/>
+      <stop offset="100%" stop-color="#6fa8d4"/>
+    </linearGradient>
+    <linearGradient id="rightGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8d4a0"/>
+      <stop offset="100%" stop-color="#7fb877"/>
+    </linearGradient>
+    <linearGradient id="item1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0c4a0"/>
+      <stop offset="100%" stop-color="#e0a878"/>
+    </linearGradient>
+    <linearGradient id="item2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c4a8e0"/>
+      <stop offset="100%" stop-color="#a888c8"/>
+    </linearGradient>
+    <linearGradient id="item3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8d8e8"/>
+      <stop offset="100%" stop-color="#80b8d0"/>
+    </linearGradient>
+    <linearGradient id="item4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8c8a0"/>
+      <stop offset="100%" stop-color="#d0a878"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a5a7a">C++ Çok Biçimlilik</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="255" y="55" width="130" height="44" rx="22" fill="url(#centerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Çok Biçimlilik</text>
+
+  <!-- Sol dal: Derleme zamanı -->
+  <rect x="60" y="55" width="140" height="44" rx="22" fill="url(#leftGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="130" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Derleme Zamanı</text>
+  <text x="130" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8f0ff">Statik / Erken Bağlama</text>
+
+  <!-- Sağ dal: Çalışma zamanı -->
+  <rect x="440" y="55" width="140" height="44" rx="22" fill="url(#rightGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="510" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Çalışma Zamanı</text>
+  <text x="510" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8f0ff">Dinamik / Geç Bağlama</text>
+
+  <!-- Bağlantı çizgileri merkezden -->
+  <!-- Sol çizgi -->
+  <path d="M255 77 L200 77" stroke="#5a8ab5" stroke-width="2" fill="none"/>
+  <polygon points="200,77 210,72 210,82" fill="#5a8ab5"/>
+
+  <!-- Sağ çizgi -->
+  <path d="M385 77 L440 77" stroke="#5a8ab5" stroke-width="2" fill="none"/>
+  <polygon points="440,77 430,72 430,82" fill="#5a8ab5"/>
+
+  <!-- Alt bağlantı -->
+  <path d="M320 99 L320 120" stroke="#5a8ab5" stroke-width="2" fill="none"/>
+  <polygon points="320,120 315,110 325,110" fill="#5a8ab5"/>
+
+  <!-- Alt bölüm: Uygulama yöntemleri -->
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a5a7a">Uygulama Yöntemleri</text>
+
+  <!-- Yöntem 1 -->
+  <rect x="30" y="155" width="130" height="55" rx="10" fill="url(#item1)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="95" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#5a3a20">Fonksiyon</text>
+  <text x="95" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#5a3a20">Overloading</text>
+  <text x="95" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#7a5a40">Çoklu görev tanımlama</text>
+
+  <!-- Yöntem 2 -->
+  <rect x="180" y="155" width="130" height="55" rx="10" fill="url(#item2)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="245" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#4a2a6a">İşlemci</text>
+  <text x="245" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#4a2a6a">Overloading</text>
+  <text x="245" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#6a4a8a">Operatör yükleme</text>
+
+  <!-- Yöntem 3 -->
+  <rect x="330" y="155" width="130" height="55" rx="10" fill="url(#item3)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="395" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1a4a6a">Fonksiyon</text>
+  <text x="395" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1a4a6a">Overriding</text>
+  <text x="395" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#3a6a8a">Doğrudan yeniden tanımlama</text>
+
+  <!-- Yöntem 4 -->
+  <rect x="480" y="155" width="130" height="55" rx="10" fill="url(#item4)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="545" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#5a3a10">Sanal (virtual)</text>
+  <text x="545" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#5a3a10">Overriding</text>
+  <text x="545" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#7a5a30">Sanal yöntemle yeniden tanımlama</text>
+
+  <!-- Alt bağlantı çizgileri -->
+  <path d="M95 155 L95 145 L320 145" stroke="#5a8ab5" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <path d="M245 155 L245 145" stroke="#5a8ab5" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <path d="M395 155 L395 145" stroke="#5a8ab5" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <path d="M545 155 L545 145 L320 145" stroke="#5a8ab5" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8aa5">Kalıtım ve sanal fonksiyonlar ile çok biçimlilik sağlanır</text>
+
+  <!-- Küçük dekoratif öğeler -->
+  <circle cx="55" y="55" r="4" fill="#6c9bd1" opacity="0.3"/>
+  <circle cx="585" y="55" r="4" fill="#6c9bd1" opacity="0.3"/>
+  <circle cx="55" y="265" r="4" fill="#6c9bd1" opacity="0.3"/>
+  <circle cx="585" y="265" r="4" fill="#6c9bd1" opacity="0.3"/>
+
+  <!-- Etiket rozetleri -->
+  <rect x="20" y="270" width="90" height="20" rx="10" fill="#e8f0e8" stroke="#a0c0a0" stroke-width="1" opacity="0.8"/>
+  <text x="65" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#4a7a4a">Nesne Yönelimli</text>
+
+  <rect x="530" y="270" width="90" height="20" rx="10" fill="#e8e8f0" stroke="#a0a0c0" stroke-width="1" opacity="0.8"/>
+  <text x="575" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#4a4a7a">C++ Dili</text>
+</svg>

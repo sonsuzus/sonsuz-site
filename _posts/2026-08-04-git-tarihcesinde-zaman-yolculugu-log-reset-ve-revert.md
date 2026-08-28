@@ -9,9 +9,13 @@ tags:
   - versiyon kontrolü
   - hata yönetimi
 toc: true
+image: /img/git-tarihcesinde-zaman-35.png
 ---
 
 Bir Git deposunun geçmişi, projenin nasıl geliştiğini anlatan dijital bir seyir defteridir. Her commit; yapılan değişiklikleri, değişikliği yapan kişiyi ve önceki duruma giden bağlantıyı saklar. Yanlış bir commit oluşturduğumuzda paniğe kapılmak yerine bu kayıtları okuyabilir, ardından `reset` veya `revert` ile güvenli bir zaman yolculuğuna çıkabiliriz.
+
+
+![git-tarihcesinde-zaman-35](/img/git-tarihcesinde-zaman-35.svg)
 
 ``
 

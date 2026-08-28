@@ -12,7 +12,11 @@ tags:
 redirect_from:
   - /posts/cpp_onislemci/
 toc: true
+image: /img/cpp_onislemci-35.png
 ---
+
+![cpp_onislemci-35](/img/cpp_onislemci-35.svg)
+
 
 
 Derleme işleminin ilk safhasında, önişlemci derleyiciye bazı direktifler ulaştırır. Derleyici tarafından bazı özel işlemlerin yapılmasını sağlayan bu direktiflere Önişlemci Direktifleri adı verilir. Şimdi, önişlemci direktiflerini sıra ile incelemeye çalışalım:

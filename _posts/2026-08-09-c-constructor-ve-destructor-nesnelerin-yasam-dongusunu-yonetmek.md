@@ -10,6 +10,7 @@ tags:
   - constructor
   - destructor
   - bellek yönetimi
+image: /img/c-constructor-ve-23.png
 ---
 
 C++'ta bir nesne yalnızca değişken tanımlandığında ortaya çıkan basit bir veri paketi değildir; doğar, kullanılır ve zamanı gelince yok olur. Bu yaşam döngüsünün iki başrol oyuncusu **yapıcı metotlar** (constructor) ile **yıkıcı metotlardır** (destructor). Constructor, nesne bellekte oluşturulurken başlangıç durumunu güvenle kurar; destructor ise nesne kapsam dışına çıkarken sahne arkasında kalan kaynakları toplar. Özellikle dosya, ağ bağlantısı, dinamik bellek ve kilit gibi kaynaklarda bu otomasyon, C++'ın en güçlü fikirlerinden biri olan RAII yaklaşımının temelidir.
@@ -51,6 +52,9 @@ Buradaki `: sahip(isim), bakiye(ilkBakiye)` bölümü **üye başlatma listesi**
 | Parametre | Alabilir, aşırı yüklenebilir | Parametre almaz, tek tanedir |
 | Temel görev | Geçerli başlangıç durumu kurmak | Kaynakları serbest bırakmak |
 | Çağrılma biçimi | Genellikle otomatik | Genellikle otomatik |
+
+![c-constructor-ve-23](/img/c-constructor-ve-23.svg)
+
 
 Destructor'ın önemi, nesnenin sahip olduğu kaynağın türü arttıkça büyür. Sadece `int` gibi basit üyeler için özel destructor yazmak gerekmez; derleyici zaten yeterli temizliği üretir. Ancak sınıf `new` ile bellek ayırıyor, dosya açıyor veya bir sistem kaynağını kilitliyorsa, bu kaynak mutlaka bırakılmalıdır. Kapsamdan çıkış normal bir `return` ile de olsa, hata nedeniyle exception fırlatılmasıyla da olsa destructor çağrılır.
 

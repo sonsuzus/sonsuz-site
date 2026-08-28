@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/cpp_fonkvirtual/
 toc: true
+image: /img/cpp_fonkvirtual-38.png
 ---
 
 
@@ -979,3 +980,5 @@ Programın çalışmasını gösteren şema aşağıdadır:
 
 ![](/img//public/images/cppprog/fonkvirtual06.png)
  
+![cpp_fonkvirtual-38](/img/cpp_fonkvirtual-38.svg)
+

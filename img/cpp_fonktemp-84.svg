@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C9BCF"/>
+      <stop offset="100%" stop-color="#4A7DBD"/>
+    </linearGradient>
+    <linearGradient id="typeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7ED6A5"/>
+      <stop offset="100%" stop-color="#5BBE8A"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0A6CA"/>
+      <stop offset="100%" stop-color="#E88BB5"/>
+    </linearGradient>
+    <linearGradient id="keyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD93D"/>
+      <stop offset="100%" stop-color="#F5C518"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">C++ Fonksiyon Şablonları</text>
+
+  <!-- Merkez şablon kutusu -->
+  <rect x="220" y="55" width="200" height="70" rx="12" fill="url(#mainGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">template &lt;typename T&gt;</text>
+  <text x="320" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#E8F0FE">T fonk-adı(T param)</text>
+  <text x="320" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#D0E0F0">Genel kod yapısı</text>
+
+  <!-- Anahtar kelimeler -->
+  <rect x="60" y="65" width="110" height="40" rx="10" fill="url(#keyGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="115" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5D4E00">template</text>
+
+  <rect x="60" y="115" width="110" height="40" rx="10" fill="url(#keyGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="115" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5D4E00">typename</text>
+
+  <rect x="60" y="165" width="110" height="40" rx="10" fill="url(#keyGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="115" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5D4E00">class</text>
+
+  <!-- Bağlantı çizgileri - anahtar kelimelerden merkeze -->
+  <path d="M170 85 L220 85" stroke="#8A9BA8" stroke-width="2" fill="none"/>
+  <polygon points="220,85 212,81 212,89" fill="#8A9BA8"/>
+
+  <path d="M170 135 L220 100" stroke="#8A9BA8" stroke-width="2" fill="none"/>
+  <polygon points="220,100 212,96 214,104" fill="#8A9BA8"/>
+
+  <path d="M170 185 L220 115" stroke="#8A9BA8" stroke-width="2" fill="none"/>
+  <polygon points="220,115 212,111 214,119" fill="#8A9BA8"/>
+
+  <!-- T yer tutucu -->
+  <rect x="470" y="60" width="120" height="55" rx="10" fill="#E8F4FD" stroke="#6C9BCF" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="530" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2C3E50">T: Yer tutucu</text>
+  <text x="530" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5A7A9A">Gerçek türle değişir</text>
+
+  <path d="M420 90 L470 87" stroke="#8A9BA8" stroke-width="2" fill="none"/>
+  <polygon points="470,87 462,83 462,91" fill="#8A9BA8"/>
+
+  <!-- Alt bölüm: Tür örnekleri -->
+  <text x="320" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2C3E50">Derleyici türe özel sürümler üretir</text>
+
+  <!-- int sürümü -->
+  <rect x="50" y="185" width="150" height="55" rx="10" fill="url(#typeGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="125" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">int sürümü</text>
+  <text x="125" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#E8F5EE">int fonk(int param)</text>
+
+  <!-- double sürümü -->
+  <rect x="245" y="185" width="150" height="55" rx="10" fill="url(#typeGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="320" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">double sürümü</text>
+  <text x="320" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#E8F5EE">double fonk(double)</text>
+
+  <!-- string sürümü -->
+  <rect x="440" y="185" width="150" height="55" rx="10" fill="url(#typeGrad)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="515" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">string sürümü</text>
+  <text x="515" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#E8F5EE">string fonk(string)</text>
+
+  <!-- Bağlantılar -->
+  <path d="M270 125 L125 185" stroke="#8A9BA8" stroke-width="1.8" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="125,185 133,181 131,189" fill="#8A9BA8"/>
+
+  <path d="M320 125 L320 185" stroke="#8A9BA8" stroke-width="1.8" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="320,185 314,181 314,189" fill="#8A9BA8"/>
+
+  <path d="M370 125 L515 185" stroke="#8A9BA8" stroke-width="1.8" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="515,185 507,181 509,189" fill="#8A9BA8"/>
+
+  <!-- Alt bilgi -->
+  <rect x="180" y="260" width="280" height="40" rx="10" fill="#FFFFFF" stroke="#B0C4DE" stroke-width="1" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4A6A8A">Tek kod yapısı, geniş veri yelpazesi</text>
+  <text x="320" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4A6A8A">Kod tekrarını önler</text>
+</svg>

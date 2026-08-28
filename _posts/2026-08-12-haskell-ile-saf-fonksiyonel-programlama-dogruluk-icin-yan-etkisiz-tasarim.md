@@ -9,6 +9,7 @@ tags:
   - fonksiyonel programlama
   - saf fonksiyonlar
   - tembel değerlendirme
+image: /img/haskell-ile-saf-98.png
 ---
 
 Bir programın doğru çalıştığından emin olmak çoğu zaman yalnızca test yazmakla bitmez. Değişkenlerin beklenmedik biçimde güncellenmesi, dosya işlemleri, ağ çağrıları ve zaman bağımlılığı gibi etkiler kodun davranışını zorlaştırır. Haskell, **saf fonksiyonel programlama** yaklaşımıyla bu karmaşıklığı azaltmayı hedefler: Fonksiyonlar mümkün olduğunca yalnızca girdilerine bağlı sonuç üretir; yan etkiler ise açıkça modellenir.
@@ -56,3 +57,6 @@ ilkBesKare = take 5 (map (\n -> n * n) dogalSayilar)
 Saflık ve tembellik birlikte özellikle güçlüdür. Saf bir ifade ertelenebilir, tekrar hesaplanabilir veya derleyici tarafından optimize edilebilir; çünkü bu işlemler programın gözlemlenebilir davranışını değiştirmez. Yan etkili bir `print` ya da dosya yazma işlemi ertelenirse sırası değişebilir ve sonuç tehlikeli hale gelir. Haskell bu nedenle etkileri `IO` tipiyle ayırır: saf hesaplama ile dış dünya etkileşimi aynı şeymiş gibi görünmez.
 
 Sonuç olarak Haskell, program doğruluğunu sihirli biçimde garanti etmez; ancak hataya açık alanları görünür yapar. Saf fonksiyonlar küçük, tahmin edilebilir ve kanıtlanabilir bileşenler sunar. Tembel değerlendirme ise yalnızca gerekli işi yaparak zarif veri akışları kurar. Bu ikili, özellikle iş kuralları, veri dönüşümü ve algoritmik hesaplamalarda daha güvenilir yazılımlar tasarlamak için güçlü bir zihinsel modeldir.
+
+![haskell-ile-saf-98](/img/haskell-ile-saf-98.svg)
+

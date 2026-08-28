@@ -11,6 +11,7 @@ tags:
   - heap
   - memory leak
 toc: true
+image: /img/heap-macerasi-cde-26.png
 ---
 
 Programlar çalışırken tüm veri boyutları baştan bilinmez: Kullanıcının gireceği metnin uzunluğu, dosyadaki kayıt sayısı veya oluşturulacak nesne miktarı değişkendir. İşte bu noktada **heap (öbek)** alanı devreye girer. Heap, çalışma zamanında bellek talep etmemizi sağlayan bölgedir. Bu bellek çağıran fonksiyon bittiğinde kendiliğinden kaybolmaz; programcı onu bilinçli biçimde iade etmelidir. Güç büyük, sorumluluk daha da büyüktür.
@@ -99,3 +100,6 @@ int main() {
 ```
 
 Bu yaklaşım özellikle erken `return`, istisna (`exception`) veya karmaşık kontrol akışlarında sızıntıları azaltır. C projelerinde ise her başarılı `malloc` için tek ve belirgin bir `free` yolu tasarlamak; C++ projelerinde de mümkün olduğunca standart kapları ve akıllı işaretçileri tercih etmek en sağlam savunmadır. Heap’i özgürce kullanın, ama her tahsisin dönüş biletini unutmayın.
+
+![heap-macerasi-cde-26](/img/heap-macerasi-cde-26.svg)
+

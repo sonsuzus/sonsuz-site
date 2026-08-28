@@ -12,6 +12,7 @@ tags:
 redirect_from:
   - /posts/cpp_fonkoverload/
 toc: true
+image: /img/cpp_fonkoverload-47.png
 ---
 
 
@@ -519,3 +520,6 @@ Copy constructor fonksiyonu: 21
 ```
 
 Program, biri parametre atayarak (nes01) diğeri ise parametre atamadan (nes02) iki adet nesne oluşturur. İki farklı yöntemle, copy constructor fonksiyonunu çağırarak, iki adet nesne (nes03 ve nes04) daha oluşturur. Yeni oluşturduğu nesnelere, constructor fonksiyonu yoluyla, ilk oluşturduğu nesnenin (nes01) değerini atar. Atama işlemcisini kullanarak nes02 nesnesine nes01 nesnesini atar. Sonuç olarak, bir nesneye atama işlemcisi ile iki nesneye ise copy constructor yolu ile nes01 nesnesini atar. Bütün nesneler yoluyla id değişken bellek adres ve değerlerini ekrana yazar. nes01 nesnesi yoluyla deger\_degistir() fonksiyonunu kullanarak id değişken değerini değiştirir. Bütün nesneler yoluyla id değişken bellek adres ve değerlerini tekrar ekrana yazar. Sadece ilk nesneye ait değişkene değerinin değiştiği görülür.
+
+![cpp_fonkoverload-47](/img/cpp_fonkoverload-47.svg)
+

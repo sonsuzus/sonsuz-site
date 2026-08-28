@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="stackGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7e8"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#6d8299" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#6d8299" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="588" cy="35" r="72" fill="#dceff0" opacity="0.45"/>
+  <circle cx="47" cy="300" r="82" fill="#e8e5fb" opacity="0.38"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#354b63">Fonksiyon Çağrıları ve Yığın</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708298">LIFO bellek yolculuğu</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="71" width="146" height="215" rx="16" fill="#ffffff"/>
+  </g>
+  <text x="48" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566d">Bellek Bölgeleri</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="43" y="111" width="116" height="29" rx="8" fill="#dceaff"/>
+    <text x="58" y="130" fill="#385675">Kod</text>
+    <rect x="43" y="147" width="116" height="29" rx="8" fill="#e6f4df"/>
+    <text x="58" y="166" fill="#426342">Global veri</text>
+    <rect x="43" y="183" width="116" height="29" rx="8" fill="#f7e5cf"/>
+    <text x="58" y="202" fill="#795537">Heap</text>
+    <rect x="43" y="219" width="116" height="47" rx="9" fill="#dcd5f4"/>
+    <text x="58" y="239" font-weight="700" fill="#534678">Stack</text>
+    <text x="58" y="255" fill="#71658d">Çağrılar ve yereller</text>
+  </g>
+
+  <path d="M181 243 C201 243 197 243 214 243" fill="none" stroke="#8d7db8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="214,243 205,238 205,248" fill="#8d7db8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="222" y="63" width="216" height="231" rx="18" fill="url(#stackGrad)" stroke="#d5dff0"/>
+  </g>
+  <text x="243" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6077">Yığın Belleği</text>
+  <text x="344" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788aa0">Yüksek adres</text>
+
+  <path d="M411 104 L411 260" stroke="#9badc2" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <polygon points="411,268 405,257 417,257" fill="#9badc2"/>
+  <text x="349" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788aa0">Düşük adres</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="243" y="104" width="145" height="39" rx="10" fill="#d9ebff"/>
+    <text x="258" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6484">main çerçevesi</text>
+
+    <rect x="243" y="151" width="145" height="34" rx="9" fill="#f9e4cc"/>
+    <text x="257" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#795336">Dönüş adresi</text>
+
+    <rect x="243" y="192" width="145" height="34" rx="9" fill="#e7def8"/>
+    <text x="257" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d4b83">Kayıtçılar</text>
+
+    <rect x="243" y="233" width="145" height="42" rx="10" fill="#dff1df"/>
+    <text x="257" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466948">topla çerçevesi</text>
+    <text x="257" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547856">yerel: araSonuc</text>
+  </g>
+
+  <path d="M438 208 C458 208 460 208 479 208" fill="none" stroke="#7890aa" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="479,208 470,203 470,213" fill="#7890aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="486" y="71" width="126" height="68" rx="15" fill="#ffffff"/>
+    <rect x="486" y="157" width="126" height="68" rx="15" fill="#ffffff"/>
+    <rect x="486" y="243" width="126" height="48" rx="15" fill="#ffffff"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <circle cx="510" cy="96" r="11" fill="#dceaff"/>
+    <path d="M506 96 L514 96 M511 92 L515 96 L511 100" fill="none" stroke="#4d7193" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="530" y="95" font-weight="700" fill="#40566d">Parametreler</text>
+    <text x="530" y="113" fill="#728398">a: 7, b: 5</text>
+
+    <circle cx="510" cy="182" r="11" fill="#f9e4cc"/>
+    <path d="M506 182 L514 182 M511 178 L515 182 L511 186" fill="none" stroke="#846143" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="530" y="181" font-weight="700" fill="#40566d">İşlem</text>
+    <text x="530" y="199" fill="#728398">a + b</text>
+
+    <circle cx="510" cy="267" r="11" fill="#dff1df"/>
+    <path d="M506 267 L514 267 M511 263 L515 267 L511 271" fill="none" stroke="#4d784e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="530" y="266" font-weight="700" fill="#40566d">Dönüş</text>
+    <text x="530" y="282" fill="#728398">sonuç: 12</text>
+  </g>
+
+  <path d="M549 140 L549 151" fill="none" stroke="#91a4b9" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="549,157 544,148 554,148" fill="#91a4b9"/>
+  <path d="M549 226 L549 237" fill="none" stroke="#91a4b9" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="549,243 544,234 554,234" fill="#91a4b9"/>
+
+  <rect x="446" y="303" width="161" height="1" fill="#ccd9df"/>
+  <text x="463" y="317" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e8194">Son giren, ilk çıkar</text>
+</svg>

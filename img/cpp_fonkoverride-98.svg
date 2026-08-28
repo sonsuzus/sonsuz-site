@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">C++ Fonksiyon Yeniden Tanımlama</text>
+
+  <!-- Ana Sınıf Kutusu -->
+  <rect x="220" y="55" width="200" height="60" rx="10" fill="#e8f4fd" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Ana Sınıf</text>
+  <text x="320" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">fonksiyon()</text>
+
+  <!-- Kalıtım Oku -->
+  <path d="M 320 115 L 320 145" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="314,143 320,155 326,143" fill="#7f8c8d"/>
+
+  <!-- Türetilmiş Sınıf Kutusu -->
+  <rect x="220" y="155" width="200" height="60" rx="10" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Türetilmiş Sınıf</text>
+  <text x="320" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#34495e">fonksiyon()</text>
+
+  <!-- Yeniden Tanımlama Etiketi -->
+  <rect x="430" y="160" width="130" height="50" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="495" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#d35400">Yeniden</text>
+  <text x="495" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#d35400">Tanımlama</text>
+
+  <!-- Ok: Türetilmiş -> Yeniden Tanımlama -->
+  <path d="M 420 185 L 428 185" stroke="#e67e22" stroke-width="2" fill="none"/>
+  <polygon points="426,181 434,185 426,189" fill="#e67e22"/>
+
+  <!-- Çağrı Kutusu -->
+  <rect x="70" y="155" width="120" height="60" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="130" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Nesne Çağrısı</text>
+  <text x="130" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449">türetilmiş.fonksiyon()</text>
+
+  <!-- Ok: Türetilmiş -> Çağrı -->
+  <path d="M 220 185 L 192 185" stroke="#27ae60" stroke-width="2" fill="none"/>
+  <polygon points="194,181 186,185 194,189" fill="#27ae60"/>
+
+  <!-- Sonuç Kutusu -->
+  <rect x="70" y="245" width="180" height="50" rx="10" fill="#f4ecf7" stroke="#8e44ad" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="160" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6c3483">Türetilmiş Sınıfın</text>
+  <text x="160" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6c3483">Fonksiyonu Çalışır</text>
+
+  <!-- Ok: Çağrı -> Sonuç -->
+  <path d="M 130 215 L 130 243" stroke="#8e44ad" stroke-width="2" fill="none"/>
+  <polygon points="124,241 130,253 136,241" fill="#8e44ad"/>
+
+  <!-- Kalıtım Gereksinimi Etiketi -->
+  <rect x="430" y="55" width="130" height="50" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="495" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#c0392b">Kalıtım</text>
+  <text x="495" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#c0392b">Gereklidir</text>
+
+  <!-- Ok: Ana -> Kalıtım -->
+  <path d="M 420 80 L 428 80" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <polygon points="426,76 434,80 426,84" fill="#e74c3c"/>
+
+  <!-- Alt Bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Aynı isim, farklı davranış</text>
+</svg>

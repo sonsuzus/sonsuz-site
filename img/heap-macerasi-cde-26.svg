@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="heapGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8ecff"/>
+      <stop offset="100%" stop-color="#bfe1f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#65829a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#65829a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="603" cy="35" r="48" fill="#dff3e5" opacity="0.48"/>
+  <circle cx="49" cy="287" r="63" fill="#dceeff" opacity="0.48"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546b">DİNAMİK BELLEK YAŞAM DÖNGÜSÜ</text>
+
+  <g filter="url(#shadow)">
+    <rect x="25" y="68" width="122" height="172" rx="18" fill="#fffdf9"/>
+    <rect x="25" y="68" width="122" height="34" rx="18" fill="#e8edf7"/>
+    <rect x="25" y="86" width="122" height="16" fill="#e8edf7"/>
+  </g>
+  <text x="86" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53677b">Stack</text>
+  <rect x="43" y="119" width="86" height="26" rx="7" fill="#d9e2f0" filter="url(#smallShadow)"/>
+  <rect x="43" y="153" width="86" height="26" rx="7" fill="#d9e2f0" filter="url(#smallShadow)"/>
+  <rect x="43" y="187" width="86" height="26" rx="7" fill="#d9e2f0" filter="url(#smallShadow)"/>
+  <text x="86" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52657a">Yerel veri</text>
+  <text x="86" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52657a">Otomatik</text>
+  <text x="86" y="204" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52657a">Kapsam sonu</text>
+
+  <path d="M157 154 L190 154" stroke="#69869a" stroke-width="2.2" fill="none"/>
+  <polygon points="190,154 182,149 182,159" fill="#69869a"/>
+
+  <g filter="url(#shadow)">
+    <rect x="201" y="56" width="168" height="198" rx="22" fill="url(#heapGrad)"/>
+    <rect x="218" y="73" width="134" height="30" rx="10" fill="#eaf7ff" opacity="0.9"/>
+  </g>
+  <text x="285" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285a76">Heap · Öbek</text>
+
+  <rect x="223" y="119" width="55" height="39" rx="9" fill="#fff5cf" filter="url(#smallShadow)"/>
+  <rect x="291" y="119" width="55" height="39" rx="9" fill="#ffdcd8" filter="url(#smallShadow)"/>
+  <rect x="223" y="171" width="55" height="39" rx="9" fill="#d9f1d4" filter="url(#smallShadow)"/>
+  <rect x="291" y="171" width="55" height="39" rx="9" fill="#e7ddfb" filter="url(#smallShadow)"/>
+  <text x="250" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#695929">Blok</text>
+  <text x="318" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b4b48">Blok</text>
+  <text x="250" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#467043">Blok</text>
+  <text x="318" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b4c86">Blok</text>
+  <text x="285" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456d84">Ayrılana kadar yaşar</text>
+
+  <path d="M379 117 C398 117 401 100 419 100" stroke="#d78b69" stroke-width="2.2" fill="none"/>
+  <polygon points="419,100 411,95 412,105" fill="#d78b69"/>
+  <path d="M379 190 C398 190 401 215 419 215" stroke="#5e9a78" stroke-width="2.2" fill="none"/>
+  <polygon points="419,215 411,210 412,220" fill="#5e9a78"/>
+
+  <g filter="url(#shadow)">
+    <rect x="428" y="57" width="181" height="86" rx="17" fill="#fff3ea"/>
+    <rect x="428" y="174" width="181" height="86" rx="17" fill="#edfaef"/>
+  </g>
+
+  <circle cx="453" cy="83" r="13" fill="#f4b58e"/>
+  <text x="453" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">C</text>
+  <text x="476" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7b5141">Elle yönetim</text>
+  <rect x="445" y="103" width="67" height="24" rx="8" fill="#ffe1ce"/>
+  <rect x="525" y="103" width="67" height="24" rx="8" fill="#ffe1ce"/>
+  <text x="478" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#895944">malloc</text>
+  <text x="558" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#895944">free</text>
+  <path d="M514 115 L521 115" stroke="#a26c54" stroke-width="1.8"/>
+  <polygon points="521,115 516,112 516,118" fill="#a26c54"/>
+
+  <circle cx="453" cy="200" r="13" fill="#88c99a"/>
+  <text x="453" y="204" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">C++</text>
+  <text x="476" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40704d">Güvenli sahiplik</text>
+  <rect x="445" y="220" width="67" height="24" rx="8" fill="#d8f1da"/>
+  <rect x="525" y="220" width="67" height="24" rx="8" fill="#d8f1da"/>
+  <text x="478" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#467950">new</text>
+  <text x="558" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#467950">delete</text>
+  <path d="M514 232 L521 232" stroke="#5e9870" stroke-width="1.8"/>
+  <polygon points="521,232 516,229 516,235" fill="#5e9870"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="435" y="273" width="166" height="29" rx="14" fill="#d8eedd"/>
+  </g>
+  <path d="M454 280 L466 280 L469 286 L466 294 L454 294 L451 286 Z" fill="#64a679"/>
+  <path d="M456 286 L459 289 L465 283" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+  <text x="526" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e714c">RAII · Akıllı işaretçi</text>
+
+  <path d="M518 261 L518 270" stroke="#5e9870" stroke-width="2"/>
+  <polygon points="518,270 513,263 523,263" fill="#5e9870"/>
+</svg>

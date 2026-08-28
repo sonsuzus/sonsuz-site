@@ -10,7 +10,11 @@ tags:
   - şablonlar
 redirect_from:
   - /posts/cpp_degtemp/
+image: /img/cpp_degtemp-46.png
 ---
+
+![cpp_degtemp-46](/img/cpp_degtemp-46.svg)
+
 
 
 C++14 sürümü ile birlikte değişken şablonları oluşturma olanağı sağlandı. Bir değişken şablonu template anahtar kelimesi ile oluşturulur. Değişken şablonu bildirimi için kullanılan genel yapı aşağıda gösterilmektedir:

@@ -9,6 +9,7 @@ tags:
   - derleyici
   - statik tipleme
 toc: true
+image: /img/tip-cikarimi-derleyicinin-61.png
 ---
 
 Bir değişken tanımlarken veri türünü yazmadığınız hâlde editörünüzün onun sayı mı, metin mi yoksa daha karmaşık bir nesne mi olduğunu bilmesi sihir gibi görünebilir. Aslında perde arkasında çalışan mekanizma **tip çıkarımıdır**. Derleyici, atanan ifadeyi inceleyerek uygun türü belirler; böylece kod kısalırken statik tip güvenliği büyük ölçüde korunur.
@@ -31,6 +32,9 @@ Bu işlem çoğunlukla **derleme zamanında** gerçekleşir. Yani program çalı
 | Sonradan farklı tür atanabilir mi? | Genellikle hayır | Genellikle evet | Hayır |
 | Kod uzunluğu | Kısa | Kısa | Daha uzun |
 | Erken hata yakalama | Güçlü | Daha sınırlı | Güçlü |
+
+![tip-cikarimi-derleyicinin-61](/img/tip-cikarimi-derleyicinin-61.svg)
+
 
 ## Derleyici nasıl karar verir?
 

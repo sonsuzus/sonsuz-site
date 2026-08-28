@@ -10,6 +10,7 @@ tags:
   - 2pl
   - deadlock
   - izolasyon
+image: /img/izolasyon-seviyeleriyle-2pl-59.png
 ---
 
 Bir veritabanı işlem yöneticisi, aynı anda gelen yüzlerce isteğin veriyi birbirinin ayağına basmadan değiştirmesini sağlar. Bu yöneticinin temel görevi, işlemlere doğru izolasyon garantisini vermek, kilitleri düzenlemek ve iki işlem birbirini sonsuza dek beklediğinde alarmı çalmaktır. Bu yazıda, farklı izolasyon seviyelerini destekleyen; iki fazlı kilitleme (2PL) kullanan ve kilitlenmeleri tespit eden bir model kuracağız.
@@ -69,3 +70,6 @@ class LockManager:
 Kilitlenme, örneğin $T_1$'in `A`yı tutup `B`yi beklemesi; $T_2$'nin de `B`yi tutup `A`yı beklemesiyle oluşur. Bekleme grafiğinde $T_1 \rightarrow T_2 \rightarrow T_1$ çevrimi görülür. Çevrim varsa yönetici bir kurban işlem seçer, onu `ROLLBACK` eder, kilitlerini serbest bırakır ve bekleyen işlemleri uyandırır. Kurban seçiminde en genç işlem, en az değişiklik yapan işlem veya yeniden çalıştırma maliyeti düşük işlem tercih edilebilir.
 
 Modelin kritik ayrıntısı, izolasyon politikasını kilit yöneticisinden ayırmaktır. İşlem yöneticisi, seçilen seviyeye göre hangi kilidin isteneceğini ve ne zaman bırakılacağını belirler; kilit yöneticisi ise yalnızca uyumluluk, kuyruk ve çevrim tespitiyle ilgilenir. Bu ayrım, yarın MVCC gibi farklı bir eşzamanlılık stratejisine geçmek istediğinizde tasarımın tamamını söküp takmanızı önler.
+
+![izolasyon-seviyeleriyle-2pl-59](/img/izolasyon-seviyeleriyle-2pl-59.svg)
+

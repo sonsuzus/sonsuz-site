@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">C++ Fonksiyon Çoklu Görev (Overloading)</text>
+
+  <!-- Merkez fonksiyon kutusu -->
+  <rect x="245" y="55" width="150" height="48" rx="12" fill="#e8f4f8" stroke="#5dade2" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Fonksiyon</text>
+  <text x="320" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">topla()</text>
+
+  <!-- Çok biçimlilik etiketi -->
+  <rect x="260" y="115" width="120" height="26" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="320" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7d6608">Çok biçimlilik</text>
+
+  <!-- Ok aşağı -->
+  <line x1="320" y1="103" x2="320" y2="115" stroke="#7f8c8d" stroke-width="1.5"/>
+  <polygon points="315,113 320,121 325,113" fill="#7f8c8d"/>
+
+  <!-- Sol üst fonksiyon -->
+  <rect x="30" y="60" width="140" height="52" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="100" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1e8449">topla(int, int)</text>
+  <text x="100" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">2 tam sayı</text>
+
+  <!-- Sol alt fonksiyon -->
+  <rect x="30" y="140" width="140" height="52" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="100" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#1e8449">topla(int, int, int)</text>
+  <text x="100" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">3 tam sayı</text>
+
+  <!-- Sağ üst fonksiyon -->
+  <rect x="470" y="60" width="140" height="52" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="540" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#922b21">topla(double, double)</text>
+  <text x="540" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">2 ondalık</text>
+
+  <!-- Sağ alt fonksiyon -->
+  <rect x="470" y="140" width="140" height="52" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="540" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#922b21">topla(int, double)</text>
+  <text x="540" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">karışık tip</text>
+
+  <!-- Oklar merkezden dışarı -->
+  <!-- Sol üst ok -->
+  <line x1="245" y1="75" x2="170" y2="80" stroke="#7f8c8d" stroke-width="1.5"/>
+  <polygon points="178,76 168,81 179,86" fill="#7f8c8d"/>
+
+  <!-- Sol alt ok -->
+  <line x1="245" y1="90" x2="170" y2="155" stroke="#7f8c8d" stroke-width="1.5"/>
+  <polygon points="178,149 168,156 179,161" fill="#7f8c8d"/>
+
+  <!-- Sağ üst ok -->
+  <line x1="395" y1="75" x2="470" y2="80" stroke="#7f8c8d" stroke-width="1.5"/>
+  <polygon points="462,76 472,81 461,86" fill="#7f8c8d"/>
+
+  <!-- Sağ alt ok -->
+  <line x1="395" y1="90" x2="470" y2="155" stroke="#7f8c8d" stroke-width="1.5"/>
+  <polygon points="462,149 472,156 461,161" fill="#7f8c8d"/>
+
+  <!-- Çağrı kutusu -->
+  <rect x="170" y="225" width="300" height="55" rx="12" fill="#ebdef0" stroke="#8e44ad" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#6c3483">Çağrı örnekleri</text>
+  <text x="320" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">topla(3,5) → int sürüm</text>
+  <text x="320" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">topla(2.5,4.1) → double sürüm</text>
+
+  <!-- Ok merkezden çağrı kutusuna -->
+  <line x1="320" y1="141" x2="320" y2="225" stroke="#7f8c8d" stroke-width="1.5"/>
+  <polygon points="315,218 320,228 325,218" fill="#7f8c8d"/>
+
+  <!-- Yönlendirme etiketi -->
+  <rect x="350" y="185" width="130" height="24" rx="7" fill="#fdebd0" stroke="#e67e22" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="415" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#a04000">Uygun sürüme yönlendir</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#95a5a6">Aynı isim, farklı parametreler</text>
+</svg>

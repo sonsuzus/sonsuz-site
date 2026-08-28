@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="roleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8ecff"/>
+      <stop offset="100%" stop-color="#dbe5ff"/>
+    </linearGradient>
+    <linearGradient id="repoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e1f7f2"/>
+      <stop offset="100%" stop-color="#d2efe8"/>
+    </linearGradient>
+    <linearGradient id="ciGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3d9"/>
+      <stop offset="100%" stop-color="#ffe6ae"/>
+    </linearGradient>
+    <linearGradient id="safeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f5df"/>
+      <stop offset="100%" stop-color="#ccebc0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7790a0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#6b8493" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="592" cy="38" r="70" fill="#dbeefa" opacity="0.46"/>
+  <circle cx="74" cy="290" r="92" fill="#e5f3d9" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516a">GÜVENLİ İŞ AKIŞI</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718494">Rol · Dağıtım · Kontrol · Arşiv</text>
+
+  <!-- flow lines -->
+  <path d="M150 151 H180" fill="none" stroke="#879eae" stroke-width="2"/>
+  <polygon points="180,151 172,146 172,156" fill="#879eae"/>
+  <path d="M293 151 H321" fill="none" stroke="#879eae" stroke-width="2"/>
+  <polygon points="321,151 313,146 313,156" fill="#879eae"/>
+  <path d="M441 151 H468" fill="none" stroke="#879eae" stroke-width="2"/>
+  <polygon points="468,151 460,146 460,156" fill="#879eae"/>
+
+  <!-- RBAC -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="88" width="122" height="128" rx="18" fill="url(#roleGrad)"/>
+  </g>
+  <text x="48" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#354b74">Rol tabanlı erişim</text>
+  <rect x="45" y="130" width="88" height="20" rx="10" fill="#ffffff" opacity="0.8"/>
+  <text x="58" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536881">Öğrenci</text>
+  <rect x="45" y="156" width="88" height="20" rx="10" fill="#ffffff" opacity="0.8"/>
+  <text x="58" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536881">Asistan</text>
+  <rect x="45" y="182" width="88" height="20" rx="10" fill="#ffffff" opacity="0.8"/>
+  <text x="58" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536881">Yönetici</text>
+  <circle cx="129" cy="108" r="8" fill="#7c8fe8"/>
+  <path d="M126 108 L128 110 L133 104" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- template and isolated repos -->
+  <g filter="url(#shadow)">
+    <rect x="180" y="78" width="113" height="146" rx="18" fill="url(#repoGrad)"/>
+  </g>
+  <text x="198" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#275f62">Şablon dağıtımı</text>
+  <rect x="199" y="120" width="75" height="26" rx="7" fill="#ffffff" opacity="0.88"/>
+  <path d="M208 128 h15 l4 4 h38 v8 h-57z" fill="#79c9bb"/>
+  <text x="205" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427477">Otomasyon</text>
+  <path d="M236 171 V185 M236 185 H211 M236 185 H261" fill="none" stroke="#5d9d94" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="198" y="188" width="31" height="20" rx="5" fill="#ffffff" opacity="0.9"/>
+  <rect x="243" y="188" width="31" height="20" rx="5" fill="#ffffff" opacity="0.9"/>
+  <text x="205" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427477">A</text>
+  <text x="250" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427477">B</text>
+
+  <!-- CI gate -->
+  <g filter="url(#shadow)">
+    <rect x="321" y="77" width="120" height="148" rx="18" fill="url(#ciGrad)"/>
+  </g>
+  <text x="346" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#785522">İnceleme kapısı</text>
+  <rect x="340" y="121" width="82" height="25" rx="8" fill="#fffaf0"/>
+  <text x="352" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80642f">İstek</text>
+  <path d="M381 148 V158" fill="none" stroke="#c29743" stroke-width="1.5"/>
+  <polygon points="381,163 377,157 385,157" fill="#c29743"/>
+  <rect x="340" y="167" width="82" height="35" rx="9" fill="#fffaf0"/>
+  <circle cx="356" cy="184" r="8" fill="#8fc477"/>
+  <path d="M352 184 L355 187 L361 180" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="370" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80642f">Testler</text>
+
+  <!-- protected repository -->
+  <g filter="url(#shadow)">
+    <rect x="468" y="76" width="144" height="150" rx="18" fill="url(#safeGrad)"/>
+  </g>
+  <text x="488" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d673b">Korumalı ana dal</text>
+  <rect x="488" y="121" width="104" height="33" rx="9" fill="#ffffff" opacity="0.82"/>
+  <path d="M500 133 h18 l4 4 h57 v10 h-79z" fill="#73b878"/>
+  <path d="M509 173 v-7 c0-8 13-8 13 0v7" fill="none" stroke="#51915b" stroke-width="2"/>
+  <rect x="505" y="172" width="21" height="17" rx="4" fill="#72af73"/>
+  <circle cx="516" cy="180" r="2" fill="#ffffff"/>
+  <text x="537" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e774b">Birleştirme</text>
+  <path d="M488 205 H592" stroke="#9dc895" stroke-width="1"/>
+  <text x="501" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e774b">Etiketli arşiv</text>
+
+  <!-- bottom audit strip -->
+  <g filter="url(#smallShadow)">
+    <rect x="117" y="258" width="406" height="35" rx="17" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="143" cy="275" r="8" fill="#92a8ed"/>
+  <path d="M139 275 h8 M143 271 v8" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="158" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536c7c">En az yetki</text>
+  <path d="M247 268 V282" stroke="#d0dbe1" stroke-width="1"/>
+  <circle cx="272" cy="275" r="8" fill="#77c5b2"/>
+  <path d="M268 275 L271 278 L277 271" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="287" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536c7c">İzlenebilirlik</text>
+  <path d="M394 268 V282" stroke="#d0dbe1" stroke-width="1"/>
+  <circle cx="419" cy="275" r="8" fill="#f0b86a"/>
+  <path d="M415 275 h8 M419 271 v8" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="434" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536c7c">Güvenli teslim</text>
+</svg>

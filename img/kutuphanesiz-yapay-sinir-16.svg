@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="inputGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcedff"/>
+      <stop offset="100%" stop-color="#c9e3fb"/>
+    </linearGradient>
+    <linearGradient id="hiddenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8ddff"/>
+      <stop offset="100%" stop-color="#d6c5fa"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f4dc"/>
+      <stop offset="100%" stop-color="#bde6c5"/>
+    </linearGradient>
+    <linearGradient id="lossGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe7d9"/>
+      <stop offset="100%" stop-color="#f8cdbd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809b" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66809b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="84" cy="45" r="68" fill="#dcefff" opacity="0.42"/>
+  <circle cx="572" cy="271" r="90" fill="#dff3dc" opacity="0.42"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42546b">Sıfırdan Sinir Ağı ile Rakam Tanıma</text>
+
+  <!-- forward path -->
+  <path d="M143 133 H181" fill="none" stroke="#5e8eb8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="181,127 191,133 181,139" fill="#5e8eb8"/>
+  <path d="M295 133 H330" fill="none" stroke="#775eb5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="330,127 340,133 330,139" fill="#775eb5"/>
+  <path d="M443 133 H478" fill="none" stroke="#4f9b69" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="478,127 488,133 478,139" fill="#4f9b69"/>
+
+  <text x="167" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58718b">ileri yayılım</text>
+  <text x="317" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58718b">sigmoid</text>
+  <text x="465" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58718b">puanlar</text>
+
+  <!-- image input -->
+  <g filter="url(#shadow)">
+    <rect x="38" y="88" width="105" height="91" rx="18" fill="url(#inputGrad)"/>
+  </g>
+  <text x="90" y="109" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355a7a">Görüntü</text>
+  <rect x="57" y="118" width="31" height="38" rx="5" fill="#f8fbff" stroke="#8cb9df"/>
+  <path d="M70 125 C80 121 82 130 77 135 L68 148 H82" fill="none" stroke="#5f80a0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#78a8d0">
+    <rect x="98" y="120" width="8" height="8" rx="2"/>
+    <rect x="110" y="120" width="8" height="8" rx="2" opacity="0.55"/>
+    <rect x="98" y="132" width="8" height="8" rx="2" opacity="0.65"/>
+    <rect x="110" y="132" width="8" height="8" rx="2"/>
+    <rect x="98" y="144" width="8" height="8" rx="2" opacity="0.38"/>
+    <rect x="110" y="144" width="8" height="8" rx="2" opacity="0.74"/>
+  </g>
+  <text x="90" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426681">28 × 28 piksel</text>
+
+  <!-- input layer -->
+  <g filter="url(#shadow)">
+    <rect x="191" y="76" width="104" height="115" rx="18" fill="url(#inputGrad)"/>
+  </g>
+  <text x="243" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355a7a">Giriş Katmanı</text>
+  <text x="243" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426681">784 değer</text>
+  <g fill="#6fa9d5" filter="url(#softShadow)">
+    <circle cx="214" cy="145" r="7"/>
+    <circle cx="233" cy="145" r="7"/>
+    <circle cx="252" cy="145" r="7"/>
+    <circle cx="271" cy="145" r="7"/>
+  </g>
+  <text x="243" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426681">0 ile 1 arası</text>
+
+  <!-- hidden layer -->
+  <g filter="url(#shadow)">
+    <rect x="340" y="76" width="103" height="115" rx="18" fill="url(#hiddenGrad)"/>
+  </g>
+  <text x="391" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d477f">Gizli Katman</text>
+  <text x="391" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665483">64 nöron</text>
+  <g fill="#977bd1" filter="url(#softShadow)">
+    <circle cx="365" cy="140" r="7"/>
+    <circle cx="391" cy="140" r="7"/>
+    <circle cx="417" cy="140" r="7"/>
+    <circle cx="378" cy="158" r="7"/>
+    <circle cx="404" cy="158" r="7"/>
+  </g>
+  <text x="391" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665483">örüntüler</text>
+
+  <!-- output -->
+  <g filter="url(#shadow)">
+    <rect x="488" y="76" width="111" height="115" rx="18" fill="url(#outGrad)"/>
+  </g>
+  <text x="543" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397153">Çıkış Katmanı</text>
+  <text x="543" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49755b">10 sınıf</text>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">
+    <rect x="506" y="132" width="17" height="25" rx="5" fill="#9edaaa"/>
+    <text x="514.5" y="150" text-anchor="middle" fill="#397153">0</text>
+    <rect x="530" y="126" width="17" height="31" rx="5" fill="#72c685"/>
+    <text x="538.5" y="148" text-anchor="middle" fill="#ffffff">3</text>
+    <rect x="554" y="136" width="17" height="21" rx="5" fill="#a7ddae"/>
+    <text x="562.5" y="151" text-anchor="middle" fill="#397153">8</text>
+  </g>
+  <text x="543" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49755b">en yüksek: 3</text>
+
+  <!-- feedback loop -->
+  <path d="M543 204 V225 C543 238 530 245 516 245 H170 C157 245 149 238 149 226 V212" fill="none" stroke="#d68170" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="143,214 149,204 155,214" fill="#d68170"/>
+  <text x="335" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a55f54">geri yayılım ve ağırlık güncelleme</text>
+
+  <!-- loss node -->
+  <g filter="url(#shadow)">
+    <rect x="259" y="263" width="122" height="38" rx="14" fill="url(#lossGrad)"/>
+  </g>
+  <path d="M320 245 V256" fill="none" stroke="#d68170" stroke-width="2"/>
+  <polygon points="314,256 320,262 326,256" fill="#d68170"/>
+  <text x="320" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#96564d">Hata ve öğrenme</text>
+</svg>

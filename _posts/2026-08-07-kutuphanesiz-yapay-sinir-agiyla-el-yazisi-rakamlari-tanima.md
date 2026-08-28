@@ -9,6 +9,7 @@ tags:
   - python
   - mnıst
 toc: true
+image: /img/kutuphanesiz-yapay-sinir-16.png
 ---
 
 Bir yapay sinir ağının gerçekten nasıl öğrendiğini anlamanın en iyi yolu, hazır makine öğrenmesi kütüphanelerini bir kenara bırakıp bütün parçaları kendimiz yazmaktır. Bu projede yalnızca Python dilinin temel özelliklerini kullanarak MNIST benzeri el yazısı rakamlarını tanıyan, girişten çıkışa ve hatadan geriye doğru öğrenebilen küçük bir sinir ağı geliştireceğiz.
@@ -28,6 +29,9 @@ $$x_i = \frac{piksel_i}{255}$$
 | Giriş | 784 | Piksel değerlerini almak |
 | Gizli | 64 | Çizgi, kıvrım ve kenar örüntülerini öğrenmek |
 | Çıkış | 10 | 0-9 sınıflarını puanlamak |
+
+![kutuphanesiz-yapay-sinir-16](/img/kutuphanesiz-yapay-sinir-16.svg)
+
 
 Bir nöron önce ağırlıklı toplam hesaplar:
 
