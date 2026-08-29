@@ -9,9 +9,13 @@ tags:
   - çapraz doğrulama
   - python
 toc: true
+image: /img/capraz-dogrulama-teknikleri-66.png
 ---
 
 Bir makine öğrenmesi modelinin eğitim verisinde harika sonuç vermesi, henüz gerçek dünyada da başarılı olacağı anlamına gelmez. Asıl soru şudur: Model, daha önce hiç görmediği örneklerde ne kadar iyi çalışır? Çapraz doğrulama (cross-validation), veriyi akıllıca parçalara ayırarak bu soruya daha güvenilir bir yanıt üretir. Tek bir eğitim-test ayrımının şansına güvenmek yerine, modelin farklı veri dilimlerindeki tutarlılığını ölçer.
+
+
+![capraz-dogrulama-teknikleri-66](/img/capraz-dogrulama-teknikleri-66.svg)
 
 ``
 

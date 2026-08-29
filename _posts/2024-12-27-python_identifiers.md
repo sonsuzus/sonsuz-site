@@ -10,6 +10,7 @@ tags:
   - tanımlayıcı
 redirect_from:
   - /posts/python_identifiers/
+image: /img/python_identifiers-39.png
 ---
 
 
@@ -53,3 +54,6 @@ Yukarıdaki programı derleyip çalıştırdığımızda, aşağıdaki ifadeleri
 25
 
 ```
+
+![python_identifiers-39](/img/python_identifiers-39.svg)
+

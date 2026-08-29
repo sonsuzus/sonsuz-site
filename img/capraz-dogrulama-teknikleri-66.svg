@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce5f5"/>
+    </linearGradient>
+    <linearGradient id="modelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9dcff"/>
+      <stop offset="100%" stop-color="#d9c8f1"/>
+    </linearGradient>
+    <linearGradient id="scoreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f3df"/>
+      <stop offset="100%" stop-color="#bfe6cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#5d7790" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#587184" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="88" cy="47" r="78" fill="#dceffd" opacity="0.45"/>
+  <circle cx="586" cy="280" r="100" fill="#dff2dc" opacity="0.5"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395469">Çapraz Doğrulama</text>
+  <text x="32" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8191">Farklı bölmelerde tutarlı genelleme ölçümü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="78" width="132" height="155" rx="18" fill="#ffffff"/>
+    <rect x="31" y="78" width="132" height="34" rx="18" fill="url(#dataGrad)"/>
+    <rect x="31" y="96" width="132" height="16" fill="url(#dataGrad)"/>
+  </g>
+  <text x="97" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31546a">Veri Kümesi</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="47" y="128" width="100" height="17" rx="6" fill="#cfe6f8"/>
+    <rect x="47" y="151" width="100" height="17" rx="6" fill="#d7edcf"/>
+    <rect x="47" y="174" width="100" height="17" rx="6" fill="#ffe7bf"/>
+    <rect x="47" y="197" width="100" height="17" rx="6" fill="#e5d8f5"/>
+  </g>
+  <text x="97" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476475">Katmanlara ayrılır</text>
+  <text x="97" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476475">k eşit parça</text>
+
+  <path d="M171 155 L206 155" stroke="#819eaf" stroke-width="2.2" fill="none"/>
+  <polygon points="206,155 197,150 197,160" fill="#819eaf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="215" y="67" width="203" height="183" rx="22" fill="#ffffff"/>
+    <rect x="232" y="83" width="169" height="30" rx="11" fill="#edf6fc"/>
+  </g>
+  <text x="316" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426273">K-Fold Döngüsü</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="238" y="127" width="62" height="38" rx="10" fill="#d7edcf"/>
+    <rect x="307" y="127" width="62" height="38" rx="10" fill="#d7edcf"/>
+    <rect x="376" y="127" width="20" height="38" rx="9" fill="#f9cf84"/>
+    <rect x="238" y="173" width="20" height="38" rx="9" fill="#f9cf84"/>
+    <rect x="265" y="173" width="62" height="38" rx="10" fill="#d7edcf"/>
+    <rect x="334" y="173" width="62" height="38" rx="10" fill="#d7edcf"/>
+  </g>
+
+  <text x="317" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6859">Eğitim</text>
+  <text x="386" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805d22">Test</text>
+  <text x="248" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805d22">Test</text>
+  <text x="330" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637987">Her turda test katmanı değişir</text>
+
+  <path d="M426 155 L456 155" stroke="#819eaf" stroke-width="2.2" fill="none"/>
+  <polygon points="456,155 447,150 447,160" fill="#819eaf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="465" y="78" width="143" height="155" rx="18" fill="#ffffff"/>
+    <rect x="465" y="78" width="143" height="34" rx="18" fill="url(#modelGrad)"/>
+    <rect x="465" y="96" width="143" height="16" fill="url(#modelGrad)"/>
+  </g>
+  <text x="536.5" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#56416c">Dürüst Değerlendirme</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="482" y="126" width="109" height="26" rx="9" fill="url(#scoreGrad)"/>
+    <rect x="482" y="160" width="109" height="26" rx="9" fill="#e7f1fa"/>
+    <rect x="482" y="194" width="109" height="22" rx="9" fill="#fff1d6"/>
+  </g>
+  <text x="536.5" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38664a">Ortalama Skor</text>
+  <text x="536.5" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476475">Standart Sapma</text>
+  <text x="536.5" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80652f">Genelleme</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="170" y="270" width="300" height="31" rx="13" fill="#ffffff"/>
+    <circle cx="190" cy="285.5" r="8" fill="#a9d9bb"/>
+    <path d="M186 285 L189 288 L195 281" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="207" y="289.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466353">Ön işleme yalnızca eğitim katmanında öğrenilir</text>
+</svg>

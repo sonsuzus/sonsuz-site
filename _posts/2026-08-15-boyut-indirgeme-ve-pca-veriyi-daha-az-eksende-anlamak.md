@@ -8,7 +8,11 @@ tags:
   - makine öğrenmesi
   - pca
   - boyut indirgeme
+image: /img/boyut-indirgeme-ve-90.png
 ---
+
+![boyut-indirgeme-ve-90](/img/boyut-indirgeme-ve-90.svg)
+
 
 Yüksek boyutlu veriler ilk bakışta zengin görünür: her sütun yeni bir özellik, her özellik yeni bir ipucu demektir. Ancak onlarca hatta binlerce özellik, hesaplama maliyetini artırır; gürültüyü büyütür ve modellerin genelleme kabiliyetini zorlayabilir. Boyut indirgeme, bilgiyi rastgele silmek yerine verideki baskın örüntüleri daha az sayıda eksende toplamayı hedefler. Temel Bileşenler Analizi (PCA), bu işin en klasik ve güçlü araçlarından biridir.
 ``

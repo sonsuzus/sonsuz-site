@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="oldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4f1"/>
+      <stop offset="100%" stop-color="#ffe4dd"/>
+    </linearGradient>
+    <linearGradient id="newGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eef8ff"/>
+      <stop offset="100%" stop-color="#dcedfb"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1edff"/>
+      <stop offset="100%" stop-color="#ddd7fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#52708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52708a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="45" cy="33" r="80" fill="#d9ecfa" opacity="0.45"/>
+  <circle cx="606" cy="286" r="100" fill="#dcefdc" opacity="0.46"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#30495d">Bağımlılık Enjeksiyonu</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#658093">Sıkı bağlılıktan esnek yapıya</text>
+
+  <rect x="28" y="70" width="255" height="202" rx="20" fill="#ffffff" opacity="0.8" filter="url(#shadow)"/>
+  <rect x="357" y="70" width="255" height="202" rx="20" fill="#ffffff" opacity="0.8" filter="url(#shadow)"/>
+
+  <rect x="47" y="85" width="126" height="27" rx="13.5" fill="#f9d9d1"/>
+  <text x="110" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a4a3d">Önce: Sıkı Bağ</text>
+
+  <rect x="68" y="133" width="174" height="47" rx="13" fill="url(#oldGrad)" stroke="#efc0b5" filter="url(#smallShadow)"/>
+  <text x="155" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6f3b38">Sipariş Servisi</text>
+  <text x="155" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#895651">new ile oluşturur</text>
+
+  <path d="M155 180 L155 199" stroke="#c66f61" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="149,197 161,197 155,205" fill="#c66f61"/>
+
+  <rect x="68" y="207" width="174" height="43" rx="13" fill="#f7ddd7" stroke="#e8b7ac" filter="url(#smallShadow)"/>
+  <text x="155" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#75403a">SQL Deposu</text>
+
+  <rect x="48" y="253" width="214" height="1" fill="#efd2cc"/>
+  <text x="155" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a05a50">Zor test ve düşük esneklik</text>
+
+  <path d="M296 171 L342 171" stroke="#77a99e" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="336,165 348,171 336,177" fill="#77a99e"/>
+  <rect x="290" y="143" width="58" height="21" rx="10.5" fill="#ddf1e9" filter="url(#smallShadow)"/>
+  <text x="319" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7d70">DI</text>
+
+  <rect x="376" y="85" width="139" height="27" rx="13.5" fill="#d8ecfa"/>
+  <text x="445.5" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c6f91">Sonra: Esnek Yapı</text>
+
+  <rect x="397" y="128" width="174" height="43" rx="13" fill="url(#coreGrad)" stroke="#c7bcef" filter="url(#smallShadow)"/>
+  <text x="484" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#51477c">Sipariş Servisi</text>
+
+  <path d="M484 171 L484 187" stroke="#7668b6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="478,185 490,185 484,193" fill="#7668b6"/>
+
+  <rect x="397" y="195" width="174" height="37" rx="13" fill="url(#newGrad)" stroke="#b9d7eb" filter="url(#smallShadow)"/>
+  <text x="484" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#396782">Depo Arayüzü</text>
+
+  <path d="M416 233 L400 246" stroke="#5796a1" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="402,239 394,251 409,248" fill="#5796a1"/>
+  <path d="M552 233 L568 246" stroke="#5796a1" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="559,248 574,251 566,239" fill="#5796a1"/>
+
+  <rect x="367" y="248" width="76" height="29" rx="11" fill="#dff3ed" stroke="#b9dfd5"/>
+  <text x="405" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39786d">Sahte</text>
+
+  <rect x="525" y="248" width="76" height="29" rx="11" fill="#e5f0fb" stroke="#bfd7ea"/>
+  <text x="563" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416d8c">SQL</text>
+
+  <text x="484" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c8279">Dışarıdan verilir • Hızlı test</text>
+</svg>

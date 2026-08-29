@@ -8,6 +8,7 @@ tags:
   - a/b testi
   - istatistik
   - ürün analitiği
+image: /img/ab-testi-ve-58.png
 ---
 
 Bir ürün ekibinin en tehlikeli cümlesi bazen şudur: “Yeni buton daha güzel görünüyor, yayınlayalım.” Güzel görünüm değerli olsa da dönüşümü gerçekten artırıp artırmadığını yalnızca kontrollü deney söyleyebilir. A/B testi, kullanıcıları rastgele iki veya daha fazla varyanta ayırarak tek bir değişikliğin davranış üzerindeki etkisini ölçme yöntemidir. Amaç, sezgiyi öldürmek değil; sezgiyi ölçülebilir kanıtla güçlendirmektir.
@@ -59,3 +60,6 @@ else:
 ```
 
 Son olarak test sırasında sonucu sürekli kontrol edip p-değeri 0,05’in altına iner inmez durdurmayın; bu davranış yanlış pozitif oranını yükseltir. Önceden belirlenen süreye, örneklem büyüklüğüne ve karar kuralına sadık kalın. Segment analizlerini de dikkatle yapın: Mobilde çalışan sonuç masaüstünde başarısız olabilir; fakat test sonrasında onlarca segment kazımak yanıltıcı “kazançlar” üretebilir. İyi A/B testi, yalnızca kazananı seçmez; ekibe kullanıcı davranışı hakkında güvenilir bir öğrenme döngüsü kurar.
+
+![ab-testi-ve-58](/img/ab-testi-ve-58.svg)
+

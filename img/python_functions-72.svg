@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python Fonksiyon Yapısı</text>
+
+  <!-- Merkez Fonksiyon Bloğu -->
+  <rect x="220" y="50" width="200" height="60" rx="12" fill="#6c5ce7" opacity="0.9" filter="url(#shadow)"/>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">def fonksiyon()</text>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e8e0ff">Fonksiyon Bildirimi</text>
+
+  <!-- Sol Üst: def anahtar kelimesi -->
+  <rect x="30" y="60" width="140" height="50" rx="10" fill="#a29bfe" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="100" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d3436" font-weight="bold">def Anahtar Kelimesi</text>
+  <text x="100" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2d3436">Zorunlu</text>
+
+  <!-- Sol Alt: İşlem Satırları -->
+  <rect x="30" y="140" width="140" height="50" rx="10" fill="#74b9ff" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="100" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d3436" font-weight="bold">İşlem Satırları</text>
+  <text x="100" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2d3436">Zorunlu</text>
+
+  <!-- Sağ Üst: Parametreler -->
+  <rect x="470" y="60" width="140" height="50" rx="10" fill="#55efc4" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="540" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d3436" font-weight="bold">Parametreler</text>
+  <text x="540" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2d3436">İsteğe Bağlı</text>
+
+  <!-- Sağ Alt: return İfadesi -->
+  <rect x="470" y="140" width="140" height="50" rx="10" fill="#fdcb6e" opacity="0.8" filter="url(#shadowLight)"/>
+  <text x="540" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d3436" font-weight="bold">return İfadesi</text>
+  <text x="540" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2d3436">İsteğe Bağlı</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Sol Üst -> Merkez -->
+  <path d="M170 85 L215 80" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="215 80 205 74 205 86" fill="#636e72"/>
+
+  <!-- Sol Alt -> Merkez -->
+  <path d="M170 165 L215 95" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="215 95 205 89 211 101" fill="#636e72"/>
+
+  <!-- Sağ Üst -> Merkez -->
+  <path d="M470 85 L425 80" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="425 80 435 74 435 86" fill="#636e72"/>
+
+  <!-- Sağ Alt -> Merkez -->
+  <path d="M470 165 L425 95" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="425 95 435 89 429 101" fill="#636e72"/>
+
+  <!-- Alt Bilgi: Çağrı -->
+  <rect x="220" y="240" width="200" height="50" rx="12" fill="#e17055" opacity="0.85" filter="url(#shadow)"/>
+  <text x="320" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Fonksiyon Çağrısı</text>
+  <text x="320" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ffe0d6">Ad ile Çağrılır</text>
+
+  <!-- Merkez -> Alt -->
+  <path d="M320 115 L320 235" stroke="#636e72" stroke-width="2" fill="none"/>
+  <polygon points="320 235 314 225 326 225" fill="#636e72"/>
+
+  <!-- Alt Not -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#636e72">Ön tanımlı parametre değerleri atanabilir</text>
+</svg>

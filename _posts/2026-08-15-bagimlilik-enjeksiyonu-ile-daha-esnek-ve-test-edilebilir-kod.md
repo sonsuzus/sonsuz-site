@@ -9,6 +9,7 @@ tags:
   - yazılım mimarisi
   - birim testi
 toc: true
+image: /img/bagimlilik-enjeksiyonu-ile-97.png
 ---
 
 Bir sınıfın çalışmak için ihtiyaç duyduğu nesneleri kendi içinde üretmesi, ilk bakışta pratik görünür: `new` yazılır ve iş biter. Ancak uygulama büyüdükçe bu küçük kolaylık; değiştirmesi zor, testleri pahalı ve bileşenleri birbirine yapışmış bir mimariye dönüşür. Bağımlılık Enjeksiyonu (Dependency Injection, DI), sınıfın ihtiyaç duyduğu bağımlılıkları oluşturmak yerine dışarıdan almasını sağlayarak bu yapışkanlığı azaltan güçlü bir tasarım tekniğidir.
@@ -108,3 +109,6 @@ Bu test, ağ bağlantısı, SQL sunucusu veya karmaşık başlangıç verisi ger
 | Method injection | Tek seferlik ihtiyaçlar | Bağımlılık yalnızca ilgili çağrıda kullanılır. |
 
 Constructor injection genellikle varsayılan seçim olmalıdır; nesne oluşturulduğu anda geçerli ve kullanılabilir kalır. .NET gibi platformlarda DI container'ları, `IOrderRepository` için hangi somut sınıfın üretileceğini merkezi olarak kaydeder. Yine de her sınıfa arayüz eklemek bir erdem yarışması değildir. Değişme ihtimali olmayan küçük değer nesneleri için doğrudan kullanım makul olabilir. Ama veritabanı, e-posta, saat, dosya sistemi ve harici API gibi sınır bağımlılıklarında DI, kodunuzun emniyet kemeridir.
+
+![bagimlilik-enjeksiyonu-ile-97](/img/bagimlilik-enjeksiyonu-ile-97.svg)
+

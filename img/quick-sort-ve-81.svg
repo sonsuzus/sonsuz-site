@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#c9ddff"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890aa" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890aa" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="50" r="72" fill="#dceffd" opacity="0.5"/>
+  <circle cx="588" cy="273" r="90" fill="#def2df" opacity="0.5"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39536d">Quick Sort · Pivot seçimi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="238" y="48" width="164" height="70" rx="19" fill="url(#core)" stroke="#a8c5e8"/>
+  </g>
+  <text x="320" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29496b">PIVOT</text>
+  <text x="320" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48647e">Diziyi böl</text>
+
+  <path d="M278 118 L178 151" fill="none" stroke="#83a8cd" stroke-width="2.2"/>
+  <polygon points="178,151 188,145 185,156" fill="#83a8cd"/>
+  <path d="M362 118 L462 151" fill="none" stroke="#83a8cd" stroke-width="2.2"/>
+  <polygon points="462,151 452,156 455,145" fill="#83a8cd"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="43" y="153" width="218" height="115" rx="18" fill="#eff7ff" stroke="#bdd8ee"/>
+    <rect x="379" y="153" width="218" height="115" rx="18" fill="#fff3f1" stroke="#efc8c0"/>
+  </g>
+
+  <rect x="62" y="170" width="112" height="25" rx="12" fill="#cde7d5"/>
+  <text x="118" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356348">Dengeli bölme</text>
+  <text x="62" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496477">Küçük</text>
+  <text x="226" y="216" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496477">Büyük</text>
+
+  <path d="M112 234 L82 249 M112 234 L142 249 M192 234 L162 249 M192 234 L222 249" fill="none" stroke="#72ac8c" stroke-width="2"/>
+  <circle cx="112" cy="231" r="5" fill="#77b891"/>
+  <circle cx="192" cy="231" r="5" fill="#77b891"/>
+  <circle cx="82" cy="252" r="5" fill="#a4d4b4"/>
+  <circle cx="142" cy="252" r="5" fill="#a4d4b4"/>
+  <circle cx="162" cy="252" r="5" fill="#a4d4b4"/>
+  <circle cx="222" cy="252" r="5" fill="#a4d4b4"/>
+  <text x="152" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397052">O(n log n)</text>
+
+  <rect x="398" y="170" width="122" height="25" rx="12" fill="#f7d5cf"/>
+  <text x="459" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a4e45">Dengesiz bölme</text>
+  <text x="397" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78605e">Boş</text>
+  <text x="577" y="216" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78605e">n−1</text>
+
+  <path d="M442 232 L475 242 L508 252 L541 262" fill="none" stroke="#dc8173" stroke-width="2.3"/>
+  <circle cx="442" cy="232" r="5" fill="#df8c7e"/>
+  <circle cx="475" cy="242" r="5" fill="#e7a093"/>
+  <circle cx="508" cy="252" r="5" fill="#edb5aa"/>
+  <circle cx="541" cy="262" r="5" fill="#f2c8c0"/>
+  <text x="488" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a65349">O(n²)</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="178" y="282" width="284" height="27" rx="13" fill="#ffffff" stroke="#d5e2ea"/>
+  </g>
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426078">Rastgele · Ortanca-üçlü · Eşitleri ayır</text>
+</svg>

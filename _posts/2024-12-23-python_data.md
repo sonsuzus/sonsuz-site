@@ -11,7 +11,11 @@ tags:
   - tür
 redirect_from:
   - /posts/python_data/
+image: /img/python_data-10.png
 ---
+
+![python_data-10](/img/python_data-10.svg)
+
 
 
 [Python](https://program.sonsuz.us/search.html?q=python)'da 14 adet ön tanımlı veri türü kullanılmaktadır. Bu veri türlerini 6 farklı grup altında sınıflandırabiliriz:

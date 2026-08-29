@@ -9,7 +9,11 @@ tags:
   - quick sort
   - pivot
   - python
+image: /img/quick-sort-ve-81.png
 ---
+
+![quick-sort-ve-81](/img/quick-sort-ve-81.svg)
+
 
 Quick Sort, pratikte son derece hızlı çalışan ancak kaderi büyük ölçüde pivot seçimine bağlı olan klasik bir sıralama algoritmasıdır. Temel fikir basittir: Diziden bir **pivot** seçilir, küçük elemanlar sol tarafa, büyük elemanlar sağ tarafa bölünür ve aynı işlem alt dizilerde tekrarlanır. Fakat kötü seçilmiş bir pivot, zarif görünen bu yaklaşımı beklenmedik biçimde yavaşlatabilir.
 ``

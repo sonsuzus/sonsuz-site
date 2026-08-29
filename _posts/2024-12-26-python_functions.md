@@ -10,7 +10,11 @@ tags:
 redirect_from:
   - /posts/python_functions/
 toc: true
+image: /img/python_functions-72.png
 ---
+
+![python_functions-72](/img/python_functions-72.svg)
+
 
 
 Python'da, fonksiyon bir veya daha fazla işlem satırından oluşan kodların bir kod bloğu şeklinde yapılandırılması ile oluşturulur. Fonksiyonlar oluşturulduktan sonra programın herhangi bir yerinden sadece fonksiyon adı kullanılarak çağrılabilir. Bu sayede, çok fazla sayıda işlem satırı tek bir isim kullanılarak çalıştırılmış olur.

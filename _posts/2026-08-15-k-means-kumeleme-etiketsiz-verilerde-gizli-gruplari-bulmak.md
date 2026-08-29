@@ -8,7 +8,11 @@ tags:
   - makine öğrenmesi
   - python
   - k-means
+image: /img/k-means-kumeleme-57.png
 ---
+
+![k-means-kumeleme-57](/img/k-means-kumeleme-57.svg)
+
 
 Elinizde müşteri davranışları, sensör ölçümleri ya da ürün özellikleri olsun; fakat satırlara yapıştırılmış hazır sınıf etiketleri bulunmasın. K-Means, tam bu noktada devreye giren gözetimsiz öğrenme algoritmalarından biridir. Verileri önceden bilinen sınıflara atamak yerine, benzer gözlemleri aynı kümelerde toplayarak veri içindeki doğal yapıyı görünür kılar. Bir nevi kalabalık bir partide benzer ilgi alanlarına sahip insanların kendiliğinden küçük gruplar oluşturmasını izleriz.
 

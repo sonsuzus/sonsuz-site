@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e9"/>
+      <stop offset="100%" stop-color="#c8f0d0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5f5"/>
+      <stop offset="100%" stop-color="#e1bee7"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Python Dosya İşlemleri</text>
+
+  <!-- Merkez: open() fonksiyonu -->
+  <rect x="245" y="55" width="150" height="48" rx="12" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="320" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1565c0">open()</text>
+  <text x="320" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">dosya-adı, mod</text>
+
+  <!-- Sol üst: dosya-adı -->
+  <rect x="40" y="55" width="130" height="48" rx="12" fill="url(#boxGrad2)" filter="url(#shadowLight)" stroke="#a5d6a7" stroke-width="1.5"/>
+  <text x="105" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">dosya-adı</text>
+  <text x="105" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">Zorunlu</text>
+
+  <!-- Sol alt: mod -->
+  <rect x="40" y="130" width="130" height="48" rx="12" fill="url(#boxGrad3)" filter="url(#shadowLight)" stroke="#ffe0b2" stroke-width="1.5"/>
+  <text x="105" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">mod</text>
+  <text x="105" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">İsteğe bağlı</text>
+
+  <!-- Sağ: dosya-nesnesi -->
+  <rect x="470" y="55" width="130" height="48" rx="12" fill="url(#boxGrad4)" filter="url(#shadowLight)" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="535" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a1b9a">dosya-nesnesi</text>
+  <text x="535" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#37474f">İşlemlerde kullanılır</text>
+
+  <!-- Oklar: dosya-adı -> open() -->
+  <path d="M 170 79 L 240 79" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="240,73 252,79 240,85" fill="#546e7a"/>
+
+  <!-- Oklar: mod -> open() -->
+  <path d="M 170 154 L 240 100" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="240,94 252,100 238,106" fill="#546e7a"/>
+
+  <!-- Oklar: open() -> dosya-nesnesi -->
+  <path d="M 395 79 L 465 79" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="465,73 477,79 465,85" fill="#546e7a"/>
+
+  <!-- Alt bölüm: Mod değerleri -->
+  <text x="320" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Mod Değerleri</text>
+
+  <!-- Mod kutuları -->
+  <rect x="25" y="230" width="80" height="36" rx="8" fill="url(#boxGrad2)" filter="url(#shadowLight)" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="65" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">'r'</text>
+  <text x="65" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#37474f">Okuma</text>
+
+  <rect x="120" y="230" width="80" height="36" rx="8" fill="url(#boxGrad3)" filter="url(#shadowLight)" stroke="#ffe0b2" stroke-width="1"/>
+  <text x="160" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">'w'</text>
+  <text x="160" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#37474f">Yazma</text>
+
+  <rect x="215" y="230" width="80" height="36" rx="8" fill="url(#boxGrad4)" filter="url(#shadowLight)" stroke="#ce93d8" stroke-width="1"/>
+  <text x="255" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a1b9a">'x'</text>
+  <text x="255" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#37474f">Oluştur</text>
+
+  <rect x="310" y="230" width="80" height="36" rx="8" fill="url(#boxGrad5)" filter="url(#shadowLight)" stroke="#f8bbd0" stroke-width="1"/>
+  <text x="350" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#c62828">'a'</text>
+  <text x="350" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#37474f">Ekleme</text>
+
+  <rect x="405" y="230" width="80" height="36" rx="8" fill="url(#boxGrad1)" filter="url(#shadowLight)" stroke="#90caf9" stroke-width="1"/>
+  <text x="445" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1565c0">'r+'</text>
+  <text x="445" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#37474f">Okuma ve yazma</text>
+
+  <rect x="500" y="230" width="80" height="36" rx="8" fill="url(#boxGrad2)" filter="url(#shadowLight)" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="540" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">'w+'</text>
+  <text x="540" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#37474f">Okuma ve yazma</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#607d8b">Varsayılan mod: 'r' (yalnızca okuma)</text>
+</svg>

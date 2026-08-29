@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="rawGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce5f6"/>
+    </linearGradient>
+    <linearGradient id="pcaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4d9ff"/>
+      <stop offset="100%" stop-color="#d2c0f4"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f1d4"/>
+      <stop offset="100%" stop-color="#bfe5c6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#56718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#506b80" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="32" cy="27" r="50" fill="#d9eff2" opacity="0.42"/>
+  <circle cx="616" cy="285" r="68" fill="#e5defa" opacity="0.35"/>
+
+  <text x="28" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536b">PCA • Boyut İndirgeme</text>
+  <text x="28" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8491">Baskın varyansı daha az eksende koru</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="78" width="156" height="190" rx="20" fill="url(#rawGrad)" stroke="#b7d2e8"/>
+  </g>
+  <text x="48" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d7b">Yüksek boyutlu veri</text>
+  <text x="48" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c798b">d özellik</text>
+
+  <g opacity="0.92">
+    <rect x="48" y="144" width="16" height="77" rx="8" fill="#80b9dc"/>
+    <rect x="70" y="158" width="16" height="63" rx="8" fill="#77c4b4"/>
+    <rect x="92" y="135" width="16" height="86" rx="8" fill="#9b8bd7"/>
+    <rect x="114" y="151" width="16" height="70" rx="8" fill="#edb778"/>
+    <rect x="136" y="141" width="16" height="80" rx="8" fill="#e78ea0"/>
+  </g>
+  <line x1="48" y1="231" x2="161" y2="231" stroke="#7a9bad" stroke-width="1.5"/>
+  <text x="48" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547387">ölçek ve gürültü</text>
+
+  <path d="M191 173 L226 173" fill="none" stroke="#7899ae" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="231,173 222,168 222,178" fill="#7899ae"/>
+
+  <g filter="url(#shadow)">
+    <rect x="238" y="100" width="164" height="146" rx="20" fill="pcaGrad" stroke="#c4b6e5"/>
+  </g>
+  <text x="265" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#574478">Standartlaştırma</text>
+  <text x="265" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75678b">Ortalama: 0</text>
+  <text x="265" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75678b">Ölçek: 1</text>
+
+  <g transform="translate(278 183)">
+    <circle cx="0" cy="9" r="4" fill="#7259ad"/>
+    <circle cx="14" cy="1" r="4" fill="#7259ad"/>
+    <circle cx="26" cy="-7" r="4" fill="#7259ad"/>
+    <circle cx="38" cy="-15" r="4" fill="#7259ad"/>
+    <circle cx="49" cy="-22" r="4" fill="#7259ad"/>
+    <circle cx="59" cy="-30" r="4" fill="#7259ad"/>
+    <circle cx="22" cy="11" r="4" fill="#967cc4"/>
+    <circle cx="45" cy="-2" r="4" fill="#967cc4"/>
+    <path d="M-7 16 L70 -37" stroke="#4f3b78" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="265" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62517f">kovaryans ve eksenler</text>
+
+  <path d="M409 173 L443 173" fill="none" stroke="#7899ae" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="448,173 439,168 439,178" fill="#7899ae"/>
+
+  <g filter="url(#shadow)">
+    <rect x="454" y="78" width="159" height="190" rx="20" fill="url(#outGrad)" stroke="#afd5b8"/>
+  </g>
+  <text x="475" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356044">Düşük boyutlu uzay</text>
+  <text x="475" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7d63">k ≪ d</text>
+
+  <g transform="translate(483 226)">
+    <line x1="0" y1="0" x2="0" y2="-78" stroke="#6b9474" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="94" y2="0" stroke="#6b9474" stroke-width="1.5"/>
+    <text x="81" y="17" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557a5d">TB1</text>
+    <text x="-29" y="-65" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557a5d">TB2</text>
+    <ellipse cx="48" cy="-39" rx="39" ry="12" transform="rotate(-25 48 -39)" fill="#8bcb96" opacity="0.24"/>
+    <circle cx="18" cy="-24" r="4.5" fill="#4c9c63"/>
+    <circle cx="32" cy="-31" r="4.5" fill="#4c9c63"/>
+    <circle cx="43" cy="-42" r="4.5" fill="#4c9c63"/>
+    <circle cx="56" cy="-45" r="4.5" fill="#4c9c63"/>
+    <circle cx="68" cy="-55" r="4.5" fill="#4c9c63"/>
+    <circle cx="77" cy="-58" r="4.5" fill="#4c9c63"/>
+    <circle cx="49" cy="-27" r="4.5" fill="#74b881"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="210" y="277" width="220" height="28" rx="14" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="228" cy="291" r="6" fill="#7d63bb"/>
+  <text x="241" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b78">En büyük varyans → temel bileşenler</text>
+</svg>

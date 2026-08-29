@@ -8,7 +8,11 @@ tags:
   - makine öğrenmesi
   - svm
   - sınıflandırma
+image: /img/destek-vektor-makineleri-75.png
 ---
+
+![destek-vektor-makineleri-75](/img/destek-vektor-makineleri-75.svg)
+
 
 Destek Vektör Makineleri (Support Vector Machines, SVM), iki ya da daha fazla sınıfı ayırırken yalnızca bir çizgi çizmekle yetinmeyen klasik bir makine öğrenmesi algoritmasıdır. Temel hedefi, sınıflar arasındaki **en güvenli koridoru**, yani en geniş marjı bulmaktır. Bir tarafta kırmızı noktalar, diğer tarafta mavi noktalar olduğunu düşünün: SVM, iki grubun arasından geçen ve her iki gruba da olabildiğince uzak duran sınırı seçmeye çalışır. Bu yaklaşım, modelin yeni ve görülmemiş verilerde daha dayanıklı kararlar vermesine yardım eder.
 ``

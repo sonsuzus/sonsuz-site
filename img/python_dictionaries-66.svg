@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4e6f1"/>
+      <stop offset="100%" stop-color="#a9cce3"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d5f5e3"/>
+      <stop offset="100%" stop-color="#a9dfbf"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdebd0"/>
+      <stop offset="100%" stop-color="#f5cba7"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8daef"/>
+      <stop offset="100%" stop-color="#d2b4de"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fadbd8"/>
+      <stop offset="100%" stop-color="#f1948a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Python Sözlükler</text>
+
+  <!-- Merkez: Sözlük kutusu -->
+  <rect x="245" y="120" width="150" height="60" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="320" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a5276">Sözlük</text>
+  <text x="320" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1a5276">{anahtar: değer}</text>
+
+  <!-- Sol üst: Anahtar kavramı -->
+  <rect x="40" y="55" width="130" height="50" rx="8" fill="url(#box2)" filter="url(#shadow)" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="105" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Anahtar</text>
+  <text x="105" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449">benzersiz isim</text>
+
+  <!-- Sol alt: Değer kavramı -->
+  <rect x="40" y="215" width="130" height="50" rx="8" fill="url(#box2)" filter="url(#shadow)" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="105" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Değer</text>
+  <text x="105" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449">her tür veri</text>
+
+  <!-- Ok: Anahtar -> Sözlük -->
+  <path d="M 170 80 Q 210 80 240 120" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <polygon points="240,120 232,108 236,122" fill="#27ae60"/>
+
+  <!-- Ok: Değer -> Sözlük -->
+  <path d="M 170 240 Q 210 240 240 180" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <polygon points="240,180 232,192 236,178" fill="#27ae60"/>
+
+  <!-- Sağ üst: Özellik 1 -->
+  <rect x="470" y="45" width="140" height="45" rx="8" fill="url(#box3)" filter="url(#shadow)" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="540" y="63" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a04000">Sıralı</text>
+  <text x="540" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a04000">eklenme sırası korunur</text>
+
+  <!-- Sağ orta: Özellik 2 -->
+  <rect x="470" y="110" width="140" height="45" rx="8" fill="url(#box3)" filter="url(#shadow)" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="540" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a04000">Değiştirilebilir</text>
+  <text x="540" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a04000">ekle, sil, güncelle</text>
+
+  <!-- Sağ alt: Özellik 3 -->
+  <rect x="470" y="175" width="140" height="45" rx="8" fill="url(#box3)" filter="url(#shadow)" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="540" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#a04000">Erişim</text>
+  <text x="540" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a04000">anahtar adıyla</text>
+
+  <!-- Ok: Sözlük -> Özellikler -->
+  <path d="M 395 140 Q 430 130 465 100" fill="none" stroke="#e67e22" stroke-width="2"/>
+  <polygon points="465,100 453,100 460,108" fill="#e67e22"/>
+
+  <path d="M 395 150 Q 430 150 465 150" fill="none" stroke="#e67e22" stroke-width="2"/>
+  <polygon points="465,150 453,146 453,154" fill="#e67e22"/>
+
+  <path d="M 395 160 Q 430 170 465 200" fill="none" stroke="#e67e22" stroke-width="2"/>
+  <polygon points="465,200 453,200 460,192" fill="#e67e22"/>
+
+  <!-- Alt: Örnek veri -->
+  <rect x="180" y="255" width="280" height="50" rx="8" fill="url(#box4)" filter="url(#shadow)" stroke="#8e44ad" stroke-width="1.5"/>
+  <text x="320" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6c3483">Örnek</text>
+  <text x="320" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6c3483">1:"aaa", 2:"bbb", "dort":"ddd"</text>
+
+  <!-- Ok: Sözlük -> Örnek -->
+  <path d="M 320 180 L 320 250" fill="none" stroke="#8e44ad" stroke-width="2"/>
+  <polygon points="320,250 314,240 326,240" fill="#8e44ad"/>
+
+  <!-- Üst bilgi notu -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d" opacity="0.8">Anahtar-değer ikilileri • Aynı tür zorunlu değil • Elemanlar benzersiz</text>
+</svg>

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7f0"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d4ecfb"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#d0f0d0"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe8c0"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8d0d8"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ede7f6"/>
+      <stop offset="100%" stop-color="#ddd0f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python Koşul Yapıları</text>
+
+  <!-- Başlangıç noktası -->
+  <ellipse cx="320" cy="60" rx="60" ry="18" fill="#e8f8f5" stroke="#1abc9c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="65" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5e4a">Program Akışı</text>
+
+  <!-- Ok: Başlangıç -> if -->
+  <line x1="320" y1="78" x2="320" y2="98" stroke="#555" stroke-width="1.5"/>
+  <polygon points="315,95 320,105 325,95" fill="#555"/>
+
+  <!-- if kutusu -->
+  <rect x="220" y="105" width="200" height="45" rx="10" fill="url(#box1)" stroke="#3498db" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">if koşul</text>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2c3e50">karşılaştırma işlemi</text>
+
+  <!-- Sağ ok: koşul sağlanırsa -->
+  <line x1="420" y1="127" x2="490" y2="127" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="487,122 497,127 487,132" fill="#27ae60"/>
+  <text x="455" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#27ae60">Doğru</text>
+
+  <!-- Doğru işlem kutusu -->
+  <rect x="495" y="105" width="120" height="45" rx="10" fill="url(#box2)" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="555" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e6e3e">İşlem satırları</text>
+  <text x="555" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">(girintili)</text>
+
+  <!-- Aşağı ok: koşul sağlanmazsa -->
+  <line x1="320" y1="150" x2="320" y2="180" stroke="#e74c3c" stroke-width="1.5"/>
+  <polygon points="315,177 320,187 325,177" fill="#e74c3c"/>
+  <text x="335" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e74c3c">Yanlış</text>
+
+  <!-- elif kutusu -->
+  <rect x="220" y="187" width="200" height="40" rx="10" fill="url(#box3)" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7e5109">elif koşul</text>
+  <text x="320" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">başka koşul</text>
+
+  <!-- Sağ ok: elif doğru -->
+  <line x1="420" y1="207" x2="490" y2="207" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="487,202 497,207 487,212" fill="#27ae60"/>
+  <text x="455" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#27ae60">Doğru</text>
+
+  <!-- elif doğru işlem -->
+  <rect x="495" y="187" width="120" height="40" rx="10" fill="url(#box2)" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="555" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e6e3e">İşlem satırları</text>
+
+  <!-- Aşağı ok: elif yanlış -->
+  <line x1="320" y1="227" x2="320" y2="255" stroke="#e74c3c" stroke-width="1.5"/>
+  <polygon points="315,252 320,262 325,252" fill="#e74c3c"/>
+
+  <!-- else kutusu -->
+  <rect x="220" y="262" width="200" height="40" rx="10" fill="url(#box4)" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#922b21">else</text>
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#2c3e50">hiçbir koşul sağlanmazsa</text>
+
+  <!-- Sağ ok: else işlem -->
+  <line x1="420" y1="282" x2="490" y2="282" stroke="#555" stroke-width="1.5"/>
+  <polygon points="487,277 497,282 487,287" fill="#555"/>
+
+  <!-- else işlem kutusu -->
+  <rect x="495" y="262" width="120" height="40" rx="10" fill="url(#box5)" stroke="#8e44ad" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="555" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5b2c6f">İşlem satırları</text>
+
+  <!-- Alt not -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Karşılaştırma ve mantıksal işlemciler</text>
+</svg>
