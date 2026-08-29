@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Design Patterns
-  - Mediator
-  - Nesne Yönelimli Programlama
+  - design patterns
+  - mediator
+  - nesne yönelimli programlama
 ---
 
 Bir sınıfın diğer beş sınıfı doğrudan tanıdığı bir uygulama, küçükken masum görünür; büyüdükçe ise kabloları birbirine dolanmış bir sunucu odasına dönüşür. **Mediator (Arabulucu)** tasarım deseni, nesnelerin birbirleriyle doğrudan konuşması yerine merkezi bir arabulucu üzerinden iletişim kurmasını sağlar. Böylece sınıflar arası bağımlılık azalır, iletişim kuralları tek bir noktada toplanır ve sistemi değiştirmek daha güvenli hale gelir.

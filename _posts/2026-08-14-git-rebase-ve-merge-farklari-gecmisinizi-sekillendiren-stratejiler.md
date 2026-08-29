@@ -10,6 +10,7 @@ tags:
   - merge
   - versiyon kontrol
 toc: true
+image: /img/git-rebase-ve-29.png
 ---
 
 Git'te iki dalı bir araya getirmek yalnızca dosya değişikliklerini toplamak değildir; aynı zamanda projenin hikâyesini nasıl anlatacağınıza karar vermektir. `merge`, geçmişte yaşanan işbirliğini görünür tutan güvenli bir birleşim yaparken, `rebase` commit'leri başka bir başlangıç noktasına taşıyarak daha doğrusal bir tarihçe üretir. Doğru seçim; ekip düzenine, dalın paylaşılıp paylaşılmadığına ve hata ayıklama alışkanlıklarınıza bağlıdır.
@@ -88,3 +89,6 @@ git push --force-with-lease origin feature/login
 | Karmaşık ekip entegrasyonu | Merge | Paralel çalışmanın bağlamını korur |
 
 Sonuçta merge ve rebase rakip değil, farklı hikâye anlatım araçlarıdır. Yerel dalınızda rebase ile düzen kurup, paylaşılan dallarda merge ile güvenliği korumak çoğu ekip için dengeli bir stratejidir. En iyi Git geçmişi en düz olan değil; ekibin gerektiğinde anlayabildiği, geri alabildiği ve güvenle geliştirebildiği geçmişidir.
+
+![git-rebase-ve-29](/img/git-rebase-ve-29.svg)
+

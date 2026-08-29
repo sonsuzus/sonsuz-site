@@ -8,6 +8,7 @@ tags:
   - feature flag
   - yazılım mimarisi
   - devops
+toc: true
 ---
 
 Modern yazılım ekipleri için bir özelliği geliştirmek ile onu kullanıcılara sunmak aynı olay olmak zorunda değildir. Feature flag (özellik bayrağı), uygulamaya dağıtılmış fakat henüz herkese görünür olmayan davranışları çalışma anında kontrol etmeyi sağlar. Böylece büyük sürümler yerine küçük, geri alınabilir ve ölçülebilir değişiklikler yapılır. Bir nevi sahne arkasında dekor hazırdır; perdeyi ne zaman açacağınıza bayrak karar verir.

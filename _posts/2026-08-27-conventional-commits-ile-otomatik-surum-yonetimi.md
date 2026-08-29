@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Conventional Commits
-  - Semantic Versioning
-  - Git
+  - conventional commits
+  - semantic versioning
+  - git
 ---
 
 Git geçmişiniz yalnızca “neler değişti?” sorusunu değil, “bu değişiklik kullanıcıyı nasıl etkiler?” sorusunu da cevaplamalıdır. Conventional Commits, commit mesajlarını küçük ama anlamlı bir sözleşmeye bağlayarak bu cevabı makine tarafından okunabilir hâle getirir. Sonuç olarak changelog üretimi, sürüm numarası artırma ve yayın notu hazırlama gibi sıkıcı işler otomatikleşir.

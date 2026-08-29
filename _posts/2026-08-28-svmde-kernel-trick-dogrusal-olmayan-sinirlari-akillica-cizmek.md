@@ -6,7 +6,7 @@ categories:
   - Bilgi
 tags: 
   - makine öğrenmesi
-  - SVM
+  - svm
   - kernel trick
 ---
 
@@ -34,7 +34,7 @@ Buradaki yalnızca kritik gözlemler, yani destek vektörleri, sınırın biçim
 |---|---|---|---|
 | Linear | $K(x,z)=x^Tz$ | Çok boyutlu, yaklaşık doğrusal metin verisi | Karmaşık eğrileri yakalayamaz |
 | Polynomial | $K(x,z)=(\gamma x^Tz+r)^d$ | Özellik etkileşimleri | Derece büyürse aşırı uyum |
-| RBF | $K(x,z)=e^{-\gamma\|x-z\|^2}$ | Genel amaçlı kıvrımlı sınırlar | `gamma` seçimine hassas |
+| RBF | $K(x,z)=e^{-\gamma\\vert x-z\\vert ^2}$ | Genel amaçlı kıvrımlı sınırlar | `gamma` seçimine hassas |
 | Sigmoid | $K(x,z)=\tanh(\gamma x^Tz+r)$ | Sinir ağı benzeri deneyler | Her parametrede kararlı değildir |
 
 Deneysel bir karşılaştırmada önce özellikleri ölçeklemek kritik önemdedir. Özellikle RBF, uzaklık kullandığı için büyük değer aralığına sahip bir sütun tüm kararı ele geçirebilir. Aşağıdaki kod, sentetik “iki ay” verisinde lineer, polinom ve RBF kernel’lerini çapraz doğrulama ile kıyaslar:

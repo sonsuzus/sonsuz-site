@@ -8,6 +8,7 @@ tags:
   - hexagonal architecture
   - clean architecture
   - yazılım mimarisi
+toc: true
 ---
 
 Bir uygulamanın veritabanını PostgreSQL’den MongoDB’ye taşımak, REST API yerine mesaj kuyruğu kullanmak ya da ödeme sağlayıcısını değiştirmek neden iş kurallarını kırmalıdır? Hexagonal Architecture, bu soruya güçlü bir “kırmamalı” yanıtı verir. Alistair Cockburn tarafından ortaya atılan bu yaklaşım, uygulamanın kalbi olan iş mantığını kullanıcı arayüzü, veritabanı ve harici servis gibi değişken ayrıntılardan izole eder.

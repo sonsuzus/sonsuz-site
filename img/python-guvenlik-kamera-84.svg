@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python Güvenlik Kamerası Akışı</text>
+
+  <!-- Kamera Girişi -->
+  <rect x="30" y="60" width="110" height="50" rx="10" fill="#a8d8ea" filter="url(#shadow)" opacity="0.9"/>
+  <text x="85" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5276" font-weight="bold">Kamera</text>
+  <text x="85" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a5276">VideoCapture</text>
+
+  <!-- Ok 1 -->
+  <polygon points="145,85 165,80 165,90" fill="#5d6d7e"/>
+  <line x1="140" y1="85" x2="160" y2="85" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Kare Okuma -->
+  <rect x="170" y="60" width="110" height="50" rx="10" fill="#a9dfbf" filter="url(#shadow)" opacity="0.9"/>
+  <text x="225" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#145a32" font-weight="bold">Kare Okuma</text>
+  <text x="225" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#145a32">frame1 ve frame2</text>
+
+  <!-- Ok 2 -->
+  <polygon points="285,85 305,80 305,90" fill="#5d6d7e"/>
+  <line x1="280" y1="85" x2="300" y2="85" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Fark Hesaplama -->
+  <rect x="310" y="60" width="110" height="50" rx="10" fill="#f9e79f" filter="url(#shadow)" opacity="0.9"/>
+  <text x="365" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6608" font-weight="bold">Fark Hesaplama</text>
+  <text x="365" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6608">absdiff</text>
+
+  <!-- Ok 3 -->
+  <polygon points="425,85 445,80 445,90" fill="#5d6d7e"/>
+  <line x1="420" y1="85" x2="440" y2="85" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Gri Tonlama -->
+  <rect x="450" y="60" width="110" height="50" rx="10" fill="#d5dbdb" filter="url(#shadow)" opacity="0.9"/>
+  <text x="505" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Gri Tonlama</text>
+  <text x="505" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">cvtColor</text>
+
+  <!-- Ok 4 -->
+  <polygon points="565,85 585,80 585,90" fill="#5d6d7e"/>
+  <line x1="560" y1="85" x2="580" y2="85" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Bulanıklaştırma -->
+  <rect x="500" y="140" width="110" height="50" rx="10" fill="#d7bde2" filter="url(#shadow)" opacity="0.9"/>
+  <text x="555" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c3483" font-weight="bold">Bulanıklaştırma</text>
+  <text x="555" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c3483">GaussianBlur</text>
+
+  <!-- Ok 5 -->
+  <polygon points="555,195 555,215 545,215 555,230 565,215 555,215" fill="#5d6d7e"/>
+  <line x1="555" y1="190" x2="555" y2="225" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Eşikleme -->
+  <rect x="370" y="140" width="110" height="50" rx="10" fill="#f5b7b1" filter="url(#shadow)" opacity="0.9"/>
+  <text x="425" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#922b21" font-weight="bold">Eşikleme</text>
+  <text x="425" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#922b21">threshold</text>
+
+  <!-- Ok 6 -->
+  <polygon points="495,165 475,160 475,170" fill="#5d6d7e"/>
+  <line x1="500" y1="165" x2="480" y2="165" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Genişletme -->
+  <rect x="230" y="140" width="110" height="50" rx="10" fill="#aed6f1" filter="url(#shadow)" opacity="0.9"/>
+  <text x="285" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b4f72" font-weight="bold">Genişletme</text>
+  <text x="285" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b4f72">dilate</text>
+
+  <!-- Ok 7 -->
+  <polygon points="365,165 345,160 345,170" fill="#5d6d7e"/>
+  <line x1="370" y1="165" x2="350" y2="165" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Kontur Bulma -->
+  <rect x="90" y="140" width="110" height="50" rx="10" fill="#f9e79f" filter="url(#shadow)" opacity="0.9"/>
+  <text x="145" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6608" font-weight="bold">Kontur Bulma</text>
+  <text x="145" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6608">findContours</text>
+
+  <!-- Ok 8 -->
+  <polygon points="225,165 205,160 205,170" fill="#5d6d7e"/>
+  <line x1="230" y1="165" x2="210" y2="165" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Hareket Algılama -->
+  <rect x="30" y="230" width="130" height="50" rx="10" fill="#a9dfbf" filter="url(#shadow)" opacity="0.9"/>
+  <text x="95" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#145a32" font-weight="bold">Hareket Algılama</text>
+  <text x="95" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#145a32">Kontur Alanı</text>
+
+  <!-- Ok 9 -->
+  <polygon points="165,255 185,250 185,260" fill="#5d6d7e"/>
+  <line x1="160" y1="255" x2="180" y2="255" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Uyarı -->
+  <rect x="190" y="230" width="110" height="50" rx="10" fill="#f5b7b1" filter="url(#shadow)" opacity="0.9"/>
+  <text x="245" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#922b21" font-weight="bold">Uyarı</text>
+  <text x="245" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#922b21">winsound</text>
+
+  <!-- Ok 10 -->
+  <polygon points="305,255 325,250 325,260" fill="#5d6d7e"/>
+  <line x1="300" y1="255" x2="320" y2="255" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Görüntü Göster -->
+  <rect x="330" y="230" width="120" height="50" rx="10" fill="#aed6f1" filter="url(#shadow)" opacity="0.9"/>
+  <text x="390" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b4f72" font-weight="bold">Görüntü Göster</text>
+  <text x="390" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b4f72">imshow</text>
+
+  <!-- Ok 11 -->
+  <polygon points="455,255 475,250 475,260" fill="#5d6d7e"/>
+  <line x1="450" y1="255" x2="470" y2="255" stroke="#5d6d7e" stroke-width="2"/>
+
+  <!-- Döngü -->
+  <rect x="480" y="230" width="110" height="50" rx="10" fill="#d5dbdb" filter="url(#shadow)" opacity="0.9"/>
+  <text x="535" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Döngü</text>
+  <text x="535" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50">while</text>
+
+  <!-- Geri dönüş oku -->
+  <path d="M 535 230 L 535 110 L 165 110 L 165 115" fill="none" stroke="#5d6d7e" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="165,120 160,108 170,108" fill="#5d6d7e"/>
+
+  <!-- Kütüphane Etiketleri -->
+  <text x="30" y="310" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7f8c8d">Kütüphaneler: OpenCV, NumPy</text>
+  <text x="480" y="310" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7f8c8d">Kurulum: pip install</text>
+</svg>

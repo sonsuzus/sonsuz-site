@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Apache Spark
-  - Büyük Veri
-  - Dağıtık Sistemler
+  - apache spark
+  - büyük veri
+  - dağıtık sistemler
 ---
 
 Bir sunucunun belleğine sığmayan, klasik araçlarla işlenmesi saatler hatta günler süren verilerle karşılaşıldığında sahneye Apache Spark çıkar. Spark; veriyi birden fazla makineye bölerek aynı işi paralel gerçekleştiren, hızlı ve genel amaçlı bir dağıtık hesaplama motorudur. Log analizi, öneri sistemleri, ETL hatları ve makine öğrenmesi gibi alanlarda devasa veri kümelerini yönetilebilir parçalara dönüştürür.

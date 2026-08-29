@@ -5,10 +5,11 @@ math: true
 categories: 
   - Program
 tags: 
-  - Docker Compose
-  - Konteyner
-  - Orkestrasyon
-  - DevOps
+  - docker compose
+  - konteyner
+  - orkestrasyon
+  - devops
+toc: true
 ---
 
 Modern bir uygulama nadiren tek başına çalışır: API’nin veritabanına, arka plan işlerinin kuyruk sistemine, tüm ekibin de tutarlı bir geliştirme ortamına ihtiyacı vardır. Docker Compose, bu parçaları tek tek `docker run` komutlarıyla başlatmak yerine, aralarındaki ilişkiyi bildirime dayalı bir YAML dosyasında tanımlamanızı sağlar. Sonuç, “benim makinemde çalışıyordu” cümlesini daha az duyduğunuz, tekrarlanabilir bir çalışma düzenidir.

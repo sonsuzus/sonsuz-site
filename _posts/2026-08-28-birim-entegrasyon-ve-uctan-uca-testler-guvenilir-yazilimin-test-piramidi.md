@@ -10,6 +10,7 @@ tags:
   - birim testi
   - entegrasyon testi
   - uçtan uca test
+toc: true
 ---
 
 Yazılım güvenilirliği, yalnızca uygulamanın bir kez çalışmasıyla ölçülmez; değişikliklerden sonra da doğru davranmasını sürdürebilmesiyle ölçülür. İşte test piramidi, ekiplerin sınırlı zaman ve kaynakla hangi testlere ne kadar yatırım yapması gerektiğini anlatan pratik bir modeldir. Piramidin tabanında hızlı ve bol miktarda birim testi, ortasında bileşenlerin birlikte çalışmasını doğrulayan entegrasyon testleri, tepesinde ise gerçek kullanıcı yolculuklarını sınayan az sayıda uçtan uca test bulunur.

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#d4e2f7"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#d1eed1"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0e8f8"/>
+      <stop offset="100%" stop-color="#e0d0f0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce8ec"/>
+      <stop offset="100%" stop-color="#f8d4dc"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Python Yorum Satırları</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="55" width="150" height="44" rx="22" fill="url(#box1)" filter="url(#shadow)" stroke="#7a9cc6" stroke-width="1.5"/>
+  <text x="320" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50"># Yorum</text>
+
+  <!-- Sol üst: Tanım -->
+  <rect x="40" y="120" width="160" height="56" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#d4a95a" stroke-width="1.2"/>
+  <text x="120" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a4a2a">Açıklama</text>
+  <text x="120" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a4a2a">Çalışmayı etkilemez</text>
+
+  <!-- Sağ üst: Kullanım -->
+  <rect x="440" y="120" width="160" height="56" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#5a9e5a" stroke-width="1.2"/>
+  <text x="520" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a5a2a">Kullanım</text>
+  <text x="520" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a5a2a">Satır başı veya sonu</text>
+
+  <!-- Sol alt: Tek satır -->
+  <rect x="40" y="220" width="160" height="56" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#8a6aaa" stroke-width="1.2"/>
+  <text x="120" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a2a5a">Tek Satır</text>
+  <text x="120" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a2a5a"># ile başlar</text>
+
+  <!-- Sağ alt: Çok satır -->
+  <rect x="440" y="220" width="160" height="56" rx="10" fill="url(#box5)" filter="url(#shadow)" stroke="#aa5a6a" stroke-width="1.2"/>
+  <text x="520" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a2a3a">Çok Satır</text>
+  <text x="520" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a2a3a">Her satıra # yazılır</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Merkez -> Sol üst -->
+  <path d="M 245 80 L 210 80 L 210 148 L 200 148" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="200,148 210,143 210,153" fill="#7a9cc6"/>
+
+  <!-- Merkez -> Sağ üst -->
+  <path d="M 395 80 L 430 80 L 430 148 L 440 148" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="440,148 430,143 430,153" fill="#7a9cc6"/>
+
+  <!-- Merkez -> Sol alt -->
+  <path d="M 245 99 L 120 99 L 120 220" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="120,220 115,210 125,210" fill="#7a9cc6"/>
+
+  <!-- Merkez -> Sağ alt -->
+  <path d="M 395 99 L 520 99 L 520 220" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="520,220 515,210 525,210" fill="#7a9cc6"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a8a9a">Yorumlar programdan bağımsız işlenir</text>
+</svg>

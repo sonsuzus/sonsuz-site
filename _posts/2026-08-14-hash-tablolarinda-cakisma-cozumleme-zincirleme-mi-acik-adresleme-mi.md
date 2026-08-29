@@ -9,9 +9,13 @@ tags:
   - hash table
   - algoritmalar
 toc: true
+image: /img/hash-tablolarinda-cakisma-80.png
 ---
 
 Hash tabloları, bir anahtarı hızlıca bir değere bağlamak için kullanılan en pratik veri yapılarındandır. İdeal senaryoda ekleme, arama ve silme işlemleri sabit zamanda çalışır; fakat iki farklı anahtarın aynı indekse düşmesi, yani **çakışma**, bu idealin küçük ama önemli düşmanıdır. Zincirleme ve açık adresleme, bu sorunu çözmek için iki temel yaklaşımdır.
+
+![hash-tablolarinda-cakisma-80](/img/hash-tablolarinda-cakisma-80.svg)
+
 ``
 
 Bir hash fonksiyonu, anahtar uzayını tablo boyutuna dönüştürür: $h(k) \in \{0,1,\dots,m-1\}$. Burada $m$ kova ya da hücre sayısı, $n$ ise saklanan eleman sayısıdır. Performansı anlamanın anahtarı **yük faktörü**dür:

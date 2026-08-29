@@ -5,9 +5,9 @@ math: true
 categories: 
   - Proje
 tags: 
-  - CAP Teoremi
-  - Dağıtık Sistemler
-  - E-Ticaret
+  - cap teoremi
+  - dağıtık sistemler
+  - e-ticaret
 ---
 
 Dağıtık sistemler, tek bir veritabanına güvenmek yerine veriyi birden fazla düğümde tutarak ölçeklenebilirlik ve hata toleransı sağlar. Ancak ağ bölünmesi yaşandığında sihirli bir biçimde hem her isteğe anında cevap verip hem de tüm kopyaları kusursuz biçimde eşitleyemezler. CAP teoremi bu zorunlu ödünleşimi görünür kılar. Bunu teorik bir üçgen olarak ezberlemek yerine, e-ticaret sepeti ve stok ekranı üzerinde küçük bir simülasyonla incelemek çok daha öğreticidir.

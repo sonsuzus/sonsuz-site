@@ -9,6 +9,7 @@ tags:
   - yapay zeka
   - alphazero
 toc: true
+image: /img/satranc-motorlarinin-evrimi-65.png
 ---
 
 Bir satranç motorunun tahtaya bakıp “Bu hamle bana mantıklı geliyor” dediğini hayal ederiz; oysa uzun yıllar boyunca makinelerin sezgisi değil, yalnızca yorulmak bilmeyen hesap gücü vardı. Satranç motorlarının Minimax’tan AlphaZero’ya uzanan tarihi, daha fazla pozisyon hesaplamanın ötesinde, “Zekâ nedir?” sorusuna verilen mühendislik cevaplarının da tarihidir.
@@ -75,3 +76,6 @@ Bu ağ, **Monte Carlo Ağaç Araması** ile birleşir. Sistem her dalı eşit bi
 Minimax zekâyı mantıklı seçim, Deep Blue devasa hesaplama, AlphaZero ise deneyimden temsil öğrenme olarak yorumlar. Yine de AlphaZero “şah güvenliği”ni bizim gibi kavramsallaştırmak zorunda değildir. İşe yarayan örüntüyü sayılara gömer.
 
 Bu tarih küçük bir felsefi sürpriz sunar: Zeki davranış için insan gibi düşünmek gerekmeyebilir. Kaba kuvvet ile sezgi birbirinin zıddı da değildir; modern motorlarda öğrenilmiş sezgi, hesaplamanın nereye bakacağını söyler. Satranç tahtası böylece yalnızca bir oyun alanı değil, aklın kurallardan mı, deneyimden mi, yoksa ikisinin sürekli etkileşiminden mi doğduğunu sınayan siyah-beyaz bir laboratuvara dönüşür.
+
+![satranc-motorlarinin-evrimi-65](/img/satranc-motorlarinin-evrimi-65.svg)
+

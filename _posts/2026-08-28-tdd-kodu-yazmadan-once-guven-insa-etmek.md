@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - TDD
-  - Yazılım Testi
-  - Yazılım Kalitesi
+  - tdd
+  - yazılım testi
+  - yazılım kalitesi
 ---
 
 Test Güdümlü Geliştirme (Test-Driven Development, TDD), üretim kodunu yazmadan önce o kodun beklenen davranışını bir testle tarif etme disiplinidir. İlk bakışta “henüz olmayan kodu nasıl test ederim?” sorusunu doğurur; fakat asıl güç tam burada saklıdır: Geliştirici önce çözümün iç yapısını değil, kullanıcıya sunduğu sonucu düşünür. Böylece kod, tahminlere göre değil, doğrulanabilir gereksinimlere göre büyür.

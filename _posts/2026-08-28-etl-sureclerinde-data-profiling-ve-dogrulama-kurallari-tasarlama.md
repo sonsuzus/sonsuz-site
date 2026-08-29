@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - ETL
-  - Veri Kalitesi
-  - Data Profiling
+  - etl
+  - veri kalitesi
+  - data profiling
 ---
 
 ETL hattı, veriyi bir kaynaktan alıp dönüştürerek hedef sisteme taşıyan lojistik bir bant gibidir. Ancak bant hızlı çalışırken yanlış ürünleri paketliyorsa hızın pek anlamı kalmaz. Data profiling (veri profilleme), verinin istatistiksel ve yapısal röntgenini çekerek bu riski görünür yapar; doğrulama kuralları ise röntgen sonucuna göre kapıda bekleyen kalite kontrol ekibidir.
@@ -21,13 +21,13 @@ $$Q = w_c C + w_v V + w_u U + w_t T$$
 
 Burada $C$ tamlık, $V$ geçerlilik, $U$ benzersizlik, $T$ tutarlılık oranıdır; ağırlıkların toplamı $[1m1[0m olmalıdır. Örneğin finansal bir tabloda tutarlılık, pazarlama listesinden daha yüksek ağırlık alabilir. Kritik nokta şudur: Mükemmel kalite hedefi yerine, iş etkisine göre kabul edilebilir eşikler belirlenmelidir.
 
-| Boyut | Profilde incelenen sinyal | Örnek doğrulama | Tipik eşik |
-|---|---|---|---|
-| Tamlık | Null ve boş değer oranı | `email` boş olmamalı | ≥ %99 |
-| Benzersizlik | Tekil değer sayısı | `customer_id` yinelenmemeli | %100 |
-| Geçerlilik | Desen, aralık, sözlük | Tutar negatif olmamalı | %100 |
-| Tutarlılık | Alanlar arası ilişki | `end_date >= start_date` | ≥ %99,9 |
-| Güncellik | Son yükleme zamanı | Veri 24 saatten eski olmamalı | ≤ 24 saat |
+\vert  Boyut \vert  Profilde incelenen sinyal \vert  Örnek doğrulama \vert  Tipik eşik \vert 
+\vert ---\vert ---\vert ---\vert ---\vert 
+\vert  Tamlık \vert  Null ve boş değer oranı \vert  `email` boş olmamalı \vert  ≥ %99 \vert 
+\vert  Benzersizlik \vert  Tekil değer sayısı \vert  `customer_id` yinelenmemeli \vert  %100 \vert 
+\vert  Geçerlilik \vert  Desen, aralık, sözlük \vert  Tutar negatif olmamalı \vert  %100 \vert 
+\vert  Tutarlılık \vert  Alanlar arası ilişki \vert  `end_date >= start_date` \vert  ≥ %99,9 \vert 
+\vert  Güncellik \vert  Son yükleme zamanı \vert  Veri 24 saatten eski olmamalı \vert  ≤ 24 saat \vert 
 
 Profil çıkarma araçları, kolon tipi, minimum-maksimum değerler, dağılımlar, boşluk oranları ve aykırı değerler gibi metrikleri otomatik üretir. **Great Expectations**, beklentileri test edilebilir veri sözleşmelerine dönüştürmek için güçlüdür. **Amazon Deequ** büyük Spark kümelerinde metrik hesaplama ve kural önerme avantajı sağlar. **Soda** ise SQL odaklı kontrolleri pipeline içine kolayca yerleştirir. Araç seçerken veri hacmi, işlem motoru, ekipteki SQL/Python yetkinliği ve uyarı altyapısı birlikte değerlendirilmelidir.
 

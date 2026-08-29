@@ -9,7 +9,7 @@ tags:
   - python
   - tahminleme
   - veri analizi
-  - SARIMA
+  - sarıma
 ---
 
 Zaman serileri, gözlemlerin yalnızca değerinden değil, **ne zaman** oluştuğundan da anlam çıkaran veri yapılarıdır. Bir mağazanın aylık satışları, elektrik tüketimi veya web sitesi trafiği buna örnektir. Geleceği tahmin etmenin sihirli bir kristal küre olmadığını baştan kabul edelim: Ama geçmişte tekrar eden desenleri yakalayarak oldukça makul tahminler üretebiliriz. Bu desenlerin en önemli ikilisi trend ve mevsimselliktir.
@@ -70,7 +70,7 @@ Model seçerken yalnızca düşük eğitim hatasına bakmayın. Tahmin kalitesin
 
 | Metrik | Formül özeti | Güçlü yanı | Dikkat edilmesi gereken |
 |---|---|---|---|
-| MAE | $\frac{1}{n}\sum|y-\hat{y}|$ | Birim cinsinden anlaşılır | Büyük hatalara duyarlılığı sınırlı |
+| MAE | $\frac{1}{n}\sum\vert y-\hat{y}\vert $ | Birim cinsinden anlaşılır | Büyük hatalara duyarlılığı sınırlı |
 | RMSE | $\sqrt{\frac{1}{n}\sum(y-\hat{y})^2}$ | Büyük sapmaları öne çıkarır | Aykırı değerlerden etkilenir |
 | MAPE | Ortalama yüzde hata | Ölçekten bağımsızdır | Sıfıra yakın değerlerde sorunlu |
 

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="mergeCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7f3"/>
+      <stop offset="100%" stop-color="#fffdfb"/>
+    </linearGradient>
+    <linearGradient id="rebaseCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2f7ff"/>
+      <stop offset="100%" stop-color="#fbfdff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#5b7187" flood-opacity="0.16"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#52677b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="52" cy="46" r="68" fill="#dceef5" opacity="0.42"/>
+  <circle cx="608" cy="285" r="88" fill="#dff0d7" opacity="0.42"/>
+  <path d="M26 93 C112 68 147 89 207 62" fill="none" stroke="#c8dfeb" stroke-width="2" opacity="0.6"/>
+  <path d="M443 272 C504 244 559 254 620 219" fill="none" stroke="#cfe2c6" stroke-width="2" opacity="0.65"/>
+
+  <rect x="24" y="18" width="592" height="42" rx="17" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="52" cy="39" r="13" fill="#d8ebe2"/>
+  <path d="M46 39 L51 44 L59 34" fill="none" stroke="#4f8d74" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="76" y="36" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#30475a">Git geçmişi: aynı değişiklik, farklı hikâye</text>
+  <text x="76" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718292">Dal yapısını koru veya geçmişi doğrult</text>
+
+  <rect x="24" y="78" width="280" height="204" rx="20" fill="url(#mergeCard)" stroke="#f0d9cf" filter="url(#shadow)"/>
+  <rect x="336" y="78" width="280" height="204" rx="20" fill="url(#rebaseCard)" stroke="#d6e3f3" filter="url(#shadow)"/>
+
+  <rect x="43" y="94" width="104" height="27" rx="13" fill="#f4dcd2"/>
+  <circle cx="60" cy="107.5" r="5" fill="#c76a55"/>
+  <text x="72" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#874536">MERGE</text>
+  <text x="43" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#795e56">Dallanmayı korur</text>
+
+  <path d="M57 203 L104 203 L153 203 L246 203" fill="none" stroke="#8799a5" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M104 203 L153 166 L203 166 L246 203" fill="none" stroke="#c57b68" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="247,203 239,198 239,208" fill="#8799a5"/>
+  <circle cx="57" cy="203" r="10" fill="#dce8e4" filter="url(#smallShadow)"/>
+  <circle cx="104" cy="203" r="10" fill="#dce8e4" filter="url(#smallShadow)"/>
+  <circle cx="153" cy="203" r="10" fill="#f5cfc3" filter="url(#smallShadow)"/>
+  <circle cx="203" cy="166" r="10" fill="#f5cfc3" filter="url(#smallShadow)"/>
+  <circle cx="246" cy="203" r="13" fill="#e99378" filter="url(#smallShadow)"/>
+  <text x="50" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46665d">A</text>
+  <text x="97" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46665d">M</text>
+  <text x="146" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#874536">F1</text>
+  <text x="196" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#874536">F2</text>
+  <text x="238" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">C</text>
+  <text x="43" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6a60">İki ebeveynli birleşim</text>
+  <rect x="43" y="252" width="186" height="18" rx="9" fill="#f8e7e1"/>
+  <text x="53" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#935442">Paylaşılan dallar için güvenli</text>
+
+  <rect x="355" y="94" width="106" height="27" rx="13" fill="#dce9fa"/>
+  <circle cx="372" cy="107.5" r="5" fill="#5687c3"/>
+  <text x="384" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365f94">REBASE</text>
+  <text x="355" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d88">Commit'leri yeniden taşır</text>
+
+  <path d="M369 203 L416 203 L463 203 L510 203 L574 203" fill="none" stroke="#668fbd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="575,203 567,198 567,208" fill="#668fbd"/>
+  <path d="M416 175 C440 151 469 151 510 175" fill="none" stroke="#b5c9df" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="510,175 503,169 505,179" fill="#b5c9df"/>
+  <circle cx="369" cy="203" r="10" fill="#dce8e4" filter="url(#smallShadow)"/>
+  <circle cx="416" cy="203" r="10" fill="#dce8e4" filter="url(#smallShadow)"/>
+  <circle cx="463" cy="203" r="10" fill="#c8ddf4" filter="url(#smallShadow)"/>
+  <circle cx="510" cy="203" r="10" fill="#c8ddf4" filter="url(#smallShadow)"/>
+  <circle cx="574" cy="203" r="12" fill="#6f9ed2" filter="url(#smallShadow)"/>
+  <text x="362" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46665d">A</text>
+  <text x="409" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46665d">M</text>
+  <text x="454" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365f94">F1</text>
+  <text x="501" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365f94">F2</text>
+  <text x="567" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Y</text>
+  <text x="355" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607b97">Yeni kimlikler, doğrusal log</text>
+  <rect x="355" y="252" width="211" height="18" rx="9" fill="#e3edf9"/>
+  <text x="365" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426eaa">Yerel dalda düzenli kullanım</text>
+
+  <rect x="126" y="291" width="388" height="20" rx="10" fill="#ffffff" opacity="0.88"/>
+  <text x="146" y="305" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#536a79">Karar: ortak geçmişte merge · kişisel hazırlıkta rebase</text>
+</svg>

@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Redis
-  - Önbellekleme
-  - Performans
-  - Veritabanı
-  - Backend
+  - redis
+  - önbellekleme
+  - performans
+  - veritabanı
+  - backend
+toc: true
 ---
 
 Bir uygulama büyüdükçe en pahalı sorgular genellikle veritabanına tekrar tekrar yapılan, sonucu nadiren değişen okumalardır. Ürün kataloğu, kullanıcı profili, popüler içerikler veya kur bilgileri buna iyi örneklerdir. Redis, bu verileri RAM üzerinde tutarak milisaniyeler seviyesinde yanıt üretir; böylece veritabanı yalnızca gerçekten gerektiğinde devreye girer.

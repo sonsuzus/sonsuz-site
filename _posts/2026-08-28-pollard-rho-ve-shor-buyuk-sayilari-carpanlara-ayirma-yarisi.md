@@ -8,6 +8,7 @@ tags:
   - kriptografi
   - algoritmalar
   - kuantum hesaplama
+toc: true
 ---
 
 Bir RSA anahtarını oluşturan büyük sayıyı çarpanlarına ayırmak, yalnızca matematiksel bir bulmaca değildir; modern açık anahtarlı kriptografinin güvenlik varsayımlarından biridir. Bu problemde Pollard Rho klasik dünyada akıllı bir rastgele yürüyüş yaklaşımı sunarken, Shor algoritması kuantum bilgisayarların teorik olarak oyunun kurallarını değiştirebileceğini söyler. Ancak önemli ayrım şudur: Shor'u klasik bilgisayarda **simüle etmek**, algoritmayı kuantum hızında çalıştırmak anlamına gelmez.
@@ -19,7 +20,7 @@ Bir bileşik sayı $N = p \cdot q$ için hedef, gizli asal çarpanlardan en az b
 
 Algoritma, örneğin $f(x)=x^2+c \pmod N$ fonksiyonu ile bir dizi üretir. Dizi sonlu bir modüler uzayda dolaştığı için sonunda döngüye girer; Rho adı da şeklinin Yunan harfi $\rho$'ya benzemesinden gelir. Asıl numara, iki değerin farkının $N$ ile ortak bölenini hesaplamaktır:
 
-$$d = \gcd(|x-y|, N)$$
+$$d = \gcd(\vert x-y\vert , N)$$
 
 Eğer $1 < d < N$ ise şanslıyız: $d$, $N$'in bir çarpanıdır. Floyd'un kaplumbağa-tavşan döngü algılama yöntemi bu iş için yeterince zariftir.
 

@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - gRPC
-  - Protocol Buffers
-  - Mikroservis
-  - REST
-  - Performans
+  - grpc
+  - protocol buffers
+  - mikroservis
+  - rest
+  - performans
+toc: true
 ---
 
 Mikroservis mimarisinde servislerin birbirleriyle konuşma hızı, yalnızca kullanıcı deneyimini değil altyapı maliyetini de belirler. REST ve JSON, okunabilirlikleri sayesinde harika bir başlangıç noktasıdır; fakat yüksek trafikte metin ayrıştırma, büyük istek gövdeleri ve tekrar eden HTTP başlıkları pahalılaşabilir. gRPC, bu noktada Protocol Buffers'ın ikili veri biçimini kullanarak daha kompakt, şemaya bağlı ve hızlı bir iletişim katmanı sunar.

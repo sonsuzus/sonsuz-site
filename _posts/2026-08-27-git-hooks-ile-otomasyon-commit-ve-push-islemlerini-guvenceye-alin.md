@@ -5,15 +5,17 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Git
-  - Git Hooks
-  - Otomasyon
+  - git
+  - git hooks
+  - otomasyon
 ---
 
 Bir projede hatalı biçimlendirilmiş kodun, çalışmayan testlerin veya yanlışlıkla eklenmiş gizli anahtarların depoya ulaşması oldukça can sıkıcıdır. Kod incelemesi bu sorunların bir kısmını yakalasa da insan dikkati sınırlıdır. Git Hooks, Git olayları gerçekleştiğinde çalışan küçük betiklerle bu kontrolü otomatikleştirir. Böylece commit ve push süreci yalnızca bir kayıt işlemi değil, kalite kapısından geçen kontrollü bir akış hâline gelir.
 
 
 Git hook’ları, yerel depodaki `.git/hooks` dizininde bulunan çalıştırılabilir dosyalardır. Git belirli bir olayı algıladığında ilgili dosyayı çağırır. Örneğin `pre-commit`, commit nesnesi oluşturulmadan hemen önce; `pre-push` ise uzak depoya veri gönderilmeden önce çalışır. Temel fikir basittir: betik `0` ile çıkarsa işlem sürer, sıfır dışı bir çıkış kodu üretirse Git işlemi durdurur.
+
+`` 
 
 Bu davranışı mantıksal olarak şöyle ifade edebiliriz:
 
@@ -38,7 +40,7 @@ Bu küçük kural, ekip standartlarını tekrarlanabilir bir sözleşmeye dönü
 ```bash
 #!/usr/bin/env bash
 
-FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(js|ts)$')
+FILES=$(git diff --cached --name-only --diff-filter=ACM \vert  grep -E '\.(js\vert ts)$')
 
 if [ -z "$FILES" ]; then
   exit 0

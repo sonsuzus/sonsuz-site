@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/python_classes/
 toc: true
+image: /img/python_classes-36.png
 ---
 
 
@@ -373,3 +374,6 @@ Kitap, Hikaye, Perili köşk, Ömer Seyfettin, 2016, 96
 Program, grup adlı bir adet ortak değişken, üç parametreli bir \_\_init\_\_() fonksiyonu ve nesne değişken değerlerini ekrana yazan nesne\_yazdir() adlı bir fonksiyon içeren sinif\_kitap adlı bir sınıf bildirimi yapar. Sonra, sinif\_kitap sınıfından sinif\_kitap\_tur adlı bir sınıf oluşturur. Bu sınıf içinde, ana sınıf \_\_init\_\_() fonksiyonunu super() fonksiyonu ile çağıran ve yil ve sayfa adlı iki değişkene değer atayan bir \_\_init\_\_() fonksiyonu ile ana sınıf ve türetilen sınıf içindeki değişken değerlerini ekrana yazan kitap\_yazdir() adlı bir fonksiyon tanımlar.
 
 Ana sınıftan nes adlı bir nesne oluştururken nesne değişkenlerine birer değer atar ve bu değerleri nesne\_yazdir() fonksiyonu ile ekrana yazar. Sonra, türetilmiş sınıftan nes\_tur adlı bir nesne oluştururken, ana sınıf ve türetilmiş sınıf değişkenlerine birer değer atar. Ana sınıf içinde yer alan değişkenleri nesne\_yazdir() fonksiyonu ile, ana sınıf ve türetilen sınıf içindeki değişkenlerin tamamını kitap\_yazdir() fonksiyonuyla ekrana yazar.
+
+![python_classes-36](/img/python_classes-36.svg)
+

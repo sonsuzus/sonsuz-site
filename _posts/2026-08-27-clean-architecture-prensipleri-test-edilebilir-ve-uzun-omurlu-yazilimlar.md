@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Clean Architecture
-  - Yazılım Mimarisi
-  - Test Edilebilirlik
+  - clean architecture
+  - yazılım mimarisi
+  - test edilebilirlik
+toc: true
 ---
 
 Bir yazılım projesinin en pahalı kısmı çoğu zaman ilk sürümünü geliştirmek değildir; asıl maliyet, değişen iş kurallarına ve yeni ihtiyaçlara yıllar boyunca uyum sağlamaktır. Clean Architecture, kodu yalnızca bugün çalışacak şekilde değil, yarın değiştirilebilecek şekilde tasarlamayı hedefler. Temel fikir basittir: İş kuralları; veritabanı, arayüz, framework veya dış servis gibi ayrıntılara bağımlı olmamalıdır.

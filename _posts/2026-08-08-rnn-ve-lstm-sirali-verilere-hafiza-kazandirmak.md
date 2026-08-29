@@ -9,6 +9,7 @@ tags:
   - lstm
   - derin öğrenme
 toc: true
+image: /img/rnn-ve-lstm-65.png
 ---
 
 Bir cümleyi anlamak, yalnızca son kelimeye bakmakla mümkün değildir; önceki kelimeleri de hatırlamak gerekir. Zaman serileri, borsa fiyatları, ses sinyalleri ve sensör kayıtları da benzer biçimde geçmişten izler taşır. Tekrarlayan Sinir Ağları, yani RNN’ler, bu ardışık bağı yakalamak için geliştirilmiş bellekli mimarilerdir. LSTM ise RNN’in unutkanlığını azaltan daha gelişmiş kuzenidir.
@@ -80,3 +81,6 @@ model.fit(X_train, y_train, epochs=20, batch_size=32)
 ## Nerelerde kullanılır?
 
 RNN ve LSTM; konuşma tanıma, metin üretimi, duygu analizi, hava tahmini, anomali tespiti ve finansal modelleme gibi alanlarda kullanılabilir. Bununla birlikte borsa tahmininde geçmiş fiyatların geleceği garanti etmediği unutulmamalıdır. Günümüzde Transformer mimarileri birçok dil görevinde öne çıksa da LSTM, daha küçük veri kümeleri ve düşük kaynaklı zaman serisi projeleri için hâlâ güçlü, anlaşılır ve pratik bir seçenektir.
+
+![rnn-ve-lstm-65](/img/rnn-ve-lstm-65.svg)
+

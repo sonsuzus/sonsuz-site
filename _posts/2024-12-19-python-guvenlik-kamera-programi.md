@@ -11,7 +11,11 @@ tags:
   - işlem
 redirect_from:
   - /posts/python-guvenlik-kamera-programi/
+image: /img/python-guvenlik-kamera-84.png
 ---
+
+![python-guvenlik-kamera-84](/img/python-guvenlik-kamera-84.svg)
+
 
 Bilgisayara bağlı bir kamerayı güvenlik kamerası olarak kullanan bir program oluşturmaya çalışacağız. Program için aşağıda bilgileri ve sanal ortamda kurulum komutları verilen kütüphaneleri kullanacağız:
 

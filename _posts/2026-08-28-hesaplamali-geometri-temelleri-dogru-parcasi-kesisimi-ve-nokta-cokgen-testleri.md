@@ -8,6 +8,7 @@ tags:
   - hesaplamalı geometri
   - algoritmalar
   - python
+toc: true
 ---
 
 Bilgisayarın çizgileri ve şekilleri anlaması, ekranda birkaç piksel boyamaktan çok daha derin bir iştir. Bir oyundaki merminin duvara çarpması, harita uygulamasında konumunuzun bir bölgeye ait olması veya CAD yazılımında iki kenarın çakışması; aynı geometrik sorulara dayanır: İki doğru parçası kesişiyor mu? Bir nokta çokgenin içinde mi?

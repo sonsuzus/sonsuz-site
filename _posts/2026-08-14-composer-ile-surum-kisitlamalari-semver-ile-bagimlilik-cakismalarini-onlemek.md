@@ -9,6 +9,7 @@ tags:
   - composer
   - semver
 toc: true
+image: /img/composer-ile-surum-91.png
 ---
 
 PHP projesinde `composer update` komutunun bir paketi güncellerken başka bir kütüphaneyi bozması, çoğu geliştiricinin en az bir kez yaşadığı küçük bir bağımlılık dramıdır. Composer bu dramı sihirle değil; sürüm kısıtlamaları, paket metadatası ve Semantik Versiyonlama (SemVer) kurallarıyla yönetir. Doğru yazılmış bir `composer.json`, hem güvenli güncellemeye alan açar hem de ekipteki herkesin aynı bağımlılık ağını kurmasına yardımcı olur.
@@ -33,6 +34,9 @@ Bu yaklaşım, Composer'ın “hangi sürümler aynı projede güvenle yaşayabi
 | `~1.2.3` | `>=1.2.3 <1.3.0` | Daha dar güncelleme aralığı | Düşük |
 | `>=1.2 <2.0` | `1.x` ailesi | Açık aralık gerektiğinde | Orta |
 | `*` | Her sürüm | Deneysel çalışmalar | Çok yüksek |
+
+![composer-ile-surum-91](/img/composer-ile-surum-91.svg)
+
 
 ## Şapka ve tilde neden farklı davranır?
 

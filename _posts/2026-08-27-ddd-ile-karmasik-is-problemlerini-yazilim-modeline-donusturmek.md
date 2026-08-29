@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Domain-Driven Design
-  - DDD
-  - Yazılım Mimarisi
+  - domain-driven design
+  - ddd
+  - yazılım mimarisi
 ---
 
 Karmaşık bir iş alanını yazılıma aktarmak, veritabanına birkaç tablo eklemekten çok daha fazlasıdır. Sigorta poliçeleri, kargo rotaları veya kampanya kuralları gibi alanlarda asıl zorluk; kodun iş dilinden kopmasıdır. Domain-Driven Design (DDD), yazılımın merkezine teknik ayrıntıları değil, işletmenin gerçek kurallarını koyar. Amaç, uzmanların anlattığı dünyayı geliştiricilerin sürdürülebilir biçimde modelleyebilmesidir.

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f9ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f3f8ef;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6C8EBF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4A6FA5;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="libGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8D8EA;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8BC1D9;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="libGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B5EAD7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#9CD4C0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="libGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFDAC1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#F5C4A0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="libGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C7CEEA;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B0B8D9;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E8C1A0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#D4A882;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3A5A7A">Python Ses İşleme Mimarisi</text>
+
+  <!-- Merkez düğüm: Python Programı -->
+  <rect x="245" y="120" width="150" height="50" rx="12" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="320" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">Python Programı</text>
+  <text x="320" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#E8EEF5">Ses İşleme Akışı</text>
+
+  <!-- Dış düğümler: Kütüphaneler -->
+  <!-- SpeechRecognition -->
+  <rect x="30" y="40" width="140" height="46" rx="10" fill="url(#libGrad1)" filter="url(#shadowLight)"/>
+  <text x="100" y="59" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2C4A6E">SpeechRecognition</text>
+  <text x="100" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3A5A7A">Konuşma Tanıma</text>
+
+  <!-- gTTS -->
+  <rect x="470" y="40" width="140" height="46" rx="10" fill="url(#libGrad2)" filter="url(#shadowLight)"/>
+  <text x="540" y="59" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2C4A6E">gTTS</text>
+  <text x="540" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3A5A7A">Metin Sese Çevirme</text>
+
+  <!-- Playsound -->
+  <rect x="30" y="230" width="140" height="46" rx="10" fill="url(#libGrad3)" filter="url(#shadowLight)"/>
+  <text x="100" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2C4A6E">Playsound</text>
+  <text x="100" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3A5A7A">Ses Çalma</text>
+
+  <!-- PyAudio -->
+  <rect x="470" y="230" width="140" height="46" rx="10" fill="url(#libGrad4)" filter="url(#shadowLight)"/>
+  <text x="540" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2C4A6E">PyAudio</text>
+  <text x="540" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3A5A7A">Ses Giriş ve Çıkış</text>
+
+  <!-- Ok başları (manuel çizim) ve bağlantılar -->
+  <!-- SpeechRecognition -> Merkez (soldan) -->
+  <path d="M170,63 L235,63 L235,135 L240,135" stroke="#6C8EBF" stroke-width="2" fill="none"/>
+  <polygon points="235,135 245,135 240,128" fill="#6C8EBF"/>
+
+  <!-- Merkez -> gTTS (sağa) -->
+  <path d="M395,135 L460,135 L460,63 L465,63" stroke="#6C8EBF" stroke-width="2" fill="none"/>
+  <polygon points="460,63 470,63 465,56" fill="#6C8EBF"/>
+
+  <!-- Playsound -> Merkez (soldan alt) -->
+  <path d="M170,253 L210,253 L210,155 L235,155 L235,145 L240,145" stroke="#6C8EBF" stroke-width="2" fill="none"/>
+  <polygon points="235,145 245,145 240,138" fill="#6C8EBF"/>
+
+  <!-- Merkez -> PyAudio (sağa alt) -->
+  <path d="M395,145 L430,145 L430,253 L465,253" stroke="#6C8EBF" stroke-width="2" fill="none"/>
+  <polygon points="460,253 470,253 465,246" fill="#6C8EBF"/>
+
+  <!-- Akış yönü göstergeleri -->
+  <!-- Sol üstten sağ alta akış oku -->
+  <path d="M60,95 L60,105 L580,105 L580,95" stroke="#D4A882" stroke-width="1.5" stroke-dasharray="6,4" fill="none"/>
+  <polygon points="580,90 580,100 588,95" fill="#D4A882"/>
+
+  <!-- Etiketler -->
+  <text x="60" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8B6F5A">Ses Girişi</text>
+  <text x="520" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8B6F5A">Metin Çıkışı</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7A8B9C">Konuşma Tanıma ve Metni Konuşmaya Çevirme</text>
+</svg>

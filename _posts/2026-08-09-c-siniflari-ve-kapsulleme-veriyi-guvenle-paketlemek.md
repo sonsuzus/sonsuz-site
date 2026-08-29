@@ -9,7 +9,11 @@ tags:
   - nesne yönelimli programlama
   - sınıflar
   - kapsülleme
+image: /img/c-siniflari-ve-74.png
 ---
+
+![c-siniflari-ve-74](/img/c-siniflari-ve-74.svg)
+
 
 C dilinde bir program büyüdükçe, birbirleriyle ilişkili verileri ve bu veriler üzerinde çalışan fonksiyonları takip etmek zorlaşabilir. Örneğin bir banka hesabının bakiye, hesap numarası ve para yatırma fonksiyonu farklı yerlerde durabilir. C++ sınıfları ise bu dağınıklığı toplar: Veri ile o veriyi yöneten davranışlar aynı güvenli kutuda yaşar. Bu yaklaşım, nesne yönelimli programlamanın temel taşlarından olan **kapsülleme**dir.
 

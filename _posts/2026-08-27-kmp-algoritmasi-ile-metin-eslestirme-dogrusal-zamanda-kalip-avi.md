@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Algoritmalar
-  - KMP
-  - Metin Eşleştirme
+  - algoritmalar
+  - kmp
+  - metin eşleştirme
+toc: true
 ---
 
 Bir metin içinde belirli bir kelimeyi, DNA dizisini ya da log kaydındaki hatayı aramak ilk bakışta basit görünür. Ancak metin milyonlarca karakter, kalıp da binlerce karakter olduğunda “uyuşmazsa başa dön” yaklaşımı pahalılaşır. Knuth-Morris-Pratt (KMP) algoritması, daha önce öğrendiği eşleşme bilgisini çöpe atmadan ilerleyerek bu problemi doğrusal zamanda çözen klasik bir tekniktir.

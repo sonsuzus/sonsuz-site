@@ -8,8 +8,9 @@ tags:
   - statik analiz
   - kod kalitesi
   - güvenlik
-  - CI/CD
+  - cı/cd
   - yazılım geliştirme
+toc: true
 ---
 
 Kodunuz derleniyor, testler yeşil yanıyor ve uygulama ilk bakışta kusursuz görünüyor olabilir. Yine de kullanılmayan bir yetkilendirme kontrolü, yanlış bir null işlemi veya kullanıcı girdisini doğrudan SQL sorgusuna ekleyen tek satır; üretimde pahalı bir arızaya ya da güvenlik ihlaline dönüşebilir. Statik kod analizi araçları, programı çalıştırmadan kaynak kodu inceleyerek bu riskleri geliştirme sürecinin erken anlarında görünür kılar. Kısacası bunlar, kod incelemesinden önce çalışan yorulmayan birer ekip arkadaşıdır.

@@ -13,6 +13,7 @@ tags:
   - çevirici
 redirect_from:
   - /posts/python-konusmayi-metne-cevirme/
+image: /img/python-konusmayi-metne-54.png
 ---
 
 Konuşma tanıma (Speech recognition) veya konuşmadan metne (speech-to-text), bir cihazın veya programın yüksek sesle konuşulan kelimeleri tanımlama ve bunları okunabilir metne dönüştürmesi işlemidir. Konuşma tanıma ve ses tanıma (voice recognition) terimleri bazen birbirinin yerine kullanılmasına rağmen, aslında iki terim birbirinden farklıdır. Konuşma tanıma, konuşulan dildeki kelimeleri tanımlamak için kullanılır. Ses tanıma ise, belirli bir kişinin sesini veya konuşmacıyı tanımlamak için kullanılan biyometrik bir teknolojidir.
@@ -120,3 +121,6 @@ except KeyboardInterrupt: # Ctrl-C ile çıkış
 ```
 
 Programı çalıştırdığımızda, SpeechToText() fonksiyonu mikrofondan gelen insan sesini metne çevirir ve metin değerini ekrana yazar. Sonra, TextToSpeech() fonksiyonu ile metni konuşmaya çevirir ve oynatır. Aynı işlem sürekli tekrar eder. Ctrl-C tuş bileşimine bastığımızda, program sona erer.
+
+![python-konusmayi-metne-54](/img/python-konusmayi-metne-54.svg)
+

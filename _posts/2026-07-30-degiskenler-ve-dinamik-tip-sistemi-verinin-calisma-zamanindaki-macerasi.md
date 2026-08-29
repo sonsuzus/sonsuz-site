@@ -9,6 +9,7 @@ tags:
   - dinamik tipleme
   - bellek yönetimi
 toc: true
+image: /img/degiskenler-ve-dinamik-62.png
 ---
 
 Dinamik tip sistemine sahip bir dilde değişken oluşturmak, boş bir kutunun üzerine etiket yapıştırmaya benzer. Kutunun içine önce sayı, ardından metin koyabiliriz; dil, içeriğin türünü çalışma zamanında kendisi belirler. Bu rahatlığın arkasında ise tip etiketleri, nesne başlıkları, referanslar ve çöp toplama gibi oldukça hareketli bir bellek düzeni bulunur.
@@ -31,6 +32,9 @@ veri = "Merhaba"  # artık bir metin nesnesine bağlanır
 | Tip değiştirme | Sınırlı veya açık dönüşüm ister | Aynı ad farklı türlere bağlanabilir |
 | Hata zamanı | Daha erken yakalanabilir | İlgili satır çalışınca görülebilir |
 | Esneklik | Daha kontrollü | Hızlı ve esnek |
+
+![degiskenler-ve-dinamik-62](/img/degiskenler-ve-dinamik-62.svg)
+
 
 ## Bellekte gerçekte ne saklanır?
 

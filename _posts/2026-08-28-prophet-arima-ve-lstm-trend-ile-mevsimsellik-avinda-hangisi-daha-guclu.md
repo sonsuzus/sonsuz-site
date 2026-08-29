@@ -7,9 +7,10 @@ categories:
 tags: 
   - zaman serisi
   - makine öğrenmesi
-  - Prophet
-  - ARIMA
-  - LSTM
+  - prophet
+  - arıma
+  - lstm
+toc: true
 ---
 
 Zaman serisi tahmini, yalnızca geçmiş değerleri geleceğe uzatmak değildir; verinin içindeki yön değişimlerini, tekrar eden döngüleri ve beklenmedik dalgalanmaları okumaktır. Bir e-ticaret sitesinin günlük satışları, elektrik tüketimi ya da web trafiği bu açıdan klasik örneklerdir. Prophet, ARIMA ve LSTM aynı hedefe koşsa da trend ve mevsimselliği ele alış biçimleri oldukça farklıdır.

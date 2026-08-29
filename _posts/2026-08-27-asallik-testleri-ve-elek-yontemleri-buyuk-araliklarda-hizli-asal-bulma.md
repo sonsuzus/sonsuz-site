@@ -6,10 +6,11 @@ categories:
   - Bilgi
 tags: 
   - asal sayılar
-  - Eratosthenes Eleği
+  - eratosthenes eleği
   - algoritmalar
-  - Python
+  - python
   - segmentli elek
+toc: true
 ---
 
 Asal sayılar, yalnızca 1’e ve kendilerine bölünebilen 1’den büyük tam sayılardır; fakat bu kısa tanım, büyük veri aralıklarında hesaplama yaparken ciddi bir algoritma problemine dönüşür. Tek tek sayıları denemek küçük örneklerde işe yarasa da, örneğin $10^{12}$ civarındaki milyonlarca sayıyı taramak istediğimizde akıllı eleme stratejilerine ihtiyaç duyarız. Bu noktada Eratosthenes Eleği ve onun büyük aralıklara uyarlanmış hâli olan segmentli elek devreye girer.

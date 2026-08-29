@@ -8,6 +8,7 @@ tags:
   - refactoring
   - temiz kod
   - yazılım geliştirme
+toc: true
 ---
 
 Bir kod tabanını iyileştirmek, her zaman yeni özellik eklemek anlamına gelmez. Bazen en değerli geliştirme; çalışan ama okunması zor, genişletmesi pahalı ve hata üretmeye yatkın kodu daha anlaşılır hâle getirmektir. Refactoring, dışarıdan gözlemlenen davranışı değiştirmeden kodun iç tasarımını düzenleme disiplinidir. Amaç yalnızca “güzel kod” yazmak değil; gelecekteki değişikliklerin maliyetini ve riskini azaltmaktır.

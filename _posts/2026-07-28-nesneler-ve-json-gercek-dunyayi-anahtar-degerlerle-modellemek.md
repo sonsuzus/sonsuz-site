@@ -9,6 +9,7 @@ tags:
   - json
   - veri modelleme
 toc: true
+image: /img/nesneler-ve-json-85.png
 ---
 
 Bir kullanıcıyı, otomobili veya kahve makinesini yazılım dünyasına taşımak istediğimizde yalnızca birkaç bağımsız değişken kullanmak kısa sürede karmaşaya yol açar. Nesneler, bir varlığa ait bilgileri anlamlı bir bütün hâlinde toplar. JSON ise bu anahtar-değer düzenini sistemler arasında aktarılabilen standart bir metne dönüştürür.
@@ -53,6 +54,9 @@ Düz değişkenler kullansaydık `otomobilMarka`, `otomobilRenk` ve `otomobilHiz
 | Bağımsız değişkenler | Dağınık olabilir | Yeni alanlarda zorlaşır | Küçük hesaplamalar |
 | Dizi | Sıraya bağlıdır | İndeksleri hatırlatır | Benzer değer listeleri |
 | Nesne | Anahtarlarla anlamlıdır | Yeni özellik eklemek kolaydır | Varlık modelleme |
+
+![nesneler-ve-json-85](/img/nesneler-ve-json-85.svg)
+
 
 Nesneler iç içe de geçebilir. Bir kullanıcının adresi başka bir nesne, siparişleri ise nesnelerden oluşan bir dizi olabilir. Bu sayede karmaşık ilişkiler, ağaç benzeri bir yapı kazanır.
 

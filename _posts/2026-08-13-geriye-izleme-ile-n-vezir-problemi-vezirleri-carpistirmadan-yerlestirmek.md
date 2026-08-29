@@ -10,6 +10,7 @@ tags:
   - geriye izleme
   - n vezir problemi
 toc: true
+image: /img/geriye-izleme-ile-28.png
 ---
 
 N Vezir Problemi, $N \times N$ boyutundaki bir satranç tahtasına $N$ adet veziri, hiçbir vezir diğerini tehdit etmeyecek biçimde yerleştirmeyi ister. Vezir yatay, dikey ve çapraz hareket edebildiği için mesele yalnızca boş bir kare bulmak değildir: Her yeni yerleşim, önceki tüm kararlarla uyumlu olmalıdır. Bu yüzden problem, kombinasyonel patlamayı yönetmeyi öğreten klasik bir geriye izleme laboratuvarıdır.
@@ -34,6 +35,9 @@ $$r+c \ne i+j$$
 | Kaba kuvvet | $2^{N^2}$ | Sonradan | Gereksiz derecede büyük arama |
 | Satır satır deneme | $N^N$ | Önceki vezirleri tarama | Öğretici, fakat yavaş |
 | Kümeli geriye izleme | Budanmış arama ağacı | Ortalama $O(1)$ | Temiz ve hızlı çözüm |
+
+![geriye-izleme-ile-28](/img/geriye-izleme-ile-28.svg)
+
 
 ## Python ile çözüm
 

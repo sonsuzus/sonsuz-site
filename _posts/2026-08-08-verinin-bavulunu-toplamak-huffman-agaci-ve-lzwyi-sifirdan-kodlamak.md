@@ -9,6 +9,7 @@ tags:
   - lzw
   - veri sıkıştırma
 toc: true
+image: /img/verinin-bavulunu-toplamak-18.png
 ---
 
 Bir metin dosyasını küçültmek sihir değil; tekrarları ve olasılıkları akıllıca temsil etme sanatıdır. Bu projede kayıpsız sıkıştırmanın iki klasiğini, Huffman ağacını ve LZW algoritmasını Python ile sıfırdan kuracağız. Böylece hazır kütüphanelerin düğmesine basmak yerine makinenin veriyi nasıl “katladığını” göreceğiz.
@@ -34,6 +35,9 @@ formülüyle hesaplanır. Buradaki $l(x)$, sembolün kod uzunluğudur.
 | Ön analiz | Gerekir | Gerekmez |
 | Güçlü olduğu veri | Sıklık dağılımı dengesiz metin | Çok tekrar içeren metin ve desenler |
 | Çıktı | Değişken uzunluklu bit kodları | Sözlük indeksleri |
+
+![verinin-bavulunu-toplamak-18](/img/verinin-bavulunu-toplamak-18.svg)
+
 
 ## Huffman ağacını oluşturmak
 

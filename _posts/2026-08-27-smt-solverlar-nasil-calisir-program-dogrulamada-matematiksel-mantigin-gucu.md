@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SMT Solver
-  - Program Doğrulama
-  - Z3
-  - Matematiksel Mantık
+  - smt solver
+  - program doğrulama
+  - z3
+  - matematiksel mantık
 ---
 
 Bir programın her olası girdide güvenli çalıştığını kanıtlamak, yalnızca binlerce test yazmakla mümkün değildir. İşte bu noktada **SMT (Satisfiability Modulo Theories)** solver’ları devreye girer: Mantıksal formüllerin, tamsayı aritmetiği, diziler, bit vektörleri ve eşitlik gibi teoriler altında tutarlı olup olmadığını incelerler. Kısacası solver’a “Bu koşulları aynı anda sağlayan bir durum var mı?” diye sorarız; yanıt çoğu zaman programdaki hatayı ya da kanıtı ele verir.

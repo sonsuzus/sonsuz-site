@@ -10,7 +10,11 @@ tags:
   - bellek
   - c programlama
 toc: true
+image: /img/structlar-ile-veri-12.png
 ---
+
+![structlar-ile-veri-12](/img/structlar-ile-veri-12.svg)
+
 
 Programlamada gerçek dünya nesneleri nadiren tek bir değerden oluşur. Bir öğrencinin adı, numarası ve notu; bir oyun karakterinin koordinatları, canı ve seviyesi vardır. Bu bilgileri birbirinden kopuk değişkenlerde tutmak kısa örneklerde işe yarasa da uygulama büyüdükçe yönetilemez hale gelir. **Yapılar (structs)**, farklı türlerdeki verileri mantıksal olarak tek bir varlık altında toplayan temel veri iskeletleridir.
 ``

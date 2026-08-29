@@ -18,7 +18,7 @@ Temel varsayım şudur: Bağımsız geliştirilmiş sistemlerin aynı hatayı, a
 
 $$\forall x \in X: \quad normalize(R(x)) = normalize(S(x))$$
 
-Buradaki `normalize` adımı kritiktir. İki araç aynı anlamı farklı metin düzenleriyle üretebilir: JSON alan sırası değişebilir, hata mesajı farklı olabilir veya kayan noktalı sayıların son basamakları ayrışabilir. Bu nedenle ham metni değil, mümkün olduğunda anlamsal çıktıyı karşılaştırmak gerekir. Kayan nokta için örneğin $|a-b| < \epsilon$ toleransı kullanılabilir.
+Buradaki `normalize` adımı kritiktir. İki araç aynı anlamı farklı metin düzenleriyle üretebilir: JSON alan sırası değişebilir, hata mesajı farklı olabilir veya kayan noktalı sayıların son basamakları ayrışabilir. Bu nedenle ham metni değil, mümkün olduğunda anlamsal çıktıyı karşılaştırmak gerekir. Kayan nokta için örneğin $\vert a-b\vert  < \epsilon$ toleransı kullanılabilir.
 
 | Yaklaşım | Beklenen sonuç kaynağı | Güçlü yanı | Zorlayıcı yanı |
 |---|---|---|---|

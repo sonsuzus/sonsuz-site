@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Git
-  - Git Bisect
-  - Hata Ayıklama
+  - git
+  - git bisect
+  - hata ayıklama
+toc: true
 ---
 
 Bir projenin dün çalışan, bugün ise gizemli biçimde çöken bir sürümünü düşünün. Yüzlerce commit arasından “suçlu” değişikliği tek tek incelemek hem sabır hem de kahve tüketimi gerektirir. `git bisect`, bu işi ikili arama algoritmasıyla otomatikleştirir: Bildiğiniz iyi ve kötü commit’ler arasındaki geçmişi bölerek hatayı oluşturan ilk commit’i bulur.

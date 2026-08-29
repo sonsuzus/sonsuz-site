@@ -11,6 +11,7 @@ tags:
   - derleme
   - makro
 toc: true
+image: /img/cc-on-islemci-28.png
 ---
 
 C ve C++ kodu, derleyicinin eline doğrudan yazdığımız hâliyle ulaşmaz. Arada metin tabanlı ama etkisi büyük bir aşama vardır: **ön işlemci** (preprocessor). `#include`, `#define` ve `#ifdef` gibi satırlarla çalışan bu mekanizma, kaynak kodu derlenmeden hemen önce dönüştürür. Bunu bir tiyatro oyununun sahne arkası ekibi gibi düşünebilirsiniz: oyuncular (derleyici) sahneye çıkmadan dekorlar yerleşir, bazı replikler değiştirilir ve şartlara uymayan sahneler tamamen kaldırılır.
@@ -94,3 +95,6 @@ int topla(int a, int b);
 ```
 
 Bu yapı, dosya birden fazla kez eklense bile bildirimin yalnızca bir kez işlenmesini sağlar. Ön işlemci güçlüdür; fakat metinsel çalıştığı için dikkat ister. Makroları küçük, açık isimli ve zorunlu oldukları alanlarla sınırlı tutmak, derleme sahnesinin perde arkasını kontrol altında tutmanın en iyi yoludur.
+
+![cc-on-islemci-28](/img/cc-on-islemci-28.svg)
+

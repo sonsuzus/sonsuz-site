@@ -5,10 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Specification Pattern
-  - Tasarım Desenleri
-  - C#
-  - Domain-Driven Design
+  - specification pattern
+  - tasarım desenleri
+  - c#
+  - domain-driven design
 ---
 
 İş kuralları büyüdükçe kod tabanında küçük bir canavar belirir: her yerde çoğalan `if` koşulları. “Müşteri aktif mi?”, “Sepet tutarı yeterli mi?”, “Ürün stokta mı?” gibi sorular önce masum görünür; sonra aynı kontroller servis, API ve rapor katmanlarında kopyalanır. Specification Pattern, bu kuralları isimlendirilmiş, test edilebilir ve birleştirilebilir nesnelere dönüştürerek canavarı evcilleştirir.

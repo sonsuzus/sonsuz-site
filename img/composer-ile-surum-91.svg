@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#c5dcf7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#67809b" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#70869a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="321" cy="157" r="112" fill="#dcefff" opacity="0.38"/>
+  <circle cx="321" cy="157" r="82" fill="#eff8ff" opacity="0.7"/>
+
+  <path d="M166 94 C199 94 203 119 229 128" fill="none" stroke="#8299b3" stroke-width="2"/>
+  <polygon points="228,123 239,131 226,134" fill="#8299b3"/>
+  <path d="M166 219 C195 218 204 194 229 184" fill="none" stroke="#8299b3" stroke-width="2"/>
+  <polygon points="226,179 239,181 229,190" fill="#8299b3"/>
+  <path d="M412 128 C441 115 448 94 475 94" fill="none" stroke="#8299b3" stroke-width="2"/>
+  <polygon points="474,89 486,94 474,99" fill="#8299b3"/>
+  <path d="M412 184 C440 196 448 219 475 219" fill="none" stroke="#8299b3" stroke-width="2"/>
+  <polygon points="474,214 486,219 474,224" fill="#8299b3"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="38" y="61" width="128" height="66" rx="15" fill="#fff5d8"/>
+    <rect x="38" y="186" width="128" height="66" rx="15" fill="#e4f4e5"/>
+    <rect x="474" y="61" width="128" height="66" rx="15" fill="#f1e5fb"/>
+    <rect x="474" y="186" width="128" height="66" rx="15" fill="#ffe8e3"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#30465b" text-anchor="middle">
+    <text x="102" y="84" font-weight="700">Paket A</text>
+    <text x="102" y="105" fill="#8a6540">^2.0</text>
+    <text x="102" y="119" font-size="11" fill="#65798b">uyumlu aralık</text>
+
+    <text x="102" y="209" font-weight="700">Paket B</text>
+    <text x="102" y="230" fill="#4d7c5c">&lt;2.5</text>
+    <text x="102" y="244" font-size="11" fill="#65798b">alt sınır</text>
+
+    <text x="538" y="84" font-weight="700">SemVer</text>
+    <text x="538" y="105" fill="#765790">MAJOR.MINOR.PATCH</text>
+    <text x="538" y="119" font-size="11" fill="#65798b">uyumluluk sözü</text>
+
+    <text x="538" y="209" font-weight="700">Kısıtlar</text>
+    <text x="538" y="230" fill="#a45d50">^  ~  aralık</text>
+    <text x="538" y="244" font-size="11" fill="#65798b">izin verilenler</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="229" y="104" width="183" height="105" rx="24" fill="url(#core)" stroke="#aecbe5" stroke-width="1.2"/>
+  </g>
+  <circle cx="274" cy="156" r="25" fill="#ffffff" opacity="0.85"/>
+  <path d="M263 151 L271 143 L280 151 L280 163 L271 169 L263 163 Z" fill="#6391bf"/>
+  <path d="M267 153 L271 157 L276 150" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#27445f">
+    <text x="309" y="145" font-weight="700">Composer Çözücü</text>
+    <text x="309" y="165">Kesişim ve seçim</text>
+    <text x="309" y="184" font-size="11" fill="#58748d">güvenli sürüm yolu</text>
+  </g>
+
+  <path d="M320 210 L320 253" fill="none" stroke="#5d87aa" stroke-width="2.4"/>
+  <polygon points="314,247 320,258 326,247" fill="#5d87aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="210" y="258" width="220" height="48" rx="15" fill="#d9f0e4" stroke="#afd7c0"/>
+  </g>
+  <path d="M238 273 h16 a3 3 0 0 1 3 3 v14 h-22 v-14 a3 3 0 0 1 3-3z" fill="#59a276"/>
+  <path d="M242 273 v-5 a7 7 0 0 1 14 0 v5" fill="none" stroke="#59a276" stroke-width="3"/>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315b47">
+    <text x="271" y="280" font-weight="700">composer.lock</text>
+    <text x="271" y="296" font-size="11">kesin sürümler · tekrarlanabilir kurulum</text>
+  </g>
+</svg>

@@ -9,6 +9,7 @@ tags:
   - outbox pattern
   - mesajlaşma
   - veri tutarlılığı
+toc: true
 ---
 
 Mikro servis mimarisinde bir siparişi veritabanına kaydedip ardından `OrderCreated` olayını mesaj kuyruğuna göndermek basit görünür. Fakat veritabanı işlemi başarılı olurken broker bağlantısı koparsa ne olur? Sipariş vardır, olay yoktur ve stok, ödeme ya da bildirim servisleri bu siparişi hiç öğrenemez. Outbox Pattern, bu can sıkıcı “yarım kalmış başarı” durumunu güvenilir ve izlenebilir bir akışa dönüştürür.

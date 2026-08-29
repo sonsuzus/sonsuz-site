@@ -11,7 +11,11 @@ tags:
   - açıklama
 redirect_from:
   - /posts/python_comments/
+image: /img/python_comments-22.png
 ---
+
+![python_comments-22](/img/python_comments-22.svg)
+
 
 
 Python'da, kodların açıklanması için yapılan yorumlar programın çalışmasına herhangi bir etki yapmaz ve hiç yazılmamış gibi işlem görür.Yorum oluşturmak için, yorumun başında `#` işareti kullanılır. Bu işaret bir satır başında veya bir satırın sonunda kullanılabilir. Tek ve çok satırdan oluşan yorum satırlarının kullanılmasını bir örnek üzerinde incelemeye çalışalım:
