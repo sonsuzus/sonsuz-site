@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="memory" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#cbe5ff"/>
+      <stop offset="100%" stop-color="#7db4e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58728c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58728c" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="57" cy="45" r="58" fill="#dcefff" opacity="0.55"/>
+  <circle cx="597" cy="274" r="72" fill="#dff1d8" opacity="0.55"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426078" font-weight="700">BELLEK SIZINTISI: ÖLÇ • KARŞILAŞTIR • DOĞRULA</text>
+
+  <!-- Time series panel -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="51" width="245" height="191" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39566e" font-weight="700">Zaman Serisi</text>
+  <text x="48" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c91a1">Sabit yük altında eğim</text>
+
+  <line x1="54" y1="209" x2="246" y2="209" stroke="#bfd1dc" stroke-width="1.5"/>
+  <line x1="54" y1="116" x2="54" y2="209" stroke="#bfd1dc" stroke-width="1.5"/>
+  <line x1="54" y1="178" x2="246" y2="178" stroke="#e5edf1" stroke-width="1"/>
+  <line x1="54" y1="147" x2="246" y2="147" stroke="#e5edf1" stroke-width="1"/>
+  <text x="40" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8295a3">RSS</text>
+  <text x="213" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8295a3">zaman</text>
+
+  <!-- healthy curve -->
+  <path d="M61 187 C73 164,83 193,96 170 S120 186,133 162 S155 183,169 163" fill="none" stroke="#62b989" stroke-width="3" stroke-linecap="round"/>
+  <path d="M169 163 L163 160 L164 167 Z" fill="#62b989"/>
+  <text x="63" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a9b70">Sağlıklı</text>
+
+  <!-- leak curve -->
+  <path d="M61 195 C81 191,91 187,106 181 S130 176,143 166 S165 155,180 145 S205 128,237 113" fill="none" stroke="#e77a7a" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M237 113 L228 114 L233 121 Z" fill="#e77a7a"/>
+  <text x="179" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#d36060" font-weight="700">Sızıntı</text>
+
+  <circle cx="91" cy="187" r="5" fill="#ffffff" stroke="#62b989" stroke-width="2"/>
+  <circle cx="148" cy="164" r="5" fill="#ffffff" stroke="#e77a7a" stroke-width="2"/>
+  <circle cx="218" cy="126" r="5" fill="#ffffff" stroke="#e77a7a" stroke-width="2"/>
+
+  <!-- manual arrow to center -->
+  <path d="M280 146 C294 146,299 146,311 146" fill="none" stroke="#88a8bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="311,146 303,141 303,151" fill="#88a8bb"/>
+
+  <!-- profiler hub -->
+  <g filter="url(#shadow)">
+    <rect x="316" y="105" width="143" height="105" rx="22" fill="#eaf4ff" stroke="#bedaf1" stroke-width="1.5"/>
+  </g>
+  <circle cx="387.5" cy="142" r="22" fill="#ffffff" filter="url(#softShadow)"/>
+  <rect x="376" y="130" width="23" height="25" rx="4" fill="url(#memory)"/>
+  <path d="M381 136 H394 M381 142 H394 M381 148 H390" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="344" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365c77" font-weight="700">Profilleme</text>
+  <text x="335" y="197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668399">Karşılaştırmalı kanıt</text>
+
+  <!-- source arrows -->
+  <path d="M390 97 C390 88,390 84,390 78" fill="none" stroke="#8caabb" stroke-width="2"/>
+  <polygon points="390,78 385,86 395,86" fill="#8caabb"/>
+
+  <path d="M466 137 C481 137,484 137,495 137" fill="none" stroke="#8caabb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="495,137 487,132 487,142" fill="#8caabb"/>
+
+  <path d="M463 190 C480 203,486 207,497 213" fill="none" stroke="#8caabb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="497,213 488,211 492,220" fill="#8caabb"/>
+
+  <!-- snapshot -->
+  <g filter="url(#softShadow)">
+    <rect x="330" y="43" width="120" height="37" rx="12" fill="#fff7df"/>
+  </g>
+  <circle cx="349" cy="61.5" r="8" fill="#f1bf5e"/>
+  <path d="M349 57 L349 62 L353 65" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="364" y="66" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c6331">Anlık görüntü</text>
+
+  <!-- causes column -->
+  <g filter="url(#shadow)">
+    <rect x="501" y="83" width="112" height="111" rx="17" fill="#ffffff"/>
+  </g>
+  <text x="519" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#465d72" font-weight="700">Kaynaklar</text>
+  <rect x="517" y="119" width="80" height="19" rx="8" fill="#fde7e7"/>
+  <text x="526" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b45d5d">Referans</text>
+  <rect x="517" y="145" width="80" height="19" rx="8" fill="#e9def8"/>
+  <text x="526" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#775a9a">Önbellek</text>
+  <rect x="517" y="171" width="80" height="19" rx="8" fill="#dff3eb"/>
+  <text x="526" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#43816a">Açık kaynak</text>
+
+  <!-- lower verification card -->
+  <g filter="url(#shadow)">
+    <rect x="300" y="244" width="294" height="53" rx="17" fill="#ffffff"/>
+  </g>
+  <circle cx="326" cy="270" r="14" fill="#dff3e8"/>
+  <path d="M319 270 L324 275 L334 264" fill="none" stroke="#4fa475" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="350" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6471" font-weight="700">GC sonrası doğrulama</text>
+  <text x="350" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718b96">Eğim düşer, bellek plato yapar</text>
+
+  <path d="M390 216 C390 225,390 229,390 239" fill="none" stroke="#8caabb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="390,239 385,231 395,231" fill="#8caabb"/>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python Paket Kurulum Süreci</text>
+
+  <!-- Sanal Ortam Kutusu -->
+  <rect x="40" y="55" width="160" height="55" rx="10" fill="#dbeafe" filter="url(#shadow)" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="120" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">Sanal Ortam</text>
+  <text x="120" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3b82f6">env01</text>
+
+  <!-- pip Kutusu -->
+  <rect x="240" y="55" width="160" height="55" rx="10" fill="#dcfce7" filter="url(#shadow)" stroke="#86efac" stroke-width="1.5"/>
+  <text x="320" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#166534">pip</text>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#22c55e">Paket Yöneticisi</text>
+
+  <!-- PyPI Kutusu -->
+  <rect x="440" y="55" width="160" height="55" rx="10" fill="#fef3c7" filter="url(#shadow)" stroke="#fde68a" stroke-width="1.5"/>
+  <text x="520" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#92400e">PyPI</text>
+  <text x="520" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#f59e0b">Paket Deposu</text>
+
+  <!-- Ok 1: Sanal Ortam -> pip -->
+  <path d="M200 82 L232 82" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="238,82 228,77 228,87" fill="#64748b"/>
+
+  <!-- Ok 2: pip -> PyPI -->
+  <path d="M400 82 L432 82" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="438,82 428,77 428,87" fill="#64748b"/>
+
+  <!-- Komut Kutusu -->
+  <rect x="40" y="145" width="260" height="55" rx="10" fill="#e0e7ff" filter="url(#shadow)" stroke="#a5b4fc" stroke-width="1.5"/>
+  <text x="170" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3730a3">pip install requests</text>
+  <text x="170" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6366f1">Komut Çalıştırma</text>
+
+  <!-- Ok: pip -> Komut -->
+  <path d="M320 110 L320 130 L170 130 L170 138" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="170,144 165,134 175,134" fill="#64748b"/>
+
+  <!-- Bağımlılıklar Kutusu -->
+  <rect x="340" y="145" width="260" height="55" rx="10" fill="#fce7f3" filter="url(#shadow)" stroke="#f9a8d4" stroke-width="1.5"/>
+  <text x="470" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9d174d">Bağımlılıklar</text>
+  <text x="470" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#db2777">certifi, chardet, idna, urllib</text>
+
+  <!-- Ok: Komut -> Bağımlılıklar -->
+  <path d="M300 172 L332 172" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="338,172 328,167 328,177" fill="#64748b"/>
+
+  <!-- Sonuç Kutusu -->
+  <rect x="200" y="235" width="240" height="55" rx="10" fill="#d1fae5" filter="url(#shadow)" stroke="#6ee7b7" stroke-width="1.5"/>
+  <text x="320" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#065f46">Kurulum Tamamlandı</text>
+  <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#10b981">requests ve bağımlılıkları hazır</text>
+
+  <!-- Ok: Bağımlılıklar -> Sonuç -->
+  <path d="M470 200 L470 220 L320 220 L320 228" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="320,234 315,224 325,224" fill="#64748b"/>
+
+  <!-- Alt Bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#94a3b8">Python Paket Yönetim Akışı</text>
+</svg>

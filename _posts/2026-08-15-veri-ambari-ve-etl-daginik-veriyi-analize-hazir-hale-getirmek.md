@@ -8,6 +8,7 @@ tags:
   - veri ambarı
   - etl
   - sql
+image: /img/veri-ambari-ve-53.png
 ---
 
 Bir şirketin verileri genellikle tek bir yerde ve kusursuz biçimde yaşamaz: satışlar bir PostgreSQL veritabanında, müşteri kayıtları CRM sisteminde, kampanya sonuçları CSV dosyalarında ve uygulama olayları API günlüklerinde bulunur. Veri ambarı, bu dağınık parçaları karar vermeyi kolaylaştıran tutarlı bir analitik yapıda buluşturur. ETL süreçleri ise bu yapının görünmez ama vazgeçilmez lojistiğidir.
@@ -23,6 +24,9 @@ Bir veri ambarı çoğunlukla analitik sorgular için modellenir. Operasyonel si
 | Veri yapısı | Genellikle normalize | Yıldız veya kar tanesi şeması |
 | Sorgu tipi | Kısa, sık ve kayıt odaklı | Büyük hacimli, toplulaştırmalı |
 | Zaman boyutu | Güncel durum ağırlıklı | Tarihsel veri ağırlıklı |
+
+![veri-ambari-ve-53](/img/veri-ambari-ve-53.svg)
+
 
 Analitik modellemede sık kullanılan yıldız şemasında bir **olgu tablosu** ölçümleri saklar; **boyut tabloları** ise bu ölçümlere bağlam verir. `fact_sales` tablosunda satış tutarı ve miktar bulunabilir; tarih, ürün ve müşteri tabloları da “hangi gün, hangi ürün, kime?” sorularını cevaplar. Toplam gelir basitçe $R = \sum_{i=1}^{n} fiyat_i \times adet_i$ formülüyle hesaplanabilir. Ancak fiyatın para birimi, iade durumu veya indirim kuralı kaynaklar arasında farklıysa, bu formül ETL dönüşümü tamamlanmadan güvenilir değildir.
 

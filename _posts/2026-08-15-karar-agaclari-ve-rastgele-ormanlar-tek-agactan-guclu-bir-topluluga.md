@@ -9,6 +9,7 @@ tags:
   - sınıflandırma
   - karar ağaçları
 toc: true
+image: /img/karar-agaclari-ve-74.png
 ---
 
 Bir müşterinin aboneliğini iptal edip etmeyeceğini, bir e-postanın spam olup olmadığını veya bir görüntüde kedi bulunup bulunmadığını tahmin etmek sınıflandırma problemlerinin klasik örnekleridir. Karar ağaçları bu görevlerde anlaşılır kurallar üretir; rastgele ormanlar ise tek bir ağacın kararsızlığını çok sayıda ağacın ortak kararıyla dengeler. Kısacası: Tek bir uzman hata yapabilir, ama farklı uzmanlardan oluşan iyi bir kurul çoğu zaman daha isabetlidir.
@@ -72,3 +73,6 @@ for model in (tree, forest):
 ```
 
 Ormanın her zaman mucize olmadığını unutmayın: Daha fazla hesaplama, daha az şeffaflık ve sınıf dengesizliğinde yanıltıcı doğruluk oranları söz konusu olabilir. Bu nedenle yalnızca `accuracy` yerine precision, recall ve F1 skorlarını da inceleyin. Yine de iyi ayarlanmış bir rastgele orman, az ön işleme ihtiyacı, doğrusal olmayan ilişkileri yakalayabilmesi ve sağlam varsayılanları sayesinde sınıflandırma projeleri için güvenilir bir başlangıç noktasıdır.
+
+![karar-agaclari-ve-74](/img/karar-agaclari-ve-74.svg)
+

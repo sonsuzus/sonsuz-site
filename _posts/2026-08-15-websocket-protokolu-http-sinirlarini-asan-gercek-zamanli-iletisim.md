@@ -9,9 +9,13 @@ tags:
   - http
   - gerçek zamanlı iletişim
 toc: true
+image: /img/websocket-protokolu-http-69.png
 ---
 
 Bir sohbet uygulamasında yeni mesajın sayfayı yenilemeden ekrana düşmesi, borsa fiyatlarının anlık değişmesi veya çok oyunculu bir oyunda rakibinizin hareketini gecikmeden görmeniz tesadüf değildir. Bu deneyimlerin arkasında çoğunlukla WebSocket bulunur. WebSocket, istemci ile sunucu arasında uzun ömürlü ve çift yönlü bir iletişim kanalı kurarak klasik web istek-cevap döngüsünün sınırlarını aşar.
+
+![websocket-protokolu-http-69](/img/websocket-protokolu-http-69.svg)
+
 ``
 ## HTTP neden tek başına yeterli değildir?
 

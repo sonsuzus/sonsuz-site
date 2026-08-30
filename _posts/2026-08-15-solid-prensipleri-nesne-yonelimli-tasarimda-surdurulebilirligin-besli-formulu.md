@@ -9,6 +9,7 @@ tags:
   - nesne yönelimli programlama
   - yazılım mimarisi
 toc: true
+image: /img/solid-prensipleri-nesne-70.png
 ---
 
 Bir yazılım projesi ilk gününde çoğu zaman düzenli görünür; sınıflar az, gereksinimler nettir ve herkes mutludur. Asıl sınav, yeni ödeme sağlayıcısı, farklı raporlama isteği veya beklenmedik bir iş kuralı geldiğinde başlar. SOLID, nesne yönelimli tasarımın değişime direnmek yerine değişimi yönetmesine yardım eden beş ilkedir. Amaç “daha çok sınıf” üretmek değil; bağımlılıkları bilinçli kurmak, kodun niyetini görünür kılmak ve değişikliğin etkisini sınırlamaktır.
@@ -70,3 +71,6 @@ Matematiksel sezgiyle, alt türün kabul ettiği girdiler üst türden daha dar 
 **Bağımlılıkların Tersine Çevrilmesi İlkesi**, üst seviye iş kurallarının veritabanı, dosya sistemi veya e-posta kütüphanesi gibi ayrıntılara doğrudan bağlanmamasını önerir. Her ikisi de soyutlamaya bağımlı olmalıdır. Örneğin sipariş uygulaması `PostgresOrderRepository` yerine `OrderRepository` arayüzünü bilir; gerçek depo uygulaması dışarıdan enjekte edilir.
 
 SOLID uygulandığında kod otomatik olarak kusursuz olmaz; sınıf sayısı da artabilir. Ancak test edilebilirlik, okunabilirlik ve değişiklik güvenliği yükselir. En iyi başlangıç, büyük bir yeniden yazım değil, her yeni özellikte “bu sorumluluk nereye ait?” sorusunu sormaktır. Bu küçük soru, mimarinin gelecekteki bakım faturalarını ciddi biçimde azaltır.
+
+![solid-prensipleri-nesne-70](/img/solid-prensipleri-nesne-70.svg)
+

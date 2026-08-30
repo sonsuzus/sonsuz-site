@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#eef7f0"/>
+    </linearGradient>
+    <linearGradient id="main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5b9bd5"/>
+      <stop offset="100%" stop-color="#4a8fc2"/>
+    </linearGradient>
+    <linearGradient id="sec1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#8ec9dd"/>
+    </linearGradient>
+    <linearGradient id="sec2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b5e3c1"/>
+      <stop offset="100%" stop-color="#9ed6ad"/>
+    </linearGradient>
+    <linearGradient id="sec3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5d0a9"/>
+      <stop offset="100%" stop-color="#eec291"/>
+    </linearGradient>
+    <linearGradient id="sec4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4c5f0"/>
+      <stop offset="100%" stop-color="#c2b0e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez: Tuple Kavramı -->
+  <g filter="url(#shadow)">
+    <rect x="245" y="115" width="150" height="55" rx="14" fill="url(#main)"/>
+    <text x="320" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Tuple</text>
+    <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e8f0fe">Çokuz</text>
+  </g>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Sol üst: Oluşturma -->
+  <path d="M 175 85 L 235 115" stroke="#5b9bd5" stroke-width="2" fill="none"/>
+  <polygon points="235,115 226,108 228,118" fill="#5b9bd5"/>
+
+  <!-- Sağ üst: Erişim -->
+  <path d="M 410 85 L 350 115" stroke="#5b9bd5" stroke-width="2" fill="none"/>
+  <polygon points="350,115 359,108 357,118" fill="#5b9bd5"/>
+
+  <!-- Sol alt: Değişmezlik -->
+  <path d="M 175 235 L 235 205" stroke="#5b9bd5" stroke-width="2" fill="none"/>
+  <polygon points="235,205 226,212 228,202" fill="#5b9bd5"/>
+
+  <!-- Sağ alt: Sıralama -->
+  <path d="M 410 235 L 350 205" stroke="#5b9bd5" stroke-width="2" fill="none"/>
+  <polygon points="350,205 359,212 357,202" fill="#5b9bd5"/>
+
+  <!-- Sol üst: Oluşturma Kutusu -->
+  <g filter="url(#shadowLight)">
+    <rect x="55" y="45" width="120" height="55" rx="12" fill="url(#sec1)"/>
+    <text x="115" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d5a7a">Oluşturma</text>
+    <text x="115" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a6a8a">( ) veya tuple()</text>
+  </g>
+
+  <!-- Sağ üst: Erişim Kutusu -->
+  <g filter="url(#shadowLight)">
+    <rect x="465" y="45" width="120" height="55" rx="12" fill="url(#sec2)"/>
+    <text x="525" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d6a4f">Erişim</text>
+    <text x="525" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#3a7a5f">Endeks ile</text>
+  </g>
+
+  <!-- Sol alt: Değişmezlik Kutusu -->
+  <g filter="url(#shadowLight)">
+    <rect x="55" y="235" width="120" height="55" rx="12" fill="url(#sec3)"/>
+    <text x="115" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#8a5a2a">Değişmezlik</text>
+    <text x="115" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#9a6a3a">Sabit veri</text>
+  </g>
+
+  <!-- Sağ alt: Sıralama Kutusu -->
+  <g filter="url(#shadowLight)">
+    <rect x="465" y="235" width="120" height="55" rx="12" fill="url(#sec4)"/>
+    <text x="525" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a4a8a">Sıralama</text>
+    <text x="525" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a5a9a">Düzen korunur</text>
+  </g>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a8a9a" opacity="0.8">Python Tuple Özellikleri</text>
+</svg>

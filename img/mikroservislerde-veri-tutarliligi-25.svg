@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="order" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9dcf6"/>
+    </linearGradient>
+    <linearGradient id="event" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#f8dba0"/>
+    </linearGradient>
+    <linearGradient id="stock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3df"/>
+      <stop offset="100%" stop-color="#bde2c7"/>
+    </linearGradient>
+    <linearGradient id="payment" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8ddea"/>
+      <stop offset="100%" stop-color="#ebc4d9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d8295" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6d8295" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="564" cy="46" r="92" fill="#dceff0" opacity="0.42"/>
+  <circle cx="78" cy="286" r="94" fill="#e6e7fb" opacity="0.42"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42566c">Nihai Tutarlılık Akışı</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728296">Yerel işlem → olay → zamanla yakınsama</text>
+
+  <path d="M155 138 L180 138" stroke="#7890a4" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="180,138 172,133 172,143" fill="#7890a4"/>
+  <path d="M298 138 L324 138" stroke="#7890a4" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="324,138 316,133 316,143" fill="#7890a4"/>
+  <path d="M423 130 C444 112,451 94,467 88" fill="none" stroke="#7890a4" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="467,88 458,88 462,96" fill="#7890a4"/>
+  <path d="M423 146 C443 163,451 190,467 199" fill="none" stroke="#7890a4" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="467,199 459,191 457,200" fill="#7890a4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="92" width="127" height="92" rx="18" fill="url(#order)"/>
+    <rect x="40" y="106" width="28" height="28" rx="9" fill="#ffffff" opacity="0.7"/>
+    <path d="M48 113 H61 V126 H48 Z M51 110 H58" fill="none" stroke="#52769a" stroke-width="1.7" stroke-linejoin="round"/>
+    <text x="78" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355672">Sipariş</text>
+    <text x="78" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56728b">Yerel veri</text>
+    <rect x="41" y="148" width="101" height="23" rx="8" fill="#ffffff" opacity="0.63"/>
+    <text x="52" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426079">BEKLEMEDE</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="180" y="92" width="118" height="92" rx="18" fill="url(#event)"/>
+    <rect x="193" y="106" width="31" height="28" rx="9" fill="#ffffff" opacity="0.72"/>
+    <path d="M201 113 H215 M201 119 H215 M201 125 H211" stroke="#9d7535" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="233" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765827">Outbox</text>
+    <text x="233" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7040">Kalıcı olay</text>
+    <rect x="193" y="148" width="92" height="23" rx="8" fill="#ffffff" opacity="0.63"/>
+    <text x="204" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c6130">Yayıncı</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="324" y="92" width="99" height="92" rx="18" fill="#e5dffc"/>
+    <circle cx="349" cy="120" r="14" fill="#ffffff" opacity="0.72"/>
+    <path d="M341 116 L349 111 L357 116 L349 121 Z M341 122 L349 127 L357 122" fill="none" stroke="#6a5b9b" stroke-width="1.6" stroke-linejoin="round"/>
+    <text x="371" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#554980">Aracı</text>
+    <text x="338" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b6090">Olay akışı</text>
+    <text x="338" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b6090">en az bir kez</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="467" y="52" width="142" height="72" rx="18" fill="url(#stock)"/>
+    <circle cx="492" cy="77" r="14" fill="#ffffff" opacity="0.72"/>
+    <path d="M484 76 H500 M487 71 H497 M487 81 H497" stroke="#4e8060" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="516" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376747">Stok Servisi</text>
+    <text x="516" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547960">Rezervasyon</text>
+    <rect x="480" y="101" width="53" height="11" rx="5.5" fill="#ffffff" opacity="0.62"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="467" y="166" width="142" height="72" rx="18" fill="url(#payment)"/>
+    <circle cx="492" cy="191" r="14" fill="#ffffff" opacity="0.72"/>
+    <path d="M485 186 H499 V196 H485 Z M488 199 H496" fill="none" stroke="#925474" stroke-width="1.7" stroke-linejoin="round"/>
+    <text x="516" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7b3e5b">Ödeme Servisi</text>
+    <text x="516" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c5a70">Sonuç olayı</text>
+    <rect x="480" y="215" width="53" height="11" rx="5.5" fill="#ffffff" opacity="0.62"/>
+  </g>
+
+  <path d="M538 124 L538 145 C538 153,516 153,516 163" fill="none" stroke="#bd8c9f" stroke-width="1.8" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <polygon points="516,163 511,155 521,155" fill="#bd8c9f"/>
+  <text x="548" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c6272">telafi</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="121" y="238" width="398" height="51" rx="17" fill="#ffffff" opacity="0.87"/>
+    <circle cx="151" cy="264" r="15" fill="#d6f1e0"/>
+    <path d="M144 264 L149 269 L159 258" fill="none" stroke="#4e8b65" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="178" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e5e50">Zamanla ortak durum</text>
+    <text x="178" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70847a">İdempotent tüketici • tekrar deneme • gözlemlenebilirlik</text>
+    <circle cx="487" cy="264" r="12" fill="#e7f5eb"/>
+    <path d="M482 264 H492 M487 259 V269" stroke="#56906a" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+
+  <path d="M385 184 C385 205,365 211,350 237" fill="none" stroke="#94aa9b" stroke-width="1.8" stroke-dasharray="4 5" stroke-linecap="round"/>
+  <polygon points="350,237 349,228 357,233" fill="#94aa9b"/>
+  <path d="M538 238 C520 244,509 247,499 249" fill="none" stroke="#94aa9b" stroke-width="1.8" stroke-dasharray="4 5" stroke-linecap="round"/>
+</svg>

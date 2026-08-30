@@ -13,7 +13,11 @@ tags:
 redirect_from:
   - /posts/python_strings/
 toc: true
+image: /img/python_strings-77.png
 ---
+
+![python_strings-77](/img/python_strings-77.svg)
+
 
 Karakter dizisi sabitleri tırnak işaretleri arasına yerleştirilen karakter dizileri ile oluşturulur. Tek tırnak (' ') veya çift tırnak (" ") işaretleri kullanılabilir. Bir karakter dizisi sabitini doğrudan veya bir değişkene atadıktan sonra ekrana yazabiliriz.
 

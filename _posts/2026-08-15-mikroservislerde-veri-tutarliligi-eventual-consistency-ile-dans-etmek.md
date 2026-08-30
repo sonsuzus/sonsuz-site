@@ -8,7 +8,11 @@ tags:
   - mikroservis
   - eventual consistency
   - dağıtık sistemler
+image: /img/mikroservislerde-veri-tutarliligi-25.png
 ---
+
+![mikroservislerde-veri-tutarliligi-25](/img/mikroservislerde-veri-tutarliligi-25.svg)
+
 
 Mikroservis mimarisi, uygulamayı bağımsız geliştirilebilen küçük servislere böler; fakat bu özgürlüğün bir bedeli vardır: veri artık tek bir veritabanında, tek bir atomik işlemle yönetilmez. Sipariş, ödeme ve stok servislerinin kendi veritabanlarına sahip olduğunu düşünün. Bir sipariş verildiğinde tüm kayıtların aynı milisaniyede güncellenmesini beklemek hem pahalı hem de çoğu zaman gereksizdir. İşte **eventual consistency** (nihai tutarlılık), dağıtık dünyanın bu gerçeğini yönetmek için devreye girer.
 ``

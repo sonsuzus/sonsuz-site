@@ -9,6 +9,7 @@ tags:
   - sürümleme
   - rest
   - geriye dönük uyumluluk
+image: /img/api-surumleme-stratejileri-49.png
 ---
 
 Bir API yayınlamak, taş tabletlere kural kazımak değildir; daha çok şehir içindeki bir metro hattını işletmeye benzer. Yeni duraklar eklemek istersiniz, fakat her gün o hattı kullanan yolcuların işe geç kalmaması gerekir. API sürümleme, istemcilerin mevcut davranışlarını korurken servisinizin veri modelini, uç noktalarını ve iş kurallarını güvenle geliştirme disiplinidir. Başarılı stratejinin merkezi yalnızca `/v2` etiketi değil; değişikliğin etkisini ölçmek, sözleşmeyi korumak ve geçişi yönetmektir.
@@ -57,3 +58,6 @@ Link: </docs/migration-v2>; rel="deprecation"
 Bu başlıklar tek başına sihir değildir; e-posta duyurusu, sürüm notu, geçiş rehberi ve kullanım analitiğiyle desteklenmelidir. Hangi istemcilerin hâlâ v1 kullandığını bilmeden kapatma tarihi belirlemek, köprüyü geçmeden yakmaya benzer.
 
 Son olarak sözleşme testleri kurun. OpenAPI şeması, consumer-driven contract testleri ve üretim trafiğinin kontrollü gölgelemesi, sürümleme kararlarını tahmin yerine kanıta dayandırır. Sağlam API'ler hiç değişmeyen API'ler değildir; değişirken kullanıcılarını yolda bırakmayan API'lerdir.
+
+![api-surumleme-stratejileri-49](/img/api-surumleme-stratejileri-49.svg)
+

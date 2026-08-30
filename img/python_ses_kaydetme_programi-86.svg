@@ -1,0 +1,76 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(135deg, #f5f9ff, #f3f8ef); font-family: 'Segoe UI', Tahoma, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#5b7a9d" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#c7ecee"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff6f0"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8daf5"/>
+      <stop offset="100%" stop-color="#d1c4e9"/>
+    </linearGradient>
+    <linearGradient id="grad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe0b2"/>
+      <stop offset="100%" stop-color="#ffcc80"/>
+    </linearGradient>
+    <linearGradient id="grad5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b3e5fc"/>
+      <stop offset="100%" stop-color="#81d4fa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Merkez Python düğümü -->
+  <rect x="250" y="130" width="140" height="60" rx="14" fill="url(#grad1)" filter="url(#shadow)" stroke="#5b8db8" stroke-width="1.5"/>
+  <text x="320" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a3a5c">Python</text>
+  <text x="320" y="176" text-anchor="middle" font-size="11" fill="#2d4a6e">Ses Kayıt</text>
+
+  <!-- Sol üst: Mikrofon Girişi -->
+  <rect x="40" y="40" width="130" height="55" rx="12" fill="url(#grad2)" filter="url(#shadow)" stroke="#66a080" stroke-width="1.5"/>
+  <text x="105" y="63" text-anchor="middle" font-size="12" font-weight="bold" fill="#2d5a3d">Mikrofon</text>
+  <text x="105" y="80" text-anchor="middle" font-size="11" fill="#3a6b4f">Ses Girişi</text>
+
+  <!-- Sol alt: PyAudio -->
+  <rect x="40" y="200" width="130" height="55" rx="12" fill="url(#grad5)" filter="url(#shadow)" stroke="#4a9bc7" stroke-width="1.5"/>
+  <text x="105" y="223" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a4a6e">PyAudio</text>
+  <text x="105" y="240" text-anchor="middle" font-size="11" fill="#2d5a7a">Akış Yönetimi</text>
+
+  <!-- Sağ üst: Wave -->
+  <rect x="470" y="40" width="130" height="55" rx="12" fill="url(#grad3)" filter="url(#shadow)" stroke="#8a6fb0" stroke-width="1.5"/>
+  <text x="535" y="63" text-anchor="middle" font-size="12" font-weight="bold" fill="#4a2d6e">Wave</text>
+  <text x="535" y="80" text-anchor="middle" font-size="11" fill="#5a3d7a">Dosya Yazma</text>
+
+  <!-- Sağ alt: NumPy ve SciPy -->
+  <rect x="470" y="200" width="130" height="55" rx="12" fill="url(#grad4)" filter="url(#shadow)" stroke="#c08a3a" stroke-width="1.5"/>
+  <text x="535" y="223" text-anchor="middle" font-size="12" font-weight="bold" fill="#6e4a1a">NumPy</text>
+  <text x="535" y="240" text-anchor="middle" font-size="11" fill="#8a6a2d">Veri İşleme</text>
+
+  <!-- Ok: Mikrofon -> PyAudio -->
+  <path d="M 170 68 L 235 68" stroke="#4a9bc7" stroke-width="2" fill="none"/>
+  <polygon points="240,68 230,63 230,73" fill="#4a9bc7"/>
+
+  <!-- Ok: PyAudio -> Python -->
+  <path d="M 170 228 L 245 175" stroke="#4a9bc7" stroke-width="2" fill="none"/>
+  <polygon points="250,170 239,172 244,181" fill="#4a9bc7"/>
+
+  <!-- Ok: Python -> Wave -->
+  <path d="M 395 155 L 465 68" stroke="#8a6fb0" stroke-width="2" fill="none"/>
+  <polygon points="470,63 459,65 464,74" fill="#8a6fb0"/>
+
+  <!-- Ok: Python -> NumPy -->
+  <path d="M 395 175 L 465 228" stroke="#c08a3a" stroke-width="2" fill="none"/>
+  <polygon points="470,233 461,229 463,239" fill="#c08a3a"/>
+
+  <!-- Alt etiket: Veri Akışı -->
+  <rect x="200" y="270" width="240" height="35" rx="10" fill="#ffffff" opacity="0.7" filter="url(#shadow)"/>
+  <text x="320" y="292" text-anchor="middle" font-size="11" fill="#4a6a8a">Ses Verisi Akışı ve Kayıt Süreci</text>
+
+  <!-- Küçük dekoratif dalga ikonu -->
+  <path d="M 80 130 Q 95 120 110 130 T 140 130" stroke="#66a080" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M 80 145 Q 95 135 110 145 T 140 145" stroke="#66a080" stroke-width="1.5" fill="none" opacity="0.3"/>
+</svg>

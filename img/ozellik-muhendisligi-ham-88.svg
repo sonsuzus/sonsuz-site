@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="raw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce0f7"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f5e7"/>
+      <stop offset="100%" stop-color="#bfe7d6"/>
+    </linearGradient>
+    <linearGradient id="feature" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0d5"/>
+      <stop offset="100%" stop-color="#f7dfb4"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9dcff"/>
+      <stop offset="100%" stop-color="#d8c5f1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6b8592" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="35" r="68" fill="#d9efff" opacity="0.42"/>
+  <circle cx="574" cy="278" r="94" fill="#dcefd5" opacity="0.42"/>
+
+  <text x="28" y="31" fill="#405563" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Özellik Mühendisliği</text>
+  <text x="28" y="49" fill="#78909b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ham veriden öğrenilebilir sinyale</text>
+
+  <!-- raw data -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="83" width="128" height="164" rx="20" fill="url(#raw)"/>
+    <rect x="40" y="96" width="104" height="27" rx="10" fill="#ffffff" opacity="0.7"/>
+    <text x="92" y="114" text-anchor="middle" fill="#31566e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Ham Veri</text>
+
+    <rect x="41" y="136" width="102" height="25" rx="8" fill="#ffffff" opacity="0.75"/>
+    <circle cx="54" cy="148.5" r="4" fill="#78a9d1"/>
+    <text x="65" y="153" fill="#4a6675" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Doğum tarihi</text>
+
+    <rect x="41" y="168" width="102" height="25" rx="8" fill="#ffffff" opacity="0.75"/>
+    <circle cx="54" cy="180.5" r="4" fill="#78a9d1"/>
+    <text x="65" y="185" fill="#4a6675" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İşlem zamanı</text>
+
+    <rect x="41" y="200" width="102" height="25" rx="8" fill="#ffffff" opacity="0.75"/>
+    <circle cx="54" cy="212.5" r="4" fill="#78a9d1"/>
+    <text x="65" y="217" fill="#4a6675" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Gelir ve borç</text>
+  </g>
+
+  <!-- arrow to core -->
+  <path d="M164 165 H190" fill="none" stroke="#82a5ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="198,165 189,160 189,170" fill="#82a5ae"/>
+
+  <!-- process core -->
+  <g filter="url(#shadow)">
+    <rect x="202" y="65" width="184" height="202" rx="28" fill="url(#core)"/>
+    <circle cx="294" cy="132" r="43" fill="#f8fffb" opacity="0.86"/>
+    <circle cx="294" cy="132" r="31" fill="#c7ead9"/>
+    <path d="M278 135 C284 125 288 143 295 132 S306 122 312 130" fill="none" stroke="#4e9c7a" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="278" cy="135" r="3.5" fill="#4e9c7a"/>
+    <circle cx="295" cy="132" r="3.5" fill="#4e9c7a"/>
+    <circle cx="312" cy="130" r="3.5" fill="#4e9c7a"/>
+
+    <text x="294" y="191" text-anchor="middle" fill="#27674f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Dönüşüm Katmanı</text>
+    <text x="294" y="212" text-anchor="middle" fill="#507d6d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Temizle</text>
+    <text x="294" y="232" text-anchor="middle" fill="#507d6d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Türetilmiş sinyal üret</text>
+
+    <rect x="221" y="243" width="40" height="10" rx="5" fill="#89c9ad"/>
+    <rect x="267" y="243" width="40" height="10" rx="5" fill="#a7d8bf"/>
+    <rect x="313" y="243" width="40" height="10" rx="5" fill="#89c9ad"/>
+  </g>
+
+  <!-- process nodes -->
+  <g filter="url(#softShadow)">
+    <rect x="181" y="77" width="53" height="25" rx="9" fill="#ffffff"/>
+    <text x="207.5" y="94" text-anchor="middle" fill="#47715f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Doldur</text>
+    <rect x="354" y="77" width="53" height="25" rx="9" fill="#ffffff"/>
+    <text x="380.5" y="94" text-anchor="middle" fill="#47715f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ölçekle</text>
+  </g>
+
+  <!-- arrow to features -->
+  <path d="M394 165 H419" fill="none" stroke="#82a5ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="427,165 418,160 418,170" fill="#82a5ae"/>
+
+  <!-- feature cards -->
+  <g filter="url(#shadow)">
+    <rect x="431" y="70" width="114" height="190" rx="20" fill="url(#feature)"/>
+    <rect x="443" y="83" width="90" height="27" rx="10" fill="#ffffff" opacity="0.7"/>
+    <text x="488" y="101" text-anchor="middle" fill="#74562b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Özellikler</text>
+
+    <rect x="444" y="123" width="88" height="26" rx="8" fill="#fffaf1"/>
+    <text x="488" y="141" text-anchor="middle" fill="#806639" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Yaş</text>
+
+    <rect x="444" y="156" width="88" height="26" rx="8" fill="#fffaf1"/>
+    <text x="488" y="174" text-anchor="middle" fill="#806639" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hafta sonu</text>
+
+    <rect x="444" y="189" width="88" height="26" rx="8" fill="#fffaf1"/>
+    <text x="488" y="207" text-anchor="middle" fill="#806639" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Borç / gelir</text>
+
+    <rect x="444" y="226" width="18" height="8" rx="4" fill="#e4b965"/>
+    <rect x="467" y="226" width="30" height="8" rx="4" fill="#dcae55"/>
+    <rect x="502" y="226" width="18" height="8" rx="4" fill="#e4b965"/>
+  </g>
+
+  <!-- arrow to model -->
+  <path d="M553 165 H572" fill="none" stroke="#82a5ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="580,165 571,160 571,170" fill="#82a5ae"/>
+
+  <!-- model -->
+  <g filter="url(#shadow)">
+    <rect x="585" y="108" width="42" height="114" rx="18" fill="url(#model)"/>
+    <circle cx="606" cy="137" r="9" fill="#fffaff"/>
+    <circle cx="606" cy="165" r="9" fill="#fffaff"/>
+    <circle cx="606" cy="193" r="9" fill="#fffaff"/>
+    <path d="M600 137 L612 137 M600 165 L612 165 M600 193 L612 193" stroke="#8a69b2" stroke-width="2"/>
+    <text x="606" y="239" text-anchor="middle" fill="#725490" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Model</text>
+  </g>
+
+  <!-- feedback loop -->
+  <path d="M606 254 C606 292 395 298 350 278" fill="none" stroke="#91ad9d" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="343,274 353,273 349,282" fill="#91ad9d"/>
+  <rect x="427" y="284" width="110" height="23" rx="10" fill="#ffffff" opacity="0.82" filter="url(#softShadow)"/>
+  <text x="482" y="300" text-anchor="middle" fill="#5d7a69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Doğrula ve iyileştir</text>
+</svg>

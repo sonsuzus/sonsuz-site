@@ -479,3 +479,6 @@ Yukarıdaki programı derleyip çalıştırdığımızda, aşağıdaki ifadeleri
 43
 
 ```
+
+![python_operators-35](/img/python_operators-35.svg)
+

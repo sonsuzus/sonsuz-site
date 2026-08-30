@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="rawGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#c6dcf6"/>
+    </linearGradient>
+    <linearGradient id="cleanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3de"/>
+      <stop offset="100%" stop-color="#bfe8ca"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8292" flood-opacity="0.19"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8292" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="48" r="76" fill="#dceeff" opacity="0.5"/>
+  <circle cx="587" cy="275" r="95" fill="#dff2df" opacity="0.55"/>
+  <path d="M26 285 C151 244 158 306 271 277 S467 230 620 275" fill="none" stroke="#bfdde1" stroke-width="1.5" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527080" font-weight="600">Pandas ile veri temizleme</text>
+
+  <!-- Raw data -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="100" width="116" height="132" rx="18" fill="url(#rawGrad)" stroke="#a9c9e5"/>
+    <rect x="45" y="119" width="82" height="17" rx="5" fill="#ffffff" opacity="0.78"/>
+    <rect x="45" y="143" width="82" height="17" rx="5" fill="#ffffff" opacity="0.62"/>
+    <rect x="45" y="167" width="82" height="17" rx="5" fill="#ffffff" opacity="0.72"/>
+    <rect x="45" y="191" width="82" height="17" rx="5" fill="#ffffff" opacity="0.6"/>
+    <path d="M68 119V208 M99 119V208" stroke="#9cbfdc" stroke-width="1"/>
+    <rect x="47" y="145" width="18" height="13" rx="3" fill="#ffd6d0"/>
+    <rect x="71" y="193" width="25" height="13" rx="3" fill="#ffd6d0"/>
+    <text x="86" y="221" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315b78" font-weight="600">Ham veri</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M153 166 H184" fill="none" stroke="#6d91a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="184,166 175,160 175,172" fill="#6d91a5"/>
+
+  <!-- Exploration -->
+  <g filter="url(#shadow)">
+    <rect x="192" y="90" width="126" height="151" rx="20" fill="#fffdf8" stroke="#e5d8b6"/>
+    <circle cx="255" cy="126" r="23" fill="#fce7b4"/>
+    <circle cx="255" cy="126" r="13" fill="none" stroke="#b9853d" stroke-width="2.5"/>
+    <path d="M265 136 L276 147" stroke="#b9853d" stroke-width="3" stroke-linecap="round"/>
+    <text x="255" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71572f" font-weight="700">Keşif</text>
+    <text x="255" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806d50">tipler · oranlar</text>
+    <text x="255" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806d50">tekrarlar</text>
+  </g>
+
+  <!-- branching lines -->
+  <path d="M327 165 H346 V81 H365" fill="none" stroke="#8099a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="365,81 356,75 356,87" fill="#8099a3"/>
+  <path d="M327 165 H365" fill="none" stroke="#8099a3" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="365,165 356,159 356,171" fill="#8099a3"/>
+  <path d="M327 165 H346 V249 H365" fill="none" stroke="#8099a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="365,249 356,243 356,255" fill="#8099a3"/>
+
+  <!-- Missing -->
+  <g filter="url(#softShadow)">
+    <rect x="374" y="47" width="137" height="68" rx="15" fill="#fbe8ed" stroke="#edbdc9"/>
+    <circle cx="399" cy="81" r="15" fill="#f7cbd5"/>
+    <path d="M399 72 V85 M399 92 V93" stroke="#a34d62" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="424" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#884254" font-weight="700">Eksik değer</text>
+    <text x="424" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#966170">sil veya doldur</text>
+  </g>
+
+  <!-- Outlier -->
+  <g filter="url(#softShadow)">
+    <rect x="374" y="131" width="137" height="68" rx="15" fill="#eee8fb" stroke="#d2c3ed"/>
+    <circle cx="399" cy="165" r="15" fill="#d9cdf3"/>
+    <path d="M389 172 H409 M393 168 V157 M399 172 V151 M405 168 V158" stroke="#70549d" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="399" cy="151" r="3" fill="#70549d"/>
+    <text x="424" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#634a89" font-weight="700">Aykırı değer</text>
+    <text x="424" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79668f">IQR · sınırla</text>
+  </g>
+
+  <!-- Duplicate -->
+  <g filter="url(#softShadow)">
+    <rect x="374" y="215" width="137" height="68" rx="15" fill="#e2f3f1" stroke="#b9dfda"/>
+    <rect x="387" y="238" width="19" height="23" rx="4" fill="#a9d8d1" stroke="#599b92"/>
+    <rect x="394" y="233" width="19" height="23" rx="4" fill="#d4eeea" stroke="#599b92"/>
+    <text x="424" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397970" font-weight="700">Tekrarlı kayıt</text>
+    <text x="424" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56857f">anahtar · son kayıt</text>
+  </g>
+
+  <!-- Merge -->
+  <path d="M520 81 H533 V165 H546" fill="none" stroke="#75978d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M520 165 H546" fill="none" stroke="#75978d" stroke-width="2" stroke-linecap="round"/>
+  <path d="M520 249 H533 V165" fill="none" stroke="#75978d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="546,165 537,159 537,171" fill="#75978d"/>
+
+  <!-- Clean -->
+  <g filter="url(#shadow)">
+    <rect x="554" y="106" width="66" height="119" rx="18" fill="url(#cleanGrad)" stroke="#9dceb0"/>
+    <circle cx="587" cy="143" r="21" fill="#ffffff" opacity="0.78"/>
+    <path d="M576 143 L584 151 L599 134" fill="none" stroke="#39865b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="587" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#357452" font-weight="700">Temiz</text>
+    <text x="587" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d8062">veri</text>
+  </g>
+
+  <text x="320" y="306" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62807b">Kurallı dönüşüm · izlenebilir kalite</text>
+</svg>

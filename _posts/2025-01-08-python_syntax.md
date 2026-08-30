@@ -10,7 +10,11 @@ tags:
   - yazım
 redirect_from:
   - /posts/python_syntax/
+image: /img/python_syntax-52.png
 ---
+
+![python_syntax-52](/img/python_syntax-52.svg)
+
 
 
 Python'da, bir kod satırının başındaki boşluklar (indentation) bir kod bloğunu belirtmek için girinti kullanılır. Diğer programlama dillerinde bu boşluklar kodların daha düzenli bir şekilde yazılması ve kolayca anlaşılması için kullanılır. Python'da kod satır başındaki boşluklar programın yapısını belirlediğinden, düzgün kullanılmadığı takdirde program hata verir.

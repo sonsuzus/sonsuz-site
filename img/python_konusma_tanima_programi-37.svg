@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e9"/>
+      <stop offset="100%" stop-color="#c8f0d0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3e2"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0e8fd"/>
+      <stop offset="100%" stop-color="#e0d4f9"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde8ef"/>
+      <stop offset="100%" stop-color="#fad0dd"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#a0b8cc" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c5f7c">Python Konuşma Tanıma Programı</text>
+
+  <!-- Ses Girişi Kutusu -->
+  <rect x="40" y="60" width="140" height="70" rx="12" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#8fc5e8" stroke-width="1.5"/>
+  <text x="110" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c5f7c">Ses Girişi</text>
+  <text x="110" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a99">Mikrofon</text>
+  <text x="110" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a7a99">(PyAudio)</text>
+
+  <!-- Ok 1 -->
+  <path d="M180 95 L230 95" stroke="#5a9bc7" stroke-width="2" fill="none"/>
+  <polygon points="230,90 242,95 230,100" fill="#5a9bc7"/>
+
+  <!-- Ses Tanıma Kutusu -->
+  <rect x="245" y="55" width="150" height="80" rx="12" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#7ecb8e" stroke-width="1.5"/>
+  <text x="320" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2f6e3a">Konuşma Tanıma</text>
+  <text x="320" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a8a55">SpeechRecognition</text>
+  <text x="320" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a8a55">Kütüphanesi</text>
+
+  <!-- Ok 2 -->
+  <path d="M395 95 L445 95" stroke="#5a9bc7" stroke-width="2" fill="none"/>
+  <polygon points="445,90 457,95 445,100" fill="#5a9bc7"/>
+
+  <!-- İşlem Kutusu -->
+  <rect x="460" y="55" width="140" height="80" rx="12" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#e0b86a" stroke-width="1.5"/>
+  <text x="530" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#8a6a2f">Metin Çıktısı</text>
+  <text x="530" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a08040">Speech-to-Text</text>
+  <text x="530" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a08040">Dönüşüm</text>
+
+  <!-- Alt Bölüm: Ses Tanıma Ayrımı -->
+  <rect x="40" y="180" width="560" height="120" rx="14" fill="#ffffff" opacity="0.6" stroke="#c0d4e0" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="320" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a6a80">Önemli Kavram Ayrımı</text>
+
+  <!-- Konuşma Tanıma Alt Kutusu -->
+  <rect x="70" y="218" width="220" height="60" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#b09ad8" stroke-width="1.5"/>
+  <text x="180" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a3d8a">Konuşma Tanıma</text>
+  <text x="180" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a5aaa">Kelimeyi tanımlar</text>
+
+  <!-- Ses Tanıma Alt Kutusu -->
+  <rect x="350" y="218" width="220" height="60" rx="10" fill="url(#boxGrad5)" filter="url(#shadow)" stroke="#d89ab0" stroke-width="1.5"/>
+  <text x="460" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#8a3d5a">Ses Tanıma</text>
+  <text x="460" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#aa5a7a">Konuşmacıyı tanımlar</text>
+
+  <!-- Alt oklar -->
+  <path d="M290 245 L340 245" stroke="#b0a0c0" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="340,240 350,245 340,250" fill="#b0a0c0"/>
+
+  <path d="M180 278 L180 290" stroke="#7a5aaa" stroke-width="1.5" fill="none"/>
+  <polygon points="175,290 180,298 185,290" fill="#7a5aaa"/>
+
+  <path d="M460 278 L460 290" stroke="#aa5a7a" stroke-width="1.5" fill="none"/>
+  <polygon points="455,290 460,298 465,290" fill="#aa5a7a"/>
+
+  <text x="180" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a5aaa">Dil modeli</text>
+  <text x="460" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#aa5a7a">Biyometrik</text>
+</svg>

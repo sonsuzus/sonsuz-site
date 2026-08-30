@@ -9,7 +9,11 @@ tags:
   - anahtar kelime
 redirect_from:
   - /posts/python_keywords/
+image: /img/python_keywords-33.png
 ---
+
+![python_keywords-33](/img/python_keywords-33.svg)
+
 
 
 

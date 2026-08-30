@@ -10,9 +10,13 @@ tags:
   - sql
   - işlem yönetimi
 toc: true
+image: /img/acid-ozellikleri-ve-70.png
 ---
 
 Bir banka hesabından para transferi düşünün: Gönderenin bakiyesi azalırken alıcının bakiyesi artmalıdır; arada elektrik kesilse, iki kullanıcı aynı hesaba erişse veya sistem yeniden başlasa bile sonuç güvenilir kalmalıdır. Veritabanı işlemleri (transaction), birden fazla sorguyu tek bir mantıksal iş olarak paketler. ACID ise bu paketin kaotik gerçek dünyada güvenle çalışmasını sağlayan dört temel ilkedir.
+
+
+![acid-ozellikleri-ve-70](/img/acid-ozellikleri-ve-70.svg)
 
 ``
 

@@ -17,6 +17,7 @@ tags:
 redirect_from:
   - /posts/python_ses_kaydetme_programi/
 toc: true
+image: /img/python_ses_kaydetme_programi-86.png
 ---
 
 
@@ -281,3 +282,6 @@ except Exception as e:
 ```
 
 Programı çalıştırdığımızda, ses kaydetmeye başlar. Ctrl-C tuş bileşimine bastığımızda, ses kaydı sona erer ve kaydedilen ses verileri bir dosyaya kaydedilir.
+
+![python_ses_kaydetme_programi-86](/img/python_ses_kaydetme_programi-86.svg)
+

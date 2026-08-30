@@ -10,6 +10,7 @@ tags:
   - factory
   - observer
 toc: true
+image: /img/tasarim-kaliplariyla-tekrarlayan-56.png
 ---
 
 Yazılım geliştirmede bazı problemler, proje değişse bile inatla geri gelir: Uygulama genelinde tek bir ayar yöneticisi nasıl tutulur? Nesne üretimini hangi sınıfın yapacağı nasıl saklanır? Bir veri değiştiğinde onu dinleyen ekranlar nasıl haberdar edilir? Tasarım kalıpları, bu sorulara kopyala-yapıştır tarifler değil; test edilmiş iletişim ve sorumluluk dağıtma stratejileri sunar.
@@ -98,3 +99,6 @@ stok.guncelle(12)
 Observer ilişkisini $1 \rightarrow N$ olarak düşünebilirsiniz: bir yayıncı, $N$ adet aboneyi tetikler. Abone sayısı arttıkça bildirim maliyeti yaklaşık $O(N)$ olur; bu yüzden gereksiz aboneleri kaldırmak önemlidir.
 
 Sonuçta doğru kalıp, en popüler olan değil sorunun basıncını azaltandır. Tekil bir kaynağı yönetiyorsanız Singleton'ı, üretim kararlarını gizlemek istiyorsanız Factory'yi, olayları yaymak istiyorsanız Observer'ı değerlendirin. Önce basit çözümü kurun; tekrar eden ağrı ortaya çıktığında kalıbı bilinçli biçimde devreye alın.
+
+![tasarim-kaliplariyla-tekrarlayan-56](/img/tasarim-kaliplariyla-tekrarlayan-56.svg)
+

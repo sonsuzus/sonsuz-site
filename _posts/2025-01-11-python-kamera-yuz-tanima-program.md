@@ -12,6 +12,7 @@ tags:
   - numpy
 redirect_from:
   - /posts/python-kamera-yuz-tanima-program/
+image: /img/python-kamera-yuz-55.png
 ---
 
 Bilgisayara bağlı bir kameradan alınan görüntü üzerindeki yüzleri tespit edip işaretleyen bir program oluşturmaya çalışalım. Program için aşağıda bilgileri ve sanal ortamda kurulum komutları verilen kütüphaneleri kullanacağız:
@@ -73,3 +74,6 @@ cv2.destroyAllWindows()
 ```
 
 Programı çalıştırdığımızda, Haar cascade classifier'lar yüklenir. Kameradan bir frame okunur ve renkleri gri tonlara çevrilir. Frame'de yer alan yüzler tespit edilir ve çerçeveye alınarak işaretlenir. Esc tuşuna basıldığında program sona erer.
+
+![python-kamera-yuz-55](/img/python-kamera-yuz-55.svg)
+

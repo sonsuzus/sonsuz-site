@@ -1,0 +1,109 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="camGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#7ec8e3"/>
+    </linearGradient>
+    <linearGradient id="procGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8e0d4"/>
+      <stop offset="100%" stop-color="#95d5b2"/>
+    </linearGradient>
+    <linearGradient id="detGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c4c4"/>
+      <stop offset="100%" stop-color="#e8a0a0"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4c4f0"/>
+      <stop offset="100%" stop-color="#b8a0e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Yüz Tanıma Programı Mimarisi</text>
+
+  <!-- Akış çizgileri -->
+  <!-- Kamera -> Gri Tonlama -->
+  <path d="M 120 100 L 220 100" stroke="#5a7d9a" stroke-width="2" fill="none"/>
+  <polygon points="220,94 232,100 220,106" fill="#5a7d9a"/>
+
+  <!-- Gri Tonlama -> Yüz Tespiti -->
+  <path d="M 280 100 L 380 100" stroke="#5a7d9a" stroke-width="2" fill="none"/>
+  <polygon points="380,94 392,100 380,106" fill="#5a7d9a"/>
+
+  <!-- Yüz Tespiti -> İşaretleme -->
+  <path d="M 440 100 L 540 100" stroke="#5a7d9a" stroke-width="2" fill="none"/>
+  <polygon points="540,94 552,100 540,106" fill="#5a7d9a"/>
+
+  <!-- Alt akış: Kütüphaneler -->
+  <path d="M 120 180 L 220 180" stroke="#8a9db0" stroke-width="1.5" stroke-dasharray="6,4" fill="none"/>
+  <polygon points="220,174 230,180 220,186" fill="#8a9db0"/>
+
+  <path d="M 280 180 L 380 180" stroke="#8a9db0" stroke-width="1.5" stroke-dasharray="6,4" fill="none"/>
+  <polygon points="380,174 390,180 380,186" fill="#8a9db0"/>
+
+  <path d="M 440 180 L 540 180" stroke="#8a9db0" stroke-width="1.5" stroke-dasharray="6,4" fill="none"/>
+  <polygon points="540,174 550,180 540,186" fill="#8a9db0"/>
+
+  <!-- Dikey bağlantılar -->
+  <path d="M 170 120 L 170 160" stroke="#8a9db0" stroke-width="1.5" stroke-dasharray="4,4" fill="none"/>
+  <path d="M 330 120 L 330 160" stroke="#8a9db0" stroke-width="1.5" stroke-dasharray="4,4" fill="none"/>
+  <path d="M 490 120 L 490 160" stroke="#8a9db0" stroke-width="1.5" stroke-dasharray="4,4" fill="none"/>
+
+  <!-- Kamera Kutusu -->
+  <rect x="30" y="70" width="90" height="60" rx="10" fill="url(#camGrad)" filter="url(#shadow)"/>
+  <text x="75" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a5276">Kamera</text>
+  <text x="75" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1a5276">VideoCapture</text>
+
+  <!-- Gri Tonlama Kutusu -->
+  <rect x="230" y="70" width="100" height="60" rx="10" fill="url(#procGrad)" filter="url(#shadow)"/>
+  <text x="280" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e6b4a">Gri Tonlama</text>
+  <text x="280" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1e6b4a">cvtColor</text>
+  <text x="280" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#1e6b4a">BGR2GRAY</text>
+
+  <!-- Yüz Tespiti Kutusu -->
+  <rect x="390" y="70" width="100" height="60" rx="10" fill="url(#detGrad)" filter="url(#shadow)"/>
+  <text x="440" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7b241c">Yüz Tespiti</text>
+  <text x="440" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7b241c">detectMultiScale</text>
+  <text x="440" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7b241c">Haar Cascade</text>
+
+  <!-- İşaretleme Kutusu -->
+  <rect x="550" y="70" width="70" height="60" rx="10" fill="url(#outGrad)" filter="url(#shadow)"/>
+  <text x="585" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a235a">İşaretle</text>
+  <text x="585" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4a235a">rectangle</text>
+
+  <!-- Alt Kütüphane Kutuları -->
+  <rect x="30" y="160" width="140" height="40" rx="8" fill="#ffffff" stroke="#a8d8ea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="100" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">OpenCV</text>
+  <text x="100" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#5a7d9a">opencv-contrib</text>
+
+  <rect x="230" y="160" width="100" height="40" rx="8" fill="#ffffff" stroke="#95d5b2" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="280" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">NumPy</text>
+  <text x="280" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#5a7d9a">dizi işlemleri</text>
+
+  <rect x="390" y="160" width="100" height="40" rx="8" fill="#ffffff" stroke="#e8a0a0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="440" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Haar Cascade</text>
+  <text x="440" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#5a7d9a">yüz modeli</text>
+
+  <!-- Döngü oku -->
+  <path d="M 585 130 L 585 220 L 75 220 L 75 135" stroke="#7ec8e3" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
+  <polygon points="69,135 75,122 81,135" fill="#7ec8e3"/>
+  <text x="330" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#5a7d9a" font-style="italic">sonsuz döngü - her kare işlenir</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7f8c8d">Kamera görüntüsü alınır, griye çevrilir, yüzler tespit edilir ve işaretlenir</text>
+
+  <!-- Küçük dekoratif öğeler -->
+  <circle cx="55" cy="55" r="4" fill="#a8d8ea" opacity="0.6"/>
+  <circle cx="585" cy="55" r="4" fill="#d4c4f0" opacity="0.6"/>
+  <circle cx="320" cy="260" r="3" fill="#95d5b2" opacity="0.5"/>
+</svg>

@@ -9,6 +9,7 @@ tags:
   - pandas
   - veri temizleme
 toc: true
+image: /img/pandas-ile-veri-30.png
 ---
 
 Gerçek hayattaki veri setleri nadiren analiz edilmeye hazır gelir: bazı hücreler boş, bazı ölçümler fizik kurallarına meydan okuyacak kadar uç, bazı satırlar ise aynı bilgiyi tekrar tekrar taşır. Pandas ile veri temizleme; veriyi körü körüne silmek değil, veri kalitesini ölçüp iş problemine uygun dönüşümler uygulamaktır. Amaç, modelin ve raporların sinyal yerine gürültü öğrenmesini engellemektir.
@@ -42,6 +43,9 @@ Eksik değerler her zaman aynı anlama gelmez. Ölçüm yapılamamış olabilir,
 | Ortalama/medyan | Sayısal dağılım makulse | Varyansı yapay biçimde azaltmak |
 | Mod | Kategorik sütunlarda | Baskın sınıf yanlılığı |
 | Grup bazlı doldurma | Bölge, ürün gibi bağlam varsa | Yanlış gruplama |
+
+![pandas-ile-veri-30](/img/pandas-ile-veri-30.svg)
+
 
 ```python
 # Kritik alanları boş olan kayıtları çıkar

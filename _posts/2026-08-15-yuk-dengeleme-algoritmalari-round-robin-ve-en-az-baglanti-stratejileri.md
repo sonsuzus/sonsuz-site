@@ -9,6 +9,7 @@ tags:
   - round-robin
   - sunucu mimarisi
 toc: true
+image: /img/yuk-dengeleme-algoritmalari-97.png
 ---
 
 Bir uygulama tek bir sunucuda kusursuz çalışabilir; ancak kullanıcı sayısı arttığında aynı sunucu, yoğun saatlerde dar boğaza dönüşebilir. Yük dengeleme (load balancing), gelen istekleri birden fazla sunucuya akıllıca dağıtarak performansı, erişilebilirliği ve hata toleransını yükselten mimari yaklaşımdır. Buradaki kritik soru şudur: Yeni gelen isteği hangi sunucu karşılamalıdır?
@@ -50,6 +51,9 @@ Bu örnekte `current` indeksi her istekte ilerler; mod alma işlemi listenin son
 | En iyi kullanım | Benzer süreli, stateless istekler | Uzun ve değişken süreli bağlantılar |
 | Uygulama maliyeti | Çok düşük | Orta düzey |
 | Risk | Ağır istekler eşitsizlik yaratabilir | Bağlantı sayısı gerçek CPU yükünü yansıtmayabilir |
+
+![yuk-dengeleme-algoritmalari-97](/img/yuk-dengeleme-algoritmalari-97.svg)
+
 
 Örneğin A sunucusunda 2, B'de 7, C'de 4 aktif bağlantı varsa yeni istek A'ya gider. Fakat iki bağlantı sayısı az olsa bile A'nın CPU'su yoğun bir veri işleme görevi yüzünden %95 kullanımdaysa, yalnızca bağlantı sayısına bakmak yanıltıcı olabilir.
 

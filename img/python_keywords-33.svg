@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="100%" stop-color="#357abd"/>
+    </linearGradient>
+    <linearGradient id="cat1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7eb8da"/>
+      <stop offset="100%" stop-color="#5a9ec7"/>
+    </linearGradient>
+    <linearGradient id="cat2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0a870"/>
+      <stop offset="100%" stop-color="#e08d4a"/>
+    </linearGradient>
+    <linearGradient id="cat3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9bc77e"/>
+      <stop offset="100%" stop-color="#7ab55a"/>
+    </linearGradient>
+    <linearGradient id="cat4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c79ad6"/>
+      <stop offset="100%" stop-color="#b078c2"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez düğüm -->
+  <circle cx="320" cy="160" r="52" fill="url(#centerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="153" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold">Python</text>
+  <text x="320" y="170" text-anchor="middle" fill="#e0e8ff" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">Anahtar Kelimeler</text>
+
+  <!-- Kategori 1: Kontrol Akışı -->
+  <rect x="30" y="30" width="130" height="38" rx="10" fill="url(#cat1)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="95" y="53" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Kontrol Akışı</text>
+
+  <rect x="30" y="78" width="130" height="28" rx="8" fill="#e8f0f8" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="95" y="96" text-anchor="middle" fill="#2c5f8a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">if, elif, else</text>
+
+  <rect x="30" y="114" width="130" height="28" rx="8" fill="#e8f0f8" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="95" y="132" text-anchor="middle" fill="#2c5f8a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">for, while</text>
+
+  <rect x="30" y="150" width="130" height="28" rx="8" fill="#e8f0f8" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="95" y="168" text-anchor="middle" fill="#2c5f8a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">break, continue</text>
+
+  <!-- Kategori 2: Fonksiyon ve Sınıf -->
+  <rect x="480" y="30" width="130" height="38" rx="10" fill="url(#cat2)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="545" y="53" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Tanımlama</text>
+
+  <rect x="480" y="78" width="130" height="28" rx="8" fill="#fdf0e6" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="545" y="96" text-anchor="middle" fill="#8a4a1a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">def, class</text>
+
+  <rect x="480" y="114" width="130" height="28" rx="8" fill="#fdf0e6" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="545" y="132" text-anchor="middle" fill="#8a4a1a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">lambda, global</text>
+
+  <rect x="480" y="150" width="130" height="28" rx="8" fill="#fdf0e6" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="545" y="168" text-anchor="middle" fill="#8a4a1a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">return, yield</text>
+
+  <!-- Kategori 3: Veri ve Mantık -->
+  <rect x="30" y="220" width="130" height="38" rx="10" fill="url(#cat3)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="95" y="243" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Veri ve Mantık</text>
+
+  <rect x="30" y="268" width="130" height="28" rx="8" fill="#eaf5e4" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="95" y="286" text-anchor="middle" fill="#3a6a2a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">True, False, None</text>
+
+  <rect x="170" y="268" width="130" height="28" rx="8" fill="#eaf5e4" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="235" y="286" text-anchor="middle" fill="#3a6a2a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">and, or, not</text>
+
+  <rect x="310" y="268" width="130" height="28" rx="8" fill="#eaf5e4" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="375" y="286" text-anchor="middle" fill="#3a6a2a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">is, in</text>
+
+  <!-- Kategori 4: Hata ve Modül -->
+  <rect x="480" y="220" width="130" height="38" rx="10" fill="url(#cat4)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="545" y="243" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold">Hata ve Modül</text>
+
+  <rect x="480" y="268" width="130" height="28" rx="8" fill="#f2e8f5" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="545" y="286" text-anchor="middle" fill="#6a3a7a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">try, except, finally</text>
+
+  <rect x="310" y="220" width="130" height="28" rx="8" fill="#f2e8f5" filter="url(#shadowLight)" opacity="0.85"/>
+  <text x="375" y="238" text-anchor="middle" fill="#6a3a7a" font-family="Segoe UI, Tahoma, sans-serif" font-size="11">import, from, as</text>
+
+  <!-- Bağlantı çizgileri -->
+  <path d="M 268 160 L 165 75" stroke="#5a9ec7" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="165,75 175,78 168,84" fill="#5a9ec7" opacity="0.6"/>
+
+  <path d="M 372 160 L 475 75" stroke="#e08d4a" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="475,75 465,78 472,84" fill="#e08d4a" opacity="0.6"/>
+
+  <path d="M 268 160 L 165 245" stroke="#7ab55a" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="165,245 175,242 168,236" fill="#7ab55a" opacity="0.6"/>
+
+  <path d="M 372 160 L 475 245" stroke="#b078c2" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="475,245 465,242 472,236" fill="#b078c2" opacity="0.6"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" fill="#8899aa" font-family="Segoe UI, Tahoma, sans-serif" font-size="10">Değişken ve tanımlayıcı adı olarak kullanılamaz</text>
+</svg>

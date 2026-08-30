@@ -12,7 +12,11 @@ tags:
 redirect_from:
   - /posts/python_loops/
 toc: true
+image: /img/python_loops-21.png
 ---
+
+![python_loops-21](/img/python_loops-21.svg)
+
 
 Python'da, tek bir işlem satırını veya kod bloğunu bir defadan fazla çalıştırmak için [tekrar](https://program.sonsuz.us/search.html?q=tekrar) yazmak yerine, [döngü](https://program.sonsuz.us/search.html?q=d%C3%B6ng%C3%BC) kavramını kullanabiliriz. Bir veya birden fazla işlem satırını, bir koşula bağlı olarak, belirli sayıda veya bir koşul sağlandığı sürece tekrarlayarak çalıştıran kalıplara döngü adı verilir. Döngüleri kullanarak liste, tuple, küme, sözlük veya bir karakter dizisinin elemanlarına birer birer erişim sağlayabiliriz.
 

@@ -8,7 +8,11 @@ tags:
   - makine öğrenmesi
   - model değerlendirme
   - python
+image: /img/model-degerlendirme-metrikleri-15.png
 ---
+
+![model-degerlendirme-metrikleri-15](/img/model-degerlendirme-metrikleri-15.svg)
+
 
 Bir sınıflandırma modelinin “%95 başarılı” olduğunu duymak etkileyicidir; fakat bu cümle tek başına çoğu zaman eksiktir. Örneğin kredi kartı sahtekârlığını yakalayan bir model, işlemlerin %99’u normal olduğu için her şeye “normal” diyerek de yüksek doğruluğa ulaşabilir. Bu nedenle doğruluk, kesinlik, duyarlılık ve F1 skoru; modelin farklı davranışlarını ayrı ayrı görünür kılan temel metriklerdir.
 

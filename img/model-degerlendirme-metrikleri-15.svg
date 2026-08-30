@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dfeeff"/>
+      <stop offset="100%" stop-color="#d9f3e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#5d7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#60758b" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="40" r="54" fill="#d9eeff" opacity="0.38"/>
+  <circle cx="588" cy="278" r="72" fill="#dcf2dd" opacity="0.42"/>
+  <path d="M26 270 C126 230 144 307 238 274 S416 220 612 259" fill="none" stroke="#c8e2dc" stroke-width="2" opacity="0.55"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="28" y="111" width="125" height="94" rx="18" fill="#ffffff"/>
+    <rect x="28" y="111" width="125" height="27" rx="18" fill="#eadfff"/>
+    <rect x="28" y="127" width="125" height="11" fill="#eadfff"/>
+    <text x="90.5" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#50446d">Gerçek Etiket</text>
+    <rect x="43" y="150" width="42" height="39" rx="8" fill="#dff3e8"/>
+    <rect x="96" y="150" width="42" height="39" rx="8" fill="#f1e9fa"/>
+    <text x="64" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356050">Pozitif</text>
+    <text x="117" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685374">Negatif</text>
+  </g>
+
+  <path d="M161 158 L199 158" fill="none" stroke="#7b92aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="199,158 190,153 190,163" fill="#7b92aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="207" y="67" width="222" height="183" rx="22" fill="url(#core)"/>
+    <text x="318" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35556a">Karışıklık Matrisi</text>
+    <text x="344" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7384">Tahmin</text>
+    <text x="278" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7384">Pozitif</text>
+    <text x="364" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7384">Negatif</text>
+    <text x="222" y="181" text-anchor="middle" transform="rotate(-90 222 181)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7384">Gerçek</text>
+
+    <rect x="244" y="145" width="77" height="42" rx="10" fill="#bfead3"/>
+    <rect x="329" y="145" width="77" height="42" rx="10" fill="#ffe1d6"/>
+    <rect x="244" y="195" width="77" height="42" rx="10" fill="#ffe6b9"/>
+    <rect x="329" y="195" width="77" height="42" rx="10" fill="#cfe5fb"/>
+
+    <text x="282.5" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#256044">TP</text>
+    <text x="367.5" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a4d3d">FN</text>
+    <text x="282.5" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#95671f">FP</text>
+    <text x="367.5" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d87">TN</text>
+  </g>
+
+  <path d="M437 130 C450 130 451 75 468 75" fill="none" stroke="#6f8aa0" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="468,75 459,70 459,80" fill="#6f8aa0"/>
+  <path d="M437 158 L468 158" fill="none" stroke="#6f8aa0" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="468,158 459,153 459,163" fill="#6f8aa0"/>
+  <path d="M437 190 L468 190" fill="none" stroke="#6f8aa0" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="468,190 459,185 459,195" fill="#6f8aa0"/>
+  <path d="M437 215 C450 215 452 260 468 260" fill="none" stroke="#6f8aa0" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="468,260 459,255 459,265" fill="#6f8aa0"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="476" y="45" width="136" height="60" rx="16" fill="#ffffff"/>
+    <circle cx="495" cy="75" r="12" fill="#cfe5fb"/>
+    <path d="M490 76 L494 80 L501 70" fill="none" stroke="#36709b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="551" y="71" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38586d">Doğruluk</text>
+    <text x="551" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698093">Genel başarı</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="476" y="128" width="136" height="60" rx="16" fill="#ffffff"/>
+    <circle cx="495" cy="158" r="12" fill="#ffe6b9"/>
+    <path d="M490 161 L495 154 L501 161" fill="none" stroke="#9c6a1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="553" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#755321">Kesinlik</text>
+    <text x="553" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8e7957">Yanlış alarm</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="476" y="202" width="136" height="60" rx="16" fill="#ffffff"/>
+    <circle cx="495" cy="232" r="12" fill="#ffe1d6"/>
+    <path d="M489 232 L493 236 L501 228" fill="none" stroke="#a45746" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="553" y="228" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#77453d">Duyarlılık</text>
+    <text x="553" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#957167">Kaçırılan vaka</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="247" y="271" width="142" height="34" rx="14" fill="#ffffff"/>
+    <circle cx="267" cy="288" r="9" fill="#d9c9f2"/>
+    <path d="M263 288 L266 291 L272 285" fill="none" stroke="#665283" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="324" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5a4871">F1 · Denge</text>
+  </g>
+</svg>

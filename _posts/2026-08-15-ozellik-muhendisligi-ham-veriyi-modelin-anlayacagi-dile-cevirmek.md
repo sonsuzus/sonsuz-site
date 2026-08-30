@@ -9,6 +9,7 @@ tags:
   - özellik mühendisliği
   - veri bilimi
 toc: true
+image: /img/ozellik-muhendisligi-ham-88.png
 ---
 
 Bir makine öğrenmesi modeli, eline verilen sütunların arkasındaki gerçek dünyayı kendiliğinden anlayamaz. Bir müşterinin doğum tarihinden yaşını, işlem zamanından alışveriş alışkanlığını veya metindeki kelimelerden duyguyu çıkarmak çoğu zaman bizim görevimizdir. Özellik mühendisliği, ham veriyi modelin daha kolay öğrenebileceği anlamlı değişkenlere dönüştürme sanatıdır. Bazen doğru tasarlanmış tek bir özellik, daha karmaşık bir model seçmekten çok daha büyük fark yaratır.
@@ -33,6 +34,9 @@ Burada model, özellikler ile hedef arasındaki ilişkiyi ağırlıklar üzerind
 | `islem_tarihi` | `hafta_sonu_mu` | Zaman bazlı davranış farkı |
 | `gelir`, `borc` | `borc_gelir_orani` | Finansal risk seviyesi |
 | Ürün açıklaması | Kelime sayısı, TF-IDF | Metinsel içerik sinyali |
+
+![ozellik-muhendisligi-ham-88](/img/ozellik-muhendisligi-ham-88.svg)
+
 
 ## Yaygın dönüşüm teknikleri
 

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f9ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f3f8ef;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="35" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Python Karakter Dizileri</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="55" width="150" height="42" rx="10" fill="#e8f4f8" stroke="#5dade2" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a5276">Karakter Dizisi</text>
+
+  <!-- Sol üst: Tanımlama -->
+  <rect x="30" y="120" width="150" height="55" rx="10" fill="#fef9e7" stroke="#f4d03f" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="105" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7d6608">Tanımlama</text>
+  <text x="105" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#9a7d0a">Tek veya çift tırnak</text>
+
+  <!-- Sağ üst: Değişken -->
+  <rect x="460" y="120" width="150" height="55" rx="10" fill="#eafaf1" stroke="#52be80" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="535" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e8449">Değişkene Atama</text>
+  <text x="535" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#239b56">str1 = 'Python'</text>
+
+  <!-- Sol alt: Çok satırlı -->
+  <rect x="30" y="220" width="150" height="55" rx="10" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="105" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#922b21">Çok Satırlı Dize</text>
+  <text x="105" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#c0392b">Üç tırnak (""" """)</text>
+
+  <!-- Sağ alt: Ekrana Yazma -->
+  <rect x="460" y="220" width="150" height="55" rx="10" fill="#ebf5fb" stroke="#3498db" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="535" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#21618c">Ekrana Yazdırma</text>
+  <text x="535" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2980b9">print(str1)</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Merkezden sol üste -->
+  <path d="M 245 76 L 185 130" stroke="#5dade2" stroke-width="2" fill="none"/>
+  <polygon points="185 130, 193 122, 188 134" fill="#5dade2"/>
+
+  <!-- Merkezden sağ üste -->
+  <path d="M 395 76 L 455 130" stroke="#52be80" stroke-width="2" fill="none"/>
+  <polygon points="455 130, 447 122, 452 134" fill="#52be80"/>
+
+  <!-- Merkezden sol alta -->
+  <path d="M 270 97 L 120 215" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <polygon points="120 215, 128 207, 123 219" fill="#e74c3c"/>
+
+  <!-- Merkezden sağ alta -->
+  <path d="M 370 97 L 520 215" stroke="#3498db" stroke-width="2" fill="none"/>
+  <polygon points="520 215, 512 207, 517 219" fill="#3498db"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">Python'da karakter dizileri esnek ve kullanışlıdır</text>
+</svg>

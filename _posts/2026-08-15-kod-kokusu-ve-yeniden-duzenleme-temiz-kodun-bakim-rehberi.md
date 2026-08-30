@@ -9,6 +9,7 @@ tags:
   - refactoring
   - temiz kod
 toc: true
+image: /img/kod-kokusu-ve-24.png
 ---
 
 Bir yazılım ilk gününde pırıl pırıl görünebilir; asıl sınavı ise üçüncü özellik isteği, acil hata düzeltmesi ve ekip değişikliği geldiğinde verir. Kod kokuları, programın mutlaka hatalı olduğunu değil, tasarımın gelecekte pahalılaşabileceğini söyleyen uyarı işaretleridir. Yeniden düzenleme (refactoring), dışarıdan gözlemlenen davranışı değiştirmeden bu iç yapıyı iyileştirme disiplinidir. Amaç daha kısa kod yazmak değil; değişime daha güvenle cevap verebilen kod üretmektir.
@@ -29,6 +30,9 @@ Burada $C$ bağımlılık karmaşıklığını, $B$ değişiklik kapsamını, $T
 | Büyük sınıf | Tek sınıf birçok iş sorumluluğu taşır | Yüksek bağlılık | Extract Class |
 | Uzun parametre listesi | Çağrıda 5-6 değer taşınır | Yanlış sıra, düşük okunabilirlik | Parameter Object |
 | Özellik kıskançlığı | Metot sürekli başka nesnenin verisini kullanır | Yanlış sorumluluk dağılımı | Move Method |
+
+![kod-kokusu-ve-24](/img/kod-kokusu-ve-24.svg)
+
 
 ## Kokuyu teşhis etmek: “çalışıyor” yeterli değildir
 

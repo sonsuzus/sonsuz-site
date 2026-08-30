@@ -13,7 +13,11 @@ tags:
 redirect_from:
   - /posts/python_paket/
 toc: true
+image: /img/python_paket-98.png
 ---
+
+![python_paket-98](/img/python_paket-98.svg)
+
 
 Bir sanal ortamı oluşturup aktif hale getirdikten sonra, Python ortamında çalışan paket programları yükleyebiliriz. Python ortamında yüklenebilecek [paket programların listesi](https://pypi.org/) (Python Package Index) adresinde yer almaktadır. Python kurulumunu yaptığımızda bazı paket programlar otomatik olarak yüklenir. Bunlardan birisi de paket program yüklememizi sağlayan pip kütüphanesidir. Aşağıdaki komutları sırasıyla çalıştırdığımızda, env01 sanal ortamındaki script dizinine geçip, pip paketine ait komut ve seçenekleri görebiliriz:
 
