@@ -12,7 +12,11 @@ tags:
   - proje
 redirect_from:
   - /posts/python-yuz-algilama-fotograf/
+image: /img/python-yuz-algilama-79.png
 ---
+
+![python-yuz-algilama-79](/img/python-yuz-algilama-79.svg)
+
 
 Bir fotoğraftaki yüzleri ve gözleri tespit edip işaretleyen bir program oluşturmaya çalışalım. Program için aşağıda bilgileri ve sanal ortamda kurulum komutları verilen kütüphaneleri kullanacağız:
 

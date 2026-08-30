@@ -13,6 +13,7 @@ tags:
   - video
 redirect_from:
   - /posts/python-yuz-algilama-ve-tanima-programi/
+image: /img/python-yuz-algilama-74.png
 ---
 
 Bir fotoğraf, video veya bilgisayara bağlı bir kameradan alınan görüntü üzerindeki yüzleri algılayan ve bilgisayarımızda kayıtlı kişilere ait fotoğrafları kullanarak, algıladığı yüzlerin bu veritabanında olanları tanıyarak, altına kişi adlarını yazan bir program oluşturmaya çalışalım.
@@ -156,3 +157,6 @@ cv2.destroyAllWindows()
 ```
 
 Programı çalıştırdığımızda, Haar cascade classifier'lar yüklenir. Fotoğraf ile işlem yaparsa tek bir fotoğrafı okur. Video veya kamera ile işlem yaparsa, görüntü yakalama işlemini başlatır. get\_face\_data() fonksiyonu ile veritabanından kişilere ait fotoğraf bilgilerini alır. recognizer.train() fonksiyonu ile verilere eğitme işlemi uygular. Video veya kamera işlemi ise, tek bir frame okunur. Elimizdeki frame değişkeninin renkleri gri tonlara çevrilir. Frame'de yer alan yüzler tespit edilir ve çerçeveye alınarak işaretlenir. Eğer veritabanında yer alıyorsa kişinin adı çerçevenin altına ve güvenilirlik derecesi ise çerçevenin üstüne yazılır. Fotoğraf ile işlem yaparsa, fotoğrafın işlem görmüş hali ekranda gösterilir ve herhangi bir tuşa basıldığında program sona erer. Video veya kamera ile işlem yapılıyorsa, Esc tuşuna basıldığında program sona erer.
+
+![python-yuz-algilama-74](/img/python-yuz-algilama-74.svg)
+

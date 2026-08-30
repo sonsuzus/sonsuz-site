@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7f0"/>
+    </linearGradient>
+    <linearGradient id="py" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B8BBE"/>
+      <stop offset="100%" stop-color="#306998"/>
+    </linearGradient>
+    <linearGradient id="excel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#217346"/>
+      <stop offset="100%" stop-color="#1A5C2E"/>
+    </linearGradient>
+    <linearGradient id="write" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB74D"/>
+      <stop offset="100%" stop-color="#FF9800"/>
+    </linearGradient>
+    <linearGradient id="read" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64B5F6"/>
+      <stop offset="100%" stop-color="#2196F3"/>
+    </linearGradient>
+    <linearGradient id="save" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#4CAF50"/>
+    </linearGradient>
+    <linearGradient id="create" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BA68C8"/>
+      <stop offset="100%" stop-color="#9C27B0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python openpyxl ile Excel İşlemleri</text>
+
+  <!-- Python Kutusu -->
+  <rect x="30" y="55" width="120" height="50" rx="10" fill="url(#py)" filter="url(#shadow)"/>
+  <text x="90" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Python</text>
+  <text x="90" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e0e0e0">openpyxl</text>
+
+  <!-- Ok: Python -> Excel Dosyası -->
+  <path d="M150,80 L195,80" stroke="#555" stroke-width="2" fill="none"/>
+  <polygon points="198,80 188,74 188,86" fill="#555"/>
+
+  <!-- Excel Dosyası Kutusu -->
+  <rect x="200" y="55" width="130" height="50" rx="10" fill="url(#excel)" filter="url(#shadow)"/>
+  <text x="265" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Excel Dosyası</text>
+  <text x="265" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#d4edda">.xlsx / .xlsm</text>
+
+  <!-- Ok: Excel -> İşlemler -->
+  <path d="M330,80 L375,80" stroke="#555" stroke-width="2" fill="none"/>
+  <polygon points="378,80 368,74 368,86" fill="#555"/>
+
+  <!-- İşlemler Merkez -->
+  <rect x="380" y="45" width="120" height="70" rx="12" fill="#ffffff" stroke="#bbb" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="440" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">İşlemler</text>
+  <text x="440" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#666">Oluştur · Oku</text>
+  <text x="440" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#666">Yaz · Kaydet</text>
+
+  <!-- Alt işlemler -->
+  <!-- Oluştur -->
+  <rect x="540" y="20" width="80" height="40" rx="8" fill="url(#create)" filter="url(#shadowLight)"/>
+  <text x="580" y="44" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff" font-weight="bold">Oluştur</text>
+  <path d="M500,55 L537,42" stroke="#555" stroke-width="1.5" fill="none"/>
+  <polygon points="540,41 530,37 531,46" fill="#555"/>
+
+  <!-- Oku -->
+  <rect x="540" y="75" width="80" height="40" rx="8" fill="url(#read)" filter="url(#shadowLight)"/>
+  <text x="580" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff" font-weight="bold">Veri Oku</text>
+  <path d="M500,80 L537,92" stroke="#555" stroke-width="1.5" fill="none"/>
+  <polygon points="540,93 530,89 532,98" fill="#555"/>
+
+  <!-- Yaz -->
+  <rect x="540" y="130" width="80" height="40" rx="8" fill="url(#write)" filter="url(#shadowLight)"/>
+  <text x="580" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff" font-weight="bold">Veri Yaz</text>
+  <path d="M500,105 L537,147" stroke="#555" stroke-width="1.5" fill="none"/>
+  <polygon points="540,148 530,144 533,153" fill="#555"/>
+
+  <!-- Kaydet -->
+  <rect x="540" y="185" width="80" height="40" rx="8" fill="url(#save)" filter="url(#shadowLight)"/>
+  <text x="580" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff" font-weight="bold">Kaydet</text>
+  <path d="M500,130 L537,202" stroke="#555" stroke-width="1.5" fill="none"/>
+  <polygon points="540,203 530,199 534,208" fill="#555"/>
+
+  <!-- Sayfa Yönetimi -->
+  <rect x="30" y="140" width="160" height="55" rx="10" fill="#ffffff" stroke="#ccc" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="110" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Sayfa Yönetimi</text>
+  <text x="110" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">aktif · create_sheet</text>
+  <text x="110" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">sheetnames · title</text>
+
+  <!-- Ok: Sayfa Yönetimi -> İşlemler -->
+  <path d="M190,167 L240,167 Q260,167 260,150 L377,120" stroke="#777" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="380,118 370,115 371,124" fill="#777"/>
+
+  <!-- Liste Verisi -->
+  <rect x="30" y="225" width="160" height="55" rx="10" fill="#ffffff" stroke="#ccc" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="110" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Python Listesi</text>
+  <text x="110" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">for döngüsü ile</text>
+  <text x="110" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">satır ve sütun yazma</text>
+
+  <!-- Ok: Liste -> İşlemler -->
+  <path d="M190,252 L260,252 Q280,252 280,230 L377,145" stroke="#777" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="380,143 370,140 371,149" fill="#777"/>
+
+  <!-- Kurulum -->
+  <rect x="200" y="225" width="160" height="55" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="280" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Kurulum</text>
+  <text x="280" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555" font-family="Courier New, monospace">pip install openpyxl</text>
+  <text x="280" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#888">et-xmlfile otomatik</text>
+
+  <!-- Ok: Kurulum -> İşlemler -->
+  <path d="M360,252 L380,252 Q400,252 400,230 L420,118" stroke="#777" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="421,115 412,113 414,122" fill="#777"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="9" fill="#999">openpyxl · Excel 2010 · xlsx/xlsm/xltx/xltm</text>
+</svg>

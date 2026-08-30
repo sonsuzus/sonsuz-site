@@ -8,9 +8,13 @@ tags:
   - sürekli entegrasyon
   - test otomasyonu
   - devops
+image: /img/ci-sunucularinda-test-80.png
 ---
 
 Bir yazılım projesinde kaliteyi yalnızca sürüm yayınlanırken kontrol etmek, alarmı ev yanmaya başladıktan sonra kurmaya benzer. Sürekli Entegrasyon (CI) sunucuları bu yaklaşımı tersine çevirir: Geliştirici her kod değişikliğini merkezi depoya gönderdiğinde test paketi otomatik olarak çalışır, sorunları erken yakalar ve ekibe hızlı geri bildirim verir. Böylece kalite, sonradan eklenen pahalı bir denetim değil, geliştirme döngüsünün doğal bir parçası olur.
+
+
+![ci-sunucularinda-test-80](/img/ci-sunucularinda-test-80.svg)
 
 ``
 

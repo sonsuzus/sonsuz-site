@@ -11,6 +11,7 @@ tags:
   - video
 redirect_from:
   - /posts/python-video-yuz-algilama-program/
+image: /img/python-video-yuz-95.png
 ---
 
 
@@ -70,3 +71,6 @@ cv2.destroyAllWindows()
 ```
 
 Programı çalıştırdığımızda, Haar cascade classifier'lar yüklenir. Videodan bir frame okunur ve renkleri gri tonlara çevrilir. Frame'de yer alan yüzler tespit edilir ve çerçeveye alınarak işaretlenir. Esc tuşuna basıldığında program sona erer.
+
+![python-video-yuz-95](/img/python-video-yuz-95.svg)
+

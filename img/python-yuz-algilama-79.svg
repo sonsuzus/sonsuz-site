@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f0f7ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python Yüz Algılama Mimarisi</text>
+
+  <!-- Giriş: Fotoğraf -->
+  <rect x="30" y="65" width="110" height="55" rx="10" fill="#e8f4fd" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="85" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Fotoğraf</text>
+  <text x="85" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5b7a9d">foto.jpg</text>
+
+  <!-- Ok: Fotoğraf -> Gri Tonlama -->
+  <path d="M 140 92 L 175 92" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="175,87 185,92 175,97" fill="#7f8c8d"/>
+
+  <!-- Gri Tonlama -->
+  <rect x="185" y="65" width="120" height="55" rx="10" fill="#f0f0f0" stroke="#95a5a6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="245" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Gri Tonlama</text>
+  <text x="245" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7f8c8d">cvtColor</text>
+
+  <!-- Ok: Gri Tonlama -> Yüz Algılama -->
+  <path d="M 305 92 L 345 92" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="345,87 355,92 345,97" fill="#7f8c8d"/>
+
+  <!-- Yüz Algılama -->
+  <rect x="355" y="55" width="130" height="75" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="420" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Yüz Algılama</text>
+  <text x="420" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449">Haar Cascade</text>
+  <text x="420" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449">detectMultiScale</text>
+
+  <!-- Ok: Yüz Algılama -> Göz Algılama -->
+  <path d="M 485 92 L 520 92" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+  <polygon points="520,87 530,92 520,97" fill="#7f8c8d"/>
+
+  <!-- Göz Algılama -->
+  <rect x="530" y="55" width="90" height="75" rx="10" fill="#fdebd0" stroke="#e67e22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="575" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">Göz Algılama</text>
+  <text x="575" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a04000">Haar Cascade</text>
+  <text x="575" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#a04000">eye.xml</text>
+
+  <!-- Kütüphaneler bölümü -->
+  <rect x="30" y="155" width="590" height="140" rx="12" fill="#ffffff" stroke="#d5dbdb" stroke-width="1" filter="url(#shadowLight)" opacity="0.9"/>
+
+  <text x="50" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Kullanılan Kütüphaneler</text>
+
+  <!-- OpenCV kutusu -->
+  <rect x="50" y="195" width="160" height="75" rx="8" fill="#eaf2f8" stroke="#3498db" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="130" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">OpenCV</text>
+  <text x="130" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5b7a9d">opencv-python</text>
+  <text x="130" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5b7a9d">Görüş Algılama</text>
+
+  <!-- NumPy kutusu -->
+  <rect x="240" y="195" width="160" height="75" rx="8" fill="#eafaf1" stroke="#2ecc71" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="320" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">NumPy</text>
+  <text x="320" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449">numpy</text>
+  <text x="320" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1e8449">Dizi Hesaplama</text>
+
+  <!-- Çıktı kutusu -->
+  <rect x="430" y="195" width="170" height="75" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="515" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">İşaretlenmiş Görüntü</text>
+  <text x="515" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b7950b">Yüz ve Göz Kutuları</text>
+  <text x="515" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b7950b">rectangle ile çizim</text>
+
+  <!-- Bağlantı okları -->
+  <path d="M 130 155 L 130 195" stroke="#7f8c8d" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="125,195 130,203 135,195" fill="#7f8c8d"/>
+
+  <path d="M 320 155 L 320 195" stroke="#7f8c8d" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="315,195 320,203 325,195" fill="#7f8c8d"/>
+
+  <path d="M 515 130 L 515 195" stroke="#7f8c8d" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="510,195 515,203 520,195" fill="#7f8c8d"/>
+
+  <!-- Alt not -->
+  <text x="320" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#95a5a6">Kurulum: pip install opencv-contrib-python ve pip install numpy</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5d6a7"/>
+      <stop offset="100%" stop-color="#81c784"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#90caf9"/>
+      <stop offset="100%" stop-color="#64b5f6"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffcc80"/>
+      <stop offset="100%" stop-color="#ffb74d"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ce93d8"/>
+      <stop offset="100%" stop-color="#ba68c8"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef9a9a"/>
+      <stop offset="100%" stop-color="#e57373"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect x="0" y="0" width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#37474f">Python Lambda Fonksiyonu</text>
+
+  <!-- Normal Fonksiyon Kutusu -->
+  <rect x="30" y="55" width="160" height="70" rx="12" fill="url(#box1)" filter="url(#shadow)"/>
+  <text x="110" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">Normal Fonksiyon</text>
+  <text x="110" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b5e20">def square(num):</text>
+  <text x="110" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1b5e20">return num ** 2</text>
+
+  <!-- Lambda Tanımlama Kutusu -->
+  <rect x="240" y="55" width="160" height="70" rx="12" fill="url(#box2)" filter="url(#shadow)"/>
+  <text x="320" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#0d47a1">Lambda Tanımlama</text>
+  <text x="320" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#0d47a1">square = lambda num:</text>
+  <text x="320" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#0d47a1">num ** 2</text>
+
+  <!-- Çok Parametreli Lambda -->
+  <rect x="450" y="55" width="160" height="70" rx="12" fill="url(#box3)" filter="url(#shadow)"/>
+  <text x="530" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Çok Parametreli</text>
+  <text x="530" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e65100">a = lambda a, b, c:</text>
+  <text x="530" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e65100">a + b + c</text>
+
+  <!-- Ok: Normal -> Lambda -->
+  <path d="M 190 90 L 235 90" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="235,84 245,90 235,96" fill="#546e7a"/>
+
+  <!-- Ok: Lambda -> Çok Parametreli -->
+  <path d="M 400 90 L 445 90" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="445,84 455,90 445,96" fill="#546e7a"/>
+
+  <!-- Neden Kullanılır? Kutusu -->
+  <rect x="30" y="170" width="260" height="80" rx="12" fill="url(#box4)" filter="url(#shadow)"/>
+  <text x="160" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a148c">Neden Kullanılır?</text>
+  <text x="160" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a148c">Başka fonksiyon içinde</text>
+  <text x="160" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a148c">çalıştırılabilir fonksiyon</text>
+  <text x="160" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a148c">döndürür</text>
+
+  <!-- İç İçe Kullanım Kutusu -->
+  <rect x="340" y="170" width="270" height="80" rx="12" fill="url(#box5)" filter="url(#shadow)"/>
+  <text x="475" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#b71c1c">İç İçe Kullanım Örneği</text>
+  <text x="475" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b71c1c">def math(n):</text>
+  <text x="475" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b71c1c">return lambda a: a ** n</text>
+  <text x="475" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b71c1c">square = math(2)</text>
+
+  <!-- Ok: Lambda -> Neden -->
+  <path d="M 320 125 L 320 140 L 160 140 L 160 165" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="154,165 160,175 166,165" fill="#546e7a"/>
+
+  <!-- Ok: Neden -> İç İçe -->
+  <path d="M 290 210 L 335 210" stroke="#546e7a" stroke-width="2" fill="none"/>
+  <polygon points="335,204 345,210 335,216" fill="#546e7a"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909c">Map ve Filter ile birlikte kullanımı yaygındır</text>
+
+  <!-- Map ve Filter etiketleri -->
+  <rect x="180" y="270" width="80" height="25" rx="8" fill="#e3f2fd" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="220" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1565c0">Map</text>
+
+  <rect x="380" y="270" width="80" height="25" rx="8" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1.5"/>
+  <text x="420" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2e7d32">Filter</text>
+</svg>

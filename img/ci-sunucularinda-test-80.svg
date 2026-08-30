@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="ciGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#bcd8f4"/>
+    </linearGradient>
+    <linearGradient id="okGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f4dd"/>
+      <stop offset="100%" stop-color="#b9e7c3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66839a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66839a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="64" cy="42" r="90" fill="#dceeff" opacity="0.42"/>
+  <circle cx="591" cy="280" r="110" fill="#dff2d9" opacity="0.45"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526b7d">HER COMMIT İÇİN KALİTE NÖBETİ</text>
+
+  <!-- Sol: Geliştirici ve depo -->
+  <rect x="28" y="100" width="122" height="103" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="59" cy="132" r="15" fill="#f5cfc9"/>
+  <path d="M42 168 C43 149 75 149 77 168 Z" fill="#8db6d9"/>
+  <rect x="88" y="120" width="42" height="11" rx="5.5" fill="#dbeafd"/>
+  <rect x="88" y="140" width="31" height="8" rx="4" fill="#e9f1fa"/>
+  <text x="89" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486174">Commit</text>
+  <text x="47" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#486174">Geliştirici</text>
+
+  <path d="M154 151 H187" fill="none" stroke="#7695aa" stroke-width="2.5"/>
+  <polygon points="187,151 178,145 178,157" fill="#7695aa"/>
+
+  <!-- Merkez CI -->
+  <rect x="192" y="77" width="154" height="151" rx="23" fill="url(#ciGrad)" filter="url(#shadow)"/>
+  <rect x="205" y="90" width="128" height="29" rx="12" fill="#ffffff" opacity="0.72"/>
+  <text x="229" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355c78">CI SUNUCUSU</text>
+  <circle cx="269" cy="153" r="28" fill="#ffffff" opacity="0.88"/>
+  <path d="M257 153 L266 162 L282 143" fill="none" stroke="#4c9a6d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="216" y="194" width="106" height="18" rx="9" fill="#91b9dd"/>
+  <text x="229" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Temiz ortam</text>
+
+  <!-- CI -> aşamalar -->
+  <path d="M350 151 H376 V88 H394" fill="none" stroke="#7192a7" stroke-width="2.3" stroke-linejoin="round"/>
+  <polygon points="394,88 385,82 385,94" fill="#7192a7"/>
+  <path d="M350 151 H394" fill="none" stroke="#7192a7" stroke-width="2.3"/>
+  <polygon points="394,151 385,145 385,157" fill="#7192a7"/>
+  <path d="M350 151 H376 V214 H394" fill="none" stroke="#7192a7" stroke-width="2.3" stroke-linejoin="round"/>
+  <polygon points="394,214 385,208 385,220" fill="#7192a7"/>
+
+  <!-- Aşamalar -->
+  <rect x="399" y="57" width="119" height="61" rx="15" fill="#fff5d8" filter="url(#softShadow)"/>
+  <circle cx="422" cy="87" r="12" fill="#f4cd72"/>
+  <path d="M416 87 H428 M422 81 V93" stroke="#896722" stroke-width="2" stroke-linecap="round"/>
+  <text x="443" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6e5a2d">Hızlı Kontrol</text>
+  <text x="443" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#84713f">Lint ve analiz</text>
+
+  <rect x="399" y="120" width="119" height="62" rx="15" fill="#e9def9" filter="url(#softShadow)"/>
+  <circle cx="422" cy="151" r="12" fill="#b99bdb"/>
+  <path d="M416 151 L420 155 L429 145" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="443" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#625078">Testler</text>
+  <text x="443" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78688c">Birim ve entegrasyon</text>
+
+  <rect x="399" y="184" width="119" height="61" rx="15" fill="#dff2ed" filter="url(#softShadow)"/>
+  <circle cx="422" cy="214" r="12" fill="#78c4a8"/>
+  <path d="M416 219 H428 M418 209 H426" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="443" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416d62">Derleme</text>
+  <text x="443" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c8077">Dağıtılabilir çıktı</text>
+
+  <!-- Sonuç toplama -->
+  <path d="M522 88 H540 V151 H556" fill="none" stroke="#7192a7" stroke-width="2.3" stroke-linejoin="round"/>
+  <path d="M522 151 H556" fill="none" stroke="#7192a7" stroke-width="2.3"/>
+  <path d="M522 214 H540 V151" fill="none" stroke="#7192a7" stroke-width="2.3" stroke-linejoin="round"/>
+  <polygon points="556,151 547,145 547,157" fill="#7192a7"/>
+
+  <!-- Sağ kalite -->
+  <rect x="561" y="106" width="58" height="91" rx="20" fill="url(#okGrad)" filter="url(#shadow)"/>
+  <path d="M579 143 L587 151 L603 132" fill="none" stroke="#39825b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="570" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397052">Kalite</text>
+  <text x="568" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b8060">Yeşil</text>
+
+  <!-- Geri bildirim döngüsü -->
+  <path d="M587 204 C580 274 356 292 192 242 C145 228 118 220 91 212" fill="none" stroke="#87a4b6" stroke-width="2" stroke-dasharray="6 5"/>
+  <polygon points="91,212 101,208 98,219" fill="#87a4b6"/>
+  <text x="279" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#658093">Hızlı geri bildirim döngüsü</text>
+</svg>

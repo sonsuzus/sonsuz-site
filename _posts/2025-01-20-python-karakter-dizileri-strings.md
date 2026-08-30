@@ -14,7 +14,11 @@ tags:
 redirect_from:
   - /posts/python-karakter-dizileri-strings/
 toc: true
+image: /img/python-karakter-dizileri-69.png
 ---
+
+![python-karakter-dizileri-69](/img/python-karakter-dizileri-69.svg)
+
 
 **Pythonda Karakter Dizileri** yani [string](https://program.sonsuz.us/search.html?q=string) veri tipleri **tek [tırnak](https://program.sonsuz.us/search.html?q=t%C4%B1rnak) (' ')** ya da **çift tırnak (" ")** ile oluşturulur. 'Hello World' ile "Hello World" tanımlaması aynıdır. Ancak bazen karakter dizileri içerisinde tek tırnak karakterini karakter dizisinin bir elemanı gibi göstermek isteriz.
 

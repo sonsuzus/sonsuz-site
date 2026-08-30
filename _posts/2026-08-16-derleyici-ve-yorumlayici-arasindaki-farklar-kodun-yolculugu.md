@@ -10,6 +10,7 @@ tags:
   - programlama
   - makine dili
 toc: true
+image: /img/derleyici-ve-yorumlayici-81.png
 ---
 
 Bir program yazdığınızda bilgisayar aslında `if`, `while` ya da `print` kelimelerinin ne anlama geldiğini doğrudan bilmez. İşlemcinin anlayabildiği şey, makine komutları olarak adlandırılan ikili talimatlardır. Kaynak kod ile işlemci arasındaki tercümanlık görevini ise iki temel yaklaşım üstlenir: **derleme (compilation)** ve **yorumlama (interpretation)**. Bu fark yalnızca programın ne kadar hızlı açıldığını değil; hata ayıklama, dağıtım, taşınabilirlik ve güvenlik tercihlerini de etkiler.
@@ -38,6 +39,9 @@ Burada $T_{hazırlık}$ derleme veya ilk analiz maliyeti, $n$ programın kaç ke
 | İlk çalıştırma | Derleme bekletebilir | Genellikle hemen başlar |
 | Tekrarlı çalışma | Çoğunlukla hızlıdır | Yorumlama ek yükü olabilir |
 | Hata yakalama | Birçok hata derleme aşamasında | Bazı hatalar ilgili satıra gelince görünür |
+
+![derleyici-ve-yorumlayici-81](/img/derleyici-ve-yorumlayici-81.svg)
+
 
 ## Küçük bir örnek, büyük fark
 

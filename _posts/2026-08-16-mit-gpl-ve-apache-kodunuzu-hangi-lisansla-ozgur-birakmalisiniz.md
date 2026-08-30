@@ -11,6 +11,7 @@ tags:
   - gpl
   - apache
 toc: true
+image: /img/mit-gpl-ve-36.png
 ---
 
 Açık kaynak dünyasında kod yazmak işin yalnızca yarısıdır; diğer yarısı ise insanların o kodla neler yapabileceğini belirlemektir. Bir lisans, projenizin kullanım, değiştirilme ve dağıtılma kurallarını tanımlayan hukuki bir sözleşmedir. MIT, GPL ve Apache 2.0 sıkça aynı sepete atılsa da ticari kullanım, kaynak kodun paylaşımı ve patent hakları konusunda oldukça farklı karakterlere sahiptir.
@@ -67,3 +68,6 @@ npx license-checker --summary
 Bu komut, Node.js projenizdeki bağımlılıkların lisans özetini çıkarır; ancak hukuki değerlendirme yerine geçmez.
 
 Son karar projenizin hedefiyle ilgilidir: Maksimum yayılım için MIT, türetilmiş kodun da özgür kalması için GPL, kurumsal kullanım ve patent netliği için Apache 2.0 seçilebilir. Lisans seçimi bir dipnot değil, projenizin gelecekteki işbirliği modelidir.
+
+![mit-gpl-ve-36](/img/mit-gpl-ve-36.svg)
+

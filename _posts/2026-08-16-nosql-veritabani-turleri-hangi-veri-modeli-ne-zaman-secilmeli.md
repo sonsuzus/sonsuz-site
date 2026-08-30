@@ -10,7 +10,11 @@ tags:
   - doküman veritabanı
   - graf veritabanı
 toc: true
+image: /img/nosql-veritabani-turleri-14.png
 ---
+
+![nosql-veritabani-turleri-14](/img/nosql-veritabani-turleri-14.svg)
+
 
 NoSQL, tek bir veritabanı teknolojisini değil; ilişkisel tablolara sığmayan veri modelleri için geliştirilmiş geniş bir yaklaşım ailesini ifade eder. Esnek şema, yatay ölçekleme ve yüksek erişilebilirlik ihtiyacı arttıkça doküman, anahtar-değer, sütun tabanlı ve graf veritabanları farklı problemlerde öne çıkar. Doğru seçimi yapmak için önce verinin nasıl sorgulanacağını anlamak gerekir: Veriniz nesne mi, olay akışı mı, devasa kayıt koleksiyonu mu, yoksa ilişkiler ağı mı?
 ``

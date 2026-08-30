@@ -8,7 +8,11 @@ tags:
   - mikroservisler
   - design patterns
   - circuit breaker
+image: /img/circuit-breaker-deseni-24.png
 ---
+
+![circuit-breaker-deseni-24](/img/circuit-breaker-deseni-24.svg)
+
 
 Dağıtık sistemlerde en tehlikeli hata, tek bir servisin yavaşlamasının veya çökmesinin domino taşı gibi tüm uygulamayı devirmesidir. Circuit Breaker deseni, sorunlu bir bağımlılığa yapılan çağrıları geçici olarak keserek kaynak tüketimini sınırlar, hatayı izole eder ve sistemin geri kalanının nefes almasını sağlar.
 ``

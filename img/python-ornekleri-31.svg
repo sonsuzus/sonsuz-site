@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#d1ecf9"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8eaf6"/>
+      <stop offset="100%" stop-color="#c5cae9"/>
+    </linearGradient>
+    <linearGradient id="center" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f7fa"/>
+      <stop offset="100%" stop-color="#b2ebf2"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Python Basit Kod Örnekleri</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="125" width="150" height="50" rx="12" fill="url(#center)" filter="url(#shadow)" stroke="#4dd0e1" stroke-width="1.5"/>
+  <text x="320" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#006064">Python</text>
+  <text x="320" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#00838f">Temel Kavramlar</text>
+
+  <!-- Ok uçları için manuel üçgenler ve çizgiler -->
+  <!-- Sol üst: Merhaba Dünya -->
+  <line x1="245" y1="135" x2="120" y2="70" stroke="#90a4ae" stroke-width="1.5"/>
+  <polygon points="120,70 132,74 126,82" fill="#90a4ae"/>
+
+  <rect x="20" y="40" width="140" height="45" rx="10" fill="url(#box1)" filter="url(#shadow)" stroke="#81d4fa" stroke-width="1.5"/>
+  <text x="90" y="58" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1565c0">Örnek 1</text>
+  <text x="90" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1976d2">Merhaba Dünya</text>
+
+  <!-- Sol alt: İsim alma -->
+  <line x1="245" y1="155" x2="120" y2="230" stroke="#90a4ae" stroke-width="1.5"/>
+  <polygon points="120,230 132,226 126,218" fill="#90a4ae"/>
+
+  <rect x="20" y="215" width="140" height="45" rx="10" fill="url(#box2)" filter="url(#shadow)" stroke="#a5d6a7" stroke-width="1.5"/>
+  <text x="90" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">Örnek 2</text>
+  <text x="90" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#388e3c">İsim ile Karşılama</text>
+
+  <!-- Üst orta: Toplama -->
+  <line x1="320" y1="125" x2="320" y2="65" stroke="#90a4ae" stroke-width="1.5"/>
+  <polygon points="320,65 314,77 326,77" fill="#90a4ae"/>
+
+  <rect x="250" y="15" width="140" height="45" rx="10" fill="url(#box3)" filter="url(#shadow)" stroke="#ffcc80" stroke-width="1.5"/>
+  <text x="320" y="33" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Örnek 3</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ef6c00">Sayı Toplama</text>
+
+  <!-- Sağ üst: Ortalama -->
+  <line x1="395" y1="135" x2="520" y2="70" stroke="#90a4ae" stroke-width="1.5"/>
+  <polygon points="520,70 508,74 514,82" fill="#90a4ae"/>
+
+  <rect x="480" y="40" width="140" height="45" rx="10" fill="url(#box4)" filter="url(#shadow)" stroke="#f48fb1" stroke-width="1.5"/>
+  <text x="550" y="58" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#880e4f">Örnek 4</text>
+  <text x="550" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ad1457">Ortalama Bulma</text>
+
+  <!-- Sağ alt: Vize Final -->
+  <line x1="395" y1="155" x2="520" y2="230" stroke="#90a4ae" stroke-width="1.5"/>
+  <polygon points="520,230 508,226 514,218" fill="#90a4ae"/>
+
+  <rect x="480" y="215" width="140" height="45" rx="10" fill="url(#box5)" filter="url(#shadow)" stroke="#9fa8da" stroke-width="1.5"/>
+  <text x="550" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#283593">Örnek 5</text>
+  <text x="550" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3949ab">Vize ve Final Notu</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#78909c" font-style="italic">Kodlama deneyimini örneklerle geliştir</text>
+
+  <!-- Tkinter bağlantısı (küçük vurgu) -->
+  <rect x="245" y="185" width="150" height="28" rx="8" fill="#f1f8e9" stroke="#aed581" stroke-width="1" opacity="0.8"/>
+  <text x="320" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#33691e">tkinter GUI Arayüzü</text>
+</svg>

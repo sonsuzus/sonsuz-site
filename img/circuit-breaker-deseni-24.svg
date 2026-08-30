@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="breaker" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7df"/>
+      <stop offset="100%" stop-color="#ffe9ba"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#66829a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-40%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66829a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="43" r="74" fill="#dceeff" opacity="0.48"/>
+  <circle cx="580" cy="281" r="100" fill="#dcf1df" opacity="0.5"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f5b70">DEVRE KESİCİ</text>
+  <text x="32" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909f">Arıza izolasyonu ve kontrollü akış</text>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="126" width="120" height="76" rx="17" fill="#e8f1ff" stroke="#c9dcf4"/>
+  </g>
+  <rect x="59" y="145" width="27" height="21" rx="6" fill="#91b8e9"/>
+  <path d="M65 153h15M65 159h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="100" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385978">Sipariş</text>
+  <text x="100" y="175" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617d94">Servisi</text>
+
+  <path d="M162 164H209" stroke="#82a9c7" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="209,164 200,159 200,169" fill="#82a9c7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="210" y="102" width="205" height="124" rx="23" fill="url(#breaker)" stroke="#edcf86"/>
+  </g>
+  <circle cx="312" cy="143" r="24" fill="#fffdf5" stroke="#e5bd59" stroke-width="3"/>
+  <path d="M312 127v15M312 144c-8 0-12 5-12 11M312 144c8 0 12 5 12 11" fill="none" stroke="#d08a28" stroke-width="4" stroke-linecap="round"/>
+  <text x="312" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76511d">Devre Kesici</text>
+  <text x="312" y="204" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#967343">Eşik • gecikme • hata oranı</text>
+
+  <path d="M415 164H464" stroke="#82a9c7" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="464,164 455,159 455,169" fill="#82a9c7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="465" y="126" width="130" height="76" rx="17" fill="#e9f7ee" stroke="#c8e6d2"/>
+  </g>
+  <rect x="483" y="145" width="28" height="25" rx="7" fill="#77bd91"/>
+  <path d="M489 153h16M489 160h16M493 167h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="530" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#357052">Ödeme</text>
+  <text x="530" y="175" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e8970">Sağlayıcısı</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="177" y="248" width="104" height="45" rx="13" fill="#e8f1ff" stroke="#c6dbf3"/>
+    <rect x="293" y="248" width="104" height="45" rx="13" fill="#fff0ef" stroke="#f0c9c4"/>
+    <rect x="409" y="248" width="104" height="45" rx="13" fill="#e8f7ec" stroke="#c5e4ce"/>
+  </g>
+  <circle cx="194" cy="270" r="7" fill="#5592d2"/>
+  <text x="207" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426d9d">Kapalı</text>
+  <circle cx="310" cy="270" r="7" fill="#d76f62"/>
+  <text x="323" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a6534b">Açık</text>
+  <circle cx="426" cy="270" r="7" fill="#55a977"/>
+  <text x="439" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43805b">Yarı Açık</text>
+
+  <path d="M260 226V238H229V248" fill="none" stroke="#8ba9bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="229,248 224,240 234,240" fill="#8ba9bd"/>
+  <path d="M312 226V248" fill="none" stroke="#d38a78" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="312,248 307,240 317,240" fill="#d38a78"/>
+  <path d="M364 226V238H461V248" fill="none" stroke="#78aa8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="461,248 456,240 466,240" fill="#78aa8a"/>
+
+  <path d="M464 186C443 224 412 233 384 235" fill="none" stroke="#d97970" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="384,235 391,228 393,238" fill="#d97970"/>
+  <g filter="url(#smallShadow)">
+    <rect x="464" y="211" width="125" height="31" rx="11" fill="#fff1ef" stroke="#efc8c2"/>
+  </g>
+  <text x="526" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ae5b52">Hızlı ret • Yedek</text>
+
+  <text x="170" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f8898">Normal çağrı akışı</text>
+  <path d="M157 80H239" stroke="#aac4d4" stroke-width="1.5" stroke-dasharray="3 4"/>
+</svg>

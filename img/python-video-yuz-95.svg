@@ -1,0 +1,124 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#d1e8f0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7e6"/>
+      <stop offset="100%" stop-color="#cce8cc"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf2e9"/>
+      <stop offset="100%" stop-color="#f5e0cc"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0e8f8"/>
+      <stop offset="100%" stop-color="#e0d0f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#888" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="35" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Yüz Algılama Mimarisi</text>
+
+  <!-- Video Girişi -->
+  <rect x="40" y="70" width="120" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#7fb3c8" stroke-width="1.5"/>
+  <text x="100" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Video Girişi</text>
+  <text x="100" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">video.mp4</text>
+
+  <!-- Ok: Video Girişi -> Frame Okuma -->
+  <path d="M160,95 L200,95" stroke="#7fb3c8" stroke-width="2" fill="none"/>
+  <polygon points="200,90 212,95 200,100" fill="#7fb3c8"/>
+
+  <!-- Frame Okuma -->
+  <rect x="215" y="70" width="120" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#7fb3c8" stroke-width="1.5"/>
+  <text x="275" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Frame Okuma</text>
+  <text x="275" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">read()</text>
+
+  <!-- Ok: Frame Okuma -> Gri Tonlama -->
+  <path d="M335,95 L375,95" stroke="#7fb3c8" stroke-width="2" fill="none"/>
+  <polygon points="375,90 387,95 375,100" fill="#7fb3c8"/>
+
+  <!-- Gri Tonlama -->
+  <rect x="390" y="70" width="120" height="50" rx="10" fill="url(#boxGrad1)" filter="url(#shadow)" stroke="#7fb3c8" stroke-width="1.5"/>
+  <text x="450" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Gri Tonlama</text>
+  <text x="450" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">cvtColor</text>
+
+  <!-- Ok: Gri Tonlama -> Yüz Tespiti -->
+  <path d="M510,95 L550,95" stroke="#7fb3c8" stroke-width="2" fill="none"/>
+  <polygon points="550,90 562,95 550,100" fill="#7fb3c8"/>
+
+  <!-- Yüz Tespiti -->
+  <rect x="565" y="60" width="60" height="70" rx="10" fill="url(#boxGrad4)" filter="url(#shadow)" stroke="#9b8fc0" stroke-width="1.5"/>
+  <text x="595" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Yüz</text>
+  <text x="595" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Tespiti</text>
+  <text x="595" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#555">detect</text>
+
+  <!-- Ok: Yüz Tespiti -> İşaretleme -->
+  <path d="M595,130 L595,165" stroke="#9b8fc0" stroke-width="2" fill="none"/>
+  <polygon points="590,165 595,177 600,165" fill="#9b8fc0"/>
+
+  <!-- İşaretleme -->
+  <rect x="535" y="180" width="120" height="50" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#d4a574" stroke-width="1.5"/>
+  <text x="595" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">İşaretleme</text>
+  <text x="595" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">rectangle()</text>
+
+  <!-- Ok: İşaretleme -> Gösterim -->
+  <path d="M535,205 L495,205" stroke="#d4a574" stroke-width="2" fill="none"/>
+  <polygon points="495,200 483,205 495,210" fill="#d4a574"/>
+
+  <!-- Gösterim -->
+  <rect x="365" y="180" width="115" height="50" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#d4a574" stroke-width="1.5"/>
+  <text x="422" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Gösterim</text>
+  <text x="422" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">imshow()</text>
+
+  <!-- Ok: Gösterim -> Çıkış Kontrolü -->
+  <path d="M365,205 L325,205" stroke="#d4a574" stroke-width="2" fill="none"/>
+  <polygon points="325,200 313,205 325,210" fill="#d4a574"/>
+
+  <!-- Çıkış Kontrolü -->
+  <rect x="195" y="180" width="115" height="50" rx="10" fill="url(#boxGrad3)" filter="url(#shadow)" stroke="#d4a574" stroke-width="1.5"/>
+  <text x="252" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Çıkış Kontrolü</text>
+  <text x="252" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">Esc tuşu</text>
+
+  <!-- Ok: Çıkış Kontrolü -> Döngü -->
+  <path d="M252,230 L252,260 L275,260" stroke="#d4a574" stroke-width="2" fill="none"/>
+  <polygon points="275,255 287,260 275,265" fill="#d4a574"/>
+
+  <!-- Döngü etiketi -->
+  <text x="270" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#888" font-style="italic">döngü</text>
+
+  <!-- Ok: Çıkış Kontrolü -> Bitiş -->
+  <path d="M195,205 L155,205" stroke="#d4a574" stroke-width="2" fill="none"/>
+  <polygon points="155,200 143,205 155,210" fill="#d4a574"/>
+
+  <!-- Bitiş -->
+  <rect x="45" y="180" width="95" height="50" rx="10" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#88b888" stroke-width="1.5"/>
+  <text x="92" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Bitiş</text>
+  <text x="92" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">release()</text>
+
+  <!-- Kütüphane Kutuları -->
+  <rect x="40" y="270" width="130" height="35" rx="8" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#88b888" stroke-width="1.5"/>
+  <text x="105" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">OpenCV</text>
+
+  <rect x="255" y="270" width="130" height="35" rx="8" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#88b888" stroke-width="1.5"/>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">NumPy</text>
+
+  <rect x="470" y="270" width="130" height="35" rx="8" fill="url(#boxGrad2)" filter="url(#shadow)" stroke="#88b888" stroke-width="1.5"/>
+  <text x="535" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Haar Cascade</text>
+
+  <!-- Kütüphane bağlantı çizgileri -->
+  <path d="M105,270 L105,250 L275,120" stroke="#88b888" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <path d="M320,270 L320,250 L450,120" stroke="#88b888" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <path d="M535,270 L535,250 L595,130" stroke="#88b888" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+</svg>

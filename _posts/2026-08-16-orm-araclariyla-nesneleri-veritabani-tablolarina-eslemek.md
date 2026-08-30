@@ -8,6 +8,7 @@ tags:
   - orm
   - veritabanı
   - nesne yönelimli programlama
+image: /img/orm-araclariyla-nesneleri-32.png
 ---
 
 Uygulama geliştirirken nesnelerle çalışmak doğal gelir: `User`, `Order` ve `Product` gibi sınıflar tanımlar, davranışlarını metotlarda toplarız. Veritabanı ise daha farklı düşünür; satırlar, sütunlar, tablolar ve anahtarlarla konuşur. ORM (Object-Relational Mapping), bu iki dünyanın arasında çalışan tercümandır. Doğru kullanıldığında SQL tekrarını azaltır, veri erişimini okunur kılar ve geliştiricinin iş kurallarına odaklanmasına yardım eder.
@@ -28,6 +29,9 @@ Burada $P$, nesnenin özelliklerini; $C$ ise veritabanı sütunlarını temsil e
 | Özellik | Sütun | Field/Column mapping |
 | Nesne referansı | Foreign key | İlişki tanımı |
 | Koleksiyon | Birden çok ilişkili satır | One-to-many / many-to-many |
+
+![orm-araclariyla-nesneleri-32](/img/orm-araclariyla-nesneleri-32.svg)
+
 
 Python ve SQLAlchemy ile sade bir örneğe bakalım. Aşağıdaki model, `users` tablosunu sınıf üzerinden tanımlar ve ORM'nin sütun eşlemesini nasıl kurduğunu gösterir:
 

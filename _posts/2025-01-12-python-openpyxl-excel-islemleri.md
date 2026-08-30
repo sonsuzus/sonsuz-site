@@ -240,3 +240,6 @@ Yukarıdaki örnekte, program aşağıdaki satırları ekrana yazar:
 ```
 
 Programı çalıştırdığımızda, load\_workbook() fonksiyonu ile "deneme.xlsx" adlı mevcut bir Excel dosyası açılır. Sayfa isimleri ekrana yazılır. Dosyanın ilk sayfasında, 3.sütundan itibaren tek sütun silme ve 2.satırdan itibaren tek satır silme işlemleri, 3.sütundan itibaren 3 boş sütun ekleme ve 2.satırdan itibaren 4 boş satır ekleme işlemleri, son satırdan sonra, ilk 5 sütun içeriği verisi tanımlanmış olarak bir satır ekleme işlemi gerçekleştirilir.
+
+![python-openpyxl-excel-92](/img/python-openpyxl-excel-92.svg)
+

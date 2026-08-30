@@ -10,7 +10,11 @@ tags:
   - js
 redirect_from:
   - /posts/js-nasil-yazilir/
+image: /img/js-nasil-yazilir-48.png
 ---
+
+![js-nasil-yazilir-48](/img/js-nasil-yazilir-48.svg)
+
 
 
 Daha önce bahsettiğimiz gibi **Javascript** bir programlama dili ve çalıştırılabilmesi için bir **Javascript derleyicisi**ne ihtiyaç duyar. Yazdığımız bir Javascript kodunu çalıştırabilmek için ya bir tarayıcıya ihtiyacımız var, "çünkü Javascript derleyicisi tarayıcı içinde zaten mevcut" ya da nodejs derleyicine ihtiyacımız var.

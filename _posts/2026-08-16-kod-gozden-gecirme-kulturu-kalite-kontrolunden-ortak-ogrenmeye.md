@@ -11,9 +11,13 @@ tags:
   - pull request
   - clean code
 toc: true
+image: /img/kod-gozden-gecirme-64.png
 ---
 
 Kod gözden geçirme (code review), bir geliştiricinin yazdığı değişikliklerin başka ekip üyeleri tarafından incelenmesidir. Ancak bunu yalnızca “hata avı” olarak görmek büyük resmi kaçırmaktır. İyi kurulmuş bir inceleme kültürü; üretim hatalarını azaltır, mimari kararları görünür kılar, ekipteki bilgi adalarını yıkar ve herkesin daha tutarlı kod yazmasını sağlar. Kısacası pull request, kodun kapısını çalan bir denetçi değil; ekibin birlikte düşünme alanıdır.
+
+
+![kod-gozden-gecirme-64](/img/kod-gozden-gecirme-64.svg)
 
 ``
 

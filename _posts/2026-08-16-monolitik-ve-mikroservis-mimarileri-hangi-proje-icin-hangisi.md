@@ -9,6 +9,7 @@ tags:
   - monolit
   - mikroservis
 toc: true
+image: /img/monolitik-ve-mikroservis-67.png
 ---
 
 Bir yazılım projesi büyümeye başladığında en kritik sorulardan biri şudur: Uygulamayı tek parça hâlinde mi tutmalı, yoksa küçük ve bağımsız servisler olarak mı bölmeliyiz? Monolitik ve mikroservis mimarileri, yalnızca kodun klasör yapısını değil; ekip organizasyonunu, dağıtım süreçlerini, maliyeti ve hata yönetimini de belirler. Bu nedenle doğru seçim, modaya değil projenin gerçek ihtiyaçlarına dayanmalıdır.
@@ -83,3 +84,6 @@ Bu kod servisleri gevşek bağlar; fakat olayın iki kez işlenmesi gibi durumla
 ## Son karar: Önce sınırları tasarlayın
 
 Mikroservis, monolitin otomatik olarak "daha gelişmiş" versiyonu değildir; dağıtık sistem maliyetini bilinçli biçimde kabul etmektir. Çoğu ürün için iyi tasarlanmış bir **modüler monolit**, hızlı öğrenme ve düşük operasyon maliyeti sunar. İş alanları netleştiğinde, gerçekten bağımsız ölçeklenmesi veya ayrı ekiplerce yönetilmesi gereken modüller servisleştirilebilir. Kısacası: Önce basit kalın, sonra ölçerek bölünün.
+
+![monolitik-ve-mikroservis-67](/img/monolitik-ve-mikroservis-67.svg)
+

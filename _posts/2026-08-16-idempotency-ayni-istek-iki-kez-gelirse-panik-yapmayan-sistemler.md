@@ -8,6 +8,7 @@ tags:
   - idempotency
   - api tasarımı
   - dağıtık sistemler
+image: /img/idempotency-ayni-istek-23.png
 ---
 
 Bir kullanıcı “Öde” düğmesine bastığında internet bağlantısı kopabilir, tarayıcı isteği yeniden gönderebilir veya mobil uygulama zaman aşımı nedeniyle otomatik tekrar deneyebilir. Sisteminiz ikinci isteği yeni bir ödeme gibi algılarsa, kullanıcı iki kez ücretlendirilir. **Idempotency (yan etkisizlik)**, aynı işlemin birden fazla kez uygulanmasının sistemde ilk uygulamadan farklı bir sonuç üretmemesini hedefleyen tasarım ilkesidir. Kısacası: tekrarlar kaçınılmazdır; hasar olmak zorunda değildir.
@@ -29,6 +30,9 @@ HTTP metotları bu fikri anlatmak için faydalı bir başlangıçtır. Ancak met
 | `DELETE /cart/7` | Evet | Nihai hedef sepetin olmamasıdır. |
 | `POST /payments` | Genellikle hayır | Her çağrı yeni bir ödeme oluşturabilir. |
 | `balance += 100` | Hayır | Tekrar eden her çağrı yeni yan etki üretir. |
+
+![idempotency-ayni-istek-23](/img/idempotency-ayni-istek-23.svg)
+
 
 Özellikle ödeme, sipariş, e-posta gönderimi ve stok düşme gibi `POST` tabanlı işlemlerde **idempotency key** kullanılır. İstemci her mantıksal işlem için benzersiz bir anahtar üretir ve yeniden denemelerde aynı anahtarı yollar. Sunucu bu anahtarı daha önce görmüşse işlemi yeniden icra etmek yerine sakladığı sonucu döndürür.
 

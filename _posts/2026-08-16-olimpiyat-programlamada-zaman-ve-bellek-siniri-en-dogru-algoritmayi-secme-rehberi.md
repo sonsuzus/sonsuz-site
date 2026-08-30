@@ -10,6 +10,7 @@ tags:
   - karmaşıklık
   - dinamik programlama
   - optimizasyon
+image: /img/olimpiyat-programlamada-zaman-93.png
 ---
 
 Olimpiyat programlamada bir çözümün doğru cevap üretmesi yalnızca ilk adımdır; asıl soru, bunu verilen süre ve bellek içinde yapıp yapamayacağıdır. Aynı problemi kaba kuvvet, dinamik programlama, açgözlü yaklaşım veya gelişmiş veri yapılarıyla çözmek mümkün olabilir. Fakat yarışmada kazanan çözüm, test verisinin ölçeğine uygun karmaşıklık sınıfını seçen çözümdür. Bu nedenle kod yazmadan önce sınırları okumak, algoritma seçiminin pusulasıdır.
@@ -57,3 +58,6 @@ Bellek sınırı da ikinci hakemdir. Örneğin $n=10^6$ için `long long dp[n][n
 | DP sıkıştırma | Probleme bağlı | $O(n)$ | Önceki katman yeterliyse |
 
 Yarışma anında şu sırayı izleyin: Önce kısıtlardan izin verilen karmaşıklığı tahmin edin, sonra problemin özel yapısını—sıralılık, monotonluk, küçük değer aralığı veya tekrar eden alt problemler—arayın. En sonunda en kötü durumu hesaplayın. “Örnek test geçti” rahatlatıcıdır; fakat $O(n^2)$ bir kodun $n=200000$ üzerindeki kaderini değiştirmez. Doğru karmaşıklık, olimpiyat programlamanın görünmez ama en güçlü veri yapısıdır.
+
+![olimpiyat-programlamada-zaman-93](/img/olimpiyat-programlamada-zaman-93.svg)
+

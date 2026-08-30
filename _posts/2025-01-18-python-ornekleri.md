@@ -11,7 +11,11 @@ tags:
   - örnek
 redirect_from:
   - /posts/python-ornekleri/
+image: /img/python-ornekleri-31.png
 ---
+
+![python-ornekleri-31](/img/python-ornekleri-31.svg)
+
 
 
 

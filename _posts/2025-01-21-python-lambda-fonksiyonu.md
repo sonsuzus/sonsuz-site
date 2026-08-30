@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/python-lambda-fonksiyonu/
 toc: true
+image: /img/python-lambda-fonksiyonu-84.png
 ---
 
 
@@ -132,3 +133,6 @@ print(result) # False
 ```
 
 numbers[2], 5 rakamına karşılık gelen tek sayı olduğundan False değer döner ki; False bilgisini gören filter fonksiyonu bu değeri listeden çıkarır.
+
+![python-lambda-fonksiyonu-84](/img/python-lambda-fonksiyonu-84.svg)
+
