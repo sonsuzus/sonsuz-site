@@ -10,6 +10,7 @@ tags:
 redirect_from:
   - /posts/js-degiskenler/
 toc: true
+image: /img/js-degiskenler-86.png
 ---
 
 
@@ -142,3 +143,6 @@ var kullaniciAdi = "sadikturan";
 
 
 ```
+
+![js-degiskenler-86](/img/js-degiskenler-86.svg)
+

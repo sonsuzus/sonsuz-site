@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - SQLite
-  - Veritabanı
-  - SQL
-  - Gömülü Sistemler
-  - Performans
+  - sqlite
+  - veritabanı
+  - sql
+  - gömülü sistemler
+  - performans
+toc: true
 ---
 
 SQLite, çoğu geliştiricinin telefonunda, masaüstü uygulamasında veya küçük bir projede kullandığı “tek dosyalık veritabanı” olarak bilinir. Ancak onu yalnızca basit bir `SELECT` ve `INSERT` aracı saymak büyük haksızlık olur. Sunucu gerektirmemesi, yapılandırma maliyetinin düşük olması ve ACID garantileri sunması; SQLite’ı prototiplerden üretim sistemlerine uzanan etkileyici bir seçenek hâline getirir.

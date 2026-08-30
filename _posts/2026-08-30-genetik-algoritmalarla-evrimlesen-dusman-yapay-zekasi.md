@@ -9,7 +9,7 @@ tags:
   - oyun yapay zekâsı
   - game development
   - evrimsel hesaplama
-  - Unity
+  - unity
 ---
 
 Oyunlardaki düşmanların çoğu, tasarımcının önceden yazdığı davranış ağaçları ve durum makineleriyle hareket eder. Bu yaklaşım güvenilir olsa da oyuncu aynı taktiği tekrar ettiğinde kolayca tahmin edilebilir hâle gelir. Genetik algoritmalar (GA) ise düşman stratejilerini bir popülasyon olarak ele alır: başarılı taktikler hayatta kalır, birbirleriyle çaprazlanır ve küçük mutasyonlarla yeni çözümler üretir. Sonuç, oyuncunun “hep köşede bekleyip keskin nişancı kullanma” alışkanlığına zamanla karşı önlem geliştirebilen daha dinamik bir rakiptir.

@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/js-veri-tipleri/
 toc: true
+image: /img/js-veri-tipleri-69.png
 ---
 
 
@@ -207,3 +208,6 @@ person = null;
 burada null değer atayarak adresi belli olan nesnenin içerisindeki değeri silmiş oluyoruz. Tanımlanan nesnenin bellek üzerindeki adresi silmiş olmayız.
 
 Bellekteki adres kavramını anlayabilmek için nesnenin bellekte nasıl saklandığını iyi anlamak gerekiyor. Referans tipler konusunda öğreneceğiz.
+
+![js-veri-tipleri-69](/img/js-veri-tipleri-69.svg)
+

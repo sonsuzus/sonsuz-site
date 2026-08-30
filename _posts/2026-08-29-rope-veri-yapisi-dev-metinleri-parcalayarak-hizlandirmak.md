@@ -8,6 +8,7 @@ tags:
   - veri yapıları
   - rope
   - metin düzenleme
+toc: true
 ---
 
 Bir metin editöründe milyonlarca karakterlik bir günlük dosyasını açtığınızı düşünün. Ortasına tek bir cümle eklemek bile, klasik `string` yaklaşımında metnin geri kalanını kaydırmayı gerektirebilir. Rope (halat) veri yapısı tam bu noktada devreye girer: Metni tek ve dev bir karakter dizisi yerine, küçük parçalardan oluşan dengeli bir ağaç olarak saklar. Böylece ekleme, silme ve birleştirme işlemleri tüm metni taşımak yerine yalnızca ilgili dalları değiştirir.

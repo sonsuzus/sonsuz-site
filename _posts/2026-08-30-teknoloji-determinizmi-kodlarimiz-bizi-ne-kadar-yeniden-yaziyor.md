@@ -9,6 +9,7 @@ tags:
   - algoritmalar
   - yazılım etiği
   - toplum
+toc: true
 ---
 
 Bir sabah telefonunuzun önerdiği videoyu izleyip, navigasyonun çizdiği yoldan gidip, alışveriş uygulamasının hatırlattığı ürünü satın aldığınızda küçük bir soru belirir: Kararları gerçekten siz mi veriyorsunuz? Teknoloji determinizmi, teknolojik araçların yalnızca hayatı kolaylaştırmadığını; toplumun kurumlarını, kültürel normlarını ve bireysel alışkanlıklarını güçlü biçimde şekillendirdiğini savunan yaklaşımdır. Ancak bu yaklaşımın en tartışmalı kelimesi “zorunlu”dur.

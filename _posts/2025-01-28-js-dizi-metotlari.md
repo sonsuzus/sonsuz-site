@@ -12,7 +12,11 @@ tags:
 redirect_from:
   - /posts/js-dizi-metotlari/
 toc: true
+image: /img/js-dizi-metotlari-96.png
 ---
+
+![js-dizi-metotlari-96](/img/js-dizi-metotlari-96.svg)
+
 
 
 

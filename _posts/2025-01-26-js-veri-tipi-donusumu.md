@@ -10,6 +10,7 @@ tags:
   - veri tipi
 redirect_from:
   - /posts/js-veri-tipi-donusumu/
+image: /img/js-veri-tipi-27.png
 ---
 
 
@@ -150,3 +151,6 @@ val = parseFloat('10.5')
 
 
 ```
+
+![js-veri-tipi-27](/img/js-veri-tipi-27.svg)
+

@@ -10,6 +10,7 @@ tags:
   - paket yönetimi
   - yazılım geliştirme
 toc: true
+image: /img/semantik-versiyonlama-142-12.png
 ---
 
 Bir kütüphanenin yanında görünen `v2.7.1` etiketi, yalnızca geliştiricilerin düzen takıntısını tatmin eden bir sayı dizisi değildir. Bu numara; güncellemenin güvenli olup olmadığını, mevcut kodun kırılma ihtimalini ve yeni yetenekler kazanıp kazanmayacağınızı anlatan küçük bir sözleşmedir. Semantik Versiyonlama ya da yaygın adıyla **SemVer**, bu sözleşmeyi herkesin aynı şekilde okuyabilmesini sağlar.
@@ -25,6 +26,9 @@ $$MAJOR.MINOR.PATCH$$
 | `MAJOR` | Kırıcı değişiklik yapıldığında | Yoktur | `1.9.0` → `2.0.0` |
 | `MINOR` | Yeni, uyumlu özellik eklendiğinde | Vardır | `2.3.1` → `2.4.0` |
 | `PATCH` | Hata veya güvenlik düzeltildiğinde | Vardır | `2.4.0` → `2.4.1` |
+
+![semantik-versiyonlama-142-12](/img/semantik-versiyonlama-142-12.svg)
+
 
 ## Major: “Dikkat, taşlar yerinden oynuyor!”
 

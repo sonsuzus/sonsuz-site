@@ -8,7 +8,11 @@ tags:
   - çöp toplama
   - bellek yönetimi
   - garbage collector
+image: /img/programlama-dillerinde-cop-23.png
 ---
+
+![programlama-dillerinde-cop-23](/img/programlama-dillerinde-cop-23.svg)
+
 
 Modern programlama dillerinde belleği elle yönetmek, güçlü ama hata üretmeye açık bir sorumluluktur. Java, C#, Go, JavaScript ve birçok sanal makine tabanlı dil bu yükü çöp toplayıcıya (Garbage Collector, GC) devreder. GC'nin temel görevi basittir: Programın artık ulaşamadığı nesneleri bulmak ve alanlarını yeniden kullanılabilir hâle getirmek. Fakat bu basit cümle; gecikme, bellek tüketimi, CPU maliyeti ve uygulama akıcılığı arasında dikkatli tercihler gerektirir.
 ``

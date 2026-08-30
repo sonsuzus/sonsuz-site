@@ -8,6 +8,7 @@ tags:
   - açık kaynak
   - topluluk
   - yazılım geliştirme
+toc: true
 ---
 
 Açık kaynak projeleri, ilk bakışta internetin en tuhaf sosyal deneylerinden biri gibi görünür: Farklı kıtalarda yaşayan, çoğu zaman birbirinin gerçek adını bile bilmeyen insanlar; bir hata kaydını kapatmak, dokümantasyonu çevirmek ya da küçük bir fonksiyonu iyileştirmek için birlikte çalışır. Üstelik bu emeğin karşılığında doğrudan maaş, ofis kahvesi veya performans primi yoktur. Bu düzenin yakıtı para değil; ortak amaç, itibar, öğrenme arzusu ve iyi tasarlanmış işbirliği mekanizmalarıdır.

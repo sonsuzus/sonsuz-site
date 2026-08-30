@@ -8,6 +8,7 @@ tags:
   - çevrimiçi topluluklar
   - gamification
   - kullanıcı psikolojisi
+toc: true
 ---
 
 Bir forumdaki küçük bir beğeni ikonu, teknik olarak yalnızca veritabanında artan bir sayı gibi görünür. Ancak kullanıcı açısından bu sayı; görünürlük, kabul görme, uzmanlık ve hatta aidiyet anlamına gelebilir. İtibar ekonomisi, topluluk üyelerinin kaliteli katkılar karşılığında puan, rozet, rütbe veya ayrıcalık kazanması üzerine kurulur. Doğru tasarlandığında bilgi paylaşımını hızlandırır; yanlış tasarlandığında ise topluluğu “puan avcılığı” yapan bir kalabalığa dönüştürebilir.

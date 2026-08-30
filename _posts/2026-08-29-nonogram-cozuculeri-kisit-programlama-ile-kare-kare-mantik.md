@@ -12,7 +12,7 @@ tags:
 
 Nonogramlar, satır ve sütun kenarlarındaki sayı ipuçlarından hareketle hangi hücrelerin boyanacağını bulduğumuz görsel mantık bulmacalarıdır. İnsan için keyifli bir dedektiflik oyunu olan bu yapı, bilgisayar için de kısıt programlamanın (Constraint Programming, CP) oldukça temiz bir uygulamasıdır: Her hücre bir karar değişkeni, her ipucu ise çözüm uzayını daraltan bir kuraldır.
 
-<!--more-->
+``
 
 Bir $R \times C$ Nonogram tahtasını ikili değişkenlerle modelleyelim. Her hücre için $x_{r,c} \in \{0,1\}$ tanımlarız. Burada $1$ boyalı, $0$ boş hücreyi temsil eder. Ancak satırdaki boyalı hücre sayısını toplamak tek başına yeterli değildir. Örneğin `[2, 1]` ipucu, üç boyalı hücre demektir; fakat bu hücreler önce uzunluğu 2 olan, ardından en az bir boşlukla ayrılan uzunluğu 1 olan iki blok oluşturmalıdır.
 

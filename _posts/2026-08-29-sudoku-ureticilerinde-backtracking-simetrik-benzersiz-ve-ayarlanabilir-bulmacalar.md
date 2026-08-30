@@ -10,6 +10,7 @@ tags:
   - algoritmalar
   - python
   - oyun geliştirme
+toc: true
 ---
 
 Bir Sudoku üreticisi, ekrana rastgele sayılar serpiştirmekten çok daha fazlasıdır: Ortaya çıkan tahtanın geçerli, tek çözümlü, estetik açıdan dengeli ve hedeflenen zorlukta olması gerekir. Bu hedeflerin merkezinde derinlik öncelikli arama (DFS) ile çalışan geri izleme, yani *backtracking*, bulunur. Algoritma yanlış bir seçime girdiğinde panik yapmaz; son kararı geri alır, başka olasılığı dener ve sabırla çözüm uzayını tarar.

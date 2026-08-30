@@ -8,6 +8,7 @@ tags:
   - algoritmalar
   - veri yapıları
   - hashing
+toc: true
 ---
 
 Hash tabloları, anahtarları hızlıca bulmanın süper kahramanıdır; fakat klasik yaklaşımlarda iki anahtarın aynı kovaya düşmesi, yani **çakışma**, kaçınılmazdır. Perfect hashing ise özellikle anahtar kümesinin önceden bilindiği durumlarda bu dramayı tamamen ortadan kaldırır. Amaç, her anahtarı benzersiz bir hücreye yerleştiren ve sorguları sabit zamanda gerçekleştiren bir hash fonksiyonu tasarlamaktır.
@@ -15,7 +16,7 @@ Hash tabloları, anahtarları hızlıca bulmanın süper kahramanıdır; fakat k
 
 ## Temel fikir: Bire bir eşleme
 
-Bir anahtar kümesi $S$ ve $n = |S|$ olsun. Bir hash fonksiyonu $h$, anahtarları $m$ adet tablo hücresine gönderir:
+Bir anahtar kümesi $S$ ve $n = \vert S\vert $ olsun. Bir hash fonksiyonu $h$, anahtarları $m$ adet tablo hücresine gönderir:
 
 $$h: S \rightarrow \{0,1,\dots,m-1\}$$
 

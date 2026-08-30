@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#a0b8d0" flood-opacity="0.25"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#b0c8a0" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <rect x="200" y="12" width="240" height="34" rx="17" fill="#4a6fa5" opacity="0.9" filter="url(#shadow)"/>
+  <text x="320" y="34" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">JavaScript Operatörler</text>
+
+  <!-- Merkez kategori kutusu -->
+  <rect x="245" y="62" width="150" height="30" rx="8" fill="#6b9fd4" opacity="0.85" filter="url(#shadow)"/>
+  <text x="320" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#fff">4 Ana Grup</text>
+
+  <!-- Oklarla bağlantı çizgileri -->
+  <!-- Sol üst -->
+  <path d="M 270 92 L 120 130" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="120,130 130,126 126,134" fill="#7a9cc6"/>
+
+  <!-- Sağ üst -->
+  <path d="M 370 92 L 520 130" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="520,130 510,126 514,134" fill="#7a9cc6"/>
+
+  <!-- Sol alt -->
+  <path d="M 270 92 L 120 210" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="120,210 130,206 126,214" fill="#7a9cc6"/>
+
+  <!-- Sağ alt -->
+  <path d="M 370 92 L 520 210" stroke="#7a9cc6" stroke-width="1.8" fill="none"/>
+  <polygon points="520,210 510,206 514,214" fill="#7a9cc6"/>
+
+  <!-- Aritmetik Operatörler -->
+  <rect x="30" y="120" width="130" height="42" rx="10" fill="#f0b8a0" opacity="0.9" filter="url(#shadow)"/>
+  <text x="95" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a3a2a">Aritmetik</text>
+  <text x="95" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a3a2a">+ - * / % ++ -- **</text>
+
+  <!-- Atama Operatörleri -->
+  <rect x="480" y="120" width="130" height="42" rx="10" fill="#a8d4a0" opacity="0.9" filter="url(#shadow)"/>
+  <text x="545" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a5a2a">Atama</text>
+  <text x="545" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a5a2a">= += -= *= /=</text>
+
+  <!-- Karşılaştırma Operatörleri -->
+  <rect x="30" y="200" width="130" height="42" rx="10" fill="#b8c8e8" opacity="0.9" filter="url(#shadow)"/>
+  <text x="95" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a3a6a">Karşılaştırma</text>
+  <text x="95" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a3a6a">== === != &gt; &lt;</text>
+
+  <!-- Mantıksal Operatörler -->
+  <rect x="480" y="200" width="130" height="42" rx="10" fill="#e8c8e0" opacity="0.9" filter="url(#shadow)"/>
+  <text x="545" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a2a5a">Mantıksal</text>
+  <text x="545" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a2a5a">&amp;&amp; || !</text>
+
+  <!-- Alt bilgi örnekleri -->
+  <rect x="170" y="270" width="300" height="34" rx="8" fill="#d0e4f0" opacity="0.6" filter="url(#shadowLight)"/>
+  <text x="320" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">Örnek: x = 20, y = 5</text>
+  <text x="320" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a5a7a">x + y = 25 | x - y = 15 | x * y = 100</text>
+</svg>

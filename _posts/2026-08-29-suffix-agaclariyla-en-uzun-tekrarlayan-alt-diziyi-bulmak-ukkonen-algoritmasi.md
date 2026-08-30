@@ -20,11 +20,11 @@ Bir suffix ağacı, metnin bütün son eklerini sıkıştırılmış bir trie i�
 
 En uzun tekrarlayan alt dizi (Longest Repeated Substring, LRS), en az iki son ekin ortak ön eki olan en uzun metindir. Suffix ağacı açısından tanım daha da güzel hâle gelir: **En derin iç düğümün yol etiketi LRS'dir.** Düğüm derinliği, kökten o düğüme kadar biriken karakter sayısıdır. Eğer düğümün yol etiketi `ana` ise ve alt ağacında en az iki yaprak varsa, `ana` en az iki kez geçiyordur.
 
-| Yaklaşım | İnşa maliyeti | LRS arama maliyeti | Not |
-|---|---:|---:|---|
-| Tüm alt dizileri karşılaştırma | $O(n^2)$ veya daha kötü | Yüksek | Küçük girdiler dışında pahalıdır. |
-| Sıralı suffix array | $O(n \log n)$ | $O(n)$ | Pratikte bellek dostudur. |
-| Ukkonen ile suffix ağacı | $O(n)$ | $O(n)$ | Uygun varsayımlarla çevrim içi çalışır. |
+\vert  Yaklaşım \vert  İnşa maliyeti \vert  LRS arama maliyeti \vert  Not \vert 
+\vert ---\vert ---:\vert ---:\vert ---\vert 
+\vert  Tüm alt dizileri karşılaştırma \vert  $O(n^2)$ veya daha kötü \vert  Yüksek \vert  Küçük girdiler dışında pahalıdır. \vert 
+\vert  Sıralı suffix array \vert  $O(n \log n)$ \vert  $O(n)$ \vert  Pratikte bellek dostudur. \vert 
+\vert  Ukkonen ile suffix ağacı \vert  $O(n)$ \vert  $O(n)$ \vert  Uygun varsayımlarla çevrim içi çalışır. \vert 
 
 Buradaki lineer zaman iddiası, alfabe erişiminin sabit zamanda yapılabildiği yaygın model içindir. Ukkonen algoritmasının sihri, metni soldan sağa **fazlar** hâlinde eklemesidir. Her fazda yeni karakter eklenir; aktif nokta, suffix link ve gösterim (remainder) bilgileri sayesinde daha önce yapılmış iş tekrar edilmez. Suffix link, benzer bağlama sahip düğümler arasında kısa yol görevi görür: `xα` etiketli bir iç düğümden `α` düğümüne geçiş sağlar. Bu bağlantılar, her yeni son eki kökten yeniden yürümek yerine algoritmanın hızını korur.
 
@@ -48,11 +48,11 @@ def longest_repeated(node, path=""):
 
 Gerçek uygulamada kenarlar çoğu zaman karakter dizisi kopyaları olarak saklanmaz. Bunun yerine kaynak metindeki başlangıç ve bitiş indisleri tutulur. Böylece `edge_label` üretmek gerektiğinde alınır; bellek tüketimi azaltılır. Ayrıca yukarıdaki `len(node.children) > 1` kontrolü basitleştirilmiştir: Sıkıştırılmış ağaçta tekrarı doğrulamak için bir düğüm altındaki yaprak sayısını hesaplamak daha güvenlidir.
 
-| Kavram | Görevi | LRS ile ilişkisi |
-|---|---|---|
-| Yaprak | Bir son eki temsil eder | Aynı alt ağaçtaki yapraklar tekrar sayısını gösterir. |
-| İç düğüm | Ortak ön eki temsil eder | En derin uygun iç düğüm cevaptır. |
-| Suffix link | İnşada hızlı geçiş sağlar | Ukkonen'in $O(n)$ hedefini destekler. |
-| Bitiş sembolü `$` | Son ekleri ayırt eder | Bir son ekin diğerinin gölgesinde kalmasını engeller. |
+\vert  Kavram \vert  Görevi \vert  LRS ile ilişkisi \vert 
+\vert ---\vert ---\vert ---\vert 
+\vert  Yaprak \vert  Bir son eki temsil eder \vert  Aynı alt ağaçtaki yapraklar tekrar sayısını gösterir. \vert 
+\vert  İç düğüm \vert  Ortak ön eki temsil eder \vert  En derin uygun iç düğüm cevaptır. \vert 
+\vert  Suffix link \vert  İnşada hızlı geçiş sağlar \vert  Ukkonen'in $O(n)$ hedefini destekler. \vert 
+\vert  Bitiş sembolü `$` | Son ekleri ayırt eder | Bir son ekin diğerinin gölgesinde kalmasını engeller. |
 
 Sonuçta süreç iki parçaya ayrılır: Ukkonen ile ağacı $O(n)$ zamanda kurmak ve ağacı dolaşarak maksimum derinlikli tekrar düğümünü bulmak. Toplam maliyet teorik olarak $T(n)=O(n)+O(n)=O(n)$ olur. Çok büyük metinlerde uygulama karmaşıklığı nedeniyle suffix array veya suffix automaton tercih edilebilse de, suffix ağacı tekrar eden örüntülerin geometrisini anlamak için hâlâ mükemmel bir veri yapısıdır.

@@ -8,10 +8,11 @@ tags:
   - oyun programlama
   - asenkron programlama
   - game loop
+toc: true
 ---
 
 Bir oyunda ekrandaki kare sayısı artınca karakterinizin daha hızlı koşması, fizik hesaplarının farklı bilgisayarlarda bambaşka sonuçlar üretmesi veya ağdaki oyuncuların zaman çizelgelerinin ayrışması klasik zamanlama hatalarıdır. Bu sorunların ortak kaynağı, fiziksel zaman ile oyunun mantıksal zamanını birbirine karıştırmaktır. Sağlam bir oyun döngüsü, işlemcinin o anki hızından bağımsız biçimde olayları düzenler; asenkron işler sürerken ana oyun dünyasının tutarlı kalmasını sağlar.
-<!--more-->
+``
 
 ## İki saat, iki farklı sorumluluk
 

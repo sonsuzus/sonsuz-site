@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">Python Liste ve Demet Metotları</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="250" y="105" width="140" height="50" rx="14" fill="#5b9bd5" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="128" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="13">Liste Metotları</text>
+  <text x="320" y="145" text-anchor="middle" fill="#eaf2f8" font-size="11">dir(list)</text>
+
+  <!-- Sol üst grup: Ekleyen Metotlar -->
+  <rect x="40" y="55" width="130" height="38" rx="10" fill="#a9cce3" filter="url(#shadowLight)"/>
+  <text x="105" y="78" text-anchor="middle" fill="#1a5276" font-weight="bold">Ekleyenler</text>
+
+  <rect x="30" y="105" width="70" height="30" rx="8" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="65" y="124" text-anchor="middle" fill="#1a5276">append</text>
+
+  <rect x="110" y="105" width="70" height="30" rx="8" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="145" y="124" text-anchor="middle" fill="#1a5276">insert</text>
+
+  <rect x="70" y="145" width="70" height="30" rx="8" fill="#d4e6f1" filter="url(#shadowLight)"/>
+  <text x="105" y="164" text-anchor="middle" fill="#1a5276">extend</text>
+
+  <!-- Sol alt grup: Kaldıranlar -->
+  <rect x="40" y="215" width="130" height="38" rx="10" fill="#f9e79f" filter="url(#shadowLight)"/>
+  <text x="105" y="238" text-anchor="middle" fill="#7d6608" font-weight="bold">Kaldıranlar</text>
+
+  <rect x="30" y="265" width="70" height="30" rx="8" fill="#fcf3cf" filter="url(#shadowLight)"/>
+  <text x="65" y="284" text-anchor="middle" fill="#7d6608">remove</text>
+
+  <rect x="110" y="265" width="70" height="30" rx="8" fill="#fcf3cf" filter="url(#shadowLight)"/>
+  <text x="145" y="284" text-anchor="middle" fill="#7d6608">pop</text>
+
+  <!-- Sağ üst grup: Sorgulayanlar -->
+  <rect x="470" y="55" width="130" height="38" rx="10" fill="#abebc6" filter="url(#shadowLight)"/>
+  <text x="535" y="78" text-anchor="middle" fill="#1e8449" font-weight="bold">Sorgulayanlar</text>
+
+  <rect x="460" y="105" width="70" height="30" rx="8" fill="#d5f5e3" filter="url(#shadowLight)"/>
+  <text x="495" y="124" text-anchor="middle" fill="#1e8449">index</text>
+
+  <rect x="540" y="105" width="70" height="30" rx="8" fill="#d5f5e3" filter="url(#shadowLight)"/>
+  <text x="575" y="124" text-anchor="middle" fill="#1e8449">count</text>
+
+  <rect x="500" y="145" width="70" height="30" rx="8" fill="#d5f5e3" filter="url(#shadowLight)"/>
+  <text x="535" y="164" text-anchor="middle" fill="#1e8449">copy</text>
+
+  <!-- Sağ alt grup: Düzenleyenler -->
+  <rect x="470" y="215" width="130" height="38" rx="10" fill="#f5b7b1" filter="url(#shadowLight)"/>
+  <text x="535" y="238" text-anchor="middle" fill="#922b21" font-weight="bold">Düzenleyenler</text>
+
+  <rect x="460" y="265" width="70" height="30" rx="8" fill="#fadbd8" filter="url(#shadowLight)"/>
+  <text x="495" y="284" text-anchor="middle" fill="#922b21">sort</text>
+
+  <rect x="540" y="265" width="70" height="30" rx="8" fill="#fadbd8" filter="url(#shadowLight)"/>
+  <text x="575" y="284" text-anchor="middle" fill="#922b21">reverse</text>
+
+  <!-- Bağlantı çizgileri ve oklar -->
+  <!-- Sol üst grup bağlantısı -->
+  <path d="M 170 80 L 245 115" stroke="#5b9bd5" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="245,115 236,110 238,119" fill="#5b9bd5" opacity="0.7"/>
+
+  <path d="M 100 135 L 245 125" stroke="#5b9bd5" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="245,125 236,121 237,130" fill="#5b9bd5" opacity="0.5"/>
+
+  <path d="M 105 175 L 245 135" stroke="#5b9bd5" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="245,135 236,131 237,140" fill="#5b9bd5" opacity="0.5"/>
+
+  <!-- Sol alt grup bağlantısı -->
+  <path d="M 170 250 L 245 150" stroke="#5b9bd5" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="245,150 236,146 238,155" fill="#5b9bd5" opacity="0.7"/>
+
+  <path d="M 100 280 L 245 160" stroke="#5b9bd5" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="245,160 236,156 237,165" fill="#5b9bd5" opacity="0.5"/>
+
+  <path d="M 145 280 L 245 160" stroke="#5b9bd5" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="245,160 236,156 237,165" fill="#5b9bd5" opacity="0.5"/>
+
+  <!-- Sağ üst grup bağlantısı -->
+  <path d="M 470 80 L 395 115" stroke="#5b9bd5" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="395,115 404,110 402,119" fill="#5b9bd5" opacity="0.7"/>
+
+  <path d="M 530 135 L 395 125" stroke="#5b9bd5" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="395,125 404,121 403,130" fill="#5b9bd5" opacity="0.5"/>
+
+  <path d="M 570 135 L 395 125" stroke="#5b9bd5" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="395,125 404,121 403,130" fill="#5b9bd5" opacity="0.5"/>
+
+  <path d="M 535 175 L 395 135" stroke="#5b9bd5" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="395,135 404,131 403,140" fill="#5b9bd5" opacity="0.5"/>
+
+  <!-- Sağ alt grup bağlantısı -->
+  <path d="M 470 250 L 395 150" stroke="#5b9bd5" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="395,150 404,146 402,155" fill="#5b9bd5" opacity="0.7"/>
+
+  <path d="M 530 280 L 395 160" stroke="#5b9bd5" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="395,160 404,156 403,165" fill="#5b9bd5" opacity="0.5"/>
+
+  <path d="M 570 280 L 395 160" stroke="#5b9bd5" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="395,160 404,156 403,165" fill="#5b9bd5" opacity="0.5"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="310" text-anchor="middle" fill="#7f8c8d" font-size="11" opacity="0.8">Metotlar veri tipi üzerinde işlem yapmayı sağlar</text>
+</svg>

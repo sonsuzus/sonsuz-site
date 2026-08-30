@@ -25,10 +25,10 @@ Bu fark vektörü, taşın hareketinin türünü belirler. Vezir, kale ve fil gi
 | Taş | Geometrik koşul | Vektörel yorum | Engel kontrolü |
 |---|---|---|---|
 | Kale | $\Delta x = 0$ veya $\Delta y = 0$ | Yatay/dikey doğru | Gerekli |
-| Fil | $|\Delta x| = |\Delta y|$ | Çapraz doğru | Gerekli |
+| Fil | $\vert \Delta x\vert  = \vert \Delta y\vert $ | Çapraz doğru | Gerekli |
 | Vezir | Kale veya fil koşulu | Doğrusal birleşim | Gerekli |
-| At | $(|\Delta x|, |\Delta y|) \in \{(1,2),(2,1)\}$ | Ayrık sıçrama vektörleri | Gerekmez |
-| Şah | $\max(|\Delta x|,|\Delta y|)=1$ | Komşuluk hareketi | Gerekli |
+| At | $(\vert \Delta x\vert , \vert \Delta y\vert ) \in \{(1,2),(2,1)\}$ | Ayrık sıçrama vektörleri | Gerekmez |
+| Şah | $\max(\vert \Delta x\vert ,\vert \Delta y\vert )=1$ | Komşuluk hareketi | Gerekli |
 
 Filin kuralı, iki koordinattaki mutlak değişimin eşit olmasıdır. Örneğin $(2,1)$ noktasından $(5,4)$ noktasına giderken $\Delta=(3,3)$ elde edilir; dolayısıyla bu hamle çaprazdır. Aynı taşın $(2,1)$ konumundan $(6,3)$ konumuna gitmesi ise $(4,2)$ üretir ve eşitlik bozulduğu için geçersizdir. Dahası, fil her zaman aynı renkli karelerde kalır. Bunun cebirsel açıklaması, $x+y$ toplamının çapraz hamlelerde çift sayıda değişmesidir; parite korunur.
 

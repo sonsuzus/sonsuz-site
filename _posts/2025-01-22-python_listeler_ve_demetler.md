@@ -12,6 +12,7 @@ tags:
 redirect_from:
   - /posts/python_listeler_ve_demetler/
 toc: true
+image: /img/python_listeler_ve_demetler-86.png
 ---
 
 Bu bölüme gelene kadar yalnızca iki farklı veri tipi görmüştük. Bunlardan biri
@@ -2924,3 +2925,6 @@ TEMPLATE_DIRS = ('/home/projects/djprojects/blog/templates')
 ```
 
 Aslında bir demet değil, alelade bir karakter dizisi tanımlamış olurduk…
+
+![python_listeler_ve_demetler-86](/img/python_listeler_ve_demetler-86.svg)
+

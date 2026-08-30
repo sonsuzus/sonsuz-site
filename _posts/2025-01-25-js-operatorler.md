@@ -10,6 +10,7 @@ tags:
 redirect_from:
   - /posts/js-operatorler/
 toc: true
+image: /img/js-operatorler-39.png
 ---
 
 
@@ -32,6 +33,9 @@ Javascript' de matematiksel işlemleri yapmak için **aritmetik operatörler** 
 | ++ | Arttırma | sonuc = x++; | 21 |
 | -- | Eksiltme | sonuc = x--; | 19 |
 | \*\* | Üs alma | sonuc = 2 \*\* 3; | 8 |
+
+![js-operatorler-39](/img/js-operatorler-39.svg)
+
 
 ### Toplama Operatörü (+)
 

@@ -8,6 +8,7 @@ tags:
   - oyun teorisi
   - sprague-grundy
   - algoritmalar
+toc: true
 ---
 
 Bir masa oyununun sonunu hamle hamle tahmin etmek bazen sezgiye, bazen de bolca şansa bırakılır. Ancak iki oyuncunun da kusursuz oynadığı, şans faktörü içermeyen ve her hamlenin oyunu bitişe yaklaştırdığı tarafsız kombinatoryal oyunlarda sonuç matematikle belirlenebilir. Sprague-Grundy teoremi, farklı görünen oyunları bile birer Nim yığınına dönüştürerek “kazanan kim?” sorusuna kesin bir yanıt verir.

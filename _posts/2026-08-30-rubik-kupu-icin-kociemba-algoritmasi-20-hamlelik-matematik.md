@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Rubik Küpü
-  - Kociemba
-  - Grup Teorisi
+  - rubik küpü
+  - kociemba
+  - grup teorisi
+toc: true
 ---
 
 Rubik küpünü çözmek, yalnızca renkleri eşleştirmek değil; devasa ama sonlu bir matematiksel uzayda rota planlamaktır. Herbert Kociemba’nın iki aşamalı algoritması, pratikte çok hızlı çözümler üretirken grup teorisinin zarif fikirlerinden yararlanır. Hedef her zaman mutlak en kısa çözüm değildir; buna karşın algoritma çoğu karışıklığı yaklaşık 20 hamle civarında çözer. Bu yaklaşım, küpü tek seferde “fethedilecek” bir problem yerine, akıllıca daraltılmış iki ayrı problem olarak görür.

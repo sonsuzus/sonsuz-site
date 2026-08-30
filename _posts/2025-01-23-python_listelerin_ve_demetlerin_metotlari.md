@@ -12,7 +12,11 @@ tags:
 redirect_from:
   - /posts/python_listelerin_ve_demetlerin_metotlari/
 toc: true
+image: /img/python_listelerin_ve_demetlerin_metotlari-21.png
 ---
+
+![python_listelerin_ve_demetlerin_metotlari-21](/img/python_listelerin_ve_demetlerin_metotlari-21.svg)
+
 
 Burada, geçen bölümde kaldığımız yerden devam edeceğiz listeleri anlatmaya.
 Ağırlıklı olarak bu bölümde listelerin metotlarından söz edeceğiz. ‘Metot’

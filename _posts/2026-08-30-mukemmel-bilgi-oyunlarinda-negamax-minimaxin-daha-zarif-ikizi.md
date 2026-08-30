@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Negamax
-  - Minimax
-  - Oyun Teorisi
+  - negamax
+  - minimax
+  - oyun teorisi
+toc: true
 ---
 
 Satranç, dama veya tic-tac-toe gibi mükemmel bilgi oyunlarında iki oyuncu da tahtadaki her şeyi görür; gizli kartlar, zar şansı ya da sürpriz kutular yoktur. Bu ortamda bilgisayarın temel sorusu basittir: “Rakibim en iyi hamleyi yaparsa, benim en iyi hamlem ne olur?” Minimax bu sorunun klasik cevabıdır. Negamax ise aynı matematiği, iki ayrı MAX ve MIN rolünü tek bir zarif kuralla birleştirerek uygular.

@@ -8,6 +8,7 @@ tags:
   - satranç motoru
   - yapay zeka
   - algoritmalar
+toc: true
 ---
 
 Satranç motorları yalnızca güçlü hamleler bulmaz; aynı zamanda *ne zaman hesaplamayı bırakacaklarını* da öğrenmek zorundadır. Sabit derinlikli minimax veya alpha-beta araması, taktik açıdan patlayan bir konumun tam ortasında durursa taş kaybını ya da zorunlu matı birkaç hamle sonrasına itebilir. Bu yanılsamaya **ufuk etkisi** denir. Quiescence Search (QS), ana aramanın yaprak düğümlerinde konumu daha sakin, yani ani taktik değişimlerin azaldığı bir noktaya taşıyarak değerlendirmeyi güvenilir hâle getirir.

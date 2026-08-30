@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - DevOps
-  - CI/CD
-  - Blue-Green Deployment
+  - devops
+  - cı/cd
+  - blue-green deployment
+toc: true
 ---
 
 Üretim ortamında yeni bir sürümü yayımlamak, yalnızca kodu sunucuya kopyalamaktan ibaret değildir: kullanıcı deneyimi, geri dönüş planı ve veri tutarlılığı aynı anda korunmalıdır. Blue-Green Deployment, iki eşdeğer ortam arasında trafiği kontrollü biçimde değiştirerek güncelleme anındaki kesintiyi neredeyse görünmez hâle getiren güçlü bir dağıtım stratejisidir.

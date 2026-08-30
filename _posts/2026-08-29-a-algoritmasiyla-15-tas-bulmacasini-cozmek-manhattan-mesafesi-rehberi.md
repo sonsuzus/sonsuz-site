@@ -5,11 +5,12 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - A*
-  - Yapay Zeka
-  - Python
-  - 15-Taş
-  - Algoritmalar
+  - a*
+  - yapay zeka
+  - python
+  - 15-taş
+  - algoritmalar
+toc: true
 ---
 
 15-taş bulmacası, 4×4 bir tahtadaki numaralı taşları boş kareyi kullanarak hedef düzene getirmeyi ister. Görünüşte basit olan bu oyun, bilgisayar biliminin klasik durum-uzayı arama problemlerinden biridir: Her tahta dizilimi bir **durum**, boşluğun hareketi bir **eylem**, hedef dizilim ise çözülmek istenen noktadır. Amaç yalnızca bir çözüm bulmak değil, mümkün olan en az hamleli çözümü bulmaktır. İşte A* algoritması, doğru sezgisel fonksiyonla bu işi akıllıca yapar.
@@ -35,9 +36,9 @@ Burada $g(n)$ başlangıçtan mevcut duruma kadar yapılan hamle sayısıdır. $
 
 ## Manhattan mesafesi neden işe yarar?
 
-Bir taşın bulunduğu satır-sütun ile hedef satır-sütunu arasındaki yatay ve dikey farkların toplamına Manhattan mesafesi denir. Örneğin 7 numaralı taş `(0, 1)` konumunda, hedefi `(1, 2)` ise uzaklığı $|0-1| + |1-2| = 2$ olur. Tüm taşların uzaklıkları toplanır; boş kare hesaba katılmaz.
+Bir taşın bulunduğu satır-sütun ile hedef satır-sütunu arasındaki yatay ve dikey farkların toplamına Manhattan mesafesi denir. Örneğin 7 numaralı taş `(0, 1)` konumunda, hedefi `(1, 2)` ise uzaklığı $\vert 0-1\vert  + \vert 1-2\vert  = 2$ olur. Tüm taşların uzaklıkları toplanır; boş kare hesaba katılmaz.
 
-$$h_{Manhattan}(s) = \sum_{tile \ne 0} \left(|r-r^*| + |c-c^*|\right)$$
+$$h_{Manhattan}(s) = \sum_{tile \ne 0} \left(\vert r-r^*\vert  + \vert c-c^*\vert \right)$$
 
 Bu sezgisel fonksiyon **kabul edilebilir**dir (*admissible*): Gerçek kalan maliyeti asla olduğundan büyük tahmin etmez. Çünkü bir taşı hedefe yaklaştırmak için en az Manhattan uzaklığı kadar hamle gerekir; üstelik taşların birbirini engellemesi gerçek maliyeti artırabilir. Ayrıca **tutarlı**dır (*consistent*): Tek hamleyle sezgisel değer en fazla 1 değişir. Bu iki özellik sayesinde A*, en kısa çözümü garanti eder.
 

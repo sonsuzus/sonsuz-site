@@ -8,6 +8,7 @@ tags:
   - minimax
   - satranç motoru
   - yapay zeka
+toc: true
 ---
 
 Bir satranç motoru yalnızca taş saymaz; şah güvenliğini, piyon yapısını, merkez kontrolünü ve taşların gelecekteki hareket alanını da sayısallaştırmaya çalışır. Minimax algoritması hamle ağacında en iyi kararı ararken, ağacın derinliğinin yetmediği yaprak düğümlerde bir **değerlendirme fonksiyonuna** ihtiyaç duyar. Bu fonksiyon, “Bu konum kimin için daha iyi?” sorusunu matematiksel bir skora dönüştürür.

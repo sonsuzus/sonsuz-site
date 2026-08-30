@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7ee"/>
+    </linearGradient>
+    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6C9BD2"/>
+      <stop offset="100%" stop-color="#4A7FB5"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7FB58A"/>
+      <stop offset="100%" stop-color="#5C9E6E"/>
+    </linearGradient>
+    <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D9A86C"/>
+      <stop offset="100%" stop-color="#C78A4B"/>
+    </linearGradient>
+    <linearGradient id="grad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B58CC4"/>
+      <stop offset="100%" stop-color="#9E6FAE"/>
+    </linearGradient>
+    <linearGradient id="grad5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E58A8A"/>
+      <stop offset="100%" stop-color="#D16B6B"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="35" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">Python Listeler ve Demetler</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="55" width="150" height="45" rx="12" fill="url(#grad1)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Veri Tipleri</text>
+
+  <!-- Sol üst: Liste -->
+  <rect x="55" y="120" width="140" height="50" rx="12" fill="url(#grad2)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="125" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Liste</text>
+  <text x="125" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#E8F5E9">Değiştirilebilir</text>
+
+  <!-- Sağ üst: Demet -->
+  <rect x="445" y="120" width="140" height="50" rx="12" fill="url(#grad3)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="515" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Demet</text>
+  <text x="515" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#FFF8E1">Değiştirilemez</text>
+
+  <!-- Sol alt: Metotlar -->
+  <rect x="55" y="220" width="140" height="50" rx="12" fill="url(#grad4)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="125" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Metotlar</text>
+  <text x="125" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#F3E5F5">append, remove</text>
+
+  <!-- Sağ alt: Kullanım -->
+  <rect x="445" y="220" width="140" height="50" rx="12" fill="url(#grad5)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="515" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Kullanım</text>
+  <text x="515" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#FFEBEE">Veri gruplama</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Merkez -> Liste -->
+  <path d="M 245 78 L 200 78 L 200 130" stroke="#4A7FB5" stroke-width="2" fill="none"/>
+  <polygon points="195,130 200,142 205,130" fill="#4A7FB5"/>
+
+  <!-- Merkez -> Demet -->
+  <path d="M 395 78 L 440 78 L 440 130" stroke="#C78A4B" stroke-width="2" fill="none"/>
+  <polygon points="435,130 440,142 445,130" fill="#C78A4B"/>
+
+  <!-- Liste -> Metotlar -->
+  <path d="M 125 170 L 125 210" stroke="#9E6FAE" stroke-width="2" fill="none"/>
+  <polygon points="120,210 125,222 130,210" fill="#9E6FAE"/>
+
+  <!-- Demet -> Kullanım -->
+  <path d="M 515 170 L 515 210" stroke="#D16B6B" stroke-width="2" fill="none"/>
+  <polygon points="510,210 515,222 520,210" fill="#D16B6B"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7F8C8D" opacity="0.8">Python programlama dili • Temel veri yapıları</text>
+</svg>

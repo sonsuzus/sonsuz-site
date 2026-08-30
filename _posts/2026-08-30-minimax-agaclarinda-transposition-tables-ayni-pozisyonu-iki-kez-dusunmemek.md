@@ -5,9 +5,10 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Minimax
-  - Transposition Table
-  - Yapay Zeka
+  - minimax
+  - transposition table
+  - yapay zeka
+toc: true
 ---
 
 Satranç, dama veya Connect Four oynayan bir yapay zekânın en pahalı alışkanlığı aynı pozisyonu tekrar tekrar analiz etmektir. Farklı hamle sıraları, tahtada birebir aynı duruma ulaşabilir; buna **transposition** denir. Transposition table (TT), daha önce hesaplanan bu durumları önbelleğe alır ve minimax aramasının “bu filmi izlemiştim” diyerek pahalı alt ağacı atlamasını sağlar.

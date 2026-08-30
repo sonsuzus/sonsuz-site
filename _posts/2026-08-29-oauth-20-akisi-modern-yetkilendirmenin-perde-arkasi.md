@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - OAuth 2.0
-  - Kimlik Doğrulama
-  - API Güvenliği
+  - oauth 2.0
+  - kimlik doğrulama
+  - apı güvenliği
 ---
 
 Bir uygulamanın kullanıcı parolasını hiç görmeden Google Drive dosyalarına erişebilmesi nasıl mümkün olur? OAuth 2.0, tam da bu problemi çözen bir **yetkilendirme çerçevesidir**. Kullanıcı, bir uygulamaya belirli ve sınırlı izinler verir; uygulama ise bu izinleri temsil eden token'larla API çağrıları yapar. Böylece parola paylaşımı yerine kontrollü, süreli ve gerektiğinde geri alınabilir erişim sağlanır.

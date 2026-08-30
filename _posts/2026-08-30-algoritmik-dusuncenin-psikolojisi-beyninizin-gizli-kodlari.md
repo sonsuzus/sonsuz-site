@@ -9,6 +9,7 @@ tags:
   - problem çözme
   - psikoloji
   - yazılım mantığı
+toc: true
 ---
 
 Sabah işe yetişmeye çalışırken en kısa rotayı seçmeniz, markette bütçenize göre ürünleri elemeniz veya kayıp anahtarınızı odaları sırayla kontrol ederek aramanız tesadüf değildir: beyniniz küçük algoritmalar çalıştırır. Algoritmik düşünme, yalnızca bilgisayar bilimcilerinin süper gücü değil; belirsiz bir hedefi adımlara, koşullara ve tekrar eden kalıplara dönüştürme becerisidir. Yazılım öğrenmenin ilginç tarafı da şudur: Kod yazarken yeni bir mantık edinmekten çok, zaten kullandığınız zihinsel stratejileri görünür ve denetlenebilir hâle getirirsiniz.

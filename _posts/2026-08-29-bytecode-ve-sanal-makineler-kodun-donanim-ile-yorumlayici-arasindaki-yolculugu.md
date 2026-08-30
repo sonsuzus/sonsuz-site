@@ -8,6 +8,7 @@ tags:
   - bytecode
   - sanal makine
   - derleyici
+toc: true
 ---
 
 Bir Python dosyasının, Java sınıfının veya C# projesinin ekranda sonuç üretmesi ilk bakışta sihir gibi görünebilir. Oysa kaynak kod ile işlemcinin anlayabildiği makine komutları arasında oldukça düzenli bir ara dünya vardır: **bytecode** ve onu çalıştıran **sanal makine (VM)**. Bu ikili, farklı işletim sistemlerinde tutarlı davranış sağlamanın ve geliştirici deneyimini iyileştirmenin güçlü yollarından biridir.

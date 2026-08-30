@@ -5,11 +5,11 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - LLVM
-  - Derleyiciler
-  - C++
-  - IR
-  - Yazılım Geliştirme
+  - llvm
+  - derleyiciler
+  - c++
+  - ır
+  - yazılım geliştirme
 ---
 
 Bir programı kaynak koddan çalışabilir makine komutlarına dönüştürmek, yalnızca `if` ifadelerini çevirmekten çok daha büyük bir iştir. Farklı işlemciler, optimizasyonlar, hata mesajları ve hata ayıklama bilgileri derken derleyici geliştirmek hızla devasa bir projeye dönüşür. LLVM, tam bu karmaşıklığı yönetmek için doğmuş; bugün Clang, Rust, Swift ve Julia gibi pek çok teknolojinin kullandığı modüler bir derleyici altyapısıdır.

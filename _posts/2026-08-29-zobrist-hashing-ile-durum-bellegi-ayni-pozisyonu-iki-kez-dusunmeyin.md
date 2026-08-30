@@ -5,9 +5,9 @@ math: true
 categories: 
   - Bilgi
 tags: 
-  - Zobrist Hashing
-  - Oyun Yapay Zekası
-  - Algoritmalar
+  - zobrist hashing
+  - oyun yapay zekası
+  - algoritmalar
 ---
 
 Bir satranç motoru ya da bir zeka oyunu ajanı, hamle ağacında ilerlerken şaşırtıcı derecede sık biçimde aynı tahtaya yeniden ulaşır. Farklı hamle sıraları aynı konumu üretebilir; ayrıca arama algoritmaları önceki derinliklerde gördüğü dalları tekrar ziyaret edebilir. Her seferinde konumu sıfırdan değerlendirmek, motorun işlemcisini adeta aynı bulmacayı tekrar tekrar çözen sabırsız bir öğrenciye dönüştürür. Zobrist Hashing, oyun durumlarını çok hızlı biçimde parmak iziyle temsil ederek bu tekrarları yakalamayı sağlar.

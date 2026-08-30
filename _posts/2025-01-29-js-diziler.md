@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/js-diziler/
 toc: true
+image: /img/js-diziler-74.png
 ---
 
 **Javascript array** ile birden fazla veriyi bir değişken içinde saklayabiliriz.
@@ -178,3 +179,6 @@ cars[cars.length] = "mercedes";
 ```
 
 cars.length bize 5 sayısını verir ve olmayan bir indeks olduğundan son eleman olarak yeni bir değeri dizi üzerine eklemiş oluruz.
+
+![js-diziler-74](/img/js-diziler-74.svg)
+

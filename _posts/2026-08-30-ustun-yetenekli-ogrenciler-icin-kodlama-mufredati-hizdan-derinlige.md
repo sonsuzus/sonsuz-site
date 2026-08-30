@@ -8,6 +8,7 @@ tags:
   - kodlama eğitimi
   - üstün yetenek
   - proje tabanlı öğrenme
+toc: true
 ---
 
 Zihinsel işlem hızı yüksek öğrenciler için kodlama eğitimi, sadece daha fazla alıştırma vermek değildir; daha belirsiz, daha çok çözüm yolu bulunan ve düşünme kalitesini görünür kılan problemler tasarlamaktır. Bu öğrenciler temel sözdizimini hızla geçebilir, fakat asıl potansiyelleri algoritma seçerken, varsayımları sorgularken ve kendi projelerinin sınırlarını çizerken ortaya çıkar. İyi bir müfredat, onları “ilk çalışan çözüm” ile yetinmek yerine daha zarif, adil ve sürdürülebilir çözümler aramaya davet eder.

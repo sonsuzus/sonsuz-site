@@ -8,6 +8,7 @@ tags:
   - dinamik programlama
   - convex hull trick
   - algoritmalar
+toc: true
 ---
 
 Bazı dinamik programlama problemleri ilk bakışta masum görünür: Her durum için önceki tüm durumları denersiniz, en iyisini seçersiniz. Ancak bu yaklaşım çoğu zaman $O(n^2)$ maliyet üretir. Convex Hull Trick (CHT), geçiş maliyetinin doğrusal fonksiyonlara ayrıştığı özel durumlarda bu taramayı akıllı bir geometrik sorguya dönüştürür. Doğru koşullarda karmaşıklığı $O(n \log n)$, hatta $O(n)$ seviyesine indirebilir.

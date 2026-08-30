@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c9bd2"/>
+      <stop offset="100%" stop-color="#4a7fb5"/>
+    </linearGradient>
+    <linearGradient id="primGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#8bc6d9"/>
+    </linearGradient>
+    <linearGradient id="refGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4c2a1"/>
+      <stop offset="100%" stop-color="#e8a87c"/>
+    </linearGradient>
+    <linearGradient id="toolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8e0c8"/>
+      <stop offset="100%" stop-color="#95c9a8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">JavaScript Veri Tipleri</text>
+
+  <!-- Merkez kutu -->
+  <rect x="240" y="52" width="160" height="44" rx="10" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="320" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Veri Tipleri</text>
+
+  <!-- Grup etiketleri -->
+  <text x="130" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6b8a">Basit Tipler</text>
+  <text x="510" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9c6b4a">Referans Tipler</text>
+
+  <!-- Basit tipler kutusu -->
+  <rect x="30" y="84" width="200" height="150" rx="12" fill="#e8f4fd" stroke="#a8d8ea" stroke-width="1.5" filter="url(#shadow)"/>
+  
+  <!-- Basit tip öğeleri -->
+  <rect x="48" y="98" width="164" height="26" rx="6" fill="url(#primGrad)" filter="url(#shadow)"/>
+  <text x="130" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a4a">String</text>
+
+  <rect x="48" y="132" width="164" height="26" rx="6" fill="url(#primGrad)" filter="url(#shadow)"/>
+  <text x="130" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a4a">Number</text>
+
+  <rect x="48" y="166" width="164" height="26" rx="6" fill="url(#primGrad)" filter="url(#shadow)"/>
+  <text x="130" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a4a">Boolean</text>
+
+  <rect x="48" y="200" width="164" height="26" rx="6" fill="url(#primGrad)" filter="url(#shadow)"/>
+  <text x="130" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a4a">undefined</text>
+
+  <!-- Referans tipler kutusu -->
+  <rect x="410" y="84" width="200" height="150" rx="12" fill="#fdf0e8" stroke="#f4c2a1" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Referans tip öğeleri -->
+  <rect x="428" y="98" width="164" height="26" rx="6" fill="url(#refGrad)" filter="url(#shadow)"/>
+  <text x="510" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a2a0a">Dizi</text>
+
+  <rect x="428" y="132" width="164" height="26" rx="6" fill="url(#refGrad)" filter="url(#shadow)"/>
+  <text x="510" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a2a0a">Nesne</text>
+
+  <rect x="428" y="166" width="164" height="26" rx="6" fill="url(#refGrad)" filter="url(#shadow)"/>
+  <text x="510" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a2a0a">Fonksiyon</text>
+
+  <rect x="428" y="200" width="164" height="26" rx="6" fill="url(#refGrad)" filter="url(#shadow)"/>
+  <text x="510" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a2a0a">null</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Merkezden basit tiplere -->
+  <line x1="240" y1="74" x2="232" y2="74" stroke="#4a7fb5" stroke-width="2"/>
+  <polygon points="232,70 220,74 232,78" fill="#4a7fb5"/>
+
+  <!-- Merkezden referans tiplere -->
+  <line x1="400" y1="74" x2="408" y2="74" stroke="#e8a87c" stroke-width="2"/>
+  <polygon points="408,70 420,74 408,78" fill="#e8a87c"/>
+
+  <!-- Alt bilgi: typeof ve var -->
+  <rect x="140" y="252" width="360" height="50" rx="10" fill="#f0f7f0" stroke="#b8e0c8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d5a3d">var ile tanımlanır</text>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d5a3d">typeof ile tip öğrenilir</text>
+
+  <!-- Alt bilgiye bağlantı çizgileri -->
+  <line x1="200" y1="234" x2="240" y2="252" stroke="#95c9a8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="440" y1="234" x2="400" y2="252" stroke="#95c9a8" stroke-width="1.5" stroke-dasharray="4,3"/>
+</svg>

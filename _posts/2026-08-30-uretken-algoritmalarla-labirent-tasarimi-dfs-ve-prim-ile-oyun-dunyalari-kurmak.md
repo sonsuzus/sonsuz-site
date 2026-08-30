@@ -8,6 +8,7 @@ tags:
   - algoritmalar
   - procedural-generation
   - python
+toc: true
 ---
 
 Rastgele bir labirent üretmek, birkaç duvarı gelişigüzel yerleştirmekten çok daha fazlasıdır: oyuncuya keşif hissi veren, çözülebilir ve görsel olarak okunabilir bir topoloji tasarlamaktır. Üretken algoritmalar bu işi kurallı rastlantısallıkla yapar. Aynı kod, farklı bir tohumla her seferinde yeni bir dünya çıkarırken; her dünyada başlangıçtan çıkışa ulaşılabilmesini garanti eder.
