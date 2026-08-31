@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">SQL CASE WHEN Mantığı</text>
+
+  <!-- Girdi kutusu -->
+  <rect x="30" y="70" width="120" height="50" rx="10" fill="#e8f4fd" stroke="#5b9bd5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="90" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">VERİ</text>
+  <text x="90" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a6a8a">satırlar</text>
+
+  <!-- Koşul değerlendirme kutusu -->
+  <rect x="220" y="60" width="150" height="70" rx="12" fill="#fff3e0" stroke="#edb066" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="295" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">KOŞUL</text>
+  <text x="295" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6b5b3e">WHEN yaş &gt;= 18</text>
+  <text x="295" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6b5b3e">THEN 'Uygun'</text>
+
+  <!-- Girdiden koşula ok -->
+  <path d="M150 95 L215 95" stroke="#5b9bd5" stroke-width="2" fill="none"/>
+  <polygon points="215,90 225,95 215,100" fill="#5b9bd5"/>
+
+  <!-- Doğru sonuç kutusu -->
+  <rect x="450" y="40" width="140" height="50" rx="10" fill="#e8f8e8" stroke="#6bbf6a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="520" y="63" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2c5e2c">DOĞRU</text>
+  <text x="520" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a7a3a">'Uygun'</text>
+
+  <!-- Koşuldan doğruya ok -->
+  <path d="M370 80 L445 70" stroke="#6bbf6a" stroke-width="2" fill="none"/>
+  <polygon points="445,65 455,68 445,75" fill="#6bbf6a"/>
+
+  <!-- Yanlış sonuç kutusu -->
+  <rect x="450" y="130" width="140" height="50" rx="10" fill="#fde8e8" stroke="#e07a7a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="520" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a2e2e">YANLIŞ</text>
+  <text x="520" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#9a4a4a">'Uygun Değil'</text>
+
+  <!-- Koşuldan yanlışa ok -->
+  <path d="M370 110 L445 150" stroke="#e07a7a" stroke-width="2" fill="none"/>
+  <polygon points="445,145 455,152 445,155" fill="#e07a7a"/>
+
+  <!-- ELSE kutusu -->
+  <rect x="220" y="180" width="150" height="50" rx="10" fill="#f0f0f0" stroke="#a0a0a0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="295" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#444">ELSE</text>
+  <text x="295" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#666">'Bilinmiyor'</text>
+
+  <!-- Koşuldan ELSE'e ok -->
+  <path d="M295 130 L295 175" stroke="#a0a0a0" stroke-width="2" fill="none"/>
+  <polygon points="290,175 295,185 300,175" fill="#a0a0a0"/>
+
+  <!-- ELSE'ten yanlışa kesikli ok -->
+  <path d="M370 205 L445 165" stroke="#a0a0a0" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
+  <polygon points="445,160 452,168 445,170" fill="#a0a0a0"/>
+
+  <!-- Alt açıklama -->
+  <rect x="30" y="260" width="580" height="40" rx="8" fill="#ffffff" opacity="0.7" filter="url(#shadowLight)"/>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#555">CASE WHEN koşul THEN sonuç ELSE alternatif END</text>
+  <text x="320" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#777">Her satır koşula göre değerlendirilir ve uygun sonuç üretilir</text>
+</svg>

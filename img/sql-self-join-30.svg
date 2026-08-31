@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="tableGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="aliasGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="aliasGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#94a3b8" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#94a3b8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">SQL Self Join: Tablonun Kendisi ile Birleşimi</text>
+
+  <!-- Ana tablo (merkez) -->
+  <rect x="245" y="55" width="150" height="70" rx="10" fill="url(#tableGrad)" stroke="#60a5fa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f">Çalışanlar</text>
+  <line x1="260" y1="88" x2="380" y2="88" stroke="#60a5fa" stroke-width="0.8"/>
+  <text x="320" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#334155">id, ad, yonetici_id</text>
+  <text x="320" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#475569">(tek tablo)</text>
+
+  <!-- T1 takma adı (sol üst) -->
+  <rect x="60" y="60" width="130" height="60" rx="10" fill="url(#aliasGrad1)" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="125" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#78350f">Çalışanlar t1</text>
+  <line x1="75" y1="90" x2="175" y2="90" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="125" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#78350f">çalışan olarak</text>
+
+  <!-- T2 takma adı (sağ üst) -->
+  <rect x="450" y="60" width="130" height="60" rx="10" fill="url(#aliasGrad2)" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="515" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#064e3b">Çalışanlar t2</text>
+  <line x1="465" y1="90" x2="565" y2="90" stroke="#10b981" stroke-width="0.8"/>
+  <text x="515" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#064e3b">yönetici olarak</text>
+
+  <!-- Ok: ana tablo -> t1 -->
+  <path d="M 245 85 C 200 85, 180 85, 195 85" stroke="#f59e0b" stroke-width="1.8" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="192,80 205,85 192,90" fill="#f59e0b"/>
+
+  <!-- Ok: ana tablo -> t2 -->
+  <path d="M 395 85 C 440 85, 460 85, 445 85" stroke="#10b981" stroke-width="1.8" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="448,80 435,85 448,90" fill="#10b981"/>
+
+  <!-- Bağlantı kuralı kutusu -->
+  <rect x="200" y="155" width="240" height="45" rx="8" fill="#e0e7ff" stroke="#818cf8" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="320" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#3730a3">ON t1.yonetici_id = t2.id</text>
+  <text x="320" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#4f46e5">eşleştirme koşulu</text>
+
+  <!-- Ok: t1 -> kural -->
+  <path d="M 125 120 C 125 145, 200 165, 210 170" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+  <polygon points="207,164 220,172 205,176" fill="#f59e0b"/>
+
+  <!-- Ok: t2 -> kural -->
+  <path d="M 515 120 C 515 145, 440 165, 430 170" stroke="#10b981" stroke-width="1.5" fill="none"/>
+  <polygon points="435,164 420,172 435,176" fill="#10b981"/>
+
+  <!-- Ok: kural -> sonuç -->
+  <path d="M 320 200 L 320 225" stroke="#ec4899" stroke-width="1.8" fill="none"/>
+  <polygon points="314,222 320,235 326,222" fill="#ec4899"/>
+
+  <!-- Sonuç tablosu -->
+  <rect x="195" y="238" width="250" height="60" rx="10" fill="url(#resultGrad)" stroke="#ec4899" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#831843">Sorgu Sonucu</text>
+  <line x1="210" y1="266" x2="430" y2="266" stroke="#ec4899" stroke-width="0.8"/>
+  <text x="320" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#831843">çalışan adı + yönetici adı</text>
+
+  <!-- Alt not -->
+  <text x="320" y="312" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#64748b" font-style="italic">İki farklı tablo yerine aynı tablonun iki kopyası kullanılır</text>
+</svg>

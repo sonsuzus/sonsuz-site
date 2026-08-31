@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7f0"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c7d2fe"/>
+      <stop offset="100%" stop-color="#a5b4fc"/>
+    </linearGradient>
+    <linearGradient id="boxGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fecaca"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arkaplan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#1e3a5f">JavaScript For/Of Döngüsü</text>
+
+  <!-- Merkez düğüm: For/Of -->
+  <rect x="255" y="118" width="130" height="48" rx="14" fill="url(#boxGrad2)" filter="url(#shadow)"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#78350f">for (element</text>
+  <text x="320" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#78350f">of iterable)</text>
+
+  <!-- Sol üst: Iterable -->
+  <rect x="55" y="55" width="120" height="44" rx="12" fill="url(#boxGrad1)" filter="url(#shadow)"/>
+  <text x="115" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">Iterable Nesne</text>
+
+  <!-- Sol alt: Türler -->
+  <rect x="55" y="220" width="120" height="70" rx="12" fill="url(#boxGrad5)" filter="url(#shadow)"/>
+  <text x="115" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#3730a3">Türler:</text>
+  <text x="115" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4338ca">Array</text>
+  <text x="115" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4338ca">Set, Map</text>
+  <text x="115" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4338ca">String</text>
+
+  <!-- Sağ üst: Element -->
+  <rect x="465" y="55" width="120" height="44" rx="12" fill="url(#boxGrad4)" filter="url(#shadow)"/>
+  <text x="525" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#9d174d">Element Değişkeni</text>
+
+  <!-- Sağ alt: Bildirim -->
+  <rect x="465" y="220" width="120" height="70" rx="12" fill="url(#boxGrad6)" filter="url(#shadow)"/>
+  <text x="525" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#991b1b">Bildirim:</text>
+  <text x="525" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b91c1c">const</text>
+  <text x="525" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b91c1c">let</text>
+  <text x="525" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#b91c1c">var</text>
+
+  <!-- Alt orta: Kod bloğu -->
+  <rect x="255" y="240" width="130" height="44" rx="12" fill="url(#boxGrad3)" filter="url(#shadow)"/>
+  <text x="320" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#064e3b">Kod Bloğu</text>
+  <text x="320" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#065f46">her eleman için</text>
+
+  <!-- Oklar: Iterable -> For/Of -->
+  <path d="M175,77 L245,125" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="245,125 235,118 238,128" fill="#64748b"/>
+
+  <!-- Oklar: Türler -> For/Of -->
+  <path d="M175,255 L245,150" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="245,150 235,155 240,145" fill="#64748b"/>
+
+  <!-- Oklar: For/Of -> Element -->
+  <path d="M395,125 L455,77" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="455,77 445,75 450,84" fill="#64748b"/>
+
+  <!-- Oklar: For/Of -> Bildirim -->
+  <path d="M395,150 L455,255" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="455,255 447,248 450,260" fill="#64748b"/>
+
+  <!-- Oklar: For/Of -> Kod Bloğu -->
+  <path d="M320,166 L320,230" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="320,230 315,222 325,222" fill="#64748b"/>
+
+  <!-- Döngü oku (sağdan sola dönüş) -->
+  <path d="M525,99 C580,140 580,180 525,215" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <polygon points="525,215 530,205 518,208" fill="#f59e0b"/>
+
+  <!-- Döngü etiketi -->
+  <text x="585" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#b45309" transform="rotate(90,585,160)">döngü</text>
+
+  <!-- Örnek küçük not -->
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6b7280">Her iterasyon: element = sıradaki değer</text>
+</svg>

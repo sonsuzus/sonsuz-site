@@ -14,7 +14,11 @@ tags:
 redirect_from:
   - /posts/js-kosul-ifadeleri/
 toc: true
+image: /img/js-kosul-ifadeleri-32.png
 ---
+
+![js-kosul-ifadeleri-32](/img/js-kosul-ifadeleri-32.svg)
+
 
 Javascript uygulamalarında belli bir duruma bağlı olan farklı kod bloklarını çalıştırmak istediğimizde if-else ve else-if bloklarını kullanırız.
 

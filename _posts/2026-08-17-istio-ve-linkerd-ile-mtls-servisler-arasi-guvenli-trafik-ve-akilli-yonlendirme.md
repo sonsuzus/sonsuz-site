@@ -9,6 +9,7 @@ tags:
   - linkerd
   - mtls
 toc: true
+image: /img/istio-ve-linkerd-98.png
 ---
 
 Mikroservis mimarisinde bir isteğin kaç farklı servisten geçtiğini takip etmek bile bazen dedektiflik gerektirir. Güvenlik açısından daha kritik soru ise şudur: Bu servisler gerçekten birbirleriyle konuştuğunu sandıkları servisler mi? Servis ağı (service mesh), uygulama kodunu güvenlik ve ağ politikalarıyla şişirmeden bu sorunu çözmek için tasarlanır. Istio ve Linkerd; şifreleme, kimlik doğrulama, yetkilendirme, gözlemlenebilirlik ve trafik yönetimini altyapı katmanına taşır.
@@ -29,6 +30,9 @@ Burada $M$ mesajı, $K_s$ oturum anahtarını, $E$ şifreleme işlemini ve $C$ �
 | İstemci kimliği doğrulama | Genellikle yok | Var |
 | Servis-servis iletişimi | Sınırlı güvence | Güçlü kimlik güvencesi |
 | Yetkilendirme politikası | IP/başlık odaklı olabilir | İş yükü kimliği odaklıdır |
+
+![istio-ve-linkerd-98](/img/istio-ve-linkerd-98.svg)
+
 
 ## Istio: Ayrıntılı kontrol paneli
 

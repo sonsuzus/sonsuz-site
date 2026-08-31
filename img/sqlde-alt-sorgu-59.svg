@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7eb8da"/>
+      <stop offset="100%" stop-color="#5a9bc7"/>
+    </linearGradient>
+    <linearGradient id="subGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8b9"/>
+      <stop offset="100%" stop-color="#8cc9a3"/>
+    </linearGradient>
+    <linearGradient id="subGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2c9a0"/>
+      <stop offset="100%" stop-color="#eab37a"/>
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4a5e5"/>
+      <stop offset="100%" stop-color="#c08ad4"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0a0a0"/>
+      <stop offset="100%" stop-color="#e08080"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#3a5a7a">SQL Alt Sorgu Mimarisi</text>
+
+  <!-- Dış sorgu kutusu (ana kapsayıcı) -->
+  <rect x="80" y="50" width="480" height="220" rx="16" fill="#e8f0fe" stroke="#5a9bc7" stroke-width="2" filter="url(#shadow)" opacity="0.9"/>
+  <text x="100" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a6a8a">DIŞ SORGU (Ana Sorgu)</text>
+
+  <!-- Alt sorgu kutusu 1 -->
+  <rect x="120" y="95" width="200" height="70" rx="12" fill="url(#subGrad1)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="220" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2d5a3d">ALT SORGU 1</text>
+  <text x="220" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a4a">Filtreleme</text>
+  <text x="220" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6a4a">Hesaplama</text>
+
+  <!-- Alt sorgu kutusu 2 -->
+  <rect x="360" y="95" width="170" height="70" rx="12" fill="url(#subGrad2)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="445" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a4a2a">ALT SORGU 2</text>
+  <text x="445" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a5a3a">Seçme</text>
+  <text x="445" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a5a3a">Dinamik veri</text>
+
+  <!-- İç içe alt sorgu (matruşka) -->
+  <rect x="155" y="185" width="130" height="55" rx="10" fill="url(#innerGrad)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="220" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="bold" fill="#5a2a7a">İÇ İÇE</text>
+  <text x="220" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a3a8a">Alt Sorgu</text>
+
+  <!-- Sonuç kutusu -->
+  <rect x="360" y="185" width="170" height="55" rx="12" fill="url(#resultGrad)" filter="url(#shadowLight)" opacity="0.95"/>
+  <text x="445" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a2a2a">SONUÇ</text>
+  <text x="445" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a3a3a">Nihai veri</text>
+
+  <!-- Oklar (manuel çizim) -->
+  <!-- Ana sorgudan alt sorgu 1'e -->
+  <line x1="220" y1="95" x2="220" y2="80" stroke="#5a9bc7" stroke-width="2"/>
+  <polygon points="215,82 220,72 225,82" fill="#5a9bc7"/>
+
+  <!-- Ana sorgudan alt sorgu 2'ye -->
+  <line x1="445" y1="95" x2="445" y2="80" stroke="#5a9bc7" stroke-width="2"/>
+  <polygon points="440,82 445,72 450,82" fill="#5a9bc7"/>
+
+  <!-- Alt sorgu 1'den iç içe alt sorguya -->
+  <line x1="220" y1="165" x2="220" y2="185" stroke="#8cc9a3" stroke-width="2"/>
+  <polygon points="215,177 220,187 225,177" fill="#8cc9a3"/>
+
+  <!-- Alt sorgu 1'den sonuca -->
+  <path d="M 320 130 L 360 130" stroke="#8cc9a3" stroke-width="2" fill="none"/>
+  <polygon points="352,125 362,130 352,135" fill="#8cc9a3"/>
+
+  <!-- İç içe alt sorgudan sonuca -->
+  <path d="M 285 212 L 360 212" stroke="#c08ad4" stroke-width="2" fill="none"/>
+  <polygon points="352,207 362,212 352,217" fill="#c08ad4"/>
+
+  <!-- Alt sorgu 2'den sonuca -->
+  <line x1="445" y1="165" x2="445" y2="185" stroke="#eab37a" stroke-width="2"/>
+  <polygon points="440,177 445,187 450,177" fill="#eab37a"/>
+
+  <!-- Veri akışı etiketi -->
+  <text x="310" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8a9a" transform="rotate(-90, 310, 145)">veri akışı</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7a8a9a">Dinamik sorgular için iç içe yapılar</text>
+
+  <!-- Dekoratif noktalar -->
+  <circle cx="80" cy="50" r="4" fill="#5a9bc7" opacity="0.3"/>
+  <circle cx="560" cy="50" r="4" fill="#8cc9a3" opacity="0.3"/>
+  <circle cx="80" cy="270" r="4" fill="#eab37a" opacity="0.3"/>
+  <circle cx="560" cy="270" r="4" fill="#c08ad4" opacity="0.3"/>
+</svg>

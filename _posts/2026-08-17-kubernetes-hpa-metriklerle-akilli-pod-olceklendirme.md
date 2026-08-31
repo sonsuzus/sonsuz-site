@@ -9,6 +9,7 @@ tags:
   - hpa
   - autoscaling
 toc: true
+image: /img/kubernetes-hpa-metriklerle-35.png
 ---
 
 Kubernetes kümesinde trafik bazen sakin bir mahalle, bazen de indirim gününde açılmış bir mağaza gibidir. Horizontal Pod Autoscaler (HPA), bu dalgalanmayı izleyip uygulamanın pod sayısını otomatik artırır veya azaltır. Ancak HPA bir “CPU yükseldi, pod ekle” düğmesi değildir; metrikleri hedeflerle karşılaştıran, oran hesaplayan ve kararsızlığı önleyen kontrollü bir karar mekanizmasıdır. Bu mekanizmayı anlamak, hem gereksiz maliyetleri hem de yoğun saatlerde yaşanan gecikmeleri azaltmanın anahtarıdır.
@@ -95,3 +96,6 @@ behavior:
 ```
 
 Bu ayar, büyümede bir dakikada pod sayısını en fazla %100 artırır; küçülmede ise son beş dakikanın daha güvenli önerilerini dikkate alır ve dakikada en fazla %25 azaltır. HPA’yı doğrulamak için `kubectl describe hpa api-hpa` komutunu çalıştırın. Burada güncel metrikler, hedefler, hesaplanan replika sayısı ve başarısız metrik sorguları görünür. İyi bir HPA yapılandırması yalnızca hızlı ölçeklenmez; doğru metriği seçer, kaynak isteklerini tanımlar ve sistemin ritmini bozmadan hareket eder.
+
+![kubernetes-hpa-metriklerle-35](/img/kubernetes-hpa-metriklerle-35.svg)
+

@@ -8,6 +8,7 @@ tags:
   - jwt
   - refresh token
   - kimlik doğrulama
+image: /img/jwt-refresh-token-38.png
 ---
 
 JWT tabanlı kimlik doğrulama, stateless yapısı sayesinde ölçeklenebilir uygulamalarda oldukça popülerdir; ancak token çalınması, uzun oturumlar ve cihaz yönetimi gibi konular dikkatli tasarlanmadığında ciddi güvenlik açıkları doğurur. Bu noktada **kısa ömürlü access token** ve **rotasyona tabi refresh token** ikilisi, hem kullanıcı deneyimini hem de güvenlik seviyesini dengeler.
@@ -79,3 +80,6 @@ Bu örnekte refresh token JWT olmak zorunda değildir; yüksek entropili rastgel
 | Tam stateless JWT | Hızlı doğrulama | Anlık iptal ve cihaz kontrolü zordur |
 
 Son olarak cookie kullanılıyorsa `HttpOnly`, `Secure`, uygun `SameSite` politikası ve CSRF önlemi uygulanmalıdır. Mobil istemcilerde token'ı işletim sisteminin güvenli depolama alanında saklamak gerekir. Rotasyon, tek başına sihirli bir kalkan değildir; kısa access token ömrü, oturum iptali, cihaz görünürlüğü, hız sınırlama ve ayrıntılı güvenlik kayıtlarıyla birleştiğinde sağlam bir oturum mimarisine dönüşür.
+
+![jwt-refresh-token-38](/img/jwt-refresh-token-38.svg)
+

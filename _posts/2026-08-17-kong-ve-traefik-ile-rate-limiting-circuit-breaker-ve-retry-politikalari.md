@@ -9,7 +9,11 @@ tags:
   - kong
   - traefik
 toc: true
+image: /img/kong-ve-traefik-55.png
 ---
+
+![kong-ve-traefik-55](/img/kong-ve-traefik-55.svg)
+
 
 Modern mikroservis mimarisinde API Gateway yalnızca istekleri doğru servise yönlendiren bir trafik polisi değildir; aynı zamanda sistemin kapısındaki güvenlik görevlisi, tamponu ve kriz yöneticisidir. Kong ve Traefik gibi gateway'ler üzerinden rate limiting, circuit breaker ve retry politikaları tanımlamak; ani trafik patlamalarının, geçici ağ hatalarının ve domino etkisi yaratan servis arızalarının tüm platformu devirmesini engeller.
 ``

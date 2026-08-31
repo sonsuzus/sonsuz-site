@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="traceGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9ed8ee"/>
+      <stop offset="100%" stop-color="#b6e5be"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#52718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#52718a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="596" cy="35" r="70" fill="#dceffc" opacity="0.55"/>
+  <circle cx="35" cy="292" r="85" fill="#ddf1db" opacity="0.48"/>
+
+  <text x="28" y="30" fill="#365064" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Dağıtık İzleme: Kritik Yol</text>
+  <text x="28" y="48" fill="#6c8291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tek istek • span bağlamı • darboğaz analizi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="75" width="108" height="57" rx="15" fill="#ffffff"/>
+    <rect x="42" y="89" width="24" height="24" rx="8" fill="#dceefd"/>
+    <path d="M48 101h12M54 95v12" stroke="#4d93bd" stroke-width="2" stroke-linecap="round"/>
+    <text x="75" y="100" fill="#385467" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">İstemci</text>
+    <text x="75" y="116" fill="#738894" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İstek</text>
+  </g>
+
+  <path d="M137 103 H159" fill="none" stroke="#77aabb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="159,103 152,98 152,108" fill="#77aabb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="164" y="75" width="114" height="57" rx="15" fill="#ffffff"/>
+    <rect x="178" y="89" width="25" height="24" rx="8" fill="#e5dcfb"/>
+    <path d="M184 101h13M190.5 94.5v13" stroke="#8066ba" stroke-width="2" stroke-linecap="round"/>
+    <text x="212" y="100" fill="#385467" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">API Geçidi</text>
+    <text x="212" y="116" fill="#738894" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kök span</text>
+  </g>
+
+  <path d="M279 103 H301" fill="none" stroke="#77aabb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="301,103 294,98 294,108" fill="#77aabb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="306" y="75" width="115" height="57" rx="15" fill="#ffffff"/>
+    <rect x="320" y="89" width="25" height="24" rx="8" fill="#d9f2e2"/>
+    <path d="M326 101h13M332.5 94.5v13" stroke="#54a879" stroke-width="2" stroke-linecap="round"/>
+    <text x="354" y="100" fill="#385467" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Sipariş</text>
+    <text x="354" y="116" fill="#738894" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Alt span</text>
+  </g>
+
+  <path d="M422 103 H443" fill="none" stroke="#77aabb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="443,103 436,98 436,108" fill="#77aabb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="448" y="75" width="108" height="57" rx="15" fill="#ffffff"/>
+    <rect x="462" y="89" width="25" height="24" rx="8" fill="#ffe9cf"/>
+    <path d="M468 101h13M474.5 94.5v13" stroke="#d18b45" stroke-width="2" stroke-linecap="round"/>
+    <text x="496" y="100" fill="#385467" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Ödeme</text>
+    <text x="496" y="116" fill="#738894" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Alt span</text>
+  </g>
+
+  <path d="M557 103 H578" fill="none" stroke="#77aabb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="578,103 571,98 571,108" fill="#77aabb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="583" y="75" width="39" height="57" rx="15" fill="#ffffff"/>
+    <ellipse cx="602.5" cy="94" rx="10" ry="4.5" fill="#f4d5d3"/>
+    <path d="M592.5 94v13c0 2.5 20 2.5 20 0V94M592.5 100.5c0 2.5 20 2.5 20 0" fill="none" stroke="#c56d69" stroke-width="1.5"/>
+    <text x="590" y="122" fill="#738894" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Veri</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="28" y="158" width="584" height="83" rx="18" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <text x="48" y="183" fill="#496474" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Waterfall görünümü</text>
+  <text x="48" y="207" fill="#6e8590" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Trace</text>
+  <line x1="109" y1="176" x2="109" y2="222" stroke="#dbe7eb" stroke-width="1"/>
+  <line x1="206" y1="176" x2="206" y2="222" stroke="#e4edef" stroke-width="1"/>
+  <line x1="303" y1="176" x2="303" y2="222" stroke="#e4edef" stroke-width="1"/>
+  <line x1="400" y1="176" x2="400" y2="222" stroke="#e4edef" stroke-width="1"/>
+  <line x1="497" y1="176" x2="497" y2="222" stroke="#e4edef" stroke-width="1"/>
+  <text x="116" y="188" fill="#77909c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">0 ms</text>
+  <text x="292" y="188" fill="#77909c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">500</text>
+  <text x="482" y="188" fill="#77909c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">1000</text>
+
+  <text x="48" y="225" fill="#607985" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İstek</text>
+  <rect x="109" y="213" width="442" height="14" rx="7" fill="url(#traceGrad)"/>
+  <text x="48" y="248" fill="#607985" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ödeme</text>
+  <rect x="264" y="236" width="230" height="14" rx="7" fill="#f4b9a9"/>
+  <rect x="264" y="236" width="230" height="14" rx="7" fill="none" stroke="#dc806e" stroke-width="1"/>
+  <path d="M505 243 H540" fill="none" stroke="#d66e5e" stroke-width="1.8" stroke-dasharray="3 3"/>
+  <polygon points="540,243 533,238 533,248" fill="#d66e5e"/>
+  <text x="506" y="235" fill="#c45f55" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Darboğaz</text>
+
+  <path d="M320 251 V267" fill="none" stroke="#81a9ae" stroke-width="2"/>
+  <polygon points="320,267 315,260 325,260" fill="#81a9ae"/>
+
+  <g filter="url(#shadow)">
+    <rect x="204" y="272" width="232" height="35" rx="14" fill="#eaf5f2"/>
+    <circle cx="226" cy="289.5" r="10" fill="#a8d9cb"/>
+    <path d="M222 290l3 3 6-7" fill="none" stroke="#397c6d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="246" y="293.5" fill="#3e6765" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">OpenTelemetry Collector</text>
+  </g>
+
+  <path d="M436 289.5 H461" fill="none" stroke="#81a9ae" stroke-width="2"/>
+  <polygon points="461,289.5 454,284.5 454,294.5" fill="#81a9ae"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="466" y="270" width="68" height="28" rx="10" fill="#e3eefb"/>
+    <text x="480" y="288.5" fill="#47749b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Jaeger</text>
+    <rect x="542" y="270" width="70" height="28" rx="10" fill="#f3e8fc"/>
+    <text x="556" y="288.5" fill="#79568d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Zipkin</text>
+  </g>
+</svg>

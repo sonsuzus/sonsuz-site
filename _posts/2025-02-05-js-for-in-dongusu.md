@@ -12,6 +12,7 @@ tags:
   - programlama
 redirect_from:
   - /posts/js-for-in-dongusu/
+image: /img/js-for-in-86.png
 ---
 
 Javascript **for/in** döngüsü ile bir javascript nesnesinin tüm özelliklerine ulaşabiliriz. 
@@ -93,4 +94,7 @@ for (x in sayilar) {
 * Gene aynı şekilde dizi elemanlarının indeks değerlerine (x => 0, 1, 2) teker teker ulaşırız.
 * X değerlerine göre dizinin her bir değerini alabiliriz. (console.log(sayilar[x]) => sayilar[0], sayilar[1],sayilar[2])
 * Key bilgilerini almak için console.log(x) yazabilirsiniz.
+
+
+![js-for-in-86](/img/js-for-in-86.svg)
 

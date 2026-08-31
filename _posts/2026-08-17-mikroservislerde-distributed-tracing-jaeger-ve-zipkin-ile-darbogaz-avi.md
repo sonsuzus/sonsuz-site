@@ -11,6 +11,7 @@ tags:
   - zipkin
   - performans
 toc: true
+image: /img/mikroservislerde-distributed-tracing-28.png
 ---
 
 Mikroservis mimarisinde tek bir kullanıcı isteği, çoğu zaman API Gateway’den başlayıp kimlik doğrulama, katalog, ödeme, stok ve bildirim servisleri arasında dolaşır. Bir sayfanın üç saniyede açılması can sıkıcıdır; fakat asıl zor soru şudur: Bu üç saniyeyi hangi servis, hangi veritabanı sorgusu veya hangi ağ çağrısı tüketti? Distributed tracing, isteğin yolculuğunu uçtan uca görünür hâle getirerek tahmin oyununu ölçülebilir bir performans araştırmasına dönüştürür.
@@ -85,3 +86,6 @@ Flask enstrümantasyonu HTTP sunucu span’ini otomatik oluşturur. Elle eklenen
 | Kuyrukta bekleme yüksek | Tüketici kapasitesi yetersiz | Consumer sayısını ve mesaj işleme süresini ölç |
 
 Son olarak sampling stratejisini unutmayın. Her isteği kaydetmek yüksek trafikte maliyetlidir. Hata içeren veya yavaş trace’leri daha yüksek oranda örnekleyen tail-based sampling, hem depolama maliyetini kontrol eder hem de performans soruşturmalarında gerekli kanıtları saklar.
+
+![mikroservislerde-distributed-tracing-28](/img/mikroservislerde-distributed-tracing-28.svg)
+

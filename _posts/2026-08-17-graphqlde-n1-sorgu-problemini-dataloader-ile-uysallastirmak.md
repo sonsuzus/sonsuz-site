@@ -9,6 +9,7 @@ tags:
   - dataloader
   - node.js
 toc: true
+image: /img/graphqlde-n1-sorgu-95.png
 ---
 
 GraphQL, istemciye ihtiyacı olan veriyi seçme özgürlüğü verir; fakat bu esneklik resolver katmanında gizli bir maliyet doğurabilir. Kullanıcıları ve her kullanıcının gönderilerini listeleyen basit bir sorgu düşünün: kullanıcılar için bir sorgu, ardından her kullanıcı için ayrı gönderi sorgusu çalışır. Veri tabanı açısından masum görünen bu akış, kullanıcı sayısı arttıkça bir sorgu fırtınasına dönüşür. İşte bu klasik **N+1 problemi**dir.
@@ -27,6 +28,9 @@ $$Q = 1 + N$$
 | Resolver başına sorgu | $1 + N$ | Yazması çok kolay | N+1 ve yüksek gecikme |
 | SQL `JOIN` | Genellikle 1 | Hızlı, doğrudan | Satır çoğalması ve karmaşık eşleme |
 | DataLoader toplu yükleme | Yaklaşık 2 | Resolver'lar temiz kalır | Doğru yaşam döngüsü gerekir |
+
+![graphqlde-n1-sorgu-95](/img/graphqlde-n1-sorgu-95.svg)
+
 
 ## DataLoader’ın iki süper gücü: batching ve cache
 

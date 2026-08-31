@@ -11,6 +11,7 @@ tags:
   - performans testi
   - streaming
 toc: true
+image: /img/grpc-streaming-mi-38.png
 ---
 
 Modern servisler yalnızca istek alıp JSON döndüren yapılardan ibaret değil: canlı konum, borsa verisi, oyun olayları ve telemetri akışları sürekli iletişim bekliyor. Bu noktada gRPC’nin HTTP/2 üzerinde çalışan streaming modeli, REST’in klasik istek-cevap ritmine güçlü bir alternatif sunar. Ancak “gRPC her zaman hızlıdır” demek yerine; gecikme, mesaj boyutu, eşzamanlı bağlantı ve iş yükü türü üzerinden ölçüm yapmak gerekir.
@@ -29,6 +30,9 @@ Dört temel iletişim biçimi vardır:
 | Server streaming | 1 | N | Log veya fiyat akışı |
 | Client streaming | N | 1 | Toplu telemetri yükleme |
 | Bidirectional streaming | N | N | Sohbet, oyun, ortak düzenleme |
+
+![grpc-streaming-mi-38](/img/grpc-streaming-mi-38.svg)
+
 
 Çift yönlü akışta taraflar birbirini beklemek zorunda değildir. Sunucu olay gönderirken istemci de yeni komutlar iletebilir. Bu asenkron yapı, polling yaklaşımının ürettiği gereksiz istekleri azaltır.
 

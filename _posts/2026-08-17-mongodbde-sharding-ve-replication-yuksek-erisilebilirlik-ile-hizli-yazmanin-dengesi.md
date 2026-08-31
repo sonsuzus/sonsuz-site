@@ -9,6 +9,7 @@ tags:
   - sharding
   - replication
 toc: true
+image: /img/mongodbde-sharding-ve-66.png
 ---
 
 MongoDB, büyüyen uygulamalarda yalnızca daha fazla veri saklama problemiyle değil, aynı anda gelen binlerce isteği güvenle işleme problemiyle de karşılaşır. Bu noktada **replication**, sistemin ayakta kalmasını sağlayan güvenlik ağıdır; **sharding** ise veriyi ve yazma yükünü birden fazla makineye dağıtan ölçekleme motorudur. İkisini birlikte doğru tasarlamak, hem kesintilere dayanıklı hem de yüksek yazma kapasiteli bir mimari oluşturur.
@@ -72,3 +73,6 @@ sh.shardCollection(
 ## Dengeli mimari için sonuç
 
 En sağlam pratik, her shard’ı üç üyeli bir replica set olarak çalıştırmaktır. Replication erişilebilirliği, sharding ise yazma paralelliğini getirir. Buna ek olarak shard key’i gerçek sorgulara göre seçmek, majority write concern’i kritik veride kullanmak ve balancer durumunu izlemek gerekir. Kısacası MongoDB’de hız, yalnızca daha çok sunucu eklemekle değil; verinin nereye, hangi garantilerle ve hangi erişim desenine göre yazıldığını bilinçli tasarlamakla gelir.
+
+![mongodbde-sharding-ve-66](/img/mongodbde-sharding-ve-66.svg)
+

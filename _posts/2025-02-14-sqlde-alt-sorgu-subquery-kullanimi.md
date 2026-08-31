@@ -15,6 +15,7 @@ tags:
 redirect_from:
   - /posts/sqlde-alt-sorgu-subquery-kullanimi/
 toc: true
+image: /img/sqlde-alt-sorgu-59.png
 ---
 
 
@@ -486,3 +487,6 @@ Birçok alt sorgu JOIN işlemleri, birçok JOIN işlemi de alt sorgular kullanar
 Birçok alt sorgunun JOIN işlemleri kullanılarak yeniden yazılabildiğinden bahsetmiştik. Alt sorgu kullanmaya ihtiyacınız olup olmadığına karar verirken, kullandıınız her bir alt sorgunun ek bilgi işlem gücü gerektirdiğini bilmek önemlidir. 
 
 Alt sorgu kullanımına karar verirken çalıştığınız veri tabanının büyüklüğünü ve sorgu sonucunda döndürdüğünüz kayıt sayısını göz önünde bulundurmanızı tavsiye ederim.
+
+![sqlde-alt-sorgu-59](/img/sqlde-alt-sorgu-59.svg)
+

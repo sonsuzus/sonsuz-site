@@ -9,7 +9,11 @@ tags:
   - ters indeks
   - bm25
 toc: true
+image: /img/elasticsearchte-ters-indeks-93.png
 ---
+
+![elasticsearchte-ters-indeks-93](/img/elasticsearchte-ters-indeks-93.svg)
+
 
 Elasticsearch, milyonlarca belge arasında milisaniyeler içinde arama yapabilmesini büyük ölçüde **ters indeks** (inverted index) adlı yapıya borçludur. Klasik bir veritabanında “bu belgenin içinde hangi kelimeler var?” sorusu öne çıkarken, ters indeks “bu kelime hangi belgelerde geçiyor?” sorusunu merkeze alır. Arama motoru dünyasının sihirbaz şapkası tam olarak budur.
 ``

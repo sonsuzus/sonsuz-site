@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="boxIf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#7ec8e3"/>
+    </linearGradient>
+    <linearGradient id="boxElse" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb8b8"/>
+      <stop offset="100%" stop-color="#ff8a8a"/>
+    </linearGradient>
+    <linearGradient id="boxElseIf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b8e0b8"/>
+      <stop offset="100%" stop-color="#8fd48f"/>
+    </linearGradient>
+    <linearGradient id="boxStart" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c3a6e0"/>
+      <stop offset="100%" stop-color="#a882d1"/>
+    </linearGradient>
+    <linearGradient id="boxCode" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5e6a8"/>
+      <stop offset="100%" stop-color="#eed88a"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlangıç -->
+  <rect x="260" y="15" width="120" height="38" rx="19" fill="url(#boxStart)" filter="url(#shadow)"/>
+  <text x="320" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Başlangıç</text>
+
+  <!-- Ok: Başlangıç -> if -->
+  <path d="M320 53 L320 70" stroke="#555" stroke-width="2" fill="none"/>
+  <polygon points="315,70 320,80 325,70" fill="#555"/>
+
+  <!-- if Bloğu -->
+  <rect x="225" y="80" width="190" height="42" rx="8" fill="url(#boxIf)" filter="url(#shadow)"/>
+  <text x="320" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">if (koşul)</text>
+
+  <!-- Ok: if true -->
+  <path d="M415 101 L470 101" stroke="#2d8a4e" stroke-width="2" fill="none"/>
+  <polygon points="470,96 480,101 470,106" fill="#2d8a4e"/>
+  <text x="445" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d8a4e" font-weight="bold">true</text>
+
+  <!-- true kutusu -->
+  <rect x="480" y="80" width="130" height="42" rx="8" fill="url(#boxCode)" filter="url(#shadow)"/>
+  <text x="545" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#333">kod bloğu</text>
+  <text x="545" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#333">çalışır</text>
+
+  <!-- Ok: if false -->
+  <path d="M320 122 L320 155" stroke="#c0392b" stroke-width="2" fill="none"/>
+  <polygon points="315,155 320,165 325,155" fill="#c0392b"/>
+  <text x="335" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c0392b" font-weight="bold">false</text>
+
+  <!-- else if Bloğu -->
+  <rect x="225" y="165" width="190" height="42" rx="8" fill="url(#boxElseIf)" filter="url(#shadow)"/>
+  <text x="320" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">else if (koşul)</text>
+
+  <!-- Ok: else if true -->
+  <path d="M415 186 L470 186" stroke="#2d8a4e" stroke-width="2" fill="none"/>
+  <polygon points="470,181 480,186 470,191" fill="#2d8a4e"/>
+  <text x="445" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d8a4e" font-weight="bold">true</text>
+
+  <!-- true kutusu 2 -->
+  <rect x="480" y="165" width="130" height="42" rx="8" fill="url(#boxCode)" filter="url(#shadow)"/>
+  <text x="545" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#333">kod bloğu</text>
+  <text x="545" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#333">çalışır</text>
+
+  <!-- Ok: else if false -->
+  <path d="M320 207 L320 240" stroke="#c0392b" stroke-width="2" fill="none"/>
+  <polygon points="315,240 320,250 325,240" fill="#c0392b"/>
+  <text x="335" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c0392b" font-weight="bold">false</text>
+
+  <!-- else Bloğu -->
+  <rect x="225" y="250" width="190" height="42" rx="8" fill="url(#boxElse)" filter="url(#shadow)"/>
+  <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">else</text>
+
+  <!-- Ok: else -->
+  <path d="M415 271 L470 271" stroke="#2d8a4e" stroke-width="2" fill="none"/>
+  <polygon points="470,266 480,271 470,276" fill="#2d8a4e"/>
+  <text x="445" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d8a4e" font-weight="bold">true</text>
+
+  <!-- true kutusu 3 -->
+  <rect x="480" y="250" width="130" height="42" rx="8" fill="url(#boxCode)" filter="url(#shadow)"/>
+  <text x="545" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#333">kod bloğu</text>
+  <text x="545" y="283" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#333">çalışır</text>
+
+  <!-- Bitiş -->
+  <rect x="260" y="290" width="120" height="20" rx="10" fill="#888" filter="url(#shadow)"/>
+  <text x="320" y="304" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="bold">Bitiş</text>
+  <path d="M320 292 L320 290" stroke="#555" stroke-width="2" fill="none"/>
+</svg>

@@ -11,7 +11,11 @@ tags:
   - programlama
 redirect_from:
   - /posts/js-foreach/
+image: /img/js-foreach-58.png
 ---
+
+![js-foreach-58](/img/js-foreach-58.svg)
+
 
 **Js forEach()** fonksiyonu ile bir dizideki tüm elemanlara kolaylıkla dolaşabiliriz.
 

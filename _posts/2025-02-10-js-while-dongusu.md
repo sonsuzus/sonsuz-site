@@ -10,6 +10,7 @@ tags:
   - while
 redirect_from:
   - /posts/js-while-dongusu/
+image: /img/js-while-dongusu-38.png
 ---
 
 Bir duruma bağlı olarak tekrarlayan işlemleri gerçekleştirmek için js while döngüsünü kullanırız.
@@ -193,3 +194,6 @@ sayi başlangıçta 0 değerine eşitleniyor çünkü kullanıcı sayı girmeden
 Kullanıcı sayi girdikten sonra while bloğunda girilen sayının pozitif kontrolü yapılıyor ve pozitif olduğu sürece toplam hesaplanıyor.
 
 Kullanıcı negatif değer girerse döngüden çıkılıyor.
+
+![js-while-dongusu-38](/img/js-while-dongusu-38.svg)
+

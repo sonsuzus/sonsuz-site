@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="hpa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#766ee8"/>
+      <stop offset="100%" stop-color="#9d8cf0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#58708b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="158" r="108" fill="#dcecf5" opacity="0.35"/>
+  <circle cx="319" cy="158" r="83" fill="#e9e6fc" opacity="0.46"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#30445c">
+    <!-- Metrics sources -->
+    <g filter="url(#shadow)">
+      <rect x="25" y="42" width="124" height="54" rx="14" fill="#d9f1ed"/>
+      <rect x="25" y="112" width="124" height="54" rx="14" fill="#e3edff"/>
+      <rect x="25" y="182" width="124" height="54" rx="14" fill="#ffeacf"/>
+    </g>
+    <circle cx="49" cy="69" r="11" fill="#65b9a9"/>
+    <path d="M43 70h4l3-6 3 11 3-5h5" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="68" y="66" font-weight="600">Metrics API</text>
+    <text x="68" y="82" fill="#65798e">CPU ve bellek</text>
+
+    <circle cx="49" cy="139" r="11" fill="#6d9ee8"/>
+    <path d="M42 142h14M44 137h10M47 132h4" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="68" y="136" font-weight="600">Özel metrik</text>
+    <text x="68" y="152" fill="#65798e">Aktif istekler</text>
+
+    <circle cx="49" cy="209" r="11" fill="#e2a14f"/>
+    <path d="M43 205h12v9H43zM46 202v3M52 202v3" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="68" y="206" font-weight="600">Harici metrik</text>
+    <text x="68" y="222" fill="#65798e">Kuyruk yükü</text>
+
+    <!-- Incoming connectors -->
+    <path d="M150 69 C177 69 175 116 207 124" fill="none" stroke="#8aa4b3" stroke-width="2"/>
+    <polygon points="213,126 204,120 206,130" fill="#8aa4b3"/>
+    <path d="M150 139 H201" fill="none" stroke="#8aa4b3" stroke-width="2"/>
+    <polygon points="213,139 202,134 202,144" fill="#8aa4b3"/>
+    <path d="M150 209 C177 209 178 167 207 157" fill="none" stroke="#8aa4b3" stroke-width="2"/>
+    <polygon points="213,155 204,153 208,163" fill="#8aa4b3"/>
+
+    <!-- HPA -->
+    <g filter="url(#shadow)">
+      <rect x="214" y="91" width="190" height="135" rx="23" fill="url(#hpa)"/>
+      <rect x="229" y="140" width="160" height="64" rx="13" fill="#ffffff" opacity="0.16"/>
+    </g>
+    <text x="309" y="121" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">HPA Denetleyicisi</text>
+    <path d="M243 150h19M243 157h30M243 164h23" stroke="#fff" opacity="0.9" stroke-width="2" stroke-linecap="round"/>
+    <text x="277" y="157" fill="#fff" font-weight="600">Oran hesabı</text>
+    <text x="277" y="176" fill="#f3f1ff">En yüksek öneri</text>
+    <text x="309" y="214" text-anchor="middle" fill="#edeaff">min 2  •  max 12</text>
+
+    <!-- Main flow -->
+    <path d="M405 158 H449" fill="none" stroke="#758da4" stroke-width="2.5"/>
+    <polygon points="460,158 448,152 448,164" fill="#758da4"/>
+
+    <!-- Deployment -->
+    <g filter="url(#shadow)">
+      <rect x="461" y="108" width="151" height="100" rx="18" fill="#fff" stroke="#d4e0e9"/>
+    </g>
+    <rect x="479" y="123" width="35" height="26" rx="7" fill="#dceafc"/>
+    <path d="M486 131h21M486 138h15" stroke="#6093d6" stroke-width="2" stroke-linecap="round"/>
+    <text x="527" y="137" font-weight="700">Deployment</text>
+    <text x="527" y="154" fill="#6e8293">replicas: 6</text>
+
+    <path d="M483 177h111" stroke="#c8d6df" stroke-width="1.5"/>
+    <g>
+      <rect x="486" y="184" width="21" height="11" rx="4" fill="#8acbbd"/>
+      <rect x="514" y="184" width="21" height="11" rx="4" fill="#8acbbd"/>
+      <rect x="542" y="184" width="21" height="11" rx="4" fill="#8acbbd"/>
+      <rect x="570" y="184" width="21" height="11" rx="4" fill="#8acbbd"/>
+    </g>
+
+    <!-- behavior -->
+    <path d="M309 227 V249" fill="none" stroke="#8aa4b3" stroke-width="2"/>
+    <polygon points="309,258 303,247 315,247" fill="#8aa4b3"/>
+    <g filter="url(#shadow)">
+      <rect x="181" y="259" width="257" height="46" rx="15" fill="#fff"/>
+    </g>
+    <circle cx="207" cy="282" r="13" fill="#f4c879"/>
+    <path d="M207 274v8l6 4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="230" y="278" font-weight="700">Davranış kuralları</text>
+    <text x="230" y="294" fill="#6b7f90">Büyüme hızlı  •  Küçülme sakin</text>
+
+    <!-- formula badge -->
+    <g filter="url(#shadow)">
+      <rect x="477" y="239" width="133" height="51" rx="14" fill="#edf6e8"/>
+    </g>
+    <text x="543" y="260" text-anchor="middle" font-weight="700" fill="#507658">Önerilen pod</text>
+    <text x="543" y="278" text-anchor="middle" fill="#5d7770">Mevcut × Ölçüm / Hedef</text>
+  </g>
+</svg>

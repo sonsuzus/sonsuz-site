@@ -8,9 +8,13 @@ tags:
   - apache kafka
   - throughput
   - consumer group
+image: /img/kafka-throughput-laboratuvari-83.png
 ---
 
 Apache Kafka'da yüksek iş hacmi yalnızca daha güçlü sunucular eklemekle elde edilmez; partition sayısı, consumer group içindeki tüketici sayısı, mesaj boyutu ve disk-ağ kapasitesi birlikte çalışır. En iyi yapılandırma, tahminle değil ölçümle bulunur. Bu yazıda kontrollü deneyler kurarak partition ve consumer group kararlarının üretim (produce) ve tüketim (consume) throughput'unu nasıl değiştirdiğini inceleyeceğiz.
+
+![kafka-throughput-laboratuvari-83](/img/kafka-throughput-laboratuvari-83.svg)
+
 ``
 
 Kafka'nın paralellik birimi **partition**'dır. Bir topic içindeki her partition, sıralı ve değiştirilemez bir kayıt günlüğüdür. Aynı consumer group'ta bir partition aynı anda yalnızca tek bir consumer tarafından okunabilir. Bu nedenle etkin tüketim paralelliği kabaca şu formülle sınırlıdır:

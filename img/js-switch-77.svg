@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLight" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">JavaScript Switch Akışı</text>
+
+  <!-- Giriş kutusu: switch(ifade) -->
+  <rect x="245" y="48" width="150" height="40" rx="10" fill="#dbe9f7" stroke="#7fa8c9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="73" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5c" font-weight="bold">switch(ifade)</text>
+
+  <!-- Ok: girişten case'lere -->
+  <path d="M320 88 L320 108" stroke="#5a8ab5" stroke-width="2" fill="none"/>
+  <polygon points="315,106 320,116 325,106" fill="#5a8ab5"/>
+
+  <!-- Case x kutusu -->
+  <rect x="60" y="120" width="150" height="42" rx="10" fill="#e8f4e8" stroke="#6da56d" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="135" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d5a2d" font-weight="bold">case x:</text>
+  <text x="135" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6e3a">// kod bloğu</text>
+
+  <!-- Case y kutusu -->
+  <rect x="245" y="120" width="150" height="42" rx="10" fill="#e8f4e8" stroke="#6da56d" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d5a2d" font-weight="bold">case y:</text>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#3a6e3a">// kod bloğu</text>
+
+  <!-- Default kutusu -->
+  <rect x="430" y="120" width="150" height="42" rx="10" fill="#fdf3e0" stroke="#d4a04a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="505" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a5a20" font-weight="bold">default:</text>
+  <text x="505" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#8a6a30">// kod bloğu</text>
+
+  <!-- Yatay bağlantı çizgileri -->
+  <path d="M320 108 L320 116 L135 116 L135 120" stroke="#5a8ab5" stroke-width="1.8" fill="none"/>
+  <path d="M320 108 L320 116 L320 120" stroke="#5a8ab5" stroke-width="1.8" fill="none"/>
+  <path d="M320 108 L320 116 L505 116 L505 120" stroke="#5a8ab5" stroke-width="1.8" fill="none"/>
+
+  <!-- Ok işaretleri (manuel) -->
+  <polygon points="130,118 135,126 140,118" fill="#5a8ab5"/>
+  <polygon points="315,118 320,126 325,118" fill="#5a8ab5"/>
+  <polygon points="500,118 505,126 510,118" fill="#5a8ab5"/>
+
+  <!-- Break kutuları -->
+  <rect x="60" y="185" width="150" height="32" rx="8" fill="#f0e6f6" stroke="#9b7bb5" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="135" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a3a7a">break;</text>
+
+  <rect x="245" y="185" width="150" height="32" rx="8" fill="#f0e6f6" stroke="#9b7bb5" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="320" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a3a7a">break;</text>
+
+  <!-- Default'tan çıkış -->
+  <rect x="430" y="185" width="150" height="32" rx="8" fill="#fce8e0" stroke="#c97a5a" stroke-width="1.2" filter="url(#shadowLight)"/>
+  <text x="505" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a4a2a">çıkış</text>
+
+  <!-- Dikey oklar: case'lerden break'e -->
+  <path d="M135 162 L135 185" stroke="#7a9a7a" stroke-width="1.8" fill="none"/>
+  <polygon points="130,183 135,191 140,183" fill="#7a9a7a"/>
+
+  <path d="M320 162 L320 185" stroke="#7a9a7a" stroke-width="1.8" fill="none"/>
+  <polygon points="315,183 320,191 325,183" fill="#7a9a7a"/>
+
+  <path d="M505 162 L505 185" stroke="#c97a5a" stroke-width="1.8" fill="none"/>
+  <polygon points="500,183 505,191 510,183" fill="#c97a5a"/>
+
+  <!-- Switch dışına çıkış okları -->
+  <path d="M135 217 L135 240 L320 240" stroke="#7a9a7a" stroke-width="1.8" fill="none"/>
+  <path d="M320 217 L320 240" stroke="#7a9a7a" stroke-width="1.8" fill="none"/>
+  <path d="M505 217 L505 240 L320 240" stroke="#c97a5a" stroke-width="1.8" fill="none"/>
+
+  <!-- Birleşim noktası -->
+  <circle cx="320" cy="240" r="4" fill="#5a8ab5"/>
+
+  <!-- Çıkış oku -->
+  <path d="M320 244 L320 262" stroke="#5a8ab5" stroke-width="2" fill="none"/>
+  <polygon points="315,260 320,270 325,260" fill="#5a8ab5"/>
+
+  <!-- Çıkış kutusu -->
+  <rect x="265" y="272" width="110" height="32" rx="10" fill="#dbe9f7" stroke="#7fa8c9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#1a3a5c" font-weight="bold">switch dışı</text>
+
+  <!-- Etiket: eşleşme -->
+  <text x="135" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8a6a">eşleşme</text>
+  <text x="320" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8a6a">eşleşme</text>
+  <text x="505" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#b08a4a">eşleşme yok</text>
+
+  <!-- Bilgi notu -->
+  <text x="320" y="318" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7a8a9a">break: sonraki durumları atla • default: eşleşme yoksa çalışır</text>
+</svg>

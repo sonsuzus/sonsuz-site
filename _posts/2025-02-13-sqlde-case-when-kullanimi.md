@@ -15,7 +15,11 @@ tags:
 redirect_from:
   - /posts/sqlde-case-when-kullanimi/
 toc: true
+image: /img/sqlde-case-when-16.png
 ---
+
+![sqlde-case-when-16](/img/sqlde-case-when-16.svg)
+
 
 
 

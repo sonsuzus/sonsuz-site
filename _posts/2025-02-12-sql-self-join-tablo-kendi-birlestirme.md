@@ -15,7 +15,11 @@ excerpt_separator: "``"
 redirect_from:
   - /posts/sql-self-join-tablo-kendi-birlestirme/
 toc: true
+image: /img/sql-self-join-30.png
 ---
+
+![sql-self-join-30](/img/sql-self-join-30.svg)
+
 
 ![](/img/sql/petronas-twin-towers.png)
 

@@ -13,6 +13,7 @@ tags:
 redirect_from:
   - /posts/python-yield-kullanimi/
 toc: true
+image: /img/python-yield-kullanimi-32.png
 ---
 
 Python dilindeki [yield](https://program.sonsuz.us/search.html?q=yield) deyimini anlamak için, generator'ları bilmek gerekiyor, generator'ları anlamak için de, [iterator](https://program.sonsuz.us/search.html?q=iterator) ve [iterable](https://program.sonsuz.us/search.html?q=iterable) kavramlarını anlamak gerekiyor. İngilizcede "iterate" kelimesi, tekrar tekrar uygulanmak veya işlenmek anlamına geliyor. Python'daki iterable ve iterator kavramları bu kelimeden türetilmiş. Python'da `iter()` yerleşik fonksiyona argüman olarak verebildiğimiz objelere iterable diyoruz. iter() fonksiyonu bize bir iterator döndürüyor. Iterator, objenin elemanları ne şekilde tanımlanırsa tanımlansın, bir koleksiyon içindeki tüm elemanlara sırasıyla erişebilmemiz için ortak bir arayüz oluşturan bir mekanizma. Kısacası, elemanları üzerinde sırasıyla gezinebildiğimiz, listeler ve demetler gibi objelere iterable diyoruz. Bu objeler, `iter()` fonksiyonu ile çağrıldığında, birer iterator döndürüyor, ve bu iterator'lar bir koleksiyondan sırasıyla eleman almak için kullanılıyor.
@@ -461,3 +462,5 @@ Bu, csv_gen demetini oluşturmanın daha kısa ve öz bir yoludur.
 
 - yield kullanılması bir generatör nesnesi döndürür.
 - yield yerine return kullanılması dosyanın yalnızca ilk satırını döndürür.
+![python-yield-kullanimi-32](/img/python-yield-kullanimi-32.svg)
+

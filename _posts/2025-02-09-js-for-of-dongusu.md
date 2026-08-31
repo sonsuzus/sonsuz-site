@@ -12,7 +12,11 @@ tags:
 redirect_from:
   - /posts/js-for-of-dongusu/
 toc: true
+image: /img/js-for-of-90.png
 ---
+
+![js-for-of-90](/img/js-for-of-90.svg)
+
 
 Javascript [for/of](https://program.sonsuz.us/search.html?q=for/of) döngüsü ile [iterable](https://program.sonsuz.us/search.html?q=iterable) bir nesnenin tüm elemanlarına ulaşabiliriz. Iterable nesneler yapı itibariyle elemanları üzerinde döngüler ile gezilebilir nesnelerdir. Örneğin array, set, map, string gibi javascript nesneleri iterable nesnelerdir.
 
