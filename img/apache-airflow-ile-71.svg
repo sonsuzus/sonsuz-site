@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="dagGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3edff"/>
+      <stop offset="100%" stop-color="#d7f2ed"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7292a5" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#607d8b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="596" cy="42" r="78" fill="#dceff4" opacity="0.42"/>
+  <circle cx="47" cy="282" r="94" fill="#e5f1d9" opacity="0.48"/>
+
+  <text x="34" y="33" fill="#365467" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Güvenilir Veri Orkestrasyonu</text>
+  <text x="34" y="50" fill="#76909b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Bağımlılık • yeniden deneme • geçmiş tamamlama</text>
+
+  <rect x="32" y="70" width="370" height="132" rx="19" fill="url(#dagGrad)" filter="url(#softShadow)"/>
+  <text x="53" y="94" fill="#416274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Ana DAG</text>
+  <rect x="53" y="111" width="88" height="57" rx="13" fill="#ffffff" filter="url(#smallShadow)"/>
+  <circle cx="72" cy="131" r="8" fill="#a9d7e8"/>
+  <path d="M68 131h8M72 127v8" stroke="#39718a" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="89" y="135" fill="#355464" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Veri al</text>
+  <text x="64" y="155" fill="#738c98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Çıkarma</text>
+
+  <path d="M142 139 H166" fill="none" stroke="#668c9c" stroke-width="2"/>
+  <polygon points="166,139 159,135 159,143" fill="#668c9c"/>
+
+  <rect x="169" y="111" width="88" height="57" rx="13" fill="#ffffff" filter="url(#smallShadow)"/>
+  <circle cx="188" cy="131" r="8" fill="#b7e2bf"/>
+  <path d="M184 131h8M188 127v8" stroke="#438253" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="205" y="135" fill="#355464" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Dönüştür</text>
+  <text x="183" y="155" fill="#738c98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İşleme</text>
+
+  <path d="M258 139 H282" fill="none" stroke="#668c9c" stroke-width="2"/>
+  <polygon points="282,139 275,135 275,143" fill="#668c9c"/>
+
+  <rect x="285" y="111" width="89" height="57" rx="13" fill="#ffffff" filter="url(#smallShadow)"/>
+  <circle cx="304" cy="131" r="8" fill="#f4cda8"/>
+  <path d="M300 131h8M304 127v8" stroke="#a6652f" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="321" y="135" fill="#355464" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yükle</text>
+  <text x="299" y="155" fill="#738c98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hedef</text>
+
+  <path d="M214 171 C214 190 166 190 166 173" fill="none" stroke="#d28b65" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <polygon points="166,173 162,180 170,179" fill="#d28b65"/>
+  <rect x="191" y="180" width="78" height="20" rx="10" fill="#fff0e7"/>
+  <text x="202" y="194" fill="#a76542" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tekrar dene</text>
+
+  <rect x="428" y="70" width="180" height="132" rx="19" fill="#eef0ff" filter="url(#softShadow)"/>
+  <text x="449" y="95" fill="#53608b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Bağımlı DAG</text>
+  <path d="M374 139 H427" fill="none" stroke="#697aa5" stroke-width="2"/>
+  <polygon points="427,139 420,135 420,143" fill="#697aa5"/>
+  <rect x="449" y="111" width="137" height="34" rx="11" fill="#ffffff" filter="url(#smallShadow)"/>
+  <circle cx="469" cy="128" r="7" fill="#c9c9ef"/>
+  <path d="M466 128l2 2 4-5" fill="none" stroke="#5e6395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="483" y="132" fill="#445376" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Veri hazır mı?</text>
+  <path d="M517 146 V158" fill="none" stroke="#697aa5" stroke-width="1.8"/>
+  <polygon points="517,158 513,152 521,152" fill="#697aa5"/>
+  <rect x="465" y="161" width="104" height="25" rx="9" fill="#dce5ff"/>
+  <text x="481" y="178" fill="#4b5d8e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Raporlama</text>
+
+  <rect x="32" y="224" width="576" height="72" rx="18" fill="#ffffff" opacity="0.91" filter="url(#softShadow)"/>
+  <text x="54" y="249" fill="#486b5a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Geçmiş Tamamlama</text>
+  <rect x="189" y="238" width="50" height="35" rx="9" fill="#e8f4dc"/>
+  <text x="200" y="260" fill="#537553" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">10 Mar</text>
+  <path d="M241 255 H262" fill="none" stroke="#77a177" stroke-width="1.8"/>
+  <polygon points="262,255 255,251 255,259" fill="#77a177"/>
+  <rect x="265" y="238" width="50" height="35" rx="9" fill="#d2ecc6"/>
+  <text x="276" y="260" fill="#426b48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">11 Mar</text>
+  <path d="M317 255 H338" fill="none" stroke="#77a177" stroke-width="1.8"/>
+  <polygon points="338,255 331,251 331,259" fill="#77a177"/>
+  <rect x="341" y="238" width="50" height="35" rx="9" fill="#d2ecc6"/>
+  <text x="352" y="260" fill="#426b48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">... 15</text>
+  <path d="M393 255 H416" fill="none" stroke="#77a177" stroke-width="1.8"/>
+  <polygon points="416,255 409,251 409,259" fill="#77a177"/>
+  <rect x="419" y="238" width="157" height="35" rx="10" fill="#edf7e8"/>
+  <circle cx="439" cy="255" r="8" fill="#9dce94"/>
+  <path d="M435 255l3 3 5-6" fill="none" stroke="#437648" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="454" y="260" fill="#426b48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">İdempotent çıktı</text>
+</svg>

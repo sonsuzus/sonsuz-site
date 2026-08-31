@@ -1,0 +1,72 @@
+<svg viewBox="0 0 640 320" width="640" height="320" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Sol: Sayı Veri Türü -->
+  <rect x="30" y="40" width="160" height="70" rx="14" fill="#dbeafe" filter="url(#shadow)"/>
+  <text x="110" y="65" text-anchor="middle" font-weight="bold" fill="#1e3a5f">Sayı Veri Türü</text>
+  <text x="110" y="85" text-anchor="middle" fill="#2c5282">Tam sayı veya ondalık</text>
+  <text x="110" y="100" text-anchor="middle" fill="#2c5282">Tırnak kullanılmaz</text>
+
+  <!-- Sağ: String Veri Türü -->
+  <rect x="450" y="40" width="160" height="70" rx="14" fill="#fde68a" filter="url(#shadow)"/>
+  <text x="530" y="65" text-anchor="middle" font-weight="bold" fill="#5f370e">String Veri Türü</text>
+  <text x="530" y="85" text-anchor="middle" fill="#7c4a03">Tırnak içinde tanımlanır</text>
+  <text x="530" y="100" text-anchor="middle" fill="#7c4a03">Metin olarak kabul edilir</text>
+
+  <!-- Orta: + Operatörü -->
+  <rect x="230" y="60" width="180" height="50" rx="14" fill="#c6f6d5" filter="url(#shadow)"/>
+  <text x="320" y="82" text-anchor="middle" font-weight="bold" fill="#22543d">+ Operatörü</text>
+  <text x="320" y="98" text-anchor="middle" fill="#276749">Davranışı türe bağlıdır</text>
+
+  <!-- Oklar: Sol -> Orta -->
+  <path d="M190 75 L225 75" stroke="#4a5568" stroke-width="2" fill="none"/>
+  <polygon points="228,75 218,70 218,80" fill="#4a5568"/>
+
+  <!-- Oklar: Sağ -> Orta -->
+  <path d="M450 75 L415 75" stroke="#4a5568" stroke-width="2" fill="none"/>
+  <polygon points="412,75 422,70 422,80" fill="#4a5568"/>
+
+  <!-- Alt: Sonuçlar -->
+  <!-- Sayı + Sayı -->
+  <rect x="30" y="180" width="180" height="55" rx="12" fill="#bee3f8" filter="url(#shadow)"/>
+  <text x="120" y="200" text-anchor="middle" font-weight="bold" fill="#2b6cb0">Sayı + Sayı</text>
+  <text x="120" y="218" text-anchor="middle" fill="#2c5282">10 + 20 = 30</text>
+  <text x="120" y="232" text-anchor="middle" fill="#2c5282">Matematiksel toplama</text>
+
+  <!-- String + Sayı -->
+  <rect x="230" y="180" width="180" height="55" rx="12" fill="#fefcbf" filter="url(#shadow)"/>
+  <text x="320" y="200" text-anchor="middle" font-weight="bold" fill="#975a16">String + Sayı</text>
+  <text x="320" y="218" text-anchor="middle" fill="#7c4a03">"10" + 20 = "1020"</text>
+  <text x="320" y="232" text-anchor="middle" fill="#7c4a03">Metin birleştirme</text>
+
+  <!-- Sayı + Sayı + String -->
+  <rect x="430" y="180" width="180" height="55" rx="12" fill="#fed7d7" filter="url(#shadow)"/>
+  <text x="520" y="200" text-anchor="middle" font-weight="bold" fill="#9b2c2c">Sayı + Sayı + String</text>
+  <text x="520" y="218" text-anchor="middle" fill="#822727">10 + 20 + "30" = "3030"</text>
+  <text x="520" y="232" text-anchor="middle" fill="#822727">Önce sayılar toplanır</text>
+
+  <!-- Oklar: Orta -> Alt -->
+  <path d="M290 110 L200 175" stroke="#4a5568" stroke-width="2" fill="none"/>
+  <polygon points="197,178 207,173 204,183" fill="#4a5568"/>
+
+  <path d="M320 110 L320 175" stroke="#4a5568" stroke-width="2" fill="none"/>
+  <polygon points="320,178 315,168 325,168" fill="#4a5568"/>
+
+  <path d="M350 110 L440 175" stroke="#4a5568" stroke-width="2" fill="none"/>
+  <polygon points="443,178 433,173 436,183" fill="#4a5568"/>
+
+  <!-- Alt not -->
+  <rect x="160" y="260" width="320" height="40" rx="10" fill="#e2e8f0" filter="url(#shadow)"/>
+  <text x="320" y="278" text-anchor="middle" font-weight="bold" fill="#2d3748">Kritik Kural</text>
+  <text x="320" y="293" text-anchor="middle" fill="#4a5568">+ operatörünün her iki tarafı sayı olmalıdır</text>
+</svg>

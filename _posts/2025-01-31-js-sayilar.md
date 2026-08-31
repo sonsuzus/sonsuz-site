@@ -11,6 +11,7 @@ tags:
 redirect_from:
   - /posts/js-sayilar/
 toc: true
+image: /img/js-sayilar-75.png
 ---
 
 Javascript 'de bir sayı veri türü vardır. Tanımladığımız her sayısal veri tam sayı ya da ondalıklı sayı olabilir. 
@@ -115,3 +116,6 @@ if (isNaN(sayi)){
 
 }
 ```
+
+![js-sayilar-75](/img/js-sayilar-75.svg)
+

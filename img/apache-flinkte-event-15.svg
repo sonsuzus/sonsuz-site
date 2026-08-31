@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="flink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7edff"/>
+      <stop offset="100%" stop-color="#d9f5f1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d88a0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#52708a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="69" cy="42" r="72" fill="#dceeff" opacity="0.48"/>
+  <circle cx="590" cy="288" r="88" fill="#dff3df" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">Event-Time Akışı</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8293">Sırasız IoT verisi için zaman sözleşmesi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="78" width="120" height="164" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="49" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5871">IoT Sensörleri</text>
+  <line x1="47" y1="115" x2="126" y2="115" stroke="#d5e3ec"/>
+
+  <g filter="url(#soft)">
+    <rect x="46" y="128" width="81" height="25" rx="8" fill="#d9f2eb"/>
+    <circle cx="59" cy="140.5" r="5" fill="#4eaf91"/>
+    <text x="70" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e6570">10:04:42</text>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="46" y="160" width="81" height="25" rx="8" fill="#ffe8c8"/>
+    <circle cx="59" cy="172.5" r="5" fill="#e39a39"/>
+    <text x="70" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76592f">10:04:12</text>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="46" y="192" width="81" height="25" rx="8" fill="#f7dfe5"/>
+    <circle cx="59" cy="204.5" r="5" fill="#d36b80"/>
+    <text x="70" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#744b57">10:03:38</text>
+  </g>
+
+  <path d="M151 160 H180" fill="none" stroke="#7a9ab0" stroke-width="2"/>
+  <polygon points="180,160 173,156 173,164" fill="#7a9ab0"/>
+  <text x="151" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688196">sırasız</text>
+
+  <g filter="url(#shadow)">
+    <rect x="185" y="70" width="202" height="180" rx="20" fill="url(#flink)"/>
+  </g>
+  <rect x="205" y="89" width="162" height="28" rx="10" fill="#ffffff" opacity="0.82"/>
+  <text x="223" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35566e">Flink Event-Time</text>
+
+  <line x1="218" y1="142" x2="350" y2="142" stroke="#88a4b5" stroke-width="2"/>
+  <line x1="218" y1="142" x2="218" y2="151" stroke="#88a4b5" stroke-width="2"/>
+  <line x1="251" y1="142" x2="251" y2="151" stroke="#88a4b5" stroke-width="2"/>
+  <line x1="284" y1="142" x2="284" y2="151" stroke="#88a4b5" stroke-width="2"/>
+  <line x1="317" y1="142" x2="317" y2="151" stroke="#88a4b5" stroke-width="2"/>
+  <line x1="350" y1="142" x2="350" y2="151" stroke="#88a4b5" stroke-width="2"/>
+
+  <rect x="217" y="159" width="91" height="23" rx="8" fill="#ffffff" opacity="0.9"/>
+  <text x="225" y="175" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426175">max olay zamanı</text>
+
+  <path d="M218 199 H326" fill="none" stroke="#e48d50" stroke-width="3"/>
+  <polygon points="326,199 319,195 319,203" fill="#e48d50"/>
+  <line x1="326" y1="187" x2="326" y2="214" stroke="#e48d50" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="218" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a55b30">Watermark: max - 30 sn</text>
+
+  <path d="M390 159 H414" fill="none" stroke="#7a9ab0" stroke-width="2"/>
+  <polygon points="414,159 407,155 407,163" fill="#7a9ab0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="419" y="77" width="190" height="139" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="442" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5871">Event-Time Penceresi</text>
+  <text x="442" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71879a">Cihaz bazında · 1 dakika</text>
+
+  <rect x="439" y="140" width="148" height="49" rx="11" fill="#e5f4eb"/>
+  <path d="M454 175 L466 164 L478 169 L490 151 L502 159 L514 146 L526 156 L538 150 L550 161 L565 145" fill="none" stroke="#4caa7e" stroke-width="2.5"/>
+  <text x="448" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d7562">Ortalama sıcaklık</text>
+
+  <path d="M513 220 V242" fill="none" stroke="#6e9a83" stroke-width="2"/>
+  <polygon points="513,242 509,235 517,235" fill="#6e9a83"/>
+  <g filter="url(#soft)">
+    <rect x="449" y="248" width="128" height="39" rx="12" fill="#cfeee0"/>
+  </g>
+  <circle cx="468" cy="267" r="8" fill="#50aa7e"/>
+  <path d="M464 267 L467 270 L473 263" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="484" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b57">Sonuç ve alarm</text>
+
+  <path d="M326 200 C372 200 374 272 414 272" fill="none" stroke="#c97a92" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="414,272 407,268 407,276" fill="#c97a92"/>
+  <g filter="url(#soft)">
+    <rect x="192" y="259" width="181" height="42" rx="13" fill="#fae3e9"/>
+  </g>
+  <circle cx="211" cy="280" r="8" fill="#d16e87"/>
+  <path d="M211 275 V281 M211 285 V285" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="226" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7b4d5a">Çok geç veri</text>
+  <text x="226" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d6470">Yan çıktı · arşiv</text>
+
+  <text x="391" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6570">izinli gecikme</text>
+</svg>

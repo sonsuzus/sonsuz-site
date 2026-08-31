@@ -8,9 +8,13 @@ tags:
   - automl
   - makine öğrenmesi
   - özellik mühendisliği
+image: /img/automl-ile-ozellik-96.png
 ---
 
 AutoML araçları, makine öğrenmesini “veriyi ver, sihri izle” düzeyine indirgeyen kutular değildir; iyi kullanıldıklarında veri hazırlama, özellik dönüşümü ve model arama süreçlerini sistematik biçimde hızlandırırlar. Ancak bir aracın gerçekten başarılı olup olmadığını anlamanın tek yolu, onu belirli bir veri setinde şeffaf ve tekrarlanabilir bir deneyle test etmektir. Buradaki amaç yalnızca en yüksek skoru bulmak değil, aracın hangi özellikleri faydalı gördüğünü ve hangi model ailesini neden seçtiğini değerlendirmektir.
+
+![automl-ile-ozellik-96](/img/automl-ile-ozellik-96.svg)
+
 ``
 
 Başlamadan önce problemi doğru tanımlayın. Örneğin UCI Adult Income veri setinde hedef değişken, kişinin gelirinin belirli bir eşiğin üzerinde olup olmadığıdır. Bu bir ikili sınıflandırma problemidir. Başarıyı yalnızca doğrulukla ölçmek yanıltıcı olabilir; sınıflar dengesizse model çoğunluk sınıfını tahmin ederek rahatça “başarılı” görünebilir. Bu nedenle F1 skoru ve ROC-AUC gibi metrikler daha dengeli bir bakış sunar.

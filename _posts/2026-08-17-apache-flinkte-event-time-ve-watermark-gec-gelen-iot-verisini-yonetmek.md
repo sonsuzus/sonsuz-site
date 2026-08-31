@@ -11,6 +11,7 @@ tags:
   - ıot
   - stream processing
 toc: true
+image: /img/apache-flinkte-event-15.png
 ---
 
 Bir fabrikanın sıcaklık sensörlerini düşünün: cihazlar her 10 saniyede bir ölçüm üretir, ancak Wi-Fi kopmaları, mobil ağ gecikmeleri ve cihaz tamponları nedeniyle kayıtlar Flink’e kronolojik sırayla ulaşmaz. İşleme zamanına güvenmek, örneğin 10:00:05’te üretilen ama 10:00:40’ta gelen kritik bir sıcaklık artışını yanlış pencereye koyabilir. Apache Flink’in **event-time** yaklaşımı, olayın sisteme geliş anını değil, olayın gerçekten gerçekleştiği anı merkezine alır.
@@ -26,6 +27,9 @@ Bir akış uygulamasında üç zaman kavramı vardır. IoT analitiğinde çoğun
 | Event time | Olayın sensörde oluştuğu zaman | Doğru tarihsel analiz sağlar |
 | Ingestion time | Kaynağın olayı Flink’e verdiği zaman | Kaynak gecikmesini kısmen yansıtır |
 | Processing time | Operatörün olayı işlediği zaman | Düşük gecikmeli, ama sırasız veride hatalı olabilir |
+
+![apache-flinkte-event-15](/img/apache-flinkte-event-15.svg)
+
 
 Örneğimizde her olay `{deviceId, temperature, eventTime}` alanlarını taşır. Beş dakikalık pencerede ortalama sıcaklık hesaplayalım. İdeal hedef şudur:
 

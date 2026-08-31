@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7668c9"/>
+      <stop offset="100%" stop-color="#5b9bd5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#49627a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#49627a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="574" cy="40" r="82" fill="#dff2ee" opacity="0.55"/>
+  <circle cx="55" cy="286" r="92" fill="#e5eaff" opacity="0.55"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36506b">SQL'DEN GÜVENİLİR VERİ ÜRÜNÜNE</text>
+  <text x="32" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728397">dbt ile katmanlı dönüşüm ve doğrulama</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="223" y="18" width="195" height="48" rx="16" fill="url(#core)"/>
+    <text x="320" y="41" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">dbt proje çekirdeği</text>
+    <text x="320" y="57" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e8f2ff">SQL modelleri ve ref()</text>
+  </g>
+
+  <path d="M320 67 L320 83" stroke="#6d83a0" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="314,80 326,80 320,88" fill="#6d83a0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="116" width="104" height="103" rx="18" fill="#fff4df"/>
+    <rect x="142" y="116" width="104" height="103" rx="18" fill="#e5f4f7"/>
+    <rect x="260" y="116" width="104" height="103" rx="18" fill="#eeeaff"/>
+    <rect x="378" y="116" width="104" height="103" rx="18" fill="#e4f3df"/>
+    <rect x="496" y="116" width="120" height="103" rx="18" fill="#ffe9ee"/>
+  </g>
+
+  <g fill="none" stroke="#71869e" stroke-width="2.5" stroke-linecap="round">
+    <path d="M129 167 L140 167"/>
+    <path d="M247 167 L258 167"/>
+    <path d="M365 167 L376 167"/>
+    <path d="M483 167 L494 167"/>
+  </g>
+  <g fill="#71869e">
+    <polygon points="136,161 136,173 143,167"/>
+    <polygon points="254,161 254,173 261,167"/>
+    <polygon points="372,161 372,173 379,167"/>
+    <polygon points="490,161 490,173 497,167"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <circle cx="76" cy="145" r="16" fill="#f5c977"/>
+    <path d="M68 145 L76 137 L84 145 L76 153 Z" fill="none" stroke="#8a6331" stroke-width="1.5"/>
+    <text x="76" y="181" text-anchor="middle" font-weight="700" fill="#5d4a2e">Ham kaynak</text>
+    <text x="76" y="199" text-anchor="middle" fill="#7e7467">Siparişler</text>
+
+    <circle cx="194" cy="145" r="16" fill="#8dcbd3"/>
+    <path d="M186 141 L202 141 M186 146 L199 146 M186 151 L196 151" stroke="#356d75" stroke-width="2" stroke-linecap="round"/>
+    <text x="194" y="181" text-anchor="middle" font-weight="700" fill="#365e66">Staging</text>
+    <text x="194" y="199" text-anchor="middle" fill="#668187">Temizleme</text>
+
+    <circle cx="312" cy="145" r="16" fill="#af9ce1"/>
+    <path d="M305 138 L319 138 L319 152 L305 152 Z M308 142 L316 142 M308 147 L314 147" fill="none" stroke="#5e4d91" stroke-width="1.4"/>
+    <text x="312" y="181" text-anchor="middle" font-weight="700" fill="#564783">Ara katman</text>
+    <text x="312" y="199" text-anchor="middle" fill="#786e98">İş kuralları</text>
+
+    <circle cx="430" cy="145" r="16" fill="#91c982"/>
+    <path d="M423 151 L423 142 L430 137 L437 142 L437 151 Z" fill="none" stroke="#39733d" stroke-width="1.5"/>
+    <text x="430" y="181" text-anchor="middle" font-weight="700" fill="#3d6b3e">Martlar</text>
+    <text x="430" y="199" text-anchor="middle" fill="#668167">Olgu ve boyut</text>
+
+    <circle cx="556" cy="145" r="16" fill="#ef9cad"/>
+    <rect x="548" y="137" width="16" height="16" rx="2" fill="none" stroke="#914456" stroke-width="1.5"/>
+    <path d="M551 149 L554 145 L557 147 L561 141" fill="none" stroke="#914456" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="556" y="181" text-anchor="middle" font-weight="700" fill="#824454">Veri ürünü</text>
+    <text x="556" y="199" text-anchor="middle" fill="#9a6b76">Analiz ve BI</text>
+  </g>
+
+  <path d="M320 88 C320 98 194 99 194 108" fill="none" stroke="#8295ab" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M320 88 C320 98 430 99 430 108" fill="none" stroke="#8295ab" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="71" y="251" width="145" height="43" rx="14" fill="#ffffff"/>
+    <rect x="247" y="251" width="145" height="43" rx="14" fill="#ffffff"/>
+    <rect x="423" y="251" width="145" height="43" rx="14" fill="#ffffff"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <circle cx="91" cy="272" r="10" fill="#dce9ff"/>
+    <path d="M87 272 L90 275 L96 268" fill="none" stroke="#4776b6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="104" y="276" fill="#435b72" font-weight="700">Otomatik testler</text>
+
+    <circle cx="267" cy="272" r="10" fill="#e9ddff"/>
+    <path d="M263 276 L263 268 L271 268 L271 276 M265 271 L269 271" fill="none" stroke="#7252aa" stroke-width="1.4"/>
+    <text x="280" y="276" fill="#435b72" font-weight="700">Git ve inceleme</text>
+
+    <circle cx="443" cy="272" r="10" fill="#d9f1df"/>
+    <path d="M439 268 L447 268 L447 276 L439 276 Z M441 271 L445 271 M441 274 L445 274" fill="none" stroke="#438253" stroke-width="1.2"/>
+    <text x="456" y="276" fill="#435b72" font-weight="700">Dokümantasyon</text>
+  </g>
+
+  <path d="M144 251 C144 232 194 236 194 221" fill="none" stroke="#8ca1b4" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <path d="M320 251 L320 222" fill="none" stroke="#8ca1b4" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <path d="M496 251 C496 232 430 236 430 221" fill="none" stroke="#8ca1b4" stroke-width="1.5" stroke-dasharray="3 4"/>
+</svg>

@@ -12,7 +12,11 @@ tags:
 redirect_from:
   - /posts/js-for-dongusu/
 toc: true
+image: /img/js-for-dongusu-92.png
 ---
+
+![js-for-dongusu-92](/img/js-for-dongusu-92.svg)
+
 
 Javascript 'de [döngü](https://program.sonsuz.us/search.html?q=d%C3%B6ng%C3%BC) yardımıyla bir kod parçasını bir [koşula](https://program.sonsuz.us/search.html?q=ko%C5%9Fula) bağlı olarak [tekrar](https://program.sonsuz.us/search.html?q=tekrar) tekrar çalıştırabiliriz. Örneğin bir isim listesindeki her bir ismi ekrana tekrar tekrar yazmak yerine döngü kullanımı işimizi oldukça kolaylaştırır.
 

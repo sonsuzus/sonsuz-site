@@ -8,7 +8,11 @@ tags:
   - apache airflow
   - dag
   - veri mühendisliği
+image: /img/apache-airflow-ile-71.png
 ---
+
+![apache-airflow-ile-71](/img/apache-airflow-ile-71.svg)
+
 
 Veri boru hatları, tek seferlik çalışan betiklerden çok daha fazlasıdır: Her sabah veriyi çekmek, dönüştürmek, raporlamak ve olası aksaklıklarda sistemi güvenle toparlamak gerekir. Apache Airflow, bu süreci **DAG** (Directed Acyclic Graph — yönlü döngüsüz grafik) yaklaşımıyla yönetir. Her görev bir düğüm, görevler arasındaki sıralama ise bir yönlü kenardır. “Döngüsüz” olması önemlidir; A görevi B’yi, B de tekrar A’yı beklerse orkestrasyon sonsuza dek kahve molasına çıkar.
 

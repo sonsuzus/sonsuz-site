@@ -11,7 +11,11 @@ tags:
   - devops
   - linux
 toc: true
+image: /img/docker-bridge-overlay-74.png
 ---
+
+![docker-bridge-overlay-74](/img/docker-bridge-overlay-74.svg)
+
 
 Docker’da ağ sürücüsü seçmek, sadece konteynerlere IP dağıtmak değildir; erişim sınırlarını, servis keşfini, gecikmeyi ve altyapının ölçeklenme biçimini belirler. Aynı uygulamanın yerel bir makinede, çok düğümlü bir kümede veya fiziksel ağda görünür olması gerektiğinde farklı sürücüler anlam kazanır. Bu yazıda `bridge`, `overlay` ve `macvlan` sürücülerini küçük ama tekrarlanabilir deneylerle karşılaştıralım.
 

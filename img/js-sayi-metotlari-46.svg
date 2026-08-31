@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c9bd1"/>
+      <stop offset="100%" stop-color="#4a7fb5"/>
+    </linearGradient>
+    <linearGradient id="methodGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#88c4de"/>
+    </linearGradient>
+    <linearGradient id="methodGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b5e0c9"/>
+      <stop offset="100%" stop-color="#93cdb0"/>
+    </linearGradient>
+    <linearGradient id="methodGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d9a8"/>
+      <stop offset="100%" stop-color="#e8c48a"/>
+    </linearGradient>
+    <linearGradient id="methodGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4b8e8"/>
+      <stop offset="100%" stop-color="#c0a0d8"/>
+    </linearGradient>
+    <linearGradient id="methodGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0b8b8"/>
+      <stop offset="100%" stop-color="#dd9e9e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Arkaplan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#3a5a7a">JavaScript Sayı Metotları</text>
+
+  <!-- Merkez Number nesnesi -->
+  <ellipse cx="320" cy="160" rx="72" ry="42" fill="url(#centerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Number</text>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8f0fa">Nesnesi</text>
+
+  <!-- Bağlantı çizgileri ve oklar (manuel) -->
+  <!-- toString yönü - sol üst -->
+  <path d="M 258 138 Q 200 110 168 92" stroke="#7aa5c8" stroke-width="1.8" fill="none"/>
+  <polygon points="168,92 178,94 172,100" fill="#7aa5c8"/>
+
+  <!-- toFixed - sağ üst -->
+  <path d="M 382 138 Q 440 110 472 92" stroke="#7ab89a" stroke-width="1.8" fill="none"/>
+  <polygon points="472,92 462,94 468,100" fill="#7ab89a"/>
+
+  <!-- toPrecision - sol alt -->
+  <path d="M 258 182 Q 200 210 168 228" stroke="#c8a85a" stroke-width="1.8" fill="none"/>
+  <polygon points="168,228 178,226 172,220" fill="#c8a85a"/>
+
+  <!-- toFixed ondalık - sağ alt -->
+  <path d="M 382 182 Q 440 210 472 228" stroke="#a080c0" stroke-width="1.8" fill="none"/>
+  <polygon points="472,228 462,226 468,220" fill="#a080c0"/>
+
+  <!-- Number() global - alt -->
+  <path d="M 320 202 L 320 248" stroke="#c08080" stroke-width="1.8" fill="none"/>
+  <polygon points="320,248 316,238 324,238" fill="#c08080"/>
+
+  <!-- Metot kutuları -->
+  <!-- toString -->
+  <rect x="88" y="52" width="80" height="40" rx="10" fill="url(#methodGrad1)" filter="url(#shadowLight)"/>
+  <text x="128" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a5a7a">toString()</text>
+
+  <!-- toFixed -->
+  <rect x="472" y="52" width="80" height="40" rx="10" fill="url(#methodGrad2)" filter="url(#shadowLight)"/>
+  <text x="512" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#2a6a4a">toFixed()</text>
+
+  <!-- toPrecision -->
+  <rect x="88" y="228" width="80" height="40" rx="10" fill="url(#methodGrad3)" filter="url(#shadowLight)"/>
+  <text x="128" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#6a5a2a">toPrecision()</text>
+
+  <!-- toFixed ondalık -->
+  <rect x="472" y="228" width="80" height="40" rx="10" fill="url(#methodGrad4)" filter="url(#shadowLight)"/>
+  <text x="512" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a3a7a">toFixed()</text>
+
+  <!-- Number() global -->
+  <rect x="280" y="248" width="80" height="40" rx="10" fill="url(#methodGrad5)" filter="url(#shadowLight)"/>
+  <text x="320" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#7a3a3a">Number()</text>
+
+  <!-- Alt açıklama -->
+  <text x="320" y="308" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6a8a9a" opacity="0.8">Metotlar nesne üzerinden çağrılır</text>
+</svg>

@@ -12,6 +12,7 @@ tags:
 redirect_from:
   - /posts/js-sayi-metotlari/
 toc: true
+image: /img/js-sayi-metotlari-46.png
 ---
 
 Javascript' de metotlara nesne üzerinden ulaşabiliriz ayrıca kullanabileceğimiz global seviyede de metotlar da mevcuttur. Javascript metotlarını sırasıyla öğrenelim.Javascript' de number nesnesini Number() metodu ile tanımlayabiliriz. Ancak tanımladığımız primitive tipteki (x=10) veriler de nesne olarak tanımlanırlar. Dolayısıyla;
@@ -201,3 +202,6 @@ Math.random()  // 0.4273523063470368
 ```
 
 > random() metodunu daha detaylı bir şekilde inceleyeceğiz.
+
+![js-sayi-metotlari-46](/img/js-sayi-metotlari-46.svg)
+

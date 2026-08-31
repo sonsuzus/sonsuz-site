@@ -10,6 +10,7 @@ tags:
   - sql
   - versiyon kontrolü
   - analytics engineering
+image: /img/dbt-ile-modern-96.png
 ---
 
 Modern veri ekiplerinde asıl zorluk, veriyi depoya taşımaktan çok onu güvenilir, anlaşılır ve yeniden üretilebilir biçimde dönüştürmektir. dbt (data build tool), bu problemi SQL dönüşümlerini yazılım geliştirme disiplinleriyle birleştirerek çözer. Böylece karmaşık ETL betikleri yerine Git ile izlenen modeller, testler, dokümantasyon ve bağımlılık grafikleriyle yönetilen bir veri platformu elde edersiniz.
@@ -72,3 +73,6 @@ models:
 Versiyon kontrolü burada yalnızca dosya yedekleme aracı değildir. Branch'ler deneysel metrikleri izole eder, pull request'ler finans veya ürün ekiplerinin iş kuralını incelemesini sağlar, commit geçmişi ise “net gelir neden geçen ay değişti?” sorusuna teknik bir yanıt verir. Üretim ortamında kullanılan mantık ile depodaki kodun eşleşmesi, denetlenebilirlik açısından kritiktir.
 
 Başlangıç için küçük ilerleyin: Önce bir ham kaynağı `source` olarak tanımlayın, ardından tek bir staging modeli ve iki temel test ekleyin. Sonra en çok kullanılan raporu bir mart modeline taşıyın. dbt'nin gerçek gücü, devasa bir SQL dosyasından değil; okunabilir modeller, açık bağımlılıklar ve test edilebilir iş kurallarından doğar. Veri dönüşümünüz böylece gizemli bir arka plan işi olmaktan çıkar, ekipçe geliştirilen bir veri ürününe dönüşür.
+
+![dbt-ile-modern-96](/img/dbt-ile-modern-96.svg)
+

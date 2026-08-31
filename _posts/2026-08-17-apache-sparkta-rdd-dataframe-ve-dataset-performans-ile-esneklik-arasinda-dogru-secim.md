@@ -11,7 +11,11 @@ tags:
   - dataset
   - büyük veri
 toc: true
+image: /img/apache-sparkta-rdd-90.png
 ---
+
+![apache-sparkta-rdd-90](/img/apache-sparkta-rdd-90.svg)
+
 
 Apache Spark geliştiren herkesin karşısına aynı üçlü çıkar: RDD, DataFrame ve Dataset. Üçü de dağıtık veri işlemenin farklı yüzleridir; ancak soyutlama seviyesi yükseldikçe kod yazma deneyimi, tip güvenliği ve sorgu optimizasyonu da değişir. Doğru API seçimi yalnızca birkaç milisaniye kazanmak değildir: ekibin bakım maliyetini, hata ayıklama süresini ve küme kaynaklarının verimli kullanımını doğrudan etkiler.
 

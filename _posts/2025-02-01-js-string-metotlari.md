@@ -12,6 +12,7 @@ tags:
 redirect_from:
   - /posts/js-string-metotlari/
 toc: true
+image: /img/js-string-metotlari-63.png
 ---
 
 
@@ -34,6 +35,9 @@ Aşağıdaki javascript string metotlarını sırasıyla öğrenelim;
 * String substr()
 * String replace()
 * String split()
+
+![js-string-metotlari-63](/img/js-string-metotlari-63.svg)
+
 ``
 ## String concat()
 

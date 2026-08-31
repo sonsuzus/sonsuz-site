@@ -11,6 +11,7 @@ tags:
   - python
   - tasarım
 toc: true
+image: /img/veri-gorsellestirme-ilkeleri-48.png
 ---
 
 Karmaşık bir veri kümesi, doğru görselleştirildiğinde onlarca sütun ve binlerce satır yerine birkaç saniyede kavranabilen bir hikâyeye dönüşür. Ancak grafikler yalnızca estetik araçlar değildir: eksen seçimi, renk, ölçek ve bağlam kararları okuyucunun sonucu nasıl yorumlayacağını doğrudan etkiler. İyi bir görselleştirme, veriyi “daha güzel” değil; daha doğru, daha erişilebilir ve daha sorgulanabilir hâle getirir.
@@ -28,6 +29,9 @@ Bir grafik türü seçmeden önce cevaplamak istediğiniz soruyu netleştirin. �
 | İki sayısal değişkenin ilişkisi | Saçılım grafiği | Korelasyon, küme ve aykırı değerleri ortaya çıkarır. |
 | Değerlerin yayılımı | Histogram veya kutu grafiği | Merkezi eğilim ve dağılımı birlikte gösterir. |
 | Parça-bütün ilişkisi | Yığılmış çubuk grafik | Toplam içindeki payları karşılaştırmaya yardım eder. |
+
+![veri-gorsellestirme-ilkeleri-48](/img/veri-gorsellestirme-ilkeleri-48.svg)
+
 
 Örneğin pasta grafik, az sayıda ve birbirinden belirgin oranlar için kullanılabilir; fakat birbirine yakın on dilimi karşılaştırmak çoğu zaman gereksiz bir göz testine dönüşür. Bu durumda sıralı çubuk grafik daha dürüst ve okunabilirdir.
 

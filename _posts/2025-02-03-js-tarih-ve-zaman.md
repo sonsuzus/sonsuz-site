@@ -13,7 +13,11 @@ tags:
 redirect_from:
   - /posts/js-tarih-ve-zaman/
 toc: true
+image: /img/js-tarih-ve-60.png
 ---
+
+![js-tarih-ve-60](/img/js-tarih-ve-60.svg)
+
 
 **[Javascript date](https://program.sonsuz.us/search.html?q=javascript%20date)** nesnesi ile tarayıcının o anki tarih ve saat bilgisini alabiliriz.
 

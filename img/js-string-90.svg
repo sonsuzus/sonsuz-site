@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#eef7f0"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="100%" stop-color="#7ec8e3"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8e0d2"/>
+      <stop offset="100%" stop-color="#95d5b2"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8e1b5"/>
+      <stop offset="100%" stop-color="#f5d08e"/>
+    </linearGradient>
+    <linearGradient id="box4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4c1ec"/>
+      <stop offset="100%" stop-color="#c3a5e0"/>
+    </linearGradient>
+    <linearGradient id="box5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5b7c1"/>
+      <stop offset="100%" stop-color="#f0a0b0"/>
+    </linearGradient>
+    <linearGradient id="box6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b0d0f0"/>
+      <stop offset="100%" stop-color="#8ab8e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">JavaScript String</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="55" width="150" height="45" rx="12" fill="url(#box1)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#1a3a4a">String Veri Tipi</text>
+
+  <!-- Ok: merkez -> sol üst -->
+  <path d="M 245 75 L 120 75" stroke="#5a8a9a" stroke-width="2" fill="none"/>
+  <polygon points="120,75 132,70 132,80" fill="#5a8a9a"/>
+
+  <!-- Sol üst: Tanım -->
+  <rect x="20" y="50" width="100" height="50" rx="10" fill="url(#box2)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="70" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a4a3a">Tanım</text>
+  <text x="70" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2d6a5a">Karakter dizisi</text>
+
+  <!-- Ok: merkez -> sol alt -->
+  <path d="M 245 95 L 120 145" stroke="#5a8a9a" stroke-width="2" fill="none"/>
+  <polygon points="120,145 130,136 132,148" fill="#5a8a9a"/>
+
+  <!-- Sol alt: Tırnak kullanımı -->
+  <rect x="15" y="130" width="115" height="60" rx="10" fill="url(#box3)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="72" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a4a1a">Tırnak Kullanımı</text>
+  <text x="72" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a5a2a">Tek veya çift</text>
+  <text x="72" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a5a2a">tercihe bağlı</text>
+
+  <!-- Ok: merkez -> sağ üst -->
+  <path d="M 395 75 L 520 75" stroke="#5a8a9a" stroke-width="2" fill="none"/>
+  <polygon points="520,75 508,70 508,80" fill="#5a8a9a"/>
+
+  <!-- Sağ üst: Birleştirme -->
+  <rect x="520" y="50" width="105" height="50" rx="10" fill="url(#box4)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="572" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#3a2a5a">Birleştirme</text>
+  <text x="572" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#4a3a6a">+ operatörü</text>
+
+  <!-- Ok: merkez -> sağ alt -->
+  <path d="M 395 95 L 520 145" stroke="#5a8a9a" stroke-width="2" fill="none"/>
+  <polygon points="520,145 510,136 512,148" fill="#5a8a9a"/>
+
+  <!-- Sağ alt: String Object -->
+  <rect x="510" y="130" width="115" height="60" rx="10" fill="url(#box5)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="567" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#5a1a2a">String Object</text>
+  <text x="567" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a2a3a">new String()</text>
+  <text x="567" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a2a3a">typeof: object</text>
+
+  <!-- Alt merkez: Örnek -->
+  <rect x="230" y="200" width="180" height="55" rx="10" fill="url(#box6)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1a2a5a">Örnek Kullanım</text>
+  <text x="320" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a3a6a">var ad = 'Sadık';</text>
+  <text x="320" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2a3a6a">var soyad = "Turan";</text>
+
+  <!-- Ok: merkez -> alt -->
+  <path d="M 320 100 L 320 195" stroke="#5a8a9a" stroke-width="2" fill="none"/>
+  <polygon points="320,195 315,183 325,183" fill="#5a8a9a"/>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5a7a8a">Karakter dizileri üzerinde işlem yapmayı sağlar</text>
+</svg>

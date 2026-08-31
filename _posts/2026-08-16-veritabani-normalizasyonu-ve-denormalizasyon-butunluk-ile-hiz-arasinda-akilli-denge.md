@@ -9,6 +9,7 @@ tags:
   - normalizasyon
   - denormalizasyon
 toc: true
+image: /img/veritabani-normalizasyonu-ve-27.png
 ---
 
 Veritabanı tasarımı, yalnızca tabloları yan yana dizmek değildir; verinin doğru, tutarlı ve hızlı erişilebilir kalmasını sağlayan bir mimari karar sürecidir. Normalizasyon tekrarları azaltarak veri bütünlüğünü korur, denormalizasyon ise bazı tekrarları bilinçli biçimde kabul ederek okuma performansını artırır. İyi tasarımcı, bu iki yaklaşımı rakip değil, farklı ihtiyaçlara hizmet eden araçlar olarak görür.
@@ -30,6 +31,9 @@ Bu ifade, `MusteriID` biliniyorsa müşteri adı ve e-posta bilgisinin belirlend
 | 2NF | Kısmi bağımlılığı kaldırmak | Alanlar bileşik anahtarın tamamına mı bağlı? |
 | 3NF | Geçişli bağımlılığı kaldırmak | Anahtar dışı alan başka anahtar dışı alana mı bağlı? |
 | BCNF | Daha sıkı belirleyici kuralı | Her belirleyici aday anahtar mı? |
+
+![veritabani-normalizasyonu-ve-27](/img/veritabani-normalizasyonu-ve-27.svg)
+
 
 Örneğin `Siparisler(SiparisID, MusteriID, MusteriAdi, UrunID, UrunAdi, Adet)` tasarımı ilk bakışta pratik görünür. Ancak `MusteriAdi` müşteriyle, `UrunAdi` ise ürünle ilişkilidir; sipariş satırına ait değillerdir. Daha sağlıklı yapı, bu verileri `Musteriler`, `Urunler`, `Siparisler` ve `SiparisKalemleri` tablolarına ayırmaktır.
 

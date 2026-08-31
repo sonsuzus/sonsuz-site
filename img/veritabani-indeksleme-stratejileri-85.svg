@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ee"/>
+    </linearGradient>
+    <linearGradient id="root" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c9dcff"/>
+      <stop offset="100%" stop-color="#aebff0"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f2e6"/>
+      <stop offset="100%" stop-color="#b9dfcf"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff2cb"/>
+      <stop offset="100%" stop-color="#f5d99b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#61758a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#61758a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="43" r="65" fill="#dcecff" opacity="0.45"/>
+  <circle cx="598" cy="287" r="88" fill="#dff1d7" opacity="0.48"/>
+
+  <rect x="22" y="22" width="150" height="71" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="42" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405268" font-weight="600">Sorgu</text>
+  <text x="42" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#244564">WHERE email = ...</text>
+  <circle cx="145" cy="57" r="15" fill="#d9ebff"/>
+  <circle cx="142" cy="54" r="5" fill="none" stroke="#527ca8" stroke-width="2"/>
+  <path d="M146 58 L153 65" stroke="#527ca8" stroke-width="2" stroke-linecap="round"/>
+
+  <path d="M173 57 C190 57 191 104 215 104" fill="none" stroke="#7899b9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="215,104 207,99 208,108" fill="#7899b9"/>
+
+  <rect x="212" y="77" width="216" height="47" rx="15" fill="url(#root)" filter="url(#shadow)"/>
+  <text x="232" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#254463" font-weight="700">B-Ağacı Kökü</text>
+  <text x="232" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405d78">Anahtarlar · yüksek dallanma</text>
+  <rect x="379" y="90" width="11" height="20" rx="4" fill="#7c97ca"/>
+  <rect x="395" y="90" width="11" height="20" rx="4" fill="#7c97ca"/>
+  <rect x="411" y="90" width="11" height="20" rx="4" fill="#7c97ca"/>
+
+  <path d="M275 125 L205 158" fill="none" stroke="#75988f" stroke-width="2.5"/>
+  <polygon points="205,158 212,151 215,160" fill="#75988f"/>
+  <path d="M320 125 L320 158" fill="none" stroke="#75988f" stroke-width="2.5"/>
+  <polygon points="320,158 315,150 325,150" fill="#75988f"/>
+  <path d="M365 125 L435 158" fill="none" stroke="#75988f" stroke-width="2.5"/>
+  <polygon points="435,158 425,160 429,151" fill="#75988f"/>
+
+  <rect x="153" y="159" width="105" height="42" rx="13" fill="url(#node)" filter="url(#soft)"/>
+  <rect x="267" y="159" width="105" height="42" rx="13" fill="url(#node)" filter="url(#soft)"/>
+  <rect x="381" y="159" width="105" height="42" rx="13" fill="url(#node)" filter="url(#soft)"/>
+  <text x="181" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#255a50" font-weight="600">Yönlendir</text>
+  <text x="295" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#255a50" font-weight="600">Yönlendir</text>
+  <text x="409" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#255a50" font-weight="600">Yönlendir</text>
+
+  <path d="M205 202 L164 231 M205 202 L236 231 M320 202 L292 231 M320 202 L348 231 M435 202 L404 231 M435 202 L476 231" fill="none" stroke="#92a790" stroke-width="2"/>
+
+  <rect x="122" y="232" width="84" height="38" rx="12" fill="url(#leaf)" filter="url(#soft)"/>
+  <rect x="221" y="232" width="84" height="38" rx="12" fill="url(#leaf)" filter="url(#soft)"/>
+  <rect x="320" y="232" width="84" height="38" rx="12" fill="url(#leaf)" filter="url(#soft)"/>
+  <rect x="419" y="232" width="84" height="38" rx="12" fill="url(#leaf)" filter="url(#soft)"/>
+  <text x="140" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765725">Yaprak</text>
+  <text x="239" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765725">Yaprak</text>
+  <text x="338" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765725">Yaprak</text>
+  <text x="437" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765725">Kayıt</text>
+
+  <path d="M207 251 L219 251 M306 251 L318 251 M405 251 L417 251" stroke="#cc9d43" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="219,251 214,247 214,255" fill="#cc9d43"/>
+  <polygon points="318,251 313,247 313,255" fill="#cc9d43"/>
+  <polygon points="417,251 412,247 412,255" fill="#cc9d43"/>
+
+  <rect x="514" y="56" width="105" height="189" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="532" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405268" font-weight="700">İndeks Dengesi</text>
+  <line x1="537" y1="108" x2="596" y2="108" stroke="#d5e0e8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="537" y1="108" x2="580" y2="108" stroke="#77bca2" stroke-width="8" stroke-linecap="round"/>
+  <text x="531" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477164">Okuma hızı</text>
+  <line x1="537" y1="157" x2="596" y2="157" stroke="#d5e0e8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="537" y1="157" x2="562" y2="157" stroke="#efad83" stroke-width="8" stroke-linecap="round"/>
+  <text x="531" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a634d">Yazma maliyeti</text>
+  <path d="M534 204 L548 204 L556 194 L567 211 L578 185 L594 185" fill="none" stroke="#6688b5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="531" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405d78">Ölç: sorgu planı</text>
+
+  <text x="23" y="298" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60748a">Az seviye · sıralı yapraklar · hızlı erişim</text>
+</svg>
