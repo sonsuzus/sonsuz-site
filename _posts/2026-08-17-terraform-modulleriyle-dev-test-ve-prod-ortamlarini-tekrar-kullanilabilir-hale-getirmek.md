@@ -9,6 +9,7 @@ tags:
   - ınfrastructure as code
   - devops
 toc: true
+image: /img/terraform-modulleriyle-dev-29.png
 ---
 
 Bulut altyapısını elle yönetmek, ilk birkaç sunucuda masum görünür; fakat dev, test ve prod ortamları çoğaldıkça aynı güvenlik grubu, ağ ve veritabanı ayarlarını kopyalamak hızla bir bakım kabusuna dönüşür. Terraform modülleri bu sorunu, altyapı bileşenlerini parametre alan küçük ve tekrar kullanılabilir paketlere dönüştürerek çözer. Böylece ekipler aynı mimari standardı her ortamda korurken, yalnızca ortama özgü değerleri değiştirir.
@@ -26,6 +27,9 @@ Bu yaklaşım yazılımdaki **soyutlama** ve **DRY (Don't Repeat Yourself)** ilk
 | Ortam başına kopya `.tf` dosyaları | Başlangıçta hızlı görünür | Konfigürasyon sapması ve zor bakım |
 | Tek, devasa yapılandırma | Tüm kaynaklar görünür | Ortam ayrımı ve yetkilendirme zorlaşır |
 | Modül + ortam kök dizinleri | Standart, tekrar kullanım ve net sınırlar | Modül arayüzü tasarımı gerektirir |
+
+![terraform-modulleriyle-dev-29](/img/terraform-modulleriyle-dev-29.svg)
+
 
 ## Önerilen klasör yapısı
 

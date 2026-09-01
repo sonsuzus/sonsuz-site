@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="mainGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ebff"/>
+      <stop offset="100%" stop-color="#c8ddf5"/>
+    </linearGradient>
+    <linearGradient id="retryGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1c9"/>
+      <stop offset="100%" stop-color="#f8df9c"/>
+    </linearGradient>
+    <linearGradient id="dlqGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9d9dd"/>
+      <stop offset="100%" stop-color="#efbbc5"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6d8296" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8296" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="48" cy="44" r="78" fill="#dceef8" opacity="0.48"/>
+  <circle cx="592" cy="272" r="93" fill="#dcefdc" opacity="0.5"/>
+  <path d="M28 268 C128 226 178 286 278 262 S450 214 607 249" fill="none" stroke="#bcd8de" stroke-width="2" opacity="0.38"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476177">Kaybolmayan Mesaj Akışı</text>
+  <text x="32" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909e">başarısızlık · gecikme · görünürlük</text>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="112" width="128" height="94" rx="18" fill="url(#mainGrad)" stroke="#a9cbe4"/>
+  </g>
+  <rect x="53" y="131" width="30" height="23" rx="6" fill="#ffffff" opacity="0.76"/>
+  <path d="M59 138h18M59 145h18M59 152h11" stroke="#6792b5" stroke-width="2" stroke-linecap="round"/>
+  <text x="99" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355d7c">Ana Kuyruk</text>
+  <text x="99" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51738c">orders.main</text>
+  <text x="99" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51738c">Mesajlar</text>
+
+  <path d="M163 159 H202" fill="none" stroke="#6e91aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="202,159 194,154 194,164" fill="#6e91aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="207" y="112" width="112" height="94" rx="18" fill="#dcefe3" stroke="#afd0bb"/>
+  </g>
+  <circle cx="235" cy="145" r="14" fill="#ffffff" opacity="0.8"/>
+  <path d="M229 145l4 4 8-9" fill="none" stroke="#5a9972" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="274" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376a4a">Tüketici</text>
+  <text x="274" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527962">İşleme</text>
+  <text x="274" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527962">başarılı mı?</text>
+
+  <path d="M263 216 V246 H151 V213" fill="none" stroke="#ca9139" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="151,213 146,222 156,222" fill="#ca9139"/>
+  <rect x="183" y="234" width="91" height="23" rx="11" fill="#fff8e4" stroke="#f0d18a" filter="url(#smallShadow)"/>
+  <text x="228.5" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#96702e">Başarılı · onay</text>
+
+  <path d="M319 159 H352" fill="none" stroke="#c28931" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="352,159 344,154 344,164" fill="#c28931"/>
+  <text x="335" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b712e">Hata</text>
+
+  <g filter="url(#shadow)">
+    <rect x="357" y="97" width="134" height="122" rx="20" fill="url(#retryGrad)" stroke="#e5bd62"/>
+  </g>
+  <circle cx="424" cy="127" r="20" fill="#fff9e8" stroke="#e8c574"/>
+  <path d="M416 128a9 9 0 1 0 5-8" fill="none" stroke="#b9822b" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="420,117 420,124 414,122" fill="#b9822b"/>
+  <text x="424" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#866022">Retry Kuyruğu</text>
+  <text x="424" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d7837">TTL · 30 sn</text>
+  <text x="424" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d7837">x-death sayacı</text>
+
+  <path d="M357 198 C332 244 177 242 102 210" fill="none" stroke="#c28931" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="102,210 109,218 112,208" fill="#c28931"/>
+  <rect x="293" y="238" width="110" height="24" rx="12" fill="#fff8e4" stroke="#ecd08c" filter="url(#smallShadow)"/>
+  <text x="348" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8f6a2d">TTL sonrası dönüş</text>
+
+  <path d="M491 159 H520" fill="none" stroke="#b66575" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="520,159 512,154 512,164" fill="#b66575"/>
+  <text x="505" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d5362">Sınır</text>
+
+  <g filter="url(#shadow)">
+    <rect x="525" y="112" width="86" height="94" rx="18" fill="url(#dlqGrad)" stroke="#dfa1ad"/>
+  </g>
+  <path d="M551 137h34v31h-34z" fill="#fff7f7" opacity="0.82" stroke="#c77c8a"/>
+  <path d="M551 139l17 13 17-13" fill="none" stroke="#c77c8a" stroke-width="1.6"/>
+  <text x="568" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#884655">Final DLQ</text>
+  <text x="568" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c6170">İnceleme</text>
+
+  <rect x="36" y="277" width="568" height="25" rx="12" fill="#ffffff" opacity="0.7" stroke="#d5e4e7"/>
+  <circle cx="54" cy="289.5" r="5" fill="#6da987"/>
+  <text x="66" y="294" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54707c">Geçici hata: bekle ve yeniden dene</text>
+  <circle cx="302" cy="289.5" r="5" fill="#d2808e"/>
+  <text x="314" y="294" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54707c">Kalıcı hata: DLQ ve alarm</text>
+</svg>

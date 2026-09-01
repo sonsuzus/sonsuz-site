@@ -17,6 +17,7 @@ tags:
 redirect_from:
   - /posts/buyuk-veri-big-data-nedir/
 toc: true
+image: /img/buyuk-veri-big-32.png
 ---
 
 
@@ -110,3 +111,5 @@ Python kullanarak büyük veri analizi yapmak için aşağıdaki kaynakları kul
 - Matplotlib Documentation: Matplotlib kütüphanesinin resmi belgeleri.
 
 Python kullanarak büyük veri analizi, işletmelerin ve kuruluşların önemli içgörüler elde etmesine yardımcı olmak için güçlü bir araçtır. Python'un güçlü veri analizi kütüphaneleri ve çerçeveleri, büyük veri setlerini hızla ve verimli bir şekilde işlemeye olanak tanır.
+![buyuk-veri-big-32](/img/buyuk-veri-big-32.svg)
+

@@ -9,7 +9,11 @@ tags:
   - yıldız şeması
   - kar tanesi şeması
 toc: true
+image: /img/yildiz-mi-kar-40.png
 ---
+
+![yildiz-mi-kar-40](/img/yildiz-mi-kar-40.svg)
+
 
 Veri ambarı tasarımında en tartışmalı kararlardan biri, boyut tablolarını sade bırakıp **yıldız şeması** kullanmak mı, yoksa onları alt tablolara ayırıp **kar tanesi şeması** ile normalize etmek mi sorusudur. Bu tercih yalnızca diyagramın estetiğini değil; disk tüketimini, ETL akışını, sorgu planını ve analistlerin bekleme süresini doğrudan etkiler. Sağlıklı bir karar için sezgilere değil, temsilî iş yüküyle yapılan modelleme çalışmasına ihtiyaç vardır.
 ``

@@ -11,9 +11,13 @@ tags:
   - heartbeat
   - sohbet uygulaması
 toc: true
+image: /img/saglam-sohbet-uygulamalari-16.png
 ---
 
 Gerçek zamanlı sohbet uygulamalarında kullanıcılar bağlantının her zaman açık kalmasını bekler. Ancak mobil ağ değişimleri, tarayıcının uykuya geçmesi, sunucu yeniden başlatmaları ve geçici paket kayıpları bu beklentiyi kolayca bozar. Sağlam bir WebSocket istemcisi, kopmayı bir hata sonu değil, yönetilmesi gereken normal bir durum olarak görür. Bu noktada iki temel araç devreye girer: yeniden bağlanma (reconnection) ve heartbeat, yani nabız kontrolü.
+
+
+![saglam-sohbet-uygulamalari-16](/img/saglam-sohbet-uygulamalari-16.svg)
 
 ``
 

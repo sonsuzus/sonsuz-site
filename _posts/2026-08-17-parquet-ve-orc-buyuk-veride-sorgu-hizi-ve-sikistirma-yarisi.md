@@ -8,6 +8,7 @@ tags:
   - büyük veri
   - parquet
   - orc
+image: /img/parquet-ve-orc-93.png
 ---
 
 Büyük veri sistemlerinde dosya formatı seçimi, yalnızca depolama maliyetini değil; Spark, Hive, Trino veya Presto gibi araçlardaki sorgu süresini de doğrudan belirler. Parquet ve ORC, satır bazlı CSV ya da JSON yerine sütun bazlı veri saklayarak analitik iş yüklerini hızlandıran iki güçlü formattır. Ancak benzer hedeflere sahip olsalar da metadata organizasyonları, sıkıştırma stratejileri ve ekosistem uyumları farklıdır.
@@ -29,6 +30,9 @@ Burada $B_{okunan}$, gerçekten ihtiyaç duyulan bayt miktarıdır. Sütun seçi
 | Filtre optimizasyonu | Column statistics, page index | Min/max istatistikleri, bloom filter |
 | Yaygın kullanım | Data lake, lakehouse, Arrow tabanlı araçlar | Hive ağırlıklı ambarlar |
 | Şema desteği | İç içe yapılar için güçlü | İç içe yapılar ve ACID/Hive senaryolarında güçlü |
+
+![parquet-ve-orc-93](/img/parquet-ve-orc-93.svg)
+
 
 Parquet, sütun verisini sayfalara böler ve özellikle farklı motorlar arasında taşınabilirlik konusunda öne çıkar. Spark, DuckDB, Pandas, Polars ve bulut veri gölleriyle doğal bir ilişki kurar. ORC ise veriyi stripe adı verilen daha büyük bölümlerde düzenler. Stripe içindeki indeksler ve varsayılan bloom filter kullanımı, belirli değerleri arayan Hive sorgularında etkileyici sonuçlar verebilir.
 

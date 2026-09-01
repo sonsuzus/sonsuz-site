@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64b5f6"/>
+      <stop offset="100%" stop-color="#42a5f5"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5d6a7"/>
+      <stop offset="100%" stop-color="#81c784"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffcc80"/>
+      <stop offset="100%" stop-color="#ffb74d"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#90caf9"/>
+      <stop offset="100%" stop-color="#64b5f6"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f48fb1"/>
+      <stop offset="100%" stop-color="#f06292"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ce93d8"/>
+      <stop offset="100%" stop-color="#ab47bc"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Başlık -->
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Veri Bilimi Ekosistemi</text>
+
+  <!-- Merkez düğüm -->
+  <rect x="245" y="125" width="150" height="50" rx="14" fill="url(#centerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Veri Bilimi</text>
+  <text x="320" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#e3f2fd">Data Science</text>
+
+  <!-- Bağlantı çizgileri (merkezden dışa) -->
+  <!-- Sol üst -->
+  <path d="M 245 140 L 120 100" stroke="#78909c" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="120,100 130,96 126,104" fill="#78909c" opacity="0.7"/>
+  <!-- Üst -->
+  <path d="M 300 125 L 300 70" stroke="#78909c" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="300,70 305,80 295,80" fill="#78909c" opacity="0.7"/>
+  <!-- Sağ üst -->
+  <path d="M 395 140 L 520 100" stroke="#78909c" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="520,100 510,96 514,104" fill="#78909c" opacity="0.7"/>
+  <!-- Sol alt -->
+  <path d="M 245 160 L 120 200" stroke="#78909c" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="120,200 130,196 126,204" fill="#78909c" opacity="0.7"/>
+  <!-- Sağ alt -->
+  <path d="M 395 160 L 520 200" stroke="#78909c" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="520,200 510,196 514,204" fill="#78909c" opacity="0.7"/>
+  <!-- Alt -->
+  <path d="M 320 175 L 320 230" stroke="#78909c" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <polygon points="320,230 315,220 325,220" fill="#78909c" opacity="0.7"/>
+
+  <!-- Çevresel düğümler -->
+  <!-- Sol üst: Veri Üretimi -->
+  <rect x="40" y="70" width="120" height="45" rx="10" fill="url(#nodeGrad1)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="100" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">Veri Üretimi</text>
+  <text x="100" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2e7d32">Kaynak Bolluğu</text>
+
+  <!-- Üst: Büyük Veri -->
+  <rect x="240" y="35" width="160" height="45" rx="10" fill="url(#nodeGrad2)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="55" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Büyük Veri</text>
+  <text x="320" y="71" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ef6c00">Big Data</text>
+
+  <!-- Sağ üst: Veri İletimi -->
+  <rect x="480" y="70" width="120" height="45" rx="10" fill="url(#nodeGrad3)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="540" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#0d47a1">Veri İletimi</text>
+  <text x="540" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#1565c0">Fiber Hız</text>
+
+  <!-- Sol alt: Veri Depolama -->
+  <rect x="40" y="175" width="120" height="45" rx="10" fill="url(#nodeGrad4)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="100" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#880e4f">Veri Depolama</text>
+  <text x="100" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#ad1457">Düşük Maliyet</text>
+
+  <!-- Sağ alt: Uygulama Alanları -->
+  <rect x="480" y="175" width="120" height="45" rx="10" fill="url(#nodeGrad5)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="540" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#4a148c">Uygulamalar</text>
+  <text x="540" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a1b9a">E-ticaret, Banka</text>
+
+  <!-- Alt: Veri Bilimcisi -->
+  <rect x="260" y="230" width="120" height="45" rx="10" fill="url(#nodeGrad1)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="320" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">Veri Bilimcisi</text>
+  <text x="320" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#2e7d32">Data Scientist</text>
+
+  <!-- Alt bilgi -->
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#546e7a" opacity="0.8">Teknolojik ilerleme ve doğal gelişim süreci</text>
+</svg>

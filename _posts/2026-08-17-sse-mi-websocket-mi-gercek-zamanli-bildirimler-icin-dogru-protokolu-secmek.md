@@ -9,6 +9,7 @@ tags:
   - websocket
   - gerçek zamanlı sistemler
 toc: true
+image: /img/sse-mi-websocket-57.png
 ---
 
 Bir kullanıcıya yeni sipariş, mesaj, fiyat değişimi veya sistem alarmı ulaştırmak istediğinizde klasik HTTP istek-cevap modeli yetersiz kalır. Tarayıcının sürekli “Yeni bir şey var mı?” diye sorması hem gecikme hem de gereksiz sunucu yükü üretir. SSE (Server-Sent Events) ve WebSocket, sunucu ile istemci arasındaki bağlantıyı canlı tutarak bu sorunu çözer; fakat aynı probleme farklı yönlerden yaklaşırlar.
@@ -88,3 +89,6 @@ Bu kod, istemciden gelen mesajı işleyip odadaki diğer katılımcılara dağı
 | İkili veri ya da çok düşük gecikmeli etkileşim var mı? | WebSocket |
 
 Pratik kural nettir: Bildirim, fiyat ekranı, iş ilerleme çubuğu ve canlı log için önce SSE düşünün. Karşılıklı, yoğun ve etkileşimli iletişim gerekiyorsa WebSocket’e geçin. Doğru seçim “en güçlü” teknolojiyi değil, veri akışınızın yönüne ve operasyonel maliyetinize en uygun olanı kullanmaktır.
+
+![sse-mi-websocket-57](/img/sse-mi-websocket-57.svg)
+

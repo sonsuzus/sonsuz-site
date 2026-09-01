@@ -8,6 +8,7 @@ tags:
   - saga
   - microservices
   - distributed transactions
+image: /img/saga-deseni-ile-72.png
 ---
 
 Mikroservis mimarisinde bir siparişin oluşturulması, ödemenin alınması ve stok rezervasyonu tek bir veritabanı işlemi değildir; her servis kendi verisine sahiptir. Klasik ACID transaction yaklaşımını servisler arasında yaymak hem pahalı hem de kırılgandır. Saga deseni, büyük işlemi yerel işlemlere böler ve bir adım başarısız olduğunda önceki adımları geri almak için **telafi edici işlemler** (compensating transactions) çalıştırır. Böylece sistem, anlık tutarlılık yerine kontrollü bir **eventual consistency** modeli benimser.
@@ -80,3 +81,6 @@ Bu kodda servisler birbirini doğrudan çağırmaz; broker, Kafka veya RabbitMQ 
 Her iki yaklaşımda da mesajlar en az bir kez teslim edilebilir. Bu nedenle tüketiciler **idempotent** olmalıdır: Aynı `PaymentCompleted` olayı iki kez gelirse ödeme iki kez işlenmemelidir. Yaygın çözüm, her mesaj için benzersiz `eventId` saklamak ve daha önce işlenmiş kimlikleri atlamaktır. Ayrıca Outbox deseni ile veritabanı değişikliği ve event yayını güvenli biçimde ilişkilendirilir.
 
 Başlangıç için karmaşık sipariş akışlarında orchestration seçmek, gözlemlenebilirlik ve hata yönetimi açısından daha güvenlidir. Servisler arası etkileşimler olgunlaştığında, bağımsız ve kısa akışları choreography ile event tabanlı hale getirmek iyi bir evrim stratejisidir.
+
+![saga-deseni-ile-72](/img/saga-deseni-ile-72.svg)
+

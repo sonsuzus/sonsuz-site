@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C8EBF"/>
+      <stop offset="100%" stop-color="#4A6FA5"/>
+    </linearGradient>
+    <linearGradient id="featureGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7FB3D8"/>
+      <stop offset="100%" stop-color="#5D9BC0"/>
+    </linearGradient>
+    <linearGradient id="featureGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#82C4A8"/>
+      <stop offset="100%" stop-color="#5EAF8A"/>
+    </linearGradient>
+    <linearGradient id="featureGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A76A"/>
+      <stop offset="100%" stop-color="#C08D4F"/>
+    </linearGradient>
+    <linearGradient id="featureGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B48CC9"/>
+      <stop offset="100%" stop-color="#9A6FB0"/>
+    </linearGradient>
+    <linearGradient id="appGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8A87C"/>
+      <stop offset="100%" stop-color="#D98E5F"/>
+    </linearGradient>
+    <linearGradient id="appGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7CC4C4"/>
+      <stop offset="100%" stop-color="#5AA8A8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect width="640" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Merkez düğüm: Büyük Veri -->
+  <circle cx="320" cy="160" r="52" fill="url(#centerGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="320" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">BÜYÜK</text>
+  <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">VERİ</text>
+
+  <!-- Bağlantı çizgileri (manuel ok başları ile) -->
+  <!-- Hacim -->
+  <path d="M 278 132 L 148 78" stroke="#5D9BC0" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="148,78 158,82 153,72" fill="#5D9BC0" opacity="0.8"/>
+
+  <!-- Hız -->
+  <path d="M 268 160 L 138 160" stroke="#5EAF8A" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="138,160 148,164 148,156" fill="#5EAF8A" opacity="0.8"/>
+
+  <!-- Çeşitlilik -->
+  <path d="M 278 188 L 148 242" stroke="#C08D4F" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="148,242 158,238 153,248" fill="#C08D4F" opacity="0.8"/>
+
+  <!-- Karmaşıklık -->
+  <path d="M 320 212 L 320 268" stroke="#9A6FB0" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="320,268 316,258 324,258" fill="#9A6FB0" opacity="0.8"/>
+
+  <!-- Uygulama bağlantıları -->
+  <path d="M 372 132 L 502 78" stroke="#D98E5F" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="502,78 492,82 497,72" fill="#D98E5F" opacity="0.8"/>
+
+  <path d="M 372 188 L 502 242" stroke="#5AA8A8" stroke-width="2" fill="none" opacity="0.7"/>
+  <polygon points="502,242 492,238 497,248" fill="#5AA8A8" opacity="0.8"/>
+
+  <!-- Özellik kutuları -->
+  <!-- Hacim -->
+  <rect x="58" y="48" width="90" height="60" rx="10" fill="url(#featureGrad1)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="103" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">HACİM</text>
+  <text x="103" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8f0f8">Büyük miktar</text>
+
+  <!-- Hız -->
+  <rect x="48" y="130" width="90" height="60" rx="10" fill="url(#featureGrad2)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="93" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">HIZ</text>
+  <text x="93" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e8f0f8">Hızlı değişim</text>
+
+  <!-- Çeşitlilik -->
+  <rect x="58" y="212" width="90" height="60" rx="10" fill="url(#featureGrad3)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="103" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">ÇEŞİTLİLİK</text>
+  <text x="103" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fdf0e0">Farklı kaynak</text>
+
+  <!-- Karmaşıklık -->
+  <rect x="275" y="270" width="90" height="40" rx="10" fill="url(#featureGrad4)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">KARMAŞIKLIK</text>
+  <text x="320" y="304" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#f0e8f8">Zor analiz</text>
+
+  <!-- Uygulama kutuları -->
+  <!-- İş -->
+  <rect x="472" y="48" width="110" height="60" rx="10" fill="url(#appGrad1)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="527" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">İŞ</text>
+  <text x="527" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#fdf0e0">Müşteri analizi</text>
+
+  <!-- Tıp -->
+  <rect x="472" y="212" width="110" height="60" rx="10" fill="url(#appGrad2)" filter="url(#shadowLight)" opacity="0.9"/>
+  <text x="527" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">TIP</text>
+  <text x="527" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#e0f0f0">Hasta verileri</text>
+
+  <!-- Alt bilgi etiketi -->
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8899aa" opacity="0.8">Anlamlı ve işlenebilir veri bütünü</text>
+</svg>

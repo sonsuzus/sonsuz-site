@@ -9,7 +9,11 @@ tags:
   - nosql
   - veri göçü
 toc: true
+image: /img/sqlden-nosqle-veri-33.png
 ---
+
+![sqlden-nosqle-veri-33](/img/sqlden-nosqle-veri-33.svg)
+
 
 SQL ve NoSQL arasında veri göçü, yalnızca bir tablodan diğerine kayıt kopyalamak değildir; veri modelinin dünyayı yorumlama biçimini değiştirmektir. İlişkisel sistemler tutarlılığı tablolar, anahtarlar ve kısıtlarla korurken; NoSQL sistemleri ölçeklenebilirlik, esnek şema ve erişim desenlerini öne çıkarır. Bu nedenle başarılı bir göçün temel sorusu “Veriyi nasıl taşırım?” değil, “Uygulama bu veriyi hangi sorgularla kullanacak?” olmalıdır.
 ``

@@ -9,9 +9,13 @@ tags:
   - gradient boosting
   - hiperparametre optimizasyonu
 toc: true
+image: /img/xgboost-lightgbm-ve-13.png
 ---
 
 Gradient boosting ailesi, tabular verilerdeki güçlü performansıyla veri biliminin Formula 1 aracı gibidir: doğru ayarlarla inanılmaz hızlıdır, yanlış ayarla ise duvara çarpması kolaydır. XGBoost, LightGBM ve CatBoost aynı temel fikri paylaşsa da ağaçları büyütme stratejileri, kategorik veriye yaklaşımları ve düzenlileştirme seçenekleri farklıdır. Bu nedenle adil bir karşılaştırma, varsayılan parametrelerle değil; kontrollü veri hazırlama, çapraz doğrulama ve sistematik hiperparametre optimizasyonu ile yapılmalıdır.
+
+![xgboost-lightgbm-ve-13](/img/xgboost-lightgbm-ve-13.svg)
+
 ``
 
 ## Teorik temel: Hatalardan öğrenen ağaçlar

@@ -9,9 +9,13 @@ tags:
   - sorted set
   - hyperloglog
 toc: true
+image: /img/redis-sorted-set-86.png
 ---
 
 Bir oyun uygulamasında en iyi oyuncuları saniyeler içinde sıralamak ya da bir kampanyayı kaç farklı kullanıcının gördüğünü hesaplamak, ilk bakışta basit görünür. Ancak trafik arttığında klasik SQL sorguları, sürekli güncellenen sayaçlar ve büyük `DISTINCT` işlemleri pahalılaşır. Redis; bellekte çalışan, düşük gecikmeli veri yapıları sayesinde bu iki problemi zarif biçimde çözer: lider tabloları için Sorted Set, yaklaşık tekil sayım için ise HyperLogLog.
+
+![redis-sorted-set-86](/img/redis-sorted-set-86.svg)
+
 ``
 ## Neden iki farklı yapı?
 

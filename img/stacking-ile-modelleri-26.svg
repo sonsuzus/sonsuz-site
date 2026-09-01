@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="inputGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#c9e2fa"/>
+    </linearGradient>
+    <linearGradient id="metaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4d9ff"/>
+      <stop offset="100%" stop-color="#d2c4f5"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f3df"/>
+      <stop offset="100%" stop-color="#bae7c8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#69829a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#69829a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="92" cy="54" r="54" fill="#d9eefb" opacity="0.42"/>
+  <circle cx="580" cy="269" r="75" fill="#d9f0d7" opacity="0.38"/>
+  <circle cx="444" cy="35" r="28" fill="#eee5ff" opacity="0.48"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486176">STACKING MİMARİSİ</text>
+  <text x="30" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718797">Çapraz doğrulama ile güvenilir birleşim</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="111" width="112" height="103" rx="18" fill="url(#inputGrad)"/>
+  </g>
+  <rect x="43" y="128" width="27" height="27" rx="8" fill="#ffffff" opacity="0.72"/>
+  <path d="M50 148 L56 141 L61 145 L65 137" fill="none" stroke="#5782a7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345a79">Eğitim</text>
+  <text x="84" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496f8e">verisi</text>
+  <line x1="44" y1="174" x2="124" y2="174" stroke="#8bb4d3" stroke-width="1"/>
+  <text x="48" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557b97">K parçaya böl</text>
+
+  <path d="M141 161 H165" fill="none" stroke="#7192a9" stroke-width="2"/>
+  <polygon points="170,161 163,156 163,166" fill="#7192a9"/>
+
+  <rect x="166" y="76" width="198" height="181" rx="22" fill="#ffffff" opacity="0.55" stroke="#cfe0e9"/>
+  <text x="184" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#587284">Temel modeller</text>
+  <rect x="274" y="85" width="68" height="22" rx="11" fill="#d9f0e2"/>
+  <text x="286" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39705b">OOF</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="184" y="116" width="103" height="35" rx="11" fill="#ffe5d4"/>
+    <rect x="184" y="160" width="103" height="35" rx="11" fill="#dcecff"/>
+    <rect x="184" y="204" width="103" height="35" rx="11" fill="#e4f2d4"/>
+  </g>
+  <text x="202" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#87583d">Doğrusal model</text>
+  <text x="207" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416b91">Ağaç modeli</text>
+  <text x="196" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#547843">Mesafe modeli</text>
+
+  <path d="M288 133 H315 V157 H331" fill="none" stroke="#d19369" stroke-width="1.7" stroke-linecap="round"/>
+  <polygon points="336,157 329,152 329,162" fill="#d19369"/>
+  <path d="M288 177 H331" fill="none" stroke="#739bc0" stroke-width="1.7"/>
+  <polygon points="336,177 329,172 329,182" fill="#739bc0"/>
+  <path d="M288 221 H315 V197 H331" fill="none" stroke="#83a96d" stroke-width="1.7" stroke-linecap="round"/>
+  <polygon points="336,197 329,192 329,202" fill="#83a96d"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="335" y="143" width="18" height="72" rx="7" fill="#f4f0ff" stroke="#cdbfea"/>
+  </g>
+  <path d="M344 155 V203 M339 164 H349 M339 178 H349 M339 192 H349" stroke="#927dbd" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="310" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e6187">Tahmin matrisi</text>
+
+  <path d="M365 179 H393" fill="none" stroke="#7192a9" stroke-width="2"/>
+  <polygon points="398,179 391,174 391,184" fill="#7192a9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="398" y="115" width="124" height="128" rx="19" fill="url(#metaGrad)"/>
+  </g>
+  <circle cx="460" cy="148" r="21" fill="#ffffff" opacity="0.65"/>
+  <path d="M450 151 C454 142 461 142 464 148 C468 143 474 145 475 152 C476 160 469 166 461 169 C452 165 446 160 450 151Z" fill="#8b72b6"/>
+  <text x="423" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#554173">Meta-model</text>
+  <text x="416" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#675681">Güveni öğrenir</text>
+  <rect x="422" y="218" width="76" height="12" rx="6" fill="#ffffff" opacity="0.45"/>
+
+  <path d="M523 179 H546" fill="none" stroke="#7192a9" stroke-width="2"/>
+  <polygon points="551,179 544,174 544,184" fill="#7192a9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="551" y="133" width="64" height="92" rx="18" fill="url(#resultGrad)"/>
+  </g>
+  <circle cx="583" cy="161" r="17" fill="#ffffff" opacity="0.62"/>
+  <path d="M575 161 L581 167 L592 154" fill="none" stroke="#4d9970" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="563" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397158">Sonuç</text>
+  <text x="561" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c8066">Tahmin</text>
+
+  <path d="M177 277 H580" stroke="#b7cbd4" stroke-width="1" stroke-dasharray="4 5"/>
+  <circle cx="188" cy="277" r="4" fill="#8db2ca"/>
+  <text x="200" y="281" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718797">Her satır, görmediği katmandan tahmin alır</text>
+</svg>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c7dcf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#69809a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#69809a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="57" cy="53" r="54" fill="#dceff1" opacity="0.45"/>
+  <circle cx="594" cy="278" r="82" fill="#e3eafa" opacity="0.55"/>
+
+  <text x="32" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Tekrar Kullanılabilir Altyapı</text>
+  <text x="32" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708297">Terraform modülleri ve ortam ayrımı</text>
+
+  <!-- Shared module container -->
+  <rect x="34" y="79" width="184" height="175" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="34" y="79" width="184" height="38" rx="18" fill="#d9ecf8"/>
+  <rect x="34" y="99" width="184" height="18" fill="#d9ecf8"/>
+  <text x="57" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536d">Ortak Modüller</text>
+
+  <rect x="52" y="132" width="148" height="43" rx="10" fill="#e7f4ff" stroke="#b8d8ec" filter="url(#softShadow)"/>
+  <circle cx="72" cy="153" r="10" fill="#86bddc"/>
+  <path d="M67 153h10M72 148v10" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="91" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546c">Ağ</text>
+  <text x="91" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8191">VPC · Alt ağ</text>
+
+  <rect x="52" y="188" width="148" height="43" rx="10" fill="#eef5df" stroke="#cfdfb7" filter="url(#softShadow)"/>
+  <circle cx="72" cy="209" r="10" fill="#a7c77c"/>
+  <rect x="67" y="204" width="10" height="10" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="91" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a643e">Uygulama</text>
+  <text x="91" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#74856a">Sunucu · Veri</text>
+
+  <!-- connections -->
+  <path d="M218 166 H258 V105 H278" fill="none" stroke="#8aa9bd" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="278,105 270,100 270,110" fill="#8aa9bd"/>
+  <path d="M218 166 H258 V177 H278" fill="none" stroke="#8aa9bd" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="278,177 270,172 270,182" fill="#8aa9bd"/>
+  <path d="M218 166 H258 V249 H278" fill="none" stroke="#8aa9bd" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="278,249 270,244 270,254" fill="#8aa9bd"/>
+
+  <text x="228" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688096">Değerler</text>
+
+  <!-- environment cards -->
+  <rect x="278" y="72" width="145" height="67" rx="15" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="278" y="72" width="7" height="67" rx="4" fill="#83c6b7"/>
+  <text x="301" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35645d">Geliştirme</text>
+  <text x="301" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748a91">Küçük · 2 alt ağ</text>
+
+  <rect x="278" y="144" width="145" height="67" rx="15" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="278" y="144" width="7" height="67" rx="4" fill="#e4b76d"/>
+  <text x="301" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7c5c28">Test</text>
+  <text x="301" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8e836e">Orta · 2 alt ağ</text>
+
+  <rect x="278" y="216" width="145" height="67" rx="15" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="278" y="216" width="7" height="67" rx="4" fill="#c98799"/>
+  <text x="301" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754452">Üretim</text>
+  <text x="301" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c7180">Yüksek · 3 alt ağ</text>
+
+  <!-- states -->
+  <path d="M423 105 H452" fill="none" stroke="#8baabb" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="452,105 444,100 444,110" fill="#8baabb"/>
+  <path d="M423 177 H452" fill="none" stroke="#8baabb" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="452,177 444,172 444,182" fill="#8baabb"/>
+  <path d="M423 249 H452" fill="none" stroke="#8baabb" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="452,249 444,244 444,254" fill="#8baabb"/>
+
+  <rect x="452" y="78" width="151" height="54" rx="13" fill="#e9f7f3" stroke="#c3e4dc" filter="url(#softShadow)"/>
+  <path d="M473 94c-5 0-9 3-9 8s4 8 9 8h14c5 0 9-3 9-8s-4-8-9-8c-2-4-10-4-14 0z" fill="#87c8b9"/>
+  <text x="509" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38695f">Ayrı Durum</text>
+  <text x="509" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66857f">geliştirme</text>
+
+  <rect x="452" y="150" width="151" height="54" rx="13" fill="#fff5e4" stroke="#efdcb8" filter="url(#softShadow)"/>
+  <path d="M473 166c-5 0-9 3-9 8s4 8 9 8h14c5 0 9-3 9-8s-4-8-9-8c-2-4-10-4-14 0z" fill="#dfb66f"/>
+  <text x="509" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#795c2d">Ayrı Durum</text>
+  <text x="509" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d7955">test</text>
+
+  <rect x="452" y="222" width="151" height="54" rx="13" fill="#fbecef" stroke="#ebcbd3" filter="url(#softShadow)"/>
+  <path d="M473 238c-5 0-9 3-9 8s4 8 9 8h14c5 0 9-3 9-8s-4-8-9-8c-2-4-10-4-14 0z" fill="#c98699"/>
+  <text x="509" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#794856">Ayrı Durum</text>
+  <text x="509" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#94727c">üretim</text>
+
+  <path d="M57 281 H581" stroke="#cbdce0" stroke-width="1"/>
+  <circle cx="65" cy="296" r="5" fill="#88bda5"/>
+  <text x="77" y="300" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d70">Tek şablon</text>
+  <circle cx="238" cy="296" r="5" fill="#8bb7d4"/>
+  <text x="250" y="300" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d70">Ortam değişkenleri</text>
+  <circle cx="459" cy="296" r="5" fill="#d294a4"/>
+  <text x="471" y="300" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d70">Güvenli ayrım</text>
+</svg>

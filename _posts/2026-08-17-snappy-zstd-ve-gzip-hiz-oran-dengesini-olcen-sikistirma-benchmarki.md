@@ -11,6 +11,7 @@ tags:
   - gzip
   - snappy
 toc: true
+image: /img/snappy-zstd-ve-71.png
 ---
 
 Veri sıkıştırma, disk alanını azaltmaktan çok daha fazlasıdır: ağ maliyeti, önbellek verimliliği, yedekleme süresi ve işlemci tüketimi arasında yapılan bir pazarlıktır. Snappy, Zstd ve Gzip bu pazarlığın üç farklı karakteridir. Snappy mümkün olan en düşük gecikmeye odaklanır, Gzip köklü ve yaygın uyumluluğu temsil eder, Zstd ise modern donanımlarda hem yüksek hız hem de güçlü oran hedefler. Sağlıklı bir seçim için ezbere değil, temsilî verinizle ölçüme ihtiyaç vardır.
@@ -32,6 +33,9 @@ Gzip, DEFLATE algoritmasını kullanır ve uzun yıllardır `.gz` dosyalarının
 | Snappy | Düşük gecikme | Düşük-Orta | Çok yüksek | Çok yüksek | Kafka, sütunlu veri formatları |
 | Gzip | Uyumluluk | Orta | Orta-Düşük | Orta | HTTP, arşivler, eski sistemler |
 | Zstd | Dengeli performans | Orta-Yüksek | Yüksek | Çok yüksek | Log, yedek, API ve veri gölleri |
+
+![snappy-zstd-ve-71](/img/snappy-zstd-ve-71.svg)
+
 
 ## Adil bir benchmark nasıl kurulur?
 

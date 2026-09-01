@@ -9,6 +9,7 @@ tags:
   - stacking
   - ensemble learning
 toc: true
+image: /img/stacking-ile-modelleri-26.png
 ---
 
 Tek bir makine öğrenmesi modeli her zaman yıldız oyuncu olmayabilir; bazen farklı yeteneklere sahip modelleri aynı takımda oynatmak daha iyi sonuç verir. **Süper öğrenme** ya da yaygın adıyla **stacking**, birden fazla temel modelin tahminlerini yeni bir modelin girdisi haline getirir. Amaç, modellerin güçlü yanlarını birleştirirken birbirlerinin hatalarını dengelemektir. Örneğin doğrusal bir model genel eğilimi yakalarken, ağaç tabanlı bir model karmaşık ve doğrusal olmayan ilişkileri keşfedebilir.
@@ -29,6 +30,9 @@ Burada $f_1, f_2, \dots, f_m$ temel modelleri, $g$ ise meta-modeli temsil eder. 
 | Bagging | Aynı tip model, farklı örneklemler | Varyansı düşürür | Yanlılığı sınırlı azaltır |
 | Boosting | Modeller hatalara odaklanarak sırayla kurulur | Güçlü tahmin performansı | Gürültüye duyarlı olabilir |
 | Stacking | Tahminleri meta-model öğrenir | Tamamlayıcı modelleri kullanır | Veri sızıntısına açıktır |
+
+![stacking-ile-modelleri-26](/img/stacking-ile-modelleri-26.svg)
+
 
 ## En kritik nokta: Out-of-Fold tahminler
 

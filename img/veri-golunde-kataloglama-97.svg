@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bce5f5"/>
+      <stop offset="100%" stop-color="#82c8e2"/>
+    </linearGradient>
+    <linearGradient id="catalog" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6d9ff"/>
+      <stop offset="100%" stop-color="#c7b6f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58728a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58728a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="67" cy="267" r="80" fill="#dbeef2" opacity="0.45"/>
+  <circle cx="580" cy="38" r="82" fill="#e7ddfa" opacity="0.35"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516a">VERİ GÖLÜ KATALOGLAMA</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698195">Depolama ve metaveri ayrımı</text>
+
+  <!-- Sources -->
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="76" width="116" height="43" rx="13" fill="#fff4d7"/>
+    <rect x="30" y="130" width="116" height="43" rx="13" fill="#e3f4df"/>
+    <rect x="30" y="184" width="116" height="43" rx="13" fill="#ffe5ea"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405669">
+    <text x="51" y="102" font-weight="600">CSV ve Parquet</text>
+    <text x="59" y="156" font-weight="600">IoT akışları</text>
+    <text x="54" y="210" font-weight="600">Uygulama logları</text>
+  </g>
+  <g fill="#e2ad45">
+    <rect x="40" y="89" width="5" height="14" rx="2"/>
+  </g>
+  <g fill="#70ad79">
+    <circle cx="43" cy="151" r="5"/>
+    <circle cx="43" cy="162" r="3" opacity="0.7"/>
+  </g>
+  <g fill="#dd8192">
+    <rect x="39" y="197" width="9" height="3" rx="1.5"/>
+    <rect x="39" y="204" width="9" height="3" rx="1.5"/>
+    <rect x="39" y="211" width="9" height="3" rx="1.5"/>
+  </g>
+
+  <!-- lines source to lake -->
+  <g stroke="#87a7b5" stroke-width="2" fill="none">
+    <path d="M146 97 H174"/>
+    <path d="M146 151 H174"/>
+    <path d="M146 205 H174"/>
+  </g>
+  <g fill="#87a7b5">
+    <polygon points="174,97 167,93 167,101"/>
+    <polygon points="174,151 167,147 167,155"/>
+    <polygon points="174,205 167,201 167,209"/>
+  </g>
+
+  <!-- Data lake -->
+  <g filter="url(#shadow)">
+    <rect x="177" y="69" width="151" height="166" rx="22" fill="url(#lake)"/>
+    <path d="M193 126 C215 116 228 137 247 126 C268 114 281 139 306 125 L306 203 C280 214 213 215 193 202 Z" fill="#d7f0f8" opacity="0.88"/>
+    <path d="M193 150 C215 140 228 161 247 150 C268 138 281 163 306 149" fill="none" stroke="#73bdd7" stroke-width="2" opacity="0.75"/>
+    <path d="M193 174 C215 164 228 185 247 174 C268 162 281 187 306 173" fill="none" stroke="#73bdd7" stroke-width="2" opacity="0.75"/>
+  </g>
+  <text x="221" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#24566c">Veri Gölü</text>
+  <text x="203" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42758a">S3 · Bölümler · Dosyalar</text>
+  <g fill="#4aa0bf" opacity="0.8">
+    <circle cx="211" cy="111" r="3"/>
+    <circle cx="222" cy="111" r="3"/>
+    <circle cx="233" cy="111" r="3"/>
+  </g>
+
+  <!-- crawler -->
+  <g filter="url(#smallShadow)">
+    <rect x="205" y="248" width="94" height="39" rx="13" fill="#f9dfaf"/>
+  </g>
+  <text x="224" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#78562b">Glue Crawler</text>
+  <path d="M252 248 V239" stroke="#be8e47" stroke-width="2" fill="none"/>
+  <polygon points="252,239 248,246 256,246" fill="#be8e47"/>
+
+  <!-- lake to catalog -->
+  <path d="M328 151 H363" stroke="#7587ad" stroke-width="2.5" fill="none"/>
+  <polygon points="363,151 355,146 355,156" fill="#7587ad"/>
+  <text x="330" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667690">metaveri</text>
+
+  <!-- catalog -->
+  <g filter="url(#shadow)">
+    <rect x="367" y="72" width="139" height="158" rx="22" fill="url(#catalog)"/>
+    <rect x="384" y="108" width="105" height="26" rx="8" fill="#f8f4ff" opacity="0.88"/>
+    <rect x="384" y="142" width="105" height="26" rx="8" fill="#f8f4ff" opacity="0.88"/>
+    <rect x="384" y="176" width="105" height="26" rx="8" fill="#f8f4ff" opacity="0.88"/>
+  </g>
+  <text x="394" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#55427e">Veri Kataloğu</text>
+  <text x="398" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e5680">Tablo ve şema</text>
+  <text x="398" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e5680">Sahip ve etiket</text>
+  <text x="398" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e5680">Bölüm ve konum</text>
+
+  <!-- Glue/Hive badges -->
+  <g filter="url(#smallShadow)">
+    <rect x="355" y="246" width="73" height="34" rx="12" fill="#e5d8fb"/>
+    <rect x="438" y="246" width="77" height="34" rx="12" fill="#d9eee6"/>
+  </g>
+  <text x="370" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5a4782">AWS Glue</text>
+  <text x="450" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#39715f">Hive</text>
+  <path d="M397 246 V234" stroke="#8875ad" stroke-width="2" fill="none"/>
+  <polygon points="397,234 393,241 401,241" fill="#8875ad"/>
+  <path d="M476 246 V234" stroke="#6b9e8d" stroke-width="2" fill="none"/>
+  <polygon points="476,234 472,241 480,241" fill="#6b9e8d"/>
+
+  <!-- catalog to consumers -->
+  <path d="M506 120 H531 V99 H548" stroke="#7794a4" stroke-width="2" fill="none"/>
+  <polygon points="548,99 541,95 541,103" fill="#7794a4"/>
+  <path d="M506 182 H531 V204 H548" stroke="#7794a4" stroke-width="2" fill="none"/>
+  <polygon points="548,204 541,200 541,208" fill="#7794a4"/>
+
+  <!-- right units -->
+  <g filter="url(#smallShadow)">
+    <rect x="550" y="76" width="69" height="47" rx="14" fill="#dff0fb"/>
+    <rect x="550" y="181" width="69" height="47" rx="14" fill="#e4f3dd"/>
+  </g>
+  <text x="563" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386278">Sorgu</text>
+  <text x="557" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52788c">Athena · Spark</text>
+  <text x="557" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#427052">Yönetişim</text>
+  <text x="559" y="218" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8168">İzin · Kalite</text>
+
+  <!-- bottom explanation chips -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="32" y="294" width="170" height="18" rx="9" fill="#e7f1f5"/>
+    <text x="46" y="307" fill="#527083">Keşif: doğru veriyi bul</text>
+    <rect x="215" y="294" width="183" height="18" rx="9" fill="#eee8fa"/>
+    <text x="229" y="307" fill="#62567e">Şema: değişikliği denetle</text>
+    <rect x="411" y="294" width="183" height="18" rx="9" fill="#e5f2df"/>
+    <text x="425" y="307" fill="#54725b">Erişim: hassas veriyi koru</text>
+  </g>
+</svg>
