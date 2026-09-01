@@ -8,6 +8,7 @@ tags:
   - adversarial attacks
   - adversarial training
   - gradient masking
+image: /img/goruntu-siniflandiricilarini-karsit-76.png
 ---
 
 Bir görüntü sınıflandırıcısının yüksek doğruluk vermesi, onun güvenli olduğu anlamına gelmez. İnsan gözüne neredeyse görünmez küçük piksel değişimleri, bir modelin “kedi” gördüğü görüntüyü büyük bir özgüvenle “uçak” diye etiketlemesine yol açabilir. Bu olaya karşıt örnek denir. Özellikle güvenlik kamerası, tıbbi görüntüleme ve otonom sistemler gibi alanlarda mesele yalnızca test doğruluğu değil, modelin kasıtlı olarak zorlanmış girdiler karşısındaki davranışıdır.
@@ -67,3 +68,6 @@ Deney tasarımında temiz doğruluk ile robust accuracy değerlerini birlikte ra
 | Transfer başarısı | Başka modelden gelen saldırının etkisi | Maskelenmiş gradyanları yakalayabilir |
 
 Sonuç olarak gradient masking bir savunma stratejisinden çok dikkat edilmesi gereken bir anti-pattern olarak ele alınmalıdır. Adversarial training ise pahalı olsa da açık tehdit modeli, güçlü saldırılar ve dürüst değerlendirme ile birleştirildiğinde görüntü sınıflandırıcılarını gerçekten daha dayanıklı hale getirmenin en pratik yollarından biridir.
+
+![goruntu-siniflandiricilarini-karsit-76](/img/goruntu-siniflandiricilarini-karsit-76.svg)
+

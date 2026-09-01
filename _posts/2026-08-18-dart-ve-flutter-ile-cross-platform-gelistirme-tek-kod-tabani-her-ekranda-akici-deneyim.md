@@ -10,6 +10,7 @@ tags:
   - cross-platform
   - animasyon
   - mobil geliştirme
+image: /img/dart-ve-flutter-51.png
 ---
 
 Bir uygulamayı Android, iOS, web ve masaüstünde çalıştırmak eskiden ayrı ekipler, ayrı kod tabanları ve bolca senkronizasyon toplantısı anlamına gelirdi. Flutter bu tabloyu değiştirmeyi hedefler: Dart ile yazılan tek bir arayüz kodu, farklı platformlarda yerel hissi veren deneyimlere dönüşür. Üstelik mesele yalnızca “bir kere yaz, her yerde çalıştır” değildir; Flutter’ın güçlü çizim altyapısı sayesinde geçişler, mikro etkileşimler ve karmaşık animasyonlar da tutarlı biçimde üretilebilir.
@@ -79,3 +80,6 @@ Bu kodda `setState`, durumun değiştiğini bildirir; Flutter da ilgili bölüm�
 | Masaüstü | Kısayollar, yeniden boyutlandırma | Geniş ekran ve çoklu pencere davranışı |
 
 Tek kod tabanı, her yerde aynı tasarım demek değildir. `LayoutBuilder`, `MediaQuery` ve uyarlanabilir widget’larla ekran genişliğine göre düzen değiştirmek gerekir. Sonuçta iyi bir Flutter uygulaması, kodu paylaşırken deneyimi körü körüne kopyalamaz; her platformun alışkanlıklarına saygı gösterir. Bu denge kurulduğunda Dart ve Flutter, fikirden çok ekranlı ürüne uzanan yolu ciddi biçimde hızlandırır.
+
+![dart-ve-flutter-51](/img/dart-ve-flutter-51.svg)
+

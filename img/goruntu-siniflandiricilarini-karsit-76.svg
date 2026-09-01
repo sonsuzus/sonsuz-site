@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#c7dcf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7e91a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7e91a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M28 83 C116 44,168 55,223 85" fill="none" stroke="#d9e8df" stroke-width="2"/>
+  <path d="M404 271 C493 294,570 272,620 226" fill="none" stroke="#dce8f1" stroke-width="2"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42546a">Karşıt Saldırılara Dayanıklı Sınıflandırma</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#74869a">küçük bozuntu • güçlü değerlendirme • sağlam eğitim</text>
+
+  <!-- Clean image -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="91" width="112" height="113" rx="18" fill="#ffffff"/>
+    <rect x="39" y="103" width="90" height="67" rx="11" fill="#d9f0ed"/>
+    <circle cx="62" cy="122" r="11" fill="#f9d68c"/>
+    <path d="M40 163 L64 140 L79 153 L94 133 L128 163 Z" fill="#91c9bd"/>
+    <rect x="47" y="181" width="74" height="12" rx="6" fill="#e8eef6"/>
+  </g>
+  <text x="84" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#52657a">Temiz görüntü</text>
+
+  <!-- attack path -->
+  <path d="M145 145 L183 145" fill="none" stroke="#dd7885" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="183,145 174,139 174,151" fill="#dd7885"/>
+  <g filter="url(#smallShadow)">
+    <circle cx="163" cy="128" r="18" fill="#ffe4e6"/>
+    <path d="M155 121 L171 137 M171 121 L155 137" stroke="#dc6576" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="163" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b55b68">küçük δ</text>
+  <text x="163" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b55b68">PGD saldırısı</text>
+
+  <!-- model -->
+  <g filter="url(#shadow)">
+    <rect x="202" y="87" width="151" height="121" rx="22" fill="url(#model)"/>
+    <rect x="218" y="105" width="119" height="21" rx="8" fill="#ffffff" opacity="0.72"/>
+    <rect x="218" y="136" width="119" height="21" rx="8" fill="#ffffff" opacity="0.58"/>
+    <rect x="218" y="167" width="119" height="21" rx="8" fill="#ffffff" opacity="0.48"/>
+    <circle cx="232" cy="115.5" r="4" fill="#6996c7"/>
+    <circle cx="232" cy="146.5" r="4" fill="#6996c7"/>
+    <circle cx="232" cy="177.5" r="4" fill="#6996c7"/>
+    <path d="M244 115 L267 115 M274 115 L303 115 M244 146 L287 146 M294 146 L316 146 M244 177 L269 177 M276 177 L308 177" stroke="#9ab8d8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="277" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405a75">Sınıflandırıcı</text>
+
+  <!-- split connectors -->
+  <path d="M359 145 L382 145 L382 92 L405 92" fill="none" stroke="#95aabe" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="405,92 396,86 396,98" fill="#95aabe"/>
+  <path d="M359 145 L382 145 L382 218 L405 218" fill="none" stroke="#95aabe" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="405,218 396,212 396,224" fill="#95aabe"/>
+
+  <!-- masking -->
+  <g filter="url(#shadow)">
+    <rect x="409" y="57" width="194" height="77" rx="17" fill="#fff4df"/>
+    <circle cx="437" cy="82" r="17" fill="#f8c975"/>
+    <path d="M437 70 L448 74 L447 88 C447 96 441 101 437 103 C433 101 427 96 427 88 L426 74 Z" fill="#fff8ec" stroke="#bd8539" stroke-width="1.5"/>
+    <path d="M427 101 L447 72" stroke="#d96872" stroke-width="3" stroke-linecap="round"/>
+    <text x="463" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c6532">Gradyan maskeleme</text>
+    <text x="463" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7950">görünür koruma</text>
+    <text x="463" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#bd6570">yanıltıcı dayanıklılık</text>
+  </g>
+
+  <!-- robust training -->
+  <g filter="url(#shadow)">
+    <rect x="409" y="178" width="194" height="82" rx="17" fill="#e1f3e8"/>
+    <circle cx="437" cy="207" r="18" fill="#82c6a4"/>
+    <path d="M437 195 L449 199 L448 213 C448 221 442 226 437 229 C432 226 426 221 426 213 L425 199 Z" fill="#f6fffa" stroke="#438a68" stroke-width="1.5"/>
+    <path d="M431 211 L435 215 L443 205" fill="none" stroke="#438a68" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="463" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397459">Karşıt eğitim</text>
+    <text x="463" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f856c">saldırılı örnekler</text>
+    <text x="463" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397459">gerçek dayanıklılık</text>
+  </g>
+
+  <!-- bottom assessment -->
+  <g filter="url(#smallShadow)">
+    <rect x="72" y="265" width="496" height="38" rx="15" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="100" cy="284" r="9" fill="#a9c8ed"/>
+  <path d="M97 284 L99 287 L104 280" fill="none" stroke="#4677ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="116" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4e647a">Dürüst ölçüm:</text>
+  <text x="209" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64798d">Temiz doğruluk</text>
+  <circle cx="302" cy="284" r="3" fill="#86a9cc"/>
+  <text x="316" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64798d">PGD dayanıklılığı</text>
+  <circle cx="434" cy="284" r="3" fill="#86a9cc"/>
+  <text x="448" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64798d">Transfer testi</text>
+</svg>

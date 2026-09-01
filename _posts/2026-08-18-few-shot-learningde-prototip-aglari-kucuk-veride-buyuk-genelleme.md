@@ -9,6 +9,7 @@ tags:
   - prototip ağları
   - makine öğrenmesi
   - pytorch
+image: /img/few-shot-learningde-89.png
 ---
 
 Bir sınıfa ait yüzlerce, hatta binlerce etiketli örnek bulmak her zaman mümkün değildir. Tıbbi görüntüler, nadir hata kayıtları veya yeni ürün kategorileri gibi alanlarda modelin sadece birkaç örnekle öğrenmesi gerekir. **Few-shot learning**, tam olarak bu kısıtta genelleme yapmayı hedefler. Prototip ağları (Prototypical Networks) ise sınıfları karmaşık karar sınırlarıyla ezberlemek yerine, her sınıfı temsil eden bir “merkez” öğrenerek bu işi şaşırtıcı derecede zarif biçimde yapar.
@@ -66,3 +67,6 @@ Genelleme yeteneğini gerçekten test etmek için eğitim ve değerlendirme sın
 | Görülmemiş sınıflarda test | Gerçek few-shot başarısı | Eğitim sınıflarında yüksek skor tek başına yeterli değildir |
 
 Son olarak, küçük veri mucize değildir: veri artırma, dengeli bölüm örneklemesi ve güven aralıkları önemlidir. Yine de prototip ağları, az veride ezber yerine ilişki öğrenmeyi teşvik eden net, hızlı ve güçlü bir başlangıç noktasıdır.
+
+![few-shot-learningde-89](/img/few-shot-learningde-89.svg)
+

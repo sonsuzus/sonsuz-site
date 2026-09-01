@@ -11,6 +11,7 @@ tags:
   - büyük dil modelleri
   - makine öğrenmesi
 toc: true
+image: /img/lora-ve-adaptorler-53.png
 ---
 
 Büyük dil modellerini her yeni görev için baştan ince ayar yapmak, devasa bir gemiyi limanda döndürmeye benzer: mümkündür ama yakıtı, zamanı ve donanımı bolca tüketir. Parametre-verimli ince ayar (PEFT) yöntemleri ise modelin ana gövdesini büyük ölçüde dondurur; yalnızca küçük, öğrenilebilir bileşenleri eğitir. LoRA ve adaptörler bu yaklaşımın en popüler iki temsilcisidir. İkisi de depolama maliyetini düşürür, görev başına ayrı model saklama sorununu hafifletir ve sınırlı GPU belleğiyle özelleştirme yapmayı mümkün kılar.
@@ -41,6 +42,9 @@ Dar boğaz boyutu $m$, gizli boyuttan $d$ çok küçükse parametre maliyeti yak
 | Görev değiştirme | Farklı LoRA ağırlıklarını yüklemek kolay | Adaptör paketlerini takıp çıkarmak kolay |
 | Mimari etkisi | Genellikle attention/MLP doğrusal katmanları | Transformer blok akışına yeni modül ekler |
 | Başarı eğilimi | Yeterli rank ile tam ince ayara yaklaşabilir | Küçük veri ve çoklu görev senaryolarında güçlüdür |
+
+![lora-ve-adaptorler-53](/img/lora-ve-adaptorler-53.svg)
+
 
 Başarıyı sadece doğrulukla değerlendirmek yanıltıcıdır. Aynı veri bölümü üzerinde F1, exact match veya perplexity gibi görev metrikleri; eğitilebilir parametre oranı, GPU belleği, eğitim süresi ve istek başına gecikmeyle birlikte raporlanmalıdır. Örneğin $r=8,16,32$ LoRA rank değerlerini ve adaptör dar boğazı için $m=16,64,128$ seçeneklerini taramak, kalite-maliyet eğrisini görünür kılar. Küçük rank aşırı kısıtlayıcı olabilir; gereğinden büyük rank ise PEFT tasarrufunu azaltır.
 

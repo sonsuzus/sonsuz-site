@@ -9,6 +9,7 @@ tags:
   - fonksiyonel programlama
   - oyun geliştirme
 toc: true
+image: /img/haskell-ile-yilan-99.png
 ---
 
 Yılan oyunu, küçük görünmesine rağmen oyun programlamasının en önemli sorularını barındırır: Zaman nasıl ilerler, klavye girdisi nasıl alınır, rastgele yem nereye çıkar ve ekran nasıl çizilir? Haskell bu sorulara ilginç bir ayrım getirir: Oyunun **kuralları** saf fonksiyonlarda yaşar; klavye, saat, rastgelelik ve terminal gibi dış dünya ayrıntıları ise kontrollü biçimde `IO` içinde tutulur. Böylece test edilebilir, tahmin edilebilir ve genişletilebilir bir oyun döngüsü elde ederiz.
@@ -104,3 +105,6 @@ loop game = do
 | Durum monadı | Ek oyun verisini taşıma | `State Game` |
 
 Sonuçta Haskell ile yılan oyunu, "durumu değiştir" yaklaşımından "yeni bir dünya üret" yaklaşımına geçiştir. Bu ayrım yalnızca şık değildir: testleri kolaylaştırır, tekrar oynatma özelliğini mümkün kılar ve oyunun büyümesini daha az korkutucu hale getirir.
+
+![haskell-ile-yilan-99](/img/haskell-ile-yilan-99.svg)
+

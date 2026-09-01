@@ -8,9 +8,13 @@ tags:
   - kotlin multiplatform
   - compose multiplatform
   - mobil geliştirme
+image: /img/kotlin-multiplatform-ile-23.png
 ---
 
 Android, iOS ve masaüstü için ayrı ekipler, ayrı iş listeleri ve aynı hatanın üç farklı yerde düzeltilmesi… Tanıdık bir senaryoysa Kotlin Multiplatform (KMP) güçlü bir çıkış noktasıdır. KMP, uygulamanın iş mantığını tek bir ortak modülde yazıp Android, iOS, Windows, macOS ve Linux hedeflerine derlemenizi sağlar. Amaç “her şeyi sihirli biçimde tek seferde yazmak” değil; tekrar eden mantığı merkezileştirip platforma özgü katmanları kontrollü biçimde ayırmaktır.
+
+![kotlin-multiplatform-ile-23](/img/kotlin-multiplatform-ile-23.svg)
+
 ``
 
 KMP’nin teorik temeli, **paylaşılan kod** ile **platform entegrasyonu** arasındaki sınırı doğru çizmektir. Ağ istekleri, veri doğrulama, kullanım senaryoları, önbellekleme ve durum yönetimi genellikle ortak alanda yaşar. Kamera erişimi, bildirimler, mağaza dağıtımı veya iOS’e özgü sistem arayüzleri ise hedef platformda kalır. Böylece kod paylaşım oranı yaklaşık olarak şu şekilde düşünülebilir:

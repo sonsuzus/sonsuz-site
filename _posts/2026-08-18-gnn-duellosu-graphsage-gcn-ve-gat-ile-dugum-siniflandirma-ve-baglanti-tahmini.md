@@ -11,6 +11,7 @@ tags:
   - gat
   - makine öğrenmesi
 toc: true
+image: /img/gnn-duellosu-graphsage-79.png
 ---
 
 Graf sinir ağları (GNN), kullanıcılar, ürünler, makaleler veya moleküller gibi ilişkili nesneleri öğrenmek için düğüm özelliklerini bağlantı yapısıyla birleştirir. Düğüm sınıflandırmada amaç her düğüme bir etiket vermek; bağlantı tahmininde ise iki düğüm arasında yeni ya da eksik bir kenar olup olmadığını kestirmektir. GCN, GraphSAGE ve GAT aynı sahnede oynasa da bilgiyi komşulardan toplama biçimleri oldukça farklıdır.
@@ -48,6 +49,9 @@ Ardından yeni gösterim $h_v'=\sigma(\sum_{u\in\mathcal{N}(v)}\alpha_{vu}Wh_u)$
 | Ölçeklenebilirlik | Orta | Yüksek, örnekleme sayesinde | Orta, dikkat maliyetli |
 | Yeni düğümler | Genellikle yeniden eğitim ister | Doğal olarak destekler | Uygun kurulumla desteklenir |
 | Güçlü senaryo | Temiz, homofilik graflar | Büyük ve dinamik graflar | Gürültülü, heterojen komşuluklar |
+
+![gnn-duellosu-graphsage-79](/img/gnn-duellosu-graphsage-79.svg)
+
 
 Düğüm sınıflandırmada son katman her düğüm için sınıf olasılığı üretir: $\hat{y}_v=\text{softmax}(h_v^{(L)})$. Bağlantı tahmininde ise iki gömme vektörü bir skorlayıcıya verilir. En basit seçenek iç çarpımdır: $s(u,v)=z_u^Tz_v$. Eğitimde gerçek kenarlar pozitif, rastgele seçilmiş kenarsız çiftler negatif örnek olur.
 

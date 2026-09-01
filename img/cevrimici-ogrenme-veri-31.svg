@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="modelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcd8ff"/>
+      <stop offset="100%" stop-color="#c7e8f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6c88a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#708e9a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="164" r="128" fill="#dceef5" opacity="0.32"/>
+  <circle cx="320" cy="164" r="95" fill="none" stroke="#b5d5de" stroke-width="1.5" stroke-dasharray="4 7" opacity="0.7"/>
+
+  <!-- Bağlantılar -->
+  <path d="M151 158 C180 158 189 158 211 158" fill="none" stroke="#719caf" stroke-width="2.2"/>
+  <polygon points="211,158 202,153 202,163" fill="#719caf"/>
+
+  <path d="M314 119 C316 104 321 96 334 87" fill="none" stroke="#7e90bc" stroke-width="2.2"/>
+  <polygon points="334,87 324,89 330,97" fill="#7e90bc"/>
+
+  <path d="M416 87 C440 101 451 115 460 130" fill="none" stroke="#7e90bc" stroke-width="2.2"/>
+  <polygon points="460,130 451,124 451,135" fill="#7e90bc"/>
+
+  <path d="M460 196 C449 213 433 225 411 234" fill="none" stroke="#63a58f" stroke-width="2.2"/>
+  <polygon points="411,234 419,226 422,236" fill="#63a58f"/>
+
+  <path d="M305 252 C286 245 274 236 266 221" fill="none" stroke="#63a58f" stroke-width="2.2"/>
+  <polygon points="266,221 275,227 266,233" fill="#63a58f"/>
+
+  <path d="M488 168 C520 168 531 168 551 168" fill="none" stroke="#d29679" stroke-width="2"/>
+  <polygon points="551,168 542,163 542,173" fill="#d29679"/>
+
+  <!-- Akış verisi -->
+  <g filter="url(#shadow)">
+    <rect x="31" y="116" width="120" height="85" rx="18" fill="#d7f1ee"/>
+    <rect x="43" y="130" width="24" height="24" rx="8" fill="#83c9be"/>
+    <path d="M49 142 L55 136 L61 142 M55 136 L55 150" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315b5b" font-weight="600">Veri akışı</text>
+    <text x="46" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527778">xₜ</text>
+    <circle cx="84" cy="173" r="4" fill="#6fb7ae"/>
+    <circle cx="100" cy="173" r="4" fill="#9bd3c6"/>
+    <circle cx="116" cy="173" r="4" fill="#6fb7ae"/>
+    <circle cx="132" cy="173" r="4" fill="#9bd3c6"/>
+  </g>
+
+  <!-- Merkez model -->
+  <g filter="url(#shadow)">
+    <rect x="211" y="119" width="110" height="104" rx="23" fill="url(#modelGrad)"/>
+    <circle cx="266" cy="153" r="23" fill="#ffffff" opacity="0.62"/>
+    <path d="M252 154 C258 143 272 140 281 149 M252 154 C258 165 272 168 281 158" fill="none" stroke="#697bb5" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="253" cy="154" r="3" fill="#697bb5"/>
+    <circle cx="281" cy="149" r="3" fill="#697bb5"/>
+    <circle cx="281" cy="158" r="3" fill="#697bb5"/>
+    <text x="266" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#435889" font-weight="600">Model θₜ</text>
+    <text x="266" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637397">sürekli uyum</text>
+  </g>
+
+  <!-- Tahmin -->
+  <g filter="url(#softShadow)">
+    <rect x="333" y="37" width="101" height="52" rx="16" fill="#eee5fa"/>
+    <path d="M350 63 L357 70 L370 54" fill="none" stroke="#9a77bb" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="386" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#684b87" font-weight="600">Tahmin ŷₜ</text>
+  </g>
+
+  <!-- Etiket hata -->
+  <g filter="url(#softShadow)">
+    <rect x="459" y="130" width="102" height="67" rx="17" fill="#fff0d8"/>
+    <circle cx="480" cy="153" r="10" fill="#f2bd72"/>
+    <path d="M480 148 L480 154 M480 158 L480 159" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="514" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#87613b" font-weight="600">Gerçek etiket</text>
+    <text x="510" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7652">kayıp L</text>
+  </g>
+
+  <!-- Güncelleme -->
+  <g filter="url(#softShadow)">
+    <rect x="304" y="232" width="109" height="51" rx="16" fill="#dff1dc"/>
+    <path d="M321 257 C326 248 337 247 342 255" fill="none" stroke="#68a36c" stroke-width="2.2" stroke-linecap="round"/>
+    <polygon points="343,250 347,257 339,257" fill="#68a36c"/>
+    <text x="371" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416f48" font-weight="600">Güncelle θₜ₊₁</text>
+  </g>
+
+  <!-- İzleme -->
+  <g filter="url(#shadow)">
+    <rect x="551" y="112" width="70" height="112" rx="18" fill="#fde4df"/>
+    <text x="586" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#965e58" font-weight="600">İzleme</text>
+    <path d="M564 174 L574 164 L582 170 L594 150 L607 158" fill="none" stroke="#d47f73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="563" y1="185" x2="609" y2="185" stroke="#e6aaa1" stroke-width="1.5"/>
+    <text x="586" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a36e67">doğruluk</text>
+  </g>
+
+  <!-- Kayma çağrısı -->
+  <g filter="url(#softShadow)">
+    <rect x="457" y="244" width="150" height="39" rx="14" fill="#f9e4ee"/>
+    <circle cx="477" cy="263" r="7" fill="#d888a7"/>
+    <path d="M477 258 L477 263 L481 266" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="540" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#89556b" font-weight="600">Kavram kayması</text>
+  </g>
+</svg>

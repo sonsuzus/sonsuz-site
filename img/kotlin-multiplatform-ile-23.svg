@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#756de8"/>
+      <stop offset="100%" stop-color="#9c8cf0"/>
+    </linearGradient>
+    <linearGradient id="shared" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dce8ff"/>
+      <stop offset="100%" stop-color="#d9f3ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52647a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52647a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="93" cy="54" r="82" fill="#cbe8f5" opacity="0.3"/>
+  <circle cx="577" cy="274" r="105" fill="#d4efd8" opacity="0.35"/>
+  <path d="M22 266 C145 223, 184 287, 297 253 S493 209, 620 254" fill="none" stroke="#bcd8d5" stroke-width="1.5" opacity="0.55"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34445e">Kotlin Multiplatform Mimarisi</text>
+  <text x="320" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">Tek iş mantığı · kontrollü platform ayrımı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="203" y="69" width="234" height="151" rx="22" fill="url(#core)"/>
+    <rect x="211" y="77" width="218" height="135" rx="17" fill="#ffffff" opacity="0.14"/>
+  </g>
+
+  <circle cx="320" cy="102" r="19" fill="#ffffff" opacity="0.2"/>
+  <path d="M311 102 L317 108 L330 94" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">commonMain</text>
+  <text x="320" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f4f2ff">Ortak Kotlin kodu</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="224" y="171" width="58" height="25" rx="9" fill="#ffffff" opacity="0.94"/>
+    <rect x="291" y="171" width="58" height="25" rx="9" fill="#ffffff" opacity="0.94"/>
+    <rect x="358" y="171" width="58" height="25" rx="9" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <text x="253" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f4a90">Domain</text>
+  <text x="320" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f4a90">Veri</text>
+  <text x="387" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f4a90">Durum</text>
+
+  <path d="M203 142 C165 142, 155 114, 125 114" fill="none" stroke="#8299b2" stroke-width="2"/>
+  <polygon points="125,109 114,114 125,119" fill="#8299b2"/>
+  <path d="M437 142 C473 142, 484 114, 515 114" fill="none" stroke="#8299b2" stroke-width="2"/>
+  <polygon points="515,109 526,114 515,119" fill="#8299b2"/>
+  <path d="M320 220 L320 245" fill="none" stroke="#8299b2" stroke-width="2"/>
+  <polygon points="315,244 320,254 325,244" fill="#8299b2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="74" width="137" height="80" rx="18" fill="#fdfdff"/>
+    <rect x="475" y="74" width="137" height="80" rx="18" fill="#fdfdff"/>
+    <rect x="245" y="250" width="150" height="53" rx="17" fill="#fdfdff"/>
+  </g>
+
+  <rect x="42" y="88" width="35" height="35" rx="11" fill="#bfe6c8"/>
+  <rect x="52" y="96" width="15" height="19" rx="3" fill="#4d9c62"/>
+  <circle cx="59.5" cy="111" r="1.5" fill="#ffffff"/>
+  <text x="89" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39506a">Android</text>
+  <text x="89" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">androidMain</text>
+  <text x="96" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55708a">Kamera · Bildirim</text>
+
+  <rect x="489" y="88" width="35" height="35" rx="11" fill="#cfe1ff"/>
+  <path d="M507 94 C500 94, 496 99, 496 105 C496 112, 501 116, 507 117 C513 116, 518 112, 518 105 C518 99, 514 94, 507 94Z" fill="#547ec4"/>
+  <path d="M507 96 L507 114" stroke="#ffffff" stroke-width="1.3" opacity="0.8"/>
+  <text x="536" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39506a">iOS</text>
+  <text x="536" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">iosMain</text>
+  <text x="544" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55708a">Native arayüz</text>
+
+  <rect x="260" y="261" width="32" height="28" rx="8" fill="#ffe0b8"/>
+  <rect x="266" y="267" width="20" height="13" rx="2" fill="#c7833d"/>
+  <path d="M271 285 L281 285" stroke="#c7833d" stroke-width="2" stroke-linecap="round"/>
+  <text x="304" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39506a">Masaüstü</text>
+  <text x="304" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">desktopMain</text>
+
+  <path d="M165 211 C177 211, 184 210, 195 207" fill="none" stroke="#9bb1bf" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M445 211 C456 211, 465 210, 475 207" fill="none" stroke="#9bb1bf" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="320" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687b8d">expect → actual</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="184" width="135" height="43" rx="13" fill="url(#shared)"/>
+    <rect x="475" y="184" width="137" height="43" rx="13" fill="url(#shared)"/>
+  </g>
+  <text x="97" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456275">Paylaşılan katman</text>
+  <text x="97" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647b8c">API · Önbellek</text>
+  <text x="543" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456275">Platform katmanı</text>
+  <text x="543" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647b8c">Sistem API'leri</text>
+</svg>

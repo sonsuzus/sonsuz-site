@@ -11,6 +11,7 @@ tags:
   - shap
   - makine öğrenmesi
 toc: true
+image: /img/lime-ve-shap-96.png
 ---
 
 Bir kredi risk modelinin neden “reddet” dediğini ya da bir görüntü sınıflandırıcının neden “kedi” gördüğünü bilmek, model doğruluğu kadar önemlidir. Açıklanabilir yapay zekâ (XAI), kara kutu modellerin kararlarını insan diline yaklaştırmayı hedefler. Bu alanda en popüler iki yaklaşım LIME ve SHAP’tir. İkisi de özellik katkılarını sunar; ancak açıklamanın güvenilirliği, tutarlılığı ve üretim ortamındaki maliyeti bakımından oldukça farklı karakterlere sahiptir.
@@ -75,3 +76,6 @@ shap.plots.waterfall(shap.Explanation(
 ```
 
 Sonuç olarak LIME, hızlı bir yerel “dedektif notu”; SHAP ise daha maliyetli fakat muhasebesi güçlü bir “katkı raporu” gibidir. En iyi seçim, yalnızca açıklama hızına değil model türüne, özellik sayısına, kararın riskine ve açıklamanın kim tarafından kullanılacağına göre yapılmalıdır.
+
+![lime-ve-shap-96](/img/lime-ve-shap-96.svg)
+

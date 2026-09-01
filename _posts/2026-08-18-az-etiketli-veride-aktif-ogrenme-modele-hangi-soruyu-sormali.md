@@ -9,9 +9,13 @@ tags:
   - makine öğrenmesi
   - etiketleme
   - belirsizlik örneklemesi
+image: /img/az-etiketli-veride-87.png
 ---
 
 Etiketli veri, makine öğrenmesinin kahvesidir: model onsuz güne başlayamaz. Fakat gerçek hayatta her örneği uzmanlara etiketletmek pahalı, yavaş ve bazen de oldukça sıkıcıdır. Aktif öğrenme (active learning), elinizde küçük bir etiketli küme ve büyük bir etiketsiz havuz varken modele söz hakkı verir: Model, öğrenmesine en fazla katkıyı sağlayacak örneklerin etiketini ister. Ama kritik soru şudur: Modelin hangi örnekleri sormasına izin vermeliyiz?
+
+![az-etiketli-veride-87](/img/az-etiketli-veride-87.svg)
+
 ``
 
 Aktif öğrenmenin temel döngüsü dört adımdan oluşur: Başlangıçtaki etiketli veriyle bir model eğitilir, etiketsiz havuzdaki örnekler puanlanır, en değerli $k$ örnek insan anotatöre gönderilir ve yeni etiketlerle model yeniden eğitilir. Bu süreç, etiket bütçesi bitene veya hedef başarıya erişilene dek devam eder.
