@@ -8,6 +8,7 @@ tags:
   - fortran
   - hpc
   - sayısal hesaplama
+image: /img/fortran-ile-yuksek-43.png
 ---
 
 Fortran, “eski ama eskimeyen” dillerin en güçlü örneklerinden biridir. Fizik, iklim modelleme, hesaplamalı akışkanlar dinamiği ve sonlu elemanlar gibi alanlarda bugün hâlâ yoğun biçimde kullanılır. Bunun sebebi nostalji değil; dizilerle doğal çalışması, derleyicilerin agresif optimizasyon yapabilmesi ve paralel donanımdan iyi yararlanabilmesidir. Özellikle milyonlarca hücre veya parçacık içeren simülasyonlarda birkaç yüzde puanlık performans farkı, saatler süren bir hesabı dakikalarca kısaltabilir.
@@ -25,6 +26,9 @@ Burada $T$ sıcaklık, $\alpha$ ise ısıl yayınım katsayısıdır. Izgara tab
 | Dizi işlemleri | Okunabilir ve matematiksel ifade gücü yüksek | Geçici dizi üretimi maliyetli olabilir |
 | `do concurrent` | Bağımsız iterasyonları açıkça belirtir | Döngü içinde veri yarışına izin verilmez |
 | OpenMP | Çok çekirdekli CPU paralelliği | Paylaşılan değişkenler dikkatle yönetilmelidir |
+
+![fortran-ile-yuksek-43](/img/fortran-ile-yuksek-43.svg)
+
 
 Önce vektörel düşünelim. Fortran’da iki vektörün skaler çarpımını veya eleman bazlı dönüşümünü açık döngü yazmadan ifade edebilirsiniz. Bu, yalnızca kodu kısaltmaz; derleyiciye SIMD, yani tek komutla birden fazla veri işleme fırsatı da verir. Modern işlemcilerde AVX benzeri vektör birimleri aynı anda birden fazla kayan noktalı değeri işleyebilir.
 

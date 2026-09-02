@@ -11,6 +11,7 @@ tags:
   - optimizasyon
   - c++
 toc: true
+image: /img/llvm-ir-ile-25.png
 ---
 
 Derleyiciler yalnızca kaynak kodunu makine koduna çeviren araçlar değildir; aynı zamanda programın yaptığı gereksiz işleri ayıklayan, sıcak kod yollarını hızlandıran ve hedef işlemcinin yeteneklerinden yararlanan analiz motorlarıdır. LLVM ekosisteminde bu işin merkezinde **LLVM IR (Intermediate Representation)** bulunur. Platformdan bağımsız olan bu ara temsil, C++, Rust, Swift veya başka bir ön uçtan geldikten sonra aynı optimizasyon boru hattında işlenebilir. Bu yazıda, arka uç optimizasyonlarının iki klasik yıldızını inceleyeceğiz: döngü açılımı (loop unrolling) ve ölü kod eleme (dead code elimination).
@@ -36,6 +37,9 @@ Kazanç garanti değildir: Büyük gövde daha fazla makine kodu üretir, bu da 
 | Kod boyutu | Küçük | Daha büyük |
 | ILP / vektörleştirme | Sınırlı olabilir | Daha görünür olabilir |
 | Önbellek riski | Düşük | Büyük açılımda yüksek |
+
+![llvm-ir-ile-25](/img/llvm-ir-ile-25.svg)
+
 
 Örneğin dört elemanı aynı turda toplama fikri IR düzeyinde şu yapıya yaklaşır:
 

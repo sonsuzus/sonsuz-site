@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3d9ff"/>
+      <stop offset="100%" stop-color="#d6efff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="61" cy="43" r="74" fill="#dff2f1" opacity="0.55"/>
+  <circle cx="593" cy="285" r="90" fill="#e6ddff" opacity="0.42"/>
+  <path d="M36 160 C118 104 151 110 216 145" fill="none" stroke="#bddbe2" stroke-width="2" stroke-dasharray="5 7"/>
+  <path d="M421 170 C490 116 538 123 613 76" fill="none" stroke="#c8dabe" stroke-width="2" stroke-dasharray="5 7"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526779" font-weight="600">F# FİNANSAL MODELLEME</text>
+  <text x="608" y="31" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718493">Birimlerle güvenli hesap</text>
+
+  <!-- Inputs -->
+  <g filter="url(#smallShadow)">
+    <rect x="31" y="78" width="142" height="62" rx="16" fill="#fff7dc"/>
+    <rect x="31" y="78" width="7" height="62" rx="3.5" fill="#f3c96b"/>
+  </g>
+  <circle cx="60" cy="108" r="16" fill="#ffe6a8"/>
+  <text x="60" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d6815" font-weight="700">$</text>
+  <text x="88" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e5362" font-weight="700">Tutar</text>
+  <text x="88" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657988">1250 &lt;USD&gt;</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="31" y="182" width="142" height="62" rx="16" fill="#e1f4ee"/>
+    <rect x="31" y="182" width="7" height="62" rx="3.5" fill="#68c6a9"/>
+  </g>
+  <circle cx="60" cy="212" r="16" fill="#bcebdc"/>
+  <path d="M54 211 h12 M60 205 v13" stroke="#287d69" stroke-width="2" stroke-linecap="round"/>
+  <text x="88" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e5362" font-weight="700">Kur</text>
+  <text x="88" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657988">0.92 &lt;EUR/USD&gt;</text>
+
+  <!-- input arrows -->
+  <path d="M173 109 H208" fill="none" stroke="#87a6af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="216,109 207,104 207,114" fill="#87a6af"/>
+  <path d="M173 213 H208" fill="none" stroke="#87a6af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="216,213 207,208 207,218" fill="#87a6af"/>
+
+  <!-- Core -->
+  <g filter="url(#shadow)">
+    <rect x="216" y="82" width="206" height="153" rx="25" fill="url(#core)" stroke="#c0b7e7" stroke-width="1.5"/>
+  </g>
+  <circle cx="319" cy="117" r="23" fill="#fff" opacity="0.82"/>
+  <path d="M307 116 C310 106 321 102 329 108 C337 114 334 126 324 129 C316 132 307 126 307 116Z" fill="#8068b8"/>
+  <path d="M314 115 h11 M319.5 109.5 v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="319" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#435268" font-weight="700">BİRİM TİPİ DENETİMİ</text>
+  <rect x="244" y="172" width="150" height="26" rx="13" fill="#ffffff" opacity="0.8"/>
+  <text x="319" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#586777">decimal&lt;USD&gt; → decimal&lt;EUR&gt;</text>
+  <text x="319" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d628d">Derleme zamanı kontrolü</text>
+
+  <!-- Main arrow -->
+  <path d="M422 158 H465" fill="none" stroke="#7d99aa" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="474,158 463,152 463,164" fill="#7d99aa"/>
+
+  <!-- Output branch -->
+  <path d="M474 158 C493 158 494 108 510 108" fill="none" stroke="#91aeb2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="517,108 508,103 508,113" fill="#91aeb2"/>
+  <path d="M474 158 C493 158 494 214 510 214" fill="none" stroke="#91aeb2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="517,214 508,209 508,219" fill="#91aeb2"/>
+
+  <!-- Output cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="517" y="74" width="96" height="67" rx="16" fill="#edf7ff"/>
+  </g>
+  <circle cx="541" cy="104" r="13" fill="#cce9fb"/>
+  <path d="M535 105 h12 M541 99 v12" stroke="#377fa8" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="563" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e5362" font-weight="700">Dönüşüm</text>
+  <text x="563" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#548096">EUR sonucu</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="517" y="180" width="96" height="67" rx="16" fill="#f8eafa"/>
+  </g>
+  <circle cx="541" cy="210" r="13" fill="#ead1ee"/>
+  <path d="M535 215 l5-9 4 5 4-8" fill="none" stroke="#9a5597" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="563" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e5362" font-weight="700">Risk</text>
+  <text x="563" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#85617f">VaR · USD</text>
+
+  <!-- Guard rail -->
+  <g filter="url(#smallShadow)">
+    <rect x="215" y="263" width="207" height="31" rx="15.5" fill="#fff0ef"/>
+  </g>
+  <circle cx="237" cy="278.5" r="10" fill="#f8c8c3"/>
+  <path d="M233 275 l8 8 M241 275 l-8 8" stroke="#c55d59" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="254" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a15754" font-weight="600">USD + EUR: reddedilir</text>
+</svg>

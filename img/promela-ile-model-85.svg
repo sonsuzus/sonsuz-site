@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="spinGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7d9df5"/>
+      <stop offset="100%" stop-color="#6378d5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#54708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="84" cy="38" r="64" fill="#dbeeff" opacity="0.55"/>
+  <circle cx="586" cy="279" r="82" fill="#dff2d7" opacity="0.48"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41536b">PROMELA İLE MODEL KONTROLÜ</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78899b">Olası zamanlamalar üretim öncesi taranır</text>
+
+  <!-- Model card -->
+  <rect x="30" y="78" width="158" height="184" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="30" y="78" width="158" height="37" rx="18" fill="#dff0ff"/>
+  <rect x="30" y="97" width="158" height="18" fill="#dff0ff"/>
+  <text x="50" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5d78">Promela Modeli</text>
+
+  <rect x="48" y="132" width="51" height="39" rx="10" fill="#f4dff0" filter="url(#smallShadow)"/>
+  <text x="61" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805176">Süreç A</text>
+  <rect x="119" y="132" width="51" height="39" rx="10" fill="#dff1e5" filter="url(#smallShadow)"/>
+  <text x="132" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41765b">Süreç B</text>
+
+  <path d="M99 151 L117 151" stroke="#698096" stroke-width="2"/>
+  <polygon points="117,146 125,151 117,156" fill="#698096"/>
+  <path d="M119 162 L101 162" stroke="#698096" stroke-width="2"/>
+  <polygon points="101,157 93,162 101,167" fill="#698096"/>
+
+  <rect x="48" y="190" width="122" height="44" rx="10" fill="#fff5d9"/>
+  <circle cx="66" cy="211" r="7" fill="#ebb955"/>
+  <path d="M73 211 L91 211" stroke="#bd8b31" stroke-width="2"/>
+  <polygon points="91,206 99,211 91,216" fill="#bd8b31"/>
+  <text x="107" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#755d2c">Kanal</text>
+
+  <!-- arrow to spin -->
+  <path d="M199 169 C213 169 218 169 230 169" fill="none" stroke="#66829a" stroke-width="2.5"/>
+  <polygon points="230,163 241,169 230,175" fill="#66829a"/>
+
+  <!-- Spin core -->
+  <circle cx="318" cy="169" r="84" fill="#dbe6ff" opacity="0.62"/>
+  <circle cx="318" cy="169" r="65" fill="url(#spinGrad)" filter="url(#shadow)"/>
+  <circle cx="318" cy="169" r="51" fill="none" stroke="#dbe6ff" stroke-width="1.5" opacity="0.8"/>
+  <text x="318" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">SPIN</text>
+  <text x="318" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eef3ff">Durum Uzayı</text>
+  <text x="318" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eef3ff">Sistematik Tarama</text>
+
+  <!-- state dots -->
+  <circle cx="260" cy="111" r="5" fill="#efb8ad"/>
+  <circle cx="369" cy="102" r="5" fill="#8ccdb2"/>
+  <circle cx="395" cy="167" r="5" fill="#f1c36e"/>
+  <circle cx="370" cy="232" r="5" fill="#c5aee5"/>
+  <circle cx="258" cy="226" r="5" fill="#8fc9e7"/>
+  <path d="M264 114 L282 132 M365 106 L345 127 M390 167 L370 168 M367 229 L345 210 M263 223 L282 205" stroke="#8097da" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Outputs -->
+  <path d="M389 132 C410 121 419 114 435 108" fill="none" stroke="#66829a" stroke-width="2.5"/>
+  <polygon points="434,102 445,105 437,113" fill="#66829a"/>
+  <path d="M390 204 C408 215 420 224 435 230" fill="none" stroke="#66829a" stroke-width="2.5"/>
+  <polygon points="437,225 445,233 434,236" fill="#66829a"/>
+
+  <!-- top result -->
+  <rect x="448" y="72" width="161" height="82" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="462" y="87" width="33" height="33" rx="10" fill="#dff3e7"/>
+  <path d="M470 104 L477 111 L489 96" fill="none" stroke="#47a36d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="507" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5b4a">Özellikler</text>
+  <text x="507" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607568">Güvenlik ve canlılık</text>
+  <text x="462" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728579">Doğrulama</text>
+
+  <!-- bottom result -->
+  <rect x="448" y="188" width="161" height="82" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="462" y="203" width="33" height="33" rx="10" fill="#ffe4df"/>
+  <path d="M471 211 L486 226 M486 211 L471 226" stroke="#d46d61" stroke-width="3" stroke-linecap="round"/>
+  <text x="507" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#714b49">Karşı Örnek</text>
+  <text x="507" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6865">Yarış veya kilitlenme</text>
+  <text x="462" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728579">Tekrar oynatılabilir iz</text>
+
+  <!-- reduction badge -->
+  <rect x="234" y="273" width="168" height="29" rx="14" fill="#e9f3ea" filter="url(#smallShadow)"/>
+  <circle cx="252" cy="287.5" r="7" fill="#84bd91"/>
+  <path d="M249 288 L252 291 L257 284" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="266" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7058">Kısmi sıralama indirgeme</text>
+</svg>

@@ -10,6 +10,7 @@ tags:
   - fourier dönüşümü
   - filtre tasarımı
 toc: true
+image: /img/matlab-ile-gercek-46.png
 ---
 
 Bir mikrofonun uğultusunu temizlemek, titreşim sensöründen arıza belirtisi yakalamak veya kalp atışı verisindeki gürültüyü azaltmak; hepsi sinyal işlemenin günlük hayattaki süper güçleridir. MATLAB, güçlü matematik altyapısı ve Signal Processing Toolbox araçları sayesinde ham ses ya da sensör örneklerini anlamlı bilgiye dönüştürmek için oldukça uygundur. Üstelik doğru örnekleme hızı, Fourier analizi ve filtre seçimiyle bu işlemler gerçek zamana yakın biçimde yapılabilir.
@@ -32,6 +33,9 @@ Dijital sistemlerde ise ayrık Fourier dönüşümü (DFT) kullanılır. MATLAB'
 | Frekans alanı | Sinyaldeki frekansların gücü | `fft(x)` |
 | Örnekleme hızı | Saniyedeki ölçüm sayısı | `Fs` |
 | Nyquist frekansı | Güvenli üst frekans limiti | `Fs/2` |
+
+![matlab-ile-gercek-46](/img/matlab-ile-gercek-46.svg)
+
 
 Aşağıdaki örnek, gürültülü bir sensör sinyalinin spektrumunu çıkarır. Kod, 60 Hz civarındaki istenmeyen bileşeni gözlemlemek için kullanılabilir.
 

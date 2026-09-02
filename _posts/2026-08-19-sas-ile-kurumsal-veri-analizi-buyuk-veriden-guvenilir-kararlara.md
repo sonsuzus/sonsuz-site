@@ -9,6 +9,7 @@ tags:
   - veri analizi
   - iş zekası
   - veri madenciliği
+image: /img/sas-ile-kurumsal-32.png
 ---
 
 Kurumsal veri analizi, yalnızca milyonlarca satırlık tabloyu hızlıca işlemek değildir; veriyi güvenilir, denetlenebilir ve karar verilebilir bir hikâyeye dönüştürme sanatıdır. SAS, özellikle banka, sigorta, perakende ve kamu gibi düzenlemelerin yoğun olduğu sektörlerde bu hikâyeyi kurmak için uzun yıllardır kullanılan güçlü bir platformdur. Veri entegrasyonundan istatistiksel modellemeye, zamanlanmış raporlardan veri madenciliğine kadar tek bir ekosistemde çalışmayı mümkün kılar.
@@ -65,3 +66,6 @@ Burada $Y=1$ müşterinin yanıt verdiğini, $x$ değişkenleri ise yaş, geçmi
 | ROC-AUC | Sınıfları ayırma kapasitesi | Model karşılaştırmasında |
 
 Sonuç olarak SAS, sadece bir kodlama dili ya da raporlama aracı değildir; veri yönetişimi ile analitiği buluşturan kurumsal bir çalışma biçimidir. Başarılı bir SAS projesi, doğru prosedürü seçmekten önce doğru iş sorusunu, veri sahibini, kalite kurallarını ve çıktı tüketicisini tanımlar. Böylece büyük veri yığınları, karar vericilerin gerçekten kullanabileceği güvenilir içgörülere dönüşür.
+
+![sas-ile-kurumsal-32](/img/sas-ile-kurumsal-32.svg)
+

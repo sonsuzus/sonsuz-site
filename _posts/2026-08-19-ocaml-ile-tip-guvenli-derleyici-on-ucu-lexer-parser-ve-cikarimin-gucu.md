@@ -8,9 +8,13 @@ tags:
   - ocaml
   - derleyici
   - tip çıkarımı
+image: /img/ocaml-ile-tip-37.png
 ---
 
 Bir derleyicinin ön ucu, kaynak kodun dağınık karakterlerini anlamlı ve güvenilir bir programa dönüştüren ilk savunma hattıdır. OCaml bu iş için özellikle keyifli bir seçimdir: cebirsel veri tipleri sentaks ağacını açıkça modeller, pattern matching her olasılığı düşünmeye zorlar ve Hindley-Milner tabanlı tip çıkarımı pek çok tasarım hatasını program daha çalışmadan yakalar. Sonuçta sadece çalışan değil, yanlış durumları temsil etmesi zor bir lexer ve parser geliştirirsiniz.
+
+![ocaml-ile-tip-37](/img/ocaml-ile-tip-37.svg)
+
 ``
 Ön ucun klasik akışı şöyledir: metin önce **token** dizisine ayrılır, tokenlar gramer kurallarıyla eşleştirilir ve sonunda bir **soyut sentaks ağacı**na (AST) dönüşür. Örneğin `let x = 2 + 3` satırı, karakter dizisi olmaktan çıkar; bağlama, sayı sabitine ve toplama düğümüne sahip yapısal bir veriye dönüşür. Bu ayrım önemlidir: lexer karakterlerle, parser ise dilin yapısıyla ilgilenir.
 

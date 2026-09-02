@@ -11,6 +11,7 @@ tags:
   - otp
   - fault tolerance
 toc: true
+image: /img/erlang-ile-dagitik-70.png
 ---
 
 Anlık mesajlaşma sunucusu yazmak, ekrana iki baloncuk düşürmekten çok daha fazlasıdır: Kullanıcılar çevrimdışı olabilir, makineler kapanabilir, ağ paketleri kaybolabilir ve en kritik anda bir süreç çökebilir. Erlang tam bu kaosun içinden doğdu. Telekom santrallerinin yıllarca durmadan çalışması hedefiyle tasarlanan dil; hafif süreçler, mesaj geçirme, denetim ağaçları ve dağıtık düğümler sayesinde sohbet sistemlerine doğal bir dayanıklılık kazandırır.
@@ -69,3 +70,6 @@ Bir sohbet odası süreci çökerse supervisor onu yeniden başlatır; ancak yal
 Dağıtık Erlang düğümleri birbirini `node@host` adlarıyla tanır ve uzak süreçlere yerelmiş gibi mesaj gönderebilir. Yine de ağ bölünmesini sihirli biçimde çözmez: bağlantı koptuğunda hangi tarafın doğru olduğuna dair bir politika gerekir. Kritik sohbet verisinde çoğunluk temelli kararlar, zaman aşımı ve yeniden bağlanınca senkronizasyon uygulanmalıdır.
 
 Sonuçta Erlang'ın gücü, “asla çökmez” vaadinde değil; çöktüğünde küçük bir parçayı hızlıca ayağa kaldırıp hizmeti sürdürmesindedir. Telekom dünyasının bu disiplinini mesajlaşma sisteminize taşıdığınızda, kullanıcılar arka plandaki arızayı fark etmeden sohbet etmeye devam eder.
+
+![erlang-ile-dagitik-70](/img/erlang-ile-dagitik-70.svg)
+

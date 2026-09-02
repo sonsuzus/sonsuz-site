@@ -8,6 +8,7 @@ tags:
   - ruby on rails
   - hızlı prototipleme
   - convention over configuration
+image: /img/ruby-on-rails-38.png
 ---
 
 Bir fikri doğrulamak için haftalarca form, liste, doğrulama ve ilişki kodu yazmak zorunda değilsiniz. Ruby on Rails, **Convention over Configuration** yaklaşımıyla veritabanı şemasını uygulamanın omurgası kabul eder; doğru isimlendirilmiş tablolar, alanlar ve ilişkilerden yola çıkarak işlevsel bir yönetim arayüzü üretmeyi oldukça hızlandırır. Amaç kusursuz ürünü ilk günde yayınlamak değil, kullanıcıdan erken geri bildirim alacak kadar gerçek bir prototip oluşturmaktır.
@@ -75,3 +76,6 @@ Bu tanım, ürünler için filtrelenebilir bir tablo ve güvenli parametre liste
 Elbette otomatik arayüz, nihai müşteri deneyimi değildir. Yetkilendirme, özel iş akışları, performans, erişilebilirlik ve marka tasarımı prototip büyüdükçe bilinçli biçimde ele alınmalıdır. Yine de doğru şema tasarımı, prototipin yalnızca veri saklamasını değil; filtrelenmesini, doğrulanmasını ve anlamlı ekranlarda yönetilmesini sağlar.
 
 İyi başlangıç stratejisi nettir: önce varlıkları ve ilişkileri modelleyin, ardından otomatik CRUD ile akışı kullanıcıya gösterin. Kullanıcı “burada toplu fiyat güncellemesi gerekli” dediğinde, ancak o zaman özel ekranı yazın. Rails’in felsefesi tam olarak bunu destekler: önce çalışan konvansiyon, sonra gerekli özelleştirme.
+
+![ruby-on-rails-38](/img/ruby-on-rails-38.svg)
+

@@ -11,9 +11,13 @@ tags:
   - risk yönetimi
   - type safety
 toc: true
+image: /img/f-ile-finansal-75.png
 ---
 
 Finans yazılımlarında küçük görünen bir hata, büyük bir bilanço sorununa dönüşebilir: Euro tutarını dolar sanmak, yüzde ile ondalık oranı karıştırmak veya günlük volatiliteyi yıllık değer gibi kullanmak oldukça pahalıdır. F#; fonksiyonel yaklaşımı, değişmez verileri ve özellikle **birim tipleri** (units of measure) sayesinde bu hataları daha derleme aşamasında yakalamaya yardımcı olur. Böylece hesap motorunuz yalnızca sonuç üretmez; hangi sonuçların anlamlı olduğunu da denetler.
+
+
+![f-ile-finansal-75](/img/f-ile-finansal-75.svg)
 
 ``
 
