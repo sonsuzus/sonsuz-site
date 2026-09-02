@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7d93c9"/>
+      <stop offset="100%" stop-color="#6278ad"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e8198" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#718398" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="95" cy="42" r="78" fill="#dcecf7" opacity="0.48"/>
+  <circle cx="581" cy="275" r="102" fill="#dcefdc" opacity="0.44"/>
+  <path d="M38 255 C150 220 205 289 320 258 S492 211 607 246" fill="none" stroke="#c8dde0" stroke-width="1.5" opacity="0.55"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#536477">Anaframe Bankacılık Akışı</text>
+
+  <!-- Input connections -->
+  <path d="M166 94 C192 94 199 113 221 125" fill="none" stroke="#8ba5b7" stroke-width="2"/>
+  <polygon points="221,125 212,119 214,130" fill="#8ba5b7"/>
+  <path d="M166 161 C190 161 197 161 218 161" fill="none" stroke="#8ba5b7" stroke-width="2"/>
+  <polygon points="222,161 213,156 213,166" fill="#8ba5b7"/>
+  <path d="M166 228 C192 228 199 207 221 195" fill="none" stroke="#8ba5b7" stroke-width="2"/>
+  <polygon points="221,195 214,190 213,201" fill="#8ba5b7"/>
+
+  <!-- Inputs -->
+  <g filter="url(#smallShadow)">
+    <rect x="38" y="68" width="128" height="52" rx="14" fill="#e6f1f8" stroke="#c5dce9"/>
+    <rect x="38" y="135" width="128" height="52" rx="14" fill="#e8f4ec" stroke="#c7e0d0"/>
+    <rect x="38" y="202" width="128" height="52" rx="14" fill="#f8efe2" stroke="#ead5b9"/>
+  </g>
+  <rect x="54" y="82" width="25" height="23" rx="5" fill="#8db8d1"/>
+  <path d="M59 88h15M59 94h15M59 100h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="89" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40586b">Kayıtlar</text>
+  <text x="89" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657887">VSAM • DB2</text>
+
+  <rect x="54" y="149" width="25" height="23" rx="5" fill="#8bbd9b"/>
+  <path d="M59 156h15M59 162h11" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="89" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405b4b">Copybook</text>
+  <text x="89" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657887">PIC • Alanlar</text>
+
+  <rect x="54" y="216" width="25" height="23" rx="5" fill="#d8a869"/>
+  <path d="M59 221h15M59 227h15M59 233h9" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="89" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#665039">JCL</text>
+  <text x="89" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657887">İş sırası</text>
+
+  <!-- Core -->
+  <g filter="url(#shadow)">
+    <rect x="221" y="83" width="182" height="156" rx="25" fill="url(#core)"/>
+  </g>
+  <circle cx="312" cy="123" r="26" fill="#ffffff" opacity="0.18"/>
+  <path d="M301 114h22M301 121h15M301 128h22M301 135h11" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="312" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#fff">COBOL PROGRAMI</text>
+  <text x="312" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf2ff">READ  •  EVALUATE</text>
+  <text x="312" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf2ff">COMPUTE  •  WRITE</text>
+
+  <!-- Output connections -->
+  <path d="M404 128 C430 112 442 98 466 95" fill="none" stroke="#8ba5b7" stroke-width="2"/>
+  <polygon points="470,95 460,91 462,101" fill="#8ba5b7"/>
+  <path d="M404 162 C432 162 441 162 465 162" fill="none" stroke="#8ba5b7" stroke-width="2"/>
+  <polygon points="469,162 460,157 460,167" fill="#8ba5b7"/>
+  <path d="M404 197 C430 212 442 226 466 229" fill="none" stroke="#8ba5b7" stroke-width="2"/>
+  <polygon points="470,229 461,223 460,234" fill="#8ba5b7"/>
+
+  <!-- Outputs -->
+  <g filter="url(#smallShadow)">
+    <rect x="469" y="68" width="133" height="54" rx="14" fill="#eee9f8" stroke="#d8cdea"/>
+    <rect x="469" y="135" width="133" height="54" rx="14" fill="#e4f3ee" stroke="#c7e3d7"/>
+    <rect x="469" y="202" width="133" height="54" rx="14" fill="#f8ebdf" stroke="#edd2bb"/>
+  </g>
+
+  <circle cx="490" cy="95" r="12" fill="#ac9bcd"/>
+  <path d="M484 95h12M490 89v12" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="512" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#55486d">Bakiye</text>
+  <text x="512" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#717285">Güncelleme</text>
+
+  <circle cx="490" cy="162" r="12" fill="#78b69a"/>
+  <path d="M484 162l4 4 8-9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="512" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#416655">Mutabakat</text>
+  <text x="512" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#717285">Kontrol</text>
+
+  <circle cx="490" cy="229" r="12" fill="#d9a265"/>
+  <path d="M485 222h10v14h-10zM487 225h6M487 229h6M487 233h4" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
+  <text x="512" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#705036">Denetim İzi</text>
+  <text x="512" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#717285">Çıktı kaydı</text>
+
+  <!-- Formula ribbon -->
+  <g filter="url(#smallShadow)">
+    <rect x="188" y="269" width="264" height="31" rx="15" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <text x="320" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#576b7a">Bakiye = Eski + Alacak − Borç + Faiz − Vergi</text>
+</svg>

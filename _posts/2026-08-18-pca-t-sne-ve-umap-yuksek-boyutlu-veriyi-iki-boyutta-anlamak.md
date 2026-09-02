@@ -9,6 +9,7 @@ tags:
   - makine öğrenmesi
   - veri görselleştirme
 toc: true
+image: /img/pca-t-sne-29.png
 ---
 
 Yüksek boyutlu veriler, makine öğrenmesinin kalabalık şehirleri gibidir: Her gözlem onlarca, yüzlerce hatta binlerce özelliğe sahiptir; fakat insan gözü en rahat iki veya üç boyutta gezinebilir. PCA, t-SNE ve UMAP bu karmaşık uzayı görselleştirilebilir bir haritaya dönüştürür. Ancak aynı veriye bakıp farklı hikâyeler anlatabilirler. Bu yüzden amaç yalnızca güzel kümeler üretmek değil, hangi yöntemin hangi geometrik bilgiyi koruduğunu anlamaktır.
@@ -24,6 +25,9 @@ Boyut indirgeme, $X \in \mathbb{R}^{n \times d}$ biçimindeki yüksek boyutlu ve
 | PCA | Varyansı en fazla açıklamak | Küresel, doğrusal yapı | Eksenleri anlamlı saçılım grafiği |
 | t-SNE | Yerel komşuluk olasılıkları | Yerel kümeler | Belirgin "adacıklar" |
 | UMAP | Komşuluk grafiği ve manifold yapısı | Yerel yapı, kısmen küresel ilişki | Dengeli küme ve geçiş görünümü |
+
+![pca-t-sne-29](/img/pca-t-sne-29.svg)
+
 
 ## PCA: Hızlı, açıklanabilir, ama doğrusal
 

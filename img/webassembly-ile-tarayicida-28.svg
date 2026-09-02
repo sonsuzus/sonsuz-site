@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="wasm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8e9ff"/>
+      <stop offset="100%" stop-color="#bcd7fa"/>
+    </linearGradient>
+    <linearGradient id="audio" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff5e5"/>
+      <stop offset="100%" stop-color="#bae5cb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#5d7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#436278" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="55" r="73" fill="#cce8f4" opacity="0.22"/>
+  <circle cx="596" cy="276" r="94" fill="#cbead0" opacity="0.22"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546a">Tarayıcıda Gerçek Zamanlı Ses Hattı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="102" width="119" height="114" rx="18" fill="#fff8df"/>
+    <rect x="28" y="102" width="119" height="30" rx="18" fill="#f8df9f"/>
+    <rect x="28" y="119" width="119" height="13" fill="#f8df9f"/>
+  </g>
+  <text x="87.5" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#70572a">Tarayıcı</text>
+  <rect x="47" y="147" width="81" height="25" rx="8" fill="#ffffff" opacity="0.8"/>
+  <text x="87.5" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6370">Klavye ve MIDI</text>
+  <rect x="47" y="180" width="81" height="22" rx="8" fill="#ffffff" opacity="0.8"/>
+  <text x="87.5" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6370">JavaScript</text>
+
+  <path d="M148 159 H173" fill="none" stroke="#7994a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="178,159 170,154 170,164" fill="#7994a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="181" y="79" width="142" height="159" rx="18" fill="url(#audio)"/>
+    <rect x="181" y="79" width="142" height="35" rx="18" fill="#9bd8b3"/>
+    <rect x="181" y="97" width="142" height="17" fill="#9bd8b3"/>
+  </g>
+  <text x="252" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245a41">AudioWorklet</text>
+  <text x="252" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c6954">Ses iş parçacığı</text>
+  <rect x="200" y="143" width="104" height="32" rx="9" fill="#ffffff" opacity="0.76"/>
+  <text x="252" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416554">128 kare blok</text>
+  <rect x="200" y="186" width="104" height="32" rx="9" fill="#ffffff" opacity="0.76"/>
+  <text x="252" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416554">Çıkış kopyası</text>
+
+  <path d="M324 159 H349" fill="none" stroke="#668ca2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="354,159 346,154 346,164" fill="#668ca2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="357" y="59" width="154" height="199" rx="20" fill="url(#wasm)"/>
+    <rect x="357" y="59" width="154" height="38" rx="20" fill="#91bae9"/>
+    <rect x="357" y="78" width="154" height="19" fill="#91bae9"/>
+  </g>
+  <text x="434" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#224e78">C ve WebAssembly</text>
+
+  <g filter="url(#soft)">
+    <rect x="376" y="112" width="116" height="48" rx="12" fill="#f8fcff"/>
+  </g>
+  <text x="434" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b7b">Osilatör</text>
+  <text x="434" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58758a">sinüs üretimi</text>
+
+  <path d="M434 162 V175" fill="none" stroke="#739bb8" stroke-width="2"/>
+  <polygon points="434,180 429,172 439,172" fill="#739bb8"/>
+
+  <g filter="url(#soft)">
+    <rect x="376" y="184" width="116" height="53" rx="12" fill="#f8fcff"/>
+  </g>
+  <text x="434" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b7b">Faz biriktirici</text>
+  <text x="434" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58758a">sürekli dalga</text>
+
+  <path d="M512 159 H535" fill="none" stroke="#7994a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="540,159 532,154 532,164" fill="#7994a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="543" y="102" width="72" height="114" rx="18" fill="#f2dcf3"/>
+    <rect x="543" y="102" width="72" height="30" rx="18" fill="#dfb7e2"/>
+    <rect x="543" y="119" width="72" height="13" fill="#dfb7e2"/>
+  </g>
+  <text x="579" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#713f73">Ses</text>
+  <path d="M554 169 C559 151 564 151 569 169 S579 187 584 169 S594 151 604 169" fill="none" stroke="#a14b9e" stroke-width="3" stroke-linecap="round"/>
+  <text x="579" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#714f72">Hoparlör</text>
+
+  <path d="M393 274 C415 263 452 263 475 274" fill="none" stroke="#70a0ba" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="434" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557486">44100 Hz · Float32</text>
+</svg>

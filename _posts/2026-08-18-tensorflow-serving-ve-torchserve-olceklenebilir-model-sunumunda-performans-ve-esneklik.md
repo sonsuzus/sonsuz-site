@@ -9,9 +9,13 @@ tags:
   - tensorflow serving
   - torchserve
 toc: true
+image: /img/tensorflow-serving-ve-96.png
 ---
 
 Bir makine öğrenmesi modelini eğitmek, yarışın yalnızca ilk turudur; gerçek ürün yükü başladığında modelin hızlı, güvenilir ve yönetilebilir biçimde tahmin üretmesi gerekir. Model serving araçları bu geçişi düzenler: modeli belleğe alır, HTTP veya gRPC isteklerini karşılar, paralel çağrıları yönetir ve yeni sürümlere kontrollü geçiş sağlar. TensorFlow Serving ile TorchServe, iki büyük ekosistemin bu ihtiyaca verdiği güçlü fakat farklı karakterdeki yanıtlardır.
+
+![tensorflow-serving-ve-96](/img/tensorflow-serving-ve-96.svg)
+
 ``
 
 ## Önce performansın matematiği

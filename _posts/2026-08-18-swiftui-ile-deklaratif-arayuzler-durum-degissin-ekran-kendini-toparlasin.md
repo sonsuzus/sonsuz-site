@@ -11,6 +11,7 @@ tags:
   - durum yönetimi
   - deklaratif programlama
 toc: true
+image: /img/swiftui-ile-deklaratif-88.png
 ---
 
 SwiftUI, Apple platformlarında arayüz yazmayı “hangi pikseli nereye taşıyayım?” sorusundan “mevcut durumda kullanıcı ne görmeli?” sorusuna taşır. Bu yaklaşımın süper gücü, görünüm ile veri arasındaki bağı açıkça kurmasıdır. Bir değer değiştiğinde ekrana yeniden çizim emri yağdırmak yerine SwiftUI yeni durumu değerlendirir, eski görünüm ağacıyla karşılaştırır ve yalnızca gerekli bölümü günceller. Sonuç: daha az tören, daha okunabilir kod ve animasyonlara hazır modern ekranlar.
@@ -85,3 +86,6 @@ $$DerivedState = g(SourceState)$$
 Ayrıca kimlik (`id`) kavramını ihmal etmeyin. `ForEach` içindeki kararlı kimlikler, SwiftUI'ın hangi satırın eklendiğini, silindiğini ya da taşındığını anlamasını sağlar. Büyük uygulamalarda ekran durumunu `loading`, `success`, `empty` ve `failure` gibi açık durumlara ayırmak da belirsiz `Bool` ormanlarını azaltır.
 
 SwiftUI sihir yapmaz; iyi modellenmiş durumun mantıklı sonucunu üretir. Verinin tek doğru kaynağını belirleyip sahipliği doğru atadığınızda, Apple ekosisteminde iPhone'dan Mac'e kadar arayüzünüz güncel kalır. En keyifli tarafı ise şudur: kullanıcı bir düğmeye basar, siz yalnızca gerçeği değiştirirsiniz; ekran geri kalan koreografiyi halleder.
+
+![swiftui-ile-deklaratif-88](/img/swiftui-ile-deklaratif-88.svg)
+

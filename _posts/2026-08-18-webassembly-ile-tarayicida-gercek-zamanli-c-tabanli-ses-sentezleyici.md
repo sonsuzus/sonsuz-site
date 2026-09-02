@@ -8,9 +8,13 @@ tags:
   - webassembly
   - c
   - web audio apı
+image: /img/webassembly-ile-tarayicida-28.png
 ---
 
 Tarayıcıda ses üretmek eskiden JavaScript döngülerine ve sınırlı performansa mahkûm bir iş gibi görünürdü. WebAssembly (WASM) sayesinde C ile yazılmış küçük, hızlı ve taşınabilir bir sentez motorunu doğrudan tarayıcıda çalıştırmak mümkün. Bu projede amaç, bir osilatörün ürettiği dalga formunu gerçek zamanlı olarak Web Audio API hattına aktararak temel ama genişletilebilir bir synthesizer oluşturmaktır.
+
+
+![webassembly-ile-tarayicida-28](/img/webassembly-ile-tarayicida-28.svg)
 
 ``
 

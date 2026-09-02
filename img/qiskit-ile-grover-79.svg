@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="quantum" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcd5ff"/>
+      <stop offset="100%" stop-color="#c9e9ff"/>
+    </linearGradient>
+    <linearGradient id="success" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f4d0"/>
+      <stop offset="100%" stop-color="#bde8d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7790a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8594" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="325" cy="161" r="128" fill="#dcefff" opacity="0.32"/>
+  <circle cx="325" cy="161" r="92" fill="none" stroke="#9cc9d4" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.65"/>
+
+  <text x="28" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#35516a">GROVER ARAMASI</text>
+  <text x="28" y="50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808e">Kuantum olasılık yükseltme döngüsü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="111" width="125" height="98" rx="18" fill="#ffffff"/>
+    <rect x="39" y="125" width="101" height="30" rx="10" fill="#d9ecff"/>
+    <text x="89.5" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#35516a">Arama uzayı</text>
+    <rect x="42" y="169" width="20" height="22" rx="6" fill="#eef5fb" stroke="#b7cede"/>
+    <rect x="67" y="169" width="20" height="22" rx="6" fill="#eef5fb" stroke="#b7cede"/>
+    <rect x="92" y="169" width="20" height="22" rx="6" fill="#eef5fb" stroke="#b7cede"/>
+    <rect x="117" y="169" width="20" height="22" rx="6" fill="#bfeccc" stroke="#76b48d"/>
+    <text x="52" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587080">00</text>
+    <text x="77" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587080">01</text>
+    <text x="102" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587080">10</text>
+    <text x="127" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#28744d">11</text>
+  </g>
+
+  <path d="M153 160 L190 160" fill="none" stroke="#6d9bb0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="190,160 181,155 181,165" fill="#6d9bb0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="191" y="119" width="115" height="84" rx="20" fill="url(#quantum)"/>
+    <circle cx="220" cy="161" r="17" fill="#ffffff" opacity="0.75"/>
+    <path d="M211 161 C215 149 225 149 229 161 C225 173 215 173 211 161Z" fill="none" stroke="#6360a7" stroke-width="2"/>
+    <path d="M220 144 L220 178 M203 161 L237 161" stroke="#6360a7" stroke-width="1.4" opacity="0.75"/>
+    <text x="265" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#414576">Süperpozisyon</text>
+    <text x="265" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6690">H kapıları</text>
+    <text x="265" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6690">1/√N genlik</text>
+  </g>
+
+  <path d="M308 160 L335 160" fill="none" stroke="#7772b2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="335,160 326,155 326,165" fill="#7772b2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="337" y="77" width="129" height="70" rx="18" fill="#ffe4df"/>
+    <circle cx="365" cy="112" r="17" fill="#ffffff" opacity="0.78"/>
+    <text x="365" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#c05b57">−1</text>
+    <text x="418" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#8c4c50">Oracle</text>
+    <text x="418" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b6768">Hedefi işaretle</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="337" y="175" width="129" height="70" rx="18" fill="#fff1c9"/>
+    <circle cx="365" cy="210" r="17" fill="#ffffff" opacity="0.8"/>
+    <path d="M356 214 L365 204 L374 214" fill="none" stroke="#ba8c34" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M365 204 L365 220" stroke="#ba8c34" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="418" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#87621e">Difüzör</text>
+    <text x="418" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#987742">Genliği yükselt</text>
+  </g>
+
+  <path d="M401 148 L401 173" fill="none" stroke="#bc8574" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="401,173 396,164 406,164" fill="#bc8574"/>
+
+  <path d="M468 210 C506 210 510 112 469 112" fill="none" stroke="#7896a3" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="469,112 478,107 478,117" fill="#7896a3"/>
+  <text x="505" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7d89">R ≈ π/4√N</text>
+  <text x="505" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7d89">iterasyon</text>
+
+  <path d="M467 112 L538 112 L538 143" fill="none" stroke="#6a9a83" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="538,143 533,134 543,134" fill="#6a9a83"/>
+
+  <g filter="url(#shadow)">
+    <rect x="496" y="145" width="116" height="101" rx="20" fill="url(#success)"/>
+    <text x="554" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#32684a">Ölçüm</text>
+    <rect x="513" y="183" width="12" height="31" rx="4" fill="#9bc9ad"/>
+    <rect x="532" y="194" width="12" height="20" rx="4" fill="#9bc9ad"/>
+    <rect x="551" y="190" width="12" height="24" rx="4" fill="#9bc9ad"/>
+    <rect x="570" y="174" width="16" height="40" rx="4" fill="#3ca16a"/>
+    <text x="519" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48745a">00</text>
+    <text x="538" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48745a">01</text>
+    <text x="557" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48745a">10</text>
+    <text x="578" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#226540">11</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="179" y="267" width="283" height="30" rx="15" fill="#ffffff" opacity="0.92"/>
+    <circle cx="197" cy="282" r="6" fill="#7d70c8"/>
+    <text x="211" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506a79">Klasik: O(N)</text>
+    <path d="M300 282 L319 282" stroke="#9ab2bf" stroke-width="1.5"/>
+    <polygon points="319,282 313,278 313,286" fill="#9ab2bf"/>
+    <circle cx="338" cy="282" r="6" fill="#46a36d"/>
+    <text x="352" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3d7160">Grover: O(√N)</text>
+  </g>
+</svg>

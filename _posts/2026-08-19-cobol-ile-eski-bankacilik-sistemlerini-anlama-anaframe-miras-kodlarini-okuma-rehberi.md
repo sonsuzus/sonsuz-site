@@ -10,6 +10,7 @@ tags:
   - bankacılık
   - miras kod
   - jcl
+image: /img/cobol-ile-eski-15.png
 ---
 
 Bir bankanın ekranında saniyeler içinde görünen bakiye, çoğu zaman bulut üzerindeki parlak bir mikroservisten değil, onlarca yıldır çalışan bir ana bilgisayar programından gelir. COBOL (Common Business-Oriented Language), insan diline yakın söz dizimi ve güçlü kayıt işleme modeli sayesinde bankacılıkta kalıcı olmuştur. Bu sistemleri anlamak, yalnızca eski bir dili öğrenmek değildir; faiz, tahakkuk, mutabakat, hesap hareketi ve denetim izlerinin iş kurallarına nasıl dönüştüğünü keşfetmektir.
@@ -31,6 +32,9 @@ Burada $B$ bakiye, $T$ hareket tutarları, $F$ faiz veya ücret, $V$ ise vergi g
 | Veri erişimi | VSAM, sequential file, DB2 | SQL, NoSQL, REST API |
 | Hata yaklaşımı | Durum kodu ve `FILE STATUS` | Exception ve loglama |
 | Güçlü yanı | Öngörülebilirlik, yüksek hacim | Esneklik, hızlı geliştirme |
+
+![cobol-ile-eski-15](/img/cobol-ile-eski-15.svg)
+
 
 Bir COBOL kaynak dosyasında ilk durak `IDENTIFICATION DIVISION`, ardından `ENVIRONMENT DIVISION`, `DATA DIVISION` ve `PROCEDURE DIVISION` olmalıdır. İlk üç bölüm programın kimliğini, çalışma ortamını ve veri şemasını anlatır. Asıl iş mantığı `PROCEDURE DIVISION` içinde yaşar. Özellikle `PERFORM`, `IF`, `EVALUATE`, `READ`, `WRITE` ve `COMPUTE` ifadeleri bir programın hikâyesini takip etmek için kritik işaretlerdir.
 

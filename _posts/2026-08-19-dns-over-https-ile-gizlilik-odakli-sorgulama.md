@@ -10,6 +10,7 @@ tags:
   - gizlilik
   - ağ güvenliği
 toc: true
+image: /img/dns-over-https-51.png
 ---
 
 İnternette bir siteye girmeden önce tarayıcınızın yaptığı ilk iş, alan adını IP adresine çevirmektir. Klasik DNS sorguları çoğu zaman şifresiz taşındığından, aynı ağdaki bir gözlemci hangi alan adlarını ziyaret etmek istediğinizi görebilir. DNS-over-HTTPS (DoH), bu sorguları HTTPS trafiğinin içine alarak meraklı ağ yöneticileri, açık Wi-Fi dinleyicileri ve bazı servis sağlayıcıları için görünürlüğü önemli ölçüde azaltır.
@@ -67,3 +68,6 @@ Yanıtta `Answer` alanında IP kayıtları görülür. Bu komut, tarayıcınız�
 - Reklam engelleme veya aile filtresi için DNS kullanıyorsanız, DoH’un bu politikaları baypas edip etmediğini test edin.
 
 DoH, alan adı sorgularını “açık kartpostal” olmaktan çıkarıp şifreli bir zarfın içine koyar. Doğru sağlayıcı seçimi, güncel tarayıcı ayarları ve gerçekçi tehdit modeliyle birleştiğinde günlük internet kullanımında anlamlı bir mahremiyet katmanı sağlar.
+
+![dns-over-https-51](/img/dns-over-https-51.svg)
+

@@ -10,7 +10,11 @@ tags:
   - havacılık
   - güvenlik kritik yazılım
 toc: true
+image: /img/ada-ile-guvenlik-55.png
 ---
+
+![ada-ile-guvenlik-55](/img/ada-ile-guvenlik-55.svg)
+
 
 Bir uçakta yazılımın küçük bir hatası yalnızca uygulamanın çökmesi anlamına gelmez; yanlış sensör verisi, geciken bir kontrol komutu veya öngörülemez bellek davranışı ciddi sonuçlar doğurabilir. Ada, tam bu nedenle tasarlanmış bir programlama dilidir: derleme zamanında hataları yakalamayı, eşzamanlı görevleri disiplinli biçimde yönetmeyi ve yazılımın davranışını denetlenebilir hâle getirmeyi hedefler. Havacılık, uzay, demiryolu ve savunma gibi alanlarda Ada; “önce doğru çalışsın, sonra hızlı olsun” yaklaşımının güçlü bir temsilcisidir.
 ``

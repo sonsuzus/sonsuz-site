@@ -10,9 +10,13 @@ tags:
   - grover algoritması
   - python
 toc: true
+image: /img/qiskit-ile-grover-79.png
 ---
 
 Bir telefon rehberinde adı bilinmeyen tek bir kişiyi bulduğunuzu düşünün: klasik bilgisayar kayıtları sırayla kontrol ederken, kuantum bilgisayar olasılıkları akıllıca yükselterek hedefe yönelmeyi amaçlar. Grover arama algoritması bu fikrin en ünlü örneklerinden biridir. Qiskit simülatörüyle algoritmayı çalıştırmak, kuantum donanımına erişmeden süperpozisyon, girişim ve ölçüm kavramlarını somut biçimde gözlemlemenin eğlenceli yoludur.
+
+![qiskit-ile-grover-79](/img/qiskit-ile-grover-79.svg)
+
 ``
 
 ## Arama probleminin matematiği

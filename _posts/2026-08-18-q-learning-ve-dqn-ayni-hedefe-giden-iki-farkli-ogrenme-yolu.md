@@ -9,7 +9,11 @@ tags:
   - q-learning
   - dqn
 toc: true
+image: /img/q-learning-ve-54.png
 ---
+
+![q-learning-ve-54](/img/q-learning-ve-54.svg)
+
 
 Güçlendirme öğrenmesinde (Reinforcement Learning, RL) bir ajanın amacı, deneme-yanılma yoluyla en yüksek toplam ödülü getiren davranışı öğrenmektir. Q-learning ve Derin Q-Network (DQN), bu hedefe ulaşmak için kullanılan iki popüler yöntemdir; ancak biri küçük dünyaların tablo ustasıyken, diğeri yüksek boyutlu problemlerde sahneye çıkan derin öğrenme oyuncusudur.
 

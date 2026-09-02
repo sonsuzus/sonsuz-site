@@ -9,9 +9,13 @@ tags:
   - solidity
   - akıllı sözleşme güvenliği
 toc: true
+image: /img/solidity-akilli-sozlesmelerinde-37.png
 ---
 
 Akıllı sözleşmeler dağıtıldıktan sonra çoğunlukla değiştirilemez; bu nedenle küçük görünen bir kod hatası, kasadaki tüm varlıkların saniyeler içinde boşalmasına dönüşebilir. Solidity güvenliği yalnızca doğru sözdizimi yazmak değildir: EVM’nin çağrı akışını, durum değişikliklerini ve sayısal sınırları anlamayı gerektirir. İki klasik tehdit olan **reentrancy** ve **overflow**, güvenli tasarım alışkanlıklarıyla büyük ölçüde önlenebilir.
+
+![solidity-akilli-sozlesmelerinde-37](/img/solidity-akilli-sozlesmelerinde-37.svg)
+
 ``
 
 ## Teorik zemin: EVM’de kontrol kimde?

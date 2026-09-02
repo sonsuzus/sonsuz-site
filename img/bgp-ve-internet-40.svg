@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dce9ff"/>
+      <stop offset="100%" stop-color="#d8f3e4"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#63758a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#63758a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="74" cy="52" r="42" fill="#dceeff" opacity="0.42"/>
+  <circle cx="584" cy="272" r="58" fill="#daf3dd" opacity="0.42"/>
+  <path d="M28 159 C112 122, 146 210, 220 177" fill="none" stroke="#c8ddec" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <path d="M420 143 C500 98, 545 179, 616 141" fill="none" stroke="#c8e5d2" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="28" y="48" width="128" height="60" rx="16" fill="#fff4dc"/>
+    <circle cx="54" cy="78" r="14" fill="#f3c779"/>
+    <path d="M48 78h12M54 72v12" stroke="#8c6427" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="76" y="74" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405063" font-weight="600">Müşteri AS</text>
+    <text x="76" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718094">AS 64500</text>
+
+    <rect x="28" y="202" width="128" height="60" rx="16" fill="#eee5ff"/>
+    <circle cx="54" cy="232" r="14" fill="#c9a9ef"/>
+    <path d="M47 232h14M50 226l-3 6 3 6M58 226l3 6-3 6" fill="none" stroke="#694895" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="76" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405063" font-weight="600">Eş Ağ</text>
+    <text x="76" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718094">Peering</text>
+  </g>
+
+  <g filter="url(#golge)">
+    <rect x="220" y="93" width="200" height="132" rx="25" fill="url(#merkez)" stroke="#b9d2e5"/>
+    <circle cx="320" cy="130" r="24" fill="#7da8d8"/>
+    <path d="M308 130h24M320 118v24M312 122l16 16M328 122l-16 16" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="320" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#314a62" font-weight="700">BGP Karar Merkezi</text>
+    <text x="320" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60778b">Politika tabanlı seçim</text>
+    <rect x="263" y="200" width="114" height="16" rx="8" fill="#ffffff" opacity="0.72"/>
+    <text x="320" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708a">AS_PATH kontrolü</text>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M156 78 C184 78, 185 122, 220 132" stroke="#d19f43" stroke-width="2.4"/>
+    <path d="M156 232 C184 232, 189 204, 220 190" stroke="#9c77cb" stroke-width="2.4"/>
+    <path d="M420 139 C445 127, 453 94, 480 82" stroke="#68a987" stroke-width="2.4"/>
+    <path d="M420 183 C446 193, 449 221, 480 231" stroke="#5b9fc3" stroke-width="2.4"/>
+  </g>
+
+  <polygon points="214,126 222,132 213,135" fill="#d19f43"/>
+  <polygon points="214,185 222,190 213,193" fill="#9c77cb"/>
+  <polygon points="474,78 482,82 475,87" fill="#68a987"/>
+  <polygon points="474,226 482,231 473,235" fill="#5b9fc3"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="480" y="48" width="132" height="60" rx="16" fill="#e3f5e9"/>
+    <circle cx="507" cy="78" r="14" fill="#80c79d"/>
+    <path d="M500 78l5 5 9-10" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="530" y="74" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405063" font-weight="600">Doğrulama</text>
+    <text x="530" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718094">RPKI ve filtre</text>
+
+    <rect x="480" y="202" width="132" height="60" rx="16" fill="#e0f1fb"/>
+    <circle cx="507" cy="232" r="14" fill="#77b8dd"/>
+    <path d="M499 235h16M502 231h10M505 227h4" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="530" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405063" font-weight="600">Hedef Önek</text>
+    <text x="530" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718094">203.0.113.0/24</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="188" y="248" width="264" height="46" rx="16" fill="#ffffff" opacity="0.92"/>
+    <circle cx="214" cy="271" r="12" fill="#f5d58b"/>
+    <path d="M210 267h8M210 271h8M210 275h5" stroke="#806426" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="236" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405063" font-weight="600">Tercih Sırası</text>
+    <text x="236" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718094">Yerel tercih → AS yolu → maliyet</text>
+  </g>
+
+  <path d="M320 225v19" stroke="#8faabe" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="316,240 320,246 324,240" fill="#8faabe"/>
+</svg>

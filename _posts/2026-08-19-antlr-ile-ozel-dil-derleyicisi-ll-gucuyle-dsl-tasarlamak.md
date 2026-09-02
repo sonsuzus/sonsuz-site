@@ -10,7 +10,11 @@ tags:
   - derleyici
   - ll ayrıştırma
   - java
+image: /img/antlr-ile-ozel-13.png
 ---
+
+![antlr-ile-ozel-13](/img/antlr-ile-ozel-13.svg)
+
 
 Her problemin çözümü genel amaçlı bir programlama diliyle yazılmak zorunda değildir. Bir raporlama sistemi için sorgu dili, oyunlar için diyalog betik dili veya otomasyon için görev tanım dili tasarlamak; kullanıcıya daha okunabilir, daha güvenli ve alanın kavramlarına yakın bir deneyim sunar. İşte bu tür dillere **alan özgü dil** ya da DSL (*Domain-Specific Language*) denir. ANTLR, gramerinizi yazarak lexer ve parser üretmenizi sağlayan güçlü bir araçtır; özellikle LL(*) yaklaşımı sayesinde karmaşık alternatifleri yönetmeyi kolaylaştırır.
 ``
