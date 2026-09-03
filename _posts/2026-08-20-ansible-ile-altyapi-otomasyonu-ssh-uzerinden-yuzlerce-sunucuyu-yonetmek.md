@@ -10,9 +10,13 @@ tags:
   - ssh
   - otomasyon
   - altyapı
+image: /img/ansible-ile-altyapi-76.png
 ---
 
 Sunucu sayısı arttıkça “şu paketi hepsine kurar mısın?” cümlesi küçük bir ricadan operasyonel bir maratona dönüşür. Ansible, SSH tabanlı ajanssız mimarisiyle bu maratonu tekrarlanabilir playbook’lara çevirir. Tek bir kontrol makinesinden yüzlerce Linux sunucusuna bağlantı kurabilir, yapılandırma uygulayabilir, servisleri yönetebilir ve uygulama dağıtımları gerçekleştirebilirsiniz.
+
+
+![ansible-ile-altyapi-76](/img/ansible-ile-altyapi-76.svg)
 
 ``
 

@@ -9,6 +9,7 @@ tags:
   - dağıtık sistemler
   - formal metotlar
 toc: true
+image: /img/tla-ile-dagitik-79.png
 ---
 
 Dağıtık sistemlerde hata ayıklamak bazen sisli bir ormanda kaybolmaya benzer: Her servis tek başına doğru görünür, fakat belirli bir zamanlama gerçekleştiğinde sistem beklenmedik biçimde kilitlenir. TLA+, bu tür sorunları üretime taşınmadan önce durum uzayını matematiksel olarak incelemeye yarayan güçlü bir formal doğrulama dilidir. Özellikle yarış koşulları, lider seçimi ve karşılıklı dışlama gibi eşzamanlılık problemlerinde “bu hata hiç oluşamaz” iddiasını test edilebilir bir kanıta dönüştürür.
@@ -30,6 +31,9 @@ Burada `Init`, sistemin geçerli başlangıç durumlarını; `Next`, izin verile
 | Hata bulma | Çalıştırma sırasında | Durum uzayını tarayarak |
 | Sonuç | Hata görülmedi | Özellik doğrulandı veya karşı örnek bulundu |
 | Çıktı | Log ve stack trace | Hatalı durumlara giden iz |
+
+![tla-ile-dagitik-79](/img/tla-ile-dagitik-79.svg)
+
 
 ## Yarış koşulunu modellemek
 

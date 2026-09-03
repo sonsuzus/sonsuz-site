@@ -10,6 +10,7 @@ tags:
   - logstash
   - kibana
   - devops
+image: /img/elk-stack-ile-99.png
 ---
 
 Dağıtık bir sistemde sorun çözmek, farklı sunuculara bağlanıp milyonlarca satır log arasında iğne aramaya benzeyebilir. ELK Stack; uygulama, konteyner, sunucu ve servis loglarını tek merkezde toplayarak bu karmaşayı aranabilir, filtrelenebilir ve görselleştirilebilir bir veri akışına dönüştürür. Böylece “Kullanıcı neden hata aldı?” sorusu, uzun bir terminal maratonu yerine birkaç saniyelik bir sorguya dönüşür.
@@ -23,6 +24,9 @@ ELK adı üç temel bileşenden gelir: **Elasticsearch**, **Logstash** ve **Kiba
 | Logstash | Logları toplar, ayrıştırır, zenginleştirir | Apache satırını alanlara bölmek |
 | Kibana | Arama, dashboard ve alarm arayüzü sağlar | Hata oranı grafiği oluşturmak |
 | Filebeat | Hafif log ajanı olarak veri taşır | Docker konteyner loglarını göndermek |
+
+![elk-stack-ile-99](/img/elk-stack-ile-99.svg)
+
 
 Elasticsearch’in gücü, klasik ilişkisel veritabanlarındaki satır odaklı aramadan farklı bir indeks yaklaşımından gelir. Metin alanları analiz edilir; kelimeler ters indeks yapısında tutulur. Basitçe, bir kelimenin hangi dokümanlarda geçtiği önceden hazırlanır. Arama maliyetini kabaca $O(N)$ yerine, indeks yapısına bağlı olarak $O(\log N)$ seviyesine yaklaştırmak mümkündür. Bu nedenle milyonlarca olay arasından belirli bir hata kodunu bulmak son derece hızlıdır.
 

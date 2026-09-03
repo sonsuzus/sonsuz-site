@@ -10,6 +10,7 @@ tags:
   - algoritmalar
   - olasılıksal programlama
 toc: true
+image: /img/bloom-filter-az-25.png
 ---
 
 Bir web tarayıcısının daha önce ziyaret edilmiş bir URL’yi, bir e-posta sunucusunun şüpheli adresi veya bir veritabanının diskte bulunmayan anahtarı saniyeler değil mikrosaniyeler içinde kontrol etmesi gerekir. Bloom Filter tam bu tür senaryolarda parlayan, olasılıksal bir veri yapısıdır: Bir elemanın kümede **kesinlikle olmadığını** söyler ya da **muhtemelen bulunduğunu** bildirir. Bu küçük belirsizlik, inanılmaz düşük bellek tüketimi ve sabit zamana yakın sorgu performansı karşılığında kabul edilir.
@@ -32,6 +33,9 @@ Yanlış negatif oluşmamasının sebebi budur: Bir kez `1` yapılan bit, standa
 | Sorgu süresi | $O(k)$, pratikte çok hızlı | Ortalama $O(1)$ |
 | Eleman silme | Standart sürümde güvenli değil | Desteklenir |
 | Yanlış pozitif | Mümkün | Yok |
+
+![bloom-filter-az-25](/img/bloom-filter-az-25.svg)
+
 
 ## Hata oranı nereden gelir?
 

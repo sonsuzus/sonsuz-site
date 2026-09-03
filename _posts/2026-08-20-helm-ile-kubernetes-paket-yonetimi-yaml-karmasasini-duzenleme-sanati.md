@@ -8,6 +8,7 @@ tags:
   - kubernetes
   - helm
   - devops
+image: /img/helm-ile-kubernetes-25.png
 ---
 
 Kubernetes üzerinde küçük bir uygulamayı dağıtmak çoğu zaman birkaç YAML dosyasıyla başlar; fakat uygulama büyüdükçe Deployment, Service, Ingress, ConfigMap, Secret, HPA ve RBAC tanımları hızla çoğalır. Helm, bu karmaşayı sürümlenebilir ve yeniden kullanılabilir paketlere dönüştüren Kubernetes paket yöneticisidir. Amaç yalnızca YAML üretmek değil; farklı ortamlar için aynı uygulamayı güvenilir, tutarlı ve tekrarlanabilir biçimde yayınlamaktır.
@@ -88,3 +89,6 @@ helm upgrade --install web-api-prod ./web-api \
 | Paylaşım | Dosya klasörü paylaşımı | Chart repository |
 
 Son olarak Secret verilerini doğrudan `values.yaml` içine koymak risklidir; bu dosyalar çoğunlukla Git'e girer. SOPS, External Secrets veya CI/CD gizli değişkenleriyle entegrasyon tercih edilmelidir. Helm, Kubernetes'i sihirli biçimde basitleştirmez; fakat tekrar eden dağıtım bilgisini paketleyerek YAML ormanını yönetilebilir bir bahçeye dönüştürür.
+
+![helm-ile-kubernetes-25](/img/helm-ile-kubernetes-25.svg)
+

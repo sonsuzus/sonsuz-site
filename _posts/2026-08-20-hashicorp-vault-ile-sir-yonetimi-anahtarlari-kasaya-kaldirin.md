@@ -9,6 +9,7 @@ tags:
   - siber güvenlik
   - devops
 toc: true
+image: /img/hashicorp-vault-ile-46.png
 ---
 
 Bir uygulamanın Git deposunda unutulmuş API anahtarı, paylaşılan bir Excel dosyasındaki veritabanı parolası veya aylarca yenilenmeyen TLS sertifikası; güvenlik ihlalinin klasik başlangıç noktalarıdır. HashiCorp Vault, bu hassas değerleri uygulama kodundan ve kişisel hafızalardan ayıran merkezi bir sır yönetimi platformudur. Temel hedef yalnızca sırları şifrelemek değil; kimin, ne zaman, hangi sırra ve hangi koşulla eriştiğini denetlenebilir hâle getirmektir.
@@ -71,3 +72,6 @@ vault read database/creds/raporlama
 Bu komutlar, CI ortamının JWT kimliğiyle giriş yapar ve kısa ömürlü veritabanı bilgisi alır. Çıktıyı loglara yazdırmamak kritik bir ayrıntıdır; maskeleme tek başına yeterli değildir.
 
 Son olarak audit device etkinleştirin, root token’ı günlük işlerde kullanmayın, production ve test için ayrı Vault alanları planlayın. Düzenli rotasyon, kısa TTL, geri alma prosedürü ve erişim gözden geçirmesi birlikte uygulandığında Vault sadece bir parola kasası değil, ihlal anında etki alanını sınırlayan aktif bir güvenlik kontrolü olur.
+
+![hashicorp-vault-ile-46](/img/hashicorp-vault-ile-46.svg)
+

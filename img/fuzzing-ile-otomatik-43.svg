@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6578c8"/>
+      <stop offset="100%" stop-color="#8067b8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#53617c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#53617c" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="97" cy="48" r="70" fill="#cbe9ed" opacity="0.24"/>
+  <circle cx="560" cy="275" r="105" fill="#dcd4f2" opacity="0.2"/>
+  <path d="M35 268 C100 238 136 295 207 266 S323 240 383 272 S520 291 604 235" fill="none" stroke="#b8dbe0" stroke-width="2" opacity="0.38"/>
+
+  <!-- Bağlantılar -->
+  <path d="M180 113 C210 98 226 96 249 101" fill="none" stroke="#6e8cab" stroke-width="2.5"/>
+  <polygon points="248,95 261,102 247,108" fill="#6e8cab"/>
+
+  <path d="M391 102 C417 97 433 99 454 112" fill="none" stroke="#6e8cab" stroke-width="2.5"/>
+  <polygon points="452,105 465,118 448,118" fill="#6e8cab"/>
+
+  <path d="M507 166 C506 190 479 208 442 218" fill="none" stroke="#6e8cab" stroke-width="2.5"/>
+  <polygon points="447,210 430,221 449,225" fill="#6e8cab"/>
+
+  <path d="M286 238 C247 242 211 227 183 196" fill="none" stroke="#7aa38d" stroke-width="2.5"/>
+  <polygon points="191,194 174,185 180,203" fill="#7aa38d"/>
+
+  <path d="M130 177 C104 203 112 231 145 245 C177 259 214 253 239 244" fill="none" stroke="#7aa38d" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <polygon points="235,237 250,241 238,250" fill="#7aa38d"/>
+
+  <!-- Corpus -->
+  <g filter="url(#soft)">
+    <rect x="45" y="71" width="136" height="83" rx="18" fill="#d9eff5"/>
+    <rect x="45" y="71" width="136" height="83" rx="18" fill="none" stroke="#a6d3dd"/>
+    <path d="M71 99 h36 M71 111 h57 M71 123 h43" stroke="#4c8394" stroke-width="3" stroke-linecap="round"/>
+    <path d="M130 93 l21 0 0 38 -21 0z" fill="#f7fcfd" stroke="#75afbd" stroke-width="2"/>
+    <path d="M135 102 h11 M135 110 h11 M135 118 h8" stroke="#75afbd" stroke-width="2" stroke-linecap="round"/>
+    <text x="113" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#315d6c">Başlangıç kümesi</text>
+  </g>
+
+  <!-- Mutasyon -->
+  <g filter="url(#shadow)">
+    <rect x="253" y="63" width="139" height="79" rx="20" fill="#fce9c9"/>
+    <rect x="253" y="63" width="139" height="79" rx="20" fill="none" stroke="#edc887"/>
+    <path d="M285 95 l11 -11 8 8 -11 11 -9 2z" fill="#eea942"/>
+    <path d="M300 79 l8 8" stroke="#8e6624" stroke-width="2" stroke-linecap="round"/>
+    <path d="M320 94 h38 M320 108 h27 M320 122 h34" stroke="#b47b2a" stroke-width="3" stroke-linecap="round"/>
+    <text x="322" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#77511f">Girdi mutasyonu</text>
+  </g>
+
+  <!-- Hedef -->
+  <g filter="url(#shadow)">
+    <rect x="459" y="72" width="130" height="91" rx="20" fill="url(#core)"/>
+    <rect x="459" y="72" width="130" height="91" rx="20" fill="none" stroke="#5e67a9"/>
+    <rect x="482" y="91" width="84" height="38" rx="9" fill="#ffffff" opacity="0.2"/>
+    <path d="M497 103 h12 l6 7 -6 7 h-12 l-6 -7z" fill="#e4efff"/>
+    <path d="M524 105 h25 M524 115 h17" stroke="#e4efff" stroke-width="3" stroke-linecap="round"/>
+    <text x="524" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Hedef uygulama</text>
+  </g>
+
+  <!-- Kapsama -->
+  <g filter="url(#soft)">
+    <rect x="252" y="208" width="180" height="70" rx="18" fill="#dcefd9"/>
+    <rect x="252" y="208" width="180" height="70" rx="18" fill="none" stroke="#afd0a9"/>
+    <path d="M278 251 v-17 M288 251 v-27 M298 251 v-11 M308 251 v-34 M318 251 v-21" stroke="#5e986d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M337 231 c8 -8 16 -8 24 0 s16 8 25 -3" fill="none" stroke="#659d72" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="389" cy="227" r="6" fill="#f2ad62"/>
+    <text x="350" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3f714b">Kapsama geri bildirimi</text>
+  </g>
+
+  <!-- Bulgu -->
+  <g filter="url(#soft)">
+    <rect x="69" y="203" width="111" height="72" rx="18" fill="#f8d9db"/>
+    <rect x="69" y="203" width="111" height="72" rx="18" fill="none" stroke="#e5aeb3"/>
+    <path d="M102 219 l20 0 11 19 -11 19 -20 0 -11 -19z" fill="#dd6f78"/>
+    <path d="M112 227 v13 M112 247 v1" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <text x="125" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#8e3e48">Çöküş bulgusu</text>
+  </g>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#495873">Fuzzing ile sürekli güvenlik testi</text>
+  <text x="521" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66758c">çalıştır</text>
+  <text x="466" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66758c">izle</text>
+  <text x="198" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66758c">yeni yollar</text>
+</svg>

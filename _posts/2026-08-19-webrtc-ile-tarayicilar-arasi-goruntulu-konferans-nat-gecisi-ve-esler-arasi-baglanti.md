@@ -10,7 +10,11 @@ tags:
   - nat
   - stun
   - turn
+image: /img/webrtc-ile-tarayicilar-12.png
 ---
+
+![webrtc-ile-tarayicilar-12](/img/webrtc-ile-tarayicilar-12.svg)
+
 
 Tarayıcıdan tarayıcıya görüntülü görüşme fikri kulağa sihir gibi gelir: video akışı merkezi bir medya sunucusundan geçmeden iki kullanıcı arasında akar. WebRTC bunu `getUserMedia`, `RTCPeerConnection` ve güvenli medya taşıma protokolleriyle mümkün kılar. Ancak internetin görünmez kapı bekçisi NAT yüzünden iki cihazın birbirini bulması çoğu zaman sandığınız kadar doğrudan değildir.
 ``

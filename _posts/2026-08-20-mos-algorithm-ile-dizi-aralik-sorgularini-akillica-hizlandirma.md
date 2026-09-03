@@ -8,9 +8,13 @@ tags:
   - mo's algorithm
   - algoritmalar
   - sqrt decomposition
+image: /img/mos-algorithm-ile-86.png
 ---
 
 Bir dizide çok sayıda aralık sorgusu geldiğinde, her sorgu için ilgili elemanları baştan sona gezmek ilk bakışta masum görünür. Ancak $N$ eleman ve $Q$ sorgu için bu yaklaşım $O(NQ)$ maliyet üretir; büyük veri setlerinde bilgisayarınızın fanına mini bir maraton koşturur. Mo’s Algorithm, sorguları çevrimiçi cevaplamak yerine önce toplar, sonra aralık sınırlarının mümkün olduğunca az hareket edeceği bir sıraya koyar. Böylece tekrar eden işi dramatik biçimde azaltır.
+
+
+![mos-algorithm-ile-86](/img/mos-algorithm-ile-86.svg)
 
 ``
 

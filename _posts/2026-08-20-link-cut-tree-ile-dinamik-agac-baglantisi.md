@@ -9,6 +9,7 @@ tags:
   - link-cut tree
   - dinamik ağaçlar
 toc: true
+image: /img/link-cut-tree-25.png
 ---
 
 Sabit bir ağaç üzerinde yol sorguları yapmak görece kolaydır; ancak kenarlar sürekli eklenip siliniyorsa klasik DFS, Euler turu veya ağır-hafif ayrıştırması kısa sürede zorlanır. Link-Cut Tree (LCT), tam bu hareketli dünyada devreye girer: Ormanı dinamik biçimde yönetir, iki düğümün bağlı olup olmadığını sorar, kenar koparır ve yeni bağlantılar kurar. Üstelik doğru kullanımda her işlem amortize olarak logaritmiktir.
@@ -28,6 +29,9 @@ Elimizde başlangıçta bir **orman** olduğunu düşünelim. Her bileşen çevr
 | DFS/BFS | $O(n)$ | $O(n)$ | Düşük |
 | Heavy-Light Decomposition | Yeniden kurulum gerekebilir | $O(\log^2 n)$ | Sınırlı |
 | Link-Cut Tree | Amortize $O(\log n)$ | Amortize $O(\log n)$ | Çok yüksek |
+
+![link-cut-tree-25](/img/link-cut-tree-25.svg)
+
 
 Buradaki kritik kelime **amortize**dir. Tek bir işlem bazen pahalı görünebilir; fakat uzun bir işlem dizisinde ortalama maliyet $O(\log n)$ seviyesinde kalır. Bu garanti, splay tree tabanlı yeniden düzenleme mekanizmasından gelir.
 

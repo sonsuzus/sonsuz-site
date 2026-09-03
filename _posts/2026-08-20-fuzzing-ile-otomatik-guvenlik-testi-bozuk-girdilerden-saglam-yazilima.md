@@ -9,9 +9,13 @@ tags:
   - siber güvenlik
   - yazılım testi
 toc: true
+image: /img/fuzzing-ile-otomatik-43.png
 ---
 
 Bir programın yalnızca beklenen kullanıcı davranışlarıyla çalışması, onun güvenli olduğu anlamına gelmez. Fuzzing; uygulamalara rastgele, sınır dışı, eksik veya biçimi bozulmuş girdiler göndererek çökme, beklenmeyen hata ve güvenlik açığı üreten davranışları bulmaya yarayan otomatik test yaklaşımıdır. Özellikle C/C++ gibi bellek yönetiminin geliştirici sorumluluğunda olduğu dillerde, görünmeyen köşe durumlarını yakalamak için son derece etkilidir.
+
+![fuzzing-ile-otomatik-43](/img/fuzzing-ile-otomatik-43.svg)
+
 ``
 
 ## Fuzzing'in temel mantığı

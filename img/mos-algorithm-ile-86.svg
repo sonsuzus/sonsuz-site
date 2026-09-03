@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6f9fea"/>
+      <stop offset="100%" stop-color="#806edb"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#68819b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5d7891" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="158" r="126" fill="#dcecf7" opacity="0.38"/>
+  <circle cx="320" cy="158" r="93" fill="#edf5fc" opacity="0.8"/>
+
+  <path d="M163 91 C191 91 201 111 220 125" fill="none" stroke="#8ba8c3" stroke-width="2.2"/>
+  <polygon points="220,125 211,122 214,132" fill="#8ba8c3"/>
+  <path d="M429 91 C407 91 398 111 383 125" fill="none" stroke="#8ba8c3" stroke-width="2.2"/>
+  <polygon points="383,125 388,132 392,122" fill="#8ba8c3"/>
+  <path d="M163 232 C190 232 202 211 220 195" fill="none" stroke="#8ba8c3" stroke-width="2.2"/>
+  <polygon points="220,195 214,188 211,198" fill="#8ba8c3"/>
+  <path d="M429 232 C407 232 398 211 383 195" fill="none" stroke="#8ba8c3" stroke-width="2.2"/>
+  <polygon points="383,195 392,198 388,188" fill="#8ba8c3"/>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="53" width="130" height="76" rx="17" fill="#fffdf8"/>
+    <rect x="34" y="53" width="130" height="76" rx="17" fill="none" stroke="#d8cfae"/>
+    <rect x="49" y="68" width="44" height="10" rx="5" fill="#f2c977"/>
+    <rect x="49" y="86" width="98" height="7" rx="3.5" fill="#dfe8f0"/>
+    <rect x="49" y="100" width="80" height="7" rx="3.5" fill="#dfe8f0"/>
+    <text x="104" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526476">Dizi ve Sorgular</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="476" y="53" width="130" height="76" rx="17" fill="#fffdf8"/>
+    <rect x="476" y="53" width="130" height="76" rx="17" fill="none" stroke="#d0c7eb"/>
+    <rect x="493" y="68" width="25" height="27" rx="5" fill="#c7b8ee"/>
+    <rect x="524" y="68" width="25" height="40" rx="5" fill="#a999df"/>
+    <rect x="555" y="68" width="25" height="18" rx="5" fill="#dacff5"/>
+    <text x="541" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526476">Blok Sıralama</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="194" width="130" height="76" rx="17" fill="#fbfffc"/>
+    <rect x="34" y="194" width="130" height="76" rx="17" fill="none" stroke="#b9d7c4"/>
+    <path d="M51 229 H145" stroke="#d4e5dc" stroke-width="8" stroke-linecap="round"/>
+    <path d="M74 229 H125" stroke="#79bd9c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M71 216 V241 M128 216 V241" stroke="#4e9679" stroke-width="2"/>
+    <polygon points="71,216 67,222 75,222" fill="#4e9679"/>
+    <polygon points="128,241 124,235 132,235" fill="#4e9679"/>
+    <text x="99" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526476">Kayan Pencere [L,R]</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="476" y="194" width="130" height="76" rx="17" fill="#fbfffc"/>
+    <rect x="476" y="194" width="130" height="76" rx="17" fill="none" stroke="#b8d8d7"/>
+    <circle cx="504" cy="226" r="15" fill="#92d0c9"/>
+    <text x="504" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">f</text>
+    <rect x="528" y="214" width="54" height="9" rx="4.5" fill="#bedfdd"/>
+    <rect x="528" y="231" width="39" height="9" rx="4.5" fill="#d7ecea"/>
+    <text x="541" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526476">Frekans ve Cevap</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="219" y="109" width="202" height="98" rx="25" fill="url(#core)"/>
+    <rect x="225" y="115" width="190" height="86" rx="20" fill="none" stroke="#ffffff" opacity="0.3"/>
+    <text x="320" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Mo Algoritması</text>
+    <text x="320" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf4ff">Çevrimdışı İşleme</text>
+    <rect x="257" y="175" width="126" height="17" rx="8.5" fill="#ffffff" opacity="0.2"/>
+    <text x="320" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">B ≈ √N</text>
+  </g>
+
+  <text x="320" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b8d">Az hareket • O(1) güncelleme • Statik aralıklar</text>
+</svg>

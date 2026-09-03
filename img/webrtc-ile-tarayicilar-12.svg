@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="peerA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#c8dcf7"/>
+    </linearGradient>
+    <linearGradient id="peerB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff5e6"/>
+      <stop offset="100%" stop-color="#c9e9d4"/>
+    </linearGradient>
+    <linearGradient id="server" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff2d8"/>
+      <stop offset="100%" stop-color="#f6dcaa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7891a6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7891a6" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="102" cy="40" r="72" fill="#dceeff" opacity="0.38"/>
+  <circle cx="554" cy="286" r="96" fill="#dff3dd" opacity="0.42"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42586b">WebRTC Bağlantı Yolları</text>
+
+  <!-- Signaling -->
+  <g filter="url(#shadow)">
+    <rect x="227" y="42" width="186" height="43" rx="15" fill="#eadfff" stroke="#cfbee9"/>
+    <circle cx="253" cy="63.5" r="11" fill="#cdb6ed"/>
+    <path d="M247 61 L253 57 L259 61 L253 65 Z M247 66 L253 70 L259 66" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="320" y="61" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#594878">Sinyalleşme</text>
+    <text x="320" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68567f">SDP ve ICE adayları</text>
+  </g>
+
+  <!-- signal paths -->
+  <path d="M227 69 C185 71 153 92 135 119" fill="none" stroke="#a483ca" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="137,111 128,121 140,119" fill="#a483ca"/>
+  <path d="M413 69 C455 71 487 92 505 119" fill="none" stroke="#a483ca" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="500,119 512,121 503,111" fill="#a483ca"/>
+
+  <!-- Peer left -->
+  <g filter="url(#shadow)">
+    <rect x="42" y="121" width="151" height="111" rx="20" fill="url(#peerA)" stroke="#aac5e5"/>
+    <rect x="61" y="141" width="43" height="35" rx="8" fill="#ffffff" opacity="0.82"/>
+    <rect x="66" y="147" width="33" height="20" rx="4" fill="#7fa8d5"/>
+    <path d="M77 167 L73 174 M88 167 L92 174 M70 174 H95" stroke="#6a8eb7" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="125" cy="153" r="8" fill="#89b0dd"/>
+    <path d="M119 166 C120 158 130 158 131 166" fill="none" stroke="#6c94c1" stroke-width="2" stroke-linecap="round"/>
+    <text x="125" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365675">Tarayıcı A</text>
+    <text x="125" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54728f">Kamera ve mikrofon</text>
+  </g>
+
+  <!-- Peer right -->
+  <g filter="url(#shadow)">
+    <rect x="447" y="121" width="151" height="111" rx="20" fill="url(#peerB)" stroke="#a8d3b6"/>
+    <rect x="466" y="141" width="43" height="35" rx="8" fill="#ffffff" opacity="0.82"/>
+    <rect x="471" y="147" width="33" height="20" rx="4" fill="#73b891"/>
+    <path d="M482 167 L478 174 M493 167 L497 174 M475 174 H500" stroke="#609b79" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="530" cy="153" r="8" fill="#80bf99"/>
+    <path d="M524 166 C525 158 535 158 536 166" fill="none" stroke="#609b79" stroke-width="2" stroke-linecap="round"/>
+    <text x="523" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34694b">Tarayıcı B</text>
+    <text x="523" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#548064">Kamera ve mikrofon</text>
+  </g>
+
+  <!-- NAT gates -->
+  <g filter="url(#softShadow)">
+    <rect x="202" y="137" width="48" height="76" rx="12" fill="#f1f5f9" stroke="#c3d0da"/>
+    <path d="M215 160 H237 M215 170 H237 M215 180 H237 M215 190 H237" stroke="#91a6b7" stroke-width="2" stroke-linecap="round"/>
+    <text x="226" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c7181">NAT</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="390" y="137" width="48" height="76" rx="12" fill="#f1f5f9" stroke="#c3d0da"/>
+    <path d="M403 160 H425 M403 170 H425 M403 180 H425 M403 190 H425" stroke="#91a6b7" stroke-width="2" stroke-linecap="round"/>
+    <text x="414" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c7181">NAT</text>
+  </g>
+
+  <!-- Direct media path -->
+  <path d="M193 156 H202 M250 156 H390 M438 156 H447" fill="none" stroke="#3d9bb3" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="381,151 390,156 381,161" fill="#3d9bb3"/>
+  <text x="320" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#277a91">Doğrudan P2P · SRTP</text>
+
+  <!-- STUN -->
+  <g filter="url(#softShadow)">
+    <rect x="68" y="260" width="150" height="40" rx="14" fill="#d9f1f5" stroke="#afd8df"/>
+    <circle cx="92" cy="280" r="10" fill="#85c7d2"/>
+    <path d="M88 280 H96 M92 276 V284" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="151" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#317585">STUN</text>
+    <text x="151" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c8794">Genel adres keşfi</text>
+  </g>
+  <path d="M125 232 C125 244 127 250 133 260" fill="none" stroke="#71b8c4" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="128,253 133,260 136,251" fill="#71b8c4"/>
+
+  <!-- TURN -->
+  <g filter="url(#shadow)">
+    <rect x="251" y="251" width="138" height="51" rx="16" fill="url(#server)" stroke="#e2c589"/>
+    <circle cx="278" cy="276.5" r="12" fill="#dfb864"/>
+    <path d="M272 276 H284 M278 270 V283" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="331" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#856126">TURN Rölesi</text>
+    <text x="331" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#98753a">Yedek medya yolu</text>
+  </g>
+
+  <!-- TURN fallback routes -->
+  <path d="M178 232 C193 265 220 278 251 278" fill="none" stroke="#d29d48" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <polygon points="242,273 251,278 242,283" fill="#d29d48"/>
+  <path d="M389 278 C420 278 447 265 462 232" fill="none" stroke="#d29d48" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <polygon points="453,283 462,278 453,273" fill="#d29d48"/>
+
+  <!-- Security badge -->
+  <g filter="url(#softShadow)">
+    <rect x="463" y="260" width="112" height="40" rx="14" fill="#e7e4fb" stroke="#c9c1e9"/>
+    <path d="M484 269 L493 266 L502 269 V277 C502 283 498 287 493 290 C488 287 484 283 484 277 Z" fill="#9b8ccd"/>
+    <path d="M490 278 L492 280 L497 274" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="536" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#63558c">DTLS-SRTP</text>
+    <text x="536" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#766a9c">Şifreli medya</text>
+  </g>
+</svg>

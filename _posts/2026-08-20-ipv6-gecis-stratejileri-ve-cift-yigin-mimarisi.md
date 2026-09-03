@@ -9,6 +9,7 @@ tags:
   - ağ yönetimi
   - dual stack
 toc: true
+image: /img/ipv6-gecis-stratejileri-36.png
 ---
 
 IPv4 adreslerinin tükenmesi, interneti bir gecede IPv6’ya taşımadı; bunun yerine iki protokolün uzun süre birlikte yaşadığı hibrit bir dönem başlattı. Çift yığın (dual stack) mimarisi, istemci, sunucu ve ağ cihazlarının aynı anda hem IPv4 hem de IPv6 adresi taşımasını sağlar. Doğru tasarlandığında kullanıcılar fark etmeden modern internete bağlanır; yanlış tasarlandığında ise DNS, güvenlik duvarı ve gecikme sorunları küçük bir ağ macerasını büyük bir operasyona dönüştürebilir.
@@ -66,3 +67,6 @@ Bir servisi IPv6 üzerinden yayınlamak için DNS’e `AAAA` kaydı eklenir. Fak
 Güvenlik duvarında IPv4 kurallarını kopyalamak da yeterli değildir. ICMPv6 paketleri—özellikle Neighbor Discovery ve Packet Too Big mesajları—IPv6’nın sağlıklı işlemesi için gereklidir. Bunları tamamen engellemek, bağlantıların gizemli biçimde bozulmasına yol açabilir. Son olarak loglar, SIEM kuralları, NetFlow/IPFIX kayıtları ve izleme panelleri hem IPv4 hem IPv6 kaynak adreslerini anlayabilmelidir.
 
 Başarılı geçişin özeti basittir: önce envanter çıkarın, sonra adres planlayın, küçük bir pilotla test edin ve her aşamayı ölçün. Çift yığın, geçici bir karmaşa değil; IPv6-odaklı geleceğe kontrollü bir köprüdür.
+
+![ipv6-gecis-stratejileri-36](/img/ipv6-gecis-stratejileri-36.svg)
+
