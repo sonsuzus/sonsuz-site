@@ -9,6 +9,7 @@ tags:
   - vpn
   - ağ güvenliği
 toc: true
+image: /img/wireguard-ile-modern-95.png
 ---
 
 Modern bir VPN kurmak, eskiden sertifika zincirleri, karmaşık şifre paketleri ve sayfalarca yapılandırma dosyası demekti. WireGuard bu yaklaşımı bilinçli biçimde tersine çevirir: küçük kod tabanı, az sayıda kriptografik tercih ve UDP üzerinde çalışan yalın bir tünel. Sonuç; yönetimi kolay, yüksek performanslı ve özellikle sunucu-istemci ya da site-to-site senaryolarında çok güçlü bir sanal özel ağ altyapısıdır.
@@ -79,3 +80,6 @@ Tam tünel ile bölünmüş tünel seçimi, performans kadar gizlilik kararidir.
 | Bölünmüş tünel | Daha düşük gecikme, az sunucu yükü | Yerel internet trafiği VPN dışındadır |
 
 Son olarak, UDP portunu güvenlik duvarında sınırlayın, her cihaz için ayrı anahtar üretin, kullanılmayan eşleri silin ve düzenli güncelleme uygulayın. WireGuard'ın sadeliği güçlü bir başlangıçtır; gerçek güvenlik ise doğru yönlendirme, sağlam anahtar yönetimi ve dikkatli operasyonla tamamlanır.
+
+![wireguard-ile-modern-95](/img/wireguard-ile-modern-95.svg)
+

@@ -8,9 +8,13 @@ tags:
   - paxos
   - dağıtık sistemler
   - hata toleransı
+image: /img/paxos-algoritmasini-anlamak-84.png
 ---
 
 Dağıtık sistemlerde en zor soru çoğu zaman “veri nerede?” değil, “herkes aynı kararı verdi mi?” sorusudur. Ağ gecikebilir, makineler kapanabilir ve mesajlar kaybolabilir; buna rağmen banka bakiyesinin, lider seçiminin ya da sipariş durumunun tek bir doğru geçmişi olmalıdır. Paxos, düğümlerin çökebildiği bu kaotik ortamda ortak bir değerde uzlaşmayı sağlayan klasik consensus algoritmasıdır.
+
+![paxos-algoritmasini-anlamak-84](/img/paxos-algoritmasini-anlamak-84.svg)
+
 ``
 
 Paxos’un temel hedefi **güvenliktir**: Sistem iki farklı değeri aynı anda seçilmiş kabul etmemelidir. Canlılık, yani sonunda karar verebilmek ise ağın sonunda sakinleşmesi ve yeterli sayıda düğümün erişilebilir olması gibi varsayımlara bağlıdır. Bu ayrım önemlidir; Paxos, sonsuz ağ bölünmesinde sihirli biçimde ilerleyemez, fakat yanlış bir karar da üretmez.

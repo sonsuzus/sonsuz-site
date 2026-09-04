@@ -9,6 +9,7 @@ tags:
   - veri yapıları
   - javascript
 toc: true
+image: /img/trie-ile-otomatik-43.png
 ---
 
 Bir arama kutusuna `pro` yazdığınızda saniyeler değil, milisaniyeler içinde `programlama`, `proje` ve `profil` önerilerinin belirmesi sihir değildir: sahnenin arkasında çoğu zaman Trie veri yapısı çalışır. Prefix tree olarak da bilinen Trie, kelimeleri karakter karakter dallandırarak saklar. Böylece tüm kelime listesini her tuş vuruşunda baştan sona dolaşmak yerine, yalnızca yazılan öneke karşılık gelen dalı takip ederiz.
@@ -24,6 +25,9 @@ Bir kelimenin uzunluğu $L$ ise ekleme ve arama işlemlerinin zaman maliyeti gen
 | Dizi + filtre | $O(N \times P)$ | Uygulaması çok kolay | Büyük sözlüklerde yavaşlar |
 | Sıralı dizi + ikili arama | $O(\log N + K)$ | Bellek açısından verimli | Ekleme maliyetlidir |
 | Trie | $O(P + K)$ | Anlık öneriler için idealdir | Düğüm sayısı bellek tüketebilir |
+
+![trie-ile-otomatik-43](/img/trie-ile-otomatik-43.svg)
+
 
 ## JavaScript ile çalışan bir Trie
 

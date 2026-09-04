@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="trie" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7efff"/>
+      <stop offset="1" stop-color="#d8e8fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d8398" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#60748a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="575" cy="45" r="72" fill="#dff2e8" opacity="0.48"/>
+  <circle cx="68" cy="285" r="94" fill="#e5edff" opacity="0.45"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31445c">Aho-Corasick · Tek Geçişte Çoklu Arama</text>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="55" width="118" height="143" rx="16" fill="#fffdf9"/>
+  </g>
+  <text x="83" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5a4967">Desenler</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="94" width="82" height="20" rx="10" fill="#f6dff0"/>
+    <rect x="42" y="122" width="82" height="20" rx="10" fill="#f9e7be"/>
+    <rect x="42" y="150" width="82" height="20" rx="10" fill="#d9f0e6"/>
+  </g>
+  <text x="83" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60445b">he · she</text>
+  <text x="83" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655332">his</text>
+  <text x="83" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c6657">hers</text>
+  <text x="83" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718092">Ortak ön ekler</text>
+
+  <path d="M143 126 L164 126" fill="none" stroke="#8296b2" stroke-width="2"/>
+  <polygon points="164,126 157,122 157,130" fill="#8296b2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="165" y="48" width="263" height="165" rx="18" fill="url(#trie)"/>
+  </g>
+  <text x="186" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405775">Trie ve başarısızlık bağları</text>
+
+  <path d="M211 113 L255 91 L299 91" fill="none" stroke="#6c86a5" stroke-width="2"/>
+  <path d="M211 113 L255 136 L299 136 L344 112" fill="none" stroke="#6c86a5" stroke-width="2"/>
+  <path d="M211 113 L255 169 L299 169" fill="none" stroke="#6c86a5" stroke-width="2"/>
+  <path d="M299 91 L344 91 L389 91" fill="none" stroke="#6c86a5" stroke-width="2"/>
+  <path d="M344 112 L389 136" fill="none" stroke="#6c86a5" stroke-width="2"/>
+  <path d="M389 91 L389 169" fill="none" stroke="#6c86a5" stroke-width="2"/>
+
+  <path d="M388 161 C355 191 272 193 257 146" fill="none" stroke="#d87891" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="257,146 263,151 264,143" fill="#d87891"/>
+  <path d="M343 127 C328 154 305 154 298 145" fill="none" stroke="#d87891" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="298,145 304,149 304,141" fill="#d87891"/>
+
+  <g filter="url(#smallShadow)">
+    <circle cx="211" cy="113" r="15" fill="#ffffff"/>
+    <circle cx="255" cy="91" r="14" fill="#ffffff"/>
+    <circle cx="255" cy="136" r="14" fill="#ffffff"/>
+    <circle cx="255" cy="169" r="14" fill="#ffffff"/>
+    <circle cx="299" cy="91" r="14" fill="#ffffff"/>
+    <circle cx="299" cy="136" r="14" fill="#ffffff"/>
+    <circle cx="299" cy="169" r="14" fill="#ffffff"/>
+    <circle cx="344" cy="91" r="14" fill="#fff3c9"/>
+    <circle cx="344" cy="112" r="14" fill="#fff3c9"/>
+    <circle cx="389" cy="91" r="14" fill="#d8f1e4"/>
+    <circle cx="389" cy="136" r="14" fill="#d8f1e4"/>
+    <circle cx="389" cy="169" r="14" fill="#d8f1e4"/>
+  </g>
+
+  <text x="211" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405775">∅</text>
+  <text x="255" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405775">h</text>
+  <text x="255" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405775">s</text>
+  <text x="255" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405775">h</text>
+  <text x="299" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405775">e</text>
+  <text x="299" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405775">h</text>
+  <text x="299" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405775">i</text>
+  <text x="344" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6b5727">r</text>
+  <text x="344" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6b5727">e</text>
+  <text x="389" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6a57">s</text>
+  <text x="389" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6a57">e</text>
+  <text x="389" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6a57">s</text>
+
+  <line x1="187" y1="198" x2="207" y2="198" stroke="#d87891" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="214" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d5368">Başarısızlık bağı</text>
+
+  <path d="M429 130 L449 130" fill="none" stroke="#8296b2" stroke-width="2"/>
+  <polygon points="449,130 442,126 442,134" fill="#8296b2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="450" y="55" width="166" height="143" rx="16" fill="#fffdf9"/>
+  </g>
+  <text x="533" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476155">Metin akışı</text>
+
+  <rect x="470" y="96" width="126" height="31" rx="9" fill="#edf5ff"/>
+  <text x="533" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d5674">u · s · h · e · r · s</text>
+
+  <path d="M533 131 L533 143" fill="none" stroke="#7aa58d" stroke-width="2"/>
+  <polygon points="533,143 529,136 537,136" fill="#7aa58d"/>
+
+  <rect x="470" y="147" width="126" height="31" rx="9" fill="#dff2e8"/>
+  <text x="533" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426b58">Tek geçiş</text>
+
+  <g filter="url(#shadow)">
+    <rect x="86" y="239" width="468" height="57" rx="17" fill="#ffffff"/>
+  </g>
+
+  <path d="M135 264 L185 264" fill="none" stroke="#8296b2" stroke-width="2"/>
+  <polygon points="185,264 178,260 178,268" fill="#8296b2"/>
+  <path d="M303 264 L353 264" fill="none" stroke="#8296b2" stroke-width="2"/>
+  <polygon points="353,264 346,260 346,268" fill="#8296b2"/>
+
+  <circle cx="116" cy="264" r="18" fill="#e8efff"/>
+  <text x="116" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49628c">BFS</text>
+  <text x="244" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d647e">Otomat kurulumu</text>
+  <text x="244" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738194">O(P)</text>
+  <circle cx="386" cy="264" r="18" fill="#dff2e8"/>
+  <text x="386" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46715b">✓</text>
+  <text x="473" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d647e">Eşleşmeler</text>
+  <text x="473" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738194">O(N + Z)</text>
+</svg>

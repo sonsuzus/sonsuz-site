@@ -8,9 +8,13 @@ tags:
   - smt
   - z3
   - kısıt programlama
+image: /img/smt-cozuculeriyle-kisit-35.png
 ---
 
 Karmaşık bir planı elle hazırlamak, binlerce olasılık içinden doğru kombinasyonu gözle seçmeye benzer: kısa süre sonra kahve biter, sabır biter, hata payı ise bitmez. SMT (Satisfiability Modulo Theories) çözücüleri bu noktada devreye girer. Z3 gibi araçlar, mantıksal kuralları ve matematiksel ilişkileri modele dönüştürerek bir problemin çözümü olup olmadığını otomatik biçimde araştırır; uygun olduğunda da somut bir çözüm üretir.
+
+![smt-cozuculeriyle-kisit-35](/img/smt-cozuculeriyle-kisit-35.svg)
+
 ``
 
 SMT'nin temelinde SAT problemi bulunur. SAT, yalnızca doğru/yanlış değerleri alan önermelerin aynı anda sağlanıp sağlanamayacağını sorar. Örneğin $A \lor B$ ve $\neg A$ ifadeleri birlikte sağlanabilir; çözüm olarak $A = false$, $B = true$ seçilir. SMT ise bu dünyayı genişletir: tamsayılar, reel sayılar, diziler, bit vektörleri, kümeler ve fonksiyonlar gibi teorileri mantıksal ifadelerle birleştirir. Böylece "iki görev aynı makinede çakışmasın" veya "bütçe 10.000'i geçmesin" gibi gerçek hayat kuralları ifade edilebilir.

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="collector" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5dcff"/>
+      <stop offset="100%" stop-color="#d4c7f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#50647c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#50647c" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="49" r="80" fill="#dff2f5" opacity="0.48"/>
+  <circle cx="587" cy="282" r="93" fill="#e7dcfa" opacity="0.38"/>
+
+  <text x="28" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40526b">Dağıtık İstek Yolculuğu</text>
+  <text x="485" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40526b">Gözlemlenebilirlik</text>
+
+  <!-- upper trace line -->
+  <path d="M74 91 H137 M187 91 H250 M300 91 H363 M413 91 H476" fill="none" stroke="#8ba2b6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="137,86 147,91 137,96" fill="#8ba2b6"/>
+  <polygon points="250,86 260,91 250,96" fill="#8ba2b6"/>
+  <polygon points="363,86 373,91 363,96" fill="#8ba2b6"/>
+  <polygon points="476,86 486,91 476,96" fill="#8ba2b6"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="27" y="61" width="76" height="60" rx="14" fill="#d7edf8"/>
+    <rect x="140" y="61" width="76" height="60" rx="14" fill="#dff3e3"/>
+    <rect x="253" y="61" width="76" height="60" rx="14" fill="#ffe8c8"/>
+    <rect x="366" y="61" width="76" height="60" rx="14" fill="#fde0e4"/>
+    <rect x="479" y="61" width="76" height="60" rx="14" fill="#dce5fb"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#33475b">
+    <text x="65" y="86" font-weight="700">API</text>
+    <text x="65" y="103">Geçidi</text>
+    <text x="178" y="86" font-weight="700">Kimlik</text>
+    <text x="178" y="103">Servisi</text>
+    <text x="291" y="86" font-weight="700">Sipariş</text>
+    <text x="291" y="103">Servisi</text>
+    <text x="404" y="86" font-weight="700">Ödeme</text>
+    <text x="404" y="103">Servisi</text>
+    <text x="517" y="86" font-weight="700">Veri</text>
+    <text x="517" y="103">Tabanı</text>
+  </g>
+
+  <!-- trace id -->
+  <rect x="221" y="132" width="198" height="25" rx="12" fill="#ffffff" opacity="0.82"/>
+  <text x="320" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#65758a">trace_id ile korunan bağlam</text>
+  <path d="M320 121 V131" fill="none" stroke="#879cb0" stroke-width="2"/>
+  <polygon points="315,130 320,137 325,130" fill="#879cb0"/>
+
+  <!-- signal connectors -->
+  <path d="M132 191 C166 191 174 196 205 205" fill="none" stroke="#74a6bd" stroke-width="2"/>
+  <polygon points="196,199 207,206 193,209" fill="#74a6bd"/>
+  <path d="M132 224 H202" fill="none" stroke="#7cb18b" stroke-width="2"/>
+  <polygon points="194,219 205,224 194,229" fill="#7cb18b"/>
+  <path d="M132 257 C165 257 177 248 205 241" fill="none" stroke="#c18e9b" stroke-width="2"/>
+  <polygon points="195,237 207,241 197,247" fill="#c18e9b"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="176" width="104" height="31" rx="11" fill="#d8eff8"/>
+    <rect x="28" y="209" width="104" height="31" rx="11" fill="#dff3e4"/>
+    <rect x="28" y="242" width="104" height="31" rx="11" fill="#fbe1e6"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355069">
+    <text x="50" y="197" font-weight="700">İz</text>
+    <text x="73" y="197">span yolu</text>
+    <text x="50" y="230" font-weight="700">Metrik</text>
+    <text x="91" y="230">RED</text>
+    <text x="50" y="263" font-weight="700">Log</text>
+    <text x="76" y="263">bağlam</text>
+  </g>
+
+  <!-- collector -->
+  <g filter="url(#shadow)">
+    <rect x="205" y="174" width="166" height="103" rx="20" fill="url(#collector)"/>
+    <rect x="220" y="188" width="136" height="26" rx="9" fill="#ffffff" opacity="0.48"/>
+  </g>
+  <text x="288" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#453c68">OTel Collector</text>
+  <path d="M230 229 H346" fill="none" stroke="#9c8fc0" stroke-width="1.5" opacity="0.75"/>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#554d73">
+    <text x="245" y="250">Al</text>
+    <text x="288" y="250">Filtrele</text>
+    <text x="334" y="250">Yönlendir</text>
+  </g>
+  <circle cx="245" cy="228" r="4" fill="#7fb8cc"/>
+  <circle cx="288" cy="228" r="4" fill="#81bd91"/>
+  <circle cx="334" cy="228" r="4" fill="#d695a3"/>
+
+  <!-- output connector -->
+  <path d="M371 225 H421" fill="none" stroke="#8b7eaf" stroke-width="2.5"/>
+  <polygon points="413,219 424,225 413,231" fill="#8b7eaf"/>
+
+  <!-- observability destinations -->
+  <g filter="url(#smallShadow)">
+    <rect x="424" y="165" width="184" height="42" rx="14" fill="#ffffff"/>
+    <rect x="424" y="216" width="184" height="42" rx="14" fill="#ffffff"/>
+    <rect x="424" y="267" width="184" height="32" rx="14" fill="#ffffff"/>
+  </g>
+  <circle cx="447" cy="186" r="10" fill="#9ed8ea"/>
+  <path d="M442 186 H452 M447 181 V191" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"/>
+  <circle cx="447" cy="237" r="10" fill="#a9d9b0"/>
+  <path d="M441 240 L445 234 L449 238 L454 230" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="447" cy="283" r="10" fill="#efb7c0"/>
+  <path d="M442 280 H452 M442 284 H450 M442 288 H447" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405269">
+    <text x="466" y="183" font-weight="700">İz görünümü</text>
+    <text x="466" y="198">Gecikme ve bağımlılık</text>
+    <text x="466" y="234" font-weight="700">Metrik paneli</text>
+    <text x="466" y="249">p95 • hata oranı</text>
+    <text x="466" y="287" font-weight="700">İlişkili loglar</text>
+  </g>
+</svg>

@@ -10,6 +10,7 @@ tags:
   - performans
   - c++
   - avx
+image: /img/simd-programlama-ile-80.png
 ---
 
 Modern işlemciler yalnızca daha yüksek saat hızlarıyla değil, aynı anda birden fazla veriyi işleyebilme yetenekleriyle de hız kazanır. SIMD (*Single Instruction, Multiple Data*), yani Tek Komut Çoklu Veri yaklaşımı, özellikle dizi, matris, görüntü, ses ve bilimsel hesaplama gibi birbirinden bağımsız sayısal işlemlerde büyük performans artışı sağlar. Fikir basittir: Dört sayıyı tek tek toplamak yerine, dört sayıyı taşıyan bir vektör kaydı üzerinde tek toplama komutu çalıştırılır.
@@ -65,3 +66,6 @@ SIMD için uygun döngüler genellikle şu özelliği taşır: Her eleman kendi 
 | Ölçüm yapıldı mı? | Kazancı varsaymak yerine profil çıkararak doğrular. |
 
 Sonuç olarak SIMD, algoritmayı değiştirmeden veri düzeyinde paralellik yakalamanın güçlü yoludur. Önce temiz, öngörülebilir döngüler yazın; ardından derleyicinin vektörleştirme raporlarını ve gerçek benchmark sonuçlarını inceleyin. Doğru iş yükünde SIMD, işlemcinizin gizli çoklu çalışma şeritlerini görünür hale getirir.
+
+![simd-programlama-ile-80](/img/simd-programlama-ile-80.svg)
+

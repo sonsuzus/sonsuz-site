@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="liderGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3cc"/>
+      <stop offset="100%" stop-color="#ffe29a"/>
+    </linearGradient>
+    <linearGradient id="takipGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5f2ff"/>
+      <stop offset="100%" stop-color="#cfe7fb"/>
+    </linearGradient>
+    <linearGradient id="istemciGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eee7ff"/>
+      <stop offset="100%" stop-color="#ddd1fb"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#6c8194" flood-opacity="0.20"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#6c8194" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="320" cy="154" r="116" fill="#d9eff0" opacity="0.28"/>
+  <circle cx="320" cy="154" r="88" fill="none" stroke="#a8d5d6" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.65"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395064">Raft Konsensüsü</text>
+  <text x="612" y="29" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688092">Tek lider • Çoğunluk onayı</text>
+
+  <!-- İstemci -->
+  <g filter="url(#golge)">
+    <rect x="28" y="126" width="112" height="57" rx="16" fill="url(#istemciGrad)" stroke="#c7b8ed"/>
+    <circle cx="52" cy="151" r="12" fill="#8d77c9" opacity="0.22"/>
+    <path d="M47 151h10M52 146v10" stroke="#765caf" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="76" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#493a6e">İstemci</text>
+    <text x="76" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#67588b">Yazma isteği</text>
+  </g>
+
+  <!-- İstemci -> Lider -->
+  <path d="M142 154 C161 154 170 154 187 154" fill="none" stroke="#7b68af" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="187,154 178,149 178,159" fill="#7b68af"/>
+  <text x="163" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655487">Komut</text>
+
+  <!-- Lider -->
+  <g filter="url(#golge)">
+    <rect x="191" y="104" width="151" height="101" rx="21" fill="url(#liderGrad)" stroke="#e8bc5c"/>
+    <rect x="212" y="120" width="109" height="23" rx="10" fill="#fff9e9" opacity="0.76"/>
+    <circle cx="229" cy="131.5" r="6" fill="#e5a82f"/>
+    <text x="244" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#705018">LİDER</text>
+    <path d="M218 163h97" stroke="#d5a74b" stroke-width="1.2" opacity="0.65"/>
+    <text x="266.5" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765923">Günlük: 42</text>
+    <text x="266.5" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765923">Sırala ve çoğalt</text>
+  </g>
+
+  <!-- Liderden bağlantılar -->
+  <path d="M339 121 C370 96 394 81 424 73" fill="none" stroke="#6aa1b5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="424,73 415,70 418,79" fill="#6aa1b5"/>
+  <path d="M344 146 C373 143 394 143 425 143" fill="none" stroke="#6aa1b5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="425,143 416,138 416,148" fill="#6aa1b5"/>
+  <path d="M339 185 C370 212 396 229 424 238" fill="none" stroke="#6aa1b5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="424,238 416,231 413,240" fill="#6aa1b5"/>
+
+  <text x="381" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#548395">Kayıt</text>
+  <text x="384" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#548395">Kalp atışı</text>
+  <text x="382" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#548395">Kayıt</text>
+
+  <!-- Takipçi üst -->
+  <g filter="url(#hafifGolge)">
+    <rect x="428" y="42" width="138" height="61" rx="16" fill="url(#takipGrad)" stroke="#a8cee1"/>
+    <circle cx="451" cy="68" r="10" fill="#69a5c2" opacity="0.28"/>
+    <circle cx="451" cy="68" r="4" fill="#5794b3"/>
+    <text x="471" y="68" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365e72">Takipçi A</text>
+    <text x="471" y="85" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55788a">Günlük kopyası</text>
+  </g>
+
+  <!-- Takipçi orta -->
+  <g filter="url(#hafifGolge)">
+    <rect x="442" y="113" width="138" height="61" rx="16" fill="url(#takipGrad)" stroke="#a8cee1"/>
+    <circle cx="465" cy="139" r="10" fill="#69a5c2" opacity="0.28"/>
+    <circle cx="465" cy="139" r="4" fill="#5794b3"/>
+    <text x="485" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365e72">Takipçi B</text>
+    <text x="485" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55788a">Günlük kopyası</text>
+  </g>
+
+  <!-- Takipçi alt -->
+  <g filter="url(#hafifGolge)">
+    <rect x="428" y="210" width="138" height="61" rx="16" fill="url(#takipGrad)" stroke="#a8cee1"/>
+    <circle cx="451" cy="236" r="10" fill="#69a5c2" opacity="0.28"/>
+    <circle cx="451" cy="236" r="4" fill="#5794b3"/>
+    <text x="471" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365e72">Takipçi C</text>
+    <text x="471" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55788a">Günlük kopyası</text>
+  </g>
+
+  <!-- ACK dönüşleri -->
+  <path d="M427 88 C397 102 372 116 346 128" fill="none" stroke="#7eb37b" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <polygon points="346,128 352,120 356,129" fill="#7eb37b"/>
+  <path d="M441 160 C407 168 379 168 346 165" fill="none" stroke="#7eb37b" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <polygon points="346,165 354,160 353,170" fill="#7eb37b"/>
+  <path d="M427 249 C397 231 369 208 343 188" fill="none" stroke="#7eb37b" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <polygon points="343,188 353,188 347,196" fill="#7eb37b"/>
+
+  <!-- Quorum kartı -->
+  <g filter="url(#golge)">
+    <rect x="114" y="241" width="246" height="54" rx="16" fill="#e7f5e8" stroke="#aed6ae"/>
+    <circle cx="141" cy="268" r="15" fill="#8abd89" opacity="0.25"/>
+    <path d="M134 268l5 5 10-11" fill="none" stroke="#4b8b50" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="169" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397044">Çoğunluk: 3 / 5</text>
+    <text x="169" y="281" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527c58">Onaylandı → Kesinleştir</text>
+  </g>
+
+  <!-- Lider -> quorum -->
+  <path d="M268 208 L268 237" fill="none" stroke="#5b9a62" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="268,237 263,228 273,228" fill="#5b9a62"/>
+
+  <!-- Kenar bilgi -->
+  <g opacity="0.92">
+    <rect x="580" y="44" width="36" height="26" rx="10" fill="#f5e8e8" stroke="#e7c1c1"/>
+    <path d="M591 57h14" stroke="#be7474" stroke-width="2" stroke-linecap="round"/>
+    <text x="598" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b6767">Arıza</text>
+  </g>
+</svg>

@@ -8,9 +8,13 @@ tags:
   - algoritmalar
   - metin işleme
   - aho-corasick
+image: /img/aho-corasick-algoritmasi-67.png
 ---
 
 Bir metinde tek bir kelime aramak kolaydır; `indexOf`, regex veya KMP çoğu zaman yeterlidir. Peki bir log akışında binlerce zararlı imzayı, bir sözlükte binlerce anahtar sözcüğü ya da bir DNA dizisinde çok sayıda motifi aynı anda bulmak gerekirse? Her kelime için metni yeniden taramak, büyüyen veriyle birlikte pahalılaşır. Aho-Corasick, bu problemi bir trie ve akıllı geri dönüş bağlantılarıyla tek geçişte çözen klasik çoklu örüntü arama algoritmasıdır.
+
+![aho-corasick-algoritmasi-67](/img/aho-corasick-algoritmasi-67.svg)
+
 ``
 
 Algoritmanın teorik kalbinde **trie** bulunur. Trie, ortak ön ekleri paylaşan kelimeleri ağaç biçiminde saklar. Örneğin `he`, `she`, `his` ve `hers` kelimeleri aynı yapıdaki bazı düğümleri kullanır. Ancak trie tek başına yeterli değildir: Metinde bir karakter uyuşmadığında köke dönmek, daha önce elde edilen bilgiyi çöpe atar. Aho-Corasick bu kaybı **failure (başarısızlık)** bağlantılarıyla önler.

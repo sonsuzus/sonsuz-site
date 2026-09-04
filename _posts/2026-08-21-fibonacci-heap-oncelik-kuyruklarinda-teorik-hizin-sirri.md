@@ -9,7 +9,11 @@ tags:
   - algoritmalar
   - öncelik kuyruğu
   - fibonacci heap
+image: /img/fibonacci-heap-oncelik-88.png
 ---
+
+![fibonacci-heap-oncelik-88](/img/fibonacci-heap-oncelik-88.svg)
+
 
 Öncelik kuyruğu denince çoğumuzun aklına ikili yığın (binary heap) gelir: eleman ekle, en küçüğü al, işlem tamam. Ancak Dijkstra veya Prim gibi algoritmalarda bazı anahtarların değeri sürekli azaltılıyorsa, teorik olarak daha iddialı bir oyuncu sahneye çıkar: **Fibonacci Heap**. Bu veri yapısı, bazı pahalı işleri erteleyerek özellikle `decrease-key` operasyonunu amortismanlı olarak son derece ucuz hâle getirir.
 ``

@@ -9,9 +9,13 @@ tags:
   - grafana
   - devops
 toc: true
+image: /img/prometheus-ve-grafana-92.png
 ---
 
 Bir uygulamanın çalışıyor olması, sağlıklı çalıştığı anlamına gelmez. Kullanıcılar yavaşlama hissetmeden, disk dolmadan veya hata oranı büyümeden önce sinyal almak için gözlemlenebilirliğe ihtiyaç duyarız. Prometheus metrikleri toplayan zaman serisi veritabanı ve sorgu motorudur; Grafana ise bu sayıları anlaşılır grafiklere, alarmlara ve panolara dönüştürür. İkili birlikte çalıştığında sunucudan API'ye, veritabanından iş kuyruğuna kadar sistemin nabzını izlemeyi mümkün kılar.
+
+![prometheus-ve-grafana-92](/img/prometheus-ve-grafana-92.svg)
+
 ``
 
 ## Zaman serisi verisi neden farklıdır?

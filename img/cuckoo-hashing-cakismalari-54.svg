@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9eaff"/>
+      <stop offset="1" stop-color="#ccefdc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71809a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="48" r="62" fill="#dceeff" opacity="0.5"/>
+  <circle cx="578" cy="276" r="86" fill="#dff3df" opacity="0.45"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40526c">Cuckoo Hashing</text>
+  <text x="32" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718098">İki yuva, öngörülebilir arama</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="91" width="124" height="129" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496078">Yeni anahtar</text>
+  <rect x="48" y="135" width="84" height="35" rx="11" fill="#dcecff"/>
+  <text x="90" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#366494">K</text>
+  <text x="90" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708098">h₁(K) ve h₂(K)</text>
+
+  <path d="M153 129 C176 112 180 101 205 101" fill="none" stroke="#79a4d5" stroke-width="2.5"/>
+  <polygon points="205,101 195,96 197,106" fill="#79a4d5"/>
+  <path d="M153 177 C177 190 181 210 205 210" fill="none" stroke="#75b99a" stroke-width="2.5"/>
+  <polygon points="205,210 196,204 196,215" fill="#75b99a"/>
+
+  <g filter="url(#shadow)">
+    <rect x="208" y="69" width="183" height="67" rx="16" fill="#ffffff"/>
+    <rect x="208" y="176" width="183" height="67" rx="16" fill="#ffffff"/>
+  </g>
+
+  <rect x="222" y="82" width="43" height="41" rx="10" fill="#dcecff"/>
+  <text x="243.5" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6795">h₁</text>
+  <text x="280" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6074">Aday yuva 1</text>
+  <rect x="280" y="102" width="94" height="18" rx="7" fill="#f7cfd1"/>
+  <text x="327" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a505b">Dolu · A</text>
+
+  <rect x="222" y="189" width="43" height="41" rx="10" fill="#d9f1e4"/>
+  <text x="243.5" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34785b">h₂</text>
+  <text x="280" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6074">Aday yuva 2</text>
+  <rect x="280" y="209" width="94" height="18" rx="7" fill="#d9f1e4"/>
+  <text x="327" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39775b">Boş yuva</text>
+
+  <path d="M392 102 C420 102 421 132 444 145" fill="none" stroke="#e29298" stroke-width="2.5"/>
+  <polygon points="444,145 434,139 436,151" fill="#e29298"/>
+  <path d="M392 210 C419 210 421 181 444 169" fill="none" stroke="#62ae89" stroke-width="2.5"/>
+  <polygon points="444,169 435,162 434,174" fill="#62ae89"/>
+
+  <g filter="url(#shadow)">
+    <rect x="445" y="83" width="164" height="150" rx="20" fill="url(#core)"/>
+  </g>
+  <text x="527" y="109" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36566d">Yer değiştirme</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="468" y="125" width="116" height="29" rx="9" fill="#ffffff"/>
+    <rect x="468" y="165" width="116" height="29" rx="9" fill="#ffffff"/>
+  </g>
+  <text x="526" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6173">K yerleşir</text>
+  <text x="526" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6173">A diğer yuvaya</text>
+  <path d="M526 155 L526 162" stroke="#6c9a86" stroke-width="2"/>
+  <polygon points="526,165 521,158 531,158" fill="#6c9a86"/>
+
+  <path d="M526 233 L526 258" stroke="#8194aa" stroke-width="2"/>
+  <polygon points="526,262 521,255 531,255" fill="#8194aa"/>
+  <g filter="url(#smallShadow)">
+    <rect x="435" y="263" width="182" height="34" rx="13" fill="#ffffff"/>
+  </g>
+  <circle cx="456" cy="280" r="8" fill="#8ccea9"/>
+  <path d="M452 280 L455 283 L461 276" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+  <text x="470" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426577">Arama: en fazla 2 erişim</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="29" y="260" width="357" height="38" rx="14" fill="#ffffff"/>
+  </g>
+  <circle cx="51" cy="279" r="9" fill="#f4c66b"/>
+  <text x="51" y="283" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#815d1e">!</text>
+  <text x="68" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596d80">Döngü olursa: tabloyu büyüt ve yeniden hashle</text>
+</svg>

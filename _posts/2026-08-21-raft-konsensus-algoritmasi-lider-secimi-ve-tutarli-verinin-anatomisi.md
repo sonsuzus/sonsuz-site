@@ -10,9 +10,13 @@ tags:
   - konsensüs
   - lider seçimi
 toc: true
+image: /img/raft-konsensus-algoritmasi-13.png
 ---
 
 Dağıtık sistemlerde aynı veriyi birden fazla makinede tutmak harikadır; tek bir sunucu bozulduğunda sistem ayakta kalır. Fakat işin zor kısmı şudur: Ağ gecikebilir, makineler sessizce kapanabilir ve iki sunucu aynı anda farklı şeylerin doğru olduğuna inanabilir. Raft, bu kaosu yönetmek için tasarlanmış, anlaşılabilirliği önceleyen bir konsensüs algoritmasıdır. Temel hedefi, tüm sağlıklı düğümlerin işlemleri aynı sırayla uygulamasını sağlamaktır.
+
+![raft-konsensus-algoritmasi-13](/img/raft-konsensus-algoritmasi-13.svg)
+
 ``
 
 Raft kümesindeki her düğüm üç rolden birindedir: **lider**, **takipçi** veya **aday**. Normal koşullarda tek bir lider bulunur; istemci yazma istekleri önce ona gelir. Lider, isteği kendi günlük kaydına ekler ve diğer düğümlere çoğaltır. Takipçiler ise lideri dinler. Lider ortadan kaybolursa, takipçilerden biri aday olur ve seçim sürecini başlatır.

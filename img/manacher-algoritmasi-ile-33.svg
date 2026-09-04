@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#dff4df"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#54708a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="45" r="78" fill="#dcefff" opacity="0.48"/>
+  <circle cx="574" cy="276" r="105" fill="#e1f3d9" opacity="0.52"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536a">MANACHER ALGORİTMASI</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7f8d">En uzun palindromik alt dizi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="89" width="161" height="139" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="31" y="89" width="161" height="34" rx="18" fill="#e7f1ff"/>
+  <rect x="31" y="106" width="161" height="17" fill="#e7f1ff"/>
+  <text x="52" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41637e">Metni dönüştür</text>
+
+  <rect x="49" y="142" width="124" height="31" rx="9" fill="#f8fbff" stroke="#c9ddf0"/>
+  <text x="65" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486276">a b b a</text>
+
+  <path d="M111 176 L111 187" stroke="#82a8c5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="106,184 116,184 111,191" fill="#82a8c5"/>
+
+  <rect x="43" y="194" width="137" height="22" rx="8" fill="#d9edff"/>
+  <text x="52" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#35617f">^ # a # b # b # a # $</text>
+
+  <path d="M198 158 C214 158 219 158 232 158" fill="none" stroke="#89aebe" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="228,152 239,158 228,164" fill="#89aebe"/>
+
+  <g filter="url(#shadow)">
+    <rect x="241" y="72" width="177" height="174" rx="24" fill="url(#core)"/>
+  </g>
+  <text x="289" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355c64">Simetri çekirdeği</text>
+
+  <path d="M271 180 A58 58 0 0 1 387 180" fill="none" stroke="#78a6aa" stroke-width="3"/>
+  <path d="M271 180 A58 58 0 0 0 387 180" fill="none" stroke="#a3cdd0" stroke-width="3"/>
+  <line x1="329" y1="120" x2="329" y2="219" stroke="#7fa9ad" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="271" y1="180" x2="387" y2="180" stroke="#a1bec2" stroke-width="1.5"/>
+
+  <circle cx="329" cy="180" r="18" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="325" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c6970">C</text>
+
+  <circle cx="292" cy="180" r="12" fill="#fff4cf" stroke="#e7c86b"/>
+  <text x="288" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#84621a">i</text>
+
+  <circle cx="366" cy="180" r="12" fill="#f7def1" stroke="#d99ac7"/>
+  <text x="355" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#875170">ayna</text>
+
+  <text x="271" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456d70">p[i] ← ayna yarıçapı</text>
+  <text x="285" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527b7c">R sınırı</text>
+  <circle cx="387" cy="180" r="5" fill="#5a9290"/>
+  <text x="394" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527b7c">R</text>
+
+  <path d="M424 158 C442 158 449 158 461 158" fill="none" stroke="#89aebe" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="457,152 468,158 457,164" fill="#89aebe"/>
+
+  <g filter="url(#shadow)">
+    <rect x="470" y="89" width="139" height="139" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="470" y="89" width="139" height="34" rx="18" fill="#e7f5e5"/>
+  <rect x="470" y="106" width="139" height="17" fill="#e7f5e5"/>
+  <text x="491" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476c4d">Sadece genişlet</text>
+
+  <path d="M492 151 L517 151 L526 143 L535 151 L560 151 L570 143 L579 151" fill="none" stroke="#78a77b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="492" cy="151" r="4" fill="#78a77b"/>
+  <circle cx="579" cy="151" r="4" fill="#78a77b"/>
+  <text x="490" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#537b58">Yeni karşılaştırma</text>
+
+  <rect x="491" y="190" width="96" height="24" rx="12" fill="#dff3d9"/>
+  <text x="517" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397044">O(n)</text>
+
+  <path d="M113 257 C175 279 235 280 287 263" fill="none" stroke="#b0c6d3" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <path d="M353 264 C415 280 481 277 537 252" fill="none" stroke="#b0c6d3" stroke-width="1.5" stroke-dasharray="4 5"/>
+
+  <rect x="188" y="266" width="263" height="30" rx="15" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="211" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526d7d">Simetriyi yeniden kullan • sınır ileri gider</text>
+</svg>

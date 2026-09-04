@@ -8,7 +8,11 @@ tags:
   - hyperloglog
   - algoritmalar
   - veri mühendisliği
+image: /img/hyperloglog-ile-yaklasik-72.png
 ---
+
+![hyperloglog-ile-yaklasik-72](/img/hyperloglog-ile-yaklasik-72.svg)
+
 
 Bir e-ticaret sitesinde kaç farklı kullanıcının ürünü görüntülediğini, bir log kümesinde kaç benzersiz IP bulunduğunu ya da bir kampanyanın gerçek erişimini saymak istiyorsunuz. Tüm kimlikleri `Set` içinde tutmak kesin sonuç verir; ancak yüz milyonlarca kayıt geldiğinde bellek bütçeniz hızla tükenir. HyperLogLog (HLL), bu noktada küçük ve sabit sayılabilecek bellek karşılığında çok isabetli bir **yaklaşık benzersiz eleman sayısı** üretir.
 ``

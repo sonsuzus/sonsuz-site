@@ -9,6 +9,7 @@ tags:
   - skip list
   - algoritmalar
 toc: true
+image: /img/skip-list-dengeli-45.png
 ---
 
 Sıralı verilerde arama yapmak istediğinizde bağlı listeler basit ama yavaştır; dengeli ikili arama ağaçları ise hızlı ama uygulaması görece karmaşıktır. Skip List, bu iki dünyanın arasına eğlenceli bir olasılık fikri yerleştirir: Bazı düğümlere rastgele seçilen ek “hız şeritleri” verir. Böylece listeyi tamamen yeniden dengelemeden, ortalama durumda oldukça hızlı arama, ekleme ve silme işlemleri sunar.
@@ -67,3 +68,6 @@ Buradaki `random_level` fonksiyonu, bir düğümün kaç hızlı şeritte yer al
 Skip List; sıralı anahtarlar, aralık sorguları, eşzamanlı erişim ve basit kod gerektiren sistemlerde iyi bir adaydır. Nitekim Redis'in sıralı kümeleri gibi gerçek sistemlerde benzer yaklaşımın kullanılması tesadüf değildir. Buna karşılık en kötü durum garantisinin mutlak biçimde $O(\log n)$ olması gereken kritik senaryolarda dengeli ağaçlar daha güvenli tercihtir.
 
 Özetle Skip List, “dengelemek yerine akıllıca rastgeleleştirelim” der. Teorik olarak zarif, pratikte uygulanabilir ve veri yapıları dünyasında olasılığın ne kadar işe yarayabildiğini gösteren güçlü bir örnektir.
+
+![skip-list-dengeli-45](/img/skip-list-dengeli-45.svg)
+

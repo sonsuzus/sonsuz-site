@@ -11,7 +11,11 @@ tags:
   - hashing
   - ölçeklenebilirlik
 toc: true
+image: /img/consistent-hashing-nedir-98.png
 ---
+
+![consistent-hashing-nedir-98](/img/consistent-hashing-nedir-98.svg)
+
 
 Dağıtık sistemlerde veriyi sunuculara paylaştırmak ilk bakışta kolay görünür: bir anahtarın hash değerini alır, sunucu sayısına göre modunu hesaplar ve hedefi buluruz. Fakat yeni bir sunucu eklediğinizde ya da arızalı bir makineyi kümeden çıkardığınızda bu sade yaklaşım, neredeyse bütün verilerin farklı yerlere taşınmasına yol açabilir. Consistent Hashing, tam bu taşınma fırtınasını küçültmek için tasarlanmış akıllı bir dağıtım tekniğidir.
 ``

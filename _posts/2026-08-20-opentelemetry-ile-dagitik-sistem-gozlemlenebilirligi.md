@@ -9,6 +9,7 @@ tags:
   - gözlemlenebilirlik
   - dağıtık sistemler
 toc: true
+image: /img/opentelemetry-ile-dagitik-67.png
 ---
 
 Modern uygulamalar nadiren tek bir sunucuda yaşayan, tek parça yapılar hâlindedir. Bir kullanıcı isteği; API Gateway, kimlik doğrulama servisi, ödeme sistemi, mesaj kuyruğu ve veritabanı arasında dolaşabilir. Sorun çıktığında ise klasik “sunucu çalışıyor mu?” sorusu yetersiz kalır. OpenTelemetry (OTel), bu karmaşık yolculuğu iz, metrik ve log sinyallerini ortak bir standart altında birleştirerek görünür hâle getirir.
@@ -81,3 +82,6 @@ Uygulamaların doğrudan her gözlemleme aracına veri göndermesi yerine OpenTe
 Önce servislerin RED metriklerini izleyin: **Rate** (istek hızı), **Errors** (hata oranı) ve **Duration** (süre). Ardından p95 veya p99 gecikmesi yükseldiğinde ilgili trace’leri açın. Ortalama süre aldatıcı olabilir; çünkü birkaç çok yavaş istek kullanıcı deneyimini ciddi biçimde bozabilir. Son olarak aynı `trace_id` ile ilişkilendirilmiş logları inceleyin.
 
 OpenTelemetry’nin asıl gücü, tek bir panel sağlaması değil; veriyi üreticiden bağımsız, bağlamı korunmuş ve ilişkilendirilebilir şekilde toplamasıdır. Doğru adlandırılmış span’lar, anlamlı metrik etiketleri ve yapılandırılmış loglar sayesinde “sistem yavaş” şikâyeti, ölçülebilir ve çözülebilir bir mühendislik problemine dönüşür.
+
+![opentelemetry-ile-dagitik-67](/img/opentelemetry-ile-dagitik-67.svg)
+

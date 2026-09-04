@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71839a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="575" cy="44" r="77" fill="#dff2ed" opacity="0.62"/>
+  <circle cx="57" cy="292" r="86" fill="#e3edff" opacity="0.72"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516d">MO ALGORİTMASI</text>
+  <text x="28" y="50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c7e92">Çevrimdışı aralık sorgularında kısa pencere hareketleri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="26" y="78" width="139" height="182" rx="18" fill="url(#panel)" stroke="#d6e1ed"/>
+  </g>
+  <text x="45" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5870">Tüm sorgular</text>
+  <text x="45" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75879a">çevrimdışı giriş</text>
+
+  <g filter="url(#soft)">
+    <rect x="45" y="142" width="99" height="24" rx="8" fill="#e5efff"/>
+    <text x="56" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41658d">S1 [2, 7]</text>
+    <rect x="45" y="174" width="99" height="24" rx="8" fill="#eaf7e8"/>
+    <text x="56" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7960">S2 [1, 4]</text>
+    <rect x="45" y="206" width="99" height="24" rx="8" fill="#fff0dc"/>
+    <text x="56" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#936b3d">S3 [5, 9]</text>
+  </g>
+
+  <path d="M174 169 H202" fill="none" stroke="#7893ad" stroke-width="2"/>
+  <polygon points="202,169 194,164 194,174" fill="#7893ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="211" y="78" width="171" height="182" rx="18" fill="url(#panel)" stroke="#d6e1ed"/>
+  </g>
+  <text x="231" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5870">Bloklara ayır</text>
+  <text x="231" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75879a">B ≈ √N · zikzak sıra</text>
+
+  <g filter="url(#soft)">
+    <rect x="231" y="142" width="57" height="78" rx="11" fill="#dceaff"/>
+    <text x="244" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476b95">Blok 0</text>
+    <path d="M242 178 H276" stroke="#7294bd" stroke-width="2"/>
+    <polygon points="276,178 269,174 269,182" fill="#7294bd"/>
+    <path d="M276 197 H242" stroke="#7294bd" stroke-width="2"/>
+    <polygon points="242,197 249,193 249,201" fill="#7294bd"/>
+
+    <rect x="301" y="142" width="57" height="78" rx="11" fill="#e1f2e7"/>
+    <text x="314" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f7c63">Blok 1</text>
+    <path d="M312 178 H346" stroke="#73a184" stroke-width="2"/>
+    <polygon points="346,178 339,174 339,182" fill="#73a184"/>
+    <path d="M346 197 H312" stroke="#73a184" stroke-width="2"/>
+    <polygon points="312,197 319,193 319,201" fill="#73a184"/>
+  </g>
+  <text x="242" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668095">Yakın sorgular yan yana</text>
+
+  <path d="M391 169 H419" fill="none" stroke="#7893ad" stroke-width="2"/>
+  <polygon points="419,169 411,164 411,174" fill="#7893ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="428" y="78" width="185" height="182" rx="18" fill="url(#panel)" stroke="#d6e1ed"/>
+  </g>
+  <text x="448" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5870">Kayan pencere</text>
+  <text x="448" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75879a">curL ve curR hareketi</text>
+
+  <rect x="450" y="152" width="141" height="28" rx="8" fill="#e9f0f5"/>
+  <rect x="464" y="156" width="14" height="20" rx="4" fill="#b7c9dc"/>
+  <rect x="481" y="156" width="14" height="20" rx="4" fill="#a7d1c0"/>
+  <rect x="498" y="156" width="14" height="20" rx="4" fill="#f3c992"/>
+  <rect x="515" y="156" width="14" height="20" rx="4" fill="#b7c9dc"/>
+  <rect x="532" y="156" width="14" height="20" rx="4" fill="#a7d1c0"/>
+  <rect x="549" y="156" width="14" height="20" rx="4" fill="#f3c992"/>
+  <rect x="566" y="156" width="14" height="20" rx="4" fill="#b7c9dc"/>
+
+  <path d="M479 145 V137 H550 V145" fill="none" stroke="#627f9c" stroke-width="2"/>
+  <polygon points="479,145 475,138 483,138" fill="#627f9c"/>
+  <polygon points="550,145 546,138 554,138" fill="#627f9c"/>
+  <text x="483" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506c87">aktif aralık</text>
+
+  <g filter="url(#soft)">
+    <rect x="450" y="201" width="60" height="31" rx="10" fill="#e4f1ff"/>
+    <text x="464" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#487198">ekle</text>
+    <rect x="521" y="201" width="70" height="31" rx="10" fill="#fff0df"/>
+    <text x="531" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#986b38">çıkar</text>
+  </g>
+
+  <path d="M480 184 V196" fill="none" stroke="#7695b2" stroke-width="2"/>
+  <polygon points="480,196 476,189 484,189" fill="#7695b2"/>
+  <path d="M556 184 V196" fill="none" stroke="#7695b2" stroke-width="2"/>
+  <polygon points="556,196 552,189 560,189" fill="#7695b2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="211" y="276" width="218" height="31" rx="14" fill="#dff1ea" stroke="#c7e4da"/>
+  </g>
+  <text x="231" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7565">frekans → farklı sayı → sonuç</text>
+
+  <path d="M520 239 C519 276 456 291 437 291" fill="none" stroke="#6ea08f" stroke-width="2"/>
+  <polygon points="437,291 445,286 444,295" fill="#6ea08f"/>
+</svg>

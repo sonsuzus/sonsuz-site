@@ -8,9 +8,13 @@ tags:
   - algoritmalar
   - string
   - palindrom
+image: /img/manacher-algoritmasi-ile-33.png
 ---
 
 Bir metindeki en uzun palindromik alt diziyi bulmak, ilk bakışta her karakteri merkez kabul edip iki yana açılma fikriyle kolay görünür. Ancak uzun metinlerde bu yaklaşım pahalılaşır. Manacher algoritması, daha önce hesaplanan palindromların simetrisini akıllıca yeniden kullanarak problemi $O(n)$ zamanda çözer. Adı biraz sihirbazlık çağrıştırsa da arkasındaki fikir oldukça sistematiktir.
+
+![manacher-algoritmasi-ile-33](/img/manacher-algoritmasi-ile-33.svg)
+
 ``
 
 Palindrom, tersten ve düzden aynı okunan karakter dizisidir: `aba`, `kayak` ve `abccba` gibi. Burada önemli ayrım **alt dizi** ile **alt dizi dizisi (subsequence)** arasındadır: Manacher, karakterlerin metinde bitişik olduğu en uzun palindromik **substring** problemini çözer. Örneğin `abacdfgdcaba` içinde `aba` geçerli bir palindromik alt dizidir.

@@ -9,7 +9,11 @@ tags:
   - kriptografi
   - veri bütünlüğü
 toc: true
+image: /img/merkle-agaclari-ile-41.png
 ---
+
+![merkle-agaclari-ile-41](/img/merkle-agaclari-ile-41.svg)
+
 
 Bir dosyanın, veritabanı yedeğinin ya da milyonlarca işlemden oluşan bir blok zinciri bloğunun değiştirilmediğini nasıl kanıtlarsınız? Tüm veriyi her seferinde baştan sona karşılaştırmak güvenlidir, fakat pahalıdır. Merkle ağacı, kriptografik özetleri hiyerarşik biçimde birleştirerek bu sorunu çözer: Küçük bir kanıt paketiyle devasa bir veri kümesindeki belirli bir kaydın bütünlüğü doğrulanabilir.
 

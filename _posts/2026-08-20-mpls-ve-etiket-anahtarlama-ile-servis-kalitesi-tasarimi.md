@@ -10,6 +10,7 @@ tags:
   - ağ mimarisi
   - etiket anahtarlama
 toc: true
+image: /img/mpls-ve-etiket-49.png
 ---
 
 Modern ağlarda her paketin IP başlığını tekrar tekrar incelemek, yoğun trafikte gişede kimlik kontrolü yapmaya benzer: güvenlidir ama yavaştır. MPLS (Multiprotocol Label Switching), paketleri sınıflandırılmış kısa etiketlerle taşıyarak bu süreci hızlandırır. Daha önemlisi, ses, video ve kritik iş uygulamalarına öngörülebilir gecikme sağlayan Servis Kalitesi (QoS) politikalarının ağ boyunca tutarlı uygulanmasına yardım eder.
@@ -63,3 +64,6 @@ class DEFAULT:                  → TC 0, fair-queue
 ```
 
 Bu örnekte yüzde değerleri cihazdan cihaza kopyalanacak evrensel reçeteler değildir; bağlantı kapasitesi, codec hızı ve trafik ölçümleriyle hesaplanmalıdır. Girişte güvenilmeyen işaretleri yeniden yazın, çekirdekte TC değerini koruyun, çıkışta ise müşterinin QoS sözleşmesine uygun DSCP eşlemesi yapın. Son olarak gecikme, jitter, paket kaybı ve kuyruk doluluğunu izleyin. İyi MPLS-QoS tasarımı hızlı anahtarlamayı, kontrollü tıkanıklığı ve ölçülebilir hizmet hedeflerini aynı LSP üzerinde buluşturur.
+
+![mpls-ve-etiket-49](/img/mpls-ve-etiket-49.svg)
+

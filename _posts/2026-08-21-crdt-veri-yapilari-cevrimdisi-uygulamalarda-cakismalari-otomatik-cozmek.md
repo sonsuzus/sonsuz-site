@@ -8,9 +8,13 @@ tags:
   - crdt
   - dağıtık sistemler
   - çevrimdışı uygulamalar
+image: /img/crdt-veri-yapilari-29.png
 ---
 
 Bir not alma uygulamasını iki telefonda, internet bağlantısı olmadan kullandığınızı düşünün. Aynı notu bir cihazda silerken diğerinde yeni bir madde eklediniz. Bağlantı geri geldiğinde klasik bir sistem genellikle “hangi sürüm doğru?” diye panikler. CRDT'ler ise bu tartışmayı matematiksel kurallarla çözer: Her cihaz değişiklik yapabilir, ardından veriler sıradan bağımsız biçimde birleşerek aynı sonuca ulaşır.
+
+![crdt-veri-yapilari-29](/img/crdt-veri-yapilari-29.svg)
+
 ``
 
 CRDT, **Conflict-free Replicated Data Type** yani “çatışmasız çoğaltılmış veri tipi” anlamına gelir. Temel hedefi, birden fazla kopyada tutulan verinin ağ gecikmesi, paket kaybı veya çevrimdışı çalışma gibi koşullarda bile sonunda yakınsamasıdır. Bu özellik **eventual consistency** olarak bilinir. Kritik fikir şudur: Sistem her değişikliği anında herkese ulaştıramasa da, tüm replikalar aynı güncellemeleri gördüğünde aynı duruma erişmelidir.

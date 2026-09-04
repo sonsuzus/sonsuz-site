@@ -8,6 +8,7 @@ tags:
   - sdn
   - ağ yönetimi
   - openflow
+image: /img/sdn-ile-yazilim-47.png
 ---
 
 Geleneksel ağlarda her yönlendirici ve anahtar kendi kararlarını verir; bu durum büyüyen altyapılarda yapılandırma karmaşası, tutarsız kurallar ve yavaş değişiklikler doğurur. Yazılım Tanımlı Ağlar (Software-Defined Networking, SDN), kontrol kararlarını merkezi bir yazılıma taşıyarak ağın davranışını programlanabilir hâle getirir. Böylece yönlendirme tabloları, güvenlik politikaları ve trafik öncelikleri tek tek cihazlara bağlanmadan dinamik biçimde yönetilebilir.
@@ -21,6 +22,9 @@ SDN'nin temel fikri, ağın **kontrol düzlemi** ile **veri düzlemini** ayırma
 | Yapılandırma | CLI ile cihaz bazlı | API ve otomasyon ile politika bazlı |
 | Görünürlük | Parçalı ağ bilgisi | Ağın uçtan uca görünümü |
 | Değişiklik hızı | Manuel, hata riski yüksek | Yazılımla hızlı ve tekrarlanabilir |
+
+![sdn-ile-yazilim-47](/img/sdn-ile-yazilim-47.svg)
+
 
 Bir SDN denetleyicisi, anahtarlardan bağlantı ve istatistik bilgisi toplar; ardından hedefe en uygun yolu hesaplar. Basit bir maliyet modelinde yol maliyeti şu şekilde ifade edilebilir:
 

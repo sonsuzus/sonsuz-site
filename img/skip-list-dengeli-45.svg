@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a6" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-35%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a6" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="596" cy="42" r="68" fill="#dceff0" opacity="0.48"/>
+  <circle cx="52" cy="281" r="74" fill="#e4eafb" opacity="0.55"/>
+
+  <rect x="22" y="18" width="596" height="43" rx="16" fill="url(#panel)" filter="url(#shadow)"/>
+  <rect x="39" y="29" width="26" height="22" rx="8" fill="#8ba8dc"/>
+  <path d="M47 40h10M52 35v10" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="77" y="45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33485e">Skip List</text>
+  <text x="145" y="45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718194">Katmanlı bağlı liste ve olasılıksal hız şeritleri</text>
+
+  <rect x="22" y="78" width="144" height="219" rx="18" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="43" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41556b">Rastgele terfi</text>
+  <circle cx="94" cy="143" r="29" fill="#fff1cf" filter="url(#smallShadow)"/>
+  <path d="M94 121 C105 127 111 135 111 143 C111 151 105 159 94 165 C83 159 77 151 77 143 C77 135 83 127 94 121Z" fill="#f4c66a"/>
+  <path d="M94 121 C105 127 111 135 111 143 C111 151 105 159 94 165 C83 159 77 151 77 143 C77 135 83 127 94 121Z" fill="none" stroke="#d99c39" stroke-width="1.5"/>
+  <text x="82" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#75521b">p = .5</text>
+
+  <path d="M94 179v21" stroke="#8ca0b4" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="89,196 99,196 94,203" fill="#8ca0b4"/>
+  <rect x="42" y="207" width="104" height="30" rx="10" fill="#e5f3ea"/>
+  <text x="59" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c7057">Seviye seçimi</text>
+  <text x="40" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738396">Yaklaşık yarısı</text>
+  <text x="47" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738396">üst kata çıkar</text>
+
+  <rect x="183" y="78" width="435" height="219" rx="18" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="205" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41556b">Sıralı katmanlar</text>
+  <rect x="500" y="90" width="93" height="23" rx="9" fill="#efe8fb"/>
+  <text x="514" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#755d9b">Beklenen O(log n)</text>
+
+  <text x="205" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8290a0">Seviye 3</text>
+  <text x="205" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8290a0">Seviye 2</text>
+  <text x="205" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8290a0">Seviye 1</text>
+  <text x="205" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8290a0">Taban</text>
+
+  <path d="M274 133H560" stroke="#b8c8d9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M274 177H560" stroke="#b8c8d9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M274 221H560" stroke="#b8c8d9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M274 265H575" stroke="#9dafc1" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M293 126v139M373 170v95M453 126v139M533 170v95" stroke="#c4d2df" stroke-width="2" stroke-dasharray="3 4"/>
+
+  <g filter="url(#smallShadow)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <rect x="280" y="120" width="27" height="26" rx="8" fill="#cfe4fa"/><text x="293.5" y="137" fill="#365978">10</text>
+    <rect x="440" y="120" width="27" height="26" rx="8" fill="#cfe4fa"/><text x="453.5" y="137" fill="#365978">40</text>
+
+    <rect x="280" y="164" width="27" height="26" rx="8" fill="#d9f0e2"/><text x="293.5" y="181" fill="#367055">10</text>
+    <rect x="360" y="164" width="27" height="26" rx="8" fill="#d9f0e2"/><text x="373.5" y="181" fill="#367055">25</text>
+    <rect x="440" y="164" width="27" height="26" rx="8" fill="#d9f0e2"/><text x="453.5" y="181" fill="#367055">40</text>
+    <rect x="520" y="164" width="27" height="26" rx="8" fill="#d9f0e2"/><text x="533.5" y="181" fill="#367055">65</text>
+
+    <rect x="280" y="208" width="27" height="26" rx="8" fill="#f9e1d2"/><text x="293.5" y="225" fill="#87583e">10</text>
+    <rect x="320" y="208" width="27" height="26" rx="8" fill="#f9e1d2"/><text x="333.5" y="225" fill="#87583e">18</text>
+    <rect x="360" y="208" width="27" height="26" rx="8" fill="#f9e1d2"/><text x="373.5" y="225" fill="#87583e">25</text>
+    <rect x="400" y="208" width="27" height="26" rx="8" fill="#f9e1d2"/><text x="413.5" y="225" fill="#87583e">31</text>
+    <rect x="440" y="208" width="27" height="26" rx="8" fill="#f9e1d2"/><text x="453.5" y="225" fill="#87583e">40</text>
+    <rect x="480" y="208" width="27" height="26" rx="8" fill="#f9e1d2"/><text x="493.5" y="225" fill="#87583e">52</text>
+    <rect x="520" y="208" width="27" height="26" rx="8" fill="#f9e1d2"/><text x="533.5" y="225" fill="#87583e">65</text>
+
+    <rect x="280" y="252" width="27" height="26" rx="8" fill="#e7e8fa"/><text x="293.5" y="269" fill="#535882">10</text>
+    <rect x="320" y="252" width="27" height="26" rx="8" fill="#e7e8fa"/><text x="333.5" y="269" fill="#535882">18</text>
+    <rect x="360" y="252" width="27" height="26" rx="8" fill="#e7e8fa"/><text x="373.5" y="269" fill="#535882">25</text>
+    <rect x="400" y="252" width="27" height="26" rx="8" fill="#e7e8fa"/><text x="413.5" y="269" fill="#535882">31</text>
+    <rect x="440" y="252" width="27" height="26" rx="8" fill="#e7e8fa"/><text x="453.5" y="269" fill="#535882">40</text>
+    <rect x="480" y="252" width="27" height="26" rx="8" fill="#e7e8fa"/><text x="493.5" y="269" fill="#535882">52</text>
+    <rect x="520" y="252" width="27" height="26" rx="8" fill="#e7e8fa"/><text x="533.5" y="269" fill="#535882">65</text>
+    <rect x="560" y="252" width="27" height="26" rx="8" fill="#e7e8fa"/><text x="573.5" y="269" fill="#535882">72</text>
+  </g>
+
+  <path d="M267 133H447V177H527V221H487V252" fill="none" stroke="#e36d66" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="442,128 452,133 442,138" fill="#e36d66"/>
+  <polygon points="522,172 532,177 522,182" fill="#e36d66"/>
+  <polygon points="482,216 492,221 482,226" fill="#e36d66"/>
+  <polygon points="482,247 492,247 487,255" fill="#e36d66"/>
+  <rect x="493" y="282" width="81" height="17" rx="7" fill="#fff0ef"/>
+  <text x="503" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c75b54">Hedef: 52</text>
+</svg>

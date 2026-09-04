@@ -9,9 +9,13 @@ tags:
   - algoritmalar
   - link-cut tree
 toc: true
+image: /img/link-cut-tree-44.png
 ---
 
 Bir ağacın kenarlarını çalışma anında ekleyip silmek, ardından iki düğüm arasındaki yolun toplamını saniyeler içinde sormak ilk bakışta masum görünür. Ancak klasik DFS, BFS veya sabit köklenmiş ağır-hafif ayrıştırması bu dünyada zorlanır. Link-Cut Tree (LCT), dinamik ormanlar üzerinde bağlantı, yol sorgusu ve kök değiştirme işlemlerini amortize olarak $O(\log n)$ sürede gerçekleştiren gelişmiş bir veri yapısıdır.
+
+![link-cut-tree-44](/img/link-cut-tree-44.svg)
+
 ``
 
 ## Problem: Ağaç Sabit Değilse Ne Olur?

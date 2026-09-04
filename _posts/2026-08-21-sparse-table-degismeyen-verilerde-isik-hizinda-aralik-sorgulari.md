@@ -8,6 +8,7 @@ tags:
   - algoritmalar
   - veri yapıları
   - sparse table
+image: /img/sparse-table-degismeyen-15.png
 ---
 
 Bir dizideki belirli aralıkların minimumunu, maksimumunu ya da EBOB'unu defalarca bulmanız gerektiğini düşünün. Veri hiç değişmiyorsa, her sorguda aralığı baştan taramak gereksiz bir maliyettir. **Sparse Table**, ön işlem süresini ve belleği göze alarak sorguları özellikle minimum/maksimum gibi işlemlerde $O(1)$ sürede cevaplayan etkileyici bir veri yapısıdır. Adındaki “sparse” kelimesi yanıltıcı olabilir: Bu yapı seyrek verilerden çok, $2$'nin kuvveti uzunluğundaki önceden hesaplanmış aralık bloklarından oluşur.
@@ -32,6 +33,9 @@ Bu özellik, işlemin **idempotent** olmasıyla ilgilidir: $f(x,x)=x$. `min`, `m
 | Toplam sorgusu | Genelde $O(\log n)$ | $O(\log n)$ | $O(1)$ |
 | Ön işlem | $O(n\log n)$ | $O(n)$ | $O(n)$ |
 | Bellek | $O(n\log n)$ | $O(n)$ | $O(n)$ |
+
+![sparse-table-degismeyen-15](/img/sparse-table-degismeyen-15.svg)
+
 
 Aşağıdaki C++ örneği, statik bir dizide minimum sorgularını hazırlar. `lg` dizisi, sorgu uzunluğuna karşılık gelen en büyük $2$ kuvvetini hızlıca bulmak için kullanılır.
 

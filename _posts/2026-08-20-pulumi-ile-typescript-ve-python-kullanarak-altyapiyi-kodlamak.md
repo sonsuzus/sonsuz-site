@@ -10,9 +10,13 @@ tags:
   - typescript
   - python
   - bulut
+image: /img/pulumi-ile-typescript-53.png
 ---
 
 Bulut altyapısı artık yalnızca kontrol panelinde tıklanarak yönetilen kaynaklar bütünü değildir. Sunucular, depolama alanları, ağ kuralları ve veritabanları; yazılımın kendisi kadar tekrar üretilebilir, gözden geçirilebilir ve test edilebilir olmalıdır. Pulumi, bu yaklaşımı genel amaçlı dillerle birleştiren bir Infrastructure as Code (IaC) aracıdır. TypeScript veya Python ile AWS, Azure, Google Cloud ya da Kubernetes kaynaklarını bildirimsel biçimde tanımlayabilir; bu tanımları Git deposunda uygulama kodunuzla birlikte sürümlendirebilirsiniz.
+
+
+![pulumi-ile-typescript-53](/img/pulumi-ile-typescript-53.svg)
 
 ``
 

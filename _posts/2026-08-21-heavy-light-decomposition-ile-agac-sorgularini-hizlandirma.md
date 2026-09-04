@@ -9,7 +9,11 @@ tags:
   - ağaç yapıları
   - heavy-light decomposition
 toc: true
+image: /img/heavy-light-decomposition-12.png
 ---
+
+![heavy-light-decomposition-12](/img/heavy-light-decomposition-12.svg)
+
 
 Ağaçlar; organizasyon şemalarından dosya sistemlerine, oyun haritalarından ağ topolojilerine kadar pek çok yerde karşımıza çıkar. Ancak iki düğüm arasındaki yol üzerindeki toplamı, maksimumu veya güncellemeleri hızlı biçimde hesaplamak istediğimizde klasik DFS yaklaşımı yetersiz kalır. Heavy-Light Decomposition (HLD), ağacı parçalara ayırarak bu karmaşık yol sorgularını etkileyici biçimde hızlandıran güçlü bir tekniktir.
 ``

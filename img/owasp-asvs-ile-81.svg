@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfe9ff"/>
+      <stop offset="100%" stop-color="#cdeedc"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#66809b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#66809b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="62" cy="42" r="48" fill="#dff1f3" opacity="0.45"/>
+  <circle cx="589" cy="278" r="74" fill="#e6e6ff" opacity="0.42"/>
+  <path d="M35 166 C117 129 147 207 220 181 S345 132 410 167 S532 213 612 153" fill="none" stroke="#c9ddeb" stroke-width="2" opacity="0.55"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516a">ASVS ile Güvenli SDLC</text>
+
+  <g stroke="#9bb6c6" stroke-width="2" fill="none">
+    <path d="M148 153 L192 153"/>
+    <path d="M298 153 L342 153"/>
+    <path d="M448 153 L492 153"/>
+    <path d="M570 181 C570 233 497 266 414 266"/>
+  </g>
+  <polygon points="192,153 184,148 184,158" fill="#799caf"/>
+  <polygon points="342,153 334,148 334,158" fill="#799caf"/>
+  <polygon points="492,153 484,148 484,158" fill="#799caf"/>
+  <polygon points="414,266 423,261 422,271" fill="#799caf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="112" width="120" height="82" rx="18" fill="#fff4dc"/>
+    <rect x="178" y="112" width="120" height="82" rx="18" fill="#e7f0ff"/>
+    <rect x="328" y="112" width="120" height="82" rx="18" fill="#e4f7ee"/>
+    <rect x="478" y="112" width="120" height="82" rx="18" fill="#f2e8ff"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#2f4b60">
+    <text x="88" y="143" font-weight="700">Planlama</text>
+    <text x="88" y="164">Risk ve seviye</text>
+    <text x="238" y="143" font-weight="700">Tasarım</text>
+    <text x="238" y="164">Tehdit modeli</text>
+    <text x="388" y="143" font-weight="700">Geliştirme</text>
+    <text x="388" y="164">Güvenli kod</text>
+    <text x="538" y="143" font-weight="700">CI/CD</text>
+    <text x="538" y="164">Otomatik kanıt</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="201" y="217" width="238" height="72" rx="22" fill="url(#core)" stroke="#b8d6d1"/>
+  </g>
+  <circle cx="233" cy="253" r="18" fill="#ffffff" opacity="0.82"/>
+  <path d="M233 240 L245 245 L243 260 L233 267 L223 260 L221 245 Z" fill="#6da6a1"/>
+  <path d="M228 253 L232 257 L239 249" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Segoe UI, Tahoma, sans-serif" fill="#294d57">
+    <text x="326" y="247" text-anchor="middle" font-size="12" font-weight="700">OWASP ASVS</text>
+    <text x="326" y="267" text-anchor="middle" font-size="12">Ölç • Kanıtla • İyileştir</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="226" width="133" height="48" rx="15" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="96" y="246" fill="#496375" font-weight="700">Doğrulama Seviyesi</text>
+    <text x="96" y="263" fill="#627b8b">L1  •  L2  •  L3</text>
+  </g>
+  <path d="M163 250 L192 250" stroke="#9bb6c6" stroke-width="2"/>
+  <polygon points="192,250 184,245 184,255" fill="#799caf"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="474" y="226" width="136" height="48" rx="15" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="542" y="246" fill="#496375" font-weight="700">Yayın Sonrası</text>
+    <text x="542" y="263" fill="#627b8b">Log • Alarm • İzleme</text>
+  </g>
+</svg>

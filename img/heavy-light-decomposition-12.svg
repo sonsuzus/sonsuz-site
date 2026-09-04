@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="heavy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#746ee8"/>
+      <stop offset="100%" stop-color="#928bea"/>
+    </linearGradient>
+    <linearGradient id="segment" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4da9a1"/>
+      <stop offset="100%" stop-color="#79c6af"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#65738a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="99" cy="62" r="72" fill="#dfe9ff" opacity="0.5"/>
+  <circle cx="558" cy="268" r="89" fill="#dff1dd" opacity="0.45"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35445b">Ağaç Yolu Sorgusu</text>
+  <text x="433" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35445b">Aralık Sorgusu</text>
+
+  <g filter="url(#shadow)">
+    <rect x="20" y="43" width="340" height="246" rx="18" fill="#ffffff" opacity="0.82"/>
+    <rect x="399" y="43" width="221" height="246" rx="18" fill="#ffffff" opacity="0.82"/>
+  </g>
+
+  <!-- tree light edges -->
+  <g stroke="#b7c1d2" stroke-width="2.5" stroke-linecap="round">
+    <path d="M104 83 L67 126"/>
+    <path d="M104 83 L151 126"/>
+    <path d="M67 126 L45 174"/>
+    <path d="M67 126 L88 174"/>
+    <path d="M151 126 L192 174"/>
+    <path d="M151 126 L135 174"/>
+    <path d="M192 174 L225 221"/>
+    <path d="M192 174 L178 221"/>
+    <path d="M135 174 L122 221"/>
+  </g>
+
+  <!-- heavy chains -->
+  <g fill="none" stroke="url(#heavy)" stroke-width="7" stroke-linecap="round">
+    <path d="M104 83 L151 126 L192 174 L225 221"/>
+    <path d="M67 126 L88 174"/>
+  </g>
+
+  <!-- query path highlight -->
+  <path d="M45 174 L67 126 L104 83 L151 126 L192 174 L178 221" fill="none" stroke="#ef9a65" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 4"/>
+
+  <!-- nodes -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#34415a">
+    <g fill="#e3e1ff" stroke="#766fe0" stroke-width="1.5">
+      <circle cx="104" cy="83" r="15"/>
+      <circle cx="151" cy="126" r="15"/>
+      <circle cx="192" cy="174" r="15"/>
+      <circle cx="225" cy="221" r="15"/>
+      <circle cx="67" cy="126" r="15"/>
+      <circle cx="88" cy="174" r="15"/>
+    </g>
+    <g fill="#eef2f7" stroke="#aebac9" stroke-width="1.5">
+      <circle cx="45" cy="174" r="15"/>
+      <circle cx="135" cy="174" r="15"/>
+      <circle cx="178" cy="221" r="15"/>
+      <circle cx="122" cy="221" r="15"/>
+    </g>
+    <text x="104" y="87">K</text>
+    <text x="151" y="130">A</text>
+    <text x="192" y="178">B</text>
+    <text x="225" y="225">C</text>
+    <text x="67" y="130">D</text>
+    <text x="88" y="178">E</text>
+    <text x="45" y="178">X</text>
+    <text x="135" y="178">F</text>
+    <text x="178" y="225">Y</text>
+    <text x="122" y="225">G</text>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596980">
+    <rect x="35" y="249" width="106" height="24" rx="12" fill="#eeeaff"/>
+    <rect x="151" y="249" width="111" height="24" rx="12" fill="#edf1f5"/>
+    <text x="49" y="265">Mor: ağır zincir</text>
+    <text x="165" y="265">Gri: hafif kenar</text>
+  </g>
+
+  <!-- transformation arrow -->
+  <path d="M367 157 L391 157" stroke="#718399" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="391,151 399,157 391,163" fill="#718399"/>
+  <text x="367" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#596980">zincirle</text>
+
+  <!-- segment tree -->
+  <g stroke="#92bdb7" stroke-width="2" stroke-linecap="round">
+    <path d="M510 88 L458 128"/>
+    <path d="M510 88 L562 128"/>
+    <path d="M458 128 L432 168"/>
+    <path d="M458 128 L484 168"/>
+    <path d="M562 128 L536 168"/>
+    <path d="M562 128 L588 168"/>
+  </g>
+  <g filter="url(#shadow)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#245851">
+    <rect x="484" y="70" width="52" height="31" rx="10" fill="url(#segment)"/>
+    <rect x="432" y="112" width="52" height="31" rx="10" fill="#c9ede3"/>
+    <rect x="536" y="112" width="52" height="31" rx="10" fill="#c9ede3"/>
+    <rect x="406" y="153" width="52" height="31" rx="10" fill="#e0f4ec"/>
+    <rect x="458" y="153" width="52" height="31" rx="10" fill="#e0f4ec"/>
+    <rect x="510" y="153" width="52" height="31" rx="10" fill="#e0f4ec"/>
+    <rect x="562" y="153" width="52" height="31" rx="10" fill="#e0f4ec"/>
+    <text x="510" y="90" fill="#ffffff">Toplam</text>
+    <text x="458" y="132">[0..3]</text>
+    <text x="562" y="132">[4..7]</text>
+    <text x="432" y="173">0</text>
+    <text x="484" y="173">1</text>
+    <text x="536" y="173">2</text>
+    <text x="588" y="173">3</text>
+  </g>
+
+  <g>
+    <rect x="421" y="211" width="177" height="47" rx="14" fill="#fff3e8" stroke="#f0c394" stroke-width="1.2"/>
+    <circle cx="443" cy="234" r="12" fill="#ef9a65"/>
+    <path d="M438 234 L442 238 L449 230" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="464" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805235">Yol parçaları</text>
+    <text x="464" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805235">O(log² N)</text>
+  </g>
+
+  <text x="36" y="60" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68788d">Ağır kenarlar ardışık dizi aralıklarına dönüşür</text>
+</svg>

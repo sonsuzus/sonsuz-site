@@ -9,7 +9,11 @@ tags:
   - uygulama güvenliği
   - sdlc
 toc: true
+image: /img/owasp-asvs-ile-81.png
 ---
+
+![owasp-asvs-ile-81](/img/owasp-asvs-ile-81.svg)
+
 
 Uygulama güvenliği, yayın öncesi yapılan tek seferlik bir sızma testi değildir; gereksinimden üretime kadar sürdürülen ölçülebilir bir mühendislik disiplinidir. OWASP Application Security Verification Standard (ASVS), bu disiplini somutlaştırmak için kimlik doğrulama, oturum yönetimi, erişim kontrolü, kriptografi ve hata yönetimi gibi alanlarda doğrulanabilir güvenlik gereksinimleri sunar. Böylece ekipler “güvenli olmalı” gibi muğlak cümleleri test edilebilir kabul kriterlerine dönüştürür.
 ``

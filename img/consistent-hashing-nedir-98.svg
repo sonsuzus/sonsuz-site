@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#84b9ee"/>
+      <stop offset="100%" stop-color="#8ed7b2"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#5c7891" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#587289" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="130" fill="#dceefa" opacity="0.42"/>
+  <circle cx="320" cy="160" r="104" fill="#ffffff" opacity="0.72" filter="url(#shadow)"/>
+  <circle cx="320" cy="160" r="88" fill="none" stroke="url(#ring)" stroke-width="16"/>
+  <circle cx="320" cy="160" r="76" fill="#f8fcff" stroke="#d8e8ef" stroke-width="1"/>
+
+  <path d="M255 101 A88 88 0 0 1 331 73" fill="none" stroke="#f4b978" stroke-width="16" stroke-linecap="round"/>
+  <path d="M306 74 L320 69 L315 83 Z" fill="#5d98cc"/>
+
+  <text x="320" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34546c">HASH HALKASI</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668196">Saat yönündeki ilk düğüm</text>
+
+  <g filter="url(#shadow)">
+    <rect x="292" y="35" width="56" height="28" rx="14" fill="#a9d6f5" stroke="#7eb8df"/>
+    <text x="320" y="53" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#245875">Sunucu A</text>
+
+    <rect x="402" y="142" width="56" height="28" rx="14" fill="#b9e5c7" stroke="#88c79e"/>
+    <text x="430" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#286045">Sunucu B</text>
+
+    <rect x="292" y="257" width="56" height="28" rx="14" fill="#d8c9f2" stroke="#ae98dc"/>
+    <text x="320" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#59417d">Sunucu C</text>
+
+    <rect x="182" y="142" width="56" height="28" rx="14" fill="#ffd6a6" stroke="#eab278"/>
+    <text x="210" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#7b4d1f">Sunucu D</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <circle cx="268" cy="91" r="7" fill="#f6a95b"/>
+    <text x="268" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">K</text>
+    <circle cx="375" cy="104" r="7" fill="#74b6e9"/>
+    <text x="375" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">K</text>
+    <circle cx="390" cy="207" r="7" fill="#9b82d2"/>
+    <text x="390" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">K</text>
+    <circle cx="245" cy="218" r="7" fill="#f0a661"/>
+    <text x="245" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">K</text>
+  </g>
+
+  <g opacity="0.95">
+    <line x1="43" y1="92" x2="153" y2="92" stroke="#91abc0" stroke-width="1.5"/>
+    <polygon points="153,92 145,87 145,97" fill="#91abc0"/>
+    <rect x="25" y="70" width="114" height="43" rx="12" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="82" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496579">Anahtarlar</text>
+    <text x="82" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71899a">Hash konumu</text>
+  </g>
+
+  <g>
+    <path d="M383 78 C434 54 489 63 520 98" fill="none" stroke="#7aa3c0" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <polygon points="520,98 510,96 515,87" fill="#7aa3c0"/>
+    <rect x="490" y="72" width="124" height="48" rx="13" fill="#fff7eb" stroke="#f0c786" filter="url(#shadow)"/>
+    <circle cx="510" cy="96" r="9" fill="#f4b978"/>
+    <text x="510" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">+</text>
+    <text x="555" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805b2f">Yeni düğüm</text>
+    <text x="555" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#96754d">Sadece yakın aralık</text>
+  </g>
+
+  <g>
+    <rect x="466" y="202" width="148" height="65" rx="14" fill="#ffffff" opacity="0.9" filter="url(#shadow)"/>
+    <path d="M484 225 L502 225" stroke="#f4b978" stroke-width="7" stroke-linecap="round"/>
+    <text x="514" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7180">Taşınan veri</text>
+    <path d="M484 249 L502 249" stroke="#8fcbb0" stroke-width="7" stroke-linecap="round"/>
+    <text x="514" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7180">Kalan veri</text>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="25" y="226" width="130" height="42" rx="13" fill="#e7f3ff" filter="url(#shadow)"/>
+    <text x="90" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47708d">Sanal düğümler</text>
+    <text x="90" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f899b">Dengeli yük</text>
+    <path d="M155 242 C174 237 182 225 190 205" fill="none" stroke="#82a9c4" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <polygon points="190,205 182,211 192,215" fill="#82a9c4"/>
+  </g>
+</svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#d9f2e2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55708a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="322" cy="158" r="117" fill="#d9ecf4" opacity="0.34"/>
+  <circle cx="322" cy="158" r="89" fill="none" stroke="#a9cad7" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#29435a">
+    <text x="24" y="31" font-weight="700" fill="#35546b">VERİ PARALELLİĞİ</text>
+    <text x="24" y="48" fill="#638096">Aynı işlem · çoklu veri</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="91" width="126" height="137" rx="18" fill="#ffffff"/>
+    <rect x="490" y="91" width="126" height="137" rx="18" fill="#ffffff"/>
+    <rect x="220" y="96" width="200" height="127" rx="24" fill="url(#core)" stroke="#a8cbd2" stroke-width="1.5"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#29435a">
+    <text x="49" y="117" font-weight="700">Giriş Vektörleri</text>
+    <text x="520" y="117" font-weight="700">Sonuç Vektörü</text>
+    <text x="274" y="121" font-weight="700" font-size="13">SIMD Kayıt</text>
+    <text x="251" y="139" fill="#567487">Tek komut · 8 şerit</text>
+  </g>
+
+  <g>
+    <text x="42" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54728a">A</text>
+    <text x="42" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54728a">B</text>
+    <g fill="#b8d8fa" stroke="#7faed8">
+      <rect x="59" y="130" width="18" height="22" rx="4"/><rect x="79" y="130" width="18" height="22" rx="4"/><rect x="99" y="130" width="18" height="22" rx="4"/><rect x="119" y="130" width="18" height="22" rx="4"/>
+    </g>
+    <g fill="#c7ead3" stroke="#80bc98">
+      <rect x="59" y="173" width="18" height="22" rx="4"/><rect x="79" y="173" width="18" height="22" rx="4"/><rect x="99" y="173" width="18" height="22" rx="4"/><rect x="119" y="173" width="18" height="22" rx="4"/>
+    </g>
+  </g>
+
+  <path d="M151 151 H204" fill="none" stroke="#6f9bb0" stroke-width="2.5"/>
+  <polygon points="211,151 201,145 201,157" fill="#6f9bb0"/>
+  <path d="M151 185 H204" fill="none" stroke="#6f9bb0" stroke-width="2.5"/>
+  <polygon points="211,185 201,179 201,191" fill="#6f9bb0"/>
+
+  <g>
+    <rect x="243" y="151" width="154" height="42" rx="12" fill="#ffffff" opacity="0.82"/>
+    <g>
+      <rect x="251" y="159" width="15" height="26" rx="4" fill="#add2f7"/>
+      <rect x="269" y="159" width="15" height="26" rx="4" fill="#add2f7"/>
+      <rect x="287" y="159" width="15" height="26" rx="4" fill="#add2f7"/>
+      <rect x="305" y="159" width="15" height="26" rx="4" fill="#add2f7"/>
+      <rect x="323" y="159" width="15" height="26" rx="4" fill="#add2f7"/>
+      <rect x="341" y="159" width="15" height="26" rx="4" fill="#add2f7"/>
+      <rect x="359" y="159" width="15" height="26" rx="4" fill="#add2f7"/>
+      <rect x="377" y="159" width="12" height="26" rx="4" fill="#add2f7"/>
+    </g>
+    <text x="315" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#35627e">+</text>
+  </g>
+
+  <path d="M421 172 H468" fill="none" stroke="#6f9bb0" stroke-width="2.5"/>
+  <polygon points="476,172 466,166 466,178" fill="#6f9bb0"/>
+
+  <g fill="#e4c8f4" stroke="#b18ac8">
+    <rect x="508" y="151" width="18" height="27" rx="4"/>
+    <rect x="528" y="151" width="18" height="27" rx="4"/>
+    <rect x="548" y="151" width="18" height="27" rx="4"/>
+    <rect x="568" y="151" width="18" height="27" rx="4"/>
+    <rect x="508" y="183" width="18" height="20" rx="4" opacity="0.55"/>
+  </g>
+  <text x="507" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#7d5a91">C₀ ... C₇</text>
+
+  <g filter="url(#shadow)">
+    <rect x="39" y="256" width="135" height="43" rx="14" fill="#fff5d9"/>
+    <rect x="253" y="256" width="135" height="43" rx="14" fill="#e9e2fa"/>
+    <rect x="466" y="256" width="135" height="43" rx="14" fill="#dff2ed"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e5668">
+    <text x="106" y="276" text-anchor="middle" font-weight="700">Bağımsız Döngü</text>
+    <text x="106" y="290" text-anchor="middle" fill="#718493">Vektörleşmeye uygun</text>
+    <text x="320" y="276" text-anchor="middle" font-weight="700">Bellek Erişimi</text>
+    <text x="320" y="290" text-anchor="middle" fill="#718493">Hizalama · önbellek</text>
+    <text x="533" y="276" text-anchor="middle" font-weight="700">Kuyruk İşlemi</text>
+    <text x="533" y="290" text-anchor="middle" fill="#718493">Kalanlar: skaler</text>
+  </g>
+
+  <path d="M106 246 V234 Q106 226 116 226 H212" fill="none" stroke="#c7a962" stroke-width="1.5"/>
+  <polygon points="220,226 210,221 210,231" fill="#c7a962"/>
+  <path d="M320 246 V231" fill="none" stroke="#9279ae" stroke-width="1.5"/>
+  <polygon points="320,223 315,233 325,233" fill="#9279ae"/>
+  <path d="M533 246 V236 Q533 228 520 228 H432" fill="none" stroke="#75ae9a" stroke-width="1.5"/>
+  <polygon points="424,228 434,223 434,233" fill="#75ae9a"/>
+</svg>

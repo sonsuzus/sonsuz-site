@@ -11,9 +11,13 @@ tags:
   - ağaçlar
   - algoritmalar
 toc: true
+image: /img/persistent-veri-yapilariyla-77.png
 ---
 
 Bir uygulamanın geçmişini saklamak çoğu zaman ya pahalı kopyalama ya da karmaşık geri alma kayıtları anlamına gelir. Persistent veri yapıları bu ikilemi değiştirir: Bir ağacı güncellediğinizde eski sürüm bozulmaz, bunun yerine yeni bir sürüm üretilir. Böylece sürüm 3'teki bir değere bakmak için günlük taramak gerekmez; doğrudan o sürümün köküne ulaşırsınız. Bu yaklaşım, fonksiyonel programlamanın değişmezlik fikrini veri yapılarının kalbine taşır.
+
+![persistent-veri-yapilariyla-77](/img/persistent-veri-yapilariyla-77.svg)
+
 ``
 ## Persistent olmak ne demektir?
 

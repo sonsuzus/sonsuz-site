@@ -9,6 +9,7 @@ tags:
   - mo algoritması
   - sorgular
   - c++
+image: /img/mo-algoritmasi-cevrimdisi-21.png
 ---
 
 Bir dizideki çok sayıda aralık sorgusuna cevap vermek, ilk bakışta masum görünür: Her sorgu için ilgili aralığı dolaşır, sonucu hesaplar ve devam edersiniz. Ancak $N=Q=10^5$ olduğunda, her sorguyu tek tek taramak yaklaşık $O(NQ)$ maliyet üretir. İşte Mo Algoritması tam burada sahneye çıkar: Sorguları akıllıca yeniden sıralayarak, önceki sorgudan elde edilen bilgiyi mümkün olduğunca korur.
@@ -79,3 +80,6 @@ Karmaşıklığın sezgisi şöyledir: Yaklaşık $\sqrt{N}$ blok vardır. Sol i
 | Sorgular çevrimiçi geliyor | Hayır | Sıralama için tüm sorgular gerekir |
 
 Özetle Mo Algoritması, tek tek sorguları hızlandırmaktan çok, **sorgular arasındaki geçişi ucuzlatır**. Bu bakış açısını kavradığınızda, aralık problemlerinde yalnızca sonucu değil, pencerenin nasıl evrildiğini de düşünmeye başlarsınız.
+
+![mo-algoritmasi-cevrimdisi-21](/img/mo-algoritmasi-cevrimdisi-21.svg)
+

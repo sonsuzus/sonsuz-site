@@ -9,6 +9,7 @@ tags:
   - veri yapıları
   - metin işleme
 toc: true
+image: /img/suffix-array-ve-21.png
 ---
 
 Bir kitap arşivinde, DNA dizisinde ya da milyonlarca log satırında belirli bir ifadeyi aradığınızı düşünün. Klasik yöntemle metni baştan sona taramak çoğu zaman yeterlidir; fakat aynı dev metinde binlerce farklı sorgu çalıştırılacaksa maliyet hızla büyür. Suffix Tree ve Suffix Array, metni bir kez ön işleyip sonraki örüntü aramalarını çok daha hızlı hale getiren iki güçlü veri yapısıdır.
@@ -60,3 +61,6 @@ print(find_matches(text, "ana"))  # [3, 1] sıralı son ek düzeninde dönebilir
 Bu kodun `sorted` çağrısı son ek kopyaları üretebildiği için dev metinlerde ideal değildir; yine de fikri görünür kılar. Üretim sistemlerinde indeks tabanlı karşılaştırma, radix sort, LCP dizisi ve ikili arama kullanmak daha doğrudur.
 
 Özetle, çok sayıda sorgu ve en düşük arama gecikmesi hedefleniyorsa Suffix Tree etkileyici bir seçenektir. Bellek bütçesi, uygulama sadeliği ve pratik performans öndeyse Suffix Array çoğu zaman daha mantıklı tercihtir. İkisi de "metni tekrar tekrar tarama" alışkanlığını bırakıp, metni akıllı bir indekse dönüştürmenin zarif yollarıdır.
+
+![suffix-array-ve-21](/img/suffix-array-ve-21.svg)
+

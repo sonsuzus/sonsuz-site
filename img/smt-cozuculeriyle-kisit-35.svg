@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#767fe8"/>
+      <stop offset="100%" stop-color="#5864c9"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#71809b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#71809b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="51" r="71" fill="#ccecf1" opacity="0.25"/>
+  <circle cx="585" cy="277" r="95" fill="#dceacc" opacity="0.34"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40516a">SMT İLE AKILLI ARAMA VE DOĞRULAMA</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">Kurallar → model → karar</text>
+
+  <!-- Input cards -->
+  <g filter="url(#softShadow)">
+    <rect x="31" y="82" width="143" height="61" rx="15" fill="#fff4dc"/>
+    <rect x="31" y="158" width="143" height="61" rx="15" fill="#e2f4ed"/>
+    <rect x="31" y="234" width="143" height="61" rx="15" fill="#e8edff"/>
+  </g>
+
+  <circle cx="56" cy="112" r="13" fill="#f5c86c"/>
+  <path d="M51 109h10M56 104v10" stroke="#826020" stroke-width="2" stroke-linecap="round"/>
+  <text x="78" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a5261">Karar değişkenleri</text>
+  <text x="78" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e7280">zaman · kaynak</text>
+
+  <circle cx="56" cy="188" r="13" fill="#79c9aa"/>
+  <path d="M50 188l4 4 8-9" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="78" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a5261">Mantıksal kısıtlar</text>
+  <text x="78" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e7280">ve · veya · sınırlar</text>
+
+  <circle cx="56" cy="264" r="13" fill="#9da9eb"/>
+  <path d="M50 268l12-8M50 260l12 8" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="78" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a5261">Amaç fonksiyonu</text>
+  <text x="78" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e7280">süreyi en aza indir</text>
+
+  <!-- input connectors -->
+  <path d="M174 112H215" fill="none" stroke="#b0b9ca" stroke-width="2"/>
+  <path d="M174 188H215" fill="none" stroke="#b0b9ca" stroke-width="2"/>
+  <path d="M174 264H215" fill="none" stroke="#b0b9ca" stroke-width="2"/>
+  <polygon points="215,112 207,107 207,117" fill="#b0b9ca"/>
+  <polygon points="215,188 207,183 207,193" fill="#b0b9ca"/>
+  <polygon points="215,264 207,259 207,269" fill="#b0b9ca"/>
+
+  <!-- Core -->
+  <g filter="url(#shadow)">
+    <rect x="218" y="76" width="191" height="220" rx="27" fill="url(#core)"/>
+    <rect x="230" y="88" width="167" height="196" rx="21" fill="#ffffff" opacity="0.11"/>
+  </g>
+  <circle cx="313" cy="139" r="39" fill="#ffffff" opacity="0.16"/>
+  <circle cx="313" cy="139" r="28" fill="#ffffff" opacity="0.18"/>
+  <path d="M298 139h30M313 124v30" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="313" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Z3 SMT Çözücüsü</text>
+  <text x="313" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e9ebff">Kısıt yayılımı</text>
+  <text x="313" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e9ebff">Akıllı arama</text>
+  <rect x="258" y="248" width="110" height="23" rx="11" fill="#ffffff" opacity="0.18"/>
+  <text x="313" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">MODELİ SOR</text>
+
+  <!-- Output connector -->
+  <path d="M409 186H444" fill="none" stroke="#9aa8c0" stroke-width="2"/>
+  <polygon points="444,186 436,181 436,191" fill="#9aa8c0"/>
+  <path d="M444 111V260" fill="none" stroke="#c0c9d7" stroke-width="2"/>
+
+  <!-- Outcome cards -->
+  <path d="M444 111H466" fill="none" stroke="#c0c9d7" stroke-width="2"/>
+  <polygon points="466,111 458,106 458,116" fill="#c0c9d7"/>
+  <path d="M444 186H466" fill="none" stroke="#c0c9d7" stroke-width="2"/>
+  <polygon points="466,186 458,181 458,191" fill="#c0c9d7"/>
+  <path d="M444 260H466" fill="none" stroke="#c0c9d7" stroke-width="2"/>
+  <polygon points="466,260 458,255 458,265" fill="#c0c9d7"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="467" y="82" width="142" height="58" rx="15" fill="#ddf3e8"/>
+    <rect x="467" y="157" width="142" height="58" rx="15" fill="#ffe6e8"/>
+    <rect x="467" y="232" width="142" height="58" rx="15" fill="#ececf7"/>
+  </g>
+
+  <circle cx="491" cy="111" r="12" fill="#54b889"/>
+  <path d="M485 111l4 4 8-9" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="512" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385b4d">sat</text>
+  <text x="512" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587267">Çözüm modeli</text>
+
+  <circle cx="491" cy="186" r="12" fill="#e5767b"/>
+  <path d="M486 181l10 10M496 181l-10 10" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="512" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#824b53">unsat</text>
+  <text x="512" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6267">İhlal yok · kanıt</text>
+
+  <circle cx="491" cy="261" r="12" fill="#9b9aae"/>
+  <text x="491" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">?</text>
+  <text x="512" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#555666">unknown</text>
+  <text x="512" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#747487">Modeli sadeleştir</text>
+</svg>
