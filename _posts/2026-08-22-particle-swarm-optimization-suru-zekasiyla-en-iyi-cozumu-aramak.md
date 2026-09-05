@@ -8,7 +8,11 @@ tags:
   - particle swarm optimization
   - optimizasyon
   - sürü zekâsı
+image: /img/particle-swarm-optimization-71.png
 ---
+
+![particle-swarm-optimization-71](/img/particle-swarm-optimization-71.svg)
+
 
 Bir kuş sürüsünün yiyecek ararken lider beklemeden, hem kendi deneyiminden hem de komşularının hareketlerinden öğrenmesini düşünün. Particle Swarm Optimization (PSO), tam olarak bu gözlemden doğan sezgisel bir optimizasyon algoritmasıdır. Türev hesabına ihtiyaç duymadan karmaşık, doğrusal olmayan ve hatta gürültülü problemlerde iyi çözümler arar. Amaç, bir hedef fonksiyonun en küçük ya da en büyük değerini bulmaktır; sürü ise çözüm uzayında dolaşan aday çözümlerden oluşur.
 ``

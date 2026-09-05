@@ -9,6 +9,7 @@ tags:
   - apı
   - javascript
 toc: true
+image: /img/graphql-ile-veri-29.png
 ---
 
 Modern uygulamalarda veriyi almak, çoğu zaman veriyi göstermekten daha karmaşık hâle gelir. Geleneksel REST API'lerde bir ekran için birden fazla uç noktaya istek atmak veya gereğinden büyük JSON yanıtları indirmek sık rastlanan bir durumdur. GraphQL, istemcinin ihtiyaç duyduğu alanları açıkça tarif ettiği bir sorgu dili ve API çalışma zamanı sunar. Böylece mobil uygulama, web arayüzü ve yönetim paneli aynı veri kaynağından farklı şekillerde beslenebilir.
@@ -92,3 +93,6 @@ GraphQL'in esnekliği kontrol edilmezse pahalı iç içe sorgulara dönüşebili
 | Büyük liste | Sayfalama ve `first/after` parametreleri |
 
 Sonuç olarak GraphQL, “tek endpoint her derdi çözer” sloganından çok daha fazlasıdır: güçlü bir API sözleşmesidir. İyi tasarlanmış bir şema, sınırlandırılmış sorgu maliyetleri ve sayfalama kurallarıyla birleştiğinde, istemci ekiplerinin daha az gereksiz veri taşıyarak daha hızlı ve esnek arayüzler geliştirmesini sağlar.
+
+![graphql-ile-veri-29](/img/graphql-ile-veri-29.svg)
+

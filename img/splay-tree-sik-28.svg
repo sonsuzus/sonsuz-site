@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="focus" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffdca9"/>
+      <stop offset="100%" stop-color="#ffbfa6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6f8395" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#708696" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="69" cy="47" r="64" fill="#dceefa" opacity="0.5"/>
+  <circle cx="592" cy="280" r="88" fill="#dff0d9" opacity="0.55"/>
+
+  <rect x="24" y="18" width="592" height="43" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="52" cy="39" r="14" fill="#9bdbca"/>
+  <path d="M47 35 L52 30 L57 35 L57 43 L52 48 L47 43 Z" fill="#ffffff" opacity="0.9"/>
+  <text x="76" y="37" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#334b5c">Splay Tree</text>
+  <text x="76" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a7e8b">Erişilen düğüm köke taşınır</text>
+
+  <rect x="24" y="82" width="221" height="164" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="43" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526978">Önce: Zig-Zig</text>
+  <text x="43" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81929b">30 düğümüne erişim</text>
+
+  <path d="M128 151 L89 181" stroke="#7891a0" stroke-width="2.5" fill="none"/>
+  <path d="M89 196 L59 219" stroke="#7891a0" stroke-width="2.5" fill="none"/>
+  <path d="M89 196 L122 219" stroke="#7891a0" stroke-width="2.5" fill="none"/>
+
+  <circle cx="128" cy="145" r="20" fill="#b8d9f3" filter="url(#soft)"/>
+  <text x="128" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33576d">100</text>
+  <circle cx="89" cy="190" r="20" fill="#b8d9f3" filter="url(#soft)"/>
+  <text x="89" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33576d">50</text>
+  <circle cx="59" cy="225" r="17" fill="url(#focus)" filter="url(#soft)"/>
+  <text x="59" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#764b3c">30</text>
+  <circle cx="122" cy="225" r="17" fill="#dceaf4" filter="url(#soft)"/>
+  <text x="122" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#567080">70</text>
+
+  <path d="M263 163 C282 143 302 143 320 163" stroke="#e49368" stroke-width="3" fill="none"/>
+  <polygon points="317,156 328,166 314,169" fill="#e49368"/>
+  <text x="294" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#c2714e">2 rotasyon</text>
+  <rect x="260" y="180" width="69" height="28" rx="14" fill="#fff1dd"/>
+  <text x="294" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b66a49">Zig-Zig</text>
+
+  <rect x="345" y="82" width="271" height="164" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="365" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526978">Sonra: Uyarlanmış ağaç</text>
+  <text x="365" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81929b">Sık kullanılan anahtar kökte</text>
+
+  <path d="M478 151 L435 184" stroke="#7891a0" stroke-width="2.5" fill="none"/>
+  <path d="M478 151 L525 184" stroke="#7891a0" stroke-width="2.5" fill="none"/>
+  <path d="M525 198 L569 220" stroke="#7891a0" stroke-width="2.5" fill="none"/>
+
+  <circle cx="478" cy="145" r="23" fill="url(#focus)" filter="url(#soft)"/>
+  <text x="478" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#764b3c">30</text>
+  <circle cx="435" cy="190" r="19" fill="#dceaf4" filter="url(#soft)"/>
+  <text x="435" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#567080">20</text>
+  <circle cx="525" cy="190" r="20" fill="#b8d9f3" filter="url(#soft)"/>
+  <text x="525" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33576d">50</text>
+  <circle cx="569" cy="225" r="17" fill="#b8d9f3" filter="url(#soft)"/>
+  <text x="569" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33576d">100</text>
+
+  <rect x="24" y="264" width="180" height="39" rx="14" fill="#e7f3ff" filter="url(#soft)"/>
+  <circle cx="45" cy="283" r="9" fill="#79b7df"/>
+  <path d="M41 283 L44 286 L50 279" stroke="#ffffff" stroke-width="2" fill="none"/>
+  <text x="62" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466578">BST sırası korunur</text>
+
+  <rect x="218" y="264" width="193" height="39" rx="14" fill="#e9f5e4" filter="url(#soft)"/>
+  <circle cx="239" cy="283" r="9" fill="#8fc982"/>
+  <path d="M235 283 L238 286 L244 279" stroke="#ffffff" stroke-width="2" fill="none"/>
+  <text x="256" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496c4d">Amortize O(log n)</text>
+
+  <rect x="425" y="264" width="191" height="39" rx="14" fill="#fff0dd" filter="url(#soft)"/>
+  <circle cx="446" cy="283" r="9" fill="#edaa72"/>
+  <path d="M443 279 L443 287 L450 283 Z" fill="#ffffff"/>
+  <text x="463" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b6043">Tekrar erişim: hızlı</text>
+</svg>

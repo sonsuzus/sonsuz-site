@@ -9,9 +9,13 @@ tags:
   - büyük veri
   - veri mühendisliği
   - apache spark
+image: /img/parquet-dosya-formati-27.png
 ---
 
 Büyük veri dünyasında yalnızca veriyi saklamak yetmez; onu ekonomik biçimde saklamak ve gerektiğinde ışık hızında okumak gerekir. Parquet, özellikle analitik iş yükleri için tasarlanmış sütun bazlı (columnar) bir dosya formatıdır. CSV gibi satır bazlı formatların aksine, aynı sütuna ait değerleri yan yana tutar. Bu küçük tasarım farkı; daha güçlü sıkıştırma, daha az disk okuması ve Spark, Trino ya da DuckDB gibi araçlarda belirgin performans kazancı anlamına gelir.
+
+![parquet-dosya-formati-27](/img/parquet-dosya-formati-27.svg)
+
 ``
 
 Bir e-ticaret tablosunu düşünelim: `siparis_id`, `tarih`, `sehir`, `urun`, `tutar` ve `durum` alanları olsun. Analizlerin çoğu toplam ciroyu hesaplarken yalnızca `tarih` ve `tutar` sütunlarına ihtiyaç duyar. CSV veya JSON okuyan bir motor, satırlardaki diğer alanları da taramak zorunda kalabilir. Parquet ise sadece gerekli sütun parçalarını okur. Bu yaklaşıma **column pruning** denir: kullanılmayan sütunlar daha diskten alınmadan elenir.

@@ -9,9 +9,13 @@ tags:
   - sistem tasarımı
   - algoritmalar
 toc: true
+image: /img/rate-limiting-algoritmalari-77.png
 ---
 
 Bir API’nin başarısı bazen aldığı istek sayısıyla ölçülür; fakat kontrolsüz trafik, başarı hikâyesini saniyeler içinde kesinti raporuna dönüştürebilir. Rate limiting, belirli bir kullanıcı, IP adresi, API anahtarı veya uç nokta için kabul edilen istek miktarını sınırlayan savunma katmanıdır. Amaç yalnızca kötü niyetli botları engellemek değildir: adil kaynak paylaşımı sağlamak, maliyetleri öngörülebilir tutmak ve veritabanı gibi hassas bağımlılıkları korumaktır.
+
+![rate-limiting-algoritmalari-77](/img/rate-limiting-algoritmalari-77.svg)
+
 ``
 
 Temel problem basittir: Bir zaman aralığında en fazla $L$ isteğe izin verilsin. Ortalama sürdürülebilir hız kabaca $r = L/T$ olarak yazılabilir; burada $T$ pencere uzunluğudur. Ancak gerçek dünyada trafik düzenli akmaz. Kullanıcılar sayfayı yeniler, istemciler hata sonrası yeniden dener ve kampanyalar ani zirveler üretir. Bu nedenle algoritma seçimi, yalnızca ortalamayı değil, **ani patlamalara ne kadar tolerans verileceğini** de belirler.

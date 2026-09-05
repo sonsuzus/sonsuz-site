@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8e9ff"/>
+      <stop offset="100%" stop-color="#bed9f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66849b" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66849b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="321" cy="160" r="118" fill="#dceff0" opacity="0.28"/>
+  <circle cx="321" cy="160" r="88" fill="none" stroke="#a9cdd4" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.65"/>
+
+  <!-- Bağlantılar -->
+  <path d="M163 87 C191 87 201 111 224 126" fill="none" stroke="#6b9cb3" stroke-width="2"/>
+  <polygon points="224,126 215,124 220,117" fill="#6b9cb3"/>
+  <path d="M163 160 L219 160" fill="none" stroke="#6b9cb3" stroke-width="2"/>
+  <polygon points="219,160 210,155 210,165" fill="#6b9cb3"/>
+  <path d="M163 233 C192 233 202 207 224 194" fill="none" stroke="#6b9cb3" stroke-width="2"/>
+  <polygon points="224,194 220,203 215,196" fill="#6b9cb3"/>
+
+  <path d="M419 137 C442 124 453 103 474 92" fill="none" stroke="#7897ba" stroke-width="2"/>
+  <polygon points="474,92 466,99 464,90" fill="#7897ba"/>
+  <path d="M423 160 L475 160" fill="none" stroke="#7897ba" stroke-width="2"/>
+  <polygon points="475,160 466,155 466,165" fill="#7897ba"/>
+  <path d="M419 184 C443 195 451 216 474 228" fill="none" stroke="#d47772" stroke-width="2"/>
+  <polygon points="474,228 464,230 467,221" fill="#d47772"/>
+
+  <!-- Kaynaklar -->
+  <g filter="url(#softShadow)">
+    <rect x="25" y="58" width="138" height="58" rx="15" fill="#e5f4e9" stroke="#b9dcbf"/>
+    <rect x="25" y="131" width="138" height="58" rx="15" fill="#fff1d8" stroke="#eed39e"/>
+    <rect x="25" y="204" width="138" height="58" rx="15" fill="#eee7fb" stroke="#d2c2ed"/>
+  </g>
+
+  <!-- kaynak ikonları -->
+  <rect x="40" y="75" width="24" height="22" rx="4" fill="#7fb68a"/>
+  <path d="M45 82h14M45 88h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="75" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345347" font-weight="600">Sunucu</text>
+  <text x="75" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567065">Node Exporter</text>
+
+  <rect x="40" y="148" width="24" height="22" rx="4" fill="#dfa75c"/>
+  <path d="M46 154h12M46 159h12M46 164h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="75" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76552d" font-weight="600">Uygulama</text>
+  <text x="75" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#886b42">Özel metrikler</text>
+
+  <rect x="40" y="221" width="24" height="22" rx="6" fill="#9b82c7"/>
+  <circle cx="52" cy="232" r="4" fill="#fff"/>
+  <text x="75" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#594575" font-weight="600">Konteyner</text>
+  <text x="75" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756387">Servis keşfi</text>
+
+  <!-- Merkezi Prometheus -->
+  <g filter="url(#shadow)">
+    <rect x="220" y="104" width="202" height="112" rx="25" fill="url(#core)" stroke="#91b9d8" stroke-width="1.5"/>
+  </g>
+  <circle cx="321" cy="137" r="22" fill="#ef7d62"/>
+  <path d="M309 141 L316 133 L322 139 L333 126" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="309" cy="141" r="2.5" fill="#fff"/>
+  <circle cx="316" cy="133" r="2.5" fill="#fff"/>
+  <circle cx="322" cy="139" r="2.5" fill="#fff"/>
+  <circle cx="333" cy="126" r="2.5" fill="#fff"/>
+  <text x="321" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#264e69" font-weight="700">Prometheus</text>
+  <text x="321" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456b83">Topla • Sakla • Sorgula</text>
+
+  <!-- Pull etiketi -->
+  <g filter="url(#softShadow)">
+    <rect x="171" y="132" width="45" height="24" rx="10" fill="#ffffff" stroke="#c8dce7"/>
+  </g>
+  <text x="193.5" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7187">15 sn</text>
+
+  <!-- Çıktılar -->
+  <g filter="url(#softShadow)">
+    <rect x="475" y="58" width="140" height="58" rx="15" fill="#e7f2ff" stroke="#b8d4f0"/>
+    <rect x="475" y="131" width="140" height="58" rx="15" fill="#eaf6e8" stroke="#bedbbc"/>
+    <rect x="475" y="204" width="140" height="58" rx="15" fill="#ffe9e5" stroke="#efc0b8"/>
+  </g>
+
+  <rect x="490" y="74" width="25" height="24" rx="5" fill="#669bd0"/>
+  <path d="M495 91 L500 85 L505 88 L511 79" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="526" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345d83" font-weight="600">PromQL</text>
+  <text x="526" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#577897">rate ve ortalama</text>
+
+  <rect x="490" y="147" width="25" height="24" rx="5" fill="#76b778"/>
+  <path d="M495 165v-9M501 165v-14M507 165v-6" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="526" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c683d" font-weight="600">Grafana</text>
+  <text x="526" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f805f">Canlı pano</text>
+
+  <rect x="490" y="220" width="25" height="24" rx="12" fill="#df776d"/>
+  <path d="M502.5 225v9M498 234h9" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="526" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#85463f" font-weight="600">Alarm</text>
+  <text x="526" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#98625c">Alertmanager</text>
+
+  <!-- Alt bilgi -->
+  <path d="M91 288 H549" stroke="#c4d9d8" stroke-width="1"/>
+  <circle cx="158" cy="288" r="4" fill="#80b58a"/>
+  <text x="168" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58716d">CPU</text>
+  <circle cx="258" cy="288" r="4" fill="#7ca7d7"/>
+  <text x="268" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58716d">Bellek</text>
+  <circle cx="379" cy="288" r="4" fill="#dca765"/>
+  <text x="389" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58716d">Disk ve Ağ</text>
+</svg>

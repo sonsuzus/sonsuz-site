@@ -9,6 +9,7 @@ tags:
   - rest
   - ıdempotency
   - backend
+image: /img/idempotent-api-tasarimi-18.png
 ---
 
 Dağıtık sistemlerde aynı HTTP isteğinin yalnızca bir kez ulaştığını varsaymak, yağmurda şemsiyesiz dolaşmak gibidir: bazen sorun çıkmaz, ama çıktığında ıslanırsınız. Ağ zaman aşımları, istemcinin otomatik yeniden denemesi ve kullanıcıların iki kez tıklaması; ödeme alma, sipariş oluşturma veya e-posta gönderme gibi işlemleri istemeden çoğaltabilir. İdempotent API tasarımı, aynı isteğin tekrar edilmesi hâlinde sistemin nihai durumunu güvenli biçimde korur.
@@ -61,3 +62,6 @@ Bu örnek fikri anlatır; üretimde yarış koşulları için anahtar alanında 
 Anahtarları sonsuza dek saklamak gerekmez. Ödeme gibi kritik işlemlerde iş gereksinimine göre 24 saat, birkaç gün veya daha uzun bir TTL seçilebilir. Ayrıca idempotency, her şeyi geri alan sihirli bir değnek değildir: E-posta, kuyruk mesajı ve üçüncü taraf çağrıları için transactional outbox, mesaj tüketicilerinde deduplikasyon ve telafi işlemleri gibi ek desenler gerekebilir.
 
 Sonuç olarak güvenli API, “istek kaç kez geldi?” sorusundan çok “bu istek hangi kullanıcı niyetini temsil ediyor?” sorusuna odaklanır. İdempotency key, atomik veri yazımı ve iyi tanımlanmış hata yanıtları birleştiğinde, ağın kararsızlığı kullanıcılarınıza çift ödeme olarak dönmez.
+
+![idempotent-api-tasarimi-18](/img/idempotent-api-tasarimi-18.svg)
+

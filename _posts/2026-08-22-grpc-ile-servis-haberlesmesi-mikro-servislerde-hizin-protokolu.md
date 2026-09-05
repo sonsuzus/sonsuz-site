@@ -9,9 +9,13 @@ tags:
   - mikro servisler
   - protocol buffers
 toc: true
+image: /img/grpc-ile-servis-59.png
 ---
 
 Mikro servis mimarisinde servisler birbirinden bağımsız çalışır; ancak işin sihirli kısmı bu servislerin güvenilir ve hızlı biçimde konuşabilmesidir. REST, insan tarafından okunabilir JSON yapısıyla harika bir başlangıç noktasıdır. Buna karşın çok yoğun trafik, düşük gecikme ve güçlü tip güvenliği gerektiğinde gRPC sahneye çıkar. HTTP/2 üzerinde çalışan gRPC, veriyi Protocol Buffers (Protobuf) ile ikili formatta taşıyarak ağdaki gereksiz yükü azaltır.
+
+![grpc-ile-servis-59](/img/grpc-ile-servis-59.svg)
+
 ``
 ## Neden gRPC hızlıdır?
 

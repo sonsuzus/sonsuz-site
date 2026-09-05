@@ -9,6 +9,7 @@ tags:
   - polinom çarpımı
   - algoritmalar
 toc: true
+image: /img/fft-ile-hizli-84.png
 ---
 
 İki uzun polinomu klasik yöntemle çarpmak, her katsayının diğer tüm katsayılarla buluştuğu pahalı bir danstır. Derecesi milyonlara yaklaşan polinomlarda veya binlerce basamaklı tamsayılarda bu dans hızla kabusa dönüşür. Hızlı Fourier Dönüşümü (FFT), çarpma işlemini farklı bir uzaya taşıyarak problemi akıllıca küçültür: çarpmak yerine değerlendirir, noktasal çarpar ve geri dönüştürür.
@@ -32,6 +33,9 @@ Bu formül basit görünür; ancak her katsayı için çok sayıda çarpım gere
 | Klasik çarpım | Her katsayı çiftini çarp | $O(n^2)$ | Küçük diziler, basit kod |
 | Karatsuba | Çarpımları böl-parçala ile azalt | Yaklaşık $O(n^{1.585})$ | Orta büyüklükte sayılar |
 | FFT | Değerlendir, noktasal çarp, ters dönüştür | $O(n\log n)$ | Büyük polinomlar ve dev tamsayılar |
+
+![fft-ile-hizli-84](/img/fft-ile-hizli-84.svg)
+
 
 ## Dönüşümün arkasındaki fikir
 

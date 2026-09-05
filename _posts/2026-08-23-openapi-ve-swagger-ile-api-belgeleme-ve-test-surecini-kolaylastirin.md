@@ -11,6 +11,7 @@ tags:
   - rest
   - dokümantasyon
 toc: true
+image: /img/openapi-ve-swagger-55.png
 ---
 
 Bir API geliştirmek, yalnızca çalışan endpoint'ler yazmaktan ibaret değildir. Bu endpoint'lerin hangi veriyi beklediği, hangi yanıtları döndüğü, hata durumlarında nasıl davranacağı ve yetkilendirmenin nasıl yapılacağı da açıkça anlatılmalıdır. İşte OpenAPI ve Swagger, API geliştiricileri ile API tüketicileri arasındaki bu iletişim sorununu standartlaştırılmış, canlı ve test edilebilir bir sözleşmeye dönüştürür.
@@ -29,6 +30,9 @@ Swagger ise tarihsel olarak hem bu tanım formatının adı hem de onu kullanan 
 | Swagger UI | Etkileşimli dokümantasyon arayüzü | Tarayıcıdan endpoint çağırmak |
 | Swagger Editor | Tanım dosyası düzenleyicisi | YAML doğrulamak |
 | OpenAPI Generator | İstemci/sunucu kodu üretmek | TypeScript SDK üretmek |
+
+![openapi-ve-swagger-55](/img/openapi-ve-swagger-55.svg)
+
 
 Bu yaklaşımın merkezindeki fikir şudur: API'nin gerçek davranışı ile dokümantasyonu aynı kaynaktan beslenmelidir. Aksi halde doküman hızla eskir ve meşhur “dokümanda çalışıyor görünüyordu” cümlesi ortaya çıkar.
 

@@ -8,9 +8,13 @@ tags:
   - veri yapıları
   - treap
   - algoritmalar
+image: /img/treap-rastgeleligin-dengeli-32.png
 ---
 
 Bir ikili arama ağacında (BST) hızlı arama, ekleme ve silme isteriz; ancak anahtarlar sıralı gelirse ağaç bir çubuğa dönüşebilir. Treap, bu talihsiz senaryoyu rastgelelik yardımıyla büyük ölçüde engeller. Adı, **tree** ve **heap** kelimelerinin birleşimidir: Anahtarlara göre BST, rastgele önceliklere göre ise heap davranışı sergiler. Böylece AVL veya Kırmızı-Siyah ağaçların katı dengeleme kurallarına alternatif, zarif bir yaklaşım sunar.
+
+![treap-rastgeleligin-dengeli-32](/img/treap-rastgeleligin-dengeli-32.svg)
+
 ``
 
 Her düğüm iki değer taşır: arama için kullanılan `key` ve genellikle rastgele üretilen `priority`. Treap iki değişmezi aynı anda korur:

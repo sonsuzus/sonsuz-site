@@ -10,6 +10,7 @@ tags:
   - gpu
   - heterojen hesaplama
 toc: true
+image: /img/opencl-ile-heterojen-75.png
 ---
 
 Modern bilgisayarlarda CPU, GPU ve kimi zaman yapay zekâ hızlandırıcıları aynı problemi farklı güçlü yönleriyle çözebilir. OpenCL (Open Computing Language), bu donanım çeşitliliğini tek bir programlama modeli altında birleştiren açık bir standarttır. Amaç, yalnızca ekran kartını kullanmak değildir: Uygun işi uygun işlemciye vererek performans, enerji tüketimi ve taşınabilirlik arasında akıllı bir denge kurmaktır.
@@ -31,6 +32,9 @@ Burada $P$ paralelleştirilebilen oranı, $N$ ise etkin işlemci sayısını tem
 | Çekirdek yapısı | Az, karmaşık | Çok, sade | Cihaz sorgulama |
 | Bellek erişimi | Önbellek odaklı | Bant genişliği odaklı | Erişim düzeni tasarlama |
 | Tipik kullanım | Kontrol akışı | Görüntü, matris, simülasyon | Taşınabilir hesaplama |
+
+![opencl-ile-heterojen-75](/img/opencl-ile-heterojen-75.svg)
+
 
 ## OpenCL’in temel modeli
 

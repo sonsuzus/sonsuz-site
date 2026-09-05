@@ -9,6 +9,7 @@ tags:
   - apache kafka
   - mesaj kuyruğu
 toc: true
+image: /img/rabbitmq-ve-kafka-20.png
 ---
 
 Dağıtık sistemlerde servislerin birbirini beklemeden iletişim kurması, hem performans hem de dayanıklılık için kritik önemdedir. RabbitMQ ve Apache Kafka bu ihtiyacı karşılayan iki güçlü araçtır; ancak aynı problemi farklı felsefelerle çözerler. Biri görev dağıtan hızlı bir postacı, diğeri ise olayların değişmez tarihçesini tutan dev bir günlük gibi düşünülebilir.
@@ -78,3 +79,6 @@ producer.flush()
 ```
 
 Son karar “hangisi daha iyi?” değildir. Komutları güvenilir biçimde dağıtmak istiyorsanız RabbitMQ, olayları uzun süre saklayıp birçok sistemin kullanmasını istiyorsanız Kafka seçin. Hatta olgun mimarilerde ikisini birlikte kullanmak da son derece mantıklıdır.
+
+![rabbitmq-ve-kafka-20](/img/rabbitmq-ve-kafka-20.svg)
+

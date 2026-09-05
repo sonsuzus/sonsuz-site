@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#c9ddf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d879d" flood-opacity="0.19"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60798d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="67" cy="41" r="57" fill="#dceff0" opacity="0.48"/>
+  <circle cx="590" cy="281" r="74" fill="#e8e1f7" opacity="0.42"/>
+  <path d="M35 242 C123 211 130 292 212 274" fill="none" stroke="#b9ddd8" stroke-width="2" opacity="0.45"/>
+  <path d="M427 42 C493 15 549 72 616 43" fill="none" stroke="#c9d9ef" stroke-width="2" opacity="0.5"/>
+
+  <!-- Bağlantılar -->
+  <path d="M189 134 C213 134 216 148 237 148" fill="none" stroke="#7898ad" stroke-width="2.2"/>
+  <polygon points="237,148 228,143 228,153" fill="#7898ad"/>
+  <path d="M189 203 C211 203 215 180 237 180" fill="none" stroke="#7898ad" stroke-width="2.2"/>
+  <polygon points="237,180 228,175 228,185" fill="#7898ad"/>
+
+  <path d="M403 147 C424 147 426 113 449 113" fill="none" stroke="#7898ad" stroke-width="2.2"/>
+  <polygon points="449,113 440,108 440,118" fill="#7898ad"/>
+  <path d="M403 166 C424 166 428 170 449 170" fill="none" stroke="#7898ad" stroke-width="2.2"/>
+  <polygon points="449,170 440,165 440,175" fill="#7898ad"/>
+  <path d="M403 185 C424 185 427 227 449 227" fill="none" stroke="#7898ad" stroke-width="2.2"/>
+  <polygon points="449,227 440,222 440,232" fill="#7898ad"/>
+
+  <!-- Sol üst: API -->
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="91" width="147" height="87" rx="18" fill="#fffdf8"/>
+    <rect x="42" y="91" width="9" height="87" rx="4.5" fill="#f2b76d"/>
+    <rect x="65" y="109" width="30" height="27" rx="8" fill="#ffe3bc"/>
+    <path d="M73 116 h14 M73 122 h10 M73 128 h14" stroke="#b9782b" stroke-width="2" stroke-linecap="round"/>
+    <text x="106" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34485a" font-weight="700">API Uygulaması</text>
+    <text x="106" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647687">Endpoint'ler</text>
+    <text x="65" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a6752">Gerçek davranış</text>
+  </g>
+
+  <!-- Sol alt: kaynak -->
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="191" width="147" height="70" rx="18" fill="#fffdfd"/>
+    <rect x="42" y="191" width="9" height="70" rx="4.5" fill="#9b8fdb"/>
+    <path d="M68 211 h27 l7 7 v24 H68z" fill="#e6e1fc" stroke="#8677c8" stroke-width="1.5"/>
+    <path d="M95 211 v8 h8 M75 226 h19 M75 233 h14" fill="none" stroke="#7568ac" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="111" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34485a" font-weight="700">Kaynak Kod</text>
+    <text x="111" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647687">Sürümleme</text>
+  </g>
+
+  <!-- Merkez Sözleşme -->
+  <g filter="url(#shadow)">
+    <rect x="237" y="103" width="166" height="126" rx="24" fill="url(#core)" stroke="#a8c6df" stroke-width="1.2"/>
+    <circle cx="320" cy="137" r="25" fill="#ffffff" opacity="0.8"/>
+    <path d="M307 132 h26 M307 139 h18 M307 146 h26" stroke="#527fa3" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M332 128 l7 7 -7 7" fill="none" stroke="#527fa3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="320" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#294b66" font-weight="700">OpenAPI Sözleşmesi</text>
+    <text x="320" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55748b">YAML veya JSON</text>
+    <rect x="270" y="207" width="100" height="13" rx="6.5" fill="#ffffff" opacity="0.55"/>
+    <text x="320" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#527189">Tek doğruluk kaynağı</text>
+  </g>
+
+  <!-- Sağ Swagger UI -->
+  <g filter="url(#smallShadow)">
+    <rect x="449" y="76" width="149" height="73" rx="18" fill="#fafffc"/>
+    <rect x="449" y="76" width="9" height="73" rx="4.5" fill="#70c5a2"/>
+    <rect x="470" y="94" width="31" height="24" rx="5" fill="#d8f1e6"/>
+    <path d="M476 101 h19 M476 107 h13 M476 113 h17" stroke="#3b9a72" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="512" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34485a" font-weight="700">Swagger UI</text>
+    <text x="512" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798a">Belgele ve Dene</text>
+  </g>
+
+  <!-- Sağ kod üretim -->
+  <g filter="url(#smallShadow)">
+    <rect x="449" y="153" width="149" height="73" rx="18" fill="#fffdf9"/>
+    <rect x="449" y="153" width="9" height="73" rx="4.5" fill="#e1a56d"/>
+    <path d="M473 178 l-8 8 8 8 M494 178 l8 8 -8 8 M488 174 l-7 24" fill="none" stroke="#bd7b3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="512" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34485a" font-weight="700">Kod Üretimi</text>
+    <text x="512" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798a">İstemci ve SDK</text>
+  </g>
+
+  <!-- Sağ doğrulama -->
+  <g filter="url(#smallShadow)">
+    <rect x="449" y="230" width="149" height="62" rx="18" fill="#fdfcff"/>
+    <rect x="449" y="230" width="9" height="62" rx="4.5" fill="#a78bd0"/>
+    <circle cx="483" cy="260" r="15" fill="#ece4f8"/>
+    <path d="M476 260 l5 5 9-10" fill="none" stroke="#7657a9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="512" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34485a" font-weight="700">CI Doğrulama</text>
+    <text x="512" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798a">Kırıcı değişiklik</text>
+  </g>
+
+  <text x="42" y="45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7485" font-weight="700">API yaşam döngüsü</text>
+  <text x="42" y="64" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d929d">Standart sözleşme ile belge, test ve üretim</text>
+</svg>

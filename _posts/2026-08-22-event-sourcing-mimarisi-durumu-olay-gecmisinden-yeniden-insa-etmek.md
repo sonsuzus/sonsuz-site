@@ -8,6 +8,7 @@ tags:
   - event sourcing
   - yazılım mimarisi
   - domain-driven design
+image: /img/event-sourcing-mimarisi-33.png
 ---
 
 Bir banka hesabının bugünkü bakiyesini yalnızca tek bir `balance` alanında tutmak kolaydır; ancak bu değerin **nasıl** oluştuğunu anlamak zordur. Event Sourcing, sistemin mevcut durumunu doğrudan saklamak yerine, durumu değiştiren olayları kalıcılaştırır. Böylece uygulama geçmişi silmek yerine kaydeder ve istenen anın durumunu olayları tekrar oynatarak oluşturabilir.
@@ -28,6 +29,9 @@ Burada $S_0$ başlangıç durumu, $E_i$ bir olay, $f$ ise olayı mevcut duruma u
 | Hata analizi | Sınırlı bağlam | Olay sırası incelenir |
 | Veri modeli değişimi | Migrasyon ağırlıklı | Yeni projection üretilebilir |
 | Okuma performansı | Genellikle doğrudan | Projection gerekebilir |
+
+![event-sourcing-mimarisi-33](/img/event-sourcing-mimarisi-33.svg)
+
 
 Örneğin sadeleştirilmiş bir hesap agregası, olayları uygulayarak bakiyesini üretir. Buradaki kritik ayrım şudur: Komutlar niyeti ifade eder (`Para yatır`), olaylar ise gerçekleşmiş ve değişmez gerçekleri (`Para yatırıldı`) temsil eder.
 

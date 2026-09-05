@@ -10,6 +10,7 @@ tags:
   - olasılık
   - quicksort
 toc: true
+image: /img/las-vegas-algoritmalari-20.png
 ---
 
 Bazı algoritmalar yazı tura atar, rastgele sayılar üretir ve buna rağmen cevabı asla yanlış vermez. İlk bakışta çelişki gibi duran bu fikir, **Las Vegas algoritmalarının** temelidir: Rastgelelik sonucun doğruluğunu değil, çalışmanın süresini ve izlediği yolu etkiler. Yani algoritma biraz şans oyunları şehrinden esinlenmiş gibi davranır; bazen hızlıca kazanır, bazen biraz daha uzun bekletir, fakat masadan yanlış cevapla kalkmaz.
@@ -37,6 +38,9 @@ Rastgeleleştirilmiş algoritmaların en bilinen iki ailesi Las Vegas ve Monte C
 | Çalışma süresi | Değişkendir | Çoğunlukla önceden sınırlandırılır |
 | Rastgeleliğin etkisi | Performansı değiştirir | Sonucu etkileyebilir |
 | Tipik örnek | Rastgele pivotlu Quicksort | Miller-Rabin asal sayılık testi |
+
+![las-vegas-algoritmalari-20](/img/las-vegas-algoritmalari-20.svg)
+
 
 Örneğin Monte Carlo yaklaşımı, “çok büyük olasılıkla asal” diyebilir. Las Vegas yaklaşımı ise “asal” demeden önce doğruluğu garanti edecek kontrolü tamamlar. Kısacası: Monte Carlo zamanı korumak için bazen doğruluktan ödün verir; Las Vegas doğruluğu korumak için zamanı değişken bırakır.
 

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="schemaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#c9dcf8"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f2e7"/>
+      <stop offset="100%" stop-color="#bde8d5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7086a3" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7086a3" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="44" r="76" fill="#dcecff" opacity="0.38"/>
+  <circle cx="579" cy="280" r="105" fill="#d8f2dd" opacity="0.38"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#49617a">Apache Avro · Şema Tabanlı Veri Akışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="108" width="125" height="113" rx="18" fill="#fffdf9"/>
+    <rect x="31" y="108" width="125" height="31" rx="18" fill="#f8d9c6"/>
+    <rect x="31" y="126" width="125" height="13" fill="#f8d9c6"/>
+  </g>
+  <circle cx="61" cy="169" r="17" fill="#f4b993"/>
+  <path d="M54 169h14M61 162v14" stroke="#925b3f" stroke-width="2" stroke-linecap="round"/>
+  <text x="103" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#59483f">Üretici</text>
+  <text x="103" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#74655d">Kayıt nesnesi</text>
+  <text x="94" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#76513f">Writer şema</text>
+
+  <path d="M163 165 H207" fill="none" stroke="#7993ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="207,165 197,159 197,171" fill="#7993ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="214" y="63" width="211" height="151" rx="22" fill="url(#schemaGrad)"/>
+    <rect x="232" y="82" width="175" height="42" rx="11" fill="#fafdff" opacity="0.88"/>
+    <rect x="232" y="134" width="175" height="58" rx="11" fill="#fafdff" opacity="0.72"/>
+  </g>
+  <path d="M251 95h18M251 104h36M251 113h24" stroke="#6285ac" stroke-width="2" stroke-linecap="round"/>
+  <text x="325" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#365b81">Şema Kayıt Defteri</text>
+  <text x="325" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58738f">Sözleşme ve kimlik</text>
+
+  <rect x="246" y="146" width="43" height="31" rx="7" fill="#a8d7c2"/>
+  <text x="267.5" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#356957">id</text>
+  <path d="M302 153h85M302 162h64M302 171h76" stroke="#7190aa" stroke-width="2" stroke-linecap="round"/>
+  <text x="317" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476b88">Doğrulama</text>
+
+  <path d="M320 56 V46 H471 V65" fill="none" stroke="#98a9bd" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <g filter="url(#smallShadow)">
+    <rect x="426" y="34" width="104" height="43" rx="13" fill="#fff5cf"/>
+  </g>
+  <path d="M441 48h15M441 56h25M441 64h19" stroke="#b18c38" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="484" y="53" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#78612b">Şema evrimi</text>
+  <text x="484" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#89733b">Varsayılan alan</text>
+
+  <path d="M433 165 H467" fill="none" stroke="#648f83" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="467,165 457,159 457,171" fill="#648f83"/>
+
+  <g filter="url(#shadow)">
+    <rect x="474" y="113" width="132" height="103" rx="18" fill="#fffdf9"/>
+    <rect x="474" y="113" width="132" height="31" rx="18" fill="#cdeada"/>
+    <rect x="474" y="131" width="132" height="13" fill="#cdeada"/>
+  </g>
+  <circle cx="505" cy="170" r="17" fill="#9bd4b7"/>
+  <path d="M499 164l12 6-12 6z" fill="#39785e"/>
+  <text x="555" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#435e52">Tüketici</text>
+  <text x="555" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64776d">Reader şema</text>
+  <text x="540" y="134" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3f7160">Uyumlu okuma</text>
+
+  <path d="M80 237 C145 271 222 274 281 242" fill="none" stroke="#9aabc0" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="281,242 272,241 277,250" fill="#9aabc0"/>
+  <text x="174" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70859c">Nesne → ikili veri</text>
+
+  <path d="M394 238 C448 274 523 272 564 231" fill="none" stroke="#88aa9c" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="564,231 554,234 561,241" fill="#88aa9c"/>
+  <text x="482" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668278">Kompakt taşıma</text>
+</svg>

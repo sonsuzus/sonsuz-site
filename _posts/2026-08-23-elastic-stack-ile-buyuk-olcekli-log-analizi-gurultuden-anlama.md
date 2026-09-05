@@ -10,6 +10,7 @@ tags:
   - kibana
   - log analizi
 toc: true
+image: /img/elastic-stack-ile-94.png
 ---
 
 Büyük ölçekli bir sistemde loglar, uygulamanın kara kutu uçuş kayıtları gibidir: hata anını, kullanıcı davranışını ve altyapıdaki küçük titreşimleri saklarlar. Ancak binlerce sunucu saniyede milyonlarca satır ürettiğinde, metin dosyalarını tek tek incelemek hem yavaş hem de yanıltıcıdır. Elastic Stack; logları toplamak, dönüştürmek, indekslemek ve görselleştirmek için merkezi, ölçeklenebilir bir yaklaşım sunar.
@@ -75,3 +76,6 @@ Elasticsearch, veriyi shard adı verilen parçalara böler. Her shard bağımsı
 İyi bir dashboard, sadece renkli grafik değildir; operatörün sorusuna cevap verir. İstek hacmi, p95 gecikme, hata oranı, en çok hata üreten endpoint ve servis bazlı log yoğunluğu başlangıç için güçlü panellerdir. Özellikle `trace.id`, `service.name`, `environment` ve `log.level` gibi alanları standartlaştırmak, servisler arası korelasyonu dramatik biçimde kolaylaştırır.
 
 Son olarak, her logu indekslemek zorunda değilsiniz. Debug kayıtlarını örneklemek, hassas verileri maskelemek ve gereksiz alanları göndermemek maliyeti azaltır. Elastic Stack’in gerçek gücü, devasa günlük yığınını saklamasında değil; doğru şema, doğru saklama politikası ve doğru sorularla onu operasyonel kararlara dönüştürmesindedir.
+
+![elastic-stack-ile-94](/img/elastic-stack-ile-94.svg)
+

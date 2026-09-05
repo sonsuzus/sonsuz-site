@@ -9,9 +9,13 @@ tags:
   - web güvenliği
   - kimlik doğrulama
 toc: true
+image: /img/jwt-guvenligi-token-93.png
 ---
 
 JWT’ler (JSON Web Token), oturum bilgisini sunucu yerine imzalı bir belirteçte taşıyarak ölçeklenebilir kimlik doğrulama sağlar. Ancak “imzalı” olması, token’ın otomatik olarak güvenli olduğu anlamına gelmez. Güvenlik; imza algoritması, anahtar yönetimi, claim doğrulaması, tarayıcıda saklama biçimi ve token yaşam döngüsünün birlikte doğru tasarlanmasına bağlıdır.
+
+![jwt-guvenligi-token-93](/img/jwt-guvenligi-token-93.svg)
+
 ``
 
 Bir JWT üç parçadan oluşur: `header.payload.signature`. İlk iki bölüm Base64URL ile **kodlanır**, şifrelenmez; dolayısıyla payload içindeki e-posta, kullanıcı kimliği veya rol gibi bilgiler okunabilir. İmza ise token’ın yetkili sunucu tarafından üretildiğini ve sonradan değiştirilmediğini doğrular:

@@ -11,9 +11,13 @@ tags:
   - olap
   - veri analizi
 toc: true
+image: /img/clickhouse-ile-buyuk-52.png
 ---
 
 Bir analistin önünde milyarlarca olay kaydı olduğunu düşünün: tıklamalar, siparişler, sensör ölçümleri ve uygulama logları… Klasik satır tabanlı veritabanlarında bu tabloyu taramak bazen kahve molası gerektirir. ClickHouse ise analitik iş yükleri için tasarlanmış sütun tabanlı mimarisiyle, doğru veri modelinde bu molayı birkaç saniyelik bekleyişe dönüştürür. Sırrı yalnızca “hızlı SQL” değildir; veriyi diskten nasıl okuduğu, nasıl sıkıştırdığı ve sorguyu paralel nasıl yürüttüğüdür.
+
+![clickhouse-ile-buyuk-52](/img/clickhouse-ile-buyuk-52.svg)
+
 ``
 
 ## Neden sütun tabanlı depolama hızlıdır?

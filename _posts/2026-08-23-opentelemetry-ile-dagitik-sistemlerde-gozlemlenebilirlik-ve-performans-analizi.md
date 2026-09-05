@@ -8,6 +8,7 @@ tags:
   - opentelemetry
   - gözlemlenebilirlik
   - dağıtık sistemler
+image: /img/opentelemetry-ile-dagitik-30.png
 ---
 
 Dağıtık uygulamalarda bir isteğin nerede yavaşladığını bulmak, tek sunuculu günlerin rahatlığını özletebilir. Kullanıcı "sipariş ver" düğmesine basar; istek API ağ geçidinden ödeme servisine, stok servisine, kuyruk sistemine ve veritabanına uğrar. Hata ekranı ise yalnızca 500 döndürür. OpenTelemetry (OTel), bu karmaşık yolculuğu standart araçlarla görünür hâle getirerek izleme, hata ayıklama ve kapasite planlama süreçlerini aynı dilde buluşturur.
@@ -22,6 +23,9 @@ Gözlemlenebilirliğin üç temel sinyali vardır:
 | Trace (iz) | İstek sistemde hangi yollardan geçti? | `checkout` isteğinin servis zinciri |
 | Metric (metrik) | Sistem genel olarak ne durumda? | Saniyedeki istek, CPU, hata oranı |
 | Log (günlük) | Belirli anda ne oldu? | Ödeme sağlayıcısının hata mesajı |
+
+![opentelemetry-ile-dagitik-30](/img/opentelemetry-ile-dagitik-30.svg)
+
 
 Bir trace, tek bir kullanıcı isteğinin uçtan uca kimliğidir; içindeki her işlem ise **span** olarak adlandırılır. Örneğin HTTP isteği, SQL sorgusu ve harici ödeme çağrısı ayrı span'lerdir. Span'ler arasındaki ebeveyn-çocuk ilişkisi, gecikmenin hangi katmanda biriktiğini gösterir. Toplam süre kabaca şöyle modellenebilir:
 

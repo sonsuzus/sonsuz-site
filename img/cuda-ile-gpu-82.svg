@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="cpu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c7dbf7"/>
+    </linearGradient>
+    <linearGradient id="cuda" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9ddff"/>
+      <stop offset="100%" stop-color="#d5c2f2"/>
+    </linearGradient>
+    <linearGradient id="gpu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f5df"/>
+      <stop offset="100%" stop-color="#bce8c9"/>
+    </linearGradient>
+    <linearGradient id="mem" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1cf"/>
+      <stop offset="100%" stop-color="#f7dba0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#52687d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="42" r="52" fill="#dceeff" opacity="0.48"/>
+  <circle cx="590" cy="282" r="72" fill="#dff3dd" opacity="0.52"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40516a">CUDA Paralel Hesaplama</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77869a">Veriyi bağımsız işlere böl</text>
+
+  <path d="M155 156 H204" fill="none" stroke="#7890aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="204,156 195,151 195,161" fill="#7890aa"/>
+  <path d="M329 156 H370" fill="none" stroke="#7890aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="370,156 361,151 361,161" fill="#7890aa"/>
+
+  <path d="M462 98 C495 75 517 75 538 88" fill="none" stroke="#d19448" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="538,88 530,82 531,92" fill="#d19448"/>
+  <path d="M538 224 C510 240 489 240 462 218" fill="none" stroke="#d19448" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="462,218 470,214 468,224" fill="#d19448"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="105" width="127" height="102" rx="18" fill="url(#cpu)" stroke="#abc4e6"/>
+    <rect x="43" y="122" width="97" height="42" rx="11" fill="#eff6ff" opacity="0.88"/>
+    <rect x="43" y="174" width="97" height="17" rx="8" fill="#a9c4e9" opacity="0.72"/>
+  </g>
+  <text x="91.5" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5879">CPU</text>
+  <text x="91.5" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58718e">Çağrı ve hazırlık</text>
+  <text x="91.5" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46647e">Ana bellek</text>
+
+  <g filter="url(#shadow)">
+    <rect x="204" y="116" width="125" height="80" rx="18" fill="url(#cuda)" stroke="#bea8dd"/>
+    <circle cx="231" cy="145" r="14" fill="#f6f0ff"/>
+    <path d="M225 145 H237 M231 139 V151" stroke="#8769a8" stroke-width="2" stroke-linecap="round"/>
+    <rect x="252" y="135" width="54" height="8" rx="4" fill="#b798d0"/>
+    <rect x="252" y="151" width="39" height="7" rx="3.5" fill="#c9b1df"/>
+    <rect x="219" y="171" width="95" height="10" rx="5" fill="#b798d0" opacity="0.65"/>
+  </g>
+  <text x="266.5" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5e4779">CUDA Başlatıcı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="370" y="72" width="176" height="169" rx="20" fill="url(#gpu)" stroke="#9fd0ab"/>
+    <rect x="386" y="88" width="144" height="27" rx="10" fill="#eefaf0"/>
+    <text x="458" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7650">GPU Grid</text>
+
+    <g filter="url(#smallShadow)">
+      <rect x="386" y="126" width="65" height="46" rx="10" fill="#c9ead2" stroke="#a1cfb0"/>
+      <rect x="465" y="126" width="65" height="46" rx="10" fill="#c9ead2" stroke="#a1cfb0"/>
+      <rect x="386" y="183" width="65" height="46" rx="10" fill="#c9ead2" stroke="#a1cfb0"/>
+      <rect x="465" y="183" width="65" height="46" rx="10" fill="#c9ead2" stroke="#a1cfb0"/>
+    </g>
+
+    <g fill="#77b98a">
+      <circle cx="400" cy="140" r="4"/><circle cx="417" cy="140" r="4"/><circle cx="434" cy="140" r="4"/>
+      <circle cx="400" cy="157" r="4"/><circle cx="417" cy="157" r="4"/><circle cx="434" cy="157" r="4"/>
+      <circle cx="479" cy="140" r="4"/><circle cx="496" cy="140" r="4"/><circle cx="513" cy="140" r="4"/>
+      <circle cx="479" cy="157" r="4"/><circle cx="496" cy="157" r="4"/><circle cx="513" cy="157" r="4"/>
+      <circle cx="400" cy="197" r="4"/><circle cx="417" cy="197" r="4"/><circle cx="434" cy="197" r="4"/>
+      <circle cx="400" cy="214" r="4"/><circle cx="417" cy="214" r="4"/><circle cx="434" cy="214" r="4"/>
+      <circle cx="479" cy="197" r="4"/><circle cx="496" cy="197" r="4"/><circle cx="513" cy="197" r="4"/>
+      <circle cx="479" cy="214" r="4"/><circle cx="496" cy="214" r="4"/><circle cx="513" cy="214" r="4"/>
+    </g>
+  </g>
+
+  <text x="418" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#447c55">Blok</text>
+  <text x="497" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#447c55">Blok</text>
+
+  <g filter="url(#shadow)">
+    <rect x="538" y="104" width="75" height="56" rx="15" fill="url(#mem)" stroke="#ebc77d"/>
+    <rect x="550" y="119" width="51" height="7" rx="3.5" fill="#dca84e"/>
+    <rect x="550" y="133" width="39" height="7" rx="3.5" fill="#e8be6b"/>
+  </g>
+  <text x="575.5" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#84602b">GPU Belleği</text>
+
+  <g filter="url(#shadow)">
+    <rect x="538" y="187" width="75" height="56" rx="15" fill="url(#mem)" stroke="#ebc77d"/>
+    <path d="M551 213 H583" stroke="#c98e31" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="583,213 575,208 575,218" fill="#c98e31"/>
+    <circle cx="594" cy="213" r="5" fill="#e7b65e"/>
+  </g>
+  <text x="575.5" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#84602b">Sonuç</text>
+
+  <path d="M91 222 V253 H378" fill="none" stroke="#9aabc1" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <polygon points="378,253 370,248 370,258" fill="#9aabc1"/>
+  <text x="235" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718198">Kopyalama → Kernel → Geri kopyalama</text>
+
+  <text x="458" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6578">Binlerce eş zamanlı iş parçacığı</text>
+</svg>

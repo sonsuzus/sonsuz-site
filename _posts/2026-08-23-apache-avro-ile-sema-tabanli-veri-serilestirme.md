@@ -10,7 +10,11 @@ tags:
   - şema
   - kafka
 toc: true
+image: /img/apache-avro-ile-16.png
 ---
+
+![apache-avro-ile-16](/img/apache-avro-ile-16.svg)
+
 
 Dağıtık sistemlerde servislerin birbiriyle konuşması çoğu zaman “JSON gönder, mutlu ol” kadar basit görünür. Ancak milyonlarca olayın aktığı Kafka hatlarında, veri depolarında veya mikroservis ağlarında metin tabanlı ve şemasız veri hızla maliyetli hâle gelir. Apache Avro; veriyi ikili biçimde kompakt taşıyan, yapısını ise açık bir şema ile tanımlayan bir serileştirme formatıdır. En önemli numarası, yalnızca alan adlarını değil, verinin zaman içindeki değişimini de yönetilebilir kılmasıdır.
 ``

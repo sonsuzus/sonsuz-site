@@ -8,6 +8,7 @@ tags:
   - duckdb
   - veri analitiği
   - sql
+image: /img/duckdb-ile-yerel-60.png
 ---
 
 Büyük veri analitiği denince çoğu kişinin aklına sunucular, kümeler ve karmaşık veri boru hatları gelir. DuckDB ise bu algıyı tersine çevirir: Uygulamanızın içinde çalışır, tek bir dosyada veriyi saklar ve milyonlarca satırlık CSV ya da Parquet dosyasında oldukça hızlı SQL sorguları koşturabilir. Özellikle veri bilimi, keşifsel analiz ve yerel raporlama işlerinde “küçük ama çok güçlü” bir araçtır.
@@ -74,3 +75,6 @@ ORDER BY ortalama_sepet DESC;
 Bu yaklaşım geçici analizlerde depolama maliyetini ve hazırlık süresini azaltır. Yine de DuckDB, yüksek eşzamanlı yazma gerektiren web uygulamalarının ana veritabanı olmak için tasarlanmamıştır. Onu en iyi; veri dosyaları, notebook’lar, ETL görevleri ve yerel dashboard prototipleri arasında çalışan bir analitik motor olarak konumlandırabilirsiniz.
 
 Kısacası DuckDB, “veriyi sunucuya taşımadan analiz etme” fikrini pratikleştirir. SQL biliyorsanız birkaç dakikada üretken olursunuz; Parquet kullanıyorsanız ise yerel makinenizde şaşırtıcı derecede akıcı sorgular elde edebilirsiniz.
+
+![duckdb-ile-yerel-60](/img/duckdb-ile-yerel-60.svg)
+

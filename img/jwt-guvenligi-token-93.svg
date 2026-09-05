@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8bb8ed"/>
+      <stop offset="100%" stop-color="#5d8ed0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="63" cy="55" r="72" fill="#dceef9" opacity="0.55"/>
+  <circle cx="589" cy="274" r="92" fill="#dff0dd" opacity="0.55"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36526b">JWT GÜVENLİ DOĞRULAMA AKIŞI</text>
+
+  <!-- incoming token -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="123" width="119" height="75" rx="16" fill="#ffffff" stroke="#d7e4ed"/>
+    <rect x="43" y="139" width="89" height="11" rx="5.5" fill="#f5c99d"/>
+    <rect x="43" y="157" width="89" height="11" rx="5.5" fill="#b9d8f5"/>
+    <rect x="43" y="175" width="89" height="11" rx="5.5" fill="#a7d9be"/>
+    <text x="87" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40586d">JWT belirteci</text>
+  </g>
+
+  <!-- line input -->
+  <path d="M151 160 H207" fill="none" stroke="#7895ac" stroke-width="2.5"/>
+  <polygon points="207,160 198,155 198,165" fill="#7895ac"/>
+
+  <!-- central verifier -->
+  <g filter="url(#shadow)">
+    <rect x="211" y="83" width="218" height="155" rx="25" fill="#ffffff" stroke="#cbddea" stroke-width="1.5"/>
+    <path d="M320 106 L368 124 V158 C368 189 347 207 320 218 C293 207 272 189 272 158 V124 Z" fill="url(#shield)"/>
+    <path d="M298 158 L313 173 L344 141" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="320" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">DOĞRULA</text>
+    <text x="320" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40586d">İmza sonrası claim denetimi</text>
+  </g>
+
+  <!-- arrows to side checks -->
+  <path d="M265 97 L203 63" fill="none" stroke="#7895ac" stroke-width="2"/>
+  <polygon points="203,63 210,63 207,70" fill="#7895ac"/>
+  <path d="M375 97 L437 63" fill="none" stroke="#7895ac" stroke-width="2"/>
+  <polygon points="437,63 430,63 433,70" fill="#7895ac"/>
+  <path d="M257 218 L194 260" fill="none" stroke="#7895ac" stroke-width="2"/>
+  <polygon points="194,260 198,253 202,260" fill="#7895ac"/>
+  <path d="M383 218 L446 260" fill="none" stroke="#7895ac" stroke-width="2"/>
+  <polygon points="446,260 438,260 442,253" fill="#7895ac"/>
+
+  <!-- check cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="72" y="38" width="136" height="54" rx="14" fill="#fff8ef" stroke="#f0d8b8"/>
+    <circle cx="94" cy="65" r="12" fill="#f3b66d"/>
+    <path d="M89 65 L93 69 L100 60" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="145" y="61" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#725538">Sabit algoritma</text>
+    <text x="145" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#876b50">RS256 allowlist</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="432" y="38" width="136" height="54" rx="14" fill="#f2f7ff" stroke="#cbdcf1"/>
+    <circle cx="454" cy="65" r="12" fill="#87afe1"/>
+    <path d="M454 58 V72 M447 65 H461" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="506" y="61" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#415d82">Anahtar yönetimi</text>
+    <text x="506" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627895">Rotasyon ve güç</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="69" y="245" width="143" height="54" rx="14" fill="#f3fbf5" stroke="#cfe6d6"/>
+    <circle cx="92" cy="272" r="12" fill="#78be93"/>
+    <path d="M92 265 V272 L97 276" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="150" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6b50">Zaman claimleri</text>
+    <text x="150" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8069">exp, nbf ve iat</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="428" y="245" width="143" height="54" rx="14" fill="#fdf3f5" stroke="#edd3d9"/>
+    <circle cx="451" cy="272" r="12" fill="#d98a9c"/>
+    <rect x="445" y="270" width="12" height="9" rx="2" fill="#ffffff"/>
+    <path d="M447 270 V267 C447 263 455 263 455 267 V270" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <text x="509" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7b4755">Güvenli saklama</text>
+    <text x="509" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#936270">HttpOnly ve CSRF</text>
+  </g>
+
+  <!-- result -->
+  <path d="M433 160 H486" fill="none" stroke="#5f9f79" stroke-width="2.5"/>
+  <polygon points="486,160 477,155 477,165" fill="#5f9f79"/>
+  <g filter="url(#smallShadow)">
+    <rect x="490" y="127" width="121" height="66" rx="17" fill="#eaf7ed" stroke="#c4e2ce"/>
+    <circle cx="518" cy="160" r="15" fill="#68ad80"/>
+    <path d="M511 160 L516 165 L526 154" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="562" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38684a">Yetkili istek</text>
+    <text x="562" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a8067">API erişimi</text>
+  </g>
+</svg>

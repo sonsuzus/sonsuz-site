@@ -8,6 +8,7 @@ tags:
   - veri yapıları
   - splay tree
   - ikili arama ağacı
+image: /img/splay-tree-sik-28.png
 ---
 
 Splay Tree, klasik ikili arama ağacının (BST) heyecanlı ve biraz da inatçı kuzenidir: Bir düğüme eriştiğiniz anda onu ağacın köküne kadar taşımaya çalışır. Amaç, yakın geçmişte sık kullanılan verilere gelecekte daha hızlı ulaşmaktır. Dengeli ağaçlar gibi her an kusursuz görünmek zorunda değildir; bunun yerine kullanım alışkanlıklarınızı öğrenir.
@@ -78,3 +79,6 @@ Bu örnekte `rotate_right`, sol çocuğu yukarı taşıyarak yerel yapıyı dön
 | Splay Tree | $O(n)$ | $O(\log n)$ | Sık erişilen anahtarlarda çok hızlı |
 
 Özetle Splay Tree, en kötü durum garantisinden biraz feragat ederek davranışa uyum sağlar. Önbellek benzeri erişimler, yakın zamanda kullanılan oturumlar veya tekrar eden sorgular için etkileyici bir seçimdir. Ağacınız biraz dağınık görünse bile endişelenmeyin: Splay Tree, her erişimde kendi masasını yeniden toplar.
+
+![splay-tree-sik-28](/img/splay-tree-sik-28.svg)
+

@@ -8,6 +8,7 @@ tags:
   - algoritma
   - optimizasyon
   - python
+image: /img/ant-colony-optimization-29.png
 ---
 
 Bir karınca kolonisinin yiyeceğe giden en kısa rotayı bulması, ilk bakışta basit bir doğa olayı gibi görünür. Ancak binlerce karıncanın bıraktığı ve takip ettiği kimyasal izler, karmaşık optimizasyon problemlerini çözmek için güçlü bir fikir sunar. Ant Colony Optimization (ACO), merkezi bir yöneticiye ihtiyaç duymadan; küçük, basit kuralları izleyen yapay karıncaların kolektif zekâsıyla iyi çözümler üretir. Özellikle rota planlama, çizelgeleme ve ağ yönlendirme problemlerinde oldukça etkilidir.
@@ -64,3 +65,6 @@ Bu yaklaşımın önemli gücü, **keşif** ve **sömürü** arasındaki dengedi
 | Karınca sayısı | Daha geniş çözüm çeşitliliği | Daha yüksek hesaplama maliyeti |
 
 ACO, kesin olarak küresel optimumu garanti etmez; fakat çözüm uzayı büyüdükçe pratik ve esnek bir sezgisel yöntemdir. Teslimat araçlarının rotalanması, üretim görevlerinin sıralanması veya ağ paketlerinin yönlendirilmesi gibi alanlarda, doğanın bu küçük navigatörleri şaşırtıcı derecede büyük problemleri çözmeye yardım eder.
+
+![ant-colony-optimization-29](/img/ant-colony-optimization-29.svg)
+

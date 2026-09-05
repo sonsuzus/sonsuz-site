@@ -8,7 +8,11 @@ tags:
   - cqrs
   - yazılım mimarisi
   - mikroservisler
+image: /img/cqrs-tasarim-deseni-77.png
 ---
+
+![cqrs-tasarim-deseni-77](/img/cqrs-tasarim-deseni-77.svg)
+
 
 Modern uygulamalarda her isteği aynı veri modeliyle karşılamak başlangıçta pratiktir; ancak kullanıcı sayısı, raporlama ihtiyacı ve işlem yoğunluğu arttıkça bu yaklaşım zorlanır. CQRS (Command Query Responsibility Segregation), yani Komut ve Sorgu Sorumluluklarının Ayrılması, veriyi değiştiren işlemlerle veriyi okuyan işlemleri bilinçli biçimde ayırır. Böylece sistem, “sipariş oluştur” ile “son 30 günün sipariş raporunu göster” gibi tamamen farklı ihtiyaçlara kendi kurallarıyla hizmet eder.
 ``

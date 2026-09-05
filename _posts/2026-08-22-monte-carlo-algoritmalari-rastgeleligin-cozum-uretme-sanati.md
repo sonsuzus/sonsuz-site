@@ -8,6 +8,7 @@ tags:
   - monte carlo
   - rastgele algoritmalar
   - python
+image: /img/monte-carlo-algoritmalari-24.png
 ---
 
 Bir algoritmanın zar atarak ciddi bir problemi çözmesi ilk anda şaka gibi gelebilir. Oysa Monte Carlo algoritmaları, belirsizliği kontrollü örneklemeye dönüştürür: Çok sayıda rastgele deneme yapar, sonuçların istatistiksel davranışını gözlemler ve yaklaşık ya da olasılıksal bir cevap üretir. Özellikle kesin çözümün pahalı olduğu yüksek boyutlu problemlerde, fizik simülasyonlarında, finansal risk analizinde ve makine öğrenmesinde güçlü bir araçtır.
@@ -63,3 +64,6 @@ Monte Carlo yalnızca geometrik alan hesaplamaz. Örneğin integral hesabında, 
 Başarılı bir Monte Carlo tasarımı için üç soru sorulmalıdır: Örnekler hedef dağılımı gerçekten temsil ediyor mu? Kaç örnek kabul edilebilir hata sağlar? Nadir ama önemli olaylar yeterince görülüyor mu? Son soru özellikle önemlidir; çok düşük olasılıklı riskler sıradan rastgele örneklemede gözden kaçabilir. Bu durumda importance sampling gibi yöntemler, önemli bölgeleri daha sık örnekleyerek verimliliği artırır.
 
 Özetle Monte Carlo, rastgeleliği “gürültü” olmaktan çıkarıp hesaplama kaynağına dönüştürür. Mükemmel cevabı kovalamak yerine, belirsizliği ölçerek yeterince iyi cevaba hızlı ulaşır. Bazen çözüm, formülü daha çok zorlamakta değil; akıllıca tasarlanmış milyonlarca küçük zar atışındadır.
+
+![monte-carlo-algoritmalari-24](/img/monte-carlo-algoritmalari-24.svg)
+

@@ -8,6 +8,7 @@ tags:
   - saga pattern
   - mikroservisler
   - dağıtık sistemler
+image: /img/saga-pattern-ile-89.png
 ---
 
 Mikroservis mimarisinde tek bir kullanıcı işlemi; ödeme, stok, sipariş ve kargo gibi bağımsız servisleri aynı anda etkileyebilir. Tek veritabanlı sistemlerde alıştığımız `BEGIN` ve `COMMIT` yaklaşımı burada yetersiz kalır: Her servis kendi verisini yönetir, ağ gecikebilir ve bir servis geçici olarak erişilemez olabilir. Saga Pattern, bu karmaşayı dağıtık bir işlemi küçük yerel adımlara bölerek ve hata durumunda telafi işlemleri çalıştırarak yönetir.
@@ -29,6 +30,9 @@ Kargo adımı başarısız olursa saga ters yönde ilerleyebilir: ödeme iade ed
 | ACID dağıtık işlem | Merkezi, sıkı kilitler | Anlık tutarlılık | Gecikme ve düşük erişilebilirlik |
 | Saga - Choreography | Servisler olaylarla haberleşir | Gevşek bağlılık | Akışı takip etmek zorlaşır |
 | Saga - Orchestration | Orkestratör adımları yönetir | Görünür ve denetlenebilir akış | Orkestratörün aşırı büyümesi |
+
+![saga-pattern-ile-89](/img/saga-pattern-ile-89.svg)
+
 
 **Choreography** modelinde servisler olay yayınlar. `OrderCreated` olayını gören stok servisi rezervasyon yapar ve `StockReserved` yayınlar. Bu model doğal ve dağıtık görünür; fakat servis sayısı büyüdükçe “bu olayı kim dinliyor?” sorusu mimari dedektifliğe dönüşebilir. **Orchestration** modelinde ise bir saga orkestratörü, hangi komutun ne zaman gönderileceğini açıkça belirler. İş kuralları tek yerde okunabildiği için sipariş, rezervasyon ve ödeme gibi kritik akışlarda sık tercih edilir.
 

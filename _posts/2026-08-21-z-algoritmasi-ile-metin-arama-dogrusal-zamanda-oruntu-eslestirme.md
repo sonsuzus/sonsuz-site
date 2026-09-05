@@ -8,9 +8,13 @@ tags:
   - algoritmalar
   - metin arama
   - z algoritması
+image: /img/z-algoritmasi-ile-37.png
 ---
 
 Bir metin içinde belirli bir deseni aramak, ilk bakışta basit görünür: her konumdan başlayıp karakterleri karşılaştırırız. Ancak uzun metinler ve tekrar eden örüntüler devreye girdiğinde bu yaklaşım pahalılaşır. Z Algoritması, daha önce yapılmış karşılaştırmaları akıllıca yeniden kullanarak örüntü eşleştirmeyi doğrusal zamanda gerçekleştiren zarif bir tekniktir.
+
+![z-algoritmasi-ile-37](/img/z-algoritmasi-ile-37.svg)
+
 ``
 
 Temel fikir, bir dizinin her konumunda dizinin başıyla eşleşen en uzun önekin uzunluğunu hesaplamaktır. Bu değerlerden oluşan yapıya **Z dizisi** denir. Bir `S` dizisi için `Z[i]`, `S[i...]` ile `S` dizisinin başlangıcı arasındaki en uzun ortak önek uzunluğudur. Başlangıç konumu için `Z[0]` çoğu uygulamada `0` kabul edilir; bazı tanımlarda ise dizinin uzunluğu yazılır.

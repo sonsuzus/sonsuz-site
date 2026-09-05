@@ -9,7 +9,11 @@ tags:
   - gpu programlama
   - c++
   - paralel programlama
+image: /img/cuda-ile-gpu-82.png
 ---
+
+![cuda-ile-gpu-82](/img/cuda-ile-gpu-82.svg)
+
 
 Bilgisayarınızdaki ekran kartı yalnızca oyunlardaki gölgeleri ve piksel efektlerini çizmek için çalışmaz; doğru programlandığında binlerce küçük işlemciyi aynı anda kullanan güçlü bir hesaplama laboratuvarına dönüşür. NVIDIA'nın CUDA platformu, C/C++ bilgisine sahip geliştiricilerin bu paralel güce erişmesini sağlar. Ancak CUDA'yı öğrenmenin anahtarı, daha fazla çekirdek demek yerine, problemi **binlerce bağımsız işe nasıl bölebileceğinizi** anlamaktır.
 

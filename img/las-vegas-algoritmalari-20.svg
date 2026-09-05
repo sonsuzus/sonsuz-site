@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9c9ff"/>
+      <stop offset="100%" stop-color="#b8e4f3"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f2d4"/>
+      <stop offset="100%" stop-color="#bde5ce"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7591a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#758ca0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="86" cy="52" r="68" fill="#dff1f4" opacity="0.48"/>
+  <circle cx="586" cy="272" r="84" fill="#e6def8" opacity="0.40"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476277" font-weight="700">Las Vegas Algoritması</text>
+  <text x="320" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688093">Rastgele yol • kesin sonuç</text>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="115" width="119" height="83" rx="18" fill="#ffffff"/>
+    <rect x="43" y="124" width="101" height="65" rx="13" fill="#e9f5ff"/>
+  </g>
+  <path d="M73 151 L84 140 L95 151 L84 162 Z" fill="#75b4d2"/>
+  <path d="M97 151 L108 140 L119 151 L108 162 Z" fill="#97c8df"/>
+  <text x="94" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365b72" font-weight="700">Girdi Dizisi</text>
+
+  <path d="M155 157 H194" fill="none" stroke="#7394a6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="202,157 192,151 192,163" fill="#7394a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="207" y="89" width="181" height="136" rx="25" fill="url(#core)"/>
+    <rect x="217" y="99" width="161" height="116" rx="19" fill="#ffffff" opacity="0.34"/>
+  </g>
+  <circle cx="297" cy="128" r="20" fill="#ffffff" opacity="0.88" filter="url(#softShadow)"/>
+  <circle cx="290" cy="122" r="4" fill="#8069b8"/>
+  <circle cx="305" cy="124" r="4" fill="#4d9bbc"/>
+  <circle cx="295" cy="137" r="4" fill="#74b67b"/>
+  <path d="M286 118 L301 134 M309 120 L298 139 M291 140 L287 125" stroke="#7f8dba" stroke-width="1.5" opacity="0.75"/>
+  <text x="297" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#384b70" font-weight="700">Rastgele Pivot</text>
+  <text x="297" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50657e">Bölümleme</text>
+
+  <path d="M389 130 C421 130 419 95 445 95" fill="none" stroke="#8b91bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="453,95 443,89 444,101" fill="#8b91bb"/>
+  <path d="M389 184 C418 184 421 220 445 220" fill="none" stroke="#69a89d" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="453,220 443,214 444,226" fill="#69a89d"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="454" y="63" width="151" height="64" rx="16" fill="#f0eafd"/>
+    <circle cx="475" cy="95" r="11" fill="#b8a4e1"/>
+    <path d="M470 95 H480 M475 90 V100" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="535" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a4d7c" font-weight="700">Değişken Süre</text>
+    <text x="535" y="109" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#736989">E[T] ≈ O(n log n)</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="454" y="188" width="151" height="64" rx="16" fill="url(#result)"/>
+    <circle cx="475" cy="220" r="11" fill="#75b98a"/>
+    <path d="M469 220 L473 224 L481 215" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="535" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6c50" font-weight="700">Kesin Sonuç</text>
+    <text x="535" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7d68">Doğruluk = 1</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="74" y="250" width="245" height="42" rx="14" fill="#ffffff" opacity="0.92"/>
+    <circle cx="97" cy="271" r="12" fill="#ffdba8"/>
+    <path d="M92 267 L102 275 M102 267 L92 275" stroke="#a66e33" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="207" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756044">Rastgelelik performansı etkiler</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="341" y="250" width="225" height="42" rx="14" fill="#ffffff" opacity="0.92"/>
+    <circle cx="364" cy="271" r="12" fill="#a8d9e9"/>
+    <path d="M359 271 L363 275 L371 266" fill="none" stroke="#39728a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="462" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486b78">Mantık sonucu doğrular</text>
+  </g>
+</svg>

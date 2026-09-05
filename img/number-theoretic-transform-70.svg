@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e1efff"/>
+      <stop offset="100%" stop-color="#cfe2f7"/>
+    </linearGradient>
+    <linearGradient id="violetCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eee7ff"/>
+      <stop offset="100%" stop-color="#ddd0f5"/>
+    </linearGradient>
+    <linearGradient id="mintCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#def6e8"/>
+      <stop offset="100%" stop-color="#c8ead9"/>
+    </linearGradient>
+    <linearGradient id="peachCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0df"/>
+      <stop offset="100%" stop-color="#f6dbbd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#526779" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#596f85" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="604" cy="31" r="62" fill="#dff1ee" opacity="0.52"/>
+  <circle cx="40" cy="292" r="74" fill="#e6edff" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355268">NTT ile Polinom Çarpımı</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647b89">Tam sayı hassasiyeti · modüler dönüşüm</text>
+
+  <rect x="27" y="75" width="110" height="73" rx="16" fill="url(#blueCard)" filter="url(#shadow)"/>
+  <text x="82" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#274e68">A(x)</text>
+  <path d="M48 119 H116" stroke="#759ab5" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="57" cy="119" r="4" fill="#4380a8"/>
+  <circle cx="75" cy="119" r="4" fill="#669bc0"/>
+  <circle cx="94" cy="119" r="4" fill="#8bb2cb"/>
+  <circle cx="111" cy="119" r="4" fill="#b0cadb"/>
+  <text x="82" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45677d">katsayılar</text>
+
+  <rect x="27" y="164" width="110" height="73" rx="16" fill="url(#violetCard)" filter="url(#shadow)"/>
+  <text x="82" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514477">B(x)</text>
+  <path d="M48 208 H116" stroke="#937fae" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="57" cy="208" r="4" fill="#705b99"/>
+  <circle cx="75" cy="208" r="4" fill="#9278b6"/>
+  <circle cx="94" cy="208" r="4" fill="#af9cc9"/>
+  <circle cx="111" cy="208" r="4" fill="#c9b9da"/>
+  <text x="82" y="227" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685a85">katsayılar</text>
+
+  <path d="M137 111 H160" stroke="#6d8fa4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="166,111 157,106 157,116" fill="#6d8fa4"/>
+  <path d="M137 200 H160" stroke="#6d8fa4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="166,200 157,195 157,205" fill="#6d8fa4"/>
+
+  <rect x="166" y="75" width="114" height="73" rx="16" fill="url(#mintCard)" filter="url(#shadow)"/>
+  <text x="223" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#276553">İleri NTT</text>
+  <text x="223" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477d6d">Â dönüşümü</text>
+
+  <rect x="166" y="164" width="114" height="73" rx="16" fill="url(#mintCard)" filter="url(#shadow)"/>
+  <text x="223" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#276553">İleri NTT</text>
+  <text x="223" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477d6d">B̂ dönüşümü</text>
+
+  <path d="M280 111 H316 V145 H333" fill="none" stroke="#5d8b82" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="339,145 330,140 330,150" fill="#5d8b82"/>
+  <path d="M280 200 H316 V175 H333" fill="none" stroke="#5d8b82" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="339,175 330,170 330,180" fill="#5d8b82"/>
+
+  <rect x="339" y="112" width="108" height="95" rx="18" fill="url(#peachCard)" filter="url(#shadow)"/>
+  <circle cx="393" cy="140" r="19" fill="#fff9ef" stroke="#d9a97d" stroke-width="1.5"/>
+  <text x="393" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#ae6b37">×</text>
+  <text x="393" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805431">Noktasal çarpım</text>
+  <text x="393" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#987354">Ĉᵢ = Âᵢ · B̂ᵢ</text>
+
+  <path d="M447 160 H474" stroke="#b58055" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="480,160 471,155 471,165" fill="#b58055"/>
+
+  <rect x="480" y="112" width="119" height="95" rx="18" fill="url(#blueCard)" filter="url(#shadow)"/>
+  <text x="539.5" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#274e68">Ters NTT</text>
+  <text x="539.5" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45677d">N⁻¹ ile ölçekle</text>
+  <path d="M506 180 H573" stroke="#7b9db6" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="516" cy="180" r="4" fill="#4f85aa"/>
+  <circle cx="535" cy="180" r="4" fill="#709fbd"/>
+  <circle cx="554" cy="180" r="4" fill="#91b7cd"/>
+  <circle cx="571" cy="180" r="4" fill="#b1cedd"/>
+
+  <path d="M599 160 H614" stroke="#6d8fa4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="620,160 611,155 611,165" fill="#6d8fa4"/>
+  <text x="620" y="145" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355268">C(x)</text>
+  <text x="620" y="181" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7789">konvolüsyon</text>
+
+  <rect x="100" y="263" width="440" height="37" rx="14" fill="#ffffff" opacity="0.78" filter="url(#soft)"/>
+  <path d="M124 281 H158 M124 281 L139 272 M124 281 L139 290" fill="none" stroke="#7660a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M158 281 H192 M192 281 L177 272 M192 281 L177 290" fill="none" stroke="#7660a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="158" cy="281" r="4.5" fill="#d8c8f0" stroke="#7660a0" stroke-width="1.5"/>
+  <text x="213" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6677">Kelebek adımı</text>
+  <path d="M315 281 H329" stroke="#9aabb5" stroke-width="1.5"/>
+  <text x="342" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#516d61">p = 998244353</text>
+  <path d="M437 281 H451" stroke="#9aabb5" stroke-width="1.5"/>
+  <text x="463" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a567f">ilkel kök g = 3</text>
+</svg>

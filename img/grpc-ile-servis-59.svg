@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="grpc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7169c9"/>
+      <stop offset="100%" stop-color="#4f9cc4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#58718b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#58718b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="57" r="74" fill="#dceefd" opacity="0.48"/>
+  <circle cx="581" cy="266" r="91" fill="#dff1df" opacity="0.5"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39546b">MİKRO SERVİSLERDE gRPC İLETİŞİMİ</text>
+
+  <g filter="url(#soft)">
+    <rect x="223" y="42" width="194" height="43" rx="14" fill="#fff7d9" stroke="#efd789"/>
+    <path d="M246 55 h13 l5 6 -5 6 h-13 z" fill="#e4ad47"/>
+    <path d="M249 58 h8 M249 62 h8" stroke="#fffdf5" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="278" y="61" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6e5a27">.proto sözleşmesi</text>
+    <text x="278" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#887540">Tip güvenliği ve kod üretimi</text>
+  </g>
+
+  <path d="M320 86 L320 102" stroke="#8aa5b7" stroke-width="2"/>
+  <polygon points="315,99 325,99 320,106" fill="#8aa5b7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="202" y="106" width="236" height="91" rx="21" fill="url(#grpc)"/>
+    <circle cx="241" cy="151" r="20" fill="#ffffff" opacity="0.19"/>
+    <path d="M231 151 h20 M241 141 v20" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="320" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">gRPC KATMANI</text>
+    <text x="320" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf8ff">HTTP/2 üzerinde Protobuf</text>
+    <rect x="272" y="172" width="96" height="15" rx="7.5" fill="#ffffff" opacity="0.19"/>
+    <text x="320" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Kompakt ikili veri</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="112" width="132" height="78" rx="18" fill="#e6f4ff" stroke="#b9dcf1"/>
+    <circle cx="55" cy="139" r="14" fill="#78b8db"/>
+    <path d="M49 139 h12 M55 133 v12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="97" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34647e">Sipariş</text>
+    <text x="97" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8194">İstemci servis</text>
+    <rect x="48" y="168" width="98" height="10" rx="5" fill="#cde8f7"/>
+  </g>
+
+  <path d="M161 151 C175 151 184 151 200 151" stroke="#6b9fbb" stroke-width="2.5" fill="none"/>
+  <polygon points="195,146 204,151 195,156" fill="#6b9fbb"/>
+
+  <g filter="url(#soft)">
+    <rect x="480" y="112" width="132" height="78" rx="18" fill="#e8f5e8" stroke="#bfdcc0"/>
+    <circle cx="507" cy="139" r="14" fill="#79ae83"/>
+    <path d="M500 143 v-9 h14 v9 M503 143 v-5 h3 v5 M509 143 v-5 h3 v5" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linejoin="round"/>
+    <text x="550" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456e4b">Stok</text>
+    <text x="550" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66866b">Sunucu servis</text>
+    <rect x="495" y="168" width="98" height="10" rx="5" fill="#d1ead3"/>
+  </g>
+
+  <path d="M439 151 C454 151 464 151 479 151" stroke="#6b9fbb" stroke-width="2.5" fill="none"/>
+  <polygon points="474,146 483,151 474,156" fill="#6b9fbb"/>
+
+  <path d="M157 211 C195 205 221 203 261 202" stroke="#9bb0c0" stroke-width="1.8" fill="none"/>
+  <path d="M483 211 C445 205 419 203 379 202" stroke="#9bb0c0" stroke-width="1.8" fill="none"/>
+
+  <g filter="url(#soft)">
+    <rect x="42" y="218" width="145" height="73" rx="17" fill="#f7edff" stroke="#dec4ef"/>
+    <text x="114" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#735088">İletişim modelleri</text>
+    <circle cx="63" cy="261" r="5" fill="#a878c5"/>
+    <text x="75" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765d84">Tekil çağrı</text>
+    <circle cx="63" cy="279" r="5" fill="#7fbdba"/>
+    <text x="75" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765d84">Çift yönlü akış</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="453" y="218" width="145" height="73" rx="17" fill="#fff1e6" stroke="#efd0b5"/>
+    <text x="525" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c6245">Dayanıklılık</text>
+    <path d="M474 253 l9 -5 9 5 v9 c0 7 -5 12 -9 14 -4 -2 -9 -7 -9 -14z" fill="#df9c65"/>
+    <path d="M480 262 l3 3 5 -7" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="540" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#87694f">Deadline</text>
+    <text x="540" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#87694f">TLS ve izleme</text>
+  </g>
+
+  <g opacity="0.9">
+    <path d="M245 211 H395" stroke="#7897aa" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M248 220 H392" stroke="#8badc0" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M251 229 H389" stroke="#9bbccc" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="320" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#58768b">HTTP/2 çoğullama</text>
+    <text x="320" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718d9e">Tek bağlantıda eşzamanlı akışlar</text>
+  </g>
+</svg>

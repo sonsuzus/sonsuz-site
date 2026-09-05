@@ -9,6 +9,7 @@ tags:
   - monitoring
   - devops
 toc: true
+image: /img/prometheus-ile-metrik-80.png
 ---
 
 Bir sunucunun CPU kullanımı %95'e ulaştığında bunu kullanıcılar şikâyet etmeden önce görmek, modern operasyon ekiplerinin süper gücüdür. Prometheus; sunucular, uygulamalar ve konteynerler için zaman serisi verisi toplayan, sorgulayan ve alarm üreten açık kaynaklı bir izleme sistemidir. Temel hedefi basittir: “Şu anda ne oluyor, geçmişte ne oldu ve kötüye giderse bana kim haber verecek?” sorularını ölçülebilir verilerle yanıtlamak.
@@ -82,3 +83,6 @@ groups:
 Buradaki `for: 5m`, kısa süreli CPU sıçramalarının gereksiz bildirim üretmesini engeller. Prometheus veriyi toplar ve kuralı değerlendirir; Alertmanager ise benzer alarmları gruplar, susturma kurallarını uygular ve doğru kanala iletir.
 
 Son olarak, iyi bir dashboard için yalnızca CPU'ya odaklanmayın. CPU, bellek, disk doluluk oranı, disk I/O, ağ trafiği, HTTP hata oranı ve yanıt süresi birlikte değerlendirilmelidir. Prometheus'u Grafana ile birleştirdiğinizde bu metrikler canlı panolara dönüşür. Böylece “sunucu yavaş” gibi belirsiz bir cümle, hangi makinede, ne zaman ve hangi kaynağın tükendiğini söyleyen somut bir teşhise dönüşür.
+
+![prometheus-ile-metrik-80](/img/prometheus-ile-metrik-80.svg)
+

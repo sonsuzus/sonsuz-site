@@ -9,9 +9,13 @@ tags:
   - makine öğrenmesi
   - hiperparametre ayarı
 toc: true
+image: /img/bayesian-optimizasyon-ile-52.png
 ---
 
 Bir modeli eğitmek saatler sürüyor, laboratuvar deneyi pahalı reaktifler tüketiyor ya da bir simülasyon tek çalıştırmada bulut faturasını kabartıyorsa klasik parametre taraması lükstür. Bayesian optimizasyon (BO), her denemeden öğrendiklerini kullanarak bir sonraki denemeyi stratejik biçimde seçer. Amaç, mümkün olan en az sayıda değerlendirmeyle en iyi parametre kombinasyonuna yaklaşmaktır.
+
+![bayesian-optimizasyon-ile-52](/img/bayesian-optimizasyon-ile-52.svg)
+
 ``
 
 ## Neden rastgele arama yetmez?

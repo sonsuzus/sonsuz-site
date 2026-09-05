@@ -10,6 +10,7 @@ tags:
   - dayanıklılık
   - yazılım mimarisi
 toc: true
+image: /img/circuit-breaker-deseni-28.png
 ---
 
 Dağıtık sistemlerde bir servisin yavaşlaması, yalnızca o servisin problemi olarak kalmaz. Ödeme API’sini bekleyen sipariş servisi, sipariş servisini bekleyen sepet uygulaması ve en sonunda kullanıcı deneyimi etkilenir. Circuit Breaker (devre kesici) deseni, başarısız çağrıları sonsuza dek tekrarlamak yerine bağlantıyı geçici olarak keserek kaynakları koruyan bir dayanıklılık yaklaşımıdır. Elektrik sigortası nasıl aşırı yükte devreyi kapatıyorsa, yazılımsal devre kesici de sorunlu bağımlılığa yapılan çağrıları kontrollü biçimde durdurur.
@@ -90,3 +91,6 @@ Circuit Breaker tek başına sihirli bir kalkan değildir. Özellikle timeout il
 | Fallback | Kontrollü kullanıcı deneyimi | Önbellekten sonuç döndürmek |
 
 Son olarak metrikleri izleyin: açık devre sayısı, hata oranı, fallback kullanım oranı ve gecikme süreleri mimarinin nabzını tutar. Doğru eşikler, kısa ama gerçekçi timeout’lar ve anlamlı fallback’lerle Circuit Breaker, dağıtık sisteminizin panik anında sakin kalmasını sağlar.
+
+![circuit-breaker-deseni-28](/img/circuit-breaker-deseni-28.svg)
+

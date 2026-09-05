@@ -8,9 +8,13 @@ tags:
   - optimizasyon
   - algoritmalar
   - python
+image: /img/simulated-annealing-yerel-35.png
 ---
 
 Bazı optimizasyon problemlerinde en iyi çözümü bulmak, dağlık bir arazide gece yürümeye benzer: El feneriniz yalnızca yakın çevreyi gösterir. Sürekli aşağı doğru ilerlerseniz ilk rastladığınız vadiye inersiniz; fakat daha uzakta çok daha derin bir vadi olabilir. **Simulated Annealing** (Benzetimli Tavlama), kontrollü miktarda “yanlış” hamle yaparak bu tuzaktan kaçmayı hedefleyen olasılıksal bir optimizasyon yaklaşımıdır.
+
+![simulated-annealing-yerel-35](/img/simulated-annealing-yerel-35.svg)
+
 ``
 
 Algoritmanın ilham kaynağı metalurjidir. Isıtılan bir metalin atomları yüksek enerjide serbestçe hareket eder. Metal yavaşça soğutulduğunda atomlar daha düzenli ve düşük enerjili bir yapıya yerleşir. Çok hızlı soğutma ise kusurlu, kararsız bir yapı bırakabilir. Optimizasyondaki karşılığı nettir: çözüm uzayında başlangıçta cesurca dolaşır, zamanla daha seçici davranırız.
