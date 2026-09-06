@@ -9,7 +9,11 @@ tags:
   - deep learning
   - pruning
 toc: true
+image: /img/pruning-teknikleri-ile-97.png
 ---
+
+![pruning-teknikleri-ile-97](/img/pruning-teknikleri-ile-97.svg)
+
 
 Derin öğrenme modelleri büyüdükçe doğrulukları genellikle artar; ancak bu büyümenin bir faturası vardır: daha fazla bellek, daha yüksek enerji tüketimi ve daha uzun çıkarım süresi. Pruning, yani budama, bir ağdaki düşük etkili ağırlıkları, nöronları veya hatta tüm katman parçalarını kaldırarak bu faturayı azaltmayı hedefler. Amaç modeli rastgele küçültmek değil, tahmin kalitesini mümkün olduğunca korurken gereksiz hesaplamaları ayıklamaktır.
 

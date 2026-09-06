@@ -9,7 +9,11 @@ tags:
   - veri sıkıştırma
   - depolama
   - python
+image: /img/delta-encoding-ile-44.png
 ---
+
+![delta-encoding-ile-44](/img/delta-encoding-ile-44.svg)
+
 
 Bir klasördeki günlük yedeklerin neredeyse aynı olduğunu düşünün: Dün 2 GB olan verinin bugün yalnızca birkaç megabaytı değişti. Her sürümün tamamını saklamak, hem disk alanını hem de ağ trafiğini hızla tüketir. Delta Encoding, tam da bu israfı azaltmak için benzer dosyaların ortak kısımlarını tekrar depolamak yerine yalnızca aralarındaki farkı, yani *delta* bilgisini saklar.
 ``

@@ -9,6 +9,7 @@ tags:
   - mikroservisler
   - service mesh
 toc: true
+image: /img/envoy-proxy-kullanimi-50.png
 ---
 
 Mikroservis mimarisinde her servis yalnızca iş mantığını çözmez; istek yönlendirme, TLS, yeniden deneme, gözlemlenebilirlik ve hata toleransı gibi ağ sorumluluklarıyla da uğraşır. Envoy Proxy, bu tekrar eden görevleri uygulama kodundan ayıran yüksek performanslı bir L7 proxy'dir. Basitçe söylemek gerekirse, servislerin önünde veya yanında duran, trafiği akıllıca yöneten görünmez bir trafik polisidir.
@@ -31,6 +32,9 @@ Envoy çoğunlukla iki modelde çalışır: API Gateway olarak dış dünyadan g
 | Metrikler | Uygulama entegrasyonuna bağlıdır | Standartlaştırılmış istatistikler sunar |
 | TLS/mTLS | Uygulamanın sorumluluğundadır | Proxy katmanında uygulanabilir |
 | Trafik bölme | Genellikle karmaşık | Route ve weight ile kolaydır |
+
+![envoy-proxy-kullanimi-50](/img/envoy-proxy-kullanimi-50.svg)
+
 
 ## Temel trafik modeli
 

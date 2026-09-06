@@ -9,6 +9,7 @@ tags:
   - performans
   - web sunucusu
   - devops
+image: /img/nginx-performans-optimizasyonu-67.png
 ---
 
 Yoğun trafikli bir web uygulamasında sorun çoğu zaman yalnızca sunucu işlemcisinin yetersiz olması değildir. Asıl mesele, her isteğin ne kadar kaynak tükettiği, bağlantıların nasıl yönetildiği ve statik içeriklerin uygulama katmanına uğramadan ne kadar hızlı servis edildiğidir. NGINX; olay güdümlü mimarisi, reverse proxy yetenekleri ve düşük bellek tüketimi sayesinde bu problemlerin çözümünde güçlü bir araçtır.
@@ -26,6 +27,9 @@ $$\text{Eşzamanlılık} \approx \text{worker\_processes} \times \text{worker\_c
 | Process/thread tabanlı sunucu | Bağlantı başına daha yüksek | Bağlam değiştirme maliyeti artabilir | Düşük-orta trafik |
 | NGINX event-driven model | Düşük ve öngörülebilir | Çok sayıda bekleyen bağlantıyı iyi yönetir | API, statik dosya, proxy |
 | Uygulama sunucusuna doğrudan erişim | Uygulamayı yorar | Statik istekler bile backend'e gider | Genellikle önerilmez |
+
+![nginx-performans-optimizasyonu-67](/img/nginx-performans-optimizasyonu-67.svg)
+
 
 İlk optimizasyon, worker ayarlarını gerçek donanıma göre yapılandırmaktır. `worker_processes auto` seçeneği NGINX'in CPU çekirdek sayısını algılamasına izin verir. `worker_connections` artırılırken Linux tarafındaki `ulimit -n` ve systemd `LimitNOFILE` değerleri de yükseltilmelidir; aksi durumda yapılandırma kâğıt üzerinde hızlı, pratikte sınırlı kalır.
 

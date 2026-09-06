@@ -10,6 +10,7 @@ tags:
   - dashboard
   - veri görselleştirme
 toc: true
+image: /img/grafana-panolari-tasarlamak-55.png
 ---
 
 Grafana panosu tasarlamak, ekrana mümkün olduğunca çok grafik sığdırmak değildir; doğru kişiye, doğru anda, doğru kararı verdirecek sinyali sunmaktır. Sunucu gecikmesi, hata oranı, kaynak tüketimi ve iş metrikleri aynı ekranda bulunabilir. Ancak bu veriler bir bağlam ve hiyerarşi olmadan sunulursa pano, kokpitten çok renkli bir duvar kâğıdına dönüşür. İyi bir dashboard, teknik karmaşayı birkaç saniyede okunabilir bir hikâyeye çevirir.
@@ -63,3 +64,6 @@ Grafana değişkenleriyle `environment`, `cluster` ve `service` filtreleri eklem
 | İsimsiz paneller | Yorumlama yavaşlar | Başlığı soru veya anlamlı metrik yapın |
 
 Son dokunuş olarak panellere kısa açıklamalar, veri kaynağı bağlantıları ve runbook URL’leri ekleyin. Bir alarm çaldığında pano yalnızca “ne oldu?” sorusunu değil, “nereden başlamalıyım?” sorusunu da yanıtlamalıdır. Başarılı Grafana panosu, izleyiciyi grafikleri okumaya zorlamaz; grafikleri, sistemin hikâyesini anlatacak şekilde konuşturur.
+
+![grafana-panolari-tasarlamak-55](/img/grafana-panolari-tasarlamak-55.svg)
+

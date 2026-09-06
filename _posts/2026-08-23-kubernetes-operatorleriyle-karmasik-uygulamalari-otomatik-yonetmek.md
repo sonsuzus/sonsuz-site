@@ -10,6 +10,7 @@ tags:
   - go
   - otomasyon
   - devops
+image: /img/kubernetes-operatorleriyle-karmasik-77.png
 ---
 
 Kubernetes, konteynerleri çalıştırma işini oldukça iyi yapar; ancak veritabanı kümesi kurmak, yedek almak, sürüm yükseltmek veya arızalı bir düğümü güvenle değiştirmek gibi uygulamaya özgü işler daha fazla bilgi ister. Kubernetes Operatörü tam burada devreye girer: Bir uzmanın operasyonel bilgisini kodlayarak uygulamanın yaşam döngüsünü sürekli yöneten özel bir denetleyici oluşturur. Kısacası Operatör, YAML dosyalarınızın yanında nöbet tutan, yorulmayan bir SRE yardımcısıdır.
@@ -29,6 +30,9 @@ Her **reconcile** döngüsünde denetleyici bu hatayı gözlemler ve uygun eylem
 | CR (Custom Resource) | Bu türün kullanıcının oluşturduğu örneği | `production-db` |
 | Controller | Kaynağı izleyip durumu uzlaştıran yazılım | Go ile yazılmış reconciler |
 | Operator | Uygulama operasyon bilgisini taşıyan controller paketi | Yedekleme ve failover yöneticisi |
+
+![kubernetes-operatorleriyle-karmasik-77](/img/kubernetes-operatorleriyle-karmasik-77.svg)
+
 
 Örneğin kullanıcı, üç replikalı bir veritabanı kümesini şöyle isteyebilir:
 

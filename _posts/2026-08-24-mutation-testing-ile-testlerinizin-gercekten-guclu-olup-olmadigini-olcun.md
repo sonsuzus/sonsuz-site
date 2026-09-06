@@ -8,9 +8,13 @@ tags:
   - mutation testing
   - yazılım testi
   - test kalitesi
+image: /img/mutation-testing-ile-43.png
 ---
 
 Bir test paketinin yeşil olması, uygulamanın iyi test edildiği anlamına gelmez. Testler yalnızca kodu çalıştırıyor, fakat yanlış sonucu fark etmiyor olabilir. Mutation testing (mutasyon testi), bu konfor alanını bozan bir tekniktir: Kodunuza kasıtlı, küçük hatalar ekler ve testlerinizin bu hataları yakalayıp yakalayamadığını ölçer. Kısacası soru “Kod çalışıyor mu?” değil, “Testlerim hatalı kodu reddedebiliyor mu?” olur.
+
+
+![mutation-testing-ile-43](/img/mutation-testing-ile-43.svg)
 
 ``
 

@@ -9,6 +9,7 @@ tags:
   - yazılım testi
   - siber güvenlik
 toc: true
+image: /img/fuzz-testing-ile-11.png
 ---
 
 Bir yazılımın mutlu yolunda çalışması, onun her koşulda güvenli olduğu anlamına gelmez. Kullanıcıların boş metin, devasa dosya, bozuk karakter kodlaması veya beklenmeyen veri türleri gönderebildiği gerçek dünyada asıl sorunlar köşe durumlarda yaşanır. **Fuzz testing** ya da kısa adıyla *fuzzing*, uygulamalara otomatik biçimde sıra dışı, hatalı veya rastgele girdiler göndererek çökmeleri, istisnaları ve güvenlik açıklarını bulma disiplinidir. Bir bakıma yazılımınıza kontrollü kaos yaşatırsınız.
@@ -30,6 +31,9 @@ Elbette tüm olası girdileri denemek çoğu zaman imkânsızdır. Özellikle uz
 | Rastgele fuzzing | Tamamen rastgele veri | Hızlı başlangıç sağlar | Anlamlı kod yollarına ulaşmak zor olabilir |
 | Mutasyon tabanlı fuzzing | Geçerli örneklerin bozulması | Gerçekçi veri yapısını korur | Başlangıç örneklerine ihtiyaç duyar |
 | Kapsama güdümlü fuzzing | Kod geri bildirimi | Yeni yürütme yolları keşfeder | Kurulum ve ölçüm maliyeti vardır |
+
+![fuzz-testing-ile-11](/img/fuzz-testing-ile-11.svg)
+
 
 ## Basit bir örnekle başlayalım
 

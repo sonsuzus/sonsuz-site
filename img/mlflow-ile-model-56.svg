@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8e9ff"/>
+      <stop offset="100%" stop-color="#c4dcf5"/>
+    </linearGradient>
+    <linearGradient id="registry" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff4df"/>
+      <stop offset="100%" stop-color="#c8e8ce"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="318" cy="162" r="133" fill="#dceefa" opacity="0.32"/>
+  <circle cx="543" cy="252" r="105" fill="#d8f0d9" opacity="0.30"/>
+  <circle cx="75" cy="55" r="74" fill="#e5e0fa" opacity="0.25"/>
+
+  <text x="30" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">MLflow • İzlenebilir MLOps Akışı</text>
+  <text x="30" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Deneylerden onaylı model sürümlerine</text>
+
+  <path d="M158 157 L190 157" stroke="#8ca6bd" stroke-width="2.2" fill="none"/>
+  <polygon points="190,157 181,152 181,162" fill="#8ca6bd"/>
+
+  <path d="M336 157 L372 157" stroke="#8ca6bd" stroke-width="2.2" fill="none"/>
+  <polygon points="372,157 363,152 363,162" fill="#8ca6bd"/>
+
+  <path d="M496 157 L529 157" stroke="#8ca6bd" stroke-width="2.2" fill="none"/>
+  <polygon points="529,157 520,152 520,162" fill="#8ca6bd"/>
+
+  <path d="M115 104 C132 93 149 92 179 104" stroke="#adc0d1" stroke-width="1.6" stroke-dasharray="4 4" fill="none"/>
+  <path d="M115 210 C134 223 152 222 179 210" stroke="#adc0d1" stroke-width="1.6" stroke-dasharray="4 4" fill="none"/>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="117" width="128" height="80" rx="17" fill="#fdfdff" stroke="#d2dfeb"/>
+    <rect x="43" y="131" width="31" height="31" rx="10" fill="#e8defa"/>
+    <path d="M51 151 L58 143 L66 151" fill="none" stroke="#8064a4" stroke-width="2"/>
+    <circle cx="58.5" cy="141" r="2.3" fill="#8064a4"/>
+    <text x="84" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43566a">Deney</text>
+    <text x="84" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Sınıflandırma</text>
+    <rect x="43" y="174" width="93" height="10" rx="5" fill="#e7eef5"/>
+    <rect x="43" y="174" width="61" height="10" rx="5" fill="#cbb8ea"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="190" y="104" width="146" height="106" rx="20" fill="url(#core)" stroke="#b4cfe4"/>
+    <circle cx="263" cy="132" r="19" fill="#f6fbff" opacity="0.86"/>
+    <path d="M254 132 L260 138 L273 124" fill="none" stroke="#4d82a7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="231" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355d7b">Run Kayıtları</text>
+    <text x="211" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7890">Parametre • metrik • dosya</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="45" y="70" width="76" height="31" rx="10" fill="#fffaf0" stroke="#eadcb9"/>
+    <circle cx="60" cy="85.5" r="5" fill="#f2bf75"/>
+    <text x="70" y="89.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#796444">Run A</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="45" y="212" width="76" height="31" rx="10" fill="#f4fbf6" stroke="#cbe4d2"/>
+    <circle cx="60" cy="227.5" r="5" fill="#72b98c"/>
+    <text x="70" y="231.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7659">Run B</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="372" y="108" width="124" height="98" rx="18" fill="#fffdf9" stroke="#eadcc3"/>
+    <rect x="390" y="126" width="88" height="13" rx="6.5" fill="#f7ead0"/>
+    <rect x="390" y="148" width="69" height="8" rx="4" fill="#e8eef3"/>
+    <rect x="390" y="164" width="79" height="8" rx="4" fill="#e8eef3"/>
+    <text x="390" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6f5a36">Karşılaştırma</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="529" y="92" width="84" height="130" rx="19" fill="url(#registry)" stroke="#afd3b7"/>
+    <path d="M554 122 L588 122" stroke="#57966c" stroke-width="2"/>
+    <path d="M554 143 L588 143" stroke="#57966c" stroke-width="2"/>
+    <path d="M554 164 L588 164" stroke="#57966c" stroke-width="2"/>
+    <circle cx="548" cy="122" r="4" fill="#57966c"/>
+    <circle cx="548" cy="143" r="4" fill="#57966c"/>
+    <circle cx="548" cy="164" r="4" fill="#57966c"/>
+    <text x="544" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35694a">Model Kaydı</text>
+    <text x="551" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8068">v1  v2  v3</text>
+  </g>
+
+  <path d="M571 222 L571 251" stroke="#8ca6bd" stroke-width="2.2" fill="none"/>
+  <polygon points="571,251 566,242 576,242" fill="#8ca6bd"/>
+  <g filter="url(#softShadow)">
+    <rect x="517" y="258" width="108" height="35" rx="12" fill="#e8f4eb" stroke="#b9d9c0"/>
+    <circle cx="537" cy="275.5" r="7" fill="#5da574"/>
+    <path d="M534 275.5 L536.5 278 L541 272.5" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="550" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7250">Üretim</text>
+  </g>
+
+  <text x="194" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Tekrarlanabilir eğitim</text>
+  <text x="374" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Seçim ve onay</text>
+</svg>

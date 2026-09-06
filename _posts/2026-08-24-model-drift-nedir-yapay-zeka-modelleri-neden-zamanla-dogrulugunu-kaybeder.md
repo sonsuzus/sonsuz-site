@@ -9,9 +9,13 @@ tags:
   - makine öğrenmesi
   - model drift
 toc: true
+image: /img/model-drift-nedir-26.png
 ---
 
 Bir makine öğrenmesi modelini yayına almak, yarışın bitiş çizgisi değil; aslında başlangıç tabancasıdır. Eğitim verisinde %95 doğruluk yakalayan bir dolandırıcılık, öneri ya da tahmin modeli, birkaç ay sonra beklenmedik biçimde hatalı kararlar vermeye başlayabilir. Bu olaya **model drift** denir: Modelin üretim ortamındaki performansının, zaman içinde eğitim dönemindeki performansından anlamlı biçimde uzaklaşmasıdır.
+
+
+![model-drift-nedir-26](/img/model-drift-nedir-26.svg)
 
 ``
 

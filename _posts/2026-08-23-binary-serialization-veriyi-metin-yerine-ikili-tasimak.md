@@ -8,6 +8,7 @@ tags:
   - binary serialization
   - protobuf
   - messagepack
+image: /img/binary-serialization-veriyi-53.png
 ---
 
 Bir servis diğerine veri gönderirken çoğu geliştiricinin ilk tercihi JSON olur: okunabilir, hata ayıklaması kolay ve her dilde desteklenir. Ancak milyonlarca mesajın dolaştığı sistemlerde `{ "id": 42 }` gibi metinler beklenmedik bir maliyete dönüşür. Binary serialization, veriyi karakter dizileri yerine baytlar olarak temsil ederek ağ trafiğini, bellek kullanımını ve ayrıştırma süresini azaltmayı hedefler. Özellikle mikroservisler, oyun sunucuları, IoT cihazları ve olay akışı sistemlerinde önemli bir performans aracıdır.
@@ -27,6 +28,9 @@ JSON'da alan adları, tırnaklar, virgüller ve parantezler de ağdan geçer. İ
 | Şema ihtiyacı | Opsiyonel | Sıkça gerekli |
 | Hata ayıklama | Tarayıcıyla bile kolay | Araç veya decoder gerekir |
 | Dil uyumluluğu | Çok geniş | Kütüphaneye bağlı ama güçlü |
+
+![binary-serialization-veriyi-53](/img/binary-serialization-veriyi-53.svg)
+
 
 Binary dünyasında tek bir standart yoktur. **Protocol Buffers (Protobuf)**, Google tarafından geliştirilen ve şema odaklı popüler bir çözümdür. **Apache Avro**, özellikle veri akışları ve şema evrimi için güçlüdür. **MessagePack** ise JSON'a benzer veri modelini daha kompakt baytlara dönüştürür; hızlı başlamak isteyen ekipler için pratiktir. FlatBuffers ve Cap'n Proto gibi araçlar ise bazı senaryolarda veriyi kopyalamadan okumaya odaklanır.
 

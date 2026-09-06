@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="originGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9db9ee"/>
+      <stop offset="100%" stop-color="#7398db"/>
+    </linearGradient>
+    <linearGradient id="edgeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bcebdc"/>
+      <stop offset="100%" stop-color="#8fd6c0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6282a5" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-30%" width="150%" height="165%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#547a87" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="332" cy="159" r="119" fill="#dceef1" opacity="0.36"/>
+  <circle cx="332" cy="159" r="84" fill="none" stroke="#b8d9d7" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476375">CDN İÇERİK DAĞITIM AKIŞI</text>
+  <text x="28" y="46" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77909b">En yakın nokta • Önbellek • Daha düşük gecikme</text>
+
+  <!-- Bağlantı çizgileri -->
+  <path d="M126 159 C156 159, 167 159, 195 159" fill="none" stroke="#719cbd" stroke-width="2.2"/>
+  <polygon points="195,159 186,154 186,164" fill="#719cbd"/>
+
+  <path d="M284 131 C299 111, 307 99, 320 83" fill="none" stroke="#7aaead" stroke-width="2"/>
+  <polygon points="320,83 311,86 318,92" fill="#7aaead"/>
+
+  <path d="M284 181 C300 203, 307 216, 321 233" fill="none" stroke="#7aaead" stroke-width="2"/>
+  <polygon points="321,233 312,225 310,234" fill="#7aaead"/>
+
+  <path d="M370 83 C398 97, 414 109, 438 125" fill="none" stroke="#8da8ca" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <path d="M370 235 C398 221, 414 209, 438 193" fill="none" stroke="#8da8ca" stroke-width="1.8" stroke-dasharray="4 4"/>
+
+  <path d="M466 143 C480 151, 486 154, 502 158" fill="none" stroke="#719cbd" stroke-width="2.2"/>
+  <polygon points="502,158 494,153 493,163" fill="#719cbd"/>
+
+  <!-- Kullanıcı -->
+  <g filter="url(#softShadow)">
+    <rect x="28" y="122" width="98" height="74" rx="16" fill="#fffdf7"/>
+    <circle cx="77" cy="145" r="11" fill="#f6bf8b"/>
+    <path d="M58 178 C60 162, 68 157, 77 157 C86 157, 94 162, 96 178" fill="#93aade"/>
+    <rect x="47" y="181" width="60" height="4" rx="2" fill="#dce6ed"/>
+  </g>
+  <text x="49" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405d70">Kullanıcı</text>
+  <text x="37" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8897">İçerik isteği</text>
+
+  <!-- Seçim katmanı -->
+  <g filter="url(#shadow)">
+    <rect x="195" y="117" width="89" height="84" rx="18" fill="#edf5ff" stroke="#c4d8f1"/>
+    <circle cx="239.5" cy="143" r="15" fill="#90b3e5"/>
+    <path d="M232 143 L237 148 L248 137" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="211" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405f86">DNS seçimi</text>
+    <text x="207" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66829d">En yakın edge</text>
+  </g>
+
+  <!-- Üst edge -->
+  <g filter="url(#shadow)">
+    <rect x="320" y="47" width="100" height="73" rx="17" fill="url(#edgeGrad)"/>
+    <rect x="337" y="63" width="66" height="23" rx="7" fill="#f7fffb" opacity="0.85"/>
+    <path d="M347 74 H393 M347 80 H382" stroke="#6ca894" stroke-width="2" stroke-linecap="round"/>
+    <text x="344" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b60">Edge • Tokyo</text>
+  </g>
+
+  <!-- Alt edge -->
+  <g filter="url(#shadow)">
+    <rect x="320" y="200" width="100" height="73" rx="17" fill="url(#edgeGrad)"/>
+    <rect x="337" y="216" width="66" height="23" rx="7" fill="#f7fffb" opacity="0.85"/>
+    <path d="M347 227 H393 M347 233 H382" stroke="#6ca894" stroke-width="2" stroke-linecap="round"/>
+    <text x="337" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b60">Edge • Berlin</text>
+  </g>
+
+  <!-- Ana edge -->
+  <g filter="url(#shadow)">
+    <rect x="438" y="112" width="98" height="93" rx="18" fill="url(#edgeGrad)"/>
+    <circle cx="487" cy="139" r="17" fill="#f4fffb" opacity="0.9"/>
+    <path d="M477 134 H497 M477 140 H497 M477 146 H490" stroke="#5a9e89" stroke-width="2.3" stroke-linecap="round"/>
+    <text x="460" y="175" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326b5c">Yakın Edge</text>
+    <text x="459" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f897a">Önbellek</text>
+  </g>
+
+  <!-- Origin -->
+  <g filter="url(#shadow)">
+    <rect x="502" y="87" width="110" height="144" rx="20" fill="url(#originGrad)"/>
+    <rect x="522" y="109" width="70" height="44" rx="9" fill="#eaf3ff" opacity="0.9"/>
+    <path d="M532 121 H582 M532 130 H582 M532 139 H570" stroke="#668bc7" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="539" cy="174" r="5" fill="#c8ead2"/>
+    <circle cx="557" cy="174" r="5" fill="#c8ead2"/>
+    <circle cx="575" cy="174" r="5" fill="#c8ead2"/>
+    <text x="525" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Origin</text>
+    <text x="520" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e8f1ff">Merkezi sunucu</text>
+  </g>
+
+  <!-- Hit / Miss bilgi kutuları -->
+  <g filter="url(#softShadow)">
+    <rect x="39" y="263" width="205" height="35" rx="12" fill="#e6f6ed"/>
+    <circle cx="58" cy="280.5" r="8" fill="#65b68e"/>
+    <path d="M54 280 L57 283 L63 276" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="75" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397660">Önbellek isabeti: hızlı yanıt</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="263" y="279" width="236" height="29" rx="11" fill="#fff3dc"/>
+    <circle cx="281" cy="293.5" r="7" fill="#e5a34f"/>
+    <path d="M281 289 V294 M281 298 V298" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="296" y="297.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6630">Önbellek ıskası: origin'den al ve kaydet</text>
+  </g>
+</svg>

@@ -11,6 +11,7 @@ tags:
   - backend
   - web geliştirme
 toc: true
+image: /img/caching-stratejileri-onbellekleme-44.png
 ---
 
 Bir uygulama yavaşsa suçlu her zaman veritabanı değildir; bazen aynı veriyi yüzlerce kez hesaplayan veya uzak bir servisten tekrar tekrar isteyen kodlardır. Önbellekleme (caching), sık kullanılan ve üretimi maliyetli sonuçları daha hızlı erişilebilen bir katmanda saklama tekniğidir. Doğru tasarlandığında gecikmeyi azaltır, altyapı maliyetini düşürür ve sistemin yoğun trafik altında daha sakin kalmasını sağlar. Ancak cache, “ekle ve unut” düğmesi değildir: veri güncelliği, bellek sınırları ve tutarlılık dikkatle yönetilmelidir.
@@ -73,3 +74,6 @@ async function getProduct(productId) {
 Bir anahtarın süresi dolduğunda çok sayıda istek aynı anda veritabanına hücum edebilir; buna **cache stampede** denir. Çözüm olarak kilitleme, tekil istek birleştirme (request coalescing) veya TTL'ye rastgele küçük bir sapma ekleme kullanılabilir. Örneğin 60 saniye yerine $60 + random(0, 10)$ saniye vermek, tüm anahtarların aynı anda ölmesini engeller.
 
 Son olarak ölçmeden optimizasyon yapmayın. Hit ratio, p95 gecikme, Redis bellek tüketimi ve veritabanı sorgu sayısı düzenli izlenmelidir. Hedef sadece cache eklemek değil; doğru veriyi, doğru süreyle, doğru katmanda saklayarak uygulamanın hem hızlı hem güvenilir kalmasını sağlamaktır.
+
+![caching-stratejileri-onbellekleme-44](/img/caching-stratejileri-onbellekleme-44.svg)
+

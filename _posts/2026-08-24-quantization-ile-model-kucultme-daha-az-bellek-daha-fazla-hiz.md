@@ -9,6 +9,7 @@ tags:
   - quantization
   - model optimizasyonu
 toc: true
+image: /img/quantization-ile-model-24.png
 ---
 
 Büyük dil modelleri ve görüntü ağları etkileyici sonuçlar üretse de bunun bir bedeli vardır: milyarlarca parametre, yüksek RAM/VRAM tüketimi ve gecikme. Quantization (nicemleme), modelin öğrendiği bilgiyi mümkün olduğunca koruyup sayısal temsilini daha düşük hassasiyetli formatlara taşıyarak bu bedeli azaltan temel optimizasyon tekniklerinden biridir. Kısacası, modelin bavulunu hafifletirken yolculuk performansını korumaya çalışırız.
@@ -83,3 +84,6 @@ Bu örnek özellikle `Linear` katmanları yoğun olan transformer benzeri mimari
 Daha az bit her zaman daha iyi değildir. Aykırı değerler (outlier), aktivasyon dağılımları ve katman hassasiyetleri nedeniyle bazı katmanlar INT4'te ciddi kalite kaybedebilir. Bu yüzden karma hassasiyetli yaklaşım mantıklıdır: hassas katmanları FP16'da, daha dayanıklı katmanları INT8 veya INT4'te tutabilirsiniz.
 
 Sonuç olarak quantization, modeli “daha kötü” yapmak değil, kaynaklarla kalite arasında bilinçli bir mühendislik anlaşması yapmaktır. Önce FP16 veya INT8 PTQ ile başlayın, temsilî bir doğrulama kümesi kullanın ve ölçmeden optimizasyon yaptığınıza asla inanmayın.
+
+![quantization-ile-model-24](/img/quantization-ile-model-24.svg)
+

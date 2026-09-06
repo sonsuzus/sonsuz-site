@@ -11,6 +11,7 @@ tags:
   - mimari
   - python
 toc: true
+image: /img/ajan-tabanli-yapay-39.png
 ---
 
 Tek bir büyük dil modeli etkileyici cevaplar üretebilir; ancak gerçek dünyadaki işler çoğunlukla araştırma, planlama, araç kullanımı, doğrulama ve raporlama gibi farklı uzmanlıklar ister. Ajan tabanlı yapay zeka mimarisi, bu yükü tek bir modele bırakmak yerine rolleri belirlenmiş birden fazla ajana dağıtır. Bunu küçük ama disiplinli bir yazılım ekibi gibi düşünebilirsiniz: biri işi parçalar, biri veri toplar, diğeri sonucu test eder, bir başkası da son kararı gözden geçirir.
@@ -32,6 +33,9 @@ Burada $O_t$ anlık gözlemi, $M_t$ belleği, $G$ hedefi, $\pi$ ise karar politi
 | Merkezi orkestratör | Görev akışı görünür ve kontrollüdür | Orkestratör darboğaz veya tek hata noktası olabilir |
 | Eşler arası ajanlar | Esnek, dağıtık iş birliği sağlar | Mesajlaşma ve anlaşmazlık yönetimi zordur |
 | Hiyerarşik ekip | Yönetici ve uzman rolleri nettir | Fazla katman gecikmeyi artırabilir |
+
+![ajan-tabanli-yapay-39](/img/ajan-tabanli-yapay-39.svg)
+
 
 ## Orkestrasyon: Herkes Konuşursa Toplantı Uzamaz mı?
 

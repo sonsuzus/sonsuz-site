@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6676a7"/>
+      <stop offset="100%" stop-color="#465578"/>
+    </linearGradient>
+    <linearGradient id="xai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff4d6"/>
+      <stop offset="100%" stop-color="#e7f6dd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708b" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="52" r="72" fill="#dceefe" opacity="0.55"/>
+  <circle cx="581" cy="271" r="90" fill="#dcefdc" opacity="0.5"/>
+  <circle cx="326" cy="151" r="117" fill="#ffffff" opacity="0.35"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536b">Açıklanabilir Yapay Zeka</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728398">Kararların perde arkası</text>
+
+  <!-- Inputs -->
+  <g filter="url(#softShadow)">
+    <rect x="28" y="82" width="126" height="42" rx="14" fill="#ffffff"/>
+    <circle cx="51" cy="103" r="11" fill="#cde8fa"/>
+    <path d="M46 105 L50 100 L54 105 M48 107 L54 107" fill="none" stroke="#4b8bb7" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="70" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40536b">Gelir</text>
+    <text x="70" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75869a">özellik</text>
+
+    <rect x="28" y="137" width="126" height="42" rx="14" fill="#ffffff"/>
+    <circle cx="51" cy="158" r="11" fill="#f9d8d4"/>
+    <path d="M46 158 H56 M51 153 V163" fill="none" stroke="#b86b67" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="70" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40536b">Gecikme</text>
+    <text x="70" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75869a">özellik</text>
+
+    <rect x="28" y="192" width="126" height="42" rx="14" fill="#ffffff"/>
+    <circle cx="51" cy="213" r="11" fill="#e3d9f6"/>
+    <path d="M45 216 C48 209 53 209 57 216 M51 207 V211" fill="none" stroke="#806ab4" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="70" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40536b">Geçmiş</text>
+    <text x="70" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75869a">özellik</text>
+  </g>
+
+  <!-- input routes -->
+  <path d="M154 103 H182 Q190 103 190 112 V135 H205" fill="none" stroke="#9bb4c9" stroke-width="2"/>
+  <polygon points="205,131 212,135 205,139" fill="#9bb4c9"/>
+  <path d="M154 158 H205" fill="none" stroke="#9bb4c9" stroke-width="2"/>
+  <polygon points="205,154 212,158 205,162" fill="#9bb4c9"/>
+  <path d="M154 213 H182 Q190 213 190 204 V181 H205" fill="none" stroke="#9bb4c9" stroke-width="2"/>
+  <polygon points="205,177 212,181 205,185" fill="#9bb4c9"/>
+
+  <!-- Model -->
+  <g filter="url(#shadow)">
+    <rect x="212" y="92" width="160" height="135" rx="25" fill="url(#core)"/>
+    <path d="M240 123 C260 106 284 106 302 123 C319 106 343 107 349 133 C355 157 338 179 316 177 H253 C233 177 224 158 231 142 C233 134 236 128 240 123Z" fill="#8291bd" opacity="0.62"/>
+    <circle cx="257" cy="146" r="7" fill="#e9efff"/>
+    <circle cx="293" cy="128" r="7" fill="#e9efff"/>
+    <circle cx="327" cy="150" r="7" fill="#e9efff"/>
+    <circle cx="281" cy="170" r="7" fill="#e9efff"/>
+    <path d="M263 143 L287 131 M299 131 L321 147 M322 155 L286 167 M259 153 L278 166 M263 150 L320 150" fill="none" stroke="#dbe5ff" stroke-width="2" opacity="0.85"/>
+    <text x="292" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Kara Kutu Model</text>
+  </g>
+
+  <!-- output -->
+  <path d="M372 158 H409" fill="none" stroke="#8299ad" stroke-width="2.2"/>
+  <polygon points="409,154 417,158 409,162" fill="#8299ad"/>
+  <g filter="url(#softShadow)">
+    <rect x="418" y="119" width="191" height="77" rx="18" fill="#ffffff"/>
+    <circle cx="447" cy="148" r="16" fill="#f8dfd8"/>
+    <path d="M440 149 L445 154 L455 142" fill="none" stroke="#bd675c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="472" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536b">Tahmin: Yüksek Risk</text>
+    <text x="472" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77899b">Karar tek başına yeterli değil</text>
+  </g>
+
+  <!-- XAI explanation band -->
+  <path d="M292 227 V247" fill="none" stroke="#81a28e" stroke-width="2"/>
+  <polygon points="288,247 292,255 296,247" fill="#81a28e"/>
+  <g filter="url(#shadow)">
+    <rect x="171" y="255" width="298" height="49" rx="17" fill="url(#xai)"/>
+    <circle cx="200" cy="280" r="15" fill="#fff9e8"/>
+    <path d="M193 281 H207 M200 274 V287 M195 276 L205 285 M205 276 L195 285" fill="none" stroke="#77976d" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="225" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c6754">XAI Açıklama Katmanı</text>
+    <text x="225" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f8275">Neden? • Katkı • Güven</text>
+    <rect x="382" y="269" width="10" height="20" rx="3" fill="#d46f65"/>
+    <rect x="397" y="275" width="10" height="14" rx="3" fill="#e8a07a"/>
+    <rect x="412" y="265" width="10" height="24" rx="3" fill="#6299c5"/>
+    <text x="430" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b61">SHAP</text>
+  </g>
+
+  <!-- connector explanation to decision -->
+  <path d="M469 255 C500 241 511 219 511 198" fill="none" stroke="#8dad88" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="507,201 511,193 515,201" fill="#8dad88"/>
+</svg>

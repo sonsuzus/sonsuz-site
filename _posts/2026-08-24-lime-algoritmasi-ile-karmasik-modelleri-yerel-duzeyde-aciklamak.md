@@ -9,7 +9,11 @@ tags:
   - açıklanabilir yapay zeka
   - makine öğrenmesi
 toc: true
+image: /img/lime-algoritmasi-ile-41.png
 ---
+
+![lime-algoritmasi-ile-41](/img/lime-algoritmasi-ile-41.svg)
+
 
 Derin öğrenme ve ansambl yöntemleri yüksek doğruluk sağlayabilir; fakat bir müşterinin kredi başvurusunun neden reddedildiğini ya da bir görselin neden “kedi” olarak etiketlendiğini açıklamak çoğu zaman zordur. LIME (Local Interpretable Model-agnostic Explanations), bu kara kutu hissini tamamen ortadan kaldırmasa da tek bir tahminin çevresine güçlü bir el feneri tutar: Karmaşık modelin **belirli bir örnek için** nasıl karar verdiğini, anlaşılabilir basit bir modelle yaklaşık olarak açıklar.
 ``

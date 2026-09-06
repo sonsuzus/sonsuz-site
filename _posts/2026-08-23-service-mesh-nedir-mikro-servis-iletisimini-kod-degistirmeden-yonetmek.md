@@ -8,6 +8,7 @@ tags:
   - service mesh
   - mikro servisler
   - kubernetes
+image: /img/service-mesh-nedir-91.png
 ---
 
 Mikro servis mimarisi büyüdükçe asıl zorluk yalnızca servis yazmak değildir; servislerin birbirini güvenli, hızlı ve gözlemlenebilir biçimde çağırmasını sağlamaktır. Service mesh, bu iletişim katmanını uygulama kodundan ayıran altyapı yaklaşımıdır. Böylece Java, Go, Python ya da Node.js ile yazılmış servisler; tekrar tekrar istemci kütüphanesi eklemeden ortak ağ politikalarından yararlanabilir.
@@ -56,3 +57,6 @@ Bu yapı, `payment` hedefine giden isteklerin ağırlıklı dağıtımını tan�
 Elbette service mesh sihirli değnek değildir. Proxy'ler CPU ve bellek tüketir, ağ yoluna küçük de olsa gecikme ekler ve operasyon ekibinin yeni kavramları öğrenmesini gerektirir. Az sayıda servis, basit trafik ve sınırlı güvenlik ihtiyacı olan bir sistemde mesh gereksiz ağır olabilir. Buna karşılık çok ekipli Kubernetes ortamlarında; mTLS, trafik kontrolü, ayrıntılı metrikler ve tutarlı dayanıklılık politikaları ihtiyaç hâline geldiyse güçlü bir yatırım olur.
 
 Özetle service mesh, iş mantığını ağ mühendisliğinden ayırır. Uygulamanız “ödeme yap” demeye devam eder; güvenli bağlantı, deneme stratejisi, gözlem ve kontrollü dağıtım gibi zor detayları ise ortak altyapı katmanı üstlenir.
+
+![service-mesh-nedir-91](/img/service-mesh-nedir-91.svg)
+

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="trainGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c7dcf5"/>
+    </linearGradient>
+    <linearGradient id="prodGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2f5e6"/>
+      <stop offset="100%" stop-color="#cbe8d1"/>
+    </linearGradient>
+    <linearGradient id="warnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0d8"/>
+      <stop offset="100%" stop-color="#f7d9ad"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7b90a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#71869b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="84" cy="44" r="72" fill="#dcecf8" opacity="0.45"/>
+  <circle cx="580" cy="270" r="90" fill="#dcefd8" opacity="0.4"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39536b">MODEL DRIFT</text>
+  <text x="32" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667e91">Zamanla değişen veri dünyası</text>
+
+  <path d="M173 126 L215 126" stroke="#7994a9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="215,126 207,121 207,131" fill="#7994a9"/>
+  <path d="M358 126 L401 126" stroke="#7994a9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="401,126 393,121 393,131" fill="#7994a9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="83" width="142" height="87" rx="16" fill="url(#trainGrad)"/>
+    <rect x="45" y="96" width="35" height="35" rx="10" fill="#ffffff" opacity="0.72"/>
+    <path d="M53 119 L59 112 L65 116 L72 105" fill="none" stroke="#5f86ab" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="53" cy="119" r="2" fill="#5f86ab"/>
+    <circle cx="59" cy="112" r="2" fill="#5f86ab"/>
+    <circle cx="65" cy="116" r="2" fill="#5f86ab"/>
+    <circle cx="72" cy="105" r="2" fill="#5f86ab"/>
+    <text x="91" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385873">Eğitim Verisi</text>
+    <text x="91" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55738a">Pₑğitim(X, Y)</text>
+    <text x="45" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58758b">Yüksek doğruluk</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="216" y="73" width="143" height="106" rx="18" fill="#e9e4fb"/>
+    <circle cx="287" cy="108" r="29" fill="#ffffff" opacity="0.64"/>
+    <path d="M270 113 C276 93 292 91 301 103 C307 111 302 125 291 129" fill="none" stroke="#7c72ae" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M271 106 L278 111 L281 102" fill="none" stroke="#7c72ae" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="276" cy="120" r="3" fill="#957fc4"/>
+    <circle cx="300" cy="100" r="3" fill="#957fc4"/>
+    <circle cx="303" cy="121" r="3" fill="#957fc4"/>
+    <text x="244" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#564d82">Yayın Modeli</text>
+    <text x="239" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#706793">Geçmiş kurallar</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="402" y="83" width="205" height="87" rx="16" fill="url(#prodGrad)"/>
+    <text x="421" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7053">Canlı Dünya</text>
+    <text x="421" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8a70">Püretim(X, Y)</text>
+    <rect x="535" y="99" width="50" height="14" rx="7" fill="#ffffff" opacity="0.76"/>
+    <rect x="535" y="121" width="36" height="14" rx="7" fill="#ffffff" opacity="0.76"/>
+    <rect x="535" y="143" width="43" height="14" rx="7" fill="#ffffff" opacity="0.76"/>
+    <circle cx="525" cy="106" r="4" fill="#70ae87"/>
+    <circle cx="525" cy="128" r="4" fill="#f2b666"/>
+    <circle cx="525" cy="150" r="4" fill="#9186c3"/>
+  </g>
+
+  <path d="M504 181 C504 199 475 204 439 204 L190 204 C166 204 153 211 153 224" fill="none" stroke="#e29b61" stroke-width="2.5" stroke-dasharray="6 5" stroke-linecap="round"/>
+  <polygon points="153,224 148,215 158,215" fill="#e29b61"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="417" y="187" width="161" height="35" rx="12" fill="url(#warnGrad)"/>
+    <path d="M435 195 L445 213 L425 213 Z" fill="#d8894a"/>
+    <rect x="434" y="201" width="2" height="6" rx="1" fill="#ffffff"/>
+    <circle cx="435" cy="210" r="1.2" fill="#ffffff"/>
+    <text x="456" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#935a31">Performans düşüşü</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="71" y="229" width="174" height="63" rx="16" fill="#dff3ee"/>
+    <circle cx="97" cy="260" r="16" fill="#ffffff" opacity="0.76"/>
+    <path d="M89 261 L95 267 L106 252" fill="none" stroke="#4c9b87" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="121" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#377367">İzleme</text>
+    <text x="121" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8a80">PSI · eksik veri · skor</text>
+  </g>
+
+  <path d="M247 260 L284 260" stroke="#5d9b8e" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="284,260 276,255 276,265" fill="#5d9b8e"/>
+
+  <g filter="url(#shadow)">
+    <rect x="286" y="229" width="140" height="63" rx="16" fill="#dce9fa"/>
+    <path d="M310 248 A15 15 0 1 1 301 270" fill="none" stroke="#6388b3" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="299,265 302,274 308,268" fill="#6388b3"/>
+    <text x="331" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d618a">Yeniden Eğitim</text>
+    <text x="331" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627f9f">Yeni sürüm</text>
+  </g>
+
+  <path d="M428 260 L466 260 L466 239 C466 225 454 216 440 216" fill="none" stroke="#6b88ac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="440,216 449,211 448,221" fill="#6b88ac"/>
+
+  <text x="473" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6883">Geri bildirim</text>
+  <text x="473" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f879a">Erken uyarı döngüsü</text>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="fuzz" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9ccff"/>
+      <stop offset="100%" stop-color="#c1b4f3"/>
+    </linearGradient>
+    <linearGradient id="target" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9f0e7"/>
+      <stop offset="100%" stop-color="#a9dfd2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8292" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#63738a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="50" r="75" fill="#cce8f4" opacity="0.25"/>
+  <circle cx="578" cy="280" r="98" fill="#d9efd0" opacity="0.34"/>
+  <path d="M34 270 C140 230 175 296 270 267 S450 217 610 249" fill="none" stroke="#b7d6d5" stroke-width="1.5" opacity="0.45"/>
+
+  <text x="34" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6472">FUZZ TESTİNG DÖNGÜSÜ</text>
+  <text x="34" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71838b">Kontrollü kaos ile gizli hata avı</text>
+
+  <!-- Sources -->
+  <g filter="url(#soft)">
+    <rect x="34" y="85" width="122" height="52" rx="14" fill="#fff5d9"/>
+    <rect x="34" y="85" width="7" height="52" rx="4" fill="#f4bf61"/>
+    <text x="53" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#685636">Geçerli örnekler</text>
+    <text x="53" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#877754">Başlangıç kümesi</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="166" width="122" height="52" rx="14" fill="#ffe1e0"/>
+    <rect x="34" y="166" width="7" height="52" rx="4" fill="#e98588"/>
+    <text x="53" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#784f54">Sınır durumları</text>
+    <text x="53" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#956a6e">Bozuk ve dev veri</text>
+  </g>
+
+  <!-- arrows to fuzzer -->
+  <path d="M156 111 H181" fill="none" stroke="#889aa2" stroke-width="2"/>
+  <polygon points="188,111 179,106 179,116" fill="#889aa2"/>
+  <path d="M156 192 H181" fill="none" stroke="#889aa2" stroke-width="2"/>
+  <polygon points="188,192 179,187 179,197" fill="#889aa2"/>
+
+  <!-- Fuzzer -->
+  <g filter="url(#shadow)">
+    <rect x="189" y="80" width="142" height="150" rx="22" fill="url(#fuzz)"/>
+    <rect x="201" y="93" width="118" height="124" rx="17" fill="#ffffff" opacity="0.25"/>
+    <circle cx="260" cy="118" r="22" fill="#f5f1ff" opacity="0.85"/>
+    <path d="M251 111 L258 106 L265 111 L263 118 L268 124 L260 130 L252 125 L254 118 Z" fill="none" stroke="#7864b4" stroke-width="2"/>
+    <circle cx="259" cy="118" r="3" fill="#7864b4"/>
+    <text x="260" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d4278">Fuzzer</text>
+    <text x="260" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685c91">Mutasyon</text>
+    <text x="260" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685c91">Rastgelelik</text>
+  </g>
+
+  <!-- arrow fuzzer target -->
+  <path d="M331 155 H364" fill="none" stroke="#798a95" stroke-width="2.5"/>
+  <polygon points="372,155 362,149 362,161" fill="#798a95"/>
+  <text x="347" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71818a">Test girdisi</text>
+
+  <!-- Target -->
+  <g filter="url(#shadow)">
+    <rect x="373" y="80" width="132" height="150" rx="22" fill="url(#target)"/>
+    <rect x="385" y="93" width="108" height="124" rx="17" fill="#ffffff" opacity="0.23"/>
+    <rect x="411" y="104" width="56" height="42" rx="8" fill="#ecfffa" stroke="#6fb7a8" stroke-width="1.5"/>
+    <path d="M423 116 H455 M423 125 H448 M423 134 H452" stroke="#6ba697" stroke-width="2" stroke-linecap="round"/>
+    <text x="439" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d59">Hedef yazılım</text>
+    <text x="439" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47746d">Ayrıştırıcı veya API</text>
+    <text x="439" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47746d">İzolasyon</text>
+  </g>
+
+  <!-- Outcomes -->
+  <path d="M505 119 H524 V97 H539" fill="none" stroke="#758c86" stroke-width="2"/>
+  <polygon points="547,97 537,92 537,102" fill="#758c86"/>
+  <path d="M505 190 H524 V213 H539" fill="none" stroke="#758c86" stroke-width="2"/>
+  <polygon points="547,213 537,208 537,218" fill="#758c86"/>
+
+  <g filter="url(#soft)">
+    <rect x="548" y="68" width="70" height="57" rx="15" fill="#ddf2df"/>
+    <circle cx="566" cy="96" r="10" fill="#83bf91"/>
+    <path d="M561 96 L565 100 L572 91" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="582" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f704b">Kapsama</text>
+    <text x="582" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a8663">Yeni yol</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="548" y="184" width="70" height="57" rx="15" fill="#ffe0df"/>
+    <circle cx="566" cy="212" r="10" fill="#e5787a"/>
+    <path d="M566 206 V213 M566 217.5 V218" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="582" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#82494d">Çökme</text>
+    <text x="582" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c6164">Bulgu</text>
+  </g>
+
+  <!-- feedback loop -->
+  <path d="M582 241 V275 H260 V239" fill="none" stroke="#8b79bb" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="260,231 254,241 266,241" fill="#8b79bb"/>
+  <text x="421" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72628f">Geri bildirim • tekrar üret • düzelt • regresyon</text>
+</svg>

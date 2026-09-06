@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="dense" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9ddf6"/>
+    </linearGradient>
+    <linearGradient id="prune" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe7c2"/>
+      <stop offset="100%" stop-color="#ffd2a1"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f2df"/>
+      <stop offset="100%" stop-color="#bde5ca"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7991a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#657c8c" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="84" cy="42" r="56" fill="#dcefff" opacity="0.45"/>
+  <circle cx="575" cy="278" r="78" fill="#dff3d9" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486177">BUDAMA İLE MODEL OPTİMİZASYONU</text>
+  <path d="M28 39 H612" stroke="#c9d8df" stroke-width="1"/>
+
+  <!-- Dense model -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="73" width="151" height="191" rx="18" fill="url(#dense)" stroke="#b4cdea"/>
+  </g>
+  <text x="102.5" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385775">Yoğun Model</text>
+  <text x="102.5" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7891">Tüm bağlantılar</text>
+
+  <g stroke="#749bbd" stroke-width="1.4" opacity="0.72">
+    <path d="M57 142 L102 133 M57 142 L102 161 M57 142 L102 189 M57 170 L102 133 M57 170 L102 161 M57 170 L102 189 M57 198 L102 133 M57 198 L102 161 M57 198 L102 189"/>
+    <path d="M102 133 L147 145 M102 133 L147 174 M102 161 L147 145 M102 161 L147 174 M102 189 L147 145 M102 189 L147 174"/>
+  </g>
+  <g fill="#fafdff" stroke="#6d98bd" stroke-width="1.5" filter="url(#smallShadow)">
+    <circle cx="57" cy="142" r="7"/><circle cx="57" cy="170" r="7"/><circle cx="57" cy="198" r="7"/>
+    <circle cx="102" cy="133" r="7"/><circle cx="102" cy="161" r="7"/><circle cx="102" cy="189" r="7"/>
+    <circle cx="147" cy="145" r="7"/><circle cx="147" cy="174" r="7"/>
+  </g>
+  <text x="102" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476881">Yüksek maliyet</text>
+
+  <!-- arrow 1 -->
+  <path d="M187 168 H215" stroke="#7190a5" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M215 168 L207 163 L207 173 Z" fill="#7190a5"/>
+
+  <!-- pruning core -->
+  <g filter="url(#shadow)">
+    <rect x="223" y="105" width="139" height="126" rx="20" fill="url(#prune)" stroke="#edbd83"/>
+  </g>
+  <circle cx="292.5" cy="145" r="25" fill="#fff8e9" stroke="#dfa565" stroke-width="1.5"/>
+  <path d="M280 157 L305 132" stroke="#d98252" stroke-width="3" stroke-linecap="round"/>
+  <path d="M278 134 L284 134 M278 140 L288 140 M296 151 L307 151 M296 157 L303 157" stroke="#9aafac" stroke-width="2" stroke-linecap="round"/>
+  <text x="292.5" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#88562e">Eşikleme</text>
+  <text x="292.5" y="204" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#956b47">Düşük etkileri ayıkla</text>
+
+  <!-- branch arrows -->
+  <path d="M370 151 C388 151 387 112 405 112" fill="none" stroke="#7190a5" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="M405 112 L397 107 L398 117 Z" fill="#7190a5"/>
+  <path d="M370 186 C389 186 387 238 405 238" fill="none" stroke="#7190a5" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="M405 238 L397 233 L398 243 Z" fill="#7190a5"/>
+
+  <!-- unstructured -->
+  <g filter="url(#shadow)">
+    <rect x="414" y="66" width="194" height="94" rx="16" fill="#f0e8fb" stroke="#d7c4ef"/>
+  </g>
+  <text x="430" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#624785">Yapılandırılmamış</text>
+  <text x="430" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806b9d">Tekil ağırlıklar</text>
+  <g transform="translate(523 84)">
+    <g stroke="#a48ac6" stroke-width="1.2">
+      <path d="M0 0 L24 0 M0 0 L24 18 M0 18 L24 0 M0 18 L24 18 M24 0 L48 0 M24 0 L48 18 M24 18 L48 0 M24 18 L48 18"/>
+    </g>
+    <g fill="#fff" stroke="#987cbb" stroke-width="1.2">
+      <circle cx="0" cy="0" r="4"/><circle cx="0" cy="18" r="4"/>
+      <circle cx="24" cy="0" r="4"/><circle cx="24" cy="18" r="4"/>
+      <circle cx="48" cy="0" r="4"/><circle cx="48" cy="18" r="4"/>
+    </g>
+    <path d="M18 12 L30 24 M30 12 L18 24" stroke="#d66e72" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="511" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806b9d">Yüksek seyreklik</text>
+
+  <!-- structured -->
+  <g filter="url(#shadow)">
+    <rect x="414" y="191" width="194" height="94" rx="16" fill="url(#light)" stroke="#abd5b6"/>
+  </g>
+  <text x="430" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356d4c">Yapılandırılmış</text>
+  <text x="430" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b876b">Kanal ve filtreler</text>
+  <g transform="translate(530 207)">
+    <rect x="0" y="0" width="16" height="39" rx="4" fill="#f8fffa" stroke="#75ad88"/>
+    <rect x="21" y="0" width="16" height="39" rx="4" fill="#f8fffa" stroke="#75ad88"/>
+    <rect x="42" y="0" width="16" height="39" rx="4" fill="#f8fffa" stroke="#75ad88"/>
+    <path d="M19 2 L39 37 M39 2 L19 37" stroke="#d66e72" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <text x="511" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b876b">Donanımda hızlı</text>
+
+  <!-- footer benefit pills -->
+  <g filter="url(#smallShadow)">
+    <rect x="50" y="280" width="119" height="25" rx="12.5" fill="#ffffff" stroke="#d2e0e6"/>
+    <rect x="191" y="280" width="119" height="25" rx="12.5" fill="#ffffff" stroke="#d2e0e6"/>
+    <rect x="332" y="280" width="119" height="25" rx="12.5" fill="#ffffff" stroke="#d2e0e6"/>
+    <rect x="473" y="280" width="119" height="25" rx="12.5" fill="#ffffff" stroke="#d2e0e6"/>
+  </g>
+  <circle cx="65" cy="292.5" r="4" fill="#77aee0"/>
+  <text x="76" y="296.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506a7c">Bellek azalır</text>
+  <circle cx="206" cy="292.5" r="4" fill="#e3a460"/>
+  <text x="217" y="296.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506a7c">Enerji düşer</text>
+  <circle cx="347" cy="292.5" r="4" fill="#78ba91"/>
+  <text x="358" y="296.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506a7c">Çıkarım hızlanır</text>
+  <circle cx="488" cy="292.5" r="4" fill="#a58ad0"/>
+  <text x="499" y="296.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506a7c">İnce ayar</text>
+</svg>

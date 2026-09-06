@@ -9,6 +9,7 @@ tags:
   - makine öğrenmesi
   - model açıklanabilirliği
 toc: true
+image: /img/shap-degerleri-ile-97.png
 ---
 
 Bir makine öğrenmesi modeli yüksek doğruluk verdiğinde ilk soru genellikle “Ne kadar başarılı?” olur; ikinci ve çoğu zaman daha kritik soru ise “Bu karara neden vardı?”dır. SHAP (SHapley Additive exPlanations), bir tahmini özelliklerin katkılarına bölerek bu soruya sayısal bir yanıt verir. Böylece kredi reddi, müşteri terk tahmini veya fiyat tahmini gibi sonuçlarda modelin hangi sinyalleri ne yönde kullandığını görünür kılar.
@@ -38,6 +39,9 @@ SHAP hem tek bir müşterinin tahminini hem de modelin genel davranışını inc
 | Yerel açıklama | “Bu kayıt neden yüksek risk aldı?” | Waterfall/force plot | Tek kredi başvurusunu inceleme |
 | Küresel açıklama | “Model genel olarak en çok neye bakıyor?” | Summary plot, ortalama $\vert SHAP\vert $ | Özellik önceliği analizi |
 | Etkileşim analizi | “İki özellik birlikte nasıl davranıyor?” | Dependence plot | Yaş ve gelir ilişkisini inceleme |
+
+![shap-degerleri-ile-97](/img/shap-degerleri-ile-97.svg)
+
 
 Örneğin bir müşterinin terk olasılığı %72 çıktıysa, uzun süre destek kaydı açmış olması tahmini yukarı çekebilir; yıllık abonelik kullanması ise aşağı indirebilir. Bu, o müşteri için yerel açıklamadır. Tüm müşterilerde “destek kaydı sayısı”nın ortalama mutlak SHAP değerinin yüksek olması ise bu değişkenin küresel önemini gösterir.
 

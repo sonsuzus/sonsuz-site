@@ -11,9 +11,13 @@ tags:
   - apı
   - model context protocol
 toc: true
+image: /img/mcp-model-context-63.png
 ---
 
 Büyük dil modelleri metin üretmekte çok başarılıdır; ancak tek başlarına takviminize bakamaz, veritabanınızdan müşteri kaydı çekemez veya GitHub’daki bir depoyu analiz edemezler. Bu noktada **MCP (Model Context Protocol)**, yapay zekâ uygulamalarının harici araçlar ve veri kaynaklarıyla güvenli, düzenli ve standart bir biçimde konuşmasını sağlayan açık bir protokol olarak devreye girer.
+
+![mcp-model-context-63](/img/mcp-model-context-63.svg)
+
 ``
 Bir LLM’i çok yetenekli ama dış dünyaya kapalı bir uzman gibi düşünebilirsiniz. Ona güncel bir satış raporu sorarsanız, rapor dosyasına erişmediği sürece yalnızca tahmin yürütür. MCP ise modele “hangi araçlar var?”, “bu aracı nasıl çağırırım?” ve “gelen sonucu nasıl yorumlarım?” sorularının ortak cevabını verir. Böylece her entegrasyon için sıfırdan özel bağlantı kodu yazma ihtiyacı azalır.
 

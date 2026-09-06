@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8477c8"/>
+      <stop offset="100%" stop-color="#62569e"/>
+    </linearGradient>
+    <linearGradient id="kod" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcefff"/>
+      <stop offset="100%" stop-color="#bfdcf3"/>
+    </linearGradient>
+    <linearGradient id="test" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff4df"/>
+      <stop offset="100%" stop-color="#bde4c3"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#4d6880" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#4d6880" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="321" cy="160" r="127" fill="#d8e9e8" opacity="0.28"/>
+  <circle cx="321" cy="160" r="94" fill="#ffffff" opacity="0.32"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496071">Test Gücü Ölçümü</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738694">Mutasyon testi akışı</text>
+
+  <!-- Sol kaynaklar -->
+  <g filter="url(#golge)">
+    <rect x="29" y="91" width="132" height="67" rx="16" fill="url(#kod)"/>
+    <rect x="29" y="91" width="132" height="67" rx="16" fill="none" stroke="#a9cce5"/>
+  </g>
+  <rect x="45" y="108" width="26" height="31" rx="5" fill="#ffffff" opacity="0.85"/>
+  <path d="M51 117h14M51 124h10M51 131h14" stroke="#5b88a8" stroke-width="2" stroke-linecap="round"/>
+  <text x="82" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315976">Üretim Kodu</text>
+  <text x="82" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55758c">Kural ve koşul</text>
+
+  <g filter="url(#golge)">
+    <rect x="29" y="181" width="132" height="67" rx="16" fill="url(#test)"/>
+    <rect x="29" y="181" width="132" height="67" rx="16" fill="none" stroke="#a9d4ae"/>
+  </g>
+  <circle cx="58" cy="214" r="15" fill="#ffffff" opacity="0.86"/>
+  <path d="M51 214l5 5 10-12" fill="none" stroke="#4f9662" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#367146">Test Paketi</text>
+  <text x="82" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c8663">Assertionlar</text>
+
+  <!-- Bağlantılar -->
+  <path d="M161 125 C184 125 189 132 211 140" fill="none" stroke="#83a9c5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="211,140 201,135 203,146" fill="#83a9c5"/>
+  <path d="M161 214 C185 214 190 194 211 180" fill="none" stroke="#79ad82" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="211,180 201,181 207,190" fill="#79ad82"/>
+
+  <!-- Merkez -->
+  <g filter="url(#golge)">
+    <rect x="211" y="105" width="207" height="111" rx="25" fill="url(#merkez)"/>
+    <rect x="211" y="105" width="207" height="111" rx="25" fill="none" stroke="#584c91" opacity="0.55"/>
+  </g>
+  <circle cx="253" cy="160" r="27" fill="#ffffff" opacity="0.17"/>
+  <path d="M244 148l17 12-17 12z" fill="#ffffff"/>
+  <path d="M274 146l8 7-8 7M274 167l8 7-8 7" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="301" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Mutasyon Motoru</text>
+  <text x="301" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eeeaff">Küçük hata ekle</text>
+  <text x="301" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eeeaff">Testleri çalıştır</text>
+  <rect x="277" y="194" width="49" height="15" rx="7.5" fill="#ffffff" opacity="0.18"/>
+  <text x="301" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Mutant</text>
+
+  <!-- Sağ dallar -->
+  <path d="M418 139 C439 139 442 91 459 91" fill="none" stroke="#d57478" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="459,91 450,96 459,102" fill="#d57478"/>
+  <path d="M418 160 C441 160 442 160 459 160" fill="none" stroke="#d59d58" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="459,160 450,155 450,165" fill="#d59d58"/>
+  <path d="M418 181 C439 181 442 229 459 229" fill="none" stroke="#7797bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="459,229 450,218 450,228" fill="#7797bb"/>
+
+  <!-- Sonuçlar -->
+  <g filter="url(#hafifGolge)">
+    <rect x="459" y="61" width="151" height="60" rx="15" fill="#ffe2e2"/>
+    <rect x="459" y="61" width="151" height="60" rx="15" fill="none" stroke="#efb7ba"/>
+  </g>
+  <circle cx="483" cy="91" r="14" fill="#d96970"/>
+  <path d="M477 85l12 12M489 85l-12 12" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="507" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#95434a">Öldürüldü</text>
+  <text x="507" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a8696c">Hata yakalandı</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="459" y="130" width="151" height="60" rx="15" fill="#fff0d9"/>
+    <rect x="459" y="130" width="151" height="60" rx="15" fill="none" stroke="#edc68f"/>
+  </g>
+  <circle cx="483" cy="160" r="14" fill="#d99449"/>
+  <path d="M483 152v9l6 4" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="507" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a6427">Hayatta</text>
+  <text x="507" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a47c51">Kör nokta var</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="459" y="199" width="151" height="60" rx="15" fill="#e3edf9"/>
+    <rect x="459" y="199" width="151" height="60" rx="15" fill="none" stroke="#bfd2e8"/>
+  </g>
+  <circle cx="483" cy="229" r="14" fill="#7699c2"/>
+  <path d="M476 229h14M483 222v14" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round"/>
+  <text x="507" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496f9e">Eşdeğer</text>
+  <text x="507" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6985a7">Skor dışı</text>
+
+  <!-- Alt skor -->
+  <g filter="url(#golge)">
+    <rect x="190" y="257" width="260" height="43" rx="16" fill="#ffffff"/>
+    <rect x="190" y="257" width="260" height="43" rx="16" fill="none" stroke="#d7e4e7"/>
+  </g>
+  <text x="211" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#506a76">Mutasyon Skoru</text>
+  <rect x="326" y="272" width="96" height="12" rx="6" fill="#e7edf0"/>
+  <rect x="326" y="272" width="69" height="12" rx="6" fill="#72b88a"/>
+  <text x="429" y="283" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43855a">%72</text>
+
+  <path d="M301 216 L301 249" fill="none" stroke="#8c9faa" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="301,257 296,247 306,247" fill="#8c9faa"/>
+</svg>

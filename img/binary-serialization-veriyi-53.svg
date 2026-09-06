@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="binary" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f0ff"/>
+      <stop offset="100%" stop-color="#d9f6e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d8398" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#698096" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="38" r="54" fill="#dceeff" opacity="0.55"/>
+  <circle cx="585" cy="278" r="72" fill="#dcf3dc" opacity="0.52"/>
+  <circle cx="540" cy="42" r="23" fill="#fff0cf" opacity="0.65"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385368">Metinden Bayta: İkili Serileştirme</text>
+
+  <!-- JSON input -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="77" width="145" height="166" rx="18" fill="#fffaf1" stroke="#efdcae"/>
+    <rect x="47" y="94" width="111" height="27" rx="10" fill="#ffe8bd"/>
+    <text x="102" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a6426">JSON</text>
+
+    <rect x="47" y="135" width="111" height="75" rx="10" fill="#ffffff" stroke="#f0e3ca"/>
+    <text x="60" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62727c">{</text>
+    <text x="68" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b5e4c">"user_id"</text>
+    <text x="133" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62727c">: 42,</text>
+    <text x="68" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b5e4c">"ad"</text>
+    <text x="98" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62727c">: "Ada"</text>
+    <text x="60" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62727c">}</text>
+    <text x="102" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7a41">Metin yükü</text>
+  </g>
+
+  <!-- Arrow left to center -->
+  <path d="M184 160 H226" fill="none" stroke="#7d9aa8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="226,160 217,154 217,166" fill="#7d9aa8"/>
+  <text x="205" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63808d">kodla</text>
+
+  <!-- schema hub -->
+  <g filter="url(#shadow)">
+    <rect x="234" y="61" width="170" height="198" rx="23" fill="url(#binary)" stroke="#b9dce5"/>
+    <circle cx="319" cy="111" r="37" fill="#ffffff" stroke="#b7dce6" stroke-width="2"/>
+    <path d="M301 96 H312 V104 H301 Z M326 96 H337 V104 H326 Z M301 117 H312 V125 H301 Z M326 117 H337 V125 H326 Z" fill="#5493ad"/>
+    <path d="M315 99 H323 M315 121 H323 M304 108 H334" fill="none" stroke="#5493ad" stroke-width="2"/>
+    <text x="319" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356176">Şema ve Kodlayıcı</text>
+    <rect x="258" y="178" width="122" height="26" rx="9" fill="#ffffff" opacity="0.88"/>
+    <text x="319" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#497184">alan 1 · alan 2 · alan 3</text>
+    <text x="319" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7880">Protobuf · Avro</text>
+    <text x="319" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7880">MessagePack</text>
+  </g>
+
+  <!-- Arrow center to byte stream -->
+  <path d="M413 160 H451" fill="none" stroke="#5b9e9b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="451,160 442,154 442,166" fill="#5b9e9b"/>
+  <text x="432" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e8583">baytlar</text>
+
+  <!-- byte stream -->
+  <g filter="url(#softShadow)">
+    <rect x="459" y="99" width="151" height="121" rx="18" fill="#f5fffb" stroke="#b9e1d2"/>
+    <text x="534" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d796d">İkili Mesaj</text>
+    <rect x="477" y="139" width="18" height="28" rx="5" fill="#7bcbb4"/>
+    <rect x="500" y="139" width="18" height="28" rx="5" fill="#9ad8ef"/>
+    <rect x="523" y="139" width="18" height="28" rx="5" fill="#7bcbb4"/>
+    <rect x="546" y="139" width="18" height="28" rx="5" fill="#9ad8ef"/>
+    <rect x="569" y="139" width="18" height="28" rx="5" fill="#7bcbb4"/>
+    <text x="486" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#225a52">08</text>
+    <text x="509" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#245c76">42</text>
+    <text x="532" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#225a52">12</text>
+    <text x="555" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#245c76">03</text>
+    <text x="578" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#225a52">Ada</text>
+    <text x="534" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b8276">Küçük ve hızlı</text>
+  </g>
+
+  <!-- bottom benefits -->
+  <g filter="url(#softShadow)">
+    <rect x="70" y="276" width="500" height="30" rx="14" fill="#ffffff" opacity="0.9"/>
+    <circle cx="116" cy="291" r="7" fill="#8bc9ea"/>
+    <text x="130" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466371">Az ağ trafiği</text>
+    <circle cx="286" cy="291" r="7" fill="#83d1a8"/>
+    <text x="300" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466371">Az bellek</text>
+    <circle cx="433" cy="291" r="7" fill="#f1c878"/>
+    <text x="447" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466371">Uyumlu şema</text>
+  </g>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9e8ff"/>
+      <stop offset="1" stop-color="#dff4e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7892a5" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7892a5" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="124" fill="#d8edff" opacity="0.27"/>
+  <circle cx="320" cy="160" r="89" fill="#e8f7de" opacity="0.38"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">AutoML ile Model Seçimi</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8191">Otomatik arama ve uzman denetimi</text>
+
+  <path d="M148 139 C168 139 177 139 192 139" fill="none" stroke="#7b99ad" stroke-width="2"/>
+  <polygon points="192,139 184,134 184,144" fill="#7b99ad"/>
+  <path d="M448 139 C467 139 478 139 490 139" fill="none" stroke="#7b99ad" stroke-width="2"/>
+  <polygon points="490,139 482,134 482,144" fill="#7b99ad"/>
+
+  <path d="M324 221 C324 238 299 242 273 242" fill="none" stroke="#90a8b4" stroke-width="2"/>
+  <polygon points="273,242 281,237 281,247" fill="#90a8b4"/>
+  <path d="M365 242 C391 242 411 236 411 220" fill="none" stroke="#90a8b4" stroke-width="2"/>
+  <polygon points="411,220 406,228 416,228" fill="#90a8b4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="104" width="120" height="72" rx="18" fill="#fffdfb"/>
+    <rect x="39" y="116" width="38" height="38" rx="11" fill="#dceeff"/>
+    <circle cx="51" cy="128" r="4" fill="#669bd2"/>
+    <circle cx="65" cy="128" r="4" fill="#8ab6e1"/>
+    <circle cx="51" cy="142" r="4" fill="#92c9a5"/>
+    <circle cx="65" cy="142" r="4" fill="#6cae86"/>
+    <text x="88" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#344e63">Veri</text>
+    <text x="88" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8190">Hazırlama</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="192" y="79" width="256" height="142" rx="28" fill="url(#core)" stroke="#c2dce1"/>
+    <text x="320" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#294b63">AutoML Arama Motoru</text>
+
+    <g filter="url(#smallShadow)">
+      <rect x="213" y="124" width="78" height="41" rx="12" fill="#fffdfb"/>
+      <text x="252" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#435d70">Model</text>
+      <text x="252" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718692">Adayları</text>
+
+      <rect x="349" y="124" width="78" height="41" rx="12" fill="#fffdfb"/>
+      <text x="388" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#435d70">Parametre</text>
+      <text x="388" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718692">Uzayı</text>
+    </g>
+
+    <path d="M291 144 L344 144" stroke="#7894a3" stroke-width="2"/>
+    <polygon points="344,144 336,139 336,149" fill="#7894a3"/>
+
+    <rect x="252" y="180" width="136" height="25" rx="10" fill="#b9ddcf"/>
+    <text x="320" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35596a">Çapraz Doğrulama</text>
+
+    <path d="M388 169 C405 178 408 193 389 193" fill="none" stroke="#76a895" stroke-width="2"/>
+    <polygon points="389,193 396,187 397,197" fill="#76a895"/>
+    <path d="M252 193 C234 193 232 176 248 168" fill="none" stroke="#76a895" stroke-width="2"/>
+    <polygon points="248,168 239,170 244,178" fill="#76a895"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="490" y="104" width="122" height="72" rx="18" fill="#fffdfb"/>
+    <circle cx="520" cy="139" r="19" fill="#dff2df"/>
+    <path d="M511 140 L517 146 L529 131" fill="none" stroke="#4c9a70" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="550" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#344e63">En İyi</text>
+    <text x="550" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8190">Yapılandırma</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="106" y="242" width="167" height="51" rx="16" fill="#fffaf4"/>
+    <circle cx="130" cy="267" r="13" fill="#f8dfb9"/>
+    <path d="M124 267 L129 272 L137 261" fill="none" stroke="#bc8246" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="153" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5e4c3d">Arama Stratejisi</text>
+    <text x="153" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#887767">Grid · Rastgele · Bayesçi</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="411" y="242" width="142" height="51" rx="16" fill="#fdfaff"/>
+    <circle cx="436" cy="267" r="13" fill="#eadcf6"/>
+    <path d="M430 270 Q436 258 442 270 M433 263 L439 263" fill="none" stroke="#8c68a8" stroke-width="2" stroke-linecap="round"/>
+    <text x="459" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#574566">Uzman Denetimi</text>
+    <text x="459" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#83718e">Metrik · Adalet</text>
+  </g>
+</svg>

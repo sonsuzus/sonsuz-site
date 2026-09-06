@@ -9,6 +9,7 @@ tags:
   - makine öğrenmesi
   - model dağıtımı
 toc: true
+image: /img/onnx-model-formati-21.png
 ---
 
 Bir yapay zeka modelini eğitmek çoğu zaman işin heyecanlı kısmıdır; asıl macera ise modeli üretime taşırken başlar. PyTorch ile eğitilmiş bir modeli Java tabanlı bir serviste, C# masaüstü uygulamasında veya edge cihazda çalıştırmak istediğinizde framework bağımlılıkları hız kesebilir. ONNX (Open Neural Network Exchange), modeller için ortak bir dil sunarak bu taşınabilirlik problemini çözmeyi hedefleyen açık standarttır.
@@ -32,6 +33,9 @@ ONNX, bu $f_i$ fonksiyonlarını düğümler; verinin dolaşımını ise kenarla
 | API bağımlılığı | Genellikle yüksek | Düşük |
 | Dosya içeriği | Koda ve framework'e bağlı olabilir | Grafik + ağırlık + metadata |
 | Hedef ortam | Çoğunlukla Python | Python, .NET, Java, C++, mobil ve edge |
+
+![onnx-model-formati-21](/img/onnx-model-formati-21.svg)
+
 
 ## Opset: Modelin Sözlüğü
 
