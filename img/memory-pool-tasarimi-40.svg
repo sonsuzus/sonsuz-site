@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2faef"/>
+    </linearGradient>
+    <linearGradient id="arena" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeeff"/>
+      <stop offset="100%" stop-color="#d8f4e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e8598" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="69" cy="42" r="48" fill="#dcedff" opacity="0.55"/>
+  <circle cx="594" cy="278" r="64" fill="#dff4df" opacity="0.55"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5870">MEMORY POOL AKIŞI</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718797">Sabit boyutlu nesneler için hızlı tahsis</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="78" width="132" height="160" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="42" y="94" width="104" height="32" rx="10" fill="#fde8dc"/>
+  <text x="94" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a95637">Nesne isteği</text>
+
+  <g filter="url(#soft)">
+    <rect x="44" y="142" width="100" height="29" rx="9" fill="#f8f0df"/>
+    <rect x="44" y="180" width="100" height="29" rx="9" fill="#f8f0df"/>
+  </g>
+  <text x="94" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806a37">Parçacık</text>
+  <text x="94" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806a37">Bağlantı</text>
+
+  <path d="M160 158 C177 158 179 141 194 141" fill="none" stroke="#7a9caf" stroke-width="2.5"/>
+  <polygon points="202,141 192,135 194,147" fill="#7a9caf"/>
+  <path d="M160 195 C178 195 179 207 194 207" fill="none" stroke="#7a9caf" stroke-width="2.5"/>
+  <polygon points="202,207 192,201 194,213" fill="#7a9caf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="204" y="72" width="248" height="177" rx="22" fill="url(#arena)"/>
+  </g>
+  <text x="226" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35667b">ARENA</text>
+  <text x="426" y="98" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8491">önceden ayrılmış alan</text>
+
+  <g filter="url(#soft)">
+    <rect x="224" y="114" width="48" height="42" rx="9" fill="#ffffff"/>
+    <rect x="279" y="114" width="48" height="42" rx="9" fill="#ffffff"/>
+    <rect x="334" y="114" width="48" height="42" rx="9" fill="#b9e6ce"/>
+    <rect x="389" y="114" width="42" height="42" rx="9" fill="#ffffff"/>
+    <rect x="224" y="164" width="48" height="42" rx="9" fill="#ffffff"/>
+    <rect x="279" y="164" width="48" height="42" rx="9" fill="#ffffff"/>
+    <rect x="334" y="164" width="48" height="42" rx="9" fill="#ffffff"/>
+    <rect x="389" y="164" width="42" height="42" rx="9" fill="#ffffff"/>
+  </g>
+
+  <text x="248" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54707d">Boş</text>
+  <text x="303" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54707d">Boş</text>
+  <text x="358" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#367054">Kullanım</text>
+  <text x="410" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54707d">Boş</text>
+  <text x="248" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54707d">Boş</text>
+  <text x="303" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54707d">Boş</text>
+  <text x="358" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54707d">Boş</text>
+  <text x="410" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54707d">Boş</text>
+
+  <path d="M247 222 H397" fill="none" stroke="#5287a1" stroke-width="2"/>
+  <circle cx="243" cy="222" r="5" fill="#5287a1"/>
+  <polygon points="405,222 395,216 395,228" fill="#5287a1"/>
+  <text x="325" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#467287">Boş slot listesi</text>
+
+  <path d="M452 135 C469 135 470 118 485 118" fill="none" stroke="#72a68b" stroke-width="2.5"/>
+  <polygon points="493,118 483,112 485,124" fill="#72a68b"/>
+  <path d="M452 187 C469 187 470 205 485 205" fill="none" stroke="#72a68b" stroke-width="2.5"/>
+  <polygon points="493,205 483,199 485,211" fill="#72a68b"/>
+
+  <g filter="url(#shadow)">
+    <rect x="495" y="78" width="117" height="72" rx="17" fill="#ffffff"/>
+    <rect x="495" y="166" width="117" height="72" rx="17" fill="#ffffff"/>
+  </g>
+  <circle cx="518" cy="112" r="12" fill="#d8f1e2"/>
+  <path d="M513 112 L517 116 L524 108" fill="none" stroke="#42865e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="562" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426a56">Tahsis</text>
+  <text x="562" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638274">O(1) erişim</text>
+
+  <circle cx="518" cy="200" r="12" fill="#dceafa"/>
+  <path d="M512 202 C516 207 523 205 523 199" fill="none" stroke="#4e7899" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="524,194 519,199 525,201" fill="#4e7899"/>
+  <text x="562" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42647e">İade</text>
+  <text x="562" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638092">Listeye geri</text>
+
+  <g filter="url(#soft)">
+    <rect x="178" y="270" width="284" height="31" rx="15" fill="#ffffff"/>
+  </g>
+  <circle cx="201" cy="285" r="6" fill="#8bc8a0"/>
+  <text x="216" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b5a">Düşük parçalanma</text>
+  <circle cx="329" cy="285" r="6" fill="#8eb9dc"/>
+  <text x="344" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b7c">Öngörülebilir gecikme</text>
+</svg>

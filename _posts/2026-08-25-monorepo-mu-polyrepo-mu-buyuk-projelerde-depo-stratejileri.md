@@ -10,6 +10,7 @@ tags:
   - git
   - yazılım mimarisi
 toc: true
+image: /img/monorepo-mu-polyrepo-20.png
 ---
 
 Büyüyen bir yazılım organizasyonunda kod depoları yalnızca dosyaların yaşadığı klasörler değildir; ekip sınırlarını, dağıtım hızını ve bağımlılık yönetimini doğrudan etkileyen mimari kararlardır. Monorepo, birçok uygulama ve kütüphaneyi tek Git deposunda toplarken; polyrepo yaklaşımı her servis, uygulama veya bileşen için ayrı depo kullanır. Doğru tercih, moda olan aracı seçmekten çok ürününüzün değişim ritmini anlamaktır.
@@ -33,6 +34,9 @@ Monorepo çoğu zaman $C_{coordination}$ ve $C_{dependency}$ değerlerini azalt�
 | Erişim kontrolü | İnce ayar daha zordur | Depo bazında nettir |
 | Büyük çaplı refactor | Tek değişiklik setinde yapılır | Birden fazla sürüm ve PR gerekir |
 | CI gereksinimi | Akıllı önbellek ve etki analizi önemlidir | Daha basit, fakat çok sayıda pipeline vardır |
+
+![monorepo-mu-polyrepo-20](/img/monorepo-mu-polyrepo-20.svg)
+
 
 ## Monorepo ne zaman parıldar?
 

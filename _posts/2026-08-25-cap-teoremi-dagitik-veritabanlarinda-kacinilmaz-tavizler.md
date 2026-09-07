@@ -9,6 +9,7 @@ tags:
   - dağıtık sistemler
   - veritabanı
   - tutarlılık
+image: /img/cap-teoremi-dagitik-99.png
 ---
 
 Dağıtık veritabanları, veriyi birden fazla makineye yayarak ölçeklenebilirlik ve arıza toleransı sağlar. Ancak sistem farklı sunuculara, ağ bağlantılarına ve gecikmelere dağıldığında tek bir veritabanı gibi davranması zorlaşır. CAP Teoremi tam bu noktadaki temel gerçeği anlatır: Ağ bölünmesi yaşanırken **tutarlılık**, **erişilebilirlik** ve **bölünme toleransının** üçünü aynı anda eksiksiz sunamazsınız.
@@ -56,3 +57,6 @@ koşulu okuma ve yazma kümelerinin en az bir ortak replikada kesişmesini hedef
 Doğru seçim verinin değerine bağlıdır. Banka bakiyesi, stoktan son ürünün satışı veya dağıtık kilit gibi işlemler CP yaklaşımından yararlanır; yanlış bir cevap maliyetlidir. Sosyal medya beğeni sayısı, analiz sayaçları ya da öneri akışları ise kısa süreli eski veriyi tolere edebilir ve AP yaklaşımını tercih edebilir.
 
 Sonuç olarak CAP Teoremi bir teknoloji sıralaması değil, tasarım pusulasıdır. “Her koşulda hızlı, kesintisiz ve tamamen güncel” vaadini sorgulatır. Önce ağ bölünmesinde hangi hatanın kabul edilebilir olduğunu belirleyin; ardından veritabanınızın çoğaltma, uzlaşma ve hata yönetimi ayarlarını bu karara göre şekillendirin.
+
+![cap-teoremi-dagitik-99](/img/cap-teoremi-dagitik-99.svg)
+

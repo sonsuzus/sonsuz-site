@@ -8,9 +8,13 @@ tags:
   - dağıtık sistemler
   - vector clock
   - eşzamanlılık
+image: /img/vector-clock-mekanizmasi-43.png
 ---
 
 Dağıtık sistemlerde tek bir duvar saati, olayların gerçek sırasını güvenilir biçimde anlatamaz. Sunucuların saatleri kayabilir, ağ paketleri gecikebilir ve iki işlem fiziksel olarak farklı makinelerde aynı anda gerçekleşebilir. Vector Clock, “hangi olay hangisinden sonra oldu?” sorusuna odaklanan mantıksal zamanlama tekniğidir. Özellikle replikasyon, çatışma çözümü ve nedensellik analizi için çok değerlidir.
+
+![vector-clock-mekanizmasi-43](/img/vector-clock-mekanizmasi-43.svg)
+
 ``
 Bir vector clock, sistemdeki her süreç için bir sayaç tutan vektördür. Üç düğümlü bir sistem düşünelim: A, B ve C. A düğümünün saati `[2, 0, 1]` ise ilk değer A’nın bildiği A olaylarını, ikinci değer B olaylarını, üçüncü değer ise C olaylarını temsil eder. Bir düğüm yerel bir olay gerçekleştirdiğinde kendi indeksini artırır. Mesaj gönderirken mevcut vektörü mesaja ekler; mesaj alan düğüm ise iki vektörün her bileşenindeki büyük değeri seçer ve ardından kendi sayacını bir artırır.
 

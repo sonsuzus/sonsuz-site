@@ -9,9 +9,13 @@ tags:
   - bellek yönetimi
   - performans
   - c++
+image: /img/memory-pool-tasarimi-40.png
 ---
 
 Bir uygulama saniyede binlerce küçük nesne oluşturup yok ediyorsa, asıl darboğaz her zaman algoritmanız olmayabilir. `malloc`, `free`, `new` ve `delete` çağrıları; uygun blok arama, meta veri güncelleme, kilit alma ve parçalanma yönetimi gibi görünmeyen maliyetler taşır. Memory pool, sık kullanılan benzer boyutlu nesneleri önceden ayrılmış bir bellek alanından dağıtarak bu maliyeti daha öngörülebilir hale getiren özel bir bellek yöneticisidir.
+
+![memory-pool-tasarimi-40](/img/memory-pool-tasarimi-40.svg)
+
 ``
 
 Standart dinamik bellek ayırıcıları genel amaçlıdır: 16 baytlık bir nesne de, 16 MB'lık bir tampon da aynı arayüzden talep edilir. Bu esneklik değerlidir; ancak küçük ve kısa ömürlü nesnelerin yoğun olduğu oyun motorları, ağ sunucuları, derleyiciler ve gerçek zamanlı sistemler için fazladan iş anlamına gelebilir. Pool yaklaşımı, problem alanının kurallarını kullanır: “Nesnelerim çoğunlukla aynı boyutta ve çok sık oluşturuluyor.”

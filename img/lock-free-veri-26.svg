@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="cas" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#c6dcf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#73859a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#8091a0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="146" r="108" fill="#d9ebf5" opacity="0.34"/>
+  <circle cx="319" cy="146" r="82" fill="#ffffff" opacity="0.42"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53677b" font-weight="600">Kilitsiz Eşzamanlılık</text>
+  <text x="612" y="31" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718595">sistem genelinde ilerleme</text>
+
+  <!-- Threads -->
+  <g filter="url(#soft)">
+    <rect x="30" y="63" width="126" height="47" rx="15" fill="#fff5d8"/>
+    <circle cx="53" cy="86.5" r="12" fill="#f6c867"/>
+    <path d="M48 86 L52 90 L59 81" fill="none" stroke="#8a6820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d5137" font-weight="600">İş parçacığı 1</text>
+    <text x="72" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80735a">oku ve dene</text>
+
+    <rect x="30" y="130" width="126" height="47" rx="15" fill="#e6dcfa"/>
+    <circle cx="53" cy="153.5" r="12" fill="#aa91dc"/>
+    <path d="M48 153 L52 157 L59 148" fill="none" stroke="#5e4b91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55476d" font-weight="600">İş parçacığı 2</text>
+    <text x="72" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76668e">yeniden dene</text>
+
+    <rect x="30" y="197" width="126" height="47" rx="15" fill="#d8f3e8"/>
+    <circle cx="53" cy="220.5" r="12" fill="#77c9a5"/>
+    <path d="M48 220 L52 224 L59 215" fill="none" stroke="#31775c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385e52" font-weight="600">İş parçacığı 3</text>
+    <text x="72" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e8477">atomik istek</text>
+  </g>
+
+  <!-- Input connectors -->
+  <path d="M156 86 H197 Q205 86 205 96 V125 H225" fill="none" stroke="#91a9bb" stroke-width="2"/>
+  <polygon points="225,120 235,125 225,130" fill="#91a9bb"/>
+  <path d="M156 153 H225" fill="none" stroke="#91a9bb" stroke-width="2"/>
+  <polygon points="225,148 235,153 225,158" fill="#91a9bb"/>
+  <path d="M156 220 H197 Q205 220 205 210 V181 H225" fill="none" stroke="#91a9bb" stroke-width="2"/>
+  <polygon points="225,176 235,181 225,186" fill="#91a9bb"/>
+
+  <!-- Central CAS -->
+  <g filter="url(#shadow)">
+    <rect x="235" y="83" width="168" height="139" rx="24" fill="url(#cas)" stroke="#a7c4db" stroke-width="1.5"/>
+    <rect x="256" y="102" width="126" height="30" rx="10" fill="#ffffff" opacity="0.75"/>
+    <text x="319" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315c79" font-weight="700">CAS · Atomik işlem</text>
+    <path d="M270 153 H364" stroke="#719cba" stroke-width="2"/>
+    <polygon points="364,148 374,153 364,158" fill="#719cba"/>
+    <text x="269" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496a81">beklenen</text>
+    <text x="335" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496a81">yeni</text>
+    <rect x="263" y="185" width="112" height="20" rx="8" fill="#b5d9c9"/>
+    <text x="319" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#285f4d" font-weight="600">tek geçiş noktası</text>
+  </g>
+
+  <!-- Output state -->
+  <path d="M403 153 H434" fill="none" stroke="#789aaa" stroke-width="2.4"/>
+  <polygon points="434,148 445,153 434,158" fill="#789aaa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="445" y="86" width="164" height="134" rx="23" fill="#ffffff" stroke="#c5d9dc" stroke-width="1.5"/>
+    <text x="527" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486574" font-weight="700">Paylaşılan durum</text>
+    <rect x="467" y="124" width="120" height="43" rx="12" fill="#e4f4ee"/>
+    <text x="484" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35685a">Sayaç</text>
+    <text x="562" y="150" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#27745d" font-weight="700">5 → 6</text>
+    <path d="M468 183 H586" stroke="#d1e0e3" stroke-width="1"/>
+    <circle cx="480" cy="198" r="5" fill="#6bc29d"/>
+    <text x="494" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7581">görünür ve tutarlı</text>
+  </g>
+
+  <!-- Lower protection concepts -->
+  <path d="M319 222 V247" fill="none" stroke="#92aabe" stroke-width="2"/>
+  <polygon points="314,247 319,257 324,247" fill="#92aabe"/>
+
+  <g filter="url(#soft)">
+    <rect x="125" y="258" width="122" height="43" rx="14" fill="#fbe4df"/>
+    <circle cx="147" cy="279.5" r="10" fill="#e89988"/>
+    <path d="M144 276 L150 282 M150 276 L144 282" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="165" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#704d49" font-weight="700">ABA riski</text>
+    <text x="165" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6862">sürüm sayacı</text>
+
+    <rect x="259" y="258" width="122" height="43" rx="14" fill="#e7eefb"/>
+    <circle cx="281" cy="279.5" r="10" fill="#8caee5"/>
+    <path d="M276 280 H286 M281 275 V285" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="299" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#465d82" font-weight="700">Görünürlük</text>
+    <text x="299" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687d9e">bellek sırası</text>
+
+    <rect x="393" y="258" width="122" height="43" rx="14" fill="#e2f3d9"/>
+    <circle cx="415" cy="279.5" r="10" fill="#82bd70"/>
+    <path d="M410 280 L414 284 L421 275" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="433" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41653c" font-weight="700">İlerleme</text>
+    <text x="433" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668260">sistem kazanır</text>
+  </g>
+</svg>

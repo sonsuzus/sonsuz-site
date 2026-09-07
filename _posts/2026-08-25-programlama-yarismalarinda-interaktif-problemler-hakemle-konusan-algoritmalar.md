@@ -9,6 +9,7 @@ tags:
   - interaktif problemler
   - algoritmalar
   - c++
+image: /img/programlama-yarismalarinda-interaktif-73.png
 ---
 
 Programlama yarışmalarındaki klasik sorularda girdiyi bir kez okur, cevabı yazıp programı kapatırsınız. İnteraktif problemlerde ise karşınızda görünmez bir hakem vardır: Siz soru sorarsınız, hakem cevap verir, siz yeni bilgiye göre stratejinizi güncellersiniz. Bu yapı; ikili arama, bilgi teorisi, durum yönetimi ve iletişim protokolü gibi kavramları aynı sahnede buluşturur.
@@ -28,6 +29,9 @@ Bu, ikili aramanın neden yalnızca pratikte hızlı değil, çoğu durumda bilg
 | İkili arama | $O(\log n)$ | Aralığı iki parçaya ayırmak | Sıralı/monoton cevaplar |
 | Böl ve yönet | Probleme bağlı | Birden fazla bilgiyi tek sorguda toplamak | Permütasyon ve grafik problemleri |
 | Rastgeleleştirme | Beklenen değer | Örnekleme ile aday elemek | Deterministik strateji zor olduğunda |
+
+![programlama-yarismalarinda-interaktif-73](/img/programlama-yarismalarinda-interaktif-73.svg)
+
 
 İnteraktif problemlerde algoritma kadar **I/O disiplini** de önemlidir. Normal bir soruda çıktının en sonda tamponda beklemesi sorun olmayabilir. Burada ise hakem sizden sorguyu görmeden yanıt veremez; siz de yanıt gelmeden ilerleyemezsiniz. Bu karşılıklı bekleme durumuna deadlock denir. Çözüm, her sorgudan sonra çıktıyı flush etmektir.
 

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="prog" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce0fb"/>
+    </linearGradient>
+    <linearGradient id="judge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcf4e3"/>
+      <stop offset="100%" stop-color="#c7ead4"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1ce"/>
+      <stop offset="100%" stop-color="#f9dfa6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7892a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7892a5" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="48" r="76" fill="#dcefff" opacity="0.42"/>
+  <circle cx="568" cy="276" r="93" fill="#dff3dd" opacity="0.48"/>
+  <path d="M40 267 C145 222, 203 290, 294 254 S470 203, 606 245" fill="none" stroke="#b8d7d7" stroke-width="2" opacity="0.38"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5a70">İnteraktif Problem Döngüsü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="45" y="78" width="166" height="153" rx="20" fill="url(#prog)" stroke="#aecbe8"/>
+    <rect x="429" y="78" width="166" height="153" rx="20" fill="url(#judge)" stroke="#acd4b8"/>
+    <circle cx="320" cy="154" r="63" fill="url(#core)" stroke="#e8c87c" stroke-width="1.5"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36536a">
+    <text x="128" y="107" text-anchor="middle" font-weight="700">Yarışmacı Programı</text>
+    <text x="512" y="107" text-anchor="middle" font-weight="700">Görünmez Hakem</text>
+
+    <g filter="url(#smallShadow)">
+      <rect x="66" y="123" width="124" height="31" rx="10" fill="#f8fcff"/>
+      <rect x="66" y="169" width="124" height="31" rx="10" fill="#f8fcff"/>
+      <rect x="450" y="123" width="124" height="31" rx="10" fill="#f8fffa"/>
+      <rect x="450" y="169" width="124" height="31" rx="10" fill="#f8fffa"/>
+    </g>
+    <text x="128" y="143" text-anchor="middle">Durum yönetimi</text>
+    <text x="128" y="189" text-anchor="middle">Çıktı ve flush</text>
+    <text x="512" y="143" text-anchor="middle">Gizli değer</text>
+    <text x="512" y="189" text-anchor="middle">Protokol yanıtı</text>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#74591c">
+    <text x="320" y="142" text-anchor="middle" font-weight="700">İkili Arama</text>
+    <text x="320" y="161" text-anchor="middle">Belirsizliği böl</text>
+    <text x="320" y="180" text-anchor="middle">Az sorgu</text>
+  </g>
+
+  <path d="M211 124 C239 106, 260 105, 279 113" fill="none" stroke="#668fac" stroke-width="2.2"/>
+  <polygon points="279,113 269,107 271,118" fill="#668fac"/>
+  <path d="M361 113 C382 105, 402 106, 429 124" fill="none" stroke="#668fac" stroke-width="2.2"/>
+  <polygon points="429,124 418,118 420,129" fill="#668fac"/>
+
+  <path d="M429 190 C402 207, 382 207, 361 196" fill="none" stroke="#559772" stroke-width="2.2"/>
+  <polygon points="361,196 371,203 369,191" fill="#559772"/>
+  <path d="M279 196 C260 207, 239 207, 211 190" fill="none" stroke="#559772" stroke-width="2.2"/>
+  <polygon points="211,190 221,191 219,202" fill="#559772"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="236" y="65" width="168" height="25" rx="12" fill="#eaf3fc" stroke="#c4dced"/>
+    <text x="320" y="82" text-anchor="middle" fill="#49738e">Sorgu: x küçük mü?</text>
+
+    <rect x="250" y="220" width="140" height="25" rx="12" fill="#e9f6ea" stroke="#c5dfc8"/>
+    <text x="320" y="237" text-anchor="middle" fill="#4d7f5c">Yanıt: evet veya hayır</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="69" y="257" width="148" height="35" rx="12" fill="#ffffff" opacity="0.88"/>
+    <rect x="423" y="257" width="148" height="35" rx="12" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526d7d">
+    <text x="143" y="279" text-anchor="middle">Sorgu limiti: log₂ n</text>
+    <text x="497" y="279" text-anchor="middle">Hata yanıtı: dur</text>
+  </g>
+
+  <path d="M226 275 L405 275" stroke="#a9c4ca" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <circle cx="320" cy="275" r="4" fill="#8eb5bd"/>
+</svg>

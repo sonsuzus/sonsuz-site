@@ -10,6 +10,7 @@ tags:
   - llm
   - otomasyon
 toc: true
+image: /img/prompt-chaining-karmasik-29.png
 ---
 
 Bir büyük dil modelinden tek seferde kapsamlı bir rapor yazmasını, verileri analiz etmesini, kaynakları denetlemesini ve sonucu belirli bir formatta sunmasını istemek caziptir. Ancak bu yaklaşım çoğu zaman belirsiz, tutarsız veya kolayca doğrulanamayan çıktılar üretir. **Prompt chaining**, büyük bir hedefi birbirini besleyen küçük istemlere ayırarak bu sorunu azaltan tekniktir. Zincirde her adım, önceki adımın çıktısını girdi olarak kullanır; böylece görev hem denetlenebilir hem de yeniden üretilebilir hâle gelir.
@@ -73,3 +74,6 @@ $$
 Burada $D$ doğruluk, $T$ tutarlılık, $F$ ise format uygunluğudur. Katsayılar ürün riskine göre değişir; hukuki veya tıbbi içerikte doğruluk katsayısı çok daha yüksek olmalıdır.
 
 Sonuç olarak prompt chaining, modeli sihirli bir cevap makinesi gibi değil, uzmanlığı adımlara ayrılmış bir iş akışı motoru gibi kullanmanızı sağlar. Küçük, test edilebilir ve açık sorumluluklara sahip promptlar; özellikle raporlama, veri çıkarımı, içerik üretimi ve kod inceleme görevlerinde daha güvenilir sonuçların anahtarıdır.
+
+![prompt-chaining-karmasik-29](/img/prompt-chaining-karmasik-29.svg)
+

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8efff"/>
+      <stop offset="100%" stop-color="#dce9fb"/>
+    </linearGradient>
+    <linearGradient id="astGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff4ed"/>
+      <stop offset="100%" stop-color="#cce8de"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#62758a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#62758a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="567" cy="42" r="74" fill="#dff3ed" opacity="0.46"/>
+  <circle cx="68" cy="286" r="83" fill="#dceaff" opacity="0.42"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38526a">KAYNAK KODDAN ANLAMLI YAPIYA</text>
+  <path d="M28 39 H612" stroke="#cfdfdf" stroke-width="1"/>
+
+  <!-- Source -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="83" width="112" height="146" rx="16" fill="url(#codeGrad)" stroke="#b8cce8"/>
+  </g>
+  <rect x="43" y="101" width="82" height="10" rx="5" fill="#7697c7" opacity="0.72"/>
+  <rect x="43" y="120" width="57" height="6" rx="3" fill="#91acd0"/>
+  <rect x="43" y="134" width="72" height="6" rx="3" fill="#91acd0"/>
+  <rect x="43" y="148" width="45" height="6" rx="3" fill="#91acd0"/>
+  <rect x="43" y="162" width="68" height="6" rx="3" fill="#91acd0"/>
+  <rect x="43" y="176" width="52" height="6" rx="3" fill="#91acd0"/>
+  <rect x="43" y="190" width="76" height="6" rx="3" fill="#91acd0"/>
+  <text x="84" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#415b77">Kaynak Kod</text>
+
+  <!-- Arrow 1 -->
+  <path d="M144 156 H166" fill="none" stroke="#7190a8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="172,156 163,151 163,161" fill="#7190a8"/>
+
+  <!-- Lexer -->
+  <g filter="url(#shadow)">
+    <rect x="176" y="99" width="112" height="112" rx="16" fill="#fff4dd" stroke="#ead3a4"/>
+  </g>
+  <rect x="194" y="119" width="34" height="19" rx="6" fill="#f5c56e"/>
+  <rect x="233" y="119" width="36" height="19" rx="6" fill="#f8db9f"/>
+  <rect x="194" y="144" width="48" height="19" rx="6" fill="#f8db9f"/>
+  <rect x="247" y="144" width="22" height="19" rx="6" fill="#f5c56e"/>
+  <rect x="194" y="169" width="30" height="19" rx="6" fill="#f5c56e"/>
+  <rect x="229" y="169" width="40" height="19" rx="6" fill="#f8db9f"/>
+  <text x="232" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#775a28">Lexer</text>
+  <text x="232" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b7043">Tokenlar</text>
+
+  <!-- Arrow 2 -->
+  <path d="M292 156 H314" fill="none" stroke="#7190a8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="320,156 311,151 311,161" fill="#7190a8"/>
+
+  <!-- Parser -->
+  <g filter="url(#shadow)">
+    <rect x="324" y="99" width="112" height="112" rx="16" fill="#eee7fb" stroke="#d1c1ee"/>
+  </g>
+  <path d="M350 128 L367 115 L384 128 L367 141 Z" fill="#bca4e4"/>
+  <path d="M367 141 V166 M367 153 L348 171 M367 153 L387 171" fill="none" stroke="#9375c9" stroke-width="2"/>
+  <circle cx="348" cy="172" r="6" fill="#cdb9ec"/>
+  <circle cx="367" cy="167" r="6" fill="#aa8bd9"/>
+  <circle cx="387" cy="172" r="6" fill="#cdb9ec"/>
+  <text x="380" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#624882">Parser</text>
+  <text x="380" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b6398">Gramer</text>
+
+  <!-- Arrow 3 -->
+  <path d="M440 156 H458" fill="none" stroke="#7190a8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="464,156 455,151 455,161" fill="#7190a8"/>
+
+  <!-- AST panel -->
+  <g filter="url(#shadow)">
+    <rect x="468" y="66" width="144" height="190" rx="18" fill="url(#astGrad)" stroke="#add4c5"/>
+  </g>
+  <text x="540" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376e61">Soyut Sözdizim Ağacı</text>
+
+  <path d="M540 119 V139 M540 139 L508 164 M540 139 L572 164 M508 181 L493 204 M508 181 L524 204 M572 181 L557 204 M572 181 L588 204" fill="none" stroke="#5f9c8c" stroke-width="2.2" stroke-linecap="round"/>
+  <g filter="url(#smallShadow)">
+    <rect x="515" y="104" width="50" height="24" rx="8" fill="#79bbaa"/>
+    <rect x="483" y="156" width="50" height="25" rx="8" fill="#b8dfd3"/>
+    <rect x="547" y="156" width="50" height="25" rx="8" fill="#b8dfd3"/>
+    <rect x="478" y="203" width="31" height="22" rx="7" fill="#e3f2ed"/>
+    <rect x="517" y="203" width="31" height="22" rx="7" fill="#e3f2ed"/>
+    <rect x="552" y="203" width="31" height="22" rx="7" fill="#e3f2ed"/>
+    <rect x="571" y="203" width="31" height="22" rx="7" fill="#e3f2ed"/>
+  </g>
+  <text x="540" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Atama</text>
+  <text x="508" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356b5e">toplam</text>
+  <text x="572" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356b5e">Çarpma</text>
+  <text x="493" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527d74">fiyat</text>
+  <text x="532" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527d74">adet</text>
+  <text x="567" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527d74">Çağrı</text>
+  <text x="586" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527d74">İf</text>
+
+  <!-- Bottom applications -->
+  <path d="M540 260 V278" fill="none" stroke="#7190a8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="540,284 535,275 545,275" fill="#7190a8"/>
+  <path d="M540 284 H420 M540 284 H610" fill="none" stroke="#7190a8" stroke-width="2" stroke-linecap="round"/>
+  <g filter="url(#smallShadow)">
+    <rect x="344" y="276" width="107" height="30" rx="12" fill="#fff0ed" stroke="#f0c8c0"/>
+    <rect x="480" y="276" width="132" height="30" rx="12" fill="#e8f0ff" stroke="#c7d8f0"/>
+  </g>
+  <text x="397" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a5d51">Güvenlik Taraması</text>
+  <text x="546" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c6f9d">Dönüşüm ve Lint</text>
+</svg>

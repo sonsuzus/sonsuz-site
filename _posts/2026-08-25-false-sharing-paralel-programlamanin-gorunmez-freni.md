@@ -9,7 +9,11 @@ tags:
   - performans
   - cache
   - multithreading
+image: /img/false-sharing-paralel-21.png
 ---
+
+![false-sharing-paralel-21](/img/false-sharing-paralel-21.svg)
+
 
 Paralel programlarda çekirdek sayısını artırmak her zaman beklenen hızlanmayı getirmez. Bazen iş parçacıkları farklı değişkenlerle çalıştığını düşündüğümüz hâlde uygulama yavaşlar, CPU kullanımı yükselir ve profil sonuçları gizemli görünür. Bu durumun sık rastlanan sorumlularından biri **false sharing** ya da Türkçesiyle *yanlış bellek paylaşımıdır*. Sorun, verinin mantıksal olarak değil, işlemcinin önbellek satırları düzeyinde paylaşılmasından doğar.
 ``

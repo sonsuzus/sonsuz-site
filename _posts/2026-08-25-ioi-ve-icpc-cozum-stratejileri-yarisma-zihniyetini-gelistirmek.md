@@ -10,9 +10,13 @@ tags:
   - algoritmalar
   - problem çözme
   - yarışma programlama
+image: /img/ioi-ve-icpc-65.png
 ---
 
 Uluslararası programlama yarışmaları yalnızca hızlı kod yazma sınavları değildir; belirsiz bir problemi modele dönüştürme, doğru algoritmayı seçme ve baskı altında hatasız uygulama sanatıdır. IOI bireysel, kısmi puan odaklı ve daha derin algoritmik analiz gerektirirken; ICPC ekip iletişimi, problem dağıtımı ve “ilk doğru çözüm” disiplinini öne çıkarır. Ortak payda ise düzenli düşünme alışkanlığıdır.
+
+![ioi-ve-icpc-65](/img/ioi-ve-icpc-65.svg)
+
 ``
 
 Başarılı yarışmacılar problemi okur okumaz kod editörüne koşmaz. Önce girdiyi, çıktıyı, kısıtları ve istenen optimizasyon hedefini ayrı ayrı tanımlar. Özellikle kısıtlar algoritmanın gizli yol haritasıdır. Örneğin $n \leq 20$ ise bit mask veya durum uzayı araması düşünülebilir; $n \leq 2\cdot10^5$ ise genellikle $O(n\log n)$ ya da $O(n)$ çözümler hedeflenmelidir. Bir çözümün kabaca çalışma süresi $T(n)$ için, büyük $n$ değerlerinde $n^2$ ile $n\log n$ arasındaki fark bir optimizasyon değil, kabul ile zaman aşımı arasındaki çizgidir.

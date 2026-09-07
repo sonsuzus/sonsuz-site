@@ -8,6 +8,7 @@ tags:
   - semantic-versioning
   - semver
   - yazılım-sürümleri
+image: /img/semantic-versioning-surum-95.png
 ---
 
 Bir paketin `2.4.1` sürümünü gördüğünüzde bunun sadece üç rastgele sayı olduğunu düşünmek kolaydır. Oysa doğru kullanıldığında bu numara, güncellemenin projenizi bozup bozmayacağına dair güçlü bir sözleşmedir. Semantic Versioning (SemVer), geliştiriciler, paket yöneticileri ve kullanıcılar arasında ortak bir dil kurar: Yeni özellik mi geldi, hata mı düzeldi, yoksa mevcut entegrasyonlar tehlikede mi?
@@ -56,3 +57,6 @@ Buradaki `^1.4.2`, çoğu araçta `>=1.4.2` ve `<2.0.0` anlamına gelir. Yani ha
 SemVer kullanırken iki disiplin şarttır. Birincisi, herkese açık API’nin ne olduğunu açıkça belgelemektir; belgelenmemiş davranışların kullanıcı tarafından kullanılmayacağını varsaymak risklidir. İkincisi ise değişiklik kayıtlarını (`CHANGELOG`) sürüm numaralarıyla birlikte tutmaktır. İnsanlar `3.1.0` gördüğünde ne kazanacaklarını, `4.0.0` gördüğünde ise neyi değiştirmeleri gerektiğini hızla anlayabilmelidir.
 
 Sonuçta Semantic Versioning, sayıları büyütme ritüeli değil; güven inşa etme mekanizmasıdır. Sürüm numaranız ne kadar dürüstse, kullanıcılarınızın güncelleme tuşuna basması da o kadar cesur olur.
+
+![semantic-versioning-surum-95](/img/semantic-versioning-surum-95.svg)
+

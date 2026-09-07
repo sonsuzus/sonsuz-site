@@ -9,6 +9,7 @@ tags:
   - performans
   - branch prediction
 toc: true
+image: /img/branch-prediction-islemciler-28.png
 ---
 
 Modern bir işlemci, bir programdaki talimatları sırayla ve sabırla bekleyerek çalıştırmaz; adeta aceleci bir satranç oyuncusu gibi bir sonraki hamleyi önceden kestirmeye çalışır. Dallanma tahmini (branch prediction), `if`, `while`, `for` ve fonksiyon dönüşleri gibi karar noktalarında hangi kod yolunun izleneceğini tahmin eden donanım tekniğidir. Doğru tahminler işlem hattını dolu tutar, yanlış tahminler ise pahalı bir geri sarma etkisi yaratır.
@@ -31,6 +32,9 @@ Burada $D$, yanlış yolda ilerleyen pipeline derinliğini; $R$ ise doğru hedef
 | Dallanma yok | Sonucu bekler | Basit ve kesin | Pipeline sık sık durur |
 | Statik tahmin | Örneğin “geri atlamayı al” | Düşük donanım maliyeti | Programın gerçek davranışını öğrenmez |
 | Dinamik tahmin | Geçmiş sonuçlardan öğrenir | Yüksek doğruluk | Ek tablo ve karmaşıklık gerektirir |
+
+![branch-prediction-islemciler-28](/img/branch-prediction-islemciler-28.svg)
+
 
 ## Tahminci geçmişten ne öğrenir?
 

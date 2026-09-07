@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="bst" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe4df"/>
+      <stop offset="100%" stop-color="#fff4f1"/>
+    </linearGradient>
+    <linearGradient id="bplus" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff3ea"/>
+      <stop offset="100%" stop-color="#effaf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#476477" flood-opacity="0.16"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#476477" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="34" r="72" fill="#dceeff" opacity="0.48"/>
+  <circle cx="585" cy="286" r="90" fill="#dff3df" opacity="0.52"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#30495a">Disk Sayfalarında İndeksleme</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808d">Dar ağaç yerine geniş ve kısa yapı</text>
+
+  <rect x="26" y="65" width="261" height="226" rx="19" fill="url(#bst)" stroke="#efc8c0" filter="url(#shadow)"/>
+  <rect x="353" y="65" width="261" height="226" rx="19" fill="url(#bplus)" stroke="#badfcf" filter="url(#shadow)"/>
+
+  <rect x="47" y="80" width="129" height="27" rx="13" fill="#f5bcb4" filter="url(#soft)"/>
+  <text x="111" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#773f43">İkili Arama Ağacı</text>
+  <text x="187" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b6666">yüksek I/O</text>
+
+  <rect x="374" y="80" width="111" height="27" rx="13" fill="#9fd9bf" filter="url(#soft)"/>
+  <text x="429" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285f50">B+Tree</text>
+  <text x="496" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f8071">az I/O</text>
+
+  <path d="M156 126 L112 151 M156 126 L201 151 M112 163 L82 190 M112 163 L137 190 M201 163 L175 190 M201 163 L230 190" fill="none" stroke="#c98680" stroke-width="2"/>
+  <rect x="139" y="113" width="34" height="25" rx="8" fill="#f4aaa1" filter="url(#soft)"/>
+  <text x="156" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#703d42">50</text>
+  <rect x="95" y="150" width="34" height="25" rx="8" fill="#ffd7d1" filter="url(#soft)"/>
+  <text x="112" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#703d42">25</text>
+  <rect x="184" y="150" width="34" height="25" rx="8" fill="#ffd7d1" filter="url(#soft)"/>
+  <text x="201" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#703d42">75</text>
+  <rect x="65" y="188" width="34" height="24" rx="8" fill="#fff0ed"/>
+  <rect x="120" y="188" width="34" height="24" rx="8" fill="#fff0ed"/>
+  <rect x="158" y="188" width="34" height="24" rx="8" fill="#fff0ed"/>
+  <rect x="213" y="188" width="34" height="24" rx="8" fill="#fff0ed"/>
+  <text x="156" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b5d60">Çok seviye · yaklaşık 30 sayfa</text>
+  <rect x="71" y="249" width="170" height="24" rx="12" fill="#f9cfca"/>
+  <text x="156" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#82494d">2 çocuk · dar dallanma</text>
+
+  <path d="M484 136 L416 160 M484 136 L484 160 M484 136 L552 160" fill="none" stroke="#5fa889" stroke-width="2.3"/>
+  <rect x="438" y="113" width="92" height="26" rx="8" fill="#93d2b3" filter="url(#soft)"/>
+  <text x="484" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245b4c">20 · 50 · 80</text>
+
+  <rect x="380" y="160" width="72" height="27" rx="8" fill="#bfe8d2" filter="url(#soft)"/>
+  <rect x="448" y="160" width="72" height="27" rx="8" fill="#bfe8d2" filter="url(#soft)"/>
+  <rect x="516" y="160" width="72" height="27" rx="8" fill="#bfe8d2" filter="url(#soft)"/>
+  <text x="416" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#285f50">5 · 12</text>
+  <text x="484" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#285f50">31 · 44</text>
+  <text x="552" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#285f50">65 · 92</text>
+
+  <path d="M452 173 L444 169 L444 177 Z" fill="#4c9b7b"/>
+  <path d="M520 173 L512 169 L512 177 Z" fill="#4c9b7b"/>
+  <path d="M588 173 L580 169 L580 177 Z" fill="#4c9b7b"/>
+
+  <text x="484" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47796a">Yapraklar bağlı · aralık tarama</text>
+  <rect x="397" y="223" width="174" height="24" rx="12" fill="#a9dfc4"/>
+  <text x="484" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245b4c">Yüzlerce çocuk · yaklaşık 4 sayfa</text>
+
+  <path d="M301 164 L337 164" stroke="#7d9cac" stroke-width="2"/>
+  <polygon points="345,164 336,159 336,169" fill="#648596"/>
+  <text x="320" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#507184">genişlet</text>
+
+  <rect x="258" y="299" width="124" height="16" rx="8" fill="#d9e8ed"/>
+  <text x="320" y="311" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456574">Disk dostu indeks</text>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#778be8"/>
+      <stop offset="100%" stop-color="#596fc9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52637d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52637d" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="88" cy="42" r="64" fill="#dcecf5" opacity="0.42"/>
+  <circle cx="568" cy="279" r="82" fill="#deeed7" opacity="0.5"/>
+
+  <text x="32" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40506c">Bazel derleme akışı</text>
+  <text x="32" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#778398">Açık bağımlılıklar · hızlı ve tekrarlanabilir çıktı</text>
+
+  <!-- Sol DAG alanı -->
+  <rect x="28" y="75" width="173" height="196" rx="19" fill="#edf4fb" filter="url(#soft)"/>
+  <text x="47" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#50627d">Hedef grafiği</text>
+
+  <path d="M78 151 L119 128 M78 151 L119 180 M135 128 L159 151 M135 180 L159 151" fill="none" stroke="#91a1bc" stroke-width="2"/>
+  <path d="M159 151 L181 151" fill="none" stroke="#8294b2" stroke-width="2"/>
+  <polygon points="181,151 174,147 174,155" fill="#8294b2"/>
+
+  <rect x="48" y="136" width="31" height="30" rx="9" fill="#b9ddef" filter="url(#soft)"/>
+  <text x="57" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6680">.cc</text>
+
+  <rect x="111" y="112" width="31" height="30" rx="9" fill="#d9c9f4" filter="url(#soft)"/>
+  <text x="118" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#665387">.h</text>
+
+  <rect x="111" y="165" width="31" height="30" rx="9" fill="#c9e8c4" filter="url(#soft)"/>
+  <text x="119" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d7d4b">lib</text>
+
+  <rect x="158" y="136" width="31" height="30" rx="9" fill="#f7d5ad" filter="url(#soft)"/>
+  <text x="166" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b6031">hedef</text>
+
+  <rect x="46" y="219" width="137" height="31" rx="11" fill="#ffffff" opacity="0.82"/>
+  <text x="60" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66758b">BUILD ile açık tanım</text>
+
+  <!-- Sol-merkez bağlantı -->
+  <path d="M202 172 C218 172 220 160 235 160" fill="none" stroke="#768ab0" stroke-width="2.4"/>
+  <polygon points="235,160 227,156 228,164" fill="#768ab0"/>
+
+  <!-- Merkez -->
+  <rect x="236" y="105" width="168" height="114" rx="24" fill="url(#core)" filter="url(#shadow)"/>
+  <circle cx="320" cy="145" r="25" fill="#ffffff" opacity="0.18"/>
+  <path d="M307 143 L320 133 L333 143 L328 158 L312 158 Z" fill="#f7fbff"/>
+  <path d="M314 146 L320 151 L327 145" fill="none" stroke="#667bd4" stroke-width="2"/>
+  <text x="287" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">BAZEL MOTORU</text>
+  <text x="271" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e7ecff">Paralel ve artımlı</text>
+
+  <!-- Üst özellik -->
+  <path d="M320 104 L320 78" fill="none" stroke="#8496b7" stroke-width="2"/>
+  <polygon points="320,78 316,85 324,85" fill="#8496b7"/>
+  <rect x="252" y="55" width="136" height="24" rx="12" fill="#fdfdfb" filter="url(#soft)"/>
+  <text x="272" y="71" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53637d">Hermetik ortam</text>
+
+  <!-- Sağ akış -->
+  <path d="M405 145 C423 145 425 124 442 124" fill="none" stroke="#768ab0" stroke-width="2.4"/>
+  <polygon points="442,124 434,120 435,128" fill="#768ab0"/>
+  <path d="M405 182 C423 182 426 203 442 203" fill="none" stroke="#768ab0" stroke-width="2.4"/>
+  <polygon points="442,203 434,199 435,207" fill="#768ab0"/>
+
+  <rect x="443" y="91" width="165" height="72" rx="18" fill="#fff7e9" filter="url(#shadow)"/>
+  <circle cx="470" cy="126" r="16" fill="#f4c779"/>
+  <path d="M462 126 C462 121 466 117 471 117 C477 117 480 121 480 126 C480 131 476 135 471 135 C466 135 462 131 462 126Z" fill="none" stroke="#8d6935" stroke-width="1.8"/>
+  <path d="M462 126 L480 126 M471 117 L471 135" stroke="#8d6935" stroke-width="1.5"/>
+  <text x="496" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6e5737">Önbellek</text>
+  <text x="496" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#876e4c">Yerel ve uzak</text>
+
+  <rect x="443" y="174" width="165" height="72" rx="18" fill="#eaf5e8" filter="url(#shadow)"/>
+  <rect x="456" y="191" width="29" height="24" rx="6" fill="#a9d39f"/>
+  <path d="M462 198 L479 198 M462 204 L479 204 M466 211 L475 211" stroke="#47734c" stroke-width="1.6"/>
+  <text x="496" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d704f">Uzak yürütme</text>
+  <text x="496" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668168">Dağıtık işçiler</text>
+
+  <!-- Alt sonuç -->
+  <path d="M320 220 L320 250" fill="none" stroke="#768ab0" stroke-width="2.4"/>
+  <polygon points="320,250 316,243 324,243" fill="#768ab0"/>
+  <rect x="242" y="251" width="156" height="43" rx="15" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="267" cy="272" r="12" fill="#bfe2d1"/>
+  <path d="M261 272 L265 276 L273 267" fill="none" stroke="#427f60" stroke-width="2"/>
+  <text x="288" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48685b">Aynı çıktı</text>
+  <text x="288" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718376">Hızlı derleme</text>
+</svg>

@@ -9,6 +9,7 @@ tags:
   - derleme sistemleri
   - yazılım mimarisi
 toc: true
+image: /img/bazel-ile-devasa-79.png
 ---
 
 Büyük bir yazılım projesinde derleme süresi, kahve molasından uzun sürmeye başladıysa Bazel ile tanışma vakti gelmiş olabilir. Google tarafından geliştirilen Bazel; C++, Java, Python, Go ve daha birçok dili aynı depoda yönetebilen, bağımlılıkları açıkça tanımlayan ve sonuçları önbelleğe alan modern bir derleme sistemidir. Temel hedefi basittir: Makineniz, işletim sisteminiz veya ekip arkadaşınız değişse bile aynı kaynak kodundan aynı çıktıyı hızlı biçimde üretmek.
@@ -77,3 +78,6 @@ $$K = H(girdiler + komut + araç\ zinciri)$$
 Yerel önbellek bireysel geliştiriciyi hızlandırırken, uzak önbellek ekip genelinde büyük kazanç sağlar. Bir kişinin ürettiği derleme çıktısı, başka bir geliştiricinin makinesinde tekrar hesaplanmadan kullanılabilir. Daha ileri seviyede uzak yürütme ile derleme görevleri güçlü sunuculara dağıtılabilir.
 
 Bazel'e geçişte en önemli kural küçük başlamaktır. Önce bağımsız bir modülü `BUILD` dosyasına taşıyın, test hedeflerini ekleyin ve bağımlılıkları görünür hâle getirin. İlk günlerde katı kurallar biraz huysuz görünebilir; fakat proje büyüdükçe bu disiplin, dakikalar süren derlemeleri saniyelere indiren sessiz bir süper güce dönüşür.
+
+![bazel-ile-devasa-79](/img/bazel-ile-devasa-79.svg)
+

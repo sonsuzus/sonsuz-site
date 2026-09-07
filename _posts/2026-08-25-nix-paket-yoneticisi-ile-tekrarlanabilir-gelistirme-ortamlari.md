@@ -9,6 +9,7 @@ tags:
   - paket yönetimi
   - devops
 toc: true
+image: /img/nix-paket-yoneticisi-42.png
 ---
 
 Bir projeyi yeni bir bilgisayarda çalıştırırken yaşanan “bende çalışıyordu” sendromu, çoğu zaman koddan değil ortamdan kaynaklanır. Farklı derleyici sürümleri, eksik kütüphaneler ve işletim sistemi farkları geliştirme sürecini tahmin edilmez hâle getirir. Nix, paketleri ve geliştirme ortamlarını deklaratif biçimde tanımlayarak bu kaosu kontrol altına alan güçlü bir paket yöneticisidir.
@@ -31,6 +32,9 @@ Buradaki $H$, kriptografik bir özet fonksiyonudur. Girdi değişirse çıktı d
 | Sürüm çakışması | Sık görülür | Birden fazla sürüm birlikte yaşayabilir |
 | Geri alma | Zor veya sınırlı | Nesiller üzerinden kolay |
 | Ortam tanımı | Çoğunlukla dokümantasyonda | Kod olarak depoda |
+
+![nix-paket-yoneticisi-42](/img/nix-paket-yoneticisi-42.svg)
+
 
 ## Geliştirme kabuğu oluşturmak
 

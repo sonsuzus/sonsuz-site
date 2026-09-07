@@ -11,7 +11,11 @@ tags:
   - javascript
   - otomasyon
 toc: true
+image: /img/ast-tabanli-kod-49.png
 ---
+
+![ast-tabanli-kod-49](/img/ast-tabanli-kod-49.svg)
+
 
 Kaynak kodunu metin olarak bul-değiştir yapmak ilk bakışta caziptir; ancak bir fonksiyon adını yorum satırında, metin içinde veya farklı bir kapsamda yanlışlıkla değiştirmek saniyeler içinde karmaşaya dönüşebilir. AST (Abstract Syntax Tree / Soyut Sözdizim Ağacı) tabanlı dönüşüm araçları, kodu karakter dizisi olarak değil, anlamlı program yapıları olarak ele alır. Böylece güvenli yeniden adlandırma, modern sözdizimine geçiş ve ekip standartlarına otomatik uyum mümkün olur.
 ``

@@ -9,6 +9,7 @@ tags:
   - büyük dil modelleri
   - yapay zeka
 toc: true
+image: /img/rag-mimarisi-buyuk-11.png
 ---
 
 Büyük dil modelleri (LLM), eğitim verilerindeki örüntülerden etkileyici yanıtlar üretir; ancak eğitim tarihinden sonra yaşanan gelişmeleri doğal olarak bilemezler. Daha da önemlisi, kurum içi dokümanlar, ürün katalogları veya sürekli değişen mevzuat gibi özel bilgileri doğrudan modelin parametrelerine koymak hem pahalı hem de risklidir. Retrieval-Augmented Generation (RAG), modeli yeniden eğitmek yerine doğru bilgiyi doğru anda bularak bu açığı kapatan mimaridir.
@@ -32,6 +33,9 @@ $$\text{Yanıt}=LLM(\text{Soru}+\operatorname{TopK}(\text{Retriever},\text{Soru}
 | Sadece LLM | Model parametrelerinde | Yeniden eğitim gerekir | Zor |
 | Fine-tuning | Model parametrelerinde | Orta-yüksek | Sınırlı |
 | RAG | Harici bilgi tabanında | Düşük | Güçlü |
+
+![rag-mimarisi-buyuk-11](/img/rag-mimarisi-buyuk-11.svg)
+
 
 ## Neden chunk boyutu kritik?
 

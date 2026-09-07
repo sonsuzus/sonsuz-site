@@ -11,6 +11,7 @@ tags:
   - algoritmalar
   - bellek yönetimi
 toc: true
+image: /img/cpu-cache-dostu-27.png
 ---
 
 Modern işlemciler inanılmaz hızlıdır; fakat RAM erişimi, işlemci çekirdeğinin hızına kıyasla şaşırtıcı derecede yavaştır. Bu yüzden performans darboğazı çoğu zaman karmaşık matematiksel işlem değil, verinin bellekte nerede durduğu ve hangi sırayla okunduğudur. Cache dostu kod yazımı; veriyi işlemcinin sevdiği biçimde, yakın adreslerde ve öngörülebilir bir akışla tüketme sanatıdır.
@@ -28,6 +29,9 @@ CPU, RAM'den her değişkeni tek tek getirmek istemez. Bunun yerine belleği gen
 | L2 Cache | Yüzlerce KB/MB | Düşük | Yerel çalışma kümeleri |
 | L3 Cache | MB mertebesi | Orta | Çekirdekler arası paylaşılan veri |
 | RAM | GB mertebesi | Yüksek | Büyük veri kümeleri |
+
+![cpu-cache-dostu-27](/img/cpu-cache-dostu-27.svg)
+
 
 Basitleştirilmiş maliyet modeliyle toplam süre şöyle düşünülebilir:
 

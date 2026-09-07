@@ -8,6 +8,7 @@ tags:
   - ast
   - program analizi
   - derleyiciler
+image: /img/program-analizinde-ast-78.png
 ---
 
 Bir programın kaynak kodu, insan gözüyle satırlardan oluşur; fakat analiz araçları için asıl değerli olan şey bu satırların taşıdığı yapıdır. Abstract Syntax Tree (AST), yani Soyut Sözdizim Ağacı, kodu değişken tanımı, fonksiyon çağrısı, koşul ve döngü gibi anlamlı düğümlere ayırır. Böylece otomatik kalite kontrolleri, güvenlik taramaları ve kod dönüşümleri düzenli ifadelerin kırılgan dünyasından kurtulur.
@@ -65,3 +66,6 @@ AST ile analiz yaparken yalnızca düğüm türüne bakmak her zaman yeterli de�
 | Fonksiyon ne döndürüyor? | `FunctionDef`, `Return` | Tip ve sözleşme kontrolü |
 
 AST'nin güzelliği, aynı ağacın hem okumaya hem dönüştürmeye izin vermesidir. Bir kod modernleştirici eski API çağrılarını yeni çağrılarla değiştirebilir; bir linter stil ihlallerini bulabilir; eğitim aracı ise öğrencinin döngü ve koşul kullanımını ölçebilir. Ancak AST tek başına programın kesin davranışını vermez: tür bilgisi, modüller arası çağrılar ve çalışma zamanı değerleri ek analiz gerektirir. Yine de kaynak kodunu metin değil yapı olarak ele almak, güvenilir otomasyonun en sağlam başlangıç noktasıdır.
+
+![program-analizinde-ast-78](/img/program-analizinde-ast-78.svg)
+

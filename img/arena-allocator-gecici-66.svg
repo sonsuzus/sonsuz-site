@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="arena" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9ebff"/>
+      <stop offset="1" stop-color="#d8f2df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58738d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58738d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="45" r="56" fill="#ddecff" opacity="0.48"/>
+  <circle cx="584" cy="280" r="82" fill="#dff3df" opacity="0.5"/>
+  <circle cx="564" cy="43" r="30" fill="#fff0d7" opacity="0.58"/>
+
+  <text x="32" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">ARENA ALLOCATOR</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8498">Geçici nesneler için sıralı bellek akışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="85" width="124" height="157" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="45" y="103" width="94" height="30" rx="10" fill="#e5f0ff"/>
+  <text x="92" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6389">Geçici iş</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="47" y="148" width="90" height="20" rx="7" fill="#ffe4bf"/>
+    <rect x="47" y="176" width="90" height="20" rx="7" fill="#e5daf7"/>
+    <rect x="47" y="204" width="90" height="20" rx="7" fill="#cdeedb"/>
+  </g>
+  <text x="92" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76512d">Nesne A</text>
+  <text x="92" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60477b">Nesne B</text>
+  <text x="92" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356c51">Nesne C</text>
+
+  <path d="M162 164 H194" fill="none" stroke="#7893a9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="194,164 185,159 185,169" fill="#7893a9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="204" y="76" width="286" height="176" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="226" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5b70">Büyük bellek bölgesi</text>
+  <text x="468" y="105" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7190a3">Kapasite</text>
+
+  <rect x="226" y="122" width="242" height="63" rx="12" fill="url(#arena)" stroke="#aac9da" stroke-width="1.2"/>
+  <rect x="228" y="124" width="54" height="59" rx="10" fill="#ffdca9"/>
+  <rect x="285" y="124" width="69" height="59" rx="4" fill="#e6d1f5"/>
+  <rect x="357" y="124" width="43" height="59" rx="4" fill="#c8edd7"/>
+  <rect x="403" y="124" width="63" height="59" rx="10" fill="#edf6f0"/>
+
+  <text x="255" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76512d">A</text>
+  <text x="319" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#624879">B</text>
+  <text x="378" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376c52">C</text>
+  <text x="434" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#789181">Boş alan</text>
+
+  <path d="M400 114 V193" fill="none" stroke="#467e9d" stroke-width="2.5" stroke-dasharray="4 3"/>
+  <polygon points="400,114 395,122 405,122" fill="#467e9d"/>
+  <rect x="366" y="199" width="68" height="25" rx="9" fill="#dceeff"/>
+  <text x="400" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386887">Ofset</text>
+
+  <path d="M498 164 H528" fill="none" stroke="#7893a9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="528,164 519,159 519,169" fill="#7893a9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="538" y="104" width="75" height="120" rx="18" fill="#ffffff"/>
+  </g>
+  <path d="M575 127 C591 127 596 141 590 151" fill="none" stroke="#6d9b83" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="591,151 582,147 586,156" fill="#6d9b83"/>
+  <rect x="550" y="158" width="51" height="35" rx="11" fill="#d8f0df"/>
+  <text x="575" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397154">Sıfırla</text>
+  <text x="575" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668375">Toplu temizlik</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="31" y="270" width="174" height="28" rx="12" fill="#e6f0ff"/>
+    <rect x="230" y="270" width="180" height="28" rx="12" fill="#e4f5e9"/>
+    <rect x="435" y="270" width="176" height="28" rx="12" fill="#fff0db"/>
+  </g>
+  <text x="118" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426783">Hizalama</text>
+  <text x="320" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397154">İşaretçi ilerletme</text>
+  <text x="523" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6333">Tek hamlede geri al</text>
+</svg>

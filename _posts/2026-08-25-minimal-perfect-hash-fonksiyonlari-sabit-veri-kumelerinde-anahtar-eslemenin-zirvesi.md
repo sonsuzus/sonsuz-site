@@ -9,6 +9,7 @@ tags:
   - hash
   - veri yapıları
 toc: true
+image: /img/minimal-perfect-hash-58.png
 ---
 
 Bir sözlüğün tüm kelimeleri, bir derleyicinin anahtar sözcükleri ya da bir servisin değişmeyen kimlik listesi için hızlı arama yapmak istediğinizi düşünün. Klasik hash tabloları güçlüdür; ancak çakışmalar, boş kovalar ve ek bellek maliyeti taşırlar. Veri kümesi oluşturulduktan sonra değişmeyecekse Minimal Perfect Hash Function (MPHF), her anahtarı çakışmasız biçimde tam gereken indeks aralığına yerleştirerek bu maliyeti dramatik biçimde azaltır.
@@ -79,3 +80,6 @@ Bu kodda `bucket`, anahtarı yardımcı dizideki bir kovaya yönlendirir; `mphf`
 Dil araçlarındaki anahtar kelimeler, HTTP başlık adları, genomik referanslar, gömülü cihaz tabloları ve büyük salt-okunur indeksler MPHF için çok uygundur. Buna karşılık kullanıcıların sürekli eklediği ürün kataloğu veya oturum tablosu gibi dinamik yapılarda yeniden inşa maliyeti yüzünden klasik hash tablosu daha mantıklıdır.
 
 Özetle MPHF, "önceden biraz daha fazla düşün, çalışma anında çok az bellek harca" yaklaşımıdır. Veri sabitse, çakışmasız indeksleme hem performans hem de bellek verimliliği açısından etkileyici bir mühendislik hamlesidir.
+
+![minimal-perfect-hash-58](/img/minimal-perfect-hash-58.svg)
+

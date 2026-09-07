@@ -10,7 +10,11 @@ tags:
   - sensör
   - loglama
   - influxdb
+image: /img/time-series-veritabanlari-89.png
 ---
+
+![time-series-veritabanlari-89](/img/time-series-veritabanlari-89.svg)
+
 
 Bir fabrikanın saniyede yüzlerce sıcaklık ölçümü ürettiğini, bir web uygulamasının da her istekte log bıraktığını düşünün. Bu veriler klasik tablolara elbette yazılabilir; fakat sorgular büyüdükçe, disk maliyeti arttıkça ve “son bir saatteki ortalama nedir?” sorusu sıklaştıkça özel bir yaklaşıma ihtiyaç duyulur. Time series (zaman serisi) veritabanları, zaman damgasını verinin merkezine koyarak sensör, metrik, olay ve log akışlarını verimli biçimde saklamak için tasarlanmıştır.
 ``

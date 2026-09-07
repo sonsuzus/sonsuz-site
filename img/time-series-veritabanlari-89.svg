@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8e5dc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5f7f91" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5f7f91" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="567" cy="44" r="76" fill="#dff2ea" opacity="0.48"/>
+  <circle cx="70" cy="294" r="90" fill="#e3edff" opacity="0.6"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">ZAMAN SERİSİ VERİ AKIŞI</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718697">Zaman damgası merkezli saklama ve analiz</text>
+
+  <!-- input cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="81" width="124" height="70" rx="16" fill="#fff4dc"/>
+    <rect x="28" y="171" width="124" height="70" rx="16" fill="#eee7ff"/>
+  </g>
+
+  <!-- sensor icon -->
+  <rect x="43" y="98" width="21" height="34" rx="10" fill="#f0a75e"/>
+  <circle cx="53.5" cy="108" r="4" fill="#fff8eb"/>
+  <path d="M75 104 C84 98,84 116,75 110 M82 98 C96 89,96 125,82 116" fill="none" stroke="#dd9450" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="76" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#71512f">Sensör</text>
+  <text x="76" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#927557">Sıcaklık</text>
+
+  <!-- log icon -->
+  <rect x="43" y="187" width="25" height="35" rx="5" fill="#9e8ad7"/>
+  <path d="M49 197h13M49 204h13M49 211h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="76" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#554373">Loglar</text>
+  <text x="76" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b6b9b">Metrikler</text>
+
+  <!-- arrows to intake -->
+  <path d="M152 116 H182" fill="none" stroke="#79a6ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="190,116 181,111 181,121" fill="#79a6ae"/>
+  <path d="M152 206 H182" fill="none" stroke="#79a6ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="190,206 181,201 181,211" fill="#79a6ae"/>
+
+  <!-- intake -->
+  <g filter="url(#smallShadow)">
+    <rect x="191" y="122" width="105" height="79" rx="17" fill="#dff2ef"/>
+  </g>
+  <path d="M214 147h23M214 156h38M214 165h29" stroke="#4d9d95" stroke-width="3" stroke-linecap="round"/>
+  <path d="M258 142v29M252 165l6 6 6-6" fill="none" stroke="#4d9d95" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="208" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356f6a">Hızlı yazma</text>
+
+  <!-- main arrow -->
+  <path d="M296 161 H323" fill="none" stroke="#6094ac" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="331,161 321,155 321,167" fill="#6094ac"/>
+
+  <!-- core database -->
+  <g filter="url(#shadow)">
+    <rect x="332" y="74" width="159" height="171" rx="24" fill="url(#core)"/>
+  </g>
+  <text x="361" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a75">Zaman Serisi</text>
+  <text x="376" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e748c">Veritabanı</text>
+
+  <!-- db cylinder -->
+  <ellipse cx="412" cy="143" rx="47" ry="13" fill="#5f9fc5"/>
+  <path d="M365 143v39c0 7 21 13 47 13s47-6 47-13v-39" fill="#8ec6dd"/>
+  <path d="M365 162c0 7 21 13 47 13s47-6 47-13M365 181c0 7 21 13 47 13s47-6 47-13" fill="none" stroke="#5f9fc5" stroke-width="1.5"/>
+  <ellipse cx="412" cy="143" rx="47" ry="13" fill="none" stroke="#4e8bb1" stroke-width="1.5"/>
+  <text x="382" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">UTC + Etiket</text>
+
+  <rect x="354" y="207" width="116" height="24" rx="12" fill="#ffffff" opacity="0.74"/>
+  <text x="367" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41687b">Alan • Zaman</text>
+
+  <!-- output arrows -->
+  <path d="M491 117 H514" fill="none" stroke="#6b9ca5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="522,117 512,112 512,122" fill="#6b9ca5"/>
+  <path d="M491 203 H514" fill="none" stroke="#6b9ca5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="522,203 512,198 512,208" fill="#6b9ca5"/>
+
+  <!-- right cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="523" y="81" width="89" height="72" rx="16" fill="#e4efff"/>
+    <rect x="523" y="169" width="89" height="72" rx="16" fill="#e8f4da"/>
+  </g>
+
+  <!-- partitions -->
+  <path d="M541 103h52M541 113h52M541 123h52" stroke="#709bc6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M553 98v30M571 98v30" stroke="#e4efff" stroke-width="2"/>
+  <text x="538" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466b94">Bölümleme</text>
+
+  <!-- downsampling -->
+  <path d="M542 191h45" fill="none" stroke="#78a05a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M547 184v14M558 187v11M569 181v17M580 190v8" stroke="#78a05a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M593 188v11M588 194l5 5 5-5" fill="none" stroke="#78a05a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="535" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#58763f">Özetleme</text>
+
+  <!-- timeline -->
+  <path d="M53 276 H588" fill="none" stroke="#b4cbd4" stroke-width="2"/>
+  <circle cx="118" cy="276" r="5" fill="#f0ae63"/>
+  <circle cx="247" cy="276" r="5" fill="#69aba3"/>
+  <circle cx="412" cy="276" r="6" fill="#578eb9"/>
+  <circle cx="567" cy="276" r="5" fill="#84aa62"/>
+  <text x="40" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738894">Ham veri</text>
+  <text x="206" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738894">Sıkıştırma</text>
+  <text x="371" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738894">Son 15 dk</text>
+  <text x="532" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738894">Trend</text>
+</svg>

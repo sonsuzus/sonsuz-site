@@ -10,6 +10,7 @@ tags:
   - c++
   - performans
 toc: true
+image: /img/arena-allocator-gecici-66.png
 ---
 
 Modern yazılımlarda performans sorunlarının önemli bir bölümü işlemciden değil, bellek tahsisinden doğar. Her geçici nesne için `malloc`, `new` ya da benzeri bir çağrı yapmak; ayırıcıyı kilitleme, uygun boş blok bulma ve parçalanmayı yönetme gibi ek maliyetler yaratır. Arena allocator yaklaşımı bu maliyeti dramatik biçimde azaltır: Büyük bir bellek bölgesi ayırır, küçük nesneleri bu bölge içinde sırayla yerleştirir ve iş bittiğinde hepsini tek hamlede temizler.
@@ -80,3 +81,6 @@ Arena allocator, nesnelerin farklı zamanlarda silinmesi gereken senaryolarda k�
 | Dosya, socket, mutex saran nesneler | Ek yönetim gerekli | Destructor ve kaynak kapatma gerekir |
 
 Özetle arena allocator, bellek yönetiminde “her nesneyi ayrı ayrı düzenlemek” yerine yaşam döngüsünü tasarlamayı öğretir. Geçici verinin sınırları netse, bu küçük mimari karar hem kodu sadeleştirir hem de kritik döngülerde gözle görülür hız kazandırır.
+
+![arena-allocator-gecici-66](/img/arena-allocator-gecici-66.svg)
+

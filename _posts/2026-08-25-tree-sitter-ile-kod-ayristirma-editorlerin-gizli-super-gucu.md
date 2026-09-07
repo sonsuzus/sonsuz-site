@@ -10,6 +10,7 @@ tags:
   - ast
   - programlama dilleri
 toc: true
+image: /img/tree-sitter-ile-46.png
 ---
 
 Bir kod editörünün yazarken hataları anında kırmızıyla işaretlemesi, fonksiyonları katlaması veya imlecin altındaki yapıyı seçmesi sihir değildir: arka planda kodu anlayan bir ayrıştırıcı çalışır. Tree-sitter, bu işi onlarca dil için hızlı, dayanıklı ve artımlı biçimde yapan açık kaynaklı bir ayrıştırma kütüphanesidir. Özellikle eksik, hatalı ya da henüz yazılmakta olan kodla başa çıkabilmesi onu modern editörler, analiz araçları ve geliştirici deneyimi projeleri için güçlü bir aday yapar.
@@ -25,6 +26,9 @@ Bir dilin gramerini kabaca $G = (N, T, P, S)$ ile ifade edebiliriz. Burada $N$ n
 | Regex ile tarama | Hızlı başlangıç, basit desenler | İç içe yapılar ve bağlam zorlaşır |
 | Geleneksel derleyici ayrıştırıcısı | Kesin sözdizimi denetimi | Hatalı/yarım kodda çoğunlukla durur |
 | Tree-sitter | Hata toleransı ve artımlı güncelleme | Gramer kurulumu öğrenme ister |
+
+![tree-sitter-ile-46](/img/tree-sitter-ile-46.svg)
+
 
 ## Tree-sitter'ı farklı kılan artımlı analiz
 

@@ -11,7 +11,11 @@ tags:
   - b+tree
   - indeksleme
 toc: true
+image: /img/b-tree-ve-85.png
 ---
+
+![b-tree-ve-85](/img/b-tree-ve-85.svg)
+
 
 Bir veritabanında milyonlarca kaydı bulmak, bellekte küçük bir dizide arama yapmaktan oldukça farklıdır. Klasik ikili arama ağaçları (BST), teoride zarif görünür: her düğümün en fazla iki çocuğu vardır ve dengeli bir yapıda arama maliyeti $O(\log_2 N)$ olur. Ancak disk ve SSD üzerinde çalışan veritabanları için asıl pahalı işlem karşılaştırma değil, sayfa okuma yani I/O işlemidir. İşte B-Tree ve B+Tree bu maliyeti dramatik biçimde düşürmek için sahneye çıkar.
 ``

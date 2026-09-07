@@ -9,6 +9,7 @@ tags:
   - yapay zeka
   - semantic search
 toc: true
+image: /img/vektor-veritabanlari-nasil-71.png
 ---
 
 Bir ürün kataloğunda “kırmızı spor ayakkabı” aramak kolaydır; ancak “yağmurlu havada şehir yürüyüşüne uygun hafif bir şey” demek, klasik anahtar kelime aramasını zorlar. Vektör veritabanları tam burada devreye girer: metin, görsel, ses veya davranış verisini anlamı temsil eden sayısal koordinatlara dönüştürür ve birbirine en yakın kayıtları milisaniyeler içinde bulur.
@@ -64,3 +65,6 @@ for item in results:
 Sistem önce sorguyu embedding'e dönüştürür, ANN indeksiyle adayları bulur, filtreleri uygular ve en alakalı sonuçları döndürür. Daha kaliteli sonuç için ilk 20 adayı bir **reranker** modele verip en iyi 5 sonucu yeniden sıralamak da yaygındır.
 
 Vektör veritabanları SQL'in rakibi değildir; çoğu zaman tamamlayıcısıdır. SQL kesin koşulları, vektör arama ise belirsiz insan niyetini yakalar. İkisini birlikte kullanmak, hem “fiyatı 2.000 TL altı” kadar net hem de “minimalist ve seyahat dostu” kadar insani aramalar üretir.
+
+![vektor-veritabanlari-nasil-71](/img/vektor-veritabanlari-nasil-71.svg)
+
