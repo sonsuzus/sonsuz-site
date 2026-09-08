@@ -10,6 +10,7 @@ tags:
   - veritabanı
   - veri yapıları
 toc: true
+image: /img/lsm-tree-nedir-57.png
 ---
 
 Modern uygulamalar saniyede binlerce olay, sipariş, metrik veya log üretiyor. Bu kadar yoğun yazma trafiğinde klasik B-Tree tabanlı yapıların disk üzerinde yaptığı rastgele güncellemeler pahalılaşabilir. LSM Tree (Log-Structured Merge Tree), yazmaları önce sıralı ve hızlı alanlara yönlendirip düzenleme işini sonraya bırakan veri yapısı ailesidir. RocksDB, LevelDB, Apache Cassandra ve birçok zaman serisi çözümünün performans hikâyesinde bu yaklaşım bulunur.
@@ -69,3 +70,6 @@ if memtable.size() >= LIMIT:
 Silme işlemleri de çoğu zaman kaydı hemen fiziksel olarak kaldırmaz. Bunun yerine **tombstone** adı verilen silme işareti yazılır; gerçek temizlik compaction sırasında yapılır. Böylece silme de hızlı yazma yolundan yararlanır.
 
 Özetle LSM Tree, yazma işlemini geciktirerek hızlandıran bir tasarımdır. Karşılığında compaction planlaması, disk alanı ve okuma optimizasyonu dikkat ister. Yazma ağırlıklı bir NoSQL sistemi tasarlarken asıl soru “LSM hızlı mı?” değildir; “iş yüküm, bu hızlı yazma ile gelen birleştirme maliyetini kaldırabilir mi?” olmalıdır.
+
+![lsm-tree-nedir-57](/img/lsm-tree-nedir-57.svg)
+

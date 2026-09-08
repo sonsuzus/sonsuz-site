@@ -10,7 +10,11 @@ tags:
   - python
   - güvenlik
   - apı
+image: /img/mcp-sunucusu-gelistirmek-67.png
 ---
+
+![mcp-sunucusu-gelistirmek-67](/img/mcp-sunucusu-gelistirmek-67.svg)
+
 
 Büyük dil modelleri metin üretmekte harikadır; fakat takviminize bakmak, veritabanından sipariş sorgulamak veya dosya oluşturmak gibi gerçek dünya işleri için araçlara ihtiyaç duyarlar. Model Context Protocol (MCP), modeller ile bu araçlar arasında standart, denetlenebilir ve güvenli bir köprü kurar. Bir MCP sunucusu geliştirirken amaç, modele sınırsız sistem yetkisi vermek değil; iyi tanımlanmış yetenekleri kontrollü biçimde sunmaktır.
 ``

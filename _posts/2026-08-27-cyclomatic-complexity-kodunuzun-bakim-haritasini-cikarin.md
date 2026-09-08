@@ -8,7 +8,11 @@ tags:
   - cyclomatic complexity
   - kod kalitesi
   - yazılım metrikleri
+image: /img/cyclomatic-complexity-kodunuzun-67.png
 ---
+
+![cyclomatic-complexity-kodunuzun-67](/img/cyclomatic-complexity-kodunuzun-67.svg)
+
 
 Bir fonksiyonun uzun olması her zaman karmaşık olduğu anlamına gelmez; asıl yorucu olan, kodun içinde kaç farklı karar yolunun saklandığıdır. Cyclomatic Complexity (döngüsel karmaşıklık), Thomas McCabe tarafından geliştirilen ve bir program parçasındaki bağımsız yürütme yollarını sayısallaştıran metriktir. Bu sayı yükseldikçe test senaryosu üretmek, davranışı anlamak ve güvenle değişiklik yapmak zorlaşır.
 ``

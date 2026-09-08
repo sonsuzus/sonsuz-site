@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - büyük dil modelleri
   - mixture of experts
+image: /img/mixture-of-experts-43.png
 ---
 
 Bir büyük dil modelini, her soruya cevap vermek için şirketin tüm çalışanlarını aynı toplantıya çağıran bir kurum gibi düşünebilirsiniz. Herkes katılır, herkes hesap yapar; fakat bu hem pahalı hem de yavaştır. **Mixture of Experts (MoE)** yaklaşımı ise doğru soruyu doğru uzman ekibe yönlendirir. Böylece model, çok büyük bir bilgi kapasitesine sahipken her kelime üretiminde bu kapasitenin yalnızca ilgili bölümünü çalıştırır.
@@ -32,6 +33,9 @@ Burada $f_e(x)$, seçilen uzmanın dönüşümüdür. Yaygın bir yapı olan **t
 | Hesaplama maliyeti | Daha öngörülebilir | Router ve iletişime bağlı |
 | Uzmanlaşma | Örtük olarak gelişir | Açık rota seçimiyle teşvik edilir |
 | Ana risk | Büyük modelin pahalı olması | Dengesiz uzman kullanımı |
+
+![mixture-of-experts-43](/img/mixture-of-experts-43.svg)
+
 
 MoE'nin önemli bir ayrıntısı, uzmanların kendi kendine kusursuz iş bölümü yapmamasıdır. Router sürekli aynı birkaç uzmanı seçerse, onlar aşırı yüklenir; diğerleri ise adeta ofiste kahve içip bekler. Eğitim sırasında bu sorunu azaltmak için **yük dengeleme kaybı** eklenir. Amaç, token trafiğinin uzmanlar arasında makul biçimde dağılmasıdır. Ayrıca her uzmana bir kapasite sınırı konabilir; sınırı aşan token'lar başka bir uzmana yönlendirilir veya geçici olarak düşürülür.
 

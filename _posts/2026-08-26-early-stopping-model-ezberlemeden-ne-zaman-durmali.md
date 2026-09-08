@@ -8,9 +8,13 @@ tags:
   - yapay zeka
   - makine öğrenmesi
   - early stopping
+image: /img/early-stopping-model-60.png
 ---
 
 Bir yapay zeka modelini eğitmek, sınava çalışan bir öğrenciyi izlemeye benzer: İlk günlerde temel kavramları öğrenir, sonra soruları daha iyi çözmeye başlar. Ancak öğrencinin yalnızca deneme sorularının cevaplarını ezberlemesi gerçek sınavda başarısızlığa yol açar. Makine öğrenmesindeki karşılığı **overfitting** ya da aşırı öğrenmedir. Early Stopping (erken durdurma), model henüz genelleme yeteneğini kaybetmeden eğitimi bitirerek bu tuzağa karşı kullanılan pratik ve güçlü bir stratejidir.
+
+![early-stopping-model-60](/img/early-stopping-model-60.svg)
+
 ``
 
 Temel fikir, eğitim başarısını tek başına yeterli kabul etmemektir. Veri genellikle eğitim, doğrulama ve test kümelerine ayrılır. Modelin parametreleri eğitim kümesinde güncellenir; doğrulama kümesi ise daha önce görülmemiş örneklerdeki performansı ölçen bir kontrol noktasıdır. Test kümesi, yalnızca süreç sonunda tarafsız raporlama için saklanmalıdır.

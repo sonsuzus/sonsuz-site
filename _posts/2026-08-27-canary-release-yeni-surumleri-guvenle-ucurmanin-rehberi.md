@@ -8,9 +8,13 @@ tags:
   - canary release
   - devops
   - ci/cd
+image: /img/canary-release-yeni-75.png
 ---
 
 Yeni bir sürümü herkesin önüne aynı anda koymak, yazılım dünyasındaki en heyecanlı ama en riskli düğmelerdendir. Canary Release yaklaşımı bu riski küçültür: Yeni sürüm önce trafiğin küçük bir bölümüne sunulur, metrikler izlenir ve her şey yolundaysa erişim kademeli biçimde genişletilir. Adını, zehirli gazları erkenden fark etmek için madenlerde kullanılan kanaryalardan alır. Buradaki kanarya ise cesur birkaç kullanıcı değil; kontrollü bir trafik dilimidir.
+
+
+![canary-release-yeni-75](/img/canary-release-yeni-75.svg)
 
 ``
 

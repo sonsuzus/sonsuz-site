@@ -10,7 +10,11 @@ tags:
   - analitik
   - sql
   - performans
+image: /img/columnar-database-mimarisi-45.png
 ---
+
+![columnar-database-mimarisi-45](/img/columnar-database-mimarisi-45.svg)
+
 
 Analitik sistemlerde asıl soru genellikle “hangi müşteriler?” değil, “milyonlarca kayıttan hangi eğilim ortaya çıkıyor?” olur. İşte columnar database, yani sütun bazlı veritabanı mimarisi, bu soruya hızla yanıt vermek için tasarlanmıştır. Satır bazlı sistemlerin tüm kaydı birlikte taşıyan yaklaşımına karşılık, veriyi sütun sütun organize eder.
 ``

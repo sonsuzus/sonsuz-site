@@ -9,9 +9,13 @@ tags:
   - class imbalance
   - veri bilimi
 toc: true
+image: /img/class-imbalance-azinlik-35.png
 ---
 
 Bir dolandırıcılık tespit veri setinde işlemlerin %99'u normal, yalnızca %1'i şüpheli olabilir. Model her kayda “normal” diyerek %99 doğruluk elde eder; fakat asıl yakalamamız gereken vakaları tamamen kaçırır. İşte **class imbalance** (sınıf dengesizliği), başarı metriğinin alkış aldığı ama ürünün başarısız olduğu bu yanıltıcı sahnenin adıdır. Sorun sadece veri sayısı değil, modelin eğitim sırasında çoğunluk sınıfının hatalarını daha sık görmesi ve kayıp fonksiyonunun bu sınıfa doğal olarak daha fazla ağırlık vermesidir.
+
+![class-imbalance-azinlik-35](/img/class-imbalance-azinlik-35.svg)
+
 ``
 
 ## Neden doğruluk tek başına yetmez?

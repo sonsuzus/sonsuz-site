@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cce9f7"/>
+      <stop offset="100%" stop-color="#9fd3ec"/>
+    </linearGradient>
+    <linearGradient id="delta" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9d0fa"/>
+      <stop offset="100%" stop-color="#b8a9ed"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#58708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="79" cy="41" r="53" fill="#d9f0e8" opacity="0.45"/>
+  <circle cx="590" cy="274" r="77" fill="#dce7fb" opacity="0.5"/>
+
+  <text x="30" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516c">Delta Lake • Güvenilir Veri Gölü</text>
+
+  <!-- Source lake -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="65" width="142" height="185" rx="22" fill="#edf9fd" stroke="#b4dce9"/>
+    <rect x="43" y="107" width="112" height="123" rx="17" fill="url(#lake)"/>
+    <path d="M43 130 C59 122, 71 139, 89 130 S119 121, 155 131" fill="none" stroke="#ecfbff" stroke-width="3" opacity="0.85"/>
+    <path d="M43 159 C61 151, 73 168, 90 159 S121 150, 155 160" fill="none" stroke="#ecfbff" stroke-width="3" opacity="0.75"/>
+    <path d="M43 189 C62 181, 76 198, 94 189 S124 180, 155 190" fill="none" stroke="#ecfbff" stroke-width="3" opacity="0.7"/>
+  </g>
+  <text x="99" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285770">Veri Gölü</text>
+
+  <g filter="url(#soft)">
+    <rect x="52" y="120" width="37" height="45" rx="7" fill="#fffdfa"/>
+    <path d="M78 120 L89 131 L78 131 Z" fill="#f3c98b"/>
+    <text x="70.5" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6b5a42">CSV</text>
+    <rect x="101" y="139" width="37" height="45" rx="7" fill="#fffdfa"/>
+    <path d="M127 139 L138 150 L127 150 Z" fill="#8dc7d5"/>
+    <text x="119.5" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#496975">Parquet</text>
+  </g>
+  <text x="99" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557388">Dosyalar</text>
+
+  <!-- Arrow 1 -->
+  <path d="M180 157 L222 157" stroke="#7396ae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="222,157 212,151 212,163" fill="#7396ae"/>
+  <text x="201" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#5e788d">yazma</text>
+
+  <!-- Delta central -->
+  <g filter="url(#shadow)">
+    <rect x="232" y="57" width="177" height="201" rx="25" fill="#faf9ff" stroke="#cabff0" stroke-width="1.5"/>
+    <path d="M320 82 L375 112 L354 184 L320 219 L286 184 L265 112 Z" fill="url(#delta)" opacity="0.96"/>
+    <path d="M320 101 L353 120 L342 165 L320 192 L298 165 L287 120 Z" fill="#f8f5ff" opacity="0.78"/>
+    <path d="M320 112 L334 158 L320 177 L306 158 Z" fill="#8c7bd0"/>
+    <path d="M274 205 Q320 230 366 205" fill="none" stroke="#a79add" stroke-width="2" opacity="0.65"/>
+  </g>
+  <text x="320" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514381">Delta Lake</text>
+  <text x="320" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655b8e">İşlem Günlüğü</text>
+  <text x="320" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8175a8">_delta_log</text>
+
+  <!-- top incoming ETL -->
+  <g filter="url(#soft)">
+    <rect x="250" y="278" width="140" height="27" rx="13" fill="#dff3e4" stroke="#b8dcbf"/>
+  </g>
+  <text x="320" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e7350">ETL • Atomik Taahhüt</text>
+  <path d="M320 275 L320 264" stroke="#70a47d" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="320,261 315,269 325,269" fill="#70a47d"/>
+
+  <!-- Arrow 2 -->
+  <path d="M419 157 L454 157" stroke="#7396ae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="454,157 444,151 444,163" fill="#7396ae"/>
+
+  <!-- Outcome -->
+  <g filter="url(#shadow)">
+    <rect x="464" y="55" width="148" height="204" rx="22" fill="#fffefd" stroke="#d5e2bf"/>
+  </g>
+  <text x="538" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#52683b">Tutarlı Tablo</text>
+
+  <!-- Version timeline -->
+  <path d="M491 112 L580 112" stroke="#a7bf91" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="496" cy="112" r="8" fill="#d4e9b9" stroke="#83a661"/>
+  <circle cx="535" cy="112" r="8" fill="#c7ddf5" stroke="#719ac4"/>
+  <circle cx="576" cy="112" r="8" fill="#d6c9f3" stroke="#8f7ac3"/>
+  <text x="496" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#58704a">v0</text>
+  <text x="535" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#58704a">v1</text>
+  <text x="576" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#58704a">v2</text>
+  <text x="535" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#657c52">Zaman Yolculuğu</text>
+
+  <!-- ACID cards -->
+  <g filter="url(#soft)">
+    <rect x="480" y="169" width="53" height="31" rx="9" fill="#e5f2fc"/>
+    <rect x="543" y="169" width="53" height="31" rx="9" fill="#f3e9cf"/>
+    <rect x="480" y="211" width="53" height="31" rx="9" fill="#e9e1fa"/>
+    <rect x="543" y="211" width="53" height="31" rx="9" fill="#dff2e7"/>
+  </g>
+  <text x="506.5" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7194">A</text>
+  <text x="569.5" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#897036">C</text>
+  <text x="506.5" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#705b9e">I</text>
+  <text x="569.5" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#417b59">D</text>
+</svg>

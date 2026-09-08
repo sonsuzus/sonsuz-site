@@ -9,6 +9,7 @@ tags:
   - guardrails
   - llm güvenliği
 toc: true
+image: /img/yapay-zeka-guardrail-88.png
 ---
 
 Bir yapay zeka uygulamasının etkileyici cevaplar üretmesi tek başına başarı değildir; doğru bağlamda, güvenli sınırlar içinde ve tutarlı kalitede çalışması gerekir. Guardrail sistemleri, büyük dil modellerinin (LLM) girişlerini, araç kullanımını ve çıktılarını denetleyen koruyucu katmanlardır. Amaç modeli “sansürlemek” değil; kullanıcı, kurum verisi ve iş süreçleri için öngörülebilir bir çalışma alanı tanımlamaktır.
@@ -80,3 +81,6 @@ $$Precision = \frac{TP}{TP+FP}, \qquad Recall = \frac{TP}{TP+FN}$$
 Aşırı katı bir sistem yüksek güvenlik sağlarken meşru talepleri engelleyebilir. Fazla gevşek sistem ise riskli içeriği kaçırır. Bu nedenle politikaları sürümleyin, deneme veri setleri oluşturun ve her politika değişikliğini saldırı örnekleriyle test edin.
 
 Son olarak, guardrail’i yalnızca modelin çevresindeki bir duvar gibi görmeyin. Loglama, kullanıcı geri bildirimi, insan onayı ve en az yetki ilkesiyle birleştiğinde guardrail; yapay zeka ürününüzün fren sistemi değil, güvenle hızlanmasını sağlayan yol tutuş sistemidir.
+
+![yapay-zeka-guardrail-88](/img/yapay-zeka-guardrail-88.svg)
+

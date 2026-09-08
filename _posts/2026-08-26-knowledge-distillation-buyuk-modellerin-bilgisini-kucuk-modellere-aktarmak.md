@@ -9,6 +9,7 @@ tags:
   - derin öğrenme
   - knowledge distillation
 toc: true
+image: /img/knowledge-distillation-buyuk-48.png
 ---
 
 Büyük dil ve görüntü modelleri etkileyici sonuçlar üretir; ancak çoğu zaman pahalı, yavaş ve cihaz üzerinde çalıştırılamayacak kadar hantaldırlar. **Knowledge Distillation** (bilgi damıtma), büyük bir *öğretmen* modelin öğrendiği davranışları daha küçük bir *öğrenci* modele aktararak bu sorunu hedefler. Amaç öğretmeni birebir kopyalamak değil, onun karar verme ipuçlarını sıkıştırılmış bir biçimde öğrencide yaşatmaktır.
@@ -37,6 +38,9 @@ Burada $\mathcal{L}_{CE}$ gerçek etiketler için çapraz entropi kaybını, $\m
 | Normal eğitim | Sert, tek doğru etiket | Basit kurulum | Sınıflar arası benzerliği kaçırır |
 | Knowledge Distillation | Etiket + öğretmen dağılımı | Küçük modelde daha iyi doğruluk | Önceden eğitilmiş öğretmen gerekir |
 | Quantization | Sayısal hassasiyeti azaltma | Bellek ve hız kazancı | Tek başına bilgiyi iyileştirmez |
+
+![knowledge-distillation-buyuk-48](/img/knowledge-distillation-buyuk-48.svg)
+
 
 ## Basit bir PyTorch iskeleti
 

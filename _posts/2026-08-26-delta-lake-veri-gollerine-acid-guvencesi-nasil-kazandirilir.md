@@ -10,7 +10,11 @@ tags:
   - acıd
   - apache spark
   - data lake
+image: /img/delta-lake-veri-81.png
 ---
+
+![delta-lake-veri-81](/img/delta-lake-veri-81.svg)
+
 
 Veri gölleri; CSV, JSON, Parquet ve log dosyaları gibi büyük hacimli verileri ekonomik biçimde saklamak için harikadır. Ancak klasik bir veri gölü, aynı tabloya eşzamanlı yazan işler, yarıda kalan yüklemeler veya değişen şemalar karşısında kolayca karmaşaya dönüşebilir. Delta Lake, açık kaynaklı depolama katmanıyla bu esnek dünyaya veri ambarı disiplinini getirir: ACID işlemleri, sürüm geçmişi, şema denetimi ve güvenilir güncellemeler.
 ``

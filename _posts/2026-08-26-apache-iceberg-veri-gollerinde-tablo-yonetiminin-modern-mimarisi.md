@@ -9,6 +9,7 @@ tags:
   - veri gölü
   - büyük veri
 toc: true
+image: /img/apache-iceberg-veri-74.png
 ---
 
 Veri gölleri, ham veriyi düşük maliyetle saklamak için harikadır; fakat klasik dosya klasörü yaklaşımı büyüdükçe yönetim kabusa dönüşebilir. Hangi Parquet dosyası güncel, silinen kayıt gerçekten silindi mi, iki farklı işlem aynı anda yazarsa ne olur? Apache Iceberg, bu sorulara modern bir tablo katmanı ekleyerek veri gölünü SQL dünyasının güvenilirliğiyle buluşturur.
@@ -37,6 +38,9 @@ Klasik Hive tarzı tablolarda bölümleme çoğunlukla klasör adına bağlıdı
 | Bölümleme | Klasör yapısına bağımlıdır | Gizli bölümleme desteklenir |
 | Zaman yolculuğu | Yerleşik değildir | Snapshot üzerinden yerleşiktir |
 | Dosya eleme | Sınırlı olabilir | Manifest istatistikleriyle güçlüdür |
+
+![apache-iceberg-veri-74](/img/apache-iceberg-veri-74.svg)
+
 
 ## Snapshot mantığı ve ACID işlemler
 

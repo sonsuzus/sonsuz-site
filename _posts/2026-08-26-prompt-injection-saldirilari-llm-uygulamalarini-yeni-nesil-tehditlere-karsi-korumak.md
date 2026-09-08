@@ -9,6 +9,7 @@ tags:
   - llm
   - prompt ınjection
 toc: true
+image: /img/prompt-injection-saldirilari-43.png
 ---
 
 Büyük dil modelleri (LLM), doğal dili hem arayüz hem de komut kanalı olarak kullandığı için klasik yazılımlardan farklı bir saldırı yüzeyine sahiptir. Prompt injection, saldırganın modele verilen güvenilir talimatları gölgeleyerek hedef davranışı değiştirmeye çalışmasıdır. Bir sohbet botunun gizli yönergelerini açıklatmak, bir belge özetleyicisine yanlış sonuç ürettirmek veya araç kullanan bir ajana yetkisiz işlem yaptırmak bu tehdidin tipik sonuçlarıdır.
@@ -30,6 +31,9 @@ Burada olasılık, kötü niyetli içeriğe maruz kalmayı; etki, yanlış cevab
 | Hedef | Sohbet akışını değiştirmek | Modelin işlediği harici içeriği zehirlemek |
 | Örnek etki | Politika dışı yanıt istemek | Özetleme sırasında gizli veriyi dışarı aktarmaya çalışmak |
 | Öncelikli savunma | Girdi politikaları ve izolasyon | Kaynak güveni, etiketleme, araç onayı |
+
+![prompt-injection-saldirilari-43](/img/prompt-injection-saldirilari-43.svg)
+
 
 ## En kritik yanlış varsayım: “Prompt güvenlik duvarıdır”
 

@@ -9,9 +9,13 @@ tags:
   - veritabanı
   - eşzamanlılık
 toc: true
+image: /img/mvcc-veritabanlarinda-kilit-34.png
 ---
 
 Bir veritabanında aynı müşteri kaydını yüzlerce kullanıcının aynı anda okumak ve güncellemek istediğini düşünün. Geleneksel kilitleme yaklaşımında bir yazma işlemi, okuyucuları bekletebilir; okuyucular da yazarı geciktirebilir. MVCC (Multi-Version Concurrency Control), yani Çok Sürümlü Eşzamanlılık Denetimi, bu trafik sıkışıklığını azaltmak için verinin tek bir kopyası yerine zaman damgalı birden fazla mantıksal sürümünü kullanır. PostgreSQL, MySQL InnoDB ve SQLite gibi sistemlerin farklı biçimlerde kullandığı bu fikir, yüksek eşzamanlılığın temel araçlarından biridir.
+
+![mvcc-veritabanlarinda-kilit-34](/img/mvcc-veritabanlarinda-kilit-34.svg)
+
 ``
 
 MVCC'nin ana fikri şaşırtıcı derecede sezgiseldir: Okuyucu, işlem başladığı anda veritabanının tutarlı bir fotoğrafını görür; yazar ise satırı yerinde ezmek yerine yeni bir sürüm üretir. Böylece uzun süren bir raporlama sorgusu, sipariş durumunu güncelleyen uygulamayı çoğu durumda durdurmaz. Elbette bu bir zaman makinesi değildir: Her işlem, **izolasyon seviyesi** tarafından izin verilen ölçüde geçmişin tutarlı bir görünümünü okur.

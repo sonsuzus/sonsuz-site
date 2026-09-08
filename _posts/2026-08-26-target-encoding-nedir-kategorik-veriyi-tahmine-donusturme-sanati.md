@@ -9,7 +9,11 @@ tags:
   - özellik mühendisliği
   - target encoding
 toc: true
+image: /img/target-encoding-nedir-75.png
 ---
+
+![target-encoding-nedir-75](/img/target-encoding-nedir-75.svg)
+
 
 Kategorik veriler, makine öğrenmesi projelerinin görünmez kahramanlarıdır: şehir, ürün kategorisi, kampanya kodu, müşteri segmenti veya film türü gibi alanlar çoğu zaman tahmin gücünün önemli kısmını taşır. Ancak modeller metin etiketlerini doğrudan anlayamaz. Target encoding, kategorileri hedef değişkenle olan ilişkilerine göre sayısal hale getirerek bu sorunu güçlü ve pratik biçimde çözer.
 ``

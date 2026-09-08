@@ -11,9 +11,13 @@ tags:
   - inference
   - performans
 toc: true
+image: /img/speculative-decoding-nedir-73.png
 ---
 
 Büyük dil modelleri etkileyici metinler üretirken her token için devasa hesaplamalar yapar. Bu durum, özellikle uzun yanıtlar ve eşzamanlı kullanıcılar söz konusu olduğunda gecikmeyi büyütür. Speculative decoding (spekülatif çözümleme), kaliteyi belirgin biçimde düşürmeden üretimi hızlandırmak için küçük ve hızlı bir modelin yaptığı tahminleri büyük modelle topluca doğrulayan yaratıcı bir çıkarım tekniğidir.
+
+![speculative-decoding-nedir-73](/img/speculative-decoding-nedir-73.svg)
+
 ``
 ## Temel fikir: Önce taslak, sonra denetim
 

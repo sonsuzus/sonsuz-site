@@ -9,7 +9,11 @@ tags:
   - feature engineering
   - veri bilimi
 toc: true
+image: /img/feature-engineering-stratejileri-20.png
 ---
+
+![feature-engineering-stratejileri-20](/img/feature-engineering-stratejileri-20.svg)
+
 
 Makine öğrenmesinde model seçmek çoğu zaman sahnenin en parlak yıldızıdır; ancak performansı belirleyen görünmez kahraman genellikle özellik mühendisliğidir. Feature engineering, ham verideki bilgiyi modelin daha kolay anlayacağı sayısal, anlamlı ve tahmin gücü yüksek değişkenlere dönüştürme sanatıdır. İyi hazırlanmış özellikler, basit bir modeli bile güçlü hale getirebilir; kötü özellikler ise en iddialı algoritmayı bile şaşırtabilir.
 

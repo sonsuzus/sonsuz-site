@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f1f9f1"/>
+    </linearGradient>
+    <linearGradient id="server" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8ebff"/>
+      <stop offset="1" stop-color="#dff5e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60748a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60748a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="91" cy="37" r="76" fill="#dcefff" opacity="0.55"/>
+  <circle cx="578" cy="286" r="108" fill="#dff4df" opacity="0.55"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536a">Güvenli MCP Yetki Akışı</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718197">Tanımlı yetenekler • doğrulama • denetim</text>
+
+  <!-- Host -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="103" width="120" height="106" rx="18" fill="#fffdf9"/>
+    <rect x="40" y="119" width="42" height="42" rx="13" fill="#e7dcff"/>
+    <circle cx="61" cy="135" r="8" fill="#8b74bd"/>
+    <path d="M48 154 C49 144 73 144 74 154" fill="none" stroke="#8b74bd" stroke-width="3" stroke-linecap="round"/>
+    <text x="93" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405069">Host</text>
+    <text x="93" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728097">Kullanıcı</text>
+    <rect x="40" y="176" width="92" height="17" rx="8.5" fill="#f3effc"/>
+    <text x="53" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#725d9c">Yapay zekâ</text>
+  </g>
+
+  <!-- arrow 1 -->
+  <path d="M154 155 H183" fill="none" stroke="#8295aa" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="183,155 175,150 175,160" fill="#8295aa"/>
+
+  <!-- Client -->
+  <g filter="url(#shadow)">
+    <rect x="191" y="111" width="110" height="90" rx="18" fill="#ffffff"/>
+    <rect x="207" y="127" width="35" height="35" rx="10" fill="#d8f1f2"/>
+    <path d="M217 139 H232 M217 146 H228 M217 153 H230" stroke="#438d94" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="251" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405069">Client</text>
+    <text x="207" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718197">Bağlantı yönetimi</text>
+  </g>
+
+  <!-- arrow 2 -->
+  <path d="M307 155 H335" fill="none" stroke="#8295aa" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="335,155 327,150 327,160" fill="#8295aa"/>
+
+  <!-- MCP Server -->
+  <g filter="url(#shadow)">
+    <rect x="343" y="75" width="151" height="161" rx="22" fill="url(#server)" stroke="#b7d9d8" stroke-width="1.2"/>
+    <rect x="359" y="91" width="119" height="29" rx="11" fill="#ffffff" opacity="0.88"/>
+    <path d="M371 101 L379 96 L387 101 V109 C387 114 383 117 379 119 C375 117 371 114 371 109 Z" fill="#54a77f"/>
+    <path d="M375 106 L378 109 L384 102" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="397" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356154">MCP Sunucusu</text>
+
+    <rect x="359" y="130" width="119" height="25" rx="9" fill="#fdfefd"/>
+    <text x="371" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6670">Şema doğrulama</text>
+    <circle cx="463" cy="142" r="6" fill="#78b998"/>
+    <path d="M460 142 L462 145 L467 138" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="359" y="164" width="119" height="25" rx="9" fill="#fdfefd"/>
+    <text x="371" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6670">Oturum kimliği</text>
+    <circle cx="463" cy="176" r="6" fill="#77a8d9"/>
+    <circle cx="463" cy="174" r="2.2" fill="#fff"/>
+    <path d="M459.5 180 C460 176.5 466 176.5 466.5 180" fill="#fff"/>
+
+    <rect x="359" y="198" width="119" height="25" rx="9" fill="#fdfefd"/>
+    <text x="371" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6670">En az ayrıcalık</text>
+    <path d="M458 216 V207 M458 207 L454 211 M458 207 L462 211" fill="none" stroke="#d08a54" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- branches -->
+  <path d="M501 155 H514 V94 H527" fill="none" stroke="#8295aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="527,94 519,89 519,99" fill="#8295aa"/>
+  <path d="M501 155 H527" fill="none" stroke="#8295aa" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="527,155 519,150 519,160" fill="#8295aa"/>
+  <path d="M501 155 H514 V216 H527" fill="none" stroke="#8295aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="527,216 519,211 519,221" fill="#8295aa"/>
+
+  <!-- Catalog cards -->
+  <g filter="url(#soft)">
+    <rect x="535" y="67" width="79" height="54" rx="14" fill="#fff7ea"/>
+    <circle cx="552" cy="87" r="10" fill="#f2b36c"/>
+    <path d="M548 87 H556 M552 83 V91" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="568" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#735a43">Araçlar</text>
+    <text x="545" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92765a">Eylem</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="535" y="128" width="79" height="54" rx="14" fill="#edf5ff"/>
+    <circle cx="552" cy="148" r="10" fill="#73a9df"/>
+    <path d="M548 145 H556 M548 149 H556 M548 153 H553" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="568" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466883">Kaynak</text>
+    <text x="545" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66839b">Bağlam</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="535" y="189" width="79" height="54" rx="14" fill="#f2edff"/>
+    <circle cx="552" cy="209" r="10" fill="#9d87d0"/>
+    <path d="M548 205 H556 M548 209 H554 M548 213 H552" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="568" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#62517f">İstem</text>
+    <text x="545" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#816fa0">Şablon</text>
+  </g>
+
+  <!-- Audit strip -->
+  <g filter="url(#soft)">
+    <rect x="109" y="262" width="410" height="35" rx="15" fill="#ffffff" opacity="0.93"/>
+    <circle cx="133" cy="279" r="10" fill="#dcefe1"/>
+    <path d="M129 279 L132 282 L137 276" fill="none" stroke="#4a9871" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="151" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49665b">Denetim kaydı</text>
+    <path d="M255 272 V287" stroke="#d7e1e2" stroke-width="1"/>
+    <text x="272" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64788a">Hız sınırı</text>
+    <path d="M365 272 V287" stroke="#d7e1e2" stroke-width="1"/>
+    <text x="382" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64788a">Kullanıcı onayı</text>
+  </g>
+</svg>

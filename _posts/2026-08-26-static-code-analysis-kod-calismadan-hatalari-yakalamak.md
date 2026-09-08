@@ -10,6 +10,7 @@ tags:
   - güvenlik
   - linting
   - cı/cd
+image: /img/static-code-analysis-42.png
 ---
 
 Bir uygulamayı çalıştırmadan önce onun hakkında ne kadar çok şey öğrenebiliriz? Static Code Analysis (statik kod analizi), kaynak kodu derleme ya da çalıştırma aşamasına ihtiyaç duymadan inceleyerek olası hataları, standart ihlallerini ve güvenlik risklerini bulmaya çalışan yöntemlerin genel adıdır. Kısacası, kodunuzun içine el feneri tutar: Her gölge gerçek bir hata değildir ama araştırmaya değer olabilir.
@@ -60,3 +61,6 @@ function findUser(db, username) {
 Bu araçlardan verim almak için onları geliştiricinin düşmanı değil, hızlı geri bildirim sağlayan ekip arkadaşı olarak konumlandırın. IDE eklentileriyle anlık uyarı alın; CI/CD hattında ise kritik güvenlik kurallarını “build fail” koşulu yapın. Ancak her uyarıyı körü körüne hata kabul etmeyin. Statik analiz, programın niyetini her zaman tam anlayamaz ve **false positive** üretebilir. Ölçülebilir bir oranla düşünürsek, doğruluk kabaca $Precision = TP / (TP + FP)$ biçiminde ifade edilir; burada $TP$ doğru, $FP$ yanlış pozitif bulgulardır.
 
 Başlangıç için küçük bir kural seti seçin: kullanılmayan değişkenler, gizli anahtarların repoya eklenmesi, tehlikeli API kullanımı ve karmaşık fonksiyonlar. Ardından mevcut teknik borcu tek seferde kapatmaya çalışmak yerine, yeni eklenen kod için kalite eşiği koyun. Böylece statik analiz, gürültülü bir alarm sistemi olmaktan çıkar; kod tabanınızın sürekli çalışan güvenlik kamerasına dönüşür.
+
+![static-code-analysis-42](/img/static-code-analysis-42.svg)
+

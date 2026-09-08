@@ -9,6 +9,7 @@ tags:
   - snapshot isolation
   - eşzamanlılık
 toc: true
+image: /img/snapshot-isolation-eszamanlilikta-19.png
 ---
 
 Bir veritabanında aynı anda yüzlerce kullanıcının işlem yaptığını düşünün: biri bakiyesini güncellerken diğeri rapor alıyor, üçüncüsü aynı ürünü satın almaya çalışıyor. Snapshot Isolation (SI), her işleme verinin tutarlı bir “anlık görüntüsünü” vererek bu karmaşayı yönetmeye yardımcı olan izolasyon seviyesidir. Okuyucuların yazarları beklememesi sayesinde özellikle yoğun okuma yüklerinde oldukça akıcı bir deneyim sunar.
@@ -33,6 +34,9 @@ Bu yaklaşım çoğunlukla **MVCC** (Multi-Version Concurrency Control) ile uygu
 | Okuma-yazma bekleşmesi | Değişken | Genellikle düşük | Daha yüksek olabilir |
 | Write skew riski | Var | Var | Yok |
 | Performans maliyeti | Düşük | Dengeli | Görece yüksek |
+
+![snapshot-isolation-eszamanlilikta-19](/img/snapshot-isolation-eszamanlilikta-19.svg)
+
 
 ## Çatışma anında ne olur?
 

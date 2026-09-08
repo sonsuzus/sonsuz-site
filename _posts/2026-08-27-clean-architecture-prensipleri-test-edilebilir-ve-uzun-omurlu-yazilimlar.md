@@ -9,9 +9,13 @@ tags:
   - yazılım mimarisi
   - test edilebilirlik
 toc: true
+image: /img/clean-architecture-prensipleri-98.png
 ---
 
 Bir yazılım projesinin en pahalı kısmı çoğu zaman ilk sürümünü geliştirmek değildir; asıl maliyet, değişen iş kurallarına ve yeni ihtiyaçlara yıllar boyunca uyum sağlamaktır. Clean Architecture, kodu yalnızca bugün çalışacak şekilde değil, yarın değiştirilebilecek şekilde tasarlamayı hedefler. Temel fikir basittir: İş kuralları; veritabanı, arayüz, framework veya dış servis gibi ayrıntılara bağımlı olmamalıdır.
+
+![clean-architecture-prensipleri-98](/img/clean-architecture-prensipleri-98.svg)
+
 ``
 
 Clean Architecture yaklaşımı Robert C. Martin tarafından yaygınlaştırılmıştır. Soğan, Hexagonal Architecture ve Ports-and-Adapters gibi mimari yaklaşımlarla akrabadır. Hepsinin ortak hedefi, bağımlılıkların merkezdeki iş kurallarına doğru akmasıdır. Böylece bir web framework'ünü değiştirmek, PostgreSQL yerine başka bir veritabanına geçmek ya da komut satırı arayüzü eklemek, domain mantığını altüst etmez.

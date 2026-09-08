@@ -8,7 +8,11 @@ tags:
   - veri yapıları
   - algoritmalar
   - fonksiyonel programlama
+image: /img/persistent-veri-yapilari-36.png
 ---
+
+![persistent-veri-yapilari-36](/img/persistent-veri-yapilari-36.svg)
+
 
 Bir diziyi güncellediğinizde eski hâlinin de erişilebilir kaldığını hayal edin: hata ayıklamada zaman yolculuğu, sürüm kontrolünde anlık geri alma ve eşzamanlı işlemlerde daha güvenli okuma mümkün olur. Persistent (kalıcı) veri yapıları tam olarak bunu sağlar. Buradaki “kalıcı” ifadesi diske yazılmayı değil, bir güncelleme sonrasında önceki mantıksal sürümlerin yaşamaya devam etmesini anlatır.
 ``

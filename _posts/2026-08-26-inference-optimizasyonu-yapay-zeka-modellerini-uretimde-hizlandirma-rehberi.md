@@ -8,6 +8,7 @@ tags:
   - yapay zeka
   - inference
   - model optimizasyonu
+image: /img/inference-optimizasyonu-yapay-28.png
 ---
 
 Bir yapay zeka modelini eğitmek, maratonu bitirmek gibidir; inference ise her kullanıcı isteğinde yeniden başlayan sprinttir. Üretimde kullanıcılar modelinizin kaç gün eğitildiğiyle değil, yanıtın ne kadar hızlı geldiği, ne kadar maliyet oluşturduğu ve yoğun trafikte ne kadar kararlı kaldığıyla ilgilenir. Inference optimizasyonu; gecikmeyi düşürmek, saniyedeki istek sayısını artırmak ve donanım kaynaklarını daha verimli kullanmak için model, çalışma zamanı ve altyapı katmanlarını birlikte iyileştirme disiplinidir.
@@ -57,3 +58,6 @@ print(outputs.logits.shape)
 Model grafiğini derlemek de önemli bir adımdır. TensorRT, ONNX Runtime veya `torch.compile`, işlemleri birleştirebilir, kernel seçimlerini iyileştirebilir ve gereksiz bellek kopyalarını azaltabilir. Buna karşılık derleme süresi, dinamik giriş şekilleri ve hata ayıklama karmaşıklığı operasyonel maliyettir. Her model için aynı araç kazanmaz; profil verisi karar vermelidir.
 
 Son olarak, optimizasyon bir yarış değil ölçüm döngüsüdür: gerçekçi trafik örnekleriyle benchmark alın, p50/p95/p99 gecikmelerini izleyin, kalite metriklerini koruyun ve değişiklikleri kademeli yayınlayın. En hızlı model, yalnızca laboratuvarda değil; yoğun trafikte, kabul edilebilir maliyetle ve güvenilir biçimde yanıt veren modeldir.
+
+![inference-optimizasyonu-yapay-28](/img/inference-optimizasyonu-yapay-28.svg)
+

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="snap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff0ff"/>
+      <stop offset="1" stop-color="#cfe5fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7892a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7892a5" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536a">Snapshot Isolation</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8290">Tutarlı anlık görüntü ile eşzamanlı okuma</text>
+
+  <line x1="60" y1="79" x2="583" y2="79" stroke="#9db6c4" stroke-width="2"/>
+  <polygon points="588,79 579,74 579,84" fill="#7192a4"/>
+  <circle cx="153" cy="79" r="5" fill="#78a9cf"/>
+  <circle cx="318" cy="79" r="5" fill="#5eb893"/>
+  <circle cx="488" cy="79" r="5" fill="#e79478"/>
+  <text x="122" y="67" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587282">Başlangıç</text>
+  <text x="283" y="67" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587282">Okuma</text>
+  <text x="461" y="67" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587282">Yeni commit</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="109" width="150" height="167" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="49" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5a6d">MVCC sürümleri</text>
+
+  <rect x="48" y="153" width="110" height="27" rx="9" fill="#d9edf9"/>
+  <circle cx="63" cy="166.5" r="6" fill="#78a9cf"/>
+  <text x="76" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456375">v1 · commit</text>
+
+  <rect x="48" y="190" width="110" height="27" rx="9" fill="#dff3e9"/>
+  <circle cx="63" cy="203.5" r="6" fill="#5eb893"/>
+  <text x="76" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456375">v2 · commit</text>
+
+  <rect x="48" y="227" width="110" height="27" rx="9" fill="#fde3da"/>
+  <circle cx="63" cy="240.5" r="6" fill="#e79478"/>
+  <text x="76" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b5a52">v3 · sonra</text>
+
+  <path d="M179 190 C196 190 198 190 211 190" fill="none" stroke="#759cac" stroke-width="2"/>
+  <polygon points="217,190 208,185 208,195" fill="#759cac"/>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="113" width="205" height="159" rx="22" fill="url(#snap)" stroke="#b7d6e9"/>
+  </g>
+  <circle cx="253" cy="147" r="18" fill="#ffffff" filter="url(#soft)"/>
+  <path d="M246 147 L251 152 L261 141" fill="none" stroke="#55a781" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="280" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365b70">İşlem T1</text>
+  <text x="280" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547284">Kendi zaman kapsülü</text>
+
+  <rect x="241" y="181" width="159" height="49" rx="12" fill="#ffffff" opacity="0.9"/>
+  <text x="259" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3b6378">Görünür: v1, v2</text>
+  <text x="259" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8594">v3 görünmez</text>
+  <text x="249" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e778b">Tutarlı okuma</text>
+
+  <path d="M424 188 C441 188 446 160 461 160" fill="none" stroke="#759cac" stroke-width="2"/>
+  <polygon points="467,160 458,155 459,165" fill="#759cac"/>
+
+  <g filter="url(#shadow)">
+    <rect x="468" y="108" width="143" height="79" rx="17" fill="#fffdfb"/>
+  </g>
+  <circle cx="493" cy="137" r="13" fill="#ffe0d5"/>
+  <path d="M487 137 L499 137 M495 133 L499 137 L495 141" fill="none" stroke="#c8755d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="516" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76574e">Yazar T2</text>
+  <text x="491" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7066">Yeni v3 commit</text>
+
+  <path d="M514 188 L514 207" fill="none" stroke="#c8a08f" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="514,213 509,204 519,204" fill="#c8a08f"/>
+
+  <g filter="url(#soft)">
+    <rect x="447" y="217" width="164" height="59" rx="16" fill="#fff1ea"/>
+  </g>
+  <circle cx="470" cy="246" r="11" fill="#f6b49e"/>
+  <path d="M470 239 L470 248 M470 253 L470 254" stroke="#8d5548" stroke-width="2" stroke-linecap="round"/>
+  <text x="491" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#755249">Aynı satır yazısı</text>
+  <text x="491" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7066">Çatışma · yeniden dene</text>
+
+  <text x="29" y="301" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627d89">Okuyucular beklemez</text>
+  <circle cx="167" cy="297" r="3" fill="#93b9a7"/>
+  <text x="179" y="301" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627d89">Write skew riski sürer</text>
+  <circle cx="351" cy="297" r="3" fill="#93b9a7"/>
+  <text x="363" y="301" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627d89">Kritik kural: Serializable</text>
+</svg>
