@@ -9,6 +9,7 @@ tags:
   - git bisect
   - hata ayıklama
 toc: true
+image: /img/git-bisect-hatayi-81.png
 ---
 
 Bir projenin dün çalışan, bugün ise gizemli biçimde çöken bir sürümünü düşünün. Yüzlerce commit arasından “suçlu” değişikliği tek tek incelemek hem sabır hem de kahve tüketimi gerektirir. `git bisect`, bu işi ikili arama algoritmasıyla otomatikleştirir: Bildiğiniz iyi ve kötü commit’ler arasındaki geçmişi bölerek hatayı oluşturan ilk commit’i bulur.
@@ -34,6 +35,9 @@ $$T \approx \lceil \log_2(n) \rceil$$
 | Tek tek commit inceleme | $n$ | Çok küçük geçmişler, bağlamsal kod incelemesi |
 | `git bisect` | $\log_2(n)$ | Tekrarlanabilir hata, geniş commit aralığı |
 | `git blame` | Dosya/satır odaklı | Hatalı satır zaten biliniyorsa |
+
+![git-bisect-hatayi-81](/img/git-bisect-hatayi-81.svg)
+
 
 ## Manuel bisect akışı
 

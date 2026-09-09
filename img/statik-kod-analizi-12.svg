@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#c7dff7"/>
+    </linearGradient>
+    <linearGradient id="analysisGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f5e5"/>
+      <stop offset="100%" stop-color="#bde9d0"/>
+    </linearGradient>
+    <linearGradient id="gateGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eee5ff"/>
+      <stop offset="100%" stop-color="#dac9f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#54708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="79" cy="47" r="78" fill="#d8eefa" opacity="0.42"/>
+  <circle cx="571" cy="276" r="106" fill="#dff2d7" opacity="0.46"/>
+  <path d="M34 270 C130 222 151 311 241 277 S398 226 464 273 S562 289 620 220" fill="none" stroke="#b9dacc" stroke-width="2" opacity="0.38"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385166">Çalışmadan Önce Hata Avı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="38" y="104" width="128" height="110" rx="18" fill="url(#codeGrad)" stroke="#9fc5e4"/>
+  </g>
+  <rect x="55" y="121" width="94" height="48" rx="9" fill="#f7fbff" opacity="0.88"/>
+  <path d="M68 135 l-7 6 l7 6 M81 151 h14 M98 135 h33 M98 143 h24 M98 151 h30" fill="none" stroke="#4c78a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="102" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315876">Kaynak Kod</text>
+
+  <path d="M175 158 H208" fill="none" stroke="#7195ab" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="208,158 199,153 199,163" fill="#7195ab"/>
+
+  <g filter="url(#shadow)">
+    <rect x="216" y="78" width="188" height="160" rx="24" fill="url(#analysisGrad)" stroke="#94cfaf"/>
+  </g>
+  <circle cx="310" cy="132" r="33" fill="#f5fff9" stroke="#7cbf99" stroke-width="2"/>
+  <path d="M294 121 h10 l5 8 l8-15 l7 24 h-11 l-5-8 l-8 14 l-6-23z" fill="none" stroke="#438364" stroke-width="2" stroke-linejoin="round"/>
+  <text x="310" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#286347">Statik Analiz</text>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46765d">
+    <rect x="239" y="194" width="58" height="25" rx="12" fill="#ecfaf1"/>
+    <text x="268" y="211" text-anchor="middle">Türler</text>
+    <rect x="304" y="194" width="76" height="25" rx="12" fill="#ecfaf1"/>
+    <text x="342" y="211" text-anchor="middle">Veri akışı</text>
+  </g>
+
+  <path d="M412 135 H441" fill="none" stroke="#7195ab" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="441,135 432,130 432,140" fill="#7195ab"/>
+  <path d="M412 187 H441" fill="none" stroke="#7195ab" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="441,187 432,182 432,192" fill="#7195ab"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="450" y="88" width="150" height="61" rx="15" fill="#fff3db" stroke="#edc978"/>
+  </g>
+  <circle cx="473" cy="118" r="13" fill="#ffe2a8"/>
+  <path d="M473 109 v11 M473 125 v2" stroke="#a96818" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="531" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b5a18">Bulgular</text>
+  <text x="531" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6c2d">Null • SQL • API</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="450" y="162" width="150" height="61" rx="15" fill="url(#gateGrad)" stroke="#c6afe6"/>
+  </g>
+  <path d="M469 180 h18 v22 h-18z M473 176 h10 v4 M473 188 h10 M473 195 h7" fill="none" stroke="#7653a2" stroke-width="2" stroke-linejoin="round"/>
+  <text x="539" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#624184">Kalite Kapısı</text>
+  <text x="539" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765a99">Commit • CI</text>
+
+  <path d="M102 224 V266 H310 V248" fill="none" stroke="#77a991" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="310,248 305,257 315,257" fill="#77a991"/>
+  <rect x="45" y="247" width="115" height="34" rx="12" fill="#ffffff" opacity="0.72" filter="url(#softShadow)"/>
+  <text x="102" y="269" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47715d">Erken geri bildirim</text>
+
+  <path d="M524 232 V258" fill="none" stroke="#7195ab" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="524,258 519,249 529,249" fill="#7195ab"/>
+  <g filter="url(#softShadow)">
+    <rect x="457" y="263" width="134" height="35" rx="13" fill="#d9f2e3" stroke="#9cccaf"/>
+  </g>
+  <path d="M477 280 l6 6 l12-13" fill="none" stroke="#3d9565" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="538" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#367253">Güvenli sürüm</text>
+</svg>

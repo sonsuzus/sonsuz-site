@@ -8,6 +8,7 @@ tags:
   - program sentezi
   - yapay zeka
   - kod üretimi
+image: /img/program-sentezi-orneklerden-63.png
 ---
 
 Program sentezi, bir programcının her satırı elle yazması yerine sistemin verilen niyetten, kısıtlardan veya giriş-çıkış örneklerinden çalışan bir program üretmesidir. İlk bakışta “yapay zekâ kod yazıyor” kadar sihirli görünür; fakat mutfakta oldukça somut fikirler vardır: arama, mantıksal çıkarım, istatistiksel öğrenme ve doğrulama. Amaç yalnızca örnekleri ezberleyen bir fonksiyon değil, daha önce görülmemiş girdilerde de doğru davranan genellenebilir bir program bulmaktır.
@@ -27,6 +28,9 @@ Buradaki $C(p)$ genellikle programın uzunluğu, karmaşıklığı veya çalış
 | Constraint-based synthesis | İstenen davranışı mantıksal kısıtlara çevirir | Doğrulaması güçlüdür | Kısıt modellemek zor olabilir |
 | Neural synthesis | Model, kod olasılıklarını öğrenir | Büyük örüntülerde hızlı öneri | Hatalı kod üretebilir |
 | CEGIS | Aday üretir, karşı örnekle düzeltir | Hataları hedefli azaltır | Karmaşık alanlarda maliyetlidir |
+
+![program-sentezi-orneklerden-63](/img/program-sentezi-orneklerden-63.svg)
+
 
 Pratikte sık kullanılan döngü **CEGIS**’tir: *Counterexample-Guided Inductive Synthesis*. Sistem önce örneklerle uyumlu bir aday üretir. Bir doğrulayıcı bu adayın tüm koşulları karşılayıp karşılamadığını sınar. Hata bulursa, hata yaratan girdi bir karşı örnek olarak sentezleyiciye geri verilir. Böylece “bu testleri geçtim” düzeyinden “bu sınıftaki hatalara düşmüyorum” düzeyine ilerlenir.
 

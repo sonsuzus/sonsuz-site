@@ -8,7 +8,11 @@ tags:
   - semantic-release
   - git
   - ci-cd
+image: /img/semantic-release-otomasyonu-21.png
 ---
+
+![semantic-release-otomasyonu-21](/img/semantic-release-otomasyonu-21.svg)
+
 
 Bir projenin sürümünü elle artırmak, değişiklik listesini yazmak ve paketi yayımlamak küçük ekiplerde bile sürpriz derecede hataya açıktır. Semantic Release, Git commit geçmişini okuyarak bu ritüelleri otomatikleştirir: doğru sürüm numarasını hesaplar, CHANGELOG üretir, etiketi oluşturur ve istenirse npm gibi kayıt depolarına paketi yollar. Böylece ekip, “hangi değişiklik major olmalıydı?” tartışmasını yayın gecesine bırakmaz.
 ``

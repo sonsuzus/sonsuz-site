@@ -10,7 +10,11 @@ tags:
   - tahminleme
   - veri analizi
   - sarıma
+image: /img/zaman-serisi-analizi-97.png
 ---
+
+![zaman-serisi-analizi-97](/img/zaman-serisi-analizi-97.svg)
+
 
 Zaman serileri, gözlemlerin yalnızca değerinden değil, **ne zaman** oluştuğundan da anlam çıkaran veri yapılarıdır. Bir mağazanın aylık satışları, elektrik tüketimi veya web sitesi trafiği buna örnektir. Geleceği tahmin etmenin sihirli bir kristal küre olmadığını baştan kabul edelim: Ama geçmişte tekrar eden desenleri yakalayarak oldukça makul tahminler üretebiliriz. Bu desenlerin en önemli ikilisi trend ve mevsimselliktir.
 ``

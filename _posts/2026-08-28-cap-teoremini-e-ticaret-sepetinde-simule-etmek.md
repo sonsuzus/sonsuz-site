@@ -8,6 +8,7 @@ tags:
   - cap teoremi
   - dağıtık sistemler
   - e-ticaret
+image: /img/cap-teoremini-e-92.png
 ---
 
 Dağıtık sistemler, tek bir veritabanına güvenmek yerine veriyi birden fazla düğümde tutarak ölçeklenebilirlik ve hata toleransı sağlar. Ancak ağ bölünmesi yaşandığında sihirli bir biçimde hem her isteğe anında cevap verip hem de tüm kopyaları kusursuz biçimde eşitleyemezler. CAP teoremi bu zorunlu ödünleşimi görünür kılar. Bunu teorik bir üçgen olarak ezberlemek yerine, e-ticaret sepeti ve stok ekranı üzerinde küçük bir simülasyonla incelemek çok daha öğreticidir.
@@ -64,3 +65,6 @@ Bu kodda problem `buy_ap` metodunun hatalı olması değildir; yöntem bilinçli
 Pratikte AP seçen ekipler çatışma çözümü de tasarlamalıdır. Siparişlere benzersiz kimlik vermek, olay günlüğü tutmak, stok rezervasyonu için zaman aşımı kullanmak ve uzlaştırma kuyruğu çalıştırmak yaygın tekniklerdir. CP seçen ekipler ise kullanıcıya anlaşılır hata mesajları, güvenli tekrar deneme anahtarları ve alternatif bölge yönlendirmesi sağlamalıdır.
 
 Sonuç olarak CAP, “hangi veritabanı daha iyi?” sorusunun kısa cevabı değildir. Daha doğru soru şudur: **Ağ koparsa hangi e-ticaret işlemini durdurabilir, hangisini sonradan telafi edebiliriz?** Sepet, stok, ödeme ve teslimat için bu soruyu ayrı ayrı yanıtlamak, teoriyi üretim mimarisine dönüştürmenin en sağlam yoludur.
+
+![cap-teoremini-e-92](/img/cap-teoremini-e-92.svg)
+

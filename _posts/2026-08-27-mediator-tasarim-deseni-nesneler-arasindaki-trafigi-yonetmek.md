@@ -8,9 +8,13 @@ tags:
   - design patterns
   - mediator
   - nesne yönelimli programlama
+image: /img/mediator-tasarim-deseni-11.png
 ---
 
 Bir sınıfın diğer beş sınıfı doğrudan tanıdığı bir uygulama, küçükken masum görünür; büyüdükçe ise kabloları birbirine dolanmış bir sunucu odasına dönüşür. **Mediator (Arabulucu)** tasarım deseni, nesnelerin birbirleriyle doğrudan konuşması yerine merkezi bir arabulucu üzerinden iletişim kurmasını sağlar. Böylece sınıflar arası bağımlılık azalır, iletişim kuralları tek bir noktada toplanır ve sistemi değiştirmek daha güvenli hale gelir.
+
+![mediator-tasarim-deseni-11](/img/mediator-tasarim-deseni-11.svg)
+
 ``
 
 Mediator deseninin temel problemi, özellikle kullanıcı arayüzleri, sohbet sistemleri, uçuş kontrolü veya sipariş akışları gibi alanlarda ortaya çıkar. Örneğin bir formdaki `Kayıt Ol` düğmesi; e-posta kutusunun geçerliliğini, şifre alanının durumunu ve hata mesajı etiketini doğrudan yönetirse her bileşen diğerlerini tanımaya başlar. Yeni bir alan eklemek, mevcut bileşenlerin çoğunu değiştirmeyi gerektirebilir.

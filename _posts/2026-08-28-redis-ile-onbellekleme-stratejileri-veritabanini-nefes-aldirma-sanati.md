@@ -11,7 +11,11 @@ tags:
   - veritabanı
   - backend
 toc: true
+image: /img/redis-ile-onbellekleme-18.png
 ---
+
+![redis-ile-onbellekleme-18](/img/redis-ile-onbellekleme-18.svg)
+
 
 Bir uygulama büyüdükçe en pahalı sorgular genellikle veritabanına tekrar tekrar yapılan, sonucu nadiren değişen okumalardır. Ürün kataloğu, kullanıcı profili, popüler içerikler veya kur bilgileri buna iyi örneklerdir. Redis, bu verileri RAM üzerinde tutarak milisaniyeler seviyesinde yanıt üretir; böylece veritabanı yalnızca gerçekten gerektiğinde devreye girer.
 

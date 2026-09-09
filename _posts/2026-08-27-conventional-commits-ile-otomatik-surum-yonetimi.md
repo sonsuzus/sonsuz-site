@@ -8,6 +8,7 @@ tags:
   - conventional commits
   - semantic versioning
   - git
+image: /img/conventional-commits-ile-63.png
 ---
 
 Git geçmişiniz yalnızca “neler değişti?” sorusunu değil, “bu değişiklik kullanıcıyı nasıl etkiler?” sorusunu da cevaplamalıdır. Conventional Commits, commit mesajlarını küçük ama anlamlı bir sözleşmeye bağlayarak bu cevabı makine tarafından okunabilir hâle getirir. Sonuç olarak changelog üretimi, sürüm numarası artırma ve yayın notu hazırlama gibi sıkıcı işler otomatikleşir.
@@ -63,3 +64,6 @@ Pratikte kaliteyi yalnızca iyi niyete bırakmayın. `commitlint` mesaj biçimin
 Bu yapılandırma, standart kuralları devralır; ayrıca başlığın 100 karakteri aşmasını engeller. Amaç geliştiriciyi cezalandırmak değil, commit geçmişini okunabilir ve araçlar için güvenilir tutmaktır. `semantic-release` gibi araçlar da bu geçmişi analiz ederek uygun sürümü yayımlar, Git etiketi oluşturur ve changelog günceller.
 
 Başlangıç için ekibinizde `feat`, `fix`, `docs`, `refactor`, `test`, `chore` türlerinde uzlaşın. Ardından PR şablonlarına örnekler ekleyin ve lint kontrolünü CI hattına koyun. Birkaç hafta içinde commit mesajlarının yalnızca günlük notlar olmadığını; sürümleme stratejinizin çalıştırılabilir girdileri olduğunu göreceksiniz.
+
+![conventional-commits-ile-63](/img/conventional-commits-ile-63.svg)
+

@@ -8,9 +8,13 @@ tags:
   - domain-driven design
   - ddd
   - yazılım mimarisi
+image: /img/ddd-ile-karmasik-58.png
 ---
 
 Karmaşık bir iş alanını yazılıma aktarmak, veritabanına birkaç tablo eklemekten çok daha fazlasıdır. Sigorta poliçeleri, kargo rotaları veya kampanya kuralları gibi alanlarda asıl zorluk; kodun iş dilinden kopmasıdır. Domain-Driven Design (DDD), yazılımın merkezine teknik ayrıntıları değil, işletmenin gerçek kurallarını koyar. Amaç, uzmanların anlattığı dünyayı geliştiricilerin sürdürülebilir biçimde modelleyebilmesidir.
+
+![ddd-ile-karmasik-58](/img/ddd-ile-karmasik-58.svg)
+
 ``
 
 DDD'nin temel varsayımı şudur: En değerli karmaşıklık, **domain** yani problem alanındadır. Bir e-ticaret sisteminde ürün listelemek teknik bir ayrıntı olabilir; ancak iade hakkının hangi koşullarda doğduğu iş kuralıdır. Bu ayrımı iyi yapmak gerekir. Basitçe model kalitesi şöyle düşünülebilir:

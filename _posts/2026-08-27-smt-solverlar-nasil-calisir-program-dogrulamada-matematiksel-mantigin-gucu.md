@@ -9,6 +9,7 @@ tags:
   - program doğrulama
   - z3
   - matematiksel mantık
+image: /img/smt-solverlar-nasil-63.png
 ---
 
 Bir programın her olası girdide güvenli çalıştığını kanıtlamak, yalnızca binlerce test yazmakla mümkün değildir. İşte bu noktada **SMT (Satisfiability Modulo Theories)** solver’ları devreye girer: Mantıksal formüllerin, tamsayı aritmetiği, diziler, bit vektörleri ve eşitlik gibi teoriler altında tutarlı olup olmadığını incelerler. Kısacası solver’a “Bu koşulları aynı anda sağlayan bir durum var mı?” diye sorarız; yanıt çoğu zaman programdaki hatayı ya da kanıtı ele verir.
@@ -29,6 +30,9 @@ Bu formül **sat** sonucuna sahiptir; örneğin $x=4$, $y=6$ bir modeldir. Buna 
 | SAT | Boole formülü sağlanabilir mi? | `sat` / `unsat` | Devreler, önerme mantığı |
 | SMT | Teoriler altında formül sağlanabilir mi? | `sat` / `unsat` / `unknown` | Kod analizi, doğrulama |
 | Optimize SMT | Geçerli modeller arasında en iyisi hangisi? | Model ve optimum değer | Planlama, kaynak dağıtımı |
+
+![smt-solverlar-nasil-63](/img/smt-solverlar-nasil-63.svg)
+
 
 Bir SMT solver kabaca üç adımda çalışır. İlk olarak ifadeyi mantıksal kararlar içeren bir yapıya dönüştürür. Ardından SAT çekirdeği, hangi atomik koşulların doğru kabul edileceğini dener. Son olarak teori çözücüsü bu kararların aritmetik veya veri yapısı kurallarıyla çelişip çelişmediğini kontrol eder. Çelişki varsa solver, benzer başarısız seçimleri tekrar denememek için bir **öğrenilmiş kısıt** üretir. Bu süreç, modern SAT tekniklerinden gelen conflict-driven learning yaklaşımının SMT’ye uyarlanmış halidir.
 

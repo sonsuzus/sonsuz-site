@@ -8,7 +8,11 @@ tags:
   - git
   - git hooks
   - otomasyon
+image: /img/git-hooks-ile-64.png
 ---
+
+![git-hooks-ile-64](/img/git-hooks-ile-64.svg)
+
 
 Bir projede hatalı biçimlendirilmiş kodun, çalışmayan testlerin veya yanlışlıkla eklenmiş gizli anahtarların depoya ulaşması oldukça can sıkıcıdır. Kod incelemesi bu sorunların bir kısmını yakalasa da insan dikkati sınırlıdır. Git Hooks, Git olayları gerçekleştiğinde çalışan küçük betiklerle bu kontrolü otomatikleştirir. Böylece commit ve push süreci yalnızca bir kayıt işlemi değil, kalite kapısından geçen kontrollü bir akış hâline gelir.
 

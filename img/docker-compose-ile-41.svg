@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="compose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8dcf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52708d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52708d" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="91" cy="54" r="72" fill="#dff1ec" opacity="0.46"/>
+  <circle cx="568" cy="269" r="102" fill="#dfeafe" opacity="0.45"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466176" font-weight="600">Çoklu Servis Orkestrasyonu</text>
+
+  <g filter="url(#shadow)">
+    <rect x="41" y="80" width="172" height="161" rx="20" fill="url(#compose)" stroke="#a9c4e1"/>
+  </g>
+  <rect x="58" y="99" width="138" height="31" rx="9" fill="#f8fbff" opacity="0.92"/>
+  <path d="M71 108h16M71 114h23M71 120h12" stroke="#6494bd" stroke-width="2" stroke-linecap="round"/>
+  <text x="96" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34546d" font-weight="700">compose.yml</text>
+  <line x1="64" y1="145" x2="190" y2="145" stroke="#8dadd0" stroke-width="1"/>
+  <text x="65" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426278">Servisler</text>
+  <text x="65" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426278">Ağ</text>
+  <text x="65" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426278">Kalıcı veri</text>
+  <circle cx="179" cy="162" r="5" fill="#6eafd1"/>
+  <circle cx="179" cy="184" r="5" fill="#72bd9d"/>
+  <circle cx="179" cy="206" r="5" fill="#bb91c8"/>
+
+  <path d="M215 160H260" fill="none" stroke="#789ab4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="266,160 256,154 256,166" fill="#789ab4"/>
+
+  <rect x="267" y="57" width="321" height="209" rx="28" fill="#ffffff" opacity="0.58" stroke="#c7ded5" stroke-width="1.5"/>
+  <text x="289" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638477" font-weight="600">Ortak ağ · DNS adları</text>
+  <path d="M289 93H566" stroke="#d1e4dc" stroke-width="1.5"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="377" y="111" width="112" height="68" rx="16" fill="#ffe8bb" stroke="#eccb7f"/>
+  </g>
+  <rect x="392" y="124" width="24" height="24" rx="7" fill="#f6b954"/>
+  <path d="M399 132h10M399 137h10M399 142h6" stroke="#fff9ec" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="425" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76541e" font-weight="700">API</text>
+  <text x="392" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b692d">3000</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="289" y="201" width="126" height="48" rx="15" fill="#e5d9f3" stroke="#c3aada"/>
+  </g>
+  <ellipse cx="312" cy="215" rx="10" ry="4.2" fill="#9b79bb"/>
+  <path d="M302 215v13c0 2.5 20 2.5 20 0v-13M302 221c0 2.5 20 2.5 20 0" fill="none" stroke="#9b79bb" stroke-width="1.5"/>
+  <text x="332" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#604275" font-weight="700">PostgreSQL</text>
+  <text x="332" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765b8b">db:5432</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="457" y="201" width="107" height="48" rx="15" fill="#d6f0df" stroke="#9ccfb2"/>
+  </g>
+  <path d="M477 213c8-7 16 7 24 0M477 220c8-7 16 7 24 0M477 227c8-7 16 7 24 0" fill="none" stroke="#51a87a" stroke-width="2" stroke-linecap="round"/>
+  <text x="510" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#366d50" font-weight="700">Redis</text>
+  <text x="510" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#57836a">cache</text>
+
+  <path d="M416 179L359 198" fill="none" stroke="#7d7197" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="353,200 362,190 366,202" fill="#7d7197"/>
+  <path d="M452 179L503 198" fill="none" stroke="#579478" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="508,200 496,202 500,190" fill="#579478"/>
+
+  <rect x="299" y="267" width="126" height="27" rx="12" fill="#f6f0fb" stroke="#c9afd9"/>
+  <path d="M316 275h15v8h-15zM319 272h9" fill="none" stroke="#9370ad" stroke-width="1.6" stroke-linejoin="round"/>
+  <text x="340" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#694d7b">postgres_data</text>
+  <path d="M352 249V265" fill="none" stroke="#8b73a0" stroke-width="2"/>
+  <polygon points="352,269 347,262 357,262" fill="#8b73a0"/>
+
+  <g>
+    <circle cx="553" cy="120" r="18" fill="#e2f5e9" stroke="#9bcdae"/>
+    <path d="M545 120l5 5 10-11" fill="none" stroke="#4d9a6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="518" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7b60" text-anchor="middle">Sağlık kontrolü</text>
+  </g>
+
+  <path d="M489 130H529" fill="none" stroke="#72a789" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <text x="476" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a6a42">hazır ol</text>
+</svg>

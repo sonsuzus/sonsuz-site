@@ -11,6 +11,7 @@ tags:
   - cı/cd
   - yazılım geliştirme
 toc: true
+image: /img/statik-kod-analizi-12.png
 ---
 
 Kodunuz derleniyor, testler yeşil yanıyor ve uygulama ilk bakışta kusursuz görünüyor olabilir. Yine de kullanılmayan bir yetkilendirme kontrolü, yanlış bir null işlemi veya kullanıcı girdisini doğrudan SQL sorgusuna ekleyen tek satır; üretimde pahalı bir arızaya ya da güvenlik ihlaline dönüşebilir. Statik kod analizi araçları, programı çalıştırmadan kaynak kodu inceleyerek bu riskleri geliştirme sürecinin erken anlarında görünür kılar. Kısacası bunlar, kod incelemesinden önce çalışan yorulmayan birer ekip arkadaşıdır.
@@ -79,3 +80,6 @@ cursor.execute("SELECT * FROM users WHERE name = %s", (name,))
 Analiz aracının uyarısı burada yalnızca bir stil tercihi değildir; SQL enjeksiyonu riskinin erken sinyalidir.
 
 Son olarak aracı editöre, pre-commit kancasına ve CI/CD hattına ekleyin. Yeni kodda kritik güvenlik bulgularını derlemeyi başarısız kılan bir kalite kapısı belirleyin; eski borçlar içinse kademeli iyileştirme planı oluşturun. Statik analiz, mükemmel kod garantisi vermez; ancak hataların kullanıcılarınıza ulaşmadan önce yakalanma olasılığını dramatik biçimde artırır.
+
+![statik-kod-analizi-12](/img/statik-kod-analizi-12.svg)
+

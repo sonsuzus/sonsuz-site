@@ -9,7 +9,11 @@ tags:
   - diferansiyel test
   - kalite güvence
   - python
+image: /img/diferansiyel-test-yazilimlari-61.png
 ---
+
+![diferansiyel-test-yazilimlari-61](/img/diferansiyel-test-yazilimlari-61.svg)
+
 
 Bir programın sonucunun doğru olup olmadığını her zaman elle hesaplamak kolay değildir. Özellikle derleyiciler, kriptografi araçları, veritabanları veya karmaşık hesaplama kütüphanelerinde beklenen çıktıyı üreten bir test oracle’ı yazmak başlı başına zor bir projeye dönüşür. Diferansiyel test (differential testing), bu sorunu zekice tersine çevirir: Aynı girdiyi benzer görevi yapan iki ya da daha fazla bağımsız yazılıma gönderir, sonra çıktıları karşılaştırır. Sonuçlar ayrışıyorsa ortada araştırmaya değer bir hata, belirsiz spesifikasyon veya uyumsuzluk vardır.
 ``

@@ -9,6 +9,7 @@ tags:
   - clean architecture
   - yazılım mimarisi
 toc: true
+image: /img/hexagonal-architecture-nedir-48.png
 ---
 
 Bir uygulamanın veritabanını PostgreSQL’den MongoDB’ye taşımak, REST API yerine mesaj kuyruğu kullanmak ya da ödeme sağlayıcısını değiştirmek neden iş kurallarını kırmalıdır? Hexagonal Architecture, bu soruya güçlü bir “kırmamalı” yanıtı verir. Alistair Cockburn tarafından ortaya atılan bu yaklaşım, uygulamanın kalbi olan iş mantığını kullanıcı arayüzü, veritabanı ve harici servis gibi değişken ayrıntılardan izole eder.
@@ -79,3 +80,6 @@ Hexagonal Architecture katmanlı mimariyle düşman değildir; hatta birlikte ku
 Uzun ömürlü, karmaşık iş kuralları içeren ve birden fazla entegrasyona sahip sistemlerde bu mimari oldukça değerlidir. Ödeme, kargo, bildirim ve farklı istemci kanalları olan bir e-ticaret sistemi iyi bir adaydır. Ancak küçük bir CRUD uygulamasında her işlem için port ve adapter üretmek gereksiz tören maliyeti yaratabilir.
 
 Özetle Hexagonal Architecture, “veritabanı uygulamanın merkezi değildir; iş kuralı merkezdir” fikrini kod yapısına dönüştürür. Bu sayede test edilebilir, değişime dayanıklı ve teknolojik modası geçse bile iş değerini koruyan uygulamalar tasarlamak kolaylaşır.
+
+![hexagonal-architecture-nedir-48](/img/hexagonal-architecture-nedir-48.svg)
+

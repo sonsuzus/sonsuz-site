@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="sourceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#bed9f6"/>
+    </linearGradient>
+    <linearGradient id="profileGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f3e8"/>
+      <stop offset="100%" stop-color="#bfe6d4"/>
+    </linearGradient>
+    <linearGradient id="gateGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#f7d994"/>
+    </linearGradient>
+    <linearGradient id="targetGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcefdc"/>
+      <stop offset="100%" stop-color="#b9dfbe"/>
+    </linearGradient>
+    <linearGradient id="warnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe1df"/>
+      <stop offset="100%" stop-color="#f5bdb8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7894a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7894a5" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="581" cy="42" r="82" fill="#ccecf0" opacity="0.27"/>
+  <circle cx="40" cy="289" r="92" fill="#d6e7ff" opacity="0.34"/>
+  <path d="M24 258 C122 225 170 284 256 250 S418 226 615 264" fill="none" stroke="#bddbd7" stroke-width="1.5" opacity="0.5"/>
+
+  <text x="32" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37546a">ETL VERİ KALİTESİ HATTI</text>
+  <text x="32" y="50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698090">Profil • Kural • Karar • İzleme</text>
+
+  <path d="M131 166 H160" fill="none" stroke="#7192a6" stroke-width="2.5"/>
+  <polygon points="160,166 151,161 151,171" fill="#7192a6"/>
+  <path d="M291 166 H321" fill="none" stroke="#7192a6" stroke-width="2.5"/>
+  <polygon points="321,166 312,161 312,171" fill="#7192a6"/>
+  <path d="M433 153 C461 137 468 111 492 103" fill="none" stroke="#5d9a77" stroke-width="2.5"/>
+  <polygon points="493,103 484,101 488,110" fill="#5d9a77"/>
+  <path d="M433 181 C461 198 467 228 492 238" fill="none" stroke="#c17972" stroke-width="2.5"/>
+  <polygon points="493,238 485,231 483,240" fill="#c17972"/>
+
+  <g filter="url(#shadow)">
+    <rect x="33" y="126" width="98" height="80" rx="18" fill="url(#sourceGrad)"/>
+  </g>
+  <rect x="48" y="143" width="30" height="39" rx="5" fill="#f8fcff" stroke="#78a7ca" stroke-width="1.3"/>
+  <path d="M55 153 H71 M55 160 H71 M55 167 H66" stroke="#8ab2cf" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="98" cy="163" r="13" fill="#9bc4e4" opacity="0.8"/>
+  <path d="M92 163 H104 M98 157 V169" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="82" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b78">Kaynak Veri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="161" y="106" width="130" height="120" rx="20" fill="url(#profileGrad)"/>
+  </g>
+  <text x="226" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#296b59">Veri Profilleme</text>
+  <rect x="180" y="145" width="92" height="9" rx="4.5" fill="#f4fffa"/>
+  <rect x="180" y="145" width="68" height="9" rx="4.5" fill="#6db99a"/>
+  <rect x="180" y="164" width="92" height="9" rx="4.5" fill="#f4fffa"/>
+  <rect x="180" y="164" width="52" height="9" rx="4.5" fill="#86c8ae"/>
+  <rect x="180" y="183" width="92" height="9" rx="4.5" fill="#f4fffa"/>
+  <rect x="180" y="183" width="80" height="9" rx="4.5" fill="#54a989"/>
+  <text x="181" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c8171">Boşluk • dağılım • aykırı</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="167" y="238" width="118" height="35" rx="13" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <text x="226" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e7380">Referans metrik</text>
+  <path d="M226 238 V228" stroke="#82a99c" stroke-width="1.8"/>
+  <polygon points="226,228 222,234 230,234" fill="#82a99c"/>
+
+  <g filter="url(#shadow)">
+    <rect x="322" y="116" width="111" height="100" rx="20" fill="url(#gateGrad)"/>
+  </g>
+  <path d="M356 138 L400 138 L408 149 L408 182 L400 193 L356 193 L347 182 L347 149 Z" fill="#fff9e9" stroke="#d9ad56" stroke-width="1.4"/>
+  <path d="M369 165 L378 174 L393 155" fill="none" stroke="#59a477" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="377" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#80601d">Doğrulama</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="310" y="66" width="136" height="36" rx="14" fill="#ffffff" opacity="0.93"/>
+  </g>
+  <text x="378" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6a6570">Kalite Skoru  Q</text>
+  <path d="M378 102 V111" stroke="#c19b50" stroke-width="1.8"/>
+  <polygon points="378,111 374,105 382,105" fill="#c19b50"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="465" y="47" width="70" height="29" rx="12" fill="#eef9f0"/>
+  </g>
+  <text x="500" y="66" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#468360">Tamlık</text>
+  <g filter="url(#smallShadow)">
+    <rect x="544" y="47" width="73" height="29" rx="12" fill="#eef9f0"/>
+  </g>
+  <text x="580.5" y="66" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#468360">Geçerlilik</text>
+  <g filter="url(#smallShadow)">
+    <rect x="465" y="82" width="82" height="29" rx="12" fill="#eef9f0"/>
+  </g>
+  <text x="506" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#468360">Benzersizlik</text>
+  <g filter="url(#smallShadow)">
+    <rect x="554" y="82" width="63" height="29" rx="12" fill="#eef9f0"/>
+  </g>
+  <text x="585.5" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#468360">Tutarlılık</text>
+
+  <g filter="url(#shadow)">
+    <rect x="493" y="120" width="117" height="62" rx="18" fill="url(#targetGrad)"/>
+  </g>
+  <ellipse cx="517" cy="143" rx="13" ry="5" fill="#72ae7c"/>
+  <path d="M504 143 V159 C504 166 530 166 530 159 V143" fill="#8dc895"/>
+  <ellipse cx="517" cy="159" rx="13" ry="5" fill="#80bb89"/>
+  <text x="561" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397144">Hedef Tablo</text>
+  <text x="561" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8a65">Onaylandı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="493" y="211" width="117" height="62" rx="18" fill="url(#warnGrad)"/>
+  </g>
+  <path d="M516 226 L530 252 H502 Z" fill="#e48479"/>
+  <rect x="515" y="234" width="2.5" height="9" rx="1" fill="#ffffff"/>
+  <circle cx="516.3" cy="247" r="1.7" fill="#ffffff"/>
+  <text x="561" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#95534e">Karantina</text>
+  <text x="561" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a46a64">Uyarı ve inceleme</text>
+
+  <path d="M555 182 V201" stroke="#86a7a4" stroke-width="1.7" stroke-dasharray="4 4"/>
+  <circle cx="555" cy="202" r="3" fill="#86a7a4"/>
+  <text x="34" y="298" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8490">Eşikler iş etkisine göre belirlenir</text>
+</svg>

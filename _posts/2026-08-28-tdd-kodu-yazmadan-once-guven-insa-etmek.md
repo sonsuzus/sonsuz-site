@@ -8,9 +8,13 @@ tags:
   - tdd
   - yazılım testi
   - yazılım kalitesi
+image: /img/tdd-kodu-yazmadan-25.png
 ---
 
 Test Güdümlü Geliştirme (Test-Driven Development, TDD), üretim kodunu yazmadan önce o kodun beklenen davranışını bir testle tarif etme disiplinidir. İlk bakışta “henüz olmayan kodu nasıl test ederim?” sorusunu doğurur; fakat asıl güç tam burada saklıdır: Geliştirici önce çözümün iç yapısını değil, kullanıcıya sunduğu sonucu düşünür. Böylece kod, tahminlere göre değil, doğrulanabilir gereksinimlere göre büyür.
+
+![tdd-kodu-yazmadan-25](/img/tdd-kodu-yazmadan-25.svg)
+
 ``
 
 TDD’nin klasik döngüsü **Kırmızı–Yeşil–İyileştir** olarak bilinir. Önce başarısız olan küçük bir test yazılır (**kırmızı**). Ardından testi geçirecek en basit üretim kodu eklenir (**yeşil**). Son olarak davranışı değiştirmeden kod sadeleştirilir, tekrarlar temizlenir ve isimler iyileştirilir (**refactor**). Döngü kısa tutulduğunda hata ayıklama alanı da küçülür: Sorun çıktıysa büyük olasılıkla son birkaç satırdadır.

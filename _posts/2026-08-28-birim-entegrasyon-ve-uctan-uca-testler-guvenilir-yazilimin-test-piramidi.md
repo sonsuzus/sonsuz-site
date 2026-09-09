@@ -11,6 +11,7 @@ tags:
   - entegrasyon testi
   - uçtan uca test
 toc: true
+image: /img/birim-entegrasyon-ve-83.png
 ---
 
 Yazılım güvenilirliği, yalnızca uygulamanın bir kez çalışmasıyla ölçülmez; değişikliklerden sonra da doğru davranmasını sürdürebilmesiyle ölçülür. İşte test piramidi, ekiplerin sınırlı zaman ve kaynakla hangi testlere ne kadar yatırım yapması gerektiğini anlatan pratik bir modeldir. Piramidin tabanında hızlı ve bol miktarda birim testi, ortasında bileşenlerin birlikte çalışmasını doğrulayan entegrasyon testleri, tepesinde ise gerçek kullanıcı yolculuklarını sınayan az sayıda uçtan uca test bulunur.
@@ -32,6 +33,9 @@ function indirimliFiyat(fiyat, oran) {
   if (oran < 0 || oran > 100) throw new Error("Geçersiz oran");
   return fiyat * (1 - oran / 100);
 }
+
+![birim-entegrasyon-ve-83](/img/birim-entegrasyon-ve-83.svg)
+
 
 test("%20 indirim doğru hesaplanır", () => {
   expect(indirimliFiyat(250, 20)).toBe(200);

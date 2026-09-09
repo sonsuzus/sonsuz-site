@@ -11,6 +11,7 @@ tags:
   - rest
   - performans
 toc: true
+image: /img/grpc-ve-protocol-40.png
 ---
 
 Mikroservis mimarisinde servislerin birbirleriyle konuşma hızı, yalnızca kullanıcı deneyimini değil altyapı maliyetini de belirler. REST ve JSON, okunabilirlikleri sayesinde harika bir başlangıç noktasıdır; fakat yüksek trafikte metin ayrıştırma, büyük istek gövdeleri ve tekrar eden HTTP başlıkları pahalılaşabilir. gRPC, bu noktada Protocol Buffers'ın ikili veri biçimini kullanarak daha kompakt, şemaya bağlı ve hızlı bir iletişim katmanı sunar.
@@ -83,3 +84,6 @@ Burada ağ çağrısı gerçekte hâlâ vardır; `context` içindeki zaman aşı
 Performans testlerini yalnızca ortalama gecikmeyle değerlendirmeyin. p95 ve p99 gecikmeleri, hata oranı, paket boyutu ve CPU kullanımı birlikte izlenmelidir. Ayrıca gRPC'nin hata modeli HTTP durum kodlarından farklıdır; `UNAVAILABLE`, `DEADLINE_EXCEEDED` ve `INVALID_ARGUMENT` gibi durumları anlamlı biçimde eşlemek gerekir.
 
 Sonuç olarak gRPC, servisler arası yoğun ve şeması belirgin iletişim için güçlü bir tercihtir. Buna karşılık herkese açık, tarayıcı merkezli ve elle test edilmesi gereken API'lerde REST hâlâ son derece pratiktir. En iyi mimari çoğu zaman "REST mi gRPC mi?" değil, doğru sınırda doğru protokolü seçmektir.
+
+![grpc-ve-protocol-40](/img/grpc-ve-protocol-40.svg)
+

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f3e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#62809a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a2" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="320" cy="160" r="103" fill="#dcecf5" opacity="0.36"/>
+  <circle cx="320" cy="160" r="82" fill="#ffffff" opacity="0.36"/>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="112" width="120" height="92" rx="19" fill="#fff5ea"/>
+    <path d="M70 146 C58 132 77 123 88 134 C96 118 119 126 116 142 C132 145 130 164 114 165 L73 165 C57 164 57 151 70 146Z" fill="#f3a86d"/>
+    <path d="M75 145 L87 154 L99 139 L111 153" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="94" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765138">Dağınık if'ler</text>
+  </g>
+
+  <path d="M158 158 H193" fill="none" stroke="#9aabb6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="200,158 190,152 190,164" fill="#9aabb6"/>
+
+  <g filter="url(#soft)">
+    <rect x="193" y="57" width="138" height="58" rx="16" fill="#e5f0ff"/>
+    <circle cx="218" cy="86" r="14" fill="#83aee5"/>
+    <path d="M212 86 L217 91 L225 81" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="270" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355a82">Aktif Müşteri</text>
+    <text x="270" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62809a">Kural</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="193" y="205" width="138" height="58" rx="16" fill="#f0e7ff"/>
+    <circle cx="218" cy="234" r="14" fill="#a98ad4"/>
+    <path d="M211 237 H225 M213 232 H223" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="270" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#634b86">Sadakat Puanı</text>
+    <text x="270" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#87719f">≥ 1000</text>
+  </g>
+
+  <path d="M331 86 H364 C376 86 379 103 379 120 V132" fill="none" stroke="#8fa6b4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="379,140 373,130 385,130" fill="#8fa6b4"/>
+  <path d="M331 234 H364 C376 234 379 217 379 200 V188" fill="none" stroke="#8fa6b4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="379,180 373,190 385,190" fill="#8fa6b4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="379" y="112" width="135" height="96" rx="24" fill="url(#core)" stroke="#b8d3db" stroke-width="1.5"/>
+    <circle cx="446" cy="145" r="21" fill="#5f9d91"/>
+    <text x="446" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" font-weight="700" fill="#ffffff">VE</text>
+    <text x="446" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#365e5a">Birleşik Kural</text>
+    <text x="446" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58807b">Specification</text>
+  </g>
+
+  <path d="M514 160 H541" fill="none" stroke="#789f97" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="549,160 539,154 539,166" fill="#789f97"/>
+
+  <g filter="url(#soft)">
+    <rect x="549" y="104" width="62" height="112" rx="20" fill="#ffffff"/>
+    <circle cx="580" cy="135" r="18" fill="#86c9a7"/>
+    <path d="M571 135 L577 141 L590 128" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="564" y1="166" x2="596" y2="166" stroke="#d9e7e4" stroke-width="1.5"/>
+    <text x="580" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#356955">Uygun</text>
+    <text x="580" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d9085">İndirim</text>
+  </g>
+
+  <g opacity="0.88">
+    <rect x="48" y="239" width="95" height="29" rx="14" fill="#ffffff"/>
+    <text x="95.5" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63808f">Kopya kontrol</text>
+    <rect x="373" y="255" width="144" height="29" rx="14" fill="#ffffff"/>
+    <text x="445" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58736f">Test edilebilir kural</text>
+  </g>
+</svg>

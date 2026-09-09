@@ -10,6 +10,7 @@ tags:
   - mesajlaşma
   - veri tutarlılığı
 toc: true
+image: /img/outbox-pattern-ile-46.png
 ---
 
 Mikro servis mimarisinde bir siparişi veritabanına kaydedip ardından `OrderCreated` olayını mesaj kuyruğuna göndermek basit görünür. Fakat veritabanı işlemi başarılı olurken broker bağlantısı koparsa ne olur? Sipariş vardır, olay yoktur ve stok, ödeme ya da bildirim servisleri bu siparişi hiç öğrenemez. Outbox Pattern, bu can sıkıcı “yarım kalmış başarı” durumunu güvenilir ve izlenebilir bir akışa dönüştürür.
@@ -97,3 +98,6 @@ Outbox tablosu periyodik sorgulamayla (polling) okunabilir veya Change Data Capt
 | Broker transaction | Broker merkezli özel senaryolar |
 
 Son olarak outbox kayıtlarını sonsuza dek tutmayın: yayınlanan olayları belirli bir saklama süresinden sonra arşivleyin veya temizleyin. Sıralama gerekiyorsa aynı aggregate için sıralı işleme, kilitleme ya da partition anahtarı stratejisi belirleyin. Outbox Pattern sihirli değnek değildir; fakat veri kaybı riskini görünür, ölçülebilir ve yönetilebilir hale getiren en sağlam mikro servis tekniklerinden biridir.
+
+![outbox-pattern-ile-46](/img/outbox-pattern-ile-46.svg)
+

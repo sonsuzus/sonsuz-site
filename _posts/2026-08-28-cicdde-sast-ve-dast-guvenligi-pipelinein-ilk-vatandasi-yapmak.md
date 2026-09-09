@@ -9,7 +9,11 @@ tags:
   - sast
   - dast
 toc: true
+image: /img/cicdde-sast-ve-18.png
 ---
+
+![cicdde-sast-ve-18](/img/cicdde-sast-ve-18.svg)
+
 
 Modern yazılım ekipleri için hız tek başına başarı ölçütü değildir: Güvenli olmayan bir özelliği dakikalar içinde canlıya almak, sadece hatayı daha hızlı yaymaktır. Bu nedenle CI/CD pipeline’ına güvenlik taramalarını eklemek, güvenliği sürüm sonundaki bir denetim kapısı olmaktan çıkarıp geliştirme yaşam döngüsünün doğal parçası hâline getirir. SAST ve DAST araçları bu yaklaşımın iki güçlü, fakat farklı bakış açısına sahip oyuncusudur.
 

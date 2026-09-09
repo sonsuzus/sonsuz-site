@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfeafd"/>
+      <stop offset="100%" stop-color="#cdddf7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7890ae" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6f879d" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="42" r="76" fill="#d9f1ee" opacity="0.42"/>
+  <circle cx="590" cy="284" r="94" fill="#dfe8fa" opacity="0.5"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516c">HESAPLAMALI GEOMETRİ</text>
+  <text x="320" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687d91">Yönelim, kesişim ve içeride olma testleri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="70" width="176" height="205" rx="20" fill="#ffffff"/>
+    <rect x="232" y="102" width="176" height="142" rx="22" fill="url(#core)"/>
+    <rect x="436" y="70" width="176" height="205" rx="20" fill="#ffffff"/>
+  </g>
+
+  <rect x="45" y="87" width="102" height="25" rx="12" fill="#e8f2ff"/>
+  <text x="96" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35608c">DOĞRU PARÇASI</text>
+
+  <line x1="57" y1="193" x2="174" y2="136" stroke="#5a86bd" stroke-width="4" stroke-linecap="round"/>
+  <line x1="62" y1="135" x2="167" y2="207" stroke="#e57d78" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="57" cy="193" r="5" fill="#5a86bd"/>
+  <circle cx="174" cy="136" r="5" fill="#5a86bd"/>
+  <circle cx="62" cy="135" r="5" fill="#e57d78"/>
+  <circle cx="167" cy="207" r="5" fill="#e57d78"/>
+  <circle cx="116" cy="164" r="8" fill="#fff6ca" stroke="#d7a740" stroke-width="2"/>
+  <text x="51" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54708a">A</text>
+  <text x="177" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54708a">B</text>
+  <text x="53" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a75457">C</text>
+  <text x="171" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a75457">D</text>
+  <text x="116" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d82">Kesişim ve sınır</text>
+
+  <line x1="205" y1="157" x2="222" y2="157" stroke="#7d96ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="228,157 219,152 219,162" fill="#7d96ad"/>
+
+  <circle cx="320" cy="134" r="25" fill="#f9fcff" filter="url(#soft)"/>
+  <path d="M309 140 L318 126 L330 139" fill="none" stroke="#4773a8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M309 140 L331 140" fill="none" stroke="#4773a8" stroke-width="3" stroke-linecap="round"/>
+  <text x="320" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365673">Yönelim testi</text>
+  <text x="320" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c748c">Çapraz çarpım</text>
+
+  <g>
+    <rect x="252" y="210" width="47" height="20" rx="10" fill="#e7f5e8"/>
+    <text x="275" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41754c">Sol</text>
+    <rect x="341" y="210" width="47" height="20" rx="10" fill="#fdebea"/>
+    <text x="364" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a65a57">Sağ</text>
+  </g>
+
+  <line x1="409" y1="157" x2="426" y2="157" stroke="#7d96ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="432,157 423,152 423,162" fill="#7d96ad"/>
+
+  <rect x="453" y="87" width="103" height="25" rx="12" fill="#e6f6f0"/>
+  <text x="504" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397866">NOKTA ve ÇOKGEN</text>
+
+  <polygon points="468,189 486,133 537,126 580,162 556,214 494,215" fill="#d8f0e6" stroke="#62a88f" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="520" cy="169" r="6" fill="#ef8d6d" stroke="#ffffff" stroke-width="2"/>
+  <line x1="520" y1="169" x2="596" y2="169" stroke="#e58b68" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <polygon points="600,169 591,164 591,174" fill="#e58b68"/>
+  <circle cx="579" cy="169" r="4" fill="#fff9d5" stroke="#cf9e3e" stroke-width="1.5"/>
+  <text x="520" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d82">Işın dökümü</text>
+
+  <g filter="url(#soft)">
+    <rect x="465" y="247" width="116" height="20" rx="10" fill="#fff4d5"/>
+  </g>
+  <text x="523" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#987329">Tek kesişim: içeride</text>
+</svg>

@@ -11,6 +11,7 @@ tags:
   - python
   - segmentli elek
 toc: true
+image: /img/asallik-testleri-ve-18.png
 ---
 
 Asal sayılar, yalnızca 1’e ve kendilerine bölünebilen 1’den büyük tam sayılardır; fakat bu kısa tanım, büyük veri aralıklarında hesaplama yaparken ciddi bir algoritma problemine dönüşür. Tek tek sayıları denemek küçük örneklerde işe yarasa da, örneğin $10^{12}$ civarındaki milyonlarca sayıyı taramak istediğimizde akıllı eleme stratejilerine ihtiyaç duyarız. Bu noktada Eratosthenes Eleği ve onun büyük aralıklara uyarlanmış hâli olan segmentli elek devreye girer.
@@ -87,3 +88,6 @@ def segmented_sieve(left: int, right: int) -> list[int]:
 Burada `value - left` ifadesi, gerçek sayı değerini segment dizisindeki indekse çevirir. Ayrıca 1’in asal olmadığını özellikle elemek gerekir. Bu teknik, örneğin $[10^{12}, 10^{12}+10^6]$ gibi aralıklarda son derece kullanışlıdır: Bellek tüketimi $R$ yerine aralık genişliğine, yani $O(R-L+1)$ seviyesine iner.
 
 Pratikte çok geniş aralıkları daha küçük bloklara bölmek, `bytearray` kullanmak ve yalnızca tek sayıları işlemek performansı artırır. Özetle: Tek bir sayıyı sınarken $\sqrt{n}$ mantığı yeterli olabilir; ama çok sayıda asal ararken kazanan strateji, adayları tek tek sorgulamak değil, bileşikleri topluca elemek olur.
+
+![asallik-testleri-ve-18](/img/asallik-testleri-ve-18.svg)
+

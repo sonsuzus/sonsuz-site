@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7567c8"/>
+      <stop offset="100%" stop-color="#5b9cc8"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#4c6480" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#4c6480" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="132" fill="#dfeeff" opacity="0.45"/>
+  <circle cx="320" cy="160" r="98" fill="#dff1e7" opacity="0.45"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42556c">ALTIGEN MİMARİ</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718197">İş kuralları merkezde kalır</text>
+
+  <!-- bağlantılar -->
+  <path d="M173 97 L223 122" fill="none" stroke="#8294aa" stroke-width="2"/>
+  <polygon points="223,122 214,113 211,122" fill="#8294aa"/>
+  <path d="M170 221 L222 196" fill="none" stroke="#8294aa" stroke-width="2"/>
+  <polygon points="222,196 211,196 215,205" fill="#8294aa"/>
+  <path d="M469 97 L418 122" fill="none" stroke="#8294aa" stroke-width="2"/>
+  <polygon points="418,122 430,122 426,113" fill="#8294aa"/>
+  <path d="M471 221 L418 196" fill="none" stroke="#8294aa" stroke-width="2"/>
+  <polygon points="418,196 426,205 430,196" fill="#8294aa"/>
+
+  <!-- giriş port çizgileri -->
+  <path d="M205 109 L232 124" fill="none" stroke="#73a8c5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M205 209 L232 194" fill="none" stroke="#73a8c5" stroke-width="4" stroke-linecap="round"/>
+  <!-- çıkış port çizgileri -->
+  <path d="M408 124 L435 109" fill="none" stroke="#8baa80" stroke-width="4" stroke-linecap="round"/>
+  <path d="M408 194 L435 209" fill="none" stroke="#8baa80" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- sol üst adapter -->
+  <g filter="url(#smallShadow)">
+    <rect x="45" y="69" width="128" height="55" rx="16" fill="#ffffff"/>
+    <rect x="55" y="79" width="32" height="32" rx="10" fill="#d9eff9"/>
+    <path d="M64 89 H78 M64 95 H78 M64 101 H73" stroke="#4c91b4" stroke-width="2" stroke-linecap="round"/>
+    <text x="97" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566d">REST İstemci</text>
+    <text x="97" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728398">Giriş adaptörü</text>
+  </g>
+
+  <!-- sol alt adapter -->
+  <g filter="url(#smallShadow)">
+    <rect x="45" y="194" width="125" height="55" rx="16" fill="#ffffff"/>
+    <rect x="55" y="204" width="32" height="32" rx="10" fill="#eee4fb"/>
+    <path d="M65 211 L75 220 L65 229 M78 211 L68 220 L78 229" fill="none" stroke="#8468b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="97" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566d">Komut Satırı</text>
+    <text x="97" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728398">Giriş adaptörü</text>
+  </g>
+
+  <!-- sağ üst adapter -->
+  <g filter="url(#smallShadow)">
+    <rect x="469" y="69" width="128" height="55" rx="16" fill="#ffffff"/>
+    <rect x="479" y="79" width="32" height="32" rx="10" fill="#e2f3d9"/>
+    <ellipse cx="495" cy="87" rx="8" ry="3.5" fill="none" stroke="#699b68" stroke-width="2"/>
+    <path d="M487 87 V101 C487 106 503 106 503 101 V87 M487 94 C487 99 503 99 503 94" fill="none" stroke="#699b68" stroke-width="2"/>
+    <text x="520" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566d">Veritabanı</text>
+    <text x="520" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728398">Çıkış adaptörü</text>
+  </g>
+
+  <!-- sağ alt adapter -->
+  <g filter="url(#smallShadow)">
+    <rect x="471" y="194" width="126" height="55" rx="16" fill="#ffffff"/>
+    <rect x="481" y="204" width="32" height="32" rx="10" fill="#fff0d7"/>
+    <path d="M489 212 H505 V226 H489 Z M489 213 L497 220 L505 213" fill="none" stroke="#c28d45" stroke-width="2" stroke-linejoin="round"/>
+    <text x="521" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566d">Bildirim</text>
+    <text x="521" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728398">Çıkış adaptörü</text>
+  </g>
+
+  <!-- port etiketleri -->
+  <g filter="url(#smallShadow)">
+    <rect x="176" y="120" width="69" height="25" rx="10" fill="#dceffa"/>
+    <text x="210.5" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3e718c">Giriş portu</text>
+    <rect x="176" y="175" width="69" height="25" rx="10" fill="#dceffa"/>
+    <text x="210.5" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3e718c">Giriş portu</text>
+    <rect x="395" y="120" width="72" height="25" rx="10" fill="#e4f1df"/>
+    <text x="431" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#557c55">Çıkış portu</text>
+    <rect x="395" y="175" width="72" height="25" rx="10" fill="#e4f1df"/>
+    <text x="431" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#557c55">Çıkış portu</text>
+  </g>
+
+  <!-- merkez altıgen -->
+  <g filter="url(#shadow)">
+    <path d="M284 82 L356 82 L392 118 L392 202 L356 238 L284 238 L248 202 L248 118 Z" fill="url(#core)" stroke="#ffffff" stroke-width="3"/>
+    <path d="M284 91 L356 91 L383 118" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.28"/>
+    <circle cx="320" cy="126" r="20" fill="#ffffff" opacity="0.17"/>
+    <path d="M311 126 C311 121 315 117 320 117 C325 117 329 121 329 126 C329 132 324 136 320 139 C316 136 311 132 311 126 Z" fill="#ffffff"/>
+    <text x="320" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">İŞ MANTIĞI</text>
+    <text x="320" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf7ff">Domain ve kullanım</text>
+    <text x="320" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf7ff">senaryoları</text>
+  </g>
+
+  <!-- alt not -->
+  <g filter="url(#smallShadow)">
+    <rect x="224" y="271" width="192" height="28" rx="14" fill="#ffffff"/>
+    <circle cx="242" cy="285" r="6" fill="#7bb58a"/>
+    <path d="M239 285 L241.5 287.5 L246 282.5" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="254" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53687a">Bağımlılık dıştan merkeze</text>
+  </g>
+</svg>

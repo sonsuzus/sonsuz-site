@@ -9,6 +9,7 @@ tags:
   - tasarım desenleri
   - c#
   - domain-driven design
+image: /img/specification-pattern-ile-15.png
 ---
 
 İş kuralları büyüdükçe kod tabanında küçük bir canavar belirir: her yerde çoğalan `if` koşulları. “Müşteri aktif mi?”, “Sepet tutarı yeterli mi?”, “Ürün stokta mı?” gibi sorular önce masum görünür; sonra aynı kontroller servis, API ve rapor katmanlarında kopyalanır. Specification Pattern, bu kuralları isimlendirilmiş, test edilebilir ve birleştirilebilir nesnelere dönüştürerek canavarı evcilleştirir.
@@ -31,6 +32,9 @@ Böylece iş dili doğrudan koda yaklaşır: `aktifVeSadikMi`. Bu yaklaşım, ku
 | Aynı `if` blokları kopyalanabilir | Kurallar tekrar kullanılabilir |
 | Test için büyük akış hazırlanır | Her kural tek başına test edilir |
 | Yeni kombinasyonlar karmaşıklaşır | `And`, `Or`, `Not` ile kurulur |
+
+![specification-pattern-ile-15](/img/specification-pattern-ile-15.svg)
+
 
 C# tarafında önce küçük bir sözleşme tanımlayalım. `IsSatisfiedBy`, aday nesnenin kurala uygunluğunu döndürür. Ayrıca `And` metodu iki kuralı okunabilir biçimde bir araya getirir.
 

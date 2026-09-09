@@ -8,9 +8,13 @@ tags:
   - etl
   - veri kalitesi
   - data profiling
+image: /img/etl-sureclerinde-data-33.png
 ---
 
 ETL hattı, veriyi bir kaynaktan alıp dönüştürerek hedef sisteme taşıyan lojistik bir bant gibidir. Ancak bant hızlı çalışırken yanlış ürünleri paketliyorsa hızın pek anlamı kalmaz. Data profiling (veri profilleme), verinin istatistiksel ve yapısal röntgenini çekerek bu riski görünür yapar; doğrulama kuralları ise röntgen sonucuna göre kapıda bekleyen kalite kontrol ekibidir.
+
+![etl-sureclerinde-data-33](/img/etl-sureclerinde-data-33.svg)
+
 ``
 
 Veri kalitesi tek bir ölçüden ibaret değildir. Bir müşteri tablosunda e-posta alanının dolu olması **tamlık**, aynı müşterinin iki kez bulunmaması **benzersizlik**, ülke kodunun izinli listede olması **geçerlilik**, sipariş tarihinin müşteri oluşturulma tarihinden önce olmaması ise **tutarlılık** örneğidir. Bu boyutları sayısallaştırmak, “veri iyi görünüyor” gibi tehlikeli bir sezgiyi ölçülebilir bir hedefe dönüştürür.

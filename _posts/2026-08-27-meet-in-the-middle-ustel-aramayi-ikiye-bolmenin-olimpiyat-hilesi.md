@@ -10,7 +10,11 @@ tags:
   - karmaşıklık
   - dinamik programlama
   - olimpiyat
+image: /img/meet-in-the-77.png
 ---
+
+![meet-in-the-77](/img/meet-in-the-77.svg)
+
 
 Bazı problemler ilk bakışta masum görünür: Elimizde $n$ eleman vardır, her biri için seç veya seçme kararı veririz. Ancak bu küçük kararların toplamı $2^n$ farklı kombinasyon üretir. $n=40$ için yaklaşık bir trilyon olasılık demektir; bilgisayarınızın fanı bu noktada dramatik bir monoloğa başlayabilir. **Ortadan Buluşma** (Meet in the Middle, MITM), arama uzayını iki parçaya ayırarak bu üstel duvarı aşmaya yarayan klasik olimpiyat tekniğidir.
 

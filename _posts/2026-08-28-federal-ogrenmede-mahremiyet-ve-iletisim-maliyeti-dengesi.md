@@ -10,9 +10,13 @@ tags:
   - mahremiyet
   - diferansiyel gizlilik
   - edge computing
+image: /img/federal-ogrenmede-mahremiyet-59.png
 ---
 
 Bir makine öğrenmesi modelini eğitmek için herkesin verisini tek bir sunucuya taşımak, pratik görünse de mahremiyet açısından risklidir. Sağlık kayıtları, klavye davranışları veya finansal işlemler gibi veriler cihazdan ayrılmadan öğrenme yapılabilirse tablo değişir. Federal öğrenme (Federated Learning, FL), modeli verinin bulunduğu yere götürerek bu fikri hayata geçirir. Ancak bu yaklaşım sihirli bir gizlilik pelerini değildir: Daha güçlü mahremiyet önlemleri çoğu zaman daha fazla iletişim, hesaplama veya model doğruluğu kaybı anlamına gelir.
+
+
+![federal-ogrenmede-mahremiyet-59](/img/federal-ogrenmede-mahremiyet-59.svg)
 
 ``
 
