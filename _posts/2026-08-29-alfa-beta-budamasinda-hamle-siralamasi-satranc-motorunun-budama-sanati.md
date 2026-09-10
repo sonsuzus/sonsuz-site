@@ -10,7 +10,11 @@ tags:
   - minimax
   - hamle sıralaması
 toc: true
+image: /img/alfa-beta-budamasinda-92.png
 ---
+
+![alfa-beta-budamasinda-92](/img/alfa-beta-budamasinda-92.svg)
+
 
 Bir satranç motoru için iyi hamleyi bulmak yalnızca güçlü bir değerlendirme fonksiyonu yazmak değildir; aynı zamanda yanlış yolları mümkün olduğunca erken terk etmektir. Alfa-beta budaması bunu sağlar, fakat gerçek performansın gizli kahramanı hamle sıralamasıdır. Şah çeken, değerli taş kazandıran ya da önceki aramalarda başarılı olmuş hamleleri önce denemek, motorun arama ağacını adeta elektrikli testereyle budamasına yardım eder.
 ``

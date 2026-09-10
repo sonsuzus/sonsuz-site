@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#c7e9dc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66829a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71879a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="77" cy="46" r="70" fill="#dceef5" opacity="0.55"/>
+  <circle cx="580" cy="277" r="92" fill="#dff1d6" opacity="0.5"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466176" font-weight="600">ZAMAN SERİSİ TAHMİNİ</text>
+
+  <path d="M301 145 C262 121 237 104 207 91" fill="none" stroke="#8ba1b2" stroke-width="2.2"/>
+  <polygon points="207,91 218,90 212,99" fill="#8ba1b2"/>
+  <path d="M339 145 C378 121 403 104 433 91" fill="none" stroke="#8ba1b2" stroke-width="2.2"/>
+  <polygon points="433,91 427,100 422,90" fill="#8ba1b2"/>
+  <path d="M320 191 L320 231" fill="none" stroke="#8ba1b2" stroke-width="2.2"/>
+  <polygon points="320,231 314,221 326,221" fill="#8ba1b2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="260" y="128" width="120" height="68" rx="22" fill="url(#core)" stroke="#b5d1d4"/>
+  </g>
+  <path d="M277 169 C288 158 294 177 304 162 S322 151 333 163 S350 180 364 151" fill="none" stroke="#418295" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="320" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345b6a" font-weight="700">Geçmiş Seri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="52" width="164" height="84" rx="18" fill="#fff4df" stroke="#f0d49a"/>
+  </g>
+  <rect x="64" y="66" width="44" height="22" rx="11" fill="#f9d88f"/>
+  <text x="86" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79551d" font-weight="700">ARIMA</text>
+  <path d="M66 113 L78 109 L90 115 L102 105 L114 108 L126 96 L138 101 L150 89 L166 94 L190 80" fill="none" stroke="#bc8430" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="130" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765e3e">Düzenli örüntü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="428" y="52" width="164" height="84" rx="18" fill="#eee7fb" stroke="#cfbee9"/>
+  </g>
+  <rect x="444" y="66" width="57" height="22" rx="11" fill="#d7c6f3"/>
+  <text x="472" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#604586" font-weight="700">Prophet</text>
+  <path d="M445 110 C455 92 467 92 477 110 S499 128 509 110 S531 92 541 110 S563 128 575 103" fill="none" stroke="#8867bb" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M550 96 L550 120 M544 101 L550 96 L556 101" fill="none" stroke="#b38bd1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="510" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68567b">Takvim ve döngü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="238" y="232" width="164" height="70" rx="18" fill="#e1f3e9" stroke="#b8dcc9"/>
+  </g>
+  <rect x="254" y="245" width="46" height="21" rx="10.5" fill="#b9dfcb"/>
+  <text x="277" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356c50" font-weight="700">LSTM</text>
+  <g fill="#75b993">
+    <circle cx="316" cy="253" r="5"/>
+    <circle cx="343" cy="246" r="5"/>
+    <circle cx="370" cy="253" r="5"/>
+    <circle cx="329" cy="275" r="5"/>
+    <circle cx="357" cy="277" r="5"/>
+  </g>
+  <g stroke="#6aa987" stroke-width="1.4">
+    <path d="M321 253 L338 247 M348 247 L365 252 M319 257 L326 271 M346 250 L355 273 M367 257 L359 273 M334 275 L352 277"/>
+  </g>
+  <text x="320" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416957">Hafıza ve örüntü</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="24" y="166" width="179" height="42" rx="14" fill="#ffffff" opacity="0.9"/>
+    <rect x="437" y="166" width="179" height="42" rx="14" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="44" cy="187" r="8" fill="#f2c66d"/>
+  <path d="M41 187 L44 190 L49 183" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b79">Az veri · açıklanabilir</text>
+
+  <circle cx="457" cy="187" r="8" fill="#8cc8a4"/>
+  <path d="M454 187 L457 190 L462 183" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="471" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b79">Bol veri · karmaşık ilişki</text>
+
+  <text x="320" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698191">Trend · Mevsimsellik · Kalıntı</text>
+</svg>

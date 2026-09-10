@@ -8,6 +8,7 @@ tags:
   - nonogram
   - constraint programming
   - algoritmalar
+image: /img/nonogram-cozuculeri-kisit-97.png
 ---
 
 Nonogramlar, satır ve sütun kenarlarındaki sayı ipuçlarından hareketle hangi hücrelerin boyanacağını bulduğumuz görsel mantık bulmacalarıdır. İnsan için keyifli bir dedektiflik oyunu olan bu yapı, bilgisayar için de kısıt programlamanın (Constraint Programming, CP) oldukça temiz bir uygulamasıdır: Her hücre bir karar değişkeni, her ipucu ise çözüm uzayını daraltan bir kuraldır.
@@ -56,3 +57,6 @@ Bu kod bir CP çözücüsünün küçük ama önemli parçasını temsil eder: *
 | Geri izleme | Belirsiz durumda varsayım yapıp çelişirse dönme |
 
 Sonuç olarak Nonogram çözücüsü yalnızca resim boyamaz; mantıksal bilgiyi satır ve sütunlar arasında dolaştırır. Bu nedenle problem, Sudoku, çizelgeleme ve kaynak atama gibi daha büyük kısıt tatmin problemlerine geçmek için hem görsel hem de son derece öğretici bir başlangıç noktasıdır.
+
+![nonogram-cozuculeri-kisit-97](/img/nonogram-cozuculeri-kisit-97.svg)
+

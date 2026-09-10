@@ -11,6 +11,7 @@ tags:
   - 15-taş
   - algoritmalar
 toc: true
+image: /img/a-algoritmasiyla-15-50.png
 ---
 
 15-taş bulmacası, 4×4 bir tahtadaki numaralı taşları boş kareyi kullanarak hedef düzene getirmeyi ister. Görünüşte basit olan bu oyun, bilgisayar biliminin klasik durum-uzayı arama problemlerinden biridir: Her tahta dizilimi bir **durum**, boşluğun hareketi bir **eylem**, hedef dizilim ise çözülmek istenen noktadır. Amaç yalnızca bir çözüm bulmak değil, mümkün olan en az hamleli çözümü bulmaktır. İşte A* algoritması, doğru sezgisel fonksiyonla bu işi akıllıca yapar.
@@ -71,3 +72,6 @@ def manhattan(board):
 A* uygulamasında öncelik kuyruğuna `(f, g, board)` benzeri kayıtlar eklenir. Bir komşu durum üretildiğinde yeni maliyet hesaplanır: `new_g = g + 1` ve `priority = new_g + manhattan(neighbor)`. Daha önce daha düşük `g` değeriyle görülmüş bir tahta tekrar kuyruğa alınmaz. Bu ayrıntı, boşluğun sağa-sola giderek sonsuz döngü oluşturmasını engeller.
 
 Pratikte Manhattan mesafesini **linear conflict** ile güçlendirmek faydalıdır. Aynı satırda hedef satırlarına ait iki taş ters sıradaysa, en az iki ek hamle gerekir. Bu ceza Manhattan değerine eklenebilir; yine de kabul edilebilirlik korunur. Son olarak, her 15-taş diziliminin çözülebilir olmadığını unutmayın: A* çalıştırmadan önce inversiyon paritesi ve boş karenin satırı ile çözüm kontrolü yapmak, imkânsız bulmacalarda saatlerce arama yapılmasını önler.
+
+![a-algoritmasiyla-15-50](/img/a-algoritmasiyla-15-50.svg)
+

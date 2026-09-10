@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="score" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#d9f7e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6685a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="38" r="54" fill="#dcedff" opacity="0.5"/>
+  <circle cx="580" cy="280" r="78" fill="#dff5db" opacity="0.45"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#37546b" font-weight="600">Pozisyonel Değerlendirme</text>
+
+  <!-- Chess position -->
+  <g filter="url(#shadow)">
+    <rect x="26" y="70" width="142" height="184" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36506a" font-weight="600">Tahta durumu</text>
+
+  <g transform="translate(48 111)">
+    <rect x="0" y="0" width="96" height="96" rx="6" fill="#d6b98d"/>
+    <g fill="#f6e6c7">
+      <rect x="0" y="0" width="12" height="12"/><rect x="24" y="0" width="12" height="12"/><rect x="48" y="0" width="12" height="12"/><rect x="72" y="0" width="12" height="12"/>
+      <rect x="12" y="12" width="12" height="12"/><rect x="36" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="84" y="12" width="12" height="12"/>
+      <rect x="0" y="24" width="12" height="12"/><rect x="24" y="24" width="12" height="12"/><rect x="48" y="24" width="12" height="12"/><rect x="72" y="24" width="12" height="12"/>
+      <rect x="12" y="36" width="12" height="12"/><rect x="36" y="36" width="12" height="12"/><rect x="60" y="36" width="12" height="12"/><rect x="84" y="36" width="12" height="12"/>
+      <rect x="0" y="48" width="12" height="12"/><rect x="24" y="48" width="12" height="12"/><rect x="48" y="48" width="12" height="12"/><rect x="72" y="48" width="12" height="12"/>
+      <rect x="12" y="60" width="12" height="12"/><rect x="36" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/><rect x="84" y="60" width="12" height="12"/>
+      <rect x="0" y="72" width="12" height="12"/><rect x="24" y="72" width="12" height="12"/><rect x="48" y="72" width="12" height="12"/><rect x="72" y="72" width="12" height="12"/>
+      <rect x="12" y="84" width="12" height="12"/><rect x="36" y="84" width="12" height="12"/><rect x="60" y="84" width="12" height="12"/><rect x="84" y="84" width="12" height="12"/>
+    </g>
+    <text x="39" y="23" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#343b4b" font-weight="700">♛</text>
+    <text x="62" y="45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#343b4b" font-weight="700">♟</text>
+    <text x="27" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">♘</text>
+    <text x="51" y="69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">♙</text>
+    <text x="74" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">♔</text>
+  </g>
+  <text x="48" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638096">Beyaz + / Siyah −</text>
+
+  <!-- connector left -->
+  <path d="M168 162 H192" stroke="#87a5b9" stroke-width="2.5" fill="none"/>
+  <polygon points="198,162 190,157 190,167" fill="#87a5b9"/>
+
+  <!-- Factor cards -->
+  <g filter="url(#shadow)">
+    <rect x="205" y="54" width="130" height="42" rx="13" fill="#ffe9cb"/>
+    <rect x="205" y="105" width="130" height="42" rx="13" fill="#e3efff"/>
+    <rect x="205" y="156" width="130" height="42" rx="13" fill="#e7f7df"/>
+    <rect x="205" y="207" width="130" height="42" rx="13" fill="#f3e5fb"/>
+  </g>
+  <text x="223" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#634d2e" font-weight="600">Materyal ve PST</text>
+  <text x="223" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36546e" font-weight="600">Piyon yapısı</text>
+  <text x="223" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426343" font-weight="600">Şah güvenliği</text>
+  <text x="223" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61466d" font-weight="600">Alan ve tempo</text>
+
+  <!-- joins -->
+  <path d="M335 75 H360 V151 H372" stroke="#94aabb" stroke-width="2" fill="none"/>
+  <path d="M335 126 H360 V151" stroke="#94aabb" stroke-width="2" fill="none"/>
+  <path d="M335 177 H360 V169 H372" stroke="#94aabb" stroke-width="2" fill="none"/>
+  <path d="M335 228 H360 V169" stroke="#94aabb" stroke-width="2" fill="none"/>
+  <polygon points="378,160 368,154 368,166" fill="#809caf"/>
+
+  <!-- Evaluation engine -->
+  <g filter="url(#shadow)">
+    <rect x="378" y="103" width="137" height="115" rx="20" fill="url(#score)" stroke="#c6dfd5"/>
+  </g>
+  <circle cx="447" cy="132" r="17" fill="#ffffff" opacity="0.8"/>
+  <text x="438" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315c59" font-weight="700">Σ</text>
+  <text x="399" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315c59" font-weight="700">Değerlendirme</text>
+  <text x="404" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#537875">E(s) · ağırlıklar</text>
+
+  <!-- output -->
+  <path d="M515 160 H535" stroke="#6e9d91" stroke-width="2.5" fill="none"/>
+  <polygon points="541,160 533,155 533,165" fill="#6e9d91"/>
+
+  <!-- minimax -->
+  <g filter="url(#shadow)">
+    <rect x="542" y="96" width="76" height="128" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="553" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385068" font-weight="700">Minimax</text>
+  <path d="M561 144 V178 H578" stroke="#6c96bc" stroke-width="2" fill="none"/>
+  <path d="M561 144 H578" stroke="#6c96bc" stroke-width="2" fill="none"/>
+  <path d="M561 178 H578" stroke="#6c96bc" stroke-width="2" fill="none"/>
+  <circle cx="558" cy="144" r="4" fill="#77a8d7"/>
+  <circle cx="581" cy="144" r="4" fill="#8ecfa5"/>
+  <circle cx="581" cy="178" r="4" fill="#efaa9a"/>
+  <text x="552" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547087">En iyi hamle</text>
+
+  <!-- stage hint -->
+  <g opacity="0.9">
+    <rect x="205" y="273" width="310" height="25" rx="12" fill="#e7f0f5"/>
+    <text x="220" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597488">Oyun aşaması: açılış</text>
+    <path d="M356 285 H425" stroke="#9cb6aa" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="394" cy="285" r="7" fill="#72aa88"/>
+    <text x="437" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597488">oyun sonu</text>
+  </g>
+</svg>

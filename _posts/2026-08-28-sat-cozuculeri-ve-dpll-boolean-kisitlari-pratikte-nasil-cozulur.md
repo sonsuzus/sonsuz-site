@@ -8,9 +8,13 @@ tags:
   - sat
   - dpll
   - boolean mantık
+image: /img/sat-cozuculeri-ve-51.png
 ---
 
 Bir yazılım sistemindeki seçenek kombinasyonları arttıkça, “bu kuralların hepsini aynı anda sağlayan bir yapı var mı?” sorusu hızla zorlaşır. Ders programı hazırlama, devre doğrulama, bağımlılık çözümü ve test üretimi gibi işlerde karşımıza çıkan bu sorunun merkezinde **Boolean Satisfiability Problem (SAT)** bulunur. SAT, teorik olarak NP-tam olsa da modern çözücüler milyonlarca değişkenli bazı gerçek dünya örneklerini şaşırtıcı hızda çözebilir. Bu başarının temel taşlarından biri, klasik ama etkili **DPLL** algoritmasıdır.
+
+
+![sat-cozuculeri-ve-51](/img/sat-cozuculeri-ve-51.svg)
 
 ``
 

@@ -9,9 +9,13 @@ tags:
   - algoritmalar
   - kuantum hesaplama
 toc: true
+image: /img/pollard-rho-ve-21.png
 ---
 
 Bir RSA anahtarını oluşturan büyük sayıyı çarpanlarına ayırmak, yalnızca matematiksel bir bulmaca değildir; modern açık anahtarlı kriptografinin güvenlik varsayımlarından biridir. Bu problemde Pollard Rho klasik dünyada akıllı bir rastgele yürüyüş yaklaşımı sunarken, Shor algoritması kuantum bilgisayarların teorik olarak oyunun kurallarını değiştirebileceğini söyler. Ancak önemli ayrım şudur: Shor'u klasik bilgisayarda **simüle etmek**, algoritmayı kuantum hızında çalıştırmak anlamına gelmez.
+
+![pollard-rho-ve-21](/img/pollard-rho-ve-21.svg)
+
 ``
 
 Bir bileşik sayı $N = p \cdot q$ için hedef, gizli asal çarpanlardan en az birini bulmaktır. Deneme bölmesi yaklaşık $O(\sqrt{N})$ kadar aday kontrolü gerektirebilir. Pollard Rho ise özellikle küçük veya orta boy asal çarpanı bulunan sayılarda, doğum günü paradoksuna benzer bir çakışma fikrinden yararlanır. Tipik beklenen maliyeti, en küçük asal çarpan $p$ için yaklaşık $O(\sqrt{p})$ işlem olarak düşünülebilir.

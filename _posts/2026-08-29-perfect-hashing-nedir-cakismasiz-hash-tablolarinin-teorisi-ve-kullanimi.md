@@ -9,6 +9,7 @@ tags:
   - veri yapıları
   - hashing
 toc: true
+image: /img/perfect-hashing-nedir-88.png
 ---
 
 Hash tabloları, anahtarları hızlıca bulmanın süper kahramanıdır; fakat klasik yaklaşımlarda iki anahtarın aynı kovaya düşmesi, yani **çakışma**, kaçınılmazdır. Perfect hashing ise özellikle anahtar kümesinin önceden bilindiği durumlarda bu dramayı tamamen ortadan kaldırır. Amaç, her anahtarı benzersiz bir hücreye yerleştiren ve sorguları sabit zamanda gerçekleştiren bir hash fonksiyonu tasarlamaktır.
@@ -32,6 +33,9 @@ Başka bir deyişle, $h$ fonksiyonu anahtar kümesi üzerinde enjeksiyondur. Tab
 | Açık adresleme | Var | Ortalama $O(1)$ | Doluluk oranına duyarlı | Dinamik |
 | Perfect hashing | Yok | En kötü durumda $O(1)$ | Genellikle kompakt | Statik |
 | Minimal perfect hashing | Yok | En kötü durumda $O(1)$ | Yaklaşık $n$ hücre | Statik |
+
+![perfect-hashing-nedir-88](/img/perfect-hashing-nedir-88.svg)
+
 
 Buradaki kritik kelime **statik**tir. Perfect hash yapısı oluşturulduktan sonra anahtar eklemek veya silmek çoğunlukla tüm yapıyı yeniden inşa etmeyi gerektirir. Bu nedenle kullanıcı oturumları gibi sürekli değişen verilerden çok, derleme zamanında belirlenen anahtarlar için parlar.
 

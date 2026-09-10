@@ -11,7 +11,11 @@ tags:
   - performans
   - ağ protokolleri
 toc: true
+image: /img/quic-ve-http3-42.png
 ---
+
+![quic-ve-http3-42](/img/quic-ve-http3-42.svg)
+
 
 Web performansında milisaniyeler bazen kullanıcı deneyimini, bazen de bir satışın gerçekleşip gerçekleşmeyeceğini belirler. HTTP/3, bu yarışta yalnızca HTTP başlıklarını değiştirmez; alttaki taşıma katmanını da TCP’den QUIC’e taşıyarak oyunun kurallarını yeniler. QUIC, UDP datagramları üzerinde çalışan ancak TLS 1.3 şifreleme, güvenilir teslim, akış kontrolü ve tıkanıklık kontrolü gibi modern taşıma özelliklerini kendi içinde sunan bir protokoldür.
 

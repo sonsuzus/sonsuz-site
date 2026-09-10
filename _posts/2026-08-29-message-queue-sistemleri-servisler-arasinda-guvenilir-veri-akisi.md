@@ -8,9 +8,13 @@ tags:
   - message queue
   - mikroservis
   - rabbitmq
+image: /img/message-queue-sistemleri-50.png
 ---
 
 Modern uygulamalarda servislerin birbirini doğrudan ve anında çağırması ilk bakışta pratik görünür. Ancak trafik arttığında, bir servis bakımdayken veya anlık hata yaşadığında bu sıkı bağlantı zincirleme sorunlara dönüşür. Message Queue (mesaj kuyruğu) sistemleri, servisler arasına dayanıklı bir posta merkezi koyarak veriyi zamandan bağımsız ve güvenli biçimde taşır.
+
+
+![message-queue-sistemleri-50](/img/message-queue-sistemleri-50.svg)
 
 ``
 

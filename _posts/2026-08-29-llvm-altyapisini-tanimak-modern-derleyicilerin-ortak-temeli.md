@@ -10,7 +10,11 @@ tags:
   - c++
   - ır
   - yazılım geliştirme
+image: /img/llvm-altyapisini-tanimak-48.png
 ---
+
+![llvm-altyapisini-tanimak-48](/img/llvm-altyapisini-tanimak-48.svg)
+
 
 Bir programı kaynak koddan çalışabilir makine komutlarına dönüştürmek, yalnızca `if` ifadelerini çevirmekten çok daha büyük bir iştir. Farklı işlemciler, optimizasyonlar, hata mesajları ve hata ayıklama bilgileri derken derleyici geliştirmek hızla devasa bir projeye dönüşür. LLVM, tam bu karmaşıklığı yönetmek için doğmuş; bugün Clang, Rust, Swift ve Julia gibi pek çok teknolojinin kullandığı modüler bir derleyici altyapısıdır.
 

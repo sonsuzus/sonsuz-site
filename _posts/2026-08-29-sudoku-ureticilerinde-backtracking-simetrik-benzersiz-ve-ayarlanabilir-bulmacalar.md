@@ -11,6 +11,7 @@ tags:
   - python
   - oyun geliştirme
 toc: true
+image: /img/sudoku-ureticilerinde-backtracking-23.png
 ---
 
 Bir Sudoku üreticisi, ekrana rastgele sayılar serpiştirmekten çok daha fazlasıdır: Ortaya çıkan tahtanın geçerli, tek çözümlü, estetik açıdan dengeli ve hedeflenen zorlukta olması gerekir. Bu hedeflerin merkezinde derinlik öncelikli arama (DFS) ile çalışan geri izleme, yani *backtracking*, bulunur. Algoritma yanlış bir seçime girdiğinde panik yapmaz; son kararı geri alır, başka olasılığı dener ve sabırla çözüm uzayını tarar.
@@ -69,3 +70,6 @@ def count_solutions(board, limit=2):
 | Zor | 26–32 | Kontrollü tahmin veya gelişmiş desenler |
 
 Sonuç olarak backtracking, Sudoku üreticisinin hem mimarı hem denetçisidir. Rastgelelik çeşitliliği sağlar; kısıtlar doğruluğu korur; çözüm sayacı benzersizliği garantiler; simetri ise bulmacaya profesyonel bir görünüm kazandırır. Bu dört parçayı birleştirdiğinizde, yalnızca çalışan değil, tekrar tekrar çözmek isteyeceğiniz Sudoku tahtaları üretebilirsiniz.
+
+![sudoku-ureticilerinde-backtracking-23](/img/sudoku-ureticilerinde-backtracking-23.svg)
+

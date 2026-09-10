@@ -9,9 +9,13 @@ tags:
   - istatistik
   - hipotez testi
 toc: true
+image: /img/r-ile-istatistiksel-21.png
 ---
 
 Veriyle çalışırken en heyecanlı soru şudur: Gördüğümüz fark gerçekten anlamlı mı, yoksa rastlantının küçük bir şakası mı? R, bu soruyu sistematik biçimde yanıtlamak için güçlü araçlar sunar. Normal dağılım varsayımını incelemek, ortalamaları t-testiyle karşılaştırmak ve kategorik ilişkileri ki-kare testiyle değerlendirmek; veri analistinin temel üçlüsüdür.
+
+
+![r-ile-istatistiksel-21](/img/r-ile-istatistiksel-21.svg)
 
 ``
 

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ebff"/>
+      <stop offset="100%" stop-color="#d9f3e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#5c7390" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#526b87" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="92" cy="54" r="74" fill="#dceeff" opacity="0.48"/>
+  <circle cx="588" cy="265" r="102" fill="#e0f4db" opacity="0.55"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">İTERATİF DERİNLEŞME</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667d90">Sınırı artır, her turda güvenli sonuç al</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="70" width="178" height="152" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="49" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">Derinlik turları</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="47" y="112" width="43" height="28" rx="10" fill="#e6f0ff"/>
+    <text x="61" y="131" fill="#38628d" font-weight="700">L=0</text>
+    <line x1="96" y1="126" x2="112" y2="126" stroke="#86a5c2" stroke-width="2"/>
+    <polygon points="112,126 106,122 106,130" fill="#86a5c2"/>
+
+    <rect x="118" y="112" width="43" height="28" rx="10" fill="#dceeff"/>
+    <text x="132" y="131" fill="#38628d" font-weight="700">L=1</text>
+
+    <rect x="47" y="151" width="66" height="28" rx="10" fill="#d9f3e5"/>
+    <text x="61" y="170" fill="#327353" font-weight="700">L=2</text>
+    <line x1="119" y1="165" x2="135" y2="165" stroke="#73ad91" stroke-width="2"/>
+    <polygon points="135,165 129,161 129,169" fill="#73ad91"/>
+
+    <rect x="141" y="151" width="43" height="28" rx="10" fill="#ccebd8"/>
+    <text x="155" y="170" fill="#327353" font-weight="700">L=3</text>
+
+    <text x="49" y="204" fill="#74889a">Çözüm bulunana kadar</text>
+  </g>
+
+  <path d="M213 146 C231 146 231 146 248 146" fill="none" stroke="#7593aa" stroke-width="2.5"/>
+  <polygon points="248,146 240,141 240,151" fill="#7593aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="255" y="75" width="145" height="142" rx="20" fill="url(#core)"/>
+  </g>
+  <circle cx="327" cy="121" r="29" fill="#ffffff" filter="url(#softShadow)"/>
+  <path d="M318 121 L325 128 L338 112" fill="none" stroke="#45a26c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="280" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36566a">Derinlik Sınırlı</text>
+  <text x="301" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486b62">Arama</text>
+  <text x="277" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657f87">Sınırda dur ve yenile</text>
+
+  <path d="M406 146 C422 146 424 146 438 146" fill="none" stroke="#7593aa" stroke-width="2.5"/>
+  <polygon points="438,146 430,141 430,151" fill="#7593aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="445" y="70" width="166" height="152" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="466" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">Arama ağacı</text>
+
+  <g stroke="#91aaba" stroke-width="2" fill="none">
+    <path d="M528 115 L486 143"/>
+    <path d="M528 115 L530 143"/>
+    <path d="M528 115 L573 143"/>
+    <path d="M486 159 L467 185"/>
+    <path d="M486 159 L503 185"/>
+    <path d="M530 159 L530 185"/>
+    <path d="M573 159 L556 185"/>
+    <path d="M573 159 L591 185"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <circle cx="528" cy="112" r="12" fill="#bdddff"/>
+    <circle cx="486" cy="156" r="11" fill="#d7eaff"/>
+    <circle cx="530" cy="156" r="11" fill="#d7eaff"/>
+    <circle cx="573" cy="156" r="11" fill="#d7eaff"/>
+    <circle cx="467" cy="188" r="9" fill="#e8f2ff"/>
+    <circle cx="503" cy="188" r="9" fill="#e8f2ff"/>
+    <circle cx="530" cy="188" r="9" fill="#aee2bf"/>
+    <circle cx="556" cy="188" r="9" fill="#e8f2ff"/>
+    <circle cx="591" cy="188" r="9" fill="#e8f2ff"/>
+  </g>
+  <circle cx="530" cy="188" r="4" fill="#31945b"/>
+  <text x="540" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#328159" font-weight="700">Hedef</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="241" width="584" height="55" rx="16" fill="#ffffff"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="47" y="255" width="140" height="27" rx="10" fill="#e8f1ff"/>
+    <circle cx="62" cy="268.5" r="5" fill="#6198d1"/>
+    <text x="75" y="273" fill="#426683" font-weight="700">En kısa çözüm</text>
+
+    <line x1="205" y1="253" x2="205" y2="284" stroke="#dbe5e8"/>
+
+    <rect x="222" y="255" width="151" height="27" rx="10" fill="#e3f5e9"/>
+    <circle cx="237" cy="268.5" r="5" fill="#53aa77"/>
+    <text x="250" y="273" fill="#416c54" font-weight="700">Bellek: O(d)</text>
+
+    <line x1="391" y1="253" x2="391" y2="284" stroke="#dbe5e8"/>
+
+    <rect x="408" y="255" width="181" height="27" rx="10" fill="#fff1da"/>
+    <circle cx="423" cy="268.5" r="5" fill="#dc9b43"/>
+    <text x="436" y="273" fill="#866239" font-weight="700">Zaman: O(b^d)</text>
+  </g>
+</svg>

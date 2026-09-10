@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="mobileGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#bcd8f6"/>
+    </linearGradient>
+    <linearGradient id="browserGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e4f5dc"/>
+      <stop offset="100%" stop-color="#c9e8be"/>
+    </linearGradient>
+    <linearGradient id="tokenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce8c7"/>
+      <stop offset="100%" stop-color="#f5d5a6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7390a0" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#718897" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="44" r="58" fill="#dceeff" opacity="0.55"/>
+  <circle cx="580" cy="276" r="80" fill="#dff2d8" opacity="0.55"/>
+  <path d="M30 257 C155 227, 215 285, 344 250 S530 219, 618 240" fill="none" stroke="#c9deea" stroke-width="2" opacity="0.55"/>
+
+  <!-- Başlık -->
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38566a">Mobil OAuth 2.0 ve OIDC Güvenli Akışı</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688292">Yetkilendirme Kodu + PKCE</text>
+
+  <!-- Bağlantılar -->
+  <path d="M145 162 H190" fill="none" stroke="#6d92a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="190,162 181,157 181,167" fill="#6d92a8"/>
+  <path d="M320 162 H365" fill="none" stroke="#6d92a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="365,162 356,157 356,167" fill="#6d92a8"/>
+  <path d="M495 162 H535" fill="none" stroke="#6d92a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="535,162 526,157 526,167" fill="#6d92a8"/>
+
+  <!-- Alt dönüş bağlantısı -->
+  <path d="M430 220 C430 264, 258 269, 125 222" fill="none" stroke="#829eaf" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="125,222 134,220 130,229" fill="#829eaf"/>
+  <text x="282" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637e8d">Callback: kod + state doğrulama</text>
+
+  <!-- Mobil uygulama -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="103" width="105" height="119" rx="21" fill="url(#mobileGrad)" stroke="#94b9d7"/>
+    <rect x="72" y="114" width="41" height="75" rx="7" fill="#f9fcff" stroke="#82a9c5" stroke-width="1.5"/>
+    <rect x="84" y="119" width="17" height="3" rx="1.5" fill="#a7c5da"/>
+    <circle cx="92.5" cy="181" r="3.5" fill="#a7c5da"/>
+    <path d="M80 141 H105 M80 149 H100 M80 157 H104" stroke="#82abc5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="92.5" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a76">Mobil Uygulama</text>
+  <text x="92.5" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54758a">Public Client</text>
+
+  <!-- Sistem tarayıcısı -->
+  <g filter="url(#shadow)">
+    <rect x="190" y="111" width="130" height="101" rx="17" fill="url(#browserGrad)" stroke="#9bc490"/>
+    <rect x="202" y="124" width="106" height="58" rx="7" fill="#fbfffa" stroke="#9fc49a"/>
+    <rect x="202" y="124" width="106" height="14" rx="7" fill="#d4ebcb"/>
+    <circle cx="213" cy="131" r="2.5" fill="#e58c8c"/>
+    <circle cx="222" cy="131" r="2.5" fill="#e7be7a"/>
+    <circle cx="231" cy="131" r="2.5" fill="#82b987"/>
+    <circle cx="255" cy="160" r="11" fill="#c4e3ba"/>
+    <path d="M250 160 L254 164 L262 155" fill="none" stroke="#4d8b60" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="255" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6d45">Sistem Tarayıcısı</text>
+  <text x="255" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547a59">Kullanıcı Girişi</text>
+
+  <!-- Kimlik sağlayıcı -->
+  <g filter="url(#shadow)">
+    <rect x="365" y="100" width="130" height="122" rx="17" fill="#eadff9" stroke="#baa8dc"/>
+    <rect x="380" y="119" width="100" height="21" rx="6" fill="#f8f4ff"/>
+    <circle cx="394" cy="129.5" r="5" fill="#9d83c7"/>
+    <path d="M405 126 H466 M405 133 H452" stroke="#b5a1d3" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M430 153 L451 161 L451 176 C451 187 442 194 430 198 C418 194 409 187 409 176 L409 161 Z" fill="#d5c6ec" stroke="#9275bd" stroke-width="1.5"/>
+    <path d="M421 175 L427 181 L440 167" fill="none" stroke="#72559e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="430" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#624987">Kimlik Sağlayıcı</text>
+  <text x="430" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78638f">OIDC ve OAuth</text>
+
+  <!-- API -->
+  <g filter="url(#shadow)">
+    <rect x="535" y="117" width="70" height="91" rx="16" fill="url(#tokenGrad)" stroke="#d8ad76"/>
+    <ellipse cx="570" cy="139" rx="19" ry="7" fill="#fff8eb" stroke="#d8ad76"/>
+    <path d="M551 139 V174 C551 178 559 181 570 181 C581 181 589 178 589 174 V139" fill="#fce5bd" stroke="#d8ad76"/>
+    <path d="M551 151 C551 155 559 158 570 158 C581 158 589 155 589 151 M551 163 C551 167 559 170 570 170 C581 170 589 167 589 163" fill="none" stroke="#d8ad76"/>
+  </g>
+  <text x="570" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#875a28">Kaynak API</text>
+  <text x="570" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#967246">Erişim Tokenı</text>
+
+  <!-- PKCE güvenlik rozeti -->
+  <g filter="url(#smallShadow)">
+    <rect x="253" y="70" width="133" height="30" rx="15" fill="#fff3d9" stroke="#e4bd75"/>
+    <path d="M269 78 L278 81 V87 C278 92 274 95 269 97 C264 95 260 92 260 87 V81 Z" fill="#f7d48d" stroke="#b98231"/>
+    <path d="M265 87 L268 90 L274 84" fill="none" stroke="#9b681d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="327" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#866022">PKCE: S256 Koruması</text>
+  </g>
+
+  <!-- Küçük işlem etiketleri -->
+  <text x="167" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597789">İstek</text>
+  <text x="342" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597789">Kod</text>
+  <text x="514" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597789">Bearer</text>
+</svg>

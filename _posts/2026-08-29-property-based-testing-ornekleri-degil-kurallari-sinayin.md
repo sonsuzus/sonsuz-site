@@ -9,6 +9,7 @@ tags:
   - yazılım testi
   - python
   - hypothesis
+image: /img/property-based-testing-85.png
 ---
 
 Geleneksel birim testleri, belirli girdiler için beklenen çıktıları doğrular: `topla(2, 3) == 5` gibi. Bu yaklaşım vazgeçilmezdir; ancak geliştiricinin hiç düşünmediği binlerce uç durum kapının dışında kalabilir. Property-Based Testing (özellik tabanlı test), tek tek örnekler yazmak yerine fonksiyonun her zaman sağlaması gereken genel kuralları tanımlar. Test aracı da çok sayıda girdi üreterek bu kuralları zorlamaya başlar. Kısacası siz dedektifin kural kitabını yazarsınız, araç ise şüpheli vakaları bulur.
@@ -72,3 +73,6 @@ $$
 | Para hesaplama | Toplam, kalemlerin toplamına eşit olmalı; yuvarlama açıkça tanımlanmalı |
 
 Bu teknik örnek tabanlı testlerin yerine geçmez; onları tamamlar. Kritik iş kuralları ve anlaşılır senaryolar için örnek testler yazın. Ardından sınırları, dönüşümleri ve değişmezleri Property-Based Testing'e devredin. Sonuç: Daha az tahmin, daha çok güven ve üretimde daha az “bu girdi nereden çıktı?” sürprizi.
+
+![property-based-testing-85](/img/property-based-testing-85.svg)
+

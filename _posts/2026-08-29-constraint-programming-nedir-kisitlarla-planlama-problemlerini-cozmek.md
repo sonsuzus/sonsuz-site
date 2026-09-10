@@ -8,6 +8,7 @@ tags:
   - constraint programming
   - optimizasyon
   - python
+image: /img/constraint-programming-nedir-63.png
 ---
 
 Bir ders programı hazırladığınızı düşünün: öğretmenlerin uygun saatleri, sınıf kapasiteleri, ders çakışmaları ve öğrencilerin seçmeli tercihleri aynı anda dikkate alınmalı. Bu tür problemlerde tek tek kurallar yazıp olasılıkları denemek hızla kontrolden çıkar. **Constraint Programming (CP)**, yani kısıt programlama, çözümü doğrudan tarif etmek yerine çözümün uyması gereken kuralları tanımlayarak bu karmaşayı yönetir.
@@ -67,3 +68,6 @@ if solver.Solve(model) in (cp_model.OPTIMAL, cp_model.FEASIBLE):
 Buradaki `AddNoOverlap`, ikili karşılaştırmaları elle yazmak yerine zaman aralıklarının çakışmamasını tek bir küresel kısıtla ifade eder. `AddMaxEquality` ise en geç biten görevi `makespan` değişkenine bağlar. Amaç fonksiyonumuz matematiksel olarak $\min \max_i(\text{end}_i)$ şeklindedir.
 
 Başarılı bir CP modeli için önce sert kuralları netleştirin, gereksiz büyük domainlerden kaçının ve gerçek hayattaki tercihleri yumuşak kısıt ya da ceza terimi olarak ekleyin. Böylece “hangi adımlarla çözeyim?” sorusu, daha güçlü bir soruya dönüşür: “İyi bir çözüm hangi kurallara uymalı?”
+
+![constraint-programming-nedir-63](/img/constraint-programming-nedir-63.svg)
+

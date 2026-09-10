@@ -9,7 +9,11 @@ tags:
   - çarpışma tespiti
   - geometri
   - 2d matematik
+image: /img/akil-oyunlarinda-carpisma-66.png
 ---
+
+![akil-oyunlarinda-carpisma-66](/img/akil-oyunlarinda-carpisma-66.svg)
+
 
 Bir 2D akıl oyununda kutunun duvardan geçmemesi, taşların aynı kareyi paylaşmaması veya oyuncunun engelde durması ilk bakışta basit görünür. Ancak bu davranışın arkasında geometri, vektör matematiği ve doğru zamanlama vardır. Çarpışma tespiti iki soruya cevap verir: Nesneler temas ediyor mu? Ediyorsa, oyun onları nasıl ayırmalı? İlk soru **algılama** (detection), ikinci soru ise **çözümleme** (resolution) aşamasıdır.
 

@@ -11,9 +11,13 @@ tags:
   - arıma
   - lstm
 toc: true
+image: /img/prophet-arima-ve-34.png
 ---
 
 Zaman serisi tahmini, yalnızca geçmiş değerleri geleceğe uzatmak değildir; verinin içindeki yön değişimlerini, tekrar eden döngüleri ve beklenmedik dalgalanmaları okumaktır. Bir e-ticaret sitesinin günlük satışları, elektrik tüketimi ya da web trafiği bu açıdan klasik örneklerdir. Prophet, ARIMA ve LSTM aynı hedefe koşsa da trend ve mevsimselliği ele alış biçimleri oldukça farklıdır.
+
+
+![prophet-arima-ve-34](/img/prophet-arima-ve-34.svg)
 
 ``
 

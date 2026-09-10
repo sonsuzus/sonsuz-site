@@ -8,9 +8,13 @@ tags:
   - satranç
   - tablebase
   - algoritmalar
+image: /img/satrancta-tablebase-devrimi-45.png
 ---
 
 Satranç motorları çoğu zaman milyonlarca hamleyi değerlendirerek güçlü tahminler yapar; ancak taşlar iyice azaldığında tahmine gerek kalmaz. **Oyun sonu tabloları** ya da tablebase'ler, yedi taşa kadar her yasal konumun sonucunu önceden hesaplayan devasa veritabanlarıdır. Bir konum için cevap nettir: beyaz kazanır, siyah kazanır ya da oyun beraberedir. Dahası, doğru hamle de bellidir. Bu nedenle tablebase kullanan bir motor, kapsanan oyun sonunda “çok iyi” değil, matematiksel olarak kusursuz oynar.
+
+
+![satrancta-tablebase-devrimi-45](/img/satrancta-tablebase-devrimi-45.svg)
 
 ``
 

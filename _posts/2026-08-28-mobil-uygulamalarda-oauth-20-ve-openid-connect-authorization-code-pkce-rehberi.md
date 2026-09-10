@@ -9,7 +9,11 @@ tags:
   - openıd connect
   - pkce
 toc: true
+image: /img/mobil-uygulamalarda-oauth-64.png
 ---
+
+![mobil-uygulamalarda-oauth-64](/img/mobil-uygulamalarda-oauth-64.svg)
+
 
 Mobil uygulamalar için oturum açma tasarlarken en riskli fikirlerden biri, kullanıcı parolasını doğrudan uygulamaya toplatmak veya istemci sırrını APK/IPA içine gömmektir. Mobil paketler tersine mühendisliğe açıktır; bu nedenle uygulamanız bir **public client** olarak düşünülmelidir. Güvenli yaklaşım, kimlik sağlayıcının tarayıcı tabanlı oturumunu kullanan OAuth 2.0 Authorization Code akışı ile OpenID Connect (OIDC) katmanını, PKCE korumasıyla birleştirmektir.
 

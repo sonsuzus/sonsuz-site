@@ -9,9 +9,13 @@ tags:
   - cı/cd
   - blue-green deployment
 toc: true
+image: /img/blue-green-deployment-78.png
 ---
 
 Üretim ortamında yeni bir sürümü yayımlamak, yalnızca kodu sunucuya kopyalamaktan ibaret değildir: kullanıcı deneyimi, geri dönüş planı ve veri tutarlılığı aynı anda korunmalıdır. Blue-Green Deployment, iki eşdeğer ortam arasında trafiği kontrollü biçimde değiştirerek güncelleme anındaki kesintiyi neredeyse görünmez hâle getiren güçlü bir dağıtım stratejisidir.
+
+
+![blue-green-deployment-78](/img/blue-green-deployment-78.svg)
 
 ``
 

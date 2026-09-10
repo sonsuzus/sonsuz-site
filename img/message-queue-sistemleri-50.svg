@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="queue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9d1ff"/>
+      <stop offset="1" stop-color="#bcb0f0"/>
+    </linearGradient>
+    <linearGradient id="producer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cceef2"/>
+      <stop offset="1" stop-color="#a9dce7"/>
+    </linearGradient>
+    <linearGradient id="consumer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9f1cf"/>
+      <stop offset="1" stop-color="#bde0b4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#70849a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#70849a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="73" cy="52" r="62" fill="#ccecf1" opacity="0.28"/>
+  <circle cx="590" cy="273" r="82" fill="#d9efca" opacity="0.30"/>
+  <circle cx="530" cy="39" r="34" fill="#e6dfff" opacity="0.45"/>
+
+  <text x="32" y="34" fill="#40536b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Güvenilir Mesaj Akışı</text>
+  <text x="32" y="52" fill="#718198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Asenkron ve gevşek bağlı mimari</text>
+
+  <path d="M169 142 H229" fill="none" stroke="#7c91a7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="229,142 219,136 219,148" fill="#7c91a7"/>
+  <path d="M407 142 H469" fill="none" stroke="#7c91a7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="469,142 459,136 459,148" fill="#7c91a7"/>
+
+  <rect x="37" y="103" width="132" height="79" rx="18" fill="url(#producer)" filter="url(#shadow)"/>
+  <rect x="50" y="117" width="34" height="34" rx="10" fill="#f7ffff" opacity="0.82"/>
+  <path d="M61 128 h12 M61 134 h12 M61 140 h8" stroke="#4b9bab" stroke-width="2" stroke-linecap="round"/>
+  <text x="96" y="132" fill="#315d6b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Üretici</text>
+  <text x="96" y="150" fill="#527786" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sipariş Servisi</text>
+  <rect x="50" y="160" width="106" height="14" rx="7" fill="#8fcbd8" opacity="0.48"/>
+  <text x="62" y="171" fill="#396b78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">order.paid</text>
+
+  <rect x="230" y="82" width="177" height="121" rx="22" fill="url(#queue)" filter="url(#shadow)"/>
+  <text x="274" y="110" fill="#4b427f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Mesaj Kuyruğu</text>
+  <text x="278" y="128" fill="#655b95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kalıcı teslimat</text>
+  <rect x="253" y="142" width="131" height="13" rx="6.5" fill="#f4f1ff" opacity="0.92"/>
+  <rect x="253" y="160" width="131" height="13" rx="6.5" fill="#ede9ff" opacity="0.88"/>
+  <rect x="253" y="178" width="91" height="13" rx="6.5" fill="#e5dfff" opacity="0.83"/>
+  <circle cx="365" cy="184.5" r="4" fill="#8a7acb"/>
+  <path d="M365 181.5 v6 M362 184.5 h6" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+
+  <rect x="470" y="103" width="133" height="79" rx="18" fill="url(#consumer)" filter="url(#shadow)"/>
+  <rect x="483" y="117" width="34" height="34" rx="10" fill="#fbfff9" opacity="0.85"/>
+  <path d="M490 135 l6 6 13-14" fill="none" stroke="#5e9a58" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="527" y="132" fill="#426d3c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Tüketici</text>
+  <text x="527" y="150" fill="#63855d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">E-posta Servisi</text>
+  <text x="485" y="171" fill="#527d4d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İşle ve onayla</text>
+
+  <path d="M318 204 V239 H194" fill="none" stroke="#9a89c6" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="194,239 204,233 204,245" fill="#9a89c6"/>
+  <path d="M318 204 V239 H445" fill="none" stroke="#9a89c6" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="445,239 435,233 435,245" fill="#9a89c6"/>
+
+  <rect x="77" y="230" width="117" height="57" rx="16" fill="#ffe6bf" filter="url(#smallShadow)"/>
+  <circle cx="97" cy="251" r="10" fill="#fff6e6"/>
+  <path d="M97 245 v7 M97 257.5 v0.5" stroke="#bd7e28" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="115" y="252" fill="#8e5d22" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yeniden Dene</text>
+  <text x="91" y="273" fill="#a36d2a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Artan bekleme</text>
+
+  <rect x="445" y="230" width="117" height="57" rx="16" fill="#f8d6d6" filter="url(#smallShadow)"/>
+  <circle cx="465" cy="251" r="10" fill="#fff1f1"/>
+  <path d="M461 247 l8 8 M469 247 l-8 8" stroke="#bd6262" stroke-width="2" stroke-linecap="round"/>
+  <text x="483" y="252" fill="#914c4c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Ölü Mektup</text>
+  <text x="471" y="273" fill="#a76464" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hatalı mesaj</text>
+
+  <rect x="231" y="248" width="174" height="30" rx="15" fill="#ffffff" opacity="0.72"/>
+  <text x="254" y="268" fill="#596c7d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tekrar güvenli tüketici</text>
+</svg>

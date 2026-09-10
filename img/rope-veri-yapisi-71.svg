@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="ropeFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8ddff"/>
+      <stop offset="100%" stop-color="#d9f2ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#70859b" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#70859b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="34" r="60" fill="#d9efff" opacity="0.42"/>
+  <circle cx="596" cy="277" r="78" fill="#dff3d8" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566c">Dev metin düzenleme</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718294">Tek dize yerine dengeli parça ağacı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="72" width="165" height="158" rx="18" fill="#fff7f4"/>
+    <rect x="219" y="72" width="394" height="158" rx="18" fill="#faffff"/>
+  </g>
+
+  <text x="48" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9b5d54">Klasik dize</text>
+  <text x="48" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7f7372">Ortaya ekleme</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="47" y="133" width="124" height="29" rx="9" fill="#ffd9d1"/>
+    <rect x="47" y="174" width="124" height="29" rx="9" fill="#ffd9d1"/>
+  </g>
+  <text x="60" y="152" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#754d49">metin metin metin</text>
+  <path d="M109 164 L109 171" stroke="#c47a70" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="105,169 113,169 109,175" fill="#c47a70"/>
+  <text x="61" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#754d49">metin + yeni + ...</text>
+  <text x="48" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#bd675b">Kaydırma: O(n)</text>
+
+  <text x="240" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#527484">Rope ağacı</text>
+  <text x="510" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728894">ağırlık: 12</text>
+
+  <path d="M414 122 L338 151 M414 122 L490 151 M338 175 L294 195 M338 175 L382 195 M490 175 L448 195 M490 175 L536 195" fill="none" stroke="#8ba9b4" stroke-width="2" stroke-linecap="round"/>
+  <g filter="url(#smallShadow)">
+    <rect x="378" y="108" width="72" height="29" rx="10" fill="url(#ropeFill)"/>
+    <rect x="302" y="150" width="72" height="29" rx="10" fill="#d8efff"/>
+    <rect x="454" y="150" width="72" height="29" rx="10" fill="#d8efff"/>
+    <rect x="258" y="192" width="72" height="25" rx="9" fill="#dff3db"/>
+    <rect x="346" y="192" width="72" height="25" rx="9" fill="#dff3db"/>
+    <rect x="410" y="192" width="72" height="25" rx="9" fill="#dff3db"/>
+    <rect x="500" y="192" width="72" height="25" rx="9" fill="#dff3db"/>
+  </g>
+  <text x="397" y="127" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#465d78">12</text>
+  <text x="324" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476876">6</text>
+  <text x="476" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476876">6</text>
+  <text x="270" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6d59">parça</text>
+  <text x="358" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6d59">parça</text>
+  <text x="422" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6d59">parça</text>
+  <text x="512" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6d59">parça</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="250" width="586" height="49" rx="16" fill="#ffffff"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="45" y="260" width="104" height="28" rx="9" fill="#dcefff"/>
+    <rect x="190" y="260" width="104" height="28" rx="9" fill="#f8e2bc"/>
+    <rect x="335" y="260" width="104" height="28" rx="9" fill="#e9d9ff"/>
+    <rect x="480" y="260" width="113" height="28" rx="9" fill="#d9f0da"/>
+  </g>
+  <text x="65" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456878">Böl</text>
+  <text x="207" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#806445">Yeni parça</text>
+  <text x="350" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#654f83">Birleştir</text>
+  <text x="495" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d7254">Dengeli rope</text>
+
+  <path d="M151 274 L183 274" stroke="#829ba5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="183,270 183,278 190,274" fill="#829ba5"/>
+  <path d="M296 274 L328 274" stroke="#829ba5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="328,270 328,278 335,274" fill="#829ba5"/>
+  <path d="M441 274 L473 274" stroke="#829ba5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="473,270 473,278 480,274" fill="#829ba5"/>
+</svg>

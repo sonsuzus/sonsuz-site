@@ -9,6 +9,7 @@ tags:
   - sanal makine
   - derleyici
 toc: true
+image: /img/bytecode-ve-sanal-85.png
 ---
 
 Bir Python dosyasının, Java sınıfının veya C# projesinin ekranda sonuç üretmesi ilk bakışta sihir gibi görünebilir. Oysa kaynak kod ile işlemcinin anlayabildiği makine komutları arasında oldukça düzenli bir ara dünya vardır: **bytecode** ve onu çalıştıran **sanal makine (VM)**. Bu ikili, farklı işletim sistemlerinde tutarlı davranış sağlamanın ve geliştirici deneyimini iyileştirmenin güçlü yollarından biridir.
@@ -24,6 +25,9 @@ Bilgisayar işlemcisi doğrudan `if`, `for` veya `class` kavramlarını bilmez. 
 | Kaynak kod | `print(x + 1)` | Derleyici veya yorumlayıcı | Yüksek |
 | Bytecode | `LOAD x`, `ADD 1` | Sanal makine | Yüksek |
 | Makine kodu | CPU opcodları | İşlemci | Düşük |
+
+![bytecode-ve-sanal-85](/img/bytecode-ve-sanal-85.svg)
+
 
 Bu yolculuk basitleştirilmiş biçimde şöyle yazılabilir:
 

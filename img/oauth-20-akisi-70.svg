@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="client" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#bfd9f5"/>
+    </linearGradient>
+    <linearGradient id="user" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0d7"/>
+      <stop offset="100%" stop-color="#f8d6a7"/>
+    </linearGradient>
+    <linearGradient id="auth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8dcff"/>
+      <stop offset="100%" stop-color="#d1bdf2"/>
+    </linearGradient>
+    <linearGradient id="api" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f3e7"/>
+      <stop offset="100%" stop-color="#b9e0cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8095" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-35%" width="150%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60778d" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="44" r="70" fill="#d7ebff" opacity="0.38"/>
+  <circle cx="571" cy="274" r="95" fill="#d7f1dc" opacity="0.35"/>
+  <path d="M24 158 C113 111 161 221 249 174 S397 101 480 151 S565 205 622 148" fill="none" stroke="#c9dce9" stroke-width="2" stroke-dasharray="5 7" opacity="0.65"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516b">OAuth 2.0 · Yetkilendirme Kodu ve PKCE</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="79" width="126" height="82" rx="18" fill="url(#client)" stroke="#a7c8e6"/>
+    <rect x="183" y="79" width="126" height="82" rx="18" fill="url(#user)" stroke="#ebc68d"/>
+    <rect x="335" y="79" width="126" height="82" rx="18" fill="url(#auth)" stroke="#bfa9e7"/>
+    <rect x="487" y="79" width="122" height="82" rx="18" fill="url(#api)" stroke="#9dceb3"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="72" y="100" width="44" height="30" rx="6" stroke="#4d7ea8" stroke-width="2"/>
+    <path d="M84 140 h20 M94 130 v10" stroke="#4d7ea8" stroke-width="2"/>
+    <circle cx="246" cy="106" r="12" stroke="#aa7940" stroke-width="2"/>
+    <path d="M225 141 c2-16 40-16 42 0" stroke="#aa7940" stroke-width="2"/>
+    <rect x="374" y="99" width="48" height="34" rx="6" stroke="#7653a7" stroke-width="2"/>
+    <path d="M386 110 h24 M386 119 h16" stroke="#7653a7" stroke-width="2"/>
+    <ellipse cx="548" cy="104" rx="21" ry="8" stroke="#438767" stroke-width="2"/>
+    <path d="M527 104 v23 c0 5 42 5 42 0 v-23 M527 116 c0 5 42 5 42 0" stroke="#438767" stroke-width="2"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#29465c">
+    <text x="94" y="151" font-weight="700">Uygulama</text>
+    <text x="246" y="151" font-weight="700">Kullanıcı</text>
+    <text x="398" y="151" font-weight="700">Yetki Sunucusu</text>
+    <text x="548" y="151" font-weight="700">Kaynak API</text>
+  </g>
+
+  <g fill="none" stroke="#6f8ba1" stroke-width="2" stroke-linecap="round">
+    <path d="M157 106 H174"/>
+    <path d="M309 106 H326"/>
+    <path d="M461 106 H478"/>
+  </g>
+  <polygon points="174,101 181,106 174,111" fill="#6f8ba1"/>
+  <polygon points="326,101 333,106 326,111" fill="#6f8ba1"/>
+  <polygon points="478,101 485,106 478,111" fill="#6f8ba1"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#567087">
+    <text x="169" y="95">1. Yönlendir</text>
+    <text x="321" y="95">2. İzin</text>
+    <text x="473" y="95">6. API çağrısı</text>
+  </g>
+
+  <path d="M398 164 V196 H94 V171" fill="none" stroke="#8867b7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="89,172 94,165 99,172" fill="#8867b7"/>
+  <text x="246" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73529d">3. Yetkilendirme kodu</text>
+
+  <path d="M111 211 C165 241 325 241 373 211" fill="none" stroke="#4c86a7" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="367,209 377,209 372,217" fill="#4c86a7"/>
+  <text x="242" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416e8c">4. Kod + doğrulayıcı</text>
+
+  <path d="M461 213 C500 246 524 246 548 169" fill="none" stroke="#4b956d" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="543,173 550,164 552,175" fill="#4b956d"/>
+  <text x="521" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f7c5c">Erişim belirteci</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="173" y="267" width="294" height="34" rx="15" fill="#ffffff" opacity="0.9" stroke="#d2e0e8"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="226" y="289" fill="#4b7897" font-weight="700">Durum</text>
+    <text x="319" y="289" fill="#7653a7" font-weight="700">PKCE</text>
+    <text x="413" y="289" fill="#498263" font-weight="700">Dar kapsam</text>
+  </g>
+  <path d="M271 276 V292 M365 276 V292" stroke="#d8e2e8" stroke-width="1"/>
+  <circle cx="195" cy="284" r="5" fill="#85b7da"/>
+  <circle cx="288" cy="284" r="5" fill="#b39add"/>
+  <circle cx="382" cy="284" r="5" fill="#8cc5a4"/>
+</svg>

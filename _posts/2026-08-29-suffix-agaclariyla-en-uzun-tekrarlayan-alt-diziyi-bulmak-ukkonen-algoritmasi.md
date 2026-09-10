@@ -10,9 +10,13 @@ tags:
   - ukkonen
   - suffix tree
   - string algoritmaları
+image: /img/suffix-agaclariyla-en-11.png
 ---
 
 Bir DNA dizisindeki yinelenen gen parçalarını, kaynak koddaki kopyalanmış blokları ya da büyük bir metindeki en sık tekrar eden ifadeleri aradığınızı düşünün. Tüm alt dizileri üretip karşılaştırmak ilk anda cazip görünür; fakat uzunluğu $n$ olan bir dizide aday sayısı yaklaşık $O(n^2)$ seviyesine çıkar. Suffix ağacı (son ek ağacı), bu karmaşayı düzenli bir yapıya dönüştürür ve en uzun tekrarlayan alt diziyi etkileyici biçimde verimli bulmamızı sağlar.
+
+
+![suffix-agaclariyla-en-11](/img/suffix-agaclariyla-en-11.svg)
 
 ``
 

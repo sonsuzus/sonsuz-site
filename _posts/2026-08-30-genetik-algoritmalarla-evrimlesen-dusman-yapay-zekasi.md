@@ -10,9 +10,13 @@ tags:
   - game development
   - evrimsel hesaplama
   - unity
+image: /img/genetik-algoritmalarla-evrimlesen-11.png
 ---
 
 Oyunlardaki düşmanların çoğu, tasarımcının önceden yazdığı davranış ağaçları ve durum makineleriyle hareket eder. Bu yaklaşım güvenilir olsa da oyuncu aynı taktiği tekrar ettiğinde kolayca tahmin edilebilir hâle gelir. Genetik algoritmalar (GA) ise düşman stratejilerini bir popülasyon olarak ele alır: başarılı taktikler hayatta kalır, birbirleriyle çaprazlanır ve küçük mutasyonlarla yeni çözümler üretir. Sonuç, oyuncunun “hep köşede bekleyip keskin nişancı kullanma” alışkanlığına zamanla karşı önlem geliştirebilen daha dinamik bir rakiptir.
+
+![genetik-algoritmalarla-evrimlesen-11](/img/genetik-algoritmalarla-evrimlesen-11.svg)
+
 ``
 
 Genetik algoritmanın temel fikri biyolojik evrimden gelir. Her düşman politikası bir **kromozom**, politikayı oluşturan sayısal kararlar ise **gen** kabul edilir. Örneğin kromozom; saldırı mesafesi, siper arama isteği, takım arkadaşına yaklaşma oranı ve geri çekilme eşiği içerebilir. Bir nesildeki tüm aday çözümler popülasyonu oluşturur. Her aday kısa bir simülasyonda oyuncuya karşı denenir; ardından başarısına göre bir uygunluk (fitness) puanı alır.

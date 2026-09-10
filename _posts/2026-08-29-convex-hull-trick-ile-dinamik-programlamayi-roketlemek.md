@@ -9,6 +9,7 @@ tags:
   - convex hull trick
   - algoritmalar
 toc: true
+image: /img/convex-hull-trick-74.png
 ---
 
 Bazı dinamik programlama problemleri ilk bakışta masum görünür: Her durum için önceki tüm durumları denersiniz, en iyisini seçersiniz. Ancak bu yaklaşım çoğu zaman $O(n^2)$ maliyet üretir. Convex Hull Trick (CHT), geçiş maliyetinin doğrusal fonksiyonlara ayrıştığı özel durumlarda bu taramayı akıllı bir geometrik sorguya dönüştürür. Doğru koşullarda karmaşıklığı $O(n \log n)$, hatta $O(n)$ seviyesine indirebilir.
@@ -27,6 +28,9 @@ Burada her önceki $j$ durumu, $y = m_jx + b_j$ biçiminde bir doğru olarak dü
 | Kaba kuvvet DP | Tüm $j<i$ değerlerini dene | $O(n^2)$ | Küçük $n$ |
 | Li Chao Tree | Doğru ekle ve nokta sorgula | $O(n\log X)$ | Sıralı olmayan eğim ve sorgular |
 | Monoton CHT | Kuyrukta doğru tut | $O(n)$ | Eğimler ve sorgular sıralı |
+
+![convex-hull-trick-74](/img/convex-hull-trick-74.svg)
+
 
 ### Geometrik sezgi: Neden bazı doğrular çöpe gider?
 

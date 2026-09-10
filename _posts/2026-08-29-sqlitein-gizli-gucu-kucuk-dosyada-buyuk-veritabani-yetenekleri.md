@@ -11,7 +11,11 @@ tags:
   - gömülü sistemler
   - performans
 toc: true
+image: /img/sqlitein-gizli-gucu-95.png
 ---
+
+![sqlitein-gizli-gucu-95](/img/sqlitein-gizli-gucu-95.svg)
+
 
 SQLite, çoğu geliştiricinin telefonunda, masaüstü uygulamasında veya küçük bir projede kullandığı “tek dosyalık veritabanı” olarak bilinir. Ancak onu yalnızca basit bir `SELECT` ve `INSERT` aracı saymak büyük haksızlık olur. Sunucu gerektirmemesi, yapılandırma maliyetinin düşük olması ve ACID garantileri sunması; SQLite’ı prototiplerden üretim sistemlerine uzanan etkileyici bir seçenek hâline getirir.
 

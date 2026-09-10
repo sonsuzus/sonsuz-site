@@ -8,6 +8,7 @@ tags:
   - makine öğrenmesi
   - svm
   - kernel trick
+image: /img/svmde-kernel-trick-37.png
 ---
 
 Destek Vektör Makineleri (SVM), sınıflandırma dünyasının cetvelli öğrencisi gibidir: sınıfları ayıran en güvenli doğruyu bulmak ister. Ancak gerçek veriler nadiren iki kümeye ayrılmış, uslu uslu duran noktalar içerir. İç içe halkalar, kıvrımlı karar bölgeleri ve karmaşık örüntüler ortaya çıktığında doğrusal bir hiper düzlem yetersiz kalır. İşte kernel trick, veriyi görünmez biçimde daha yüksek boyutlu bir uzaya taşıyarak SVM’nin doğrusal araçlarla doğrusal olmayan sınırlar kurmasını sağlar.
@@ -79,3 +80,6 @@ Bu veri kümesinde lineer kernel çoğunlukla iki hilali tek çizgiyle ayıramaz
 | Sonuçlar tutarsız | Ölçekleme yok | `StandardScaler` kullanın |
 
 Özetle kernel trick, “daha fazla özellik üret” demeden daha zengin bir geometri sunar. En iyi kernel evrensel değildir: veri yapısı, hesaplama bütçesi ve çapraz doğrulama sonuçları birlikte karar vermelidir.
+
+![svmde-kernel-trick-37](/img/svmde-kernel-trick-37.svg)
+

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="cnf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3efff"/>
+      <stop offset="100%" stop-color="#d5e8fb"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7f6dd"/>
+      <stop offset="100%" stop-color="#caeac6"/>
+    </linearGradient>
+    <linearGradient id="decision" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0cc"/>
+      <stop offset="100%" stop-color="#f9ddb0"/>
+    </linearGradient>
+    <linearGradient id="success" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f4e7"/>
+      <stop offset="100%" stop-color="#bae7d1"/>
+    </linearGradient>
+    <linearGradient id="conflict" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe5e4"/>
+      <stop offset="100%" stop-color="#f7c9cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7190a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7190a5" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="565" cy="48" r="78" fill="#dceef1" opacity="0.42"/>
+  <circle cx="89" cy="286" r="92" fill="#e4f2d8" opacity="0.48"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536a">SAT ÇÖZÜM AKIŞI</text>
+  <text x="32" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668093">CNF → yayılım → karar → geri izleme</text>
+
+  <path d="M154 143 H185" fill="none" stroke="#86a7ba" stroke-width="2.5"/>
+  <polygon points="185,143 177,138 177,148" fill="#86a7ba"/>
+  <path d="M330 143 H361" fill="none" stroke="#86a7ba" stroke-width="2.5"/>
+  <polygon points="361,143 353,138 353,148" fill="#86a7ba"/>
+
+  <path d="M447 116 C472 93 486 88 507 88" fill="none" stroke="#77ad92" stroke-width="2.5"/>
+  <polygon points="507,88 499,83 500,93" fill="#77ad92"/>
+  <path d="M447 170 C473 198 483 220 507 229" fill="none" stroke="#d88c90" stroke-width="2.5"/>
+  <polygon points="507,229 499,223 497,233" fill="#d88c90"/>
+
+  <path d="M550 195 C550 172 514 170 486 170 C469 170 460 162 447 153" fill="none" stroke="#b98273" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <polygon points="447,153 452,162 458,154" fill="#b98273"/>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="102" width="122" height="82" rx="18" fill="url(#cnf)" stroke="#c1d9ed"/>
+  </g>
+  <rect x="47" y="118" width="25" height="22" rx="7" fill="#ffffff" opacity="0.88"/>
+  <text x="54" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47708b">∨</text>
+  <text x="83" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385b73">CNF</text>
+  <text x="47" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#57758a">(a ∨ ¬b)</text>
+  <text x="47" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#57758a">ve klozlar</text>
+
+  <g filter="url(#shadow)">
+    <rect x="185" y="96" width="145" height="94" rx="18" fill="url(#core)" stroke="#b9ddb4"/>
+  </g>
+  <circle cx="212" cy="124" r="14" fill="#ffffff" opacity="0.86"/>
+  <path d="M206 124 H218 M212 118 V130" stroke="#579366" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="236" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#396b48">Birim yayılım</text>
+  <text x="202" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567961">Zorunlu atamalar</text>
+  <text x="202" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567961">Saf literal eleme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="361" y="102" width="86" height="82" rx="18" fill="url(#decision)" stroke="#efd09a"/>
+  </g>
+  <path d="M404 116 L427 142 L404 169 L381 142 Z" fill="#fffaf0" stroke="#d69e4e" stroke-width="1.5"/>
+  <text x="395" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#89622e">x?</text>
+  <text x="376" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#856837">Karar</text>
+
+  <g filter="url(#soft)">
+    <rect x="507" y="56" width="104" height="64" rx="16" fill="url(#success)" stroke="#a8d7bf"/>
+  </g>
+  <circle cx="529" cy="78" r="11" fill="#ffffff" opacity="0.85"/>
+  <path d="M524 78 L528 82 L535 74" fill="none" stroke="#4a9b71" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="547" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#347356">SAT</text>
+  <text x="520" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53816a">Çözüm var</text>
+
+  <g filter="url(#soft)">
+    <rect x="507" y="196" width="104" height="65" rx="16" fill="url(#conflict)" stroke="#e7b5b9"/>
+  </g>
+  <circle cx="529" cy="219" r="11" fill="#ffffff" opacity="0.85"/>
+  <path d="M525 215 L533 223 M533 215 L525 223" stroke="#c75e68" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="547" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a34e58">Çelişki</text>
+  <text x="520" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b6970">Geri izleme</text>
+
+  <g filter="url(#soft)">
+    <rect x="179" y="222" width="268" height="58" rx="17" fill="#ffffff" opacity="0.86" stroke="#d5e4e5"/>
+  </g>
+  <path d="M201 251 H227" stroke="#74a3bc" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="227,251 220,246 220,256" fill="#74a3bc"/>
+  <path d="M256 251 H282" stroke="#6daf87" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="282,251 275,246 275,256" fill="#6daf87"/>
+  <path d="M311 251 H337" stroke="#d59a55" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="337,251 330,246 330,256" fill="#d59a55"/>
+  <text x="350" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587383">DPLL döngüsü</text>
+  <text x="200" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8392">Sadeleştir</text>
+  <text x="256" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8392">Dallan</text>
+  <text x="311" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8392">Doğrula</text>
+</svg>

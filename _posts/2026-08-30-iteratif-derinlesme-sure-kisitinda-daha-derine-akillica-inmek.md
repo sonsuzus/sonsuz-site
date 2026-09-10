@@ -8,9 +8,13 @@ tags:
   - algoritmalar
   - arama
   - yarışma programlama
+image: /img/iteratif-derinlesme-sure-65.png
 ---
 
 Olimpiyat ve oyun programlama yarışmalarında bazen doğru cevabı bulmak kadar, onu süre dolmadan bulmak da önemlidir. Arama uzayının derinliği önceden bilinmiyorsa ya da her hamlenin maliyeti farklıysa, tek seferde çok derine dalmak risklidir: algoritma en umut verici çözümü görmeden zaman aşımına uğrayabilir. İteratif derinleşme (Iterative Deepening), arama sınırını küçükten büyüğe artırarak bu riski yönetir. Önce derinlik 0, sonra 1, 2, 3 diye ilerler; her turda çözüm bulunursa durur.
+
+
+![iteratif-derinlesme-sure-65](/img/iteratif-derinlesme-sure-65.svg)
 
 ``
 

@@ -9,9 +9,13 @@ tags:
   - satranç motoru
   - yapay zeka
 toc: true
+image: /img/minimax-algoritmasinda-tahta-80.png
 ---
 
 Bir satranç motoru yalnızca taş saymaz; şah güvenliğini, piyon yapısını, merkez kontrolünü ve taşların gelecekteki hareket alanını da sayısallaştırmaya çalışır. Minimax algoritması hamle ağacında en iyi kararı ararken, ağacın derinliğinin yetmediği yaprak düğümlerde bir **değerlendirme fonksiyonuna** ihtiyaç duyar. Bu fonksiyon, “Bu konum kimin için daha iyi?” sorusunu matematiksel bir skora dönüştürür.
+
+![minimax-algoritmasinda-tahta-80](/img/minimax-algoritmasinda-tahta-80.svg)
+
 ``
 
 Temel yaklaşım, konumu beyaz açısından pozitif ve siyah açısından negatif bir değerle ifade etmektir. En yaygın formül şöyledir:
