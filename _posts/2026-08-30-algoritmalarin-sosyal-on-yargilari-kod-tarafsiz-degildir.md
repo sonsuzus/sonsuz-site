@@ -11,9 +11,13 @@ tags:
   - veri bilimi
   - önyargı
 toc: true
+image: /img/algoritmalarin-sosyal-on-38.png
 ---
 
 Bir algoritmanın ayrımcılık yapması için kötü niyetli bir geliştiriciye ihtiyacı yoktur. Çoğu zaman algoritma yalnızca geçmişte insanların verdiği kararları, toplumsal eşitsizlikleri ve görünmez kalıpları çok hızlı biçimde öğrenir. İşe alım sisteminden kredi puanına, yüz tanımadan içerik önerilerine kadar otomatik karar mekanizmaları; verinin içindeki sosyal izleri geleceğe taşıyabilir. Sorun, makinenin “önyargılı düşünmesi” değil, istatistiksel olarak başarılı görünürken tarihsel adaletsizlikleri yeniden üretmesidir.
+
+
+![algoritmalarin-sosyal-on-38](/img/algoritmalarin-sosyal-on-38.svg)
 
 ``
 

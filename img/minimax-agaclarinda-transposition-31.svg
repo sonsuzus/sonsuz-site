@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9ddff"/>
+      <stop offset="100%" stop-color="#d9efff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7190a6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7190a6" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="64" cy="32" r="48" fill="#d8f1ef" opacity="0.55"/>
+  <circle cx="603" cy="291" r="68" fill="#e3dcfa" opacity="0.48"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">Minimax Araması ve Transposition Table</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8192">Aynı pozisyonu yeniden hesaplama</text>
+
+  <g stroke="#91aabd" stroke-width="2.2" fill="none" stroke-linecap="round">
+    <path d="M108 117 L157 86"/>
+    <path d="M108 117 L157 149"/>
+    <path d="M108 204 L157 149"/>
+    <path d="M108 204 L157 234"/>
+    <path d="M227 86 L282 151"/>
+    <path d="M227 149 L282 151"/>
+    <path d="M227 234 L282 151"/>
+  </g>
+
+  <polygon points="157,86 148,85 153,93" fill="#91aabd"/>
+  <polygon points="157,149 148,144 148,154" fill="#91aabd"/>
+  <polygon points="157,234 149,227 147,237" fill="#91aabd"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="45" y="92" width="63" height="50" rx="15" fill="#cfeafb"/>
+    <text x="76.5" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#275773">Hamle A</text>
+    <text x="76.5" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52758b">önce</text>
+
+    <rect x="45" y="179" width="63" height="50" rx="15" fill="#d5f0d7"/>
+    <text x="76.5" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356847">Hamle B</text>
+    <text x="76.5" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52775e">önce</text>
+
+    <rect x="157" y="63" width="70" height="44" rx="13" fill="#e4f2ff"/>
+    <text x="192" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d78">A → B</text>
+
+    <rect x="157" y="127" width="70" height="44" rx="13" fill="#e9f7df"/>
+    <text x="192" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426b45">Aynı konum</text>
+
+    <rect x="157" y="212" width="70" height="44" rx="13" fill="#f9ead5"/>
+    <text x="192" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#865d2c">B → A</text>
+  </g>
+
+  <text x="174" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718696">Farklı yollar</text>
+
+  <g filter="url(#shadow)">
+    <rect x="282" y="91" width="151" height="122" rx="21" fill="url(#table)" stroke="#b9a7df"/>
+    <rect x="301" y="111" width="113" height="28" rx="9" fill="#ffffff" opacity="0.7"/>
+    <text x="357.5" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#58437c">Transposition Table</text>
+    <text x="306" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c6680">Anahtar: Zobrist</text>
+    <text x="306" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c6680">Derinlik · Skor</text>
+    <text x="306" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c6680">Bayrak · En iyi hamle</text>
+  </g>
+
+  <path d="M433 151 L471 151" stroke="#7895aa" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="477,151 467,145 467,157" fill="#7895aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="477" y="92" width="125" height="120" rx="20" fill="#d9f1eb" stroke="#a8d3c9"/>
+    <text x="539.5" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#246653">Alpha-Beta</text>
+    <rect x="495" y="133" width="89" height="24" rx="8" fill="#ffffff" opacity="0.72"/>
+    <text x="539.5" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397463">Tablo kontrolü</text>
+    <rect x="495" y="166" width="89" height="25" rx="8" fill="#bfe8d7"/>
+    <text x="539.5" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#276651">Alt ağacı atla</text>
+  </g>
+
+  <path d="M539 212 L539 250" stroke="#7895aa" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="539,256 533,246 545,246" fill="#7895aa"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="454" y="257" width="170" height="38" rx="15" fill="#fff4d9"/>
+    <circle cx="477" cy="276" r="10" fill="#f4c767"/>
+    <path d="M473 276 L476 279 L482 272" stroke="#8b6521" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="548" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79602e">Daha az hesaplama</text>
+  </g>
+
+  <path d="M282 151 C265 151 257 151 244 151" stroke="#b6c7d3" stroke-width="1.5" stroke-dasharray="4 5" fill="none"/>
+  <text x="260" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718696">eşleşme</text>
+</svg>

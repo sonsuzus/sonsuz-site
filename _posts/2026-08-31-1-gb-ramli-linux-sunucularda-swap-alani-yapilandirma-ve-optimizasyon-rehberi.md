@@ -9,9 +9,13 @@ tags:
   - swap
   - sunucu optimizasyonu
 toc: true
+image: /img/1-gb-ramli-53.png
 ---
 
 Yalnızca 1 GB RAM’e sahip bir Linux sunucu; küçük web siteleri, kişisel projeler ve düşük trafikli API’ler için yeterli olabilir. Ancak veritabanı, PHP-FPM veya Docker gibi servisler aynı anda belleğe yüklendiğinde RAM hızla tükenebilir. Swap alanı, tam bu noktada devreye girerek sunucunun ani bellek krizlerinde çökmesi yerine biraz yavaşlayarak çalışmaya devam etmesini sağlar.
+
+
+![1-gb-ramli-53](/img/1-gb-ramli-53.svg)
 
 ``
 

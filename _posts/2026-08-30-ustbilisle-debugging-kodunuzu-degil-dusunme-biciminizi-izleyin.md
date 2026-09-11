@@ -9,7 +9,11 @@ tags:
   - debugging
   - hata çözümü
 toc: true
+image: /img/ustbilisle-debugging-kodunuzu-64.png
 ---
+
+![ustbilisle-debugging-kodunuzu-64](/img/ustbilisle-debugging-kodunuzu-64.svg)
+
 
 Bir hata ayıklama oturumunda en pahalı kaynak çoğu zaman CPU, IDE ya da kahve değildir: dikkatimizdir. Üstbiliş (metacognition), kendi düşünme sürecimizi gözlemleme ve gerektiğinde yönlendirme becerisidir. Yazılımcı için bu, sadece “bu kod neden çalışmıyor?” sorusunu sormak değil; “Ben bu hatanın sebebi hakkında neden böyle düşünüyorum, hangi varsayımı test ettim ve hangisini kanıt sanıyorum?” diye de sormaktır. Bu ikinci soru, özellikle inatçı mantık hatalarında oyunun kurallarını değiştirir.
 ``

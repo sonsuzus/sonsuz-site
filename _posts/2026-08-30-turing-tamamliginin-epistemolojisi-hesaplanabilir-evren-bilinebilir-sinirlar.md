@@ -9,6 +9,7 @@ tags:
   - hesaplanabilirlik
   - felsefe
   - bilgisayar bilimi
+image: /img/turing-tamamliginin-epistemolojisi-26.png
 ---
 
 Turing tamamlığı çoğu zaman bir programlama dili rozetine indirgenir: Döngüsü ve koşulu varsa, yeterli bellekle her şeyi hesaplar denir. Fakat bu ifade yalnızca teknik bir özellik değildir; bilginin ne olduğu, hangi soruların ilkesel olarak yanıtlanabileceği ve evrenin bir algoritma gibi düşünülebilip düşünülemeyeceği üzerine güçlü bir felsefi provokasyondur. Kritik ayrım şudur: Bir şeyi *ifade edebilmek*, onu pratikte hızlıca çözebilmek ve onun hakkında kesin bilgiye ulaşabilmek aynı şey değildir.
@@ -29,6 +30,9 @@ bir Turing makinesi her girdi $n$ için duruyor ve $f(n)$ sonucunu üretiyorsa, 
 | Hesaplama karmaşıklığı | Çözüm ne kadar zaman/bellek ister? | Pratik kaynak sınırı |
 | Karar verilemezlik | Her girdi için kesin algoritma var mı? | Mantıksal, mutlak sınır |
 | Kaos | Başlangıç koşullarına hassasiyet var mı? | Ölçüm ve öngörü sınırı |
+
+![turing-tamamliginin-epistemolojisi-26](/img/turing-tamamliginin-epistemolojisi-26.svg)
+
 
 Bu tablodaki en sarsıcı satır karar verilemezliktir. Durma problemi, rastgele bir programın belirli bir girdide sonsuza dek çalışıp çalışmayacağını bütün programlar için doğru biçimde saptayan genel bir programın var olamayacağını kanıtlar. Yani daha güçlü bir bilgisayar, yeterince RAM veya daha şık bir yapay zekâ bu engeli ortadan kaldırmaz. Engel mühendislikte değil, ispatın kendisindedir.
 

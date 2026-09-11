@@ -8,6 +8,7 @@ tags:
   - programlama eğitimi
   - bilişsel yük teorisi
   - öğretim tasarımı
+image: /img/programlama-ogretiminde-bilissel-26.png
 ---
 
 Bir öğrenciye `for` döngüsünü anlatırken aynı anda değişken türleri, sayaç mantığı, koşullar, süslü parantezler ve hata mesajlarıyla saldırmak, iyi niyetli bir öğretim kazasına dönüşebilir. Öğrenci konuyu “anlamıyor” değildir; çoğu zaman çalışma belleği dolmuştur. Bilişsel Yük Teorisi, programlama eğitiminde bilgiyi küçük, anlamlı ve yönetilebilir parçalar hâlinde sunarak bu tıkanmayı azaltmamıza yardım eder.
@@ -26,6 +27,9 @@ Burada **içsel yük**, konunun doğal karmaşıklığıdır: iç içe döngüle
 | Kodla açıklamayı farklı yerlerde vermek | Gereksiz arama maliyeti | Açıklamayı ilgili satırın yanına koymak |
 | “Deneyin bakalım” diye başlamak | Acemide belirsizlik yaratır | Önce çözümlü örnek sunmak |
 | Her örnekte farklı isimlendirme kullanmak | Şema oluşumunu yavaşlatır | Tutarlı değişken isimleri kullanmak |
+
+![programlama-ogretiminde-bilissel-26](/img/programlama-ogretiminde-bilissel-26.svg)
+
 
 İlk güçlü yöntem **parçalama**dır. Örneğin öğrenciden doğrudan “listedeki çift sayıların toplamını bulan program” yazmasını istemek yerine görevi mikro hedeflere ayırın: listeyi tanı, bir elemanı oku, çiftlik kontrolü yap, toplam değişkenini güncelle. Her adım, önceki adımın üstüne yerleşir. Bu yaklaşım, bilişsel yükü azaltırken öğrencinin “kod büyüsü” yerine neden-sonuç ilişkisi kurmasını sağlar.
 

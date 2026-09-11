@@ -9,9 +9,13 @@ tags:
   - telegram-bot
   - fsm
 toc: true
+image: /img/aiogram-ile-telegram-31.png
 ---
 
 Bir Telegram botunun kullanıcıya art arda sorular sorması ilk bakışta basit görünür: adı sor, yanıtı kaydet, yaşı sor ve işlemi tamamla. Fakat aynı anda yüzlerce kullanıcı konuşmaya başladığında hangi yanıtın hangi soruya ait olduğunu bilmek zorlaşır. Aiogram’un Finite State Machine, yani FSM sistemi, her kullanıcı için konuşmanın mevcut adımını ve geçici verilerini düzenli biçimde yönetmemizi sağlar.
+
+
+![aiogram-ile-telegram-31](/img/aiogram-ile-telegram-31.svg)
 
 ``
 

@@ -10,7 +10,11 @@ tags:
   - yazılım etiği
   - toplum
 toc: true
+image: /img/teknoloji-determinizmi-kodlarimiz-93.png
 ---
+
+![teknoloji-determinizmi-kodlarimiz-93](/img/teknoloji-determinizmi-kodlarimiz-93.svg)
+
 
 Bir sabah telefonunuzun önerdiği videoyu izleyip, navigasyonun çizdiği yoldan gidip, alışveriş uygulamasının hatırlattığı ürünü satın aldığınızda küçük bir soru belirir: Kararları gerçekten siz mi veriyorsunuz? Teknoloji determinizmi, teknolojik araçların yalnızca hayatı kolaylaştırmadığını; toplumun kurumlarını, kültürel normlarını ve bireysel alışkanlıklarını güçlü biçimde şekillendirdiğini savunan yaklaşımdır. Ancak bu yaklaşımın en tartışmalı kelimesi “zorunlu”dur.
 

@@ -11,6 +11,7 @@ tags:
   - dopamin
   - eğitim teknolojileri
 toc: true
+image: /img/oyunlastirma-psikolojisi-puan-33.png
 ---
 
 Bir öğrenme platformunda çözülen her sorudan sonra puan kazanmak, haftalık sıralamada yükselmek veya “Python Kaşifi” rozeti almak basit arayüz süsleri değildir. Bunlar, davranış tasarımının güçlü araçlarıdır. Doğru kullanıldığında öğrencinin derse geri dönme isteğini artırır; yanlış kurgulandığında ise öğrenmeyi yalnızca puan avına dönüştürebilir. Oyunlaştırmayı anlamak için ödülün kendisinden önce, ödül beklentisinin zihinde nasıl çalıştığına bakmak gerekir.
@@ -29,6 +30,9 @@ Bir öğrenci kendi hedefini seçebiliyorsa özerklik hisseder. Küçük görevl
 | Rozet | Ustalığın tanınması | “10 hata ayıklama görevi” rozeti | Kolay rozetlerin değersizleşmesi |
 | Liderlik tablosu | Sosyal karşılaştırma | Haftalık algoritma ligi | Başlangıç seviyesinde kaygı |
 | Seri | Alışkanlık oluşturma | 7 gün üst üste çalışma | Seriyi kaybetme stresi |
+
+![oyunlastirma-psikolojisi-puan-33](/img/oyunlastirma-psikolojisi-puan-33.svg)
+
 
 ## Dopamin: “mutluluk kimyasalı” değil, beklenti sinyali
 

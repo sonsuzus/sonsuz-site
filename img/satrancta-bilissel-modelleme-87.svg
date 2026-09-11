@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8ddff"/>
+      <stop offset="1" stop-color="#d5ecff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6c8194" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#59758a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="119" fill="#ffffff" opacity="0.36"/>
+  <circle cx="320" cy="160" r="93" fill="none" stroke="#c8dfdf" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <!-- Girdi: Satranç tahtası -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="92" width="150" height="136" rx="18" fill="#ffffff"/>
+    <text x="105" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365064" font-weight="600">POZİSYON</text>
+    <g transform="translate(52 130)">
+      <rect x="0" y="0" width="88" height="88" rx="6" fill="#d6e7d1"/>
+      <path d="M22 0H44V22H22ZM66 0H88V22H66ZM0 22H22V44H0ZM44 22H66V44H44ZM22 44H44V66H22ZM66 44H88V66H66ZM0 66H22V88H0ZM44 66H66V88H44Z" fill="#8eac9d"/>
+      <g fill="#405b69">
+        <circle cx="33" cy="12" r="6"/>
+        <path d="M70 5l5 8-5 8-5-8z"/>
+        <path d="M10 52h10l-2-9h-6z"/>
+        <circle cx="55" cy="76" r="6"/>
+      </g>
+      <g fill="#fbfcff">
+        <path d="M30 33h8l-2-8h-4z"/>
+        <path d="M72 48l5 8-5 8-5-8z"/>
+        <circle cx="11" cy="77" r="6"/>
+      </g>
+    </g>
+    <rect x="146" y="141" width="19" height="19" rx="9.5" fill="#ffd7a8"/>
+    <path d="M151 151h8M155 147v8" stroke="#a45a2b" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="155" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b5c44">İpucu</text>
+  </g>
+
+  <!-- Ok sol -->
+  <path d="M184 160H211" fill="none" stroke="#799ca7" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M211 160l-8-6v12z" fill="#799ca7"/>
+
+  <!-- Merkez bilişsel model -->
+  <g filter="url(#shadow)">
+    <rect x="215" y="82" width="202" height="157" rx="28" fill="url(#core)" stroke="#c7b9e9" stroke-width="1.2"/>
+    <text x="316" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a456b" font-weight="700">BİLİŞSEL MODEL</text>
+
+    <g filter="url(#soft)">
+      <rect x="237" y="128" width="73" height="37" rx="12" fill="#fff4d9"/>
+      <text x="273.5" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805e2d">Örüntüler</text>
+      <rect x="322" y="128" width="73" height="37" rx="12" fill="#def3eb"/>
+      <text x="358.5" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#276957">Dikkat</text>
+    </g>
+
+    <path d="M310 146h10" stroke="#80759d" stroke-width="1.5"/>
+    <path d="M316 142l5 4-5 4z" fill="#80759d"/>
+
+    <g filter="url(#soft)">
+      <rect x="257" y="183" width="120" height="34" rx="12" fill="#ffffff"/>
+      <text x="317" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#465c6a">Aday hamle seçimi</text>
+    </g>
+    <path d="M273 166v12M359 166v12" stroke="#80759d" stroke-width="1.5"/>
+    <path d="M273 178l-4-6h8zM359 178l-4-6h8z" fill="#80759d"/>
+  </g>
+
+  <!-- Üst veri -->
+  <g filter="url(#soft)">
+    <rect x="238" y="25" width="154" height="35" rx="14" fill="#e2f1ff"/>
+    <circle cx="260" cy="42.5" r="8" fill="#87b9db"/>
+    <path d="M257 43c2-5 5-5 7 0M259 46h3" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="324" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d7b">Göz ve ses verisi</text>
+  </g>
+  <path d="M315 61v15" stroke="#7d9ead" stroke-width="2" stroke-linecap="round"/>
+  <path d="M315 76l-5-7h10z" fill="#7d9ead"/>
+
+  <!-- Sağ sonuçlar -->
+  <path d="M421 160h27" fill="none" stroke="#799ca7" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M448 160l-8-6v12z" fill="#799ca7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="452" y="64" width="157" height="71" rx="18" fill="#ffffff"/>
+    <rect x="468" y="80" width="34" height="34" rx="11" fill="#ffe0df"/>
+    <path d="M477 101l6-8 5 4 6-9" fill="none" stroke="#be6662" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="519" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b5e69" font-weight="600">Usta bakışı</text>
+    <text x="519" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71808a">Öncelik tahmini</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="452" y="181" width="157" height="71" rx="18" fill="#ffffff"/>
+    <rect x="468" y="197" width="34" height="34" rx="11" fill="#e2f1ce"/>
+    <path d="M476 208h18M476 214h13M476 220h9" stroke="#5f9270" stroke-width="2" stroke-linecap="round"/>
+    <text x="519" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b5e69" font-weight="600">Öğrenme desteği</text>
+    <text x="519" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71808a">Gerekçeli geri bildirim</text>
+  </g>
+
+  <path d="M430 161c8-17 10-37 20-53" fill="none" stroke="#9ab2b5" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <path d="M430 161c8 18 10 36 20 53" fill="none" stroke="#9ab2b5" stroke-width="1.5" stroke-dasharray="3 4"/>
+
+  <!-- Alt açıklama -->
+  <g filter="url(#soft)">
+    <rect x="76" y="266" width="488" height="31" rx="15.5" fill="#ffffff" opacity="0.88"/>
+    <circle cx="102" cy="281.5" r="6" fill="#aa91d5"/>
+    <text x="116" y="285.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#566c79">Taşlar → anlamlı kümeler → dikkat rotası → açıklanabilir karar</text>
+  </g>
+</svg>

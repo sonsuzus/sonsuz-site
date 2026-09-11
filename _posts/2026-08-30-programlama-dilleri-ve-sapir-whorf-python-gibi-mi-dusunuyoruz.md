@@ -11,9 +11,13 @@ tags:
   - sapir-whorf
   - yazılım düşüncesi
 toc: true
+image: /img/programlama-dilleri-ve-86.png
 ---
 
 Bir programlama dili yalnızca bilgisayara talimat vermenin aracı değildir; aynı zamanda geliştiricinin problemi nasıl parçaladığını, hangi çözümleri önce aklına getirdiğini ve hangi maliyetleri görünmez kabul ettiğini etkileyen bir düşünme ortamıdır. Sapir-Whorf hipotezinin güçlü yorumu, konuştuğumuz dilin düşüncemizi kesin biçimde belirlediğini söyler. Programlamaya uyarladığımızda bu iddia fazla sert görünür: Python kullanan bir kişi C++ tarzı düşünemez mi? Elbette düşünebilir. Ancak zayıf yorum çok daha ikna edicidir: Dil, bazı zihinsel yolları kolaylaştırır; bazılarını ise daha zahmetli ve dolayısıyla daha az görünür hâle getirir.
+
+![programlama-dilleri-ve-86](/img/programlama-dilleri-ve-86.svg)
+
 ``
 
 ## Hipotezden kod editörüne

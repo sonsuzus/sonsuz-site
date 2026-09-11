@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfeaff"/>
+      <stop offset="100%" stop-color="#cbdcf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6c8199" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8199" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="61" cy="42" r="67" fill="#d9f2eb" opacity="0.45"/>
+  <circle cx="586" cy="279" r="89" fill="#dce9ff" opacity="0.48"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6175" font-weight="600">Çevrimiçi Toplulukta İtibar Ekonomisi</text>
+
+  <!-- connectors left -->
+  <path d="M175 93 C204 93 211 119 236 132" fill="none" stroke="#8ca4bc" stroke-width="2"/>
+  <polygon points="236,132 226,128 230,138" fill="#8ca4bc"/>
+  <path d="M175 160 C202 160 211 160 231 160" fill="none" stroke="#8ca4bc" stroke-width="2"/>
+  <polygon points="239,160 229,155 229,165" fill="#8ca4bc"/>
+  <path d="M175 227 C204 227 211 201 236 188" fill="none" stroke="#8ca4bc" stroke-width="2"/>
+  <polygon points="236,188 230,182 226,192" fill="#8ca4bc"/>
+
+  <!-- connectors right -->
+  <path d="M404 139 C431 118 443 94 468 94" fill="none" stroke="#80a999" stroke-width="2"/>
+  <polygon points="468,94 458,89 458,99" fill="#80a999"/>
+  <path d="M409 160 C435 160 442 160 466 160" fill="none" stroke="#80a999" stroke-width="2"/>
+  <polygon points="474,160 464,155 464,165" fill="#80a999"/>
+  <path d="M404 181 C431 202 443 226 468 226" fill="none" stroke="#80a999" stroke-width="2"/>
+  <polygon points="468,226 458,221 458,231" fill="#80a999"/>
+
+  <!-- left cards -->
+  <g filter="url(#softShadow)">
+    <rect x="30" y="64" width="145" height="57" rx="16" fill="#fff4d9"/>
+    <circle cx="54" cy="92" r="14" fill="#ffd98c"/>
+    <path d="M49 93 l4 4 7 -9" fill="none" stroke="#986b18" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536272" font-weight="600">Kaliteli katkı</text>
+    <text x="78" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748394">Yanıt ve kaynak</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="30" y="132" width="145" height="57" rx="16" fill="#f7e5f2"/>
+    <circle cx="54" cy="160" r="14" fill="#eeb9df"/>
+    <path d="M54 151 C48 143 37 153 54 166 C71 153 60 143 54 151Z" fill="#ad568e"/>
+    <text x="78" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536272" font-weight="600">Topluluk oyu</text>
+    <text x="78" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748394">Beğeni ve geri bildirim</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="30" y="200" width="145" height="57" rx="16" fill="#e3f4ef"/>
+    <circle cx="54" cy="228" r="14" fill="#a8ddcf"/>
+    <path d="M54 219 v9 l6 4" fill="none" stroke="#347d70" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="78" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536272" font-weight="600">Süreklilik</text>
+    <text x="78" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748394">Zaman ve emek</text>
+  </g>
+
+  <!-- core -->
+  <g filter="url(#shadow)">
+    <rect x="238" y="107" width="166" height="106" rx="25" fill="url(#core)" stroke="#b1c6e5"/>
+    <circle cx="321" cy="145" r="25" fill="#ffffff" opacity="0.82"/>
+    <path d="M321 126 l6 12 13 2 -9 10 2 13 -12 -6 -12 6 2 -13 -9 -10 13 -2Z" fill="#7294c4"/>
+    <text x="321" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405b7a" font-weight="700">İtibar Puanı</text>
+    <text x="321" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647b95">Kalite × Oy × Süre</text>
+  </g>
+
+  <!-- right cards -->
+  <g filter="url(#softShadow)">
+    <rect x="468" y="64" width="142" height="57" rx="16" fill="#e8f4df"/>
+    <circle cx="492" cy="92" r="14" fill="#bee2a8"/>
+    <path d="M485 96 h14 M492 86 v13" stroke="#4e8b51" stroke-width="2.1" stroke-linecap="round"/>
+    <text x="516" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536272" font-weight="600">Görünürlük</text>
+    <text x="516" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748394">Sosyal kanıt</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="468" y="132" width="142" height="57" rx="16" fill="#e4efff"/>
+    <circle cx="492" cy="160" r="14" fill="#bad3f4"/>
+    <path d="M485 165 v-7 a7 7 0 0 1 14 0 v7 M483 165 h18" fill="none" stroke="#507cb4" stroke-width="2" stroke-linecap="round"/>
+    <text x="516" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536272" font-weight="600">Güven</text>
+    <text x="516" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748394">Uzmanlık sinyali</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="468" y="200" width="142" height="57" rx="16" fill="#fff0db"/>
+    <circle cx="492" cy="228" r="14" fill="#ffd49b"/>
+    <path d="M492 218 l3 6 7 1 -5 5 1 7 -6 -3 -6 3 1 -7 -5 -5 7 -1Z" fill="#b87b22"/>
+    <text x="516" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536272" font-weight="600">Ödül</text>
+    <text x="516" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748394">Rozet ve yetki</text>
+  </g>
+
+  <!-- moderation strip -->
+  <g filter="url(#softShadow)">
+    <rect x="150" y="275" width="340" height="29" rx="14" fill="#ffffff" opacity="0.92"/>
+    <path d="M183 289 l5 5 9 -10" fill="none" stroke="#4e9c76" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="202" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#566d70">Dengeleyiciler: oy ağırlığı • zaman azalması • kötüye kullanım denetimi</text>
+  </g>
+</svg>

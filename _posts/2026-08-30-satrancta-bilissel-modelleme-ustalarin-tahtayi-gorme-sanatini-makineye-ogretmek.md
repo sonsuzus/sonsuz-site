@@ -8,6 +8,7 @@ tags:
   - satranç
   - makine öğrenmesi
   - bilişsel modelleme
+image: /img/satrancta-bilissel-modelleme-87.png
 ---
 
 Bir satranç ustası tahtaya baktığında 32 ayrı taşı tek tek saymaz; anlamlı örüntüleri, tehditleri ve tanıdık planları neredeyse anında görür. Bilişsel modelleme, bu olağanüstü insan becerisini yalnızca en iyi hamleyi bulan bir motor üretmek için değil, oyuncunun **nasıl düşündüğünü** yaklaşık olarak yeniden kurmak için inceler. Amaç, bilgisayarın satrançta güçlü olmasından öte, dikkatini nereye yönelttiğini ve hangi bilgiyi öncelediğini anlamaktır.
@@ -29,6 +30,9 @@ Yani model, oyuncunun ilk bakışta hangi kareyi inceleme olasılığının en y
 | Aday hamle | Çok sayıda rastgele seçenek | Az sayıda güçlü aday | Hamle filtreleme sürecini öğrenmek |
 | Hesaplama | Kısa ama dağınık varyantlar | Kritik varyantlara derinleşme | Dikkat ve arama önceliği tahmini |
 | Bellek | Konum ayrıntıları çabuk kaybolur | Tanıdık şablonlar hızla çağrılır | Açılış, motif ve yapı belleği kurmak |
+
+![satrancta-bilissel-modelleme-87](/img/satrancta-bilissel-modelleme-87.svg)
+
 
 Akademik çalışmalarda veri çoğu zaman göz izleme cihazları, sesli düşünme protokolleri ve hamle kayıtlarından gelir. Göz izleme verisi, bir oyuncunun baktığı yerin düşündüğü şeyle her zaman aynı olmadığını da gösterir; yine de dikkat mekanizması için güçlü bir ipucudur. Sesli protokoller ise “şah güvenliği zayıf” gibi sözel gerekçeleri yakalar. Bu veriler bir araya getirildiğinde, model hem hamleyi hem de gerekçeyi tahmin edebilir.
 

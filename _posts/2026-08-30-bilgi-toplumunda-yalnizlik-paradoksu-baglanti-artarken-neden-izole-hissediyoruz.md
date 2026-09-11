@@ -11,6 +11,7 @@ tags:
   - psikoloji
   - bilgi toplumu
 toc: true
+image: /img/bilgi-toplumunda-yalnizlik-12.png
 ---
 
 Her an çevrimiçi olmak, ilk bakışta yalnızlığın panzehiri gibi görünür: Mesajlar gelir, bildirimler yanar, yüzlerce kişinin hayatına birkaç saniyede dokunuruz. Buna rağmen bilgi toplumunun en ilginç çelişkilerinden biriyle karşı karşıyayız: Dijital temas arttıkça bazı kullanıcıların psikolojik izolasyon hissi de büyüyor. Sorun bağlantı sayısında değil; bağlantının niteliğinde, karşılıklılığında ve gerçek hayattaki sosyal bağların yerini ne kadar doldurabildiğinde yatıyor.
@@ -34,6 +35,9 @@ Buradaki logaritma önemlidir. Bin bağlantı, on bağlantıdan daha fazla eriş
 | Görünürlük | Metriklerle ölçülür | Çoğu zaman ölçülmez |
 | Karşılıklı destek | Anlık ve parçalı olabilir | Süreklilik gösterebilir |
 | Yanlış anlaşılma riski | Bağlam eksikliği nedeniyle yüksek | Sözel olmayan ipuçları sayesinde daha düşük |
+
+![bilgi-toplumunda-yalnizlik-12](/img/bilgi-toplumunda-yalnizlik-12.svg)
+
 
 ## Karşılaştırma tuzağı ve algoritmik vitrin
 

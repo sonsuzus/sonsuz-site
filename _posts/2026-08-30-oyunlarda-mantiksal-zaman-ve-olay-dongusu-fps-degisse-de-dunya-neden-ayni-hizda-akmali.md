@@ -9,6 +9,7 @@ tags:
   - asenkron programlama
   - game loop
 toc: true
+image: /img/oyunlarda-mantiksal-zaman-18.png
 ---
 
 Bir oyunda ekrandaki kare sayısı artınca karakterinizin daha hızlı koşması, fizik hesaplarının farklı bilgisayarlarda bambaşka sonuçlar üretmesi veya ağdaki oyuncuların zaman çizelgelerinin ayrışması klasik zamanlama hatalarıdır. Bu sorunların ortak kaynağı, fiziksel zaman ile oyunun mantıksal zamanını birbirine karıştırmaktır. Sağlam bir oyun döngüsü, işlemcinin o anki hızından bağımsız biçimde olayları düzenler; asenkron işler sürerken ana oyun dünyasının tutarlı kalmasını sağlar.
@@ -44,6 +45,9 @@ Ancak `deltaTime` aniden çok büyürse çarpışma hesapları nesnelerin duvar�
 | Değişken adım | Her karede farklı | Akıcı görsel güncellemeler | Fizikte büyük sıçramalar yaratabilir |
 | Sabit adım | Örn. 0,02 saniye | Tekrarlanabilir fizik | Yavaş cihazda biriken güncellemeler |
 | Hibrit döngü | İkisini birlikte kullanır | Görsel kalite ve tutarlılık | Biriktirici yönetimi gerekir |
+
+![oyunlarda-mantiksal-zaman-18](/img/oyunlarda-mantiksal-zaman-18.svg)
+
 
 ## Biriktirici: gerçek zamanı mantıksal tiklere çevirmek
 

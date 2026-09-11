@@ -8,9 +8,13 @@ tags:
   - flow
   - yazılım geliştirme
   - odaklanma
+image: /img/yazilim-gelistirmede-flow-73.png
 ---
 
 Bir hatayı çözerken saatin nasıl geçtiğini anlamadığınız, kahvenizin soğuduğunu ancak gün batınca fark ettiğiniz anlar vardır. Programcılar için bu deneyim sadece “çok odaklanmak” değildir: Flow, beceri ile zorluğun dengelendiği, dikkatin tek bir hedefte toplandığı ve dış dünyanın geçici olarak sustuğu psikolojik çalışma hâlidir. Doğru koşullarda flow, üretkenliği artırırken kodla kurulan ilişkiyi de daha keyifli kılar.
+
+
+![yazilim-gelistirmede-flow-73](/img/yazilim-gelistirmede-flow-73.svg)
 
 ``
 

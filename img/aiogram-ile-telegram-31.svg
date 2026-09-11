@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="fsm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9f0ff"/>
+      <stop offset="100%" stop-color="#dce9ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7590a8" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7a93a4" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="84" cy="38" r="58" fill="#dceffc" opacity="0.45"/>
+  <circle cx="576" cy="285" r="74" fill="#e1f2d8" opacity="0.42"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35546a">Aiogram FSM · Güvenli Konuşma Akışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="101" width="116" height="119" rx="19" fill="#fffdf9"/>
+  </g>
+  <circle cx="85" cy="132" r="21" fill="#d7eff2"/>
+  <circle cx="85" cy="127" r="7" fill="#5b9ca5"/>
+  <path d="M72 145 C73 135 97 135 98 145" fill="#5b9ca5"/>
+  <text x="85" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385764">Kullanıcılar</text>
+  <text x="85" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647b88">Her sohbet ayrı</text>
+
+  <path d="M151 160 H181" fill="none" stroke="#6c9baa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="181,160 173,155 173,165" fill="#6c9baa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="189" y="66" width="267" height="190" rx="24" fill="url(#fsm)" stroke="#c7d9f1"/>
+  </g>
+  <text x="322" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#375a78">FSMContext</text>
+  <text x="322" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668199">Durum ve geçici veri</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="210" y="133" width="83" height="50" rx="14" fill="#fffdf9"/>
+    <rect x="324" y="133" width="108" height="50" rx="14" fill="#fffdf9"/>
+    <rect x="267" y="202" width="109" height="35" rx="13" fill="#d9f1e0"/>
+  </g>
+  <text x="251.5" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6273">Ad bekleniyor</text>
+  <text x="251.5" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71818d">adı kaydet</text>
+
+  <text x="378" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6273">Yaş bekleniyor</text>
+  <text x="378" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71818d">sayı doğrula</text>
+
+  <text x="321.5" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c7160">Tamamlandı · temizle</text>
+
+  <path d="M296 158 H316" fill="none" stroke="#5f91ba" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="316,158 308,153 308,163" fill="#5f91ba"/>
+  <path d="M378 187 C378 198 360 207 348 207" fill="none" stroke="#67a181" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="348,207 355,201 356,211" fill="#67a181"/>
+
+  <path d="M216 190 C202 209 211 235 247 239" fill="none" stroke="#d08076" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="247,239 239,233 239,243" fill="#d08076"/>
+  <text x="202" y="218" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b76d66">iptal</text>
+
+  <path d="M464 135 H485" fill="none" stroke="#6c9baa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="485,135 477,130 477,140" fill="#6c9baa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="493" y="77" width="119" height="116" rx="19" fill="#fffdf9"/>
+  </g>
+  <ellipse cx="552.5" cy="111" rx="27" ry="10" fill="#e5d9f7"/>
+  <path d="M525.5 111 V146 C525.5 152 579.5 152 579.5 146 V111" fill="#e5d9f7"/>
+  <ellipse cx="552.5" cy="146" rx="27" ry="10" fill="#d9c8f1"/>
+  <path d="M525.5 127 C525.5 133 579.5 133 579.5 127" fill="none" stroke="#baa5df" stroke-width="1.2"/>
+  <text x="552.5" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#584871">RedisStorage</text>
+  <text x="552.5" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#776d86">Ortak ve kalıcı</text>
+
+  <path d="M552 201 V227" fill="none" stroke="#7fa08a" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="552,227 547,219 557,219" fill="#7fa08a"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="475" y="235" width="154" height="46" rx="15" fill="#e5f3df"/>
+  </g>
+  <path d="M501 250 L511 246 L521 250 V261 C521 267 513 271 511 271 C509 271 501 267 501 261 Z" fill="#79a886"/>
+  <path d="M507 257 L510 260 L516 253" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="570" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456b50">Güvenli yönetim</text>
+  <text x="570" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63806a">Doğrula · sakla · sil</text>
+
+  <text x="50" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909b">/kayit</text>
+  <path d="M90 276 H141" stroke="#b5c9cf" stroke-width="1.5" stroke-dasharray="3 4"/>
+</svg>

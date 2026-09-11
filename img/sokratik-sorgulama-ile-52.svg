@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="teacher" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6dcff"/>
+      <stop offset="100%" stop-color="#d5ebff"/>
+    </linearGradient>
+    <linearGradient id="student" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1c9"/>
+      <stop offset="100%" stop-color="#ffe0c9"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f4df"/>
+      <stop offset="100%" stop-color="#cceeea"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71859b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71859b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="112" fill="#ffffff" opacity="0.42"/>
+  <circle cx="320" cy="160" r="91" fill="none" stroke="#afc7d5" stroke-width="2" stroke-dasharray="5 6" opacity="0.7"/>
+
+  <path d="M171 145 C194 126 211 116 232 111" fill="none" stroke="#8299ae" stroke-width="2.5"/>
+  <polygon points="230,105 243,107 234,117" fill="#8299ae"/>
+
+  <path d="M403 109 C426 116 446 129 465 145" fill="none" stroke="#8299ae" stroke-width="2.5"/>
+  <polygon points="461,137 475,151 457,149" fill="#8299ae"/>
+
+  <path d="M160 215 C184 240 211 253 241 260" fill="none" stroke="#91aeb3" stroke-width="2.5"/>
+  <polygon points="236,252 252,263 233,268" fill="#91aeb3"/>
+
+  <path d="M400 260 C430 253 454 240 478 215" fill="none" stroke="#91aeb3" stroke-width="2.5"/>
+  <polygon points="468,217 483,208 478,225" fill="#91aeb3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="109" width="145" height="102" rx="20" fill="url(#teacher)"/>
+    <rect x="467" y="109" width="145" height="102" rx="20" fill="url(#result)"/>
+    <rect x="244" y="112" width="152" height="96" rx="26" fill="url(#student)"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="46" y="128" width="42" height="39" rx="11" fill="#ffffff" opacity="0.84"/>
+    <path d="M58 143 C58 137 67 136 70 141 C75 140 78 143 78 147 C78 151 75 153 71 153 L68 158 L67 153 L64 153 C60 153 58 150 58 147 Z" fill="#8c79bd"/>
+    <path d="M72 143 C73 139 77 138 80 140" fill="none" stroke="#8c79bd" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="99" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#44526b">Eğitmen</text>
+  <text x="99" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526278">Sokratik sorular</text>
+  <text x="47" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d6389">Cevap vermez</text>
+
+  <g filter="url(#smallShadow)">
+    <circle cx="320" cy="144" r="20" fill="#ffffff" opacity="0.84"/>
+    <path d="M312 145 C312 139 315 135 320 135 C325 135 328 139 328 144 C328 149 325 151 323 153 L323 157 L317 157 L317 153 C314 151 312 149 312 145 Z" fill="#d18b4d"/>
+    <path d="M316 162 L324 162" stroke="#d18b4d" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="320" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#654c35">Öğrenci düşünmesi</text>
+  <text x="320" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79614a">Varsayım kurar</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="485" y="127" width="42" height="39" rx="11" fill="#ffffff" opacity="0.84"/>
+    <path d="M496 153 L503 146 L509 150 L518 139" fill="none" stroke="#4d9980" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="516,138 522,137 519,143" fill="#4d9980"/>
+  </g>
+  <text x="538" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e665c">Algoritma</text>
+  <text x="538" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52756c">Gerekçeli çözüm</text>
+  <text x="486" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e8876">Koddan önce fikir</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="46" y="237" width="114" height="42" rx="14" fill="#ffffff" opacity="0.86"/>
+  </g>
+  <circle cx="65" cy="258" r="10" fill="#d9edf4"/>
+  <text x="65" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#528292">?</text>
+  <text x="80" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496775">Problemi anla</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="243" y="248" width="154" height="42" rx="14" fill="#ffffff" opacity="0.86"/>
+  </g>
+  <circle cx="263" cy="269" r="10" fill="#f9dfa8"/>
+  <path d="M259 269 L262 272 L267 266" fill="none" stroke="#a8752e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="278" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b5c40">Örnek ve uç durum</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="479" y="237" width="114" height="42" rx="14" fill="#ffffff" opacity="0.86"/>
+  </g>
+  <circle cx="499" cy="258" r="10" fill="#d6f0dd"/>
+  <path d="M495 258 L498 261 L504 254" fill="none" stroke="#4e9870" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="514" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7061">Çözümü sına</text>
+
+  <path d="M184 281 L229 281" fill="none" stroke="#a2b5bd" stroke-width="2"/>
+  <polygon points="226,275 238,281 226,287" fill="#a2b5bd"/>
+  <path d="M407 281 L462 281" fill="none" stroke="#a2b5bd" stroke-width="2"/>
+  <polygon points="459,275 471,281 459,287" fill="#a2b5bd"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f5c6c">Sokratik sorgulama döngüsü</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8490">Soru → düşünme → sınama → keşif</text>
+</svg>

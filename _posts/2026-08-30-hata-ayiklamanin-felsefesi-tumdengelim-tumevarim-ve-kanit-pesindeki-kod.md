@@ -9,9 +9,13 @@ tags:
   - yazılım felsefesi
   - mantık
   - hata ayıklama
+image: /img/hata-ayiklamanin-felsefesi-44.png
 ---
 
 Hata ayıklama, ekrana birkaç `console.log` serpiştirmekten çok daha fazlasıdır: Belirsizlik altında kanıt toplama sanatıdır. Bir program beklenmedik davrandığında geliştirici aslında küçük bir dedektiflik soruşturması yürütür. Elinde semptomlar, varsayımlar, loglar ve çoğu zaman da “ama benim bilgisayarımda çalışıyor” cümlesinin bıraktığı metafizik sis vardır.
+
+
+![hata-ayiklamanin-felsefesi-44](/img/hata-ayiklamanin-felsefesi-44.svg)
 
 ``
 

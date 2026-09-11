@@ -9,7 +9,11 @@ tags:
   - bellek yönetimi
   - garbage collector
 toc: true
+image: /img/1-gb-ramli-79.png
 ---
+
+![1-gb-ramli-79](/img/1-gb-ramli-79.svg)
+
 
 Bir Python botu geliştirme bilgisayarında uslu uslu çalışırken 1 GB RAM’li AMD sunucuda neden bir anda bütün belleği yiyen küçük bir canavara dönüşür? Bunun nedeni çoğu zaman tek bir bellek sızıntısı değil; referans sayımı, döngüsel nesneler, Python’ın bellek ayırıcısı ve işletim sisteminin davranışının birleşimidir. Neyse ki doğru ölçüm ve kontrollü çöp toplama ile botu sürekli yeniden başlatmadan belleği sınırlandırmak mümkündür.
 ``

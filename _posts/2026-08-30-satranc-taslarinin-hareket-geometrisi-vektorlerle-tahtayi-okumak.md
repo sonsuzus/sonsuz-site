@@ -10,6 +10,7 @@ tags:
   - vektör
   - python
   - algoritma
+image: /img/satranc-taslarinin-hareket-54.png
 ---
 
 Satranç tahtası yalnızca 64 karelik bir oyun alanı değil, ayrık koordinat düzleminde çalışan küçük ama etkileyici bir geometri laboratuvarıdır. Her taşı bir başlangıç noktası, her hamleyi ise bir yer değiştirme vektörü olarak düşünürsek kurallar daha programlanabilir hâle gelir. Bu yaklaşım; hamle doğrulayıcıları, satranç motorları ve görselleştirme projeleri geliştirirken özellikle faydalıdır.
@@ -66,3 +67,6 @@ def birim_yon(dx, dy):
 ```
 
 Gerçek bir uygulamada `birim_yon` ile başlangıç ve hedef arasındaki kareleri sırayla üretip tahtadaki doluluk durumunu kontrol edersiniz. Sonuçta satranç hamleleri, karmaşık görünen kurallardan çok koordinat farkları, mutlak değerler, parite ve yön vektörleriyle ifade edilen düzenli bir sistemdir. Tahtaya bu gözle bakınca atın L’si bir ezber değil, sekiz olası vektörden ibaret olur.
+
+![satranc-taslarinin-hareket-54](/img/satranc-taslarinin-hareket-54.svg)
+

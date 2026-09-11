@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="root" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dce9ff"/>
+      <stop offset="100%" stop-color="#c9dfff"/>
+    </linearGradient>
+    <linearGradient id="player" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f5ec"/>
+      <stop offset="100%" stop-color="#ccead9"/>
+    </linearGradient>
+    <linearGradient id="rival" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0df"/>
+      <stop offset="100%" stop-color="#ffe0bb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7290a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#7290a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="54" r="52" fill="#dceeff" opacity="0.42"/>
+  <circle cx="582" cy="270" r="82" fill="#dff1dc" opacity="0.38"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36526b">NEGAMAX · TEK KURAL, İKİ PERSPEKTİF</text>
+
+  <g stroke="#7894a7" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M320 89 L183 142"/>
+    <path d="M320 89 L457 142"/>
+    <path d="M183 184 L108 232"/>
+    <path d="M183 184 L230 232"/>
+    <path d="M457 184 L410 232"/>
+    <path d="M457 184 L532 232"/>
+  </g>
+
+  <g fill="#7894a7">
+    <polygon points="183,142 190,141 186,148"/>
+    <polygon points="457,142 454,148 450,141"/>
+    <polygon points="108,232 115,231 111,238"/>
+    <polygon points="230,232 226,238 223,231"/>
+    <polygon points="410,232 417,231 413,238"/>
+    <polygon points="532,232 528,238 525,231"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="245" y="47" width="150" height="43" rx="15" fill="url(#root)" stroke="#a8c4e8"/>
+  </g>
+  <text x="320" y="66" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#274967">Mevcut durum</text>
+  <text x="320" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42627b">max seçimi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="119" y="142" width="128" height="43" rx="15" fill="url(#rival)" stroke="#edc58d"/>
+    <rect x="393" y="142" width="128" height="43" rx="15" fill="url(#rival)" stroke="#edc58d"/>
+  </g>
+  <text x="183" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#75512d">Rakip turu</text>
+  <text x="183" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6742">işaret terslenir</text>
+  <text x="457" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#75512d">Rakip turu</text>
+  <text x="457" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6742">işaret terslenir</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="55" y="232" width="106" height="47" rx="14" fill="url(#player)" stroke="#acd4bb"/>
+    <rect x="177" y="232" width="106" height="47" rx="14" fill="url(#player)" stroke="#acd4bb"/>
+    <rect x="357" y="232" width="106" height="47" rx="14" fill="url(#player)" stroke="#acd4bb"/>
+    <rect x="479" y="232" width="106" height="47" rx="14" fill="url(#player)" stroke="#acd4bb"/>
+  </g>
+
+  <text x="108" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36654b">Yaprak</text>
+  <text x="108" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47755b">değer: +3</text>
+
+  <text x="230" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36654b">Yaprak</text>
+  <text x="230" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47755b">değer: +8</text>
+
+  <text x="410" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36654b">Yaprak</text>
+  <text x="410" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47755b">değer: +2</text>
+
+  <text x="532" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36654b">Yaprak</text>
+  <text x="532" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47755b">değer: +6</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="202" y="294" width="236" height="22" rx="10" fill="#ffffff" stroke="#c8dce5"/>
+  </g>
+  <text x="320" y="309" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36526b">N(durum) = max(−N(çocuk))</text>
+
+  <g>
+    <rect x="28" y="104" width="79" height="42" rx="13" fill="#ffffff" stroke="#c9dce8" filter="url(#smallShadow)"/>
+    <text x="67.5" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48657a">Sıfır toplam</text>
+    <text x="67.5" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668195">kazanç = kayıp</text>
+  </g>
+  <path d="M107 125 L116 125" stroke="#91aabb" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="116,125 110,121 110,129" fill="#91aabb"/>
+
+  <g>
+    <rect x="533" y="104" width="79" height="42" rx="13" fill="#ffffff" stroke="#c9dce8" filter="url(#smallShadow)"/>
+    <text x="572.5" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48657a">Tek işlem</text>
+    <text x="572.5" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668195">her düğüm max</text>
+  </g>
+  <path d="M524 125 L515 125" stroke="#91aabb" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="515,125 521,121 521,129" fill="#91aabb"/>
+</svg>

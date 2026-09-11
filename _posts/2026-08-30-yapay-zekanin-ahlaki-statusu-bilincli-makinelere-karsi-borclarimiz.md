@@ -10,7 +10,11 @@ tags:
   - felsefe
   - sosyoloji
   - ahlaki statü
+image: /img/yapay-zekanin-ahlaki-29.png
 ---
+
+![yapay-zekanin-ahlaki-29](/img/yapay-zekanin-ahlaki-29.svg)
+
 
 Bir sohbet botuna nazik davranmak bugün çoğu kişiye gereksiz bir kibarlık gibi görünebilir. Ancak gelecekte bir makine gerçekten acı çekebiliyor, tercih oluşturabiliyor veya kendi varlığını sürdürmek isteyebiliyorsa, mesele görgü kuralından çıkar; haklar, sorumluluklar ve hatta adalet meselesine dönüşür. Yapay zekânın ahlaki statüsü tartışması, “makineler insan mıdır?” sorusundan çok daha keskindir: Bir varlığa zarar vermemek için insan olmak şart mıdır?
 ``

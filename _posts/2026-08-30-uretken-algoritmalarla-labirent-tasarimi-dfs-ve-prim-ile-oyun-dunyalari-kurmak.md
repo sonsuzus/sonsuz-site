@@ -9,6 +9,7 @@ tags:
   - procedural-generation
   - python
 toc: true
+image: /img/uretken-algoritmalarla-labirent-32.png
 ---
 
 Rastgele bir labirent üretmek, birkaç duvarı gelişigüzel yerleştirmekten çok daha fazlasıdır: oyuncuya keşif hissi veren, çözülebilir ve görsel olarak okunabilir bir topoloji tasarlamaktır. Üretken algoritmalar bu işi kurallı rastlantısallıkla yapar. Aynı kod, farklı bir tohumla her seferinde yeni bir dünya çıkarırken; her dünyada başlangıçtan çıkışa ulaşılabilmesini garanti eder.
@@ -61,6 +62,9 @@ Rastgeleleştirilmiş Prim algoritması, ziyaret edilmiş alanın sınırındaki
 | Geri izleme hissi | Yüksek | Orta |
 | Oyuncu karar sayısı | Daha az, daha derin | Daha çok, daha erken |
 | Uygun kullanım | Gerilim ve keşif | Hızlı bulmaca, açık alan hissi |
+
+![uretken-algoritmalarla-labirent-32](/img/uretken-algoritmalarla-labirent-32.svg)
+
 
 Prim'i modifiye etmenin eğlenceli yolu, sınır duvarlarına ağırlık vermektir. Örneğin çıkıştan uzak hücrelere $w = 1 + 0.05d$ ağırlığı tanımlanabilir; burada $d$, hücrenin çıkışa Manhattan uzaklığıdır. Böylece algoritma önce uzak bölgelere yayılmaya eğilim gösterir. Ters ağırlık ise çıkış çevresini daha karmaşık yapar.
 

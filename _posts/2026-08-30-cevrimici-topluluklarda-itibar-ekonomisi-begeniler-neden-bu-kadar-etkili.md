@@ -9,6 +9,7 @@ tags:
   - gamification
   - kullanıcı psikolojisi
 toc: true
+image: /img/cevrimici-topluluklarda-itibar-22.png
 ---
 
 Bir forumdaki küçük bir beğeni ikonu, teknik olarak yalnızca veritabanında artan bir sayı gibi görünür. Ancak kullanıcı açısından bu sayı; görünürlük, kabul görme, uzmanlık ve hatta aidiyet anlamına gelebilir. İtibar ekonomisi, topluluk üyelerinin kaliteli katkılar karşılığında puan, rozet, rütbe veya ayrıcalık kazanması üzerine kurulur. Doğru tasarlandığında bilgi paylaşımını hızlandırır; yanlış tasarlandığında ise topluluğu “puan avcılığı” yapan bir kalabalığa dönüştürebilir.
@@ -30,6 +31,9 @@ Burada $R$ toplam itibarı, $q_i$ içeriğin tahmini kalitesini, $v_i$ topluluk 
 | Puan | İlerleme ve başarı hissi | Spam veya oy manipülasyonu |
 | Rozet | Ustalık ve koleksiyon motivasyonu | Rozet uğruna davranış |
 | Rütbe | Statü ve yetki | Yeni üyelerin çekingenleşmesi |
+
+![cevrimici-topluluklarda-itibar-22](/img/cevrimici-topluluklarda-itibar-22.svg)
+
 
 ## Motivasyonun iki yüzü: İçsel ve dışsal ödül
 

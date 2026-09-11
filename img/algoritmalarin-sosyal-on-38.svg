@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#aebcf3"/>
+      <stop offset="100%" stop-color="#c9b8e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="48" r="67" fill="#d9ebfa" opacity="0.42"/>
+  <circle cx="584" cy="276" r="88" fill="#dff0d7" opacity="0.42"/>
+  <path d="M38 278 C152 232 182 298 280 270 S442 215 610 263" fill="none" stroke="#bfd7dd" stroke-width="2" opacity="0.45"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52677a" font-weight="600">Algoritmik adalet veri akışı</text>
+
+  <!-- connectors -->
+  <path d="M170 138 C190 138 195 138 214 138" fill="none" stroke="#7892a5" stroke-width="2.5"/>
+  <polygon points="214,138 205,133 205,143" fill="#7892a5"/>
+  <path d="M370 138 C390 138 395 138 414 138" fill="none" stroke="#7892a5" stroke-width="2.5"/>
+  <polygon points="414,138 405,133 405,143" fill="#7892a5"/>
+  <path d="M493 190 C493 220 407 238 336 238 C271 238 254 218 254 191" fill="none" stroke="#79a496" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <polygon points="254,191 249,201 259,201" fill="#79a496"/>
+
+  <!-- history data -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="93" width="140" height="96" rx="19" fill="#ffffff"/>
+    <rect x="30" y="93" width="140" height="30" rx="19" fill="#f6cfc9"/>
+    <rect x="30" y="110" width="140" height="13" fill="#f6cfc9"/>
+  </g>
+  <circle cx="55" cy="108" r="7" fill="#dd7f78"/>
+  <path d="M49 140 H78 M49 153 H124 M49 166 H104" stroke="#b67c78" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+  <circle cx="145" cy="157" r="13" fill="#f9e7e4"/>
+  <path d="M139 157 L144 162 L153 151" fill="none" stroke="#d67871" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d5155" font-weight="600">Geçmiş veri</text>
+  <text x="100" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687a88">Eşitsiz izler</text>
+
+  <!-- model -->
+  <g filter="url(#shadow)">
+    <rect x="214" y="75" width="156" height="126" rx="26" fill="url(#core)"/>
+    <rect x="224" y="85" width="136" height="106" rx="20" fill="#ffffff" opacity="0.2"/>
+  </g>
+  <circle cx="292" cy="133" r="34" fill="#f8f8ff" opacity="0.82"/>
+  <circle cx="278" cy="124" r="6" fill="#8291d1"/>
+  <circle cx="307" cy="118" r="6" fill="#8291d1"/>
+  <circle cx="300" cy="148" r="6" fill="#8291d1"/>
+  <path d="M283 125 L302 119 M282 128 L297 145 M306 124 L302 142" stroke="#7383c2" stroke-width="2"/>
+  <text x="292" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48557e" font-weight="600">Model</text>
+  <text x="292" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687a88">Örüntü öğrenir</text>
+
+  <!-- decision -->
+  <g filter="url(#shadow)">
+    <rect x="414" y="93" width="158" height="96" rx="19" fill="#ffffff"/>
+    <rect x="414" y="93" width="158" height="30" rx="19" fill="#caead8"/>
+    <rect x="414" y="110" width="158" height="13" fill="#caead8"/>
+  </g>
+  <text x="493" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426d59" font-weight="600">Otomatik karar</text>
+  <rect x="433" y="138" width="47" height="26" rx="9" fill="#dff2e6"/>
+  <rect x="506" y="138" width="47" height="26" rx="9" fill="#fae0dd"/>
+  <path d="M445 151 L451 157 L469 144" fill="none" stroke="#55966e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M520 145 L540 158 M540 145 L520 158" stroke="#cf736d" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="456" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687a88">Kabul</text>
+  <text x="530" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687a88">Ret</text>
+
+  <!-- audit -->
+  <g filter="url(#smallShadow)">
+    <rect x="165" y="244" width="302" height="51" rx="18" fill="#ffffff"/>
+    <rect x="176" y="255" width="29" height="29" rx="10" fill="#f8e2aa"/>
+    <path d="M184 264 H198 M184 270 H194 M184 276 H201" stroke="#a77d32" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="226" cy="269" r="8" fill="#e5eefb"/>
+    <circle cx="255" cy="269" r="8" fill="#eedff6"/>
+    <path d="M234 269 H247" stroke="#8295ae" stroke-width="2"/>
+    <text x="331" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52677a" font-weight="600">Grup bazlı denetim</text>
+    <text x="331" y="283" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909e">Hata ve kabul oranları</text>
+  </g>
+
+  <!-- proxy callout -->
+  <g filter="url(#smallShadow)">
+    <rect x="491" y="223" width="116" height="48" rx="15" fill="#fffaf0"/>
+    <circle cx="511" cy="247" r="10" fill="#f7d993"/>
+    <path d="M511 241 V247 L516 251" fill="none" stroke="#9f7a2d" stroke-width="2" stroke-linecap="round"/>
+    <text x="557" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806735" font-weight="600">Vekil değişken</text>
+    <text x="557" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b875f">Gizli etki</text>
+  </g>
+  <path d="M492 223 C468 212 443 204 408 198" fill="none" stroke="#c39d50" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="408,198 418,197 413,205" fill="#c39d50"/>
+</svg>

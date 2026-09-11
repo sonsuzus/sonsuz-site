@@ -9,9 +9,13 @@ tags:
   - go
   - yapay zeka
 toc: true
+image: /img/monte-carlo-agac-53.png
 ---
 
 Go, kuralları birkaç dakikada öğrenilebilen fakat ustalaşması yıllar süren bir oyundur. 19×19’luk tahtada ilk hamlede yüzlerce seçenek bulunur; oyun ilerledikçe olası hamle dizileri astronomik boyutlara ulaşır. Bu yüzden satrançtaki gibi tüm hamleleri derinlemesine hesaplayıp değerlendiren klasik minimax yaklaşımı, Go için tek başına yeterince pratik değildir. Monte Carlo Ağaç Araması (MCTS), ağacın umut vaat eden bölgelerini rastgele ama kontrollü simülasyonlarla keşfederek bu probleme zarif bir cevap verir.
+
+![monte-carlo-agac-53](/img/monte-carlo-agac-53.svg)
+
 ``
 
 ## Neden Go araması zor?

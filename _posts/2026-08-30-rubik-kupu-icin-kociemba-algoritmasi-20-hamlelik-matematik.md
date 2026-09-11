@@ -9,6 +9,7 @@ tags:
   - kociemba
   - grup teorisi
 toc: true
+image: /img/rubik-kupu-icin-67.png
 ---
 
 Rubik küpünü çözmek, yalnızca renkleri eşleştirmek değil; devasa ama sonlu bir matematiksel uzayda rota planlamaktır. Herbert Kociemba’nın iki aşamalı algoritması, pratikte çok hızlı çözümler üretirken grup teorisinin zarif fikirlerinden yararlanır. Hedef her zaman mutlak en kısa çözüm değildir; buna karşın algoritma çoğu karışıklığı yaklaşık 20 hamle civarında çözer. Bu yaklaşım, küpü tek seferde “fethedilecek” bir problem yerine, akıllıca daraltılmış iki ayrı problem olarak görür.
@@ -72,3 +73,6 @@ Yan yüzlerde yalnızca çift dönüşlerin kalması kritik bir ayrıntıdır. B
 Arama çoğunlukla **IDA\*** (Iterative Deepening A*) ile yapılır. Bu yöntem derinlik sınırını kademeli artırır; ancak sezgisel alt sınır tabloları sayesinde imkânsız dalları erkenden keser. Örneğin bir koordinatın çözülmesi için en az 5 hamle gerektiği biliniyorsa, geriye 3 hamle kalmış bir dal doğrudan atılır.
 
 Kociemba algoritması “Tanrı’nın Sayısı” olan 20 hamleyi her durumda garanti eden yöntem değildir; bu rekor, çok daha geniş hesaplamalarla kanıtlanmıştır. Yine de hız, çözüm uzunluğu ve uygulama kolaylığı arasındaki dengesi olağanüstüdür. Grup teorisi burada soyut bir ders konusu olmaktan çıkar: renkli bir küpü, iyi seçilmiş alt gruplar ve akıllı arama ile dakikalar değil saniyeler içinde çözen gerçek bir mühendislik aracına dönüşür.
+
+![rubik-kupu-icin-67](/img/rubik-kupu-icin-67.svg)
+

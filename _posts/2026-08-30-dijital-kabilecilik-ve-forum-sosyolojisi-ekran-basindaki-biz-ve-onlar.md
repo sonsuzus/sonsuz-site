@@ -9,6 +9,7 @@ tags:
   - forumlar
   - topluluk yönetimi
   - platform mimarisi
+image: /img/dijital-kabilecilik-ve-87.png
 ---
 
 Bir tartışma forumu, ilk bakışta mesajların kronolojik olarak aktığı teknik bir pano gibi görünür. Ancak birkaç hafta geçirince bunun küçük bir şehir olduğunu fark ederiz: mahalleler, kanaat önderleri, yerleşik şakalar, görünmez kurallar ve elbette “bizimkiler” vardır. Dijital kabilecilik, kullanıcıların ortak ilgi, kimlik, dil ve karşıtlıklar çevresinde gruplaşmasıdır. Bu durum yalnızca insanların karakterinden değil, forumun butonlarından sıralama algoritmasına kadar uzanan platform mimarisinden doğar.
@@ -58,3 +59,6 @@ for user, value in stats.items():
 ```
 
 Sağlıklı forum, kabileleri tamamen yok etmeye çalışmaz; çünkü aidiyet katılımın yakıtıdır. Bunun yerine kabileler arasında güvenli geçitler kurar: konu bazlı çapraz etkinlikler, yapıcı itirazı ödüllendiren rozetler, yeni üyeler için rehberlik ve şeffaf moderasyon bunlardan bazılarıdır. İyi mimari, herkesi aynı fikirde buluşturmaz. İnsanların farklı fikirlerle karşılaşırken topluluktan dışlanmış hissetmemesini sağlar.
+
+![dijital-kabilecilik-ve-87](/img/dijital-kabilecilik-ve-87.svg)
+

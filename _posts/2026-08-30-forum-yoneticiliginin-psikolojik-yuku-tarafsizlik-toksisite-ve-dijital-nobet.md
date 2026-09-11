@@ -9,6 +9,7 @@ tags:
   - çevrimiçi topluluk
   - dijital psikoloji
 toc: true
+image: /img/forum-yoneticiliginin-psikolojik-21.png
 ---
 
 Bir forumu yönetmek, yalnızca spam mesajlarını silmek veya kuralları hatırlatmak değildir; küçük bir dijital toplumun nabzını tutmaktır. Yönetici, her gün farklı beklentiler, çatışan fikirler ve bazen doğrudan hedef alan tepkiler arasında karar verir. Üstelik iyi yapılan moderasyon çoğu zaman görünmezken, tek bir tartışmalı karar dakikalar içinde eleştiri yağmuruna dönüşebilir. Bu nedenle forum yöneticiliği, teknik beceriler kadar duygusal dayanıklılık da gerektirir.
@@ -29,6 +30,9 @@ Burada $Y$ psikolojik yükü, $K$ karar sayısını, $B$ belirsizlik düzeyini v
 | Kural ihlali | Esneklik beklentisi | Tutarlı yaptırım uygulamak | Vicdan yükü |
 | Gruplaşma | Kendi grubunu koruma | Herkese eşit mesafe | Toplu tepki |
 | Trol davranışı | İlgi ve kaos | Tartışmayı beslememek | Öfke ve tükenmişlik |
+
+![forum-yoneticiliginin-psikolojik-21](/img/forum-yoneticiliginin-psikolojik-21.svg)
+
 
 ## Toksik davranışın görünmeyen etkisi
 

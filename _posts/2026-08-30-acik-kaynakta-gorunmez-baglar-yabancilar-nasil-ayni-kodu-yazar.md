@@ -9,6 +9,7 @@ tags:
   - topluluk
   - yazılım geliştirme
 toc: true
+image: /img/acik-kaynakta-gorunmez-61.png
 ---
 
 Açık kaynak projeleri, ilk bakışta internetin en tuhaf sosyal deneylerinden biri gibi görünür: Farklı kıtalarda yaşayan, çoğu zaman birbirinin gerçek adını bile bilmeyen insanlar; bir hata kaydını kapatmak, dokümantasyonu çevirmek ya da küçük bir fonksiyonu iyileştirmek için birlikte çalışır. Üstelik bu emeğin karşılığında doğrudan maaş, ofis kahvesi veya performans primi yoktur. Bu düzenin yakıtı para değil; ortak amaç, itibar, öğrenme arzusu ve iyi tasarlanmış işbirliği mekanizmalarıdır.
@@ -31,6 +32,9 @@ Burada $M$ toplam motivasyonu; $U$ aracın kişisel faydasını, $L$ öğrenme k
 | Öğrenme | Küçük özellik, test | Yeni geliştiriciler yetişir |
 | İtibar | Kaliteli inceleme, bakım | Güven oluşur |
 | Aidiyet | Dokümantasyon, destek | Topluluk kalıcılaşır |
+
+![acik-kaynakta-gorunmez-61](/img/acik-kaynakta-gorunmez-61.svg)
+
 
 ## Kaosu Düzenleyen Şey: Süreçler
 

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9e8f7"/>
+      <stop offset="1" stop-color="#bdd5ed"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6dcfb"/>
+      <stop offset="1" stop-color="#d5c5f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a5" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="42" r="56" fill="#d7edf1" opacity="0.42"/>
+  <circle cx="591" cy="278" r="74" fill="#e7dbf7" opacity="0.36"/>
+
+  <text x="28" y="29" fill="#4f6476" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">KOORDİNAT TAHTASI</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="45" width="164" height="164" rx="16" fill="#fafdff"/>
+    <rect x="43" y="59" width="128" height="128" rx="5" fill="url(#board)"/>
+    <g fill="#f7fbf7">
+      <rect x="43" y="59" width="16" height="16"/><rect x="75" y="59" width="16" height="16"/><rect x="107" y="59" width="16" height="16"/><rect x="139" y="59" width="16" height="16"/>
+      <rect x="59" y="75" width="16" height="16"/><rect x="91" y="75" width="16" height="16"/><rect x="123" y="75" width="16" height="16"/><rect x="155" y="75" width="16" height="16"/>
+      <rect x="43" y="91" width="16" height="16"/><rect x="75" y="91" width="16" height="16"/><rect x="107" y="91" width="16" height="16"/><rect x="139" y="91" width="16" height="16"/>
+      <rect x="59" y="107" width="16" height="16"/><rect x="91" y="107" width="16" height="16"/><rect x="123" y="107" width="16" height="16"/><rect x="155" y="107" width="16" height="16"/>
+      <rect x="43" y="123" width="16" height="16"/><rect x="75" y="123" width="16" height="16"/><rect x="107" y="123" width="16" height="16"/><rect x="139" y="123" width="16" height="16"/>
+      <rect x="59" y="139" width="16" height="16"/><rect x="91" y="139" width="16" height="16"/><rect x="123" y="139" width="16" height="16"/><rect x="155" y="139" width="16" height="16"/>
+      <rect x="43" y="155" width="16" height="16"/><rect x="75" y="155" width="16" height="16"/><rect x="107" y="155" width="16" height="16"/><rect x="139" y="155" width="16" height="16"/>
+      <rect x="59" y="171" width="16" height="16"/><rect x="91" y="171" width="16" height="16"/><rect x="123" y="171" width="16" height="16"/><rect x="155" y="171" width="16" height="16"/>
+    </g>
+    <rect x="107" y="123" width="16" height="16" rx="3" fill="#7189c9"/>
+    <circle cx="115" cy="131" r="5" fill="#ffffff"/>
+    <rect x="155" y="75" width="16" height="16" rx="3" fill="#dd8b99"/>
+    <circle cx="163" cy="83" r="5" fill="#ffffff"/>
+    <text x="107" y="203" text-anchor="middle" fill="#587084" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">(x, y)</text>
+  </g>
+
+  <path d="M197 126 H234" fill="none" stroke="#7a91ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="241,126 231,120 231,132" fill="#7a91ad"/>
+  <text x="198" y="114" fill="#60778a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Δ = hedef − başlangıç</text>
+
+  <g filter="url(#shadow)">
+    <rect x="242" y="76" width="155" height="102" rx="22" fill="url(#core)"/>
+    <circle cx="319" cy="108" r="23" fill="#f7f2ff" opacity="0.82"/>
+    <path d="M307 112 L316 103 L323 110 L333 98" fill="none" stroke="#75619d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="307" cy="112" r="2.5" fill="#75619d"/>
+    <circle cx="333" cy="98" r="2.5" fill="#75619d"/>
+    <text x="319" y="148" text-anchor="middle" fill="#514469" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">VEKTÖR ANALİZİ</text>
+    <text x="319" y="166" text-anchor="middle" fill="#695c7c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">|Δx| ve |Δy|</text>
+  </g>
+
+  <path d="M401 127 H423 V67 H440" fill="none" stroke="#7796a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="447,67 437,61 437,73" fill="#7796a0"/>
+  <path d="M401 127 H423 V145 H440" fill="none" stroke="#7796a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="447,145 437,139 437,151" fill="#7796a0"/>
+  <path d="M401 127 H423 V223 H440" fill="none" stroke="#7796a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="447,223 437,217 437,229" fill="#7796a0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="449" y="40" width="161" height="55" rx="14" fill="#d9f0e8"/>
+    <circle cx="473" cy="67" r="15" fill="#f4fcf8"/>
+    <path d="M473 55 V79 M461 67 H485" stroke="#4c927b" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="499" y="63" fill="#356c5b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Kale ve Vezir</text>
+    <text x="499" y="81" fill="#4c7d6c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">yatay · dikey</text>
+
+    <rect x="449" y="118" width="161" height="55" rx="14" fill="#ffe8cf"/>
+    <circle cx="473" cy="145" r="15" fill="#fff7ec"/>
+    <path d="M462 156 L484 134 M462 134 L484 156" stroke="#bd7c45" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="499" y="141" fill="#8d5a30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Fil</text>
+    <text x="499" y="159" fill="#a46c3c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">|Δx| = |Δy|</text>
+
+    <rect x="449" y="196" width="161" height="55" rx="14" fill="#dce8fb"/>
+    <circle cx="473" cy="223" r="15" fill="#f4f8ff"/>
+    <path d="M463 231 V219 H475 V211 H484" fill="none" stroke="#557cb9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="499" y="219" fill="#3f6398" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">At</text>
+    <text x="499" y="237" fill="#5675a2" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">(1,2) · (2,1)</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="74" y="241" width="297" height="52" rx="16" fill="#ffffff"/>
+    <circle cx="100" cy="267" r="14" fill="#e8f3db"/>
+    <path d="M94 267 L98 271 L106 262" fill="none" stroke="#6f9a50" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="124" y="262" fill="#526c5b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Yol denetimi</text>
+    <text x="124" y="280" fill="#72857a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Birim yön · engel · geçerlilik</text>
+  </g>
+
+  <path d="M319 182 V229" fill="none" stroke="#8a7aa8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="319,236 313,226 325,226" fill="#8a7aa8"/>
+</svg>

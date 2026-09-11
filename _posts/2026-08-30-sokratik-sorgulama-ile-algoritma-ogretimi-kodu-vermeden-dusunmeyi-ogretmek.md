@@ -9,7 +9,11 @@ tags:
   - eğitim
   - sokratik-sorgulama
 toc: true
+image: /img/sokratik-sorgulama-ile-52.png
 ---
+
+![sokratik-sorgulama-ile-52](/img/sokratik-sorgulama-ile-52.svg)
+
 
 Bir öğrenciye çalışan kodu doğrudan vermek, kısa vadede alkış aldırır; fakat uzun vadede onu hata mesajı karşısında yalnız bırakabilir. Algoritma öğretiminin asıl amacı `for` döngüsünü ezberletmek değil, problemi parçalara ayırma, varsayım kurma ve çözümü sınama alışkanlığı kazandırmaktır. Sokratik sorgulama tam burada devreye girer: Eğitmen cevap makinesi olmaz; öğrencinin kendi cevabına ulaşmasını sağlayan, dikkatle tasarlanmış sorular sorar.
 ``

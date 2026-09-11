@@ -9,6 +9,7 @@ tags:
   - minimax
   - oyun teorisi
 toc: true
+image: /img/mukemmel-bilgi-oyunlarinda-73.png
 ---
 
 Satranç, dama veya tic-tac-toe gibi mükemmel bilgi oyunlarında iki oyuncu da tahtadaki her şeyi görür; gizli kartlar, zar şansı ya da sürpriz kutular yoktur. Bu ortamda bilgisayarın temel sorusu basittir: “Rakibim en iyi hamleyi yaparsa, benim en iyi hamlem ne olur?” Minimax bu sorunun klasik cevabıdır. Negamax ise aynı matematiği, iki ayrı MAX ve MIN rolünü tek bir zarif kuralla birleştirerek uygular.
@@ -77,3 +78,6 @@ Gerçek oyun ağaçları hızla büyür. Ortalama dallanma sayısı $b$, arama d
 | Alpha-beta | Gereksiz dalları eler | Negamax formuna doğrudan eklenir |
 
 Negamax yalnızca bir kod golf numarası değildir; sıfır toplamlılığın doğrudan algoritmik ifadesidir. Ancak dikkat: Üç veya daha fazla oyunculu oyunlarda, işbirlikçi senaryolarda ya da kazançların birbirinin tam tersi olmadığı sistemlerde bu simetri bozulur. O durumda klasik minimax bile yeterli olmayabilir. Ama iki oyunculu, tam bilgili ve sıfır toplamlı bir tahtada Negamax, matematiğin “eksi işaretiyle gelen sadeliğidir.”
+
+![mukemmel-bilgi-oyunlarinda-73](/img/mukemmel-bilgi-oyunlarinda-73.svg)
+
