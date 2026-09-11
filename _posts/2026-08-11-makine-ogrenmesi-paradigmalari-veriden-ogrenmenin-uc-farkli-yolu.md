@@ -2,9 +2,9 @@
 layout: post
 title: "Makine Öğrenmesi Paradigmaları: Veriden Öğrenmenin Üç Farklı Yolu"
 math: true
-categories: 
+categories:
   - Bilgi
-tags: 
+tags:
   - makine öğrenmesi
   - yapay zeka
   - gözetimli öğrenme
@@ -14,7 +14,7 @@ toc: true
 ---
 
 Makine öğrenmesi, bilgisayara her kuralı tek tek yazdırmak yerine örnekler, örüntüler ve geri bildirimler aracılığıyla davranış öğretme sanatıdır. Aynı mutfakta farklı tariflerin bulunması gibi, öğrenme probleminin elindeki veri ve hedefe göre üç temel paradigma öne çıkar: gözetimli, gözetimsiz ve pekiştirmeli öğrenme.
-``
+```
 
 ## Temel fikir: Veri, hedef ve geri bildirim
 
