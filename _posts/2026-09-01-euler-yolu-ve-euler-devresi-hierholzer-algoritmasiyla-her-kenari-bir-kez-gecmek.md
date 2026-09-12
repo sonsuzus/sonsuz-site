@@ -9,6 +9,7 @@ tags:
   - hierholzer algoritması
   - python
 toc: true
+image: /img/euler-yolu-ve-46.png
 ---
 
 Bir şehrin bütün köprülerinden yalnızca bir kez geçebilir miyiz? Königsberg köprüleri problemiyle ünlenen bu soru, çizge teorisindeki **Euler yolu** ve **Euler devresi** kavramlarının temelini oluşturur. Bu yazıda, bir çizgenin her kenarını tam olarak bir kez kullanan rotaları tanıyacak ve böyle bir rotayı verimli biçimde bulan Hierholzer algoritmasını Python ile kodlayacağız.
@@ -23,6 +24,9 @@ Bir çizgeyi $G=(V,E)$ olarak gösterelim. Burada $V$ düğümleri, $E$ ise dü�
 | Euler yolu | Farklı olabilir | Her kenar tam bir kez |
 | Euler devresi | Aynı düğümdür | Her kenar tam bir kez |
 | Hamilton yolu | Farklı olabilir | Her düğüm tam bir kez |
+
+![euler-yolu-ve-46](/img/euler-yolu-ve-46.svg)
+
 
 Euler ve Hamilton problemleri sıkça karıştırılır. Euler problemi kenarlara, Hamilton problemi düğümlere odaklanır. Üstelik Euler rotası doğrusal zamanda bulunabilirken Hamilton yolu genel durumda çok daha zorlu bir problemdir.
 

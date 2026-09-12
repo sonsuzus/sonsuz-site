@@ -9,7 +9,11 @@ tags:
   - theory of mind
   - yazılım psikolojisi
 toc: true
+image: /img/koda-karsi-empati-53.png
 ---
+
+![koda-karsi-empati-53](/img/koda-karsi-empati-53.svg)
+
 
 Yıllar önce yazılmış karmaşık bir fonksiyonla karşılaştığınızda yalnızca değişkenleri ve koşulları çözmezsiniz. Görünmeyen bir geliştiricinin ne bildiğini, neden belirli risklerden kaçındığını ve hangi baskılar altında karar verdiğini de tahmin etmeye çalışırsınız. Başka insanların inanç ve niyetlerini modelleme becerisi psikolojide **zihin kuramı** (*theory of mind*) olarak adlandırılır. Eski kod okumak da biraz dijital arkeoloji, biraz dedektiflik ve şaşırtıcı ölçüde empati gerektirir.
 

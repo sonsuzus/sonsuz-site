@@ -9,7 +9,11 @@ tags:
   - ağaç-algoritmaları
   - böl-ve-fethet
 toc: true
+image: /img/merkezcil-ayristirma-ile-30.png
 ---
+
+![merkezcil-ayristirma-ile-30](/img/merkezcil-ayristirma-ile-30.svg)
+
 
 Bir ağaçta “işaretli en yakın düğüm hangisi?” veya “uzaklığı tam $K$ olan kaç düğüm çifti var?” gibi sorular ilk bakışta masum görünür. Fakat her sorguda bütün ağacı dolaşmak, $N$ düğüm ve $Q$ sorgu için $O(NQ)$ maliyet doğurabilir. Merkezcil ayrıştırma, ağacı dengeli parçalara bölerek her düğümün yalnızca logaritmik sayıda temsilciyle ilişki kurmasını sağlar. Kısacası ağacı keser, fakat mesafe bilgisini kaybetmez.
 

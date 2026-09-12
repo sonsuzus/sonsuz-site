@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="heavyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#688de6"/>
+      <stop offset="100%" stop-color="#5676c9"/>
+    </linearGradient>
+    <linearGradient id="segGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9bcfb6"/>
+      <stop offset="100%" stop-color="#70b494"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#52708b" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="43" cy="38" r="72" fill="#dcecff" opacity="0.52"/>
+  <circle cx="601" cy="286" r="100" fill="#daf0df" opacity="0.45"/>
+
+  <text x="26" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39536d">Ağır-Hafif Ayrıştırma</text>
+  <text x="26" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708398">Ağaç yolu → zincirler → aralık işlemi</text>
+
+  <!-- Sol: Ağaç -->
+  <g filter="url(#shadow)">
+    <rect x="25" y="71" width="188" height="214" rx="18" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <text x="44" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47627b">Köklenmiş Ağaç</text>
+
+  <!-- edges tree -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M112 122 L78 157 L58 201" stroke="url(#heavyGrad)" stroke-width="6"/>
+    <path d="M112 122 L141 158 L161 202 L175 239" stroke="url(#heavyGrad)" stroke-width="6"/>
+    <path d="M78 157 L112 188" stroke="#efad7d" stroke-width="3.5" stroke-dasharray="5 5"/>
+    <path d="M141 158 L128 221" stroke="#efad7d" stroke-width="3.5" stroke-dasharray="5 5"/>
+  </g>
+
+  <!-- nodes -->
+  <g filter="url(#smallShadow)">
+    <circle cx="112" cy="122" r="13" fill="#fff" stroke="#688de6" stroke-width="3"/>
+    <circle cx="78" cy="157" r="12" fill="#fff" stroke="#688de6" stroke-width="3"/>
+    <circle cx="58" cy="201" r="12" fill="#fff" stroke="#688de6" stroke-width="3"/>
+    <circle cx="141" cy="158" r="12" fill="#fff" stroke="#688de6" stroke-width="3"/>
+    <circle cx="161" cy="202" r="12" fill="#fff" stroke="#688de6" stroke-width="3"/>
+    <circle cx="175" cy="239" r="12" fill="#fff" stroke="#688de6" stroke-width="3"/>
+    <circle cx="112" cy="188" r="11" fill="#fff8ef" stroke="#efad7d" stroke-width="2.5"/>
+    <circle cx="128" cy="221" r="11" fill="#fff8ef" stroke="#efad7d" stroke-width="2.5"/>
+  </g>
+  <text x="44" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587187">━ Ağır kenar</text>
+  <text x="126" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a76b43">┄ Hafif</text>
+
+  <!-- connector 1 -->
+  <path d="M222 175 C234 175 239 175 251 175" fill="none" stroke="#7f9bb4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="251,175 243,170 243,180" fill="#7f9bb4"/>
+
+  <!-- Orta: Zincir -->
+  <g filter="url(#shadow)">
+    <rect x="261" y="71" width="148" height="214" rx="18" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <text x="281" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47627b">Ağır Zincirler</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="282" y="112" width="102" height="28" rx="9" fill="#dce7ff"/>
+    <rect x="282" y="146" width="102" height="28" rx="9" fill="#dce7ff"/>
+    <rect x="282" y="180" width="102" height="28" rx="9" fill="#dce7ff"/>
+    <rect x="282" y="222" width="45" height="25" rx="8" fill="#fff0e5"/>
+    <rect x="337" y="222" width="47" height="25" rx="8" fill="#fff0e5"/>
+  </g>
+  <path d="M333 140 L333 146 M333 174 L333 180" stroke="#688de6" stroke-width="4" stroke-linecap="round"/>
+  <path d="M306 208 L304 222 M360 208 L360 222" stroke="#efad7d" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <text x="299" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405d82">Zincir A</text>
+  <text x="299" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405d82">Zincir A</text>
+  <text x="299" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405d82">Zincir A</text>
+  <text x="290" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a633e">B</text>
+  <text x="353" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a633e">C</text>
+  <text x="278" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698096">En fazla log n parça</text>
+
+  <!-- connector 2 -->
+  <path d="M418 175 C430 175 435 175 447 175" fill="none" stroke="#7f9bb4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="447,175 439,170 439,180" fill="#7f9bb4"/>
+
+  <!-- Sağ: segment -->
+  <g filter="url(#shadow)">
+    <rect x="457" y="71" width="158" height="214" rx="18" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <text x="477" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47627b">Segment Ağacı</text>
+
+  <g fill="none" stroke="#77ad94" stroke-width="2.5" stroke-linecap="round">
+    <path d="M536 124 L500 151 M536 124 L572 151"/>
+    <path d="M500 165 L480 191 M500 165 L520 191"/>
+    <path d="M572 165 L552 191 M572 165 L592 191"/>
+  </g>
+  <g filter="url(#smallShadow)">
+    <rect x="514" y="109" width="44" height="24" rx="8" fill="url(#segGrad)"/>
+    <rect x="479" y="150" width="42" height="24" rx="8" fill="#cfe9da"/>
+    <rect x="551" y="150" width="42" height="24" rx="8" fill="#cfe9da"/>
+    <rect x="463" y="190" width="34" height="23" rx="7" fill="#e6f4eb"/>
+    <rect x="503" y="190" width="34" height="23" rx="7" fill="#e6f4eb"/>
+    <rect x="535" y="190" width="34" height="23" rx="7" fill="#e6f4eb"/>
+    <rect x="575" y="190" width="34" height="23" rx="7" fill="#e6f4eb"/>
+  </g>
+
+  <rect x="477" y="233" width="118" height="30" rx="10" fill="#edf6f0" stroke="#b7d9c4"/>
+  <text x="492" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40735b">Sorgu ve Güncelle</text>
+
+  <!-- alt data strip -->
+  <g filter="url(#smallShadow)">
+    <rect x="25" y="295" width="590" height="16" rx="8" fill="#dfeaf4" opacity="0.85"/>
+  </g>
+  <text x="42" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e6a84">DFS: boyut • ebeveyn • derinlik</text>
+  <text x="266" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e6a84">Konum dizisi</text>
+  <text x="429" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f725b">O(log² n)</text>
+</svg>

@@ -41,6 +41,7 @@ Bu komut; `Chart.yaml`, `values.yaml` ve `templates/` dizinini içeren başlang�
 
 {% raw %}
 
+{% raw %}
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -56,6 +57,7 @@ spec:
           ports:
             - containerPort: {{ .Values.service.port }}
 ```
+{% endraw %}
 
 {% endraw %}
 

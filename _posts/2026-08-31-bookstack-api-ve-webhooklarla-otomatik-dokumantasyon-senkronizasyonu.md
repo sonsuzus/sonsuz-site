@@ -9,9 +9,13 @@ tags:
   - webhook
   - apı entegrasyonu
 toc: true
+image: /img/bookstack-api-ve-75.png
 ---
 
 Kurumsal dokümantasyon büyüdükçe aynı bilginin destek sistemi, intranet, arama motoru ve yedekleme servisleri arasında elle taşınması sürdürülemez hâle gelir. BookStack API ve webhooklarını birlikte kullanarak bir sayfa değiştiğinde diğer sistemleri otomatik güncelleyen, hızlı ve denetlenebilir bir entegrasyon hattı kurabiliriz.
+
+
+![bookstack-api-ve-75](/img/bookstack-api-ve-75.svg)
 
 ``
 

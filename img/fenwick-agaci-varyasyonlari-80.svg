@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9e8ff"/>
+      <stop offset="1" stop-color="#dff3e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d87a1" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d87a1" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="54" r="55" fill="#dceeff" opacity="0.55"/>
+  <circle cx="588" cy="274" r="78" fill="#dff2de" opacity="0.5"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37516b">2B Fenwick Ağacı</text>
+  <text x="320" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#658096">Güncelleme ve alan toplamı</text>
+
+  <!-- Sol: matris -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="78" width="148" height="184" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="104" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49637c">Kaynak Matris</text>
+
+  <g stroke="#c6d7e5" stroke-width="1.2">
+    <rect x="50" y="119" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="75" y="119" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="100" y="119" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="125" y="119" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="50" y="144" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="75" y="144" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="100" y="144" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="125" y="144" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="50" y="169" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="75" y="169" width="22" height="22" rx="4" fill="#ffd9b9" stroke="#ed9c57" stroke-width="2"/>
+    <rect x="100" y="169" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="125" y="169" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="50" y="194" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="75" y="194" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="100" y="194" width="22" height="22" rx="4" fill="#e9f2fb"/>
+    <rect x="125" y="194" width="22" height="22" rx="4" fill="#e9f2fb"/>
+  </g>
+  <circle cx="86" cy="180" r="5" fill="#e7784c"/>
+  <text x="104" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b8e">Nokta değişimi</text>
+
+  <!-- Arrow left to center -->
+  <path d="M184 166 H220" fill="none" stroke="#7894ad" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="220,166 212,161 212,171" fill="#7894ad"/>
+  <text x="201" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668196">delta</text>
+
+  <!-- Merkez Fenwick -->
+  <g filter="url(#shadow)">
+    <rect x="225" y="68" width="190" height="205" rx="23" fill="url(#core)"/>
+  </g>
+  <text x="320" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355b70">Fenwick Dizini</text>
+  <text x="320" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59788c">tree[i][j]</text>
+
+  <g stroke="#91b6bf" stroke-width="1.5" fill="none" opacity="0.9">
+    <path d="M267 207 L290 181 L316 158 L346 132"/>
+    <path d="M296 225 L316 196 L346 173 L375 145"/>
+    <path d="M258 177 L286 158 L316 137 L346 119"/>
+    <path d="M270 207 L296 225"/>
+    <path d="M290 181 L316 196"/>
+    <path d="M316 158 L346 173"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="250" y="195" width="38" height="27" rx="9" fill="#d5eff2"/>
+    <rect x="278" y="169" width="38" height="27" rx="9" fill="#c8e4f8"/>
+    <rect x="304" y="146" width="38" height="27" rx="9" fill="#bcdcf3"/>
+    <rect x="334" y="120" width="38" height="27" rx="9" fill="#a9d2ed"/>
+    <rect x="278" y="213" width="38" height="27" rx="9" fill="#d1ebd4"/>
+    <rect x="328" y="160" width="38" height="27" rx="9" fill="#b6e0c8"/>
+    <rect x="356" y="133" width="38" height="27" rx="9" fill="#a5d7bd"/>
+  </g>
+  <text x="320" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7283">lowbit ile sıçrama</text>
+
+  <!-- arrow center to right -->
+  <path d="M421 166 H455" fill="none" stroke="#7894ad" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="455,166 447,161 447,171" fill="#7894ad"/>
+
+  <!-- Sağ query -->
+  <g filter="url(#shadow)">
+    <rect x="460" y="78" width="150" height="184" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="535" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49637c">Alan Sorgusu</text>
+
+  <g stroke="#c7d9e6" stroke-width="1.1">
+    <rect x="482" y="121" width="24" height="20" rx="4" fill="#edf5fb"/>
+    <rect x="509" y="121" width="24" height="20" rx="4" fill="#d9ecfa"/>
+    <rect x="536" y="121" width="24" height="20" rx="4" fill="#d9ecfa"/>
+    <rect x="563" y="121" width="24" height="20" rx="4" fill="#edf5fb"/>
+    <rect x="482" y="144" width="24" height="20" rx="4" fill="#d9ecfa"/>
+    <rect x="509" y="144" width="24" height="20" rx="4" fill="#d8f0df"/>
+    <rect x="536" y="144" width="24" height="20" rx="4" fill="#d8f0df"/>
+    <rect x="563" y="144" width="24" height="20" rx="4" fill="#d9ecfa"/>
+    <rect x="482" y="167" width="24" height="20" rx="4" fill="#d9ecfa"/>
+    <rect x="509" y="167" width="24" height="20" rx="4" fill="#d8f0df"/>
+    <rect x="536" y="167" width="24" height="20" rx="4" fill="#d8f0df"/>
+    <rect x="563" y="167" width="24" height="20" rx="4" fill="#d9ecfa"/>
+    <rect x="482" y="190" width="24" height="20" rx="4" fill="#edf5fb"/>
+    <rect x="509" y="190" width="24" height="20" rx="4" fill="#d9ecfa"/>
+    <rect x="536" y="190" width="24" height="20" rx="4" fill="#d9ecfa"/>
+    <rect x="563" y="190" width="24" height="20" rx="4" fill="#edf5fb"/>
+  </g>
+  <rect x="506" y="141" width="57" height="49" rx="7" fill="none" stroke="#55a979" stroke-width="2.4"/>
+  <text x="535" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b8e">Öneklerin farkı</text>
+
+  <!-- bottom formula capsules -->
+  <g filter="url(#softShadow)">
+    <rect x="80" y="285" width="138" height="24" rx="12" fill="#fff4e8"/>
+    <rect x="251" y="285" width="138" height="24" rx="12" fill="#e6f2ff"/>
+    <rect x="422" y="285" width="138" height="24" rx="12" fill="#e5f5e8"/>
+  </g>
+  <text x="149" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b684d">Güncelleme</text>
+  <text x="320" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#517895">O(log n log m)</text>
+  <text x="491" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527a61">Dahil etme çıkarma</text>
+</svg>

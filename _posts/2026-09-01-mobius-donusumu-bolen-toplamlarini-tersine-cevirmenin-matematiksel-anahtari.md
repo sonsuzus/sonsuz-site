@@ -9,7 +9,11 @@ tags:
   - möbius fonksiyonu
   - matematiksel algoritmalar
 toc: true
+image: /img/mobius-donusumu-bolen-57.png
 ---
+
+![mobius-donusumu-bolen-57](/img/mobius-donusumu-bolen-57.svg)
+
 
 Sayı teorisinde bazı fonksiyonlar kendilerini doğrudan göstermek yerine bölenleri üzerinden ipucu verir. Elimizde bir sayının tüm bölenlerine ait değerlerin toplamı bulunur; fakat asıl fonksiyonu keşfetmemiz gerekir. Möbius dönüşümü, tam da bu matematiksel bilmeceyi çözen güçlü bir tersine çevirme tekniğidir.
 ``

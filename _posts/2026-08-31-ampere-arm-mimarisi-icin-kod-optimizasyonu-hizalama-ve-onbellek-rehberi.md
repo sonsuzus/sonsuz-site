@@ -9,6 +9,7 @@ tags:
   - arm64
   - performans optimizasyonu
 toc: true
+image: /img/ampere-arm-mimarisi-33.png
 ---
 
 Oracle Cloud A1 örneklerinde çalışan Ampere Altra işlemciler, x86 sunuculardan ARM64 dünyasına geçmek isteyen geliştiricilere yüksek çekirdek sayısı ve enerji verimliliği sunar. Ancak kodu yalnızca yeniden derlemek, işlemciden tam performans almak için yeterli değildir. Bellek hizalama, veri yerleşimi ve önbellek kullanımı önemsenmezse güçlü çekirdekler zamanlarının çoğunu veriyi bekleyerek geçirebilir.
@@ -95,3 +96,6 @@ perf stat -e cache-references,cache-misses,cycles,instructions ./app
 ```
 
 `-O3` ve `-mcpu` optimizasyon fırsatlarını artırır; ancak sonucu garanti etmez. `perf`, önbellek kaçırmalarını ve çevrim başına yapılan işi görmenizi sağlar. Son kararı tahmin değil ölçüm vermelidir: gerçek veriyle benchmark çalıştırın, NUMA yerleşimini kontrol edin ve iş parçacıklarını mümkün olduğunca yerel belleğe yakın tutun. ARM optimizasyonunun altın kuralı basittir: daha çok komut değil, daha az veri bekleme süresi!
+
+![ampere-arm-mimarisi-33](/img/ampere-arm-mimarisi-33.svg)
+

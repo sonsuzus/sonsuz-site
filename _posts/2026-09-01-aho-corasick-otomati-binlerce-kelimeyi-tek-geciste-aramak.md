@@ -9,6 +9,7 @@ tags:
   - algoritma
   - metin-arama
 toc: true
+image: /img/aho-corasick-otomati-99.png
 ---
 
 Bir metinde tek bir kelime aramak kolaydır; peki zararlı yazılım imzaları, yasaklı ifadeler veya DNA dizileri gibi binlerce deseni aynı anda bulmak istersek ne olur? Her kelime için metni baştan sona taramak çalışır, ancak performansı kısa sürede bir kaplumbağa yarışına dönüştürür. Aho-Corasick otomatı, bütün desenleri ortak bir sözlük ağacında birleştirerek metni yalnızca bir kez dolaşmamızı sağlar.
@@ -107,3 +108,6 @@ print(ac.search("ushers"))
 Aho-Corasick; antivirüs imza taramasında, içerik filtrelemede, arama motorlarında, log analizinde, ağ saldırısı tespitinde ve biyoinformatikte sıkça kullanılır. Desen kümesi sabitse hazırlama maliyeti bir kez ödenir ve milyonlarca metin hızla taranabilir.
 
 Elbette ücretsiz öğle yemeği yoktur: Otomat, özellikle büyük alfabelerde önemli miktarda bellek tüketebilir. Seyrek geçişleri sözlüklerle saklamak belleği azaltırken dizi tabanlı geçişler daha hızlı olabilir. Yine de konu “çok desen, tek metin geçişi” olduğunda Aho-Corasick, algoritma çantasındaki en güçlü araçlardan biridir.
+
+![aho-corasick-otomati-99](/img/aho-corasick-otomati-99.svg)
+

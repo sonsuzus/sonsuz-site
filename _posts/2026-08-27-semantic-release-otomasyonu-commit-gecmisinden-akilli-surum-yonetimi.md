@@ -66,6 +66,7 @@ Bu yapılandırmada `commit-analyzer` sonraki sürümü belirler, `release-notes
 
 CI/CD tarafında kritik ilke şudur: yayın işlemi geliştiricinin bilgisayarında değil, korumalı ana dalın başarılı işlem hattında çalışmalıdır. GitHub Actions için minimal bir iş akışı örneği:
 
+{% raw %}
 ```yaml
 name: Release
 on:
@@ -91,6 +92,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 ```
+{% endraw %}
 
 `fetch-depth: 0` ayrıntısı özellikle değerlidir; araç önceki etiketleri ve commitleri görmeden doğru karşılaştırma yapamaz. Token’lar ise yalnızca gerekli izinlerle tanımlanmalıdır. Commit doğrulamasını pull request aşamasında `commitlint` ve `husky` ile zorunlu kılmak, bozuk mesajın ancak yayın anında fark edilmesini önler.
 

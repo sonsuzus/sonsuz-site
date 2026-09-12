@@ -9,6 +9,7 @@ tags:
   - hopcroft-karp
   - maksimum eşleşme
 toc: true
+image: /img/hopcroft-karp-algoritmasiyla-31.png
 ---
 
 Bir şirkette çalışanları görevlere, öğrencileri projelere veya gönüllüleri etkinliklere dağıttığımızı düşünelim. Herkes her işe uygun olmayabilir; üstelik bir kişi yalnızca bir göreve atanabilir. Bütün olası dağılımları denemek kısa sürede kombinasyon cehennemine dönüşür. Hopcroft-Karp algoritması, bu karmaşayı iki parçalı çizge modeliyle düzenler ve mümkün olan en fazla sayıda eşleşmeyi verimli biçimde bulur.
@@ -111,3 +112,6 @@ def hopcroft_karp(graph):
 Örneğin `{"Ada": ["Web", "Mobil"], "Ece": ["Mobil"], "Can": ["Web", "Veri"]}` girdisi, öğrencilerin seçebileceği projeleri temsil eder. Algoritma uygun bir maksimum eşleşme döndürür; ancak birden fazla optimum dağılım varsa bunlardan yalnızca birini seçebilir.
 
 Hopcroft-Karp kapasitesi bir olan atamalarda harikadır. Projelerin kontenjanı, öncelikler veya maliyetler varsa problem; akış ağları, minimum maliyetli maksimum akış ya da ağırlıklı eşleşme modellerine genişletilmelidir. Yani bu algoritma güçlü bir çekiçtir, fakat her atama problemi de çivi değildir!
+
+![hopcroft-karp-algoritmasiyla-31](/img/hopcroft-karp-algoritmasiyla-31.svg)
+

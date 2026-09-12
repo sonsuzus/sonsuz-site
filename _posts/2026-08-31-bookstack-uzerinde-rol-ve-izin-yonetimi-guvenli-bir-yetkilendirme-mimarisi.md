@@ -9,7 +9,11 @@ tags:
   - yetkilendirme
   - rbac
 toc: true
+image: /img/bookstack-uzerinde-rol-46.png
 ---
+
+![bookstack-uzerinde-rol-46](/img/bookstack-uzerinde-rol-46.svg)
+
 
 BookStack, sınıf notlarından atölye belgelerine kadar pek çok içeriği düzenli biçimde paylaşmayı sağlar. Ancak öğrenci, eğitmen, mentor ve misafirlerin aynı sistemde bulunduğu senaryolarda yalnızca hesap açmak yeterli değildir. Kimin hangi kitabı görebileceği, sayfaları kimin değiştirebileceği ve içerikleri kimin silebileceği önceden tasarlanmalıdır.
 

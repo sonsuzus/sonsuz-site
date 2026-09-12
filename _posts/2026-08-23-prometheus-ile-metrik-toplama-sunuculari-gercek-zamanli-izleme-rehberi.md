@@ -67,6 +67,7 @@ PromQL karşılığı şöyledir:
 
 İzleme yalnızca grafik çizmek değildir; aksiyon alınabilir alarm üretmektir. Örneğin CPU beş dakika boyunca %85 üzerindeyse alarm kuralı tanımlanabilir:
 
+{% raw %}
 ```yaml
 groups:
   - name: sunucu-kurallari
@@ -79,6 +80,7 @@ groups:
         annotations:
           summary: "{{ $labels.instance }} üzerinde CPU kullanımı yüksek"
 ```
+{% endraw %}
 
 Buradaki `for: 5m`, kısa süreli CPU sıçramalarının gereksiz bildirim üretmesini engeller. Prometheus veriyi toplar ve kuralı değerlendirir; Alertmanager ise benzer alarmları gruplar, susturma kurallarını uygular ve doğru kanala iletir.
 

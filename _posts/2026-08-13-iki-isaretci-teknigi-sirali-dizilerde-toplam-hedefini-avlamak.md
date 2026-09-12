@@ -33,6 +33,7 @@ Aşağıdaki C++ örneği, hedef toplamı veren bir çifti bulur. Kod, sıralı 
 
 {% raw %}
 
+{% raw %}
 ```cpp
 #include <iostream>
 #include <optional>
@@ -54,6 +55,7 @@ std::optional<std::pair<int, int>> twoSumSorted(
     return std::nullopt;
 }
 ```
+{% endraw %}
 
 {% endraw %}
 

@@ -9,6 +9,7 @@ tags:
   - object cache
   - mysql
 toc: true
+image: /img/wordpresste-object-cache-89.png
 ---
 
 Yüksek trafikli bir WordPress sitesinde MySQL, aynı sorulara tekrar tekrar cevap veren yorgun bir danışmana dönüşebilir: “Bu yazının meta bilgileri nedir?”, “Menüde hangi bağlantılar var?”, “Bu ayarlar değişti mi?” Object Cache, sık kullanılan sonuçları bellekte tutarak danışmanın masasını gereksiz isteklerden temizler. Böylece hem sayfalar hızlanır hem de veritabanı gerçekten gerekli sorgularla ilgilenir.
@@ -87,3 +88,6 @@ Beş dakikalık TTL, güncellik ile performans arasında denge kurar. Ancak içe
 Çok uzun TTL kullanmak bayat içerik üretir; çok kısa TTL ise önbelleği pahalı bir süs eşyasına çevirir. Aynı anda süresi dolan popüler anahtarlar ayrıca **cache stampede** yaratabilir: Yüzlerce istek aynı sorguyu yeniden çalıştırır. TTL değerlerine küçük rastgele sapmalar eklemek ve kilitleme mekanizması kullanmak bu hücumu azaltır.
 
 Son olarak Query Monitor, Redis istatistikleri ve MySQL slow query log birlikte izlenmelidir. Hedef “her şeyi cache'lemek” değil; yüksek maliyetli, sık tekrarlanan ve kabul edilebilir süre boyunca değişmeyen verileri saklamaktır. Doğru kurulan Object Cache, MySQL'i emekliye ayırmaz; ona hak ettiği sakin çalışma ortamını verir.
+
+![wordpresste-object-cache-89](/img/wordpresste-object-cache-89.svg)
+

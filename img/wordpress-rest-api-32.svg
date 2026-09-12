@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="wpGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7ebff"/>
+      <stop offset="100%" stop-color="#b9d9f4"/>
+    </linearGradient>
+    <linearGradient id="apiGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff5df"/>
+      <stop offset="100%" stop-color="#bee4cb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66829a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71907e" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="159" r="117" fill="#dceffc" opacity="0.32"/>
+  <circle cx="319" cy="159" r="86" fill="#e4f5e8" opacity="0.45"/>
+
+  <path d="M187 151 C212 151 220 151 242 151" fill="none" stroke="#779bb5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="242,151 232,145 232,157" fill="#779bb5"/>
+
+  <path d="M397 131 C427 95 442 78 468 75" fill="none" stroke="#6f9d8b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="468,75 458,71 461,82" fill="#6f9d8b"/>
+
+  <path d="M403 159 C428 159 443 159 468 159" fill="none" stroke="#6f9d8b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="468,159 458,153 458,165" fill="#6f9d8b"/>
+
+  <path d="M397 187 C425 222 442 239 468 243" fill="none" stroke="#6f9d8b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="468,243 459,235 457,247" fill="#6f9d8b"/>
+
+  <path d="M320 209 C320 231 320 243 320 257" fill="none" stroke="#bd9471" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="320,257 314,247 326,247" fill="#bd9471"/>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="103" width="152" height="97" rx="19" fill="url(#wpGrad)" stroke="#9dc4df"/>
+    <rect x="51" y="120" width="43" height="43" rx="12" fill="#ffffff" opacity="0.72"/>
+    <circle cx="72.5" cy="141.5" r="14" fill="#4e86ae"/>
+    <text x="72.5" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#ffffff">W</text>
+    <text x="106" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#28546f">WordPress</text>
+    <text x="106" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476d83">İçerik paneli</text>
+    <rect x="51" y="175" width="119" height="9" rx="4.5" fill="#8fb7d0" opacity="0.55"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="242" y="105" width="161" height="105" rx="23" fill="url(#apiGrad)" stroke="#a9d0b3"/>
+    <circle cx="322.5" cy="139" r="22" fill="#4f9a70"/>
+    <path d="M310 139 L318 131 L326 139 L318 147 Z" fill="#ffffff"/>
+    <path d="M327 130 L335 138 L327 146" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="322.5" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2c6846">REST API</text>
+    <text x="322.5" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#537a62">JSON içerik servisi</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="468" y="43" width="135" height="64" rx="16" fill="#fff1dc" stroke="#ebcda0"/>
+    <rect x="482" y="57" width="27" height="27" rx="7" fill="#e6a75e"/>
+    <path d="M489 63 H502 V77 H489 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M492 67 H499 M492 71 H499" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="519" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#795222">Web Arayüzü</text>
+    <text x="519" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#967344">React ve Next</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="468" y="127" width="135" height="64" rx="16" fill="#eee5fb" stroke="#cdbce8"/>
+    <rect x="482" y="141" width="27" height="27" rx="7" fill="#9875c9"/>
+    <rect x="489" y="145" width="13" height="20" rx="3" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="495.5" cy="161.5" r="1.5" fill="#ffffff"/>
+    <text x="519" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#60457e">Mobil</text>
+    <text x="519" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80669e">Flutter ve uygulama</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="468" y="211" width="135" height="64" rx="16" fill="#dff2f3" stroke="#abd4d7"/>
+    <rect x="482" y="225" width="27" height="27" rx="7" fill="#58a8ac"/>
+    <path d="M488 232 H503 V244 H488 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M492 248 H499" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="519" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356d71">Diğer Kanallar</text>
+    <text x="519" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a898b">Ekran ve portal</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="238" y="257" width="165" height="47" rx="15" fill="#fff0e8" stroke="#e5c2ae"/>
+    <circle cx="264" cy="280.5" r="13" fill="#ce8c69"/>
+    <path d="M258 281 H270 M264 275 V287" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="284" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#87533c">Önbellek ve Güvenlik</text>
+    <text x="284" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a1705a">Hızlı ve kontrollü erişim</text>
+  </g>
+
+  <text x="35" y="38" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466579">Headless WordPress Mimarisi</text>
+  <text x="35" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75909b">İçerik tek merkezde, arayüz her kanalda</text>
+</svg>

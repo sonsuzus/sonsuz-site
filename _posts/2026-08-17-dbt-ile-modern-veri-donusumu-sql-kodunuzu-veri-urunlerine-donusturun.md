@@ -38,6 +38,7 @@ Aşağıdaki model, ham siparişlerden tamamlanmış siparişleri seçer. `ref()
 
 {% raw %}
 
+{% raw %}
 ```sql
 -- models/marts/fct_orders.sql
 select
@@ -49,6 +50,7 @@ select
 from {{ ref('stg_orders') }}
 where status = 'completed'
 ```
+{% endraw %}
 
 {% endraw %}
 

@@ -9,9 +9,13 @@ tags:
   - kombinatorik
   - simetri
 toc: true
+image: /img/burnside-lemmasi-ile-47.png
 ---
 
 Bir kolyenin boncuklarını boyadığınızı düşünün. Kırmızı-mavi-yeşil dizilimi ilk bakışta yüzlerce farklı sonuç üretebilir; ancak kolyeyi döndürdüğünüzde veya ters çevirdiğinizde bazı boyamalar aslında aynıdır. İşte Burnside Lemması, bu simetri karmaşasını düzenleyerek gerçekten farklı olan boyamaların sayısını bulmamızı sağlar.
+
+
+![burnside-lemmasi-ile-47](/img/burnside-lemmasi-ile-47.svg)
 
 ``
 

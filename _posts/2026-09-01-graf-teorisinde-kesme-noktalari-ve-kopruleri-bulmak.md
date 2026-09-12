@@ -9,6 +9,7 @@ tags:
   - tarjan algoritması
   - derinlik öncelikli arama
 toc: true
+image: /img/graf-teorisinde-kesme-91.png
 ---
 
 İnternet omurgası, elektrik şebekesi veya şehirler arası yol ağı düşünelim. Bazı istasyonların kapanması yalnızca küçük bir aksaklık yaratırken bazıları bütün ağı iki parçaya ayırabilir. Graf teorisi, ağın bu kritik düğüm ve bağlantılarını **kesme noktaları** ve **köprüler** kavramlarıyla belirler. Üstelik bunu her elemanı tek tek kaldırıp ağı tekrar sınamadan, verimli bir DFS algoritmasıyla gerçekleştirebiliriz.
@@ -26,6 +27,9 @@ Bir $v \in V$ düğümü ve ona bağlı kenarlar silindiğinde grafın bağlı b
 | Kesme noktası | Düğüm | Bağlı bileşen sayısı artar | Merkezi ağ yönlendiricisi |
 | Köprü | Kenar | Bağlı bileşen sayısı artar | İki şehir arasındaki tek yol |
 | Normal eleman | Düğüm veya kenar | Alternatif rota bulunur | Yedekli bağlantı |
+
+![graf-teorisinde-kesme-91](/img/graf-teorisinde-kesme-91.svg)
+
 
 Saf yaklaşımda her düğüm ve kenarı sırayla kaldırıp BFS veya DFS çalıştırabiliriz. Bu yöntem yaklaşık $O(V(V+E))$ veya $O(E(V+E))$ maliyetine ulaşabilir. Tarjan yaklaşımı ise bütün kritik elemanları yalnızca $O(V+E)$ zamanda bulur.
 

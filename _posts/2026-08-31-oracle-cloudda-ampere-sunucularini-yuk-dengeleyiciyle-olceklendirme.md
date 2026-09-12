@@ -9,7 +9,11 @@ tags:
   - ampere
   - yük dengeleme
 toc: true
+image: /img/oracle-cloudda-ampere-78.png
 ---
+
+![oracle-cloudda-ampere-78](/img/oracle-cloudda-ampere-78.svg)
+
 
 Tek bir Ampere sunucusu hızlı ve ekonomik olabilir; ancak bütün web trafiğini ona yönlendirmek, uygulamanın kaderini tek bir makineye bağlar. Oracle Cloud Infrastructure üzerinde bir yük dengeleyici kullanarak istekleri birden fazla Ampere A1 sunucusuna dağıtabilir, bakım sırasında kesintiyi azaltabilir ve trafik yükseldiğinde sisteminizi daha rahat ölçeklendirebilirsiniz.
 ``

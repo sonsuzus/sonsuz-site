@@ -9,6 +9,7 @@ tags:
   - remote ssh
   - bulut geliştirme
 toc: true
+image: /img/vs-code-remote-74.png
 ---
 
 Kod bulut sunucuda, editör dizüstü bilgisayarında olabilir mi? VS Code Remote-SSH tam olarak bu sihri gerçekleştirir. Proje dosyalarını indirip yeniden yüklemek yerine SSH üzerinden sunucuya bağlanır; dosya gezgininden terminale, Git işlemlerinden hata ayıklamaya kadar geliştirme ortamını yerel VS Code penceresinden yönetmeni sağlar. Böylece “Sunucuda çalışan kod neden bilgisayarımda çalışmıyor?” bilmecesi de büyük ölçüde tarihe karışır.
@@ -31,6 +32,9 @@ Arayüz yerel olduğu için $T_{arayüz}$ oldukça küçüktür. Ancak “gecikm
 | Ağ diski bağlama | Uzak | Değişken | Anlık, fakat kırılgan |
 | Remote-SSH | Uzak | Uzak | Ek kopyalama gerekmez |
 | Yerel geliştirme | Yerel | Yerel | Dağıtım sırasında gerekir |
+
+![vs-code-remote-74](/img/vs-code-remote-74.svg)
+
 
 ## Kurulum ve ilk bağlantı
 

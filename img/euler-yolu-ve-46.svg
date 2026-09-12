@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="cardBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f1ff"/>
+      <stop offset="100%" stop-color="#d8ebfb"/>
+    </linearGradient>
+    <linearGradient id="cardMint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f7ec"/>
+      <stop offset="100%" stop-color="#d0f0df"/>
+    </linearGradient>
+    <linearGradient id="cardLav" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0ebff"/>
+      <stop offset="100%" stop-color="#e5dcfb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#46697c" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="587" cy="43" r="74" fill="#d9f0ed" opacity="0.42"/>
+  <circle cx="61" cy="285" r="84" fill="#e7ddf8" opacity="0.34"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31485b">HİERHOLZER: HER KENAR BİR KEZ</text>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="53" width="178" height="223" rx="18" fill="url(#cardBlue)"/>
+  </g>
+  <text x="113" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566f">Çizge ve Derece</text>
+
+  <g stroke="#6384a0" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M67 126 L113 103 L158 130 L147 185 L91 190 L67 126"/>
+    <path d="M113 103 L91 190"/>
+    <path d="M113 103 L147 185"/>
+    <path d="M67 126 L147 185"/>
+  </g>
+  <g fill="#fff" stroke="#4d7795" stroke-width="2" filter="url(#soft)">
+    <circle cx="67" cy="126" r="12"/>
+    <circle cx="113" cy="103" r="12"/>
+    <circle cx="158" cy="130" r="12"/>
+    <circle cx="147" cy="185" r="12"/>
+    <circle cx="91" cy="190" r="12"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35546b" text-anchor="middle">
+    <text x="67" y="130">A</text>
+    <text x="113" y="107">B</text>
+    <text x="158" y="134">C</text>
+    <text x="147" y="189">D</text>
+    <text x="91" y="194">E</text>
+  </g>
+  <rect x="43" y="219" width="140" height="35" rx="12" fill="#f8fcff" opacity="0.88"/>
+  <text x="113" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426276">Tek derece: 2</text>
+  <text x="113" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39735f">Euler yolu var</text>
+
+  <path d="M210 164 L247 164" stroke="#6b8ba2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="252,164 243,158 243,170" fill="#6b8ba2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="258" y="53" width="148" height="223" rx="18" fill="url(#cardMint)"/>
+  </g>
+  <text x="332" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356457">Yığın ve Geri Dönüş</text>
+
+  <path d="M283 113 C297 93 319 94 330 113 C342 135 358 136 376 114" fill="none" stroke="#58a383" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="381,111 372,108 375,118" fill="#58a383"/>
+  <text x="332" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#437567">Kullanılmamış kenar</text>
+
+  <g filter="url(#soft)">
+    <rect x="289" y="139" width="82" height="25" rx="8" fill="#fafffd"/>
+    <rect x="289" y="165" width="82" height="25" rx="8" fill="#f6fffa"/>
+    <rect x="289" y="191" width="82" height="25" rx="8" fill="#effbf4"/>
+    <rect x="289" y="217" width="82" height="25" rx="8" fill="#e5f6ec"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356457" text-anchor="middle">
+    <text x="330" y="156">Düğüm C</text>
+    <text x="330" y="182">Düğüm D</text>
+    <text x="330" y="208">Düğüm A</text>
+    <text x="330" y="234">Başlangıç</text>
+  </g>
+  <path d="M384 143 L384 221" stroke="#65a98d" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="384,228 379,218 389,218" fill="#65a98d"/>
+  <text x="385" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#437567">Çıkış yoksa aktar</text>
+
+  <path d="M414 164 L449 164" stroke="#6b8ba2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="454,164 445,158 445,170" fill="#6b8ba2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="460" y="53" width="156" height="223" rx="18" fill="url(#cardLav)"/>
+  </g>
+  <text x="538" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c4c83">Euler Rotası</text>
+
+  <path d="M487 136 L530 108 L578 133 L563 193 L505 201 L487 136" fill="none" stroke="#9778c7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M530 108 L505 201 L563 193 L487 136" fill="none" stroke="#9778c7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="487,136 496,130 494,141" fill="#7654ad"/>
+  <g fill="#ffffff" stroke="#8063b2" stroke-width="2" filter="url(#soft)">
+    <circle cx="487" cy="136" r="11"/>
+    <circle cx="530" cy="108" r="11"/>
+    <circle cx="578" cy="133" r="11"/>
+    <circle cx="563" cy="193" r="11"/>
+    <circle cx="505" cy="201" r="11"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#624a8c" text-anchor="middle">
+    <text x="487" y="140">A</text>
+    <text x="530" y="112">B</text>
+    <text x="578" y="137">C</text>
+    <text x="563" y="197">D</text>
+    <text x="505" y="205">E</text>
+  </g>
+  <rect x="479" y="221" width="118" height="33" rx="11" fill="#fbfaff" opacity="0.9"/>
+  <text x="538" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#624a8c">Kenarlar: 7 / 7</text>
+
+  <text x="320" y="300" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597080">Bağlantılı çizge • Zaman: O(V + E)</text>
+</svg>

@@ -9,6 +9,7 @@ tags:
   - algoritmalar
   - polinom çarpımı
 toc: true
+image: /img/fft-ile-polinom-45.png
 ---
 
 Binlerce basamaklı iki sayıyı klasik yöntemle çarpmak, her basamağı diğer sayının bütün basamaklarıyla eşleştirmeyi gerektirir. Bu yaklaşım küçük sayılarda sorunsuzdur; ancak veri büyüdükçe işlem sayısı hızla artar. Hızlı Fourier Dönüşümü, yani FFT, sayıları polinom gibi yorumlayarak çarpımı frekans uzayına taşır ve yaklaşık $O(n \log n)$ zamanda tamamlar. Kısacası FFT, devasa çarpma işlemini akıllıca organize edilmiş küçük işlemlere dönüştürür.
@@ -32,6 +33,9 @@ Doğrudan hesaplamada her katsayı, pek çok katsayıyla eşleştirilir. $n$ ter
 | Klasik çarpım | Tüm katsayı çiftlerini çarpar | $O(n^2)$ | Küçük girdiler |
 | Karatsuba | Çarpımı üç alt probleme böler | Yaklaşık $O(n^{1.585})$ | Orta büyüklükte sayılar |
 | FFT | Evrişimi noktasal çarpıma dönüştürür | $O(n \log n)$ | Çok büyük sayılar ve veri kümeleri |
+
+![fft-ile-polinom-45](/img/fft-ile-polinom-45.svg)
+
 
 ## FFT neden hızlıdır?
 

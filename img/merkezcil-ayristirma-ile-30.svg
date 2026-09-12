@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#55718c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#5f7990" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="45" r="72" fill="#dceeff" opacity="0.45"/>
+  <circle cx="586" cy="276" r="94" fill="#dff3dc" opacity="0.48"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31546e">Merkezcil Ayrıştırma</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8394">Ağaç mesafe sorgularını hızlandırma</text>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="66" width="165" height="220" rx="18" fill="url(#panel)" stroke="#d5e4ef"/>
+    <rect x="220" y="66" width="198" height="220" rx="18" fill="url(#panel)" stroke="#d5e4ef"/>
+    <rect x="449" y="66" width="167" height="220" rx="18" fill="url(#panel)" stroke="#d5e4ef"/>
+  </g>
+
+  <text x="42" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42647d">Özgün ağaç</text>
+  <text x="238" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42647d">Centroid ağacı</text>
+  <text x="467" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42647d">Hızlı sorgu</text>
+
+  <!-- Original tree -->
+  <g stroke="#9eb6c7" stroke-width="2.2" stroke-linecap="round">
+    <path d="M106 124 L67 151 L48 191"/>
+    <path d="M67 151 L85 191"/>
+    <path d="M106 124 L145 151 L128 191"/>
+    <path d="M145 151 L163 191"/>
+    <path d="M106 124 L106 213"/>
+    <path d="M106 213 L77 242"/>
+    <path d="M106 213 L135 242"/>
+  </g>
+  <g filter="url(#soft)">
+    <circle cx="106" cy="124" r="14" fill="#ffd98c" stroke="#e5af48"/>
+    <circle cx="67" cy="151" r="10" fill="#bfe3ff" stroke="#74afd8"/>
+    <circle cx="145" cy="151" r="10" fill="#cceccb" stroke="#83b981"/>
+    <circle cx="48" cy="191" r="9" fill="#dbe7f7" stroke="#98b3ce"/>
+    <circle cx="85" cy="191" r="9" fill="#dbe7f7" stroke="#98b3ce"/>
+    <circle cx="128" cy="191" r="9" fill="#dbe7f7" stroke="#98b3ce"/>
+    <circle cx="163" cy="191" r="9" fill="#dbe7f7" stroke="#98b3ce"/>
+    <circle cx="106" cy="213" r="10" fill="#e0d6fa" stroke="#aa91d0"/>
+    <circle cx="77" cy="242" r="9" fill="#dbe7f7" stroke="#98b3ce"/>
+    <circle cx="135" cy="242" r="9" fill="#dbe7f7" stroke="#98b3ce"/>
+  </g>
+  <text x="94" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#78551a">c</text>
+  <rect x="43" y="258" width="127" height="18" rx="9" fill="#eef5fa"/>
+  <text x="57" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557286">Merkez seçilir</text>
+
+  <!-- Arrow 1 -->
+  <path d="M195 176 L211 176" stroke="#6f97ae" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="215,176 207,171 207,181" fill="#6f97ae"/>
+
+  <!-- centroid hierarchy -->
+  <g stroke="#91a9bb" stroke-width="2" stroke-linecap="round">
+    <path d="M319 125 L275 162"/>
+    <path d="M319 125 L363 162"/>
+    <path d="M275 162 L253 205"/>
+    <path d="M275 162 L297 205"/>
+    <path d="M363 162 L341 205"/>
+    <path d="M363 162 L385 205"/>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="294" y="108" width="50" height="32" rx="12" fill="#ffd98c" stroke="#e5af48"/>
+    <rect x="251" y="147" width="48" height="30" rx="11" fill="#bfe3ff" stroke="#74afd8"/>
+    <rect x="339" y="147" width="48" height="30" rx="11" fill="#cceccb" stroke="#83b981"/>
+    <rect x="235" y="192" width="36" height="27" rx="10" fill="#e0d6fa" stroke="#aa91d0"/>
+    <rect x="279" y="192" width="36" height="27" rx="10" fill="#e0d6fa" stroke="#aa91d0"/>
+    <rect x="323" y="192" width="36" height="27" rx="10" fill="#e0d6fa" stroke="#aa91d0"/>
+    <rect x="367" y="192" width="36" height="27" rx="10" fill="#e0d6fa" stroke="#aa91d0"/>
+  </g>
+  <text x="306" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#78551a">c₀</text>
+  <text x="263" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#316783">c₁</text>
+  <text x="351" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397344">c₂</text>
+  <text x="246" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655080">•</text>
+  <text x="290" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655080">•</text>
+  <text x="334" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655080">•</text>
+  <text x="378" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655080">•</text>
+  <rect x="245" y="239" width="148" height="36" rx="12" fill="#eef7ef" stroke="#d2e8d1"/>
+  <text x="260" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49734e">Boyut yarıya iner</text>
+  <text x="271" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66856b">Yükseklik: log N</text>
+
+  <!-- Arrow 2 -->
+  <path d="M424 176 L440 176" stroke="#6f97ae" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="444,176 436,171 436,181" fill="#6f97ae"/>
+
+  <!-- Query panel -->
+  <g filter="url(#soft)">
+    <rect x="467" y="108" width="130" height="37" rx="12" fill="#e3f1ff" stroke="#b7d9f2"/>
+    <rect x="467" y="157" width="130" height="37" rx="12" fill="#fff2cf" stroke="#f0d38c"/>
+    <rect x="467" y="206" width="130" height="50" rx="12" fill="#e6f4e4" stroke="#bde0b9"/>
+  </g>
+  <circle cx="484" cy="126" r="7" fill="#70b4e1"/>
+  <text x="498" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6680">İşaretle</text>
+  <text x="498" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#678399">Ataları güncelle</text>
+
+  <circle cx="484" cy="175" r="7" fill="#e8b74e"/>
+  <text x="498" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#735a24">Sorgula</text>
+  <text x="498" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c7541">En yakın mesafe</text>
+
+  <path d="M532 146 L532 153" stroke="#82a094" stroke-width="1.8"/>
+  <polygon points="532,157 528,151 536,151" fill="#82a094"/>
+  <path d="M532 195 L532 202" stroke="#82a094" stroke-width="1.8"/>
+  <polygon points="532,206 528,200 536,200" fill="#82a094"/>
+
+  <text x="482" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43744a">Yalnızca merkez ataları</text>
+  <text x="484" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8564">O(log N) adım</text>
+</svg>

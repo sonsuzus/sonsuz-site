@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="kova" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a9d8f5"/>
+      <stop offset="100%" stop-color="#6eb8e5"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8594" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="72" cy="55" r="42" fill="#d8eff7" opacity="0.45"/>
+  <circle cx="580" cy="272" r="58" fill="#dcefd4" opacity="0.48"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38566a">Güvenli Toplu Bildirim Akışı</text>
+  <text x="32" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8491">Kuyruk, hız sınırı ve yeniden deneme</text>
+
+  <!-- Kullanıcılar -->
+  <g filter="url(#golge)">
+    <rect x="30" y="105" width="112" height="116" rx="18" fill="#fffdf8"/>
+  </g>
+  <circle cx="86" cy="136" r="22" fill="#f8d78a"/>
+  <circle cx="86" cy="130" r="7" fill="#bb844e"/>
+  <path d="M73 148 Q86 137 99 148 L99 154 L73 154 Z" fill="#bb844e"/>
+  <circle cx="67" cy="176" r="11" fill="#dbeef8"/>
+  <circle cx="86" cy="176" r="11" fill="#c9e7d1"/>
+  <circle cx="105" cy="176" r="11" fill="#ead7f5"/>
+  <text x="86" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38566a">Alıcılar</text>
+
+  <!-- input arrow -->
+  <path d="M146 163 H177" fill="none" stroke="#7a9bac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="177,158 187,163 177,168" fill="#7a9bac"/>
+
+  <!-- Kuyruk -->
+  <g filter="url(#golge)">
+    <rect x="190" y="88" width="132" height="151" rx="18" fill="#fffdfb"/>
+  </g>
+  <rect x="211" y="112" width="90" height="20" rx="7" fill="#e5d6f4"/>
+  <rect x="211" y="139" width="90" height="20" rx="7" fill="#d3ebf7"/>
+  <rect x="211" y="166" width="90" height="20" rx="7" fill="#d9efd6"/>
+  <rect x="211" y="193" width="64" height="20" rx="7" fill="#f8dfb8"/>
+  <circle cx="287" cy="203" r="10" fill="#f0aa63"/>
+  <text x="256" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38566a">Öncelik Kuyruğu</text>
+  <text x="256" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77909c">Bekleyen mesajlar</text>
+
+  <!-- arrow -->
+  <path d="M326 163 H356" fill="none" stroke="#7a9bac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="356,158 366,163 356,168" fill="#7a9bac"/>
+
+  <!-- Token bucket -->
+  <g filter="url(#golge)">
+    <rect x="369" y="78" width="134" height="171" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="436" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38566a">Token Kovası</text>
+  <path d="M397 129 Q397 118 408 118 H464 Q475 118 475 129 L469 190 Q468 205 455 205 H417 Q404 205 403 190 Z" fill="url(#kova)" stroke="#5b9fc5" stroke-width="1.5"/>
+  <ellipse cx="436" cy="129" rx="39" ry="11" fill="#cdeafb" stroke="#5b9fc5" stroke-width="1.5"/>
+  <circle cx="418" cy="154" r="6" fill="#fdf5bc"/>
+  <circle cx="436" cy="169" r="6" fill="#fdf5bc"/>
+  <circle cx="452" cy="148" r="6" fill="#fdf5bc"/>
+  <text x="436" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7b8a">25 mesaj / saniye</text>
+
+  <!-- arrow -->
+  <path d="M507 163 H533" fill="none" stroke="#7a9bac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="533,158 543,163 533,168" fill="#7a9bac"/>
+
+  <!-- Telegram -->
+  <g filter="url(#golge)">
+    <rect x="546" y="104" width="70" height="118" rx="18" fill="#e3f1fc"/>
+  </g>
+  <circle cx="581" cy="139" r="20" fill="#55aee4"/>
+  <path d="M568 138 L594 128 L587 151 L579 143 L575 148 L574 141 Z" fill="#ffffff"/>
+  <text x="581" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38566a">Bot API</text>
+  <text x="581" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7b8a">Gönder</text>
+
+  <!-- retry feedback -->
+  <path d="M580 228 C580 281 333 289 258 260 C225 248 224 244 224 239" fill="none" stroke="#e58974" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polygon points="219,243 224,233 230,243" fill="#e58974"/>
+  <g filter="url(#golge)">
+    <rect x="413" y="264" width="132" height="32" rx="12" fill="#fff2ed"/>
+  </g>
+  <text x="479" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#bd6659">429 → Bekle ve dene</text>
+
+  <!-- status -->
+  <g filter="url(#golge)">
+    <rect x="35" y="262" width="190" height="34" rx="13" fill="#e6f3e3"/>
+  </g>
+  <circle cx="55" cy="279" r="6" fill="#65ad78"/>
+  <text x="68" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47725a">Kontrollü ve ölçülebilir akış</text>
+</svg>

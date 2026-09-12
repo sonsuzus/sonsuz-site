@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="saving" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4ce"/>
+      <stop offset="100%" stop-color="#ffe4a8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#50708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#46677b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="570" cy="52" r="88" fill="#d9f1eb" opacity="0.42"/>
+  <circle cx="53" cy="291" r="104" fill="#dcecff" opacity="0.48"/>
+
+  <text x="32" y="37" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516a">FLARUM MESAJ OLAY AKIŞI</text>
+  <text x="32" y="56" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8293">Çekirdek akışa güvenli dinleyici yerleştirme</text>
+
+  <path d="M116 158 L143 158" fill="none" stroke="#7d96a8" stroke-width="2.2"/>
+  <polygon points="143,158 135,153 135,163" fill="#7d96a8"/>
+  <path d="M235 158 L262 158" fill="none" stroke="#7d96a8" stroke-width="2.2"/>
+  <polygon points="262,158 254,153 254,163" fill="#7d96a8"/>
+  <path d="M380 158 L407 158" fill="none" stroke="#7d96a8" stroke-width="2.2"/>
+  <polygon points="407,158 399,153 399,163" fill="#7d96a8"/>
+  <path d="M499 158 L526 158" fill="none" stroke="#7d96a8" stroke-width="2.2"/>
+  <polygon points="526,158 518,153 518,163" fill="#7d96a8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="124" width="84" height="68" rx="16" fill="#dcecff"/>
+    <rect x="143" y="124" width="92" height="68" rx="16" fill="#dff3ea"/>
+    <rect x="262" y="113" width="118" height="90" rx="18" fill="url(#saving)" stroke="#efc969" stroke-width="1.2"/>
+    <rect x="407" y="124" width="92" height="68" rx="16" fill="#e8e2fa"/>
+    <rect x="526" y="124" width="82" height="68" rx="16" fill="#d9f2ed"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="74" y="153" font-weight="700" fill="#375b77">İstek</text>
+    <text x="74" y="171" fill="#638096">Mesaj</text>
+
+    <text x="189" y="153" font-weight="700" fill="#35675c">Doğrulama</text>
+    <text x="189" y="171" fill="#638076">Yetki</text>
+
+    <text x="321" y="148" font-weight="700" fill="#876111">Saving</text>
+    <text x="321" y="167" fill="#8c6e2d">Hook noktası</text>
+    <text x="321" y="185" fill="#9c7c38">Öncesi karar</text>
+
+    <text x="453" y="153" font-weight="700" fill="#5f4b8a">Kayıt</text>
+    <text x="453" y="171" fill="#796b9d">Model</text>
+
+    <text x="567" y="153" font-weight="700" fill="#306b62">Posted</text>
+    <text x="567" y="171" fill="#5c867f">Sonrası</text>
+  </g>
+
+  <path d="M321 113 L321 92 L189 92" fill="none" stroke="#d09f43" stroke-width="2"/>
+  <polygon points="189,92 197,87 197,97" fill="#d09f43"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="74" y="68" width="151" height="48" rx="14" fill="#fffdf4" stroke="#efdca1" stroke-width="1"/>
+  </g>
+  <circle cx="94" cy="92" r="11" fill="#ffe3a1"/>
+  <path d="M89 92 L93 96 L100 88" fill="none" stroke="#9b7020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#715526">InspectPost</text>
+  <text x="112" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#917842">Dinleyici</text>
+
+  <path d="M321 203 L321 229 L220 229" fill="none" stroke="#c77878" stroke-width="2"/>
+  <polygon points="220,229 228,224 228,234" fill="#c77878"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="74" y="216" width="151" height="57" rx="14" fill="#fff4f3" stroke="#efc6c2" stroke-width="1"/>
+  </g>
+  <circle cx="95" cy="244" r="12" fill="#ffd9d4"/>
+  <path d="M90 239 L100 249 M100 239 L90 249" stroke="#b65c59" stroke-width="2" stroke-linecap="round"/>
+  <text x="114" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#934d4b">Reddet</text>
+  <text x="114" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#aa706d">Yasaklı ifade</text>
+
+  <path d="M567 192 L567 230" fill="none" stroke="#61a496" stroke-width="2"/>
+  <polygon points="567,230 562,222 572,222" fill="#61a496"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="488" y="231" width="118" height="45" rx="14" fill="#edfaf6" stroke="#bde3d8" stroke-width="1"/>
+  </g>
+  <text x="547" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36776c">Kuyruk</text>
+  <text x="547" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66968e">Bildirim ve log</text>
+
+  <path d="M401 92 C442 92 449 105 449 111" fill="none" stroke="#9bb3c3" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="458" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#658092">Küçük ve idempotent</text>
+</svg>

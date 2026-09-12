@@ -9,6 +9,7 @@ tags:
   - asyncio
   - veritabanı
 toc: true
+image: /img/asyncio-trafiginde-gizli-19.png
 ---
 
 Asenkron bir bot geliştirirken yüzlerce mesajı aynı anda işleyebildiğinizi düşünüyor olabilirsiniz. Fakat olay döngüsünün ortasına yerleştirilen tek bir senkron veritabanı sorgusu, çok şeritli görünen bu yolu bir anda bariyerle kapatabilir. Bot çevrim içidir, işlemci çoğunlukla boştadır, hata mesajı da yoktur; buna rağmen komutlar cevap bekler. Suçlu genellikle olay döngüsünü fark ettirmeden bloke eden I/O işlemidir.
@@ -91,3 +92,6 @@ async def kullanici_getir(user_id: int):
 Asenkron sürücü tek başına hızlı sorgu garantisi vermez; sadece bekleme sırasında sistemi kullanılabilir tutar. İndeksler, sorgu planları, zaman aşımı ve havuz boyutu yine önemlidir.
 
 Bloklamayı yakalamak için event loop debug modu, yavaş callback uyarıları ve sorgu süreleri izlenmelidir. Basit bir kalp atışı görevi de gecikmeleri görünür kılar. Sonuç olarak temel kural nettir: Event loop üzerinde uzun süren senkron I/O çalıştırmayın. Ya işlemi kontrollü biçimde thread'e aktarın ya da uçtan uca asenkron bir veritabanı katmanı kurun.
+
+![asyncio-trafiginde-gizli-19](/img/asyncio-trafiginde-gizli-19.svg)
+

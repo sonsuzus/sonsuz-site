@@ -36,6 +36,7 @@ Bu formül akademik bir ölçüm değildir; önemli mesaj şudur: yalnızca çok
 
 Örnek olarak Node.js tabanlı bir servis için GitHub Actions kullanabiliriz. Aşağıdaki iş akışı, `main` dalına yapılan her gönderimde kodu kurar, test eder, Docker imajı üretir ve kayıt defterine yollar. Gerçek projede kayıt defteri kimlik bilgileri kesinlikle repository secret olarak saklanmalıdır.
 
+{% raw %}
 ```yaml
 name: CI-CD
 on:
@@ -59,6 +60,7 @@ jobs:
       - name: Registry'e gönder
         run: docker push ghcr.io/acme/api:${{ github.sha }}
 ```
+{% endraw %}
 
 Buradaki kritik karar, imajı `latest` yerine commit SHA ile etiketlemektir. Çünkü aynı imajı test, staging ve üretim ortamlarında çalıştırmak isteriz. Bu yaklaşıma **build once, deploy many** denir: bir kez üretilen artefakt, değiştirilmeden farklı ortamlara taşınır. Böylece staging'de doğrulanan şeyin üretimdeki şeyle aynı olması sağlanır.
 

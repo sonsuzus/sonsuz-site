@@ -9,7 +9,11 @@ tags:
   - xor
   - rekabetçi programlama
 toc: true
+image: /img/kombinatoryal-oyunlarda-xor-85.png
 ---
+
+![kombinatoryal-oyunlarda-xor-85](/img/kombinatoryal-oyunlarda-xor-85.svg)
+
 
 İki oyuncunun sırayla hamle yaptığı bir oyunda bütün olasılıkları gezmek ilk bakışta doğal görünür. Fakat taş yığınları büyüdüğünde oyun ağacı küçük bir çalı olmaktan çıkıp dijital bir ormana dönüşür. Kombinatoryal oyun teorisi, uygun koşullardaki bir oyunun durumunu XOR işlemiyle tek bir sayıya indirerek kazananı belirlememizi sağlar.
 

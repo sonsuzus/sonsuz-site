@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8cbcff"/>
+      <stop offset="100%" stop-color="#83d9bd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#66809a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="42" r="74" fill="#dcecff" opacity="0.55"/>
+  <circle cx="585" cy="275" r="94" fill="#dff3e6" opacity="0.55"/>
+
+  <text x="32" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35506b">AĞ DAYANIKLILIĞI</text>
+  <text x="32" y="50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8093">Tarjan ile kritik düğüm ve bağlantı analizi</text>
+
+  <rect x="26" y="75" width="238" height="210" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="47" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b73">Ağ grafı</text>
+  <text x="47" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8395a4">Alternatif rotalar ve tek geçişler</text>
+
+  <path d="M73 171 L113 139 L158 164 L198 133 M73 171 L119 218 L158 164 M119 218 L179 226 L198 133 M158 164 L218 193 M179 226 L218 193" fill="none" stroke="#9ab8ce" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M218 193 L241 193" fill="none" stroke="#ef8d8d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M113 139 L73 171" fill="none" stroke="#9ab8ce" stroke-width="4" stroke-linecap="round"/>
+
+  <circle cx="73" cy="171" r="14" fill="#d9ebff" stroke="#8bb9e8" stroke-width="2" filter="url(#smallShadow)"/>
+  <circle cx="113" cy="139" r="14" fill="#d9ebff" stroke="#8bb9e8" stroke-width="2" filter="url(#smallShadow)"/>
+  <circle cx="158" cy="164" r="16" fill="#ffe2c9" stroke="#f2a76d" stroke-width="3" filter="url(#smallShadow)"/>
+  <circle cx="198" cy="133" r="14" fill="#d9ebff" stroke="#8bb9e8" stroke-width="2" filter="url(#smallShadow)"/>
+  <circle cx="119" cy="218" r="14" fill="#d9ebff" stroke="#8bb9e8" stroke-width="2" filter="url(#smallShadow)"/>
+  <circle cx="179" cy="226" r="14" fill="#d9ebff" stroke="#8bb9e8" stroke-width="2" filter="url(#smallShadow)"/>
+  <circle cx="218" cy="193" r="14" fill="#d9ebff" stroke="#8bb9e8" stroke-width="2" filter="url(#smallShadow)"/>
+  <circle cx="245" cy="193" r="14" fill="#ffe1e1" stroke="#ed9090" stroke-width="2" filter="url(#smallShadow)"/>
+
+  <text x="153" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#955f32">u</text>
+  <text x="245" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a14e4e">v</text>
+  <text x="46" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#bf6b42">● Kesme noktası</text>
+  <text x="157" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c26666">━ Köprü</text>
+
+  <path d="M275 178 L307 178" fill="none" stroke="url(#flow)" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="307,178 297,171 297,185" fill="#72c8b3"/>
+
+  <rect x="315" y="103" width="140" height="150" rx="22" fill="#eaf4ff" filter="url(#shadow)"/>
+  <circle cx="385" cy="134" r="25" fill="#ffffff" filter="url(#smallShadow)"/>
+  <path d="M375 135 C375 126 382 120 390 120 C398 120 403 126 403 133 C403 143 395 148 385 153 C377 148 375 142 375 135Z" fill="#91bdf0"/>
+  <path d="M362 177 L408 177" stroke="#b6cae0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M362 192 L400 192" stroke="#b6cae0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M362 207 L391 207" stroke="#b6cae0" stroke-width="2" stroke-linecap="round"/>
+  <text x="385" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42617d">DFS taraması</text>
+
+  <path d="M465 178 L495 178" fill="none" stroke="url(#flow)" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="495,178 485,171 485,185" fill="#72c8b3"/>
+
+  <rect x="503" y="75" width="111" height="210" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="523" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b73">Zaman damgaları</text>
+
+  <rect x="521" y="123" width="75" height="42" rx="12" fill="#e2f0ff"/>
+  <text x="534" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4378aa">disc[u]</text>
+  <text x="534" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#67849a">keşif</text>
+
+  <rect x="521" y="177" width="75" height="42" rx="12" fill="#e2f7eb"/>
+  <text x="538" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#478667">low[u]</text>
+  <text x="537" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#67849a">erişim</text>
+
+  <path d="M522 240 L594 240" stroke="#e4edf1" stroke-width="1.5"/>
+  <text x="558" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e896c">O(V+E)</text>
+
+  <rect x="315" y="267" width="140" height="28" rx="14" fill="#dff3e8" opacity="0.9"/>
+  <text x="385" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#438064">Tek geçişte tespit</text>
+</svg>

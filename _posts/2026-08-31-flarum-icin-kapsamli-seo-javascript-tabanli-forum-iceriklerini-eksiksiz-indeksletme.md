@@ -9,6 +9,7 @@ tags:
   - seo
   - javascript
 toc: true
+image: /img/flarum-icin-kapsamli-41.png
 ---
 
 Flarum hızlı, modern ve kullanıcı dostu bir forum altyapısıdır; ancak JavaScript ağırlıklı çalışma modeli SEO tarafında bazı soru işaretleri oluşturabilir. Arama motoru botu sayfaya geldiğinde yalnızca boş bir uygulama kabuğu görüyorsa tartışmalarınız, kullanıcı yanıtları ve kategori açıklamalarınız indekslenmeden kalabilir. Neyse ki sunucu tarafı çıktı, doğru meta etiketleri ve kontrollü ön oluşturma stratejileriyle botlara eksiksiz içerik sunmak mümkündür.
@@ -77,3 +78,6 @@ Forum içeriği için `DiscussionForumPosting` yapılandırılmış verisi olduk
 XML site haritasına yalnızca indekslenebilir tartışmaları ekleyin ve `lastmod` değerini yeni yanıt geldiğinde güncelleyin. Düşük kaliteli profil, arama sonucu ve yinelenen filtre sayfalarını `noindex` ile sınırlandırarak tarama bütçesini asıl içeriklere yönlendirin.
 
 Son olarak Google Search Console URL Denetimi, Rich Results Test ve log analiziyle gerçek Googlebot davranışını izleyin. SEO’yu tek seferlik eklenti kurulumu değil; render süresi, indekslenen URL oranı ve organik trafik üzerinden sürekli ölçülen bir performans süreci olarak ele alın.
+
+![flarum-icin-kapsamli-41](/img/flarum-icin-kapsamli-41.svg)
+

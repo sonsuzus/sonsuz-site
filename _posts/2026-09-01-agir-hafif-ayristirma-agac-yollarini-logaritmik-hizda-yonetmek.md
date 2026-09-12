@@ -9,6 +9,7 @@ tags:
   - ağaç-algoritmaları
   - segment-tree
 toc: true
+image: /img/agir-hafif-ayristirma-29.png
 ---
 
 Bir ağaçta iki düğüm arasındaki yolu bulmak kolaydır; ancak yüz binlerce düğüm ve sorgu devreye girdiğinde masum bir yürüyüş performans canavarına dönüşür. Ağır-Hafif Ayrıştırma, yani Heavy-Light Decomposition (HLD), uzun yolları birkaç doğrusal parçaya bölerek sorgu ve güncellemeleri Segment Tree gibi veri yapılarıyla hızlandırır.
@@ -118,3 +119,6 @@ void addPath(int a, int b, int value) {
 Buradaki `st.query` aralık toplamını, `st.add` ise lazy propagation kullanan aralık güncellemesini temsil eder. Düğüm değerleri yerine kenar değerleri tutuluyorsa son zincirde LCA düğümünün konumu hariç bırakılmalıdır.
 
 HLD; yol toplamı, maksimum değer, renk değiştirme ve kenar ağırlığı güncelleme gibi dinamik problemlerde güçlüdür. Biraz DFS, biraz Segment Tree ve doğru zincir yönetimiyle devasa ağaçlar artık korkutucu bir orman değil, düzenli birkaç otoyoldur.
+
+![agir-hafif-ayristirma-29](/img/agir-hafif-ayristirma-29.svg)
+

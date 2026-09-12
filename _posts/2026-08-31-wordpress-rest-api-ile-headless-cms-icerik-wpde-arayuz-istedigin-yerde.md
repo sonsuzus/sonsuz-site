@@ -9,6 +9,7 @@ tags:
   - headless cms
   - javascript
 toc: true
+image: /img/wordpress-rest-api-32.png
 ---
 
 WordPress denince akla çoğunlukla tema, eklenti ve klasik blog sayfaları gelir. Oysa WordPress’i yalnızca içerik üretim paneli olarak kullanıp ziyaretçiye görünen arayüzü React, Vue, Next.js, Nuxt, Flutter veya başka bir teknolojiyle geliştirmek mümkündür. Bu yaklaşımda WordPress mutfakta yemekleri hazırlar, REST API garsonluk yapar, seçtiğin arayüz ise sunumu üstlenir.
@@ -39,6 +40,7 @@ Bu uç nokta JSON biçiminde yazıları döndürür. Sayfalar için `/pages`, ka
 
 Aşağıdaki bileşen WordPress API’sinden son yazıları getirir. `fetch`, HTTP isteğini gerçekleştirir; `useEffect` bileşen açıldığında isteği başlatır; `useState` ise gelen veriyi arayüzde saklar.
 
+{% raw %}
 ```jsx
 import { useEffect, useState } from "react";
 
@@ -66,6 +68,7 @@ export default function Posts() {
   );
 }
 ```
+{% endraw %}
 
 WordPress başlık ve içerikleri işlenmiş HTML olarak döndürebilir. `dangerouslySetInnerHTML` bu HTML’yi görüntüler; ancak güvenilmeyen kaynaklardan gelen içeriklerde XSS riski oluşturur. İçeriği temizlemek için DOMPurify gibi bir araç kullanmak iyi fikirdir.
 
@@ -92,3 +95,6 @@ Ayrıca CORS ayarları yalnızca izin verilen alanları kapsamalı, kullanılmay
 Aynı içeriği web sitesi, mobil uygulama, akıllı ekran ve kurumsal portal gibi birçok kanala dağıtacaksan headless WordPress güçlü bir seçenektir. Özel kullanıcı deneyimleri ve modern ön yüz araçları için de özgürlük sağlar. Ancak basit bir tanıtım sitesi için ek dağıtım, önizleme, SEO ve önbellek süreçleri gereksiz karmaşıklık yaratabilir.
 
 Kısacası WordPress’i tema motorundan ibaret görmemek gerekir. REST API sayesinde o, içerik ekibinin tanıdığı paneli koruyan ve farklı uygulamalara düzenli JSON servis eden yetenekli bir veri merkezine dönüşebilir.
+
+![wordpress-rest-api-32](/img/wordpress-rest-api-32.svg)
+

@@ -9,6 +9,7 @@ tags:
   - veri yapıları
   - algoritmalar
 toc: true
+image: /img/fenwick-agaci-varyasyonlari-80.png
 ---
 
 Bir matris üzerinde sürekli hücre güncelleyip dikdörtgen alanların toplamını sorgulamak, ilk bakışta iç içe döngülerle çözülebilecek masum bir problem gibi görünür. Ancak matris büyüdükçe bu yaklaşım bilgisayarınıza küçük çaplı bir sabır testi uygular. İki boyutlu Fenwick Ağacı, diğer adıyla 2D Binary Indexed Tree, nokta güncellemelerini ve alan toplamı sorgularını logaritmik maliyetle bir araya getirerek bu sorunu zarifçe çözer.
@@ -32,6 +33,9 @@ $$
 | Nokta güncelleme | $O(1)$ | $O(\log n\log m)$ |
 | Dikdörtgen toplamı | $O(nm)$ | $O(\log n\log m)$ |
 | Bellek | $O(nm)$ | $O(nm)$ |
+
+![fenwick-agaci-varyasyonlari-80](/img/fenwick-agaci-varyasyonlari-80.svg)
+
 
 Naif yapı güncellemede hızlıdır fakat sorguda tüm alanı gezer. 2B Fenwick ise iki işlemi dengeler; özellikle çok sayıda güncelleme ve sorgunun karışık geldiği senaryolarda parlar.
 

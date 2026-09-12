@@ -9,6 +9,7 @@ tags:
   - rate-limiting
   - kuyruk-sistemleri
 toc: true
+image: /img/telegram-botlarinda-rate-19.png
 ---
 
 Telegram botunuz yüz kullanıcıya mesaj gönderirken gayet sakin çalışabilir; ancak kullanıcı sayısı binlere ulaştığında Bot API aniden `429 Too Many Requests` yanıtları vermeye başlayabilir. Çözüm, döngüye biraz `sleep` serpiştirmek değil; gönderim hızını ölçen, mesajları sıraya alan ve geçici hataları yeniden deneyen kontrollü bir dağıtım sistemi kurmaktır.
@@ -109,3 +110,6 @@ Birden fazla worker başlatılabilir; fakat hepsinin aynı limiter nesnesini kul
 Bellek içi `asyncio.Queue`, süreç yeniden başladığında görevleri kaybeder. Kritik bildirimlerde Redis Streams, RabbitMQ, SQS veya Kafka gibi kalıcı sistemler kullanılmalıdır. Her görev için benzersiz kimlik tutmak da aynı mesajın iki kez gönderilmesini önleyen idempotency kontrolünü mümkün kılar.
 
 Ayrıca kullanıcı botu engellediyse ilgili kimliği pasif duruma getirin; kalıcı hataları sonsuza kadar yeniden denemeyin. Başarı oranı, kuyruk uzunluğu, 429 sayısı, ortalama bekleme süresi ve gönderim gecikmesi gibi metrikleri izleyin. Böylece toplu bildirim sistemi, Telegram’ın kapısını yumruklayan sabırsız bir ziyaretçi değil, sırasını bilen düzenli bir misafir gibi çalışır.
+
+![telegram-botlarinda-rate-19](/img/telegram-botlarinda-rate-19.svg)
+

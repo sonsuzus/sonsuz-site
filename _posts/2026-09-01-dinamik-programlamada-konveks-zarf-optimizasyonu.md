@@ -9,6 +9,7 @@ tags:
   - konveks zarf
   - algoritma optimizasyonu
 toc: true
+image: /img/dinamik-programlamada-konveks-36.png
 ---
 
 Dinamik programlama bazen doğru bağıntıyı bulduğumuz hâlde bizi $O(n^2)$ karmaşıklığıyla baş başa bırakır. Her durum için önceki bütün durumları denemek, küçük girdilerde masum görünürken yüz bin elemanda bilgisayarı düşünsel bir inzivaya sokabilir. Eğer geçiş maliyeti belirli biçimde doğrusal fonksiyonlara ayrılabiliyorsa **Konveks Zarf Optimizasyonu** veya yaygın adıyla **Convex Hull Trick (CHT)**, bu aramayı geometrik bir probleme dönüştürerek ciddi biçimde hızlandırır.
@@ -35,6 +36,9 @@ biçiminde bir doğru üretir. Eşleştirme yaparsak $x=S_i$, $m_j=-2S_j$ ve $b_
 | $S_i$ | Sorgulanan $x$ koordinatı |
 | Geçiş maliyeti | Doğrunun $y$ değeri |
 | Minimum geçiş | Alt zarftaki en iyi doğru |
+
+![dinamik-programlamada-konveks-36](/img/dinamik-programlamada-konveks-36.svg)
+
 
 ## Konveks zarf neden işe yarar?
 

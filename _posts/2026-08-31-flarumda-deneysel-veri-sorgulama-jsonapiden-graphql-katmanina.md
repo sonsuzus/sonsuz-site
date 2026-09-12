@@ -9,7 +9,11 @@ tags:
   - graphql
   - apı mimarisi
 toc: true
+image: /img/flarumda-deneysel-veri-42.png
 ---
+
+![flarumda-deneysel-veri-42](/img/flarumda-deneysel-veri-42.svg)
+
 
 Flarum, standart kurulumunda düzenli ve öngörülebilir bir JSON:API yaklaşımı sunar. Ancak bir tartışmanın yazarını, etiketlerini, son yanıtlarını ve özel uzantı alanlarını tek ekranda göstermek istediğimizde istemci tarafı küçük bir veri toplama dedektifine dönüşebilir. Deneysel bir sorgulama katmanı ekleyerek istemcinin ihtiyaç duyduğu alanları açıkça seçmesini, gereksiz veriyi azaltmasını ve Flarum uzantıları arasında daha esnek ilişkiler kurmasını sağlayabiliriz.
 ``

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8caef2"/>
+      <stop offset="100%" stop-color="#6f8ed8"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#63809a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-15%" y="-20%" width="130%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7c96a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="320" cy="161" r="111" fill="#dbeaf2" opacity="0.38"/>
+  <circle cx="320" cy="161" r="82" fill="none" stroke="#bbd4df" stroke-width="1.5" stroke-dasharray="5 6"/>
+
+  <path d="M222 104 L265 132" fill="none" stroke="#89a5b5" stroke-width="2"/>
+  <polygon points="265,132 256,130 260,139" fill="#89a5b5"/>
+  <path d="M418 104 L375 132" fill="none" stroke="#89a5b5" stroke-width="2"/>
+  <polygon points="375,132 380,139 384,130" fill="#89a5b5"/>
+  <path d="M224 223 L267 191" fill="none" stroke="#89a5b5" stroke-width="2"/>
+  <polygon points="267,191 257,194 263,201" fill="#89a5b5"/>
+  <path d="M416 223 L373 191" fill="none" stroke="#89a5b5" stroke-width="2"/>
+  <polygon points="373,191 377,201 383,194" fill="#89a5b5"/>
+
+  <g filter="url(#golge)">
+    <rect x="261" y="119" width="118" height="84" rx="22" fill="url(#merkez)"/>
+    <rect x="274" y="132" width="92" height="58" rx="15" fill="#f1f7ff" opacity="0.21"/>
+  </g>
+  <rect x="286" y="141" width="14" height="14" rx="3" fill="#dff2e0"/>
+  <rect x="306" y="141" width="14" height="14" rx="3" fill="#dff2e0"/>
+  <rect x="326" y="141" width="14" height="14" rx="3" fill="#dff2e0"/>
+  <rect x="286" y="161" width="14" height="14" rx="3" fill="#dff2e0"/>
+  <rect x="306" y="161" width="14" height="14" rx="3" fill="#dff2e0"/>
+  <rect x="326" y="161" width="14" height="14" rx="3" fill="#dff2e0"/>
+  <text x="320" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Ampere ARM64</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="45" y="48" width="177" height="69" rx="16" fill="#fff7df"/>
+    <rect x="58" y="61" width="37" height="37" rx="10" fill="#f5c96f"/>
+    <path d="M69 70 H84 M69 78 H84 M69 86 H78" stroke="#8a692a" stroke-width="2" stroke-linecap="round"/>
+    <text x="108" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a5c68">64 bayt hizalama</text>
+    <text x="108" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65757c">Satır taşmasını azalt</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="418" y="48" width="177" height="69" rx="16" fill="#e8f6eb"/>
+    <rect x="432" y="61" width="37" height="37" rx="10" fill="#8dcea2"/>
+    <path d="M440 88 V70 M447 88 V66 M454 88 V74 M461 88 V69" stroke="#35724b" stroke-width="3" stroke-linecap="round"/>
+    <text x="480" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a5c68">Veri yerleşimi</text>
+    <text x="480" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65757c">SoA ve ardışık erişim</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="45" y="204" width="179" height="69" rx="16" fill="#f4eafa"/>
+    <rect x="58" y="217" width="37" height="37" rx="10" fill="#c6a1dd"/>
+    <circle cx="76.5" cy="235.5" r="10" fill="none" stroke="#70438a" stroke-width="2"/>
+    <path d="M76 229 V236 L82 239" fill="none" stroke="#70438a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="108" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a5c68">Önbellek yerelliği</text>
+    <text x="108" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65757c">Sıcak veriyi yakın tut</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="416" y="204" width="179" height="69" rx="16" fill="#e6f2fb"/>
+    <rect x="429" y="217" width="37" height="37" rx="10" fill="#92c4e4"/>
+    <path d="M438 246 L445 238 L451 242 L461 229" fill="none" stroke="#296487" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="461,229 454,230 459,235" fill="#296487"/>
+    <text x="479" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a5c68">Ölç ve derle</text>
+    <text x="479" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65757c">O3 • perf • yerel hedef</text>
+  </g>
+
+  <path d="M320 211 V285" fill="none" stroke="#789caf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="320,285 315,276 325,276" fill="#789caf"/>
+  <g filter="url(#hafifGolge)">
+    <rect x="226" y="285" width="188" height="25" rx="12" fill="#d9efe5"/>
+    <text x="320" y="302" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356653">Daha az veri bekleme süresi</text>
+  </g>
+</svg>

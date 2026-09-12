@@ -9,9 +9,13 @@ tags:
   - php
   - eklenti geliştirme
 toc: true
+image: /img/wordpresste-ozel-eklenti-18.png
 ---
 
 Hazır WordPress temaları hızlı başlangıç sağlar; ancak etkinlik kataloğu, ekip listesi veya projeye özgü bir başvuru sistemi istediğinizde tema seçenekleri duvara toslayabilir. Çözüm, `functions.php` dosyasını yamalı bohçaya çevirmek değil, iş mantığını bağımsız bir eklentiye taşımaktır. Böylece tema değişse bile kısa kodlarınız ve verileriniz yerinde kalır.
+
+
+![wordpresste-ozel-eklenti-18](/img/wordpresste-ozel-eklenti-18.svg)
 
 ``
 

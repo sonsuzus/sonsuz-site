@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="center" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5efff"/>
+      <stop offset="100%" stop-color="#dff4ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e8399" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60788f" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="90" cy="56" r="74" fill="#dceeff" opacity="0.44"/>
+  <circle cx="574" cy="276" r="86" fill="#dff3dd" opacity="0.48"/>
+
+  <text x="32" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40546b">İki Parçalı Çizge</text>
+  <text x="487" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40546b">Maksimum Eşleşme</text>
+
+  <rect x="24" y="46" width="172" height="240" rx="20" fill="#ffffff" opacity="0.82" filter="url(#shadow)"/>
+  <text x="53" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#55708c">Kişiler</text>
+  <text x="142" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#55708c">Görevler</text>
+
+  <path d="M74 101 L148 101 M74 101 L148 153 M74 153 L148 153 M74 153 L148 205 M74 205 L148 153 M74 205 L148 249" stroke="#a7b8c9" stroke-width="2" fill="none"/>
+  <path d="M74 101 L148 153 M74 153 L148 205 M74 205 L148 249" stroke="#f2a357" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="43" y="87" width="32" height="28" rx="10" fill="#cfe3ff"/>
+    <rect x="43" y="139" width="32" height="28" rx="10" fill="#cfe3ff"/>
+    <rect x="43" y="191" width="32" height="28" rx="10" fill="#cfe3ff"/>
+    <rect x="148" y="87" width="32" height="28" rx="10" fill="#d8f0d5"/>
+    <rect x="148" y="139" width="32" height="28" rx="10" fill="#d8f0d5"/>
+    <rect x="148" y="191" width="32" height="28" rx="10" fill="#d8f0d5"/>
+    <rect x="148" y="235" width="32" height="28" rx="10" fill="#d8f0d5"/>
+  </g>
+  <text x="54" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416283">A</text>
+  <text x="54" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416283">B</text>
+  <text x="54" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416283">C</text>
+  <text x="158" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7447">1</text>
+  <text x="158" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7447">2</text>
+  <text x="158" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7447">3</text>
+  <text x="158" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7447">4</text>
+
+  <path d="M205 160 L221 160" stroke="#7892aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="225,160 217,155 217,165" fill="#7892aa"/>
+
+  <rect x="230" y="67" width="180" height="186" rx="24" fill="url(#center)" filter="url(#shadow)"/>
+  <text x="270" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385b77">Hopcroft-Karp</text>
+
+  <rect x="253" y="112" width="134" height="43" rx="13" fill="#ffffff" opacity="0.88" filter="url(#smallShadow)"/>
+  <circle cx="275" cy="133" r="11" fill="#a9cef5"/>
+  <path d="M270 133 L275 128 L280 133 L275 138 Z" fill="#4d7eae"/>
+  <text x="296" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6580">BFS · Katmanlar</text>
+
+  <path d="M320 158 L320 172" stroke="#6f8da7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="320,177 315,169 325,169" fill="#6f8da7"/>
+
+  <rect x="253" y="180" width="134" height="43" rx="13" fill="#ffffff" opacity="0.88" filter="url(#smallShadow)"/>
+  <circle cx="275" cy="201" r="11" fill="#b9dfb0"/>
+  <path d="M271 197 L279 201 L271 205 Z" fill="#4d8652"/>
+  <text x="296" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6580">DFS · Yollar</text>
+
+  <path d="M418 160 L434 160" stroke="#7892aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="438,160 430,155 430,165" fill="#7892aa"/>
+
+  <rect x="443" y="46" width="173" height="240" rx="20" fill="#ffffff" opacity="0.84" filter="url(#shadow)"/>
+  <rect x="462" y="65" width="135" height="31" rx="12" fill="#fff0dc"/>
+  <text x="480" y="85" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a26227">Artırıcı Yollar</text>
+
+  <path d="M474 128 L551 128 M474 181 L551 181 M474 234 L551 234" stroke="#e99443" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="551,128 542,122 542,134" fill="#e99443"/>
+  <polygon points="551,181 542,175 542,187" fill="#e99443"/>
+  <polygon points="551,234 542,228 542,240" fill="#e99443"/>
+
+  <g filter="url(#smallShadow)">
+    <circle cx="473" cy="128" r="15" fill="#d3e7ff"/>
+    <circle cx="473" cy="181" r="15" fill="#d3e7ff"/>
+    <circle cx="473" cy="234" r="15" fill="#d3e7ff"/>
+    <circle cx="553" cy="128" r="15" fill="#d9f0d5"/>
+    <circle cx="553" cy="181" r="15" fill="#d9f0d5"/>
+    <circle cx="553" cy="234" r="15" fill="#d9f0d5"/>
+  </g>
+  <text x="468" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416283">A</text>
+  <text x="468" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416283">B</text>
+  <text x="468" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416283">C</text>
+  <text x="549" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7447">2</text>
+  <text x="549" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7447">3</text>
+  <text x="549" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7447">4</text>
+
+  <rect x="237" y="272" width="166" height="27" rx="13" fill="#ddebe6"/>
+  <text x="258" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456b61">O(|E| √|V|) · Optimum</text>
+</svg>

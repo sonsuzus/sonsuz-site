@@ -9,6 +9,7 @@ tags:
   - fibonacci
   - rekabetçi programlama
 toc: true
+image: /img/matris-us-alma-23.png
 ---
 
 Fibonacci dizisinin milyarıncı elemanı istendiğinde klasik döngünüz süre sınırına doğru hüzünlü bir yolculuğa çıkar. Neyse ki doğrusal tekrarlayan diziler, matrisler aracılığıyla tek bir dönüşüm şeklinde modellenebilir. Bu dönüşümün kuvvetini hızlı üs alma yöntemiyle hesapladığımızda $O(n)$ adımlık işi $O(\log n)$ zamanda tamamlarız. Başka bir deyişle milyarlarca adım, yaklaşık otuz matris çarpımına dönüşür.
@@ -39,6 +40,9 @@ Dolayısıyla problem artık diziyi sırayla üretmek değil, $M^{n-1}$ matrisin
 | Özyinelemeli Fibonacci | $O(2^n)$ | $O(n)$ | Tam bir felaket |
 | Döngü / dinamik programlama | $O(n)$ | $O(1)$ | Orta büyüklükte iyi |
 | Matris üs alma | $O(\log n)$ | $O(1)$ | Yarışmaların gözdesi |
+
+![matris-us-alma-23](/img/matris-us-alma-23.svg)
+
 
 ## Hızlı üs alma mantığı
 

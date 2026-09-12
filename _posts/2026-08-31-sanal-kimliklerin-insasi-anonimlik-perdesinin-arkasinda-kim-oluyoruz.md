@@ -9,9 +9,13 @@ tags:
   - anonimlik
   - dijital kültür
 toc: true
+image: /img/sanal-kimliklerin-insasi-70.png
 ---
 
 Bir forumda ciddi bir teknoloji uzmanı, başka bir platformda sivri dilli bir eleştirmen, kişisel blogunda ise duygusal bir hikâye anlatıcısı… Aynı kişi internette birbirinden oldukça farklı karakterlere bürünebilir. Sanal kimlikler yalnızca kullanıcı adı ve profil fotoğrafından oluşmaz; kişinin seçerek sergilediği özelliklerin, davranışlarının ve topluluk içindeki itibarının birleşimidir.
+
+
+![sanal-kimliklerin-insasi-70](/img/sanal-kimliklerin-insasi-70.svg)
 
 ``
 

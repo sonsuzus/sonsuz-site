@@ -9,9 +9,13 @@ tags:
   - spa
   - mithril.js
 toc: true
+image: /img/flarum-forumlarinda-spa-41.png
 ---
 
 Bir Flarum forumunda tartışmadan kullanıcı profiline geçtiğinizde tarayıcının klasik anlamda yeniden yüklenmediğini fark etmiş olabilirsiniz. Adres değişir, yeni içerik gelir, kaydırma davranışı düzenlenir; fakat sayfanın tamamı baştan kurulmaz. Bu akıcı deneyimin arkasında, Flarum’un Mithril.js tabanlı **Single Page Application (SPA)** mimarisi bulunur. Gelin bu yapının kaputunu açıp isteklerden bileşen yaşam döngüsüne kadar neler döndüğüne bakalım.
+
+![flarum-forumlarinda-spa-41](/img/flarum-forumlarinda-spa-41.svg)
+
 ``
 
 ## SPA yaklaşımı neyi değiştiriyor?

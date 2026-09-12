@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="fftFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#cbe0fa"/>
+    </linearGradient>
+    <linearGradient id="multFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#ffe2a1"/>
+    </linearGradient>
+    <linearGradient id="invFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f2dc"/>
+      <stop offset="100%" stop-color="#bde7c6"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7990a3" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7990a3" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="85" cy="55" r="68" fill="#dcecff" opacity="0.42"/>
+  <circle cx="578" cy="276" r="86" fill="#daf0d8" opacity="0.42"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536a">FFT İLE BÜYÜK SAYI ÇARPIMI</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698094">Evrişim → frekans uzayı → hızlı sonuç</text>
+
+  <path d="M140 127 L166 127" stroke="#7893aa" stroke-width="2.2" fill="none"/>
+  <polygon points="166,127 158,122 158,132" fill="#7893aa"/>
+
+  <path d="M282 127 L306 127" stroke="#7893aa" stroke-width="2.2" fill="none"/>
+  <polygon points="306,127 298,122 298,132" fill="#7893aa"/>
+
+  <path d="M424 127 L450 127" stroke="#7893aa" stroke-width="2.2" fill="none"/>
+  <polygon points="450,127 442,122 442,132" fill="#7893aa"/>
+
+  <path d="M528 160 L528 198 L400 198 L400 211" stroke="#7893aa" stroke-width="2.2" fill="none"/>
+  <polygon points="400,211 395,203 405,203" fill="#7893aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="91" width="106" height="72" rx="17" fill="#ffffff"/>
+    <rect x="45" y="102" width="84" height="24" rx="9" fill="#f0d9e5"/>
+  </g>
+  <text x="87" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754c62">Basamaklar</text>
+  <text x="87" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c6678">1234 · 5678</text>
+
+  <g filter="url(#shadow)">
+    <rect x="166" y="91" width="116" height="72" rx="17" fill="#ffffff"/>
+    <rect x="177" y="102" width="94" height="24" rx="9" fill="#eadff8"/>
+  </g>
+  <text x="224" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#66527c">Polinomlar</text>
+  <text x="224" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c6678">katsayı dizisi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="306" y="77" width="118" height="100" rx="20" fill="url(#fftFill)"/>
+    <circle cx="365" cy="106" r="16" fill="#ffffff" opacity="0.7"/>
+    <path d="M356 106 C360 96 370 96 374 106 C370 116 360 116 356 106 Z" fill="none" stroke="#527da3" stroke-width="1.7"/>
+    <path d="M353 106 L377 106 M365 94 L365 118" stroke="#527da3" stroke-width="1.3" opacity="0.75"/>
+  </g>
+  <text x="365" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315c7f">FFT</text>
+  <text x="365" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416b8b">frekans uzayı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="450" y="91" width="156" height="72" rx="17" fill="url(#multFill)"/>
+    <circle cx="480" cy="127" r="17" fill="#ffffff" opacity="0.62"/>
+    <path d="M473 120 L487 134 M487 120 L473 134" stroke="#9a6d18" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <text x="544" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7c5a19">Noktasal çarpım</text>
+  <text x="544" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806d43">değer · değer</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="285" y="211" width="230" height="72" rx="18" fill="url(#invFill)"/>
+    <circle cx="322" cy="247" r="18" fill="#ffffff" opacity="0.65"/>
+    <path d="M313 247 C316 238 327 235 333 242 M331 252 C328 259 317 260 312 253" fill="none" stroke="#478459" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="334,242 328,241 331,247" fill="#478459"/>
+    <polygon points="311,253 317,254 314,248" fill="#478459"/>
+  </g>
+  <text x="418" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376d47">Ters FFT ve taşıma</text>
+  <text x="418" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7b5d">sonuç katsayıları</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="35" y="219" width="196" height="48" rx="15" fill="#ffffff"/>
+  </g>
+  <path d="M55 243 L78 243" stroke="#c1788d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M55 252 L94 252" stroke="#c1788d" stroke-width="3" stroke-linecap="round"/>
+  <text x="145" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#536d80">Klasik yöntem</text>
+  <text x="145" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6574">O(n²)</text>
+
+  <path d="M231 243 L267 243" stroke="#6b9a78" stroke-width="2.2" fill="none"/>
+  <polygon points="267,243 259,238 259,248" fill="#6b9a78"/>
+
+  <text x="550" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e7750">O(n log n)</text>
+  <text x="550" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638070">çok büyük girdiler</text>
+</svg>

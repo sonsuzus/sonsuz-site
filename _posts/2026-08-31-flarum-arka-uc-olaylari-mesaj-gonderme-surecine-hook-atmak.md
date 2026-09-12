@@ -9,6 +9,7 @@ tags:
   - php
   - event hooks
 toc: true
+image: /img/flarum-arka-uc-16.png
 ---
 
 Bir kullanıcı Flarum’da “Gönder” düğmesine bastığında mesaj doğrudan veritabanına ışınlanmaz. İçerik doğrulanır, yetkiler denetlenir, model hazırlanır ve kayıt işlemi tamamlanır. Flarum’un arka uç olayları, eklentilerin bu akışın belirli noktalarına dinleyici yerleştirmesine izin verir. Böylece çekirdek kodu değiştirmeden mesajı denetleyebilir, dönüştürebilir veya tamamen reddedebiliriz.
@@ -99,3 +100,6 @@ $$f(f(x))=f(x)$$
 Örneğin baştaki ve sondaki boşlukları temizlemek idempotenttir; mesaja her çalışmada yeniden imza eklemek değildir. Ayrıca kullanıcı girdisine güvenilmemeli, aktörün yetkileri `$event->actor` üzerinden kontrol edilmeli ve ağır işler kuyruk sistemine aktarılmalıdır.
 
 Kısacası Flarum events, çekirdek dosyalara tornavidayla dalmadan davranış değiştirmeyi sağlar. Doğru olayı seçen, küçük ve öngörülebilir listener’lar yazan bir eklenti; spam filtresinden otomatik etiketlemeye kadar pek çok özelliği forumun doğal parçasıymış gibi çalıştırabilir.
+
+![flarum-arka-uc-16](/img/flarum-arka-uc-16.svg)
+

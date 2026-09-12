@@ -9,6 +9,7 @@ tags:
   - buildx
   - arm
 toc: true
+image: /img/x86dan-arma-docker-47.png
 ---
 
 Bir projeyi x86 bilgisayarınızda sorunsuz çalıştırmanız, onun ARM tabanlı bir bulut sunucusunda da doğrudan çalışacağı anlamına gelmez. İşlemci komut setleri arasındaki fark, özellikle derlenmiş uygulamalarda ve yerel bağımlılıklarda kendini gösterir. Neyse ki Docker Buildx; x86 geliştirme ortamından ayrılmadan ARM64 uyumlu, hatta birden fazla mimariyi destekleyen imajlar üretmemizi sağlar.
@@ -97,3 +98,6 @@ docker buildx imagetools inspect registry.example.com/demo/server:1.0.0
 Yalnızca yerel ARM imajı gerekiyorsa `--platform linux/arm64 --load` kullanılabilir. Çok platformlu sonuçlar klasik Docker imaj deposuna aynı anda yüklenemediğinden, çoklu derlemelerde genellikle `--push` tercih edilir.
 
 Son olarak taban imajınızın ARM64 varyantına sahip olduğunu kontrol edin, sürümleri sabitleyin ve mümkünse CI sisteminde gerçek bir ARM düğümüyle test çalıştırın. Buildx mimari geçişi kolaylaştırır; fakat uygulamanın doğru davranmasını doğrulamak hâlâ testlerin görevidir.
+
+![x86dan-arma-docker-47](/img/x86dan-arma-docker-47.svg)
+

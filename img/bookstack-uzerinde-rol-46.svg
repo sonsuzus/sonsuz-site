@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="roleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ddecff"/>
+      <stop offset="100%" stop-color="#c8dcf7"/>
+    </linearGradient>
+    <linearGradient id="contentGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff3e4"/>
+      <stop offset="100%" stop-color="#c6e7d0"/>
+    </linearGradient>
+    <linearGradient id="effectiveGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#f7dca0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#56708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#56708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="321" cy="159" r="116" fill="#ffffff" opacity="0.32"/>
+  <circle cx="78" cy="50" r="50" fill="#cce5fb" opacity="0.28"/>
+  <circle cx="584" cy="268" r="66" fill="#cfead7" opacity="0.32"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536d">Güvenli Yetkilendirme Mimarisi</text>
+
+  <rect x="34" y="65" width="166" height="193" rx="20" fill="#ffffff" opacity="0.78" filter="url(#shadow)"/>
+  <rect x="48" y="80" width="138" height="35" rx="12" fill="url(#roleGrad)" filter="url(#smallShadow)"/>
+  <circle cx="68" cy="97" r="9" fill="#719bc9"/>
+  <path d="M64 98 L67 101 L73 94" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#294d70">Rol İzinleri</text>
+
+  <rect x="52" y="128" width="130" height="23" rx="9" fill="#eef6ff"/>
+  <text x="67" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f5f7d">Yönetici</text>
+  <circle cx="166" cy="139" r="5" fill="#85aad1"/>
+
+  <rect x="52" y="157" width="130" height="23" rx="9" fill="#eef6ff"/>
+  <text x="67" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f5f7d">Eğitmen</text>
+  <circle cx="166" cy="168" r="5" fill="#85aad1"/>
+
+  <rect x="52" y="186" width="130" height="23" rx="9" fill="#eef6ff"/>
+  <text x="67" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f5f7d">Öğrenci</text>
+  <circle cx="166" cy="197" r="5" fill="#85aad1"/>
+
+  <rect x="52" y="215" width="130" height="23" rx="9" fill="#eef6ff"/>
+  <text x="67" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f5f7d">Misafir</text>
+  <circle cx="166" cy="226" r="5" fill="#85aad1"/>
+
+  <path d="M201 160 C224 160 230 160 247 160" fill="none" stroke="#719bc9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="247,160 238,155 238,165" fill="#719bc9"/>
+
+  <rect x="246" y="113" width="148" height="95" rx="22" fill="url(#effectiveGrad)" filter="url(#shadow)"/>
+  <circle cx="320" cy="145" r="20" fill="#ffffff" opacity="0.76"/>
+  <path d="M312 145 L318 151 L329 138" fill="none" stroke="#c08a2d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765421">Etkin İzin</text>
+  <text x="320" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#87682d">En az yetki</text>
+
+  <path d="M394 160 C416 160 419 160 438 160" fill="none" stroke="#67a57b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="438,160 429,155 429,165" fill="#67a57b"/>
+
+  <rect x="439" y="52" width="166" height="211" rx="20" fill="#ffffff" opacity="0.8" filter="url(#shadow)"/>
+  <rect x="453" y="67" width="138" height="35" rx="12" fill="url(#contentGrad)" filter="url(#smallShadow)"/>
+  <path d="M467 78 Q467 74 471 74 L483 74 Q487 74 487 78 L487 91 L467 91 Z" fill="#5d9f73"/>
+  <path d="M467 79 L487 79" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+  <text x="497" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285b3a">İçerik İzinleri</text>
+
+  <path d="M474 120 L474 235" stroke="#8bc49b" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="474" cy="122" r="5" fill="#68a97c"/>
+  <circle cx="474" cy="151" r="5" fill="#68a97c"/>
+  <circle cx="474" cy="180" r="5" fill="#68a97c"/>
+  <circle cx="474" cy="209" r="5" fill="#68a97c"/>
+  <circle cx="474" cy="235" r="5" fill="#68a97c"/>
+
+  <rect x="490" y="110" width="88" height="23" rx="9" fill="#edf9ef"/>
+  <text x="503" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#396947">Raf</text>
+
+  <rect x="490" y="139" width="88" height="23" rx="9" fill="#edf9ef"/>
+  <text x="503" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#396947">Kitap</text>
+
+  <rect x="490" y="168" width="88" height="23" rx="9" fill="#edf9ef"/>
+  <text x="503" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#396947">Bölüm</text>
+
+  <rect x="490" y="197" width="88" height="23" rx="9" fill="#edf9ef"/>
+  <text x="503" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#396947">Sayfa</text>
+
+  <text x="490" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7d65">Özel kural</text>
+  <path d="M557 233 L564 240 L576 226" fill="none" stroke="#5d9f73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="213" y="266" width="214" height="31" rx="13" fill="#ffffff" opacity="0.82" filter="url(#smallShadow)"/>
+  <circle cx="234" cy="281.5" r="8" fill="#a98bd0"/>
+  <path d="M234 276 L234 287 M229 281.5 L239 281.5" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="250" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d487a">Kimlik doğrulama: LDAP veya OIDC</text>
+</svg>
