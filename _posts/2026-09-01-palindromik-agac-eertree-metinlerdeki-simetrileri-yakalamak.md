@@ -9,9 +9,13 @@ tags:
   - palindrom
   - veri-yapıları
 toc: true
+image: /img/palindromik-agac-eertree-34.png
 ---
 
 Bir kelimeyi tersten okuduğumuzda yine aynı kelimeyle karşılaşıyorsak elimizde bir palindrom vardır: `kazak`, `ada` veya `kabak` gibi. Peki milyonlarca karakter içeren bir metindeki bütün farklı palindromik alt metinleri bulmak istersek ne olur? Her aralığı tek tek denemek yerine Eertree, diğer adıyla Palindromik Ağaç, bu simetrik parçaları oldukça zarif biçimde saklar.
+
+![palindromik-agac-eertree-34](/img/palindromik-agac-eertree-34.svg)
+
 ``
 ## Önce küçük bir terminoloji düzeltmesi
 
