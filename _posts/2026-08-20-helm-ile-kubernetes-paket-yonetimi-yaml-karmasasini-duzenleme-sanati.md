@@ -12,6 +12,9 @@ image: /img/helm-ile-kubernetes-25.png
 ---
 
 Kubernetes üzerinde küçük bir uygulamayı dağıtmak çoğu zaman birkaç YAML dosyasıyla başlar; fakat uygulama büyüdükçe Deployment, Service, Ingress, ConfigMap, Secret, HPA ve RBAC tanımları hızla çoğalır. Helm, bu karmaşayı sürümlenebilir ve yeniden kullanılabilir paketlere dönüştüren Kubernetes paket yöneticisidir. Amaç yalnızca YAML üretmek değil; farklı ortamlar için aynı uygulamayı güvenilir, tutarlı ve tekrarlanabilir biçimde yayınlamaktır.
+
+![helm-ile-kubernetes-25](/img/helm-ile-kubernetes-25.svg)
+
 ``
 
 Helm'in temel birimi **chart** olarak adlandırılır. Bir chart, Kubernetes kaynak şablonlarını, varsayılan yapılandırmaları ve paket hakkındaki metaveriyi içerir. Uygulama kümeye kurulduğunda ise bu chart'ın çalışan örneği bir **release** olur. Aynı chart, örneğin `development`, `staging` ve `production` ortamlarında farklı değerlerle birden fazla release olarak kullanılabilir.
@@ -39,7 +42,6 @@ cd web-api
 
 Bu komut; `Chart.yaml`, `values.yaml` ve `templates/` dizinini içeren başlangıç iskeletini üretir. `Chart.yaml` paketin adı ve sürümü gibi bilgileri saklarken, `values.yaml` varsayılan değerlerin evidir. Aşağıdaki parça, Deployment şablonunda kullanıcı tanımlı değerlerin nasıl kullanıldığını gösterir:
 
-{% raw %}
 
 {% raw %}
 ```yaml
@@ -59,7 +61,6 @@ spec:
 ```
 {% endraw %}
 
-{% endraw %}
 
 Burada `{{ .Values.image.tag }}` ifadesi, gerçek bir YAML değeri değil, Helm'in kurulum sırasında çözeceği bir yer tutucudur. Ortama özel bir dosya hazırlamak oldukça pratiktir:
 
@@ -92,5 +93,5 @@ helm upgrade --install web-api-prod ./web-api \
 
 Son olarak Secret verilerini doğrudan `values.yaml` içine koymak risklidir; bu dosyalar çoğunlukla Git'e girer. SOPS, External Secrets veya CI/CD gizli değişkenleriyle entegrasyon tercih edilmelidir. Helm, Kubernetes'i sihirli biçimde basitleştirmez; fakat tekrar eden dağıtım bilgisini paketleyerek YAML ormanını yönetilebilir bir bahçeye dönüştürür.
 
-![helm-ile-kubernetes-25](/img/helm-ile-kubernetes-25.svg)
+
 

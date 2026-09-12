@@ -32,8 +32,6 @@ Bu kararların sihri, **sıralılık değişmezinde** saklıdır. Örneğin $a[l
 Aşağıdaki C++ örneği, hedef toplamı veren bir çifti bulur. Kod, sıralı dizide ilk bulduğu çifti döndürür; bulunamazsa `nullopt` üretir.
 
 {% raw %}
-
-{% raw %}
 ```cpp
 #include <iostream>
 #include <optional>
@@ -55,8 +53,6 @@ std::optional<std::pair<int, int>> twoSumSorted(
     return std::nullopt;
 }
 ```
-{% endraw %}
-
 {% endraw %}
 
 `long long` kullanımı küçük ama profesyonel bir ayrıntıdır: `int` sınırına yakın değerlerin toplamında taşmayı önler. Döngünün koşulu olan $l<r$ da aynı elemanı iki kez seçmeyi engeller. Her iterasyonda en az bir işaretçi hareket ettiğinden, işaretçilerin toplam hareketi en fazla yaklaşık $2n$ olur. Bu nedenle çalışma süresi gerçekten doğrusaldır:

@@ -14,6 +14,8 @@ image: /img/wordpress-rest-api-32.png
 
 WordPress denince akla çoğunlukla tema, eklenti ve klasik blog sayfaları gelir. Oysa WordPress’i yalnızca içerik üretim paneli olarak kullanıp ziyaretçiye görünen arayüzü React, Vue, Next.js, Nuxt, Flutter veya başka bir teknolojiyle geliştirmek mümkündür. Bu yaklaşımda WordPress mutfakta yemekleri hazırlar, REST API garsonluk yapar, seçtiğin arayüz ise sunumu üstlenir.
 
+![wordpress-rest-api-32](/img/wordpress-rest-api-32.svg)
+
 ``
 
 ## Headless WordPress nedir?
@@ -96,5 +98,5 @@ Aynı içeriği web sitesi, mobil uygulama, akıllı ekran ve kurumsal portal gi
 
 Kısacası WordPress’i tema motorundan ibaret görmemek gerekir. REST API sayesinde o, içerik ekibinin tanıdığı paneli koruyan ve farklı uygulamalara düzenli JSON servis eden yetenekli bir veri merkezine dönüşebilir.
 
-![wordpress-rest-api-32](/img/wordpress-rest-api-32.svg)
+
 
