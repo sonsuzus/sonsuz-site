@@ -9,6 +9,7 @@ tags:
   - snippet
   - üretkenlik
 toc: true
+image: /img/vs-code-snippetlari-28.png
 ---
 
 Aynı React bileşenini, test iskeletini veya hata yakalama bloğunu tekrar tekrar yazıyorsanız parmaklarınız gereksiz mesai yapıyor olabilir. Visual Studio Code snippet’ları, sık kullandığınız kod şablonlarını JSON biçiminde tanımlayıp birkaç karakterle çağırmanızı sağlar. Böylece kopyala-yapıştır arşivlerinde kaybolmadan daha hızlı ve tutarlı kod üretebilirsiniz.
@@ -28,6 +29,9 @@ Burada $n$, şablonun kaç kez kullanıldığını gösterir. Bir kod bloğunu e
 | Elle yazma | Düşük | Orta | Yüksek |
 | Kopyala-yapıştır | Orta | Düşük | Orta |
 | VS Code snippet | Yüksek | Yüksek | Düşük |
+
+![vs-code-snippetlari-28](/img/vs-code-snippetlari-28.svg)
+
 
 ## İlk Snippet’ınızı Oluşturun
 

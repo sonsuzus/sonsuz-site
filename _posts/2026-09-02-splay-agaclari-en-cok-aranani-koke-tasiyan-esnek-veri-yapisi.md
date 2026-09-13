@@ -9,7 +9,11 @@ tags:
   - veri-yapıları
   - algoritmalar
 toc: true
+image: /img/splay-agaclari-en-41.png
 ---
+
+![splay-agaclari-en-41](/img/splay-agaclari-en-41.svg)
+
 
 Bazı anahtarlar diğerlerinden daha sık aranıyorsa, neden hepsine aynı mesafeyi sunalım? Splay ağacı, erişilen düğümü rotasyonlarla köke taşıyarak bu soruya oldukça pratik bir cevap verir. Katı denge kurallarıyla uğraşmaz; bunun yerine kullanım alışkanlıklarını öğreniyormuş gibi davranır ve popüler düğümleri el altında tutar.
 

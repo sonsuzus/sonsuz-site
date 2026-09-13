@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="tahta" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eaf3ff"/>
+    </linearGradient>
+    <linearGradient id="maske" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8dcff"/>
+      <stop offset="100%" stop-color="#d6efff"/>
+    </linearGradient>
+    <linearGradient id="durum" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff5d9"/>
+      <stop offset="100%" stop-color="#e9f7d9"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890aa" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890aa" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="77" cy="36" r="62" fill="#cde9ff" opacity="0.28"/>
+  <circle cx="572" cy="283" r="78" fill="#d9f1c9" opacity="0.30"/>
+  <circle cx="372" cy="22" r="25" fill="#f5d8ed" opacity="0.38"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">DOMİNO KAPLAMA · PROFİL DP</text>
+  <text x="32" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718499">Geçmiş yerine sınır bilgisi</text>
+
+  <!-- Board -->
+  <g filter="url(#golge)">
+    <rect x="32" y="78" width="164" height="190" rx="20" fill="url(#tahta)"/>
+  </g>
+  <text x="52" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405975">Tahta</text>
+  <text x="52" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718499">N × M hücre</text>
+
+  <g transform="translate(52 140)" stroke="#b4c9d9" stroke-width="1.2">
+    <rect x="0" y="0" width="28" height="28" rx="5" fill="#ffffff"/>
+    <rect x="29" y="0" width="28" height="28" rx="5" fill="#a8ddff"/>
+    <rect x="58" y="0" width="28" height="28" rx="5" fill="#ffffff"/>
+    <rect x="87" y="0" width="28" height="28" rx="5" fill="#a8ddff"/>
+    <rect x="0" y="29" width="28" height="28" rx="5" fill="#f5d5a9"/>
+    <rect x="29" y="29" width="28" height="28" rx="5" fill="#f5d5a9"/>
+    <rect x="58" y="29" width="28" height="28" rx="5" fill="#ffffff"/>
+    <rect x="87" y="29" width="28" height="28" rx="5" fill="#ffffff"/>
+    <rect x="0" y="58" width="28" height="28" rx="5" fill="#ffffff"/>
+    <rect x="29" y="58" width="28" height="28" rx="5" fill="#c5edb3"/>
+    <rect x="58" y="58" width="28" height="28" rx="5" fill="#c5edb3"/>
+    <rect x="87" y="58" width="28" height="28" rx="5" fill="#ffffff"/>
+    <rect x="0" y="87" width="28" height="28" rx="5" fill="#ffffff"/>
+    <rect x="29" y="87" width="28" height="28" rx="5" fill="#ffffff"/>
+    <rect x="58" y="87" width="28" height="28" rx="5" fill="#ffffff"/>
+    <rect x="87" y="87" width="28" height="28" rx="5" fill="#ffffff"/>
+  </g>
+  <path d="M47 229 H171" stroke="#6f9fc2" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="52" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#57708a">İşlenen sınır</text>
+
+  <!-- Arrow 1 -->
+  <path d="M207 171 H232" stroke="#7192af" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="239,171 230,166 230,176" fill="#7192af"/>
+
+  <!-- Mask panel -->
+  <g filter="url(#golge)">
+    <rect x="244" y="101" width="146" height="141" rx="20" fill="url(#maske)"/>
+  </g>
+  <text x="264" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b496e">Profil maskesi</text>
+  <text x="264" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#716e91">Sınır özeti</text>
+
+  <g transform="translate(263 163)" filter="url(#hafifGolge)">
+    <rect x="0" y="0" width="25" height="34" rx="7" fill="#ffffff"/>
+    <rect x="28" y="0" width="25" height="34" rx="7" fill="#b8ebca"/>
+    <rect x="56" y="0" width="25" height="34" rx="7" fill="#ffffff"/>
+    <rect x="84" y="0" width="25" height="34" rx="7" fill="#b8ebca"/>
+  </g>
+  <text x="272" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#59657f">0</text>
+  <text x="300" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43845a">1</text>
+  <text x="328" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#59657f">0</text>
+  <text x="356" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43845a">1</text>
+  <text x="273" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f6680">Dolu · boş bilgisi</text>
+
+  <!-- Arrow 2 -->
+  <path d="M401 171 H426" stroke="#7192af" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="433,171 424,166 424,176" fill="#7192af"/>
+
+  <!-- DP region -->
+  <g filter="url(#golge)">
+    <rect x="438" y="78" width="170" height="190" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="458" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405975">Durum geçişi</text>
+  <text x="458" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718499">dp[konum][maske]</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="458" y="141" width="61" height="34" rx="10" fill="#e8f4ff"/>
+    <rect x="537" y="141" width="51" height="34" rx="10" fill="#fff1d7"/>
+    <rect x="458" y="202" width="61" height="34" rx="10" fill="#e5f5dc"/>
+    <rect x="537" y="202" width="51" height="34" rx="10" fill="#f1e7ff"/>
+  </g>
+  <text x="469" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#487292">Dolu</text>
+  <text x="544" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#98713d">Yatay</text>
+  <text x="468" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f8551">Dikey</text>
+  <text x="547" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#72588c">Sayım</text>
+
+  <path d="M519 158 H529" stroke="#7698af" stroke-width="1.8"/>
+  <polygon points="535,158 527,154 527,162" fill="#7698af"/>
+  <path d="M488 176 V194" stroke="#7698af" stroke-width="1.8"/>
+  <polygon points="488,200 484,192 492,192" fill="#7698af"/>
+  <path d="M544 176 V194" stroke="#7698af" stroke-width="1.8"/>
+  <polygon points="544,200 540,192 548,192" fill="#7698af"/>
+  <path d="M519 219 H529" stroke="#7698af" stroke-width="1.8"/>
+  <polygon points="535,219 527,215 527,223" fill="#7698af"/>
+
+  <rect x="458" y="248" width="130" height="1" fill="#dce7ec"/>
+  <text x="465" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#57708a">O(N · M · 2ᴹ)</text>
+</svg>

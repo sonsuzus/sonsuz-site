@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#c7dcf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#74879b" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#74879b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="46" r="55" fill="#dff3ed" opacity="0.55"/>
+  <circle cx="584" cy="274" r="72" fill="#e6ddf8" opacity="0.42"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42566c">KAPSAM KAYMASI</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718094">Kontrolsüz talep akışı</text>
+
+  <!-- Incoming requests -->
+  <g filter="url(#softShadow)">
+    <rect x="32" y="78" width="124" height="38" rx="12" fill="#fff3ce"/>
+    <rect x="32" y="130" width="124" height="38" rx="12" fill="#f9dce2"/>
+    <rect x="32" y="182" width="124" height="38" rx="12" fill="#e4dafa"/>
+    <rect x="32" y="234" width="124" height="38" rx="12" fill="#d9f1e7"/>
+  </g>
+  <text x="94" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d5239">Bildirim</text>
+  <text x="94" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72505b">Rapor</text>
+  <text x="94" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c5276">Yapay zekâ</text>
+  <text x="94" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466b5d">Akıllı saat</text>
+
+  <!-- Request arrows -->
+  <g fill="none" stroke="#91a3b5" stroke-width="2" stroke-linecap="round">
+    <path d="M157 97 H187"/>
+    <path d="M157 149 H187"/>
+    <path d="M157 201 H187"/>
+    <path d="M157 253 H187"/>
+  </g>
+  <g fill="#91a3b5">
+    <polygon points="190,97 183,93 183,101"/>
+    <polygon points="190,149 183,145 183,153"/>
+    <polygon points="190,201 183,197 183,205"/>
+    <polygon points="190,253 183,249 183,257"/>
+  </g>
+
+  <!-- Decision gate -->
+  <g filter="url(#shadow)">
+    <rect x="192" y="93" width="142" height="156" rx="22" fill="#ffffff"/>
+    <rect x="203" y="105" width="120" height="32" rx="10" fill="#e8f1fb"/>
+    <rect x="203" y="146" width="120" height="32" rx="10" fill="#f1ebfb"/>
+    <rect x="203" y="187" width="120" height="48" rx="10" fill="#e8f5ee"/>
+  </g>
+  <text x="263" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#465f78">Etki analizi</text>
+  <text x="263" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#67587a">Değer ve efor</text>
+  <text x="263" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4d7563">Kapasite ve onay</text>
+  <text x="263" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e8378">değerlendirmesi</text>
+
+  <!-- Main flow -->
+  <path d="M336 171 H371" fill="none" stroke="#6f91ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="375,171 367,166 367,176" fill="#6f91ad"/>
+
+  <!-- Scope boundary -->
+  <g filter="url(#shadow)">
+    <rect x="378" y="76" width="158" height="184" rx="28" fill="url(#core)" stroke="#90b2d2" stroke-width="2"/>
+    <rect x="394" y="92" width="126" height="32" rx="11" fill="#ffffff" opacity="0.78"/>
+    <rect x="394" y="137" width="126" height="44" rx="11" fill="#ffffff" opacity="0.62"/>
+    <rect x="394" y="194" width="126" height="49" rx="11" fill="#ffffff" opacity="0.62"/>
+  </g>
+  <text x="457" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365a7d">Onaylı kapsam</text>
+  <text x="457" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6d87">Geliştirme</text>
+  <text x="457" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6d87">Test ve belge</text>
+  <text x="457" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6d87">Teslim hedefi</text>
+  <path d="M416 229 H494" stroke="#7da0bd" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="435" cy="229" r="4" fill="#f4b85b"/>
+  <circle cx="456" cy="229" r="4" fill="#f4b85b"/>
+  <circle cx="477" cy="229" r="4" fill="#f4b85b"/>
+
+  <!-- Outcome branch -->
+  <path d="M537 137 H567 V111 H594" fill="none" stroke="#6b9a7d" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="598,111 590,106 590,116" fill="#6b9a7d"/>
+  <path d="M537 205 H567 V234 H594" fill="none" stroke="#b36f73" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="598,234 590,229 590,239" fill="#b36f73"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="568" y="82" width="58" height="58" rx="16" fill="#d9f0e1"/>
+    <rect x="568" y="205" width="58" height="58" rx="16" fill="#f7dce0"/>
+  </g>
+  <path d="M587 112 l7 7 13 -15" fill="none" stroke="#53866a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M587 224 L607 244 M607 224 L587 244" stroke="#ad6569" stroke-width="3" stroke-linecap="round"/>
+  <text x="597" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52715f">Planlı</text>
+  <text x="597" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#965e63">Kayma</text>
+
+  <!-- Footer note -->
+  <text x="32" y="299" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617487">Talep → analiz → öncelik → kapsam kararı</text>
+</svg>

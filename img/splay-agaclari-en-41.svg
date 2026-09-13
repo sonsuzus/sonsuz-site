@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2faef"/>
+    </linearGradient>
+    <linearGradient id="focus" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdca1"/>
+      <stop offset="1" stop-color="#f6b970"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7891a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8b9e" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="89" cy="65" r="58" fill="#ddecff" opacity="0.45"/>
+  <circle cx="570" cy="261" r="82" fill="#daf2d9" opacity="0.42"/>
+
+  <text x="28" y="31" fill="#385166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Splay Ağacı</text>
+  <text x="28" y="49" fill="#738796" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sık erişilen düğüm köke yükselir</text>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="76" width="174" height="204" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="43" y="102" fill="#597082" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Önce: erişim yolu</text>
+
+  <path d="M111 137 L76 178 M111 137 L147 178 M76 178 L55 221 M76 178 L98 221 M147 178 L169 221" fill="none" stroke="#9cb0be" stroke-width="2"/>
+  <g filter="url(#soft)">
+    <rect x="91" y="119" width="40" height="35" rx="11" fill="#cfe6f8"/>
+    <rect x="56" y="160" width="40" height="35" rx="11" fill="#dfeaf2"/>
+    <rect x="127" y="160" width="40" height="35" rx="11" fill="#dfeaf2"/>
+    <rect x="35" y="203" width="40" height="35" rx="11" fill="#eaf2f6"/>
+    <rect x="78" y="203" width="40" height="35" rx="11" fill="url(#focus)"/>
+    <rect x="149" y="203" width="40" height="35" rx="11" fill="#eaf2f6"/>
+  </g>
+  <text x="108" y="141" text-anchor="middle" fill="#385166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">50</text>
+  <text x="76" y="182" text-anchor="middle" fill="#526b7b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">30</text>
+  <text x="147" y="182" text-anchor="middle" fill="#526b7b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">70</text>
+  <text x="55" y="225" text-anchor="middle" fill="#526b7b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">20</text>
+  <text x="98" y="225" text-anchor="middle" fill="#754d21" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">40</text>
+  <text x="169" y="225" text-anchor="middle" fill="#526b7b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">80</text>
+  <rect x="43" y="248" width="136" height="20" rx="10" fill="#fff1d8"/>
+  <circle cx="56" cy="258" r="4" fill="#e99b42"/>
+  <text x="67" y="262" fill="#8b6536" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Aranan anahtar: 40</text>
+
+  <path d="M211 175 C230 175 238 175 252 175" fill="none" stroke="#78a6bd" stroke-width="2.5"/>
+  <polygon points="252,175 243,170 243,180" fill="#78a6bd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="263" y="94" width="114" height="165" rx="22" fill="#eaf5f8"/>
+  </g>
+  <text x="320" y="122" text-anchor="middle" fill="#47687d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Splay</text>
+  <text x="320" y="140" text-anchor="middle" fill="#6f8797" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Rotasyonlar</text>
+
+  <g transform="translate(320 181)">
+    <circle r="31" fill="#d4ecf7" stroke="#a6cddd" stroke-width="1.5"/>
+    <path d="M-12 -20 A24 24 0 0 1 22 -4" fill="none" stroke="#5f9fba" stroke-width="2.5"/>
+    <polygon points="23,-5 15,-9 17,0" fill="#5f9fba"/>
+    <path d="M12 20 A24 24 0 0 1 -22 4" fill="none" stroke="#e29a55" stroke-width="2.5"/>
+    <polygon points="-23,5 -15,9 -17,0" fill="#e29a55"/>
+    <circle cx="-13" cy="0" r="7" fill="#b9d9e9"/>
+    <circle cx="13" cy="0" r="7" fill="#f4c483"/>
+  </g>
+  <rect x="278" y="224" width="84" height="20" rx="10" fill="#d7f0df"/>
+  <text x="320" y="238" text-anchor="middle" fill="#4c7b5a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Zig · Zig-Zag</text>
+
+  <path d="M388 175 C405 175 414 175 427 175" fill="none" stroke="#78a6bd" stroke-width="2.5"/>
+  <polygon points="427,175 418,170 418,180" fill="#78a6bd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="438" y="76" width="178" height="204" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="457" y="102" fill="#597082" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Sonra: uyarlanmış yapı</text>
+
+  <path d="M527 137 L487 178 M527 137 L566 178 M487 178 L465 221 M487 178 L509 221 M566 178 L587 221" fill="none" stroke="#8db0a0" stroke-width="2"/>
+  <g filter="url(#soft)">
+    <rect x="507" y="119" width="40" height="35" rx="11" fill="url(#focus)"/>
+    <rect x="467" y="160" width="40" height="35" rx="11" fill="#d8efdf"/>
+    <rect x="546" y="160" width="40" height="35" rx="11" fill="#dceee4"/>
+    <rect x="445" y="203" width="40" height="35" rx="11" fill="#edf6ef"/>
+    <rect x="489" y="203" width="40" height="35" rx="11" fill="#edf6ef"/>
+    <rect x="567" y="203" width="40" height="35" rx="11" fill="#edf6ef"/>
+  </g>
+  <text x="527" y="141" text-anchor="middle" fill="#754d21" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">40</text>
+  <text x="487" y="182" text-anchor="middle" fill="#4e7560" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">30</text>
+  <text x="566" y="182" text-anchor="middle" fill="#4e7560" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">50</text>
+  <text x="465" y="225" text-anchor="middle" fill="#587767" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">20</text>
+  <text x="509" y="225" text-anchor="middle" fill="#587767" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">35</text>
+  <text x="587" y="225" text-anchor="middle" fill="#587767" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">70</text>
+  <rect x="458" y="248" width="138" height="20" rx="10" fill="#e2f3e5"/>
+  <circle cx="472" cy="258" r="4" fill="#65a878"/>
+  <text x="483" y="262" fill="#4c7b5a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sık erişim hızlanır</text>
+</svg>

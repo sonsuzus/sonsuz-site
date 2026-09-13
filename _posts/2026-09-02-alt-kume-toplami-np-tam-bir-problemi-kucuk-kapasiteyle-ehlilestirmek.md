@@ -9,6 +9,7 @@ tags:
   - np-tam
   - algoritma optimizasyonu
 toc: true
+image: /img/alt-kume-toplami-42.png
 ---
 
 Elimizde pozitif tam sayılardan oluşan bir liste ve hedef toplam $T$ var. Soru basit: Bazı elemanları en fazla bir kez seçerek toplamı tam olarak $T$ yapabilir miyiz? Bu masum soru, Alt Küme Toplamı Problemi’nin karar sürümüdür ve NP-tamdır. Yine de hedef kapasite küçük olduğunda dinamik programlama sayesinde problem, pratikte oldukça uysal bir hâle gelir.
@@ -32,6 +33,9 @@ Buradaki kritik ayrıntı, $T$ sayısının girişte yaklaşık $\log_2 T$ bit i
 | Tek boyutlu DP | $O(nT)$ | $O(T)$ | Yalnızca sonuç gerektiğinde |
 | Bitset yöntemi | Yaklaşık $O(nT/w)$ | $O(T)$ | Küçük veya orta hedeflerde |
 | Ortadan bölme | $O(2^{n/2})$ | $O(2^{n/2})$ | $T$ büyük, $n$ görece küçükken |
+
+![alt-kume-toplami-42](/img/alt-kume-toplami-42.svg)
+
 
 ## Kapasiteyi durum uzayı yapmak
 

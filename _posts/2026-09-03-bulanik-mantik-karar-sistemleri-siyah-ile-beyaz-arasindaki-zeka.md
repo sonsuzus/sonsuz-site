@@ -9,6 +9,7 @@ tags:
   - yapay zeka
   - karar sistemleri
 toc: true
+image: /img/bulanik-mantik-karar-82.png
 ---
 
 Klasik mantık dünyasında bir önerme ya doğrudur ya da yanlıştır; başka seçenek yoktur. Gerçek hayat ise bu kadar keskin davranmaz. Bir odanın 24 °C olması kimine göre sıcak, kimine göre ılık olabilir. Bulanık mantık, sıcak-soğuk veya hızlı-yavaş gibi dereceli kavramları matematiksel üyelik değerleriyle temsil ederek bilgisayarlara bu belirsizliği yönetme becerisi kazandırır.
@@ -97,3 +98,6 @@ print(f'Fan hızı: %{fan_speed:.1f}')
 ```
 
 Bulanık mantık; klima kontrolü, otomatik frenleme, kamera odaklama, risk değerlendirme ve tıbbi destek sistemlerinde kullanılır. En büyük avantajı, uzmanların sözel bilgisini anlaşılır kurallara dönüştürmesidir. Ancak üyelik fonksiyonları ve kurallar genellikle uzmanlarca tasarlandığından, kötü seçimler kötü sonuçlar üretir. Yine de dünya gri tonlarla doluyken yalnızca sıfır ve birle düşünmek yerine “ne kadar?” sorusunu sormak, çoğu karar sistemini daha insansı ve esnek hâle getirir.
+
+![bulanik-mantik-karar-82](/img/bulanik-mantik-karar-82.svg)
+

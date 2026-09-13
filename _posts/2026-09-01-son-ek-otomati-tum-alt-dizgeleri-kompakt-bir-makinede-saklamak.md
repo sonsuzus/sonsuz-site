@@ -9,9 +9,13 @@ tags:
   - string-algorithms
   - competitive-programming
 toc: true
+image: /img/son-ek-otomati-92.png
 ---
 
 Bir metnin bütün **ardışık alt dizgelerini** saklamak istediğimizi düşünelim. İlk fikir, her alt dizgeyi ayrı ayrı üretmek olabilir; ancak uzunluğu $n$ olan bir dizgenin $O(n^2)$ farklı konumu vardır. Son Ek Otomatı, diğer adıyla **Suffix Automaton (SAM)**, bu devasa koleksiyonu en fazla $2n-1$ durum kullanarak temsil eden deterministik ve yönsüz döngüsüz bir otomattır. Kısacası bütün alt dizgeleri cebine koyar, ama valiz parası ödemez.
+
+![son-ek-otomati-92](/img/son-ek-otomati-92.svg)
+
 ``
 ## Temel fikir: Durumlar neyi temsil eder?
 

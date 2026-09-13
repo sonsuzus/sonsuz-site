@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="matrixFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9f2ff"/>
+      <stop offset="100%" stop-color="#d9f1ea"/>
+    </linearGradient>
+    <linearGradient id="resultFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff5d8"/>
+      <stop offset="100%" stop-color="#ffe6c5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="73" cy="43" r="54" fill="#dbeeff" opacity="0.55"/>
+  <circle cx="586" cy="275" r="76" fill="#dff2d7" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536a">2B KADANE · MAKSİMUM TOPLAMLI ALT MATRİS</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="52" width="190" height="218" rx="18" fill="#ffffff" opacity="0.93"/>
+  </g>
+  <text x="46" y="78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536a">1. Sütun sınırlarını seç</text>
+  <text x="46" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8193">Matris M</text>
+
+  <g transform="translate(55 111)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <rect x="0" y="0" width="126" height="126" rx="8" fill="url(#matrixFill)" stroke="#abc9d9" stroke-width="1.2"/>
+    <g stroke="#adc7d3" stroke-width="1">
+      <path d="M25 0V126 M50 0V126 M75 0V126 M100 0V126"/>
+      <path d="M0 25H126 M0 50H126 M0 75H126 M0 100H126"/>
+    </g>
+    <rect x="25" y="0" width="50" height="126" fill="#79c9bb" opacity="0.42"/>
+    <rect x="25" y="25" width="50" height="75" rx="3" fill="#f6bd60" opacity="0.82"/>
+    <g fill="#38536a">
+      <text x="12.5" y="17">2</text><text x="37.5" y="17">-1</text><text x="62.5" y="17">3</text><text x="87.5" y="17">-2</text><text x="112.5" y="17">1</text>
+      <text x="12.5" y="42">-3</text><text x="37.5" y="42">4</text><text x="62.5" y="42">5</text><text x="87.5" y="42">-1</text><text x="112.5" y="42">2</text>
+      <text x="12.5" y="67">1</text><text x="37.5" y="67">2</text><text x="62.5" y="67">-2</text><text x="87.5" y="67">3</text><text x="112.5" y="67">-4</text>
+      <text x="12.5" y="92">-2</text><text x="37.5" y="92">3</text><text x="62.5" y="92">4</text><text x="87.5" y="92">-3</text><text x="112.5" y="92">1</text>
+      <text x="12.5" y="117">1</text><text x="37.5" y="117">-2</text><text x="62.5" y="117">2</text><text x="87.5" y="117">1</text><text x="112.5" y="117">-1</text>
+    </g>
+    <text x="38" y="-8" fill="#277b74" font-weight="700">Sol</text>
+    <text x="63" y="-8" fill="#277b74" font-weight="700">Sağ</text>
+  </g>
+
+  <path d="M225 160 H271" fill="none" stroke="#6d9bbb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="271,160 262,154 262,166" fill="#6d9bbb"/>
+  <text x="230" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58758a">satırları topla</text>
+
+  <g filter="url(#shadow)">
+    <rect x="278" y="79" width="112" height="162" rx="18" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <text x="294" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536a">2. Sıkıştır</text>
+  <text x="294" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8193">Geçici dizi</text>
+  <g transform="translate(300 136)" filter="url(#smallShadow)">
+    <rect x="0" y="0" width="66" height="18" rx="6" fill="#d8edf8"/>
+    <rect x="0" y="22" width="66" height="18" rx="6" fill="#bfe5d9"/>
+    <rect x="0" y="44" width="66" height="18" rx="6" fill="#bfe5d9"/>
+    <rect x="0" y="66" width="66" height="18" rx="6" fill="#bfe5d9"/>
+    <rect x="0" y="88" width="66" height="18" rx="6" fill="#d8edf8"/>
+    <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#38536a">
+      <text x="33" y="13">2</text>
+      <text x="33" y="35">9</text>
+      <text x="33" y="57">3</text>
+      <text x="33" y="79">7</text>
+      <text x="33" y="101">0</text>
+    </g>
+  </g>
+
+  <path d="M397 160 H440" fill="none" stroke="#6d9bbb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="440,160 431,154 431,166" fill="#6d9bbb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="447" y="66" width="165" height="188" rx="18" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <text x="465" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536a">3. Kadane uygula</text>
+  <text x="465" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8193">En iyi satır aralığı</text>
+
+  <g transform="translate(466 128)">
+    <path d="M13 80 V14 H117" fill="none" stroke="#c9dbe2" stroke-width="1.5"/>
+    <path d="M15 74 L38 47 L62 56 L87 22 L111 30" fill="none" stroke="#679fc1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="15" cy="74" r="4" fill="#679fc1"/>
+    <circle cx="38" cy="47" r="4" fill="#679fc1"/>
+    <circle cx="62" cy="56" r="4" fill="#679fc1"/>
+    <circle cx="87" cy="22" r="5" fill="#f0a34c"/>
+    <circle cx="111" cy="30" r="4" fill="#679fc1"/>
+    <rect x="28" y="88" width="84" height="25" rx="9" fill="#d9f0e8"/>
+    <text x="70" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#28746d">en iyi: 19</text>
+  </g>
+
+  <path d="M530 258 V279" fill="none" stroke="#6d9bbb" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="530,286 524,277 536,277" fill="#6d9bbb"/>
+  <g filter="url(#smallShadow)">
+    <rect x="410" y="287" width="202" height="25" rx="11" fill="url(#resultFill)"/>
+  </g>
+  <text x="511" y="304" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#80572d">Çıktı: üst · alt · sol · sağ</text>
+</svg>

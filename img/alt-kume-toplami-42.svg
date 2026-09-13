@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ee"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#d9f3e4"/>
+    </linearGradient>
+    <linearGradient id="bit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#eee4ff"/>
+      <stop offset="100%" stop-color="#dcecff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71839a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71839a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="95" cy="48" r="74" fill="#dcecff" opacity="0.42"/>
+  <circle cx="570" cy="287" r="98" fill="#dff3e3" opacity="0.46"/>
+
+  <text x="32" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40526a">ALT KÜME TOPLAMI</text>
+  <text x="32" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738196">Küçük hedef kapasitesi ile sözde polinom çözüm</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="78" width="135" height="178" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="51" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48617b">Girdi kümesi</text>
+  <text x="51" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#758399">Her sayı en fazla bir kez</text>
+
+  <g filter="url(#soft)">
+    <rect x="51" y="141" width="29" height="27" rx="9" fill="#ffdccc"/>
+    <rect x="86" y="141" width="29" height="27" rx="9" fill="#d9e9ff"/>
+    <rect x="121" y="141" width="25" height="27" rx="9" fill="#dff2df"/>
+  </g>
+  <text x="60" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6b5360">3</text>
+  <text x="95" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#50617a">7</text>
+  <text x="128" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c6b59">4</text>
+
+  <g filter="url(#soft)">
+    <rect x="51" y="178" width="30" height="27" rx="9" fill="#f5e2bd"/>
+    <rect x="87" y="178" width="30" height="27" rx="9" fill="#e8dfff"/>
+    <rect x="123" y="178" width="23" height="27" rx="9" fill="#cfeeea"/>
+  </g>
+  <text x="60" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#756241">8</text>
+  <text x="96" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#68567c">5</text>
+  <text x="129" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416e68">2</text>
+
+  <rect x="51" y="220" width="95" height="21" rx="10" fill="#edf3fa"/>
+  <text x="61" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526a82">Hedef T = 14</text>
+
+  <path d="M177 167 H204" stroke="#7b95ac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="211,167 201,161 201,173" fill="#7b95ac"/>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="72" width="205" height="192" rx="22" fill="url(#core)"/>
+  </g>
+  <text x="240" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e5d77">Tek boyutlu DP</text>
+  <text x="240" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627b8e">Durum uzayı: 0 ... T</text>
+
+  <rect x="239" y="136" width="164" height="46" rx="12" fill="#ffffff" opacity="0.78"/>
+  <text x="250" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627188">dp[0] = doğru</text>
+  <text x="250" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627188">dp[s] = dp[s] veya dp[s-a]</text>
+
+  <path d="M320 194 V218" stroke="#648ca3" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="320,225 314,215 326,215" fill="#648ca3"/>
+  <text x="263" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456b75">Azalan toplam taraması</text>
+  <path d="M375 236 H279" stroke="#5d9b88" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="272,236 282,230 282,242" fill="#5d9b88"/>
+
+  <path d="M435 167 H458" stroke="#7b95ac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="465,167 455,161 455,173" fill="#7b95ac"/>
+
+  <g filter="url(#shadow)">
+    <rect x="472" y="78" width="137" height="84" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="491" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b647d">Sonuç</text>
+  <circle cx="495" cy="130" r="10" fill="#bce9cc"/>
+  <path d="M490 130 L494 134 L501 126" fill="none" stroke="#3a8660" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="513" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#438060">T erişilebilir</text>
+  <text x="491" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748398">O(nT) zaman, O(T) bellek</text>
+
+  <path d="M421 236 H449 V239 H472" fill="none" stroke="#9a7bb7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="479,239 469,233 469,245" fill="#9a7bb7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="472" y="183" width="137" height="81" rx="18" fill="url(#bit)"/>
+  </g>
+  <text x="491" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#62527b">Bitset hızlandırma</text>
+  <g fill="#7e6ca1">
+    <rect x="491" y="222" width="10" height="10" rx="3"/>
+    <rect x="505" y="222" width="10" height="10" rx="3" opacity="0.42"/>
+    <rect x="519" y="222" width="10" height="10" rx="3"/>
+    <rect x="533" y="222" width="10" height="10" rx="3" opacity="0.42"/>
+    <rect x="547" y="222" width="10" height="10" rx="3"/>
+    <rect x="561" y="222" width="10" height="10" rx="3" opacity="0.42"/>
+  </g>
+  <text x="491" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756987">Kaydır ve birleştir</text>
+
+  <text x="32" y="294" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">Küçük T → kapasite tabanlı DP</text>
+  <text x="394" y="294" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">Büyük T → farklı yaklaşım</text>
+</svg>

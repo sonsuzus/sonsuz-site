@@ -9,6 +9,7 @@ tags:
   - çizge teorisi
   - algoritmalar
 toc: true
+image: /img/2-sat-problemlerini-50.png
 ---
 
 Bazı problemlerde seçenekler yalnızca doğru veya yanlış olabilir; fakat seçenekler arasındaki koşullar işleri hızla karıştırır. “Ali gelirse Ayşe gelmesin” ya da “Sunucu A çalışmıyorsa B mutlaka çalışsın” gibi kuralların tümünü aynı anda sağlayan bir durum arıyorsak karşımızda büyük olasılıkla bir **2-SAT** problemi vardır. Güzel haber şu: Bu mantık bulmacası, çizgeler sayesinde doğrusal zamanda çözülebilir.
@@ -100,3 +101,6 @@ def two_sat(n, clauses):
 Örneğin `two_sat(2, [(1, 2), (-1, 2), (-2, 1)])` çağrısı, koşulların birlikte sağlanabildiğini bildirir. Kod önce çıkarım çizgesini kurar, ardından bileşenleri hesaplar ve her değişkeni karşıtıyla karşılaştırır.
 
 2-SAT; ders programı hazırlama, özellik seçimi, kaynak yerleştirme ve karşılıklı dışlayan yapılandırmaları denetleme gibi alanlarda kullanılır. Özetle yöntem şudur: Koşulları çıkarımlara çevir, çizgeyi kur, güçlü bağlı bileşenleri bul ve hiçbir değişkenin kendi değiliyle aynı bileşende olmadığını kontrol et. Mantık karmaşık görünse de çizge doğru hikâyeyi anlatır.
+
+![2-sat-problemlerini-50](/img/2-sat-problemlerini-50.svg)
+

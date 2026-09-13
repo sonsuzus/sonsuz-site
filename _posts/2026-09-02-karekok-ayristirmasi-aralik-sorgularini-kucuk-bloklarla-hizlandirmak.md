@@ -9,6 +9,7 @@ tags:
   - algoritmalar
   - aralık sorguları
 toc: true
+image: /img/karekok-ayristirmasi-aralik-85.png
 ---
 
 Bir dizide yüz binlerce kez “şu aralığın toplamı nedir?” diye sormak, her seferinde elemanları tek tek dolaşıyorsak bilgisayarı gereksiz yere maratona çıkarır. Karekök Ayrıştırması, yani Square Root Decomposition, diziyi yaklaşık eşit büyüklükte bloklara bölerek bu sorguları hızlandırır. Segment ağacına göre daha az kod, daha kolay hata ayıklama ve şaşırtıcı derecede iyi performans sunması da cabasıdır.
@@ -35,6 +36,9 @@ Eksik kısımlar tek tek dolaşılırken tam blokların önceden hesaplanmış t
 | Prefix sum | $O(1)$ | $O(n)$ | Kolay |
 | Karekök ayrıştırması | $O(\sqrt{n})$ | $O(1)$ | Orta-kolay |
 | Segment ağacı | $O(\log n)$ | $O(\log n)$ | Orta-zor |
+
+![karekok-ayristirmasi-aralik-85](/img/karekok-ayristirmasi-aralik-85.svg)
+
 
 Buradaki $O(1)$ güncelleme, bir elemanın değeri değiştirildiğinde ilgili blok toplamının fark kadar düzeltilmesini ifade eder.
 

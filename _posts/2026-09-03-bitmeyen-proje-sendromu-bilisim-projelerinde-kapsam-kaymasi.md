@@ -9,9 +9,13 @@ tags:
   - proje yönetimi
   - yazılım geliştirme
 toc: true
+image: /img/bitmeyen-proje-sendromu-70.png
 ---
 
 Bir yazılım projesi düşünün: Başlangıçta yalnızca kullanıcıların görev oluşturacağı küçük bir uygulamadır. Sonra bildirimler, raporlar, yapay zekâ, karanlık tema ve hatta akıllı saat desteği istenir. Ekip çalıştığı hâlde bitiş çizgisi sürekli uzaklaşır. İşte bu durum, proje yönetiminin meşhur canavarı **kapsam kaymasıdır**.
+
+![bitmeyen-proje-sendromu-70](/img/bitmeyen-proje-sendromu-70.svg)
+
 ``
 
 ## Kapsam kayması nedir?

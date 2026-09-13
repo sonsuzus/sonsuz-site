@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="poll" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3df"/>
+      <stop offset="100%" stop-color="#ffe6c3"/>
+    </linearGradient>
+    <linearGradient id="hook" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2f6ec"/>
+      <stop offset="100%" stop-color="#c9ecd9"/>
+    </linearGradient>
+    <linearGradient id="telegram" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#beddf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8593" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#587080" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="40" cy="32" r="76" fill="#dceeff" opacity="0.35"/>
+  <circle cx="604" cy="284" r="92" fill="#d9f2d7" opacity="0.42"/>
+
+  <text x="320" y="25" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355468">Bot Güncelleme Akışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="250" y="43" width="140" height="57" rx="18" fill="url(#telegram)" stroke="#a5c9e8"/>
+  </g>
+  <circle cx="280" cy="71" r="16" fill="#5ea5dc"/>
+  <path d="M272 70 L288 63 L283 79 L279 73 Z" fill="#ffffff"/>
+  <text x="324" y="67" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285673">Telegram</text>
+  <text x="324" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52758a">Güncellemeler</text>
+
+  <path d="M250 76 C212 76 200 109 183 121" fill="none" stroke="#d69242" stroke-width="2"/>
+  <polygon points="181,116 187,124 177,125" fill="#d69242"/>
+  <path d="M390 76 C428 76 441 109 457 121" fill="none" stroke="#54a879" stroke-width="2"/>
+  <polygon points="454,125 451,117 461,121" fill="#54a879"/>
+
+  <g filter="url(#shadow)">
+    <rect x="53" y="122" width="245" height="132" rx="19" fill="url(#poll)" stroke="#f0cf9b"/>
+  </g>
+  <rect x="72" y="140" width="93" height="25" rx="12" fill="#f8c779"/>
+  <text x="118" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#78501a">POLLING</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="75" y="180" width="74" height="49" rx="12" fill="#ffffff"/>
+    <rect x="195" y="180" width="74" height="49" rx="12" fill="#ffffff"/>
+  </g>
+  <text x="112" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53626b">Bot</text>
+  <text x="112" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a858a">Sorgular</text>
+  <text x="232" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53626b">API</text>
+  <text x="232" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a858a">Yanıtlar</text>
+
+  <path d="M150 193 L191 193" stroke="#d69242" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="190,188 190,198 198,193" fill="#d69242"/>
+  <path d="M194 216 L153 216" stroke="#d69242" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="154,211 154,221 146,216" fill="#d69242"/>
+  <text x="174" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#966329">Sürekli istek</text>
+
+  <g filter="url(#shadow)">
+    <rect x="342" y="122" width="245" height="132" rx="19" fill="url(#hook)" stroke="#a8d9bd"/>
+  </g>
+  <rect x="361" y="140" width="101" height="25" rx="12" fill="#85cba0"/>
+  <text x="411" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#225d3b">WEBHOOK</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="365" y="180" width="75" height="49" rx="12" fill="#ffffff"/>
+    <rect x="486" y="180" width="74" height="49" rx="12" fill="#ffffff"/>
+  </g>
+  <text x="402" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53626b">Olay</text>
+  <text x="402" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a858a">Mesaj gelir</text>
+  <text x="523" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53626b">Bot</text>
+  <text x="523" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a858a">HTTPS uç nokta</text>
+
+  <path d="M441 204 L481 204" stroke="#54a879" stroke-width="2.5"/>
+  <polygon points="480,199 480,209 488,204" fill="#54a879"/>
+  <path d="M524 172 C524 164 512 164 512 172" fill="none" stroke="#54a879" stroke-width="2"/>
+  <rect x="508" y="171" width="17" height="13" rx="3" fill="#54a879"/>
+  <text x="464" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#317351">Mesajda çalışır</text>
+
+  <g filter="url(#shadow)">
+    <rect x="125" y="273" width="390" height="33" rx="15" fill="#ffffff" stroke="#d9e5e5"/>
+  </g>
+  <circle cx="150" cy="289" r="8" fill="#eead54"/>
+  <text x="166" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6870">Kolay kurulum</text>
+  <path d="M264 281 L264 297" stroke="#d8e0df"/>
+  <circle cx="290" cy="289" r="8" fill="#6ebb8d"/>
+  <text x="306" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6870">Düşük kaynak</text>
+  <path d="M402 281 L402 297" stroke="#d8e0df"/>
+  <text x="418" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39765a">Üretimde: Webhook</text>
+</svg>

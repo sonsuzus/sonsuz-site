@@ -9,6 +9,7 @@ tags:
   - bit maskesi
   - profil dp
 toc: true
+image: /img/dinamik-programlamada-profil-24.png
 ---
 
 Bir tahtayı domino taşlarıyla kaplamak ilk bakışta basit bir yapboz gibi görünür. Ancak tahta büyüdükçe olası yerleşimleri tek tek denemek, bilgisayarı kısa sürede matematiksel bir bataklığa sürükler. Profil maskeleme, satır satır veya sütun sütun ilerleyerek yalnızca sınırdaki doluluk bilgisini saklar; böylece devasa bir arama ağacını küçük ve tekrar kullanılabilir durumlara dönüştürür.
@@ -33,6 +34,9 @@ Bu bilgi bir bit maskesiyle tutulabilir:
 | Kaba kuvvet | Tüm taş yerleşimleri | Üstel ve çok büyük | Küçük tahtalarda çalışır |
 | Klasik DP | İşlenen hücre ve ayrıntılı geçmiş | Gereğinden büyük olabilir | Tasarlaması zorlaşır |
 | Profil DP | Yalnızca sınır maskesi | $O(NM2^M)$ | Dar tahtalarda etkilidir |
+
+![dinamik-programlamada-profil-24](/img/dinamik-programlamada-profil-24.svg)
+
 
 ## Durum ve geçişler
 

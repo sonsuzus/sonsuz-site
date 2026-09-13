@@ -62,7 +62,7 @@ spec:
 {% endraw %}
 
 
-Burada `{{ .Values.image.tag }}` ifadesi, gerçek bir YAML değeri değil, Helm'in kurulum sırasında çözeceği bir yer tutucudur. Ortama özel bir dosya hazırlamak oldukça pratiktir:
+Burada {% raw %} `{{ .Values.image.tag }}` {% endraw %} ifadesi, gerçek bir YAML değeri değil, Helm'in kurulum sırasında çözeceği bir yer tutucudur. Ortama özel bir dosya hazırlamak oldukça pratiktir:
 
 ```yaml
 # values-production.yaml

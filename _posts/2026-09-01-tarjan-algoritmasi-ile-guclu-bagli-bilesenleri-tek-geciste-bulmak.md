@@ -9,7 +9,11 @@ tags:
   - graf teorisi
   - derinlik öncelikli arama
 toc: true
+image: /img/tarjan-algoritmasi-ile-31.png
 ---
+
+![tarjan-algoritmasi-ile-31](/img/tarjan-algoritmasi-ile-31.svg)
+
 
 Bir sosyal ağda Ayşe, Berk’e; Berk, Cem’e; Cem de Ayşe’ye ulaşabiliyorsa bu üçlü, yönler farklı olsa bile kendi içinde güçlü bir iletişim halkası oluşturur. Tarjan algoritması, yönlü çizgelerdeki bu halkaları yalnızca bir derinlik öncelikli arama geçişiyle keşfeder. Böylece bağımlılık analizi, ağ incelemesi ve döngü tespiti gibi işlemleri oldukça verimli hâle getirir.
 ``

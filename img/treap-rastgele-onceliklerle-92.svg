@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="treapFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#ccefe5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7891a8" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#6b8294" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="158" r="125" fill="#dceef6" opacity="0.42"/>
+  <circle cx="319" cy="158" r="96" fill="#ffffff" opacity="0.45"/>
+
+  <rect x="25" y="45" width="145" height="230" rx="20" fill="#ffffff" opacity="0.8" filter="url(#shadow)"/>
+  <text x="46" y="76" fill="#40566b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">GİRDİ</text>
+  <text x="46" y="96" fill="#697f90" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sıralı anahtarlar</text>
+
+  <rect x="48" y="115" width="98" height="31" rx="10" fill="#fff1d8" filter="url(#smallShadow)"/>
+  <text x="97" y="135" text-anchor="middle" fill="#9a6b25" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">1 · 2 · 3 · 4</text>
+
+  <path d="M60 180 L84 180 L84 195 L108 195 L108 210 L132 210" fill="none" stroke="#e5a94f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <text x="97" y="239" text-anchor="middle" fill="#9a6b25" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Zincir riski</text>
+
+  <path d="M171 158 L206 158" fill="none" stroke="#86a6bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="208,158 199,153 199,163" fill="#86a6bd"/>
+
+  <rect x="210" y="24" width="220" height="39" rx="15" fill="#ffffff" opacity="0.88" filter="url(#shadow)"/>
+  <text x="320" y="48" text-anchor="middle" fill="#36566d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">TREAP · BST ve HEAP</text>
+
+  <path d="M320 119 L260 170 M320 119 L380 170 M260 170 L235 225 M260 170 L291 225 M380 170 L350 225 M380 170 L409 225" fill="none" stroke="#83a6ac" stroke-width="2.5" stroke-linecap="round"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="283" y="91" width="74" height="38" rx="13" fill="url(#treapFill)"/>
+    <rect x="223" y="151" width="74" height="38" rx="13" fill="#dcecff"/>
+    <rect x="343" y="151" width="74" height="38" rx="13" fill="#d9f1e6"/>
+    <rect x="199" y="206" width="64" height="37" rx="12" fill="#fce7d3"/>
+    <rect x="267" y="206" width="64" height="37" rx="12" fill="#eee3fa"/>
+    <rect x="318" y="206" width="64" height="37" rx="12" fill="#e7f2d5"/>
+    <rect x="377" y="206" width="64" height="37" rx="12" fill="#dcecff"/>
+  </g>
+
+  <text x="320" y="108" text-anchor="middle" fill="#315d69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">50</text>
+  <text x="320" y="123" text-anchor="middle" fill="#4e7780" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">p: 92</text>
+
+  <text x="260" y="168" text-anchor="middle" fill="#466784" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">25</text>
+  <text x="260" y="183" text-anchor="middle" fill="#607c94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">p: 71</text>
+
+  <text x="380" y="168" text-anchor="middle" fill="#3f7061" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">75</text>
+  <text x="380" y="183" text-anchor="middle" fill="#5b8477" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">p: 64</text>
+
+  <text x="231" y="222" text-anchor="middle" fill="#9a693d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">10</text>
+  <text x="299" y="222" text-anchor="middle" fill="#71558c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">35</text>
+  <text x="350" y="222" text-anchor="middle" fill="#668443" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">60</text>
+  <text x="409" y="222" text-anchor="middle" fill="#466784" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">90</text>
+
+  <rect x="455" y="45" width="160" height="230" rx="20" fill="#ffffff" opacity="0.8" filter="url(#shadow)"/>
+  <text x="477" y="76" fill="#40566b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">İKİ KURAL</text>
+
+  <rect x="476" y="95" width="119" height="57" rx="13" fill="#e5efff" filter="url(#smallShadow)"/>
+  <circle cx="495" cy="115" r="10" fill="#91b9e8"/>
+  <text x="495" y="119" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">K</text>
+  <text x="514" y="116" fill="#486b8b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Anahtar</text>
+  <text x="514" y="135" fill="#627f96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">BST düzeni</text>
+
+  <rect x="476" y="166" width="119" height="57" rx="13" fill="#ddf2e9" filter="url(#smallShadow)"/>
+  <circle cx="495" cy="186" r="10" fill="#7abfa5"/>
+  <text x="495" y="190" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">P</text>
+  <text x="514" y="187" fill="#447565" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Öncelik</text>
+  <text x="514" y="206" fill="#63877a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Heap düzeni</text>
+
+  <path d="M430 139 L453 124" fill="none" stroke="#86a6bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="455,123 446,122 450,130" fill="#86a6bd"/>
+  <path d="M430 180 L453 194" fill="none" stroke="#86a6bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="455,195 449,187 446,195" fill="#86a6bd"/>
+
+  <rect x="226" y="267" width="188" height="30" rx="12" fill="#ffffff" opacity="0.9" filter="url(#smallShadow)"/>
+  <circle cx="244" cy="282" r="6" fill="#76b79d"/>
+  <text x="258" y="286" fill="#4f6e67" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Rastgelelik → beklenen O(log n)</text>
+</svg>

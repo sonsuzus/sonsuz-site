@@ -9,7 +9,11 @@ tags:
   - sayı teorisi
   - kriptografi
 toc: true
+image: /img/euler-totient-fonksiyonu-39.png
 ---
+
+![euler-totient-fonksiyonu-39](/img/euler-totient-fonksiyonu-39.svg)
+
 
 Bir sayıyla aralarında asal kaç pozitif tam sayı bulunduğunu bilmek, ilk bakışta yalnızca matematik olimpiyatlarında işe yarayan bir beceri gibi görünebilir. Oysa Euler Totient fonksiyonu; modüler aritmetikten RSA şifrelemesine, periyodik sayı bulmacalarından programlama yarışmalarına kadar pek çok yerde karşımıza çıkar. Üstelik doğru formül öğrenildiğinde yüzlerce sayıyı tek tek kontrol etmek yerine asal çarpanlarla sonuca hızla ulaşabiliriz.
 

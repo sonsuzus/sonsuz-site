@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="trieFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9e3ff"/>
+      <stop offset="100%" stop-color="#dceeff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#5c7290" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60768c" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="562" cy="42" r="78" fill="#d9f1e4" opacity="0.42"/>
+  <circle cx="89" cy="290" r="92" fill="#dcecff" opacity="0.48"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516b">Maksimum XOR Alt Dizi</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71859a">Önek XOR ve bit düzeyinde Trie akışı</text>
+
+  <!-- Input -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="75" width="143" height="154" rx="18" fill="#ffffff"/>
+    <rect x="27" y="75" width="143" height="34" rx="18" fill="#dceeff"/>
+    <rect x="27" y="93" width="143" height="16" fill="#dceeff"/>
+  </g>
+  <text x="45" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516b">Önek XOR</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40566b">
+    <rect x="43" y="122" width="104" height="23" rx="9" fill="#eef5ff"/>
+    <text x="54" y="138">P[-1] = 0000</text>
+    <rect x="43" y="153" width="104" height="23" rx="9" fill="#eaf8ef"/>
+    <text x="54" y="169">P[r] = 0101</text>
+    <rect x="43" y="184" width="104" height="23" rx="9" fill="#fff4dc"/>
+    <text x="54" y="200">önce sorgu</text>
+  </g>
+
+  <!-- Arrow input to trie -->
+  <path d="M171 151 H204" fill="none" stroke="#6b91ad" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="211,151 202,146 202,156" fill="#6b91ad"/>
+
+  <!-- Trie panel -->
+  <g filter="url(#shadow)">
+    <rect x="213" y="65" width="210" height="184" rx="21" fill="url(#trieFill)"/>
+    <rect x="228" y="78" width="104" height="25" rx="10" fill="#ffffff" opacity="0.76"/>
+  </g>
+  <text x="242" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a507b">Bitwise Trie</text>
+  <text x="348" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68738e">MSB → LSB</text>
+
+  <!-- Trie links -->
+  <g fill="none" stroke="#8294c2" stroke-width="2" stroke-linecap="round">
+    <path d="M258 126 L292 151"/>
+    <path d="M258 126 L332 151"/>
+    <path d="M292 151 L274 181"/>
+    <path d="M292 151 L310 181"/>
+    <path d="M332 151 L324 181"/>
+    <path d="M332 151 L365 181"/>
+    <path d="M310 181 L300 213"/>
+    <path d="M365 181 L377 213"/>
+  </g>
+
+  <!-- Preferred route -->
+  <path d="M258 126 L332 151 L365 181 L377 213" fill="none" stroke="#6b57c8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Trie nodes -->
+  <g filter="url(#softShadow)">
+    <circle cx="258" cy="126" r="13" fill="#ffffff"/>
+    <circle cx="292" cy="151" r="12" fill="#ffffff"/>
+    <circle cx="332" cy="151" r="12" fill="#f4efff"/>
+    <circle cx="274" cy="181" r="11" fill="#ffffff"/>
+    <circle cx="310" cy="181" r="11" fill="#ffffff"/>
+    <circle cx="324" cy="181" r="11" fill="#ffffff"/>
+    <circle cx="365" cy="181" r="11" fill="#f4efff"/>
+    <circle cx="300" cy="213" r="10" fill="#ffffff"/>
+    <circle cx="377" cy="213" r="10" fill="#fff0bd"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#4d5f76">
+    <text x="258" y="130">Kök</text>
+    <text x="292" y="155">0</text>
+    <text x="332" y="155">1</text>
+    <text x="274" y="185">0</text>
+    <text x="310" y="185">1</text>
+    <text x="324" y="185">0</text>
+    <text x="365" y="185">1</text>
+  </g>
+  <text x="378" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#7a5b14">j</text>
+  <text x="235" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c6387">Karşıt bit önceliği</text>
+
+  <!-- Arrow to calculation -->
+  <path d="M424 151 H456" fill="none" stroke="#6b91ad" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="463,151 454,146 454,156" fill="#6b91ad"/>
+
+  <!-- Result -->
+  <g filter="url(#shadow)">
+    <rect x="466" y="75" width="147" height="154" rx="18" fill="#ffffff"/>
+    <rect x="466" y="75" width="147" height="34" rx="18" fill="#d8f1df"/>
+    <rect x="466" y="93" width="147" height="16" fill="#d8f1df"/>
+  </g>
+  <text x="484" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35664a">En iyi eşleşme</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="481" y="122" width="115" height="28" rx="10" fill="#eef9f1"/>
+    <text x="494" y="140" fill="#3c6650">P[r] ⊕ P[j]</text>
+    <rect x="481" y="159" width="115" height="28" rx="10" fill="#fff4d8"/>
+    <text x="494" y="177" fill="#715d25">maksimum değer</text>
+    <rect x="481" y="196" width="115" height="20" rx="8" fill="#eef3ff"/>
+    <text x="494" y="210" fill="#4d6483">aralık: j+1 ... r</text>
+  </g>
+
+  <!-- Bottom efficiency -->
+  <g filter="url(#softShadow)">
+    <rect x="88" y="269" width="464" height="35" rx="15" fill="#ffffff"/>
+  </g>
+  <circle cx="112" cy="286" r="10" fill="#d9efdf"/>
+  <path d="M108 286 L111 289 L117 282" fill="none" stroke="#42825a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="132" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405d71">Her önek için:</text>
+  <text x="239" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7183">W bit adımı</text>
+  <path d="M329 286 H355" fill="none" stroke="#88a0b5" stroke-width="1.8"/>
+  <polygon points="361,286 352,281 352,291" fill="#88a0b5"/>
+  <text x="376" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7183">toplam O(nW)</text>
+</svg>

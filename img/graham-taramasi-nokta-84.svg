@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="hullFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9efff"/>
+      <stop offset="100%" stop-color="#dff4d7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#5d7184" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="42" r="54" fill="#dceeff" opacity="0.48"/>
+  <circle cx="587" cy="276" r="72" fill="#dff3dd" opacity="0.55"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39536b">GRAHAM TARAMASI</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728496">Nokta bulutundan dışbükey zarf</text>
+
+  <rect x="24" y="65" width="184" height="220" rx="19" fill="#ffffff" opacity="0.93" filter="url(#shadow)"/>
+  <text x="43" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f5b70">Nokta bulutu</text>
+  <text x="43" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8292a1">pivot seçimi</text>
+
+  <path d="M55 242 L63 147 L111 124 L174 145 L187 220 L143 259 L82 259 Z" fill="url(#hullFill)" opacity="0.62"/>
+  <path d="M55 242 L63 147 L111 124 L174 145 L187 220 L143 259 L82 259 Z" fill="none" stroke="#4a9a85" stroke-width="3" stroke-linejoin="round"/>
+
+  <path d="M55 242 L111 124" stroke="#90b3cc" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M55 242 L174 145" stroke="#90b3cc" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M55 242 L187 220" stroke="#90b3cc" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <g fill="#6787a5" filter="url(#smallShadow)">
+    <circle cx="63" cy="147" r="5"/>
+    <circle cx="111" cy="124" r="5"/>
+    <circle cx="174" cy="145" r="5"/>
+    <circle cx="187" cy="220" r="5"/>
+    <circle cx="143" cy="259" r="5"/>
+    <circle cx="82" cy="259" r="5"/>
+    <circle cx="94" cy="183" r="4.5"/>
+    <circle cx="122" cy="164" r="4.5"/>
+    <circle cx="145" cy="194" r="4.5"/>
+    <circle cx="111" cy="223" r="4.5"/>
+    <circle cx="157" cy="229" r="4.5"/>
+    <circle cx="78" cy="211" r="4.5"/>
+  </g>
+  <circle cx="55" cy="242" r="7" fill="#f18f71" stroke="#ffffff" stroke-width="2.5" filter="url(#smallShadow)"/>
+  <text x="41" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#c46850">Pivot</text>
+
+  <path d="M222 174 L249 174" stroke="#88a1b1" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="255,174 247,169 247,179" fill="#88a1b1"/>
+
+  <rect x="265" y="65" width="157" height="220" rx="19" fill="#ffffff" opacity="0.93" filter="url(#shadow)"/>
+  <text x="285" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f5b70">Açısal sıralama</text>
+  <text x="285" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8292a1">kutupsal açı</text>
+
+  <circle cx="304" cy="242" r="6.5" fill="#f18f71" stroke="#ffffff" stroke-width="2"/>
+  <path d="M304 242 L319 143 M304 242 L354 129 M304 242 L391 161 M304 242 L399 211" stroke="#a7bfd0" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M304 242 A56 56 0 0 1 351 210" fill="none" stroke="#9d78c7" stroke-width="2"/>
+  <text x="324" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8062a2">θ</text>
+
+  <g filter="url(#smallShadow)">
+    <circle cx="319" cy="143" r="5" fill="#6c91ae"/>
+    <circle cx="354" cy="129" r="5" fill="#6c91ae"/>
+    <circle cx="391" cy="161" r="5" fill="#6c91ae"/>
+    <circle cx="399" cy="211" r="5" fill="#6c91ae"/>
+  </g>
+  <path d="M284 266 L397 266" stroke="#d4e2eb" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="294" cy="266" r="4" fill="#9d78c7"/>
+  <circle cx="320" cy="266" r="4" fill="#9d78c7"/>
+  <circle cx="348" cy="266" r="4" fill="#9d78c7"/>
+  <circle cx="377" cy="266" r="4" fill="#9d78c7"/>
+
+  <path d="M436 174 L462 174" stroke="#88a1b1" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="468,174 460,169 460,179" fill="#88a1b1"/>
+
+  <rect x="478" y="65" width="138" height="220" rx="19" fill="#ffffff" opacity="0.93" filter="url(#shadow)"/>
+  <text x="496" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f5b70">Yığın taraması</text>
+  <text x="496" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8292a1">dönüş testi</text>
+
+  <rect x="505" y="225" width="75" height="22" rx="7" fill="#a8d9c1" filter="url(#smallShadow)"/>
+  <rect x="505" y="199" width="75" height="22" rx="7" fill="#b8d9f0" filter="url(#smallShadow)"/>
+  <rect x="505" y="173" width="75" height="22" rx="7" fill="#d5c3ed" filter="url(#smallShadow)"/>
+  <text x="521" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#594878">Aday</text>
+
+  <path d="M493 158 L530 135 L563 157" fill="none" stroke="#4d9a83" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="493" cy="158" r="4.5" fill="#4d9a83"/>
+  <circle cx="530" cy="135" r="4.5" fill="#4d9a83"/>
+  <circle cx="563" cy="157" r="4.5" fill="#4d9a83"/>
+  <text x="490" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d8b76">Sola dönüş: tut</text>
+
+  <path d="M493 262 L530 245 L563 268" fill="none" stroke="#e07d72" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <circle cx="530" cy="245" r="5" fill="#e07d72"/>
+  <path d="M523 238 L537 252 M537 238 L523 252" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="490" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#bd665d">Sağa dönüş: çıkar</text>
+</svg>

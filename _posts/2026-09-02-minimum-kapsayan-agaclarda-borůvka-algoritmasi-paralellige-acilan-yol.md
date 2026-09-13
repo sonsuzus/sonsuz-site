@@ -9,6 +9,7 @@ tags:
   - minimum kapsayan ağaç
   - paralel programlama
 toc: true
+image: /img/minimum-kapsayan-agaclarda-80.png
 ---
 
 Bir şehirdeki tüm veri merkezlerini mümkün olan en düşük kablo maliyetiyle bağlamak istediğinizi düşünün. Her merkez diğer merkezlerle bağlantı kurabilir, ancak bütçe sınırlıdır. İşte Minimum Kapsayan Ağaç (Minimum Spanning Tree, MST) problemi tam olarak bu tür senaryoları çözer. Borůvka algoritması ise MST ailesinin özellikle paralel çalışmaya hevesli, aynı anda birçok işe el atan üyesidir.
@@ -53,6 +54,9 @@ Bu yaklaşımın güvenli olmasını **kesme özelliği** açıklar: Bir bileşe
 | Kullanılan yapı | Union-Find | Union-Find | Öncelik kuyruğu |
 | Tipik karmaşıklık | $O(E\log V)$ | $O(E\log E)$ | $O(E\log V)$ |
 | Dağıtık sistem uyumu | Yüksek | Orta | Düşük/orta |
+
+![minimum-kapsayan-agaclarda-80](/img/minimum-kapsayan-agaclarda-80.svg)
+
 
 Borůvka’nın yıldızının parladığı nokta, bileşenlerin en ucuz kenarlarını birbirinden büyük ölçüde bağımsız arayabilmesidir. Kenarlar işlemcilere, sunuculara veya GPU iş parçacıklarına dağıtılabilir; her çalışan yerel adayını bulur ve sonuçlar indirgeme işlemiyle birleştirilir.
 

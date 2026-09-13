@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ebff"/>
+      <stop offset="100%" stop-color="#b9d8f5"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eee4ff"/>
+      <stop offset="100%" stop-color="#d9c7f5"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcf3df"/>
+      <stop offset="100%" stop-color="#bfe4c7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8195" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#61758a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="42" r="68" fill="#dcefff" opacity="0.45"/>
+  <circle cx="579" cy="280" r="90" fill="#dff3df" opacity="0.48"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">Tarjan: Tek DFS ile Güçlü Bağlı Bileşenler</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#678092">Keşfet • düşük değeri güncelle • yığından bileşen çıkar</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="82" width="166" height="189" rx="19" fill="#ffffff"/>
+    <rect x="30" y="82" width="166" height="38" rx="19" fill="url(#blue)"/>
+    <rect x="30" y="102" width="166" height="18" fill="url(#blue)"/>
+  </g>
+  <text x="50" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315875">Yönlü çizge</text>
+
+  <path d="M72 171 L110 143" stroke="#6685a0" stroke-width="2.2" fill="none"/>
+  <polygon points="110,143 102,144 107,151" fill="#6685a0"/>
+  <path d="M123 149 L144 182" stroke="#6685a0" stroke-width="2.2" fill="none"/>
+  <polygon points="144,182 137,177 136,185" fill="#6685a0"/>
+  <path d="M137 202 L92 208" stroke="#6685a0" stroke-width="2.2" fill="none"/>
+  <polygon points="92,208 100,211 99,203" fill="#6685a0"/>
+  <path d="M73 196 C48 216 48 157 70 151" stroke="#6685a0" stroke-width="2.2" fill="none"/>
+  <polygon points="70,151 63,155 71,159" fill="#6685a0"/>
+  <path d="M150 198 L169 198" stroke="#88a2ae" stroke-width="2.2" fill="none"/>
+  <polygon points="169,198 162,194 162,202" fill="#88a2ae"/>
+
+  <g filter="url(#soft)">
+    <circle cx="69" cy="181" r="18" fill="#fff4c9"/>
+    <circle cx="115" cy="140" r="18" fill="#ffdcd3"/>
+    <circle cx="145" cy="196" r="18" fill="#e4d8ff"/>
+    <circle cx="177" cy="198" r="14" fill="#d7f1df"/>
+  </g>
+  <text x="65" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b5860">A</text>
+  <text x="111" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b5860">B</text>
+  <text x="141" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b5860">C</text>
+  <text x="173" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#44705a">D</text>
+  <text x="49" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">Geri bağlantı döngüyü gösterir</text>
+
+  <path d="M205 175 L242 175" stroke="#7190a6" stroke-width="2.4"/>
+  <polygon points="242,175 233,169 233,181" fill="#7190a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="252" y="82" width="148" height="189" rx="19" fill="#ffffff"/>
+    <rect x="252" y="82" width="148" height="38" rx="19" fill="url(#purple)"/>
+    <rect x="252" y="102" width="148" height="18" fill="url(#purple)"/>
+  </g>
+  <text x="272" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d4977">DFS ve aktif yığın</text>
+
+  <rect x="275" y="138" width="64" height="25" rx="7" fill="#ffe1d8" filter="url(#soft)"/>
+  <rect x="275" y="165" width="64" height="25" rx="7" fill="#e9ddff" filter="url(#soft)"/>
+  <rect x="275" y="192" width="64" height="25" rx="7" fill="#fff1c7" filter="url(#soft)"/>
+  <text x="289" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#684b4b">C</text>
+  <text x="289" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d4c72">B</text>
+  <text x="289" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#65562d">A</text>
+  <path d="M345 136 L345 219" stroke="#9a89ac" stroke-width="1.6" fill="none"/>
+  <path d="M345 136 L340 144 M345 136 L350 144" stroke="#9a89ac" stroke-width="1.6"/>
+  <text x="355" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e6279">aktif</text>
+  <text x="355" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e6279">düğümler</text>
+  <text x="273" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#74677e">index ve low izlenir</text>
+
+  <path d="M409 175 L446 175" stroke="#7190a6" stroke-width="2.4"/>
+  <polygon points="446,175 437,169 437,181" fill="#7190a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="456" y="82" width="154" height="189" rx="19" fill="#ffffff"/>
+    <rect x="456" y="82" width="154" height="38" rx="19" fill="url(#green)"/>
+    <rect x="456" y="102" width="154" height="18" fill="url(#green)"/>
+  </g>
+  <text x="476" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c6950">SCC kökü ve çıktı</text>
+
+  <rect x="477" y="139" width="111" height="42" rx="12" fill="#dff3e2" filter="url(#soft)"/>
+  <text x="490" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e7052">low[A] = index[A]</text>
+  <text x="494" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547864">Bileşen kökü</text>
+
+  <path d="M532 187 L532 203" stroke="#719882" stroke-width="2"/>
+  <polygon points="532,203 526,195 538,195" fill="#719882"/>
+
+  <rect x="476" y="211" width="112" height="35" rx="12" fill="#f7fbf7" stroke="#b5d8bd" stroke-width="1.5"/>
+  <circle cx="495" cy="228" r="10" fill="#fff1c7"/>
+  <circle cx="518" cy="228" r="10" fill="#e9ddff"/>
+  <circle cx="541" cy="228" r="10" fill="#ffe1d8"/>
+  <text x="491" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6b5b30">A</text>
+  <text x="514" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d4c72">B</text>
+  <text x="537" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754f4b">C</text>
+  <text x="477" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587565">Yığından birlikte çıkar</text>
+
+  <rect x="30" y="288" width="580" height="1" fill="#cfdfdf"/>
+  <circle cx="47" cy="302" r="5" fill="#8eb9db"/>
+  <text x="59" y="306" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587184">Her düğüm ve kenar bir kez incelenir</text>
+  <text x="480" y="306" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47735a">O(V + E)</text>
+</svg>

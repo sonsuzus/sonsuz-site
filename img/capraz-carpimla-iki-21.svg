@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#d9f5e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#64809a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#64809a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="132" fill="#d8efff" opacity="0.35"/>
+  <circle cx="320" cy="160" r="100" fill="none" stroke="#b9d9dd" stroke-width="1.5" stroke-dasharray="4 7"/>
+
+  <path d="M166 96 C194 96 210 110 231 124" fill="none" stroke="#91aebf" stroke-width="2"/>
+  <polygon points="231,124 220,121 225,113" fill="#91aebf"/>
+  <path d="M474 96 C446 96 430 110 409 124" fill="none" stroke="#91aebf" stroke-width="2"/>
+  <polygon points="409,124 415,113 420,121" fill="#91aebf"/>
+  <path d="M166 224 C194 224 210 210 231 196" fill="none" stroke="#91aebf" stroke-width="2"/>
+  <polygon points="231,196 225,207 220,199" fill="#91aebf"/>
+  <path d="M474 224 C446 224 430 210 409 196" fill="none" stroke="#91aebf" stroke-width="2"/>
+  <polygon points="409,196 420,199 415,207" fill="#91aebf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="228" y="91" width="184" height="138" rx="25" fill="url(#core)" stroke="#c0dce3" stroke-width="1.5"/>
+  </g>
+  <text x="320" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34536a">ÇAPRAZ ÇARPIM</text>
+  <text x="320" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527084">Yönelim testi</text>
+
+  <line x1="260" y1="193" x2="381" y2="129" stroke="#4d84bc" stroke-width="5" stroke-linecap="round"/>
+  <line x1="264" y1="126" x2="377" y2="195" stroke="#e77970" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="320" cy="161" r="8" fill="#ffffff" stroke="#4b6d81" stroke-width="2"/>
+  <circle cx="320" cy="161" r="3" fill="#3f789b"/>
+  <text x="251" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3975ac">A</text>
+  <text x="383" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3975ac">B</text>
+  <text x="254" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#c65c59">C</text>
+  <text x="381" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#c65c59">D</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="53" width="136" height="80" rx="17" fill="#fff9df" stroke="#eadca7"/>
+  </g>
+  <circle cx="55" cy="78" r="13" fill="#f6d978"/>
+  <path d="M50 82 L55 71 L61 82 Z" fill="none" stroke="#7e6840" stroke-width="1.7" stroke-linejoin="round"/>
+  <text x="78" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#66562f">Yönelim</text>
+  <text x="78" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d714f">sol • sağ • sıfır</text>
+  <text x="45" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#846f3a">orient(A,B,C)</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="474" y="53" width="136" height="80" rx="17" fill="#fbe8ee" stroke="#ebc1cf"/>
+  </g>
+  <circle cx="499" cy="78" r="13" fill="#ef9eb4"/>
+  <path d="M493 79 L498 84 L506 72" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="522" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7b4054">Karşılıklı</text>
+  <text x="522" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#946071">farklı taraflar</text>
+  <text x="489" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d5266">o₁ × o₂ &lt; 0</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="187" width="136" height="80" rx="17" fill="#e8f5ff" stroke="#bddbea"/>
+  </g>
+  <rect x="45" y="202" width="26" height="24" rx="5" fill="none" stroke="#5b99bd" stroke-width="2"/>
+  <circle cx="58" cy="214" r="3.5" fill="#5b99bd"/>
+  <text x="82" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a6481">Sınır kutusu</text>
+  <text x="82" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e8298">parça üzerinde mi?</text>
+  <text x="45" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7d99">eşdoğrusal kontrol</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="474" y="187" width="136" height="80" rx="17" fill="#e9f7ea" stroke="#bfdcbe"/>
+  </g>
+  <circle cx="499" cy="213" r="14" fill="#8ecb9a"/>
+  <path d="M493 213 L498 218 L506 207" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="522" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f704c">Kesişim</text>
+  <text x="522" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a8563">evet veya hayır</text>
+  <text x="489" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7d59">O(1) işlem</text>
+
+  <path d="M308 249 L320 260 L332 249" fill="none" stroke="#7899a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="235" y="266" width="170" height="32" rx="16" fill="#ffffff" opacity="0.78"/>
+  <text x="320" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#547080">Çıkarma + çarpma = sağlam test</text>
+</svg>

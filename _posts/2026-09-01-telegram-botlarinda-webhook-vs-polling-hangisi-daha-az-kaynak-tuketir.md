@@ -9,6 +9,7 @@ tags:
   - webhook
   - polling
 toc: true
+image: /img/telegram-botlarinda-webhook-48.png
 ---
 
 Bir Telegram botu geliştirdiğinizde mesajları nasıl alacağınız konusunda iki temel seçeneğiniz vardır: polling ve webhook. İkisi de aynı güncellemeleri teslim eder; ancak bunu yaparken ağ trafiği, işlemci kullanımı, gecikme ve altyapı gereksinimleri bakımından farklı davranır. Kısacası polling kapıyı sürekli çalıp “Yeni mesaj var mı?” diye sorarken webhook, mesaj geldiğinde kapı zilinin çalmasını bekler.
@@ -97,3 +98,6 @@ Botu bilgisayarınızda geliştiriyor, hızlıca deneme yapıyor veya HTTPS sunu
 Üretim ortamında çalışan, yoğun mesaj alan veya sunucusuz platformlarda barındırılan botlarda ise webhook öne çıkar. Olay geldiğinde çalıştığı için boşta kaynak tüketmez ve daha hızlı tepki verir. Ancak webhook uç noktasının güvenliğini doğrulamak, başarısız istekleri izlemek ve işlemleri mümkün olduğunca hızlı tamamlamak gerekir.
 
 Sonuç olarak teorik verimlilik kazananı **webhook** yöntemidir. Pratik kolaylık kupası ise **long polling** seçeneğine gider. Yani yarışın galibi yalnızca hız değil, projenizin altyapısıdır: geliştirmede polling, ölçeklenen üretim sistemlerinde webhook genellikle en dengeli tercihtir.
+
+![telegram-botlarinda-webhook-48](/img/telegram-botlarinda-webhook-48.svg)
+

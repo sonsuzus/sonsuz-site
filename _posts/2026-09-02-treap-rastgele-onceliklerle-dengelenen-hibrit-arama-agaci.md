@@ -9,6 +9,7 @@ tags:
   - veri yapıları
   - algoritmalar
 toc: true
+image: /img/treap-rastgele-onceliklerle-92.png
 ---
 
 İkili arama ağaçları hızlıdır; ancak elemanlar sıralı geldiğinde zarif bir ağaç yerine tek yönlü bir zincire dönüşebilir. Treap, bu sorunu ikili arama ağacı ile heap yapısını birleştirerek çözer. Her düğüme anahtarın yanında rastgele bir öncelik verir ve böylece ağacın büyük olasılıkla dengeli kalmasını sağlar.
@@ -51,6 +52,9 @@ Burada önemli bir düzeltme var: Treap, **en kötü durumda kesin olarak dengel
 | AVL ağacı | Katı yükseklik kuralları | $O(\log n)$ | $O(\log n)$ |
 | Kırmızı-Siyah ağaç | Renk kuralları | $O(\log n)$ | $O(\log n)$ |
 | Treap | Rastgele öncelikler | $O(\log n)$ | $O(n)$ |
+
+![treap-rastgele-onceliklerle-92](/img/treap-rastgele-onceliklerle-92.svg)
+
 
 ## Ekleme ve rotasyonlar
 

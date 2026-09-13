@@ -9,6 +9,7 @@ tags:
   - modüler aritmetik
   - matematik olimpiyatları
 toc: true
+image: /img/cin-kalan-teoremiyle-94.png
 ---
 
 Bir kasanın şifresi doğrudan verilmek yerine “3 ile bölündüğünde 2, 5 ile bölündüğünde 3, 7 ile bölündüğünde 2 kalanını bırakıyor” şeklinde saklansaydı ne yapardınız? Matematik olimpiyatlarında sıkça karşımıza çıkan bu tür şifrelerin anahtarı, farklı modüler bilgilerden tek bir ortak sayı üreten **Çin Kalan Teoremi**dir.
@@ -39,6 +40,9 @@ biçimindedir. Yani $0\leq x<M$ aralığında tam olarak bir çözüm bulunur.
 | Modüller aralarında asal değil | Çözüm olmayabilir | Tutarlılık kontrolü gerekir |
 | Ortak bölen kalan farkını bölüyor | Çözüm vardır ve modulo EKOK’ta tektir | Genelleştirilmiş teorem |
 | Ortak bölen kalan farkını bölmüyor | Çözüm yoktur | Verilen şifre geçersizdir |
+
+![cin-kalan-teoremiyle-94](/img/cin-kalan-teoremiyle-94.svg)
+
 
 İki denklem için geçerlilik koşulu özellikle kullanışlıdır:
 

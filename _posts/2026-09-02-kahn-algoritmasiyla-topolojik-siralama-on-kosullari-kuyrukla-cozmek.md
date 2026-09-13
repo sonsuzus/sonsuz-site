@@ -9,9 +9,13 @@ tags:
   - topolojik sıralama
   - çizge algoritmaları
 toc: true
+image: /img/kahn-algoritmasiyla-topolojik-58.png
 ---
 
 Bir üniversitede Veri Yapıları dersini almadan Algoritmalar dersine, Algoritmalar dersini tamamlamadan da İleri Programlama dersine kayıt olamadığınızı düşünün. Dersler arasındaki bu ön koşullar, hangi işin diğerinden önce yapılması gerektiğini gösteren bir bağımlılık ağıdır. Kahn algoritması, böyle bir ağı derinlik öncelikli arama kullanmadan, kuyruk yardımıyla geçerli bir sıraya dizer.
+
+![kahn-algoritmasiyla-topolojik-58](/img/kahn-algoritmasiyla-topolojik-58.svg)
+
 ``
 ## Problemi çizge olarak modellemek
 

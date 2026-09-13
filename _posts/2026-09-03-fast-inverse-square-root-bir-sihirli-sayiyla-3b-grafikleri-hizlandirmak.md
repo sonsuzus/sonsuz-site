@@ -9,7 +9,11 @@ tags:
   - kayan nokta
   - grafik programlama
 toc: true
+image: /img/fast-inverse-square-86.png
 ---
+
+![fast-inverse-square-86](/img/fast-inverse-square-86.svg)
+
 
 1990'ların oyun motorlarında her işlemci döngüsü değerliydi. Bir vektörü normalize etmek için gereken $1/\sqrt{x}$ hesabı bile performansı ciddi biçimde etkileyebiliyordu. Fast Inverse Square Root algoritması, kayan noktalı sayının bitlerini bir tamsayı gibi yorumlayıp yaklaşık sonucu şaşırtıcı derecede hızlı üretmesiyle ünlendi. Üstelik bunu yalnızca matematikle değil, sayıların bellekteki temsilini yaratıcı biçimde manipüle ederek yapıyordu.
 ``

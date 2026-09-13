@@ -9,9 +9,13 @@ tags:
   - kombinatorik
   - geometri
 toc: true
+image: /img/katalan-sayilarinin-geometrik-43.png
 ---
 
 Bir sayı dizisinin hem düzgün parantez ifadelerini hem de çokgenlerin üçgenlere ayrılma biçimlerini sayması ilk bakışta matematiksel bir tesadüf gibi görünebilir. Oysa Katalan sayıları, farklı görünen bu problemlerin altında aynı dallanma ve özyineleme yapısının bulunduğunu gösterir. Dizi $1, 1, 2, 5, 14, 42, 132, \ldots$ biçiminde ilerler ve kombinatoriğin adeta İsviçre çakısıdır.
+
+
+![katalan-sayilarinin-geometrik-43](/img/katalan-sayilarinin-geometrik-43.svg)
 
 ``
 

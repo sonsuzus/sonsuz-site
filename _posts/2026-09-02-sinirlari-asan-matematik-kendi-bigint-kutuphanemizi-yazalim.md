@@ -9,7 +9,11 @@ tags:
   - uzun sayı aritmetiği
   - algoritmalar
 toc: true
+image: /img/sinirlari-asan-matematik-13.png
 ---
+
+![sinirlari-asan-matematik-13](/img/sinirlari-asan-matematik-13.svg)
+
 
 Bir tam sayının milyonlarca basamağı olsaydı onu nasıl toplardınız? Standart veri türleri işlemcinin belirlediği sınırlar içinde yaşarken BigInt yaklaşımı, sayıları küçük parçalara ayırarak bu duvarı aşar. Bu projede veri kaybına uğramadan dev sayıları saklayan, toplayan ve çarpan küçük bir kütüphanenin temelini kuracağız.
 ``

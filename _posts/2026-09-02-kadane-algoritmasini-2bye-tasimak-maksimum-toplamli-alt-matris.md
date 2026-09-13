@@ -9,9 +9,13 @@ tags:
   - dinamik programlama
   - matris algoritmaları
 toc: true
+image: /img/kadane-algoritmasini-2bye-74.png
 ---
 
 Bir boyutlu Kadane algoritması, sayı dizisindeki maksimum toplamlı kesintisiz aralığı doğrusal zamanda bulur. Peki sayılar tek sıra yerine bir matrisin hücrelerine dağılmışsa? Bu kez hedefimiz; satırları ve sütunları kesintisiz olan, toplamı mümkün olduğunca büyük bir dikdörtgen seçmektir. Neyse ki Kadane’yi çöpe atmıyoruz: Matrisi akıllıca sıkıştırarak problemi tekrar tek boyuta indiriyoruz.
+
+
+![kadane-algoritmasini-2bye-74](/img/kadane-algoritmasini-2bye-74.svg)
 
 ``
 

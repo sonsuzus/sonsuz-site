@@ -9,6 +9,7 @@ tags:
   - bitwise xor
   - algoritmalar
 toc: true
+image: /img/trie-ile-bitwise-94.png
 ---
 
 Bir sayı dizisindeki tüm alt dizileri deneyerek maksimum XOR sonucunu aramak kolaydır; ne var ki bu yöntem büyük verilerde bilgisayarı küçük çaplı bir varoluş krizine sürükler. Önek XOR değerlerini bit düzeyinde saklayan bir **Trie**, aynı problemi çok daha verimli biçimde çözmemizi sağlar. Üstelik yalnızca maksimum değeri değil, bu değeri oluşturan alt dizinin sınırlarını da bulabiliriz.
@@ -107,3 +108,6 @@ Python tamsayıları sınırsız hassasiyetlidir; negatif sayılarda sağa kayd�
 $$x'=x\ \&\ (2^W-1)$$
 
 Eşit maksimum sonuçlar için kod ilk bulunan aralığı saklar. En kısa veya sözlük sırasına göre ilk aralık isteniyorsa eşitlik durumuna ek karşılaştırma eklenebilir. Sonuç olarak önek XOR cebiri ve Bitwise Trie birleşimi, karesel aramayı bit başına birkaç karara indirerek büyük dizilerde güçlü ve öğretici bir çözüm sunar.
+
+![trie-ile-bitwise-94](/img/trie-ile-bitwise-94.svg)
+

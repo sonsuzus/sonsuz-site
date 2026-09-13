@@ -9,7 +9,11 @@ tags:
   - binary lifting
   - ağaç algoritmaları
 toc: true
+image: /img/lowest-common-ancestor-70.png
 ---
+
+![lowest-common-ancestor-70](/img/lowest-common-ancestor-70.svg)
+
 
 Bir soy ağacında iki kişinin ortak atasını aramak kolay görünebilir; ancak yüz binlerce düğümlü bir ağaçta binlerce sorgu sorulduğunda işler hızla karışır. **Lowest Common Ancestor (LCA)**, iki düğümün ikisine de ata olan en derin düğümü bulur. Binary Lifting ise ön işleme yaparak bu sorguyu oldukça hızlı cevaplamamızı sağlar.
 ``

@@ -9,9 +9,13 @@ tags:
   - dışbükey zarf
   - hesaplamalı geometri
 toc: true
+image: /img/graham-taramasi-nokta-84.png
 ---
 
 Bir kâğıda rastgele noktalar çizdiğinizi ve hepsini çevreleyecek biçimde bir lastik bant geçirdiğinizi düşünün. Bandı bıraktığınızda yalnızca en dıştaki noktalara tutunur ve dışbükey bir çokgen oluşturur. **Dışbükey zarf** adı verilen bu sınır; harita uygulamalarından görüntü işlemeye, robot hareket planlamasından oyun geliştirmeye kadar pek çok alanda kullanılır. Graham Taraması ise zarfı, noktaları kutupsal açılarına göre düzenleyip sistematik biçimde eleyerek bulur.
+
+![graham-taramasi-nokta-84](/img/graham-taramasi-nokta-84.svg)
+
 ``
 ## Dışbükey zarf nedir?
 

@@ -9,7 +9,11 @@ tags:
   - hesaplamalı geometri
   - algoritma
 toc: true
+image: /img/capraz-carpimla-iki-21.png
 ---
+
+![capraz-carpimla-iki-21](/img/capraz-carpimla-iki-21.svg)
+
 
 Harita uygulamalarından oyun motorlarına kadar birçok sistem, iki doğru parçasının kesişip kesişmediğini hızlıca bilmek ister. İlk akla gelen yöntem eğimleri hesaplamak ve doğruların denklemlerini çözmek olabilir. Fakat bu yaklaşım dik doğrularda özel durumlar, bölme işlemleri ve kayan nokta hataları üretir. Neyse ki vektörel çapraz çarpım sayesinde sinüs, kosinüs ya da açı hesaplamadan yalnızca çıkarma ve çarpma işlemleriyle sağlam bir kesişim testi yapabiliriz.
 

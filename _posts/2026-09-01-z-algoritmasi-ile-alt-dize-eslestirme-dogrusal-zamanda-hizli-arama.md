@@ -9,9 +9,13 @@ tags:
   - metin eşleştirme
   - algoritmalar
 toc: true
+image: /img/z-algoritmasi-ile-84.png
 ---
 
 Bir metnin içinde belirli bir deseni aramak, arama motorlarından DNA analizine kadar pek çok alanda karşımıza çıkar. Her konumda karakterleri baştan karşılaştıran basit yöntem kolay anlaşılır olsa da büyük verilerde yavaş kalabilir. Z-Algoritması ise daha önce yapılan karşılaştırmaları akıllıca kullanarak eşleştirme işlemini doğrusal zamanda tamamlar ve KMP’ye güçlü bir alternatif sunar.
+
+![z-algoritmasi-ile-84](/img/z-algoritmasi-ile-84.svg)
+
 ``
 ## Problemin Temeli
 

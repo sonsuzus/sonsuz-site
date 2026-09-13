@@ -9,6 +9,7 @@ tags:
   - algoritmalar
   - bellek-yonetimi
 toc: true
+image: /img/kuyruk-ozyinelemesi-stack-78.png
 ---
 
 Özyineleme, bir fonksiyonun problemi küçülterek kendisini çağırmasıdır. Zarif görünür; fakat her çağrı bellekte yeni bir yığın çerçevesi oluşturduğunda binlerce adım sonra programımız dramatik biçimde “Stack Overflow!” diye bağırabilir. Kuyruk özyinelemesi (tail recursion), özyinelemeli çağrıyı fonksiyonun son işlemi hâline getirerek çalışma zamanına bu çerçeveleri yeniden kullanma fırsatı verir.
@@ -58,6 +59,9 @@ Artık çarpma, bir sonraki çağrıdan **önce** yapılır. Fonksiyonun saklanm
 | Yığın kullanımı | $O(n)$ | $O(1)$ | $O(1)$ |
 | Bekleyen işlem | Vardır | Yoktur | Yoktur |
 | Matematiksel anlatım | Güçlü | Güçlü | Daha mekanik |
+
+![kuyruk-ozyinelemesi-stack-78](/img/kuyruk-ozyinelemesi-stack-78.svg)
+
 
 Önemli ayrıntı şudur: Bir fonksiyonun kuyruk özyinelemeli yazılması, otomatik olarak sabit bellek kullanacağı anlamına gelmez. **Derleyici veya çalışma zamanı TCO uygulamalıdır.** Scheme gibi diller bunu garanti ederken Python bilinçli olarak desteklemez. JavaScript standardında uygun kuyruk çağrıları tanımlanmış olsa da motor desteği yaygın ve tutarlı değildir. Java ve çoğu JVM uygulaması da genel bir garanti sunmaz.
 

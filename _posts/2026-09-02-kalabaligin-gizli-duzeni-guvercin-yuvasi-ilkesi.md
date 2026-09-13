@@ -9,6 +9,7 @@ tags:
   - matematiksel-ispat
   - algoritma
 toc: true
+image: /img/kalabaligin-gizli-duzeni-18.png
 ---
 
 Bazı matematik soruları uzun denklemler, karmaşık olasılıklar veya sayfalar dolusu hesaplama gerektiriyormuş gibi görünür. Oysa bazen çözüm, birkaç güvercini birkaç yuvaya yerleştirmekten ibarettir. Güvercin Yuvası İlkesi, şaşırtıcı derecede basit olmasına rağmen sayı teorisinden algoritmalara kadar pek çok alanda güçlü ispatlar kurmamızı sağlar.
@@ -86,3 +87,6 @@ Bu kod, sayıları 5 ile bölümden kalanlarına göre kovalara ayırır ve bird
 | Sayma | Kaç farklı düzenleme vardır? | Kesin bir adet hesaplar |
 
 Bir soruda “mutlaka”, “en az iki”, “aynı kalan” veya “ortak özellik” ifadeleri geçiyorsa güvercinleri saymaya başlamak iyi bir reflekstir. Karmaşık görünen tablonun altında çoğu zaman basit bir kapasite problemi vardır: Misafir çok, sandalye azsa birileri kesinlikle sıkışacaktır.
+
+![kalabaligin-gizli-duzeni-18](/img/kalabaligin-gizli-duzeni-18.svg)
+

@@ -9,9 +9,13 @@ tags:
   - rastgele sayı üretimi
   - kriptografi
 toc: true
+image: /img/lcgnin-perde-arkasi-70.png
 ---
 
 Bilgisayarların zar atması sandığımız kadar gizemli değildir. Çoğu zaman makine, önceki bir sayıyı belirli sabitlerle işleyerek yeni bir sayı üretir. Lineer Kongrüansiyel Üreteç, yani LCG, bu yaklaşımın en eski ve anlaşılır örneklerinden biridir. Hızlı ve öğretici olmasına rağmen güvenlik söz konusu olduğunda bıraktığı matematiksel izler, onu dijital dünyanın fazlasıyla tahmin edilebilir falcısına dönüştürür.
+
+![lcgnin-perde-arkasi-70](/img/lcgnin-perde-arkasi-70.svg)
+
 ``
 
 ## LCG nasıl çalışır?

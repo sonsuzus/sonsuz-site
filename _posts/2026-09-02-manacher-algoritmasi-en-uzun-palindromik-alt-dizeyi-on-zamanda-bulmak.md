@@ -9,9 +9,13 @@ tags:
   - palindrom
   - algoritmalar
 toc: true
+image: /img/manacher-algoritmasi-en-81.png
 ---
 
 Bir metindeki en uzun palindromu bulmak, ilk bakışta her merkezden sağa ve sola yürümeyi gerektiren yorucu bir iş gibi görünür. Manacher algoritması ise daha önce incelenmiş palindromların simetrisinden yararlanarak aynı karakterleri tekrar tekrar karşılaştırmaz ve problemi doğrusal zamanda çözer. Küçük bir terminoloji notu: Algoritma, karakterlerin bitişik olduğu en uzun palindromik **alt dizeyi** bulur; palindromik alt dizi problemi farklıdır.
+
+
+![manacher-algoritmasi-en-81](/img/manacher-algoritmasi-en-81.svg)
 
 ``
 
