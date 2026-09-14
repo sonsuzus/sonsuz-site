@@ -9,7 +9,11 @@ tags:
   - nesne-yonelimli-programlama
   - solid
 toc: true
+image: /img/bagimlilik-enjeksiyonu-felsefesi-93.png
 ---
+
+![bagimlilik-enjeksiyonu-felsefesi-93](/img/bagimlilik-enjeksiyonu-felsefesi-93.svg)
+
 
 Bir sınıfın ihtiyaç duyduğu araçları kendi içinde üretmesi ilk bakışta pratik görünebilir. Ancak proje büyüdüğünde bu yaklaşım, sınıfları birbirine görünmez halatlarla bağlar. Bağımlılık Enjeksiyonu (Dependency Injection veya DI), bu halatları keserek nesnelerin ihtiyaçlarını dışarıdan almasını sağlar. Sonuç; daha modüler, değiştirilebilir ve test edilebilir bir yazılım mimarisidir.
 

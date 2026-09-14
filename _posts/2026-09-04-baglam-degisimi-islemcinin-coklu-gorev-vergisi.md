@@ -9,9 +9,13 @@ tags:
   - bağlam değişimi
   - performans
 toc: true
+image: /img/baglam-degisimi-islemcinin-40.png
 ---
 
 Bilgisayarınız müzik çalarken kod derliyor, bildirim gösteriyor ve onlarca tarayıcı sekmesini canlı tutuyor. İşlemci çekirdeği gerçekte aynı anda yalnızca sınırlı sayıda işi yürütür; işletim sistemi süreçleri hızla sıraya koyarak eşzamanlılık yanılsaması oluşturur. Bir süreçten diğerine geçiş ise ücretsiz değildir. Halk arasında “saniyelik duraklama” denilse de modern sistemlerde tek bir bağlam değişimi çoğunlukla nanosaniye veya mikrosaniye ölçeğindedir. Asıl sorun, bu küçük maliyetin saniyede binlerce kez tekrarlanmasıdır.
+
+![baglam-degisimi-islemcinin-40](/img/baglam-degisimi-islemcinin-40.svg)
+
 ``
 ## Bağlam değişiminde ne saklanır?
 

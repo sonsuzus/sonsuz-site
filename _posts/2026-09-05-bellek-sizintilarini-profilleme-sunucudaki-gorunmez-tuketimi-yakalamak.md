@@ -9,9 +9,13 @@ tags:
   - profiling
   - sunucu performansı
 toc: true
+image: /img/bellek-sizintilarini-profilleme-72.png
 ---
 
 Uzun süre çalışan bir sunucu uygulaması başlangıçta uslu bir ev arkadaşı gibi davranıp günler sonra bütün belleği işgal edebilir. Trafik sabitken RAM kullanımının sürekli yükselmesi, gecikmelerin artması ve sonunda sürecin işletim sistemi tarafından sonlandırılması tipik belirtilerdir. Neyse ki Linux ve popüler çalışma zamanlarının yerleşik araçları, uygulamayı hemen durdurmadan bu gizli tüketimi izlememizi sağlar.
+
+
+![bellek-sizintilarini-profilleme-72](/img/bellek-sizintilarini-profilleme-72.svg)
 
 ``
 

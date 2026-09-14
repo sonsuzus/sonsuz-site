@@ -9,7 +9,11 @@ tags:
   - api-güvenliği
   - leaky-bucket
 toc: true
+image: /img/api-trafigine-matematiksel-18.png
 ---
+
+![api-trafigine-matematiksel-18](/img/api-trafigine-matematiksel-18.svg)
+
 
 Bir API herkese açık bir kapıysa rate limiting, kapıdaki soğukkanlı güvenlik görevlisidir. İstemciler saniyeler içinde binlerce istek gönderdiğinde CPU, bellek, ağ bağlantıları ve veritabanı havuzu tükenebilir. Hız sınırlama algoritmaları, normal kullanıcıları cezalandırmadan bu trafik selini matematiksel kurallarla kontrol altında tutar.
 ``

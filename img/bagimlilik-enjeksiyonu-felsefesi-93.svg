@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="container" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e9fb"/>
+      <stop offset="100%" stop-color="#c6dcf5"/>
+    </linearGradient>
+    <linearGradient id="service" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eee4fb"/>
+      <stop offset="100%" stop-color="#dcd0f2"/>
+    </linearGradient>
+    <linearGradient id="interface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f2e8"/>
+      <stop offset="100%" stop-color="#c0e6d6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#657487" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#657487" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="77" cy="54" r="55" fill="#dcecfb" opacity="0.45"/>
+  <circle cx="574" cy="268" r="82" fill="#dcefd8" opacity="0.45"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#516276" font-weight="600">BAĞIMLILIK ENJEKSİYONU</text>
+  <line x1="32" y1="43" x2="608" y2="43" stroke="#cbd9e3" stroke-width="1"/>
+
+  <rect x="34" y="85" width="132" height="91" rx="18" fill="#f9dede" filter="url(#soft)"/>
+  <rect x="47" y="99" width="106" height="28" rx="10" fill="#efbfc2"/>
+  <text x="100" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70434a" font-weight="600">Sıkı Bağ</text>
+  <text x="100" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80565a">Kendi üretir</text>
+  <path d="M76 164 L100 139 L124 164" fill="none" stroke="#bb737b" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M91 158 L109 158" stroke="#bb737b" stroke-width="2.5" stroke-linecap="round"/>
+
+  <path d="M176 131 L208 131" stroke="#bd7980" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="208,131 199,126 199,136" fill="#bd7980"/>
+  <text x="190" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a3686e">değişim zor</text>
+
+  <rect x="218" y="73" width="172" height="115" rx="20" fill="url(#service)" filter="url(#shadow)"/>
+  <rect x="236" y="90" width="136" height="29" rx="10" fill="#c9b8e8"/>
+  <text x="304" y="109" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e456c" font-weight="600">Sipariş Servisi</text>
+  <text x="304" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62577b">İhtiyacını bildirir</text>
+  <text x="304" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62577b">Somutu bilmez</text>
+
+  <path d="M399 130 L425 130" stroke="#6b9b88" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="425,130 416,125 416,135" fill="#6b9b88"/>
+
+  <rect x="434" y="92" width="165" height="75" rx="18" fill="url(#interface)" filter="url(#shadow)"/>
+  <path d="M453 110 L465 110 M453 110 L453 147 M453 147 L465 147" fill="none" stroke="#5d9480" stroke-width="2"/>
+  <text x="526" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356b59" font-weight="600">Bildirim Arayüzü</text>
+  <text x="526" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a7e6d">Ortak sözleşme</text>
+
+  <rect x="74" y="224" width="132" height="60" rx="16" fill="url(#container)" filter="url(#soft)"/>
+  <circle cx="96" cy="244" r="9" fill="#82acd1"/>
+  <path d="M92 244 L95 247 L101 240" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="145" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385b79" font-weight="600">DI Konteyneri</text>
+  <text x="145" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54748f">Seçer ve verir</text>
+
+  <path d="M186 224 L250 190" stroke="#7099bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="250,190 240,190 245,199" fill="#7099bd"/>
+  <path d="M197 224 L452 174" stroke="#7099bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="452,174 442,171 444,181" fill="#7099bd"/>
+
+  <rect x="330" y="224" width="122" height="60" rx="16" fill="#fff1cf" filter="url(#soft)"/>
+  <circle cx="352" cy="245" r="9" fill="#e7b85e"/>
+  <path d="M348 245 L351 248 L357 241" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="399" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806129" font-weight="600">E-posta</text>
+  <text x="399" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#96763c">Gerçek uygulama</text>
+
+  <rect x="477" y="224" width="122" height="60" rx="16" fill="#f9ddea" filter="url(#soft)"/>
+  <circle cx="499" cy="245" r="9" fill="#d889ad"/>
+  <path d="M495 245 L498 248 L504 241" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="546" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#824865" font-weight="600">Sahte Gönderici</text>
+  <text x="546" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#996179">Test ikamesi</text>
+
+  <path d="M391 216 L432 174" stroke="#d0a654" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="432,174 422,177 429,184" fill="#d0a654"/>
+  <path d="M525 216 L535 175" stroke="#c77c9f" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="535,175 528,183 538,185" fill="#c77c9f"/>
+
+  <text x="320" y="307" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607384">Bağımlılığı üretme • dışarıdan al</text>
+</svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="serverGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#bdd8f7"/>
+    </linearGradient>
+    <linearGradient id="deviceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8f6ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6b89a6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6b89a6" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="122" fill="#dceefa" opacity="0.38"/>
+  <circle cx="320" cy="160" r="92" fill="none" stroke="#a9cce1" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.65"/>
+
+  <!-- Bağlantılar -->
+  <path d="M252 121 L177 77" fill="none" stroke="#7b9bb9" stroke-width="2"/>
+  <polygon points="181,76 171,74 176,83" fill="#7b9bb9"/>
+  <path d="M177 91 L251 135" fill="none" stroke="#64aa91" stroke-width="2"/>
+  <polygon points="246,136 256,138 251,129" fill="#64aa91"/>
+
+  <path d="M388 121 L463 77" fill="none" stroke="#7b9bb9" stroke-width="2"/>
+  <polygon points="459,83 469,74 459,76" fill="#7b9bb9"/>
+  <path d="M463 91 L389 135" fill="none" stroke="#64aa91" stroke-width="2"/>
+  <polygon points="389,129 384,138 394,136" fill="#64aa91"/>
+
+  <path d="M252 199 L177 243" fill="none" stroke="#7b9bb9" stroke-width="2"/>
+  <polygon points="176,237 171,246 181,244" fill="#7b9bb9"/>
+  <path d="M177 229 L251 185" fill="none" stroke="#64aa91" stroke-width="2"/>
+  <polygon points="251,191 256,182 246,184" fill="#64aa91"/>
+
+  <path d="M388 199 L463 243" fill="none" stroke="#7b9bb9" stroke-width="2"/>
+  <polygon points="459,244 469,246 464,237" fill="#7b9bb9"/>
+  <path d="M463 229 L389 185" fill="none" stroke="#64aa91" stroke-width="2"/>
+  <polygon points="394,184 384,182 389,191" fill="#64aa91"/>
+
+  <!-- Sol üst telefon -->
+  <g filter="url(#softShadow)">
+    <rect x="105" y="44" width="72" height="52" rx="14" fill="url(#deviceGrad)" stroke="#b9d8cc"/>
+    <rect x="128" y="51" width="26" height="34" rx="5" fill="#bfe6d4"/>
+    <rect x="132" y="56" width="18" height="16" rx="2" fill="#f7fffb"/>
+    <circle cx="141" cy="79" r="2.5" fill="#6ba990"/>
+  </g>
+  <text x="141" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456475">Telefon</text>
+
+  <!-- Sağ üst hastane -->
+  <g filter="url(#softShadow)">
+    <rect x="463" y="44" width="72" height="52" rx="14" fill="url(#deviceGrad)" stroke="#b9d8cc"/>
+    <rect x="481" y="57" width="36" height="26" rx="5" fill="#d2ebfa"/>
+    <rect x="496" y="61" width="6" height="18" rx="1" fill="#5f9dca"/>
+    <rect x="490" y="67" width="18" height="6" rx="1" fill="#5f9dca"/>
+  </g>
+  <text x="499" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456475">Hastane</text>
+
+  <!-- Sol alt IoT -->
+  <g filter="url(#softShadow)">
+    <rect x="105" y="224" width="72" height="52" rx="14" fill="url(#deviceGrad)" stroke="#b9d8cc"/>
+    <circle cx="141" cy="249" r="13" fill="#d7f0df" stroke="#79b596"/>
+    <path d="M141 238 L141 260 M130 249 L152 249" stroke="#69a98b" stroke-width="2"/>
+    <circle cx="141" cy="249" r="4" fill="#69a98b"/>
+  </g>
+  <text x="141" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456475">IoT cihazı</text>
+
+  <!-- Sağ alt banka -->
+  <g filter="url(#softShadow)">
+    <rect x="463" y="224" width="72" height="52" rx="14" fill="url(#deviceGrad)" stroke="#b9d8cc"/>
+    <path d="M480 246 L499 235 L518 246 Z" fill="#c8def6" stroke="#6f9fc9"/>
+    <rect x="483" y="247" width="32" height="14" rx="2" fill="#e7f2fc" stroke="#6f9fc9"/>
+    <path d="M488 248 L488 260 M496 248 L496 260 M504 248 L504 260 M511 248 L511 260" stroke="#6f9fc9" stroke-width="2"/>
+  </g>
+  <text x="499" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456475">Banka</text>
+
+  <!-- Merkez sunucu -->
+  <g filter="url(#shadow)">
+    <rect x="246" y="105" width="148" height="110" rx="24" fill="url(#serverGrad)" stroke="#8eb8dc" stroke-width="1.5"/>
+    <rect x="272" y="122" width="96" height="35" rx="10" fill="#f8fcff" opacity="0.92"/>
+    <ellipse cx="320" cy="132" rx="32" ry="7" fill="#a9ccea"/>
+    <path d="M288 132 L288 145 C288 149 302 152 320 152 C338 152 352 149 352 145 L352 132" fill="#cce2f5"/>
+    <ellipse cx="320" cy="145" rx="32" ry="7" fill="#b4d4ed"/>
+    <path d="M288 145 L288 149 C288 153 302 156 320 156 C338 156 352 153 352 149 L352 145" fill="#9fc7e5"/>
+    <rect x="270" y="170" width="100" height="28" rx="9" fill="#e9f5ed"/>
+    <path d="M287 184 C294 176 303 191 311 183 C318 175 327 191 336 182 C344 174 350 186 354 180" fill="none" stroke="#5b9f80" stroke-width="2"/>
+  </g>
+  <text x="320" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#315a73">FedAvg</text>
+  <text x="320" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315a73">Küresel model</text>
+
+  <!-- Etiketler -->
+  <g filter="url(#softShadow)">
+    <rect x="188" y="93" width="73" height="22" rx="11" fill="#edf6ff"/>
+    <rect x="379" y="93" width="73" height="22" rx="11" fill="#edf6ff"/>
+    <rect x="188" y="205" width="73" height="22" rx="11" fill="#eef9f2"/>
+    <rect x="379" y="205" width="73" height="22" rx="11" fill="#eef9f2"/>
+  </g>
+  <text x="224.5" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527590">Model</text>
+  <text x="415.5" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527590">Model</text>
+  <text x="224.5" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45846c">Güncelleme</text>
+  <text x="415.5" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45846c">Güncelleme</text>
+
+  <!-- Gizlilik rozeti -->
+  <g filter="url(#softShadow)">
+    <rect x="270" y="20" width="100" height="30" rx="15" fill="#fff7df" stroke="#ecd493"/>
+    <path d="M288 27 L296 30 L296 36 C296 41 292 44 288 46 C284 44 280 41 280 36 L280 30 Z" fill="#f3c967"/>
+    <path d="M285 36 L287 38 L292 33" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+  </g>
+  <text x="326" y="39" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79602b">Veri yerinde kalır</text>
+</svg>

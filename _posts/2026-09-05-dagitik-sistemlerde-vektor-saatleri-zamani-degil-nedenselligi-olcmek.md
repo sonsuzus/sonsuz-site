@@ -9,6 +9,7 @@ tags:
   - vektör saatleri
   - nedensellik
 toc: true
+image: /img/dagitik-sistemlerde-vektor-21.png
 ---
 
 Dağıtık bir sistemde herkesin baktığı kusursuz bir duvar saati yoktur. Düğümlerin fiziksel saatleri farklı hızlarda ilerleyebilir, ağ paketleri gecikebilir ve mesajlar gönderildikleri sıradan farklı bir sırada ulaşabilir. Vektör saatleri, “Saat kaç?” sorusunu cevaplamak yerine daha yararlı bir soruya odaklanır: “Bu olay, diğer olaydan önce mi gerçekleşti; yoksa ikisi birbirinden bağımsız mıydı?”
@@ -89,3 +90,6 @@ print(bob.snapshot())    # [1, 1, 0]
 ## Güçlü ama bedelsiz değil
 
 Vektör saatinin boyutu düğüm sayısıyla birlikte büyür. Dinamik üyeliğe sahip binlerce düğümlü sistemlerde depolama, aktarım ve düğüm kimliklerini temizleme maliyeti oluşur. Buna rağmen sürüm çatışmalarını bulmak, çoğaltılmış verileri uzlaştırmak ve olayların nedensel geçmişini izlemek için son derece değerlidir. Kısacası vektör saatleri zamanı ölçmez; dağıtık sistemin hafızasını düzenler.
+
+![dagitik-sistemlerde-vektor-21](/img/dagitik-sistemlerde-vektor-21.svg)
+

@@ -9,7 +9,11 @@ tags:
   - ses sinyali işleme
   - konuşma tanıma
 toc: true
+image: /img/ses-sinyali-islemede-41.png
 ---
+
+![ses-sinyali-islemede-41](/img/ses-sinyali-islemede-41.svg)
+
 
 Bir bilgisayar için konuşma, yalnızca zaman boyunca değişen sayılardan oluşur. İnsan kulağı ise bu değişimleri doğrusal biçimde algılamaz: düşük frekanslardaki küçük farklara oldukça duyarlıyken yüksek frekanslarda daha geniş aralıkları benzer kabul eder. **Mel-Frequency Cepstral Coefficients (MFCC)**, ses sinyalini bu algısal özelliğe göre sıkıştırarak konuşma tanıma algoritmalarının kullanabileceği kompakt öznitelik vektörlerine dönüştürür.
 ``

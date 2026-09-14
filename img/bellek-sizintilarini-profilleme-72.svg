@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="server" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8eaff"/>
+      <stop offset="100%" stop-color="#bddaf5"/>
+    </linearGradient>
+    <linearGradient id="alert" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe7c8"/>
+      <stop offset="100%" stop-color="#f8cfa8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7891a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7891a8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="38" r="68" fill="#dff1ee" opacity="0.48"/>
+  <circle cx="586" cy="274" r="91" fill="#e5e9ff" opacity="0.46"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536d">BELLEK SIZINTISI PROFİLİ</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72869a">Dış gözlem → karşılaştırma → kök neden</text>
+
+  <!-- Left monitor -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="78" width="160" height="164" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="28" y="78" width="160" height="34" rx="18" fill="#dff1ed"/>
+  <rect x="28" y="95" width="160" height="17" fill="#dff1ed"/>
+  <circle cx="48" cy="95" r="6" fill="#63b99f"/>
+  <text x="61" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d59">Dış Gözlem</text>
+  <text x="45" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7180">RSS ve RssAnon</text>
+
+  <line x1="46" y1="209" x2="166" y2="209" stroke="#a7b9c3" stroke-width="1.5"/>
+  <line x1="46" y1="151" x2="46" y2="209" stroke="#a7b9c3" stroke-width="1.5"/>
+  <path d="M52 197 C67 196,72 194,84 191 S101 187,111 178 S128 165,138 148 S153 125,162 121" fill="none" stroke="#ee8164" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="52" cy="197" r="3.5" fill="#ee8164"/>
+  <circle cx="84" cy="191" r="3.5" fill="#ee8164"/>
+  <circle cx="111" cy="178" r="3.5" fill="#ee8164"/>
+  <circle cx="138" cy="148" r="3.5" fill="#ee8164"/>
+  <circle cx="162" cy="121" r="3.5" fill="#ee8164"/>
+  <text x="47" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e36f56">Sürekli artış</text>
+
+  <!-- Arrow left to center -->
+  <line x1="198" y1="160" x2="236" y2="160" stroke="#83a5af" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="236,160 227,154 227,166" fill="#83a5af"/>
+  <text x="197" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8290">izle</text>
+
+  <!-- central server -->
+  <g filter="url(#shadow)">
+    <rect x="246" y="92" width="150" height="137" rx="22" fill="url(#server)"/>
+  </g>
+  <rect x="267" y="112" width="108" height="20" rx="8" fill="#ffffff" opacity="0.72"/>
+  <circle cx="281" cy="122" r="5" fill="#65b795"/>
+  <rect x="292" y="117" width="66" height="9" rx="4.5" fill="#7194ad" opacity="0.72"/>
+  <rect x="267" y="143" width="108" height="51" rx="12" fill="#ffffff" opacity="0.62"/>
+  <rect x="281" y="156" width="21" height="25" rx="5" fill="#92bde2"/>
+  <rect x="309" y="150" width="21" height="31" rx="5" fill="#ef9574"/>
+  <rect x="337" y="146" width="21" height="35" rx="5" fill="#e76d5d"/>
+  <text x="276" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365d79">Sunucu Süreci</text>
+
+  <!-- arrow center to right -->
+  <line x1="406" y1="160" x2="438" y2="160" stroke="#83a5af" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="438,160 429,154 429,166" fill="#83a5af"/>
+
+  <!-- right profiler -->
+  <g filter="url(#shadow)">
+    <rect x="448" y="78" width="164" height="164" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="448" y="78" width="164" height="34" rx="18" fill="#eee5fb"/>
+  <rect x="448" y="95" width="164" height="17" fill="#eee5fb"/>
+  <circle cx="468" cy="95" r="6" fill="#9876c9"/>
+  <text x="481" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b477c">İç Profilleme</text>
+
+  <rect x="464" y="126" width="56" height="72" rx="10" fill="#f4f0fb" stroke="#d9cbed"/>
+  <rect x="471" y="135" width="28" height="6" rx="3" fill="#a98cda"/>
+  <rect x="471" y="148" width="39" height="5" rx="2.5" fill="#c3b0e3"/>
+  <rect x="471" y="160" width="33" height="5" rx="2.5" fill="#c3b0e3"/>
+  <rect x="471" y="172" width="42" height="12" rx="4" fill="#e88970"/>
+  <text x="469" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b5785">İlk anlık</text>
+
+  <rect x="538" y="126" width="56" height="72" rx="10" fill="#f4f0fb" stroke="#d9cbed"/>
+  <rect x="545" y="135" width="28" height="6" rx="3" fill="#a98cda"/>
+  <rect x="545" y="148" width="39" height="5" rx="2.5" fill="#c3b0e3"/>
+  <rect x="545" y="160" width="39" height="5" rx="2.5" fill="#c3b0e3"/>
+  <rect x="545" y="172" width="42" height="18" rx="4" fill="#e06458"/>
+  <text x="539" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b5785">Son anlık</text>
+
+  <line x1="524" y1="162" x2="533" y2="162" stroke="#9478bc" stroke-width="1.8"/>
+  <polygon points="533,162 527,158 527,166" fill="#9478bc"/>
+
+  <!-- lower workflow -->
+  <line x1="321" y1="239" x2="321" y2="258" stroke="#83a5af" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="321,258 315,249 327,249" fill="#83a5af"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="169" y="266" width="136" height="36" rx="14" fill="#dcefe9"/>
+    <rect x="337" y="266" width="136" height="36" rx="14" fill="#ffe5c4"/>
+  </g>
+  <circle cx="190" cy="284" r="9" fill="#65b99d"/>
+  <path d="M186 284 L189 287 L195 280" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="205" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416c65">Eğilimi doğrula</text>
+
+  <circle cx="358" cy="284" r="9" fill="#e98768"/>
+  <path d="M358 279 L358 285 M358 289 L358 289.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="373" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#885541">Büyüyen türü bul</text>
+
+  <line x1="305" y1="284" x2="327" y2="284" stroke="#83a5af" stroke-width="2"/>
+  <polygon points="327,284 318,278 318,290" fill="#83a5af"/>
+</svg>

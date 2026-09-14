@@ -9,7 +9,11 @@ tags:
   - bit maskesi
   - held-karp
 toc: true
+image: /img/gezgin-satici-problemini-95.png
 ---
+
+![gezgin-satici-problemini-95](/img/gezgin-satici-problemini-95.svg)
+
 
 Bir satıcının belirli şehirlerin tümünü tam bir kez ziyaret edip başladığı şehre dönmesi gerekiyor. Üstelik toplam yol mümkün olduğunca kısa olmalı! Gezgin Satıcı Problemi, yani TSP, tanımı basit fakat çözümü hesaplama açısından oldukça zorlu bir optimizasyon problemidir. Held-Karp algoritması ise gereksiz rota tekrarlarını ortadan kaldırarak faktöriyel aramayı dinamik programlama ve bit maskeleri yardımıyla daha yönetilebilir bir üstel çözüme dönüştürür.
 

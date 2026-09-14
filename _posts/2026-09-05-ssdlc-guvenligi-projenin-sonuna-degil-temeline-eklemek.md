@@ -9,6 +9,7 @@ tags:
   - siber güvenlik
   - tehdit modelleme
 toc: true
+image: /img/ssdlc-guvenligi-projenin-77.png
 ---
 
 Bir uygulamayı tamamladıktan sonra güvenlik testi yapmak, evi inşa edip anahtarı teslim ettikten sonra kapısının olmadığını fark etmeye benzer. Güvenli Yazılım Geliştirme Yaşam Döngüsü veya kısaca SSDLC, güvenliği son dakikada eklenen bir kontrol olmaktan çıkarır; planlama, tasarım, geliştirme, test, dağıtım ve bakım aşamalarının tamamına yerleştirir.
@@ -81,3 +82,6 @@ security-checks:
 Bu örnek, yüksek riskli bağımlılık bulunduğunda derlemeyi durdurur; kaynak kodu ve depo geçmişindeki yanlışlıkla eklenmiş anahtarları tarar.
 
 SSDLC'nin amacı sıfır risk vaadi vermek değildir. Amaç, riskleri erken görünür kılmak, bilinçli kararlar almak ve güvenliği yalnızca “güvenlikçilerin işi” olmaktan çıkarmaktır. En iyi başlangıç; küçük bir tehdit modelleme oturumu, net güvenlik gereksinimleri ve otomatik taramalarla yapılabilir. Güvenli ürünler finalde cilalanmaz, ilk çizgiden itibaren tasarlanır.
+
+![ssdlc-guvenligi-projenin-77](/img/ssdlc-guvenligi-projenin-77.svg)
+

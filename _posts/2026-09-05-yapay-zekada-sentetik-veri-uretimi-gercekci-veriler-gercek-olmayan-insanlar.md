@@ -9,9 +9,13 @@ tags:
   - yapay zekâ
   - veri gizliliği
 toc: true
+image: /img/yapay-zekada-sentetik-27.png
 ---
 
 Bir yapay zekâ modelini eğitmek için binlerce sağlık kaydına ihtiyacınız olduğunu, ancak gizlilik yasaları nedeniyle bu kayıtlara dokunamadığınızı düşünün. Çözüm, gerçek kişileri temsil etmeyen fakat gerçek verinin istatistiksel davranışlarını taklit eden sentetik veri üretmektir. Böylece Ayşe Hanım’ın tansiyonunu paylaşmadan, toplumdaki tansiyon dağılımını modellemek mümkün olur.
+
+![yapay-zekada-sentetik-27](/img/yapay-zekada-sentetik-27.svg)
+
 ``
 
 ## Sentetik veri tam olarak nedir?

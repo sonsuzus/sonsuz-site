@@ -9,6 +9,7 @@ tags:
   - üretkenlik
   - ıde
 toc: true
+image: /img/kod-akisini-korumak-51.png
 ---
 
 Bir geliştirici için dikkat dağınıklığı yalnızca telefona bakmak değildir; açık sekmeler, derleme bildirimleri, Slack mesajları ve “şu fonksiyonu da düzelteyim” dürtüsü aynı zihinsel kaynakları tüketir. Pomodoro tekniğini doğrudan IDE içerisine taşımak, zamanı ölçmekten çok çalışma sınırlarını görünür hâle getirir. Böylece zamanlayıcı, kod yazarken sürekli pazarlık yaptığımız beynimize küçük ama etkili bir çalışma sözleşmesi sunar.
@@ -38,6 +39,9 @@ Zamanlayıcının IDE içinde bulunması, çalışma bağlamını terk etme ihti
 | Masaüstü uygulaması | Ayrıntılı rapor sunar | Pencere geçişi gerektirir |
 | IDE eklentisi | Kod bağlamını korur | Çok fazla bildirim üretebilir |
 | Manuel saat takibi | Tamamen özelleştirilebilir | Disiplin ve hatırlama gerektirir |
+
+![kod-akisini-korumak-51](/img/kod-akisini-korumak-51.svg)
+
 
 İyi bir IDE entegrasyonu yalnızca geri sayım göstermelidir. Her saniye yanıp sönen sayaç, odak aracı olmaktan çıkıp kaygı aracına dönüşebilir. Durum çubuğunda sakin bir gösterge, döngü sonunda tek bildirim ve isteğe bağlı ses çoğu geliştirici için yeterlidir.
 

@@ -9,7 +9,11 @@ tags:
   - takım-kültürü
   - yazılım-kalitesi
 toc: true
+image: /img/kod-inceleme-kulturu-79.png
 ---
+
+![kod-inceleme-kulturu-79](/img/kod-inceleme-kulturu-79.svg)
+
 
 Kod inceleme, yalnızca hataları yakalamak için açılan teknik bir kontrol kapısı değildir; bilginin ekip içinde dolaşmasını, ortak standartların oluşmasını ve geliştiricilerin birbirinden öğrenmesini sağlayan sosyal bir sistemdir. Ancak yanlış kurulduğunda “Bu kod kötü” cümlesi kolayca “Sen kötü bir geliştiricisin” şeklinde algılanabilir. Sağlıklı bir kültürün temel amacı, insanları yargılamak değil ürünü birlikte iyileştirmektir.
 ``

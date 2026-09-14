@@ -9,6 +9,7 @@ tags:
   - aktivasyon fonksiyonları
   - derin öğrenme
 toc: true
+image: /img/yapay-sinir-aglarinda-83.png
 ---
 
 ReLU yıllarca yapay sinir ağlarının çalışkan kahramanı oldu: basit, hızlı ve çoğu zaman yeterince başarılı. Ancak negatif değerleri tamamen silmesi ve türevinin bazı bölgelerde sıfıra düşmesi, araştırmacıları daha yumuşak alternatiflere yöneltti. Swish ve Mish bu arayışın öne çıkan sonuçlarıdır. Üstel fonksiyon içermelerine rağmen modern işlemcilerde vektörleştirme, çekirdek birleştirme ve yaklaşık hesaplama sayesinde oldukça verimli uygulanabilirler.
@@ -94,3 +95,6 @@ Bu kod aynı tensöre üç aktivasyon uygular. Sağlıklı süre ölçümü içi
 ## Hangisini seçmeli?
 
 Swish çoğu modern mimaride doğruluk ile maliyet arasında güçlü bir dengedir. Mish bazı veri kümelerinde küçük kazanımlar sağlayabilir, ancak sonucu mimariye ve donanıma bağlıdır. Gecikmenin kritik olduğu mobil projelerde ReLU veya Hard-Swish daha mantıklıdır. Kısacası en havalı formülü değil, doğrulama başarısı, enerji tüketimi ve gerçek cihaz gecikmesi birlikte en iyi olan aktivasyonu seçmek gerekir.
+
+![yapay-sinir-aglarinda-83](/img/yapay-sinir-aglarinda-83.svg)
+

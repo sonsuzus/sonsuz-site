@@ -9,6 +9,7 @@ tags:
   - veri madenciliği
   - market sepeti analizi
 toc: true
+image: /img/veri-madenciliginde-apriori-26.png
 ---
 
 Bir müşterinin ekmek ve peynir alırken sepete zeytin de eklemesi tesadüf mü, yoksa tekrar eden bir alışveriş davranışı mı? Apriori algoritması, binlerce işlem kaydının arkasına saklanan bu tür ilişkileri keşfetmek için kullanılan frekans tabanlı bir yöntemdir. Market sepeti analiziyle özdeşleşse de öneri sistemlerinden web kullanım analizine kadar pek çok alanda karşımıza çıkar.
@@ -92,3 +93,6 @@ print(rules[['antecedents', 'consequents',
 | Etiketli veriye ihtiyaç duymaz. | Nadir fakat değerli ilişkileri kaçırabilir. |
 
 Apriori sonuçları doğrudan “A ürününü alan herkese B ürününü sat” emri değildir. Kampanya maliyeti, kâr marjı, mevsimsellik ve stok durumu da hesaba katılmalıdır. Yine de algoritma, alışveriş fişlerini sessiz bir veri yığınından çıkarıp anlaşılır davranış ipuçlarına dönüştürür. Kısacası Apriori, müşterinin sepetine bakıp yalnızca ne aldığını değil, ürünlerin neden yan yana gelmiş olabileceğini sorgulayan meraklı bir veri dedektifidir.
+
+![veri-madenciliginde-apriori-26](/img/veri-madenciliginde-apriori-26.svg)
+

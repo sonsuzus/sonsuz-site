@@ -9,7 +9,11 @@ tags:
   - boyut indirgeme
   - özellik mühendisliği
 toc: true
+image: /img/makine-ogrenmesinde-boyut-23.png
 ---
+
+![makine-ogrenmesinde-boyut-23](/img/makine-ogrenmesinde-boyut-23.svg)
+
 
 Bir veri setine yeni özellik eklemek ilk bakışta modele daha fazla bilgi vermek demektir. Yaş ve gelir faydalıysa meslek, şehir ve alışveriş geçmişi de faydalı olmaz mı? Ne yazık ki özellik sayısı büyüdükçe veri uzayı akıl almaz bir hızla genişler. Örnekler birbirinden uzaklaşır, benzerlik ölçümleri anlamını kaybeder ve model, kalabalık görünen bir veri setinde adeta tek başına kalır. İşte bu olaya **boyut laneti** denir.
 

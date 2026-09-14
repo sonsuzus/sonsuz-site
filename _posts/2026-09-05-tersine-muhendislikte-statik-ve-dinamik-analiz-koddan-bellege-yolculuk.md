@@ -9,6 +9,7 @@ tags:
   - statik analiz
   - dinamik analiz
 toc: true
+image: /img/tersine-muhendislikte-statik-66.png
 ---
 
 Elinizde kaynak kodu olmayan derlenmiş bir program bulunduğunu düşünün. Program çalışıyor, dosyalar okuyor ve hesaplamalar yapıyor; fakat içeride neler döndüğünü bilmiyorsunuz. Tersine mühendislik, bu kapalı kutunun davranışını assembly kodu, decompiler çıktısı ve çalışma zamanı gözlemleri üzerinden anlamaya çalışır. Elbette bu teknikler yalnızca size ait veya inceleme izniniz bulunan yazılımlarda kullanılmalıdır.
@@ -90,3 +91,6 @@ Bellekteki bir adresi raf numarası gibi düşünebilirsiniz. Pointer bu rafın 
 Önce dosya türü, mimari, metinler ve içe aktarılan fonksiyonlar belirlenir. Ardından decompiler ile dikkat çeken fonksiyonlar incelenir ve anlamlı isimlerle etiketlenir. Son olarak program izole bir laboratuvar ortamında debugger ile çalıştırılarak varsayımlar doğrulanır.
 
 En önemli kural şudur: Decompiler çıktısına körü körüne inanmayın, debugger’da gördüğünüz tek bir yürütme yolunu da bütün program sanmayın. Statik harita ile dinamik kanıt birleştiğinde kapalı kutu yavaş yavaş şeffaflaşır.
+
+![tersine-muhendislikte-statik-66](/img/tersine-muhendislikte-statik-66.svg)
+

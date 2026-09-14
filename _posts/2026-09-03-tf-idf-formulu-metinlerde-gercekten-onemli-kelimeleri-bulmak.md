@@ -9,9 +9,13 @@ tags:
   - metin sınıflandırma
   - doğal dil işleme
 toc: true
+image: /img/tf-idf-formulu-86.png
 ---
 
 Bir metinde en çok geçen kelime, her zaman en önemli kelime değildir. Örneğin “ve”, “bir” veya “için” yüzlerce belgede sıkça görülebilir; ancak bu kelimeler bize belgenin konusu hakkında pek ipucu vermez. TF-IDF, bir kelimenin belge içindeki sıklığı ile bütün veri kümesindeki nadirliği arasında denge kurarak ayırt edici kelimeleri öne çıkarır.
+
+![tf-idf-formulu-86](/img/tf-idf-formulu-86.svg)
+
 ``
 ## Temel fikir: Sıklık tek başına yeterli değil
 

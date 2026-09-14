@@ -9,7 +9,11 @@ tags:
   - kalman filtresi
   - sensör verisi
 toc: true
+image: /img/sensor-sicramalarini-yumusatmak-82.png
 ---
+
+![sensor-sicramalarini-yumusatmak-82](/img/sensor-sicramalarini-yumusatmak-82.svg)
+
 
 Bir sıcaklık sensörünün 22,1 °C gösterirken aniden 47 °C’ye çıkıp sonraki ölçümde normale döndüğünü düşünün. Ortam bir saniyede tropik adaya dönüşmediğine göre karşımızda büyük olasılıkla elektriksel parazit, haberleşme hatası veya ölçüm gürültüsü vardır. Bu sıçramaları azaltmanın iki popüler yolu hareketli ortalama ve Kalman filtresidir.
 ``

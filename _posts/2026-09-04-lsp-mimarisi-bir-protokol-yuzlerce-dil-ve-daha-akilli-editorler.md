@@ -9,7 +9,11 @@ tags:
   - editör
   - yazılım mimarisi
 toc: true
+image: /img/lsp-mimarisi-bir-61.png
 ---
+
+![lsp-mimarisi-bir-61](/img/lsp-mimarisi-bir-61.svg)
+
 
 Bir zamanlar her kod editörünün, desteklediği her programlama dili için ayrı bir eklenti geliştirmesi gerekiyordu. Kod tamamlama, hata tespiti ve sembol bulma gibi özellikler editör ile dil arasında tekrar tekrar yazılıyordu. Language Server Protocol, yani LSP, bu zahmetli ilişkiye standart bir iletişim katmanı ekleyerek modern editörlerin yüzlerce dili destekleyebilmesini sağladı.
 ``

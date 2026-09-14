@@ -9,6 +9,7 @@ tags:
   - planning poker
   - yazılım tahminleme
 toc: true
+image: /img/cevik-poker-capa-45.png
 ---
 
 Bir geliştirici “Bu iş iki gün sürer” dediğinde odadaki herkes farkında olmadan iki gün çevresinde düşünmeye başlayabilir. İlk söylenen sayı, teknik bir hesaplamadan çok zihinsel bir mıknatısa dönüşür. Çevik Poker veya yaygın adıyla Planning Poker, tahminleri aynı anda ve gizlice açıklatarak bu **çapa etkisini** azaltan ekip tabanlı bir yöntemdir.
@@ -80,3 +81,6 @@ Kod, oyları açıklamadan önce tüm ekip üyelerinden toplar. Böylece sonraki
 Planning Poker bir pazarlık veya performans ölçme aracı değildir. Ürün sahibi gereksinimleri açıklayabilir ancak ekibe belirli bir kartı dayatmamalıdır. Görev 13 ya da 21 puana çıkıyorsa daha küçük parçalara bölünmesi düşünülmelidir. Ayrıca ekiplerin puanları birbirleriyle karşılaştırılmamalıdır; bir ekibin 5 puanı başka bir ekibin 8 puanına denk gelebilir.
 
 En değerli çıktı kartın üzerindeki sayı değil, sayı farklarının başlattığı konuşmadır. Çevik Poker geleceği kusursuz biçimde tahmin etmez; fakat bağımsız düşünmeyi korur, gizli varsayımları görünür kılar ve ekibin belirsizlik hakkında ortak bir dil geliştirmesine yardımcı olur.
+
+![cevik-poker-capa-45](/img/cevik-poker-capa-45.svg)
+

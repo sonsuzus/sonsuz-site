@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8c83c9"/>
+      <stop offset="100%" stop-color="#759bc9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#55708b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55708b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="85" cy="53" r="54" fill="#dceef7" opacity="0.55"/>
+  <circle cx="565" cy="272" r="76" fill="#dff0d9" opacity="0.48"/>
+
+  <rect x="22" y="20" width="184" height="50" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="48" cy="45" r="13" fill="#dfe6fb"/>
+  <path d="M42 48 L47 53 L56 39" fill="none" stroke="#7174b5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="41" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42556a" font-weight="700">Hiyerarşik Kümeleme</text>
+  <text x="70" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b8b9b">Benzerden bütüne</text>
+
+  <rect x="434" y="20" width="184" height="50" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <path d="M456 51 V37 H474 V30" fill="none" stroke="#78a18f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M456 44 H488 V34 H503" fill="none" stroke="#78a18f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="456" cy="53" r="4" fill="#a7d7bc"/>
+  <circle cx="474" cy="28" r="4" fill="#a7d7bc"/>
+  <circle cx="505" cy="34" r="4" fill="#a7d7bc"/>
+  <text x="520" y="41" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42556a" font-weight="700">Dendrogram</text>
+  <text x="520" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b8b9b">Soy ağacı</text>
+
+  <rect x="218" y="89" width="204" height="44" rx="15" fill="#e8e4fb" filter="url(#shadow)"/>
+  <circle cx="243" cy="111" r="11" fill="#c6bdeb"/>
+  <path d="M238 111 H248 M243 106 V116" stroke="#635b9f" stroke-width="2" stroke-linecap="round"/>
+  <text x="263" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d467e" font-weight="700">Tek büyük küme</text>
+
+  <path d="M320 133 V148 M194 148 H446 M194 148 V162 M446 148 V162" fill="none" stroke="url(#trunk)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="128" y="162" width="132" height="38" rx="14" fill="#dceefa" filter="url(#smallShadow)"/>
+  <text x="194" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38627c" font-weight="700">Küme A</text>
+  <rect x="380" y="162" width="132" height="38" rx="14" fill="#e0f2de" filter="url(#smallShadow)"/>
+  <text x="446" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477353" font-weight="700">Küme B</text>
+
+  <path d="M194 200 V211 M151 211 H237 M151 211 V226 M237 211 V226" fill="none" stroke="#739bc0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M446 200 V211 M403 211 H489 M403 211 V226 M489 211 V226" fill="none" stroke="#7cab87" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M92 220 H548" stroke="#e78e91" stroke-width="2" stroke-dasharray="7 5" opacity="0.95"/>
+  <rect x="504" y="207" width="100" height="25" rx="10" fill="#fff4f3" filter="url(#smallShadow)"/>
+  <text x="554" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#bd6268" font-weight="700">Kesim seviyesi</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="118" y="232" width="66" height="50" rx="14" fill="#ffffff"/>
+    <rect x="204" y="232" width="66" height="50" rx="14" fill="#ffffff"/>
+    <rect x="370" y="232" width="66" height="50" rx="14" fill="#ffffff"/>
+    <rect x="456" y="232" width="66" height="50" rx="14" fill="#ffffff"/>
+  </g>
+
+  <circle cx="151" cy="248" r="8" fill="#a9d4ec"/>
+  <circle cx="237" cy="248" r="8" fill="#a9d4ec"/>
+  <circle cx="403" cy="248" r="8" fill="#b6ddb7"/>
+  <circle cx="489" cy="248" r="8" fill="#b6ddb7"/>
+  <text x="151" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6477">Veri 1</text>
+  <text x="237" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6477">Veri 2</text>
+  <text x="403" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6477">Veri 3</text>
+  <text x="489" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6477">Veri 4</text>
+
+  <path d="M38 289 H602" stroke="#cbdce1" stroke-width="1"/>
+  <circle cx="158" cy="302" r="5" fill="#a9d4ec"/>
+  <text x="169" y="306" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687c8c">Yakın benzerlik</text>
+  <path d="M295 302 H324" stroke="#8d86bd" stroke-width="3" stroke-linecap="round"/>
+  <text x="334" y="306" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687c8c">Birleşme</text>
+  <path d="M455 302 H484" stroke="#e78e91" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="494" y="306" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687c8c">Küme sayısı</text>
+</svg>

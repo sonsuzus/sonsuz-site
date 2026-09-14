@@ -9,6 +9,7 @@ tags:
   - bilgisayar ağları
   - internet politikaları
 toc: true
+image: /img/ag-tarafsizligi-internetin-27.png
 ---
 
 Bir video izlerken görüntünün donduğunu, aynı anda servis sağlayıcınızın kendi video platformunun kusursuz çalıştığını düşünün. Bu durum teknik bir arızadan çok daha fazlası olabilir: Ağ tarafsızlığı tartışmasının tam merkezindesiniz. Ağ tarafsızlığı, internet servis sağlayıcılarının paketleri kaynağına, hedefine, içeriğine veya uygulamasına göre haksız biçimde engellememesi, yavaşlatmaması ya da ücretli “hızlı şeritlere” ayırmaması ilkesidir.
@@ -76,3 +77,6 @@ Ağ tarafsızlığı yalnızca mühendislerin yönlendirici ayarlarından ibaret
 Konu ifade özgürlüğüyle de bağlantılıdır. Servis sağlayıcının haber sitelerini, toplumsal hareketleri veya belirli görüşleri yavaşlatabilmesi, altyapı sahibine editoryal güce benzeyen bir yetki verir. Öte yandan sağlayıcılar, kapasite yatırımlarını finanse edebilmek için fiyatlandırma esnekliği gerektiğini savunur.
 
 Sağlıklı bir yaklaşım; şeffaflık, bağımsız denetim, kullanıcıya gerçek seçim hakkı ve teknik olarak gerekçelendirilebilir trafik yönetimini birlikte gerektirir. İnternetin eşitliği, her paketin fiziksel olarak aynı hızda gitmesi değil, dijital yolların kurallarının adil, açık ve kötüye kullanıma kapalı olmasıdır.
+
+![ag-tarafsizligi-internetin-27](/img/ag-tarafsizligi-internetin-27.svg)
+

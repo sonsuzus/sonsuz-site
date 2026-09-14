@@ -9,6 +9,7 @@ tags:
   - linter
   - python ve c++
 toc: true
+image: /img/kodun-trafik-polisi-11.png
 ---
 
 Bir ekipte herkes çalışan kod yazabilir; asıl mesele, herkesin okuyabildiği ve güvenle değiştirebildiği kod yazmaktır. Girintilerden değişken adlarına, kullanılmayan importlardan olası bellek hatalarına kadar pek çok ayrıntıyı otomatik denetleyen linter araçları, kod incelemelerini küçük tartışmalardan kurtarıp mimari kararlara odaklar. Kısacası linter, yalnızca kodun trafik polisi değil, ekibin sessiz kalite koçudur.
@@ -31,6 +32,9 @@ Burada linter ve otomatik biçimlendiriciler $T_{biçim}$ süresini küçültür
 | Yalnızca kod incelemesi yapmak | İnsan bağlamı anlayabilir | Tekrarlayan kontroller zaman kaybettirir |
 | Linter ve formatlayıcı kullanmak | Hızlı, tarafsız ve tekrarlanabilirdir | İlk yapılandırma emek ister |
 | CI üzerinde zorunlu denetim | Hatalı kodun birleşmesini önler | Fazla katı kurallar akışı yavaşlatabilir |
+
+![kodun-trafik-polisi-11](/img/kodun-trafik-polisi-11.svg)
+
 
 ## Python tarafındaki araçlar
 

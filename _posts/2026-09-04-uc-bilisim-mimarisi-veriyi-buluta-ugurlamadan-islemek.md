@@ -9,7 +9,11 @@ tags:
   - edge computing
   - dağıtık sistemler
 toc: true
+image: /img/uc-bilisim-mimarisi-33.png
 ---
+
+![uc-bilisim-mimarisi-33](/img/uc-bilisim-mimarisi-33.svg)
+
 
 Akıllı bir kamera düşünün: Karşıdan gelen yayayı fark etmek için görüntüyü kilometrelerce uzaktaki buluta gönderip yanıt bekliyor. İnternet kısa süreliğine yavaşlarsa kamera da düşünme molasına çıkıyor! Uç bilişim, veriyi üretildiği cihazda veya yakındaki bir ağ düğümünde işleyerek bu bağımlılığı azaltır. Böylece daha hızlı kararlar, daha düşük bant genişliği tüketimi ve daha güçlü veri gizliliği elde edilir.
 

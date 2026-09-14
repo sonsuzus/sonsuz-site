@@ -9,9 +9,13 @@ tags:
   - iş sürekliliği
   - veri yedekleme
 toc: true
+image: /img/bilisim-projelerinde-felaket-30.png
 ---
 
 Sunucu odasını su bastığını, kritik verilerin yanlışlıkla silindiğini veya fidye yazılımının tüm sistemleri şifrelediğini düşünün. Böyle bir anda “Yedeğimiz vardı galiba” cümlesi pek güven vermez. Felaket Kurtarma Planı, yani Disaster Recovery Plan (DRP), bilişim sistemlerini önceden belirlenen süre ve veri kaybı sınırları içerisinde alternatif bir ortamda yeniden çalıştırmak için hazırlanan teknik ve operasyonel yol haritasıdır.
+
+![bilisim-projelerinde-felaket-30](/img/bilisim-projelerinde-felaket-30.svg)
+
 ``
 
 ## DRP tam olarak neyi çözer?

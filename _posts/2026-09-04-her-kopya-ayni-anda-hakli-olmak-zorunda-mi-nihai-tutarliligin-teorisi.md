@@ -9,7 +9,11 @@ tags:
   - eventual consistency
   - cap teoremi
 toc: true
+image: /img/her-kopya-ayni-30.png
 ---
+
+![her-kopya-ayni-30](/img/her-kopya-ayni-30.svg)
+
 
 Bir veritabanında yazdığımız değeri hemen ardından okuyabilmek doğal bir beklentidir. Ancak veri farklı sunuculara, bölgelere ve hatta kıtalara yayıldığında “hemen” kelimesi pahalılaşır. Dağıtık sistemler bu nedenle bazen bütün kopyaları anında eşitlemek yerine kısa süreli görüş ayrılıklarına izin verir. Nihai tutarlılık, sistem sakinleştiğinde tüm kopyaların aynı değerde buluşacağını garanti eden bu pragmatik yaklaşımın adıdır.
 ``

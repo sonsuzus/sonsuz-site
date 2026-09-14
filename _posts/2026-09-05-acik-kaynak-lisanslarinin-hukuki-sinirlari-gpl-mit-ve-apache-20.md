@@ -9,9 +9,13 @@ tags:
   - yazılım lisansları
   - gpl mıt apache
 toc: true
+image: /img/acik-kaynak-lisanslarinin-17.png
 ---
 
 Bir GitHub deposundaki “open source” etiketi, yazılımı istediğiniz gibi kullanabileceğiniz anlamına gelmez. GPL, MIT ve Apache 2.0 lisanslarının üçü de ticari kullanıma izin verir; ancak kaynak kodunu paylaşma, telif bildirimlerini koruma, patent hakları ve türev eserlerin dağıtımı konusunda farklı yükümlülükler doğurur. Kısacası lisans dosyası, projenin sıkıcı aksesuarı değil, kullanım sözleşmesidir.
+
+![acik-kaynak-lisanslarinin-17](/img/acik-kaynak-lisanslarinin-17.svg)
+
 ``
 
 ## Önce temel denklem: Haklar ve yükümlülükler

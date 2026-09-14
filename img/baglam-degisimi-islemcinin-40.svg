@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dce9ff"/>
+      <stop offset="100%" stop-color="#c9dcf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6380a0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6b8495" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="150" r="116" fill="#dbeef3" opacity="0.34"/>
+  <circle cx="320" cy="150" r="87" fill="none" stroke="#b9d3dd" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">BAĞLAM DEĞİŞİMİ</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718494">çoklu görevin görünmez maliyeti</text>
+
+  <path d="M180 110 C203 96 219 92 239 96" fill="none" stroke="#8ba6ba" stroke-width="2"/>
+  <polygon points="239,96 231,91 232,101" fill="#8ba6ba"/>
+  <path d="M401 96 C422 92 438 97 459 110" fill="none" stroke="#8ba6ba" stroke-width="2"/>
+  <polygon points="459,110 451,102 448,112" fill="#8ba6ba"/>
+  <path d="M180 190 C202 207 218 211 239 205" fill="none" stroke="#8ba6ba" stroke-width="2"/>
+  <polygon points="239,205 232,200 231,210" fill="#8ba6ba"/>
+  <path d="M401 205 C422 211 438 207 459 190" fill="none" stroke="#8ba6ba" stroke-width="2"/>
+  <polygon points="459,190 448,188 451,198" fill="#8ba6ba"/>
+
+  <g filter="url(#soft)">
+    <rect x="58" y="77" width="124" height="64" rx="16" fill="#fff4d9"/>
+    <circle cx="82" cy="100" r="11" fill="#f3c96d"/>
+    <path d="M78 100h8M82 96v8" stroke="#8b6a27" stroke-width="1.5"/>
+    <text x="101" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#66532d">Süreç A</text>
+    <text x="76" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#887750">çalışıyor</text>
+
+    <rect x="458" y="77" width="124" height="64" rx="16" fill="#e5f4df"/>
+    <circle cx="482" cy="100" r="11" fill="#8fc48d"/>
+    <path d="M477 100h10M482 95v10" stroke="#3f704c" stroke-width="1.5"/>
+    <text x="501" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#406147">Süreç B</text>
+    <text x="476" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66836c">hazır bekler</text>
+
+    <rect x="58" y="159" width="124" height="64" rx="16" fill="#f5e5f1"/>
+    <circle cx="82" cy="182" r="11" fill="#d69ac5"/>
+    <path d="M77 182h10" stroke="#7d4c72" stroke-width="1.5"/>
+    <text x="101" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#704764">İş Parçacığı</text>
+    <text x="76" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#89647f">paylaşılan bellek</text>
+
+    <rect x="458" y="159" width="124" height="64" rx="16" fill="#e0f1f5"/>
+    <circle cx="482" cy="182" r="11" fill="#8cc8d3"/>
+    <path d="M477 182h10M482 177v10" stroke="#39717b" stroke-width="1.5"/>
+    <text x="501" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6770">G / Ç</text>
+    <text x="476" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c858d">uyandırma</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="239" y="96" width="162" height="108" rx="24" fill="url(#core)" stroke="#b1c9e1"/>
+    <rect x="264" y="117" width="112" height="28" rx="10" fill="#f8fbff" opacity="0.9"/>
+    <text x="320" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405d78">Zamanlayıcı</text>
+    <path d="M283 166h74" stroke="#7698b8" stroke-width="2"/>
+    <polygon points="357,166 350,161 350,171" fill="#7698b8"/>
+    <text x="320" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6e89">Çekirdek</text>
+  </g>
+
+  <path d="M320 205 L320 238" stroke="#718da5" stroke-width="2.5"/>
+  <polygon points="320,238 314,229 326,229" fill="#718da5"/>
+
+  <g filter="url(#soft)">
+    <rect x="146" y="244" width="348" height="58" rx="17" fill="#ffffff" stroke="#d9e6e7"/>
+    <rect x="159" y="255" width="74" height="35" rx="10" fill="#fae5df"/>
+    <text x="196" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#935849">Kaydet</text>
+
+    <path d="M237 272h20" stroke="#a8bac5" stroke-width="1.8"/>
+    <polygon points="257,272 250,267 250,277" fill="#a8bac5"/>
+
+    <rect x="261" y="255" width="84" height="35" rx="10" fill="#e9e2fa"/>
+    <text x="303" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#69558a">Dolaylı</text>
+
+    <path d="M349 272h20" stroke="#a8bac5" stroke-width="1.8"/>
+    <polygon points="369,272 362,267 362,277" fill="#a8bac5"/>
+
+    <rect x="373" y="255" width="108" height="35" rx="10" fill="#dff1e5"/>
+    <text x="427" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416e55">Geri Yükle</text>
+  </g>
+
+  <text x="28" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b8e">Yazmaçlar</text>
+  <text x="28" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b8e">Sayaç ve yığın</text>
+  <path d="M113 281h25" stroke="#acc0cd" stroke-width="1.5"/>
+
+  <text x="513" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b8e">Önbellek</text>
+  <text x="513" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b8e">TLB ve tahmin</text>
+  <path d="M497 281h10" stroke="#acc0cd" stroke-width="1.5"/>
+</svg>

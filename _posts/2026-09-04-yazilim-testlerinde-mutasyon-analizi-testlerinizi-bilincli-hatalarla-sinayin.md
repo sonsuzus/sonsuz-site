@@ -9,6 +9,7 @@ tags:
   - yazılım testi
   - test kalitesi
 toc: true
+image: /img/yazilim-testlerinde-mutasyon-32.png
 ---
 
 Kod kapsamınız yüzde 100 olabilir; ancak bu, testlerinizin gerçekten hata yakaladığı anlamına gelmez. Belki testler yalnızca satırları çalıştırıyor, sonuçları ise yeterince sorgulamıyordur. Mutasyon analizi, kaynak kodda kontrollü ve küçük hatalar oluşturarak test takımına şu eğlenceli soruyu sorar: “Bunu da yakalayabilecek misin?”
@@ -92,3 +93,6 @@ Kod kapsamı haritayı gösterirken mutasyon analizi alarm sistemini dener. Bu i
 Mutasyon testleri normal testlerden çok daha yavaş olabilir; çünkü her mutant için testlerin yeniden çalıştırılması gerekir. Bu yüzden önce değişen dosyalarda çalıştırmak, paralel yürütme kullanmak ve anlamsız operatörleri kapatmak faydalıdır. Java için PIT, JavaScript ve TypeScript için Stryker, .NET için Stryker.NET tercih edilebilir.
 
 Hedef körü körüne yüzde 100 skor değildir. Kritik iş kurallarındaki hayatta kalan mutantları incelemek daha değerlidir. Çünkü iyi bir test takımı yalnızca kodu gezmez; kod yanlış davrandığında yüksek sesle itiraz eder.
+
+![yazilim-testlerinde-mutasyon-32](/img/yazilim-testlerinde-mutasyon-32.svg)
+

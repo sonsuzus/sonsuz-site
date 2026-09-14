@@ -9,6 +9,7 @@ tags:
   - kümeleme
   - dendrogram
 toc: true
+image: /img/hiyerarsik-kumeleme-ve-16.png
 ---
 
 Bir arkadaş grubundaki insanları önce en çok benzeyen ikililerden başlayarak bir araya getirdiğinizi düşünün. Sonra bu küçük grupları daha büyük topluluklarla birleştirin. İşlem tamamlandığında elinizde kimin kime, hangi benzerlik seviyesinde bağlandığını gösteren bir soy ağacı olur. Hiyerarşik kümeleme tam olarak bunu yapar; dendrogram ise ortaya çıkan ilişkilerin görsel haritasıdır.
@@ -25,6 +26,9 @@ Hiyerarşik kümeleme, etiketlenmemiş veri noktalarını benzerliklerine göre 
 |---|---|---|---|
 | Birleştirici (Agglomerative) | Her nokta ayrı kümedir | En yakın kümeler birleşir | Küçük derelerin nehre dönüşmesi |
 | Bölücü (Divisive) | Tüm noktalar tek kümedir | Büyük küme parçalara ayrılır | Bir şirketin departmanlara bölünmesi |
+
+![hiyerarsik-kumeleme-ve-16](/img/hiyerarsik-kumeleme-ve-16.svg)
+
 
 En yaygın seçenek birleştirici yaklaşımdır. $n$ veri noktasıyla başlanır; başlangıçta $n$ ayrı küme vardır. Her adımda en benzer iki küme birleşir ve küme sayısı bir azalır. Sonunda bütün noktalar tek bir dev kümede buluşur.
 

@@ -9,7 +9,11 @@ tags:
   - yazılım mimarisi
   - yazılım metrikleri
 toc: true
+image: /img/teknik-borcu-olcmek-90.png
 ---
+
+![teknik-borcu-olcmek-90](/img/teknik-borcu-olcmek-90.svg)
+
 
 Bir özelliği cuma akşamına yetiştirmek için katmanları atlamak, testleri ertelemek veya iki servisi geçici bir bağımlılıkla bağlamak oldukça caziptir. Üstelik sistem çalıştığı sürece kimse alarm zillerini duymaz. Fakat geniş ölçekli projelerde bu tavizler birikir; birkaç ay sonra küçük bir değişiklik bile onlarca dosyaya dokunan, günlerce test edilen bir operasyona dönüşür. Teknik borç tam olarak bu görünmeyen yavaşlamadır.
 

@@ -9,9 +9,13 @@ tags:
   - tıbbi yapay zeka
   - karar ağaçları
 toc: true
+image: /img/uzman-sistemlerden-derin-37.png
 ---
 
 Bir hastanın ateşi, öksürüğü ve laboratuvar sonuçları bilgisayara girildiğinde makine nasıl teşhis önerir? Tıbbi yapay zekânın ilk yanıtı oldukça insansıydı: Uzman doktorların kullandığı kuralları açıkça yazmak. Günümüzde görüntüleri milyonlarca parametreyle inceleyen derin öğrenme modellerine ulaşmış olsak da kural tabanlı uzman sistemler; açıklanabilirlikleri, denetlenebilirlikleri ve kritik kararları standartlaştırmaları sayesinde hâlâ önemini koruyor.
+
+![uzman-sistemlerden-derin-37](/img/uzman-sistemlerden-derin-37.svg)
+
 ``
 
 ## Uzman sistem nasıl düşünür?

@@ -9,6 +9,7 @@ tags:
   - federatif öğrenme
   - veri gizliliği
 toc: true
+image: /img/veri-yerinde-kalsin-10.png
 ---
 
 Telefonunuzun klavyesi bir sonraki kelimeyi tahmin ederken yazdığınız özel mesajların merkezi bir sunucuya gönderilmesi pek hoş olmazdı. Federatif öğrenme, diğer adıyla federal öğrenme, tam bu noktada devreye girer: Veriyi modele götürmek yerine modeli verinin bulunduğu cihazlara götürür. Kullanıcı cihazları modeli kendi verileriyle geliştirir ve sunucuya ham verileri değil, yalnızca hesaplanan ağırlık güncellemelerini yollar.
@@ -77,3 +78,6 @@ Bu işlem bireysel katkıların ayırt edilmesini zorlaştırırken model doğru
 Federatif öğrenmenin başka zorlukları da vardır: Cihazlar çevrimdışı olabilir, internet bağlantıları yavaşlayabilir ve kullanıcıların verileri birbirinden çok farklı dağılımlar gösterebilir. Örneğin herkes klavyede aynı kelimeleri kullanmaz. Bu durum **non-IID veri** problemi olarak bilinir.
 
 Sonuç olarak federatif öğrenme, gizlilik ile ortak model geliştirme arasında güçlü bir köprü kurar. Veriler evinden çıkmaz; fakat onlardan öğrenilen matematiksel deneyim küresel modele katkı sağlar. Yine de başarılı bir sistem için algoritma kadar güvenlik, iletişim maliyeti, cihaz seçimi ve adalet konularının da dikkatle tasarlanması gerekir.
+
+![veri-yerinde-kalsin-10](/img/veri-yerinde-kalsin-10.svg)
+
