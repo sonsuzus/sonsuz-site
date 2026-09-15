@@ -9,9 +9,13 @@ tags:
   - makine öğrenmesi
   - veri bilimi
 toc: true
+image: /img/veri-temizligi-maliyeti-96.png
 ---
 
 Makine öğrenmesi projelerinde herkes model seçimini konuşur: Sinir ağı mı kullanalım, karar ağacı mı, yoksa son moda bir dönüştürücü mü? Oysa gerçek hayatta zamanın büyük bölümü model eğitiminden önce harcanır. Eksik hücreler, yanlış tarihler, uçuk değerler ve birbirini tutmayan kategoriler düzeltilmeden dünyanın en gelişmiş algoritması bile pahalı bir tahmin makinesine dönüşebilir.
+
+
+![veri-temizligi-maliyeti-96](/img/veri-temizligi-maliyeti-96.svg)
 
 ``
 

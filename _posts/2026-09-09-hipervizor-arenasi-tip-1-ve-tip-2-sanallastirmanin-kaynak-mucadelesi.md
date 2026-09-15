@@ -9,6 +9,7 @@ tags:
   - hipervizör
   - sanal makineler
 toc: true
+image: /img/hipervizor-arenasi-tip-34.png
 ---
 
 Bir fiziksel bilgisayarda birden fazla işletim sistemi çalıştırmak, teknoloji dünyasının en kullanışlı illüzyonlarından biridir. Bu illüzyonun arkasındaki sihirbaz ise **hipervizördür**. Ancak her hipervizör aynı sahnede gösteri yapmaz: Tip 1 hipervizör doğrudan donanımın üzerine kurulurken Tip 2 hipervizör mevcut bir işletim sisteminin üzerinde çalışır. Bu mimari fark; işlemci, bellek, disk ve ağ kaynaklarının nasıl tüketildiğini doğrudan etkiler.
@@ -58,6 +59,9 @@ $$VM \rightarrow Hipervizor \rightarrow Ana\ Isletim\ Sistemi \rightarrow Donani
 | İzolasyon | Daha güçlü | Ana sisteme bağımlı |
 | Kullanım alanı | Sunucu ve veri merkezi | Masaüstü, eğitim ve test |
 | Yönetim kolaylığı | Uzmanlık gerektirir | Başlangıç dostudur |
+
+![hipervizor-arenasi-tip-34](/img/hipervizor-arenasi-tip-34.svg)
+
 
 Aynı anda ayrılan sanal bellek miktarı fiziksel belleği aşarsa **overcommitment** oluşabilir. Yaklaşık oran şu şekilde hesaplanır:
 

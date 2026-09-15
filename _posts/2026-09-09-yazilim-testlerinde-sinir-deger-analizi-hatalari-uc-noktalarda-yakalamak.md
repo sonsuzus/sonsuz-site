@@ -9,7 +9,11 @@ tags:
   - sınır değer analizi
   - test otomasyonu
 toc: true
+image: /img/yazilim-testlerinde-sinir-46.png
 ---
+
+![yazilim-testlerinde-sinir-46](/img/yazilim-testlerinde-sinir-46.svg)
+
 
 Bir kullanıcı formuna 18 yerine 17 yaş girildiğinde ne olur? Peki 18 kabul edilirken 65’in kabul edilmemesi gerekiyorsa sistem 65’e nasıl davranır? Yazılım hataları çoğu zaman veri aralığının ortasında değil, koşulların birbirine değdiği uç noktalarda saklanır. **Sınır Değer Analizi** (Boundary Value Analysis — BVA), her olasılığı denemek yerine hata çıkma ihtimali yüksek değerleri seçerek minimum eforla güçlü bir test kapsamı oluşturur.
 

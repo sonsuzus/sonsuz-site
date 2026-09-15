@@ -9,6 +9,7 @@ tags:
   - dağıtık defter
   - veri güvenliği
 toc: true
+image: /img/blokzinciri-kriptodan-ibaret-74.png
 ---
 
 Blokzinciri denildiğinde akla ilk olarak Bitcoin gelse de teknoloji, dijital para üretmekten çok daha genel bir probleme çözüm sunar: Birbirine tam olarak güvenmeyen tarafların, ortak bir veri geçmişi üzerinde anlaşabilmesi. Bu özellik; domatesin tarladan markete yolculuğunu izlemekten sağlık kayıtlarının değişmediğini kanıtlamaya kadar şaşırtıcı derecede geniş bir kullanım alanı oluşturur.
@@ -30,6 +31,9 @@ Buradaki kritik ayrım şudur: Blokzinciri, girilen bilginin gerçek olduğunu k
 | Merkezi veritabanı | Tek kurum | Yetkilere ve loglara bağlı | Taraflar aynı kuruma güveniyorsa |
 | İzinli blokzinciri | Seçilmiş kurumlar | Dağıtık doğrulama ile güçlü | Şirketler ortak kayıt tutuyorsa |
 | Açık blokzinciri | Herkese açık ağ | Konsensüs ile güçlü | Kamusal doğrulanabilirlik gerekiyorsa |
+
+![blokzinciri-kriptodan-ibaret-74](/img/blokzinciri-kriptodan-ibaret-74.svg)
+
 
 ## Tedarik zincirinde dijital ürün pasaportu
 

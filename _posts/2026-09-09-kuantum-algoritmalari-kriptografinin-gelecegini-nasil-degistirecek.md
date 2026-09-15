@@ -9,6 +9,7 @@ tags:
   - shor algoritması
   - kriptografi
 toc: true
+image: /img/kuantum-algoritmalari-kriptografinin-67.png
 ---
 
 İnternet bankacılığından mesajlaşma uygulamalarına kadar dijital dünyanın güvenliği, bazı matematik problemlerinin klasik bilgisayarlar için aşırı zor olmasına dayanıyor. Ancak yeterince güçlü bir kuantum bilgisayar, Shor algoritması sayesinde bu problemleri beklenenden çok daha hızlı çözebilir. Peki yarın sabah bütün parolalarımız mı ortaya dökülecek? Kısa cevap: Hayır. Uzun cevap ise kuantum fiziği, asal çarpanlar ve ciddi bir kriptografik dönüşüm içeriyor.
@@ -31,6 +32,9 @@ Benzer şekilde eliptik eğri kriptografisi, ayrık logaritma problemini kullan�
 | ECC | Eliptik eğri ayrık logaritması | Shor ile kırılabilir |
 | AES | Anahtarın aranması | Grover ile güvenlik seviyesi azalır |
 | SHA-256 | Özet ve çakışma direnci | Daha uzun özetlerle güçlendirilebilir |
+
+![kuantum-algoritmalari-kriptografinin-67](/img/kuantum-algoritmalari-kriptografinin-67.svg)
+
 
 ## Shor algoritmasının numarası ne?
 

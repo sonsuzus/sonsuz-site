@@ -9,9 +9,13 @@ tags:
   - veri-görselleştirme
   - force-directed
 toc: true
+image: /img/cizgeler-dans-ederken-53.png
 ---
 
 Bir sosyal ağdaki arkadaşlıkları, şehirler arasındaki yolları veya yazılım modüllerinin bağımlılıklarını dümdüz bir listeyle incelemek pek heyecan verici değildir. Çizge görselleştirme, düğümlerden ve bağlantılardan oluşan bu karmaşık yapıları anlaşılır bir haritaya dönüştürür. Kuvvet yönelimli algoritmalar ise düğümleri küçük fiziksel cisimler gibi ele alarak onları ekranda adeta dans ettirir.
+
+![cizgeler-dans-ederken-53](/img/cizgeler-dans-ederken-53.svg)
+
 ``
 ## Önce çizgenin dilini öğrenelim
 

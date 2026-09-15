@@ -9,7 +9,11 @@ tags:
   - iş psikolojisi
   - otomasyon
 toc: true
+image: /img/rpa-psikolojisi-botlar-85.png
 ---
+
+![rpa-psikolojisi-botlar-85](/img/rpa-psikolojisi-botlar-85.svg)
+
 
 Robotik Süreç Otomasyonu (RPA), faturaları aktaran, formları dolduran ve raporları hazırlayan yazılım botlarıyla ofis hayatını hızlandırıyor. Ancak bir çalışan, yıllardır yaptığı işin birkaç dakikada tamamlandığını görünce yalnızca rahatlamıyor; bazen kendi değerini ve işinin geleceğini de sorguluyor. Bu nedenle başarılı otomasyon, teknik verimlilik kadar güven, aidiyet ve anlam yönetimi gerektiriyor.
 

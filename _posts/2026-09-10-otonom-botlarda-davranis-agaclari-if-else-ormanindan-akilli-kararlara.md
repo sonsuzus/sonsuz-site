@@ -9,9 +9,13 @@ tags:
   - behavior trees
   - otonom botlar
 toc: true
+image: /img/otonom-botlarda-davranis-80.png
 ---
 
 Bir oyun botunu birkaç `if-else` ile hareket ettirmek kolaydır: Düşman varsa saldır, can azsa kaç, aksi hâlde devriye gez. Fakat botun şarj olması, saldırıdan kaçınması, yarım kalan görevine dönmesi ve değişen dünyaya anında tepki vermesi gerektiğinde bu yaklaşım hızla “dokunmaya korkulan kod” seviyesine ulaşır. Davranış Ağaçları, yani Behavior Trees, kararları küçük ve yeniden kullanılabilir düğümlere ayırarak bu karmaşayı yönetilebilir bir orkestraya dönüştürür.
+
+
+![otonom-botlarda-davranis-80](/img/otonom-botlarda-davranis-80.svg)
 
 ``
 

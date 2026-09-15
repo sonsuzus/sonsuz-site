@@ -9,6 +9,7 @@ tags:
   - paralel programlama
   - yüksek performanslı hesaplama
 toc: true
+image: /img/amdahl-yasasi-sonsuz-62.png
 ---
 
 Bir programı hızlandırmak için sisteme daha fazla işlemci eklemek ilk bakışta kusursuz bir plan gibi görünür. İki işlemci iki kat, bin işlemci bin kat hız sağlamalı, değil mi? Ne yazık ki gerçek sistemlerde bazı işler paralel yürütülemez. Amdahl Yasası, programın bu seri bölümünün toplam hızlanmaya nasıl kaçınılmaz bir tavan koyduğunu matematiksel olarak açıklar.
@@ -93,3 +94,6 @@ Bu nedenle ölçülen hızlanma çoğunlukla Amdahl Yasası'nın tahmininden dah
 Daha fazla çekirdek satın almadan önce profil çıkarma araçlarıyla seri darboğazlar belirlenmelidir. Algoritmayı değiştirmek, kritik bölümleri küçültmek, kilit kullanımını azaltmak veya veri bağımlılıklarını yeniden düzenlemek donanım eklemekten daha etkili olabilir.
 
 Kısacası Amdahl Yasası, yüksek performanslı hesaplamanın nazik ama acımasız uyarısıdır: Bir programın küçük seri bölümü bile devasa bir paralel sistemin hızını belirleyebilir. Sonsuz işlemciniz olsa dahi algoritmanızın tek başına yürümekte ısrar eden kısmını ikna etmeden sonsuz performansa ulaşamazsınız.
+
+![amdahl-yasasi-sonsuz-62](/img/amdahl-yasasi-sonsuz-62.svg)
+

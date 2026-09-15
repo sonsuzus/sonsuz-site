@@ -9,6 +9,7 @@ tags:
   - matris ayrıştırma
   - öneri sistemleri
 toc: true
+image: /img/e-ticarette-matris-28.png
 ---
 
 Bir e-ticaret mağazasına girdiğinizde karşınıza çıkan “Bunları da beğenebilirsiniz” bölümü tesadüfen hazırlanmaz. İşbirlikçi filtreleme, kullanıcıların görüntüleme, sepete ekleme, satın alma veya puanlama gibi geçmiş etkileşimlerinden ortak davranış kalıpları çıkarır. Matris ayrıştırma ise milyonlarca etkileşimin arkasındaki gizli tercihleri keşfederek her kullanıcıya özel ürün önerileri üretir.
@@ -91,3 +92,6 @@ Bu değerler evrensel değildir; A/B testleriyle belirlenmelidir. Ayrıca eğiti
 ## Soğuk başlangıç ve üretim gerçekleri
 
 Yeni kullanıcı veya yeni ürün henüz etkileşim taşımadığı için matris ayrıştırma tek başına yetersiz kalır. Popüler ürünler, kategori tercihleri ve içerik tabanlı özelliklerle hibrit bir sistem kurulabilir. Sonuçta başarılı öneri sistemi yalnızca doğru tahmin yapan değil; çeşitlilik, güncellik, stok durumu ve kullanıcı mahremiyetini birlikte gözeten sistemdir. Doğru tasarlandığında matris ayrıştırma, dijital mağazayı herkese aynı vitrini gösteren bir katalogdan kişisel alışveriş asistanına dönüştürür.
+
+![e-ticarette-matris-28](/img/e-ticarette-matris-28.svg)
+

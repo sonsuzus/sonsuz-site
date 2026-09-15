@@ -9,6 +9,7 @@ tags:
   - halüsinasyon
   - dil modelleri
 toc: true
+image: /img/yapay-zeka-neden-78.png
 ---
 
 Bir dil modeline hiç var olmayan bir kitap, kişi veya bilimsel makale sorduğunuzda bazen şaşırtıcı derecede ayrıntılı bir cevap alırsınız. Yazar adı, yayın tarihi ve hatta uydurma alıntılar hazırdır! Bu davranış bilinçli bir yalan değil; modelin doğruluğu değil, dilsel devamlılığı optimize etmesinin doğal sonucudur.
@@ -32,6 +33,9 @@ Buradaki kritik ayrıntı şudur: Denklemde **“Bu ifade gerçek mi?”** diye 
 | Akıcı ve tutarlı cümle | Doğrulanabilir iddia |
 | Eğitim verisine benzer örüntü | Güncel gerçeklik |
 | Kullanıcı talebini sürdürmek | Gerektiğinde “bilmiyorum” demek |
+
+![yapay-zeka-neden-78](/img/yapay-zeka-neden-78.svg)
+
 
 ## Belirsizlik neden sessiz kalmıyor?
 

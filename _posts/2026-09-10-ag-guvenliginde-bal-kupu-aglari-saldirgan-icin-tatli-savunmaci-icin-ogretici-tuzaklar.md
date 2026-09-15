@@ -9,6 +9,7 @@ tags:
   - ağ güvenliği
   - siber güvenlik
 toc: true
+image: /img/ag-guvenliginde-bal-29.png
 ---
 
 Bir saldırgan ağınıza girdiğinde onu hemen engellemek her zaman en öğretici seçenek değildir. Bazen kontrollü bir ortam hazırlayıp hangi servisleri yokladığını, hangi komutları kullandığını ve nasıl hareket ettiğini izlemek daha değerlidir. Honeypot ağları tam olarak bunu yapar: Gerçek sistemlere benzeyen fakat üretim kaynaklarından kesin biçimde ayrılmış sahte hedeflerle saldırganın dikkatini üzerine çeker.
@@ -75,3 +76,6 @@ Kod, 2222 numaralı portu dinler, bağlanan adresi zaman damgasıyla kaydeder ve
 Kaydedilecek veriler arasında kaynak IP, zaman, hedef port, oturum süresi ve gönderilen komutların güvenli özetleri bulunabilir. Parola veya kişisel veri toplamak yerine veri minimizasyonu uygulanmalıdır. SIEM üzerinde aynı kaynaktan hızlı port taraması, tekrarlanan oturumlar veya beklenmeyen protokol kullanımı için kurallar oluşturulabilir.
 
 Son olarak honeypot bir güvenlik duvarının yerine geçmez. O, alarm üreten bir gözlem aracıdır. Düzenli sıfırlama, güncel imajlar, merkezi kayıt, çıkış filtreleme ve belgelenmiş müdahale planı olmadan tatlı görünen bu tuzak, savunmacının başını ağrıtan gerçek bir kovana dönüşebilir.
+
+![ag-guvenliginde-bal-29](/img/ag-guvenliginde-bal-29.svg)
+

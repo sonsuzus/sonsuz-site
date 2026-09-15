@@ -9,6 +9,7 @@ tags:
   - gömülü sistemler
   - gerçek zamanlı programlama
 toc: true
+image: /img/gomulu-sistemlerde-gercek-69.png
 ---
 
 Bir hava yastığının “birazdan açılması”, motor kontrol ünitesinin ateşleme sinyalini uygun olduğunda göndermesi veya kalp pilinin birkaç saniyeliğine düşünmesi kabul edilemez. Gömülü sistemlerde başarı yalnızca doğru sonucu üretmek değil, bu sonucu belirlenen zaman sınırı içinde üretmektir. Gerçek Zamanlı İşletim Sistemleri, yani RTOS’lar, görevleri olabildiğince hızlı koşturmaktan ziyade davranışlarını öngörülebilir hâle getirir.
@@ -77,3 +78,6 @@ Kodun periyodik olması tek başına garanti sağlamaz. `read_sensor()` fonksiyo
 Öncelik terslenmesi, düşük öncelikli bir görevin kilit tuttuğu için kritik görevi bekletmesidir. **Priority inheritance** mekanizması, kilidi tutan görevin önceliğini geçici olarak yükselterek sorunu sınırlar. Dinamik bellek tahsisi, belirsiz süreli döngüler, bloklayan sürücüler ve önbellek davranışı da jitter oluşturabilir.
 
 Katı gerçek zamanlı tasarımın özeti şudur: Ortalama süreye değil **WCET** değerine bak, paylaşılan kaynakları sınırla, görev önceliklerini matematiksel olarak analiz et ve gerçek donanım üzerinde ölçüm yap. RTOS zamanı büyütmez; zamanı disipline eder.
+
+![gomulu-sistemlerde-gercek-69](/img/gomulu-sistemlerde-gercek-69.svg)
+

@@ -9,7 +9,11 @@ tags:
   - bulut maliyetleri
   - performans
 toc: true
+image: /img/serverless-bedava-degildir-18.png
 ---
+
+![serverless-bedava-degildir-18](/img/serverless-bedava-degildir-18.svg)
+
 
 Sunucusuz mimari, adındaki “sunucusuz” ifadesi yüzünden bulut dünyasının en yanlış anlaşılan modellerinden biridir. Ortada hâlâ sunucular vardır; yalnızca işletim sistemi güncelleme, kapasite planlama ve fiziksel altyapı yönetimi sağlayıcıya devredilir. Buna karşılık her çağrı, çalışma süresi, bellek tüketimi ve yan servis kullanımı faturaya dönüşebilir. Üstelik uzun süre boşta kalan fonksiyonların ilk istekte yaşadığı soğuk başlangıç gecikmesi, kullanıcı deneyimini sessizce baltalayabilir.
 ``

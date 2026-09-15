@@ -9,7 +9,11 @@ tags:
   - açık kaynak
   - tedarik zinciri
 toc: true
+image: /img/tek-bir-paket-96.png
 ---
+
+![tek-bir-paket-96](/img/tek-bir-paket-96.svg)
+
 
 Modern bir uygulama geliştirirken her şeyi sıfırdan yazmayız; doğrulama, tarih biçimlendirme veya metin renklendirme gibi işler için açık kaynak paketlerden yararlanırız. Ancak birkaç satırlık masum bir kütüphanenin geliştirici hesabı ele geçirilirse saldırgan, zararlı kodu resmi güncelleme gibi dağıtabilir. Sonuçta tek bir kişiye yapılan saldırı, aynı paketi kullanan binlerce kurumun kapısını aynı anda açan dijital bir maymuncuğa dönüşebilir.
 ``

@@ -9,9 +9,13 @@ tags:
   - ux tasarımı
   - seçim paradoksu
 toc: true
+image: /img/secenek-bollugu-karar-66.png
 ---
 
 Bir e-ticaret sitesinde yalnızca “siyah mı, beyaz mı?” sorusuyla karşılaşmak kolaydır. Fakat renk, beden, kumaş, teslimat, satıcı ve kampanya seçenekleri aynı anda önümüze döküldüğünde beynimiz küçük bir yönetim kurulu toplantısı başlatır. Seçenek sayısı arttıkça özgürlük hissi büyüyebilir; buna karşılık karar verme süresi, zihinsel yük ve sayfayı terk etme ihtimali de artabilir. Bilişsel psikolojide bu gerilim **seçim paradoksu** ile açıklanır.
+
+![secenek-bollugu-karar-66](/img/secenek-bollugu-karar-66.svg)
+
 ``
 
 ## Daha fazla seçenek neden daha zor olabilir?

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ed"/>
+    </linearGradient>
+    <linearGradient id="serial" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffcfbf"/>
+      <stop offset="100%" stop-color="#f7aeb4"/>
+    </linearGradient>
+    <linearGradient id="parallel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c6e8ff"/>
+      <stop offset="100%" stop-color="#a9d5f0"/>
+    </linearGradient>
+    <linearGradient id="limit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4d7fb"/>
+      <stop offset="100%" stop-color="#cbbcf1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8194" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#8496a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="44" r="58" fill="#dceeff" opacity="0.48"/>
+  <circle cx="586" cy="279" r="82" fill="#dcf1d7" opacity="0.46"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40546a">Amdahl Yasası</text>
+  <text x="32" y="50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#758698">Hızlanmanın seri sınırı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="105" width="132" height="108" rx="20" fill="#ffffff"/>
+  </g>
+  <rect x="43" y="120" width="106" height="17" rx="8.5" fill="#dff0fb"/>
+  <text x="96" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416176">PROGRAM</text>
+  <rect x="47" y="151" width="31" height="42" rx="8" fill="url(#serial)"/>
+  <rect x="82" y="151" width="63" height="42" rx="8" fill="url(#parallel)"/>
+  <text x="62" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754852">Seri</text>
+  <text x="113" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365d76">Paralel</text>
+
+  <path d="M170 159 L207 159" fill="none" stroke="#6f91a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="207,159 198,154 198,164" fill="#6f91a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="217" y="78" width="158" height="162" rx="22" fill="#ffffff"/>
+  </g>
+  <text x="296" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425b70">İŞ AKIŞI</text>
+
+  <rect x="239" y="120" width="114" height="34" rx="12" fill="url(#serial)"/>
+  <path d="M257 137 L267 137 M275 137 L285 137 M293 137 L303 137 M311 137 L321 137 M329 137 L337 137" stroke="#b66d78" stroke-width="2" stroke-linecap="round"/>
+  <text x="296" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#884c58">Bölünemez adım</text>
+  <text x="296" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788797">s = %10</text>
+
+  <path d="M296 211 L296 224" fill="none" stroke="#ce8290" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="296,231 290,221 302,221" fill="#ce8290"/>
+
+  <path d="M383 159 L418 159" fill="none" stroke="#6f91a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="418,159 409,154 409,164" fill="#6f91a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="429" y="58" width="178" height="202" rx="22" fill="#ffffff"/>
+  </g>
+  <text x="518" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425b70">İŞLEMCİ HAVUZU</text>
+
+  <path d="M452 114 L480 114 M480 114 L480 105 M480 114 L480 134 M480 114 L504 114" fill="none" stroke="#84b8d5" stroke-width="2"/>
+  <path d="M452 174 L480 174 M480 174 L480 155 M480 174 L480 194 M480 174 L504 174" fill="none" stroke="#84b8d5" stroke-width="2"/>
+
+  <g filter="url(#soft)">
+    <rect x="505" y="96" width="72" height="34" rx="10" fill="url(#parallel)"/>
+    <rect x="505" y="139" width="72" height="34" rx="10" fill="url(#parallel)"/>
+    <rect x="505" y="182" width="72" height="34" rx="10" fill="url(#parallel)"/>
+  </g>
+  <text x="541" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365d76">Çekirdek</text>
+  <text x="541" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365d76">Çekirdek</text>
+  <text x="541" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365d76">Çekirdek</text>
+  <text x="466" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718698">N arttıkça paralel süre azalır</text>
+
+  <path d="M88 260 C170 260 191 268 243 268" fill="none" stroke="#9bb0bd" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M376 268 C424 268 440 268 460 268" fill="none" stroke="#9bb0bd" stroke-width="2" stroke-dasharray="5 5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="247" y="250" width="128" height="51" rx="17" fill="url(#limit)"/>
+  </g>
+  <text x="311" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#58477e">HIZ SINIRI</text>
+  <text x="311" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665886">Smax = 1 / s = 10 kat</text>
+
+  <path d="M462 268 L504 268" fill="none" stroke="#846bb1" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="504,268 495,263 495,273" fill="#846bb1"/>
+  <text x="514" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#665886">Sonsuz çekirdek bile aşamaz</text>
+</svg>
