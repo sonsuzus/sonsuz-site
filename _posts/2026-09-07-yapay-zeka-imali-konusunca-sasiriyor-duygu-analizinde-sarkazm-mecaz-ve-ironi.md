@@ -9,7 +9,11 @@ tags:
   - doğal dil işleme
   - yapay zekâ
 toc: true
+image: /img/yapay-zeka-imali-33.png
 ---
+
+![yapay-zeka-imali-33](/img/yapay-zeka-imali-33.svg)
+
 
 Bir forum kullanıcısı “Harika, uygulama yine çöktü; tam da ihtiyacım olan şeydi!” yazdığında insan zihni olumsuzluğu hemen sezer. Duygu analizi modeli ise “harika” ve “ihtiyacım olan” ifadelerine bakarak yorumu olumlu sınıflandırabilir. Çünkü sarkazm, mecaz ve ironi, sözcüklerin sözlük anlamıyla konuşanın gerçek niyeti arasına görünmez bir mesafe koyar.
 

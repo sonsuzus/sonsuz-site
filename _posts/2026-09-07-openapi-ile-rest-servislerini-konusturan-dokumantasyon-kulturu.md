@@ -9,9 +9,13 @@ tags:
   - rest apı
   - apı dokümantasyonu
 toc: true
+image: /img/openapi-ile-rest-65.png
 ---
 
 Bir REST servisini geliştirmek bazen kalabalık bir restoranda sipariş vermeye benzer: İstemci başka bir şey söyler, sunucu başka bir şey anlar, test ekibi ise menüde hiç bulunmayan bir yanıtla karşılaşır. OpenAPI Standardı, diğer adıyla Açık API Standardı, bu iletişim kazalarını azaltmak için endpoint’leri, parametreleri, veri modellerini ve olası yanıtları makineler tarafından da okunabilen ortak bir sözleşmede tanımlar.
+
+![openapi-ile-rest-65](/img/openapi-ile-rest-65.svg)
+
 ``
 
 ## OpenAPI tam olarak nedir?

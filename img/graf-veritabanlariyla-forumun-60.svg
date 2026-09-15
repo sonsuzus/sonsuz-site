@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8176d8"/>
+      <stop offset="100%" stop-color="#5f93d5"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#506783" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#506783" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="535" cy="42" r="93" fill="#dceff0" opacity="0.46"/>
+  <circle cx="85" cy="283" r="110" fill="#e5e1f8" opacity="0.42"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43546c">Forum Etkileşimlerinden Güç Haritasına</text>
+  <text x="30" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728198">Ağırlıklı ilişki grafı ve merkeziyet analizi</text>
+
+  <!-- left source card -->
+  <rect x="29" y="84" width="146" height="171" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="50" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40516a">Forum Olayları</text>
+
+  <rect x="47" y="126" width="110" height="26" rx="10" fill="#e4f3fb"/>
+  <circle cx="61" cy="139" r="5" fill="#67add0"/>
+  <text x="73" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42647b">Yanıt</text>
+  <text x="139" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#497fa0">3</text>
+
+  <rect x="47" y="160" width="110" height="26" rx="10" fill="#f9e9c9"/>
+  <circle cx="61" cy="173" r="5" fill="#dcad59"/>
+  <text x="73" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735f3a">Etiket</text>
+  <text x="139" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a7435">1</text>
+
+  <rect x="47" y="194" width="110" height="26" rx="10" fill="#f9e2e7"/>
+  <circle cx="61" cy="207" r="5" fill="#dc8296"/>
+  <text x="73" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75515a">Beğeni</text>
+  <text x="134" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#aa6475">0,5</text>
+
+  <text x="50" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c8999">Ağırlıklar</text>
+
+  <!-- arrow 1 -->
+  <path d="M178 169 C194 169 202 169 219 169" fill="none" stroke="#88a2b7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="219,164 229,169 219,174" fill="#88a2b7"/>
+
+  <!-- central graph -->
+  <rect x="231" y="71" width="190" height="199" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="252" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40516a">Neo4j İlişki Grafı</text>
+  <text x="252" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a899c">Kullanıcı düğümleri</text>
+
+  <!-- graph links -->
+  <path d="M282 169 L327 137 L369 165 L341 215 L282 169 L327 137 L341 215 L369 165" fill="none" stroke="#a6b9d0" stroke-width="2" opacity="0.9"/>
+  <path d="M282 169 L341 215" fill="none" stroke="#d59caf" stroke-width="4" stroke-linecap="round"/>
+  <path d="M327 137 L369 165" fill="none" stroke="#72b8b4" stroke-width="5" stroke-linecap="round"/>
+  <path d="M327 137 L341 215" fill="none" stroke="#a9a0dd" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="299" y="141" width="20" height="15" rx="7" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="305" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6b78a5">5</text>
+  <rect x="345" y="143" width="20" height="15" rx="7" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="351" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c9b98">3</text>
+
+  <!-- nodes -->
+  <circle cx="282" cy="169" r="17" fill="#e6b7c4" filter="url(#smallShadow)"/>
+  <circle cx="327" cy="137" r="22" fill="url(#core)" filter="url(#smallShadow)"/>
+  <circle cx="369" cy="165" r="18" fill="#92d2cb" filter="url(#smallShadow)"/>
+  <circle cx="341" cy="215" r="19" fill="#b8b1e7" filter="url(#smallShadow)"/>
+  <circle cx="282" cy="169" r="5" fill="#ffffff"/>
+  <circle cx="327" cy="137" r="6" fill="#ffffff"/>
+  <circle cx="369" cy="165" r="5" fill="#ffffff"/>
+  <circle cx="341" cy="215" r="5" fill="#ffffff"/>
+
+  <rect x="259" y="236" width="134" height="19" rx="9" fill="#eff3fa"/>
+  <text x="276" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63748a">Tekil ilişki ve ağırlık</text>
+
+  <!-- arrow 2 -->
+  <path d="M424 169 C438 169 447 169 459 169" fill="none" stroke="#88a2b7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="459,164 469,169 459,174" fill="#88a2b7"/>
+
+  <!-- right analytics -->
+  <rect x="471" y="84" width="140" height="171" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="491" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40516a">Güç Analizi</text>
+
+  <rect x="490" y="127" width="101" height="27" rx="10" fill="#e8e5f8"/>
+  <circle cx="504" cy="140" r="5" fill="#8076cf"/>
+  <text x="516" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c5790">PageRank</text>
+
+  <rect x="490" y="162" width="101" height="27" rx="10" fill="#def3ee"/>
+  <circle cx="504" cy="175" r="5" fill="#60ada6"/>
+  <text x="516" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#487d79">Köprüler</text>
+
+  <rect x="490" y="197" width="101" height="27" rx="10" fill="#fff0d8"/>
+  <circle cx="504" cy="210" r="5" fill="#d8a75b"/>
+  <text x="516" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806536">Topluluklar</text>
+
+  <!-- lower timeline -->
+  <path d="M84 284 L556 284" fill="none" stroke="#bccbd9" stroke-width="2"/>
+  <circle cx="151" cy="284" r="6" fill="#9cb9cf"/>
+  <circle cx="321" cy="284" r="8" fill="#7774c9"/>
+  <circle cx="490" cy="284" r="6" fill="#8cbeb4"/>
+  <text x="119" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728198">30 gün</text>
+  <text x="290" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728198">90 gün</text>
+  <text x="456" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728198">365 gün</text>
+</svg>

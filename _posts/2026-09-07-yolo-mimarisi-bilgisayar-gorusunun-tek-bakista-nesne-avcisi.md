@@ -9,7 +9,11 @@ tags:
   - bilgisayar görüşü
   - nesne tespiti
 toc: true
+image: /img/yolo-mimarisi-bilgisayar-94.png
 ---
+
+![yolo-mimarisi-bilgisayar-94](/img/yolo-mimarisi-bilgisayar-94.svg)
+
 
 Bir fotoğraftaki kediyi bulmak kolay görünebilir; fakat bilgisayarın aynı anda kediyi, koltuğu ve masayı tanıyıp konumlarını milisaniyeler içinde işaretlemesi ciddi bir problemdir. YOLO, yani *You Only Look Once*, bu problemi görüntüye yalnızca bir kez bakarak çözen hızlı bir nesne tespiti ailesidir. Klasik yöntemlerin aksine önce bölge arayıp sonra sınıflandırma yapmak yerine bütün işlemi tek bir sinir ağı geçişinde tamamlar.
 

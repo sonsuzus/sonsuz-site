@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8e9df5"/>
+      <stop offset="1" stop-color="#6576d7"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60708b" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6b7990" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="322" cy="161" r="128" fill="#dce9fb" opacity="0.48"/>
+  <circle cx="322" cy="161" r="102" fill="#eff4ff" stroke="#b9cbe8" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="322" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61718a">FİLTRE BALONU</text>
+
+  <!-- connections -->
+  <path d="M171 104 C196 105 213 117 231 132" fill="none" stroke="#8aa0c3" stroke-width="2.5"/>
+  <polygon points="231,132 222,128 225,138" fill="#8aa0c3"/>
+  <path d="M414 126 C433 115 448 102 466 95" fill="none" stroke="#8aa0c3" stroke-width="2.5"/>
+  <polygon points="466,95 456,94 461,103" fill="#8aa0c3"/>
+  <path d="M474 205 C449 206 430 198 412 188" fill="none" stroke="#8aa0c3" stroke-width="2.5"/>
+  <polygon points="412,188 419,196 421,186" fill="#8aa0c3"/>
+  <path d="M231 191 C212 204 194 214 170 216" fill="none" stroke="#8aa0c3" stroke-width="2.5"/>
+  <polygon points="170,216 180,220 177,210" fill="#8aa0c3"/>
+
+  <!-- central algorithm -->
+  <rect x="241" y="116" width="162" height="91" rx="22" fill="url(#core)" filter="url(#shadow)"/>
+  <circle cx="322" cy="145" r="18" fill="#ffffff" opacity="0.2"/>
+  <path d="M312 145 h20 M322 135 v20 M314 137 l16 16 M330 137 l-16 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <text x="322" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#ffffff">ÖNERİ ALGORİTMASI</text>
+  <text x="322" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eaf0ff">Puanlama ve tahmin</text>
+
+  <!-- behavior card -->
+  <rect x="43" y="71" width="128" height="68" rx="16" fill="#fff5e4" filter="url(#soft)"/>
+  <circle cx="68" cy="95" r="13" fill="#f5b961"/>
+  <path d="M63 95 h10 M68 90 v10" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="89" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#72562d">DAVRANIŞ</text>
+  <text x="89" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#856c45">Tıklama · süre</text>
+
+  <!-- prediction card -->
+  <rect x="467" y="62" width="132" height="68" rx="16" fill="#e9f7ef" filter="url(#soft)"/>
+  <circle cx="492" cy="86" r="13" fill="#67bd91"/>
+  <path d="M486 91 l5-9 4 5 5-8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="513" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38654d">TAHMİN</text>
+  <text x="513" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#517866">İlgi profili</text>
+
+  <!-- recommendation card -->
+  <rect x="474" y="184" width="125" height="68" rx="16" fill="#f5eafa" filter="url(#soft)"/>
+  <circle cx="499" cy="208" r="13" fill="#b080ca"/>
+  <path d="M493 208 h12 M499 202 v12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="520" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#664276">ÖNERİ</text>
+  <text x="520" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805d90">Benzer içerik</text>
+
+  <!-- reinforced card -->
+  <rect x="42" y="190" width="130" height="68" rx="16" fill="#e6f5f6" filter="url(#soft)"/>
+  <circle cx="67" cy="214" r="13" fill="#5bb6bf"/>
+  <path d="M61 218 c2-8 10-12 15-5 M75 210 l1 5-5-1" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="88" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#315f67">GÜÇLENME</text>
+  <text x="88" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527a80">Tekrarlanan ilgi</text>
+
+  <!-- outer return flow -->
+  <path d="M108 258 C96 289 166 293 212 277 C250 264 248 239 230 220" fill="none" stroke="#6fa8b0" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <polygon points="230,220 220,223 227,230" fill="#6fa8b0"/>
+  <path d="M407 214 C435 255 397 286 348 284 C310 283 289 266 286 226" fill="none" stroke="#8b78bd" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <polygon points="286,226 280,236 290,235" fill="#8b78bd"/>
+
+  <!-- bottom insight -->
+  <rect x="212" y="270" width="220" height="33" rx="14" fill="#ffffff" opacity="0.88" filter="url(#soft)"/>
+  <circle cx="232" cy="286.5" r="6" fill="#ef8f79"/>
+  <text x="246" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526078">Çeşitlilik azalır · seçenekler daralır</text>
+</svg>

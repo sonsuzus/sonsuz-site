@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7669c9"/>
+      <stop offset="100%" stop-color="#4d9bbe"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#64748b" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#64748b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="318" cy="153" r="128" fill="#dbeafe" opacity="0.32"/>
+  <circle cx="318" cy="153" r="101" fill="#ecfdf5" opacity="0.45"/>
+
+  <!-- Bağlantılar -->
+  <path d="M190 111 C217 111 222 126 240 135" fill="none" stroke="#91a5c5" stroke-width="2"/>
+  <polygon points="240,135 230,130 232,140" fill="#91a5c5"/>
+  <path d="M395 134 C416 121 420 108 442 105" fill="none" stroke="#91a5c5" stroke-width="2"/>
+  <polygon points="442,105 432,101 434,111" fill="#91a5c5"/>
+  <path d="M395 170 C416 181 422 198 442 205" fill="none" stroke="#91a5c5" stroke-width="2"/>
+  <polygon points="442,205 434,198 432,208" fill="#91a5c5"/>
+  <path d="M319 218 L319 245" fill="none" stroke="#91a5c5" stroke-width="2"/>
+  <polygon points="319,245 314,235 324,235" fill="#91a5c5"/>
+
+  <!-- Sol karşılaştırma kartı -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="65" width="163" height="94" rx="18" fill="#ffffff"/>
+    <rect x="27" y="65" width="7" height="94" rx="4" fill="#f29a83"/>
+  </g>
+  <text x="49" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#334155">Aynı güvenlik</text>
+  <text x="49" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">RSA</text>
+  <rect x="82" y="102" width="77" height="12" rx="6" fill="#f7c8ba"/>
+  <text x="164" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="end" font-weight="700" fill="#a65343">3072 bit</text>
+  <text x="49" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">ECC</text>
+  <rect x="82" y="130" width="21" height="12" rx="6" fill="#92d6c2"/>
+  <text x="164" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="end" font-weight="700" fill="#287866">256 bit</text>
+
+  <!-- Merkez ECC -->
+  <g filter="url(#shadow)">
+    <circle cx="319" cy="153" r="76" fill="url(#core)"/>
+    <circle cx="319" cy="153" r="62" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.34"/>
+  </g>
+  <path d="M272 169 C284 111 303 192 328 128 C342 92 352 106 368 151" fill="none" stroke="#ffffff" stroke-width="2.3" opacity="0.92"/>
+  <circle cx="287" cy="136" r="4.5" fill="#ffd980"/>
+  <circle cx="337" cy="123" r="4.5" fill="#a9f1d2"/>
+  <circle cx="353" cy="153" r="4.5" fill="#ffd980"/>
+  <text x="319" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#ffffff">ECC</text>
+  <text x="319" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#e5f3ff">Eliptik Eğri</text>
+
+  <!-- Sağ üst -->
+  <g filter="url(#softShadow)">
+    <rect x="442" y="61" width="170" height="85" rx="18" fill="#ffffff"/>
+    <rect x="455" y="76" width="34" height="34" rx="10" fill="#d9f3ea"/>
+    <path d="M466 92 L471 97 L480 85" fill="none" stroke="#27876f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="501" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#334155">Anahtar anlaşması</text>
+  <text x="501" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">ECDH ve ECIES</text>
+  <text x="501" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#27876f">Ortak sır</text>
+
+  <!-- Sağ alt -->
+  <g filter="url(#softShadow)">
+    <rect x="442" y="165" width="170" height="85" rx="18" fill="#ffffff"/>
+    <rect x="455" y="180" width="34" height="34" rx="10" fill="#eee7ff"/>
+    <path d="M465 204 L465 188 L475 188 L479 192 L479 204 Z" fill="none" stroke="#7158ad" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M475 188 L475 193 L480 193" fill="none" stroke="#7158ad" stroke-width="1.8"/>
+  </g>
+  <text x="501" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#334155">Dijital imza</text>
+  <text x="501" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">ECDSA ve EdDSA</text>
+  <text x="501" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7158ad">Doğrulama</text>
+
+  <!-- Alt matematik -->
+  <g filter="url(#shadow)">
+    <rect x="185" y="246" width="269" height="57" rx="17" fill="#ffffff"/>
+  </g>
+  <rect x="199" y="259" width="38" height="30" rx="9" fill="#fff0cf"/>
+  <text x="218" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#a66b12">kP</text>
+  <text x="250" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#334155">Tek yönlü matematik</text>
+  <text x="250" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">P ve Q bilinir, k bulunamaz</text>
+
+  <!-- Küçük fayda etiketleri -->
+  <g filter="url(#softShadow)">
+    <rect x="35" y="190" width="120" height="32" rx="16" fill="#e2f4ee"/>
+  </g>
+  <circle cx="53" cy="206" r="5" fill="#55aa91"/>
+  <text x="65" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#286b5b">Az enerji</text>
+  <g filter="url(#softShadow)">
+    <rect x="35" y="236" width="120" height="32" rx="16" fill="#e5efff"/>
+  </g>
+  <circle cx="53" cy="252" r="5" fill="#638fc7"/>
+  <text x="65" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385d8c">Az bellek</text>
+</svg>

@@ -9,6 +9,7 @@ tags:
   - quadtree
   - octree
 toc: true
+image: /img/oyun-motorlarinda-uzamsal-43.png
 ---
 
 Bir oyun sahnesinde binlerce nesne bulunabilir; fakat kameranın aynı anda bunların yalnızca küçük bir bölümünü görmesi muhtemeldir. Her karede bütün nesneleri çizim testinden geçirmek, görünmeyen ejderhalara bile işlemci zamanı ayırmak demektir. Quadtree ve octree gibi uzamsal bölme yapıları, dünyayı hiyerarşik bölgelere ayırarak ilgili nesneleri hızla bulmamızı ve gereksiz kontrolleri azaltmamızı sağlar.
@@ -83,3 +84,6 @@ Hayır; optimizasyon dünyasının altın kuralı ölçmektir. Sürekli hareket 
 | Çok dinamik ve eş boyutlu nesneler | Grid veya spatial hash |
 
 Doğru yapı seçildiğinde motor, “Her şeyi kontrol et” yaklaşımından “Yalnızca ilgili bölgelere bak” yaklaşımına geçer. Böylece CPU çizim hazırlığı azalır, kare süreleri dengelenir ve görünmeyen ejderhalar sonunda hak ettikleri şekilde görmezden gelinir.
+
+![oyun-motorlarinda-uzamsal-43](/img/oyun-motorlarinda-uzamsal-43.svg)
+

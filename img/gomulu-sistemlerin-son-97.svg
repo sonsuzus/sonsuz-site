@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="timer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c7dcff"/>
+      <stop offset="100%" stop-color="#9cbcf0"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7f3dc"/>
+      <stop offset="100%" stop-color="#aee0bd"/>
+    </linearGradient>
+    <linearGradient id="warn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe2df"/>
+      <stop offset="100%" stop-color="#f5b7ae"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#50647a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#50647a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="126" fill="#dcecf4" opacity="0.36"/>
+  <circle cx="320" cy="160" r="94" fill="none" stroke="#b8d0dc" stroke-width="2" stroke-dasharray="5 7"/>
+
+  <text x="28" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506477" font-weight="600">WATCHDOG ZAMANLAYICISI</text>
+  <text x="612" y="32" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718497">Son savunma hattı</text>
+
+  <!-- Sağlık görevleri -->
+  <g filter="url(#smallShadow)">
+    <rect x="38" y="77" width="128" height="52" rx="14" fill="#ffffff"/>
+    <circle cx="62" cy="103" r="13" fill="#d8f2df"/>
+    <path d="M56 103 L60 107 L68 98" fill="none" stroke="#3f9d67" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="84" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#344b5d" font-weight="600">Sensör</text>
+    <text x="84" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738495">sağlık bayrağı</text>
+
+    <rect x="38" y="190" width="128" height="52" rx="14" fill="#ffffff"/>
+    <circle cx="62" cy="216" r="13" fill="#d8f2df"/>
+    <path d="M56 216 L60 220 L68 211" fill="none" stroke="#3f9d67" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="84" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#344b5d" font-weight="600">Haberleşme</text>
+    <text x="84" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738495">sağlık bayrağı</text>
+
+    <rect x="182" y="250" width="128" height="46" rx="14" fill="#ffffff"/>
+    <circle cx="206" cy="273" r="13" fill="#d8f2df"/>
+    <path d="M200 273 L204 277 L212 268" fill="none" stroke="#3f9d67" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="227" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#344b5d" font-weight="600">Kontrol görevi</text>
+  </g>
+
+  <!-- Task lines -->
+  <path d="M166 103 C194 103 203 116 223 129" fill="none" stroke="#74ac91" stroke-width="2.2"/>
+  <polygon points="220,123 231,133 217,134" fill="#74ac91"/>
+  <path d="M166 216 C193 216 205 202 224 190" fill="none" stroke="#74ac91" stroke-width="2.2"/>
+  <polygon points="218,187 231,184 224,198" fill="#74ac91"/>
+  <path d="M278 250 C279 235 283 225 291 218" fill="none" stroke="#74ac91" stroke-width="2.2"/>
+  <polygon points="285,218 294,210 294,223" fill="#74ac91"/>
+
+  <!-- Center watchdog -->
+  <g filter="url(#shadow)">
+    <rect x="231" y="112" width="178" height="103" rx="24" fill="url(#timer)"/>
+    <circle cx="270" cy="163" r="25" fill="#edf5ff" opacity="0.86"/>
+    <path d="M270 145 L270 163 L282 170" fill="none" stroke="#4d75a5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="270" cy="163" r="3.5" fill="#4d75a5"/>
+    <text x="306" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#274866" font-weight="700">Watchdog</text>
+    <text x="306" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42647d">Sayaç geri sayar</text>
+    <text x="306" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42647d">Tᵥ = 200 ms</text>
+  </g>
+
+  <!-- Health gate -->
+  <g filter="url(#smallShadow)">
+    <rect x="201" y="55" width="238" height="39" rx="14" fill="url(#safe)"/>
+    <circle cx="225" cy="74.5" r="11" fill="#ffffff" opacity="0.8"/>
+    <path d="M220 75 L224 79 L231 70" fill="none" stroke="#31875a" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="246" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#245c42" font-weight="600">Tüm görevler sağlıklı mı?</text>
+  </g>
+  <path d="M320 94 L320 106" fill="none" stroke="#5f9875" stroke-width="2.2"/>
+  <polygon points="314,103 320,112 326,103" fill="#5f9875"/>
+
+  <!-- Feed loop -->
+  <path d="M407 142 C450 136 467 105 448 79" fill="none" stroke="#4b9e73" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="443,86 444,74 455,80" fill="#4b9e73"/>
+  <text x="447" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36785a">Besle</text>
+
+  <!-- reset path -->
+  <path d="M409 185 C439 190 449 210 466 217" fill="none" stroke="#d36d65" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="459,211 472,220 457,223" fill="#d36d65"/>
+  <text x="416" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b45650">Zaman aşımı</text>
+
+  <!-- Reset outcome -->
+  <g filter="url(#shadow)">
+    <rect x="471" y="181" width="135" height="82" rx="18" fill="url(#warn)"/>
+    <path d="M502 217 A17 17 0 1 1 511 235" fill="none" stroke="#bb5b55" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="508,228 514,238 502,237" fill="#bb5b55"/>
+    <text x="534" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#773d3b" font-weight="700">Reset</text>
+    <text x="534" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d5752">Güvenli</text>
+    <text x="534" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d5752">başlangıç</text>
+  </g>
+
+  <!-- Fault badge -->
+  <g filter="url(#smallShadow)">
+    <rect x="470" y="70" width="137" height="59" rx="15" fill="#ffffff"/>
+    <circle cx="495" cy="99" r="13" fill="#ffe4df"/>
+    <path d="M495 91 L495 101" stroke="#cb665d" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="495" cy="107" r="1.8" fill="#cb665d"/>
+    <text x="516" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#754d4a" font-weight="600">Görev arızası</text>
+    <text x="516" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6a66">Besleme yok</text>
+  </g>
+  <path d="M470 112 C449 120 438 135 427 151" fill="none" stroke="#d17a70" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="426,143 420,160 433,150" fill="#d17a70"/>
+
+  <text x="320" y="307" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617888">Sağlık doğrulaması → besleme · Kanıt yoksa → otomatik yeniden başlatma</text>
+</svg>

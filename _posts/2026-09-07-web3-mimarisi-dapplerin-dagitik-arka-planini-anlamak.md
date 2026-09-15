@@ -9,6 +9,7 @@ tags:
   - dapp
   - akıllı sözleşmeler
 toc: true
+image: /img/web3-mimarisi-dapplerin-49.png
 ---
 
 Bir DApp ilk bakışta React, Vue veya sade JavaScript ile hazırlanmış sıradan bir web uygulamasına benzeyebilir. Ancak kullanıcı “Gönder” düğmesine bastığında istek merkezi bir API sunucusuna değil, cüzdan tarafından imzalanarak dağıtık bir ağa gider. Veritabanı rolünü blokzincir, iş kurallarını ise akıllı sözleşmeler üstlenir. Kısacası görünen yüz tanıdık, motor bölümü oldukça farklıdır.
@@ -27,6 +28,9 @@ Klasik üç katmanlı mimaride önyüz bir REST veya GraphQL API ile konuşur. A
 | Yetkilendirme | Sunucudaki roller | Sözleşme koşulları |
 | İşlem maliyeti | İşletme karşılar | Genellikle kullanıcı gas öder |
 | Değiştirilebilirlik | Hızlı dağıtım yapılabilir | Sözleşme çoğunlukla kalıcıdır |
+
+![web3-mimarisi-dapplerin-49](/img/web3-mimarisi-dapplerin-49.svg)
+
 
 Bu değişim, “arka plan tamamen ortadan kalktı” anlamına gelmez. RPC sağlayıcıları, indeksleyiciler, oracle servisleri ve merkezi olmayan depolama ağları hâlâ mimarinin önemli parçalarıdır.
 

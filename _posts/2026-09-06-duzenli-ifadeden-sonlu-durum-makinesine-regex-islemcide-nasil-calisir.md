@@ -9,9 +9,13 @@ tags:
   - otomat kuramı
   - sonlu durum makineleri
 toc: true
+image: /img/duzenli-ifadeden-sonlu-21.png
 ---
 
 Bir düzenli ifadeye baktığımızda yalnızca parantezler, yıldızlar ve gizemli ters eğik çizgiler görürüz. İşlemci ise bu sembollerin şiirselliğiyle ilgilenmez; ona karşılaştırmalar, geçişler ve kesin kurallar gerekir. Otomat kuramı, `a(b|c)*d` gibi bir metin kalıbını sonlu sayıda duruma sahip bir makineye dönüştürerek bu iki dünya arasında köprü kurar.
+
+
+![duzenli-ifadeden-sonlu-21](/img/duzenli-ifadeden-sonlu-21.svg)
 
 ``
 

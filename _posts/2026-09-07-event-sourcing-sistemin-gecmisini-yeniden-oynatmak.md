@@ -9,7 +9,11 @@ tags:
   - veritabanı
   - yazılım-mimarisi
 toc: true
+image: /img/event-sourcing-sistemin-72.png
 ---
+
+![event-sourcing-sistemin-72](/img/event-sourcing-sistemin-72.svg)
+
 
 Bir banka hesabındaki bakiyenin 1.250 TL olduğunu bilmek faydalıdır; ancak bu bakiyeye **nasıl ulaşıldığını** bilmek çok daha güçlüdür. Event Sourcing, yalnızca güncel durumu saklamak yerine, durumu meydana getiren bütün olayları değiştirilemez bir günlükte tutar. Böylece sistemin geçmişi silinmez; gerektiğinde baştan oynatılarak herhangi bir andaki durum yeniden oluşturulabilir.
 

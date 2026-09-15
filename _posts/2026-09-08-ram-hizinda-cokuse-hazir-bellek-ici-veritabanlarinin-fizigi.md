@@ -9,9 +9,13 @@ tags:
   - ram
   - çökme kurtarma
 toc: true
+image: /img/ram-hizinda-cokuse-84.png
 ---
 
 Bellek içi veritabanları, verileri klasik sistemlerdeki gibi sürekli diskten okumak yerine doğrudan RAM üzerinde işler. Böylece sorgular saniyenin küçük kesirlerinde tamamlanabilir. Ancak RAM uçucudur: Elektrik kesildiğinde içindeki veriler kaybolur. Dolayısıyla asıl mühendislik numarası yalnızca hızlı olmak değil, sistem çöktüğünde hafızasını geri kazanabilmektir.
+
+![ram-hizinda-cokuse-84](/img/ram-hizinda-cokuse-84.svg)
+
 ``
 ## Hızın fiziksel kaynağı
 

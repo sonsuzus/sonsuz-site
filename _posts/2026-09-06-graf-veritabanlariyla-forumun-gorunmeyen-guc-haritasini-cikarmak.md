@@ -9,6 +9,7 @@ tags:
   - sosyal-ağ-analizi
   - neo4j
 toc: true
+image: /img/graf-veritabanlariyla-forumun-60.png
 ---
 
 Bir forum yalnızca mesajların sıralandığı dijital bir pano değildir; üyelerin cevap verdiği, tartıştığı, destek olduğu ve bazen küçük krallıklar kurduğu canlı bir ilişkiler ağıdır. Graf veritabanları sayesinde bu ağı çizge olarak modelleyebilir, topluluğun merkezindeki kullanıcıları ve görünmeyen hiyerarşisini matematiksel metriklerle ortaya çıkarabiliriz.
@@ -91,3 +92,6 @@ Bu sorgu forumun en etkili on kullanıcısını döndürür. Sonuçlar moderatö
 Forum hiyerarşisi yalnızca “yönetici–üye” ayrımı değildir. Louvain veya Leiden algoritmasıyla topluluklar, k-core ile ağın dayanıklı çekirdeği bulunabilir. Yüksek `core` değerine sahip üyeler, birbirleriyle yoğun biçimde bağlı merkez katmanı oluşturur. PageRank yüksek, arasındalık düşükse kullanıcı kendi grubunun otoritesi olabilir. Her ikisi de yüksekse grupları birbirine bağlayan güçlü bir kanaat önderidir.
 
 Son olarak metrikleri zaman pencereleriyle hesaplamak önemlidir. Tüm geçmişi tek grafikte toplamak, yıllar önce aktif olmuş “hayalet kralları” zirvede tutabilir. Son 30, 90 ve 365 günlük ağları karşılaştırmak; yükselen uzmanları, zayıflayan toplulukları ve bilgi akışındaki darboğazları çok daha erken gösterir.
+
+![graf-veritabanlariyla-forumun-60](/img/graf-veritabanlariyla-forumun-60.svg)
+

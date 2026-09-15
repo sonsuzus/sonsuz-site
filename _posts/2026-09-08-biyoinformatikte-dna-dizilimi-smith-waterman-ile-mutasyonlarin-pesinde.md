@@ -9,6 +9,7 @@ tags:
   - smith-waterman
   - dna dizilimi
 toc: true
+image: /img/biyoinformatikte-dna-dizilimi-41.png
 ---
 
 İnsan genomu yaklaşık 3 milyar nükleotitten oluşur. Bu devasa metin içinde tek bir harfin değişmesi, eklenmesi veya silinmesi bile biyolojik açıdan önemli bir mutasyonu gösterebilir. Ancak DNA dizilerini sıradan metinler gibi karşılaştırmak yeterli değildir; evrimsel değişimleri, boşlukları ve hatalı okumaları hesaba katan özel algoritmalara ihtiyaç duyarız.
@@ -96,3 +97,6 @@ Smith-Waterman kesin sonuç verir fakat zaman karmaşıklığı $O(mn)$, bellek 
 | Sezgisel filtreleme | Zayıf adayları erkenden eler |
 
 BLAST gibi araçlar hız için sezgisel yöntemlerden yararlanırken Smith-Waterman doğruluğun önemli olduğu son doğrulama aşamasında öne çıkar. Modern biyoinformatik iş akışının sırrı, tüm samanlığı tek tek taramak değil; önce güçlü adayları seçip mutasyon iğnesini hassas bir hizalamayla doğrulamaktır.
+
+![biyoinformatikte-dna-dizilimi-41](/img/biyoinformatikte-dna-dizilimi-41.svg)
+

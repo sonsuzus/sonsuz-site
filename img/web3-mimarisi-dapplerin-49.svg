@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="chain" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b7d9ff"/>
+      <stop offset="100%" stop-color="#bcebd5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55718c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5d7890" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="34" r="72" fill="#dceeff" opacity="0.55"/>
+  <circle cx="588" cy="281" r="95" fill="#ddf3e4" opacity="0.55"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516a">DApp veri ve güven akışı</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71859a">Görünen önyüz · dağıtık arka plan</text>
+
+  <!-- Connection lines -->
+  <path d="M160 153 H188" fill="none" stroke="#7e9db7" stroke-width="2"/>
+  <polygon points="188,153 180,148 180,158" fill="#7e9db7"/>
+  <path d="M298 153 H326" fill="none" stroke="#7e9db7" stroke-width="2"/>
+  <polygon points="326,153 318,148 318,158" fill="#7e9db7"/>
+  <path d="M447 153 H473" fill="none" stroke="#7e9db7" stroke-width="2"/>
+  <polygon points="473,153 465,148 465,158" fill="#7e9db7"/>
+
+  <path d="M386 211 V238 H267 V223" fill="none" stroke="#91aabd" stroke-width="1.7"/>
+  <polygon points="267,223 262,231 272,231" fill="#91aabd"/>
+  <path d="M386 211 V238 H392 V223" fill="none" stroke="#91aabd" stroke-width="1.7"/>
+  <polygon points="392,223 387,231 397,231" fill="#91aabd"/>
+  <path d="M386 211 V238 H518 V223" fill="none" stroke="#91aabd" stroke-width="1.7"/>
+  <polygon points="518,223 513,231 523,231" fill="#91aabd"/>
+
+  <!-- User -->
+  <g filter="url(#softShadow)">
+    <rect x="29" y="111" width="131" height="84" rx="17" fill="#fffdf9"/>
+    <circle cx="65" cy="143" r="14" fill="#ffd9b9"/>
+    <path d="M43 178 C45 159 85 159 87 178" fill="#8fbde4"/>
+    <rect x="98" y="129" width="41" height="7" rx="3.5" fill="#9db7cf"/>
+    <rect x="98" y="143" width="31" height="6" rx="3" fill="#c4d5e4"/>
+    <rect x="98" y="158" width="37" height="18" rx="6" fill="#d5f0df"/>
+  </g>
+  <text x="94" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516c">Kullanıcı</text>
+
+  <!-- Frontend -->
+  <g filter="url(#shadow)">
+    <rect x="188" y="106" width="110" height="94" rx="18" fill="#e7f1ff"/>
+    <rect x="209" y="121" width="68" height="42" rx="7" fill="#ffffff"/>
+    <rect x="216" y="129" width="26" height="5" rx="2.5" fill="#86b5e6"/>
+    <rect x="216" y="140" width="48" height="4" rx="2" fill="#c1d8ee"/>
+    <rect x="216" y="149" width="35" height="4" rx="2" fill="#c1d8ee"/>
+    <rect x="219" y="170" width="48" height="12" rx="6" fill="#9bc9f0"/>
+  </g>
+  <text x="243" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516c">Önyüz</text>
+
+  <!-- Wallet -->
+  <g filter="url(#shadow)">
+    <rect x="326" y="106" width="121" height="105" rx="20" fill="#fcebd8"/>
+    <rect x="352" y="128" width="69" height="43" rx="9" fill="#fff9f2" stroke="#e8bd8e" stroke-width="1.5"/>
+    <path d="M352 139 H421" fill="none" stroke="#e8bd8e" stroke-width="1.5"/>
+    <circle cx="403" cy="151" r="4" fill="#f0a75b"/>
+    <rect x="347" y="178" width="79" height="16" rx="8" fill="#f3c792"/>
+  </g>
+  <text x="386" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#714d29">Cüzdan ve imza</text>
+
+  <!-- Blockchain -->
+  <g filter="url(#shadow)">
+    <rect x="473" y="106" width="138" height="94" rx="18" fill="url(#chain)"/>
+    <rect x="490" y="126" width="31" height="38" rx="7" fill="#f9fffc" stroke="#82c8ad" stroke-width="1.3"/>
+    <rect x="527" y="126" width="31" height="38" rx="7" fill="#f9fffc" stroke="#82c8ad" stroke-width="1.3"/>
+    <rect x="564" y="126" width="31" height="38" rx="7" fill="#f9fffc" stroke="#82c8ad" stroke-width="1.3"/>
+    <path d="M521 145 H527 M558 145 H564" stroke="#68ae98" stroke-width="2"/>
+    <circle cx="505" cy="145" r="5" fill="#9fd8c2"/>
+    <circle cx="542" cy="145" r="5" fill="#9fd8c2"/>
+    <circle cx="579" cy="145" r="5" fill="#9fd8c2"/>
+  </g>
+  <text x="542" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2d6959">Blokzincir</text>
+
+  <!-- Support layer -->
+  <g filter="url(#softShadow)">
+    <rect x="207" y="239" width="120" height="56" rx="14" fill="#eee8ff"/>
+    <circle cx="230" cy="259" r="10" fill="#c8b9f1"/>
+    <path d="M226 259 H234 M230 255 V263" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="274" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#594b83">RPC düğümü</text>
+    <text x="274" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756a9a">Ağ geçidi</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="332" y="239" width="120" height="56" rx="14" fill="#e1f3f2"/>
+    <circle cx="355" cy="260" r="11" fill="#9bd7d1"/>
+    <path d="M350 260 H360 M355 255 V265" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="400" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386f70">İndeksleyici</text>
+    <text x="400" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8c8d">Olay sorgusu</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="458" y="239" width="120" height="56" rx="14" fill="#fff0dc"/>
+    <path d="M479 261 l9 -12 l9 12 l-9 12 z" fill="#f0be7b"/>
+    <circle cx="488" cy="261" r="3" fill="#fff8ed"/>
+    <text x="526" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805b31">IPFS ve oracle</text>
+    <text x="526" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7750">Harici veri</text>
+  </g>
+
+  <!-- status chips -->
+  <rect x="183" y="73" width="91" height="21" rx="10.5" fill="#d8eafe"/>
+  <text x="228.5" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426d94">İşlem isteği</text>
+  <rect x="320" y="73" width="133" height="21" rx="10.5" fill="#fce2c3"/>
+  <text x="386.5" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#845727">Dijital imza ve gas</text>
+  <rect x="480" y="73" width="124" height="21" rx="10.5" fill="#d9f1e2"/>
+  <text x="542" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39725e">Sözleşme durumu</text>
+</svg>

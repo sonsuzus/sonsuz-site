@@ -9,7 +9,11 @@ tags:
   - eliptik-eğriler
   - siber-güvenlik
 toc: true
+image: /img/kriptografide-ecc-kucuk-88.png
 ---
+
+![kriptografide-ecc-kucuk-88](/img/kriptografide-ecc-kucuk-88.svg)
+
 
 Kriptografi dünyasında “daha büyük anahtar, daha güçlü güvenlik” düşüncesi her zaman geçerli değildir. Eliptik Eğri Kriptografisi (Elliptic Curve Cryptography veya ECC), zekice seçilmiş matematiksel yapılar sayesinde RSA gibi klasik açık anahtarlı yöntemlerle benzer güvenliği çok daha kısa anahtarlarla sunar. Böylece özellikle mobil cihazlarda, akıllı kartlarda ve IoT sistemlerinde daha az bellek, bant genişliği ve enerji tüketimi hedeflenir.
 ``

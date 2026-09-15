@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="prove" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#cce0fb"/>
+    </linearGradient>
+    <linearGradient id="verify" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddf3df"/>
+      <stop offset="100%" stop-color="#c7e8ce"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7891a3" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-35%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6e8796" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="49" cy="42" r="72" fill="#dceef7" opacity="0.45"/>
+  <circle cx="598" cy="280" r="85" fill="#dff1d9" opacity="0.5"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536a">SIFIR BİLGİ İSPATI</text>
+  <text x="320" y="46" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a7e8b">Gizli bilgi paylaşılmadan doğrulama</text>
+
+  <rect x="34" y="75" width="152" height="151" rx="20" fill="url(#prove)" stroke="#b6d0ee" filter="url(#shadow)"/>
+  <circle cx="110" cy="109" r="22" fill="#f8fcff" stroke="#99bfe6"/>
+  <path d="M110 94 L122 100 L122 112 C122 120 116 126 110 129 C104 126 98 120 98 112 L98 100 Z" fill="#6e9ed2"/>
+  <circle cx="110" cy="110" r="3" fill="#f8fcff"/>
+  <path d="M110 113 L110 119" stroke="#f8fcff" stroke-width="2" stroke-linecap="round"/>
+  <text x="110" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315675">Kanıtlayıcı</text>
+  <rect x="53" y="164" width="114" height="36" rx="10" fill="#f8fcff" stroke="#c3d9f0" filter="url(#smallShadow)"/>
+  <text x="110" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48677e">Gizli anahtar</text>
+  <text x="110" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3973a8">x  •  r</text>
+
+  <rect x="454" y="75" width="152" height="151" rx="20" fill="url(#verify)" stroke="#b9ddb8" filter="url(#shadow)"/>
+  <circle cx="530" cy="109" r="22" fill="#fbfffa" stroke="#9fcba5"/>
+  <path d="M518 110 L527 119 L543 100" fill="none" stroke="#5d9e6d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="530" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356441">Doğrulayıcı</text>
+  <rect x="473" y="164" width="114" height="36" rx="10" fill="#fbfffa" stroke="#c5e1c5" filter="url(#smallShadow)"/>
+  <text x="530" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7655">Açık değer</text>
+  <text x="530" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d9360">y = gˣ</text>
+
+  <path d="M188 96 H273" fill="none" stroke="#7897b7" stroke-width="2"/>
+  <polygon points="273,96 264,91 264,101" fill="#7897b7"/>
+  <rect x="207" y="76" width="55" height="22" rx="9" fill="#ffffff" stroke="#d4e0e9" filter="url(#smallShadow)"/>
+  <text x="234.5" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46657c">t = gʳ</text>
+
+  <path d="M452 143 H367" fill="none" stroke="#789d82" stroke-width="2"/>
+  <polygon points="367,143 376,138 376,148" fill="#789d82"/>
+  <rect x="381" y="123" width="57" height="22" rx="9" fill="#ffffff" stroke="#d4e5d6" filter="url(#smallShadow)"/>
+  <text x="409.5" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7556">c rastgele</text>
+
+  <path d="M188 190 H273" fill="none" stroke="#7897b7" stroke-width="2"/>
+  <polygon points="273,190 264,185 264,195" fill="#7897b7"/>
+  <rect x="199" y="202" width="73" height="22" rx="9" fill="#ffffff" stroke="#d4e0e9" filter="url(#smallShadow)"/>
+  <text x="235.5" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46657c">s = r + cx</text>
+
+  <rect x="278" y="76" width="84" height="148" rx="20" fill="#ffffff" stroke="#d5e2e9" filter="url(#shadow)"/>
+  <text x="320" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6478">Transkript</text>
+  <line x1="296" y1="113" x2="344" y2="113" stroke="#dce6ec"/>
+  <circle cx="300" cy="132" r="5" fill="#85add5"/>
+  <text x="313" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607a8d">Taahhüt</text>
+  <circle cx="300" cy="156" r="5" fill="#83b98c"/>
+  <text x="313" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607a8d">Meydan okuma</text>
+  <circle cx="300" cy="180" r="5" fill="#85add5"/>
+  <text x="313" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607a8d">Yanıt</text>
+  <text x="320" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#d0776c">x gönderilmez</text>
+
+  <rect x="122" y="251" width="396" height="48" rx="16" fill="#fffdf8" stroke="#eadfca" filter="url(#shadow)"/>
+  <circle cx="151" cy="275" r="14" fill="#f4d89f"/>
+  <path d="M145 275 L149 279 L157 270" fill="none" stroke="#8a6b2d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="177" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#62533d">Doğrulama</text>
+  <text x="177" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685f51">gˢ = t · yᶜ</text>
+  <line x1="298" y1="261" x2="298" y2="289" stroke="#eadfca"/>
+  <text x="317" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d7655">Sonuç</text>
+  <text x="317" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7863">Kanıt kabul edilir</text>
+</svg>

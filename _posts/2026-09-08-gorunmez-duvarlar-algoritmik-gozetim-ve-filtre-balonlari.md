@@ -9,6 +9,7 @@ tags:
   - öneri sistemleri
   - filtre balonu
 toc: true
+image: /img/gorunmez-duvarlar-algoritmik-23.png
 ---
 
 Bir içerik platformunu açıp yalnızca beş dakika geçirmeyi planlarken kendinizi bir saat sonra hâlâ kaydırma yaparken bulduysanız, yalnız değilsiniz. Karşınızdaki akış rastgele hazırlanmaz; tıklamalarınızdan duraksamalarınıza kadar pek çok sinyal ölçülür. Algoritmik gözetim, sizi dürbünle izleyen bir görevli gibi değil, davranışlarınızdan sürekli öğrenen görünmez bir editör gibi çalışır.
@@ -72,3 +73,6 @@ Kod, etiket örtüşmesine yüzde 80 ağırlık verdiği için mevcut ilgileri s
 Kullanıcılar öneri geçmişini temizleyebilir, kronolojik akış kullanabilir, farklı kaynakları bilinçli biçimde takip edebilir ve kişiselleştirilmiş reklamları sınırlandırabilir. Ancak sorumluluk yalnızca bireye bırakılamaz. Platformların açıklanabilir öneriler, veri minimizasyonu ve çeşitlilik hedefleri uygulaması gerekir.
 
 Algoritmalar sihirli değildir; kendilerine verilen hedefleri olağanüstü bir sabırla optimize ederler. Bu nedenle asıl soru, algoritmanın bizi tanıyıp tanımadığı değil, bizi tanırken kimin çıkarına çalıştığıdır.
+
+![gorunmez-duvarlar-algoritmik-23](/img/gorunmez-duvarlar-algoritmik-23.svg)
+

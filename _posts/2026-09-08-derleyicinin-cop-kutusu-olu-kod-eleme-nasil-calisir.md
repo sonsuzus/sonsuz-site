@@ -9,6 +9,7 @@ tags:
   - optimizasyon
   - ölü kod eleme
 toc: true
+image: /img/derleyicinin-cop-kutusu-11.png
 ---
 
 Kodunuzda kimsenin ziyaret etmediği bir `if` dalı veya hesaplanıp unutulan bir değişken bulunabilir. Bunlar kaynak dosyada gayet canlı görünse de programın gözlemlenebilir sonucuna katkı sağlamaz. Derleyicilerin **ölü kod eleme** (Dead Code Elimination, DCE) optimizasyonu, bu gereksiz parçaları belirleyip makine kodundan çıkarır. Sonuç genellikle daha küçük, daha hızlı ve işlemci önbelleğiyle daha iyi anlaşan bir programdır.
@@ -27,6 +28,9 @@ Kodunuzda kimsenin ziyaret etmediği bir `if` dalı veya hesaplanıp unutulan bi
 | Ölü atama | Üzerine hemen yeni değer yazılan değişken | İlk değer hiç okunmaz |
 | Kullanılmayan hesaplama | Sonucu saklanmayan aritmetik işlem | Gözlemlenebilir çıktı üretmez |
 | Sabit koşullu dal | `if (false)` bloğu | Koşul hiçbir zaman doğru değildir |
+
+![derleyicinin-cop-kutusu-11](/img/derleyicinin-cop-kutusu-11.svg)
+
 
 Örneğin aşağıdaki C kodunda bazı satırlar gereksizdir:
 

@@ -9,6 +9,7 @@ tags:
   - cap teoremi
   - sistem mimarisi
 toc: true
+image: /img/cap-teoremi-dagitik-26.png
 ---
 
 Dağıtık sistem tasarlamak, üç önemli özelliği aynı valize sığdırmaya çalışmaya benzer: tutarlılık, erişilebilirlik ve ağ bölünmelerine tolerans. CAP Teoremi, ağ koptuğunda bu valizin kapanmayacağını ve mimarın zorunlu bir seçim yapması gerektiğini söyler. Bu nedenle mesele “mükemmel veritabanını” bulmak değil, sistemin hangi hata durumunda nasıl davranacağını bilinçli biçimde belirlemektir.
@@ -45,6 +46,9 @@ Ağ bağlantısı yokken B’nin hem kesin güncel değeri bilmesi hem de mutlak
 | CP | Tutarlılık | Yanlış veya eski veri engellenir | Bazı istekler reddedilir | Banka bakiyesi, kilit servisi |
 | AP | Erişilebilirlik | Sistem yanıt vermeyi sürdürür | Geçici veri uyuşmazlığı oluşur | Sosyal akış, beğeni sayısı |
 | CA | İkisini normal koşullarda sunar | Basit kullanım modeli | Gerçek bölünmeye dayanamaz | Tek düğümlü ilişkisel sistem |
+
+![cap-teoremi-dagitik-26](/img/cap-teoremi-dagitik-26.svg)
+
 
 ## CP Kararı Kodda Nasıl Görünür?
 

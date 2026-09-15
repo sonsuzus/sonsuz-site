@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="jwtGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8ddf6"/>
+    </linearGradient>
+    <linearGradient id="sessionGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff4e7"/>
+      <stop offset="100%" stop-color="#c7e7d2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d87a0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5c758e" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="570" cy="42" r="90" fill="#dceef0" opacity="0.38"/>
+  <circle cx="80" cy="292" r="82" fill="#dce8ff" opacity="0.38"/>
+
+  <text x="34" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31516c">HİBRİT OTURUM GÜVENLİĞİ</text>
+  <text x="34" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">JWT doğrulama + sunucu taraflı güven kararı</text>
+
+  <!-- Client -->
+  <g filter="url(#shadow)">
+    <rect x="34" y="107" width="124" height="128" rx="19" fill="#ffffff"/>
+    <rect x="46" y="120" width="100" height="37" rx="12" fill="#eef5ff"/>
+    <rect x="73" y="127" width="46" height="22" rx="5" fill="#9bbce1"/>
+    <circle cx="96" cy="146" r="2.5" fill="#ffffff"/>
+    <path d="M62 174 L130 174" stroke="#d9e5ef" stroke-width="2" stroke-linecap="round"/>
+    <path d="M62 184 L118 184" stroke="#d9e5ef" stroke-width="2" stroke-linecap="round"/>
+    <rect x="55" y="198" width="82" height="23" rx="9" fill="#d9eef8"/>
+    <text x="96" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345b77">İstemci</text>
+  </g>
+
+  <!-- flow line 1 -->
+  <path d="M159 161 C176 161 184 161 199 161" fill="none" stroke="#7895ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="199,155 210,161 199,167" fill="#7895ad"/>
+  <rect x="165" y="137" width="41" height="18" rx="7" fill="#ffffff" opacity="0.92"/>
+  <text x="185" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567188">İstek</text>
+
+  <!-- JWT gateway -->
+  <g filter="url(#shadow)">
+    <rect x="210" y="92" width="191" height="144" rx="21" fill="#ffffff"/>
+    <rect x="224" y="106" width="163" height="42" rx="13" fill="url(#jwtGrad)"/>
+    <path d="M252 128 L262 118 L272 128 L262 138 Z" fill="#4f7ea6"/>
+    <path d="M282 119 L356 119" stroke="#7b9fc0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M282 132 L334 132" stroke="#9ebad2" stroke-width="3" stroke-linecap="round"/>
+    <text x="305" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31516c">JWT Doğrulama</text>
+    <text x="305" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d758a">İmza · süre · hedef</text>
+    <rect x="244" y="202" width="122" height="20" rx="8" fill="#edf5fb"/>
+    <text x="305" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52728a">Kısa ömürlü erişim</text>
+  </g>
+
+  <!-- accepted flow -->
+  <path d="M402 159 C416 159 421 159 435 159" fill="none" stroke="#639b80" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="435,153 446,159 435,165" fill="#639b80"/>
+
+  <!-- Session record -->
+  <g filter="url(#shadow)">
+    <rect x="446" y="91" width="160" height="146" rx="21" fill="#ffffff"/>
+    <rect x="460" y="105" width="132" height="31" rx="11" fill="url(#sessionGrad)"/>
+    <circle cx="477" cy="120" r="8" fill="#5a9c76"/>
+    <path d="M474 120 L477 123 L482 116" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="530" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#32634a">Oturum Kaydı</text>
+    <rect x="462" y="148" width="124" height="20" rx="7" fill="#f0f8f3"/>
+    <text x="524" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547766">Aktif mi?</text>
+    <rect x="462" y="175" width="124" height="20" rx="7" fill="#f0f8f3"/>
+    <text x="524" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547766">İptal edildi mi?</text>
+    <rect x="462" y="202" width="124" height="20" rx="7" fill="#f0f8f3"/>
+    <text x="524" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547766">Özet ve cihaz</text>
+  </g>
+
+  <!-- lower trust decision -->
+  <path d="M526 238 L526 256" fill="none" stroke="#639b80" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="520,256 526,267 532,256" fill="#639b80"/>
+  <path d="M306 237 C306 260 342 273 388 273 L464 273" fill="none" stroke="#7895ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="464,267 475,273 464,279" fill="#7895ad"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="475" y="253" width="131" height="47" rx="16" fill="#e7f5eb"/>
+    <circle cx="496" cy="276" r="10" fill="#60a67c"/>
+    <path d="M491 276 L495 280 L502 271" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="551" y="273" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376a4d">API Erişimi</text>
+    <text x="551" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8370">Kabul</text>
+  </g>
+
+  <!-- revoke branch -->
+  <path d="M306 92 C306 78 306 74 306 66" fill="none" stroke="#bd7777" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="300,66 306,55 312,66" fill="#bd7777"/>
+  <g filter="url(#softShadow)">
+    <rect x="226" y="56" width="160" height="28" rx="12" fill="#fff0f0"/>
+    <circle cx="245" cy="70" r="8" fill="#d67e7e"/>
+    <path d="M241 66 L249 74 M249 66 L241 74" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="316" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c4e4e">Çalıntı veya iptal: Reddet</text>
+  </g>
+
+  <text x="34" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Refresh belirteci: rotasyon · tek kullanım · sunucuda özet</text>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#826ee8"/>
+      <stop offset="1" stop-color="#5c9ae5"/>
+    </linearGradient>
+    <linearGradient id="pipe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#92d4c3"/>
+      <stop offset="1" stop-color="#71b9dd"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#54718a" flood-opacity="0.17"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5e7285" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="158" r="117" fill="#dceefa" opacity="0.38"/>
+  <circle cx="320" cy="158" r="89" fill="#e9f6ed" opacity="0.58"/>
+
+  <text x="28" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536b">OPENAPI SÖZLEŞMESİ</text>
+  <text x="28" y="46" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728398">Ortak dil • otomatik güvence</text>
+
+  <!-- Left team cards -->
+  <rect x="26" y="82" width="126" height="48" rx="14" fill="#fff" filter="url(#smallShadow)"/>
+  <circle cx="51" cy="106" r="13" fill="#d9cbfa"/>
+  <path d="M45 109c2-5 10-5 12 0M48 103a3 3 0 1 0 6 0a3 3 0 0 0-6 0" fill="none" stroke="#715cc8" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="72" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46566b">Geliştirici</text>
+  <text x="72" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a899a">Tasarım</text>
+
+  <rect x="26" y="187" width="126" height="48" rx="14" fill="#fff" filter="url(#smallShadow)"/>
+  <circle cx="51" cy="211" r="13" fill="#cdeee0"/>
+  <path d="M45 214h12M47 208h8M49 205h4" fill="none" stroke="#398d76" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="72" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46566b">Test Ekibi</text>
+  <text x="72" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a899a">Doğrulama</text>
+
+  <!-- Incoming arrows -->
+  <path d="M152 106 C181 106 179 128 211 137" fill="none" stroke="#9aaec3" stroke-width="2"/>
+  <polygon points="211,137 202,132 204,142" fill="#9aaec3"/>
+  <path d="M152 211 C182 211 181 190 211 181" fill="none" stroke="#9aaec3" stroke-width="2"/>
+  <polygon points="211,181 204,176 207,186" fill="#9aaec3"/>
+
+  <!-- Core -->
+  <rect x="211" y="106" width="218" height="105" rx="24" fill="url(#core)" filter="url(#shadow)"/>
+  <rect x="220" y="115" width="200" height="87" rx="18" fill="#fff" opacity="0.12"/>
+  <path d="M244 137h22M244 151h35M244 165h27M244 179h40" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <path d="M278 135l13 8-13 8M278 163l13 8-13 8" fill="none" stroke="#dff7ff" stroke-width="2" stroke-linejoin="round"/>
+  <text x="306" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#fff">OpenAPI</text>
+  <text x="306" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf7ff">Yaşayan Sözleşme</text>
+  <text x="306" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#dceeff">YAML veya JSON</text>
+
+  <!-- Right output cards -->
+  <rect x="488" y="54" width="126" height="48" rx="14" fill="#fff" filter="url(#smallShadow)"/>
+  <circle cx="513" cy="78" r="13" fill="#ffe5b7"/>
+  <path d="M507 72h10v12h-10zM509 76h6M509 80h6" fill="none" stroke="#b98231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="534" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46566b">Doküman</text>
+  <text x="534" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a899a">Etkileşimli</text>
+
+  <rect x="488" y="136" width="126" height="48" rx="14" fill="#fff" filter="url(#smallShadow)"/>
+  <circle cx="513" cy="160" r="13" fill="#cbe8fb"/>
+  <path d="M507 158l4-4 4 4M511 154v11M518 156h3v8h-3" fill="none" stroke="#397daa" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="534" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46566b">Mock ve SDK</text>
+  <text x="534" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a899a">Üretim</text>
+
+  <rect x="488" y="218" width="126" height="48" rx="14" fill="#fff" filter="url(#smallShadow)"/>
+  <circle cx="513" cy="242" r="13" fill="#d9f0d0"/>
+  <path d="M507 242l4 4 8-9" fill="none" stroke="#52934d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="534" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46566b">Sözleşme</text>
+  <text x="534" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a899a">Testi</text>
+
+  <!-- Outgoing arrows -->
+  <path d="M429 132 C455 126 457 80 488 80" fill="none" stroke="#82b9bd" stroke-width="2"/>
+  <polygon points="488,80 479,75 480,85" fill="#82b9bd"/>
+  <path d="M429 158h51" fill="none" stroke="#82b9bd" stroke-width="2"/>
+  <polygon points="488,160 479,155 479,165" fill="#82b9bd"/>
+  <path d="M429 187 C455 193 457 242 488 242" fill="none" stroke="#82b9bd" stroke-width="2"/>
+  <polygon points="488,242 479,237 480,247" fill="#82b9bd"/>
+
+  <!-- Bottom automation rail -->
+  <rect x="113" y="275" width="414" height="28" rx="14" fill="#fff" filter="url(#smallShadow)"/>
+  <rect x="121" y="281" width="148" height="16" rx="8" fill="#e0f1e6"/>
+  <rect x="273" y="281" width="123" height="16" rx="8" fill="#e0eafb"/>
+  <rect x="400" y="281" width="119" height="16" rx="8" fill="#fdebd0"/>
+  <text x="147" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#498162">Denetle</text>
+  <text x="299" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5875ae">Karşılaştır</text>
+  <text x="428" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a87532">Yayımla</text>
+</svg>

@@ -9,9 +9,13 @@ tags:
   - yapay zekâ etiği
   - algoritma tasarımı
 toc: true
+image: /img/otonom-arac-ikilemleri-95.png
 ---
 
 Otonom bir araç, kazanın artık fiziksel olarak önlenemediği birkaç milisaniyede nasıl davranmalıdır? Bu soru genellikle “Yolcuyu mu, yayayı mı korusun?” biçiminde sorulsa da gerçek dünya, klasik tramvay probleminden çok daha karmaşıktır. Belirsiz sensör verileri, farklı yaralanma ihtimalleri ve hukuki yükümlülükler aynı anda değerlendirilir. Dolayısıyla etik algoritma, kime çarpılacağını seçen soğuk bir hâkim değil; beklenen zararı güvenli ve denetlenebilir kurallarla azaltmaya çalışan son savunma katmanıdır.
+
+
+![otonom-arac-ikilemleri-95](/img/otonom-arac-ikilemleri-95.svg)
 
 ``
 

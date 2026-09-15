@@ -9,7 +9,11 @@ tags:
   - watchdog
   - mikrodenetleyici
 toc: true
+image: /img/gomulu-sistemlerin-son-97.png
 ---
+
+![gomulu-sistemlerin-son-97](/img/gomulu-sistemlerin-son-97.svg)
+
 
 Bir mikrodenetleyici çalışırken kodun sonsuz döngüye girmesi, bir çevre biriminin yanıt vermemesi veya beklenmeyen bir bellek hatası tüm sistemi sessizce kilitleyebilir. İnsan müdahalesinin mümkün olmadığı otomobillerde, endüstriyel kontrol kartlarında ve uzaktaki IoT cihazlarında bu durum ciddi sonuçlar doğurur. Watchdog zamanlayıcısı, yazılımın hâlâ sağlıklı olduğunu düzenli olarak kanıtlamasını isteyen ve kanıt gelmezse sistemi otomatik olarak yeniden başlatan küçük ama etkili bir güvenlik mekanizmasıdır.
 ``

@@ -9,6 +9,7 @@ tags:
   - kar tanesi şeması
   - sql
 toc: true
+image: /img/veri-ambarlarinda-kar-49.png
 ---
 
 Bir veri ambarında aynı şehir, kategori veya marka bilgisinin binlerce kez tekrarlandığını gördüğünüzde içinizdeki düzen tutkunu geliştirici hemen normalizasyon düğmesine basmak isteyebilir. Kar tanesi şeması, tam olarak bu isteğin veri modeline dönüşmüş hâlidir: Boyut tablolarını alt tablolara ayırarak tekrarı azaltır, bütünlüğü güçlendirir ve karşılığında sorgulara birkaç `JOIN` daha hediye eder.
@@ -100,3 +101,6 @@ Her ek `JOIN`, sorgu iyileştiricisine daha fazla iş verir. Büyük tablolarda 
 Kar tanesi şeması; boyut hiyerarşileri derinse, ortak alt boyutlar birçok yerde kullanılıyorsa ve veri bütünlüğü sorgu sadeliğinden daha önemliyse güçlü bir seçenektir. Buna karşılık hızlı raporlama, kullanıcı dostu model ve az sayıda `JOIN` öncelikliyse yıldız şeması genellikle daha pratiktir.
 
 Kısacası kar tanesi şeması, veri ambarının titiz arşivcisidir: Her şeyi doğru çekmeceye koyar, fakat aradığınız rapora ulaşırken birkaç çekmece daha açmanız gerekir.
+
+![veri-ambarlarinda-kar-49](/img/veri-ambarlarinda-kar-49.svg)
+

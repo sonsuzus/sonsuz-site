@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="dnaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d8f5e8"/>
+    </linearGradient>
+    <linearGradient id="matrixGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0e8ff"/>
+      <stop offset="100%" stop-color="#e1efff"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d9"/>
+      <stop offset="100%" stop-color="#ffe2e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a8" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-40%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="35" r="72" fill="#dcefff" opacity="0.42"/>
+  <circle cx="585" cy="277" r="102" fill="#dff4df" opacity="0.42"/>
+  <circle cx="449" cy="43" r="35" fill="#f6e5ff" opacity="0.55"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Yerel DNA Hizalama</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Ön filtreleme → hassas doğrulama</text>
+
+  <g filter="url(#shadow)">
+    <rect x="26" y="78" width="166" height="176" rx="20" fill="url(#dnaGrad)" stroke="#c6dcec"/>
+  </g>
+  <circle cx="53" cy="105" r="15" fill="#ffffff" opacity="0.85" filter="url(#smallShadow)"/>
+  <path d="M48 99 C55 94 59 101 55 106 C51 111 57 115 61 110" fill="none" stroke="#4e88b8" stroke-width="2"/>
+  <path d="M45 110 C49 115 54 117 59 114" fill="none" stroke="#64ae8e" stroke-width="2"/>
+  <text x="77" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36566e">DNA Dizileri</text>
+  <text x="77" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61788e">Uzun genom okumaları</text>
+
+  <rect x="43" y="142" width="131" height="32" rx="10" fill="#ffffff" opacity="0.9"/>
+  <text x="54" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#527897">A C G T A C</text>
+
+  <rect x="43" y="184" width="131" height="32" rx="10" fill="#ffffff" opacity="0.9"/>
+  <text x="54" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#527897">A C - T A C</text>
+
+  <rect x="43" y="226" width="88" height="16" rx="8" fill="#c9e9d9"/>
+  <text x="51" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39765a">Aday bölge</text>
+
+  <path d="M199 166 L224 166" stroke="#668ca2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="224,166 215,161 215,171" fill="#668ca2"/>
+  <text x="195" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668096">K-mer filtre</text>
+
+  <g filter="url(#shadow)">
+    <rect x="229" y="62" width="190" height="205" rx="20" fill="url(#matrixGrad)" stroke="#d4c9ed"/>
+  </g>
+  <text x="250" y="90" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c527b">Smith-Waterman</text>
+  <text x="250" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#796d96">Skor matrisi</text>
+
+  <g transform="translate(258 124)">
+    <rect x="0" y="0" width="124" height="112" rx="8" fill="#ffffff" opacity="0.78"/>
+    <g stroke="#d7ddea" stroke-width="1">
+      <path d="M25 0 V112 M50 0 V112 M75 0 V112 M100 0 V112"/>
+      <path d="M0 22 H124 M0 44 H124 M0 66 H124 M0 88 H124"/>
+    </g>
+    <rect x="26" y="23" width="23" height="20" rx="3" fill="#d8efe2"/>
+    <rect x="51" y="45" width="23" height="20" rx="3" fill="#c9e8ff"/>
+    <rect x="76" y="67" width="23" height="20" rx="3" fill="#b9d9f5"/>
+    <rect x="101" y="89" width="22" height="20" rx="3" fill="#8571ba"/>
+    <text x="7" y="16" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78718c">0</text>
+    <text x="31" y="38" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7865">2</text>
+    <text x="57" y="60" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c718e">4</text>
+    <text x="81" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426e94">6</text>
+    <text x="106" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">8</text>
+    <path d="M32 33 L58 55 L83 77 L108 99" fill="none" stroke="#62519b" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <rect x="249" y="244" width="150" height="14" rx="7" fill="#ddd4f5"/>
+  <text x="258" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f5680">0 ile yerel başlangıç</text>
+
+  <path d="M426 166 L451 166" stroke="#668ca2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="451,166 442,161 442,171" fill="#668ca2"/>
+  <text x="423" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668096">Geri izleme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="456" y="78" width="157" height="176" rx="20" fill="url(#resultGrad)" stroke="#f0d0ce"/>
+  </g>
+  <circle cx="484" cy="106" r="15" fill="#ffffff" opacity="0.9" filter="url(#smallShadow)"/>
+  <path d="M477 106 L482 111 L491 100" fill="none" stroke="#d26f77" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="510" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7a4e5b">En iyi hizalama</text>
+  <text x="510" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92717a">Yüksek skor</text>
+
+  <rect x="474" y="143" width="120" height="30" rx="9" fill="#ffffff" opacity="0.86"/>
+  <text x="484" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d7186">A C G T A C</text>
+  <rect x="474" y="181" width="120" height="30" rx="9" fill="#ffffff" opacity="0.86"/>
+  <text x="484" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d7186">A C - T A C</text>
+
+  <path d="M528 175 L528 180" stroke="#df7074" stroke-width="2"/>
+  <circle cx="528" cy="176" r="4" fill="#ef8b85"/>
+  <rect x="482" y="222" width="94" height="17" rx="8.5" fill="#f7cdd0"/>
+  <text x="492" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#954a56">Delesyon izi</text>
+
+  <path d="M319 277 L319 294" stroke="#9c8bbd" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <rect x="235" y="294" width="169" height="18" rx="9" fill="#e7eef7" opacity="0.9"/>
+  <text x="251" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798b">Hassas mutasyon doğrulama</text>
+</svg>

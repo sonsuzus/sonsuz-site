@@ -9,6 +9,7 @@ tags:
   - sistem yönetimi
   - ağ güvenliği
 toc: true
+image: /img/sistem-yoneticileri-icin-13.png
 ---
 
 SSH tünelleme, doğrudan internete açılmaması gereken veritabanı, yönetim paneli ve iç ağ servislerine şifreli bir kanal üzerinden erişmenin pratik yoludur. Buradaki amaç güvenlik politikalarını izinsiz biçimde delmek değil; yetkili olduğunuz sistemlerde, güvenlik duvarının izin verdiği SSH bağlantısını kontrollü bir geçit olarak kullanmaktır. Kısacası SSH, yalnızca uzak terminal değil, aynı zamanda cebinizde taşıdığınız şifreli bir ağ borusudur.
@@ -103,3 +104,6 @@ ssh -fN \
 - Kurum politikasında izin verilmeyen ağlara tünel açmayın.
 
 SSH tünelleme doğru sınırlarla kullanıldığında kapalı portları açmak yerine erişimi şifreli, kimliği doğrulanmış ve denetlenebilir bir kanalın içine alır. Böylece saldırı yüzeyini büyütmeden yönetim konforu kazanırsınız.
+
+![sistem-yoneticileri-icin-13](/img/sistem-yoneticileri-icin-13.svg)
+

@@ -9,6 +9,7 @@ tags:
   - p-değeri
   - istatistik
 toc: true
+image: /img/ab-testlerinde-p-37.png
 ---
 
 Yeni ödeme butonunu yeşile boyadınız ve dönüşüm oranı %4,0’dan %4,4’e çıktı. Tasarım ekibi kutlama hazırlığında, ürün yöneticisi ise sunuma roket emojileri ekliyor. Fakat durun: Bu artış gerçekten yeni arayüzden mi kaynaklandı, yoksa kullanıcıların rastlantısal davranışlarından mı? A/B testlerindeki **p-değeri**, tam olarak bu soruyu yanıtlamaya yardımcı olur.
@@ -90,3 +91,6 @@ Bu kod, iki grubun dönüşüm oranlarını iki yönlü z-testiyle karşılaşt�
 Testi her saat kontrol edip anlamlı olduğu anda durdurmak yanlış pozitif riskini artırır. Örneklem büyüklüğü ve test süresi deneyden önce belirlenmelidir. Ayrıca onlarca metriği aynı anda sınamak, tesadüfen anlamlı sonuç bulmayı kolaylaştırır; Bonferroni veya yanlış keşif oranı düzeltmeleri gerekebilir.
 
 Son olarak yalnızca p-değerini değil, **etki büyüklüğünü, güven aralığını ve iş değerini** birlikte raporlayın. İyi bir A/B testi sihirli bir onay düğmesi değil; rastlantıyla gerçek kullanıcı etkisi arasındaki sis perdesini incelten disiplinli bir karar aracıdır.
+
+![ab-testlerinde-p-37](/img/ab-testlerinde-p-37.svg)
+

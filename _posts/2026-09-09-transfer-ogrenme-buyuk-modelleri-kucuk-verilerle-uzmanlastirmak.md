@@ -9,6 +9,7 @@ tags:
   - transfer öğrenme
   - fine-tuning
 toc: true
+image: /img/transfer-ogrenme-buyuk-81.png
 ---
 
 Bir görüntü modeline milyonlarca kedi, otomobil ve sandalye gösterildiğini; ardından sizin yalnızca birkaç bin tıbbi görüntünüzle hastalık sınıflandırması yapmak istediğinizi düşünün. Modeli sıfırdan eğitmek yerine önceden öğrendiği genel görsel desenleri kullanabilirsiniz. Transfer öğrenme, devasa modellerin biriktirdiği bilgiyi daha küçük ve yerel problemlere taşıyarak zaman, veri ve hesaplama maliyetinden tasarruf sağlar.
@@ -33,6 +34,9 @@ Burada $f_{\theta}$ özellik çıkarıcı gövdeyi, $g_{\phi}$ ise sınıflandı
 | Özellik çıkarma | Yalnızca son katmanlar | Düşük | Düşük | Küçük veri setleri |
 | Kısmi ince ayar | Son bloklar ve başlık | Orta | Orta | Kaynak ve hedef görev benzerse |
 | Tam ince ayar | Bütün model | Yüksek | Yüksek | Yeterli veri ve güçlü donanım varsa |
+
+![transfer-ogrenme-buyuk-81](/img/transfer-ogrenme-buyuk-81.svg)
+
 
 **Özellik çıkarma** en güvenli başlangıçtır. Model gövdesi dondurulur ve yalnızca yeni sınıflandırıcı eğitilir. **Kısmi ince ayarda** son birkaç blok açılarak yüksek seviyeli temsiller hedef probleme uyarlanır. **Tam ince ayar** daha esnektir; ancak küçük veri setlerinde aşırı öğrenme ve önceden kazanılmış bilginin bozulması riski taşır.
 

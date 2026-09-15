@@ -9,9 +9,13 @@ tags:
   - human-in-the-loop
   - algoritmik güvenlik
 toc: true
+image: /img/yapay-zekada-emniyet-15.png
 ---
 
 Bir yapay zekâ sistemi kredi başvurusunu reddettiğinde, ameliyat önerdiğinde veya şüpheli bir banka işlemini engellediğinde “Algoritma böyle söyledi” cevabı yeterli değildir. **Human-in-the-Loop (HITL)**, kritik karar noktalarında insan değerlendirmesini sürece dâhil ederek otomasyonun hızını insan muhakemesiyle birleştiren güvenli kontrol yaklaşımıdır. Amaç yapay zekâyı devre dışı bırakmak değil; belirsizlik, yüksek risk veya sıra dışı durumlarda ona deneyimli bir yardımcı pilot vermektir.
+
+
+![yapay-zekada-emniyet-15](/img/yapay-zekada-emniyet-15.svg)
 
 ``
 

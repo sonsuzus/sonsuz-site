@@ -9,9 +9,13 @@ tags:
   - yazılım mimarisi
   - ekip iletişimi
 toc: true
+image: /img/kodlamada-siper-etkisi-36.png
 ---
 
 Büyük bir yazılım projesinde mobil ekip yeni bir özellik geliştirirken backend ekibi API’yi değiştirmiş, güvenlik ekibi farklı bir kimlik doğrulama standardına geçmiş ve operasyon ekibi bunların hiçbirinden haberdar olmamış olabilir. Her ekip kendi bölgesini başarıyla savunur; fakat ortaya çıkan ürün, birbirine uymayan parçalarla dolu teknolojik bir yapboza dönüşür. İşte bu görünmez ayrışmaya **Siper Etkisi**, yani *Silo Effect* denir.
+
+![kodlamada-siper-etkisi-36](/img/kodlamada-siper-etkisi-36.svg)
+
 ``
 
 ## Siper Etkisi Nedir?

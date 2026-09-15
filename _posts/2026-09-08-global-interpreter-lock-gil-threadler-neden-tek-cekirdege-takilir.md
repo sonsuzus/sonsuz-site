@@ -9,7 +9,11 @@ tags:
   - asenkron programlama
   - python
 toc: true
+image: /img/global-interpreter-lock-18.png
 ---
+
+![global-interpreter-lock-18](/img/global-interpreter-lock-18.svg)
+
 
 Bir programda onlarca iş parçacığı oluşturduğunuz hâlde işlemci kullanımının tek çekirdeğin çevresinde dolaştığını görmek şaşırtıcı olabilir. Bunun yaygın nedenlerinden biri, özellikle CPython gibi yorumlayıcılarda bulunan **Global Interpreter Lock (GIL)** mekanizmasıdır. GIL, belleği korumayı kolaylaştırırken CPU ağırlıklı thread’lerin gerçek paralelliğini sınırlar; ancak doğru eşzamanlılık modeli seçildiğinde bu sınıra takılmadan verimli uygulamalar geliştirilebilir.
 ``

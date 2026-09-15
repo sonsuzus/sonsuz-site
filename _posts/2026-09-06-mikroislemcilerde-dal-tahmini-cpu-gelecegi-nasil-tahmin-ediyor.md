@@ -9,7 +9,11 @@ tags:
   - branch prediction
   - pipeline
 toc: true
+image: /img/mikroislemcilerde-dal-tahmini-44.png
 ---
+
+![mikroislemcilerde-dal-tahmini-44](/img/mikroislemcilerde-dal-tahmini-44.svg)
+
 
 Modern işlemciler yalnızca komutları çalıştırmaz; bir sonraki komutun hangisi olacağını tahmin etmeye de çalışır. Özellikle `if`, `else`, döngü ve koşullu sıçrama içeren kodlarda kullanılan **dal tahmini (branch prediction)**, işlemcinin boru hattını dolu tutarak performansı artırır. Kısacası CPU, kodun geleceği hakkında küçük ama son derece hızlı bahisler oynar.
 

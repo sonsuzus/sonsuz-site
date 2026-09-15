@@ -9,7 +9,11 @@ tags:
   - retrospektif
   - takım kültürü
 toc: true
+image: /img/agile-retrospektifler-gecmisten-95.png
 ---
+
+![agile-retrospektifler-gecmisten-95](/img/agile-retrospektifler-gecmisten-95.svg)
+
 
 Bir sprint sona erdiğinde yalnızca tamamlanan işlere bakmak yeterli değildir. Takımın nasıl çalıştığını, nerelerde zorlandığını ve bir sonraki sprintte neyi farklı yapabileceğini konuşması gerekir. Agile retrospektif, geçmişi suçlu aramak için değil, geleceği biraz daha akıllıca tasarlamak için inceleyen güvenli bir geri bildirim ortamıdır.
 ``

@@ -9,7 +9,11 @@ tags:
   - apı güvenliği
   - oturum yönetimi
 toc: true
+image: /img/jwt-calindiginda-ne-92.png
 ---
+
+![jwt-calindiginda-ne-92](/img/jwt-calindiginda-ne-92.svg)
+
 
 JWT, modern API’lerin kimlik doğrulama dünyasındaki hızlı geçiş kartıdır: İmzayı kontrol et, kullanıcıyı tanı ve isteği içeri al. Ancak kart çalındığında sistem çoğu zaman kapıyı açmaya devam eder. Güvenli bir mimari; yalnızca belirtecin geçerli olup olmadığını değil, ilişkili oturumun hâlâ güvenilir olup olmadığını da sorgulamalıdır.
 ``

@@ -9,9 +9,13 @@ tags:
   - kriptografi
   - kimlik doğrulama
 toc: true
+image: /img/sifreyi-soylemeden-bildigini-94.png
 ---
 
 Bir kapının önündesiniz ve içerideki görevliye gizli parolayı bildiğinizi kanıtlamanız gerekiyor. Ancak parolayı söylerseniz görevli de onu öğrenmiş olacak! Sıfır Bilgi İspatı, yani **Zero-Knowledge Proof (ZKP)**, tam olarak bu bilmeceyi matematik yardımıyla çözer: Gizli bilginin kendisini paylaşmadan ona sahip olduğunuzu kanıtlarsınız.
+
+![sifreyi-soylemeden-bildigini-94](/img/sifreyi-soylemeden-bildigini-94.svg)
+
 ``
 ## Sıfır bilgi ne anlama gelir?
 

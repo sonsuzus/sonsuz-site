@@ -9,7 +9,11 @@ tags:
   - yazılım mimarisi
   - organizasyon tasarımı
 toc: true
+image: /img/conway-yasasi-sirket-27.png
 ---
+
+![conway-yasasi-sirket-27](/img/conway-yasasi-sirket-27.svg)
+
 
 Bir yazılım sisteminin mimari diyagramına bakarak onu geliştiren şirketin organizasyon şemasını tahmin edebilir misiniz? Conway Yasası’na göre çoğu zaman evet! Ekipler arasındaki iletişim sınırları; servislerin, modüllerin ve API’lerin sınırlarına dönüşür. Başka bir deyişle şirket yalnızca yazılım üretmez, kendi iletişim biçiminin dijital bir kopyasını da üretir.
 ``

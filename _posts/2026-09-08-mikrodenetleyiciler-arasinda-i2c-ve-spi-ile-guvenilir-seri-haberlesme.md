@@ -9,6 +9,7 @@ tags:
   - spı
   - mikrodenetleyici
 toc: true
+image: /img/mikrodenetleyiciler-arasinda-i2c-37.png
 ---
 
 Bir mikrodenetleyiciyi sensörler, ekranlar veya başka işlemcilerle konuşturmak istediğimizde her bit için ayrı kablo çekmek pek akıllıca değildir. I2C ve SPI, verileri bit bit aktararak kablo sayısını azaltan iki popüler seri haberleşme standardıdır. İkisi de kısa mesafelerde hızlı ve güvenilir çalışır; ancak kablo yapıları, hızları ve cihaz seçme yöntemleri farklıdır.
@@ -56,6 +57,9 @@ void loop() {
   delay(500);
 }
 ```
+
+![mikrodenetleyiciler-arasinda-i2c-37](/img/mikrodenetleyiciler-arasinda-i2c-37.svg)
+
 
 Bu örnek, `0x48` adresindeki sensörün bir kaydını seçer ve iki baytlık ölçümü birleştirir. Gerçek projede zaman aşımı ve hata kontrolü de eklenmelidir.
 

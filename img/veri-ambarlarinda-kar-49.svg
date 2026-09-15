@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="fact" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7d9ee8"/>
+      <stop offset="100%" stop-color="#6382cf"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#49627d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8292" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  
+  <g opacity="0.34" fill="none" stroke="#b9d7e8" stroke-width="1.2">
+    <path d="M44 55 L91 82 L44 109"/>
+    <path d="M75 35 L113 57 L113 101 L75 123"/>
+    <path d="M574 45 L607 65 L607 103 L574 122"/>
+    <path d="M536 232 L577 256 L536 280"/>
+    <circle cx="54" cy="250" r="17"/>
+    <circle cx="600" cy="184" r="12"/>
+  </g>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#526c80">Kar Tanesi Şeması</text>
+  <text x="30" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8193a1">Normalize boyutlar • daha az tekrar</text>
+
+  <!-- Connections -->
+  <g fill="none" stroke="#8da6b7" stroke-width="2.2" stroke-linecap="round">
+    <path d="M267 154 L190 100"/>
+    <path d="M373 154 L451 100"/>
+    <path d="M267 182 L186 237"/>
+    <path d="M373 182 L454 237"/>
+    <path d="M129 100 L89 100"/>
+    <path d="M129 100 L129 57"/>
+    <path d="M512 100 L553 100"/>
+  </g>
+  <g fill="#8da6b7">
+    <polygon points="190,100 199,99 195,107"/>
+    <polygon points="451,100 442,99 446,107"/>
+    <polygon points="186,237 195,230 190,241"/>
+    <polygon points="454,237 445,230 450,241"/>
+    <polygon points="89,100 97,95 97,105"/>
+    <polygon points="129,57 124,65 134,65"/>
+    <polygon points="553,100 545,95 545,105"/>
+  </g>
+
+  <!-- Fact -->
+  <g filter="url(#shadow)">
+    <rect x="267" y="128" width="106" height="80" rx="19" fill="url(#fact)"/>
+    <rect x="277" y="138" width="86" height="60" rx="14" fill="#ffffff" opacity="0.12"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.9">
+    <rect x="285" y="146" width="18" height="15" rx="3"/>
+    <path d="M289 166 L289 181 M295 166 L295 176 M301 166 L301 185"/>
+  </g>
+  <text x="320" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">OLGU</text>
+  <text x="320" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf3ff">Satışlar</text>
+
+  <!-- Product -->
+  <g filter="url(#soft)">
+    <rect x="129" y="72" width="122" height="56" rx="14" fill="#fdf5d9"/>
+    <rect x="137" y="80" width="8" height="40" rx="4" fill="#e7c86f"/>
+  </g>
+  <text x="158" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6f5b22">ÜRÜN</text>
+  <text x="158" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d783e">Ürün adı • marka</text>
+
+  <!-- Category -->
+  <g filter="url(#soft)">
+    <rect x="28" y="72" width="101" height="56" rx="14" fill="#e7f5e6"/>
+    <rect x="37" y="81" width="8" height="38" rx="4" fill="#8cc98b"/>
+  </g>
+  <text x="59" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d743e">KATEGORİ</text>
+  <text x="59" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c8a5c">Alt boyut</text>
+
+  <!-- Department -->
+  <g filter="url(#soft)">
+    <rect x="76" y="16" width="106" height="41" rx="13" fill="#e5f1fb"/>
+    <rect x="85" y="24" width="7" height="25" rx="3.5" fill="#78afd7"/>
+  </g>
+  <text x="104" y="41" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#407091">DEPARTMAN</text>
+
+  <!-- Customer -->
+  <g filter="url(#soft)">
+    <rect x="451" y="72" width="122" height="56" rx="14" fill="#f9e7f0"/>
+    <rect x="459" y="80" width="8" height="40" rx="4" fill="#d88db5"/>
+  </g>
+  <text x="480" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c416a">MÜŞTERİ</text>
+  <text x="480" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a36686">Boyut tablosu</text>
+
+  <!-- Region -->
+  <g filter="url(#soft)">
+    <rect x="553" y="78" width="67" height="44" rx="13" fill="#f4eafa"/>
+  </g>
+  <text x="586.5" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#815796">BÖLGE</text>
+
+  <!-- Date -->
+  <g filter="url(#soft)">
+    <rect x="454" y="209" width="119" height="56" rx="14" fill="#e5f4f5"/>
+    <rect x="462" y="217" width="8" height="40" rx="4" fill="#71b9bb"/>
+  </g>
+  <text x="483" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39777a">TARİH</text>
+  <text x="483" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#568e90">Gün • ay • yıl</text>
+
+  <!-- Metric -->
+  <g filter="url(#soft)">
+    <rect x="67" y="209" width="119" height="56" rx="14" fill="#eee9fb"/>
+    <rect x="75" y="217" width="8" height="40" rx="4" fill="#9a8bd2"/>
+  </g>
+  <text x="96" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5e4d9c">ÖLÇÜLER</text>
+  <text x="96" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#776baa">Tutar • adet</text>
+
+  <!-- Footer -->
+  <g transform="translate(213 274)">
+    <rect width="214" height="28" rx="14" fill="#ffffff" opacity="0.78"/>
+    <circle cx="18" cy="14" r="5" fill="#76ba8b"/>
+    <text x="31" y="18" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527064">Az tekrar</text>
+    <path d="M94 14 L110 14" stroke="#99aab3" stroke-width="1.5"/>
+    <polygon points="110,14 104,10 104,18" fill="#99aab3"/>
+    <circle cx="129" cy="14" r="5" fill="#d89b71"/>
+    <text x="142" y="18" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756154">Daha çok JOIN</text>
+  </g>
+</svg>

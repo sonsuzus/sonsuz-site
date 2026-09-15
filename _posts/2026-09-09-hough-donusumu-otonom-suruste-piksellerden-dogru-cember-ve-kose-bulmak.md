@@ -9,6 +9,7 @@ tags:
   - hough dönüşümü
   - otonom sürüş
 toc: true
+image: /img/hough-donusumu-otonom-69.png
 ---
 
 Otonom bir araç kameraya baktığında şerit, trafik levhası veya yol köşesi görmez; yalnızca renk ve parlaklık değerlerinden oluşan bir piksel matrisi görür. Hough dönüşümü, bu dağınık pikselleri geometrik şekillere dönüştüren güçlü bir oylama yöntemidir. Ancak işin sırrı yalnızca Hough algoritmasında değil, görüntü türevleriyle bulunan kenarların doğru yorumlanmasındadır.
@@ -30,6 +31,9 @@ Gradyan büyüklüğü $\vert \nabla I\vert $, kenarın ne kadar güçlü olduğ
 | Doğru Hough | $(\rho,\theta)$ uzayında oylama | Yol şeritleri |
 | Çember Hough | $(a,b,r)$ uzayında oylama | Yuvarlak trafik levhaları |
 | Harris köşe | Gradyanların iki yöndeki değişimi | Kavşak ve karakteristik noktalar |
+
+![hough-donusumu-otonom-69](/img/hough-donusumu-otonom-69.svg)
+
 
 ## Doğruların parametre uzayındaki yolculuğu
 
