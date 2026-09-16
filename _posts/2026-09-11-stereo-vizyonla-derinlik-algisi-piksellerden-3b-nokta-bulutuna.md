@@ -9,6 +9,7 @@ tags:
   - derinlik algısı
   - otonom sistemler
 toc: true
+image: /img/stereo-vizyonla-derinlik-18.png
 ---
 
 İnsanlar çevrelerini iki gözün sunduğu küçük açı farkı sayesinde üç boyutlu algılar. Stereo vizyon sistemleri de benzer bir numara yapar: Aynı sahneyi farklı konumlardaki iki kamerayla görüntüler, ortak pikselleri eşleştirir ve nesnelerin uzaklığını hesaplar. Böylece sıradan görüntüler; robotların, insansız araçların ve otonom makinelerin kullanabileceği geometrik bir çevre modeline dönüşür.
@@ -85,3 +86,6 @@ Her geçerli piksel uzay koordinatına dönüştürüldüğünde renkli veya ren
 | İşgal ızgarası | Dolu ve boş alanlar | Güvenli rota üretme |
 
 Otonom araç, nokta bulutundan yol sınırlarını ve yakın engelleri çıkarabilir; mobil robot ise geçebileceği boşlukları belirleyebilir. Stereo vizyon pasif çalıştığı için çevreye lazer göndermez ve maliyeti genellikle LiDAR’dan düşüktür. Buna karşılık karanlık, sis ve düşük dokulu yüzeyler performansı azaltır. Bu nedenle güvenilir sistemler stereo kamerayı LiDAR, radar ve IMU ile birleştirir. Kısacası iki görüntü arasındaki birkaç piksellik fark, doğru geometri ve iyi algoritmalarla robotun dünyayı üç boyutlu “görmesini” sağlar.
+
+![stereo-vizyonla-derinlik-18](/img/stereo-vizyonla-derinlik-18.svg)
+

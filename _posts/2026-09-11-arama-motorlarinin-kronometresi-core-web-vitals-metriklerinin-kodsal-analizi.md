@@ -9,6 +9,7 @@ tags:
   - web performansı
   - seo
 toc: true
+image: /img/arama-motorlarinin-kronometresi-20.png
 ---
 
 Modern arama motorları bir web sayfasını yalnızca anahtar kelimelerine göre değerlendirmiyor; kullanıcının sayfayı ne kadar hızlı gördüğünü, etkileşim sırasında ne kadar beklediğini ve içeriklerin ekranda zıplayıp zıplamadığını da ölçüyor. Google’ın Core Web Vitals yaklaşımı, soyut görünen “iyi kullanıcı deneyimini” LCP, INP ve CLS gibi sayısal göstergelere dönüştürüyor. Böylece performans optimizasyonu, “Bende hızlı açılıyor!” yorumundan çıkıp ölçülebilir bir yazılım kalitesi problemine dönüşüyor.
@@ -91,3 +92,6 @@ function qualityScore({ lcp, inp, cls }) {
 Ağırlıklar ürünün ihtiyaçlarına göre değiştirilebilir. Bir çizim uygulamasında INP, haber sitesinde ise LCP daha kritik olabilir.
 
 Son olarak laboratuvar testleri ile gerçek kullanıcı verilerini ayırmak gerekir. Lighthouse kontrollü koşullarda teşhis sunarken Chrome User Experience Report gerçek ziyaretçilerin saha verilerini toplar. En sağlıklı süreç; saha verisiyle problemi bulmak, profil araçlarıyla nedenini araştırmak ve performans bütçesini CI/CD hattında otomatik denetlemektir. Hız artık sonradan sürülen cila değil, doğrudan mimari bir kalite özelliğidir.
+
+![arama-motorlarinin-kronometresi-20](/img/arama-motorlarinin-kronometresi-20.svg)
+

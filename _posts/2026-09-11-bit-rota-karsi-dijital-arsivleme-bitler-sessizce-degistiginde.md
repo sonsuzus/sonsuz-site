@@ -9,6 +9,7 @@ tags:
   - bit rot
   - hata düzeltme kodları
 toc: true
+image: /img/bit-rota-karsi-98.png
 ---
 
 Bir fotoğrafı diske kaydettiğimizde onun yıllarca aynı kalacağını düşünürüz. Ne var ki fiziksel depolama kusursuz değildir: manyetik alanlar zayıflayabilir, flash hücreleri yıpranabilir ve yüksek enerjili parçacıklar geçici bit değişimlerine yol açabilir. Sonuçta bir zamanlar `0` olan bit `1` olabilir. **Bit rot** adı verilen bu sessiz bozulma, özellikle uzun süre saklanan ve nadiren okunan arşivlerde sinsice ilerler.
@@ -28,6 +29,9 @@ Depolama ortamlarının davranışları aynı değildir:
 | RAM | Parçacık kaynaklı bit flip | ECC RAM, bellek scrubbing |
 | Optik disk | Katman bozulması, çizilme | Çoklu kopya, doğrulama |
 | Manyetik teyp | Ortam yaşlanması, gerilme | Periyodik yeniden yazma |
+
+![bit-rota-karsi-98](/img/bit-rota-karsi-98.svg)
+
 
 ## Hata düzeltme kodlarının mantığı
 

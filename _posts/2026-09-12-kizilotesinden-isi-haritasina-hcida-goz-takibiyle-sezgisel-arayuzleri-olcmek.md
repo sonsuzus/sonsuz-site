@@ -9,6 +9,7 @@ tags:
   - göz takibi
   - kullanıcı deneyimi
 toc: true
+image: /img/kizilotesinden-isi-haritasina-22.png
 ---
 
 Bir kullanıcı arayüzündeki parlak “Satın Al” düğmesine bakmıyorsa sorun kullanıcıda mı, tasarımcıda mı? İnsan-Bilgisayar Etkileşimi (HCI) araştırmalarında göz takibi, bu tartışmayı tahminlerden çıkarıp ölçülebilir verilere dönüştürür. Kızılötesi tabanlı cihazlar, kullanıcının ekranda nereye ve ne kadar süre baktığını belirleyerek dikkat dağılımını ısı haritaları üzerinde görünür hâle getirir.
@@ -85,3 +86,6 @@ Sadece renkli bir haritaya bakıp karar vermek bilimsel değildir. Önceden hipo
 Mevcut ve yeni tasarım, benzer kullanıcı gruplarına dengeli sırayla gösterilebilir. Sonuçlar eşleştirilmiş t-testi, Wilcoxon testi veya karma etkili modellerle karşılaştırılabilir. Etki büyüklüğü ve güven aralığı da raporlanmalıdır; yalnızca $p<0.05$ görmek tasarım zaferi ilan etmek için yeterli değildir.
 
 Göz takibi zihni doğrudan okumaz; bakılan öğenin sevildiğini ya da anlaşıldığını tek başına kanıtlayamaz. Kalibrasyon hataları, gözlükler, ekran boyutu ve kullanıcı deneyimi sonuçları etkileyebilir. Bu nedenle göz verileri; görev başarısı, tıklama kayıtları, görüşmeler ve kullanılabilirlik ölçekleriyle birlikte yorumlandığında güçlü bilimsel kanıta dönüşür. Böylece “Bence sezgisel” cümlesinin yerini, ölçülmüş davranış ve tekrarlanabilir deney alır.
+
+![kizilotesinden-isi-haritasina-22](/img/kizilotesinden-isi-haritasina-22.svg)
+

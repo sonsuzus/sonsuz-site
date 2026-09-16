@@ -9,6 +9,7 @@ tags:
   - görüntü işleme
   - medikal yapay zekâ
 toc: true
+image: /img/piksel-piksel-teshis-86.png
 ---
 
 Bir röntgen görüntüsünde hastalık bulunduğunu söylemek değerlidir; fakat doktorun asıl sorusu çoğu zaman “Tam olarak nerede ve ne kadar büyük?” olur. Anlamsal bölütleme, görüntüdeki her piksele bir sınıf etiketi atayarak bu soruyu yanıtlar. Böylece tümör, organ, lezyon veya sağlıklı doku sınırları adeta dijital bir boya fırçasıyla işaretlenir.
@@ -30,6 +31,9 @@ $K$, arka plan, organ ve anormallik gibi sınıfların sayısıdır. Sonuçta g�
 | Sınıflandırma | Tek etiket | Akciğerde hastalık var mı? |
 | Nesne tespiti | Sınırlayıcı kutu | Nodül hangi bölgede? |
 | Anlamsal bölütleme | Piksel maskesi | Tümörün kesin sınırı nedir? |
+
+![piksel-piksel-teshis-86](/img/piksel-piksel-teshis-86.svg)
+
 
 ## Model görüntüyü nasıl boyuyor?
 

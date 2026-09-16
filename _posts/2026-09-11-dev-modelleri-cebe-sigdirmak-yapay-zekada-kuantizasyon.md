@@ -9,6 +9,7 @@ tags:
   - kuantizasyon
   - llm
 toc: true
+image: /img/dev-modelleri-cebe-28.png
 ---
 
 Milyarlarca parametreye sahip bir dil modelini cep telefonunda çalıştırmak, ilk bakışta buzdolabında veri merkezi barındırmaya benzer. Ancak kuantizasyon, modelin öğrendiği kayan noktalı ağırlıkları daha az bit kullanan sayılara dönüştürerek bu fikri uygulanabilir hâle getirir. Model biraz hassasiyet kaybedebilir; karşılığında daha az bellek tüketir, daha hızlı çalışır ve özel donanımlardan daha iyi yararlanır.
@@ -78,3 +79,6 @@ Post-Training Quantization (PTQ), hazır modeli yeniden eğitmeden sıkıştırd
 Kuantizasyon sihirli bir küçültme düğmesi değildir. İşlemci desteği, bellek bant genişliği, model mimarisi, bağlam uzunluğu ve kullanılan çalışma zamanı performansı doğrudan etkiler. Ayrıca INT4 modelin küçük olması, her cihazın INT4 hesaplamalarını doğal olarak hızlandıracağı anlamına gelmez. Bazen ağırlıklar hesaplama öncesinde daha yüksek hassasiyete açılır.
 
 Yine de doğru model, uygun kuantizasyon ve mobil odaklı bir çalışma zamanı bir araya geldiğinde çevrimdışı sohbet, metin özetleme ve kişisel asistan gibi özellikler mümkün olur. Sonuç olarak kuantizasyon, yapay zekâyı yalnızca küçültmez; onu buluttan çıkarıp kullanıcının cebine taşıyarak daha düşük gecikme, maliyet ve daha güçlü veri gizliliği sağlar.
+
+![dev-modelleri-cebe-28](/img/dev-modelleri-cebe-28.svg)
+

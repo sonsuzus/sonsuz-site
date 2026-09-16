@@ -9,6 +9,7 @@ tags:
   - oyun geliştirme
   - prosedürel üretim
 toc: true
+image: /img/oyun-dunyalarini-matematikle-19.png
 ---
 
 Bir oyun dünyasındaki her dağı, mağarayı ve ağacı elle yerleştirmek mümkün; fakat harita milyonlarca hücreden oluşuyorsa tasarım ekibi muhtemelen emekliliğini beklerken hâlâ çalı çiziyor olacaktır. Prosedürel İçerik Üretimi, yani PCG, bu işi matematiksel kurallar, tohumlar ve gürültü fonksiyonlarıyla işlemciye devreder. Böylece büyük dünyalar gerektiği anda üretilebilir, tekrar oluşturulabilir ve oyuncuya keşfedilecek benzersiz alanlar sunabilir.
@@ -30,6 +31,9 @@ Burada $s$ tohum, $(x,y)$ dünya koordinatı, $p$ üretim parametreleri ve $D$ o
 | Elle tasarım | Güçlü sanatsal kontrol | Yavaş ve maliyetli |
 | Saf rastgelelik | Çok hızlı çeşitlilik | Tutarsız sonuçlar |
 | Kurallı PCG | Ölçeklenebilir ve tekrar üretilebilir | Ayarlaması karmaşıktır |
+
+![oyun-dunyalarini-matematikle-19](/img/oyun-dunyalarini-matematikle-19.svg)
+
 
 ## Gürültü fonksiyonları ne yapar?
 

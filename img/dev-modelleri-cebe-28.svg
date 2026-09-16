@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="modelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8dcf5"/>
+    </linearGradient>
+    <linearGradient id="quantGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f9e7bd"/>
+      <stop offset="100%" stop-color="#f2cd82"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f1df"/>
+      <stop offset="100%" stop-color="#b8dfc4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7690a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#647c92" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="44" r="54" fill="#dceeff" opacity="0.55"/>
+  <circle cx="576" cy="280" r="85" fill="#ddf0d9" opacity="0.52"/>
+  <path d="M35 259 C139 225 171 276 263 245 S447 210 605 248" fill="none" stroke="#b9d6dc" stroke-width="2" opacity="0.45"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566c">KUANTİZASYON: DEV MODELİ CEBE TAŞIMAK</text>
+
+  <!-- Sol: model -->
+  <g filter="url(#shadow)">
+    <rect x="34" y="78" width="166" height="176" rx="20" fill="url(#modelGrad)" stroke="#a9c5e6"/>
+  </g>
+  <text x="117" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355675">Büyük Dil Modeli</text>
+  <text x="117" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52718d">7 milyar parametre</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="57" y="143" width="120" height="43" rx="10" fill="#f8fbff" stroke="#bed2e9"/>
+    <rect x="57" y="197" width="120" height="37" rx="10" fill="#edf5fd" stroke="#bed2e9"/>
+  </g>
+  <text x="75" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456783">FP32</text>
+  <text x="158" y="160" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456783">32 bit</text>
+  <text x="75" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54758f">28 GB ağırlık</text>
+  <text x="117" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52718d">Yüksek hassasiyet</text>
+
+  <!-- Arrow 1 -->
+  <path d="M207 166 H242" fill="none" stroke="#7195b1" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="249,166 239,160 239,172" fill="#7195b1"/>
+
+  <!-- Merkez: quantizer -->
+  <g filter="url(#shadow)">
+    <rect x="252" y="66" width="136" height="200" rx="22" fill="url(#quantGrad)" stroke="#e1b865"/>
+  </g>
+  <text x="320" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#785722">Kuantizasyon</text>
+  <text x="320" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#86662d">Ölçek ve yuvarlama</text>
+
+  <g stroke="#b88732" stroke-width="2" stroke-linecap="round">
+    <path d="M278 143 V205"/>
+    <path d="M295 143 V205"/>
+    <path d="M312 143 V205"/>
+    <path d="M329 143 V205"/>
+    <path d="M346 143 V205"/>
+    <path d="M363 143 V205"/>
+  </g>
+  <g fill="#fff7df" stroke="#d6a64e">
+    <circle cx="278" cy="153" r="5"/>
+    <circle cx="295" cy="180" r="5"/>
+    <circle cx="312" cy="164" r="5"/>
+    <circle cx="329" cy="193" r="5"/>
+    <circle cx="346" cy="174" r="5"/>
+    <circle cx="363" cy="151" r="5"/>
+  </g>
+  <path d="M274 221 H366" stroke="#bb8d39" stroke-width="2"/>
+  <text x="320" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#785722">Daha az bit</text>
+
+  <!-- Arrow 2 -->
+  <path d="M396 166 H431" fill="none" stroke="#7195b1" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="438,166 428,160 428,172" fill="#7195b1"/>
+
+  <!-- Sağ: phone -->
+  <g filter="url(#shadow)">
+    <rect x="445" y="62" width="156" height="208" rx="24" fill="#eaf6eb" stroke="#afd5ba"/>
+    <rect x="476" y="87" width="94" height="143" rx="14" fill="url(#phoneGrad)" stroke="#93c4a2"/>
+  </g>
+  <rect x="511" y="94" width="24" height="4" rx="2" fill="#6d9c79"/>
+  <circle cx="523" cy="218" r="5" fill="#7bad89"/>
+  <text x="523" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35664a">Yerel Model</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="490" y="133" width="66" height="25" rx="8" fill="#f7fff7"/>
+    <rect x="490" y="164" width="66" height="25" rx="8" fill="#f7fff7"/>
+  </g>
+  <text x="523" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7651">INT8 · 7 GB</text>
+  <text x="523" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7651">INT4 · 3,5 GB</text>
+  <text x="523" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#497658">Telefon ve dizüstü</text>
+
+  <!-- Bottom benefits -->
+  <g filter="url(#smallShadow)">
+    <rect x="72" y="278" width="142" height="28" rx="14" fill="#e3effd" stroke="#c6daef"/>
+    <rect x="249" y="278" width="142" height="28" rx="14" fill="#fff1d5" stroke="#edd29b"/>
+    <rect x="426" y="278" width="142" height="28" rx="14" fill="#e1f1e4" stroke="#bfdbc5"/>
+  </g>
+  <text x="143" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466b89">Az bellek</text>
+  <text x="320" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80602a">Hızlı çıkarım</text>
+  <text x="497" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427150">Veri gizliliği</text>
+</svg>

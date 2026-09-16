@@ -9,6 +9,7 @@ tags:
   - mikroservis
   - yetkilendirme
 toc: true
+image: /img/tek-kapi-yuzlerce-49.png
 ---
 
 Bir e-ticaret sisteminde kullanıcı, sipariş, ödeme ve stok servislerinin farklı sunucularda çalıştığını düşünün. İstemcinin bütün bu adresleri bilmesi; güvenlik, sürüm yönetimi ve hata takibi açısından kısa sürede kabusa dönüşür. API Gateway modeli, yüzlerce servisin önüne tek bir giriş kapısı koyarak bu karmaşayı yönetilebilir hâle getirir. Kısacası mikroservis mahallesinin güvenlik görevlisi, trafik polisi ve danışma masası aynı noktada buluşur.
@@ -39,6 +40,9 @@ Bu yaklaşım, servislerin internete doğrudan açılmasını engeller. Böylece
 | Sürüm geçişi | İstemci değişikliği gerekebilir | Yönlendirme ile gizlenebilir |
 | Gözlemlenebilirlik | Loglar farklı yerlerdedir | Ortak metrik üretilebilir |
 | Arıza etkisi | Servise göre değişir | Gateway kritik bağımlılıktır |
+
+![tek-kapi-yuzlerce-49](/img/tek-kapi-yuzlerce-49.svg)
+
 
 ## Yetkilendirme ve hız sınırlandırma
 

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#40566d"/>
+      <stop offset="1" stop-color="#1f3044"/>
+    </linearGradient>
+    <linearGradient id="mask" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8f1d1"/>
+      <stop offset="1" stop-color="#a8d9b6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d8190" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#60798b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="48" cy="44" r="74" fill="#dceeff" opacity="0.48"/>
+  <circle cx="591" cy="270" r="95" fill="#dff1dc" opacity="0.43"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385166">Piksel Piksel Teşhis</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728494">Anlamsal Bölütleme Akışı</text>
+
+  <!-- Input panel -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="75" width="126" height="175" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="47" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456174">Medikal Görüntü</text>
+  <rect x="45" y="116" width="91" height="91" rx="9" fill="url(#scan)"/>
+  <path d="M54 159 C62 136 76 128 91 137 C104 145 117 131 128 151" fill="none" stroke="#b4c7d2" stroke-width="5" opacity="0.58"/>
+  <path d="M52 177 C69 162 76 181 89 171 C104 160 116 178 130 165" fill="none" stroke="#7893a4" stroke-width="4" opacity="0.65"/>
+  <ellipse cx="104" cy="151" rx="12" ry="10" fill="#ef9ca2" opacity="0.92"/>
+  <ellipse cx="104" cy="151" rx="6" ry="5" fill="#ffd5c8" opacity="0.9"/>
+  <path d="M45 218 H136" stroke="#e4edf1" stroke-width="1"/>
+  <circle cx="54" cy="231" r="5" fill="#ef9ca2"/>
+  <text x="65" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627687">Şüpheli alan</text>
+
+  <!-- arrow input -->
+  <path d="M160 161 H177" stroke="#7892a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="177,155 186,161 177,167" fill="#7892a5"/>
+
+  <!-- U-net main -->
+  <g filter="url(#shadow)">
+    <rect x="190" y="67" width="263" height="198" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="210" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b70">U-Net</text>
+  <text x="210" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909e">Öznitelik ve konum</text>
+
+  <!-- encoder blocks -->
+  <g filter="url(#smallShadow)">
+    <rect x="211" y="129" width="43" height="34" rx="8" fill="#b9dcf1"/>
+    <rect x="271" y="148" width="43" height="34" rx="8" fill="#9bcbe5"/>
+    <rect x="331" y="174" width="43" height="34" rx="8" fill="#7cb9d5"/>
+  </g>
+  <text x="217" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315467">64</text>
+  <text x="277" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315467">128</text>
+  <text x="337" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">256</text>
+
+  <!-- decoder blocks -->
+  <g filter="url(#smallShadow)">
+    <rect x="390" y="148" width="43" height="34" rx="8" fill="#b5ddc4"/>
+    <rect x="390" y="203" width="43" height="34" rx="8" fill="#d0e9b2"/>
+    <rect x="271" y="211" width="43" height="34" rx="8" fill="#c9e7c4"/>
+  </g>
+  <text x="396" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356354">128</text>
+  <text x="396" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496338">64</text>
+  <text x="277" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356354">32</text>
+
+  <!-- down flow -->
+  <path d="M254 146 L271 159" stroke="#6d91a5" stroke-width="2.5" fill="none"/>
+  <polygon points="265,158 275,162 269,152" fill="#6d91a5"/>
+  <path d="M314 165 L331 186" stroke="#6d91a5" stroke-width="2.5" fill="none"/>
+  <polygon points="325,185 335,190 329,180" fill="#6d91a5"/>
+
+  <!-- up flow -->
+  <path d="M374 191 L390 169" stroke="#72a780" stroke-width="2.5" fill="none"/>
+  <polygon points="384,173 393,164 390,176" fill="#72a780"/>
+  <path d="M411 182 V202" stroke="#72a780" stroke-width="2.5"/>
+  <polygon points="405,198 411,207 417,198" fill="#72a780"/>
+  <path d="M390 220 H322" stroke="#72a780" stroke-width="2.5"/>
+  <polygon points="328,214 318,220 328,226" fill="#72a780"/>
+
+  <!-- skip connections -->
+  <path d="M232 129 V120 H411 V142" fill="none" stroke="#d597a0" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M292 148 V137 H423 V196" fill="none" stroke="#c6a167" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="300" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ad747c">Atlama bağlantısı</text>
+
+  <!-- output arrow -->
+  <path d="M460 161 H477" stroke="#7892a5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="477,155 486,161 477,167" fill="#7892a5"/>
+
+  <!-- output panel -->
+  <g filter="url(#shadow)">
+    <rect x="490" y="75" width="123" height="175" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="510" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456174">Piksel Maskesi</text>
+  <rect x="508" y="116" width="87" height="91" rx="9" fill="url(#mask)"/>
+  <path d="M516 130 H587 M516 144 H587 M516 158 H587 M516 172 H587 M516 186 H587" stroke="#85b99b" stroke-width="1" opacity="0.55"/>
+  <path d="M530 117 V207 M544 117 V207 M558 117 V207 M572 117 V207" stroke="#85b99b" stroke-width="1" opacity="0.55"/>
+  <path d="M548 140 C557 130 573 133 579 145 C585 157 576 175 562 178 C548 181 536 169 538 154 C539 148 543 143 548 140Z" fill="#e98289" opacity="0.95"/>
+  <path d="M552 143 C560 137 570 139 575 148" fill="none" stroke="#ffd5b2" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="508" y="218" width="15" height="10" rx="3" fill="#9dccad"/>
+  <text x="530" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627687">Sağlıklı</text>
+  <rect x="508" y="235" width="15" height="10" rx="3" fill="#e98289"/>
+  <text x="530" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627687">Lezyon</text>
+
+  <!-- bottom outcome -->
+  <g filter="url(#smallShadow)">
+    <rect x="185" y="282" width="270" height="27" rx="13" fill="#e8f3ec"/>
+  </g>
+  <circle cx="205" cy="295.5" r="7" fill="#65a77b"/>
+  <path d="M201.5 295 L204 298 L209 292" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="220" y="300" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49685a">Dice ile örtüşme ve uzman denetimi</text>
+</svg>

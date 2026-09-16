@@ -9,6 +9,7 @@ tags:
   - bilişim etiği
   - veri minimizasyonu
 toc: true
+image: /img/ilk-satir-koddan-96.png
 ---
 
 Bir uygulama geliştirirken kullanıcıdan “Lazım olur” düşüncesiyle veri istemek, çekmeceye yıllarca kullanılmayan kablolar doldurmaya benzer. Aradaki önemli fark şudur: Kabloların sızdırılma, kötüye kullanılma veya bir insanın özel hayatını ihlal etme ihtimali yoktur. **Privacy by Design**, gizliliği sonradan eklenen bir onay kutusu değil; gereksinim analizinden veritabanına kadar bütün sistemi biçimlendiren temel bir tasarım ilkesi olarak ele alır.
@@ -37,6 +38,9 @@ Privacy by Design yaklaşımı yedi temel ilkeye dayanır: Önleyici olmak, gizl
 | Konum | Kesin GPS koordinatı | Yaklaşık bölge veya cihazda işleme |
 | Yetkilendirme | Geniş ekip erişimi | En az ayrıcalık ilkesi |
 | Günlükler | Tüm istek içeriği | Kimliksiz teknik olaylar |
+
+![ilk-satir-koddan-96](/img/ilk-satir-koddan-96.svg)
+
 
 Örneğin bir hava durumu uygulamasının sürekli GPS geçmişi tutması gerekmez. Konumu cihaz üzerinde yaklaşık bir şehre dönüştürüp sunucuya yalnızca şehir kodunu göndermek aynı işlevi çok daha az riskle sağlayabilir.
 

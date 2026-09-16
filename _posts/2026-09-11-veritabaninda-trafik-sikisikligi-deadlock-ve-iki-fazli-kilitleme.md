@@ -9,7 +9,11 @@ tags:
   - deadlock
   - eşzamanlılık
 toc: true
+image: /img/veritabaninda-trafik-sikisikligi-24.png
 ---
+
+![veritabaninda-trafik-sikisikligi-24](/img/veritabaninda-trafik-sikisikligi-24.svg)
+
 
 Bir veritabanında yüzlerce işlemin aynı anda çalışması, kavşaktan birlikte geçmeye çalışan araçlara benzer. Her işlem hızla ilerlemek ister; fakat ortak verilere kontrolsüz erişim, kayıp güncelleme ve tutarsız okuma gibi sorunlar doğurur. Kilitler bu trafiği düzenlerken yanlış sırada alınmaları işlemleri birbirini sonsuza kadar bekleyen bir deadlock durumuna sokabilir.
 

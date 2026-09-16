@@ -9,7 +9,11 @@ tags:
   - gözlemlenebilirlik
   - dağıtık izleme
 toc: true
+image: /img/opentelemetry-ile-bir-71.png
 ---
+
+![opentelemetry-ile-bir-71](/img/opentelemetry-ile-bir-71.svg)
+
 
 Bir kullanıcı “Satın Al” düğmesine bastığında istek API ağ geçidine, kimlik servisine, sipariş uygulamasına, veri tabanına ve ödeme sağlayıcısına uğrayabilir. Geleneksel metin günlükleri bu duraklarda ayrı ayrı iz bırakır; ancak parçaları birleştirmek çoğu zaman dedektiflik işidir. OpenTelemetry ise isteğe ortak bir kimlik vererek yolculuğu tek bir zaman çizelgesinde görmemizi sağlar.
 ``

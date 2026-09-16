@@ -9,6 +9,7 @@ tags:
   - phishing
   - sosyal mühendislik
 toc: true
+image: /img/zihnin-arka-kapisi-26.png
 ---
 
 Bir sistem en güncel yamalarla korunabilir, parolalar karmaşık olabilir ve ağ trafiği sürekli izlenebilir. Buna rağmen tek bir çalışan, “Hesabınız 10 dakika içinde kapatılacak” mesajına tıklayarak bütün savunma hattını aşabilir. Sosyal mühendislik tam olarak bu çelişkiden yararlanır: Saldırgan, yazılımdaki teknik bir açığı değil; insan zihninin hızlı karar vermek için kullandığı kestirmeleri hedefler. Oltalama yani phishing, yalnızca sahte bağlantı göndermek değil, kurbanın düşünme biçimini yönlendiren planlı bir psikolojik manipülasyondur.
@@ -40,6 +41,9 @@ Burada $A$ aciliyet, $K$ korku, $O$ otorite etkisi, $F$ ise farkındalık düzey
 | Dil | Tutarlı ve bağlama uygundur | Tehditkâr, aşırı heyecanlı veya beklenmediktir |
 | Talep | Normal iş akışıyla uyumludur | Parola, kod ya da ödeme ister |
 | Alan adı | Kurumun bilinen alan adıdır | Benzer harflerle taklit edilmiştir |
+
+![zihnin-arka-kapisi-26](/img/zihnin-arka-kapisi-26.svg)
+
 
 Tek bir belirti kesin kanıt sayılmaz. Örneğin yazım hatası bulunmayan bir ileti de kötü niyetli olabilir. Bu nedenle karar, işaretlerin toplamına ve mesajın bağlamına göre verilmelidir.
 

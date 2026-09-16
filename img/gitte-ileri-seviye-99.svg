@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="mainGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94bff0"/>
+      <stop offset="100%" stop-color="#77a9df"/>
+    </linearGradient>
+    <linearGradient id="featureGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d3a8df"/>
+      <stop offset="100%" stop-color="#b98dcb"/>
+    </linearGradient>
+    <linearGradient id="safeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9efd3"/>
+      <stop offset="100%" stop-color="#b9ddb8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#55718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#55718a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="36" r="72" fill="#dceefa" opacity="0.48"/>
+  <circle cx="593" cy="282" r="104" fill="#dff1d9" opacity="0.45"/>
+
+  <text x="38" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5871">GÜVENLİ VE LİNEER GİT AKIŞI</text>
+
+  <rect x="35" y="55" width="145" height="210" rx="18" fill="#f8fbff" stroke="#d6e4f0" filter="url(#shadow)"/>
+  <text x="55" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42627c">Paralel Dallar</text>
+  <text x="55" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#608098">Ana dal</text>
+
+  <path d="M58 122 H153" fill="none" stroke="#7aaee1" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="69" cy="122" r="9" fill="url(#mainGrad)" filter="url(#soft)"/>
+  <circle cx="108" cy="122" r="9" fill="url(#mainGrad)" filter="url(#soft)"/>
+  <circle cx="147" cy="122" r="9" fill="url(#mainGrad)" filter="url(#soft)"/>
+  <text x="57" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#608098">Özellik dalı</text>
+
+  <path d="M69 177 C94 177 96 215 119 215 H153" fill="none" stroke="#bd8dcb" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="69" cy="177" r="9" fill="url(#featureGrad)" filter="url(#soft)"/>
+  <circle cx="103" cy="205" r="9" fill="url(#featureGrad)" filter="url(#soft)"/>
+  <circle cx="144" cy="215" r="9" fill="url(#featureGrad)" filter="url(#soft)"/>
+  <rect x="55" y="232" width="104" height="20" rx="10" fill="#f9eaf5"/>
+  <text x="67" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6096">Uzaklık artar</text>
+
+  <path d="M181 159 H213" fill="none" stroke="#7890a3" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="218,159 209,154 209,164" fill="#7890a3"/>
+
+  <rect x="218" y="83" width="180" height="156" rx="20" fill="#fffdfb" stroke="#eadbc7" filter="url(#shadow)"/>
+  <circle cx="252" cy="119" r="20" fill="#f8d8d1"/>
+  <path d="M243 112 L249 118 L243 124 M261 112 L255 118 L261 124" fill="none" stroke="#b95e54" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="281" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79534b">Conflict</text>
+  <text x="281" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#94736b">Anlamı değerlendir</text>
+
+  <path d="M246 157 H370" fill="none" stroke="#e3b45e" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="375,157 366,152 366,162" fill="#e3b45e"/>
+  <rect x="241" y="174" width="135" height="43" rx="12" fill="#fff4d9"/>
+  <text x="258" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#896225">Commit commit</text>
+  <text x="263" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c7b42">çöz ve test et</text>
+
+  <path d="M399 159 H430" fill="none" stroke="#7890a3" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="435,159 426,154 426,164" fill="#7890a3"/>
+
+  <rect x="436" y="55" width="170" height="210" rx="18" fill="#f9fdf8" stroke="#cee4cd" filter="url(#shadow)"/>
+  <text x="457" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426d4d">Doğrulama Zinciri</text>
+
+  <rect x="454" y="98" width="134" height="30" rx="10" fill="#e5f2e1"/>
+  <circle cx="471" cy="113" r="7" fill="#80b681"/>
+  <path d="M467 113 L470 116 L476 109" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="489" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477450">İşaretleri ara</text>
+
+  <path d="M521 129 V140" fill="none" stroke="#87a58a" stroke-width="2"/>
+  <polygon points="521,145 516,137 526,137" fill="#87a58a"/>
+
+  <rect x="454" y="146" width="134" height="30" rx="10" fill="#e5f2e1"/>
+  <circle cx="471" cy="161" r="7" fill="#80b681"/>
+  <path d="M467 161 L470 164 L476 157" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="489" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477450">Test ve inceleme</text>
+
+  <path d="M521 177 V188" fill="none" stroke="#87a58a" stroke-width="2"/>
+  <polygon points="521,193 516,185 526,185" fill="#87a58a"/>
+
+  <rect x="454" y="194" width="134" height="48" rx="12" fill="url(#safeGrad)" stroke="#a8cea7"/>
+  <path d="M470 207 L480 203 L490 207 V217 C490 224 482 229 480 230 C478 229 470 224 470 217 Z" fill="#6ea971"/>
+  <path d="M475 216 L479 220 L486 211" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="501" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386a41">Korumalı ana dal</text>
+  <text x="501" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54805a">Güvenli gönderim</text>
+
+  <path d="M606 218 H624" fill="none" stroke="#7890a3" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="630,218 621,213 621,223" fill="#7890a3"/>
+</svg>

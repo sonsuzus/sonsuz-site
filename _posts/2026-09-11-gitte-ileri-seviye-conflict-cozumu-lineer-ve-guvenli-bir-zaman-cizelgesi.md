@@ -9,9 +9,13 @@ tags:
   - versiyon kontrol
   - conflict çözümü
 toc: true
+image: /img/gitte-ileri-seviye-99.png
 ---
 
 Birden fazla dal aynı dosyaların aynı bölgelerine dokunduğunda Git, hangi değişikliğin doğru olduğuna karar veremez ve conflict üretir. İleri seviye çözümün amacı yalnızca kırmızı uyarıları susturmak değildir; değişikliklerin anlamını korumak, geçmişi okunabilir tutmak ve hatalı kodun ana dala sızmasını engellemektir. Bunun için küçük commit’ler, kontrollü rebase ve otomatik testlerden oluşan güvenli bir iş akışı gerekir.
+
+![gitte-ileri-seviye-99](/img/gitte-ileri-seviye-99.svg)
+
 ``
 Git geçmişini yönlü ve döngüsüz bir grafik, yani DAG olarak düşünmek faydalıdır. Her commit bir düğüm, parent bağlantıları ise kenarlardır. Bir dalın ana daldan uzaklığını kabaca
 

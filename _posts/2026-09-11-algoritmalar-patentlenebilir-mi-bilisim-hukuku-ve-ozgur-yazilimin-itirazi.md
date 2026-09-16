@@ -9,7 +9,11 @@ tags:
   - bilişim hukuku
   - özgür yazılım
 toc: true
+image: /img/algoritmalar-patentlenebilir-mi-89.png
 ---
+
+![algoritmalar-patentlenebilir-mi-89](/img/algoritmalar-patentlenebilir-mi-89.svg)
+
 
 Bir algoritma, bilgisayara ne yapacağını söyleyen adımlar dizisidir; fakat aynı zamanda matematiksel düşüncenin uygulanmış hâlidir. Bu ikili kimlik önemli bir hukuk sorusu doğurur: Bir şirket, belirli bir hesaplama yöntemini patentleyerek başkalarının aynı mantığı kullanmasını engelleyebilir mi? Tartışma yalnızca hukukçuları değil, yazılımcıları, girişimcileri ve özgür yazılım savunucularını da yakından ilgilendirir.
 ``
