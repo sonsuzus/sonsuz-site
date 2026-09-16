@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="cam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cfe4fb"/>
+      <stop offset="100%" stop-color="#a9cbed"/>
+    </linearGradient>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3d6bd"/>
+      <stop offset="100%" stop-color="#dfa980"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708a" flood-opacity="0.2"/>
+    </filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#f6c85f" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="526" cy="54" r="88" fill="#d9f1e5" opacity="0.45"/>
+  <circle cx="103" cy="278" r="105" fill="#dceafd" opacity="0.5"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496175" font-weight="600">GERİYE IŞIN İZLEME</text>
+  <text x="30" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718696">Kameradan piksele katkı veren yollar</text>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="119" width="118" height="92" rx="20" fill="#edf6ff"/>
+    <rect x="46" y="135" width="52" height="60" rx="10" fill="url(#cam)" stroke="#80add4" stroke-width="1.5"/>
+    <circle cx="72" cy="165" r="14" fill="#537fa8"/>
+    <circle cx="72" cy="165" r="7" fill="#dff2ff"/>
+    <path d="M98 145 L135 133 L135 197 L98 185 Z" fill="#b7d7ef" stroke="#80add4" stroke-width="1.5"/>
+    <text x="56" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385b78" font-weight="600">Kamera</text>
+  </g>
+
+  <path d="M151 163 L269 163" stroke="#4d83b3" stroke-width="3" fill="none"/>
+  <polygon points="269,163 258,157 258,169" fill="#4d83b3"/>
+  <text x="175" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48729a">Birincil ışın</text>
+
+  <g filter="url(#shadow)">
+    <rect x="271" y="104" width="126" height="120" rx="24" fill="#fffaf5" stroke="#e5b18d" stroke-width="1.5"/>
+    <path d="M295 184 Q329 118 373 142 Q354 201 305 195 Z" fill="url(#surface)" opacity="0.96"/>
+    <path d="M302 187 L365 143" stroke="#fff6ec" stroke-width="3" opacity="0.8"/>
+    <circle cx="321" cy="164" r="6" fill="#fffdf9" stroke="#d48859" stroke-width="2"/>
+    <path d="M321 164 L321 128" stroke="#7e9b87" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="296" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#875838" font-weight="600">Yüzey kesişimi</text>
+    <text x="292" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718696">en küçük t</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle cx="455" cy="65" r="22" fill="#fff3b7" stroke="#e6bd54" stroke-width="1.5"/>
+    <path d="M455 31 L455 21 M430 40 L422 32 M480 40 L488 32 M421 65 L411 65 M489 65 L499 65" stroke="#e1b447" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="429" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#896c22" font-weight="600">Işık</text>
+  </g>
+
+  <path d="M440 80 L334 153" stroke="#d4a840" stroke-width="2.5" stroke-dasharray="6 4" fill="none"/>
+  <polygon points="334,153 341,143 345,151" fill="#d4a840"/>
+  <text x="363" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#97772b">Gölge testi</text>
+
+  <path d="M325 161 L443 170" stroke="#a8689d" stroke-width="3" fill="none"/>
+  <polygon points="443,170 432,164 431,176" fill="#a8689d"/>
+  <path d="M323 169 L429 250" stroke="#4c9c9a" stroke-width="3" fill="none"/>
+  <polygon points="429,250 417,248 424,239" fill="#4c9c9a"/>
+
+  <g filter="url(#shadow)">
+    <rect x="449" y="133" width="150" height="74" rx="18" fill="#faeff8" stroke="#d3a4ca" stroke-width="1.5"/>
+    <path d="M470 156 L493 156 L506 170 L493 184 L470 184 Z" fill="#d99ccc" opacity="0.85"/>
+    <path d="M516 151 Q549 170 516 189" fill="none" stroke="#a8689d" stroke-width="3"/>
+    <text x="529" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805072" font-weight="600">Yansıma</text>
+    <text x="529" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c7084">özyineleme</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="438" y="229" width="157" height="61" rx="18" fill="#e8f7f4" stroke="#9acfc8" stroke-width="1.5"/>
+    <path d="M460 243 L486 243 L498 259 L486 276 L460 276 Z" fill="#a8ddd6" opacity="0.8"/>
+    <path d="M505 247 L534 272" stroke="#4c9c9a" stroke-width="3" fill="none"/>
+    <text x="519" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397875" font-weight="600">Kırılma</text>
+    <text x="519" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63918d">Snell yasası</text>
+  </g>
+
+  <path d="M394 165 L414 165" stroke="#a8689d" stroke-width="2" opacity="0.75"/>
+  <path d="M394 171 L414 241" stroke="#4c9c9a" stroke-width="2" opacity="0.75"/>
+
+  <g filter="url(#shadow)">
+    <rect x="38" y="255" width="341" height="40" rx="14" fill="#ffffff" opacity="0.88"/>
+    <circle cx="61" cy="275" r="9" fill="#9fc9ed"/>
+    <circle cx="143" cy="275" r="9" fill="#efc091"/>
+    <circle cx="225" cy="275" r="9" fill="#d7a0cc"/>
+    <circle cx="307" cy="275" r="9" fill="#9bd6ce"/>
+    <text x="76" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50687b">Piksel</text>
+    <text x="158" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50687b">Geometri</text>
+    <text x="240" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50687b">Malzeme</text>
+    <text x="322" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50687b">Renk</text>
+  </g>
+</svg>

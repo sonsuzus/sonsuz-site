@@ -9,6 +9,7 @@ tags:
   - zihinsel sağlık
   - yazılım geliştirme
 toc: true
+image: /img/framework-kosu-bandindan-38.png
 ---
 
 Yeni bir JavaScript kütüphanesini öğrenirken sosyal medyada onun yerine geçen üç araçla karşılaşmak, yazılım dünyasının pek de komik olmayan şakasıdır. Buna yetişmesi gereken sprintler, gece gelen üretim alarmları ve sürekli değişen gereksinimler eklendiğinde geliştirici yalnızca kod değil, yoğun bir zihinsel yük de taşır. Uzun süre yönetilemeyen bu yük; tükenmişlik, motivasyon kaybı ve işlevsellikte belirgin düşüşle sonuçlanabilir.
@@ -27,6 +28,9 @@ Normal yorgunluk çoğu zaman dinlenmeyle azalır. Tükenmişlikte ise hafta son
 | Koda yaklaşım | Kısa süreli isteksizlik | Sürekli kaçınma veya sinizm |
 | Hata algısı | Öğrenme fırsatı | Kişisel başarısızlık hissi |
 | Zaman ölçeği | Saatler veya günler | Haftalar veya aylar |
+
+![framework-kosu-bandindan-38](/img/framework-kosu-bandindan-38.svg)
+
 
 ## Zihinsel yük nasıl birikir?
 

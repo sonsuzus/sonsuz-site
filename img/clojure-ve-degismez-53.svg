@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce6dc"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6c8399" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#70859b" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="316" cy="159" r="116" fill="#dceef1" opacity="0.38"/>
+  <circle cx="316" cy="159" r="86" fill="none" stroke="#b8d5d7" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <text x="24" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385468">Clojure eşzamanlılık modeli</text>
+  <text x="24" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718593">Değişmez değerler • kontrollü durum geçişleri</text>
+
+  <!-- Threads -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="94" width="116" height="48" rx="14" fill="#fff7de"/>
+    <circle cx="52" cy="118" r="12" fill="#f5cf72"/>
+    <path d="M47 118h10M52 113v10" stroke="#84612b" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="72" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#66532e">İş parçacığı</text>
+    <text x="72" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#89764c">güvenli okuma</text>
+
+    <rect x="28" y="177" width="116" height="48" rx="14" fill="#fcebed"/>
+    <circle cx="52" cy="201" r="12" fill="#ec9da9"/>
+    <path d="M47 201h10M52 196v10" stroke="#884952" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="72" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#72434b">İş parçacığı</text>
+    <text x="72" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#96626a">aynı değer</text>
+  </g>
+
+  <!-- Input lines manually arrowed -->
+  <path d="M145 118 C171 118 173 132 197 139" fill="none" stroke="#8aaab4" stroke-width="2"/>
+  <polygon points="197,139 187,134 189,144" fill="#8aaab4"/>
+  <path d="M145 201 C171 201 173 186 197 179" fill="none" stroke="#8aaab4" stroke-width="2"/>
+  <polygon points="197,179 189,174 187,184" fill="#8aaab4"/>
+
+  <!-- Center immutable structure -->
+  <g filter="url(#shadow)">
+    <rect x="198" y="103" width="191" height="113" rx="24" fill="url(#core)" stroke="#b3d4d5" stroke-width="1.2"/>
+    <text x="293.5" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315c65">DEĞİŞMEZ DEĞER</text>
+    <text x="293.5" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#57757c">Eski sürüm korunur</text>
+    <g transform="translate(231,164)">
+      <rect x="0" y="0" width="31" height="27" rx="7" fill="#ffffff"/>
+      <rect x="35" y="0" width="31" height="27" rx="7" fill="#ffffff"/>
+      <rect x="70" y="0" width="31" height="27" rx="7" fill="#ffffff"/>
+      <rect x="105" y="0" width="31" height="27" rx="7" fill="#b9ddcf"/>
+      <text x="15.5" y="18" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41616a">1</text>
+      <text x="50.5" y="18" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41616a">2</text>
+      <text x="85.5" y="18" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41616a">3</text>
+      <text x="120.5" y="18" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41616a">4</text>
+    </g>
+  </g>
+
+  <!-- Version / sharing -->
+  <g filter="url(#smallShadow)">
+    <rect x="223" y="244" width="140" height="49" rx="14" fill="#eef0ff"/>
+    <text x="293" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#535c8e">Yapısal paylaşım</text>
+    <text x="293" y="281" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#777fa6">yalnızca fark yeni</text>
+  </g>
+  <path d="M294 217 L294 239" fill="none" stroke="#889db4" stroke-width="2"/>
+  <polygon points="294,244 289,235 299,235" fill="#889db4"/>
+
+  <!-- Right lanes -->
+  <path d="M390 136 C407 136 409 95 428 95" fill="none" stroke="#7dabc1" stroke-width="2"/>
+  <polygon points="428,95 418,90 420,100" fill="#7dabc1"/>
+  <path d="M390 182 C408 182 409 222 428 222" fill="none" stroke="#7dabc1" stroke-width="2"/>
+  <polygon points="428,222 418,217 420,227" fill="#7dabc1"/>
+
+  <!-- Atom -->
+  <g filter="url(#shadow)">
+    <rect x="429" y="59" width="181" height="75" rx="17" fill="#e7f0ff"/>
+    <circle cx="458" cy="96" r="17" fill="#a9c9ef"/>
+    <circle cx="458" cy="96" r="7" fill="none" stroke="#416e9d" stroke-width="2"/>
+    <path d="M458 84v-5M458 113v-5M446 96h-5M475 96h-5" stroke="#416e9d" stroke-width="2" stroke-linecap="round"/>
+    <text x="486" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365d86">atom</text>
+    <text x="486" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7893">tek durum</text>
+    <text x="486" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7893">atomik geçiş</text>
+  </g>
+
+  <!-- Ref STM -->
+  <g filter="url(#shadow)">
+    <rect x="429" y="185" width="181" height="75" rx="17" fill="#e8f5ed"/>
+    <circle cx="458" cy="222" r="17" fill="#a8d8ba"/>
+    <path d="M450 220h16M454 214v12M462 214v12" stroke="#367050" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="486" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356d50">ref ve STM</text>
+    <text x="486" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b836b">koordineli durum</text>
+    <text x="486" y="247" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b836b">ya hep ya hiç</text>
+  </g>
+
+  <!-- tiny safe shield -->
+  <g transform="translate(570,276)">
+    <path d="M0 0 L17 6 L17 18 C17 29 8.5 34 8.5 34 C8.5 34 0 29 0 18Z" fill="#d7ecdf" stroke="#7eaf91" stroke-width="1.2"/>
+    <path d="M4 17l3 3 6-7" fill="none" stroke="#4e8a64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="555" y="307" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587568">kilitsiz güven</text>
+</svg>

@@ -9,6 +9,7 @@ tags:
   - kod kalitesi
   - graf teorisi
 toc: true
+image: /img/siklomatik-karmasiklik-kodun-52.png
 ---
 
 Bir fonksiyon çalışıyor olabilir; peki onu güvenle değiştirebilir misiniz? İç içe koşullar, döngüler ve farklı çıkış yolları çoğaldıkça kod, küçük bir değişikliğin beklenmedik sonuçlar doğurabileceği bir labirente dönüşür. Siklomatik karmaşıklık, bu labirentteki bağımsız yolları sayarak kodun test edilme, anlaşılma ve bakım riskini sayısal biçimde görünür kılar.
@@ -75,6 +76,9 @@ Eşikler ekipten ekibe değişse de yaygın bir yorumlama tablosu şöyledir:
 | 11–20 | Orta risk | Fonksiyonu bölmeyi değerlendirin |
 | 21–50 | Yüksek risk | Refaktör ve yoğun test uygulayın |
 | 50+ | Çok yüksek risk | Tasarımı yeniden ele alın |
+
+![siklomatik-karmasiklik-kodun-52](/img/siklomatik-karmasiklik-kodun-52.svg)
+
 
 `M=4` değerine sahip örneğimiz rahat görünür. Fakat indirim kurallarına ülke, ürün türü, kampanya tarihi ve müşteri seviyesi eklendiğinde fonksiyon hızla “koşul çorbasına” dönüşebilir.
 

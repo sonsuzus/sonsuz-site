@@ -9,6 +9,7 @@ tags:
   - çok ajanlı sistemler
   - yapay zekâ
 toc: true
+image: /img/dijital-karincalar-is-98.png
 ---
 
 Bir karıncanın tek başına trafik rotası hesaplamasını veya karmaşık bir lojistik ağını yönetmesini beklemeyiz. Ancak binlerce karınca, merkezi bir yönetici olmadan yiyeceğe giden kısa yolları keşfedebilir. Sürü zekâsı, doğadaki bu şaşırtıcı kolektif davranışı ufak ve otonom yazılım ajanlarına taşır. Her ajan yalnızca basit kurallara uyar; ortaya çıkan sistem ise tek bir ajanın kapasitesini aşan problemleri çözebilir.
@@ -41,6 +42,9 @@ $\rho$ buharlaşma oranıdır. Buharlaşma olmasaydı ajanlar erken keşfedilen 
 | Bilgi kapsamı | Küresel | Yerel |
 | Ölçeklenme | Darboğaz oluşabilir | Yeni ajanlarla güçlenebilir |
 | Davranış | Önceden planlı | Etkileşimlerden belirir |
+
+![dijital-karincalar-is-98](/img/dijital-karincalar-is-98.svg)
+
 
 ## Küçük bir dijital karınca
 

@@ -9,9 +9,13 @@ tags:
   - veri görselleştirme
   - javascript
 toc: true
+image: /img/d3js-ile-veriye-20.png
 ---
 
 Bir veri tablosuna baktığınızda yalnızca satırlar ve sütunlar görebilirsiniz; D3.js ise aynı veride hareket eden çubuklar, renk değiştiren noktalar ve kullanıcıyla konuşan hikâyeler görür. Açılımı **Data-Driven Documents** olan D3.js, hazır grafikler sunmaktan çok daha temel bir fikir üzerine kuruludur: Veriyi HTML, SVG ve CSS gibi web standartlarına bağlamak. Böylece görselleştirme, ekrana çizilip unutulan bir resim değil; veriye tepki veren canlı bir arayüz hâline gelir.
+
+
+![d3js-ile-veriye-20](/img/d3js-ile-veriye-20.svg)
 
 ``
 

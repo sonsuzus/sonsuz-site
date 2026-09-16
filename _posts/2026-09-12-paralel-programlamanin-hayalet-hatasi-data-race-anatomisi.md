@@ -9,6 +9,7 @@ tags:
   - thread
   - data race
 toc: true
+image: /img/paralel-programlamanin-hayalet-67.png
 ---
 
 Paralel programlama, bir işi birden fazla çalışana paylaştırmak gibidir: Doğru koordinasyonla işler hızlanır, koordinasyon yoksa herkes aynı dosyanın üzerine kahve döker. **Veri yarışı (data race)**, birden fazla iş parçacığının aynı bellek konumuna eş zamanlı erişmesi, erişimlerden en az birinin yazma olması ve aralarında uygun bir senkronizasyon bulunmaması durumudur. Sonuç; bazen çalışan, bazen bozulan ve hata ayıklayıcı açılınca mucizevi biçimde düzelen programlardır.
@@ -123,3 +124,6 @@ g++ -std=c++20 -fsanitize=thread -g main.cpp -pthread
 ```
 
 Araç, çakışan erişimleri ve ilgili thread’leri raporlar. Yine de en güçlü savunma iyi tasarımdır: değiştirilebilir ortak veriyi azaltmak, sahipliği açıkça belirlemek, mesajlaşmayı tercih etmek ve senkronizasyon politikasını belgelemek. Paralel kodda “bende çalıştı” bir başarı ölçütü değil, yaklaşan fırtınanın sessizliğidir.
+
+![paralel-programlamanin-hayalet-67](/img/paralel-programlamanin-hayalet-67.svg)
+

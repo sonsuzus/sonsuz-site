@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8ddf8"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8dcff"/>
+      <stop offset="100%" stop-color="#d8c7f1"/>
+    </linearGradient>
+    <linearGradient id="viewGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8f3e4"/>
+      <stop offset="100%" stop-color="#bee8d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#49627a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#49627a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="572" cy="49" r="76" fill="#dff3ec" opacity="0.55"/>
+  <circle cx="71" cy="282" r="90" fill="#e4efff" opacity="0.6"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42576e">D3.js · Veri ile Belge Arasında Canlı Bağ</text>
+
+  <!-- data source -->
+  <g filter="url(#shadow)">
+    <rect x="34" y="67" width="145" height="160" rx="19" fill="url(#dataGrad)"/>
+  </g>
+  <text x="106" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315270">HAM VERİ</text>
+  <line x1="56" y1="104" x2="157" y2="104" stroke="#8eafd0" stroke-width="1"/>
+  <g fill="#ffffff" opacity="0.86">
+    <rect x="55" y="116" width="103" height="22" rx="7"/>
+    <rect x="55" y="145" width="103" height="22" rx="7"/>
+    <rect x="55" y="174" width="103" height="22" rx="7"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46647e">
+    <text x="67" y="132">Öğe A</text>
+    <text x="67" y="161">Öğe B</text>
+    <text x="67" y="190">Öğe C</text>
+  </g>
+  <g fill="#6a9ed1">
+    <circle cx="143" cy="127" r="5"/>
+    <circle cx="143" cy="156" r="8"/>
+    <circle cx="143" cy="185" r="6"/>
+  </g>
+
+  <!-- connection left -->
+  <path d="M181 147 C197 147 199 147 214 147" fill="none" stroke="#7892ad" stroke-width="2.2"/>
+  <polygon points="214,147 206,142 206,152" fill="#7892ad"/>
+  <text x="197" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607890">bağla</text>
+
+  <!-- d3 core -->
+  <g filter="url(#shadow)">
+    <rect x="216" y="57" width="205" height="181" rx="25" fill="url(#coreGrad)"/>
+  </g>
+  <circle cx="318" cy="105" r="29" fill="#ffffff" opacity="0.78"/>
+  <circle cx="318" cy="105" r="20" fill="#8067b5"/>
+  <text x="318" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">D3</text>
+  <text x="318" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#55406f">DİNAMİK BAĞLAMA</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="234" y="169" width="51" height="41" rx="11" fill="#d8fae8"/>
+    <rect x="294" y="169" width="51" height="41" rx="11" fill="#ddecff"/>
+    <rect x="354" y="169" width="49" height="41" rx="11" fill="#ffe1df"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">
+    <text x="259" y="194" text-anchor="middle" fill="#31765b">Ekle</text>
+    <text x="319" y="194" text-anchor="middle" fill="#3c6191">Güncelle</text>
+    <text x="378" y="194" text-anchor="middle" fill="#a25454">Çıkar</text>
+  </g>
+
+  <!-- connection right -->
+  <path d="M423 147 C438 147 440 147 454 147" fill="none" stroke="#7892ad" stroke-width="2.2"/>
+  <polygon points="454,147 446,142 446,152" fill="#7892ad"/>
+  <text x="438" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607890">işle</text>
+
+  <!-- visual document -->
+  <g filter="url(#shadow)">
+    <rect x="456" y="67" width="151" height="160" rx="19" fill="url(#viewGrad)"/>
+  </g>
+  <text x="531" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2f6754">CANLI BELGE</text>
+  <line x1="475" y1="104" x2="589" y2="104" stroke="#89bca5" stroke-width="1"/>
+  <line x1="482" y1="199" x2="580" y2="199" stroke="#719886" stroke-width="1.4"/>
+  <line x1="482" y1="116" x2="482" y2="200" stroke="#719886" stroke-width="1.4"/>
+  <rect x="495" y="165" width="17" height="34" rx="4" fill="#5e9bda"/>
+  <rect x="522" y="137" width="17" height="62" rx="4" fill="#8067b5"/>
+  <rect x="549" y="151" width="17" height="48" rx="4" fill="#e68870"/>
+  <circle cx="503" cy="156" r="4" fill="#5e9bda"/>
+  <circle cx="530" cy="128" r="4" fill="#8067b5"/>
+  <circle cx="557" cy="142" r="4" fill="#e68870"/>
+  <text x="531" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477361">SVG · DOM</text>
+
+  <!-- lower scale interaction ribbon -->
+  <g filter="url(#smallShadow)">
+    <rect x="145" y="263" width="350" height="38" rx="15" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <path d="M189 263 C206 247 237 247 254 263" fill="none" stroke="#6f98c6" stroke-width="1.8"/>
+  <polygon points="254,263 246,258 248,267" fill="#6f98c6"/>
+  <path d="M380 263 C397 247 428 247 445 263" fill="none" stroke="#68a584" stroke-width="1.8"/>
+  <polygon points="445,263 437,258 439,267" fill="#68a584"/>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <text x="188" y="287" fill="#486e99">Ölçekle</text>
+    <text x="290" y="287" text-anchor="middle" fill="#74599c">Geçiş</text>
+    <text x="408" y="287" fill="#43785f">Etkileşim</text>
+  </g>
+  <circle cx="265" cy="282" r="5" fill="#8b71b8"/>
+  <circle cx="350" cy="282" r="5" fill="#8b71b8"/>
+</svg>

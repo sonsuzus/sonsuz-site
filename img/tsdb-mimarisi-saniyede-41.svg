@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#dcf3e5"/>
+    </linearGradient>
+    <linearGradient id="wal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3d8"/>
+      <stop offset="100%" stop-color="#ffe6b5"/>
+    </linearGradient>
+    <linearGradient id="ram" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5ddff"/>
+      <stop offset="100%" stop-color="#d5c9fa"/>
+    </linearGradient>
+    <linearGradient id="disk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d7f1ec"/>
+      <stop offset="100%" stop-color="#bce6dd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7490a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#718b9c" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <rect x="18" y="16" width="604" height="42" rx="16" fill="url(#header)" filter="url(#smallShadow)"/>
+  <circle cx="45" cy="37" r="13" fill="#77aee8"/>
+  <path d="M39 40 L43 40 L43 33 L47 33 L47 40 L51 40 L45 47 Z" fill="#ffffff"/>
+  <text x="67" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546d">TSDB Yazma Hattı</text>
+  <text x="67" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667f91">Toplu, sıralı ve ekonomik kayıt akışı</text>
+
+  <path d="M129 144 H153" stroke="#83a0b5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="153,138 164,144 153,150" fill="#83a0b5"/>
+  <path d="M243 144 H267" stroke="#83a0b5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="267,138 278,144 267,150" fill="#83a0b5"/>
+  <path d="M357 144 H381" stroke="#83a0b5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="381,138 392,144 381,150" fill="#83a0b5"/>
+  <path d="M481 144 H505" stroke="#83a0b5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="505,138 516,144 505,150" fill="#83a0b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="98" width="101" height="92" rx="18" fill="#dbeeff"/>
+  </g>
+  <rect x="42" y="113" width="30" height="24" rx="7" fill="#78afe8"/>
+  <path d="M48 129 C52 123 56 135 60 127 C64 119 67 132 69 126" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="87" cy="119" r="6" fill="#95c56f"/>
+  <circle cx="104" cy="119" r="6" fill="#f0ad62"/>
+  <text x="42" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546f">Sensörler</text>
+  <text x="42" y="175" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607c91">40 bin kayıt/sn</text>
+
+  <g filter="url(#shadow)">
+    <rect x="164" y="98" width="79" height="92" rx="18" fill="url(#wal)"/>
+  </g>
+  <rect x="181" y="112" width="45" height="31" rx="6" fill="#eeb966"/>
+  <path d="M187 120 H220 M187 127 H215 M187 134 H211" stroke="#fffaf0" stroke-width="2" stroke-linecap="round"/>
+  <text x="185" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76552a">WAL</text>
+  <text x="175" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#876b43">Eklemeli günlük</text>
+
+  <g filter="url(#shadow)">
+    <rect x="278" y="98" width="79" height="92" rx="18" fill="url(#ram)"/>
+  </g>
+  <rect x="296" y="112" width="43" height="31" rx="7" fill="#927ed4"/>
+  <rect x="301" y="118" width="6" height="18" rx="2" fill="#efeaff"/>
+  <rect x="312" y="118" width="6" height="18" rx="2" fill="#efeaff"/>
+  <rect x="323" y="118" width="6" height="18" rx="2" fill="#efeaff"/>
+  <text x="289" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#594886">Bellek</text>
+  <text x="290" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#716397">Seri grupları</text>
+
+  <g filter="url(#shadow)">
+    <rect x="392" y="98" width="89" height="92" rx="18" fill="url(#disk)"/>
+  </g>
+  <ellipse cx="436.5" cy="117" rx="24" ry="8" fill="#5cae9f"/>
+  <path d="M412.5 117 V139 C412.5 150 460.5 150 460.5 139 V117" fill="#78c7b8"/>
+  <ellipse cx="436.5" cy="139" rx="24" ry="8" fill="#69b8aa"/>
+  <path d="M419 121 H454 M419 132 H454" stroke="#dff8f2" stroke-width="2" opacity="0.9"/>
+  <text x="406" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326d65">Kalıcı blok</text>
+  <text x="403" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54847d">Sıralı disk yazma</text>
+
+  <g filter="url(#shadow)">
+    <rect x="516" y="98" width="96" height="92" rx="18" fill="#e5f3d9"/>
+  </g>
+  <circle cx="546" cy="128" r="17" fill="#88bd70"/>
+  <path d="M538 128 H554 M546 120 V136" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M567 116 L589 116 M567 128 L584 128 M567 140 L578 140" stroke="#76a562" stroke-width="3" stroke-linecap="round"/>
+  <text x="528" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a7140">Sıkıştırma</text>
+  <text x="528" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69855f">Yaşam döngüsü</text>
+
+  <path d="M436 199 V216 C436 225 416 225 416 234" fill="none" stroke="#9aafb8" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="410,233 416,243 422,233" fill="#9aafb8"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="112" y="242" width="416" height="57" rx="17" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <circle cx="140" cy="270" r="16" fill="#ddecff"/>
+  <path d="M133 273 L139 266 L143 270 L149 262" fill="none" stroke="#5c96d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="165" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d617d">Toplu yazma</text>
+  <text x="165" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#678096">500 kayıt paketleri</text>
+
+  <path d="M282 270 H310" stroke="#aac0ca" stroke-width="2"/>
+  <polygon points="310,265 319,270 310,275" fill="#aac0ca"/>
+
+  <circle cx="344" cy="270" r="16" fill="#eee7ff"/>
+  <path d="M336 267 C340 262 348 262 352 267 M336 273 C340 278 348 278 352 273" fill="none" stroke="#806bc1" stroke-width="2"/>
+  <text x="369" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#584b83">Zaman indeksi</text>
+  <text x="369" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756b96">Etiket ve seri kimliği</text>
+
+  <path d="M490 270 H509" stroke="#aac0ca" stroke-width="2"/>
+  <polygon points="509,265 518,270 509,275" fill="#aac0ca"/>
+</svg>

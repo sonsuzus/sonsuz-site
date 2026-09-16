@@ -12,9 +12,13 @@ tags:
   - yazılım-güvenliği
   - aviyonik
 toc: true
+image: /img/ada-neden-havacilik-47.png
 ---
 
 Programlama dilleri dünyasında moda hızla değişir; ancak uçuş kontrol bilgisayarı geliştirirken “Bu yıl hangi dil popüler?” diye sorulmaz. Asıl sorular, yazılımın öngörülebilir olup olmadığı ve bir hatanın daha çalıştırılmadan yakalanıp yakalanamayacağıdır. 1980’lerde ABD Savunma Bakanlığının ihtiyaçları doğrultusunda geliştirilen Ada, tam da bu nedenle havacılık, savunma ve demiryolu gibi hata toleransı düşük alanlarda hâlâ güçlü biçimde tercih ediliyor.
+
+![ada-neden-havacilik-47](/img/ada-neden-havacilik-47.svg)
+
 ``
 
 ## Ada’nın temel tasarım felsefesi

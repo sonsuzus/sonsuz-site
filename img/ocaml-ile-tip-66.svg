@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#c8ddfb"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8295" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8295" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="81" cy="65" r="74" fill="#d9f1ec" opacity="0.45"/>
+  <circle cx="575" cy="257" r="103" fill="#dceafe" opacity="0.52"/>
+  <path d="M42 161 C132 105 190 113 254 150" fill="none" stroke="#b8cee1" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M388 150 C449 110 525 108 603 153" fill="none" stroke="#b8cee1" stroke-width="2" stroke-dasharray="5 6"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">OCaml Tip Çıkarımı</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e8395">koddan en genel tipe</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="28" y="111" width="152" height="98" rx="18" fill="#fffdf9" stroke="#d7e0e4"/>
+    <rect x="43" y="126" width="39" height="28" rx="9" fill="#e5f4ed"/>
+    <text x="62" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a8063">Kod</text>
+    <text x="96" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405565">İfade</text>
+    <text x="43" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526878">double x = x + x</text>
+    <text x="43" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738696">x : 'a</text>
+  </g>
+
+  <path d="M181 160 L218 160" fill="none" stroke="#7d9bb5" stroke-width="2.5"/>
+  <polygon points="218,160 210,155 210,165" fill="#7d9bb5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="221" y="91" width="174" height="139" rx="25" fill="url(#core)" stroke="#adc7e5"/>
+    <circle cx="308" cy="130" r="25" fill="#f8fcff" stroke="#a9c8e9" stroke-width="2"/>
+    <path d="M296 131 C301 122 313 122 319 130 C314 139 302 140 296 131Z" fill="none" stroke="#4e83b9" stroke-width="2"/>
+    <path d="M302 130 L313 130" stroke="#4e83b9" stroke-width="2"/>
+    <text x="308" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a82">Birleştirme</text>
+    <text x="308" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55718c">Kısıtları çöz</text>
+    <rect x="250" y="203" width="116" height="17" rx="8.5" fill="#e8f3ff"/>
+    <text x="308" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7192">'a = int</text>
+  </g>
+
+  <path d="M396 137 L431 137" fill="none" stroke="#7d9bb5" stroke-width="2.5"/>
+  <polygon points="431,137 423,132 423,142" fill="#7d9bb5"/>
+  <path d="M396 185 L431 185" fill="none" stroke="#7d9bb5" stroke-width="2.5"/>
+  <polygon points="431,185 423,180 423,190" fill="#7d9bb5"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="435" y="83" width="174" height="92" rx="18" fill="#fafffb" stroke="#cfe5da"/>
+    <circle cx="462" cy="110" r="14" fill="#d9f1e5"/>
+    <path d="M455 110 L460 115 L470 104" fill="none" stroke="#3e9a70" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="485" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376952">En genel tip</text>
+    <text x="455" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7665">int → int</text>
+    <text x="455" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#749184">'a → 'a</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="435" y="191" width="174" height="71" rx="18" fill="#fffafa" stroke="#efd1d1"/>
+    <circle cx="462" cy="218" r="14" fill="#fbe0df"/>
+    <path d="M456 212 L468 224 M468 212 L456 224" stroke="#c85d61" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="485" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c4b50">Tip hatası</text>
+    <text x="455" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b6669">int ≠ string</text>
+  </g>
+
+  <g>
+    <rect x="44" y="244" width="130" height="36" rx="12" fill="#edf4fb" stroke="#d3e1ee"/>
+    <text x="109" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53738e">Operatör kısıtı</text>
+    <path d="M109 244 L109 216" fill="none" stroke="#a8bed1" stroke-width="1.5"/>
+  </g>
+
+  <g>
+    <rect x="229" y="253" width="157" height="30" rx="12" fill="#eef7f3" stroke="#d2e6dc"/>
+    <text x="307.5" y="273" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527365">Polimorfizm</text>
+    <path d="M308 253 L308 233" fill="none" stroke="#aacbbd" stroke-width="1.5"/>
+  </g>
+</svg>

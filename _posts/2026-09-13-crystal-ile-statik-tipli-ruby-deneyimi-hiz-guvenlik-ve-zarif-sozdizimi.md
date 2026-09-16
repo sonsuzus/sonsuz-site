@@ -12,6 +12,7 @@ tags:
   - performans
   - programlama
 toc: true
+image: /img/crystal-ile-statik-57.png
 ---
 
 Ruby’nin okunabilir sözdizimini seviyor, ancak derleme zamanında tip güvenliği ve yerel kod performansı da istiyorsanız Crystal oldukça ilgi çekici bir seçenek. Crystal, Ruby’den güçlü biçimde esinlenen sözdizimini statik tip sistemi, tip çıkarımı ve LLVM tabanlı derleyiciyle birleştirir. Sonuç, geliştiriciye dinamik bir dil kullanıyormuş hissi veren fakat birçok hatayı program çalışmadan önce yakalayan modern bir programlama dilidir.
@@ -26,6 +27,9 @@ numbers = [1, 2, 3, 4, 5]
 squares = numbers
   .select { |number| number.odd? }
   .map { |number| number ** 2 }
+
+![crystal-ile-statik-57](/img/crystal-ile-statik-57.svg)
+
 
 puts squares
 ```

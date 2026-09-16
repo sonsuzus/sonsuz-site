@@ -9,7 +9,11 @@ tags:
   - bilgisayar grafikleri
   - optik fizik
 toc: true
+image: /img/isin-izleme-piksellerin-72.png
 ---
+
+![isin-izleme-piksellerin-72](/img/isin-izleme-piksellerin-72.svg)
+
 
 Bir ekrandaki parlak metal, saydam cam veya yumuşak gölge yalnızca estetik bir hile değildir. Işın izleme, ışığın gerçek dünyadaki davranışını matematiksel bir modele dönüştürerek her pikselin rengini hesaplar. İşin eğlenceli tarafı şudur: Algoritma, doğadaki sayısız fotonu ileri doğru takip etmek yerine kameradan sahneye ters yönde ışın göndererek yalnızca görüntüye katkı sağlayan yolları araştırır.
 

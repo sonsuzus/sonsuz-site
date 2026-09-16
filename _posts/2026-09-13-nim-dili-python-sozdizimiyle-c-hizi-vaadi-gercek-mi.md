@@ -9,6 +9,7 @@ tags:
   - python
   - performans
 toc: true
+image: /img/nim-dili-python-90.png
 ---
 
 Nim, ilk bakışta Python’ın derlenmiş ve spor salonuna yazılmış kuzeni gibi görünür: girintili, temiz bir sözdizimi sunar; ancak kodu doğrudan yorumlamak yerine çoğunlukla C’ye çevirip yerel makine koduna derler. Peki “Python rahatlığı, C hızı” sloganı gerçeği mi anlatıyor, yoksa pazarlama departmanının kahvesi biraz fazla mı sertti?
@@ -75,3 +76,6 @@ Ayrıca Python karşılaştırmasının adil yapılması gerekir. Saf CPython d�
 ## Son karar
 
 Nim’in vaadi büyük ölçüde tutuyor; fakat doğru ifade “Python’ın aynısı ve otomatik olarak C kadar hızlı” değildir. Daha doğrusu Nim, Python benzeri okunabilirliği statik türler, güçlü metaprogramlama ve yerel derlemeyle birleştirir. Küçük ikili dosyalar, hızlı komut satırı araçları veya sistem seviyesinde kontrol istiyorsanız etkileyici bir seçenektir. Yine de ekosistemi Python ve C kadar geniş değildir; performans için ölçüm, profil çıkarma ve doğru veri yapısı seçimi şarttır. Sonuçta Nim hızlıdır, ama kronometreyi yine sizin tutmanız gerekir.
+
+![nim-dili-python-90](/img/nim-dili-python-90.svg)
+

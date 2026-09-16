@@ -9,6 +9,7 @@ tags:
   - otp
   - dağıtık sistemler
 toc: true
+image: /img/erlang-ve-otp-45.png
 ---
 
 Bir yazılım sisteminin yıllarca çalışması kulağa bilim kurgu gibi gelebilir. Erlang dünyasında ise sunucuyu yeniden başlatmadan kod güncellemek, çöken süreçleri otomatik olarak ayağa kaldırmak ve milyonlarca eşzamanlı bağlantıyı yönetmek tasarımın doğal parçalarıdır. Ericsson laboratuvarlarında telekom sistemleri için doğan Erlang, bugün mesajlaşmadan fintek altyapılarına kadar uzanan yolculuğunda hâlâ yüksek erişilebilirliğin en güçlü araçlarından biridir.
@@ -30,6 +31,9 @@ $$
 | %99,9 | 8 saat 46 dakika | Ortalama web hizmetleri |
 | %99,99 | 52 dakika | Kritik ticari sistemler |
 | %99,9999 | 31,5 saniye | Telekom sınıfı altyapı |
+
+![erlang-ve-otp-45](/img/erlang-ve-otp-45.svg)
+
 
 Erlang tek başına altı dokuz garantisi vermez. Ancak hata izolasyonu, dağıtık çalışma ve otomatik iyileşme için sunduğu yapı taşları bu hedefi ulaşılabilir kılar.
 

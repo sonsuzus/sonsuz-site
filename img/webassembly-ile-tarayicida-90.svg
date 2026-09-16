@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="wasm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8879d9"/>
+      <stop offset="100%" stop-color="#5f9bc8"/>
+    </linearGradient>
+    <linearGradient id="browser" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bfe9dc"/>
+      <stop offset="100%" stop-color="#a9d2ea"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#66839a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#66839a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="46" r="68" fill="#dceef7" opacity="0.48"/>
+  <circle cx="588" cy="276" r="98" fill="#dff0d7" opacity="0.46"/>
+  <path d="M25 275 C135 228 155 312 265 276 S450 229 615 265" fill="none" stroke="#bddde0" stroke-width="1.5" opacity="0.55"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456276">Tarayıcıda yüksek performans akışı</text>
+
+  <!-- Source languages -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="74" width="117" height="44" rx="14" fill="#fff4df"/>
+    <rect x="28" y="128" width="117" height="44" rx="14" fill="#fde8e5"/>
+    <rect x="28" y="182" width="117" height="44" rx="14" fill="#e9f0ff"/>
+  </g>
+  <circle cx="51" cy="96" r="11" fill="#efbd69"/>
+  <path d="M46 92 h10 M46 96 h7 M46 100 h10" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="71" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5b5143">C ve C++</text>
+  <circle cx="51" cy="150" r="11" fill="#df8b7d"/>
+  <path d="M46 150 l4 4 l7-8" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="71" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#62504e">Rust</text>
+  <circle cx="51" cy="204" r="11" fill="#879bd6"/>
+  <path d="M46 199 h10 v10 h-10z" fill="none" stroke="#fff" stroke-width="1.4"/>
+  <text x="71" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4d5c80">Diğer diller</text>
+
+  <!-- Compilation lines -->
+  <path d="M145 96 H190 M145 150 H190 M145 204 H190" fill="none" stroke="#8096a4" stroke-width="2"/>
+  <polygon points="190,96 182,91 182,101" fill="#8096a4"/>
+  <polygon points="190,150 182,145 182,155" fill="#8096a4"/>
+  <polygon points="190,204 182,199 182,209" fill="#8096a4"/>
+  <text x="151" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718894">derleme</text>
+
+  <!-- Center WASM -->
+  <g filter="url(#shadow)">
+    <rect x="198" y="89" width="148" height="132" rx="25" fill="url(#wasm)"/>
+    <rect x="211" y="103" width="122" height="104" rx="18" fill="#ffffff" opacity="0.13"/>
+  </g>
+  <path d="M235 138 l12-16 l12 16 l-12 16z" fill="#fff" opacity="0.92"/>
+  <path d="M270 126 h31 M270 138 h22 M270 150 h31 M270 162 h18" stroke="#e9f4ff" stroke-width="3" stroke-linecap="round"/>
+  <text x="272" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#fff">WASM</text>
+  <text x="272" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eef6ff">ikili komut</text>
+
+  <!-- Browser runtime -->
+  <path d="M346 155 H389" fill="none" stroke="#6f91a2" stroke-width="2.4"/>
+  <polygon points="389,155 380,149 380,161" fill="#6f91a2"/>
+  <text x="350" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718894">doğrula</text>
+
+  <g filter="url(#shadow)">
+    <rect x="397" y="77" width="145" height="157" rx="24" fill="url(#browser)"/>
+    <rect x="410" y="91" width="119" height="38" rx="12" fill="#f9fffc" opacity="0.74"/>
+    <rect x="410" y="139" width="119" height="37" rx="12" fill="#f9fffc" opacity="0.64"/>
+    <rect x="410" y="186" width="119" height="34" rx="12" fill="#f9fffc" opacity="0.56"/>
+  </g>
+  <text x="469" y="68" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466b77">Tarayıcı çalışma ortamı</text>
+  <circle cx="429" cy="110" r="8" fill="#64b8a1"/>
+  <text x="446" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#41616b">JIT veya AOT</text>
+  <circle cx="429" cy="157" r="8" fill="#6c9ed0"/>
+  <text x="446" y="161" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#41616b">Makine kodu</text>
+  <circle cx="429" cy="203" r="8" fill="#8e85ca"/>
+  <text x="446" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#41616b">Sandbox</text>
+
+  <!-- Output / performance -->
+  <path d="M542 155 H567" fill="none" stroke="#6f91a2" stroke-width="2.4"/>
+  <polygon points="567,155 558,149 558,161" fill="#6f91a2"/>
+  <g filter="url(#smallShadow)">
+    <rect x="574" y="102" width="48" height="106" rx="18" fill="#fefefe"/>
+  </g>
+  <path d="M598 181 V132" stroke="#5d9d86" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="598,119 591,134 605,134" fill="#5d9d86"/>
+  <path d="M587 187 H609" stroke="#a8bdc0" stroke-width="2" stroke-linecap="round"/>
+  <text x="598" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#477567">Native'e yakın</text>
+
+  <!-- JS orchestration -->
+  <path d="M273 221 C280 265 373 276 417 234" fill="none" stroke="#d39479" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="419,233 409,232 414,241" fill="#d39479"/>
+  <g filter="url(#smallShadow)">
+    <rect x="204" y="253" width="121" height="39" rx="15" fill="#fff0df"/>
+  </g>
+  <circle cx="228" cy="272" r="11" fill="#e2a05f"/>
+  <text x="228" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#fff">JS</text>
+  <text x="246" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#795d43">Orkestrasyon</text>
+  <text x="357" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b7164">veri aktarımı</text>
+</svg>

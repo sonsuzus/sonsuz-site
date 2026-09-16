@@ -9,6 +9,7 @@ tags:
   - wasm
   - web performansı
 toc: true
+image: /img/webassembly-ile-tarayicida-90.png
 ---
 
 Bir web sayfasının görüntü işlemek, fizik simülasyonu çalıştırmak veya milyonlarca veri noktasını analiz etmek için kullanılması geçmişte pek gerçekçi değildi. JavaScript motorları çok hızlandı; ancak C, C++ ve Rust gibi sistem dilleriyle geliştirilen ağır algoritmalar söz konusu olduğunda tarayıcıların yeni bir oyuncuya ihtiyacı vardı: **WebAssembly**, kısa adıyla WASM. Bu teknoloji, tarayıcıyı yalnızca belge gösteren bir uygulamadan yüksek performanslı bir çalışma platformuna dönüştürüyor.
@@ -74,3 +75,6 @@ WebAssembly özellikle görüntü ve video kodlama, CAD uygulamaları, oyun moto
 Ancak WASM, JavaScript’in yerine geçen sihirli bir değnek değildir. DOM düğmelerini yönetmek, formları işlemek ve kullanıcı arayüzü oluşturmak için JavaScript hâlâ daha doğaldır. En verimli mimari genellikle hibrittir: JavaScript orkestrayı yönetir, WebAssembly ise ağır enstrümanları çalar.
 
 Üstelik sandbox modeli sayesinde WASM modülleri belleğe, dosya sistemine veya cihaz kaynaklarına sınırsız biçimde erişemez. Sonuç olarak tarayıcının güvenlik sınırları korunurken performans sınırları ciddi biçimde genişler. Native hızın tamamı her zaman yakalanmasa da doğru algoritma ve iyi veri yönetimiyle aradaki fark şaşırtıcı ölçüde küçülebilir.
+
+![webassembly-ile-tarayicida-90](/img/webassembly-ile-tarayicida-90.svg)
+

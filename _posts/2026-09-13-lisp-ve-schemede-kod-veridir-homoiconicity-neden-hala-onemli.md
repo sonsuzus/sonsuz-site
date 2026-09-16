@@ -9,6 +9,7 @@ tags:
   - scheme
   - homoiconicity
 toc: true
+image: /img/lisp-ve-schemede-23.png
 ---
 
 Bir Lisp programına ilk kez bakanların ortak tepkisi genellikle şudur: “Bu kadar parantez gerçekten gerekli mi?” Bir süre sonra parantezlerin süs değil, dilin temel fikrinin görünür hâli olduğu anlaşılır. Lisp ailesinde programlar, dilin sıradan veri yapılarıyla temsil edilir. Kısacası kod ile veri aynı kıyafeti giyer; buna **homoiconicity** denir.
@@ -96,3 +97,6 @@ Modern yazılım geliştirme; AST dönüşümleri, kod üreticileri, derleyici e
 Bu yaklaşım; tekrarlanan kalıpları soyutlamayı, projeye özel küçük diller geliştirmeyi ve derleme zamanında doğrulama yapmayı kolaylaştırır. Ancak `eval` ile rastgele veri çalıştırmak güvenlik riski taşır. Homoiconicity’nin değeri her şeyi dinamik olarak çalıştırmak değil, program yapısını güvenli ve sistematik biçimde dönüştürebilmektir.
 
 Sonuç olarak Lisp’in parantezleri geçmişten kalma tuhaflıklar değildir. Onlar, kodun incelenebilir, üretilebilir ve dönüştürülebilir veri olduğunu gösteren açık bir arayüzdür. Bugünün metaprogramlama araçları değişse de bu fikir hâlâ şaşırtıcı derecede moderndir.
+
+![lisp-ve-schemede-23](/img/lisp-ve-schemede-23.svg)
+

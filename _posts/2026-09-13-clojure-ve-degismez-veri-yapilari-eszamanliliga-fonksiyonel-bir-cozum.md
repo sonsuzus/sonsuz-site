@@ -9,6 +9,7 @@ tags:
   - eşzamanlılık
   - fonksiyonel programlama
 toc: true
+image: /img/clojure-ve-degismez-53.png
 ---
 
 Birden fazla iş parçacığının aynı veriyi değiştirmeye çalıştığı programlar, kısa sürede kilitler, yarış durumları ve gizemli hatalarla dolu bir labirente dönüşebilir. Clojure bu soruna alışılmışın dışında yaklaşır: Veriyi korumak için her yere kilit koymak yerine, verinin büyük bölümünü değiştirilemez hâle getirir. Böylece “Bu değeri kim değiştirdi?” sorusu büyük ölçüde ortadan kalkar ve eşzamanlı programlama daha öngörülebilir olur.
@@ -89,3 +90,6 @@ Birbiriyle ilişkili birkaç değerin birlikte güncellenmesi gerekiyorsa Clojur
 `dosync` içindeki işlemler tek bir mantıksal işlem gibi değerlendirilir. Ya iki hesap da güncellenir ya da hiçbiri güncellenmez. Böylece elle kilit sırası belirleme ve kilitlerin birbirini sonsuza dek beklediği deadlock senaryolarıyla uğraşma ihtiyacı azalır.
 
 Clojure ayrıca bağımsız güncellemeler için `atom`, koordineli işlemler için `ref`, asenkron işler için `agent` ve geçici iş parçacığına özel değişimler için `transient` sunar. Ana fikir ise değişmez: Durumu kontrolsüzce değiştirmek yerine, değişmez değerler arasında açık ve güvenli geçişler kur. Sonuç, eşzamanlılığın ejderhasını tamamen yok etmese de ona yaklaşırken eline sağlam bir kalkan verir.
+
+![clojure-ve-degismez-53](/img/clojure-ve-degismez-53.svg)
+

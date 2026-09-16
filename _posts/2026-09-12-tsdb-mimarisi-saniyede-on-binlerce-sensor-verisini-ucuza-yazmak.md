@@ -9,6 +9,7 @@ tags:
   - veritabanı mimarisi
   - ıot
 toc: true
+image: /img/tsdb-mimarisi-saniyede-41.png
 ---
 
 Bir fabrikanın sensörleri her saniye sıcaklık, basınç ve titreşim ölçümleri gönderiyorsa ortaya küçük görünen fakat hiç durmayan bir veri seli çıkar. Zaman Serisi Veritabanları (TSDB), bu seli klasik ilişkisel veritabanlarından farklı olarak satır satır düzenlemek yerine zaman odaklı, sıralı ve toplu biçimde işleyerek yüksek yazma hızına daha düşük disk maliyetiyle ulaşır.
@@ -88,3 +89,6 @@ for reading in sensor_stream():
 Paketleme ağ bağlantısı, HTTP başlığı ve disk senkronizasyonu maliyetlerini yüzlerce kayıt arasında paylaştırır. Üretim ortamında başarısız paketler için yeniden deneme, yerel kuyruk ve idempotent yazma mekanizmaları da eklenmelidir.
 
 Sonuç olarak TSDB’nin hız sırrı daha güçlü donanım değil; veri modelini tanımaktır. Sıralı yazma, WAL, toplu işleme, zaman tabanlı bölümleme, özel sıkıştırma ve otomatik veri yaşam döngüsü birleştiğinde saniyelik on binlerce sensör paketi hem hızlı hem ekonomik biçimde saklanabilir.
+
+![tsdb-mimarisi-saniyede-41](/img/tsdb-mimarisi-saniyede-41.svg)
+

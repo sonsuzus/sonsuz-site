@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9db7e8"/>
+      <stop offset="100%" stop-color="#82cfae"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7590a8" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#5a8297" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="159" r="112" fill="#dfeef0" opacity="0.43"/>
+  <circle cx="320" cy="159" r="82" fill="none" stroke="#c4dce0" stroke-width="1.5" stroke-dasharray="4 7"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355267">
+    <rect x="25" y="27" width="135" height="49" rx="14" fill="#e5edff" filter="url(#shadow)"/>
+    <text x="92" y="49" text-anchor="middle" font-weight="600">Yerel gözlem</text>
+    <text x="92" y="65" text-anchor="middle" fill="#668194">mesafe · iz</text>
+
+    <rect x="24" y="238" width="144" height="52" rx="14" fill="#fff0d9" filter="url(#shadow)"/>
+    <text x="96" y="260" text-anchor="middle" font-weight="600">Keşif</text>
+    <text x="96" y="277" text-anchor="middle" fill="#8c7458">rastlantısal seçim</text>
+
+    <rect x="476" y="27" width="139" height="49" rx="14" fill="#e0f4e9" filter="url(#shadow)"/>
+    <text x="545" y="49" text-anchor="middle" font-weight="600">Sömürü</text>
+    <text x="545" y="65" text-anchor="middle" fill="#5c8b72">güçlü izi izle</text>
+
+    <rect x="468" y="238" width="148" height="52" rx="14" fill="#f0e5f8" filter="url(#shadow)"/>
+    <text x="542" y="260" text-anchor="middle" font-weight="600">Buharlaşma</text>
+    <text x="542" y="277" text-anchor="middle" fill="#826990">unutma ve denge</text>
+  </g>
+
+  <path d="M160 57 C203 59 224 91 255 113" fill="none" stroke="#a5bce5" stroke-width="2"/>
+  <polygon points="255,113 246,109 250,118" fill="#a5bce5"/>
+  <path d="M168 260 C213 244 231 217 265 198" fill="none" stroke="#d9b77e" stroke-width="2"/>
+  <polygon points="265,198 255,198 261,206" fill="#d9b77e"/>
+  <path d="M476 57 C434 61 417 87 385 113" fill="none" stroke="#8ecaaa" stroke-width="2"/>
+  <polygon points="385,113 390,121 396,112" fill="#8ecaaa"/>
+  <path d="M468 261 C427 245 409 218 377 199" fill="none" stroke="#bba0cf" stroke-width="2"/>
+  <polygon points="377,199 381,207 389,199" fill="#bba0cf"/>
+
+  <path d="M250 164 C272 91 374 89 417 143 C454 189 405 238 343 230 C289 223 270 190 300 148 C326 112 385 127 389 163 C393 194 351 206 329 183"
+        fill="none" stroke="#bbd2e7" stroke-width="8" opacity="0.35" stroke-linecap="round"/>
+  <path d="M250 164 C272 91 374 89 417 143 C454 189 405 238 343 230 C289 223 270 190 300 148 C326 112 385 127 389 163 C393 194 351 206 329 183"
+        fill="none" stroke="url(#trail)" stroke-width="3" stroke-linecap="round"/>
+
+  <g filter="url(#soft)">
+    <rect x="253" y="132" width="134" height="55" rx="18" fill="#ffffff"/>
+    <text x="320" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31556a">Dağıtık sürü</text>
+    <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#678396">merkezi yönetici yok</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <circle cx="240" cy="164" r="15" fill="#f8c979"/>
+    <ellipse cx="237" cy="164" rx="6" ry="8" fill="#774f3c"/>
+    <circle cx="247" cy="160" r="4" fill="#774f3c"/>
+    <path d="M233 157 l-6 -5 M234 171 l-6 5 M241 173 l2 7" stroke="#774f3c" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <circle cx="294" cy="108" r="15" fill="#9fbee9"/>
+    <ellipse cx="291" cy="108" rx="6" ry="8" fill="#475e87"/>
+    <circle cx="301" cy="104" r="4" fill="#475e87"/>
+    <path d="M287 101 l-6 -5 M288 115 l-6 5 M295 117 l2 7" stroke="#475e87" stroke-width="1.5" stroke-linecap="round"/>
+
+    <circle cx="414" cy="142" r="15" fill="#97d6b0"/>
+    <ellipse cx="411" cy="142" rx="6" ry="8" fill="#396b58"/>
+    <circle cx="421" cy="138" r="4" fill="#396b58"/>
+    <path d="M407 135 l-6 -5 M408 149 l-6 5 M415 151 l2 7" stroke="#396b58" stroke-width="1.5" stroke-linecap="round"/>
+
+    <circle cx="365" cy="224" r="15" fill="#d2afe5"/>
+    <ellipse cx="362" cy="224" rx="6" ry="8" fill="#73527f"/>
+    <circle cx="372" cy="220" r="4" fill="#73527f"/>
+    <path d="M358 217 l-6 -5 M359 231 l-6 5 M366 233 l2 7" stroke="#73527f" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="272" y="278" width="96" height="26" rx="13" fill="#dcecf3" filter="url(#soft)"/>
+    <text x="320" y="296" text-anchor="middle" fill="#477083" font-weight="600">Beliren çözüm</text>
+  </g>
+  <path d="M320 236 L320 272" fill="none" stroke="#7fa9ae" stroke-width="2"/>
+  <polygon points="320,272 315,263 325,263" fill="#7fa9ae"/>
+
+  <g transform="translate(530 146)" filter="url(#soft)">
+    <rect x="0" y="0" width="82" height="45" rx="14" fill="#fff8dc"/>
+    <path d="M16 26 C23 15 30 31 38 20 C46 10 53 22 61 15" fill="none" stroke="#d3a24c" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="17" cy="26" r="3" fill="#d3a24c"/>
+    <text x="52" y="36" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#715b36">Hedef</text>
+  </g>
+  <path d="M429 166 C466 167 486 167 523 168" fill="none" stroke="#73bc98" stroke-width="3"/>
+  <polygon points="523,168 514,163 514,173" fill="#73bc98"/>
+</svg>

@@ -9,9 +9,13 @@ tags:
   - tip çıkarımı
   - fonksiyonel programlama
 toc: true
+image: /img/ocaml-ile-tip-66.png
 ---
 
 OCaml’de bir değişkenin veya fonksiyonun tipini çoğu zaman yazmayız; buna rağmen derleyici hatalı kullanımları daha program çalışmadan yakalar. Bu durum sihir gibi görünse de arkasında sistematik bir mekanizma vardır: **tip çıkarımı**. Derleyici aslında tipimizi rastgele tahmin etmez; ifadelerden kısıtlar üretir, bu kısıtları çözer ve mümkün olan en genel tipi bulur.
+
+
+![ocaml-ile-tip-66](/img/ocaml-ile-tip-66.svg)
 
 ``
 

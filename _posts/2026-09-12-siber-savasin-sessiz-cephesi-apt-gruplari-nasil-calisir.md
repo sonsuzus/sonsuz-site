@@ -9,6 +9,7 @@ tags:
   - apt
   - tehdit istihbaratı
 toc: true
+image: /img/siber-savasin-sessiz-46.png
 ---
 
 Bir siber saldırının mutlaka ekranda beliren kırmızı uyarılarla veya aniden duran sunucularla başlaması gerekmez. Gelişmiş Sürekli Tehditler, yani APT’ler, dijital dünyanın sabırlı casuslarıdır. Ulus devletlerle ilişkilendirilebilen bu aktörler; stratejik bilgi toplamak, kritik altyapılara erişmek veya gelecekte kullanılabilecek kalıcı bir pozisyon elde etmek için hedef ağlarda aylarca, hatta yıllarca saklanabilir.
@@ -32,6 +33,9 @@ Sıradan saldırgan çoğu zaman kolay hedef ararken APT aktörü belirli bir ku
 | Temel amaç | Hızlı kazanç | Casusluk, etki veya hazırlık |
 | Altyapı | Hazır araçlar | Katmanlı ve özelleştirilmiş sistemler |
 | Gizlilik | İkincil önemde | Operasyonun merkezinde |
+
+![siber-savasin-sessiz-46](/img/siber-savasin-sessiz-46.svg)
+
 
 ## Teknik çalışma modeli
 
