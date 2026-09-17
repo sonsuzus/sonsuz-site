@@ -12,6 +12,7 @@ tags:
   - soyut-sözdizimi-ağacı
   - programlama-dilleri
 toc: true
+image: /img/lexerparser-mimarisi-kaynak-24.png
 ---
 
 Bilgisayar için `toplam = 5 + 3` ifadesi başlangıçta yalnızca karakterlerden oluşan bir dizidir. İnsan gözü bunun bir değişkene toplama sonucunu atadığını hemen anlar; işlemciyse büyücü değildir. Karakterlerin önce sözcüklere, ardından yapısal bir modele dönüştürülmesi gerekir. İşte lexer ve parser, kaynak kod ile anlam arasındaki bu köprünün iki ana mimarıdır.
@@ -103,3 +104,6 @@ Ağaç yapısı işlem önceliğini de görünür kılar. `2 + 3 * 4` ifadesinin
 | `"merhaba" - 2` | Başarılı | Başarılı | Tür hatası olabilir |
 
 Kısacası lexer kodun kelimelerini bulur, parser bu kelimelerle cümle kurar, anlamsal analiz ise cümlenin mantıklı olup olmadığını sorgular. Derleyiciler, yorumlayıcılar, IDE renklendirmeleri ve kod analiz araçları bu katmanlardan yararlanır. Kaynak kodun “anlam kazanması” tek bir sihirli adım değil, düzenli ve denetlenebilir bir dönüşüm zinciridir.
+
+![lexerparser-mimarisi-kaynak-24](/img/lexerparser-mimarisi-kaynak-24.svg)
+

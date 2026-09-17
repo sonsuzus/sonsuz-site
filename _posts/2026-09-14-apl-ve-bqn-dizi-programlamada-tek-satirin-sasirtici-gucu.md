@@ -12,9 +12,13 @@ tags:
   - algoritma
   - programlama-dilleri
 toc: true
+image: /img/apl-ve-bqn-24.png
 ---
 
 Bir listedeki sayıları dönüştürmek, süzmek ve özetlemek için kaç satır kod gerekir? Geleneksel bir dilde döngü, sayaç ve geçici değişkenler devreye girebilir. APL ve onun modern akrabası BQN ise aynı problemi birkaç sembolle anlatır. İlk bakışta uzaylı alfabesine benzeyen bu yaklaşımın sırrı, tek tek elemanlarla değil dizilerin bütünüyle düşünmesidir.
+
+![apl-ve-bqn-24](/img/apl-ve-bqn-24.svg)
+
 ``
 
 ## Dizi programlama nedir?

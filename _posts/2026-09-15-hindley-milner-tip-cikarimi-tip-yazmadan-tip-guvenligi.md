@@ -11,6 +11,7 @@ tags:
   - tip-çıkarımı
   - algoritma-w
 toc: true
+image: /img/hindley-milner-tip-79.png
 ---
 
 Bir fonksiyon yazdığınızı, hiçbir parametreye tip eklemediğinizi ve derleyicinin yine de bütün tip hatalarını yakaladığını düşünün. Üstelik derleyici yalnızca kodun doğru olup olmadığını söylemekle kalmasın, mümkün olan en genel tipi de keşfetsin! Hindley-Milner, yani HM tip sistemi, fonksiyonel programlama dünyasının bu etkileyici numarasını matematiksel olarak gerçekleştirir.
@@ -97,3 +98,6 @@ in (identity 42, identity "merhaba")
 | Hindley-Milner | Çoğunlukla gerekmez | Derleme zamanında | Otomatik ve genel |
 
 HM kusursuz değildir; alt tipleme, gelişmiş nesne modelleri ve bazı yan etkiler sistemi karmaşıklaştırır. Yine de ML, OCaml ve Haskell gibi dillerin temelinde yer alarak önemli bir denge kurar: geliştirici az tip yazar, derleyici çok düşünür ve hatalı programlar üretime çıkmadan kapıda yakalanır.
+
+![hindley-milner-tip-79](/img/hindley-milner-tip-79.svg)
+

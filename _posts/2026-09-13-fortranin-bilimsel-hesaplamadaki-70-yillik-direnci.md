@@ -12,9 +12,13 @@ tags:
   - programlama tarihi
   - sayısal analiz
 toc: true
+image: /img/fortranin-bilimsel-hesaplamadaki-54.png
 ---
 
 1957 yılında IBM tarafından geliştirilen Fortran, yazılım dünyasının dinozorlarından biri gibi görünebilir. Ancak bu dinozor müzede sergilenmiyor; iklim modellerinden kuantum fiziğine, akışkanlar dinamiğinden uzay araştırmalarına kadar sayısız alanda hesaplama yapmayı sürdürüyor. Üstelik bunu, kendisinden onlarca yıl genç dillere meydan okuyarak gerçekleştiriyor.
+
+
+![fortranin-bilimsel-hesaplamadaki-54](/img/fortranin-bilimsel-hesaplamadaki-54.svg)
 
 ``
 

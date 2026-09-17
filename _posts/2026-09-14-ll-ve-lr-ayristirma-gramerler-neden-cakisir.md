@@ -12,6 +12,7 @@ tags:
   - parser
   - sözdizimi
 toc: true
+image: /img/ll-ve-lr-83.png
 ---
 
 Bir derleyici kaynak kodu okurken yalnızca anahtar kelimeleri tanımakla yetinmez; bu kelimelerin hangi yapıyı oluşturduğunu da çözmeye çalışır. İşte ayrıştırıcıların görevi budur. LL ve LR yöntemleri aynı token dizisine farklı yönlerden yaklaşır. Gramer yeterince açık değilse ayrıştırıcı bir yol ayrımına gelir ve meşhur “çakışma” ortaya çıkar.
@@ -35,6 +36,9 @@ Bir grameri kabaca $G=(V,\Sigma,R,S)$ şeklinde gösterebiliriz. Burada $V$ nont
 | Gramer kapsamı | Daha sınırlı | Daha geniş |
 | Uygulama | Elle yazmak kolaydır | Tablo ve araçlarla yaygındır |
 | Tipik çakışma | FIRST/FIRST, FIRST/FOLLOW | Shift/reduce, reduce/reduce |
+
+![ll-ve-lr-83](/img/ll-ve-lr-83.svg)
+
 
 ## LL neden kararsız kalır?
 

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="irGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8c91d9"/>
+      <stop offset="100%" stop-color="#686fc1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#53627c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#53627c" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="91" cy="56" r="82" fill="#d9edff" opacity="0.38"/>
+  <circle cx="581" cy="278" r="110" fill="#dff1d9" opacity="0.48"/>
+  <path d="M20 160 C112 116 159 216 250 169 S407 96 620 155" fill="none" stroke="#b8d8da" stroke-width="2" opacity="0.32"/>
+
+  <text x="42" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53627c">KAYNAK DİLLER</text>
+  <text x="493" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53627c">HEDEF SİSTEMLER</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="35" y="48" width="106" height="39" rx="13" fill="#fff2e8"/>
+    <rect x="35" y="104" width="106" height="39" rx="13" fill="#e7f4ff"/>
+    <rect x="35" y="160" width="106" height="39" rx="13" fill="#f2e9fc"/>
+    <rect x="35" y="216" width="106" height="39" rx="13" fill="#e5f7ee"/>
+  </g>
+  <text x="88" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#47536a">C ve C++</text>
+  <text x="88" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#47536a">Rust</text>
+  <text x="88" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#47536a">Swift</text>
+  <text x="88" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#47536a">Yeni Dil</text>
+
+  <path d="M143 67 H185" fill="none" stroke="#91a9bc" stroke-width="2"/>
+  <polygon points="185,67 177,62 177,72" fill="#91a9bc"/>
+  <path d="M143 123 H185" fill="none" stroke="#91a9bc" stroke-width="2"/>
+  <polygon points="185,123 177,118 177,128" fill="#91a9bc"/>
+  <path d="M143 179 H185" fill="none" stroke="#91a9bc" stroke-width="2"/>
+  <polygon points="185,179 177,174 177,184" fill="#91a9bc"/>
+  <path d="M143 235 H185" fill="none" stroke="#91a9bc" stroke-width="2"/>
+  <polygon points="185,235 177,230 177,240" fill="#91a9bc"/>
+
+  <g filter="url(#shadow)">
+    <rect x="187" y="43" width="126" height="214" rx="24" fill="#ffffff"/>
+    <rect x="199" y="56" width="102" height="57" rx="17" fill="#dcecff"/>
+    <rect x="199" y="122" width="102" height="57" rx="17" fill="#f4e8ff"/>
+    <rect x="199" y="188" width="102" height="57" rx="17" fill="#e4f5eb"/>
+  </g>
+  <text x="250" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#485779">Ön Uç</text>
+  <text x="250" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60708a">Analiz</text>
+  <text x="250" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#654e80">LLVM IR</text>
+  <text x="250" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76628f">Ortak temsil</text>
+  <text x="250" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426b5b">Optimizasyon</text>
+  <text x="250" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e7e70">SSA ve veri akışı</text>
+
+  <path d="M314 150 H347" fill="none" stroke="#7b83c7" stroke-width="3"/>
+  <polygon points="347,150 337,144 337,156" fill="#7b83c7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="350" y="88" width="117" height="124" rx="25" fill="url(#irGrad)"/>
+    <circle cx="408.5" cy="124" r="19" fill="#ffffff" opacity="0.19"/>
+    <path d="M397 124 H420 M408.5 112.5 V135.5" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="408.5" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">EVRENSEL</text>
+    <text x="408.5" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">KÖPRÜ</text>
+    <text x="408.5" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eef0ff">LLVM IR</text>
+  </g>
+
+  <path d="M468 108 H500" fill="none" stroke="#91a9bc" stroke-width="2"/>
+  <polygon points="500,108 492,103 492,113" fill="#91a9bc"/>
+  <path d="M468 150 H500" fill="none" stroke="#91a9bc" stroke-width="2"/>
+  <polygon points="500,150 492,145 492,155" fill="#91a9bc"/>
+  <path d="M468 192 H500" fill="none" stroke="#91a9bc" stroke-width="2"/>
+  <polygon points="500,192 492,187 492,197" fill="#91a9bc"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="502" y="83" width="104" height="47" rx="14" fill="#ffeeda"/>
+    <rect x="502" y="127" width="104" height="47" rx="14" fill="#dff2ff"/>
+    <rect x="502" y="171" width="104" height="47" rx="14" fill="#e9f3dc"/>
+  </g>
+  <text x="554" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#596174">x86-64</text>
+  <text x="554" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68758a">Makine kodu</text>
+  <text x="554" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#596174">ARM</text>
+  <text x="554" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68758a">Makine kodu</text>
+  <text x="554" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#596174">RISC-V</text>
+  <text x="554" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68758a">Makine kodu</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="204" y="276" width="233" height="28" rx="14" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <path d="M220 290 H242" stroke="#8690ce" stroke-width="2"/>
+  <polygon points="242,290 235,286 235,294" fill="#8690ce"/>
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5d6681">N × M yerine N + M bağlantı</text>
+</svg>

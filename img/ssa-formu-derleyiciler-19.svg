@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="source" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9dcf5"/>
+    </linearGradient>
+    <linearGradient id="phi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eadcff"/>
+      <stop offset="100%" stop-color="#d8c4f3"/>
+    </linearGradient>
+    <linearGradient id="ssa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d6f3e5"/>
+      <stop offset="100%" stop-color="#bce5d1"/>
+    </linearGradient>
+    <linearGradient id="opt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#f7dca4"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7590a4" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#738697" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="48" r="72" fill="#dceefa" opacity="0.48"/>
+  <circle cx="591" cy="269" r="94" fill="#dcefdc" opacity="0.42"/>
+  <path d="M18 272 C116 232 166 294 258 266 S438 224 623 271" fill="none" stroke="#b9d9d1" stroke-width="2" opacity="0.38"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456171">DERLEYİCİDE SSA DÖNÜŞÜMÜ</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="111" width="122" height="102" rx="18" fill="url(#source)" stroke="#b6cee7"/>
+    <rect x="41" y="123" width="100" height="22" rx="8" fill="#f8fcff" opacity="0.8"/>
+    <text x="91" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385773">Kaynak Kod</text>
+    <text x="52" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d80">x = 4</text>
+    <text x="52" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d80">x = x + 2</text>
+  </g>
+
+  <path d="M153 144 C180 143 181 104 211 104" fill="none" stroke="#86a9bd" stroke-width="2.5"/>
+  <polygon points="211,104 201,99 203,109" fill="#86a9bd"/>
+  <path d="M153 181 C181 181 180 216 211 216" fill="none" stroke="#86a9bd" stroke-width="2.5"/>
+  <polygon points="211,216 202,211 201,221" fill="#86a9bd"/>
+
+  <g filter="url(#soft)">
+    <rect x="212" y="75" width="112" height="56" rx="15" fill="#edf5ff" stroke="#bfd5ea"/>
+    <text x="268" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43617a">Koşul Yolu</text>
+    <text x="268" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798b">x1 = 10</text>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="212" y="188" width="112" height="56" rx="15" fill="#edf5ff" stroke="#bfd5ea"/>
+    <text x="268" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43617a">Diğer Yol</text>
+    <text x="268" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798b">x2 = 20</text>
+  </g>
+
+  <path d="M325 103 C345 103 346 132 369 144" fill="none" stroke="#9585b8" stroke-width="2.5"/>
+  <polygon points="369,144 360,137 358,147" fill="#9585b8"/>
+  <path d="M325 216 C345 216 346 187 369 176" fill="none" stroke="#9585b8" stroke-width="2.5"/>
+  <polygon points="369,176 358,173 361,183" fill="#9585b8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="370" y="119" width="100" height="82" rx="22" fill="url(#phi)" stroke="#c6acd9"/>
+    <circle cx="420" cy="146" r="16" fill="#f8f3ff" opacity="0.88"/>
+    <text x="420" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#75558e">φ</text>
+    <text x="420" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#624979">Birleşim</text>
+    <text x="420" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735d85">x3 seçilir</text>
+  </g>
+
+  <path d="M471 160 L497 160" fill="none" stroke="#6fa38b" stroke-width="2.5"/>
+  <polygon points="497,160 487,155 487,165" fill="#6fa38b"/>
+
+  <g filter="url(#shadow)">
+    <rect x="498" y="88" width="113" height="143" rx="20" fill="url(#ssa)" stroke="#acd4bf"/>
+    <text x="554" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386d58">SSA Zinciri</text>
+    <rect x="514" y="126" width="81" height="24" rx="8" fill="#f6fffa" opacity="0.85"/>
+    <text x="554" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3b725c">x1 = 4</text>
+    <path d="M554 151 L554 161" stroke="#78ad91" stroke-width="2"/>
+    <polygon points="554,166 550,159 558,159" fill="#78ad91"/>
+    <rect x="514" y="167" width="81" height="24" rx="8" fill="#f6fffa" opacity="0.85"/>
+    <text x="554" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3b725c">x2 = x1 + 2</text>
+    <path d="M554 192 L554 202" stroke="#78ad91" stroke-width="2"/>
+    <polygon points="554,207 550,200 558,200" fill="#78ad91"/>
+    <rect x="514" y="208" width="81" height="24" rx="8" fill="#f6fffa" opacity="0.85"/>
+    <text x="554" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3b725c">x3 = x2 × 3</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="221" y="265" width="198" height="36" rx="14" fill="url(#opt)" stroke="#e4c985"/>
+    <circle cx="243" cy="283" r="10" fill="#fff8e8"/>
+    <path d="M238 283 L242 287 L249 278" fill="none" stroke="#b58430" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="322" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#876528">Optimizasyonlar: sabit yayılımı, ölü kod</text>
+  </g>
+  <path d="M420 201 C420 226 390 240 371 264" fill="none" stroke="#c8a958" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="371,264 373,254 380,261" fill="#c8a958"/>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="dsl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#c7dff5"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8dcff"/>
+      <stop offset="100%" stop-color="#d8c8f2"/>
+    </linearGradient>
+    <linearGradient id="run" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7f3df"/>
+      <stop offset="100%" stop-color="#bfe7cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5c7185" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#577084" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="64" cy="45" r="86" fill="#d9eeff" opacity="0.32"/>
+  <circle cx="593" cy="292" r="105" fill="#dff2d8" opacity="0.4"/>
+
+  <text x="320" y="29" text-anchor="middle" fill="#405569" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Racket ile Robot DSL Akışı</text>
+
+  <path d="M179 151 L221 151" fill="none" stroke="#7891a6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="221,151 212,145 212,157" fill="#7891a6"/>
+  <path d="M415 151 L457 151" fill="none" stroke="#7891a6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="457,151 448,145 448,157" fill="#7891a6"/>
+
+  <rect x="35" y="84" width="144" height="137" rx="20" fill="url(#dsl)" filter="url(#shadow)"/>
+  <rect x="48" y="98" width="49" height="24" rx="10" fill="#ffffff" opacity="0.78"/>
+  <text x="72.5" y="114" text-anchor="middle" fill="#447092" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">DSL</text>
+  <text x="107" y="143" text-anchor="middle" fill="#314b60" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Alan Komutları</text>
+  <rect x="54" y="159" width="105" height="25" rx="8" fill="#ffffff" opacity="0.82"/>
+  <text x="106.5" y="176" text-anchor="middle" fill="#496276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">move 5</text>
+  <rect x="54" y="190" width="105" height="25" rx="8" fill="#ffffff" opacity="0.82"/>
+  <text x="106.5" y="207" text-anchor="middle" fill="#496276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">turn east</text>
+
+  <rect x="221" y="62" width="194" height="178" rx="22" fill="url(#core)" filter="url(#shadow)"/>
+  <text x="318" y="93" text-anchor="middle" fill="#493c6a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Racket Dil Laboratuvarı</text>
+  <rect x="243" y="108" width="150" height="35" rx="11" fill="#ffffff" opacity="0.8" filter="url(#soft)"/>
+  <text x="318" y="130" text-anchor="middle" fill="#594979" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Makrolar</text>
+  <path d="M318 144 L318 157" fill="none" stroke="#8876a9" stroke-width="2"/>
+  <polygon points="318,162 313,154 323,154" fill="#8876a9"/>
+  <rect x="243" y="163" width="150" height="35" rx="11" fill="#ffffff" opacity="0.8" filter="url(#soft)"/>
+  <text x="318" y="185" text-anchor="middle" fill="#594979" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Sözdizimi Dönüşümü</text>
+  <text x="318" y="219" text-anchor="middle" fill="#695987" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">#lang ve modül başlangıcı</text>
+
+  <rect x="457" y="84" width="148" height="137" rx="20" fill="url(#run)" filter="url(#shadow)"/>
+  <text x="531" y="113" text-anchor="middle" fill="#356950" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Çalışma Zamanı</text>
+  <rect x="476" y="129" width="110" height="42" rx="12" fill="#ffffff" opacity="0.83" filter="url(#soft)"/>
+  <circle cx="497" cy="150" r="9" fill="#74b889"/>
+  <path d="M497 141 L497 150 L505 150" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="542" y="154" text-anchor="middle" fill="#3e6851" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Robot Durumu</text>
+  <text x="531" y="195" text-anchor="middle" fill="#47735a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Konum: 11 · Yön: east</text>
+
+  <path d="M531 222 C531 266 399 280 335 260" fill="none" stroke="#8aa998" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="335,260 344,257 340,266" fill="#8aa998"/>
+  <rect x="247" y="258" width="142" height="34" rx="14" fill="#fff5d8" filter="url(#soft)"/>
+  <text x="318" y="279" text-anchor="middle" fill="#80683a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Erken Doğrulama</text>
+</svg>

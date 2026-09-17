@@ -12,7 +12,11 @@ tags:
   - optimizasyon
   - ara-dil
 toc: true
+image: /img/llvm-ira-giris-92.png
 ---
+
+![llvm-ira-giris-92](/img/llvm-ira-giris-92.svg)
+
 
 Bir programlama dilinde yazdığımız kodun onlarca farklı işlemci ve işletim sisteminde çalışabilmesi küçük bir mucize gibi görünebilir. LLVM IR (Intermediate Representation), bu mucizenin arkasındaki önemli oyunculardan biridir. Kaynak dil ile makine kodu arasında ortak bir durak oluşturarak dil tasarımcılarının her donanım için ayrı derleyici yazma çilesini büyük ölçüde azaltır.
 ``

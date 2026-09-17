@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="source" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3efff"/>
+      <stop offset="100%" stop-color="#cddff7"/>
+    </linearGradient>
+    <linearGradient id="lexer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff5ee"/>
+      <stop offset="100%" stop-color="#bde6d8"/>
+    </linearGradient>
+    <linearGradient id="parser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0d8"/>
+      <stop offset="100%" stop-color="#f5d9aa"/>
+    </linearGradient>
+    <linearGradient id="semantic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eee5fb"/>
+      <stop offset="100%" stop-color="#d9caf1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#60788d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#60788d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="50" r="80" fill="#d9edff" opacity="0.35"/>
+  <circle cx="583" cy="273" r="105" fill="#dff1d5" opacity="0.35"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40546a">Kaynaktan Anlama Dönüşüm Hattı</text>
+
+  <path d="M124 120 H145" stroke="#7890a6" stroke-width="2.2" fill="none"/>
+  <polygon points="145,120 137,115 137,125" fill="#7890a6"/>
+  <path d="M255 120 H276" stroke="#7890a6" stroke-width="2.2" fill="none"/>
+  <polygon points="276,120 268,115 268,125" fill="#7890a6"/>
+  <path d="M386 120 H407" stroke="#7890a6" stroke-width="2.2" fill="none"/>
+  <polygon points="407,120 399,115 399,125" fill="#7890a6"/>
+  <path d="M517 120 H538" stroke="#7890a6" stroke-width="2.2" fill="none"/>
+  <polygon points="538,120 530,115 530,125" fill="#7890a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="76" width="100" height="88" rx="18" fill="url(#source)"/>
+    <rect x="155" y="76" width="100" height="88" rx="18" fill="url(#lexer)"/>
+    <rect x="286" y="76" width="100" height="88" rx="18" fill="url(#parser)"/>
+    <rect x="417" y="76" width="100" height="88" rx="18" fill="url(#semantic)"/>
+    <rect x="548" y="76" width="68" height="88" rx="18" fill="#ddecf8"/>
+  </g>
+
+  <text x="74" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34546f">Kaynak Kod</text>
+  <rect x="39" y="116" width="70" height="28" rx="7" fill="#ffffff" opacity="0.78"/>
+  <text x="74" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496479">toplam = 5 + 3</text>
+
+  <text x="205" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285f55">Lexer</text>
+  <text x="205" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47756c">Karakterler</text>
+  <text x="205" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47756c">→ Tokenlar</text>
+
+  <text x="336" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#85602d">Parser</text>
+  <text x="336" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6b40">Dilbilgisi</text>
+  <text x="336" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6b40">→ Yapı</text>
+
+  <text x="467" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#67507f">Anlamsal</text>
+  <text x="467" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#67507f">Analiz</text>
+  <text x="467" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76668b">Tür ve kapsam</text>
+
+  <text x="582" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6580">Çıktı</text>
+  <text x="582" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#577991">Çalıştır</text>
+  <text x="582" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#577991">veya Üret</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="139" y="184" width="133" height="40" rx="13" fill="#ffffff"/>
+    <rect x="285" y="184" width="112" height="40" rx="13" fill="#ffffff"/>
+    <rect x="411" y="184" width="104" height="40" rx="13" fill="#ffffff"/>
+  </g>
+  <text x="205" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356c62">SAYI · TOPLA · İSİM</text>
+  <text x="341" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70562d">Geçerli ifade?</text>
+  <text x="463" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#634d7a">Tanımlı mı?</text>
+
+  <path d="M336 164 V177" stroke="#7890a6" stroke-width="2" fill="none"/>
+  <polygon points="336,177 331,169 341,169" fill="#7890a6"/>
+  <path d="M336 224 V238" stroke="#7890a6" stroke-width="2" fill="none"/>
+  <polygon points="336,238 331,230 341,230" fill="#7890a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="222" y="240" width="228" height="63" rx="17" fill="#edf5fc"/>
+  </g>
+  <text x="244" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45647a">Soyut Sözdizimi Ağacı</text>
+
+  <line x1="335" y1="266" x2="287" y2="286" stroke="#7491a7" stroke-width="1.8"/>
+  <line x1="335" y1="266" x2="383" y2="286" stroke="#7491a7" stroke-width="1.8"/>
+  <g filter="url(#smallShadow)">
+    <rect x="313" y="252" width="44" height="22" rx="8" fill="#f6d59f"/>
+    <rect x="251" y="278" width="72" height="18" rx="7" fill="#cfe8dd"/>
+    <rect x="347" y="278" width="72" height="18" rx="7" fill="#d9d0f0"/>
+  </g>
+  <text x="335" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#775527">Topla</text>
+  <text x="287" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35685f">Sayı 12</text>
+  <text x="383" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d4a75">İsim fiyat</text>
+</svg>

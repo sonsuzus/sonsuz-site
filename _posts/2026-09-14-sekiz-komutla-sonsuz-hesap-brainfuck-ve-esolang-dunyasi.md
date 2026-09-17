@@ -11,6 +11,7 @@ tags:
   - programlama-dilleri
   - hesaplama-kuramı
 toc: true
+image: /img/sekiz-komutla-sonsuz-22.png
 ---
 
 Bir programlama dilinden değişkenler, fonksiyonlar ve okunabilir hata mesajları bekliyorsanız Brainfuck sizi biraz üzebilir; hatta adı üstünde, zihninize küçük bir düğüm atabilir. Yalnızca sekiz komuttan oluşan bu deneysel dil, programlamanın süslü araçlarını kaldırıp geriye hesaplamanın çıplak mekanizmasını bırakır. Brainfuck ve diğer ezoterik programlama dilleri, yani *esolang*'lar, bilgisayara ne yaptırabileceğimiz ile bunu ne kadar anlaşılır ifade edebileceğimizin tamamen farklı meseleler olduğunu gösterir.
@@ -77,3 +78,6 @@ Brainfuck'ın hücreleri belleği, `[` ve `]` komutlarıysa koşullu tekrar meka
 ## Neden öğrenelim?
 
 Brainfuck size yeni bir web çatısı öğretmez; daha temel bir şey öğretir: karmaşık görünen hesaplamaların veri taşıma, değer değiştirme ve dallanma gibi basit işlemlerden doğduğunu. Esolang'lar ayrıca dil tasarımındaki ergonominin ne kadar değerli olduğunu gösterir. Sekiz komut hesaplamak için yeterlidir, fakat insan zihni isimlere, yapılara ve açıklamalara ihtiyaç duyar. Brainfuck tam da bu yüzden hem korkunç bir araç hem de harika bir öğretmendir.
+
+![sekiz-komutla-sonsuz-22](/img/sekiz-komutla-sonsuz-22.svg)
+

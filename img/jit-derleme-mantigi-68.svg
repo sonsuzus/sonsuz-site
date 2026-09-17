@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="jitGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8d8ff"/>
+      <stop offset="100%" stop-color="#c9f0df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e91a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#7d98a6" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="58" r="72" fill="#dceeff" opacity="0.55"/>
+  <circle cx="585" cy="270" r="95" fill="#dcf3df" opacity="0.5"/>
+  <path d="M34 265 C160 232 236 286 351 260 S523 220 618 246" fill="none" stroke="#c8e4d5" stroke-width="2" opacity="0.7"/>
+
+  <text x="34" y="37" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38576b">JIT DERLEME DÖNGÜSÜ</text>
+  <text x="34" y="55" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8491">Kod çalıştıkça hızlanır</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="105" width="112" height="94" rx="18" fill="#ffffff"/>
+    <rect x="43" y="119" width="35" height="35" rx="10" fill="#dcecff"/>
+    <path d="M53 130h15M53 136h15M53 142h10" stroke="#4c7eae" stroke-width="2" stroke-linecap="round"/>
+    <text x="43" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37546a">Ara Kod</text>
+    <text x="43" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69808d">Bytecode</text>
+  </g>
+
+  <path d="M145 152 H173" fill="none" stroke="#7196a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="177,152 168,147 168,157" fill="#7196a8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="181" y="83" width="154" height="138" rx="22" fill="url(#jitGrad)"/>
+    <circle cx="258" cy="129" r="31" fill="#ffffff" opacity="0.76"/>
+    <path d="M244 129h28M258 115v28" stroke="#3d7b83" stroke-width="3" stroke-linecap="round"/>
+    <path d="M231 157 C239 169 277 169 286 157" fill="none" stroke="#66a895" stroke-width="2" stroke-linecap="round"/>
+    <text x="211" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285b61">Yorumlayıcı</text>
+    <text x="206" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47777a">Başlangıç çalışması</text>
+  </g>
+
+  <path d="M337 152 H367" fill="none" stroke="#7196a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="371,152 362,147 362,157" fill="#7196a8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="376" y="91" width="113" height="122" rx="18" fill="#fffdf9"/>
+    <rect x="392" y="108" width="80" height="43" rx="11" fill="#ffe6b9"/>
+    <path d="M405 139v-12M417 139v-21M429 139v-28M441 139v-17M453 139v-33" stroke="#d38a47" stroke-width="4" stroke-linecap="round"/>
+    <text x="392" y="175" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#785435">Profil</text>
+    <text x="392" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a735d">Sayaç ve türler</text>
+  </g>
+
+  <path d="M491 152 H518" fill="none" stroke="#7196a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="522,152 513,147 513,157" fill="#7196a8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="527" y="105" width="85" height="94" rx="18" fill="#e6f2ff"/>
+    <path d="M552 130l10-10 10 10-10 10z" fill="#538cc8"/>
+    <path d="M548 150h28M548 157h19" stroke="#538cc8" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="540" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355b80">Sıcak Kod</text>
+    <text x="548" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65809a">eşik aşıldı</text>
+  </g>
+
+  <path d="M570 202 V235 H478" fill="none" stroke="#668da0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="474,235 483,230 483,240" fill="#668da0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="320" y="231" width="151" height="64" rx="18" fill="#e4f5e9"/>
+    <path d="M340 263l10 10 18-22" fill="none" stroke="#4eaa78" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="369" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#327253">Makine Kodu</text>
+    <text x="369" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56816b">Optimize edilmiş</text>
+  </g>
+
+  <path d="M318 263 H227 V224" fill="none" stroke="#c57b79" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="227,220 222,229 232,229" fill="#c57b79"/>
+  <g filter="url(#softShadow)">
+    <rect x="156" y="236" width="126" height="43" rx="14" fill="#fde6e5"/>
+    <path d="M174 258c5-8 12-8 17 0M191 258c5 8 12 8 17 0" fill="none" stroke="#c26e6b" stroke-width="2.3" stroke-linecap="round"/>
+    <text x="215" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#914f4d">Deoptimizasyon</text>
+  </g>
+
+  <path d="M433 82 C423 52 357 53 331 77" fill="none" stroke="#8b9eb1" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="328,80 331,70 338,77" fill="#8b9eb1"/>
+  <text x="365" y="61" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637c8e">varsayım bozulursa</text>
+
+  <g>
+    <rect x="505" y="42" width="107" height="31" rx="12" fill="#ffffff" opacity="0.82"/>
+    <circle cx="522" cy="57" r="6" fill="#f5b453"/>
+    <text x="535" y="61" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617987">Isınma süresi</text>
+  </g>
+</svg>

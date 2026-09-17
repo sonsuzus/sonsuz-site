@@ -11,9 +11,13 @@ tags:
   - ara temsil
   - algoritmalar
 toc: true
+image: /img/ssa-formu-derleyiciler-19.png
 ---
 
 Yazdığımız kod derleyiciye ulaştığında değişmez bir kutsal metin gibi korunmaz. Tam tersine; parçalanır, sadeleştirilir ve analiz edilmesi daha kolay biçimlere dönüştürülür. Bu dönüşümlerin en önemlilerinden biri **Static Single Assignment**, kısaca SSA formudur. SSA sayesinde derleyici, her değerin nerede üretildiğini daha rahat görür ve kod üzerinde güvenli optimizasyonlar yapabilir.
+
+
+![ssa-formu-derleyiciler-19](/img/ssa-formu-derleyiciler-19.svg)
 
 ``
 

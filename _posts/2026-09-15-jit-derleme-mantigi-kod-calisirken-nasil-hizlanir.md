@@ -12,6 +12,7 @@ tags:
   - javascript
   - sanal-makine
 toc: true
+image: /img/jit-derleme-mantigi-68.png
 ---
 
 Bir programın çalışmaya başladıktan birkaç saniye sonra hızlanması ilk bakışta sihir gibi görünebilir. Oysa perde arkasında, kodu izleyen ve sık kullanılan bölümleri daha verimli makine koduna dönüştüren bir mekanizma vardır: **JIT (Just-In-Time) derleme**. Java, JavaScript ve .NET gibi platformlarda kullanılan bu yaklaşım, yorumlayıcının esnekliğiyle önceden derlemenin hızını birleştirir.
@@ -79,3 +80,6 @@ JIT’in çalışma döngüsü kısaca şöyledir:
 5. Varsayımlar bozulursa güvenli sürüme geri dön.
 
 Sonuç olarak kod aslında kendi kendine öğrenmez; çalışma zamanı sistemi onu gözlemler ve kaynaklarını en çok kullanılan bölgelere yatırır. Program “ısındıkça” hızlanmasının nedeni de tam olarak budur.
+
+![jit-derleme-mantigi-68](/img/jit-derleme-mantigi-68.svg)
+

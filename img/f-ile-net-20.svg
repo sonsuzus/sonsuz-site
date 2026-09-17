@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7165b7"/>
+      <stop offset="100%" stop-color="#988bd1"/>
+    </linearGradient>
+    <linearGradient id="pipe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d8eff2"/>
+      <stop offset="100%" stop-color="#dce9fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#61708b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#61708b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="155" r="116" fill="#dcecf0" opacity="0.42"/>
+  <circle cx="320" cy="155" r="91" fill="none" stroke="#b8d3d6" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <path d="M152 119 C178 98 199 94 222 104" fill="none" stroke="#8baebc" stroke-width="2"/>
+  <polygon points="221,99 232,108 218,112" fill="#8baebc"/>
+  <path d="M412 104 C440 93 462 99 488 119" fill="none" stroke="#8baebc" stroke-width="2"/>
+  <polygon points="487,113 498,123 483,126" fill="#8baebc"/>
+  <path d="M219 205 C193 215 177 220 155 215" fill="none" stroke="#8baebc" stroke-width="2"/>
+  <polygon points="158,209 145,214 157,221" fill="#8baebc"/>
+  <path d="M422 205 C449 216 466 220 486 215" fill="none" stroke="#8baebc" stroke-width="2"/>
+  <polygon points="483,209 496,214 484,221" fill="#8baebc"/>
+
+  <g filter="url(#shadow)">
+    <rect x="232" y="91" width="176" height="130" rx="28" fill="url(#core)"/>
+    <circle cx="276" cy="139" r="25" fill="#ffffff" opacity="0.18"/>
+    <text x="320" y="145" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="25" font-weight="700">F#</text>
+    <text x="320" y="169" text-anchor="middle" fill="#f5f3ff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Fonksiyonel çekirdek</text>
+    <rect x="270" y="183" width="100" height="20" rx="10" fill="#ffffff" opacity="0.18"/>
+    <text x="320" y="197" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">.NET çalışma zamanı</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="32" y="70" width="121" height="68" rx="17" fill="#fff4d9"/>
+    <circle cx="57" cy="94" r="13" fill="#f4c56d"/>
+    <path d="M52 94 L56 98 L63 89" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="76" y="94" fill="#705630" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Saf fonksiyon</text>
+    <text x="76" y="113" fill="#8c744f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Girdi → Çıktı</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="487" y="70" width="121" height="68" rx="17" fill="#e4f4e7"/>
+    <circle cx="512" cy="94" r="13" fill="#78bd91"/>
+    <path d="M505 94 L511 100 L520 88" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="532" y="94" fill="#3c6b4d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Değişmez veri</text>
+    <text x="532" y="113" fill="#638c70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Yeni değer üret</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="32" y="184" width="121" height="68" rx="17" fill="#e5effd"/>
+    <circle cx="57" cy="208" r="13" fill="#84aee8"/>
+    <path d="M51 204 L57 208 L51 212 M57 208 L64 208" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="76" y="208" fill="#3f6191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Pipeline</text>
+    <text x="76" y="227" fill="#6985ad" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Veri akışı</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="487" y="184" width="121" height="68" rx="17" fill="#f7e5f0"/>
+    <circle cx="512" cy="208" r="13" fill="#d68ab7"/>
+    <path d="M507 203 L512 208 L507 213 M512 208 L518 208" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="532" y="208" fill="#8a4770" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Eşleme</text>
+    <text x="532" y="227" fill="#a76e90" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Option ve Result</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="188" y="260" width="264" height="42" rx="15" fill="url(#pipe)"/>
+    <text x="211" y="286" fill="#55768c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Filtrele</text>
+    <path d="M270 281 L292 281" stroke="#719caf" stroke-width="2"/>
+    <polygon points="292,276 302,281 292,286" fill="#719caf"/>
+    <text x="315" y="286" fill="#55768c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Dönüştür</text>
+    <path d="M380 281 L397 281" stroke="#719caf" stroke-width="2"/>
+    <polygon points="397,276 407,281 397,286" fill="#719caf"/>
+    <text x="420" y="286" fill="#55768c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Sonuç</text>
+  </g>
+
+  <path d="M320 222 L320 251" fill="none" stroke="#8baebc" stroke-width="2"/>
+  <polygon points="315,247 320,257 325,247" fill="#8baebc"/>
+</svg>

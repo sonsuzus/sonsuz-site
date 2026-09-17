@@ -12,9 +12,13 @@ tags:
   - scheme
   - lang
 toc: true
+image: /img/racket-ile-kendi-62.png
 ---
 
 Bir robotu hareket ettirmek için yüzlerce satırlık genel amaçlı kod yazmak yerine `move 5` ve `turn left` gibi ifadeler kullanabilseydik nasıl olurdu? Etki alanına özgü dil, yani DSL (Domain-Specific Language), belirli bir problem alanını doğal ve güvenli biçimde ifade etmek için tasarlanır. Racket ise güçlü makro sistemi, sözdizimi nesneleri ve `#lang` mekanizması sayesinde küçük bir dili sıfırdan üretmek için adeta programlama dilleri laboratuvarıdır.
+
+![racket-ile-kendi-62](/img/racket-ile-kendi-62.svg)
+
 ``
 ## DSL tam olarak nedir?
 

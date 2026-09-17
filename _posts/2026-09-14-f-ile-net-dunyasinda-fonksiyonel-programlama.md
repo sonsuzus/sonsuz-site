@@ -12,9 +12,13 @@ tags:
   - pattern-matching
   - yazılım-geliştirme
 toc: true
+image: /img/f-ile-net-20.png
 ---
 
 F#, .NET ekosisteminin güçlü araçlarını fonksiyonel programlama yaklaşımıyla buluşturan, kısa fakat etkileyici kodlar yazmayı sağlayan bir dildir. C# ile aynı çalışma zamanını paylaşmasına rağmen problemlere farklı bir gözlükle bakar: Veriyi sürekli değiştirmek yerine dönüştürür, işlemleri küçük fonksiyonlara böler ve olası durumları tür sistemiyle açıkça ifade eder. Kısacası F#, kodun içine biraz matematik, biraz düzen ve bolca huzur katar.
+
+
+![f-ile-net-20](/img/f-ile-net-20.svg)
 
 ``
 

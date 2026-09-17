@@ -12,6 +12,7 @@ tags:
   - bellek yönetimi
   - programlama
 toc: true
+image: /img/cop-toplama-arenasi-95.png
 ---
 
 Program çalışırken oluşturulan her nesne sonsuza kadar yaşamaz. Bir kullanıcı oturumu kapanır, geçici liste işini bitirir veya fonksiyon yerel değişkenleriyle vedalaşır. Bu nesnelerin kapladığı belleği otomatik olarak geri kazanan mekanizmaya **çöp toplayıcı** ya da GC (Garbage Collector) denir. Ancak bellekteki çöpleri bulmak, mutfaktaki çöp kutusunu boşaltmak kadar basit değildir: Önce hangi nesnenin gerçekten sahipsiz kaldığını anlamak gerekir.
@@ -83,3 +84,6 @@ Burada önemli bir nüans vardır: Nesil bazlı GC, mark-sweep’in mutlaka raki
 ## Hangisi ne zaman mantıklı?
 
 Basitlik, sabit nesne adresleri veya sınırlı çalışma zamanı altyapısı önemliyse mark-sweep iyi bir başlangıçtır. Web sunucuları, sanal makineler ve yoğun şekilde geçici nesne oluşturan uygulamalar ise nesil bazlı GC’den ciddi fayda görür. Yine de gecikmeye duyarlı sistemlerde ortalama hız kadar en uzun duraklama da ölçülmelidir. Kısacası en iyi GC, yalnızca çöpleri bulan değil, programın çalışma karakterine en az sürprizle uyum sağlayandır.
+
+![cop-toplama-arenasi-95](/img/cop-toplama-arenasi-95.svg)
+

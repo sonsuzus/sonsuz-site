@@ -12,6 +12,7 @@ tags:
   - stack machine
   - ters polonya gösterimi
 toc: true
+image: /img/az-sozcuk-cok-25.png
 ---
 
 Modern programlama dünyası katmanlar, paket yöneticileri ve devasa çalışma zamanlarıyla doluyken Forth, küçük bir sırt çantasıyla yola çıkan gezgin gibidir. Sözdizimi son derece azdır; veriler bir yığın üzerinde dolaşır ve program, küçük sözcüklerin yan yana gelmesiyle büyür. İlk bakışta tuhaf görünen bu yaklaşım, bilgisayarın yaptığı işi şaşırtıcı ölçüde görünür kılar.
@@ -34,6 +35,9 @@ Bu yazım biçimi **ters Polonya gösterimi** olarak bilinir. Parantezlere ve op
 |---|---|---|---|
 | Geleneksel | `(3 + 4) * 2` | Değişken veya geçici değer | Gerekli |
 | Yığın tabanlı | `3 4 + 2 *` | Yığının kendisi | Gerekli değil |
+
+![az-sozcuk-cok-25](/img/az-sozcuk-cok-25.svg)
+
 
 ## Yığınla düşünmek
 

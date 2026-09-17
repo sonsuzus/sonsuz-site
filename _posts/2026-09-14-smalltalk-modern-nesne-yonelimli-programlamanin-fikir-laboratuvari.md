@@ -12,9 +12,13 @@ tags:
   - mesajlaşma
   - mvc
 toc: true
+image: /img/smalltalk-modern-nesne-15.png
 ---
 
 Bugün sınıflardan, nesnelerden veya kullanıcı arayüzlerinden söz ederken kullandığımız birçok kavramın izi Smalltalk’a çıkar. Xerox PARC’ta Alan Kay, Dan Ingalls, Adele Goldberg ve ekip arkadaşları tarafından geliştirilen Smalltalk, nesne yönelimliliği yalnızca bir programlama tekniği olarak değil, bilgisayarla iletişim kurmanın bütüncül bir modeli olarak ele aldı.
+
+
+![smalltalk-modern-nesne-15](/img/smalltalk-modern-nesne-15.svg)
 
 ``
 
