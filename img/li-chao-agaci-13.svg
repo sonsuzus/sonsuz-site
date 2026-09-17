@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="rootFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#cce7df"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60758a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60758a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="54" r="72" fill="#dbeeff" opacity="0.42"/>
+  <circle cx="577" cy="275" r="88" fill="#dff2db" opacity="0.45"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">Li Chao Ağacı</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668098">Doğrusal fonksiyonlarda hızlı minimum sorgusu</text>
+
+  <g filter="url(#shadow)">
+    <rect x="29" y="83" width="139" height="76" rx="17" fill="#fff4d8"/>
+  </g>
+  <circle cx="55" cy="108" r="14" fill="#ffd37b"/>
+  <path d="M48 113 L62 103 M50 105 L60 112" fill="none" stroke="#80602a" stroke-width="2" stroke-linecap="round"/>
+  <text x="78" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#66512d">Yeni doğru</text>
+  <text x="78" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#796740">f(x) = mx + b</text>
+  <text x="45" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#87754e">Rastgele ekleme</text>
+
+  <path d="M169 121 H212" fill="none" stroke="#7c9aaa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="219,121 208,115 208,127" fill="#7c9aaa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="230" y="71" width="180" height="77" rx="19" fill="url(#rootFill)"/>
+  </g>
+  <rect x="247" y="88" width="42" height="22" rx="9" fill="#ffffff" opacity="0.72"/>
+  <text x="258" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c6682">[L,R]</text>
+  <text x="302" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34566c">Orta nokta</text>
+  <text x="302" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527288">Daha iyi doğru kalır</text>
+  <line x1="253" y1="126" x2="389" y2="126" stroke="#89afbd" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="321" cy="126" r="4" fill="#4d91a5"/>
+
+  <path d="M292 149 C276 165 254 171 223 183" fill="none" stroke="#80a6b3" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="215,187 223,177 226,188" fill="#80a6b3"/>
+  <path d="M350 149 C367 165 389 171 421 183" fill="none" stroke="#80a6b3" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="429,187 418,188 421,177" fill="#80a6b3"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="151" y="188" width="144" height="64" rx="16" fill="#e7e2ff"/>
+    <rect x="345" y="188" width="144" height="64" rx="16" fill="#dff3e9"/>
+  </g>
+  <text x="174" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5f558e">Sol aralık</text>
+  <text x="174" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756ba0">[L, orta]</text>
+  <text x="369" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#467565">Sağ aralık</text>
+  <text x="369" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8b7a">[orta+1, R]</text>
+
+  <path d="M295 220 H520" fill="none" stroke="#6f9eac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="528,220 517,214 517,226" fill="#6f9eac"/>
+
+  <g filter="url(#shadow)">
+    <rect x="537" y="178" width="77" height="84" rx="17" fill="#ffe5e8"/>
+  </g>
+  <circle cx="575" cy="202" r="14" fill="#f3a8b1"/>
+  <path d="M568 202 H582 M575 195 V209" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="551" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a4d58">Sorgu x</text>
+  <text x="550" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6270">min f(x)</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="72" y="274" width="496" height="29" rx="14" fill="#ffffff" opacity="0.86"/>
+  </g>
+  <circle cx="94" cy="288" r="6" fill="#78bfa1"/>
+  <text x="108" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456476">Ekleme</text>
+  <text x="158" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397b68">O(log X)</text>
+  <circle cx="270" cy="288" r="6" fill="#7caee5"/>
+  <text x="284" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456476">Sorgu</text>
+  <text x="333" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397b68">O(log X)</text>
+  <circle cx="444" cy="288" r="6" fill="#c39bd9"/>
+  <text x="458" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456476">Tek kök-yaprak yolu</text>
+</svg>

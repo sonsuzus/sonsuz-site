@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#edf5ff"/>
+      <stop offset="100%" stop-color="#dcecff"/>
+    </linearGradient>
+    <linearGradient id="greenCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#effaf2"/>
+      <stop offset="100%" stop-color="#dff2e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71859a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#71859a" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="54" cy="42" r="80" fill="#dceeff" opacity="0.45"/>
+  <circle cx="590" cy="275" r="105" fill="#dff3e5" opacity="0.42"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31475c">Büyük Ağaç</text>
+  <text x="263" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31475c">Sorgu Hazırlığı</text>
+  <text x="461" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31475c">Sanal Ağaç</text>
+
+  <rect x="18" y="45" width="190" height="237" rx="20" fill="url(#blueCard)" filter="url(#shadow)"/>
+  <text x="36" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587086">n düğüm</text>
+
+  <g stroke="#9bb5ca" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M112 92 L66 126 L43 170"/>
+    <path d="M112 92 L66 126 L87 170"/>
+    <path d="M112 92 L145 128 L123 171"/>
+    <path d="M112 92 L145 128 L173 171"/>
+    <path d="M43 170 L34 222"/>
+    <path d="M43 170 L58 222"/>
+    <path d="M87 170 L78 221"/>
+    <path d="M87 170 L101 220"/>
+    <path d="M123 171 L117 224"/>
+    <path d="M173 171 L165 223"/>
+    <path d="M173 171 L187 220"/>
+  </g>
+
+  <g fill="#c8dbe9" stroke="#ffffff" stroke-width="2" filter="url(#smallShadow)">
+    <circle cx="112" cy="92" r="10"/>
+    <circle cx="66" cy="126" r="9"/>
+    <circle cx="145" cy="128" r="9"/>
+    <circle cx="43" cy="170" r="8"/>
+    <circle cx="87" cy="170" r="8"/>
+    <circle cx="123" cy="171" r="8"/>
+    <circle cx="173" cy="171" r="8"/>
+    <circle cx="34" cy="222" r="7"/>
+    <circle cx="58" cy="222" r="7"/>
+    <circle cx="78" cy="221" r="7"/>
+    <circle cx="101" cy="220" r="7"/>
+    <circle cx="117" cy="224" r="7"/>
+    <circle cx="165" cy="223" r="7"/>
+    <circle cx="187" cy="220" r="7"/>
+  </g>
+
+  <g fill="#ff9f8e" stroke="#ffffff" stroke-width="2.5" filter="url(#smallShadow)">
+    <circle cx="58" cy="222" r="9"/>
+    <circle cx="101" cy="220" r="9"/>
+    <circle cx="117" cy="224" r="9"/>
+    <circle cx="187" cy="220" r="9"/>
+  </g>
+  <text x="35" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#516d84">Seçili düğümler</text>
+  <circle cx="24" cy="256" r="5" fill="#ff9f8e"/>
+
+  <path d="M218 156 L250 156" stroke="#7897ac" stroke-width="2.5" fill="none"/>
+  <polygon points="250,156 241,151 241,161" fill="#7897ac"/>
+
+  <rect x="255" y="83" width="130" height="153" rx="20" fill="#fffdf7" filter="url(#shadow)"/>
+  <rect x="270" y="101" width="100" height="29" rx="10" fill="#e6ddff"/>
+  <text x="287" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#665481">tin ile sırala</text>
+
+  <path d="M320 133 L320 145" stroke="#9a86b7" stroke-width="2" fill="none"/>
+  <polygon points="320,145 315,138 325,138" fill="#9a86b7"/>
+
+  <rect x="270" y="148" width="100" height="29" rx="10" fill="#ffe5c7"/>
+  <text x="292" y="167" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c6740">LCA ekle</text>
+
+  <path d="M320 180 L320 192" stroke="#c29261" stroke-width="2" fill="none"/>
+  <polygon points="320,192 315,185 325,185" fill="#c29261"/>
+
+  <rect x="270" y="195" width="100" height="27" rx="10" fill="#d7f0e1"/>
+  <text x="292" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c7b63">Yığın kur</text>
+
+  <path d="M395 156 L427 156" stroke="#7897ac" stroke-width="2.5" fill="none"/>
+  <polygon points="427,156 418,151 418,161" fill="#7897ac"/>
+
+  <rect x="434" y="45" width="188" height="237" rx="20" fill="url(#greenCard)" filter="url(#shadow)"/>
+  <text x="454" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527461">En fazla 2k−1 düğüm</text>
+
+  <g stroke="#6eaa83" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M527 100 L486 144"/>
+    <path d="M527 100 L564 143"/>
+    <path d="M486 144 L468 194"/>
+    <path d="M486 144 L510 194"/>
+    <path d="M564 143 L550 194"/>
+    <path d="M564 143 L588 194"/>
+  </g>
+
+  <g filter="url(#smallShadow)" stroke="#ffffff" stroke-width="2.5">
+    <circle cx="527" cy="100" r="12" fill="#a98ddb"/>
+    <circle cx="486" cy="144" r="11" fill="#a98ddb"/>
+    <circle cx="564" cy="143" r="11" fill="#a98ddb"/>
+    <circle cx="468" cy="194" r="10" fill="#ff9f8e"/>
+    <circle cx="510" cy="194" r="10" fill="#ff9f8e"/>
+    <circle cx="550" cy="194" r="10" fill="#ff9f8e"/>
+    <circle cx="588" cy="194" r="10" fill="#ff9f8e"/>
+  </g>
+
+  <text x="499" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">LCA</text>
+  <text x="455" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7560">Kenar ağırlığı: derinlik farkı</text>
+
+  <rect x="452" y="254" width="74" height="19" rx="8" fill="#ffffff" opacity="0.78"/>
+  <text x="463" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e7b63">Hızlı DP</text>
+  <rect x="535" y="254" width="70" height="19" rx="8" fill="#ffffff" opacity="0.78"/>
+  <text x="545" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e7b63">O(k log k)</text>
+</svg>

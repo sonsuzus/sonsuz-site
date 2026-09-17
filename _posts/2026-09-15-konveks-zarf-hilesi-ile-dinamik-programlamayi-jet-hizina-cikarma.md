@@ -12,7 +12,11 @@ tags:
   - c++
   - optimizasyon
 toc: true
+image: /img/konveks-zarf-hilesi-21.png
 ---
+
+![konveks-zarf-hilesi-21](/img/konveks-zarf-hilesi-21.svg)
+
 
 Dinamik programlama bazen doğru bağıntıyı bulduğumuz hâlde bizi $O(n^2)$ karmaşıklığıyla baş başa bırakır. Konveks Zarf Hilesi, İngilizce adıyla **Convex Hull Trick (CHT)**, belirli biçimdeki geçişleri doğru parçaları olarak yorumlayarak bu maliyeti $O(n\log n)$, hatta uygun koşullarda $O(n)$ seviyesine indirebilir. Yani iç içe döngüleri geometrinin küçük ama etkili bir numarasıyla değiştiririz.
 ``

@@ -12,6 +12,7 @@ tags:
   - karekök ayrıştırma
   - veri yapıları
 toc: true
+image: /img/mo-algoritmasi-cevrimdisi-25.png
 ---
 
 Bir dizide yüzlerce kez “$[L,R]$ aralığında kaç farklı sayı var?” diye sorulduğunu düşünün. Her sorguyu baştan sona taramak doğru sonucu verir; fakat büyük verilerde işlemci kısa sürede maraton koşmuş gibi yorulur. Mo algoritması, sorguların sırasını değiştirerek mevcut aralığı küçük adımlarla günceller ve bu tekrarları ciddi ölçüde azaltır.
@@ -112,3 +113,6 @@ Sağ uçların tek bloklarda azalan, çift bloklarda artan sıralanması küçü
 Mo algoritması sihirli bir değnek değildir. Sorgular çevrimiçiyse, arada güncellemeler varsa veya `add/remove` işlemleri pahalıysa başka yapılar daha uygun olabilir. Ayrıca değerler çok büyükse doğrudan frekans dizisi yerine koordinat sıkıştırma kullanılmalıdır.
 
 Özetle Mo algoritması, hesaplamayı hızlandırmak için veriyi değil **iş sırasını** düzenler. Bazen en iyi optimizasyon daha hızlı koşmak değil, ziyaret edilecek durakları daha akıllıca sıralamaktır.
+
+![mo-algoritmasi-cevrimdisi-25](/img/mo-algoritmasi-cevrimdisi-25.svg)
+

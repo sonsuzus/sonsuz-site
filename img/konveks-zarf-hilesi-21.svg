@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9efff"/>
+      <stop offset="100%" stop-color="#dff4e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#54718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#54718a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="42" r="64" fill="#d8edff" opacity="0.5"/>
+  <circle cx="589" cy="276" r="78" fill="#dff3d8" opacity="0.52"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">Dinamik Programlama</text>
+  <text x="467" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">Konveks Zarf Hilesi</text>
+
+  <rect x="27" y="50" width="151" height="211" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="41" y="66" width="123" height="33" rx="11" fill="#fde8dc"/>
+  <text x="102.5" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a5140">Naif DP</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506779">
+    <rect x="42" y="113" width="122" height="25" rx="8" fill="#eef4fa"/>
+    <text x="54" y="130">Durum i</text>
+    <rect x="42" y="146" width="122" height="25" rx="8" fill="#eef4fa"/>
+    <text x="54" y="163">Tüm j adayları</text>
+    <rect x="42" y="179" width="122" height="25" rx="8" fill="#eef4fa"/>
+    <text x="54" y="196">Minimum seç</text>
+  </g>
+  <line x1="103" y1="138" x2="103" y2="144" stroke="#87a1b4" stroke-width="2"/>
+  <polygon points="98,142 108,142 103,148" fill="#87a1b4"/>
+  <line x1="103" y1="171" x2="103" y2="177" stroke="#87a1b4" stroke-width="2"/>
+  <polygon points="98,175 108,175 103,181" fill="#87a1b4"/>
+  <rect x="42" y="216" width="122" height="29" rx="9" fill="#fbd7d1"/>
+  <text x="103" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9b4d48">O(n²)</text>
+
+  <path d="M190 158 L220 158" stroke="#7190a7" stroke-width="2.5" fill="none"/>
+  <polygon points="215,152 226,158 215,164" fill="#7190a7"/>
+  <text x="207" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688398">doğrusal geçiş</text>
+
+  <rect x="231" y="50" width="181" height="211" rx="18" fill="url(#hull)" filter="url(#shadow)"/>
+  <text x="321.5" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b78">Alt Konveks Zarf</text>
+
+  <path d="M251 220 L391 220" stroke="#9db7c1" stroke-width="1.5"/>
+  <path d="M262 94 L262 230" stroke="#9db7c1" stroke-width="1.5"/>
+  <text x="386" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72919d">x</text>
+  <text x="251" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72919d">y</text>
+
+  <path d="M269 119 L384 211" stroke="#c77e87" stroke-width="2" opacity="0.7"/>
+  <path d="M270 180 L383 112" stroke="#b28acb" stroke-width="2" opacity="0.7"/>
+  <path d="M273 211 L381 130" stroke="#76a7cc" stroke-width="2" opacity="0.7"/>
+  <path d="M271 207 L299 190 L331 174 L379 125" stroke="#278c87" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="299" cy="190" r="4.5" fill="#ffffff" stroke="#278c87" stroke-width="2"/>
+  <circle cx="331" cy="174" r="4.5" fill="#ffffff" stroke="#278c87" stroke-width="2"/>
+  <circle cx="358" cy="147" r="4.5" fill="#ffffff" stroke="#278c87" stroke-width="2"/>
+  <path d="M320 220 L320 179" stroke="#f09a55" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="320" cy="180" r="5" fill="#f09a55"/>
+  <text x="329" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a46132">en küçük</text>
+
+  <path d="M419 158 L443 158" stroke="#7190a7" stroke-width="2.5" fill="none"/>
+  <polygon points="438,152 449,158 438,164" fill="#7190a7"/>
+
+  <rect x="454" y="50" width="159" height="211" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="468" y="66" width="131" height="33" rx="11" fill="#dff3e6"/>
+  <text x="533.5" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39745e">Hızlı DP</text>
+
+  <rect x="468" y="113" width="131" height="30" rx="9" fill="#edf8f1" filter="url(#soft)"/>
+  <text x="533.5" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456f62">Doğru ekle</text>
+  <line x1="534" y1="143" x2="534" y2="151" stroke="#78a995" stroke-width="2"/>
+  <polygon points="529,149 539,149 534,155" fill="#78a995"/>
+
+  <rect x="468" y="157" width="131" height="30" rx="9" fill="#edf8f1" filter="url(#soft)"/>
+  <text x="533.5" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456f62">x sorgula</text>
+  <line x1="534" y1="187" x2="534" y2="195" stroke="#78a995" stroke-width="2"/>
+  <polygon points="529,193 539,193 534,199" fill="#78a995"/>
+
+  <rect x="468" y="203" width="131" height="42" rx="10" fill="#d8f0df"/>
+  <text x="533.5" y="221" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34725c">O(n) veya O(n log n)</text>
+  <text x="533.5" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d806d">en iyi değer</text>
+
+  <rect x="232" y="277" width="177" height="25" rx="12" fill="#e7eef9" filter="url(#soft)"/>
+  <text x="320.5" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506f89">Monoton: deque · Değil: Li Chao</text>
+</svg>

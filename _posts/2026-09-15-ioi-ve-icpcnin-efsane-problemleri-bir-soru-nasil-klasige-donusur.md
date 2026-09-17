@@ -12,7 +12,11 @@ tags:
   - dinamik programlama
   - graf teorisi
 toc: true
+image: /img/ioi-ve-icpcnin-75.png
 ---
+
+![ioi-ve-icpcnin-75](/img/ioi-ve-icpcnin-75.svg)
+
 
 Bazı yarışma problemleri çözülüp unutulur; bazılarıysa yıllar sonra bile eğitim kamplarında, çevrim içi jürilerde ve algoritma sohbetlerinde karşımıza çıkar. IOI ile ICPC tarihinde klasikleşen soruların sırrı yalnızca zor olmaları değildir. Bu problemler, gündelik görünen bir hikâyenin altına güçlü bir matematiksel model saklar ve çözücüye belirli bir algoritmayı ezberletmek yerine onu keşfettirir.
 ``

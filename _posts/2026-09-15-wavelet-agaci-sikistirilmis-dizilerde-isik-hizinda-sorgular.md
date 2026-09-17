@@ -12,9 +12,13 @@ tags:
   - rank sorgusu
   - select sorgusu
 toc: true
+image: /img/wavelet-agaci-sikistirilmis-12.png
 ---
 
 Büyük bir sayı dizisini hem az yer kaplayacak biçimde saklamak hem de üzerinde hızlı sorgular çalıştırmak kulağa iki ayrı hedef gibi gelir. Wavelet ağacı, bu hedefleri aynı veri yapısında buluşturur. Özellikle metin indeksleme, genom analizi, coğrafi veriler ve analitik sistemlerde; bir aralıktaki k’ıncı küçük elemanı ya da belirli bir değerin kaç kez geçtiğini etkileyici hızlarda bulabilir.
+
+
+![wavelet-agaci-sikistirilmis-12](/img/wavelet-agaci-sikistirilmis-12.svg)
 
 ``
 

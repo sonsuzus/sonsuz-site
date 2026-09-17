@@ -12,6 +12,7 @@ tags:
   - splay-tree
   - cpp
 toc: true
+image: /img/link-cut-tree-39.png
 ---
 
 Bir ağaçta kenarlar sürekli eklenip çıkarılıyorsa klasik DFS yaklaşımı kısa sürede nefes nefese kalır. Link-cut tree, düğümler arasındaki yolları sorgularken ağacın bağlantılarını dinamik biçimde değiştirmemizi sağlar. İsmi bir bahçıvanlık aracını çağrıştırsa da yaptığı iş oldukça bilgisayarcıdır: ağaçları bağlar, dalları keser ve yol bilgilerini verimli şekilde günceller.
@@ -101,3 +102,6 @@ long long pathSum(int u, int v) {
 ## Nerelerde kullanılır?
 
 Link-cut tree; dinamik ağ bağlantıları, çevrim içi minimum yayılım ağacı problemleri, oyunlardaki değişken hiyerarşiler ve rekabetçi programlama sorularında karşımıza çıkar. Uygulaması kısa değildir; özellikle `rotate`, `splay`, `push` ve `access` fonksiyonlarında tek bir yanlış ebeveyn ataması bütün ormanı dijital odun yığınına çevirebilir. Buna rağmen bağlantıların sürekli değiştiği ve yol sorgularının yoğun olduğu problemlerde sunduğu $O(\log n)$ amortize performans, bu karmaşıklığa fazlasıyla değebilir.
+
+![link-cut-tree-39](/img/link-cut-tree-39.svg)
+

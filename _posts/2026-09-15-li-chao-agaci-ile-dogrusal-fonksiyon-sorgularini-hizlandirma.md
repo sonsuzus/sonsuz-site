@@ -12,9 +12,13 @@ tags:
   - c++
   - optimizasyon
 toc: true
+image: /img/li-chao-agaci-13.png
 ---
 
 Elimizde sürekli yeni doğruların eklendiği ve belirli bir $x$ noktasında en küçük değeri veren doğrunun sorulduğu bir sistem düşünelim. Her sorguda bütün doğruları tek tek kontrol etmek kolaydır; fakat doğru ve sorgu sayısı yüz binlere ulaştığında bilgisayarımız küçük bir hesap makinesi gibi terlemeye başlar. Li Chao ağacı, bu doğrusal fonksiyon sorgularını logaritmik zamanda yanıtlayarak imdadımıza yetişir.
+
+
+![li-chao-agaci-13](/img/li-chao-agaci-13.svg)
 
 ``
 

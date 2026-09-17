@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b9cdf5"/>
+      <stop offset="100%" stop-color="#d5c6f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#71809a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#71809a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="321" cy="160" r="112" fill="#dcecf6" opacity="0.34"/>
+  <circle cx="321" cy="160" r="82" fill="none" stroke="#b7cce1" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.75"/>
+
+  <!-- Bağlantılar -->
+  <path d="M174 89 C205 91 215 111 241 129" fill="none" stroke="#91aeca" stroke-width="2"/>
+  <polygon points="239,123 250,134 235,132" fill="#91aeca"/>
+  
+  <path d="M398 130 C424 111 440 92 466 89" fill="none" stroke="#91aeca" stroke-width="2"/>
+  <polygon points="459,87 471,84 467,96" fill="#91aeca"/>
+
+  <path d="M243 190 C215 211 204 230 174 233" fill="none" stroke="#91aeca" stroke-width="2"/>
+  <polygon points="181,226 169,236 183,239" fill="#91aeca"/>
+
+  <path d="M399 190 C426 210 441 229 467 232" fill="none" stroke="#91aeca" stroke-width="2"/>
+  <polygon points="460,225 472,235 458,238" fill="#91aeca"/>
+
+  <!-- Sol üst -->
+  <g filter="url(#soft)">
+    <rect x="32" y="49" width="145" height="79" rx="17" fill="#e8f1ff"/>
+    <rect x="43" y="60" width="30" height="30" rx="10" fill="#bdd4fa"/>
+    <text x="58" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="17" fill="#426487">x</text>
+    <text x="85" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31475d">Değişken</text>
+    <text x="85" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63809d">x</text>
+  </g>
+
+  <!-- Sağ üst -->
+  <g filter="url(#soft)">
+    <rect x="464" y="49" width="145" height="79" rx="17" fill="#f6edff"/>
+    <rect x="475" y="60" width="31" height="30" rx="10" fill="#dbc5f2"/>
+    <path d="M483 80 L490 69 L498 80" fill="none" stroke="#755494" stroke-width="2"/>
+    <text x="518" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d3e60">Fonksiyon</text>
+    <text x="518" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#826e94">λx.M</text>
+  </g>
+
+  <!-- Sol alt -->
+  <g filter="url(#soft)">
+    <rect x="32" y="194" width="145" height="79" rx="17" fill="#e7f7f0"/>
+    <rect x="43" y="205" width="31" height="30" rx="10" fill="#b9e4d1"/>
+    <path d="M51 213 H66 M58.5 207 V222" stroke="#397868" stroke-width="2"/>
+    <text x="85" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345b55">Uygulama</text>
+    <text x="85" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58847a">M N</text>
+  </g>
+
+  <!-- Sağ alt -->
+  <g filter="url(#soft)">
+    <rect x="464" y="194" width="145" height="79" rx="17" fill="#fff4df"/>
+    <rect x="475" y="205" width="31" height="30" rx="10" fill="#f3d69c"/>
+    <path d="M482 220 H499 M494 214 L500 220 L494 226" fill="none" stroke="#936d29" stroke-width="2"/>
+    <text x="518" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c552c">Beta indirgeme</text>
+    <text x="518" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b7a42">x ← değer</text>
+  </g>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <circle cx="321" cy="160" r="70" fill="url(#core)"/>
+    <circle cx="321" cy="160" r="59" fill="#f8fbff" opacity="0.72"/>
+    <path d="M281 178 C290 153 299 139 310 139 C321 139 323 158 332 169 C341 180 349 180 360 171" fill="none" stroke="#596c9f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M352 164 L362 171 L354 177" fill="none" stroke="#596c9f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="321" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#425177">Lambda Calculus</text>
+    <text x="321" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596784">λx.x</text>
+  </g>
+
+  <!-- Alt süreç bandı -->
+  <g filter="url(#soft)">
+    <rect x="142" y="286" width="356" height="25" rx="12" fill="#ffffff" opacity="0.9"/>
+    <circle cx="160" cy="298.5" r="5" fill="#a9c3ef"/>
+    <text x="172" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6681">Anonim fonksiyon</text>
+    <path d="M273 298.5 H293" stroke="#9bb0c7" stroke-width="1.5"/>
+    <polygon points="290,294 298,298.5 290,303" fill="#9bb0c7"/>
+    <circle cx="315" cy="298.5" r="5" fill="#c8b3e8"/>
+    <text x="327" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6681">Closure</text>
+    <path d="M382 298.5 H402" stroke="#9bb0c7" stroke-width="1.5"/>
+    <polygon points="399,294 407,298.5 399,303" fill="#9bb0c7"/>
+    <circle cx="424" cy="298.5" r="5" fill="#aedcc8"/>
+    <text x="436" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6681">Currying</text>
+  </g>
+</svg>

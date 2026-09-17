@@ -12,9 +12,13 @@ tags:
   - kısıt-programlama
   - doğrulama
 toc: true
+image: /img/sat-ve-smt-59.png
 ---
 
 Bir sudoku çözmek, işlemci devresini doğrulamak veya çalışanların vardiyalarını planlamak ilk bakışta tamamen farklı problemlerdir. SAT ve SMT çözücüleri ise bu karmaşanın karşısına aynı soruyla çıkar: “Verilen bütün kuralları aynı anda sağlayan en az bir değer ataması var mı?” Problemi bu dile çevirebilirsek çözüm arama işini son derece gelişmiş algoritmalara bırakabiliriz.
+
+
+![sat-ve-smt-59](/img/sat-ve-smt-59.svg)
 
 ``
 

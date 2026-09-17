@@ -12,6 +12,7 @@ tags:
   - cpp
   - ağaçlar
 toc: true
+image: /img/kucukten-buyuge-birlestirme-33.png
 ---
 
 Birçok algoritmada kümeleri, listeleri veya sözlükleri tekrar tekrar birleştirmemiz gerekir. Bunu dikkatsizce yaptığımızda aynı elemanlar defalarca taşınır ve masum görünen kodumuz kağnı hızına düşer. **Küçükten büyüğe birleştirme** ya da İngilizce adıyla *small-to-large merging*, her adımda küçük koleksiyonu büyük koleksiyona ekleyerek toplam maliyeti kontrol altında tutan zarif bir tekniktir.
@@ -87,3 +88,6 @@ Teknik yalnızca renk kümeleriyle sınırlı değildir. Alt ağaç frekansları
 Dikkat edilmesi gereken nokta, birleştirme yönünün gerçekten boyuta göre seçilmesidir. Ayrıca koleksiyon kopyalamak yerine referans, işaretçi veya taşıma semantiği kullanılmalıdır. Aksi hâlde kazandığımız karmaşıklığı gizli kopyalama maliyetleriyle geri verebiliriz.
 
 Özetle small-to-large, “daha az veriyi hareket ettir” ilkesinin algoritmik hâlidir. Uygulaması birkaç satırlık bir karşılaştırma ve takastan ibaret olsa da karesel çalışan çözümleri çoğu zaman logaritmik amortismanla çok daha ölçeklenebilir hâle getirir.
+
+![kucukten-buyuge-birlestirme-33](/img/kucukten-buyuge-birlestirme-33.svg)
+

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8d9fec"/>
+      <stop offset="100%" stop-color="#7187d9"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708d" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71849a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="55" r="84" fill="#dff0f3" opacity="0.45"/>
+  <circle cx="590" cy="276" r="105" fill="#e7e5fa" opacity="0.48"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526477" font-weight="600">EFSANE PROBLEMİN YOLCULUĞU</text>
+
+  <!-- input connections -->
+  <path d="M174 92 C205 92 210 124 244 143" fill="none" stroke="#99acc0" stroke-width="2"/>
+  <polygon points="244,143 235,137 237,148" fill="#99acc0"/>
+  <path d="M174 160 L235 160" fill="none" stroke="#99acc0" stroke-width="2"/>
+  <polygon points="244,160 234,155 234,165" fill="#99acc0"/>
+  <path d="M174 228 C205 228 210 196 244 177" fill="none" stroke="#99acc0" stroke-width="2"/>
+  <polygon points="244,177 237,172 235,183" fill="#99acc0"/>
+
+  <!-- left nodes -->
+  <g filter="url(#soft)">
+    <rect x="28" y="60" width="146" height="64" rx="16" fill="#fff4d9"/>
+    <circle cx="54" cy="92" r="14" fill="#f3c96a"/>
+    <path d="M48 95 L54 84 L60 95 M51 92 L57 92" fill="none" stroke="#86621d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b5660" font-weight="600">Gündelik hikâye</text>
+    <text x="78" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78838d">Basit başlangıç</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="128" width="146" height="64" rx="16" fill="#e4f5ec"/>
+    <circle cx="54" cy="160" r="14" fill="#82c9a5"/>
+    <path d="M47 164 L51 156 L55 161 L61 152 M59 152 L61 152 L61 155" fill="none" stroke="#276b50" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b5660" font-weight="600">Güçlü model</text>
+    <text x="78" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78838d">Matematiksel öz</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="196" width="146" height="64" rx="16" fill="#fbe7ed"/>
+    <circle cx="54" cy="228" r="14" fill="#e99cb3"/>
+    <path d="M47 225 L52 230 L61 221 M47 235 L61 235" fill="none" stroke="#9b3d5b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b5660" font-weight="600">Yetersiz denemeler</text>
+    <text x="78" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78838d">Keşfe zorlar</text>
+  </g>
+
+  <!-- core -->
+  <g filter="url(#shadow)">
+    <rect x="244" y="107" width="156" height="106" rx="25" fill="url(#core)"/>
+    <circle cx="322" cy="142" r="25" fill="#aebcf4" opacity="0.62"/>
+    <path d="M309 145 L317 153 L336 132" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="322" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">KLASİK PROBLEM</text>
+    <text x="322" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e9edff">Algoritmik laboratuvar</text>
+  </g>
+
+  <!-- outward connections -->
+  <path d="M400 142 C427 125 433 88 458 82" fill="none" stroke="#99acc0" stroke-width="2"/>
+  <polygon points="466,80 456,77 459,88" fill="#99acc0"/>
+  <path d="M400 160 L454 160" fill="none" stroke="#99acc0" stroke-width="2"/>
+  <polygon points="464,160 454,155 454,165" fill="#99acc0"/>
+  <path d="M400 178 C427 194 434 232 458 238" fill="none" stroke="#99acc0" stroke-width="2"/>
+  <polygon points="466,240 459,232 456,243" fill="#99acc0"/>
+
+  <!-- result nodes -->
+  <g filter="url(#soft)">
+    <rect x="464" y="50" width="148" height="62" rx="16" fill="#e8eaff"/>
+    <circle cx="490" cy="81" r="14" fill="#a9b2ee"/>
+    <path d="M484 85 L484 77 L490 73 L496 77 L496 85 M481 85 L499 85" fill="none" stroke="#4f60ae" stroke-width="1.7" stroke-linejoin="round"/>
+    <text x="514" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46536a" font-weight="600">Post Office</text>
+    <text x="514" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e7c8c">Medyan ve DP</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="464" y="129" width="148" height="62" rx="16" fill="#def3f2"/>
+    <circle cx="490" cy="160" r="14" fill="#83c9c3"/>
+    <path d="M490 149 L490 171 M490 153 L482 158 M490 153 L498 158 M490 166 L483 170 M490 166 L498 170" fill="none" stroke="#246f6e" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="514" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46536a" font-weight="600">Race</text>
+    <text x="514" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e7c8c">Centroid ayrışımı</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="464" y="208" width="148" height="62" rx="16" fill="#fff0df"/>
+    <circle cx="490" cy="239" r="14" fill="#efbf7d"/>
+    <path d="M483 245 L483 236 L490 232 L497 236 L497 245 Z M483 236 L490 240 L497 236 M490 240 L490 248" fill="none" stroke="#8a5a1d" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="514" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46536a" font-weight="600">Tower of Cubes</text>
+    <text x="514" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e7c8c">Durum grafiği</text>
+  </g>
+
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657587">Keşfedilen fikirler yeni problemlere taşınır</text>
+</svg>

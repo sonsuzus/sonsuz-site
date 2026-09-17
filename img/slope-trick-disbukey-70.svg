@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5dcff"/>
+      <stop offset="100%" stop-color="#d4efff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#59718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#59718a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="49" r="74" fill="#d8eff4" opacity="0.42"/>
+  <circle cx="577" cy="276" r="90" fill="#e6dffd" opacity="0.38"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f5870">Slope Trick ile Dışbükey DP</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="81" width="145" height="166" rx="19" fill="#ffffff"/>
+    <rect x="31" y="81" width="145" height="36" rx="19" fill="#d8f0ea"/>
+    <path d="M31 99 Q31 117 49 117 H158 Q176 117 176 99" fill="#d8f0ea"/>
+  </g>
+  <text x="103" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d5a">Kırılma Noktaları</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="132" width="111" height="31" rx="10" fill="#edf9f4"/>
+    <circle cx="64" cy="147.5" r="7" fill="#70c7ad"/>
+    <text x="105" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45645e">a₁, a₂, a₃</text>
+    <rect x="48" y="177" width="111" height="48" rx="10" fill="#f4faf7"/>
+    <text x="103" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#45645e">|x − a|</text>
+    <text x="103" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617a75">ceza ekle</text>
+  </g>
+
+  <path d="M176 164 H210" stroke="#80a9b0" stroke-width="2.5" fill="none"/>
+  <polygon points="219,164 209,158 209,170" fill="#80a9b0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="222" y="58" width="196" height="204" rx="23" fill="url(#core)"/>
+    <rect x="240" y="75" width="160" height="31" rx="12" fill="#ffffff" opacity="0.76"/>
+  </g>
+  <text x="320" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d4e79">Eğim Değişimlerini Sakla</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="241" y="122" width="70" height="81" rx="14" fill="#e9f8f2"/>
+    <text x="276" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356d63">Sol Heap</text>
+    <text x="276" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#568078">maksimum</text>
+    <path d="M255 186 H297" stroke="#78bca9" stroke-width="2"/>
+    <path d="M261 180 L276 192 L291 180" fill="none" stroke="#78bca9" stroke-width="2"/>
+    
+    <rect x="329" y="122" width="70" height="81" rx="14" fill="#f8ecf1"/>
+    <text x="364" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#85536b">Sağ Heap</text>
+    <text x="364" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#95697b">minimum</text>
+    <path d="M343 186 H385" stroke="#d092aa" stroke-width="2"/>
+    <path d="M349 192 L364 180 L379 192" fill="none" stroke="#d092aa" stroke-width="2"/>
+  </g>
+
+  <path d="M311 162 H327" stroke="#887eaf" stroke-width="2" fill="none"/>
+  <polygon points="326,162 318,157 318,167" fill="#887eaf"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="262" y="218" width="116" height="27" rx="10" fill="#ffffff" opacity="0.82"/>
+    <text x="320" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5a557c">Minimum + Denge</text>
+  </g>
+
+  <path d="M418 164 H451" stroke="#80a9b0" stroke-width="2.5" fill="none"/>
+  <polygon points="460,164 450,158 450,170" fill="#80a9b0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="463" y="81" width="146" height="166" rx="19" fill="#ffffff"/>
+    <rect x="463" y="81" width="146" height="36" rx="19" fill="#ffe8c9"/>
+    <path d="M463 99 Q463 117 481 117 H591 Q609 117 609 99" fill="#ffe8c9"/>
+  </g>
+  <text x="536" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765936">Dışbükey Fonksiyon</text>
+
+  <line x1="483" y1="218" x2="590" y2="218" stroke="#a6b6c1" stroke-width="1.5"/>
+  <line x1="536" y1="135" x2="536" y2="224" stroke="#a6b6c1" stroke-width="1.5"/>
+  <path d="M488 151 C502 154 514 170 524 193 C529 205 532 211 536 211 C540 211 544 205 549 193 C558 170 570 154 585 151" fill="none" stroke="#6579bb" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="536" cy="211" r="5" fill="#f29f77"/>
+  <rect x="481" y="229" width="110" height="28" rx="10" fill="#fff6e9"/>
+  <text x="536" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#846540">O(log N) güncelleme</text>
+
+  <path d="M320 271 V289" stroke="#9a8ab8" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="320" cy="296" r="5" fill="#9a8ab8"/>
+  <text x="320" y="314" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68778b">Tablo yerine geometri</text>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="leftCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5efff"/>
+      <stop offset="100%" stop-color="#d6e6fb"/>
+    </linearGradient>
+    <linearGradient id="centerCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4d9"/>
+      <stop offset="100%" stop-color="#ffe7b5"/>
+    </linearGradient>
+    <linearGradient id="rightCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e1f5e9"/>
+      <stop offset="100%" stop-color="#ccebd9"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6a8294" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#587080" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="87" cy="48" r="70" fill="#dceeff" opacity="0.42"/>
+  <circle cx="555" cy="274" r="86" fill="#d9f1da" opacity="0.40"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385268">Gale-Shapley: Ertelenmiş Kabul</text>
+
+  <g filter="url(#shadow)">
+    <rect x="36" y="62" width="155" height="175" rx="20" fill="url(#leftCard)" stroke="#bed3eb"/>
+    <rect x="244" y="55" width="152" height="189" rx="22" fill="url(#centerCard)" stroke="#ead29a"/>
+    <rect x="449" y="62" width="155" height="175" rx="20" fill="url(#rightCard)" stroke="#b9dfc7"/>
+  </g>
+
+  <text x="113" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385873">Teklif Yapanlar</text>
+  <text x="526" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326250">Teklif Alanlar</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45627a">
+    <rect x="57" y="103" width="112" height="28" rx="10" fill="#f8fbff" filter="url(#soft)"/>
+    <circle cx="74" cy="117" r="7" fill="#83add6"/>
+    <text x="90" y="121">Ada</text>
+    <text x="144" y="121" text-anchor="end" fill="#6a8093">X · Y · Z</text>
+
+    <rect x="57" y="143" width="112" height="28" rx="10" fill="#f8fbff" filter="url(#soft)"/>
+    <circle cx="74" cy="157" r="7" fill="#8c9cdb"/>
+    <text x="90" y="161">Bora</text>
+    <text x="144" y="161" text-anchor="end" fill="#6a8093">Y · X · Z</text>
+
+    <rect x="57" y="183" width="112" height="28" rx="10" fill="#f8fbff" filter="url(#soft)"/>
+    <circle cx="74" cy="197" r="7" fill="#76bdc1"/>
+    <text x="90" y="201">Cem</text>
+    <text x="144" y="201" text-anchor="end" fill="#6a8093">Y · Z · X</text>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416854">
+    <rect x="471" y="103" width="111" height="28" rx="10" fill="#fbfffc" filter="url(#soft)"/>
+    <circle cx="487" cy="117" r="7" fill="#70bc8b"/>
+    <text x="503" y="121">X</text>
+    <text x="562" y="121" text-anchor="end" fill="#668675">Sıralama</text>
+
+    <rect x="471" y="143" width="111" height="28" rx="10" fill="#fbfffc" filter="url(#soft)"/>
+    <circle cx="487" cy="157" r="7" fill="#88c993"/>
+    <text x="503" y="161">Y</text>
+    <text x="562" y="161" text-anchor="end" fill="#668675">Sıralama</text>
+
+    <rect x="471" y="183" width="111" height="28" rx="10" fill="#fbfffc" filter="url(#soft)"/>
+    <circle cx="487" cy="197" r="7" fill="#6daaa2"/>
+    <text x="503" y="201">Z</text>
+    <text x="562" y="201" text-anchor="end" fill="#668675">Sıralama</text>
+  </g>
+
+  <path d="M191 117 H225 Q234 117 234 126 V136 H244" fill="none" stroke="#6f9fca" stroke-width="2.2"/>
+  <polygon points="244,131 254,136 244,141" fill="#6f9fca"/>
+  <path d="M191 157 H226 Q234 157 234 157 H244" fill="none" stroke="#6f9fca" stroke-width="2.2"/>
+  <polygon points="244,152 254,157 244,162" fill="#6f9fca"/>
+  <path d="M191 197 H225 Q234 197 234 188 V178 H244" fill="none" stroke="#6f9fca" stroke-width="2.2"/>
+  <polygon points="244,173 254,178 244,183" fill="#6f9fca"/>
+
+  <text x="320" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#876331">Geçici Kabul</text>
+  <circle cx="320" cy="137" r="34" fill="#fffaf0" stroke="#e8bf6f" stroke-width="2" filter="url(#soft)"/>
+  <path d="M306 137 L316 147 L336 125" fill="none" stroke="#d39a3d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b6848">Karşılaştır</text>
+  <text x="320" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b6848">Daha iyiyi tut</text>
+  <text x="320" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7b48">Reddet ve sıradakine geç</text>
+
+  <path d="M396 137 H435 Q444 137 444 128 V117 H449" fill="none" stroke="#5ca87a" stroke-width="2.2"/>
+  <polygon points="449,112 459,117 449,122" fill="#5ca87a"/>
+  <path d="M396 157 H449" fill="none" stroke="#5ca87a" stroke-width="2.2"/>
+  <polygon points="449,152 459,157 449,162" fill="#5ca87a"/>
+  <path d="M396 177 H435 Q444 177 444 188 V197 H449" fill="none" stroke="#5ca87a" stroke-width="2.2"/>
+  <polygon points="449,192 459,197 449,202" fill="#5ca87a"/>
+
+  <path d="M500 240 V257 H141 V240" fill="none" stroke="#c68675" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <polygon points="136,240 141,230 146,240" fill="#c68675"/>
+  <text x="320" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b6658">Red: yeni tercih</text>
+
+  <g filter="url(#shadow)">
+    <rect x="169" y="273" width="302" height="34" rx="15" fill="#ffffff" stroke="#c9deda"/>
+  </g>
+  <circle cx="193" cy="290" r="9" fill="#73b98a"/>
+  <path d="M189 290 L192 293 L198 286" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="212" y="294" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6751">Kararlı Eşleştirme</text>
+  <text x="448" y="294" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668072">Engelleyici çift yok</text>
+</svg>

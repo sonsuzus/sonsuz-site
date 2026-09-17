@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#c8f0de"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6c86a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#7a91a2" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="50" r="68" fill="#dceeff" opacity="0.45"/>
+  <circle cx="570" cy="270" r="90" fill="#d9f3dc" opacity="0.42"/>
+
+  <text x="28" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536d">MO ALGORİTMASI</text>
+  <text x="28" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668096">Sorguları sırala, aralığı küçük adımlarla taşı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="77" width="145" height="166" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d73">Çevrimdışı sorgular</text>
+  <text x="48" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708799">Giriş sırası</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="47" y="138" width="105" height="23" rx="8" fill="#f3e7ff"/>
+    <text x="58" y="154" fill="#73538c">S₁ [5, 9]</text>
+    <rect x="47" y="167" width="105" height="23" rx="8" fill="#ffeacb"/>
+    <text x="58" y="183" fill="#8a6741">S₂ [1, 4]</text>
+    <rect x="47" y="196" width="105" height="23" rx="8" fill="#dceeff"/>
+    <text x="58" y="212" fill="#496d91">S₃ [3, 7]</text>
+  </g>
+
+  <path d="M181 159 C196 159 202 159 214 159" fill="none" stroke="#81a0b7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="213,153 225,159 213,165" fill="#81a0b7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="226" y="75" width="187" height="170" rx="22" fill="url(#core)"/>
+  </g>
+  <text x="275" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315c70">Bloklara ayır ve sırala</text>
+
+  <rect x="248" y="121" width="43" height="35" rx="8" fill="#ffffff" opacity="0.92"/>
+  <rect x="295" y="121" width="43" height="35" rx="8" fill="#ffffff" opacity="0.92"/>
+  <rect x="342" y="121" width="43" height="35" rx="8" fill="#ffffff" opacity="0.92"/>
+  <text x="260" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d788b">B₀</text>
+  <text x="307" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d788b">B₁</text>
+  <text x="354" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d788b">B₂</text>
+
+  <path d="M269 171 C292 161 315 181 337 171 C353 164 361 170 379 181" fill="none" stroke="#6388a0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="375,174 388,184 372,186" fill="#6388a0"/>
+  <text x="253" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527186">Yılan düzeni</text>
+  <text x="253" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527186">L bloğu → R sırası</text>
+
+  <path d="M421 159 C433 159 441 159 451 159" fill="none" stroke="#81a0b7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="450,153 462,159 450,165" fill="#81a0b7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="463" y="77" width="149" height="166" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="483" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d73">Aktif aralık</text>
+
+  <g>
+    <rect x="483" y="127" width="16" height="22" rx="5" fill="#e4edf5"/>
+    <rect x="501" y="127" width="16" height="22" rx="5" fill="#e4edf5"/>
+    <rect x="519" y="127" width="16" height="22" rx="5" fill="#99d8bd"/>
+    <rect x="537" y="127" width="16" height="22" rx="5" fill="#99d8bd"/>
+    <rect x="555" y="127" width="16" height="22" rx="5" fill="#99d8bd"/>
+    <rect x="573" y="127" width="16" height="22" rx="5" fill="#e4edf5"/>
+    <text x="489" y="167" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7489">L</text>
+    <text x="574" y="167" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7489">R</text>
+  </g>
+
+  <path d="M500 185 L516 185" fill="none" stroke="#da7f7f" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="503,179 493,185 503,191" fill="#da7f7f"/>
+  <text x="485" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a35e5e">sil</text>
+
+  <path d="M555 185 L573 185" fill="none" stroke="#55a77d" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="571,179 581,185 571,191" fill="#55a77d"/>
+  <text x="562" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d8b6b">ekle</text>
+
+  <g filter="url(#soft)">
+    <rect x="202" y="266" width="236" height="35" rx="15" fill="#ffffff"/>
+  </g>
+  <circle cx="225" cy="283" r="10" fill="#f6d99d"/>
+  <text x="221" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#84632b">ƒ</text>
+  <text x="244" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506b7e">Frekans güncelle → farklı sayısı</text>
+
+  <path d="M537 244 C537 260 512 271 449 280" fill="none" stroke="#86a4b5" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+  <polygon points="453,274 440,281 454,286" fill="#86a4b5"/>
+</svg>

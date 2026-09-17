@@ -11,7 +11,11 @@ tags:
   - python
   - ayrık matematik
 toc: true
+image: /img/gale-shapley-algoritmasi-68.png
 ---
+
+![gale-shapley-algoritmasi-68](/img/gale-shapley-algoritmasi-68.svg)
+
 
 Bir grup doktoru hastanelere, öğrencileri üniversitelere veya kullanıcıları tercihlerine göre oyun sunucularına yerleştirdiğimizi düşünelim. Herkesin bir tercih listesi var ve bazı eşleşmeler diğerlerinden daha cazip. Rastgele seçim yapmak kolaydır; zor olan, kimsenin mevcut eşini bırakıp başka biriyle karşılıklı olarak eşleşmek istemediği **kararlı** bir sonuç bulmaktır. İşte Gale-Shapley algoritması bu sosyal dramayı düzenli, kanıtlanabilir ve verimli bir sürece dönüştürür.
 ``

@@ -12,9 +12,13 @@ tags:
   - c++
   - algoritma
 toc: true
+image: /img/dinic-algoritmasi-katmanli-67.png
 ---
 
 Bir boru hattından taşınabilecek suyu, bir ağın kaldırabileceği veri trafiğini veya depodan mağazalara gönderilebilecek ürün miktarını hesaplamak istediğimizi düşünelim. Bu problemlerin ortak noktası, belirli kapasitelere sahip bağlantılardan kaynaktan hedefe mümkün olan en büyük akışı göndermektir. Dinic algoritması, katmanlı ağ fikrini kullanarak bu maksimum akışı verimli biçimde bulur.
+
+![dinic-algoritmasi-katmanli-67](/img/dinic-algoritmasi-katmanli-67.svg)
+
 ``
 ## Maksimum akışın teorik temeli
 

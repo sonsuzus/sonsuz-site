@@ -12,9 +12,13 @@ tags:
   - sayma
   - rekabetçi programlama
 toc: true
+image: /img/digit-dp-ile-31.png
 ---
 
 Bir aralıkta belirli özelliklere sahip kaç sayı bulunduğunu hesaplamak bazen göründüğünden çok daha zordur. Örneğin, $1$ ile $10^{18}$ arasında rakamları toplamı 42 olan veya içinde hiç 7 geçmeyen sayıları tek tek kontrol edemeyiz. Digit DP, yani basamak dinamik programlama, tam burada devreye girerek sayıları değil, sayıların basamaklarında oluşabilecek durumları sayar.
+
+![digit-dp-ile-31](/img/digit-dp-ile-31.svg)
+
 ``
 ## Temel fikir: Aralığı üst sınıra dönüştürmek
 

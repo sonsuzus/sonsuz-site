@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="sourceGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#badcff"/>
+      <stop offset="100%" stop-color="#87baf0"/>
+    </linearGradient>
+    <linearGradient id="sinkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bdeed6"/>
+      <stop offset="100%" stop-color="#79c99e"/>
+    </linearGradient>
+    <linearGradient id="phaseGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3dcff"/>
+      <stop offset="100%" stop-color="#d6b7ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5f7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#698297" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="111" cy="57" r="82" fill="#dceeff" opacity="0.48"/>
+  <circle cx="558" cy="270" r="95" fill="#ddf3de" opacity="0.55"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">DİNİC: KATMANLI MAKSİMUM AKIŞ</text>
+  <text x="30" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">BFS katmanları → DFS bloklayan akış</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="117" width="96" height="88" rx="20" fill="#fafdff"/>
+    <circle cx="75" cy="150" r="22" fill="url(#sourceGrad)"/>
+    <path d="M67 150 L79 150 M75 144 L81 150 L75 156" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="75" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355a79">Kaynak</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="517" y="117" width="96" height="88" rx="20" fill="#fcfffd"/>
+    <circle cx="565" cy="150" r="22" fill="url(#sinkGrad)"/>
+    <path d="M557 150 L569 150 M565 144 L571 150 L565 156" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="565" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35684c">Hedef</text>
+  </g>
+
+  <g opacity="0.82">
+    <rect x="143" y="78" width="88" height="166" rx="18" fill="#e7f1ff"/>
+    <rect x="255" y="78" width="88" height="166" rx="18" fill="#f4e9ff"/>
+    <rect x="367" y="78" width="88" height="166" rx="18" fill="#e6f7ee"/>
+    <text x="187" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#57728b">Katman 1</text>
+    <text x="299" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#73588c">Katman 2</text>
+    <text x="411" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f7b67">Katman 3</text>
+  </g>
+
+  <g stroke-linecap="round" fill="none">
+    <path d="M123 145 C137 130 141 126 158 121" stroke="#72a8dc" stroke-width="5"/>
+    <path d="M123 162 C137 177 142 190 158 199" stroke="#72a8dc" stroke-width="5"/>
+    <path d="M202 121 C223 121 233 133 270 145" stroke="#8c6bb2" stroke-width="5"/>
+    <path d="M202 199 C223 199 233 185 270 174" stroke="#8c6bb2" stroke-width="5"/>
+    <path d="M314 145 C335 133 348 121 382 121" stroke="#6ea98c" stroke-width="5"/>
+    <path d="M314 174 C336 183 348 194 382 199" stroke="#6ea98c" stroke-width="5"/>
+    <path d="M426 121 C453 123 479 138 517 145" stroke="#62ae89" stroke-width="5"/>
+    <path d="M426 199 C455 190 479 172 517 160" stroke="#62ae89" stroke-width="5"/>
+  </g>
+
+  <g fill="#4f86bb">
+    <polygon points="153,116 162,121 154,126"/>
+    <polygon points="153,194 162,199 154,204"/>
+  </g>
+  <g fill="#8060a3">
+    <polygon points="265,140 274,145 265,150"/>
+    <polygon points="265,169 274,174 265,179"/>
+  </g>
+  <g fill="#5d9a7c">
+    <polygon points="377,116 386,121 377,126"/>
+    <polygon points="377,194 386,199 377,204"/>
+  </g>
+  <g fill="#4f9c76">
+    <polygon points="512,140 521,145 512,150"/>
+    <polygon points="512,155 521,160 512,165"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <circle cx="180" cy="121" r="16" fill="#ffffff"/>
+    <circle cx="180" cy="199" r="16" fill="#ffffff"/>
+    <circle cx="292" cy="145" r="16" fill="url(#phaseGrad)"/>
+    <circle cx="292" cy="174" r="16" fill="url(#phaseGrad)"/>
+    <circle cx="404" cy="121" r="16" fill="#ffffff"/>
+    <circle cx="404" cy="199" r="16" fill="#ffffff"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <text x="180" y="125" fill="#44749d">A</text>
+    <text x="180" y="203" fill="#44749d">B</text>
+    <text x="292" y="149" fill="#674b81">C</text>
+    <text x="292" y="178" fill="#674b81">D</text>
+    <text x="404" y="125" fill="#477962">E</text>
+    <text x="404" y="203" fill="#477962">F</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="71" y="263" width="152" height="35" rx="13" fill="#ffffff"/>
+    <circle cx="91" cy="280" r="9" fill="#9bc6ef"/>
+    <text x="106" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466780">BFS: seviye kur</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="244" y="263" width="152" height="35" rx="13" fill="#ffffff"/>
+    <circle cx="264" cy="280" r="9" fill="#d5aee8"/>
+    <text x="279" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6b517d">DFS: akışı it</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="417" y="263" width="152" height="35" rx="13" fill="#ffffff"/>
+    <circle cx="437" cy="280" r="9" fill="#9cd5b5"/>
+    <text x="452" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47745c">Bloklayan akış</text>
+  </g>
+</svg>

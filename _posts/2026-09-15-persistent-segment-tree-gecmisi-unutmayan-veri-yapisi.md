@@ -12,6 +12,7 @@ tags:
   - segment-tree
   - kalıcılık
 toc: true
+image: /img/persistent-segment-tree-10.png
 ---
 
 Bir segment tree düşünün: aralık toplamlarını hızla hesaplıyor, güncellemeleri şıp diye uyguluyor ama her değişiklikte eski hâlini unutuyor. Persistent segment tree ise biraz nostaljiktir; yapılan her güncellemeden sonra geçmiş sürümleri saklar. Böylece yalnızca güncel veriye değil, dizinin herhangi bir zamandaki hâline de erişebiliriz.
@@ -33,6 +34,9 @@ olduğundan noktasal güncelleme ve aralık sorgusu $O(\log n)$ zamanda gerçekl
 | Eski sürümlere erişim | Yok | Var |
 | Güncelleme başına ek bellek | Genellikle yok | $O(\log n)$ |
 | Temel yaklaşım | Düğümleri değiştir | Değişen yolu kopyala |
+
+![persistent-segment-tree-10](/img/persistent-segment-tree-10.svg)
+
 
 ## Kalıcılığın sırrı: Path Copying
 

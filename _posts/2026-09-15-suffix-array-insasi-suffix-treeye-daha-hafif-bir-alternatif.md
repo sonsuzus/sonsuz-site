@@ -12,9 +12,13 @@ tags:
   - veri-yapıları
   - lcp
 toc: true
+image: /img/suffix-array-insasi-13.png
 ---
 
 Bir metin içinde desen aramak, tekrarları bulmak veya sözlük sırasına göre son ekleri incelemek istediğimizde suffix tree güçlü bir çözümdür. Ancak düğümler, bağlantılar ve yüksek bellek tüketimi yüzünden uygulaması biraz “orman yangınına” dönüşebilir. Suffix array ise aynı fikirlerin önemli bir bölümünü yalnızca bir tamsayı dizisiyle sunar: Daha sade, önbellek dostu ve pratik!
+
+![suffix-array-insasi-13](/img/suffix-array-insasi-13.svg)
+
 ``
 ## Suffix array nedir?
 

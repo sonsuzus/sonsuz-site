@@ -12,6 +12,7 @@ tags:
   - algoritma
   - bilgisayar-bilimi
 toc: true
+image: /img/lambda-calculustan-gercek-20.png
 ---
 
 Bir programlama dilinde fonksiyon yazarken aslında 1930’larda ortaya atılmış matematiksel bir modelin izlerini takip ederiz. Parametreler, dönüş değerleri, anonim fonksiyonlar ve closure gibi modern araçların kökünde **lambda calculus** bulunur. Üstelik bu model, bilgisayarların henüz oda büyüklüğünde bile olmadığı bir dönemde geliştirilmiştir!
@@ -51,6 +52,9 @@ Lambda ifadelerinin modern dillerdeki karşılıkları şaşırtıcı derecede a
 | Beta indirgeme | Parametre yerleştirme | `x` yerine `5` |
 | Serbest değişken | Closure tarafından yakalanan değer | Dış kapsamdaki değişken |
 | İç içe fonksiyon | Currying | `f(a)(b)` |
+
+![lambda-calculustan-gercek-20](/img/lambda-calculustan-gercek-20.svg)
+
 
 JavaScript ile iki sayıyı toplayan curried bir fonksiyon yazalım:
 

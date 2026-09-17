@@ -12,7 +12,11 @@ tags:
   - c++
   - dinamik programlama
 toc: true
+image: /img/sanal-agac-ile-93.png
 ---
+
+![sanal-agac-ile-93](/img/sanal-agac-ile-93.svg)
+
 
 Büyük bir ağaçta yalnızca birkaç seçili düğümle ilgilendiğinizi düşünün. Milyonlarca düğümü her sorguda dolaşmak, çay demlenene kadar çalışan algoritmalar üretir. **Sanal ağaç (virtual tree)** ise yalnızca önemli düğümleri ve bunların bağlantısını koruyarak sorguyu küçük bir ağaca indirger.
 ``

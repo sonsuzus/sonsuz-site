@@ -12,6 +12,7 @@ tags:
   - öncelik kuyruğu
   - c++
 toc: true
+image: /img/slope-trick-disbukey-70.png
 ---
 
 Dinamik programlamada durum değişkeni bir sayı olduğunda, her olası değeri ayrı ayrı tutmak çoğu zaman pahalıdır. Slope trick, parçalı doğrusal dışbükey bir DP fonksiyonunu değerleriyle değil, eğiminin değiştiği noktalarla temsil eder. Böylece devasa bir koordinat aralığı, birkaç öncelik kuyruğu ve şaşırtıcı derecede az kodla yönetilebilir.
@@ -42,6 +43,9 @@ Bu küçük eşitlik, tekniğin İsviçre çakısıdır. Bir DP durumuna mutlak 
 | Koordinat aralığına bağlıdır | İşlem sayısına bağlıdır |
 | Geçişler çoğu zaman $O(M)$ veya $O(M^2)$ | Tipik güncelleme $O(log N)$ |
 | Ayrık tablolar için doğaldır | Dışbükey, parçalı doğrusal fonksiyonlar için doğaldır |
+
+![slope-trick-disbukey-70](/img/slope-trick-disbukey-70.svg)
+
 
 ## İki heap ne anlatıyor?
 
