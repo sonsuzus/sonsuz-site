@@ -12,6 +12,7 @@ tags:
   - imu
   - kontrol sistemleri
 toc: true
+image: /img/kendi-kendine-dengelenen-26.png
 ---
 
 İki tekerlek üzerinde duran bir robot, fizik kurallarına meydan okuyor gibi görünür. Oysa yaptığı şey düşmeyi engellemek değil, düşüşünü sürekli ölçüp tekerleklerini doğru yöne sürerek gövdesini yeniden dengelemektir. Bu proje; mekanik, elektronik, sensör füzyonu ve kontrol teorisini eğlenceli biçimde bir araya getirir.
@@ -40,6 +41,9 @@ Robotun görevi, motorların ürettiği karşı torkla bu sapmayı bastırmaktı
 | Motor sürücü | Motor akımını kontrol eder | TB6612FNG, L298N'den daha verimlidir |
 | Batarya | Sistemi besler | Ani motor akımını karşılayabilmelidir |
 | Şasi ve tekerlekler | Mekanik yapıyı oluşturur | Ağırlık merkezi eksenin üzerinde olmalıdır |
+
+![kendi-kendine-dengelenen-26](/img/kendi-kendine-dengelenen-26.svg)
+
 
 ## Açıyı doğru ölçmek
 

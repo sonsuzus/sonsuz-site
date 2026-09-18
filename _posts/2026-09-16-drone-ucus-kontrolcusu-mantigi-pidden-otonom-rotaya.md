@@ -12,7 +12,11 @@ tags:
   - sensör füzyonu
   - robotik
 toc: true
+image: /img/drone-ucus-kontrolcusu-11.png
 ---
+
+![drone-ucus-kontrolcusu-11](/img/drone-ucus-kontrolcusu-11.svg)
+
 
 Bir drone’u havada tutmak, dört motoru çalıştırıp şans dilemekten çok daha fazlasıdır. Uçuş kontrolcüsü; sensörleri okuyan, aracın mevcut durumunu tahmin eden ve motorlara saniyede yüzlerce kez düzeltme komutu gönderen gerçek zamanlı bir bilgisayardır. Manuel dengeden GPS destekli otonom rotaya kadar bütün uçuş yetenekleri, iç içe çalışan kontrol döngülerine dayanır.
 

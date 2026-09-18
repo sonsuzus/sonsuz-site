@@ -12,9 +12,13 @@ tags:
   - matematik
   - denge-robotu
 toc: true
+image: /img/pid-kontroloru-bir-97.png
 ---
 
 İki tekerlek üzerinde duran bir robotu, parmağınızın ucunda dik tutmaya çalıştığınız süpürgeye benzetebilirsiniz. Robot biraz öne eğildiğinde tekerleklerini öne sürmeli, fazla hızlandığında ise geri çekmelidir. Bu kararların hızlı, ölçülü ve sürekli alınmasını sağlayan matematiksel kahraman PID kontrolörüdür.
+
+
+![pid-kontroloru-bir-97](/img/pid-kontroloru-bir-97.svg)
 
 ``
 

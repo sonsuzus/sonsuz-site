@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#bcdcff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7891a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7891a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="482" cy="55" r="95" fill="#dff3e7" opacity="0.42"/>
+  <circle cx="115" cy="278" r="112" fill="#dcecff" opacity="0.38"/>
+
+  <text x="30" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f687a" font-weight="600">OTONOM UÇUŞ KONTROL AKIŞI</text>
+
+  <!-- Rota planlama -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="72" width="118" height="65" rx="17" fill="#fff4d9"/>
+    <rect x="28" y="72" width="118" height="65" rx="17" fill="none" stroke="#ecd39a"/>
+  </g>
+  <path d="M49 110 C61 94 72 123 84 102 S108 100 121 89" fill="none" stroke="#d39a35" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="49" cy="110" r="4" fill="#f3b94c"/>
+  <circle cx="121" cy="89" r="4" fill="#d78436"/>
+  <text x="87" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#755621" font-weight="600">Rota Planı</text>
+
+  <!-- Sensor fusion -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="184" width="118" height="78" rx="17" fill="#e0f5ec"/>
+    <rect x="28" y="184" width="118" height="78" rx="17" fill="none" stroke="#a8d9c6"/>
+  </g>
+  <circle cx="57" cy="213" r="10" fill="#b7e7d4"/>
+  <path d="M52 213h10M57 208v10" stroke="#378a70" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M77 208c7-9 16 7 25-2M77 218c7-9 16 7 25-2" fill="none" stroke="#4a9f84" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="87" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#286955" font-weight="600">Sensör Füzyonu</text>
+
+  <!-- arrows left to center -->
+  <path d="M146 104 H177" fill="none" stroke="#8ba5b8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="177,104 169,99 169,109" fill="#8ba5b8"/>
+  <path d="M146 223 H165 Q176 223 176 212 V170" fill="none" stroke="#8ba5b8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="176,170 171,178 181,178" fill="#8ba5b8"/>
+
+  <!-- central nested controller -->
+  <g filter="url(#shadow)">
+    <rect x="178" y="64" width="198" height="201" rx="26" fill="#fdfefe"/>
+    <rect x="178" y="64" width="198" height="201" rx="26" fill="none" stroke="#c4d9e7"/>
+  </g>
+  <text x="277" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536b7c" font-weight="600">UÇUŞ KONTROLCÜSÜ</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="199" y="107" width="156" height="38" rx="12" fill="#e9dcff"/>
+  </g>
+  <text x="277" y="131" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#634b88" font-weight="600">Konum ve Hız PID</text>
+
+  <path d="M277 146 V158" fill="none" stroke="#9b89b9" stroke-width="2"/>
+  <polygon points="277,158 272,150 282,150" fill="#9b89b9"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="211" y="160" width="132" height="39" rx="12" fill="#d8ebff"/>
+  </g>
+  <text x="277" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#376b96" font-weight="600">Tutum PID</text>
+
+  <path d="M277 200 V211" fill="none" stroke="#719aba" stroke-width="2"/>
+  <polygon points="277,211 272,203 282,203" fill="#719aba"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="222" y="213" width="110" height="33" rx="11" fill="url(#core)"/>
+  </g>
+  <text x="277" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#285d8c" font-weight="600">Hız PID</text>
+
+  <!-- Center to mixer -->
+  <path d="M376 164 H407" fill="none" stroke="#7794aa" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="407,164 399,159 399,169" fill="#7794aa"/>
+
+  <!-- mixer -->
+  <g filter="url(#shadow)">
+    <rect x="409" y="125" width="96" height="78" rx="18" fill="#ffe3e2"/>
+    <rect x="409" y="125" width="96" height="78" rx="18" fill="none" stroke="#efbbb8"/>
+  </g>
+  <path d="M429 149h56M429 164h56M429 179h56" stroke="#d5807c" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="436" cy="149" r="3" fill="#c96263"/>
+  <circle cx="452" cy="164" r="3" fill="#c96263"/>
+  <circle cx="471" cy="179" r="3" fill="#c96263"/>
+  <text x="457" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8e4745" font-weight="600">Mikser</text>
+
+  <!-- mixer to drone -->
+  <path d="M505 164 H535" fill="none" stroke="#7794aa" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="535,164 527,159 527,169" fill="#7794aa"/>
+
+  <!-- drone -->
+  <g filter="url(#shadow)">
+    <rect x="537" y="101" width="76" height="126" rx="22" fill="#e4eef8"/>
+    <rect x="537" y="101" width="76" height="126" rx="22" fill="none" stroke="#b7ccdf"/>
+  </g>
+  <path d="M575 151v28M554 165h42M559 149l32 32M591 149l-32 32" stroke="#4f728d" stroke-width="2.2" stroke-linecap="round"/>
+  <rect x="568" y="158" width="14" height="14" rx="4" fill="#668eae"/>
+  <circle cx="553" cy="147" r="8" fill="#9ec1dc" stroke="#527895"/>
+  <circle cx="597" cy="147" r="8" fill="#9ec1dc" stroke="#527895"/>
+  <circle cx="553" cy="183" r="8" fill="#9ec1dc" stroke="#527895"/>
+  <circle cx="597" cy="183" r="8" fill="#9ec1dc" stroke="#527895"/>
+  <text x="575" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f607a" font-weight="600">Motorlar</text>
+
+  <!-- feedback loop -->
+  <path d="M575 228 V278 H277 Q166 278 166 183" fill="none" stroke="#7fb5a3" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="166,183 161,191 171,191" fill="#7fb5a3"/>
+  <text x="412" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#568877">Geri besleme ve denge</text>
+
+  <!-- axis chips -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">
+    <rect x="193" y="279" width="46" height="22" rx="11" fill="#e8dcfa"/>
+    <text x="216" y="294" text-anchor="middle" fill="#685082">Roll</text>
+    <rect x="246" y="279" width="48" height="22" rx="11" fill="#dbeeff"/>
+    <text x="270" y="294" text-anchor="middle" fill="#3e7199">Pitch</text>
+    <rect x="301" y="279" width="43" height="22" rx="11" fill="#ffe4df"/>
+    <text x="322" y="294" text-anchor="middle" fill="#99534c">Yaw</text>
+  </g>
+</svg>

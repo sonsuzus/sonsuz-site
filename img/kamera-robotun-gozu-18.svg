@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="cam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c9e5ff"/>
+      <stop offset="100%" stop-color="#a8cef3"/>
+    </linearGradient>
+    <linearGradient id="vision" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f5df"/>
+      <stop offset="100%" stop-color="#aae1bf"/>
+    </linearGradient>
+    <linearGradient id="control" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbe8c8"/>
+      <stop offset="100%" stop-color="#f4c982"/>
+    </linearGradient>
+    <linearGradient id="robot" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eadcfb"/>
+      <stop offset="100%" stop-color="#cbb3ed"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71849a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#71849a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="93" cy="38" r="58" fill="#cfeaff" opacity="0.34"/>
+  <circle cx="569" cy="278" r="76" fill="#d9f2cc" opacity="0.35"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43566d">Görüntüden Harekete Nesne Takibi</text>
+
+  <path d="M137 148 L163 148" stroke="#6d8398" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="163,148 156,143 156,153" fill="#6d8398"/>
+  <path d="M278 148 L304 148" stroke="#6d8398" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="304,148 297,143 297,153" fill="#6d8398"/>
+  <path d="M419 148 L445 148" stroke="#6d8398" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="445,148 438,143 438,153" fill="#6d8398"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="102" width="109" height="93" rx="19" fill="url(#cam)"/>
+    <rect x="39" y="116" width="57" height="42" rx="10" fill="#eff9ff" stroke="#6c9ac1" stroke-width="2"/>
+    <circle cx="67.5" cy="137" r="13" fill="#759fc2"/>
+    <circle cx="67.5" cy="137" r="7" fill="#395c7d"/>
+    <circle cx="72" cy="132" r="2.7" fill="#fff" opacity="0.8"/>
+    <path d="M96 126 L115 118 L115 157 L96 149 Z" fill="#8ab4d5" stroke="#6c9ac1" stroke-width="2" stroke-linejoin="round"/>
+    <text x="82.5" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355773">Kamera</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="163" y="89" width="115" height="119" rx="19" fill="url(#vision)"/>
+    <rect x="177" y="105" width="87" height="61" rx="9" fill="#f8fffa" stroke="#79b991" stroke-width="1.5"/>
+    <path d="M187 151 C199 132 208 142 217 125 C228 148 238 133 254 115" fill="none" stroke="#9bb7a5" stroke-width="1.5"/>
+    <rect x="211" y="120" width="27" height="29" rx="4" fill="none" stroke="#e98d4d" stroke-width="2.5"/>
+    <circle cx="224.5" cy="134.5" r="3.5" fill="#f4a35c"/>
+    <path d="M225 171 L225 184" stroke="#5d8f71" stroke-width="2"/>
+    <polygon points="225,188 220,181 230,181" fill="#5d8f71"/>
+    <text x="220.5" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35604a">Algılama</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="304" y="89" width="115" height="119" rx="19" fill="url(#control)"/>
+    <rect x="318" y="105" width="87" height="35" rx="9" fill="#fff9ef" opacity="0.9"/>
+    <text x="361.5" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a6331">Hata eₓ</text>
+    <path d="M327 163 C338 144 348 184 361 163 S384 144 395 163" fill="none" stroke="#c78343" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="361.5" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#87552b">PID Kontrol</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="445" y="102" width="156" height="93" rx="19" fill="url(#robot)"/>
+    <circle cx="482" cy="166" r="12" fill="#6d5691"/>
+    <circle cx="559" cy="166" r="12" fill="#6d5691"/>
+    <circle cx="482" cy="166" r="5" fill="#e9ddf6"/>
+    <circle cx="559" cy="166" r="5" fill="#e9ddf6"/>
+    <path d="M474 159 L486 128 Q488 120 498 120 L548 120 Q558 120 562 134 L571 159 Z" fill="#f6f0fc" stroke="#896db2" stroke-width="2"/>
+    <rect x="502" y="130" width="33" height="16" rx="5" fill="#a9d4e6"/>
+    <circle cx="553" cy="136" r="6" fill="#f0a45d"/>
+    <path d="M555 125 L558 114" stroke="#735a99" stroke-width="2" stroke-linecap="round"/>
+    <text x="523" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c467c">Robot ve Motor</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="46" y="240" width="142" height="43" rx="15" fill="#ffffff" opacity="0.85"/>
+    <circle cx="66" cy="261.5" r="10" fill="#f5a357"/>
+    <path d="M61 261 L66 256 L72 261 L66 267 Z" fill="#fff2df"/>
+    <text x="80" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#695240">Hedef</text>
+    <text x="80" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7883">konum ve kutu</text>
+  </g>
+
+  <path d="M117 240 C122 216 161 215 187 205" fill="none" stroke="#83a28d" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="188,205 179,203 183,212" fill="#83a28d"/>
+
+  <path d="M522 207 C522 253 389 276 264 263 C230 260 213 246 213 217" fill="none" stroke="#7d90a2" stroke-width="2" stroke-dasharray="6 5" opacity="0.82"/>
+  <polygon points="213,217 208,225 218,224" fill="#7d90a2"/>
+  <rect x="350" y="252" width="118" height="27" rx="12" fill="#edf4f5" opacity="0.92"/>
+  <text x="409" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536a76">Geri besleme</text>
+
+  <text x="149" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607888">Kareler</text>
+  <text x="290" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607888">Merkez</text>
+  <text x="431" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607888">Komut</text>
+</svg>

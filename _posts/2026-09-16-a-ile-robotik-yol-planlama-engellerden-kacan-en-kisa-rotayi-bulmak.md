@@ -12,6 +12,7 @@ tags:
   - python
   - yapay-zeka
 toc: true
+image: /img/a-ile-robotik-59.png
 ---
 
 Bir robotun başlangıç noktasından hedefe gitmesi kolay görünebilir; ta ki odanın ortasına sandalye, kutu ve duvarlar yerleştirene kadar! Robotik yol planlamanın amacı, hareketli sistemi engellere çarptırmadan hedefe ulaştıracak mümkün olan en düşük maliyetli rotayı bulmaktır. A* algoritması, gerçek maliyet ile hedefe yönelik tahmini birleştirerek bu işi hem verimli hem de anlaşılır biçimde yapar.
@@ -33,6 +34,9 @@ Bunu bir navigasyon uygulaması gibi düşünebiliriz: $g(n)$ şimdiye kadar kul
 | Dijkstra | Var | Yok | Garantili fakat geniş arama yapar |
 | Greedy Best-First | Yok | Var | Hızlı olabilir, en kısa yolu garanti etmez |
 | A* | Var | Var | Doğru sezgiyle hızlı ve optimaldir |
+
+![a-ile-robotik-59](/img/a-ile-robotik-59.svg)
+
 
 ## Izgara haritası ve sezgisel fonksiyon
 

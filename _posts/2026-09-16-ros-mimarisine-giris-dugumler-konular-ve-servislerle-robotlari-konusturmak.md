@@ -13,6 +13,7 @@ tags:
   - konular
   - servisler
 toc: true
+image: /img/ros-mimarisine-giris-40.png
 ---
 
 Bir robotun kamerası görüntü üretirken motorları hareket eder, sensörleri çevreyi ölçer ve karar mekanizması bütün bu verileri yorumlar. Tüm bileşenleri tek bir dev programda toplamak mümkün olsa da bakım yapmak kısa sürede kablo yumağı çözmeye dönüşür. ROS, yani Robot Operating System, robot yazılımını küçük ve bağımsız parçalara ayırarak bu karmaşayı yönetilebilir hâle getiren bir iletişim ve araçlar ekosistemidir.
@@ -96,3 +97,6 @@ Bu komutlar servisleri listeler ve örnek bir sensör sıfırlama isteği gönde
 Veri düzenli akıyor ve birden fazla bileşen tarafından tüketilebiliyorsa **konu** seçilir. İşlem belirli bir komutla başlayacak ve kısa sürede cevap verecekse **servis** daha uygundur. Uzun süren, geri bildirim ve iptal gerektiren navigasyon görevlerinde ise ROS 2’nin **action** yapısı tercih edilir.
 
 Özetle düğümler robotun uzman çalışanları, konular ortak anons sistemi, servisler ise danışma masasıdır. Bu ayrımı doğru kurmak; ölçeklenebilir, test edilebilir ve parçaları yeniden kullanılabilir robot yazılımlarının temelini oluşturur.
+
+![ros-mimarisine-giris-40](/img/ros-mimarisine-giris-40.svg)
+

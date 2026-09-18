@@ -12,6 +12,7 @@ tags:
   - replikasyon
   - algoritma
 toc: true
+image: /img/raft-konsensus-algoritmasi-49.png
 ---
 
 Bir dağıtık sistemde sunucuların aynı karar üzerinde anlaşmasını sağlamak, kalabalık bir arkadaş grubuyla nerede yemek yeneceğine karar vermeye benzer: herkes konuşursa gürültü çıkar, kimse konuşmazsa aç kalınır. Raft konsensüs algoritması bu sorunu anlaşılır bir liderlik modeliyle çözer. Sunuculardan biri lider olur, diğerleri onu takip eder ve lider ortadan kaybolursa sistem demokratik sayılabilecek yeni bir seçim başlatır.
@@ -90,3 +91,6 @@ Bu örnekte kalp atışı bekleme süresi eşiği aşarsa düğüm aday olur. Ar
 Ağ iki parçaya ayrıldığında yalnızca çoğunluğa ulaşabilen taraf yeni lider seçebilir. Eski lider azınlık tarafında kalırsa komutları kalıcı hâle getiremez. Bağlantı düzeldiğinde daha yüksek term değerini görür, takipçiye dönüşür ve günlüğünü geçerli liderle eşitler.
 
 Raft’ın gücü yalnızca lider seçmesinde değil, seçimi günlük tutarlılığıyla birleştirmesindedir. Çoğunluk kuralı, term numaraları ve rastgele zaman aşımı birlikte çalışarak sistemin tek bir karar çizgisinde ilerlemesini sağlar. Kısacası Raft, dağıtık sistemlerin kaotik toplantısını gündemi belli, oylaması düzenli ve gerektiğinde başkanı değişebilen bir kurula dönüştürür.
+
+![raft-konsensus-algoritmasi-49](/img/raft-konsensus-algoritmasi-49.svg)
+

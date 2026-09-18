@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cfe5f3"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7590a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#8096a5" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="161" r="125" fill="#dceef0" opacity="0.32"/>
+  <circle cx="319" cy="161" r="96" fill="none" stroke="#bddbe0" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7b" font-weight="600">Sensör Füzyonu</text>
+  <text x="510" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7b" font-weight="600">Güvenilir Konum</text>
+
+  <path d="M152 75 C191 75 203 103 234 119" fill="none" stroke="#92aebb" stroke-width="2"/>
+  <polygon points="234,119 225,113 227,123" fill="#92aebb"/>
+  <path d="M152 142 C185 142 205 146 232 151" fill="none" stroke="#92aebb" stroke-width="2"/>
+  <polygon points="232,151 223,145 224,155" fill="#92aebb"/>
+  <path d="M152 210 C190 210 206 186 234 174" fill="none" stroke="#92aebb" stroke-width="2"/>
+  <polygon points="234,174 224,172 229,181" fill="#92aebb"/>
+  <path d="M405 160 C438 160 455 160 482 160" fill="none" stroke="#668fa2" stroke-width="2.5"/>
+  <polygon points="482,160 472,154 472,166" fill="#668fa2"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="27" y="51" width="125" height="48" rx="15" fill="#fff4da"/>
+    <circle cx="51" cy="75" r="13" fill="#f4c978"/>
+    <path d="M44 77 L48 71 L53 75 L58 68" fill="none" stroke="#8c6535" stroke-width="1.8"/>
+    <text x="72" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5f66" font-weight="600">GPS</text>
+    <text x="72" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b8990">Mutlak konum</text>
+
+    <rect x="27" y="118" width="125" height="48" rx="15" fill="#e5f4e3"/>
+    <circle cx="51" cy="142" r="13" fill="#9fd29b"/>
+    <path d="M43 142 C46 134 49 150 52 142 S58 134 60 142" fill="none" stroke="#477b58" stroke-width="1.8"/>
+    <text x="72" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5f66" font-weight="600">İvmeölçer</text>
+    <text x="72" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b8990">Hızlı hareket</text>
+
+    <rect x="27" y="186" width="125" height="48" rx="15" fill="#eee8fb"/>
+    <circle cx="51" cy="210" r="13" fill="#bea9e6"/>
+    <path d="M45 214 A8 8 0 1 1 57 213" fill="none" stroke="#69538d" stroke-width="1.8"/>
+    <polygon points="59,209 56,216 52,211" fill="#69538d"/>
+    <text x="72" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5f66" font-weight="600">Jiroskop</text>
+    <text x="72" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b8990">Yönelim</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="235" y="99" width="170" height="123" rx="28" fill="url(#core)" stroke="#aecdda"/>
+    <circle cx="320" cy="137" r="27" fill="#f8fcff" stroke="#a5c5d5"/>
+    <path d="M305 137 L315 145 L335 126" fill="none" stroke="#4c91a8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="320" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365b6c" font-weight="700">Kalman Filtresi</text>
+    <text x="320" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64808d">Tahmin  •  Ölçüm  •  Düzelt</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="470" y="102" width="142" height="116" rx="20" fill="#ffffff" stroke="#c8dde2"/>
+    <path d="M493 180 C512 158 527 175 544 146 C557 124 577 145 592 119" fill="none" stroke="#77a8a2" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="493" cy="180" r="4" fill="#77a8a2"/>
+    <circle cx="544" cy="146" r="4" fill="#77a8a2"/>
+    <circle cx="592" cy="119" r="4" fill="#77a8a2"/>
+    <text x="541" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426873" font-weight="700">Konum Kestirimi</text>
+  </g>
+
+  <g>
+    <rect x="225" y="258" width="190" height="34" rx="14" fill="#eef5f5" stroke="#d3e3e2"/>
+    <circle cx="247" cy="275" r="6" fill="#82b6af"/>
+    <text x="261" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58717a">Belirsizlik: P, Q ve R</text>
+    <path d="M320 222 L320 250" fill="none" stroke="#9cbec3" stroke-width="1.7"/>
+    <polygon points="320,250 315,241 325,241" fill="#9cbec3"/>
+  </g>
+</svg>

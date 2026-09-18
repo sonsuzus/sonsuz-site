@@ -12,9 +12,13 @@ tags:
   - sensör füzyonu
   - otonom sistemler
 toc: true
+image: /img/slam-temelleri-robotlar-24.png
 ---
 
 Bir robotu daha önce hiç görmediği bir odaya bıraktığımızı düşünelim. Elinde mimari plan, GPS veya duvarların nerede olduğunu söyleyen sihirli bir pusula yok. Buna rağmen hem nerede bulunduğunu anlaması hem de çevresinin haritasını çıkarması gerekiyor. İşte **SLAM** (Simultaneous Localization and Mapping), yani *Eş Zamanlı Konumlandırma ve Haritalama*, bu tavuk-yumurta problemini çözmeye çalışır.
+
+
+![slam-temelleri-robotlar-24](/img/slam-temelleri-robotlar-24.svg)
 
 ``
 

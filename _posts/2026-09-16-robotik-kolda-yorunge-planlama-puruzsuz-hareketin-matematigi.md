@@ -11,7 +11,11 @@ tags:
   - python
   - otomasyon
 toc: true
+image: /img/robotik-kolda-yorunge-60.png
 ---
+
+![robotik-kolda-yorunge-60](/img/robotik-kolda-yorunge-60.svg)
+
 
 Bir robot kolun kahveyi dökmeden fincanı taşıması, yalnızca başlangıç ve bitiş noktalarını bilmesiyle mümkün değildir. Motorların ne zaman hızlanacağı, nerede yavaşlayacağı ve eklemlerin birbiriyle nasıl uyum sağlayacağı da hesaplanmalıdır. İşte yörünge planlama, robotun A noktasından B noktasına giderken izleyeceği hareketi zamana bağlı ve pürüzsüz biçimde tasarlar.
 

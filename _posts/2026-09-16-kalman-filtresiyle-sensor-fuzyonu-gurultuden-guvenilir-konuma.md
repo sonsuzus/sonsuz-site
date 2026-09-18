@@ -12,6 +12,7 @@ tags:
   - imu
   - gps
 toc: true
+image: /img/kalman-filtresiyle-sensor-79.png
 ---
 
 Bir robotun GPS verisi bir sağa bir sola sıçrarken ivmeölçeri en küçük titreşimi bile hareket sanabilir. Peki telefonlar, dronlar ve otonom araçlar bu karmaşadan nasıl düzgün bir konum çıkarır? Cevap çoğu zaman Kalman filtresidir: Ölçümlere körü körüne inanmak yerine model ile sensörler arasında matematiksel bir güven pazarlığı yapan akıllı bir tahmin mekanizması.
@@ -46,6 +47,9 @@ Her sensörün farklı bir süper gücü ve zayıflığı vardır:
 | İvmeölçer | Hızlı tepki verir | Sapma zamanla büyür | Kısa süreli hareketi izler |
 | Jiroskop | Dönüşleri hassas ölçer | Drift üretir | Yönelim değişimini yakalar |
 | Enkoder | Tekerlek hareketini ölçer | Kaymada yanılır | Yerel hareket tahmini sağlar |
+
+![kalman-filtresiyle-sensor-79](/img/kalman-filtresiyle-sensor-79.svg)
+
 
 Kalman filtresi hızlı sensörlerle sık tahmin yapıp GPS gibi mutlak ölçümler geldiğinde sonucu düzeltir. Böylece GPS’in sıçramaları yumuşatılırken yalnızca IMU kullanmanın oluşturacağı sürüklenme de sınırlandırılır.
 

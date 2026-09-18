@@ -12,6 +12,7 @@ tags:
   - algoritma
   - hata-toleransı
 toc: true
+image: /img/paxosun-karmasikligi-rafttan-63.png
 ---
 
 Dağıtık sistemlerde birkaç sunucunun aynı gerçek üzerinde anlaşmasını sağlamak, dışarıdan bakıldığında basit bir oylama problemi gibi görünür. Fakat mesajlar gecikebilir, makineler çökebilir ve ağ ikiye bölünebilir. Paxos, bu kaos içinde güvenli biçimde karar vermeyi sağlayan en önemli konsensüs algoritmalarından biridir; aynı zamanda ünü kadar korkutucu notasyonuyla da geliştiricilerin rüyalarına girer.
@@ -41,6 +42,9 @@ Paxos aynı düğüm üzerinde çalışabilen üç mantıksal rol tanımlar:
 | Proposer | Bir değer önerir | Teklif veren milletvekili |
 | Acceptor | Tekliflere söz verir ve oy verir | Seçmen |
 | Learner | Seçilen sonucu öğrenir | Sonucu izleyen vatandaş |
+
+![paxosun-karmasikligi-rafttan-63](/img/paxosun-karmasikligi-rafttan-63.svg)
+
 
 Algoritmanın kalbinde monoton artan **öneri numarası** bulunur. Her öneri $(n, v)$ biçimindedir; burada $n$ benzersiz numara, $v$ ise önerilen değerdir.
 

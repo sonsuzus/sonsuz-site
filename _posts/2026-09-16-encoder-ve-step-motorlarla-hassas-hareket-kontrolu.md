@@ -12,6 +12,7 @@ tags:
   - hareket-kontrolü
   - otomasyon
 toc: true
+image: /img/encoder-ve-step-20.png
 ---
 
 Step motorlar komutları adım adım uygulayan disiplinli çalışanlara benzer; encoderlar ise işin gerçekten yapılıp yapılmadığını denetleyen dikkatli yöneticilerdir. Bu ikili doğru bir kontrol algoritmasıyla birleştirildiğinde CNC tezgâhlarından robot kollarına kadar pek çok sistemde hassas, tekrarlanabilir ve güvenilir hareket elde edilir. Gelin açık çevrim rahatlığından kapalı çevrim hassasiyetine uzanan bu mekanik yolculuğa çıkalım.
@@ -53,6 +54,9 @@ formülüyle bulunur. Burada $C$, sayılan encoder kenarıdır.
 | Yazılım karmaşıklığı | Düşük | Orta veya yüksek |
 | Yük değişimine dayanım | Sınırlı | Daha güçlü |
 | Kalibrasyon ihtiyacı | Az | Daha fazla |
+
+![encoder-ve-step-20](/img/encoder-ve-step-20.svg)
+
 
 ## Kapalı çevrim kontrol
 

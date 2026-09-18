@@ -12,9 +12,13 @@ tags:
   - python
   - pid kontrol
 toc: true
+image: /img/kamera-robotun-gozu-18.png
 ---
 
 Bir robotun hareket eden topu izlemesi, raftaki kutuya yönelmesi veya sahibini takip etmesi dışarıdan sihirli görünebilir. Oysa perde arkasında kamera görüntülerini sayılara dönüştüren bilgisayarlı görü, hedefin konumunu tahmin eden algoritmalar ve motorlara komut veren kontrol mekanizmaları birlikte çalışır. Kamera robotun gözü ise nesne takip sistemi de dikkatini nereye yönelteceğine karar veren beynidir.
+
+
+![kamera-robotun-gozu-18](/img/kamera-robotun-gozu-18.svg)
 
 ``
 

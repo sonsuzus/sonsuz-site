@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfeaff"/>
+      <stop offset="100%" stop-color="#cbdcff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#65758c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#65758c" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="157" r="112" fill="#dcecf4" opacity="0.38"/>
+  <circle cx="320" cy="157" r="83" fill="#edf6fa" opacity="0.8"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506177" font-weight="600">ROS 2 HESAPLAMA GRAFİĞİ</text>
+  <path d="M28 39 H145" stroke="#a9bfd0" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- connection lines -->
+  <path d="M151 115 C190 115 199 132 232 139" fill="none" stroke="#5d9fc0" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="232,139 222,134 224,144" fill="#5d9fc0"/>
+  <path d="M151 194 C188 194 200 177 231 171" fill="none" stroke="#77a77b" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="231,171 222,167 224,177" fill="#77a77b"/>
+
+  <path d="M408 146 C435 136 446 115 479 111" fill="none" stroke="#5d9fc0" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="479,111 469,107 471,117" fill="#5d9fc0"/>
+  <path d="M408 169 C438 179 446 198 479 201" fill="none" stroke="#d39462" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="479,201 470,196 470,206" fill="#d39462"/>
+
+  <!-- topic flow -->
+  <path d="M154 247 H459" fill="none" stroke="#9a7ac3" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <polygon points="459,247 450,242 450,252" fill="#9a7ac3"/>
+  <rect x="245" y="233" width="152" height="27" rx="13" fill="#f4edff" stroke="#d6c5ee"/>
+  <text x="321" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70538f">Konu: /tarama_verisi</text>
+
+  <!-- service request response -->
+  <path d="M166 278 C245 301 392 301 467 278" fill="none" stroke="#d39462" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="467,278 458,274 459,283" fill="#d39462"/>
+  <path d="M467 286 C390 310 242 310 166 286" fill="none" stroke="#d39462" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+  <polygon points="166,286 174,282 173,291" fill="#d39462"/>
+
+  <!-- left nodes -->
+  <g filter="url(#soft)">
+    <rect x="32" y="81" width="120" height="68" rx="17" fill="#e1f2fb"/>
+    <rect x="42" y="91" width="27" height="27" rx="9" fill="#b9dff0"/>
+    <circle cx="55.5" cy="104.5" r="6" fill="none" stroke="#4c91b2" stroke-width="2"/>
+    <circle cx="55.5" cy="104.5" r="2" fill="#4c91b2"/>
+    <text x="80" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31576d" font-weight="600">Kamera</text>
+    <text x="80" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">Düğümü</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="32" y="160" width="120" height="68" rx="17" fill="#e4f4e6"/>
+    <rect x="42" y="170" width="27" height="27" rx="9" fill="#c3e2c8"/>
+    <path d="M48 188 Q55 175 63 188" fill="none" stroke="#609767" stroke-width="2"/>
+    <path d="M48 182 Q55 171 63 182" fill="none" stroke="#609767" stroke-width="2"/>
+    <text x="80" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6843" font-weight="600">LIDAR</text>
+    <text x="80" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66806a">Düğümü</text>
+  </g>
+
+  <!-- center ROS -->
+  <g filter="url(#shadow)">
+    <rect x="231" y="104" width="178" height="84" rx="24" fill="url(#core)" stroke="#b6cbeb"/>
+    <circle cx="320" cy="130" r="18" fill="#8ba9de"/>
+    <circle cx="320" cy="130" r="8" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M307 140 L296 151 M333 140 L344 151" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="320" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385784" font-weight="700">ROS 2</text>
+    <text x="320" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59739a">Keşif ve iletişim</text>
+  </g>
+
+  <!-- right nodes -->
+  <g filter="url(#soft)">
+    <rect x="479" y="80" width="129" height="68" rx="17" fill="#e7f1fc"/>
+    <rect x="489" y="90" width="27" height="27" rx="9" fill="#c5ddf5"/>
+    <path d="M495 108 L501 102 L506 106 L511 99" fill="none" stroke="#4e82b5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355b80" font-weight="600">Algılama</text>
+    <text x="526" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">Düğümü</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="479" y="169" width="129" height="68" rx="17" fill="#fff0e5"/>
+    <rect x="489" y="179" width="27" height="27" rx="9" fill="#f5d4b8"/>
+    <path d="M496 198 H510 M499 193 V203 M507 193 V203" stroke="#b87040" stroke-width="2" stroke-linecap="round"/>
+    <text x="526" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81502e" font-weight="600">Motor</text>
+    <text x="526" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c765c">Düğümü</text>
+  </g>
+
+  <!-- bottom legend -->
+  <g filter="url(#soft)">
+    <rect x="32" y="265" width="134" height="38" rx="14" fill="#fff1e6"/>
+    <text x="99" y="281" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#87532d" font-weight="600">İstemci</text>
+    <text x="99" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a0785b">Sıfırla isteği</text>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="467" y="265" width="141" height="38" rx="14" fill="#fff1e6"/>
+    <text x="537" y="281" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#87532d" font-weight="600">Servis Sunucusu</text>
+    <text x="537" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a0785b">Yanıt</text>
+  </g>
+</svg>

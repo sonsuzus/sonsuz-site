@@ -12,6 +12,7 @@ tags:
   - python
   - algoritma
 toc: true
+image: /img/suru-robotigi-basit-44.png
 ---
 
 Bir karınca tek başına yol planlama konusunda pek etkileyici görünmeyebilir; ancak binlerce karınca birlikte yiyeceğe giden verimli yollar oluşturabilir. Sürü robotiği de benzer bir fikirden beslenir: Çok sayıda görece basit robot, merkezi bir yönetici olmadan etkileşime girerek karmaşık görevleri tamamlar. İşin büyüsü, kolektif zekânın robotlara ayrı ayrı programlanmaması; yerel kuralların etkileşiminden kendiliğinden ortaya çıkmasıdır.
@@ -31,6 +32,9 @@ Bu yapıya **beliren davranış** denir. Kuş sürülerinin aynı anda yön değ
 | Ölçeklenebilirlik | Yönetimi zorlaşabilir | Yeni robot eklemek kolaydır |
 | Robot karmaşıklığı | Yüksek olabilir | Görece düşüktür |
 | İletişim | Küresel bilgi gerekebilir | Yerel bilgi çoğu zaman yeterlidir |
+
+![suru-robotigi-basit-44](/img/suru-robotigi-basit-44.svg)
+
 
 ## Üç basit kural
 

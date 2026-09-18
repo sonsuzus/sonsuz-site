@@ -12,9 +12,13 @@ tags:
   - simülasyon
   - kinematik
 toc: true
+image: /img/ters-kinematik-robot-91.png
 ---
 
 Bir robot koluna “şu noktaya uzan” demek kolaydır; asıl mesele, motorların bunu gerçekleştirmek için kaç derece dönmesi gerektiğini bulmaktır. Ters kinematik, hedef konumdan yola çıkarak eklem açılarını hesaplayan yöntemlerin genel adıdır. Endüstriyel robotlardan oyun karakterlerine kadar uzanan bu konu, geometri ile programlamanın keyifli bir buluşmasıdır.
+
+![ters-kinematik-robot-91](/img/ters-kinematik-robot-91.svg)
+
 ``
 ## İleri ve ters kinematik farkı
 

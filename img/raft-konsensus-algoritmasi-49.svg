@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="leader" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7367d9"/>
+      <stop offset="100%" stop-color="#9188ea"/>
+    </linearGradient>
+    <linearGradient id="candidate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#efa96d"/>
+      <stop offset="100%" stop-color="#f4c58f"/>
+    </linearGradient>
+    <linearGradient id="follower" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7cbbae"/>
+      <stop offset="100%" stop-color="#a2d7c7"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#45627c" flood-opacity="0.16"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#45627c" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="40" r="92" fill="#cce7f2" opacity="0.28"/>
+  <circle cx="575" cy="283" r="110" fill="#d8efd1" opacity="0.38"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395168">Raft Konsensüsü</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718596">Seçim, çoğunluk ve günlük çoğaltma</text>
+
+  <rect x="28" y="77" width="142" height="183" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="48" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#506778">Seçim döngüsü</text>
+
+  <rect x="47" y="122" width="104" height="35" rx="11" fill="#dff1eb"/>
+  <circle cx="65" cy="139.5" r="8" fill="#70ae9f"/>
+  <text x="79" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365f59">Takipçi</text>
+
+  <path d="M99 160 L99 176" stroke="#91a8b7" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="94,173 104,173 99,180" fill="#91a8b7"/>
+
+  <rect x="47" y="183" width="104" height="35" rx="11" fill="#ffead8"/>
+  <circle cx="65" cy="200.5" r="8" fill="#ebaa68"/>
+  <text x="79" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805123">Aday</text>
+
+  <path d="M99 221 L99 237" stroke="#91a8b7" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="94,234 104,234 99,241" fill="#91a8b7"/>
+
+  <rect x="47" y="244" width="104" height="35" rx="11" fill="#e9e5ff"/>
+  <circle cx="65" cy="261.5" r="8" fill="#7367d9"/>
+  <text x="79" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51499a">Lider</text>
+
+  <text x="177" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718596">zaman aşımı</text>
+  <path d="M170 151 C192 151 187 191 202 191" fill="none" stroke="#d38f55" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="198,186 208,191 198,196" fill="#d38f55"/>
+
+  <rect x="214" y="151" width="112" height="79" rx="18" fill="url(#candidate)" filter="url(#shadow)"/>
+  <circle cx="242" cy="181" r="16" fill="#ffffff" opacity="0.92"/>
+  <circle cx="242" cy="177" r="5" fill="#df9658"/>
+  <path d="M233 192 C234 184 250 184 251 192" fill="none" stroke="#df9658" stroke-width="3" stroke-linecap="round"/>
+  <text x="267" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Aday</text>
+  <text x="267" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fffaf4">Term +1</text>
+  <text x="267" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fffaf4">Oy ister</text>
+
+  <path d="M331 179 L366 132" fill="none" stroke="#859dad" stroke-width="2"/>
+  <polygon points="361,133 370,126 368,137" fill="#859dad"/>
+  <path d="M331 189 L374 189" fill="none" stroke="#859dad" stroke-width="2"/>
+  <polygon points="370,184 380,189 370,194" fill="#859dad"/>
+  <path d="M331 199 L366 247" fill="none" stroke="#859dad" stroke-width="2"/>
+  <polygon points="361,242 370,253 359,248" fill="#859dad"/>
+
+  <rect x="381" y="94" width="101" height="65" rx="15" fill="url(#follower)" filter="url(#smallShadow)"/>
+  <circle cx="404" cy="122" r="12" fill="#ffffff" opacity="0.9"/>
+  <text x="424" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Takipçi</text>
+  <text x="424" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f5fffb">Oy</text>
+
+  <rect x="393" y="158" width="101" height="65" rx="15" fill="url(#follower)" filter="url(#smallShadow)"/>
+  <circle cx="416" cy="186" r="12" fill="#ffffff" opacity="0.9"/>
+  <text x="436" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Takipçi</text>
+  <text x="436" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f5fffb">Oy</text>
+
+  <rect x="381" y="222" width="101" height="65" rx="15" fill="url(#follower)" filter="url(#smallShadow)"/>
+  <circle cx="404" cy="250" r="12" fill="#ffffff" opacity="0.9"/>
+  <text x="424" y="247" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Takipçi</text>
+  <text x="424" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f5fffb">Oy</text>
+
+  <path d="M496 190 L523 190" stroke="#627e96" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="519,184 530,190 519,196" fill="#627e96"/>
+  <rect x="531" y="151" width="82" height="79" rx="18" fill="url(#leader)" filter="url(#shadow)"/>
+  <path d="M556 179 L572 179 M556 187 L582 187 M556 195 L576 195" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.92"/>
+  <text x="548" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Lider</text>
+
+  <path d="M572 146 C563 103 523 77 474 74" fill="none" stroke="#7367d9" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="478,69 467,73 476,80" fill="#7367d9"/>
+  <text x="493" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655caf">Kalp atışı</text>
+
+  <path d="M571 234 C559 258 528 270 490 270" fill="none" stroke="#7367d9" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="494,265 483,270 494,275" fill="#7367d9"/>
+  <text x="500" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#655caf">Günlük kopyası</text>
+
+  <rect x="212" y="260" width="142" height="35" rx="12" fill="#ffffff" opacity="0.9" filter="url(#smallShadow)"/>
+  <circle cx="232" cy="277.5" r="9" fill="#8a80df"/>
+  <path d="M228 277.5 L231 281 L237 274" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="248" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526a7b">Çoğunluk: 3 / 5</text>
+</svg>
