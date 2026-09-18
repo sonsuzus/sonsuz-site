@@ -11,9 +11,13 @@ tags:
   - eventual-consistency
   - javascript
 toc: true
+image: /img/crdtler-dagitik-sistemlerde-99.png
 ---
 
 İki kullanıcının çevrimdışı çalışırken aynı belgeyi değiştirdiğini düşünün. İnternet geri geldiğinde hangi sürüm kazanmalı? Birini seçmek veri kaybına, her değişikliği sırayla işlemek ise koordinasyon maliyetine yol açabilir. **CRDT** (Conflict-free Replicated Data Type), farklı kopyalarda yapılan eş zamanlı değişikliklerin merkezi bir hakeme ihtiyaç duymadan güvenli biçimde birleştirilmesini sağlayan veri yapıları ailesidir.
+
+
+![crdtler-dagitik-sistemlerde-99](/img/crdtler-dagitik-sistemlerde-99.svg)
 
 ``
 

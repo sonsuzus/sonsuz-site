@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#c9e4fc"/>
+    </linearGradient>
+    <filter id="golge" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#59748a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#59748a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="320" cy="161" r="116" fill="#d9f0e7" opacity="0.36"/>
+  <circle cx="320" cy="161" r="88" fill="none" stroke="#a9d7c7" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.75"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38576c">ÇAKIŞMASIZ BİRLEŞTİRME</text>
+  <text x="612" y="31" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#648091">CRDT</text>
+
+  <!-- Bağlantılar -->
+  <path d="M174 91 C208 97,222 112,251 130" fill="none" stroke="#83aabe" stroke-width="2.2"/>
+  <polygon points="251,130 241,129 246,121" fill="#83aabe"/>
+  <path d="M174 226 C208 219,223 203,251 187" fill="none" stroke="#83aabe" stroke-width="2.2"/>
+  <polygon points="251,187 246,196 241,187" fill="#83aabe"/>
+  <path d="M466 91 C432 98,418 112,389 130" fill="none" stroke="#83aabe" stroke-width="2.2"/>
+  <polygon points="389,130 394,121 399,129" fill="#83aabe"/>
+  <path d="M466 226 C432 219,417 203,389 187" fill="none" stroke="#83aabe" stroke-width="2.2"/>
+  <polygon points="389,187 399,187 394,196" fill="#83aabe"/>
+
+  <!-- Sol üst replika -->
+  <g filter="url(#golge)">
+    <rect x="40" y="56" width="135" height="70" rx="16" fill="#fffdf9"/>
+    <rect x="40" y="56" width="135" height="25" rx="16" fill="#f8dba9"/>
+    <rect x="40" y="70" width="135" height="11" fill="#f8dba9"/>
+  </g>
+  <circle cx="62" cy="68" r="5" fill="#e69262"/>
+  <text x="76" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765430">Replika A</text>
+  <text x="59" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506778">Yerel artış</text>
+  <rect x="137" y="92" width="22" height="20" rx="6" fill="#fff0d8"/>
+  <text x="148" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b87838">+2</text>
+
+  <!-- Sol alt replika -->
+  <g filter="url(#golge)">
+    <rect x="40" y="194" width="135" height="70" rx="16" fill="#fffdfd"/>
+    <rect x="40" y="194" width="135" height="25" rx="16" fill="#d8c9f1"/>
+    <rect x="40" y="208" width="135" height="11" fill="#d8c9f1"/>
+  </g>
+  <circle cx="62" cy="206" r="5" fill="#9074c2"/>
+  <text x="76" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#594878">Replika B</text>
+  <text x="59" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506778">Çevrimdışı</text>
+  <rect x="137" y="230" width="22" height="20" rx="6" fill="#eee8fa"/>
+  <text x="148" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7658a5">+3</text>
+
+  <!-- Merkez CRDT -->
+  <g filter="url(#golge)">
+    <rect x="250" y="111" width="140" height="101" rx="23" fill="url(#merkez)" stroke="#a2cae2" stroke-width="1.2"/>
+  </g>
+  <circle cx="320" cy="145" r="22" fill="#ffffff" opacity="0.72"/>
+  <path d="M307 145 C307 137,313 133,320 138 C327 133,333 137,333 145 C333 153,320 160,320 160 C320 160,307 153,307 145Z" fill="#5b9bc0"/>
+  <text x="320" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d78">CRDT Birleştirici</text>
+  <text x="320" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50738a">maksimum hücre</text>
+
+  <!-- Sağ üst sonuç -->
+  <g filter="url(#golge)">
+    <rect x="465" y="56" width="135" height="70" rx="16" fill="#fcfffd"/>
+    <rect x="465" y="56" width="135" height="25" rx="16" fill="#bae4ce"/>
+    <rect x="465" y="70" width="135" height="11" fill="#bae4ce"/>
+  </g>
+  <circle cx="487" cy="68" r="5" fill="#4baf82"/>
+  <text x="501" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35684f">Replika C</text>
+  <text x="484" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506778">Durum paylaşımı</text>
+  <path d="M570 97 l5 5 l10 -12" fill="none" stroke="#48a878" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Sağ alt sonuç -->
+  <g filter="url(#golge)">
+    <rect x="465" y="194" width="135" height="70" rx="16" fill="#fcfffd"/>
+    <rect x="465" y="194" width="135" height="25" rx="16" fill="#bcdff0"/>
+    <rect x="465" y="208" width="135" height="11" fill="#bcdff0"/>
+  </g>
+  <circle cx="487" cy="206" r="5" fill="#5199bd"/>
+  <text x="501" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33657d">Replika D</text>
+  <text x="484" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506778">İşlem paylaşımı</text>
+  <path d="M570 235 l5 5 l10 -12" fill="none" stroke="#4b96bc" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Alt özellik şeridi -->
+  <g filter="url(#hafifGolge)">
+    <rect x="178" y="276" width="284" height="29" rx="14.5" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <circle cx="202" cy="290.5" r="5" fill="#72bb9a"/>
+  <text x="213" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476776">Sıra bağımsız</text>
+  <line x1="292" y1="283" x2="292" y2="298" stroke="#d4e3e8"/>
+  <circle cx="313" cy="290.5" r="5" fill="#7fa9d6"/>
+  <text x="324" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476776">Tekrara dayanıklı</text>
+  <line x1="423" y1="283" x2="423" y2="298" stroke="#d4e3e8"/>
+  <path d="M440 290 l4 4 l8 -9" fill="none" stroke="#62ad83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="455" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476776">Yakınsama</text>
+</svg>

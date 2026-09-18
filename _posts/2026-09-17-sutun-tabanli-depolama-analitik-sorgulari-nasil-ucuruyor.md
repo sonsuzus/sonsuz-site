@@ -12,9 +12,13 @@ tags:
   - performans
   - veri-mühendisliği
 toc: true
+image: /img/sutun-tabanli-depolama-60.png
 ---
 
 Bir milyar satış kaydının yalnızca toplam gelirini hesaplamak istediğinizi düşünün. Satır tabanlı bir sistem her kaydın ürün, müşteri, adres ve açıklama gibi ilgisiz alanlarını da okuyabilir. Sütun tabanlı depolama ise doğrudan `gelir` sütununa gider. Analitik sorguların göz açıp kapayıncaya kadar bitmesinin temelinde bu seçicilik yatar.
+
+![sutun-tabanli-depolama-60](/img/sutun-tabanli-depolama-60.svg)
+
 ``
 ## Satırlar yerine sütunlar yan yana
 

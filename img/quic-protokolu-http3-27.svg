@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="tcpGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe9e5"/>
+      <stop offset="100%" stop-color="#fff7f2"/>
+    </linearGradient>
+    <linearGradient id="quicGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2f5ee"/>
+      <stop offset="100%" stop-color="#f3fcf8"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dfeaff"/>
+      <stop offset="100%" stop-color="#e9e2fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#70839a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#638095" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="60" cy="42" r="82" fill="#dceeff" opacity="0.42"/>
+  <circle cx="592" cy="278" r="100" fill="#dff3d9" opacity="0.4"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556d">WEB TAŞIMA KATMANI</text>
+
+  <g filter="url(#shadow)">
+    <rect x="238" y="47" width="164" height="62" rx="20" fill="url(#coreGrad)" stroke="#bdccef"/>
+    <circle cx="270" cy="78" r="16" fill="#ffffff" opacity="0.78"/>
+    <path d="M262 78h16M270 70v16" fill="none" stroke="#6d83bb" stroke-width="2" stroke-linecap="round"/>
+    <text x="330" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e5281">Tarayıcı</text>
+    <text x="330" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657596">HTTP İstekleri</text>
+  </g>
+
+  <path d="M284 111 C239 125 184 127 142 143" fill="none" stroke="#d48b7b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="143,138 130,147 146,150" fill="#d48b7b"/>
+  <path d="M356 111 C400 125 455 127 498 143" fill="none" stroke="#5ca88b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="497,138 510,147 494,150" fill="#5ca88b"/>
+
+  <g filter="url(#shadow)">
+    <rect x="39" y="140" width="216" height="139" rx="20" fill="url(#tcpGrad)" stroke="#efc3ba"/>
+    <rect x="59" y="157" width="176" height="27" rx="10" fill="#f7b8aa"/>
+    <text x="147" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7d413b">TCP + HTTP/2</text>
+
+    <g filter="url(#softShadow)">
+      <rect x="59" y="198" width="52" height="47" rx="10" fill="#ffffff"/>
+      <rect x="121" y="198" width="52" height="47" rx="10" fill="#ffffff"/>
+      <rect x="183" y="198" width="52" height="47" rx="10" fill="#ffffff"/>
+    </g>
+    <text x="85" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#715c60">Akış A</text>
+    <text x="147" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#715c60">Akış B</text>
+    <text x="209" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#715c60">Akış C</text>
+    <path d="M82 234h6M144 234h6M206 234h6" stroke="#c75d57" stroke-width="3" stroke-linecap="round"/>
+    <text x="147" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#a14f49">Kayıp: tüm akışlar bekler</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="385" y="140" width="216" height="139" rx="20" fill="url(#quicGrad)" stroke="#b7dfcf"/>
+    <rect x="405" y="157" width="176" height="27" rx="10" fill="#9edbbf"/>
+    <text x="493" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245f52">QUIC + HTTP/3</text>
+
+    <g filter="url(#softShadow)">
+      <rect x="405" y="198" width="52" height="47" rx="10" fill="#ffffff"/>
+      <rect x="467" y="198" width="52" height="47" rx="10" fill="#ffffff"/>
+      <rect x="529" y="198" width="52" height="47" rx="10" fill="#ffffff"/>
+    </g>
+    <text x="431" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d67">Akış A</text>
+    <text x="493" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d67">Akış B</text>
+    <text x="555" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d67">Akış C</text>
+    <path d="M428 234h6" stroke="#d76862" stroke-width="3" stroke-linecap="round"/>
+    <path d="M490 234h6M552 234h6" stroke="#49a781" stroke-width="3" stroke-linecap="round"/>
+    <text x="493" y="266" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#287660">Kayıp: yalnız ilgili akış</text>
+  </g>
+
+  <path d="M255 210 H376" fill="none" stroke="#b5c4cc" stroke-width="2" stroke-dasharray="4 5"/>
+  <polygon points="371,205 381,210 371,215" fill="#8ea2ad"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="184" y="289" width="272" height="24" rx="12" fill="#ffffff" stroke="#d7e2e6"/>
+    <circle cx="202" cy="301" r="5" fill="#68b79a"/>
+    <text x="216" y="305" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526876">UDP üzerinde • TLS 1.3 • 0-RTT / 1-RTT • Bağlantı Kimliği</text>
+  </g>
+</svg>

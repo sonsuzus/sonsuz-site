@@ -12,7 +12,11 @@ tags:
   - postgresql
   - transaction
 toc: true
+image: /img/mvcc-mantigi-veritabaninda-11.png
 ---
+
+![mvcc-mantigi-veritabaninda-11](/img/mvcc-mantigi-veritabaninda-11.svg)
+
 
 Bir veritabanında aynı anda yüzlerce kullanıcı okuma ve yazma işlemi yaptığında işler kolayca trafik kavgasına dönüşebilir. MVCC, yani Çoklu Sürüm Eşzamanlılık Kontrolü, bu trafiği herkesi tek şeride sokmadan yönetir. Temel fikir şaşırtıcı derecede eğlencelidir: Bir satır değiştirildiğinde eski hâlini hemen yok etmek yerine farklı sürümler saklanır. Böylece okuyucular geçmişteki tutarlı görüntüyü incelerken yazarlar yeni sürüm üzerinde çalışabilir.
 

@@ -12,6 +12,7 @@ tags:
   - sql
   - backend
 toc: true
+image: /img/veritabani-sharding-stratejileri-64.png
 ---
 
 Uygulamanız büyüdükçe tek bir veritabanı sunucusu; işlemci, bellek, disk ve bağlantı sınırlarına yaklaşır. Daha güçlü bir sunucuya geçmek dikey ölçekleme olarak adlandırılır, ancak bunun hem fiziksel hem de ekonomik bir tavanı vardır. **Sharding**, satırları birden fazla bağımsız veritabanına dağıtarak yatay ölçekleme sağlar. Kısacası dev bir dosya dolabını büyütmeye çalışmak yerine, belgeleri düzenli biçimde farklı dolaplara yerleştiririz.
@@ -34,6 +35,9 @@ Gerçek dünyada kullanıcı davranışları eşit olmadığı için bu formül 
 | Hash sharding | Anahtarın özeti | Dengeli dağılım sağlar | Aralık sorguları zorlaşır |
 | Directory sharding | Eşleme tablosu | Esnek yönlendirme sunar | Merkezi dizin bağımlılığı yaratır |
 | Coğrafi sharding | Bölge veya ülke | Düşük gecikme sağlar | Bölgeler arası işlemler karmaşıktır |
+
+![veritabani-sharding-stratejileri-64](/img/veritabani-sharding-stratejileri-64.svg)
+
 
 ## Yaygın stratejiler
 

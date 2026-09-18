@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="inputGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#c9e2f5"/>
+    </linearGradient>
+    <linearGradient id="mapGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff5e6"/>
+      <stop offset="100%" stop-color="#c6e8d3"/>
+    </linearGradient>
+    <linearGradient id="shuffleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0ca"/>
+      <stop offset="100%" stop-color="#f7ddb0"/>
+    </linearGradient>
+    <linearGradient id="reduceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eadfff"/>
+      <stop offset="100%" stop-color="#d8c7f4"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe1e5"/>
+      <stop offset="100%" stop-color="#f4c8d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7890a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#718391" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="46" cy="36" r="74" fill="#d7eff0" opacity="0.34"/>
+  <circle cx="601" cy="277" r="90" fill="#e7dcfa" opacity="0.32"/>
+  <path d="M28 72 C150 44 228 58 318 40 S494 39 612 75" fill="none" stroke="#b8d8d7" stroke-width="1.5" opacity="0.35"/>
+  <path d="M25 271 C144 245 231 273 336 251 S493 245 615 270" fill="none" stroke="#bdcfed" stroke-width="1.5" opacity="0.38"/>
+
+  <text x="32" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405568">MAPREDUCE AKIŞI</text>
+  <text x="32" y="45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718493">böl • paralel işle • birleştir</text>
+
+  <!-- Input -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="112" width="98" height="120" rx="18" fill="url(#inputGrad)" stroke="#b2d2e6"/>
+  </g>
+  <text x="79" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#32536b">Ham Veri</text>
+  <rect x="48" y="153" width="61" height="10" rx="5" fill="#91bdd7"/>
+  <rect x="48" y="171" width="48" height="10" rx="5" fill="#afd0e4"/>
+  <rect x="48" y="189" width="56" height="10" rx="5" fill="#82b2ce"/>
+  <rect x="48" y="207" width="39" height="8" rx="4" fill="#b6d9e9"/>
+
+  <!-- input arrows -->
+  <path d="M130 151 H149" fill="none" stroke="#7699aa" stroke-width="2"/>
+  <polygon points="155,151 147,146 147,156" fill="#7699aa"/>
+  <path d="M130 172 H149" fill="none" stroke="#7699aa" stroke-width="2"/>
+  <polygon points="155,172 147,167 147,177" fill="#7699aa"/>
+  <path d="M130 193 H149" fill="none" stroke="#7699aa" stroke-width="2"/>
+  <polygon points="155,193 147,188 147,198" fill="#7699aa"/>
+
+  <!-- map workers -->
+  <g filter="url(#shadow)">
+    <rect x="158" y="91" width="112" height="57" rx="15" fill="url(#mapGrad)" stroke="#abd6b9"/>
+    <rect x="158" y="160" width="112" height="57" rx="15" fill="url(#mapGrad)" stroke="#abd6b9"/>
+    <rect x="158" y="229" width="112" height="57" rx="15" fill="url(#mapGrad)" stroke="#abd6b9"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34644a">
+    <text x="181" y="119" font-weight="700">Map</text>
+    <text x="221" y="119">Düğüm 1</text>
+    <text x="181" y="188" font-weight="700">Map</text>
+    <text x="221" y="188">Düğüm 2</text>
+    <text x="181" y="257" font-weight="700">Map</text>
+    <text x="221" y="257">Düğüm 3</text>
+  </g>
+  <g fill="#70ad85">
+    <rect x="181" y="127" width="17" height="5" rx="2.5"/>
+    <rect x="202" y="127" width="25" height="5" rx="2.5"/>
+    <rect x="181" y="196" width="25" height="5" rx="2.5"/>
+    <rect x="210" y="196" width="17" height="5" rx="2.5"/>
+    <rect x="181" y="265" width="17" height="5" rx="2.5"/>
+    <rect x="202" y="265" width="25" height="5" rx="2.5"/>
+  </g>
+
+  <!-- arrows toward shuffle -->
+  <path d="M272 119 C287 119 289 145 299 151" fill="none" stroke="#7699aa" stroke-width="2"/>
+  <polygon points="305,154 297,146 295,156" fill="#7699aa"/>
+  <path d="M272 188 H299" fill="none" stroke="#7699aa" stroke-width="2"/>
+  <polygon points="305,188 297,183 297,193" fill="#7699aa"/>
+  <path d="M272 257 C287 257 289 231 299 225" fill="none" stroke="#7699aa" stroke-width="2"/>
+  <polygon points="305,222 295,220 299,230" fill="#7699aa"/>
+
+  <!-- shuffle -->
+  <g filter="url(#shadow)">
+    <rect x="306" y="105" width="116" height="162" rx="20" fill="url(#shuffleGrad)" stroke="#e6c784"/>
+  </g>
+  <text x="364" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805d1f">Shuffle ve Sırala</text>
+  <g filter="url(#smallShadow)">
+    <rect x="329" y="151" width="70" height="20" rx="8" fill="#fff9e9"/>
+    <rect x="329" y="179" width="70" height="20" rx="8" fill="#fff9e9"/>
+    <rect x="329" y="207" width="70" height="20" rx="8" fill="#fff9e9"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#886c35">
+    <text x="341" y="165">veri</text><text x="376" y="165" font-weight="700">[1,1]</text>
+    <text x="341" y="193">büyük</text><text x="382" y="193" font-weight="700">[1,1]</text>
+    <text x="341" y="221">hızlı</text><text x="378" y="221" font-weight="700">[1]</text>
+  </g>
+
+  <!-- to reduce -->
+  <path d="M424 186 H448" fill="none" stroke="#7699aa" stroke-width="2"/>
+  <polygon points="454,186 446,181 446,191" fill="#7699aa"/>
+
+  <!-- reduce -->
+  <g filter="url(#shadow)">
+    <rect x="456" y="120" width="91" height="133" rx="19" fill="url(#reduceGrad)" stroke="#c9b5eb"/>
+  </g>
+  <text x="501.5" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5f4788">Reduce</text>
+  <circle cx="484" cy="183" r="16" fill="#f7f1ff" stroke="#bfa9e0"/>
+  <path d="M477 183 H491 M484 176 V190" stroke="#876bb4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M477 214 H526" stroke="#b098d2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M477 228 H512" stroke="#c5b2e0" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- to result -->
+  <path d="M549 186 H568" fill="none" stroke="#7699aa" stroke-width="2"/>
+  <polygon points="574,186 566,181 566,191" fill="#7699aa"/>
+
+  <!-- output -->
+  <g filter="url(#shadow)">
+    <rect x="576" y="139" width="48" height="94" rx="16" fill="url(#outputGrad)" stroke="#e8b8c2"/>
+  </g>
+  <text x="600" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#874a59">Özet</text>
+  <text x="600" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#874a59">veri: 2</text>
+  <text x="600" y="204" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#874a59">büyük: 2</text>
+  <text x="600" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a16a75">...</text>
+
+  <!-- resilience badge -->
+  <g filter="url(#smallShadow)">
+    <rect x="35" y="259" width="101" height="29" rx="14.5" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <path d="M50 274 A8 8 0 1 1 55 281" fill="none" stroke="#5f9f8a" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="54,283 54,277 59,281" fill="#5f9f8a"/>
+  <text x="68" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#517568">Yeniden çalıştır</text>
+</svg>

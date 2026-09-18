@@ -12,7 +12,11 @@ tags:
   - algoritma
   - p2p
 toc: true
+image: /img/chord-ve-kademlia-71.png
 ---
+
+![chord-ve-kademlia-71](/img/chord-ve-kademlia-71.svg)
+
 
 Merkezi bir veritabanı olmadan milyonlarca anahtarın hangi bilgisayarda tutulduğunu bulabilir miyiz? Dağıtık Hash Tabloları, yani DHT’ler, tam olarak bu problemi çözer. Chord ve Kademlia ise aynı hedefe farklı rotalardan giden iki meşhur protokoldür: Biri düğümleri halka üzerinde yürütür, diğeri XOR uzaklığıyla dijital bir pusula kullanır.
 ``

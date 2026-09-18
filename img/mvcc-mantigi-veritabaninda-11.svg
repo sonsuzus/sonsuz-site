@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="time" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9fc9f6"/>
+      <stop offset="1" stop-color="#91d7b3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5c7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5c7890" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="57" r="44" fill="#dcedff" opacity="0.55"/>
+  <circle cx="578" cy="268" r="68" fill="#d8f2de" opacity="0.52"/>
+
+  <text x="30" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36526b">MVCC · Zaman İçinde Satır Sürümleri</text>
+  <text x="30" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718598">Okuyucular kendi görüntüsünü korur, yazar yeni sürüm üretir</text>
+
+  <rect x="28" y="84" width="126" height="91" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="55" cy="110" r="14" fill="#d9ebff"/>
+  <path d="M49 110c0-3 2-6 6-6s6 3 6 6-2 6-6 6-6-3-6-6zm-4 15c1-5 5-8 10-8s9 3 10 8" fill="none" stroke="#4f88be" stroke-width="2" stroke-linecap="round"/>
+  <text x="78" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36526b">A Okuyucu</text>
+  <text x="78" y="127" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63798c">Snapshot S₁</text>
+  <rect x="45" y="140" width="91" height="22" rx="11" fill="#e9f3ff"/>
+  <text x="60" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477da9">Stok: 10</text>
+
+  <rect x="28" y="212" width="126" height="80" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="55" cy="238" r="14" fill="#daf2e4"/>
+  <path d="M49 238c0-3 2-6 6-6s6 3 6 6-2 6-6 6-6-3-6-6zm-4 15c1-5 5-8 10-8s9 3 10 8" fill="none" stroke="#4b9a71" stroke-width="2" stroke-linecap="round"/>
+  <text x="78" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36526b">C Okuyucu</text>
+  <text x="78" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63798c">Yeni snapshot</text>
+  <text x="45" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#438765">Stok: 8</text>
+
+  <path d="M154 132 C177 132 180 131 196 131" fill="none" stroke="#76a9d2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="202,131 193,126 193,136" fill="#76a9d2"/>
+  <path d="M154 252 C195 252 186 201 227 201" fill="none" stroke="#6fbd91" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="233,201 224,196 224,206" fill="#6fbd91"/>
+
+  <rect x="194" y="79" width="248" height="177" rx="22" fill="#fdfefe" filter="url(#shadow)"/>
+  <text x="219" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36526b">Satır sürüm zinciri</text>
+  <line x1="229" y1="186" x2="408" y2="186" stroke="url(#time)" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="416,186 405,179 405,193" fill="#82cba5"/>
+  <text x="226" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718598">geçmiş</text>
+  <text x="363" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718598">gelecek</text>
+
+  <rect x="218" y="128" width="82" height="48" rx="12" fill="#e6f2ff" filter="url(#softShadow)"/>
+  <text x="234" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#427aa6">Sürüm 1</text>
+  <text x="234" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">Stok 10</text>
+  <circle cx="259" cy="186" r="6" fill="#72a9d6"/>
+
+  <rect x="326" y="128" width="92" height="48" rx="12" fill="#e0f5e8" filter="url(#softShadow)"/>
+  <text x="342" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#438765">Sürüm 2</text>
+  <text x="342" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">Stok 8</text>
+  <circle cx="372" cy="186" r="6" fill="#69b98c"/>
+
+  <path d="M300 152 L319 152" stroke="#8bb9d4" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="325,152 316,147 316,157" fill="#8bb9d4"/>
+  <text x="256" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8294">Xmin oluşturur · Xmax geçersiz kılar</text>
+
+  <rect x="480" y="87" width="132" height="89" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="507" cy="113" r="14" fill="#ffe8cf"/>
+  <path d="M502 105h10v7h-10zm2 7v8m6-8v8m-9 0h12" fill="none" stroke="#c9833f" stroke-width="2" stroke-linejoin="round"/>
+  <text x="530" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36526b">B Yazar</text>
+  <text x="530" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63798c">Güncelle</text>
+  <rect x="496" y="143" width="99" height="21" rx="10" fill="#fff1df"/>
+  <text x="512" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b46e2e">Yeni sürüm</text>
+
+  <path d="M480 143 C458 143 452 151 425 151" fill="none" stroke="#d39a5a" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="419,151 428,146 428,156" fill="#d39a5a"/>
+
+  <rect x="480" y="208" width="132" height="70" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="507" cy="233" r="14" fill="#eee4ff"/>
+  <path d="M501 233h12m-6-6v12m-9 7h18" fill="none" stroke="#8367bd" stroke-width="2" stroke-linecap="round"/>
+  <text x="530" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36526b">Temizlik</text>
+  <text x="496" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76678d">VACUUM</text>
+
+  <path d="M418 224 C450 224 452 243 474 243" fill="none" stroke="#9b83c8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="480,243 471,238 471,248" fill="#9b83c8"/>
+  <text x="430" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c6a99">görünmeyen eski sürüm</text>
+</svg>

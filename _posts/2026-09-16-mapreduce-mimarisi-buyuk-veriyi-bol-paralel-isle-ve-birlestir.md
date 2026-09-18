@@ -12,6 +12,7 @@ tags:
   - hadoop
   - veri işleme
 toc: true
+image: /img/mapreduce-mimarisi-buyuk-57.png
 ---
 
 Tek bir bilgisayarın günlerce uğraşacağı bir veri kümesini yüzlerce makineye paylaştırıp kısa sürede işlemek kulağa sihir gibi gelebilir. MapReduce, bu sihri iki temel adıma indirgeyen klasik bir programlama modelidir: Veriyi bağımsız parçalara ayır, parçaları paralel işle ve sonuçları anlamlı bir bütün hâline getir.
@@ -95,3 +96,6 @@ MapReduce özellikle günlük analizi, arama indeksi oluşturma ve büyük ölç
 ## Gücü sadeliğinde
 
 MapReduce’un en değerli fikri belirli bir ürün değil, hesaplamayı bağımsız dönüşümlere ve birleştirmelere ayırmasıdır. Her problem bu kalıba uymaz; ancak uyduğunda yatay ölçekleme, hata toleransı ve paralellik daha yönetilebilir olur. Kısacası MapReduce, dev bir işi tek kahramana vermek yerine düzenli çalışan bir veri ekibi kurar.
+
+![mapreduce-mimarisi-buyuk-57](/img/mapreduce-mimarisi-buyuk-57.svg)
+

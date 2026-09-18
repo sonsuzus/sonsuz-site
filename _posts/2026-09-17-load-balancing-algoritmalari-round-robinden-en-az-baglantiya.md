@@ -12,6 +12,7 @@ tags:
   - yüksek erişilebilirlik
   - backend
 toc: true
+image: /img/load-balancing-algoritmalari-67.png
 ---
 
 Bir uygulama büyüdüğünde tek bir sunucu, gelen isteklerin ağırlığı altında terlemeye başlayabilir. Load balancer, bu noktada trafiği birden fazla sunucuya dağıtan akıllı bir trafik polisi gibi çalışır. Fakat bütün trafik polisleri aynı yöntemi kullanmaz: bazıları sırayla yönlendirir, bazıları sunucuların gücünü hesaba katar, bazılarıysa o anda en az meşgul olanı seçer.
@@ -37,6 +38,9 @@ Load balancer ayrıca sağlık kontrolleri yapabilir. Yanıt vermeyen bir sunucu
 | Least Connections | Aktif bağlantı sayısı | Uzun bağlantılarda etkilidir | Bağlantı maliyetlerini eşit varsayabilir |
 | Weighted Least Connections | Bağlantı ve kapasite | Heterojen sistemlere uygundur | Daha fazla ölçüm gerektirir |
 | IP Hash | İstemci IP adresi | Oturum sürekliliği sağlar | Dağılım dengesiz olabilir |
+
+![load-balancing-algoritmalari-67](/img/load-balancing-algoritmalari-67.svg)
+
 
 ## Round Robin: herkes sırasını beklesin
 

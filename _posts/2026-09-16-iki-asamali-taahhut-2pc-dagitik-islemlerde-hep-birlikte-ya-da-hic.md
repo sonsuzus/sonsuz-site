@@ -12,6 +12,7 @@ tags:
   - transaction
   - mikroservis
 toc: true
+image: /img/iki-asamali-taahhut-99.png
 ---
 
 Bir para transferinin iki farklı veritabanına dokunduğunu düşünün: İlk sistem bakiyeyi azaltırken ikinci sistem alıcının hesabını artırıyor. Sistemlerden biri işlemi tamamlayıp diğeri çökerse para dijital boşlukta kaybolabilir! İki Aşamalı Taahhüt, yani Two-Phase Commit (2PC), dağıtık bir işlemin tüm katılımcılarda birlikte onaylanmasını veya tamamen geri alınmasını sağlayarak bu tehlikeyi azaltan klasik bir koordinasyon protokolüdür.
@@ -85,3 +86,6 @@ Buradaki `prepare`, katılımcının yerel kontrollerini ve kaynak kilitlemesini
 CAP perspektifinden bakıldığında ağ bölünmesi sırasında güçlü tutarlılığı korumak, bazı işlemlerin beklemesini veya reddedilmesini gerektirebilir. Bu nedenle 2PC, “her yerde kullanalım” çözümü değildir. Kısa süren işlemler, güvenilir ağlar ve güçlü atomiklik gereksinimi varsa oldukça değerlidir. Uzun iş akışlarında ise Saga ve telafi işlemleri daha esnek olabilir.
 
 Özetle 2PC, dağıtık sistemlere şu disiplinli mesajı verir: Herkes hazır olmadan kutlama yok! Buna karşılık koordinatörün güvenilirliği, günlüklerin kalıcılığı, kilit süreleri ve hata senaryoları dikkatle tasarlanmalıdır.
+
+![iki-asamali-taahhut-99](/img/iki-asamali-taahhut-99.svg)
+

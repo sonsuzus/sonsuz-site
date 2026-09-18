@@ -11,7 +11,11 @@ tags:
   - yük dengeleme
   - algoritma
 toc: true
+image: /img/tutarli-hashleme-sunucular-46.png
 ---
+
+![tutarli-hashleme-sunucular-46](/img/tutarli-hashleme-sunucular-46.svg)
+
 
 Dağıtık bir sistemde yeni sunucu eklemek güzel haberdir; ta ki milyonlarca anahtarın başka sunuculara taşınması gerekene kadar! Tutarlı hashleme, yani *consistent hashing*, sunucu sayısı değiştiğinde verilerin yalnızca küçük bir bölümünü yeniden eşleyerek bu karmaşayı yönetir. Özellikle dağıtık önbellekler, veritabanları ve içerik dağıtım ağlarında sistemin büyümesini daha az sancılı hâle getirir.
 ``

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="opt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcd5ff"/>
+      <stop offset="100%" stop-color="#c8e7fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7b91a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7b91a8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="79" cy="43" r="64" fill="#dceffc" opacity="0.52"/>
+  <circle cx="586" cy="272" r="82" fill="#dff1d8" opacity="0.45"/>
+  <circle cx="583" cy="45" r="40" fill="#f5e5c9" opacity="0.48"/>
+
+  <text x="32" y="31" fill="#536878" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Sorgu optimizasyonu</text>
+
+  <!-- SQL -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="105" width="126" height="86" rx="17" fill="#ffffff"/>
+    <rect x="30" y="105" width="7" height="86" rx="3.5" fill="#85b9ed"/>
+  </g>
+  <text x="56" y="137" fill="#36546d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">SQL Sorgusu</text>
+  <text x="56" y="159" fill="#71828e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Filtre ve join</text>
+  <path d="M156 148 L185 148" stroke="#7b9eb8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="190,148 181,142 181,154" fill="#7b9eb8"/>
+
+  <!-- optimizer -->
+  <g filter="url(#shadow)">
+    <rect x="190" y="79" width="174" height="138" rx="25" fill="url(#opt)"/>
+    <circle cx="277" cy="132" r="35" fill="#ffffff" opacity="0.75"/>
+    <path d="M261 122 C265 112 279 108 288 116 C297 124 292 139 282 143 C270 148 258 138 261 122Z" fill="#887bd5" opacity="0.88"/>
+    <circle cx="271" cy="126" r="4" fill="#ffffff"/>
+    <circle cx="283" cy="128" r="4" fill="#ffffff"/>
+    <path d="M270 138 Q277 143 285 137" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="221" y="174" fill="#3c4e70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Sorgu Optimize Edici</text>
+  <text x="224" y="196" fill="#617491" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Maliyet en düşük yol</text>
+
+  <!-- inputs -->
+  <g filter="url(#softShadow)">
+    <rect x="188" y="42" width="72" height="26" rx="10" fill="#fff7df"/>
+    <rect x="270" y="42" width="82" height="26" rx="10" fill="#e4f4df"/>
+  </g>
+  <text x="202" y="59" fill="#7b6743" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İstatistik</text>
+  <text x="285" y="59" fill="#517051" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İndeksler</text>
+  <path d="M224 68 L239 79" stroke="#a2a7a1" stroke-width="1.8"/>
+  <polygon points="242,81 234,78 237,85" fill="#a2a7a1"/>
+  <path d="M311 68 L300 79" stroke="#a2a7a1" stroke-width="1.8"/>
+  <polygon points="298,82 298,73 305,79" fill="#a2a7a1"/>
+
+  <!-- plan -->
+  <path d="M364 148 L396 148" stroke="#7b9eb8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="401,148 392,142 392,154" fill="#7b9eb8"/>
+  <g filter="url(#shadow)">
+    <rect x="402" y="64" width="205" height="180" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="425" y="91" fill="#405869" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Çalıştırma Planı</text>
+
+  <!-- tree connectors -->
+  <path d="M505 111 L505 127 M455 146 L455 134 L555 134 L555 146 M455 181 L455 194 L555 194 L555 181" fill="none" stroke="#a0b7bf" stroke-width="2" stroke-linecap="round"/>
+  <path d="M505 127 L505 134" stroke="#a0b7bf" stroke-width="2"/>
+  <path d="M505 194 L505 207" stroke="#a0b7bf" stroke-width="2"/>
+
+  <!-- tree nodes -->
+  <g filter="url(#softShadow)">
+    <rect x="458" y="99" width="94" height="26" rx="9" fill="#e4daf9"/>
+    <rect x="416" y="146" width="78" height="28" rx="9" fill="#d9eefb"/>
+    <rect x="516" y="146" width="78" height="28" rx="9" fill="#dff1dc"/>
+    <rect x="416" y="207" width="78" height="27" rx="9" fill="#fff0d9"/>
+    <rect x="516" y="207" width="78" height="27" rx="9" fill="#f8dfe7"/>
+  </g>
+  <text x="474" y="116" fill="#574879" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Sonuç</text>
+  <text x="430" y="164" fill="#47697b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hash Join</text>
+  <text x="529" y="164" fill="#4f7256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sıralama</text>
+  <text x="426" y="225" fill="#85633d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İndeks</text>
+  <text x="526" y="225" fill="#875464" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tablo Tara</text>
+
+  <!-- feedback -->
+  <path d="M503 254 C438 294 264 293 241 226" fill="none" stroke="#79a9a2" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="240,220 236,230 246,227" fill="#79a9a2"/>
+  <g filter="url(#softShadow)">
+    <rect x="343" y="274" width="125" height="27" rx="11" fill="#e2f3ed"/>
+  </g>
+  <text x="360" y="292" fill="#4b766c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tahmin ve gerçek</text>
+</svg>

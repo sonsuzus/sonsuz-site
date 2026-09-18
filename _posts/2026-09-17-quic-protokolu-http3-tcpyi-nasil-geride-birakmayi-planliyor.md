@@ -12,6 +12,7 @@ tags:
   - web performansı
   - ağ protokolleri
 toc: true
+image: /img/quic-protokolu-http3-27.png
 ---
 
 Web’in hız sınırlarını yalnızca daha güçlü sunucular veya küçültülmüş JavaScript dosyaları belirlemiyor. Tarayıcı ile sunucu arasındaki bağlantının nasıl kurulduğu da performansın başrol oyuncularından biri. QUIC, onlarca yıldır internetin omurgasında çalışan TCP’nin bazı kronik sorunlarını aşmak için UDP üzerinde geliştirilen modern bir taşıma protokolü; HTTP/3 ise onun web dünyasındaki en önemli yolcusu.
@@ -40,6 +41,9 @@ UDP kendi başına paket sıralama, yeniden iletim veya akış kontrolü sağlam
 | Tekrar bağlantı | TLS oturumuna bağlı | Uygun durumda 0-RTT |
 | Paket kaybı etkisi | Tüm akışlar bekleyebilir | Genellikle yalnızca ilgili akış bekler |
 | Ağ değişimi | Bağlantı kopabilir | Connection ID ile sürdürülebilir |
+
+![quic-protokolu-http3-27](/img/quic-protokolu-http3-27.svg)
+
 
 ## Head-of-line blocking meselesi
 

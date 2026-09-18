@@ -12,6 +12,7 @@ tags:
   - postgresql
   - performans
 toc: true
+image: /img/sorgu-optimizasyonu-ve-95.png
 ---
 
 Bir SQL sorgusunun çalışması, garsona sipariş vermeye benzer: ne istediğinizi söylersiniz, fakat mutfakta hangi adımların izleneceğine şef karar verir. Veritabanındaki bu şef **query optimizer**, hazırladığı tarif ise **execution plan** olarak adlandırılır. Performans sorunlarını çözmek için yalnızca SQL yazmak değil, bu tarifi okuyup şefin neden o yolu seçtiğini anlamak gerekir.
@@ -88,3 +89,6 @@ Sütun sırası önemlidir; indeks bir telefon rehberi gibi soldan başlayarak d
 `Nested Loop` küçük bir sonuç kümesini indeksli tabloyla eşleştirirken etkilidir. `Hash Join`, büyük ve sırasız eşitlik birleştirmelerinde; `Merge Join` ise iki taraf sıralı olduğunda öne çıkar. Tek başına düğüm adına bakarak karar vermek yerine taşınan satır miktarını, döngü sayısını ve süreyi birlikte değerlendirin.
 
 Optimizasyon sırasında önce en pahalı düğümü bulun, tahmini ve gerçek satırları karşılaştırın, filtrelerin erken uygulanıp uygulanmadığını kontrol edin. Sonra indeks, sorgu yazımı veya istatistik güncellemesi deneyin ve planı yeniden ölçün. Altın kural basittir: **tahmin etmeyin, ölçün; planı ezberlemeyin, veri akışını takip edin.**
+
+![sorgu-optimizasyonu-ve-95](/img/sorgu-optimizasyonu-ve-95.svg)
+

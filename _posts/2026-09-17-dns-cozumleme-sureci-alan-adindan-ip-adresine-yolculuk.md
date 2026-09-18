@@ -12,7 +12,11 @@ tags:
   - domain
   - dnssec
 toc: true
+image: /img/dns-cozumleme-sureci-93.png
 ---
+
+![dns-cozumleme-sureci-93](/img/dns-cozumleme-sureci-93.svg)
+
 
 Tarayıcıya `example.com` yazdığınızda bilgisayarınızın bu ismin hangi sunucuyu temsil ettiğini öğrenmesi gerekir. Çünkü ağ cihazları alan adlarıyla değil, `93.184.216.34` gibi IP adresleriyle iletişim kurar. DNS (Domain Name System), internetin telefon rehberi gibi çalışarak insanların hatırlayabildiği isimleri makinelerin kullandığı adreslere dönüştürür.
 ``

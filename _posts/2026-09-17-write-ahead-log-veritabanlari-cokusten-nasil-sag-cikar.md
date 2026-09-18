@@ -12,9 +12,13 @@ tags:
   - recovery
   - acid
 toc: true
+image: /img/write-ahead-log-91.png
 ---
 
 Bir veritabanı sunucusu tam sipariş kaydedilirken kapanırsa ne olur? Para hesaptan düşmüş, fakat sipariş oluşmamış olabilir mi? Modern veritabanları bu korku filmini **Write-Ahead Log (WAL)** sayesinde mutlu sonla bitirir. WAL, değişiklikleri asıl veri dosyasına uygulamadan önce dayanıklı bir günlükte kaydederek sistemin çöküş sonrasında ne yaptığını hatırlamasını sağlar.
+
+![write-ahead-log-91](/img/write-ahead-log-91.svg)
+
 ``
 ## Önce günlük, sonra veri
 

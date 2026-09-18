@@ -12,6 +12,7 @@ tags:
   - python
   - tutarlılık
 toc: true
+image: /img/dedikodu-protokolleri-bilgi-53.png
 ---
 
 Bir sunucunun öğrendiği haberi rastgele birkaç komşusuna söylediğini, onların da aynı şeyi başkalarına aktardığını düşünün. Bir süre sonra bütün ağ haberdar olur; üstelik ortada süreci yöneten bir merkez yoktur. Dağıtık sistemlerde bu modele **gossip**, yani dedikodu protokolü denir. İnsan topluluklarında bazen baş ağrıtan dedikodu, bilgisayar ağlarında ölçeklenebilirlik ve arıza toleransı sağlayan son derece kullanışlı bir mekanizmadır.
@@ -91,3 +92,6 @@ Gossip çoğunlukla **eventual consistency** sağlar: Güncellemeler anında her
 | Büyük ağlara uyum | Merkez darboğaz olabilir | Yüksek |
 
 Cassandra’nın küme durumunu paylaşması ve bazı dağıtık veritabanlarının üyelik bilgilerini yayması bu fikre dayanır. Özetle gossip, her mesajın kesin zamanda ulaşmasını değil, yeterince çok bağımsız temas sayesinde bilginin sonunda yayılmasını hedefler. Biraz rastgele, biraz geveze, fakat arızalar karşısında şaşırtıcı derecede dayanıklıdır.
+
+![dedikodu-protokolleri-bilgi-53](/img/dedikodu-protokolleri-bilgi-53.svg)
+

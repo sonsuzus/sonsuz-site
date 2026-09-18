@@ -13,7 +13,11 @@ tags:
   - bbr
   - internet
 toc: true
+image: /img/tcp-tikaniklik-kontrolu-81.png
 ---
+
+![tcp-tikaniklik-kontrolu-81](/img/tcp-tikaniklik-kontrolu-81.svg)
+
 
 Bir TCP bağlantısı, verileri mümkün olduğunca hızlı göndermek ister; fakat ağın gerçek kapasitesini doğrudan bilemez. Fazla temkinli davranırsa bant genişliği boşa gider, fazla saldırgan davranırsa yönlendirici kuyrukları dolar ve paketler kaybolur. TCP tıkanıklık kontrolü algoritmaları, işte bu görünmez sınırı tahmin etmeye çalışan trafik polisleridir. Reno’dan BBR’a uzanan yolculuk ise kaybı izlemekten ağ modellemeye geçişin hikâyesidir.
 

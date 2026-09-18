@@ -12,6 +12,7 @@ tags:
   - performans
   - indeksleme
 toc: true
+image: /img/b-tree-ve-58.png
 ---
 
 Bir veritabanı tasarlarken yalnızca “Veriyi nereye kaydedelim?” diye sormak yetmez; verinin nasıl okunacağını ve yazılacağını da düşünmek gerekir. B-tree ile LSM-tree arasındaki seçim tam olarak bu noktada karşımıza çıkar. B-tree genellikle dengeli ve hızlı okumalarıyla öne çıkarken LSM-tree yoğun yazma trafiğini sıralı işlemlere dönüştürerek depolama aygıtını mutlu eder. Kısacası biri düzenli bir kütüphaneci, diğeri masasına gelen belgeleri önce hızlıca kutulayan enerjik bir arşivcidir.
@@ -83,3 +84,6 @@ Bu örnek gerçek bir WAL, Bloom filter veya compaction içermez; fakat temel fi
 Saniyede çok yüksek sayıda olay, log, telemetri veya zaman serisi verisi yazıyorsanız LSM-tree daha uygun olabilir. Cassandra, RocksDB ve LevelDB bu yaklaşımın bilinen örnekleridir.
 
 Son karar yalnızca “okuma mı, yazma mı?” sorusuna bağlı değildir. Veri boyutu, aralık sorguları, depolama türü, gecikme yüzdelikleri ve compaction için ayrılabilecek kaynaklar da hesaba katılmalıdır. B-tree bugünün düzenini korur; LSM-tree ise bugünün hızını, yarının temizlik işine dönüştürür.
+
+![b-tree-ve-58](/img/b-tree-ve-58.svg)
+
