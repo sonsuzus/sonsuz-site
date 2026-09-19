@@ -12,6 +12,7 @@ tags:
   - bellek
   - düşük-seviye-programlama
 toc: true
+image: /img/x86-assemblyye-giris-96.png
 ---
 
 Python, C veya JavaScript ile bir değişkeni artırmak tek satırlık iştir. Fakat işlemci; değişkenleri, döngüleri ya da fonksiyonları bizim anladığımız biçimde tanımaz. Onun dünyasında yazmaçlar, bellek adresleri ve son derece küçük komutlar vardır. x86 assembly öğrenmek, bilgisayarla onun ana diline yakın bir seviyede konuşmak ve yüksek seviye kodun perde arkasını görmek demektir.
@@ -103,3 +104,6 @@ Buradaki fonksiyon matematiksel olarak $f(x)=x^2$ işlemini gerçekleştirir.
 ## Nasıl pratik yapılır?
 
 C kodunu `gcc -S program.c` ile assembly çıktısına dönüştürebilir, `objdump -d` ile çalıştırılabilir dosyayı inceleyebilir ve GDB kullanarak komutları adım adım izleyebilirsin. Başlangıçta optimizasyonu kapatmak için `-O0`, derleyicinin gerçek becerilerini görmek için `-O2` kullanmak öğretici bir karşılaştırmadır. Assembly’nin amacı her programı elle yazmak değil; derleyiciyi, belleği, performansı ve hataların gerçek kaynağını daha iyi anlayabilmektir.
+
+![x86-assemblyye-giris-96](/img/x86-assemblyye-giris-96.svg)
+

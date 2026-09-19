@@ -12,7 +12,11 @@ tags:
   - performans
   - csharp
 toc: true
+image: /img/ecs-mimarisi-oyun-36.png
 ---
+
+![ecs-mimarisi-oyun-36](/img/ecs-mimarisi-oyun-36.svg)
+
 
 Bir oyunda oyuncu, düşman, uçan düşman, zehirli uçan düşman derken sınıf ağacınız aile albümüne dönebilir. Entity-Component-System (ECS), bu karmaşaya farklı bir soru sorarak yaklaşır: “Bu nesne nedir?” yerine “Hangi verilere sahip ve hangi davranışlara katılıyor?” Böylece oyun nesneleri derin kalıtım zincirleriyle değil, küçük parçaların bir araya getirilmesiyle oluşturulur.
 

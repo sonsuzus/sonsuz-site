@@ -12,7 +12,11 @@ tags:
   - optimizasyon
   - python
 toc: true
+image: /img/model-kuantizasyonu-buyuk-20.png
 ---
+
+![model-kuantizasyonu-buyuk-20](/img/model-kuantizasyonu-buyuk-20.svg)
+
 
 Bir yapay zekâ modelini telefonda çalıştırmak, taşınma günü dev bir koltuğu küçücük asansöre sokmaya benzer. Modelin milyarlarca parametresi belleği doldurur, hesaplamaları yavaşlatır ve pili neşeyle tüketir. Model kuantizasyonu, bu sayıları daha az bit kullanarak temsil eder; yani koltuğu parçalamadan, daha kompakt hâle getirir. Üstelik doğru uygulandığında modelin yeteneklerinin çoğu korunur.
 ``

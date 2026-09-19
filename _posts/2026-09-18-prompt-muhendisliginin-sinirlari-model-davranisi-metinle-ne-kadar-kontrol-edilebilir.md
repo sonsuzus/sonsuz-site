@@ -12,6 +12,7 @@ tags:
   - güvenilirlik
   - prompt injection
 toc: true
+image: /img/prompt-muhendisliginin-sinirlari-20.png
 ---
 
 Bir dil modeline “yalnızca JSON üret” dediğinizde çoğu zaman JSON alırsınız; ama bazen model açıklama ekler, biçimi bozar veya hiç beklemediğiniz bir cevap verir. Prompt mühendisliği, model davranışını sihirli sözcüklerle kesin olarak programlamak değil, olasılıkları istenen yöne doğru itmektir. Bu ayrım önemlidir: Prompt bir sözleşmeye benzese de geleneksel programlama dilindeki katı bir komut değildir.
@@ -33,6 +34,9 @@ Burada $x$ promptu, $y$ ise üretilen cevabı temsil eder. Prompt değiştiğind
 | Düşük temperature | Çıktıyı daha tutarlı yapar | Doğruluğu garanti etmez |
 | Şema doğrulama | Yapısal hataları yakalar | Anlamsal hatayı tek başına bulamaz |
 | Fine-tuning | Davranış eğilimini kalıcılaştırır | Yeni bilgi ve mutlak itaat sağlamaz |
+
+![prompt-muhendisliginin-sinirlari-20](/img/prompt-muhendisliginin-sinirlari-20.svg)
+
 
 ## Güvenilirliği bozan başlıca etkenler
 

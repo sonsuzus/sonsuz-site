@@ -12,6 +12,7 @@ tags:
   - 3d programlama
   - vektör matematiği
 toc: true
+image: /img/ray-tracing-temelleri-92.png
 ---
 
 Bir sahneyi gerçekçi göstermek istiyorsanız yalnızca nesneleri çizmek yetmez; ışığın dünyada nasıl davrandığını da düşünmeniz gerekir. Ray tracing, yani ışın izleme, tam olarak bunu yapar: Kameradan hayali ışınlar gönderir, bu ışınların nesnelerle karşılaşmasını hesaplar ve her pikselin rengini belirler. Kısacası yöntem, dijital bir sahnede ışığa dedektif şapkası takar.
@@ -45,6 +46,9 @@ $P$ yerine ışın denklemi yerleştirildiğinde ikinci dereceden bir denklem el
 | $\Delta < 0$ | Kesişim yok | Işın küreyi ıskalar |
 | $\Delta = 0$ | Tek kesişim | Işın küreye teğettir |
 | $\Delta > 0$ | İki kesişim | Işın kürenin içinden geçer |
+
+![ray-tracing-temelleri-92](/img/ray-tracing-temelleri-92.svg)
+
 
 Pozitif olan en küçük $t$ değeri, kameraya en yakın görünür yüzeyi verir. Böylece arkadaki nesnenin yanlışlıkla öndeymiş gibi çizilmesi engellenir.
 

@@ -12,9 +12,13 @@ tags:
   - assembly
   - bilgisayar mimarisi
 toc: true
+image: /img/risc-v-acik-45.png
 ---
 
 Bir işlemcinin hangi komutları anlayacağını hiç merak ettiniz mi? Yazılım ile silikon arasındaki bu sözleşme, komut kümesi mimarisi yani ISA olarak adlandırılır. RISC-V, herkesin inceleyebildiği ve lisans ücreti ödemeden kullanabildiği açık bir ISA sunarak işlemci dünyasındaki yerleşik düzeni değiştiriyor. Üniversite laboratuvarından veri merkezlerine uzanan bu yükseliş, yalnızca teknik değil, ekonomik bir dönüşümü de temsil ediyor.
+
+
+![risc-v-acik-45](/img/risc-v-acik-45.svg)
 
 ``
 

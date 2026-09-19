@@ -12,9 +12,13 @@ tags:
   - hdl
   - elektronik
 toc: true
+image: /img/fpga-ve-verilog-57.png
 ---
 
 Bir işlemcinin komutları sırayla çalıştırmasına alışkınsanız, FPGA dünyası ilk bakışta biraz büyülü görünebilir. Verilog ile birkaç satır yazıyor, ardından kabloların, mantık kapılarının ve register’ların gerçekten oluşmasını sağlıyorsunuz. Ancak burada önemli bir ayrım var: Verilog, klasik anlamda donanıma ne yapacağını söyleyen bir yazılım dili değil; donanımın nasıl davranacağını ve bağlanacağını tanımlayan bir donanım tanımlama dilidir.
+
+
+![fpga-ve-verilog-57](/img/fpga-ve-verilog-57.svg)
 
 ``
 

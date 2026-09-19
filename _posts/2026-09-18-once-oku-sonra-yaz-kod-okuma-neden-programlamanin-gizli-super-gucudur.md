@@ -12,9 +12,13 @@ tags:
   - öğrenme
   - kod inceleme
 toc: true
+image: /img/once-oku-sonra-58.png
 ---
 
 Programlama öğrenirken verilen ilk öğüt genellikle “Bol bol kod yaz” olur. Elbette klavyeyle arayı iyi tutmak önemlidir; fakat yalnızca kod yazarak ilerlemek, konuşmayı öğrenmek için sürekli monolog yapmaya benzer. Başkalarının kodlarını okumak ise farklı kelimeleri, anlatım biçimlerini ve problem çözme yollarını görmemizi sağlar. Bu nedenle kod okumanın kod yazmaktan önce gelmesi gerektiği fikri, tartışılmayı hak eden güçlü bir yaklaşımdır.
+
+
+![once-oku-sonra-58](/img/once-oku-sonra-58.svg)
 
 ``
 

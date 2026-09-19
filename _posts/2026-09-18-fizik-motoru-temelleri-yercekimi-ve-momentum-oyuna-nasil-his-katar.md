@@ -12,6 +12,7 @@ tags:
   - unity
   - vektörler
 toc: true
+image: /img/fizik-motoru-temelleri-65.png
 ---
 
 Bir karakterin zıpladığında süzülmesi, bir sandığın darbeyle kayması veya yarış arabasının virajda ağırlığını hissettirmesi yalnızca güzel animasyonlarla açıklanamaz. Oyuncunun “Bu nesne gerçekten ağır!” demesini sağlayan görünmez kahraman, fizik motorudur. Ancak iyi oyun fiziği her zaman gerçek dünyanın birebir kopyası değildir; çoğu zaman gerçekliğin kontrollü biçimde abartılmış, hızlandırılmış ve eğlenceli hâlidir.
@@ -85,3 +86,6 @@ Silah geri tepmesi, patlama dalgası ve karakterin hasar alınca savrulması bu 
 Çarpışmalarda sekme katsayısı, sürtünme ve kütle oranları dikkatle ayarlanmalıdır. Çok yüksek sekme değeri dünyayı langırt masasına, aşırı sürtünme ise buz üstündeki kutuları halıya saplanmış mobilyalara dönüştürür. Ayrıca ekran sarsıntısı, ses perdesi, parçacıklar ve kısa animasyon duraklamaları fiziksel etkinin algısını güçlendirir.
 
 Sonuç olarak yerçekimi hareketin ritmini, momentum ise darbelerin ağırlığını belirler. Formüller temel iskeleti kurar; eğlenceli “his” ise bu değerleri bilinçli biçimde bükmekten doğar. Fizik motorunun görevi gerçeği kusursuzca kopyalamak değil, oyuncuyu ikna etmektir.
+
+![fizik-motoru-temelleri-65](/img/fizik-motoru-temelleri-65.svg)
+

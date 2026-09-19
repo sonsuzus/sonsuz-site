@@ -12,7 +12,11 @@ tags:
   - işlemci
   - c
 toc: true
+image: /img/simd-komutlariyla-veri-65.png
 ---
+
+![simd-komutlariyla-veri-65](/img/simd-komutlariyla-veri-65.svg)
+
 
 Bir dizideki milyonlarca sayıya aynı işlemi uyguladığınızı düşünün. Geleneksel yaklaşım, elemanları sırayla işlemekken SIMD komutları işlemciye “Bu işlemi tek sayı yerine bir grup sayı üzerinde gerçekleştir” der. Böylece hesaplamalar, süpermarket kasasında tek tek ürün geçirmek yerine bir sepeti aynı anda taramak gibi hızlanabilir.
 ``

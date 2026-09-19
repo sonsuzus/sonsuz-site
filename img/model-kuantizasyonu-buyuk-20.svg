@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="fp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9eaff"/>
+      <stop offset="1" stop-color="#b9d4f4"/>
+    </linearGradient>
+    <linearGradient id="quant" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfd7ff"/>
+      <stop offset="1" stop-color="#c6b6f1"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8f3df"/>
+      <stop offset="1" stop-color="#a9dabb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#496177" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5a7080" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="93" cy="48" r="86" fill="#dceeff" opacity="0.45"/>
+  <circle cx="568" cy="275" r="105" fill="#dff2dc" opacity="0.42"/>
+
+  <text x="28" y="31" fill="#41546b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Model Kuantizasyonu</text>
+  <text x="28" y="48" fill="#7b8c9c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Bellek azalır, yaklaşık hesap korunur</text>
+
+  <!-- FP32 kaynak -->
+  <g filter="url(#shadow)">
+    <rect x="31" y="91" width="133" height="171" rx="19" fill="#fafdff" stroke="#c7ddef"/>
+    <rect x="48" y="108" width="99" height="35" rx="10" fill="url(#fp)"/>
+    <text x="97.5" y="130" text-anchor="middle" fill="#304d69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">FP32 Ağırlıklar</text>
+
+    <rect x="51" y="158" width="20" height="73" rx="5" fill="#82acd5"/>
+    <rect x="76" y="171" width="20" height="60" rx="5" fill="#9bbfe0"/>
+    <rect x="101" y="151" width="20" height="80" rx="5" fill="#74a4d1"/>
+    <rect x="126" y="182" width="12" height="49" rx="5" fill="#abc9e3"/>
+    <text x="97.5" y="250" text-anchor="middle" fill="#59728a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">32 bit • 4 GB</text>
+  </g>
+
+  <!-- arrow 1 -->
+  <path d="M174 176 H211" fill="none" stroke="#718ca6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="218,176 208,170 208,182" fill="#718ca6"/>
+
+  <!-- quantizer -->
+  <g filter="url(#shadow)">
+    <rect x="224" y="75" width="190" height="201" rx="22" fill="#fcfbff" stroke="#d5cced"/>
+    <rect x="244" y="92" width="150" height="34" rx="10" fill="url(#quant)"/>
+    <text x="319" y="114" text-anchor="middle" fill="#514273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Kuantizasyon</text>
+
+    <rect x="247" y="143" width="57" height="43" rx="9" fill="#eeeaff"/>
+    <text x="275.5" y="160" text-anchor="middle" fill="#66568b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ölçek</text>
+    <text x="275.5" y="176" text-anchor="middle" fill="#66568b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">s = a / 127</text>
+
+    <path d="M309 164 H328" fill="none" stroke="#a392c9" stroke-width="2"/>
+    <polygon points="334,164 325,159 325,169" fill="#a392c9"/>
+
+    <rect x="339" y="143" width="52" height="43" rx="9" fill="#eeeaff"/>
+    <text x="365" y="160" text-anchor="middle" fill="#66568b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Yuvarla</text>
+    <text x="365" y="176" text-anchor="middle" fill="#66568b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">q</text>
+
+    <line x1="247" y1="205" x2="391" y2="205" stroke="#ded8ed"/>
+    <text x="319" y="225" text-anchor="middle" fill="#75678f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hata dengesi</text>
+    <circle cx="278" cy="245" r="8" fill="#8e7abb"/>
+    <circle cx="319" cy="245" r="8" fill="#b39cdb"/>
+    <circle cx="360" cy="245" r="8" fill="#d1c2eb"/>
+    <path d="M286 245 H309 M327 245 H350" stroke="#ad9aca" stroke-width="2"/>
+  </g>
+
+  <!-- arrow 2 -->
+  <path d="M424 176 H452" fill="none" stroke="#718ca6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="459,176 449,170 449,182" fill="#718ca6"/>
+
+  <!-- choices and phone -->
+  <g filter="url(#shadow)">
+    <rect x="466" y="91" width="143" height="171" rx="19" fill="#fbfffc" stroke="#bfdfc9"/>
+    <text x="537.5" y="116" text-anchor="middle" fill="#395f4d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Karma Hassasiyet</text>
+
+    <rect x="482" y="130" width="108" height="23" rx="8" fill="#b8d7ef"/>
+    <text x="536" y="146" text-anchor="middle" fill="#355a78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">FP16 • Kritik</text>
+    <rect x="482" y="158" width="108" height="23" rx="8" fill="#c9bced"/>
+    <text x="536" y="174" text-anchor="middle" fill="#554274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">INT8 • Dengeli</text>
+    <rect x="482" y="186" width="108" height="23" rx="8" fill="#bce2c4"/>
+    <text x="536" y="202" text-anchor="middle" fill="#355f43" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">INT4 • Kompakt</text>
+
+    <rect x="503" y="219" width="67" height="25" rx="8" fill="url(#phone)"/>
+    <rect x="526" y="223" width="21" height="17" rx="3" fill="#f7fffa" stroke="#629a70"/>
+    <circle cx="536.5" cy="237" r="1.5" fill="#629a70"/>
+  </g>
+
+  <!-- bottom annotations -->
+  <g filter="url(#soft)">
+    <rect x="178" y="286" width="92" height="23" rx="11" fill="#ffffff" opacity="0.9"/>
+    <text x="224" y="302" text-anchor="middle" fill="#5e7488" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">PTQ: hızlı</text>
+    <rect x="281" y="286" width="103" height="23" rx="11" fill="#ffffff" opacity="0.9"/>
+    <text x="332.5" y="302" text-anchor="middle" fill="#655878" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">QAT: uyumlu</text>
+  </g>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8ddf7"/>
+    </linearGradient>
+    <linearGradient id="asmGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9dcff"/>
+      <stop offset="100%" stop-color="#d8c5f4"/>
+    </linearGradient>
+    <linearGradient id="cpuGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8f3e5"/>
+      <stop offset="100%" stop-color="#bde3d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71829a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71829a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="52" cy="42" r="78" fill="#d9edff" opacity="0.38"/>
+  <circle cx="602" cy="272" r="104" fill="#dff3d9" opacity="0.42"/>
+  <path d="M34 269 C138 238, 192 284, 292 256 S482 232, 610 264" fill="none" stroke="#c7e0d4" stroke-width="2" opacity="0.55"/>
+
+  <text x="32" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a526a">Yüksek seviye koddan x86 dünyasına</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708297">Derleme ve yürütme akışı</text>
+
+  <!-- source -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="88" width="142" height="150" rx="18" fill="url(#codeGrad)" stroke="#b4cce7"/>
+  </g>
+  <rect x="49" y="106" width="108" height="27" rx="8" fill="#f7fbff" opacity="0.82"/>
+  <text x="64" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345577">Yüksek Seviye</text>
+  <text x="51" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47647e">C / Python</text>
+  <path d="M52 165 H145" stroke="#8caecc" stroke-width="2"/>
+  <text x="52" y="186" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47647e">sonuc = a + b</text>
+  <rect x="50" y="200" width="84" height="20" rx="7" fill="#b9d8f1"/>
+  <text x="62" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345577">değişkenler</text>
+
+  <!-- arrow 1 -->
+  <path d="M183 163 H211" fill="none" stroke="#6b88a4" stroke-width="2.5"/>
+  <polygon points="218,163 208,157 208,169" fill="#6b88a4"/>
+  <text x="181" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60758a">derleyici</text>
+
+  <!-- assembly -->
+  <g filter="url(#shadow)">
+    <rect x="224" y="74" width="170" height="178" rx="18" fill="url(#asmGrad)" stroke="#c7afe5"/>
+  </g>
+  <rect x="242" y="92" width="134" height="28" rx="8" fill="#fbf9ff" opacity="0.83"/>
+  <text x="266" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c417d">x86 Assembly</text>
+  <rect x="242" y="134" width="134" height="28" rx="8" fill="#efe7fa"/>
+  <text x="256" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#644b80">mov eax, [a]</text>
+  <rect x="242" y="169" width="134" height="28" rx="8" fill="#efe7fa"/>
+  <text x="256" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#644b80">add eax, [b]</text>
+  <rect x="242" y="204" width="134" height="28" rx="8" fill="#efe7fa"/>
+  <text x="256" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#644b80">jmp etiket</text>
+
+  <!-- arrow 2 -->
+  <path d="M404 163 H429" fill="none" stroke="#6b88a4" stroke-width="2.5"/>
+  <polygon points="436,163 426,157 426,169" fill="#6b88a4"/>
+  <text x="401" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60758a">komutlar</text>
+
+  <!-- cpu -->
+  <g filter="url(#shadow)">
+    <rect x="442" y="64" width="166" height="198" rx="20" fill="url(#cpuGrad)" stroke="#a8d5be"/>
+  </g>
+  <rect x="462" y="82" width="126" height="30" rx="9" fill="#f6fffa" opacity="0.85"/>
+  <text x="486" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356550">İşlemci</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="461" y="127" width="57" height="45" rx="10" fill="#bde5d1"/>
+    <rect x="532" y="127" width="57" height="45" rx="10" fill="#ccead7"/>
+    <rect x="461" y="188" width="128" height="48" rx="10" fill="#d9f0e3"/>
+  </g>
+  <text x="471" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#366550">RAX</text>
+  <text x="468" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7865">yazmaç</text>
+  <text x="542" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#366550">RIP</text>
+  <text x="538" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7865">sıradaki</text>
+  <text x="482" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#366550">Bellek ve yığın</text>
+  <text x="478" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7865">değerler ve adresler</text>
+
+  <!-- internal relationships -->
+  <path d="M490 174 V184" stroke="#6b9d82" stroke-width="2"/>
+  <polygon points="490,188 485,180 495,180" fill="#6b9d82"/>
+  <path d="M560 174 V184" stroke="#6b9d82" stroke-width="2"/>
+  <polygon points="560,188 555,180 565,180" fill="#6b9d82"/>
+
+  <!-- bottom insight -->
+  <g filter="url(#smallShadow)">
+    <rect x="68" y="270" width="498" height="31" rx="14" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <circle cx="89" cy="285" r="8" fill="#f5c97a"/>
+  <path d="M89 280 V286 M89 290 V291" stroke="#76521e" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="106" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c6273">Soyut işlem → küçük komutlar → yazmaç, bayrak ve bellek hareketi</text>
+</svg>

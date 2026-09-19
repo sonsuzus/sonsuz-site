@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="cameraGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7089c8"/>
+      <stop offset="100%" stop-color="#536cae"/>
+    </linearGradient>
+    <linearGradient id="sphereGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3c9a6"/>
+      <stop offset="55%" stop-color="#df916e"/>
+      <stop offset="100%" stop-color="#b75f61"/>
+    </linearGradient>
+    <linearGradient id="lightGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff9bd"/>
+      <stop offset="100%" stop-color="#f3c957"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#5c7187" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#f1bf4c" flood-opacity="0.45"/>
+    </filter>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#a9c4d3" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <rect width="640" height="320" fill="url(#grid)"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456078">IŞIN İZLEME</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#758a98">Pikselden gerçekçi renge</text>
+
+  <!-- Camera panel -->
+  <g filter="url(#shadow)">
+    <rect x="26" y="96" width="105" height="126" rx="20" fill="#eaf0ff" stroke="#d5e0fa"/>
+  </g>
+  <text x="78.5" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#455d86">Kamera</text>
+  <rect x="48" y="139" width="42" height="29" rx="7" fill="url(#cameraGrad)"/>
+  <path d="M90 145 L108 137 L108 170 L90 162 Z" fill="#7188c4"/>
+  <circle cx="69" cy="153.5" r="8" fill="#dff5fb" stroke="#456995" stroke-width="2"/>
+  <path d="M48 189 H109" stroke="#b9c9e7" stroke-width="2" stroke-linecap="round"/>
+  <text x="78.5" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617794">Piksel ışını</text>
+
+  <!-- primary ray -->
+  <path d="M121 154 L252 166" fill="none" stroke="#5878be" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="252,166 241,160 242,171" fill="#5878be"/>
+  <path d="M130 168 L250 202" fill="none" stroke="#90a9d9" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="163" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58719c">R(t) = O + tD</text>
+
+  <!-- Scene core -->
+  <g filter="url(#shadow)">
+    <rect x="238" y="72" width="166" height="172" rx="26" fill="#ffffff" stroke="#dbe9e8"/>
+  </g>
+  <text x="321" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456b70">SAHNE</text>
+
+  <!-- sphere -->
+  <circle cx="302" cy="171" r="48" fill="url(#sphereGrad)"/>
+  <ellipse cx="286" cy="151" rx="15" ry="20" fill="#fff4df" opacity="0.5"/>
+  <path d="M262 211 Q302 230 341 207" fill="none" stroke="#a75158" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="261" cy="174" r="5.5" fill="#fffdf4" stroke="#ad5c5d" stroke-width="2"/>
+  <text x="302" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70646a">En yakın kesişim</text>
+
+  <!-- normal -->
+  <path d="M261 174 L226 197" fill="none" stroke="#5a9e9a" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="226,197 233,187 238,196" fill="#5a9e9a"/>
+  <text x="208" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c8582">Normal N</text>
+
+  <!-- light -->
+  <g filter="url(#softGlow)">
+    <circle cx="367" cy="122" r="19" fill="url(#lightGrad)" stroke="#edbd4a"/>
+    <path d="M367 94 V87 M367 157 V150 M340 122 H333 M401 122 H394 M348 103 L342 97 M386 141 L392 147 M386 103 L392 97" stroke="#e1b14e" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <path d="M354 136 L294 164" fill="none" stroke="#e5ae43" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <polygon points="294,164 301,155 305,164" fill="#e5ae43"/>
+  <text x="365" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c7631">Işık L</text>
+
+  <!-- outgoing flow -->
+  <path d="M407 159 H444" fill="none" stroke="#668a87" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="444,159 433,153 433,165" fill="#668a87"/>
+
+  <!-- Shading node -->
+  <g filter="url(#shadow)">
+    <rect x="449" y="116" width="163" height="88" rx="19" fill="#e5f3ee" stroke="#cde5dc"/>
+  </g>
+  <text x="530.5" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f716a">Yüzey hesabı</text>
+  <rect x="470" y="155" width="121" height="29" rx="10" fill="#ffffff" stroke="#d2e6e0"/>
+  <text x="530.5" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557d77">Lambert · N · L</text>
+
+  <!-- rays branch -->
+  <path d="M527 205 V227 H463 V246" fill="none" stroke="#8aa5ac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="463,246 458,236 468,236" fill="#8aa5ac"/>
+  <path d="M527 205 V246" fill="none" stroke="#8aa5ac" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="527,246 522,236 532,236" fill="#8aa5ac"/>
+  <path d="M527 227 H591 V246" fill="none" stroke="#8aa5ac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="591,246 586,236 596,236" fill="#8aa5ac"/>
+
+  <g filter="url(#shadow)">
+    <rect x="418" y="251" width="90" height="43" rx="13" fill="#edf0ff" stroke="#d9def5"/>
+    <rect x="482" y="251" width="90" height="43" rx="13" fill="#fff1ed" stroke="#f1d9d1"/>
+    <rect x="547" y="251" width="78" height="43" rx="13" fill="#e7f6f2" stroke="#cce8df"/>
+  </g>
+  <text x="463" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#596ca0">Gölge</text>
+  <text x="463" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7785aa">ışını</text>
+  <text x="527" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a2635b">Yansıma</text>
+  <text x="527" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ba8178">sekonder</text>
+  <text x="586" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#477f72">Kırılma</text>
+  <text x="586" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d9d92">malzeme</text>
+
+  <!-- acceleration badge -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="256" width="161" height="38" rx="14" fill="#eef7ed" stroke="#d4e9d0"/>
+  </g>
+  <path d="M45 276 L53 267 L61 276 L69 263 L77 276" fill="none" stroke="#6ca270" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="128" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#56845a">BVH · Hızlandırma</text>
+
+  <path d="M188 275 H224" fill="none" stroke="#8eb090" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="224,275 214,270 214,280" fill="#8eb090"/>
+</svg>

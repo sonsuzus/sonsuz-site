@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b8d8ff"/>
+      <stop offset="1" stop-color="#c7efd6"/>
+    </linearGradient>
+    <linearGradient id="terrain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf4ff"/>
+      <stop offset="0.43" stop-color="#b9dba4"/>
+      <stop offset="0.72" stop-color="#89b978"/>
+      <stop offset="1" stop-color="#668d76"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#66849b" flood-opacity="0.19"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8994" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="42" cy="37" r="66" fill="#dcecff" opacity="0.58"/>
+  <circle cx="603" cy="290" r="91" fill="#ddf1d4" opacity="0.53"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6479">PROSEDÜREL SONSUZ DÜNYA</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75909d">aynı tohum • tutarlı arazi • ihtiyaç anında üretim</text>
+
+  <!-- Input cards -->
+  <g filter="url(#softShadow)">
+    <rect x="28" y="80" width="124" height="55" rx="14" fill="#ffffff"/>
+    <rect x="28" y="145" width="124" height="55" rx="14" fill="#ffffff"/>
+    <rect x="28" y="210" width="124" height="55" rx="14" fill="#ffffff"/>
+  </g>
+
+  <circle cx="52" cy="107" r="12" fill="#c9b9ec"/>
+  <path d="M45 109 C48 100 51 115 55 105 C58 98 60 111 62 106" fill="none" stroke="#725ca7" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="73" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b70">Tohum</text>
+  <text x="73" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77909f">sabit değer</text>
+
+  <circle cx="52" cy="172" r="12" fill="#f8d5ad"/>
+  <path d="M43 174 C47 160 50 182 54 169 C58 156 60 181 62 171" fill="none" stroke="#be7f42" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="73" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b70">Oktavlar</text>
+  <text x="73" y="186" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77909f">ölçek ve ayrıntı</text>
+
+  <circle cx="52" cy="237" r="12" fill="#badfc8"/>
+  <path d="M46 232 L58 232 L58 242 L46 242 Z M49 235 L55 235 M49 239 L55 239" fill="none" stroke="#4d916d" stroke-width="1.5"/>
+  <text x="73" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b70">Küresel konum</text>
+  <text x="73" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77909f">x ve y koordinatı</text>
+
+  <!-- arrows into core -->
+  <path d="M152 107 H180" fill="none" stroke="#86a6b4" stroke-width="2"/>
+  <polygon points="180,107 172,102 172,112" fill="#86a6b4"/>
+  <path d="M152 172 H180" fill="none" stroke="#86a6b4" stroke-width="2"/>
+  <polygon points="180,172 172,167 172,177" fill="#86a6b4"/>
+  <path d="M152 237 H180" fill="none" stroke="#86a6b4" stroke-width="2"/>
+  <polygon points="180,237 172,232 172,242" fill="#86a6b4"/>
+
+  <!-- Core -->
+  <g filter="url(#shadow)">
+    <rect x="180" y="82" width="172" height="181" rx="25" fill="url(#core)"/>
+    <rect x="192" y="94" width="148" height="157" rx="19" fill="#ffffff" opacity="0.55"/>
+  </g>
+  <text x="266" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385e70">Perlin Gürültüsü</text>
+  <text x="266" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#678392">yumuşak geçiş</text>
+
+  <g transform="translate(214 153)">
+    <rect width="104" height="66" rx="10" fill="#e9f5fb" stroke="#a8cad7"/>
+    <path d="M13 51 C22 45 28 35 39 38 C48 41 53 21 65 26 C76 30 78 45 91 39" fill="none" stroke="#5695a9" stroke-width="3" stroke-linecap="round"/>
+    <path d="M13 56 H91" fill="none" stroke="#b6d3dc" stroke-width="1"/>
+    <circle cx="21" cy="47" r="3" fill="#7763af"/>
+    <circle cx="50" cy="31" r="3" fill="#7763af"/>
+    <circle cx="78" cy="40" r="3" fill="#7763af"/>
+  </g>
+  <text x="266" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54778a">yükseklik haritası</text>
+
+  <!-- arrow core to chunks -->
+  <path d="M352 172 H381" fill="none" stroke="#78a5a5" stroke-width="2.2"/>
+  <polygon points="381,172 372,166 372,178" fill="#78a5a5"/>
+
+  <!-- Chunk manager -->
+  <g filter="url(#shadow)">
+    <rect x="382" y="80" width="125" height="184" rx="22" fill="#ffffff"/>
+  </g>
+  <text x="444" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405f70">Parça Yönetimi</text>
+  <text x="444" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79909c">yakın alan aktif</text>
+
+  <g transform="translate(402 142)">
+    <rect x="0" y="0" width="26" height="26" rx="5" fill="#c5e6e4"/>
+    <rect x="30" y="0" width="26" height="26" rx="5" fill="#b7d7f2"/>
+    <rect x="60" y="0" width="26" height="26" rx="5" fill="#d5e9ba"/>
+    <rect x="0" y="30" width="26" height="26" rx="5" fill="#b7d7f2"/>
+    <rect x="30" y="30" width="26" height="26" rx="5" fill="#7ebaa0" stroke="#3f896b" stroke-width="2"/>
+    <rect x="60" y="30" width="26" height="26" rx="5" fill="#c9e4c5"/>
+    <rect x="0" y="60" width="26" height="26" rx="5" fill="#d5e9ba"/>
+    <rect x="30" y="60" width="26" height="26" rx="5" fill="#b9d9f2"/>
+    <rect x="60" y="60" width="26" height="26" rx="5" fill="#c5e6e4"/>
+    <circle cx="43" cy="43" r="5" fill="#ffffff"/>
+  </g>
+  <text x="444" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54778a">önbellek ve yükleme</text>
+
+  <!-- to world -->
+  <path d="M507 172 H531" fill="none" stroke="#78a5a5" stroke-width="2.2"/>
+  <polygon points="531,172 522,166 522,178" fill="#78a5a5"/>
+
+  <!-- World output -->
+  <g filter="url(#shadow)">
+    <rect x="532" y="80" width="80" height="184" rx="22" fill="#ffffff"/>
+  </g>
+  <text x="572" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405f70">Dünya</text>
+  <rect x="544" y="124" width="56" height="98" rx="12" fill="url(#terrain)"/>
+  <path d="M544 172 C554 165 563 176 572 168 C582 158 590 167 600 158 V222 H544 Z" fill="#72a47a" opacity="0.8"/>
+  <path d="M544 152 C554 144 560 154 570 148 C581 140 590 149 600 142 V160 C590 167 582 158 572 168 C563 176 554 165 544 172 Z" fill="#c5e4f6" opacity="0.9"/>
+  <path d="M551 189 L560 174 L568 189 Z" fill="#537d64"/>
+  <path d="M569 197 L580 177 L592 197 Z" fill="#4d765d"/>
+  <circle cx="585" cy="137" r="8" fill="#f7d68a"/>
+  <text x="572" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54778a">sonsuz görünüm</text>
+
+  <!-- footer details -->
+  <g opacity="0.85">
+    <rect x="28" y="284" width="584" height="1" fill="#bad3d5"/>
+    <circle cx="42" cy="301" r="5" fill="#8068ad"/>
+    <text x="53" y="305" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7885">aynı tohum</text>
+    <circle cx="189" cy="301" r="5" fill="#5d9b7b"/>
+    <text x="200" y="305" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7885">dikişsiz koordinatlar</text>
+    <circle cx="394" cy="301" r="5" fill="#d49455"/>
+    <text x="405" y="305" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7885">talepte üretim</text>
+  </g>
+</svg>

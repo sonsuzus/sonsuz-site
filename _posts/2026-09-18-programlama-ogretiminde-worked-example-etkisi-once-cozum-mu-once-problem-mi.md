@@ -12,9 +12,13 @@ tags:
   - problem çözme
   - algoritma
 toc: true
+image: /img/programlama-ogretiminde-worked-59.png
 ---
 
 Programlama öğrenirken doğrudan boş bir editörle karşılaşmak bazen yüzme bilmeden havuza atılmaya benzer. Öğrenci problemi, sözdizimini, algoritmayı ve hata mesajlarını aynı anda yönetmeye çalışır. **Worked example**, yani adım adım açıklanmış çözülmüş örnek yaklaşımı, bu yükü azaltmayı amaçlar. Peki öğrenciye önce çözüm mü gösterilmeli, yoksa düşünmesi için önce problem mi verilmelidir?
+
+![programlama-ogretiminde-worked-59](/img/programlama-ogretiminde-worked-59.svg)
+
 ``
 ## Worked example etkisi nedir?
 

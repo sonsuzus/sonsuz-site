@@ -12,6 +12,7 @@ tags:
   - bellek hiyerarşisi
   - performans
 toc: true
+image: /img/onbellek-hiyerarsisi-l1den-47.png
 ---
 
 Bir işlemcinin saniyede milyarlarca komut çalıştırabilmesi etkileyicidir; fakat ihtiyaç duyduğu veriyi beklerken hiçbir şey yapamaması pek havalı değildir. Modern bilgisayarlarda L1, L2 ve L3 önbelleklerin bulunmasının temel nedeni bu beklemeyi azaltmaktır. Veriler işlemci çekirdeğinden uzaklaştıkça erişim süresi artar; kapasite büyürken hız katman katman düşer.
@@ -26,6 +27,9 @@ Bu yapının arkasındaki ana fikir **yerellik ilkesidir**. Programlar çoğunlu
 | L2 cache | 256 KB–2 MB | 4–15 çevrim | Daha büyük, ancak biraz daha yavaş |
 | L3 cache | Birkaç–onlarca MB | 20–60 çevrim | Genellikle çekirdekler arasında paylaşılır |
 | RAM | Birkaç–yüzlerce GB | 100–300 çevrim | Büyük kapasite, yüksek gecikme |
+
+![onbellek-hiyerarsisi-l1den-47](/img/onbellek-hiyerarsisi-l1den-47.svg)
+
 
 Değerler mimariye göre değişir; tablo kesin bir donanım sözleşmesi değil, büyüklük sıralamasını gösteren bir yol haritasıdır. L1 işlemcinin masasıysa RAM, binanın arşiv odasıdır. Masadaki belgeye uzanmak kolaydır; arşive gitmek için koridorda küçük bir yolculuk gerekir.
 

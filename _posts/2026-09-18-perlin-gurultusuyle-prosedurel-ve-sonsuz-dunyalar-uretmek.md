@@ -12,6 +12,7 @@ tags:
   - javascript
   - algoritma
 toc: true
+image: /img/perlin-gurultusuyle-prosedurel-86.png
 ---
 
 Bir oyun dünyasını kare kare elle tasarlamak romantik görünebilir; ta ki milyonuncu ağacı yerleştirmeniz gerekene kadar! Prosedürel üretim, içeriği önceden saklamak yerine matematiksel kurallarla ihtiyaç anında oluşturur. Perlin gürültüsü ise rastgeleliğin kaotik görüntüsünü yumuşatarak dağlar, vadiler, adalar ve biyomlar üretmemizi sağlayan en kullanışlı araçlardan biridir.
@@ -25,6 +26,9 @@ Her hücreye bağımsız bir rastgele yükseklik verirsek komşu noktalar arası
 | Bağımsız rastgelelik | İlişkisiz | Parazitli ve keskin | Eşya düşürme, zar atma |
 | Perlin gürültüsü | Yumuşak geçişli | Organik ve doğal | Arazi, bulut, mağara |
 | Sabit desen | Tamamen öngörülebilir | Tekrarlı | Hazır bölümler, bulmacalar |
+
+![perlin-gurultusuyle-prosedurel-86](/img/perlin-gurultusuyle-prosedurel-86.svg)
+
 
 Perlin algoritması, ızgara köşelerine sözde rastgele gradyan vektörleri atar. Bir noktanın değeri; köşelere olan uzaklıklar, gradyanlarla yapılan skaler çarpımlar ve yumuşak interpolasyon kullanılarak hesaplanır. Klasik yumuşatma fonksiyonu şöyledir:
 

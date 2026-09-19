@@ -12,7 +12,11 @@ tags:
   - python
   - üretken yapay zeka
 toc: true
+image: /img/difuzyon-modelleri-gurultuden-55.png
 ---
+
+![difuzyon-modelleri-gurultuden-55](/img/difuzyon-modelleri-gurultuden-55.svg)
+
 
 Bir televizyonun karıncalı ekranına uzun süre bakıp içinden bir kedi resmi çıkmasını beklemek pek mantıklı görünmeyebilir. Difüzyon modelleri ise tam olarak bunu yapar: Rastgele gürültüyle başlayan veriyi, öğrendikleri örüntüler sayesinde adım adım anlamlı bir görsele dönüştürür. Stable Diffusion ve benzeri üretken yapay zekâ sistemlerinin arkasındaki bu yaklaşım, kontrollü bir bozma ve onarma sürecine dayanır.
 

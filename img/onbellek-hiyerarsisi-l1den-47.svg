@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ee"/>
+    </linearGradient>
+    <linearGradient id="ramFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4d9df"/>
+      <stop offset="100%" stop-color="#edbdca"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7590a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5e7d89" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="64" cy="44" r="58" fill="#dceefa" opacity="0.6"/>
+  <circle cx="586" cy="274" r="78" fill="#dcefdc" opacity="0.5"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546a">BELLEK HİYERARŞİSİ</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="24" y="113" width="92" height="94" rx="20" fill="#d9eafa" filter="url(#shadow)"/>
+    <circle cx="70" cy="142" r="17" fill="#7faed1"/>
+    <rect x="61" y="133" width="18" height="18" rx="4" fill="#f8fcff"/>
+    <path d="M65 129 L65 124 M70 129 L70 123 M75 129 L75 124 M65 155 L65 160 M70 155 L70 161 M75 155 L75 160 M57 137 L52 137 M57 143 L51 143 M83 137 L88 137 M83 143 L89 143" stroke="#578aaf" stroke-width="2" stroke-linecap="round"/>
+    <text x="70" y="181" text-anchor="middle" fill="#284b63" font-weight="700">İşlemci</text>
+    <text x="70" y="196" text-anchor="middle" fill="#537286">Çekirdek</text>
+
+    <path d="M120 160 H140" stroke="#7795a8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="140,154 151,160 140,166" fill="#7795a8"/>
+
+    <rect x="155" y="123" width="92" height="74" rx="17" fill="#d8f1e8" filter="url(#shadow)"/>
+    <rect x="166" y="135" width="16" height="16" rx="5" fill="#83c9b2"/>
+    <path d="M170 143 H178 M174 139 V147" stroke="#f6fffb" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="201" y="151" text-anchor="middle" fill="#255d51" font-weight="700">L1 Önbellek</text>
+    <text x="201" y="173" text-anchor="middle" fill="#48796d">En hızlı</text>
+    <text x="201" y="187" text-anchor="middle" fill="#48796d">Küçük</text>
+
+    <path d="M251 160 H270" stroke="#7795a8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="270,154 281,160 270,166" fill="#7795a8"/>
+
+    <rect x="285" y="110" width="102" height="100" rx="19" fill="#dce7fa" filter="url(#shadow)"/>
+    <rect x="298" y="124" width="18" height="18" rx="5" fill="#91aee1"/>
+    <path d="M302 133 H312 M307 128 V138" stroke="#fbfdff" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="336" y="153" text-anchor="middle" fill="#405889" font-weight="700">L2 Önbellek</text>
+    <text x="336" y="177" text-anchor="middle" fill="#6076a2">Denge</text>
+    <text x="336" y="192" text-anchor="middle" fill="#6076a2">Daha büyük</text>
+
+    <path d="M391 160 H410" stroke="#7795a8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="410,154 421,160 410,166" fill="#7795a8"/>
+
+    <rect x="425" y="93" width="112" height="134" rx="21" fill="#eee0f7" filter="url(#shadow)"/>
+    <rect x="440" y="109" width="19" height="19" rx="5" fill="#ba93d2"/>
+    <path d="M444 118 H455 M449.5 113 V123" stroke="#fffaff" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="481" y="151" text-anchor="middle" fill="#704885" font-weight="700">L3 Önbellek</text>
+    <text x="481" y="176" text-anchor="middle" fill="#8a669e">Paylaşımlı</text>
+    <text x="481" y="192" text-anchor="middle" fill="#8a669e">Daha yavaş</text>
+    <text x="481" y="208" text-anchor="middle" fill="#8a669e">Daha büyük</text>
+
+    <path d="M541 160 H552" stroke="#7795a8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="552,154 563,160 552,166" fill="#7795a8"/>
+
+    <rect x="567" y="65" width="56" height="190" rx="19" fill="url(#ramFill)" filter="url(#shadow)"/>
+    <rect x="580" y="84" width="30" height="16" rx="4" fill="#d4869b"/>
+    <rect x="580" y="108" width="30" height="16" rx="4" fill="#d4869b"/>
+    <rect x="580" y="132" width="30" height="16" rx="4" fill="#d4869b"/>
+    <rect x="580" y="156" width="30" height="16" rx="4" fill="#d4869b"/>
+    <rect x="580" y="180" width="30" height="16" rx="4" fill="#d4869b"/>
+    <text x="595" y="219" text-anchor="middle" fill="#804455" font-weight="700">RAM</text>
+    <text x="595" y="235" text-anchor="middle" fill="#9b6270">Büyük</text>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="61" y="267" width="174" height="31" rx="13" fill="#ffffff" opacity="0.86" filter="url(#softShadow)"/>
+    <circle cx="79" cy="282" r="6" fill="#6bc3a6"/>
+    <text x="92" y="286" fill="#3f6d62">Kapasite artar</text>
+
+    <rect x="253" y="267" width="174" height="31" rx="13" fill="#ffffff" opacity="0.86" filter="url(#softShadow)"/>
+    <circle cx="271" cy="282" r="6" fill="#e39a9d"/>
+    <text x="284" y="286" fill="#80545d">Gecikme artar</text>
+
+    <rect x="445" y="267" width="145" height="31" rx="13" fill="#ffffff" opacity="0.86" filter="url(#softShadow)"/>
+    <path d="M461 282 H474" stroke="#7598c1" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="474,277 481,282 474,287" fill="#7598c1"/>
+    <text x="489" y="286" fill="#506a89">Kaçırma: alt katman</text>
+  </g>
+</svg>

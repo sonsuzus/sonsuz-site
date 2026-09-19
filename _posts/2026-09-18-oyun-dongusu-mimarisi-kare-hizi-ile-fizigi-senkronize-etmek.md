@@ -12,9 +12,13 @@ tags:
   - kare hızı
   - mimari
 toc: true
+image: /img/oyun-dongusu-mimarisi-26.png
 ---
 
 Bir oyun çalışırken ekrandaki karakterler hareket eder, fizik hesaplanır, oyuncu girdileri okunur ve görüntü yeniden çizilir. Bütün bu işleri durmaksızın yöneten yapıya **oyun döngüsü**, yani *game loop* denir. Ancak ekran kartı saniyede 144 kare üretirken fiziğin aynı hızda güncellenmesi oyunu farklı bilgisayarlarda tutarsızlaştırabilir. Sağlam bir mimarinin sırrı, görüntüleme ile simülasyonu birbirinden ayırmaktır.
+
+
+![oyun-dongusu-mimarisi-26](/img/oyun-dongusu-mimarisi-26.svg)
 
 ``
 

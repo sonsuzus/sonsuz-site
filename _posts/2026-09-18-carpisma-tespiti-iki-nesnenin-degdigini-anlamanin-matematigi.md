@@ -12,7 +12,11 @@ tags:
   - geometri
   - typescript
 toc: true
+image: /img/carpisma-tespiti-iki-81.png
 ---
+
+![carpisma-tespiti-iki-81](/img/carpisma-tespiti-iki-81.svg)
+
 
 Bir oyun karakteri duvarın içinden geçiyorsa, top zemine değmeden zıplıyorsa veya iki uzay gemisi birbirine çarpmasına rağmen yollarına devam ediyorsa suçlu çoğunlukla çarpışma tespitidir. Bilgisayarlar nesneleri gerçekten “görmez”; koordinatlar ve geometrik şekiller üzerinde yapılan matematiksel testlerle iki nesnenin temas edip etmediğine karar verir.
 ``
