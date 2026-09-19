@@ -12,6 +12,7 @@ tags:
   - stack
   - güvenli kodlama
 toc: true
+image: /img/buffer-overflowun-anatomisi-69.png
 ---
 
 Bir programa “Şu kutuya en fazla 16 bayt koyabilirsin” dediğimizi, ardından 40 bayt veri gönderdiğimizi düşünelim. Güvenli bir dil taşan kısmı reddedebilir; C veya C++ gibi düşük seviyeli dillerdeyse veri komşu bellek alanlarına doğru ilerleyebilir. İşte **buffer overflow**, yani tampon taşması, ayrılan bellek sınırlarının dışına veri yazılmasıdır. Sonuç basit bir çökmeden program akışının değiştirilmesine kadar uzanabilir.
@@ -99,3 +100,6 @@ void mesaj_yaz(const char *girdi) {
 Modern sistemler tek bir önleme güvenmez. **Stack canary**, dönüş bilgisine ulaşılmadan önce değişip değişmediği kontrol edilen bekçi değeridir. **ASLR**, bellek adreslerini rastgeleleştirir. **DEP/NX**, veri bölgelerinin kod gibi çalıştırılmasını zorlaştırır. Derleyicilerin sınır denetimleri ve AddressSanitizer gibi araçlar da hataları geliştirme sırasında görünür kılar.
 
 Yine de en güçlü savunma, doğru boyut hesaplamak, kullanıcı girdisini doğrulamak, güvensiz fonksiyonlardan kaçınmak ve mümkün olduğunda Rust, Java veya C# gibi bellek güvenliği sağlayan dilleri tercih etmektir. Kısacası buffer overflow, “birkaç fazla karakter” değil; bellek düzeni ile program kontrolünün birbirine ne kadar yakın olduğunun çarpıcı bir hatırlatıcısıdır.
+
+![buffer-overflowun-anatomisi-69](/img/buffer-overflowun-anatomisi-69.svg)
+

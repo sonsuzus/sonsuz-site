@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="router" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9e7ff"/>
+      <stop offset="1" stop-color="#c7d8fa"/>
+    </linearGradient>
+    <linearGradient id="expert" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7f5e8"/>
+      <stop offset="1" stop-color="#d1ead6"/>
+    </linearGradient>
+    <linearGradient id="active" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0c9"/>
+      <stop offset="1" stop-color="#f8db96"/>
+    </linearGradient>
+    <linearGradient id="merge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eadffd"/>
+      <stop offset="1" stop-color="#d9c8f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#54708d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#54708d" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="85" cy="44" r="72" fill="#dceeff" opacity="0.45"/>
+  <circle cx="578" cy="282" r="100" fill="#dff1d9" opacity="0.42"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41546b">MoE • Seçici uzman yönlendirmesi</text>
+
+  <rect x="27" y="96" width="105" height="126" rx="18" fill="#ffffff" opacity="0.82" filter="url(#shadow)"/>
+  <text x="79.5" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Token girdileri</text>
+
+  <rect x="43" y="136" width="73" height="20" rx="10" fill="#e7f0ff"/>
+  <circle cx="54" cy="146" r="4" fill="#7199dc"/>
+  <text x="65" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6380">Kod</text>
+
+  <rect x="43" y="163" width="73" height="20" rx="10" fill="#eaf7e9"/>
+  <circle cx="54" cy="173" r="4" fill="#78a97c"/>
+  <text x="65" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6380">Dil</text>
+
+  <rect x="43" y="190" width="73" height="20" rx="10" fill="#fff0d5"/>
+  <circle cx="54" cy="200" r="4" fill="#d69d4d"/>
+  <text x="65" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6380">Sayı</text>
+
+  <path d="M132 159 H163" fill="none" stroke="#7d98ae" stroke-width="2"/>
+  <polygon points="163,159 155,154 155,164" fill="#7d98ae"/>
+
+  <rect x="164" y="92" width="132" height="134" rx="22" fill="url(#router)" filter="url(#shadow)"/>
+  <circle cx="230" cy="124" r="18" fill="#f7fbff" opacity="0.85"/>
+  <path d="M220 124 H240 M230 114 V134 M222 117 L238 131 M238 117 L222 131" stroke="#6686bd" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="230" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365276">Yönlendirici</text>
+  <text x="230" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536b83">Skorlar ve olasılıklar</text>
+  <rect x="190" y="194" width="80" height="20" rx="10" fill="#ffffff" opacity="0.78"/>
+  <text x="230" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5874a0">En iyi 2</text>
+
+  <path d="M296 128 C313 128 312 89 330 89" fill="none" stroke="#d39a3e" stroke-width="2.5"/>
+  <polygon points="330,89 322,84 323,94" fill="#d39a3e"/>
+  <path d="M296 155 C313 155 312 142 330 142" fill="none" stroke="#93a7b5" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M296 183 C313 183 312 195 330 195" fill="none" stroke="#d39a3e" stroke-width="2.5"/>
+  <polygon points="330,195 322,190 323,200" fill="#d39a3e"/>
+  <path d="M296 207 C313 207 312 248 330 248" fill="none" stroke="#93a7b5" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <text x="374" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526a75">Uzman havuzu</text>
+
+  <rect x="330" y="66" width="98" height="45" rx="14" fill="url(#active)" filter="url(#soft)"/>
+  <circle cx="349" cy="88.5" r="10" fill="#fffaf0"/>
+  <path d="M344 91 L349 81 L354 91" fill="none" stroke="#bd8533" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="389" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#74532b">Uzman 1</text>
+
+  <rect x="330" y="119" width="98" height="45" rx="14" fill="url(#expert)" filter="url(#soft)"/>
+  <circle cx="349" cy="141.5" r="10" fill="#f7fff6"/>
+  <path d="M344 145 H354 M344 140 H354 M344 135 H354" stroke="#66986d" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="389" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59775d">Uzman 2</text>
+
+  <rect x="330" y="172" width="98" height="45" rx="14" fill="url(#active)" filter="url(#soft)"/>
+  <circle cx="349" cy="194.5" r="10" fill="#fffaf0"/>
+  <path d="M344 198 L349 188 L354 198" fill="none" stroke="#bd8533" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="389" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#74532b">Uzman 3</text>
+
+  <rect x="330" y="225" width="98" height="45" rx="14" fill="url(#expert)" filter="url(#soft)"/>
+  <circle cx="349" cy="247.5" r="10" fill="#f7fff6"/>
+  <path d="M344 251 H354 M344 246 H354 M344 241 H354" stroke="#66986d" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="389" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59775d">Uzman N</text>
+
+  <path d="M428 89 C445 89 444 145 462 145" fill="none" stroke="#d39a3e" stroke-width="2.5"/>
+  <polygon points="462,145 454,140 455,150" fill="#d39a3e"/>
+  <path d="M428 195 C445 195 444 169 462 169" fill="none" stroke="#d39a3e" stroke-width="2.5"/>
+  <polygon points="462,169 454,164 455,174" fill="#d39a3e"/>
+
+  <rect x="463" y="111" width="96" height="92" rx="22" fill="url(#merge)" filter="url(#shadow)"/>
+  <circle cx="511" cy="138" r="15" fill="#faf8ff"/>
+  <path d="M502 140 H520 M511 129 V149" stroke="#876eaf" stroke-width="2" stroke-linecap="round"/>
+  <text x="511" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5c477d">Ağırlıklı</text>
+  <text x="511" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c477d">birleştirme</text>
+
+  <path d="M559 157 H584" fill="none" stroke="#826da5" stroke-width="2"/>
+  <polygon points="584,157 576,152 576,162" fill="#826da5"/>
+  <rect x="585" y="132" width="39" height="50" rx="14" fill="#ffffff" filter="url(#soft)"/>
+  <path d="M598 147 C603 142 612 146 611 153 C610 161 601 165 598 169 C595 165 588 160 588 153 C588 146 595 142 598 147Z" fill="#9d87c5" opacity="0.8"/>
+  <text x="604.5" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6174">Çıktı</text>
+
+  <rect x="176" y="255" width="250" height="42" rx="15" fill="#ffffff" opacity="0.88" filter="url(#soft)"/>
+  <circle cx="199" cy="276" r="11" fill="#d9efe0"/>
+  <path d="M194 276 L198 280 L205 272" fill="none" stroke="#619a70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="217" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#52715b">Yük dengeleme</text>
+  <text x="334" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7d87">uzmanlar dengeli kullanılır</text>
+
+  <path d="M380 255 C399 242 401 226 390 218" fill="none" stroke="#75a77c" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <polygon points="390,218 398,222 392,228" fill="#75a77c"/>
+</svg>

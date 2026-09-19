@@ -12,9 +12,13 @@ tags:
   - dns
   - anycast
 toc: true
+image: /img/cdn-mimarisi-icerik-74.png
 ---
 
 Bir web sitesini açtığınızda görsellerin, videoların ve JavaScript dosyalarının kıtalar arası uzun bir yolculuğa çıkmasını istemezsiniz. CDN, yani İçerik Dağıtım Ağı, popüler içerikleri dünyanın farklı bölgelerindeki sunuculara kopyalayarak kullanıcıya yakın bir noktadan teslim eder. Ancak buradaki “yakınlık” yalnızca kilometre hesabı değildir; ağ gecikmesi, yönlendirme kalitesi, sunucu yükü ve erişilebilirlik de seçimi etkiler.
+
+
+![cdn-mimarisi-icerik-74](/img/cdn-mimarisi-icerik-74.svg)
 
 ``
 

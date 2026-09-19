@@ -12,6 +12,7 @@ tags:
   - python
   - güvenli kodlama
 toc: true
+image: /img/yan-kanal-saldirilari-85.png
 ---
 
 Bir parola denetimi yalnızca “doğru” veya “yanlış” cevabı veriyor gibi görünebilir. Fakat işlem süresi de istemeden bilgi taşıyorsa saldırgan, kapının anahtarını görmeden kilidin sesini dinleyebilir. Zamanlama saldırıları, yazılımın ne söylediğinden çok cevabı ne kadar sürede verdiğini inceleyen yan kanal saldırılarıdır.
@@ -31,6 +32,9 @@ Burada $T_0$ sabit işlem maliyeti, $k$ doğru eşleşen karakter sayısı, $\De
 | Erken çıkan döngü | İlk farkta durur | Yüksek |
 | Normal eşitlik operatörü | Uygulamaya göre değişir | Belirsiz |
 | Sabit zamanlı karşılaştırma | Tüm baytları işler | Daha düşük |
+
+![yan-kanal-saldirilari-85](/img/yan-kanal-saldirilari-85.svg)
+
 
 ## Savunmasız yaklaşım
 

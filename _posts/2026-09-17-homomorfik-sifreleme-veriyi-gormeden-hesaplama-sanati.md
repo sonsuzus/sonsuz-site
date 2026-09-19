@@ -12,9 +12,13 @@ tags:
   - bulut bilişim
   - python
 toc: true
+image: /img/homomorfik-sifreleme-veriyi-91.png
 ---
 
 Bir bulut sunucusunun verilerinizi hiç görmeden maaş ortalaması hesapladığını, tıbbi kayıtlarınızı okumadan hastalık riski tahmin ettiğini düşünün. Kulağa sihir gibi gelse de homomorfik şifreleme tam olarak bunu hedefler: Veriler şifreli kalırken üzerlerinde matematiksel işlemler yapılabilir. Sunucu yalnızca anlamsız görünen şifreli değerlerle uğraşır; sonucu anlamlı hâle getirebilen tek taraf, gizli anahtarın sahibidir.
+
+![homomorfik-sifreleme-veriyi-91](/img/homomorfik-sifreleme-veriyi-91.svg)
+
 ``
 ## Temel fikir nasıl çalışır?
 

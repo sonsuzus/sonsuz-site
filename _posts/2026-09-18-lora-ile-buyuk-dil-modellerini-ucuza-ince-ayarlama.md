@@ -13,6 +13,7 @@ tags:
   - peft
   - qlora
 toc: true
+image: /img/lora-ile-buyuk-36.png
 ---
 
 Milyarlarca parametreye sahip bir dil modelini kendi verilerimizle eğitmek kulağa pahalı ekran kartlarıyla dolu bir veri merkezi gerektiriyormuş gibi gelebilir. LoRA, yani **Low-Rank Adaptation**, modelin tamamını değiştirmek yerine küçük ve eğitilebilir ek matrisler kullanarak bu maliyeti ciddi biçimde azaltır. Böylece tek bir güçlü tüketici ekran kartıyla bile alan odaklı modeller geliştirmek mümkün hâle gelir.
@@ -40,6 +41,9 @@ Burada $A \in \mathbb{R}^{r \times d}$ ve $B \in \mathbb{R}^{k \times r}$ matris
 | Tam ince ayar | Modelin tamamı | Çok yüksek | Kapsamlı davranış değişikliği |
 | LoRA | Küçük adaptörler | Düşük | Alan veya görev uyarlaması |
 | QLoRA | Kuantize model + LoRA | Çok düşük | Sınırlı GPU belleğiyle eğitim |
+
+![lora-ile-buyuk-36](/img/lora-ile-buyuk-36.svg)
+
 
 ## LoRA hangi katmanlara uygulanır?
 

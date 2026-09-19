@@ -12,7 +12,11 @@ tags:
   - python
   - güvenli yazılım
 toc: true
+image: /img/fuzzing-ile-otomatik-35.png
 ---
+
+![fuzzing-ile-otomatik-35](/img/fuzzing-ile-otomatik-35.svg)
+
 
 Bir uygulamanın beklenmedik girdiler karşısında nasıl davranacağını elle sınamak, samanlıkta iğne aramaya benzeyebilir. Fuzzing ise samanlığı otomatik olarak karıştırır: programa bozuk, sıra dışı veya rastgele girdiler gönderir; çökme, kilitlenme ve bellek ihlali gibi belirtileri yakalar. Böylece geliştiricilerin aklına gelmeyen uç durumlar, saldırganlardan önce keşfedilebilir.
 

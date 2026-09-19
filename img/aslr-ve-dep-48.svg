@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8599dc"/>
+      <stop offset="100%" stop-color="#6376bd"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#506080" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#506080" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="49" r="74" fill="#dcecf6" opacity="0.45"/>
+  <circle cx="579" cy="281" r="88" fill="#dff0d8" opacity="0.42"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53627a" font-weight="600">BELLEK TAŞMASINA KARŞI KATMANLI SAVUNMA</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="66" width="170" height="192" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="28" y="66" width="170" height="36" rx="18" fill="#e9efff"/>
+  <rect x="28" y="84" width="170" height="18" fill="#e9efff"/>
+  <text x="113" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6191" font-weight="700">ASLR</text>
+  <text x="113" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b687b">Adresler her çalışmada</text>
+  <text x="113" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b687b">farklı konumda</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="49" y="151" width="128" height="20" rx="7" fill="#b9c8f0"/>
+    <rect x="60" y="177" width="104" height="20" rx="7" fill="#c8d8f5"/>
+    <rect x="43" y="203" width="123" height="20" rx="7" fill="#aabce9"/>
+    <rect x="69" y="229" width="91" height="15" rx="7" fill="#d8e4fa"/>
+  </g>
+  <text x="56" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405274">Kod</text>
+  <text x="67" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405274">Kütüphane</text>
+  <text x="51" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405274">Yığın</text>
+  <text x="78" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405274">Heap</text>
+
+  <path d="M198 161 C218 161 222 161 237 161" fill="none" stroke="#91a1bd" stroke-width="2.2"/>
+  <polygon points="237,161 229,156 229,166" fill="#91a1bd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="239" y="73" width="162" height="176" rx="24" fill="#ffffff"/>
+  </g>
+  <path d="M320 94 L367 111 L360 171 C356 200 338 218 320 227 C302 218 284 200 280 171 L273 111 Z" fill="url(#shield)"/>
+  <path d="M320 106 L355 119 L349 169 C346 190 334 204 320 212 C306 204 294 190 291 169 L285 119 Z" fill="#ffffff" opacity="0.16"/>
+  <path d="M303 160 L315 172 L340 143" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="62" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5d75" font-weight="700">İŞLETİM SİSTEMİ</text>
+  <text x="320" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d6a7c">Belirsizlik ve izin denetimi</text>
+
+  <path d="M401 161 C417 161 421 161 437 161" fill="none" stroke="#91a1bd" stroke-width="2.2"/>
+  <polygon points="437,161 429,156 429,166" fill="#91a1bd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="439" y="66" width="173" height="192" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="439" y="66" width="173" height="36" rx="18" fill="#e5f4e7"/>
+  <rect x="439" y="84" width="173" height="18" fill="#e5f4e7"/>
+  <text x="525" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#44735a" font-weight="700">DEP / NX</text>
+  <text x="525" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b687b">Veri sayfasında kod</text>
+  <text x="525" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b687b">çalıştırma engeli</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="464" y="153" width="122" height="38" rx="10" fill="#c9ead1"/>
+    <rect x="464" y="202" width="122" height="38" rx="10" fill="#f7d6d6"/>
+  </g>
+  <text x="480" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6b50" font-weight="700">Kod</text>
+  <text x="556" y="176" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6b50">Çalıştır</text>
+  <text x="480" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b4d51" font-weight="700">Veri</text>
+  <text x="556" y="225" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b4d51">Engel</text>
+  <path d="M553 211 L568 226 M568 211 L553 226" stroke="#c46c70" stroke-width="2.4" stroke-linecap="round"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="184" y="275" width="272" height="28" rx="14" fill="#e9edf5"/>
+  </g>
+  <circle cx="202" cy="289" r="7" fill="#7185c4"/>
+  <text x="216" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526176">Exploit: tahmin ve yürütme zorlaşır</text>
+</svg>

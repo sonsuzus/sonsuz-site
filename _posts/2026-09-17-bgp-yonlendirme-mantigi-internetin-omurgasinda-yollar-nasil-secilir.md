@@ -12,7 +12,11 @@ tags:
   - as-path
   - networking
 toc: true
+image: /img/bgp-yonlendirme-mantigi-35.png
 ---
+
+![bgp-yonlendirme-mantigi-35](/img/bgp-yonlendirme-mantigi-35.svg)
+
 
 Bir web sitesini açtığınızda paketleriniz hedefe dümdüz gitmez; farklı operatörlerin, veri merkezlerinin ve ülkelerin ağlarından geçebilir. Bu devasa trafik koreografisini yöneten temel protokollerden biri **BGP’dir (Border Gateway Protocol)**. Ancak BGP, navigasyon uygulamaları gibi yalnızca en kısa yolu aramaz. Ekonomik anlaşmaları, ağ politikalarını ve operatör tercihlerini de hesaba katar. Kısacası internette yol seçmek biraz matematik, biraz diplomasi, biraz da “bu trafiği komşuma vermeyeyim” sanatıdır.
 ``

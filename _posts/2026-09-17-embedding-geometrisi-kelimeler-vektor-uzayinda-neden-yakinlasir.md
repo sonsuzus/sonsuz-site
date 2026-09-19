@@ -12,6 +12,7 @@ tags:
   - yapay zeka
   - nlp
 toc: true
+image: /img/embedding-geometrisi-kelimeler-29.png
 ---
 
 Bir dil modeli için “kedi”, tüylü bir canlıdan önce yüzlerce sayıdan oluşan bir listedir. Buna rağmen “kedi” ile “köpek” birbirine yakın, “kedi” ile “matkap” ise genellikle uzaktır. Bu durum sihir değil; kelimelerin kullanıldıkları bağlamlardan öğrenilen geometrik bir düzendir. Gelin, kelimelerin anlamlarını koordinatlara nasıl dönüştürdüğünü inceleyelim.
@@ -41,6 +42,9 @@ Bu yaklaşımın temelinde dağılımsal hipotez bulunur: **Benzer bağlamlarda 
 | One-hot | Hayır | Kelime sayısı kadar | Her kelime bağımsızdır |
 | Word2Vec | Evet | Genellikle 100–300 | Yerel bağlamı öğrenir |
 | Bağlamsal embedding | Evet | Yüzlerce–binlerce | Anlamı cümleye göre değiştirir |
+
+![embedding-geometrisi-kelimeler-29](/img/embedding-geometrisi-kelimeler-29.svg)
+
 
 ## “Yakınlık” tam olarak nedir?
 

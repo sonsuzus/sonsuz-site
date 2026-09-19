@@ -12,7 +12,11 @@ tags:
   - rag
   - makine öğrenmesi
 toc: true
+image: /img/vektor-veritabanlari-anlamsal-68.png
 ---
+
+![vektor-veritabanlari-anlamsal-68](/img/vektor-veritabanlari-anlamsal-68.svg)
+
 
 Klasik arama motorları kelimeleri eşleştirir; vektör veritabanları ise kelimelerin arkasındaki anlamı yakalamaya çalışır. Örneğin “uygun fiyatlı dizüstü bilgisayar” araması, metinde birebir “ucuz laptop” yazsa bile doğru sonucu bulabilir. Bu yeteneğin merkezinde embedding modelleri, benzerlik ölçümleri ve milyonlarca vektör arasında hızla komşu bulabilen özel indeksler bulunur.
 

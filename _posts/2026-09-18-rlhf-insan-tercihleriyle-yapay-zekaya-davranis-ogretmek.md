@@ -11,6 +11,7 @@ tags:
   - pekiştirmeli öğrenme
   - dil modelleri
 toc: true
+image: /img/rlhf-insan-tercihleriyle-31.png
 ---
 
 Bir dil modeli cümleleri ustalıkla tamamlayabilir; ancak bu, verdiği yanıtların yararlı, güvenli veya insan beklentileriyle uyumlu olacağını garanti etmez. RLHF, yani *Reinforcement Learning from Human Feedback*, modelin yalnızca “sonraki kelime ne olmalı?” sorusuna değil, “insanlar hangi yanıtı tercih eder?” sorusuna da odaklanmasını sağlayan bir eğitim yaklaşımıdır.
@@ -84,3 +85,6 @@ Gerçek sistemlerde milyonlarca örnek, kalite kontrolleri ve farklı değerlend
 Hayır. İnsan değerlendiriciler yanılabilir, kültürel tercihler farklılaşabilir ve ödül modeli yüzeysel özelliklere aşırı önem verebilir. Model, gerçekten doğru olmak yerine kendinden emin veya gereğinden fazla nazik görünerek yüksek puan toplamayı öğrenebilir. Bu duruma **ödül istismarı** denir.
 
 RLHF’nin asıl gücü, matematiksel optimizasyon ile insan yargısını aynı eğitim döngüsünde buluşturmasıdır. Amaç modele bilinç kazandırmak değil; ürettiği davranışları ölçülebilir insan tercihleri doğrultusunda şekillendirmektir. Kısacası ön eğitim modele konuşmayı, RLHF ise daha uygun biçimde konuşmayı öğretir.
+
+![rlhf-insan-tercihleriyle-31](/img/rlhf-insan-tercihleriyle-31.svg)
+

@@ -12,6 +12,7 @@ tags:
   - makine öğrenmesi
   - moe
 toc: true
+image: /img/mixture-of-experts-71.png
 ---
 
 Büyük bir restoranda her yemeği tek aşçının hazırladığını düşünün. Aşçı yetenekli olsa bile suşiden tatlıya kadar her konuda aynı derecede başarılı olması zordur. Mixture of Experts (MoE) mimarisi de benzer bir problemi çözer: Tek ve devasa bir sinir ağı yerine, farklı girdilerde uzmanlaşabilen alt ağlar kullanır. Üstelik her girdi bütün uzmanlara gönderilmez; bir yönlendirici, o girdi için en uygun birkaç uzmanı seçer.
@@ -102,3 +103,6 @@ $$
 $L_{balance}$, uzmanların daha dengeli kullanılmasını teşvik eder; $\lambda$ ise bu hedefin önemini ayarlar. Ayrıca her uzmana sınırlı token kapasitesi atanabilir. Kapasiteyi aşan tokenlar başka bir uzmana yönlendirilir veya nadiren işlenmeden bırakılır.
 
 Sonuç olarak MoE, “her problem için bütün beyni çalıştırmak” yerine doğru anda doğru uzmanı çağırır. Böylece toplam parametre sayısı çok büyürken token başına hesaplama görece düşük kalabilir. Başarının sırrı yalnızca çok sayıda uzmana sahip olmak değil; router’ın onları dengeli, kararlı ve anlamlı biçimde kullanmayı öğrenmesidir.
+
+![mixture-of-experts-71](/img/mixture-of-experts-71.svg)
+

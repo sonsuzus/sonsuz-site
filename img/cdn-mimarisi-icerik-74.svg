@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#ccefe2"/>
+    </linearGradient>
+    <linearGradient id="hit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff6e9"/>
+      <stop offset="100%" stop-color="#c5ead8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e8da0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6e8da0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="160" r="127" fill="#dceefd" opacity="0.28"/>
+  <circle cx="319" cy="160" r="94" fill="none" stroke="#b9d9e8" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7"/>
+
+  <!-- Başlık -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" fill="#35576b">
+    <text x="28" y="31" font-size="12" font-weight="700">CDN: Yakın Noktadan İçerik</text>
+    <text x="28" y="49" font-size="12" fill="#718b99">Gecikme, yük ve erişilebilirlik dengesi</text>
+  </g>
+
+  <!-- Kullanıcı -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="118" width="105" height="86" rx="18" fill="#fffdf8"/>
+  </g>
+  <circle cx="80" cy="145" r="13" fill="#9bc9ee"/>
+  <path d="M58 183c3-18 13-26 22-26s19 8 22 26" fill="#c6e4fa"/>
+  <circle cx="75" cy="143" r="2" fill="#4d7891"/>
+  <circle cx="85" cy="143" r="2" fill="#4d7891"/>
+  <path d="M75 150 Q80 154 85 150" fill="none" stroke="#4d7891" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="80" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35576b">Kullanıcı</text>
+
+  <!-- Kullanıcı yönlendirme hattı -->
+  <path d="M136 161 C158 161 163 161 181 161" fill="none" stroke="#6dabc7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="181,161 172,156 172,166" fill="#6dabc7"/>
+
+  <!-- DNS seçim -->
+  <g filter="url(#shadow)">
+    <rect x="184" y="123" width="117" height="76" rx="17" fill="#eee6fb"/>
+  </g>
+  <circle cx="211" cy="151" r="14" fill="#cdb9ed"/>
+  <path d="M204 151h14M211 144v14" stroke="#745997" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="250" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#58466f">Akıllı Seçim</text>
+  <text x="250" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78678d">GeoDNS • Anycast</text>
+
+  <!-- bağlantılar merkezden poplara -->
+  <path d="M302 145 C326 113 351 96 377 85" fill="none" stroke="#8ebec8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="377,85 368,84 372,93" fill="#8ebec8"/>
+  <path d="M303 161 C329 161 346 161 370 161" fill="none" stroke="#8ebec8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="370,161 361,156 361,166" fill="#8ebec8"/>
+  <path d="M302 179 C328 210 348 224 376 237" fill="none" stroke="#8ebec8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="376,237 367,229 364,238" fill="#8ebec8"/>
+
+  <!-- PoP üst -->
+  <g filter="url(#smallShadow)">
+    <rect x="380" y="51" width="129" height="67" rx="15" fill="url(#hit)"/>
+  </g>
+  <circle cx="406" cy="77" r="13" fill="#80caa7"/>
+  <path d="M399 78h14M402 73h8M402 83h8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="429" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b59">PoP • Avrupa</text>
+  <text x="429" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c8a78">Önbellek: Hit</text>
+
+  <!-- Pop orta -->
+  <g filter="url(#smallShadow)">
+    <rect x="375" y="128" width="139" height="67" rx="15" fill="#dcecff"/>
+  </g>
+  <circle cx="402" cy="154" r="13" fill="#8bbce8"/>
+  <path d="M395 150h14v9h-14zM398 147h8" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="426" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35627e">PoP • Türkiye</text>
+  <text x="426" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66869a">En düşük RTT</text>
+
+  <!-- Pop alt -->
+  <g filter="url(#smallShadow)">
+    <rect x="380" y="205" width="129" height="67" rx="15" fill="#fff0d9"/>
+  </g>
+  <circle cx="406" cy="231" r="13" fill="#edbb78"/>
+  <path d="M399 232h14M402 227h8M402 237h8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="429" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#856039">PoP • Asya</text>
+  <text x="429" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c7952">Yük izleme</text>
+
+  <!-- Cache hit kullanıcı dönüşü -->
+  <path d="M375 187 C340 234 203 248 132 192" fill="none" stroke="#59ad88" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="132,192 141,190 137,199" fill="#59ad88"/>
+  <rect x="225" y="230" width="102" height="25" rx="12" fill="#e2f5eb" filter="url(#smallShadow)"/>
+  <text x="276" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39795f">Hızlı teslim</text>
+
+  <!-- Origin -->
+  <path d="M515 160 C535 160 546 160 558 160" fill="none" stroke="#d29273" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="558,160 549,155 549,165" fill="#d29273"/>
+  <g filter="url(#shadow)">
+    <rect x="560" y="119" width="57" height="83" rx="17" fill="#fde6df"/>
+  </g>
+  <rect x="575" y="139" width="27" height="10" rx="3" fill="#d98973"/>
+  <rect x="575" y="154" width="27" height="10" rx="3" fill="#e7a08b"/>
+  <rect x="575" y="169" width="27" height="10" rx="3" fill="#d98973"/>
+  <circle cx="597" cy="144" r="1.5" fill="#fff7f2"/>
+  <circle cx="597" cy="159" r="1.5" fill="#fff7f2"/>
+  <circle cx="597" cy="174" r="1.5" fill="#fff7f2"/>
+  <text x="588" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805447">Ana Sunucu</text>
+
+  <!-- Bilgi kartı -->
+  <g filter="url(#smallShadow)">
+    <rect x="35" y="259" width="171" height="40" rx="13" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <circle cx="55" cy="279" r="7" fill="#65b78d"/>
+  <path d="M52 279l2 2 4-5" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c6e7d">Hit oranı yüksek, yük düşük</text>
+
+  <text x="522" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75909b">Miss: içerik ana sunucudan alınır</text>
+</svg>

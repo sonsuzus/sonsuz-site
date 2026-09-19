@@ -12,7 +12,11 @@ tags:
   - embedding
   - python
 toc: true
+image: /img/rag-mimarisi-dil-85.png
 ---
+
+![rag-mimarisi-dil-85](/img/rag-mimarisi-dil-85.svg)
+
 
 Büyük dil modelleri etkileyici yanıtlar üretir; ancak eğitim verileri güncel olmayabilir, kurumsal belgeleri bilmeyebilir ve bazen son derece özgüvenli biçimde yanlış bilgi verebilir. RAG (Retrieval Augmented Generation), modeli yeniden eğitmeden ona ilgili kaynakları sağlayarak bu sorunları azaltan bir mimaridir. Kısacası RAG, sınava yalnızca hafızasıyla giren bir öğrenciye açık kitap hakkı vermeye benzer.
 

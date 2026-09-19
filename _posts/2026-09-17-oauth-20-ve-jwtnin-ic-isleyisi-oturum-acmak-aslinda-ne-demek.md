@@ -12,6 +12,7 @@ tags:
   - openid connect
   - web güvenliği
 toc: true
+image: /img/oauth-20-ve-69.png
 ---
 
 Bir uygulamada “Google ile giriş yap” düğmesine bastığımızda birkaç saniye içinde hesabımıza ulaşırız. Perdenin arkasındaysa yönlendirmeler, izinler, kriptografik imzalar ve süreli anahtarlar çalışır. Üstelik OAuth 2.0 doğrudan bir oturum açma protokolü değildir! Gelin kimlik doğrulama ile yetkilendirme arasındaki sis perdesini kaldıralım.
@@ -27,6 +28,9 @@ Bir uygulamada “Google ile giriş yap” düğmesine bastığımızda birkaç 
 | Kimlik doğrulama | Sen kimsin? | Parola, biyometri, OpenID Connect |
 | Yetkilendirme | Neyi yapabilirsin? | Dosyaları okuma izni |
 | Oturum yönetimi | Seni sonraki istekte nasıl tanırım? | Cookie veya erişim belirteci |
+
+![oauth-20-ve-69](/img/oauth-20-ve-69.svg)
+
 
 OAuth 2.0 esasen **yetkilendirme çerçevesidir**. Kullanıcının parolasını başka bir uygulamaya vermeden, belirli kaynaklara sınırlı erişim sağlatır. Kimliği standart biçimde öğrenmek için OAuth 2.0 üzerine kurulan **OpenID Connect (OIDC)** kullanılır.
 

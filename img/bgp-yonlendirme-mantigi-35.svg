@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#d8f2e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7992aa" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#8ca1b3" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="69" cy="50" r="82" fill="#dceeff" opacity="0.45"/>
+  <circle cx="585" cy="284" r="98" fill="#dff3dc" opacity="0.48"/>
+  <circle cx="562" cy="55" r="44" fill="#fff0d8" opacity="0.55"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516b">BGP YOL SEÇİMİ</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718497">Politika tabanlı erişilebilirlik</text>
+
+  <path d="M165 120 C196 120 204 139 228 149" fill="none" stroke="#91a7bc" stroke-width="2"/>
+  <polygon points="228,149 219,143 221,154" fill="#91a7bc"/>
+  <path d="M165 194 C198 194 204 178 228 169" fill="none" stroke="#91a7bc" stroke-width="2"/>
+  <polygon points="228,169 220,164 222,175" fill="#91a7bc"/>
+
+  <path d="M404 159 L443 159" fill="none" stroke="#638caa" stroke-width="3"/>
+  <polygon points="443,159 433,153 433,165" fill="#638caa"/>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="82" width="137" height="77" rx="17" fill="#fffdf9" stroke="#d9e1e8"/>
+    <circle cx="52" cy="108" r="12" fill="#d9ecff"/>
+    <path d="M46 108 L52 102 L58 108 L52 114 Z" fill="#568db7"/>
+    <text x="72" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5367">Komşu AS</text>
+    <text x="72" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718497">AS64510</text>
+    <rect x="43" y="137" width="102" height="8" rx="4" fill="#e4f0fb"/>
+    <rect x="43" y="137" width="69" height="8" rx="4" fill="#80b1d4"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="177" width="137" height="77" rx="17" fill="#fffdf9" stroke="#d9e1e8"/>
+    <circle cx="52" cy="203" r="12" fill="#e4f3d9"/>
+    <path d="M46 203 L52 197 L58 203 L52 209 Z" fill="#72a66d"/>
+    <text x="72" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5367">Komşu AS</text>
+    <text x="72" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718497">AS64520</text>
+    <rect x="43" y="232" width="102" height="8" rx="4" fill="#e8f3e3"/>
+    <rect x="43" y="232" width="88" height="8" rx="4" fill="#91c287"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="229" y="89" width="175" height="142" rx="25" fill="url(#core)" stroke="#bfd5de"/>
+    <circle cx="316.5" cy="126" r="23" fill="#f9fcff" stroke="#b7d0e0"/>
+    <path d="M307 124 L316 115 L326 124 L316 133 Z" fill="#4d89b3"/>
+    <path d="M307 137 C312 141 321 141 326 137" fill="none" stroke="#4d89b3" stroke-width="2" stroke-linecap="round"/>
+    <text x="316.5" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546a">BGP KARAR MOTORU</text>
+    <text x="316.5" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587084">Politika önce gelir</text>
+    <rect x="255" y="202" width="122" height="12" rx="6" fill="#b8d9d1"/>
+    <circle cx="270" cy="208" r="4" fill="#4e987f"/>
+    <circle cx="302" cy="208" r="4" fill="#4e987f"/>
+    <circle cx="334" cy="208" r="4" fill="#4e987f"/>
+    <circle cx="362" cy="208" r="4" fill="#4e987f"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="443" y="77" width="164" height="164" rx="22" fill="#fffdf9" stroke="#d9e1e8"/>
+    <text x="525" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3b556b">SEÇİLEN ROTA</text>
+    <rect x="466" y="119" width="116" height="29" rx="10" fill="#e1f1ff"/>
+    <text x="524" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#326b94">Yerel Tercih: 200</text>
+    <path d="M481 165 L501 165 L509 177 L529 177 L537 189 L560 189" fill="none" stroke="#65a182" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="481" cy="165" r="5" fill="#65a182"/>
+    <circle cx="509" cy="177" r="5" fill="#65a182"/>
+    <circle cx="537" cy="189" r="5" fill="#65a182"/>
+    <circle cx="560" cy="189" r="5" fill="#65a182"/>
+    <text x="524" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617b8c">AS64500 → AS64510</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="174" y="259" width="291" height="39" rx="15" fill="#ffffff" stroke="#dce5e9"/>
+    <circle cx="198" cy="278.5" r="7" fill="#f3b76d"/>
+    <text x="212" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7e">Yerel Tercih</text>
+    <circle cx="309" cy="278.5" r="7" fill="#77aee0"/>
+    <text x="323" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7e">AS_PATH</text>
+    <circle cx="397" cy="278.5" r="7" fill="#8fc57a"/>
+    <text x="411" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7e">MED</text>
+  </g>
+
+  <path d="M316 231 L316 251" fill="none" stroke="#a1b5c2" stroke-width="2"/>
+  <polygon points="316,251 311,243 321,243" fill="#a1b5c2"/>
+</svg>
