@@ -12,6 +12,7 @@ tags:
   - c++
   - rmq
 toc: true
+image: /img/sparse-table-degismeyen-24.png
 ---
 
 Bir dizi üzerinde tekrar tekrar “şu aralıktaki en küçük eleman nedir?” diye sorulacağını, fakat dizinin hiçbir zaman değişmeyeceğini düşün. Her sorguda aralığı baştan sona dolaşmak gereksiz bir maraton olur. Sparse Table, biraz ön hazırlık yaparak minimum, maksimum ve EBOB gibi değişmeyen aralık sorgularını $O(1)$ sürede cevaplayan zarif bir veri yapısıdır.
@@ -102,3 +103,6 @@ public:
 Sparse Table; yarışma programlamasındaki RMQ problemleri, sabit yükseklik dizileri, değişmeyen grafik verileri ve çok sayıda çevrimdışı sorgu için idealdir. Bellek tüketimi $O(n\log n)$ olduğundan devasa dizilerde dikkat gerekir. Ayrıca tek bir eleman bile güncellenecekse tabloyu yeniden kurmak gerekir; bu durumda Segment Tree daha mantıklıdır.
 
 Kısacası dizi sabit, sorgu sayısı yüksek ve işlem idempotent ise Sparse Table tam bir “önceden çalış, sonra keyfine bak” algoritmasıdır.
+
+![sparse-table-degismeyen-24](/img/sparse-table-degismeyen-24.svg)
+

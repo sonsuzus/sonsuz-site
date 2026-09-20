@@ -11,6 +11,7 @@ tags:
   - python
   - arama algoritmaları
 toc: true
+image: /img/ternary-search-tek-97.png
 ---
 
 Bir dağın zirvesini bulmak istediğinizi düşünün; ancak sis yüzünden yalnızca bulunduğunuz noktaların yüksekliğini ölçebiliyorsunuz. Her yeri adım adım dolaşmak yerine dağı düzenli biçimde daraltabilirsiniz. Ternary Search, yani üçlü arama, tam olarak bu fikri kullanarak tek tepeli fonksiyonların minimum veya maksimum noktasını bulur.
@@ -33,6 +34,9 @@ Minimum ararken bunun tersi geçerlidir: Fonksiyon önce azalır, sonra artar. �
 | Karşılaştırılan nokta | Bir orta nokta | İki iç nokta |
 | Gerekli yapı | Monotonluk veya sıralılık | Unimodallik |
 | Her adımda kalan aralık | Yaklaşık $1/2$ | Yaklaşık $2/3$ |
+
+![ternary-search-tek-97](/img/ternary-search-tek-97.svg)
+
 
 ## Aralık nasıl daraltılır?
 

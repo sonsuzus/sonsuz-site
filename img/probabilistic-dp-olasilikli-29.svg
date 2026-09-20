@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f9f1"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8dcf6"/>
+    </linearGradient>
+    <linearGradient id="mintCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3e6"/>
+      <stop offset="100%" stop-color="#bfe8d7"/>
+    </linearGradient>
+    <linearGradient id="peachCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe8d5"/>
+      <stop offset="100%" stop-color="#f8cfad"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66809a" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="58" cy="58" r="88" fill="#cce7f5" opacity="0.27"/>
+  <circle cx="600" cy="279" r="108" fill="#d8efd8" opacity="0.33"/>
+  <path d="M28 266 C110 218, 147 284, 219 251 S348 219, 422 257 S544 291, 619 229" fill="none" stroke="#b8d9d4" stroke-width="2" opacity="0.48"/>
+
+  <text x="32" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556d">OLASILIKLI DP</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8292">Rastgelelik → durum geçişleri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="102" width="128" height="126" rx="20" fill="url(#blueCard)"/>
+  </g>
+  <text x="53" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315572">Başlangıç</text>
+  <rect x="52" y="144" width="86" height="58" rx="15" fill="#f7fbff" opacity="0.92"/>
+  <circle cx="75" cy="173" r="14" fill="#82afd8"/>
+  <path d="M75 160 A14 14 0 0 1 75 186 A14 14 0 0 0 75 160" fill="#f8d98c"/>
+  <path d="M75 160 L75 186" stroke="#527ea5" stroke-width="1.5"/>
+  <text x="98" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42647e">Durum</text>
+  <text x="104" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42647e">s</text>
+
+  <path d="M161 164 L207 164" stroke="#688ba2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="207,164 197,158 197,170" fill="#688ba2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="216" y="74" width="204" height="184" rx="24" fill="#f9fcff"/>
+  </g>
+  <text x="240" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365b72">Ağırlıklı geçiş</text>
+  <rect x="238" y="121" width="160" height="43" rx="13" fill="#e7f2fb"/>
+  <text x="258" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#335973">dp[s] = Σ pᵢ · dp[sonraki]</text>
+
+  <circle cx="270" cy="203" r="19" fill="#cae9dc" filter="url(#smallShadow)"/>
+  <text x="258" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37735d">p₁</text>
+  <circle cx="348" cy="203" r="19" fill="#fbe0bc" filter="url(#smallShadow)"/>
+  <text x="336" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#93633a">p₂</text>
+
+  <path d="M286 203 L316 203" stroke="#7895a5" stroke-width="2"/>
+  <polygon points="316,203 307,198 307,208" fill="#7895a5"/>
+  <path d="M367 190 C395 177, 411 154, 437 143" fill="none" stroke="#70a68d" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="437,143 427,141 432,150" fill="#70a68d"/>
+  <path d="M367 216 C396 232, 410 241, 437 243" fill="none" stroke="#d19161" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="437,243 428,237 428,247" fill="#d19161"/>
+
+  <g filter="url(#shadow)">
+    <rect x="446" y="90" width="161" height="88" rx="19" fill="url(#mintCard)"/>
+  </g>
+  <circle cx="472" cy="121" r="13" fill="#71b38f"/>
+  <path d="M466 121 L471 126 L480 115" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="495" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376c56">Başarı</text>
+  <text x="495" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d806c">dp[N] = 1</text>
+  <text x="463" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d806c">Hedef durumu</text>
+
+  <g filter="url(#shadow)">
+    <rect x="446" y="198" width="161" height="69" rx="19" fill="url(#peachCard)"/>
+  </g>
+  <circle cx="472" cy="225" r="13" fill="#de9768"/>
+  <path d="M466 219 L478 231 M478 219 L466 231" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="495" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#875638">Başarısız</text>
+  <text x="495" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c6a49">dp[x] = 0</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="69" y="256" width="301" height="37" rx="15" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <path d="M92 274 L113 274" stroke="#668ba5" stroke-width="2"/>
+  <polygon points="113,274 105,269 105,279" fill="#668ba5"/>
+  <path d="M144 274 L165 274" stroke="#668ba5" stroke-width="2"/>
+  <polygon points="165,274 157,269 157,279" fill="#668ba5"/>
+  <path d="M196 274 L217 274" stroke="#668ba5" stroke-width="2"/>
+  <polygon points="217,274 209,269 209,279" fill="#668ba5"/>
+  <text x="233" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486a80">Tablo sağdan sola dolar</text>
+</svg>

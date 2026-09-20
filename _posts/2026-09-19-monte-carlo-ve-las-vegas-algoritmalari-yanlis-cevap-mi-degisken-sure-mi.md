@@ -12,6 +12,7 @@ tags:
   - python
   - karmaşıklık
 toc: true
+image: /img/monte-carlo-ve-90.png
 ---
 
 Rastgelelik yalnızca zar atarken işimize yaramaz; bazen bir algoritmayı daha hızlı, daha basit veya pratik hâle getirir. Olasılıksal algoritmaların iki ünlü ailesi olan **Monte Carlo** ve **Las Vegas**, rastgeleliği farklı bedeller karşılığında kullanır: İlki çalışma süresini sınırlar fakat küçük bir yanlışlık riskini kabul eder; ikincisi ise doğru cevabı garanti eder ancak ne zaman biteceği konusunda biraz gizemli davranır.
@@ -92,3 +93,6 @@ olsa da algoritma ilk denemede de bitebilir, çok daha uzun da sürebilir. Daha 
 Yanlış cevabın maliyeti düşükse veya sonuç tekrar doğrulanabiliyorsa Monte Carlo güçlü bir tercihtir. Grafik işleme, simülasyon, büyük veri tahminleri ve bazı asallık testleri buna uygundur. Hatalı cevabın güvenlik, para veya veri bütünlüğü açısından kabul edilemez olduğu durumlarda Las Vegas yaklaşımı daha güvenlidir.
 
 Kısacası seçim bir mühendislik pazarlığıdır: **Monte Carlo saati kontrol eder, doğruluğu olasılığa bırakır; Las Vegas doğruluğu kontrol eder, saati şansa bırakır.**
+
+![monte-carlo-ve-90](/img/monte-carlo-ve-90.svg)
+

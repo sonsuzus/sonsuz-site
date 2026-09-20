@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="arrayGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cbe4f7"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1cf"/>
+      <stop offset="100%" stop-color="#f8dfab"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff4d9"/>
+      <stop offset="100%" stop-color="#bfe5c4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d8495" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6d8495" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="53" r="42" fill="#d9edff" opacity="0.45"/>
+  <circle cx="584" cy="276" r="65" fill="#dcedd8" opacity="0.46"/>
+  <circle cx="331" cy="55" r="25" fill="#fff5d8" opacity="0.7"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385269">Amortize Analiz</text>
+  <text x="320" y="44" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a7e8d">Tek pahalı işlem, uzun dizide dengelenir</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="72" width="166" height="140" rx="18" fill="url(#arrayGrad)" stroke="#a7cce2"/>
+  </g>
+  <text x="113" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35556b">Dinamik Dizi</text>
+  <text x="113" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587488">Ekleme akışı</text>
+
+  <g>
+    <rect x="48" y="132" width="21" height="25" rx="5" fill="#f9fdff" stroke="#82b5d2"/>
+    <rect x="71" y="132" width="21" height="25" rx="5" fill="#f9fdff" stroke="#82b5d2"/>
+    <rect x="94" y="132" width="21" height="25" rx="5" fill="#f9fdff" stroke="#82b5d2"/>
+    <rect x="117" y="132" width="21" height="25" rx="5" fill="#f9fdff" stroke="#82b5d2"/>
+    <rect x="140" y="132" width="21" height="25" rx="5" fill="#f9fdff" stroke="#82b5d2"/>
+    <rect x="163" y="132" width="16" height="25" rx="5" fill="#f3c8bd" stroke="#d99889"/>
+    <text x="171" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a5249">!</text>
+  </g>
+  <text x="113" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a5149">Doluysa: kapasite × 2</text>
+  <text x="113" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597487">Nadiren kopyalama O(n)</text>
+
+  <path d="M202 141 H231" fill="none" stroke="#7c9db2" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M231 141 L222 135 L222 147 Z" fill="#7c9db2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="238" y="72" width="166" height="140" rx="18" fill="url(#centerGrad)" stroke="#e3c782"/>
+  </g>
+  <text x="321" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765b27">Toplam Maliyet</text>
+  <text x="321" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806a3e">n işlem birlikte ölçülür</text>
+
+  <path d="M266 165 H281 V151 H294 V140 H307 V126 H321 V110" fill="none" stroke="#d48b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="266" cy="165" r="4" fill="#d48b64"/>
+  <circle cx="281" cy="151" r="4" fill="#d48b64"/>
+  <circle cx="294" cy="140" r="4" fill="#d48b64"/>
+  <circle cx="307" cy="126" r="4" fill="#d48b64"/>
+  <circle cx="321" cy="110" r="4" fill="#d48b64"/>
+  <path d="M338 166 C352 151 362 151 376 133" fill="none" stroke="#c7a553" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <text x="321" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765b27">T(n) = O(n)</text>
+
+  <path d="M410 141 H439" fill="none" stroke="#7c9db2" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M439 141 L430 135 L430 147 Z" fill="#7c9db2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="446" y="72" width="164" height="140" rx="18" fill="url(#resultGrad)" stroke="#9cc9a4"/>
+  </g>
+  <circle cx="528" cy="134" r="40" fill="#f9fff7" stroke="#9bc8a2" stroke-width="2"/>
+  <text x="528" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7556">İşlem başına</text>
+  <text x="528" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" font-weight="700" fill="#397149">O(1)</text>
+  <text x="528" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#477650">Amortize maliyet</text>
+  <text x="528" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64846a">T(n) / n</text>
+
+  <path d="M320 220 V238" fill="none" stroke="#92a8ad" stroke-width="2" stroke-linecap="round"/>
+  <path d="M320 238 L314 230 L326 230 Z" fill="#92a8ad"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="75" y="248" width="150" height="52" rx="14" fill="#f6fbff" stroke="#b9d6e8"/>
+    <circle cx="99" cy="274" r="13" fill="#d9edff"/>
+    <path d="M93 274 H105 M99 268 V280" stroke="#5491b6" stroke-width="2" stroke-linecap="round"/>
+    <text x="155" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46687c">Toplama</text>
+    <text x="155" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8290">Toplamı böl</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="245" y="248" width="150" height="52" rx="14" fill="#fffaf0" stroke="#ead29a"/>
+    <circle cx="269" cy="274" r="13" fill="#fff0c8"/>
+    <path d="M263 277 Q269 282 275 277 M264 271 H274" fill="none" stroke="#b58b38" stroke-width="2" stroke-linecap="round"/>
+    <text x="325" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#746030">Muhasebe</text>
+    <text x="325" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7848">Kredi biriktir</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="415" y="248" width="150" height="52" rx="14" fill="#f4fbf1" stroke="#b9d9b4"/>
+    <circle cx="439" cy="274" r="13" fill="#dff2d9"/>
+    <path d="M439 266 V282 M433 276 L439 282 L445 276" fill="none" stroke="#5a9662" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="495" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d7653">Potansiyel</text>
+    <text x="495" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66856a">Enerji depola</text>
+  </g>
+</svg>

@@ -12,6 +12,7 @@ tags:
   - karmaşıklık
   - bilgisayar bilimi
 toc: true
+image: /img/randomized-algorithms-zar-78.png
 ---
 
 Bir algoritmanın karar verirken yazı tura attığını düşünün. İlk bakışta bu yaklaşım, ciddi bir mühendislik yönteminden çok şans oyununa benzeyebilir. Oysa rastgele seçimler; kötü girdilerden kaçınmak, karmaşık kararları basitleştirmek ve yüksek performansa daha az kodla ulaşmak için güçlü bir araçtır. Randomized algorithms dünyasında rastgelelik, belirsizlik yaratan bir kusur değil, kontrollü biçimde kullanılan bir kaynaktır.
@@ -91,3 +92,6 @@ print(random.randint(1, 100))
 Aynı seed, aynı rastgele sayı dizisini oluşturur. Bununla birlikte güvenlik amacıyla token veya parola üretirken `random` yerine kriptografik olarak güvenli `secrets` modülü kullanılmalıdır.
 
 Randomized algorithms; sıralama, grafikler, yük dengeleme, makine öğrenmesi, kriptografi ve büyük veri akışlarında karşımıza çıkar. Ana fikir basittir: Her seçimi kusursuz hesaplamak pahalıysa, iyi bir seçimi rastgele yap ve başarı olasılığını analiz et. Bazen algoritmaya bir zar vermek, ona daha büyük bir beyin vermekten daha etkilidir.
+
+![randomized-algorithms-zar-78](/img/randomized-algorithms-zar-78.svg)
+

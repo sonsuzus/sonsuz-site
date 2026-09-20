@@ -11,6 +11,7 @@ tags:
   - algoritma
   - python
 toc: true
+image: /img/inclusion-exclusion-principle-82.png
 ---
 
 Bir etkinliğe katılanların 30’u Python, 25’i JavaScript biliyorsa toplam 55 yazılımcımız olduğunu düşünebiliriz. Fakat iki dili de bilenler varsa aynı kişileri iki kez saymış oluruz. Inclusion-Exclusion Principle, Türkçesiyle **Dahil Etme–Hariç Tutma İlkesi**, tam olarak bu tür üst üste binmeleri düzeltmek için kullanılan zarif bir sayma yöntemidir.
@@ -98,3 +99,6 @@ Fonksiyon, önce her bölenin katlarını sayar. Ardından ortak katların sayı
 Bu ilke yalnızca ders kitaplarında yaşamaz. Olasılık hesaplarında, veritabanı sorgularında, bit maskeli dinamik programlamada, ağ güvenliğinde ve kısıtları ihlal eden durumları saymada kullanılır. Özellikle “en az bir koşulu sağlayan” nesneleri sayarken güçlüdür.
 
 Akılda tutulacak kısa tarif şudur: **Tekleri ekle, çiftleri çıkar, üçlüleri yeniden ekle ve işaretleri dönüşümlü sürdür.** Kümeler üst üste bindikçe paniklemek yerine, her elemanın toplamda tam bir kez sayılmasını hedefleyin.
+
+![inclusion-exclusion-principle-82](/img/inclusion-exclusion-principle-82.svg)
+

@@ -12,7 +12,11 @@ tags:
   - karmaşıklık
   - problem çözme
 toc: true
+image: /img/parametrik-arama-cevabi-22.png
 ---
+
+![parametrik-arama-cevabi-22](/img/parametrik-arama-cevabi-22.svg)
+
 
 Bazı algoritma soruları bizden doğrudan “en iyi cevap nedir?” diye sorar; fakat cevabı tek hamlede hesaplamak neredeyse imkânsızdır. Parametrik arama bu soruyu daha kolay bir soruya dönüştürür: “Verilen bir cevap mümkün mü?” Böylece karanlıkta cevabı tahmin etmek yerine, mümkün ve imkânsız bölgeler arasındaki sınırı sistematik biçimde buluruz.
 

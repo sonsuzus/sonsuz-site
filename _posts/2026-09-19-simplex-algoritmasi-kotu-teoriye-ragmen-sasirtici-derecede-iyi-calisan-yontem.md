@@ -12,6 +12,7 @@ tags:
   - python
   - matematik
 toc: true
+image: /img/simplex-algoritmasi-kotu-75.png
 ---
 
 Simplex algoritması, doğrusal optimizasyon problemlerini çözmek için 1947 yılında George Dantzig tarafından geliştirildi. İlginç olan şu: Algoritmanın en kötü durumdaki çalışma süresi üstel olabilir, fakat gerçek hayattaki problemlerde çoğunlukla son derece hızlıdır. Kısacası Simplex, teorik karnesi biraz problemli olsa da iş hayatında sürekli terfi alan o gizemli çalışan gibidir.
@@ -49,6 +50,9 @@ Ardından hedef değerini iyileştirecek bir **giren değişken** ve uygunluğu 
 | Köşeleri tek tek denemek | Tüm adayları inceler | Mantığı basittir | Köşe sayısı çok büyüyebilir |
 | Simplex | Komşu ve umut verici köşelere geçer | Pratikte çok hızlıdır | En kötü durumda üstel sürebilir |
 | İç nokta yöntemi | Bölgenin içinden ilerler | Güçlü teorik sınırları vardır | Hassas ayar ve lineer cebir maliyeti doğurur |
+
+![simplex-algoritmasi-kotu-75](/img/simplex-algoritmasi-kotu-75.svg)
+
 
 ## Küçük bir Python uygulaması
 

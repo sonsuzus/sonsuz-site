@@ -12,6 +12,7 @@ tags:
   - dinamik dizi
   - big-o
 toc: true
+image: /img/amortized-analysis-tek-72.png
 ---
 
 Bir algoritmanın bazı işlemleri aniden pahalılaşabilir. Dinamik bir dizi büyürken bütün elemanların kopyalanması veya bir sayaç artırılırken art arda birçok bitin değişmesi buna örnektir. Ancak tek bir kötü ana bakıp algoritmayı yavaş ilan etmek, ayda bir gelen yüklü market fişine bakarak her gün aynı harcamayı yaptığımızı sanmaya benzer. **Amortized analysis**, işlemleri tek tek değil, uzun bir işlem dizisi boyunca değerlendirir.
@@ -96,3 +97,6 @@ Burada $c_i$ gerçek maliyet, $\Phi(D_i)$ ise işlem sonrasındaki potansiyeldir
 Amortized analiz, average-case analiz değildir. Average-case belirli girdilerin görülme olasılığına dayanabilir. Amortized analizde ise rastgelelik gerekmez ve kötü niyetli bir işlem sırası bile incelenebilir. Garanti şudur: Kurallara uygun herhangi bir $n$ işlemlik dizinin toplam maliyeti belirlenen üst sınırı aşmaz.
 
 Bu yaklaşım dinamik dizilerde, hash table yeniden boyutlandırmalarında, yığınlarda, union-find yapılarında ve garbage collector tasarımlarında sıkça kullanılır. Kısacası tek bir işlemin dramatik performansına değil, bütün sezonun puan tablosuna bakar.
+
+![amortized-analysis-tek-72](/img/amortized-analysis-tek-72.svg)
+

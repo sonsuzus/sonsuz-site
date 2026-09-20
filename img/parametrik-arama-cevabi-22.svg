@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="falseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd9d5"/>
+      <stop offset="100%" stop-color="#ffbdb8"/>
+    </linearGradient>
+    <linearGradient id="trueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#bcebd5"/>
+      <stop offset="100%" stop-color="#91d7bb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7590a3" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#507080" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="70" cy="57" r="36" fill="#dff0ff" opacity="0.58"/>
+  <circle cx="586" cy="270" r="55" fill="#def2d9" opacity="0.52"/>
+  <circle cx="559" cy="48" r="22" fill="#fcebc7" opacity="0.65"/>
+
+  <rect x="206" y="19" width="228" height="43" rx="18" fill="#ffffff" filter="url(#softShadow)"/>
+  <text x="320" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536b">PARAMETRİK ARAMA</text>
+
+  <path d="M320 63 L320 84" fill="none" stroke="#7690a1" stroke-width="2"/>
+  <polygon points="320,90 315,82 325,82" fill="#7690a1"/>
+
+  <rect x="223" y="91" width="194" height="49" rx="15" fill="#e7efff" filter="url(#shadow)"/>
+  <circle cx="251" cy="115.5" r="14" fill="#a9c6f7"/>
+  <path d="M245 116 L249 120 L257 111" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="324" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34516f">P(x) mümkün mü?</text>
+  <text x="324" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60788c">Uygunluk testi</text>
+
+  <path d="M223 116 L132 116 L132 154" fill="none" stroke="#7d96a7" stroke-width="2"/>
+  <polygon points="132,160 127,152 137,152" fill="#7d96a7"/>
+  <path d="M417 116 L508 116 L508 154" fill="none" stroke="#7d96a7" stroke-width="2"/>
+  <polygon points="508,160 503,152 513,152" fill="#7d96a7"/>
+
+  <rect x="38" y="162" width="188" height="58" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="52" y="176" width="34" height="30" rx="10" fill="#ffd9d5"/>
+  <path d="M62 186 L76 196 M76 186 L62 196" stroke="#c86662" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="102" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7c4d4a">Mümkün değil</text>
+  <text x="102" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7472">Sol sınırı artır</text>
+
+  <rect x="414" y="162" width="188" height="58" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="428" y="176" width="34" height="30" rx="10" fill="#cceedd"/>
+  <path d="M436 191 L442 197 L454 184" fill="none" stroke="#419675" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="478" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356d5a">Mümkün</text>
+  <text x="478" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66867a">Sağ sınırı daralt</text>
+
+  <rect x="58" y="245" width="524" height="45" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="76" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526f83">Cevap aralığı</text>
+
+  <rect x="76" y="259" width="222" height="17" rx="8.5" fill="url(#falseGrad)"/>
+  <rect x="298" y="259" width="226" height="17" rx="8.5" fill="url(#trueGrad)"/>
+  <line x1="298" y1="250" x2="298" y2="284" stroke="#375d78" stroke-width="2"/>
+  <circle cx="298" cy="258" r="6" fill="#ffffff" stroke="#375d78" stroke-width="2"/>
+  <text x="187" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#98544f">İmkânsız</text>
+  <text x="411" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31765d">Mümkün</text>
+  <text x="298" y="307" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#375d78">İlk mümkün değer</text>
+
+  <path d="M320 141 L320 235" fill="none" stroke="#849da9" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <polygon points="320,242 316,234 324,234" fill="#849da9"/>
+
+  <text x="68" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798d">Monoton uygunluk</text>
+  <text x="510" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798d">O(T log R)</text>
+</svg>

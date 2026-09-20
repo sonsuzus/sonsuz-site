@@ -12,7 +12,11 @@ tags:
   - beklenen değer
   - cpp
 toc: true
+image: /img/probabilistic-dp-olasilikli-29.png
 ---
+
+![probabilistic-dp-olasilikli-29](/img/probabilistic-dp-olasilikli-29.svg)
+
 
 Bir zar atılıyor, yazı gelirse ilerliyor, tura gelirse başa dönüyorsun… İlk bakışta şans oyunu gibi görünen bu problemler, doğru durumlar tanımlandığında gayet düzenli birer dinamik programlama sorusuna dönüşür. **Probabilistic DP**, rastgele olayların sonuçlarını tek tek simüle etmek yerine her durumdan ulaşılabilecek sonuçların olasılıklarını matematiksel olarak birleştirir.
 ``

@@ -12,6 +12,7 @@ tags:
   - performans
   - test
 toc: true
+image: /img/adversarial-analysis-algoritmayi-16.png
 ---
 
 Bir algoritma günlük verilerde ışık hızında çalışabilir; fakat karşısına onun zayıf noktalarını bilen kurnaz bir rakip çıktığında bütün karizma dağılabilir. **Adversarial analysis**, girdilerin tesadüfen değil, algoritmayı mümkün olduğunca zorlamak amacıyla seçildiğini varsayar. Böylece “Genellikle hızlı mı?” sorusu yerine daha güvenli bir soru sorarız: “Onu sabote etmeye çalışan biri varken ne kadar iyi?”
@@ -35,6 +36,9 @@ Rakibin gücü arttıkça kanıtlanan performans garantisi daha değerli, fakat 
 | En kötü durum | Olası en pahalı girdi | En fazla ne kadar kaynak gerekir? |
 | Adversarial analiz | Bilinçli ve uyarlanabilir rakip | Algoritma sömürülürse ne olur? |
 | Amortize analiz | İşlem dizisinin toplam maliyeti | Uzun vadede işlem başına maliyet nedir? |
+
+![adversarial-analysis-algoritmayi-16](/img/adversarial-analysis-algoritmayi-16.svg)
+
 
 ## Matematiksel bakış
 

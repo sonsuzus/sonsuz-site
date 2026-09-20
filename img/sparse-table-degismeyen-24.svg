@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="head" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#dff4e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#7890a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="58" cy="44" r="74" fill="#dceeff" opacity="0.42"/>
+  <circle cx="590" cy="280" r="95" fill="#dff4df" opacity="0.45"/>
+
+  <rect x="22" y="18" width="596" height="38" rx="15" fill="url(#head)" filter="url(#shadow)"/>
+  <text x="43" y="42" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536a">Sparse Table</text>
+  <text x="151" y="42" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557080">Değişmeyen dizide hızlı aralık minimumu</text>
+  <rect x="502" y="27" width="94" height="20" rx="10" fill="#cbeeda"/>
+  <text x="549" y="41" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#26704d">Sorgu O(1)</text>
+
+  <rect x="22" y="77" width="168" height="211" rx="18" fill="#ffffff" opacity="0.92" filter="url(#shadow)"/>
+  <text x="42" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466276">Sabit dizi</text>
+  <text x="42" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738996">st[0] · tek eleman</text>
+
+  <g filter="url(#smallShadow)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <rect x="39" y="143" width="23" height="30" rx="7" fill="#dcecff"/>
+    <rect x="64" y="143" width="23" height="30" rx="7" fill="#d9f2e2"/>
+    <rect x="89" y="143" width="23" height="30" rx="7" fill="#ffe5bf"/>
+    <rect x="114" y="143" width="23" height="30" rx="7" fill="#eadfff"/>
+    <rect x="139" y="143" width="23" height="30" rx="7" fill="#fbd8df"/>
+    <text x="50.5" y="163" fill="#355367">7</text>
+    <text x="75.5" y="163" fill="#355367">3</text>
+    <text x="100.5" y="163" fill="#355367">5</text>
+    <text x="125.5" y="163" fill="#355367">2</text>
+    <text x="150.5" y="163" fill="#355367">6</text>
+  </g>
+  <line x1="45" y1="192" x2="157" y2="192" stroke="#b8cad4" stroke-width="1.5"/>
+  <text x="42" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8291">Güncelleme yok</text>
+  <rect x="42" y="230" width="126" height="34" rx="10" fill="#edf5fb"/>
+  <text x="105" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47708a">çok sorgu</text>
+
+  <path d="M198 178 H214" fill="none" stroke="#77a5be" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="220,178 212,173 212,183" fill="#77a5be"/>
+
+  <rect x="224" y="77" width="205" height="211" rx="18" fill="#ffffff" opacity="0.92" filter="url(#shadow)"/>
+  <text x="244" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466276">Ön hesaplama</text>
+  <text x="244" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738996">İkinin kuvvetleri</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <text x="244" y="154" fill="#6d8290">2⁰</text>
+    <rect x="276" y="137" width="125" height="25" rx="8" fill="#dcecff" filter="url(#smallShadow)"/>
+    <line x1="301" y1="137" x2="301" y2="162" stroke="#b7cee6"/>
+    <line x1="326" y1="137" x2="326" y2="162" stroke="#b7cee6"/>
+    <line x1="351" y1="137" x2="351" y2="162" stroke="#b7cee6"/>
+    <line x1="376" y1="137" x2="376" y2="162" stroke="#b7cee6"/>
+    <text x="338" y="154" text-anchor="middle" fill="#45637a">1'li bloklar</text>
+
+    <text x="244" y="190" fill="#6d8290">2¹</text>
+    <rect x="276" y="173" width="100" height="25" rx="8" fill="#d9f2e2" filter="url(#smallShadow)"/>
+    <line x1="326" y1="173" x2="326" y2="198" stroke="#afd8bd"/>
+    <text x="326" y="190" text-anchor="middle" fill="#356a4b">2'li minimum</text>
+
+    <text x="244" y="226" fill="#6d8290">2²</text>
+    <rect x="276" y="209" width="75" height="25" rx="8" fill="#ffe5bf" filter="url(#smallShadow)"/>
+    <text x="313.5" y="226" text-anchor="middle" fill="#8a6330">4'lü minimum</text>
+  </g>
+  <path d="M388 185 C403 185 404 156 407 147" fill="none" stroke="#8cb9a2" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <text x="248" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7b63">O(n log n) kurulum</text>
+
+  <path d="M437 178 H453" fill="none" stroke="#77a5be" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="459,178 451,173 451,183" fill="#77a5be"/>
+
+  <rect x="463" y="77" width="155" height="211" rx="18" fill="#ffffff" opacity="0.92" filter="url(#shadow)"/>
+  <text x="483" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466276">Aralık sorgusu</text>
+  <text x="483" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738996">[L, R] için iki blok</text>
+
+  <rect x="483" y="140" width="113" height="46" rx="12" fill="#eef6fc" filter="url(#smallShadow)"/>
+  <rect x="491" y="151" width="58" height="19" rx="6" fill="#bfe0f7"/>
+  <rect x="530" y="151" width="58" height="19" rx="6" fill="#ccebd5" opacity="0.93"/>
+  <text x="539.5" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d70">örtüşen bloklar</text>
+
+  <path d="M539 192 V205" fill="none" stroke="#77a5be" stroke-width="2"/>
+  <polygon points="539,211 534,203 544,203" fill="#77a5be"/>
+  <rect x="490" y="216" width="98" height="35" rx="11" fill="#d8f1e1" filter="url(#smallShadow)"/>
+  <text x="539" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#28704d">min(a, b)</text>
+  <text x="539" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557d68">idempotent işlem</text>
+</svg>
