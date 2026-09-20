@@ -12,6 +12,7 @@ tags:
   - dizi
   - c++
 toc: true
+image: /img/floydun-cevrim-bulma-73.png
 ---
 
 Bir veri yapısında ilerlerken aynı noktaya tekrar uğruyorsanız, muhtemelen bir çevrimin içine düşmüşsünüzdür. Ziyaret edilen elemanları bir kümede saklamak işe yarar; ancak ek bellek tüketir. Floyd’un çevrim bulma algoritması ise yalnızca iki işaretçi kullanarak döngüyü yakalar. Üstelik bunu hem bağlı listelerde hem de her elemanın bir sonraki konumu gösterdiği dizilerde yapabilir.
@@ -110,3 +111,6 @@ int cycleLength(const vector<int>& next, int meeting) {
 ```
 
 Floyd’un yöntemi; bağlı listelerde hata ayıklama, yinelenen durumları tespit etme, durum makinelerini inceleme ve sayı dizilerindeki periyotları bulma gibi alanlarda kullanılır. Kısacası veri sürekli “sonraki” konuma gidiyorsa ve hafızayı şişirmeden döngü arıyorsanız, kaplumbağa ile tavşanı yarışa sokmanın tam zamanıdır.
+
+![floydun-cevrim-bulma-73](/img/floydun-cevrim-bulma-73.svg)
+

@@ -12,7 +12,11 @@ tags:
   - python
   - karmaşıklık
 toc: true
+image: /img/hamilton-yolu-problemi-43.png
 ---
+
+![hamilton-yolu-problemi-43](/img/hamilton-yolu-problemi-43.svg)
+
 
 Bir şehir turu planladığınızı düşünün: Her şehre tam bir kez uğrayacak, ancak başladığınız yere dönmek zorunda olmayacaksınız. Haritada bazı şehirler arasında doğrudan yol bulunmadığında işler hızla karışır. Graf teorisindeki **Hamilton yolu problemi**, tam olarak bu turun mümkün olup olmadığını sorar. Tanımı tek cümleye sığsa da çözümü bilgisayarları ciddi biçimde terletebilir.
 

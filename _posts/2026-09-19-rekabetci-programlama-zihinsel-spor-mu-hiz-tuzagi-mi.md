@@ -12,6 +12,7 @@ tags:
   - yazılım eğitimi
   - cplusplus
 toc: true
+image: /img/rekabetci-programlama-zihinsel-98.png
 ---
 
 Rekabetçi programlama; belirli süre ve bellek sınırları altında algoritmik problemler çözme pratiğidir. Bir bakıma satranç, matematik olimpiyatı ve klavye yarışının aynı masaya oturmuş hâlidir. Doğru uygulandığında düşünme becerisini keskinleştirir; yanlış hedeflerle yapıldığında ise yazılım geliştirmenin yalnızca hızlı kod yazmaktan ibaret olduğu yanılgısını doğurabilir.
@@ -33,6 +34,9 @@ Rekabetçi programlama ayrıca diziler, yığınlar, kuyruklar, ağaçlar, grafl
 | Köşe durumlarını düşünme | Hatalı cevabı önlemek | Daha güvenilir yazılım üretmek |
 | Hızlı prototipleme | Kısa sürede çözüm yazmak | Fikirleri erken doğrulamak |
 | Hata ayıklama | Yarışma içinde düzeltme yapmak | Sorunları sistematik incelemek |
+
+![rekabetci-programlama-zihinsel-98](/img/rekabetci-programlama-zihinsel-98.svg)
+
 
 Aşağıdaki örnek, sıralı bir dizide hedef değeri ikili aramayla bulur. Her adımda arama alanı yarıya indiği için karmaşıklığı $O(\log n)$ olur:
 

@@ -12,6 +12,7 @@ tags:
   - derinlik öncelikli arama
   - bağlı bileşenler
 toc: true
+image: /img/kosaraju-algoritmasi-yonlu-17.png
 ---
 
 Bir sosyal ağda herkes birbirini takip etmeyebilir; Ayşe, Berk’i takip ederken Berk Ayşe’yi takip etmiyor olabilir. Buna rağmen bazı kullanıcı gruplarında herkes diğerlerine dolaylı yollardan ulaşabilir. Yönlü grafların içindeki bu gizli ve sıkı topluluklara **güçlü bağlı bileşenler** denir. Kosaraju algoritması, grafı iki kez dolaşarak bu toplulukları şaşırtıcı derecede zarif biçimde ortaya çıkarır.
@@ -31,6 +32,9 @@ $$u \leadsto v \quad \text{ve} \quad v \leadsto u$$
 | Bağlantı koşulu | Arada bir yol bulunması yeterlidir | İki yönde de yol bulunmalıdır |
 | Bileşen türü | Bağlı bileşen | Güçlü bağlı bileşen |
 | Tipik yöntem | DFS veya BFS | Kosaraju, Tarjan |
+
+![kosaraju-algoritmasi-yonlu-17](/img/kosaraju-algoritmasi-yonlu-17.svg)
+
 
 ## Kosaraju’nun iki perdelik oyunu
 

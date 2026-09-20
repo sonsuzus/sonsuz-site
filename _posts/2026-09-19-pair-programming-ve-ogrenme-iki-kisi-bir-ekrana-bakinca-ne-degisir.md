@@ -12,6 +12,7 @@ tags:
   - kod inceleme
   - eğitim
 toc: true
+image: /img/pair-programming-ve-42.png
 ---
 
 Tek başına kod yazarken zihnimizde küçük bir tiyatro döner: Kodu yazar, kontrol eder, hata yapar ve bazen aynı hataya on dakika boyunca şaşkınlıkla bakarız. Pair programming, yani eşli programlama, bu tiyatroya ikinci bir oyuncu ekler. İki geliştirici aynı problem üzerinde çalıştığında yalnızca iş bölümü yapılmaz; düşünme biçimleri görünür hâle gelir, geri bildirim hızlanır ve öğrenme sosyal bir sürece dönüşür.
@@ -34,6 +35,9 @@ Bu roller düzenli olarak değiştirilir. Böylece bir kişi sürekli anlatan ö
 | Bilgi tek kişide kalabilir | Bilgi ekip içinde yayılır |
 | Odak kolay dağılabilir | Sosyal sorumluluk odağı artırabilir |
 | Kişisel alışkanlıklar baskındır | Alternatif yaklaşımlar görülür |
+
+![pair-programming-ve-42](/img/pair-programming-ve-42.svg)
+
 
 ## Öğrenmenin arkasındaki mekanizma
 

@@ -11,6 +11,7 @@ tags:
   - python
   - yöneylem araştırması
 toc: true
+image: /img/lineer-programlamaya-giris-24.png
 ---
 
 Bir fabrikanın hangi üründen kaç tane üretmesi gerektiğini, bir kargo şirketinin araçlarını nasıl dağıtacağını veya sınırlı bütçenin projeler arasında nasıl paylaştırılacağını düşünün. Bütün bu soruların ortak noktası, belirli kısıtlar altında **en iyi kararı** aramalarıdır. Lineer programlama, matematiği adeta bir karar verme pusulasına dönüştürerek bu tür optimizasyon problemlerini sistematik biçimde çözmemizi sağlar.
@@ -28,6 +29,9 @@ Bir lineer programlama modeli üç temel bileşenden oluşur:
 | Karar değişkenleri | Kontrol edilecek miktarları gösterir | Üretilecek masa ve sandalye sayısı |
 | Amaç fonksiyonu | Optimize edilmek istenen sonucu tanımlar | Toplam kârı büyütmek |
 | Kısıtlar | Kaynak ve iş kurallarını ifade eder | Ahşap, süre veya bütçe sınırı |
+
+![lineer-programlamaya-giris-24](/img/lineer-programlamaya-giris-24.svg)
+
 
 Karar değişkenlerini $x_1, x_2, \ldots, x_n$ ile gösterirsek genel bir maksimizasyon modeli şöyledir:
 

@@ -11,6 +11,7 @@ tags:
   - algoritma
   - python
 toc: true
+image: /img/euler-yolu-ve-26.png
 ---
 
 Bir şehrin bütün köprülerinden yalnızca bir kez geçip yürüyüşü tamamlamak mümkün müdür? 18. yüzyılda Königsberg halkının merak ettiği bu soru, bugün graf teorisinin en meşhur problemlerinden biridir. Leonhard Euler’in çözümü yalnızca köprü bilmecesini açıklamakla kalmadı; ağlar, rotalar ve bağlantılar üzerine düşünme biçimimizi de değiştirdi.
@@ -86,3 +87,6 @@ Kod önce tek dereceli düğümleri sayar. Uygun bir başlangıç seçtikten son
 - Kenarlı düğümler bağlantılı değilse dereceler uygun görünse bile rota kurulamaz.
 
 Königsberg probleminde dört kara parçasının dereceleri de tekti. Dört, izin verilen iki sınırını aştığı için bütün köprülerden tam bir kez geçmek mümkün değildi. Bazen en iyi rota, hiç aramadan önce neden var olamayacağını kanıtladığımız rotadır!
+
+![euler-yolu-ve-26](/img/euler-yolu-ve-26.svg)
+

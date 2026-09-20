@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cbdcf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71849a" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="118" fill="#dcefea" opacity="0.38"/>
+  <circle cx="320" cy="160" r="83" fill="none" stroke="#9fbfc5" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.65"/>
+
+  <path d="M174 133 C207 108 225 105 251 119" fill="none" stroke="#6c91b3" stroke-width="2"/>
+  <polygon points="249,114 260,121 247,124" fill="#6c91b3"/>
+  <path d="M386 119 C414 104 438 109 466 132" fill="none" stroke="#6c91b3" stroke-width="2"/>
+  <polygon points="462,123 473,138 457,134" fill="#6c91b3"/>
+  <path d="M469 194 C437 216 410 218 386 202" fill="none" stroke="#6c91b3" stroke-width="2"/>
+  <polygon points="391,198 379,199 386,209" fill="#6c91b3"/>
+  <path d="M252 202 C224 221 201 215 174 192" fill="none" stroke="#6c91b3" stroke-width="2"/>
+  <polygon points="178,202 163,187 181,192" fill="#6c91b3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="255" y="107" width="130" height="106" rx="23" fill="url(#core)" stroke="#a7bfda"/>
+  </g>
+  <circle cx="283" cy="139" r="16" fill="#91add0"/>
+  <path d="M278 139 L288 139 M283 134 L283 144" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="304" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516d">Tek DFS</text>
+  <text x="304" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6479">index ve low</text>
+  <line x1="275" y1="171" x2="365" y2="171" stroke="#9bb5d0"/>
+  <text x="276" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516d">low = index</text>
+  <text x="283" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">SCC kökü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="45" y="82" width="130" height="115" rx="18" fill="#fffdf7" stroke="#e0ce9e"/>
+  </g>
+  <text x="61" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#705d31">Yönlü Graf</text>
+  <circle cx="76" cy="138" r="12" fill="#f5c983"/>
+  <circle cx="132" cy="129" r="12" fill="#f5c983"/>
+  <circle cx="119" cy="171" r="12" fill="#f5c983"/>
+  <text x="72" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#604b24">A</text>
+  <text x="128" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#604b24">B</text>
+  <text x="115" y="175" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#604b24">C</text>
+  <path d="M88 136 L117 131" stroke="#8e7040" stroke-width="2"/>
+  <polygon points="114,127 125,130 116,135" fill="#8e7040"/>
+  <path d="M130 141 L123 158" stroke="#8e7040" stroke-width="2"/>
+  <polygon points="118,155 121,169 128,158" fill="#8e7040"/>
+  <path d="M108 165 L82 147" stroke="#8e7040" stroke-width="2"/>
+  <polygon points="85,155 73,141 91,146" fill="#8e7040"/>
+
+  <g filter="url(#shadow)">
+    <rect x="465" y="78" width="132" height="126" rx="18" fill="#fffafa" stroke="#ddb9c4"/>
+  </g>
+  <text x="486" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754657">Aktif Yığın</text>
+  <rect x="491" y="119" width="77" height="20" rx="6" fill="#f4c8d2"/>
+  <rect x="491" y="142" width="77" height="20" rx="6" fill="#eeb5c5"/>
+  <rect x="491" y="165" width="77" height="20" rx="6" fill="#e6a3b8"/>
+  <text x="504" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e4050">C</text>
+  <text x="504" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e4050">B</text>
+  <text x="504" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e4050">A</text>
+  <text x="542" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e4050">üst</text>
+
+  <g filter="url(#shadow)">
+    <rect x="206" y="245" width="228" height="52" rx="16" fill="#d9f0df" stroke="#a9d2b4"/>
+  </g>
+  <circle cx="232" cy="271" r="13" fill="#78b78b"/>
+  <path d="M226 271 L230 275 L238 266" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="254" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37664a">Güçlü Bağlı Bileşen</text>
+  <text x="254" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527663">A · B · C birlikte çıkar</text>
+
+  <path d="M320 216 L320 237" stroke="#6e9d7b" stroke-width="2"/>
+  <polygon points="314,234 320,244 326,234" fill="#6e9d7b"/>
+
+  <text x="49" y="39" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516d">Tarjan Algoritması</text>
+  <text x="49" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607b8f">Tek geçişte döngüsel düğüm grupları</text>
+  <text x="496" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">O(V+E)</text>
+</svg>

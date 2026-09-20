@@ -12,6 +12,7 @@ tags:
   - öğrenme
   - yazılım geliştirme
 toc: true
+image: /img/debugger-ogretmek-ogrencinin-15.png
 ---
 
 Programlamaya yeni başlayan bir öğrenci için kod çoğu zaman gizemli bir kutudur: Metin yazılır, “Çalıştır” düğmesine basılır ve ekranda ya doğru sonuç ya da kırmızı bir hata belirir. Debugger kullanmayı öğrenmek bu kutunun kapağını açar. Öğrenci yalnızca hatayı bulmayı değil, programın zaman içinde nasıl ilerlediğini, değişkenlerin nasıl dönüştüğünü ve bilgisayarın kodu hangi sırayla yorumladığını görmeye başlar.
@@ -78,3 +79,6 @@ $$\text{Tahmin} \rightarrow \text{Gözlem} \rightarrow \text{Çelişki} \rightar
 İlk derslerde yalnızca breakpoint, Step Over ve değişken paneli yeterlidir. Daha sonra Step Into, Step Out, koşullu breakpoint ve call stack eklenebilir. Her özelliği aynı anda göstermek, öğrencinin kod yerine arayüzle mücadele etmesine neden olur.
 
 Sonuç olarak debugger öğretmek yalnızca daha hızlı hata buldurmaz. Öğrenciye programın çalışan, değişen ve gözlemlenebilir bir sistem olduğunu gösterir. İyi kullanılan debugger, kod için bir büyüteçten fazlasıdır: Öğrencinin zihnindeki bilgisayarı yeniden inşa eden küçük bir laboratuvardır.
+
+![debugger-ogretmek-ogrencinin-15](/img/debugger-ogretmek-ogrencinin-15.svg)
+

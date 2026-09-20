@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f7fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#55708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#42627e" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="64" cy="43" r="54" fill="#dff2f0" opacity="0.55"/>
+  <circle cx="593" cy="276" r="75" fill="#e4eafb" opacity="0.65"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526a">Kosaraju: Gizli Toplulukları Bulma</text>
+
+  <g filter="url(#shadow)">
+    <rect x="22" y="52" width="174" height="218" rx="18" fill="url(#panel)"/>
+    <rect x="233" y="52" width="174" height="218" rx="18" fill="url(#panel)"/>
+    <rect x="444" y="52" width="174" height="218" rx="18" fill="url(#panel)"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536c">
+    <text x="109" y="79" text-anchor="middle">1. DFS ve Bitiş Sırası</text>
+    <text x="320" y="79" text-anchor="middle">2. Grafı Ters Çevir</text>
+    <text x="531" y="79" text-anchor="middle">3. Toplulukları Topla</text>
+  </g>
+
+  <path d="M196 160 H222" fill="none" stroke="#7891a6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="228,160 219,155 219,165" fill="#7891a6"/>
+  <path d="M407 160 H433" fill="none" stroke="#7891a6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="439,160 430,155 430,165" fill="#7891a6"/>
+
+  <g stroke="#7094ae" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M69 128 L116 111"/>
+    <path d="M120 119 L139 157"/>
+    <path d="M130 166 L83 177"/>
+    <path d="M73 169 L61 137"/>
+    <path d="M143 160 L158 197"/>
+    <path d="M158 202 L124 211"/>
+  </g>
+  <g fill="#7094ae">
+    <polygon points="120,111 112,110 115,118"/>
+    <polygon points="139,157 133,148 129,155"/>
+    <polygon points="83,177 91,170 91,179"/>
+    <polygon points="61,137 68,144 70,135"/>
+    <polygon points="158,197 151,190 149,199"/>
+    <polygon points="124,211 132,205 132,214"/>
+  </g>
+  <g filter="url(#soft)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <circle cx="62" cy="128" r="17" fill="#bfe8ef"/><text x="62" y="132" fill="#28536b">A</text>
+    <circle cx="117" cy="110" r="17" fill="#bfe8ef"/><text x="117" y="114" fill="#28536b">B</text>
+    <circle cx="140" cy="160" r="17" fill="#bfe8ef"/><text x="140" y="164" fill="#28536b">C</text>
+    <circle cx="78" cy="178" r="17" fill="#bfe8ef"/><text x="78" y="182" fill="#28536b">D</text>
+    <circle cx="160" cy="201" r="17" fill="#f8d5b5"/><text x="160" y="205" fill="#765035">E</text>
+    <circle cx="120" cy="212" r="17" fill="#f8d5b5"/><text x="120" y="216" fill="#765035">F</text>
+  </g>
+  <rect x="47" y="235" width="124" height="22" rx="11" fill="#e7f0f8"/>
+  <text x="109" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587187">Yığın: C, B, A, F, E, D</text>
+
+  <g stroke="#9a79af" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M272 111 L316 130"/>
+    <path d="M324 135 L340 177"/>
+    <path d="M331 185 L283 184"/>
+    <path d="M275 176 L266 136"/>
+    <path d="M348 181 L372 209"/>
+    <path d="M366 214 L326 212"/>
+  </g>
+  <g fill="#9a79af">
+    <polygon points="272,111 280,112 276,119"/>
+    <polygon points="316,130 307,124 306,133"/>
+    <polygon points="324,135 318,126 314,133"/>
+    <polygon points="340,177 334,168 330,176"/>
+    <polygon points="331,185 340,181 339,190"/>
+    <polygon points="283,184 291,179 290,188"/>
+    <polygon points="275,176 281,184 283,175"/>
+    <polygon points="266,136 273,143 275,134"/>
+    <polygon points="348,181 340,173 338,182"/>
+    <polygon points="372,209 363,203 363,212"/>
+    <polygon points="366,214 374,209 374,218"/>
+    <polygon points="326,212 334,207 334,216"/>
+  </g>
+  <g filter="url(#soft)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <circle cx="265" cy="112" r="17" fill="#e4d6f3"/><text x="265" y="116" fill="#5c4372">A</text>
+    <circle cx="320" cy="132" r="17" fill="#e4d6f3"/><text x="320" y="136" fill="#5c4372">B</text>
+    <circle cx="342" cy="182" r="17" fill="#e4d6f3"/><text x="342" y="186" fill="#5c4372">C</text>
+    <circle cx="278" cy="184" r="17" fill="#e4d6f3"/><text x="278" y="188" fill="#5c4372">D</text>
+    <circle cx="374" cy="211" r="17" fill="#f8d5b5"/><text x="374" y="215" fill="#765035">E</text>
+    <circle cx="320" cy="213" r="17" fill="#f8d5b5"/><text x="320" y="217" fill="#765035">F</text>
+  </g>
+  <path d="M274 239 H366" stroke="#9a79af" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="268,239 277,234 277,244" fill="#9a79af"/>
+  <polygon points="372,239 363,234 363,244" fill="#9a79af"/>
+  <text x="320" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76578a">Kenar yönleri ters</text>
+
+  <rect x="462" y="97" width="138" height="72" rx="16" fill="#d8f0ee" stroke="#9bd2ce" stroke-width="1.5"/>
+  <rect x="462" y="184" width="138" height="56" rx="16" fill="#fbe2ca" stroke="#e8bf99" stroke-width="1.5"/>
+  <text x="531" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35626a">Bileşen 1</text>
+  <text x="531" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#80563a">Bileşen 2</text>
+
+  <g stroke="#4f9996" stroke-width="2" fill="none">
+    <path d="M489 143 L524 124 L558 145 L489 143"/>
+  </g>
+  <g fill="#4f9996">
+    <polygon points="524,124 516,124 520,131"/>
+    <polygon points="558,145 550,139 549,148"/>
+    <polygon points="489,143 497,138 496,147"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <circle cx="485" cy="143" r="14" fill="#9edbd7"/><text x="485" y="147" fill="#245860">A</text>
+    <circle cx="526" cy="122" r="14" fill="#9edbd7"/><text x="526" y="126" fill="#245860">B</text>
+    <circle cx="562" cy="146" r="14" fill="#9edbd7"/><text x="562" y="150" fill="#245860">C</text>
+  </g>
+  <g stroke="#cb8d59" stroke-width="2" fill="none">
+    <path d="M493 218 L558 218"/>
+  </g>
+  <g fill="#cb8d59">
+    <polygon points="558,218 550,213 550,223"/>
+    <polygon points="493,218 501,213 501,223"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <circle cx="489" cy="218" r="14" fill="#f5bf91"/><text x="489" y="222" fill="#75472c">D</text>
+    <circle cx="562" cy="218" r="14" fill="#f5bf91"/><text x="562" y="222" fill="#75472c">E</text>
+  </g>
+
+  <text x="320" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527187">İki DFS • Transpoz graf • Güçlü bağlı bileşenler</text>
+</svg>

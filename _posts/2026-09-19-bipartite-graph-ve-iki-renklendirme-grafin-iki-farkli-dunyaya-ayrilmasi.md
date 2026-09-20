@@ -12,6 +12,7 @@ tags:
   - python
   - bfs
 toc: true
+image: /img/bipartite-graph-ve-48.png
 ---
 
 Bir partide herkesin iki gruptan yalnızca karşı gruptakilerle iletişim kurduğunu düşünün. Aynı gruptaki hiç kimse birbiriyle konuşmuyor! Kulağa biraz tuhaf gelse de bu düzen, graf teorisindeki **bipartite graph**, yani **iki parçalı graf** kavramını mükemmel biçimde anlatır. Üstelik bu graflar; eşleştirme, görev dağıtımı ve sosyal ağ analizi gibi birçok gerçek problemde karşımıza çıkar.
@@ -44,6 +45,9 @@ koşulu sağlanıyorsa graf iki parçalıdır. Buradaki renklerin gerçek bir an
 | Aynı grupta kenar olabilir mi? | Hayır | Olabilir |
 | Tek uzunluklu döngü içerir mi? | Hayır | En az bir tane içerir |
 | Tipik örnek | Öğrenci–proje ağı | Üçgen graf |
+
+![bipartite-graph-ve-48](/img/bipartite-graph-ve-48.svg)
+
 
 Buradaki en önemli teorik sonuç şudur: **Bir graf ancak ve ancak tek sayıda kenardan oluşan bir döngü içermiyorsa iki parçalıdır.** Örneğin üç düğümlü bir üçgende ilk düğümü kırmızı, ikincisini mavi yaparız. Üçüncü düğüm hem kırmızıya hem maviye bağlı olduğundan uygun renk kalmaz. Algoritma adeta “Renkler bitti!” diye alarm verir.
 

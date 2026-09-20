@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#d9f3e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71869b" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="55" r="70" fill="#dceeff" opacity="0.45"/>
+  <circle cx="583" cy="268" r="95" fill="#dcf2df" opacity="0.52"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536a">EULER ROTA KARARI</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668093">Her kenar tam bir kez kullanılır</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="79" width="142" height="178" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49647a">Graf modeli</text>
+  <text x="48" y="127" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718797">Düğüm ve kenarlar</text>
+
+  <path d="M62 164 L99 143 L135 164 L119 208 L75 208 Z" fill="none" stroke="#78a7c8" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M62 164 L119 208 M99 143 L119 208 M135 164 L75 208" fill="none" stroke="#a7c9a9" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="62" cy="164" r="9" fill="#8bb9dd"/>
+  <circle cx="99" cy="143" r="9" fill="#9fd3b2"/>
+  <circle cx="135" cy="164" r="9" fill="#f2bd86"/>
+  <circle cx="119" cy="208" r="9" fill="#b7a6dc"/>
+  <circle cx="75" cy="208" r="9" fill="#ef9ca1"/>
+  <text x="47" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587186">Derece: d(v)</text>
+
+  <path d="M180 168 H204" stroke="#91aabd" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M204 168 L196 163 L196 173 Z" fill="#91aabd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="214" y="74" width="190" height="190" rx="20" fill="url(#core)"/>
+  </g>
+  <text x="241" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c6170">Koşul denetimi</text>
+
+  <rect x="236" y="121" width="146" height="35" rx="11" fill="#ffffff" opacity="0.8"/>
+  <circle cx="253" cy="138" r="7" fill="#90b9d8"/>
+  <text x="269" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456378">Bağlantılı mı?</text>
+
+  <rect x="236" y="166" width="146" height="35" rx="11" fill="#ffffff" opacity="0.8"/>
+  <circle cx="253" cy="183" r="7" fill="#9bcfab"/>
+  <text x="269" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456378">Tek derece sayısı</text>
+
+  <rect x="236" y="211" width="146" height="32" rx="11" fill="#ffffff" opacity="0.8"/>
+  <text x="251" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547084">0 • 2 • 2 üstü</text>
+
+  <path d="M414 168 H434" stroke="#91aabd" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M434 168 L426 163 L426 173 Z" fill="#91aabd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="444" y="68" width="166" height="67" rx="17" fill="#e0f3e6"/>
+    <rect x="444" y="145" width="166" height="67" rx="17" fill="#e4efff"/>
+    <rect x="444" y="222" width="166" height="67" rx="17" fill="#ffe8e4"/>
+  </g>
+
+  <circle cx="470" cy="101" r="12" fill="#78bf92"/>
+  <path d="M464 101 L469 106 L477 96" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="491" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416f52">Euler turu</text>
+  <text x="491" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597665">0 tek düğüm</text>
+
+  <circle cx="470" cy="178" r="12" fill="#7aa9df"/>
+  <path d="M465 178 H476 M472 174 L476 178 L472 182" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="491" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42688f">Euler yolu</text>
+  <text x="491" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e7893">2 tek düğüm</text>
+
+  <circle cx="470" cy="255" r="12" fill="#e38c83"/>
+  <path d="M465 250 L475 260 M475 250 L465 260" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="491" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a524d">İmkânsız</text>
+  <text x="491" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#946762">2 üstü veya kopuk</text>
+
+  <path d="M425 107 C435 107 435 101 434 101" fill="none" stroke="#8db59b" stroke-width="1.8"/>
+  <path d="M425 169 C434 169 434 178 434 178" fill="none" stroke="#91aabd" stroke-width="1.8"/>
+  <path d="M425 225 C438 225 436 255 434 255" fill="none" stroke="#dca099" stroke-width="1.8"/>
+</svg>

@@ -11,6 +11,7 @@ tags:
   - python
   - veri-yapıları
 toc: true
+image: /img/sweep-line-algoritmasi-54.png
 ---
 
 Bilgisayarsal geometri problemleri ilk bakışta ürkütücüdür: Doğrular kesişir, dikdörtgenler üst üste biner ve noktalar düzleme dağılır. Sweep Line, yani **tarama doğrusu algoritması**, bu iki boyutlu karmaşayı hareket eden hayali bir doğru ve sıralanmış olaylar yardımıyla yönetilebilir hâle getirir. Kısacası bütün düzleme aynı anda bakmak yerine, önemli değişiklikleri sırayla işleriz.
@@ -89,3 +90,6 @@ Python listesindeki silme işlemi $O(n)$ olduğundan bu kod eğitim amaçlıdır
 ## Nerelerde kullanılır?
 
 Sweep Line; doğru parçası kesişimleri, dikdörtgenlerin birleşim alanı, takvim çakışmaları, en fazla eşzamanlı kullanıcı sayısı ve en yakın nokta çifti gibi problemlerde karşımıza çıkar. Hepsindeki ortak numara aynıdır: **Uzayı gezmek yerine değişimin gerçekleştiği olayları gezmek.** Böylece iki boyutlu görünen problem, sıralı bir zaman çizelgesi ve güncel bir aktif durum problemine dönüşür.
+
+![sweep-line-algoritmasi-54](/img/sweep-line-algoritmasi-54.svg)
+

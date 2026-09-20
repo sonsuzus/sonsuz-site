@@ -11,7 +11,11 @@ tags:
   - c-plus-plus
   - rekabetçi-programlama
 toc: true
+image: /img/coordinate-compression-dev-90.png
 ---
+
+![coordinate-compression-dev-90](/img/coordinate-compression-dev-90.svg)
+
 
 Bir milyara kadar uzanan koordinatlarınız olduğunu düşünün. Elinizde yalnızca birkaç bin nokta bulunmasına rağmen `int dizi[1000000001]` oluşturmak, küçük bir kargo için uçak kiralamaya benzer. Coordinate Compression, yani koordinat sıkıştırma, büyük fakat seyrek değerleri sıralarını koruyarak küçük indislerle temsil etmemizi sağlar. Böylece dev koordinatlar, standart diziler ve verimli veri yapılarıyla işlenebilir hâle gelir.
 

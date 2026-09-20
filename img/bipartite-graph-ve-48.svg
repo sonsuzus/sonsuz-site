@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="maviKart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4f0ff"/>
+      <stop offset="100%" stop-color="#cfe3fb"/>
+    </linearGradient>
+    <linearGradient id="kirmiziKart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe9eb"/>
+      <stop offset="100%" stop-color="#f8d3d8"/>
+    </linearGradient>
+    <linearGradient id="yesilKart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9f8ed"/>
+      <stop offset="100%" stop-color="#cfebd7"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7790a0" flood-opacity="0.2"/>
+    </filter>
+    <filter id="hafifGolge" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#73899b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39516a">İki Parçalı Graf ve BFS ile Renklendirme</text>
+  <rect x="28" y="42" width="330" height="3" rx="2" fill="#9ec4e8"/>
+
+  <g filter="url(#golge)">
+    <rect x="28" y="62" width="245" height="210" rx="22" fill="#ffffff"/>
+    <rect x="291" y="62" width="160" height="210" rx="22" fill="#ffffff"/>
+    <rect x="469" y="62" width="143" height="210" rx="22" fill="#ffffff"/>
+  </g>
+
+  <text x="49" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#455e76">İki ayrı dünya</text>
+  <text x="311" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#455e76">BFS kuyruğu</text>
+  <text x="489" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#455e76">Kontrol</text>
+
+  <rect x="47" y="100" width="82" height="25" rx="12" fill="url(#maviKart)"/>
+  <text x="69" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35698d">Grup A</text>
+  <rect x="171" y="100" width="82" height="25" rx="12" fill="url(#kirmiziKart)"/>
+  <text x="193" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a95161">Grup B</text>
+
+  <g stroke="#9bb3c3" stroke-width="2.2" fill="none" stroke-linecap="round">
+    <path d="M95 151 L205 151"/>
+    <path d="M95 151 L205 204"/>
+    <path d="M95 151 L205 247"/>
+    <path d="M95 204 L205 151"/>
+    <path d="M95 204 L205 247"/>
+    <path d="M95 247 L205 204"/>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <circle cx="95" cy="151" r="18" fill="#78b8e7"/>
+    <circle cx="95" cy="204" r="18" fill="#78b8e7"/>
+    <circle cx="95" cy="247" r="18" fill="#78b8e7"/>
+    <circle cx="205" cy="151" r="18" fill="#ee99a5"/>
+    <circle cx="205" cy="204" r="18" fill="#ee99a5"/>
+    <circle cx="205" cy="247" r="18" fill="#ee99a5"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#ffffff">
+    <text x="95" y="155">A1</text>
+    <text x="95" y="208">A2</text>
+    <text x="95" y="251">A3</text>
+    <text x="205" y="155">B1</text>
+    <text x="205" y="208">B2</text>
+    <text x="205" y="251">B3</text>
+  </g>
+
+  <path d="M274 167 L287 167" stroke="#6e9dbc" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="287,162 297,167 287,172" fill="#6e9dbc"/>
+
+  <rect x="311" y="103" width="119" height="39" rx="11" fill="url(#maviKart)" filter="url(#hafifGolge)"/>
+  <circle cx="330" cy="122" r="10" fill="#78b8e7"/>
+  <text x="350" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42647b">Başlangıç</text>
+
+  <path d="M371 145 L371 155" stroke="#8ca7b7" stroke-width="2"/>
+  <polygon points="366,154 371,161 376,154" fill="#8ca7b7"/>
+
+  <rect x="311" y="163" width="119" height="72" rx="12" fill="#f8fbfd" stroke="#d8e5ea"/>
+  <text x="326" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7081">Kuyruk</text>
+  <rect x="326" y="194" width="24" height="24" rx="7" fill="#78b8e7"/>
+  <rect x="354" y="194" width="24" height="24" rx="7" fill="#ee99a5"/>
+  <rect x="382" y="194" width="24" height="24" rx="7" fill="#78b8e7"/>
+  <text x="338" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">0</text>
+  <text x="366" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">1</text>
+  <text x="394" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">0</text>
+
+  <text x="321" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718694">Komşuya ters renk</text>
+
+  <path d="M452 167 L465 167" stroke="#6e9dbc" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="465,162 475,167 465,172" fill="#6e9dbc"/>
+
+  <rect x="488" y="105" width="105" height="54" rx="13" fill="url(#yesilKart)" filter="url(#hafifGolge)"/>
+  <circle cx="507" cy="132" r="11" fill="#75b98a"/>
+  <path d="M502 132 L506 136 L514 127" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="527" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e7551">Uygun</text>
+  <text x="527" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#537562">iki renk</text>
+
+  <path d="M541 163 L541 177" stroke="#9aafba" stroke-width="2" stroke-dasharray="3 3"/>
+  <polygon points="536,176 541,183 546,176" fill="#9aafba"/>
+
+  <rect x="488" y="186" width="105" height="59" rx="13" fill="#fff4f2" stroke="#f0c7c0" filter="url(#hafifGolge)"/>
+  <circle cx="507" cy="215" r="11" fill="#e88a7d"/>
+  <path d="M502 210 L512 220 M512 210 L502 220" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round"/>
+  <text x="527" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ad5d54">Çakışma</text>
+  <text x="527" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#916760">aynı renk</text>
+
+  <g transform="translate(28,287)">
+    <rect x="0" y="0" width="584" height="19" rx="9" fill="#eaf3f3"/>
+    <circle cx="14" cy="9.5" r="5" fill="#78b8e7"/>
+    <text x="26" y="14" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527084">Kenarlar yalnızca farklı gruplar arasında</text>
+    <circle cx="337" cy="9.5" r="5" fill="#ee99a5"/>
+    <text x="349" y="14" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527084">O(V + E)</text>
+  </g>
+</svg>

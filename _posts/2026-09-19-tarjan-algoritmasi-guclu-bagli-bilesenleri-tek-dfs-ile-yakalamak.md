@@ -12,7 +12,11 @@ tags:
   - algoritma
   - c++
 toc: true
+image: /img/tarjan-algoritmasi-guclu-35.png
 ---
+
+![tarjan-algoritmasi-guclu-35](/img/tarjan-algoritmasi-guclu-35.svg)
+
 
 Yönlü bir grafın içinde birbirine karşılıklı olarak ulaşabilen düğüm gruplarını bulmak, bağımlılık analizinden sosyal ağlara kadar pek çok alanda karşımıza çıkar. Tarjan algoritması, bu grupları yani **güçlü bağlı bileşenleri** yalnızca tek bir derinlik öncelikli arama sürecinde keşfeder. Üstelik bunu yaparken yanında yalnızca bir yığın, birkaç dizi ve etkileyici derecede zarif bir fikir taşır.
 

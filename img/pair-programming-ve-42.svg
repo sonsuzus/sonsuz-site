@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f2ff"/>
+      <stop offset="100%" stop-color="#d8eee9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8da3" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7895a7" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="53" r="52" fill="#dceeff" opacity="0.5"/>
+  <circle cx="585" cy="266" r="72" fill="#dff2d8" opacity="0.48"/>
+  <path d="M30 236 C117 207, 139 277, 221 258 S366 214, 425 253 S548 281, 620 229" fill="none" stroke="#c8e1db" stroke-width="2" opacity="0.55"/>
+
+  <!-- Sol geliştirici -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="83" width="137" height="142" rx="19" fill="#fff7ea"/>
+    <circle cx="103" cy="116" r="23" fill="#f6c987"/>
+    <path d="M68 174 C70 147, 136 147, 139 174 L139 193 L68 193Z" fill="#e6a760"/>
+    <rect x="57" y="196" width="92" height="13" rx="6.5" fill="#e9b874"/>
+  </g>
+  <text x="103" y="63" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47606f" font-weight="600">Sürücü</text>
+  <text x="103" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d7d87">Uygulama pratiği</text>
+
+  <!-- Sağ geliştirici -->
+  <g filter="url(#shadow)">
+    <rect x="468" y="83" width="137" height="142" rx="19" fill="#f0edff"/>
+    <circle cx="537" cy="116" r="23" fill="#b9a6ea"/>
+    <path d="M502 174 C504 147, 570 147, 573 174 L573 193 L502 193Z" fill="#9178ca"/>
+    <rect x="491" y="196" width="92" height="13" rx="6.5" fill="#a08bd1"/>
+  </g>
+  <text x="537" y="63" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47606f" font-weight="600">Gezgin</text>
+  <text x="537" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d7d87">Tasarım ve hata</text>
+
+  <!-- Bağlantılar -->
+  <path d="M172 151 H215" fill="none" stroke="#8ab8bd" stroke-width="2.5"/>
+  <polygon points="215,151 207,146 207,156" fill="#8ab8bd"/>
+  <path d="M468 151 H425" fill="none" stroke="#8ab8bd" stroke-width="2.5"/>
+  <polygon points="425,151 433,146 433,156" fill="#8ab8bd"/>
+
+  <!-- Merkez ekran -->
+  <g filter="url(#shadow)">
+    <rect x="215" y="78" width="210" height="143" rx="16" fill="#ffffff"/>
+    <rect x="225" y="89" width="190" height="104" rx="9" fill="url(#screen)"/>
+    <rect x="225" y="89" width="190" height="18" rx="9" fill="#c8e2e7"/>
+    <circle cx="239" cy="98" r="3" fill="#ee9c9c"/>
+    <circle cx="250" cy="98" r="3" fill="#edc86e"/>
+    <circle cx="261" cy="98" r="3" fill="#7bc49a"/>
+    <path d="M245 124 H264 M245 136 H288 M245 148 H276 M245 160 H299 M245 172 H270" stroke="#6695a5" stroke-width="4" stroke-linecap="round"/>
+    <path d="M310 124 H382 M310 136 H366 M310 148 H390 M310 160 H356 M310 172 H378" stroke="#8d78ba" stroke-width="4" stroke-linecap="round"/>
+    <rect x="291" y="221" width="58" height="8" rx="4" fill="#9bbcc2"/>
+    <rect x="270" y="229" width="100" height="9" rx="4.5" fill="#7da5aa"/>
+  </g>
+  <text x="320" y="53" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405d6b" font-weight="600">Ortak ekran</text>
+
+  <!-- Rol değişimi -->
+  <path d="M185 259 C227 288, 282 293, 312 276" fill="none" stroke="#e3a667" stroke-width="2.5"/>
+  <polygon points="312,276 302,273 306,282" fill="#e3a667"/>
+  <path d="M455 259 C413 288, 358 293, 328 276" fill="none" stroke="#927ccc" stroke-width="2.5"/>
+  <polygon points="328,276 334,282 338,273" fill="#927ccc"/>
+  <g filter="url(#soft)">
+    <rect x="259" y="266" width="122" height="28" rx="14" fill="#ffffff"/>
+  </g>
+  <text x="320" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7080">Düzenli rol değişimi</text>
+
+  <!-- Üst bilgi balonları -->
+  <g filter="url(#soft)">
+    <rect x="191" y="14" width="102" height="28" rx="14" fill="#dceeff"/>
+    <rect x="347" y="14" width="102" height="28" rx="14" fill="#e2f2da"/>
+  </g>
+  <text x="242" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456477">Hızlı geri bildirim</text>
+  <text x="398" y="32" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496a52">Ortak öğrenme</text>
+</svg>

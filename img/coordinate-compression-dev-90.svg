@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="source" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2edff"/>
+      <stop offset="100%" stop-color="#d4e4fb"/>
+    </linearGradient>
+    <linearGradient id="process" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fceccf"/>
+      <stop offset="100%" stop-color="#f6dca6"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcefdc"/>
+      <stop offset="100%" stop-color="#c5e4ce"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71849a" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#71849a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="45" r="65" fill="#d9eaff" opacity="0.42"/>
+  <circle cx="573" cy="275" r="95" fill="#d9f0da" opacity="0.45"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31445a">KOORDİNAT SIKIŞTIRMA</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687b8e">Büyük değerler → küçük indisler</text>
+
+  <path d="M190 151 L218 151" stroke="#7a94ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="218,151 209,145 209,157" fill="#7a94ae"/>
+  <path d="M406 151 L434 151" stroke="#6d9a7a" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="434,151 425,145 425,157" fill="#6d9a7a"/>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="91" width="158" height="121" rx="18" fill="url(#source)" stroke="#c2d7f1"/>
+  </g>
+  <text x="111" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385470">Orijinal değerler</text>
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="132" width="126" height="28" rx="9" fill="#f8fbff"/>
+    <rect x="48" y="169" width="126" height="28" rx="9" fill="#f8fbff"/>
+  </g>
+  <text x="111" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">1 000 000 000</text>
+  <text x="111" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495e">25 · 900 · 25 · -40</text>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="75" width="188" height="153" rx="22" fill="url(#process)" stroke="#edcf94"/>
+  </g>
+  <text x="312" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765421">Sırala ve tekilleştir</text>
+  <path d="M248 119 H376" stroke="#d5b46d" stroke-width="1"/>
+  <g filter="url(#smallShadow)">
+    <rect x="245" y="132" width="134" height="29" rx="9" fill="#fffaf0"/>
+    <rect x="245" y="174" width="134" height="29" rx="9" fill="#fffaf0"/>
+  </g>
+  <text x="312" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d4a28">Sıralı benzersiz</text>
+  <text x="312" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d4a28">-40 · 25 · 900 · 1B</text>
+  <text x="312" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806b43">rank(x)</text>
+
+  <g filter="url(#shadow)">
+    <rect x="434" y="91" width="174" height="121" rx="18" fill="url(#result)" stroke="#b8dabe"/>
+  </g>
+  <text x="521" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356148">Sıkıştırılmış dizi</text>
+  <g filter="url(#smallShadow)">
+    <rect x="454" y="133" width="134" height="37" rx="10" fill="#f8fdf8"/>
+  </g>
+  <text x="521" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2d6345">3 · 1 · 2 · 1 · 0</text>
+  <text x="521" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7860">0 ile k-1 arası</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="71" y="249" width="148" height="42" rx="13" fill="#ffffff" opacity="0.9"/>
+    <rect x="246" y="249" width="148" height="42" rx="13" fill="#ffffff" opacity="0.9"/>
+    <rect x="421" y="249" width="148" height="42" rx="13" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="91" cy="270" r="7" fill="#78a9df"/>
+  <text x="103" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#455d73">Sıralama korunur</text>
+  <circle cx="266" cy="270" r="7" fill="#d6a553"/>
+  <text x="278" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#455d73">Mesafe korunmaz</text>
+  <circle cx="441" cy="270" r="7" fill="#75ae82"/>
+  <text x="453" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#455d73">Bellek azalır</text>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#88b7e8"/>
+      <stop offset="100%" stop-color="#8fcda5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#66829a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="574" cy="44" r="62" fill="#dceef0" opacity="0.55"/>
+  <circle cx="63" cy="284" r="72" fill="#e5edf9" opacity="0.7"/>
+
+  <text x="32" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466177" font-weight="700">FLOYD ÇEVRİM BULMA</text>
+  <text x="32" y="54" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718799">İki işaretçi, sabit ek bellek</text>
+
+  <!-- Başlangıç akışı -->
+  <g filter="url(#shadow)">
+    <rect x="34" y="121" width="76" height="52" rx="16" fill="#ffffff"/>
+    <circle cx="58" cy="147" r="13" fill="#c8e4fc"/>
+    <path d="M54 147h8M58 143v8" stroke="#397ba8" stroke-width="2" stroke-linecap="round"/>
+    <text x="78" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39546a" font-weight="700">Başlangıç</text>
+    <text x="78" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718799">düğüm</text>
+
+    <rect x="139" y="121" width="52" height="52" rx="16" fill="#ffffff"/>
+    <text x="159" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466177" font-weight="700">1</text>
+
+    <rect x="220" y="121" width="52" height="52" rx="16" fill="#ffffff"/>
+    <text x="246" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466177" font-weight="700">2</text>
+  </g>
+
+  <path d="M110 147H132" stroke="#7da7c9" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="139,147 130,142 130,152" fill="#7da7c9"/>
+  <path d="M191 147H213" stroke="#7da7c9" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="220,147 211,142 211,152" fill="#7da7c9"/>
+  <path d="M272 147H293" stroke="#7da7c9" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="301,147 292,142 292,152" fill="#7da7c9"/>
+
+  <!-- Çevrim alanı -->
+  <g filter="url(#shadow)">
+    <rect x="301" y="78" width="294" height="174" rx="28" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <text x="326" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527288" font-weight="700">ÇEVRİM</text>
+  <text x="326" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8294a2">λ uzunluğu</text>
+
+  <!-- Döngü yolu -->
+  <path d="M397 158 C397 123 430 116 466 116 C516 116 551 131 551 165 C551 203 513 221 469 221 C425 221 385 204 385 169 C385 157 389 149 397 142"
+        fill="none" stroke="url(#flow)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M397 142 C401 134 406 130 414 126" fill="none" stroke="#8fcda5" stroke-width="9" stroke-linecap="round"/>
+  <polygon points="420,123 409,123 414,133" fill="#6cba8a"/>
+
+  <!-- Düğümler -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <circle cx="414" cy="126" r="17" fill="#dff1fb" stroke="#85b8d5" stroke-width="2"/>
+    <text x="414" y="130" fill="#3d718f">Giriş</text>
+
+    <circle cx="478" cy="116" r="17" fill="#e5f4df" stroke="#8dbf96" stroke-width="2"/>
+    <text x="478" y="120" fill="#52795b">A</text>
+
+    <circle cx="539" cy="148" r="17" fill="#e5f4df" stroke="#8dbf96" stroke-width="2"/>
+    <text x="539" y="152" fill="#52795b">B</text>
+
+    <circle cx="522" cy="204" r="17" fill="#e5f4df" stroke="#8dbf96" stroke-width="2"/>
+    <text x="522" y="208" fill="#52795b">C</text>
+
+    <circle cx="455" cy="221" r="17" fill="#e5f4df" stroke="#8dbf96" stroke-width="2"/>
+    <text x="455" y="225" fill="#52795b">D</text>
+
+    <circle cx="397" cy="184" r="17" fill="#fce9c9" stroke="#e4ad65" stroke-width="2"/>
+    <text x="397" y="188" fill="#93632c">?</text>
+  </g>
+
+  <!-- Kaplumbağa ve tavşan -->
+  <g filter="url(#shadow)">
+    <rect x="316" y="267" width="134" height="35" rx="14" fill="#e7f2ff"/>
+    <circle cx="337" cy="284" r="10" fill="#75aee0"/>
+    <path d="M331 284h12M337 278v12" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="355" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6f97" font-weight="700">Kaplumbağa · 1 adım</text>
+
+    <rect x="462" y="267" width="132" height="35" rx="14" fill="#fff0df"/>
+    <circle cx="483" cy="284" r="10" fill="#e7a253"/>
+    <path d="M477 284h12M483 278v12" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="501" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6429" font-weight="700">Tavşan · 2 adım</text>
+  </g>
+
+  <!-- Buluşma vurgusu -->
+  <circle cx="397" cy="184" r="27" fill="none" stroke="#f0b75b" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M397 245V217" stroke="#d6943d" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="397,210 392,219 402,219" fill="#d6943d"/>
+  <text x="397" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8e6634" font-weight="700">Buluşma</text>
+
+  <!-- Sonuç rozeti -->
+  <g filter="url(#shadow)">
+    <rect x="31" y="221" width="228" height="57" rx="18" fill="#ffffff"/>
+    <circle cx="57" cy="249" r="15" fill="#d9f0df"/>
+    <path d="M50 249l5 5 10-11" fill="none" stroke="#4c9a64" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e6650" font-weight="700">Çevrim varsa buluşurlar</text>
+    <text x="82" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#778d80">Zaman O(n) · Ek alan O(1)</text>
+  </g>
+</svg>

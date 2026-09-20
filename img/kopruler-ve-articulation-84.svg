@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="critical" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9b92"/>
+      <stop offset="100%" stop-color="#f36f76"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e7f1ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d89a1" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#5d7b91" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="43" r="52" fill="#dcefff" opacity="0.48"/>
+  <circle cx="584" cy="279" r="74" fill="#ddf1d7" opacity="0.45"/>
+
+  <rect x="22" y="18" width="596" height="42" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="48" cy="39" r="12" fill="#dcecff"/>
+  <path d="M42 39h12M48 33v12" stroke="#557aa6" stroke-width="2" stroke-linecap="round"/>
+  <text x="70" y="43" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#314d65">Grafın Kritik Damarları</text>
+  <rect x="438" y="29" width="157" height="21" rx="10" fill="#e4f4df"/>
+  <text x="456" y="43" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46754b">DFS · O(V + E)</text>
+
+  <rect x="22" y="80" width="385" height="207" rx="20" fill="#fafdff" filter="url(#shadow)"/>
+  <text x="43" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47647b">Ağ topolojisi</text>
+
+  <path d="M83 164 L123 130 L167 164 L123 198 Z" fill="none" stroke="#87a9c4" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M167 164 L229 164" fill="none" stroke="#f06f72" stroke-width="6" stroke-linecap="round"/>
+  <path d="M229 164 L274 128 L320 159 L297 207 L247 204 Z" fill="none" stroke="#87a9c4" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M274 128 L297 207" fill="none" stroke="#9abbca" stroke-width="3"/>
+  <path d="M229 164 L247 204" fill="none" stroke="#87a9c4" stroke-width="4"/>
+  <path d="M320 159 L361 129" fill="none" stroke="#87a9c4" stroke-width="4"/>
+
+  <circle cx="83" cy="164" r="14" fill="url(#node)" filter="url(#soft)"/>
+  <circle cx="123" cy="130" r="14" fill="url(#node)" filter="url(#soft)"/>
+  <circle cx="167" cy="164" r="14" fill="url(#node)" filter="url(#soft)"/>
+  <circle cx="123" cy="198" r="14" fill="url(#node)" filter="url(#soft)"/>
+  <circle cx="229" cy="164" r="19" fill="url(#critical)" filter="url(#soft)"/>
+  <circle cx="274" cy="128" r="14" fill="url(#node)" filter="url(#soft)"/>
+  <circle cx="320" cy="159" r="14" fill="url(#node)" filter="url(#soft)"/>
+  <circle cx="297" cy="207" r="14" fill="url(#node)" filter="url(#soft)"/>
+  <circle cx="247" cy="204" r="14" fill="url(#node)" filter="url(#soft)"/>
+  <circle cx="361" cy="129" r="14" fill="url(#node)" filter="url(#soft)"/>
+
+  <text x="79" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a">A</text>
+  <text x="119" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a">B</text>
+  <text x="163" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a">C</text>
+  <text x="119" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a">D</text>
+  <text x="225" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">U</text>
+  <text x="270" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a">V</text>
+  <text x="316" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a">W</text>
+  <text x="293" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a">X</text>
+  <text x="243" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a">Y</text>
+  <text x="357" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a">Z</text>
+
+  <rect x="175" y="115" width="76" height="22" rx="9" fill="#fff1ef"/>
+  <text x="185" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#c45358">Köprü</text>
+  <path d="M207 138 L205 151" stroke="#e06d71" stroke-width="1.5"/>
+  <polygon points="202,149 208,149 205,154" fill="#e06d71"/>
+
+  <rect x="195" y="226" width="119" height="23" rx="10" fill="#fff1ef"/>
+  <text x="205" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b94d56">Eklem noktası: U</text>
+  <path d="M237 225 L231 187" stroke="#dc6970" stroke-width="1.5"/>
+  <polygon points="228,190 234,189 231,184" fill="#dc6970"/>
+
+  <rect x="427" y="80" width="191" height="207" rx="20" fill="#fafdff" filter="url(#shadow)"/>
+  <text x="448" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47647b">DFS karar mantığı</text>
+
+  <rect x="447" y="123" width="150" height="37" rx="12" fill="#e6f1ff"/>
+  <text x="460" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385975">tin[u] · giriş zamanı</text>
+
+  <path d="M522 163 L522 177" stroke="#81a1b8" stroke-width="2"/>
+  <polygon points="518,174 526,174 522,180" fill="#81a1b8"/>
+
+  <rect x="447" y="181" width="150" height="37" rx="12" fill="#e5f5e4"/>
+  <text x="463" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e7049">low[v] · geri erişim</text>
+
+  <path d="M522 221 L522 235" stroke="#81a1b8" stroke-width="2"/>
+  <polygon points="518,232 526,232 522,238" fill="#81a1b8"/>
+
+  <rect x="447" y="239" width="150" height="31" rx="12" fill="#fff0ee"/>
+  <text x="462" y="259" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b74e57">low[v] &gt; tin[u]</text>
+</svg>

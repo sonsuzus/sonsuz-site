@@ -12,7 +12,11 @@ tags:
   - algoritmalar
   - python
 toc: true
+image: /img/kopruler-ve-articulation-84.png
 ---
+
+![kopruler-ve-articulation-84](/img/kopruler-ve-articulation-84.svg)
+
 
 Bir şehrin yol ağını, bilgisayar ağını veya sosyal bağlantıları bir graf olarak düşündüğümüzde bazı bağlantılar diğerlerinden çok daha kritiktir. Tek bir yol kapandığında şehir ikiye ayrılıyorsa o yol bir **köprü**, tek bir istasyon devre dışı kaldığında ağ parçalanıyorsa o istasyon bir **articulation point** yani **eklem noktasıdır**. Gelin grafın nabzını tutup bu kritik damarları nasıl bulacağımızı inceleyelim.
 ``

@@ -11,6 +11,7 @@ tags:
   - hopcroft-karp
   - problem modelleme
 toc: true
+image: /img/maksimum-eslestirme-bir-47.png
 ---
 
 Bazı algoritma soruları kendilerini “öğrencileri projelere ata”, “işçileri görevlere yerleştir” veya “sunucuları isteklere bağla” diye tanıtır. Kılıkları farklı olsa da ortak hedef şudur: Birbiriyle uyumlu çiftlerden, hiçbir öğeyi iki kez kullanmadan mümkün olduğunca çok seçmek. İşte bu cümleyi fark ettiğimiz anda problem, maksimum eşleştirme grafına dönüşmeye başlar.
@@ -32,6 +33,9 @@ Buradaki “maksimum” ile “maksimal” kavramlarını karıştırmamak önem
 | Eşleştirme | Düğüm paylaşmayan kenarlar kümesi | Hayır |
 | Maksimal eşleştirme | Daha fazla kenar eklenemeyen eşleştirme | Hayır |
 | Maksimum eşleştirme | En çok kenara sahip eşleştirme | Evet |
+
+![maksimum-eslestirme-bir-47](/img/maksimum-eslestirme-bir-47.svg)
+
 
 ## Problemi iki parçalı grafa çevirme
 
