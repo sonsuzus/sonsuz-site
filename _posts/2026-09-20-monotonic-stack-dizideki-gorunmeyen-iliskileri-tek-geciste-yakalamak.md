@@ -11,9 +11,13 @@ tags:
   - javascript
   - zaman-karmaşıklığı
 toc: true
+image: /img/monotonic-stack-dizideki-81.png
 ---
 
 Bir dizide her elemanın sağındaki ilk büyük değeri bulmanız istendiğinde, akla hemen iç içe döngüler gelebilir. Ancak bu yaklaşım büyüyen girdilerde bilgisayarınızı küçük bir jet motoruna dönüştürür. Monotonic Stack, henüz cevabı bulunmamış elemanları düzenli biçimde saklayarak görünmeyen komşuluk ilişkilerini tek geçişte ortaya çıkarır.
+
+
+![monotonic-stack-dizideki-81](/img/monotonic-stack-dizideki-81.svg)
 
 ``
 

@@ -12,7 +12,11 @@ tags:
   - monotonik-yığın
   - cpp
 toc: true
+image: /img/cartesian-tree-dizi-13.png
 ---
+
+![cartesian-tree-dizi-13](/img/cartesian-tree-dizi-13.svg)
+
 
 Bir dizi düşünün: elemanların hem soldan sağa sırasını korumak hem de onları önceliklerine göre bir ağaca yerleştirmek istiyoruz. İlk bakışta “Ağaç mı yapıyoruz, diziyi mi saklıyoruz?” diye sorabilirsiniz. Cartesian Tree tam olarak bu iki dünyayı birleştirir: dizinin sırasını bozmadan heap özelliği taşıyan bir ikili ağaç üretir. Üstelik bunu doğrusal zamanda yapmak mümkündür.
 

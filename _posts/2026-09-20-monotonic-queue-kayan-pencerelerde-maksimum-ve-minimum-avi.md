@@ -12,6 +12,7 @@ tags:
   - veri-yapıları
   - python
 toc: true
+image: /img/monotonic-queue-kayan-74.png
 ---
 
 Bir dizide belirli genişlikteki pencereyi soldan sağa kaydırıp her konumdaki maksimum veya minimum değeri bulmak, ilk bakışta zararsız görünen bir problemdir. Fakat pencere büyüdükçe her adımda tüm elemanları yeniden taramak, işlemciyi küçük bir maratona çıkarır. **Monotonic Queue**, yalnızca işe yarayabilecek adayları saklayarak bu avı doğrusal zamanda tamamlar.
@@ -30,6 +31,9 @@ Monotonic Queue ise elemanları monoton, yani sürekli azalan veya artan bir dü
 |---|---|---|
 | Pencere maksimumu | Azalan | En büyük eleman |
 | Pencere minimumu | Artan | En küçük eleman |
+
+![monotonic-queue-kayan-74](/img/monotonic-queue-kayan-74.svg)
+
 
 ## Neden değer değil indeks saklıyoruz?
 

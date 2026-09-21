@@ -12,9 +12,13 @@ tags:
   - tip sistemleri
   - programlama
 toc: true
+image: /img/structural-typing-ve-39.png
 ---
 
 Bir nesne kapıya geldiğinde tip sistemi ona iki farklı soru sorabilir: “Gerekli özelliklere sahip misin?” veya “Hangi sınıfa mensupsun?” Structural typing ilk soruyla, nominal typing ise ikinci soruyla ilgilenir. Bu ayrım yalnızca akademik bir sınıflandırma değildir; kodun yeniden kullanılabilirliğini, güvenliğini ve API tasarımını doğrudan etkiler.
+
+
+![structural-typing-ve-39](/img/structural-typing-ve-39.svg)
 
 ``
 

@@ -12,6 +12,7 @@ tags:
   - optimizasyon
   - cplusplus
 toc: true
+image: /img/deque-optimizasyonu-dinamik-36.png
 ---
 
 Dinamik programlama bazen doğru bağıntıyı bulduğumuz anda bitmiş gibi görünür. Sonra zaman karmaşıklığını hesaplarız ve karşımıza tatsız bir $O(nk)$ çıkar! Neyse ki geçişler belirli bir pencere içindeki minimum veya maksimum değere dayanıyorsa, çift uçlu kuyruk yani `deque` yardımımıza yetişebilir.
@@ -51,6 +52,9 @@ Neden büyük değerleri siliyoruz? Yeni değer hem daha küçük hem de daha ye
 | İç içe döngü | $O(k)$ | $O(nk)$ | Yok |
 | Dengeli ağaç | $O(\log k)$ | $O(n\log k)$ | Multiset |
 | Monoton deque | Amortize $O(1)$ | $O(n)$ | Deque |
+
+![deque-optimizasyonu-dinamik-36](/img/deque-optimizasyonu-dinamik-36.svg)
+
 
 ## C++ uygulaması
 

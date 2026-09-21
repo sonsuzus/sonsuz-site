@@ -12,7 +12,11 @@ tags:
   - c++
   - metin işleme
 toc: true
+image: /img/palindromic-tree-butun-36.png
 ---
+
+![palindromic-tree-butun-36](/img/palindromic-tree-butun-36.svg)
+
 
 Bir metindeki bütün palindromları bulmak ilk bakışta kolay görünür: Her merkezi seç, iki yana doğru genişle ve eşleşmeler bitene kadar devam et. Fakat metin uzadığında ve aynı palindromlar tekrar tekrar karşımıza çıktığında işler karışır. **Palindromic Tree**, diğer adıyla **Eertree**, farklı palindromları tek bir yapıda saklayarak bu karmaşayı oldukça zarif biçimde çözer.
 

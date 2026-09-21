@@ -12,6 +12,7 @@ tags:
   - statik analiz
   - programlama dilleri
 toc: true
+image: /img/gradual-typing-statik-32.png
 ---
 
 Bir programlama dili hem özgür ruhlu hem de disiplinli olabilir mi? Gradual Typing, yani kademeli tipleme, bu soruya güçlü bir “evet” yanıtı verir. Geliştiriciye dinamik tiplerin esnekliğini sunarken ihtiyaç duyulan bölgelerde statik tip denetimini devreye sokar. Böylece mevcut bir projeyi baştan yazmadan, tip güvenliğini adım adım artırmak mümkün olur.
@@ -96,3 +97,6 @@ Yine de bütün diller bu ilkeyi kusursuz uygulamaz. Tip çıkarımı, dönüş�
 ## Ne zaman tercih edilmeli?
 
 Gradual Typing özellikle büyük JavaScript veya Python projelerinde, eski kod tabanlarının aşamalı modernizasyonunda ve farklı güven seviyelerine sahip modüllerin birlikte çalışmasında değerlidir. En sağlıklı strateji; önce dış veri sınırlarını, ortak modelleri ve kritik iş kurallarını tiplendirmektir. Kısacası kademeli tipleme, “ya tamamen statik ya tamamen dinamik” kavgasını bitirir: Kod tabanına bir anda takım elbise giydirmek yerine, önce kravatı takar.
+
+![gradual-typing-statik-32](/img/gradual-typing-statik-32.svg)
+

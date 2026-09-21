@@ -12,6 +12,7 @@ tags:
   - programlama dilleri
   - type theory
 toc: true
+image: /img/tip-sistemlerinin-evrimi-49.png
 ---
 
 Tip sistemleri, programlarımızın hangi değerlerle hangi işlemleri yapabileceğini belirleyen görünmez trafik kurallarıdır. İlk bakışta yalnızca “bu değişken sayı mı, metin mi?” sorusuyla ilgileniyor gibi görünürler. Oysa weak typing’den dependent type’lara uzanan yolculuk; hataları ne zaman yakaladığımızı, kod hakkında neleri kanıtlayabildiğimizi ve derleyiciye ne kadar sorumluluk verdiğimizi anlatır.
@@ -33,6 +34,9 @@ Tip sistemlerini tek bir doğru üzerinde sıralamak yanıltıcıdır. **Statik-
 | Static typing | Derleme zamanı | Hatalar çalıştırmadan yakalanabilir | Java, Rust |
 | Hindley–Milner | Derleme zamanı | Güçlü tip çıkarımı sağlar | Haskell, ML |
 | Dependent types | Derleme zamanı | Tipler değerlere bağlı olabilir | Idris, Agda, Lean |
+
+![tip-sistemlerinin-evrimi-49](/img/tip-sistemlerinin-evrimi-49.svg)
+
 
 ## Weak typing: “Ben bunu dönüştürürüm” dönemi
 

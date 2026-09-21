@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="panelBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6f1ff"/>
+      <stop offset="100%" stop-color="#d6e8fb"/>
+    </linearGradient>
+    <linearGradient id="panelMint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6f7ef"/>
+      <stop offset="100%" stop-color="#d2efdf"/>
+    </linearGradient>
+    <linearGradient id="panelPeach" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff1df"/>
+      <stop offset="100%" stop-color="#f9e1c3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#526a80" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="45" r="48" fill="#dceeff" opacity="0.52"/>
+  <circle cx="586" cy="269" r="70" fill="#dff3df" opacity="0.52"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29445e">Aho-Corasick • Tek Geçişte Çoklu Desen Arama</text>
+
+  <!-- Input -->
+  <rect x="22" y="61" width="130" height="213" rx="18" fill="url(#panelPeach)" filter="url(#shadow)"/>
+  <text x="87" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#67492d">Desen Havuzu</text>
+  <rect x="42" y="105" width="89" height="27" rx="10" fill="#fffaf3" filter="url(#softShadow)"/>
+  <text x="86" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70533a">elma</text>
+  <rect x="42" y="141" width="89" height="27" rx="10" fill="#fffaf3" filter="url(#softShadow)"/>
+  <text x="86" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70533a">elmas</text>
+  <rect x="42" y="177" width="89" height="27" rx="10" fill="#fffaf3" filter="url(#softShadow)"/>
+  <text x="86" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70533a">armut</text>
+  <rect x="42" y="213" width="89" height="27" rx="10" fill="#fffaf3" filter="url(#softShadow)"/>
+  <text x="86" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70533a">umut</text>
+
+  <!-- arrow input to trie -->
+  <path d="M153 166 C164 166 168 166 181 166" fill="none" stroke="#7895ad" stroke-width="2.5"/>
+  <polygon points="181,160 192,166 181,172" fill="#7895ad"/>
+
+  <!-- Trie panel -->
+  <rect x="194" y="61" width="212" height="213" rx="18" fill="url(#panelBlue)" filter="url(#shadow)"/>
+  <text x="300" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a78">Ortak Önek Trie</text>
+
+  <!-- trie edges -->
+  <path d="M224 165 L258 122 L292 108 L326 108 L360 108" fill="none" stroke="#698eb0" stroke-width="2.3"/>
+  <path d="M326 108 L369 88" fill="none" stroke="#698eb0" stroke-width="2.3"/>
+  <path d="M360 108 L382 127" fill="none" stroke="#698eb0" stroke-width="2.3"/>
+  <path d="M224 165 L258 207 L292 220 L328 220 L365 220 L385 240" fill="none" stroke="#698eb0" stroke-width="2.3"/>
+  <path d="M224 165 L258 207 L284 178 L319 178 L355 178" fill="none" stroke="#698eb0" stroke-width="2.3"/>
+
+  <!-- trie nodes -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <circle cx="224" cy="165" r="14" fill="#ffffff" stroke="#5f87aa" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="224" y="169" fill="#315a78">∅</text>
+    <circle cx="258" cy="122" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="258" y="126" fill="#315a78">e</text>
+    <circle cx="292" cy="108" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="292" y="112" fill="#315a78">l</text>
+    <circle cx="326" cy="108" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="326" y="112" fill="#315a78">m</text>
+    <circle cx="360" cy="108" r="13" fill="#fff9d9" stroke="#d3a550" stroke-width="2"/><text x="360" y="112" fill="#74541e">a</text>
+    <circle cx="382" cy="127" r="13" fill="#fff9d9" stroke="#d3a550" stroke-width="2"/><text x="382" y="131" fill="#74541e">s</text>
+    <circle cx="369" cy="88" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="369" y="92" fill="#315a78">?</text>
+    <circle cx="258" cy="207" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="258" y="211" fill="#315a78">a</text>
+    <circle cx="292" cy="220" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="292" y="224" fill="#315a78">r</text>
+    <circle cx="328" cy="220" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="328" y="224" fill="#315a78">m</text>
+    <circle cx="365" cy="220" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="365" y="224" fill="#315a78">u</text>
+    <circle cx="385" cy="240" r="13" fill="#fff9d9" stroke="#d3a550" stroke-width="2"/><text x="385" y="244" fill="#74541e">t</text>
+    <circle cx="284" cy="178" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="284" y="182" fill="#315a78">u</text>
+    <circle cx="319" cy="178" r="13" fill="#f9fdff" stroke="#5f87aa" stroke-width="2"/><text x="319" y="182" fill="#315a78">m</text>
+    <circle cx="355" cy="178" r="13" fill="#fff9d9" stroke="#d3a550" stroke-width="2"/><text x="355" y="182" fill="#74541e">t</text>
+  </g>
+
+  <!-- Failure curved link -->
+  <path d="M355 161 C333 143 307 144 292 160" fill="none" stroke="#c57698" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="289,154 283,164 295,164" fill="#c57698"/>
+  <text x="323" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c4d72">hata bağı</text>
+
+  <!-- arrow trie to scan -->
+  <path d="M408 166 C420 166 425 166 437 166" fill="none" stroke="#7895ad" stroke-width="2.5"/>
+  <polygon points="437,160 448,166 437,172" fill="#7895ad"/>
+
+  <!-- Scan panel -->
+  <rect x="450" y="61" width="168" height="213" rx="18" fill="url(#panelMint)" filter="url(#shadow)"/>
+  <text x="534" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356653">Tek Geçiş Tarama</text>
+
+  <rect x="469" y="107" width="130" height="36" rx="10" fill="#fafffc" filter="url(#softShadow)"/>
+  <text x="480" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476c5c">elmalı armut</text>
+
+  <path d="M478 163 L575 163" fill="none" stroke="#62a78a" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="493" cy="163" r="7" fill="#9cdbc0" stroke="#4d9879" stroke-width="2"/>
+  <circle cx="528" cy="163" r="7" fill="#9cdbc0" stroke="#4d9879" stroke-width="2"/>
+  <circle cx="563" cy="163" r="7" fill="#9cdbc0" stroke="#4d9879" stroke-width="2"/>
+  <path d="M575 157 L587 163 L575 169" fill="#62a78a"/>
+
+  <rect x="471" y="190" width="126" height="57" rx="12" fill="#ffffff" opacity="0.88" filter="url(#softShadow)"/>
+  <text x="484" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356653">Eşleşmeler</text>
+  <circle cx="486" cy="229" r="4" fill="#e8ae5c"/>
+  <text x="497" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466a59">elma, armut</text>
+
+  <text x="320" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547086">Ön işleme: Trie ve hata bağları  •  Arama: O(n + z)</text>
+</svg>

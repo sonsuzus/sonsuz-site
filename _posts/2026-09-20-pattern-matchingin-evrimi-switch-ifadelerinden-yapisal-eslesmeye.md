@@ -12,9 +12,13 @@ tags:
   - algoritma
   - python
 toc: true
+image: /img/pattern-matchingin-evrimi-94.png
 ---
 
 Programlamada karar vermek uzun süre “Bu değer kaç?” sorusuna cevap aramak demekti. Ancak modern uygulamalarda değerler; listelerden, nesnelerden, ağaçlardan ve iç içe geçmiş veri yapılarından oluşuyor. Bu nedenle diller de basit `switch` ifadelerinden, verinin hem biçimini hem içeriğini inceleyebilen pattern matching yaklaşımına evrildi. Başka bir deyişle artık yalnızca kutunun etiketine değil, kutunun içine ve düzenine de bakıyoruz.
+
+
+![pattern-matchingin-evrimi-94](/img/pattern-matchingin-evrimi-94.svg)
 
 ``
 

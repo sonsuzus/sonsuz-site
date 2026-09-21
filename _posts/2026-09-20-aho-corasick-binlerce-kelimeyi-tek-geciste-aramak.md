@@ -12,6 +12,7 @@ tags:
   - python
   - veri-yapıları
 toc: true
+image: /img/aho-corasick-binlerce-18.png
 ---
 
 Bir metinde tek kelime aramak kolaydır; fakat yasaklı sözcükler, virüs imzaları veya anahtar kelimelerden oluşan dev bir listeyi aramak istediğimizde işler değişir. Her kelime için metni baştan sona taramak, aynı yolu binlerce kez yürümeye benzer. Aho-Corasick algoritması ise kelimeleri ortak bir veri yapısında birleştirerek metni yalnızca bir kez tarar.
@@ -112,3 +113,6 @@ print(list(matcher.search("elmalı armut umut verir")))
 Aho-Corasick; içerik moderasyonu, spam filtreleme, ağ saldırısı imzaları, DNA dizisi analizi, log tarama ve arama motorlarında kullanılır. En büyük avantajı, desen sayısı arttıkça metni tekrar tekrar dolaşmamasıdır. Bunun karşılığında Trie düğümleri ve bağlantılar ek bellek tüketir.
 
 Kısacası algoritma, “Her kelime için yeniden ara” yaklaşımını “Bütün kelimeleri bir otomatta topla” fikrine dönüştürür. Büyük desen listelerinde bu küçük zihniyet değişikliği, dramatik bir performans kazancı sağlar.
+
+![aho-corasick-binlerce-18](/img/aho-corasick-binlerce-18.svg)
+

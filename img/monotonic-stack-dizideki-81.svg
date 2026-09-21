@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="stackGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#bcd8f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6582a0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58738b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="77" cy="40" r="72" fill="#dff2ec" opacity="0.5"/>
+  <circle cx="598" cy="274" r="94" fill="#e2ecff" opacity="0.55"/>
+
+  <text x="32" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Tek Geçişte Sonraki Büyük Eleman</text>
+  <text x="32" y="54" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Her indis en fazla bir kez eklenir ve çıkarılır</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="81" width="178" height="175" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="51" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c657c">Girdi dizisi</text>
+  <text x="51" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8291a0">soldan sağa tara</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle" filter="url(#smallShadow)">
+    <rect x="49" y="151" width="26" height="31" rx="8" fill="#c9e5ff"/>
+    <text x="62" y="171" fill="#315979">2</text>
+    <rect x="80" y="151" width="26" height="31" rx="8" fill="#dcecff"/>
+    <text x="93" y="171" fill="#315979">1</text>
+    <rect x="111" y="151" width="26" height="31" rx="8" fill="#ffdcb9"/>
+    <text x="124" y="171" fill="#80512d">5</text>
+    <rect x="142" y="151" width="26" height="31" rx="8" fill="#d3eed9"/>
+    <text x="155" y="171" fill="#396b4a">3</text>
+    <rect x="173" y="151" width="26" height="31" rx="8" fill="#e8ddff"/>
+    <text x="186" y="171" fill="#604788">4</text>
+  </g>
+
+  <path d="M211 166 H252" stroke="#7d9ab1" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="252,166 243,160 243,172" fill="#7d9ab1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="263" y="73" width="130" height="196" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="328" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405d76">Azalan Yığın</text>
+  <text x="328" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b8e9f">bekleyen indisler</text>
+
+  <path d="M283 241 V146 Q283 138 291 138 H365 Q373 138 373 146 V241" fill="none" stroke="#8daec4" stroke-width="3" stroke-linecap="round"/>
+  <rect x="293" y="203" width="70" height="27" rx="8" fill="url(#stackGrad)" filter="url(#smallShadow)"/>
+  <text x="328" y="221" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#335a78">5 · 4</text>
+  <text x="328" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688297">düzen korunur</text>
+
+  <path d="M395 145 C426 145 426 113 452 113" stroke="#e18b55" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="452,113 442,108 445,119" fill="#e18b55"/>
+  <path d="M395 168 C427 168 425 195 452 195" stroke="#79a987" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="452,195 442,190 445,201" fill="#79a987"/>
+
+  <g filter="url(#shadow)">
+    <rect x="459" y="74" width="151" height="70" rx="16" fill="#fff8f0"/>
+    <rect x="459" y="161" width="151" height="100" rx="16" fill="#f8fbff"/>
+  </g>
+
+  <circle cx="481" cy="108" r="13" fill="#ffd3ad"/>
+  <path d="M476 108 l4 4 7 -8" fill="none" stroke="#9a592d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="503" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#755033">Düzen bozulursa</text>
+  <text x="503" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b7565">tepeden çıkar</text>
+
+  <text x="479" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47647e">Cevaplar</text>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <rect x="477" y="203" width="22" height="27" rx="7" fill="#c9e5ff"/>
+    <text x="488" y="221" fill="#315979">5</text>
+    <rect x="502" y="203" width="22" height="27" rx="7" fill="#c9e5ff"/>
+    <text x="513" y="221" fill="#315979">5</text>
+    <rect x="527" y="203" width="22" height="27" rx="7" fill="#e5eaf0"/>
+    <text x="538" y="221" fill="#637383">−1</text>
+    <rect x="552" y="203" width="22" height="27" rx="7" fill="#d3eed9"/>
+    <text x="563" y="221" fill="#396b4a">4</text>
+    <rect x="577" y="203" width="22" height="27" rx="7" fill="#e5eaf0"/>
+    <text x="588" y="221" fill="#637383">−1</text>
+  </g>
+  <text x="535" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71889b">[5, 5, −1, 4, −1]</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="31" y="278" width="174" height="28" rx="14" fill="#eef2f6"/>
+    <rect x="225" y="278" width="174" height="28" rx="14" fill="#d9f0df"/>
+    <rect x="419" y="278" width="190" height="28" rx="14" fill="#dceafe"/>
+  </g>
+  <text x="118" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627586">İç içe döngü: O(n²)</text>
+  <text x="312" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376c49">Yığın işlemleri: en fazla 2n</text>
+  <text x="514" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3b6287">Zaman: O(n) · Alan: O(n)</text>
+</svg>

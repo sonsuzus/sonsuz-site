@@ -12,7 +12,11 @@ tags:
   - python
   - rastgeleleştirme
 toc: true
+image: /img/treap-rastgelelestirilmis-dengeli-27.png
 ---
+
+![treap-rastgelelestirilmis-dengeli-27](/img/treap-rastgelelestirilmis-dengeli-27.svg)
+
 
 İkili arama ağaçları hızlıdır; tabii ağaç bir bambu dalına dönüşmediği sürece! Sıralı veriler sıradan bir ikili arama ağacına eklendiğinde yapı doğrusal bir liste gibi uzayabilir. Treap, bu sorunu katı dengeleme kuralları yerine rastgelelik kullanarak çözer. İsmi de iki yapının birleşiminden gelir: **tree** ve **heap**. Sonuç, şaşırtıcı derecede basit ama beklenen performansı oldukça güçlü bir veri yapısıdır.
 

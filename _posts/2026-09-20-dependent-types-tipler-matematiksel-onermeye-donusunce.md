@@ -12,6 +12,7 @@ tags:
   - idris
   - curry-howard
 toc: true
+image: /img/dependent-types-tipler-43.png
 ---
 
 Bir fonksiyonun yalnızca `Int` döndürdüğünü değil, **pozitif bir `Int`**, tam olarak üç elemanlı bir liste veya belirli bir denklemi sağlayan sonuç döndürdüğünü tip seviyesinde ifade edebilseydik ne olurdu? Dependent Types, yani bağımlı tipler, tiplerin değerlere bağlı olmasına izin vererek bu fikri gerçeğe dönüştürür. Böylece tip denetleyici, kodun kapısında bekleyen bir güvenlik görevlisinden matematik ödevimizi kontrol eden son derece titiz bir asistana dönüşür.
@@ -88,3 +89,6 @@ Burada fonksiyon her `n` için $0+n=n$ önermesinin kanıtını üretir. Daha ka
 Bağımlı tipler güçlüdür; ancak bedelsiz değildir. Karmaşık kanıtlar hata mesajlarını büyütebilir, geliştirme süresini uzatabilir ve okunabilirliği azaltabilir. Ayrıca tip sistemi genellikle programların sonlandığını doğrulamak zorundadır; sonsuz özyineleme, mantıksal tutarlılığı bozabilir.
 
 En iyi yaklaşım, kritik kuralları tipe taşımaktır: protokol durumları, dizi boyutları, yetkilendirme koşulları veya para birimleri buna iyi adaylardır. Dependent Types dünyasında derleyici yalnızca “Bu kod çalışır mı?” diye sormaz; “Bu kod, iddia ettiğin matematiksel sözleşmeyi gerçekten yerine getiriyor mu?” diye de sorar. İşte eğlence—oraya göre hafif bir varoluş krizi—tam burada başlar.
+
+![dependent-types-tipler-43](/img/dependent-types-tipler-43.svg)
+

@@ -12,9 +12,13 @@ tags:
   - veritabanı
   - disk
 toc: true
+image: /img/b-agaclarinin-perde-81.png
 ---
 
 Bir dosyayı açtığınızda işletim sistemi milyonlarca kayıt arasından doğru disk bloğunu şaşırtıcı bir hızla bulur. Bu numaranın arkasında çoğu zaman ikili arama ağacı değil, tek düğümüne adeta küçük bir mahalle sığdırabilen B-ağacı veya onun akrabaları vardır. Çünkü disk dünyasında pahalı olan karşılaştırma yapmak değil, verinin bulunduğu bloğa fiziksel ya da mantıksal olarak ulaşmaktır.
+
+
+![b-agaclarinin-perde-81](/img/b-agaclarinin-perde-81.svg)
 
 ``
 

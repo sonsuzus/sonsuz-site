@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="root" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b9cf6"/>
+      <stop offset="100%" stop-color="#6676dc"/>
+    </linearGradient>
+    <linearGradient id="key" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f2ff"/>
+      <stop offset="100%" stop-color="#b6def5"/>
+    </linearGradient>
+    <linearGradient id="priority" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe7b3"/>
+      <stop offset="100%" stop-color="#f7c975"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#49617c" flood-opacity="0.17"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#49617c" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="161" r="133" fill="#d9edff" opacity="0.38"/>
+  <circle cx="520" cy="258" r="86" fill="#dff4d7" opacity="0.42"/>
+
+  <rect x="22" y="24" width="146" height="69" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="22" y="24" width="7" height="69" rx="4" fill="#75bce9"/>
+  <text x="45" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#30445b">Anahtar düzeni</text>
+  <text x="45" y="71" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52677e">sol &lt; düğüm &lt; sağ</text>
+
+  <rect x="472" y="24" width="146" height="69" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="611" y="24" width="7" height="69" rx="4" fill="#efb84d"/>
+  <text x="494" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#30445b">Öncelik düzeni</text>
+  <text x="494" y="71" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52677e">ebeveyn ≥ çocuk</text>
+
+  <path d="M168 62 C201 62 208 94 241 109" fill="none" stroke="#79b8df" stroke-width="2"/>
+  <polygon points="241,109 232,107 237,100" fill="#79b8df"/>
+  <path d="M472 62 C440 62 432 94 398 109" fill="none" stroke="#e4ae4b" stroke-width="2"/>
+  <polygon points="398,109 402,100 407,107" fill="#e4ae4b"/>
+
+  <path d="M320 158 L233 215" fill="none" stroke="#8799b9" stroke-width="2.5"/>
+  <path d="M320 158 L407 215" fill="none" stroke="#8799b9" stroke-width="2.5"/>
+  <path d="M233 245 L185 281" fill="none" stroke="#a6b4ca" stroke-width="2"/>
+  <path d="M233 245 L280 281" fill="none" stroke="#a6b4ca" stroke-width="2"/>
+  <path d="M407 245 L455 281" fill="none" stroke="#a6b4ca" stroke-width="2"/>
+  <path d="M407 245 L503 281" fill="none" stroke="#a6b4ca" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="241" y="103" width="158" height="58" rx="18" fill="url(#root)"/>
+  </g>
+  <circle cx="267" cy="132" r="16" fill="#ffffff" opacity="0.22"/>
+  <text x="287" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">TREAP</text>
+  <text x="287" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf1ff">rastgele dengeli ağaç</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="189" y="211" width="88" height="36" rx="12" fill="url(#key)"/>
+    <rect x="363" y="211" width="88" height="36" rx="12" fill="url(#key)"/>
+  </g>
+  <text x="211" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315772">Anahtar 3</text>
+  <text x="385" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315772">Anahtar 8</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="148" y="276" width="74" height="30" rx="11" fill="#e6f5fc"/>
+    <rect x="244" y="276" width="74" height="30" rx="11" fill="#e6f5fc"/>
+    <rect x="418" y="276" width="74" height="30" rx="11" fill="#e6f5fc"/>
+    <rect x="506" y="276" width="74" height="30" rx="11" fill="#e6f5fc"/>
+  </g>
+  <text x="169" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42667d">1</text>
+  <text x="265" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42667d">5</text>
+  <text x="439" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42667d">7</text>
+  <text x="527" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42667d">10</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="130" width="133" height="93" rx="17" fill="#ffffff"/>
+  </g>
+  <rect x="43" y="146" width="38" height="26" rx="9" fill="url(#key)"/>
+  <text x="53" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315772">key</text>
+  <rect x="43" y="181" width="38" height="26" rx="9" fill="url(#priority)"/>
+  <text x="48" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#755519">ön</text>
+  <text x="92" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#344b61">İki değer</text>
+  <text x="92" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60758a">arama ve yığın</text>
+
+  <g filter="url(#shadow)">
+    <rect x="481" y="130" width="137" height="93" rx="17" fill="#ffffff"/>
+  </g>
+  <text x="501" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#344b61">Ekleme akışı</text>
+  <text x="501" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60758a">BST yerleşimi</text>
+  <text x="501" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60758a">rotasyonla yükselme</text>
+
+  <path d="M161 177 C188 177 190 170 215 158" fill="none" stroke="#8da1ba" stroke-width="2"/>
+  <polygon points="215,158 207,158 211,165" fill="#8da1ba"/>
+  <path d="M425 159 C447 170 454 177 481 177" fill="none" stroke="#8da1ba" stroke-width="2"/>
+  <polygon points="481,177 473,172 473,181" fill="#8da1ba"/>
+
+  <rect x="261" y="170" width="118" height="25" rx="12" fill="#ffffff" opacity="0.92" filter="url(#smallShadow)"/>
+  <text x="276" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6078">Beklenen O(log n)</text>
+</svg>

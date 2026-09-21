@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="arrayGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcecff"/>
+      <stop offset="1" stop-color="#c8ddf7"/>
+    </linearGradient>
+    <linearGradient id="stackGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1d7"/>
+      <stop offset="1" stop-color="#f8ddaa"/>
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9f2df"/>
+      <stop offset="1" stop-color="#bde3ca"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#61768a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="lightShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#61768a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="35" r="72" fill="#dbeeff" opacity="0.45"/>
+  <circle cx="585" cy="294" r="94" fill="#dff2db" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">CARTESIAN TREE</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668094">Dizi sırası + min-heap özelliği</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="73" width="180" height="178" rx="18" fill="#fafdff" stroke="#c7dded"/>
+  </g>
+  <rect x="43" y="88" width="117" height="28" rx="10" fill="url(#arrayGrad)"/>
+  <text x="57" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355b78">Girdi Dizisi</text>
+
+  <g filter="url(#lightShadow)">
+    <rect x="43" y="133" width="29" height="32" rx="7" fill="#dcecff"/>
+    <rect x="75" y="133" width="29" height="32" rx="7" fill="#dcecff"/>
+    <rect x="107" y="133" width="29" height="32" rx="7" fill="#dcecff"/>
+    <rect x="139" y="133" width="29" height="32" rx="7" fill="#dcecff"/>
+    <rect x="171" y="133" width="22" height="32" rx="7" fill="#dcecff"/>
+  </g>
+  <text x="53" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345b79">3</text>
+  <text x="85" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345b79">2</text>
+  <text x="117" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345b79">6</text>
+  <text x="149" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345b79">1</text>
+  <text x="177" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345b79">9</text>
+
+  <path d="M58 180 L178 180" stroke="#9ab4c9" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="178,180 170,175 170,185" fill="#9ab4c9"/>
+  <text x="45" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637f94">Soldan sağa tarama</text>
+  <text x="45" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637f94">Inorder: sıra korunur</text>
+
+  <path d="M212 161 L252 161" stroke="#7d9eb7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="252,161 243,155 243,167" fill="#7d9eb7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="258" y="73" width="131" height="178" rx="18" fill="#fffefd" stroke="#eed8a6"/>
+  </g>
+  <rect x="275" y="88" width="98" height="28" rx="10" fill="url(#stackGrad)"/>
+  <text x="288" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805b25">Monotonik Yığın</text>
+
+  <text x="277" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#866f4d">Artan değerler</text>
+  <g filter="url(#lightShadow)">
+    <rect x="294" y="193" width="54" height="28" rx="7" fill="#fbe7bc"/>
+    <rect x="294" y="164" width="54" height="28" rx="7" fill="#f9dfaa"/>
+    <rect x="294" y="135" width="54" height="28" rx="7" fill="#f6d391"/>
+  </g>
+  <text x="318" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79511b">6</text>
+  <text x="318" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79511b">2</text>
+  <text x="318" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79511b">1</text>
+  <path d="M362 206 L373 206 L373 146" fill="none" stroke="#d29d4d" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="373,146 368,155 378,155" fill="#d29d4d"/>
+  <text x="275" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#866f4d">Her düğüm: 1 giriş, 1 çıkış</text>
+
+  <path d="M394 161 L430 161" stroke="#7d9eb7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="430,161 421,155 421,167" fill="#7d9eb7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="437" y="73" width="176" height="178" rx="18" fill="#fbfffc" stroke="#bfe0c9"/>
+  </g>
+  <rect x="453" y="88" width="116" height="28" rx="10" fill="url(#treeGrad)"/>
+  <text x="467" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376b4c">Min-Cartesian Tree</text>
+
+  <path d="M525 147 L482 182 M525 147 L570 182 M482 182 L462 213 M482 182 L505 213" fill="none" stroke="#7dae8d" stroke-width="2.5" stroke-linecap="round"/>
+  <g filter="url(#lightShadow)">
+    <rect x="509" y="130" width="32" height="28" rx="9" fill="#b9e2c6"/>
+    <rect x="466" y="169" width="32" height="28" rx="9" fill="#cbead2"/>
+    <rect x="554" y="169" width="32" height="28" rx="9" fill="#cbead2"/>
+    <rect x="446" y="201" width="32" height="28" rx="9" fill="#dff2e3"/>
+    <rect x="489" y="201" width="32" height="28" rx="9" fill="#dff2e3"/>
+  </g>
+  <text x="521" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29643f">1</text>
+  <text x="478" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29643f">2</text>
+  <text x="566" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29643f">9</text>
+  <text x="458" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29643f">3</text>
+  <text x="501" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29643f">6</text>
+
+  <g filter="url(#lightShadow)">
+    <rect x="61" y="271" width="151" height="31" rx="13" fill="#e8f1fb"/>
+    <rect x="244" y="271" width="151" height="31" rx="13" fill="#fff0d6"/>
+    <rect x="427" y="271" width="151" height="31" rx="13" fill="#e3f3e7"/>
+  </g>
+  <text x="85" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466a87">Sıra bilgisi</text>
+  <text x="267" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#876128">Kurulum: O(n)</text>
+  <text x="452" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#427655">Minimum kökte</text>
+</svg>

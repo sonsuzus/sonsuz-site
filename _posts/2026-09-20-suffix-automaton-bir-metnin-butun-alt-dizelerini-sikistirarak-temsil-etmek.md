@@ -11,9 +11,13 @@ tags:
   - otomata
   - dinamik-programlama
 toc: true
+image: /img/suffix-automaton-bir-13.png
 ---
 
 Elimizde uzun bir metin olduğunu ve bu metindeki bütün **bitişik alt dizeleri** saklamak istediğimizi düşünelim. Uzunluğu $n$ olan bir metin, en fazla $n(n+1)/2$ farklı konum aralığı içerir. Hepsini ayrı ayrı depolamak karesel bir felakete dönüşebilir. Suffix Automaton, yani son ek otomatı, aynı bilgiyi yalnızca $O(n)$ durum ve geçişle temsil eden zarif bir veri yapısıdır.
+
+![suffix-automaton-bir-13](/img/suffix-automaton-bir-13.svg)
+
 ``
 ## Temel fikir
 
