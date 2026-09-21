@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="cpu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4efff"/>
+      <stop offset="100%" stop-color="#d5e7fb"/>
+    </linearGradient>
+    <linearGradient id="predict" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eee7ff"/>
+      <stop offset="100%" stop-color="#ded2fa"/>
+    </linearGradient>
+    <linearGradient id="good" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcf6e6"/>
+      <stop offset="100%" stop-color="#c5e9d4"/>
+    </linearGradient>
+    <linearGradient id="bad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe8e5"/>
+      <stop offset="100%" stop-color="#f8d2cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#65809a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="584" cy="52" r="74" fill="#dceff3" opacity="0.52"/>
+  <circle cx="62" cy="283" r="88" fill="#e5efff" opacity="0.55"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526878" font-weight="600">Dallanma Tahmini</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81929d">Pipeline boş kalmadan geleceği seçer</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="111" width="138" height="103" rx="18" fill="url(#cpu)" stroke="#b8d1ea"/>
+    <rect x="47" y="129" width="106" height="29" rx="10" fill="#f8fcff" stroke="#c8deef"/>
+    <rect x="47" y="168" width="106" height="29" rx="10" fill="#f8fcff" stroke="#c8deef"/>
+  </g>
+  <text x="100" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36536b" font-weight="600">CPU Pipeline</text>
+  <text x="100" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547186">Komut getir</text>
+  <text x="100" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547186">Koşulu çöz</text>
+
+  <path d="M169 162 H199" fill="none" stroke="#7593aa" stroke-width="2.2"/>
+  <polygon points="207,162 197,156 197,168" fill="#7593aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="210" y="91" width="183" height="143" rx="22" fill="url(#predict)" stroke="#cbbde9"/>
+    <circle cx="301.5" cy="136" r="28" fill="#faf8ff" stroke="#cfc2eb" stroke-width="2"/>
+    <path d="M291 137 C295 129 301 127 307 131 C314 135 312 145 305 149" fill="none" stroke="#8068ae" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M311 135 L314 140 L308 141" fill="none" stroke="#8068ae" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="239" y="180" width="53" height="28" rx="9" fill="#f8f5ff"/>
+    <rect x="311" y="180" width="53" height="28" rx="9" fill="#f8f5ff"/>
+  </g>
+  <text x="301" y="77" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58427e" font-weight="600">Dinamik Tahminci</text>
+  <text x="266" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70598f">Geçmiş</text>
+  <text x="337" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70598f">BTB hedefi</text>
+
+  <path d="M393 137 H428 V105 H452" fill="none" stroke="#6f9d89" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="460,105 450,99 450,111" fill="#6f9d89"/>
+  <path d="M393 183 H428 V232 H452" fill="none" stroke="#c6817a" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="460,232 450,226 450,238" fill="#c6817a"/>
+
+  <g filter="url(#shadow)">
+    <rect x="462" y="67" width="147" height="82" rx="18" fill="url(#good)" stroke="#b4ddc3"/>
+    <circle cx="490" cy="108" r="16" fill="#f5fff8"/>
+    <path d="M482 108 L488 114 L500 101" fill="none" stroke="#4f9871" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="548" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e7859" font-weight="600">Doğru tahmin</text>
+  <text x="548" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f9074">Spekülatif yürütme</text>
+  <text x="548" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f9074">devam eder</text>
+
+  <g filter="url(#shadow)">
+    <rect x="462" y="190" width="147" height="82" rx="18" fill="url(#bad)" stroke="#edbbb3"/>
+    <circle cx="490" cy="231" r="16" fill="#fff8f7"/>
+    <path d="M484 225 L496 237 M496 225 L484 237" stroke="#bf665e" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+  <text x="548" y="221" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9e504b" font-weight="600">Yanlış tahmin</text>
+  <text x="548" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#af6a63">İptal ve yeniden</text>
+  <text x="548" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#af6a63">doldurma cezası</text>
+
+  <path d="M462 278 C410 300 254 300 197 246 C183 232 179 215 179 203" fill="none" stroke="#9c82bd" stroke-width="1.8" stroke-dasharray="5 5" opacity="0.85"/>
+  <polygon points="179,195 174,205 184,204" fill="#9c82bd"/>
+  <text x="320" y="306" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76658a">Sonuç geçmişe yazılır ve tahminci öğrenir</text>
+</svg>

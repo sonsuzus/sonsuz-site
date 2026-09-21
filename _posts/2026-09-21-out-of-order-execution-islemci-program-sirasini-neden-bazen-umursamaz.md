@@ -12,9 +12,13 @@ tags:
   - cpu
   - paralellik
 toc: true
+image: /img/out-of-order-19.png
 ---
 
 Bir programdaki komutlar belirli bir sırayla yazılır; fakat modern işlemciler bu sıraya harfiyen uymak zorunda değildir. Sonuç değişmediği sürece hazır olan komutları erkenden çalıştırabilirler. **Out-of-order execution**, yani sıra dışı yürütme, işlemcinin boş boş beklemek yerine komutlar arasında küçük bir lojistik operasyon yürütmesidir.
+
+![out-of-order-19](/img/out-of-order-19.svg)
+
 ``
 ## Sorun: Hızlı işlemci, yavaş bekleyiş
 

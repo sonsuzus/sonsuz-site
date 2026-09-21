@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#766ee8"/>
+      <stop offset="100%" stop-color="#5d9cdb"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#47617b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#526a7d" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="115" fill="#dcecf8" opacity="0.42"/>
+  <circle cx="320" cy="160" r="89" fill="#e9f3e8" opacity="0.6"/>
+
+  <!-- Bağlantılar -->
+  <path d="M214 103 C240 112 251 123 267 136" fill="none" stroke="#8ca8be" stroke-width="2"/>
+  <polygon points="268,130 278,143 262,140" fill="#8ca8be"/>
+  <path d="M425 103 C400 112 389 123 373 136" fill="none" stroke="#8ca8be" stroke-width="2"/>
+  <polygon points="378,140 362,143 372,130" fill="#8ca8be"/>
+  <path d="M215 222 C239 211 250 200 267 185" fill="none" stroke="#8ca8be" stroke-width="2"/>
+  <polygon points="262,181 278,178 268,191" fill="#8ca8be"/>
+  <path d="M425 222 C401 211 390 200 373 185" fill="none" stroke="#8ca8be" stroke-width="2"/>
+  <polygon points="372,191 362,178 378,181" fill="#8ca8be"/>
+
+  <!-- Sol üst: Diller -->
+  <g filter="url(#softShadow)">
+    <rect x="52" y="61" width="164" height="82" rx="17" fill="#fffdf9"/>
+    <rect x="52" y="61" width="7" height="82" rx="3.5" fill="#f0a45f"/>
+  </g>
+  <circle cx="82" cy="91" r="16" fill="#fff0dd"/>
+  <path d="M76 85 L70 91 L76 97 M88 85 L94 91 L88 97" fill="none" stroke="#d98239" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="110" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33495c">Kaynak diller</text>
+  <text x="110" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647687">C · Rust · C++</text>
+  <text x="70" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6e47">Derleyici çıkışı</text>
+
+  <!-- Sağ üst: Çağrı -->
+  <g filter="url(#softShadow)">
+    <rect x="424" y="61" width="164" height="82" rx="17" fill="#fffdf9"/>
+    <rect x="581" y="61" width="7" height="82" rx="3.5" fill="#78b99b"/>
+  </g>
+  <circle cx="454" cy="91" r="16" fill="#e1f4e9"/>
+  <rect x="446" y="83" width="16" height="5" rx="2" fill="#4c9d79"/>
+  <rect x="446" y="93" width="16" height="5" rx="2" fill="#4c9d79"/>
+  <text x="482" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33495c">Çağrı kuralı</text>
+  <text x="482" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647687">Parametre · sonuç</text>
+  <text x="443" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54836d">Yazmaçlar</text>
+
+  <!-- Sol alt: Bellek -->
+  <g filter="url(#softShadow)">
+    <rect x="52" y="181" width="164" height="82" rx="17" fill="#fffdf9"/>
+    <rect x="52" y="181" width="7" height="82" rx="3.5" fill="#77a8d5"/>
+  </g>
+  <circle cx="82" cy="211" r="16" fill="#e5f2ff"/>
+  <rect x="73" y="202" width="18" height="18" rx="3" fill="none" stroke="#5589ba" stroke-width="2"/>
+  <path d="M77 207 H87 M77 212 H87 M77 217 H83" stroke="#5589ba" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="110" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33495c">Veri yerleşimi</text>
+  <text x="110" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647687">Boyut · hizalama</text>
+  <text x="70" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527da4">Bellek düzeni</text>
+
+  <!-- Sağ alt: Sistem -->
+  <g filter="url(#softShadow)">
+    <rect x="424" y="181" width="164" height="82" rx="17" fill="#fffdf9"/>
+    <rect x="581" y="181" width="7" height="82" rx="3.5" fill="#b58ed1"/>
+  </g>
+  <circle cx="454" cy="211" r="16" fill="#f0e5fa"/>
+  <path d="M446 207 H462 M446 212 H462 M446 217 H457" stroke="#956ab5" stroke-width="2" stroke-linecap="round"/>
+  <text x="482" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33495c">İkili dünya</text>
+  <text x="482" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647687">Sembol · dosya biçimi</text>
+  <text x="443" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7f5c99">Bağlayıcı ve sistem</text>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <rect x="267" y="116" width="106" height="88" rx="24" fill="url(#core)"/>
+  </g>
+  <circle cx="320" cy="145" r="19" fill="#ffffff" opacity="0.19"/>
+  <path d="M309 145 H331 M314 138 L307 145 L314 152 M326 138 L333 145 L326 152" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">ABI</text>
+  <text x="320" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf5ff">İkili sözleşme</text>
+
+  <text x="320" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688092">Uyumlu kurallar → birlikte çalışan bileşenler</text>
+</svg>

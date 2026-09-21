@@ -12,9 +12,13 @@ tags:
   - pipeline
   - performans
 toc: true
+image: /img/superscalar-mimari-islemci-95.png
 ---
 
 Klasik bir işlemciyi her çevrimde tek iş yapan bir aşçı gibi düşünebiliriz. Superscalar işlemci ise aynı mutfakta birden fazla çalışma tezgâhı kullanır: biri toplama yaparken diğeri bellekten malzeme getirir, bir başkası koşulu kontrol eder. Böylece uygun komutlar, tek bir saat çevrimi içinde farklı yürütme birimlerinde eş zamanlı olarak ilerleyebilir.
+
+
+![superscalar-mimari-islemci-95](/img/superscalar-mimari-islemci-95.svg)
 
 ``
 

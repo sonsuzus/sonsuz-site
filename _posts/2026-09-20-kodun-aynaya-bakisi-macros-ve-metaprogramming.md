@@ -12,7 +12,11 @@ tags:
   - rust
   - kod üretimi
 toc: true
+image: /img/kodun-aynaya-bakisi-12.png
 ---
+
+![kodun-aynaya-bakisi-12](/img/kodun-aynaya-bakisi-12.svg)
+
 
 Bir programın başka bir program üretmesi ilk bakışta bilim kurgu gibi gelebilir. Oysa derleyicilerden web çatılarındaki otomatik yönlendirmelere kadar pek çok araç bu fikri kullanır. **Metaprogramming**, kodu veri gibi okuyup değiştirme veya yeni kod üretme tekniğidir; macro ise bu geniş ailenin en tanınmış üyelerinden biridir.
 

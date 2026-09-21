@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="simd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9bd8ef"/>
+      <stop offset="100%" stop-color="#8db8f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6b8795" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6b8795" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="42" r="54" fill="#d9f0ef" opacity="0.45"/>
+  <circle cx="580" cy="276" r="74" fill="#dbe8ff" opacity="0.52"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546a">SKALERDEN SIMD VEKTÖR İŞLEMEYE</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="55" width="142" height="176" rx="18" fill="#ffffff"/>
+    <rect x="28" y="55" width="142" height="35" rx="18" fill="#f3dce3"/>
+    <path d="M28 72.5H170V90H28Z" fill="#f3dce3"/>
+  </g>
+  <text x="50" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#74465a">Skaler döngü</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#455a68">
+    <rect x="47" y="106" width="42" height="24" rx="7" fill="#fcebef" stroke="#eab8c7"/>
+    <rect x="105" y="106" width="42" height="24" rx="7" fill="#fcebef" stroke="#eab8c7"/>
+    <text x="61" y="122">a₁</text><text x="119" y="122">b₁</text>
+    <text x="92" y="123" fill="#b46981">+</text>
+    
+    <rect x="47" y="142" width="42" height="24" rx="7" fill="#fcebef" stroke="#eab8c7"/>
+    <rect x="105" y="142" width="42" height="24" rx="7" fill="#fcebef" stroke="#eab8c7"/>
+    <text x="61" y="158">a₂</text><text x="119" y="158">b₂</text>
+    <text x="92" y="159" fill="#b46981">+</text>
+
+    <rect x="47" y="178" width="42" height="24" rx="7" fill="#fcebef" stroke="#eab8c7"/>
+    <rect x="105" y="178" width="42" height="24" rx="7" fill="#fcebef" stroke="#eab8c7"/>
+    <text x="61" y="194">a₃</text><text x="119" y="194">b₃</text>
+    <text x="92" y="195" fill="#b46981">+</text>
+  </g>
+  <text x="53" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6570">Tek tek komut</text>
+
+  <path d="M181 143H217" stroke="#78a1af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="223,143 214,137 214,149" fill="#78a1af"/>
+
+  <g filter="url(#shadow)">
+    <rect x="230" y="45" width="190" height="200" rx="22" fill="#ffffff"/>
+    <rect x="246" y="61" width="158" height="40" rx="13" fill="url(#simd)"/>
+  </g>
+  <text x="277" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#174b67">SIMD yazmacı</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="250" y="117" width="154" height="37" rx="10" fill="#e9f7ff" stroke="#a7d6e9"/>
+    <rect x="250" y="165" width="154" height="37" rx="10" fill="#edf5ff" stroke="#b4cdeb"/>
+  </g>
+  <g stroke="#a7c9dc" stroke-width="1">
+    <path d="M269 117V154M288 117V154M307 117V154M326 117V154M345 117V154M364 117V154M383 117V154"/>
+    <path d="M269 165V202M288 165V202M307 165V202M326 165V202M345 165V202M364 165V202M383 165V202"/>
+  </g>
+  <text x="257" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31718c">a</text>
+  <text x="257" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6d9b">b</text>
+  <text x="272" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6874">8 şerit · 256 bit</text>
+
+  <path d="M325 245V263" stroke="#78a1af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="325,269 319,260 331,260" fill="#78a1af"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="244" y="272" width="162" height="32" rx="13" fill="#d7f0da"/>
+  </g>
+  <text x="266" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356846">Tek komut · çok veri</text>
+
+  <path d="M431 143H456" stroke="#78a1af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="462,143 453,137 453,149" fill="#78a1af"/>
+
+  <g filter="url(#shadow)">
+    <rect x="470" y="55" width="142" height="176" rx="18" fill="#ffffff"/>
+    <rect x="470" y="55" width="142" height="35" rx="18" fill="#dcead6"/>
+    <path d="M470 72.5H612V90H470Z" fill="#dcead6"/>
+  </g>
+  <text x="494" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456b45">Gerçek hız</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="487" y="106" width="108" height="25" rx="8" fill="#eef8eb"/>
+    <circle cx="501" cy="118.5" r="5" fill="#77bf8b"/>
+    <text x="514" y="123" fill="#49634f">Önbellek</text>
+
+    <rect x="487" y="140" width="108" height="25" rx="8" fill="#fff5df"/>
+    <circle cx="501" cy="152.5" r="5" fill="#e8b65c"/>
+    <text x="514" y="157" fill="#6e5b35">Bant genişliği</text>
+
+    <rect x="487" y="174" width="108" height="25" rx="8" fill="#f3ecff"/>
+    <circle cx="501" cy="186.5" r="5" fill="#a68ad3"/>
+    <text x="514" y="191" fill="#625079">Bağımlılık</text>
+  </g>
+  <text x="491" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a7b70">Ölç ve profil çıkar</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="38" y="264" width="159" height="34" rx="14" fill="#fff4d9"/>
+  </g>
+  <text x="54" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#81612e">Kuyruk: kalan öğeler</text>
+  <path d="M169 264C178 247 190 240 220 238" fill="none" stroke="#d2a655" stroke-width="1.7" stroke-dasharray="4 4"/>
+</svg>

@@ -12,7 +12,11 @@ tags:
   - c
   - python
 toc: true
+image: /img/foreign-function-interface-85.png
 ---
+
+![foreign-function-interface-85](/img/foreign-function-interface-85.svg)
+
 
 Bir Python uygulamasının C ile yazılmış ışık hızındaki bir kütüphaneyi çağırması veya Rust kodunun işletim sistemine ait işlevleri kullanması sihir değildir. Bu iletişimi sağlayan mekanizma **Foreign Function Interface**, kısaca **FFI** olarak adlandırılır. FFI, farklı kurallara ve çalışma zamanlarına sahip programlama dillerinin aynı masaya oturup anlaşmasını sağlayan teknik bir tercümandır.
 ``

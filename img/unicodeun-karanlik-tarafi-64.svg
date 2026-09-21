@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfeaff"/>
+      <stop offset="1" stop-color="#d9f4e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6f8297" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8297" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="160" r="111" fill="#dcecff" opacity="0.34"/>
+  <circle cx="319" cy="160" r="78" fill="#ffffff" opacity="0.44"/>
+
+  <text x="26" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536a">UNICODE KATMANLARI</text>
+  <text x="26" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718197">Görünen sembol ile bellek boyutu farklıdır</text>
+
+  <!-- connectors -->
+  <path d="M257 144 C218 128 198 105 170 91" fill="none" stroke="#89a7c5" stroke-width="2"/>
+  <polygon points="170,91 180,91 175,99" fill="#89a7c5"/>
+  <path d="M257 180 C218 195 198 219 170 231" fill="none" stroke="#89a7c5" stroke-width="2"/>
+  <polygon points="170,231 180,224 180,234" fill="#89a7c5"/>
+
+  <path d="M383 144 C421 128 442 105 470 91" fill="none" stroke="#79b39d" stroke-width="2"/>
+  <polygon points="470,91 460,99 460,89" fill="#79b39d"/>
+  <path d="M383 180 C421 195 442 219 470 231" fill="none" stroke="#79b39d" stroke-width="2"/>
+  <polygon points="470,231 460,234 460,224" fill="#79b39d"/>
+
+  <!-- left top code point -->
+  <g filter="url(#smallShadow)">
+    <rect x="27" y="60" width="148" height="65" rx="16" fill="#fff4dc"/>
+    <rect x="38" y="73" width="29" height="29" rx="9" fill="#f7d99b"/>
+    <text x="52.5" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#795d23">U+</text>
+    <text x="78" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5a4b30">Kod noktası</text>
+    <text x="78" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#856f47">A = U+0041</text>
+  </g>
+
+  <!-- left bottom code unit -->
+  <g filter="url(#smallShadow)">
+    <rect x="27" y="199" width="148" height="65" rx="16" fill="#eee7ff"/>
+    <rect x="38" y="212" width="29" height="29" rx="9" fill="#d6c5f6"/>
+    <path d="M46 219h13v4H46zM46 227h13v4H46zM46 235h8v3h-8z" fill="#715e9a"/>
+    <text x="78" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#55476e">Kod birimi</text>
+    <text x="78" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#796a95">UTF-16: 16 bit</text>
+  </g>
+
+  <!-- core -->
+  <g filter="url(#shadow)">
+    <rect x="257" y="108" width="126" height="104" rx="24" fill="url(#core)" stroke="#c1d6e5" stroke-width="1.2"/>
+    <text x="320" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40576e">Görünen metin</text>
+    <rect x="277" y="147" width="86" height="41" rx="13" fill="#ffffff" opacity="0.78"/>
+    <text x="320" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#36566c">Aş😀</text>
+    <text x="320" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61798d">tek parça algı</text>
+  </g>
+
+  <!-- right top utf8 -->
+  <g filter="url(#smallShadow)">
+    <rect x="465" y="60" width="148" height="65" rx="16" fill="#def4eb"/>
+    <rect x="476" y="73" width="29" height="29" rx="9" fill="#aee1cc"/>
+    <text x="490.5" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#276b5c">8</text>
+    <text x="516" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315f56">UTF-8 byte</text>
+    <text x="516" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d8175">1 + 2 + 4 = 7</text>
+  </g>
+
+  <!-- right bottom grapheme -->
+  <g filter="url(#smallShadow)">
+    <rect x="465" y="199" width="148" height="65" rx="16" fill="#ffe8ed"/>
+    <rect x="476" y="212" width="29" height="29" rx="9" fill="#f5c0ce"/>
+    <path d="M484 225c0-4 6-6 8-2 2-4 8-2 8 2 0 6-8 10-8 10s-8-4-8-10z" fill="#a84c68"/>
+    <text x="516" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#744052">Grafem kümesi</text>
+    <text x="516" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#956173">kullanıcının gördüğü</text>
+  </g>
+
+  <!-- bottom principle -->
+  <g filter="url(#smallShadow)">
+    <rect x="174" y="277" width="292" height="29" rx="14" fill="#ffffff" opacity="0.92"/>
+    <circle cx="192" cy="291.5" r="8" fill="#8fb7da"/>
+    <path d="M188.5 291.5l2.3 2.3 4.6-5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="207" y="295.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6578">Depolama: byte • İşleme: kod noktası • Arayüz: grafem</text>
+  </g>
+</svg>

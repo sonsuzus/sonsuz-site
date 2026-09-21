@@ -12,6 +12,7 @@ tags:
   - bağlayıcı
   - sistem programlama
 toc: true
+image: /img/abi-nedir-derlenen-41.png
 ---
 
 Bir C fonksiyonunu Rust’tan çağırdığınızda ya da işletim sistemi derlenmiş programınızı çalıştırdığında taraflar kaynak kodu tartışmaz. Bunun yerine; parametrelerin nereye konacağı, sonuçların nasıl döndürüleceği ve belleğin nasıl düzenleneceği gibi önceden belirlenmiş kurallara uyarlar. İşte bu görünmez anlaşmanın adı **ABI**, yani *Application Binary Interface*’tir.
@@ -48,6 +49,9 @@ $$
 | Tanımladığı şey | Fonksiyonlar, sınıflar, sözleşmeler | Yazmaçlar, veri yerleşimi, çağrı kuralları |
 | Uyumsuzluk sonucu | Derleme hatası | Bağlama hatası veya çalışma zamanı çökmesi |
 | Kullanıcı | Programcı | Derleyici, bağlayıcı, işletim sistemi |
+
+![abi-nedir-derlenen-41](/img/abi-nedir-derlenen-41.svg)
+
 
 Bir kütüphanenin API’si değişmeden ABI’si bozulabilir. Örneğin herkese açık bir `struct` içine yeni alan eklemek, kaynak kod açısından masum görünse de yapının boyutunu ve alan ofsetlerini değiştirir. Eski sürüme göre derlenmiş uygulama artık yanlış adreslerden veri okuyabilir.
 

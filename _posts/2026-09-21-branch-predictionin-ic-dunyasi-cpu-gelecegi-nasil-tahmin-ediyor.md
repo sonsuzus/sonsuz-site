@@ -12,7 +12,11 @@ tags:
   - pipeline
   - assembly
 toc: true
+image: /img/branch-predictionin-ic-50.png
 ---
+
+![branch-predictionin-ic-50](/img/branch-predictionin-ic-50.svg)
+
 
 Modern bir CPU, yalnızca komutları çalıştıran hızlı bir hesap makinesi değildir; aynı zamanda geleceği tahmin etmeye çalışan minik bir falcıdır. Programdaki `if`, `switch` ve döngü koşulları işlem akışını değiştirdiğinde CPU, sonucun hesaplanmasını beklemek yerine hangi yolun izleneceğini tahmin eder. Bu mekanizmaya **branch prediction**, yani dallanma tahmini denir.
 ``

@@ -12,7 +12,11 @@ tags:
   - python
   - metin-isleme
 toc: true
+image: /img/unicodeun-karanlik-tarafi-64.png
 ---
+
+![unicodeun-karanlik-tarafi-64](/img/unicodeun-karanlik-tarafi-64.svg)
+
 
 Ekranda tek parça görünen bir harfin bellekte de tek parça olduğunu düşünmek son derece doğal. Ne var ki bilgisayarlar için “karakter” şaşırtıcı derecede belirsiz bir kavramdır. Bir harf; kod noktası, kod birimi, byte veya kullanıcı tarafından algılanan sembol anlamına gelebilir. Emoji ailesini saymaya kalktığınızda işler tam bir Unicode korku filmine dönüşür.
 

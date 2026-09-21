@@ -12,6 +12,7 @@ tags:
   - metaprogramlama
   - runtime
 toc: true
+image: /img/reflection-calisan-bir-37.png
 ---
 
 Bir programın çalışırken kendi sınıflarını, metotlarını ve alanlarını inceleyebilmesi kulağa bilim kurgu gibi gelebilir. Oysa **reflection**, modern programlama dillerinde test araçlarından web çatılarının otomatik yapılandırmasına kadar pek çok sistemin görünmez kahramanıdır. Program aynaya bakıp “Ben hangi türüm, hangi yeteneklere sahibim?” diye sorar; reflection API’si de ona cevap verir.
@@ -36,6 +37,9 @@ Burada $o$ incelenen nesne, $T$ tür bilgisi, $F$ alanlar, $M$ metotlar ve $A$ a
 | Doğrudan çağrı | Derleme sırasında | Hızlı ve güvenli | Daha az esnek |
 | Reflection | Çalışma sırasında | Dinamik ve genişletilebilir | Daha yavaş, hata riski yüksek |
 | Kod üretimi | Derleme veya kurulum sırasında | Performanslı otomasyon | Araç zinciri karmaşık olabilir |
+
+![reflection-calisan-bir-37](/img/reflection-calisan-bir-37.svg)
+
 
 ## Java ile çalışma zamanında keşif
 

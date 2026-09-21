@@ -13,7 +13,11 @@ tags:
   - işlemci
   - cpp
 toc: true
+image: /img/simd-ve-vektor-64.png
 ---
+
+![simd-ve-vektor-64](/img/simd-ve-vektor-64.svg)
+
 
 Bir işlemciye aynı toplama komutunu binlerce sayı için tekrarlatmak, kasadaki görevliye ürünleri tek tek uzatmaya benzer. SIMD ise ürünleri banda dizip birkaçını birlikte işleme fikridir. Görüntü işleme, oyun motorları, bilimsel hesaplama ve yapay zekâ gibi alanlarda doğru kullanıldığında ciddi hız kazandırır; ancak “tek komut” ifadesi, bütün işin sihirli biçimde tek saat çevriminde biteceği anlamına gelmez.
 ``

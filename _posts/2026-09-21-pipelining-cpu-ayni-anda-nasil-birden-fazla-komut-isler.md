@@ -12,6 +12,7 @@ tags:
   - assembly
   - bilgisayar-bilimi
 toc: true
+image: /img/pipelining-cpu-ayni-27.png
 ---
 
 Bir CPU’nun aynı anda birden fazla komut çalıştırdığını duyduğumuzda, işlemcinin düzinelerce eli olan bir robot gibi davrandığını düşünebiliriz. Gerçekteyse pipelining, tek bir işi parçalara ayırıp farklı komutların farklı parçalarını eş zamanlı yürütme tekniğidir. Bir otomobil fabrikasında bir araç boyanırken diğerinin motorunun takılması gibi, işlemci de bir komutu çözerken sıradaki komutu bellekten getirebilir.
@@ -39,6 +40,9 @@ Pipelining olmayan bir CPU, bir komutun beş aşamasını bitirmeden yenisine ba
 | 5 | WB | MEM | EX |
 | 6 | - | WB | MEM |
 | 7 | - | - | WB |
+
+![pipelining-cpu-ayni-27](/img/pipelining-cpu-ayni-27.svg)
+
 
 Tabloda üç komut gerçekten tek bir anda tamamlanmaz; aynı anda farklı aşamalarda bulunur. Hat dolduktan sonra ideal durumda her çevrimde bir komut tamamlanır.
 
