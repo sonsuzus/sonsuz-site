@@ -12,6 +12,7 @@ tags:
   - 网络 programlama
   - wireshark
 toc: true
+image: /img/tcp-uclu-el-20.png
 ---
 
 Tarayıcıya bir adres yazıp Enter tuşuna bastığınızda veri hemen akmaya başlamaz. TCP kullanan istemci ile sunucu önce birbirlerini bulduklarını, iletişime hazır olduklarını ve başlangıç sıra numaralarını kabul ettiklerini doğrular. **TCP üçlü el sıkışması** denilen SYN, SYN-ACK ve ACK paketleri tam olarak bu hazırlığı gerçekleştirir.
@@ -47,6 +48,9 @@ $$
 | 1 | İstemci | SYN | $x$ | — | Bağlantı kurmak istiyorum |
 | 2 | Sunucu | SYN, ACK | $y$ | $x+1$ | İsteğini aldım, ben de hazırım |
 | 3 | İstemci | ACK | $x+1$ | $y+1$ | Hazır olduğunu doğruladım |
+
+![tcp-uclu-el-20](/img/tcp-uclu-el-20.svg)
+
 
 ### 1. SYN
 

@@ -12,6 +12,7 @@ tags:
   - sertifika
   - web
 toc: true
+image: /img/tls-handshake-tarayici-18.png
 ---
 
 Adres çubuğundaki küçük kilit simgesi, tarayıcınız ile sunucu arasında görünmez ama oldukça hareketli bir tanışma gerçekleştiğini gösterir. TLS handshake adı verilen bu süreçte taraflar kullanılacak şifreleme yöntemini belirler, sunucu kimliğini kanıtlar ve oturuma özel anahtarlar üretir. Üstelik bütün bunlar çoğunlukla birkaç ağ turunda, siz daha sayfanın açılmasını beklerken tamamlanır.
@@ -86,3 +87,6 @@ openssl s_client \
 Buradaki `-servername` seçeneği SNI bilgisini gönderir. Aynı IP adresinde birden fazla site barındırılıyorsa sunucunun doğru sertifikayı seçmesini sağlar. Çıktıdaki `Protocol`, `Cipher` ve `Verify return code` alanları sırasıyla TLS sürümünü, seçilen şifre takımını ve doğrulama sonucunu gösterir.
 
 Kısacası TLS handshake, “bir sertifika gönder ve şifrelemeye başla” işleminden daha fazlasıdır. Tarayıcı güven zincirini denetler, sunucu özel anahtara sahip olduğunu kanıtlar, taraflar geçici bir ortak sır üretir ve tüm görüşmenin bütünlüğünü doğrular. Kilit simgesinin arkasında küçük ama disiplinli bir kriptografi orkestrası çalışır.
+
+![tls-handshake-tarayici-18](/img/tls-handshake-tarayici-18.svg)
+

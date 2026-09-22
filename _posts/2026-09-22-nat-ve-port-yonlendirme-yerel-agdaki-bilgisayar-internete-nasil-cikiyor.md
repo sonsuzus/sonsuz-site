@@ -12,9 +12,13 @@ tags:
   - router
   - güvenlik
 toc: true
+image: /img/nat-ve-port-75.png
 ---
 
 Evdeki bilgisayarınızın IP adresi `192.168.1.42`, ziyaret ettiğiniz web sitesinin gördüğü adres ise bambaşka olabilir. Bu küçük ağ sihrinin arkasında NAT bulunur. NAT, aynı yerel ağdaki telefon, bilgisayar ve hatta akıllı buzdolabının tek bir genel IP adresini paylaşarak internete çıkmasını sağlar.
+
+
+![nat-ve-port-75](/img/nat-ve-port-75.svg)
 
 ``
 

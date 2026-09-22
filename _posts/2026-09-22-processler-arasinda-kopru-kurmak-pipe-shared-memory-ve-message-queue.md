@@ -12,6 +12,7 @@ tags:
   - message-queue
   - python
 toc: true
+image: /img/processler-arasinda-kopru-13.png
 ---
 
 Bir process kendi sanal adres alanında yaşayan, komşusunun değişkenlerine doğrudan dokunamayan küçük bir ada gibidir. Ancak gerçek uygulamalarda bu adaların veri paylaşması gerekir. İşte **Inter-Process Communication (IPC)** mekanizmaları, process’ler arasında köprü kurar. Pipe akış sunar, shared memory ortak bir çalışma masası sağlar, message queue ise düzenli bir posta kutusu gibi davranır.
@@ -33,6 +34,9 @@ Shared memory, veri kopyalama maliyetini azaltırken senkronizasyon sorumluluğu
 | Pipe | Sıralı byte akışı | Orta | Okuma/yazma düzeniyle | Ebeveyn-çocuk iletişimi |
 | Shared memory | Ortak bellek bölgesi | Çok yüksek | Mutex/semaphore gerekir | Büyük veri ve yoğun işlem |
 | Message queue | Ayrı mesajlar | Orta | Kuyruk tarafından desteklenir | Görev dağıtımı ve olaylar |
+
+![processler-arasinda-kopru-13](/img/processler-arasinda-kopru-13.svg)
+
 
 ## Pipe: Tek yönlü veri tüneli
 

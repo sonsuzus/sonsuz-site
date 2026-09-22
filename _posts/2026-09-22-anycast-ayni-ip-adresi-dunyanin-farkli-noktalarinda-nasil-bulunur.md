@@ -12,6 +12,7 @@ tags:
   - internet
   - yönlendirme
 toc: true
+image: /img/anycast-ayni-ip-73.png
 ---
 
 Bir IP adresini genellikle tek bir sunucunun internet üzerindeki ev adresi gibi düşünürüz. Oysa Anycast dünyasında aynı IP adresi İstanbul, Frankfurt, Singapur ve New York’taki sunucularda eş zamanlı olarak bulunabilir. Kullanıcı bu adresle bağlantı kurduğunda paketler sihirle çoğalmaz; internetin yönlendirme sistemi, kullanıcıyı ağ açısından en uygun noktaya götürür.
@@ -41,6 +42,9 @@ Burada $H$ AS geçiş sayısını, $L$ gecikmeyi, $P$ ise operatör politikasın
 | Gecikme | Uzak kullanıcılar için artabilir | Genellikle daha düşüktür |
 | Arıza dayanıklılığı | Ek mekanizma gerektirir | Rota geri çekilerek sağlanabilir |
 | Yaygın kullanım | Web sunucuları, istemciler | DNS, CDN, DDoS koruması |
+
+![anycast-ayni-ip-73](/img/anycast-ayni-ip-73.svg)
+
 
 Anycast bir yük dengeleyiciyle aynı şey değildir. Klasik yük dengeleyici kendisine ulaşan bağlantıları arka uç sunucularına dağıtır. Anycast ise trafik henüz hedef ağa ulaşmadan, internetin yönlendirme katmanında hangi veri merkezine gideceğini etkiler. İkisi birlikte de kullanılabilir: Anycast doğru şehri, yük dengeleyici ise o şehirdeki doğru sunucuyu seçer.
 

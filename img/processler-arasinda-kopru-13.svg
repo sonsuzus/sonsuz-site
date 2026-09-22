@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9dcf7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8498" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8498" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="158" r="128" fill="#dceef3" opacity="0.28"/>
+  <circle cx="320" cy="158" r="98" fill="none" stroke="#b9d5df" stroke-width="1.5" stroke-dasharray="5 6" opacity="0.7"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="32" y="48" width="150" height="92" rx="18" fill="#fff4dd"/>
+    <rect x="458" y="48" width="150" height="92" rx="18" fill="#e5f5ec"/>
+    <rect x="245" y="225" width="150" height="70" rx="18" fill="#f1e7fb"/>
+  </g>
+
+  <g fill="#607080" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="107" y="76" font-weight="700" fill="#825f22">Pipe</text>
+    <text x="107" y="98">Sıralı byte akışı</text>
+    <text x="107" y="118">Kısa iletişim</text>
+
+    <text x="533" y="76" font-weight="700" fill="#35735d">Ortak bellek</text>
+    <text x="533" y="98">Paylaşılan alan</text>
+    <text x="533" y="118">Yüksek hız</text>
+
+    <text x="320" y="252" font-weight="700" fill="#77569a">Mesaj kuyruğu</text>
+    <text x="320" y="274">Görev ve olaylar</text>
+  </g>
+
+  <path d="M182 95 C211 95 222 113 248 126" fill="none" stroke="#d59a43" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="248,126 237,125 242,116" fill="#d59a43"/>
+  <path d="M458 95 C429 95 418 113 392 126" fill="none" stroke="#63a989" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="392,126 398,116 403,125" fill="#63a989"/>
+  <path d="M320 225 L320 201" fill="none" stroke="#a277c4" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="320,201 314,211 326,211" fill="#a277c4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="248" y="110" width="144" height="92" rx="24" fill="url(#hub)" stroke="#adc9e1" stroke-width="1.5"/>
+  </g>
+  <circle cx="320" cy="143" r="19" fill="#ffffff" opacity="0.86"/>
+  <path d="M311 143 L317 149 L330 136" fill="none" stroke="#5790bd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="177" fill="#385b78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">IPC Köprüsü</text>
+  <text x="320" y="193" fill="#668197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">Yalıtık süreçler</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="44" y="182" width="116" height="58" rx="14" fill="#ffffff"/>
+    <rect x="480" y="182" width="116" height="58" rx="14" fill="#ffffff"/>
+  </g>
+  <text x="102" y="207" fill="#4e677b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Süreç A</text>
+  <text x="102" y="225" fill="#8095a4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">Veri üretir</text>
+  <text x="538" y="207" fill="#4e677b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Süreç B</text>
+  <text x="538" y="225" fill="#8095a4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">Veri tüketir</text>
+
+  <path d="M160 211 C193 211 213 196 247 178" fill="none" stroke="#8fa8b8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="247,178 237,178 242,187" fill="#8fa8b8"/>
+  <path d="M393 178 C427 196 447 211 480 211" fill="none" stroke="#8fa8b8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="480,211 470,206 470,216" fill="#8fa8b8"/>
+
+  <text x="320" y="313" fill="#8aa0a4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">Kopyalama · Senkronizasyon · Sistem çağrısı</text>
+</svg>

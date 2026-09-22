@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="router" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#bfd9f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#52728a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#52728a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="581" cy="38" r="74" fill="#dff2ec" opacity="0.55"/>
+  <circle cx="69" cy="285" r="86" fill="#e7efff" opacity="0.6"/>
+
+  <text x="33" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a" font-weight="700">Yerel Ağ</text>
+  <text x="491" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536a" font-weight="700">İnternet</text>
+
+  <!-- LAN boundary -->
+  <rect x="22" y="43" width="173" height="207" rx="20" fill="#f8fcff" stroke="#cddfec" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- Device computer -->
+  <g filter="url(#smallShadow)">
+    <rect x="43" y="68" width="123" height="49" rx="12" fill="#ffffff"/>
+    <rect x="54" y="78" width="33" height="23" rx="4" fill="#a9d7eb"/>
+    <rect x="58" y="82" width="25" height="15" rx="2" fill="#e9f8fc"/>
+    <path d="M67 102 L63 108 L78 108 L74 102" fill="#7698ae"/>
+    <text x="99" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#29475c" font-weight="700">Bilgisayar</text>
+    <text x="99" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587386">192.168.1.42</text>
+  </g>
+
+  <!-- phone -->
+  <g filter="url(#smallShadow)">
+    <rect x="43" y="133" width="123" height="49" rx="12" fill="#ffffff"/>
+    <rect x="57" y="141" width="18" height="31" rx="4" fill="#d0bdea"/>
+    <rect x="60" y="145" width="12" height="20" rx="2" fill="#f5effc"/>
+    <circle cx="66" cy="168" r="1.4" fill="#765e9c"/>
+    <text x="89" y="152" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#29475c" font-weight="700">Telefon</text>
+    <text x="89" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587386">192.168.1.18</text>
+  </g>
+
+  <!-- web server -->
+  <g filter="url(#smallShadow)">
+    <rect x="43" y="198" width="123" height="39" rx="12" fill="#fffdf9"/>
+    <rect x="56" y="206" width="22" height="21" rx="4" fill="#f4c77f"/>
+    <circle cx="62" cy="212" r="2" fill="#fff7e7"/>
+    <circle cx="70" cy="212" r="2" fill="#fff7e7"/>
+    <path d="M60 220 H74" stroke="#fff7e7" stroke-width="2" stroke-linecap="round"/>
+    <text x="89" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#29475c" font-weight="700">Web Sunucu</text>
+    <text x="89" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587386">192.168.1.50:80</text>
+  </g>
+
+  <!-- lines LAN to router -->
+  <path d="M166 92 H221" fill="none" stroke="#7ba6bb" stroke-width="2"/>
+  <polygon points="221,92 213,87 213,97" fill="#7ba6bb"/>
+  <path d="M166 157 H221" fill="none" stroke="#7ba6bb" stroke-width="2"/>
+  <polygon points="221,157 213,152 213,162" fill="#7ba6bb"/>
+  <path d="M166 217 H205 V203 H221" fill="none" stroke="#d29b50" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="221,203 213,198 213,208" fill="#d29b50"/>
+
+  <!-- Router -->
+  <g filter="url(#shadow)">
+    <rect x="221" y="72" width="191" height="145" rx="22" fill="url(#router)" stroke="#9bbcd5" stroke-width="1.5"/>
+    <rect x="244" y="91" width="145" height="36" rx="10" fill="#f5fbff" opacity="0.92"/>
+    <text x="316.5" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#244761" font-weight="700">NAT Yönlendirici</text>
+    <text x="316.5" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53748b">Genel IP: 203.0.113.25</text>
+
+    <rect x="244" y="140" width="145" height="59" rx="10" fill="#e9f5ed" stroke="#b7d7c4"/>
+    <text x="256" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39705b" font-weight="700">NAT Tablosu</text>
+    <path d="M256 165 H377" stroke="#bdd8c8"/>
+    <text x="256" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567a69">.42:51500 → :62001</text>
+    <text x="256" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567a69">.18:53020 → :62002</text>
+  </g>
+
+  <!-- Router to internet -->
+  <path d="M412 132 H469" fill="none" stroke="#638ca8" stroke-width="2.5"/>
+  <polygon points="469,132 460,126 460,138" fill="#638ca8"/>
+  <text x="427" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587386">PAT</text>
+
+  <!-- Internet cloud -->
+  <g filter="url(#shadow)">
+    <path d="M491 150 C475 150 466 140 466 128 C466 116 475 106 488 105 C493 89 508 79 525 82 C536 70 558 72 568 87 C584 84 599 95 599 111 C612 115 620 126 620 139 C620 154 608 165 593 165 H493 C480 165 470 158 470 147 C470 146 470 145 471 143" fill="#ffffff" stroke="#b8d5e6" stroke-width="1.5"/>
+    <text x="543" y="124" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31546b" font-weight="700">İnternet</text>
+    <text x="543" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587386">93.184.216.34:443</text>
+  </g>
+
+  <!-- Return response -->
+  <path d="M475 177 H422 V190 H412" fill="none" stroke="#78ad8d" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="412,190 421,184 421,196" fill="#78ad8d"/>
+  <text x="430" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59806a">Yanıt eşleşir</text>
+
+  <!-- Forwarding rule -->
+  <g filter="url(#shadow)">
+    <rect x="236" y="242" width="177" height="59" rx="16" fill="#fff6e8" stroke="#ebcf9d" stroke-width="1.5"/>
+    <circle cx="261" cy="271" r="15" fill="#f5c878"/>
+    <path d="M257 271 H265 M261 267 V275" stroke="#825b25" stroke-width="2" stroke-linecap="round"/>
+    <text x="285" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#704b18" font-weight="700">Port Yönlendirme</text>
+    <text x="285" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6937">:8080 → .50:80</text>
+  </g>
+
+  <!-- router to rule -->
+  <path d="M316 217 V233" fill="none" stroke="#d29b50" stroke-width="2"/>
+  <polygon points="316,242 310,233 322,233" fill="#d29b50"/>
+
+  <!-- external incoming to rule / server conceptual -->
+  <path d="M542 167 V220 H425" fill="none" stroke="#d29b50" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="425,220 434,214 434,226" fill="#d29b50"/>
+  <text x="478" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6937">Dış istek :8080</text>
+
+  <!-- security note -->
+  <g>
+    <path d="M451 253 L470 244 L489 253 V270 C489 282 480 290 470 294 C460 290 451 282 451 270 Z" fill="#dff0e7" stroke="#9cc7ad" stroke-width="1.2"/>
+    <path d="M463 269 L468 274 L478 262" fill="none" stroke="#4e956c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="503" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426b55" font-weight="700">Kural yoksa</text>
+    <text x="503" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587a67">trafik engellenir</text>
+  </g>
+</svg>

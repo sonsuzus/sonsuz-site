@@ -12,9 +12,13 @@ tags:
   - mac-adresi
   - tcp-ip
 toc: true
+image: /img/arp-protokolu-ip-40.png
 ---
 
 Bilgisayarınız aynı yerel ağdaki bir sunucuya paket göndermek istediğinde hedefin IP adresini biliyor olabilir; fakat Ethernet çerçevesini teslim edebilmek için bir de fiziksel, yani MAC adresine ihtiyaç duyar. İşte ARP (Address Resolution Protocol), “Bu IP adresi kimde ve MAC adresi nedir?” sorusunu ağdaki cihazlara sorarak iki adresleme dünyası arasında köprü kurar.
+
+
+![arp-protokolu-ip-40](/img/arp-protokolu-ip-40.svg)
 
 ``
 

@@ -12,6 +12,7 @@ tags:
   - network
   - udp
 toc: true
+image: /img/dhcpnin-anatomisi-bilgisayar-47.png
 ---
 
 Bilgisayarınızı açtığınızda tarayıcı hemen çalışır, mesajlar gelir ve internet sanki musluktan akan su gibi hazırdır. Oysa cihazınızın ağda konuşabilmesi için önce bir IP adresi, ağ maskesi, ağ geçidi ve DNS sunucusu edinmesi gerekir. Bu otomatik tanışma törenini yöneten protokolün adı **DHCP**, yani Dynamic Host Configuration Protocol'dür.
@@ -44,6 +45,9 @@ Bilgisayar ilk açıldığında henüz IP adresini ve DHCP sunucusunun konumunu 
 | 2 | Offer | Sunucu | Kullanılabilecek bir IP önerir |
 | 3 | Request | İstemci | Seçtiği teklifi ilan eder |
 | 4 | Acknowledge | Sunucu | Kiralamayı onaylar ve ayarları yollar |
+
+![dhcpnin-anatomisi-bilgisayar-47](/img/dhcpnin-anatomisi-bilgisayar-47.svg)
+
 
 İlk pakette kaynak IP `0.0.0.0`, hedef IP ise `255.255.255.255` olabilir. Bir başka deyişle bilgisayar, “Ben daha kim olduğumu bilmiyorum; burada bana adres verecek biri var mı?” diye bağırır.
 

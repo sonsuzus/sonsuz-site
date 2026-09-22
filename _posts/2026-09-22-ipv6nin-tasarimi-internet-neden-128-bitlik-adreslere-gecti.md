@@ -12,7 +12,11 @@ tags:
   - network
   - siber-güvenlik
 toc: true
+image: /img/ipv6nin-tasarimi-internet-98.png
 ---
+
+![ipv6nin-tasarimi-internet-98](/img/ipv6nin-tasarimi-internet-98.svg)
+
 
 İnternete bağlanan her cihazın bir adrese ihtiyacı vardır. Bilgisayarlar, telefonlar, sunucular ve hatta akıllı ampuller, veri paketlerinin nereye gideceğini IP adresleri sayesinde bilir. IPv4 uzun yıllar bu görevi başarıyla yürüttü; ancak internet büyüdükçe 32 bitlik adres alanının sınırları görünür hâle geldi. IPv6’nın 128 bitlik adresleri, yalnızca “daha fazla cihaz bağlayalım” düşüncesinin değil, ölçeklenebilir ve daha düzenli bir internet tasarlama hedefinin sonucudur.
 ``

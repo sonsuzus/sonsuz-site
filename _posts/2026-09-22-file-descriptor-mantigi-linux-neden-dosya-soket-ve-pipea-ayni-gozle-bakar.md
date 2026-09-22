@@ -12,7 +12,11 @@ tags:
   - pipe
   - unix
 toc: true
+image: /img/file-descriptor-mantigi-49.png
 ---
+
+![file-descriptor-mantigi-49](/img/file-descriptor-mantigi-49.svg)
+
 
 Linux dünyasında bir dosya açtığınızda, ağ bağlantısı kurduğunuzda veya iki süreç arasında pipe oluşturduğunuzda karşınıza küçük bir tamsayı çıkar: file descriptor, yani dosya tanımlayıcısı. İlk bakışta bir metin dosyasıyla ağ soketinin aynı sayı türüyle temsil edilmesi tuhaf görünebilir. Fakat bu yaklaşım, Unix felsefesinin en güçlü fikirlerinden birini uygular: Farklı kaynaklara ortak bir arayüz üzerinden erişmek.
 

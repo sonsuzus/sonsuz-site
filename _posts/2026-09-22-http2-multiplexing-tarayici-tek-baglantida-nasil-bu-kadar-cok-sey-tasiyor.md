@@ -12,7 +12,11 @@ tags:
   - tcp
   - performans
 toc: true
+image: /img/http2-multiplexing-tarayici-69.png
 ---
+
+![http2-multiplexing-tarayici-69](/img/http2-multiplexing-tarayici-69.svg)
+
 
 Bir web sayfası açıldığında tarayıcı yalnızca HTML indirmez; CSS, JavaScript, font, görsel ve API yanıtları gibi onlarca kaynağa ihtiyaç duyar. HTTP/1.1 döneminde bu kalabalığı yönetmek için birden fazla TCP bağlantısı açılırdı. HTTP/2 ise multiplexing sayesinde aynı bağlantıyı çok şeritli bir otoyola dönüştürür: farklı istek ve yanıtlar, birbirini tamamlamayı beklemeden eş zamanlı biçimde taşınabilir.
 
