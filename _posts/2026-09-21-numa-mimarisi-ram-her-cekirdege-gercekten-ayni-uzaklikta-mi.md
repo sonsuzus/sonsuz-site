@@ -12,6 +12,7 @@ tags:
   - performans
   - bellek
 toc: true
+image: /img/numa-mimarisi-ram-45.png
 ---
 
 Modern bir sunucuda bütün RAM modülleri aynı anakarta takılı olsa da işlemci çekirdekleri açısından eşit uzaklıkta değildir. NUMA, yani **Non-Uniform Memory Access**, tam olarak bu gerçeği ifade eder: Bir çekirdeğin bazı bellek bölgelerine erişimi hızlı ve ucuzken diğerlerine erişimi daha yavaş olabilir. Kısacası RAM ortak görünür, fakat ona giden yolların uzunluğu aynı değildir.
@@ -31,6 +32,9 @@ NUMA sistemlerinde her işlemci soketi veya çekirdek grubu, kendisine bağlı b
 | Bant genişliği | Genellikle daha yüksek | Ara bağlantıyla sınırlı |
 | Trafik maliyeti | Düşük | Soketler arası trafik oluşturur |
 | Tercih edilen kullanım | Sık erişilen veriler | Yerel kapasite yetersizse |
+
+![numa-mimarisi-ram-45](/img/numa-mimarisi-ram-45.svg)
+
 
 Bellek erişim süresini basitleştirerek şöyle modelleyebiliriz:
 

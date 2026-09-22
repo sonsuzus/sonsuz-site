@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="local" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbf5e6"/>
+      <stop offset="100%" stop-color="#c8ead7"/>
+    </linearGradient>
+    <linearGradient id="remote" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d8"/>
+      <stop offset="100%" stop-color="#f8ddb1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#71849a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71849a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="40" r="70" fill="#dceefe" opacity="0.42"/>
+  <circle cx="579" cy="280" r="88" fill="#dff2da" opacity="0.38"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566f">NUMA: Yerel Bellek Daha Yakın</text>
+
+  <g filter="url(#shadow)">
+    <rect x="36" y="53" width="236" height="210" rx="22" fill="#eff8f3" stroke="#afd8be"/>
+    <rect x="368" y="53" width="236" height="210" rx="22" fill="#fff7eb" stroke="#efd29c"/>
+  </g>
+
+  <rect x="55" y="68" width="96" height="26" rx="13" fill="#bfe4cf"/>
+  <text x="103" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35664a">NUMA Düğümü 0</text>
+
+  <rect x="387" y="68" width="96" height="26" rx="13" fill="#f6d599"/>
+  <text x="435" y="85" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#80561d">NUMA Düğümü 1</text>
+
+  <g filter="url(#soft)">
+    <rect x="61" y="112" width="86" height="57" rx="14" fill="#d9edff"/>
+    <rect x="161" y="112" width="86" height="57" rx="14" fill="#d9edff"/>
+    <rect x="393" y="112" width="86" height="57" rx="14" fill="#e5dcff"/>
+    <rect x="493" y="112" width="86" height="57" rx="14" fill="#e5dcff"/>
+  </g>
+
+  <text x="104" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d78">Çekirdek</text>
+  <text x="104" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617a91">İş parçacığı</text>
+  <text x="204" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d78">Çekirdek</text>
+  <text x="204" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617a91">İş parçacığı</text>
+
+  <text x="436" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5a4c82">Çekirdek</text>
+  <text x="436" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75699b">İş parçacığı</text>
+  <text x="536" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5a4c82">Çekirdek</text>
+  <text x="536" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75699b">İş parçacığı</text>
+
+  <g filter="url(#soft)">
+    <rect x="68" y="196" width="172" height="48" rx="15" fill="url(#local)" stroke="#94c9aa"/>
+    <rect x="400" y="196" width="172" height="48" rx="15" fill="url(#remote)" stroke="#e2bc77"/>
+  </g>
+  <rect x="82" y="208" width="20" height="22" rx="5" fill="#75b88f"/>
+  <path d="M87 214h10M87 219h10M87 224h10" stroke="#effff5" stroke-width="1.5"/>
+  <text x="155" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35664a">Yerel RAM</text>
+  <text x="155" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b876b">Düşük gecikme</text>
+
+  <rect x="414" y="208" width="20" height="22" rx="5" fill="#d89a3e"/>
+  <path d="M419 214h10M419 219h10M419 224h10" stroke="#fff8e9" stroke-width="1.5"/>
+  <text x="487" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#80561d">Uzak RAM</text>
+  <text x="487" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7440">Yüksek gecikme</text>
+
+  <path d="M104 169 L104 187 L145 187 L145 193" fill="none" stroke="#55a979" stroke-width="2.5"/>
+  <polygon points="140,190 150,190 145,198" fill="#55a979"/>
+  <path d="M204 169 L204 187 L165 187 L165 193" fill="none" stroke="#55a979" stroke-width="2.5"/>
+  <polygon points="160,190 170,190 165,198" fill="#55a979"/>
+
+  <path d="M436 169 L436 187 L477 187 L477 193" fill="none" stroke="#d49332" stroke-width="2.5"/>
+  <polygon points="472,190 482,190 477,198" fill="#d49332"/>
+  <path d="M536 169 L536 187 L497 187 L497 193" fill="none" stroke="#d49332" stroke-width="2.5"/>
+  <polygon points="492,190 502,190 497,198" fill="#d49332"/>
+
+  <path d="M255 177 C288 153 352 153 385 177" fill="none" stroke="#d4884c" stroke-width="3" stroke-dasharray="7 5"/>
+  <polygon points="378,171 389,176 379,182" fill="#d4884c"/>
+  <rect x="263" y="137" width="114" height="28" rx="14" fill="#fff4e8" stroke="#edc48e" filter="url(#soft)"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a3642b">Soketler arası</text>
+
+  <g filter="url(#soft)">
+    <rect x="166" y="278" width="308" height="27" rx="13.5" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <circle cx="184" cy="291.5" r="6" fill="#61af7d"/>
+  <text x="196" y="295.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456274">İlk dokunuş: veri hangi düğümde?</text>
+  <circle cx="435" cy="291.5" r="6" fill="#db9a3b"/>
+  <text x="447" y="295.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456274">Bağlama: aynı düğüm</text>
+</svg>

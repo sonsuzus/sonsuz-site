@@ -12,9 +12,13 @@ tags:
   - senkronizasyon
   - c++
 toc: true
+image: /img/semaphore-ve-mutex-16.png
 ---
 
 Birden fazla thread aynı veriye, dosyaya veya bağlantıya aynı anda ulaşmak istediğinde küçük bir trafik kaosu doğar. Bu kaosu yönetmek için kullanılan en temel araçlardan ikisi **mutex** ve **semaphore**’dur. İkisi de erişimi sınırlar; ancak mutex tek anahtarlı bir oda kapısı gibi davranırken semaphore belirli sayıda araç kabul eden bir otoparka benzer.
+
+![semaphore-ve-mutex-16](/img/semaphore-ve-mutex-16.svg)
+
 ``
 ## Önce problem: Race condition
 

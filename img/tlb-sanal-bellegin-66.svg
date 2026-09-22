@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="tlbGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e4ddff"/>
+      <stop offset="100%" stop-color="#d4cbf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="601" cy="38" r="82" fill="#dceff0" opacity="0.44"/>
+  <circle cx="52" cy="301" r="88" fill="#e5dcfa" opacity="0.34"/>
+
+  <text x="30" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40546a">Sanal bellek çeviri akışı</text>
+  <text x="30" y="45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718297">Hızlı yol: TLB isabeti</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="108" width="126" height="91" rx="18" fill="#dceefa"/>
+    <rect x="40" y="120" width="102" height="26" rx="10" fill="#c7e3f5"/>
+  </g>
+  <text x="91" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#284b65">Sanal adres</text>
+  <rect x="43" y="158" width="45" height="26" rx="8" fill="#f8fcff"/>
+  <rect x="94" y="158" width="45" height="26" rx="8" fill="#f8fcff"/>
+  <text x="65" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456176">Sayfa</text>
+  <text x="116" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456176">Ofset</text>
+
+  <path d="M154 145 H186" fill="none" stroke="#7591a6" stroke-width="2"/>
+  <polygon points="186,145 178,140 178,150" fill="#7591a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="190" y="78" width="174" height="134" rx="21" fill="url(#tlbGrad)"/>
+    <rect x="207" y="94" width="140" height="29" rx="10" fill="#f7f5ff" opacity="0.84"/>
+  </g>
+  <text x="277" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b3e75">TLB önbelleği</text>
+  <line x1="213" y1="137" x2="341" y2="137" stroke="#ad9fd2" stroke-width="1"/>
+  <text x="226" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#564b78">Sanal sayfa</text>
+  <text x="326" y="157" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#564b78">Çerçeve</text>
+  <rect x="215" y="166" width="122" height="28" rx="8" fill="#eeeafd"/>
+  <text x="276" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65588b">Yakın çeviriler</text>
+
+  <path d="M364 113 H419" fill="none" stroke="#5f9c87" stroke-width="2.5"/>
+  <polygon points="419,113 411,108 411,118" fill="#5f9c87"/>
+  <text x="387" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43806d">İsabet</text>
+
+  <g filter="url(#soft)">
+    <rect x="423" y="69" width="185" height="89" rx="18" fill="#d9f0df"/>
+    <rect x="440" y="85" width="151" height="25" rx="9" fill="#f7fff8"/>
+  </g>
+  <text x="516" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35694d">Fiziksel bellek</text>
+  <rect x="444" y="120" width="38" height="22" rx="6" fill="#bde1c9"/>
+  <rect x="488" y="120" width="38" height="22" rx="6" fill="#bde1c9"/>
+  <rect x="532" y="120" width="38" height="22" rx="6" fill="#8fcba4"/>
+  <text x="516" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#537763">Hızlı veri erişimi</text>
+
+  <path d="M277 212 V239 H326" fill="none" stroke="#c58f6a" stroke-width="2"/>
+  <polygon points="326,239 318,234 318,244" fill="#c58f6a"/>
+  <text x="292" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a16d4d">Kaçırma</text>
+
+  <g filter="url(#soft)">
+    <rect x="330" y="209" width="139" height="61" rx="16" fill="#ffe7d8"/>
+  </g>
+  <text x="399" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b573c">Sayfa tablosu</text>
+  <text x="399" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a36e50">Tablo yürüyüşü</text>
+
+  <path d="M469 239 H494" fill="none" stroke="#c58f6a" stroke-width="2"/>
+  <polygon points="494,239 486,234 486,244" fill="#c58f6a"/>
+
+  <g filter="url(#soft)">
+    <rect x="498" y="209" width="111" height="61" rx="16" fill="#ffe9c9"/>
+  </g>
+  <text x="553" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8d6935">Sayfa RAM'de?</text>
+  <text x="553" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a17d49">Gerekirse hata</text>
+
+  <path d="M399 209 V190 H385 V177" fill="none" stroke="#8294c1" stroke-width="2"/>
+  <polygon points="385,177 380,185 390,185" fill="#8294c1"/>
+  <text x="399" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6276a5">TLB'ye ekle</text>
+
+  <path d="M553 209 V188 H516 V158" fill="none" stroke="#c58f6a" stroke-width="2"/>
+  <polygon points="516,158 511,166 521,166" fill="#c58f6a"/>
+
+  <rect x="28" y="274" width="580" height="24" rx="12" fill="#ffffff" opacity="0.68"/>
+  <circle cx="45" cy="286" r="5" fill="#65aa84"/>
+  <text x="58" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526779">TLB: çeviri gecikmesini azaltan küçük ve kritik köprü</text>
+</svg>

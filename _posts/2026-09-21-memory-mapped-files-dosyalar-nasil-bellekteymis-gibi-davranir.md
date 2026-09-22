@@ -12,6 +12,7 @@ tags:
   - performans
   - dosya-girdisi-çıktısı
 toc: true
+image: /img/memory-mapped-files-82.png
 ---
 
 Büyük bir dosyanın içeriğine erişmek için genellikle `read()` çağrıları, tamponlar ve döngüler düşünürüz. Memory-mapped file yaklaşımıysa dosyanın belirli bir bölümünü sürecin sanal adres alanına bağlar. Böylece program, dosyayı gerçekten RAM’e bütünüyle yüklemeden ona sıradan bir bellek dizisiymiş gibi erişebilir. İşin arkasındaki sihir değil; sanal bellek, sayfa tabloları ve işletim sisteminin sayfa önbelleğidir.
@@ -93,3 +94,6 @@ Yazılabilir eşlemede değiştirilen sayfalar **dirty page** olarak işaretleni
 Dosya eşliyken başka bir süreç dosyayı küçültürse artık geçerli olmayan bölgeye erişmek hata veya `SIGBUS` doğurabilir. Ayrıca rastgele erişim çok sayıda page fault üreterek performansı düşürebilir.
 
 Kısacası dosya gerçekten bir RAM dizisine dönüşmez. İşletim sistemi, sanal adresleri dosya destekli sayfalarla ilişkilendirir ve yalnızca ihtiyaç duyulan parçaları belleğe getirir. Programın gördüğü sade bir işaretçi, perde arkasında ise MMU, sayfa önbelleği ve dosya sistemi birlikte çalışan kalabalık bir ekip vardır.
+
+![memory-mapped-files-82](/img/memory-mapped-files-82.svg)
+

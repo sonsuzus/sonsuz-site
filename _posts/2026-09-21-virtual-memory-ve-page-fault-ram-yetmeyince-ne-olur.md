@@ -12,7 +12,11 @@ tags:
   - bellek yönetimi
   - paging
 toc: true
+image: /img/virtual-memory-ve-80.png
 ---
+
+![virtual-memory-ve-80](/img/virtual-memory-ve-80.svg)
+
 
 Bir programın onlarca gigabayt bellek kullanıyormuş gibi davranabilmesi, bilgisayarınızda gerçekten o kadar RAM bulunduğu anlamına gelmez. İşletim sistemi, **virtual memory (sanal bellek)** adı verilen bir illüzyon kurar: Her süreç kendisine ait, düzenli ve geniş bir adres alanı görür. RAM yetersiz kaldığında ise disk, sayfa tabloları ve page fault mekanizması sahneye çıkar.
 

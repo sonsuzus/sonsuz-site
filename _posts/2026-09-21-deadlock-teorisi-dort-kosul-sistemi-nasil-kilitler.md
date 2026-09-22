@@ -11,6 +11,7 @@ tags:
   - kaynak yönetimi
   - programlama
 toc: true
+image: /img/deadlock-teorisi-dort-55.png
 ---
 
 Bir restoranda iki aşçı düşünün: Birinin tava, diğerinin bıçak tuttuğunu; fakat ikisinin de yemeği tamamlamak için diğer araç gerece ihtiyaç duyduğunu hayal edin. Kimse elindekini bırakmazsa mutfak sonsuza kadar bekler. İşletim sistemlerinde bu tatsız tabloya **deadlock**, yani kilitlenme denir.
@@ -33,6 +34,9 @@ Ancak deadlock yalnızca “iki program aynı anda bir şey istedi” diye oluş
 | Elde tut ve bekle | Süreç, elindeki kaynağı bırakmadan yenisini bekler. | Tava elindeyken bıçak beklemek |
 | Zorla geri alamama | Kaynak süreçten zorla alınamaz. | Aşçının tavasına el koyamamak |
 | Döngüsel bekleme | Her süreç, zincirdeki sonraki sürecin kaynağını bekler. | A, B’yi; B, C’yi; C, A’yı bekler |
+
+![deadlock-teorisi-dort-55](/img/deadlock-teorisi-dort-55.svg)
+
 
 Bu koşulları mantıksal olarak $M$, $H$, $N$ ve $C$ ile gösterirsek gerekli durum şöyledir:
 

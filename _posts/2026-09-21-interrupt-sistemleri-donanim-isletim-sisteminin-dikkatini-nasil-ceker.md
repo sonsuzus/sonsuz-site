@@ -12,7 +12,11 @@ tags:
   - cpu
   - çekirdek
 toc: true
+image: /img/interrupt-sistemleri-donanim-62.png
 ---
+
+![interrupt-sistemleri-donanim-62](/img/interrupt-sistemleri-donanim-62.svg)
+
 
 Bilgisayarınızın işlemcisi milyonlarca komutu yürütürken klavyede bir tuşa bastığınızı nasıl fark eder? İşlemcinin sürekli “Klavye hazır mı, ağdan veri geldi mi?” diye sorması mümkün olsa da oldukça verimsizdir. Interrupt, yani kesme sistemi, donanımın işlemciye nazikçe değil, adeta omzuna dokunarak “Önemli bir olay oldu!” demesini sağlar.
 

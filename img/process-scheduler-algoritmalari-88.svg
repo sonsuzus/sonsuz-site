@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7877d9"/>
+      <stop offset="100%" stop-color="#5aa9d6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55708a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="58" cy="42" r="76" fill="#cfe9f4" opacity="0.34"/>
+  <circle cx="591" cy="285" r="93" fill="#dcefc8" opacity="0.38"/>
+  <circle cx="562" cy="48" r="42" fill="#ebe0fb" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40546a">CPU Zamanı Paylaşımı</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718396">hazır işler → seçme → denge</text>
+
+  <!-- Left process states -->
+  <rect x="28" y="78" width="150" height="177" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="47" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f566d">İşlem Durumları</text>
+
+  <rect x="46" y="120" width="110" height="27" rx="10" fill="#dff1e2"/>
+  <circle cx="61" cy="133.5" r="5" fill="#6ab37e"/>
+  <text x="74" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345847">Hazır</text>
+
+  <path d="M101 148 L101 157" stroke="#8ba5b6" stroke-width="2"/>
+  <polygon points="96,155 106,155 101,161" fill="#8ba5b6"/>
+
+  <rect x="46" y="163" width="110" height="27" rx="10" fill="#dcecff"/>
+  <circle cx="61" cy="176.5" r="5" fill="#5d94d5"/>
+  <text x="74" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385c87">Çalışıyor</text>
+
+  <path d="M101 191 L101 200" stroke="#8ba5b6" stroke-width="2"/>
+  <polygon points="96,198 106,198 101,204" fill="#8ba5b6"/>
+
+  <rect x="46" y="206" width="110" height="27" rx="10" fill="#f5e7cf"/>
+  <circle cx="61" cy="219.5" r="5" fill="#d39a45"/>
+  <text x="74" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#785730">Bekliyor</text>
+
+  <!-- Queue to center -->
+  <path d="M179 166 C194 166 196 166 210 166" fill="none" stroke="#6c91a5" stroke-width="2.5"/>
+  <polygon points="207,160 218,166 207,172" fill="#6c91a5"/>
+  <text x="182" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b8d">Hazır kuyruğu</text>
+
+  <!-- Center scheduler -->
+  <rect x="220" y="104" width="190" height="125" rx="24" fill="url(#core)" filter="url(#shadow)"/>
+  <circle cx="315" cy="143" r="21" fill="#ffffff" opacity="0.2"/>
+  <path d="M305 143 L312 150 L327 134" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="267" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Zamanlayıcı</text>
+  <text x="246" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf6ff">Kim, ne zaman, ne kadar?</text>
+
+  <!-- algorithms top -->
+  <path d="M315 103 L315 80" fill="none" stroke="#7e91b0" stroke-width="2"/>
+  <polygon points="309,84 321,84 315,76" fill="#7e91b0"/>
+  <rect x="213" y="55" width="204" height="23" rx="11" fill="#ffffff" filter="url(#soft)"/>
+  <text x="233" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53697c">FCFS · SJF · Öncelik · RR · MLFQ</text>
+
+  <!-- context switch -->
+  <path d="M411 166 C425 166 428 166 441 166" fill="none" stroke="#6c91a5" stroke-width="2.5"/>
+  <polygon points="438,160 449,166 438,172" fill="#6c91a5"/>
+  <rect x="421" y="135" width="101" height="24" rx="10" fill="#f1e8fb" filter="url(#soft)"/>
+  <text x="435" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#674e83">Bağlam geçişi</text>
+
+  <!-- CPU -->
+  <rect x="453" y="166" width="157" height="63" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="471" y="181" width="36" height="33" rx="9" fill="#d8eef3"/>
+  <path d="M479 190 H499 M479 198 H499 M484 185 V209 M494 185 V209" stroke="#5795a7" stroke-width="1.5"/>
+  <text x="521" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425c70">CPU</text>
+  <text x="521" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718395">Zaman dilimi</text>
+
+  <!-- metrics bottom -->
+  <path d="M315 230 L315 247" fill="none" stroke="#7e91b0" stroke-width="2"/>
+  <polygon points="309,244 321,244 315,251" fill="#7e91b0"/>
+  <rect x="176" y="253" width="278" height="46" rx="17" fill="#ffffff" filter="url(#soft)"/>
+  <text x="198" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526a7e">Denge Ölçütleri</text>
+  <text x="198" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718496">Adalet · Tepki · Verim · Bekleme</text>
+
+  <!-- right performance indicator -->
+  <rect x="473" y="251" width="137" height="48" rx="16" fill="#e5f3df" filter="url(#soft)"/>
+  <text x="490" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496b48">Akıllı seçim</text>
+  <text x="490" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#648263">Sistem hedefi</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="shared" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9eafd"/>
+      <stop offset="100%" stop-color="#bfdcf5"/>
+    </linearGradient>
+    <linearGradient id="copy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9e2cf"/>
+      <stop offset="100%" stop-color="#f4cba9"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f0dd"/>
+      <stop offset="100%" stop-color="#bde1c5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e8798" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6e8798" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="55" cy="51" r="76" fill="#dceef5" opacity="0.48"/>
+  <circle cx="593" cy="280" r="92" fill="#dcefdc" opacity="0.46"/>
+  <path d="M43 266 C145 235 184 288 274 256 S430 226 601 249" fill="none" stroke="#c7dde5" stroke-width="2" opacity="0.45"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546a">COPY-ON-WRITE</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668091">Önce paylaş, yazarken ayır</text>
+
+  <g filter="url(#shadow)">
+    <rect x="38" y="91" width="142" height="140" rx="20" fill="#ffffff"/>
+  </g>
+  <rect x="55" y="111" width="108" height="35" rx="11" fill="#e9f4fb"/>
+  <circle cx="72" cy="128" r="7" fill="#78add1"/>
+  <text x="85" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#35566e">Nesne A</text>
+  <rect x="55" y="161" width="108" height="35" rx="11" fill="#eef7f0"/>
+  <circle cx="72" cy="178" r="7" fill="#78b68b"/>
+  <text x="85" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#35566e">Nesne B</text>
+  <text x="109" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718797">İki referans</text>
+
+  <path d="M180 128 H229" fill="none" stroke="#7ea9c4" stroke-width="2.5"/>
+  <polygon points="229,128 220,123 220,133" fill="#7ea9c4"/>
+  <path d="M180 178 H229" fill="none" stroke="#7ea9c4" stroke-width="2.5"/>
+  <polygon points="229,178 220,173 220,183" fill="#7ea9c4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="239" y="76" width="164" height="170" rx="22" fill="url(#shared)"/>
+  </g>
+  <rect x="257" y="96" width="128" height="26" rx="9" fill="#ffffff" opacity="0.58"/>
+  <text x="321" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315773">Paylaşılan veri</text>
+  <rect x="264" y="139" width="114" height="14" rx="5" fill="#8bb9d8" opacity="0.68"/>
+  <rect x="264" y="160" width="88" height="14" rx="5" fill="#8bb9d8" opacity="0.52"/>
+  <rect x="264" y="181" width="103" height="14" rx="5" fill="#8bb9d8" opacity="0.40"/>
+  <rect x="270" y="209" width="102" height="22" rx="10" fill="#ffffff" opacity="0.70"/>
+  <text x="321" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46728d">Referans: 2</text>
+
+  <path d="M403 151 H442 V101 H466" fill="none" stroke="#78a8c4" stroke-width="2.5"/>
+  <polygon points="466,101 457,96 457,106" fill="#78a8c4"/>
+  <path d="M403 174 H430 V228 H466" fill="none" stroke="#d59669" stroke-width="2.5"/>
+  <polygon points="466,228 457,223 457,233" fill="#d59669"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="453" y="68" width="144" height="66" rx="17" fill="#ffffff"/>
+  </g>
+  <circle cx="476" cy="101" r="13" fill="url(#safe)"/>
+  <path d="M470 101 L474 105 L482 96" fill="none" stroke="#3d8355" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="500" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6175">Salt okuma</text>
+  <text x="500" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698393">Kopya yok</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="453" y="192" width="144" height="83" rx="17" fill="#ffffff"/>
+  </g>
+  <circle cx="476" cy="226" r="13" fill="url(#copy)"/>
+  <path d="M471 231 L481 221 M476 220 H481 V225" fill="none" stroke="#a8643e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="500" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c593c">Yazma isteği</text>
+  <text x="500" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c705f">Özel kopya oluştur</text>
+  <rect x="500" y="248" width="72" height="14" rx="6" fill="#f8dfc9"/>
+  <text x="536" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a6643d">O(n)</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="207" y="269" width="221" height="31" rx="14" fill="#ffffff" opacity="0.95"/>
+  </g>
+  <circle cx="227" cy="284" r="7" fill="#8dbbd9"/>
+  <text x="242" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506d80">İlk kopya: yalnızca referans</text>
+  <text x="404" y="288" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47738e">O(1)</text>
+</svg>

@@ -12,6 +12,7 @@ tags:
   - işlemci mimarisi
   - performans
 toc: true
+image: /img/tlb-sanal-bellegin-66.png
 ---
 
 Bir program bellekteki bir değişkene eriştiğinde işlemci çoğunlukla fiziksel adresi doğrudan kullanmaz. Önce sanal adresin fiziksel bellekte nereye karşılık geldiğini bulması gerekir. Bu çeviri her erişimde baştan yapılsaydı, ışık hızında çalışan işlemcimiz adres defterini karıştıran dalgın bir postacıya dönüşürdü. **Translation Lookaside Buffer**, yani TLB, yakın zamanda kullanılan adres çevirilerini saklayarak bu sorunu çözen küçük fakat kritik bir önbellektir.
@@ -83,3 +84,6 @@ TLB’nin işe yaramasının temelinde **yerellik ilkesi** bulunur. Programlar y
 Buna karşılık çok büyük ve dağınık veri yapılarında TLB girdileri sık sık birbirini dışarı atabilir. Bu durum **TLB thrashing** olarak anılır. Daha büyük sayfalar kullanmak daha geniş bir alanı tek girdide kapsayabilir; ancak bellek israfı ve yönetim maliyeti oluşturabilir.
 
 Kısacası TLB, sanal belleği mümkün kılan sayfa tabloları ile işlemcinin hız beklentisi arasındaki köprüdür. Küçük görünür, fakat o olmasaydı hemen her bellek erişimi pahalı bir adres çevirisi turuna çıkardı.
+
+![tlb-sanal-bellegin-66](/img/tlb-sanal-bellegin-66.svg)
+

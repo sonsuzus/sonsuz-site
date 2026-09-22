@@ -12,6 +12,7 @@ tags:
   - mutex
   - senkronizasyon
 toc: true
+image: /img/condition-variable-threadler-52.png
 ---
 
 Bir thread’in sürekli “Hazır mı? Hazır mı? Şimdi hazır mı?” diye kontrol yapması, işlemciyi gereksiz yere meşgul eden dijital bir sabırsızlıktır. **Condition variable**, thread’lerin belirli bir koşul gerçekleşene kadar verimli biçimde uyumasını ve koşul değiştiğinde yeniden çalışmasını sağlayan bir senkronizasyon aracıdır.
@@ -47,6 +48,9 @@ Uzun veya belirsiz bekleme sürelerinde ikinci yaklaşım genellikle çok daha v
 | Busy waiting | Yüksek | Çok düşük olabilir | Çok kısa beklemeler |
 | Condition variable | Düşük | Zamanlayıcıya bağlı | Kuyruklar ve iş parçacığı havuzları |
 | Sabit süre uyuma | Düşük | Gereksiz gecikmeli | Basit ama hassas olmayan işler |
+
+![condition-variable-threadler-52](/img/condition-variable-threadler-52.svg)
+
 
 ## Üçlü ekip: Durum, mutex ve condition variable
 

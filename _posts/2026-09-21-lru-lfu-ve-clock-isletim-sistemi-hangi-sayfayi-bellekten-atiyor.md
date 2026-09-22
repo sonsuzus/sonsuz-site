@@ -12,6 +12,7 @@ tags:
   - lfu
   - clock
 toc: true
+image: /img/lru-lfu-ve-95.png
 ---
 
 Bir program çalışırken ihtiyaç duyduğu bütün sayfalar fiziksel belleğe sığmayabilir. İşletim sistemi bu durumda disk ile RAM arasında küçük bir sandalye kapmaca oyunu oynar: Yeni sayfa gelecek, fakat boş çerçeve yoksa içerideki sayfalardan biri çıkarılmalıdır. Peki kurban kim olacak? LRU, LFU ve CLOCK algoritmaları aynı soruya farklı ipuçlarıyla cevap verir.
@@ -72,6 +73,9 @@ Kod, gerçek çekirdek uygulamalarındaki kilitleri ve kirli sayfa kontrollerini
 | LRU | Son erişim zamanı | Yerellik davranışını iyi yakalar | Kesin takibi pahalıdır |
 | LFU | Erişim sayısı | Sürekli popüler sayfaları korur | Eski popülerliği unutamaz |
 | CLOCK | Referans biti | Basit, hızlı ve uygulanabilirdir | Kesin LRU sonucu vermez |
+
+![lru-lfu-ve-95](/img/lru-lfu-ve-95.svg)
+
 
 ## İşletim sistemi gerçekte hangisini seçer?
 

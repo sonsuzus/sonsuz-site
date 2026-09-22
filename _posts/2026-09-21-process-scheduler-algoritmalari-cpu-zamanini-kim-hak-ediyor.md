@@ -12,9 +12,13 @@ tags:
   - round robin
   - performans
 toc: true
+image: /img/process-scheduler-algoritmalari-88.png
 ---
 
 Bilgisayarınızda müzik çalarken kod derleyebiliyor, tarayıcıda sekmeler arasında dolaşabiliyor ve arka planda dosya indirebiliyorsanız bunu CPU’nun gizli trafik polisi olan **process scheduler**’a borçlusunuz. İşlemci aynı anda sınırlı sayıda işi yürütebildiği için scheduler, hazır durumdaki process’lerden hangisinin ne zaman ve ne kadar süre çalışacağını belirler. Kısacası soru şudur: CPU zamanını kim hak ediyor?
+
+
+![process-scheduler-algoritmalari-88](/img/process-scheduler-algoritmalari-88.svg)
 
 ``
 

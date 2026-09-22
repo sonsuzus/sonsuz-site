@@ -12,9 +12,13 @@ tags:
   - gömülü sistemler
   - veri aktarımı
 toc: true
+image: /img/dma-islemcinin-uzerinden-35.png
 ---
 
 Bir diskten belleğe megabaytlarca veri aktarırken işlemcinin her baytı tek tek taşıdığını düşünün. Bu, kargo şirketinin yöneticisinin kamyonu bırakıp bütün kutuları kendisinin taşımasına benzerdi. **Direct Memory Access (DMA)**, veri aktarımını özel bir denetleyiciye devrederek işlemciyi asıl işi olan komut yürütme için serbest bırakır. Ancak işlemci tamamen devre dışı kalmaz; aktarımı başlatır, sonucunu takip eder ve gerektiğinde hatalarla ilgilenir.
+
+![dma-islemcinin-uzerinden-35](/img/dma-islemcinin-uzerinden-35.svg)
+
 ``
 
 ## DMA neden gereklidir?

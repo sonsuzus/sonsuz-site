@@ -12,6 +12,7 @@ tags:
   - sayfalama
   - tlb
 toc: true
+image: /img/mmu-ve-sanal-85.png
 ---
 
 Bir program bellekteki `0x7FFF1234` adresine eriştiğinde CPU doğrudan RAM’in o noktasına koşmaz. Çünkü programın gördüğü adres, çoğunlukla fiziksel bir konum değil, işletim sistemi tarafından oluşturulmuş sanal bir adrestir. CPU içindeki **Bellek Yönetim Birimi (MMU)** bu adresi tercüme ederek gerçek RAM konumunu bulur. Kısacası MMU, belleğin simultane tercümanıdır; üstelik yanlış çeviri yaparsa program değil, bütün sistem homurdanabilir.
@@ -29,6 +30,9 @@ Her sürecin kendisine ait bağımsız bir adres alanı varmış gibi çalışma
 | Doğrudan RAM konumu mu? | Hayır | Evet |
 | Koruma sağlar mı? | Sayfa izinleriyle sağlar | Tek başına sağlamaz |
 | Diskle ilişkilendirilebilir mi? | Evet | Genellikle hayır |
+
+![mmu-ve-sanal-85](/img/mmu-ve-sanal-85.svg)
+
 
 Sanal bellek, sabit boyutlu **sayfalara** ayrılır. Fiziksel bellek tarafındaki eş boyutlu parçalara ise **sayfa çerçevesi** denir. Yaygın bir sayfa boyutu 4 KiB’dir:
 

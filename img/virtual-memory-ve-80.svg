@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="ram" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9efff"/>
+      <stop offset="1" stop-color="#bfe0f5"/>
+    </linearGradient>
+    <linearGradient id="disk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fce8c7"/>
+      <stop offset="1" stop-color="#f5d29f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#75899a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#75899a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="63" cy="41" r="74" fill="#dcefff" opacity="0.48"/>
+  <circle cx="578" cy="275" r="92" fill="#dcefdc" opacity="0.42"/>
+
+  <text x="30" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476275">Sanal Bellek ve Sayfa Hatası</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="89" width="112" height="126" rx="18" fill="#e7ddfa"/>
+  </g>
+  <text x="84" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#554675">Uygulama</text>
+  <rect x="47" y="131" width="74" height="57" rx="10" fill="#faf8ff" opacity="0.9"/>
+  <text x="84" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554675">Sanal</text>
+  <text x="84" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554675">adres</text>
+  <circle cx="58" cy="201" r="4" fill="#aa8fe0"/>
+  <circle cx="72" cy="201" r="4" fill="#c2a9eb"/>
+  <circle cx="86" cy="201" r="4" fill="#aa8fe0"/>
+  <circle cx="100" cy="201" r="4" fill="#c2a9eb"/>
+  <circle cx="114" cy="201" r="4" fill="#aa8fe0"/>
+
+  <path d="M140 152 H168" fill="none" stroke="#71899a" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="168,152 160,147 160,157" fill="#71899a"/>
+
+  <g filter="url(#shadow)">
+    <rect x="174" y="85" width="126" height="134" rx="18" fill="#d9f0e8"/>
+  </g>
+  <text x="237" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326959">MMU</text>
+  <text x="237" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d776a">Adres çevirisi</text>
+  <rect x="194" y="143" width="86" height="24" rx="8" fill="#f7fffb"/>
+  <text x="237" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d776a">TLB önbelleği</text>
+  <rect x="194" y="177" width="86" height="24" rx="8" fill="#f7fffb"/>
+  <text x="237" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d776a">Sayfa tablosu</text>
+
+  <path d="M300 152 H327" fill="none" stroke="#71899a" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="327,152 319,147 319,157" fill="#71899a"/>
+
+  <g filter="url(#shadow)">
+    <rect x="333" y="62" width="137" height="176" rx="20" fill="url(#ram)"/>
+  </g>
+  <text x="401" y="89" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#295d78">Fiziksel RAM</text>
+  <text x="401" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47768d">Çerçeveler</text>
+  <g filter="url(#smallShadow)">
+    <rect x="353" y="121" width="36" height="36" rx="8" fill="#f7fdff"/>
+    <rect x="395" y="121" width="36" height="36" rx="8" fill="#b6daf0"/>
+    <rect x="353" y="163" width="36" height="36" rx="8" fill="#b6daf0"/>
+    <rect x="395" y="163" width="36" height="36" rx="8" fill="#f7fdff"/>
+  </g>
+  <text x="371" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7185">1</text>
+  <text x="413" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7185">2</text>
+  <text x="371" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7185">3</text>
+  <text x="413" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7185">4</text>
+  <text x="401" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47768d">Sayfa RAM'de mi?</text>
+
+  <path d="M470 121 C490 121 492 104 509 104" fill="none" stroke="#64a887" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="509,104 501,99 501,109" fill="#64a887"/>
+  <rect x="499" y="80" width="110" height="47" rx="14" fill="#dff2df" filter="url(#smallShadow)"/>
+  <circle cx="519" cy="103" r="9" fill="#82bd91"/>
+  <path d="M515 103 L518 106 L524 99" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="559" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39714a">Evet: devam</text>
+
+  <path d="M470 180 C487 180 489 198 509 198" fill="none" stroke="#d18862" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="509,198 501,193 501,203" fill="#d18862"/>
+  <rect x="499" y="169" width="110" height="58" rx="14" fill="#ffe2d4" filter="url(#smallShadow)"/>
+  <circle cx="520" cy="192" r="10" fill="#e69a75"/>
+  <path d="M520 186 V194 M520 198 V199" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="560" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a5036">Hayır: Sayfa</text>
+  <text x="560" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a5036">hatası</text>
+
+  <path d="M554 227 V252" fill="none" stroke="#d18862" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="554,252 549,244 559,244" fill="#d18862"/>
+
+  <g filter="url(#shadow)">
+    <rect x="448" y="257" width="164" height="48" rx="16" fill="url(#disk)"/>
+  </g>
+  <ellipse cx="476" cy="271" rx="16" ry="5" fill="#d9a65e"/>
+  <path d="M460 271 V286 C460 289 467 292 476 292 C485 292 492 289 492 286 V271" fill="#e6b873"/>
+  <ellipse cx="476" cy="286" rx="16" ry="5" fill="#eec685"/>
+  <text x="551" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#855b27">Disk ve Takas</text>
+  <text x="551" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7040">Sayfayı yükle</text>
+
+  <path d="M448 280 C407 280 409 254 401 246" fill="none" stroke="#d18862" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="401,246 398,255 408,252" fill="#d18862"/>
+
+  <text x="29" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7f8c">RAM doluysa: kurban sayfa çıkarılır</text>
+</svg>

@@ -12,6 +12,7 @@ tags:
   - c
   - veri-yapıları
 toc: true
+image: /img/copy-on-write-82.png
 ---
 
 Bir nesnenin kopyasını çıkarmak çoğu zaman masum görünür: bellekte yeni bir alan ayır, verileri taşı ve devam et. Ancak yüzlerce megabaytlık verilerle çalışıyorsak bu işlem hem zaman hem bellek tüketir. Copy-on-Write, kısaca **CoW**, “Gerçekten değiştirmeyeceksen neden kopyalıyorsun?” diyerek iki kopyanın aynı belleği geçici olarak paylaşmasını sağlar.
@@ -83,3 +84,6 @@ Süreçlerden biri yazmaya çalıştığında işlemci bir **page fault** üreti
 CoW; büyük metinler, resimler, koleksiyonlar ve sık kopyalanıp nadiren değiştirilen değerler için idealdir. Buna karşılık her kopyanın hemen değiştirildiği senaryolarda yalnızca maliyeti erteleyip ek kontrol yükü oluşturabilir. Çok iş parçacıklı uygulamalarda referans sayacı ve yazma anı yarış koşullarına karşı korunmalıdır.
 
 Özetle Copy-on-Write, “önce paylaş, gerekirse ayır” ilkesidir. Kopyaların çoğu hiç değiştirilmezse ciddi performans ve bellek kazancı sağlar. Değişiklik geldiğinde ise illüzyon bozulur, özel kopya oluşturulur ve herkes kendi verisiyle yoluna devam eder.
+
+![copy-on-write-82](/img/copy-on-write-82.svg)
+
