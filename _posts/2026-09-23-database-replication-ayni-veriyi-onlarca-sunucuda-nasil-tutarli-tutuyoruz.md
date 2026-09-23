@@ -12,7 +12,11 @@ tags:
   - sql
   - consensus
 toc: true
+image: /img/database-replication-ayni-39.png
 ---
+
+![database-replication-ayni-39](/img/database-replication-ayni-39.svg)
+
 
 Bir kullanıcı profil fotoğrafını değiştirdiğinde bu değişikliğin İstanbul, Frankfurt ve Singapur’daki sunuculara ulaşması gerekir. Üstelik sunuculardan biri uyuklarken, ağ bağlantısı naz yaparken ve binlerce yeni işlem gelirken! Database replication, aynı verinin birden fazla sunucuda kopyalanmasını sağlayarak performans, erişilebilirlik ve felaket kurtarma avantajı sunar. Ancak kopyalamak kolay, bütün kopyaları tutarlı tutmak zordur.
 ``

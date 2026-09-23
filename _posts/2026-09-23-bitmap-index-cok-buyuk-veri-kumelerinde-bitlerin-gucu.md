@@ -12,7 +12,11 @@ tags:
   - performans
   - bit işlemleri
 toc: true
+image: /img/bitmap-index-cok-78.png
 ---
+
+![bitmap-index-cok-78](/img/bitmap-index-cok-78.svg)
+
 
 Milyarlarca satırlık bir tabloda belirli koşullara uyan kayıtları saniyeler yerine milisaniyeler içinde bulmak kulağa sihir gibi gelebilir. Bitmap index, bu numarayı her değer için bitlerden oluşan kompakt haritalar tutarak gerçekleştirir. Özellikle az sayıda farklı değer içeren sütunlarda, işlemcilerin son derece hızlı bit işlemlerinden yararlanır.
 

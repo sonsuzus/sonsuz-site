@@ -12,9 +12,13 @@ tags:
   - python
   - performans
 toc: true
+image: /img/bloom-filter-bir-14.png
 ---
 
 Bir kullanıcı adının daha önce alınıp alınmadığını, bir URL’nin taranıp taranmadığını veya önbellekte belirli bir anahtarın bulunup bulunmadığını kontrol ettiğinizi düşünün. Milyarlarca kayıt arasında sürekli arama yapmak pahalıdır. Bloom Filter burada ilginç bir pazarlık önerir: Çok az bellek kullanır, bir elemanın **kesinlikle bulunmadığını** söyler; fakat bazen bulunmayan bir elemana “belki var” diyebilir.
+
+
+![bloom-filter-bir-14](/img/bloom-filter-bir-14.svg)
 
 ``
 

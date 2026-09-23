@@ -12,9 +12,13 @@ tags:
   - postgresql
   - sistem-tasarımı
 toc: true
+image: /img/read-replica-mimarisi-69.png
 ---
 
 Bir uygulama büyüdükçe veritabanındaki iş yükü de büyür. Ürün listeleme, profil görüntüleme ve raporlama gibi okuma işlemleri çoğalırken sipariş oluşturma gibi yazma işlemleri genellikle daha düşük oranda kalır. Tek veritabanını daha güçlü bir sunucuya taşımak bir süre işe yarasa da sonsuza kadar RAM ekleyemeyiz. Read replica mimarisi, okuma trafiğini birden fazla veritabanı kopyasına dağıtarak bu darboğazı aşmayı hedefler.
+
+
+![read-replica-mimarisi-69](/img/read-replica-mimarisi-69.svg)
 
 ``
 

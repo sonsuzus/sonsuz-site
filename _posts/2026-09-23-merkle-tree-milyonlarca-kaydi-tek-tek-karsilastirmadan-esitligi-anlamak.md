@@ -12,6 +12,7 @@ tags:
   - dağıtık-sistemler
   - python
 toc: true
+image: /img/merkle-tree-milyonlarca-73.png
 ---
 
 Elinizde milyonlarca dosya veya kayıt içeren iki veri kümesi olduğunu düşünün. Bunların aynı olup olmadığını anlamak için her kaydı tek tek karşılaştırmak mümkündür; fakat pek zarif değildir. Merkle Tree, verileri kriptografik özetlerden oluşan bir ağaca dönüştürerek bu işi çok daha verimli yapar. Kök özetler aynıysa veri kümeleri büyük olasılıkla aynıdır; farklıysa ağacın dallarını izleyerek uyuşmazlığın yerini bulabilirsiniz.
@@ -90,3 +91,6 @@ print(merkle_root(set_b))
 Merkle Root eşitliği matematiksel olarak verilerin kesinlikle aynı olduğunu kanıtlamaz; teorik olarak hash çakışması mümkündür. Bununla birlikte SHA-256 için rastgele çakışma olasılığı yaklaşık $1/2^{256}$ olduğundan pratikte ihmal edilir.
 
 Ayrıca kayıt sırası, karakter kodlaması ve serileştirme biçimi standartlaştırılmalıdır. `42`, `"42"` ve boşluk içeren `"42 "` farklı bayt dizileridir. Kısacası Merkle Tree karşılaştırmayı hızlandırır, fakat önce “aynı veri” tanımında anlaşmak gerekir. Doğru normalizasyonla birlikte kullanıldığında ise milyonluk veri kümelerinin dedektifliğini birkaç hash’e indiren son derece güçlü bir araçtır.
+
+![merkle-tree-milyonlarca-73](/img/merkle-tree-milyonlarca-73.svg)
+

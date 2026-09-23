@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8f0"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c6dcf7"/>
+    </linearGradient>
+    <linearGradient id="replicaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4f5e6"/>
+      <stop offset="100%" stop-color="#cce9d3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a2" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a2" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="73" cy="45" r="70" fill="#dceefa" opacity="0.42"/>
+  <circle cx="583" cy="276" r="95" fill="#dbf1df" opacity="0.46"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">Veritabanı Çoğaltma</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8291">Sıralı günlük ile tutarlı kopyalar</text>
+
+  <!-- Client -->
+  <g filter="url(#softShadow)">
+    <rect x="27" y="120" width="103" height="78" rx="18" fill="#fffdf8"/>
+    <rect x="39" y="135" width="79" height="12" rx="6" fill="#f9dba5"/>
+    <rect x="39" y="156" width="55" height="7" rx="3.5" fill="#d9e5ed"/>
+    <rect x="39" y="170" width="68" height="7" rx="3.5" fill="#d9e5ed"/>
+    <circle cx="106" cy="174" r="9" fill="#82c99a"/>
+  </g>
+  <text x="50" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#466274">Uygulama</text>
+
+  <!-- Client to primary -->
+  <path d="M130 152 H164" fill="none" stroke="#7190a4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="164,152 155,147 155,157" fill="#7190a4"/>
+  <text x="132" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587486">Yazma</text>
+
+  <!-- Primary -->
+  <g filter="url(#shadow)">
+    <rect x="168" y="90" width="145" height="136" rx="22" fill="url(#primaryGrad)"/>
+    <rect x="185" y="108" width="111" height="24" rx="9" fill="#ffffff" opacity="0.72"/>
+    <circle cx="200" cy="120" r="6" fill="#5596ce"/>
+    <text x="212" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345978">Primary</text>
+    <rect x="185" y="145" width="111" height="48" rx="11" fill="#729fcb" opacity="0.92"/>
+    <path d="M197 157 H215 M197 168 H269 M197 179 H251" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+    <text x="199" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e6684">WAL · LSN 1042</text>
+  </g>
+
+  <!-- Distribution hub -->
+  <circle cx="368" cy="158" r="31" fill="#fffdf8" filter="url(#softShadow)"/>
+  <circle cx="368" cy="158" r="20" fill="#e5f2fb"/>
+  <path d="M359 158 H377 M368 149 V167" stroke="#5c91b7" stroke-width="3" stroke-linecap="round"/>
+  <text x="336" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4e6f82">Sıralı akış</text>
+
+  <!-- primary to hub -->
+  <path d="M313 158 H335" fill="none" stroke="#5f8fb1" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="335,158 326,153 326,163" fill="#5f8fb1"/>
+  <text x="316" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52738a">WAL</text>
+
+  <!-- connections -->
+  <path d="M393 145 C420 119 433 96 463 84" fill="none" stroke="#79a99a" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="463,84 454,83 458,92" fill="#79a99a"/>
+  <path d="M399 158 H463" fill="none" stroke="#79a99a" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="463,158 454,153 454,163" fill="#79a99a"/>
+  <path d="M393 171 C421 198 435 219 463 232" fill="none" stroke="#79a99a" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="463,232 458,224 454,233" fill="#79a99a"/>
+
+  <!-- replicas -->
+  <g filter="url(#softShadow)">
+    <rect x="466" y="52" width="143" height="64" rx="17" fill="url(#replicaGrad)"/>
+    <circle cx="488" cy="76" r="11" fill="#74b88a"/>
+    <path d="M482 76 H494 M488 70 V82" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="508" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38604d">Replica</text>
+    <text x="508" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547364">İstanbul · 1042</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="466" y="128" width="143" height="64" rx="17" fill="url(#replicaGrad)"/>
+    <circle cx="488" cy="152" r="11" fill="#74b88a"/>
+    <path d="M482 152 H494 M488 146 V158" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="508" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38604d">Replica</text>
+    <text x="508" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547364">Frankfurt · 1042</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="466" y="204" width="143" height="64" rx="17" fill="#f8efd8"/>
+    <circle cx="488" cy="228" r="11" fill="#e6ae5e"/>
+    <path d="M482 228 H494" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="508" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76562b">Replica</text>
+    <text x="508" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81693f">Singapur · 1039</text>
+  </g>
+
+  <!-- status legend -->
+  <g filter="url(#softShadow)">
+    <rect x="26" y="253" width="388" height="43" rx="15" fill="#ffffff" opacity="0.88"/>
+    <circle cx="47" cy="274" r="7" fill="#72b98a"/>
+    <text x="60" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466274">Senkron: onay beklenir</text>
+    <path d="M193 274 H213" stroke="#7395aa" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="213,274 205,269 205,279" fill="#7395aa"/>
+    <circle cx="235" cy="274" r="7" fill="#e7ad5a"/>
+    <text x="248" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466274">Gecikme: LSN farkı</text>
+  </g>
+
+  <!-- quorum badge -->
+  <g filter="url(#softShadow)">
+    <rect x="430" y="278" width="179" height="27" rx="13.5" fill="#e5ddf6"/>
+    <circle cx="448" cy="291.5" r="5" fill="#876fbe"/>
+    <text x="460" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#584778">Quorum: 3 / 5 onay</text>
+  </g>
+</svg>
