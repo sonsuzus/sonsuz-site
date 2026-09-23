@@ -12,6 +12,7 @@ tags:
   - elektronik
   - gömülü sistemler
 toc: true
+image: /img/pwm-ile-motor-40.png
 ---
 
 Bir mikrodenetleyicinin yalnızca HIGH ve LOW üretebildiğini düşünürsek, bir LED’i nasıl yarı parlak yakabilir veya motoru yarı hızda döndürebiliriz? Cevap, elektroniğin hızlı aç-kapa illüzyonu olan PWM tekniğidir. PWM sayesinde dijital bir çıkış, analog çıkışa benzer bir davranış sergiler.
@@ -40,6 +41,9 @@ Görev döngüsünü ondalık olarak $0{,}70$ alırsak sonuç $3{,}5$ V olur. An
 | %25 | Kısa süre HIGH | Az parlak | Yavaş döner |
 | %50 | Eşit aç-kapa | Orta parlak | Orta hız |
 | %100 | Sürekli HIGH | Tam parlak | Tam hız |
+
+![pwm-ile-motor-40](/img/pwm-ile-motor-40.svg)
+
 
 ## Frekans neden önemlidir?
 

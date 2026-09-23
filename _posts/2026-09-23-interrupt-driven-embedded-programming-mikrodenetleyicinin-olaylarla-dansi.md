@@ -12,6 +12,7 @@ tags:
   - isr
   - gerçek-zamanlı-sistemler
 toc: true
+image: /img/interrupt-driven-embedded-28.png
 ---
 
 Bir mikrodenetleyicinin sürekli düğmeye basılıp basılmadığını kontrol ettiğini düşünün. Biraz, kapının önünde bekleyip zil çalacak mı diye saniyede binlerce kez bakmaya benzer! Interrupt-driven, yani kesme güdümlü programlama, mikrodenetleyicinin başka işlerle uğraşırken önemli bir olay gerçekleştiğinde haberdar edilmesini sağlar. Böylece işlemci zamanı daha verimli kullanılır ve olaylara çok daha hızlı tepki verilir.
@@ -96,3 +97,6 @@ Birden fazla kesme aynı anda oluşursa **öncelik** mekanizması devreye girer.
 Mekanik düğmeler ayrıca tek basışta çok sayıda elektriksel geçiş üretir. Buna **bounce** denir. Donanımsal filtre, zamanlayıcı veya yazılımsal debounce uygulanmazsa kahraman mikrodenetleyicimiz bir basışı küçük bir davul solosu sanabilir.
 
 Sonuç olarak interrupt-driven programlama, olaylara hızlı tepki veren ve düşük güç tüketen gömülü sistemlerin temelidir. Başarının sırrı kesmeleri yalnızca acil bildirim mekanizması olarak kullanmak, ISR’leri kısa tutmak ve paylaşılan verileri dikkatle yönetmektir.
+
+![interrupt-driven-embedded-28](/img/interrupt-driven-embedded-28.svg)
+

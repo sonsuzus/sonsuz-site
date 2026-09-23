@@ -12,6 +12,7 @@ tags:
   - mikrodenetleyici
   - örnekleme
 toc: true
+image: /img/adc-ve-dac-33.png
 ---
 
 Bir mikrodenetleyici sıcaklığı nasıl “görür”, hoparlör ise bir sayı dizisini nasıl müziğe dönüştürür? Bu sihrin arkasında iki temel devre bulunur: analogdan dijitale dönüştürücü **ADC** ve dijitalden analoğa dönüştürücü **DAC**. Biri fiziksel dünyayı sayılara çevirirken diğeri bu yolculuğu tersine çevirir.
@@ -96,3 +97,6 @@ void loop() {
 Bit sayısı tek başına kalite garantisi değildir. Referans geriliminin kararlılığı, elektriksel gürültü, dönüşüm hızı, doğrusal olmama hataları ve devre yerleşimi sonucu doğrudan etkiler. 16 bit etiketi taşıyan gürültülü bir ADC, pratikte 12 bitlik temiz bir ADC’den daha kötü sonuç verebilir.
 
 Özetle ADC, sensörlerin dilini yazılıma tercüme eder; DAC ise yazılımın sayılarını fiziksel dünyaya anlatır. Telefon görüşmesinden dijital termometreye, müzik sisteminden endüstriyel motorlara kadar bu iki dönüştürücü, kod ile elektriğin sürekli el sıkışmasını sağlar.
+
+![adc-ve-dac-33](/img/adc-ve-dac-33.svg)
+

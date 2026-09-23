@@ -12,7 +12,11 @@ tags:
   - gömülü-sistemler
   - freertos
 toc: true
+image: /img/micro-ros-mikrodenetleyicilere-21.png
 ---
+
+![micro-ros-mikrodenetleyicilere-21](/img/micro-ros-mikrodenetleyicilere-21.svg)
+
 
 Bir robotun motorunu milisaniyeler içinde kontrol etmek isteyen küçücük bir mikrodenetleyici ile harita çıkaran güçlü bir bilgisayar aynı dili konuşabilir mi? Micro-ROS tam olarak bu soruya “Evet!” cevabını verir. ROS 2 ekosisteminin iletişim modelini kaynakları sınırlı mikrodenetleyicilere taşıyarak sensörlerden motor sürücülerine kadar robotun en küçük parçalarını dağıtık sistemin birer üyesi hâline getirir.
 ``

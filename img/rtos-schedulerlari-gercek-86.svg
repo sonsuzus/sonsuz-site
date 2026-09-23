@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f4e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6e8496" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6e8496" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="159" r="115" fill="#dff1ec" opacity="0.28"/>
+  <circle cx="320" cy="159" r="88" fill="#e4efff" opacity="0.42"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">RTOS ZAMANLAYICI</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708596">Hazır görevlerden doğru zamanı seçer</text>
+
+  <!-- Sol görev kartları -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="77" width="142" height="48" rx="14" fill="#fff8e7"/>
+    <circle cx="49" cy="101" r="10" fill="#f4c867"/>
+    <path d="M45 101h8M49 97v8" stroke="#9a6a18" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="67" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d5962">Sensör</text>
+    <text x="67" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8790">T: 10 ms</text>
+
+    <rect x="28" y="137" width="142" height="48" rx="14" fill="#eef1ff"/>
+    <circle cx="49" cy="161" r="10" fill="#9daff0"/>
+    <path d="M44 163c3-7 7-7 10 0M46 158h6" fill="none" stroke="#4f64b0" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="67" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d5962">Motor</text>
+    <text x="67" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8790">D: 20 ms</text>
+
+    <rect x="28" y="197" width="142" height="48" rx="14" fill="#e9f8f3"/>
+    <circle cx="49" cy="221" r="10" fill="#7fd0b2"/>
+    <path d="M43 221h12M48 217l-4 4 4 4M51 217l4 4-4 4" fill="none" stroke="#287c61" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="67" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d5962">Haberleşme</text>
+    <text x="67" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8790">C: 4 ms</text>
+  </g>
+
+  <!-- giriş çizgileri -->
+  <path d="M170 101 H205" stroke="#9eb4c1" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="205,101 197,96 197,106" fill="#9eb4c1"/>
+  <path d="M170 161 H205" stroke="#9eb4c1" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="205,161 197,156 197,166" fill="#9eb4c1"/>
+  <path d="M170 221 H205" stroke="#9eb4c1" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="205,221 197,216 197,226" fill="#9eb4c1"/>
+
+  <!-- Scheduler -->
+  <g filter="url(#shadow)">
+    <rect x="205" y="88" width="173" height="143" rx="24" fill="url(#core)" stroke="#c7ddeb" stroke-width="1.2"/>
+    <circle cx="291" cy="132" r="31" fill="#ffffff" opacity="0.84"/>
+    <circle cx="291" cy="132" r="21" fill="#76a9db"/>
+    <path d="M291 116v16l11 7" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="291" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34566d">Zamanlayıcı</text>
+    <text x="291" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798a">Hazır kuyruk</text>
+    <rect x="229" y="208" width="124" height="10" rx="5" fill="#bedbed"/>
+    <rect x="229" y="208" width="69" height="10" rx="5" fill="#669ed0"/>
+    <rect x="300" y="208" width="28" height="10" rx="5" fill="#f0c66a"/>
+  </g>
+
+  <!-- output -->
+  <path d="M378 159 H410" stroke="#729bb8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="410,159 401,153 401,165" fill="#729bb8"/>
+
+  <!-- CPU and timeline -->
+  <g filter="url(#shadow)">
+    <rect x="410" y="88" width="202" height="143" rx="22" fill="#ffffff" opacity="0.92"/>
+    <text x="432" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">İşlemci Zamanı</text>
+    <text x="432" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788d9d">Kesme ve bağlam değişimi</text>
+
+    <line x1="432" y1="171" x2="590" y2="171" stroke="#c4d3dc" stroke-width="2" stroke-linecap="round"/>
+    <line x1="432" y1="166" x2="432" y2="176" stroke="#a4b9c5" stroke-width="1.4"/>
+    <line x1="484" y1="166" x2="484" y2="176" stroke="#a4b9c5" stroke-width="1.4"/>
+    <line x1="537" y1="166" x2="537" y2="176" stroke="#a4b9c5" stroke-width="1.4"/>
+    <line x1="590" y1="166" x2="590" y2="176" stroke="#a4b9c5" stroke-width="1.4"/>
+
+    <rect x="433" y="183" width="43" height="21" rx="7" fill="#7db7e8"/>
+    <rect x="478" y="183" width="20" height="21" rx="7" fill="#f2c56a"/>
+    <rect x="500" y="183" width="44" height="21" rx="7" fill="#8bd1b5"/>
+    <rect x="546" y="183" width="37" height="21" rx="7" fill="#9eaeeb"/>
+    <text x="454" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">T1</text>
+    <text x="488" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#72551c">T2</text>
+    <text x="522" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#24684f">T3</text>
+    <text x="564" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#485a9e">T1</text>
+    <text x="432" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a788a">R ≤ D</text>
+    <circle cx="478" cy="217" r="5" fill="#66bf92"/>
+    <path d="M475 217l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- algorithm chips -->
+  <g filter="url(#smallShadow)">
+    <rect x="205" y="257" width="101" height="35" rx="13" fill="#eef1ff"/>
+    <text x="255.5" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5264a8">RMS · Sabit</text>
+    <rect x="319" y="257" width="101" height="35" rx="13" fill="#e7f7f0"/>
+    <text x="369.5" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31775e">EDF · Dinamik</text>
+    <rect x="433" y="257" width="151" height="35" rx="13" fill="#fff5df"/>
+    <text x="508.5" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#87651f">Öncelik devralma</text>
+  </g>
+</svg>

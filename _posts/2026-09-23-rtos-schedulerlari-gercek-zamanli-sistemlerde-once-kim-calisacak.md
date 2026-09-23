@@ -12,7 +12,11 @@ tags:
   - edf
   - rms
 toc: true
+image: /img/rtos-schedulerlari-gercek-86.png
 ---
+
+![rtos-schedulerlari-gercek-86](/img/rtos-schedulerlari-gercek-86.svg)
+
 
 Bir mikrodenetleyicide sensör okumak, motor sürmek ve haberleşme paketlerini işlemek aynı anda gerekli olabilir. Ancak tek çekirdekli işlemci gerçekte aynı anda yalnızca bir işi yürütür. RTOS scheduler’ı, yani zamanlayıcı, tam bu noktada sahneye çıkar ve hazır görevlerden hangisinin işlemciyi kullanacağına karar verir. Kısacası scheduler, görevler arasındaki trafik polisidir; fakat yanlış kararında yalnızca korna sesi değil, kaçırılmış deadline’lar duyulur.
 ``

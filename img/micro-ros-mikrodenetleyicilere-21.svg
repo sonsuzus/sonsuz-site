@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="mcu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#bcd8f5"/>
+    </linearGradient>
+    <linearGradient id="agent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff4df"/>
+      <stop offset="100%" stop-color="#bce2c5"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eee4ff"/>
+      <stop offset="100%" stop-color="#d5c3f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7891a7" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7891a7" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="325" cy="152" r="123" fill="#ffffff" opacity="0.42"/>
+  <path d="M24 267 C132 236 180 291 282 267 S478 234 616 267" fill="none" stroke="#cce4da" stroke-width="2" opacity="0.65"/>
+
+  <!-- Peripheral nodes -->
+  <g filter="url(#softShadow)">
+    <rect x="27" y="60" width="101" height="45" rx="14" fill="#fff1cf"/>
+    <circle cx="51" cy="82" r="12" fill="#f6be69"/>
+    <path d="M45 84 L49 78 L53 86 L57 79" fill="none" stroke="#875a1d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="67" y="78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4e5966">Sensörler</text>
+    <text x="67" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a727d">IMU · Enkoder</text>
+
+    <rect x="27" y="203" width="101" height="45" rx="14" fill="#ffe1dc"/>
+    <circle cx="51" cy="225" r="12" fill="#ec907f"/>
+    <path d="M44 225 H58 M48 220 V230 M54 220 V230" stroke="#87483d" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="67" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4e5966">Eyleyici</text>
+    <text x="67" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#6a727d">Motor sürücü</text>
+  </g>
+
+  <!-- links peripherals -->
+  <path d="M128 82 H151 Q160 82 160 91 V111" fill="none" stroke="#8ba7b9" stroke-width="2"/>
+  <polygon points="156,107 164,107 160,115" fill="#8ba7b9"/>
+  <path d="M128 225 H151 Q160 225 160 216 V195" fill="none" stroke="#8ba7b9" stroke-width="2"/>
+  <polygon points="156,199 164,199 160,191" fill="#8ba7b9"/>
+
+  <!-- Microcontroller -->
+  <g filter="url(#shadow)">
+    <rect x="159" y="103" width="130" height="111" rx="20" fill="url(#mcu)" stroke="#9bbbd8"/>
+    <rect x="177" y="123" width="94" height="53" rx="11" fill="#f8fcff" stroke="#a9c7e2"/>
+    <rect x="188" y="134" width="10" height="10" rx="2" fill="#699bc3"/>
+    <rect x="204" y="134" width="10" height="10" rx="2" fill="#699bc3"/>
+    <rect x="220" y="134" width="10" height="10" rx="2" fill="#699bc3"/>
+    <rect x="236" y="134" width="10" height="10" rx="2" fill="#699bc3"/>
+    <path d="M188 158 H252" stroke="#8caeca" stroke-width="3" stroke-linecap="round"/>
+    <text x="224" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385a76">Mikrodenetleyici</text>
+    <text x="224" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#52718b">STM32 · ESP32</text>
+  </g>
+
+  <!-- Client -->
+  <g filter="url(#shadow)">
+    <rect x="310" y="99" width="119" height="119" rx="22" fill="#dff4f0" stroke="#9fcec5"/>
+    <circle cx="369" cy="137" r="25" fill="#f7fffd" stroke="#a4d4c9" stroke-width="2"/>
+    <circle cx="359" cy="137" r="4" fill="#55a89b"/>
+    <circle cx="379" cy="137" r="4" fill="#55a89b"/>
+    <path d="M363 149 Q369 154 375 149" fill="none" stroke="#55a89b" stroke-width="2" stroke-linecap="round"/>
+    <text x="369" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#346d67">Micro-ROS</text>
+    <text x="369" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#346d67">İstemci</text>
+  </g>
+
+  <!-- MCU to client -->
+  <path d="M289 158 H303" fill="none" stroke="#6597b0" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="301,152 310,158 301,164" fill="#6597b0"/>
+
+  <!-- XRCE transport capsule -->
+  <g filter="url(#softShadow)">
+    <rect x="442" y="129" width="75" height="58" rx="18" fill="#fff4d9" stroke="#ebcc8e"/>
+    <path d="M457 150 H501" stroke="#cd9344" stroke-width="2" stroke-dasharray="4 3"/>
+    <polygon points="498,145 507,150 498,155" fill="#cd9344"/>
+    <text x="480" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b6229">DDS-XRCE</text>
+  </g>
+  <path d="M429 158 H436" stroke="#6597b0" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="434,152 443,158 434,164" fill="#6597b0"/>
+  <path d="M517 158 H528" stroke="#6597b0" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="526,152 535,158 526,164" fill="#6597b0"/>
+
+  <!-- Agent -->
+  <g filter="url(#shadow)">
+    <rect x="535" y="96" width="83" height="124" rx="21" fill="url(#agent)" stroke="#9bc9a4"/>
+    <rect x="552" y="116" width="49" height="35" rx="8" fill="#fafffa" stroke="#a9cfaf"/>
+    <path d="M561 141 V129 H592 V141 M569 129 V123 H584 V129" fill="none" stroke="#62a16f" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="566" cy="158" r="3" fill="#62a16f"/>
+    <circle cx="577" cy="158" r="3" fill="#62a16f"/>
+    <circle cx="588" cy="158" r="3" fill="#62a16f"/>
+    <text x="576" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7148">Micro-ROS</text>
+    <text x="576" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d7148">Agent</text>
+  </g>
+
+  <!-- ROS2 cloud above agent -->
+  <g filter="url(#softShadow)">
+    <path d="M531 67 C531 57 540 50 550 50 C555 37 573 34 582 47 C595 44 605 52 605 62 C615 63 621 70 621 79 C621 89 613 95 602 95 H548 C535 95 526 87 526 77 C526 73 528 69 531 67Z" fill="url(#cloud)" stroke="#b69cd5"/>
+    <text x="574" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#634b89">ROS 2 Ağı</text>
+  </g>
+  <path d="M576 96 V102" stroke="#846ea6" stroke-width="2"/>
+  <polygon points="572,100 580,100 576,106" fill="#846ea6"/>
+
+  <!-- Timing and resources -->
+  <g filter="url(#softShadow)">
+    <rect x="170" y="249" width="120" height="45" rx="14" fill="#e9e2fb"/>
+    <circle cx="194" cy="271" r="13" fill="#a893d3"/>
+    <path d="M194 263 V271 L200 275" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="214" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#594779">FreeRTOS</text>
+    <text x="214" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#716180">100 Hz kontrol</text>
+
+    <rect x="331" y="249" width="137" height="45" rx="14" fill="#dff1eb"/>
+    <path d="M350 278 V261 M357 278 V256 M364 278 V266 M371 278 V259" stroke="#4d9d88" stroke-width="3" stroke-linecap="round"/>
+    <text x="385" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356d60">Kaynak planı</text>
+    <text x="385" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#527a70">Statik bellek</text>
+  </g>
+
+  <path d="M224 214 V241" fill="none" stroke="#9182b3" stroke-width="2"/>
+  <polygon points="220,239 228,239 224,247" fill="#9182b3"/>
+  <path d="M369 218 V241" fill="none" stroke="#72a99c" stroke-width="2"/>
+  <polygon points="365,239 373,239 369,247" fill="#72a99c"/>
+</svg>
