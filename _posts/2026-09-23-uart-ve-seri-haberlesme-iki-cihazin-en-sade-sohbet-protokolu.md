@@ -12,6 +12,7 @@ tags:
   - elektronik
   - protokoller
 toc: true
+image: /img/uart-ve-seri-22.png
 ---
 
 Bir mikrodenetleyicinin sensörle, bilgisayarla veya başka bir kartla konuşmasını sağlamanın en kolay yollarından biri UART’tır. Karmaşık ağ katmanları, IP adresleri ya da bağlantı pazarlıkları yoktur; iki taraf doğru hızda dinler ve bitler sırayla yola çıkar. Kısacası UART, elektronik dünyasının “aynı dili ve tempoyu biliyorsak konuşabiliriz” anlaşmasıdır.
@@ -103,3 +104,6 @@ $$C=\left(\sum_{i=1}^{n} veri_i\right)\bmod 256$$
 Alıcı aynı hesabı yapıp gelen checksum ile karşılaştırır. Değerler farklıysa aktarım sırasında hata oluşmuş olabilir.
 
 UART; düşük maliyeti, kolay hata ayıklanması ve hemen her mikrodenetleyicide bulunması sayesinde hâlâ vazgeçilmezdir. TX ile RX’i çaprazla, GND’yi unutma, ayarları eşitle ve sohbet başlasın!
+
+![uart-ve-seri-22](/img/uart-ve-seri-22.svg)
+

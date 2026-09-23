@@ -12,6 +12,7 @@ tags:
   - performans
   - gözlemlenebilirlik
 toc: true
+image: /img/time-series-databaseler-94.png
 ---
 
 Bir sunucunun CPU kullanımı, elektrik sayacının ölçümü, borsa fiyatı veya akıllı saatin kaydettiği nabız aynı temel özelliği taşır: Her değer belirli bir zaman anına aittir. Klasik veritabanları bu kayıtları elbette saklayabilir; ancak veri saniyede binlerce kez akmaya başladığında zaman, sıradan bir sütun olmaktan çıkar ve veri modelinin başrol oyuncusuna dönüşür.
@@ -77,3 +78,6 @@ Her saniyelik ölçümü sonsuza kadar saklamak pahalıdır. Bu nedenle TSDB sis
 Örneğin ilk 7 gün saniyelik, sonraki 90 gün dakikalık, daha eski dönemler ise saatlik ortalamalarla saklanabilir. Böylece yakın geçmiş ayrıntılı, uzak geçmiş ekonomik olur.
 
 Sonuç olarak time-series database yalnızca “tarih sütunu bulunan veritabanı” değildir. Yazma düzeni, sıkıştırma, bölümleme, zaman pencereleri ve veri yaşam döngüsü birlikte tasarlanır. İzleme, IoT, finans veya analitik sisteminiz durmadan “ne zaman oldu?” diye soruyorsa, zaman serisi yaklaşımı büyük olasılıkla doğru araçtır.
+
+![time-series-databaseler-94](/img/time-series-databaseler-94.svg)
+

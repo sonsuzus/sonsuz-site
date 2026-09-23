@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f5e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#54708a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="87" cy="54" r="72" fill="#dceeff" opacity="0.48"/>
+  <circle cx="578" cy="274" r="95" fill="#dff3df" opacity="0.42"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536c">Zaman Serisi Veritabanı</text>
+  <text x="32" y="50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Zaman odaklı veri akışı</text>
+
+  <!-- Source cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="82" width="116" height="55" rx="14" fill="#fff" stroke="#d4e3ed"/>
+    <rect x="28" y="153" width="116" height="55" rx="14" fill="#fff" stroke="#d4e3ed"/>
+    <rect x="28" y="224" width="116" height="55" rx="14" fill="#fff" stroke="#d4e3ed"/>
+  </g>
+
+  <!-- CPU icon -->
+  <rect x="43" y="97" width="24" height="24" rx="6" fill="#d8eaff"/>
+  <rect x="49" y="103" width="12" height="12" rx="3" fill="none" stroke="#4c86b8" stroke-width="2"/>
+  <path d="M52 99v4M58 99v4M52 115v4M58 115v4M45 106h4M45 112h4M61 106h4M61 112h4" stroke="#4c86b8" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="77" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#425d72">Sunucu</text>
+  <text x="77" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">CPU</text>
+
+  <!-- Sensor icon -->
+  <circle cx="55" cy="180" r="14" fill="#dff5e7"/>
+  <path d="M55 170v13M50 181c0 3 2.2 5 5 5s5-2 5-5" fill="none" stroke="#4a9a71" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="55" cy="174" r="2.5" fill="#4a9a71"/>
+  <text x="77" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#425d72">Sensör</text>
+  <text x="77" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Sıcaklık</text>
+
+  <!-- Finance icon -->
+  <rect x="42" y="240" width="26" height="24" rx="6" fill="#ffe7cf"/>
+  <path d="M47 258l5-7 4 3 7-9" fill="none" stroke="#d88844" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M61 245h3v3" fill="none" stroke="#d88844" stroke-width="2" stroke-linecap="round"/>
+  <text x="77" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#425d72">Piyasa</text>
+  <text x="77" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Fiyat</text>
+
+  <!-- incoming paths -->
+  <path d="M144 109H175Q184 109 184 118V145H201" fill="none" stroke="#88aabe" stroke-width="2"/>
+  <path d="M144 180H201" fill="none" stroke="#88aabe" stroke-width="2"/>
+  <path d="M144 251H175Q184 251 184 242V215H201" fill="none" stroke="#88aabe" stroke-width="2"/>
+  <polygon points="201,141 209,145 201,149" fill="#88aabe"/>
+  <polygon points="201,176 209,180 201,184" fill="#88aabe"/>
+  <polygon points="201,211 209,215 201,219" fill="#88aabe"/>
+
+  <!-- Central core -->
+  <g filter="url(#shadow)">
+    <rect x="209" y="101" width="178" height="157" rx="24" fill="url(#core)" stroke="#bdd7df"/>
+  </g>
+  <circle cx="298" cy="151" r="33" fill="#fff" opacity="0.78"/>
+  <circle cx="298" cy="151" r="24" fill="none" stroke="#6394ae" stroke-width="2"/>
+  <path d="M278 151h40M298 131v40" stroke="#6394ae" stroke-width="1.5" opacity="0.55"/>
+  <path d="M279 157l8-8 7 5 10-13 13 8" fill="none" stroke="#4785a9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="287" cy="149" r="2.5" fill="#4785a9"/>
+  <circle cx="304" cy="141" r="2.5" fill="#4785a9"/>
+  <circle cx="317" cy="149" r="2.5" fill="#4785a9"/>
+  <text x="298" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355b70">Zaman Serisi</text>
+  <text x="298" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7c8b">Damga • Etiket • Alan</text>
+  <text x="298" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7c8b">Sıralı ekleme</text>
+
+  <!-- output path -->
+  <path d="M387 180H413" fill="none" stroke="#7199aa" stroke-width="2.5"/>
+  <polygon points="413,176 422,180 413,184" fill="#7199aa"/>
+
+  <!-- right processing area -->
+  <g filter="url(#smallShadow)">
+    <rect x="422" y="74" width="185" height="61" rx="16" fill="#fff" stroke="#d4e3ed"/>
+    <rect x="422" y="151" width="185" height="61" rx="16" fill="#fff" stroke="#d4e3ed"/>
+    <rect x="422" y="228" width="185" height="61" rx="16" fill="#fff" stroke="#d4e3ed"/>
+  </g>
+
+  <!-- partition -->
+  <rect x="438" y="89" width="36" height="31" rx="8" fill="#e4edff"/>
+  <path d="M446 96h20M446 103h20M446 110h13" stroke="#678bc5" stroke-width="2" stroke-linecap="round"/>
+  <text x="487" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d72">Bölümleme</text>
+  <text x="487" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Zaman aralığı</text>
+
+  <!-- compression -->
+  <rect x="438" y="166" width="36" height="31" rx="8" fill="#e1f5e8"/>
+  <path d="M446 174h20M450 181h12M454 188h4" stroke="#55a477" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="487" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d72">Sıkıştırma</text>
+  <text x="487" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Delta verisi</text>
+
+  <!-- retention -->
+  <rect x="438" y="243" width="36" height="31" rx="8" fill="#ffe9d8"/>
+  <path d="M456 249v10l7 4" fill="none" stroke="#cd8750" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="456" cy="259" r="10" fill="none" stroke="#cd8750" stroke-width="2"/>
+  <text x="487" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d72">Saklama</text>
+  <text x="487" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Özet ve silme</text>
+
+  <!-- vertical branch lines -->
+  <path d="M413 180H414V104H422M414 180V181H422M414 180V258H422" fill="none" stroke="#9bb5be" stroke-width="1.8"/>
+  <circle cx="414" cy="180" r="4" fill="#7199aa"/>
+
+  <!-- footer query chip -->
+  <g filter="url(#smallShadow)">
+    <rect x="216" y="275" width="171" height="28" rx="14" fill="#ffffff" stroke="#d4e3ed"/>
+  </g>
+  <path d="M231 289h10M236 284v10" stroke="#6d95b2" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="250" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#537084">Pencere: AVG ve MAX</text>
+</svg>

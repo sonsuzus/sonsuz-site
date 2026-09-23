@@ -12,6 +12,7 @@ tags:
   - seri iletişim
   - elektronik
 toc: true
+image: /img/spi-protokolu-yuksek-96.png
 ---
 
 Bir mikrodenetleyicinin sensör, ekran, ADC, DAC veya flash bellek gibi çevresel donanımlarla hızlı konuşması gerektiğinde SPI çoğu zaman sahneye çıkar. Açılımı **Serial Peripheral Interface** olan bu protokol, veriyi bit bit aktarmasına rağmen yüksek saat frekansı ve basit çalışma mantığı sayesinde oldukça hızlıdır. Kısacası SPI, donanım dünyasının “lafı dolandırmadan doğrudan konuşan” iletişim yöntemlerinden biridir.
@@ -94,3 +95,6 @@ uint8_t registerOku(uint8_t adres) {
 | Hız | Çok yüksek | Orta | Orta |
 
 SPI; yüksek örnekleme hızlı ADC’ler, ekranlar ve harici bellekler için güçlü bir seçimdir. Buna karşılık pin sayısının kritik olduğu projelerde I²C daha avantajlı olabilir. En doğru protokol, yalnızca hız yarışını kazanan değil; pin sayısı, kablo uzunluğu, cihaz sayısı ve hata toleransı gibi proje ihtiyaçlarını birlikte karşılayandır.
+
+![spi-protokolu-yuksek-96](/img/spi-protokolu-yuksek-96.svg)
+

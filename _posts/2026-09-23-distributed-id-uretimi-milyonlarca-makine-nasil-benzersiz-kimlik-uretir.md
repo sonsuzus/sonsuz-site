@@ -12,6 +12,7 @@ tags:
   - ölçeklenebilirlik
   - veritabanı
 toc: true
+image: /img/distributed-id-uretimi-33.png
 ---
 
 Bir sosyal medya gönderisi, ödeme işlemi veya kargo kaydı oluşturduğunuzu düşünün. Sistem, bu kayda benzersiz bir kimlik vermeli; üstelik aynı anda çalışan milyonlarca makine birbirinden habersiz ID üretiyor olabilir. Tek bir veritabanı sayacına güvenmek kolaydır, ancak ölçek büyüyünce o masum sayaç sistemin kapısındaki uzun kuyruğa dönüşür. Distributed ID üretiminin amacı, koordinasyonu azaltırken çakışmayan, hızlı ve mümkünse sıralanabilir kimlikler oluşturmaktır.
@@ -39,6 +40,9 @@ Bu hedeflerin tamamını kusursuz biçimde sağlamak zordur. ID tasarımı da da
 | UUID v7 | Yok | Evet | 128 bit | Görece büyük depolama |
 | Snowflake | Düşük | Evet | 64 bit | Saat ve makine kimliği yönetimi |
 | Segment tahsisi | Aralıklı | Evet | 64 bit | Segment servisinin yönetimi |
+
+![distributed-id-uretimi-33](/img/distributed-id-uretimi-33.svg)
+
 
 UUID v4, 122 rastgele bit kullanır. Yaklaşık $n$ adet ID üretildiğinde çakışma olasılığı doğum günü problemiyle tahmin edilebilir:
 

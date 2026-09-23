@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="ctrl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#bcd8f5"/>
+    </linearGradient>
+    <linearGradient id="device" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdfcf5"/>
+      <stop offset="100%" stop-color="#e6f1dc"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6c8094" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#6c8094" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="306" cy="158" r="126" fill="#d8eaf4" opacity="0.26"/>
+  <circle cx="306" cy="158" r="95" fill="none" stroke="#c9dce8" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <text x="28" y="31" fill="#4c6678" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">SPI İLETİŞİM MİMARİSİ</text>
+  <text x="28" y="49" fill="#78909e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tam çift yönlü seri veri akışı</text>
+
+  <!-- shared buses -->
+  <path d="M260 118 C320 92 375 78 443 77" fill="none" stroke="#647f97" stroke-width="2"/>
+  <path d="M260 133 C325 121 373 119 443 119" fill="none" stroke="#3f9caa" stroke-width="2"/>
+  <path d="M443 139 C370 144 324 151 260 164" fill="none" stroke="#a06eb6" stroke-width="2"/>
+  <path d="M260 182 C334 198 379 205 443 205" fill="none" stroke="#647f97" stroke-width="2"/>
+
+  <!-- arrows manually -->
+  <polygon points="439,72 449,77 439,82" fill="#647f97"/>
+  <polygon points="439,114 449,119 439,124" fill="#3f9caa"/>
+  <polygon points="264,159 254,164 264,169" fill="#a06eb6"/>
+  <polygon points="439,200 449,205 439,210" fill="#647f97"/>
+
+  <!-- line labels -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">
+    <rect x="334" y="78" width="44" height="20" rx="10" fill="#ffffff" opacity="0.92"/>
+    <text x="345" y="92" fill="#526d83">SCLK</text>
+    <rect x="333" y="111" width="45" height="20" rx="10" fill="#ffffff" opacity="0.92"/>
+    <text x="344" y="125" fill="#318896">MOSI</text>
+    <rect x="332" y="142" width="45" height="20" rx="10" fill="#ffffff" opacity="0.92"/>
+    <text x="343" y="156" fill="#89589e">MISO</text>
+    <rect x="335" y="190" width="34" height="20" rx="10" fill="#ffffff" opacity="0.92"/>
+    <text x="345" y="204" fill="#526d83">CS</text>
+  </g>
+
+  <!-- controller -->
+  <g filter="url(#shadow)">
+    <rect x="66" y="92" width="194" height="141" rx="24" fill="url(#ctrl)" stroke="#9fc1df"/>
+    <rect x="86" y="113" width="154" height="47" rx="14" fill="#eff7ff"/>
+    <rect x="86" y="174" width="154" height="38" rx="13" fill="#c8def2"/>
+  </g>
+  <rect x="101" y="124" width="25" height="25" rx="7" fill="#699dc6"/>
+  <path d="M108 130 h11 M108 136 h11 M108 142 h7" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="137" y="134" fill="#38546b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Mikrodenetleyici</text>
+  <text x="137" y="149" fill="#658095" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Denetleyici</text>
+  <text x="105" y="197" fill="#3e617a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Saat üretir</text>
+  <text x="105" y="214" fill="#3e617a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Veri gönderir ve alır</text>
+
+  <!-- selection branches -->
+  <path d="M449 205 L466 205 L466 85 L486 85" fill="none" stroke="#e28a69" stroke-width="2"/>
+  <path d="M466 155 L486 155" fill="none" stroke="#e28a69" stroke-width="2"/>
+  <path d="M466 225 L486 225" fill="none" stroke="#e28a69" stroke-width="2"/>
+  <polygon points="482,80 492,85 482,90" fill="#e28a69"/>
+  <polygon points="482,150 492,155 482,160" fill="#e28a69"/>
+  <polygon points="482,220 492,225 482,230" fill="#e28a69"/>
+  <text x="455" y="196" fill="#b86448" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">CS</text>
+
+  <!-- peripheral cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="486" y="55" width="120" height="58" rx="16" fill="url(#device)" stroke="#c9dcb7"/>
+    <rect x="486" y="126" width="120" height="58" rx="16" fill="url(#device)" stroke="#c9dcb7"/>
+    <rect x="486" y="196" width="120" height="58" rx="16" fill="url(#device)" stroke="#c9dcb7"/>
+  </g>
+
+  <circle cx="511" cy="84" r="13" fill="#8ebc82"/>
+  <path d="M505 85 C508 76 516 76 518 85 C516 92 508 92 505 85Z" fill="#ffffff"/>
+  <text x="535" y="81" fill="#4d6848" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Sensör</text>
+  <text x="535" y="97" fill="#70876c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Çevresel</text>
+
+  <rect x="498" y="140" width="26" height="20" rx="4" fill="#76a8bf"/>
+  <rect x="502" y="144" width="18" height="12" rx="2" fill="#ffffff"/>
+  <text x="535" y="152" fill="#4d6848" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Ekran</text>
+  <text x="535" y="168" fill="#70876c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Çevresel</text>
+
+  <rect x="498" y="211" width="26" height="26" rx="6" fill="#c39876"/>
+  <path d="M503 217 h16 M503 223 h16 M503 229 h16" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="535" y="222" fill="#4d6848" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Bellek</text>
+  <text x="535" y="238" fill="#70876c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Çevresel</text>
+
+  <!-- footer facts -->
+  <g filter="url(#smallShadow)">
+    <rect x="68" y="269" width="150" height="31" rx="13" fill="#ffffff"/>
+    <rect x="245" y="269" width="150" height="31" rx="13" fill="#ffffff"/>
+    <rect x="422" y="269" width="150" height="31" rx="13" fill="#ffffff"/>
+  </g>
+  <circle cx="87" cy="284.5" r="5" fill="#3f9caa"/>
+  <text x="100" y="289" fill="#536f80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Eş zamanlı veri</text>
+  <circle cx="264" cy="284.5" r="5" fill="#647f97"/>
+  <text x="277" y="289" fill="#536f80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Yüksek hız</text>
+  <circle cx="441" cy="284.5" r="5" fill="#e28a69"/>
+  <text x="454" y="289" fill="#536f80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ayrı cihaz seçimi</text>
+</svg>

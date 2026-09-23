@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#776be6"/>
+      <stop offset="100%" stop-color="#5d9eea"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#54708d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#54708d" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="42" r="82" fill="#dceefb" opacity="0.5"/>
+  <circle cx="588" cy="277" r="105" fill="#ddefd9" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40576e">DAĞITIK KİMLİK ÜRETİMİ</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718497">Koordinasyon az, benzersizlik yüksek</text>
+
+  <!-- connections -->
+  <path d="M137 108 C171 111 178 132 208 143" fill="none" stroke="#8ba7bd" stroke-width="2"/>
+  <polygon points="207,137 218,146 204,149" fill="#8ba7bd"/>
+  <path d="M137 205 C172 199 181 181 208 171" fill="none" stroke="#8ba7bd" stroke-width="2"/>
+  <polygon points="205,166 218,168 208,177" fill="#8ba7bd"/>
+  <path d="M422 157 C450 157 458 157 478 157" fill="none" stroke="#708da8" stroke-width="2.5"/>
+  <polygon points="476,151 489,157 476,163" fill="#708da8"/>
+
+  <!-- worker cards -->
+  <g filter="url(#soft)">
+    <rect x="28" y="75" width="110" height="66" rx="16" fill="#ffffff"/>
+    <rect x="40" y="88" width="28" height="28" rx="9" fill="#dceffd"/>
+    <rect x="47" y="95" width="14" height="4" rx="2" fill="#5a9cdc"/>
+    <rect x="47" y="103" width="14" height="4" rx="2" fill="#5a9cdc"/>
+    <text x="78" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#415870">Worker</text>
+    <text x="78" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7890a3">Bölge A</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="173" width="110" height="66" rx="16" fill="#ffffff"/>
+    <rect x="40" y="186" width="28" height="28" rx="9" fill="#e5f4dc"/>
+    <rect x="47" y="193" width="14" height="4" rx="2" fill="#70a861"/>
+    <rect x="47" y="201" width="14" height="4" rx="2" fill="#70a861"/>
+    <text x="78" y="197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#415870">Worker</text>
+    <text x="78" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7890a3">Bölge B</text>
+  </g>
+
+  <!-- central snowflake -->
+  <g filter="url(#shadow)">
+    <rect x="217" y="93" width="206" height="130" rx="24" fill="#ffffff"/>
+    <rect x="234" y="109" width="172" height="38" rx="13" fill="url(#core)"/>
+    <circle cx="253" cy="128" r="10" fill="#ffffff" opacity="0.28"/>
+    <path d="M253 119 L253 137 M244 128 L262 128 M247 122 L259 134 M259 122 L247 134" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="274" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Snowflake Üretici</text>
+    <text x="274" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e8ecff">Yerel ve hızlı</text>
+
+    <text x="237" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#51687d">64 bit kimlik yapısı</text>
+    <rect x="237" y="180" width="22" height="21" rx="5" fill="#b9b4ee"/>
+    <rect x="262" y="180" width="72" height="21" rx="5" fill="#8cc8ed"/>
+    <rect x="337" y="180" width="39" height="21" rx="5" fill="#b7dfa5"/>
+    <rect x="379" y="180" width="27" height="21" rx="5" fill="#f4c88d"/>
+    <text x="248" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">1</text>
+    <text x="298" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Zaman</text>
+    <text x="356" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Worker</text>
+    <text x="392" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Sıra</text>
+  </g>
+
+  <!-- output -->
+  <g filter="url(#shadow)">
+    <rect x="489" y="112" width="123" height="91" rx="20" fill="#ffffff"/>
+    <rect x="507" y="128" width="87" height="24" rx="8" fill="#edf3ff"/>
+    <text x="550" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526b87">Benzersiz ID</text>
+    <text x="550" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7288">Hızlı</text>
+    <circle cx="523" cy="170" r="5" fill="#77b967"/>
+    <text x="550" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7288">Sıralı</text>
+  </g>
+
+  <!-- bottom feature pills -->
+  <g filter="url(#soft)">
+    <rect x="173" y="260" width="88" height="32" rx="16" fill="#ffffff"/>
+    <circle cx="190" cy="276" r="6" fill="#7ab6e3"/>
+    <text x="202" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7f">Merkezsiz</text>
+
+    <rect x="276" y="260" width="91" height="32" rx="16" fill="#ffffff"/>
+    <circle cx="293" cy="276" r="6" fill="#8fc67d"/>
+    <text x="305" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7f">Ölçeklenir</text>
+
+    <rect x="382" y="260" width="85" height="32" rx="16" fill="#ffffff"/>
+    <circle cx="399" cy="276" r="6" fill="#eab66f"/>
+    <text x="411" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7f">Kompakt</text>
+  </g>
+</svg>
