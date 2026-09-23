@@ -12,9 +12,13 @@ tags:
   - istemci-sunucu
   - web
 toc: true
+image: /img/websocket-ve-http-81.png
 ---
 
 Bir tarayıcı sunucuya bağlandığında bağlantıyı kim yönetir: istemci mi, sunucu mu? HTTP ile WebSocket karşılaştırılırken sıkça “HTTP’de istemci, WebSocket’te iki taraf kontrol sahibidir” denir. Bu kullanışlı ama eksik bir özettir. Gerçekte TCP bağlantısının iki ucu, protokol kuralları, proxy zaman aşımı ve uygulama yaşam döngüsü birlikte söz sahibidir.
+
+
+![websocket-ve-http-81](/img/websocket-ve-http-81.svg)
 
 ``
 

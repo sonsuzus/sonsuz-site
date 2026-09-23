@@ -12,7 +12,11 @@ tags:
   - yüksek erişilebilirlik
   - sistem tasarımı
 toc: true
+image: /img/cap-teoremi-dagitik-56.png
 ---
+
+![cap-teoremi-dagitik-56](/img/cap-teoremi-dagitik-56.svg)
+
 
 Bir uygulamayı tek sunucudan çıkarıp dünyanın farklı bölgelerindeki sunuculara dağıttığınızda işler hızlanabilir, sistem daha dayanıklı olabilir ve kullanıcılar uygulamaya daha kolay ulaşabilir. Ancak ağ bağlantıları koptuğunda önemli bir seçim kapıyı çalar: Sistem doğru cevabı mı beklemeli, yoksa elindeki bilgiyle hemen cevap mı vermeli? CAP teoremi, dağıtık sistemlerin bu tatsız fakat kaçınılmaz ikilemini açıklar.
 

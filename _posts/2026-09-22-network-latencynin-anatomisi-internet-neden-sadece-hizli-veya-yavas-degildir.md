@@ -12,6 +12,7 @@ tags:
   - tcp
   - dns
 toc: true
+image: /img/network-latencynin-anatomisi-57.png
 ---
 
 Bir web sitesinin geç açılması, görüntülü görüşmenin robot sesine dönüşmesi veya çevrim içi oyunda karakterinizin duvara doğru koşmaya devam etmesi genellikle “internet yavaş” cümlesiyle açıklanır. Oysa ağ performansı tek bir hız göstergesinden ibaret değildir. Bant genişliği, gecikme, jitter ve paket kaybı birlikte çalışır; bunlardan yalnızca biri kötü olduğunda bile kullanıcı deneyimi dramatik biçimde değişebilir.
@@ -42,6 +43,9 @@ Yayılım gecikmesi ise sinyalin fiziksel ortamda yol almasıdır. Fiber optikte
 | Latency | Paketin ulaşma süresi | Tıklama sonrası bekleme |
 | Jitter | Gecikmedeki değişkenlik | Ses ve görüntü kesintileri |
 | Paket kaybı | Ulaşmayan paket oranı | Donma ve yeniden iletim |
+
+![network-latencynin-anatomisi-57](/img/network-latencynin-anatomisi-57.svg)
+
 
 ## Gecikmenin dört temel bileşeni
 

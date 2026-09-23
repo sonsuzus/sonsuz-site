@@ -12,6 +12,7 @@ tags:
   - btree
   - optimizasyon
 toc: true
+image: /img/database-indexingin-anatomisi-25.png
 ---
 
 Bir veritabanı indeksi, kitabın sonundaki alfabetik dizine benzer: Aradığınız bilgiye bütün sayfaları okumadan ulaşmanızı sağlar. Ancak kitaba her yeni cümle eklendiğinde dizini de güncellemek zorunda olduğunuzu düşünün. İşte indekslerin karanlık tarafı burada ortaya çıkar: Okumayı hızlandırırken yazma işlemlerine ek maliyet yüklerler.
@@ -93,3 +94,6 @@ Bu yapı `customer_id` içeren sorgular için etkilidir. Yalnızca `created_at` 
 Her sütuna indeks eklemek yerine yavaş sorguları ölçün, çalışma planlarını inceleyin ve gerçek iş yükünü temel alın. Kullanılmayan indeksleri veritabanının istatistik görünümleriyle tespit edin. Ayrıca indekslerin disk alanını, önbellek kullanımını ve `UPDATE` maliyetini artırdığını unutmayın.
 
 İyi indeksleme, maksimum indeks sayısına ulaşma yarışı değildir. Amaç; okuma kazancı ile yazma, depolama ve bakım maliyeti arasında dengeli bir anlaşma yapmaktır. Kısacası indeks güçlü bir hızlandırıcıdır, fakat her hızlandırıcı gibi yanlış yerde kullanılırsa motoru yorabilir.
+
+![database-indexingin-anatomisi-25](/img/database-indexingin-anatomisi-25.svg)
+

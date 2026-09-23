@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#92c9f6"/>
+      <stop offset="50%" stop-color="#9fdbca"/>
+      <stop offset="100%" stop-color="#b6b5f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5d7590" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#59708a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="79" cy="48" r="70" fill="#dcefff" opacity="0.48"/>
+  <circle cx="575" cy="275" r="88" fill="#ddf4df" opacity="0.5"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Ağ Gecikmesinin Anatomisi</text>
+  <text x="32" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718398">Hız tek başına deneyimi açıklamaz</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="116" width="100" height="91" rx="18" fill="#ffffff"/>
+    <rect x="513" y="116" width="100" height="91" rx="18" fill="#ffffff"/>
+  </g>
+
+  <rect x="51" y="137" width="52" height="34" rx="7" fill="#dff1ff" stroke="#83bce7" stroke-width="1.5"/>
+  <rect x="58" y="143" width="38" height="20" rx="3" fill="#8fcaf2"/>
+  <path d="M67 181 h20" stroke="#80a0bb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M77 170 v11" stroke="#80a0bb" stroke-width="3" stroke-linecap="round"/>
+  <text x="77" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42627d">Kullanıcı</text>
+
+  <rect x="537" y="136" width="52" height="39" rx="7" fill="#eeeaff" stroke="#a29ae4" stroke-width="1.5"/>
+  <path d="M546 146 h34 M546 154 h34 M546 162 h34" stroke="#a59ddb" stroke-width="2"/>
+  <circle cx="551" cy="146" r="2" fill="#8179c9"/>
+  <circle cx="551" cy="154" r="2" fill="#8179c9"/>
+  <circle cx="551" cy="162" r="2" fill="#8179c9"/>
+  <text x="563" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514b87">Sunucu</text>
+
+  <path d="M131 161 H509" stroke="#d3e5ea" stroke-width="12" stroke-linecap="round"/>
+  <path d="M131 161 H509" stroke="url(#route)" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="505,153 518,161 505,169" fill="#877fd1"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="157" y="130" width="80" height="61" rx="14" fill="#fff8dc"/>
+    <rect x="270" y="130" width="80" height="61" rx="14" fill="#e7f8ee"/>
+    <rect x="383" y="130" width="80" height="61" rx="14" fill="#f8e8ed"/>
+  </g>
+
+  <circle cx="181" cy="151" r="10" fill="#f2c968"/>
+  <path d="M181 145 v7 l5 3" fill="none" stroke="#8f6d26" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="198" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#746032">Yayılım</text>
+  <text x="198" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#907c4d">Mesafe</text>
+
+  <path d="M292 144 h20 v15 h-20z" fill="#8ed3b5"/>
+  <path d="M296 148 h12 M296 153 h12" stroke="#438b70" stroke-width="1.5"/>
+  <text x="310" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39755e">İletim</text>
+  <text x="310" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e997f">Paket boyutu</text>
+
+  <path d="M402 154 l7-9 7 9-7 9z" fill="#e99dad"/>
+  <path d="M425 145 h24 M425 151 h16 M425 157 h21" stroke="#b36777" stroke-width="2" stroke-linecap="round"/>
+  <text x="426" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#985364">Kuyruk</text>
+
+  <path d="M239 161 h25" stroke="#70a987" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="260,156 269,161 260,166" fill="#70a987"/>
+  <path d="M352 161 h25" stroke="#70a987" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="373,156 382,161 373,166" fill="#70a987"/>
+
+  <g filter="url(#shadow)">
+    <rect x="50" y="239" width="126" height="57" rx="15" fill="#ffffff"/>
+    <rect x="190" y="239" width="126" height="57" rx="15" fill="#ffffff"/>
+    <rect x="330" y="239" width="126" height="57" rx="15" fill="#ffffff"/>
+    <rect x="470" y="239" width="126" height="57" rx="15" fill="#ffffff"/>
+  </g>
+
+  <rect x="64" y="254" width="8" height="26" rx="4" fill="#75b9ed"/>
+  <text x="83" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Bant genişliği</text>
+  <text x="83" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73869a">Veri kapasitesi</text>
+
+  <circle cx="207" cy="267" r="13" fill="#ffe5a8"/>
+  <path d="M207 258 v10 l7 4" fill="none" stroke="#9b7629" stroke-width="2" stroke-linecap="round"/>
+  <text x="229" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Gecikme</text>
+  <text x="229" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73869a">Gidiş süresi</text>
+
+  <path d="M347 274 q7-18 14 0 q7-18 14 0 q7-18 14 0" fill="none" stroke="#9a8ee4" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="384" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Jitter</text>
+  <text x="384" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73869a">Değişkenlik</text>
+
+  <path d="M488 255 l10 10 M498 255 l-10 10" stroke="#e57d8c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M508 268 h12" stroke="#d9e2e8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M524 268 h12" stroke="#d9e2e8" stroke-width="3" stroke-linecap="round"/>
+  <text x="546" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Paket kaybı</text>
+  <text x="546" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73869a">Eksik veri</text>
+
+  <path d="M320 73 v35" stroke="#91aabd" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <g filter="url(#smallShadow)">
+    <rect x="251" y="61" width="138" height="32" rx="14" fill="#dceefc"/>
+  </g>
+  <text x="320" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6988">RTT: gidiş ve dönüş</text>
+</svg>

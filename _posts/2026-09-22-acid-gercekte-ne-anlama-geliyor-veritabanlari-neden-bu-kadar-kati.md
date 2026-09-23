@@ -12,7 +12,11 @@ tags:
   - backend
   - yazılım
 toc: true
+image: /img/acid-gercekte-ne-90.png
 ---
+
+![acid-gercekte-ne-90](/img/acid-gercekte-ne-90.svg)
+
 
 Bir banka hesabından diğerine para gönderdiğinizi düşünün. Para sizin hesabınızdan çıktı ama karşı tarafa ulaşmadıysa sistemin hızlı çalışması pek teselli olmaz. Veritabanlarının katılığı tam burada anlam kazanır: ACID, işlemlerin yalnızca çalışmasını değil, hata, elektrik kesintisi ve eşzamanlı kullanıcı baskısı altında bile doğru kalmasını sağlayan ilkeler bütünüdür.
 ``
