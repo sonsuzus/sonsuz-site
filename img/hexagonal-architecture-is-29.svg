@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9c8ff"/>
+      <stop offset="100%" stop-color="#bfa8ed"/>
+    </linearGradient>
+    <linearGradient id="port" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f1ff"/>
+      <stop offset="100%" stop-color="#b7dcf2"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66809a" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="321" cy="159" r="139" fill="#ffffff" opacity="0.38"/>
+  <circle cx="321" cy="159" r="112" fill="none" stroke="#b9d9db" stroke-width="1.5" stroke-dasharray="5 6" opacity="0.75"/>
+
+  <!-- Bağlantılar -->
+  <path d="M139 76 L220 116" fill="none" stroke="#6a91a8" stroke-width="2.2"/>
+  <polygon points="220,116 210,115 215,106" fill="#6a91a8"/>
+  <path d="M139 244 L220 202" fill="none" stroke="#6a91a8" stroke-width="2.2"/>
+  <polygon points="220,202 215,212 210,203" fill="#6a91a8"/>
+  <path d="M501 76 L420 116" fill="none" stroke="#6a91a8" stroke-width="2.2"/>
+  <polygon points="420,116 425,106 430,115" fill="#6a91a8"/>
+  <path d="M501 244 L420 202" fill="none" stroke="#6a91a8" stroke-width="2.2"/>
+  <polygon points="420,202 430,203 425,212" fill="#6a91a8"/>
+
+  <!-- Dış adaptörler -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="47" width="104" height="58" rx="15" fill="#fce7cf"/>
+    <rect x="35" y="215" width="104" height="58" rx="15" fill="#d9f1e4"/>
+    <rect x="501" y="47" width="104" height="58" rx="15" fill="#fde0e5"/>
+    <rect x="501" y="215" width="104" height="58" rx="15" fill="#e3e8fb"/>
+  </g>
+
+  <!-- Adaptör ikonları -->
+  <g fill="none" stroke="#9c6d35" stroke-width="2" stroke-linecap="round">
+    <path d="M58 72 h19 a3 3 0 0 1 3 3 v10 a3 3 0 0 1-3 3 H58 a3 3 0 0 1-3-3 V75 a3 3 0 0 1 3-3z"/>
+    <path d="M60 78 h15 M60 83 h10"/>
+  </g>
+  <g fill="none" stroke="#43866b" stroke-width="2" stroke-linecap="round">
+    <ellipse cx="67" cy="235" rx="13" ry="5"/>
+    <path d="M54 235 v13 c0 3 6 5 13 5s13-2 13-5v-13"/>
+    <path d="M54 241 c0 3 6 5 13 5s13-2 13-5"/>
+  </g>
+  <g fill="none" stroke="#ad6172" stroke-width="2" stroke-linecap="round">
+    <path d="M56 82 h22 M56 75 h15 M56 89 h17"/>
+    <circle cx="82" cy="75" r="3"/>
+    <circle cx="82" cy="89" r="3"/>
+  </g>
+  <g fill="none" stroke="#536fae" stroke-width="2" stroke-linecap="round">
+    <path d="M56 239 h22 M56 247 h16"/>
+    <circle cx="53" cy="239" r="2"/>
+    <circle cx="81" cy="239" r="2"/>
+    <circle cx="53" cy="247" r="2"/>
+    <circle cx="75" cy="247" r="2"/>
+  </g>
+
+  <text x="93" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#694b29">HTTP</text>
+  <text x="93" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765b3b">Giriş adaptörü</text>
+
+  <text x="93" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#356e58">Bellek içi</text>
+  <text x="93" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477a65">Test adaptörü</text>
+
+  <text x="548" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#8b4658">Mesajlaşma</text>
+  <text x="548" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#97596a">Çıkış adaptörü</text>
+
+  <text x="548" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#435b99">Veritabanı</text>
+  <text x="548" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d70a5">Çıkış adaptörü</text>
+
+  <!-- Portlar -->
+  <g filter="url(#softShadow)">
+    <rect x="183" y="101" width="86" height="30" rx="11" fill="url(#port)"/>
+    <rect x="183" y="187" width="86" height="30" rx="11" fill="url(#port)"/>
+    <rect x="371" y="101" width="86" height="30" rx="11" fill="url(#port)"/>
+    <rect x="371" y="187" width="86" height="30" rx="11" fill="url(#port)"/>
+  </g>
+  <text x="226" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#355c73">Giriş portu</text>
+  <text x="226" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#355c73">Giriş portu</text>
+  <text x="414" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#355c73">Çıkış portu</text>
+  <text x="414" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#355c73">Çıkış portu</text>
+
+  <!-- Porttan merkeze oklar -->
+  <path d="M269 116 L279 125" fill="none" stroke="#7a5ba0" stroke-width="2"/>
+  <polygon points="279,125 269,122 274,115" fill="#7a5ba0"/>
+  <path d="M269 202 L279 193" fill="none" stroke="#7a5ba0" stroke-width="2"/>
+  <polygon points="279,193 274,201 269,194" fill="#7a5ba0"/>
+  <path d="M371 116 L361 125" fill="none" stroke="#7a5ba0" stroke-width="2"/>
+  <polygon points="361,125 366,115 371,122" fill="#7a5ba0"/>
+  <path d="M371 202 L361 193" fill="none" stroke="#7a5ba0" stroke-width="2"/>
+  <polygon points="361,193 371,194 366,201" fill="#7a5ba0"/>
+
+  <!-- Çekirdek altıgen -->
+  <g filter="url(#shadow)">
+    <polygon points="320,77 385,115 385,190 320,228 255,190 255,115" fill="url(#core)"/>
+  </g>
+  <polygon points="320,87 376,119 376,186 320,218 264,186 264,119" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="320" cy="126" r="18" fill="#ffffff" opacity="0.62"/>
+  <path d="M311 126 h18 M320 117 v18" stroke="#76559e" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="320" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#493369">Uygulama Çekirdeği</text>
+  <text x="320" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b4479">Domain ve kurallar</text>
+
+  <!-- Başlık ve açıklama -->
+  <text x="320" y="25" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345168">Altıgen Mimari</text>
+  <text x="320" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7584">Teknoloji değişir, iş mantığı korunur</text>
+</svg>

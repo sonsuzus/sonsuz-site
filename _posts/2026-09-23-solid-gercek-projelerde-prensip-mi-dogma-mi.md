@@ -12,9 +12,13 @@ tags:
   - refactoring
   - tasarım-prensipleri
 toc: true
+image: /img/solid-gercek-projelerde-75.png
 ---
 
 SOLID, yazılım ekiplerinin toplantılarda ciddi yüz ifadeleriyle andığı; kod incelemelerinde ise bazen kılıç gibi kullandığı beş tasarım prensibidir. Doğru uygulandığında değişime dayanıklı kod üretir, yanlış yorumlandığında üç satırlık işlem için on iki arayüz ve yirmi sınıf doğurabilir. Dolayısıyla asıl soru “SOLID kullanmalı mıyız?” değil, “Hangi maliyet karşılığında ve hangi problem için kullanmalıyız?” olmalıdır.
+
+
+![solid-gercek-projelerde-75](/img/solid-gercek-projelerde-75.svg)
 
 ``
 

@@ -12,6 +12,7 @@ tags:
   - python
   - lineer-cebir
 toc: true
+image: /img/robot-kolunda-jacobian-26.png
 ---
 
 Bir robot kolunun eklemlerini döndürdüğümüzde uç efektörün hangi yönde ve ne kadar hızlı hareket edeceğini nasıl buluruz? Tersinden sorarsak, robotun elini belirli bir hızla ilerletmek için motorları hangi hızlarda çevirmeliyiz? Robotikte bu iki dünya arasındaki tercüman **Jacobian matrisi**dir. İlk bakışta ürkütücü görünen bu matris, aslında eklem hızlarını Kartezyen uzaydaki harekete bağlayan yerel bir yol haritasıdır.
@@ -111,3 +112,6 @@ q_dot_command = np.linalg.pinv(jacobian(*q)) @ target_velocity
 Kol tamamen açıldığında bazı yönlerde hareket üretmek zorlaşabilir. Jacobian bu durumda rank kaybeder; determinantı kare sistemlerde sıfıra yaklaşır. İstenen küçük bir uç efektör hızı, gerçekçi olmayan eklem hızları gerektirebilir. Bu nedenle denetleyiciler tekillik ölçümü, hız sınırlandırma ve sönümlü en küçük kareler gibi yöntemlerden yararlanır.
 
 Özetle Jacobian, robotun o anki duruşunda “eklemleri biraz oynatırsam elim nasıl hareket eder?” sorusunu cevaplar. Hız kontrolünden kuvvet analizine, yörünge takibinden görsel servoya kadar modern robot kolu uygulamalarının merkezinde bu güçlü bağlantı bulunur.
+
+![robot-kolunda-jacobian-26](/img/robot-kolunda-jacobian-26.svg)
+

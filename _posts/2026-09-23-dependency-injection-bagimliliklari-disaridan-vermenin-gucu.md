@@ -11,9 +11,13 @@ tags:
   - test edilebilirlik
   - nesne yönelimli programlama
 toc: true
+image: /img/dependency-injection-bagimliliklari-38.png
 ---
 
 Bir sınıfın ihtiyaç duyduğu nesneleri kendi içinde üretmesi ilk bakışta oldukça doğal görünür. Sonuçta kahve isteyen bir `OfisCalisani`, kahve makinesini de çalıştırabilir! Ancak sistem büyüdükçe sınıfların hem kendi işlerini yapması hem de bağımlılıklarını oluşturması; değişiklik, test ve bakım maliyetlerini yükseltir. Dependency Injection, yani Bağımlılık Enjeksiyonu, tam bu noktada devreye girer: Bir nesneye ihtiyaçları hazır olarak dışarıdan verilir.
+
+![dependency-injection-bagimliliklari-38](/img/dependency-injection-bagimliliklari-38.svg)
+
 ``
 ## Önce bağımlılık nedir?
 

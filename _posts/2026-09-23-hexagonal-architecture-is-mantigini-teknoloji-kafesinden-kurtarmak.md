@@ -12,7 +12,11 @@ tags:
   - typescript
   - test
 toc: true
+image: /img/hexagonal-architecture-is-29.png
 ---
+
+![hexagonal-architecture-is-29](/img/hexagonal-architecture-is-29.svg)
+
 
 Bir uygulamanın iş kuralları; veritabanı, web framework’ü veya mesaj kuyruğu değiştiğinde neden yeniden yazılmak zorunda kalsın? Hexagonal Architecture, diğer adıyla Ports and Adapters, tam olarak bu soruya itiraz eder. Amaç teknolojiyi yok etmek değil, onu iş mantığının patronu olmaktan çıkarıp değiştirilebilir bir yardımcıya dönüştürmektir.
 

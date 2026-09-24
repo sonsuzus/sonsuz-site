@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="sensorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfe3fa"/>
+      <stop offset="100%" stop-color="#d9f1fb"/>
+    </linearGradient>
+    <linearGradient id="modelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3d8ff"/>
+      <stop offset="100%" stop-color="#f4e6fb"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ccefd8"/>
+      <stop offset="100%" stop-color="#e7f8e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#61758c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#61758c" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="52" r="42" fill="#dceeff" opacity="0.45"/>
+  <circle cx="580" cy="264" r="65" fill="#dff3df" opacity="0.5"/>
+  <path d="M42 245 C132 213 160 278 237 250 S373 205 455 244 S555 284 613 229" fill="none" stroke="#c9dff0" stroke-width="2" opacity="0.55"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405469">SENSÖR KALİBRASYON AKIŞI</text>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="74" width="145" height="126" rx="20" fill="url(#sensorGrad)" stroke="#9dcce7"/>
+  </g>
+  <text x="107" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31556c">Ham Sensör</text>
+  <rect x="66" y="113" width="36" height="58" rx="16" fill="#f8fcff" stroke="#609cbb" stroke-width="2"/>
+  <rect x="75" y="122" width="18" height="32" rx="9" fill="#ffbd83"/>
+  <circle cx="84" cy="162" r="5" fill="#5d9abb"/>
+  <path d="M118 127 L153 120 M118 141 L153 141 M118 155 L153 164" stroke="#5e91aa" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="154" cy="120" r="4" fill="#ee8a77"/>
+  <circle cx="154" cy="141" r="4" fill="#f3b55e"/>
+  <circle cx="154" cy="164" r="4" fill="#ee8a77"/>
+  <text x="107" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466579">Sapmalı ölçüm</text>
+
+  <path d="M187 136 L220 136" fill="none" stroke="#789ab0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="226,136 216,130 216,142" fill="#789ab0"/>
+  <text x="204" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587287">ham x</text>
+
+  <g filter="url(#shadow)">
+    <rect x="230" y="58" width="178" height="160" rx="24" fill="url(#modelGrad)" stroke="#c2a9e6"/>
+  </g>
+  <text x="319" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#584477">Kalibrasyon Modeli</text>
+  <rect x="253" y="99" width="132" height="47" rx="13" fill="#fffaff" opacity="0.85"/>
+  <text x="319" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#674f83">y = a x + b</text>
+  <text x="319" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79658f">kazanç ve ofset</text>
+  <path d="M258 180 L282 161 L301 169 L322 137 L344 147 L375 116" fill="none" stroke="#8468ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="282" cy="161" r="4" fill="#f58b7a"/>
+  <circle cx="301" cy="169" r="4" fill="#f58b7a"/>
+  <circle cx="344" cy="147" r="4" fill="#f58b7a"/>
+  <circle cx="375" cy="116" r="4" fill="#f58b7a"/>
+  <text x="319" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69567f">regresyon</text>
+
+  <path d="M416 136 L450 136" fill="none" stroke="#789ab0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="456,136 446,130 446,142" fill="#789ab0"/>
+  <text x="432" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587287">düzelt</text>
+
+  <g filter="url(#shadow)">
+    <rect x="460" y="74" width="145" height="126" rx="20" fill="url(#outputGrad)" stroke="#9cd0ac"/>
+  </g>
+  <text x="532" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35604a">Güvenilir Veri</text>
+  <circle cx="532" cy="139" r="29" fill="#f9fffa" stroke="#79b88b" stroke-width="2"/>
+  <path d="M517 140 L527 150 L548 127" fill="none" stroke="#50a36b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="532" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477258">kalibre edilmiş y</text>
+
+  <g filter="url(#soft)">
+    <rect x="136" y="242" width="368" height="50" rx="17" fill="#ffffff" opacity="0.82" stroke="#d4e1dd"/>
+  </g>
+  <circle cx="162" cy="267" r="14" fill="#ffe5be"/>
+  <path d="M156 267 L160 271 L168 262" fill="none" stroke="#bd7d28" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="190" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#536b66">Referans noktaları</text>
+  <text x="190" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70847f">doğrulama ve RMSE</text>
+
+  <path d="M320 238 L320 223" fill="none" stroke="#91a8a0" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="320,217 314,227 326,227" fill="#91a8a0"/>
+  <path d="M139 266 C99 265 95 217 122 199" fill="none" stroke="#a2b8b1" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="126,194 116,198 124,205" fill="#a2b8b1"/>
+  <path d="M502 266 C542 264 548 217 520 199" fill="none" stroke="#a2b8b1" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="516,194 526,198 518,205" fill="#a2b8b1"/>
+</svg>

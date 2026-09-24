@@ -12,9 +12,13 @@ tags:
   - ölçüm
   - istatistik
 toc: true
+image: /img/sensor-kalibrasyonu-kusurlu-78.png
 ---
 
 Bir sıcaklık sensörünü buzlu suya daldırdığınızda 0 °C yerine 2,4 °C göstermesi onun işe yaramaz olduğu anlamına gelmez. Sensör yalnızca biraz “dürüstlük eğitimine” ihtiyaç duyuyor olabilir! Kalibrasyon, cihazın ürettiği ham değerlerle güvenilir referans değerler arasındaki ilişkiyi modelleyerek ölçüm hatasını azaltma işlemidir.
+
+
+![sensor-kalibrasyonu-kusurlu-78](/img/sensor-kalibrasyonu-kusurlu-78.svg)
 
 ``
 
