@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="writeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe8e6"/>
+      <stop offset="100%" stop-color="#ffd5d0"/>
+    </linearGradient>
+    <linearGradient id="readGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e1f2ff"/>
+      <stop offset="100%" stop-color="#cce9fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8495" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5d7485" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="50" r="82" fill="#d8eff5" opacity="0.32"/>
+  <circle cx="578" cy="277" r="104" fill="#e5eed4" opacity="0.35"/>
+
+  <text x="320" y="26" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5966">CQRS · Ayrık Sorumluluklar</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="259" y="42" width="122" height="42" rx="15" fill="#ffffff"/>
+    <circle cx="282" cy="63" r="10" fill="#d8eddf"/>
+    <path d="M278 63h8M282 59v8" stroke="#4e9370" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="329" y="67" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3d5966">İstemci</text>
+  </g>
+
+  <path d="M294 84 L191 108" fill="none" stroke="#b67770" stroke-width="2"/>
+  <polygon points="190,108 199,102 197,112" fill="#b67770"/>
+  <path d="M346 84 L449 108" fill="none" stroke="#5791ad" stroke-width="2"/>
+  <polygon points="450,108 443,112 441,102" fill="#5791ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="108" width="224" height="78" rx="19" fill="url(#writeGrad)"/>
+    <rect x="69" y="121" width="42" height="42" rx="13" fill="#fff5f3"/>
+    <path d="M82 142h16M90 134v16" stroke="#d26f65" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="125" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754c48">Yazma Modeli</text>
+    <text x="125" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b615c">Komut · Kurallar · Doğrulama</text>
+    <rect x="210" y="124" width="51" height="22" rx="9" fill="#fff1ee"/>
+    <text x="235.5" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b25c54">Komut</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="361" y="108" width="224" height="78" rx="19" fill="url(#readGrad)"/>
+    <rect x="375" y="121" width="42" height="42" rx="13" fill="#f3fbff"/>
+    <path d="M384 139h24M384 145h17M384 151h20" stroke="#4c8aa7" stroke-width="2" stroke-linecap="round"/>
+    <text x="431" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6680">Okuma Modeli</text>
+    <text x="431" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7f94">Sorgu · Hızlı görünüm</text>
+    <rect x="522" y="124" width="47" height="22" rx="9" fill="#eef9ff"/>
+    <text x="545.5" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4380a0">Sorgu</text>
+  </g>
+
+  <path d="M167 186 L167 214" fill="none" stroke="#b67770" stroke-width="2"/>
+  <polygon points="167,216 162,208 172,208" fill="#b67770"/>
+  <path d="M473 186 L473 214" fill="none" stroke="#5791ad" stroke-width="2"/>
+  <polygon points="473,216 468,208 478,208" fill="#5791ad"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="83" y="216" width="168" height="49" rx="15" fill="#fffdfb"/>
+    <ellipse cx="111" cy="234" rx="14" ry="5" fill="#f1beb7"/>
+    <path d="M97 234v14c0 3 28 3 28 0v-14M97 241c0 3 28 3 28 0" fill="none" stroke="#c77b73" stroke-width="1.5"/>
+    <text x="174" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#75534f">Yazma Deposu</text>
+    <text x="174" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#93706b">Tutarlı kayıt</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="389" y="216" width="168" height="49" rx="15" fill="#fbfeff"/>
+    <ellipse cx="417" cy="234" rx="14" ry="5" fill="#acd8ed"/>
+    <path d="M403 234v14c0 3 28 3 28 0v-14M403 241c0 3 28 3 28 0" fill="none" stroke="#649bb6" stroke-width="1.5"/>
+    <text x="480" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416a82">Okuma Deposu</text>
+    <text x="480" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66879a">Denormalize görünüm</text>
+  </g>
+
+  <path d="M251 241 C284 241 279 278 319 278 C359 278 356 241 389 241" fill="none" stroke="#8e7bb4" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <polygon points="389,241 380,237 381,247" fill="#8e7bb4"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="269" y="265" width="102" height="38" rx="14" fill="#eee8fa"/>
+    <circle cx="290" cy="284" r="10" fill="#ded2f1"/>
+    <path d="M285 284h10M290 279v10" stroke="#8269ad" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="329" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#66517f">Olay Akışı</text>
+  </g>
+
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71818a">Nihai tutarlılık · Bağımsız ölçekleme</text>
+</svg>

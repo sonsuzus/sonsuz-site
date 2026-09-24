@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="client" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9ddf8"/>
+    </linearGradient>
+    <linearGradient id="gate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4dcff"/>
+      <stop offset="100%" stop-color="#d3c9f5"/>
+    </linearGradient>
+    <linearGradient id="success" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f4e2"/>
+      <stop offset="100%" stop-color="#bde7d0"/>
+    </linearGradient>
+    <linearGradient id="store" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d6"/>
+      <stop offset="100%" stop-color="#f6d8a8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5d7184" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5d7184" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="85" cy="39" r="76" fill="#dceeff" opacity="0.42"/>
+  <circle cx="577" cy="277" r="100" fill="#dff2dd" opacity="0.42"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41566b">İdempotent Ödeme Akışı</text>
+  <text x="32" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728495">Tekrarlanan istek, tek sonuç</text>
+
+  <!-- client -->
+  <g filter="url(#shadow)">
+    <rect x="34" y="106" width="124" height="108" rx="20" fill="url(#client)"/>
+  </g>
+  <rect x="72" y="120" width="48" height="61" rx="8" fill="#f8fcff" stroke="#8eadd0" stroke-width="2"/>
+  <circle cx="96" cy="169" r="4" fill="#8eadd0"/>
+  <path d="M83 132h26M83 141h20M83 150h23" stroke="#9eb9d6" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="96" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405a74">İstemci</text>
+
+  <!-- duplicate requests -->
+  <path d="M160 132 C183 132 180 119 204 119" fill="none" stroke="#7196bf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="204,119 195,114 196,124" fill="#7196bf"/>
+  <text x="172" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617f9d">POST</text>
+
+  <path d="M160 178 C183 178 181 191 204 191" fill="none" stroke="#7196bf" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="204,191 195,186 196,196" fill="#7196bf"/>
+  <text x="165" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617f9d">Yeniden dene</text>
+
+  <!-- gateway -->
+  <g filter="url(#shadow)">
+    <rect x="207" y="89" width="164" height="134" rx="22" fill="url(#gate)"/>
+  </g>
+  <circle cx="289" cy="126" r="23" fill="#f7f4ff" stroke="#a798d1" stroke-width="2"/>
+  <path d="M281 127l6 6 12-14" fill="none" stroke="#7967ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="289" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#51446f">Anahtar Kontrolü</text>
+  <rect x="231" y="178" width="116" height="26" rx="13" fill="#ece7fa"/>
+  <text x="289" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#675888">İstek özeti</text>
+
+  <!-- store upper -->
+  <path d="M373 121 C393 121 394 88 415 88" fill="none" stroke="#947dbd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="415,88 406,83 407,93" fill="#947dbd"/>
+
+  <g filter="url(#soft)">
+    <rect x="419" y="48" width="176" height="78" rx="18" fill="url(#store)"/>
+  </g>
+  <ellipse cx="447" cy="72" rx="14" ry="6" fill="#fffaf1" stroke="#bd965a" stroke-width="1.7"/>
+  <path d="M433 72v22c0 4 28 4 28 0V72M433 83c0 4 28 4 28 0" fill="none" stroke="#bd965a" stroke-width="1.7"/>
+  <text x="473" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#74582e">İdempotency Kaydı</text>
+  <text x="473" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92744a">Anahtar + özet + yanıt</text>
+  <text x="473" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92744a">TTL</text>
+
+  <!-- bottom process -->
+  <path d="M373 191 C390 191 393 208 414 208" fill="none" stroke="#729f87" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="414,208 405,203 406,213" fill="#729f87"/>
+
+  <g filter="url(#soft)">
+    <rect x="418" y="166" width="177" height="83" rx="18" fill="url(#success)"/>
+  </g>
+  <circle cx="447" cy="194" r="16" fill="#f4fff7" stroke="#72ad89" stroke-width="1.7"/>
+  <path d="M447 184v20M438 194h18" stroke="#72ad89" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="474" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35634a">Tek Seferlik İşlem</text>
+  <text x="474" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#548168">Ödeme ve transaction</text>
+  <text x="474" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#548168">Benzersiz kısıt</text>
+
+  <!-- return line -->
+  <path d="M490 251 C482 282 290 287 205 257 C170 245 133 239 101 231" fill="none" stroke="#5e9d80" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="101,231 109,227 107,237" fill="#5e9d80"/>
+  <rect x="262" y="266" width="122" height="27" rx="13.5" fill="#e4f5e9" filter="url(#soft)"/>
+  <text x="323" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397254">Aynı yanıt döner</text>
+
+  <!-- subtle legend -->
+  <circle cx="44" cy="279" r="5" fill="#8c79bc"/>
+  <text x="56" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c7e8c">Aynı anahtar</text>
+  <circle cx="147" cy="279" r="5" fill="#71aa87"/>
+  <text x="159" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c7e8c">Tek nihai durum</text>
+</svg>

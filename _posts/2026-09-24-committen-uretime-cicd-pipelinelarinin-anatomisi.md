@@ -12,9 +12,13 @@ tags:
   - test
   - deployment
 toc: true
+image: /img/committen-uretime-cicd-48.png
 ---
 
 Bir geliştirici kodunu depoya gönderdiğinde görünmez bir fabrika çalışmaya başlar: kaynak kod derlenir, testlerden geçirilir, paketlenir ve kontrollü biçimde kullanıcılarla buluşturulur. CI/CD pipeline adı verilen bu otomatik yolculuk, “Benim bilgisayarımda çalışıyordu!” cümlesini tarihe gömmeyi hedefleyen teknik aşamalar ile güvenlik kapılarından oluşur.
+
+![committen-uretime-cicd-48](/img/committen-uretime-cicd-48.svg)
+
 ``
 
 ## CI ve CD gerçekte ne anlama gelir?

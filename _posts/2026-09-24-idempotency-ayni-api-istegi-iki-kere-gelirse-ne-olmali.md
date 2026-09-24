@@ -12,7 +12,11 @@ tags:
   - http
   - veritabanı
 toc: true
+image: /img/idempotency-ayni-api-27.png
 ---
+
+![idempotency-ayni-api-27](/img/idempotency-ayni-api-27.svg)
+
 
 Bir kullanıcı “Öde” düğmesine bastı, internet bağlantısı kısa süreliğine koptu ve istemci aynı isteği yeniden gönderdi. Müşteriden iki kez para mı çekmeliyiz? Elbette hayır! İşte **idempotency**, aynı işlemin birden fazla kez talep edilmesine rağmen sistemin nihai durumunun yalnızca bir kez çalıştırılmış gibi kalmasını sağlayan tasarım ilkesidir.
 ``

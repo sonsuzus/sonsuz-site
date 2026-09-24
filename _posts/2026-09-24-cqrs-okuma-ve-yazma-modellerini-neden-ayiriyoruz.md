@@ -12,9 +12,13 @@ tags:
   - backend
   - ölçeklenebilirlik
 toc: true
+image: /img/cqrs-okuma-ve-67.png
 ---
 
 Bir e-ticaret uygulamasında ürün satın almak ile ürün listesini görüntülemek aynı veri üzerinde çalışıyor gibi görünür. Ancak satın alma işlemi stok kontrolü, ödeme ve iş kuralları gerektirirken listeleme işlemi yalnızca hızlı ve zengin bir görünüm ister. CQRS, bu iki farklı ihtiyacı tek bir modelin omuzlarına yüklemek yerine okuma ve yazma taraflarını birbirinden ayırır.
+
+
+![cqrs-okuma-ve-67](/img/cqrs-okuma-ve-67.svg)
 
 ``
 

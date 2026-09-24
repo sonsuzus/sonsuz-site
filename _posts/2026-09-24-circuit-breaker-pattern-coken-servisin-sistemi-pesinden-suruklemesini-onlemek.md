@@ -12,6 +12,7 @@ tags:
   - hata yönetimi
   - javascript
 toc: true
+image: /img/circuit-breaker-pattern-70.png
 ---
 
 Bir mikroservis çöktüğünde sorun çoğu zaman yalnızca o servisle sınırlı kalmaz. Ona istek gönderen uygulamalar yanıt bekler, bağlantı havuzları dolar, iş parçacıkları tükenir ve masum servisler de domino taşları gibi devrilmeye başlar. **Circuit Breaker Pattern**, elektrik sigortasına benzeyen bir koruma mekanizması kurarak bu zincirleme felaketi durdurur.
@@ -35,6 +36,9 @@ Circuit Breaker küçük bir durum makinesi olarak çalışır:
 | **Closed** | İstekler hedef servise gider | Hata eşiği aşılırsa Open |
 | **Open** | İstekler gönderilmeden reddedilir | Bekleme süresi dolunca Half-Open |
 | **Half-Open** | Sınırlı sayıda deneme yapılır | Başarılıysa Closed, hatalıysa Open |
+
+![circuit-breaker-pattern-70](/img/circuit-breaker-pattern-70.svg)
+
 
 İsimler ilk bakışta ters gelebilir. Elektrik devresinde **closed**, akımın geçtiği; **open** ise akımın kesildiği durumdur. Burada “akım”, servis çağrılarıdır.
 

@@ -12,9 +12,13 @@ tags:
   - opentelemetry
   - devops
 toc: true
+image: /img/observability-uclusu-log-93.png
 ---
 
 Bir uygulamanın çalışıyor olması, sağlıklı olduğu anlamına gelmez. Kullanıcılar yavaşlıktan yakınırken sunucunun neşeyle “200 OK” demesi mümkündür. Observability, yani gözlemlenebilirlik; sistemin iç durumunu dışarıya ürettiği sinyallerden anlayabilme yeteneğidir. Bu sinyallerin klasik üçlüsü **log, metric ve trace** verileridir. Tek başlarına faydalı, birlikte kullanıldıklarında ise dijital bir dedektif ekibi kadar etkilidirler.
+
+
+![observability-uclusu-log-93](/img/observability-uclusu-log-93.svg)
 
 ``
 

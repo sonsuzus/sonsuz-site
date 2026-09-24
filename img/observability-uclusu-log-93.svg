@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#d9f4e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#65809a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#65809a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="57" cy="44" r="82" fill="#dceefd" opacity="0.55"/>
+  <circle cx="591" cy="270" r="104" fill="#e2f5db" opacity="0.6"/>
+
+  <text x="320" y="35" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536b">GÖZLEMLENEBİLİRLİK ÜÇLÜSÜ</text>
+  <text x="320" y="53" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668195">Sinyallerden sistemin iç durumuna</text>
+
+  <!-- connectors -->
+  <path d="M172 139 C192 139 195 144 212 144" fill="none" stroke="#78a9d1" stroke-width="2.5"/>
+  <polygon points="212,144 203,139 203,149" fill="#78a9d1"/>
+  <path d="M428 144 C445 144 449 139 468 139" fill="none" stroke="#7ab69a" stroke-width="2.5"/>
+  <polygon points="468,139 459,134 459,144" fill="#7ab69a"/>
+
+  <path d="M320 191 L320 220" fill="none" stroke="#9b86c8" stroke-width="2.5"/>
+  <polygon points="320,220 315,211 325,211" fill="#9b86c8"/>
+
+  <!-- Metric card -->
+  <g filter="url(#shadow)">
+    <rect x="38" y="93" width="134" height="94" rx="18" fill="#ffffff"/>
+    <rect x="38" y="93" width="134" height="9" rx="4.5" fill="#8bbdea"/>
+  </g>
+  <circle cx="63" cy="124" r="15" fill="#e5f2ff"/>
+  <path d="M54 132 L59 126 L64 129 L72 118" fill="none" stroke="#428bc4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="72" cy="118" r="2.5" fill="#428bc4"/>
+  <text x="87" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315772">METRİK</text>
+  <text x="87" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668195">Ne oluyor?</text>
+  <rect x="55" y="157" width="99" height="16" rx="8" fill="#fff1ef"/>
+  <text x="104.5" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ba5d55">Hata oranı ↑</text>
+
+  <!-- Center system -->
+  <g filter="url(#shadow)">
+    <rect x="212" y="91" width="216" height="101" rx="22" fill="url(#core)" stroke="#c3dfdc"/>
+  </g>
+  <circle cx="320" cy="126" r="26" fill="#ffffff" filter="url(#softShadow)"/>
+  <circle cx="320" cy="126" r="14" fill="none" stroke="#4f91a4" stroke-width="3"/>
+  <circle cx="320" cy="126" r="5" fill="#62b69d"/>
+  <path d="M320 105 L320 99 M341 126 L347 126 M320 147 L320 153 M299 126 L293 126" stroke="#4f91a4" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="320" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315c67">SİSTEM GÖRÜNÜRLÜĞÜ</text>
+  <text x="320" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668195">Ortak bağlam ve korelasyon</text>
+
+  <!-- Trace card -->
+  <g filter="url(#shadow)">
+    <rect x="468" y="93" width="134" height="94" rx="18" fill="#ffffff"/>
+    <rect x="468" y="93" width="134" height="9" rx="4.5" fill="#91cba7"/>
+  </g>
+  <circle cx="493" cy="124" r="15" fill="#e5f7eb"/>
+  <path d="M484 118 H491 V124 H497 V130 H505" fill="none" stroke="#4f9b70" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="484" cy="118" r="2.5" fill="#4f9b70"/>
+  <circle cx="505" cy="130" r="2.5" fill="#4f9b70"/>
+  <text x="517" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c6f51">TRACE</text>
+  <text x="517" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668195">Nerede oldu?</text>
+  <rect x="484" y="157" width="101" height="16" rx="8" fill="#edf8ee"/>
+  <text x="534.5" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#43845d">Ödeme servisi</text>
+
+  <!-- Log card -->
+  <g filter="url(#shadow)">
+    <rect x="219" y="221" width="202" height="76" rx="18" fill="#ffffff"/>
+    <rect x="219" y="221" width="202" height="9" rx="4.5" fill="#b6a1dc"/>
+  </g>
+  <circle cx="248" cy="254" r="15" fill="#f0ebfb"/>
+  <path d="M241 247 H255 M241 253 H255 M241 259 H250" stroke="#8065b1" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="274" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#644b91">LOG</text>
+  <text x="274" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668195">Neden olmuş olabilir?</text>
+  <rect x="274" y="278" width="126" height="1" fill="#e4dff0"/>
+  <text x="274" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a05562">Zaman aşımı kaydı</text>
+
+  <!-- bottom labels -->
+  <g filter="url(#softShadow)">
+    <rect x="52" y="236" width="130" height="34" rx="17" fill="#ffffff" opacity="0.92"/>
+    <rect x="458" y="236" width="130" height="34" rx="17" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <text x="117" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#517188">Alarm başlatır</text>
+  <text x="523" y="257" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#517188">Konumu daraltır</text>
+</svg>
