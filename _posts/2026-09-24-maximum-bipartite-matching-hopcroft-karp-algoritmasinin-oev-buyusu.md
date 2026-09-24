@@ -11,6 +11,7 @@ tags:
   - maksimum-eşleşme
   - python
 toc: true
+image: /img/maximum-bipartite-matching-63.png
 ---
 
 İşleri çalışanlara, öğrencileri projelere veya sürücüleri teslimatlara atamak istediğimizi düşünelim. Her aday yalnızca belirli seçeneklerle eşleşebiliyorsa problemimiz bir **iki parçalı graf eşleşmesi** problemine dönüşür. Tek tek eşleşme aramak kolay görünse de veri büyüdüğünde klasik yöntemler nefes nefese kalır. Hopcroft-Karp ise artırma yollarını toplu biçimde işleyerek sahneye çıkar ve karmaşıklığı $O(E\sqrt{V})$ seviyesine indirir.
@@ -115,3 +116,6 @@ def hopcroft_karp(graph):
 ## Büyü değil, akıllı gruplama
 
 Hopcroft-Karp’ın başarısı daha hızlı DFS yazmaktan değil, aramaları doğru katmanlarda **toplu yürütmekten** gelir. Büyük sosyal ağlarda, görev dağıtımında ve öneri sistemlerinde milyonlarca olası bağlantı bulunduğunda $O(VE)$ ile $O(E\sqrt{V})$ arasındaki fark, kahve molasıyla hafta sonu tatili arasındaki fark olabilir.
+
+![maximum-bipartite-matching-63](/img/maximum-bipartite-matching-63.svg)
+

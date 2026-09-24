@@ -12,6 +12,7 @@ tags:
   - javascript
   - jest
 toc: true
+image: /img/mutation-testing-testleriniz-75.png
 ---
 
 Test ekranındaki bütün işaretlerin yeşil olması insana huzur verir. Fakat yeşil testler, kodun doğru çalıştığını kanıtlamaktan çok mevcut beklentilerin karşılandığını söyler. Peki testlerimiz kritik bir hata karşısında gerçekten kırılıyor mu? Mutation testing, yani mutasyon testi, üretim koduna kontrollü küçük hatalar ekleyerek bu soruya oldukça eğlenceli ve zaman zaman acımasız bir cevap verir.
@@ -45,6 +46,9 @@ Hayır. Kod kapsamı ve mutasyon testi birbirini tamamlayan iki farklı ölçüm
 | Kod kapsamı | Bu satır çalıştırıldı mı? | Test edilmeyen bölgeleri gösterir | Sonuçların doğru doğrulandığını söylemez |
 | Mutasyon testi | Kod bozulursa test fark eder mi? | Assertion kalitesini ölçer | Çalıştırılması maliyetlidir |
 | Başarılı test sayısı | Kaç test geçti? | Hızlı geri bildirim verir | Testlerin anlamlı olduğunu kanıtlamaz |
+
+![mutation-testing-testleriniz-75](/img/mutation-testing-testleriniz-75.svg)
+
 
 Bir satır yüzde yüz kapsanabilir ama sonucu doğrulayan bir assertion bulunmayabilir. Mutasyon testi tam olarak bu rahat bölgeyi hedef alır.
 

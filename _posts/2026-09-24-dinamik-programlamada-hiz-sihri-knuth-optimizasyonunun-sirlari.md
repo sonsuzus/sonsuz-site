@@ -12,6 +12,7 @@ tags:
   - zaman karmaşıklığı
   - interval dp
 toc: true
+image: /img/dinamik-programlamada-hiz-66.png
 ---
 
 Dinamik programlama bazen doğru bağıntıyı bulduğumuz anda bizi sevindirir, ardından $O(N^3)$ zaman karmaşıklığıyla moralimizi bozar. Özellikle bir aralığı en uygun noktadan bölmeye dayanan problemlerde aynı geçişler tekrar tekrar incelenir. Knuth optimizasyonu, optimum bölme noktalarının düzenli hareket ettiğini matematiksel olarak kanıtlayabildiğimiz durumlarda bu kübik maliyeti $O(N^2)$ seviyesine indiren zarif bir tekniktir.
@@ -101,3 +102,6 @@ Kod aralıkları kısa uzunluktan başlayarak hesaplar; böylece ihtiyaç duyula
 ## En önemli tuzak
 
 Optimum noktaların örnek testlerde monoton görünmesi bir kanıt değildir. Koşullar sağlanmadan arama aralığını daraltmak, hızlı fakat yanlış bir algoritma üretir. Önce bağıntıyı standart interval DP biçimine dönüştürün, ardından maliyet fonksiyonunu matematiksel olarak inceleyin. Uygunsa Knuth optimizasyonu yalnızca performans artışı değil, kübik bir çözümü uygulanabilir hâle getiren gerçek bir algoritmik süper güçtür.
+
+![dinamik-programlamada-hiz-66](/img/dinamik-programlamada-hiz-66.svg)
+

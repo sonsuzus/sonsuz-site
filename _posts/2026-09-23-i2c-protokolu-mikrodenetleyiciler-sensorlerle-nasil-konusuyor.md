@@ -12,7 +12,7 @@ tags:
   - arduino
   - elektronik
 toc: true
-image: /img/i²c-protokolu-mikrodenetleyiciler-19.png
+image: /img/i2c-protokolu-mikrodenetleyiciler-19.png
 ---
 
 Bir mikrodenetleyicinin sıcaklık sensörüne “Orası kaç derece?” diye sorduğunu hayal edin. Sensör elbette konuşamaz; ancak I²C protokolü sayesinde ölçüm verilerini elektriksel sinyallerle iletebilir. Üstelik bunun için yalnızca iki haberleşme hattı gerekir. Arduino, ESP32, Raspberry Pi Pico ve benzeri kartların sensörlerle kurduğu bu küçük ama düzenli sohbetin arkasında adresler, saat darbeleri ve onay bitleri bulunur.
@@ -101,5 +101,5 @@ void loop() {}
 
 `endTransmission(false)` tekrarlanan START üreterek register seçimi ile okuma işlemini tek oturumda tutar. Sensör cevap vermiyorsa önce adresi, kabloları, ortak GND bağlantısını, besleme gerilimini ve pull-up dirençlerini kontrol edin. Bir logic analyzer kullanmak da SDA ve SCL üzerindeki görünmez sohbeti ekranda okunabilir hâle getirir. I²C’nin büyüsü tam burada yatar: iki kablo, çok sayıda cihaz ve şaşırtıcı derecede düzenli bir dijital konuşma!
 
-![i²c-protokolu-mikrodenetleyiciler-19](/img/i²c-protokolu-mikrodenetleyiciler-19.svg)
+![i2c-protokolu-mikrodenetleyiciler-19](/img/i2c-protokolu-mikrodenetleyiciler-19.svg)
 

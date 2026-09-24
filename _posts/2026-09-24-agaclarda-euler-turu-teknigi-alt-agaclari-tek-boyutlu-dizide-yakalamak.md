@@ -12,7 +12,11 @@ tags:
   - veri-yapıları
   - rekabetçi-programlama
 toc: true
+image: /img/agaclarda-euler-turu-67.png
 ---
+
+![agaclarda-euler-turu-67](/img/agaclarda-euler-turu-67.svg)
+
 
 Bir şirket hiyerarşisindeki yöneticileri, dosya sistemindeki klasörleri veya bir oyundaki yetenek ağacını düşünün. Bu yapılarda “X düğümünün altındaki bütün değerlerin toplamı nedir?” gibi sorgular sıkça karşımıza çıkar. Ağacı her sorguda yeniden dolaşmak pahalıdır; Euler Turu Tekniği (ETT), alt ağaçları tek boyutlu ve kesintisiz dizi aralıklarına dönüştürerek segment ağacının süper güçlerinden yararlanmamızı sağlar.
 

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d8f3e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#71839a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#71839a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="88" cy="45" r="88" fill="#dceeff" opacity="0.42"/>
+  <circle cx="584" cy="285" r="105" fill="#dff4df" opacity="0.45"/>
+  <circle cx="519" cy="37" r="47" fill="#fceccf" opacity="0.34"/>
+
+  <text x="32" y="34" fill="#43546b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">ÖRNEKLER DEĞİL, KURALLAR</text>
+  <line x1="32" y1="43" x2="608" y2="43" stroke="#ccdae6" stroke-width="1"/>
+
+  <!-- Bağlantılar -->
+  <path d="M170 131 C191 131 193 137 212 137" fill="none" stroke="#93aabd" stroke-width="2"/>
+  <polygon points="212,137 203,132 203,142" fill="#93aabd"/>
+
+  <path d="M392 137 C411 137 416 122 434 122" fill="none" stroke="#93aabd" stroke-width="2"/>
+  <polygon points="434,122 425,117 425,127" fill="#93aabd"/>
+
+  <path d="M302 189 C302 206 302 211 302 224" fill="none" stroke="#93aabd" stroke-width="2"/>
+  <polygon points="302,224 297,215 307,215" fill="#93aabd"/>
+
+  <path d="M392 157 C416 164 417 195 434 206" fill="none" stroke="#b2a2cb" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="434,206 424,202 427,212" fill="#b2a2cb"/>
+
+  <!-- Girdi üretici -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="89" width="138" height="84" rx="17" fill="#fffdf9"/>
+    <rect x="32" y="89" width="138" height="84" rx="17" fill="none" stroke="#d8e3eb"/>
+  </g>
+  <circle cx="56" cy="114" r="13" fill="#ffe4ae"/>
+  <path d="M51 114 h10 M56 109 v10" stroke="#a56c1d" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="78" y="112" fill="#34465b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Veri Üretici</text>
+  <text x="47" y="141" fill="#647489" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">binlerce girdi</text>
+  <g fill="#94b9dc">
+    <circle cx="51" cy="155" r="3"/>
+    <circle cx="64" cy="155" r="3"/>
+    <circle cx="77" cy="155" r="3"/>
+    <circle cx="90" cy="155" r="3"/>
+    <circle cx="103" cy="155" r="3"/>
+    <circle cx="116" cy="155" r="3"/>
+    <circle cx="129" cy="155" r="3"/>
+    <circle cx="142" cy="155" r="3"/>
+  </g>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <rect x="212" y="83" width="180" height="106" rx="23" fill="url(#core)"/>
+    <rect x="212" y="83" width="180" height="106" rx="23" fill="none" stroke="#b8d2db"/>
+  </g>
+  <circle cx="302" cy="112" r="18" fill="#ffffff" opacity="0.82"/>
+  <path d="M293 112 L299 118 L312 104" fill="none" stroke="#419276" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="302" y="143" text-anchor="middle" fill="#284958" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Özellik Kuralı</text>
+  <text x="302" y="163" text-anchor="middle" fill="#51707c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">her geçerli durumda</text>
+  <text x="302" y="180" text-anchor="middle" fill="#51707c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">korunur</text>
+
+  <!-- Sonuç -->
+  <g filter="url(#shadow)">
+    <rect x="434" y="77" width="174" height="92" rx="17" fill="#fffdfd"/>
+    <rect x="434" y="77" width="174" height="92" rx="17" fill="none" stroke="#d8e3eb"/>
+  </g>
+  <circle cx="458" cy="104" r="13" fill="#d8f3e6"/>
+  <path d="M452 104 L457 109 L466 99" fill="none" stroke="#3e9875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="480" y="105" fill="#34465b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Doğrulama</text>
+  <text x="456" y="136" fill="#597083" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">✓ Kural sağlandı</text>
+  <text x="456" y="154" fill="#597083" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">veya hata bulundu</text>
+
+  <!-- Shrinking -->
+  <g filter="url(#softShadow)">
+    <rect x="218" y="224" width="168" height="68" rx="16" fill="#fdf9ff"/>
+    <rect x="218" y="224" width="168" height="68" rx="16" fill="none" stroke="#ded1ec"/>
+  </g>
+  <circle cx="244" cy="250" r="14" fill="#eadbfa"/>
+  <path d="M238 246 L250 246 M241 251 L247 251 M244 256 L244 244" stroke="#8262a5" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="268" y="249" fill="#4a3c59" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Küçültme</text>
+  <text x="268" y="270" fill="#756682" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">en küçük karşı örnek</text>
+
+  <!-- Hata kartı -->
+  <g filter="url(#softShadow)">
+    <rect x="434" y="190" width="174" height="83" rx="17" fill="#fffafa"/>
+    <rect x="434" y="190" width="174" height="83" rx="17" fill="none" stroke="#ecd4d4"/>
+  </g>
+  <circle cx="458" cy="217" r="13" fill="#f9d9d6"/>
+  <path d="M454 213 L462 221 M462 213 L454 221" stroke="#b95d58" stroke-width="2" stroke-linecap="round"/>
+  <text x="480" y="218" fill="#5a4245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Karşı Örnek</text>
+  <rect x="454" y="238" width="53" height="20" rx="7" fill="#f5e9e8"/>
+  <text x="480" y="252" text-anchor="middle" fill="#a45b58" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">[0, -1]</text>
+  <text x="518" y="252" fill="#796469" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">hata izi</text>
+</svg>

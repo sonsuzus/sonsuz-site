@@ -11,6 +11,7 @@ tags:
   - hypothesis
   - yazılım-kalitesi
 toc: true
+image: /img/property-based-testing-48.png
 ---
 
 Geleneksel testlerde genellikle belirli bir girdi seçer, beklenen çıktıyı yazar ve sonucu karşılaştırırız. Peki seçmediğimiz binlerce girdi ne olacak? Property-Based Testing, birkaç mutlu örneğe güvenmek yerine yazılımın her geçerli durumda koruması gereken kuralları tanımlar. Test aracı da çok sayıda veri üreterek bu kuralları bozmaya çalışır; adeta kodumuza yaratıcı ve biraz da huysuz bir denetçi göndeririz.
@@ -80,3 +81,6 @@ Property-Based Testing araçlarının en etkileyici özelliklerinden biri **shri
 Hayır. Sabit iş kuralları, bilinen regresyonlar ve kullanıcı arayüzü ayrıntıları çoğu zaman örnek tabanlı testlerle daha açık anlatılır. En iyi strateji iki yaklaşımı birlikte kullanmaktır: Örnek testler önemli senaryoları belgelerken property testleri görünmeyen boşlukları araştırır.
 
 İyi bir başlangıç için fonksiyonunuza şu soruları sorun: İşlem tersine çevrilebilir mi? Çıktının boyutu hakkında ne biliyorum? Sıralama, tekrar uygulama veya girdi sırası sonucu etkilemeli mi? Bu soruların cevapları, kodun gerçek sözleşmesini ortaya çıkarır. Sonuçta mesele binlerce örnek yazmak değil; binlerce örneği yöneten birkaç güçlü kuralı keşfetmektir.
+
+![property-based-testing-48](/img/property-based-testing-48.svg)
+

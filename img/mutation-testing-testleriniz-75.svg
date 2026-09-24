@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#c9dbf5"/>
+    </linearGradient>
+    <linearGradient id="mutGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce8c9"/>
+      <stop offset="100%" stop-color="#f4d49c"/>
+    </linearGradient>
+    <linearGradient id="testGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5dcfb"/>
+      <stop offset="100%" stop-color="#d1c3f1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71839a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71839a" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="158" r="118" fill="#ffffff" opacity="0.42"/>
+  <circle cx="320" cy="158" r="91" fill="none" stroke="#c8d9e2" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7"/>
+
+  <!-- Bağlantılar -->
+  <path d="M176 155 C201 155 211 155 231 155" fill="none" stroke="#94aabc" stroke-width="2.5"/>
+  <polygon points="231,155 221,149 221,161" fill="#94aabc"/>
+  <path d="M405 155 C430 155 441 155 461 155" fill="none" stroke="#94aabc" stroke-width="2.5"/>
+  <polygon points="461,155 451,149 451,161" fill="#94aabc"/>
+
+  <path d="M320 99 C320 82 320 76 320 63" fill="none" stroke="#b7a5d5" stroke-width="2"/>
+  <polygon points="320,63 314,73 326,73" fill="#b7a5d5"/>
+  <path d="M320 211 C320 230 320 239 320 253" fill="none" stroke="#91b99b" stroke-width="2"/>
+  <polygon points="320,253 314,243 326,243" fill="#91b99b"/>
+
+  <!-- Kaynak kod -->
+  <g filter="url(#shadow)">
+    <rect x="34" y="112" width="142" height="86" rx="18" fill="url(#codeGrad)"/>
+    <rect x="48" y="128" width="12" height="12" rx="3" fill="#557faa"/>
+    <rect x="67" y="129" width="77" height="7" rx="3.5" fill="#7095bd" opacity="0.75"/>
+    <rect x="48" y="149" width="93" height="6" rx="3" fill="#90acd0"/>
+    <rect x="48" y="163" width="70" height="6" rx="3" fill="#90acd0"/>
+    <rect x="48" y="177" width="103" height="6" rx="3" fill="#90acd0"/>
+    <text x="105" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345776" font-weight="600">Kaynak Kod</text>
+  </g>
+
+  <!-- Mutasyon merkezi -->
+  <g filter="url(#shadow)">
+    <rect x="232" y="99" width="173" height="113" rx="25" fill="url(#mutGrad)"/>
+    <circle cx="318.5" cy="142" r="27" fill="#fff7e9" stroke="#d59645" stroke-width="2"/>
+    <path d="M306 136 L315 136 L315 128 L323 128 L323 136 L332 136 L332 144 L323 144 L323 153 L315 153 L315 144 L306 144 Z" fill="#d6813a"/>
+    <text x="318.5" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#754719" font-weight="700">Mutasyon Aracı</text>
+    <text x="318.5" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#916235">Küçük değişiklikler</text>
+  </g>
+
+  <!-- Test paketi -->
+  <g filter="url(#shadow)">
+    <rect x="461" y="112" width="145" height="86" rx="18" fill="url(#testGrad)"/>
+    <rect x="480" y="128" width="24" height="24" rx="7" fill="#faf8ff"/>
+    <path d="M486 140 L491 145 L500 133" fill="none" stroke="#7659ae" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="515" y="130" width="65" height="7" rx="3.5" fill="#917cc2" opacity="0.7"/>
+    <rect x="515" y="144" width="48" height="6" rx="3" fill="#b0a0d4"/>
+    <rect x="480" y="162" width="99" height="6" rx="3" fill="#b0a0d4"/>
+    <text x="533.5" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59417e" font-weight="600">Test Paketi</text>
+  </g>
+
+  <!-- Üst sonuç -->
+  <g filter="url(#softShadow)">
+    <rect x="239" y="19" width="162" height="45" rx="15" fill="#f0eafa"/>
+    <circle cx="260" cy="41.5" r="11" fill="#d8caef"/>
+    <path d="M255 41 L259 45 L266 37" fill="none" stroke="#7152a7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="326" y="38" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c427f" font-weight="700">Öldürülen</text>
+    <text x="326" y="53" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#786092">Test hata verdi</text>
+  </g>
+
+  <!-- Alt skor -->
+  <g filter="url(#softShadow)">
+    <rect x="218" y="253" width="204" height="52" rx="17" fill="#e2f1e3"/>
+    <circle cx="248" cy="279" r="16" fill="#bee0c2"/>
+    <path d="M248 267 A12 12 0 0 1 259 280" fill="none" stroke="#4e9660" stroke-width="4" stroke-linecap="round"/>
+    <path d="M248 267 L248 280 L259 280" fill="none" stroke="#83bd8d" stroke-width="3" stroke-linecap="round"/>
+    <text x="331" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#377044" font-weight="700">Mutasyon Puanı</text>
+    <text x="331" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c8e66">Öldürülen / Etkili mutantlar</text>
+  </g>
+
+  <!-- Yan sonuç kartları -->
+  <g filter="url(#softShadow)">
+    <rect x="24" y="230" width="150" height="54" rx="16" fill="#fff1ee"/>
+    <circle cx="48" cy="257" r="12" fill="#f7c8c0"/>
+    <path d="M43 252 L53 262 M53 252 L43 262" stroke="#bd5d50" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="111" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8e453c" font-weight="700">Hayatta Kalan</text>
+    <text x="111" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ad6b62">Eksik assertion</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="466" y="230" width="150" height="54" rx="16" fill="#e8f4f5"/>
+    <circle cx="490" cy="257" r="12" fill="#c7e3e4"/>
+    <path d="M484 257 L496 257 M490 251 L490 263" stroke="#43868a" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="553" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356e72" font-weight="700">Eşdeğer</text>
+    <text x="553" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b9194">Davranış değişmez</text>
+  </g>
+
+  <path d="M276 205 C237 217 185 229 150 234" fill="none" stroke="#d5a49c" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M363 205 C401 217 451 229 486 234" fill="none" stroke="#9cc6c8" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>
