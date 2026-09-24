@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="rootGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#cce1f7"/>
+    </linearGradient>
+    <linearGradient id="maxGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff4e6"/>
+      <stop offset="100%" stop-color="#c7ead5"/>
+    </linearGradient>
+    <linearGradient id="minGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d5"/>
+      <stop offset="100%" stop-color="#f8dfb7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#6d8298" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#8295a5" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="575" cy="38" r="70" fill="#dff2e5" opacity="0.42"/>
+  <circle cx="76" cy="292" r="92" fill="#dbeaff" opacity="0.42"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40576b">ALPHA-BETA BUDAMASI</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718493">Aynı karar • daha az dal</text>
+
+  <g stroke="#8aa0ad" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M150 157 C184 157 183 87 218 87"/>
+    <path d="M150 157 C184 157 183 160 218 160"/>
+    <path d="M150 157 C184 157 183 233 218 233"/>
+    <path d="M302 87 C337 87 338 62 375 62"/>
+    <path d="M302 87 C337 87 338 111 375 111"/>
+    <path d="M302 160 C337 160 338 143 375 143"/>
+    <path d="M302 160 C337 160 338 192 375 192"/>
+    <path d="M302 233 C337 233 338 247 375 247"/>
+  </g>
+
+  <g stroke="#d66270" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="5 5">
+    <path d="M302 87 C338 87 340 83 423 83"/>
+    <path d="M302 160 C338 160 340 169 423 169"/>
+    <path d="M302 233 C338 233 340 274 423 274"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="52" y="126" width="98" height="62" rx="18" fill="url(#rootGrad)"/>
+    <rect x="218" y="62" width="84" height="50" rx="15" fill="url(#maxGrad)"/>
+    <rect x="218" y="135" width="84" height="50" rx="15" fill="url(#minGrad)"/>
+    <rect x="218" y="208" width="84" height="50" rx="15" fill="url(#maxGrad)"/>
+
+    <rect x="375" y="42" width="70" height="40" rx="13" fill="#edf7ef"/>
+    <rect x="375" y="92" width="70" height="40" rx="13" fill="#edf7ef"/>
+    <rect x="375" y="123" width="70" height="40" rx="13" fill="#fff5e5"/>
+    <rect x="375" y="172" width="70" height="40" rx="13" fill="#fff5e5"/>
+    <rect x="375" y="227" width="70" height="40" rx="13" fill="#edf7ef"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="101" y="151" font-weight="700" fill="#37566f">KONUM</text>
+    <text x="101" y="170" fill="#557388">Arama kökü</text>
+
+    <text x="260" y="84" font-weight="700" fill="#39715a">MAX</text>
+    <text x="260" y="101" fill="#5d7c6b">α = 7</text>
+    <text x="260" y="157" font-weight="700" fill="#8a6331">MIN</text>
+    <text x="260" y="174" fill="#8c7049">β = 4</text>
+    <text x="260" y="230" font-weight="700" fill="#39715a">MAX</text>
+    <text x="260" y="247" fill="#5d7c6b">α = 5</text>
+
+    <text x="410" y="67" fill="#39715a">E = 7</text>
+    <text x="410" y="117" fill="#39715a">E = 3</text>
+    <text x="410" y="148" fill="#8a6331">E = 4</text>
+    <text x="410" y="197" fill="#8a6331">E = 6</text>
+    <text x="410" y="252" fill="#39715a">E = 5</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="478" y="61" width="128" height="128" rx="22" fill="#ffffff" opacity="0.86"/>
+  </g>
+  <text x="542" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425b70">MATEMATİKSEL MAKAS</text>
+  <line x1="501" y1="120" x2="550" y2="151" stroke="#d66270" stroke-width="5" stroke-linecap="round"/>
+  <line x1="550" y1="120" x2="501" y2="151" stroke="#d66270" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="525.5" cy="135.5" r="6" fill="#f7cbd0" stroke="#c65463" stroke-width="2"/>
+  <path d="M555 145 L574 164 L555 164 Z" fill="#d66270"/>
+  <text x="542" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a34d5a">α ≥ β → Budama</text>
+
+  <g filter="url(#soft)">
+    <rect x="478" y="210" width="128" height="72" rx="18" fill="#e6f3ff"/>
+  </g>
+  <text x="542" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41647d">HAMLE SIRALAMA</text>
+  <text x="542" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b788e">İyi hamle önce</text>
+  <text x="542" y="273" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39715a">Daha derin arama</text>
+
+  <g stroke="#d66270" stroke-width="2">
+    <line x1="420" y1="71" x2="432" y2="95"/>
+    <line x1="432" y1="71" x2="420" y2="95"/>
+    <line x1="420" y1="157" x2="432" y2="181"/>
+    <line x1="432" y1="157" x2="420" y2="181"/>
+    <line x1="420" y1="262" x2="432" y2="286"/>
+    <line x1="432" y1="262" x2="420" y2="286"/>
+  </g>
+
+  <path d="M451 160 C458 160 463 160 470 160" fill="none" stroke="#638aa2" stroke-width="2"/>
+  <polygon points="470,160 461,155 461,165" fill="#638aa2"/>
+</svg>
