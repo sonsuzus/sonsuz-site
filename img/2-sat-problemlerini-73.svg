@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="cardBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f1ff"/>
+      <stop offset="100%" stop-color="#d5e8fb"/>
+    </linearGradient>
+    <linearGradient id="cardMint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2f6ed"/>
+      <stop offset="100%" stop-color="#cff0df"/>
+    </linearGradient>
+    <linearGradient id="cardPeach" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0df"/>
+      <stop offset="100%" stop-color="#f8dec3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#5d7185" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#547080" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="500" cy="38" r="72" fill="#d9f1ec" opacity="0.4"/>
+  <circle cx="106" cy="298" r="82" fill="#dcecff" opacity="0.45"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38506b">2-SAT • SCC ile doğrusal çözüm</text>
+  <path d="M28 40 H612" stroke="#c8dae2" stroke-width="1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="67" width="151" height="190" rx="18" fill="url(#cardBlue)"/>
+  </g>
+  <text x="47" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#325779">Mantıksal maddeler</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="45" y="113" width="115" height="35" rx="10" fill="#ffffff"/>
+    <rect x="45" y="160" width="115" height="35" rx="10" fill="#ffffff"/>
+    <rect x="45" y="207" width="115" height="35" rx="10" fill="#ffffff"/>
+  </g>
+  <text x="65" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40596f">a veya b</text>
+  <text x="57" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40596f">b veya değil c</text>
+  <text x="54" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40596f">değil a veya c</text>
+
+  <path d="M181 160 H207" stroke="#6b96b6" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="212,160 204,155 204,165" fill="#6b96b6"/>
+  <text x="177" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7990">dönüşüm</text>
+
+  <g filter="url(#shadow)">
+    <rect x="220" y="56" width="213" height="213" rx="22" fill="#fafdff" stroke="#c9dfe7"/>
+  </g>
+  <text x="240" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34566a">İmplikasyon grafiği</text>
+
+  <path d="M267 130 C292 101 331 101 354 126 C373 148 360 177 331 183 C296 190 266 166 267 130Z" fill="#dff3eb" stroke="#9ed5c1" stroke-width="1.5"/>
+  <text x="283" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c8d75">SCC 1</text>
+
+  <path d="M339 191 C364 165 403 179 411 210 C419 239 390 252 363 240 C340 230 329 209 339 191Z" fill="#fff0dd" stroke="#eec79c" stroke-width="1.5"/>
+  <text x="357" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b5793e">SCC 2</text>
+
+  <path d="M287 143 C306 126 327 128 339 143" fill="none" stroke="#62a98c" stroke-width="2"/>
+  <polygon points="342,148 333,145 338,138" fill="#62a98c"/>
+  <path d="M344 162 C326 180 300 175 290 157" fill="none" stroke="#62a98c" stroke-width="2"/>
+  <polygon points="288,152 297,157 290,162" fill="#62a98c"/>
+
+  <path d="M363 201 C382 190 397 201 397 216" fill="none" stroke="#d59655" stroke-width="2"/>
+  <polygon points="397,221 392,212 402,213" fill="#d59655"/>
+  <path d="M390 227 C376 238 358 228 357 212" fill="none" stroke="#d59655" stroke-width="2"/>
+  <polygon points="358,207 363,216 353,215" fill="#d59655"/>
+
+  <path d="M331 158 C351 171 365 182 373 190" fill="none" stroke="#7f9eb6" stroke-width="2"/>
+  <polygon points="377,194 368,191 374,185" fill="#7f9eb6"/>
+
+  <circle cx="291" cy="144" r="14" fill="#ffffff" filter="url(#softShadow)"/>
+  <text x="287" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36715d">a</text>
+  <circle cx="337" cy="148" r="14" fill="#ffffff" filter="url(#softShadow)"/>
+  <text x="328" y="152" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36715d">değil b</text>
+  <circle cx="359" cy="207" r="14" fill="#ffffff" filter="url(#softShadow)"/>
+  <text x="355" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9e672e">b</text>
+  <circle cx="398" cy="218" r="14" fill="#ffffff" filter="url(#softShadow)"/>
+  <text x="389" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9e672e">değil c</text>
+
+  <path d="M436 161 H462" stroke="#6c9a8f" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="467,161 459,156 459,166" fill="#6c9a8f"/>
+
+  <g filter="url(#shadow)">
+    <rect x="476" y="76" width="137" height="79" rx="17" fill="url(#cardMint)"/>
+    <rect x="476" y="174" width="137" height="79" rx="17" fill="url(#cardPeach)"/>
+  </g>
+  <circle cx="501" cy="115" r="13" fill="#ffffff"/>
+  <path d="M495 115 L499 120 L507 109" fill="none" stroke="#4f9a78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="522" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37755c">Farklı SCC</text>
+  <text x="522" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7464">Çözülebilir</text>
+
+  <circle cx="501" cy="213" r="13" fill="#ffffff"/>
+  <path d="M495 207 L507 219 M507 207 L495 219" stroke="#c46d59" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="522" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a35d4d">Aynı SCC</text>
+  <text x="522" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92695b">Çelişki</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="232" y="281" width="176" height="25" rx="12" fill="#ffffff"/>
+  </g>
+  <text x="250" y="298" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#527185">Kosaraju: O(n + m)</text>
+</svg>

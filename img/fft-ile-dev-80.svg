@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="sayiGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#c8dcf5"/>
+    </linearGradient>
+    <linearGradient id="fftGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6ddff"/>
+      <stop offset="100%" stop-color="#d5c6f3"/>
+    </linearGradient>
+    <linearGradient id="carpGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8f4e7"/>
+      <stop offset="100%" stop-color="#bfe6d2"/>
+    </linearGradient>
+    <linearGradient id="sonucGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe8c8"/>
+      <stop offset="100%" stop-color="#f6d59d"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55708b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55708b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="72" cy="52" r="45" fill="#d9ebfa" opacity="0.38"/>
+  <circle cx="583" cy="274" r="63" fill="#dbeed9" opacity="0.42"/>
+  <path d="M30 278 C130 245 173 298 273 270 S453 234 615 268" fill="none" stroke="#c9deea" stroke-width="2" opacity="0.52"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31475d">FFT ile Büyük Sayı Çarpımı</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63798b">Konvolüsyon, frekans uzayında hızlı hesaplanır</text>
+
+  <path d="M146 145 L171 145" fill="none" stroke="#718ca4" stroke-width="2.2"/>
+  <polygon points="171,145 163,140 163,150" fill="#718ca4"/>
+  <path d="M280 145 L305 145" fill="none" stroke="#718ca4" stroke-width="2.2"/>
+  <polygon points="305,145 297,140 297,150" fill="#718ca4"/>
+  <path d="M414 145 L439 145" fill="none" stroke="#718ca4" stroke-width="2.2"/>
+  <polygon points="439,145 431,140 431,150" fill="#718ca4"/>
+  <path d="M548 145 L570 145" fill="none" stroke="#718ca4" stroke-width="2.2"/>
+  <polygon points="570,145 562,140 562,150" fill="#718ca4"/>
+
+  <g filter="url(#golge)">
+    <rect x="38" y="98" width="108" height="94" rx="17" fill="url(#sayiGrad)"/>
+    <rect x="38" y="98" width="108" height="29" rx="17" fill="#b9d5f0"/>
+    <path d="M38 115 L146 115 L146 127 L38 127 Z" fill="#b9d5f0"/>
+  </g>
+  <text x="92" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34516a">Girdi Sayıları</text>
+  <text x="92" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34516a">1 2 3 4</text>
+  <text x="92" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55728a">Basamaklar</text>
+
+  <g filter="url(#golge)">
+    <rect x="171" y="98" width="109" height="94" rx="17" fill="url(#fftGrad)"/>
+    <rect x="171" y="98" width="109" height="29" rx="17" fill="#cbbbea"/>
+    <path d="M171 115 L280 115 L280 127 L171 127 Z" fill="#cbbbea"/>
+  </g>
+  <text x="225.5" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#493b6b">Katsayılar</text>
+  <path d="M190 157 L206 142 L222 157 L238 142 L258 157" fill="none" stroke="#716092" stroke-width="2"/>
+  <circle cx="190" cy="157" r="3" fill="#716092"/>
+  <circle cx="206" cy="142" r="3" fill="#716092"/>
+  <circle cx="222" cy="157" r="3" fill="#716092"/>
+  <circle cx="238" cy="142" r="3" fill="#716092"/>
+  <circle cx="258" cy="157" r="3" fill="#716092"/>
+  <text x="225.5" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65567f">Polinom</text>
+
+  <g filter="url(#golge)">
+    <rect x="305" y="82" width="109" height="126" rx="17" fill="#eee9fb"/>
+    <rect x="305" y="82" width="109" height="31" rx="17" fill="#d5c8f0"/>
+    <path d="M305 98 L414 98 L414 113 L305 113 Z" fill="#d5c8f0"/>
+  </g>
+  <text x="359.5" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#493b6b">FFT</text>
+  <path d="M326 142 C332 126 347 126 353 142 S374 158 382 142 S397 126 402 142" fill="none" stroke="#7967a3" stroke-width="2.2"/>
+  <path d="M326 163 C337 180 348 180 359 163 S382 146 402 163" fill="none" stroke="#9a89bc" stroke-width="1.7"/>
+  <text x="359.5" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65567f">Frekans uzayı</text>
+
+  <g filter="url(#golge)">
+    <rect x="439" y="98" width="109" height="94" rx="17" fill="url(#carpGrad)"/>
+    <rect x="439" y="98" width="109" height="29" rx="17" fill="#b7e1ce"/>
+    <path d="M439 115 L548 115 L548 127 L439 127 Z" fill="#b7e1ce"/>
+  </g>
+  <text x="493.5" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315f50">Noktasal Çarpım</text>
+  <circle cx="470" cy="153" r="13" fill="#f7fffb" stroke="#78ab93" stroke-width="1.5"/>
+  <text x="470" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46745f">A</text>
+  <text x="493.5" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c7866">×</text>
+  <circle cx="516" cy="153" r="13" fill="#f7fffb" stroke="#78ab93" stroke-width="1.5"/>
+  <text x="516" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46745f">B</text>
+  <text x="493.5" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7866">O(N)</text>
+
+  <g filter="url(#golge)">
+    <rect x="570" y="98" width="58" height="94" rx="17" fill="url(#sonucGrad)"/>
+    <rect x="570" y="98" width="58" height="29" rx="17" fill="#f0cd90"/>
+    <path d="M570 115 L628 115 L628 127 L570 127 Z" fill="#f0cd90"/>
+  </g>
+  <text x="599" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#725226">Ters FFT</text>
+  <text x="599" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#725226">Sonuç</text>
+  <text x="599" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a693a">Elde</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="91" y="235" width="458" height="48" rx="16" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <circle cx="118" cy="259" r="14" fill="#f6d5d9"/>
+  <path d="M112 253 L124 265 M124 253 L112 265" stroke="#a65661" stroke-width="2"/>
+  <text x="143" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d7180">Uzun çarpma</text>
+  <text x="143" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738896">O(N²)</text>
+
+  <path d="M258 259 L323 259" stroke="#9aabb7" stroke-width="2"/>
+  <polygon points="323,259 315,254 315,264" fill="#9aabb7"/>
+
+  <circle cx="350" cy="259" r="14" fill="#cdebdc"/>
+  <path d="M344 259 L348 263 L357 253" fill="none" stroke="#39805c" stroke-width="2.2"/>
+  <text x="375" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416556">FFT yaklaşımı</text>
+  <text x="375" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638173">O(N log N)</text>
+</svg>

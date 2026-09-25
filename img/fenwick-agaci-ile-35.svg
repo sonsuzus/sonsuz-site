@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff0ff"/>
+      <stop offset="100%" stop-color="#dff6e7"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7891a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7891a5" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="84" cy="50" r="72" fill="#d9edff" opacity="0.35"/>
+  <circle cx="570" cy="280" r="98" fill="#dff4d9" opacity="0.35"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546a">Çok Boyutlu Aralık Sorguları</text>
+  <text x="30" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#678092">Fenwick Ağacı ile bellek dostu akış</text>
+
+  <g filter="url(#golge)">
+    <rect x="30" y="77" width="145" height="178" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="30" y="77" width="145" height="178" rx="18" fill="none" stroke="#d9e7ef"/>
+  <text x="51" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426277">Kaynak Matrisi</text>
+  <text x="51" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909e">Nokta güncelleme</text>
+
+  <g transform="translate(51 140)" filter="url(#hafifGolge)">
+    <rect x="0" y="0" width="18" height="18" rx="4" fill="#d8efff"/>
+    <rect x="22" y="0" width="18" height="18" rx="4" fill="#ebf5fb"/>
+    <rect x="44" y="0" width="18" height="18" rx="4" fill="#bce5ff"/>
+    <rect x="66" y="0" width="18" height="18" rx="4" fill="#ebf5fb"/>
+    <rect x="0" y="22" width="18" height="18" rx="4" fill="#edf6f8"/>
+    <rect x="22" y="22" width="18" height="18" rx="4" fill="#aee8d0"/>
+    <rect x="44" y="22" width="18" height="18" rx="4" fill="#cfeeff"/>
+    <rect x="66" y="22" width="18" height="18" rx="4" fill="#eaf7ef"/>
+    <rect x="0" y="44" width="18" height="18" rx="4" fill="#cfeeff"/>
+    <rect x="22" y="44" width="18" height="18" rx="4" fill="#dff5e5"/>
+    <rect x="44" y="44" width="18" height="18" rx="4" fill="#77cde9"/>
+    <rect x="66" y="44" width="18" height="18" rx="4" fill="#c6ebd6"/>
+    <rect x="0" y="66" width="18" height="18" rx="4" fill="#e7f5fb"/>
+    <rect x="22" y="66" width="18" height="18" rx="4" fill="#d4ede0"/>
+    <rect x="44" y="66" width="18" height="18" rx="4" fill="#c8e8fa"/>
+    <rect x="66" y="66" width="18" height="18" rx="4" fill="#d9f1e1"/>
+    <rect x="42" y="42" width="22" height="22" rx="5" fill="none" stroke="#2688b2" stroke-width="2"/>
+  </g>
+  <text x="53" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b829a">Δ ekle: (x, y)</text>
+
+  <path d="M180 166 C197 166 201 166 217 166" fill="none" stroke="#79a7bc" stroke-width="2"/>
+  <polygon points="217,166 208,161 208,171" fill="#79a7bc"/>
+
+  <g filter="url(#golge)">
+    <rect x="222" y="67" width="198" height="204" rx="22" fill="url(#merkez)"/>
+  </g>
+  <rect x="222" y="67" width="198" height="204" rx="22" fill="none" stroke="#c9e2df"/>
+  <text x="256" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#246176">2B Fenwick Ağacı</text>
+  <text x="266" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587d82">Tek düz vektör</text>
+
+  <g transform="translate(258 135)">
+    <rect x="0" y="0" width="128" height="31" rx="9" fill="#ffffff" filter="url(#hafifGolge)"/>
+    <text x="15" y="20" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#417084">bit[x · (m+1) + y]</text>
+    <path d="M64 172 L64 113" fill="none" stroke="#53a896" stroke-width="2"/>
+    <polygon points="64,108 59,117 69,117" fill="#53a896"/>
+    <path d="M72 111 C95 105 108 91 110 72" fill="none" stroke="#53a896" stroke-width="2"/>
+    <polygon points="111,67 106,76 116,75" fill="#53a896"/>
+    <path d="M56 111 C30 104 19 90 18 72" fill="none" stroke="#53a896" stroke-width="2"/>
+    <polygon points="18,67 13,76 23,76" fill="#53a896"/>
+    <rect x="4" y="176" width="120" height="25" rx="8" fill="#caeee0"/>
+    <text x="20" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#277362">lowbit(i)</text>
+  </g>
+
+  <rect x="235" y="278" width="171" height="25" rx="12" fill="#ffffff" opacity="0.88"/>
+  <text x="251" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7180">Güncelleme: O(log n · log m)</text>
+
+  <path d="M425 166 C440 166 445 166 458 166" fill="none" stroke="#79a7bc" stroke-width="2"/>
+  <polygon points="458,166 449,161 449,171" fill="#79a7bc"/>
+
+  <g filter="url(#golge)">
+    <rect x="463" y="77" width="147" height="178" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="463" y="77" width="147" height="178" rx="18" fill="none" stroke="#d9e7ef"/>
+  <text x="484" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426277">Dikdörtgen Toplamı</text>
+  <text x="484" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909e">Önek farkları</text>
+
+  <g transform="translate(488 140)">
+    <rect x="0" y="0" width="93" height="72" rx="8" fill="#eef8f4" stroke="#bedfd2"/>
+    <path d="M23 0 V72 M46 0 V72 M69 0 V72 M0 18 H93 M0 36 H93 M0 54 H93" fill="none" stroke="#c7e4d8" stroke-width="1"/>
+    <rect x="23" y="18" width="46" height="36" rx="3" fill="#90d6bc" opacity="0.62"/>
+    <rect x="23" y="18" width="46" height="36" rx="3" fill="none" stroke="#27866c" stroke-width="2"/>
+    <circle cx="23" cy="18" r="3" fill="#27866c"/>
+    <circle cx="69" cy="54" r="3" fill="#27866c"/>
+  </g>
+  <text x="484" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c7a69">P₂ − P₃ − P₄ + P₁</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="430" y="278" width="180" height="25" rx="12" fill="#fff8e7"/>
+  </g>
+  <text x="447" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6d28">Bellek: yaklaşık n · m</text>
+</svg>
