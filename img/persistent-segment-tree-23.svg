@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="head" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ddeafe"/>
+      <stop offset="100%" stop-color="#e4f4e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#6e87a0" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#607c95" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="585" cy="38" r="72" fill="#dceff0" opacity="0.45"/>
+  <circle cx="38" cy="280" r="80" fill="#e6e5fa" opacity="0.42"/>
+
+  <rect x="22" y="18" width="596" height="43" rx="15" fill="url(#head)" filter="url(#shadow)"/>
+  <circle cx="48" cy="39.5" r="13" fill="#7c9ed8"/>
+  <path d="M43 35 L48 31 L53 35 L53 44 L48 48 L43 44 Z" fill="#ffffff" opacity="0.92"/>
+  <text x="72" y="37" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31516d">Persistent Segment Tree</text>
+  <text x="72" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587185">Sürümler korunur, değişen yol kopyalanır</text>
+
+  <rect x="22" y="82" width="130" height="210" rx="18" fill="#fafdff" filter="url(#shadow)"/>
+  <text x="43" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42637a">Kök dizisi</text>
+  <line x1="52" y1="126" x2="52" y2="255" stroke="#afc4d0" stroke-width="2"/>
+
+  <circle cx="52" cy="139" r="8" fill="#88acd9" filter="url(#smallShadow)"/>
+  <rect x="68" y="127" width="65" height="24" rx="8" fill="#e6f0fd"/>
+  <text x="80" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365a7a">Sürüm 0</text>
+
+  <circle cx="52" cy="190" r="8" fill="#e99b83" filter="url(#smallShadow)"/>
+  <rect x="68" y="178" width="65" height="24" rx="8" fill="#fff0e9"/>
+  <text x="80" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80513f">Sürüm 1</text>
+
+  <circle cx="52" cy="241" r="8" fill="#9a89cc" filter="url(#smallShadow)"/>
+  <rect x="68" y="229" width="65" height="24" rx="8" fill="#f0edfb"/>
+  <text x="80" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#594d83">Sürüm 2</text>
+
+  <path d="M140 139 C157 139 158 126 178 126" fill="none" stroke="#88acd9" stroke-width="2"/>
+  <polygon points="178,126 170,122 170,130" fill="#88acd9"/>
+  <path d="M140 190 C158 190 160 180 198 180" fill="none" stroke="#e99b83" stroke-width="2"/>
+  <polygon points="198,180 190,176 190,184" fill="#e99b83"/>
+  <path d="M140 241 C158 241 162 234 218 234" fill="none" stroke="#9a89cc" stroke-width="2"/>
+  <polygon points="218,234 210,230 210,238" fill="#9a89cc"/>
+
+  <rect x="173" y="81" width="210" height="211" rx="18" fill="#fbfdff" filter="url(#shadow)"/>
+  <text x="194" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42637a">Paylaşılan yapı</text>
+  <text x="194" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718796">Değişmeyen dallar ortak</text>
+
+  <path d="M231 144 L204 177 M231 144 L279 177 M279 177 L260 213 M279 177 L320 213" fill="none" stroke="#90aabd" stroke-width="2"/>
+  <rect x="207" y="132" width="48" height="24" rx="8" fill="#e6f0fd" filter="url(#smallShadow)"/>
+  <text x="219" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365a7a">[1,8]</text>
+  <rect x="180" y="165" width="48" height="24" rx="8" fill="#e6f0fd" filter="url(#smallShadow)"/>
+  <text x="192" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365a7a">[1,4]</text>
+  <rect x="255" y="165" width="48" height="24" rx="8" fill="#dff1e4" filter="url(#smallShadow)"/>
+  <text x="267" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c7050">[5,8]</text>
+  <rect x="236" y="201" width="48" height="24" rx="8" fill="#dff1e4" filter="url(#smallShadow)"/>
+  <text x="248" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c7050">[5,6]</text>
+  <rect x="296" y="201" width="48" height="24" rx="8" fill="#dff1e4" filter="url(#smallShadow)"/>
+  <text x="308" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c7050">[7,8]</text>
+
+  <path d="M279 189 L279 201" stroke="#e99b83" stroke-width="4" stroke-linecap="round"/>
+  <path d="M260 225 L260 247" stroke="#e99b83" stroke-width="4" stroke-linecap="round"/>
+  <rect x="236" y="247" width="48" height="23" rx="8" fill="#fff0e9" filter="url(#smallShadow)"/>
+  <text x="248" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80513f">Yeni düğüm</text>
+
+  <rect x="404" y="82" width="214" height="210" rx="18" fill="#fbfdff" filter="url(#shadow)"/>
+  <text x="425" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42637a">Güncelleme ve sorgu</text>
+
+  <rect x="425" y="126" width="172" height="43" rx="12" fill="#fff0e9"/>
+  <circle cx="447" cy="147" r="11" fill="#e99b83"/>
+  <path d="M443 147 L446 150 L452 143" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="466" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7a503f">Noktasal güncelleme</text>
+  <text x="466" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c6a5b">O(log n) yeni düğüm</text>
+
+  <path d="M511 174 L511 187" stroke="#8fa6b7" stroke-width="2"/>
+  <polygon points="511,193 506,185 516,185" fill="#8fa6b7"/>
+
+  <rect x="425" y="195" width="172" height="43" rx="12" fill="#e8f1fd"/>
+  <circle cx="447" cy="216" r="11" fill="#7c9ed8"/>
+  <path d="M442 217 L446 221 L453 212" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="466" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6285">Eski kökü seç</text>
+  <text x="466" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617a92">Aralık sorgusu: O(log n)</text>
+
+  <rect x="425" y="252" width="172" height="23" rx="9" fill="#edf6ea"/>
+  <text x="445" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7657">Bellek: O(n + u log n)</text>
+</svg>

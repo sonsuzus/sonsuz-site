@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5dcff"/>
+      <stop offset="100%" stop-color="#d5efff"/>
+    </linearGradient>
+    <linearGradient id="eulerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f5ec"/>
+      <stop offset="100%" stop-color="#d9eaff"/>
+    </linearGradient>
+    <linearGradient id="moGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0cf"/>
+      <stop offset="100%" stop-color="#ffe2df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="38" r="70" fill="#dcefff" opacity="0.45"/>
+  <circle cx="580" cy="284" r="94" fill="#dff3dc" opacity="0.42"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Ağaçta Mo Algoritması</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708398">Euler turu ile çevrimdışı yol sorguları</text>
+
+  <!-- connectors -->
+  <path d="M154 165 C168 165 173 165 187 165" fill="none" stroke="#7c9ab1" stroke-width="2"/>
+  <polygon points="187,165 179,160 179,170" fill="#7c9ab1"/>
+  <path d="M319 165 C332 165 338 165 351 165" fill="none" stroke="#7c9ab1" stroke-width="2"/>
+  <polygon points="351,165 343,160 343,170" fill="#7c9ab1"/>
+  <path d="M486 165 C499 165 505 165 517 165" fill="none" stroke="#7c9ab1" stroke-width="2"/>
+  <polygon points="517,165 509,160 509,170" fill="#7c9ab1"/>
+
+  <!-- Tree -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="77" width="127" height="177" rx="18" fill="url(#treeGrad)"/>
+  </g>
+  <text x="46" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566e">Ağaç ve Yol</text>
+  <path d="M91 127 L61 160 M91 127 L121 160 M61 160 L48 202 M61 160 L76 202 M121 160 L107 202 M121 160 L137 202" fill="none" stroke="#778da8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M48 202 L76 202 L91 127 L121 160" fill="none" stroke="#f16d81" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="91" cy="127" r="12" fill="#8c7bd9" filter="url(#smallShadow)"/>
+  <circle cx="61" cy="160" r="12" fill="#65bda6" filter="url(#smallShadow)"/>
+  <circle cx="121" cy="160" r="12" fill="#6eaee2" filter="url(#smallShadow)"/>
+  <circle cx="48" cy="202" r="12" fill="#f48c8c" filter="url(#smallShadow)"/>
+  <circle cx="76" cy="202" r="12" fill="#f1bb67" filter="url(#smallShadow)"/>
+  <circle cx="107" cy="202" r="12" fill="#9d84d9" filter="url(#smallShadow)"/>
+  <circle cx="137" cy="202" r="12" fill="#72c4ad" filter="url(#smallShadow)"/>
+  <text x="88" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">r</text>
+  <text x="44" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65788c">u → v yolu</text>
+
+  <!-- Euler -->
+  <g filter="url(#shadow)">
+    <rect x="187" y="77" width="132" height="177" rx="18" fill="url(#eulerGrad)"/>
+  </g>
+  <text x="207" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566e">Euler Turu</text>
+  <text x="207" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65788c">2N konum</text>
+  <g filter="url(#smallShadow)">
+    <rect x="207" y="142" width="19" height="28" rx="6" fill="#8c7bd9"/>
+    <rect x="228" y="142" width="19" height="28" rx="6" fill="#65bda6"/>
+    <rect x="249" y="142" width="19" height="28" rx="6" fill="#f48c8c"/>
+    <rect x="270" y="142" width="19" height="28" rx="6" fill="#65bda6"/>
+    <rect x="291" y="142" width="19" height="28" rx="6" fill="#8c7bd9"/>
+  </g>
+  <path d="M211 190 L305 190" stroke="#80a0ae" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M220 183 L220 199 M296 183 L296 199" stroke="#f16d81" stroke-width="2"/>
+  <text x="258" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#5c7186">[sol, sağ]</text>
+  <text x="253" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#65788c">giriş ve çıkış</text>
+
+  <!-- Mo blocks -->
+  <g filter="url(#shadow)">
+    <rect x="351" y="77" width="135" height="177" rx="18" fill="url(#moGrad)"/>
+  </g>
+  <text x="371" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566e">Mo Blokları</text>
+  <text x="371" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65788c">√N ile sırala</text>
+  <rect x="370" y="141" width="31" height="32" rx="7" fill="#f8c95c"/>
+  <rect x="404" y="141" width="31" height="32" rx="7" fill="#b9d9ef"/>
+  <rect x="438" y="141" width="31" height="32" rx="7" fill="#f8c95c"/>
+  <path d="M379 192 C393 181 407 204 421 192 S449 181 461 192" fill="none" stroke="#e27b86" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="383" cy="192" r="5" fill="#e27b86"/>
+  <circle cx="459" cy="192" r="5" fill="#e27b86"/>
+  <text x="418" y="218" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#5c7186">iki işaretçi</text>
+  <text x="418" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#65788c">ekle / çıkar</text>
+
+  <!-- Answer -->
+  <g filter="url(#shadow)">
+    <rect x="517" y="77" width="96" height="177" rx="18" fill="#edf3ff"/>
+  </g>
+  <text x="535" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566e">Etkin Küme</text>
+  <rect x="536" y="124" width="57" height="31" rx="9" fill="#d9f1e6"/>
+  <text x="564" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#397963">toggle</text>
+  <path d="M549 169 C542 181 546 194 558 198 C570 202 582 195 581 183" fill="none" stroke="#7194b2" stroke-width="2"/>
+  <polygon points="582,177 586,186 576,185" fill="#7194b2"/>
+  <circle cx="551" cy="186" r="7" fill="#f48c8c"/>
+  <circle cx="568" cy="190" r="7" fill="#8c7bd9"/>
+  <circle cx="582" cy="178" r="7" fill="#65bda6"/>
+  <text x="565" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#40566e">farklı renk</text>
+  <text x="565" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#65788c">sayısı</text>
+
+  <!-- LCA callout -->
+  <g filter="url(#shadow)">
+    <rect x="233" y="270" width="177" height="35" rx="14" fill="#e9e0fb"/>
+  </g>
+  <circle cx="254" cy="287" r="10" fill="#8c7bd9"/>
+  <text x="254" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">+</text>
+  <text x="275" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d4671">LCA geçici eklenir</text>
+  <path d="M321 254 L321 266" stroke="#8c7bd9" stroke-width="2"/>
+  <polygon points="321,270 316,263 326,263" fill="#8c7bd9"/>
+</svg>
