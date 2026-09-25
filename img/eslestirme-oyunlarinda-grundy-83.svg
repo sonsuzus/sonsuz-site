@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="cardBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8dcf7"/>
+    </linearGradient>
+    <linearGradient id="cardMint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcf3e6"/>
+      <stop offset="100%" stop-color="#bfe6d1"/>
+    </linearGradient>
+    <linearGradient id="cardPeach" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d9"/>
+      <stop offset="100%" stop-color="#f7d9aa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#65809a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#64839d" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="54" cy="42" r="70" fill="#d8edff" opacity="0.42"/>
+  <circle cx="596" cy="281" r="88" fill="#d9f1d8" opacity="0.48"/>
+  <path d="M18 276 C122 243 150 294 246 270 S405 226 623 260" fill="none" stroke="#bcdcec" stroke-width="2" opacity="0.45"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526b">GRUNDY SAYILARI İLE KAZANAN HAMLE</text>
+  <text x="30" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668095">Durumları sayıya indir, bileşenleri birleştir</text>
+
+  <!-- left: states -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="77" width="160" height="184" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="51" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526b">OYUN DURUMLARI</text>
+  <text x="51" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698398">Hamle ağı</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="51" y="143" width="48" height="42" rx="12" fill="url(#cardBlue)"/>
+    <rect x="117" y="143" width="48" height="42" rx="12" fill="url(#cardMint)"/>
+    <rect x="84" y="202" width="48" height="42" rx="12" fill="url(#cardPeach)"/>
+  </g>
+  <text x="70" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526b">s</text>
+  <text x="135" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526b">t₁</text>
+  <text x="102" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#72573a">t₂</text>
+
+  <path d="M99 163 L110 163" stroke="#7898ad" stroke-width="2"/>
+  <polygon points="115,163 108,159 108,167" fill="#7898ad"/>
+  <path d="M79 185 L101 199" stroke="#7898ad" stroke-width="2"/>
+  <polygon points="105,202 97,200 101,194" fill="#7898ad"/>
+  <path d="M139 185 L119 199" stroke="#7898ad" stroke-width="2"/>
+  <polygon points="115,202 119,194 123,200" fill="#7898ad"/>
+
+  <!-- arrow 1 -->
+  <path d="M194 169 L220 169" fill="none" stroke="#6d9eba" stroke-width="2.5"/>
+  <polygon points="226,169 217,164 217,174" fill="#6d9eba"/>
+
+  <!-- mex -->
+  <g filter="url(#shadow)">
+    <rect x="230" y="113" width="135" height="112" rx="20" fill="#ffffff"/>
+  </g>
+  <circle cx="297" cy="151" r="28" fill="#e6efff"/>
+  <text x="281" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426786">mex</text>
+  <text x="253" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526b">Grundy değeri</text>
+  <text x="265" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668095">ilk eksik sayı</text>
+
+  <!-- arrow to components -->
+  <path d="M371 169 L393 169" fill="none" stroke="#6d9eba" stroke-width="2.5"/>
+  <polygon points="399,169 390,164 390,174" fill="#6d9eba"/>
+
+  <!-- components -->
+  <g filter="url(#shadow)">
+    <rect x="403" y="77" width="122" height="184" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="421" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526b">BİLEŞENLER</text>
+  <text x="423" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698398">Bağımsız oyunlar</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="424" y="142" width="78" height="27" rx="10" fill="url(#cardBlue)"/>
+    <rect x="424" y="178" width="78" height="27" rx="10" fill="url(#cardMint)"/>
+    <rect x="424" y="214" width="78" height="27" rx="10" fill="url(#cardPeach)"/>
+  </g>
+  <text x="440" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526b">g₁ = 1</text>
+  <text x="440" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526b">g₂ = 2</text>
+  <text x="440" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#72573a">g₃ = 3</text>
+
+  <!-- arrow 3 -->
+  <path d="M531 169 L550 169" fill="none" stroke="#6d9eba" stroke-width="2.5"/>
+  <polygon points="556,169 547,164 547,174" fill="#6d9eba"/>
+
+  <!-- result -->
+  <g filter="url(#shadow)">
+    <rect x="560" y="112" width="59" height="114" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="572" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35526b">XOR</text>
+  <text x="573" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668095">1 ⊕ 2</text>
+  <text x="582" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668095">⊕ 3</text>
+  <rect x="570" y="191" width="39" height="23" rx="9" fill="#d9f0df"/>
+  <text x="584" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34704d">0</text>
+
+  <path d="M590 233 L590 252" fill="none" stroke="#77a88b" stroke-width="2"/>
+  <polygon points="590,258 585,249 595,249" fill="#77a88b"/>
+  <text x="541" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34704d">Kaybeden konum</text>
+
+  <rect x="230" y="257" width="280" height="34" rx="14" fill="#e8f4fb" opacity="0.9"/>
+  <text x="251" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486a80">Toplam XOR sıfır değilse: sıfıra indiren hamleyi seç</text>
+</svg>

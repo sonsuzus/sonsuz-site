@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7891a8" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#58718a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="42" cy="42" r="70" fill="#dceeff" opacity="0.48"/>
+  <circle cx="609" cy="284" r="90" fill="#dff2dd" opacity="0.45"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516b">AĞAÇ İÇİ MESAFE SORGULARI</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668095">Centroid Decomposition ile dengeli ata zinciri</text>
+
+  <rect x="25" y="70" width="175" height="205" rx="18" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="44" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42617a">Özgün ağaç</text>
+  <text x="44" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71879a">Fiziksel yapı korunur</text>
+
+  <g stroke="#9fb5c7" stroke-width="2.2" fill="none" stroke-linecap="round">
+    <path d="M112 143 L72 174 L51 220"/>
+    <path d="M72 174 L91 221"/>
+    <path d="M112 143 L151 174 L132 221"/>
+    <path d="M151 174 L174 219"/>
+    <path d="M112 143 L112 191"/>
+  </g>
+  <g filter="url(#soft)">
+    <circle cx="112" cy="143" r="15" fill="#ffd990"/>
+    <circle cx="72" cy="174" r="11" fill="#cae7fb"/>
+    <circle cx="151" cy="174" r="11" fill="#cae7fb"/>
+    <circle cx="112" cy="191" r="11" fill="#cae7fb"/>
+    <circle cx="51" cy="220" r="10" fill="#d9efcf"/>
+    <circle cx="91" cy="221" r="10" fill="#d9efcf"/>
+    <circle cx="132" cy="221" r="10" fill="#d9efcf"/>
+    <circle cx="174" cy="219" r="10" fill="#d9efcf"/>
+  </g>
+  <text x="99" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7a5520">c</text>
+  <text x="45" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59728a">Bileşenler ≤ n / 2</text>
+
+  <path d="M211 170 L244 170" stroke="#7b9bb4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="250,170 241,164 241,176" fill="#7b9bb4"/>
+  <text x="211" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638198">parçala</text>
+
+  <rect x="258" y="70" width="166" height="205" rx="18" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="278" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42617a">Centroid ağacı</text>
+  <text x="278" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71879a">Dengeli ikinci katman</text>
+
+  <g stroke="#93aab9" stroke-width="2.3" fill="none" stroke-linecap="round">
+    <path d="M341 141 L300 180"/>
+    <path d="M341 141 L380 180"/>
+    <path d="M300 180 L281 223"/>
+    <path d="M300 180 L320 223"/>
+    <path d="M380 180 L361 223"/>
+    <path d="M380 180 L400 223"/>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="323" y="124" width="36" height="32" rx="12" fill="#ffc875"/>
+    <rect x="282" y="164" width="36" height="31" rx="12" fill="#bde5df"/>
+    <rect x="362" y="164" width="36" height="31" rx="12" fill="#bde5df"/>
+    <rect x="263" y="209" width="36" height="28" rx="11" fill="#d7e7fb"/>
+    <rect x="302" y="209" width="36" height="28" rx="11" fill="#d7e7fb"/>
+    <rect x="343" y="209" width="36" height="28" rx="11" fill="#d7e7fb"/>
+    <rect x="382" y="209" width="36" height="28" rx="11" fill="#d7e7fb"/>
+  </g>
+  <text x="334" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#744f1e">c₀</text>
+  <text x="291" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356862">c₁</text>
+  <text x="371" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356862">c₂</text>
+  <text x="277" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b91">c</text>
+  <text x="316" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b91">c</text>
+  <text x="357" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b91">c</text>
+  <text x="396" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b91">c</text>
+
+  <path d="M435 170 L464 170" stroke="#7b9bb4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="470,170 461,164 461,176" fill="#7b9bb4"/>
+  <text x="432" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638198">ata zinciri</text>
+
+  <rect x="478" y="70" width="137" height="205" rx="18" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="496" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42617a">Hızlı işlem</text>
+
+  <rect x="496" y="116" width="101" height="42" rx="13" fill="#ffe4e0" filter="url(#soft)"/>
+  <circle cx="514" cy="137" r="8" fill="#ef7771"/>
+  <text x="530" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a4542">İşaretle</text>
+
+  <path d="M547 164 L547 177" stroke="#809ab0" stroke-width="2"/>
+  <polygon points="547,183 542,175 552,175" fill="#809ab0"/>
+
+  <rect x="496" y="188" width="101" height="42" rx="13" fill="#dceefc" filter="url(#soft)"/>
+  <path d="M510 211 C515 202 524 202 528 211 C524 218 515 218 510 211Z" fill="#5d9bd3"/>
+  <text x="535" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376e9d">Sorgu</text>
+
+  <rect x="496" y="243" width="101" height="20" rx="10" fill="#e2f1d9"/>
+  <text x="510" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f7a4a">O(log n)</text>
+</svg>
