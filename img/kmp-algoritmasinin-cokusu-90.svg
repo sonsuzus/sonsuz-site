@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="zGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3ee"/>
+      <stop offset="100%" stop-color="#bde8dc"/>
+    </linearGradient>
+    <linearGradient id="kmpGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8e2fb"/>
+      <stop offset="100%" stop-color="#d4c8f3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5f7185" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5f7185" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="52" cy="42" r="74" fill="#dceef8" opacity="0.42"/>
+  <circle cx="600" cy="285" r="105" fill="#ddefd6" opacity="0.42"/>
+  <circle cx="590" cy="44" r="42" fill="#eee7fb" opacity="0.5"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39536b">METİN EŞLEŞTİRMEDE BİLGİYİ YENİDEN KULLANMA</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="102" width="132" height="116" rx="18" fill="#fff5e4"/>
+    <rect x="30" y="102" width="132" height="32" rx="18" fill="#ffe5bb"/>
+    <rect x="30" y="120" width="132" height="14" fill="#ffe5bb"/>
+  </g>
+  <text x="96" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#875c20">Naif Arama</text>
+  <text x="96" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b6256">Her konumu dene</text>
+  <text x="96" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#bc7133">O(nm)</text>
+  <path d="M61 196 H131" stroke="#e8b36a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M72 190 L65 196 L72 202 M92 190 L85 196 L92 202 M112 190 L105 196 L112 202" fill="none" stroke="#e8b36a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M165 160 H205" stroke="#7891a3" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="211,160 201,154 201,166" fill="#7891a3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="89" width="194" height="142" rx="22" fill="#ffffff"/>
+    <rect x="236" y="107" width="158" height="30" rx="12" fill="#dcebf5"/>
+  </g>
+  <text x="315" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d77">Ortak Hedef</text>
+  <text x="315" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52677a">Gereksiz karşılaştırma</text>
+  <text x="315" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52677a">yapma</text>
+  <rect x="261" y="193" width="108" height="24" rx="12" fill="#e5f4e3"/>
+  <text x="315" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38805b">O(n+m)</text>
+
+  <path d="M414 132 C437 132 432 89 456 89" fill="none" stroke="#7e729e" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="462,89 452,83 453,95" fill="#7e729e"/>
+  <path d="M414 189 C437 189 432 238 456 238" fill="none" stroke="#528d83" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="462,238 452,232 453,244" fill="#528d83"/>
+
+  <g filter="url(#shadow)">
+    <rect x="465" y="48" width="145" height="86" rx="18" fill="url(#kmpGrad)"/>
+  </g>
+  <text x="537.5" y="75" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514575">KMP</text>
+  <rect x="482" y="88" width="111" height="23" rx="8" fill="#ffffff" opacity="0.68"/>
+  <text x="537.5" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b5270">Prefix tablosu</text>
+  <text x="537.5" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665d7e">Geri dönüş</text>
+
+  <g filter="url(#shadow)">
+    <rect x="465" y="194" width="145" height="86" rx="18" fill="url(#zGrad)"/>
+  </g>
+  <text x="537.5" y="221" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#286d65">Z Algoritması</text>
+  <rect x="482" y="234" width="111" height="23" rx="8" fill="#ffffff" opacity="0.68"/>
+  <text x="537.5" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356d67">Prefix benzerliği</text>
+  <text x="537.5" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#417b73">Z kutusu</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="233" y="253" width="166" height="34" rx="13" fill="#ffffff"/>
+  </g>
+  <path d="M251 270 H270" stroke="#4c9d88" stroke-width="3" stroke-linecap="round"/>
+  <path d="M274 270 H293" stroke="#4c9d88" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 4"/>
+  <path d="M297 270 H316" stroke="#4c9d88" stroke-width="3" stroke-linecap="round"/>
+  <text x="329" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6874">desen # metin</text>
+</svg>

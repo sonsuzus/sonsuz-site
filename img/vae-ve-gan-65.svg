@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="vaeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#c9f0e5"/>
+    </linearGradient>
+    <linearGradient id="ganGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe4d1"/>
+      <stop offset="100%" stop-color="#f5d7ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#73879a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#73879a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="42" cy="40" r="55" fill="#d9eff5" opacity="0.42"/>
+  <circle cx="604" cy="279" r="72" fill="#f5deed" opacity="0.4"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405268">Sentetik Veri Üretimi</text>
+  <path d="M320 36 L320 47" stroke="#91a6b5" stroke-width="2"/>
+  <polygon points="315,45 325,45 320,52" fill="#91a6b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="55" width="270" height="202" rx="20" fill="#fafdff" stroke="#b7d6e4" stroke-width="1.5"/>
+    <rect x="342" y="55" width="270" height="202" rx="20" fill="#fffdfd" stroke="#ebc4d7" stroke-width="1.5"/>
+  </g>
+
+  <rect x="49" y="70" width="104" height="28" rx="14" fill="#bde5df"/>
+  <text x="101" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285b60">VAE</text>
+  <text x="165" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58707c">Olasılık haritası</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="48" y="119" width="70" height="48" rx="12" fill="#ddecff"/>
+    <rect x="141" y="112" width="72" height="62" rx="14" fill="url(#vaeGrad)"/>
+    <rect x="237" y="119" width="41" height="48" rx="12" fill="#d7f0e8"/>
+  </g>
+  <text x="83" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#425b70">Gerçek</text>
+  <text x="83" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#425b70">veri</text>
+  <text x="177" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#36576d">Kodlayıcı</text>
+  <text x="177" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36576d">μ, σ</text>
+  <text x="257" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#356356">Çözücü</text>
+  <text x="257" y="156" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356356">x</text>
+
+  <path d="M118 143 L134 143" stroke="#7c9cad" stroke-width="2"/>
+  <polygon points="132,138 140,143 132,148" fill="#7c9cad"/>
+  <path d="M213 143 L229 143" stroke="#7c9cad" stroke-width="2"/>
+  <polygon points="227,138 235,143 227,148" fill="#7c9cad"/>
+
+  <ellipse cx="177" cy="199" rx="47" ry="23" fill="#e4f6ef" stroke="#9bcebd" stroke-width="1.5"/>
+  <circle cx="160" cy="202" r="4" fill="#70ac9e"/>
+  <circle cx="177" cy="190" r="4" fill="#70ac9e"/>
+  <circle cx="191" cy="205" r="4" fill="#70ac9e"/>
+  <text x="177" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b756a">Düzenli gizli uzay</text>
+  <path d="M177 174 L177 181" stroke="#75a8a0" stroke-width="2"/>
+  <polygon points="172,179 182,179 177,186" fill="#75a8a0"/>
+
+  <rect x="363" y="70" width="104" height="28" rx="14" fill="#f4c9df"/>
+  <text x="415" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#81435f">GAN</text>
+  <text x="478" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b6170">Rekabet oyunu</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="365" y="122" width="52" height="43" rx="12" fill="#e8ddff"/>
+    <rect x="445" y="112" width="70" height="62" rx="14" fill="url(#ganGrad)"/>
+    <rect x="543" y="112" width="48" height="62" rx="14" fill="#ffdcd4"/>
+  </g>
+  <text x="391" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5b5378">Gürültü</text>
+  <text x="480" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#7a4b60">Üretici</text>
+  <text x="480" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a4b60">sahte veri</text>
+  <text x="567" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#7a5149">Ayırt</text>
+  <text x="567" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a5149">edici</text>
+
+  <path d="M417 143 L438 143" stroke="#b08096" stroke-width="2"/>
+  <polygon points="436,138 444,143 436,148" fill="#b08096"/>
+  <path d="M515 143 L536 143" stroke="#b08096" stroke-width="2"/>
+  <polygon points="534,138 542,143 534,148" fill="#b08096"/>
+
+  <path d="M567 181 C567 210 500 214 480 183" fill="none" stroke="#ca8ba6" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="477,188 484,181 486,191" fill="#ca8ba6"/>
+  <text x="524" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b546a">Geri bildirim ve rekabet</text>
+
+  <path d="M298 156 L329 156" stroke="#8ba2ad" stroke-width="2"/>
+  <polygon points="327,151 335,156 327,161" fill="#8ba2ad"/>
+  <text x="316" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7f8b">farklı yol</text>
+
+  <g filter="url(#shadow)">
+    <rect x="175" y="274" width="290" height="32" rx="16" fill="#ffffff" stroke="#c9dce2"/>
+  </g>
+  <circle cx="198" cy="290" r="9" fill="#9ad7c4"/>
+  <path d="M195 290 L198 293 L203 287" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="216" y="294" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#415967">Ortak hedef: Gerçeğe benzeyen veri</text>
+</svg>
