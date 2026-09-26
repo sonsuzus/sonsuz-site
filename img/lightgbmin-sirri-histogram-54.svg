@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#d9f4df"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5b7290" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5b7290" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="42" r="78" fill="#d9efff" opacity="0.42"/>
+  <circle cx="578" cy="270" r="95" fill="#dcefd7" opacity="0.42"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">HİSTOGRAM TABANLI ÖĞRENME</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718298">Ham değerlerden hızlı bölünmelere</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="83" width="132" height="151" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d78">Sürekli veri</text>
+  <line x1="48" y1="124" x2="140" y2="124" stroke="#d6e2ed"/>
+  <g fill="#7da7cb">
+    <circle cx="56" cy="143" r="5"/>
+    <circle cx="82" cy="158" r="5"/>
+    <circle cx="106" cy="138" r="5"/>
+    <circle cx="132" cy="173" r="5"/>
+    <circle cx="67" cy="193" r="5"/>
+    <circle cx="97" cy="207" r="5"/>
+    <circle cx="124" cy="198" r="5"/>
+  </g>
+  <g stroke="#a9c7df" stroke-width="2">
+    <line x1="56" y1="143" x2="82" y2="158"/>
+    <line x1="82" y1="158" x2="106" y2="138"/>
+    <line x1="106" y1="138" x2="132" y2="173"/>
+    <line x1="67" y1="193" x2="97" y2="207"/>
+    <line x1="97" y1="207" x2="124" y2="198"/>
+  </g>
+
+  <path d="M169 158 L198 158" fill="none" stroke="#82a5bf" stroke-width="2.5"/>
+  <polygon points="198,158 190,153 190,163" fill="#82a5bf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="207" y="74" width="161" height="170" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="229" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d78">Binleme</text>
+  <text x="229" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718298">Değer aralıkları</text>
+  <g>
+    <rect x="229" y="138" width="116" height="17" rx="6" fill="#d9ecff"/>
+    <rect x="229" y="161" width="116" height="17" rx="6" fill="#d8f1df"/>
+    <rect x="229" y="184" width="116" height="17" rx="6" fill="#ffe9bc"/>
+    <rect x="229" y="207" width="116" height="17" rx="6" fill="#f3dcf5"/>
+    <text x="239" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48647d">18–25</text>
+    <text x="239" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48647d">26–35</text>
+    <text x="239" y="197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48647d">36–50</text>
+    <text x="239" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48647d">Bin kimliği</text>
+  </g>
+
+  <path d="M377 158 L405 158" fill="none" stroke="#82a5bf" stroke-width="2.5"/>
+  <polygon points="405,158 397,153 397,163" fill="#82a5bf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="414" y="61" width="200" height="194" rx="24" fill="url(#core)" stroke="#c7dfd0"/>
+  </g>
+  <text x="436" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365d55">LightGBM</text>
+  <text x="436" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#658078">Histogram özeti</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="435" y="124" width="74" height="50" rx="11" fill="#ffffff"/>
+    <rect x="520" y="124" width="74" height="50" rx="11" fill="#ffffff"/>
+  </g>
+  <text x="447" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6375">G</text>
+  <text x="447" y="161" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8190">Gradyan</text>
+  <text x="532" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6375">H</text>
+  <text x="532" y="161" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8190">Hessian</text>
+
+  <path d="M472 181 L472 193 L517 193 L517 181" fill="none" stroke="#7b9d91" stroke-width="2"/>
+  <path d="M495 193 L495 204" fill="none" stroke="#7b9d91" stroke-width="2"/>
+  <polygon points="495,209 490,202 500,202" fill="#7b9d91"/>
+  <g filter="url(#smallShadow)">
+    <rect x="455" y="211" width="81" height="27" rx="9" fill="#ffffff"/>
+  </g>
+  <text x="469" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416557">Bölünme</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="260" width="125" height="37" rx="13" fill="#fde7e7"/>
+    <rect x="174" y="260" width="125" height="37" rx="13" fill="#e8f1ff"/>
+    <rect x="318" y="260" width="125" height="37" rx="13" fill="#e4f5e8"/>
+    <rect x="462" y="260" width="152" height="37" rx="13" fill="#fff1d3"/>
+  </g>
+  <text x="49" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#87565c">Daha az bellek</text>
+  <text x="195" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d7194">Hızlı eğitim</text>
+  <text x="340" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b7657">Yaprak bazlı</text>
+  <text x="483" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a7040">GOSS ve EFB</text>
+
+  <path d="M494 255 L494 246 L455 246" fill="none" stroke="#b6a16b" stroke-width="1.5" opacity="0.8"/>
+  <path d="M381 255 L381 246 L405 246" fill="none" stroke="#8eb899" stroke-width="1.5" opacity="0.8"/>
+</svg>

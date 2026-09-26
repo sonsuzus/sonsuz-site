@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="train" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6efff"/>
+      <stop offset="100%" stop-color="#dce9fb"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f7e8"/>
+      <stop offset="100%" stop-color="#d8f0df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#526b82" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="55" cy="42" r="72" fill="#d9ecff" opacity="0.35"/>
+  <circle cx="588" cy="288" r="88" fill="#d9f2d9" opacity="0.38"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38506a">DROPOUT • EĞİTİMDE RASTGELE ALT AĞLAR</text>
+
+  <g filter="url(#shadow)">
+    <rect x="25" y="52" width="154" height="230" rx="18" fill="url(#train)" stroke="#c8dbef"/>
+    <rect x="243" y="52" width="154" height="230" rx="18" fill="#fffaf0" stroke="#eddfbc"/>
+    <rect x="461" y="52" width="154" height="230" rx="18" fill="url(#result)" stroke="#c5e3cb"/>
+  </g>
+
+  <text x="102" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355470">Girdi özellikleri</text>
+  <text x="320" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#735b2c">Dropout maskesi</text>
+  <text x="538" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356442">Dayanıklı ağ</text>
+
+  <g stroke="#7e9eb8" stroke-width="1.5" opacity="0.72">
+    <line x1="70" y1="121" x2="130" y2="107"/>
+    <line x1="70" y1="121" x2="130" y2="153"/>
+    <line x1="70" y1="121" x2="130" y2="199"/>
+    <line x1="70" y1="167" x2="130" y2="107"/>
+    <line x1="70" y1="167" x2="130" y2="153"/>
+    <line x1="70" y1="167" x2="130" y2="199"/>
+    <line x1="70" y1="213" x2="130" y2="107"/>
+    <line x1="70" y1="213" x2="130" y2="153"/>
+    <line x1="70" y1="213" x2="130" y2="199"/>
+  </g>
+  <g filter="url(#soft)">
+    <circle cx="70" cy="121" r="13" fill="#9fd1f2"/>
+    <circle cx="70" cy="167" r="13" fill="#8fc7eb"/>
+    <circle cx="70" cy="213" r="13" fill="#a9d9ef"/>
+    <circle cx="130" cy="107" r="13" fill="#78b5e1"/>
+    <circle cx="130" cy="153" r="13" fill="#78b5e1"/>
+    <circle cx="130" cy="199" r="13" fill="#78b5e1"/>
+  </g>
+  <text x="102" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55738c">Tam bağlantı</text>
+
+  <line x1="179" y1="167" x2="222" y2="167" stroke="#6d89a2" stroke-width="2"/>
+  <polygon points="232,167 220,161 220,173" fill="#6d89a2"/>
+
+  <g stroke="#c3a968" stroke-width="1.5" opacity="0.72">
+    <line x1="280" y1="107" x2="348" y2="125"/>
+    <line x1="280" y1="107" x2="348" y2="170"/>
+    <line x1="280" y1="153" x2="348" y2="125"/>
+    <line x1="280" y1="153" x2="348" y2="170"/>
+    <line x1="280" y1="199" x2="348" y2="125"/>
+    <line x1="280" y1="199" x2="348" y2="170"/>
+  </g>
+  <g filter="url(#soft)">
+    <circle cx="280" cy="107" r="14" fill="#f2c979"/>
+    <circle cx="280" cy="153" r="14" fill="#f2c979"/>
+    <circle cx="280" cy="199" r="14" fill="#f2c979"/>
+    <circle cx="348" cy="125" r="14" fill="#8fcf9d"/>
+    <circle cx="348" cy="170" r="14" fill="#f29b9b"/>
+  </g>
+  <circle cx="348" cy="215" r="14" fill="#d9dde3" stroke="#aeb7c1" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <path d="M341 208 L355 222 M355 208 L341 222" stroke="#89939f" stroke-width="2" stroke-linecap="round"/>
+  <text x="320" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b6536">Rastgele kapatma</text>
+  <text x="320" y="269" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b7750">p = 0.3</text>
+
+  <line x1="397" y1="167" x2="440" y2="167" stroke="#6f9a75" stroke-width="2"/>
+  <polygon points="450,167 438,161 438,173" fill="#6f9a75"/>
+
+  <g stroke="#75a982" stroke-width="1.6" opacity="0.72">
+    <line x1="495" y1="112" x2="560" y2="137"/>
+    <line x1="495" y1="112" x2="560" y2="190"/>
+    <line x1="495" y1="158" x2="560" y2="137"/>
+    <line x1="495" y1="158" x2="560" y2="190"/>
+    <line x1="495" y1="204" x2="560" y2="137"/>
+    <line x1="495" y1="204" x2="560" y2="190"/>
+  </g>
+  <g filter="url(#soft)">
+    <circle cx="495" cy="112" r="13" fill="#91d19e"/>
+    <circle cx="495" cy="158" r="13" fill="#83c992"/>
+    <circle cx="495" cy="204" r="13" fill="#9ad8a5"/>
+    <circle cx="560" cy="137" r="15" fill="#66b978"/>
+    <circle cx="560" cy="190" r="15" fill="#66b978"/>
+  </g>
+  <text x="538" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7c59">Bağımsız ipuçları</text>
+  <text x="538" y="269" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7c59">Daha iyi genelleme</text>
+
+  <rect x="229" y="293" width="182" height="20" rx="10" fill="#ffffff" opacity="0.76"/>
+  <text x="320" y="307" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526878">Eğitim: maske değişir • Tahmin: tüm nöronlar açık</text>
+</svg>
