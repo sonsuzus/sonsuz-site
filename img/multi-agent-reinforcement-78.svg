@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="train" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9dcf7"/>
+    </linearGradient>
+    <linearGradient id="env" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff3dc"/>
+      <stop offset="100%" stop-color="#c3e6cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7892a3" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">Çok Ajanlı Pekiştirmeli Öğrenme</text>
+
+  <rect x="225" y="48" width="190" height="58" rx="17" fill="url(#train)" filter="url(#shadow)"/>
+  <circle cx="255" cy="77" r="15" fill="#789cc4"/>
+  <path d="M249 80 L253 84 L262 73" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="280" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536d">Merkezi Eğitim</text>
+  <text x="280" y="90" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526d82">Tüm gözlemler</text>
+
+  <path d="M270 108 L162 137" fill="none" stroke="#8da9bc" stroke-width="2"/>
+  <polygon points="161,137 170,132 168,141" fill="#8da9bc"/>
+  <path d="M320 108 L320 137" fill="none" stroke="#8da9bc" stroke-width="2"/>
+  <polygon points="320,137 315,128 325,128" fill="#8da9bc"/>
+  <path d="M370 108 L478 137" fill="none" stroke="#8da9bc" stroke-width="2"/>
+  <polygon points="479,137 472,141 470,132" fill="#8da9bc"/>
+
+  <g filter="url(#shadow)">
+    <rect x="95" y="140" width="135" height="61" rx="16" fill="#ffe4c7"/>
+    <rect x="253" y="140" width="135" height="61" rx="16" fill="#e8dffc"/>
+    <rect x="410" y="140" width="135" height="61" rx="16" fill="#d8f0eb"/>
+  </g>
+  <circle cx="122" cy="170" r="15" fill="#e5a967"/>
+  <circle cx="280" cy="170" r="15" fill="#9d88d0"/>
+  <circle cx="437" cy="170" r="15" fill="#65ae9f"/>
+  <circle cx="122" cy="166" r="5" fill="#fff"/>
+  <circle cx="280" cy="166" r="5" fill="#fff"/>
+  <circle cx="437" cy="166" r="5" fill="#fff"/>
+  <path d="M113 181 Q122 172 131 181" fill="none" stroke="#fff" stroke-width="2"/>
+  <path d="M271 181 Q280 172 289 181" fill="none" stroke="#fff" stroke-width="2"/>
+  <path d="M428 181 Q437 172 446 181" fill="none" stroke="#fff" stroke-width="2"/>
+  <text x="148" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#70502f">Ajan 1</text>
+  <text x="148" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806445">Yerel karar</text>
+  <text x="306" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5f5183">Ajan 2</text>
+  <text x="306" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71648e">Yerel karar</text>
+  <text x="463" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39766d">Ajan N</text>
+  <text x="463" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b8179">Yerel karar</text>
+
+  <path d="M231 170 L251 170" stroke="#bd9aca" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="251,170 244,166 244,174" fill="#bd9aca"/>
+  <path d="M389 170 L408 170" stroke="#bd9aca" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="408,170 401,166 401,174" fill="#bd9aca"/>
+  <text x="275" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">Ortak öğrenme</text>
+
+  <path d="M162 204 L249 233" fill="none" stroke="#8caf9a" stroke-width="2"/>
+  <polygon points="250,233 241,234 244,226" fill="#8caf9a"/>
+  <path d="M320 204 L320 233" fill="none" stroke="#8caf9a" stroke-width="2"/>
+  <polygon points="320,233 315,224 325,224" fill="#8caf9a"/>
+  <path d="M478 204 L391 233" fill="none" stroke="#8caf9a" stroke-width="2"/>
+  <polygon points="390,233 396,226 399,234" fill="#8caf9a"/>
+
+  <rect x="205" y="236" width="230" height="58" rx="18" fill="url(#env)" filter="url(#shadow)"/>
+  <path d="M244 267 C255 249 270 281 282 263 S310 248 322 267 S349 282 362 262 S388 248 398 267" fill="none" stroke="#70aa87" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="257" cy="256" r="4" fill="#f1bc61"/>
+  <circle cx="377" cy="276" r="4" fill="#e68175"/>
+  <text x="276" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39705a">Ortam</text>
+  <text x="276" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#507c69">Durum • ödül • geri bildirim</text>
+
+  <path d="M202 262 C157 260 145 228 151 207" fill="none" stroke="#a5b8c0" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="151,207 146,216 155,215" fill="#a5b8c0"/>
+  <path d="M438 262 C483 260 495 228 489 207" fill="none" stroke="#a5b8c0" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="489,207 485,215 494,216" fill="#a5b8c0"/>
+
+  <rect x="27" y="256" width="139" height="36" rx="12" fill="#ffffff" opacity="0.75"/>
+  <text x="42" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597084">İşbirliği • rekabet</text>
+  <rect x="474" y="256" width="139" height="36" rx="12" fill="#ffffff" opacity="0.75"/>
+  <text x="490" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597084">İletişim • uyum</text>
+</svg>

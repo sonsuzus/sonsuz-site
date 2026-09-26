@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cfe0f8"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#55728d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#55728d" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="122" fill="#dceeff" opacity="0.34"/>
+  <circle cx="320" cy="160" r="94" fill="none" stroke="#b8d2e8" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <!-- Bağlantılar -->
+  <path d="M216 145 C245 145 252 151 267 155" fill="none" stroke="#7c9abc" stroke-width="2.2"/>
+  <polygon points="267,155 258,150 259,159" fill="#7c9abc"/>
+
+  <path d="M320 104 L320 78" fill="none" stroke="#7c9abc" stroke-width="2.2"/>
+  <polygon points="320,78 315,87 325,87" fill="#7c9abc"/>
+
+  <path d="M424 145 C451 145 463 135 477 128" fill="none" stroke="#7c9abc" stroke-width="2.2"/>
+  <polygon points="477,128 467,128 472,137" fill="#7c9abc"/>
+
+  <path d="M421 183 C451 194 460 213 478 222" fill="none" stroke="#7c9abc" stroke-width="2.2"/>
+  <polygon points="478,222 469,215 466,224" fill="#7c9abc"/>
+
+  <path d="M320 216 L320 243" fill="none" stroke="#7c9abc" stroke-width="2.2"/>
+  <polygon points="320,243 315,234 325,234" fill="#7c9abc"/>
+
+  <path d="M265 195 C235 208 219 218 204 226" fill="none" stroke="#7c9abc" stroke-width="2.2"/>
+  <polygon points="204,226 214,225 209,217" fill="#7c9abc"/>
+
+  <!-- Sol: Arama alanı -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="107" width="186" height="81" rx="18" fill="#fff8e7"/>
+    <rect x="30" y="107" width="7" height="81" rx="3.5" fill="#edbb63"/>
+  </g>
+  <text x="55" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5f5135">Arama Uzayı</text>
+  <text x="55" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78694c">öğrenme oranı</text>
+  <text x="55" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78694c">derinlik · düzenleme</text>
+  <circle cx="188" cy="134" r="10" fill="#f9d998"/>
+  <path d="M183 134 L187 138 L194 130" fill="none" stroke="#9d7330" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Üst: Sampler -->
+  <g filter="url(#shadow)">
+    <rect x="247" y="21" width="146" height="57" rx="17" fill="#e7dcfa"/>
+  </g>
+  <circle cx="274" cy="49" r="14" fill="#cfb9ef"/>
+  <path d="M269 45 C272 40 279 42 278 47 C277 51 270 50 271 55" fill="none" stroke="#68508e" stroke-width="2" stroke-linecap="round"/>
+  <text x="298" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#564375">Örnekleyici</text>
+  <text x="298" y="64" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75618f">TPE · Bayesçi seçim</text>
+
+  <!-- Merkez: Study -->
+  <g filter="url(#shadow)">
+    <rect x="266" y="104" width="158" height="112" rx="25" fill="url(#centerGrad)" stroke="#a9c4e2" stroke-width="1.2"/>
+  </g>
+  <circle cx="345" cy="136" r="19" fill="#a9c9ed"/>
+  <path d="M336 138 L342 144 L355 129" fill="none" stroke="#386b9a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="345" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345b81">Study</text>
+  <text x="345" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527798">Deneme yöneticisi</text>
+
+  <!-- Sağ üst: Trial / Eğitim -->
+  <g filter="url(#shadow)">
+    <rect x="477" y="86" width="133" height="77" rx="18" fill="#dff4ed"/>
+  </g>
+  <rect x="495" y="105" width="27" height="24" rx="7" fill="#a8dfcf"/>
+  <path d="M502 122 L508 113 L515 122" fill="none" stroke="#397d6c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="536" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356a5e">Trial</text>
+  <text x="536" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#548679">Model eğitimi</text>
+  <text x="495" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#548679">doğrulama skoru</text>
+
+  <!-- Sağ alt: Depolama -->
+  <g filter="url(#shadow)">
+    <rect x="478" y="204" width="132" height="61" rx="18" fill="#e5edf7"/>
+  </g>
+  <ellipse cx="504" cy="224" rx="13" ry="5" fill="#a9bfda"/>
+  <path d="M491 224 V243 C491 250 517 250 517 243 V224" fill="#bfd0e5" stroke="#8aa7c8" stroke-width="1.2"/>
+  <ellipse cx="504" cy="224" rx="13" ry="5" fill="#cbd9e9" stroke="#8aa7c8" stroke-width="1.2"/>
+  <text x="531" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6682">Depolama</text>
+  <text x="531" y="247" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69819b">geçmiş sonuçlar</text>
+
+  <!-- Alt: Pruner -->
+  <g filter="url(#shadow)">
+    <rect x="242" y="243" width="156" height="57" rx="17" fill="#fde5e7"/>
+  </g>
+  <circle cx="270" cy="271" r="14" fill="#f3bbc1"/>
+  <path d="M264 265 L276 277 M276 265 L264 277" stroke="#a94f59" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="294" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8d424b">Budayıcı</text>
+  <text x="294" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#aa6570">erken durdurma</text>
+
+  <!-- Alt sol: En iyi sonuç -->
+  <g filter="url(#softShadow)">
+    <rect x="53" y="211" width="152" height="62" rx="18" fill="#eaf5d9"/>
+  </g>
+  <circle cx="80" cy="241" r="14" fill="#c6e4a1"/>
+  <path d="M74 242 L78 246 L87 236" fill="none" stroke="#5f8742" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="103" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#52763c">En iyi ayarlar</text>
+  <text x="103" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8d58">en düşük kayıp</text>
+
+  <!-- Geri besleme -->
+  <path d="M477 177 C456 176 449 174 430 170" fill="none" stroke="#89a8c4" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <polygon points="430,170 440,168 437,177" fill="#89a8c4"/>
+</svg>
