@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="embed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9ddf7"/>
+    </linearGradient>
+    <linearGradient id="pos" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5dbff"/>
+      <stop offset="100%" stop-color="#d2c3f4"/>
+    </linearGradient>
+    <linearGradient id="attn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7f1e5"/>
+      <stop offset="100%" stop-color="#bde4d2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#657b89" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#607786" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="84" cy="50" r="76" fill="#cfe8f5" opacity="0.24"/>
+  <circle cx="564" cy="274" r="102" fill="#d9efd2" opacity="0.29"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385262" font-weight="600">Konum bilgisi: anlam vektörüne eklenen sıra pusulası</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="61" width="145" height="197" rx="18" fill="#fafdff" stroke="#c8dce8"/>
+    <text x="48" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385262" font-weight="600">Token embedding</text>
+
+    <rect x="45" y="105" width="108" height="31" rx="10" fill="url(#embed)"/>
+    <text x="61" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36546a">Kedi</text>
+    <g fill="#5d91b3">
+      <circle cx="111" cy="120" r="3"/><circle cx="121" cy="120" r="3"/><circle cx="131" cy="120" r="3"/>
+    </g>
+
+    <rect x="45" y="147" width="108" height="31" rx="10" fill="url(#embed)"/>
+    <text x="61" y="167" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36546a">fareyi</text>
+    <g fill="#5d91b3">
+      <circle cx="111" cy="162" r="3"/><circle cx="121" cy="162" r="3"/><circle cx="131" cy="162" r="3"/>
+    </g>
+
+    <rect x="45" y="189" width="108" height="31" rx="10" fill="url(#embed)"/>
+    <text x="61" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36546a">kovaladı</text>
+    <g fill="#5d91b3">
+      <circle cx="111" cy="204" r="3"/><circle cx="121" cy="204" r="3"/><circle cx="131" cy="204" r="3"/>
+    </g>
+
+    <text x="49" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708692">Anlam bilgisi</text>
+  </g>
+
+  <path d="M172 159 H209" fill="none" stroke="#7d9aaa" stroke-width="2"/>
+  <polygon points="216,159 207,154 207,164" fill="#7d9aaa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="220" y="61" width="168" height="197" rx="18" fill="#fdfbff" stroke="#d8cdea"/>
+    <text x="241" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d507d" font-weight="600">Konumsal kodlama</text>
+
+    <rect x="241" y="105" width="126" height="104" rx="12" fill="url(#pos)" opacity="0.78"/>
+    <line x1="252" y1="157" x2="356" y2="157" stroke="#9b8bc0" stroke-width="1" opacity="0.6"/>
+    <path d="M252 157 C260 124, 270 124, 278 157 S296 190, 304 157 S322 124, 330 157 S348 190, 356 157" fill="none" stroke="#745aa3" stroke-width="2.2"/>
+    <path d="M252 149 C267 138, 280 169, 294 149 S321 129, 335 149 S347 169, 356 151" fill="none" stroke="#ce6f9a" stroke-width="2"/>
+    <text x="247" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75668f">sinüs ve kosinüs</text>
+    <text x="247" y="247" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75668f">her konuma özgü</text>
+  </g>
+
+  <path d="M388 159 H411" fill="none" stroke="#7d9aaa" stroke-width="2"/>
+  <polygon points="418,159 409,154 409,164" fill="#7d9aaa"/>
+
+  <g filter="url(#soft)">
+    <circle cx="444" cy="159" r="31" fill="#fff8d9" stroke="#ead79b"/>
+    <text x="434" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" fill="#9d7b28" font-weight="600">+</text>
+  </g>
+  <text x="422" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#796d4c">eleman bazlı</text>
+
+  <path d="M475 159 H499" fill="none" stroke="#7d9aaa" stroke-width="2"/>
+  <polygon points="506,159 497,154 497,164" fill="#7d9aaa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="510" y="61" width="103" height="197" rx="18" fill="#fbfffc" stroke="#bcdcca"/>
+    <text x="526" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c6a59" font-weight="600">Attention</text>
+
+    <rect x="528" y="109" width="67" height="26" rx="8" fill="url(#attn)"/>
+    <rect x="528" y="145" width="67" height="26" rx="8" fill="url(#attn)"/>
+    <rect x="528" y="181" width="67" height="26" rx="8" fill="url(#attn)"/>
+    <path d="M540 122 C558 142, 567 142, 583 157" fill="none" stroke="#55947a" stroke-width="1.5" opacity="0.8"/>
+    <path d="M540 158 C557 141, 573 142, 583 121" fill="none" stroke="#55947a" stroke-width="1.5" opacity="0.8"/>
+    <path d="M540 194 C555 176, 570 177, 583 157" fill="none" stroke="#55947a" stroke-width="1.5" opacity="0.8"/>
+    <text x="526" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527767">Sıralı ilişki</text>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="196" y="281" width="248" height="23" rx="11.5" fill="#ffffff" filter="url(#soft)"/>
+    <circle cx="213" cy="292.5" r="4" fill="#749fc0"/>
+    <text x="224" y="297" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506875">Anlam</text>
+    <path d="M270 292 H295" stroke="#9aaab1" stroke-width="1.5"/>
+    <polygon points="300,292 293,288 293,296" fill="#9aaab1"/>
+    <circle cx="316" cy="292.5" r="4" fill="#8d73b5"/>
+    <text x="327" y="297" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506875">Konum</text>
+    <path d="M376 292 H397" stroke="#9aaab1" stroke-width="1.5"/>
+    <polygon points="402,292 395,288 395,296" fill="#9aaab1"/>
+    <text x="411" y="297" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476e5d">Sıra bilgisi</text>
+  </g>
+</svg>

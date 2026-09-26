@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="agent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#c5ddf5"/>
+    </linearGradient>
+    <linearGradient id="clip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#fde0a2"/>
+    </linearGradient>
+    <linearGradient id="policy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbf4e8"/>
+      <stop offset="100%" stop-color="#bce6d3"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66809a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="157" r="118" fill="#ffffff" opacity="0.45"/>
+  <circle cx="319" cy="157" r="95" fill="none" stroke="#c8dddc" stroke-width="1.5" stroke-dasharray="4 7"/>
+
+  <path d="M157 157 C180 157 190 157 210 157" fill="none" stroke="#7d9eae" stroke-width="2.5"/>
+  <polygon points="210,157 201,152 201,162" fill="#7d9eae"/>
+
+  <path d="M296 116 C315 102 332 102 350 116" fill="none" stroke="#7d9eae" stroke-width="2.5"/>
+  <polygon points="350,116 342,109 341,119" fill="#7d9eae"/>
+
+  <path d="M429 157 C447 157 458 157 475 157" fill="none" stroke="#7d9eae" stroke-width="2.5"/>
+  <polygon points="475,157 466,152 466,162" fill="#7d9eae"/>
+
+  <path d="M461 204 C440 231 405 244 368 244" fill="none" stroke="#7d9eae" stroke-width="2.5"/>
+  <polygon points="368,244 377,239 377,249" fill="#7d9eae"/>
+
+  <path d="M268 244 C222 241 181 215 162 181" fill="none" stroke="#7d9eae" stroke-width="2.5"/>
+  <polygon points="162,181 171,186 162,191" fill="#7d9eae"/>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="112" width="115" height="90" rx="20" fill="#e9f2fb" stroke="#c7dceb"/>
+    <circle cx="99" cy="145" r="18" fill="#9ac2df"/>
+    <path d="M91 146 L97 152 L108 138" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="99" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36566b" font-weight="600">Çevre</text>
+    <text x="99" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547184">Durum ve ödül</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="210" y="111" width="103" height="92" rx="20" fill="url(#agent)" stroke="#a9cce3"/>
+    <circle cx="261.5" cy="143" r="18" fill="#77aecd"/>
+    <circle cx="255" cy="140" r="2.6" fill="#ffffff"/>
+    <circle cx="268" cy="140" r="2.6" fill="#ffffff"/>
+    <path d="M253 150 Q261.5 157 270 150" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="261.5" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#294e69" font-weight="600">Ajan</text>
+    <text x="261.5" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547184">Eylem seçimi</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="350" y="70" width="111" height="91" rx="20" fill="url(#policy)" stroke="#a7d8c4"/>
+    <path d="M377 123 C387 105 398 132 408 113 C418 94 426 122 435 102" fill="none" stroke="#499e78" stroke-width="3" stroke-linecap="round"/>
+    <text x="405.5" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#28644c" font-weight="600">Yeni politika</text>
+    <text x="405.5" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7c69">olasılık oranı</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="475" y="112" width="122" height="90" rx="20" fill="url(#clip)" stroke="#e8c56d"/>
+    <path d="M503 137 H569" stroke="#c29128" stroke-width="3" stroke-linecap="round"/>
+    <path d="M516 128 V146 M556 128 V146" stroke="#c29128" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="536" cy="137" r="5" fill="#ed9b48"/>
+    <text x="536" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76531b" font-weight="600">Kırpma</text>
+    <text x="536" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#927238">1 − ε  /  1 + ε</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="268" y="222" width="128" height="68" rx="20" fill="#f2e9fb" stroke="#d4c0ea"/>
+    <path d="M292 255 H314 L321 242 L331 270 L341 250 L370 250" fill="none" stroke="#9470bb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="332" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62467f" font-weight="600">Güvenli güncelleme</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="411" y="220" width="166" height="44" rx="15" fill="#ffffff" stroke="#d7e5dd"/>
+    <circle cx="431" cy="242" r="10" fill="#b7e1cb"/>
+    <path d="M426 242 L430 246 L437 237" fill="none" stroke="#397b59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="492" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46695a">Kararlı öğrenme</text>
+  </g>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547184" font-weight="600">PPO · Kontrollü politika döngüsü</text>
+
+  <path d="M405 161 C415 180 413 197 401 217" fill="none" stroke="#86a99c" stroke-width="2"/>
+  <polygon points="401,217 400,207 409,211" fill="#86a99c"/>
+</svg>
