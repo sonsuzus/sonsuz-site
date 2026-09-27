@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="kernel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8e9ff"/>
+      <stop offset="100%" stop-color="#c9ddf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6c8298" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8298" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="81" cy="45" r="76" fill="#dff3ed" opacity="0.52"/>
+  <circle cx="585" cy="278" r="95" fill="#e1ebff" opacity="0.58"/>
+
+  <text x="32" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496277">Yüklenebilir Çekirdek Modülü</text>
+  <text x="32" y="45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909f">Karakter cihazı veri akışı</text>
+
+  <!-- User space -->
+  <g filter="url(#shadow)">
+    <rect x="31" y="83" width="150" height="105" rx="18" fill="#fffdf8"/>
+    <rect x="31" y="83" width="150" height="29" rx="18" fill="#dff2e8"/>
+    <rect x="31" y="100" width="150" height="12" fill="#dff2e8"/>
+  </g>
+  <circle cx="55" cy="98" r="9" fill="#77bfa3"/>
+  <path d="M51 98h8M55 94v8" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="72" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355d50">Kullanıcı alanı</text>
+  <rect x="48" y="128" width="116" height="39" rx="10" fill="#eef8f3"/>
+  <text x="64" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#466d5d">read()</text>
+  <text x="64" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708d80">/dev/minidriver</text>
+
+  <!-- Arrow user to kernel -->
+  <path d="M183 135 H222" fill="none" stroke="#7193a8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="222,135 214,130 214,140" fill="#7193a8"/>
+  <text x="187" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668397">sistem çağrısı</text>
+
+  <!-- Kernel -->
+  <g filter="url(#shadow)">
+    <rect x="226" y="67" width="191" height="145" rx="24" fill="url(#kernel)"/>
+  </g>
+  <rect x="246" y="86" width="151" height="30" rx="11" fill="#f4f9ff" opacity="0.92"/>
+  <circle cx="265" cy="101" r="8" fill="#668bc6"/>
+  <path d="M261 101h8M265 97v8" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="280" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34537b">Çekirdek alanı</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="248" y="130" width="147" height="30" rx="10" fill="#eef4ff"/>
+    <rect x="248" y="169" width="147" height="28" rx="10" fill="#eaf2fc"/>
+  </g>
+  <text x="266" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3d6190">file_operations</text>
+  <text x="276" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3d6190">mini_read()</text>
+  <path d="M322 161v6" fill="none" stroke="#6586ad" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="322,169 318,163 326,163" fill="#6586ad"/>
+
+  <!-- Device -->
+  <path d="M419 135 H454" fill="none" stroke="#7193a8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="454,135 446,130 446,140" fill="#7193a8"/>
+  <text x="421" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668397">kontrollü aktarım</text>
+
+  <g filter="url(#shadow)">
+    <rect x="458" y="83" width="151" height="105" rx="18" fill="#fffdf8"/>
+    <rect x="458" y="83" width="151" height="29" rx="18" fill="#f9e7c9"/>
+    <rect x="458" y="100" width="151" height="12" fill="#f9e7c9"/>
+  </g>
+  <circle cx="482" cy="98" r="9" fill="#d59a50"/>
+  <path d="M478 98h8M482 94v8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="498" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76522b">Karakter cihazı</text>
+  <rect x="476" y="128" width="115" height="39" rx="10" fill="#fff5df"/>
+  <text x="489" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#856032">Çekirdek belleği</text>
+  <text x="498" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b7b50">mesaj verisi</text>
+
+  <!-- Lifecycle -->
+  <text x="42" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526d80">Modül yaşam döngüsü</text>
+  <path d="M129 258 H163 M263 258 H297 M397 258 H431" fill="none" stroke="#92aabd" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="163,258 155,253 155,263" fill="#92aabd"/>
+  <polygon points="297,258 289,253 289,263" fill="#92aabd"/>
+  <polygon points="431,258 423,253 423,263" fill="#92aabd"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="244" width="87" height="28" rx="12" fill="#e0f2e8"/>
+    <rect x="163" y="244" width="100" height="28" rx="12" fill="#e3edff"/>
+    <rect x="297" y="244" width="100" height="28" rx="12" fill="#fff0d8"/>
+    <rect x="431" y="244" width="106" height="28" rx="12" fill="#f1e5fa"/>
+  </g>
+  <text x="62" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#416b58">Derle</text>
+  <text x="185" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#486b9c">Yükle</text>
+  <text x="317" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#8a6230">Kaydet</text>
+  <text x="448" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#715283">Temizle</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="200" y="285" width="240" height="24" rx="12" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="218" cy="297" r="5" fill="#75b99d"/>
+  <text x="232" y="301" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557086">Tahsis edilen kaynak − serbest bırakılan = 0</text>
+</svg>

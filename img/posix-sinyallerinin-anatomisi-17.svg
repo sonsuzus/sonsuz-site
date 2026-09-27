@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5ddff"/>
+      <stop offset="100%" stop-color="#d8edff"/>
+    </linearGradient>
+    <linearGradient id="kernel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8f5e8"/>
+      <stop offset="100%" stop-color="#d7e8ff"/>
+    </linearGradient>
+    <linearGradient id="process" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0ca"/>
+      <stop offset="100%" stop-color="#ffe0dd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66859a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66859a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="45" r="70" fill="#dceeff" opacity="0.52"/>
+  <circle cx="577" cy="276" r="88" fill="#daf2df" opacity="0.44"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39556b">POSIX SİNYAL YAŞAM DÖNGÜSÜ</text>
+  <text x="32" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718596">Kısa olay bildirimi · çekirdek aracılığıyla teslim</text>
+
+  <path d="M144 151 H177" fill="none" stroke="#8095ac" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="177,151 168,146 168,156" fill="#8095ac"/>
+  <path d="M303 151 H337" fill="none" stroke="#8095ac" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="337,151 328,146 328,156" fill="#8095ac"/>
+  <path d="M463 151 H495" fill="none" stroke="#8095ac" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="495,151 486,146 486,156" fill="#8095ac"/>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="103" width="112" height="96" rx="18" fill="url(#terminal)" stroke="#c2c9ef"/>
+    <rect x="48" y="119" width="32" height="27" rx="7" fill="#7066a8"/>
+    <path d="M55 129 L61 134 L55 139" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M65 139 H73" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="91" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#404971">Terminal</text>
+    <text x="48" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596879">Ctrl+C</text>
+    <rect x="48" y="177" width="79" height="13" rx="6.5" fill="#ffffff" opacity="0.72"/>
+    <text x="56" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#625b91">SIGINT üret</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="177" y="87" width="126" height="128" rx="20" fill="url(#kernel)" stroke="#b8dccf"/>
+    <circle cx="240" cy="119" r="20" fill="#5fae90"/>
+    <path d="M232 118 H248 M235 124 H245 M240 110 V128" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="207" y="156" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356553">Çekirdek</text>
+    <text x="198" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506d68">Yetki denetimi</text>
+    <rect x="194" y="187" width="92" height="15" rx="7.5" fill="#ffffff" opacity="0.70"/>
+    <text x="203" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38705c">Bekleyen sinyal</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="337" y="103" width="126" height="96" rx="18" fill="url(#process)" stroke="#edc9a0"/>
+    <circle cx="366" cy="132" r="17" fill="#df9b58"/>
+    <rect x="358" y="124" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M362 120 V116 H370 V120 M362 144 V148 H370 V144" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="391" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805735">Süreç Grubu</text>
+    <text x="382" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#896a4f">Ön plan</text>
+    <text x="382" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#896a4f">SIGINT teslimi</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="495" y="87" width="113" height="128" rx="20" fill="#f8fafc" stroke="#c9d8e3"/>
+    <text x="518" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#465d70">Davranış</text>
+    <rect x="509" y="128" width="85" height="27" rx="9" fill="#d8f0e6"/>
+    <path d="M520 141 L524 145 L532 136" fill="none" stroke="#398167" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="538" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#326b58">İşleyici</text>
+    <rect x="509" y="165" width="85" height="27" rx="9" fill="#fde1df"/>
+    <path d="M521 174 L531 184 M531 174 L521 184" stroke="#bd6861" stroke-width="2" stroke-linecap="round"/>
+    <text x="538" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92534f">Sonlanma</text>
+  </g>
+
+  <path d="M400 203 V249 H293" fill="none" stroke="#a7b5c1" stroke-width="1.7" stroke-dasharray="4 4"/>
+  <polygon points="293,249 301,244 301,254" fill="#a7b5c1"/>
+  <g filter="url(#smallShadow)">
+    <rect x="90" y="235" width="203" height="48" rx="14" fill="#ffffff" opacity="0.92" stroke="#d7e2e8"/>
+    <circle cx="112" cy="259" r="12" fill="#8f7cc2"/>
+    <path d="M112 252 V260 L117 264" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="133" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526677">Standart sinyal</text>
+    <text x="133" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#758696">Tekrarlarsa birleşebilir</text>
+  </g>
+
+  <path d="M463 119 C477 119 480 82 495 82" fill="none" stroke="#d37a72" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="495,82 487,78 489,87" fill="#d37a72"/>
+  <text x="437" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a15b56">SIGKILL</text>
+  <text x="443" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a15b56">yakalanamaz</text>
+</svg>

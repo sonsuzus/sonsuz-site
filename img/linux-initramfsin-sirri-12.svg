@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="ram" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8ddff"/>
+      <stop offset="100%" stop-color="#d8efff"/>
+    </linearGradient>
+    <linearGradient id="root" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#daf5e5"/>
+      <stop offset="100%" stop-color="#d5edfb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#547188" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="73" cy="62" r="48" fill="#cfeafb" opacity="0.32"/>
+  <circle cx="581" cy="264" r="70" fill="#d8f1d9" opacity="0.38"/>
+  <path d="M35 159 H605" fill="none" stroke="#b9cfdb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M142 159 L133 153 L133 165 Z" fill="#8aa9bb"/>
+  <path d="M270 159 L261 153 L261 165 Z" fill="#8aa9bb"/>
+  <path d="M448 159 L439 153 L439 165 Z" fill="#8aa9bb"/>
+  <path d="M568 159 L559 153 L559 165 Z" fill="#8aa9bb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="25" y="111" width="112" height="96" rx="18" fill="#fff6db" stroke="#efd99a"/>
+    <rect x="153" y="111" width="112" height="96" rx="18" fill="#dff1ff" stroke="#afd8ed"/>
+    <rect x="281" y="82" width="150" height="154" rx="22" fill="url(#ram)" stroke="#beaee7" stroke-width="1.5"/>
+    <rect x="467" y="111" width="112" height="96" rx="18" fill="url(#root)" stroke="#a7d9bd"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="44" y="128" width="34" height="25" rx="6" fill="#f2c86c"/>
+    <rect x="48" y="133" width="26" height="4" rx="2" fill="#fff6d9"/>
+    <rect x="48" y="142" width="18" height="4" rx="2" fill="#fff6d9"/>
+    <path d="M84 149 C84 137 102 137 102 149 V158 H84 Z" fill="#d5a94e"/>
+    <circle cx="93" cy="148" r="8" fill="#ffe9a8"/>
+  </g>
+  <text x="81" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#465465" font-weight="600">BIOS / UEFI</text>
+  <text x="81" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687888">Donanım</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="178" y="128" width="61" height="35" rx="8" fill="#5f9cc0"/>
+    <rect x="184" y="135" width="49" height="5" rx="2" fill="#dff4ff"/>
+    <rect x="184" y="146" width="34" height="5" rx="2" fill="#b9def1"/>
+    <path d="M202 119 L211 128 L193 128 Z" fill="#78bad9"/>
+  </g>
+  <text x="209" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#465465" font-weight="600">Önyükleyici</text>
+  <text x="209" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687888">Çekirdek + arşiv</text>
+
+  <text x="356" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554b75" font-weight="700">INITRAMFS</text>
+  <text x="356" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#746b91">RAM üzerindeki geçici kök</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="300" y="140" width="48" height="37" rx="9" fill="#806bbb"/>
+    <rect x="307" y="147" width="34" height="5" rx="2" fill="#eeeaff"/>
+    <rect x="307" y="158" width="23" height="5" rx="2" fill="#d6cdf4"/>
+    <rect x="363" y="140" width="48" height="37" rx="9" fill="#7eb6b0"/>
+    <path d="M373 158 L381 150 L387 156 L399 144" fill="none" stroke="#f4fffb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="324" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e5677">/init</text>
+  <text x="387" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e5677">Hazırlık</text>
+
+  <path d="M356 236 V254" fill="none" stroke="#9e91c8" stroke-width="2"/>
+  <path d="M356 260 L350 251 L362 251 Z" fill="#9e91c8"/>
+  <rect x="253" y="264" width="207" height="31" rx="14" fill="#ffffff" opacity="0.76" filter="url(#smallShadow)"/>
+  <text x="356" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f5b73">Sürücü · LUKS · LVM · Dosya sistemi</text>
+
+  <g filter="url(#smallShadow)">
+    <ellipse cx="523" cy="137" rx="28" ry="9" fill="#78bc98"/>
+    <path d="M495 137 V160 C495 172 551 172 551 160 V137" fill="#a4dfbb"/>
+    <ellipse cx="523" cy="160" rx="28" ry="9" fill="#8aceaa"/>
+    <path d="M495 160 V171 C495 183 551 183 551 171 V160" fill="#91d5ad"/>
+    <ellipse cx="523" cy="171" rx="28" ry="9" fill="#78bc98"/>
+  </g>
+  <text x="523" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#465465" font-weight="600">Gerçek kök</text>
+  <text x="523" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687888">SSD / Ağ / Disk</text>
+
+  <path d="M579 159 H603" fill="none" stroke="#75af91" stroke-width="3" stroke-linecap="round"/>
+  <path d="M613 159 L603 153 L603 165 Z" fill="#75af91"/>
+  <text x="600" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51816b">switch_root</text>
+</svg>
