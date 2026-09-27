@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="kernel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8efff"/>
+      <stop offset="100%" stop-color="#e8f6ed"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#526579" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#526579" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="61" cy="42" r="47" fill="#dceeff" opacity="0.48"/>
+  <circle cx="593" cy="274" r="65" fill="#dff3e5" opacity="0.5"/>
+  <circle cx="544" cy="35" r="23" fill="#fff0d8" opacity="0.62"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37516b">eBPF / XDP PAKET AKIŞI</text>
+
+  <rect x="25" y="77" width="590" height="139" rx="24" fill="url(#kernel)" stroke="#ccdae3" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="47" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#50657b">Linux çekirdeği</text>
+
+  <rect x="46" y="125" width="93" height="63" rx="15" fill="#d9edff" stroke="#a9cde9" filter="url(#softShadow)"/>
+  <path d="M65 155h12m-6-6 6 6-6 6M87 143v27m9-22v17" fill="none" stroke="#3979aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="91" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2e628d">Ağ kartı</text>
+
+  <path d="M140 156h27" fill="none" stroke="#7393a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="170,156 162,151 162,161" fill="#7393a8"/>
+
+  <rect x="174" y="115" width="154" height="84" rx="18" fill="#e7ddff" stroke="#c7afe9" stroke-width="1.2" filter="url(#softShadow)"/>
+  <rect x="190" y="130" width="42" height="22" rx="8" fill="#c6a9ed"/>
+  <path d="M202 141h18m-9-7v14" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="249" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#68498d">XDP kancası</text>
+  <text x="249" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765b96">erken karar</text>
+  <text x="249" y="186" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765b96">paket inceleme</text>
+
+  <path d="M328 156h27" fill="none" stroke="#7393a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="358,156 350,151 350,161" fill="#7393a8"/>
+
+  <rect x="362" y="125" width="99" height="63" rx="15" fill="#fff0d8" stroke="#edcf9d" filter="url(#softShadow)"/>
+  <path d="M381 146l8-7 8 7v10l-8 7-8-7z" fill="#e4a94f"/>
+  <path d="M389 143v10m-4-5h8" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="423" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#936225">eBPF</text>
+  <text x="423" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a77331">programı</text>
+
+  <path d="M461 145h21" fill="none" stroke="#63a57c" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="485,145 477,140 477,150" fill="#63a57c"/>
+  <path d="M461 168h21" fill="none" stroke="#d37a72" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="485,168 477,163 477,173" fill="#d37a72"/>
+
+  <rect x="489" y="113" width="104" height="43" rx="13" fill="#dff4e5" stroke="#a8d5b5" filter="url(#softShadow)"/>
+  <path d="M506 135l5 5 10-11" fill="none" stroke="#47966a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="553" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397a56">GEÇİR</text>
+
+  <rect x="489" y="164" width="104" height="43" rx="13" fill="#ffe4e2" stroke="#e9aaa5" filter="url(#softShadow)"/>
+  <path d="M512 177l13 13m0-13-13 13" stroke="#c45b55" stroke-width="2.3" stroke-linecap="round"/>
+  <text x="553" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a64742">DÜŞÜR</text>
+
+  <rect x="54" y="244" width="139" height="55" rx="16" fill="#ffffff" stroke="#c9d8e5" filter="url(#softShadow)"/>
+  <path d="M72 261h22v18H72z" fill="#a8c9eb"/>
+  <path d="M76 267h14m-14 5h10" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="108" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6680">Kullanıcı alanı</text>
+  <text x="108" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698196">Derle ve yükle</text>
+
+  <path d="M193 271h37V209h23" fill="none" stroke="#809ab0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="256,209 248,204 248,214" fill="#809ab0"/>
+  <text x="205" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627d94">bytecode</text>
+
+  <rect x="347" y="244" width="132" height="55" rx="16" fill="#ffffff" stroke="#c9d8e5" filter="url(#softShadow)"/>
+  <ellipse cx="371" cy="261" rx="12" ry="5" fill="#9edbb6"/>
+  <path d="M359 261v18c0 3 5 5 12 5s12-2 12-5v-18m-24 9c0 3 5 5 12 5s12-2 12-5" fill="none" stroke="#5caa7a" stroke-width="1.6"/>
+  <text x="397" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46785b">eBPF haritası</text>
+  <text x="397" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698196">Sayaç ve kurallar</text>
+
+  <path d="M411 244v-27" fill="none" stroke="#809ab0" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="411,214 406,222 416,222" fill="#809ab0"/>
+
+  <rect x="277" y="32" width="126" height="49" rx="15" fill="#fffdf9" stroke="#d8d7d0" filter="url(#softShadow)"/>
+  <path d="M297 55l7 7 13-16" fill="none" stroke="#5c9f77" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="352" y="54" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f6576">Doğrulayıcı</text>
+  <text x="352" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698196">güvenli yükleme</text>
+
+  <path d="M340 81v24" fill="none" stroke="#809ab0" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="340,108 335,100 345,100" fill="#809ab0"/>
+</svg>

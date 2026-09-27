@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7669c8"/>
+      <stop offset="100%" stop-color="#9b8ad9"/>
+    </linearGradient>
+    <linearGradient id="tree" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f0e5"/>
+      <stop offset="100%" stop-color="#c8e8da"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#536779" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#536779" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="45" r="72" fill="#cfe8f4" opacity="0.25"/>
+  <circle cx="579" cy="282" r="88" fill="#d9edc8" opacity="0.28"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#415366">Cgroups v2 · Birleşik Kaynak Hiyerarşisi</text>
+
+  <!-- External managers -->
+  <g filter="url(#soft)">
+    <rect x="27" y="73" width="113" height="48" rx="15" fill="#ffffff"/>
+    <rect x="27" y="73" width="8" height="48" rx="4" fill="#76b6d4"/>
+    <text x="54" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405667">Docker</text>
+    <text x="54" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718291">Limit istekleri</text>
+
+    <rect x="27" y="151" width="113" height="48" rx="15" fill="#ffffff"/>
+    <rect x="27" y="151" width="8" height="48" rx="4" fill="#e9ab76"/>
+    <text x="54" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405667">systemd</text>
+    <text x="54" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718291">Servis düzeni</text>
+  </g>
+
+  <!-- Arrows to core -->
+  <path d="M140 97 H177" fill="none" stroke="#7a9aad" stroke-width="2"/>
+  <polygon points="184,97 174,91 174,103" fill="#7a9aad"/>
+  <path d="M140 175 H177" fill="none" stroke="#7a9aad" stroke-width="2"/>
+  <polygon points="184,175 174,169 174,181" fill="#7a9aad"/>
+
+  <!-- Core -->
+  <g filter="url(#shadow)">
+    <rect x="184" y="73" width="164" height="126" rx="22" fill="url(#core)"/>
+    <circle cx="215" cy="106" r="16" fill="#ffffff" opacity="0.2"/>
+    <path d="M208 106 H222 M215 99 V113" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="240" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Linux Çekirdeği</text>
+    <text x="207" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f3efff">Cgroups v2</text>
+    <rect x="206" y="147" width="119" height="29" rx="9" fill="#ffffff" opacity="0.18"/>
+    <text x="220" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Tek hiyerarşi</text>
+  </g>
+
+  <!-- core to tree -->
+  <path d="M348 136 H383 V83 H407" fill="none" stroke="#718ca0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="414,83 404,77 404,89" fill="#718ca0"/>
+  <path d="M383 136 V158 H407" fill="none" stroke="#718ca0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="414,158 404,152 404,164" fill="#718ca0"/>
+  <path d="M383 158 V234 H407" fill="none" stroke="#718ca0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="414,234 404,228 404,240" fill="#718ca0"/>
+
+  <!-- hierarchy root -->
+  <g filter="url(#soft)">
+    <rect x="414" y="57" width="190" height="52" rx="16" fill="url(#tree)"/>
+    <circle cx="440" cy="83" r="13" fill="#62a98c"/>
+    <path d="M434 83 H446 M440 77 V89" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="464" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365b50">/sys/fs/cgroup</text>
+    <text x="464" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7e73">Birleşik kök</text>
+  </g>
+
+  <!-- groups -->
+  <g filter="url(#soft)">
+    <rect x="414" y="132" width="88" height="53" rx="15" fill="#ffffff"/>
+    <rect x="414" y="132" width="88" height="7" rx="3.5" fill="#e5a96f"/>
+    <text x="431" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6270">demo</text>
+    <text x="431" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8994">Grup</text>
+
+    <rect x="516" y="132" width="88" height="53" rx="15" fill="#ffffff"/>
+    <rect x="516" y="132" width="88" height="7" rx="3.5" fill="#75b6d6"/>
+    <text x="534" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6270">web</text>
+    <text x="534" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8994">Grup</text>
+  </g>
+
+  <!-- lower arrow -->
+  <path d="M458 185 V213" fill="none" stroke="#7a9aad" stroke-width="2"/>
+  <polygon points="458,220 452,210 464,210" fill="#7a9aad"/>
+  <path d="M560 185 V213" fill="none" stroke="#7a9aad" stroke-width="2"/>
+  <polygon points="560,220 554,210 566,210" fill="#7a9aad"/>
+
+  <!-- workloads -->
+  <g filter="url(#soft)">
+    <rect x="414" y="221" width="88" height="55" rx="15" fill="#fffdf8"/>
+    <circle cx="434" cy="241" r="7" fill="#e5a96f"/>
+    <text x="447" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6270">İş yükü</text>
+    <text x="431" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8994">Süreçler</text>
+
+    <rect x="516" y="221" width="88" height="55" rx="15" fill="#fffdf8"/>
+    <circle cx="536" cy="241" r="7" fill="#75b6d6"/>
+    <text x="549" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6270">İş yükü</text>
+    <text x="533" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8994">Süreçler</text>
+  </g>
+
+  <!-- resource badges -->
+  <g>
+    <rect x="183" y="227" width="58" height="28" rx="14" fill="#d7edf8"/>
+    <text x="198" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39718e">CPU</text>
+    <rect x="248" y="227" width="71" height="28" rx="14" fill="#f8dfd3"/>
+    <text x="260" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a45e48">Bellek</text>
+    <rect x="183" y="264" width="58" height="28" rx="14" fill="#e2efd5"/>
+    <text x="200" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d8755">G/Ç</text>
+    <rect x="248" y="264" width="71" height="28" rx="14" fill="#e9e0f7"/>
+    <text x="263" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#735c9a">Süreç</text>
+  </g>
+
+  <path d="M319 241 H365 V201 H391" fill="none" stroke="#9aaebb" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <polygon points="398,201 388,195 388,207" fill="#9aaebb"/>
+  <text x="31" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718291">Kurallar çekirdekte uygulanır · Limitler gruplara bağlanır</text>
+</svg>
