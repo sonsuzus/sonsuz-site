@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ee"/>
+    </linearGradient>
+    <linearGradient id="fuseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e7ff"/>
+      <stop offset="100%" stop-color="#c7daf8"/>
+    </linearGradient>
+    <linearGradient id="pythonGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8f3e4"/>
+      <stop offset="100%" stop-color="#bee8d0"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708d" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="68" cy="42" r="55" fill="#dceeff" opacity="0.55"/>
+  <circle cx="587" cy="277" r="72" fill="#dff3df" opacity="0.55"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43556c">FUSE ile Sanal Dosya Sistemi Akışı</text>
+
+  <path d="M143 126 H183" fill="none" stroke="#7189a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="183,126 174,121 174,131" fill="#7189a8"/>
+  <path d="M315 126 H352" fill="none" stroke="#7189a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="352,126 343,121 343,131" fill="#7189a8"/>
+  <path d="M486 126 H518" fill="none" stroke="#7189a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="518,126 509,121 509,131" fill="#7189a8"/>
+
+  <text x="164" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61738b">okuma isteği</text>
+  <text x="334" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61738b">read()</text>
+  <text x="502" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61738b">anlık veri</text>
+
+  <g filter="url(#golge)">
+    <rect x="28" y="82" width="115" height="89" rx="18" fill="#fff4da"/>
+    <rect x="186" y="72" width="129" height="109" rx="20" fill="url(#fuseGrad)"/>
+    <rect x="353" y="66" width="133" height="121" rx="20" fill="url(#pythonGrad)"/>
+    <rect x="519" y="82" width="93" height="89" rx="18" fill="#f2def6"/>
+  </g>
+
+  <g fill="none" stroke="#7b6940" stroke-width="2.3" stroke-linejoin="round">
+    <rect x="58" y="101" width="54" height="42" rx="5" fill="#fffdf7" stroke="#c9ad62"/>
+    <path d="M67 114 H102 M67 123 H96 M67 132 H88"/>
+  </g>
+  <text x="86" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d5135">Uygulama</text>
+
+  <g fill="none" stroke="#416a9b" stroke-width="2.4" stroke-linecap="round">
+    <path d="M217 108 C217 98 232 98 232 108 V119"/>
+    <path d="M269 108 C269 98 284 98 284 108 V119"/>
+    <path d="M224 119 H277"/>
+    <path d="M234 132 H267"/>
+    <path d="M246 145 H255"/>
+  </g>
+  <text x="250" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365b88">FUSE sürücüsü</text>
+  <text x="250" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52739c">çekirdek</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="376" y="88" width="87" height="43" rx="10" fill="#f7fffa" stroke="#8cc9a5"/>
+  </g>
+  <text x="419" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#377254">Python</text>
+  <text x="419" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e8468">BenimFS</text>
+  <text x="419" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39745a">kullanıcı alanı</text>
+
+  <g fill="none" stroke="#93669b" stroke-width="2.2" stroke-linecap="round">
+    <path d="M545 104 H586 V136 H545 Z" fill="#fffaff" stroke="#bd8bc4"/>
+    <path d="M552 114 H579 M552 122 H573"/>
+  </g>
+  <text x="565" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79517f">Sanal dosya</text>
+
+  <path d="M565 184 V203 H419 V191" fill="none" stroke="#77a68a" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="419,191 414,200 424,200" fill="#77a68a"/>
+  <text x="501" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8b70">içerik üretimi</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="78" y="222" width="143" height="58" rx="15" fill="#e9f1ff"/>
+    <rect x="249" y="222" width="143" height="58" rx="15" fill="#e9f8ed"/>
+    <rect x="420" y="222" width="143" height="58" rx="15" fill="#fff0e4"/>
+  </g>
+
+  <circle cx="103" cy="251" r="12" fill="#a8c8ef"/>
+  <path d="M98 251 H108 M103 246 V256" stroke="#416b9a" stroke-width="2" stroke-linecap="round"/>
+  <text x="151" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46658a">Bulut verisi</text>
+  <text x="151" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6883a3">API okuması</text>
+
+  <circle cx="274" cy="251" r="12" fill="#aee0be"/>
+  <path d="M269 251 L273 255 L280 246" fill="none" stroke="#397755" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="322" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47755a">Kurallar</text>
+  <text x="322" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668b72">izin ve şifreleme</text>
+
+  <circle cx="445" cy="251" r="12" fill="#f0bf9e"/>
+  <path d="M440 255 L450 247 M440 247 L450 255" stroke="#9b6042" stroke-width="2" stroke-linecap="round"/>
+  <text x="493" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a604b">Günlük</text>
+  <text x="493" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b7865">erişim kaydı</text>
+
+  <path d="M419 191 V210 H151 V220" fill="none" stroke="#9ab0ca" stroke-width="1.7" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <path d="M419 191 V220" fill="none" stroke="#83b996" stroke-width="1.7" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <path d="M419 191 V210 H492 V220" fill="none" stroke="#d0a584" stroke-width="1.7" stroke-dasharray="4 4" stroke-linecap="round"/>
+</svg>

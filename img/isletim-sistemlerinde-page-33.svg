@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="ram" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f4ed"/>
+      <stop offset="100%" stop-color="#bfe7d9"/>
+    </linearGradient>
+    <linearGradient id="disk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8e2fb"/>
+      <stop offset="100%" stop-color="#d5c9f3"/>
+    </linearGradient>
+    <linearGradient id="app" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddebff"/>
+      <stop offset="100%" stop-color="#c4dafa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#5a7690" flood-opacity="0.16"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#577284" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="36" r="82" fill="#d9edff" opacity="0.38"/>
+  <circle cx="586" cy="282" r="103" fill="#dff1d6" opacity="0.40"/>
+
+  <text x="32" y="36" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516a">PAGE CACHE</text>
+  <text x="32" y="54" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698095">İlk okuma diske gider, sonraki okuma RAM'den gelir</text>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="99" width="139" height="130" rx="20" fill="url(#app)"/>
+    <rect x="35" y="99" width="139" height="130" rx="20" fill="none" stroke="#b4cce8"/>
+  </g>
+  <rect x="83" y="122" width="43" height="34" rx="7" fill="#f8fbff" stroke="#7599bc" stroke-width="1.5"/>
+  <path d="M93 133h23M93 140h23M93 147h15" fill="none" stroke="#6d91b3" stroke-width="2" stroke-linecap="round"/>
+  <text x="104" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345776">Uygulama</text>
+  <text x="104" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55748f">Dosya isteği</text>
+
+  <g filter="url(#shadow)">
+    <rect x="245" y="76" width="165" height="178" rx="23" fill="url(#ram)"/>
+    <rect x="245" y="76" width="165" height="178" rx="23" fill="none" stroke="#9bcfc0"/>
+  </g>
+  <rect x="271" y="104" width="113" height="80" rx="12" fill="#f5fffb" opacity="0.88" stroke="#91c8b8"/>
+  <rect x="281" y="116" width="22" height="55" rx="5" fill="#9ed9c9"/>
+  <rect x="308" y="116" width="22" height="55" rx="5" fill="#79c5ae"/>
+  <rect x="335" y="116" width="22" height="55" rx="5" fill="#9ed9c9"/>
+  <text x="327" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#28705f">RAM</text>
+  <text x="327" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d8477">Sayfa önbelleği</text>
+
+  <g filter="url(#shadow)">
+    <rect x="476" y="99" width="129" height="130" rx="20" fill="url(#disk)"/>
+    <rect x="476" y="99" width="129" height="130" rx="20" fill="none" stroke="#bdafe1"/>
+  </g>
+  <ellipse cx="540" cy="132" rx="33" ry="12" fill="#faf8ff" stroke="#856fae" stroke-width="1.5"/>
+  <path d="M507 132v29c0 7 15 12 33 12s33-5 33-12v-29" fill="#ede9fb" stroke="#856fae" stroke-width="1.5"/>
+  <path d="M507 147c0 7 15 12 33 12s33-5 33-12M507 161c0 7 15 12 33 12s33-5 33-12" fill="none" stroke="#856fae" stroke-width="1.2"/>
+  <text x="540" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d4b85">Disk</text>
+  <text x="540" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#766690">SSD veya HDD</text>
+
+  <path d="M175 139 C198 139 216 126 242 126" fill="none" stroke="#668bad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="242,126 232,120 234,131" fill="#668bad"/>
+  <rect x="182" y="108" width="54" height="22" rx="11" fill="#ffffff" filter="url(#soft)"/>
+  <text x="209" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52738e">Kontrol</text>
+
+  <path d="M412 143 C434 143 449 143 473 143" fill="none" stroke="#9b78bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="473,143 463,137 463,149" fill="#9b78bd"/>
+  <path d="M473 166 C447 166 434 175 412 175" fill="none" stroke="#9b78bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="412,175 422,169 422,181" fill="#9b78bd"/>
+  <rect x="425" y="115" width="47" height="22" rx="11" fill="#ffffff" filter="url(#soft)"/>
+  <text x="448" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765a98">İlk okuma</text>
+
+  <path d="M244 221 C215 265 175 271 144 239" fill="none" stroke="#44a988" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="144,239 148,251 156,242" fill="#44a988"/>
+  <rect x="162" y="254" width="130" height="35" rx="17" fill="#e2f6ed" filter="url(#soft)"/>
+  <circle cx="180" cy="271.5" r="7" fill="#49af8e"/>
+  <path d="M177 271l2.5 3 4.5-6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="233" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#28705f">Cache hit · Hızlı</text>
+
+  <rect x="437" y="254" width="154" height="35" rx="17" fill="#f1eafa" filter="url(#soft)"/>
+  <circle cx="456" cy="271.5" r="7" fill="#9274bd"/>
+  <path d="M453 269l6 6M459 269l-6 6" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="527" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#624b85">Cache miss · Yavaş</text>
+</svg>
