@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="hashGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2d9ff"/>
+      <stop offset="100%" stop-color="#e5edff"/>
+    </linearGradient>
+    <linearGradient id="warnGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe2dc"/>
+      <stop offset="100%" stop-color="#fff1cf"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6f8399" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6f8399" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="138" r="118" fill="#dceef4" opacity="0.28"/>
+  <circle cx="320" cy="138" r="88" fill="none" stroke="#b9d2d9" stroke-width="1.5" stroke-dasharray="5 6" opacity="0.8"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#30465c">
+    <rect x="24" y="93" width="142" height="102" rx="18" fill="url(#warnGrad)" filter="url(#shadow)"/>
+    <circle cx="57" cy="128" r="18" fill="#ef9e91"/>
+    <path d="M49 134 L57 118 L65 134 Z" fill="#fff8f2"/>
+    <rect x="55.8" y="123" width="2.4" height="6.5" rx="1" fill="#bb5d58"/>
+    <circle cx="57" cy="132" r="1.5" fill="#bb5d58"/>
+    <text x="84" y="122" font-weight="700" fill="#713d44">Ele geçirilen</text>
+    <text x="84" y="140" font-weight="700" fill="#713d44">uç nokta</text>
+    <text x="41" y="173" fill="#765862">Yerel yönetici erişimi</text>
+
+    <rect x="216" y="77" width="208" height="124" rx="22" fill="url(#hashGrad)" filter="url(#shadow)"/>
+    <rect x="239" y="96" width="162" height="30" rx="10" fill="#ffffff" opacity="0.68"/>
+    <path d="M254 111 h16 M258 105 v12 M280 105 h8 M293 105 h8 M306 105 h8 M319 105 h8 M332 105 h8 M345 105 h8 M358 105 h8" stroke="#7654a4" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="320" y="148" text-anchor="middle" font-weight="700" fill="#49376e">NT hash</text>
+    <text x="320" y="167" text-anchor="middle" fill="#5f5877">Parola bilinmeden kullanım</text>
+    <text x="320" y="185" text-anchor="middle" fill="#5f5877">Kimlik doğrulama materyali</text>
+
+    <rect x="474" y="57" width="142" height="84" rx="17" fill="#d8edf4" filter="url(#shadow)"/>
+    <rect x="490" y="74" width="34" height="25" rx="5" fill="#86bdcf"/>
+    <rect x="495" y="79" width="24" height="4" rx="2" fill="#edf9fa"/>
+    <rect x="495" y="87" width="16" height="4" rx="2" fill="#d5eef1"/>
+    <text x="541" y="82" font-weight="700" fill="#28576a">NTLM</text>
+    <text x="541" y="101" fill="#3e6574">Doğrulama</text>
+    <text x="541" y="120" fill="#3e6574">sunucusu</text>
+
+    <rect x="474" y="164" width="142" height="84" rx="17" fill="#dcebd4" filter="url(#shadow)"/>
+    <rect x="491" y="181" width="31" height="29" rx="5" fill="#86b77c"/>
+    <path d="M496 188 h21 M496 195 h21 M496 202 h13" stroke="#edf8e9" stroke-width="2" stroke-linecap="round"/>
+    <text x="541" y="190" font-weight="700" fill="#3b6241">Hedef</text>
+    <text x="541" y="209" fill="#527258">sistemler</text>
+    <text x="541" y="228" fill="#527258">SMB · yönetim</text>
+
+    <path d="M166 144 C184 144 195 139 211 139" fill="none" stroke="#b96b68" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="214,139 204,133 204,145" fill="#b96b68"/>
+
+    <path d="M424 127 C442 116 450 102 469 100" fill="none" stroke="#7256a7" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="472,100 462,95 464,106" fill="#7256a7"/>
+    <text x="436" y="92" text-anchor="middle" fill="#66557f">Sınama · cevap</text>
+
+    <path d="M424 159 C442 172 450 196 469 204" fill="none" stroke="#7256a7" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="472,205 462,198 466,210" fill="#7256a7"/>
+    <text x="445" y="181" text-anchor="middle" fill="#66557f">Yatay hareket</text>
+
+    <path d="M96 220 C132 264 211 277 261 251" fill="none" stroke="#74a6ad" stroke-width="2" stroke-dasharray="5 5" opacity="0.75"/>
+    <path d="M379 251 C431 276 510 266 544 241" fill="none" stroke="#74a6ad" stroke-width="2" stroke-dasharray="5 5" opacity="0.75"/>
+
+    <rect x="174" y="250" width="292" height="51" rx="16" fill="#eef8ea" filter="softShadow"/>
+    <path d="M204 263 L218 257 L232 263 V275 C232 283 226 289 218 292 C210 289 204 283 204 275 Z" fill="#70a978"/>
+    <path d="M211 274 L216 279 L225 268" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="248" y="271" font-weight="700" fill="#3c6945">Savunma katmanları</text>
+    <text x="248" y="288" fill="#56735b">Kimlik yalıtımı · NTLM denetimi · olay korelasyonu</text>
+
+    <path d="M320 201 L320 243" fill="none" stroke="#6fa276" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="320,247 314,237 326,237" fill="#6fa276"/>
+  </g>
+</svg>
