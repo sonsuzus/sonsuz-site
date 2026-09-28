@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="cronCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffecd7"/>
+    </linearGradient>
+    <linearGradient id="systemCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edf9f5"/>
+      <stop offset="100%" stop-color="#dcefe8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#69819a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#69819a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="42" cy="48" r="74" fill="#dcecff" opacity="0.5"/>
+  <circle cx="602" cy="276" r="90" fill="#dff3dc" opacity="0.52"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345068">Zamanlama Yaklaşımları</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71859a">Basit alarmdan yönetilen iş akışına</text>
+
+  <rect x="34" y="70" width="240" height="215" rx="20" fill="url(#cronCard)" filter="url(#shadow)"/>
+  <rect x="366" y="70" width="240" height="215" rx="20" fill="url(#systemCard)" filter="url(#shadow)"/>
+
+  <rect x="56" y="87" width="94" height="27" rx="13.5" fill="#f4a261" filter="url(#softShadow)"/>
+  <text x="103" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">CRON</text>
+  <text x="166" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#89592f">Geleneksel</text>
+
+  <circle cx="153" cy="159" r="42" fill="#fffaf4" stroke="#e9b47b" stroke-width="2" filter="url(#softShadow)"/>
+  <circle cx="153" cy="159" r="4" fill="#d98542"/>
+  <path d="M153 159 L153 132 M153 159 L174 171" fill="none" stroke="#d98542" stroke-width="3" stroke-linecap="round"/>
+  <path d="M127 122 L119 112 L133 109 M179 122 L187 112 L173 109" fill="none" stroke="#d98542" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="153" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76543a">Sabit zaman</text>
+
+  <path d="M153 222 L153 239" fill="none" stroke="#d59150" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="148,237 158,237 153,245" fill="#d59150"/>
+  <rect x="85" y="247" width="136" height="24" rx="9" fill="#fffaf3" stroke="#edcba6"/>
+  <text x="153" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805b3c">Komut çalıştır</text>
+
+  <path d="M274 177 C305 177 326 177 354 177" fill="none" stroke="#9bb1be" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="349,172 359,177 349,182" fill="#7895a5"/>
+  <rect x="285" y="154" width="69" height="24" rx="10" fill="#ffffff" opacity="0.88"/>
+  <text x="319.5" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597586">Gelişim</text>
+
+  <rect x="387" y="87" width="134" height="27" rx="13.5" fill="#55aa8a" filter="url(#softShadow)"/>
+  <text x="454" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">SYSTEMD TIMER</text>
+
+  <rect x="409" y="128" width="72" height="43" rx="12" fill="#ffffff" stroke="#a8d9c7" filter="url(#softShadow)"/>
+  <text x="445" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397862">.timer</text>
+  <text x="445" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8f80">Ne zaman</text>
+
+  <rect x="519" y="128" width="66" height="43" rx="12" fill="#ffffff" stroke="#a8d9c7" filter="url(#softShadow)"/>
+  <text x="552" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397862">.service</text>
+  <text x="552" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8f80">Ne çalışır</text>
+
+  <path d="M482 149 L512 149" fill="none" stroke="#52a786" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="507,144 517,149 507,154" fill="#52a786"/>
+
+  <path d="M445 172 L445 192 L494 192" fill="none" stroke="#72ad99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="489,187 499,192 489,197" fill="#72ad99"/>
+  <path d="M552 172 L552 192 L504 192" fill="none" stroke="#72ad99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="509,187 499,192 509,197" fill="#72ad99"/>
+
+  <rect x="449" y="202" width="101" height="30" rx="11" fill="#d4eee4" stroke="#8fcbb5" filter="url(#softShadow)"/>
+  <text x="499.5" y="221" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397862">Yönetilen görev</text>
+
+  <path d="M499 233 L499 241" fill="none" stroke="#72ad99" stroke-width="2"/>
+  <polygon points="494,239 504,239 499,246" fill="#72ad99"/>
+
+  <rect x="393" y="248" width="70" height="23" rx="9" fill="#ffffff" stroke="#b9dfd1"/>
+  <text x="428" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477b69">Ağ hazır</text>
+  <rect x="466" y="248" width="67" height="23" rx="9" fill="#ffffff" stroke="#b9dfd1"/>
+  <text x="499.5" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477b69">Telafi</text>
+  <rect x="536" y="248" width="55" height="23" rx="9" fill="#ffffff" stroke="#b9dfd1"/>
+  <text x="563.5" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477b69">Kayıt</text>
+</svg>

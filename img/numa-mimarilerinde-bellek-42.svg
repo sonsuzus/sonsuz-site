@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="localGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f4eb"/>
+      <stop offset="100%" stop-color="#c5e9db"/>
+    </linearGradient>
+    <linearGradient id="remoteGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe8dc"/>
+      <stop offset="100%" stop-color="#f7d2c0"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7892a6" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7892a6" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="38" r="72" fill="#d9efff" opacity="0.42"/>
+  <circle cx="587" cy="281" r="88" fill="#dcefd5" opacity="0.42"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40576a">NUMA BELLEK YERELLİĞİ</text>
+  <text x="320" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718592">Hesap ve veri aynı düğümde olduğunda erişim hızlanır</text>
+
+  <g filter="url(#shadow)">
+    <rect x="45" y="76" width="210" height="180" rx="20" fill="#eef7ff" stroke="#b9d8ed"/>
+    <rect x="385" y="76" width="210" height="180" rx="20" fill="#f4f8ed" stroke="#c9dfb9"/>
+  </g>
+
+  <rect x="64" y="91" width="172" height="30" rx="12" fill="#cfe8fa"/>
+  <circle cx="84" cy="106" r="7" fill="#6faed2"/>
+  <text x="101" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566d">NUMA Düğümü 0</text>
+
+  <rect x="404" y="91" width="172" height="30" rx="12" fill="#dcebd0"/>
+  <circle cx="424" cy="106" r="7" fill="#85ae67"/>
+  <text x="441" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48653c">NUMA Düğümü 1</text>
+
+  <g filter="url(#soft)">
+    <rect x="69" y="140" width="72" height="62" rx="13" fill="#cfe6f7"/>
+    <rect x="159" y="140" width="72" height="62" rx="13" fill="url(#localGrad)"/>
+    <rect x="409" y="140" width="72" height="62" rx="13" fill="#d9ead0"/>
+    <rect x="499" y="140" width="72" height="62" rx="13" fill="url(#remoteGrad)"/>
+  </g>
+
+  <rect x="82" y="151" width="46" height="8" rx="4" fill="#77aeca"/>
+  <rect x="82" y="165" width="46" height="8" rx="4" fill="#77aeca"/>
+  <rect x="82" y="179" width="46" height="8" rx="4" fill="#77aeca"/>
+  <text x="105" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426477">İşlemci</text>
+
+  <rect x="172" y="151" width="46" height="8" rx="4" fill="#71b99b"/>
+  <rect x="172" y="165" width="46" height="8" rx="4" fill="#71b99b"/>
+  <rect x="172" y="179" width="46" height="8" rx="4" fill="#71b99b"/>
+  <text x="195" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f7461">Yerel RAM</text>
+
+  <rect x="422" y="151" width="46" height="8" rx="4" fill="#82aa6d"/>
+  <rect x="422" y="165" width="46" height="8" rx="4" fill="#82aa6d"/>
+  <rect x="422" y="179" width="46" height="8" rx="4" fill="#82aa6d"/>
+  <text x="445" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557849">İşlemci</text>
+
+  <rect x="512" y="151" width="46" height="8" rx="4" fill="#dc9874"/>
+  <rect x="512" y="165" width="46" height="8" rx="4" fill="#dc9874"/>
+  <rect x="512" y="179" width="46" height="8" rx="4" fill="#dc9874"/>
+  <text x="535" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a5b40">Uzak RAM</text>
+
+  <path d="M141 171 L154 171" fill="none" stroke="#54a887" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="154,165 164,171 154,177" fill="#54a887"/>
+  <path d="M481 171 L494 171" fill="none" stroke="#d17a55" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="494,165 504,171 494,177" fill="#d17a55"/>
+
+  <path d="M231 171 C285 171,355 171,409 171" fill="none" stroke="#d67b59" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 6"/>
+  <polygon points="397,164 409,171 397,178" fill="#d67b59"/>
+
+  <g filter="url(#soft)">
+    <rect x="267" y="132" width="106" height="76" rx="17" fill="#fff5eb" stroke="#f0c5ac"/>
+  </g>
+  <circle cx="291" cy="157" r="11" fill="#f2b28d"/>
+  <path d="M286 157 L290 161 L297 152" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="329" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b5843">Soketler arası</text>
+  <text x="329" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a06a52">bağlantı</text>
+  <text x="329" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b37355">ek gecikme</text>
+
+  <g filter="url(#soft)">
+    <rect x="64" y="272" width="238" height="32" rx="13" fill="#ddf3e9"/>
+    <rect x="338" y="272" width="238" height="32" rx="13" fill="#ffe8dc"/>
+  </g>
+  <circle cx="84" cy="288" r="7" fill="#55a980"/>
+  <text x="98" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39755b">Yerel erişim</text>
+  <text x="205" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7d6a">90 ns · yüksek bant genişliği</text>
+
+  <circle cx="358" cy="288" r="7" fill="#d47d59"/>
+  <text x="372" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#92563f">Uzak erişim</text>
+  <text x="473" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d634e">150 ns · bağlantı maliyeti</text>
+</svg>
