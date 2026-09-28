@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="binary" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9e7ff"/>
+      <stop offset="1" stop-color="#c8dcfa"/>
+    </linearGradient>
+    <linearGradient id="ghidra" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7ddff"/>
+      <stop offset="1" stop-color="#d6c7f5"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#daf1e3"/>
+      <stop offset="1" stop-color="#c7e8d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7790a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#697c8f" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="64" cy="48" r="72" fill="#dceeff" opacity="0.42"/>
+  <circle cx="598" cy="268" r="95" fill="#daf1dc" opacity="0.38"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40556d">DERLENMİŞ KODDAN DAVRANIŞ MODELİNE</text>
+
+  <path d="M164 130 H221" fill="none" stroke="#7c9ab8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="221,130 212,125 212,135" fill="#7c9ab8"/>
+  <text x="191" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637c95">derleme</text>
+
+  <path d="M400 130 H445" fill="none" stroke="#7c9ab8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="445,130 436,125 436,135" fill="#7c9ab8"/>
+  <text x="423" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637c95">analiz</text>
+
+  <path d="M505 180 V205" fill="none" stroke="#71988b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="505,205 500,196 510,196" fill="#71988b"/>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="82" width="129" height="96" rx="18" fill="#fff8e8"/>
+    <rect x="47" y="95" width="105" height="24" rx="8" fill="#f7e8bf"/>
+    <text x="99" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#6b5732">C Kaynak Kod</text>
+    <path d="M56 136 H70 M56 146 H91 M56 156 H78" stroke="#b59b62" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M104 135 h35 M104 145 h24 M104 155 h31" stroke="#b59b62" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+    <text x="99" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806a42">isimler ve yorumlar</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="221" y="68" width="179" height="124" rx="20" fill="url(#binary)"/>
+    <rect x="239" y="83" width="143" height="28" rx="9" fill="#b9d1f2"/>
+    <text x="310" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#365675">Çalıştırılabilir Dosya</text>
+    <rect x="240" y="125" width="25" height="19" rx="5" fill="#789dc4"/>
+    <rect x="270" y="125" width="25" height="19" rx="5" fill="#89add0"/>
+    <rect x="300" y="125" width="25" height="19" rx="5" fill="#789dc4"/>
+    <rect x="330" y="125" width="25" height="19" rx="5" fill="#89add0"/>
+    <path d="M242 160 H278 M288 160 H315 M325 160 H358" stroke="#668eb8" stroke-width="3" stroke-linecap="round"/>
+    <text x="310" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7397">makine komutları</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="445" y="67" width="120" height="113" rx="20" fill="url(#ghidra)"/>
+    <circle cx="505" cy="104" r="22" fill="#b9a7df"/>
+    <path d="M495 104 h20 M505 94 v20" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="505" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4d416c">Ghidra</text>
+    <text x="505" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665983">Çözümleme</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="71" y="224" width="120" height="60" rx="15" fill="#ffffff"/>
+    <circle cx="94" cy="244" r="10" fill="#ffd9c5"/>
+    <path d="M89 244 h10 M94 239 v10" stroke="#a86648" stroke-width="1.8"/>
+    <text x="132" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#596a75">Listing</text>
+    <text x="132" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788991">assembly</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="210" y="224" width="120" height="60" rx="15" fill="#ffffff"/>
+    <circle cx="233" cy="244" r="10" fill="#c9e7f4"/>
+    <path d="M228 241 l3 3 6 -6 M228 248 h10" fill="none" stroke="#4c849e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="271" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#596a75">Çapraz Referans</text>
+    <text x="271" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788991">çağrı ve veri</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="385" y="216" width="193" height="74" rx="17" fill="url(#result)"/>
+    <rect x="399" y="229" width="41" height="42" rx="9" fill="#a8d7b9"/>
+    <path d="M409 241 h21 M409 249 h14 M409 257 h21" stroke="#417c5d" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="497" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#35674c">Davranış Modeli</text>
+    <text x="497" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55816a">sözde kod ve türler</text>
+  </g>
+
+  <path d="M445 160 C407 178 320 193 130 222" fill="none" stroke="#9aabb8" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.85"/>
+  <path d="M445 166 C421 184 358 201 271 222" fill="none" stroke="#9aabb8" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.85"/>
+  <path d="M505 180 C505 193 495 201 495 215" fill="none" stroke="#71988b" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+</svg>

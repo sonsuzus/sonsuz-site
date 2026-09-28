@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="tlb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dcecff"/>
+      <stop offset="1" stop-color="#cce3fb"/>
+    </linearGradient>
+    <linearGradient id="walk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff2cf"/>
+      <stop offset="1" stop-color="#fde4ad"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#71849a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#71849a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="32" r="42" fill="#d8eef0" opacity="0.48"/>
+  <circle cx="602" cy="286" r="66" fill="#e6efd2" opacity="0.52"/>
+
+  <text x="28" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547086" font-weight="600">x86-64 Adres Çevirisi</text>
+
+  <rect x="25" y="118" width="112" height="76" rx="16" fill="#e9dcff" filter="url(#shadow)"/>
+  <rect x="25" y="118" width="112" height="28" rx="16" fill="#ddccf7"/>
+  <rect x="25" y="132" width="112" height="14" fill="#ddccf7"/>
+  <text x="81" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e4265" font-weight="600">Program</text>
+  <text x="81" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d5670">Sanal adres</text>
+  <text x="81" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d5670">Sayfa + Ofset</text>
+
+  <path d="M137 156 H166" stroke="#71889a" stroke-width="2.2" fill="none"/>
+  <polygon points="166,156 158,151 158,161" fill="#71889a"/>
+
+  <rect x="169" y="95" width="138" height="122" rx="18" fill="url(#tlb)" filter="url(#shadow)"/>
+  <rect x="186" y="111" width="104" height="27" rx="10" fill="#bedbf5" opacity="0.75"/>
+  <text x="238" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#284f70" font-weight="700">TLB</text>
+  <text x="238" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6280">Hızlı çeviri</text>
+  <text x="238" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6280">önbelleği</text>
+  <rect x="190" y="188" width="96" height="14" rx="7" fill="#a8cde9" opacity="0.58"/>
+  <text x="238" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315c7a">Sık eşleşmeler</text>
+
+  <path d="M307 127 C337 127 335 84 360 84" stroke="#68a88d" stroke-width="2.3" fill="none"/>
+  <polygon points="360,84 352,79 353,89" fill="#68a88d"/>
+  <text x="329" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47836b" font-weight="600">TLB isabeti</text>
+
+  <rect x="364" y="49" width="117" height="69" rx="15" fill="#d9f1df" filter="url(#soft)"/>
+  <circle cx="387" cy="83" r="15" fill="#a8dcb9"/>
+  <path d="M380 83 L385 88 L394 77" stroke="#39775b" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="430" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356c55" font-weight="700">Hızlı erişim</text>
+  <text x="430" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7a64">Fiziksel çerçeve</text>
+
+  <path d="M307 181 C327 181 333 210 357 210" stroke="#d28d54" stroke-width="2.3" fill="none"/>
+  <polygon points="357,210 349,205 349,215" fill="#d28d54"/>
+  <text x="317" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#aa6e3d" font-weight="600">TLB ıskası</text>
+
+  <rect x="361" y="155" width="183" height="111" rx="18" fill="url(#walk)" filter="url(#shadow)"/>
+  <text x="452" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#856131" font-weight="700">Donanım sayfa yürüyüşü</text>
+
+  <rect x="375" y="194" width="31" height="38" rx="8" fill="#f8d793"/>
+  <rect x="413" y="194" width="31" height="38" rx="8" fill="#f8d793"/>
+  <rect x="451" y="194" width="31" height="38" rx="8" fill="#f8d793"/>
+  <rect x="489" y="194" width="41" height="38" rx="8" fill="#f8d793"/>
+  <text x="390" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75552b">PML4</text>
+  <text x="428" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75552b">PDPT</text>
+  <text x="466" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75552b">PD</text>
+  <text x="509" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75552b">PT</text>
+  <path d="M407 213 H411 M445 213 H449 M483 213 H487" stroke="#b88645" stroke-width="1.8"/>
+  <text x="452" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6738">CR3 ile başlar</text>
+
+  <path d="M544 210 H568" stroke="#71889a" stroke-width="2.2" fill="none"/>
+  <polygon points="568,210 560,205 560,215" fill="#71889a"/>
+
+  <rect x="571" y="166" width="48" height="89" rx="13" fill="#d5e8fb" filter="url(#soft)"/>
+  <rect x="581" y="179" width="28" height="10" rx="3" fill="#a9cdea"/>
+  <rect x="581" y="196" width="28" height="10" rx="3" fill="#a9cdea"/>
+  <rect x="581" y="213" width="28" height="10" rx="3" fill="#a9cdea"/>
+  <rect x="581" y="230" width="28" height="10" rx="3" fill="#a9cdea"/>
+  <text x="595" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426783" font-weight="600">RAM</text>
+
+  <path d="M481 84 H558 V155" stroke="#68a88d" stroke-width="2.2" fill="none"/>
+  <polygon points="558,155 553,147 563,147" fill="#68a88d"/>
+
+  <rect x="28" y="244" width="276" height="47" rx="14" fill="#ffffff" opacity="0.72" filter="url(#soft)"/>
+  <circle cx="49" cy="267" r="10" fill="#f2bf80"/>
+  <text x="49" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c542e" font-weight="700">!</text>
+  <text x="67" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f6870" font-weight="600">Iska cezası:</text>
+  <text x="67" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68757c">Birden çok tablo okuması ve gecikme</text>
+</svg>
