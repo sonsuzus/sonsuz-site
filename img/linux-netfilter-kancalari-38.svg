@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef0ff"/>
+      <stop offset="100%" stop-color="#e5f7f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="573" cy="48" r="78" fill="#dceefa" opacity="0.55"/>
+  <circle cx="76" cy="283" r="95" fill="#e2f4df" opacity="0.5"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#24445b">
+    <text x="28" y="29" font-size="16" font-weight="700" fill="#29455b">Linux Netfilter Paket Akışı</text>
+    <text x="29" y="48" fill="#638094">iptables kuralları, çekirdek kancalarında değerlendirilir</text>
+  </g>
+
+  <g filter="url(#smallShadow)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="28" y="70" width="117" height="46" rx="14" fill="#dcedfa"/>
+    <path d="M48 91h18m-9-9v18m13-10h15" stroke="#39799a" stroke-width="2" stroke-linecap="round"/>
+    <text x="82" y="89" fill="#25465d" font-weight="700">iptables</text>
+    <text x="82" y="105" fill="#668093">Kural girişi</text>
+
+    <rect x="176" y="63" width="282" height="200" rx="22" fill="url(#core)" stroke="#c9dee7" stroke-width="1.2"/>
+    <text x="197" y="88" fill="#2d5065" font-weight="700">Linux Çekirdeği</text>
+    <text x="197" y="106" fill="#6b8492">Netfilter kancaları</text>
+
+    <rect x="481" y="68" width="126" height="47" rx="14" fill="#dff3e8"/>
+    <path d="M500 92c7-11 16-11 23 0" fill="none" stroke="#397b60" stroke-width="2"/>
+    <path d="M503 92h18" stroke="#397b60" stroke-width="2" stroke-linecap="round"/>
+    <text x="533" y="88" fill="#285442" font-weight="700">Yerel</text>
+    <text x="533" y="104" fill="#638475">Uygulama</text>
+
+    <rect x="481" y="205" width="126" height="47" rx="14" fill="#fde8d6"/>
+    <path d="M500 221v14m-6-7h12" stroke="#a85e36" stroke-width="2" stroke-linecap="round"/>
+    <text x="521" y="224" fill="#844629" font-weight="700">Ağ Arayüzü</text>
+    <text x="521" y="240" fill="#9b735d">Giden trafik</text>
+  </g>
+
+  <g stroke="#7190a2" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M145 93H164"/>
+    <path d="M263 136v13"/>
+    <path d="M263 183v16"/>
+    <path d="M339 164h27"/>
+    <path d="M398 164h19v-54h64"/>
+    <path d="M398 164h19v65h64"/>
+    <path d="M544 115v23"/>
+    <path d="M544 205v-33"/>
+    <path d="M481 91h-23v73h-19"/>
+  </g>
+  <g fill="#7190a2">
+    <polygon points="164,88 173,93 164,98"/>
+    <polygon points="258,149 263,158 268,149"/>
+    <polygon points="258,199 263,208 268,199"/>
+    <polygon points="366,159 375,164 366,169"/>
+    <polygon points="476,105 485,110 476,115"/>
+    <polygon points="476,224 485,229 476,234"/>
+    <polygon points="539,129 544,138 549,129"/>
+    <polygon points="539,181 544,172 549,181"/>
+    <polygon points="434,159 425,164 434,169"/>
+  </g>
+
+  <g filter="url(#smallShadow)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="203" y="116" width="120" height="34" rx="11" fill="#cfe8fa"/>
+    <text x="221" y="138" fill="#24546e" font-weight="700">PREROUTING</text>
+
+    <rect x="203" y="158" width="120" height="34" rx="11" fill="#ffe9c9"/>
+    <text x="238" y="180" fill="#805220" font-weight="700">Rota Kararı</text>
+
+    <rect x="203" y="201" width="120" height="35" rx="11" fill="#dcefd7"/>
+    <text x="244" y="223" fill="#386a3a" font-weight="700">FORWARD</text>
+
+    <rect x="367" y="138" width="72" height="52" rx="12" fill="#e5dffd"/>
+    <text x="384" y="160" fill="#554687" font-weight="700">INPUT</text>
+    <text x="381" y="177" fill="#766ba0">Yerel hedef</text>
+
+    <rect x="367" y="205" width="72" height="35" rx="11" fill="#f8dce6"/>
+    <text x="378" y="227" fill="#8a4661" font-weight="700">POST</text>
+
+    <rect x="348" y="270" width="91" height="31" rx="11" fill="#d9edfa"/>
+    <text x="366" y="291" fill="#2e6078" font-weight="700">OUTPUT</text>
+  </g>
+
+  <g stroke="#7190a2" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M481 92H458v193h-10"/>
+    <path d="M394 270v-25"/>
+    <path d="M403 240v14"/>
+  </g>
+  <g fill="#7190a2">
+    <polygon points="443,280 452,285 443,290"/>
+    <polygon points="389,245 394,236 399,245"/>
+    <polygon points="398,254 403,263 408,254"/>
+  </g>
+
+  <g filter="url(#smallShadow)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="27" y="150" width="127" height="113" rx="18" fill="#ffffff" opacity="0.92"/>
+    <text x="45" y="174" fill="#385669" font-weight="700">İşlem Katmanları</text>
+    <rect x="44" y="187" width="42" height="22" rx="8" fill="#f6dfe6"/>
+    <text x="54" y="202" fill="#8d4d68">raw</text>
+    <rect x="91" y="187" width="43" height="22" rx="8" fill="#e2dafa"/>
+    <text x="101" y="202" fill="#594b8d">nat</text>
+    <rect x="44" y="216" width="55" height="22" rx="8" fill="#d9f0e1"/>
+    <text x="54" y="231" fill="#347051">mangle</text>
+    <rect x="104" y="216" width="34" height="22" rx="8" fill="#dcedfa"/>
+    <text x="110" y="231" fill="#32647c">filtre</text>
+    <text x="45" y="253" fill="#748c9a">Öncelik sırası</text>
+  </g>
+
+  <g filter="url(#smallShadow)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="469" y="269" width="139" height="32" rx="12" fill="#ffffff" opacity="0.92"/>
+    <circle cx="486" cy="285" r="6" fill="#6cb58a"/>
+    <text x="498" y="289" fill="#31586a" font-weight="700">ACCEPT</text>
+    <circle cx="558" cy="285" r="6" fill="#df7b71"/>
+    <text x="570" y="289" fill="#7c4645" font-weight="700">DROP</text>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8695">
+    <text x="271" y="132">gelen paket</text>
+    <text x="329" y="155">yerel?</text>
+    <text x="329" y="198">uzak hedef</text>
+  </g>
+</svg>
