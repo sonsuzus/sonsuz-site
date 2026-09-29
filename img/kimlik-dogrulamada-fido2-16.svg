@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfe8ff"/>
+      <stop offset="100%" stop-color="#cfe0f7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e86a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71859a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="108" fill="#dcecf0" opacity="0.32"/>
+  <circle cx="320" cy="160" r="83" fill="none" stroke="#b7d0d8" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.8"/>
+
+  <!-- Bağlantılar -->
+  <path d="M154 99 C193 99 210 116 233 132" fill="none" stroke="#7d9bb5" stroke-width="2.5"/>
+  <polygon points="231,126 243,137 227,139" fill="#7d9bb5"/>
+
+  <path d="M153 224 C195 222 208 204 232 187" fill="none" stroke="#7d9bb5" stroke-width="2.5"/>
+  <polygon points="228,181 244,181 236,195" fill="#7d9bb5"/>
+
+  <path d="M407 132 C431 116 449 100 481 99" fill="none" stroke="#7195a5" stroke-width="2.5"/>
+  <polygon points="477,94 493,98 480,106" fill="#7195a5"/>
+
+  <path d="M408 188 C434 205 446 222 480 224" fill="none" stroke="#7195a5" stroke-width="2.5"/>
+  <polygon points="477,218 493,225 478,230" fill="#7195a5"/>
+
+  <!-- Sol üst: Tarayıcı -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="53" width="120" height="93" rx="18" fill="#ffffff"/>
+    <rect x="35" y="53" width="120" height="25" rx="18" fill="#dbeaff"/>
+    <path d="M35 70 H155" stroke="#c3d8ef" stroke-width="1"/>
+    <circle cx="51" cy="65" r="3" fill="#81aed1"/>
+    <circle cx="61" cy="65" r="3" fill="#a5c996"/>
+    <circle cx="71" cy="65" r="3" fill="#e8b37f"/>
+    <rect x="55" y="91" width="79" height="30" rx="7" fill="#eef5fd"/>
+    <path d="M65 106 H104" stroke="#7294b8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="119" cy="106" r="7" fill="#91bbda"/>
+  </g>
+  <text x="95" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38546d">Tarayıcı</text>
+
+  <!-- Sol alt: Kullanıcı -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="180" width="120" height="92" rx="18" fill="#fffdf9"/>
+    <circle cx="95" cy="210" r="17" fill="#f3caa8"/>
+    <path d="M72 247 C74 229 84 222 95 222 C106 222 117 229 119 247" fill="#8bb5cb"/>
+    <circle cx="89" cy="208" r="2" fill="#577283"/>
+    <circle cx="101" cy="208" r="2" fill="#577283"/>
+    <path d="M90 216 Q95 220 100 216" fill="none" stroke="#b47265" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <text x="95" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38546d">Yerel onay</text>
+
+  <!-- Merkez FIDO2 -->
+  <g filter="url(#shadow)">
+    <rect x="235" y="105" width="170" height="110" rx="28" fill="url(#centerGrad)" stroke="#b8cfe5" stroke-width="1.5"/>
+    <path d="M320 121 L359 136 V161 C359 184 342 197 320 204 C298 197 281 184 281 161 V136 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M320 128 L352 140 V160 C352 178 340 189 320 196 C300 189 288 178 288 160 V140 Z" fill="#86b5cd"/>
+    <path d="M310 159 L317 166 L332 149" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="320" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35536c">FIDO2</text>
+    <text x="320" y="228" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35536c">Alan adına bağlı kanıt</text>
+  </g>
+
+  <!-- Sağ üst: Doğrulayıcı -->
+  <g filter="url(#shadow)">
+    <rect x="484" y="51" width="121" height="96" rx="18" fill="#ffffff"/>
+    <rect x="518" y="68" width="53" height="48" rx="12" fill="#dff0e5" stroke="#abd0b8"/>
+    <circle cx="544.5" cy="90" r="11" fill="#8dbfa0"/>
+    <path d="M544 80 C539 82 537 87 538 94 M544 80 C550 82 552 87 551 94 M540 98 C543 101 547 101 550 98" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M531 122 H558" stroke="#91af9a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="544" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38546d">Doğrulayıcı</text>
+
+  <!-- Sağ alt: Sunucu -->
+  <g filter="url(#shadow)">
+    <rect x="484" y="180" width="121" height="92" rx="18" fill="#ffffff"/>
+    <rect x="509" y="195" width="70" height="48" rx="8" fill="#ece8fb"/>
+    <path d="M509 211 H579 M509 227 H579" stroke="#c3b8e4" stroke-width="1"/>
+    <circle cx="521" cy="203" r="3" fill="#8e7bc4"/>
+    <circle cx="521" cy="219" r="3" fill="#8e7bc4"/>
+    <circle cx="521" cy="235" r="3" fill="#8e7bc4"/>
+    <path d="M534 203 H564 M534 219 H564 M534 235 H554" stroke="#8876bc" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="544" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38546d">Sunucu · Açık anahtar</text>
+
+  <!-- Alt bilgi kartları -->
+  <g filter="url(#smallShadow)">
+    <rect x="176" y="270" width="134" height="31" rx="12" fill="#fff7dc"/>
+    <circle cx="193" cy="285.5" r="7" fill="#e8b96a"/>
+    <path d="M193 281 V286 L197 289" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="244" y="289.5" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#675232">Tek kullanımlık</text>
+  </g>
+  <g filter="url(#smallShadow)">
+    <rect x="329" y="270" width="135" height="31" rx="12" fill="#e5f3ea"/>
+    <path d="M347 279 L357 283 V289 C357 294 353 297 347 299 C341 297 337 294 337 289 V283 Z" fill="#7caf8e"/>
+    <text x="404" y="289.5" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#395f49">Sayısal imza</text>
+  </g>
+</svg>

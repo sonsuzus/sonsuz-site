@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="kdc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6ddff"/>
+      <stop offset="100%" stop-color="#d8efff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7891aa" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7891aa" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="87" cy="50" r="72" fill="#dff2ff" opacity="0.5"/>
+  <circle cx="580" cy="274" r="95" fill="#e1f3d7" opacity="0.55"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40546b">Kerberos • Parola değil, süreli bilet</text>
+
+  <path d="M145 127 C179 91 203 82 235 92" fill="none" stroke="#8c9caf" stroke-width="2"/>
+  <polygon points="233,86 246,93 232,99" fill="#8c9caf"/>
+  <path d="M245 159 C206 167 180 178 145 201" fill="none" stroke="#8c9caf" stroke-width="2"/>
+  <polygon points="151,194 140,204 155,205" fill="#8c9caf"/>
+
+  <path d="M398 92 C438 82 461 95 493 125" fill="none" stroke="#8c9caf" stroke-width="2"/>
+  <polygon points="487,116 503,132 482,128" fill="#8c9caf"/>
+  <path d="M493 190 C453 221 430 228 398 222" fill="none" stroke="#8c9caf" stroke-width="2"/>
+  <polygon points="402,215 389,223 403,229" fill="#8c9caf"/>
+
+  <path d="M145 219 C245 285 392 285 493 219" fill="none" stroke="#9bb6a0" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="482,215 503,211 491,228" fill="#9bb6a0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="38" y="113" width="108" height="112" rx="20" fill="#d9efff"/>
+    <rect x="47" y="122" width="90" height="94" rx="15" fill="#edf8ff" opacity="0.82"/>
+  </g>
+  <circle cx="92" cy="148" r="17" fill="#93cbe8"/>
+  <circle cx="92" cy="144" r="6" fill="#ffffff"/>
+  <path d="M80 162 C82 154 102 154 104 162" fill="#ffffff"/>
+  <text x="92" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35556b">İstemci</text>
+  <text x="92" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647b8c">Parola yerelde</text>
+
+  <g filter="url(#shadow)">
+    <rect x="241" y="55" width="158" height="184" rx="24" fill="url(#kdc)"/>
+    <rect x="252" y="67" width="136" height="32" rx="12" fill="#ffffff" opacity="0.58"/>
+  </g>
+  <path d="M282 84 h15 m-7.5-7.5 v15" stroke="#7457ad" stroke-width="2" stroke-linecap="round"/>
+  <text x="322" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514073">KDC • Güven merkezi</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="262" y="113" width="116" height="47" rx="13" fill="#f5efff"/>
+  </g>
+  <circle cx="283" cy="136" r="11" fill="#b99ce8"/>
+  <path d="M278 136 l4 4 7-8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="327" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5a467e">AS</text>
+  <text x="327" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c6680">İlk doğrulama</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="262" y="174" width="116" height="47" rx="13" fill="#eef8ff"/>
+  </g>
+  <path d="M274 190 h18 v13 h-18z M278 190 v-4 h10 v4" fill="none" stroke="#6c9cc4" stroke-width="2" stroke-linejoin="round"/>
+  <text x="327" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416a90">TGS</text>
+  <text x="327" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637c91">Bilet üretimi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="493" y="113" width="109" height="112" rx="20" fill="#dff1d5"/>
+    <rect x="502" y="122" width="91" height="94" rx="15" fill="#f1faed" opacity="0.84"/>
+  </g>
+  <rect x="526" y="139" width="42" height="29" rx="5" fill="#91bd89"/>
+  <path d="M532 147 h30 M532 154 h30 M532 161 h20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="548" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416741">Servis</text>
+  <text x="548" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#628062">Dosya sunucusu</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="151" y="62" width="81" height="31" rx="12" fill="#fff5dc"/>
+  </g>
+  <text x="191.5" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a6540">1 Ön kanıt</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="154" y="174" width="79" height="31" rx="12" fill="#f9e8ff"/>
+  </g>
+  <text x="193.5" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#714e7c">2 TGT</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="405" y="61" width="82" height="31" rx="12" fill="#fff5dc"/>
+  </g>
+  <text x="446" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a6540">3 İstek</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="404" y="211" width="86" height="31" rx="12" fill="#e5f5dd"/>
+  </g>
+  <text x="447" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e764d">4 Servis bileti</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="233" y="266" width="174" height="35" rx="14" fill="#ffffff"/>
+  </g>
+  <circle cx="254" cy="283" r="10" fill="#a7cf9d"/>
+  <path d="M254 277 v6 l4 3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="325" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b55">Kısa ömür • Zaman damgası</text>
+</svg>
