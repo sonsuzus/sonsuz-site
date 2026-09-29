@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="rfid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#bdd7f5"/>
+    </linearGradient>
+    <linearGradient id="usb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe6cf"/>
+      <stop offset="100%" stop-color="#f7cda9"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eee4ff"/>
+      <stop offset="100%" stop-color="#d9c8f3"/>
+    </linearGradient>
+    <linearGradient id="defense" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f2df"/>
+      <stop offset="100%" stop-color="#b8e1c4"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7990a2" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8498" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="157" r="112" fill="#ffffff" opacity="0.32"/>
+  <circle cx="319" cy="157" r="89" fill="none" stroke="#b7cfe0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.75"/>
+
+  <!-- RFID bağlantısı -->
+  <path d="M173 102 C205 103 217 113 235 126" fill="none" stroke="#729bc6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="237,126 228,120 230,130" fill="#729bc6"/>
+  <rect x="34" y="55" width="142" height="94" rx="18" fill="url(#rfid)" filter="url(#shadow)"/>
+  <text x="105" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#294d70">RFID Kart</text>
+  <rect x="57" y="91" width="52" height="36" rx="6" fill="#f8fcff" stroke="#739dc5" stroke-width="1.5"/>
+  <circle cx="69" cy="109" r="6" fill="#9fc6ea"/>
+  <path d="M118 99 Q132 109 118 119" fill="none" stroke="#5688b7" stroke-width="2" stroke-linecap="round"/>
+  <path d="M124 94 Q143 109 124 124" fill="none" stroke="#5688b7" stroke-width="2" stroke-linecap="round"/>
+  <text x="134" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476b8c">Kimlik sinyali</text>
+
+  <!-- USB bağlantısı -->
+  <path d="M174 220 C207 215 216 202 239 188" fill="none" stroke="#c88654" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="241,187 230,185 236,195" fill="#c88654"/>
+  <rect x="34" y="173" width="142" height="94" rx="18" fill="url(#usb)" filter="url(#shadow)"/>
+  <text x="105" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7b4a29">USB Cihazı</text>
+  <rect x="58" y="211" width="45" height="24" rx="4" fill="#fffaf5" stroke="#c98b5b" stroke-width="1.5"/>
+  <rect x="103" y="215" width="17" height="16" rx="2" fill="#e7b078" stroke="#b87745" stroke-width="1"/>
+  <path d="M70 223 h21 M80 215 v16 M113 207 v-8 M109 203 l4-4 4 4" fill="none" stroke="#a9693b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="128" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a5937">HID klavye</text>
+
+  <!-- merkez -->
+  <rect x="235" y="111" width="167" height="94" rx="24" fill="url(#core)" filter="url(#shadow)"/>
+  <circle cx="278" cy="157" r="25" fill="#fbf9ff" stroke="#9e87c5" stroke-width="1.5"/>
+  <path d="M278 138 l15 7 v12 c0 12-8 19-15 22 c-7-3-15-10-15-22 v-12z" fill="#b3a0d9"/>
+  <path d="M272 157 l5 5 9-11" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="339" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#51416f">Fiziksel Erişim</text>
+  <text x="339" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68587f">Güven Sınırı</text>
+  <text x="339" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68587f">Kart ve uç nokta</text>
+
+  <!-- sağa risk akışı -->
+  <path d="M403 157 H447" fill="none" stroke="#8c78ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="450,157 440,151 440,163" fill="#8c78ad"/>
+
+  <rect x="451" y="111" width="154" height="94" rx="20" fill="#fff6ee" filter="url(#shadow)"/>
+  <text x="528" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#87513d">Risk Yüzeyi</text>
+  <g fill="#d78c69">
+    <circle cx="479" cy="158" r="5"/>
+    <circle cx="479" cy="179" r="5"/>
+  </g>
+  <text x="493" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805848">Kart taklidi</text>
+  <text x="493" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805848">Yetkisiz tuşlar</text>
+
+  <!-- aşağı savunma -->
+  <path d="M528 207 V230" fill="none" stroke="#659b78" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="528,233 522,223 534,223" fill="#659b78"/>
+
+  <rect x="365" y="235" width="238" height="67" rx="18" fill="url(#defense)" filter="url(#shadow)"/>
+  <path d="M396 251 l17 7 v13 c0 11-8 17-17 21 c-9-4-17-10-17-21 v-13z" fill="#66a47a"/>
+  <path d="M388 271 l6 6 12-14" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="492" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35674a">Katmanlı Savunma</text>
+  <text x="492" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47775a">Kriptografik kart · USB izin listesi</text>
+  <text x="492" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47775a">Kayıt izleme · ekran kilidi</text>
+
+  <!-- küçük vurgu -->
+  <rect x="44" y="284" width="226" height="21" rx="10.5" fill="#e7f0f6" opacity="0.9"/>
+  <text x="157" y="299" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547184">Ağ dışındaki tehditler de önemlidir</text>
+</svg>

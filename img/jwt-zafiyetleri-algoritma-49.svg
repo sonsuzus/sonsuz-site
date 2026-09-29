@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="jwtFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9def8"/>
+    </linearGradient>
+    <linearGradient id="safeFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff4df"/>
+      <stop offset="100%" stop-color="#c7e7cf"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#58718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#58718a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="46" r="70" fill="#dceef8" opacity="0.48"/>
+  <circle cx="590" cy="280" r="92" fill="#ddf1d9" opacity="0.52"/>
+
+  <text x="30" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">JWT DOĞRULAMA SINIRI</text>
+  <line x1="30" y1="38" x2="610" y2="38" stroke="#c5d6df" stroke-width="1"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="31" y="116" width="118" height="82" rx="18" fill="#fce3e2" stroke="#efbdbc"/>
+    <circle cx="59" cy="143" r="14" fill="#f6b7b4"/>
+    <path d="M53 137 L65 149 M65 137 L53 149" stroke="#a64c50" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="83" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76454b">Saldırgan</text>
+    <text x="83" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6267">Sahte token</text>
+    <text x="48" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6267">rol: yönetici</text>
+  </g>
+
+  <path d="M151 157 L191 157" stroke="#c66b6e" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="191,151 202,157 191,163" fill="#c66b6e"/>
+
+  <g filter="url(#shadow)">
+    <rect x="204" y="76" width="232" height="164" rx="24" fill="#ffffff" stroke="#c5d8e6"/>
+    <rect x="218" y="91" width="204" height="42" rx="13" fill="url(#jwtFill)"/>
+    <rect x="233" y="101" width="41" height="22" rx="6" fill="#a9c6ec"/>
+    <text x="240" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355a7c">JWT</text>
+    <text x="287" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355a7c">header · payload · imza</text>
+    <text x="287" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52718d">Okunabilir, değiştirilemez olmalı</text>
+
+    <line x1="230" y1="145" x2="410" y2="145" stroke="#d7e2e8"/>
+    <circle cx="247" cy="166" r="10" fill="#d5efe0"/>
+    <path d="M243 166 L246 169 L252 162" fill="none" stroke="#43805e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="267" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365568">Algoritma sabit</text>
+
+    <circle cx="247" cy="193" r="10" fill="#d5efe0"/>
+    <path d="M243 193 L246 196 L252 189" fill="none" stroke="#43805e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="267" y="197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365568">İmza doğrula</text>
+
+    <circle cx="247" cy="220" r="10" fill="#d5efe0"/>
+    <path d="M243 220 L246 223 L252 216" fill="none" stroke="#43805e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="267" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365568">Süre ve iddialar</text>
+  </g>
+
+  <path d="M438 157 L476 157" stroke="#4d9870" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="476,151 487,157 476,163" fill="#4d9870"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="489" y="116" width="120" height="82" rx="18" fill="url(#safeFill)" stroke="#afd4b8"/>
+    <rect x="514" y="135" width="25" height="29" rx="5" fill="#83bb95"/>
+    <path d="M519 135 L519 130 C519 122 534 122 534 130 L534 135" fill="none" stroke="#549267" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="527" cy="150" r="3" fill="#ffffff"/>
+    <text x="551" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356648">API</text>
+    <text x="551" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50745b">Korumalı</text>
+    <text x="512" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50745b">Yetkili erişim</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="42" y="252" width="126" height="43" rx="14" fill="#fff0dc" stroke="#efd1a6"/>
+    <text x="57" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#896037">Riskler</text>
+    <text x="57" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a734b">none · zayıf anahtar</text>
+  </g>
+  <path d="M168 273 C188 273 188 232 212 222" fill="none" stroke="#d49a58" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="207,217 217,218 211,227" fill="#d49a58"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="454" y="252" width="149" height="43" rx="14" fill="#e5ecff" stroke="#c4d3f3"/>
+    <text x="470" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526c9d">Politika</text>
+    <text x="470" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647ba5">Anahtar rotasyonu · kısa süre</text>
+  </g>
+  <path d="M498 250 C480 233 437 228 423 219" fill="none" stroke="#718cc1" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="425,214 415,216 421,225" fill="#718cc1"/>
+</svg>

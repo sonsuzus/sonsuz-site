@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cbe0f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#55728a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#55728a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="112" fill="#d9ebdf" opacity="0.36"/>
+  <circle cx="320" cy="160" r="82" fill="none" stroke="#9bc8b1" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.55"/>
+
+  <path d="M173 82 C205 92 222 108 244 124" fill="none" stroke="#91aebe" stroke-width="2"/>
+  <polygon points="244,124 234,119 237,130" fill="#91aebe"/>
+  <path d="M462 82 C431 93 414 108 395 124" fill="none" stroke="#91aebe" stroke-width="2"/>
+  <polygon points="395,124 402,130 405,119" fill="#91aebe"/>
+  <path d="M173 236 C205 227 223 211 244 197" fill="none" stroke="#91aebe" stroke-width="2"/>
+  <polygon points="244,197 237,191 234,202" fill="#91aebe"/>
+  <path d="M462 236 C431 226 414 211 395 197" fill="none" stroke="#91aebe" stroke-width="2"/>
+  <polygon points="395,197 405,202 402,191" fill="#91aebe"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="45" width="126" height="74" rx="17" fill="#fff7df"/>
+    <circle cx="76" cy="72" r="14" fill="#f4c96c"/>
+    <path d="M69 72h14M76 65v14" stroke="#876727" stroke-width="2" stroke-linecap="round"/>
+    <text x="98" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385064" font-weight="600">Açık Kaynaklar</text>
+    <text x="98" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b87">Veri izleri</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="462" y="45" width="130" height="74" rx="17" fill="#f2e9fb"/>
+    <circle cx="490" cy="72" r="14" fill="#c9a7e5"/>
+    <path d="M483 75l5-5 4 4 6-7" fill="none" stroke="#6f508f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="512" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385064" font-weight="600">Doğrulama</text>
+    <text x="512" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b87">Çapraz kontrol</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="201" width="126" height="74" rx="17" fill="#e3f5ef"/>
+    <circle cx="76" cy="228" r="14" fill="#86cbb2"/>
+    <path d="M69 232c3-8 11-8 14 0M72 224a4 4 0 1 0 8 0 4 4 0 1 0-8 0" fill="none" stroke="#397462" stroke-width="2" stroke-linecap="round"/>
+    <text x="98" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385064" font-weight="600">Bağlam</text>
+    <text x="98" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b87">İlişki analizi</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="462" y="201" width="130" height="74" rx="17" fill="#fdebed"/>
+    <circle cx="490" cy="228" r="14" fill="#ed9fa9"/>
+    <path d="M490 218v11M490 234.5v1" stroke="#914852" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="512" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385064" font-weight="600">Etik Sınırlar</text>
+    <text x="512" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b87">Yasal kullanım</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="244" y="101" width="152" height="118" rx="28" fill="url(#core)" stroke="#b5d2e4"/>
+    <circle cx="320" cy="137" r="23" fill="#ffffff" opacity="0.9"/>
+    <path d="M309 138c5-12 17-12 22 0M312 132a8 8 0 1 0 16 0 8 8 0 1 0-16 0" fill="none" stroke="#477896" stroke-width="2.3" stroke-linecap="round"/>
+    <text x="320" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#264e69" font-weight="700">OSINT</text>
+    <text x="320" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557487">Etik istihbarat</text>
+  </g>
+
+  <path d="M320 220v29" fill="none" stroke="#6e9aad" stroke-width="2"/>
+  <polygon points="320,256 314,246 326,246" fill="#6e9aad"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="225" y="256" width="190" height="45" rx="16" fill="#ffffff"/>
+    <circle cx="250" cy="278.5" r="11" fill="#9bcfb8"/>
+    <path d="M245 279l3 3 6-7" fill="none" stroke="#376f57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="270" y="282.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385064" font-weight="600">Kanıta dayalı değerlendirme</text>
+  </g>
+
+  <text x="320" y="26" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597487">Dijital izlerden sorumlu bilgi üretimi</text>
+</svg>
