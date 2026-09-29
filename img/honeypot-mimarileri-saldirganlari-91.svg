@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="trap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff4df"/>
+      <stop offset="100%" stop-color="#ffe4bd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#486078" flood-opacity="0.16"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#486078" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="560" cy="45" r="92" fill="#dff3ec" opacity="0.52"/>
+  <circle cx="87" cy="287" r="95" fill="#e2edff" opacity="0.55"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536a">HONEYPOT GÜVENLİ MİMARİSİ</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71879a">Tuzak • İzleme • Kontrol</text>
+
+  <path d="M119 150 L158 150" stroke="#7090a2" stroke-width="2.2" fill="none"/>
+  <polygon points="158,150 149,145 149,155" fill="#7090a2"/>
+
+  <path d="M255 150 L300 150" stroke="#7090a2" stroke-width="2.2" fill="none"/>
+  <polygon points="300,150 291,145 291,155" fill="#7090a2"/>
+
+  <path d="M387 150 L428 150" stroke="#7090a2" stroke-width="2.2" fill="none"/>
+  <polygon points="428,150 419,145 419,155" fill="#7090a2"/>
+
+  <path d="M360 198 L360 224" stroke="#7090a2" stroke-width="2.2" fill="none"/>
+  <polygon points="360,224 355,215 365,215" fill="#7090a2"/>
+
+  <path d="M450 254 L482 254" stroke="#7090a2" stroke-width="2.2" fill="none"/>
+  <polygon points="482,254 473,249 473,259" fill="#7090a2"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="28" y="111" width="91" height="78" rx="18" fill="#e8e5ff"/>
+    <circle cx="73.5" cy="138" r="13" fill="#8f87cb"/>
+    <path d="M62 164 C64 151 83 151 85 164" fill="none" stroke="#665fa4" stroke-width="3" stroke-linecap="round"/>
+    <text x="73.5" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#504a80">Saldırgan</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="158" y="111" width="97" height="78" rx="18" fill="#dff1fb"/>
+    <path d="M192 130 L222 130 L229 139 L229 164 L185 164 L185 139 Z" fill="#6ca9c5"/>
+    <path d="M192 143 L222 143" stroke="#dff1fb" stroke-width="2"/>
+    <path d="M207 130 L207 164" stroke="#dff1fb" stroke-width="2"/>
+    <text x="206.5" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#396a82">Güvenlik Duvarı</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="300" y="91" width="119" height="107" rx="22" fill="url(#trap)" stroke="#efc778" stroke-width="1.5"/>
+    <path d="M330 122 L360 108 L390 122 L390 153 C390 170 377 181 360 186 C343 181 330 170 330 153 Z" fill="#e9a849"/>
+    <path d="M348 146 C348 138 354 134 360 134 C366 134 372 138 372 146" fill="none" stroke="#fff8ed" stroke-width="3" stroke-linecap="round"/>
+    <rect x="345" y="146" width="30" height="21" rx="5" fill="#fff8ed"/>
+    <circle cx="360" cy="156.5" r="2.5" fill="#d18b31"/>
+    <text x="360" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7d541d">Honeypot VLAN</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="428" y="111" width="92" height="78" rx="18" fill="#e4f4e9"/>
+    <path d="M451 132 H497 V161 H451 Z" fill="#6db68a"/>
+    <path d="M458 140 H490 M458 147 H483 M458 154 H476" stroke="#effaf2" stroke-width="2" stroke-linecap="round"/>
+    <text x="474" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397252">Sahte Servis</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="270" y="224" width="180" height="61" rx="17" fill="#e8eefc"/>
+    <path d="M293 245 L300 239 L307 245 V265 H293 Z" fill="#7897cf"/>
+    <path d="M316 244 H418 M316 253 H405 M316 262 H427" stroke="#7992be" stroke-width="2" stroke-linecap="round"/>
+    <text x="371" y="247" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6390">Salt Yazılır Günlük</text>
+    <text x="371" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e82a7">Oturum ve ağ olayları</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="482" y="224" width="126" height="61" rx="17" fill="#e5f5ed"/>
+    <circle cx="506" cy="254" r="12" fill="#65ad88"/>
+    <path d="M506 247 V255 L512 259" stroke="#f5fff8" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="550" y="248" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a7256">SIEM ve Alarm</text>
+    <text x="550" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668c78">İstihbarat</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="541" y="102" width="72" height="96" rx="18" fill="#fae8e7"/>
+    <path d="M565 128 H589 V151 H565 Z" fill="#d77d78"/>
+    <path d="M571 128 V120 H583 V128" fill="none" stroke="#d77d78" stroke-width="4" stroke-linejoin="round"/>
+    <text x="577" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9c504d">Kontrol</text>
+    <text x="577" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ad6a66">İzolasyon</text>
+  </g>
+
+  <path d="M520 150 L541 150" stroke="#c47772" stroke-width="2.2"/>
+  <polygon points="541,150 532,145 532,155" fill="#c47772"/>
+
+  <path d="M576 198 L576 211 L472 211 L472 183" stroke="#c47772" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+  <polygon points="472,183 467,192 477,192" fill="#c47772"/>
+
+  <text x="211" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698396">Filtreleme</text>
+  <text x="359" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b07827">Kontrollü tuzak</text>
+  <text x="578" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b06460">Dışa çıkış engeli</text>
+</svg>
