@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ed7c5"/>
+      <stop offset="100%" stop-color="#66b6d1"/>
+    </linearGradient>
+    <linearGradient id="risk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8c6bc"/>
+      <stop offset="100%" stop-color="#efa6a2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6b8298" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#557287" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="555" cy="48" r="76" fill="#dceff0" opacity="0.45"/>
+  <circle cx="75" cy="294" r="96" fill="#dce9fa" opacity="0.52"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345168">Kriptografik Rastgelelik</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668096">Tahmin edilemezlik zinciri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="78" width="158" height="178" rx="20" fill="#fff8f6"/>
+    <rect x="222" y="67" width="196" height="200" rx="22" fill="#f8fffd"/>
+    <rect x="452" y="78" width="158" height="178" rx="20" fill="#f7fbff"/>
+  </g>
+
+  <rect x="47" y="93" width="124" height="30" rx="12" fill="url(#risk)"/>
+  <text x="109" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#713f48">Sıradan PRNG</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="57" y="141" width="104" height="35" rx="11" fill="#ffffff"/>
+    <rect x="57" y="193" width="104" height="35" rx="11" fill="#ffffff"/>
+  </g>
+  <text x="109" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b5860">Zaman tohumu</text>
+  <text x="109" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b5860">Tahmin riski</text>
+  <path d="M109 176 L109 188" stroke="#d48684" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="109,193 104,186 114,186" fill="#d48684"/>
+
+  <path d="M188 167 C199 167 205 167 216 167" fill="none" stroke="#cf8f8d" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="222,167 213,162 213,172" fill="#cf8f8d"/>
+  <text x="202" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b16f73">zayıf</text>
+
+  <rect x="242" y="83" width="156" height="34" rx="12" fill="#d8f1e9"/>
+  <text x="320" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285e62">Entropi Havuzu</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="244" y="136" width="70" height="34" rx="11" fill="#ffffff"/>
+    <rect x="326" y="136" width="70" height="34" rx="11" fill="#ffffff"/>
+  </g>
+  <text x="279" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6f74">Disk</text>
+  <text x="361" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6f74">Ağ ve kesme</text>
+
+  <path d="M279 170 L294 187" stroke="#6eb4a8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="298,192 289,188 296,181" fill="#6eb4a8"/>
+  <path d="M361 170 L346 187" stroke="#6eb4a8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="342,192 344,181 351,188" fill="#6eb4a8"/>
+
+  <rect x="264" y="194" width="112" height="43" rx="13" fill="url(#safe)" filter="url(#smallShadow)"/>
+  <text x="320" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Linux CSPRNG</text>
+  <text x="320" y="228" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ecffff">çekirdek koruması</text>
+
+  <path d="M418 215 C429 215 436 215 446 215" fill="none" stroke="#58a9bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="452,215 443,210 443,220" fill="#58a9bd"/>
+  <text x="433" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47889c">güvenli</text>
+
+  <rect x="469" y="93" width="124" height="30" rx="12" fill="#cdeaf5"/>
+  <text x="531" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285a76">Güvenli Çıktı</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="478" y="141" width="106" height="31" rx="10" fill="#ffffff"/>
+    <rect x="478" y="182" width="106" height="31" rx="10" fill="#ffffff"/>
+    <rect x="478" y="223" width="106" height="31" rx="10" fill="#ffffff"/>
+  </g>
+  <text x="531" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416b7d">Anahtar</text>
+  <text x="531" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416b7d">Belirteç</text>
+  <text x="531" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416b7d">Parola bağlantısı</text>
+
+  <path d="M531 123 L531 135" stroke="#6caec2" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="531,141 526,134 536,134" fill="#6caec2"/>
+  <path d="M531 172 L531 176" stroke="#6caec2" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="531,182 526,175 536,175" fill="#6caec2"/>
+  <path d="M531 213 L531 217" stroke="#6caec2" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="531,223 526,216 536,216" fill="#6caec2"/>
+
+  <text x="320" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7376">getrandom() ve /dev/urandom</text>
+</svg>
