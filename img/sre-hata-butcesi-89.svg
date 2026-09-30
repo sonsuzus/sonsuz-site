@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f2e8"/>
+      <stop offset="100%" stop-color="#bce3d2"/>
+    </linearGradient>
+    <linearGradient id="meter" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#75cba8"/>
+      <stop offset="65%" stop-color="#f2c96b"/>
+      <stop offset="100%" stop-color="#ef8888"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#66829a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#66829a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="161" r="130" fill="#d9ecf1" opacity="0.34"/>
+  <circle cx="319" cy="161" r="103" fill="#ffffff" opacity="0.32"/>
+
+  <!-- Sol ölçüm kartları -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="61" width="142" height="70" rx="16" fill="#ffffff"/>
+    <rect x="28" y="61" width="8" height="70" rx="4" fill="#80b8e8"/>
+    <circle cx="57" cy="88" r="15" fill="#e2f1ff"/>
+    <path d="M49 94 L54 88 L59 91 L66 82" fill="none" stroke="#579bd3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="85" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536a">SLI</text>
+    <text x="82" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647b8c">Ölçülen durum</text>
+
+    <rect x="28" y="190" width="142" height="70" rx="16" fill="#ffffff"/>
+    <rect x="28" y="190" width="8" height="70" rx="4" fill="#9c8cdd"/>
+    <circle cx="57" cy="217" r="15" fill="#eeeafe"/>
+    <path d="M49 222 L49 213 L57 208 L65 213 L65 222 Z" fill="none" stroke="#8171c5" stroke-width="2"/>
+    <text x="82" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f4776">SLO</text>
+    <text x="82" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d6981">%99,9 hedef</text>
+  </g>
+
+  <!-- Giriş bağlantıları -->
+  <path d="M170 96 C193 96 196 116 215 125" fill="none" stroke="#9bb8cc" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="214,120 225,128 211,130" fill="#9bb8cc"/>
+  <path d="M170 225 C193 225 196 204 215 195" fill="none" stroke="#9bb8cc" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="211,190 225,192 214,200" fill="#9bb8cc"/>
+
+  <!-- Merkez hata bütçesi -->
+  <g filter="url(#shadow)">
+    <rect x="216" y="72" width="208" height="177" rx="25" fill="url(#core)" stroke="#a7d6c2" stroke-width="1.2"/>
+    <rect x="237" y="91" width="166" height="35" rx="12" fill="#ffffff" opacity="0.77"/>
+    <text x="320" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#296757">HATA BÜTÇESİ</text>
+
+    <circle cx="320" cy="164" r="42" fill="#f9fffc" stroke="#a5d8c2" stroke-width="8"/>
+    <path d="M320 122 A42 42 0 0 1 358 159" fill="none" stroke="#f0c45c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M358 159 A42 42 0 0 1 350 189" fill="none" stroke="#e98585" stroke-width="8" stroke-linecap="round"/>
+    <text x="320" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="21" font-weight="700" fill="#356758">%65</text>
+    <text x="320" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668276">tüketildi</text>
+
+    <rect x="247" y="213" width="146" height="19" rx="9.5" fill="#ffffff" opacity="0.76"/>
+    <text x="320" y="227" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477065">İzin: %0,1 arıza</text>
+  </g>
+
+  <!-- Sağ karar akışı -->
+  <path d="M424 160 L456 160" fill="none" stroke="#79a993" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="455,154 467,160 455,166" fill="#79a993"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="468" y="52" width="144" height="61" rx="16" fill="#ffffff"/>
+    <rect x="478" y="64" width="27" height="27" rx="9" fill="#dff3e9"/>
+    <path d="M484 78 L489 83 L498 72" fill="none" stroke="#50a77d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="517" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356658">Bütçe sağlıklı</text>
+    <text x="517" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668176">Yeni sürüm</text>
+
+    <rect x="468" y="130" width="144" height="61" rx="16" fill="#ffffff"/>
+    <rect x="478" y="142" width="27" height="27" rx="9" fill="#fff0d6"/>
+    <path d="M491.5 147 L491.5 158" stroke="#c58b35" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="491.5" cy="164" r="1.7" fill="#c58b35"/>
+    <text x="517" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#80602e">Hızlı tüketim</text>
+    <text x="517" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b7960">Riski azalt</text>
+
+    <rect x="468" y="208" width="144" height="61" rx="16" fill="#ffffff"/>
+    <rect x="478" y="220" width="27" height="27" rx="9" fill="#fde3e3"/>
+    <path d="M485 227 L498 240 M498 227 L485 240" stroke="#ce6666" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="517" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8e4141">Bütçe tükendi</text>
+    <text x="517" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#896969">Güvenilirlik</text>
+  </g>
+
+  <!-- Sağ dallar -->
+  <path d="M456 160 L456 82 L468 82" fill="none" stroke="#a3c4b2" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="466,77 476,82 466,87" fill="#a3c4b2"/>
+  <path d="M456 160 L468 160" fill="none" stroke="#d0b77e" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="466,155 476,160 466,165" fill="#d0b77e"/>
+  <path d="M456 160 L456 238 L468 238" fill="none" stroke="#d69a9a" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="466,233 476,238 466,243" fill="#d69a9a"/>
+
+  <!-- Alt hesap vurgusu -->
+  <g filter="url(#smallShadow)">
+    <rect x="210" y="278" width="220" height="27" rx="13.5" fill="#ffffff" opacity="0.92"/>
+    <text x="320" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e6e80">Hata bütçesi = 1 − SLO</text>
+  </g>
+</svg>
