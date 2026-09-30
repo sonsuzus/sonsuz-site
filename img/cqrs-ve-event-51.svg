@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="eventGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#cfe5ff"/>
+      <stop offset="100%" stop-color="#d9f2e2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5d7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#57718b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="38" r="67" fill="#d9edff" opacity="0.45"/>
+  <circle cx="593" cy="290" r="92" fill="#dff3df" opacity="0.45"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516b">EVENT SOURCING</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8192">Uzun geçmişten hızlı aggregate yükleme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="77" width="205" height="176" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="28" y="77" width="205" height="176" rx="18" fill="none" stroke="#c9deea"/>
+  <text x="48" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315871">Olay Günlüğü</text>
+  <text x="48" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718695">Gerçeğin kaynağı</text>
+
+  <line x1="52" y1="166" x2="207" y2="166" stroke="#91b8d1" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="61" cy="166" r="8" fill="#8bc8ed"/>
+  <circle cx="87" cy="166" r="8" fill="#9cdbba"/>
+  <circle cx="113" cy="166" r="8" fill="#b9b1eb"/>
+  <circle cx="139" cy="166" r="8" fill="#f5c78e"/>
+  <circle cx="165" cy="166" r="8" fill="#8bc8ed"/>
+  <circle cx="193" cy="166" r="8" fill="#9cdbba"/>
+  <text x="54" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">E₁</text>
+  <text x="102" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">...</text>
+  <text x="168" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">E₁₀₀₀₀</text>
+  <rect x="47" y="213" width="165" height="23" rx="11" fill="#edf5fa"/>
+  <text x="61" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">Değişmez olaylar</text>
+
+  <path d="M234 150 H270" fill="none" stroke="#7899ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="278,150 267,144 267,156" fill="#7899ae"/>
+
+  <g filter="url(#shadow)">
+    <rect x="280" y="102" width="128" height="98" rx="19" fill="#fffdf7"/>
+  </g>
+  <rect x="280" y="102" width="128" height="98" rx="19" fill="none" stroke="#e8d4a6"/>
+  <path d="M317 126 C317 116 331 116 331 126 C331 116 345 116 345 126 L345 142 C345 151 338 157 331 160 C324 157 317 151 317 142 Z" fill="#f6c77f" opacity="0.9"/>
+  <rect x="304" y="154" width="54" height="22" rx="8" fill="#fff0d4"/>
+  <text x="313" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#866237">9.000</text>
+  <text x="301" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806d4f">Snapshot</text>
+
+  <path d="M408 150 H442" fill="none" stroke="#7899ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="450,150 439,144 439,156" fill="#7899ae"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="452" y="108" width="72" height="84" rx="15" fill="#edf5ff"/>
+  </g>
+  <rect x="452" y="108" width="72" height="84" rx="15" fill="none" stroke="#c4daef"/>
+  <text x="464" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476b87">Kalan</text>
+  <text x="466" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547994">E₉₀₀₁</text>
+  <text x="477" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547994">...</text>
+  <text x="463" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547994">E₁₀₀₀₀</text>
+
+  <path d="M525 150 H552" fill="none" stroke="#7899ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="560,150 549,144 549,156" fill="#7899ae"/>
+
+  <g filter="url(#shadow)">
+    <rect x="562" y="103" width="57" height="96" rx="18" fill="#e6f5eb"/>
+  </g>
+  <rect x="562" y="103" width="57" height="96" rx="18" fill="none" stroke="#b9dec5"/>
+  <circle cx="590" cy="137" r="16" fill="#a9d9b8"/>
+  <path d="M582 137 L588 143 L599 130" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="570" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397151">Güncel</text>
+  <text x="574" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d8062">Durum</text>
+
+  <path d="M344 201 V244" fill="none" stroke="#91aabb" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="344,252 338,241 350,241" fill="#91aabb"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="211" y="257" width="265" height="39" rx="15" fill="#ffffff"/>
+  </g>
+  <rect x="211" y="257" width="265" height="39" rx="15" fill="none" stroke="#d2e2e7"/>
+  <circle cx="233" cy="276" r="10" fill="#c9e7d4"/>
+  <path d="M228 276 L232 280 L239 272" fill="none" stroke="#43845e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="252" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426574">Snapshot silinse bile olaylardan yeniden üret</text>
+</svg>
