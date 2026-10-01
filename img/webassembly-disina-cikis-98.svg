@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="wasmGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9ddfa"/>
+    </linearGradient>
+    <linearGradient id="wasiGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3e6"/>
+      <stop offset="100%" stop-color="#bce6d3"/>
+    </linearGradient>
+    <linearGradient id="runtimeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8e9cf"/>
+      <stop offset="100%" stop-color="#f2d5aa"/>
+    </linearGradient>
+    <linearGradient id="osGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8e0fa"/>
+      <stop offset="100%" stop-color="#d4c7ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71839a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71839a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="55" cy="45" r="70" fill="#cfe6f5" opacity="0.24"/>
+  <circle cx="585" cy="283" r="85" fill="#d2ebd1" opacity="0.3"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355169">Tarayıcıdan Bağımsız WebAssembly</text>
+  <text x="320" y="46" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#678092">WASI ile kontrollü sistem erişimi</text>
+
+  <path d="M153 129 H187" fill="none" stroke="#7d99af" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="187,129 178,124 178,134" fill="#7d99af"/>
+  <path d="M298 129 H332" fill="none" stroke="#7d99af" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="332,129 323,124 323,134" fill="#7d99af"/>
+  <path d="M443 129 H477" fill="none" stroke="#7d99af" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="477,129 468,124 468,134" fill="#7d99af"/>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="85" width="111" height="88" rx="18" fill="url(#wasmGrad)"/>
+    <rect x="187" y="85" width="111" height="88" rx="18" fill="url(#wasiGrad)"/>
+    <rect x="332" y="85" width="111" height="88" rx="18" fill="url(#runtimeGrad)"/>
+    <rect x="477" y="85" width="121" height="88" rx="18" fill="url(#osGrad)"/>
+  </g>
+
+  <g fill="none" stroke="#52718b" stroke-width="2">
+    <rect x="76" y="105" width="43" height="31" rx="5"/>
+    <path d="M85 114 H110 M85 122 H103 M85 130 H108"/>
+  </g>
+  <text x="98" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#314e66">Wasm Modülü</text>
+
+  <g fill="none" stroke="#377865" stroke-width="2">
+    <path d="M242 103 L261 111 V125 C261 138 252 143 242 148 C232 143 223 138 223 125 V111 Z"/>
+    <path d="M234 125 L240 131 L251 118"/>
+  </g>
+  <text x="242" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#286653">WASI Arayüzü</text>
+
+  <g fill="none" stroke="#8b6540" stroke-width="2">
+    <rect x="363" y="105" width="48" height="30" rx="7"/>
+    <circle cx="375" cy="120" r="4"/>
+    <circle cx="387" cy="120" r="4"/>
+    <circle cx="399" cy="120" r="4"/>
+  </g>
+  <text x="387" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#73502c">Çalışma Zamanı</text>
+  <text x="387" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6b49">Wasmtime</text>
+
+  <g fill="none" stroke="#665183" stroke-width="2">
+    <rect x="514" y="104" width="47" height="33" rx="6"/>
+    <path d="M523 113 H552 M523 121 H552 M523 129 H542"/>
+  </g>
+  <text x="537" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#57426f">İşletim Sistemi</text>
+
+  <path d="M242 180 V204" fill="none" stroke="#63a987" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="242,211 237,202 247,202" fill="#63a987"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="120" y="211" width="243" height="83" rx="18" fill="#ffffff" opacity="0.88"/>
+    <rect x="384" y="211" width="142" height="83" rx="18" fill="#ffffff" opacity="0.88"/>
+  </g>
+
+  <text x="141" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356a58">Yetki Kümesi</text>
+  <rect x="140" y="244" width="91" height="31" rx="9" fill="#d8f0e1"/>
+  <path d="M151 260 h12 m-6-6 v12" stroke="#418269" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="194" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#316c57">./data</text>
+  <rect x="242" y="244" width="102" height="31" rx="9" fill="#e8f0fc"/>
+  <path d="M254 253 h15 v13 h-15z M257 250 h9" fill="none" stroke="#547aa0" stroke-width="1.6"/>
+  <text x="303" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416887">Dosya yazma</text>
+
+  <path d="M363 252 H378" fill="none" stroke="#83a295" stroke-width="2"/>
+  <polygon points="378,252 370,247 370,257" fill="#83a295"/>
+
+  <text x="455" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a5757">İzinsiz Erişim</text>
+  <rect x="404" y="244" width="102" height="31" rx="9" fill="#fde4e1"/>
+  <path d="M420 252 v-3 a6 6 0 0 1 12 0 v3 M417 252 h18 v14 h-18z" fill="none" stroke="#b15d5d" stroke-width="1.7"/>
+  <text x="472" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a65353">/etc reddedilir</text>
+
+  <text x="320" y="309" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617b87">Taşınabilir kod · İzole bellek · Capability tabanlı güvenlik</text>
+</svg>
