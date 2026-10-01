@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="serverGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9e3ff"/>
+      <stop offset="1" stop-color="#d9f0ff"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f5fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#63809b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55718c" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="42" r="78" fill="#cceeff" opacity="0.28"/>
+  <circle cx="579" cy="285" r="100" fill="#d9f4cf" opacity="0.3"/>
+  <circle cx="588" cy="46" r="48" fill="#e8dcff" opacity="0.35"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42556d">HATEOAS • Bağlantıyla Keşif</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728296">İstemci adres ezberlemez, eylemi yanıttan öğrenir</text>
+
+  <!-- Client -->
+  <g filter="url(#shadow)">
+    <rect x="31" y="112" width="123" height="111" rx="20" fill="#fffdf8"/>
+    <rect x="45" y="128" width="95" height="57" rx="10" fill="#dceeff"/>
+    <rect x="53" y="137" width="44" height="6" rx="3" fill="#7196bc"/>
+    <rect x="53" y="151" width="75" height="5" rx="2.5" fill="#a3bfdb"/>
+    <rect x="53" y="163" width="59" height="5" rx="2.5" fill="#a3bfdb"/>
+    <circle cx="92" cy="204" r="5" fill="#78be93"/>
+  </g>
+  <text x="92" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43556a">İstemci</text>
+
+  <!-- Request arrow -->
+  <path d="M163 145 H221" fill="none" stroke="#6e91ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="221,145 212,140 212,150" fill="#6e91ad"/>
+  <text x="189" y="134" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64788d">GET</text>
+
+  <!-- API response -->
+  <g filter="url(#shadow)">
+    <rect x="229" y="78" width="186" height="178" rx="20" fill="url(#serverGrad)"/>
+    <rect x="245" y="96" width="154" height="27" rx="8" fill="#765fc5"/>
+    <circle cx="260" cy="109.5" r="4" fill="#d9f7ff"/>
+    <text x="274" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">API Yanıtı</text>
+
+    <rect x="246" y="134" width="152" height="30" rx="8" fill="url(#cardGrad)"/>
+    <text x="257" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#465a70">Sipariş #42</text>
+    <rect x="335" y="142" width="51" height="14" rx="7" fill="#fff0c7"/>
+    <text x="360.5" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a6d19">Bekliyor</text>
+
+    <rect x="246" y="174" width="70" height="27" rx="8" fill="#d9f3e2"/>
+    <text x="281" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#287052">öde</text>
+
+    <rect x="326" y="174" width="72" height="27" rx="8" fill="#ffe1df"/>
+    <text x="362" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a24f54">iptal et</text>
+
+    <rect x="246" y="210" width="152" height="28" rx="8" fill="#ffffff" opacity="0.8"/>
+    <circle cx="260" cy="224" r="4" fill="#7b68ca"/>
+    <text x="271" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54667b">_links: geçerli eylemler</text>
+  </g>
+
+  <!-- return arrow -->
+  <path d="M221 194 H163" fill="none" stroke="#8472bf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="163,194 172,189 172,199" fill="#8472bf"/>
+  <text x="191" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756a9b">bağlantılar</text>
+
+  <!-- Dynamic state graph -->
+  <text x="500" y="79" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6073">Durum Geçişleri</text>
+
+  <path d="M417 150 C444 139 454 126 468 117" fill="none" stroke="#67a881" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="468,117 458,116 463,125" fill="#67a881"/>
+  <path d="M417 182 C445 198 454 211 468 220" fill="none" stroke="#d27876" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="468,220 463,211 458,220" fill="#d27876"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="474" y="91" width="131" height="54" rx="16" fill="#dcf3e5"/>
+    <circle cx="493" cy="109" r="7" fill="#54ac7b"/>
+    <text x="510" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2f7051">Ödendi</text>
+    <text x="493" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7a66">takip et</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="474" y="194" width="131" height="54" rx="16" fill="#ffe3e1"/>
+    <circle cx="493" cy="212" r="7" fill="#d97877"/>
+    <text x="510" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#955052">İptal</text>
+    <text x="493" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c6665">işlem kapalı</text>
+  </g>
+
+  <rect x="429" y="267" width="180" height="27" rx="13.5" fill="#e7eef7" opacity="0.95"/>
+  <text x="519" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51697e">Sunucu izinli yolları bildirir</text>
+</svg>
