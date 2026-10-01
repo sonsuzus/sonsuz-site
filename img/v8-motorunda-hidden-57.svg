@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f4e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5c7690" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#557184" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="588" cy="38" r="75" fill="#d9f0eb" opacity="0.38"/>
+  <circle cx="68" cy="288" r="88" fill="#dae9ff" opacity="0.42"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365269">V8 NESNE ERİŞİMİ</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718496">Şekil tutarlılığı → öngörülebilir hız</text>
+
+  <!-- Shape transition line -->
+  <path d="M110 131 L150 131" fill="none" stroke="#7595ad" stroke-width="2"/>
+  <polygon points="150,131 142,126 142,136" fill="#7595ad"/>
+  <path d="M245 131 L285 131" fill="none" stroke="#7595ad" stroke-width="2"/>
+  <polygon points="285,131 277,126 277,136" fill="#7595ad"/>
+  <path d="M380 131 L420 131" fill="none" stroke="#7595ad" stroke-width="2"/>
+  <polygon points="420,131 412,126 412,136" fill="#7595ad"/>
+
+  <!-- C0 -->
+  <g filter="url(#softShadow)">
+    <rect x="30" y="88" width="80" height="86" rx="17" fill="#ffffff"/>
+    <rect x="30" y="88" width="80" height="27" rx="17" fill="#e8f1ff"/>
+    <path d="M30 105 L110 105 L110 115 L30 115 Z" fill="#e8f1ff"/>
+  </g>
+  <text x="70" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d607d">C0</text>
+  <text x="70" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667b8b">boş şekil</text>
+  <circle cx="70" cy="153" r="4" fill="#adc8df"/>
+
+  <!-- C1 -->
+  <g filter="url(#softShadow)">
+    <rect x="165" y="88" width="80" height="86" rx="17" fill="#ffffff"/>
+    <rect x="165" y="88" width="80" height="27" rx="17" fill="#e6f7f0"/>
+    <path d="M165 105 L245 105 L245 115 L165 115 Z" fill="#e6f7f0"/>
+  </g>
+  <text x="205" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34705d">C1</text>
+  <text x="205" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526f69">x eklendi</text>
+  <rect x="187" y="147" width="36" height="13" rx="5" fill="#bde8d9"/>
+  <text x="205" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34705d">x: 0</text>
+
+  <!-- C2 -->
+  <g filter="url(#shadow)">
+    <rect x="300" y="78" width="80" height="106" rx="17" fill="#ffffff"/>
+    <rect x="300" y="78" width="80" height="29" rx="17" fill="#dbeaff"/>
+    <path d="M300 97 L380 97 L380 107 L300 107 Z" fill="#dbeaff"/>
+  </g>
+  <text x="340" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315e90">C2</text>
+  <text x="340" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557083">kararlı şekil</text>
+  <rect x="312" y="138" width="56" height="14" rx="5" fill="#c6ddf7"/>
+  <text x="340" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315e90">x: 0</text>
+  <rect x="312" y="158" width="56" height="14" rx="5" fill="#c6ddf7"/>
+  <text x="340" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315e90">y: 1</text>
+
+  <!-- Inline cache -->
+  <path d="M460 131 L478 131" fill="none" stroke="#7595ad" stroke-width="2"/>
+  <polygon points="478,131 470,126 470,136" fill="#7595ad"/>
+  <g filter="url(#shadow)">
+    <rect x="480" y="82" width="130" height="98" rx="20" fill="url(#core)"/>
+    <rect x="494" y="96" width="102" height="28" rx="10" fill="#ffffff" opacity="0.84"/>
+  </g>
+  <text x="545" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365f73">Inline Cache</text>
+  <text x="545" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426b68">C2 + x ofseti</text>
+  <path d="M509 157 L581 157" stroke="#76a78e" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="581" cy="157" r="5" fill="#4d9775"/>
+
+  <!-- lower branches -->
+  <path d="M545 184 L545 213 L436 213 L436 229" fill="none" stroke="#6d9f8a" stroke-width="2"/>
+  <polygon points="436,229 431,221 441,221" fill="#6d9f8a"/>
+  <path d="M545 184 L545 213 L562 213 L562 229" fill="none" stroke="#bd887b" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="562,229 557,221 567,221" fill="#bd887b"/>
+
+  <!-- good outcome -->
+  <g filter="url(#softShadow)">
+    <rect x="297" y="231" width="278" height="65" rx="17" fill="#ffffff"/>
+    <rect x="310" y="243" width="112" height="40" rx="12" fill="#e0f5e9"/>
+    <rect x="437" y="243" width="125" height="40" rx="12" fill="#fff0eb"/>
+  </g>
+  <text x="366" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33755d">Monomorfik</text>
+  <text x="366" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7d70">doğrudan erişim</text>
+  <text x="499" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a45f50">Çok şekil</text>
+  <text x="499" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c7169">sözlük modu</text>
+
+  <!-- note -->
+  <g filter="url(#softShadow)">
+    <rect x="30" y="224" width="221" height="61" rx="17" fill="#ffffff"/>
+    <circle cx="57" cy="254" r="15" fill="#f6ddab"/>
+    <path d="M57 245 L57 255" stroke="#9c7040" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="57" cy="261" r="1.8" fill="#9c7040"/>
+  </g>
+  <text x="83" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b6974">Aynı ekleme sırası</text>
+  <text x="83" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71808a">aynı gizli sınıfı paylaşır</text>
+</svg>
