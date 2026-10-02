@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="stream" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#91c7f2"/>
+      <stop offset="100%" stop-color="#7ed6b3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#53708b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#53708b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="568" cy="43" r="72" fill="#d7f1e6" opacity="0.42"/>
+  <circle cx="74" cy="284" r="74" fill="#dceeff" opacity="0.52"/>
+
+  <text x="28" y="31" fill="#35546d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Reaktif Veri Akışı</text>
+  <text x="28" y="50" fill="#7590a4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Olaylar zaman içinde işlenir</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="80" width="112" height="48" rx="14" fill="#ffffff"/>
+    <circle cx="51" cy="104" r="12" fill="#d9edff"/>
+    <path d="M47 104h8M51 100v8" stroke="#4c91c8" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="72" y="108" fill="#35546d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Tıklama</text>
+
+    <rect x="28" y="142" width="112" height="48" rx="14" fill="#ffffff"/>
+    <circle cx="51" cy="166" r="12" fill="#e8dcff"/>
+    <path d="M47 169l3-7 3 7 3-7" fill="none" stroke="#8562bd" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="170" fill="#35546d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Klavye</text>
+
+    <rect x="28" y="204" width="112" height="48" rx="14" fill="#ffffff"/>
+    <circle cx="51" cy="228" r="12" fill="#d8f3e7"/>
+    <path d="M45 228h12M53 224l4 4-4 4" fill="none" stroke="#3b9b76" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="232" fill="#35546d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Sunucu</text>
+  </g>
+
+  <path d="M140 104 C158 104 156 145 174 159" fill="none" stroke="#8ebbd5" stroke-width="2"/>
+  <path d="M140 166 H174" fill="none" stroke="#9b8bc8" stroke-width="2"/>
+  <path d="M140 228 C158 228 156 187 174 173" fill="none" stroke="#76bea2" stroke-width="2"/>
+  <polygon points="174,159 166,154 167,163" fill="#7faeca"/>
+  <polygon points="174,166 166,162 166,170" fill="#8e7bc1"/>
+  <polygon points="174,173 167,169 166,178" fill="#70b79c"/>
+
+  <g filter="url(#shadow)">
+    <rect x="177" y="112" width="116" height="110" rx="20" fill="#e5f2ff"/>
+    <rect x="188" y="126" width="94" height="27" rx="10" fill="#ffffff" opacity="0.92"/>
+    <text x="235" y="144" text-anchor="middle" fill="#356889" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Observable</text>
+    <path d="M197 176 C205 164 211 190 219 176 S234 164 242 176 S257 190 266 176" fill="none" stroke="#549bc5" stroke-width="2.3" stroke-linecap="round"/>
+    <circle cx="202" cy="176" r="3.5" fill="#549bc5"/>
+    <circle cx="232" cy="176" r="3.5" fill="#549bc5"/>
+    <circle cx="262" cy="176" r="3.5" fill="#549bc5"/>
+    <text x="235" y="204" text-anchor="middle" fill="#6b8ba0" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">zaman akışı</text>
+  </g>
+
+  <path d="M293 167 H313" fill="none" stroke="#629ebe" stroke-width="2.4"/>
+  <polygon points="317,167 308,162 308,172" fill="#629ebe"/>
+
+  <g filter="url(#shadow)">
+    <rect x="320" y="75" width="151" height="183" rx="22" fill="#ffffff"/>
+    <text x="395" y="101" text-anchor="middle" fill="#48657c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Operatör Boru Hattı</text>
+
+    <rect x="337" y="116" width="116" height="31" rx="11" fill="#eaf5ff"/>
+    <text x="395" y="136" text-anchor="middle" fill="#427caa" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">map</text>
+
+    <path d="M395 147 V155" stroke="#83acc7" stroke-width="1.8"/>
+    <polygon points="395,159 390,152 400,152" fill="#83acc7"/>
+
+    <rect x="337" y="161" width="116" height="31" rx="11" fill="#f1ebff"/>
+    <text x="395" y="181" text-anchor="middle" fill="#775aad" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">filter</text>
+
+    <path d="M395 192 V200" stroke="#a393c6" stroke-width="1.8"/>
+    <polygon points="395,204 390,197 400,197" fill="#a393c6"/>
+
+    <rect x="337" y="206" width="116" height="31" rx="11" fill="#e9f8ef"/>
+    <text x="395" y="226" text-anchor="middle" fill="#398265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">debounce 300 ms</text>
+  </g>
+
+  <path d="M471 167 H490" fill="none" stroke="#5ca98a" stroke-width="2.4"/>
+  <polygon points="494,167 485,162 485,172" fill="#5ca98a"/>
+
+  <g filter="url(#shadow)">
+    <rect x="497" y="112" width="115" height="110" rx="20" fill="#e2f5eb"/>
+    <circle cx="554" cy="143" r="20" fill="#ffffff"/>
+    <path d="M545 143h18M557 137l6 6-6 6" fill="none" stroke="#40966f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="554" y="178" text-anchor="middle" fill="#316d58" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Observer</text>
+    <text x="554" y="200" text-anchor="middle" fill="#608e7c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">abone ol</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="485" y="245" width="127" height="42" rx="14" fill="#fff5dd"/>
+    <path d="M505 265h14M512 258v14" stroke="#c38a3b" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="557" y="269" text-anchor="middle" fill="#92692e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">switchMap</text>
+  </g>
+  <path d="M554 222 V241" fill="none" stroke="#c59b55" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="554,245 549,238 559,238" fill="#c59b55"/>
+
+  <path d="M472 247 C480 247 481 263 485 266" fill="none" stroke="#c59b55" stroke-width="1.5" opacity="0.7"/>
+  <text x="317" y="288" fill="#7590a4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Eski istek bırakılır, güncel veri akar</text>
+</svg>
