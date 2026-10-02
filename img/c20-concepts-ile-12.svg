@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="gate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfe9ff"/>
+      <stop offset="100%" stop-color="#cdddf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6c7d9b" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#687d77" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="50" r="62" fill="#dcecff" opacity="0.42"/>
+  <circle cx="594" cy="282" r="76" fill="#dff2df" opacity="0.45"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516e">C++20 CONCEPTS</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a7d91">Şablon girişinde açık kısıt denetimi</text>
+
+  <g filter="url(#soft)">
+    <rect x="31" y="88" width="122" height="54" rx="16" fill="#fff4dc" stroke="#edce91"/>
+    <circle cx="54" cy="115" r="12" fill="#f4c969"/>
+    <path d="M49 115h10M54 110v10" stroke="#7c5d22" stroke-width="2" stroke-linecap="round"/>
+    <text x="72" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#69552c">Tür girişi</text>
+    <text x="72" y="127" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#83704b">T parametresi</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="31" y="177" width="122" height="54" rx="16" fill="#ffe8e6" stroke="#f0b7b3"/>
+    <circle cx="54" cy="204" r="12" fill="#ee9f9a"/>
+    <path d="M49 199l10 10M59 199l-10 10" stroke="#814c4b" stroke-width="2" stroke-linecap="round"/>
+    <text x="72" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#75504e">Uygunsuz tür</text>
+    <text x="72" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6765">işlem eksik</text>
+  </g>
+
+  <path d="M153 115 H193" fill="none" stroke="#7990ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="193,110 203,115 193,120" fill="#7990ae"/>
+  <path d="M153 204 H179 V157 H193" fill="none" stroke="#b88a89" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="193,152 203,157 193,162" fill="#b88a89"/>
+
+  <g filter="url(#shadow)">
+    <rect x="203" y="69" width="229" height="177" rx="24" fill="url(#gate)" stroke="#a9bee2" stroke-width="1.4"/>
+    <rect x="225" y="84" width="185" height="31" rx="12" fill="#ffffff" opacity="0.68"/>
+    <path d="M243 99h18" stroke="#4c77a8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M252 90v18" stroke="#4c77a8" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="274" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385b84">Concept kapısı</text>
+
+    <rect x="225" y="128" width="185" height="30" rx="11" fill="#edf7ff"/>
+    <circle cx="242" cy="143" r="8" fill="#8db8e4"/>
+    <path d="M238 143l3 3 5-6" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="260" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41627f">Toplanabilir</text>
+
+    <rect x="225" y="166" width="185" height="30" rx="11" fill="#edf8ef"/>
+    <circle cx="242" cy="181" r="8" fill="#91c89e"/>
+    <path d="M238 181l3 3 5-6" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="260" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41684c">Sonuç uyumlu</text>
+
+    <rect x="225" y="204" width="185" height="25" rx="10" fill="#ffffff" opacity="0.62"/>
+    <text x="317" y="221" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45617e">requires · derleme zamanı</text>
+  </g>
+
+  <path d="M432 123 H464 V101 H477" fill="none" stroke="#669778" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="477,96 488,101 477,106" fill="#669778"/>
+  <path d="M432 198 H464 V222 H477" fill="none" stroke="#c87575" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="477,217 488,222 477,227" fill="#c87575"/>
+
+  <g filter="url(#soft)">
+    <rect x="488" y="70" width="121" height="63" rx="17" fill="#e2f4e7" stroke="#a8d3b2"/>
+    <circle cx="513" cy="101" r="14" fill="#7ec58d"/>
+    <path d="M506 101l5 5 10-12" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="535" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e704b">Kabul</text>
+    <text x="535" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557c5f">fonksiyon gövdesi</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="488" y="190" width="121" height="63" rx="17" fill="#ffe8e7" stroke="#edb6b3"/>
+    <circle cx="513" cy="221" r="14" fill="#e78d8a"/>
+    <path d="M507 215l12 12M519 215l-12 12" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="535" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#884e4c">Ret</text>
+    <text x="535" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#936563">yakın hata mesajı</text>
+  </g>
+
+  <path d="M65 272 H575" stroke="#c7d7db" stroke-width="1"/>
+  <circle cx="94" cy="272" r="5" fill="#f2c66b"/>
+  <text x="106" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617487">Beklenti görünür</text>
+  <circle cx="275" cy="272" r="5" fill="#89b8e2"/>
+  <text x="287" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617487">Kısıt doğrulanır</text>
+  <circle cx="462" cy="272" r="5" fill="#84c391"/>
+  <text x="474" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617487">Hata sadeleşir</text>
+</svg>

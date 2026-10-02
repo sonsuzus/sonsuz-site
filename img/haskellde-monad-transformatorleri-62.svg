@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="state" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#bcd8f5"/>
+    </linearGradient>
+    <linearGradient id="except" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe3df"/>
+      <stop offset="100%" stop-color="#f7c4bd"/>
+    </linearGradient>
+    <linearGradient id="io" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcf3df"/>
+      <stop offset="100%" stop-color="#bde4c5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#668098" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#668098" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="47" r="58" fill="#dceeff" opacity="0.45"/>
+  <circle cx="579" cy="269" r="79" fill="#dff2df" opacity="0.48"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365069">Etkiler: katmanlı hesaplama bağlamı</text>
+
+  <g filter="url(#soft)">
+    <rect x="38" y="79" width="105" height="58" rx="16" fill="#ffffff" stroke="#cdddea"/>
+    <text x="90.5" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42627c">Başlangıç</text>
+    <text x="90.5" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597187">Durum: 100</text>
+  </g>
+
+  <path d="M148 108 H185" fill="none" stroke="#7891a5" stroke-width="2"/>
+  <polygon points="185,108 177,103 177,113" fill="#7891a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="192" y="54" width="256" height="158" rx="24" fill="#ffffff" opacity="0.94"/>
+    <rect x="207" y="67" width="226" height="43" rx="14" fill="url(#state)"/>
+    <rect x="218" y="116" width="204" height="42" rx="13" fill="url(#except)"/>
+    <rect x="229" y="164" width="182" height="35" rx="12" fill="url(#io)"/>
+    
+    <circle cx="229" cy="88" r="11" fill="#ffffff" opacity="0.78"/>
+    <path d="M224 88 h10 M229 83 v10" stroke="#5783a9" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="250" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d82">StateT</text>
+    <text x="347" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486b86">durum</text>
+
+    <circle cx="240" cy="137" r="11" fill="#ffffff" opacity="0.78"/>
+    <path d="M235 137 L239 141 L246 133" fill="none" stroke="#ae6259" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="261" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#965148">ExceptT</text>
+    <text x="350" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d645c">hata</text>
+
+    <circle cx="251" cy="181.5" r="10" fill="#ffffff" opacity="0.78"/>
+    <path d="M247 182 h8 M251 178 v8" stroke="#49845b" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="270" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7650">IO</text>
+    <text x="341" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#568064">dış dünya</text>
+  </g>
+
+  <text x="320" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b71">AppM = StateT Int (ExceptT Hata IO)</text>
+
+  <path d="M452 133 H486" fill="none" stroke="#7891a5" stroke-width="2"/>
+  <polygon points="486,133 478,128 478,138" fill="#7891a5"/>
+
+  <g filter="url(#soft)">
+    <rect x="492" y="79" width="110" height="108" rx="17" fill="#ffffff" stroke="#cdddea"/>
+    <text x="547" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42627c">Çalıştırıcılar</text>
+    <rect x="506" y="116" width="82" height="23" rx="8" fill="#eaf3ff"/>
+    <text x="547" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42627c">runStateT</text>
+    <rect x="506" y="147" width="82" height="23" rx="8" fill="#fff0ed"/>
+    <text x="547" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8f5b54">runExceptT</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="61" y="257" width="224" height="43" rx="14" fill="#ffffff" stroke="#d6e3ed"/>
+    <circle cx="82" cy="278.5" r="10" fill="#ffd8d2"/>
+    <path d="M78 275 L86 283 M86 275 L78 283" stroke="#af5c54" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="102" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6b5360">Hata oluşursa</text>
+    <text x="102" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c6d75">durum kaybolabilir</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="355" y="257" width="224" height="43" rx="14" fill="#ffffff" stroke="#d6e3ed"/>
+    <circle cx="376" cy="278.5" r="10" fill="#cfeeda"/>
+    <path d="M372 279 L375 282 L381 275" fill="none" stroke="#438157" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="396" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#506b5a">Sıra önemlidir</text>
+    <text x="396" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d7e73">anlam değişebilir</text>
+  </g>
+
+  <path d="M320 237 V248 H173" fill="none" stroke="#a1b2bf" stroke-width="1.5"/>
+  <path d="M320 248 H467" fill="none" stroke="#a1b2bf" stroke-width="1.5"/>
+  <circle cx="320" cy="248" r="3" fill="#89a0b0"/>
+</svg>

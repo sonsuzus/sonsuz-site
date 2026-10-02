@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="compile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#c7dff8"/>
+    </linearGradient>
+    <linearGradient id="zig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe4bd"/>
+      <stop offset="100%" stop-color="#ffd09a"/>
+    </linearGradient>
+    <linearGradient id="run" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcf4df"/>
+      <stop offset="100%" stop-color="#c4e8cb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8493" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#668090" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M37 71 C141 32 190 56 255 31" fill="none" stroke="#dcebf1" stroke-width="2"/>
+  <circle cx="49" cy="48" r="6" fill="#cfe6f1"/>
+  <circle cx="579" cy="60" r="10" fill="#dcefd5"/>
+  <circle cx="602" cy="82" r="4" fill="#f8ddb8"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405565">Zig comptime · zaman bilinçli kod</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="76" width="160" height="184" rx="20" fill="url(#compile)" stroke="#b6d1eb"/>
+  </g>
+  <text x="111" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a7b">DERLEME ZAMANI</text>
+  <line x1="55" y1="115" x2="167" y2="115" stroke="#9fc2df"/>
+
+  <g filter="url(#soft)">
+    <rect x="51" y="130" width="120" height="35" rx="10" fill="#f8fcff"/>
+    <text x="111" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416277">Sabitler ve türler</text>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="51" y="180" width="120" height="35" rx="10" fill="#f8fcff"/>
+    <text x="111" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416277">Normal Zig kodu</text>
+  </g>
+  <text x="111" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547488">Maliyet: derlemede</text>
+
+  <path d="M191 168 L237 168" fill="none" stroke="#7098b5" stroke-width="2.5"/>
+  <polygon points="237,168 228,162 228,174" fill="#7098b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="239" y="78" width="162" height="180" rx="26" fill="url(#zig)" stroke="#efba76"/>
+  </g>
+  <circle cx="320" cy="117" r="22" fill="#fff4df" stroke="#edae60" stroke-width="1.5"/>
+  <path d="M310 113 L318 106 L328 113 L322 113 L330 121 L321 128 L312 121 L318 121 Z" fill="#e98a38"/>
+  <text x="320" y="159" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#884d20">comptime</text>
+  <text x="320" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a613c">Değerlendir</text>
+  <line x1="270" y1="193" x2="370" y2="193" stroke="#edbd82"/>
+  <text x="320" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a613c">Sonucu göm</text>
+  <text x="320" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d6b40">tür · tablo · hesap</text>
+
+  <path d="M401 168 L447 168" fill="none" stroke="#6eaa81" stroke-width="2.5"/>
+  <polygon points="447,168 438,162 438,174" fill="#6eaa81"/>
+
+  <g filter="url(#shadow)">
+    <rect x="449" y="76" width="160" height="184" rx="20" fill="url(#run)" stroke="#acd5b4"/>
+  </g>
+  <text x="529" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356848">ÇALIŞMA ZAMANI</text>
+  <line x1="473" y1="115" x2="585" y2="115" stroke="#9dceaa"/>
+
+  <g filter="url(#soft)">
+    <rect x="469" y="130" width="120" height="35" rx="10" fill="#fbfffb"/>
+    <text x="529" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#467458">Makine kodu</text>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="469" y="180" width="120" height="35" rx="10" fill="#fbfffb"/>
+    <text x="529" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#467458">Anlık girdi</text>
+  </g>
+  <text x="529" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547b60">Maliyet: O(1)</text>
+
+  <path d="M111 165 L111 180" fill="none" stroke="#aac8df" stroke-width="1.5"/>
+  <polygon points="111,180 106,173 116,173" fill="#aac8df"/>
+  <path d="M529 165 L529 180" fill="none" stroke="#aad2b3" stroke-width="1.5"/>
+  <polygon points="529,180 524,173 534,173" fill="#aad2b3"/>
+
+  <g filter="url(#soft)">
+    <rect x="203" y="276" width="234" height="27" rx="13" fill="#ffffff" opacity="0.88"/>
+    <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536976">Önceden bilinen girdi → sıfır ek yük</text>
+  </g>
+</svg>

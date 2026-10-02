@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="query" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef1ff"/>
+      <stop offset="100%" stop-color="#e5ecff"/>
+    </linearGradient>
+    <linearGradient id="score" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff6df"/>
+      <stop offset="100%" stop-color="#ffeed0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#66829a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#647f96" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M30 268 C126 228, 173 298, 263 268 S432 236, 610 278" fill="none" stroke="#cfe5dc" stroke-width="2" opacity="0.7"/>
+  <circle cx="49" cy="48" r="20" fill="#dff1eb" opacity="0.55"/>
+  <circle cx="601" cy="50" r="29" fill="#e9e6ff" opacity="0.6"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f5870">GRAF TABANLI TAVSİYE</text>
+  <text x="30" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708496">Neo4j düğümleri ve Cypher gezinmesi</text>
+
+  <!-- Sol ağ kartı -->
+  <rect x="28" y="71" width="194" height="205" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="47" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c6174">İlişki Ağı</text>
+  <text x="47" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8293a1">düğüm ve bağlantılar</text>
+
+  <!-- network edges -->
+  <path d="M79 158 L125 139 L167 167 L125 207 L79 158" fill="none" stroke="#aabbd1" stroke-width="3"/>
+  <path d="M125 139 L133 232" fill="none" stroke="#aabbd1" stroke-width="3"/>
+  <path d="M167 167 L185 224" fill="none" stroke="#aabbd1" stroke-width="3"/>
+  <path d="M125 207 L185 224" fill="none" stroke="#aabbd1" stroke-width="3"/>
+  <path d="M79 158 L125 207" fill="none" stroke="#aabbd1" stroke-width="3"/>
+  <path d="M135 154 L154 162 L143 173" fill="#aabbd1"/>
+
+  <!-- User nodes -->
+  <circle cx="79" cy="158" r="19" fill="#cceee4" filter="url(#softShadow)"/>
+  <circle cx="125" cy="139" r="17" fill="#dfe7ff" filter="url(#softShadow)"/>
+  <circle cx="125" cy="207" r="17" fill="#dfe7ff" filter="url(#softShadow)"/>
+  <circle cx="133" cy="232" r="15" fill="#dfe7ff" filter="url(#softShadow)"/>
+  <text x="79" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355c5c">Sen</text>
+  <text x="125" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52688a">A</text>
+  <text x="125" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52688a">B</text>
+  <text x="133" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52688a">C</text>
+
+  <!-- Film nodes -->
+  <rect x="151" y="151" width="33" height="31" rx="9" fill="#ffe2b5" filter="url(#softShadow)"/>
+  <rect x="169" y="209" width="33" height="31" rx="9" fill="#ffe2b5" filter="url(#softShadow)"/>
+  <path d="M160 160 h14 M160 166 h14 M160 172 h14" stroke="#a66e25" stroke-width="1.5" opacity="0.8"/>
+  <path d="M178 218 h14 M178 224 h14 M178 230 h14" stroke="#a66e25" stroke-width="1.5" opacity="0.8"/>
+  <text x="167" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d8d99">izledi</text>
+
+  <!-- arrows into processing -->
+  <path d="M230 174 L272 174" fill="none" stroke="#738bb3" stroke-width="3"/>
+  <polygon points="272,174 262,168 262,180" fill="#738bb3"/>
+
+  <!-- Cypher card -->
+  <rect x="281" y="112" width="137" height="128" rx="18" fill="url(#query)" filter="url(#shadow)"/>
+  <rect x="298" y="130" width="104" height="26" rx="8" fill="#596da9"/>
+  <text x="350" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Cypher Sorgusu</text>
+  <text x="302" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596a92">Arkadaşları bul</text>
+  <text x="302" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596a92">Yüksek puanı seç</text>
+  <text x="302" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596a92">İzleneni ele</text>
+
+  <!-- arrows to score -->
+  <path d="M426 174 L455 174" fill="none" stroke="#cc9c52" stroke-width="3"/>
+  <polygon points="455,174 445,168 445,180" fill="#cc9c52"/>
+
+  <!-- score card -->
+  <rect x="464" y="91" width="147" height="166" rx="18" fill="url(#score)" filter="url(#shadow)"/>
+  <text x="482" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#896329">Tavsiye Skoru</text>
+  <rect x="481" y="132" width="111" height="31" rx="9" fill="#ffffff" opacity="0.75"/>
+  <text x="537" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#795923">Destek</text>
+  <rect x="481" y="171" width="111" height="31" rx="9" fill="#ffffff" opacity="0.75"/>
+  <text x="537" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#795923">Ortalama puan</text>
+  <rect x="481" y="210" width="111" height="31" rx="9" fill="#ffffff" opacity="0.75"/>
+  <text x="537" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#795923">Benzerlik</text>
+
+  <!-- lower constraint -->
+  <rect x="250" y="263" width="181" height="32" rx="13" fill="#d9f0e7" filter="url(#softShadow)"/>
+  <path d="M340 247 L340 259" fill="none" stroke="#7daf9d" stroke-width="2"/>
+  <polygon points="340,263 335,256 345,256" fill="#7daf9d"/>
+  <text x="340" y="284" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#427466">Derinlik sınırı: 1..3</text>
+</svg>
