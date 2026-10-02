@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="gilGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe7ad"/>
+      <stop offset="100%" stop-color="#ffd18a"/>
+    </linearGradient>
+    <linearGradient id="safeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3e4"/>
+      <stop offset="100%" stop-color="#bce8d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7390a0" flood-opacity="0.19"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#718596" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="45" r="54" fill="#dceeff" opacity="0.48"/>
+  <circle cx="589" cy="274" r="78" fill="#dff3e5" opacity="0.52"/>
+  <circle cx="548" cy="42" r="29" fill="#fff0c9" opacity="0.55"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395266">CPython ve GIL</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718595">Bir kilit, birçok yapısal bağ</text>
+
+  <!-- left threads -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="84" width="145" height="148" rx="18" fill="#e8f1ff"/>
+  </g>
+  <text x="48" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48627a">İş parçacıkları</text>
+  <g filter="url(#smallShadow)">
+    <rect x="47" y="124" width="106" height="22" rx="10" fill="#ffffff"/>
+    <rect x="47" y="155" width="106" height="22" rx="10" fill="#ffffff"/>
+    <rect x="47" y="186" width="106" height="22" rx="10" fill="#ffffff"/>
+  </g>
+  <circle cx="62" cy="135" r="5" fill="#92b9ef"/>
+  <circle cx="62" cy="166" r="5" fill="#a69be8"/>
+  <circle cx="62" cy="197" r="5" fill="#76c7b0"/>
+  <text x="76" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536c7e">Python kodu</text>
+  <text x="76" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536c7e">Python kodu</text>
+  <text x="76" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536c7e">Python kodu</text>
+
+  <!-- arrows incoming -->
+  <path d="M174 135 H207" fill="none" stroke="#8095a7" stroke-width="2"/>
+  <polygon points="207,135 198,130 198,140" fill="#8095a7"/>
+  <path d="M174 166 H207" fill="none" stroke="#8095a7" stroke-width="2"/>
+  <polygon points="207,166 198,161 198,171" fill="#8095a7"/>
+  <path d="M174 197 H207" fill="none" stroke="#8095a7" stroke-width="2"/>
+  <polygon points="207,197 198,192 198,202" fill="#8095a7"/>
+
+  <!-- GIL core -->
+  <g filter="url(#shadow)">
+    <rect x="208" y="85" width="184" height="146" rx="24" fill="url(#gilGrad)"/>
+  </g>
+  <rect x="224" y="101" width="152" height="114" rx="18" fill="#fff8e8" opacity="0.72"/>
+  <path d="M274 149 v-13 c0-18 13-30 26-30s26 12 26 30v13" fill="none" stroke="#9b6e3a" stroke-width="10" stroke-linecap="round"/>
+  <rect x="259" y="145" width="82" height="53" rx="11" fill="#bd8242"/>
+  <circle cx="300" cy="168" r="6" fill="#fff1d3"/>
+  <path d="M300 174 v11" stroke="#fff1d3" stroke-width="4" stroke-linecap="round"/>
+  <text x="300" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#74532d">GIL</text>
+
+  <!-- protected links -->
+  <path d="M393 126 H422 V95 H443" fill="none" stroke="#7f9aa1" stroke-width="2"/>
+  <polygon points="443,95 434,90 434,100" fill="#7f9aa1"/>
+  <path d="M393 190 H422 V221 H443" fill="none" stroke="#7f9aa1" stroke-width="2"/>
+  <polygon points="443,221 434,216 434,226" fill="#7f9aa1"/>
+
+  <!-- right top reference count -->
+  <g filter="url(#shadow)">
+    <rect x="444" y="62" width="166" height="81" rx="17" fill="#e5f4ec"/>
+  </g>
+  <text x="462" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426b5a">Referans sayımı</text>
+  <rect x="462" y="99" width="86" height="25" rx="8" fill="#ffffff"/>
+  <text x="474" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#517365">Nesne</text>
+  <rect x="558" y="99" width="33" height="25" rx="8" fill="#94d2b4"/>
+  <text x="574" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b4a">R</text>
+
+  <!-- right lower C api -->
+  <g filter="url(#shadow)">
+    <rect x="444" y="180" width="166" height="81" rx="17" fill="#eeeafd"/>
+  </g>
+  <text x="462" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5e5683">C uzantıları</text>
+  <rect x="462" y="217" width="41" height="25" rx="8" fill="#c8bff2"/>
+  <rect x="510" y="217" width="41" height="25" rx="8" fill="#b5d9f4"/>
+  <rect x="558" y="217" width="33" height="25" rx="8" fill="#d4c8f3"/>
+  <text x="482" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554c7a">C API</text>
+  <text x="530" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6f89">Paket</text>
+  <text x="574" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554c7a">Eski</text>
+
+  <!-- bottom alternative -->
+  <path d="M300 232 V259" fill="none" stroke="#6b9d88" stroke-width="2"/>
+  <polygon points="300,259 295,250 305,250" fill="#6b9d88"/>
+  <g filter="url(#smallShadow)">
+    <rect x="199" y="261" width="202" height="43" rx="16" fill="url(#safeGrad)"/>
+  </g>
+  <text x="300" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d705b">Serbest iş parçacığı</text>
+  <text x="300" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56806d">ince kilitler • uyumluluk • maliyet</text>
+</svg>
