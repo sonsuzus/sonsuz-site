@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="queueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffe9b9"/>
+      <stop offset="100%" stop-color="#ffd5a3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#54708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="46" r="56" fill="#dcedff" opacity="0.5"/>
+  <circle cx="578" cy="270" r="72" fill="#daf1dc" opacity="0.45"/>
+
+  <text x="28" y="31" fill="#35516b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Webhook ve Kuyruk Akışı</text>
+  <text x="490" y="31" fill="#73899a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">λ &lt; μ hedefi</text>
+
+  <!-- Telegram -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="104" width="100" height="112" rx="19" fill="#d9edff"/>
+    <circle cx="77" cy="139" r="22" fill="#8ec8f4"/>
+    <path d="M66 139 L89 129 L82 150 L75 144 L70 149 L71 142 Z" fill="#ffffff"/>
+    <text x="77" y="180" text-anchor="middle" fill="#294963" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Telegram</text>
+    <text x="77" y="198" text-anchor="middle" fill="#5d768a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Güncelleme</text>
+  </g>
+
+  <!-- arrow 1 -->
+  <path d="M137 160 H159" fill="none" stroke="#7295ae" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M159 160 L151 155 L151 165 Z" fill="#7295ae"/>
+  <text x="145" y="148" text-anchor="middle" fill="#6a8294" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">POST</text>
+
+  <!-- Webhook -->
+  <g filter="url(#shadow)">
+    <rect x="169" y="83" width="133" height="154" rx="20" fill="#dff3e7"/>
+    <rect x="184" y="101" width="103" height="34" rx="10" fill="#ffffff"/>
+    <path d="M198 118 h17 M206.5 109.5 v17" stroke="#55a879" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="243" y="122" text-anchor="middle" fill="#327052" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Webhook</text>
+    <rect x="184" y="146" width="103" height="29" rx="9" fill="#c7ead4"/>
+    <text x="235.5" y="165" text-anchor="middle" fill="#326b50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Doğrulama</text>
+    <rect x="184" y="184" width="103" height="34" rx="9" fill="#ffffff"/>
+    <text x="235.5" y="205" text-anchor="middle" fill="#326b50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hızlı 200 OK</text>
+  </g>
+
+  <!-- arrow 2 -->
+  <path d="M312 160 H337" fill="none" stroke="#7295ae" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M337 160 L329 155 L329 165 Z" fill="#7295ae"/>
+
+  <!-- Queue -->
+  <g filter="url(#shadow)">
+    <rect x="347" y="73" width="120" height="174" rx="21" fill="url(#queueGrad)"/>
+    <text x="407" y="103" text-anchor="middle" fill="#875c25" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kuyruk</text>
+    <text x="407" y="120" text-anchor="middle" fill="#9b7041" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Redis</text>
+    <g fill="#ffffff" filter="url(#smallShadow)">
+      <rect x="369" y="137" width="76" height="18" rx="6"/>
+      <rect x="369" y="162" width="76" height="18" rx="6"/>
+      <rect x="369" y="187" width="76" height="18" rx="6"/>
+    </g>
+    <g fill="#d7974d">
+      <circle cx="381" cy="146" r="3"/>
+      <circle cx="381" cy="171" r="3"/>
+      <circle cx="381" cy="196" r="3"/>
+    </g>
+    <text x="408" y="150" fill="#805a2b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İş 01</text>
+    <text x="408" y="175" fill="#805a2b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İş 02</text>
+    <text x="408" y="200" fill="#805a2b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Darbe tamponu</text>
+    <text x="407" y="229" text-anchor="middle" fill="#9b7041" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tekrar dene</text>
+  </g>
+
+  <!-- arrow split -->
+  <path d="M477 160 H495 V108 H510" fill="none" stroke="#7295ae" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M510 108 L502 103 L502 113 Z" fill="#7295ae"/>
+  <path d="M495 160 V211 H510" fill="none" stroke="#7295ae" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M510 211 L502 206 L502 216 Z" fill="#7295ae"/>
+
+  <!-- Workers -->
+  <g filter="url(#shadow)">
+    <rect x="520" y="65" width="94" height="85" rx="18" fill="#e9def8"/>
+    <circle cx="544" cy="96" r="12" fill="#b99adb"/>
+    <path d="M538 97 h12 M544 91 v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="575" y="99" text-anchor="middle" fill="#674785" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Worker 1</text>
+    <text x="567" y="122" text-anchor="middle" fill="#83659c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İşleme</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="520" y="168" width="94" height="85" rx="18" fill="#e9def8"/>
+    <circle cx="544" cy="199" r="12" fill="#b99adb"/>
+    <path d="M538 200 h12 M544 194 v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="575" y="202" text-anchor="middle" fill="#674785" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Worker N</text>
+    <text x="567" y="225" text-anchor="middle" fill="#83659c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ölçekleme</text>
+  </g>
+
+  <!-- bottom system notes -->
+  <g filter="url(#smallShadow)">
+    <rect x="38" y="266" width="164" height="32" rx="12" fill="#ffffff"/>
+    <circle cx="57" cy="282" r="7" fill="#78bbd2"/>
+    <text x="71" y="286" fill="#537084" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tekil kimlik</text>
+    <rect x="218" y="266" width="172" height="32" rx="12" fill="#ffffff"/>
+    <circle cx="237" cy="282" r="7" fill="#eeae69"/>
+    <text x="251" y="286" fill="#537084" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Geri çekilme</text>
+    <rect x="406" y="266" width="190" height="32" rx="12" fill="#ffffff"/>
+    <circle cx="425" cy="282" r="7" fill="#a98acf"/>
+    <text x="439" y="286" fill="#537084" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İzleme ve hata kuyruğu</text>
+  </g>
+</svg>
