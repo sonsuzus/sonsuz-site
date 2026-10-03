@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""Çalışıyor, Dokunma!" Paradigması: Legacy Kod Korkusunu Yenmek"
+title: "Çalışıyor, Dokunma! Paradigması: Legacy Kod Korkusunu Yenmek"
 math: true
 categories: 
   - Bilgi

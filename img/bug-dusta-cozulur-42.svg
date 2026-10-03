@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="focus" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c7dcf7"/>
+    </linearGradient>
+    <linearGradient id="incubate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8ddff"/>
+      <stop offset="100%" stop-color="#d7c6f0"/>
+    </linearGradient>
+    <linearGradient id="aha" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff2b8"/>
+      <stop offset="100%" stop-color="#f9d889"/>
+    </linearGradient>
+    <linearGradient id="test" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d5f3e4"/>
+      <stop offset="100%" stop-color="#b9e3cf"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71829a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71829a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="60" cy="55" r="72" fill="#dceeff" opacity="0.48"/>
+  <circle cx="580" cy="268" r="98" fill="#dcf1dc" opacity="0.42"/>
+  <circle cx="330" cy="160" r="103" fill="#ffffff" opacity="0.54"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#496277">Hata Ayıklama Ritmi</text>
+
+  <!-- flow links -->
+  <path d="M196 110 C224 78 252 68 278 77" fill="none" stroke="#8298aa" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="276,70 291,80 273,84" fill="#8298aa"/>
+  <path d="M382 88 C422 88 446 104 463 123" fill="none" stroke="#8298aa" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="456,116 473,132 452,128" fill="#8298aa"/>
+  <path d="M463 203 C436 228 405 241 375 242" fill="none" stroke="#8298aa" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="378,234 360,242 377,250" fill="#8298aa"/>
+  <path d="M271 239 C232 235 203 216 181 190" fill="none" stroke="#8298aa" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="190,193 172,180 176,201" fill="#8298aa"/>
+
+  <!-- focused work -->
+  <g filter="url(#shadow)">
+    <rect x="64" y="72" width="137" height="86" rx="20" fill="url(#focus)"/>
+    <rect x="78" y="89" width="35" height="35" rx="10" fill="#ffffff" opacity="0.74"/>
+    <path d="M88 101 h15 M88 107 h11 M88 113 h14" stroke="#5f84aa" stroke-width="2" stroke-linecap="round"/>
+    <text x="122" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#365875">Odaklı Analiz</text>
+    <text x="122" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58718a">Kod ve loglar</text>
+  </g>
+
+  <!-- incubation -->
+  <g filter="url(#shadow)">
+    <rect x="278" y="48" width="108" height="78" rx="20" fill="url(#incubate)"/>
+    <circle cx="309" cy="84" r="17" fill="#ffffff" opacity="0.7"/>
+    <path d="M300 85 C304 76 315 76 319 85 C316 94 305 94 300 85Z" fill="none" stroke="#806eaa" stroke-width="2"/>
+    <path d="M305 84 Q309 79 314 84 Q309 89 305 84Z" fill="#806eaa" opacity="0.75"/>
+    <text x="340" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#59477d">Kuluçka</text>
+    <text x="340" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75668f">Mola ve hareket</text>
+  </g>
+
+  <!-- aha -->
+  <g filter="url(#shadow)">
+    <rect x="447" y="112" width="130" height="87" rx="22" fill="url(#aha)"/>
+    <path d="M479 135 C469 135 463 143 463 152 C463 159 467 163 471 166 L471 173 L487 173 L487 166 C492 162 495 158 495 152 C495 143 489 135 479 135Z" fill="#fffdf4" stroke="#b88635" stroke-width="2"/>
+    <path d="M473 178 H485 M475 183 H483" stroke="#b88635" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M479 126 V118 M455 139 L449 134 M503 139 L509 134" stroke="#b88635" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="530" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#805c22">Aha!</text>
+    <text x="530" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6d39">Yeni bağlantı</text>
+  </g>
+
+  <!-- validation -->
+  <g filter="url(#shadow)">
+    <rect x="266" y="211" width="120" height="75" rx="20" fill="url(#test)"/>
+    <rect x="285" y="230" width="30" height="30" rx="9" fill="#ffffff" opacity="0.74"/>
+    <path d="M292 245 L298 251 L308 238" fill="none" stroke="#41846c" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="346" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#336e59">Doğrulama</text>
+    <text x="346" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527d6d">Test ve sonuç</text>
+  </g>
+
+  <!-- center idea -->
+  <g filter="url(#soft)">
+    <circle cx="320" cy="159" r="43" fill="#ffffff" opacity="0.92"/>
+    <circle cx="320" cy="159" r="36" fill="none" stroke="#bed3d9" stroke-width="1.5"/>
+    <path d="M301 164 C306 146 318 143 326 151 C334 140 347 151 342 164 C337 174 326 177 320 181 C314 177 303 174 301 164Z" fill="#d9eef0"/>
+    <path d="M306 163 C311 157 316 158 320 164 C325 156 332 157 336 163" fill="none" stroke="#57909a" stroke-width="2" stroke-linecap="round"/>
+    <text x="320" y="204" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4c7179">Örüntü Kurma</text>
+  </g>
+
+  <!-- small data note -->
+  <g filter="url(#soft)">
+    <rect x="55" y="220" width="149" height="53" rx="15" fill="#ffffff" opacity="0.78"/>
+    <circle cx="76" cy="246" r="10" fill="#f2bfc1"/>
+    <path d="M72 246 H80 M76 242 V250" stroke="#a75d61" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="91" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5a7180">Malzeme Topla</text>
+    <text x="91" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718894">Girdi, beklenti, örnek</text>
+  </g>
+</svg>
