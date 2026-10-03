@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="atsGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfe9ff"/>
+      <stop offset="100%" stop-color="#cbdcff"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60708a" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      text { font-family: "Segoe UI", Tahoma, sans-serif; fill: #334155; font-size: 12px; }
+      .small { font-size: 11px; }
+      .title { font-size: 13px; font-weight: 700; fill: #253858; }
+      .line { fill: none; stroke: #8fa1bb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .dash { fill: none; stroke: #9aaac0; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    </style>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="57" r="48" fill="#dff3ef" opacity="0.55"/>
+  <circle cx="585" cy="270" r="70" fill="#e7e2fb" opacity="0.45"/>
+
+  <text x="28" y="29" class="title">İstihdam Algoritması: Hız ve Liyakat Dengesi</text>
+
+  <!-- Input CVs -->
+  <g filter="url(#shadow)">
+    <rect x="31" y="79" width="130" height="164" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="53" y="105" class="title">Aday Havuzu</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="48" y="119" width="66" height="86" rx="8" fill="#edf8f4" stroke="#b9ddd1"/>
+    <path d="M98 119 L114 135 L98 135 Z" fill="#d4ede5"/>
+    <rect x="57" y="143" width="38" height="5" rx="2.5" fill="#76bda5"/>
+    <rect x="57" y="156" width="47" height="4" rx="2" fill="#b2cfc6"/>
+    <rect x="57" y="166" width="41" height="4" rx="2" fill="#b2cfc6"/>
+    <rect x="57" y="184" width="27" height="5" rx="2.5" fill="#e3ab6a"/>
+    <text x="121" y="148" class="small">Deneyim</text>
+    <text x="121" y="169" class="small">Potansiyel</text>
+    <text x="121" y="190" class="small">Bağlam</text>
+  </g>
+  <text x="48" y="225" class="small" fill="#60708a">Farklı anlatımlar</text>
+
+  <!-- arrow input to ATS -->
+  <path class="line" d="M161 161 H198"/>
+  <polygon points="205,161 196,156 196,166" fill="#8fa1bb"/>
+
+  <!-- ATS central -->
+  <g filter="url(#shadow)">
+    <rect x="207" y="67" width="185" height="187" rx="24" fill="url(#atsGrad)"/>
+  </g>
+  <circle cx="299.5" cy="112" r="27" fill="#f8fbff" stroke="#a9bce2" stroke-width="1.5"/>
+  <path d="M287 104 H312 M287 112 H312 M287 120 H304" stroke="#6683ba" stroke-width="3" stroke-linecap="round"/>
+  <text x="254" y="154" class="title">ATS ve Yapay Zeka</text>
+
+  <g>
+    <rect x="228" y="169" width="143" height="22" rx="11" fill="#ffffff" opacity="0.75"/>
+    <text x="242" y="184" class="small">Anahtar kelimeler</text>
+    <rect x="228" y="197" width="143" height="22" rx="11" fill="#ffffff" opacity="0.75"/>
+    <text x="242" y="212" class="small">Geçmiş veri örüntüsü</text>
+    <rect x="228" y="225" width="143" height="16" rx="8" fill="#b7c9ed"/>
+    <text x="258" y="237" class="small" fill="#38517d">Uygunluk skoru</text>
+  </g>
+
+  <!-- Bias warning -->
+  <path class="dash" d="M299 254 V278 H203"/>
+  <polygon points="196,278 205,273 205,283" fill="#9aaac0"/>
+  <g filter="url(#softShadow)">
+    <rect x="49" y="260" width="150" height="38" rx="13" fill="#fff4e7"/>
+  </g>
+  <circle cx="69" cy="279" r="10" fill="#f3b56e"/>
+  <path d="M69 273 V280 M69 284 V285" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="86" y="276" class="small">Önyargı ve yanlış</text>
+  <text x="86" y="289" class="small">negatif riski</text>
+
+  <!-- scoring to split -->
+  <path class="line" d="M392 161 H422"/>
+  <polygon points="429,161 420,156 420,166" fill="#8fa1bb"/>
+  <circle cx="444" cy="161" r="22" fill="#ffffff" stroke="#b5c5d9" stroke-width="1.5" filter="url(#softShadow)"/>
+  <text x="433" y="158" class="small">Skor</text>
+  <text x="438" y="173" class="small">?</text>
+
+  <!-- top rejection path -->
+  <path class="line" d="M459 150 C480 136 477 108 495 108 H508"/>
+  <polygon points="515,108 506,103 506,113" fill="#8fa1bb"/>
+  <g filter="url(#shadow)">
+    <rect x="516" y="70" width="103" height="76" rx="16" fill="#ffe9e8"/>
+  </g>
+  <circle cx="538" cy="94" r="10" fill="#ed8884"/>
+  <path d="M534 90 L542 98 M542 90 L534 98" stroke="#ffffff" stroke-width="2"/>
+  <text x="555" y="97" class="title">Eleme</text>
+  <text x="530" y="119" class="small">Sözcük farkı</text>
+  <text x="530" y="133" class="small">görünmez kalır</text>
+
+  <!-- bottom human path -->
+  <path class="line" d="M459 172 C480 185 479 219 495 219 H508"/>
+  <polygon points="515,219 506,214 506,224" fill="#8fa1bb"/>
+  <g filter="url(#shadow)">
+    <rect x="516" y="181" width="103" height="91" rx="16" fill="#e7f5ed"/>
+  </g>
+  <circle cx="538" cy="207" r="11" fill="#79bea0"/>
+  <circle cx="538" cy="203" r="4" fill="#ffffff"/>
+  <path d="M531 216 C532 210 544 210 545 216" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="555" y="210" class="title">İnsan</text>
+  <text x="530" y="233" class="small">İnceleme ve</text>
+  <text x="530" y="248" class="small">itiraz kanalı</text>
+  <text x="530" y="262" class="small">daha adil karar</text>
+
+  <!-- subtle connecting bracket -->
+  <path d="M479 108 V219" fill="none" stroke="#c2cede" stroke-width="1.2" stroke-dasharray="3 4"/>
+</svg>
