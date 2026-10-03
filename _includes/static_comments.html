@@ -1,21 +1,56 @@
 <!-- SEO Botları İçin Statik Yorumlar -->
 <noscript>
+  <style>
+    .static-giscuss-comment {
+      margin-bottom: 20px; 
+      padding: 15px; 
+      border: 1px solid #e1e4e8; 
+      border-radius: 6px; 
+      background-color: #f6f8fa;
+    }
+    .static-giscuss-comment.is-reply {
+      margin-left: 40px; 
+      border-left: 4px solid #0366d6;
+    }
+    .static-comment-header {
+      margin-bottom: 10px; 
+      font-weight: bold;
+    }
+    .static-comment-header span {
+      font-weight: normal; 
+      font-size: 0.85em; 
+      color: #586069;
+    }
+    .static-comment-body {
+      font-size: 0.95em;
+    }
+  </style>
+
   <div class="static-giscuss-comments">
     <h3>Tartışmalar</h3>
     
-    <!-- JSON'daki anahtar ile eşleşmesi için başlığı oluşturuyoruz -->
-    {% assign giscuss_title = page.title | append: " · SonsuzUs" %}
+    {% assign title_new = page.title | append: " · SonsuzUs" %}
+    {% assign title_old = page.title | append: " | SonsuzUs Github" %}
+    {% assign title_plain = page.title %}
     
-    <!-- _data/giscuss_comments.json dosyasından ilgili başlığı çekiyoruz -->
-    {% assign comments = site.data.giscuss_comments[giscuss_title] %}
+    {% assign comments = site.data.giscuss_comments[title_new] %}
+    
+    {% if comments == nil or comments.size == 0 %}
+      {% assign comments = site.data.giscuss_comments[title_old] %}
+    {% endif %}
+
+    {% if comments == nil or comments.size == 0 %}
+      {% assign comments = site.data.giscuss_comments[title_plain] %}
+    {% endif %}
     
     {% if comments and comments.size > 0 %}
       {% for comment in comments %}
-        <div class="comment" style="margin-bottom: 20px; padding: 15px; border: 1px solid #e1e4e8; border-radius: 6px; background-color: #f6f8fa;">
-          <div class="comment-header" style="margin-bottom: 10px; font-weight: bold;">
-            {{ comment.author }} <span style="font-weight: normal; font-size: 0.85em; color: #586069;">- {{ comment.date | date: "%d.%m.%Y %H:%M" }}</span>
+        <!-- Liquid koşulunu sadece class atamak için kullanıyoruz -->
+        <div class="static-giscuss-comment {% if comment.is_reply %}is-reply{% endif %}">
+          <div class="static-comment-header">
+            {{ comment.author }} <span>- {{ comment.date | date: "%d.%m.%Y %H:%M" }}</span>
           </div>
-          <div class="comment-body" style="font-size: 0.95em;">
+          <div class="static-comment-body">
             {{ comment.body }}
           </div>
         </div>
