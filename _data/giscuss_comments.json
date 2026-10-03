@@ -1,0 +1,771 @@
+{
+  "Çekirdek Modülü Geliştirmeye Giriş: Kendi Linux Cihaz Sürücünü Yaz · SonsuzUs": [
+    {
+      "author": "FurkanYildirim1350",
+      "body": "<p dir=\"auto\">M=$(PWD) kullanımı bazı make sürümlerinde/farklı dizinlerden çağrıldığında patlayabilir, M=$(shell pwd) kullanmak daha garanti bir çözümdür. Ayrıca hedef satırlarında boşluk yerine mutlaka Tab kullanılması gerektiğini hatırlatmakta fayda var.</p>",
+      "date": "2026-10-03T06:49:47Z"
+    },
+    {
+      "author": "Hxle-M",
+      "body": "<p dir=\"auto\">\"Miscdevice (MISC_DYNAMIC_MINOR)\" unsurunu merak edip araştırdım. Normalde Linux'ta karakter cihazı oluştururken majör ve minör numara tanımlamak gerekiyormuş. miscdevice yapısı ise majör numarayı otomatik olarak 10 (Miscellaneous Device) seçiyor ve sistem boşta kalan bir minör numarayı cihaza kendisi atıyor. Bu sayede geliştiriciler cihaz numarası çakışmalarıyla uğraşmadan çok daha hızlı ve pratik bir şekilde sürücü yazabiliyor. Cihaza veri yazmayı sağlayan .write fonksiyonuna veya Secure Boot olan sistemlerde kendi yazdığımız .ko modülünü nasıl imzalayabileceğimize (kmodsign)değinirsen daha iyi olabilir.</p>",
+      "date": "2026-10-03T10:10:29Z"
+    }
+  ],
+  "Sosyal Mühendisliğin Bilişsel Sınırları: Phishing Neden Hâlâ İşe Yarıyor? · SonsuzUs": [
+    {
+      "author": "Burak2210",
+      "body": "<p dir=\"auto\">Bu yazıda aslında her ne kadar önleyici sistem olsa dahi eninde sonunda işin bireyin son kararında bittiğini anladım. Yeterince aciliyet veya otorite baskısı olduğunda insan irrasyonel davranıp somut uyarıları dahi görmezden gelebilir durumda, burada da yazıda da bahsedilen bir anlık geri çekilip olayı kontrol etmek en etkili önlemlerden biri haline geliyor. İş yerlerinde çalışanları bu durumlara karşı eğitmek için şirketin kendisinin çalışana phishing mailleri ilettiğini duymuştum, eğer çalışan tuzağa düşerse tıkladığı link şirketin phishingten koruma eğitimine yönlendiriyordu :). bu tür yöntemler de senede bir yapılan sunumlardan daha etkili çözümler oluşturuyor.</p>",
+      "date": "2026-10-03T10:07:59Z"
+    }
+  ],
+  "IoT Cihazlarında Botnet Saldırıları: Mirai Ağının Kodu Bize Ne Öğretti? · SonsuzUs": [
+    {
+      "author": "Hxle-M",
+      "body": "<p dir=\"auto\">Siber güvenlikte devasa tehditlerin her zaman karmaşık sistem açıklarından değil, bazen sadece unutulmuş varsayılan bir paroladan kaynaklanabileceğini Mirai örneğiyle mükemmel özetlemişsin. Yazıya eklediğin Python port tarama kodu ve matematiksel formüller konuyu çok güzel pekiştirmiş. Metinde bahsettiğin \"UPnP (Universal Plug and Play)\" kavramını merak edip araştırdım. UPnP, ağdaki cihazların (kamera, yazıcı, oyun konsolu) modemle konuşup kendileri için dışarıya otomatik port açmasını sağlayan bir kolaylık protokolüymüş. Ancak kullanıcı farkında olmadan modemde Telnet gibi riskli portları internete açabildiği için Mirai gibi botnet'lerin ekmeğine yağ sürüyor. Bu yüzden güvenlik uzmanları modemlerde UPnP'nin mutlaka kapatılmasını öneriyormuş. Yazıyı daha da zenginleştirmek istersen ufak bir öneri: Mirai'nin sadece açık aramakla kalmayıp, bulaştığı cihazdaki diğer rakip zararlı yazılımları temizleyerek cihazı tamamen kendine bağlaması (rekahet/rekabet boyutu) gibi ilginç bir detaya da tek cümleyle değinilirse metin tam anlamıyla dört dörtlük olur.</p>",
+      "date": "2026-10-03T10:07:24Z"
+    }
+  ],
+  "Tersine Mühendislikte Ghidra: Derlenmiş C Kodunun İzini Sürmek · SonsuzUs": [
+    {
+      "author": "yigit01L",
+      "body": "<p dir=\"auto\">Tersine mühendislik yaparak program kodunu geri çevirmek oyunlarda hile yazmak için de kullanılır. Oyunun içindeki verileri ve veri yapıları, değişimleri incelenerek hangi adreste hangi oyun verisi tutulduğu analiz edilir ve hile yazılımları bu adreslerdeki verileri değiştirmek üzere yazılır. Ayrıca Ghidra gibi yazılımlar kullanılarak tersine mühendislik yapmak bellek yönetimi, donanım-yazılım ilişkisi gibi konuları anlamak için en efektif yöntemlerden biri diye düşünüyorum.</p>",
+      "date": "2026-09-30T20:18:03Z"
+    },
+    {
+      "author": "Hxle-M",
+      "body": "<p dir=\"auto\">Tersine mühendisliği \"dijital olay yeri incelemesine\" benzetmen konuyu anlamayı çok kolaylaştırmış. Kodun neden birebir geri getirilemeyeceğini çok net özetlemişsin. Metinde geçen \"Strip edilmiş\" kavramını merak edip araştırdım. Yazılımcılar programı yayınlamadan önce bir nevi temizlik yapıp dosyadaki fonksiyon ve değişken isimlerini tamamen siliyorlarmış (strip işlemi). Bu yüzden Ghidra orijinal isimleri göremediği için FUN_00401120 gibi geçici isimler atamak zorunda kalıyormuş. Ufak bir geliştirme önerisi olarak; Ghidra'da sadece koda bakmak yerine programı çalıştırıp anlık izlediğimiz Debugger (dinamik analiz) kısmına da kısaca değinilirse metin çok daha eksiksiz olabilir.</p>",
+      "date": "2026-10-03T10:04:37Z"
+    }
+  ],
+  "CSS Houdini: Tarayıcının Çizim Motoruna JavaScript ile Dokunmak · SonsuzUs": [
+    {
+      "author": "kuzeyoncul",
+      "body": "<p dir=\"auto\">Houdini is very efficient, seemingly, it works lighter since we can do any visual effect lighter than using Javascript. But there might be some downsides to it since it might not work perfectly on every browser because they might not work with every API. Also if the code has heavy mathematical operations it might put a lot of weight on the processor.</p>",
+      "date": "2026-10-03T09:04:05Z"
+    }
+  ],
+  "İmposter Sendromunun Kodlara Etkisi: Aşırı Mühendislik Bir Savunma Mekanizması mı? · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Bu tür durumlar gerçek hayatta da çok yaygın karşılaştığımız durumlar.Mesela ingilizce dersinde bir öğretmen cevabı kısa olan bir soru sorduğunda ve kaldırdığı öğrencinin cevabı uzata uzata birçok kez aynı şeyi söyleyip yanıma gereksiz kelime ekleyip neredeyse aynı anlama gelen kelimelerle vurgulaması bunun en somut örneklerindendir.Ben bunu anlatırken aynısını yaptım.Böyle yapılması karşı tarafta sanki konuşanın daha üstün olduğu izlenimine yol açabilir ama aslında kısa ve öz cevaplar verebilmek yetenektir.</p>",
+      "date": "2026-10-03T08:30:00Z"
+    }
+  ],
+  "APIC Sahne Arkası: Çok Çekirdekli Sistemlerde Kesme Dağıtımı · SonsuzUs": [],
+  "FUSE ile Python Kullanarak Kendi Sanal Dosya Sisteminizi Yazın · SonsuzUs": [
+    {
+      "author": "FurkanYildirim1350",
+      "body": "<p dir=\"auto\">open metodunun sabit 0 dönmesi eşzamanlı okumalarda (concurrent reads) çakışmaya yol açabilir; her open çağrısında benzersiz bir fh üretip takibini yapmak daha sağlıklı bir yaklaşımdır.</p>",
+      "date": "2026-10-03T06:48:18Z"
+    }
+  ],
+  "Tip Sistemlerinin Evrimi: Weak Typing’den Dependent Type’lara · SonsuzUs": [
+    {
+      "author": "FurkanYildirim1350",
+      "body": "<p dir=\"auto\">Modern tip araştırmalarında (Koka, Eff, ya da Rust'ın borrow checker'ı ile sezilen bazı yönler) sadece verinin tipini değil, fonksiyonun yan etkilerini (veri tabanı okuma, hata fırlatma, bellek yönetimi vb.) de tip düzeyinde yöneten sistemler giderek önem kazanıyor.</p>",
+      "date": "2026-10-03T06:40:07Z"
+    }
+  ],
+  "Dağıtık Kilitler: Redis ve ZooKeeper ile Çakışmaları Yönetmek · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Ben bu yöntemin çevrimiçi alışverişlerde hayat kurtarıcı olduğuna inanıyorum.İndirim olduğunda sepete önceden ürün atan planlamış oluyor ama tam indirim anında atıp önceden ödeme yapmasına olanak sağlaması bu sistemin bence adaletli bir kısmını ön plana çıkartıyor.</p>",
+      "date": "2026-10-02T17:35:24Z"
+    }
+  ],
+  "Sıfır Güven Mimarisi: Ağdaki Herkese Yabancı Muamelesi Yapmak · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Yazı, Sıfır Güven sisteminin ağ güvenliğini nasıl daha güvenli hâle getirdiğini anlaşılır bir şekilde anlatıyor. Özellikle kullanıcıya sadece giriş yaparken değil, erişim sırasında da güvenlik kontrolleri uygulanması dikkatimi çekti.</p>",
+      "date": "2026-09-29T18:54:24Z"
+    },
+    {
+      "author": "yigit01L",
+      "body": "<p dir=\"auto\">Anlatılan sistem kullanıcıya yetki vermek için yalnızca en başta bir kez yapılan doğrulama değil oturum açık olduğunda sürekli yapılan bir doğrulama sistemidir. Bu doğrulama süreci için kimlik, cihaz, konum ve davranışlar incelenir ve anormallik tespit edildiğinde, risk arttığında, erişim isteği engellenebilir. Ve gerekirseek doğrulama istenir. Bu sistem sayesinde saldırganların ağda gezinebilmek için sadece hesapları ele geçirmesi yetmez ve güvenlik artırılır.</p>",
+      "date": "2026-09-29T20:08:34Z"
+    },
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Ben sıfır güvenlik sisteminin şirketler için kullanışlı ama normal sitelere konulmasının uğraştırıcı olduğunu düşünüyorum.Ama Dosyaların her güvenli düzenlemesinde gözden geçirilip kategorilere ayrılması güvenliği gerçekten de artırıyor.Sürekli güncellemesi bence çok avantajlı bir durum.</p>",
+      "date": "2026-10-02T17:13:47Z"
+    }
+  ],
+  "Federated Learning ve Diferansiyel Gizlilik: Veri Cihazdan Çıkmadan Model Eğitmek · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">telefonumun içinde boş bir yapay zeka modeli olduğunu bilmiyordum. umarım gerçekten de verileri çalmıyorlardır</p>",
+      "date": "2026-10-02T16:57:06Z"
+    }
+  ],
+  "Fast Inverse Square Root: Bir Sihirli Sayıyla 3B Grafikleri Hızlandırmak · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Fast inverse square root(kısaltarak yazacağı FISR diye)eskiden gerçekten de Önemli olduğunu görüyorum ama artık modern işlemciler bile FISR ile aynı hızda ve üstünde hesaplama yapabiliyorlar bu yüzden artık fazla mantıklı olduğunu düşünüyorum.Aynı zamanda Newton-Raphson kullanmanın sonuç hızını düşürmesi iyi bir şey değil üstüne üstlük her zaman sonuç kesin doğru değil,yaklaşık bir sonuç doğuruyor hesaplamaları o yüzden o da eksi bir nokta.Artık FISR kullanmak çok avantajlı değil gibi gözüküyor.</p>",
+      "date": "2026-10-02T16:33:12Z"
+    }
+  ],
+  "C++20 Concepts ile Şablon Hatalarını İnsan Diline Çevirmek · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Concepts'in yeri bilinerek kullanıldığınında gayer yararlı olduğunu düşünüyorum bizleri kod tekrarından kurtarır ve zaman kazandırır ama Küçük projelerde kullanılırsa kodu yazması, kullanması ve erkenden bile olsa hatanın fark edilmesinin  fazla bir değişiklik yaratması zaman kaybına yol açacaktır ve kod karmaşıklığı yaratıp düzenlenmezse her şey karışabilir.</p>",
+      "date": "2026-10-02T15:44:01Z"
+    }
+  ],
+  "Log Yönetiminde Yapılandırılmış Loglama: Metinden JSON'a Geçiş · SonsuzUs": [
+    {
+      "author": "Epus0gi",
+      "body": "<p dir=\"auto\">JSON şeklinde tutulan veriler eğer ki proje çok büyük ve fazla veri istiyorsa binary tarzında loglamalar yapılabilir. bir insan tarafından okunamasa da makine ile kolayca decode edilebiliyor.</p>",
+      "date": "2026-10-02T14:52:09Z"
+    }
+  ],
+  "Yapay Zekânın Yaratıcılık Sorunu: Bir Algoritma Gerçekten Özgün Olabilir mi? · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">yapay zekam kendisi hakkında yapılan bu konuyu şöyle yorumladı \"Bence harika bir analiz. Özgünlük sıfırdan yaratmak değil; var olanı yeni ve anlamlı bir şekilde birleştirmektir. Yapay zekâ sonsuz olasılık üretir, insan ise ona anlam ve değer katar. Yaratıcılık artık bu iki gücün ortaklığıdır.\" zaten ne desem yağ bal yapıyor</p>",
+      "date": "2026-10-02T14:34:49Z"
+    }
+  ],
+  "Isolation Forest ile Anomali Tespiti: Ormanda En Çabuk Yalnız Kalanı Bulmak · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">önceki okuduğum bir yazıda veri zehirlenmesi ve bu sorunun çözümü olduğundan bahsedilmiş. bu kadar içerik arasında çözümüne denk gelmeyi başardım.</p>",
+      "date": "2026-10-02T14:25:51Z"
+    }
+  ],
+  "Pekiştirmeli Öğrenme: Ödüllerle Strateji Öğrenen Ajanlar · SonsuzUs": [
+    {
+      "author": "Epus0gi",
+      "body": "<p dir=\"auto\">Ödüllü öğrenmede ajanlar bazı zamanlar bitirmesi gerek bir şeyde ufak ama daha çok kazanç getirecek bir yolu kaçırdığı an oradan ödül almadıkları için bir daha denemiyorlar. Bu, sonucun normalde olacağından daha yavaş gelmesine sebep olabiliyor.</p>\n<p dir=\"auto\">ör: Trackmania oyunundaki küçük ama avantaj sağlayan oyun hatalarını göremeyen ajanlar normalde yapılmış dünya rekorunu hiçbir şekilde geçemiyor.</p>",
+      "date": "2026-10-02T14:22:09Z"
+    }
+  ],
+  "Multi-Agent Reinforcement Learning: Kendi Aralarında Konuşan Yapay Zekâlar · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">1000 tane yz ajanının aynı minecraft dünyasına konulduğu bir video görmüştüm. kendi imparatorlukları, hiyearşileri ve düzenleri vardı. korkunç</p>",
+      "date": "2026-10-02T14:15:56Z"
+    }
+  ],
+  "Makine Öğrenmesinin Görünmez Tehdidi: Veri Zehirlenmesi Saldırıları · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">yani yapay zeka eğitimine veri sızdırsaydım muhtemelen belli bir sözcük şifresini söyleyince beni bedava premiuma geçirmesini sağlayacak bir şey yapardım</p>",
+      "date": "2026-10-02T14:03:49Z"
+    }
+  ],
+  "İşletim Sistemlerinde Buddy Bellek Yönetimi: RAM Nasıl Parsellenir? · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">ram in parçalanıp işleri küçülerek halletmesi çok iyi bir tasarrufmuş. bir de 1kb lara bölünüp (mesela) 17kb iş yükü gerektiren bir duruma 17 tanesi gitseydi ve kalanlar görevine devam edebilseydi ne güzel olurdu. işin cahili olarak yorum yapıyorum. yanlışım varsa düzeltin</p>",
+      "date": "2026-10-02T13:51:40Z"
+    }
+  ],
+  "Pass-the-Hash Saldırıları: Windows Ağlarında Parolayı Bilmeden İlerlemek · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">bu sitede de hep siber saldırıya dair konu açıyorum. işe yatkınlığım var herhalde :D. elinize sağlık parolanın nasıl şifrelendiğini ve windows un parolamızı bilmesinin bir güvenlik açığı oluşturup oluşturmadığını merak etmişliğim vardı.</p>",
+      "date": "2026-10-02T13:36:30Z"
+    }
+  ],
+  "Ransomware Şifreleme Mantığı: AES ve RSA ile Hibrit Şifreleme · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Yazı için teşekkür ederim. Bu yazıyı okuduktan sonra internetten biraz daha araştırma yaptım. Saldırganların sistemdeki dosyaların her birine geçici anahtar atadıklarını ve işleri bitince bunların silindiğini öğrendim. bu yöntem saldırıları daha da durdurulamaz yapıyor.</p>",
+      "date": "2026-10-02T13:23:27Z"
+    }
+  ],
+  "Python Basit Kod Örnekleri | SonsuzUs Github": [
+    {
+      "author": "kilhas31",
+      "body": "<p dir=\"auto\">Bu yazıdaki örnekler sayesinde pythonu yeni öğrenmeye başlayan kişiler için oldukça yaralı buldum.Yeni başlayan kişiler bu yazıdaki basit örneklerden istediğini seçebilir ve öğrenci notu hesaplama,basit hesap makinesi,kişinin bilgilerini alıp kısa bir yeterlilik formu gibi işe yarar projeler yapılabilir.</p>",
+      "date": "2026-10-01T16:16:36Z"
+    }
+  ],
+  "Python'da Metaclass'lar: Sınıfları Üreten Sınıfların Karanlık Dünyası · SonsuzUs": [
+    {
+      "author": "kilhas31",
+      "body": "<p dir=\"auto\">Bu yazıyı okurken metaclass kavramı ilk başta bana biraz karmaşık geldi. Sonradan sınıfları da nesne gibi düşününce konuyu daha iyi anlamaya başladım. Python’u yeni yeni öğreniyorum ve bu yazıya kadar sınıfları kontrol eden böyle bir mekanizma olduğunu bilmiyordum. Yazıyı okuduktan sonra metaclassların özellikle büyük ve karmaşık programlarda kullanılabileceğini düşündüm. Örneğin bir projede oluşturulan sınıfların belirli kurallara uyup uymadığını otomatik olarak kontrol eden basit bir sistem yapılabilir. Böyle bir projeyi denemek, metaclassların ne işe yaradığını daha iyi anlamamı sağlayabilir. Yazıyı genel olarak öğretici buldum ve konuyu daha fazla araştırmak istedim.</p>",
+      "date": "2026-10-01T16:04:34Z"
+    }
+  ],
+  "Struct'lar ile Veri Gruplama: Bellekte Düzenli Gerçek Dünya Modelleri · SonsuzUs": [
+    {
+      "author": "yigit01L",
+      "body": "<p dir=\"auto\">Structları ilk defa c dilinde görmüştüm. Bence günümüzdeki class yapılarının atası olarak kabul edebiliriz. Verileri ve değişkenleri gruplandırarak saklamak kodun karmaşasını azaltan bir davranıştır. Oyunlarda karakter verileri, sistemlerde kullanıcı verileri, fizik simülasyonlarında koordinatlar velocity değerleri ve maddelerin sahip olduğu büyüklük değerleri saklanırken oldukça kullanılan yapılardır. Yani aslında bir yazılım geliştirmek herkesin bilmesi gereken şeylerdir ve her türlü programda kullanılırlar. Java gibi oop dillerinde class yapıları daha fazla kullanılsa da c gibi daha az modern dillerde değeri artar. Ayrıca şunu da eklemek isterim. Structlarda class yapıları gibi fonksiyonlar kullanamayız ancak dışarıda oluşturduğumuz fonksiyonu gösteren bir pointerla fonksiyonları structlar içine yazabiliriz.</p>",
+      "date": "2026-10-01T14:33:48Z"
+    }
+  ],
+  "JWT Zafiyetleri: Algoritma Karmaşasından İmza Sahteciliğine · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">bence güzel bir sistem ama kullanılmamalı çünkü ekonomiyi çökertme ihtimalleri yüksek</p>",
+      "date": "2026-10-01T14:19:28Z"
+    }
+  ],
+  "Write-Ahead Log: Veritabanları Çöküşten Nasıl Sağ Çıkar? · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">WAL konusunu daha önce hiç bilmiyordum. Özellikle veritabanı çöktüğünde yapılan işlemlerin log sayesinde tekrar kontrol edilebilmesini öğrendim</p>",
+      "date": "2026-10-01T11:24:01Z"
+    }
+  ],
+  "Çarpışma Tespiti: İki Nesnenin Değdiğini Anlamanın Matematiği · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Çarpışma tespitinin sadece oyunlardaki basit bir özellik olduğunu düşünüyordum. Yazıyı okuyunca arkasında aslında koordinatlar ve matematiksel hesaplamalar olduğunu görmek ilgimi çekti.</p>",
+      "date": "2026-10-01T11:22:14Z"
+    }
+  ],
+  "Perlin Gürültüsüyle Prosedürel ve Sonsuz Dünyalar Üretmek · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Sadece birkaç sayı ve kuralla çok büyük ve doğal görünen dünyalar oluşturulabilmesi bana oldukça ilginç geldi.</p>",
+      "date": "2026-10-01T10:36:30Z"
+    }
+  ],
+  "Structural Typing ve Nominal Typing: “Neyi Biliyorsun?” mu “Kimsin?” mi? · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Structural ve nominal typing arasındaki farkı daha önce bilmiyordum. Özellikle TypeScript’te bir şeyin hangi sınıftan geldiğinden çok ne yapabildiğinin önemli olmasını öğrendim.</p>",
+      "date": "2026-10-01T10:32:26Z"
+    }
+  ],
+  "Memory-Mapped Files: Dosyalar Nasıl Bellekteymiş Gibi Davranır? · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Dosyanın tamamını RAM’e yüklemeden bellekteymiş gibi kullanılabilmesi bana oldukça ilginç geldi.</p>",
+      "date": "2026-10-01T10:24:02Z"
+    }
+  ],
+  "Out-of-Order Execution: İşlemci Program Sırasını Neden Bazen Umursamaz? · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">İşlemcinin yazılan komutları her zaman aynı sırayla çalıştırdığını düşünüyordum. Yazıyı okuyunca, aslında bağımsız işlemleri öne alarak zamanı daha iyi kullandığını öğrendim.</p>",
+      "date": "2026-10-01T09:42:39Z"
+    }
+  ],
+  "Database Indexing’in Anatomisi: İndeks Eklemek Neden Bazen Sistemi Yavaşlatır? · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">İndekslerin veritabanını her zaman hızlandırdığını duymuştum, fazla indeks eklemenin yazma işlemlerini de yavaşlatabileceğini öğrendim</p>",
+      "date": "2026-10-01T09:40:50Z"
+    }
+  ],
+  "ADC ve DAC: Gerçek Dünya ile Dijital Evren Arasındaki Köprü · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Yazıyı okuyunca günlük hayatta kullandığım telefon, mikrofon gibi cihazların aslında analog ve dijital dünya arasında nasıl bağlantı kurduğunu daha iyi anladım.</p>",
+      "date": "2026-10-01T09:39:12Z"
+    }
+  ],
+  "ACID Gerçekte Ne Anlama Geliyor? Veritabanları Neden Bu Kadar Katı? · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Yazıyı okuyunca özellikle para transferi gibi işlemlerde neden bu kuralların önemli olduğunu daha iyi anladım.</p>",
+      "date": "2026-10-01T09:34:56Z"
+    }
+  ],
+  "Malware Analizi: Şüpheli Yazılımları Sandbox Ortamında Güvenle İncelemek · SonsuzUs": [
+    {
+      "author": "yigit01L",
+      "body": "<p dir=\"auto\">İnternetten indirdiğimiz bir dosyanın güvenli olduğundan her zaman emin olamayız. Özellikle executable dosyaları bilgisayarımızda çalıştırmak tehlikeli olabilir. Bu yüzden bu dosyayı bizim bilgisayarımıza doğrudan erişebileceği bir bağlantı olmayan sanal bir makineye kurarak inceleyebilir ve yaptığı işlemleri bu şekilde takip edebiliriz. Bence dosyaları sanal makinede test etmek bir alışkanlık haline getirilmeli veya herkesin yapabileceği düzeyde basitleştirilmeli. Yazı, açıklayıcı bir dille yazılımları sandbox ortamında inceleme mantığını açıklamış.</p>",
+      "date": "2026-09-30T21:28:24Z"
+    }
+  ],
+  "Çember Modülasyonu ile Sonsuz Piyano Melodileri: Müzikal Markov Zinciri · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">besteciler ve müzisyenler için tekrarlı nakaratlar ve melodiler oluşturmak için bir uygulamaya dönüştürülebilir</p>",
+      "date": "2026-09-30T21:21:09Z"
+    }
+  ],
+  "Karıncaların yön bulma yeteneklerini inceleyen program | SonsuzUs Github": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">bu fikir sayesinde karıncaların rotalarını ve aktivitelerini inceleyebiliriz ayrıca karıncaların aldıkları rotaları bizim ulaşım yollarımıza yansıtarak günlük hayat ulaşım problemlerinin çözümü için kullanabiliriz</p>",
+      "date": "2026-09-30T21:09:49Z"
+    }
+  ],
+  "Yazılımın Karanlık Alışkanlıkları: God Object ve Spagetti Kodun Psikolojisi · SonsuzUs": [
+    {
+      "author": "yigit01L",
+      "body": "<p dir=\"auto\">Bireysel olarak geliştirilen küçük projelerde yazılan kodların yazılan kişi tarafından anlaşılması yeterli gibi düşünülür. Ancak bir başkasının okumayacağı kodların bile iç içe karmaşık döngüler, her şeyi tek if satırına sığdıran koşullu ifadeler ve tekrarlanan parçalar bulunduracak şekilde yazılması yanlış bir davranıştır. Daha sonra koda geri dönüldüğünde anlaşılamayabilir. Kalabalık grupların çalıştığı projelerde ise buna daha çok dikkat edilmesine rağmen yine de spagetti kodlarla karşılaşılabilir. Bir diğer sorun olan bir yapının çok fazla işlevinin olması da olmaması gereken bir durumdur. Ekip çalışmalarında bunlara dikkat edilmeli ve bu şekilde kod yazmak alışkanlık halkine getirilmemelidir. Yazı bu iki alışkanlığı ve çözüm yollarını açık ve net şekilde açıklamış. Ekip içinde çalışmaya adapte olmak için bunlara dikkat edilmesi gerektiğini düşünüyorum.</p>",
+      "date": "2026-09-30T21:03:32Z"
+    }
+  ],
+  "JavaScript ile Mantık Bulmacaları Çözücüleri: Tarayıcıda Adım Adım Algoritma Şovu · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">mantık bulmacaları içeren bir zeka oyununda ipucu sistemi için kullanılabilir</p>",
+      "date": "2026-09-30T21:01:01Z"
+    }
+  ],
+  "Ses Kartından Nota Tahminine: Fourier Tabanlı Akort Uygulaması · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">besteciler ve müzisyenler için güzel bir fikir olmuş. Bir parçayı çalarken bizi analiz edip ne kadar doğru olduğumuzu ölçen bir uygulama geliştirilebilir</p>",
+      "date": "2026-09-30T20:56:45Z"
+    }
+  ],
+  "JavaScript ile Tarayıcı Tabanlı Retro Oyunlar: Atari Ruhunu Canvas’a Taşımak · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">Retro oyunlarını yeniden javascript ile geliştirmek iyi bir fikir, tabanını beğendim.<br>\nOyun oluşturmak isteyenler için bu fikri kullanarak bir uygulama oluşturulursa ve bu retro oyunlarını o uygulama kapsamında nasıl yapıldığını öğretirse oyun tasarlamak isteyenler için iyi bir eğitim olur</p>",
+      "date": "2026-09-30T20:50:39Z"
+    }
+  ],
+  "copy-on-write: Kopyalamadan Kopya Olu%C5%9Fturman%C4%B1n Ak%C4%B1ll%C4%B1 Yolu %C2%B7 SonsuzUs": [
+    {
+      "author": "yigit01L",
+      "body": "<p dir=\"auto\">Çok net ve açıklayıcı bir anlatım olmuş. Sınırlı bellek alanı olduğu durumlarda \"Önce referans tut, gerekirse yer ayır\" felsefesi kullanmak kazançlı bir yöntem. Büyük bir veriyi kopyalayacağımız ve değiştirmeyeceğimiz zaman onun için büyük bir alan ayırmak yerine referansını tutarak alandan tasarruf ederiz. Yazı mantığı açık bir şekilde anlatmış. Veri kopyalarken optimize bir yöntem net bir şekilde açıklanmış.</p>",
+      "date": "2026-09-30T20:48:35Z"
+    }
+  ],
+  "Geriye İzleme ile N Vezir Problemi: Vezirleri Çarpıştırmadan Yerleştirmek · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">Bunu kullanarak güzel bir akıl oyunu uygulaması geliştirilebilir.</p>",
+      "date": "2026-09-30T20:44:24Z"
+    }
+  ],
+  "Sürü Zekâsı Simülasyonu: Boids ile Kuş ve Balık Sürüleri · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">Fikir doğa bilimciler ve kuş ve balıkları araştıranlar için çok yararlı. Göç ve benzeri olayları takip etmek için kullanılan bir uygulamaya dönüştürülebilir.</p>",
+      "date": "2026-09-30T20:38:30Z"
+    }
+  ],
+  "Trie ile Otomatik Tamamlama: Arama Kutularına Akıl Katmak · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">bence yazmaya çalıştığımız kelimeyi sıklıkla kullandığımız arama motorlarından daha isabetli bir şekilde tamamlayabilir. Kullanıcının verilerini takip ederek ilgilendiği şeyleri öne alarak yapılırsa daha isabetli tamamlamalar oluşturulabilir.</p>",
+      "date": "2026-09-30T20:34:51Z"
+    }
+  ],
+  "Kibrit Oyunu Projesi · SonsuzUs": [
+    {
+      "author": "sonsuzus",
+      "body": "<p dir=\"auto\">asalusliste.py paylaşılacaktır.</p>",
+      "date": "2025-06-02T13:23:45Z"
+    },
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">Güzel bir oyun fikri ama bence biraz karmaşık. Fakat asal sayı bilgimizi geliştirmek için yararlı olabilir</p>",
+      "date": "2026-09-30T20:21:18Z"
+    }
+  ],
+  "Fortran'ın Bilimsel Hesaplamadaki 70 Yıllık Direnci · SonsuzUs": [
+    {
+      "author": "yigit01L",
+      "body": "<p dir=\"auto\">Fortran dili hem hızı hem çözdüğü problemin güncelliği hem de birikmiş kodlarıyla birlikte bugün bile NASA gibi gelişmiş simülasyonların gerektiği yerlerde kullanılmaktadır. Günümüzde diğer low-level dillerle birlikte CERN, NASA gibi yerlerde, havacılık gibi alanlarda, yani fiziği merkeze almış yerlerde aktif olarak kullanılır. Yazı açıklayıcı ve anlaşılır bir şekilde Fortranın günümüzdeki yerini anlatmış</p>",
+      "date": "2026-09-30T20:02:45Z"
+    }
+  ],
+  "Python ile Matematiksel Ağırlıklı Otomatik Makale Özetleyici · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">Bu fikir bence çok iyi. Önemli kısımları işlevsel tekniklerle özetliyor bunun için TF-IDF ile kelime sıklığı ve nadirliğine bakıyor ayrıca kosinüs benzerliği gibi matematiksel yöntemler kullanıyor. Bence bu yazılım kullanılarak öğrencilere destek olacak bir özetleyici uygulaması oluşturulabilir veya bu yazılım ile bir yapay zeka geliştirilip sitelerde bunun özelliğinden yararlanılması sağlanabilir. Bu uygulama öğrencilere ve projeye hazırlananlara sunulursa büyük bir destek oluşturabilir.</p>",
+      "date": "2026-09-30T19:58:35Z"
+    }
+  ],
+  "Oyun Döngüsü Mimarisi: Kare Hızı ile Fiziği Senkronize Etmek · SonsuzUs": [
+    {
+      "author": "burakkenesari",
+      "body": "<p dir=\"auto\">Bence oyun döngülerinin gerçekten akıcı görünmesini sağlayan en önemli şey enterpolasyon. Çünkü her ne kadar cihazın iyi olsa da eğer ekranla fizik farklı Hzlerde çalışırsa yine de akıcı olmasını sağlayan şey enterpolasyon olur</p>",
+      "date": "2026-09-20T19:25:16Z"
+    },
+    {
+      "author": "AlptekinKece",
+      "body": "<p dir=\"auto\">Delta time oyun içi fiziğin ve tutarlığı sağladığı için oyunlarda kare hızı konusunda çok önemli</p>",
+      "date": "2026-09-30T18:39:46Z"
+    }
+  ],
+  "Bloom Filter: Bir Şeyin Kesinlikle Olmadığını Ucuza Söylemek · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Bir şeyin kesinlikle olmadığını çok az bellek kullanarak anlayabilmesi bence ilginç.</p>",
+      "date": "2026-09-30T09:32:37Z"
+    }
+  ],
+  "Database Replication: Aynı Veriyi Onlarca Sunucuda Nasıl Tutarlı Tutuyoruz? · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Database replication konusu ilk başta biraz karmaşık görünse de yazı sayesinde daha anlaşılır oldu.</p>",
+      "date": "2026-09-30T04:17:20Z"
+    }
+  ],
+  "Dinamik Programlamada Hız Sihri: Knuth Optimizasyonunun Sırları · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Knuth optimizasyonu bana ilk başta biraz karmaşık geldi ama yazı sayesinde mantığını daha iyi anladım.</p>",
+      "date": "2026-09-30T04:14:22Z"
+    }
+  ],
+  "Transfer Öğrenme ile Küçük Veriden Büyük Sonuçlar Çıkarmak · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Daha önce transfer öğrenmenin ne işe yaradığını bu kadar detaylı düşünmemiştim.</p>",
+      "date": "2026-09-30T04:11:35Z"
+    }
+  ],
+  "İşletim Sistemlerinde Page Cache: Disk Okumaları Neden Sandığımızdan Hızlıdır? · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Yazı page cache’in bilgisayarı nasıl hızlandırdığını basit bir şekilde anlatıyor. Özellikle aynı dosyayı ikinci kez açınca neden daha hızlı olduğunu öğrenmek hoşuma gitti.</p>",
+      "date": "2026-09-30T04:06:31Z"
+    }
+  ],
+  "Zero-Day Açıklarının Ekonomisi: Bir Bug Neden Milyon Dolar Eder? · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Yazı, zero-day açıklarının neden çok değerli olabildiğini ve fiyatlarının hangi faktörlere göre değiştiğini anlaşılır bir şekilde anlatıyor. Özellikle küçük bir yazılım hatasının doğru koşullarda neden çok büyük bir güvenlik riskine dönüşebileceğini öğrenmek ilgimi çekti.</p>",
+      "date": "2026-09-29T18:56:25Z"
+    },
+    {
+      "author": "yigit01L",
+      "body": "<p dir=\"auto\">Konuya son dönemlerde gündem olan hararetli konularından birisi yapay zeka ile de yaklaşılmalı diye düşünüyorum. Yapay zekayla birlikte zero-day açıklarının değerlerinde de değişim yaşanmalı. Eskiden bir zero-day açığını bulmak uzun süreler alırken bu süre yapay zeka sayesinde kısalmıştır ve bu tarz açıkların bulunup kapatılma olasılığı da yapay zeka sayesinde artmıştır. Keşfedilme riskinden doğan değer kaybı ve zero-day açıklarının bulunma hızının artması da zero-day açıklarının değerini aşağı yönde etkiler.</p>",
+      "date": "2026-09-29T20:44:26Z"
+    }
+  ],
+  "Kapı Kartından Sahte Klavyeye: RFID Kopyalama ve BadUSB Mekaniği · SonsuzUs": [
+    {
+      "author": "yigit01L",
+      "body": "<p dir=\"auto\">Birkaç yıl önce internette gezinirken bir şarj kablosu görmüştüm. Yazıyı okuyunca aklıma o geldi. Telefonumuzun şarjı bittiğinde tanımadığımız birinden istediğimiz şarj kablosunun bize ne zarar vereceğini kavrayamayabiliriz. Ancak standart USB şarj kablosunun plastik başlığında bulunan küçük boşluğa yerleştirilen mikrodenetleyici kendini telefonumuza bir klavye olarak tanıtıp BadUSB yöntemiyle önceden ayarlanmış tuş dizilimlerini telefonumuza gönderebilir. Bu sebeple başkalarından aldığımız şarj kablosuna (veya cihazımıza takacağımız herhangi bir usb bileşenine) şüpheyle yaklaşmalıyız.</p>",
+      "date": "2026-09-29T20:25:03Z"
+    }
+  ],
+  "UEFI Boot Sürecinin Anatomisi: Eski BIOS'un Karanlığından Çıkış · SonsuzUs": [
+    {
+      "author": "aligokalp122234",
+      "body": "<p dir=\"auto\">Yazı, bilgisayarın açılırken arka planda neler yaptığını ve BIOS’tan UEFI’ye neden geçildiğini anlaşılır bir şekilde anlatıyor. Özellikle Secure Boot’un bilgisayarın güvenli açılmasındaki rolünü öğrenmek ilgimi çekti.</p>",
+      "date": "2026-09-29T18:17:25Z"
+    }
+  ],
+  "Python’da Koşullu Durumlar: if-elif-else ile Akışı Yönetmek · SonsuzUs": [
+    {
+      "author": "AlptekinKece",
+      "body": "<p dir=\"auto\">If - Elif - Else komutları yazılımda çok temel bir mantığa sahip olduğu içim vazgeçilmez.<br>\nBu metinde de bu durum çok iyi anlatılmış</p>",
+      "date": "2026-09-29T17:58:07Z"
+    }
+  ],
+  "CUDA ile GPU Programlama: Ekran Kartını Hesaplama Motoruna Dönüştürmek · SonsuzUs": [
+    {
+      "author": "AlptekinKece",
+      "body": "<p dir=\"auto\">GPU’nun belirli şartlarda gerçekten bir işlemciden daha işlemci olabileceği gerçekten çok ilginç. Gelecek GPU tabanlı hesaplama yöntemlerinde yatıyor olabilir.</p>",
+      "date": "2026-09-29T17:50:39Z"
+    }
+  ],
+  "C++ STL ile Dinamik Veri Yapıları ve Hızlı Algoritmalar · SonsuzUs": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Bu yazıda STL'nin yalnızca hazır veri yapıları sunmadığını, doğru algoritmayla birlikte kullanıldığında performansı da önemli ölçüde artırabildiğini öğrendim. Özellikle sıralama, tekrarları temizleme ve ikili arama işlemlerinin tek bir örnekte gösterilmesi faydalıydı. Bu yöntemler, öğrenci notlarını veya büyük veri listelerini düzenleyen ve arama yapan programlarda kullanılabilir. Ayrıca her durumda en hızlı yöntemin değil, probleme uygun yöntemin seçilmesi gerektiğini anlamak önemliydi.</p>",
+      "date": "2026-09-27T11:29:05Z"
+    }
+  ],
+  "C++ Standart şablon kütüphanesi (STL) | SonsuzUs Github": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Bu yazıda C++ STL'nin birçok veri yapısını ve algoritmayı hazır olarak sunarak kod yazmayı kolaylaştırdığını öğrendim. STL kullanılarak sıralama, arama ve veri yönetimi işlemlerini daha kısa kodlarla gerçekleştiren projeler geliştirilebilir. Ayrıca tekrarlayıcıların farklı konteynerlerdeki verilere erişimi kolaylaştırması, kütüphanenin önemli bir özelliğiymiş.</p>",
+      "date": "2026-09-27T11:23:16Z"
+    }
+  ],
+  "Python Fotoğraf Üzerinde Yüz Algılama Programı | SonsuzUs Github": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Bu yazıda, yüz algılama işleminin yalnızca canlı kamera görüntülerinde değil, önceden çekilmiş fotoğraflarda da yapılabildiğini öğrendim. Yüzlerin tespit edilmesinden sonra her yüzün içinde ayrıca gözlerin aranması, görüntü işlemenin aşamalı olarak uygulanmasına güzel bir örnek olmuş. Bu yöntem kullanılarak fotoğraflardaki yüz ve gözleri otomatik olarak işaretleyen bir uygulama geliştirilebilir.</p>",
+      "date": "2026-09-27T11:22:05Z"
+    }
+  ],
+  "Python Kameradan Yüz Tanıma Programı | SonsuzUs Github": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Görüntülerin gri tonlara çevrilerek Haar Cascade yöntemiyle yüzlerin bulunması ilgimi çekti. Bu yöntem kullanılarak kameranın önündeki kişileri algılayan güvenlik veya etkileşimli uygulamalar geliştirilebilir. Ayrıca görüntü işleme konusuna başlamak için anlaşılır ve uygulanabilir bir örnek olduğunu düşünüyorum.</p>",
+      "date": "2026-09-27T11:20:59Z"
+    }
+  ],
+  "Mikrodenetleyiciler Arasında I2C ve SPI ile Güvenilir Seri Haberleşme · SonsuzUs": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Bu yazıda I2C ve SPI haberleşme protokollerinin farklı ihtiyaçlara göre nasıl kullanılabileceğini öğrendim. Daha önce robotikte karşılaştığım I2C konusunda benim için aydınlatıcı oldu. Bu protokoller kullanılarak birden fazla sensörden veri toplayan robotlar veya mikrodenetleyici tabanlı akıllı sistemler geliştirilebilir. Özellikle robotik projelerde doğru haberleşme yöntemini seçmenin önemli olduğunu düşünüyorum.</p>",
+      "date": "2026-09-27T11:10:45Z"
+    }
+  ],
+  "JavaScript ile Üç Boyutlu Veri Görselleştirme: Veriyi Ekrandan Taşırmak · SonsuzUs": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Bu yazıda üç boyutlu görselleştirmenin karmaşık verileri daha etkileşimli hâle getirmek için nasıl kullanılabileceğini öğrendim. Three.js kullanılarak farklı veri türlerini görselleştiren, kullanıcıların veriler üzerinde filtreleme yapabildiği bir web uygulaması geliştirilebilir. Bu tür projeler özellikle bilimsel verilerin veya büyük veri kümelerinin incelenmesinde faydalı olabilir.</p>",
+      "date": "2026-09-27T11:08:48Z"
+    }
+  ],
+  "SOLID Prensipleri: Nesne Yönelimli Tasarımda Sürdürülebilirliğin Beşli Formülü · SonsuzUs": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Bu yazıda SOLID prensiplerinin kodu daha düzenli hâle getirmenin yanı sıra ileride yeni özellikler eklemeyi de kolaylaştırdığını öğrendim. Özellikle tek sorumluluk ve açık/kapalı ilkeleri, büyük projelerde kodun yönetilmesini kolaylaştırabilecek yaklaşımlar. Bu prensipler, örneğin yeni ödeme yöntemleri veya özellikler eklenebilen uygulamalar geliştirirken kullanılabilir</p>",
+      "date": "2026-09-27T11:00:28Z"
+    }
+  ],
+  "Arayüzler: Nesne Yönelimli Tasarımın Görünmez Sözleşmeleri · SonsuzUs": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Bu yazıda arayüzlerin farklı sınıfların aynı sistem içinde uyumlu çalışmasını nasıl sağladığını öğrendim. Özellikle yeni bir bildirim servisi eklendiğinde mevcut kodu değiştirmeye gerek kalmaması, arayüzlerin sağladığı esnekliği gösteriyor. Bu yapı, farklı ödeme veya bildirim yöntemlerinin kullanılabildiği uygulamalar geliştirirken oldukça faydalı olabilir. Ayrıca projelerde kodun daha kolay test edilmesini ve sonradan yeni özellikler eklenmesini sağlayabilir.</p>",
+      "date": "2026-09-27T10:40:15Z"
+    }
+  ],
+  "Üretken Algoritmalarla Labirent Tasarımı: DFS ve Prim ile Oyun Dünyaları Kurmak · SonsuzUs": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Bu yazıda DFS ve Prim algoritmalarının farklı labirent tasarımları oluşturmak için kullanılabilmesi ilgimi çekti. Özellikle bu iki algoritmanın oluşturduğu labirentlerin oyun deneyimini nasıl değiştirdiğini görmek güzeldi. Bu yöntemler kullanılarak her oynanışta farklı haritalar sunan bir oyun geliştirilebilir. Ayrıca labirentlerin zorluk seviyesini yol uzunluğuna göre ayarlamak da farklı proje fikirleri için kullanılabilir.</p>",
+      "date": "2026-09-27T10:31:20Z"
+    }
+  ],
+  "JavaScript ve NFC Etkileşimi: Web NFC ile Cebe Dokunan Uygulamalar · SonsuzUs": [
+    {
+      "author": "burakkenesari",
+      "body": "<p dir=\"auto\">Hem güvenlik hem yapılabilecek ürünlerin genişliği hem de kolaylığı ile bence aralarından  en iyisi NFC. Nfcyi ödeme ortamı olarak zaten oldukça fazla bir şekilde kullanıyoruz. Cloud sisteminde yer alan dosyaları nfcyi okutarak ulaşma ve indirme işleminden yararlanabiliriz. Zaten internet var başka iletişim yollarından da o dosyayı karşımızdakine kolayca iletiriz diyorsanız bence yanılıyorsunuz çünkü zaten yakınında olan bir kişiye dosyalarını ulaştırmanın en mantıklı yolu nfc tabii uzaklık çoksa internet üzerinden iletişim daha mantıklı. Bu dediğim sadece bir örneği nfc çok ucu açık bir teknoloji. BU teknolojiyle özellikle ödeme, haberleşme ve iletişim alanında 'telefondan telefona kişi aktarımı' gibi bir sürü proje yapılabilir. Bu alan da dikkat edilmesi gerekilen iki şeyde okuttuğunuz cihaz, panel v.b. güvenilirliği ve yakınlarda manyetik alanı etkileyen bir maddenin olmayışıdır</p>",
+      "date": "2026-09-26T12:04:24Z"
+    }
+  ],
+  "Kodlamada Siper Etkisi: Ekipler Aynı Projede, Ama Farklı Dünyalarda · SonsuzUs": [
+    {
+      "author": "KayraMertAydin",
+      "body": "<p dir=\"auto\">Bu etkiyi kaldırmak özellikle büyük ve kapsamlı projeler için çok önemlidir çünkü uzun emeklerden sonra birbirine uymayan parçalarla dolu bir proje hiçbir anlam ifade etmez ve proje değer taşımaz. Bu yüzden daha baştan bir plan yaparak tüm ekiplerin doğru bir şekilde ilerlemesi amaçlanmalıdır.</p>",
+      "date": "2026-09-26T11:08:36Z"
+    }
+  ],
+  "Rekabetçi Programcı Oyun Teorisi · SonsuzUs": [
+    {
+      "author": "Alitemir11",
+      "body": "<p dir=\"auto\">Nim çok ilginç bir oyun çok fazla değişik metod ve değişik tür var yazı da çok güzel hazırlanmış çok güzel akıyor fakat resim eklense çok daha kolay anlardım. Aynı zamanda anlamadığım birkaç şey vardı ama nim oyunuyla ilgilenmek istiyorum.</p>",
+      "date": "2026-09-26T10:45:37Z"
+    }
+  ],
+  "Contrastive Learning ve SimCLR: Etiketsiz Görsellerden Benzerlik Öğrenmek · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">SimCLR'nin çalışma şekli, bana canlıların doğduklarından itibaren dünyayı yavaş yavaş öğrenmesi ve onları tanımaya başlayıp sınıflandırmasını andırıyor. Çünkü bizler de küçükken aynı SimCLR gibi nesneleri bir çok farklı açıdan ve renkte göre göre uzaktan yakından onlarca kez görerek gruplara ayırmaya başlamıştık .Biz neredeyse aynı şekilde onları ilk sınıflandırıp sonradan çevremizden öğrendiğimiz isimlerle \"etiketledik\" böylece onları insanlara açıklarken daha kısa üstünde durmamız gerekir.<br>\nBence kısa bile olsa 2N'nin tanımını yazarsanız iyi olurdu ama yine de bazı şeylerin üstüne durulmaması insanı meraklandırıyor ve araştırmaya yönlendiriyor, zahmetli olsa da tatmin edici oluyor.</p>",
+      "date": "2026-09-26T10:44:08Z"
+    }
+  ],
+  "Makine Çevirisinde BLEU Skoru Bizi Kandırıyor mu? · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">BLEU kullanışlı dursa da ben gerçek bir çıkarım veya cevap için COMET'ın eğitidildiği verileri sürekli arttıracak bir kod yazarak fazlalıkla iyi değerlendirmeler elde edebileceğimizi düşünüyorum. BLEU'deki BP hakkında ise bence burada biraz daha açıklanabilirdi çünkü çok kısa dediğinin kriterlerini öğrenmek isterdim açıkçası. Mesela çok uzun bir cümle var diyelim ve Türkçedeki karşılığa da gerçekten kısa. Bu durumda anlamı tamamen ifade etse bile kısa olsa bile kısalık cezası alır mı? Aynı zamanda n-gramı biraz daha açılarsanız sevinirim cümleler vermeniz bilmeyen birinin anlamasında daha etkili olurdu.</p>\n<p dir=\"auto\">BLEU ile COMET'ın birleşimi olan hem anlamsal olarak bakan hem de sahip olduğu verileri karşılaştıran bir  çeviri asistanı çok daha avantajlı olabilir.</p>",
+      "date": "2026-09-26T10:17:43Z"
+    }
+  ],
+  "Dijital Karıncalar İş Başında: Çok Ajanlı Sistemlerde Sürü Zekâsı · SonsuzUs": [
+    {
+      "author": "burakkenesari",
+      "body": "<p dir=\"auto\">Basit kurallara uyan tekil ajanlar birleşerek bazı konularda merkezden yönetimden daha iyi bir yönetim biçimi oluşturması çok mantıklı. Bunu da karıncalardan örnek vererek anlatmak en iyisi</p>",
+      "date": "2026-09-26T09:37:19Z"
+    }
+  ],
+  "Nim Dili: Python Sözdizimiyle C Hızı Vaadi Gerçek mi? · SonsuzUs": [
+    {
+      "author": "burakkenesari",
+      "body": "<p dir=\"auto\">Nim pyhton'a benzer kodu C kadar olmasa da hızlandırarak vaadini yerine getiriyor. Bize de kullanılabilen tamamen farklı bir dil olmasa da yeni bir dil sunuyor</p>",
+      "date": "2026-09-26T09:31:24Z"
+    }
+  ],
+  "WebAssembly ile Tarayıcıda Native Hıza Yaklaşmak · SonsuzUs": [
+    {
+      "author": "burakkenesari",
+      "body": "<p dir=\"auto\">WASM tarayıcıda Javascriptle beraber zor işlerde C/C++/Rust gibi dillerinde kullanılmasını sağlayan bir iletişim aracı gibi çalışıp tarayıcı performansını arttırıyor</p>",
+      "date": "2026-09-26T09:21:11Z"
+    }
+  ],
+  "Trie Üzerinde XOR Maksimizasyonu: Bitwise Aramanın Gücü · SonsuzUs": [
+    {
+      "author": "burakkenesari",
+      "body": "<p dir=\"auto\">Trie ve XOR konularını daha önce çok bilmiyordum. Yazıyı okurken özellikle sayıların bitlerine bakarak en uygun sonucu bulma fikri ilgimi çekti. İlk başta biraz karmaşık görünse de Trie yapısının aramayı nasıl hızlandırdığını anlamak güzel oldu. Yazılım konusunda neredeyse yeni olduğum için her kısmını tam anlamasam da konu hakkında temel bir fikir edinmiş oldum.</p>",
+      "date": "2026-09-26T07:28:14Z"
+    }
+  ],
+  "GNN ile Sosyal Ağların Gizli Topluluklarını Keşfetmek · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">GNN'in tanışmak ya da tanışıp daha çok bilgi edinmek istediğimiz kişiler hakkında bize gerçek ile ilişki bilgiler vermesi bizim için önemli.Kendisi kesin bir şekilde doğru olacak olmasa da yüzeysel olarak sosyal bağlantıları hakkında yorum yapabilme kapasitemizi arttırır.</p>",
+      "date": "2026-09-25T21:42:35Z"
+    }
+  ],
+  "VAE ve GAN: Sentetik Veri Üretiminde İki Farklı Felsefe · SonsuzUs": [
+    {
+      "author": "burakkenesari",
+      "body": "<p dir=\"auto\">Yapay zekaya yazdığımız promtu daha önce hiç yapılmamış bile olsa onu gerçekçi veya inanılır yapmasını sağlayan iki çeşidi var. Ve bence bunlardan benim en beğendiğim VAE çünkü o taklit değil gerçekciliği önemseyerek hazırlıyor</p>",
+      "date": "2026-09-25T19:31:24Z"
+    },
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">GAN kullanmak bence çok iyi bir şey değil insanın yaratıcılığını körelttiğini düşünüyorum ama konu VAE'ye gelince kendisinin bazı konularda aşırıya kaçmadan kullanıldığında iyi olduğunu düşünüyorum.Mesela yapay zekâ kullanıp gerçeğe yakın bir fotoğraf oluşturmanın ona verilecek bir iş olmaması gerektiğini düşünüyorum ama mesela tıp alanında kullanılacak ise faydası çoktur.</p>",
+      "date": "2026-09-25T21:25:19Z"
+    }
+  ],
+  "Programlama Dilleri ve Sapir-Whorf: Python Gibi Mi Düşünüyoruz? · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Bu konu dünya çapında milletlerin yada farklı insanlarin bir durum karşındaki tepkilere benzer.Aslında bu yazı herkesin bir durum,konu ve sorun düşünce ve tepkilerini kapsıyor.Bu yazı o yüzden sadece program dilleri hakkında değil insanlığın içinde gözlemleyebileceğimiz olayları da kapsıyor bence.</p>",
+      "date": "2026-09-25T21:07:07Z"
+    }
+  ],
+  "Circuit Breaker Pattern: Çöken Servisin Sistemi Peşinden Sürüklemesini Önlemek · SonsuzUs": [
+    {
+      "author": "lal1702",
+      "body": "<p dir=\"auto\">Bu iyiymiş. Sistemdeki open ve closed elektrik devresinde anahtarın açık ve kapalı olması gibi. Sadece hata oranına odaklanılmaması iyi.</p>",
+      "date": "2026-09-24T13:32:03Z"
+    },
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Circuit Breaker sistemin çöküşünü engellemekte bence çok büyük bir öneme sahip Mesela bu sistemin benzerleri oyunlarda kullanıyor ve uygulamadan atılmayı önlüyor.Ama bazı oyun sistemlerinin çok yoğun olduğu durumlarda bir süre sonra sizi uygulama dışı ediyor.Circuit Breaker'ın bunu önlemesi ve kısa bir süre içinde geri dönüt vermesi güzel.</p>",
+      "date": "2026-09-25T20:37:42Z"
+    }
+  ],
+  "cqrs: Okuma ve Yazma Modellerini Neden Ay%C4%B1r%C4%B1yoruz?+%C2%B7+SonsuzUs=": [
+    {
+      "author": "MASahin223",
+      "body": "<p dir=\"auto\">CQRS'in verimliliğini çok beğendiğimi söyleyebilirim. Kaynakları verimli ve hakkaniyetli kullanmanın güzel bir yolu.</p>",
+      "date": "2026-09-24T16:15:07Z"
+    }
+  ],
+  "Self-Supervised Learning: Yapay Zekânın Kendi Etiketini Üretme Sanatı · SonsuzUs": [
+    {
+      "author": "burakkenesari",
+      "body": "<p dir=\"auto\">Yapay zekanın çok hızlı bir şekilde bu kadar şeyi insanlardan öğrenmesi imkansız gibi bir şey gibi geliyordu. Zaten öyleymiş ve yapay zekanın kendi kendine öğrenme sistemi gerçekten hayran kalınacak bir şey</p>",
+      "date": "2026-09-25T19:24:27Z"
+    }
+  ],
+  "Veri Temizliği Maliyeti: Makine Öğrenmesinin Görünmeyen Faturası · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Veri temizleme,hatalı ve eksik bilgileri düzenleyerek veriyi daha güvenli hâle getirmesi bence çok yararlı.Bu demektir ki üst düzey sistemlerin kullanılmasının yanı sıra düzen de önemlidir.</p>",
+      "date": "2026-09-25T15:57:45Z"
+    }
+  ],
+  "Fibonacci Heap: Öncelik Kuyruklarında Teorik Hızın Sırrı · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Bence Fibonacci Heap İlk bakışta çok kullanışlı gözüküyor.İlk başlarda az maliyetli olması ve sonradan büyük bir miktar maliyete sahip olması şirketler için avantajlı olacaktır.Ama kişisel kullanımda binary Heap daha yararlı gözüküyor</p>",
+      "date": "2026-09-25T14:53:52Z"
+    }
+  ],
+  "Rekabetçi Programlama: Zihinsel Spor mu, Hız Tuzağı mı? · SonsuzUs": [
+    {
+      "author": "alicinar11",
+      "body": "<p dir=\"auto\">Yazı, rekabetçi programlamanın avantajlarını ve dezavantajlarını çok net bir şekilde ortaya koymuş. Algoritma mantığını geliştirme konusundaki faydaları gerçekten paha biçilemez. Ancak \"hız tuzağı\" bölümünde bahsedilen okunabilirlik ve takım çalışması sorunları, yazılım sektöründe sıkça karşımıza çıkıyor.</p>",
+      "date": "2026-09-19T13:02:19Z"
+    },
+    {
+      "author": "Ersan0102",
+      "body": "<p dir=\"auto\">Burada düşünmemiz gereken şey yarışmacının kafa yapısı. Burada kendini verebileceği 3 temel şey var: kalan süresi, rakibi ve kodu. Bunların hepsinin artıları ve eksileri var. Eğer kalan süresine odaklanırsa yazacağı kodu daha büyük bir stres altında yazar ve durum başarılı bir kod yazma heyecanından kodu bitirme korkusuna dönüşür. Eğer rakibine/rakiplerine/olası rakiplerine odaklanırsa direk kendini o yetersizlik, bitirme korkusu ve stres ağı altında kaybedecektir. Bütün odapğını koduna yıkarsa da zamanını düşünemeyecektir ve bu herhangi bir sıralamada onu zaman açısından yapılacak bir değerlendirmede düşürür. Kişisel pratik olarak veya arkadaşlarla alıştırma yapmak için güzel bir fikir fakat deneyimsizce böyle bir olimpiyata atılmaya çalışan biri için kötü bir deneyim, hatta beyninde kodlamayla ilgili kötü bağlar oluşturabilir(sağlıksız :( )</p>",
+      "date": "2026-09-25T14:47:46Z"
+    }
+  ],
+  "A* ile Robotik Yol Planlama: Engellerden Kaçan En Kısa Rotayı Bulmak · SonsuzUs": [
+    {
+      "author": "tolga0102",
+      "body": "<p dir=\"auto\">Drone algoritmalarında da a*dan faydalanılıyor. Mantığını bilmesem de İHA takımlarından aşina olduğum bir kavramdı. Bu yazı arkasında yatan mantığı anlamama katkı sağladı. Bir yerden bir yere gidecek pek çok araç projesinde kullanılabilecek bir algoritma.</p>",
+      "date": "2026-09-25T14:46:01Z"
+    }
+  ],
+  "Türkçe Sator Kareleri | SonsuzUs Github": [
+    {
+      "author": "sonsuzus",
+      "body": "<p dir=\"auto\">Türkçe Sator kareleri ve türkçe veri tabanı için güzel bir kaynak.</p>",
+      "date": "2025-08-27T10:00:03Z"
+    },
+    {
+      "author": "kuday10",
+      "body": "<p dir=\"auto\">Bu çalışmayı bir sonraki adımda backtracking ve prefix araması kullanarak daha verimli hâle getirmek mümkün. Ayrıca farklı boyutlardaki Sator kareleri için çalışma sürelerini karşılaştırarak algoritmanın performansını da inceleyebiliriz.</p>",
+      "date": "2026-09-25T14:36:32Z"
+    }
+  ],
+  "GAN’ler: Sahtekâr ile Dedektifin Yapay Zekâ Düellosu · SonsuzUs": [
+    {
+      "author": "kuday10",
+      "body": "<p dir=\"auto\">GAN’lerin çalışma mantığı, üretici ve ayırt edici modellerin nasıl birbirini geliştirdiği daha basit bir örnek üzerinden anlatılabilir. Ayrıca GAN’lerin günümüzde görüntü üretimi dışında hangi alanlarda kullanıldığına dair örnekler eklenerek konu daha somut hale getirilebilir  örneğin yüz fotoğrafı üreten bir modelin sahte görüntüler oluşturarak ayırt edici modeli nasıl eğittiği gösterilebilir. Ayrıca oyunlarda karakter üretimi, fotoğraf iyileştirme ve eksik görüntülerin tamamlanması gibi gerçek kullanım alanlarından örnekler verilerek konu daha anlaşılır hâle getirilebilir.</p>",
+      "date": "2026-09-25T14:34:59Z"
+    }
+  ],
+  "Algoritmik Önyargıyı Satranç Metaforuyla Anlamak: Kurallar Adil, Sonuç Neden Değil? · SonsuzUs": [
+    {
+      "author": "dilaprenseselaprenses-coder",
+      "body": "<p dir=\"auto\">Bu çalışma toplumdaki yanlış anlaşılma olan \"eşitlik ve adalet aynı şeydir.\"ifadesini çok güzel bir şekilde yorumlayarak aslında ikisinin de çok farklı şeyler olduğunu satranç üzerinden ortaya koymuş.aslında bu oyunu kullanarak bu konuyu insanlara aktararak onları bilinçlendirmeyi daha etkili bir hale getirmiş.</p>",
+      "date": "2026-09-25T14:30:02Z"
+    }
+  ],
+  "Persistent Segment Tree ile Zamanda Geriye Giden Dizi Sorguları · SonsuzUs": [
+    {
+      "author": "selcoknaz22-hash",
+      "body": "<p dir=\"auto\">Tarama çizgisi (sweep line) tekniğiyle 2D alanı dikey şeritlere bölüp 1D aralık problemine dönüştürme fikri harika anlatılmış. Kodda x koordinatları taranırken y üzerindeki örtüşmeyi count &gt;= 2 kontrolüyle bulma mantığı çok temiz.<br>\n​Yalnız takıldığım yeri araştırırken şunu fark ettim: Kod her şeritte y aralıklarını baştan sıraladığı için O(n^2 \\log n) karmaşıklığa ulaşıyor. Büyük veri setlerinde bu yapıyı Segment Tree ile O(n \\log n) seviyesine çekme mantığını araştırdım; y koordinatlarını sıkıştırıp ağaç üzerinde kapsama sayısını güncellemek performansı inanılmaz artırıyor. Teoriyi kodla birleştirmek açısından efsane bir yazı olmuş, emeğinize sağlık.</p>",
+      "date": "2026-09-25T14:06:02Z"
+    },
+    {
+      "author": "kuday10",
+      "body": "<p dir=\"auto\">yazıyı Persistent Segment Tree’nin neden gerekli olduğunu daha küçük bir örnek üzerinden göstererek ve normal Segment Tree ile performans farkını karşılaştırarak geliştirebilir. Ayrıca farklı güncelleme ve sorgu senaryolarında zaman karmaşıklığını ölçmek, yöntemin avantajlarını daha net ortaya koyacaktır.</p>",
+      "date": "2026-09-25T14:28:44Z"
+    }
+  ],
+  "Yapay Zekâda Ölçek Yasaları: Daha Büyük Model Her Zaman Daha Akıllı mı? · SonsuzUs": [
+    {
+      "author": "Ersan0102",
+      "body": "<p dir=\"auto\">Asıl olay modelin eğitiminde. Bu tamamen şunun gibi: 70 IQ'lu fakat elinin altında bir telefon olan bir çocuk ve 120 IQ'lu fakat hayatında kütüphane bile görmemiş bir taşra çocuğu. Tabii ki 70 IQ'lu çocuk daha fazla bilgiye sahip fakat olay düşünce kabiliyetinde ve o bilgiyi kullanmayı bilmekte. Mesela -sanatta AI kullanılmasını etik bulmasam da- SUNO AI ve ChatGPT örneğini verelim. Kesinlikle ChatGPT'nin veri tabanı daha büyük ve daha büyük bir LLM. Fakat SUNO AI daha küçük ve müzik üstüne yapılmış bir uygulamadır. Bu yüzden SUNO'nun daha iyi besteler yazdığını açık ve nesnel bir şekilde gözlemleyebilir ve söyleyebiliriz.</p>",
+      "date": "2026-09-25T14:28:23Z"
+    }
+  ],
+  "Framework Koşu Bandından İnmek: Yazılımcılarda Tükenmişlik · SonsuzUs": [
+    {
+      "author": "kuday10",
+      "body": "<p dir=\"auto\">yazıda tükenmişliğin nedenlerinin yanında  yazılımcıların motivasyonunu koruyabilmesi için uygulanabilecek günlük alışkanlıklar ve çalışma yöntemleri de eklenebilir. Ayrıca farklı şirketlerin çalışan motivasyonu için uyguladığı etkinliklerden örnekler verilerek konu daha somut hale getirilebilir</p>",
+      "date": "2026-09-25T14:24:35Z"
+    }
+  ],
+  "Mutation Testing: Testleriniz Gerçekten Güçlü mü, Yoksa Sadece Yeşil mi? · SonsuzUs": [
+    {
+      "author": "burakkenesari",
+      "body": "<p dir=\"auto\">Testlerin yeşil olması her zaman yeterli değilmiş. Mutation testing’in, testlerin gerçekten hataları yakalayıp yakalayamadığını ölçmesi bence çok güzel bir yaklaşım. Özellikle yakalanmayan mutasyonları inceleme kısmı oldukça faydalı görünüyor.</p>",
+      "date": "2026-09-24T15:06:22Z"
+    },
+    {
+      "author": "Epus0gi",
+      "body": "<p dir=\"auto\">Bir kod dizisinde yapılacak testlerin artık yapay zeka tarafından yapılabileceğini de biliyoruz, fakat yapay zekanın yaptığı testlerin doğruluğu da şüphe ile yaklaşılıyor. Bu yüzden yapay zekanın bizim kodumuz için oluşturduğu teste mutation testing yaparak yapay zekanın nerede yanlış yada eksik bir test uyguladığını da görebiliriz. Konuyu yapay zekaya bağlamak istedim de :D</p>",
+      "date": "2026-09-25T14:24:03Z"
+    }
+  ],
+  "PWM ile Motor Hızı ve LED Parlaklığı Kontrolü · SonsuzUs": [
+    {
+      "author": "necoguvo",
+      "body": "<p dir=\"auto\">Görsellerle birlikte güzel bi anlatım olmuş eline sağlık.</p>",
+      "date": "2026-09-24T13:47:24Z"
+    },
+    {
+      "author": "MASahin223",
+      "body": "<p dir=\"auto\">Analog ile yüz göz olmak yerine PWM ile işi direkt çözmek gerçekten rahat.</p>",
+      "date": "2026-09-24T16:44:50Z"
+    },
+    {
+      "author": "Ersan0102",
+      "body": "<p dir=\"auto\">PMW'nun düşük frekansta ısı kontrolü ve düşük hız görevli brushless DC motorlarda kullanıldığını duymuştum fakat sağlanan güç/elektrik oranının nasıl ayarlandığını bilmiyordum. Ama herhangi bir ledin ışığının gidip geldiğini gördüğümüzde zaten o düşük frekansın etkisini yani aç/kapa döngüsünü görebiliyoruz, sadece nedenini bilmiyoruz. Tinkercad'in Arduino atölyesinde yapılıp gözlemlenebilecek bir şey, led ve motor frekans ayar kodu bize gönderide verilmiş.</p>",
+      "date": "2026-09-25T14:22:35Z"
+    }
+  ],
+  "Sudoku Üreticilerinde Backtracking: Simetrik, Benzersiz ve Ayarlanabilir Bulmacalar · SonsuzUs": [
+    {
+      "author": "kuday10",
+      "body": "<p dir=\"auto\">Sudoku üreticisine farklı zorluk seviyeleri ve oyuncunun tercih edebileceği farklı çözüm yaklaşımları eklenebilir. Ayrıca üretilen bulmacaların zorluk derecesini otomatik olarak hesaplayarak daha dengeli ve kişiselleştirilmiş Sudoku’lar oluşturmak mümkün.</p>",
+      "date": "2026-09-25T14:13:42Z"
+    }
+  ],
+  "FFT ile Dev Sayıları O(N log N) Sürede Çarpmak · SonsuzUs": [
+    {
+      "author": "ihsanenescetinkaya-spec",
+      "body": "<p dir=\"auto\">Makalenin güçlü yönlerinden biri, FFT’nin dev sayıları çarpmada neden kullanıldığını uzun çarpma ve Karatsuba yöntemiyle karşılaştırarak açıklamasıdır. Sayıların polinoma dönüştürülmesi, konvolüsyonun noktasal çarpıma çevrilmesi ve birim köklerin kullanılması adım adım anlatılmış; ayrıca Python kodu verilerek teorik kısmın uygulamayla bağlantısı kurulmuştur. Kayan nokta hatalarına ve NTT gibi daha güvenilir alternatiflere değinilmesi de makalenin teknik açıdan kapsamını artırıyor. Makalenin geliştirilebilecek yönlerinden biri, FFT’nin sayıları nasıl gerçekten çarptığını küçük bir örnek üzerinden göstermemesidir. Örneğin 12 ve 34 sayıları polinoma dönüştürülüp konvolüsyon katsayıları tek tek hesaplanarak 408 sonucuna nasıl ulaşıldığı gösterilebilirdi. Ayrıca karmaşık sayıların ve birim köklerin neden gerekli olduğunu göstermek için küçük bir geometrik çizim eklenmesi, özellikle FFT’nin çalışma mantığını ilk kez öğrenenler için konuyu daha anlaşılır hâle getirebilirdi.</p>",
+      "date": "2026-09-25T14:09:43Z"
+    }
+  ],
+  "Min-Cost Max-Flow: Kapasite ve Maliyeti Aynı Anda Optimize Etmek · SonsuzUs": [
+    {
+      "author": "ihsanenescetinkaya-spec",
+      "body": "<p dir=\"auto\">Makalenin güçlü yönlerinden biri, Min-Cost Max-Flow problemini kapasite ve maliyet kavramlarını birlikte ele alarak açıklaması ve bu iki hedef arasındaki farkı tabloyla göstermesidir. Artık ağın neden gerekli olduğu, ters kenarların önceki kararları düzeltmeye nasıl imkân verdiği ve SPFA tabanlı Python uygulamasının adım adım açıklanması makalenin hem teorik hem de uygulamalı yönünü güçlendiriyor. Ayrıca Bellman-Ford, Dijkstra ve potansiyel yöntemi gibi farklı yaklaşımlara değinilmesi konunun kapsamını genişletiyor. Makalenin geliştirilebilecek yönlerinden biri, algoritmanın gerçek bir örnek üzerinde baştan sona uygulanmamasıdır. Örneğin üç depo ve birkaç mağazadan oluşan küçük bir dağıtım ağı oluşturulup her yolun kapasitesi ve taşıma maliyeti verilerek algoritmanın hangi yolları seçtiği ve toplam maliyetin nasıl oluştuğu gösterilebilirdi. Ayrıca artık ağdaki ters kenarların önceki bir kararı nasıl değiştirdiğini gösteren küçük bir örnek eklenmesi, konunun en zor kısmının daha kolay anlaşılmasını sağlayabilirdi.</p>",
+      "date": "2026-09-25T14:08:22Z"
+    }
+  ]
+}

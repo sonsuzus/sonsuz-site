@@ -12,6 +12,7 @@ tags:
   - c++
   - kayan nokta
 toc: true
+image: /img/oyun-motorlarinda-fixed-90.png
 ---
 
 Bugün oyunlarda konum, hız ve fizik hesapları çoğunlukla kayan noktalı sayılarla yapılıyor. Ancak eski konsollardan deterministik strateji oyunlarına kadar pek çok sistem, ondalıklı değerleri tam sayıların içine saklayan **fixed-point math** yaklaşımını tercih etti. Bunun nedeni yalnızca işlemcilerin yavaş olması değildi; aynı girdilerden her donanımda aynı sonucu çıkarabilmek, özellikle ağ üzerinden oynanan ve tekrar kaydı tutan oyunlar için altın değerindeydi.
@@ -36,6 +37,9 @@ Burada bilgisayar aslında virgülden habersizdir. Programcı, `12345` sayısın
 | Sayı aralığı | Daha dar | Çok geniş |
 | Taşma riski | Açık ve yüksektir | Daha esnek, fakat özel değerler vardır |
 | Determinizm | Kontrol edilmesi kolay | Ek önlemler gerektirir |
+
+![oyun-motorlarinda-fixed-90](/img/oyun-motorlarinda-fixed-90.svg)
+
 
 ## Kayan nokta neden farklı sonuç verebilir?
 

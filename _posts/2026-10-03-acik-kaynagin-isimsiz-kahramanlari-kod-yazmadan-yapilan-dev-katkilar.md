@@ -12,6 +12,7 @@ tags:
   - github
   - teknik iletişim
 toc: true
+image: /img/acik-kaynagin-isimsiz-19.png
 ---
 
 Bir açık kaynak projesini yalnızca kod satırlarından ibaret sanıyorsanız, mutfağın yarısını kaçırıyorsunuz demektir. Başarılı projelerin arkasında yazım hatalarını düzeltenlerden yeni başlayanların sorularını yanıtlayanlara, hataları sınıflandıranlardan örnekleri güncelleyenlere kadar büyük bir görünmez ekip bulunur. Üstelik bu katkılar bazen yüzlerce satırlık bir özellikten daha fazla kullanıcıya dokunur.
@@ -33,6 +34,9 @@ Burada $E$ katkının etkisini, $K$ kaliteyi, $G$ ulaştığı kullanıcı sayı
 | Topluluk desteği | Tekrarlanan sorular | Bilginin paylaşılmasını sağlar |
 | Test ve hata raporu | Görünmeyen kusurlar | Güvenilirliği artırır |
 | Çeviri | Dil engeli | Kullanıcı kitlesini genişletir |
+
+![acik-kaynagin-isimsiz-19](/img/acik-kaynagin-isimsiz-19.svg)
+
 
 ## Dokümantasyon: Projenin kullanım arayüzü
 

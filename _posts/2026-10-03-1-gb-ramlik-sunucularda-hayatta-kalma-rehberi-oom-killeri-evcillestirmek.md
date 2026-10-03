@@ -12,7 +12,11 @@ tags:
   - sunucu-optimizasyonu
   - devops
 toc: true
+image: /img/1-gb-ramlik-24.png
 ---
+
+![1-gb-ramlik-24](/img/1-gb-ramlik-24.svg)
+
 
 1 GB RAM’li bir sanal sunucu, doğru yönetildiğinde küçük web siteleri, API’ler ve otomasyon servisleri için şaşırtıcı derecede yeteneklidir. Ancak kontrolsüz bir uygulama, birkaç Docker konteyneri veya coşkulu bir veritabanı sorgusu belleği tükettiğinde Linux’un OOM Killer mekanizması sahneye çıkar. Bu rehberde amacımız OOM Killer’ı tamamen devre dışı bırakmak değil; belleği ölçmek, patlamaları sınırlamak ve çekirdeğe kimi feda edeceğini daha bilinçli biçimde anlatmaktır.
 

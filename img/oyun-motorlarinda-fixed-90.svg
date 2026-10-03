@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8e9ff"/>
+      <stop offset="1" stop-color="#bed8f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#526b85" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#526b85" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="93" cy="47" r="74" fill="#dbeeff" opacity="0.45"/>
+  <circle cx="565" cy="279" r="105" fill="#ddf1d8" opacity="0.38"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536a">DETERMİNİSTİK OYUN SİMÜLASYONU</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="28" y="105" width="125" height="91" rx="18" fill="#fff7d9" stroke="#ead99b"/>
+    <circle cx="55" cy="133" r="14" fill="#f5d77d"/>
+    <path d="M49 133h12M55 127v12" stroke="#896d23" stroke-width="2" stroke-linecap="round"/>
+    <text x="76" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d532f">Aynı Girdiler</text>
+    <text x="48" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71643a">Komutlar</text>
+    <text x="48" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71643a">Zaman adımı</text>
+  </g>
+
+  <path d="M154 150H190" fill="none" stroke="#7794ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="196,150 187,145 187,155" fill="#7794ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="196" y="67" width="205" height="172" rx="25" fill="url(#core)" stroke="#9bbad7"/>
+    <rect x="220" y="88" width="157" height="30" rx="10" fill="#edf6ff" opacity="0.9"/>
+    <text x="298" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#305878">FIXED-POINT</text>
+
+    <rect x="222" y="137" width="70" height="62" rx="12" fill="#ffffff" opacity="0.88"/>
+    <text x="257" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#446078">Q16.16</text>
+    <path d="M238 178h38" stroke="#7ca6c8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M252 171v14M263 171v14" stroke="#7ca6c8" stroke-width="1.5"/>
+
+    <path d="M297 168H316" stroke="#6f91ad" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="322,168 313,163 313,173" fill="#6f91ad"/>
+
+    <rect x="326" y="137" width="51" height="62" rx="12" fill="#dff2df"/>
+    <text x="351.5" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397050">Tam</text>
+    <text x="351.5" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397050">Sayı</text>
+
+    <text x="298" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46657b">Ölçek: 2¹⁶</text>
+  </g>
+
+  <path d="M402 151H434V89H455" fill="none" stroke="#6a9983" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="461,89 452,84 452,94" fill="#6a9983"/>
+  <path d="M402 151H434V151H455" fill="none" stroke="#6a9983" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="461,151 452,146 452,156" fill="#6a9983"/>
+  <path d="M402 151H434V213H455" fill="none" stroke="#6a9983" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="461,213 452,208 452,218" fill="#6a9983"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="462" y="57" width="145" height="63" rx="15" fill="#e3f3e5" stroke="#afd4b4"/>
+    <rect x="477" y="72" width="31" height="25" rx="6" fill="#86bc90"/>
+    <path d="M482 90h21M486 85h13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="520" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397050">Platform A</text>
+    <text x="520" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55755c">Aynı durum</text>
+
+    <rect x="462" y="120" width="145" height="63" rx="15" fill="#e3f3e5" stroke="#afd4b4"/>
+    <rect x="477" y="135" width="31" height="25" rx="6" fill="#86bc90"/>
+    <path d="M482 153h21M486 148h13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="520" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397050">Platform B</text>
+    <text x="520" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55755c">Aynı durum</text>
+
+    <rect x="462" y="183" width="145" height="63" rx="15" fill="#e3f3e5" stroke="#afd4b4"/>
+    <rect x="477" y="198" width="31" height="25" rx="6" fill="#86bc90"/>
+    <path d="M482 216h21M486 211h13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="520" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397050">Platform C</text>
+    <text x="520" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55755c">Aynı durum</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="85" y="254" width="470" height="42" rx="17" fill="#ffffff" opacity="0.82"/>
+    <circle cx="113" cy="275" r="10" fill="#a9d8bc"/>
+    <path d="M108 275l4 4 7-8" fill="none" stroke="#397050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="135" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426152">Tekrar kaydı</text>
+    <path d="M240 275h38" stroke="#9bb2c3" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="284,275 275,270 275,280" fill="#9bb2c3"/>
+    <text x="300" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426152">Lockstep ağ</text>
+    <path d="M403 275h38" stroke="#9bb2c3" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="447,275 438,270 438,280" fill="#9bb2c3"/>
+    <text x="470" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426152">Senkron dünya</text>
+  </g>
+</svg>

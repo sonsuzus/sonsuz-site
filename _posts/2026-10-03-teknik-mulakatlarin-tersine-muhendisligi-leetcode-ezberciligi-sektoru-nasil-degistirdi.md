@@ -12,9 +12,13 @@ tags:
   - işe alım
   - problem çözme
 toc: true
+image: /img/teknik-mulakatlarin-tersine-80.png
 ---
 
 Modern teknik mülakat, adayın günlük işte nasıl yazılım geliştireceğini ölçen bir süreç olmaktan çıkıp kendine özgü kuralları bulunan paralel bir sektöre dönüştü. Artık bir API tasarlayabilmek, hatalı üretim kaydını incelemek veya anlaşılır kod yazmak bazen yeterli değil; adaydan kırk dakikada daha önce görmüş olmasının büyük avantaj sağladığı olimpiyat tarzı bir bulmacayı çözmesi bekleniyor. Böylece mülakatı geçme becerisi ile işi yapma becerisi arasındaki bağ giderek zayıflıyor.
+
+
+![teknik-mulakatlarin-tersine-80](/img/teknik-mulakatlarin-tersine-80.svg)
 
 ``
 

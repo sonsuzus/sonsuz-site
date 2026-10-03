@@ -1,0 +1,27 @@
+<!-- SEO Botları İçin Statik Yorumlar -->
+<noscript>
+  <div class="static-giscuss-comments">
+    <h3>Tartışmalar</h3>
+    
+    <!-- JSON'daki anahtar ile eşleşmesi için başlığı oluşturuyoruz -->
+    {% assign giscuss_title = page.title | append: " · SonsuzUs" %}
+    
+    <!-- _data/giscuss_comments.json dosyasından ilgili başlığı çekiyoruz -->
+    {% assign comments = site.data.giscuss_comments[giscuss_title] %}
+    
+    {% if comments and comments.size > 0 %}
+      {% for comment in comments %}
+        <div class="comment" style="margin-bottom: 20px; padding: 15px; border: 1px solid #e1e4e8; border-radius: 6px; background-color: #f6f8fa;">
+          <div class="comment-header" style="margin-bottom: 10px; font-weight: bold;">
+            {{ comment.author }} <span style="font-weight: normal; font-size: 0.85em; color: #586069;">- {{ comment.date | date: "%d.%m.%Y %H:%M" }}</span>
+          </div>
+          <div class="comment-body" style="font-size: 0.95em;">
+            {{ comment.body }}
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>Bu yazı için henüz statik yoruma yansıyan bir tartışma yok.</p>
+    {% endif %}
+  </div>
+</noscript>
