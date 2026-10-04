@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8177d9"/>
+      <stop offset="100%" stop-color="#5f9ed2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#55718b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#55718b" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="28" r="42" fill="#dceefa" opacity="0.6"/>
+  <circle cx="602" cy="290" r="65" fill="#dff1da" opacity="0.55"/>
+  <path d="M0 254 C112 217 149 290 242 267 S405 214 510 251 S593 278 640 241" fill="none" stroke="#cce5e1" stroke-width="2" opacity="0.7"/>
+
+  <text x="28" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39536d">LMS SEÇİMİ</text>
+  <text x="28" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718498">Öncelikler → platform uyumu</text>
+
+  <!-- Input cards -->
+  <g filter="url(#softShadow)">
+    <rect x="28" y="78" width="128" height="48" rx="14" fill="#ffffff"/>
+    <circle cx="51" cy="102" r="12" fill="#e2dffa"/>
+    <path d="M47 102h8M51 98v8" stroke="#7165bd" stroke-width="2" stroke-linecap="round"/>
+    <text x="71" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40536a">Özelleştirme</text>
+    <text x="71" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8b9b">Eklenti ve kontrol</text>
+
+    <rect x="28" y="139" width="128" height="48" rx="14" fill="#ffffff"/>
+    <circle cx="51" cy="163" r="12" fill="#d9f1ea"/>
+    <path d="M46 164l4 4 7-9" fill="none" stroke="#45977c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="71" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40536a">Kolay kullanım</text>
+    <text x="71" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8b9b">Hızlı benimseme</text>
+
+    <rect x="28" y="200" width="128" height="48" rx="14" fill="#ffffff"/>
+    <circle cx="51" cy="224" r="12" fill="#fde8c9"/>
+    <circle cx="48" cy="221" r="3" fill="#c78237"/>
+    <circle cx="55" cy="221" r="3" fill="#c78237"/>
+    <path d="M44 229c2-5 10-5 14 0" fill="none" stroke="#c78237" stroke-width="2" stroke-linecap="round"/>
+    <text x="71" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40536a">Kitlesel kurs</text>
+    <text x="71" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8b9b">Ölçek ve erişim</text>
+  </g>
+
+  <!-- Lines to core -->
+  <path d="M156 102 H192 Q201 102 205 112 L218 142" fill="none" stroke="#a7b9cb" stroke-width="2"/>
+  <polygon points="216,136 224,147 211,145" fill="#a7b9cb"/>
+  <path d="M156 163 H207" fill="none" stroke="#a7b9cb" stroke-width="2"/>
+  <polygon points="202,158 213,163 202,168" fill="#a7b9cb"/>
+  <path d="M156 224 H192 Q202 224 206 214 L218 184" fill="none" stroke="#a7b9cb" stroke-width="2"/>
+  <polygon points="211,181 223,176 219,189" fill="#a7b9cb"/>
+
+  <!-- Decision core -->
+  <g filter="url(#shadow)">
+    <rect x="210" y="112" width="124" height="104" rx="24" fill="url(#core)"/>
+    <circle cx="272" cy="145" r="20" fill="#ffffff" opacity="0.2"/>
+    <path d="M263 145h18M272 136v18" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="272" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Karar Motoru</text>
+    <text x="272" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf4ff">Öncelik puanı</text>
+  </g>
+
+  <!-- Branches -->
+  <path d="M334 143 H361 Q370 143 376 134 L388 116" fill="none" stroke="#a7b9cb" stroke-width="2"/>
+  <polygon points="382,116 393,109 390,122" fill="#a7b9cb"/>
+  <path d="M334 164 H387" fill="none" stroke="#a7b9cb" stroke-width="2"/>
+  <polygon points="382,159 393,164 382,169" fill="#a7b9cb"/>
+  <path d="M334 185 H361 Q370 185 376 194 L388 212" fill="none" stroke="#a7b9cb" stroke-width="2"/>
+  <polygon points="390,206 393,219 382,212" fill="#a7b9cb"/>
+
+  <!-- Platform cards -->
+  <g filter="url(#softShadow)">
+    <rect x="393" y="79" width="154" height="67" rx="16" fill="#f1efff"/>
+    <rect x="393" y="79" width="7" height="67" rx="3.5" fill="#776bd0"/>
+    <text x="416" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c468b">Moodle</text>
+    <text x="416" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e708e">Esnek • Modüler</text>
+
+    <rect x="393" y="151" width="154" height="67" rx="16" fill="#e8f6f2"/>
+    <rect x="393" y="151" width="7" height="67" rx="3.5" fill="#43a389"/>
+    <text x="416" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#347765">Canvas</text>
+    <text x="416" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66877f">Sade • Hızlı</text>
+
+    <rect x="393" y="223" width="154" height="67" rx="16" fill="#fff2df"/>
+    <rect x="393" y="223" width="7" height="67" rx="3.5" fill="#db943e"/>
+    <text x="416" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a642a">Open edX</text>
+    <text x="416" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#997b57">Büyük ölçek • MOOC</text>
+  </g>
+
+  <!-- Output insight -->
+  <path d="M547 184 H571 Q579 184 579 175 V163" fill="none" stroke="#8eb7aa" stroke-width="2"/>
+  <polygon points="574,166 579,154 584,166" fill="#8eb7aa"/>
+  <g filter="url(#softShadow)">
+    <rect x="565" y="94" width="54" height="61" rx="16" fill="#ffffff"/>
+    <path d="M583 116c0-6 5-10 10-10s10 4 10 10c0 5-4 7-6 10v4h-8v-4c-2-3-6-5-6-10z" fill="#ddefa9"/>
+    <path d="M589 136h8M591 140h4" stroke="#72914d" stroke-width="2" stroke-linecap="round"/>
+    <text x="592" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b7180">Uyum</text>
+  </g>
+
+  <text x="28" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718498">En iyi seçim: hedefe uygun sürdürülebilir platform</text>
+</svg>
