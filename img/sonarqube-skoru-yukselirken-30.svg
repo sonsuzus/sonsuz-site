@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bff1d1"/>
+      <stop offset="100%" stop-color="#81d7ae"/>
+    </linearGradient>
+    <linearGradient id="warn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe2b4"/>
+      <stop offset="100%" stop-color="#f6aa80"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9edff"/>
+      <stop offset="100%" stop-color="#a8d1f1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#47627a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#47627a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="69" cy="48" r="74" fill="#d9efff" opacity="0.42"/>
+  <circle cx="576" cy="271" r="96" fill="#d9f2d5" opacity="0.38"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365069">Ölçüm hedef olunca</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8292">Goodhart etkisi: yeşil skor, gerçek güvence değildir</text>
+
+  <g filter="url(#shadow)">
+    <rect x="33" y="82" width="165" height="167" rx="20" fill="#ffffff"/>
+    <rect x="33" y="82" width="165" height="39" rx="20" fill="url(#blue)"/>
+    <rect x="33" y="101" width="165" height="20" fill="url(#blue)"/>
+  </g>
+  <text x="54" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536c">SonarQube Paneli</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="50" y="137" width="131" height="27" rx="9" fill="url(#green)"/>
+    <circle cx="66" cy="150.5" r="6" fill="#ffffff" opacity="0.9"/>
+    <path d="M63 150 L65.3 152.3 L69.8 147.6" fill="none" stroke="#43a879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="79" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#245a45">Kapsama %90</text>
+
+    <rect x="50" y="173" width="131" height="27" rx="9" fill="url(#green)"/>
+    <circle cx="66" cy="186.5" r="6" fill="#ffffff" opacity="0.9"/>
+    <path d="M63 186 L65.3 188.3 L69.8 183.6" fill="none" stroke="#43a879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="79" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#245a45">Güvenilirlik A</text>
+
+    <rect x="50" y="209" width="131" height="27" rx="9" fill="url(#green)"/>
+    <circle cx="66" cy="222.5" r="6" fill="#ffffff" opacity="0.9"/>
+    <path d="M63 222 L65.3 224.3 L69.8 219.6" fill="none" stroke="#43a879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="79" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#245a45">Borç: 3 saat</text>
+  </g>
+
+  <path d="M207 165 C226 165 231 165 247 165" fill="none" stroke="#7f9eb1" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="247,159 258,165 247,171" fill="#7f9eb1"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="325" cy="165" r="73" fill="#ffffff"/>
+    <circle cx="325" cy="165" r="61" fill="#fff7e9" stroke="#f2c98a" stroke-width="2"/>
+  </g>
+  <circle cx="325" cy="165" r="39" fill="url(#warn)" opacity="0.82"/>
+  <path d="M325 137 L325 166 L348 178" fill="none" stroke="#a95d43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="325" cy="165" r="5" fill="#a95d43"/>
+  <text x="325" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#835039">Hedef metrik</text>
+  <text x="325" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7257">optimizasyonu</text>
+
+  <path d="M399 141 C421 127 435 119 456 116" fill="none" stroke="#7f9eb1" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="452,110 464,115 454,121" fill="#7f9eb1"/>
+  <path d="M399 187 C420 202 434 211 456 215" fill="none" stroke="#7f9eb1" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="453,209 464,216 451,220" fill="#7f9eb1"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="465" y="77" width="145" height="79" rx="17" fill="#ffffff"/>
+    <rect x="479" y="91" width="31" height="31" rx="10" fill="#ffe0aa"/>
+    <path d="M494 98 L503 114 L485 114 Z" fill="#d77b4e"/>
+    <rect x="493" y="103" width="2" height="6" rx="1" fill="#fff8ed"/>
+    <circle cx="494" cy="112" r="1.3" fill="#fff8ed"/>
+    <text x="520" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#69493c">Manipülasyon</text>
+    <text x="520" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7e6a61">Beklentisiz test</text>
+    <text x="520" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7e6a61">Uyarıyı kapatma</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="465" y="178" width="145" height="87" rx="17" fill="#ffffff"/>
+    <rect x="479" y="192" width="31" height="31" rx="10" fill="#d9edff"/>
+    <path d="M486 208 L492 214 L503 200" fill="none" stroke="#4e92bc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="520" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36576d">Gerçek kalite</text>
+    <text x="520" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617887">Davranış doğrulama</text>
+    <text x="520" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617887">Risk ve mimari</text>
+  </g>
+
+  <path d="M284 267 C344 291 411 288 462 265" fill="none" stroke="#62a98b" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="454,260 466,264 457,271" fill="#62a98b"/>
+  <text x="353" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477864">Çoklu sinyal ile dengele</text>
+</svg>
