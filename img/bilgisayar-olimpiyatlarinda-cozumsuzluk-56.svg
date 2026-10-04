@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="mind" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceafe"/>
+      <stop offset="100%" stop-color="#ccefdc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#71839a" flood-opacity="0.19"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7890a5" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="88" cy="45" r="58" fill="#dbeeff" opacity="0.45"/>
+  <circle cx="582" cy="275" r="76" fill="#d8f1dc" opacity="0.42"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536b">ÇÖZÜMSÜZLÜK DÖNGÜSÜNÜ YÖNETME</text>
+
+  <!-- left stress panel -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="58" width="170" height="198" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53667b">Stres ve performans</text>
+  <line x1="51" y1="211" x2="174" y2="211" stroke="#afbdca" stroke-width="1.5"/>
+  <line x1="51" y1="211" x2="51" y2="111" stroke="#afbdca" stroke-width="1.5"/>
+  <path d="M57 201 C77 187, 89 147, 112 132 C132 119, 146 144, 169 201" fill="none" stroke="#6c8fc7" stroke-width="3" stroke-linecap="round"/>
+  <line x1="112" y1="126" x2="112" y2="213" stroke="#94bca3" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="112" cy="132" r="5" fill="#72b78a"/>
+  <text x="64" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718196">düşük</text>
+  <text x="137" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718196">yüksek</text>
+  <text x="119" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f8768">verimli bölge</text>
+
+  <rect x="47" y="237" width="131" height="1" fill="#e6edf2"/>
+  <text x="48" y="249" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7c90">Amaç: sıfırlamak değil,</text>
+  <text x="48" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7c90">dengeye dönmek</text>
+
+  <!-- arrow to center -->
+  <path d="M204 157 L229 157" stroke="#91a8bc" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="234,157 226,152 226,162" fill="#91a8bc"/>
+
+  <!-- central brain / loop -->
+  <g filter="url(#shadow)">
+    <circle cx="315" cy="157" r="80" fill="#ffffff"/>
+    <circle cx="315" cy="157" r="65" fill="url(#mind)" opacity="0.78"/>
+  </g>
+  <path d="M286 177 C271 170,271 151,283 143 C275 128,288 115,302 120 C308 104,329 107,334 121 C350 112,363 126,358 140 C374 148,368 169,354 171 C350 185,331 188,321 178 C310 190,291 187,286 177Z" fill="#f9fcff" stroke="#7396b7" stroke-width="2"/>
+  <path d="M306 127 C315 136,307 145,315 151 C323 157,315 169,324 177" fill="none" stroke="#91aec8" stroke-width="2" stroke-linecap="round"/>
+  <path d="M334 122 C328 134,340 139,334 149 C329 157,340 165,349 164" fill="none" stroke="#91aec8" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="298" cy="151" r="4" fill="#ec9d96"/>
+  <circle cx="340" cy="145" r="4" fill="#7dbd91"/>
+  <text x="276" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e657c">Zihin kilitlenmesi</text>
+
+  <!-- loop line -->
+  <path d="M267 91 C244 74,238 100,249 110" fill="none" stroke="#d38c88" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="251,114 242,109 249,103" fill="#d38c88"/>
+  <text x="217" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b06f6b">aynı düşünce</text>
+
+  <!-- right action column -->
+  <path d="M397 157 L417 157" stroke="#78a48b" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="422,157 414,152 414,162" fill="#78a48b"/>
+
+  <g filter="url(#soft)">
+    <rect x="427" y="58" width="181" height="55" rx="14" fill="#fff4e9"/>
+    <circle cx="452" cy="85" r="14" fill="#f5c998"/>
+    <path d="M452 76 L452 86 M452 91 L452 94 M444 84 L448 86 M456 86 L460 84" stroke="#976c3f" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="476" y="81" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#695a4a">Fizyolojik ara</text>
+    <text x="476" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#857462">Nefes ve gevşeme</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="427" y="132" width="181" height="55" rx="14" fill="#edf5ff"/>
+    <circle cx="452" cy="159" r="14" fill="#b9d6f5"/>
+    <path d="M446 153 L458 153 M446 159 L458 159 M446 165 L454 165" stroke="#527ca6" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="476" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e647c">Durumu ayır</text>
+    <text x="476" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718196">Bilinen · varsayım · soru</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="427" y="206" width="181" height="55" rx="14" fill="#ebf8ef"/>
+    <circle cx="452" cy="233" r="14" fill="#b8e0c4"/>
+    <path d="M444 237 L450 231 L454 234 L461 226" fill="none" stroke="#4c9367" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="476" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6d58">Modeli değiştir</text>
+    <text x="476" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e8676">Küçült, dene, kanıtla</text>
+  </g>
+
+  <!-- connecting vertical -->
+  <path d="M517 114 L517 127" stroke="#a1b5aa" stroke-width="1.5"/>
+  <polygon points="517,132 512,124 522,124" fill="#a1b5aa"/>
+  <path d="M517 188 L517 201" stroke="#a1b5aa" stroke-width="1.5"/>
+  <polygon points="517,206 512,198 522,198" fill="#a1b5aa"/>
+
+  <!-- feedback -->
+  <path d="M419 271 C383 294,265 292,230 247" fill="none" stroke="#8aa8a2" stroke-width="1.8" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="227,242 236,247 229,252" fill="#8aa8a2"/>
+  <text x="293" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66827a">yeniden dene</text>
+</svg>
