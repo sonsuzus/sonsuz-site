@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d8f3e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6e8799" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6e8799" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="54" cy="42" r="76" fill="#dff1ff" opacity="0.55"/>
+  <circle cx="595" cy="280" r="94" fill="#dff3df" opacity="0.55"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536a">Açık Kaynak Video Platformu</text>
+
+  <path d="M139 128 H171" stroke="#8fa9b8" stroke-width="2.2" fill="none"/>
+  <polygon points="171,128 163,123 163,133" fill="#8fa9b8"/>
+  <path d="M287 128 H318" stroke="#8fa9b8" stroke-width="2.2" fill="none"/>
+  <polygon points="318,128 310,123 310,133" fill="#8fa9b8"/>
+  <path d="M432 128 H465" stroke="#8fa9b8" stroke-width="2.2" fill="none"/>
+  <polygon points="465,128 457,123 457,133" fill="#8fa9b8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="88" width="108" height="80" rx="17" fill="#fff4d9"/>
+    <rect x="171" y="88" width="116" height="80" rx="17" fill="#e8e1ff"/>
+    <rect x="318" y="76" width="114" height="104" rx="20" fill="url(#core)"/>
+    <rect x="465" y="88" width="144" height="80" rx="17" fill="#dff2ea"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365368" text-anchor="middle">
+    <text x="85" y="148" font-weight="700">Video Yükleme</text>
+    <text x="229" y="148" font-weight="700">Kod Dönüştürme</text>
+    <text x="375" y="154" font-weight="700">Uyarlanabilir Akış</text>
+    <text x="537" y="148" font-weight="700">İzleyici</text>
+  </g>
+
+  <g fill="none" stroke="#55778d" stroke-width="2">
+    <rect x="61" y="108" width="47" height="25" rx="5"/>
+    <path d="M79 114 L92 120.5 L79 127 Z" fill="#55778d" stroke="none"/>
+    <path d="M195 113 H263 M195 122 H263 M195 131 H263"/>
+    <path d="M338 107 H409 M338 117 H399 M338 127 H409"/>
+    <path d="M493 111 H516 L527 102 L539 111 H575 V137 H493 Z"/>
+    <path d="M517 121 L530 128 L548 113" stroke="#4c9b7b"/>
+  </g>
+
+  <text x="375" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536a">480p · 720p · 1080p</text>
+
+  <path d="M375 181 V204" stroke="#8fa9b8" stroke-width="2.2" fill="none"/>
+  <polygon points="375,204 370,196 380,196" fill="#8fa9b8"/>
+  <path d="M375 204 H126 V220" stroke="#b0bec7" stroke-width="1.8" fill="none"/>
+  <polygon points="126,220 121,212 131,212" fill="#b0bec7"/>
+  <path d="M375 204 V220" stroke="#b0bec7" stroke-width="1.8" fill="none"/>
+  <polygon points="375,220 370,212 380,212" fill="#b0bec7"/>
+  <path d="M375 204 H526 V220" stroke="#b0bec7" stroke-width="1.8" fill="none"/>
+  <polygon points="526,220 521,212 531,212" fill="#b0bec7"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="221" width="156" height="77" rx="15" fill="#e2edff"/>
+    <rect x="242" y="221" width="156" height="77" rx="15" fill="#e4f5ea"/>
+    <rect x="436" y="221" width="156" height="77" rx="15" fill="#fff0dc"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365368">
+    <text x="126" y="245" text-anchor="middle" font-weight="700">PeerTube</text>
+    <text x="126" y="266" text-anchor="middle">Federasyon</text>
+    <text x="126" y="284" text-anchor="middle">Eşler arası dağıtım</text>
+
+    <text x="320" y="245" text-anchor="middle" font-weight="700">MediaCMS</text>
+    <text x="320" y="266" text-anchor="middle">Kurumsal arşiv</text>
+    <text x="320" y="284" text-anchor="middle">Django ve Docker</text>
+
+    <text x="514" y="245" text-anchor="middle" font-weight="700">ClipBucket</text>
+    <text x="514" y="266" text-anchor="middle">Klasik portal</text>
+    <text x="514" y="284" text-anchor="middle">PHP ve MySQL</text>
+  </g>
+
+  <circle cx="70" cy="244" r="5" fill="#6d9dde"/>
+  <circle cx="264" cy="244" r="5" fill="#69aa8c"/>
+  <circle cx="458" cy="244" r="5" fill="#dfa260"/>
+</svg>
