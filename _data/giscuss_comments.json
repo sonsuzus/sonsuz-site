@@ -1,4 +1,186 @@
 {
+  "Soru-Cevap Platformları Karşılaştırması: Question2Answer, AnswerHub ve Askbot · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Burada benim dikkatimi çeken şey soru cevap sistemlerinde sadece soru sorup cevap vermenin değil, iyi cevapların öne çıkarılmasının da önemli olması. Mesela Stack overflowda da oy sistemi ve kabul edilen cevap olayı var ve bu sayede aynı sorunu yaşayan biri direkt daha işe yarar cevabı bulabiliyor. Bence böyle bir sistem sadece soru sormak için değil zamanla bir bilgi arşivi oluşturmak için de kullanılabilir. Özellikle belirli bir okul veya proje ekibi için kurulsa daha önce sorulmuş soruların tekrar tekrer sorulmasını da azaltabilir.</p>",
+      "date": "2026-10-04T20:08:11Z",
+      "is_reply": false
+    },
+    {
+      "author": "sonsuzus",
+      "body": "<p dir=\"auto\">Ee bunlarda da var o sistem. :D</p>",
+      "date": "2026-10-04T22:19:26Z",
+      "is_reply": true
+    }
+  ],
+  "Dijital Kütüphaneyi Kurmak: BookStack ve Wiki Sistemlerinde Bilgi Hiyerarşisi · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Bookctackın raf-kitap-bölüm-sayfa yapısı düzenli duruyor ama içerik arttıkça tek başına yeterli olmayabilir. Mesela bir sunucu sorunu hem ağ hem uygulamayla ilgiliyse tek bir yerde tutmak bulmayı zorlaştırabilir. ooı yüzden etiket ve çapraz bağlantılar bence baya önemli. Arama yapıp yine de bulamıyorsak sorun içerikte değil yapıda olabilir.</p>",
+      "date": "2026-10-04T20:21:13Z",
+      "is_reply": false
+    }
+  ],
+  "Flarum Eklenti Mimarisi: Backend ile SPA Frontend Arasında Köprü Kurmak · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">burda extend ile override arasındaki fark bence baya önemli. Bir eklenti geliştirirken mevcut davranışı direkt override etmek kısa vadede kolay gelebilir ama başka bir eklenti aynı yeri değiştirdiğinde işler karışabilir. <code class=\"notranslate\">extend</code> biraz daha güvenli çünkü mevcut sisteme ekleme yapıyorsun ve diğer eklentilerle çakışma ihtimali azalıyor. Özellikle Flarum gibi eklenti sayısı fazla olan bir sistemde sadece kendi kodunun çalışmasına değil, başkasının eklentisiyle birlikte çalışmasına da dikkat etmek lazim</p>",
+      "date": "2026-10-04T20:20:14Z",
+      "is_reply": false
+    }
+  ],
+  "Self-Hosted Servisler: Dijital Özgürlüğün Görünmeyen Faturası · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">self hosted sistemlerde bence en tehlikeli şeylerden biri yedek alıyorum deyip gerçekten geri yükleniyor mu diye hiç kontrol etmemek. Her gün düzenli backup alırsın ama disk bozulduğunda dosyaların hatalı olduğunu fark edersen o yedeklerin pek bi anlamı kalmıyo</p>\n<p dir=\"auto\">O yüzden yazıdaki geri yükleme testi kısmı önemli geldi bana. Özellikle küçük ekiplerde bu işler genelde sonra bakarız diye erteleniyor ama sorun çıktığında bütün sistemin gitmesi çok daha büyük uğras.</p>",
+      "date": "2026-10-04T20:19:11Z",
+      "is_reply": false
+    }
+  ],
+  "Teknik Mülakatların Tersine Mühendisliği: LeetCode Ezberciliği Sektörü Nasıl Değiştirdi? · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Leetccode çalışmak tamamen gereksiz değil ama bir yerden sonra soru çözmek yerine soru kalıbı ezberlemeye dönüşebiliyor. Mesela two pointers sorusunu daha önce 20 kere görmüş biri soruyu çok hızlı çözebilir. Ama aynı mantığı gerçek projede farklı bir probleme uygulamak daha farklı bir beceri.</p>\n<p dir=\"auto\">Bence mülakatta hazır bir Leetcode sorusu sormak yerine adaya küçük bir bug verip nasıl araştırdığını ve nasıl çözdüğünü görmek yazılım işine daha yakın olurdu. Çünkü gerçek işte kimse gelip 40 dakikada sana dynamic programming sorusu sormuyo</p>",
+      "date": "2026-10-04T20:18:16Z",
+      "is_reply": false
+    }
+  ],
+  "Telegram Webhook ve Queue Mimarisiyle Saniyede Binlerce Mesajı Yönetmek · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">burdaki queue mantığı bence sistemin en önemli kısmı. Çünkü mesaj geldiği anda bütün işlemleri webhook içinde yapmaya çalışırsan trafik bir anda arttığında sistem direkt yavaşlamaya başlayabilir. Mesajı önce kuyruğa atıp workerların işlemesi daha mantıklı, özellikle ai çağrısı veya veritabanı işlemi gibi uzun süren şeyler varsa.</p>\n<p dir=\"auto\">Bir de <code class=\"notranslate\">update_id</code> kullanılması güzel düşünülmüş çünkü aynı mesajın tekrar gelmesi durumunda işlemi iki kere yapmasını engelleyebiliyorsun. Gerçek sistemlerde böyle küçük detaylar baya önemli oluyor, sadece “kaç mesajı saniyede işliyor” demek yetmiyor.</p>",
+      "date": "2026-10-04T20:17:18Z",
+      "is_reply": false
+    }
+  ],
+  "VS Code Remote-SSH ile Derlemeyi Buluta Taşımak: Daha Hafif Bilgisayarlar, Daha Akıllı Maliyetler · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Remote-ssh performans açısından baya mantıklı ama burada en kritik konu sunucunun ne kadar süre açık kaldığı. Sadece günde 1-2 saat derleme yapılacaksa güçlü bir sunucuyu 24 saat açık bırakmak yerel bilgisayardan bile pahalıya gelebilir. O yüzden otomatik kapatma olayı önemli, hatta kullanılmayan geliştirme ortamlarını belli bir süreden sonra otomatik kapatan sistem kurulabilir.</p>\n<p dir=\"auto\">bbir de internet bağlantısı kötü olan yerde bu sistem işlemci gücü kazandırırken dosya açma, arama ve eklenti işlemlerinde insanı daha fazla bekletebilir. Yani her durumda buluta taşımak daha iyi olacak diye bir şey yok. Sürekli ağır derleme yapılıyorsa mantıklı ama küçük projelerde yerel bilgisayar daha az uğraştırabilir.</p>",
+      "date": "2026-10-04T20:16:59Z",
+      "is_reply": false
+    }
+  ],
+  "Yazılım Tahminlerinde Hofstadter Yasası: Neden Her Şey Daha Uzun Sürer? · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Monte Carlo kısmı bence yazının en kullanışlı taraflarından biri. Çünkü 5 günde biter demek yerine %85 ihtimalle şu kadar sürer demek ekipteki beklentiyi daha gerçekçi yapıyor. Özellikle yazılım projelerinde tek bir api bağlantısının bile beklenenden uzun sürmesi bütün planı kaydırabiliyor. Ben de küçük projelerde bile analiz, test ve sonradan çıkan hatalar için ayrı süre bırakmanın tahminleri baya değiştirdiğini düşünüyorum. :)</p>",
+      "date": "2026-10-04T20:16:03Z",
+      "is_reply": false
+    }
+  ],
+  "Açık Kaynak LMS Rehberi: Moodle, Chamilo ve Open edX Karşılaştırması · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Moodle kısmı bana yine en dengeli seçenek gibi geldi ama Docker örneğinde küçük bir detay dikkatimi çekti. latest imaj kullanmak deneme ortamında sorun olmayabilir ama gerçek sistemde sürüm değişince beklenmedik bir şeylerin bozulma ihtimali var. O yüzden yazıda bahsedilen sabit imaj sürümü bence sadece teknik bir detay değil, uzun süre çalışan bir okul sistemi için baya önemli. Özellikle öğrenci ve sınav verileri tutuluyorsa “çalışıyor işte” deyip güncellemeleri rastgele yapmak sonradan daha büyük sıkıntı çıkarabilir.</p>",
+      "date": "2026-10-04T20:15:31Z",
+      "is_reply": false
+    }
+  ],
+  "Çok Yazarlı Blog Sistemi Seçimi: WordPress Multisite, Ghost ve Drupal · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Ghost kısmı bana daha mantıklı geldi çünkü yazı yazma ve üyelik gibi işlere odaklanması sistemi gereksiz yere şişirmiyor. Ama birden fazla site yönetilecekse her site için ayrı ghost kurmak zamanla bakım işini baya artırabilir. wp multisite bu konuda daha pratik duruyor ama tek bir eklentinin bütün ağı etkileyebilmesi de ciddi bir risk. Yani küçük bir ekip için wp daha mantıklı olabilir ama yayın büyüdükçe o merkezi yapının avantajı kadar riski de düşünmek lazım.</p>",
+      "date": "2026-10-04T20:15:07Z",
+      "is_reply": false
+    }
+  ],
+  "Çoklu Ekran mı Ultra Geniş Ekran mı? Geliştirici Masasında Ergonomi Savaşı · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">ben olsam burada direkt 2 monitör tercih ederdim. Kod yazarken bir tarafta editör, diğer tarafta tarayıcı veya terminal olması gerçekten pratik oluyor ve sürekli alt tab yapmıyorsun. Ultra geniş ekran daha temiz bir masa sağlayabilir ama pencereyi sürekli bölmek gerektiğinde biraz uğraştırıcı geliyor. Bir de yazıda dikkat konusu bence doğru, ikinci ekranı bildirimlerle doldurursan çalışma alanı büyümüş olmuyor sadece dikkat dağıtacak şeylerin sayısı artıyor :D</p>",
+      "date": "2026-10-04T20:14:40Z",
+      "is_reply": false
+    }
+  ],
+  "Dijital Sınav Sistemleri: Moodle Quiz, TAO ve TCExam Karşılaştırması · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Sınav sisteminde sadece soruların otomatik okunup puanlanması yeterli değil bence. Özellikle ayırt edicilik kısmı önemli çünkü herkesin doğru yaptığı bir sorunun sınav sonucuna çok fazla katkısı olmayabilir. Moodleın okul ve kurslarla birlikte çalışması da baya mantıklı geliyor, çünkü ayrıca başka bir sistem kurmadan öğrenci, ders ve sınav sonuçlarını aynı yerde tutabiliyorsun. tao ise küçük bir okul için biraz fazla kapsamlı kalabilir gibi, sırf qti desteği var diye daha karmaşık bir sistemi seçmek her zaman avantaj olmayabilir.</p>",
+      "date": "2026-10-04T20:14:10Z",
+      "is_reply": false
+    }
+  ],
+  "Forum Sistemleri Karşılaştırması: phpBB, Discourse, MyBB ve Flarum · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Forum tarafında bence en önemli fark kaynak ihtiyacı. Mesela discourse özellik olarak baya güçlü ama küçük bir topluluk için postgres, redis ve docker gibi ekstra şeylerle uğraşmak gereksiz olabilir. Ben hobi amaçlı küçük bir forum kuracak olsam flarum veya mybb tarafına bakardım çünkü daha düşük kaynakla iş görüyor. Ama kullanıcı sayısı ve etkileşim arttıkça sadece sunucunun kaldırıp kaldırmadığına değil moderasyon araçlarının ne kadar iyi olduğuna da bakmak lazım. Özellikle eski eklentiler konusu da önemli forum çalışıyor diye her eklentinin güvenli olduğunu düşünmemek lazım.</p>",
+      "date": "2026-10-04T20:13:40Z",
+      "is_reply": false
+    }
+  ],
+  "Geleceğin Yazılımcısı: Kod Ustası mı, Yapay Zekâ Orkestra Şefi mi? · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">AI kod yazabiliyorsa yazılımcıya gerek kalmayacak düşüncesi bana biraz fazla basit geliyor. Çünkü özellikle büyük projelerde çalışan kodu üretmek kadar neden çalışmadığını anlamak ve doğru mimariyi kurmak da önemli. Hatta AI ne kadar fazla kod yazarsa yazsın, yazdığı şeyleri kontrol edecek birinin olması daha önemli hale gelebilir. Bence burdaki “orkestra şefi” benzetmesi biraz buna denk geliyor ama o kişinin enstrümanları hiç bilmemesi de mümkün değil.</p>",
+      "date": "2026-10-04T20:12:32Z",
+      "is_reply": false
+    }
+  ],
+  "Haber Sitesi İçin CMS Seçimi: WordPress, Drupal ve Joomla · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Bu yazıda bence CMS seçerken sadece özellik sayısına bakmamak gerektiği iyi anlatılmış. Mesela wpsin eklenti sayısının çok olması ilk başta avantaj gibi duruyor ama her ihtiyacı eklentiyle çözmeye çalışınca güvenlik ve performans tarafında işler karışabiliyor. Haber sitesi gibi sürekli içerik girilen bir yerde editörlerin sistemi rahat kullanması da en az teknik özellikler kadar önemli. O yüzden ben küçük bir haber sitesi için wpyi seçerdim ama trafik büyüdükçe kullanılan eklentileri ve sunucu yapısını ayrıca gözden geçirmek gerekirdi.</p>",
+      "date": "2026-10-04T20:11:39Z",
+      "is_reply": false
+    }
+  ],
+  "IaC’den DaC’ye: Altyapıyı Değil, Mimari Kararları da Kodlamak · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Bu yazıda bence asıl güzel fikir, mimari kararların da kod gibi test edilebilir hale getirilmesi. Mesela “veritabanı internete açık olamaz” gibi bir kural sadece dokümanda yazarsa birinin bunu unutması mümkün ama pipeline bunu otomatik kontrol ederse hata daha oluşmadan yakalanıyor. özellikle projelerde ekip büyüdükçe bu tarz kurallar daha önemli hale geliyor çünkü herkesin aynı şeyleri hatırlamasını beklemek yerine sistemi buna göre çalıştırabiliyorsun. Ama bence istisna kısmı önemli, her kuralı tamamen katı yapmak bazı özel durumlarda geliştiriciyi gereksiz yere zorlayabilir..</p>",
+      "date": "2026-10-04T20:10:45Z",
+      "is_reply": false
+    }
+  ],
+  "Kodun Yüzü: Gopher, Ferris ve Duke ile Topluluk Kültürü · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Maskotların programlama dillerinde bu kadar kullanıldığını daha önce çok düşünmemiştim. gopher veya fferris gibi karakterler dili direkt daha kolay yapmıyor ama özellikle yeni başlayan birinin gözünde ortamı biraz daha samimi hale getirebilir. Zaten bir dili öğrenirken sürekli hata almak ve anlamadığın şeylerle uğraşmak normal, böyle küçük şeyler de insanı biraz daha rahat hissettirebilir. Ama bence iyi bir topluluk ve dokümantasyon yoksa sadece maskot koymak çok da bir şey değiştirmez.</p>",
+      "date": "2026-10-04T20:10:17Z",
+      "is_reply": false
+    }
+  ],
+  "Not Invented Here Sendromu: Tekerleği Yeniden İcat Etmenin Mimari Bedeli · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Bence “kendimiz yazarız” düşüncesi özellikle yeni başlayanlarda daha çok oluyor. Bir kütüphaneyi kullanmak yerine kendimiz yapınca daha çok şey öğrenebiliriz ama bunu gerçek bir projede yapmak bazen gereksiz zaman kaybettirebilir. Mesela hazır ve güvenilir bir authentication sistemi varken sırf kendimiz yazmış olmak için tekrar yapmak güvenlik açısından da riskli. Ama yazıda dediği gibi hazır olan her şey de iyi değil, özellikle uzun süredir güncellenmeyen bir paketi kullanmak ileride daha büyük sorun çıkarabilir. O yüzden kullanmadan önce biraz araştırıp hangisinin daha mantıklı olduğuna bakmak lazım.</p>",
+      "date": "2026-10-04T20:09:47Z",
+      "is_reply": false
+    }
+  ],
+  "Online Kurs Platformu Seçimi: Moodle, Canvas ve Open edX Karşılaştırması · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Moodle kısmı bana daha mantıklı geldi çünkü okul gibi yerlerde herkesin ihtiyacı aynı olmuyor. Bir öğretmen sadece ödev ve sınav kullanırken başka bir öğretmen forum, rozet veya farklı eklentiler kullanmak isteyebilir. Moodleın bu kadar özelleştirilebilir olması bu yüzden avantaj ama fazla ayarın da sistemi kullanan kişiyi yorabileceğini düşünüyorum. Bence okul için seçerken sadece öğrencinin kullanımı değil öğretmenlerin sistemi ne kadar rahat yönetebileceği de düşünülmeli.</p>",
+      "date": "2026-10-04T20:09:23Z",
+      "is_reply": false
+    }
+  ],
+  "SonarQube Skoru Yükselirken Kod Kalitesi Düşebilir mi? Goodhart Yasası · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">burda bence en ilginç nokta coverageın yüksek olmasının her zaman kodun iyi olduğu anlamına gelmemesi. Mesela test sadece fonksiyonu çalıştırıyorsa coverage artıyor ama fonksiyon yanlış sonuç verse bile test geçebiliyor. Bu biraz okulda sadece sınav notunu yükseltmeye çalışıp konuyu gerçekten öğrenmemeye benziyor. yani ölçülen şey hedef olunca insanlar bazen gerçekten kaliteyi artırmak yerine sadece o sayıyı yükseltmeye çalışabiliyor.</p>",
+      "date": "2026-10-04T20:08:40Z",
+      "is_reply": false
+    }
+  ],
+  "Yazılım Ekiplerinde Bikeshedding: Düğme Renginde Kaybolmak · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Bu bikeshedding olayı bence özellikle grup projelerinde baya olabiliyor. Mesela projenin asıl çalışma mantığında bir sorun varken isim, tasarım veya butonun rengi gibi şeyler hakkında daha fazla konuşulabiliyor çünkü bunlar hakkında herkes rahatça fikir söyleyebiliyor. Ben de bazen bir şeyin zor kısmına girmek yerine daha kolay olan kısmıyla uğraşmanın daha rahat geldiğini düşünüyorum. O yüzden yazıdaki “bu karar gerçekten projeyi ne kadar etkiliyor?” sorusu bence ekip çalışırken kullanılabilecek basit ama işe yarar bir yöntem</p>",
+      "date": "2026-10-04T20:06:47Z",
+      "is_reply": false
+    }
+  ],
+  "WordPress, Ghost ve WriteFreely: Hangi Blog Sistemi Size Göre? · SonsuzUs": [
+    {
+      "author": "FatihOnder81",
+      "body": "<p dir=\"auto\">Yazıda en çok dikkatimi çeken şey bakım konusunun da seçimde önemli olması oldu. Mesela WP çok daha fazla özellik sunuyor ama bu kadar fazla özellik olması aynı zamanda güncelleme ve güvenlik gibi konularda daha fazla uğraş gerektirebiliyor. Docker ile ghost kurulumu da basit görünmesine rağmen gerçek bir sunucuda Https , yedekleme ve veritabanı gibi ekstra şeylerin gerektiğini gösteriyor. Bence blog açarken sadece hangisinin daha fazla özelliği olduğuna bakmak yerine, kullanacağımız özellikleri belirleyip ona göre sistem seçmek daha mantıklı olurdu btw.</p>",
+      "date": "2026-10-04T20:05:14Z",
+      "is_reply": false
+    }
+  ],
   "Python Programlamaya Giriş 15 – Dize metodları | SonsuzUs Github": [
     {
       "author": "kilhas31",
@@ -2634,7 +2816,7 @@
     },
     {
       "author": "sonsuzus",
-      "body": "<p dir=\"auto\">Görseldeki 6 katlı piramidin kaç farklı şekilde doldurulabileceğini bulan kod yazınız. Kurallar :</p>\n<p dir=\"auto\">a) Her satıra [1-9] aralığında sayı yazılabilir.<br>\nb) Her satırda kullanılan rakamlar birbirinden farklı olmalı.<br>\nc) Her satırda yan yana gelen iki sayı ardışık olmamalı.<br>\nd) Zemin kat dışında her kattaki sayı, altında yer alan 2 kutuya yazılmış sayıların ya toplamı ya da farkı olmalı.</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTExMzcyMzgsIm5iZiI6MTc5MTEzNjkzOCwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDA0VDE4MDIxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFhZDVhODI2YzFhZjY4Y2IzN2Y5NGQ3MDQ5NmM5Y2EyOGI5YjIzNTQ1YjAxZWIxZjIxZGFjMTU5ODk3ZDljNGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.UtNcPLVUgiuRKEAlfNc4b6hhYUAdSVUlPPUCqGzq0IM\"><img src=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTExMzcyMzgsIm5iZiI6MTc5MTEzNjkzOCwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDA0VDE4MDIxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFhZDVhODI2YzFhZjY4Y2IzN2Y5NGQ3MDQ5NmM5Y2EyOGI5YjIzNTQ1YjAxZWIxZjIxZGFjMTU5ODk3ZDljNGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.UtNcPLVUgiuRKEAlfNc4b6hhYUAdSVUlPPUCqGzq0IM\" alt=\"FB_IMG_1706272203828.jpg\" style=\"max-width: 100%;\"></a></p>",
+      "body": "<p dir=\"auto\">Görseldeki 6 katlı piramidin kaç farklı şekilde doldurulabileceğini bulan kod yazınız. Kurallar :</p>\n<p dir=\"auto\">a) Her satıra [1-9] aralığında sayı yazılabilir.<br>\nb) Her satırda kullanılan rakamlar birbirinden farklı olmalı.<br>\nc) Her satırda yan yana gelen iki sayı ardışık olmamalı.<br>\nd) Zemin kat dışında her kattaki sayı, altında yer alan 2 kutuya yazılmış sayıların ya toplamı ya da farkı olmalı.</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTExNTg4NDAsIm5iZiI6MTc5MTE1ODU0MCwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDA1VDAwMDIyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQwZmY5YzFjY2QxMzQ0MDc1Y2FlYzkyOWY5NzczMTkwMTQ1Yzk0YWY3MmEwNjQ4MWQxMzIwMmFhZjU1YjczYzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.PuJjbxnBiaP1GFi64GGNV2LcLOQSeMK_f7W9K0DxlgY\"><img src=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTExNTg4NDAsIm5iZiI6MTc5MTE1ODU0MCwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDA1VDAwMDIyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQwZmY5YzFjY2QxMzQ0MDc1Y2FlYzkyOWY5NzczMTkwMTQ1Yzk0YWY3MmEwNjQ4MWQxMzIwMmFhZjU1YjczYzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.PuJjbxnBiaP1GFi64GGNV2LcLOQSeMK_f7W9K0DxlgY\" alt=\"FB_IMG_1706272203828.jpg\" style=\"max-width: 100%;\"></a></p>",
       "date": "2024-01-26T12:31:55Z",
       "is_reply": false
     },
