@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#bdddf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7893a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7893a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="90" cy="48" r="74" fill="#dceffc" opacity="0.5"/>
+  <circle cx="565" cy="275" r="100" fill="#ddf1df" opacity="0.45"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486477" font-weight="600">Kendi Takvim Sunucun</text>
+  <text x="608" y="31" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#648073">CalDAV ile eşitleme</text>
+
+  <!-- clients -->
+  <g filter="url(#smallShadow)">
+    <rect x="31" y="81" width="120" height="43" rx="14" fill="#ffffff"/>
+    <rect x="44" y="92" width="18" height="21" rx="3" fill="#bde5d0"/>
+    <line x1="47" y1="98" x2="59" y2="98" stroke="#5f9a78" stroke-width="2"/>
+    <line x1="47" y1="103" x2="58" y2="103" stroke="#5f9a78" stroke-width="2"/>
+    <text x="75" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365566">İstemciler</text>
+  </g>
+  <text x="39" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e8591">Mobil • Masaüstü</text>
+
+  <!-- connection to hub -->
+  <path d="M151 102 C178 102 177 145 207 153" fill="none" stroke="#7da9bb" stroke-width="2.2"/>
+  <polygon points="207,153 198,147 200,157" fill="#7da9bb"/>
+
+  <!-- central hub -->
+  <g filter="url(#shadow)">
+    <rect x="207" y="113" width="144" height="88" rx="24" fill="url(#hub)" stroke="#a8cce1"/>
+    <circle cx="279" cy="143" r="17" fill="#ffffff" opacity="0.85"/>
+    <path d="M270 143 C273 135 284 134 288 141 C291 147 287 153 280 153 C275 153 270 149 270 143Z" fill="none" stroke="#4b89ac" stroke-width="2"/>
+    <path d="M270 143 L266 140 M288 141 L292 138 M280 153 L282 157" stroke="#4b89ac" stroke-width="2" stroke-linecap="round"/>
+    <text x="279" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285b76">CalDAV</text>
+    <text x="279" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7182">HTTP • iCalendar</text>
+  </g>
+
+  <!-- security and sync chips -->
+  <g filter="url(#smallShadow)">
+    <rect x="181" y="223" width="94" height="31" rx="13" fill="#fff5d9"/>
+    <path d="M197 231 L204 234 L203 242 Q197 247 191 242 L190 234 Z" fill="#d5a34a"/>
+    <text x="232" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80612d">HTTPS</text>
+    <rect x="286" y="223" width="103" height="31" rx="13" fill="#eee6fb"/>
+    <path d="M300 238 C300 233 307 233 307 238 M302 238 L305 241 L310 235" fill="none" stroke="#8668b4" stroke-width="2" stroke-linecap="round"/>
+    <text x="345" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66507f">ETag denetimi</text>
+  </g>
+
+  <!-- branches -->
+  <path d="M351 144 C374 144 376 78 402 78" fill="none" stroke="#89a9b7" stroke-width="2.2"/>
+  <polygon points="402,78 393,73 394,83" fill="#89a9b7"/>
+  <path d="M351 157 C376 157 375 157 402 157" fill="none" stroke="#89a9b7" stroke-width="2.2"/>
+  <polygon points="402,157 393,152 393,162" fill="#89a9b7"/>
+  <path d="M351 171 C374 171 377 237 402 237" fill="none" stroke="#89a9b7" stroke-width="2.2"/>
+  <polygon points="402,237 393,232 394,242" fill="#89a9b7"/>
+
+  <!-- option cards -->
+  <g filter="url(#shadow)">
+    <rect x="402" y="47" width="205" height="64" rx="17" fill="#dceeff"/>
+    <circle cx="427" cy="79" r="15" fill="#82b6dc"/>
+    <path d="M419 79 L427 71 L435 79 L427 87 Z" fill="#ffffff"/>
+    <text x="453" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2e5976">Nextcloud Calendar</text>
+    <text x="453" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54778d">Arayüz • Paylaşım • Ekip</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="402" y="126" width="205" height="64" rx="17" fill="#e0f2e5"/>
+    <circle cx="427" cy="158" r="15" fill="#78b28c"/>
+    <path d="M421 164 L421 151 L427 146 L433 151 L433 164 Z" fill="#ffffff"/>
+    <text x="453" y="152" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376c4d">Radicale</text>
+    <text x="453" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527866">Minimal • Düşük kaynak</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="402" y="205" width="205" height="64" rx="17" fill="#f3e8d8"/>
+    <circle cx="427" cy="237" r="15" fill="#d3a968"/>
+    <rect x="420" y="228" width="14" height="18" rx="2" fill="#ffffff"/>
+    <line x1="423" y1="233" x2="431" y2="233" stroke="#c09150" stroke-width="1.5"/>
+    <line x1="423" y1="238" x2="431" y2="238" stroke="#c09150" stroke-width="1.5"/>
+    <text x="453" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76562a">Baïkal</text>
+    <text x="453" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#836b47">PHP • Yönetim paneli</text>
+  </g>
+
+  <text x="320" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617b87">Seçim: arayüz, kaynak ve yönetim ihtiyacı</text>
+</svg>
