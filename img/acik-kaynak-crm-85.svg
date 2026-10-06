@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ebff"/>
+      <stop offset="100%" stop-color="#d8f3e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#58718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#58718a" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .t{font-family:'Segoe UI',Tahoma,sans-serif;font-size:12px;fill:#27445c}
+      .s{font-family:'Segoe UI',Tahoma,sans-serif;font-size:12px;fill:#527086}
+      .b{font-family:'Segoe UI',Tahoma,sans-serif;font-size:12px;font-weight:700;fill:#27445c}
+      .w{font-family:'Segoe UI',Tahoma,sans-serif;font-size:12px;font-weight:700;fill:#fff}
+    </style>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="39" cy="42" r="54" fill="#d8efff" opacity="0.42"/>
+  <circle cx="610" cy="279" r="76" fill="#dff2d8" opacity="0.4"/>
+
+  <text x="28" y="30" class="b">Açık Kaynak CRM Seçim Akışı</text>
+  <line x1="28" y1="40" x2="612" y2="40" stroke="#c9ddea" stroke-width="1"/>
+
+  <!-- Input sources -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="70" width="114" height="42" rx="13" fill="#fff" stroke="#cfe1ed"/>
+    <rect x="28" y="126" width="114" height="42" rx="13" fill="#fff" stroke="#cfe1ed"/>
+    <rect x="28" y="182" width="114" height="42" rx="13" fill="#fff" stroke="#cfe1ed"/>
+  </g>
+  <circle cx="49" cy="91" r="10" fill="#d8edff"/>
+  <path d="M44 89h10M44 93h7M47 85h7" fill="none" stroke="#4380aa" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="66" y="95" class="t">Web Formu</text>
+
+  <circle cx="49" cy="147" r="10" fill="#e5defa"/>
+  <path d="M43 143h12v8H43zM43 143l6 5 6-5" fill="none" stroke="#785cb0" stroke-width="1.4" stroke-linejoin="round"/>
+  <text x="66" y="151" class="t">E-posta</text>
+
+  <circle cx="49" cy="203" r="10" fill="#d9f2e4"/>
+  <path d="M45 199h8a3 3 0 0 1 3 3v4h-8l-4 3v-7a3 3 0 0 1 3-3z" fill="none" stroke="#478669" stroke-width="1.4" stroke-linejoin="round"/>
+  <text x="66" y="207" class="t">Destek</text>
+
+  <!-- Lines inputs to core -->
+  <path d="M142 91H166Q174 91 174 105V137H192" fill="none" stroke="#88aaba" stroke-width="1.6"/>
+  <polygon points="192,137 185,133 185,141" fill="#88aaba"/>
+  <path d="M142 147H192" fill="none" stroke="#88aaba" stroke-width="1.6"/>
+  <polygon points="192,147 185,143 185,151" fill="#88aaba"/>
+  <path d="M142 203H166Q174 203 174 169V157H192" fill="none" stroke="#88aaba" stroke-width="1.6"/>
+  <polygon points="192,157 185,153 185,161" fill="#88aaba"/>
+
+  <!-- CRM Core -->
+  <g filter="url(#shadow)">
+    <rect x="193" y="78" width="155" height="141" rx="24" fill="url(#core)" stroke="#b9d9dc"/>
+  </g>
+  <circle cx="270" cy="112" r="22" fill="#fff" opacity="0.9"/>
+  <path d="M260 106h20M260 112h20M260 118h13" stroke="#4d8b9b" stroke-width="2" stroke-linecap="round"/>
+  <text x="237" y="151" class="b">CRM Merkezi</text>
+  <text x="215" y="174" class="s">Aday • Fırsat • Görev</text>
+  <rect x="215" y="187" width="111" height="20" rx="10" fill="#fff" opacity="0.9"/>
+  <text x="229" y="201" class="s">Puanlama: S</text>
+
+  <!-- Central branching -->
+  <path d="M348 148H371V88H389" fill="none" stroke="#789bab" stroke-width="1.8"/>
+  <polygon points="389,88 382,84 382,92" fill="#789bab"/>
+  <path d="M348 148H389" fill="none" stroke="#789bab" stroke-width="1.8"/>
+  <polygon points="389,148 382,144 382,152" fill="#789bab"/>
+  <path d="M348 148H371V208H389" fill="none" stroke="#789bab" stroke-width="1.8"/>
+  <polygon points="389,208 382,204 382,212" fill="#789bab"/>
+
+  <!-- Platforms -->
+  <g filter="url(#shadow)">
+    <rect x="390" y="59" width="218" height="58" rx="16" fill="#f9ebdf" stroke="#ecd1b9"/>
+    <rect x="390" y="119" width="218" height="58" rx="16" fill="#e6f0ff" stroke="#c9dcf5"/>
+    <rect x="390" y="179" width="218" height="58" rx="16" fill="#e3f3e8" stroke="#c4e0ce"/>
+  </g>
+
+  <rect x="404" y="73" width="30" height="30" rx="9" fill="#e89d61"/>
+  <path d="M412 95v-12h12v12M415 87h6M415 91h6" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="447" y="83" class="b">SuiteCRM</text>
+  <text x="447" y="102" class="s">Kapsamlı • Özelleştirilebilir</text>
+
+  <rect x="404" y="133" width="30" height="30" rx="9" fill="#719bd7"/>
+  <path d="M412 142h14M412 148h10M412 154h14" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="447" y="143" class="b">EspoCRM</text>
+  <text x="447" y="162" class="s">Hafif • Hızlı • Sade</text>
+
+  <rect x="404" y="193" width="30" height="30" rx="9" fill="#62ad7e"/>
+  <path d="M411 207h16M415 203v8M423 203v8" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="447" y="203" class="b">Odoo CRM</text>
+  <text x="447" y="222" class="s">CRM ile ERP bütünleşik</text>
+
+  <!-- Footer lifecycle -->
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="263" width="557" height="34" rx="17" fill="#fff" stroke="#d6e5e6"/>
+  </g>
+  <circle cx="70" cy="280" r="8" fill="#b9daf5"/>
+  <text x="85" y="284" class="t">Aday</text>
+  <path d="M123 280h48" stroke="#8fb2c2" stroke-width="1.5"/>
+  <polygon points="171,280 165,276 165,284" fill="#8fb2c2"/>
+  <circle cx="191" cy="280" r="8" fill="#bfe6d0"/>
+  <text x="206" y="284" class="t">Değerlendirme</text>
+  <path d="M302 280h43" stroke="#8fb2c2" stroke-width="1.5"/>
+  <polygon points="345,280 339,276 339,284" fill="#8fb2c2"/>
+  <circle cx="365" cy="280" r="8" fill="#f4d3a7"/>
+  <text x="380" y="284" class="t">Fırsat</text>
+  <path d="M423 280h42" stroke="#8fb2c2" stroke-width="1.5"/>
+  <polygon points="465,280 459,276 459,284" fill="#8fb2c2"/>
+  <circle cx="486" cy="280" r="8" fill="#d8c9ef"/>
+  <text x="501" y="284" class="t">Satış ve Rapor</text>
+</svg>
