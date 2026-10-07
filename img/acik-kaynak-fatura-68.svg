@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8e2ff"/>
+      <stop offset="100%" stop-color="#d9f0ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5d7090" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5d7090" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="52" r="78" fill="#dceefd" opacity="0.46"/>
+  <circle cx="590" cy="282" r="105" fill="#dff1d9" opacity="0.42"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34445e">Açık Kaynak Fatura Sistemleri</text>
+  <text x="320" y="45" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718098">Veri modeli • hesaplama • ürün seçimi</text>
+
+  <!-- Input data -->
+  <g filter="url(#softShadow)">
+    <rect x="28" y="93" width="125" height="45" rx="14" fill="#ffffff"/>
+    <circle cx="48" cy="115" r="11" fill="#d8f0ee"/>
+    <circle cx="48" cy="111" r="4" fill="#4b9994"/>
+    <path d="M41 122 C42 116 54 116 55 122" fill="none" stroke="#4b9994" stroke-width="2" stroke-linecap="round"/>
+    <text x="66" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40516a">Müşteri</text>
+    <text x="66" y="127" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8799">kayıtları</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="28" y="159" width="125" height="45" rx="14" fill="#ffffff"/>
+    <rect x="39" y="170" width="19" height="19" rx="5" fill="#ffe6bf"/>
+    <path d="M44 176h9M44 181h9M44 186h5" stroke="#c8843f" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="66" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40516a">Ürün ve hizmet</text>
+    <text x="66" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8799">miktar • fiyat</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="28" y="225" width="125" height="45" rx="14" fill="#ffffff"/>
+    <circle cx="48" cy="247" r="11" fill="#f8dce6"/>
+    <path d="M48 240v14M53 243c-1-1-3-2-5-2-3 0-5 1-5 3 0 5 10 2 10 7 0 2-2 3-5 3-2 0-4-1-6-2" fill="none" stroke="#bf6680" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="66" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40516a">Ödeme</text>
+    <text x="66" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8799">durumu • para birimi</text>
+  </g>
+
+  <!-- arrows input to engine -->
+  <path d="M153 115 H189" fill="none" stroke="#91a7c3" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="189,115 182,111 182,119" fill="#91a7c3"/>
+  <path d="M153 181 H189" fill="none" stroke="#91a7c3" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="189,181 182,177 182,185" fill="#91a7c3"/>
+  <path d="M153 247 H189" fill="none" stroke="#91a7c3" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="189,247 182,243 182,251" fill="#91a7c3"/>
+
+  <!-- central invoice engine -->
+  <g filter="url(#shadow)">
+    <rect x="190" y="78" width="190" height="205" rx="22" fill="url(#core)" stroke="#c5c9ef"/>
+    <rect x="208" y="96" width="154" height="34" rx="11" fill="#ffffff" opacity="0.83"/>
+    <path d="M221 105h15M221 111h15M221 117h9" stroke="#7568bc" stroke-width="2" stroke-linecap="round"/>
+    <text x="246" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d5082">Fatura Motoru</text>
+
+    <rect x="208" y="143" width="154" height="34" rx="10" fill="#ffffff" opacity="0.72"/>
+    <text x="220" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52637a">Ara toplam</text>
+    <text x="348" y="164" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#52637a">miktar × fiyat</text>
+
+    <path d="M285 180 V191" fill="none" stroke="#8899b6" stroke-width="1.8"/>
+    <polygon points="285,195 281,189 289,189" fill="#8899b6"/>
+
+    <rect x="208" y="198" width="154" height="34" rx="10" fill="#ffffff" opacity="0.72"/>
+    <text x="220" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52637a">İndirim</text>
+    <text x="348" y="219" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52637a">sonra vergi</text>
+
+    <path d="M285 235 V246" fill="none" stroke="#8899b6" stroke-width="1.8"/>
+    <polygon points="285,250 281,244 289,244" fill="#8899b6"/>
+
+    <rect x="220" y="253" width="130" height="20" rx="8" fill="#8276c9"/>
+    <text x="285" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Genel Toplam</text>
+  </g>
+
+  <!-- Output split -->
+  <path d="M380 180 H401 V92 H417" fill="none" stroke="#8fa5bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="417,92 410,88 410,96" fill="#8fa5bd"/>
+  <path d="M380 180 H417" fill="none" stroke="#8fa5bd" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="417,180 410,176 410,184" fill="#8fa5bd"/>
+  <path d="M380 180 H401 V268 H417" fill="none" stroke="#8fa5bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="417,268 410,264 410,272" fill="#8fa5bd"/>
+
+  <!-- comparison cards -->
+  <g filter="url(#softShadow)">
+    <rect x="418" y="58" width="194" height="69" rx="16" fill="#fff4e8"/>
+    <rect x="432" y="70" width="31" height="31" rx="9" fill="#f5b96e"/>
+    <path d="M440 80h15M440 86h11M440 92h15" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="474" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b5730">Invoice Ninja</text>
+    <text x="474" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805f49">Yinelenen fatura</text>
+    <text x="474" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805f49">Portal ve ödeme</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="418" y="145" width="194" height="69" rx="16" fill="#e6f5eb"/>
+    <rect x="432" y="157" width="31" height="31" rx="9" fill="#68b98b"/>
+    <path d="M440 181v-10M447 181v-16M454 181v-7" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="474" y="167" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397052">Akaunting</text>
+    <text x="474" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527461">Gelir ve gider</text>
+    <text x="474" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527461">Muhasebe odaklı</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="418" y="232" width="194" height="69" rx="16" fill="#e8efff"/>
+    <rect x="432" y="244" width="31" height="31" rx="9" fill="#7c9ee5"/>
+    <path d="M441 253h13M441 259h13M441 265h8" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="474" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d639a">Crater</text>
+    <text x="474" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617399">Sade ve hızlı</text>
+    <text x="474" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617399">Temel faturalama</text>
+  </g>
+</svg>

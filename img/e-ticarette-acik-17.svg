@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#786fe8"/>
+      <stop offset="100%" stop-color="#5b9dde"/>
+    </linearGradient>
+    <filter id="golge" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#61738d" flood-opacity="0.19"/>
+    </filter>
+    <filter id="hafifGolge" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#61738d" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="82" cy="38" r="74" fill="#dfeffc" opacity="0.55"/>
+  <circle cx="583" cy="280" r="100" fill="#ddefd8" opacity="0.45"/>
+  <path d="M20 268 C122 235 145 281 245 259 S406 228 620 255" fill="none" stroke="#d4e4ef" stroke-width="2"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40526b">Dijital Açık Artırma Akışı</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78879a">Teklif • doğrulama • kazanan • ödeme</text>
+
+  <!-- Left platform cards -->
+  <g filter="url(#hafifGolge)">
+    <rect x="28" y="83" width="128" height="59" rx="15" fill="#fff" stroke="#d5e4f0"/>
+    <rect x="28" y="83" width="7" height="59" rx="4" fill="#79b5e9"/>
+    <rect x="47" y="98" width="24" height="24" rx="7" fill="#e5f2fd"/>
+    <path d="M53 105 h12 M53 110 h12 M53 115 h8" stroke="#4b91cc" stroke-width="2" stroke-linecap="round"/>
+    <text x="80" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40526b">OpenCart</text>
+    <text x="80" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78879a">Modül</text>
+
+    <rect x="28" y="174" width="128" height="59" rx="15" fill="#fff" stroke="#d5e4f0"/>
+    <rect x="28" y="174" width="7" height="59" rx="4" fill="#a984d7"/>
+    <circle cx="59" cy="203" r="12" fill="#f1e8fb"/>
+    <path d="M52 199 C55 194 63 194 66 199 M54 207 C57 211 62 211 65 207" fill="none" stroke="#9562c7" stroke-width="2" stroke-linecap="round"/>
+    <text x="80" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40526b">WooCommerce</text>
+    <text x="80" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78879a">Eklenti</text>
+  </g>
+
+  <!-- Input merge arrows -->
+  <path d="M156 112 H191 Q201 112 201 122 V137 H224" fill="none" stroke="#9bb5ca" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="224,137 216,132 216,142" fill="#9bb5ca"/>
+  <path d="M156 203 H191 Q201 203 201 193 V178 H224" fill="none" stroke="#9bb5ca" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="224,178 216,173 216,183" fill="#9bb5ca"/>
+
+  <!-- Core -->
+  <g filter="url(#golge)">
+    <rect x="224" y="104" width="191" height="111" rx="23" fill="url(#merkez)"/>
+    <circle cx="258" cy="137" r="19" fill="#ffffff" opacity="0.18"/>
+    <path d="M250 137 h16 M258 129 v16 M252 131 l12 12 M264 131 l-12 12" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
+    <text x="286" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Açık Artırma Motoru</text>
+    <text x="286" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eef4ff">Sunucu zamanı</text>
+    <path d="M244 169 H395" stroke="#ffffff" stroke-opacity="0.25"/>
+    <text x="245" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">En yüksek teklif kazanır</text>
+    <rect x="363" y="177" width="31" height="20" rx="10" fill="#ffffff" opacity="0.19"/>
+    <text x="370" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">TL</text>
+  </g>
+
+  <!-- top supporting functions -->
+  <g filter="url(#hafifGolge)">
+    <rect x="231" y="67" width="79" height="25" rx="12" fill="#fff7df" stroke="#f0deb2"/>
+    <text x="244" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#8b6a26">Rezerv</text>
+    <rect x="325" y="67" width="90" height="25" rx="12" fill="#e5f6ee" stroke="#c8e7d7"/>
+    <text x="337" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38785b">Süre uzatma</text>
+  </g>
+  <path d="M270 92 V103 M370 92 V103" stroke="#a7bac7" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- right validation -->
+  <path d="M415 159 H440" stroke="#8ba9bd" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="440,159 432,154 432,164" fill="#8ba9bd"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="440" y="105" width="164" height="108" rx="18" fill="#ffffff" stroke="#d7e5ec"/>
+    <rect x="457" y="122" width="37" height="37" rx="11" fill="#e8f6ef"/>
+    <path d="M466 141 l6 6 13-14" fill="none" stroke="#48a471" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="506" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40526b">Teklif Denetimi</text>
+    <text x="506" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718197">Minimum artış</text>
+    <path d="M457 172 H587" stroke="#e3ebee"/>
+    <rect x="457" y="181" width="57" height="19" rx="9" fill="#edf8f1"/>
+    <text x="466" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#478365">Kabul</text>
+    <rect x="523" y="181" width="64" height="19" rx="9" fill="#fcebed"/>
+    <text x="534" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#b5616b">Reddet</text>
+  </g>
+
+  <!-- outcome lower flow -->
+  <path d="M510 213 V239 H448" fill="none" stroke="#8ba9bd" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="448,239 456,234 456,244" fill="#8ba9bd"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="283" y="239" width="165" height="53" rx="16" fill="#ffffff" stroke="#d7e5ec"/>
+    <circle cx="309" cy="265" r="14" fill="#fff1d9"/>
+    <path d="M303 267 l4 4 8-9" fill="none" stroke="#d29138" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="333" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40526b">Kazanan ve Sipariş</text>
+    <text x="333" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78879a">Ödeme süreci</text>
+  </g>
+
+  <!-- auto bid chip -->
+  <path d="M224 210 V249 H207" fill="none" stroke="#a4b8c5" stroke-width="1.7" stroke-dasharray="4 4"/>
+  <g filter="url(#hafifGolge)">
+    <rect x="69" y="244" width="138" height="42" rx="15" fill="#ffffff" stroke="#d7e5ec"/>
+    <circle cx="91" cy="265" r="11" fill="#eee9fc"/>
+    <path d="M87 265 h8 M91 261 v8" stroke="#8065c7" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="109" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#536078">Otomatik teklif</text>
+    <text x="109" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d8b9a">Gizli limit</text>
+  </g>
+</svg>
