@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="browser" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce3fa"/>
+    </linearGradient>
+    <linearGradient id="server" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f5e8"/>
+      <stop offset="100%" stop-color="#bde8d2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a2" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="35" r="58" fill="#d9edff" opacity="0.42"/>
+  <circle cx="592" cy="286" r="78" fill="#d9f1d5" opacity="0.42"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">Tarayıcı Tabanlı Geliştirme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="82" width="132" height="150" rx="18" fill="url(#browser)"/>
+    <rect x="40" y="101" width="108" height="82" rx="9" fill="#fafdff"/>
+    <rect x="40" y="101" width="108" height="16" rx="9" fill="#b7d5ef"/>
+    <circle cx="52" cy="109" r="3" fill="#ee8d87"/>
+    <circle cx="62" cy="109" r="3" fill="#f2c879"/>
+    <circle cx="72" cy="109" r="3" fill="#83c99c"/>
+    <rect x="51" y="130" width="29" height="5" rx="2.5" fill="#86aaca"/>
+    <rect x="51" y="142" width="75" height="5" rx="2.5" fill="#caddeb"/>
+    <rect x="51" y="154" width="58" height="5" rx="2.5" fill="#caddeb"/>
+    <rect x="51" y="166" width="65" height="5" rx="2.5" fill="#b4cde2"/>
+    <text x="94" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a78">Tarayıcı</text>
+    <text x="94" y="221" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#57758d">İstemci</text>
+  </g>
+
+  <path d="M166 157 L210 157" fill="none" stroke="#7597ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="210,157 201,152 201,162" fill="#7597ae"/>
+  <text x="187" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607b8c">ağ</text>
+
+  <g filter="url(#shadow)">
+    <rect x="216" y="59" width="194" height="196" rx="22" fill="url(#server)"/>
+    <rect x="233" y="76" width="160" height="35" rx="11" fill="#f8fffb"/>
+    <circle cx="252" cy="93" r="9" fill="#66bd94"/>
+    <path d="M248 93 L251 96 L257 89" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="270" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386d58">Uzak Çalışma Alanı</text>
+
+    <rect x="233" y="122" width="70" height="51" rx="11" fill="#e8f7ef"/>
+    <path d="M247 140 L255 134 L263 140 L255 146 Z" fill="#5fae88"/>
+    <rect x="247" y="151" width="42" height="6" rx="3" fill="#9dccb3"/>
+    <text x="268" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406d5a">Kod</text>
+
+    <rect x="321" y="122" width="72" height="51" rx="11" fill="#e8f7ef"/>
+    <rect x="336" y="133" width="42" height="8" rx="4" fill="#63ae8b"/>
+    <rect x="336" y="146" width="32" height="6" rx="3" fill="#9dccb3"/>
+    <rect x="336" y="157" width="39" height="6" rx="3" fill="#9dccb3"/>
+    <text x="357" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406d5a">Terminal</text>
+
+    <rect x="233" y="184" width="70" height="51" rx="11" fill="#e8f7ef"/>
+    <circle cx="253" cy="205" r="10" fill="#67b78f"/>
+    <path d="M253 198 L253 205 L258 208" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="268" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406d5a">Derleme</text>
+
+    <rect x="321" y="184" width="72" height="51" rx="11" fill="#e8f7ef"/>
+    <ellipse cx="357" cy="198" rx="15" ry="6" fill="#65b38d"/>
+    <path d="M342 198 L342 209 C342 217 372 217 372 209 L372 198" fill="#87caa8"/>
+    <ellipse cx="357" cy="209" rx="15" ry="6" fill="#87caa8"/>
+    <text x="357" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#406d5a">Dosyalar</text>
+  </g>
+
+  <path d="M416 157 L443 157 L443 70 L460 70" fill="none" stroke="#7d99a9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="460,70 451,65 451,75" fill="#7d99a9"/>
+  <path d="M416 157 L443 157" fill="none" stroke="#7d99a9" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M443 157 L443 158 L460 158" fill="none" stroke="#7d99a9" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="460,158 451,153 451,163" fill="#7d99a9"/>
+  <path d="M416 157 L443 157 L443 246 L460 246" fill="none" stroke="#7d99a9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="460,246 451,241 451,251" fill="#7d99a9"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="466" y="40" width="148" height="60" rx="15" fill="#f3e8ff"/>
+    <circle cx="486" cy="61" r="11" fill="#a67ac9"/>
+    <path d="M482 61 L486 65 L492 57" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="508" y="62" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#654381">code-server</text>
+    <text x="508" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806692">Hızlı kurulum</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="466" y="128" width="148" height="60" rx="15" fill="#fff0dc"/>
+    <circle cx="486" cy="149" r="11" fill="#d7964e"/>
+    <rect x="480" y="144" width="12" height="10" rx="2" fill="#fff"/>
+    <path d="M482 142 L482 139 L485 139 L485 142 M488 142 L488 139 L491 139 L491 142" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="508" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#875b28">Eclipse Che</text>
+    <text x="508" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7243">Kubernetes ve ekip</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="466" y="216" width="148" height="60" rx="15" fill="#e1f0ff"/>
+    <circle cx="486" cy="237" r="11" fill="#5797ca"/>
+    <path d="M481 233 L486 230 L491 233 L491 240 L486 243 L481 240 Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+    <text x="508" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6d98">Eclipse Theia</text>
+    <text x="508" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e83a4">Özel IDE platformu</text>
+  </g>
+
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808a">Güçlü sunucu · Ağ bağımlılığı</text>
+</svg>
