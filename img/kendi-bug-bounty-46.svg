@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="mainGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d7f3eb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6b8296" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6b8296" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="42" r="74" fill="#dceeff" opacity="0.42"/>
+  <circle cx="582" cy="275" r="90" fill="#d9f3df" opacity="0.45"/>
+  <circle cx="591" cy="41" r="42" fill="#fff3cf" opacity="0.45"/>
+
+  <text x="30" y="31" fill="#365166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Güvenli Hata Bildirim Platformu</text>
+  <text x="30" y="48" fill="#718796" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kontrollü rapor yaşam döngüsü</text>
+
+  <!-- Top role cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="31" y="70" width="119" height="49" rx="13" fill="#ffffff"/>
+    <circle cx="54" cy="94" r="12" fill="#d8eaff"/>
+    <path d="M49 91c0-3 2-5 5-5s5 2 5 5-2 5-5 5-5-2-5-5zm-4 12c1-4 4-6 9-6s8 2 9 6" fill="none" stroke="#4d78a3" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="73" y="91" fill="#3f5869" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Araştırmacı</text>
+    <text x="73" y="106" fill="#7b909d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Rapor ve kanıt</text>
+
+    <rect x="166" y="70" width="119" height="49" rx="13" fill="#ffffff"/>
+    <circle cx="189" cy="94" r="12" fill="#e9dcff"/>
+    <path d="M184 94l3 3 7-7m-10-4h10v15h-10z" fill="none" stroke="#8063ab" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="208" y="91" fill="#3f5869" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Triyaj</text>
+    <text x="208" y="106" fill="#7b909d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Doğrulama</text>
+
+    <rect x="301" y="70" width="119" height="49" rx="13" fill="#ffffff"/>
+    <circle cx="324" cy="94" r="12" fill="#fff0ce"/>
+    <path d="M318 98v-7l6-4 6 4v7l-6 4z" fill="none" stroke="#a77b32" stroke-width="1.6" stroke-linejoin="round"/>
+    <text x="343" y="91" fill="#3f5869" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Program sahibi</text>
+    <text x="343" y="106" fill="#7b909d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kapsam ve ödül</text>
+  </g>
+
+  <!-- connectors roles to center -->
+  <path d="M90 120 L90 142 L201 142" fill="none" stroke="#a8c2ce" stroke-width="1.5"/>
+  <path d="M225 120 L225 142" fill="none" stroke="#a8c2ce" stroke-width="1.5"/>
+  <path d="M360 120 L360 142 L439 142" fill="none" stroke="#a8c2ce" stroke-width="1.5"/>
+  <circle cx="90" cy="142" r="3" fill="#8eb6c8"/>
+  <circle cx="225" cy="142" r="3" fill="#8eb6c8"/>
+  <circle cx="360" cy="142" r="3" fill="#8eb6c8"/>
+
+  <!-- Main state machine -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="154" width="430" height="82" rx="20" fill="url(#mainGrad)" stroke="#c3dce1"/>
+  </g>
+  <text x="51" y="177" fill="#38596a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Rapor Durum Makinesi</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <rect x="48" y="191" width="57" height="27" rx="9" fill="#ffffff"/>
+    <text x="76.5" y="208" fill="#496675">Taslak</text>
+
+    <path d="M108 204 L122 204" stroke="#6da9a5" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="126,204 120,200 120,208" fill="#6da9a5"/>
+
+    <rect x="129" y="191" width="65" height="27" rx="9" fill="#ffffff"/>
+    <text x="161.5" y="208" fill="#496675">Gönderildi</text>
+
+    <path d="M197 204 L211 204" stroke="#6da9a5" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="215,204 209,200 209,208" fill="#6da9a5"/>
+
+    <rect x="218" y="191" width="70" height="27" rx="9" fill="#ffffff"/>
+    <text x="253" y="208" fill="#496675">İnceleniyor</text>
+
+    <path d="M291 204 L305 204" stroke="#6da9a5" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="309,204 303,200 303,208" fill="#6da9a5"/>
+
+    <rect x="312" y="191" width="67" height="27" rx="9" fill="#ffffff"/>
+    <text x="345.5" y="208" fill="#496675">Doğrulandı</text>
+
+    <path d="M382 204 L396 204" stroke="#6da9a5" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="400,204 394,200 394,208" fill="#6da9a5"/>
+
+    <rect x="403" y="191" width="43" height="27" rx="9" fill="#d7f3df"/>
+    <text x="424.5" y="208" fill="#397059">Çözüldü</text>
+  </g>
+
+  <!-- Rejection paths -->
+  <path d="M253 219 L253 248 L192 248" fill="none" stroke="#d79691" stroke-width="1.7" stroke-linecap="round"/>
+  <polygon points="188,248 194,244 194,252" fill="#d79691"/>
+  <path d="M161 219 L161 248 L126 248" fill="none" stroke="#d2a277" stroke-width="1.7" stroke-linecap="round"/>
+  <polygon points="122,248 128,244 128,252" fill="#d2a277"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="237" width="77" height="25" rx="9" fill="#fff0df"/>
+    <text x="80.5" y="254" text-anchor="middle" fill="#99704c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Mükerrer</text>
+    <rect x="126" y="237" width="65" height="25" rx="9" fill="#ffe5e4"/>
+    <text x="158.5" y="254" text-anchor="middle" fill="#9a5b5a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Reddedildi</text>
+  </g>
+
+  <!-- Security guard -->
+  <g filter="url(#shadow)">
+    <rect x="481" y="76" width="128" height="160" rx="20" fill="#ffffff" stroke="#d4e3de"/>
+  </g>
+  <path d="M545 94l24 9v20c0 20-15 30-24 34-9-4-24-14-24-34v-20z" fill="#d9f3eb" stroke="#6da996" stroke-width="1.5"/>
+  <path d="M536 123l6 6 12-13" fill="none" stroke="#39816c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="545" y="176" text-anchor="middle" fill="#38596a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Güvenlik Katmanı</text>
+  <line x1="501" y1="187" x2="589" y2="187" stroke="#e2ece7"/>
+  <circle cx="506" cy="202" r="3.5" fill="#70b09b"/>
+  <text x="516" y="206" fill="#65808a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Rol denetimi</text>
+  <circle cx="506" cy="221" r="3.5" fill="#70b09b"/>
+  <text x="516" y="225" fill="#65808a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Şifreli kanıt</text>
+
+  <!-- line to guard -->
+  <path d="M460 195 L476 195" fill="none" stroke="#8db9b0" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="480,195 474,191 474,199" fill="#8db9b0"/>
+
+  <!-- lower modules -->
+  <g filter="url(#smallShadow)">
+    <rect x="221" y="251" width="113" height="45" rx="13" fill="#ffffff"/>
+    <circle cx="244" cy="274" r="12" fill="#fff0cf"/>
+    <path d="M239 279l5-11 5 11m-8-4h6" fill="none" stroke="#a77b32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="263" y="271" fill="#415d6b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Risk ve Ödül</text>
+    <text x="263" y="285" fill="#7c909a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İnsan onayı</text>
+
+    <rect x="350" y="251" width="113" height="45" rx="13" fill="#ffffff"/>
+    <circle cx="373" cy="274" r="12" fill="#e5defb"/>
+    <path d="M368 278v-8h10v8m-7-8v-3h4v3m-8 8h12" fill="none" stroke="#8069ad" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="392" y="271" fill="#415d6b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Denetim Kaydı</text>
+    <text x="392" y="285" fill="#7c909a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Atomik işlem</text>
+  </g>
+
+  <path d="M321 237 L321 247" fill="none" stroke="#9ab8bd" stroke-width="1.5"/>
+  <circle cx="321" cy="247" r="3" fill="#8eb6b6"/>
+</svg>

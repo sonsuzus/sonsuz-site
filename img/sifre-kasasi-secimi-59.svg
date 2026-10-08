@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="kasa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8dcf3"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="58" cy="48" r="72" fill="#dff1ef" opacity="0.42"/>
+  <circle cx="590" cy="267" r="92" fill="#e5e6fb" opacity="0.45"/>
+
+  <text x="320" y="28" text-anchor="middle" fill="#40566e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Şifre Kasası Seçim Haritası</text>
+
+  <path d="M320 112 L320 138 L130 138 L130 160" fill="none" stroke="#8ca5b7" stroke-width="2"/>
+  <polygon points="124,156 136,156 130,166" fill="#8ca5b7"/>
+  <path d="M320 112 L320 160" fill="none" stroke="#8ca5b7" stroke-width="2"/>
+  <polygon points="314,156 326,156 320,166" fill="#8ca5b7"/>
+  <path d="M320 112 L320 138 L510 138 L510 160" fill="none" stroke="#8ca5b7" stroke-width="2"/>
+  <polygon points="504,156 516,156 510,166" fill="#8ca5b7"/>
+
+  <g filter="url(#golge)">
+    <rect x="215" y="47" width="210" height="66" rx="18" fill="url(#kasa)" stroke="#aec9e2"/>
+    <circle cx="258" cy="80" r="18" fill="#f8fcff" stroke="#87a9c6" stroke-width="2"/>
+    <path d="M250 79 L256 85 L267 73" fill="none" stroke="#4d7799" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="279" y="66" width="117" height="11" rx="5.5" fill="#7aa0c1" opacity="0.32"/>
+    <rect x="279" y="86" width="81" height="7" rx="3.5" fill="#6b8da9" opacity="0.28"/>
+  </g>
+  <text x="336" y="76" text-anchor="middle" fill="#2f4b65" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Şifreli Kasa</text>
+  <text x="336" y="96" text-anchor="middle" fill="#54708a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sıfır bilgi · İstemci çözümü</text>
+
+  <g filter="url(#golge)">
+    <rect x="37" y="166" width="186" height="112" rx="17" fill="#e8f1ff" stroke="#bbd2eb"/>
+    <rect x="52" y="181" width="42" height="42" rx="12" fill="#bed8f5"/>
+    <path d="M65 202 L70 207 L82 194" fill="none" stroke="#4d789f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="108" y="194" fill="#315675" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Bitwarden</text>
+    <text x="108" y="212" fill="#5c7890" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Dengeli ekosistem</text>
+    <line x1="54" y1="237" x2="206" y2="237" stroke="#b5cce4"/>
+    <text x="60" y="258" fill="#49677f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Bulut veya kendi sunucun</text>
+  </g>
+
+  <g filter="url(#golge)">
+    <rect x="227" y="166" width="186" height="112" rx="17" fill="#e7f6ed" stroke="#b9dec8"/>
+    <rect x="242" y="181" width="42" height="42" rx="12" fill="#bee4cd"/>
+    <rect x="253" y="191" width="20" height="7" rx="2" fill="#4f8b6d"/>
+    <rect x="253" y="202" width="20" height="7" rx="2" fill="#4f8b6d"/>
+    <text x="298" y="194" fill="#356b52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Vaultwarden</text>
+    <text x="298" y="212" fill="#5b826d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hafif kurulum</text>
+    <line x1="244" y1="237" x2="396" y2="237" stroke="#b7dbc5"/>
+    <text x="250" y="258" fill="#4c7560" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Düşük kaynak · Self-hosted</text>
+  </g>
+
+  <g filter="url(#golge)">
+    <rect x="417" y="166" width="186" height="112" rx="17" fill="#f4eafa" stroke="#dac4eb"/>
+    <rect x="432" y="181" width="42" height="42" rx="12" fill="#dec8ef"/>
+    <circle cx="445" cy="197" r="5" fill="#805aa0"/>
+    <circle cx="462" cy="197" r="5" fill="#805aa0"/>
+    <path d="M445 207 Q453 200 462 207" fill="none" stroke="#805aa0" stroke-width="2" stroke-linecap="round"/>
+    <text x="488" y="194" fill="#68427f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Passbolt</text>
+    <text x="488" y="212" fill="#876a99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ekip paylaşımı</text>
+    <line x1="434" y1="237" x2="586" y2="237" stroke="#dcc7e9"/>
+    <text x="440" y="258" fill="#77578b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Grup ve yetki yönetimi</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="163" y="290" width="314" height="22" rx="11" fill="#ffffff" opacity="0.84"/>
+  </g>
+  <circle cx="180" cy="301" r="4" fill="#6b9dbb"/>
+  <text x="191" y="305" fill="#526d80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Güçlü ana parola</text>
+  <circle cx="299" cy="301" r="4" fill="#75a986"/>
+  <text x="310" y="305" fill="#526d80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">MFA</text>
+  <circle cx="361" cy="301" r="4" fill="#a47bbb"/>
+  <text x="372" y="305" fill="#526d80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">HTTPS ve yedek</text>
+</svg>
