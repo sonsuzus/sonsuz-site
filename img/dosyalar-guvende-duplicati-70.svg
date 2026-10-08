@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9ddf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="92" cy="38" r="72" fill="#d8f0eb" opacity="0.42"/>
+  <circle cx="582" cy="277" r="98" fill="#e5dcf6" opacity="0.38"/>
+
+  <text x="30" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42566c">GÜVENLİ YEDEKLEME MİMARİSİ</text>
+  <text x="30" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">Artımlı akış • şifreli depo • geri yükleme testi</text>
+
+  <!-- Source -->
+  <g filter="url(#shadow)">
+    <rect x="29" y="119" width="118" height="90" rx="18" fill="#ffffff"/>
+    <rect x="42" y="134" width="92" height="28" rx="9" fill="#e7f2ff"/>
+    <path d="M55 143h17l5 5h44v8H55z" fill="#7ba9dd"/>
+    <rect x="42" y="174" width="92" height="20" rx="7" fill="#f1f6fb"/>
+  </g>
+  <text x="88" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566e">Kaynak Veri</text>
+  <text x="88" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">Dosyalar</text>
+
+  <!-- Flow source to core -->
+  <path d="M151 164 H204" fill="none" stroke="#8ca9bd" stroke-width="2.5"/>
+  <polygon points="204,164 196,159 196,169" fill="#8ca9bd"/>
+
+  <!-- Core -->
+  <g filter="url(#shadow)">
+    <rect x="208" y="94" width="166" height="142" rx="24" fill="url(#core)"/>
+    <rect x="224" y="110" width="134" height="36" rx="13" fill="#ffffff" opacity="0.78"/>
+    <path d="M243 128c0-9 7-16 16-16s16 7 16 16v8h-32z" fill="#6b95c3"/>
+    <rect x="247" y="126" width="24" height="18" rx="4" fill="#8eb9df"/>
+    <circle cx="259" cy="135" r="2.5" fill="#ffffff"/>
+    <rect x="285" y="120" width="55" height="7" rx="3.5" fill="#aac7e3"/>
+    <rect x="285" y="133" width="42" height="6" rx="3" fill="#d0e1f0"/>
+    <rect x="224" y="157" width="40" height="55" rx="12" fill="#d9f2e7"/>
+    <rect x="271" y="157" width="40" height="55" rx="12" fill="#fff0ce"/>
+    <rect x="318" y="157" width="40" height="55" rx="12" fill="#eadffc"/>
+  </g>
+  <text x="291" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45607a">Şifrele</text>
+  <text x="291" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c84">Tekilleştir</text>
+  <text x="244" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557067">Artımlı</text>
+  <text x="291" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76663e">Sıkıştır</text>
+  <text x="338" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66577d">Doğrula</text>
+
+  <!-- outgoing branches -->
+  <path d="M378 145 C397 145 397 91 417 91" fill="none" stroke="#8ba8bd" stroke-width="2.5"/>
+  <polygon points="417,91 409,86 410,96" fill="#8ba8bd"/>
+  <path d="M378 165 H417" fill="none" stroke="#8ba8bd" stroke-width="2.5"/>
+  <polygon points="417,165 409,160 409,170" fill="#8ba8bd"/>
+  <path d="M378 186 C397 186 397 238 417 238" fill="none" stroke="#8ba8bd" stroke-width="2.5"/>
+  <polygon points="417,238 409,233 410,243" fill="#8ba8bd"/>
+
+  <!-- Tool cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="421" y="57" width="185" height="67" rx="16" fill="#ffffff"/>
+    <rect x="435" y="71" width="32" height="32" rx="10" fill="#d9f0e8"/>
+    <circle cx="451" cy="87" r="8" fill="none" stroke="#5eaa8e" stroke-width="2"/>
+    <path d="M451 82v6l4 3" fill="none" stroke="#5eaa8e" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="480" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566e">Duplicati</text>
+  <text x="480" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">Arayüz ve bulut</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="421" y="132" width="185" height="67" rx="16" fill="#ffffff"/>
+    <rect x="435" y="146" width="32" height="32" rx="10" fill="#fff0cd"/>
+    <path d="M442 166h18l-3-12h-12z" fill="#c89246"/>
+    <path d="M445 154v-4h10v4" fill="none" stroke="#c89246" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="451" cy="162" r="2" fill="#ffffff"/>
+  </g>
+  <text x="480" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566e">BorgBackup</text>
+  <text x="480" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">Verimli SSH depo</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="421" y="206" width="185" height="67" rx="16" fill="#ffffff"/>
+    <rect x="435" y="220" width="32" height="32" rx="10" fill="#e9ddf8"/>
+    <path d="M451 227l8 4v8c0 5-4 8-8 10-4-2-8-5-8-10v-8z" fill="#8c72bd"/>
+    <path d="M447 238l3 3 5-6" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="480" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566e">Restic</text>
+  <text x="480" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">Taşınabilir güvenlik</text>
+
+  <!-- 3-2-1 footer -->
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="263" width="344" height="36" rx="14" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <circle cx="54" cy="281" r="12" fill="#dcecff"/>
+  <text x="54" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d78a7">3</text>
+  <text x="75" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c84">Kopya</text>
+  <path d="M127 281h16" stroke="#b3c7d7" stroke-width="2"/>
+  <circle cx="164" cy="281" r="12" fill="#d9f2e7"/>
+  <text x="164" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f9279">2</text>
+  <text x="185" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c84">Ortam</text>
+  <path d="M237 281h16" stroke="#b3c7d7" stroke-width="2"/>
+  <circle cx="274" cy="281" r="12" fill="#eadffc"/>
+  <text x="274" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765aa3">1</text>
+  <text x="295" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c84">Uzak konum</text>
+</svg>

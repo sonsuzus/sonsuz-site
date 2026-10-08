@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="client" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f1ff"/>
+      <stop offset="100%" stop-color="#cfe4fb"/>
+    </linearGradient>
+    <linearGradient id="work" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff4d8"/>
+      <stop offset="100%" stop-color="#f9dfab"/>
+    </linearGradient>
+    <linearGradient id="server" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2f7e9"/>
+      <stop offset="100%" stop-color="#c2ead3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54728a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#607d8b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="91" cy="55" r="82" fill="#dceeff" opacity="0.42"/>
+  <circle cx="575" cy="258" r="99" fill="#dff3d8" opacity="0.4"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385368">Görsel Bulmacasız CAPTCHA Akışı</text>
+
+  <path d="M170 122 H220" fill="none" stroke="#82a0b4" stroke-width="2.5"/>
+  <polygon points="220,122 211,117 211,127" fill="#82a0b4"/>
+  <path d="M374 122 H428" fill="none" stroke="#82a0b4" stroke-width="2.5"/>
+  <polygon points="428,122 419,117 419,127" fill="#82a0b4"/>
+  <path d="M476 170 V198" fill="none" stroke="#82a0b4" stroke-width="2.5"/>
+  <polygon points="476,198 471,189 481,189" fill="#82a0b4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="78" width="135" height="89" rx="18" fill="url(#client)" stroke="#b6d2eb"/>
+    <rect x="49" y="94" width="42" height="33" rx="7" fill="#f9fdff" stroke="#91b9d8"/>
+    <path d="M60 135 H80 M65 141 H75" stroke="#719cbf" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="121" cy="111" r="15" fill="#f9fdff" stroke="#91b9d8"/>
+    <path d="M114 111 L119 116 L129 105" fill="none" stroke="#5b9a7c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="102" y="150" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345a75">Tarayıcı</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="220" y="65" width="154" height="114" rx="21" fill="url(#work)" stroke="#e8c97e"/>
+    <circle cx="297" cy="103" r="25" fill="#fffaf0" stroke="#dfbd69" stroke-width="1.5"/>
+    <path d="M286 103 H308 M297 92 V114" stroke="#d39c38" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M283 123 C290 130 304 130 312 123" fill="none" stroke="#d39c38" stroke-width="2" stroke-linecap="round"/>
+    <text x="297" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76531b">İş İspatı</text>
+    <text x="297" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c6b2c">Arka plan hesabı</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="428" y="78" width="96" height="92" rx="18" fill="url(#server)" stroke="#a7d5b7"/>
+    <rect x="449" y="94" width="54" height="10" rx="5" fill="#f8fffa" stroke="#8fc6a4"/>
+    <rect x="449" y="111" width="54" height="10" rx="5" fill="#f8fffa" stroke="#8fc6a4"/>
+    <rect x="449" y="128" width="54" height="10" rx="5" fill="#f8fffa" stroke="#8fc6a4"/>
+    <circle cx="501" cy="143" r="11" fill="#f8fffa" stroke="#75b48e"/>
+    <path d="M496 143 L500 147 L507 138" fill="none" stroke="#4f9a6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="476" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356c4a">Sunucu</text>
+  </g>
+
+  <text x="195" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597386">Meydan okuma</text>
+  <text x="401" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597386">Çözüm</text>
+  <text x="493" y="190" text-anchor="start" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597386">Doğrulama</text>
+
+  <g filter="url(#soft)">
+    <rect x="72" y="216" width="142" height="70" rx="15" fill="#f0e9ff" stroke="#d2c1ed"/>
+    <circle cx="98" cy="242" r="13" fill="#fbf9ff" stroke="#b69bdc"/>
+    <path d="M92 242 H104 M98 236 V248" stroke="#8b6db9" stroke-width="2" stroke-linecap="round"/>
+    <text x="151" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#62478c">ALTCHA</text>
+    <text x="151" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765f98">Kendi barındırma</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="249" y="216" width="142" height="70" rx="15" fill="#e7f5ff" stroke="#b9dced"/>
+    <circle cx="275" cy="242" r="13" fill="#f9fdff" stroke="#8bc1db"/>
+    <path d="M269 244 C272 237 279 237 282 244" fill="none" stroke="#5294b7" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="275" cy="239" r="2.5" fill="#5294b7"/>
+    <text x="328" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39728f">Friendly Captcha</text>
+    <text x="328" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8094">Yönetilen servis</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="426" y="216" width="142" height="70" rx="15" fill="#e9f7ed" stroke="#b8dfc3"/>
+    <circle cx="452" cy="242" r="13" fill="#fbfffc" stroke="#8fc59e"/>
+    <path d="M445 245 C448 235 456 235 459 245 M445 240 H459" fill="none" stroke="#57976b" stroke-width="2" stroke-linecap="round"/>
+    <text x="505" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7650">mCaptcha</text>
+    <text x="505" y="260" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8465">Uyarlanabilir yapı</text>
+  </g>
+
+  <path d="M476 198 C415 207 209 207 143 216" fill="none" stroke="#aac0ca" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M476 198 C430 208 350 208 320 216" fill="none" stroke="#aac0ca" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M476 198 C488 204 498 207 497 216" fill="none" stroke="#aac0ca" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>
