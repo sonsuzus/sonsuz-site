@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce5ed"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="79" cy="40" r="92" fill="#dceefe" opacity="0.42"/>
+  <circle cx="584" cy="290" r="116" fill="#dcf1dc" opacity="0.42"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#40576b">Tek Sözleşmeden Dokümantasyon Ekosistemi</text>
+
+  <!-- Main contract -->
+  <rect x="235" y="60" width="170" height="88" rx="18" fill="url(#core)" filter="url(#shadow)"/>
+  <rect x="250" y="76" width="28" height="35" rx="5" fill="#ffffff" opacity="0.92"/>
+  <path d="M271 76 L278 83 L271 83 Z" fill="#9fc7dd"/>
+  <path d="M256 90 H271 M256 97 H271 M256 104 H267" stroke="#6d9bb5" stroke-width="2" stroke-linecap="round"/>
+  <text x="291" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31556d">OpenAPI</text>
+  <text x="291" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527088">Tek doğruluk kaynağı</text>
+  <text x="320" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527088">Yollar · Modeller · Güvenlik</text>
+
+  <!-- Connectors from contract -->
+  <path d="M235 110 C196 110 181 121 164 145" fill="none" stroke="#8aa7b7" stroke-width="2.2"/>
+  <polygon points="160,151 161,141 169,147" fill="#8aa7b7"/>
+  <path d="M405 110 C444 110 459 121 476 145" fill="none" stroke="#8aa7b7" stroke-width="2.2"/>
+  <polygon points="480,151 471,147 479,141" fill="#8aa7b7"/>
+  <path d="M320 148 L320 174" fill="none" stroke="#8aa7b7" stroke-width="2.2"/>
+  <polygon points="315,171 325,171 320,179" fill="#8aa7b7"/>
+
+  <!-- Swagger -->
+  <rect x="48" y="157" width="168" height="83" rx="16" fill="#e2f5e9" filter="url(#shadow)"/>
+  <circle cx="77" cy="186" r="16" fill="#73b98a"/>
+  <path d="M70 186 H84 M78 180 L84 186 L78 192" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="103" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35644a">Swagger UI</text>
+  <text x="103" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527568">Etkileşimli deneme</text>
+  <rect x="65" y="214" width="135" height="13" rx="6.5" fill="#bfe4cd"/>
+  <rect x="70" y="218" width="55" height="5" rx="2.5" fill="#72af86"/>
+
+  <!-- Redoc -->
+  <rect x="424" y="157" width="168" height="83" rx="16" fill="#fff0df" filter="url(#shadow)"/>
+  <circle cx="453" cy="186" r="16" fill="#e79a61"/>
+  <path d="M446 179 H460 M446 185 H460 M446 191 H456" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="479" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a512c">Redoc</text>
+  <text x="479" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#84644c">API referansı</text>
+  <rect x="441" y="214" width="135" height="13" rx="6.5" fill="#f8d4b4"/>
+  <rect x="446" y="218" width="76" height="5" rx="2.5" fill="#dc8b52"/>
+
+  <!-- Docusaurus -->
+  <rect x="235" y="183" width="170" height="75" rx="16" fill="#eee6fb" filter="url(#shadow)"/>
+  <circle cx="265" cy="213" r="16" fill="#9e82c9"/>
+  <path d="M257 207 H273 V219 H257 Z M260 204 H270" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+  <text x="291" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#604884">Docusaurus</text>
+  <text x="291" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75638e">Rehberler ve portal</text>
+  <path d="M320 258 L320 273" fill="none" stroke="#8aa7b7" stroke-width="2.2"/>
+  <polygon points="315,270 325,270 320,278" fill="#8aa7b7"/>
+
+  <!-- CI deployment -->
+  <rect x="130" y="279" width="380" height="27" rx="13.5" fill="#ffffff" filter="url(#softShadow)"/>
+  <circle cx="153" cy="292.5" r="8" fill="#77b6b0"/>
+  <path d="M149 292 L152 295 L158 289" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="171" y="297" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476879">CI doğrulama</text>
+  <path d="M258 292.5 H285" stroke="#9ab1bd" stroke-width="1.8"/>
+  <polygon points="281,288 281,297 288,292.5" fill="#9ab1bd"/>
+  <text x="302" y="297" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476879">Sürümleme</text>
+  <path d="M375 292.5 H401" stroke="#9ab1bd" stroke-width="1.8"/>
+  <polygon points="397,288 397,297 404,292.5" fill="#9ab1bd"/>
+  <text x="420" y="297" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476879">Yayınlama</text>
+</svg>

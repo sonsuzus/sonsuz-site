@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#697ce8"/>
+      <stop offset="100%" stop-color="#5368ca"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#66758a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#718097" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="81" cy="45" r="50" fill="#dceffc" opacity="0.55"/>
+  <circle cx="584" cy="270" r="68" fill="#dcefdc" opacity="0.55"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40506a">SUNUCU İZLEME AKIŞI</text>
+  <line x1="28" y1="40" x2="612" y2="40" stroke="#d8e2e8" stroke-width="1"/>
+
+  <!-- sources -->
+  <g filter="url(#softShadow)">
+    <rect x="28" y="69" width="128" height="55" rx="14" fill="#ffffff"/>
+    <rect x="28" y="69" width="7" height="55" rx="4" fill="#7596de"/>
+    <text x="49" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34435b">Sunucular</text>
+    <text x="49" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718097">Agent ve protokol</text>
+
+    <rect x="28" y="137" width="128" height="55" rx="14" fill="#ffffff"/>
+    <rect x="28" y="137" width="7" height="55" rx="4" fill="#8cba84"/>
+    <text x="49" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34435b">Ağ ve cihazlar</text>
+    <text x="49" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718097">SNMP ve HTTP</text>
+
+    <rect x="28" y="205" width="128" height="55" rx="14" fill="#ffffff"/>
+    <rect x="28" y="205" width="7" height="55" rx="4" fill="#e5a56b"/>
+    <text x="49" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34435b">Hizmetler</text>
+    <text x="49" y="247" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718097">Disk, bellek, yanıt</text>
+  </g>
+
+  <!-- connecting lines -->
+  <path d="M156 96 H204 Q214 96 220 106 L243 145" fill="none" stroke="#aebdce" stroke-width="2"/>
+  <polygon points="242,139 250,153 236,148" fill="#aebdce"/>
+  <path d="M156 164 H237" fill="none" stroke="#aebdce" stroke-width="2"/>
+  <polygon points="233,158 245,164 233,170" fill="#aebdce"/>
+  <path d="M156 232 H204 Q214 232 220 222 L243 183" fill="none" stroke="#aebdce" stroke-width="2"/>
+  <polygon points="236,180 250,175 242,190" fill="#aebdce"/>
+
+  <!-- core hub -->
+  <g filter="url(#shadow)">
+    <rect x="245" y="104" width="151" height="120" rx="24" fill="url(#hub)"/>
+    <circle cx="320" cy="144" r="22" fill="#ffffff" opacity="0.18"/>
+    <path d="M307 145 C307 137 313 132 320 132 C327 132 333 137 333 145 C333 152 327 157 320 157 C313 157 307 152 307 145Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M311 147 L316 142 L321 148 L328 139" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="320" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">İzleme Motoru</text>
+    <text x="320" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e5eaff">Metrik toplama</text>
+  </g>
+
+  <!-- flow to decision -->
+  <path d="M396 164 H433" fill="none" stroke="#8496be" stroke-width="2.5"/>
+  <polygon points="429,158 441,164 429,170" fill="#8496be"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="442" y="126" width="104" height="76" rx="17" fill="#fffdf8"/>
+    <path d="M465 151 L479 139 L493 151 L479 163 Z" fill="#f6d58b"/>
+    <line x1="479" y1="145" x2="479" y2="156" stroke="#8f6a2c" stroke-width="1.5"/>
+    <circle cx="479" cy="159" r="1.5" fill="#8f6a2c"/>
+    <text x="501" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#49566a">Eşik</text>
+    <text x="494" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718097">Ortalama kontrolü</text>
+  </g>
+
+  <path d="M546 164 H568 Q577 164 582 155 L590 141" fill="none" stroke="#d69270" stroke-width="2.5"/>
+  <polygon points="584,142 594,133 590,147" fill="#d69270"/>
+  <path d="M546 164 H568 Q577 164 582 174 L590 190" fill="none" stroke="#75a782" stroke-width="2.5"/>
+  <polygon points="585,188 595,198 582,195" fill="#75a782"/>
+
+  <!-- outcomes -->
+  <g filter="url(#softShadow)">
+    <rect x="526" y="73" width="87" height="61" rx="15" fill="#fff5f1"/>
+    <circle cx="548" cy="102" r="11" fill="#ee9a7d"/>
+    <path d="M548 96 L548 103" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="548" cy="107" r="1.5" fill="#ffffff"/>
+    <text x="574" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c4c40">Alarm</text>
+    <text x="574" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a16e64">Bildirim</text>
+
+    <rect x="526" y="199" width="87" height="61" rx="15" fill="#f4fbf3"/>
+    <circle cx="548" cy="229" r="11" fill="#83bd8b"/>
+    <path d="M543 229 L547 233 L554 225" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="574" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#477c50">Sağlıklı</text>
+    <text x="574" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668c6c">Geçmiş veri</text>
+  </g>
+
+  <!-- tools -->
+  <g filter="url(#softShadow)">
+    <rect x="187" y="268" width="83" height="30" rx="11" fill="#e6edff"/>
+    <text x="228.5" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5266ae">Zabbix</text>
+    <rect x="278" y="268" width="83" height="30" rx="11" fill="#fff0df"/>
+    <text x="319.5" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a16c36">Nagios</text>
+    <rect x="369" y="268" width="83" height="30" rx="11" fill="#e5f5e5"/>
+    <text x="410.5" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e8b57">Checkmk</text>
+  </g>
+</svg>
