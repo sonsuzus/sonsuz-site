@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="zemin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c7dbf6"/>
+    </linearGradient>
+    <linearGradient id="php" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5e7cf"/>
+      <stop offset="100%" stop-color="#efd5a9"/>
+    </linearGradient>
+    <linearGradient id="adminer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff3e3"/>
+      <stop offset="100%" stop-color="#bfe4c9"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8e0f8"/>
+      <stop offset="100%" stop-color="#d2c2ed"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809b" flood-opacity="0.2"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58718b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#zemin)"/>
+  <circle cx="79" cy="60" r="76" fill="#dceeff" opacity="0.45"/>
+  <circle cx="584" cy="278" r="96" fill="#dff2db" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">VERİTABANI YÖNETİM ARENASI</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708398">Panel seçimi ve güvenli bağlantı</text>
+
+  <!-- Bağlantı çizgileri -->
+  <path d="M253 141 C219 122 209 108 190 103" fill="none" stroke="#9aabc0" stroke-width="2"/>
+  <polygon points="190,103 200,99 197,109" fill="#9aabc0"/>
+  <path d="M387 141 C420 122 433 108 449 103" fill="none" stroke="#9aabc0" stroke-width="2"/>
+  <polygon points="449,103 440,109 441,99" fill="#9aabc0"/>
+  <path d="M320 207 L320 236" fill="none" stroke="#9aabc0" stroke-width="2"/>
+  <polygon points="320,236 315,226 325,226" fill="#9aabc0"/>
+
+  <!-- phpMyAdmin -->
+  <g filter="url(#golge)">
+    <rect x="42" y="69" width="154" height="69" rx="17" fill="url(#php)" stroke="#e1c28a"/>
+    <circle cx="69" cy="94" r="15" fill="#fff9ed" opacity="0.8"/>
+    <path d="M61 91 L69 85 L77 91 L69 97 Z" fill="#b87d2d"/>
+    <path d="M61 91 L61 99 L69 104 L69 97 Z" fill="#d3943f"/>
+    <path d="M77 91 L77 99 L69 104 L69 97 Z" fill="#9e6824"/>
+    <text x="94" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#60451d">phpMyAdmin</text>
+    <text x="94" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6336">MySQL odaklı</text>
+    <text x="58" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6d3d">Kapsamlı klasik</text>
+  </g>
+
+  <!-- CloudBeaver -->
+  <g filter="url(#golge)">
+    <rect x="444" y="69" width="154" height="69" rx="17" fill="url(#cloud)" stroke="#bba8dc"/>
+    <circle cx="471" cy="95" r="15" fill="#faf8ff" opacity="0.8"/>
+    <path d="M462 99 C463 93 467 91 471 92 C473 87 481 89 481 95 C484 96 484 101 479 102 L464 102 C461 102 460 100 462 99Z" fill="#7960ad"/>
+    <text x="496" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#50406f">CloudBeaver</text>
+    <text x="496" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d5a8a">Çoklu bağlantı</text>
+    <text x="460" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78668f">Ekip ve roller</text>
+  </g>
+
+  <!-- Merkezi veritabanı -->
+  <g filter="url(#golge)">
+    <rect x="252" y="113" width="136" height="95" rx="24" fill="url(#merkez)" stroke="#9db9df"/>
+    <ellipse cx="320" cy="143" rx="39" ry="12" fill="#6d96c6"/>
+    <path d="M281 143 V172 C281 179 298 184 320 184 C342 184 359 179 359 172 V143" fill="#86add7"/>
+    <path d="M281 157 C281 164 298 169 320 169 C342 169 359 164 359 157" fill="none" stroke="#d9eaff" stroke-width="1.5"/>
+    <path d="M281 171 C281 178 298 183 320 183 C342 183 359 178 359 171" fill="none" stroke="#d9eaff" stroke-width="1.5"/>
+    <text x="320" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355575">Veritabanı Sunucusu</text>
+  </g>
+
+  <!-- Adminer -->
+  <g filter="url(#golge)">
+    <rect x="243" y="236" width="154" height="65" rx="17" fill="url(#adminer)" stroke="#9dceb0"/>
+    <circle cx="270" cy="262" r="15" fill="#f7fff8" opacity="0.85"/>
+    <path d="M264 254 H276 V270 H264 Z" fill="#4e9a68"/>
+    <path d="M267 257 H273 M267 261 H273 M267 265 H271" stroke="#eaffef" stroke-width="1.5"/>
+    <text x="295" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#316848">Adminer</text>
+    <text x="295" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7960">Tek dosya, hafif</text>
+  </g>
+
+  <!-- İşlem şeridi -->
+  <g filter="url(#hafifGolge)">
+    <rect x="42" y="162" width="157" height="96" rx="16" fill="#ffffff" opacity="0.83"/>
+    <text x="61" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496277">Panel İşlemleri</text>
+    <circle cx="66" cy="207" r="4" fill="#78a7d7"/>
+    <text x="78" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60778a">SQL sorgusu</text>
+    <circle cx="66" cy="229" r="4" fill="#78a7d7"/>
+    <text x="78" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60778a">Tablo ve kayıt</text>
+    <circle cx="66" cy="251" r="4" fill="#78a7d7"/>
+    <text x="78" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60778a">Yetki ve yedek</text>
+  </g>
+
+  <!-- Güvenlik şeridi -->
+  <g filter="url(#hafifGolge)">
+    <rect x="441" y="162" width="157" height="96" rx="16" fill="#ffffff" opacity="0.83"/>
+    <text x="460" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496277">Güvenli Erişim</text>
+    <path d="M465 199 L473 203 V211 C473 217 469 220 465 222 C461 220 457 217 457 211 V203 Z" fill="#6f9f89"/>
+    <path d="M462 211 L464 214 L469 208" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+    <text x="482" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60778a">HTTPS</text>
+    <text x="482" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60778a">En az yetki</text>
+    <text x="482" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60778a">Güncel sürüm</text>
+  </g>
+
+  <!-- Alt seçim notu -->
+  <path d="M199 281 C215 281 224 277 239 272" fill="none" stroke="#b2c1cd" stroke-width="1.5"/>
+  <polygon points="239,272 231,278 232,268" fill="#b2c1cd"/>
+  <path d="M441 281 C426 281 416 277 401 272" fill="none" stroke="#b2c1cd" stroke-width="1.5"/>
+  <polygon points="401,272 408,268 409,278" fill="#b2c1cd"/>
+</svg>
