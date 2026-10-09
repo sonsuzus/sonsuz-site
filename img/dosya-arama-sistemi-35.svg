@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="indexGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f4ea"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66829a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-35%" width="150%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66829a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="58" cy="40" r="70" fill="#d9efff" opacity="0.42"/>
+  <circle cx="596" cy="278" r="88" fill="#dff3d9" opacity="0.44"/>
+  <circle cx="584" cy="52" r="40" fill="#f8e8cb" opacity="0.42"/>
+
+  <text x="28" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37536d">DOSYA ARAMA MİMARİSİ</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71889a">Çıkarma • indeksleme • yetkili sonuç</text>
+
+  <!-- source files -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="83" width="111" height="116" rx="18" fill="#ffffff"/>
+    <rect x="28" y="83" width="111" height="116" rx="18" fill="none" stroke="#cbddea"/>
+  </g>
+  <text x="51" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546d">Dosyalar</text>
+  <g transform="translate(48 121)">
+    <path d="M0 2 Q0 0 3 0 H20 L27 7 V30 Q27 33 24 33 H3 Q0 33 0 30Z" fill="#f2baca" stroke="#d9879d"/>
+    <path d="M20 0 V7 H27" fill="none" stroke="#d9879d"/>
+    <text x="5" y="23" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" font-weight="700" fill="#a34f67">PDF</text>
+    <path d="M37 2 Q37 0 40 0 H57 L64 7 V30 Q64 33 61 33 H40 Q37 33 37 30Z" fill="#c8ddff" stroke="#85aee5"/>
+    <path d="M57 0 V7 H64" fill="none" stroke="#85aee5"/>
+    <text x="42" y="23" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" font-weight="700" fill="#4e7db6">DOC</text>
+  </g>
+  <text x="48" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688093">PDF • Word • Metin</text>
+
+  <!-- arrow 1 -->
+  <path d="M145 141 H166" fill="none" stroke="#86a4b6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="173,141 164,136 164,146" fill="#86a4b6"/>
+
+  <!-- extraction -->
+  <g filter="url(#smallShadow)">
+    <rect x="177" y="103" width="112" height="76" rx="18" fill="#fff9e9" stroke="#edd9a6"/>
+  </g>
+  <circle cx="202" cy="141" r="15" fill="#f6d889"/>
+  <path d="M195 141 H209 M202 134 V148" stroke="#9a7740" stroke-width="2" stroke-linecap="round"/>
+  <text x="225" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#705633">Metin çıkarma</text>
+  <text x="225" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92764b">ve metadata</text>
+
+  <!-- arrow 2 -->
+  <path d="M295 141 H314" fill="none" stroke="#86a4b6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="321,141 312,136 312,146" fill="#86a4b6"/>
+
+  <!-- central inverted index -->
+  <g filter="url(#shadow)">
+    <rect x="326" y="79" width="138" height="124" rx="23" fill="url(#indexGrad)" stroke="#a9cfca"/>
+  </g>
+  <text x="351" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b6a">Ters indeks</text>
+  <rect x="347" y="119" width="96" height="54" rx="9" fill="#ffffff" opacity="0.78"/>
+  <path d="M358 133 H379 M358 146 H379 M358 159 H379" stroke="#71aaa2" stroke-width="3" stroke-linecap="round"/>
+  <path d="M390 133 H430 M390 146 H422 M390 159 H434" stroke="#9ab9d5" stroke-width="3" stroke-linecap="round"/>
+  <text x="350" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c817d">Kelime → belge</text>
+
+  <!-- branches -->
+  <path d="M470 141 H483 V81 H493" fill="none" stroke="#8aa5b6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="500,81 491,76 491,86" fill="#8aa5b6"/>
+  <path d="M470 141 H483 V141 H493" fill="none" stroke="#8aa5b6" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="500,141 491,136 491,146" fill="#8aa5b6"/>
+  <path d="M470 141 H483 V201 H493" fill="none" stroke="#8aa5b6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="500,201 491,196 491,206" fill="#8aa5b6"/>
+
+  <!-- engine cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="501" y="54" width="112" height="54" rx="15" fill="#e7ddfa" stroke="#c8b4e8"/>
+    <rect x="501" y="114" width="112" height="54" rx="15" fill="#dceefc" stroke="#afcfeb"/>
+    <rect x="501" y="174" width="112" height="54" rx="15" fill="#dff3df" stroke="#afd5b2"/>
+  </g>
+  <circle cx="520" cy="81" r="9" fill="#a483d1"/>
+  <path d="M516 81 H524 M520 77 V85" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="537" y="78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#594277">Elasticsearch</text>
+  <text x="537" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#725d8d">Ölçek</text>
+
+  <circle cx="520" cy="141" r="9" fill="#72a9dd"/>
+  <path d="M516 141 H524 M520 137 V145" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="537" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6f99">Meilisearch</text>
+  <text x="537" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f86a8">Hızlı kurulum</text>
+
+  <circle cx="520" cy="201" r="9" fill="#78b77d"/>
+  <path d="M516 201 H524 M520 197 V205" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="537" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c7445">Typesense</text>
+  <text x="537" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c8d61">Dengeli kontrol</text>
+
+  <!-- query path -->
+  <g filter="url(#smallShadow)">
+    <rect x="74" y="239" width="142" height="51" rx="16" fill="#ffffff" stroke="#cbddea"/>
+  </g>
+  <circle cx="98" cy="264" r="11" fill="#d5e9fb"/>
+  <circle cx="96" cy="262" r="4.5" fill="none" stroke="#4f86b4" stroke-width="2"/>
+  <path d="M100 266 L105 271" stroke="#4f86b4" stroke-width="2" stroke-linecap="round"/>
+  <text x="116" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42647f">Kullanıcı sorgusu</text>
+  <text x="116" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71889a">Yazım toleransı</text>
+
+  <path d="M222 264 H285 Q303 264 303 246 V215 Q303 210 310 210 H382" fill="none" stroke="#769bac" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="389,210 380,205 380,215" fill="#769bac"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="398" y="242" width="162" height="49" rx="16" fill="#fffdf6" stroke="#e9d9ad"/>
+  </g>
+  <path d="M419 267 L425 273 L438 257" fill="none" stroke="#69a875" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="448" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d6744">Yetkili sonuçlar</text>
+  <text x="448" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#89836a">Filtreli erişim</text>
+
+  <path d="M464 207 V232 Q464 238 471 238 H479 Q486 238 486 245" fill="none" stroke="#769bac" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="486,252 481,243 491,243" fill="#769bac"/>
+</svg>
