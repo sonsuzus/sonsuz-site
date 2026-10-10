@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f9ff"/>
+      <stop offset="1" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="inputGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e4efff"/>
+      <stop offset="1" stop-color="#d8e8fb"/>
+    </linearGradient>
+    <linearGradient id="processGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7f7ea"/>
+      <stop offset="1" stop-color="#d3eedb"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3d8"/>
+      <stop offset="1" stop-color="#ffe5a8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6e8494" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#7590a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="54" r="42" fill="#dceefe" opacity="0.48"/>
+  <circle cx="589" cy="266" r="67" fill="#dcefdc" opacity="0.42"/>
+  <circle cx="418" cy="37" r="23" fill="#fff0cf" opacity="0.52"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365266">Roma Rakamlarıyla Aritmetik</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68808d">Sembol havuzu ile dönüştürme</text>
+
+  <path d="M143 145 L170 145" fill="none" stroke="#7995a4" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="170,145 162,140 162,150" fill="#7995a4"/>
+
+  <path d="M277 145 L302 145" fill="none" stroke="#7995a4" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="302,145 294,140 294,150" fill="#7995a4"/>
+
+  <path d="M421 145 L447 145" fill="none" stroke="#7995a4" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="447,145 439,140 439,150" fill="#7995a4"/>
+
+  <path d="M541 145 L564 145" fill="none" stroke="#7995a4" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="564,145 556,140 556,150" fill="#7995a4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="96" width="113" height="98" rx="18" fill="url(#inputGrad)"/>
+  </g>
+  <text x="86.5" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35546a">Girdi</text>
+  <rect x="45" y="133" width="83" height="30" rx="10" fill="#ffffff" opacity="0.82"/>
+  <text x="86.5" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6880">XXVII + XVIII</text>
+  <text x="86.5" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587585">Roma dizileri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="170" y="88" width="107" height="114" rx="18" fill="url(#processGrad)"/>
+  </g>
+  <text x="223.5" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35644b">Genişletme</text>
+  <rect x="185" y="126" width="77" height="27" rx="9" fill="#ffffff" opacity="0.8"/>
+  <text x="223.5" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47715a">IV → IIII</text>
+  <text x="223.5" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58786a">Çıkarma yok</text>
+  <text x="223.5" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58786a">toplamsal biçim</text>
+
+  <g filter="url(#shadow)">
+    <rect x="302" y="88" width="119" height="114" rx="18" fill="url(#inputGrad)"/>
+  </g>
+  <text x="361.5" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35546a">Sembol Havuzu</text>
+  <rect x="316" y="126" width="91" height="27" rx="9" fill="#ffffff" opacity="0.84"/>
+  <text x="361.5" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6880">XXXVVIIII</text>
+  <text x="361.5" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587585">Birleştir ve sırala</text>
+
+  <g filter="url(#shadow)">
+    <rect x="447" y="88" width="94" height="114" rx="18" fill="url(#processGrad)"/>
+  </g>
+  <text x="494" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35644b">Paketleme</text>
+  <g filter="url(#smallShadow)">
+    <rect x="461" y="127" width="65" height="25" rx="8" fill="#ffffff"/>
+  </g>
+  <text x="493.5" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47715a">VV → X</text>
+  <text x="494" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58786a">Taşıma kuralı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="564" y="96" width="57" height="98" rx="18" fill="url(#resultGrad)"/>
+  </g>
+  <text x="592.5" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#775c20">Sonuç</text>
+  <rect x="573" y="133" width="39" height="30" rx="10" fill="#ffffff" opacity="0.82"/>
+  <text x="592.5" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#866617">XLV</text>
+  <text x="592.5" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806e45">Standart</text>
+
+  <path d="M92 224 C92 207 165 207 201 220" fill="none" stroke="#89a6b5" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="202,220 194,216 195,225" fill="#89a6b5"/>
+  <path d="M259 224 C288 207 363 207 395 220" fill="none" stroke="#89a6b5" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="396,220 388,216 389,225" fill="#89a6b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="226" width="177" height="62" rx="16" fill="#eef5ff"/>
+  </g>
+  <circle cx="59" cy="257" r="15" fill="#cfe2fa"/>
+  <text x="59" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456783">×</text>
+  <text x="82" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405f70">Çarpma</text>
+  <text x="82" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7a89">Tekrarlı toplama</text>
+
+  <g filter="url(#shadow)">
+    <rect x="251" y="226" width="177" height="62" rx="16" fill="#edf8ed"/>
+  </g>
+  <circle cx="275" cy="257" r="15" fill="#cfead4"/>
+  <text x="275" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#417356">+</text>
+  <text x="298" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405f4c">Dağıtma</text>
+  <text x="298" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7f69">Sembol değerleri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="467" y="226" width="138" height="62" rx="16" fill="#fff5df"/>
+  </g>
+  <text x="536" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#755f2c">Temel Fikir</text>
+  <text x="536" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#84734e">Temsil kuralları</text>
+</svg>

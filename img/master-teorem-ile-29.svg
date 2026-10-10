@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#d9f3e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7892a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7892a5" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="51" cy="42" r="58" fill="#dcedfa" opacity="0.45"/>
+  <circle cx="602" cy="287" r="75" fill="#dcefdc" opacity="0.48"/>
+  <path d="M18 263 C108 228 128 292 208 267 S344 235 413 275 S537 296 622 225" fill="none" stroke="#c8dfd5" stroke-width="2" opacity="0.5"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">MASTER TEOREM</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668094">Özyinelemeli karmaşıklık sınıflandırması</text>
+
+  <!-- Left inputs -->
+  <g filter="url(#softShadow)">
+    <rect x="26" y="81" width="120" height="53" rx="14" fill="#fff4d9"/>
+    <circle cx="48" cy="107" r="13" fill="#f5cb72"/>
+    <text x="48" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#705421">a</text>
+    <text x="70" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5e5260">Alt problem</text>
+    <text x="70" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c6c70">sayısı</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="26" y="151" width="120" height="53" rx="14" fill="#e6f0ff"/>
+    <circle cx="48" cy="177" r="13" fill="#9cc5f5"/>
+    <text x="48" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315f91">b</text>
+    <text x="70" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f5d70">Küçülme</text>
+    <text x="70" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b7c90">oranı</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="26" y="221" width="120" height="53" rx="14" fill="#f0e6fb"/>
+    <circle cx="48" cy="247" r="13" fill="#c4a4e7"/>
+    <text x="48" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#65427d">f</text>
+    <text x="70" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#64546f">Ek iş</text>
+    <text x="70" y="259" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81728c">böl ve birleştir</text>
+  </g>
+
+  <!-- arrows to core -->
+  <path d="M146 107 H174" fill="none" stroke="#8da6b3" stroke-width="2"/>
+  <polygon points="180,107 171,102 171,112" fill="#8da6b3"/>
+  <path d="M146 177 H174" fill="none" stroke="#8da6b3" stroke-width="2"/>
+  <polygon points="180,177 171,172 171,182" fill="#8da6b3"/>
+  <path d="M146 247 H174" fill="none" stroke="#8da6b3" stroke-width="2"/>
+  <polygon points="180,247 171,242 171,252" fill="#8da6b3"/>
+
+  <!-- Core -->
+  <g filter="url(#shadow)">
+    <rect x="181" y="79" width="205" height="197" rx="23" fill="url(#core)" stroke="#c8dfdd"/>
+    <rect x="201" y="97" width="165" height="48" rx="14" fill="#ffffff" opacity="0.82"/>
+    <text x="283.5" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355368">T(n) = aT(n/b) + f(n)</text>
+    <text x="283.5" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8792">özyineleme bağıntısı</text>
+
+    <path d="M283 153 V169" fill="none" stroke="#7dabb0" stroke-width="2"/>
+    <polygon points="283,175 278,166 288,166" fill="#7dabb0"/>
+
+    <rect x="201" y="181" width="165" height="70" rx="16" fill="#eaf8f2" stroke="#c3e3d5"/>
+    <text x="283.5" y="204" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6d5e">Kritik terim</text>
+    <text x="283.5" y="228" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#265847">n^(log_b a)</text>
+    <text x="283.5" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668878">f(n) ile karşılaştır</text>
+  </g>
+
+  <!-- branching -->
+  <path d="M386 177 H409 V89 H426" fill="none" stroke="#90a7b0" stroke-width="2"/>
+  <polygon points="432,89 423,84 423,94" fill="#90a7b0"/>
+  <path d="M386 177 H426" fill="none" stroke="#90a7b0" stroke-width="2"/>
+  <polygon points="432,177 423,172 423,182" fill="#90a7b0"/>
+  <path d="M386 177 H409 V265 H426" fill="none" stroke="#90a7b0" stroke-width="2"/>
+  <polygon points="432,265 423,260 423,270" fill="#90a7b0"/>
+
+  <!-- Cases -->
+  <g filter="url(#softShadow)">
+    <rect x="433" y="58" width="178" height="62" rx="15" fill="#fff0e9"/>
+    <circle cx="456" cy="82" r="13" fill="#f2a47e"/>
+    <text x="456" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#793d2a">1</text>
+    <text x="478" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754737">Alt problemler</text>
+    <text x="478" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6255">Θ(n^(log_b a))</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="433" y="146" width="178" height="62" rx="15" fill="#e9f1ff"/>
+    <circle cx="456" cy="170" r="13" fill="#7eace4"/>
+    <text x="456" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#254e7b">2</text>
+    <text x="478" y="167" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f5873">Dengeli büyüme</text>
+    <text x="478" y="186" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617b94">Θ(n log n)</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="433" y="234" width="178" height="62" rx="15" fill="#eee8fa"/>
+    <circle cx="456" cy="258" r="13" fill="#b394d6"/>
+    <text x="456" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#563d73">3</text>
+    <text x="478" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d4a70">Ek iş baskın</text>
+    <text x="478" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#796b8b">Θ(f(n))</text>
+  </g>
+</svg>
