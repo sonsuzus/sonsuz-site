@@ -1,4 +1,24 @@
 {
+  "Read Replica Mimarisi: Okuma Trafiğini Çoğaltarak Ölçeklemek · SonsuzUs": [
+    {
+      "author": "ihsanenescetinkaya-spec",
+      "body": "<p dir=\"auto\">Read replica mantığını replica lag ve sorgu yönlendirme üzerinden oldukça anlaşılır anlatmışsınız. Özellikle “yazdığını hemen oku” örneği konuyu güzel açıklıyor.</p>",
+      "date": "2026-09-23T16:57:14Z",
+      "is_reply": false
+    },
+    {
+      "author": "necoguvo",
+      "body": "<p dir=\"auto\">Read replica mantığını ve özellikle replica lag konusunu oldukça anlaşılır anlatmışsınız. Sadece okuma yükünü dağıtmanın değil, tutarlılık ve yedekleme gibi konuların da işin önemli bir parçası olduğunu görmek güzel. Elinize sağlık.</p>",
+      "date": "2026-09-24T14:34:51Z",
+      "is_reply": false
+    },
+    {
+      "author": "kuzeyoncul",
+      "body": "<p dir=\"auto\">Read replica konusunu ele alırken önemli detayları atlamamışlar ve senkron ve asenkron çoğaltma arasındaki farkı(Birinde veri kaybı riskinin azalması ama yazma süresinin artabilmesi birinde ise primary nin direkt olarak harekete geçmesi ama daha sonra replicalarda biraz gecikmeye sebep olması.) çok iyi anlatmış ve bu sistemde dikkat edilmesi gereken noktalara iyi değinmiş çünkü bence bir replica nın back up olarak kullanılamaması önemli bir nokta.  Ayrıca belki çok sayıda replica kullanmak yerine daha güçlü ve optimize edilmiş(rastgele okuma hızı yüksek) daha az replica kullanılabilir. Tabii bunun dezavantajı da bir replica çökerse diğerlerine veya primary ye daha çok yük bineceğidir.</p>",
+      "date": "2026-10-09T20:35:33Z",
+      "is_reply": false
+    }
+  ],
   "Yapay Zekâ Sohbet Arayüzleri: Open WebUI, LibreChat ve Chatbot UI Karşılaştırması · SonsuzUs": [
     {
       "author": "MASahin223",
@@ -1497,20 +1517,6 @@
       "is_reply": false
     }
   ],
-  "Read Replica Mimarisi: Okuma Trafiğini Çoğaltarak Ölçeklemek · SonsuzUs": [
-    {
-      "author": "ihsanenescetinkaya-spec",
-      "body": "<p dir=\"auto\">Read replica mantığını replica lag ve sorgu yönlendirme üzerinden oldukça anlaşılır anlatmışsınız. Özellikle “yazdığını hemen oku” örneği konuyu güzel açıklıyor.</p>",
-      "date": "2026-09-23T16:57:14Z",
-      "is_reply": false
-    },
-    {
-      "author": "necoguvo",
-      "body": "<p dir=\"auto\">Read replica mantığını ve özellikle replica lag konusunu oldukça anlaşılır anlatmışsınız. Sadece okuma yükünü dağıtmanın değil, tutarlılık ve yedekleme gibi konuların da işin önemli bir parçası olduğunu görmek güzel. Elinize sağlık.</p>",
-      "date": "2026-09-24T14:34:51Z",
-      "is_reply": false
-    }
-  ],
   "micro-ros: Mikrodenetleyicilere Robot %C4%B0%C5%9Fletim Sistemi Dokunu%C5%9Fu %C2%B7 SonsuzUs": [
     {
       "author": "necoguvo",
@@ -1956,7 +1962,7 @@
   "Köprüler ve Articulation Point’ler: Grafın Kritik Damarlarını Bulmak · SonsuzUs": [
     {
       "author": "alicinar11",
-      "body": "<p dir=\"auto\">Köprülerin ve articulation point'lerin (eklem noktalarının) grafiklerdeki kritik zayıflıklarını bulma mekanizması çok net ele alınmış. tin ve low dizileri arasındaki o kritik eşitsizlik (<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"c5e28835986621f608f5cbbb8fe5f2ae\">$low[v] &amp;gt; tin[u]$</math-renderer> veya <math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"c5e28835986621f608f5cbbb8fe5f2ae\">$low[v] \\ge tin[u]$</math-renderer>), grafın hangi bağlantı koparsa ikiye bölüneceğini doğrudan matematiksel olarak ortaya koyuyor.</p>",
+      "body": "<p dir=\"auto\">Köprülerin ve articulation point'lerin (eklem noktalarının) grafiklerdeki kritik zayıflıklarını bulma mekanizması çok net ele alınmış. tin ve low dizileri arasındaki o kritik eşitsizlik (<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"74b29d268022eb60d5069763eaccbc09\">$low[v] &amp;gt; tin[u]$</math-renderer> veya <math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"74b29d268022eb60d5069763eaccbc09\">$low[v] \\ge tin[u]$</math-renderer>), grafın hangi bağlantı koparsa ikiye bölüneceğini doğrudan matematiksel olarak ortaya koyuyor.</p>",
       "date": "2026-09-19T13:05:33Z",
       "is_reply": false
     }
@@ -2914,7 +2920,7 @@
     },
     {
       "author": "sonsuzus",
-      "body": "<p dir=\"auto\">Görseldeki 6 katlı piramidin kaç farklı şekilde doldurulabileceğini bulan kod yazınız. Kurallar :</p>\n<p dir=\"auto\">a) Her satıra [1-9] aralığında sayı yazılabilir.<br>\nb) Her satırda kullanılan rakamlar birbirinden farklı olmalı.<br>\nc) Her satırda yan yana gelen iki sayı ardışık olmamalı.<br>\nd) Zemin kat dışında her kattaki sayı, altında yer alan 2 kutuya yazılmış sayıların ya toplamı ya da farkı olmalı.</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE1NjkyNDIsIm5iZiI6MTc5MTU2ODk0MiwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDA5VDE4MDIyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUxYjc4YTA2YjI0ODJkNTI2NDRlYzAzMzViM2RkOWZiZWQ3M2YxZWUyYWVkM2RhZTNjN2U5NzA5OTljOWFlZWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.zAgR8PX842TJGhvaPQrat3c1EiHq2O23sP5qAG2QX5w\"><img src=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE1NjkyNDIsIm5iZiI6MTc5MTU2ODk0MiwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDA5VDE4MDIyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUxYjc4YTA2YjI0ODJkNTI2NDRlYzAzMzViM2RkOWZiZWQ3M2YxZWUyYWVkM2RhZTNjN2U5NzA5OTljOWFlZWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.zAgR8PX842TJGhvaPQrat3c1EiHq2O23sP5qAG2QX5w\" alt=\"FB_IMG_1706272203828.jpg\" style=\"max-width: 100%;\"></a></p>",
+      "body": "<p dir=\"auto\">Görseldeki 6 katlı piramidin kaç farklı şekilde doldurulabileceğini bulan kod yazınız. Kurallar :</p>\n<p dir=\"auto\">a) Her satıra [1-9] aralığında sayı yazılabilir.<br>\nb) Her satırda kullanılan rakamlar birbirinden farklı olmalı.<br>\nc) Her satırda yan yana gelen iki sayı ardışık olmamalı.<br>\nd) Zemin kat dışında her kattaki sayı, altında yer alan 2 kutuya yazılmış sayıların ya toplamı ya da farkı olmalı.</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE1OTA4NDAsIm5iZiI6MTc5MTU5MDU0MCwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMTAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDEwVDAwMDIyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkMzVlZTYwMGMzNmQ2YjgwNjZkZjE1YzMwYjk3Yjk5MGY2OTNkMzdlY2NkZmI3YTA4ZTNjYjY5ZGRhMDI4NzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.Z_kqy6l0YD5Ck_AZYlyxPPYOnU1-4J1sUgxeGYtWojk\"><img src=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE1OTA4NDAsIm5iZiI6MTc5MTU5MDU0MCwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMTAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDEwVDAwMDIyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkMzVlZTYwMGMzNmQ2YjgwNjZkZjE1YzMwYjk3Yjk5MGY2OTNkMzdlY2NkZmI3YTA4ZTNjYjY5ZGRhMDI4NzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.Z_kqy6l0YD5Ck_AZYlyxPPYOnU1-4J1sUgxeGYtWojk\" alt=\"FB_IMG_1706272203828.jpg\" style=\"max-width: 100%;\"></a></p>",
       "date": "2024-01-26T12:31:55Z",
       "is_reply": false
     },
