@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="stackGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cbd9ff"/>
+      <stop offset="100%" stop-color="#9fb8f2"/>
+    </linearGradient>
+    <linearGradient id="queueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#bfead8"/>
+      <stop offset="100%" stop-color="#91d5bd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="52" cy="52" r="74" fill="#d9ecff" opacity="0.42"/>
+  <circle cx="594" cy="285" r="95" fill="#dff3d8" opacity="0.48"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">VERİ YAPISI SEÇİMİ</text>
+  <text x="320" y="48" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b90">İşleme sırası davranışı belirler</text>
+
+  <path d="M298 87 L241 87 L241 105" fill="none" stroke="#89a1b8" stroke-width="2"/>
+  <polygon points="236,103 246,103 241,111" fill="#89a1b8"/>
+  <path d="M342 87 L399 87 L399 105" fill="none" stroke="#89a1b8" stroke-width="2"/>
+  <polygon points="394,103 404,103 399,111" fill="#89a1b8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="266" y="61" width="108" height="52" rx="16" fill="#fffdf8"/>
+    <rect x="267" y="62" width="106" height="50" rx="15" fill="none" stroke="#d3dfe7"/>
+  </g>
+  <text x="320" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41576b">Hangi öğe</text>
+  <text x="320" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41576b">önce çıkar?</text>
+
+  <g filter="url(#shadow)">
+    <rect x="44" y="110" width="244" height="170" rx="20" fill="#f9fbff"/>
+    <rect x="44" y="110" width="244" height="170" rx="20" fill="none" stroke="#cbd9f2"/>
+  </g>
+  <rect x="61" y="126" width="93" height="29" rx="12" fill="#dbe6ff"/>
+  <text x="107" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466395">YIĞIN · LIFO</text>
+  <text x="172" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60778e">Son giren önce</text>
+
+  <path d="M244 169 L244 191" fill="none" stroke="#688cc9" stroke-width="2.5"/>
+  <polygon points="239,171 249,171 244,163" fill="#688cc9"/>
+  <text x="253" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5274a9">pop</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="83" y="229" width="111" height="25" rx="7" fill="url(#stackGrad)"/>
+    <rect x="83" y="201" width="111" height="25" rx="7" fill="#b8caf7"/>
+    <rect x="83" y="173" width="111" height="25" rx="7" fill="#d4e0ff"/>
+  </g>
+  <text x="138" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#425b82">Sepet</text>
+  <text x="138" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#425b82">Ürünler</text>
+  <text x="138" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#425b82">Ana sayfa</text>
+
+  <path d="M210 255 L210 235" fill="none" stroke="#688cc9" stroke-width="2.5"/>
+  <polygon points="205,237 215,237 210,229" fill="#688cc9"/>
+  <text x="219" y="249" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5274a9">push</text>
+  <text x="61" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71849a">Aynı uçtan ekle ve çıkar</text>
+
+  <g filter="url(#shadow)">
+    <rect x="352" y="110" width="244" height="170" rx="20" fill="#fbfffc"/>
+    <rect x="352" y="110" width="244" height="170" rx="20" fill="none" stroke="#c8e4d8"/>
+  </g>
+  <rect x="369" y="126" width="101" height="29" rx="12" fill="#d8f3e7"/>
+  <text x="419" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#367760">KUYRUK · FIFO</text>
+  <text x="484" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60778e">İlk giren önce</text>
+
+  <text x="375" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#43846e">çıkış</text>
+  <path d="M397 187 L376 187" fill="none" stroke="#4ca887" stroke-width="2.5"/>
+  <polygon points="378,182 378,192 370,187" fill="#4ca887"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="406" y="172" width="50" height="34" rx="9" fill="#d8f3e7"/>
+    <rect x="459" y="172" width="50" height="34" rx="9" fill="#bfead8"/>
+    <rect x="512" y="172" width="50" height="34" rx="9" fill="url(#queueGrad)"/>
+  </g>
+  <text x="431" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6f5e">Rapor</text>
+  <text x="484" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6f5e">Fatura</text>
+  <text x="537" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6f5e">Sunum</text>
+
+  <path d="M570 187 L584 187" fill="none" stroke="#4ca887" stroke-width="2.5"/>
+  <polygon points="582,182 582,192 590,187" fill="#4ca887"/>
+  <text x="515" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#43846e">enqueue</text>
+  <path d="M545 218 L545 207" fill="none" stroke="#4ca887" stroke-width="2"/>
+  <polygon points="540,209 550,209 545,203" fill="#4ca887"/>
+  <text x="370" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#43846e">dequeue</text>
+  <text x="370" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71849a">Önden çıkar, arkadan ekle</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="230" y="291" width="180" height="21" rx="10" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <text x="320" y="306" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b79">Geri alma ↔ İş sırası</text>
+</svg>

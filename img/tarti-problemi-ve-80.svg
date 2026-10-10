@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="binary" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8ddf7"/>
+    </linearGradient>
+    <linearGradient id="ternary" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff4df"/>
+      <stop offset="100%" stop-color="#c7e8d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7190a6" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7190a6" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="54" cy="42" r="42" fill="#dceeff" opacity="0.48"/>
+  <circle cx="584" cy="273" r="64" fill="#dff2dc" opacity="0.52"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385269">Tartı Problemi: Durum Sayısı Kapasiteyi Belirler</text>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="55" width="178" height="213" rx="18" fill="url(#binary)"/>
+    <rect x="430" y="55" width="178" height="213" rx="18" fill="url(#ternary)"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="50" y="72" width="142" height="30" rx="10" fill="#ffffff" opacity="0.86"/>
+    <rect x="448" y="72" width="142" height="30" rx="10" fill="#ffffff" opacity="0.86"/>
+  </g>
+  <text x="121" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355574">Tek kefeli</text>
+  <text x="519" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35634c">İki kefeli</text>
+
+  <text x="121" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49677e">2 durum</text>
+  <g filter="url(#smallShadow)">
+    <rect x="55" y="132" width="58" height="30" rx="9" fill="#ffffff"/>
+    <rect x="129" y="132" width="58" height="30" rx="9" fill="#ffffff"/>
+  </g>
+  <text x="84" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45637a">0</text>
+  <text x="158" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45637a">1</text>
+  <text x="121" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355574">1 · 2 · 4 · 8</text>
+  <line x1="66" y1="194" x2="176" y2="194" stroke="#91b3d1" stroke-width="1.5"/>
+  <text x="121" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49677e">n ağırlık</text>
+  <text x="121" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355574">2ⁿ − 1 gram</text>
+
+  <text x="519" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46735a">3 durum</text>
+  <g filter="url(#smallShadow)">
+    <rect x="451" y="132" width="39" height="30" rx="9" fill="#ffffff"/>
+    <rect x="500" y="132" width="39" height="30" rx="9" fill="#ffffff"/>
+    <rect x="549" y="132" width="39" height="30" rx="9" fill="#ffffff"/>
+  </g>
+  <text x="470" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416952">−1</text>
+  <text x="519" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416952">0</text>
+  <text x="568" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416952">+1</text>
+  <text x="519" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35634c">1 · 3 · 9 · 27</text>
+  <line x1="464" y1="194" x2="574" y2="194" stroke="#8fc6a0" stroke-width="1.5"/>
+  <text x="519" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46735a">n ağırlık</text>
+  <text x="519" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35634c">(3ⁿ − 1) / 2</text>
+
+  <path d="M211 158 L252 158" stroke="#6e9dbf" stroke-width="2.2" fill="none"/>
+  <polygon points="252,158 243,153 243,163" fill="#6e9dbf"/>
+  <path d="M429 158 L388 158" stroke="#6ca77d" stroke-width="2.2" fill="none"/>
+  <polygon points="388,158 397,153 397,163" fill="#6ca77d"/>
+
+  <g filter="url(#shadow)">
+    <rect x="253" y="98" width="134" height="143" rx="22" fill="#ffffff"/>
+  </g>
+  <text x="320" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e5667">Denge Terazisi</text>
+
+  <line x1="320" y1="139" x2="320" y2="198" stroke="#607d8b" stroke-width="3"/>
+  <polygon points="320,142 299,197 341,197" fill="#90aebb"/>
+  <line x1="270" y1="157" x2="370" y2="157" stroke="#536f7d" stroke-width="3" stroke-linecap="round"/>
+  <line x1="278" y1="158" x2="268" y2="181" stroke="#718f9d" stroke-width="1.5"/>
+  <line x1="362" y1="158" x2="372" y2="181" stroke="#718f9d" stroke-width="1.5"/>
+  <path d="M253 181 Q268 192 283 181" fill="none" stroke="#718f9d" stroke-width="2"/>
+  <path d="M357 181 Q372 192 387 181" fill="none" stroke="#718f9d" stroke-width="2"/>
+  <rect x="259" y="169" width="18" height="10" rx="3" fill="#8db9e2"/>
+  <rect x="364" y="166" width="16" height="13" rx="3" fill="#82c394"/>
+  <text x="320" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6674">Temsil seçimi</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="198" y="278" width="244" height="28" rx="12" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <text x="320" y="297" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43616e">Daha çok konum → daha geniş aralık</text>
+</svg>

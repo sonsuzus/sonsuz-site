@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="cacheGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f2e7"/>
+      <stop offset="100%" stop-color="#c4e6d5"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#66819a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#617a91" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="48" r="65" fill="#ddebfa" opacity="0.42"/>
+  <circle cx="576" cy="271" r="88" fill="#d8f0df" opacity="0.4"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Fibonacci: Tekrardan Hatırlamaya</text>
+
+  <!-- left panel -->
+  <rect x="24" y="52" width="194" height="232" rx="18" fill="#ffffff" opacity="0.84" filter="url(#shadow)"/>
+  <rect x="39" y="67" width="128" height="28" rx="14" fill="#f8dce0"/>
+  <text x="103" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#884653">Saf özyineleme</text>
+  <rect x="174" y="67" width="29" height="28" rx="14" fill="#fdecef"/>
+  <text x="188.5" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#aa5362">!</text>
+
+  <!-- recursion connections -->
+  <path d="M120 122 L78 153 M120 122 L163 153 M78 174 L55 204 M78 174 L101 204 M163 174 L139 204 M163 174 L185 204" fill="none" stroke="#aebdcd" stroke-width="2"/>
+  <path d="M55 225 L46 246 M55 225 L68 246 M101 225 L92 246 M101 225 L114 246 M139 225 L130 246 M139 225 L152 246 M185 225 L176 246 M185 225 L198 246" fill="none" stroke="#c4cdd7" stroke-width="1.5"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="94" y="106" width="52" height="26" rx="9" fill="#f1bfc8"/>
+    <text x="120" y="123" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#653844">F(5)</text>
+    <rect x="53" y="153" width="50" height="24" rx="8" fill="#f7d5d9"/>
+    <text x="78" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71424b">F(4)</text>
+    <rect x="138" y="153" width="50" height="24" rx="8" fill="#f7d5d9"/>
+    <text x="163" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71424b">F(3)</text>
+    <rect x="34" y="204" width="42" height="22" rx="8" fill="#fde9df"/>
+    <text x="55" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80534d">F(3)</text>
+    <rect x="80" y="204" width="42" height="22" rx="8" fill="#fde9df"/>
+    <text x="101" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80534d">F(2)</text>
+    <rect x="118" y="204" width="42" height="22" rx="8" fill="#fde9df"/>
+    <text x="139" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80534d">F(2)</text>
+    <rect x="164" y="204" width="42" height="22" rx="8" fill="#fde9df"/>
+    <text x="185" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80534d">F(1)</text>
+  </g>
+
+  <g fill="#f4b8bd" opacity="0.9">
+    <circle cx="46" cy="250" r="7"/><circle cx="68" cy="250" r="7"/>
+    <circle cx="92" cy="250" r="7"/><circle cx="114" cy="250" r="7"/>
+    <circle cx="130" cy="250" r="7"/><circle cx="152" cy="250" r="7"/>
+    <circle cx="176" cy="250" r="7"/><circle cx="198" cy="250" r="7"/>
+  </g>
+  <text x="121" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92515a">Tekrarlanan hesaplar</text>
+
+  <!-- transition -->
+  <path d="M228 165 L271 165" stroke="#7890a6" stroke-width="2.5" fill="none"/>
+  <polygon points="272,165 262,159 262,171" fill="#7890a6"/>
+  <text x="250" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7187">sakla</text>
+
+  <!-- cache -->
+  <rect x="280" y="103" width="103" height="126" rx="20" fill="url(#cacheGrad)" filter="url(#shadow)"/>
+  <rect x="298" y="118" width="67" height="25" rx="9" fill="#ffffff" opacity="0.86"/>
+  <text x="331.5" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356c59">Önbellek</text>
+  <path d="M300 154 H364 M300 176 H364 M300 198 H364" stroke="#8fc5a9" stroke-width="1.2"/>
+  <text x="307" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#417766">F(2)</text>
+  <text x="353" y="170" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#417766">1</text>
+  <text x="307" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#417766">F(3)</text>
+  <text x="353" y="192" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#417766">2</text>
+  <text x="307" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#417766">F(n)</text>
+  <text x="353" y="214" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#417766">hazır</text>
+
+  <!-- right arrow -->
+  <path d="M393 165 L427 165" stroke="#7890a6" stroke-width="2.5" fill="none"/>
+  <polygon points="428,165 418,159 418,171" fill="#7890a6"/>
+
+  <!-- right panel -->
+  <rect x="437" y="52" width="180" height="232" rx="18" fill="#ffffff" opacity="0.84" filter="url(#shadow)"/>
+  <rect x="453" y="67" width="148" height="28" rx="14" fill="#d9e8fb"/>
+  <text x="527" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42658b">Memoizasyon</text>
+
+  <path d="M471 157 H495 M519 157 H543 M567 157 H585" stroke="#90a8c2" stroke-width="2.5"/>
+  <polygon points="496,157 487,152 487,162" fill="#90a8c2"/>
+  <polygon points="544,157 535,152 535,162" fill="#90a8c2"/>
+  <polygon points="586,157 577,152 577,162" fill="#90a8c2"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="452" y="139" width="39" height="36" rx="11" fill="#d7e8fc"/>
+    <rect x="500" y="139" width="39" height="36" rx="11" fill="#cceade"/>
+    <rect x="548" y="139" width="39" height="36" rx="11" fill="#d7e8fc"/>
+  </g>
+  <text x="471.5" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e658d">F(2)</text>
+  <text x="519.5" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39745e">F(3)</text>
+  <text x="567.5" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e658d">F(n)</text>
+
+  <rect x="462" y="204" width="130" height="31" rx="15" fill="#e2f2e7"/>
+  <circle cx="480" cy="219.5" r="7" fill="#74ba94"/>
+  <path d="M477 219 L480 222 L485 216" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="535" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3b765d">Her değer bir kez</text>
+
+  <text x="527" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c6b87">O(2ⁿ)</text>
+  <path d="M552 258 L570 258" stroke="#758da4" stroke-width="1.8"/>
+  <polygon points="571,258 564,254 564,262" fill="#758da4"/>
+  <text x="587" y="262" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f8066">O(n)</text>
+</svg>
