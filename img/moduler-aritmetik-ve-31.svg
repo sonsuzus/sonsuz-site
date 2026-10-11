@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d8f2df"/>
+    </linearGradient>
+    <linearGradient id="lock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b9d6f5"/>
+      <stop offset="100%" stop-color="#91b8e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7d91a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7d91a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="46" r="72" fill="#dceeff" opacity="0.55"/>
+  <circle cx="592" cy="277" r="94" fill="#dff3dc" opacity="0.48"/>
+  <circle cx="327" cy="161" r="111" fill="#ffffff" opacity="0.38"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45617c">KRİPTOGRAFİNİN MATEMATİK MOTORU</text>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="103" width="143" height="116" rx="20" fill="#ffffff"/>
+    <rect x="40" y="112" width="125" height="98" rx="15" fill="#eef6ff"/>
+  </g>
+  <circle cx="65" cy="137" r="15" fill="#c8e0fb"/>
+  <path d="M59 137h12M65 131v12" stroke="#4d80b3" stroke-width="2" stroke-linecap="round"/>
+  <text x="89" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385a78">Girdi</text>
+  <text x="52" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708a">taban: a</text>
+  <text x="52" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708a">üs: n</text>
+  <text x="52" y="205" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708a">modül: m</text>
+
+  <path d="M180 161H209" fill="none" stroke="#83a6c4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="214,161 205,156 205,166" fill="#83a6c4"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="315" cy="160" r="88" fill="url(#core)"/>
+    <circle cx="315" cy="160" r="73" fill="#faffff" opacity="0.8"/>
+  </g>
+  <circle cx="315" cy="160" r="45" fill="#ffffff" stroke="#b6d2df" stroke-width="2"/>
+  <text x="315" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385b70">Hızlı Üs Alma</text>
+  <text x="315" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557489">ikili ayrıştırma</text>
+  <text x="315" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557489">O(log n)</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="247" y="70" width="136" height="31" rx="12" fill="#e6dffc"/>
+  </g>
+  <text x="315" y="90" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#625587">Üssü ikiye böl</text>
+  <path d="M364 103 C385 112 397 124 398 137" fill="none" stroke="#998dcc" stroke-width="2"/>
+  <polygon points="399,142 393,133 403,134" fill="#998dcc"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="400" y="126" width="122" height="32" rx="12" fill="#d9f1e2"/>
+  </g>
+  <text x="461" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#46745b">Tabanı karele</text>
+  <path d="M401 178 C385 196 370 208 350 214" fill="none" stroke="#78a88a" stroke-width="2"/>
+  <polygon points="345,216 353,208 356,218" fill="#78a88a"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="244" y="219" width="142" height="32" rx="12" fill="#ffe9cd"/>
+  </g>
+  <text x="315" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#95663e">Her adımda mod al</text>
+  <path d="M244 218 C229 210 220 197 218 182" fill="none" stroke="#d5a46f" stroke-width="2"/>
+  <polygon points="217,177 223,186 213,185" fill="#d5a46f"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="112" y="126" width="104" height="32" rx="12" fill="#d9edf9"/>
+  </g>
+  <text x="164" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#477493">Küçük kalanlar</text>
+
+  <path d="M409 161H458" fill="none" stroke="#6e9aab" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="463,161 454,156 454,166" fill="#6e9aab"/>
+
+  <g filter="url(#shadow)">
+    <rect x="469" y="95" width="143" height="130" rx="20" fill="#ffffff"/>
+    <rect x="478" y="104" width="125" height="112" rx="15" fill="#eef8f1"/>
+  </g>
+  <path d="M523 152v-14c0-13 9-22 20-22s20 9 20 22v14" fill="none" stroke="#5c86aa" stroke-width="8" stroke-linecap="round"/>
+  <rect x="514" y="148" width="58" height="46" rx="10" fill="url(#lock)"/>
+  <circle cx="543" cy="168" r="5" fill="#ffffff"/>
+  <path d="M543 173v9" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <text x="543" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6782">Şifreleme</text>
+  <text x="543" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527a65">RSA ve anahtarlar</text>
+
+  <path d="M174 244 C209 274 424 274 469 235" fill="none" stroke="#b3c8ba" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="320" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698275">Kontrollü büyüklük • güçlü hesaplama</text>
+</svg>

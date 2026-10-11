@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8e2ff"/>
+      <stop offset="100%" stop-color="#d9f2f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#65809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#65809a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="67" cy="53" r="68" fill="#dceeff" opacity="0.45"/>
+  <circle cx="580" cy="281" r="90" fill="#ddf2df" opacity="0.45"/>
+  <circle cx="553" cy="50" r="38" fill="#f9e6d6" opacity="0.5"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38526c">MASTERMIND ÇÖZÜCÜ DÖNGÜSÜ</text>
+
+  <!-- left source -->
+  <rect x="30" y="91" width="145" height="139" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="30" y="91" width="145" height="35" rx="20" fill="#dcecff"/>
+  <rect x="30" y="109" width="145" height="17" fill="#dcecff"/>
+  <text x="102.5" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365675">Olası Kodlar</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="48" y="143" width="109" height="22" rx="8" fill="#f6f9ff"/>
+    <circle cx="63" cy="154" r="5" fill="#ef8895"/>
+    <circle cx="78" cy="154" r="5" fill="#7da9ed"/>
+    <circle cx="93" cy="154" r="5" fill="#f4c664"/>
+    <circle cx="108" cy="154" r="5" fill="#78c9ad"/>
+    <rect x="48" y="174" width="109" height="22" rx="8" fill="#f6f9ff"/>
+    <circle cx="63" cy="185" r="5" fill="#7da9ed"/>
+    <circle cx="78" cy="185" r="5" fill="#ef8895"/>
+    <circle cx="93" cy="185" r="5" fill="#78c9ad"/>
+    <circle cx="108" cy="185" r="5" fill="#f4c664"/>
+  </g>
+  <text x="102.5" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7182">kⁿ aday</text>
+
+  <!-- arrow left center -->
+  <path d="M183 159 H211" fill="none" stroke="#7c9bb7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="218,159 208,153 208,165" fill="#7c9bb7"/>
+
+  <!-- core -->
+  <rect x="220" y="72" width="200" height="173" rx="26" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="320" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f506b">Puanlama ve Eleme</text>
+  <line x1="252" y1="113" x2="388" y2="113" stroke="#a7bfd1" stroke-width="1"/>
+
+  <rect x="246" y="127" width="148" height="36" rx="12" fill="#ffffff" opacity="0.9" filter="url(#softShadow)"/>
+  <text x="270" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6478">Tahmin</text>
+  <circle cx="335" cy="145" r="7" fill="#ef8895"/>
+  <circle cx="353" cy="145" r="7" fill="#f4c664"/>
+  <circle cx="371" cy="145" r="7" fill="#7da9ed"/>
+
+  <path d="M320 167 V181" fill="none" stroke="#7896ac" stroke-width="2"/>
+  <polygon points="320,187 315,178 325,178" fill="#7896ac"/>
+
+  <rect x="246" y="190" width="148" height="35" rx="12" fill="#ffffff" opacity="0.9" filter="url(#softShadow)"/>
+  <circle cx="271" cy="207" r="7" fill="#343d4d"/>
+  <text x="285" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6478">Doğru konum</text>
+  <circle cx="365" cy="207" r="7" fill="#ffffff" stroke="#8498aa" stroke-width="1.5"/>
+
+  <!-- center right arrow -->
+  <path d="M428 159 H452" fill="none" stroke="#7c9bb7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="459,159 449,153 449,165" fill="#7c9bb7"/>
+
+  <!-- strategy -->
+  <rect x="461" y="76" width="148" height="167" rx="22" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="461" y="76" width="148" height="40" rx="22" fill="#dff2e7"/>
+  <rect x="461" y="96" width="148" height="20" fill="#dff2e7"/>
+  <text x="535" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b57">Minimax Seçimi</text>
+
+  <g>
+    <rect x="480" y="133" width="110" height="13" rx="6.5" fill="#f2d4d9"/>
+    <rect x="480" y="154" width="76" height="13" rx="6.5" fill="#f7e3b5"/>
+    <rect x="480" y="175" width="51" height="13" rx="6.5" fill="#cae8d9"/>
+    <line x1="568" y1="132" x2="568" y2="190" stroke="#9cb9aa" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="579" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698071">En kötü</text>
+  </g>
+  <rect x="480" y="202" width="110" height="24" rx="10" fill="#e5f5ec"/>
+  <text x="535" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3b765f">En iyi tahmin</text>
+
+  <!-- feedback loop -->
+  <path d="M535 250 C535 290 348 293 205 270 C160 263 132 254 112 240" fill="none" stroke="#91aabd" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <polygon points="106,235 116,237 110,246" fill="#91aabd"/>
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60788a">İpucuyla adayları daralt</text>
+
+  <!-- subtle endpoint -->
+  <circle cx="605" cy="52" r="13" fill="#fff6c9" filter="url(#softShadow)"/>
+  <path d="M600 52 L603 56 L610 47" fill="none" stroke="#b28b28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
