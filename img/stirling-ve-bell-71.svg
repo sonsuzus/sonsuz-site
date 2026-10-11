@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="source" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8def8"/>
+    </linearGradient>
+    <linearGradient id="stirling" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8defb"/>
+      <stop offset="100%" stop-color="#d8c9f2"/>
+    </linearGradient>
+    <linearGradient id="bell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3e5"/>
+      <stop offset="100%" stop-color="#bee8d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="45" r="78" fill="#ddecfa" opacity="0.42"/>
+  <circle cx="584" cy="282" r="98" fill="#dff1df" opacity="0.48"/>
+  <path d="M42 270 C154 241 171 294 286 273 S457 236 604 264" fill="none" stroke="#bfd9d1" stroke-width="1.5" opacity="0.45"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405469">Küme Parçalanması</text>
+
+  <!-- kaynak küme -->
+  <g filter="url(#shadow)">
+    <rect x="38" y="92" width="135" height="137" rx="20" fill="url(#source)" stroke="#b4cee7"/>
+  </g>
+  <text x="105" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38546d">n elemanlı küme</text>
+  <rect x="57" y="139" width="95" height="65" rx="13" fill="#f8fbff" stroke="#bdd5ea"/>
+  <circle cx="77" cy="160" r="9" fill="#84b8e7"/>
+  <circle cx="105" cy="160" r="9" fill="#9bc9a8"/>
+  <circle cx="133" cy="160" r="9" fill="#e8b98b"/>
+  <circle cx="91" cy="185" r="9" fill="#bd9bdd"/>
+  <circle cx="120" cy="185" r="9" fill="#e58fa4"/>
+  <text x="77" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">a</text>
+  <text x="105" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">b</text>
+  <text x="133" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">c</text>
+  <text x="91" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">d</text>
+  <text x="120" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#fff">e</text>
+
+  <!-- arrow 1 -->
+  <path d="M181 160 L213 160" stroke="#7894ad" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="218,160 209,155 209,165" fill="#7894ad"/>
+
+  <!-- Stirling -->
+  <g filter="url(#shadow)">
+    <rect x="222" y="66" width="196" height="188" rx="22" fill="url(#stirling)" stroke="#c5b6df"/>
+  </g>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#51416e">Stirling Sayıları</text>
+  <text x="320" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66577e">S(n,k) · tam k grup</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="244" y="133" width="151" height="43" rx="12" fill="#fdfbff" stroke="#d8ceeb"/>
+  </g>
+  <text x="320" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50436a">Mevcut gruba ekle</text>
+  <text x="320" y="167" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#695789">k · S(n−1,k)</text>
+
+  <path d="M320 179 L320 189" stroke="#8d7aa9" stroke-width="1.8"/>
+  <polygon points="320,194 315,186 325,186" fill="#8d7aa9"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="244" y="196" width="151" height="43" rx="12" fill="#fdfbff" stroke="#d8ceeb"/>
+  </g>
+  <text x="320" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50436a">Yeni grup oluştur</text>
+  <text x="320" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#695789">S(n−1,k−1)</text>
+
+  <!-- arrow 2 -->
+  <path d="M426 160 L457 160" stroke="#7894ad" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="462,160 453,155 453,165" fill="#7894ad"/>
+
+  <!-- Bell -->
+  <g filter="url(#shadow)">
+    <rect x="466" y="92" width="136" height="137" rx="20" fill="url(#bell)" stroke="#acd8bd"/>
+  </g>
+  <text x="534" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#315d49">Bell Sayıları</text>
+  <text x="534" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47755d">Bₙ = tüm k'lerin</text>
+  <text x="534" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47755d">toplamı</text>
+  <rect x="487" y="174" width="94" height="32" rx="11" fill="#f8fffa" stroke="#b9dec6"/>
+  <text x="534" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#347050">B₃ = 5</text>
+
+  <!-- alt bilgi -->
+  <g filter="url(#smallShadow)">
+    <rect x="150" y="275" width="340" height="28" rx="14" fill="#ffffff" opacity="0.85"/>
+  </g>
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506373">Dinamik programlama · O(n²) zaman · O(n²) bellek</text>
+</svg>

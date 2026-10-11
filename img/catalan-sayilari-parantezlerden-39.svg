@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#796ee8"/>
+      <stop offset="100%" stop-color="#9a8bef"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52657c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52657c" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="151" r="112" fill="#dcecff" opacity="0.42"/>
+  <circle cx="322" cy="150" r="83" fill="#eff3ff" opacity="0.82"/>
+
+  <!-- bağlantılar -->
+  <path d="M251 116 C219 96 206 89 179 84" fill="none" stroke="#8195bc" stroke-width="2"/>
+  <polygon points="177,79 185,83 179,88" fill="#8195bc"/>
+  <path d="M389 116 C421 96 435 89 462 84" fill="none" stroke="#8195bc" stroke-width="2"/>
+  <polygon points="463,79 455,83 461,88" fill="#8195bc"/>
+  <path d="M251 181 C218 199 204 209 179 219" fill="none" stroke="#8195bc" stroke-width="2"/>
+  <polygon points="177,214 185,218 180,224" fill="#8195bc"/>
+  <path d="M389 181 C422 199 437 209 462 219" fill="none" stroke="#8195bc" stroke-width="2"/>
+  <polygon points="463,214 455,218 460,224" fill="#8195bc"/>
+
+  <!-- sol üst: parantez -->
+  <g filter="url(#soft)">
+    <rect x="42" y="43" width="142" height="80" rx="18" fill="#fff4e9"/>
+    <rect x="42" y="43" width="142" height="80" rx="18" fill="none" stroke="#f0d9bc"/>
+  </g>
+  <text x="62" y="68" fill="#83613d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Dengeli parantez</text>
+  <text x="67" y="101" fill="#dd8b58" font-family="Segoe UI, Tahoma, sans-serif" font-size="23" font-weight="700">(()())</text>
+  <circle cx="158" cy="94" r="8" fill="#f5bf8e"/>
+  <path d="M154 94 L157 97 L163 90" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- sağ üst: ikili ağaç -->
+  <g filter="url(#soft)">
+    <rect x="456" y="43" width="142" height="80" rx="18" fill="#ebf8f3"/>
+    <rect x="456" y="43" width="142" height="80" rx="18" fill="none" stroke="#c6e7db"/>
+  </g>
+  <text x="477" y="68" fill="#417c69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">İkili ağaç</text>
+  <path d="M527 83 L509 103 M527 83 L546 103" stroke="#69a992" stroke-width="2"/>
+  <circle cx="527" cy="80" r="9" fill="#6eb49b"/>
+  <circle cx="507" cy="106" r="8" fill="#9dd4be"/>
+  <circle cx="548" cy="106" r="8" fill="#9dd4be"/>
+
+  <!-- sol alt: yol -->
+  <g filter="url(#soft)">
+    <rect x="42" y="180" width="142" height="80" rx="18" fill="#eef5ff"/>
+    <rect x="42" y="180" width="142" height="80" rx="18" fill="none" stroke="#cbdcf4"/>
+  </g>
+  <text x="62" y="205" fill="#5275a5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Izgara yolu</text>
+  <path d="M64 241 H155 V217" fill="none" stroke="#a7bbd9" stroke-width="2"/>
+  <path d="M69 238 L86 238 L86 228 L104 228 L104 219 L123 219 L123 209 L147 209" fill="none" stroke="#6089c4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="147,204 156,209 147,214" fill="#6089c4"/>
+
+  <!-- sağ alt: üçgenleme -->
+  <g filter="url(#soft)">
+    <rect x="456" y="180" width="142" height="80" rx="18" fill="#f8effb"/>
+    <rect x="456" y="180" width="142" height="80" rx="18" fill="none" stroke="#e6cfe9"/>
+  </g>
+  <text x="476" y="205" fill="#875b91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Üçgenleme</text>
+  <polygon points="490,239 517,214 553,224 549,248 508,252" fill="#e8caeb" stroke="#a977ae" stroke-width="2"/>
+  <path d="M517 214 L508 252 M517 214 L549 248 M490 239 L553 224" fill="none" stroke="#a977ae" stroke-width="1.5"/>
+
+  <!-- merkez -->
+  <g filter="url(#shadow)">
+    <rect x="238" y="104" width="164" height="94" rx="25" fill="url(#core)"/>
+    <rect x="238" y="104" width="164" height="94" rx="25" fill="none" stroke="#675cc9" opacity="0.45"/>
+  </g>
+  <text x="320" y="134" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">CATALAN SAYILARI</text>
+  <text x="320" y="166" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="25" font-weight="700">1 · 1 · 2 · 5 · 14</text>
+  <text x="320" y="185" text-anchor="middle" fill="#e9e6ff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ortak sayma iskeleti</text>
+
+  <!-- alt işlem şeridi -->
+  <path d="M320 201 L320 222" stroke="#7185ad" stroke-width="2"/>
+  <polygon points="315,220 320,228 325,220" fill="#7185ad"/>
+  <g filter="url(#soft)">
+    <rect x="184" y="235" width="272" height="58" rx="18" fill="#ffffff"/>
+    <rect x="184" y="235" width="272" height="58" rx="18" fill="none" stroke="#d9e3ee"/>
+  </g>
+  <text x="205" y="258" fill="#53647e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Böl ve birleştir</text>
+  <text x="320" y="280" text-anchor="middle" fill="#5d69a3" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="700">Cₙ₊₁ = Σ Cᵢ · Cₙ₋ᵢ</text>
+  <path d="M292 256 C306 247 318 247 332 256" fill="none" stroke="#9d92df" stroke-width="2"/>
+  <polygon points="331,251 339,257 330,260" fill="#9d92df"/>
+</svg>
