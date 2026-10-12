@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f3e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7890a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7c91a2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="85" cy="50" r="72" fill="#dceeff" opacity="0.35"/>
+  <circle cx="574" cy="275" r="96" fill="#dff3df" opacity="0.42"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556b">COLLATZ VARSAYIMI</text>
+  <text x="30" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708398">Basit kurallar, belirsiz küresel sonuç</text>
+
+  <path d="M177 153 C198 153 205 112 227 112" fill="none" stroke="#7990a7" stroke-width="2"/>
+  <polygon points="227,106 239,112 227,118" fill="#7990a7"/>
+
+  <path d="M177 167 C198 167 205 210 227 210" fill="none" stroke="#7990a7" stroke-width="2"/>
+  <polygon points="227,204 239,210 227,216" fill="#7990a7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="123" width="146" height="72" rx="18" fill="#ffffff"/>
+    <circle cx="59" cy="159" r="17" fill="#e3efff"/>
+    <text x="59" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4272a8">n</text>
+    <text x="88" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556b">Pozitif tam sayı</text>
+    <text x="88" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7890a7">Başlangıç değeri</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="239" y="75" width="151" height="72" rx="17" fill="#fff5dc"/>
+    <circle cx="266" cy="111" r="17" fill="#ffe4a7"/>
+    <text x="266" y="115" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a66d16">%</text>
+    <text x="294" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765326">Çift sayı</text>
+    <text x="294" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#96794c">n / 2</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="239" y="174" width="151" height="72" rx="17" fill="#f7e5f3"/>
+    <circle cx="266" cy="210" r="17" fill="#edc8e5"/>
+    <text x="266" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9b4e8c">+</text>
+    <text x="294" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#794169">Tek sayı</text>
+    <text x="294" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#976b8d">3n + 1</text>
+  </g>
+
+  <path d="M390 111 C414 111 415 145 435 154" fill="none" stroke="#7990a7" stroke-width="2"/>
+  <polygon points="429,146 441,157 426,158" fill="#7990a7"/>
+  <path d="M390 210 C414 210 415 179 435 169" fill="none" stroke="#7990a7" stroke-width="2"/>
+  <polygon points="426,165 441,166 430,177" fill="#7990a7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="438" y="117" width="128" height="89" rx="23" fill="url(#core)"/>
+    <circle cx="502" cy="150" r="24" fill="#ffffff" opacity="0.77"/>
+    <text x="502" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6f78">Tekrarla</text>
+    <text x="502" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587c81">Dizi ilerler</text>
+  </g>
+
+  <path d="M563 136 C612 113 616 207 570 191" fill="none" stroke="#6d9b82" stroke-width="2.5"/>
+  <polygon points="573,184 562,195 578,197" fill="#6d9b82"/>
+
+  <g filter="url(#soft)">
+    <rect x="484" y="229" width="122" height="58" rx="17" fill="#e0f3e5"/>
+    <text x="545" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#367656">1 → 4 → 2 → 1</text>
+    <text x="545" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668b77">Ana döngü</text>
+  </g>
+
+  <path d="M501 206 L531 227" fill="none" stroke="#6d9b82" stroke-width="2"/>
+  <polygon points="524,219 536,231 521,230" fill="#6d9b82"/>
+
+  <g filter="url(#soft)">
+    <rect x="32" y="244" width="414" height="49" rx="16" fill="#ffffff" opacity="0.9"/>
+    <text x="51" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#506478">Örnek yol</text>
+    <text x="124" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7895">6</text>
+    <text x="142" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8aa0b1">→</text>
+    <text x="159" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7895">3</text>
+    <text x="176" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8aa0b1">→</text>
+    <text x="193" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7895">10</text>
+    <text x="218" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8aa0b1">→</text>
+    <text x="235" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7895">5</text>
+    <text x="252" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8aa0b1">→</text>
+    <text x="269" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7895">16</text>
+    <text x="295" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8aa0b1">→</text>
+    <text x="312" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7895">8</text>
+    <text x="329" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8aa0b1">→</text>
+    <text x="346" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7895">4</text>
+    <text x="363" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8aa0b1">→</text>
+    <text x="380" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7895">2</text>
+    <text x="397" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8aa0b1">→</text>
+    <text x="414" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#367656">1</text>
+    <text x="51" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b90a1">27 sayısı 9232'ye çıkabilir • Genel ispat bilinmiyor</text>
+  </g>
+</svg>

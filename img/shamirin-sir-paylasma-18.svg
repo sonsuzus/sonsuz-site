@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="secret" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8778d8"/>
+      <stop offset="1" stop-color="#6254ae"/>
+    </linearGradient>
+    <linearGradient id="math" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#83c7da"/>
+      <stop offset="1" stop-color="#4f99b5"/>
+    </linearGradient>
+    <linearGradient id="success" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#80c9a0"/>
+      <stop offset="1" stop-color="#4f9a73"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52708a" flood-opacity="0.17"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52708a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="81" cy="63" r="85" fill="#dceef9" opacity="0.48"/>
+  <circle cx="581" cy="258" r="104" fill="#dcf1df" opacity="0.5"/>
+  <circle cx="540" cy="44" r="45" fill="#eee8fa" opacity="0.65"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536a">SHAMIR SIR PAYLAŞIMI</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708096">Eşik modeli: 3 / 5</text>
+
+  <path d="M145 160 C171 160 176 160 197 160" fill="none" stroke="#7f91a6" stroke-width="2"/>
+  <polygon points="197,160 188,155 188,165" fill="#7f91a6"/>
+
+  <path d="M339 150 C371 121 384 94 412 85" fill="none" stroke="#77a8b7" stroke-width="2"/>
+  <polygon points="412,85 402,82 406,91" fill="#77a8b7"/>
+  <path d="M344 160 C373 160 383 160 412 160" fill="none" stroke="#77a8b7" stroke-width="2"/>
+  <polygon points="412,160 402,155 402,165" fill="#77a8b7"/>
+  <path d="M339 170 C371 200 383 225 412 235" fill="none" stroke="#77a8b7" stroke-width="2"/>
+  <polygon points="412,235 406,229 402,238" fill="#77a8b7"/>
+  <path d="M327 184 C349 225 365 261 412 271" fill="none" stroke="#a8b3be" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <path d="M319 187 C329 235 350 278 412 288" fill="none" stroke="#a8b3be" stroke-width="1.6" stroke-dasharray="4 4"/>
+
+  <path d="M500 85 C524 101 529 128 534 144" fill="none" stroke="#6fae88" stroke-width="2"/>
+  <polygon points="534,144 528,135 538,134" fill="#6fae88"/>
+  <path d="M500 160 L529 160" fill="none" stroke="#6fae88" stroke-width="2"/>
+  <polygon points="529,160 520,155 520,165" fill="#6fae88"/>
+  <path d="M500 235 C524 220 529 193 534 176" fill="none" stroke="#6fae88" stroke-width="2"/>
+  <polygon points="534,176 538,186 528,185" fill="#6fae88"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="119" width="117" height="82" rx="19" fill="url(#secret)"/>
+    <circle cx="57" cy="151" r="16" fill="#ffffff" opacity="0.18"/>
+    <path d="M51 151 a6 6 0 1 1 12 0 v6 h-12z" fill="none" stroke="#fff" stroke-width="2"/>
+    <circle cx="57" cy="151" r="1.7" fill="#fff"/>
+    <path d="M57 153 v3" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="81" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#fff">Sır</text>
+    <text x="81" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eeeaff">S = f(0)</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="198" y="101" width="145" height="118" rx="20" fill="url(#math)"/>
+    <text x="221" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#fff">Polinom</text>
+    <text x="221" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eafbff">f(x) mod p</text>
+    <path d="M219 184 C232 165 242 198 256 177 S282 169 300 151 S319 150 323 143" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/>
+    <circle cx="230" cy="176" r="3" fill="#f8d780"/>
+    <circle cx="256" cy="177" r="3" fill="#f8d780"/>
+    <circle cx="281" cy="170" r="3" fill="#f8d780"/>
+    <circle cx="306" cy="156" r="3" fill="#f8d780"/>
+    <text x="274" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eafbff">rastgele katsayılar</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="413" y="59" width="88" height="52" rx="15" fill="#fff" stroke="#c8e0e9"/>
+    <circle cx="430" cy="78" r="8" fill="#a6d6e5"/>
+    <text x="445" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426374">Pay 1</text>
+    <text x="426" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#74899a">(x₁, y₁)</text>
+
+    <rect x="413" y="134" width="88" height="52" rx="15" fill="#fff" stroke="#c8e0e9"/>
+    <circle cx="430" cy="153" r="8" fill="#a6d6e5"/>
+    <text x="445" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426374">Pay 2</text>
+    <text x="426" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#74899a">(x₂, y₂)</text>
+
+    <rect x="413" y="209" width="88" height="52" rx="15" fill="#fff" stroke="#c8e0e9"/>
+    <circle cx="430" cy="228" r="8" fill="#a6d6e5"/>
+    <text x="445" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426374">Pay 3</text>
+    <text x="426" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#74899a">(x₃, y₃)</text>
+
+    <rect x="413" y="268" width="88" height="31" rx="12" fill="#f6f8fb" stroke="#dbe3ea"/>
+    <text x="431" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8997a5">Pay 4</text>
+    <text x="477" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8997a5">5</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="536" y="119" width="78" height="82" rx="19" fill="url(#success)"/>
+    <path d="M558 158 v-9 a8 8 0 0 1 16 0 v9" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/>
+    <rect x="555" y="157" width="22" height="18" rx="4" fill="#fff"/>
+    <circle cx="566" cy="165" r="2" fill="#579174"/>
+    <path d="M566 167 v4" stroke="#579174" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="549" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#fff">Kurtar</text>
+  </g>
+
+  <g>
+    <rect x="202" y="246" width="178" height="42" rx="15" fill="#fff" stroke="#d6e5de" filter="url(#smallShadow)"/>
+    <circle cx="224" cy="267" r="11" fill="#f7d58d"/>
+    <text x="220" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765d2e">3</text>
+    <text x="244" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b62">yeterli pay gerekir</text>
+  </g>
+
+  <text x="527" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8278">Lagrange</text>
+  <text x="527" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8278">enterpolasyonu</text>
+</svg>

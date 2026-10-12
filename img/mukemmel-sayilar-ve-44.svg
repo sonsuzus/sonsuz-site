@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="perfect" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4efff"/>
+      <stop offset="100%" stop-color="#cbdcf8"/>
+    </linearGradient>
+    <linearGradient id="kaprekar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4f7e8"/>
+      <stop offset="100%" stop-color="#c9eacc"/>
+    </linearGradient>
+    <linearGradient id="code" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff5df"/>
+      <stop offset="100%" stop-color="#f6e3b9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#64748b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#51708b" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="66" cy="45" r="46" fill="#dceeff" opacity="0.48"/>
+  <circle cx="585" cy="277" r="72" fill="#dcf1db" opacity="0.48"/>
+  <path d="M29 275 C116 243 144 297 223 276 S381 234 454 258 S555 278 617 228" fill="none" stroke="#c7dfd8" stroke-width="2" opacity="0.65"/>
+
+  <g filter="url(#shadow)">
+    <rect x="222" y="18" width="196" height="55" rx="18" fill="#ffffff"/>
+    <circle cx="254" cy="45.5" r="16" fill="#d9eafd"/>
+    <text x="254" y="50" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#315b80">n</text>
+    <text x="278" y="41" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31465a">Sayı Kuralları</text>
+    <text x="278" y="58" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">iki ilginç aile</text>
+  </g>
+
+  <path d="M270 73 L177 106" fill="none" stroke="#7e9fbe" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="174,113 177,104 185,110" fill="#7e9fbe"/>
+  <path d="M370 73 L463 106" fill="none" stroke="#79a98a" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="455,110 463,104 466,113" fill="#79a98a"/>
+
+  <g filter="url(#shadow)">
+    <rect x="46" y="105" width="244" height="119" rx="20" fill="url(#perfect)"/>
+    <circle cx="77" cy="135" r="17" fill="#ffffff" opacity="0.9"/>
+    <path d="M77 124 L77 146 M66 135 L88 135" stroke="#5081b6" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="103" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b80">Mükemmel Sayı</text>
+    <text x="103" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55738d">öz bölenlerin dengesi</text>
+
+    <rect x="62" y="169" width="61" height="36" rx="11" fill="#ffffff" opacity="0.92"/>
+    <text x="92.5" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3970a5">1+2+3</text>
+    <text x="92.5" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7890">bölenler</text>
+
+    <path d="M130 187 L152 187" stroke="#6e98be" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="151,182 160,187 151,192" fill="#6e98be"/>
+
+    <rect x="161" y="169" width="61" height="36" rx="11" fill="#ffffff" opacity="0.92"/>
+    <text x="191.5" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#3970a5">= 6</text>
+
+    <rect x="232" y="169" width="43" height="36" rx="11" fill="#b7d3f0"/>
+    <text x="253.5" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b80">28</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="350" y="105" width="244" height="119" rx="20" fill="url(#kaprekar)"/>
+    <circle cx="381" cy="135" r="17" fill="#ffffff" opacity="0.9"/>
+    <path d="M371 128 C377 120 390 125 388 134 C387 142 377 147 372 142" fill="none" stroke="#4e9670" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="370,137 370,145 377,142" fill="#4e9670"/>
+    <text x="407" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b4a">Kaprekar Sayısı</text>
+    <text x="407" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7e69">kareden yeniden sayı</text>
+
+    <rect x="366" y="169" width="61" height="36" rx="11" fill="#ffffff" opacity="0.92"/>
+    <text x="396.5" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39815a">45²</text>
+    <text x="396.5" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8069">2025</text>
+
+    <path d="M434 187 L456 187" stroke="#6fa581" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="455,182 464,187 455,192" fill="#6fa581"/>
+
+    <rect x="465" y="169" width="61" height="36" rx="11" fill="#ffffff" opacity="0.92"/>
+    <text x="495.5" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39815a">20+25</text>
+    <text x="495.5" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8069">= 45</text>
+
+    <rect x="536" y="169" width="43" height="36" rx="11" fill="#bfe5c6"/>
+    <text x="557.5" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356b4a">297</text>
+  </g>
+
+  <path d="M168 224 L247 249" fill="none" stroke="#829fba" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="239,252 249,250 243,242" fill="#829fba"/>
+  <path d="M472 224 L393 249" fill="none" stroke="#7ba888" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="397,242 391,250 401,252" fill="#7ba888"/>
+
+  <g filter="url(#soft)">
+    <rect x="202" y="246" width="236" height="57" rx="18" fill="url(#code)"/>
+    <rect x="218" y="261" width="30" height="27" rx="8" fill="#fffdf7"/>
+    <path d="M229 267 L224 274 L229 281 M237 267 L242 274 L237 281" fill="none" stroke="#b07825" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="262" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76501d">Python ile Tarama</text>
+    <text x="262" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6b3b">√n bölen testi · kareyi böl</text>
+  </g>
+</svg>

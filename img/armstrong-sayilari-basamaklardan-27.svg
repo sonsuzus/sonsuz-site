@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#bddcf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7895aa" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7895aa" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="151" r="115" fill="#dff1eb" opacity="0.44"/>
+  <circle cx="320" cy="151" r="84" fill="#ffffff" opacity="0.48"/>
+
+  <text x="28" y="33" fill="#426174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">ARMSTRONG SAYISI</text>
+  <text x="28" y="51" fill="#7890a0" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Basamaklardan kuvvetler toplamına</text>
+
+  <!-- outer connectors -->
+  <path d="M169 130 C193 130 198 130 216 139" fill="none" stroke="#91aec0" stroke-width="2"/>
+  <polygon points="216,139 207,134 209,143" fill="#91aec0"/>
+  <path d="M421 139 C441 130 451 130 471 130" fill="none" stroke="#91aec0" stroke-width="2"/>
+  <polygon points="471,130 462,125 464,134" fill="#91aec0"/>
+  <path d="M320 207 L320 230" fill="none" stroke="#91aec0" stroke-width="2"/>
+  <polygon points="320,230 315,221 325,221" fill="#91aec0"/>
+
+  <!-- input -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="94" width="142" height="73" rx="18" fill="#fffdf9"/>
+    <rect x="39" y="106" width="35" height="35" rx="11" fill="#f9dda8"/>
+    <text x="56.5" y="129" text-anchor="middle" fill="#855e20" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">N</text>
+    <text x="87" y="120" fill="#426174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Sayı</text>
+    <text x="87" y="141" fill="#758b98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">153</text>
+  </g>
+
+  <!-- core -->
+  <g filter="url(#shadow)">
+    <rect x="216" y="84" width="208" height="123" rx="24" fill="url(#core)"/>
+    <text x="320" y="109" text-anchor="middle" fill="#315a73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">BASAMAK İŞLEME</text>
+
+    <rect x="234" y="122" width="40" height="42" rx="11" fill="#ffffff"/>
+    <text x="254" y="148" text-anchor="middle" fill="#3b6680" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">1³</text>
+    <text x="280" y="148" text-anchor="middle" fill="#7890a0" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">+</text>
+
+    <rect x="290" y="122" width="40" height="42" rx="11" fill="#ffffff"/>
+    <text x="310" y="148" text-anchor="middle" fill="#3b6680" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">5³</text>
+    <text x="336" y="148" text-anchor="middle" fill="#7890a0" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">+</text>
+
+    <rect x="346" y="122" width="40" height="42" rx="11" fill="#ffffff"/>
+    <text x="366" y="148" text-anchor="middle" fill="#3b6680" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">3³</text>
+
+    <text x="320" y="187" text-anchor="middle" fill="#426174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">k = basamak sayısı = 3</text>
+  </g>
+
+  <!-- outcome -->
+  <g filter="url(#shadow)">
+    <rect x="471" y="94" width="142" height="73" rx="18" fill="#e4f4dc"/>
+    <circle cx="499" cy="130" r="17" fill="#8cc985"/>
+    <path d="M491 130 L497 136 L508 123" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="527" y="120" fill="#3c704a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Eşit mi?</text>
+    <text x="527" y="141" fill="#5d8d69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">153 = 153</text>
+  </g>
+
+  <!-- bottom process -->
+  <g filter="url(#softShadow)">
+    <rect x="83" y="231" width="474" height="62" rx="18" fill="#ffffff"/>
+    <rect x="100" y="244" width="108" height="36" rx="11" fill="#f3e5ff"/>
+    <text x="154" y="266" text-anchor="middle" fill="#76518e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Basamağa ayır</text>
+
+    <path d="M213 262 L235 262" fill="none" stroke="#ad98b9" stroke-width="2"/>
+    <polygon points="235,262 226,257 226,267" fill="#ad98b9"/>
+
+    <rect x="240" y="244" width="108" height="36" rx="11" fill="#fff0ce"/>
+    <text x="294" y="266" text-anchor="middle" fill="#88672b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kuvvet al</text>
+
+    <path d="M353 262 L375 262" fill="none" stroke="#ad98b9" stroke-width="2"/>
+    <polygon points="375,262 366,257 366,267" fill="#ad98b9"/>
+
+    <rect x="380" y="244" width="160" height="36" rx="11" fill="#dceff1"/>
+    <text x="460" y="266" text-anchor="middle" fill="#39717a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Topla ve karşılaştır</text>
+  </g>
+
+  <text x="320" y="313" text-anchor="middle" fill="#7b919e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Aralık taraması: O(Nk)</text>
+</svg>
