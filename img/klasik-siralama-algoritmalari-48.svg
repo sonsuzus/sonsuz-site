@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ee"/>
+    </linearGradient>
+    <linearGradient id="arena" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8efff"/>
+      <stop offset="100%" stop-color="#e7f7ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6e8294" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6e8294" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="115" fill="#dbeafb" opacity="0.38"/>
+  <circle cx="320" cy="160" r="87" fill="#e7f6e9" opacity="0.48"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405568">Sıralama Algoritmaları Arenası</text>
+
+  <!-- Bağlantılar -->
+  <path d="M206 103 C232 113 246 123 260 136" fill="none" stroke="#9aabba" stroke-width="2"/>
+  <polygon points="260,136 251,133 255,142" fill="#9aabba"/>
+  <path d="M434 103 C408 113 394 123 380 136" fill="none" stroke="#9aabba" stroke-width="2"/>
+  <polygon points="380,136 385,142 389,133" fill="#9aabba"/>
+  <path d="M206 226 C233 214 247 201 261 187" fill="none" stroke="#9aabba" stroke-width="2"/>
+  <polygon points="261,187 252,190 258,196" fill="#9aabba"/>
+  <path d="M434 226 C407 214 393 201 379 187" fill="none" stroke="#9aabba" stroke-width="2"/>
+  <polygon points="379,187 382,196 388,190" fill="#9aabba"/>
+
+  <!-- Kabarcık -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="58" width="173" height="91" rx="17" fill="#fff5df"/>
+    <rect x="35" y="58" width="7" height="91" rx="3.5" fill="#f4bc5f"/>
+  </g>
+  <circle cx="64" cy="83" r="13" fill="#f8ce7d"/>
+  <circle cx="59" cy="82" r="4" fill="#fff7e7"/>
+  <path d="M71 91 L80 82" stroke="#d58d38" stroke-width="2" fill="none"/>
+  <polygon points="80,82 74,83 78,88" fill="#d58d38"/>
+  <text x="89" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#72542b">Kabarcık</text>
+  <text x="89" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d6c64">Komşu takaslar</text>
+  <rect x="54" y="119" width="50" height="16" rx="8" fill="#f8dfac"/>
+  <text x="79" y="131" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b6427">O(n²)</text>
+  <text x="119" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#817663">Öğretici</text>
+
+  <!-- Seçmeli -->
+  <g filter="url(#shadow)">
+    <rect x="432" y="58" width="173" height="91" rx="17" fill="#fbecef"/>
+    <rect x="598" y="58" width="7" height="91" rx="3.5" fill="#e48d9e"/>
+  </g>
+  <circle cx="461" cy="83" r="13" fill="#efacbb"/>
+  <path d="M455 83 L459 87 L467 78" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="485" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#794653">Seçmeli</text>
+  <text x="485" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75666a">En küçüğü seç</text>
+  <rect x="451" y="119" width="50" height="16" rx="8" fill="#f5cad3"/>
+  <text x="476" y="131" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b4b5a">O(n²)</text>
+  <text x="516" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#856c72">Az takas</text>
+
+  <!-- Yerleştirmeli -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="184" width="173" height="91" rx="17" fill="#eaf6ff"/>
+    <rect x="35" y="184" width="7" height="91" rx="3.5" fill="#78afd8"/>
+  </g>
+  <rect x="52" y="201" width="8" height="22" rx="3" fill="#8dc5e8"/>
+  <rect x="63" y="207" width="8" height="16" rx="3" fill="#6aa8d6"/>
+  <rect x="74" y="196" width="8" height="27" rx="3" fill="#b2d9f0"/>
+  <path d="M84 212 L94 212" stroke="#5495c5" stroke-width="2"/>
+  <polygon points="94,212 88,208 88,216" fill="#5495c5"/>
+  <text x="104" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365d78">Yerleştirmeli</text>
+  <text x="104" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60717d">Düzenli veri</text>
+  <rect x="54" y="244" width="48" height="16" rx="8" fill="#cce8f7"/>
+  <text x="78" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d789f">O(n)</text>
+  <text x="117" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597080">Küçük liste</text>
+
+  <!-- Shell -->
+  <g filter="url(#shadow)">
+    <rect x="432" y="184" width="173" height="91" rx="17" fill="#edf4e5"/>
+    <rect x="598" y="184" width="7" height="91" rx="3.5" fill="#94b878"/>
+  </g>
+  <circle cx="458" cy="210" r="5" fill="#91ba75"/>
+  <circle cx="478" cy="210" r="5" fill="#b8d59f"/>
+  <circle cx="498" cy="210" r="5" fill="#91ba75"/>
+  <path d="M458 221 L498 221" stroke="#719d59" stroke-width="2" stroke-dasharray="3 3"/>
+  <polygon points="498,221 492,217 492,225" fill="#719d59"/>
+  <text x="519" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6e3c">Shell</text>
+  <text x="519" y="228" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63715b">Aralık küçült</text>
+  <rect x="451" y="244" width="68" height="16" rx="8" fill="#d4e8c3"/>
+  <text x="485" y="256" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#547841">Orta veri</text>
+  <text x="531" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63715b">Hızlı</text>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <circle cx="320" cy="160" r="55" fill="url(#arena)" stroke="#c3d8df" stroke-width="1.5"/>
+    <circle cx="320" cy="160" r="43" fill="#f9fcff" opacity="0.82"/>
+  </g>
+  <path d="M292 149 L306 149 L306 171 L320 171 L320 139 L334 139 L334 160 L348 160" fill="none" stroke="#607e94" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="292" cy="149" r="4" fill="#f0b45c"/>
+  <circle cx="306" cy="149" r="4" fill="#e88fa0"/>
+  <circle cx="320" cy="171" r="4" fill="#7bb3d7"/>
+  <circle cx="320" cy="139" r="4" fill="#8dbb78"/>
+  <circle cx="334" cy="139" r="4" fill="#aa90d0"/>
+  <circle cx="334" cy="160" r="4" fill="#72bba9"/>
+  <circle cx="348" cy="160" r="4" fill="#f0b45c"/>
+  <text x="320" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405568">Veriye göre seç</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="213" y="288" width="214" height="22" rx="11" fill="#ffffff"/>
+  </g>
+  <text x="320" y="303" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#516675">Bellek: O(1) • Performans veriyle değişir</text>
+</svg>
