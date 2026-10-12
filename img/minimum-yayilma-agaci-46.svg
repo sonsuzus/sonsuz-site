@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#dff3df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a5" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="119" fill="#dceef4" opacity="0.34"/>
+  <circle cx="320" cy="160" r="92" fill="#ffffff" opacity="0.38"/>
+
+  <g stroke="#b6c7d3" stroke-width="2" fill="none">
+    <path d="M176 85 C211 93 223 115 249 130"/>
+    <path d="M176 234 C207 220 225 203 250 187"/>
+    <path d="M465 160 C437 160 419 160 394 160"/>
+  </g>
+
+  <g fill="#7892a4">
+    <polygon points="249,130 239,126 243,137"/>
+    <polygon points="250,187 242,180 239,191"/>
+    <polygon points="394,160 384,155 384,165"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="48" width="137" height="76" rx="18" fill="#fff4d9"/>
+    <rect x="42" y="196" width="137" height="76" rx="18" fill="#e7ddfb"/>
+    <rect x="462" y="122" width="136" height="76" rx="18" fill="#d9f2eb"/>
+    <rect x="248" y="105" width="147" height="110" rx="24" fill="url(#core)" stroke="#b9d4d0" stroke-width="1.5"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#314657">
+    <text x="110.5" y="73" text-anchor="middle" font-weight="700">Kruskal</text>
+    <text x="110.5" y="94" text-anchor="middle">Ucuz kenarlar</text>
+    <text x="110.5" y="111" text-anchor="middle" fill="#657786">Sıralama</text>
+
+    <text x="110.5" y="221" text-anchor="middle" font-weight="700">Borůvka</text>
+    <text x="110.5" y="242" text-anchor="middle">Eşzamanlı seçim</text>
+    <text x="110.5" y="259" text-anchor="middle" fill="#657786">Bileşenler</text>
+
+    <text x="530" y="148" text-anchor="middle" font-weight="700">Ekonomik Ağ</text>
+    <text x="530" y="169" text-anchor="middle">n düğüm</text>
+    <text x="530" y="186" text-anchor="middle" fill="#55776f">n − 1 bağlantı</text>
+
+    <text x="321.5" y="132" text-anchor="middle" font-weight="700" font-size="14">Minimum</text>
+    <text x="321.5" y="150" text-anchor="middle" font-weight="700" font-size="14">Yayılma Ağacı</text>
+    <text x="321.5" y="181" text-anchor="middle" fill="#506a70">En düşük maliyet</text>
+    <text x="321.5" y="198" text-anchor="middle" fill="#506a70">Döngüsüz bağlantı</text>
+  </g>
+
+  <g stroke="#7f9eae" stroke-width="2.2" fill="none" stroke-linecap="round">
+    <path d="M71 92 L103 73 L143 96 L119 109 L71 92"/>
+    <path d="M73 236 L108 218 L146 239 L119 253 L73 236"/>
+    <path d="M487 168 L514 145 L552 153 L568 177 L531 184 L487 168"/>
+  </g>
+  <g fill="#ffbe5c">
+    <circle cx="71" cy="92" r="5"/>
+    <circle cx="103" cy="73" r="5"/>
+    <circle cx="143" cy="96" r="5"/>
+    <circle cx="119" cy="109" r="5"/>
+  </g>
+  <g fill="#a789e8">
+    <circle cx="73" cy="236" r="5"/>
+    <circle cx="108" cy="218" r="5"/>
+    <circle cx="146" cy="239" r="5"/>
+    <circle cx="119" cy="253" r="5"/>
+  </g>
+  <g fill="#64bca8">
+    <circle cx="487" cy="168" r="5"/>
+    <circle cx="514" cy="145" r="5"/>
+    <circle cx="552" cy="153" r="5"/>
+    <circle cx="568" cy="177" r="5"/>
+    <circle cx="531" cy="184" r="5"/>
+  </g>
+
+  <g stroke="#4d7f8e" stroke-width="2.6" fill="none" stroke-linecap="round">
+    <path d="M276 175 L301 142 L336 126 L369 158 L351 190 L304 190 L276 175"/>
+    <path d="M301 142 L304 190"/>
+    <path d="M336 126 L351 190"/>
+  </g>
+  <g fill="#ffffff" stroke="#4d7f8e" stroke-width="2">
+    <circle cx="276" cy="175" r="7"/>
+    <circle cx="301" cy="142" r="7"/>
+    <circle cx="336" cy="126" r="7"/>
+    <circle cx="369" cy="158" r="7"/>
+    <circle cx="351" cy="190" r="7"/>
+    <circle cx="304" cy="190" r="7"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="236" y="251" width="168" height="42" rx="16" fill="#ffffff"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405767">
+    <text x="320" y="268" text-anchor="middle" font-weight="700">Prim</text>
+    <text x="320" y="284" text-anchor="middle">Tek ağaçtan büyüme</text>
+  </g>
+  <path d="M320 250 L320 219" stroke="#b6c7d3" stroke-width="2" fill="none"/>
+  <polygon points="320,219 315,229 325,229" fill="#7892a4"/>
+</svg>

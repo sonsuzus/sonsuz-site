@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7891a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#4e6c85" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="90" cy="44" r="70" fill="#dceeff" opacity="0.52"/>
+  <circle cx="584" cy="275" r="92" fill="#dff3d9" opacity="0.5"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">Welch-Powell ile Graf Renklendirme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="61" width="142" height="205" rx="18" fill="url(#card)" stroke="#d8e4ed"/>
+    <rect x="205" y="61" width="206" height="205" rx="18" fill="url(#card)" stroke="#d8e4ed"/>
+    <rect x="446" y="61" width="166" height="205" rx="18" fill="url(#card)" stroke="#d8e4ed"/>
+  </g>
+
+  <text x="99" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405d73">1. Dereceye göre sırala</text>
+  <line x1="52" y1="102" x2="146" y2="102" stroke="#dce7ef"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536b">
+    <rect x="48" y="116" width="101" height="25" rx="12" fill="#e5d9fb"/>
+    <text x="61" y="133">B</text><text x="133" y="133" text-anchor="end" fill="#74618f">3 komşu</text>
+
+    <rect x="48" y="149" width="91" height="25" rx="12" fill="#d8ecff"/>
+    <text x="61" y="166">C</text><text x="123" y="166" text-anchor="end" fill="#54738c">3 komşu</text>
+
+    <rect x="48" y="182" width="80" height="25" rx="12" fill="#dff4e5"/>
+    <text x="61" y="199">D</text><text x="113" y="199" text-anchor="end" fill="#597464">3 komşu</text>
+
+    <rect x="48" y="215" width="68" height="25" rx="12" fill="#fff0c9"/>
+    <text x="61" y="232">A</text><text x="101" y="232" text-anchor="end" fill="#8a7140">2</text>
+  </g>
+
+  <path d="M175 164 L193 164" fill="none" stroke="#7693aa" stroke-width="2"/>
+  <polygon points="199,164 191,159 191,169" fill="#7693aa"/>
+
+  <text x="308" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405d73">2. Çatışmaları denetle</text>
+
+  <g stroke="#8499a9" stroke-width="2" fill="none" opacity="0.9">
+    <line x1="274" y1="133" x2="337" y2="118"/>
+    <line x1="274" y1="133" x2="354" y2="179"/>
+    <line x1="337" y1="118" x2="354" y2="179"/>
+    <line x1="337" y1="118" x2="293" y2="211"/>
+    <line x1="354" y1="179" x2="293" y2="211"/>
+    <line x1="354" y1="179" x2="375" y2="224"/>
+  </g>
+
+  <g filter="url(#soft)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <circle cx="274" cy="133" r="17" fill="#ffd7d7" stroke="#ed9c9c"/>
+    <text x="274" y="137" fill="#884b4b">A</text>
+    <circle cx="337" cy="118" r="17" fill="#e6dcfb" stroke="#b9a4e0"/>
+    <text x="337" y="122" fill="#65527f">B</text>
+    <circle cx="354" cy="179" r="17" fill="#d7ecff" stroke="#9fc8e8"/>
+    <text x="354" y="183" fill="#416c8c">C</text>
+    <circle cx="293" cy="211" r="17" fill="#def4e4" stroke="#a9d6b5"/>
+    <text x="293" y="215" fill="#467257">D</text>
+    <circle cx="375" cy="224" r="17" fill="#fff0c9" stroke="#e3c981"/>
+    <text x="375" y="228" fill="#80652a">E</text>
+  </g>
+
+  <rect x="231" y="243" width="154" height="16" rx="8" fill="#edf3f7"/>
+  <text x="308" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7284">Komşular farklı renkte</text>
+
+  <path d="M416 164 L434 164" fill="none" stroke="#7693aa" stroke-width="2"/>
+  <polygon points="440,164 432,159 432,169" fill="#7693aa"/>
+
+  <text x="529" y="88" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405d73">3. Renk grupları</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="466" y="109" width="126" height="35" rx="12" fill="#e7dcfa" stroke="#cbb9ea"/>
+    <circle cx="483" cy="126" r="8" fill="#8a69bc"/>
+    <text x="499" y="130" fill="#5d4d72">Renk 1</text>
+    <text x="574" y="130" text-anchor="end" fill="#5d4d72">B, E</text>
+
+    <rect x="466" y="154" width="126" height="35" rx="12" fill="#d8edff" stroke="#add4ee"/>
+    <circle cx="483" cy="171" r="8" fill="#5d9fc6"/>
+    <text x="499" y="175" fill="#456a82">Renk 2</text>
+    <text x="574" y="175" text-anchor="end" fill="#456a82">C</text>
+
+    <rect x="466" y="199" width="126" height="35" rx="12" fill="#dff3e4" stroke="#b4dabd"/>
+    <circle cx="483" cy="216" r="8" fill="#67ae78"/>
+    <text x="499" y="220" fill="#496f53">Renk 3</text>
+    <text x="574" y="220" text-anchor="end" fill="#496f53">A, D</text>
+  </g>
+
+  <text x="529" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#527063">Az renk • Hızlı sezgisel çözüm</text>
+</svg>
