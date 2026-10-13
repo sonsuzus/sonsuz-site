@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#d9f3e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7892a5" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8799" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="35" r="62" fill="#dceeff" opacity="0.42"/>
+  <circle cx="587" cy="284" r="85" fill="#dff4df" opacity="0.42"/>
+  <circle cx="570" cy="42" r="32" fill="#fff0c9" opacity="0.42"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">TAM SAYI PARÇALANMASI</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718598">Sıra önemsiz • pozitif parçalar</text>
+
+  <!-- Left source -->
+  <g filter="url(#shadow)">
+    <rect x="31" y="91" width="137" height="151" rx="20" fill="#ffffff"/>
+    <rect x="31" y="91" width="137" height="35" rx="20" fill="#e7f1ff"/>
+    <path d="M31 112 H168 V126 H31 Z" fill="#e7f1ff"/>
+  </g>
+  <text x="99.5" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41617d">Hedef toplam</text>
+  <circle cx="99" cy="158" r="25" fill="#7daee8" filter="url(#smallShadow)"/>
+  <text x="99" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">n = 5</text>
+  <text x="99.5" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f758a">Parçalar</text>
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="216" width="19" height="19" rx="7" fill="#ffd999"/>
+    <rect x="72" y="216" width="19" height="19" rx="7" fill="#bce9cf"/>
+    <rect x="96" y="216" width="19" height="19" rx="7" fill="#c8dcff"/>
+    <rect x="120" y="216" width="19" height="19" rx="7" fill="#efc9ed"/>
+  </g>
+  <text x="57.5" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#705b30">1</text>
+  <text x="81.5" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426b50">2</text>
+  <text x="105.5" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496486">3</text>
+  <text x="129.5" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765475">…</text>
+
+  <!-- Arrow left to core -->
+  <path d="M178 166 H212" fill="none" stroke="#8aa8b9" stroke-width="2"/>
+  <polygon points="212,166 202,160 202,172" fill="#8aa8b9"/>
+  <text x="195" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8494">işle</text>
+
+  <!-- Core DP -->
+  <g filter="url(#shadow)">
+    <rect x="222" y="68" width="200" height="190" rx="24" fill="url(#core)"/>
+    <rect x="239" y="85" width="166" height="31" rx="11" fill="#ffffff" opacity="0.82"/>
+  </g>
+  <text x="322" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6071">Dinamik Programlama</text>
+
+  <text x="248" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466779">Başlangıç</text>
+  <g filter="url(#smallShadow)">
+    <rect x="323" y="124" width="59" height="28" rx="10" fill="#ffffff"/>
+  </g>
+  <text x="352.5" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e7790">dp[0] = 1</text>
+
+  <path d="M322 160 V174" fill="none" stroke="#81a8a3" stroke-width="2"/>
+  <polygon points="322,181 316,171 328,171" fill="#81a8a3"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="246" y="187" width="152" height="42" rx="13" fill="#ffffff"/>
+  </g>
+  <text x="322" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6870">dp[t] ← dp[t] + dp[t-k]</text>
+  <text x="322" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718b8d">önce parça, sonra toplam</text>
+  <text x="322" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55786e">Tek boyutlu dizi</text>
+
+  <!-- Arrow core to right -->
+  <path d="M433 166 H464" fill="none" stroke="#8aa8b9" stroke-width="2"/>
+  <polygon points="464,166 454,160 454,172" fill="#8aa8b9"/>
+  <text x="448" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8494">say</text>
+
+  <!-- Result -->
+  <g filter="url(#shadow)">
+    <rect x="474" y="82" width="135" height="169" rx="20" fill="#ffffff"/>
+    <rect x="474" y="82" width="135" height="39" rx="20" fill="#fff0d5"/>
+    <path d="M474 102 H609 V121 H474 Z" fill="#fff0d5"/>
+  </g>
+  <text x="541.5" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#78613c">Parçalanma sayısı</text>
+  <circle cx="541.5" cy="152" r="24" fill="#f2bd64" filter="url(#smallShadow)"/>
+  <text x="541.5" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">p(5) = 7</text>
+
+  <path d="M495 190 H588" stroke="#dce6ec" stroke-width="1"/>
+  <text x="541.5" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798a">5 · 4+1 · 3+2</text>
+  <text x="541.5" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60798a">3+1+1 · 2+2+1 · …</text>
+
+  <!-- bottom note -->
+  <g opacity="0.92">
+    <rect x="181" y="279" width="278" height="25" rx="12.5" fill="#e7f1ed"/>
+    <text x="320" y="296" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557669">O(n²) zaman  •  O(n) bellek</text>
+  </g>
+</svg>
