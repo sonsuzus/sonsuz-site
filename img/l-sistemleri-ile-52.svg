@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="seed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8eb8f2"/>
+      <stop offset="100%" stop-color="#638dd0"/>
+    </linearGradient>
+    <linearGradient id="growth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ecfa2"/>
+      <stop offset="100%" stop-color="#4d9b73"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7390a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#628592" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="55" cy="36" r="65" fill="#dcecff" opacity="0.5"/>
+  <circle cx="588" cy="273" r="92" fill="#dcefd7" opacity="0.42"/>
+  <path d="M0 268 C100 238 150 292 239 266 S398 234 480 263 S580 287 640 251" fill="none" stroke="#c6e2d0" stroke-width="2" opacity="0.5"/>
+
+  <text x="28" y="31" fill="#466578" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">L-SİSTEMİ • BÜYÜME MANTIĞI</text>
+
+  <!-- Grammar card -->
+  <rect x="25" y="58" width="166" height="205" rx="18" fill="#ffffff" opacity="0.92" filter="url(#shadow)"/>
+  <rect x="39" y="73" width="138" height="31" rx="11" fill="#e4efff"/>
+  <text x="108" y="94" text-anchor="middle" fill="#406d9a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Biçimsel Gramer</text>
+
+  <text x="43" y="126" fill="#6b7e8b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Alfabe</text>
+  <rect x="105" y="112" width="59" height="24" rx="8" fill="#f0f6ff"/>
+  <text x="134" y="128" text-anchor="middle" fill="#4678ab" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">F + − [ ]</text>
+
+  <text x="43" y="160" fill="#6b7e8b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Aksiyom</text>
+  <rect x="105" y="146" width="59" height="24" rx="8" fill="#eaf7ee"/>
+  <text x="134" y="162" text-anchor="middle" fill="#458063" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">F</text>
+
+  <text x="43" y="194" fill="#6b7e8b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kural</text>
+  <rect x="83" y="180" width="82" height="24" rx="8" fill="#fff4df"/>
+  <text x="124" y="196" text-anchor="middle" fill="#9a7040" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">F → F[+F]F</text>
+
+  <rect x="40" y="218" width="135" height="28" rx="10" fill="#f3f7fa"/>
+  <text x="107" y="237" text-anchor="middle" fill="#607583" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">G = (V, ω, P)</text>
+
+  <!-- arrow 1 -->
+  <path d="M202 160 H221" fill="none" stroke="#83a9bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="228,160 219,155 219,165" fill="#83a9bb"/>
+
+  <!-- Iterations -->
+  <rect x="236" y="78" width="164" height="164" rx="20" fill="#ffffff" opacity="0.94" filter="url(#shadow)"/>
+  <text x="318" y="105" text-anchor="middle" fill="#546e7c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Eş Zamanlı Dönüşüm</text>
+  <path d="M270 128 H366" stroke="#d9e8ed" stroke-width="2"/>
+
+  <circle cx="270" cy="151" r="16" fill="url(#seed)" filter="url(#soft)"/>
+  <text x="270" y="155" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">F</text>
+  <path d="M290 151 H307" fill="none" stroke="#87aaba" stroke-width="2"/>
+  <polygon points="313,151 305,146 305,156" fill="#87aaba"/>
+  <circle cx="331" cy="151" r="18" fill="#b7d9a9" filter="url(#soft)"/>
+  <text x="331" y="155" text-anchor="middle" fill="#3e7759" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">n+1</text>
+  <path d="M351 151 H365" fill="none" stroke="#87aaba" stroke-width="2"/>
+  <polygon points="371,151 363,146 363,156" fill="#87aaba"/>
+
+  <rect x="257" y="184" width="122" height="34" rx="11" fill="#eef8ed"/>
+  <text x="318" y="205" text-anchor="middle" fill="#4c8061" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Paralel büyüme</text>
+  <text x="318" y="231" text-anchor="middle" fill="#778b94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Nₙ ≈ N₀ kⁿ</text>
+
+  <!-- arrow 2 -->
+  <path d="M410 160 H429" fill="none" stroke="#83a9bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="436,160 427,155 427,165" fill="#83a9bb"/>
+
+  <!-- Plant output -->
+  <rect x="445" y="48" width="171" height="226" rx="21" fill="#ffffff" opacity="0.93" filter="url(#shadow)"/>
+  <rect x="462" y="64" width="136" height="28" rx="10" fill="#e3f3e6"/>
+  <text x="530" y="83" text-anchor="middle" fill="#42765b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kaplumbağa Çizimi</text>
+
+  <!-- ground -->
+  <path d="M471 244 C504 239 554 240 590 244" fill="none" stroke="#9fcaab" stroke-width="3" stroke-linecap="round"/>
+  <!-- trunk and branches -->
+  <path d="M531 243 C530 222 531 204 529 183 C527 162 533 142 530 116" fill="none" stroke="#568968" stroke-width="5" stroke-linecap="round"/>
+  <path d="M529 190 C511 179 500 164 497 145" fill="none" stroke="#639d70" stroke-width="4" stroke-linecap="round"/>
+  <path d="M530 207 C549 193 559 179 560 158" fill="none" stroke="#639d70" stroke-width="4" stroke-linecap="round"/>
+  <path d="M530 164 C548 152 553 137 551 119" fill="none" stroke="#639d70" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M528 176 C514 164 514 151 517 135" fill="none" stroke="#639d70" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M531 139 C521 128 521 116 526 104" fill="none" stroke="#639d70" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- leaves -->
+  <ellipse cx="496" cy="142" rx="8" ry="14" transform="rotate(-31 496 142)" fill="#91c98b"/>
+  <ellipse cx="503" cy="162" rx="8" ry="14" transform="rotate(-45 503 162)" fill="#75b879"/>
+  <ellipse cx="516" cy="133" rx="7" ry="13" transform="rotate(-17 516 133)" fill="#a8d99b"/>
+  <ellipse cx="525" cy="103" rx="7" ry="13" transform="rotate(9 525 103)" fill="#84c47e"/>
+  <ellipse cx="551" cy="117" rx="8" ry="14" transform="rotate(30 551 117)" fill="#8fcb88"/>
+  <ellipse cx="555" cy="139" rx="8" ry="14" transform="rotate(42 555 139)" fill="#72b573"/>
+  <ellipse cx="561" cy="157" rx="8" ry="14" transform="rotate(33 561 157)" fill="#9bd38e"/>
+  <ellipse cx="550" cy="181" rx="8" ry="14" transform="rotate(48 550 181)" fill="#82bf7e"/>
+  <ellipse cx="515" cy="181" rx="8" ry="14" transform="rotate(-42 515 181)" fill="#a3d797"/>
+  <ellipse cx="539" cy="151" rx="7" ry="12" transform="rotate(34 539 151)" fill="#b2dfa0"/>
+
+  <rect x="470" y="252" width="120" height="15" rx="7" fill="#eff7f0"/>
+  <text x="530" y="263" text-anchor="middle" fill="#638171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Dijital bahçe</text>
+
+  <!-- tiny symbols -->
+  <circle cx="215" cy="74" r="4" fill="#a8cde4"/>
+  <circle cx="417" cy="264" r="5" fill="#b9dba7"/>
+  <circle cx="207" cy="282" r="3" fill="#d1e5ed"/>
+</svg>
