@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8eaff"/>
+      <stop offset="100%" stop-color="#dff4df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#8da4b5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallshadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#839daf" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="55" r="70" fill="#dceeff" opacity="0.42"/>
+  <circle cx="576" cy="270" r="86" fill="#dff3dc" opacity="0.48"/>
+  <path d="M28 264 C135 226 159 298 266 272 S470 220 611 264" fill="none" stroke="#c5dfdb" stroke-width="2" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405669">Kare hayvanları sayma</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909e">Büyüt • eşdeğerleri birleştir • say</text>
+
+  <rect x="30" y="85" width="140" height="165" rx="18" fill="#fafdff" filter="url(#shadow)"/>
+  <rect x="30" y="85" width="140" height="38" rx="18" fill="#dceeff"/>
+  <path d="M30 105 Q30 123 48 123 H152 Q170 123 170 105" fill="#dceeff"/>
+  <text x="50" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546b">Birim kareler</text>
+
+  <g stroke="#adc7d5" stroke-width="1" fill="#ffffff">
+    <rect x="52" y="145" width="20" height="20" rx="3"/>
+    <rect x="74" y="145" width="20" height="20" rx="3"/>
+    <rect x="52" y="167" width="20" height="20" rx="3"/>
+  </g>
+  <rect x="52" y="145" width="20" height="20" rx="3" fill="#8ec5f3"/>
+  <rect x="74" y="145" width="20" height="20" rx="3" fill="#a5d9ad"/>
+  <rect x="52" y="167" width="20" height="20" rx="3" fill="#ffc989"/>
+  <g stroke="#adc7d5" stroke-width="1" fill="#ffffff" opacity="0.8">
+    <rect x="111" y="145" width="14" height="14" rx="2"/>
+    <rect x="127" y="145" width="14" height="14" rx="2"/>
+    <rect x="111" y="161" width="14" height="14" rx="2"/>
+    <rect x="127" y="161" width="14" height="14" rx="2"/>
+  </g>
+  <text x="50" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506b7d">Kenar komşuluğu</text>
+  <text x="50" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79909f">n kareli şekil</text>
+
+  <path d="M180 168 H215" fill="none" stroke="#7fa8ba" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="222,168 212,162 212,174" fill="#7fa8ba"/>
+
+  <rect x="225" y="69" width="190" height="202" rx="25" fill="url(#core)" filter="url(#shadow)"/>
+  <circle cx="320" cy="122" r="38" fill="#ffffff" filter="url(#smallshadow)"/>
+  <circle cx="320" cy="122" r="29" fill="none" stroke="#8db8d0" stroke-width="2" stroke-dasharray="4 4"/>
+  <g stroke="#719bb5" stroke-width="1.2">
+    <rect x="306" y="108" width="14" height="14" rx="2" fill="#90caf0"/>
+    <rect x="322" y="108" width="14" height="14" rx="2" fill="#a9dfac"/>
+    <rect x="306" y="124" width="14" height="14" rx="2" fill="#ffca8b"/>
+    <rect x="322" y="124" width="14" height="14" rx="2" fill="#f2a8bd"/>
+  </g>
+
+  <text x="275" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355a69">Kanonik kimlik</text>
+  <text x="262" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527281">Öteleme ve simetri</text>
+
+  <g fill="#ffffff" filter="url(#smallshadow)">
+    <rect x="245" y="218" width="47" height="27" rx="9"/>
+    <rect x="298" y="218" width="47" height="27" rx="9"/>
+    <rect x="351" y="218" width="47" height="27" rx="9"/>
+  </g>
+  <text x="255" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527281">Döndür</text>
+  <text x="309" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527281">Yansıt</text>
+  <text x="361" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527281">Sırala</text>
+
+  <path d="M425 168 H457" fill="none" stroke="#7fa8ba" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="464,168 454,162 454,174" fill="#7fa8ba"/>
+
+  <rect x="467" y="85" width="145" height="165" rx="18" fill="#fbfffb" filter="url(#shadow)"/>
+  <rect x="467" y="85" width="145" height="38" rx="18" fill="#dff2dc"/>
+  <path d="M467 105 Q467 123 485 123 H594 Q612 123 612 105" fill="#dff2dc"/>
+  <text x="489" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e644b">Benzersiz şekiller</text>
+
+  <g stroke="#78a789" stroke-width="1.2">
+    <rect x="493" y="145" width="15" height="15" rx="2" fill="#91cdf0"/>
+    <rect x="510" y="145" width="15" height="15" rx="2" fill="#91cdf0"/>
+    <rect x="527" y="145" width="15" height="15" rx="2" fill="#91cdf0"/>
+    <rect x="544" y="145" width="15" height="15" rx="2" fill="#91cdf0"/>
+
+    <rect x="494" y="180" width="15" height="15" rx="2" fill="#f6bd79"/>
+    <rect x="511" y="180" width="15" height="15" rx="2" fill="#f6bd79"/>
+    <rect x="528" y="180" width="15" height="15" rx="2" fill="#f6bd79"/>
+    <rect x="511" y="197" width="15" height="15" rx="2" fill="#f6bd79"/>
+
+    <rect x="562" y="178" width="15" height="15" rx="2" fill="#bd9de5"/>
+    <rect x="579" y="178" width="15" height="15" rx="2" fill="#bd9de5"/>
+    <rect x="562" y="195" width="15" height="15" rx="2" fill="#bd9de5"/>
+    <rect x="579" y="195" width="15" height="15" rx="2" fill="#bd9de5"/>
+  </g>
+  <text x="489" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557563">Küme ile tekrar eleme</text>
+
+  <g opacity="0.8">
+    <path d="M197 268 C204 274 211 274 218 268" fill="none" stroke="#a5bbc5" stroke-width="1.5"/>
+    <path d="M422 268 C429 274 436 274 443 268" fill="none" stroke="#a5bbc5" stroke-width="1.5"/>
+  </g>
+</svg>
