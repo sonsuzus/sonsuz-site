@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="vorFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d5f3eb"/>
+    </linearGradient>
+    <linearGradient id="delFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d6"/>
+      <stop offset="100%" stop-color="#ffe1df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7891a6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#526f85" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="55" cy="50" r="55" fill="#d9edff" opacity="0.42"/>
+  <circle cx="594" cy="277" r="82" fill="#dff3d2" opacity="0.45"/>
+
+  <rect x="28" y="34" width="252" height="242" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="360" y="34" width="252" height="242" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+
+  <rect x="49" y="51" width="118" height="28" rx="14" fill="#dcecff"/>
+  <text x="108" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#315d83">Voronoi Bölgeleri</text>
+
+  <rect x="381" y="51" width="142" height="28" rx="14" fill="#ffe9d6"/>
+  <text x="452" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#875339">Delaunay Üçgenleri</text>
+
+  <!-- Voronoi alanı -->
+  <rect x="47" y="91" width="214" height="151" rx="13" fill="#f8fcff" stroke="#d6e5ef"/>
+  <polygon points="48,92 110,92 121,128 91,158 48,148" fill="#dcecff" opacity="0.9" stroke="#8bb6ce" stroke-width="1.5"/>
+  <polygon points="110,92 176,92 179,129 146,153 121,128" fill="#d8f2e9" opacity="0.9" stroke="#82bba8" stroke-width="1.5"/>
+  <polygon points="176,92 260,92 260,142 218,151 179,129" fill="#e5ddff" opacity="0.9" stroke="#a695d2" stroke-width="1.5"/>
+  <polygon points="48,148 91,158 112,206 96,241 48,241" fill="#d8f2e9" opacity="0.9" stroke="#82bba8" stroke-width="1.5"/>
+  <polygon points="91,158 121,128 146,153 172,201 112,206" fill="#fff0cf" opacity="0.92" stroke="#d9b66a" stroke-width="1.5"/>
+  <polygon points="146,153 179,129 218,151 260,201 195,218 172,201" fill="#ffdfe2" opacity="0.92" stroke="#d5919a" stroke-width="1.5"/>
+  <polygon points="112,206 172,201 195,218 184,241 96,241" fill="#dcecff" opacity="0.9" stroke="#8bb6ce" stroke-width="1.5"/>
+  <polygon points="195,218 260,201 260,241 184,241" fill="#e5ddff" opacity="0.9" stroke="#a695d2" stroke-width="1.5"/>
+
+  <!-- üretici noktalar -->
+  <g fill="#326f91" stroke="#ffffff" stroke-width="2" filter="url(#softShadow)">
+    <circle cx="81" cy="120" r="5"/>
+    <circle cx="143" cy="112" r="5"/>
+    <circle cx="216" cy="117" r="5"/>
+    <circle cx="76" cy="198" r="5"/>
+    <circle cx="135" cy="174" r="5"/>
+    <circle cx="203" cy="182" r="5"/>
+    <circle cx="149" cy="224" r="5"/>
+    <circle cx="231" cy="220" r="5"/>
+  </g>
+
+  <text x="154" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7484">En yakın alan</text>
+
+  <!-- orta dual bağlantı -->
+  <path d="M293 151 L345 151" fill="none" stroke="#7994a4" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="345,151 336,145 336,157" fill="#7994a4"/>
+  <rect x="287" y="125" width="64" height="22" rx="11" fill="#edf4f5" stroke="#d2e0e3"/>
+  <text x="319" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b78">Dual yapı</text>
+
+  <!-- Delaunay alanı -->
+  <rect x="379" y="91" width="214" height="151" rx="13" fill="#fffdf9" stroke="#eadfd2"/>
+  <g fill="url(#delFill)" stroke="#bd7a63" stroke-width="1.6" stroke-linejoin="round">
+    <polygon points="413,120 475,112 467,174"/>
+    <polygon points="413,120 467,174 408,198"/>
+    <polygon points="475,112 548,117 535,182 467,174"/>
+    <polygon points="408,198 467,174 481,224"/>
+    <polygon points="467,174 535,182 563,220 481,224"/>
+    <polygon points="408,198 481,224 440,229"/>
+  </g>
+  <g fill="#bd604d" stroke="#ffffff" stroke-width="2" filter="url(#softShadow)">
+    <circle cx="413" cy="120" r="5"/>
+    <circle cx="475" cy="112" r="5"/>
+    <circle cx="548" cy="117" r="5"/>
+    <circle cx="408" cy="198" r="5"/>
+    <circle cx="467" cy="174" r="5"/>
+    <circle cx="535" cy="182" r="5"/>
+    <circle cx="440" cy="229" r="5"/>
+    <circle cx="481" cy="224" r="5"/>
+    <circle cx="563" cy="220" r="5"/>
+  </g>
+
+  <text x="486" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7e675c">Komşuluk ağı</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="230" y="286" width="180" height="22" rx="11" fill="#ffffff" opacity="0.82"/>
+    <text x="320" y="301" text-anchor="middle" fill="#607782">Aynı noktalar · iki görünüm</text>
+  </g>
+</svg>
