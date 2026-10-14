@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="maxG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8eaff"/>
+      <stop offset="100%" stop-color="#bdd9fb"/>
+    </linearGradient>
+    <linearGradient id="minG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3f5df"/>
+      <stop offset="100%" stop-color="#cceac8"/>
+    </linearGradient>
+    <linearGradient id="leafG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8d9"/>
+      <stop offset="100%" stop-color="#f8e9ae"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7890a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#7890a5" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="568" cy="52" r="74" fill="#dff1ef" opacity="0.55"/>
+  <circle cx="85" cy="274" r="95" fill="#e7efff" opacity="0.6"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42556c">Minimaks Araması</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718196">Aynı karar • daha az inceleme</text>
+
+  <!-- connections root -->
+  <path d="M145 160 C173 160 175 79 205 79" fill="none" stroke="#86a9c5" stroke-width="2"/>
+  <path d="M145 160 C173 160 175 160 205 160" fill="none" stroke="#86a9c5" stroke-width="2"/>
+  <path d="M145 160 C173 160 175 241 205 241" fill="none" stroke="#86a9c5" stroke-width="2"/>
+
+  <!-- middle to leaves -->
+  <path d="M283 79 C310 79 316 55 342 55" fill="none" stroke="#89b68a" stroke-width="2"/>
+  <path d="M283 79 C310 79 316 103 342 103" fill="none" stroke="#89b68a" stroke-width="2"/>
+  <path d="M283 160 C310 160 316 136 342 136" fill="none" stroke="#89b68a" stroke-width="2"/>
+  <path d="M283 160 C310 160 316 184 342 184" fill="none" stroke="#89b68a" stroke-width="2"/>
+  <path d="M283 241 C310 241 316 217 342 217" fill="none" stroke="#89b68a" stroke-width="2"/>
+
+  <!-- valid leaf branch -->
+  <path d="M283 241 C310 241 316 265 342 265" fill="none" stroke="#89b68a" stroke-width="2"/>
+
+  <!-- pruned paths -->
+  <path d="M283 160 C326 160 334 160 405 160" fill="none" stroke="#e29292" stroke-width="2" stroke-dasharray="6 5"/>
+  <path d="M283 241 C326 241 334 292 405 292" fill="none" stroke="#e29292" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- root -->
+  <rect x="48" y="128" width="97" height="64" rx="17" fill="url(#maxG)" filter="url(#shadow)"/>
+  <rect x="48" y="128" width="97" height="64" rx="17" fill="none" stroke="#9cbfe0"/>
+  <text x="96.5" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315777">MAX</text>
+  <text x="96.5" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58778f">en yüksek</text>
+
+  <!-- min nodes -->
+  <g filter="url(#soft)">
+    <rect x="205" y="55" width="78" height="48" rx="14" fill="url(#minG)" stroke="#aad0a9"/>
+    <rect x="205" y="136" width="78" height="48" rx="14" fill="url(#minG)" stroke="#aad0a9"/>
+    <rect x="205" y="217" width="78" height="48" rx="14" fill="url(#minG)" stroke="#aad0a9"/>
+  </g>
+  <text x="244" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386b43">MIN</text>
+  <text x="244" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386b43">MIN</text>
+  <text x="244" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386b43">MIN</text>
+
+  <!-- leaves -->
+  <g filter="url(#soft)">
+    <rect x="342" y="36" width="48" height="38" rx="12" fill="url(#leafG)" stroke="#e0c56e"/>
+    <rect x="342" y="84" width="48" height="38" rx="12" fill="url(#leafG)" stroke="#e0c56e"/>
+    <rect x="342" y="117" width="48" height="38" rx="12" fill="url(#leafG)" stroke="#e0c56e"/>
+    <rect x="342" y="165" width="48" height="38" rx="12" fill="url(#leafG)" stroke="#e0c56e"/>
+    <rect x="342" y="198" width="48" height="38" rx="12" fill="url(#leafG)" stroke="#e0c56e"/>
+    <rect x="342" y="246" width="48" height="38" rx="12" fill="url(#leafG)" stroke="#e0c56e"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#725d22">
+    <text x="366" y="60">3</text>
+    <text x="366" y="108">5</text>
+    <text x="366" y="141">9</text>
+    <text x="366" y="189">1</text>
+    <text x="366" y="222">0</text>
+    <text x="366" y="270">−1</text>
+  </g>
+
+  <!-- alpha beta panel -->
+  <rect x="430" y="76" width="173" height="157" rx="20" fill="#ffffff" opacity="0.84" filter="url(#shadow)"/>
+  <rect x="430" y="76" width="173" height="157" rx="20" fill="none" stroke="#d5e0e6"/>
+  <text x="451" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556a">Sınırlar</text>
+
+  <rect x="449" y="120" width="61" height="37" rx="11" fill="#dcecff"/>
+  <text x="479.5" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35658d">α = 5</text>
+  <rect x="523" y="120" width="61" height="37" rx="11" fill="#e1f3dc"/>
+  <text x="553.5" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397142">β = 4</text>
+
+  <path d="M464 180 L490 180" fill="none" stroke="#d98080" stroke-width="2"/>
+  <path d="M490 180 L483 174 L483 186 Z" fill="#d98080"/>
+  <text x="502" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a35353">α ≥ β</text>
+  <rect x="449" y="196" width="135" height="22" rx="8" fill="#fde4e4"/>
+  <text x="516.5" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ab5555">DAL BUDANIR</text>
+
+  <!-- prune symbols -->
+  <g>
+    <circle cx="412" cy="160" r="14" fill="#fde4e4" stroke="#e29494"/>
+    <path d="M405 153 L419 167 M419 153 L405 167" stroke="#ca6868" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="412" cy="292" r="14" fill="#fde4e4" stroke="#e29494"/>
+    <path d="M405 285 L419 299 M419 285 L405 299" stroke="#ca6868" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- result -->
+  <rect x="462" y="254" width="140" height="38" rx="14" fill="#d7eaff" filter="url(#soft)"/>
+  <text x="532" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355f83">En iyi hamle: 5</text>
+</svg>

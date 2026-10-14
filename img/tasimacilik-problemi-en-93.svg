@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#c9f0df"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58728a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8193" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="84" cy="44" r="72" fill="#dcecff" opacity="0.42"/>
+  <circle cx="581" cy="281" r="94" fill="#d9f1da" opacity="0.42"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546a">EN DÜŞÜK MALİYETLİ DAĞITIM</text>
+
+  <!-- Left source panel -->
+  <rect x="31" y="66" width="144" height="201" rx="20" fill="#edf5ff" filter="url(#shadow)"/>
+  <text x="103" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476178">KAYNAKLAR</text>
+
+  <rect x="47" y="109" width="112" height="55" rx="14" fill="#cfe3ff" filter="url(#softShadow)"/>
+  <rect x="58" y="122" width="25" height="24" rx="6" fill="#6f9fd6"/>
+  <path d="M62 142h18M65 137h12M68 132h6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="94" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355673">Fabrika A</text>
+  <text x="94" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526d82">Kapasite 100</text>
+
+  <rect x="47" y="181" width="112" height="55" rx="14" fill="#d8f0e4" filter="url(#softShadow)"/>
+  <rect x="58" y="194" width="25" height="24" rx="6" fill="#62aa8c"/>
+  <path d="M62 214h18M65 209h12M68 204h6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="94" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355f52">Fabrika B</text>
+  <text x="94" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526d82">Kapasite 150</text>
+
+  <!-- paths toward solver -->
+  <path d="M175 136 C205 136 205 140 238 140" fill="none" stroke="#779dc8" stroke-width="2.5"/>
+  <polygon points="238,140 230,135 230,145" fill="#779dc8"/>
+  <path d="M175 208 C205 208 205 179 238 179" fill="none" stroke="#6bac91" stroke-width="2.5"/>
+  <polygon points="238,179 230,174 230,184" fill="#6bac91"/>
+
+  <!-- Core optimizer -->
+  <rect x="239" y="91" width="162" height="151" rx="24" fill="url(#core)" filter="url(#shadow)"/>
+  <circle cx="320" cy="135" r="29" fill="#ffffff" opacity="0.85"/>
+  <path d="M306 135h28M320 121v28" stroke="#5d88a7" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="320" cy="135" r="18" fill="none" stroke="#72aa94" stroke-width="2"/>
+  <text x="320" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385c6d">OPTİMİZASYON</text>
+  <text x="320" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557386">Maliyet + kısıtlar</text>
+  <rect x="271" y="212" width="98" height="18" rx="9" fill="#fff" opacity="0.75"/>
+  <text x="320" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b8270">En iyi plan</text>
+
+  <!-- routes -->
+  <path d="M401 140 C432 140 436 103 467 103" fill="none" stroke="#799fcb" stroke-width="2.5"/>
+  <polygon points="467,103 459,98 460,108" fill="#799fcb"/>
+  <path d="M401 164 C435 164 435 163 467 163" fill="none" stroke="#d19975" stroke-width="3"/>
+  <polygon points="467,163 459,158 459,168" fill="#d19975"/>
+  <path d="M401 188 C432 188 436 224 467 224" fill="none" stroke="#7ab797" stroke-width="2.5"/>
+  <polygon points="467,224 459,219 460,229" fill="#7ab797"/>
+
+  <!-- small route cost tags -->
+  <rect x="418" y="116" width="29" height="17" rx="8" fill="#fff" filter="url(#softShadow)"/>
+  <text x="432.5" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54718b">4 TL</text>
+  <rect x="417" y="145" width="29" height="17" rx="8" fill="#fff" filter="url(#softShadow)"/>
+  <text x="431.5" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a654f">3 TL</text>
+  <rect x="418" y="195" width="29" height="17" rx="8" fill="#fff" filter="url(#softShadow)"/>
+  <text x="432.5" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54718b">7 TL</text>
+
+  <!-- Right targets -->
+  <rect x="466" y="66" width="143" height="201" rx="20" fill="#f2f8f3" filter="url(#shadow)"/>
+  <text x="537.5" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476178">HEDEFLER</text>
+
+  <rect x="481" y="105" width="113" height="39" rx="12" fill="#d8e9ff" filter="url(#softShadow)"/>
+  <circle cx="499" cy="124" r="10" fill="#759fce"/>
+  <path d="M494 126h10M496 122h6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="518" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d5f7b">İstanbul</text>
+  <text x="518" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587184">Talep 80</text>
+
+  <rect x="481" y="164" width="113" height="39" rx="12" fill="#ffe4d4" filter="url(#softShadow)"/>
+  <circle cx="499" cy="183" r="10" fill="#d4956d"/>
+  <path d="M494 185h10M496 181h6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="518" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79543e">Ankara</text>
+  <text x="518" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#766455">Talep 90</text>
+
+  <rect x="481" y="223" width="113" height="39" rx="12" fill="#d8f1e3" filter="url(#softShadow)"/>
+  <circle cx="499" cy="242" r="10" fill="#69ad8e"/>
+  <path d="M494 244h10M496 240h6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="518" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6858">İzmir</text>
+  <text x="518" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587184">Talep 80</text>
+
+  <!-- Footer balance -->
+  <rect x="211" y="270" width="218" height="30" rx="15" fill="#ffffff" opacity="0.88" filter="url(#softShadow)"/>
+  <circle cx="232" cy="285" r="7" fill="#70ae91"/>
+  <path d="M229 285l2 2 4-5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6b64">Arz 250 = Talep 250</text>
+</svg>
