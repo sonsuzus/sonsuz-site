@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#dff4e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#72869b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#657b91" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="585" cy="42" r="78" fill="#d9f2e5" opacity="0.42"/>
+  <circle cx="47" cy="297" r="80" fill="#dceaff" opacity="0.48"/>
+
+  <rect x="24" y="18" width="592" height="46" rx="16" fill="url(#header)" filter="url(#shadow)"/>
+  <circle cx="53" cy="41" r="13" fill="#7ba9df"/>
+  <path d="M47 41 L52 46 L60 35" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="77" y="38" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536f">DAG'DA EN KISA YOL</text>
+  <text x="77" y="54" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567087">Topolojik sıra ile tek geçiş</text>
+
+  <rect x="25" y="84" width="128" height="204" rx="18" fill="#ffffff" opacity="0.86" filter="url(#shadow)"/>
+  <text x="44" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456078">Başlangıç</text>
+  <line x1="44" y1="119" x2="133" y2="119" stroke="#d5e1e9"/>
+  <rect x="42" y="138" width="92" height="42" rx="12" fill="#dcecff" filter="url(#smallShadow)"/>
+  <text x="55" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315c88">A</text>
+  <rect x="85" y="148" width="37" height="21" rx="9" fill="#ffffff" opacity="0.9"/>
+  <text x="97" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#477192">0</text>
+  <text x="43" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687f90">d[A] = 0</text>
+  <text x="43" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687f90">Diğerleri = ∞</text>
+  <rect x="42" y="250" width="91" height="21" rx="10" fill="#eaf5ed"/>
+  <text x="53" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e8062">Döngü yok</text>
+
+  <rect x="170" y="84" width="304" height="204" rx="18" fill="#ffffff" opacity="0.9" filter="url(#shadow)"/>
+  <text x="190" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456078">Topolojik akış</text>
+  <text x="190" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909f">A → C → B → D</text>
+
+  <path d="M224 169 L287 169" fill="none" stroke="#8aabd1" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="287,169 278,164 278,174" fill="#8aabd1"/>
+  <path d="M224 169 C253 217 283 227 322 210" fill="none" stroke="#84b89d" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="322,210 314,203 312,213" fill="#84b89d"/>
+  <path d="M340 207 L400 176" fill="none" stroke="#df8b99" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="400,176 390,175 394,184" fill="#df8b99"/>
+  <path d="M306 169 L400 169" fill="none" stroke="#8aabd1" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="400,169 391,164 391,174" fill="#8aabd1"/>
+  <path d="M340 207 C367 234 400 228 418 190" fill="none" stroke="#bac9d4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="418,190 409,195 418,199" fill="#bac9d4"/>
+
+  <rect x="191" y="148" width="36" height="42" rx="13" fill="#bad8f7" filter="url(#smallShadow)"/>
+  <text x="204" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245b87">A</text>
+
+  <rect x="287" y="148" width="37" height="42" rx="13" fill="#c9ebd2" filter="url(#smallShadow)"/>
+  <text x="300" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39714b">C</text>
+
+  <rect x="322" y="190" width="37" height="42" rx="13" fill="#fde0e3" filter="url(#smallShadow)"/>
+  <text x="335" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9d4756">B</text>
+
+  <rect x="399" y="148" width="37" height="42" rx="13" fill="#d9d3f5" filter="url(#smallShadow)"/>
+  <text x="412" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d548d">D</text>
+
+  <rect x="247" y="151" width="22" height="18" rx="7" fill="#eef5fb"/>
+  <text x="254" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7c98">2</text>
+  <rect x="258" y="197" width="25" height="18" rx="7" fill="#edf8f0"/>
+  <text x="264" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#518169">4</text>
+  <rect x="361" y="181" width="27" height="18" rx="7" fill="#fff0f1"/>
+  <text x="366" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b64c5e">−1</text>
+  <rect x="353" y="151" width="22" height="18" rx="7" fill="#eef5fb"/>
+  <text x="360" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7c98">5</text>
+  <rect x="378" y="218" width="22" height="18" rx="7" fill="#f2f5f7"/>
+  <text x="385" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748692">3</text>
+
+  <rect x="491" y="84" width="124" height="204" rx="18" fill="#ffffff" opacity="0.9" filter="url(#shadow)"/>
+  <text x="509" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456078">Gevşetme</text>
+  <line x1="509" y1="119" x2="595" y2="119" stroke="#d5e1e9"/>
+  <rect x="507" y="137" width="92" height="36" rx="11" fill="#f0f5ff"/>
+  <text x="518" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466684">d[v] = min(...)</text>
+  <path d="M553 179 L553 195" fill="none" stroke="#9ab1c5" stroke-width="2"/>
+  <polygon points="553,195 548,187 558,187" fill="#9ab1c5"/>
+  <rect x="507" y="202" width="92" height="48" rx="12" fill="#dff3e5" filter="url(#smallShadow)"/>
+  <text x="520" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3b7653">En kısa rota</text>
+  <text x="522" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c8060">A → C → B → D</text>
+  <rect x="525" y="260" width="55" height="18" rx="9" fill="#ffffff"/>
+  <text x="539" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39714b">4</text>
+</svg>

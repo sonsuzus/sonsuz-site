@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="lsd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8dcf8"/>
+    </linearGradient>
+    <linearGradient id="msd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcf4e8"/>
+      <stop offset="100%" stop-color="#bfe6d3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="52" r="42" fill="#dceeff" opacity="0.48"/>
+  <circle cx="587" cy="270" r="61" fill="#dff3e5" opacity="0.5"/>
+  <circle cx="575" cy="45" r="20" fill="#fff0cf" opacity="0.65"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395268">Dizgi Sıralama · Karakter Tabanlı Akış</text>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="45" width="204" height="57" rx="17" fill="#ffffff"/>
+    <rect x="232" y="59" width="38" height="29" rx="9" fill="#f8dca6"/>
+    <text x="251" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#785825">ABC</text>
+    <text x="284" y="68" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365064">Dizgiler</text>
+    <text x="284" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637989">Karakter anahtarları</text>
+  </g>
+
+  <path d="M276 103 L195 132" fill="none" stroke="#78a0c0" stroke-width="2.2"/>
+  <polygon points="195,132 205,124 203,135" fill="#78a0c0"/>
+  <path d="M364 103 L445 132" fill="none" stroke="#72a98f" stroke-width="2.2"/>
+  <polygon points="445,132 436,135 439,124" fill="#72a98f"/>
+
+  <g filter="url(#shadow)">
+    <rect x="52" y="137" width="245" height="126" rx="19" fill="url(#lsd)"/>
+    <rect x="52" y="137" width="245" height="34" rx="19" fill="#b8d3f2"/>
+    <rect x="52" y="154" width="245" height="17" fill="#b8d3f2"/>
+    <text x="75" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#274d6d">LSD · Sağdan Sola</text>
+
+    <g filter="url(#smallShadow)">
+      <rect x="69" y="185" width="52" height="53" rx="11" fill="#ffffff"/>
+      <text x="95" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f6d87">3.</text>
+      <text x="95" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667f92">karakter</text>
+
+      <rect x="148" y="185" width="52" height="53" rx="11" fill="#ffffff"/>
+      <text x="174" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f6d87">2.</text>
+      <text x="174" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667f92">karakter</text>
+
+      <rect x="227" y="185" width="52" height="53" rx="11" fill="#ffffff"/>
+      <text x="253" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f6d87">1.</text>
+      <text x="253" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667f92">karakter</text>
+    </g>
+
+    <path d="M130 211 L140 211" stroke="#668fb3" stroke-width="2"/>
+    <polygon points="140,211 133,207 133,215" fill="#668fb3"/>
+    <path d="M209 211 L219 211" stroke="#668fb3" stroke-width="2"/>
+    <polygon points="219,211 212,207 212,215" fill="#668fb3"/>
+    <text x="174" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e6686">Sabit uzunluk · Kararlı geçiş</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="343" y="137" width="245" height="126" rx="19" fill="url(#msd)"/>
+    <rect x="343" y="137" width="245" height="34" rx="19" fill="#acdcbc"/>
+    <rect x="343" y="154" width="245" height="17" fill="#acdcbc"/>
+    <text x="366" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#275b49">MSD · Soldan Sağa</text>
+
+    <g filter="url(#smallShadow)">
+      <rect x="361" y="184" width="55" height="32" rx="10" fill="#ffffff"/>
+      <text x="388" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43745f">A · B · C</text>
+
+      <rect x="437" y="184" width="55" height="32" rx="10" fill="#ffffff"/>
+      <text x="464" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43745f">Gruplar</text>
+
+      <rect x="513" y="184" width="57" height="32" rx="10" fill="#ffffff"/>
+      <text x="541" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43745f">Alt bölme</text>
+    </g>
+
+    <path d="M417 200 L428 200" stroke="#5d9b79" stroke-width="2"/>
+    <polygon points="428,200 421,196 421,204" fill="#5d9b79"/>
+    <path d="M493 200 L504 200" stroke="#5d9b79" stroke-width="2"/>
+    <polygon points="504,200 497,196 497,204" fill="#5d9b79"/>
+    <text x="466" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c735d">Değişken uzunluk · Özyineleme</text>
+  </g>
+
+  <path d="M174 265 L174 281 L320 281 L320 293" fill="none" stroke="#7893a4" stroke-width="2"/>
+  <path d="M466 265 L466 281 L320 281" fill="none" stroke="#7893a4" stroke-width="2"/>
+  <polygon points="320,293 315,284 325,284" fill="#7893a4"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="215" y="294" width="210" height="22" rx="10" fill="#ffffff"/>
+    <text x="320" y="309" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466172">Sayım · Dağıtım · Sıralı çıktı</text>
+  </g>
+</svg>

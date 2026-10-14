@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2faef"/>
+    </linearGradient>
+    <linearGradient id="engine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#d8f4e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7891a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#70869a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="323" cy="159" r="119" fill="#dceeff" opacity="0.38"/>
+  <circle cx="323" cy="159" r="87" fill="#eff9f1" opacity="0.72"/>
+
+  <g filter="url(#shadow)">
+    <rect x="22" y="106" width="128" height="109" rx="18" fill="#ffffff"/>
+    <rect x="22" y="106" width="128" height="31" rx="18" fill="#e5efff"/>
+    <rect x="22" y="123" width="128" height="14" fill="#e5efff"/>
+  </g>
+  <text x="86" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38526c">Döviz Kurları</text>
+  <text x="42" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50677c">USD → EUR</text>
+  <text x="125" y="158" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#28705d">0,92</text>
+  <line x1="40" y1="169" x2="132" y2="169" stroke="#dbe5ef"/>
+  <text x="42" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50677c">EUR → GBP</text>
+  <text x="125" y="188" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#28705d">0,87</text>
+
+  <path d="M158 160 L185 160" stroke="#7692af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="185,160 176,154 176,166" fill="#7692af"/>
+
+  <g filter="url(#shadow)">
+    <rect x="192" y="23" width="262" height="48" rx="18" fill="url(#engine)"/>
+  </g>
+  <circle cx="220" cy="47" r="14" fill="#7e9ddb"/>
+  <path d="M214 47 L219 52 L227 42" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="239" y="43" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536b">Bellman-Ford</text>
+  <text x="239" y="59" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e7787">Kenarları gevşet · Döngüyü ara</text>
+  <path d="M323 72 L323 91" stroke="#7b96a9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="323,96 317,87 329,87" fill="#7b96a9"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 119 C268 129 260 164 281 187" stroke="#7193c7" stroke-width="3"/>
+    <polygon points="285,191 273,185 282,178" fill="#7193c7"/>
+    <path d="M302 205 C328 223 365 216 378 186" stroke="#5daa83" stroke-width="3"/>
+    <polygon points="379,180 382,194 369,189" fill="#5daa83"/>
+    <path d="M383 147 C371 118 342 107 316 116" stroke="#d27a79" stroke-width="3"/>
+    <polygon points="310,118 319,107 322,121" fill="#d27a79"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <circle cx="295" cy="157" r="31" fill="#e7f0ff"/>
+    <circle cx="370" cy="157" r="31" fill="#e7faef"/>
+    <circle cx="332" cy="211" r="31" fill="#fff0e6"/>
+  </g>
+  <text x="295" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456486">USD</text>
+  <text x="370" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39755c">EUR</text>
+  <text x="332" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9b654c">GBP</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="245" y="256" width="157" height="37" rx="15" fill="#ffffff"/>
+  </g>
+  <text x="323" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6574">w = −ln(kur)</text>
+
+  <path d="M462 160 L485 160" stroke="#7692af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="485,160 476,154 476,166" fill="#7692af"/>
+
+  <g filter="url(#shadow)">
+    <rect x="493" y="104" width="125" height="112" rx="18" fill="#ffffff"/>
+    <rect x="493" y="104" width="125" height="34" rx="18" fill="#ffe5e1"/>
+    <rect x="493" y="121" width="125" height="17" fill="#ffe5e1"/>
+  </g>
+  <circle cx="515" cy="121" r="10" fill="#e67d72"/>
+  <path d="M511 121 L514 124 L520 117" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="559" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c4f51">Negatif Döngü</text>
+  <text x="555" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#556b78">Toplam ağırlık</text>
+  <text x="555" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#d56863">&lt; 0</text>
+  <line x1="514" y1="191" x2="597" y2="191" stroke="#e6edf0"/>
+  <text x="555" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2c8b61">Kâr fırsatı</text>
+
+  <g opacity="0.78">
+    <circle cx="48" cy="263" r="4" fill="#a6c7ec"/>
+    <circle cx="64" cy="278" r="7" fill="#bee5d0"/>
+    <circle cx="589" cy="267" r="5" fill="#f2b9a8"/>
+    <circle cx="605" cy="280" r="3" fill="#a6c7ec"/>
+  </g>
+</svg>
