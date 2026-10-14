@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ebff"/>
+      <stop offset="100%" stop-color="#dff5df"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7891a6" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7891a6" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="48" r="58" fill="#dff1ff" opacity="0.48"/>
+  <circle cx="572" cy="269" r="76" fill="#dff4dd" opacity="0.52"/>
+
+  <text x="36" y="36" fill="#4c6375" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">A* ARAMA</text>
+  <text x="510" y="36" fill="#718391" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">En kısa yol</text>
+
+  <!-- Graph panel -->
+  <rect x="30" y="61" width="207" height="211" rx="22" fill="#fafdff" filter="url(#shadow)"/>
+  <text x="51" y="88" fill="#526b7d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Açık küme</text>
+  <text x="51" y="108" fill="#8395a2" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Aday düğümler</text>
+
+  <!-- graph connections -->
+  <path d="M76 153 L134 128 L185 161 L157 218 L84 217 Z" fill="none" stroke="#b9cbd3" stroke-width="3" stroke-linecap="round"/>
+  <path d="M76 153 L157 218 M134 128 L157 218 M185 161 L211 218" fill="none" stroke="#b9cbd3" stroke-width="3" stroke-linecap="round"/>
+  <path d="M76 153 L134 128 L185 161 L211 218" fill="none" stroke="#66a8e1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- cost labels -->
+  <rect x="100" y="130" width="23" height="17" rx="8" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="108" y="142" fill="#63809a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">2</text>
+  <rect x="151" y="135" width="23" height="17" rx="8" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="159" y="147" fill="#63809a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">3</text>
+  <rect x="190" y="184" width="23" height="17" rx="8" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="198" y="196" fill="#63809a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">2</text>
+
+  <!-- nodes -->
+  <circle cx="76" cy="153" r="17" fill="#8fc6f2" filter="url(#smallShadow)"/>
+  <text x="72" y="157" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">A</text>
+  <circle cx="134" cy="128" r="17" fill="#b9dcf7" filter="url(#smallShadow)"/>
+  <text x="130" y="132" fill="#46677e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">B</text>
+  <circle cx="185" cy="161" r="17" fill="#b9dcf7" filter="url(#smallShadow)"/>
+  <text x="181" y="165" fill="#46677e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">C</text>
+  <circle cx="157" cy="218" r="17" fill="#7eb9e8" filter="url(#smallShadow)"/>
+  <text x="153" y="222" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">D</text>
+  <circle cx="211" cy="218" r="18" fill="#a9dca8" filter="url(#smallShadow)"/>
+  <text x="207" y="222" fill="#356a45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">E</text>
+
+  <!-- arrow to core -->
+  <path d="M248 163 L278 163" stroke="#86a7bd" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="278,163 269,157 269,169" fill="#86a7bd"/>
+
+  <!-- A star core -->
+  <rect x="288" y="82" width="144" height="158" rx="26" fill="url(#core)" filter="url(#shadow)"/>
+  <circle cx="360" cy="132" r="34" fill="#ffffff" opacity="0.75"/>
+  <path d="M360 105 L366 124 L386 124 L370 136 L376 155 L360 144 L344 155 L350 136 L334 124 L354 124 Z" fill="#f5b85b" filter="url(#smallShadow)"/>
+  <text x="346" y="181" fill="#426475" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">f(n) = g(n) + h(n)</text>
+  <text x="318" y="207" fill="#66808d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">En düşük f seçilir</text>
+  <text x="315" y="225" fill="#8499a2" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Maliyet ve sezgi</text>
+
+  <!-- input signal cards -->
+  <rect x="264" y="67" width="73" height="35" rx="12" fill="#fff7e7" filter="url(#smallShadow)"/>
+  <text x="279" y="89" fill="#8b6a35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">g: maliyet</text>
+  <path d="M300 102 L330 118" stroke="#d4ad68" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="330,118 322,113 323,122" fill="#d4ad68"/>
+
+  <rect x="385" y="57" width="86" height="35" rx="12" fill="#ede9ff" filter="url(#smallShadow)"/>
+  <text x="398" y="79" fill="#665a99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">h: sezgi</text>
+  <path d="M415 92 L382 116" stroke="#978bc9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="382,116 386,107 391,114" fill="#978bc9"/>
+
+  <!-- output route -->
+  <path d="M443 163 L474 163" stroke="#78ae82" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="474,163 465,157 465,169" fill="#78ae82"/>
+
+  <!-- target and guarantee -->
+  <rect x="484" y="81" width="126" height="158" rx="22" fill="#fbfffa" filter="url(#shadow)"/>
+  <text x="507" y="109" fill="#526b61" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Hedef yönü</text>
+  <circle cx="547" cy="157" r="37" fill="#e4f4df"/>
+  <circle cx="547" cy="157" r="25" fill="none" stroke="#8fbd89" stroke-width="3"/>
+  <circle cx="547" cy="157" r="14" fill="none" stroke="#a9d0a1" stroke-width="3"/>
+  <circle cx="547" cy="157" r="5" fill="#5f9d66"/>
+  <path d="M547 120 L553 145 L547 142 L541 145 Z" fill="#ef916f"/>
+  <text x="504" y="215" fill="#64806d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kabul edilebilir h</text>
+  <rect x="511" y="244" width="72" height="25" rx="12" fill="#dcefd9" filter="url(#smallShadow)"/>
+  <text x="522" y="261" fill="#477750" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">En kısa yol</text>
+</svg>

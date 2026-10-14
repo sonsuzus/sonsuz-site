@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ee"/>
+    </linearGradient>
+    <linearGradient id="giris" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d6f3ec"/>
+    </linearGradient>
+    <linearGradient id="borda" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0ca"/>
+      <stop offset="100%" stop-color="#ffe0b1"/>
+    </linearGradient>
+    <linearGradient id="condorcet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eadfff"/>
+      <stop offset="100%" stop-color="#d9e7ff"/>
+    </linearGradient>
+    <linearGradient id="sonuc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7f2df"/>
+      <stop offset="100%" stop-color="#c6ead7"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8797" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="579" cy="42" r="70" fill="#dceeff" opacity="0.48"/>
+  <circle cx="69" cy="286" r="82" fill="#e0f3db" opacity="0.42"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385267">Aynı Tercihler · Farklı Sayım Kuralları</text>
+
+  <!-- Girdi -->
+  <g filter="url(#golge)">
+    <rect x="26" y="72" width="151" height="176" rx="18" fill="url(#giris)" stroke="#b7d8e8"/>
+  </g>
+  <text x="101.5" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31556b">Sıralı Oylar</text>
+  <line x1="45" y1="112" x2="158" y2="112" stroke="#9cc6d7"/>
+  <rect x="43" y="124" width="117" height="28" rx="8" fill="#ffffff" opacity="0.76"/>
+  <text x="54" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f5969">4 kişi</text>
+  <text x="105" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#31556b">Ada › Bora › Ceren</text>
+  <rect x="43" y="160" width="117" height="28" rx="8" fill="#ffffff" opacity="0.76"/>
+  <text x="54" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f5969">3 kişi</text>
+  <text x="105" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#31556b">Bora › Ceren › Ada</text>
+  <rect x="43" y="196" width="117" height="28" rx="8" fill="#ffffff" opacity="0.76"/>
+  <text x="54" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f5969">2 kişi</text>
+  <text x="105" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#31556b">Ceren › Bora › Ada</text>
+
+  <!-- bağlantılar -->
+  <path d="M177 137 C195 137 196 113 214 113" fill="none" stroke="#86a9b8" stroke-width="2"/>
+  <polygon points="214,108 224,113 214,118" fill="#86a9b8"/>
+  <path d="M177 189 C195 189 196 216 214 216" fill="none" stroke="#86a9b8" stroke-width="2"/>
+  <polygon points="214,211 224,216 214,221" fill="#86a9b8"/>
+
+  <!-- Borda -->
+  <g filter="url(#golge)">
+    <rect x="224" y="55" width="174" height="116" rx="18" fill="url(#borda)" stroke="#e6c783"/>
+  </g>
+  <text x="311" y="83" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#70511c">Borda Sayımı</text>
+  <text x="311" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80672e">Sıra puanları: 2 · 1 · 0</text>
+  <line x1="245" y1="117" x2="377" y2="117" stroke="#dfc17b"/>
+  <text x="250" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735c2c">Ada</text>
+  <text x="362" y="141" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#735c2c">8</text>
+  <text x="250" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735c2c">Bora</text>
+  <text x="362" y="158" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#735c2c">12</text>
+
+  <!-- Condorcet -->
+  <g filter="url(#golge)">
+    <rect x="224" y="188" width="174" height="108" rx="18" fill="url(#condorcet)" stroke="#c4b8e8"/>
+  </g>
+  <text x="311" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514278">Condorcet</text>
+  <text x="311" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#625782">İkili karşılaştırma</text>
+  <line x1="246" y1="249" x2="376" y2="249" stroke="#c2b9e2"/>
+  <text x="250" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b507b">Bora › Ada</text>
+  <text x="363" y="270" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b507b">5 - 4</text>
+  <text x="250" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b507b">Bora › Ceren</text>
+  <text x="363" y="286" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b507b">7 - 2</text>
+
+  <!-- bağlantılar sonuç -->
+  <path d="M398 113 C421 113 421 145 442 145" fill="none" stroke="#a3a48c" stroke-width="2"/>
+  <polygon points="442,140 452,145 442,150" fill="#a3a48c"/>
+  <path d="M398 242 C421 242 421 185 442 185" fill="none" stroke="#a3a48c" stroke-width="2"/>
+  <polygon points="442,180 452,185 442,190" fill="#a3a48c"/>
+
+  <!-- sonuç -->
+  <g filter="url(#golge)">
+    <rect x="452" y="87" width="161" height="147" rx="20" fill="url(#sonuc)" stroke="#a9d4b7"/>
+  </g>
+  <text x="532.5" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326049">Kazanan</text>
+  <circle cx="532" cy="151" r="27" fill="#ffffff" opacity="0.82"/>
+  <text x="532" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#26704c">Bora</text>
+  <rect x="474" y="189" width="117" height="25" rx="12" fill="#ffffff" opacity="0.74"/>
+  <text x="532.5" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35664c">Genel uzlaşma</text>
+
+  <text x="320" y="313" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808a">Kural değişince, seçim sonucu da değişebilir</text>
+</svg>

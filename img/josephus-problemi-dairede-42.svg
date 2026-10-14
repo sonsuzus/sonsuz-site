@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="circleFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddecff"/>
+      <stop offset="100%" stop-color="#d9f4e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7892a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#7892a8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="88" cy="44" r="55" fill="#dcefff" opacity="0.45"/>
+  <circle cx="585" cy="282" r="80" fill="#dff3df" opacity="0.5"/>
+
+  <text x="30" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36566f">JOSEPHUS PROBLEMİ</text>
+  <text x="30" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#648093">Döngüsel eleme mantığı</text>
+
+  <g filter="url(#shadow)">
+    <circle cx="161" cy="171" r="105" fill="url(#circleFill)" stroke="#b5d5de" stroke-width="2"/>
+    <circle cx="161" cy="171" r="51" fill="#f8fcff" stroke="#c6dde4" stroke-width="2"/>
+  </g>
+
+  <path d="M116 112 A75 75 0 0 1 215 133" fill="none" stroke="#5b9cc2" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M212 127 L220 136 L208 139 Z" fill="#5b9cc2"/>
+  <text x="135" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427897">k = 3 adım</text>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <g filter="url(#softShadow)">
+      <circle cx="161" cy="83" r="18" fill="#ffffff" stroke="#a9ccda" stroke-width="2"/>
+      <circle cx="230" cy="116" r="18" fill="#ffffff" stroke="#a9ccda" stroke-width="2"/>
+      <circle cx="247" cy="190" r="18" fill="#ffdfe2" stroke="#e7979f" stroke-width="2"/>
+      <circle cx="200" cy="250" r="18" fill="#ffffff" stroke="#a9ccda" stroke-width="2"/>
+      <circle cx="122" cy="250" r="18" fill="#ffffff" stroke="#a9ccda" stroke-width="2"/>
+      <circle cx="75" cy="190" r="18" fill="#ffffff" stroke="#a9ccda" stroke-width="2"/>
+      <circle cx="92" cy="116" r="18" fill="#ffffff" stroke="#a9ccda" stroke-width="2"/>
+    </g>
+    <text x="161" y="87" fill="#35566e">1</text>
+    <text x="230" y="120" fill="#35566e">2</text>
+    <text x="247" y="194" fill="#b54d59">3</text>
+    <text x="200" y="254" fill="#35566e">4</text>
+    <text x="122" y="254" fill="#35566e">5</text>
+    <text x="75" y="194" fill="#35566e">6</text>
+    <text x="92" y="120" fill="#35566e">7</text>
+  </g>
+
+  <text x="161" y="163" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426379">Daire</text>
+  <text x="161" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#658093">n = 7</text>
+  <text x="161" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c05662">Ele: 3</text>
+
+  <path d="M282 170 C300 170 305 170 323 170" fill="none" stroke="#6f9ab4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M318 164 L329 170 L318 176 Z" fill="#6f9ab4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="336" y="76" width="268" height="88" rx="18" fill="#fffdf8" stroke="#ead8a8"/>
+    <rect x="336" y="181" width="268" height="88" rx="18" fill="#f9fbff" stroke="#bdcee8"/>
+  </g>
+
+  <g>
+    <rect x="352" y="94" width="36" height="36" rx="10" fill="#ffe7a9"/>
+    <path d="M364 105 H377 M364 112 H377 M364 119 H372" fill="none" stroke="#9b7423" stroke-width="2" stroke-linecap="round"/>
+    <text x="402" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#65512c">Kuyruk simülasyonu</text>
+    <text x="402" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c715b">Döndür • çıkar • kaydet</text>
+    <rect x="526" y="103" width="59" height="25" rx="9" fill="#fff2ca"/>
+    <text x="555.5" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c6a21">O(n)</text>
+  </g>
+
+  <g>
+    <rect x="352" y="199" width="36" height="36" rx="10" fill="#dce8ff"/>
+    <text x="370" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496fa4">%</text>
+    <text x="402" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425c87">Yinelemeli bağıntı</text>
+    <text x="402" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657797">J(n) = (J(n−1) + k) mod n</text>
+    <rect x="526" y="208" width="59" height="25" rx="9" fill="#e5efff"/>
+    <text x="555.5" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5272a7">O(1)</text>
+  </g>
+
+  <path d="M470 164 L470 177" fill="none" stroke="#87a4b7" stroke-width="2" stroke-linecap="round"/>
+  <path d="M464 173 L470 181 L476 173 Z" fill="#87a4b7"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="375" y="280" width="190" height="27" rx="13" fill="#d8f1e1"/>
+  </g>
+  <text x="470" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397052">Kazanan: 4</text>
+  <path d="M470 269 L470 276" fill="none" stroke="#6eaa87" stroke-width="2" stroke-linecap="round"/>
+  <path d="M464 273 L470 281 L476 273 Z" fill="#6eaa87"/>
+</svg>
