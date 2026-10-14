@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="denseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5f3"/>
+      <stop offset="100%" stop-color="#fffafa"/>
+    </linearGradient>
+    <linearGradient id="csrGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef3ff"/>
+      <stop offset="100%" stop-color="#e7f8f4"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5edff"/>
+      <stop offset="100%" stop-color="#eee7ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#70819b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8393" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="42" r="52" fill="#dceefa" opacity="0.52"/>
+  <circle cx="584" cy="282" r="80" fill="#dcf2df" opacity="0.46"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43546b">Seyrek Matris-Vektör Çarpımı</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718198">Sıfırları saklama, anlamlı değerleri işle</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="80" width="154" height="196" rx="18" fill="url(#denseGrad)" stroke="#f0d9d4"/>
+  </g>
+  <text x="52" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a6260">Yoğun Matris</text>
+  <text x="52" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#aa8481">Tüm hücreler</text>
+
+  <g transform="translate(55,145)">
+    <rect x="0" y="0" width="22" height="22" rx="5" fill="#e96b62"/>
+    <rect x="26" y="0" width="22" height="22" rx="5" fill="#f4dfdc"/>
+    <rect x="52" y="0" width="22" height="22" rx="5" fill="#f4dfdc"/>
+    <rect x="78" y="0" width="22" height="22" rx="5" fill="#ef8a70"/>
+    <rect x="0" y="26" width="22" height="22" rx="5" fill="#f4dfdc"/>
+    <rect x="26" y="26" width="22" height="22" rx="5" fill="#e96b62"/>
+    <rect x="52" y="26" width="22" height="22" rx="5" fill="#f4dfdc"/>
+    <rect x="78" y="26" width="22" height="22" rx="5" fill="#f4dfdc"/>
+    <rect x="0" y="52" width="22" height="22" rx="5" fill="#ef8a70"/>
+    <rect x="26" y="52" width="22" height="22" rx="5" fill="#f4dfdc"/>
+    <rect x="52" y="52" width="22" height="22" rx="5" fill="#e96b62"/>
+    <rect x="78" y="52" width="22" height="22" rx="5" fill="#f4dfdc"/>
+    <text x="8" y="15" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">5</text>
+    <text x="86" y="15" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">2</text>
+    <text x="34" y="41" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">3</text>
+    <text x="8" y="67" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">1</text>
+    <text x="60" y="67" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">4</text>
+  </g>
+  <text x="52" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b28380">Sıfırlar: gereksiz yük</text>
+
+  <path d="M194 177 C211 177, 214 177, 230 177" fill="none" stroke="#8fa1b8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="230,177 221,171 221,183" fill="#8fa1b8"/>
+  <text x="193" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#627790">Süz</text>
+
+  <g filter="url(#shadow)">
+    <rect x="241" y="70" width="194" height="218" rx="18" fill="url(#csrGrad)" stroke="#d3e4ed"/>
+  </g>
+  <text x="263" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456b78">CSR Gösterimi</text>
+  <text x="263" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718b93">Yalnızca sıfır olmayanlar</text>
+
+  <g filter="url(#soft)">
+    <rect x="260" y="137" width="156" height="30" rx="8" fill="#ffffff"/>
+    <rect x="260" y="176" width="156" height="30" rx="8" fill="#ffffff"/>
+    <rect x="260" y="215" width="156" height="30" rx="8" fill="#ffffff"/>
+  </g>
+  <text x="271" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#56829a">Değerler</text>
+  <text x="338" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#425d70">5  2  3  1  4</text>
+  <text x="271" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#56829a">Sütun</text>
+  <text x="338" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#425d70">0  3  1  0  2</text>
+  <text x="271" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#56829a">Satır</text>
+  <text x="338" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#425d70">0  2  3  5</text>
+  <text x="263" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8790">Bellek: nnz ile orantılı</text>
+
+  <path d="M445 177 C461 177, 466 177, 480 177" fill="none" stroke="#8296b4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="480,177 471,171 471,183" fill="#8296b4"/>
+  <text x="447" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#627790">Çarp</text>
+
+  <g filter="url(#shadow)">
+    <rect x="492" y="80" width="118" height="196" rx="18" fill="url(#resultGrad)" stroke="#ded2f3"/>
+  </g>
+  <text x="514" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#69558c">SpMV</text>
+  <text x="514" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#86769f">Satır bazlı</text>
+
+  <g filter="url(#soft)">
+    <rect x="509" y="150" width="84" height="35" rx="9" fill="#ffffff"/>
+    <rect x="509" y="200" width="84" height="43" rx="9" fill="#ffffff"/>
+  </g>
+  <text x="522" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6c6190">x = [1,2,3,4]</text>
+  <path d="M551 187 L551 197" stroke="#8d80a7" stroke-width="2"/>
+  <polygon points="551,199 546,193 556,193" fill="#8d80a7"/>
+  <text x="520" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#69558c">y = [13,6,13]</text>
+  <text x="510" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c7096">O(nnz)</text>
+</svg>

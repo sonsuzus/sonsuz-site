@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="inputGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e4efff"/>
+      <stop offset="100%" stop-color="#d5e6fa"/>
+    </linearGradient>
+    <linearGradient id="pivotGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe8bd"/>
+      <stop offset="100%" stop-color="#ffd89a"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff4dd"/>
+      <stop offset="100%" stop-color="#c8ebc6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#70849a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7990a5" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="63" cy="52" r="55" fill="#dcefff" opacity="0.48"/>
+  <circle cx="592" cy="269" r="80" fill="#e2f2d7" opacity="0.45"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40546a">Quickselect • yalnız gerekli bölümü ara</text>
+  <line x1="30" y1="42" x2="610" y2="42" stroke="#cfdae2" stroke-width="1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="29" y="92" width="128" height="137" rx="18" fill="url(#inputGrad)" stroke="#b8d0eb"/>
+  </g>
+  <text x="93" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34526f">Girdi dizisi</text>
+  <text x="93" y="134" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557087">tam sıralama yok</text>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+    <rect x="43" y="154" width="20" height="26" rx="6" fill="#ffffff" stroke="#b7cfe6"/>
+    <rect x="66" y="154" width="20" height="26" rx="6" fill="#ffffff" stroke="#b7cfe6"/>
+    <rect x="89" y="154" width="20" height="26" rx="6" fill="#ffffff" stroke="#b7cfe6"/>
+    <rect x="112" y="154" width="20" height="26" rx="6" fill="#ffffff" stroke="#b7cfe6"/>
+    <text x="53" y="172" fill="#45627d">9</text>
+    <text x="76" y="172" fill="#45627d">2</text>
+    <text x="99" y="172" fill="#45627d">7</text>
+    <text x="122" y="172" fill="#45627d">1</text>
+    <rect x="66" y="190" width="20" height="26" rx="6" fill="#ffffff" stroke="#b7cfe6"/>
+    <text x="76" y="208" fill="#45627d">5</text>
+  </g>
+  <text x="103" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8295">…</text>
+
+  <path d="M164 159 H188" fill="none" stroke="#7c9bb2" stroke-width="2"/>
+  <polygon points="188,159 180,154 180,164" fill="#7c9bb2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="195" y="71" width="251" height="179" rx="20" fill="#fafdff" stroke="#d3e0e8"/>
+  </g>
+  <text x="320" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">Bölümleme</text>
+  <text x="320" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718494">rastgele pivot seç</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="213" y="139" width="68" height="55" rx="12" fill="#dceefc" stroke="#bfd9ee"/>
+    <rect x="286" y="139" width="68" height="55" rx="12" fill="url(#pivotGrad)" stroke="#ecc77e"/>
+    <rect x="359" y="139" width="68" height="55" rx="12" fill="#e4f3df" stroke="#c6dfbd"/>
+  </g>
+  <text x="247" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41667f">&lt; pivot</text>
+  <text x="247" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668298">sol</text>
+  <text x="320" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805d21">pivot</text>
+  <text x="320" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#967137">indeks p</text>
+  <text x="393" y="161" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#497444">&gt; pivot</text>
+  <text x="393" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688d64">sağ</text>
+
+  <path d="M320 201 V215" fill="none" stroke="#7c9bb2" stroke-width="1.8"/>
+  <polygon points="320,221 315,213 325,213" fill="#7c9bb2"/>
+  <g filter="url(#softShadow)">
+    <rect x="248" y="222" width="144" height="18" rx="9" fill="#eef3f7"/>
+  </g>
+  <text x="320" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#586e80">p ile k karşılaştır</text>
+
+  <path d="M453 159 H474" fill="none" stroke="#7c9bb2" stroke-width="2"/>
+  <polygon points="474,159 466,154 466,164" fill="#7c9bb2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="481" y="74" width="130" height="73" rx="18" fill="#fff9ed" stroke="#eed8a7"/>
+  </g>
+  <text x="546" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#67522e">Karar</text>
+  <text x="546" y="120" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d6a49">p = k ?</text>
+  <path d="M510 132 H582" stroke="#e2c98e" stroke-width="1"/>
+
+  <path d="M546 154 V171 H474 V204" fill="none" stroke="#80a3a3" stroke-width="1.8"/>
+  <polygon points="474,210 469,202 479,202" fill="#80a3a3"/>
+  <text x="486" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638080">hayır: tek tarafı sürdür</text>
+
+  <path d="M553 147 V174" fill="none" stroke="#79a478" stroke-width="2"/>
+  <polygon points="553,180 548,172 558,172" fill="#79a478"/>
+
+  <g filter="url(#shadow)">
+    <rect x="484" y="187" width="125" height="61" rx="18" fill="url(#resultGrad)" stroke="#afd3aa"/>
+  </g>
+  <circle cx="508" cy="217" r="14" fill="#ffffff" opacity="0.82"/>
+  <path d="M502 217 L506 221 L515 212" fill="none" stroke="#5c9660" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="557" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#467346">Sonuç</text>
+  <text x="557" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8260">k. en küçük</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="33" y="267" width="574" height="30" rx="15" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <text x="52" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#527186">Beklenen süre: O(n)</text>
+  <path d="M207 282 H236" stroke="#c8d7df" stroke-width="1"/>
+  <text x="252" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607889">Ortanca için k = ⌊n / 2⌋</text>
+  <path d="M432 282 H455" stroke="#c8d7df" stroke-width="1"/>
+  <text x="472" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607889">yalnız hedef yol</text>
+</svg>
