@@ -12,8 +12,10 @@ tags:
   - javascript
   - svg
 toc: true
-image: /img/bézier-egrileri-kontrol-15.png
+image: /img/bezier-egrileri-kontrol-15.png
 ---
+
+![bezier-egrileri-kontrol-15](/img/bezier-egrileri-kontrol-15.svg)
 
 Bir logodaki kusursuz kıvrımın veya bir yazı karakterindeki zarif yayın arkasında çoğu zaman Bézier eğrileri vardır. Bu eğriler, yüzlerce pikseli tek tek yerleştirmek yerine birkaç kontrol noktasıyla akıcı şekiller oluşturmamızı sağlar. Üstelik yalnızca Illustrator, Figma ve Inkscape gibi tasarım araçlarında değil; animasyonlardan fontlara, oyunlardan robot hareketlerine kadar geniş bir alanda kullanılır.
 
@@ -94,6 +96,3 @@ Kodda `bezierCurveTo`, iki kontrol noktasıyla bitiş noktasını alır. Noktala
 Bézier eğrileri çözünürlükten bağımsızdır. Bir logo kartvizit boyutundan bina cephesine büyütülse bile matematiksel tanımı değişmez; eğri yeni ölçekte tekrar hesaplanır. Raster görsellerdeki pikselleşmenin görülmemesi bu yüzdendir.
 
 SVG dosyalarındaki `C` komutu, fontların dış hatları ve CSS animasyonlarındaki zamanlama fonksiyonları aynı düşünceden yararlanır. Kısacası kontrol noktaları yalnızca çizgileri bükmez; dijital tasarımın ölçeklenebilir, düzenlenebilir ve şaşırtıcı derecede zarif olmasını sağlar.
-
-![bézier-egrileri-kontrol-15](/img/bézier-egrileri-kontrol-15.svg)
-
