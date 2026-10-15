@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="interfaceGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcecff"/>
+      <stop offset="1" stop-color="#cfe1fb"/>
+    </linearGradient>
+    <linearGradient id="structGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dff4df"/>
+      <stop offset="1" stop-color="#c9ebd2"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eee4ff"/>
+      <stop offset="1" stop-color="#dfd1f8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#69819a" flood-opacity="0.2"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#69819a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="40" r="72" fill="#cde5f5" opacity="0.3"/>
+  <circle cx="592" cy="278" r="85" fill="#d7eed4" opacity="0.36"/>
+  <path d="M34 159 C110 120 151 195 221 156 S349 119 411 151 S536 201 611 144" fill="none" stroke="#b9d5d8" stroke-width="2" opacity="0.42" stroke-dasharray="5 7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="62" width="183" height="153" rx="20" fill="url(#interfaceGrad)" stroke="#accbeb"/>
+    <rect x="50" y="78" width="45" height="36" rx="11" fill="#f7fbff" opacity="0.85"/>
+    <path d="M62 91 h21 M62 100 h14 M62 109 h21" stroke="#5489b9" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="106" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315d84">ARAYÜZ</text>
+    <text x="106" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527593">Davranış sözleşmesi</text>
+
+    <rect x="51" y="132" width="151" height="30" rx="10" fill="#f9fcff" opacity="0.8"/>
+    <text x="65" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416887">Gonder() yeteneği</text>
+
+    <rect x="51" y="172" width="69" height="26" rx="9" fill="#b8d7f1"/>
+    <text x="64" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d84">E-posta</text>
+    <rect x="130" y="172" width="57" height="26" rx="9" fill="#b8d7f1"/>
+    <text x="144" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d84">SMS</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="422" y="62" width="183" height="153" rx="20" fill="url(#structGrad)" stroke="#a9d5b3"/>
+    <rect x="438" y="78" width="45" height="36" rx="11" fill="#f9fffa" opacity="0.88"/>
+    <path d="M449 91 h21 v19 h-21 z M456 97 h7 M456 104 h7" fill="none" stroke="#4f9370" stroke-width="2.1" stroke-linejoin="round"/>
+    <text x="494" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397050">YAPI</text>
+    <text x="494" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b826a">Değer semantiği</text>
+
+    <rect x="438" y="132" width="151" height="30" rx="10" fill="#fbfffb" opacity="0.82"/>
+    <text x="453" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47765a">Küçük veri modeli</text>
+
+    <rect x="438" y="172" width="66" height="26" rx="9" fill="#bce1c6"/>
+    <text x="451" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397050">Nokta</text>
+    <rect x="514" y="172" width="60" height="26" rx="9" fill="#bce1c6"/>
+    <text x="525" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397050">Renk</text>
+  </g>
+
+  <path d="M219 137 H272" fill="none" stroke="#7799b8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="279,137 269,131 269,143" fill="#7799b8"/>
+  <path d="M421 137 H368" fill="none" stroke="#719b7b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="361,137 371,131 371,143" fill="#719b7b"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="320" cy="137" r="53" fill="url(#centerGrad)" stroke="#c1adde" stroke-width="1.5"/>
+    <circle cx="320" cy="137" r="39" fill="#f9f6ff" opacity="0.55"/>
+    <path d="M303 128 h15 l5 7 6-12 8 5" fill="none" stroke="#76589a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M300 146 h40" stroke="#9478b8" stroke-width="2" stroke-linecap="round"/>
+    <text x="320" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#61457f">BİRLİKTE</text>
+  </g>
+
+  <path d="M320 191 V234" fill="none" stroke="#9075ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="320,241 314,231 326,231" fill="#9075ad"/>
+
+  <g filter="url(#soft)">
+    <rect x="139" y="246" width="362" height="51" rx="16" fill="#fff9e7" stroke="#ecd99b"/>
+    <circle cx="169" cy="271" r="15" fill="#f6d97e"/>
+    <path d="M169 261 v12 M169 279.5 v1" stroke="#745c21" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="195" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#77602e">Dikkatli seçim</text>
+    <text x="195" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b7440">Kutulama ve gereksiz kopyalamayı önle</text>
+  </g>
+</svg>

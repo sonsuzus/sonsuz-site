@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfeaff"/>
+      <stop offset="100%" stop-color="#cfe0fb"/>
+    </linearGradient>
+    <filter id="golge" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7090aa" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8493" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="566" cy="48" r="82" fill="#dff3ea" opacity="0.55"/>
+  <circle cx="74" cy="286" r="96" fill="#e5edff" opacity="0.65"/>
+
+  <text x="320" y="27" text-anchor="middle" fill="#36516a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Shell Hata Akışı</text>
+
+  <rect x="236" y="45" width="168" height="61" rx="18" fill="url(#merkez)" stroke="#a9c1e0" filter="url(#golge)"/>
+  <text x="320" y="70" text-anchor="middle" fill="#294b6a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">set -e</text>
+  <text x="320" y="89" text-anchor="middle" fill="#4d6d85" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İlk hatada durdur</text>
+
+  <path d="M278 107 L176 139" fill="none" stroke="#88a2b7" stroke-width="2"/>
+  <polygon points="176,139 186,132 184,143" fill="#88a2b7"/>
+  <path d="M362 107 L464 139" fill="none" stroke="#88a2b7" stroke-width="2"/>
+  <polygon points="464,139 454,143 456,132" fill="#88a2b7"/>
+  <path d="M320 107 L320 137" fill="none" stroke="#88a2b7" stroke-width="2"/>
+  <polygon points="320,137 315,127 325,127" fill="#88a2b7"/>
+
+  <rect x="45" y="142" width="175" height="91" rx="17" fill="#fff4f2" stroke="#efc1bb" filter="url(#hafifGolge)"/>
+  <circle cx="73" cy="169" r="14" fill="#f7c7c0"/>
+  <path d="M67 163 L79 175 M79 163 L67 175" stroke="#ad5148" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="139" y="166" text-anchor="middle" fill="#88473f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Pipeline</text>
+  <text x="139" y="188" text-anchor="middle" fill="#9a625a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Önceki hata gizlenir</text>
+  <text x="139" y="210" text-anchor="middle" fill="#9a625a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Son komut belirler</text>
+
+  <rect x="232" y="142" width="176" height="91" rx="17" fill="#fffbe9" stroke="#e8d698" filter="url(#hafifGolge)"/>
+  <circle cx="260" cy="169" r="14" fill="#f5dea1"/>
+  <text x="260" y="174" text-anchor="middle" fill="#876a20" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="700">?</text>
+  <text x="320" y="166" text-anchor="middle" fill="#786019" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Koşul ve Alt Kabuk</text>
+  <text x="320" y="188" text-anchor="middle" fill="#917b3d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hata beklenen olabilir</text>
+  <text x="320" y="210" text-anchor="middle" fill="#917b3d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Davranış değişebilir</text>
+
+  <rect x="420" y="142" width="175" height="91" rx="17" fill="#edf9f2" stroke="#afd9c0" filter="url(#hafifGolge)"/>
+  <circle cx="449" cy="169" r="14" fill="#bfe7cc"/>
+  <path d="M443 169 L447 173 L456 163" fill="none" stroke="#358159" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="516" y="166" text-anchor="middle" fill="#347052" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Güçlendirme</text>
+  <text x="516" y="188" text-anchor="middle" fill="#4f876b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">pipefail görünür kılar</text>
+  <text x="516" y="210" text-anchor="middle" fill="#4f876b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Açık kontrol korur</text>
+
+  <path d="M132 234 L132 260 L264 260" fill="none" stroke="#d28a80" stroke-width="2"/>
+  <polygon points="264,260 254,255 254,265" fill="#d28a80"/>
+  <path d="M320 234 L320 260" fill="none" stroke="#c9aa4f" stroke-width="2"/>
+  <polygon points="320,260 315,250 325,250" fill="#c9aa4f"/>
+  <path d="M508 234 L508 260 L376 260" fill="none" stroke="#72ae8b" stroke-width="2"/>
+  <polygon points="376,260 386,255 386,265" fill="#72ae8b"/>
+
+  <rect x="187" y="262" width="266" height="42" rx="15" fill="#e5f2f7" stroke="#b7d3df" filter="url(#hafifGolge)"/>
+  <text x="320" y="280" text-anchor="middle" fill="#315c6d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Sağlam Betik</text>
+  <text x="320" y="296" text-anchor="middle" fill="#527887" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">set -euo pipefail + açık if kontrolü</text>
+</svg>
