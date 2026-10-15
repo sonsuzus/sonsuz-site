@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#cfe3f7"/>
+    </linearGradient>
+    <linearGradient id="arrayGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9ddff"/>
+      <stop offset="100%" stop-color="#d9c9f4"/>
+    </linearGradient>
+    <linearGradient id="searchGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f2df"/>
+      <stop offset="100%" stop-color="#bce4c7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7d91a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#627d93" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="57" cy="48" r="57" fill="#cfeafb" opacity="0.34"/>
+  <circle cx="598" cy="279" r="72" fill="#d7f0d4" opacity="0.38"/>
+  <circle cx="393" cy="25" r="28" fill="#eadcff" opacity="0.32"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">SON EK DİZİSİ</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8194">Sıralı indislerle hızlı kalıp arama</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="76" width="150" height="176" rx="18" fill="url(#textGrad)"/>
+    <rect x="41" y="91" width="124" height="29" rx="10" fill="#ffffff" opacity="0.72"/>
+    <text x="54" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546e">Metin</text>
+    <text x="97" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36546e">banana</text>
+
+    <text x="42" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52728c">Başlangıç indisleri</text>
+    <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426178">
+      <rect x="42" y="154" width="25" height="25" rx="7" fill="#fafdff"/>
+      <rect x="72" y="154" width="25" height="25" rx="7" fill="#fafdff"/>
+      <rect x="102" y="154" width="25" height="25" rx="7" fill="#fafdff"/>
+      <rect x="132" y="154" width="25" height="25" rx="7" fill="#fafdff"/>
+      <text x="51" y="171">0</text><text x="81" y="171">1</text><text x="111" y="171">2</text><text x="141" y="171">3</text>
+      <rect x="57" y="187" width="25" height="25" rx="7" fill="#fafdff"/>
+      <rect x="87" y="187" width="25" height="25" rx="7" fill="#fafdff"/>
+      <text x="66" y="204">4</text><text x="96" y="204">5</text>
+    </g>
+    <rect x="42" y="222" width="122" height="18" rx="9" fill="#78aaca" opacity="0.24"/>
+    <text x="56" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#41647c">Son ekler üretilir</text>
+  </g>
+
+  <path d="M184 164 H208" stroke="#7996af" stroke-width="2.2" fill="none"/>
+  <polygon points="213,164 205,159 205,169" fill="#7996af"/>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="61" width="194" height="207" rx="18" fill="url(#arrayGrad)"/>
+    <text x="237" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#543d75">Sıralı son ek dizisi</text>
+    <text x="237" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#725c8d">SA = [5, 3, 1, 0, 4, 2]</text>
+
+    <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+      <rect x="235" y="119" width="160" height="21" rx="7" fill="#ffffff" opacity="0.73"/>
+      <text x="249" y="134" fill="#5c4778">5</text><text x="290" y="134" fill="#5c4778">a</text>
+
+      <rect x="235" y="143" width="160" height="21" rx="7" fill="#ffffff" opacity="0.73"/>
+      <text x="249" y="158" fill="#5c4778">3</text><text x="290" y="158" fill="#5c4778">ana</text>
+
+      <rect x="235" y="167" width="160" height="21" rx="7" fill="#fff7c9"/>
+      <text x="249" y="182" fill="#725419">1</text><text x="290" y="182" fill="#725419">anana</text>
+
+      <rect x="235" y="191" width="160" height="21" rx="7" fill="#ffffff" opacity="0.73"/>
+      <text x="249" y="206" fill="#5c4778">0</text><text x="290" y="206" fill="#5c4778">banana</text>
+
+      <rect x="235" y="215" width="160" height="21" rx="7" fill="#ffffff" opacity="0.73"/>
+      <text x="249" y="230" fill="#5c4778">4</text><text x="290" y="230" fill="#5c4778">na</text>
+
+      <rect x="235" y="239" width="160" height="21" rx="7" fill="#ffffff" opacity="0.73"/>
+      <text x="249" y="254" fill="#5c4778">2</text><text x="290" y="254" fill="#5c4778">nana</text>
+    </g>
+    <rect x="270" y="145" width="119" height="42" rx="9" fill="none" stroke="#efb94c" stroke-width="2"/>
+  </g>
+
+  <path d="M418 164 H442" stroke="#7996af" stroke-width="2.2" fill="none"/>
+  <polygon points="447,164 439,159 439,169" fill="#7996af"/>
+
+  <g filter="url(#shadow)">
+    <rect x="452" y="76" width="160" height="176" rx="18" fill="url(#searchGrad)"/>
+    <text x="469" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356448">İkili arama</text>
+
+    <rect x="469" y="117" width="126" height="30" rx="10" fill="#ffffff" opacity="0.75"/>
+    <text x="482" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#437153">Kalıp: </text>
+    <text x="523" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2f7450">ana</text>
+
+    <path d="M481 164 H575" stroke="#6ea47c" stroke-width="2" fill="none"/>
+    <path d="M481 164 V175 M528 164 V175 M575 164 V175" stroke="#6ea47c" stroke-width="2" fill="none"/>
+    <circle cx="528" cy="164" r="7" fill="#f4c95d" filter="url(#soft)"/>
+    <text x="477" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7960">Sınır bulunur</text>
+
+    <rect x="469" y="207" width="126" height="29" rx="10" fill="#ffffff" opacity="0.8"/>
+    <text x="481" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6d50">Eşleşmeler</text>
+    <text x="552" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2b7550">[1, 3]</text>
+  </g>
+
+  <path d="M489 260 C505 279 555 281 577 260" stroke="#88aa92" stroke-width="1.6" fill="none" opacity="0.75"/>
+  <polygon points="580,256 570,258 576,265" fill="#88aa92"/>
+
+  <g transform="translate(220,285)">
+    <rect width="199" height="23" rx="11" fill="#ffffff" opacity="0.72" filter="url(#soft)"/>
+    <circle cx="15" cy="11.5" r="5" fill="#8c70ba"/>
+    <text x="28" y="16" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b6875">Çok sorguda hızlı erişim</text>
+  </g>
+</svg>

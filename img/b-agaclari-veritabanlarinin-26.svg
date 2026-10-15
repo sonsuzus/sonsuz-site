@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ee"/>
+    </linearGradient>
+    <linearGradient id="kok" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b9d9ff"/>
+      <stop offset="100%" stop-color="#d3c8ff"/>
+    </linearGradient>
+    <linearGradient id="dugum" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f3ec"/>
+      <stop offset="100%" stop-color="#c7e6ff"/>
+    </linearGradient>
+    <linearGradient id="yaprak" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1c9"/>
+      <stop offset="100%" stop-color="#ffd9b8"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#55718a" flood-opacity="0.19"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#55718a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="93" cy="62" r="58" fill="#dceefe" opacity="0.52"/>
+  <circle cx="564" cy="252" r="78" fill="#dcefd9" opacity="0.48"/>
+
+  <text x="28" y="32" fill="#36536b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">B+ AĞACI İNDEKSİ</text>
+  <text x="28" y="49" fill="#6a8395" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Geniş dallanma · Az disk erişimi</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="468" y="21" width="143" height="42" rx="14" fill="#edf3ff" stroke="#c9daf0"/>
+    <ellipse cx="490" cy="37" rx="11" ry="4.5" fill="#9bbbe4"/>
+    <path d="M479 37v12c0 2.6 4.9 4.6 11 4.6s11-2 11-4.6V37" fill="#b9d3f0" stroke="#8fafd4"/>
+    <ellipse cx="490" cy="37" rx="11" ry="4.5" fill="#c9dff5" stroke="#8fafd4"/>
+    <text x="512" y="39" fill="#44627b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Disk sayfaları</text>
+    <text x="512" y="54" fill="#70889a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">4–16 KB</text>
+  </g>
+
+  <path d="M319 100 L319 116" stroke="#7e9ab0" stroke-width="2.5" fill="none"/>
+  <polygon points="314,112 324,112 319,120" fill="#7e9ab0"/>
+  <path d="M319 163 C270 177 188 183 122 198" stroke="#88a8a9" stroke-width="2.4" fill="none"/>
+  <polygon points="126,193 119,205 133,201" fill="#88a8a9"/>
+  <path d="M319 163 C319 176 319 183 319 198" stroke="#88a8a9" stroke-width="2.4" fill="none"/>
+  <polygon points="314,194 324,194 319,202" fill="#88a8a9"/>
+  <path d="M319 163 C368 177 450 183 517 198" stroke="#88a8a9" stroke-width="2.4" fill="none"/>
+  <polygon points="507,201 521,205 514,193" fill="#88a8a9"/>
+
+  <g filter="url(#golge)">
+    <rect x="235" y="67" width="168" height="38" rx="13" fill="url(#kok)" stroke="#a9bee8"/>
+    <text x="252" y="82" fill="#405b82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kök sayfa</text>
+    <rect x="252" y="88" width="31" height="9" rx="3" fill="#f5f7ff" stroke="#a9bee8"/>
+    <rect x="289" y="88" width="31" height="9" rx="3" fill="#f5f7ff" stroke="#a9bee8"/>
+    <rect x="326" y="88" width="31" height="9" rx="3" fill="#f5f7ff" stroke="#a9bee8"/>
+    <rect x="363" y="88" width="24" height="9" rx="3" fill="#f5f7ff" stroke="#a9bee8"/>
+  </g>
+
+  <g filter="url(#golge)">
+    <rect x="239" y="120" width="160" height="45" rx="14" fill="url(#dugum)" stroke="#a4cfc9"/>
+    <text x="255" y="139" fill="#356e70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yönlendirme</text>
+    <text x="255" y="155" fill="#64898b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">çok sayıda anahtar</text>
+    <circle cx="374" cy="142" r="12" fill="#f4fffd" stroke="#9ecac4"/>
+    <path d="M369 142h10M374 137v10" stroke="#68aaa1" stroke-width="1.8"/>
+  </g>
+
+  <g filter="url(#golge)">
+    <rect x="47" y="203" width="151" height="59" rx="15" fill="url(#yaprak)" stroke="#e5c88d"/>
+    <text x="63" y="224" fill="#7a6140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yaprak sayfa</text>
+    <text x="63" y="243" fill="#967952" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kayıtlar 001–350</text>
+    <circle cx="174" cy="231" r="10" fill="#fff9e9" stroke="#e5c88d"/>
+    <path d="M170 231h8M174 227v8" stroke="#c99d4d" stroke-width="1.6"/>
+  </g>
+
+  <g filter="url(#golge)">
+    <rect x="244" y="203" width="151" height="59" rx="15" fill="url(#yaprak)" stroke="#e5c88d"/>
+    <text x="260" y="224" fill="#7a6140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yaprak sayfa</text>
+    <text x="260" y="243" fill="#967952" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kayıtlar 351–700</text>
+    <circle cx="371" cy="231" r="10" fill="#fff9e9" stroke="#e5c88d"/>
+    <path d="M367 231h8M371 227v8" stroke="#c99d4d" stroke-width="1.6"/>
+  </g>
+
+  <g filter="url(#golge)">
+    <rect x="442" y="203" width="151" height="59" rx="15" fill="url(#yaprak)" stroke="#e5c88d"/>
+    <text x="458" y="224" fill="#7a6140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yaprak sayfa</text>
+    <text x="458" y="243" fill="#967952" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kayıtlar 701–999</text>
+    <circle cx="569" cy="231" r="10" fill="#fff9e9" stroke="#e5c88d"/>
+    <path d="M565 231h8M569 227v8" stroke="#c99d4d" stroke-width="1.6"/>
+  </g>
+
+  <path d="M198 232 H239" stroke="#d19e5a" stroke-width="2.3" fill="none"/>
+  <polygon points="235,227 244,232 235,237" fill="#d19e5a"/>
+  <path d="M395 232 H437" stroke="#d19e5a" stroke-width="2.3" fill="none"/>
+  <polygon points="433,227 442,232 433,237" fill="#d19e5a"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="196" y="280" width="248" height="25" rx="12" fill="#e4f1eb" stroke="#c1ddcf"/>
+    <circle cx="214" cy="292.5" r="5" fill="#70b69a"/>
+    <text x="227" y="297" fill="#4d7869" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Dengeli yükseklik: yaklaşık 3 sayfa okuma</text>
+  </g>
+</svg>
