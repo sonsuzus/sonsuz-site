@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="satFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#c9daf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890aa" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890aa" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="321" cy="157" r="118" fill="#dceefa" opacity="0.34"/>
+  <circle cx="321" cy="157" r="89" fill="#ffffff" opacity="0.38"/>
+
+  <path d="M190 93 C213 104 229 114 247 126" fill="none" stroke="#8da8bf" stroke-width="2.2"/>
+  <polygon points="247,126 237,125 242,117" fill="#8da8bf"/>
+  <path d="M395 128 C415 115 434 105 453 96" fill="none" stroke="#8da8bf" stroke-width="2.2"/>
+  <polygon points="453,96 445,105 442,96" fill="#8da8bf"/>
+  <path d="M214 231 C230 217 242 203 258 190" fill="none" stroke="#8da8bf" stroke-width="2.2"/>
+  <polygon points="258,190 254,200 247,193" fill="#8da8bf"/>
+  <path d="M382 191 C398 207 414 219 431 231" fill="none" stroke="#8da8bf" stroke-width="2.2"/>
+  <polygon points="431,231 421,229 426,222" fill="#8da8bf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="246" y="109" width="150" height="94" rx="22" fill="url(#satFill)" stroke="#9eb8d8"/>
+    <circle cx="321" cy="137" r="19" fill="#ffffff" opacity="0.88"/>
+    <path d="M312 137 L319 144 L332 130" fill="none" stroke="#4d78a3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="321" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345979">SAT</text>
+    <text x="321" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52718e">Sağlanabilirlik</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="43" y="48" width="149" height="86" rx="17" fill="#fff5dc" stroke="#e8ce91"/>
+    <text x="62" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7b6332">Boole formülü</text>
+    <rect x="61" y="83" width="112" height="31" rx="8" fill="#fffdf7" stroke="#eddcad"/>
+    <text x="117" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b5b38">x ∨ y   ∧   ¬x ∨ z</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="449" y="48" width="149" height="86" rx="17" fill="#e5f5e8" stroke="#acd4b4"/>
+    <text x="467" y="74" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397050">Sertifika</text>
+    <text x="467" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7660">x=1, y=0, z=1</text>
+    <path d="M469 109 L476 116 L489 102" fill="none" stroke="#4f9a69" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="497" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397050">Kolay doğrulama</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="39" y="226" width="179" height="64" rx="17" fill="#f0e8fa" stroke="#cbb6e1"/>
+    <text x="58" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#694b87">Arama uzayı</text>
+    <text x="58" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765d90">2ⁿ olası atama</text>
+    <circle cx="185" cy="258" r="13" fill="#ffffff" stroke="#cbb6e1"/>
+    <path d="M180 253 L190 263 M190 253 L180 263" stroke="#8d6ab1" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="423" y="226" width="179" height="64" rx="17" fill="#fce9e8" stroke="#e4b5b2"/>
+    <text x="442" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#98524e">NP-tamlık</text>
+    <text x="442" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6661">Polinom indirgeme</text>
+    <path d="M563 249 L578 249 L578 243 L590 256 L578 269 L578 263 L563 263 Z" fill="#c9756e"/>
+  </g>
+
+  <path d="M321 204 L321 215" stroke="#8da8bf" stroke-width="2.2"/>
+  <polygon points="321,225 316,215 326,215" fill="#8da8bf"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="258" y="222" width="126" height="62" rx="17" fill="#e5f5f3" stroke="#a9d7d1"/>
+    <text x="321" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34766f">Çözücüler</text>
+    <text x="321" y="268" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a817c">DPLL · CDCL</text>
+  </g>
+
+  <text x="321" y="307" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8495">Doğrulama · Planlama · Yapay zekâ</text>
+</svg>

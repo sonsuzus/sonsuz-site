@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="droneBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8da8d8"/>
+      <stop offset="100%" stop-color="#6684bc"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#6b7f99" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#60738d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="318" cy="153" r="113" fill="#dcecf4" opacity="0.48"/>
+  <circle cx="318" cy="153" r="83" fill="#eaf3f5" opacity="0.75"/>
+
+  <!-- Rüzgar -->
+  <g filter="url(#soft)">
+    <rect x="22" y="108" width="108" height="88" rx="18" fill="#d9f1ef"/>
+    <text x="76" y="134" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356f75" font-weight="600">Rüzgâr</text>
+    <path d="M39 151 C54 140 68 160 85 149 C95 143 101 145 110 148" fill="none" stroke="#54aeb2" stroke-width="3" stroke-linecap="round"/>
+    <path d="M40 164 C58 153 76 174 98 160" fill="none" stroke="#54aeb2" stroke-width="3" stroke-linecap="round"/>
+    <path d="M43 177 C59 171 70 182 88 174" fill="none" stroke="#54aeb2" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- wind arrow -->
+  <path d="M132 153 L184 153" stroke="#54aeb2" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="184,153 175,147 175,159" fill="#54aeb2"/>
+  <text x="158" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b888c">bozucu kuvvet</text>
+
+  <!-- Drone center -->
+  <g filter="url(#shadow)">
+    <path d="M244 149 L282 136 M354 136 L392 149 M244 164 L282 174 M354 174 L392 164" stroke="#516d99" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="239" cy="149" rx="16" ry="7" fill="#849bc3"/>
+    <ellipse cx="397" cy="149" rx="16" ry="7" fill="#849bc3"/>
+    <ellipse cx="239" cy="164" rx="16" ry="7" fill="#849bc3"/>
+    <ellipse cx="397" cy="164" rx="16" ry="7" fill="#849bc3"/>
+    <path d="M276 145 Q318 116 360 145 L350 174 Q318 192 286 174 Z" fill="url(#droneBody)"/>
+    <path d="M291 143 Q318 128 345 143 L340 151 L296 151 Z" fill="#c8e5ec" opacity="0.9"/>
+    <circle cx="318" cy="161" r="7" fill="#e6f3f3"/>
+    <path d="M284 181 Q318 201 352 181" fill="none" stroke="#6f8fc4" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="318" y="221" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405775" font-weight="600">İHA dengesi</text>
+
+  <!-- feedback arc -->
+  <path d="M196 236 C225 281 408 282 442 230" fill="none" stroke="#9bb4c8" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <polygon points="442,230 433,235 442,240" fill="#9bb4c8"/>
+  <text x="319" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657f96">sürekli geri besleme</text>
+
+  <!-- Sensors -->
+  <g filter="url(#soft)">
+    <rect x="165" y="242" width="114" height="34" rx="12" fill="#fff4d9"/>
+    <text x="222" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806236">IMU ve GPS</text>
+    <rect x="360" y="242" width="115" height="34" rx="12" fill="#e9e1f7"/>
+    <text x="417" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#695282">Motor itkisi</text>
+  </g>
+  <path d="M267 242 L290 197" fill="none" stroke="#b18a46" stroke-width="2"/>
+  <polygon points="290,197 282,203 291,207" fill="#b18a46"/>
+  <path d="M349 198 L373 242" fill="none" stroke="#806aa1" stroke-width="2"/>
+  <polygon points="373,242 365,235 363,244" fill="#806aa1"/>
+
+  <!-- Control hierarchy -->
+  <g filter="url(#shadow)">
+    <rect x="469" y="42" width="146" height="46" rx="15" fill="#dce8fb"/>
+    <rect x="481" y="52" width="25" height="25" rx="9" fill="#8daee0"/>
+    <text x="493" y="69" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="600">1</text>
+    <text x="548" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405b82" font-weight="600">Konum</text>
+
+    <rect x="469" y="98" width="146" height="46" rx="15" fill="#dcefe8"/>
+    <rect x="481" y="108" width="25" height="25" rx="9" fill="#82bda8"/>
+    <text x="493" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="600">2</text>
+    <text x="548" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c7563" font-weight="600">Hız</text>
+
+    <rect x="469" y="154" width="146" height="46" rx="15" fill="#f9eadc"/>
+    <rect x="481" y="164" width="25" height="25" rx="9" fill="#d9a26b"/>
+    <text x="493" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="600">3</text>
+    <text x="548" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#885c31" font-weight="600">Tutum</text>
+
+    <rect x="469" y="210" width="146" height="46" rx="15" fill="#f0e4f7"/>
+    <rect x="481" y="220" width="25" height="25" rx="9" fill="#b08bc8"/>
+    <text x="493" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="600">4</text>
+    <text x="548" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#704c87" font-weight="600">Açısal hız</text>
+  </g>
+
+  <!-- Hierarchy arrows -->
+  <path d="M542 89 L542 97" stroke="#7b96b0" stroke-width="2"/>
+  <polygon points="542,97 537,91 547,91" fill="#7b96b0"/>
+  <path d="M542 145 L542 153" stroke="#7b96b0" stroke-width="2"/>
+  <polygon points="542,153 537,147 547,147" fill="#7b96b0"/>
+  <path d="M542 201 L542 209" stroke="#7b96b0" stroke-width="2"/>
+  <polygon points="542,209 537,203 547,203" fill="#7b96b0"/>
+
+  <!-- controller to drone -->
+  <path d="M468 177 C442 178 425 173 401 164" fill="none" stroke="#7a91b4" stroke-width="2.5"/>
+  <polygon points="401,164 411,162 406,171" fill="#7a91b4"/>
+  <text x="434" y="157" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e7396">PID komutu</text>
+
+  <!-- status -->
+  <g filter="url(#soft)">
+    <rect x="24" y="25" width="191" height="46" rx="16" fill="#ffffff" opacity="0.86"/>
+    <circle cx="47" cy="48" r="10" fill="#78b89a"/>
+    <path d="M42 48 L46 52 L53 44" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="125" y="52" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49667a" font-weight="600">Ölç • Tahmin • Dengele</text>
+  </g>
+</svg>
