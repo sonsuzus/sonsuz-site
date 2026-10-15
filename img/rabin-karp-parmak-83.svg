@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="pattern" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7ddff"/>
+      <stop offset="100%" stop-color="#d6c9fb"/>
+    </linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f4ee"/>
+      <stop offset="100%" stop-color="#bde8dc"/>
+    </linearGradient>
+    <linearGradient id="decision" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1c9"/>
+      <stop offset="100%" stop-color="#f9dfa1"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8396" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8396" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="576" cy="52" r="86" fill="#dceffc" opacity="0.42"/>
+  <circle cx="65" cy="289" r="92" fill="#dff3df" opacity="0.42"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556b">Rabin-Karp · Kayan Parmak İzi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="67" width="137" height="176" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="47" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c5d70">Girdi</text>
+
+  <rect x="45" y="111" width="101" height="42" rx="11" fill="url(#pattern)" filter="url(#smallShadow)"/>
+  <text x="95.5" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e4671">Kalıp</text>
+  <text x="95.5" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e5779">abra</text>
+
+  <rect x="45" y="169" width="101" height="53" rx="11" fill="url(#window)" filter="url(#smallShadow)"/>
+  <text x="95.5" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6a67">Metin</text>
+  <text x="95.5" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a7773">abrakadabra</text>
+
+  <path d="M164 132 L192 132 L192 111 L211 111" fill="none" stroke="#8799aa" stroke-width="2"/>
+  <polygon points="211,106 221,111 211,116" fill="#8799aa"/>
+  <path d="M164 195 L181 195 L181 164 L211 164" fill="none" stroke="#8799aa" stroke-width="2"/>
+  <polygon points="211,159 221,164 211,169" fill="#8799aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="221" y="67" width="151" height="176" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="296.5" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c5d70">Hash Üretimi</text>
+
+  <rect x="241" y="108" width="111" height="43" rx="11" fill="#f0ebff"/>
+  <text x="296.5" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#574d7c">Kalıp hash</text>
+  <text x="296.5" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#574d7c">H = 8142</text>
+
+  <path d="M296 152 L296 166" fill="none" stroke="#98a8b5" stroke-width="2"/>
+  <polygon points="291,166 301,166 296,174" fill="#98a8b5"/>
+
+  <rect x="241" y="175" width="111" height="47" rx="11" fill="#e1f5ef"/>
+  <text x="296.5" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39716a">Pencere hash</text>
+  <text x="296.5" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39716a">Hᵢ = 8142</text>
+
+  <path d="M372 197 L400 197" fill="none" stroke="#8799aa" stroke-width="2"/>
+  <polygon points="400,192 410,197 400,202" fill="#8799aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="410" y="96" width="108" height="108" rx="18" fill="url(#decision)"/>
+  </g>
+  <text x="464" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765d29">Hash eşit mi?</text>
+  <circle cx="464" cy="158" r="20" fill="#fff9e9" opacity="0.8"/>
+  <text x="464" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#80651f">= ?</text>
+
+  <path d="M518 128 L542 128 L542 104 L558 104" fill="none" stroke="#8196a4" stroke-width="2"/>
+  <polygon points="558,99 568,104 558,109" fill="#8196a4"/>
+  <text x="536" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687c89">Hayır</text>
+
+  <path d="M518 175 L542 175 L542 206 L558 206" fill="none" stroke="#8196a4" stroke-width="2"/>
+  <polygon points="558,201 568,206 558,211" fill="#8196a4"/>
+  <text x="536" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687c89">Evet</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="568" y="78" width="53" height="52" rx="13" fill="#edf2f5"/>
+  </g>
+  <text x="594.5" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#657886">Kaydır</text>
+  <text x="594.5" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657886">O(1)</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="568" y="179" width="53" height="55" rx="13" fill="#dff1e6"/>
+  </g>
+  <text x="594.5" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386957">Doğrula</text>
+  <text x="594.5" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#386957">Karakter</text>
+
+  <path d="M594 234 L594 259 L465 259 L465 237" fill="none" stroke="#78a995" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="460,237 470,237 465,245" fill="#78a995"/>
+  <text x="521" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#577766">Eşleşme veya çakışma</text>
+
+  <path d="M594 130 L594 151 L296 151 L296 163" fill="none" stroke="#a1b0bb" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.75"/>
+  <text x="390" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71848f">Kayan hash</text>
+</svg>

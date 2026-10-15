@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f7fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d86a2" flood-opacity="0.19"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7892a9" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="585" cy="38" r="78" fill="#d9f1ed" opacity="0.52"/>
+  <circle cx="54" cy="284" r="85" fill="#e4eafb" opacity="0.62"/>
+
+  <text x="30" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">BOYER-MOORE • AKILLI METİN ARAMA</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="54" width="142" height="190" rx="18" fill="url(#panel)"/>
+  </g>
+  <rect x="43" y="70" width="46" height="28" rx="10" fill="#dcecfb"/>
+  <path d="M57 84h18M57 89h12" stroke="#4d7da5" stroke-width="2" stroke-linecap="round"/>
+  <text x="43" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546d">Ön işleme</text>
+  <text x="43" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62788c">Kötü karakter</text>
+  <text x="43" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62788c">son konum tablosu</text>
+
+  <g filter="url(#soft)">
+    <rect x="43" y="176" width="110" height="46" rx="10" fill="#eef5ff" stroke="#c8ddef"/>
+  </g>
+  <text x="55" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49657b">M → 4</text>
+  <text x="55" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49657b">T → 2</text>
+  <text x="105" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49657b">E → 1</text>
+  <text x="105" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49657b">İ → 3</text>
+
+  <path d="M177 149 L207 149" stroke="#7796ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="207,149 198,144 198,154" fill="#7796ae"/>
+
+  <g filter="url(#shadow)">
+    <rect x="217" y="54" width="391" height="190" rx="18" fill="url(#panel)"/>
+  </g>
+  <text x="241" y="81" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546d">Metin üzerinde arama</text>
+
+  <text x="241" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">METİN</text>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+    <rect x="241" y="120" width="30" height="32" rx="7" fill="#e6edf5"/>
+    <text x="256" y="141" fill="#567087">A</text>
+    <rect x="275" y="120" width="30" height="32" rx="7" fill="#e6edf5"/>
+    <text x="290" y="141" fill="#567087">L</text>
+    <rect x="309" y="120" width="30" height="32" rx="7" fill="#e6edf5"/>
+    <text x="324" y="141" fill="#567087">G</text>
+    <rect x="343" y="120" width="30" height="32" rx="7" fill="#e6edf5"/>
+    <text x="358" y="141" fill="#567087">O</text>
+    <rect x="377" y="120" width="30" height="32" rx="7" fill="#ffdfe0"/>
+    <text x="392" y="141" fill="#b75b62">X</text>
+    <rect x="411" y="120" width="30" height="32" rx="7" fill="#e6edf5"/>
+    <text x="426" y="141" fill="#567087">M</text>
+    <rect x="445" y="120" width="30" height="32" rx="7" fill="#e6edf5"/>
+    <text x="460" y="141" fill="#567087">E</text>
+    <rect x="479" y="120" width="30" height="32" rx="7" fill="#e6edf5"/>
+    <text x="494" y="141" fill="#567087">T</text>
+    <rect x="513" y="120" width="30" height="32" rx="7" fill="#e6edf5"/>
+    <text x="528" y="141" fill="#567087">İ</text>
+    <rect x="547" y="120" width="30" height="32" rx="7" fill="#e6edf5"/>
+    <text x="562" y="141" fill="#567087">N</text>
+  </g>
+
+  <rect x="309" y="161" width="166" height="44" rx="11" fill="#d9eaff" stroke="#76a8d3" stroke-width="2"/>
+  <text x="321" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37688f">K</text>
+  <text x="354" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37688f">A</text>
+  <text x="388" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37688f">L</text>
+  <text x="422" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37688f">I</text>
+  <text x="456" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37688f">P</text>
+  <path d="M461 158 C450 143 423 143 404 151" fill="none" stroke="#547c9c" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="404,151 412,146 410,155" fill="#547c9c"/>
+  <text x="474" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547c9c">sağdan sola</text>
+
+  <path d="M388 213 C407 237 472 238 511 212" fill="none" stroke="#e08a68" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="511,212 502,208 505,218" fill="#e08a68"/>
+  <text x="405" y="234" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b56d52">Uyuşmazlık → sıçra</text>
+
+  <g filter="url(#soft)">
+    <rect x="208" y="263" width="224" height="35" rx="13" fill="#e4f4ea"/>
+  </g>
+  <circle cx="229" cy="280" r="9" fill="#78b996"/>
+  <path d="M225 280l3 3 6-7" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="245" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48735d">Az karşılaştırma • hızlı tarama</text>
+</svg>
