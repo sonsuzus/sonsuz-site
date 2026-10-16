@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#dff4e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6a8394" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6a8394" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="37" cy="45" r="54" fill="#cce8fa" opacity="0.28"/>
+  <circle cx="605" cy="280" r="69" fill="#ccefd8" opacity="0.32"/>
+  <circle cx="601" cy="35" r="34" fill="#f9e3ba" opacity="0.35"/>
+
+  <rect x="24" y="18" width="592" height="48" rx="16" fill="url(#header)" filter="url(#shadow)"/>
+  <rect x="42" y="31" width="28" height="22" rx="7" fill="#537da9"/>
+  <path d="M49 36h14M49 42h14M49 48h9" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="83" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2d4b62">C++ YAPICI İLKLENDİRME SIRASI</text>
+  <text x="409" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a6873">Gerçek plan: bildirim sırası</text>
+
+  <rect x="24" y="87" width="278" height="192" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="338" y="87" width="278" height="192" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+
+  <rect x="43" y="103" width="128" height="28" rx="10" fill="#fff0e5"/>
+  <circle cx="59" cy="117" r="7" fill="#e78e58"/>
+  <path d="M56 117h6M59 114v6" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="73" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c563b">Görünür liste</text>
+  <text x="190" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#907265">Beklenti</text>
+
+  <rect x="55" y="148" width="93" height="48" rx="12" fill="#e3f1ff" filter="url(#softShadow)"/>
+  <text x="72" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#32658d">value</text>
+  <text x="72" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58809b">input</text>
+
+  <path d="M153 172h35" stroke="#8ca9bd" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="188,172 180,167 180,177" fill="#8ca9bd"/>
+
+  <rect x="193" y="148" width="93" height="48" rx="12" fill="#e9e3ff" filter="url(#softShadow)"/>
+  <text x="205" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#66528f">doubled</text>
+  <text x="210" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c70a0">value × 2</text>
+
+  <rect x="54" y="218" width="232" height="39" rx="11" fill="#fff7f1"/>
+  <text x="69" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6043">Listede soldan sağa yazım</text>
+
+  <rect x="357" y="103" width="153" height="28" rx="10" fill="#e2f4e8"/>
+  <circle cx="373" cy="117" r="7" fill="#55a477"/>
+  <path d="M370 117l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="387" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397152">Sınıf bildirimi</text>
+  <text x="531" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7e69">Gerçeklik</text>
+
+  <rect x="370" y="146" width="211" height="31" rx="10" fill="#f1eaff" filter="url(#softShadow)"/>
+  <circle cx="387" cy="161.5" r="10" fill="#8069ae"/>
+  <text x="383.5" y="165.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">1</text>
+  <text x="406" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d4e7b">value bildirilir</text>
+
+  <path d="M475 180v12" stroke="#72a184" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="475,197 470,189 480,189" fill="#72a184"/>
+
+  <rect x="370" y="202" width="211" height="31" rx="10" fill="#e2f2ff" filter="url(#softShadow)"/>
+  <circle cx="387" cy="217.5" r="10" fill="#4a88b9"/>
+  <text x="383.5" y="221.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">2</text>
+  <text x="406" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386a90">doubled ilklendirilir</text>
+
+  <path d="M320 177h-11" stroke="#d48a63" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="309,177 317,172 317,182" fill="#d48a63"/>
+  <rect x="291" y="158" width="48" height="38" rx="12" fill="#ffe6d8" filter="url(#softShadow)"/>
+  <text x="302" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b75f42">≠</text>
+  <text x="296" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9d674f">sıra</text>
+
+  <rect x="43" y="289" width="554" height="19" rx="9" fill="#dbeee2"/>
+  <text x="85" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e7054">Bağımlılık kuralı:</text>
+  <text x="216" y="303" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46685a">önce bağımlı olunan üye, sonra onu kullanan üye</text>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="delegateFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6efff"/>
+      <stop offset="100%" stop-color="#d5e4fb"/>
+    </linearGradient>
+    <linearGradient id="eventFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2f6ee"/>
+      <stop offset="100%" stop-color="#ceeadf"/>
+    </linearGradient>
+    <linearGradient id="publishFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0d9"/>
+      <stop offset="100%" stop-color="#f9dfbd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6d8298" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8298" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="32" r="85" fill="#dceeff" opacity="0.42"/>
+  <circle cx="591" cy="291" r="94" fill="#ddf3dc" opacity="0.48"/>
+  <path d="M38 82 C130 30 185 59 241 28" fill="none" stroke="#c9dfef" stroke-width="2" opacity="0.55"/>
+  <path d="M405 291 C495 242 562 279 625 225" fill="none" stroke="#cce5d4" stroke-width="2" opacity="0.62"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466076">C# Temsilciler ve Olaylar</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718596">Esnek çağrı ve kontrollü bildirim</text>
+
+  <!-- Delegate area -->
+  <g filter="url(#shadow)">
+    <rect x="35" y="82" width="180" height="177" rx="20" fill="url(#delegateFill)" stroke="#b9ceed"/>
+  </g>
+  <text x="125" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355675">Temsilci</text>
+  <text x="125" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59738a">Tür güvenli metot bağı</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="54" y="150" width="55" height="42" rx="11" fill="#f8fbff" stroke="#c5d8f0"/>
+    <rect x="141" y="150" width="55" height="42" rx="11" fill="#f8fbff" stroke="#c5d8f0"/>
+    <rect x="87" y="210" width="76" height="31" rx="10" fill="#d2e4fb" stroke="#adc8e9"/>
+  </g>
+  <text x="81.5" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365b79">Topla</text>
+  <text x="168.5" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365b79">Çarp</text>
+  <text x="125" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365b79">İmza</text>
+
+  <path d="M81 193 L108 207" fill="none" stroke="#7da3c9" stroke-width="2.2"/>
+  <polygon points="108,207 100,205 104,212" fill="#7da3c9"/>
+  <path d="M169 193 L142 207" fill="none" stroke="#7da3c9" stroke-width="2.2"/>
+  <polygon points="142,207 146,212 150,205" fill="#7da3c9"/>
+  <text x="125" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#59738a">Action · Func · Koşul</text>
+
+  <!-- connector delegate to event -->
+  <path d="M220 170 C239 170 245 170 261 170" fill="none" stroke="#7e9bb4" stroke-width="2.5"/>
+  <polygon points="261,170 252,165 252,175" fill="#7e9bb4"/>
+  <text x="240" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617a8e">bağla</text>
+
+  <!-- Protected event center -->
+  <g filter="url(#shadow)">
+    <rect x="267" y="106" width="143" height="128" rx="22" fill="url(#eventFill)" stroke="#afd9c8"/>
+  </g>
+  <circle cx="338.5" cy="151" r="29" fill="#f4fcf8" stroke="#aad7c2" stroke-width="2"/>
+  <path d="M326 151 L335 160 L352 142" fill="none" stroke="#4f9a79" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="338.5" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39745c">Olay</text>
+  <text x="338.5" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56806d">Korumalı yayın</text>
+
+  <!-- publisher -->
+  <g filter="url(#softShadow)">
+    <rect x="274" y="258" width="129" height="38" rx="13" fill="url(#publishFill)" stroke="#e6c68f"/>
+  </g>
+  <text x="338.5" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805b2d">Yayıncı · İndirici</text>
+  <path d="M338 257 L338 239" fill="none" stroke="#bf9560" stroke-width="2.5"/>
+  <polygon points="338,239 333,248 343,248" fill="#bf9560"/>
+  <text x="369" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#876d4e">Tetikle</text>
+
+  <!-- fanout -->
+  <path d="M414 159 C436 159 438 105 462 105" fill="none" stroke="#69a88c" stroke-width="2.5"/>
+  <polygon points="462,105 452,102 456,112" fill="#69a88c"/>
+  <path d="M414 170 L462 170" fill="none" stroke="#69a88c" stroke-width="2.5"/>
+  <polygon points="462,170 452,165 452,175" fill="#69a88c"/>
+  <path d="M414 181 C436 181 438 235 462 235" fill="none" stroke="#69a88c" stroke-width="2.5"/>
+  <polygon points="462,235 452,232 456,242" fill="#69a88c"/>
+
+  <text x="436" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527c6c">bildir</text>
+
+  <!-- subscribers -->
+  <g filter="url(#softShadow)">
+    <rect x="469" y="78" width="135" height="54" rx="16" fill="#fffafa" stroke="#e9cbd0"/>
+    <rect x="469" y="143" width="135" height="54" rx="16" fill="#fffefa" stroke="#eadbaa"/>
+    <rect x="469" y="208" width="135" height="54" rx="16" fill="#faf9ff" stroke="#d4c8eb"/>
+  </g>
+  <circle cx="491" cy="105" r="10" fill="#f4dce0"/>
+  <path d="M487 105 L490 108 L496 101" fill="none" stroke="#b46473" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="548" y="109" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76515a">Ekran</text>
+
+  <circle cx="491" cy="170" r="10" fill="#f8ebbf"/>
+  <path d="M487 170 L490 173 L496 166" fill="none" stroke="#a88635" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="548" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#77602c">Günlük</text>
+
+  <circle cx="491" cy="235" r="10" fill="#e5def6"/>
+  <path d="M487 235 L490 238 L496 231" fill="none" stroke="#7763a1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="548" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#60517d">E-posta</text>
+
+  <text x="536" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657b82">Aboneler: +=</text>
+</svg>
