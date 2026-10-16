@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="electric" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#bdd8fb"/>
+    </linearGradient>
+    <linearGradient id="hydraulic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe8d8"/>
+      <stop offset="100%" stop-color="#f7cba9"/>
+    </linearGradient>
+    <linearGradient id="pneumatic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0f4e8"/>
+      <stop offset="100%" stop-color="#bde3cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7590a4" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="159" r="116" fill="#ffffff" opacity="0.42"/>
+  <circle cx="320" cy="159" r="82" fill="none" stroke="#c7dbe2" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <path d="M242 137 L180 93" fill="none" stroke="#91adbd" stroke-width="2"/>
+  <polygon points="180,93 190,94 185,102" fill="#91adbd"/>
+  <path d="M398 137 L461 93" fill="none" stroke="#91adbd" stroke-width="2"/>
+  <polygon points="461,93 451,94 456,102" fill="#91adbd"/>
+  <path d="M320 207 L320 246" fill="none" stroke="#91adbd" stroke-width="2"/>
+  <polygon points="320,246 315,237 325,237" fill="#91adbd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="36" width="151" height="83" rx="17" fill="url(#electric)"/>
+    <rect x="52" y="48" width="36" height="36" rx="11" fill="#ffffff" opacity="0.72"/>
+    <path d="M72 53 L62 69 L70 69 L66 80 L79 62 L71 62 Z" fill="#4e8ccf"/>
+    <text x="100" y="65" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245b91">Elektrikli</text>
+    <text x="100" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e647d">Hızlı tepki</text>
+    <rect x="53" y="96" width="119" height="7" rx="4" fill="#ffffff" opacity="0.75"/>
+    <rect x="53" y="96" width="104" height="7" rx="4" fill="#5799db"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="449" y="36" width="151" height="83" rx="17" fill="url(#hydraulic)"/>
+    <rect x="461" y="48" width="36" height="36" rx="11" fill="#ffffff" opacity="0.72"/>
+    <path d="M469 68 L489 68 M475 58 L475 78 M482 60 L490 64 L490 72 L482 76 Z" fill="none" stroke="#c77943" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="509" y="65" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#995225">Hidrolik</text>
+    <text x="509" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d614d">Yüksek kuvvet</text>
+    <rect x="462" y="96" width="119" height="7" rx="4" fill="#ffffff" opacity="0.75"/>
+    <rect x="462" y="96" width="114" height="7" rx="4" fill="#d68750"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="244" y="246" width="152" height="59" rx="17" fill="url(#pneumatic)"/>
+    <circle cx="272" cy="274" r="17" fill="#ffffff" opacity="0.72"/>
+    <circle cx="266" cy="273" r="4" fill="none" stroke="#47976e" stroke-width="1.8"/>
+    <circle cx="276" cy="267" r="5" fill="none" stroke="#47976e" stroke-width="1.8"/>
+    <circle cx="280" cy="279" r="3" fill="none" stroke="#47976e" stroke-width="1.8"/>
+    <text x="303" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#27714d">Pnömatik</text>
+    <text x="303" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#517365">Çevik hareket</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <circle cx="320" cy="159" r="62" fill="#ffffff"/>
+    <circle cx="320" cy="159" r="53" fill="#ecf5f8" stroke="#c9dde4" stroke-width="1.5"/>
+    <rect x="292" y="133" width="56" height="38" rx="12" fill="#d6e9f0"/>
+    <circle cx="305" cy="152" r="5" fill="#4c8299"/>
+    <circle cx="335" cy="152" r="5" fill="#4c8299"/>
+    <path d="M307 162 Q320 172 333 162" fill="none" stroke="#4c8299" stroke-width="2" stroke-linecap="round"/>
+    <path d="M320 133 L320 120 M313 120 L327 120" fill="none" stroke="#4c8299" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="320" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b6d">Aktüatör Seçimi</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="49" y="190" width="137" height="35" rx="12" fill="#ffffff" opacity="0.92"/>
+    <circle cx="67" cy="207" r="8" fill="#f6d36d"/>
+    <path d="M67 202 L67 212 M62 207 L72 207" stroke="#8b7134" stroke-width="1.5"/>
+    <text x="83" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536876">Güç yoğunluğu</text>
+  </g>
+  <path d="M186 207 L246 178" fill="none" stroke="#b1c5cd" stroke-width="1.5"/>
+  <polygon points="246,178 237,178 241,186" fill="#b1c5cd"/>
+
+  <g filter="url(#soft)">
+    <rect x="454" y="190" width="137" height="35" rx="12" fill="#ffffff" opacity="0.92"/>
+    <circle cx="472" cy="207" r="8" fill="#95cbe0"/>
+    <path d="M468 207 L472 203 L476 207 L472 211 Z" fill="#3d8aac"/>
+    <text x="488" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536876">Tepki hızı</text>
+  </g>
+  <path d="M454 207 L394 178" fill="none" stroke="#b1c5cd" stroke-width="1.5"/>
+  <polygon points="394,178 399,186 403,178" fill="#b1c5cd"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69808d">Ödünleşim dengesi</text>
+</svg>

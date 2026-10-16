@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="arrayFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cde3fa"/>
+    </linearGradient>
+    <linearGradient id="memoryFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddf4e7"/>
+      <stop offset="100%" stop-color="#c7ead8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7991a3" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71899b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="90" cy="38" r="58" fill="#d9edff" opacity="0.36"/>
+  <circle cx="577" cy="275" r="82" fill="#dff3d7" opacity="0.38"/>
+  <path d="M33 278 C125 238, 181 301, 270 274 S430 235, 606 277" fill="none" stroke="#bddbea" stroke-width="2" opacity="0.42"/>
+
+  <text x="34" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37566e">C DİZİLERİ</text>
+  <text x="34" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#658095">Yan yana bellek hücreleri</text>
+
+  <g filter="url(#shadow)">
+    <rect x="33" y="75" width="190" height="163" rx="18" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <text x="52" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345672">notlar[5]</text>
+  <text x="52" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71889a">int · sabit kapasite</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="52" y="146" width="30" height="42" rx="8" fill="url(#arrayFill)"/>
+    <rect x="84" y="146" width="30" height="42" rx="8" fill="url(#arrayFill)"/>
+    <rect x="116" y="146" width="30" height="42" rx="8" fill="url(#arrayFill)"/>
+    <rect x="148" y="146" width="30" height="42" rx="8" fill="url(#arrayFill)"/>
+    <rect x="180" y="146" width="30" height="42" rx="8" fill="url(#arrayFill)"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="67" y="172" fill="#244f70" font-weight="700">78</text>
+    <text x="99" y="172" fill="#244f70" font-weight="700">85</text>
+    <text x="131" y="172" fill="#244f70" font-weight="700">92</text>
+    <text x="163" y="172" fill="#244f70" font-weight="700">64</text>
+    <text x="195" y="172" fill="#244f70" font-weight="700">90</text>
+    <text x="67" y="209" fill="#607a8e">[0]</text>
+    <text x="99" y="209" fill="#607a8e">[1]</text>
+    <text x="131" y="209" fill="#607a8e">[2]</text>
+    <text x="163" y="209" fill="#607a8e">[3]</text>
+    <text x="195" y="209" fill="#607a8e">[4]</text>
+  </g>
+  <path d="M52 220 H210" fill="none" stroke="#8badc0" stroke-width="1.5"/>
+  <text x="52" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668296">Aynı türde veriler</text>
+
+  <path d="M231 157 H265" fill="none" stroke="#76a3bd" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M265 157 L257 151 L257 163 Z" fill="#76a3bd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="275" y="72" width="145" height="172" rx="20" fill="#ffffff" opacity="0.95"/>
+  </g>
+  <text x="347" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#326052">Ardışık bellek</text>
+  <text x="347" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#718a83">Başlangıç: B = 1000</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="294" y="140" width="25" height="49" rx="7" fill="url(#memoryFill)"/>
+    <rect x="320" y="140" width="25" height="49" rx="7" fill="url(#memoryFill)"/>
+    <rect x="346" y="140" width="25" height="49" rx="7" fill="url(#memoryFill)"/>
+    <rect x="372" y="140" width="25" height="49" rx="7" fill="url(#memoryFill)"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="306" y="169" fill="#2d6755" font-weight="700">0</text>
+    <text x="332" y="169" fill="#2d6755" font-weight="700">1</text>
+    <text x="358" y="169" fill="#2d6755" font-weight="700">2</text>
+    <text x="384" y="169" fill="#2d6755" font-weight="700">3</text>
+    <text x="306" y="207" fill="#6a8c80">1000</text>
+    <text x="332" y="207" fill="#6a8c80">1004</text>
+    <text x="358" y="207" fill="#6a8c80">1008</text>
+    <text x="384" y="207" fill="#6a8c80">1012</text>
+  </g>
+  <text x="347" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#547d6e">Her eleman: 4 bayt</text>
+
+  <path d="M429 157 H459" fill="none" stroke="#76a3bd" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M459 157 L451 151 L451 163 Z" fill="#76a3bd"/>
+
+  <g filter="url(#shadow)">
+    <rect x="469" y="60" width="139" height="98" rx="18" fill="#fffdf7"/>
+  </g>
+  <text x="488" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#745934">Doğrudan erişim</text>
+  <text x="488" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667e8d">Adres(A[i])</text>
+  <text x="488" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#406a83">B + i × s</text>
+  <rect x="542" y="103" width="47" height="28" rx="9" fill="#f9e7b8"/>
+  <text x="565" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#8a6428">O(1)</text>
+
+  <g filter="url(#shadow)">
+    <rect x="469" y="173" width="139" height="71" rx="18" fill="#ffffff" opacity="0.95"/>
+  </g>
+  <text x="488" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514a7b">İndeks ve işaretçi</text>
+  <text x="488" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c7691">A[i] ≡ *(A + i)</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="34" y="259" width="378" height="42" rx="14" fill="#fff5e7"/>
+  </g>
+  <circle cx="57" cy="280" r="11" fill="#f5bd6b"/>
+  <path d="M57 272 L63 289 H51 Z" fill="#ffffff"/>
+  <rect x="56" y="277" width="2" height="6" rx="1" fill="#d38431"/>
+  <circle cx="57" cy="286" r="1.3" fill="#d38431"/>
+  <text x="77" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#895d28">Sınır kontrolü</text>
+  <text x="77" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#846f52">Döngü koşulu: i &lt; adet</text>
+
+  <path d="M420 280 H457" fill="none" stroke="#89a7b7" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M457 280 L449 274 L449 286 Z" fill="#89a7b7"/>
+  <text x="477" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547487">Güvenli erişim</text>
+</svg>

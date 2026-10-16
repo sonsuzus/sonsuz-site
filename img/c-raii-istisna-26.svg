@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#ccebdc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="73" cy="58" r="44" fill="#dbeeff" opacity="0.45"/>
+  <circle cx="579" cy="267" r="64" fill="#d8f1df" opacity="0.42"/>
+  <path d="M24 276 C116 250, 145 294, 224 271 S352 243, 424 275 S548 292, 620 244" fill="none" stroke="#cce4dd" stroke-width="2" opacity="0.7"/>
+
+  <!-- kaynaklar -->
+  <g filter="url(#soft)">
+    <rect x="33" y="43" width="124" height="54" rx="16" fill="#fff4d9" stroke="#ead5a1"/>
+    <circle cx="57" cy="70" r="13" fill="#f5c978"/>
+    <path d="M51 65 h12 v10 h-12 z M53 63 h8" fill="none" stroke="#8c6c31" stroke-width="1.7"/>
+    <text x="76" y="67" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f5a61" font-weight="600">Kaynak</text>
+    <text x="76" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69767a">dosya · bellek · kilit</text>
+  </g>
+
+  <!-- constructor flow -->
+  <path d="M158 70 H213" fill="none" stroke="#7d9ba0" stroke-width="2"/>
+  <polygon points="221,70 211,64 211,76" fill="#7d9ba0"/>
+  <text x="166" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668084">kurucu edinir</text>
+
+  <!-- RAII core -->
+  <g filter="url(#shadow)">
+    <rect x="224" y="33" width="192" height="115" rx="25" fill="url(#core)" stroke="#a9cfbf" stroke-width="1.3"/>
+    <path d="M320 52 L354 64 V91 C354 111 340 123 320 132 C300 123 286 111 286 91 V64 Z" fill="#f8fffd" stroke="#65a787" stroke-width="2"/>
+    <path d="M306 89 L316 99 L335 78" fill="none" stroke="#4b9977" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="320" y="72" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345d51">RAII Nesnesi</text>
+    <text x="320" y="144" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#57756d">Ömür = kapsam</text>
+  </g>
+
+  <!-- paths split -->
+  <path d="M320 149 V174 H193 V190" fill="none" stroke="#7d9ba0" stroke-width="2"/>
+  <polygon points="193,198 187,188 199,188" fill="#7d9ba0"/>
+  <path d="M320 149 V174 H447 V190" fill="none" stroke="#7d9ba0" stroke-width="2"/>
+  <polygon points="447,198 441,188 453,188" fill="#7d9ba0"/>
+
+  <text x="201" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668084">normal çıkış</text>
+  <text x="360" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668084">istisna · yığın çözme</text>
+
+  <!-- normal / exception cards -->
+  <g filter="url(#soft)">
+    <rect x="102" y="199" width="182" height="53" rx="16" fill="#e5f1ff" stroke="#b8d8ed"/>
+    <circle cx="126" cy="225" r="12" fill="#9ac8ed"/>
+    <path d="M120 225 h12 M126 219 v12" stroke="#356c8c" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="148" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405b68">Kapsam sonu</text>
+    <text x="148" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65777e">başarılı dönüş</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="356" y="199" width="182" height="53" rx="16" fill="#fbe8eb" stroke="#ebc0c8"/>
+    <circle cx="380" cy="225" r="12" fill="#efaab4"/>
+    <path d="M380 217 v10 M380 232.5 v0.5" stroke="#8f4452" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="402" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#6e4b52">İstisna oluşur</text>
+    <text x="402" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c676b">otomatik çözülme</text>
+  </g>
+
+  <!-- merge to destruction -->
+  <path d="M193 253 V270 H320 M447 253 V270 H320 V278" fill="none" stroke="#7d9ba0" stroke-width="2"/>
+  <polygon points="320,286 314,276 326,276" fill="#7d9ba0"/>
+
+  <!-- destructor -->
+  <g filter="url(#shadow)">
+    <rect x="211" y="286" width="218" height="29" rx="14" fill="#dff1e7" stroke="#abd4bc"/>
+    <circle cx="235" cy="300" r="9" fill="#77bb92"/>
+    <path d="M231 300 l3 3 l6-7" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="252" y="304" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6852">Yıkıcı: güvenle serbest bırak</text>
+  </g>
+</svg>
