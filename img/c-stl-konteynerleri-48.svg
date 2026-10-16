@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8097dc"/>
+      <stop offset="100%" stop-color="#6078c7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#64748b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#64748b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="158" r="103" fill="#dce8fa" opacity="0.42"/>
+  <circle cx="320" cy="158" r="78" fill="none" stroke="#b8cce6" stroke-width="1.5" stroke-dasharray="5 6"/>
+
+  <path d="M279 141 L203 100" fill="none" stroke="#89a3c6" stroke-width="2.5"/>
+  <polygon points="203,100 214,99 208,108" fill="#89a3c6"/>
+  <path d="M361 141 L437 100" fill="none" stroke="#89a3c6" stroke-width="2.5"/>
+  <polygon points="437,100 426,99 432,108" fill="#89a3c6"/>
+  <path d="M320 199 L320 239" fill="none" stroke="#89a3c6" stroke-width="2.5"/>
+  <polygon points="320,239 314,228 326,228" fill="#89a3c6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="255" y="116" width="130" height="84" rx="22" fill="url(#core)"/>
+    <circle cx="320" cy="143" r="15" fill="#ffffff" opacity="0.2"/>
+    <path d="M311 143 h18 M320 134 v18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.95"/>
+    <text x="320" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">STL Konteynerleri</text>
+    <text x="320" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eaf0ff">Doğru seçim</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="38" y="38" width="174" height="119" rx="18" fill="#e5f0ff" stroke="#c2d8f4"/>
+    <rect x="54" y="53" width="53" height="25" rx="10" fill="#80aee8"/>
+    <text x="80.5" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">vector</text>
+    <text x="122" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35516f">Dinamik dizi</text>
+    <rect x="55" y="94" width="22" height="24" rx="5" fill="#a7c8f0"/>
+    <rect x="80" y="94" width="22" height="24" rx="5" fill="#91b9ea"/>
+    <rect x="105" y="94" width="22" height="24" rx="5" fill="#7fabe1"/>
+    <rect x="130" y="94" width="22" height="24" rx="5" fill="#6999d4"/>
+    <path d="M58 133 H176" stroke="#aac5e4" stroke-width="1"/>
+    <text x="58" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d5877">İndeks erişimi</text>
+    <text x="178" y="148" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3b6fa9">O(1)</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="428" y="38" width="174" height="119" rx="18" fill="#e5f7ee" stroke="#c1e4d1"/>
+    <rect x="444" y="53" width="39" height="25" rx="10" fill="#72b99a"/>
+    <text x="463.5" y="70" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">list</text>
+    <text x="497" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355f50">Çift bağlı</text>
+    <rect x="445" y="97" width="26" height="20" rx="6" fill="#9cd4ba"/>
+    <path d="M472 107 H490" stroke="#78b99b" stroke-width="2"/>
+    <polygon points="490,107 484,103 484,111" fill="#78b99b"/>
+    <rect x="492" y="97" width="26" height="20" rx="6" fill="#84c6a7"/>
+    <path d="M519 107 H537" stroke="#78b99b" stroke-width="2"/>
+    <polygon points="537,107 531,103 531,111" fill="#78b99b"/>
+    <rect x="539" y="97" width="26" height="20" rx="6" fill="#6db794"/>
+    <path d="M448 133 H576" stroke="#b0d9c4" stroke-width="1"/>
+    <text x="448" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6655">Ekleme ve silme</text>
+    <text x="576" y="148" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c8d6d">O(1)</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="202" y="238" width="236" height="66" rx="18" fill="#fff2df" stroke="#f0d5ad"/>
+    <rect x="218" y="257" width="42" height="25" rx="10" fill="#d99b58"/>
+    <text x="239" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">map</text>
+    <path d="M286 269 L302 253 L318 269 M302 253 V282 M302 269 L286 282 M302 269 L318 282" fill="none" stroke="#c48b52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="302" cy="251" r="4" fill="#d99b58"/>
+    <circle cx="286" cy="284" r="4" fill="#edbb7c"/>
+    <circle cx="318" cy="284" r="4" fill="#edbb7c"/>
+    <text x="337" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765537">Anahtar ve değer</text>
+    <text x="337" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ae7133">Arama O(log n)</text>
+  </g>
+
+  <g opacity="0.72">
+    <circle cx="238" cy="215" r="4" fill="#a3b8d3"/>
+    <circle cx="401" cy="214" r="4" fill="#a3b8d3"/>
+    <path d="M244 215 H289" stroke="#b6c7dc" stroke-width="1.5"/>
+    <path d="M351 215 H395" stroke="#b6c7dc" stroke-width="1.5"/>
+  </g>
+</svg>
