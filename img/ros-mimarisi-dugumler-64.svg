@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfe9ff"/>
+      <stop offset="100%" stop-color="#cbdcff"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="78" cy="52" r="62" fill="#d9eff1" opacity="0.42"/>
+  <circle cx="585" cy="274" r="80" fill="#e4e0fa" opacity="0.38"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41546a">ROS 2 • Modüler Robot Mimarisi</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">Düğümler standart mesajlarla haberleşir</text>
+
+  <!-- bağlantılar -->
+  <path d="M177 116 C205 116, 210 132, 235 142" fill="none" stroke="#7a9bc4" stroke-width="2.5"/>
+  <polygon points="235,142 226,136 228,147" fill="#7a9bc4"/>
+  <path d="M177 212 C204 212, 210 191, 235 179" fill="none" stroke="#78a99e" stroke-width="2.5"/>
+  <polygon points="235,179 227,176 231,187" fill="#78a99e"/>
+  <path d="M405 160 C432 160, 439 126, 460 116" fill="none" stroke="#9a84c7" stroke-width="2.5"/>
+  <polygon points="460,116 450,115 455,125" fill="#9a84c7"/>
+  <path d="M405 160 C432 160, 438 199, 460 210" fill="none" stroke="#d19172" stroke-width="2.5"/>
+  <polygon points="460,210 452,201 449,212" fill="#d19172"/>
+
+  <!-- sol düğümler -->
+  <g filter="url(#hafifGolge)">
+    <rect x="32" y="82" width="145" height="68" rx="16" fill="#fffdf8"/>
+    <rect x="45" y="96" width="35" height="35" rx="11" fill="#d8edf6"/>
+    <circle cx="62.5" cy="113.5" r="8" fill="none" stroke="#4087a5" stroke-width="2"/>
+    <circle cx="62.5" cy="113.5" r="3" fill="#4087a5"/>
+    <text x="91" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5365">Kamera</text>
+    <text x="91" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">görüntü akışı</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="32" y="178" width="145" height="68" rx="16" fill="#fffdf8"/>
+    <rect x="45" y="192" width="35" height="35" rx="11" fill="#dcf1e7"/>
+    <path d="M54 212 L59 206 L64 216 L70 204" fill="none" stroke="#438c78" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="91" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5365">Algılama</text>
+    <text x="91" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">engel bilgisi</text>
+  </g>
+
+  <!-- merkez topic -->
+  <g filter="url(#golge)">
+    <rect x="235" y="102" width="170" height="116" rx="22" fill="url(#merkez)" stroke="#b5c9ef"/>
+    <circle cx="320" cy="137" r="24" fill="#ffffff" opacity="0.82"/>
+    <path d="M308 139 C312 130, 323 128, 331 134" fill="none" stroke="#526fac" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="332,134 326,132 328,139" fill="#526fac"/>
+    <path d="M332 143 C328 152, 317 154, 309 148" fill="none" stroke="#526fac" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="308,148 314,150 312,143" fill="#526fac"/>
+    <text x="320" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40547f">Topic: /cmd_vel</text>
+    <text x="320" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66799d">Standart mesaj</text>
+  </g>
+
+  <!-- sağ düğümler -->
+  <g filter="url(#hafifGolge)">
+    <rect x="460" y="82" width="148" height="68" rx="16" fill="#fffdfd"/>
+    <rect x="473" y="96" width="35" height="35" rx="11" fill="#eee5fa"/>
+    <path d="M482 118 L488 108 L494 118 L500 108" fill="none" stroke="#7b5ca9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="519" y="110" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5365">Planlama</text>
+    <text x="519" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">rota ve hız</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="460" y="178" width="148" height="68" rx="16" fill="#fffdf8"/>
+    <rect x="473" y="192" width="35" height="35" rx="11" fill="#f9e3d7"/>
+    <circle cx="484" cy="210" r="5" fill="none" stroke="#b66d4c" stroke-width="2"/>
+    <circle cx="497" cy="210" r="5" fill="none" stroke="#b66d4c" stroke-width="2"/>
+    <path d="M489 210 L492 210" stroke="#b66d4c" stroke-width="2"/>
+    <text x="519" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c5365">Motor</text>
+    <text x="519" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718296">tekerlek kontrolü</text>
+  </g>
+
+  <!-- alt özellik kartları -->
+  <g filter="url(#hafifGolge)">
+    <rect x="106" y="269" width="126" height="30" rx="12" fill="#ffffff"/>
+    <circle cx="122" cy="284" r="5" fill="#71ad9d"/>
+    <text x="134" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506477">Gevşek bağlı</text>
+
+    <rect x="257" y="269" width="126" height="30" rx="12" fill="#ffffff"/>
+    <circle cx="273" cy="284" r="5" fill="#7898d3"/>
+    <text x="285" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506477">DDS keşfi</text>
+
+    <rect x="408" y="269" width="126" height="30" rx="12" fill="#ffffff"/>
+    <circle cx="424" cy="284" r="5" fill="#d5926f"/>
+    <text x="436" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506477">QoS ayarları</text>
+  </g>
+</svg>

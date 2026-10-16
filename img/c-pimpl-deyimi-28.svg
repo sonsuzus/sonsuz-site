@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="perde" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9f7ed8"/>
+      <stop offset="100%" stop-color="#7655b0"/>
+    </linearGradient>
+    <linearGradient id="arayuz" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ebff"/>
+      <stop offset="100%" stop-color="#bcd9f5"/>
+    </linearGradient>
+    <linearGradient id="uygulama" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff3dd"/>
+      <stop offset="100%" stop-color="#bce0c5"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60728a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60728a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="76" cy="45" r="55" fill="#cce9ed" opacity="0.35"/>
+  <circle cx="578" cy="280" r="72" fill="#d9d0f1" opacity="0.28"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46556b">Pimpl: Bağımlılıkları Perde Arkasına Taşıma</text>
+
+  <g filter="url(#golge)">
+    <rect x="28" y="61" width="152" height="206" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="104" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a45761">Doğrudan üyeler</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="49" y="105" width="110" height="42" rx="10" fill="#f8d9dc"/>
+    <text x="104" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#73414a">UserService.hpp</text>
+  </g>
+
+  <path d="M104 147 L104 163" stroke="#c7848c" stroke-width="2"/>
+  <polygon points="99,160 109,160 104,168" fill="#c7848c"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="43" y="173" width="122" height="26" rx="8" fill="#f5e8c9"/>
+    <text x="104" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#705b30">Veritabanı</text>
+    <rect x="43" y="207" width="122" height="26" rx="8" fill="#f5e8c9"/>
+    <text x="104" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#705b30">Günlükleyici</text>
+    <rect x="43" y="241" width="122" height="26" rx="8" fill="#f5e8c9"/>
+    <text x="104" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#705b30">Önbellek</text>
+  </g>
+
+  <path d="M77 168 L77 173 M104 168 L104 173 M131 168 L131 173" stroke="#c7848c" stroke-width="1.5"/>
+  <path d="M104 199 L104 207 M104 233 L104 241" stroke="#c7848c" stroke-width="1.5"/>
+  <text x="104" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a45761">Yaygın yeniden derleme</text>
+
+  <path d="M194 161 C214 161 225 161 244 161" fill="none" stroke="#7892ad" stroke-width="2.5"/>
+  <polygon points="240,155 252,161 240,167" fill="#7892ad"/>
+  <text x="222" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60728a">Pimpl</text>
+
+  <g filter="url(#golge)">
+    <rect x="261" y="61" width="151" height="206" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="336" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47708f">Açık arayüz</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="281" y="107" width="111" height="66" rx="12" fill="url(#arayuz)"/>
+    <text x="336" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355b78">UserService.hpp</text>
+    <text x="336" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355b78">Sade API</text>
+  </g>
+
+  <path d="M336 180 L336 202" stroke="#6388a6" stroke-width="2"/>
+  <polygon points="331,198 341,198 336,206" fill="#6388a6"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="284" y="211" width="104" height="35" rx="10" fill="#d7e7f5"/>
+    <text x="336" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#355b78">unique_ptr&lt;Impl&gt;</text>
+  </g>
+
+  <path d="M424 57 Q438 72 434 100 L434 259 Q438 276 424 285 L449 285 Q457 273 454 254 L454 91 Q457 70 449 57 Z" fill="url(#perde)" filter="url(#golge)"/>
+  <path d="M438 63 L438 279" stroke="#cbb6ef" stroke-width="2" opacity="0.7"/>
+  <text x="444" y="174" text-anchor="middle" transform="rotate(-90 444 174)" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Gizleme perdesi</text>
+
+  <g filter="url(#golge)">
+    <rect x="473" y="61" width="139" height="206" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="542" y="87" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b7859">Uygulama ayrıntısı</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="491" y="104" width="103" height="43" rx="11" fill="url(#uygulama)"/>
+    <text x="542" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376545">Impl .cpp</text>
+  </g>
+
+  <path d="M542 147 L542 160" stroke="#6e9a78" stroke-width="2"/>
+  <polygon points="537,157 547,157 542,165" fill="#6e9a78"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="490" y="172" width="104" height="25" rx="8" fill="#e5f1d8"/>
+    <text x="542" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416849">Veritabanı</text>
+    <rect x="490" y="205" width="104" height="25" rx="8" fill="#e5f1d8"/>
+    <text x="542" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416849">Günlükleyici</text>
+    <rect x="490" y="238" width="104" height="25" rx="8" fill="#e5f1d8"/>
+    <text x="542" y="255" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416849">Önbellek</text>
+  </g>
+
+  <path d="M516 165 L516 172 M542 165 L542 172 M568 165 L568 172" stroke="#6e9a78" stroke-width="1.5"/>
+  <text x="542" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7859">Kararlı ABI ve dar etki</text>
+</svg>
