@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="pool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce4fa"/>
+    </linearGradient>
+    <linearGradient id="data" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2f5e7"/>
+      <stop offset="100%" stop-color="#c9ecd6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60758b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="590" cy="42" r="78" fill="#dff2ec" opacity="0.46"/>
+  <circle cx="62" cy="284" r="92" fill="#e2edff" opacity="0.55"/>
+
+  <text x="30" y="35" fill="#3b5367" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Java Çoklu İş Parçacığı</text>
+  <text x="30" y="53" fill="#718496" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Görevler güvenli ve eşzamanlı ilerler</text>
+
+  <!-- Task source -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="93" width="120" height="138" rx="18" fill="#fffdf8" stroke="#e7dcae"/>
+  </g>
+  <text x="90" y="119" text-anchor="middle" fill="#596775" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Görev Kuyruğu</text>
+  <g filter="url(#softShadow)">
+    <rect x="47" y="135" width="86" height="18" rx="8" fill="#ffe8b8"/>
+    <rect x="47" y="163" width="86" height="18" rx="8" fill="#ffd9d0"/>
+    <rect x="47" y="191" width="86" height="18" rx="8" fill="#d9eaff"/>
+  </g>
+  <text x="90" y="148" text-anchor="middle" fill="#755f2e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İndirme</text>
+  <text x="90" y="176" text-anchor="middle" fill="#855d5a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İstek</text>
+  <text x="90" y="204" text-anchor="middle" fill="#526f8d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hesaplama</text>
+
+  <!-- arrow queue to pool -->
+  <path d="M151 162 H180" fill="none" stroke="#7b96aa" stroke-width="2"/>
+  <polygon points="180,162 172,157 172,167" fill="#7b96aa"/>
+
+  <!-- executor -->
+  <g filter="url(#shadow)">
+    <rect x="185" y="75" width="206" height="178" rx="22" fill="url(#pool)" stroke="#b8d4eb"/>
+  </g>
+  <text x="288" y="104" text-anchor="middle" fill="#345d7d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">ExecutorService</text>
+  <text x="288" y="123" text-anchor="middle" fill="#60809a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İş Parçacığı Havuzu</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="207" y="143" width="54" height="75" rx="14" fill="#f9fdff" stroke="#b5d4e8"/>
+    <rect x="281" y="143" width="54" height="75" rx="14" fill="#f9fdff" stroke="#b5d4e8"/>
+    <rect x="355" y="143" width="22" height="75" rx="11" fill="#f9fdff" stroke="#b5d4e8"/>
+  </g>
+  <circle cx="234" cy="165" r="10" fill="#91c5ef"/>
+  <circle cx="308" cy="165" r="10" fill="#8ed4bb"/>
+  <circle cx="366" cy="165" r="7" fill="#f3c885"/>
+  <path d="M225 186 H243 M225 194 H243" stroke="#7d9eb5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M299 186 H317 M299 194 H317" stroke="#6d9e8a" stroke-width="2" stroke-linecap="round"/>
+  <text x="234" y="238" text-anchor="middle" fill="#476b85" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İşçi 1</text>
+  <text x="308" y="238" text-anchor="middle" fill="#476b85" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İşçi 2</text>
+  <text x="366" y="238" text-anchor="middle" fill="#476b85" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">3</text>
+
+  <!-- arrows from pool -->
+  <path d="M392 162 H422" fill="none" stroke="#719c8b" stroke-width="2"/>
+  <polygon points="422,162 414,157 414,167" fill="#719c8b"/>
+
+  <!-- shared resource -->
+  <g filter="url(#shadow)">
+    <rect x="428" y="93" width="181" height="138" rx="18" fill="url(#data)" stroke="#b7ddc3"/>
+  </g>
+  <text x="518" y="119" text-anchor="middle" fill="#397058" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Paylaşılan Veri</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="457" y="137" width="122" height="42" rx="11" fill="#fbfffc" stroke="#afd4ba"/>
+  </g>
+  <path d="M477 151 v-5 a7 7 0 0 1 14 0 v5" fill="none" stroke="#4f9570" stroke-width="3" stroke-linecap="round"/>
+  <rect x="473" y="151" width="22" height="17" rx="4" fill="#72b98c"/>
+  <circle cx="484" cy="159" r="2" fill="#f7fffa"/>
+  <text x="536" y="163" text-anchor="middle" fill="#42745a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kilitli Bölge</text>
+  <text x="518" y="205" text-anchor="middle" fill="#5e8770" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sayaç ve durum</text>
+
+  <!-- lower guidance -->
+  <g filter="url(#softShadow)">
+    <rect x="182" y="273" width="276" height="30" rx="15" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="203" cy="288" r="7" fill="#82bb97"/>
+  <path d="M200 288 l2 2 l5 -6" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="219" y="292" fill="#597268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kısa kritik bölge</text>
+  <circle cx="330" cy="288" r="7" fill="#8dbce5"/>
+  <text x="345" y="292" fill="#597268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Havuzu kapat</text>
+</svg>
