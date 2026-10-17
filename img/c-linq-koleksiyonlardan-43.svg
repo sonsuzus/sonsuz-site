@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#787be8"/>
+      <stop offset="100%" stop-color="#9b83dc"/>
+    </linearGradient>
+    <linearGradient id="pipeline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c5e8fa"/>
+      <stop offset="100%" stop-color="#d9efd0"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52647a" flood-opacity="0.17"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52647a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="141" r="103" fill="#dcecf8" opacity="0.45"/>
+  <circle cx="320" cy="141" r="78" fill="#f8fbff" opacity="0.7"/>
+
+  <text x="28" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46556c">TEK DİLDE SORGULAMA</text>
+  <text x="612" y="28" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">C# LINQ</text>
+
+  <!-- Source cards -->
+  <g filter="url(#softShadow)">
+    <rect x="30" y="61" width="126" height="45" rx="13" fill="#ffffff"/>
+    <rect x="38" y="71" width="24" height="24" rx="7" fill="#bfe5fa"/>
+    <path d="M44 78h12M44 82h12M44 86h8" fill="none" stroke="#39789b" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="71" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#415369">Koleksiyon</text>
+    <text x="71" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d8a98">Bellek</text>
+
+    <rect x="30" y="119" width="126" height="45" rx="13" fill="#ffffff"/>
+    <rect x="38" y="129" width="24" height="24" rx="7" fill="#d9d3fa"/>
+    <ellipse cx="50" cy="135" rx="7" ry="3.3" fill="none" stroke="#6658a8" stroke-width="1.5"/>
+    <path d="M43 135v10c0 1.8 14 1.8 14 0v-10M43 140c0 1.8 14 1.8 14 0" fill="none" stroke="#6658a8" stroke-width="1.5"/>
+    <text x="71" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#415369">Veritabanı</text>
+    <text x="71" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d8a98">Entity</text>
+
+    <rect x="30" y="177" width="126" height="45" rx="13" fill="#ffffff"/>
+    <rect x="38" y="187" width="24" height="24" rx="7" fill="#d4efd5"/>
+    <path d="M44 192h9l4 4v10H44zM53 192v4h4M47 201h7M47 205h6" fill="none" stroke="#468458" stroke-width="1.4" stroke-linejoin="round"/>
+    <text x="71" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#415369">XML</text>
+    <text x="71" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d8a98">Belge</text>
+  </g>
+
+  <!-- incoming lines -->
+  <path d="M156 83 C187 83 193 110 228 118" fill="none" stroke="#98b8cc" stroke-width="2"/>
+  <polygon points="228,118 219,113 221,122" fill="#98b8cc"/>
+  <path d="M156 141 H224" fill="none" stroke="#9b9cc9" stroke-width="2"/>
+  <polygon points="224,141 215,136 215,146" fill="#9b9cc9"/>
+  <path d="M156 199 C187 199 193 171 228 163" fill="none" stroke="#9abf9c" stroke-width="2"/>
+  <polygon points="228,163 220,159 222,168" fill="#9abf9c"/>
+
+  <!-- LINQ core -->
+  <g filter="url(#shadow)">
+    <rect x="229" y="88" width="170" height="106" rx="25" fill="url(#core)"/>
+    <circle cx="314" cy="120" r="22" fill="#ffffff" opacity="0.18"/>
+    <path d="M302 113h10M302 120h17M302 127h12" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="329" cy="113" r="3" fill="#ffffff"/>
+    <circle cx="334" cy="120" r="3" fill="#ffffff"/>
+    <circle cx="329" cy="127" r="3" fill="#ffffff"/>
+    <text x="314" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">LINQ</text>
+    <text x="314" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f2efff">Ortak sorgu modeli</text>
+  </g>
+
+  <!-- outgoing lines -->
+  <path d="M399 117 C421 104 434 91 457 86" fill="none" stroke="#a8a6d4" stroke-width="2"/>
+  <polygon points="457,86 448,83 451,92" fill="#a8a6d4"/>
+  <path d="M399 141 H456" fill="none" stroke="#a8a6d4" stroke-width="2"/>
+  <polygon points="456,141 447,136 447,146" fill="#a8a6d4"/>
+  <path d="M399 165 C421 178 434 191 457 196" fill="none" stroke="#a8a6d4" stroke-width="2"/>
+  <polygon points="457,196 451,187 448,196" fill="#a8a6d4"/>
+
+  <!-- targets -->
+  <g filter="url(#softShadow)">
+    <rect x="458" y="61" width="151" height="45" rx="13" fill="#ffffff"/>
+    <circle cx="480" cy="83" r="12" fill="#f8d9d1"/>
+    <path d="M474 83h12M480 77v12" stroke="#a75c51" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="501" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#415369">IEnumerable</text>
+    <text x="501" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d8a98">Bellekte yürütme</text>
+
+    <rect x="458" y="119" width="151" height="45" rx="13" fill="#ffffff"/>
+    <circle cx="480" cy="141" r="12" fill="#d8e7fb"/>
+    <path d="M473 137h14M473 142h10M473 147h14" stroke="#477da8" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="501" y="138" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#415369">IQueryable</text>
+    <text x="501" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d8a98">SQL dönüşümü</text>
+
+    <rect x="458" y="177" width="151" height="45" rx="13" fill="#ffffff"/>
+    <circle cx="480" cy="199" r="12" fill="#d7efd8"/>
+    <path d="M474 199l4 4 8-9" fill="none" stroke="#4d8a5b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="501" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#415369">Sonuç kümesi</text>
+    <text x="501" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d8a98">Tür güvenli</text>
+  </g>
+
+  <!-- pipeline -->
+  <g filter="url(#softShadow)">
+    <rect x="76" y="252" width="488" height="45" rx="16" fill="#ffffff"/>
+    <rect x="85" y="260" width="101" height="29" rx="10" fill="#d9effa"/>
+    <rect x="196" y="260" width="101" height="29" rx="10" fill="#dfe5fc"/>
+    <rect x="307" y="260" width="101" height="29" rx="10" fill="#eee0fa"/>
+    <rect x="418" y="260" width="137" height="29" rx="10" fill="url(#pipeline)"/>
+    <text x="135" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#45677e">Where · Filtrele</text>
+    <text x="246" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#59689c">OrderBy · Sırala</text>
+    <text x="357" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#765589">Select · Dönüştür</text>
+    <text x="486" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4c7c63">ToList · Somutlaştır</text>
+  </g>
+  <path d="M320 194 V238" fill="none" stroke="#a6afbd" stroke-width="2"/>
+  <polygon points="320,246 315,237 325,237" fill="#a6afbd"/>
+</svg>

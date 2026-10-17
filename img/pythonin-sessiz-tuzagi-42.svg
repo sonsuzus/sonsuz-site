@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="danger" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe9e5"/>
+      <stop offset="100%" stop-color="#ffd7d0"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f7ed"/>
+      <stop offset="100%" stop-color="#d3f0df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#53708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#53708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="61" cy="42" r="72" fill="#dceeff" opacity="0.55"/>
+  <circle cx="596" cy="294" r="95" fill="#dff4df" opacity="0.5"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#29465d">DEĞİŞEBİLİR VARSAYILAN ARGÜMAN</text>
+
+  <rect x="25" y="48" width="280" height="242" rx="20" fill="#ffffff" opacity="0.82" filter="url(#shadow)"/>
+  <rect x="335" y="48" width="280" height="242" rx="20" fill="#ffffff" opacity="0.82" filter="url(#shadow)"/>
+
+  <rect x="47" y="63" width="236" height="30" rx="12" fill="url(#danger)"/>
+  <circle cx="68" cy="78" r="8" fill="#eb7669"/>
+  <path d="M65 75 L71 81 M71 75 L65 81" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="84" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#91483f">TUZAK: Ortak liste</text>
+
+  <rect x="57" y="112" width="85" height="42" rx="12" fill="#eef5ff" filter="url(#soft)"/>
+  <text x="99.5" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a5d7e">Çağrı 1</text>
+  <text x="99.5" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607d94">Elma</text>
+
+  <rect x="57" y="211" width="85" height="42" rx="12" fill="#eef5ff" filter="url(#soft)"/>
+  <text x="99.5" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a5d7e">Çağrı 2</text>
+  <text x="99.5" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607d94">Muz</text>
+
+  <path d="M143 133 C165 133 164 165 183 165" fill="none" stroke="#d87669" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="183,165 175,160 175,170" fill="#d87669"/>
+  <path d="M143 232 C165 232 164 194 183 194" fill="none" stroke="#d87669" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="183,194 175,189 175,199" fill="#d87669"/>
+
+  <rect x="183" y="145" width="82" height="70" rx="15" fill="url(#danger)" filter="url(#soft)"/>
+  <path d="M203 161 h42 M203 174 h42 M203 187 h42 M203 200 h30" stroke="#c36158" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <text x="224" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#91483f">Aynı nesne</text>
+  <text x="224" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a35b52">[Elma, Muz]</text>
+  <text x="165" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b665f">Bir kez oluşturulur</text>
+
+  <rect x="357" y="63" width="236" height="30" rx="12" fill="url(#safe)"/>
+  <circle cx="378" cy="78" r="8" fill="#51ad7a"/>
+  <path d="M374 78 L377 81 L383 74" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="394" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#357051">GÜVENLİ: None nöbetçisi</text>
+
+  <rect x="369" y="112" width="90" height="42" rx="12" fill="#f1f7ff" filter="url(#soft)"/>
+  <text x="414" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a5d7e">Çağrı 1</text>
+  <text x="414" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607d94">Elma</text>
+
+  <rect x="369" y="211" width="90" height="42" rx="12" fill="#f1f7ff" filter="url(#soft)"/>
+  <text x="414" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a5d7e">Çağrı 2</text>
+  <text x="414" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607d94">Muz</text>
+
+  <path d="M460 133 C478 133 477 132 493 132" fill="none" stroke="#55a67a" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="493,132 485,127 485,137" fill="#55a67a"/>
+  <path d="M460 232 C478 232 477 233 493 233" fill="none" stroke="#55a67a" stroke-width="2.3" stroke-linecap="round"/>
+  <polygon points="493,233 485,228 485,238" fill="#55a67a"/>
+
+  <rect x="494" y="110" width="77" height="45" rx="14" fill="#dff4e7" filter="url(#soft)"/>
+  <path d="M512 126 h40 M512 138 h28" stroke="#4e9d71" stroke-width="2" stroke-linecap="round" opacity="0.72"/>
+  <text x="532.5" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#357051">Yeni liste</text>
+  <text x="532.5" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#438261">[Elma]</text>
+
+  <rect x="494" y="210" width="77" height="45" rx="14" fill="#dff4e7" filter="url(#soft)"/>
+  <path d="M512 226 h40 M512 238 h28" stroke="#4e9d71" stroke-width="2" stroke-linecap="round" opacity="0.72"/>
+  <text x="532.5" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#357051">Yeni liste</text>
+  <text x="532.5" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#438261">[Muz]</text>
+
+  <rect x="464" y="164" width="82" height="25" rx="10" fill="#edf8f0"/>
+  <text x="505" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#438261">sepet is None</text>
+</svg>
