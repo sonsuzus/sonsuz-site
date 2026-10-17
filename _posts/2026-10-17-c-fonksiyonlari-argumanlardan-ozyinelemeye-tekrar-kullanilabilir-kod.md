@@ -12,9 +12,13 @@ tags:
   - algoritma
   - parametreler
 toc: true
+image: /img/c-fonksiyonlari-argumanlardan-91.png
 ---
 
 C programlarında her işi `main` fonksiyonuna yüklemek, bütün eşyaları tek çekmeceye doldurmaya benzer: Başlangıçta kolay görünür, fakat aradığını bulmak kısa sürede işkenceye dönüşür. Fonksiyonlar, büyük problemleri adlandırılmış ve tekrar kullanılabilir küçük parçalara ayırır. Böylece kod daha okunabilir, test edilebilir ve değiştirilebilir hâle gelir.
+
+
+![c-fonksiyonlari-argumanlardan-91](/img/c-fonksiyonlari-argumanlardan-91.svg)
 
 ``
 
