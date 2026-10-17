@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#dff5e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60748a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60748a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M0 254 C100 215 160 293 264 259 S431 219 640 270" fill="none" stroke="#cce5dc" stroke-width="2" opacity="0.5"/>
+  <path d="M0 65 C114 24 165 104 272 72 S470 24 640 73" fill="none" stroke="#d5e5f4" stroke-width="2" opacity="0.55"/>
+
+  <text x="32" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52677d" font-weight="600">SENSÖRLER</text>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="52" width="105" height="42" rx="14" fill="#ffffff"/>
+    <circle cx="49" cy="73" r="11" fill="#d9ebff"/>
+    <path d="M44 77 L48 68 L53 73 L57 67" fill="none" stroke="#527da8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="68" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536d">LiDAR</text>
+
+    <rect x="28" y="111" width="105" height="42" rx="14" fill="#ffffff"/>
+    <circle cx="49" cy="132" r="11" fill="#fce9c9"/>
+    <circle cx="49" cy="132" r="4" fill="none" stroke="#b9853e" stroke-width="1.7"/>
+    <path d="M42 124 L39 121 M56 124 L59 121 M42 140 L39 143 M56 140 L59 143" stroke="#b9853e" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="68" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536d">Kamera</text>
+
+    <rect x="28" y="170" width="105" height="42" rx="14" fill="#ffffff"/>
+    <circle cx="49" cy="191" r="11" fill="#e8defb"/>
+    <path d="M43 194 L43 188 L47 188 L49 184 L52 188 L56 188 L56 194" fill="none" stroke="#77649d" stroke-width="1.6" stroke-linejoin="round"/>
+    <text x="68" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536d">IMU</text>
+
+    <rect x="28" y="229" width="105" height="42" rx="14" fill="#ffffff"/>
+    <circle cx="49" cy="250" r="11" fill="#d8f1e5"/>
+    <path d="M42 250 H56 M45 246 V254 M53 246 V254" stroke="#428869" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="68" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38536d">Odometri</text>
+  </g>
+
+  <path d="M137 73 H174" fill="none" stroke="#8eaabd" stroke-width="1.6"/>
+  <polygon points="178,73 171,69 171,77" fill="#8eaabd"/>
+  <path d="M137 132 H163 Q170 132 174 140" fill="none" stroke="#8eaabd" stroke-width="1.6"/>
+  <polygon points="176,145 169,139 176,136" fill="#8eaabd"/>
+  <path d="M137 191 H163 Q170 191 174 181" fill="none" stroke="#8eaabd" stroke-width="1.6"/>
+  <polygon points="176,176 169,182 176,185" fill="#8eaabd"/>
+  <path d="M137 250 H174" fill="none" stroke="#8eaabd" stroke-width="1.6"/>
+  <polygon points="178,250 171,246 171,254" fill="#8eaabd"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="250" cy="160" r="76" fill="#ffffff"/>
+    <circle cx="250" cy="160" r="58" fill="url(#core)" stroke="#c5dfdc" stroke-width="1.5"/>
+    <circle cx="250" cy="160" r="31" fill="#ffffff"/>
+    <path d="M238 160 C238 153 243 148 250 148 C257 148 262 153 262 160 C262 167 257 172 250 172 C243 172 238 167 238 160Z" fill="#78a9b5"/>
+    <circle cx="245" cy="158" r="2.2" fill="#ffffff"/>
+    <circle cx="255" cy="158" r="2.2" fill="#ffffff"/>
+    <path d="M245 165 Q250 169 255 165" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="250" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345568" font-weight="600">SLAM</text>
+  </g>
+
+  <path d="M218 99 A68 68 0 0 1 292 117" fill="none" stroke="#6e9ebb" stroke-width="2"/>
+  <polygon points="296,120 287,119 291,112" fill="#6e9ebb"/>
+  <text x="258" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55778b">Tahmin</text>
+
+  <path d="M290 204 A68 68 0 0 1 213 218" fill="none" stroke="#68a889" stroke-width="2"/>
+  <polygon points="208,216 217,216 213,224" fill="#68a889"/>
+  <text x="254" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7d68">Düzeltme</text>
+
+  <path d="M330 160 H367" fill="none" stroke="#789caf" stroke-width="2"/>
+  <polygon points="372,160 364,155 364,165" fill="#789caf"/>
+  <text x="350" y="149" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587487">Eşleştirme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="380" y="61" width="226" height="198" rx="22" fill="#ffffff"/>
+    <text x="402" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52677d" font-weight="600">HARİTA VE POZLAR</text>
+
+    <path d="M414 201 L449 151 L486 175 L524 118 L568 146" fill="none" stroke="#86a4bc" stroke-width="2.2"/>
+    <path d="M449 151 L476 105 L524 118 L548 194 L486 175" fill="none" stroke="#a78fbd" stroke-width="1.8"/>
+    <path d="M414 201 L458 217 L548 194 L568 146" fill="none" stroke="#78ad94" stroke-width="1.8"/>
+
+    <path d="M414 201 Q463 109 568 146" fill="none" stroke="#e29b72" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <polygon points="570,146 562,141 563,151" fill="#e29b72"/>
+
+    <circle cx="414" cy="201" r="8" fill="#70a78a"/>
+    <circle cx="449" cy="151" r="7" fill="#92afd0"/>
+    <circle cx="476" cy="105" r="7" fill="#aa92c1"/>
+    <circle cx="486" cy="175" r="7" fill="#92afd0"/>
+    <circle cx="524" cy="118" r="7" fill="#aa92c1"/>
+    <circle cx="548" cy="194" r="7" fill="#92afd0"/>
+    <circle cx="568" cy="146" r="8" fill="#e29b72"/>
+
+    <circle cx="414" cy="201" r="3" fill="#ffffff"/>
+    <circle cx="449" cy="151" r="2.5" fill="#ffffff"/>
+    <circle cx="476" cy="105" r="2.5" fill="#ffffff"/>
+    <circle cx="486" cy="175" r="2.5" fill="#ffffff"/>
+    <circle cx="524" cy="118" r="2.5" fill="#ffffff"/>
+    <circle cx="548" cy="194" r="2.5" fill="#ffffff"/>
+    <circle cx="568" cy="146" r="3" fill="#ffffff"/>
+
+    <rect x="400" y="223" width="82" height="20" rx="10" fill="#e5f4eb"/>
+    <text x="441" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f8068">Başlangıç</text>
+    <rect x="493" y="223" width="92" height="20" rx="10" fill="#fff0e7"/>
+    <text x="539" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a66d4f">Döngü kapama</text>
+  </g>
+</svg>
