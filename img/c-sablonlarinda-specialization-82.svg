@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f3ff"/>
+      <stop offset="1" stop-color="#d8eaff"/>
+    </linearGradient>
+    <linearGradient id="violetCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2ebff"/>
+      <stop offset="1" stop-color="#e5d9ff"/>
+    </linearGradient>
+    <linearGradient id="greenCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f8ed"/>
+      <stop offset="1" stop-color="#d3f0dd"/>
+    </linearGradient>
+    <linearGradient id="orangeCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3df"/>
+      <stop offset="1" stop-color="#ffe3b9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6b7e91" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52687d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="578" cy="40" r="72" fill="#dff2ee" opacity="0.45"/>
+  <circle cx="58" cy="288" r="86" fill="#e3edff" opacity="0.52"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#334b63">C++ Şablon Seçim Sırası</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698095">Önce aşırı yükleme, sonra özelleştirme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="83" width="130" height="159" rx="18" fill="url(#blueCard)" stroke="#b9d9f2"/>
+    <rect x="181" y="83" width="130" height="159" rx="18" fill="url(#violetCard)" stroke="#d2c0f1"/>
+    <rect x="334" y="83" width="130" height="159" rx="18" fill="url(#orangeCard)" stroke="#f0cf9c"/>
+    <rect x="487" y="83" width="125" height="159" rx="18" fill="url(#greenCard)" stroke="#afdcbf"/>
+  </g>
+
+  <path d="M158 162 L177 162" stroke="#7891a7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="181,162 172,156 172,168" fill="#7891a7"/>
+  <path d="M311 162 L330 162" stroke="#7891a7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="334,162 325,156 325,168" fill="#7891a7"/>
+  <path d="M464 162 L483 162" stroke="#7891a7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="487,162 478,156 478,168" fill="#7891a7"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <text x="93" y="111" text-anchor="middle" font-weight="700" fill="#315b7c">Çağrı</text>
+    <rect x="48" y="126" width="90" height="30" rx="10" fill="#ffffff" opacity="0.78"/>
+    <text x="93" y="146" text-anchor="middle" fill="#405b71">goster(p)</text>
+    <text x="93" y="178" text-anchor="middle" fill="#5d7890">Argüman</text>
+    <rect x="52" y="188" width="82" height="28" rx="10" fill="#c9e5fb"/>
+    <text x="93" y="207" text-anchor="middle" font-weight="700" fill="#2e668b">int*</text>
+
+    <text x="246" y="111" text-anchor="middle" font-weight="700" fill="#654b91">Aday Kümesi</text>
+    <rect x="198" y="125" width="96" height="28" rx="9" fill="#ffffff" opacity="0.78"/>
+    <text x="246" y="144" text-anchor="middle" fill="#58466f">goster(T)</text>
+    <rect x="198" y="163" width="96" height="28" rx="9" fill="#ffffff" opacity="0.78"/>
+    <text x="246" y="182" text-anchor="middle" fill="#58466f">goster(T*)</text>
+    <text x="246" y="215" text-anchor="middle" fill="#80699e">Yalnız adaylar</text>
+
+    <text x="399" y="111" text-anchor="middle" font-weight="700" fill="#976427">Aşırı Yükleme</text>
+    <circle cx="399" cy="154" r="28" fill="#fffaf1" stroke="#efc784" stroke-width="2"/>
+    <path d="M388 154 L396 162 L412 143" fill="none" stroke="#d89131" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="399" y="202" text-anchor="middle" fill="#8c652d">En iyi aday</text>
+    <text x="399" y="220" text-anchor="middle" font-weight="700" fill="#8c652d">goster(T*)</text>
+
+    <text x="549" y="111" text-anchor="middle" font-weight="700" fill="#347452">Özelleştirme</text>
+    <rect x="504" y="127" width="91" height="32" rx="10" fill="#ffffff" opacity="0.82"/>
+    <text x="549" y="147" text-anchor="middle" fill="#3c6f54">Kazanana bak</text>
+    <path d="M549 170 L549 184" stroke="#65a67a" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="549,188 543,179 555,179" fill="#65a67a"/>
+    <rect x="504" y="190" width="91" height="29" rx="10" fill="#c9edd5"/>
+    <text x="549" y="209" text-anchor="middle" font-weight="700" fill="#286545">Son sürüm</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="119" y="267" width="402" height="32" rx="14" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="140" cy="283" r="8" fill="#8264ad"/>
+  <path d="M136 283 L139 286 L145 279" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="155" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6273">Özelleştirme bağımsız yarışmacı değildir.</text>
+</svg>
