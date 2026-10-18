@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="legacy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe9e6"/>
+      <stop offset="100%" stop-color="#fff6e8"/>
+    </linearGradient>
+    <linearGradient id="modern" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2f3ff"/>
+      <stop offset="100%" stop-color="#e7faee"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eee9ff"/>
+      <stop offset="100%" stop-color="#e2f7f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5a7290" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5a7290" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="37" r="70" fill="#dcefff" opacity="0.48"/>
+  <circle cx="572" cy="290" r="100" fill="#dff4df" opacity="0.42"/>
+  <path d="M24 75 C120 48 155 92 231 61" fill="none" stroke="#cde4f2" stroke-width="2" opacity="0.65"/>
+  <path d="M413 283 C500 240 553 275 628 225" fill="none" stroke="#d1ead8" stroke-width="2" opacity="0.7"/>
+
+  <text x="28" y="30" fill="#40556b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">dict sırası ve uyumluluk</text>
+  <text x="28" y="47" fill="#7890a1" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">aynı veri, farklı dolaşım davranışı</text>
+
+  <!-- Input dictionary -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="96" width="132" height="156" rx="18" fill="#ffffff"/>
+    <rect x="28" y="96" width="132" height="38" rx="18" fill="#dceeff"/>
+    <rect x="28" y="117" width="132" height="17" fill="#dceeff"/>
+  </g>
+  <text x="48" y="121" fill="#35546e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yapılandırma</text>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <rect x="43" y="146" width="101" height="22" rx="7" fill="#f2f8fd"/>
+    <text x="53" y="161" fill="#527086">host</text>
+    <text x="112" y="161" fill="#527086">1</text>
+    <rect x="43" y="174" width="101" height="22" rx="7" fill="#f2f8fd"/>
+    <text x="53" y="189" fill="#527086">port</text>
+    <text x="112" y="189" fill="#527086">2</text>
+    <rect x="43" y="202" width="101" height="22" rx="7" fill="#f2f8fd"/>
+    <text x="53" y="217" fill="#527086">debug</text>
+    <text x="112" y="217" fill="#527086">3</text>
+  </g>
+  <text x="46" y="240" fill="#91a6b5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">dict.items()</text>
+
+  <!-- fork -->
+  <path d="M160 174 H193 V103 H216" fill="none" stroke="#849daf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="216,103 208,98 208,108" fill="#849daf"/>
+  <path d="M160 174 H193 V229 H216" fill="none" stroke="#849daf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="216,229 208,224 208,234" fill="#849daf"/>
+  <circle cx="193" cy="174" r="5" fill="#849daf"/>
+
+  <!-- legacy -->
+  <g filter="url(#shadow)">
+    <rect x="222" y="68" width="184" height="101" rx="18" fill="url(#legacy)"/>
+  </g>
+  <rect x="238" y="84" width="67" height="22" rx="11" fill="#f5b7af"/>
+  <text x="250" y="99" fill="#8f4d48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">3.5 ve önce</text>
+  <text x="238" y="126" fill="#724f4b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Garanti yok</text>
+  <g filter="url(#softShadow)">
+    <rect x="238" y="136" width="146" height="20" rx="7" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <text x="248" y="150" fill="#8b5a55" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">port · host · debug</text>
+  <path d="M359 120 l9 9 m0-9 l-9 9" stroke="#d7776c" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- modern -->
+  <g filter="url(#shadow)">
+    <rect x="222" y="185" width="184" height="101" rx="18" fill="url(#modern)"/>
+  </g>
+  <rect x="238" y="201" width="65" height="22" rx="11" fill="#a9dccc"/>
+  <text x="251" y="216" fill="#356b5c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">3.7 ve sonra</text>
+  <text x="238" y="243" fill="#426e62" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Eklenme sırası</text>
+  <g filter="url(#softShadow)">
+    <rect x="238" y="253" width="146" height="20" rx="7" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <text x="248" y="267" fill="#4d766b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">host · port · debug</text>
+  <path d="M360 237 l5 5 10-12" fill="none" stroke="#55a486" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- outputs -->
+  <path d="M406 118 H435 V146 H454" fill="none" stroke="#d68a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="454,146 446,141 446,151" fill="#d68a80"/>
+  <path d="M406 236 H435 V207 H454" fill="none" stroke="#67a992" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="454,207 446,202 446,212" fill="#67a992"/>
+
+  <!-- consequence / solution -->
+  <g filter="url(#shadow)">
+    <rect x="460" y="87" width="153" height="78" rx="18" fill="#fff4f2"/>
+  </g>
+  <circle cx="483" cy="111" r="12" fill="#f5b7af"/>
+  <path d="M483 104 V113 M483 118 V119" stroke="#8f4d48" stroke-width="2" stroke-linecap="round"/>
+  <text x="504" y="112" fill="#814e4a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Uyumluluk riski</text>
+  <text x="477" y="141" fill="#9a6c66" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Test · API · dosya</text>
+
+  <g filter="url(#shadow)">
+    <rect x="460" y="183" width="153" height="103" rx="18" fill="url(#safe)"/>
+  </g>
+  <text x="478" y="210" fill="#4e5780" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Açık çözüm</text>
+  <rect x="476" y="222" width="121" height="22" rx="8" fill="#ffffff" opacity="0.82"/>
+  <text x="488" y="237" fill="#626b91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">OrderedDict</text>
+  <rect x="476" y="251" width="121" height="22" rx="8" fill="#ffffff" opacity="0.82"/>
+  <text x="488" y="266" fill="#626b91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">sorted(anahtarlar)</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7186c8"/>
+      <stop offset="100%" stop-color="#536aa9"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#52627d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#52627d" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="63" cy="46" r="48" fill="#cfe8ed" opacity="0.42"/>
+  <circle cx="586" cy="273" r="72" fill="#dce9be" opacity="0.34"/>
+  <circle cx="570" cy="45" r="25" fill="#e5d9f2" opacity="0.48"/>
+
+  <path d="M266 151 C234 130 218 111 195 94" fill="none" stroke="#9aaac2" stroke-width="2.5"/>
+  <polygon points="194,88 201,97 190,98" fill="#9aaac2"/>
+  <path d="M376 151 C409 130 426 111 448 94" fill="none" stroke="#9aaac2" stroke-width="2.5"/>
+  <polygon points="447,88 455,98 443,97" fill="#9aaac2"/>
+  <path d="M321 209 L321 236" fill="none" stroke="#9aaac2" stroke-width="2.5"/>
+  <polygon points="315,234 327,234 321,244" fill="#9aaac2"/>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="54" y="38" width="187" height="112" rx="20" fill="#fff7eb"/>
+    <rect x="54" y="38" width="187" height="9" rx="4.5" fill="#efa959"/>
+    <circle cx="82" cy="72" r="16" fill="#f8c889"/>
+    <path d="M76 72 L81 77 L89 67" fill="none" stroke="#985b1c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="108" y="69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#554126">enum</text>
+    <text x="108" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735c3e">Sınırlı değer kümesi</text>
+    <rect x="73" y="108" width="44" height="23" rx="8" fill="#f9e0bc"/>
+    <text x="83" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#84551d">Tipli</text>
+    <rect x="123" y="108" width="96" height="23" rx="8" fill="#f9e0bc"/>
+    <text x="133" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#84551d">Davranışlı</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="399" y="38" width="187" height="112" rx="20" fill="#f0edfb"/>
+    <rect x="399" y="38" width="187" height="9" rx="4.5" fill="#9d8bc7"/>
+    <circle cx="427" cy="72" r="16" fill="#cfc5e9"/>
+    <text x="419" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#5a487f">@</text>
+    <text x="453" y="69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514269">Anotasyon</text>
+    <text x="453" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b5d81">Kod üstü metadata</text>
+    <rect x="418" y="108" width="69" height="23" rx="8" fill="#ded7f1"/>
+    <text x="428" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5b4a80">Runtime</text>
+    <rect x="493" y="108" width="72" height="23" rx="8" fill="#ded7f1"/>
+    <text x="503" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5b4a80">Reflection</text>
+  </g>
+
+  <g filter="url(#golge)">
+    <rect x="251" y="117" width="140" height="93" rx="27" fill="url(#merkez)"/>
+    <circle cx="321" cy="145" r="17" fill="#ffffff" opacity="0.18"/>
+    <path d="M313 145 L319 151 L330 138" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="321" y="176" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Java Tip Sistemi</text>
+    <text x="321" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e8edff">Güçlü üçlü</text>
+  </g>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="212" y="244" width="218" height="57" rx="19" fill="#eaf7f1"/>
+    <rect x="212" y="244" width="218" height="8" rx="4" fill="#69b899"/>
+    <circle cx="240" cy="273" r="15" fill="#bde4d2"/>
+    <text x="231" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2a765c">↔</text>
+    <text x="266" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315e50">Autoboxing</text>
+    <text x="266" y="287" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527a6d">İlkel tip ⇄ nesne</text>
+    <rect x="371" y="262" width="40" height="22" rx="8" fill="#c9eadc"/>
+    <text x="381" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#287057">int</text>
+  </g>
+
+  <path d="M241 94 C252 94 258 99 266 106" fill="none" stroke="#d3a260" stroke-width="1.5" opacity="0.72"/>
+  <path d="M399 94 C387 94 382 99 375 106" fill="none" stroke="#9d8bc7" stroke-width="1.5" opacity="0.72"/>
+  <path d="M321 301 L321 309" fill="none" stroke="#6fb695" stroke-width="1.5" opacity="0.72"/>
+</svg>
