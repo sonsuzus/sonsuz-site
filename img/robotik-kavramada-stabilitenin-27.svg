@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#bcd5f1"/>
+    </linearGradient>
+    <linearGradient id="good" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f4dc"/>
+      <stop offset="100%" stop-color="#b5e6c2"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#68809a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7790a5" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="57" r="45" fill="#dff2ed" opacity="0.55"/>
+  <circle cx="577" cy="271" r="70" fill="#dceaff" opacity="0.52"/>
+
+  <text x="34" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38506a">Temas Seçimi ve Stabilite</text>
+  <line x1="34" y1="40" x2="606" y2="40" stroke="#c9dbe2" stroke-width="1"/>
+
+  <!-- Aday temaslar -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="77" width="128" height="185" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="51" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6078">Aday Temaslar</text>
+  <text x="51" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728399">Nokta ve normal</text>
+
+  <g filter="url(#soft)">
+    <rect x="52" y="145" width="34" height="34" rx="10" fill="#ffe5d5"/>
+    <circle cx="69" cy="162" r="6" fill="#ec8e64"/>
+    <path d="M76 154 L83 147 L80 156 Z" fill="#c66e4d"/>
+    <rect x="104" y="145" width="34" height="34" rx="10" fill="#e0edff"/>
+    <circle cx="121" cy="162" r="6" fill="#6e9bdb"/>
+    <path d="M114 154 L107 147 L110 156 Z" fill="#507ebc"/>
+    <rect x="52" y="200" width="34" height="34" rx="10" fill="#e5f5d9"/>
+    <circle cx="69" cy="217" r="6" fill="#7dae78"/>
+    <path d="M77 223 L85 229 L76 227 Z" fill="#5e9364"/>
+    <rect x="104" y="200" width="34" height="34" rx="10" fill="#f1e2fa"/>
+    <circle cx="121" cy="217" r="6" fill="#a779be"/>
+    <path d="M113 223 L105 229 L114 227 Z" fill="#825a9a"/>
+  </g>
+
+  <!-- Flow -->
+  <path d="M170 169 L201 169" fill="none" stroke="#91a8bd" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="201,169 193,164 193,174" fill="#91a8bd"/>
+
+  <!-- Central grasp -->
+  <g filter="url(#shadow)">
+    <rect x="208" y="66" width="225" height="202" rx="22" fill="#ffffff"/>
+  </g>
+  <text x="229" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425d76">Kavrama Geometrisi</text>
+
+  <!-- friction cones -->
+  <path d="M275 159 L233 128 L233 190 Z" fill="#ffd8c7" opacity="0.64"/>
+  <path d="M366 159 L408 128 L408 190 Z" fill="#d8e9ff" opacity="0.76"/>
+  <path d="M275 159 L233 128 M275 159 L233 190" fill="none" stroke="#df9678" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M366 159 L408 128 M366 159 L408 190" fill="none" stroke="#719cd0" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- cup -->
+  <path d="M281 111 Q320 96 359 111 L352 211 Q320 228 288 211 Z" fill="url(#cup)" stroke="#6d98c4" stroke-width="2"/>
+  <ellipse cx="320" cy="111" rx="39" ry="12" fill="#e9f4ff" stroke="#6d98c4" stroke-width="2"/>
+  <ellipse cx="320" cy="111" rx="27" ry="7" fill="#bfd8ee" opacity="0.72"/>
+  <circle cx="320" cy="163" r="4.5" fill="#516e89"/>
+  <path d="M312 163 L328 163 M320 155 L320 171" stroke="#516e89" stroke-width="1.2"/>
+
+  <!-- fingers -->
+  <g filter="url(#soft)">
+    <rect x="231" y="143" width="38" height="34" rx="13" fill="#f6b18d"/>
+    <rect x="371" y="143" width="38" height="34" rx="13" fill="#93bce9"/>
+  </g>
+  <circle cx="275" cy="160" r="6" fill="#ec7751" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="366" cy="160" r="6" fill="#4f90d5" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- normal force arrows -->
+  <path d="M255 160 L269 160" stroke="#bd6249" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="275,160 267,156 267,164" fill="#bd6249"/>
+  <path d="M386 160 L372 160" stroke="#477db8" stroke-width="2.4" stroke-linecap="round"/>
+  <polygon points="366,160 374,156 374,164" fill="#477db8"/>
+
+  <text x="237" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c8da0">Sürtünme konisi</text>
+  <text x="286" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e647a">Kuvvet + tork</text>
+
+  <!-- Flow to quality -->
+  <path d="M443 169 L472 169" fill="none" stroke="#91a8bd" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="472,169 464,164 464,174" fill="#91a8bd"/>
+
+  <!-- quality stack -->
+  <g filter="url(#shadow)">
+    <rect x="480" y="77" width="128" height="185" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="500" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4a6078">Kalite Değeri</text>
+
+  <g filter="url(#soft)">
+    <rect x="497" y="123" width="94" height="31" rx="10" fill="#e8f0ff"/>
+    <rect x="497" y="163" width="94" height="31" rx="10" fill="#fff0db"/>
+    <rect x="497" y="203" width="94" height="39" rx="11" fill="url(#good)"/>
+  </g>
+  <text x="510" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53749a">Karşıtlık</text>
+  <text x="510" y="183" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7045">Mesafe</text>
+  <text x="510" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48775a">Stabil kavrama</text>
+  <path d="M566 214 L571 219 L580 209" fill="none" stroke="#43845a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- lower notes -->
+  <path d="M320 268 L320 286" stroke="#a4b9bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <g filter="url(#soft)">
+    <rect x="235" y="286" width="170" height="23" rx="11" fill="#eef6f3"/>
+  </g>
+  <text x="258" y="302" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54716d">Geniş taban, dengeli tork</text>
+</svg>
