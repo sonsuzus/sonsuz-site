@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="zemin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ee"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f3e4"/>
+    </linearGradient>
+    <linearGradient id="hedef" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c8"/>
+      <stop offset="100%" stop-color="#ffe0bb"/>
+    </linearGradient>
+    <filter id="golge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d87a0" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6d87a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#zemin)"/>
+  <circle cx="319" cy="161" r="116" fill="#d7ecfa" opacity="0.26"/>
+  <circle cx="319" cy="161" r="83" fill="none" stroke="#9fc9db" stroke-width="1.5" stroke-dasharray="4 7" opacity="0.7"/>
+  <circle cx="319" cy="161" r="113" fill="none" stroke="#b5d8c3" stroke-width="1.2" stroke-dasharray="3 8" opacity="0.65"/>
+
+  <!-- Bağlantı ağı -->
+  <g fill="none" stroke="#7daabd" stroke-width="2" stroke-linecap="round" opacity="0.72">
+    <path d="M153 87 L245 126"/>
+    <path d="M153 87 L121 168"/>
+    <path d="M121 168 L210 211"/>
+    <path d="M245 126 L319 79"/>
+    <path d="M245 126 L284 151"/>
+    <path d="M319 79 L405 113"/>
+    <path d="M405 113 L463 70"/>
+    <path d="M405 113 L437 190"/>
+    <path d="M284 151 L210 211"/>
+    <path d="M284 151 L363 191"/>
+    <path d="M363 191 L437 190"/>
+    <path d="M363 191 L318 260"/>
+    <path d="M210 211 L318 260"/>
+    <path d="M437 190 L514 221"/>
+  </g>
+
+  <!-- Ortak belirme alanı -->
+  <g filter="url(#golge)">
+    <rect x="255" y="133" width="129" height="58" rx="22" fill="url(#merkez)" stroke="#8bb9c7" stroke-width="1.4"/>
+    <circle cx="281" cy="162" r="13" fill="#8fc8d9"/>
+    <path d="M274 162 L280 168 L290 155" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="334" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31576b" font-weight="600">Beliren</text>
+    <text x="334" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31576b">kolektif düzen</text>
+  </g>
+
+  <!-- Veri yönleri -->
+  <g fill="none" stroke="#709eb5" stroke-width="1.6" stroke-linecap="round">
+    <path d="M239 132 L250 139"/>
+    <path d="M392 121 L382 137"/>
+    <path d="M237 204 L255 184"/>
+    <path d="M397 197 L383 183"/>
+  </g>
+  <g fill="#709eb5">
+    <polygon points="250,139 242,138 246,132"/>
+    <polygon points="382,137 383,129 390,134"/>
+    <polygon points="255,184 253,192 247,187"/>
+    <polygon points="383,183 390,186 385,190"/>
+  </g>
+
+  <!-- Robot 1 -->
+  <g filter="url(#hafifGolge)">
+    <rect x="111" y="65" width="84" height="43" rx="15" fill="#e4dffd" stroke="#a99bd5" stroke-width="1.3"/>
+    <circle cx="131" cy="86.5" r="10" fill="#a99bd5"/>
+    <circle cx="128" cy="84" r="2.2" fill="#ffffff"/>
+    <circle cx="134" cy="84" r="2.2" fill="#ffffff"/>
+    <path d="M126 91 Q131 95 136 91" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="162" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554c7c">Robot</text>
+  </g>
+
+  <!-- Robot 2 -->
+  <g filter="url(#hafifGolge)">
+    <rect x="79" y="146" width="84" height="43" rx="15" fill="#d9f1ed" stroke="#7dbab0" stroke-width="1.3"/>
+    <circle cx="99" cy="167.5" r="10" fill="#7dbab0"/>
+    <circle cx="96" cy="165" r="2.2" fill="#ffffff"/>
+    <circle cx="102" cy="165" r="2.2" fill="#ffffff"/>
+    <path d="M94 172 Q99 176 104 172" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="130" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#376d68">Robot</text>
+  </g>
+
+  <!-- Robot 3 -->
+  <g filter="url(#hafifGolge)">
+    <rect x="168" y="190" width="84" height="43" rx="15" fill="#ffead8" stroke="#d7a77c" stroke-width="1.3"/>
+    <circle cx="188" cy="211.5" r="10" fill="#d7a77c"/>
+    <circle cx="185" cy="209" r="2.2" fill="#ffffff"/>
+    <circle cx="191" cy="209" r="2.2" fill="#ffffff"/>
+    <path d="M183 216 Q188 220 193 216" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="219" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#795236">Robot</text>
+  </g>
+
+  <!-- Robot 4 -->
+  <g filter="url(#hafifGolge)">
+    <rect x="277" y="55" width="84" height="43" rx="15" fill="#dceafe" stroke="#86afd0" stroke-width="1.3"/>
+    <circle cx="297" cy="76.5" r="10" fill="#86afd0"/>
+    <circle cx="294" cy="74" r="2.2" fill="#ffffff"/>
+    <circle cx="300" cy="74" r="2.2" fill="#ffffff"/>
+    <path d="M292 81 Q297 85 302 81" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="328" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365c7c">Robot</text>
+  </g>
+
+  <!-- Robot 5 -->
+  <g filter="url(#hafifGolge)">
+    <rect x="368" y="91" width="84" height="43" rx="15" fill="#e3e8fb" stroke="#97a6d1" stroke-width="1.3"/>
+    <circle cx="388" cy="112.5" r="10" fill="#97a6d1"/>
+    <circle cx="385" cy="110" r="2.2" fill="#ffffff"/>
+    <circle cx="391" cy="110" r="2.2" fill="#ffffff"/>
+    <path d="M383 117 Q388 121 393 117" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="419" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c557e">Robot</text>
+  </g>
+
+  <!-- Robot 6 -->
+  <g filter="url(#hafifGolge)">
+    <rect x="401" y="169" width="84" height="43" rx="15" fill="#d9f1ed" stroke="#7dbab0" stroke-width="1.3"/>
+    <circle cx="421" cy="190.5" r="10" fill="#7dbab0"/>
+    <circle cx="418" cy="188" r="2.2" fill="#ffffff"/>
+    <circle cx="424" cy="188" r="2.2" fill="#ffffff"/>
+    <path d="M416 195 Q421 199 426 195" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="452" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#376d68">Robot</text>
+  </g>
+
+  <!-- Robot 7 -->
+  <g filter="url(#hafifGolge)">
+    <rect x="277" y="239" width="84" height="43" rx="15" fill="#e4dffd" stroke="#a99bd5" stroke-width="1.3"/>
+    <circle cx="297" cy="260.5" r="10" fill="#a99bd5"/>
+    <circle cx="294" cy="258" r="2.2" fill="#ffffff"/>
+    <circle cx="300" cy="258" r="2.2" fill="#ffffff"/>
+    <path d="M292 265 Q297 269 302 265" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="328" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554c7c">Robot</text>
+  </g>
+
+  <!-- Çevresel iz -->
+  <g opacity="0.9">
+    <path d="M480 76 C515 92 513 129 493 145 C477 158 496 174 521 184" fill="none" stroke="#e0a55b" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 8"/>
+    <circle cx="480" cy="76" r="5" fill="#f3b65e"/>
+    <text x="521" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#916330">Çevresel iz</text>
+  </g>
+
+  <!-- Hedef -->
+  <g filter="url(#golge)">
+    <rect x="493" y="205" width="106" height="53" rx="18" fill="url(#hedef)" stroke="#daa56a" stroke-width="1.3"/>
+    <circle cx="519" cy="231.5" r="14" fill="none" stroke="#dc8f55" stroke-width="2"/>
+    <circle cx="519" cy="231.5" r="7" fill="none" stroke="#dc8f55" stroke-width="2"/>
+    <circle cx="519" cy="231.5" r="2.5" fill="#dc8f55"/>
+    <text x="558" y="236" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805132" font-weight="600">Görev</text>
+  </g>
+
+  <!-- Hedefe dağıtık yönelim -->
+  <path d="M484 212 C492 218 497 221 503 224" fill="none" stroke="#d78d55" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="503,224 496,218 495,226" fill="#d78d55"/>
+
+  <!-- Alt açıklama -->
+  <g filter="url(#hafifGolge)">
+    <rect x="52" y="281" width="536" height="25" rx="12" fill="#ffffff" opacity="0.82"/>
+    <circle cx="76" cy="293.5" r="5" fill="#86afd0"/>
+    <text x="89" y="298" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466174">Yerel algı</text>
+    <path d="M167 293.5 L196 293.5" stroke="#86aeba" stroke-width="1.5"/>
+    <polygon points="196,293.5 189,289.5 189,297.5" fill="#86aeba"/>
+    <circle cx="221" cy="293.5" r="5" fill="#7dbab0"/>
+    <text x="234" y="298" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466174">Komşu etkileşimi</text>
+    <path d="M366 293.5 L395 293.5" stroke="#86aeba" stroke-width="1.5"/>
+    <polygon points="395,293.5 388,289.5 388,297.5" fill="#86aeba"/>
+    <circle cx="420" cy="293.5" r="5" fill="#d7a77c"/>
+    <text x="433" y="298" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466174">Ortak davranış</text>
+  </g>
+</svg>

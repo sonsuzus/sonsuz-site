@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeeff"/>
+      <stop offset="100%" stop-color="#c8e2f7"/>
+    </linearGradient>
+    <linearGradient id="greenCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcf5e4"/>
+      <stop offset="100%" stop-color="#c7ead3"/>
+    </linearGradient>
+    <linearGradient id="redCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe7e5"/>
+      <stop offset="100%" stop-color="#f8ccc9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6a87a0" flood-opacity="0.19"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5d7890" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="53" cy="42" r="82" fill="#d9f0f7" opacity="0.42"/>
+  <circle cx="601" cy="278" r="92" fill="#dff1d5" opacity="0.5"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34526a">HERE-DOCUMENT · SINIRLAYICI EŞLEŞMESİ</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="73" width="160" height="172" rx="18" fill="url(#blueCard)"/>
+  </g>
+  <text x="50" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#244b68">Açılış</text>
+  <rect x="49" y="115" width="122" height="35" rx="9" fill="#ffffff" opacity="0.82"/>
+  <text x="110" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315675">&lt;&lt;EOF</text>
+  <path d="M62 174 H158" stroke="#719aba" stroke-width="2" stroke-linecap="round"/>
+  <path d="M62 188 H144" stroke="#719aba" stroke-width="2" stroke-linecap="round"/>
+  <path d="M62 202 H152" stroke="#719aba" stroke-width="2" stroke-linecap="round"/>
+  <text x="50" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42677f">Çok satırlı girdi</text>
+
+  <path d="M191 159 H236" stroke="#688aa2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="236,159 227,153 227,165" fill="#688aa2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="239" y="91" width="162" height="137" rx="20" fill="#ffffff"/>
+  </g>
+  <circle cx="320" cy="132" r="25" fill="#e8f4ff" stroke="#91b6d0" stroke-width="1.5"/>
+  <text x="320" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#35657f">=</text>
+  <text x="320" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34556a">Karşılaştırma</text>
+  <text x="320" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7483">Satır = EOF ?</text>
+
+  <path d="M402 146 C429 146 431 95 453 95" fill="none" stroke="#df827c" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="453,95 443,91 446,101" fill="#df827c"/>
+  <path d="M402 177 C428 177 430 230 453 230" fill="none" stroke="#62a685" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="453,230 444,224 444,236" fill="#62a685"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="455" y="52" width="155" height="94" rx="16" fill="url(#redCard)"/>
+  </g>
+  <circle cx="480" cy="79" r="12" fill="#fff5f4"/>
+  <path d="M475 74 L485 84 M485 74 L475 84" stroke="#d66560" stroke-width="2" stroke-linecap="round"/>
+  <text x="501" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8c4545">Eşleşmez</text>
+  <rect x="473" y="99" width="119" height="25" rx="7" fill="#fffafa" opacity="0.8"/>
+  <text x="532" y="117" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#954c49">boşluk + EOF</text>
+  <text x="532" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a85c57">Okuma sürer</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="455" y="185" width="155" height="94" rx="16" fill="url(#greenCard)"/>
+  </g>
+  <circle cx="480" cy="212" r="12" fill="#f7fff9"/>
+  <path d="M474 212 L478 216 L486 207" fill="none" stroke="#419668" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="501" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397150">Eşleşir</text>
+  <rect x="473" y="232" width="119" height="25" rx="7" fill="#fbfffc" opacity="0.85"/>
+  <text x="532" y="250" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f7355">EOF satır başında</text>
+  <text x="532" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c8462">Girdi biter</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="206" y="258" width="219" height="42" rx="14" fill="#fff8d9"/>
+  </g>
+  <path d="M222 279 H239" stroke="#ba9550" stroke-width="2" stroke-linecap="round"/>
+  <path d="M227 274 L222 279 L227 284" fill="none" stroke="#ba9550" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="250" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#80652e">&lt;&lt;-EOF</text>
+  <text x="326" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80652e">yalnızca sekmeleri temizler</text>
+</svg>

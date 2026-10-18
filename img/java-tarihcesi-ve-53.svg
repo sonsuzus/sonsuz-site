@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="jvm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7ddff"/>
+      <stop offset="100%" stop-color="#d7efff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7d91a6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#8596a5" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="50" cy="42" r="66" fill="#d9eff1" opacity="0.45"/>
+  <circle cx="603" cy="285" r="82" fill="#dcebd2" opacity="0.48"/>
+  <path d="M24 267 C125 238 160 291 250 262 S420 231 614 261" fill="none" stroke="#c9e1d8" stroke-width="2" opacity="0.55"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536a">JAVA: BİR KEZ YAZ, HER YERDE ÇALIŞTIR</text>
+
+  <!-- Source -->
+  <g filter="url(#shadow)">
+    <rect x="29" y="103" width="118" height="112" rx="20" fill="#fffdf8"/>
+    <rect x="40" y="118" width="96" height="14" rx="7" fill="#9ad9c0"/>
+    <rect x="40" y="142" width="72" height="6" rx="3" fill="#d4e5df"/>
+    <rect x="40" y="155" width="84" height="6" rx="3" fill="#d4e5df"/>
+    <rect x="40" y="168" width="54" height="6" rx="3" fill="#d4e5df"/>
+    <path d="M107 184 L117 193 L107 202" fill="none" stroke="#50a982" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="88" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6470">Kaynak Kod</text>
+  <text x="88" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637684">.java</text>
+
+  <!-- Arrow 1 -->
+  <path d="M153 159 H184" fill="none" stroke="#6993a0" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="184,159 175,153 175,165" fill="#6993a0"/>
+  <g filter="url(#softShadow)">
+    <rect x="155" y="125" width="48" height="23" rx="11" fill="#fff1c9"/>
+  </g>
+  <text x="179" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#876824">javac</text>
+
+  <!-- Bytecode -->
+  <g filter="url(#shadow)">
+    <rect x="201" y="103" width="104" height="112" rx="20" fill="#fffdfd"/>
+    <rect x="221" y="119" width="64" height="53" rx="8" fill="#d2e9ff"/>
+    <path d="M232 132 H275 M232 143 H266 M232 154 H271" stroke="#5385aa" stroke-width="4" stroke-linecap="round"/>
+    <path d="M237 183 H269" stroke="#9eb7cb" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="253" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6470">Bayt Kod</text>
+  <text x="253" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637684">.class</text>
+
+  <!-- Arrow 2 -->
+  <path d="M311 159 H337" fill="none" stroke="#6993a0" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="337,159 328,153 328,165" fill="#6993a0"/>
+
+  <!-- JVM core -->
+  <g filter="url(#shadow)">
+    <rect x="344" y="67" width="166" height="184" rx="26" fill="url(#jvm)" stroke="#c5b6e7" stroke-width="1.5"/>
+    <rect x="362" y="82" width="130" height="28" rx="14" fill="#7f71b5"/>
+    <text x="427" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">JVM</text>
+
+    <rect x="362" y="120" width="62" height="42" rx="12" fill="#fbfaff"/>
+    <rect x="431" y="120" width="61" height="42" rx="12" fill="#fbfaff"/>
+    <rect x="362" y="170" width="62" height="42" rx="12" fill="#fbfaff"/>
+    <rect x="431" y="170" width="61" height="42" rx="12" fill="#fbfaff"/>
+
+    <text x="393" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#596276">Sınıf</text>
+    <text x="393" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596276">Yükleyici</text>
+    <text x="461" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#596276">Doğrulama</text>
+    <text x="393" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#596276">JIT</text>
+    <text x="393" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596276">Motoru</text>
+    <text x="461" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#596276">Çöp</text>
+    <text x="461" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596276">Toplayıcı</text>
+
+    <rect x="374" y="222" width="106" height="16" rx="8" fill="#b8d8d0"/>
+    <text x="427" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#406b64">Bellek Alanları</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M516 159 H538" fill="none" stroke="#6993a0" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="538,159 529,153 529,165" fill="#6993a0"/>
+
+  <!-- Platforms -->
+  <g filter="url(#shadow)">
+    <rect x="544" y="78" width="71" height="162" rx="22" fill="#fffdf8"/>
+    <rect x="557" y="94" width="45" height="30" rx="9" fill="#ffd8cf"/>
+    <rect x="557" y="136" width="45" height="30" rx="9" fill="#d5eaff"/>
+    <rect x="557" y="178" width="45" height="30" rx="9" fill="#d9efd2"/>
+    <path d="M572 112 H587 M580 104 V119" stroke="#ba7066" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="568" y="144" width="23" height="14" rx="2" fill="none" stroke="#5685aa" stroke-width="2"/>
+    <path d="M575 163 H585" stroke="#5685aa" stroke-width="2" stroke-linecap="round"/>
+    <path d="M570 193 H589 V202 H570 Z" fill="none" stroke="#5d996a" stroke-width="2"/>
+    <path d="M577 211 H584" stroke="#5d996a" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="580" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6470">Her Sistem</text>
+
+  <!-- evolution motif -->
+  <path d="M72 278 C146 247 210 288 281 272 C350 257 441 278 536 272" fill="none" stroke="#83b69c" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="72" cy="278" r="5" fill="#78ae91"/>
+  <circle cx="208" cy="279" r="5" fill="#78ae91"/>
+  <circle cx="360" cy="267" r="5" fill="#78ae91"/>
+  <circle cx="536" cy="272" r="5" fill="#78ae91"/>
+  <text x="72" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587266">Oak</text>
+  <text x="208" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587266">Java 1995</text>
+  <text x="360" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587266">JIT</text>
+  <text x="536" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587266">Platform</text>
+</svg>

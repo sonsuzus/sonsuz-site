@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="risk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3dd"/>
+      <stop offset="100%" stop-color="#ffe4d3"/>
+    </linearGradient>
+    <linearGradient id="alarm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffdce0"/>
+      <stop offset="100%" stop-color="#ffc4cc"/>
+    </linearGradient>
+    <linearGradient id="catch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff6f2"/>
+      <stop offset="100%" stop-color="#c6ebe4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6b8291" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6b8291" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M30 79 C118 40 192 49 248 94" fill="none" stroke="#d9e8ed" stroke-width="2"/>
+  <path d="M387 249 C474 284 552 271 615 226" fill="none" stroke="#dcebe0" stroke-width="2"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405463">C++ İSTİSNA YÖNETİMİ</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718491">Kontrollü hata akışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="103" width="142" height="105" rx="18" fill="url(#risk)" stroke="#f1c78d"/>
+    <circle cx="57" cy="130" r="14" fill="#fffaf1" stroke="#edbd76"/>
+    <path d="M57 121 L57 133" stroke="#d78348" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="57" cy="138" r="1.8" fill="#d78348"/>
+    <text x="81" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#684d36">try</text>
+    <text x="48" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#805f43">Riskli işlem</text>
+    <text x="48" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7658">geçersiz veri</text>
+  </g>
+
+  <path d="M174 155 L214 155" fill="none" stroke="#bd9b81" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="214,155 205,150 205,160" fill="#bd9b81"/>
+
+  <g filter="url(#shadow)">
+    <rect x="215" y="82" width="185" height="147" rx="24" fill="url(#alarm)" stroke="#efaab4"/>
+    <circle cx="307.5" cy="130" r="34" fill="#fff7f7" stroke="#ec9aa6" stroke-width="2"/>
+    <path d="M308 108 L308 132" stroke="#d85e70" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="308" cy="144" r="3.8" fill="#d85e70"/>
+    <text x="275" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#944656">throw</text>
+    <text x="248" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b5965">İstisna alarmı</text>
+  </g>
+
+  <path d="M400 155 L442 155" fill="none" stroke="#a78fa0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="442,155 433,150 433,160" fill="#a78fa0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="442" y="103" width="165" height="105" rx="18" fill="url(#catch)" stroke="#99d4c7"/>
+    <circle cx="469" cy="130" r="14" fill="#f7fffd" stroke="#7bc5b4"/>
+    <path d="M463 130 L468 135 L477 125" fill="none" stroke="#3c9c88" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="493" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#357f71">catch</text>
+    <text x="458" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427d73">Yakalama ve müdahale</text>
+    <text x="458" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60958c">anlamlı yanıt</text>
+  </g>
+
+  <path d="M307 229 L307 254" fill="none" stroke="#9a8495" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="307,254 302,245 312,245" fill="#9a8495"/>
+
+  <g filter="url(#soft)">
+    <rect x="201" y="255" width="213" height="42" rx="15" fill="#eef0ff" stroke="#c4c9ed"/>
+    <path d="M225 278 C237 268 249 268 261 278 C273 288 285 288 297 278" fill="none" stroke="#777fbd" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="315" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d669f">Çağrı zincirinde geri açılma</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="32" y="237" width="137" height="54" rx="16" fill="#e9f4ff" stroke="#b8d8ef"/>
+    <path d="M53 260 L61 252 L70 260 L70 274 L53 274 Z" fill="#f8fcff" stroke="#6fa9d1" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="82" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#477d9f">RAII</text>
+    <text x="82" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6793ad">Otomatik temizlik</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="458" y="237" width="149" height="54" rx="16" fill="#edf7e6" stroke="#bedaa9"/>
+    <path d="M481 270 L481 258 L488 253 L495 258 L495 270" fill="none" stroke="#6da05b" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M478 270 L498 270" stroke="#6da05b" stroke-width="2" stroke-linecap="round"/>
+    <text x="512" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#558347">noexcept</text>
+    <text x="512" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#769d69">Güvenlik garantisi</text>
+  </g>
+</svg>
