@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="sim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce4d7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58718d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#58718d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="155" r="104" fill="#d9edff" opacity="0.25"/>
+  <circle cx="319" cy="155" r="76" fill="#d9f0df" opacity="0.28"/>
+
+  <!-- Akış bağlantıları -->
+  <path d="M136 157 H205" fill="none" stroke="#6f8fa6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="205,157 196,152 196,162" fill="#6f8fa6"/>
+  <path d="M435 157 H503" fill="none" stroke="#6f8fa6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="503,157 494,152 494,162" fill="#6f8fa6"/>
+
+  <path d="M319 77 V53 H235 V75" fill="none" stroke="#8aa1b2" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <path d="M319 77 V53 H405 V75" fill="none" stroke="#8aa1b2" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+
+  <!-- Girdi -->
+  <g filter="url(#shadow)">
+    <rect x="25" y="106" width="111" height="102" rx="19" fill="#fff4db"/>
+    <rect x="36" y="118" width="89" height="78" rx="14" fill="#fffbf1" stroke="#f0cf8b"/>
+  </g>
+  <path d="M61 158 h16 l7-20 12 39 9-19 h16" fill="none" stroke="#dc9b38" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#785522" font-weight="600">Algoritma</text>
+
+  <!-- Gazebo -->
+  <g filter="url(#soft)">
+    <rect x="177" y="17" width="116" height="58" rx="15" fill="#e9e2fb" stroke="#c9b7ee"/>
+  </g>
+  <rect x="191" y="30" width="20" height="19" rx="4" fill="#a990db"/>
+  <path d="M195 48 V38 H207 V48 M199 38 V34 H203 V38" fill="none" stroke="#fff" stroke-width="1.5"/>
+  <text x="244" y="43" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#554276" font-weight="600">Gazebo</text>
+  <text x="244" y="59" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78658f">ROS ve dünya</text>
+
+  <!-- PyBullet -->
+  <g filter="url(#soft)">
+    <rect x="347" y="17" width="116" height="58" rx="15" fill="#dff3ed" stroke="#acdccc"/>
+  </g>
+  <circle cx="367" cy="40" r="11" fill="#66b69d"/>
+  <path d="M362 40 H372 M367 35 V45" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="414" y="43" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356a5b" font-weight="600">PyBullet</text>
+  <text x="414" y="59" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#568779">Hızlı deney</text>
+
+  <!-- Merkezi simülasyon -->
+  <g filter="url(#shadow)">
+    <rect x="205" y="77" width="230" height="161" rx="27" fill="url(#sim)" stroke="#a9cbd5" stroke-width="1.2"/>
+  </g>
+  <text x="320" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365d70" font-weight="700">FİZİK SİMÜLASYONU</text>
+
+  <!-- Robot -->
+  <g transform="translate(276 119)" filter="url(#soft)">
+    <rect x="16" y="26" width="55" height="47" rx="10" fill="#f8fcff" stroke="#6e9db5" stroke-width="2"/>
+    <rect x="23" y="11" width="41" height="27" rx="9" fill="#f8fcff" stroke="#6e9db5" stroke-width="2"/>
+    <circle cx="35" cy="24" r="4" fill="#5f9dbc"/>
+    <circle cx="53" cy="24" r="4" fill="#5f9dbc"/>
+    <path d="M38 32 H50" stroke="#6e9db5" stroke-width="2" stroke-linecap="round"/>
+    <path d="M31 73 V83 M58 73 V83" stroke="#567f96" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="29" cy="85" r="7" fill="#516f83"/>
+    <circle cx="60" cy="85" r="7" fill="#516f83"/>
+    <path d="M16 45 L4 57 M71 45 L83 57" stroke="#6e9db5" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="3" cy="59" r="5" fill="#f0ae62"/>
+    <circle cx="84" cy="59" r="5" fill="#f0ae62"/>
+    <path d="M44 11 V3" stroke="#6e9db5" stroke-width="2"/>
+    <circle cx="44" cy="2" r="3" fill="#e98475"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456b78">
+    <rect x="222" y="202" width="57" height="22" rx="9" fill="#f6fbff" stroke="#b4d4df"/>
+    <text x="250" y="217" text-anchor="middle">Yer çekimi</text>
+    <rect x="290" y="202" width="57" height="22" rx="9" fill="#f6fbff" stroke="#b4d4df"/>
+    <text x="318" y="217" text-anchor="middle">Çarpışma</text>
+    <rect x="358" y="202" width="57" height="22" rx="9" fill="#f6fbff" stroke="#b4d4df"/>
+    <text x="386" y="217" text-anchor="middle">Gürültü</text>
+  </g>
+
+  <!-- Güvenli sonuç -->
+  <g filter="url(#shadow)">
+    <rect x="503" y="91" width="112" height="132" rx="20" fill="#e6f5df"/>
+    <rect x="515" y="103" width="88" height="108" rx="15" fill="#f8fff5" stroke="#aed69e"/>
+  </g>
+  <path d="M559 119 l20 8 v17 c0 18-12 27-20 30-8-3-20-12-20-30v-17z" fill="#78b86d"/>
+  <path d="M549 145 l7 7 14-16" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="559" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#44743e" font-weight="700">Güvenli test</text>
+  <text x="559" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668d60">Gerçek robot</text>
+
+  <!-- Alt süreç -->
+  <path d="M117 271 H518" fill="none" stroke="#9bb1b8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="518,271 509,266 509,276" fill="#7794a0"/>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <circle cx="123" cy="271" r="14" fill="#dcecff" stroke="#a6c5df"/>
+    <text x="123" y="275" text-anchor="middle" fill="#426b87" font-weight="700">1</text>
+    <text x="123" y="300" text-anchor="middle" fill="#55707c">Birim test</text>
+    <circle cx="255" cy="271" r="14" fill="#dff3ed" stroke="#a9d7c5"/>
+    <text x="255" y="275" text-anchor="middle" fill="#387363" font-weight="700">2</text>
+    <text x="255" y="300" text-anchor="middle" fill="#55707c">Simülasyon</text>
+    <circle cx="386" cy="271" r="14" fill="#fff0d9" stroke="#eac98c"/>
+    <text x="386" y="275" text-anchor="middle" fill="#8d6827" font-weight="700">3</text>
+    <text x="386" y="300" text-anchor="middle" fill="#55707c">Düşük hız</text>
+    <circle cx="517" cy="271" r="14" fill="#e6f5df" stroke="#acd19e"/>
+    <text x="517" y="275" text-anchor="middle" fill="#4b7e45" font-weight="700">4</text>
+    <text x="517" y="300" text-anchor="middle" fill="#55707c">Saha testi</text>
+  </g>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="source" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c7dcf7"/>
+    </linearGradient>
+    <linearGradient id="shallow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1d6"/>
+      <stop offset="100%" stop-color="#f9d9a4"/>
+    </linearGradient>
+    <linearGradient id="deep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddf5e7"/>
+      <stop offset="100%" stop-color="#b9e5ce"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#72839a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#71829a" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="50" cy="52" r="88" fill="#dceef0" opacity="0.38"/>
+  <circle cx="603" cy="286" r="105" fill="#e6dcf4" opacity="0.30"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536d">PYTHON KOPYALAMA MANTIĞI</text>
+  <text x="30" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718097">Dış kap ve iç referanslar</text>
+
+  <!-- source -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="91" width="151" height="173" rx="18" fill="url(#source)" stroke="#aec9e8"/>
+  </g>
+  <text x="51" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2b527d">orijinal</text>
+  <rect x="48" y="136" width="114" height="100" rx="12" fill="#f8fbff" stroke="#aabed8"/>
+  <text x="61" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536983">dış liste</text>
+  <rect x="61" y="170" width="88" height="23" rx="7" fill="#d7e6f8" stroke="#a9c2df"/>
+  <rect x="61" y="201" width="88" height="23" rx="7" fill="#d7e6f8" stroke="#a9c2df"/>
+  <text x="73" y="186" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365979">[1, 2]</text>
+  <text x="73" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365979">[3, 4]</text>
+
+  <!-- split lines -->
+  <path d="M181 151 C204 151 207 111 230 111" fill="none" stroke="#8095ad" stroke-width="2"/>
+  <polygon points="230,111 221,106 222,115" fill="#8095ad"/>
+  <path d="M181 205 C204 205 207 237 230 237" fill="none" stroke="#8095ad" stroke-width="2"/>
+  <polygon points="230,237 221,232 222,241" fill="#8095ad"/>
+
+  <!-- shallow -->
+  <g filter="url(#shadow)">
+    <rect x="238" y="71" width="172" height="117" rx="18" fill="url(#shallow)" stroke="#ebc679"/>
+  </g>
+  <text x="259" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a5a13">Sığ kopya</text>
+  <text x="259" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7442">copy()</text>
+  <rect x="257" y="131" width="134" height="40" rx="9" fill="#fffaf0" stroke="#e9c980"/>
+  <rect x="268" y="140" width="50" height="21" rx="6" fill="#ffe5b6"/>
+  <rect x="330" y="140" width="50" height="21" rx="6" fill="#ffe5b6"/>
+  <text x="278" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d641d">yeni</text>
+  <text x="339" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d641d">kabuk</text>
+
+  <!-- shallow link to shared node -->
+  <path d="M410 130 C428 130 429 151 445 151" fill="none" stroke="#d1983d" stroke-width="2"/>
+  <polygon points="445,151 436,146 437,155" fill="#d1983d"/>
+
+  <!-- deep -->
+  <g filter="url(#shadow)">
+    <rect x="238" y="205" width="172" height="87" rx="18" fill="url(#deep)" stroke="#8bcaa9"/>
+  </g>
+  <text x="259" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#276a49">Derin kopya</text>
+  <text x="259" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56806a">deepcopy()</text>
+  <rect x="258" y="260" width="132" height="18" rx="7" fill="#f5fffa" stroke="#9acdb0"/>
+  <text x="272" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#387558">tüm seviyeler yeni</text>
+
+  <!-- independent link -->
+  <path d="M410 250 C428 250 429 234 445 234" fill="none" stroke="#58a77b" stroke-width="2"/>
+  <polygon points="445,234 436,229 437,238" fill="#58a77b"/>
+
+  <!-- right outcome panel -->
+  <g filter="url(#shadow)">
+    <rect x="447" y="83" width="163" height="191" rx="20" fill="#fafdff" stroke="#c9d8e6"/>
+  </g>
+  <text x="469" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536d">İç nesneler</text>
+
+  <!-- shared object -->
+  <g filter="url(#soft)">
+    <rect x="470" y="128" width="116" height="45" rx="11" fill="#ffe6b6" stroke="#e3b65b"/>
+  </g>
+  <text x="485" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a5d19">ORTAK</text>
+  <text x="485" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c7643">aynı referans</text>
+
+  <path d="M528 173 L528 190" fill="none" stroke="#d0933a" stroke-width="2"/>
+  <polygon points="528,190 523,181 533,181" fill="#d0933a"/>
+  <rect x="471" y="194" width="114" height="24" rx="8" fill="#fff5e3" stroke="#eccd90"/>
+  <text x="483" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#946520">değişiklik yayılır</text>
+
+  <!-- separate object -->
+  <g filter="url(#soft)">
+    <rect x="470" y="232" width="116" height="25" rx="9" fill="#d8f3e4" stroke="#85c7a2"/>
+  </g>
+  <text x="482" y="249" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#28714c">bağımsız iç veri</text>
+
+  <!-- legend -->
+  <circle cx="46" cy="289" r="5" fill="#d1983d"/>
+  <text x="58" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68798c">Paylaşılan referans</text>
+  <circle cx="190" cy="289" r="5" fill="#58a77b"/>
+  <text x="202" y="293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68798c">Bağımsız kopya</text>
+</svg>
