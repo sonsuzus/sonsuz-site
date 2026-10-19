@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkezDolgu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#c7dff8"/>
+    </linearGradient>
+    <filter id="golge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#52708c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#52708c" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="320" cy="160" r="119" fill="#d9edf5" opacity="0.35"/>
+  <circle cx="320" cy="160" r="86" fill="none" stroke="#b7d5e4" stroke-width="1.5" stroke-dasharray="5 6"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496477" font-weight="600">C++ GEÇİCİ NESNE ÖMRÜ</text>
+  <text x="612" y="31" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8392">const referanslar</text>
+
+  <!-- Sol üst: normal ömür -->
+  <path d="M248 126 C218 102 199 91 174 83" fill="none" stroke="#87a8b9" stroke-width="2"/>
+  <polygon points="174,83 183,80 180,89" fill="#87a8b9"/>
+  <rect x="26" y="50" width="151" height="66" rx="15" fill="#fdfdfc" filter="url(#hafifGolge)"/>
+  <rect x="26" y="50" width="151" height="66" rx="15" fill="#f8e7d5"/>
+  <circle cx="49" cy="76" r="12" fill="#edae72"/>
+  <path d="M45 76 L53 76 M51 72 L55 76 L51 80" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="69" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#744d2d" font-weight="600">Normal geçici</text>
+  <text x="69" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#866345">İfade sonunda yok olur</text>
+
+  <!-- Sağ üst: safe -->
+  <path d="M392 126 C420 102 445 89 465 83" fill="none" stroke="#71ad99" stroke-width="2.5"/>
+  <polygon points="465,83 456,80 459,89" fill="#71ad99"/>
+  <rect x="463" y="50" width="151" height="66" rx="15" fill="#dcf1e7" filter="url(#golge)"/>
+  <circle cx="487" cy="76" r="12" fill="#65b68e"/>
+  <path d="M482 76 L486 80 L493 71" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="507" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#276047" font-weight="600">Yerel const T&amp;</text>
+  <text x="507" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#417560">Kapsama kadar yaşar</text>
+
+  <!-- Center -->
+  <rect x="239" y="126" width="162" height="71" rx="20" fill="url(#merkezDolgu)" filter="url(#golge)"/>
+  <circle cx="273" cy="161" r="19" fill="#5c96c5"/>
+  <path d="M266 154 C272 149 280 153 280 160 C280 168 273 172 267 168 C262 164 262 158 266 154Z" fill="#eaf5ff"/>
+  <text x="299" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#214b6b" font-weight="700">Geçici Nesne</text>
+  <text x="299" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426e8e">isimsiz değer</text>
+
+  <!-- Left bottom warning param -->
+  <path d="M249 192 C220 217 194 229 171 236" fill="none" stroke="#d68772" stroke-width="2.5"/>
+  <polygon points="171,236 180,229 181,238" fill="#d68772"/>
+  <rect x="26" y="220" width="169" height="69" rx="15" fill="#fde5e1" filter="url(#hafifGolge)"/>
+  <circle cx="50" cy="246" r="12" fill="#df806d"/>
+  <path d="M50 239 L50 248 M50 253 L50 254" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/>
+  <text x="70" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#873e35" font-weight="600">Fonksiyon parametresi</text>
+  <text x="70" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a554a">Çağrı sonunda yok olur</text>
+
+  <!-- Right bottom warning returned ref -->
+  <path d="M391 192 C419 217 442 230 466 236" fill="none" stroke="#d68772" stroke-width="2.5"/>
+  <polygon points="466,236 456,229 456,238" fill="#d68772"/>
+  <rect x="445" y="220" width="169" height="69" rx="15" fill="#fde5e1" filter="url(#hafifGolge)"/>
+  <circle cx="469" cy="246" r="12" fill="#df806d"/>
+  <path d="M469 239 L469 248 M469 253 L469 254" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/>
+  <text x="489" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#873e35" font-weight="600">Dönen referans</text>
+  <text x="489" y="265" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a554a">Boşta referans riski</text>
+
+  <!-- bottom legend -->
+  <rect x="211" y="270" width="218" height="30" rx="15" fill="#edf4f7" opacity="0.92"/>
+  <circle cx="232" cy="285" r="5" fill="#65b68e"/>
+  <text x="243" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496477">Doğrudan yerel bağlama</text>
+  <path d="M365 285 L378 285" stroke="#d68772" stroke-width="2"/>
+  <polygon points="378,285 372,281 372,289" fill="#d68772"/>
+  <text x="386" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496477">risk</text>
+</svg>

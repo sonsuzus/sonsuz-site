@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#c9dcf4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5f7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#526a80" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="159" r="94" fill="#dbeef5" opacity="0.35"/>
+  <circle cx="320" cy="159" r="70" fill="#eff8f2" opacity="0.7"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6376" font-weight="600">Dosya İşleme Seçimi</text>
+
+  <path d="M272 148 C226 134 204 112 175 99" fill="none" stroke="#7e9cb2" stroke-width="2"/>
+  <polygon points="175,99 184,97 180,105" fill="#7e9cb2"/>
+  <path d="M368 148 C414 134 436 112 465 99" fill="none" stroke="#7e9cb2" stroke-width="2"/>
+  <polygon points="465,99 456,97 460,105" fill="#7e9cb2"/>
+
+  <path d="M271 177 C220 195 206 220 181 237" fill="none" stroke="#87a893" stroke-width="2"/>
+  <polygon points="181,237 187,229 190,236" fill="#87a893"/>
+  <path d="M369 177 C420 195 434 220 459 237" fill="none" stroke="#87a893" stroke-width="2"/>
+  <polygon points="459,237 450,236 453,229" fill="#87a893"/>
+
+  <g filter="url(#shadow)">
+    <rect x="267" y="119" width="106" height="80" rx="22" fill="url(#core)" stroke="#a8c5dd"/>
+    <circle cx="320" cy="145" r="13" fill="#ffffff" opacity="0.76"/>
+    <path d="M314 145 h12 M320 139 v12" stroke="#587b99" stroke-width="2" stroke-linecap="round"/>
+    <text x="320" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536c">find</text>
+    <text x="320" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547188">yol akışı</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="45" y="53" width="147" height="74" rx="17" fill="#fff4df" stroke="#ead3a7"/>
+    <rect x="59" y="67" width="34" height="31" rx="9" fill="#f7cf84"/>
+    <path d="M67 76 h18 M67 84 h13 M67 92 h18" stroke="#936d32" stroke-width="2" stroke-linecap="round"/>
+    <text x="106" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6f5229">-exec ... \;</text>
+    <text x="106" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#856b44">tek tek çağrı</text>
+    <text x="106" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b06a45">yüksek maliyet</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="448" y="53" width="147" height="74" rx="17" fill="#eee8ff" stroke="#d3c5ef"/>
+    <rect x="462" y="67" width="34" height="31" rx="9" fill="#cbb9ef"/>
+    <path d="M470 76 h18 M470 84 h18 M470 92 h12" stroke="#6e5a9b" stroke-width="2" stroke-linecap="round"/>
+    <text x="510" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#584477">xargs</text>
+    <text x="510" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73618d">toplu çağrı</text>
+    <text x="510" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687f9b">paralel: -P</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="42" y="215" width="166" height="70" rx="17" fill="#e3f5e8" stroke="#bbddc5"/>
+    <circle cx="68" cy="241" r="14" fill="#a9d8b7"/>
+    <path d="M62 241 l4 4 l8 -9" fill="none" stroke="#376e4a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="91" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356448">-exec ... +</text>
+    <text x="91" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557967">hızlı ve güvenli</text>
+    <text x="91" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47775a">önerilen varsayılan</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="432" y="215" width="166" height="70" rx="17" fill="#e1f3f2" stroke="#b7deda"/>
+    <circle cx="458" cy="241" r="14" fill="#9ed5d0"/>
+    <path d="M452 240 h12 M458 234 v12" stroke="#286a68" stroke-width="2" stroke-linecap="round"/>
+    <text x="481" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2d6767">-print0 | xargs -0</text>
+    <text x="481" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7778">NUL ile güvenli</text>
+    <text x="481" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39716f">paralel işlem</text>
+  </g>
+
+  <path d="M208 250 H424" stroke="#b3c9c1" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <text x="320" y="252" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#628078">özel adlar için güvenli taşıma</text>
+
+  <rect x="241" y="286" width="158" height="22" rx="11" fill="#f9e7e5" stroke="#ecc9c4"/>
+  <text x="320" y="301" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a5149">sh -c: dikkatli kullan</text>
+</svg>
