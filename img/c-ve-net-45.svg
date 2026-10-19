@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="sourceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c7ddf5"/>
+    </linearGradient>
+    <linearGradient id="assemblyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0d5"/>
+      <stop offset="100%" stop-color="#f8ddb0"/>
+    </linearGradient>
+    <linearGradient id="clrGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7ddfb"/>
+      <stop offset="100%" stop-color="#d4c4f1"/>
+    </linearGradient>
+    <linearGradient id="machineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8f2e4"/>
+      <stop offset="100%" stop-color="#bce4cf"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6b7d91" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6b7d91" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="42" r="60" fill="#dceeff" opacity="0.48"/>
+  <circle cx="582" cy="280" r="88" fill="#dff3dc" opacity="0.50"/>
+  <path d="M34 170 C125 145 156 204 239 180 S396 136 489 165 S571 191 622 152" fill="none" stroke="#b8d3dd" stroke-width="2" opacity="0.38"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405269">C# KODUNUN ÇALIŞMA YOLCULUĞU</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="103" width="104" height="112" rx="18" fill="url(#sourceGrad)"/>
+    <rect x="38" y="118" width="82" height="65" rx="9" fill="#f8fcff" opacity="0.80"/>
+    <path d="M52 136 H95 M52 147 H104 M52 158 H88 M52 169 H99" stroke="#6e97bd" stroke-width="3" stroke-linecap="round"/>
+    <path d="M45 131 L51 136 L45 141" fill="none" stroke="#5c86ad" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="79" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345b7f">C# Kaynak</text>
+  </g>
+
+  <path d="M139 159 H168" fill="none" stroke="#7895aa" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="174,159 164,153 164,165" fill="#7895aa"/>
+  <text x="154" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7485">Roslyn</text>
+
+  <g filter="url(#shadow)">
+    <rect x="181" y="103" width="112" height="112" rx="18" fill="url(#assemblyGrad)"/>
+    <path d="M208 122 H255 L271 138 V181 H208 Z" fill="#fffaf0" stroke="#d6ae6e" stroke-width="1.5"/>
+    <path d="M255 122 V138 H271" fill="none" stroke="#d6ae6e" stroke-width="1.5"/>
+    <text x="239" y="152" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#92703b">CIL</text>
+    <text x="239" y="168" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92703b">Metadata</text>
+    <text x="237" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#71542e">Assembly</text>
+  </g>
+
+  <path d="M301 159 H328" fill="none" stroke="#7895aa" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="334,159 324,153 324,165" fill="#7895aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="341" y="71" width="166" height="177" rx="21" fill="url(#clrGrad)"/>
+    <text x="424" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#604b87">CLR Çalışma Zamanı</text>
+    
+    <g filter="url(#smallShadow)">
+      <rect x="359" y="112" width="130" height="39" rx="11" fill="#f9f7ff"/>
+      <circle cx="380" cy="131.5" r="10" fill="#baa5e5"/>
+      <path d="M377 126 L385 132 L377 137 Z" fill="#fff"/>
+      <text x="432" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#69538e">JIT Derleyici</text>
+    </g>
+    
+    <g filter="url(#smallShadow)">
+      <rect x="359" y="162" width="59" height="57" rx="11" fill="#f9f7ff"/>
+      <circle cx="388.5" cy="180" r="10" fill="#9bcfb6"/>
+      <path d="M384 180 H393 M388.5 175.5 V184.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <text x="388.5" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#527c68">GC</text>
+    </g>
+    
+    <g filter="url(#smallShadow)">
+      <rect x="430" y="162" width="59" height="57" rx="11" fill="#f9f7ff"/>
+      <path d="M459.5 171 L470 176 V185 C470 192 464 196 459.5 198 C455 196 449 192 449 185 V176 Z" fill="#8ea9d5"/>
+      <path d="M455 184 L458 187 L464 180" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="459.5" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#52709b">Tür</text>
+    </g>
+  </g>
+
+  <path d="M515 159 H539" fill="none" stroke="#7895aa" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="545,159 535,153 535,165" fill="#7895aa"/>
+  <text x="527" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7485">Yerel kod</text>
+
+  <g filter="url(#shadow)">
+    <rect x="552" y="103" width="65" height="112" rx="18" fill="url(#machineGrad)"/>
+    <rect x="565" y="122" width="39" height="43" rx="7" fill="#f7fffa" stroke="#82b99d" stroke-width="1.5"/>
+    <path d="M570 117 V122 M578 117 V122 M586 117 V122 M596 117 V122 M570 165 V170 M578 165 V170 M586 165 V170 M596 165 V170 M560 130 H565 M560 142 H565 M560 154 H565 M604 130 H609 M604 142 H609 M604 154 H609" stroke="#6fa58b" stroke-width="2" stroke-linecap="round"/>
+    <path d="M574 135 H595 M574 143 H595 M574 151 H589" stroke="#8bbba0" stroke-width="2" stroke-linecap="round"/>
+    <text x="584.5" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416d55">İşlemci</text>
+  </g>
+
+  <path d="M392 252 C386 268 361 275 329 275 H170" fill="none" stroke="#a2b7a9" stroke-width="2" stroke-dasharray="5 5" opacity="0.8"/>
+  <polygon points="164,275 174,270 174,280" fill="#a2b7a9"/>
+  <text x="282" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#658173">Yönetilen bellek ve geri kazanım</text>
+</svg>

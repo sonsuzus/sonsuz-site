@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="robotBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7896d8"/>
+      <stop offset="1" stop-color="#5475bd"/>
+    </linearGradient>
+    <linearGradient id="pid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eea9aa"/>
+      <stop offset="1" stop-color="#d77b8a"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7790a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#71869a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M44 253 C114 220 163 278 232 249 S367 222 432 253 S541 282 612 232" fill="none" stroke="#d7eadb" stroke-width="2" opacity="0.8"/>
+  <path d="M38 270 C120 242 180 290 253 265 S400 240 475 268 S556 280 618 250" fill="none" stroke="#c9e0d1" stroke-width="2" opacity="0.7"/>
+
+  <!-- Feedback loop -->
+  <path d="M181 108 C207 55 301 39 359 62" fill="none" stroke="#89a8c9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="355,56 369,65 352,69" fill="#89a8c9"/>
+  <path d="M450 92 C502 111 521 158 502 194" fill="none" stroke="#d99aa1" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="509,188 498,203 495,185" fill="#d99aa1"/>
+  <path d="M434 246 C384 278 286 277 231 247" fill="none" stroke="#8abda8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="236,254 219,243 238,239" fill="#8abda8"/>
+  <path d="M136 210 C108 178 113 132 139 107" fill="none" stroke="#9a9fca" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="132,112 146,96 143,117" fill="#9a9fca"/>
+
+  <!-- IMU -->
+  <g filter="url(#shadow)">
+    <rect x="69" y="89" width="119" height="65" rx="17" fill="#e6e9ff"/>
+    <rect x="78" y="98" width="101" height="47" rx="12" fill="#f4f5ff"/>
+    <circle cx="99" cy="121" r="12" fill="#8d94ce"/>
+    <path d="M94 121h10M99 116v10" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="119" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#46527f">IMU</text>
+    <text x="119" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#657095">Eğim ölçümü</text>
+  </g>
+
+  <!-- Filter -->
+  <g filter="url(#shadow)">
+    <rect x="365" y="43" width="137" height="66" rx="17" fill="#dff3e8"/>
+    <rect x="374" y="52" width="119" height="48" rx="12" fill="#f6fcf8"/>
+    <path d="M390 77h7l5-11 8 22 6-14h10" fill="none" stroke="#5fa880" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="429" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3c795d">Filtre</text>
+    <text x="429" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8d73">Birleşik açı</text>
+  </g>
+
+  <!-- PID -->
+  <g filter="url(#shadow)">
+    <rect x="474" y="178" width="118" height="66" rx="17" fill="#f9dfe2"/>
+    <rect x="483" y="187" width="100" height="48" rx="12" fill="#fff7f7"/>
+    <rect x="494" y="199" width="18" height="21" rx="5" fill="url(#pid)"/>
+    <rect x="518" y="194" width="18" height="26" rx="5" fill="#e8959d"/>
+    <rect x="542" y="203" width="18" height="17" rx="5" fill="#c9697d"/>
+    <text x="568" y="210" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#974a5a">PID</text>
+    <text x="568" y="226" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ad7080">Kontrol</text>
+  </g>
+
+  <!-- Motor -->
+  <g filter="url(#shadow)">
+    <rect x="269" y="244" width="149" height="56" rx="17" fill="#dcefeb"/>
+    <rect x="278" y="253" width="131" height="38" rx="11" fill="#f6fcfa"/>
+    <rect x="291" y="263" width="24" height="17" rx="4" fill="#6caf98"/>
+    <path d="M315 268h13M315 276h13" stroke="#6caf98" stroke-width="2"/>
+    <circle cx="348" cy="272" r="10" fill="#76af9d"/>
+    <path d="M348 265v7l5 3" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="372" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#477c69">Motorlar</text>
+    <text x="372" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b9686">Yönlü PWM</text>
+  </g>
+
+  <!-- Robot platform -->
+  <g filter="url(#shadow)">
+    <ellipse cx="297" cy="237" rx="96" ry="11" fill="#a9c6b8" opacity="0.25"/>
+    <circle cx="255" cy="224" r="29" fill="#506b87"/>
+    <circle cx="255" cy="224" r="18" fill="#dce9f2"/>
+    <circle cx="255" cy="224" r="7" fill="#7d9abb"/>
+    <circle cx="367" cy="224" r="29" fill="#506b87"/>
+    <circle cx="367" cy="224" r="18" fill="#dce9f2"/>
+    <circle cx="367" cy="224" r="7" fill="#7d9abb"/>
+    <rect x="244" y="203" width="134" height="19" rx="9" fill="#5e7791"/>
+    <rect x="255" y="207" width="112" height="8" rx="4" fill="#83a0b8"/>
+  </g>
+
+  <!-- Inverted pendulum body, slightly tilted -->
+  <g transform="rotate(-9 311 180)" filter="url(#shadow)">
+    <rect x="286" y="119" width="50" height="87" rx="14" fill="url(#robotBody)"/>
+    <rect x="294" y="130" width="34" height="38" rx="8" fill="#dce8ff" opacity="0.92"/>
+    <circle cx="311" cy="149" r="10" fill="#f7c977"/>
+    <path d="M311 140v18M302 149h18" stroke="#8c6b47" stroke-width="1.7" opacity="0.7"/>
+    <rect x="296" y="177" width="30" height="13" rx="6" fill="#a7bbe8"/>
+    <circle cx="311" cy="199" r="5" fill="#efb878"/>
+  </g>
+
+  <!-- Balance angle -->
+  <path d="M311 114v-28" stroke="#83a0ba" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M311 86 A28 28 0 0 1 331 95" fill="none" stroke="#e0a269" stroke-width="2"/>
+  <polygon points="327,89 337,99 324,98" fill="#e0a269"/>
+  <text x="337" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a66e3d">θ</text>
+
+  <!-- central title -->
+  <g filter="url(#softShadow)">
+    <rect x="203" y="25" width="131" height="33" rx="14" fill="#ffffff" opacity="0.9"/>
+    <text x="268.5" y="46" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#516c88">Geri Besleme</text>
+  </g>
+
+  <!-- small status -->
+  <rect x="43" y="270" width="148" height="24" rx="12" fill="#ffffff" opacity="0.78"/>
+  <circle cx="58" cy="282" r="4" fill="#6db98b"/>
+  <text x="70" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527363">Hızlı dengeleme döngüsü</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8275c9"/>
+      <stop offset="1" stop-color="#6258ad"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#60718d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52647d" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="552" cy="54" r="82" fill="#dcefe5" opacity="0.55"/>
+  <circle cx="75" cy="273" r="94" fill="#dfeafa" opacity="0.62"/>
+
+  <text x="36" y="37" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40516d">Context Manager Yaşam Döngüsü</text>
+  <text x="36" y="56" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718096">Kaynak, hata olsa bile güvenle bırakılır</text>
+
+  <path d="M166 154 H207" fill="none" stroke="#94a5bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="207,154 198,149 198,159" fill="#94a5bb"/>
+  <path d="M329 154 H370" fill="none" stroke="#94a5bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="370,154 361,149 361,159" fill="#94a5bb"/>
+  <path d="M492 154 H527" fill="none" stroke="#94a5bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="527,154 518,149 518,159" fill="#94a5bb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="43" y="111" width="123" height="87" rx="18" fill="#dcedff"/>
+    <rect x="48" y="116" width="113" height="77" rx="14" fill="#edf6ff" opacity="0.72"/>
+  </g>
+  <rect x="76" y="127" width="25" height="32" rx="5" fill="#5e9bd2"/>
+  <path d="M94 127 V135 H102" fill="none" stroke="#cfe8ff" stroke-width="2"/>
+  <path d="M82 170 H126" stroke="#8db9df" stroke-width="3" stroke-linecap="round"/>
+  <text x="104" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356a9b">__enter__</text>
+  <text x="104" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61728a">Kaynağı edin</text>
+
+  <g filter="url(#shadow)">
+    <rect x="207" y="101" width="123" height="106" rx="20" fill="url(#core)"/>
+    <rect x="212" y="106" width="113" height="96" rx="16" fill="#ffffff" opacity="0.08"/>
+  </g>
+  <path d="M251 143 C251 132 267 132 267 143 V164 C267 174 283 174 283 164 V143 C283 132 299 132 299 143" fill="none" stroke="#e8e5ff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="275" cy="177" r="4" fill="#c6c0f8"/>
+  <text x="269" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">with bloğu</text>
+  <text x="269" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61728a">Kaynağı kullan</text>
+
+  <g filter="url(#shadow)">
+    <rect x="370" y="111" width="122" height="87" rx="18" fill="#fff0dc"/>
+    <rect x="375" y="116" width="112" height="77" rx="14" fill="#fff8ed" opacity="0.8"/>
+  </g>
+  <path d="M430 126 L412 158 H427 L421 181 L449 145 H434 Z" fill="#e49346"/>
+  <text x="431" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a56025">İstisna</text>
+  <text x="431" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61728a">Hata yolu</text>
+
+  <g filter="url(#shadow)">
+    <rect x="527" y="101" width="78" height="106" rx="20" fill="#d9f1e4"/>
+    <rect x="532" y="106" width="68" height="96" rx="16" fill="#f0fbf4" opacity="0.74"/>
+  </g>
+  <path d="M551 137 C551 126 581 126 581 137 V159 C581 174 551 174 551 159 Z" fill="none" stroke="#45a878" stroke-width="4"/>
+  <path d="M557 151 L563 157 L575 143" fill="none" stroke="#45a878" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="566" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#287554">__exit__</text>
+  <text x="566" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61728a">Temizlik</text>
+
+  <path d="M269 218 V248 H566 V218" fill="none" stroke="#70ae92" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="566,218 561,228 571,228" fill="#70ae92"/>
+  <rect x="309" y="235" width="212" height="27" rx="13.5" fill="#e1f3e9" filter="url(#soft)"/>
+  <text x="415" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#377b5b">Normal çıkış da temizlenir</text>
+
+  <path d="M431 208 V277" fill="none" stroke="#d68a4a" stroke-width="2" stroke-dasharray="4 5" stroke-linecap="round"/>
+  <rect x="354" y="273" width="154" height="28" rx="14" fill="#fff0df" filter="url(#soft)"/>
+  <text x="431" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b5b2c">Hata yayılır veya bastırılır</text>
+</svg>

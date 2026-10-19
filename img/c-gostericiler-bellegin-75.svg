@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="pointerFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dce9ff"/>
+      <stop offset="100%" stop-color="#c9dcfa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71859a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="95" cy="48" r="72" fill="#dcefe8" opacity="0.42"/>
+  <circle cx="580" cy="278" r="96" fill="#dce8fb" opacity="0.42"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#37516b">C GÖSTERİCİLERİ</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668097">Adres ile veriye erişim</text>
+
+  <!-- Sol: gösterici -->
+  <g filter="url(#shadow)">
+    <rect x="42" y="111" width="154" height="101" rx="18" fill="url(#pointerFill)" stroke="#a9c2e2"/>
+    <rect x="58" y="130" width="122" height="30" rx="9" fill="#f7fbff" opacity="0.9"/>
+    <text x="72" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365573">int *ptr</text>
+    <rect x="58" y="169" width="122" height="26" rx="8" fill="#b7cce7"/>
+    <text x="74" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365573">0x7FFD...</text>
+  </g>
+  <text x="76" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526d82">Adres saklar</text>
+
+  <!-- Ok: pointer -> memory -->
+  <path d="M197 160 C218 160 218 160 238 160" fill="none" stroke="#5f86ae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="241,160 232,154 232,166" fill="#5f86ae"/>
+  <text x="201" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567794">&amp;</text>
+
+  <!-- Merkez: bellek -->
+  <g filter="url(#shadow)">
+    <rect x="244" y="78" width="166" height="166" rx="21" fill="#ffffff" stroke="#c7dce3"/>
+    <text x="291" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40616c">BELLEK</text>
+
+    <rect x="264" y="123" width="126" height="31" rx="8" fill="#e6f4ec" stroke="#b7dbca"/>
+    <text x="276" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3b6a54">0x7FFD10</text>
+    <text x="355" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#28704e">42</text>
+
+    <rect x="264" y="160" width="126" height="31" rx="8" fill="#edf5ff" stroke="#c4d9ef"/>
+    <text x="276" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708d">0x7FFD14</text>
+    <text x="355" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#386796">20</text>
+
+    <rect x="264" y="197" width="126" height="27" rx="8" fill="#fff5df" stroke="#efdaad"/>
+    <text x="276" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806338">0x7FFD18</text>
+    <text x="355" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6f22">30</text>
+  </g>
+
+  <!-- Sağ üst: çözümleme -->
+  <path d="M411 124 C432 112 443 105 460 101" fill="none" stroke="#6c9a83" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="464,100 455,96 458,106" fill="#6c9a83"/>
+  <g filter="url(#smallShadow)">
+    <rect x="466" y="67" width="136" height="69" rx="15" fill="#e4f3e9" stroke="#b9ddc6"/>
+    <text x="486" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7655">*ptr</text>
+    <text x="486" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547565">Adresteki değer</text>
+    <text x="563" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#28704e">42</text>
+  </g>
+
+  <!-- Sağ orta: aritmetik -->
+  <path d="M411 169 C429 169 442 169 460 169" fill="none" stroke="#7591bb" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="464,169 455,163 455,175" fill="#7591bb"/>
+  <g filter="url(#smallShadow)">
+    <rect x="466" y="146" width="136" height="58" rx="15" fill="#e7effc" stroke="#c0d2ed"/>
+    <text x="483" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426a9a">ptr + i</text>
+    <text x="483" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58738f">Tür boyutu kadar</text>
+  </g>
+
+  <!-- Sağ alt: güvenlik -->
+  <path d="M411 211 C432 224 443 231 460 236" fill="none" stroke="#bd8b5b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="464,237 455,230 452,241" fill="#bd8b5b"/>
+  <g filter="url(#smallShadow)">
+    <rect x="466" y="216" width="136" height="64" rx="15" fill="#fff0e5" stroke="#edcba9"/>
+    <circle cx="486" cy="241" r="10" fill="#f6c98c"/>
+    <path d="M486 235 L486 243 M486 248 L486 248" stroke="#875d2e" stroke-width="2" stroke-linecap="round"/>
+    <text x="504" y="245" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805a32">NULL kontrolü</text>
+    <text x="482" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d6a42">Sınırlar ve ömür</text>
+  </g>
+
+  <!-- Alt açıklama -->
+  <g filter="url(#smallShadow)">
+    <rect x="43" y="260" width="365" height="37" rx="14" fill="#ffffff" opacity="0.9" stroke="#d7e4e8"/>
+    <circle cx="64" cy="278" r="8" fill="#8cc8ab"/>
+    <path d="M60 278 L63 281 L69 274" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="80" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496673">Adres al → çöz → güvenle eriş</text>
+  </g>
+</svg>
