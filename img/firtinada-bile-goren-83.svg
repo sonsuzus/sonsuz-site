@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="fusion" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#dff5e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7891a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7891a5" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="160" r="108" fill="#cfe5f7" opacity="0.22"/>
+  <circle cx="319" cy="160" r="82" fill="#ffffff" opacity="0.30"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587083" font-weight="600">ÇOKLU ALGILAMA</text>
+  <text x="485" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587083" font-weight="600">GÜVENLİ KARAR</text>
+
+  <!-- Sensor cards -->
+  <g filter="url(#soft)">
+    <rect x="28" y="53" width="136" height="42" rx="13" fill="#fff1dd"/>
+    <rect x="28" y="105" width="136" height="42" rx="13" fill="#e7f0ff"/>
+    <rect x="28" y="157" width="136" height="42" rx="13" fill="#e7f7ef"/>
+    <rect x="28" y="209" width="136" height="42" rx="13" fill="#f2eaff"/>
+  </g>
+
+  <!-- camera icon -->
+  <rect x="42" y="66" width="23" height="15" rx="3" fill="#e9a54d"/>
+  <rect x="48" y="62" width="10" height="5" rx="2" fill="#e9a54d"/>
+  <circle cx="54" cy="73.5" r="4" fill="#fff8ef"/>
+  <text x="76" y="71" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#475b69" font-weight="600">Kamera</text>
+  <text x="76" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8c97">renk ve sınıf</text>
+
+  <!-- lidar icon -->
+  <path d="M43 133 L54 116 L65 133 Z" fill="#6e9ee6"/>
+  <path d="M48 128 L54 119 L60 128 Z" fill="#dcecff"/>
+  <text x="76" y="123" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#475b69" font-weight="600">LiDAR</text>
+  <text x="76" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8c97">3B geometri</text>
+
+  <!-- radar icon -->
+  <circle cx="54" cy="177" r="5" fill="#61b98e"/>
+  <path d="M45 170 Q54 160 63 170 M41 165 Q54 150 67 165" fill="none" stroke="#61b98e" stroke-width="2" stroke-linecap="round"/>
+  <text x="76" y="175" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#475b69" font-weight="600">Radar</text>
+  <text x="76" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8c97">mesafe ve hız</text>
+
+  <!-- imu icon -->
+  <circle cx="54" cy="230" r="11" fill="#ae8ad9"/>
+  <path d="M54 222 L54 238 M46 230 L62 230" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="54" cy="230" r="3" fill="#fff"/>
+  <text x="76" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#475b69" font-weight="600">GNSS / IMU</text>
+  <text x="76" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8c97">konum ve hareket</text>
+
+  <!-- lines into fusion -->
+  <path d="M164 74 C202 74 203 111 238 124" fill="none" stroke="#d49a48" stroke-width="2"/>
+  <polygon points="238,124 229,120 232,129" fill="#d49a48"/>
+  <path d="M164 126 C200 126 205 137 237 143" fill="none" stroke="#719ee0" stroke-width="2"/>
+  <polygon points="237,143 228,138 230,148" fill="#719ee0"/>
+  <path d="M164 178 C200 178 204 172 237 166" fill="none" stroke="#5caf87" stroke-width="2"/>
+  <polygon points="237,166 230,160 228,170" fill="#5caf87"/>
+  <path d="M164 230 C202 230 204 194 238 184" fill="none" stroke="#a27acc" stroke-width="2"/>
+  <polygon points="238,184 231,179 230,189" fill="#a27acc"/>
+
+  <!-- fusion core -->
+  <g filter="url(#shadow)">
+    <rect x="238" y="104" width="164" height="112" rx="25" fill="url(#fusion)" stroke="#bed9e2"/>
+    <circle cx="320" cy="145" r="28" fill="#ffffff" opacity="0.82"/>
+    <path d="M304 146 C310 132 328 130 336 143 C342 153 333 165 320 166 C307 165 298 156 304 146Z" fill="#72a9ce"/>
+    <circle cx="311" cy="145" r="4" fill="#fff"/>
+    <circle cx="329" cy="148" r="4" fill="#fff"/>
+    <path d="M314 157 Q320 161 327 156" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="320" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34586b" font-weight="700">Uyarlanabilir Füzyon</text>
+    <text x="320" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63808f">olasılık ve ağırlık</text>
+  </g>
+
+  <!-- weather confidence -->
+  <g filter="url(#soft)">
+    <rect x="255" y="239" width="130" height="55" rx="15" fill="#ffffff"/>
+  </g>
+  <path d="M278 258 C278 252 283 249 288 251 C292 246 301 249 301 256 C306 256 308 260 306 264 L277 264 C273 262 274 259 278 258Z" fill="#a7bac7"/>
+  <path d="M282 269 L279 276 M290 269 L287 278 M298 269 L295 276" stroke="#6e9eaf" stroke-width="2" stroke-linecap="round"/>
+  <text x="316" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c7b" font-weight="600">Hava ve kalite</text>
+  <text x="316" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7c929d">dinamik güven</text>
+  <path d="M320 239 L320 219" stroke="#8aabb8" stroke-width="2"/>
+  <polygon points="320,219 315,227 325,227" fill="#8aabb8"/>
+
+  <!-- output -->
+  <path d="M403 160 C430 160 438 160 461 160" fill="none" stroke="#5c97af" stroke-width="3"/>
+  <polygon points="461,160 451,154 451,166" fill="#5c97af"/>
+
+  <g filter="url(#shadow)">
+    <rect x="462" y="93" width="148" height="134" rx="22" fill="#ffffff" stroke="#d9e6e6"/>
+  </g>
+  <text x="536" y="119" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426273" font-weight="700">Çevre Modeli</text>
+  <path d="M483 165 L493 148 L514 148 L525 165 Z" fill="#86b7da"/>
+  <rect x="489" y="158" width="29" height="13" rx="4" fill="#5c90b8"/>
+  <circle cx="495" cy="173" r="5" fill="#425f74"/>
+  <circle cx="518" cy="173" r="5" fill="#425f74"/>
+  <path d="M549 151 L574 151 M549 163 L582 163 M549 175 L568 175" stroke="#78bc92" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="578" cy="137" r="7" fill="#f0b766"/>
+  <text x="536" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64808d">belirsizlik yönetimi</text>
+
+  <!-- small quality indicators -->
+  <circle cx="424" cy="132" r="5" fill="#e9b559"/>
+  <circle cx="438" cy="132" r="5" fill="#77b991"/>
+  <circle cx="452" cy="132" r="5" fill="#8aaee0"/>
+  <text x="438" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69828d">güven</text>
+</svg>

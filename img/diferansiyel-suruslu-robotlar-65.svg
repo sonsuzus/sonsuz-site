@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="robotBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9eafe"/>
+      <stop offset="100%" stop-color="#b9d5f3"/>
+    </linearGradient>
+    <linearGradient id="wheel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#66788f"/>
+      <stop offset="100%" stop-color="#35485f"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#53708d" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5b7d87" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="161" r="120" fill="#d9f0ec" opacity="0.38"/>
+  <circle cx="319" cy="161" r="87" fill="none" stroke="#91c9c0" stroke-width="2" stroke-dasharray="5 6" opacity="0.7"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="28" y="55" width="126" height="74" rx="16" fill="#fffdf7"/>
+    <rect x="39" y="67" width="42" height="22" rx="11" fill="#dbeeff"/>
+    <text x="60" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#37658c">SOL</text>
+    <text x="93" y="85" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#334b5f">vₗ = 0.20</text>
+    <line x1="40" y1="105" x2="139" y2="105" stroke="#c8d9e4" stroke-width="2"/>
+    <rect x="40" y="112" width="67" height="6" rx="3" fill="#72aacd"/>
+    <circle cx="107" cy="115" r="7" fill="#4b82aa"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="486" y="55" width="126" height="74" rx="16" fill="#fffdf7"/>
+    <rect x="497" y="67" width="42" height="22" rx="11" fill="#fff0cf"/>
+    <text x="518" y="82" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a36b18">SAĞ</text>
+    <text x="551" y="85" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#334b5f">vᵣ = 0.40</text>
+    <line x1="499" y1="105" x2="598" y2="105" stroke="#c8d9e4" stroke-width="2"/>
+    <rect x="499" y="112" width="89" height="6" rx="3" fill="#e1a951"/>
+    <circle cx="588" cy="115" r="7" fill="#c88329"/>
+  </g>
+
+  <path d="M155 93 C187 93 200 115 225 128" fill="none" stroke="#78a9c8" stroke-width="2.5"/>
+  <polygon points="226,128 216,126 221,119" fill="#78a9c8"/>
+  <path d="M485 93 C453 93 440 115 415 128" fill="none" stroke="#d69b45" stroke-width="2.5"/>
+  <polygon points="414,128 419,119 425,126" fill="#d69b45"/>
+
+  <g filter="url(#shadow)">
+    <rect x="235" y="118" width="170" height="90" rx="38" fill="url(#robotBody)" stroke="#8db7d8" stroke-width="2"/>
+    <path d="M270 122 Q320 92 370 122" fill="#eff8ff" opacity="0.86"/>
+    <rect x="222" y="129" width="24" height="67" rx="11" fill="url(#wheel)"/>
+    <rect x="394" y="129" width="24" height="67" rx="11" fill="url(#wheel)"/>
+    <path d="M229 143 L239 143 M229 160 L239 160 M229 178 L239 178" stroke="#b8cce0" stroke-width="2" opacity="0.7"/>
+    <path d="M401 143 L411 143 M401 160 L411 160 M401 178 L411 178" stroke="#b8cce0" stroke-width="2" opacity="0.7"/>
+    <circle cx="320" cy="163" r="15" fill="#ffffff" opacity="0.88"/>
+    <circle cx="320" cy="163" r="6" fill="#5d9fc8"/>
+    <path d="M320 148 L320 133" stroke="#4384ad" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="320,126 315,135 325,135" fill="#4384ad"/>
+  </g>
+
+  <line x1="246" y1="219" x2="394" y2="219" stroke="#6e9cb5" stroke-width="1.8"/>
+  <line x1="246" y1="214" x2="246" y2="224" stroke="#6e9cb5" stroke-width="1.8"/>
+  <line x1="394" y1="214" x2="394" y2="224" stroke="#6e9cb5" stroke-width="1.8"/>
+  <text x="320" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49677d">İz genişliği L</text>
+
+  <path d="M320 75 C390 60 454 101 462 164 C470 225 423 268 365 273" fill="none" stroke="#60a99f" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <polygon points="365,273 374,265 375,276" fill="#60a99f"/>
+  <circle cx="458" cy="164" r="6" fill="#55a297"/>
+  <circle cx="458" cy="164" r="12" fill="none" stroke="#55a297" stroke-width="1.5" opacity="0.55"/>
+  <text x="477" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d7e76">ICC</text>
+  <text x="436" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b857e">Dönüş yayı</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="32" y="252" width="184" height="47" rx="14" fill="#e7f2ff"/>
+    <circle cx="56" cy="275" r="15" fill="#9bc6e8"/>
+    <path d="M49 275 L62 275 M58 270 L63 275 L58 280" fill="none" stroke="#376d98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385a71">Ortalama hız</text>
+    <text x="82" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#24638c">v = (vᵣ + vₗ) / 2</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="424" y="252" width="184" height="47" rx="14" fill="#e7f5ed"/>
+    <circle cx="448" cy="275" r="15" fill="#a5d9c0"/>
+    <path d="M441 280 A9 9 0 1 1 455 280" fill="none" stroke="#287764" stroke-width="2"/>
+    <polygon points="455,280 449,277 450,284" fill="#287764"/>
+    <text x="474" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385f58">Hız farkı</text>
+    <text x="474" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#22705e">ω = (vᵣ - vₗ) / L</text>
+  </g>
+
+  <path d="M217 275 C246 275 260 258 279 224" fill="none" stroke="#79aaca" stroke-width="1.8"/>
+  <polygon points="279,224 271,231 280,234" fill="#79aaca"/>
+  <path d="M423 275 C394 275 380 258 361 224" fill="none" stroke="#6eb39b" stroke-width="1.8"/>
+  <polygon points="361,224 360,234 369,231" fill="#6eb39b"/>
+</svg>
