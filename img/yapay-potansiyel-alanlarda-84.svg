@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ee"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="uWall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8b4b4"/>
+      <stop offset="100%" stop-color="#c98282"/>
+    </linearGradient>
+    <linearGradient id="escape" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8bbde5"/>
+      <stop offset="100%" stop-color="#72b99b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7590a8" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#607a91" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="42" r="76" fill="#cce9f2" opacity="0.28"/>
+  <circle cx="570" cy="286" r="105" fill="#d8edca" opacity="0.32"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38546b">Yapay Potansiyel Alan</text>
+  <text x="30" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8394">Yerel minimum tuzağı ve hibrit çıkış</text>
+
+  <rect x="24" y="66" width="278" height="224" rx="20" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="45" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6578">Yerel tepki</text>
+  <rect x="202" y="79" width="77" height="23" rx="11" fill="#f8dddd"/>
+  <text x="215" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#a85959">Kuvvet = 0</text>
+
+  <path d="M66 124 L66 234 Q66 257 89 257 L105 257 Q126 257 126 235 L126 177 Q126 163 140 163 L168 163 Q182 163 182 177 L182 235 Q182 257 204 257 L220 257 Q242 257 242 234 L242 124"
+        fill="none" stroke="url(#uWall)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" filter="url(#smallShadow)"/>
+  <path d="M66 124 L66 234 Q66 257 89 257 L105 257 Q126 257 126 235 L126 177 Q126 163 140 163 L168 163 Q182 163 182 177 L182 235 Q182 257 204 257 L220 257 Q242 257 242 234 L242 124"
+        fill="none" stroke="#e9baba" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+
+  <circle cx="154" cy="213" r="19" fill="#8ab7e1" filter="url(#smallShadow)"/>
+  <circle cx="154" cy="213" r="11" fill="#dcedfa"/>
+  <circle cx="148" cy="209" r="3" fill="#477da9"/>
+  <circle cx="160" cy="209" r="3" fill="#477da9"/>
+  <path d="M149 218 Q154 222 159 218" fill="none" stroke="#477da9" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="131" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#587188">Robot</text>
+
+  <path d="M140 207 L105 194" fill="none" stroke="#db7777" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="105,194 114,190 111,199" fill="#db7777"/>
+  <path d="M168 207 L203 194" fill="none" stroke="#db7777" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="203,194 194,190 197,199" fill="#db7777"/>
+  <text x="48" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a36565">İtici kuvvetler</text>
+
+  <circle cx="154" cy="127" r="14" fill="#f5cf69" filter="url(#smallShadow)"/>
+  <circle cx="154" cy="127" r="7" fill="#fff7d7"/>
+  <text x="132" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#9a7827">Hedef</text>
+  <path d="M154 190 L154 151" fill="none" stroke="#e3ad42" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <polygon points="154,151 149,160 159,160" fill="#e3ad42"/>
+
+  <path d="M320 178 L348 178" fill="none" stroke="#829aab" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="348,178 339,173 339,183" fill="#829aab"/>
+  <text x="314" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7789">çıkış stratejisi</text>
+
+  <rect x="362" y="66" width="254" height="224" rx="20" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="383" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6578">Hibrit planlama</text>
+
+  <rect x="383" y="111" width="91" height="42" rx="12" fill="#dbeafa" filter="url(#smallShadow)"/>
+  <text x="397" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#47799f">Global rota</text>
+
+  <rect x="505" y="111" width="91" height="42" rx="12" fill="#dcefe4" filter="url(#smallShadow)"/>
+  <text x="519" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4c846b">Yerel kaçınma</text>
+
+  <path d="M474 132 L500 132" fill="none" stroke="#6d91a7" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="500,132 492,127 492,137" fill="#6d91a7"/>
+
+  <path d="M408 216 C432 180 457 245 484 213 S529 171 563 208" fill="none" stroke="url(#escape)" stroke-width="5" stroke-linecap="round" filter="url(#smallShadow)"/>
+  <path d="M408 216 C432 180 457 245 484 213 S529 171 563 208" fill="none" stroke="#eaf7f1" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 5"/>
+
+  <circle cx="407" cy="216" r="12" fill="#8ab7e1" filter="url(#smallShadow)"/>
+  <circle cx="407" cy="216" r="5" fill="#eaf5ff"/>
+  <rect x="457" y="199" width="18" height="28" rx="7" fill="#d89a9a"/>
+  <rect x="506" y="184" width="19" height="27" rx="7" fill="#d89a9a"/>
+  <circle cx="570" cy="209" r="15" fill="#f5cf69" filter="url(#smallShadow)"/>
+  <circle cx="570" cy="209" r="7" fill="#fff7d7"/>
+
+  <text x="384" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7486">Ara hedefler</text>
+  <circle cx="476" cy="254" r="4" fill="#75b89b"/>
+  <text x="487" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7486">Güvenli yol</text>
+  <text x="535" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#9a7827">Hedef</text>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcecff"/>
+      <stop offset="1" stop-color="#dff5e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#6b8198" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6b8198" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="164" r="116" fill="#dceeff" opacity="0.32"/>
+  <circle cx="320" cy="164" r="86" fill="#eff8ee" opacity="0.52"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31485b">
+    <g filter="url(#softShadow)">
+      <rect x="28" y="34" width="136" height="58" rx="16" fill="#fff5db" stroke="#edd596"/>
+      <path d="M48 58h20v14H48z M52 53h12 M52 77h12" fill="none" stroke="#b98628" stroke-width="2" stroke-linecap="round"/>
+      <text x="82" y="61" font-weight="600">Açık kaynak</text>
+      <text x="82" y="78" fill="#657789">Belge ve örnek</text>
+
+      <rect x="25" y="216" width="148" height="59" rx="16" fill="#e8f5e9" stroke="#a8d5af"/>
+      <path d="M47 239c0-7 12-7 12 0v4c0 7-12 7-12 0z M41 252h24" fill="none" stroke="#4d9a69" stroke-width="2" stroke-linecap="round"/>
+      <text x="75" y="242" font-weight="600">Öğrenen</text>
+      <text x="75" y="259" fill="#657789">Dene ve değiştir</text>
+
+      <rect x="476" y="34" width="138" height="58" rx="16" fill="#f3eaff" stroke="#d1b9ed"/>
+      <rect x="495" y="49" width="25" height="22" rx="4" fill="none" stroke="#875cb7" stroke-width="2"/>
+      <path d="M501 55h13M501 61h9M501 67h6" stroke="#875cb7" stroke-width="2" stroke-linecap="round"/>
+      <text x="535" y="61" font-weight="600">Raspberry Pi</text>
+      <text x="535" y="78" fill="#657789">Karar ve ağ</text>
+
+      <rect x="467" y="216" width="148" height="59" rx="16" fill="#ffe9e3" stroke="#f1b9a9"/>
+      <rect x="487" y="236" width="27" height="18" rx="3" fill="none" stroke="#ce6c55" stroke-width="2"/>
+      <path d="M492 232v-4M501 232v-4M510 232v-4M492 258v4M501 258v4M510 258v4" stroke="#ce6c55" stroke-width="2" stroke-linecap="round"/>
+      <text x="529" y="242" font-weight="600">Arduino</text>
+      <text x="529" y="259" fill="#657789">Motor kontrolü</text>
+    </g>
+
+    <g stroke="#87a0ad" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M164 67 C194 72 205 91 222 108"/>
+      <path d="M173 245 C194 238 202 219 219 204"/>
+      <path d="M476 67 C447 72 436 90 418 108"/>
+      <path d="M467 245 C445 237 435 220 418 204"/>
+    </g>
+    <g fill="#87a0ad">
+      <polygon points="222,108 212,105 217,116"/>
+      <polygon points="219,204 220,193 228,201"/>
+      <polygon points="418,108 423,116 428,105"/>
+      <polygon points="418,204 411,201 420,193"/>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="242" y="74" width="156" height="63" rx="20" fill="#dff1ff" stroke="#a9cee8"/>
+      <circle cx="274" cy="105" r="15" fill="#ffffff" opacity="0.78"/>
+      <path d="M265 105h18M274 96v18" stroke="#4384b2" stroke-width="2" stroke-linecap="round"/>
+      <text x="301" y="102" font-weight="600">Algılama</text>
+      <text x="301" y="120" fill="#657789">Sensör verisi</text>
+
+      <rect x="242" y="151" width="156" height="63" rx="20" fill="url(#core)" stroke="#a8d0ba"/>
+      <circle cx="274" cy="182" r="15" fill="#ffffff" opacity="0.8"/>
+      <path d="M267 185l5-6 5 4 5-8" fill="none" stroke="#4d9870" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="301" y="179" font-weight="600">Karar</text>
+      <text x="301" y="197" fill="#657789">Kod ve mantık</text>
+
+      <rect x="242" y="228" width="156" height="63" rx="20" fill="#fff0e5" stroke="#edc4a6"/>
+      <circle cx="274" cy="259" r="15" fill="#ffffff" opacity="0.8"/>
+      <path d="M265 263h18M268 256l-3 7 3 7M280 256l3 7-3 7" fill="none" stroke="#c87945" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="301" y="256" font-weight="600">Hareket</text>
+      <text x="301" y="274" fill="#657789">Motor ve tepki</text>
+    </g>
+
+    <g stroke="#5f8797" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <path d="M320 137v12"/>
+      <path d="M320 214v12"/>
+      <path d="M410 258 C450 194 445 124 399 108"/>
+      <path d="M230 108 C191 130 190 208 230 240"/>
+    </g>
+    <g fill="#5f8797">
+      <polygon points="320,149 315,142 325,142"/>
+      <polygon points="320,226 315,219 325,219"/>
+      <polygon points="399,108 404,117 409,108"/>
+      <polygon points="230,240 232,230 222,235"/>
+    </g>
+
+    <text x="320" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#38566a">Erişilebilir Robotik Eğitimi</text>
+    <text x="320" y="309" text-anchor="middle" fill="#607987">Düşük maliyet • paylaşım • üretim</text>
+  </g>
+</svg>
