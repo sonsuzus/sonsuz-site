@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2faef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#c7dbf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#6e8399" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#789080" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="86" cy="47" r="66" fill="#dff3f3" opacity="0.46"/>
+  <circle cx="589" cy="285" r="86" fill="#e5eefc" opacity="0.58"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">KURUCU İSTİSNASI: YARIM NESNE VE KAYNAK YÖNETİMİ</text>
+
+  <g filter="url(#shadow)">
+    <rect x="237" y="49" width="166" height="62" rx="17" fill="url(#core)" stroke="#a9c2df"/>
+    <circle cx="267" cy="80" r="17" fill="#f8fcff" stroke="#92b2d5"/>
+    <path d="M260 81 L265 86 L275 74" fill="none" stroke="#4d85bb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="326" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536d">Kurucu</text>
+    <text x="326" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567087">Kaynak edinimi</text>
+  </g>
+
+  <path d="M286 112 L195 143" fill="none" stroke="#9baebb" stroke-width="2"/>
+  <polygon points="195,143 204,136 202,147" fill="#9baebb"/>
+  <path d="M354 112 L445 143" fill="none" stroke="#8baaa2" stroke-width="2"/>
+  <polygon points="445,143 436,136 438,147" fill="#8baaa2"/>
+
+  <g filter="url(#soft)">
+    <rect x="60" y="149" width="222" height="119" rx="18" fill="#fff4f3" stroke="#efb8b2"/>
+    <rect x="78" y="166" width="48" height="48" rx="13" fill="#ffdcd7"/>
+    <path d="M102 176 L102 193" stroke="#c95a55" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="102" cy="201" r="2.5" fill="#c95a55"/>
+    <text x="143" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b4645">Ham kaynak</text>
+    <text x="143" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a6462">new · fopen · lock</text>
+
+    <path d="M91 231 L129 231" stroke="#d47c75" stroke-width="2"/>
+    <polygon points="129,231 121,226 121,236" fill="#d47c75"/>
+    <rect x="139" y="218" width="120" height="28" rx="9" fill="#fffafa" stroke="#edcac7"/>
+    <text x="199" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#985552">İstisna</text>
+    <path d="M202 247 L202 255" stroke="#d47c75" stroke-width="2"/>
+    <path d="M194 253 L210 269 M210 253 L194 269" stroke="#c84e4a" stroke-width="3" stroke-linecap="round"/>
+    <text x="229" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b34b48">Sızıntı riski</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="358" y="149" width="222" height="119" rx="18" fill="#eff9f0" stroke="#b6dcb8"/>
+    <rect x="376" y="166" width="48" height="48" rx="13" fill="#d9f0dc"/>
+    <path d="M388 190 L397 199 L414 179" fill="none" stroke="#4d9a63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="441" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39704b">RAII üyeleri</text>
+    <text x="441" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8164">vector · unique_ptr</text>
+
+    <path d="M389 231 L427 231" stroke="#79aa83" stroke-width="2"/>
+    <polygon points="427,231 419,226 419,236" fill="#79aa83"/>
+    <rect x="437" y="218" width="120" height="28" rx="9" fill="#fbfffb" stroke="#cae3cd"/>
+    <text x="497" y="237" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7957">İstisna</text>
+    <path d="M500 247 L500 255" stroke="#79aa83" stroke-width="2"/>
+    <path d="M491 261 L497 267 L509 253" fill="none" stroke="#4d9a63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39704b">Otomatik temizlik</text>
+  </g>
+
+  <path d="M320 118 L320 285" fill="none" stroke="#c2d0d5" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <g filter="url(#soft)">
+    <rect x="260" y="274" width="120" height="30" rx="12" fill="#eef4fa" stroke="#c7d9e8"/>
+    <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486277">Kural: Sahipliği sar</text>
+  </g>
+</svg>
