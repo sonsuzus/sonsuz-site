@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dceeff"/>
+      <stop offset="1" stop-color="#c9e3fb"/>
+    </linearGradient>
+    <linearGradient id="nonholo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0d7"/>
+      <stop offset="1" stop-color="#f9ddba"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#57728a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#486174" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="42" cy="37" r="80" fill="#ddecf8" opacity="0.48"/>
+  <circle cx="603" cy="289" r="95" fill="#dcefd8" opacity="0.45"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516a">YOL PLANLAMA: HAREKET KISITLARI</text>
+
+  <rect x="26" y="51" width="270" height="237" rx="20" fill="url(#holo)" filter="url(#shadow)"/>
+  <rect x="344" y="51" width="270" height="237" rx="20" fill="url(#nonholo)" filter="url(#shadow)"/>
+
+  <rect x="43" y="67" width="150" height="29" rx="14" fill="#ffffff" opacity="0.83"/>
+  <circle cx="60" cy="81.5" r="6" fill="#4d9ed8"/>
+  <text x="74" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285d88">Holonomik</text>
+  <text x="44" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55748c">Serbest yön hareketi</text>
+
+  <rect x="362" y="67" width="177" height="29" rx="14" fill="#ffffff" opacity="0.83"/>
+  <circle cx="379" cy="81.5" r="6" fill="#e18749"/>
+  <text x="393" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#985424">Non-holonomik</text>
+  <text x="362" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b674a">Yönelim ve eğrilik kısıtı</text>
+
+  <rect x="53" y="130" width="66" height="101" rx="12" fill="#ffffff" opacity="0.78"/>
+  <rect x="170" y="130" width="68" height="101" rx="12" fill="#ffffff" opacity="0.78"/>
+  <rect x="137" y="158" width="20" height="42" rx="4" fill="#8ca8b9" opacity="0.7"/>
+
+  <path d="M80 212 L80 178 L137 178 L137 148 L190 148" fill="none" stroke="#4f9fd8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="190,148 179,141 179,155" fill="#4f9fd8"/>
+  <circle cx="80" cy="212" r="12" fill="#ffffff" filter="url(#soft)"/>
+  <circle cx="80" cy="212" r="6" fill="#438fc8"/>
+  <circle cx="190" cy="148" r="10" fill="#ffffff" filter="url(#soft)"/>
+  <circle cx="190" cy="148" r="4.5" fill="#52a474"/>
+  <text x="69" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47708c">Başlangıç</text>
+  <text x="176" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47708c">Hedef</text>
+  <text x="66" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#397eaf">Keskin rota</text>
+
+  <rect x="372" y="130" width="66" height="101" rx="12" fill="#ffffff" opacity="0.78"/>
+  <rect x="489" y="130" width="68" height="101" rx="12" fill="#ffffff" opacity="0.78"/>
+  <rect x="456" y="153" width="20" height="52" rx="4" fill="#aa9c8c" opacity="0.75"/>
+
+  <path d="M400 213 C400 175, 422 161, 449 180 C474 198, 485 154, 523 149" fill="none" stroke="#df894a" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="523,149 511,144 514,158" fill="#df894a"/>
+  <circle cx="400" cy="213" r="12" fill="#ffffff" filter="url(#soft)"/>
+  <circle cx="400" cy="213" r="6" fill="#d87a3e"/>
+  <circle cx="523" cy="149" r="10" fill="#ffffff" filter="url(#soft)"/>
+  <circle cx="523" cy="149" r="4.5" fill="#52a474"/>
+  <path d="M402 199 L413 211 L402 223 L391 211 Z" fill="#f8b475" stroke="#a95b2c" stroke-width="1.5"/>
+  <text x="389" y="250" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b674a">Başlangıç</text>
+  <text x="508" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b674a">Hedef</text>
+  <text x="385" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#bc6c31">Sürülebilir eğri</text>
+
+  <path d="M296 170 L337 170" stroke="#8ba2ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="337,170 327,164 327,176" fill="#8ba2ae"/>
+  <rect x="276" y="145" width="84" height="49" rx="14" fill="#ffffff" filter="url(#soft)"/>
+  <text x="318" y="165" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#536975">Planlayıcı</text>
+  <text x="318" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70848e">durum uzayı</text>
+
+  <text x="320" y="310" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617981">Konum + yönelim → uygulanabilir yol</text>
+</svg>
