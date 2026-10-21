@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="dfGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8dcf5"/>
+    </linearGradient>
+    <linearGradient id="duGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ddf4e8"/>
+      <stop offset="100%" stop-color="#c6e6d5"/>
+    </linearGradient>
+    <linearGradient id="warnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0d5"/>
+      <stop offset="100%" stop-color="#f6d5a8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7091a8" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#617a87" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="50" cy="42" r="88" fill="#dceefe" opacity="0.42"/>
+  <circle cx="604" cy="281" r="112" fill="#dff2df" opacity="0.42"/>
+
+  <text x="320" y="28" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365168">Disk Kullanımının İki Yüzü</text>
+
+  <rect x="34" y="53" width="218" height="210" rx="20" fill="url(#dfGrad)" filter="url(#shadow)"/>
+  <rect x="388" y="53" width="218" height="210" rx="20" fill="url(#duGrad)" filter="url(#shadow)"/>
+
+  <rect x="55" y="71" width="176" height="33" rx="12" fill="#ffffff" opacity="0.78"/>
+  <text x="143" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365168">df · Dosya Sistemi</text>
+
+  <rect x="409" y="71" width="176" height="33" rx="12" fill="#ffffff" opacity="0.78"/>
+  <text x="497" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#32634e">du · Dizin Ağacı</text>
+
+  <rect x="66" y="121" width="154" height="94" rx="14" fill="#ffffff" opacity="0.74" filter="url(#smallShadow)"/>
+  <text x="83" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46627a">Toplam bloklar</text>
+  <rect x="83" y="151" width="120" height="15" rx="7.5" fill="#dce8f2"/>
+  <rect x="83" y="151" width="91" height="15" rx="7.5" fill="#6994bf"/>
+  <text x="83" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385b78">Kullanılan alan</text>
+  <text x="195" y="190" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385b78">%76</text>
+  <text x="143" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46627a">Çekirdek kayıtları</text>
+
+  <rect x="421" y="120" width="152" height="96" rx="14" fill="#ffffff" opacity="0.74" filter="url(#smallShadow)"/>
+  <path d="M443 190 V142 Q443 135 450 135 H476 L484 143 H548 Q554 143 554 150 V190 Q554 197 547 197 H450 Q443 197 443 190Z" fill="#8bc6a5"/>
+  <path d="M450 151 H552 V190 H450Z" fill="#dff2e5"/>
+  <rect x="461" y="161" width="58" height="7" rx="3.5" fill="#71ae8d"/>
+  <rect x="461" y="176" width="76" height="7" rx="3.5" fill="#a1d0b5"/>
+  <text x="497" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6c56">Erişilen dosyalar</text>
+
+  <path d="M253 158 H292" stroke="#819bad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="292,153 302,158 292,163" fill="#819bad"/>
+  <path d="M387 158 H348" stroke="#819bad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="348,153 338,158 348,163" fill="#819bad"/>
+
+  <rect x="278" y="111" width="84" height="102" rx="18" fill="url(#warnGrad)" filter="url(#shadow)"/>
+  <circle cx="320" cy="138" r="17" fill="#f7c77c"/>
+  <path d="M320 128 V140" stroke="#805a27" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="320" cy="147" r="2" fill="#805a27"/>
+  <path d="M300 169 H340" stroke="#c58f4b" stroke-width="2"/>
+  <text x="320" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#78572c">Silinmiş</text>
+  <text x="320" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78572c">açık dosya</text>
+
+  <path d="M320 214 V246" stroke="#c58f4b" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="315,244 320,252 325,244" fill="#c58f4b"/>
+  <rect x="238" y="262" width="164" height="33" rx="14" fill="#ffffff" opacity="0.86" filter="url(#smallShadow)"/>
+  <text x="320" y="283" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#79572b">df görür · du göremez</text>
+
+  <text x="143" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58738a">Hızlı muhasebe</text>
+  <text x="497" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7860">Ayrıntılı tarama</text>
+</svg>
