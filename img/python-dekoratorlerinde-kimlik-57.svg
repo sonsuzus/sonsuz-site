@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="original" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8e9ff"/>
+      <stop offset="100%" stop-color="#c9dcf6"/>
+    </linearGradient>
+    <linearGradient id="risk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe4df"/>
+      <stop offset="100%" stop-color="#f8c9c1"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#daf3e2"/>
+      <stop offset="100%" stop-color="#bce4ca"/>
+    </linearGradient>
+    <linearGradient id="wrap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7ddff"/>
+      <stop offset="100%" stop-color="#d1c1f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a5" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="79" cy="44" r="58" fill="#dceeff" opacity="0.45"/>
+  <circle cx="583" cy="274" r="76" fill="#daf0dc" opacity="0.42"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556c">Dekoratörde Kimlik Koruma</text>
+
+  <rect x="30" y="90" width="145" height="128" rx="18" fill="url(#original)" filter="url(#shadow)"/>
+  <rect x="45" y="105" width="42" height="34" rx="10" fill="#ffffff" opacity="0.68"/>
+  <path d="M57 115h18M57 121h13M57 127h17" stroke="#6585a4" stroke-width="2" stroke-linecap="round"/>
+  <text x="103" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536f">Orijinal</text>
+  <text x="103" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52718b">topla(a, b)</text>
+  <line x1="47" y1="156" x2="158" y2="156" stroke="#87a8c2" stroke-width="1"/>
+  <text x="47" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b84">ad: topla</text>
+  <text x="47" y="196" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496b84">belge: mevcut</text>
+
+  <path d="M181 153H218" stroke="#6e8ba4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="218,153 208,147 208,159" fill="#6e8ba4"/>
+
+  <rect x="225" y="77" width="187" height="156" rx="22" fill="#ffffff" opacity="0.90" filter="url(#shadow)"/>
+  <rect x="244" y="95" width="149" height="42" rx="13" fill="url(#wrap)" filter="url(#smallShadow)"/>
+  <text x="318.5" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#56427d">@wraps(func)</text>
+  <path d="M318 140v14" stroke="#7a689b" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="318,162 312,152 324,152" fill="#7a689b"/>
+  <rect x="244" y="164" width="149" height="48" rx="13" fill="#eef3f7"/>
+  <text x="318.5" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45596b">zaman_ölç</text>
+  <text x="318.5" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667987">wrapper oluşturur</text>
+
+  <path d="M419 153H450" stroke="#6e8ba4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="450,153 440,147 440,159" fill="#6e8ba4"/>
+
+  <rect x="458" y="69" width="151" height="169" rx="19" fill="url(#safe)" filter="url(#shadow)"/>
+  <path d="M533 87l28 10v22c0 22-14 34-28 40-14-6-28-18-28-40V97z" fill="#ffffff" opacity="0.72"/>
+  <path d="M523 120l7 7 14-17" fill="none" stroke="#4f9a73" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="533" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#347254">Korunan Kimlik</text>
+  <line x1="478" y1="188" x2="588" y2="188" stroke="#8bc3a1" stroke-width="1"/>
+  <text x="478" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39765a">ad: topla</text>
+  <text x="478" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39765a">belge: mevcut</text>
+
+  <rect x="48" y="254" width="159" height="38" rx="13" fill="url(#risk)" filter="url(#smallShadow)"/>
+  <circle cx="68" cy="273" r="10" fill="#dc7469"/>
+  <path d="M68 267v7M68 278v1" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="87" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80463f">Düz wrapper: bilgi kaybı</text>
+
+  <rect x="396" y="254" width="192" height="38" rx="13" fill="#ffffff" filter="url(#smallShadow)"/>
+  <path d="M417 265c8 0 12 5 12 8s-4 8-12 8c-5 0-9-3-9-8s4-8 9-8z" fill="#d8c9f5"/>
+  <path d="M417 269v8M413 273h8" stroke="#765fa3" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="439" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536776">__wrapped__ ile orijinale erişim</text>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="phaseFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#dff5e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6f8494" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6f8494" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="121" fill="#d9eaf1" opacity="0.28"/>
+  <circle cx="320" cy="160" r="91" fill="#ffffff" opacity="0.53"/>
+
+  <!-- Bağlantılar -->
+  <path d="M162 94 C195 94 210 111 228 126" fill="none" stroke="#7f9eae" stroke-width="2"/>
+  <polygon points="228,126 218,124 222,116" fill="#7f9eae"/>
+  <path d="M168 227 C197 223 211 207 230 192" fill="none" stroke="#7f9eae" stroke-width="2"/>
+  <polygon points="230,192 220,191 225,201" fill="#7f9eae"/>
+  <path d="M410 118 C431 103 447 94 471 94" fill="none" stroke="#7f9eae" stroke-width="2"/>
+  <polygon points="471,94 462,89 462,99" fill="#7f9eae"/>
+  <path d="M410 201 C434 216 448 226 471 226" fill="none" stroke="#7f9eae" stroke-width="2"/>
+  <polygon points="471,226 462,221 462,231" fill="#7f9eae"/>
+
+  <!-- Sol üst: algılama -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="57" width="132" height="74" rx="18" fill="#ffffff"/>
+    <rect x="43" y="69" width="32" height="32" rx="10" fill="#dcecff"/>
+    <circle cx="59" cy="83" r="7" fill="none" stroke="#517ca2" stroke-width="2"/>
+    <path d="M59 76 L59 83 L64 86" fill="none" stroke="#517ca2" stroke-width="2" stroke-linecap="round"/>
+    <text x="84" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#31536e">Durum</text>
+    <text x="84" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7483">açı ve hız</text>
+    <text x="44" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63808d">q · q̇</text>
+  </g>
+
+  <!-- Sol alt: bozucu -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="192" width="138" height="73" rx="18" fill="#ffffff"/>
+    <rect x="44" y="204" width="31" height="31" rx="10" fill="#ffe4d9"/>
+    <path d="M50 223 L56 216 L60 221 L67 212" fill="none" stroke="#c9795c" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="84" y="218" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#7a4d3d">Bozucu</text>
+    <text x="84" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80675d">itme · zemin</text>
+    <text x="44" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a36f5b">sapma</text>
+  </g>
+
+  <!-- Merkez faz döngüsü -->
+  <g filter="url(#shadow)">
+    <circle cx="320" cy="160" r="78" fill="url(#phaseFill)" stroke="#a9cad4" stroke-width="2"/>
+    <circle cx="320" cy="160" r="51" fill="#fafdff" stroke="#b9d4df" stroke-width="1.5"/>
+    <path d="M278 161 C281 121 343 108 364 145 C386 183 337 210 296 188 C265 171 271 136 295 124" fill="none" stroke="#4f92a8" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="295,124 285,127 290,135" fill="#4f92a8"/>
+    <circle cx="320" cy="160" r="5" fill="#5da880"/>
+    <text x="320" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31596c">Faz Döngüsü</text>
+    <text x="320" y="172" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547181">φ · limit döngü</text>
+    <text x="320" y="243" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567382">sürekli ilerleme</text>
+  </g>
+
+  <!-- Sağ üst: yürüyüş fazları -->
+  <g filter="url(#shadow)">
+    <rect x="470" y="56" width="140" height="77" rx="18" fill="#ffffff"/>
+    <text x="487" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#416052">Yürüme Evreleri</text>
+    <path d="M489 100 L518 100 L529 89 L558 89 L570 101 L594 101" fill="none" stroke="#65a584" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="489" cy="100" r="4" fill="#65a584"/>
+    <circle cx="529" cy="89" r="4" fill="#65a584"/>
+    <circle cx="570" cy="101" r="4" fill="#65a584"/>
+    <text x="487" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698278">temas · destek · salınım</text>
+  </g>
+
+  <!-- Sağ alt: kararlılık -->
+  <g filter="url(#shadow)">
+    <rect x="470" y="190" width="140" height="77" rx="18" fill="#ffffff"/>
+    <rect x="484" y="204" width="34" height="34" rx="10" fill="#e2f4e8"/>
+    <path d="M491 226 L499 218 L505 222 L512 212" fill="none" stroke="#4f9b73" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="529" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3f6953">Kararlılık</text>
+    <text x="529" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668174">λ &lt; 1 · toparlanma</text>
+    <text x="484" y="254" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668174">Poincaré kesiti</text>
+  </g>
+
+  <!-- Alt kontrol şeridi -->
+  <g filter="url(#soft)">
+    <rect x="210" y="277" width="220" height="27" rx="13" fill="#ffffff" opacity="0.92"/>
+    <circle cx="230" cy="290" r="5" fill="#6da88a"/>
+    <text x="244" y="294" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476859">Kontrolcü: adım · temas · momentum</text>
+  </g>
+</svg>
