@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#617cc8"/>
+      <stop offset="100%" stop-color="#7899d9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#49617b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#40536c" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="50" r="78" fill="#ccebe4" opacity="0.32"/>
+  <circle cx="592" cy="272" r="96" fill="#d8d9f5" opacity="0.35"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38506a">Shell: boşluk sözcük anlamını değiştirir</text>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="82" width="144" height="150" rx="20" fill="url(#shell)"/>
+    <rect x="46" y="99" width="116" height="42" rx="10" fill="#ffffff" opacity="0.15"/>
+    <text x="57" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Terminal satırı</text>
+    <rect x="48" y="159" width="112" height="42" rx="9" fill="#24344f" opacity="0.54"/>
+    <text x="59" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#d9f7e9">kullanici=ali</text>
+    <text x="57" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#dce8ff">Girdi</text>
+  </g>
+
+  <path d="M177 150 C199 150 203 150 222 150" fill="none" stroke="#6d82a1" stroke-width="2.5"/>
+  <polygon points="222,150 213,145 213,155" fill="#6d82a1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="224" y="93" width="165" height="114" rx="20" fill="#fefefd"/>
+    <rect x="239" y="108" width="135" height="30" rx="10" fill="#e5eefc"/>
+    <text x="258" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48638c">Shell ayrıştırıcı</text>
+    <circle cx="255" cy="163" r="12" fill="#bfe7dd"/>
+    <circle cx="306" cy="163" r="12" fill="#cbd8f5"/>
+    <circle cx="357" cy="163" r="12" fill="#f7d8bc"/>
+    <text x="249" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e706b">1</text>
+    <text x="300" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53678e">=</text>
+    <text x="351" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#956b44">1</text>
+    <text x="248" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607187">Sözcükler</text>
+  </g>
+
+  <path d="M390 134 C410 123 415 103 431 93" fill="none" stroke="#57a58d" stroke-width="2.5"/>
+  <polygon points="434,91 424,91 429,100" fill="#57a58d"/>
+  <path d="M390 173 C411 186 416 209 431 220" fill="none" stroke="#d27a69" stroke-width="2.5"/>
+  <polygon points="434,222 429,213 424,222" fill="#d27a69"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="434" y="54" width="174" height="108" rx="18" fill="#e5f5ed"/>
+    <circle cx="462" cy="83" r="15" fill="#64b899"/>
+    <path d="M455 83 L460 88 L470 76" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="487" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397461">Tek sözcük</text>
+    <text x="487" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7469">isim=değer</text>
+    <rect x="451" y="118" width="140" height="27" rx="8" fill="#ffffff" opacity="0.78"/>
+    <text x="465" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43806a">Değişken atama</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="434" y="188" width="174" height="100" rx="18" fill="#fceae7"/>
+    <circle cx="462" cy="216" r="15" fill="#e47e6b"/>
+    <path d="M456 210 L468 222 M468 210 L456 222" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="487" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a85449">Boşlukla bölünür</text>
+    <text x="487" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c6259">isim  =  değer</text>
+    <rect x="451" y="247" width="140" height="25" rx="8" fill="#ffffff" opacity="0.76"/>
+    <text x="461" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b35a4d">komut bulunamadı</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="97" y="259" width="292" height="43" rx="15" fill="#eef1fb"/>
+    <circle cx="121" cy="280" r="12" fill="#879bd4"/>
+    <text x="117" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">!</text>
+    <text x="143" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53668c">Geçici ortam</text>
+    <text x="143" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64728a">DIL=tr_TR.UTF-8 date</text>
+    <text x="304" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#586c92">→ komuta özel</text>
+  </g>
+
+  <path d="M306 208 L306 251" fill="none" stroke="#8a9abb" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="306,255 301,247 311,247" fill="#8a9abb"/>
+</svg>

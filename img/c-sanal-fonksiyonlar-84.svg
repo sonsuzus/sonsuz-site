@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c7dcf6"/>
+    </linearGradient>
+    <linearGradient id="team" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f8ed"/>
+      <stop offset="100%" stop-color="#cfead9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#60758b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#60758b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="548" cy="42" r="74" fill="#dceff1" opacity="0.48"/>
+  <circle cx="73" cy="288" r="88" fill="#e4edf9" opacity="0.52"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496078">Dinamik çok biçimlilik</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728499">Tek arayüz • çalışma zamanında doğru davranış</text>
+
+  <!-- collection -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="105" width="145" height="105" rx="18" fill="url(#team)" stroke="#afd5bd"/>
+    <rect x="42" y="120" width="117" height="30" rx="10" fill="#ffffff" opacity="0.82"/>
+    <rect x="42" y="159" width="117" height="30" rx="10" fill="#ffffff" opacity="0.68"/>
+  </g>
+  <text x="57" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386850">takım</text>
+  <text x="109" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527764">unique_ptr</text>
+  <text x="56" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527764">Karakter işaretçileri</text>
+
+  <!-- arrow to interface -->
+  <path d="M174 157 L218 157" fill="none" stroke="#6c879e" stroke-width="2"/>
+  <polygon points="218,157 210,152 210,162" fill="#6c879e"/>
+
+  <!-- base interface -->
+  <g filter="url(#shadow)">
+    <rect x="220" y="88" width="192" height="139" rx="22" fill="url(#base)" stroke="#9bbdde"/>
+    <rect x="236" y="105" width="160" height="34" rx="11" fill="#fafdff" opacity="0.88"/>
+    <rect x="236" y="149" width="160" height="28" rx="9" fill="#ffffff" opacity="0.64"/>
+    <rect x="236" y="185" width="160" height="26" rx="9" fill="#ffffff" opacity="0.50"/>
+  </g>
+  <text x="255" y="127" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315878">Karakter</text>
+  <text x="329" y="127" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55738c">temel sınıf</text>
+  <text x="254" y="168" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416783">virtual saldir()</text>
+  <text x="254" y="203" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#55738c">virtual yıkıcı</text>
+
+  <!-- dispatch -->
+  <path d="M413 157 L442 157" fill="none" stroke="#6c879e" stroke-width="2"/>
+  <polygon points="442,157 434,152 434,162" fill="#6c879e"/>
+  <g filter="url(#soft)">
+    <circle cx="460" cy="157" r="27" fill="#fff4d8" stroke="#e7c879"/>
+  </g>
+  <path d="M453 147 L467 157 L453 167" fill="none" stroke="#aa7a22" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="431" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#876728">çalışma zamanı</text>
+
+  <!-- branches -->
+  <path d="M487 157 L504 157 L504 80 L521 80" fill="none" stroke="#7e92a5" stroke-width="2"/>
+  <polygon points="521,80 513,75 513,85" fill="#7e92a5"/>
+  <path d="M487 157 L521 157" fill="none" stroke="#7e92a5" stroke-width="2"/>
+  <polygon points="521,157 513,152 513,162" fill="#7e92a5"/>
+  <path d="M487 157 L504 157 L504 236 L521 236" fill="none" stroke="#7e92a5" stroke-width="2"/>
+  <polygon points="521,236 513,231 513,241" fill="#7e92a5"/>
+
+  <!-- derived cards -->
+  <g filter="url(#shadow)">
+    <rect x="522" y="48" width="92" height="63" rx="16" fill="#f9e3e5" stroke="#e8b9c1"/>
+    <rect x="522" y="126" width="92" height="63" rx="16" fill="#eee5fb" stroke="#d1bee9"/>
+    <rect x="522" y="205" width="92" height="63" rx="16" fill="#fff0d8" stroke="#edcf98"/>
+  </g>
+
+  <!-- warrior icon -->
+  <circle cx="542" cy="70" r="8" fill="#d77c88"/>
+  <path d="M532 91 Q542 78 552 91" fill="none" stroke="#bd6573" stroke-width="4" stroke-linecap="round"/>
+  <path d="M563 62 L554 92" stroke="#9b6970" stroke-width="3" stroke-linecap="round"/>
+  <text x="566" y="71" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#88505a">Savaşçı</text>
+  <text x="566" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9c6971">kılıç</text>
+
+  <!-- mage icon -->
+  <circle cx="542" cy="148" r="8" fill="#9b79c9"/>
+  <path d="M532 169 Q542 156 552 169" fill="none" stroke="#8060ae" stroke-width="4" stroke-linecap="round"/>
+  <path d="M542 136 L536 145 L548 145 Z" fill="#7655a5"/>
+  <text x="566" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#65498d">Büyücü</text>
+  <text x="566" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8069a0">ateş</text>
+
+  <!-- archer icon -->
+  <circle cx="542" cy="226" r="8" fill="#d49d4e"/>
+  <path d="M532 247 Q542 234 552 247" fill="none" stroke="#b98137" stroke-width="4" stroke-linecap="round"/>
+  <path d="M554 229 Q565 237 554 245" fill="none" stroke="#9b7134" stroke-width="2"/>
+  <path d="M551 237 L567 237" stroke="#9b7134" stroke-width="2"/>
+  <polygon points="567,237 562,234 562,240" fill="#9b7134"/>
+  <text x="566" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#86602c">Okçu</text>
+  <text x="566" y="247" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b7540">ok</text>
+
+  <!-- footer note -->
+  <g filter="url(#soft)">
+    <rect x="45" y="250" width="392" height="38" rx="14" fill="#ffffff" opacity="0.82"/>
+  </g>
+  <circle cx="66" cy="269" r="9" fill="#c8e7d2"/>
+  <path d="M62 269 L65 272 L71 265" fill="none" stroke="#43825a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c62">Döngü değişmez, yeni türler kolayca eklenir</text>
+</svg>

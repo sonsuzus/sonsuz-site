@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="fk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9edff"/>
+      <stop offset="100%" stop-color="#c9e4f4"/>
+    </linearGradient>
+    <linearGradient id="ik" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce4db"/>
+      <stop offset="100%" stop-color="#f6d1c4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#597084" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#597084" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="161" r="105" fill="#ffffff" opacity="0.48"/>
+  <path d="M320 27 L320 293" stroke="#b8cbd1" stroke-width="1.5" stroke-dasharray="4 5"/>
+
+  <rect x="35" y="24" width="250" height="42" rx="15" fill="url(#fk)" filter="url(#shadow)"/>
+  <circle cx="59" cy="45" r="13" fill="#62a9ce"/>
+  <path d="M53 45 L58 50 L67 40" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#244d65">İleri Kinematik</text>
+  <text x="199" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477188">q → x</text>
+
+  <rect x="355" y="24" width="250" height="42" rx="15" fill="url(#ik)" filter="url(#shadow)"/>
+  <circle cx="379" cy="45" r="13" fill="#d27d68"/>
+  <path d="M373 41 L379 47 L386 38 M373 50 L379 47 L387 53" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="402" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754033">Ters Kinematik</text>
+  <text x="518" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#986152">x → q</text>
+
+  <rect x="46" y="91" width="102" height="48" rx="13" fill="#ffffff" filter="url(#soft)"/>
+  <text x="97" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34566c">Eklem Açıları</text>
+  <text x="97" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7b8d">q₁, q₂, ...</text>
+
+  <path d="M149 115 L175 115" fill="none" stroke="#66a5c5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="175,115 167,110 167,120" fill="#66a5c5"/>
+
+  <rect x="177" y="91" width="93" height="48" rx="13" fill="#e6f3fb" filter="url(#soft)"/>
+  <text x="223" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34566c">Sıralı</text>
+  <text x="223" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7b8d">Dönüşümler</text>
+
+  <path d="M223 140 L223 157" fill="none" stroke="#66a5c5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="223,157 218,149 228,149" fill="#66a5c5"/>
+
+  <rect x="57" y="177" width="211" height="105" rx="19" fill="#fafdff" filter="url(#shadow)"/>
+  <text x="75" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356077">Tek yönlü hesap</text>
+  <path d="M85 250 L128 218 L175 243" fill="none" stroke="#4d91b4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="85" cy="250" r="11" fill="#77b9d8"/>
+  <circle cx="128" cy="218" r="11" fill="#77b9d8"/>
+  <circle cx="175" cy="243" r="10" fill="#77b9d8"/>
+  <circle cx="175" cy="243" r="4" fill="#ffffff"/>
+  <path d="M185 243 L228 243" stroke="#65a8c8" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="240" cy="243" r="8" fill="#63b7a0"/>
+  <text x="161" y="270" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477188">Tek sonuç · O(n)</text>
+
+  <rect x="493" y="91" width="102" height="48" rx="13" fill="#ffffff" filter="url(#soft)"/>
+  <text x="544" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754033">Hedef Poz</text>
+  <text x="544" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#986152">x hedef</text>
+
+  <path d="M491 115 L464 115" fill="none" stroke="#d18872" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="464,115 472,110 472,120" fill="#d18872"/>
+
+  <rect x="368" y="91" width="94" height="48" rx="13" fill="#fff1eb" filter="url(#soft)"/>
+  <text x="415" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#754033">Jacobian</text>
+  <text x="415" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#986152">İterasyon</text>
+
+  <path d="M415 140 L415 157" fill="none" stroke="#d18872" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="415,157 410,149 420,149" fill="#d18872"/>
+
+  <rect x="371" y="177" width="211" height="105" rx="19" fill="#fffdfc" filter="url(#shadow)"/>
+  <text x="389" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a4d3d">Çözüm arayışı</text>
+
+  <path d="M404 252 L444 221 L481 248" fill="none" stroke="#d88971" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M404 252 L444 267 L481 248" fill="none" stroke="#e7a18b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="404" cy="252" r="10" fill="#d9826d"/>
+  <circle cx="481" cy="248" r="9" fill="#67b7a2"/>
+  <circle cx="481" cy="248" r="3.5" fill="#ffffff"/>
+  <path d="M501 228 C527 226 540 237 535 255 C531 268 515 271 506 262" fill="none" stroke="#d18872" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="506,262 512,254 515,264" fill="#d18872"/>
+  <text x="476" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#986152">Çoklu · sınırlı · zor</text>
+
+  <rect x="279" y="137" width="82" height="48" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#435f68">Robot Kol</text>
+  <text x="320" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d858b">Geometri</text>
+
+  <path d="M269 161 L254 161" stroke="#a4bdc5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="254,161 262,156 262,166" fill="#a4bdc5"/>
+  <path d="M371 161 L386 161" stroke="#a4bdc5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="386,161 378,156 378,166" fill="#a4bdc5"/>
+</svg>
