@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8ddf5"/>
+    </linearGradient>
+    <linearGradient id="sensor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff5eb"/>
+      <stop offset="100%" stop-color="#c6e9d8"/>
+    </linearGradient>
+    <linearGradient id="filter" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9dcff"/>
+      <stop offset="100%" stop-color="#d5c4f5"/>
+    </linearGradient>
+    <linearGradient id="output" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#f6dc9a"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#62788d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66778a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="81" cy="47" r="72" fill="#d9edff" opacity="0.35"/>
+  <circle cx="594" cy="271" r="96" fill="#dff2d9" opacity="0.38"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3d5265">Gürültülü veriden güvenilir durum tahmini</text>
+
+  <g filter="url(#soft)">
+    <rect x="32" y="76" width="116" height="48" rx="14" fill="url(#sensor)" stroke="#a6d4bb"/>
+    <circle cx="55" cy="100" r="12" fill="#f5fffa" stroke="#77b99a"/>
+    <path d="M49 102 C52 94 58 94 61 99 M49 105 C53 109 58 109 62 104" fill="none" stroke="#57977a" stroke-width="1.5"/>
+    <text x="76" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#315d4a">Sensörler</text>
+    <text x="76" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547766">GPS · enkoder</text>
+
+    <rect x="32" y="177" width="116" height="48" rx="14" fill="url(#model)" stroke="#a8c7e4"/>
+    <circle cx="55" cy="201" r="12" fill="#f7fbff" stroke="#7da8cf"/>
+    <path d="M48 204 L53 198 L57 201 L63 194" fill="none" stroke="#5b91bd" stroke-width="1.7"/>
+    <text x="76" y="197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#385e80">Hareket modeli</text>
+    <text x="76" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7c9a">Kontrol · Q</text>
+  </g>
+
+  <path d="M148 100 H193" fill="none" stroke="#76a990" stroke-width="2.2"/>
+  <polygon points="200,100 190,95 190,105" fill="#76a990"/>
+  <text x="157" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a806c">ölçüm z</text>
+
+  <path d="M148 201 H193" fill="none" stroke="#719fca" stroke-width="2.2"/>
+  <polygon points="200,201 190,196 190,206" fill="#719fca"/>
+  <text x="153" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#577a9d">model · u</text>
+
+  <g filter="url(#shadow)">
+    <rect x="202" y="58" width="220" height="190" rx="23" fill="url(#filter)" stroke="#b8a4db" stroke-width="1.2"/>
+    <text x="312" y="86" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#51406f">KALMAN FİLTRESİ</text>
+    <line x1="225" y1="97" x2="399" y2="97" stroke="#b7a5d6" opacity="0.7"/>
+
+    <rect x="224" y="112" width="176" height="45" rx="12" fill="#f9f6ff" stroke="#c9bce3"/>
+    <circle cx="247" cy="134" r="11" fill="#d9ebff"/>
+    <path d="M242 136 L247 130 L252 136" fill="none" stroke="#617fa1" stroke-width="1.6"/>
+    <text x="267" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#554477">Tahmin</text>
+    <text x="267" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#776791">x̂⁻ ve P⁻</text>
+
+    <path d="M312 158 V169" fill="none" stroke="#8872ad" stroke-width="2"/>
+    <polygon points="312,176 307,166 317,166" fill="#8872ad"/>
+
+    <rect x="224" y="180" width="176" height="45" rx="12" fill="#f9f6ff" stroke="#c9bce3"/>
+    <circle cx="247" cy="202" r="11" fill="#ddf3e7"/>
+    <path d="M241 203 L245 207 L253 197" fill="none" stroke="#589778" stroke-width="1.7"/>
+    <text x="267" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#554477">Düzeltme</text>
+    <text x="267" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#776791">K · yenilik · R</text>
+  </g>
+
+  <path d="M422 153 H474" fill="none" stroke="#9a7e54" stroke-width="2.4"/>
+  <polygon points="481,153 471,148 471,158" fill="#9a7e54"/>
+  <text x="429" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#816845">güncelleme</text>
+
+  <g filter="url(#soft)">
+    <rect x="483" y="111" width="126" height="84" rx="17" fill="url(#output)" stroke="#dfc17b"/>
+    <circle cx="546" cy="135" r="18" fill="#fffaf0" stroke="#d5ac51"/>
+    <path d="M537 139 C539 128 553 127 555 137 M541 143 H552" fill="none" stroke="#a87b2f" stroke-width="1.8"/>
+    <text x="546" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#705020">Güvenilir durum</text>
+    <text x="546" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d6a31">konum · hız</text>
+  </g>
+
+  <path d="M519 205 C503 263 410 284 322 270 C251 258 219 237 220 229" fill="none" stroke="#9b89ba" stroke-width="1.8" stroke-dasharray="5 5" opacity="0.8"/>
+  <polygon points="224,222 215,230 225,233" fill="#9b89ba"/>
+  <text x="432" y="283" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75658f">sonraki adım için geri besleme</text>
+
+  <g opacity="0.8">
+    <circle cx="181" cy="100" r="3" fill="#78b296"/>
+    <circle cx="181" cy="201" r="3" fill="#77a7d0"/>
+    <circle cx="455" cy="153" r="3" fill="#b29160"/>
+  </g>
+</svg>

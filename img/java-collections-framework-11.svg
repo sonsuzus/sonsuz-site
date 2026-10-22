@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8dcf7"/>
+    </linearGradient>
+    <linearGradient id="list" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d4"/>
+      <stop offset="100%" stop-color="#ffe1aa"/>
+    </linearGradient>
+    <linearGradient id="set" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#daf4e6"/>
+      <stop offset="100%" stop-color="#bde7d1"/>
+    </linearGradient>
+    <linearGradient id="map" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ece1ff"/>
+      <stop offset="100%" stop-color="#d8c7f3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66809a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="157" r="126" fill="#ddecf2" opacity="0.38"/>
+  <circle cx="320" cy="157" r="96" fill="#ffffff" opacity="0.32"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40556c">JAVA COLLECTIONS FRAMEWORK</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71859a">Doğru yapı, doğru erişim</text>
+
+  <g filter="url(#shadow)">
+    <rect x="238" y="105" width="164" height="104" rx="22" fill="url(#core)" stroke="#acc6e2"/>
+  </g>
+  <rect x="258" y="124" width="124" height="26" rx="13" fill="#ffffff" opacity="0.7"/>
+  <text x="320" y="142" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355875">Collection&lt;E&gt;</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6b83">Tür güvenliği</text>
+  <text x="320" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6b83">Standart API</text>
+
+  <path d="M238 143 C205 137 188 112 166 101" fill="none" stroke="#d69e45" stroke-width="2.5"/>
+  <polygon points="168,94 155,97 164,107" fill="#d69e45"/>
+  <path d="M320 105 C320 88 320 80 320 69" fill="none" stroke="#4ba77e" stroke-width="2.5"/>
+  <polygon points="314,73 320,61 326,73" fill="#4ba77e"/>
+  <path d="M402 143 C435 137 452 112 474 101" fill="none" stroke="#8b68bd" stroke-width="2.5"/>
+  <polygon points="476,107 485,97 472,94" fill="#8b68bd"/>
+
+  <g filter="url(#soft)">
+    <rect x="37" y="73" width="130" height="102" rx="18" fill="url(#list)" stroke="#edc77f"/>
+  </g>
+  <rect x="53" y="87" width="47" height="25" rx="10" fill="#ffffff" opacity="0.74"/>
+  <text x="76.5" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#935f18">List</text>
+  <text x="54" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735a36">Sıra korunur</text>
+  <text x="54" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735a36">Tekrar serbest</text>
+  <text x="54" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735a36">İndeks erişimi</text>
+  <circle cx="141" cy="98" r="5" fill="#e4a53f"/>
+  <circle cx="141" cy="117" r="5" fill="#e4a53f"/>
+  <circle cx="141" cy="136" r="5" fill="#e4a53f"/>
+
+  <g filter="url(#soft)">
+    <rect x="255" y="24" width="130" height="66" rx="18" fill="url(#set)" stroke="#9ed6ba"/>
+  </g>
+  <rect x="272" y="38" width="43" height="25" rx="10" fill="#ffffff" opacity="0.72"/>
+  <text x="293.5" y="55" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#287557">Set</text>
+  <text x="326" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456d5d">Benzersiz</text>
+  <text x="326" y="69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456d5d">Hızlı arama</text>
+  <circle cx="370" cy="48" r="5" fill="#47a97a"/>
+  <path d="M367 48 L369 51 L374 44" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+
+  <g filter="url(#soft)">
+    <rect x="473" y="73" width="130" height="102" rx="18" fill="url(#map)" stroke="#b8a0db"/>
+  </g>
+  <rect x="489" y="87" width="47" height="25" rx="10" fill="#ffffff" opacity="0.74"/>
+  <text x="512.5" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#694497">Map</text>
+  <text x="490" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665077">Anahtar</text>
+  <text x="490" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665077">Değer</text>
+  <text x="490" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665077">Benzersiz anahtar</text>
+  <rect x="560" y="92" width="25" height="14" rx="4" fill="#a584cf"/>
+  <rect x="560" y="117" width="25" height="14" rx="4" fill="#bea7df"/>
+  <path d="M552 99 L559 99 M552 124 L559 124" stroke="#8060aa" stroke-width="2"/>
+
+  <path d="M102 194 C148 225 198 236 249 237" fill="none" stroke="#b7c6d4" stroke-width="1.5"/>
+  <path d="M320 216 L320 232" fill="none" stroke="#b7c6d4" stroke-width="1.5"/>
+  <path d="M538 194 C493 225 443 236 391 237" fill="none" stroke="#b7c6d4" stroke-width="1.5"/>
+
+  <g filter="url(#soft)">
+    <rect x="104" y="238" width="432" height="55" rx="18" fill="#ffffff" opacity="0.88" stroke="#dce7eb"/>
+  </g>
+  <text x="132" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526b7a">Seçim kuralı</text>
+  <line x1="229" y1="250" x2="229" y2="278" stroke="#d9e3e7"/>
+  <line x1="335" y1="250" x2="335" y2="278" stroke="#d9e3e7"/>
+  <line x1="436" y1="250" x2="436" y2="278" stroke="#d9e3e7"/>
+  <text x="248" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a651f">Sıra</text>
+  <text x="248" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a651f">List</text>
+  <text x="353" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38765b">Benzersizlik</text>
+  <text x="353" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38765b">Set</text>
+  <text x="454" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#684c8d">Anahtar</text>
+  <text x="454" y="279" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#684c8d">Map</text>
+</svg>
