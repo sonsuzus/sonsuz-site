@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f4e8"/>
+      <stop offset="100%" stop-color="#c8eadd"/>
+    </linearGradient>
+    <linearGradient id="temp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7e3ff"/>
+      <stop offset="100%" stop-color="#d6d0f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8092" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#678096" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="570" cy="45" r="66" fill="#dff2ed" opacity="0.55"/>
+  <circle cx="64" cy="280" r="86" fill="#e5e9ff" opacity="0.48"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33475b">Copy-and-Swap: Güçlü İstisna Güvenliği</text>
+
+  <!-- Old state -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="116" width="137" height="103" rx="18" fill="#ffffff"/>
+    <rect x="30" y="116" width="137" height="30" rx="18" fill="#dcecfb"/>
+    <rect x="30" y="132" width="137" height="14" fill="#dcecfb"/>
+  </g>
+  <text x="98" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39566e">Mevcut Nesne</text>
+  <rect x="49" y="162" width="22" height="34" rx="5" fill="#8fc3e6"/>
+  <rect x="76" y="162" width="22" height="34" rx="5" fill="#a9d4ed"/>
+  <rect x="103" y="162" width="22" height="34" rx="5" fill="#8fc3e6"/>
+  <text x="139" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587185">S</text>
+
+  <!-- Preparation -->
+  <path d="M168 92 C202 92 205 91 230 91" fill="none" stroke="#8295ab" stroke-width="2"/>
+  <polygon points="230,91 221,86 221,96" fill="#8295ab"/>
+  <text x="197" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61778a">kopyala</text>
+
+  <g filter="url(#shadow)">
+    <rect x="232" y="52" width="177" height="81" rx="18" fill="url(#temp)"/>
+    <rect x="248" y="68" width="35" height="35" rx="10" fill="#ffffff" opacity="0.72"/>
+    <path d="M258 86 h15 M265.5 78.5 v15" stroke="#7161a8" stroke-width="2.3" stroke-linecap="round"/>
+    <text x="300" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f467a">Geçici Kopya</text>
+    <text x="300" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#665d8c">T hazırlanır</text>
+    <rect x="358" y="71" width="12" height="30" rx="3" fill="#aaa0d6"/>
+    <rect x="374" y="71" width="12" height="30" rx="3" fill="#c0b9e3"/>
+  </g>
+
+  <!-- Error branch -->
+  <path d="M319 134 L319 159" fill="none" stroke="#c78b85" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="319,159 314,150 324,150" fill="#c78b85"/>
+  <g filter="url(#soft)">
+    <rect x="239" y="165" width="160" height="43" rx="14" fill="#fff2ee"/>
+    <circle cx="260" cy="186" r="11" fill="#f3b5a9"/>
+    <path d="M256 182 L264 190 M264 182 L256 190" stroke="#9b4e47" stroke-width="2" stroke-linecap="round"/>
+    <text x="326" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92564f">İstisna: S korunur</text>
+  </g>
+
+  <!-- success down to swap -->
+  <path d="M410 92 C432 92 436 127 444 147" fill="none" stroke="#6e9b8c" stroke-width="2.5"/>
+  <polygon points="444,147 438,137 448,139" fill="#6e9b8c"/>
+  <text x="442" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52766a">başarılı</text>
+
+  <!-- Swap center -->
+  <g filter="url(#shadow)">
+    <rect x="410" y="151" width="107" height="69" rx="20" fill="url(#safe)"/>
+    <circle cx="442" cy="185" r="16" fill="#ffffff" opacity="0.78"/>
+    <path d="M434 181 C439 175 447 175 451 180" fill="none" stroke="#40806c" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="451,180 446,177 447,183" fill="#40806c"/>
+    <path d="M450 190 C445 196 437 195 433 190" fill="none" stroke="#40806c" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="433,190 438,187 437,193" fill="#40806c"/>
+    <text x="484" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356c5c">swap</text>
+    <text x="484" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7c6d">noexcept</text>
+  </g>
+
+  <!-- Commit -->
+  <path d="M518 185 L543 185" fill="none" stroke="#638f80" stroke-width="2.5"/>
+  <polygon points="543,185 534,180 534,190" fill="#638f80"/>
+  <g filter="url(#shadow)">
+    <rect x="545" y="139" width="72" height="93" rx="18" fill="#ffffff"/>
+    <rect x="545" y="139" width="72" height="29" rx="18" fill="#ccebdc"/>
+    <rect x="545" y="154" width="72" height="14" fill="#ccebdc"/>
+  </g>
+  <text x="581" y="158" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386b5b">Yeni Durum</text>
+  <rect x="557" y="180" width="13" height="29" rx="3" fill="#7dbba1"/>
+  <rect x="574" y="180" width="13" height="29" rx="3" fill="#a0d1bc"/>
+  <rect x="591" y="180" width="13" height="29" rx="3" fill="#7dbba1"/>
+  <text x="581" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e806f">T yayımlandı</text>
+
+  <!-- RAII cleanup -->
+  <path d="M464 221 C464 249 416 259 362 252" fill="none" stroke="#8d9dab" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="362,252 371,247 370,257" fill="#8d9dab"/>
+  <g filter="url(#soft)">
+    <rect x="205" y="239" width="158" height="42" rx="14" fill="#eef3f6"/>
+    <path d="M225 249 h14 l-2 18 h-10z" fill="#aab9c4"/>
+    <path d="M223 248 h18" stroke="#758896" stroke-width="2" stroke-linecap="round"/>
+    <text x="296" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7180">RAII: eski kaynak temizlenir</text>
+  </g>
+
+  <text x="320" y="305" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#61798a">Ya tamamen değişir ya eski hâl korunur</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2faef"/>
+    </linearGradient>
+    <linearGradient id="slow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1ee"/>
+      <stop offset="100%" stop-color="#ffe5de"/>
+    </linearGradient>
+    <linearGradient id="fast" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ecf8f2"/>
+      <stop offset="100%" stop-color="#ddf3e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#60758b" flood-opacity="0.17"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#60758b" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="40" cy="32" r="60" fill="#dceefe" opacity="0.55"/>
+  <circle cx="603" cy="278" r="77" fill="#dff2dc" opacity="0.48"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">Python Metin Birleştirme Akışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="25" y="48" width="277" height="204" rx="18" fill="url(#slow)" stroke="#efc7bd"/>
+    <rect x="338" y="48" width="277" height="204" rx="18" fill="url(#fast)" stroke="#b9dfcf"/>
+  </g>
+
+  <rect x="45" y="62" width="105" height="27" rx="13.5" fill="#f3a898"/>
+  <text x="97" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#713e39">Döngüde +=</text>
+  <text x="278" y="79" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b554b">O(n²)</text>
+
+  <rect x="359" y="62" width="122" height="27" rx="13.5" fill="#8dceb0"/>
+  <text x="420" y="80" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245942">Liste + join()</text>
+  <text x="591" y="79" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#347559">O(n)</text>
+
+  <text x="48" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76504c">Her turda yeni metin</text>
+  <g filter="url(#soft)">
+    <rect x="49" y="122" width="48" height="24" rx="7" fill="#fffafa" stroke="#eab7aa"/>
+    <rect x="49" y="153" width="87" height="24" rx="7" fill="#fffafa" stroke="#eab7aa"/>
+    <rect x="49" y="184" width="127" height="24" rx="7" fill="#fffafa" stroke="#eab7aa"/>
+  </g>
+  <text x="73" y="138" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#754d48">metin</text>
+  <text x="92" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#754d48">metin + parça</text>
+  <text x="112" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#754d48">metin + parça + ...</text>
+
+  <path d="M105 146 L105 150 L101 146 M105 150 L109 146" fill="none" stroke="#d27666" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M145 177 L145 181 L141 177 M145 181 L149 177" fill="none" stroke="#d27666" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g opacity="0.9">
+    <path d="M191 133 C225 133 230 150 213 160" fill="none" stroke="#df8878" stroke-width="2" stroke-dasharray="4 4"/>
+    <polygon points="210,154 220,156 213,164" fill="#df8878"/>
+    <path d="M191 166 C235 169 238 188 213 194" fill="none" stroke="#df8878" stroke-width="2" stroke-dasharray="4 4"/>
+    <polygon points="210,188 220,190 212,198" fill="#df8878"/>
+  </g>
+  <text x="238" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a55e53">tekrar</text>
+  <text x="238" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a55e53">kopyalama</text>
+
+  <text x="361" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e705a">Parçaları topla</text>
+  <g filter="url(#soft)">
+    <rect x="361" y="122" width="50" height="28" rx="7" fill="#ffffff" stroke="#a6d8bd"/>
+    <rect x="417" y="122" width="50" height="28" rx="7" fill="#ffffff" stroke="#a6d8bd"/>
+    <rect x="473" y="122" width="50" height="28" rx="7" fill="#ffffff" stroke="#a6d8bd"/>
+    <rect x="529" y="122" width="50" height="28" rx="7" fill="#ffffff" stroke="#a6d8bd"/>
+  </g>
+  <text x="386" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6b56">parça</text>
+  <text x="442" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6b56">parça</text>
+  <text x="498" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6b56">parça</text>
+  <text x="554" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6b56">...</text>
+
+  <path d="M470 155 L470 169" stroke="#55a67d" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="465,166 470,174 475,166" fill="#55a67d"/>
+
+  <g filter="url(#soft)">
+    <rect x="387" y="177" width="166" height="37" rx="10" fill="#75bd98"/>
+  </g>
+  <text x="470" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">tek geçiş: join()</text>
+  <path d="M470 217 L470 226" stroke="#55a67d" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="465,223 470,231 475,223" fill="#55a67d"/>
+  <rect x="414" y="234" width="112" height="17" rx="8.5" fill="#d0ebda"/>
+  <text x="470" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#316b50">sonuç metni</text>
+
+  <g filter="url(#shadow)">
+    <rect x="145" y="269" width="350" height="35" rx="16" fill="#ffffff" stroke="#d8e4e6"/>
+  </g>
+  <circle cx="169" cy="286.5" r="10" fill="#a6d8bd"/>
+  <path d="M165 286 L168 289 L174 282" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="189" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456273">Büyük veri: join() veya StringIO</text>
+  <text x="474" y="291" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668096">Önce ölç</text>
+</svg>
