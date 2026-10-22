@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9ddff"/>
+      <stop offset="100%" stop-color="#d8cbf4"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="155" r="108" fill="#dcecf6" opacity="0.38"/>
+  <circle cx="320" cy="155" r="76" fill="#ffffff" opacity="0.55"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#486075">STL: Konteyner, Yineleyici ve Algoritma</text>
+
+  <!-- Bağlantı çizgileri -->
+  <path d="M183 126 C216 127 230 137 257 145" fill="none" stroke="#7f9bad" stroke-width="2.5"/>
+  <polygon points="253,139 264,148 250,150" fill="#7f9bad"/>
+  <path d="M457 126 C424 127 410 137 383 145" fill="none" stroke="#7f9bad" stroke-width="2.5"/>
+  <polygon points="387,139 376,148 390,150" fill="#7f9bad"/>
+  <path d="M184 208 C218 202 234 191 259 178" fill="none" stroke="#7f9bad" stroke-width="2.5"/>
+  <polygon points="256,185 269,173 253,173" fill="#7f9bad"/>
+  <path d="M456 208 C422 202 406 191 381 178" fill="none" stroke="#7f9bad" stroke-width="2.5"/>
+  <polygon points="384,185 371,173 387,173" fill="#7f9bad"/>
+
+  <!-- Konteyner kartı -->
+  <g filter="url(#shadow)">
+    <rect x="45" y="83" width="140" height="138" rx="20" fill="#d8eff2"/>
+    <rect x="53" y="91" width="124" height="122" rx="16" fill="#eefafb" opacity="0.72"/>
+  </g>
+  <rect x="73" y="109" width="84" height="32" rx="9" fill="#7fc4cb"/>
+  <rect x="81" y="117" width="12" height="16" rx="3" fill="#ffffff" opacity="0.9"/>
+  <rect x="97" y="117" width="12" height="16" rx="3" fill="#ffffff" opacity="0.9"/>
+  <rect x="113" y="117" width="12" height="16" rx="3" fill="#ffffff" opacity="0.9"/>
+  <rect x="129" y="117" width="12" height="16" rx="3" fill="#ffffff" opacity="0.9"/>
+  <text x="115" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315e68">Konteyner</text>
+  <text x="115" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557681">vector · list · set</text>
+
+  <!-- Merkezi yineleyici -->
+  <g filter="url(#shadow)">
+    <circle cx="320" cy="159" r="66" fill="url(#core)"/>
+    <circle cx="320" cy="159" r="55" fill="#f8f5ff" opacity="0.58"/>
+  </g>
+  <circle cx="320" cy="134" r="12" fill="#9076c8"/>
+  <path d="M320 128 L320 140 M314 134 L326 134" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M286 160 L354 160" stroke="#8c79b8" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="286,160 295,154 295,166" fill="#8c79b8"/>
+  <polygon points="354,160 345,154 345,166" fill="#8c79b8"/>
+  <text x="320" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#51406f">Yineleyici</text>
+  <text x="320" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685985">[ilk, son)</text>
+
+  <!-- Algoritma kartı -->
+  <g filter="url(#shadow)">
+    <rect x="455" y="83" width="140" height="138" rx="20" fill="#ffe4cc"/>
+    <rect x="463" y="91" width="124" height="122" rx="16" fill="#fff5e9" opacity="0.72"/>
+  </g>
+  <circle cx="525" cy="125" r="20" fill="#ecaa78"/>
+  <path d="M517 126 L523 132 L535 118" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="525" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#795036">Algoritma</text>
+  <text x="525" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6852">find · copy · sort</text>
+
+  <!-- Alt akış -->
+  <g filter="url(#soft)">
+    <rect x="109" y="251" width="422" height="43" rx="16" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <text x="143" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#467076">Veri</text>
+  <path d="M180 272 L245 272" stroke="#80aeb4" stroke-width="2"/>
+  <polygon points="245,272 236,267 236,277" fill="#80aeb4"/>
+  <text x="270" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#665184">Aralık</text>
+  <path d="M307 272 L373 272" stroke="#a08bbb" stroke-width="2"/>
+  <polygon points="373,272 364,267 364,277" fill="#a08bbb"/>
+  <text x="448" y="277" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#946344">İşlem sonucu</text>
+</svg>

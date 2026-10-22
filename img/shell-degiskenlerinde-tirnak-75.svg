@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="source" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#c9def7"/>
+    </linearGradient>
+    <linearGradient id="risk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe4df"/>
+      <stop offset="100%" stop-color="#ffd0c8"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddf4df"/>
+      <stop offset="100%" stop-color="#c4e9cc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#54718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#54718a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="52" r="86" fill="#dcefff" opacity="0.5"/>
+  <circle cx="596" cy="278" r="96" fill="#def2dc" opacity="0.55"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38526a">Shell değişkeni: tırnak argümanı korur</text>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="101" width="158" height="116" rx="18" fill="url(#source)" stroke="#b2cce7"/>
+  </g>
+  <rect x="52" y="119" width="124" height="27" rx="8" fill="#ffffff" opacity="0.78"/>
+  <text x="64" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536f">Değişken değeri</text>
+  <text x="52" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35546b">Yıllık Rapor.txt</text>
+  <line x1="53" y1="181" x2="175" y2="181" stroke="#9fbcd4" stroke-width="1"/>
+  <text x="52" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52718a">$file</text>
+
+  <path d="M193 143 C220 143 222 95 252 95" fill="none" stroke="#e28b80" stroke-width="2.5"/>
+  <polygon points="250,89 263,95 250,101" fill="#e28b80"/>
+  <path d="M193 181 C218 181 223 230 252 230" fill="none" stroke="#63aa79" stroke-width="2.5"/>
+  <polygon points="250,224 263,230 250,236" fill="#63aa79"/>
+
+  <text x="202" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#b25c55">tırnaksız</text>
+  <text x="202" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#44835a">çift tırnaklı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="263" y="52" width="178" height="105" rx="18" fill="url(#risk)" stroke="#efb1aa"/>
+  </g>
+  <circle cx="286" cy="78" r="13" fill="#ec887d"/>
+  <path d="M286 70 L286 80 M286 86 L286 87" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/>
+  <text x="309" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#934943">rm $file</text>
+  <text x="282" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#884d4a">Kelime bölünmesi</text>
+  <g filter="url(#smallShadow)">
+    <rect x="281" y="119" width="63" height="23" rx="7" fill="#fff8f6"/>
+    <rect x="352" y="119" width="72" height="23" rx="7" fill="#fff8f6"/>
+  </g>
+  <text x="293" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#944d48">Yıllık</text>
+  <text x="361" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#944d48">Rapor.txt</text>
+
+  <g filter="url(#shadow)">
+    <rect x="263" y="183" width="178" height="105" rx="18" fill="url(#safe)" stroke="#a9d9b3"/>
+  </g>
+  <circle cx="286" cy="209" r="13" fill="#62aa77"/>
+  <path d="M280 209 L284 213 L292 204" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="309" y="213" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39724b">rm "$file"</text>
+  <text x="282" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f704d">Tek argüman korunur</text>
+  <g filter="url(#smallShadow)">
+    <rect x="281" y="250" width="143" height="23" rx="7" fill="#fafffa"/>
+  </g>
+  <text x="293" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427250">Yıllık Rapor.txt</text>
+
+  <path d="M441 104 C468 104 468 119 490 119" fill="none" stroke="#e28b80" stroke-width="2.5"/>
+  <polygon points="488,113 501,119 488,125" fill="#e28b80"/>
+  <path d="M441 235 C468 235 468 218 490 218" fill="none" stroke="#63aa79" stroke-width="2.5"/>
+  <polygon points="488,212 501,218 488,224" fill="#63aa79"/>
+
+  <g filter="url(#shadow)">
+    <rect x="501" y="62" width="108" height="111" rx="18" fill="#fff4f1" stroke="#efc2ba"/>
+  </g>
+  <text x="520" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a514b">Risk</text>
+  <path d="M525 111 L537 92 L549 111 Z" fill="#ef927f"/>
+  <path d="M537 99 L537 105 M537 108 L537 109" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="520" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80504c">2 argüman</text>
+  <text x="520" y="151" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80504c">glob riski</text>
+
+  <g filter="url(#shadow)">
+    <rect x="501" y="188" width="108" height="100" rx="18" fill="#effaf0" stroke="#b8ddbf"/>
+  </g>
+  <text x="520" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39724b">Güvenli</text>
+  <circle cx="537" cy="239" r="13" fill="#63aa79"/>
+  <path d="M531 239 L535 243 L543 234" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="520" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f704d">1 argüman</text>
+
+  <rect x="35" y="270" width="185" height="29" rx="12" fill="#ffffff" opacity="0.72"/>
+  <text x="49" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#45657b">Kural: Değişkenleri çift tırnakla</text>
+</svg>
