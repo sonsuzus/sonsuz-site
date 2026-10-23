@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="cal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9e9ff"/>
+      <stop offset="1" stop-color="#e8defb"/>
+    </linearGradient>
+    <linearGradient id="robot" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9f3ed"/>
+      <stop offset="1" stop-color="#cce4f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#69809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#64748b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="75" cy="38" r="88" fill="#dceffd" opacity="0.45"/>
+  <circle cx="568" cy="281" r="110" fill="#dff3e2" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516d">EL-GÖZ KALİBRASYONU</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8296">Küçük açı hatası • uzak hedefte büyük sapma</text>
+
+  <g filter="url(#shadow)">
+    <rect x="29" y="87" width="144" height="139" rx="18" fill="#ffffff"/>
+    <rect x="29" y="87" width="144" height="34" rx="18" fill="#dceeff"/>
+    <rect x="29" y="104" width="144" height="17" fill="#dceeff"/>
+  </g>
+  <text x="101" y="109" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345671">Kamera Dünyası</text>
+
+  <g filter="url(#soft)">
+    <rect x="57" y="141" width="62" height="42" rx="9" fill="#759fc2"/>
+    <rect x="64" y="148" width="48" height="27" rx="5" fill="#d9f0fa"/>
+    <circle cx="88" cy="161.5" r="9" fill="#527fa8"/>
+    <circle cx="88" cy="161.5" r="5" fill="#d8f4f4"/>
+    <rect x="72" y="183" width="31" height="7" rx="3.5" fill="#638bae"/>
+  </g>
+  <path d="M131 149 L151 139 L151 184 L131 174 Z" fill="#c9e0ef" opacity="0.8"/>
+  <path d="M143 152 L158 145 L158 177 L143 170 Z" fill="#a9cbe0" opacity="0.7"/>
+  <text x="101" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53718a">Görüntü ve hedef</text>
+
+  <path d="M177 156 H222" stroke="#6c94b7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="222,156 213,151 213,161" fill="#6c94b7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="224" y="102" width="179" height="110" rx="20" fill="url(#cal)"/>
+    <rect x="236" y="114" width="155" height="86" rx="14" fill="#ffffff" opacity="0.55"/>
+  </g>
+  <text x="313" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#465477">Dönüşüm X</text>
+  <text x="313" y="151" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#586d87">Aᵢ X = X Bᵢ</text>
+  <path d="M258 171 C273 156 291 156 305 171 S338 186 364 165" fill="none" stroke="#7d9cc6" stroke-width="2.3" stroke-linecap="round"/>
+  <circle cx="258" cy="171" r="4" fill="#75b6ac"/>
+  <circle cx="364" cy="165" r="4" fill="#9280c8"/>
+  <text x="313" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65758a">R dönme · t öteleme</text>
+
+  <path d="M406 156 H438" stroke="#6c94b7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="438,156 429,151 429,161" fill="#6c94b7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="440" y="87" width="171" height="139" rx="18" fill="#ffffff"/>
+    <rect x="440" y="87" width="171" height="34" rx="18" fill="#dff3ec"/>
+    <rect x="440" y="104" width="171" height="17" fill="#dff3ec"/>
+  </g>
+  <text x="525" y="109" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356557">Robot Dünyası</text>
+
+  <g filter="url(#soft)">
+    <rect x="464" y="189" width="86" height="12" rx="6" fill="#729d95"/>
+    <rect x="479" y="164" width="19" height="28" rx="8" fill="#80afa7"/>
+    <circle cx="489" cy="160" r="12" fill="#5f9388"/>
+    <path d="M494 154 L525 137" stroke="#70a99c" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="525" cy="137" r="8" fill="#578b81"/>
+    <path d="M529 134 L548 153" stroke="#75aa9f" stroke-width="9" stroke-linecap="round"/>
+    <path d="M546 149 L558 145 M546 149 L550 160" stroke="#466f69" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <circle cx="574" cy="159" r="13" fill="#e3f2bc" stroke="#77a758" stroke-width="2"/>
+  <circle cx="574" cy="159" r="5" fill="#75a854"/>
+  <path d="M558 150 L568 150 M558 168 L568 168 M565 143 L565 151 M583 143 L583 151 M583 168 L591 168" stroke="#91b979" stroke-width="1.5"/>
+  <text x="574" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53756b">Uç efektör ve parça</text>
+
+  <g filter="url(#soft)">
+    <rect x="49" y="252" width="542" height="46" rx="16" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <text x="67" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#58708a">Hata etkisi</text>
+
+  <path d="M172 278 H287" stroke="#75ad85" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="287,278 278,273 278,283" fill="#75ad85"/>
+  <circle cx="162" cy="278" r="7" fill="#71ad7e"/>
+  <text x="213" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627a71">Doğru hedef</text>
+
+  <path d="M325 278 C364 278 395 269 438 255" fill="none" stroke="#e58672" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+  <polygon points="438,255 429,253 433,262" fill="#e58672"/>
+  <circle cx="451" cy="251" r="8" fill="#f3b0a1"/>
+  <path d="M445 245 L457 257 M457 245 L445 257" stroke="#c85f57" stroke-width="2"/>
+  <text x="416" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a65d59">Açı hatası → sapma</text>
+
+  <path d="M518 265 L518 281" stroke="#e58672" stroke-width="1.5"/>
+  <path d="M514 265 L522 265 M514 281 L522 281" stroke="#e58672" stroke-width="1.5"/>
+  <text x="532" y="277" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a65d59">mesafe artar</text>
+</svg>
