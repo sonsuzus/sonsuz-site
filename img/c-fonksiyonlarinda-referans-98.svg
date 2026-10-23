@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfeeff"/>
+      <stop offset="100%" stop-color="#cfe3fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7691aa" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7e96a8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="66" cy="48" r="74" fill="#d9eff0" opacity="0.42"/>
+  <circle cx="590" cy="276" r="96" fill="#e3ebd2" opacity="0.42"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526879" font-weight="600">C++ PARAMETRE SÖZLEŞMESİ</text>
+
+  <!-- Connections -->
+  <path d="M266 129 C224 111 199 93 173 82" fill="none" stroke="#8ca8b8" stroke-width="2"/>
+  <polygon points="174,76 162,78 170,87" fill="#8ca8b8"/>
+  <path d="M374 129 C417 111 442 93 467 82" fill="none" stroke="#8ca8b8" stroke-width="2"/>
+  <polygon points="466,76 478,78 470,87" fill="#8ca8b8"/>
+  <path d="M265 193 C222 211 198 229 172 243" fill="none" stroke="#8ca8b8" stroke-width="2"/>
+  <polygon points="171,237 160,246 174,248" fill="#8ca8b8"/>
+  <path d="M375 193 C418 211 442 229 468 243" fill="none" stroke="#8ca8b8" stroke-width="2"/>
+  <polygon points="466,237 480,246 466,248" fill="#8ca8b8"/>
+
+  <!-- Top left -->
+  <g filter="url(#soft)">
+    <rect x="46" y="48" width="144" height="70" rx="16" fill="#e5f5ec"/>
+    <rect x="46" y="48" width="144" height="70" rx="16" fill="none" stroke="#badfc9"/>
+    <circle cx="70" cy="72" r="13" fill="#7bbd96"/>
+    <path d="M64 72 L69 77 L77 67" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="91" y="69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355c47" font-weight="700">const T&amp;</text>
+    <text x="91" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567064">Zorunlu · Salt okuma</text>
+    <text x="118" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#567064">Ödünç erişim</text>
+  </g>
+
+  <!-- Top right -->
+  <g filter="url(#soft)">
+    <rect x="450" y="48" width="144" height="70" rx="16" fill="#fff1dc"/>
+    <rect x="450" y="48" width="144" height="70" rx="16" fill="none" stroke="#efd1a1"/>
+    <circle cx="474" cy="72" r="13" fill="#e4a65d"/>
+    <path d="M468 72 L480 72 M474 66 L480 72 L474 78" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="495" y="69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79532c" font-weight="700">T*</text>
+    <text x="495" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80694d">İsteğe bağlı · Null</text>
+    <text x="522" y="107" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80694d">Adres sinyali</text>
+  </g>
+
+  <!-- Center -->
+  <g filter="url(#shadow)">
+    <rect x="247" y="112" width="146" height="96" rx="24" fill="url(#core)"/>
+    <rect x="247" y="112" width="146" height="96" rx="24" fill="none" stroke="#aac9e7"/>
+    <circle cx="320" cy="142" r="18" fill="#6e9dcc"/>
+    <path d="M311 142 C311 135 317 131 323 134 C329 137 328 146 322 150 C317 153 311 149 311 142Z" fill="#ffffff"/>
+    <text x="320" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355b7d" font-weight="700">API Sözleşmesi</text>
+    <text x="320" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597890">Niyet görünür olsun</text>
+  </g>
+
+  <!-- Bottom left -->
+  <g filter="url(#soft)">
+    <rect x="46" y="213" width="150" height="72" rx="16" fill="#f3e8f8"/>
+    <rect x="46" y="213" width="150" height="72" rx="16" fill="none" stroke="#d8bfe4"/>
+    <circle cx="70" cy="238" r="13" fill="#ad7bc4"/>
+    <path d="M65 238 L69 242 L76 234" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="91" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#684579" font-weight="700">T&amp;</text>
+    <text x="91" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#775d83">Zorunlu · Değişebilir</text>
+    <text x="121" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#775d83">Aynı nesne</text>
+  </g>
+
+  <!-- Bottom right -->
+  <g filter="url(#soft)">
+    <rect x="444" y="213" width="150" height="72" rx="16" fill="#e3f1f7"/>
+    <rect x="444" y="213" width="150" height="72" rx="16" fill="none" stroke="#b7d8e5"/>
+    <circle cx="468" cy="238" r="13" fill="#65a7bd"/>
+    <path d="M462 238 L468 232 L474 238 L468 244 Z" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+    <text x="489" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356475" font-weight="700">unique_ptr</text>
+    <text x="489" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547682">Sahiplik devri</text>
+    <text x="519" y="274" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547682">Yaşam döngüsü</text>
+  </g>
+
+  <text x="320" y="302" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738792">Null · değişiklik · sahiplik</text>
+</svg>

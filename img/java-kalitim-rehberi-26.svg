@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="parent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9dcf7"/>
+    </linearGradient>
+    <linearGradient id="child" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f7e7"/>
+      <stop offset="100%" stop-color="#ccebd4"/>
+    </linearGradient>
+    <linearGradient id="abstract" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5e8ff"/>
+      <stop offset="100%" stop-color="#e5d2f3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7890a0" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#658195" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="79" cy="53" r="67" fill="#dceeff" opacity="0.42"/>
+  <circle cx="573" cy="263" r="91" fill="#dff2db" opacity="0.45"/>
+  <circle cx="515" cy="53" r="40" fill="#f1e0fb" opacity="0.40"/>
+
+  <text x="30" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496274">Java Kalıtım Haritası</text>
+  <path d="M30 42 H610" stroke="#bfd2da" stroke-width="1"/>
+
+  <path d="M315 109 V125 H142 V142" fill="none" stroke="#87a7b8" stroke-width="2"/>
+  <path d="M315 125 H316 V142" fill="none" stroke="#87a7b8" stroke-width="2"/>
+  <path d="M315 125 H489 V142" fill="none" stroke="#87a7b8" stroke-width="2"/>
+  <polygon points="137,139 147,139 142,147" fill="#87a7b8"/>
+  <polygon points="311,139 321,139 316,147" fill="#87a7b8"/>
+  <polygon points="484,139 494,139 489,147" fill="#87a7b8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="228" y="56" width="174" height="54" rx="16" fill="url(#parent)" stroke="#adc8df"/>
+    <circle cx="258" cy="83" r="15" fill="#ffffff" opacity="0.72"/>
+    <path d="M252 88 C253 82 263 82 264 88 M254 79 C254 75 262 75 262 79" fill="none" stroke="#5e86a1" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="280" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31546d">Hayvan</text>
+    <text x="280" y="95" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587486">üst sınıf</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="145" width="164" height="66" rx="16" fill="url(#child)" stroke="#b3d9bc"/>
+    <circle cx="89" cy="173" r="16" fill="#ffffff" opacity="0.75"/>
+    <path d="M80 171 L82 163 L87 167 L92 163 L95 171 M82 177 Q88 182 95 177 M86 173 H87 M91 173 H92" fill="none" stroke="#558369" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="113" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35644a">Kedi</text>
+    <text x="113" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547a62">mırıldan()</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="234" y="145" width="164" height="66" rx="16" fill="url(#child)" stroke="#b3d9bc"/>
+    <circle cx="263" cy="173" r="16" fill="#ffffff" opacity="0.75"/>
+    <path d="M253 177 V169 L258 165 L264 168 L271 166 L274 170 L271 177 M258 177 H258 M268 177 H269 M260 172 H261" fill="none" stroke="#558369" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="287" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35644a">Köpek</text>
+    <text x="287" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547a62">@Override sesÇıkar()</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="408" y="145" width="164" height="66" rx="16" fill="url(#abstract)" stroke="#d5bce4"/>
+    <circle cx="437" cy="173" r="16" fill="#ffffff" opacity="0.75"/>
+    <path d="M429 181 L437 164 L445 181 Z M434 176 H440" fill="none" stroke="#86649a" stroke-width="1.6" stroke-linejoin="round"/>
+    <text x="461" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#674779">Sekil</text>
+    <text x="461" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80638e">soyut şablon</text>
+  </g>
+
+  <path d="M316 212 V231" stroke="#7894a3" stroke-width="2"/>
+  <polygon points="311,228 321,228 316,236" fill="#7894a3"/>
+  <path d="M490 212 V231" stroke="#9b82aa" stroke-width="2"/>
+  <polygon points="485,228 495,228 490,236" fill="#9b82aa"/>
+
+  <g filter="url(#soft)">
+    <rect x="196" y="238" width="240" height="48" rx="15" fill="#ffffff" opacity="0.9" stroke="#c9dbe0"/>
+    <circle cx="220" cy="262" r="12" fill="#dcecff"/>
+    <path d="M215 263 L219 267 L226 257" fill="none" stroke="#527c96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="241" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#415f70">Dinamik çok biçimlilik</text>
+    <text x="241" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808d">çalışma zamanında seçim</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="456" y="238" width="122" height="48" rx="15" fill="#ffffff" opacity="0.9" stroke="#ddcbe6"/>
+    <text x="472" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#674779">Daire</text>
+    <text x="472" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80638e">alanHesapla()</text>
+  </g>
+
+  <path d="M490 236 H451" stroke="#9b82aa" stroke-width="2"/>
+  <polygon points="454,231 454,241 446,236" fill="#9b82aa"/>
+
+  <text x="62" y="307" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718894">is-a ilişkisi • extends • ortak davranış</text>
+</svg>
