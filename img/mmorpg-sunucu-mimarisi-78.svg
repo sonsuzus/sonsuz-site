@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="world" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9eaff"/>
+      <stop offset="100%" stop-color="#ccefdc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71829a" flood-opacity="0.2"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71829a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="159" r="126" fill="#dceefd" opacity="0.38"/>
+  <circle cx="319" cy="159" r="99" fill="#eff9f0" opacity="0.65"/>
+
+  <g stroke="#7d9ab5" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M122 159 H166"/>
+    <path d="M265 159 H290"/>
+    <path d="M401 132 C425 105 436 91 456 84"/>
+    <path d="M401 177 C425 203 436 220 456 230"/>
+    <path d="M348 209 V254"/>
+    <path d="M334 254 V248"/>
+  </g>
+
+  <g fill="#7d9ab5">
+    <polygon points="166,159 158,154 158,164"/>
+    <polygon points="290,159 282,154 282,164"/>
+    <polygon points="456,84 447,82 451,91"/>
+    <polygon points="456,230 451,221 447,230"/>
+    <polygon points="334,248 329,256 339,256"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="24" y="119" width="98" height="80" rx="18" fill="#fffdf8"/>
+    <circle cx="54" cy="146" r="12" fill="#c6dcfa"/>
+    <circle cx="53" cy="143" r="4" fill="#5d82ae"/>
+    <path d="M46 154 Q53 148 60 154" fill="none" stroke="#5d82ae" stroke-width="2"/>
+    <circle cx="82" cy="151" r="10" fill="#d2efd9"/>
+    <circle cx="82" cy="148" r="3.5" fill="#57956e"/>
+    <path d="M76 158 Q82 153 88 158" fill="none" stroke="#57956e" stroke-width="2"/>
+    <circle cx="69" cy="171" r="9" fill="#fde2bd"/>
+    <circle cx="69" cy="168" r="3" fill="#b77945"/>
+    <path d="M64 177 Q69 173 74 177" fill="none" stroke="#b77945" stroke-width="2"/>
+    <text x="73" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#40536a">Oyuncular</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="166" y="116" width="99" height="86" rx="18" fill="#e5ddfa"/>
+    <rect x="178" y="130" width="75" height="29" rx="9" fill="#f8f5ff"/>
+    <path d="M187 145 H199 M205 145 H217 M223 145 H244" stroke="#806baa" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="191" cy="176" r="5" fill="#8b76b6"/>
+    <circle cx="215" cy="176" r="5" fill="#8b76b6"/>
+    <circle cx="239" cy="176" r="5" fill="#8b76b6"/>
+    <text x="215" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#453a60">Geçit</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="290" y="99" width="111" height="121" rx="24" fill="url(#world)"/>
+    <circle cx="346" cy="143" r="29" fill="#f8fffc" stroke="#78aa98" stroke-width="2"/>
+    <path d="M321 144 Q333 133 346 143 Q359 153 371 142" fill="none" stroke="#6ea28f" stroke-width="2"/>
+    <path d="M325 154 Q346 164 367 154" fill="none" stroke="#8ab99d" stroke-width="2"/>
+    <path d="M346 115 V172" stroke="#8ab99d" stroke-width="2"/>
+    <text x="346" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#315d50">Dünya Sunucusu</text>
+    <text x="346" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54776d">Kurallar ve tick</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="456" y="46" width="160" height="78" rx="18" fill="#fff5dc"/>
+    <text x="476" y="69" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#765a28">Bölge Kümesi</text>
+    <rect x="475" y="80" width="35" height="25" rx="7" fill="#f9ddb2"/>
+    <rect x="518" y="80" width="35" height="25" rx="7" fill="#f8e7c7"/>
+    <rect x="561" y="80" width="35" height="25" rx="7" fill="#f9ddb2"/>
+    <path d="M510 92 H518 M553 92 H561" stroke="#c3934d" stroke-width="2"/>
+    <text x="493" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765a28">Z1</text>
+    <text x="536" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765a28">Z2</text>
+    <text x="579" y="97" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765a28">Z3</text>
+    <text x="536" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#96743c">Devir teslim</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="456" y="190" width="160" height="80" rx="18" fill="#dceafa"/>
+    <text x="476" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405e82">İlgi Alanı</text>
+    <g fill="none" stroke="#7ca3c8" stroke-width="1">
+      <rect x="476" y="224" width="16" height="15" rx="2"/>
+      <rect x="492" y="224" width="16" height="15" rx="2"/>
+      <rect x="508" y="224" width="16" height="15" rx="2"/>
+      <rect x="524" y="224" width="16" height="15" rx="2"/>
+      <rect x="476" y="239" width="16" height="15" rx="2"/>
+      <rect x="492" y="239" width="16" height="15" rx="2"/>
+      <rect x="508" y="239" width="16" height="15" rx="2"/>
+      <rect x="524" y="239" width="16" height="15" rx="2"/>
+    </g>
+    <circle cx="500" cy="238" r="19" fill="#8bbde6" opacity="0.3"/>
+    <circle cx="500" cy="238" r="4" fill="#4c88bb"/>
+    <text x="565" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405e82">Yakın</text>
+    <text x="565" y="254" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405e82">yayın</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="246" y="255" width="177" height="47" rx="15" fill="#e4f2eb"/>
+    <ellipse cx="274" cy="270" rx="15" ry="5" fill="#83b99b"/>
+    <path d="M259 270 V283 C259 290 289 290 289 283 V270" fill="#bfe0cb"/>
+    <ellipse cx="274" cy="283" rx="15" ry="5" fill="#bfe0cb"/>
+    <text x="303" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#386653">Kalıcı Veri</text>
+    <text x="303" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557c6a">Olay günlüğü</text>
+  </g>
+
+  <g opacity="0.75">
+    <path d="M42 55 C64 39 86 44 99 63" fill="none" stroke="#b7d6e8" stroke-width="2"/>
+    <circle cx="38" cy="57" r="4" fill="#a9cfe5"/>
+    <path d="M539 291 C561 275 588 278 606 294" fill="none" stroke="#b9dcbf" stroke-width="2"/>
+    <circle cx="610" cy="297" r="4" fill="#a7d3af"/>
+  </g>
+</svg>

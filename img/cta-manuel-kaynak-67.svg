@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="bad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1f1"/>
+      <stop offset="100%" stop-color="#ffe3e5"/>
+    </linearGradient>
+    <linearGradient id="good" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#effbf4"/>
+      <stop offset="100%" stop-color="#dff5e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#5d7488" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#526f85" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="43" cy="42" r="82" fill="#dcefff" opacity="0.42"/>
+  <circle cx="603" cy="284" r="108" fill="#dff4df" opacity="0.42"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385167">İstisna Anında Kaynak Yaşam Döngüsü</text>
+
+  <rect x="26" y="48" width="272" height="240" rx="20" fill="url(#bad)" filter="url(#shadow)"/>
+  <rect x="342" y="48" width="272" height="240" rx="20" fill="url(#good)" filter="url(#shadow)"/>
+
+  <rect x="43" y="63" width="238" height="30" rx="12" fill="#f7cdd2"/>
+  <circle cx="62" cy="78" r="7" fill="#df6572"/>
+  <text x="77" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8d3441">Manuel yönetim</text>
+
+  <rect x="359" y="63" width="238" height="30" rx="12" fill="#ccebd9"/>
+  <circle cx="378" cy="78" r="7" fill="#4ba875"/>
+  <text x="393" y="82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#236247">RAII ve akıllı işaretçi</text>
+
+  <rect x="71" y="111" width="94" height="43" rx="11" fill="#ffffff" filter="url(#soft)"/>
+  <text x="118" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b5965">new</text>
+  <text x="118" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687681">Kaynak edin</text>
+
+  <line x1="165" y1="132" x2="192" y2="132" stroke="#be6871" stroke-width="2"/>
+  <polygon points="198,132 190,127 190,137" fill="#be6871"/>
+
+  <rect x="199" y="111" width="72" height="43" rx="11" fill="#fff8f8" filter="url(#soft)"/>
+  <text x="235" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a84b59">İşlem</text>
+  <text x="235" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687681">Riskli</text>
+
+  <line x1="235" y1="154" x2="235" y2="177" stroke="#be6871" stroke-width="2"/>
+  <polygon points="235,183 230,175 240,175" fill="#be6871"/>
+
+  <path d="M235 184 L262 211 L235 238 L208 211 Z" fill="#f58d96" filter="url(#soft)"/>
+  <text x="235" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">İstisna</text>
+  <text x="235" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">!</text>
+
+  <line x1="208" y1="211" x2="164" y2="211" stroke="#be6871" stroke-width="2"/>
+  <polygon points="158,211 166,206 166,216" fill="#be6871"/>
+
+  <rect x="50" y="190" width="106" height="43" rx="11" fill="#ffffff" filter="url(#soft)"/>
+  <text x="103" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b04755">delete atlandı</text>
+  <text x="103" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78818a">Sızıntı</text>
+
+  <circle cx="103" cy="258" r="12" fill="#e56872" opacity="0.2"/>
+  <circle cx="103" cy="258" r="7" fill="#e56872"/>
+  <path d="M100 255 Q103 250 106 255 L106 261 Q103 265 100 261 Z" fill="#ffffff"/>
+  <text x="124" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a13f4d">Sahipsiz bellek</text>
+
+  <rect x="386" y="111" width="92" height="43" rx="11" fill="#ffffff" filter="url(#soft)"/>
+  <text x="432" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#287252">RAII nesnesi</text>
+  <text x="432" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687681">Sahiplik</text>
+
+  <line x1="478" y1="132" x2="504" y2="132" stroke="#51a477" stroke-width="2"/>
+  <polygon points="510,132 502,127 502,137" fill="#51a477"/>
+
+  <rect x="511" y="111" width="72" height="43" rx="11" fill="#ffffff" filter="url(#soft)"/>
+  <text x="547" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#287252">İşlem</text>
+  <text x="547" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687681">Riskli</text>
+
+  <line x1="547" y1="154" x2="547" y2="177" stroke="#51a477" stroke-width="2"/>
+  <polygon points="547,183 542,175 552,175" fill="#51a477"/>
+
+  <path d="M547 184 L574 211 L547 238 L520 211 Z" fill="#75c99a" filter="url(#soft)"/>
+  <text x="547" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">İstisna</text>
+  <text x="547" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">!</text>
+
+  <line x1="520" y1="211" x2="477" y2="211" stroke="#51a477" stroke-width="2"/>
+  <polygon points="471,211 479,206 479,216" fill="#51a477"/>
+
+  <rect x="365" y="190" width="105" height="43" rx="11" fill="#ffffff" filter="url(#soft)"/>
+  <text x="417" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#287252">Yıkıcı çalışır</text>
+  <text x="417" y="223" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687681">Otomatik temizlik</text>
+
+  <circle cx="417" cy="258" r="12" fill="#56ae7d" opacity="0.2"/>
+  <path d="M410 258 L415 263 L425 252" fill="none" stroke="#34935f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="438" y="262" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#287252">Kaynak serbest</text>
+</svg>

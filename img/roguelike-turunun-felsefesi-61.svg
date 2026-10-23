@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8eabd9"/>
+      <stop offset="100%" stop-color="#6989bb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6f8297" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#6f8297" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="160" r="129" fill="#dceaf3" opacity="0.38"/>
+  <circle cx="319" cy="160" r="91" fill="none" stroke="#b7cddd" stroke-width="2" stroke-dasharray="5 7"/>
+
+  <!-- Cycle paths -->
+  <path d="M210 107 C232 70 264 53 299 51" fill="none" stroke="#86a1bf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="298,45 311,52 297,58" fill="#86a1bf"/>
+  <path d="M393 72 C431 86 451 111 457 137" fill="none" stroke="#d69b70" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="451,136 459,149 464,134" fill="#d69b70"/>
+  <path d="M438 204 C416 240 380 260 346 266" fill="none" stroke="#a77caa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="347,259 334,268 350,272" fill="#a77caa"/>
+  <path d="M241 251 C207 229 187 199 183 174" fill="none" stroke="#6ba69c" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="177,175 184,161 190,177" fill="#6ba69c"/>
+  <path d="M188 128 C192 115 198 104 206 94" fill="none" stroke="#86a1bf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="202,96 212,85 207,101" fill="#86a1bf"/>
+
+  <!-- Top: Decision -->
+  <g filter="url(#shadow)">
+    <rect x="253" y="20" width="133" height="58" rx="17" fill="#e3ecfb"/>
+    <rect x="263" y="31" width="36" height="36" rx="11" fill="#8ca9d7"/>
+    <path d="M274 42 L282 37 L290 42 L290 53 L282 58 L274 53 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M282 42 L282 52 M274 42 L282 47 L290 42" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="310" y="45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38506e">Karar Anı</text>
+    <text x="310" y="62" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60748b">ödül · tehlike</text>
+  </g>
+
+  <!-- Right: Risk -->
+  <g filter="url(#shadow)">
+    <rect x="452" y="116" width="154" height="70" rx="18" fill="#fff0e4"/>
+    <rect x="464" y="130" width="37" height="37" rx="12" fill="#dfa071"/>
+    <path d="M482 136 L493 157 L471 157 Z" fill="#fff8f0" stroke="#ffffff" stroke-width="1.2"/>
+    <rect x="481" y="143" width="2.5" height="7" rx="1" fill="#d48759"/>
+    <circle cx="482" cy="153" r="1.5" fill="#d48759"/>
+    <text x="512" y="144" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#795138">Risk Hesabı</text>
+    <text x="512" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#96735c">olasılık · kaynak</text>
+  </g>
+
+  <!-- Bottom: Death -->
+  <g filter="url(#shadow)">
+    <rect x="258" y="241" width="162" height="59" rx="17" fill="#f3e7f4"/>
+    <rect x="270" y="252" width="36" height="36" rx="11" fill="#ae87b0"/>
+    <path d="M281 261 C281 257 295 257 295 261 L295 271 C295 276 291 279 288 279 C285 279 281 276 281 271 Z" fill="#fffafd"/>
+    <circle cx="285" cy="267" r="2" fill="#ae87b0"/>
+    <circle cx="291" cy="267" r="2" fill="#ae87b0"/>
+    <path d="M285 274 L291 274" stroke="#ae87b0" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="317" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#704d73">Kalıcı Ölüm</text>
+    <text x="317" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d6f91">koşu sona erer</text>
+  </g>
+
+  <!-- Left: Learning -->
+  <g filter="url(#shadow)">
+    <rect x="31" y="115" width="155" height="72" rx="18" fill="#e2f3ed"/>
+    <rect x="43" y="132" width="37" height="37" rx="12" fill="#72ab9e"/>
+    <path d="M53 141 C58 138 63 139 66 142 C69 139 74 138 79 141 L79 158 C74 156 70 157 66 160 C62 157 58 156 53 158 Z" fill="#f8fffc"/>
+    <path d="M66 142 L66 160" stroke="#72ab9e" stroke-width="1.4"/>
+    <text x="91" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3e7168">Öğrenme</text>
+    <text x="91" y="163" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8d85">bilgi korunur</text>
+  </g>
+
+  <!-- Center -->
+  <g filter="url(#shadow)">
+    <circle cx="319" cy="160" r="62" fill="url(#core)"/>
+    <circle cx="319" cy="160" r="52" fill="none" stroke="#ffffff" stroke-opacity="0.34" stroke-width="1.5"/>
+    <path d="M304 174 L311 146 L322 154 L334 136 L329 174 Z" fill="#eef5ff"/>
+    <path d="M302 179 L337 179" stroke="#eef5ff" stroke-width="3" stroke-linecap="round"/>
+    <text x="319" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Hesaplanmış Cesaret</text>
+  </g>
+
+  <!-- Center connector details -->
+  <path d="M252 125 L270 137" stroke="#9db8d1" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="267,131 278,142 263,140" fill="#9db8d1"/>
+  <path d="M382 145 L437 145" stroke="#d4a37e" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="434,139 446,145 434,151" fill="#d4a37e"/>
+  <path d="M381 184 L397 225" stroke="#b28cb5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="390,222 401,234 402,218" fill="#b28cb5"/>
+  <path d="M258 187 L197 187" stroke="#7eafa6" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="200,181 188,187 200,193" fill="#7eafa6"/>
+</svg>
