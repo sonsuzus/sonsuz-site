@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6d9ff"/>
+      <stop offset="100%" stop-color="#d1c0f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#526579" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#526579" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="564" cy="47" r="80" fill="#dceff0" opacity="0.42"/>
+  <circle cx="75" cy="289" r="92" fill="#e7ddf5" opacity="0.34"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e5264">MARS KOLONİSİ · KAYNAK DENGESİ</text>
+  <path d="M28 39 H612" stroke="#cad9df" stroke-width="1"/>
+
+  <!-- left resource cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="27" y="69" width="133" height="57" rx="15" fill="#d9f1f7"/>
+    <circle cx="52" cy="97" r="14" fill="#8bcddd"/>
+    <path d="M52 86 C46 94 44 98 44 102 C44 107 47.5 111 52 111 C56.5 111 60 107 60 102 C60 98 58 94 52 86Z" fill="#f7fcfd"/>
+    <text x="76" y="92" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315565">SU</text>
+    <text x="76" y="109" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54727e">Buz · geri dönüşüm</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="27" y="139" width="133" height="57" rx="15" fill="#d9f1df"/>
+    <circle cx="52" cy="167" r="14" fill="#8cc99b"/>
+    <path d="M45 171 C48 164 51 161 57 158 C57 165 53 172 47 174 Z" fill="#f8fffa"/>
+    <path d="M47 174 L57 158" stroke="#6da77b" stroke-width="1.4"/>
+    <text x="76" y="162" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315b45">OKSİJEN</text>
+    <text x="76" y="179" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547466">Elektroliz · sera</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="27" y="209" width="133" height="57" rx="15" fill="#fff0ca"/>
+    <circle cx="52" cy="237" r="14" fill="#f1c969"/>
+    <circle cx="52" cy="237" r="6" fill="#fffaf0"/>
+    <path d="M52 219 V224 M52 250 V255 M34 237 H39 M65 237 H70 M39 224 L42 227 M62 247 L65 250 M65 224 L62 227 M42 247 L39 250" stroke="#fffaf0" stroke-width="2" stroke-linecap="round"/>
+    <text x="76" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#73571c">ENERJİ</text>
+    <text x="76" y="249" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806d42">Güneş · batarya</text>
+  </g>
+
+  <!-- input paths -->
+  <path d="M160 97 H202" fill="none" stroke="#7fb6c4" stroke-width="2"/>
+  <polygon points="202,97 194,92 194,102" fill="#7fb6c4"/>
+  <path d="M160 167 H202" fill="none" stroke="#80b58e" stroke-width="2"/>
+  <polygon points="202,167 194,162 194,172" fill="#80b58e"/>
+  <path d="M160 237 H202" fill="none" stroke="#d4a943" stroke-width="2"/>
+  <polygon points="202,237 194,232 194,242" fill="#d4a943"/>
+
+  <!-- central optimizer -->
+  <g filter="url(#shadow)">
+    <rect x="205" y="77" width="209" height="177" rx="24" fill="url(#core)"/>
+    <rect x="222" y="96" width="175" height="35" rx="11" fill="#f7f3ff" opacity="0.85"/>
+    <text x="309" y="118" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#51416f">OPTİMİZASYON</text>
+
+    <path d="M245 155 H374" stroke="#b29bd9" stroke-width="1.5"/>
+    <circle cx="250" cy="174" r="15" fill="#f7f3ff"/>
+    <path d="M244 175 L249 180 L257 168" fill="none" stroke="#8370ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="274" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#594875">Güvenli eşikler</text>
+    <text x="274" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f6184">stok ve risk</text>
+
+    <rect x="231" y="207" width="157" height="29" rx="10" fill="#b99ee1"/>
+    <text x="309" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Planla · Dengele</text>
+  </g>
+
+  <!-- output -->
+  <path d="M414 165 H451" fill="none" stroke="#7b6b9b" stroke-width="2.4"/>
+  <polygon points="451,165 442,159 442,171" fill="#7b6b9b"/>
+
+  <!-- colony -->
+  <g filter="url(#shadow)">
+    <rect x="454" y="83" width="159" height="163" rx="22" fill="#f4e0dc"/>
+    <text x="533" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#784d48">KOLONİ SİSTEMİ</text>
+    <path d="M476 120 H591" stroke="#dfbdb8" stroke-width="1"/>
+
+    <rect x="475" y="136" width="117" height="34" rx="10" fill="#fff8f5"/>
+    <circle cx="493" cy="153" r="8" fill="#df8f81"/>
+    <path d="M489 155 C490 149 496 149 497 155 M493 145 V148" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round"/>
+    <text x="510" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#714f4a">Yaşam desteği</text>
+
+    <rect x="475" y="180" width="117" height="34" rx="10" fill="#fff8f5"/>
+    <path d="M486 202 H501 V191 H486 Z M489 199 H492 M495 199 H498" fill="#9ebd87"/>
+    <path d="M486 191 L493.5 185 L501 191" fill="none" stroke="#83a66f" stroke-width="1.6" stroke-linejoin="round"/>
+    <text x="510" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#714f4a">Sera ve cihazlar</text>
+  </g>
+
+  <!-- feedback loop -->
+  <path d="M533 246 V278 H309 V263" fill="none" stroke="#93a6ae" stroke-width="1.7" stroke-dasharray="5 4"/>
+  <polygon points="309,263 304,272 314,272" fill="#93a6ae"/>
+  <rect x="414" y="267" width="113" height="22" rx="9" fill="#e7eff0"/>
+  <text x="470" y="282" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b73">Ölçüm geri bildirimi</text>
+
+  <!-- forecast badge -->
+  <g filter="url(#smallShadow)">
+    <rect x="236" y="270" width="145" height="30" rx="13" fill="#dbecef"/>
+    <path d="M253 288 C253 282 257 279 262 279 C266 279 268 281 269 284 C274 283 277 286 277 290 H253 Z" fill="#82adb8"/>
+    <text x="286" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46656e">Tahmin · fırtına</text>
+  </g>
+</svg>
