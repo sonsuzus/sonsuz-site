@@ -12,7 +12,7 @@ tags:
   - robotik
   - yapay zekâ
 toc: true
-image: /img/cerrahî-navigasyon-sistemleri-95.png
+image: /img/cerrahi-navigasyon-sistemleri-95.png
 ---
 
 Bir cerrahın milimetrelerle ölçülen bir hedefe ulaşması gerektiğini düşünün: Beyindeki küçük bir tümör, omurgaya yerleştirilecek vida veya eklem içindeki hassas bir bölge… Cerrahî navigasyon sistemleri; tıbbi görüntüleri, konum sensörlerini ve matematiksel dönüşümleri birleştirerek cerraha aletinin vücut içindeki yerini gerçek zamanlı gösterir. Kısacası sistem, otomobillerdeki GPS’in ameliyathaneye uyarlanmış, çok daha hassas kuzenidir.
@@ -31,7 +31,7 @@ Navigasyon için üç şey gerekir: Önceden hazırlanmış bir **harita**, hari
 | Rota | Yol tarifi | Güvenli cerrahî yaklaşım |
 | Hata riski | Yanlış sokağa girmek | Sağlıklı dokuya yaklaşmak |
 
-![cerrahî-navigasyon-sistemleri-95](/img/cerrahî-navigasyon-sistemleri-95.svg)
+![cerrahî-navigasyon-sistemleri-95](/img/cerrahi-navigasyon-sistemleri-95.svg)
 
 
 Buradaki önemli fark hassasiyettir. Otomobil navigasyonunda birkaç metrelik sapma kabul edilebilirken beyin veya omurga cerrahisinde birkaç milimetre bile kritik olabilir.
