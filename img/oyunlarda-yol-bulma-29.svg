@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="mesh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8d9ee"/>
+      <stop offset="100%" stop-color="#bde6c5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#59738a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#59738a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536c">NAVMESH İLE AKILLI HAREKET</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71899a">Yürünebilir alan → rota → doğal kaçınma</text>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="69" width="192" height="215" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="42" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41627a">Yürünebilir Dünya</text>
+
+  <rect x="40" y="108" width="160" height="151" rx="13" fill="#edf5f5" stroke="#c6dce1" stroke-width="1.5"/>
+  <path d="M48 224 L71 176 L96 187 L112 141 L145 128 L178 150 L190 207 L163 239 L101 245 Z" fill="url(#mesh)" stroke="#77afbf" stroke-width="1.5"/>
+  <path d="M71 176 L112 141 L121 190 L96 187 Z" fill="#c4e8d5" stroke="#77afbf" stroke-width="1"/>
+  <path d="M112 141 L145 128 L151 177 L121 190 Z" fill="#abdceb" stroke="#77afbf" stroke-width="1"/>
+  <path d="M145 128 L178 150 L151 177 Z" fill="#bfe6d0" stroke="#77afbf" stroke-width="1"/>
+  <path d="M96 187 L121 190 L141 220 L101 245 Z" fill="#a9d9e9" stroke="#77afbf" stroke-width="1"/>
+  <path d="M121 190 L151 177 L163 239 L141 220 Z" fill="#b9e3ca" stroke="#77afbf" stroke-width="1"/>
+  <path d="M151 177 L190 207 L163 239 Z" fill="#a8d9ee" stroke="#77afbf" stroke-width="1"/>
+
+  <rect x="75" y="151" width="29" height="21" rx="4" fill="#e99f92" stroke="#c97970" stroke-width="1"/>
+  <path d="M76 151 L89 140 L105 151" fill="#f4b7a9" stroke="#c97970" stroke-width="1"/>
+  <path d="M166 112 L194 112 L194 135 L166 135 Z" fill="#7d91a0" opacity="0.85"/>
+  <path d="M166 112 L194 135 M194 112 L166 135" stroke="#f5f9ff" stroke-width="2"/>
+
+  <circle cx="61" cy="219" r="9" fill="#5c9bd5" filter="url(#smallShadow)"/>
+  <circle cx="61" cy="216" r="3" fill="#ffffff"/>
+  <circle cx="178" cy="151" r="9" fill="#e98272" filter="url(#smallShadow)"/>
+  <circle cx="178" cy="148" r="3" fill="#ffffff"/>
+  <text x="46" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587286">Başlangıç</text>
+  <text x="158" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587286">Hedef</text>
+
+  <path d="M226 151 L252 151" stroke="#7d9caf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="258,151 249,145 249,157" fill="#7d9caf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="265" y="69" width="125" height="215" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="286" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41627a">Rota Hesabı</text>
+
+  <rect x="280" y="110" width="94" height="39" rx="10" fill="#e8f1ff"/>
+  <text x="310" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4775a7">A* Arama</text>
+
+  <path d="M327 154 L327 169" stroke="#8aa3b4" stroke-width="2"/>
+  <polygon points="327,175 322,167 332,167" fill="#8aa3b4"/>
+
+  <rect x="280" y="178" width="94" height="40" rx="10" fill="#e9f7ed"/>
+  <text x="299" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#498360">Funnel</text>
+
+  <path d="M327 223 L327 238" stroke="#8aa3b4" stroke-width="2"/>
+  <polygon points="327,244 322,236 332,236" fill="#8aa3b4"/>
+
+  <rect x="280" y="247" width="94" height="23" rx="9" fill="#fff1da"/>
+  <text x="292" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b6b31">Düz rota</text>
+
+  <path d="M400 151 L426 151" stroke="#7d9caf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="432,151 423,145 423,157" fill="#7d9caf"/>
+
+  <g filter="url(#shadow)">
+    <rect x="439" y="69" width="177" height="215" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="458" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41627a">Gerçekçi Hareket</text>
+
+  <rect x="455" y="109" width="145" height="145" rx="14" fill="#eff7f3" stroke="#d2e6dc"/>
+  <path d="M471 225 C497 208 500 176 526 176 C549 176 548 139 582 130" fill="none" stroke="#4d93c6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M471 225 C497 208 500 176 526 176 C549 176 548 139 582 130" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" opacity="0.8"/>
+
+  <circle cx="508" cy="184" r="16" fill="#f6c56b" opacity="0.42"/>
+  <circle cx="508" cy="184" r="10" fill="#f0a85b" filter="url(#smallShadow)"/>
+  <circle cx="508" cy="181" r="3" fill="#ffffff"/>
+  <path d="M498 193 L490 202" stroke="#d58259" stroke-width="1.5"/>
+  <path d="M518 193 L526 202" stroke="#d58259" stroke-width="1.5"/>
+
+  <circle cx="471" cy="225" r="9" fill="#5c9bd5"/>
+  <circle cx="471" cy="222" r="3" fill="#ffffff"/>
+  <circle cx="582" cy="130" r="10" fill="#e98272"/>
+  <circle cx="582" cy="127" r="3" fill="#ffffff"/>
+
+  <path d="M524 165 C535 153 544 151 554 157" fill="none" stroke="#76b48b" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="558,160 550,153 549,163" fill="#76b48b"/>
+
+  <rect x="463" y="263" width="130" height="18" rx="8" fill="#e7f2fb"/>
+  <text x="474" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e718a">Yerel kaçınma</text>
+</svg>
