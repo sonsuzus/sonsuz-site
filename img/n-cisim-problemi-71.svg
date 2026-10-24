@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6dcfb"/>
+      <stop offset="100%" stop-color="#d8ecfb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#60758c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#60758c" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="41" r="56" fill="#d8eff0" opacity="0.38"/>
+  <circle cx="588" cy="281" r="72" fill="#e5dcfa" opacity="0.34"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42566c">N-CİSİM SİMÜLASYONU</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738498">kütle çekimi • sayısal zaman adımları</text>
+
+  <!-- left input -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="79" width="143" height="159" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="42" y="94" width="115" height="27" rx="10" fill="#d9f0e8"/>
+  <text x="99.5" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315f58">Başlangıç durumu</text>
+
+  <circle cx="65" cy="146" r="12" fill="#f7c9ad" filter="url(#soft)"/>
+  <circle cx="65" cy="146" r="5" fill="#d9875e"/>
+  <text x="86" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a5e6d">Konum</text>
+  <text x="86" y="158" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81909d">rᵢ</text>
+
+  <circle cx="65" cy="183" r="12" fill="#cbe4f5" filter="url(#soft)"/>
+  <path d="M59 183 L70 183 M67 179 L71 183 L67 187" fill="none" stroke="#4f89ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="86" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a5e6d">Hız</text>
+  <text x="86" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81909d">vᵢ</text>
+
+  <circle cx="65" cy="220" r="12" fill="#f6df9c" filter="url(#soft)"/>
+  <text x="65" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8b6a16">m</text>
+  <text x="86" y="217" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4a5e6d">Kütle</text>
+  <text x="86" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#81909d">mᵢ</text>
+
+  <!-- connector -->
+  <path d="M171 158 H202" fill="none" stroke="#8ba2af" stroke-width="2"/>
+  <polygon points="202,158 194,153 194,163" fill="#8ba2af"/>
+
+  <!-- central engine -->
+  <g filter="url(#shadow)">
+    <rect x="202" y="67" width="234" height="183" rx="23" fill="url(#core)"/>
+  </g>
+  <text x="319" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4e4776">Leapfrog zaman döngüsü</text>
+
+  <g filter="url(#soft)">
+    <rect x="224" y="111" width="88" height="50" rx="13" fill="#ffffff"/>
+    <rect x="326" y="111" width="88" height="50" rx="13" fill="#ffffff"/>
+    <rect x="275" y="182" width="88" height="50" rx="13" fill="#ffffff"/>
+  </g>
+
+  <text x="268" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47606e">Kuvvet</text>
+  <text x="268" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788b98">ivme toplamı</text>
+
+  <text x="370" y="132" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47606e">Yarım hız</text>
+  <text x="370" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788b98">½ Δt · a</text>
+
+  <text x="319" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#47606e">Konum güncelle</text>
+  <text x="319" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788b98">Δt · v</text>
+
+  <path d="M312 136 H326" fill="none" stroke="#8a79b2" stroke-width="2"/>
+  <polygon points="326,136 319,132 319,140" fill="#8a79b2"/>
+  <path d="M370 161 V172 H319 V182" fill="none" stroke="#8a79b2" stroke-width="2"/>
+  <polygon points="319,182 315,175 323,175" fill="#8a79b2"/>
+  <path d="M275 207 H244 V173" fill="none" stroke="#8a79b2" stroke-width="2"/>
+  <polygon points="244,173 240,180 248,180" fill="#8a79b2"/>
+
+  <rect x="221" y="258" width="197" height="25" rx="11" fill="#f7efd5" filter="url(#soft)"/>
+  <text x="319.5" y="275" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79622d">ε yumuşatma • Δt hassasiyet</text>
+
+  <!-- connector -->
+  <path d="M436 158 H463" fill="none" stroke="#8ba2af" stroke-width="2"/>
+  <polygon points="463,158 455,153 455,163" fill="#8ba2af"/>
+
+  <!-- output -->
+  <g filter="url(#shadow)">
+    <rect x="463" y="79" width="149" height="159" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="537.5" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f596d">Yörünge sonucu</text>
+  <line x1="483" y1="211" x2="590" y2="211" stroke="#c3d2db" stroke-width="1.5"/>
+  <line x1="483" y1="126" x2="483" y2="211" stroke="#c3d2db" stroke-width="1.5"/>
+  <path d="M493 195 C508 141 564 130 575 181 C581 207 537 201 516 181 C500 164 514 138 548 138" fill="none" stroke="#6d91b7" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M491 178 C517 215 573 194 561 151 C555 132 518 144 515 166" fill="none" stroke="#dc9275" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="535" cy="173" r="10" fill="#8a6bb5" filter="url(#soft)"/>
+  <circle cx="535" cy="173" r="4" fill="#f3e8ff"/>
+  <circle cx="548" cy="138" r="5" fill="#6d91b7"/>
+  <circle cx="491" cy="178" r="5" fill="#dc9275"/>
+  <text x="537.5" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#738498">enerji ve momentum</text>
+
+  <!-- footer -->
+  <g filter="url(#soft)">
+    <rect x="28" y="276" width="166" height="27" rx="12" fill="#e0f0ee"/>
+    <rect x="445" y="276" width="167" height="27" rx="12" fill="#ece5f8"/>
+  </g>
+  <text x="111" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426d67">Doğruluk: küçük Δt</text>
+  <text x="528.5" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62527b">Ölçek: Barnes–Hut</text>
+</svg>
