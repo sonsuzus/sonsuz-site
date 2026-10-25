@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="sus" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#bde9f2"/>
+      <stop offset="1" stop-color="#92d4e4"/>
+    </linearGradient>
+    <linearGradient id="inf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd5c6"/>
+      <stop offset="1" stop-color="#f4a990"/>
+    </linearGradient>
+    <linearGradient id="rec" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d4edc3"/>
+      <stop offset="1" stop-color="#a9d58b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.2"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="326" cy="156" r="131" fill="#dceef0" opacity="0.34"/>
+  <circle cx="326" cy="156" r="102" fill="none" stroke="#b7d8dd" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7"/>
+
+  <text x="28" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556a">SIR SALGIN MODELİ</text>
+  <text x="28" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8390">N = S + I + R · Kapalı toplum</text>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="88" width="148" height="126" rx="20" fill="url(#sus)"/>
+    <circle cx="55" cy="119" r="16" fill="#eafaff" opacity="0.78"/>
+    <path d="M49 122c2-8 10-8 12 0M51 115a4 4 0 1 0 8 0a4 4 0 1 0-8 0" fill="none" stroke="#32798b" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="81" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#24586a">DUYARLI</text>
+    <text x="81" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#376d7c">S(t)</text>
+    <line x1="46" y1="153" x2="155" y2="153" stroke="#5da9b8" opacity="0.5"/>
+    <text x="46" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#376d7c">Hastalığa açık</text>
+    <text x="46" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#24586a">Başlangıç nüfusu</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="250" y="88" width="151" height="126" rx="20" fill="url(#inf)"/>
+    <circle cx="279" cy="119" r="16" fill="#fff2eb" opacity="0.8"/>
+    <circle cx="279" cy="119" r="6.5" fill="none" stroke="#ae6049" stroke-width="1.7"/>
+    <path d="M279 108v-4M279 134v-4M268 119h-4M294 119h-4M271 111l-3-3M287 127l3 3M287 111l3-3M271 127l-3 3" stroke="#ae6049" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="305" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#914733">ENFEKTE</text>
+    <text x="305" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a65b48">I(t)</text>
+    <line x1="269" y1="153" x2="381" y2="153" stroke="#d98268" opacity="0.55"/>
+    <text x="269" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a65b48">Bulaştırıcı</text>
+    <text x="269" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#914733">Vaka zirvesi</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="468" y="88" width="145" height="126" rx="20" fill="url(#rec)"/>
+    <circle cx="496" cy="119" r="16" fill="#f4ffed" opacity="0.8"/>
+    <path d="M488 119l5 5 11-12" fill="none" stroke="#54864b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="521" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476f40">İYİLEŞEN</text>
+    <text x="521" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8755">R(t)</text>
+    <line x1="487" y1="153" x2="593" y2="153" stroke="#7eaf72" opacity="0.55"/>
+    <text x="487" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8755">Bağışıklık</text>
+    <text x="487" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#476f40">Birikimli artış</text>
+  </g>
+
+  <path d="M176 145 C202 145 219 145 248 145" fill="none" stroke="#e18a70" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="248,145 238,139 238,151" fill="#e18a70"/>
+  <g filter="url(#soft)">
+    <rect x="183" y="116" width="57" height="23" rx="11" fill="#fffaf4"/>
+    <text x="194" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b15f48">β temas</text>
+  </g>
+
+  <path d="M402 145 C424 145 444 145 466 145" fill="none" stroke="#75a96a" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="466,145 456,139 456,151" fill="#75a96a"/>
+  <g filter="url(#soft)">
+    <rect x="408" y="116" width="54" height="23" rx="11" fill="#fafff7"/>
+    <text x="418" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b8b51">γ iyileşme</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="27" y="248" width="188" height="48" rx="15" fill="#ffffff" opacity="0.92"/>
+    <text x="44" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b677a">MATEMATİKSEL MOTOR</text>
+    <text x="44" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#688191">dS/dt · dI/dt · dR/dt</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="231" y="239" width="178" height="57" rx="15" fill="#ffffff" opacity="0.92"/>
+    <text x="248" y="260" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#775543">ÜREME SAYISI</text>
+    <text x="248" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7059">R₀ = β / γ</text>
+    <rect x="329" y="255" width="62" height="23" rx="11" fill="#ffe4d8"/>
+    <text x="342" y="271" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ad5b43">R₀ &gt; 1</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="425" y="232" width="188" height="64" rx="15" fill="#ffffff" opacity="0.92"/>
+    <text x="442" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4d6874">ZAMAN İÇİNDE SİMÜLASYON</text>
+    <line x1="443" y1="280" x2="594" y2="280" stroke="#b8cbd0" stroke-width="1.2"/>
+    <path d="M445 278 C461 276 470 270 480 254 C490 238 504 242 518 258 C531 273 550 278 590 279" fill="none" stroke="#e58669" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M445 276 C475 270 506 263 538 254 C560 248 577 246 590 245" fill="none" stroke="#79ac70" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M445 248 C478 250 509 258 539 267 C560 273 578 276 590 277" fill="none" stroke="#55aebd" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

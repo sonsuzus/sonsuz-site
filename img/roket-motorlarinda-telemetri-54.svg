@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#d5f3eb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7890a4" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7890a4" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="158" r="115" fill="#dceef4" opacity="0.32"/>
+  <circle cx="319" cy="158" r="83" fill="#ffffff" opacity="0.5"/>
+
+  <!-- Bağlantılar -->
+  <path d="M168 75 C205 75 207 111 237 122" fill="none" stroke="#74a8bf" stroke-width="2.5"/>
+  <polygon points="237,122 227,116 229,127" fill="#74a8bf"/>
+  <path d="M168 144 C196 144 205 145 237 147" fill="none" stroke="#74a8bf" stroke-width="2.5"/>
+  <polygon points="237,147 227,142 227,153" fill="#74a8bf"/>
+  <path d="M168 214 C202 214 208 187 237 177" fill="none" stroke="#74a8bf" stroke-width="2.5"/>
+  <polygon points="237,177 228,175 232,185" fill="#74a8bf"/>
+
+  <path d="M403 139 C431 130 432 91 458 82" fill="none" stroke="#5f9c95" stroke-width="2.5"/>
+  <polygon points="458,82 449,79 453,89" fill="#5f9c95"/>
+  <path d="M403 158 L458 158" fill="none" stroke="#5f9c95" stroke-width="2.5"/>
+  <polygon points="458,158 448,153 448,163" fill="#5f9c95"/>
+  <path d="M403 177 C429 187 434 222 458 231" fill="none" stroke="#5f9c95" stroke-width="2.5"/>
+  <polygon points="458,231 453,221 449,231" fill="#5f9c95"/>
+
+  <!-- Sol başlık -->
+  <text x="48" y="37" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42667b">MOTOR ÖLÇÜMLERİ</text>
+  <path d="M48 43 H170" stroke="#b9d3de" stroke-width="1.5"/>
+
+  <!-- Sensör kutuları -->
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="55" width="120" height="40" rx="12" fill="#fff4df"/>
+    <circle cx="69" cy="75" r="10" fill="#f6b95e"/>
+    <path d="M69 68 V76 M65 76 H73 M66 82 H72" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="87" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#73522a">Sıcaklık</text>
+    <text x="87" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8d7352">düşük hız</text>
+
+    <rect x="48" y="124" width="120" height="40" rx="12" fill="#e6efff"/>
+    <circle cx="69" cy="144" r="10" fill="#759ce5"/>
+    <path d="M63 144 H75 M69 138 V150" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="87" y="141" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#435d96">Oda basıncı</text>
+    <text x="87" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#7183a6">orta-yüksek</text>
+
+    <rect x="48" y="194" width="120" height="40" rx="12" fill="#f1e9fb"/>
+    <circle cx="69" cy="214" r="10" fill="#a681d0"/>
+    <path d="M62 214 C65 207 67 221 70 214 S75 207 77 214" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="87" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#6e518d">Titreşim</text>
+    <text x="87" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#8c74a5">çok yüksek hız</text>
+  </g>
+
+  <!-- Merkezi işlem -->
+  <g filter="url(#shadow)">
+    <rect x="237" y="96" width="166" height="125" rx="22" fill="url(#core)" stroke="#b6d6df" stroke-width="1.2"/>
+    <rect x="259" y="110" width="122" height="27" rx="9" fill="#ffffff" opacity="0.8"/>
+    <text x="320" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345d70">Uçuş Bilgisayarı</text>
+
+    <path d="M269 153 H371" stroke="#b1ced8" stroke-width="1"/>
+    <circle cx="273" cy="166" r="4" fill="#67aa9a"/>
+    <text x="284" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6672">Zaman hizalama</text>
+    <circle cx="273" cy="187" r="4" fill="#67aa9a"/>
+    <text x="284" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6672">Filtre ve analiz</text>
+    <circle cx="273" cy="208" r="4" fill="#e59668"/>
+    <text x="284" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6672">Sağlık kararı</text>
+  </g>
+
+  <!-- Sağ başlık -->
+  <text x="458" y="37" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42667b">GERÇEK ZAMANLI ÇIKTI</text>
+  <path d="M458 43 H593" stroke="#b9d3de" stroke-width="1.5"/>
+
+  <!-- Sağ sonuçlar -->
+  <g filter="url(#smallShadow)">
+    <rect x="458" y="61" width="135" height="42" rx="12" fill="#e4f5ec"/>
+    <circle cx="480" cy="82" r="11" fill="#63aa8b"/>
+    <path d="M475 82 L479 86 L486 77" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="498" y="79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3c7562">Kontrol</text>
+    <text x="498" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#6d9585">valf ayarı</text>
+
+    <rect x="458" y="137" width="135" height="42" rx="12" fill="#e8f0ff"/>
+    <circle cx="480" cy="158" r="11" fill="#7099df"/>
+    <path d="M474 161 H486 M480 155 V164 M475 154 L480 150 L485 154" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="498" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#486aab">Yer istasyonu</text>
+    <text x="498" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#738ab6">özet telemetri</text>
+
+    <rect x="458" y="211" width="135" height="42" rx="12" fill="#fff0e7"/>
+    <circle cx="480" cy="232" r="11" fill="#df9167"/>
+    <path d="M475 227 H485 V237 H475 Z M477 230 H483" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="498" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#9a5c3d">Ham kayıt</text>
+    <text x="498" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="10" fill="#ae8168">dijital ikiz</text>
+  </g>
+
+  <!-- Alt bilgi -->
+  <g opacity="0.9">
+    <rect x="160" y="273" width="320" height="27" rx="13.5" fill="#ffffff" filter="url(#smallShadow)"/>
+    <circle cx="181" cy="286.5" r="5" fill="#ef9b67"/>
+    <text x="195" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58707b">Binlerce kanal</text>
+    <path d="M283 286.5 H307" stroke="#9ab5bf" stroke-width="1.5"/>
+    <polygon points="307,286.5 300,282.5 300,290.5" fill="#9ab5bf"/>
+    <text x="320" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58707b">milisaniye karar</text>
+  </g>
+</svg>
