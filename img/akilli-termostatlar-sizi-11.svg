@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#d9f2df"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6b8194" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#6b8194" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="318" cy="158" r="116" fill="#dceeff" opacity="0.36"/>
+  <circle cx="318" cy="158" r="91" fill="#ffffff" opacity="0.45"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516a">AKILLI TERMOSTAT ÖĞRENME DÖNGÜSÜ</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728396">Veri → örüntü → tahmin → konforlu ısıtma</text>
+
+  <!-- connection lines -->
+  <path d="M151 105 C181 107 196 119 218 132" fill="none" stroke="#8fa9be" stroke-width="2"/>
+  <polygon points="218,132 209,126 211,136" fill="#8fa9be"/>
+  <path d="M153 216 C180 210 199 195 220 184" fill="none" stroke="#8fa9be" stroke-width="2"/>
+  <polygon points="220,184 210,181 214,191" fill="#8fa9be"/>
+  <path d="M319 256 L319 224" fill="none" stroke="#8fa9be" stroke-width="2"/>
+  <polygon points="319,224 314,234 324,234" fill="#8fa9be"/>
+  <path d="M417 131 C439 118 456 107 481 105" fill="none" stroke="#8fa9be" stroke-width="2"/>
+  <polygon points="481,105 471,102 474,112" fill="#8fa9be"/>
+  <path d="M418 185 C441 197 456 209 481 215" fill="none" stroke="#8fa9be" stroke-width="2"/>
+  <polygon points="481,215 473,207 470,217" fill="#8fa9be"/>
+
+  <!-- left sensor cards -->
+  <g filter="url(#soft)">
+    <rect x="28" y="76" width="125" height="58" rx="15" fill="#ffffff"/>
+    <rect x="40" y="89" width="31" height="31" rx="10" fill="#ffe6ca"/>
+    <path d="M55 96 L55 108" stroke="#c57638" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="55" cy="112" r="5" fill="#c57638"/>
+    <text x="81" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40576c">Sıcaklık</text>
+    <text x="81" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Oda ve dış ortam</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="187" width="125" height="58" rx="15" fill="#ffffff"/>
+    <rect x="40" y="200" width="31" height="31" rx="10" fill="#e5ddfa"/>
+    <circle cx="55.5" cy="210" r="5.5" fill="none" stroke="#7966b7" stroke-width="2"/>
+    <path d="M55.5 210 L55.5 206 M55.5 210 L59 213" stroke="#7966b7" stroke-width="2" stroke-linecap="round"/>
+    <text x="81" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40576c">Rutin</text>
+    <text x="81" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Saat ve hareket</text>
+  </g>
+
+  <!-- center engine -->
+  <g filter="url(#shadow)">
+    <rect x="218" y="105" width="200" height="119" rx="25" fill="url(#core)" stroke="#bfd7dc" stroke-width="1.5"/>
+    <circle cx="318" cy="145" r="27" fill="#ffffff" opacity="0.86"/>
+    <path d="M306 145 C306 137 312 132 318 132 C324 132 330 137 330 145 C330 153 324 158 318 158 C312 158 306 153 306 145Z" fill="none" stroke="#4d83a2" stroke-width="2"/>
+    <path d="M310 143 L315 148 L326 138 M310 153 L315 158 L326 148" fill="none" stroke="#4d83a2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="318" y="184" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355970">Öğrenen Algoritma</text>
+    <text x="318" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607b8d">Geçmişi ağırlıklandırır</text>
+  </g>
+
+  <!-- bottom model -->
+  <g filter="url(#soft)">
+    <rect x="244" y="256" width="150" height="45" rx="14" fill="#ffffff"/>
+    <path d="M260 278 L268 270 L276 278 L284 267" fill="none" stroke="#50a079" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="294" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40576c">Ev modeli</text>
+    <text x="294" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Isınma süresi</text>
+  </g>
+
+  <!-- right cards -->
+  <g filter="url(#soft)">
+    <rect x="481" y="76" width="131" height="58" rx="15" fill="#ffffff"/>
+    <rect x="493" y="89" width="31" height="31" rx="10" fill="#d9f1e2"/>
+    <path d="M501 109 C501 105 504 102 508.5 102 C513 102 516 105 516 109 C516 113 513 115 510 115 L505 115 C502 115 501 112 501 109Z" fill="none" stroke="#458867" stroke-width="2"/>
+    <path d="M505 117 L512 117" stroke="#458867" stroke-width="2" stroke-linecap="round"/>
+    <text x="534" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40576c">Tahmin</text>
+    <text x="534" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Hedef: 22°C</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="481" y="187" width="131" height="58" rx="15" fill="#fffdf7"/>
+    <rect x="493" y="200" width="31" height="31" rx="10" fill="#ffe3b8"/>
+    <path d="M504 216 L512 208 L519 216 L519 222 L504 222Z" fill="none" stroke="#c67b35" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M511.5 222 L511.5 216" stroke="#c67b35" stroke-width="2" stroke-linecap="round"/>
+    <text x="534" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40576c">Eylem</text>
+    <text x="534" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Erken ısıtma</text>
+  </g>
+
+  <!-- feedback -->
+  <path d="M546 247 C546 285 446 294 398 278" fill="none" stroke="#79aa91" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="398,278 407,274 404,284" fill="#79aa91"/>
+  <text x="450" y="301" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8b71">Konfor ve tasarruf dengesi</text>
+</svg>

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="exchange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dce9ff"/>
+      <stop offset="100%" stop-color="#c9dcfb"/>
+    </linearGradient>
+    <linearGradient id="stream" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f3e8"/>
+      <stop offset="100%" stop-color="#c2ead9"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff2d5"/>
+      <stop offset="100%" stop-color="#ffe3ad"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7191a5" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#58758a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="61" cy="47" r="51" fill="#dceeff" opacity="0.45"/>
+  <circle cx="601" cy="275" r="72" fill="#d8f1df" opacity="0.42"/>
+  <path d="M28 167 C100 115, 149 207, 215 158 S342 119, 405 161 S514 206, 610 145" fill="none" stroke="#b7d5e1" stroke-width="1.5" opacity="0.45" stroke-dasharray="5 7"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556c">Borsa Veri Akışı</text>
+  <text x="497" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">milisaniye zinciri</text>
+
+  <path d="M108 156 L130 156" fill="none" stroke="#7199b5" stroke-width="2.5"/>
+  <polygon points="130,156 122,151 122,161" fill="#7199b5"/>
+  <path d="M241 156 L262 156" fill="none" stroke="#7199b5" stroke-width="2.5"/>
+  <polygon points="262,156 254,151 254,161" fill="#7199b5"/>
+  <path d="M385 156 L407 156" fill="none" stroke="#7199b5" stroke-width="2.5"/>
+  <polygon points="407,156 399,151 399,161" fill="#7199b5"/>
+  <path d="M520 156 L541 156" fill="none" stroke="#7199b5" stroke-width="2.5"/>
+  <polygon points="541,156 533,151 533,161" fill="#7199b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="27" y="110" width="81" height="92" rx="18" fill="#fefefe"/>
+    <rect x="35" y="119" width="65" height="48" rx="11" fill="#e8f1ff"/>
+    <path d="M49 147 L59 137 L68 143 L83 129" fill="none" stroke="#477db8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="49" cy="147" r="2.5" fill="#477db8"/>
+    <circle cx="59" cy="137" r="2.5" fill="#477db8"/>
+    <circle cx="68" cy="143" r="2.5" fill="#477db8"/>
+    <circle cx="83" cy="129" r="2.5" fill="#477db8"/>
+    <text x="67.5" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38556c">Yatırımcı</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="130" y="98" width="111" height="116" rx="18" fill="url(#exchange)"/>
+    <rect x="143" y="111" width="85" height="58" rx="10" fill="#f8fbff" opacity="0.9"/>
+    <path d="M155 126 H216 M155 139 H216 M155 152 H216" stroke="#9db7d5" stroke-width="1.5"/>
+    <path d="M155 126 H181 M155 139 H199 M155 152 H172" stroke="#4b80bd" stroke-width="3" stroke-linecap="round"/>
+    <path d="M187 126 H216 M204 139 H216 M179 152 H216" stroke="#db7580" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="185" cy="139" r="8" fill="#ffffff" stroke="#7199c7" stroke-width="1.5"/>
+    <path d="M181 139 H189 M185 135 V143" stroke="#4678ae" stroke-width="1.5"/>
+    <text x="185.5" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556c">Borsa</text>
+    <text x="185.5" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587188">Eşleştirme</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="262" y="110" width="123" height="92" rx="18" fill="url(#stream)"/>
+    <rect x="276" y="122" width="95" height="15" rx="7.5" fill="#f8fffb"/>
+    <rect x="276" y="144" width="69" height="15" rx="7.5" fill="#f8fffb"/>
+    <rect x="276" y="166" width="83" height="15" rx="7.5" fill="#f8fffb"/>
+    <circle cx="286" cy="129.5" r="3.5" fill="#52a57c"/>
+    <circle cx="286" cy="151.5" r="3.5" fill="#52a57c"/>
+    <circle cx="286" cy="173.5" r="3.5" fill="#52a57c"/>
+    <path d="M297 129.5 H357 M297 151.5 H333 M297 173.5 H347" stroke="#79b99a" stroke-width="2" stroke-linecap="round"/>
+    <text x="323.5" y="222" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#38556c">Piyasa verisi</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="407" y="104" width="113" height="104" rx="18" fill="#eee6fb"/>
+    <rect x="420" y="117" width="87" height="52" rx="10" fill="#fbf9ff"/>
+    <path d="M435 144 H491" stroke="#9d86c8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M435 133 H476 M435 155 H465" stroke="#c3b4df" stroke-width="2" stroke-linecap="round"/>
+    <path d="M481 127 C493 130, 497 137, 495 145" fill="none" stroke="#765bab" stroke-width="2"/>
+    <polygon points="495,145 489,140 490,148" fill="#765bab"/>
+    <text x="463.5" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#51416f">Aracı sunucu</text>
+    <text x="463.5" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75678f">WebSocket</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="541" y="108" width="73" height="96" rx="18" fill="url(#screen)"/>
+    <rect x="550" y="119" width="55" height="41" rx="7" fill="#fffdfa"/>
+    <path d="M556 149 L565 140 L574 145 L584 132 L598 136" fill="none" stroke="#39a56b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="577.5" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#705629">Ekran</text>
+    <text x="577.5" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a734b">100,00 TL</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="60" y="248" width="520" height="42" rx="15" fill="#ffffff" opacity="0.9"/>
+    <circle cx="82" cy="269" r="10" fill="#e2f0ff"/>
+    <path d="M82 263 V269 L86 272" fill="none" stroke="#4e87bf" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="101" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#456075">Gecikme</text>
+    <path d="M165 269 H187" stroke="#a9bfce" stroke-width="1.5"/>
+    <text x="197" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607a8d">Borsa</text>
+    <text x="244" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#91a6b4">+</text>
+    <text x="259" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607a8d">Ağ</text>
+    <text x="284" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#91a6b4">+</text>
+    <text x="299" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607a8d">İşleme</text>
+    <text x="348" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#91a6b4">+</text>
+    <text x="363" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607a8d">İstemci</text>
+    <path d="M430 269 H450" stroke="#a9bfce" stroke-width="1.5"/>
+    <rect x="462" y="258" width="99" height="22" rx="11" fill="#e0f4e9"/>
+    <text x="511.5" y="273" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#39785a">Sıra kontrolü</text>
+  </g>
+
+  <path d="M463 227 C463 239, 424 239, 424 220" fill="none" stroke="#a88fcf" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <polygon points="424,220 420,227 428,226" fill="#a88fcf"/>
+  <text x="433" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806aa0">eksik veri</text>
+</svg>

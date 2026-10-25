@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="texture" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#bfd8f6"/>
+      <stop offset="0.48" stop-color="#8db9dc"/>
+      <stop offset="0.5" stop-color="#d8c09e"/>
+      <stop offset="1" stop-color="#8eb68c"/>
+    </linearGradient>
+    <linearGradient id="compress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9cbf4"/>
+      <stop offset="1" stop-color="#ad9bdd"/>
+    </linearGradient>
+    <linearGradient id="vram" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9eadf"/>
+      <stop offset="1" stop-color="#79c4b3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#537085" flood-opacity="0.2"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5a7180" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="69" cy="63" r="77" fill="#cde7f4" opacity="0.32"/>
+  <circle cx="579" cy="270" r="102" fill="#d9eed4" opacity="0.42"/>
+
+  <text x="30" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">DOKU OPTİMİZASYON AKIŞI</text>
+  <text x="30" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748593">Kalite ile bellek dengesi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="87" width="128" height="150" rx="18" fill="#f9fcff"/>
+    <rect x="40" y="99" width="108" height="89" rx="12" fill="url(#texture)"/>
+    <path d="M76 99V188 M112 99V188 M40 129H148 M40 158H148" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.65"/>
+    <path d="M42 105 C58 111 65 102 79 109 S103 121 119 108 S135 106 146 113" fill="none" stroke="#567f65" stroke-width="3" opacity="0.7"/>
+    <circle cx="64" cy="151" r="11" fill="#c79676" opacity="0.8"/>
+    <text x="94" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">Ham RGBA Doku</text>
+    <text x="94" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#768896">4096 × 4096 · 64 MiB</text>
+  </g>
+
+  <path d="M169 155H201" fill="none" stroke="#7795aa" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="207,155 197,149 197,161" fill="#7795aa"/>
+
+  <g filter="url(#soft)">
+    <rect x="210" y="102" width="106" height="116" rx="18" fill="#fffdfb"/>
+    <text x="263" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d6374">Bloklama</text>
+    <g transform="translate(232 140)">
+      <rect width="48" height="48" rx="6" fill="#dceaf8" stroke="#8ba9c2"/>
+      <path d="M12 0V48 M24 0V48 M36 0V48 M0 12H48 M0 24H48 M0 36H48" stroke="#7192ad" stroke-width="1"/>
+      <rect x="1" y="1" width="23" height="23" rx="3" fill="#a9d1bd" opacity="0.75"/>
+      <rect x="25" y="25" width="22" height="22" rx="3" fill="#ebc49a" opacity="0.8"/>
+    </g>
+    <text x="263" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#768896">4 × 4 piksel</text>
+  </g>
+
+  <path d="M327 155H354" fill="none" stroke="#7795aa" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="360,155 350,149 350,161" fill="#7795aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="363" y="78" width="126" height="160" rx="20" fill="url(#compress)"/>
+    <rect x="374" y="91" width="104" height="134" rx="15" fill="#ffffff" opacity="0.35"/>
+    <text x="426" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514875">Sıkıştırıcı</text>
+    <rect x="384" y="125" width="34" height="24" rx="6" fill="#f7e7b6"/>
+    <rect x="434" y="125" width="34" height="24" rx="6" fill="#b8dcd4"/>
+    <path d="M418 137H434" fill="none" stroke="#665a8a" stroke-width="2"/>
+    <polygon points="432,137 426,133 426,141" fill="#665a8a"/>
+    <path d="M384 166H468 M384 181H455 M384 196H440" stroke="#76699a" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+    <text x="426" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#514875">BC1 · BC5 · BC7</text>
+  </g>
+
+  <path d="M500 155H526" fill="none" stroke="#7795aa" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="532,155 522,149 522,161" fill="#7795aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="535" y="91" width="77" height="128" rx="19" fill="url(#vram)"/>
+    <rect x="547" y="105" width="53" height="66" rx="10" fill="#effcf8" opacity="0.72"/>
+    <path d="M554 119H593 M554 132H593 M554 145H584 M554 158H577" stroke="#4f958a" stroke-width="5" stroke-linecap="round"/>
+    <text x="573" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#275f5b">VRAM</text>
+    <text x="573" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39776f">16 MiB</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="54" y="263" width="156" height="34" rx="14" fill="#fff6df"/>
+    <circle cx="75" cy="280" r="8" fill="#f0bc66"/>
+    <path d="M71 280L74 283L80 276" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="91" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756142">Kanal paketleme</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="232" y="263" width="176" height="34" rx="14" fill="#e8f2ff"/>
+    <circle cx="253" cy="280" r="8" fill="#79aadd"/>
+    <path d="M249 280H257 M253 276V284" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="269" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506f8e">Mipmap ve çözünürlük</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="430" y="263" width="155" height="34" rx="14" fill="#e6f6ec"/>
+    <circle cx="451" cy="280" r="8" fill="#69b28b"/>
+    <path d="M447 280L450 283L456 276" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="467" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46755c">Dengeli kalite</text>
+  </g>
+</svg>
