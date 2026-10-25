@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9def4"/>
+    </linearGradient>
+    <linearGradient id="mind" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#f8d89c"/>
+    </linearGradient>
+    <linearGradient id="story" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f2df"/>
+      <stop offset="100%" stop-color="#acdcbf"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7390a8" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#607b91" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="568" cy="48" r="88" fill="#d9f0e2" opacity="0.38"/>
+  <circle cx="78" cy="280" r="105" fill="#dbeaff" opacity="0.42"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#466177">ÇEVRESEL HİKÂYE ANLATIMI</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708898">Mekân konuşur, oyuncu anlamı kurar</text>
+
+  <!-- Room -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="79" width="188" height="178" rx="22" fill="url(#room)"/>
+    <rect x="45" y="94" width="162" height="148" rx="15" fill="#eef6ff" opacity="0.8"/>
+  </g>
+  <text x="59" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45647c">Sessiz mekân</text>
+
+  <!-- window -->
+  <rect x="59" y="129" width="37" height="34" rx="5" fill="#a8d4e7" stroke="#719bb4" stroke-width="2"/>
+  <path d="M77.5 130 V162 M60 146 H95" stroke="#eaf8ff" stroke-width="2"/>
+  <path d="M62 132 L91 160 M90 132 L64 159" stroke="#7898ac" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- table -->
+  <rect x="113" y="155" width="64" height="10" rx="4" fill="#b88667"/>
+  <path d="M120 165 L116 187 M170 165 L174 187" stroke="#89664f" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="145" cy="151" rx="13" ry="6" fill="#fff8e9" stroke="#d7b789" stroke-width="1.5"/>
+  <path d="M139 151 Q145 146 151 151" fill="none" stroke="#d99875" stroke-width="2"/>
+
+  <!-- drawings -->
+  <rect x="178" y="125" width="19" height="27" rx="3" fill="#fffdf7" transform="rotate(5 187 138)"/>
+  <path d="M181 143 L185 134 L189 140 L193 131 M181 146 H194" fill="none" stroke="#e3948a" stroke-width="1.5"/>
+
+  <!-- footprints -->
+  <g fill="#bd6d72" opacity="0.9">
+    <ellipse cx="109" cy="202" rx="4" ry="7" transform="rotate(-22 109 202)"/>
+    <ellipse cx="124" cy="211" rx="4" ry="7" transform="rotate(18 124 211)"/>
+    <ellipse cx="137" cy="220" rx="4" ry="7" transform="rotate(-22 137 220)"/>
+    <ellipse cx="151" cy="228" rx="4" ry="7" transform="rotate(18 151 228)"/>
+  </g>
+  <path d="M160 230 C176 226 184 217 190 204" fill="none" stroke="#bd6d72" stroke-width="2" stroke-dasharray="3 4" opacity="0.75"/>
+
+  <!-- clue tags -->
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="265" width="50" height="28" rx="10" fill="#f7cad0"/>
+    <rect x="106" y="265" width="51" height="28" rx="10" fill="#fce2a9"/>
+    <rect x="165" y="265" width="52" height="28" rx="10" fill="#c8e8dc"/>
+  </g>
+  <text x="58" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#784e58">İzler</text>
+  <text x="115" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79623a">Nesne</text>
+  <text x="174" y="283" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426c60">Işık</text>
+
+  <!-- arrow 1 -->
+  <path d="M232 168 H275" stroke="#809bae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="282,168 272,162 272,174" fill="#809bae"/>
+
+  <!-- Player inference -->
+  <g filter="url(#shadow)">
+    <circle cx="332" cy="168" r="67" fill="url(#mind)"/>
+    <circle cx="332" cy="168" r="53" fill="#fff9e8" opacity="0.72"/>
+  </g>
+  <circle cx="332" cy="146" r="13" fill="#7896ad"/>
+  <path d="M308 187 Q332 164 356 187 L356 198 H308Z" fill="#7896ad"/>
+  <circle cx="327" cy="144" r="2" fill="#fff"/>
+  <circle cx="337" cy="144" r="2" fill="#fff"/>
+  <path d="M327 152 Q332 156 338 152" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="298" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6f5b36">Oyuncu</text>
+  <text x="288" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806c43">çıkarım yapar</text>
+
+  <!-- arrow 2 -->
+  <path d="M403 168 H446" stroke="#809bae" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="453,168 443,162 443,174" fill="#809bae"/>
+
+  <!-- Narrative -->
+  <g filter="url(#shadow)">
+    <rect x="467" y="94" width="142" height="148" rx="22" fill="url(#story)"/>
+    <rect x="480" y="107" width="116" height="122" rx="15" fill="#f5fff7" opacity="0.7"/>
+  </g>
+  <text x="487" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e7059">Anlatısal etki</text>
+
+  <!-- connected clues -->
+  <circle cx="504" cy="163" r="12" fill="#f4b8bd"/>
+  <circle cx="550" cy="157" r="12" fill="#f5d58f"/>
+  <circle cx="568" cy="196" r="12" fill="#a9d8c0"/>
+  <path d="M516 162 L538 158 M558 166 L565 185 M514 172 L558 190" stroke="#719984" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="504" cy="163" r="4" fill="#fff" opacity="0.8"/>
+  <circle cx="550" cy="157" r="4" fill="#fff" opacity="0.8"/>
+  <circle cx="568" cy="196" r="4" fill="#fff" opacity="0.8"/>
+
+  <text x="492" y="219" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7b67">E = D × B × K</text>
+
+  <!-- bottom legend -->
+  <g filter="url(#smallShadow)">
+    <rect x="250" y="270" width="323" height="30" rx="14" fill="#ffffff" opacity="0.82"/>
+  </g>
+  <text x="267" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e7482">D: detay</text>
+  <path d="M329 280 V291" stroke="#cad7df" stroke-width="1"/>
+  <text x="343" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e7482">B: bağlam</text>
+  <path d="M425 280 V291" stroke="#cad7df" stroke-width="1"/>
+  <text x="439" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e7482">K: katılım</text>
+</svg>

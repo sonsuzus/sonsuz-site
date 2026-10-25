@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8277dc"/>
+      <stop offset="100%" stop-color="#5a9dd2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#53677f" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#53677f" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="321" cy="158" r="126" fill="#ffffff" opacity="0.35"/>
+  <circle cx="320" cy="160" r="100" fill="none" stroke="#cbddea" stroke-width="1.5" stroke-dasharray="4 7"/>
+
+  <!-- Bağlantılar -->
+  <path d="M207 82 C232 94 244 109 257 124" fill="none" stroke="#9ab3cc" stroke-width="2"/>
+  <polygon points="253,117 264,128 250,126" fill="#9ab3cc"/>
+  <path d="M434 81 C411 94 400 108 385 124" fill="none" stroke="#9ab3cc" stroke-width="2"/>
+  <polygon points="391,117 379,128 394,126" fill="#9ab3cc"/>
+  <path d="M205 233 C228 221 244 207 257 192" fill="none" stroke="#9ab3cc" stroke-width="2"/>
+  <polygon points="250,199 264,188 253,208" fill="#9ab3cc"/>
+  <path d="M435 233 C411 221 396 207 383 192" fill="none" stroke="#9ab3cc" stroke-width="2"/>
+  <polygon points="387,208 376,188 390,199" fill="#9ab3cc"/>
+
+  <!-- Sol üst mekanik -->
+  <g filter="url(#smallShadow)">
+    <rect x="55" y="43" width="153" height="76" rx="18" fill="#fff5d9"/>
+    <circle cx="83" cy="70" r="16" fill="#f4c65b"/>
+    <path d="M83 60 L86 67 L94 68 L88 73 L90 81 L83 77 L76 81 L78 73 L72 68 L80 67 Z" fill="#ffffff"/>
+    <text x="109" y="68" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#705627">Puan ve Rozet</text>
+    <text x="109" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#88734c">Başarı görünür</text>
+  </g>
+
+  <!-- Sağ üst mekanik -->
+  <g filter="url(#smallShadow)">
+    <rect x="433" y="43" width="153" height="76" rx="18" fill="#e9f5ff"/>
+    <circle cx="461" cy="70" r="16" fill="#72b8e8"/>
+    <path d="M453 74 L458 69 L462 72 L470 63" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M468 63 L470 63 L470 66" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <text x="487" y="68" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38749c">Görev ve Seviye</text>
+    <text x="487" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d83a1">Aşamalı ilerleme</text>
+  </g>
+
+  <!-- Sol alt sonuç -->
+  <g filter="url(#smallShadow)">
+    <rect x="54" y="207" width="154" height="76" rx="18" fill="#e8f7ef"/>
+    <circle cx="82" cy="234" r="16" fill="#72c59b"/>
+    <path d="M75 235 L80 240 L90 229" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="108" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39765a">Eğitim</text>
+    <text x="108" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8c72">Alışkanlık ve öğrenme</text>
+  </g>
+
+  <!-- Sağ alt sonuç -->
+  <g filter="url(#smallShadow)">
+    <rect x="432" y="207" width="154" height="76" rx="18" fill="#f2ebfb"/>
+    <circle cx="460" cy="234" r="16" fill="#a88bda"/>
+    <path d="M452 240 L452 231 L457 231 L457 236 L462 236 L462 226 L467 226 L467 240 Z" fill="#ffffff"/>
+    <text x="486" y="232" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6d529b">İş Dünyası</text>
+    <text x="486" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#826ba7">Katılım ve gelişim</text>
+  </g>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <rect x="245" y="110" width="150" height="101" rx="25" fill="url(#core)"/>
+    <circle cx="320" cy="143" r="19" fill="#ffffff" opacity="0.2"/>
+    <path d="M310 145 C310 137 315 132 320 132 C325 132 330 137 330 145 C330 151 326 155 320 158 C314 155 310 151 310 145 Z" fill="#ffffff"/>
+    <circle cx="315" cy="143" r="2" fill="#7a83d6"/>
+    <circle cx="325" cy="143" r="2" fill="#7a83d6"/>
+    <path d="M315 150 Q320 153 325 150" fill="none" stroke="#7a83d6" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="320" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Oyunlaştırma</text>
+    <text x="320" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eef4ff">Motivasyon döngüsü</text>
+  </g>
+
+  <!-- Alt akış -->
+  <path d="M223 303 L405 303" fill="none" stroke="#91aac2" stroke-width="2"/>
+  <polygon points="405,303 396,298 396,308" fill="#91aac2"/>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="143" y="307" fill="#617b91">Davranış</text>
+    <text x="273" y="307" fill="#617b91">Anlık geri bildirim</text>
+    <text x="469" y="307" fill="#617b91">Sürdürülebilir gelişim</text>
+  </g>
+</svg>

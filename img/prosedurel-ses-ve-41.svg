@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c9d9ff"/>
+      <stop offset="100%" stop-color="#a9d8d0"/>
+    </linearGradient>
+    <linearGradient id="music" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ead4ff"/>
+      <stop offset="100%" stop-color="#ffcfc1"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7590a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#71899b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="69" cy="45" r="58" fill="#d7eff0" opacity="0.42"/>
+  <circle cx="590" cy="274" r="78" fill="#dce8ff" opacity="0.45"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42566b">DİNAMİK MÜZİK AKIŞI</text>
+  <text x="505" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698092">Oyun dünyası</text>
+
+  <!-- Input cards -->
+  <g filter="url(#soft)">
+    <rect x="28" y="57" width="126" height="44" rx="14" fill="#ffffff"/>
+    <circle cx="49" cy="79" r="12" fill="#ccebe2"/>
+    <path d="M43 82c4-9 8-9 12 0M46 75a3 3 0 1 0 6 0a3 3 0 1 0-6 0" fill="none" stroke="#3d8878" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="69" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405565">Konum</text>
+    <text x="69" y="90" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728494">Keşif bölgesi</text>
+
+    <rect x="28" y="115" width="126" height="44" rx="14" fill="#ffffff"/>
+    <circle cx="49" cy="137" r="12" fill="#ffe0dd"/>
+    <path d="M49 144s-8-5-8-10c0-4 5-5 8-1c3-4 8-3 8 1c0 5-8 10-8 10z" fill="#d96d71"/>
+    <text x="69" y="134" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405565">Sağlık</text>
+    <text x="69" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728494">Risk oranı</text>
+
+    <rect x="28" y="173" width="126" height="44" rx="14" fill="#ffffff"/>
+    <circle cx="49" cy="195" r="12" fill="#fff0c9"/>
+    <path d="M43 199l4-8 4 4 4-7" fill="none" stroke="#bd8a25" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="69" y="192" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405565">Savaş</text>
+    <text x="69" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728494">Düşman sayısı</text>
+  </g>
+
+  <!-- lines input to core -->
+  <path d="M154 79H177" stroke="#91aabd" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="177,75 184,79 177,83" fill="#91aabd"/>
+  <path d="M154 137H177" stroke="#91aabd" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="177,133 184,137 177,141" fill="#91aabd"/>
+  <path d="M154 195H177" stroke="#91aabd" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="177,191 184,195 177,199" fill="#91aabd"/>
+
+  <!-- Core -->
+  <g filter="url(#shadow)">
+    <rect x="184" y="65" width="189" height="155" rx="25" fill="url(#core)"/>
+    <rect x="196" y="77" width="165" height="131" rx="19" fill="#ffffff" opacity="0.63"/>
+  </g>
+  <text x="278" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536a">Müzik Yöneticisi</text>
+  <line x1="214" y1="111" x2="343" y2="111" stroke="#b4cad4" stroke-width="1"/>
+
+  <text x="214" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587186">Yoğunluk</text>
+  <rect x="214" y="141" width="128" height="10" rx="5" fill="#d7e4eb"/>
+  <rect x="214" y="141" width="81" height="10" rx="5" fill="#e98983"/>
+  <circle cx="295" cy="146" r="7" fill="#ffffff" stroke="#d66f6b" stroke-width="2"/>
+  <text x="348" y="150" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#c15f61">0.65</text>
+
+  <rect x="214" y="164" width="128" height="28" rx="10" fill="#e8f2ee"/>
+  <path d="M224 179c7-9 15 8 23-2c8-10 15 7 24-3c7-8 14 5 22-2" fill="none" stroke="#4f9789" stroke-width="2" stroke-linecap="round"/>
+  <text x="282" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426878">Yumuşatma</text>
+
+  <!-- Arrow core to output -->
+  <path d="M374 142H399" stroke="#819daf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="399,137 407,142 399,147" fill="#819daf"/>
+
+  <!-- Music output -->
+  <g filter="url(#shadow)">
+    <rect x="407" y="57" width="201" height="171" rx="24" fill="url(#music)"/>
+    <rect x="419" y="69" width="177" height="147" rx="18" fill="#ffffff" opacity="0.64"/>
+  </g>
+  <text x="507" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#674d79">Uyarlanabilir Orkestra</text>
+
+  <!-- Layer controls -->
+  <text x="438" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d6480">Melodi</text>
+  <rect x="495" y="109" width="76" height="12" rx="6" fill="#dbe5e9"/>
+  <rect x="495" y="109" width="57" height="12" rx="6" fill="#72b9a6"/>
+
+  <text x="438" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d6480">Bas</text>
+  <rect x="495" y="136" width="76" height="12" rx="6" fill="#dbe5e9"/>
+  <rect x="495" y="136" width="46" height="12" rx="6" fill="#7aa8d9"/>
+
+  <text x="438" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d6480">Davul</text>
+  <rect x="495" y="163" width="76" height="12" rx="6" fill="#dbe5e9"/>
+  <rect x="495" y="163" width="65" height="12" rx="6" fill="#e37d78"/>
+
+  <path d="M438 195h8l6-9 7 17 8-25 7 17 7-10h13" fill="none" stroke="#9a67af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="507" y="203" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765b84">Katmanlama</text>
+
+  <!-- Beat synchronization -->
+  <path d="M278 221V251" stroke="#8fa7b8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="274,251 278,258 282,251" fill="#8fa7b8"/>
+  <g filter="url(#soft)">
+    <rect x="185" y="258" width="187" height="40" rx="14" fill="#ffffff"/>
+  </g>
+  <circle cx="207" cy="278" r="11" fill="#dce8ff"/>
+  <path d="M207 270v8l6 4" fill="none" stroke="#587cb2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="227" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4e6375">Ölçü senkronu</text>
+  <text x="227" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#758797">Geçişi vuruşta yap</text>
+
+  <!-- musical endpoint -->
+  <path d="M608 142h15" stroke="#8b9faf" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="623,137 632,142 623,147" fill="#8b9faf"/>
+  <text x="572" y="251" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#677d8d">Sakin → Gerilim</text>
+</svg>
