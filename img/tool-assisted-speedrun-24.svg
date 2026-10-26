@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7669d8"/>
+      <stop offset="1" stop-color="#5b9fce"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7b779"/>
+      <stop offset="1" stop-color="#ef8d92"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#54708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#54708a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="39" r="78" fill="#cfe7f5" opacity="0.28"/>
+  <circle cx="574" cy="277" r="104" fill="#d8edd0" opacity="0.36"/>
+  <path d="M22 269 C122 234 149 302 240 279 S398 232 474 275 S575 302 625 256" fill="none" stroke="#b9d8df" stroke-width="1.5" opacity="0.48"/>
+
+  <text x="28" y="31" fill="#426176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">KARE KARE OPTİMİZASYON</text>
+  <text x="28" y="49" fill="#78909d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tool-Assisted Speedrun</text>
+
+  <!-- Left: input sequence -->
+  <g filter="url(#shadow)">
+    <rect x="29" y="97" width="154" height="148" rx="22" fill="#ffffff"/>
+    <rect x="29" y="97" width="154" height="36" rx="22" fill="#d9edf6"/>
+    <path d="M29 115 Q29 133 47 133 H165 Q183 133 183 115" fill="#d9edf6"/>
+  </g>
+  <text x="53" y="120" fill="#316078" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Girdi Dizisi</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="48" y="147" width="45" height="29" rx="9" fill="#e9e4ff"/>
+    <rect x="104" y="147" width="58" height="29" rx="9" fill="#d9f2e5"/>
+    <rect x="48" y="187" width="58" height="29" rx="9" fill="#ffe7c9"/>
+    <rect x="117" y="187" width="45" height="29" rx="9" fill="#dbeafc"/>
+  </g>
+  <text x="59" y="166" fill="#62569d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sağ</text>
+  <text x="114" y="166" fill="#35735a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Zıpla</text>
+  <text x="57" y="206" fill="#986033" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Bekle</text>
+  <text x="128" y="206" fill="#3d6796" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">...</text>
+  <text x="49" y="232" fill="#78909d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">tek kare hassasiyeti</text>
+
+  <!-- Arrow 1 -->
+  <path d="M192 171 H220" fill="none" stroke="#6b91a7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="225,171 216,165 216,177" fill="#6b91a7"/>
+
+  <!-- Center emulator -->
+  <g filter="url(#shadow)">
+    <circle cx="309" cy="171" r="81" fill="#ffffff"/>
+    <circle cx="309" cy="171" r="68" fill="url(#core)"/>
+  </g>
+  <circle cx="309" cy="171" r="52" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.34"/>
+  <circle cx="309" cy="171" r="38" fill="#ffffff" opacity="0.14"/>
+  <path d="M283 169 Q309 145 335 169 V190 Q309 202 283 190 Z" fill="#ffffff" opacity="0.94"/>
+  <circle cx="298" cy="178" r="4" fill="#7b70d3"/>
+  <circle cx="320" cy="178" r="4" fill="#e8838d"/>
+  <path d="M290 158 H304 M297 151 V165" stroke="#5f93bf" stroke-width="3" stroke-linecap="round"/>
+  <text x="309" y="224" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Emülatör</text>
+  <text x="309" y="242" text-anchor="middle" fill="#e3f1ff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Durum Sₙ</text>
+
+  <!-- Orbit tool nodes -->
+  <g filter="url(#softShadow)">
+    <rect x="221" y="75" width="106" height="30" rx="15" fill="#fff7da"/>
+    <rect x="381" y="102" width="113" height="30" rx="15" fill="#e5f5e9"/>
+    <rect x="377" y="218" width="118" height="30" rx="15" fill="#fce8ec"/>
+    <rect x="214" y="244" width="125" height="30" rx="15" fill="#e9e5fa"/>
+  </g>
+  <text x="274" y="95" text-anchor="middle" fill="#8a6e32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kare ilerletme</text>
+  <text x="437" y="122" text-anchor="middle" fill="#40785e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kayıt durumu</text>
+  <text x="436" y="238" text-anchor="middle" fill="#9a5261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">RNG yönlendirme</text>
+  <text x="276" y="264" text-anchor="middle" fill="#62558f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Girdi kaydı</text>
+
+  <path d="M329 106 C348 101 363 103 375 111" fill="none" stroke="#89aabd" stroke-width="1.5"/>
+  <path d="M384 134 C398 153 397 184 385 212" fill="none" stroke="#89aabd" stroke-width="1.5"/>
+  <path d="M369 244 C356 258 350 261 341 261" fill="none" stroke="#89aabd" stroke-width="1.5"/>
+  <path d="M267 244 C251 235 241 222 237 210" fill="none" stroke="#89aabd" stroke-width="1.5"/>
+
+  <!-- Arrow 2 -->
+  <path d="M500 171 H525" fill="none" stroke="#6b91a7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="530,171 521,165 521,177" fill="#6b91a7"/>
+
+  <!-- Output -->
+  <g filter="url(#shadow)">
+    <rect x="537" y="111" width="79" height="120" rx="22" fill="url(#result)"/>
+    <rect x="549" y="126" width="55" height="66" rx="10" fill="#ffffff" opacity="0.93"/>
+  </g>
+  <path d="M559 177 L569 166 L577 173 L593 151" fill="none" stroke="#5aa27b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="559" cy="177" r="3" fill="#5aa27b"/>
+  <circle cx="569" cy="166" r="3" fill="#5aa27b"/>
+  <circle cx="577" cy="173" r="3" fill="#5aa27b"/>
+  <circle cx="593" cy="151" r="3" fill="#5aa27b"/>
+  <text x="576" y="211" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">En iyi koşu</text>
+
+  <path d="M203 291 H433" stroke="#c1d5dc" stroke-width="1"/>
+  <circle cx="202" cy="291" r="4" fill="#7cbbca"/>
+  <circle cx="318" cy="291" r="4" fill="#8679d7"/>
+  <circle cx="434" cy="291" r="4" fill="#ef9d89"/>
+  <text x="202" y="310" text-anchor="middle" fill="#78909d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Deneme</text>
+  <text x="318" y="310" text-anchor="middle" fill="#78909d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Analiz</text>
+  <text x="434" y="310" text-anchor="middle" fill="#78909d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Yeniden üretim</text>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9d1ff"/>
+      <stop offset="100%" stop-color="#bcaef2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#75819a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#75819a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="46" r="58" fill="#cdebe1" opacity="0.3"/>
+  <circle cx="595" cy="283" r="78" fill="#d9d5ff" opacity="0.25"/>
+
+  <text x="32" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31435f">Tarımsal Fiyat Tahmini</text>
+  <text x="32" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71809a">Geçmişten geleceğe karar desteği</text>
+
+  <!-- input cluster -->
+  <rect x="28" y="78" width="126" height="185" rx="19" fill="#eef8f4" stroke="#c8e4d9" filter="url(#shadow)"/>
+  <text x="48" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35645c">Veri Kaynakları</text>
+
+  <rect x="43" y="120" width="96" height="26" rx="10" fill="#cceee0" filter="url(#softShadow)"/>
+  <circle cx="57" cy="133" r="5" fill="#53a77d"/>
+  <text x="69" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#305e55">Hasat</text>
+
+  <rect x="43" y="153" width="96" height="26" rx="10" fill="#d9eafb" filter="url(#softShadow)"/>
+  <circle cx="57" cy="166" r="5" fill="#6399ce"/>
+  <text x="69" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355d82">Talep</text>
+
+  <rect x="43" y="186" width="96" height="26" rx="10" fill="#fff0c9" filter="url(#softShadow)"/>
+  <circle cx="57" cy="199" r="5" fill="#d59c32"/>
+  <text x="69" y="203" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a5b20">Hava ve maliyet</text>
+
+  <rect x="43" y="219" width="96" height="26" rx="10" fill="#efdff7" filter="url(#softShadow)"/>
+  <circle cx="57" cy="232" r="5" fill="#9a6eae"/>
+  <text x="69" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#664676">Geçmiş fiyat</text>
+
+  <!-- arrow input to prep -->
+  <path d="M158 170 H180" fill="none" stroke="#7990a7" stroke-width="2"/>
+  <polygon points="180,170 173,165 173,175" fill="#7990a7"/>
+
+  <!-- preparation -->
+  <rect x="184" y="104" width="130" height="132" rx="19" fill="#ffffff" stroke="#d6e2ed" filter="url(#shadow)"/>
+  <rect x="198" y="119" width="102" height="31" rx="10" fill="#e3f0fb"/>
+  <path d="M211 135 l5 5 10 -11" fill="none" stroke="#5790b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="235" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345e7d">Temizleme</text>
+  <rect x="198" y="158" width="102" height="31" rx="10" fill="#e8f5e8"/>
+  <path d="M212 180 h17 M215 173 h11" stroke="#699d70" stroke-width="2" stroke-linecap="round"/>
+  <text x="237" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#466f4b">Eşleştirme</text>
+  <rect x="198" y="197" width="102" height="25" rx="10" fill="#fff3d8"/>
+  <text x="211" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806124">Gecikmeli özellikler</text>
+
+  <!-- arrow prep to model -->
+  <path d="M318 170 H340" fill="none" stroke="#7990a7" stroke-width="2"/>
+  <polygon points="340,170 333,165 333,175" fill="#7990a7"/>
+
+  <!-- model core -->
+  <rect x="344" y="83" width="138" height="172" rx="24" fill="url(#model)" stroke="#aaa0df" filter="url(#shadow)"/>
+  <circle cx="413" cy="131" r="30" fill="#f7f4ff" opacity="0.88"/>
+  <circle cx="400" cy="123" r="5" fill="#877ac8"/>
+  <circle cx="426" cy="121" r="5" fill="#877ac8"/>
+  <circle cx="413" cy="142" r="5" fill="#877ac8"/>
+  <path d="M404 126 L422 123 M403 127 L410 138 M423 125 L416 138" stroke="#877ac8" stroke-width="2"/>
+  <text x="378" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#453b76">Tahmin Modeli</text>
+  <text x="371" y="203" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51487f">Regresyon</text>
+  <text x="431" y="203" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51487f">Orman</text>
+  <rect x="369" y="216" width="88" height="22" rx="9" fill="#f1edff" opacity="0.9"/>
+  <text x="384" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b4c94">Zaman serisi</text>
+
+  <!-- arrow model to forecast -->
+  <path d="M486 170 H509" fill="none" stroke="#7990a7" stroke-width="2"/>
+  <polygon points="509,170 502,165 502,175" fill="#7990a7"/>
+
+  <!-- forecast -->
+  <rect x="513" y="99" width="99" height="142" rx="19" fill="#fffdf7" stroke="#eadab4" filter="url(#shadow)"/>
+  <text x="530" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#74572c">Gelecek Fiyat</text>
+  <path d="M529 190 C541 179 548 187 558 167 S577 174 593 146" fill="none" stroke="#d7894f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M529 201 C541 190 548 198 558 178 S577 185 593 157" fill="none" stroke="#efc98a" stroke-width="12" opacity="0.42" stroke-linecap="round"/>
+  <path d="M529 190 C541 179 548 187 558 167 S577 174 593 146" fill="none" stroke="#d7894f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="593" cy="146" r="4" fill="#cc7942"/>
+  <text x="530" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806137">Güven aralığı</text>
+
+  <!-- evaluation rail -->
+  <path d="M413 259 V278 H310" fill="none" stroke="#9b91c4" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="310,278 317,273 317,283" fill="#9b91c4"/>
+  <rect x="176" y="265" width="128" height="38" rx="14" fill="#eef1f8" stroke="#d6dce9" filter="url(#softShadow)"/>
+  <text x="194" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4f5e78">MAE ile doğrulama</text>
+
+  <path d="M482 269 C507 271 523 278 541 278" fill="none" stroke="#9b91c4" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="541,278 534,273 534,283" fill="#9b91c4"/>
+  <rect x="545" y="262" width="67" height="42" rx="14" fill="#dff2e9" stroke="#bfe0d1" filter="url(#softShadow)"/>
+  <text x="558" y="280" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356857">Karar</text>
+  <text x="554" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547b6c">planlama</text>
+</svg>

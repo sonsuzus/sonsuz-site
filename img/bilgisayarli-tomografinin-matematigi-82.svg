@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c6e7df"/>
+    </linearGradient>
+    <linearGradient id="data" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3ca"/>
+      <stop offset="100%" stop-color="#fbdccd"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8ddff"/>
+      <stop offset="100%" stop-color="#d7efff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#607590" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="51" cy="43" r="55" fill="#dceeff" opacity="0.55"/>
+  <circle cx="601" cy="278" r="72" fill="#d7f0df" opacity="0.48"/>
+  <path d="M25 267 C120 237 173 284 264 257 S442 224 612 250" fill="none" stroke="#b9d9d2" stroke-width="2" opacity="0.45"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#496278">BT Rekonstrüksiyon Akışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="69" width="174" height="190" rx="22" fill="url(#scan)"/>
+    <rect x="221" y="97" width="190" height="136" rx="22" fill="url(#data)"/>
+    <rect x="435" y="69" width="181" height="190" rx="22" fill="url(#result)"/>
+  </g>
+
+  <text x="111" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3f6174">Döner Tarama</text>
+  <text x="316" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#735c46">Projeksiyon Verisi</text>
+  <text x="525" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5c537a">Kesit Görüntüsü</text>
+
+  <g>
+    <circle cx="111" cy="168" r="48" fill="#f8fcff" stroke="#86b9c9" stroke-width="2"/>
+    <circle cx="111" cy="168" r="28" fill="#d5e6db" stroke="#719e90" stroke-width="1.5"/>
+    <ellipse cx="108" cy="158" rx="9" ry="14" fill="#f5ddd3"/>
+    <ellipse cx="121" cy="174" rx="7" ry="11" fill="#e7c7bf"/>
+    <circle cx="99" cy="179" r="5" fill="#b7d2c3"/>
+    <path d="M65 145 L156 190" stroke="#f1ae68" stroke-width="2" opacity="0.85"/>
+    <path d="M65 190 L157 145" stroke="#f1ae68" stroke-width="2" opacity="0.85"/>
+    <path d="M66 168 H157" stroke="#edbd80" stroke-width="2" opacity="0.75"/>
+    <circle cx="65" cy="168" r="7" fill="#f6a964" filter="url(#soft)"/>
+    <rect x="152" y="151" width="10" height="34" rx="4" fill="#6e9cb0" filter="url(#soft)"/>
+    <path d="M78 117 A55 55 0 0 1 151 128" fill="none" stroke="#5a98ae" stroke-width="2"/>
+    <polygon points="150,123 158,129 148,132" fill="#5a98ae"/>
+  </g>
+  <text x="111" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527184">X-ışını ve dedektör</text>
+
+  <path d="M200 165 H215" fill="none" stroke="#7693a6" stroke-width="2.5"/>
+  <polygon points="215,159 224,165 215,171" fill="#7693a6"/>
+
+  <g>
+    <rect x="244" y="137" width="144" height="63" rx="10" fill="#fffdf7" stroke="#e3bd82" stroke-width="1.5"/>
+    <path d="M251 151 C263 138 274 138 285 151 S307 164 320 151 S342 138 353 151 S374 164 381 151" fill="none" stroke="#db805b" stroke-width="3"/>
+    <path d="M251 165 C264 178 274 178 286 165 S308 152 320 165 S343 178 354 165 S373 152 381 165" fill="none" stroke="#e1a557" stroke-width="3"/>
+    <path d="M251 179 C264 166 274 166 286 179 S308 192 320 179 S343 166 354 179 S373 192 381 179" fill="none" stroke="#bf7798" stroke-width="3"/>
+    <line x1="268" y1="143" x2="268" y2="194" stroke="#d8c2a8" stroke-width="1" opacity="0.65"/>
+    <line x1="296" y1="143" x2="296" y2="194" stroke="#d8c2a8" stroke-width="1" opacity="0.65"/>
+    <line x1="324" y1="143" x2="324" y2="194" stroke="#d8c2a8" stroke-width="1" opacity="0.65"/>
+    <line x1="352" y1="143" x2="352" y2="194" stroke="#d8c2a8" stroke-width="1" opacity="0.65"/>
+  </g>
+  <text x="316" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#816549">Sinogram</text>
+
+  <path d="M413 165 H429" fill="none" stroke="#7693a6" stroke-width="2.5"/>
+  <polygon points="429,159 438,165 429,171" fill="#7693a6"/>
+
+  <g>
+    <rect x="458" y="112" width="134" height="96" rx="13" fill="#fcfbff" stroke="#a494cf" stroke-width="1.5"/>
+    <circle cx="525" cy="160" r="36" fill="#dce9f3" stroke="#788ca8" stroke-width="1.5"/>
+    <ellipse cx="514" cy="149" rx="11" ry="17" fill="#f4d4ca"/>
+    <ellipse cx="536" cy="170" rx="9" ry="13" fill="#dec6e8"/>
+    <circle cx="510" cy="178" r="6" fill="#a4c9bf"/>
+    <path d="M489 160 C501 132 547 132 561 160" fill="none" stroke="#88a4c3" stroke-width="2" opacity="0.65"/>
+    <path d="M494 182 C514 194 539 195 556 181" fill="none" stroke="#88a4c3" stroke-width="2" opacity="0.65"/>
+    <path d="M480 224 H570" stroke="#a49ac6" stroke-width="2" opacity="0.65"/>
+    <path d="M480 224 H548" stroke="#746894" stroke-width="3"/>
+    <circle cx="550" cy="224" r="4" fill="#746894"/>
+  </g>
+  <text x="525" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#625a80">HU yoğunluk haritası</text>
+
+  <g filter="url(#soft)">
+    <rect x="263" y="252" width="112" height="29" rx="14" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <text x="319" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596d79">Rampa filtresi</text>
+  <path d="M319 234 V246" stroke="#8f849a" stroke-width="1.8"/>
+  <polygon points="314,245 319,251 324,245" fill="#8f849a"/>
+</svg>
