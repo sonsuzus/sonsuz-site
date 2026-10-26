@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="structGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9e1fb"/>
+    </linearGradient>
+    <linearGradient id="unionGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f4d8"/>
+      <stop offset="100%" stop-color="#d3ebc3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8799" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8799" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="48" cy="38" r="72" fill="#dceef7" opacity="0.45"/>
+  <circle cx="600" cy="280" r="98" fill="#e5f2d8" opacity="0.52"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365167">C Veri Modelleri</text>
+  <text x="320" y="50" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">struct ve union karşılaştırması</text>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="73" width="252" height="190" rx="20" fill="#f9fcff" stroke="#b7d5ee"/>
+    <rect x="346" y="73" width="252" height="190" rx="20" fill="#fbfdf8" stroke="#c5dfae"/>
+  </g>
+
+  <g>
+    <rect x="62" y="89" width="92" height="29" rx="14" fill="url(#structGrad)" filter="url(#smallShadow)"/>
+    <text x="108" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285778">struct</text>
+    <text x="174" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587084">Tüm üyeler etkin</text>
+
+    <path d="M167 127 L167 137 L103 137 L103 145" fill="none" stroke="#7ca8c8" stroke-width="2"/>
+    <path d="M167 137 L167 145" fill="none" stroke="#7ca8c8" stroke-width="2"/>
+    <path d="M167 137 L231 137 L231 145" fill="none" stroke="#7ca8c8" stroke-width="2"/>
+    <polygon points="99,142 107,142 103,149" fill="#7ca8c8"/>
+    <polygon points="163,142 171,142 167,149" fill="#7ca8c8"/>
+    <polygon points="227,142 235,142 231,149" fill="#7ca8c8"/>
+
+    <g filter="url(#smallShadow)">
+      <rect x="65" y="151" width="76" height="61" rx="12" fill="#e9f4ff"/>
+      <rect x="151" y="151" width="76" height="61" rx="12" fill="#ddecfa"/>
+      <rect x="237" y="151" width="40" height="61" rx="12" fill="#e9f4ff"/>
+    </g>
+    <text x="103" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326b91">ad</text>
+    <text x="103" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8198">char[30]</text>
+    <text x="189" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326b91">numara</text>
+    <text x="189" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8198">int</text>
+    <text x="257" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#326b91">not</text>
+    <text x="257" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f8198">float</text>
+
+    <rect x="66" y="227" width="210" height="22" rx="10" fill="#d7eafa"/>
+    <text x="171" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#376a8a">Bellek: üyelerin toplamı</text>
+  </g>
+
+  <g>
+    <rect x="366" y="89" width="88" height="29" rx="14" fill="url(#unionGrad)" filter="url(#smallShadow)"/>
+    <text x="410" y="108" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#467034">union</text>
+    <text x="470" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587084">Tek alan, tek seçim</text>
+
+    <path d="M472 127 L472 146" fill="none" stroke="#89ad72" stroke-width="2"/>
+    <polygon points="468,143 476,143 472,150" fill="#89ad72"/>
+
+    <g filter="url(#smallShadow)">
+      <rect x="381" y="152" width="182" height="60" rx="14" fill="#e6f4d9" stroke="#b8d99f"/>
+      <rect x="391" y="162" width="162" height="40" rx="9" fill="#d4ecc3"/>
+    </g>
+    <text x="472" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6d37">Paylaşılan bellek alanı</text>
+    <text x="472" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8052">int  veya  float  veya  char</text>
+
+    <g filter="url(#smallShadow)">
+      <rect x="375" y="224" width="54" height="25" rx="11" fill="#fff4d9"/>
+      <rect x="445" y="224" width="54" height="25" rx="11" fill="#fff4d9"/>
+      <rect x="515" y="224" width="54" height="25" rx="11" fill="#ccebc4"/>
+    </g>
+    <text x="402" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b6636">int</text>
+    <text x="472" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b6636">float</text>
+    <text x="542" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416d38">char</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="201" y="277" width="238" height="28" rx="14" fill="#ffffff" stroke="#d1dfe1"/>
+  </g>
+  <circle cx="219" cy="291" r="7" fill="#83aee0"/>
+  <circle cx="239" cy="291" r="7" fill="#92bd74"/>
+  <text x="326" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e6877">Etiketli birlik: tür + veri</text>
+</svg>
