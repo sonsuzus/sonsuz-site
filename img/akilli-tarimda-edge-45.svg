@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#d9f3dc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5b7590" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52718a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="43" r="52" fill="#dff1ff" opacity="0.5"/>
+  <circle cx="587" cy="270" r="76" fill="#dff3d9" opacity="0.48"/>
+  <path d="M0 260 C100 232 126 280 211 255 S352 229 435 261 S561 282 640 249" fill="none" stroke="#b9dbae" stroke-width="2" opacity="0.6"/>
+  <path d="M0 276 C85 250 158 291 242 271 S399 248 486 275 S570 287 640 269" fill="none" stroke="#cde6c5" stroke-width="2" opacity="0.75"/>
+
+  <!-- Sensor lines -->
+  <path d="M143 95 L213 125" fill="none" stroke="#76a8b9" stroke-width="2.5"/>
+  <polygon points="213,125 202,117 204,130" fill="#76a8b9"/>
+  <path d="M145 181 L213 164" fill="none" stroke="#76a8b9" stroke-width="2.5"/>
+  <polygon points="213,164 202,158 205,171" fill="#76a8b9"/>
+  <path d="M331 190 L390 234" fill="none" stroke="#62aa7b" stroke-width="2.5"/>
+  <polygon points="390,234 377,230 383,241" fill="#62aa7b"/>
+
+  <!-- Cloud dashed link -->
+  <path d="M350 112 C398 82 432 76 469 91" fill="none" stroke="#9b9fc7" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <polygon points="469,91 458,84 459,97" fill="#9b9fc7"/>
+
+  <!-- Sensor: soil -->
+  <g filter="url(#soft)">
+    <rect x="35" y="64" width="110" height="62" rx="16" fill="#fffdf7"/>
+    <rect x="35" y="64" width="110" height="62" rx="16" fill="none" stroke="#b8d7df"/>
+    <circle cx="62" cy="92" r="15" fill="#ccecf0"/>
+    <path d="M62 81 C55 90 54 95 62 102 C70 95 69 90 62 81Z" fill="#4d9db0"/>
+    <text x="84" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345667" font-weight="600">Toprak</text>
+    <text x="84" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527483">Nem</text>
+  </g>
+
+  <!-- Sensor: weather -->
+  <g filter="url(#soft)">
+    <rect x="35" y="149" width="110" height="62" rx="16" fill="#fffdf7"/>
+    <rect x="35" y="149" width="110" height="62" rx="16" fill="none" stroke="#b8d7df"/>
+    <circle cx="62" cy="177" r="15" fill="#fff1c9"/>
+    <circle cx="62" cy="177" r="7" fill="#e5a944"/>
+    <path d="M62 164 L62 159 M62 195 L62 190 M49 177 L44 177 M80 177 L75 177 M53 168 L49 164 M71 186 L75 190 M71 168 L75 164 M53 186 L49 190" stroke="#e5a944" stroke-width="2" stroke-linecap="round"/>
+    <text x="84" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345667" font-weight="600">Hava</text>
+    <text x="84" y="191" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527483">Yağış</text>
+  </g>
+
+  <!-- Edge central -->
+  <g filter="url(#shadow)">
+    <rect x="212" y="92" width="140" height="104" rx="24" fill="url(#edgeGrad)"/>
+    <rect x="212" y="92" width="140" height="104" rx="24" fill="none" stroke="#91c5bd" stroke-width="1.5"/>
+    <rect x="257" y="111" width="50" height="31" rx="7" fill="#f9fffd" stroke="#73ad9c"/>
+    <rect x="267" y="142" width="30" height="7" rx="3.5" fill="#73ad9c"/>
+    <path d="M246 156 H318" stroke="#7ab29e" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="248" cy="171" r="4" fill="#e6ae57"/>
+    <circle cx="264" cy="171" r="4" fill="#64a77d"/>
+    <circle cx="280" cy="171" r="4" fill="#72a8d3"/>
+    <text x="282" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#28584d" font-weight="700">Edge Cihazı</text>
+  </g>
+
+  <!-- internal processing label -->
+  <g filter="url(#soft)">
+    <rect x="184" y="213" width="196" height="35" rx="13" fill="#ffffff" opacity="0.92"/>
+    <text x="282" y="235" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427062">Filtrele • Karar ver • Yerel işlem</text>
+  </g>
+  <path d="M282 196 L282 211" stroke="#6aab91" stroke-width="2"/>
+  <polygon points="282,213 277,205 287,205" fill="#6aab91"/>
+
+  <!-- Cloud -->
+  <g filter="url(#soft)">
+    <path d="M475 69 C476 56 487 48 500 51 C507 38 529 39 535 54 C549 51 561 61 559 74 C572 77 578 87 573 98 C569 106 561 109 551 109 H493 C480 109 471 100 472 88 C472 80 473 74 475 69Z" fill="#eeeaff" stroke="#bcb4df" stroke-width="1.5"/>
+    <path d="M499 77 H548" stroke="#877eb7" stroke-width="2" stroke-linecap="round"/>
+    <path d="M508 88 H539" stroke="#a39acd" stroke-width="2" stroke-linecap="round"/>
+    <text x="524" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#625d87" font-weight="700">Bulut</text>
+    <text x="524" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#817a9e">Özet veri</text>
+  </g>
+
+  <!-- Actuator -->
+  <g filter="url(#shadow)">
+    <rect x="391" y="210" width="164" height="68" rx="18" fill="#fffef9"/>
+    <rect x="391" y="210" width="164" height="68" rx="18" fill="none" stroke="#a7d1ab"/>
+    <circle cx="420" cy="244" r="18" fill="#dff1df"/>
+    <path d="M412 247 C416 238 424 237 429 229 C431 239 429 249 420 254 C416 253 413 251 412 247Z" fill="#51a66b"/>
+    <path d="M420 253 C420 245 422 239 427 234" fill="none" stroke="#f8fff7" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="448" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6950" font-weight="700">Sulama Pompası</text>
+    <text x="448" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#628271">Anlık kontrol</text>
+  </g>
+
+  <!-- status -->
+  <g filter="url(#soft)">
+    <rect x="474" y="168" width="111" height="28" rx="14" fill="#e6f5e4"/>
+    <circle cx="491" cy="182" r="5" fill="#54aa68"/>
+    <text x="531" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477354">Çevrimdışı da çalışır</text>
+  </g>
+
+  <text x="35" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8790">Tarla verisi sahada karar üretir</text>
+</svg>
