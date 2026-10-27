@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cfe4ff"/>
+      <stop offset="100%" stop-color="#b8d5f5"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6d9ff"/>
+      <stop offset="100%" stop-color="#d0c2f0"/>
+    </linearGradient>
+    <linearGradient id="plug" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f1d9"/>
+      <stop offset="100%" stop-color="#bce1c3"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7690a6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#526c7e" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="55" r="74" fill="#dceeff" opacity="0.55"/>
+  <circle cx="580" cy="274" r="95" fill="#dcefdc" opacity="0.58"/>
+  <path d="M37 257 C145 223 183 285 285 255 S469 221 601 257" fill="none" stroke="#c9dde8" stroke-width="1.5" opacity="0.7"/>
+
+  <text x="320" y="30" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405568">Akıllı Priz Haberleşmesi</text>
+
+  <!-- Command flow -->
+  <path d="M151 122 H221" fill="none" stroke="#5684ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="221,122 212,117 212,127" fill="#5684ae"/>
+  <path d="M339 122 H405" fill="none" stroke="#7b68ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="405,122 396,117 396,127" fill="#7b68ae"/>
+  <path d="M509 122 H548" fill="none" stroke="#4f9570" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="548,122 539,117 539,127" fill="#4f9570"/>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52687a">
+    <rect x="164" y="91" width="46" height="21" rx="10" fill="#ffffff" opacity="0.9"/>
+    <text x="187" y="105" text-anchor="middle">HTTPS</text>
+    <rect x="350" y="91" width="46" height="21" rx="10" fill="#ffffff" opacity="0.9"/>
+    <text x="373" y="105" text-anchor="middle">MQTT</text>
+  </g>
+
+  <!-- Phone -->
+  <g filter="url(#shadow)">
+    <rect x="48" y="76" width="103" height="119" rx="20" fill="url(#phone)" stroke="#96b9dc" stroke-width="1.2"/>
+    <rect x="59" y="91" width="81" height="84" rx="12" fill="#f8fcff"/>
+    <rect x="84" y="82" width="31" height="4" rx="2" fill="#86a9cb"/>
+    <circle cx="100" cy="183" r="4" fill="#88add0"/>
+    <circle cx="100" cy="130" r="19" fill="#d9f1de"/>
+    <path d="M96 123 L107 130 L96 137 Z" fill="#4f9b70"/>
+    <rect x="70" y="153" width="60" height="7" rx="3.5" fill="#d6e4ef"/>
+  </g>
+  <text x="100" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405568">Mobil Uygulama</text>
+
+  <!-- Backend -->
+  <g filter="url(#shadow)">
+    <rect x="222" y="69" width="117" height="127" rx="21" fill="url(#cloud)" stroke="#ad9acb" stroke-width="1.2"/>
+    <path d="M251 125 C251 115 259 109 268 109 C272 99 284 96 292 104 C302 99 312 106 311 116 C320 117 325 123 325 132 C325 141 318 147 309 147 H263 C255 147 248 141 248 133 C248 129 249 126 251 125Z" fill="#fbfaff" stroke="#b09bcf" stroke-width="1.2"/>
+    <rect x="263" y="122" width="47" height="12" rx="6" fill="#d9cdf0"/>
+    <circle cx="270" cy="128" r="2.5" fill="#816bb2"/>
+    <circle cx="279" cy="128" r="2.5" fill="#816bb2"/>
+    <circle cx="288" cy="128" r="2.5" fill="#816bb2"/>
+    <path d="M264 159 H298" stroke="#ab94cc" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="280" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405568">API ve Aracı</text>
+
+  <!-- Network pulse -->
+  <g opacity="0.9">
+    <circle cx="373" cy="122" r="14" fill="#fff" stroke="#d4c8e8" stroke-width="1"/>
+    <circle cx="373" cy="122" r="5" fill="#8d75bb"/>
+    <circle cx="373" cy="105" r="3" fill="#ae9ad0"/>
+    <circle cx="388" cy="130" r="3" fill="#ae9ad0"/>
+    <circle cx="359" cy="134" r="3" fill="#ae9ad0"/>
+    <path d="M373 110 L373 117 M383 128 L377 124 M362 132 L369 125" stroke="#9a83c1" stroke-width="1.3"/>
+  </g>
+
+  <!-- Plug -->
+  <g filter="url(#shadow)">
+    <rect x="549" y="75" width="60" height="120" rx="22" fill="url(#plug)" stroke="#91bd9a" stroke-width="1.2"/>
+    <rect x="561" y="91" width="36" height="43" rx="12" fill="#f8fffa" stroke="#b9d8bf"/>
+    <circle cx="573" cy="111" r="4" fill="#719f7a"/>
+    <circle cx="585" cy="111" r="4" fill="#719f7a"/>
+    <rect x="563" y="146" width="32" height="20" rx="10" fill="#c4e6c9"/>
+    <circle cx="581" cy="156" r="6" fill="#4d9a68"/>
+    <path d="M578 156 L580 158 L585 152" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M568 181 H590" stroke="#83b48d" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="579" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#405568">Akıllı Priz</text>
+
+  <!-- Return status path -->
+  <path d="M578 232 C578 279 466 279 431 259 C389 235 323 263 281 273 C219 288 149 281 111 249" fill="none" stroke="#5ca47b" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="111,249 120,248 115,257" fill="#5ca47b"/>
+  <g filter="url(#soft)">
+    <rect x="261" y="261" width="122" height="29" rx="14.5" fill="#ffffff"/>
+    <circle cx="279" cy="275.5" r="6" fill="#66ad7d"/>
+    <path d="M276 275 L278 277 L283 272" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="329" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486878">Durum onayı</text>
+  </g>
+
+  <!-- security -->
+  <g transform="translate(405 176)" filter="url(#soft)">
+    <path d="M16 0 L29 5 V15 C29 24 23 30 16 33 C9 30 3 24 3 15 V5 Z" fill="#fff" stroke="#82a4bc" stroke-width="1.2"/>
+    <rect x="11" y="14" width="10" height="8" rx="2" fill="#79a0ba"/>
+    <path d="M13 14 V11.5 C13 8 19 8 19 11.5 V14" fill="none" stroke="#79a0ba" stroke-width="2"/>
+  </g>
+  <text x="438" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52687a">TLS ve yetki</text>
+</svg>

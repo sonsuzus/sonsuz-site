@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#eef8f1"/>
+    </linearGradient>
+    <linearGradient id="city" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#cceedd"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8174db"/>
+      <stop offset="100%" stop-color="#5cbee0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M0 255 C100 215 149 283 249 245 S421 212 640 269 L640 320 L0 320 Z" fill="#dff2e8" opacity="0.55"/>
+  <circle cx="585" cy="45" r="57" fill="#dcefff" opacity="0.45"/>
+  <circle cx="52" cy="283" r="62" fill="#d6f0e2" opacity="0.5"/>
+
+  <!-- Bağlantı çizgileri -->
+  <path d="M192 103 C229 101 231 124 261 137" fill="none" stroke="#7895ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="259,131 270,140 256,142" fill="#7895ad"/>
+  <path d="M193 214 C229 215 235 197 262 184" fill="none" stroke="#7895ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="257,180 271,180 264,192" fill="#7895ad"/>
+  <path d="M376 159 C407 159 412 159 438 159" fill="none" stroke="#7895ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="435,153 447,159 435,165" fill="#7895ad"/>
+
+  <!-- Sol üst: şehir grafı -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="54" width="164" height="98" rx="18" fill="#ffffff"/>
+    <rect x="30" y="54" width="164" height="31" rx="18" fill="url(#city)"/>
+    <rect x="30" y="70" width="164" height="15" fill="url(#city)"/>
+  </g>
+  <text x="50" y="74" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365673">Şehir grafı</text>
+  <g stroke="#9aafbd" stroke-width="2" fill="none">
+    <path d="M58 111 L91 99 L120 118 L163 102"/>
+    <path d="M58 111 L82 132 L120 118 L151 133 L163 102"/>
+    <path d="M91 99 L151 133"/>
+  </g>
+  <g filter="url(#smallShadow)">
+    <circle cx="58" cy="111" r="6" fill="#71bed5"/>
+    <circle cx="91" cy="99" r="6" fill="#7dce9f"/>
+    <circle cx="120" cy="118" r="6" fill="#efb66f"/>
+    <circle cx="163" cy="102" r="6" fill="#8a7ed6"/>
+    <circle cx="82" cy="132" r="6" fill="#7dce9f"/>
+    <circle cx="151" cy="133" r="6" fill="#efb66f"/>
+  </g>
+  <text x="44" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58708a">Düğüm ve yollar</text>
+
+  <!-- Sol alt: canlı veriler -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="174" width="164" height="98" rx="18" fill="#ffffff"/>
+    <rect x="30" y="174" width="164" height="31" rx="18" fill="#d9f1e4"/>
+    <rect x="30" y="190" width="164" height="15" fill="#d9f1e4"/>
+  </g>
+  <text x="50" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365673">Canlı veriler</text>
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="219" width="29" height="28" rx="7" fill="#dff1ff"/>
+    <rect x="91" y="219" width="29" height="28" rx="7" fill="#e8e2ff"/>
+    <rect x="134" y="219" width="29" height="28" rx="7" fill="#fff0d8"/>
+  </g>
+  <path d="M55 239 L55 229 L70 229 L70 239 M59 229 L59 224 L66 224 L66 229" fill="none" stroke="#5191b4" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M101 239 L101 228 M106 239 L106 224 M111 239 L111 231 M116 239 L116 226" stroke="#786dc5" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M143 238 C146 232 150 229 154 229 C158 229 161 232 163 238" fill="none" stroke="#ca9044" stroke-width="2"/>
+  <circle cx="153" cy="224" r="3" fill="#ca9044"/>
+  <text x="47" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58708a">Doluluk · trafik · GPS</text>
+
+  <!-- Merkez optimizasyon -->
+  <g filter="url(#shadow)">
+    <rect x="264" y="102" width="112" height="115" rx="28" fill="url(#core)"/>
+    <circle cx="320" cy="144" r="27" fill="#ffffff" opacity="0.19"/>
+    <circle cx="320" cy="144" r="20" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <path d="M309 143 C309 137 314 133 320 133 C326 133 331 137 331 143" fill="none" stroke="#6963b6" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M331 143 L327 139 M331 143 L326 146" fill="none" stroke="#6963b6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M331 147 C331 153 326 157 320 157 C314 157 309 153 309 147" fill="none" stroke="#4e9ebb" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M309 147 L313 151 M309 147 L314 144" fill="none" stroke="#4e9ebb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Rota motoru</text>
+  <text x="320" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eaf8ff">CVRP · sezgisel</text>
+
+  <!-- Sağ rota kartı -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="54" width="160" height="218" rx="20" fill="#ffffff"/>
+    <rect x="450" y="54" width="160" height="36" rx="20" fill="#dceeff"/>
+    <rect x="450" y="72" width="160" height="18" fill="#dceeff"/>
+  </g>
+  <text x="472" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365673">En uygun rota</text>
+
+  <!-- Mini harita -->
+  <rect x="468" y="105" width="124" height="100" rx="13" fill="#f3f8f5" stroke="#d7e8dd"/>
+  <path d="M480 185 C493 164 491 125 516 128 C537 131 520 165 546 166 C569 167 561 121 581 119" fill="none" stroke="#c6d5cf" stroke-width="5" stroke-linecap="round"/>
+  <path d="M480 185 C493 164 491 125 516 128 C537 131 520 165 546 166 C569 167 561 121 581 119" fill="none" stroke="#5bba91" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="578,114 588,119 579,124" fill="#5bba91"/>
+  <g filter="url(#smallShadow)">
+    <circle cx="480" cy="185" r="7" fill="#6b83ca"/>
+    <circle cx="516" cy="128" r="6" fill="#f0aa62"/>
+    <circle cx="546" cy="166" r="6" fill="#f0aa62"/>
+    <circle cx="581" cy="119" r="6" fill="#f0aa62"/>
+  </g>
+  <path d="M476 187 L484 187 L484 180 L488 180 L488 190 L476 190 Z" fill="#ffffff"/>
+  <text x="480" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40617a">Kamyon planı</text>
+  <g>
+    <rect x="469" y="235" width="37" height="21" rx="10" fill="#e1f3e9"/>
+    <text x="487" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43876c">↓ km</text>
+    <rect x="512" y="235" width="37" height="21" rx="10" fill="#e9e5ff"/>
+    <text x="530" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#665cae">↓ süre</text>
+    <rect x="555" y="235" width="37" height="21" rx="10" fill="#fff0df"/>
+    <text x="573" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b4773b">↓ yakıt</text>
+  </g>
+
+  <!-- Alt açıklama -->
+  <g opacity="0.9">
+    <circle cx="252" cy="286" r="4" fill="#72be9a"/>
+    <text x="263" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58708a">Değişen koşullarda yeniden hesaplama</text>
+  </g>
+</svg>

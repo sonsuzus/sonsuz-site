@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#81c9ee"/>
+      <stop offset="100%" stop-color="#428fc8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#57718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#66809a" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="42" r="54" fill="#d9f0ef" opacity="0.42"/>
+  <circle cx="595" cy="287" r="82" fill="#dceafb" opacity="0.5"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a5570">UZAY ENKAZI TAKİP AKIŞI</text>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="57" width="128" height="186" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="45" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b73">Gözlem</text>
+
+  <g filter="url(#soft)">
+    <rect x="40" y="100" width="96" height="49" rx="12" fill="#e3f3ff"/>
+    <rect x="40" y="164" width="96" height="49" rx="12" fill="#eaf7e9"/>
+  </g>
+  <path d="M55 130 L66 120 L77 130 L87 113 L100 130" fill="none" stroke="#4d94be" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M52 137 Q87 113 123 137" fill="none" stroke="#4d94be" stroke-width="2"/>
+  <text x="77" y="145" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345b77">Radar</text>
+
+  <circle cx="65" cy="183" r="9" fill="none" stroke="#62a678" stroke-width="2"/>
+  <path d="M73 191 L86 204 M82 177 L91 177 M86 172 L86 183" fill="none" stroke="#62a678" stroke-width="2" stroke-linecap="round"/>
+  <text x="92" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39694a">Teleskop</text>
+
+  <path d="M152 132 H177" fill="none" stroke="#7190a7" stroke-width="2"/>
+  <polygon points="177,132 169,127 169,137" fill="#7190a7"/>
+  <path d="M152 188 H177" fill="none" stroke="#7190a7" stroke-width="2"/>
+  <polygon points="177,188 169,183 169,193" fill="#7190a7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="181" y="93" width="130" height="137" rx="18" fill="#fffdf8"/>
+  </g>
+  <text x="246" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5b5863">Yörünge Belirleme</text>
+  <rect x="202" y="137" width="88" height="27" rx="9" fill="#f3e9ff"/>
+  <text x="246" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a4d8a">Kalman filtresi</text>
+  <path d="M207 190 C222 174 239 205 257 184 C269 171 279 177 286 170" fill="none" stroke="#9b73bd" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="210" cy="190" r="3" fill="#9b73bd"/>
+  <circle cx="286" cy="170" r="3" fill="#9b73bd"/>
+  <text x="246" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#716a77">Konum ve belirsizlik</text>
+
+  <path d="M312 161 H338" fill="none" stroke="#7190a7" stroke-width="2"/>
+  <polygon points="338,161 330,156 330,166" fill="#7190a7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="342" y="57" width="151" height="186" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="417" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b73">Gelecek Yörünge</text>
+
+  <circle cx="416" cy="154" r="31" fill="url(#earth)"/>
+  <path d="M386 151 C396 112 451 104 470 141 C484 168 453 202 412 195 C380 190 366 165 386 151Z" fill="none" stroke="#94b5d4" stroke-width="2"/>
+  <path d="M377 173 C407 215 470 196 475 153" fill="none" stroke="#d49d86" stroke-width="2" stroke-dasharray="5 4"/>
+  <path d="M454 118 L465 114 L461 125 Z" fill="#5e7387"/>
+  <rect x="450" y="116" width="7" height="7" rx="1" fill="#f6c96f"/>
+  <path d="M452 119 L441 113 M456 119 L468 127" stroke="#5e7387" stroke-width="1.5"/>
+  <circle cx="459" cy="182" r="4" fill="#e8756d"/>
+  <circle cx="477" cy="161" r="3" fill="#7d8790"/>
+  <text x="416" y="225" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617487">Sayısal tahmin</text>
+
+  <path d="M493 151 H516" fill="none" stroke="#7190a7" stroke-width="2"/>
+  <polygon points="516,151 508,146 508,156" fill="#7190a7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="520" y="72" width="98" height="160" rx="18" fill="#fffdfc"/>
+  </g>
+  <text x="569" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405b73">Risk Analizi</text>
+
+  <circle cx="550" cy="138" r="17" fill="#fff1df" stroke="#e6ae69" stroke-width="2"/>
+  <circle cx="574" cy="138" r="17" fill="#fbe5e5" stroke="#dc827c" stroke-width="2"/>
+  <path d="M558 138 H566" stroke="#c87966" stroke-width="2" stroke-dasharray="2 2"/>
+  <text x="569" y="173" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765f5c">Yakın geçiş</text>
+
+  <rect x="539" y="186" width="60" height="25" rx="9" fill="#f6d9d4"/>
+  <text x="569" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a34e48">Uyarı</text>
+
+  <path d="M493 218 C514 218 517 218 529 210" fill="none" stroke="#d58a7e" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <polygon points="529,210 521,209 525,217" fill="#d58a7e"/>
+
+  <rect x="195" y="266" width="249" height="29" rx="14" fill="#e7f0fa" filter="url(#soft)"/>
+  <text x="319" y="285" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526f88">Ölçüm → Tahmin → Çarpışma olasılığı</text>
+</svg>
