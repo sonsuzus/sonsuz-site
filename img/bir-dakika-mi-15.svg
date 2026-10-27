@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6e0ff"/>
+      <stop offset="100%" stop-color="#d6f1fb"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#76c9d7"/>
+      <stop offset="100%" stop-color="#8c88dc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7690a0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#738796" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="40" r="72" fill="#d8eef5" opacity="0.45"/>
+  <circle cx="590" cy="280" r="95" fill="#dff1d9" opacity="0.42"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566a">OYUNLARDA ZAMAN ALGISI</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909e">Aynı süre, farklı deneyim</text>
+
+  <path d="M145 129 L204 129" stroke="#7592a2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="204,129 195,124 195,134" fill="#7592a2"/>
+  <path d="M436 129 L494 129" stroke="#7592a2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="494,129 485,124 485,134" fill="#7592a2"/>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="91" width="117" height="76" rx="18" fill="#ffffff"/>
+    <circle cx="58" cy="129" r="17" fill="#d9f0ec"/>
+    <path d="M58 118 L58 130 L66 135" fill="none" stroke="#4d9c91" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566a">Gerçek süre</text>
+    <text x="82" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718392">30 saniye</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="204" y="73" width="232" height="112" rx="24" fill="url(#core)"/>
+    <text x="320" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#465a76">ALGILANAN ZAMAN</text>
+    <text x="320" y="137" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="23" font-weight="700" fill="#596486">Tₐ = Tg ×</text>
+    <rect x="312" y="145" width="68" height="2" rx="1" fill="#7182a4"/>
+    <text x="346" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52637c">B + D</text>
+    <text x="346" y="162" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52637c">E + K</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="494" y="91" width="118" height="76" rx="18" fill="#ffffff"/>
+    <circle cx="524" cy="129" r="17" fill="#fbe6cb"/>
+    <path d="M517 130 C520 121 530 120 532 127 C535 135 525 139 518 137" fill="none" stroke="#d58a55" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="548" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566a">Hissedilen</text>
+    <text x="548" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718392">kısa veya uzun</text>
+  </g>
+
+  <path d="M270 185 L216 212" stroke="#b5a2d8" stroke-width="1.7"/>
+  <path d="M370 185 L424 212" stroke="#89bfc3" stroke-width="1.7"/>
+
+  <g filter="url(#soft)">
+    <rect x="92" y="212" width="178" height="86" rx="18" fill="#fffdfb"/>
+    <circle cx="117" cy="237" r="12" fill="#f6d5d2"/>
+    <path d="M117 231 L117 238" stroke="#c9716d" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="117" cy="242" r="1.5" fill="#c9716d"/>
+    <text x="138" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526270">Süreyi uzatanlar</text>
+    <text x="108" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73818d">Belirsizlik</text>
+    <text x="108" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73818d">Beklemeye odaklanma</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="370" y="212" width="178" height="86" rx="18" fill="#ffffff"/>
+    <circle cx="395" cy="237" r="12" fill="#d7edce"/>
+    <path d="M389 237 L393 241 L401 232" fill="none" stroke="#6fa160" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="416" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526270">Süreyi kısaltanlar</text>
+    <text x="386" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73818d">Eğlence ve ipuçları</text>
+    <text x="386" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#73818d">Kontrol hissi</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="276" y="207" width="88" height="96" rx="18" fill="#ffffff"/>
+    <text x="320" y="229" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#566b7a">Geri bildirim</text>
+    <rect x="290" y="243" width="60" height="10" rx="5" fill="#e5ebee"/>
+    <rect x="290" y="243" width="43" height="10" rx="5" fill="url(#bar)"/>
+    <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637887">%72 · Akıcı</text>
+  </g>
+</svg>
