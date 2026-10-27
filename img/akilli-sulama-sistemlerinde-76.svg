@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#eef8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#4fac88"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#82cfff"/>
+      <stop offset="100%" stop-color="#438cda"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5c7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#4f7185" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="161" r="116" fill="#d7edf0" opacity="0.36"/>
+  <circle cx="320" cy="161" r="86" fill="#ffffff" opacity="0.36"/>
+
+  <!-- Bağlantılar -->
+  <path d="M178 78 C211 88 226 106 246 126" fill="none" stroke="#8caabb" stroke-width="2"/>
+  <polygon points="245,120 255,132 240,130" fill="#8caabb"/>
+  <path d="M182 159 C204 159 221 159 242 159" fill="none" stroke="#8caabb" stroke-width="2"/>
+  <polygon points="240,153 253,159 240,165" fill="#8caabb"/>
+  <path d="M178 241 C209 229 226 210 246 190" fill="none" stroke="#8caabb" stroke-width="2"/>
+  <polygon points="240,190 255,185 247,200" fill="#8caabb"/>
+
+  <path d="M394 142 C414 124 426 106 446 91" fill="none" stroke="#609dc3" stroke-width="2.5"/>
+  <polygon points="442,89 454,85 449,98" fill="#609dc3"/>
+  <path d="M398 160 C418 160 430 160 449 160" fill="none" stroke="#609dc3" stroke-width="2.5"/>
+  <polygon points="447,154 460,160 447,166" fill="#609dc3"/>
+  <path d="M394 180 C414 197 429 213 447 230" fill="none" stroke="#609dc3" stroke-width="2.5"/>
+  <polygon points="444,223 455,235 441,233" fill="#609dc3"/>
+
+  <!-- Girdiler -->
+  <g filter="url(#soft)">
+    <rect x="34" y="47" width="144" height="61" rx="17" fill="#ffffff"/>
+    <rect x="46" y="59" width="34" height="34" rx="11" fill="#c8ebff"/>
+    <path d="M63 64 C56 73 55 77 55 81 A8 8 0 0 0 71 81 C71 77 69 73 63 64Z" fill="#419bd5"/>
+    <text x="91" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#304d62">Toprak nemi</text>
+    <text x="91" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8491">Sensör verisi</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="129" width="148" height="61" rx="17" fill="#ffffff"/>
+    <rect x="46" y="141" width="34" height="34" rx="11" fill="#fff0ba"/>
+    <circle cx="63" cy="157" r="8" fill="#f3b94a"/>
+    <path d="M63 145 L63 139 M63 175 L63 169 M51 157 L45 157 M81 157 L75 157 M54 148 L50 144 M72 166 L76 170 M72 148 L76 144 M54 166 L50 170" stroke="#e5a92c" stroke-width="2" stroke-linecap="round"/>
+    <text x="91" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#304d62">Hava tahmini</text>
+    <text x="91" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8491">ET₀ ve yağış</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="211" width="144" height="61" rx="17" fill="#ffffff"/>
+    <rect x="46" y="223" width="34" height="34" rx="11" fill="#d8f3d1"/>
+    <path d="M55 247 C59 234 70 232 73 232 C73 242 67 250 55 247Z" fill="#55a967"/>
+    <path d="M56 247 C61 242 65 239 70 235" fill="none" stroke="#e9ffe9" stroke-width="1.5"/>
+    <text x="91" y="236" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#304d62">Bitki durumu</text>
+    <text x="91" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8491">Katsayı ve öncelik</text>
+  </g>
+
+  <!-- Merkezi karar -->
+  <g filter="url(#shadow)">
+    <rect x="247" y="111" width="148" height="98" rx="26" fill="url(#core)"/>
+    <circle cx="321" cy="143" r="18" fill="#ffffff" opacity="0.2"/>
+    <path d="M313 143 L318 148 L329 136" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="321" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">OPTİMİZASYON</text>
+    <text x="321" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eafcff">İhtiyaç → tahsis</text>
+  </g>
+
+  <!-- Çıktılar -->
+  <g filter="url(#soft)">
+    <rect x="459" y="59" width="147" height="61" rx="17" fill="#ffffff"/>
+    <rect x="471" y="71" width="34" height="34" rx="11" fill="#cceeff"/>
+    <path d="M478 88 H498 M482 83 V93 M494 83 V93" stroke="#398ac2" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="516" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#304d62">Vana 1</text>
+    <text x="516" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5587aa">Bölgesel süre</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="462" y="129" width="144" height="61" rx="17" fill="#ffffff"/>
+    <rect x="474" y="141" width="34" height="34" rx="11" fill="#d2f2dd"/>
+    <path d="M481 158 H501 M485 153 V163 M497 153 V163" stroke="#469769" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="519" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#304d62">Vana 2</text>
+    <text x="519" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#579071">Öncelikli alan</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="459" y="199" width="147" height="61" rx="17" fill="#ffffff"/>
+    <rect x="471" y="211" width="34" height="34" rx="11" fill="#e4dcff"/>
+    <path d="M478 228 H498 M482 223 V233 M494 223 V233" stroke="#7765c2" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="516" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#304d62">Vana 3</text>
+    <text x="516" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7d70ad">Tasarruf modu</text>
+  </g>
+
+  <!-- Alt bilgi -->
+  <g filter="url(#soft)">
+    <rect x="222" y="270" width="196" height="31" rx="15" fill="#ffffff" opacity="0.95"/>
+    <path d="M240 285 C244 278 249 277 252 277 C252 284 248 288 240 285Z" fill="#4fa467"/>
+    <text x="264" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#46606c">Doğru damla · doğru kök</text>
+  </g>
+</svg>

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="homeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f2ff"/>
+      <stop offset="100%" stop-color="#d9efe9"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66819a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71879a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="583" cy="45" r="70" fill="#dceefa" opacity="0.55"/>
+  <circle cx="59" cy="280" r="85" fill="#e1f2dc" opacity="0.52"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#48647b" font-weight="600">AKILLI EVDE YEREL İŞLEME</text>
+
+  <!-- Cloud optional -->
+  <g filter="url(#soft)">
+    <rect x="464" y="31" width="142" height="48" rx="16" fill="#f6f2ff" stroke="#d8cbed"/>
+    <circle cx="492" cy="54" r="10" fill="#cbb8e8"/>
+    <circle cx="504" cy="50" r="13" fill="#cbb8e8"/>
+    <circle cx="518" cy="55" r="9" fill="#cbb8e8"/>
+    <rect x="488" y="54" width="39" height="11" rx="6" fill="#cbb8e8"/>
+    <text x="541" y="58" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#685981">Bulut</text>
+  </g>
+
+  <!-- optional line -->
+  <path d="M464 72 C431 81,420 96,404 111" fill="none" stroke="#aa9cc7" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="404,111 410,102 414,112" fill="#aa9cc7"/>
+  <text x="421" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#827092">Gerekli veri</text>
+
+  <!-- Home container -->
+  <g filter="url(#shadow)">
+    <path d="M178 127 L320 50 L462 127 L462 268 Q462 281 449 281 L191 281 Q178 281 178 268 Z" fill="url(#homeGrad)" stroke="#a9c8d1" stroke-width="2"/>
+    <path d="M164 132 L320 45 L476 132" fill="none" stroke="#83aebb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M164 132 L320 45 L476 132" fill="none" stroke="#effbfc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="282" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7180" font-weight="600">EV AĞI</text>
+
+  <!-- Sensor cards -->
+  <g filter="url(#soft)">
+    <rect x="28" y="94" width="112" height="51" rx="14" fill="#fff4d9" stroke="#ecd598"/>
+    <circle cx="53" cy="119" r="13" fill="#f6cb70"/>
+    <path d="M48 119 Q53 112 58 119 Q53 126 48 119Z" fill="#fff8df"/>
+    <circle cx="53" cy="119" r="3" fill="#9c7840"/>
+    <text x="75" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735d39">Hareket</text>
+    <text x="75" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#735d39">sensörü</text>
+
+    <rect x="28" y="172" width="112" height="51" rx="14" fill="#e9f0ff" stroke="#bfcff0"/>
+    <circle cx="53" cy="197" r="13" fill="#9ebbea"/>
+    <path d="M53 187 L57 197 L53 207 L49 197 Z" fill="#f8fbff"/>
+    <text x="75" y="201" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d9a">Işık ve</text>
+    <text x="75" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d9a">sıcaklık</text>
+  </g>
+
+  <!-- Sensor connections -->
+  <path d="M140 119 L220 139" fill="none" stroke="#8aa7ae" stroke-width="2.5"/>
+  <polygon points="220,139 210,134 212,144" fill="#8aa7ae"/>
+  <path d="M140 198 L220 181" fill="none" stroke="#8aa7ae" stroke-width="2.5"/>
+  <polygon points="220,181 212,176 214,186" fill="#8aa7ae"/>
+
+  <!-- Hub -->
+  <g filter="url(#shadow)">
+    <rect x="219" y="130" width="202" height="104" rx="22" fill="#ffffff" stroke="#b6d4cf" stroke-width="2"/>
+    <rect x="238" y="148" width="164" height="26" rx="10" fill="#d9f0e8"/>
+    <circle cx="255" cy="161" r="7" fill="#55a992"/>
+    <path d="M252 161 L255 164 L260 157" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="273" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c7167" font-weight="600">Yerel Merkez</text>
+    <rect x="240" y="186" width="62" height="27" rx="9" fill="#eef6ff"/>
+    <text x="252" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52738d">Olay</text>
+    <path d="M306 200 L326 200" fill="none" stroke="#7fa9a1" stroke-width="2"/>
+    <polygon points="326,200 318,195 318,205" fill="#7fa9a1"/>
+    <rect x="330" y="186" width="63" height="27" rx="9" fill="#edf8e9"/>
+    <text x="339" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547854">Karar</text>
+  </g>
+
+  <!-- Actions -->
+  <g filter="url(#soft)">
+    <rect x="498" y="120" width="114" height="50" rx="14" fill="#fff0d8" stroke="#edcf9b"/>
+    <circle cx="524" cy="145" r="14" fill="#f5bf57"/>
+    <path d="M519 145 Q524 135 529 145 L529 150 L519 150 Z" fill="#fff9e8"/>
+    <rect x="521" y="151" width="6" height="4" rx="1" fill="#b17b2d"/>
+    <text x="547" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765d34">Lamba</text>
+
+    <rect x="498" y="198" width="114" height="50" rx="14" fill="#e5f5ee" stroke="#b9decf"/>
+    <circle cx="524" cy="223" r="14" fill="#7fc6ad"/>
+    <path d="M518 225 Q524 214 530 225" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="524" cy="229" r="2" fill="#ffffff"/>
+    <text x="547" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7569">İklim</text>
+  </g>
+
+  <!-- Action connections -->
+  <path d="M421 165 L480 145 L498 145" fill="none" stroke="#77a998" stroke-width="2.5"/>
+  <polygon points="498,145 489,140 489,150" fill="#77a998"/>
+  <path d="M421 202 L480 223 L498 223" fill="none" stroke="#77a998" stroke-width="2.5"/>
+  <polygon points="498,223 489,218 489,228" fill="#77a998"/>
+
+  <!-- Footer badges -->
+  <g filter="url(#soft)">
+    <rect x="206" y="291" width="105" height="21" rx="10" fill="#dceefa"/>
+    <text x="224" y="306" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52738d">Hızlı tepki</text>
+    <rect x="326" y="291" width="109" height="21" rx="10" fill="#ddf1e2"/>
+    <text x="341" y="306" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7860">Veri evde</text>
+  </g>
+</svg>
