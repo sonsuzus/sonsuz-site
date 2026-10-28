@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f4e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#57708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#57708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="61" cy="35" r="72" fill="#dcecff" opacity="0.42"/>
+  <circle cx="600" cy="286" r="95" fill="#d9f2df" opacity="0.48"/>
+
+  <text x="28" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546f">Elektronik Sağlık Kaydı Mimarisi</text>
+
+  <rect x="20" y="52" width="116" height="210" rx="18" fill="#eef6ff" stroke="#c7ddf3" filter="url(#shadow)"/>
+  <text x="78" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385775">Veri Kaynakları</text>
+
+  <rect x="34" y="91" width="88" height="34" rx="10" fill="#ffffff" filter="url(#soft)"/>
+  <circle cx="50" cy="108" r="7" fill="#9dc9f3"/>
+  <path d="M46 108h8M50 104v8" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="63" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405a70">Muayene</text>
+
+  <rect x="34" y="136" width="88" height="34" rx="10" fill="#ffffff" filter="url(#soft)"/>
+  <path d="M44 153h12M50 147v12" stroke="#82c8ab" stroke-width="2" stroke-linecap="round"/>
+  <text x="63" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405a70">Laboratuvar</text>
+
+  <rect x="34" y="181" width="88" height="34" rx="10" fill="#ffffff" filter="url(#soft)"/>
+  <rect x="44" y="190" width="13" height="13" rx="3" fill="#d7b7ed"/>
+  <circle cx="50.5" cy="196.5" r="2.5" fill="#ffffff"/>
+  <text x="63" y="202" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405a70">Görüntü</text>
+
+  <rect x="34" y="226" width="88" height="22" rx="8" fill="#d9f2e5"/>
+  <text x="78" y="241" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#39705b">Hasta kimliği</text>
+
+  <path d="M143 157H177" stroke="#7fa5c6" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="177,157 169,152 169,162" fill="#7fa5c6"/>
+
+  <rect x="183" y="48" width="266" height="218" rx="24" fill="url(#core)" stroke="#b8d6d6" stroke-width="1.3" filter="url(#shadow)"/>
+  <text x="316" y="74" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315c67">Güvenli Klinik Platform</text>
+
+  <rect x="209" y="91" width="214" height="37" rx="12" fill="#ffffff" filter="url(#soft)"/>
+  <path d="M227 108l6-7 6 7v8h-12z" fill="#8dbce6"/>
+  <circle cx="233" cy="112" r="2" fill="#ffffff"/>
+  <text x="250" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3b5b71">API ve doğrulama</text>
+  <text x="390" y="114" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8897">FHIR</text>
+
+  <path d="M316 129V142" stroke="#6da3ab" stroke-width="2"/>
+  <polygon points="316,142 311,135 321,135" fill="#6da3ab"/>
+
+  <rect x="209" y="145" width="99" height="47" rx="12" fill="#fffdf9" filter="url(#soft)"/>
+  <text x="258" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76604a">Klinik servisler</text>
+  <text x="258" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7968">Reçete · randevu</text>
+
+  <rect x="324" y="145" width="99" height="47" rx="12" fill="#fffdf9" filter="url(#soft)"/>
+  <text x="373" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76604a">Standartlar</text>
+  <text x="373" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7968">HL7 · DICOM</text>
+
+  <path d="M258 194V207M373 194V207" stroke="#6da3ab" stroke-width="2"/>
+  <path d="M258 207H316V214" stroke="#6da3ab" stroke-width="2"/>
+  <path d="M373 207H316" stroke="#6da3ab" stroke-width="2"/>
+  <polygon points="316,214 311,207 321,207" fill="#6da3ab"/>
+
+  <rect x="226" y="216" width="180" height="31" rx="11" fill="#ffffff" filter="url(#soft)"/>
+  <ellipse cx="246" cy="226" rx="9" ry="3.5" fill="#9bbfe6"/>
+  <path d="M237 226v8c0 2 18 2 18 0v-8M237 230c0 2 18 2 18 0" fill="none" stroke="#719cca" stroke-width="1.3"/>
+  <text x="264" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3d617c">Tekil hasta kaydı ve sürüm</text>
+
+  <path d="M455 114H478V94H491" fill="none" stroke="#7fa5c6" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="491,94 483,89 483,99" fill="#7fa5c6"/>
+  <path d="M455 231H478V231H491" fill="none" stroke="#7fa5c6" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="491,231 483,226 483,236" fill="#7fa5c6"/>
+
+  <rect x="498" y="52" width="122" height="94" rx="18" fill="#f4efff" stroke="#d9caef" filter="url(#shadow)"/>
+  <text x="559" y="76" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5e4d82">Koruma Katmanı</text>
+  <rect x="513" y="88" width="92" height="20" rx="7" fill="#ffffff" filter="url(#soft)"/>
+  <text x="559" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#625779">Şifreleme</text>
+  <rect x="513" y="115" width="92" height="20" rx="7" fill="#ffffff" filter="url(#soft)"/>
+  <text x="559" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#625779">Rol tabanlı erişim</text>
+
+  <rect x="498" y="166" width="122" height="96" rx="18" fill="#eef9f3" stroke="#c6e4d1" filter="url(#shadow)"/>
+  <text x="559" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e705a">Dağıtık Veri</text>
+  <rect x="513" y="201" width="92" height="20" rx="7" fill="#ffffff" filter="url(#soft)"/>
+  <text x="559" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7564">SQL ve PACS</text>
+  <rect x="513" y="228" width="92" height="20" rx="7" fill="#ffffff" filter="url(#soft)"/>
+  <text x="559" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b7564">Yedek ve replika</text>
+
+  <path d="M495 154C510 145 529 148 536 158" fill="none" stroke="#b093d0" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="491" cy="155" r="4" fill="#b093d0"/>
+  <text x="467" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668579">İzlenebilir · hızlı · tutarlı</text>
+</svg>

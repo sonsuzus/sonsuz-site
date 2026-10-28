@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfeaff"/>
+      <stop offset="100%" stop-color="#c9dcf7"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3e4"/>
+      <stop offset="100%" stop-color="#bde5d1"/>
+    </linearGradient>
+    <linearGradient id="risk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe5df"/>
+      <stop offset="100%" stop-color="#f7c9c1"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d8098" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8098" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="158" r="126" fill="#dfeef5" opacity="0.42"/>
+  <circle cx="320" cy="158" r="91" fill="#ffffff" opacity="0.42"/>
+
+  <path d="M145 88 C177 88,184 110,214 125" fill="none" stroke="#8da5b9" stroke-width="2"/>
+  <polygon points="214,125 204,120 207,131" fill="#8da5b9"/>
+  <path d="M145 157 C169 157,181 157,210 157" fill="none" stroke="#8da5b9" stroke-width="2"/>
+  <polygon points="210,157 200,152 200,162" fill="#8da5b9"/>
+  <path d="M145 226 C175 226,187 202,214 189" fill="none" stroke="#e39b94" stroke-width="2"/>
+  <polygon points="214,189 203,188 208,198" fill="#e39b94"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="30" y="58" width="116" height="60" rx="16" fill="#fff7d9"/>
+    <circle cx="57" cy="88" r="14" fill="#f6d975"/>
+    <path d="M51 88 Q57 80 63 88 Q57 96 51 88Z" fill="none" stroke="#846d24" stroke-width="1.7"/>
+    <text x="79" y="83" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5764">Televizyon</text>
+    <text x="79" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77808b">benzer ses</text>
+
+    <rect x="30" y="127" width="116" height="60" rx="16" fill="#e4f4ee"/>
+    <circle cx="57" cy="157" r="14" fill="#9ed7c2"/>
+    <path d="M53 151 C48 155 48 161 53 164 M58 148 C65 153 65 161 58 166 M62 146 C71 152 71 163 62 169" fill="none" stroke="#397967" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="79" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5764">Gerçek</text>
+    <text x="79" y="170" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77808b">komut</text>
+
+    <rect x="30" y="196" width="116" height="60" rx="16" fill="#fde7e3"/>
+    <circle cx="57" cy="226" r="14" fill="#f2aea5"/>
+    <path d="M50 226 L55 221 L59 225 L64 219 M50 232 L55 227 L60 231 L65 225" fill="none" stroke="#9b4d4c" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="79" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d5764">Gizli ses</text>
+    <text x="79" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77808b">saldırısı</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="212" y="95" width="155" height="126" rx="24" fill="url(#core)" stroke="#b5cbe6"/>
+    <circle cx="289" cy="143" r="30" fill="#f8fbff" stroke="#91afd1" stroke-width="2"/>
+    <rect x="278" y="125" width="22" height="34" rx="11" fill="#709bc9"/>
+    <path d="M272 145 Q272 165 289 165 Q306 165 306 145 M289 165 L289 176 M280 176 L298 176" fill="none" stroke="#527da9" stroke-width="2" stroke-linecap="round"/>
+    <text x="289" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3d5875">Sesli asistan</text>
+    <text x="289" y="210" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607894">Uyandırma algısı</text>
+  </g>
+
+  <path d="M368 157 L404 157" fill="none" stroke="#6e91b5" stroke-width="2.5"/>
+  <polygon points="404,157 394,151 394,163" fill="#6e91b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="405" y="104" width="104" height="106" rx="21" fill="#eef2ff" stroke="#c5ccec"/>
+    <path d="M430 143 C430 126 483 126 483 143" fill="none" stroke="#8495c9" stroke-width="2"/>
+    <line x1="430" y1="143" x2="430" y2="151" stroke="#8495c9" stroke-width="2"/>
+    <line x1="483" y1="143" x2="483" y2="151" stroke="#8495c9" stroke-width="2"/>
+    <line x1="456" y1="137" x2="456" y2="151" stroke="#6579af" stroke-width="2.4"/>
+    <circle cx="456" cy="137" r="5" fill="#6579af"/>
+    <text x="457" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#465578">Güven eşiği</text>
+    <text x="457" y="192" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e7895">skor kararı</text>
+  </g>
+
+  <path d="M510 132 C528 126 534 103 548 91" fill="none" stroke="#6ea88a" stroke-width="2"/>
+  <polygon points="548,91 537,94 545,102" fill="#6ea88a"/>
+  <path d="M510 182 C528 189 534 214 548 226" fill="none" stroke="#d27770" stroke-width="2"/>
+  <polygon points="548,226 545,215 537,223" fill="#d27770"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="549" y="50" width="72" height="82" rx="16" fill="url(#safe)"/>
+    <path d="M585 66 L602 72 L599 94 Q594 105 585 109 Q576 105 571 94 L568 72 Z" fill="#f7fffa" stroke="#539578" stroke-width="1.8"/>
+    <path d="M578 86 L583 91 L593 80" fill="none" stroke="#539578" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="585" y="121" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356950">Onay</text>
+
+    <rect x="549" y="188" width="72" height="82" rx="16" fill="url(#risk)"/>
+    <path d="M585 204 L603 236 Q604 240 599 240 L571 240 Q566 240 568 236 Z" fill="#fff8f6" stroke="#b65c56" stroke-width="1.7"/>
+    <line x1="585" y1="216" x2="585" y2="228" stroke="#b65c56" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="585" cy="233" r="1.8" fill="#b65c56"/>
+    <text x="585" y="259" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8f4643">Reddet</text>
+  </g>
+
+  <text x="535" y="76" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527b67">Düşük risk</text>
+  <text x="535" y="245" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a65852">Yüksek risk</text>
+
+  <path d="M367 220 C400 263 487 282 544 261" fill="none" stroke="#9aaab3" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <text x="440" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687985">Ek doğrulama: telefon ve biyometri</text>
+</svg>
