@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="engine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#d9f3e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71869a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71869a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="317" cy="157" r="115" fill="#d8ecf4" opacity="0.28"/>
+  <circle cx="317" cy="157" r="83" fill="#ffffff" opacity="0.34"/>
+
+  <!-- bağlantılar -->
+  <path d="M166 156 C194 156 201 156 219 156" fill="none" stroke="#87a9bd" stroke-width="2.5"/>
+  <polygon points="219,156 210,151 210,161" fill="#87a9bd"/>
+
+  <path d="M408 143 C429 128 436 103 454 93" fill="none" stroke="#8daabb" stroke-width="2.5"/>
+  <polygon points="454,93 444,92 449,101" fill="#8daabb"/>
+
+  <path d="M409 172 C430 183 435 213 454 225" fill="none" stroke="#8daabb" stroke-width="2.5"/>
+  <polygon points="454,225 447,216 443,225" fill="#8daabb"/>
+
+  <path d="M318 225 C318 246 307 253 292 260" fill="none" stroke="#9bb4a2" stroke-width="2.5"/>
+  <polygon points="292,260 302,260 298,251" fill="#9bb4a2"/>
+
+  <path d="M246 260 C167 255 140 230 137 196" fill="none" stroke="#a2b8b6" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="137,196 133,205 142,202" fill="#a2b8b6"/>
+
+  <!-- seçim -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="105" width="136" height="102" rx="20" fill="#fff7df"/>
+    <rect x="42" y="121" width="112" height="28" rx="10" fill="#f6dca0"/>
+    <text x="98" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#66522b">Oyuncu Seçimi</text>
+    <circle cx="58" cy="171" r="7" fill="#ecab8c"/>
+    <path d="M70 171 H139" stroke="#d0ae7a" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="58" cy="190" r="7" fill="#9acbb8"/>
+    <path d="M70 190 H126" stroke="#b7c99b" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- motor -->
+  <g filter="url(#shadow)">
+    <rect x="219" y="91" width="190" height="134" rx="27" fill="url(#engine)" stroke="#c0dce2" stroke-width="1.5"/>
+    <circle cx="314" cy="132" r="28" fill="#f8fcff" stroke="#a7cad3" stroke-width="2"/>
+    <path d="M301 131 C304 119 323 116 329 128 C335 140 323 148 313 145 C303 142 299 137 301 131Z" fill="#8ec5b0"/>
+    <path d="M305 153 H323" stroke="#8daabc" stroke-width="3" stroke-linecap="round"/>
+    <text x="314" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355365">Hikâye Motoru</text>
+    <text x="314" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58717e">Durum + Kurallar</text>
+    <text x="314" y="215" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58717e">Sₜ₊₁ = F(Sₜ, Aₜ, R)</text>
+  </g>
+
+  <!-- koşullar -->
+  <g filter="url(#smallShadow)">
+    <rect x="454" y="47" width="151" height="91" rx="18" fill="#f3ecff"/>
+    <text x="529" y="71" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#604d81">Durum Değişkenleri</text>
+    <rect x="468" y="83" width="38" height="29" rx="8" fill="#d9c7f4"/>
+    <rect x="511" y="83" width="38" height="29" rx="8" fill="#c8e5dc"/>
+    <rect x="554" y="83" width="38" height="29" rx="8" fill="#f5d2be"/>
+    <text x="487" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#594575">İtibar</text>
+    <text x="530" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f6a5c">Korku</text>
+    <text x="573" y="102" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a543d">Altın</text>
+    <text x="529" y="128" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#756587">Koşul denetimi</text>
+  </g>
+
+  <!-- olay üretimi -->
+  <g filter="url(#smallShadow)">
+    <rect x="454" y="183" width="151" height="91" rx="18" fill="#e8f5f1"/>
+    <text x="529" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36665d">Olay Üretimi</text>
+    <rect x="470" y="219" width="118" height="18" rx="7" fill="#bee0d3"/>
+    <text x="529" y="233" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315f57">Ağırlıklı seçim</text>
+    <text x="529" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#598178">Görev · karşılaşma</text>
+  </g>
+
+  <!-- sonuç -->
+  <g filter="url(#smallShadow)">
+    <rect x="205" y="260" width="174" height="45" rx="16" fill="#fff0e7"/>
+    <circle cx="226" cy="282" r="11" fill="#efb38e"/>
+    <path d="M222 282 L225 286 L232 277" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="298" y="280" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#815240">Dünya Tepkisi</text>
+    <text x="298" y="295" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#956a57">Anlık · sistemsel · gecikmiş</text>
+  </g>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#527080">Prosedürel Anlatı Döngüsü</text>
+</svg>

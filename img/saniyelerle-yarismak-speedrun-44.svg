@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dce9ff"/>
+      <stop offset="100%" stop-color="#c7dbf7"/>
+    </linearGradient>
+    <linearGradient id="glitch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6dafa"/>
+      <stop offset="100%" stop-color="#d6c3f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6c8097" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6c8097" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="119" fill="#dceef0" opacity="0.28"/>
+  <circle cx="320" cy="160" r="96" fill="none" stroke="#b9d4df" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.65"/>
+
+  <!-- connection paths -->
+  <path d="M162 88 C194 88 202 112 235 123" fill="none" stroke="#79a9a3" stroke-width="2"/>
+  <polygon points="235,123 226,117 228,128" fill="#79a9a3"/>
+  <path d="M162 160 C190 160 205 160 229 160" fill="none" stroke="#79a9a3" stroke-width="2"/>
+  <polygon points="229,160 220,154 220,166" fill="#79a9a3"/>
+  <path d="M162 232 C195 232 204 207 236 196" fill="none" stroke="#79a9a3" stroke-width="2"/>
+  <polygon points="236,196 226,194 230,205" fill="#79a9a3"/>
+
+  <path d="M403 122 C435 112 446 88 477 88" fill="none" stroke="#9b85bd" stroke-width="2"/>
+  <polygon points="477,88 467,83 468,94" fill="#9b85bd"/>
+  <path d="M411 160 C436 160 447 160 475 160" fill="none" stroke="#9b85bd" stroke-width="2"/>
+  <polygon points="475,160 465,154 465,166" fill="#9b85bd"/>
+  <path d="M403 198 C434 207 447 232 477 232" fill="none" stroke="#9b85bd" stroke-width="2"/>
+  <polygon points="477,232 467,226 467,237" fill="#9b85bd"/>
+
+  <!-- Left cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="32" y="61" width="130" height="54" rx="15" fill="#e1f2eb"/>
+    <circle cx="57" cy="88" r="14" fill="#bce1d2"/>
+    <path d="M51 91 L56 84 L60 88 L65 80" fill="none" stroke="#397b69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="84" fill="#335d54" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Rota</text>
+    <text x="82" y="101" fill="#5e7e76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kısayol</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="32" y="133" width="130" height="54" rx="15" fill="#fff0d8"/>
+    <circle cx="57" cy="160" r="14" fill="#f8d89c"/>
+    <path d="M50 160 H64 M57 153 V167" stroke="#9a6c24" stroke-width="2.1" stroke-linecap="round"/>
+    <text x="82" y="156" fill="#805c25" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Girdi</text>
+    <text x="82" y="173" fill="#96794c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kare hassasiyeti</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="32" y="205" width="130" height="54" rx="15" fill="#e1edf9"/>
+    <circle cx="57" cy="232" r="14" fill="#bed7f0"/>
+    <path d="M50 236 L54 229 L58 233 L64 225" fill="none" stroke="#487da5" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="228" fill="#3f6785" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Ölçüm</text>
+    <text x="82" y="245" fill="#66849c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Bölüm süreleri</text>
+  </g>
+
+  <!-- Central stopwatch core -->
+  <g filter="url(#shadow)">
+    <rect x="234" y="102" width="172" height="116" rx="27" fill="url(#core)"/>
+    <rect x="287" y="86" width="66" height="22" rx="8" fill="#a8c8e5"/>
+    <rect x="304" y="76" width="32" height="15" rx="5" fill="#8eafd0"/>
+    <circle cx="320" cy="158" r="39" fill="#f8fcff" stroke="#7fa8c7" stroke-width="3"/>
+    <path d="M320 158 L320 133 M320 158 L341 171" stroke="#48779d" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="320" cy="158" r="4.5" fill="#48779d"/>
+    <path d="M320 124 V129 M354 158 H349 M320 192 V187 M286 158 H291" stroke="#7fa8c7" stroke-width="2" stroke-linecap="round"/>
+    <text x="320" y="207" text-anchor="middle" fill="#365e7c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Süreyi En Aza İndir</text>
+  </g>
+
+  <!-- Right cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="477" y="61" width="132" height="54" rx="15" fill="url(#glitch)"/>
+    <circle cx="502" cy="88" r="14" fill="#cdb8e7"/>
+    <path d="M495 84 H501 V80 H508 V86 H512 M495 92 H500 V96 H506 V90 H512" fill="none" stroke="#72568e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="84" fill="#654b81" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Glitch</text>
+    <text x="526" y="101" fill="#826d99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Keşif</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="477" y="133" width="132" height="54" rx="15" fill="#f9e3e6"/>
+    <circle cx="502" cy="160" r="14" fill="#efbdc5"/>
+    <path d="M496 164 L502 156 L506 160 L511 153" fill="none" stroke="#a45464" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="156" fill="#8d4857" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Olasılık</text>
+    <text x="526" y="173" fill="#a47079" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Risk dengesi</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="477" y="205" width="132" height="54" rx="15" fill="#e6f0d9"/>
+    <circle cx="502" cy="232" r="14" fill="#cce2ad"/>
+    <path d="M496 232 L500 236 L509 227" fill="none" stroke="#688848" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="228" fill="#58743e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kategori</text>
+    <text x="526" y="245" fill="#768b60" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kurallar</text>
+  </g>
+
+  <!-- Bottom workflow -->
+  <path d="M135 286 H500" fill="none" stroke="#aac2d0" stroke-width="1.5"/>
+  <circle cx="156" cy="286" r="11" fill="#d6ede8" filter="url(#smallShadow)"/>
+  <text x="156" y="290" text-anchor="middle" fill="#41756c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">1</text>
+  <text x="156" y="311" text-anchor="middle" fill="#56736f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Gözlem</text>
+  <path d="M172 286 H221" stroke="#82ada6" stroke-width="1.8"/>
+  <polygon points="221,286 213,281 213,291" fill="#82ada6"/>
+
+  <circle cx="245" cy="286" r="11" fill="#dae8fb" filter="url(#smallShadow)"/>
+  <text x="245" y="290" text-anchor="middle" fill="#517394" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">2</text>
+  <text x="245" y="311" text-anchor="middle" fill="#56736f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Tekrar</text>
+  <path d="M261 286 H310" stroke="#82a2c1" stroke-width="1.8"/>
+  <polygon points="310,286 302,281 302,291" fill="#82a2c1"/>
+
+  <circle cx="334" cy="286" r="11" fill="#eadcf8" filter="url(#smallShadow)"/>
+  <text x="334" y="290" text-anchor="middle" fill="#715687" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">3</text>
+  <text x="334" y="311" text-anchor="middle" fill="#56736f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Model</text>
+  <path d="M350 286 H399" stroke="#a18abd" stroke-width="1.8"/>
+  <polygon points="399,286 391,281 391,291" fill="#a18abd"/>
+
+  <circle cx="423" cy="286" r="11" fill="#f8e5c6" filter="url(#smallShadow)"/>
+  <text x="423" y="290" text-anchor="middle" fill="#946b2d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">4</text>
+  <text x="423" y="311" text-anchor="middle" fill="#56736f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ustalık</text>
+</svg>
