@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8fc9e8"/>
+      <stop offset="100%" stop-color="#a8dfc4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6e88a0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#517087" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="42" r="52" fill="#dceef7" opacity="0.55"/>
+  <circle cx="581" cy="274" r="72" fill="#dff1db" opacity="0.55"/>
+  <circle cx="334" cy="28" r="19" fill="#f9e6bc" opacity="0.5"/>
+
+  <text x="28" y="29" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526778" font-weight="600">KOZMİK SİNYAL ARAMA HATTI</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="68" width="130" height="184" rx="20" fill="#e6f2fb"/>
+    <rect x="41" y="82" width="104" height="28" rx="12" fill="#cbe5f5"/>
+  </g>
+  <text x="93" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315a73" font-weight="600">Radyo Teleskop</text>
+
+  <path d="M61 183 L103 141 L130 168 L86 210 Z" fill="#729eb8" filter="url(#soft)"/>
+  <path d="M66 181 L104 147 L123 168 L86 204 Z" fill="#9cc9dc"/>
+  <path d="M104 147 L104 183" stroke="#456c84" stroke-width="3"/>
+  <path d="M85 205 L73 225 M105 187 L119 225 M81 222 L123 222" stroke="#52758b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M117 130 Q137 139 142 158" fill="none" stroke="#80afc9" stroke-width="2"/>
+  <path d="M122 119 Q150 130 153 157" fill="none" stroke="#80afc9" stroke-width="2"/>
+  <circle cx="58" cy="139" r="3" fill="#f5bd6c"/>
+  <circle cx="48" cy="151" r="2" fill="#b994df"/>
+  <circle cx="68" cy="126" r="2" fill="#83caa8"/>
+  <text x="93" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607585">Ham örnekler</text>
+
+  <path d="M161 160 H201" stroke="#79a5bb" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="207,160 197,154 197,166" fill="#79a5bb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="211" y="59" width="211" height="202" rx="22" fill="#ffffff"/>
+    <rect x="225" y="73" width="183" height="29" rx="11" fill="#f0e4fb"/>
+  </g>
+  <text x="316" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b4b82" font-weight="600">FFT ve Spektrogram</text>
+
+  <rect x="230" y="119" width="166" height="91" rx="10" fill="#1e3850"/>
+  <g opacity="0.3" stroke="#9bc7df" stroke-width="1">
+    <path d="M240 132 H387 M240 148 H387 M240 164 H387 M240 180 H387 M240 196 H387"/>
+    <path d="M252 125 V204 M275 125 V204 M298 125 V204 M321 125 V204 M344 125 V204 M367 125 V204"/>
+  </g>
+  <path d="M237 190 C252 181 259 185 272 173 S294 165 306 156 S330 151 342 143 S366 133 389 130" fill="none" stroke="#f6cf68" stroke-width="4" stroke-linecap="round"/>
+  <path d="M237 191 C252 182 259 186 272 174 S294 166 306 157 S330 152 342 144 S366 134 389 131" fill="none" stroke="#fff2a9" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M238 137 L251 137 L258 145 L269 132 L280 144 L291 141 L302 150 L314 136 L327 145 L338 134 L350 144 L362 137 L377 143 L388 138" fill="none" stroke="#83bcd7" stroke-width="1.6" opacity="0.8"/>
+  <text x="233" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7181">Zaman</text>
+  <text x="361" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7181">Frekans</text>
+  <rect x="230" y="238" width="166" height="10" rx="5" fill="#edf4f6"/>
+  <rect x="230" y="238" width="104" height="10" rx="5" fill="url(#signal)"/>
+  <text x="343" y="247" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#50717a">SNR</text>
+
+  <path d="M424 160 H457" stroke="#79a5bb" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="463,160 453,154 453,166" fill="#79a5bb"/>
+
+  <g filter="url(#shadow)">
+    <rect x="467" y="68" width="144" height="184" rx="20" fill="#eaf5e7"/>
+    <rect x="480" y="82" width="118" height="28" rx="12" fill="#d3ebce"/>
+  </g>
+  <text x="539" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f704f" font-weight="600">Aday Doğrulama</text>
+
+  <g filter="url(#soft)">
+    <rect x="483" y="124" width="112" height="28" rx="10" fill="#ffffff"/>
+    <circle cx="499" cy="138" r="7" fill="#efb86c"/>
+    <path d="M496 138 L498 141 L503 135" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="511" y="142" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587066">RFI eleme</text>
+
+    <rect x="483" y="160" width="112" height="28" rx="10" fill="#ffffff"/>
+    <circle cx="499" cy="174" r="7" fill="#85c6a0"/>
+    <path d="M496 174 L498 177 L503 171" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="511" y="178" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587066">Doppler izi</text>
+
+    <rect x="483" y="196" width="112" height="28" rx="10" fill="#ffffff"/>
+    <circle cx="499" cy="210" r="7" fill="#9ca9dc"/>
+    <path d="M496 210 L498 213 L503 207" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="511" y="214" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587066">Tekrar testi</text>
+  </g>
+
+  <path d="M538 254 V278" stroke="#82ab91" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="538,284 532,274 544,274" fill="#82ab91"/>
+  <g filter="url(#soft)">
+    <rect x="476" y="285" width="124" height="25" rx="12" fill="#c9e8d0"/>
+  </g>
+  <text x="538" y="302" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#37684a" font-weight="600">Güvenilir aday</text>
+
+  <path d="M36 278 H246" stroke="#b8d4de" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <path d="M259 278 H445" stroke="#b8d4de" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <text x="35" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909b">Gürültü</text>
+  <text x="264" y="295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909b">Dar bantlı iz</text>
+</svg>
