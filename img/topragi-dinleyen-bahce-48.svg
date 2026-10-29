@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8b98c"/>
+      <stop offset="100%" stop-color="#b78458"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#86d6ec"/>
+      <stop offset="100%" stop-color="#4ba9d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7891a0" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8995" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="79" cy="44" r="66" fill="#d9eff4" opacity="0.42"/>
+  <circle cx="577" cy="276" r="78" fill="#dff0d7" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39516a">AKILLI SULAMA DÖNGÜSÜ</text>
+
+  <path d="M169 151 C198 151 199 145 224 145" fill="none" stroke="#7796aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="224,145 215,140 215,150" fill="#7796aa"/>
+
+  <path d="M381 145 C404 145 405 145 429 145" fill="none" stroke="#7796aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="429,145 420,140 420,150" fill="#7796aa"/>
+
+  <path d="M495 189 C495 224 385 262 303 252" fill="none" stroke="#67afbd" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polygon points="303,252 312,245 313,255" fill="#67afbd"/>
+
+  <path d="M207 255 C116 254 92 209 101 186" fill="none" stroke="#92af77" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polygon points="101,186 106,196 96,195" fill="#92af77"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="106" width="141" height="91" rx="18" fill="#fffdf8"/>
+    <rect x="38" y="116" width="121" height="71" rx="14" fill="url(#soil)"/>
+  </g>
+  <path d="M45 139 C63 130 78 146 95 137 C112 128 132 146 152 134" fill="none" stroke="#8a603e" stroke-width="2" opacity="0.55"/>
+  <path d="M45 163 C64 153 82 172 100 161 C120 150 139 168 152 158" fill="none" stroke="#8a603e" stroke-width="2" opacity="0.5"/>
+  <rect x="86" y="119" width="16" height="42" rx="5" fill="#4c6a67"/>
+  <rect x="89" y="123" width="10" height="16" rx="3" fill="#82d3bd"/>
+  <path d="M91 161 L88 179 M97 161 L101 179" stroke="#4c6a67" stroke-width="3" stroke-linecap="round"/>
+  <path d="M121 121 C122 111 132 108 137 101 C143 109 151 113 149 122 C147 129 140 133 135 133 C128 133 121 129 121 121Z" fill="#6bbd8a"/>
+  <path d="M135 129 L135 147" stroke="#4f9f70" stroke-width="2"/>
+  <text x="98.5" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#425b55">Toprak Sensörü</text>
+  <text x="98.5" y="231" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668077">Nem ölçümü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="224" y="87" width="157" height="117" rx="21" fill="#ffffff"/>
+    <rect x="236" y="99" width="133" height="93" rx="16" fill="#eaf1ff"/>
+  </g>
+  <rect x="253" y="116" width="55" height="40" rx="8" fill="#637fa0"/>
+  <rect x="260" y="123" width="41" height="26" rx="4" fill="#bce7e9"/>
+  <circle cx="318" cy="124" r="4" fill="#6ac6ab"/>
+  <circle cx="332" cy="124" r="4" fill="#f0b65f"/>
+  <circle cx="346" cy="124" r="4" fill="#e58e88"/>
+  <path d="M258 166 H347" stroke="#93a9c4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M258 176 H320" stroke="#b0c0d3" stroke-width="3" stroke-linecap="round"/>
+  <text x="302.5" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#405775">Denetleyici</text>
+  <text x="302.5" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66809d">Filtre ve kalibrasyon</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="222" y="250" width="162" height="49" rx="15" fill="#fff8ea"/>
+  </g>
+  <path d="M238 276 H254" stroke="#e5a652" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="260" cy="276" r="5" fill="#e5a652"/>
+  <path d="M270 276 H287" stroke="#e5a652" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="294" cy="276" r="5" fill="#78b987"/>
+  <path d="M304 276 H322" stroke="#78b987" stroke-width="3" stroke-linecap="round"/>
+  <text x="344" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#716248">Histerezis</text>
+  <text x="344" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a795c">Aç 35 · Kapat 55</text>
+
+  <g filter="url(#shadow)">
+    <rect x="429" y="103" width="169" height="97" rx="19" fill="#ffffff"/>
+    <rect x="441" y="115" width="145" height="73" rx="14" fill="#edf7f2"/>
+  </g>
+  <rect x="453" y="130" width="34" height="29" rx="6" fill="#e6a855"/>
+  <path d="M460 137 H480 M460 144 H480 M460 151 H473" stroke="#fff9e9" stroke-width="2"/>
+  <path d="M489 144 H510" stroke="#7796aa" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="527" cy="144" r="20" fill="url(#water)"/>
+  <circle cx="527" cy="144" r="10" fill="#d9f6f8" opacity="0.85"/>
+  <path d="M544 144 H568" stroke="#55a3c2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M565 137 C574 143 574 151 565 157" fill="none" stroke="#55a3c2" stroke-width="3" stroke-linecap="round"/>
+  <text x="513.5" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426561">Röle ve Pompa</text>
+  <text x="513.5" y="234" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66817d">İhtiyaç kadar su</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="441" y="249" width="148" height="43" rx="14" fill="#e8f4ff"/>
+  </g>
+  <path d="M458 272 C458 264 467 258 467 258 C467 258 476 264 476 272 C476 277 472 280 467 280 C462 280 458 277 458 272Z" fill="#5bb8dc"/>
+  <text x="484" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3b6681">Geri besleme</text>
+  <text x="484" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#67859a">Nem yükselir</text>
+
+  <text x="192" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8396">Analog değer</text>
+  <text x="405" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8396">Karar</text>
+</svg>

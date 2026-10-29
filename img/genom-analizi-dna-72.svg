@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="dna" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#cfeee5"/>
+    </linearGradient>
+    <linearGradient id="matrix" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3d7"/>
+      <stop offset="100%" stop-color="#ffe3cf"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7dcff"/>
+      <stop offset="100%" stop-color="#d7e9ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#54708c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#54708c" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="74" cy="272" r="78" fill="#dcedff" opacity="0.48"/>
+  <circle cx="582" cy="46" r="83" fill="#daf2e4" opacity="0.5"/>
+  <path d="M20 160 C100 125 114 208 190 169 S298 127 366 161 S488 209 620 154" fill="none" stroke="#b9d9d1" stroke-width="2" opacity="0.45"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546d">GENOM DİZİ HİZALAMA</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8290">Dört harften anlamlı karşılaştırmaya</text>
+
+  <g filter="url(#shadow)">
+    <rect x="29" y="83" width="151" height="159" rx="20" fill="url(#dna)" stroke="#b7d8e7"/>
+  </g>
+  <text x="104" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a73">DNA Dizileri</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="45" y="123" width="119" height="38" rx="10" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <text x="56" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#357895">Dizi 1</text>
+  <text x="104" y="147" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-family="monospace" fill="#31546c">ACGTACG</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="45" y="174" width="119" height="38" rx="10" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <text x="56" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#357895">Dizi 2</text>
+  <text x="104" y="198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-family="monospace" fill="#31546c">ACGTTCG</text>
+
+  <path d="M186 162 L211 162" fill="none" stroke="#7197aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="216,162 207,157 207,167" fill="#7197aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="221" y="78" width="190" height="170" rx="21" fill="url(#matrix)" stroke="#efd4a7"/>
+  </g>
+  <text x="316" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#86612c">Dinamik Programlama</text>
+  <text x="316" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9b7a4a">Puan Matrisi</text>
+
+  <g transform="translate(260 139)">
+    <rect x="0" y="0" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="27" y="0" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="54" y="0" width="24" height="20" rx="4" fill="#f8ce86" stroke="#d9a953"/>
+    <rect x="81" y="0" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="108" y="0" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="0" y="23" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="27" y="23" width="24" height="20" rx="4" fill="#bfe6d5" stroke="#79b99d"/>
+    <rect x="54" y="23" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="81" y="23" width="24" height="20" rx="4" fill="#f8ce86" stroke="#d9a953"/>
+    <rect x="108" y="23" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="0" y="46" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="27" y="46" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="54" y="46" width="24" height="20" rx="4" fill="#bfe6d5" stroke="#79b99d"/>
+    <rect x="81" y="46" width="24" height="20" rx="4" fill="#fffdf6" stroke="#e8c98c"/>
+    <rect x="108" y="46" width="24" height="20" rx="4" fill="#bfe6d5" stroke="#79b99d"/>
+  </g>
+  <path d="M274 212 L293 194 L320 207 L347 177 L375 160" fill="none" stroke="#4b9b7d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="379,157 370,158 376,166" fill="#4b9b7d"/>
+  <text x="316" y="232" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806a45">Eşleşme +2 · Fark −1</text>
+
+  <path d="M417 162 L442 162" fill="none" stroke="#7197aa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="447,162 438,157 438,167" fill="#7197aa"/>
+
+  <g filter="url(#shadow)">
+    <rect x="452" y="83" width="159" height="159" rx="20" fill="url(#result)" stroke="#c8c5ed"/>
+  </g>
+  <text x="531" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#564c91">Hizalama Sonucu</text>
+
+  <rect x="469" y="124" width="125" height="55" rx="10" fill="#ffffff" opacity="0.85"/>
+  <text x="480" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e5a70">ACGT<tspan fill="#d06f62" font-weight="700">A</tspan>CG</text>
+  <text x="480" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e5a70">ACGT<tspan fill="#d06f62" font-weight="700">T</tspan>CG</text>
+  <path d="M524 149 L524 155" stroke="#d06f62" stroke-width="2"/>
+  <circle cx="524" cy="158" r="3" fill="#d06f62"/>
+
+  <rect x="469" y="190" width="125" height="33" rx="10" fill="#eefff5" stroke="#b7dfca"/>
+  <circle cx="485" cy="206" r="6" fill="#57a883"/>
+  <text x="497" y="210" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#39765e">Benzerlik %85,71</text>
+
+  <text x="320" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718692">Global: tüm dizi · Lokal: benzer bölge</text>
+</svg>
