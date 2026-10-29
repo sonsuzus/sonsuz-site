@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8dacef"/>
+      <stop offset="100%" stop-color="#6c8fda"/>
+    </linearGradient>
+    <linearGradient id="risk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f6d58a"/>
+      <stop offset="100%" stop-color="#ee8b8b"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#52708d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#52708d" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="154" r="128" fill="#dcecff" opacity="0.35"/>
+  <circle cx="320" cy="154" r="100" fill="none" stroke="#b7cce8" stroke-width="1.5" stroke-dasharray="4 7" opacity="0.75"/>
+
+  <path d="M164 75 C204 84 222 99 245 119" fill="none" stroke="#82a7ca" stroke-width="2"/>
+  <polygon points="245,119 235,117 240,109" fill="#82a7ca"/>
+  <path d="M164 152 C195 152 216 152 243 152" fill="none" stroke="#82a7ca" stroke-width="2"/>
+  <polygon points="243,152 233,147 233,157" fill="#82a7ca"/>
+  <path d="M164 231 C202 220 220 205 245 185" fill="none" stroke="#82a7ca" stroke-width="2"/>
+  <polygon points="245,185 240,195 234,187" fill="#82a7ca"/>
+
+  <path d="M392 151 C414 151 428 151 448 151" fill="none" stroke="#7b9bc8" stroke-width="2.5"/>
+  <polygon points="448,151 438,145 438,157" fill="#7b9bc8"/>
+  <path d="M527 181 C526 202 522 217 512 234" fill="none" stroke="#7b9bc8" stroke-width="2"/>
+  <polygon points="512,234 512,223 521,228" fill="#7b9bc8"/>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="47" width="130" height="56" rx="16" fill="#ffffff"/>
+    <rect x="43" y="57" width="34" height="34" rx="11" fill="#dcecff"/>
+    <path d="M52 76 h7 l3-8 4 16 3-8 h7" fill="none" stroke="#638bc7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="88" y="71" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35516e" font-weight="600">Klinik kayıtlar</text>
+    <text x="88" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8296">tanı ve ilaçlar</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="124" width="130" height="56" rx="16" fill="#ffffff"/>
+    <rect x="43" y="134" width="34" height="34" rx="11" fill="#dff3e6"/>
+    <path d="M52 159 h16 M55 152 h10 M58 145 h4" stroke="#58a477" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="88" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35516e" font-weight="600">Laboratuvar</text>
+    <text x="88" y="164" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8296">biyobelirteçler</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="34" y="203" width="130" height="56" rx="16" fill="#ffffff"/>
+    <rect x="43" y="213" width="34" height="34" rx="11" fill="#fbe8d8"/>
+    <rect x="55" y="218" width="10" height="24" rx="3" fill="none" stroke="#d58a55" stroke-width="2"/>
+    <circle cx="60" cy="238" r="1.4" fill="#d58a55"/>
+    <path d="M49 230 h4 l2-4 3 8 3-6 2 2 h5" fill="none" stroke="#d58a55" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="88" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35516e" font-weight="600">Giyilebilirler</text>
+    <text x="88" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8296">nabız ve uyku</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <circle cx="320" cy="152" r="73" fill="#ffffff"/>
+    <circle cx="320" cy="152" r="61" fill="url(#core)"/>
+    <circle cx="320" cy="152" r="48" fill="#ffffff" opacity="0.12"/>
+    <path d="M288 160 C296 141 304 169 313 149 C321 131 329 164 339 145 C346 132 351 142 355 137" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="288" cy="160" r="3" fill="#ffffff"/>
+    <circle cx="355" cy="137" r="3" fill="#ffffff"/>
+    <text x="320" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="600">Makine öğrenmesi</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="448" y="101" width="160" height="101" rx="20" fill="#ffffff"/>
+    <text x="468" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35516e" font-weight="600">Risk skoru</text>
+    <text x="575" y="125" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#d27070" font-weight="700">% 28</text>
+    <rect x="468" y="139" width="120" height="13" rx="6.5" fill="#e7edf2"/>
+    <rect x="468" y="139" width="72" height="13" rx="6.5" fill="url(#risk)"/>
+    <circle cx="540" cy="145.5" r="8" fill="#ffffff" stroke="#e68d89" stroke-width="2"/>
+    <text x="468" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8296">Belirtilerden önce</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="425" y="234" width="154" height="55" rx="17" fill="#ffffff"/>
+    <circle cx="453" cy="261" r="15" fill="#e3f1e7"/>
+    <circle cx="453" cy="255" r="5" fill="#5d9e78"/>
+    <path d="M443 272 C445 263 461 263 463 272" fill="#5d9e78"/>
+    <text x="478" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35516e" font-weight="600">Klinik değerlendirme</text>
+    <text x="478" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8296">hekim ve testler</text>
+  </g>
+
+  <text x="320" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#648096">Veri örüntüleri • Erken uyarı • İnsan denetimi</text>
+</svg>
