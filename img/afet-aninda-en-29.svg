@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#edf3ff"/>
+      <stop offset="100%" stop-color="#e7f7ef"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#8297ad" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#8297ad" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="74" cy="48" r="82" fill="#dceeff" opacity="0.42"/>
+  <circle cx="575" cy="277" r="100" fill="#dff3e6" opacity="0.5"/>
+
+  <text x="28" y="31" fill="#31465b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Tahliye Rotası Optimizasyonu</text>
+  <text x="28" y="48" fill="#718397" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Dinamik risk ile güvenli yönlendirme</text>
+
+  <g filter="url(#golge)">
+    <rect x="28" y="82" width="125" height="177" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="109" fill="#40556a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Canlı Veriler</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="43" y="122" width="94" height="31" rx="10" fill="#e9f3ff"/>
+    <circle cx="59" cy="137.5" r="7" fill="#79aee9"/>
+    <path d="M55 138 L58 141 L64 133" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="142" fill="#40556a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Sensör</text>
+
+    <rect x="43" y="163" width="94" height="31" rx="10" fill="#fff1e9"/>
+    <path d="M54 181 L59 169 L64 181 Z" fill="#ef906b"/>
+    <text x="74" y="183" fill="#40556a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hasar</text>
+
+    <rect x="43" y="204" width="94" height="31" rx="10" fill="#f2ebff"/>
+    <circle cx="59" cy="218.5" r="7" fill="#a88ae0"/>
+    <path d="M55.5 219 C57 215,61 215,62.5 219 M56 222 L62 222" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="74" y="224" fill="#40556a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Yoğunluk</text>
+  </g>
+
+  <path d="M153 170 L177 170" fill="none" stroke="#92a9ba" stroke-width="2"/>
+  <polygon points="177,170 169,165 169,175" fill="#92a9ba"/>
+
+  <g filter="url(#golge)">
+    <rect x="181" y="68" width="264" height="204" rx="22" fill="url(#merkez)"/>
+  </g>
+  <text x="201" y="95" fill="#40556a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Şehir Grafı ve Karar Motoru</text>
+
+  <g opacity="0.8">
+    <path d="M228 145 L287 116 L363 137 L407 103" fill="none" stroke="#c5d1da" stroke-width="5" stroke-linecap="round"/>
+    <path d="M228 145 L270 213 L345 226 L407 174" fill="none" stroke="#c5d1da" stroke-width="5" stroke-linecap="round"/>
+    <path d="M287 116 L325 174 L407 174" fill="none" stroke="#c5d1da" stroke-width="5" stroke-linecap="round"/>
+    <path d="M270 213 L325 174 L363 137" fill="none" stroke="#c5d1da" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M228 145 L287 116 L325 174 L407 174" fill="none" stroke="#eb8072" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M291 147 L306 162 M306 147 L291 162" stroke="#d9534f" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M228 145 L270 213 L345 226 L407 174" fill="none" stroke="#4caf82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="407,174 396,168 398,180" fill="#4caf82"/>
+
+  <g filter="url(#hafifGolge)">
+    <circle cx="228" cy="145" r="13" fill="#5d94d6"/>
+    <circle cx="287" cy="116" r="10" fill="#efba6b"/>
+    <circle cx="363" cy="137" r="10" fill="#efba6b"/>
+    <circle cx="325" cy="174" r="10" fill="#efba6b"/>
+    <circle cx="270" cy="213" r="10" fill="#5d94d6"/>
+    <circle cx="345" cy="226" r="10" fill="#5d94d6"/>
+    <circle cx="407" cy="103" r="10" fill="#a58bd5"/>
+    <circle cx="407" cy="174" r="13" fill="#58ad80"/>
+  </g>
+
+  <text x="213" y="149" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">A</text>
+  <text x="402" y="178" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">D</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="290" y="244" width="131" height="20" rx="10" fill="#ffffff"/>
+  </g>
+  <circle cx="304" cy="254" r="5" fill="#4caf82"/>
+  <text x="315" y="258" fill="#4d6375" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Risk ağırlıklı maliyet</text>
+
+  <path d="M445 170 L470 170" fill="none" stroke="#92a9ba" stroke-width="2"/>
+  <polygon points="470,170 462,165 462,175" fill="#92a9ba"/>
+
+  <g filter="url(#golge)">
+    <rect x="474" y="82" width="138" height="177" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="493" y="109" fill="#40556a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Güvenli Çıkış</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="492" y="125" width="102" height="68" rx="14" fill="#e4f5e9"/>
+    <path d="M511 164 L511 146 L522 136 L533 146 L533 164 Z" fill="#68b58a"/>
+    <rect x="518" y="153" width="8" height="11" rx="1" fill="#ffffff"/>
+    <path d="M542 164 L542 150 L550 142 L558 150 L558 164 Z" fill="#91caa8"/>
+    <rect x="547" y="155" width="6" height="9" rx="1" fill="#ffffff"/>
+    <circle cx="574" cy="145" r="9" fill="#6bb98d"/>
+    <path d="M570 145 L573 148 L579 141" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="493" y="216" fill="#4a6573" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Alternatif rota</text>
+  <text x="493" y="236" fill="#4caf82" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Toplanma alanı</text>
+</svg>
