@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="net" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a9d8fa"/>
+      <stop offset="100%" stop-color="#a8e5ca"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6f8da0" flood-opacity="0.2"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7891a2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="37" cy="35" r="56" fill="#dceefa" opacity="0.58"/>
+  <circle cx="605" cy="285" r="82" fill="#dff2df" opacity="0.65"/>
+  <circle cx="556" cy="38" r="30" fill="#fff0c9" opacity="0.55"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38566b">BULUT OYUN VERİ DÖNGÜSÜ</text>
+
+  <!-- Client -->
+  <g filter="url(#shadow)">
+    <rect x="38" y="83" width="152" height="158" rx="22" fill="#ffffff"/>
+    <rect x="51" y="97" width="126" height="76" rx="12" fill="#d8edff"/>
+    <rect x="57" y="103" width="114" height="64" rx="9" fill="#8ec8ee"/>
+    <path d="M69 151 C83 133 96 153 109 137 C119 125 130 143 146 123 C153 115 159 125 164 116 L164 162 L63 162 Z" fill="#6daed7" opacity="0.8"/>
+    <circle cx="77" cy="116" r="8" fill="#fff5b8"/>
+    <rect x="86" y="180" width="56" height="7" rx="3.5" fill="#c4d5df"/>
+    <rect x="102" y="187" width="24" height="21" rx="4" fill="#c4d5df"/>
+    <rect x="74" y="208" width="80" height="6" rx="3" fill="#aabdc8"/>
+  </g>
+  <text x="114" y="230" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546b">OYUNCU CİHAZI</text>
+  <text x="114" y="247" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607b8b">Ekran ve kontrol</text>
+
+  <!-- Controller -->
+  <g filter="url(#smallShadow)">
+    <path d="M69 263 C59 253 60 237 72 232 C81 228 89 235 95 241 L133 241 C140 235 147 229 157 232 C169 236 171 253 161 263 C154 270 145 266 138 257 L91 257 C84 266 76 270 69 263 Z" fill="#b5d8f3"/>
+    <rect x="79" y="244" width="14" height="4" rx="2" fill="#477a9c"/>
+    <rect x="84" y="239" width="4" height="14" rx="2" fill="#477a9c"/>
+    <circle cx="146" cy="244" r="3" fill="#ec8fa1"/>
+    <circle cx="155" cy="250" r="3" fill="#7dc69d"/>
+  </g>
+
+  <!-- Input route -->
+  <path d="M193 199 C231 199 234 180 267 180" fill="none" stroke="#719bb7" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="267,174 279,180 267,186" fill="#719bb7"/>
+  <g filter="url(#smallShadow)">
+    <rect x="201" y="165" width="77" height="27" rx="13.5" fill="#e5f2fc"/>
+    <text x="239.5" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f647b">Komut paketi</text>
+  </g>
+
+  <!-- Network cloud -->
+  <g filter="url(#smallShadow)">
+    <path d="M228 86 C228 73 239 64 252 64 C257 50 270 41 286 41 C304 41 319 53 322 69 C338 67 352 78 352 93 C352 108 340 119 325 119 L252 119 C238 119 228 106 228 93 C228 90 228 88 228 86 Z" fill="url(#net)"/>
+    <circle cx="269" cy="86" r="4" fill="#ffffff"/>
+    <circle cx="289" cy="75" r="4" fill="#ffffff"/>
+    <circle cx="310" cy="92" r="4" fill="#ffffff"/>
+    <path d="M272 84 L286 77 M292 77 L307 90" stroke="#5ca1b7" stroke-width="2"/>
+  </g>
+  <text x="290" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45677b">İNTERNET</text>
+  <text x="290" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">Ping ve jitter</text>
+
+  <!-- Server -->
+  <g filter="url(#shadow)">
+    <rect x="381" y="62" width="211" height="194" rx="24" fill="#ffffff"/>
+    <rect x="397" y="77" width="179" height="31" rx="11" fill="#e4f2e8"/>
+    <circle cx="416" cy="92.5" r="7" fill="#78c598"/>
+    <rect x="431" y="87" width="72" height="11" rx="5.5" fill="#a5cdb3"/>
+    <circle cx="550" cy="92.5" r="4" fill="#72bf91"/>
+    
+    <rect x="397" y="117" width="179" height="31" rx="11" fill="#f4e9fc"/>
+    <circle cx="416" cy="132.5" r="7" fill="#b580d3"/>
+    <rect x="431" y="127" width="91" height="11" rx="5.5" fill="#d2b3e4"/>
+    <circle cx="550" cy="132.5" r="4" fill="#b580d3"/>
+
+    <rect x="397" y="157" width="179" height="31" rx="11" fill="#fff2d9"/>
+    <circle cx="416" cy="172.5" r="7" fill="#e6ad56"/>
+    <rect x="431" y="167" width="104" height="11" rx="5.5" fill="#efd09b"/>
+    <circle cx="550" cy="172.5" r="4" fill="#e6ad56"/>
+
+    <rect x="397" y="197" width="179" height="43" rx="11" fill="#e4effc"/>
+    <rect x="411" y="207" width="67" height="7" rx="3.5" fill="#91b9dc"/>
+    <rect x="411" y="221" width="112" height="7" rx="3.5" fill="#bed4e9"/>
+    <circle cx="550" cy="218" r="11" fill="#80b5dd"/>
+    <path d="M545 218 L549 222 L556 214" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="486.5" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#43715a">Oyun motoru</text>
+  <text x="486.5" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76518d">GPU kare üretimi</text>
+  <text x="486.5" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#966c2c">Video kodlayıcı</text>
+  <text x="486.5" y="249" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385c78">Veri merkezi</text>
+
+  <!-- video return route -->
+  <path d="M381 219 C342 219 337 235 281 235 C239 235 221 226 194 226" fill="none" stroke="#71b998" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="194,220 182,226 194,232" fill="#71b998"/>
+  <g filter="url(#smallShadow)">
+    <rect x="260" y="249" width="117" height="27" rx="13.5" fill="#e4f5ea"/>
+    <text x="318.5" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397258">Sıkıştırılmış video</text>
+  </g>
+
+  <!-- latency -->
+  <g filter="url(#smallShadow)">
+    <rect x="222" y="286" width="196" height="24" rx="12" fill="#ffffff"/>
+    <circle cx="238" cy="298" r="6" fill="#efb85d"/>
+    <text x="322" y="302" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526d7c">Toplam gecikme: yaklaşık 67 ms</text>
+  </g>
+</svg>
