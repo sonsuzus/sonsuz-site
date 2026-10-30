@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dce8f1"/>
+      <stop offset="100%" stop-color="#d5e5dc"/>
+    </linearGradient>
+    <radialGradient id="lightStrong">
+      <stop offset="0%" stop-color="#fff6bb" stop-opacity="0.92"/>
+      <stop offset="55%" stop-color="#ffe89a" stop-opacity="0.44"/>
+      <stop offset="100%" stop-color="#ffe89a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lightSoft">
+      <stop offset="0%" stop-color="#fff8cf" stop-opacity="0.62"/>
+      <stop offset="100%" stop-color="#fff8cf" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7790a1" flood-opacity="0.18"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ffd85c" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="45" r="50" fill="#dceefa" opacity="0.62"/>
+  <circle cx="590" cy="52" r="70" fill="#e4f3dc" opacity="0.7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="22" width="160" height="66" rx="17" fill="#ffffff"/>
+    <rect x="211" y="22" width="192" height="66" rx="17" fill="#ffffff"/>
+    <rect x="425" y="22" width="181" height="66" rx="17" fill="#ffffff"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#395064">
+    <text x="55" y="47" font-weight="700">Hareket algılama</text>
+    <text x="55" y="69" fill="#687f90">PIR • radar • kamera</text>
+
+    <text x="237" y="47" font-weight="700">Akıllı kontrolcü</text>
+    <text x="237" y="69" fill="#687f90">Nesne ve hız kararı</text>
+
+    <text x="450" y="47" font-weight="700">Ağ iletişimi</text>
+    <text x="450" y="69" fill="#687f90">Komşu lambalara mesaj</text>
+  </g>
+
+  <path d="M191 55 H207" fill="none" stroke="#89a8b6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="207,50 217,55 207,60" fill="#89a8b6"/>
+  <path d="M404 55 H421" fill="none" stroke="#89a8b6" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="421,50 431,55 421,60" fill="#89a8b6"/>
+
+  <path d="M48 227 C145 207 220 222 315 229 S495 245 598 215 L608 296 H32 Z" fill="url(#road)" opacity="0.96"/>
+  <path d="M54 258 C153 239 232 254 319 261 S487 273 590 246" fill="none" stroke="#ffffff" stroke-width="3" stroke-dasharray="14 11" opacity="0.86"/>
+
+  <ellipse cx="122" cy="202" rx="86" ry="67" fill="url(#lightSoft)"/>
+  <ellipse cx="300" cy="204" rx="98" ry="78" fill="url(#lightStrong)"/>
+  <ellipse cx="480" cy="201" rx="102" ry="80" fill="url(#lightStrong)"/>
+  <ellipse cx="575" cy="195" rx="72" ry="60" fill="url(#lightSoft)"/>
+
+  <path d="M112 113 V221" stroke="#526d79" stroke-width="6" stroke-linecap="round"/>
+  <path d="M112 115 C112 102 122 100 134 103" fill="none" stroke="#526d79" stroke-width="5" stroke-linecap="round"/>
+  <rect x="130" y="98" width="19" height="11" rx="5" fill="#637f8d"/>
+  <circle cx="139" cy="111" r="9" fill="#ffe38b" filter="url(#glow)"/>
+  <circle cx="139" cy="111" r="4" fill="#fffdf0"/>
+
+  <path d="M300 105 V230" stroke="#405d6b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M300 107 C300 93 311 90 326 94" fill="none" stroke="#405d6b" stroke-width="6" stroke-linecap="round"/>
+  <rect x="322" y="89" width="22" height="12" rx="5" fill="#526f7d"/>
+  <circle cx="333" cy="102" r="12" fill="#ffd94f" filter="url(#glow)"/>
+  <circle cx="333" cy="102" r="5" fill="#fffef2"/>
+
+  <path d="M480 102 V235" stroke="#405d6b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M480 104 C480 90 491 87 507 91" fill="none" stroke="#405d6b" stroke-width="6" stroke-linecap="round"/>
+  <rect x="503" y="86" width="22" height="12" rx="5" fill="#526f7d"/>
+  <circle cx="514" cy="99" r="12" fill="#ffd94f" filter="url(#glow)"/>
+  <circle cx="514" cy="99" r="5" fill="#fffef2"/>
+
+  <path d="M575 112 V230" stroke="#526d79" stroke-width="6" stroke-linecap="round"/>
+  <path d="M575 114 C575 101 585 99 598 102" fill="none" stroke="#526d79" stroke-width="5" stroke-linecap="round"/>
+  <rect x="594" y="97" width="19" height="11" rx="5" fill="#637f8d"/>
+  <circle cx="604" cy="110" r="8" fill="#ffeaa1"/>
+  <circle cx="604" cy="110" r="3.5" fill="#fffdf0"/>
+
+  <path d="M151 145 C199 125 233 119 278 116" fill="none" stroke="#78b6b5" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="276,111 287,115 278,121" fill="#78b6b5"/>
+  <path d="M347 115 C395 114 434 113 492 110" fill="none" stroke="#78b6b5" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="490,105 501,110 490,115" fill="#78b6b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="222" y="143" width="150" height="45" rx="14" fill="#e8f6ee" stroke="#b8dcc6"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356355">
+    <text x="244" y="162" font-weight="700">Hareket algılandı</text>
+    <text x="244" y="179">Araç • hız: 60</text>
+  </g>
+  <path d="M297 189 V205" fill="none" stroke="#73a68d" stroke-width="2.5"/>
+  <polygon points="292,203 297,212 302,203" fill="#73a68d"/>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="271" width="130" height="31" rx="12" fill="#ffffff"/>
+    <rect x="254" y="271" width="134" height="31" rx="12" fill="#ffffff"/>
+    <rect x="457" y="271" width="151" height="31" rx="12" fill="#ffffff"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12">
+    <text x="50" y="291" fill="#607684">Bekleme: %25</text>
+    <text x="275" y="291" fill="#b07410" font-weight="700">Hedef: %100</text>
+    <text x="478" y="291" fill="#3e806d" font-weight="700">Işık koridoru</text>
+  </g>
+
+  <path d="M168 284 H244" fill="none" stroke="#a8bbc1" stroke-width="2"/>
+  <polygon points="242,279 252,284 242,289" fill="#a8bbc1"/>
+  <path d="M395 284 H447" fill="none" stroke="#a8bbc1" stroke-width="2"/>
+  <polygon points="445,279 455,284 445,289" fill="#a8bbc1"/>
+
+  <g transform="translate(371 218)" filter="url(#shadow)">
+    <rect x="0" y="0" width="63" height="25" rx="10" fill="#ffffff"/>
+    <path d="M13 15 C17 7 29 7 33 15" fill="none" stroke="#5ba4a3" stroke-width="2"/>
+    <circle cx="23" cy="10" r="3" fill="#5ba4a3"/>
+    <text x="40" y="16" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6b76">Araç</text>
+  </g>
+</svg>

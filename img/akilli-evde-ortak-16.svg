@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7b9ee8"/>
+      <stop offset="100%" stop-color="#7792ce"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#42627f" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5b7185" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="58" r="80" fill="#dceef7" opacity="0.45"/>
+  <circle cx="592" cy="279" r="105" fill="#dff0dd" opacity="0.55"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456078">AKILLI EVDE ORTAK DİL</text>
+  <text x="32" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718397">Bağlantı · Protokol · Anlam</text>
+
+  <!-- Left device group -->
+  <g filter="url(#soft)">
+    <rect x="31" y="82" width="119" height="58" rx="16" fill="#fff4d9"/>
+    <circle cx="58" cy="111" r="15" fill="#ffd77c"/>
+    <path d="M53 111c0-4 2-7 5-7s5 3 5 7c0 3-2 4-3 6v3h-4v-3c-2-2-3-3-3-6z" fill="none" stroke="#8b6922" stroke-width="2" stroke-linecap="round"/>
+    <path d="M55 123h6" stroke="#8b6922" stroke-width="2" stroke-linecap="round"/>
+    <text x="82" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#66532a">Ampul</text>
+    <text x="82" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d7e5b">Wi-Fi</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="31" y="156" width="119" height="58" rx="16" fill="#e6f4e7"/>
+    <circle cx="58" cy="185" r="15" fill="#b9ddba"/>
+    <path d="M58 176v18M49 185h18" stroke="#477953" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="58" cy="185" r="5" fill="none" stroke="#477953" stroke-width="2"/>
+    <text x="82" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#41684b">Sensör</text>
+    <text x="82" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64856c">Zigbee</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="31" y="230" width="119" height="58" rx="16" fill="#f0e8fb"/>
+    <circle cx="58" cy="259" r="15" fill="#d1bce9"/>
+    <path d="M51 260c2-8 12-8 14 0M53 254c2-4 8-4 10 0" fill="none" stroke="#70518e" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="58" cy="263" r="2" fill="#70518e"/>
+    <text x="82" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#624479">Termostat</text>
+    <text x="82" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#84699a">Thread</text>
+  </g>
+
+  <!-- lines to core -->
+  <path d="M150 111H218" fill="none" stroke="#9badba" stroke-width="2"/>
+  <polygon points="218,111 209,106 209,116" fill="#9badba"/>
+  <path d="M150 185H218" fill="none" stroke="#9badba" stroke-width="2"/>
+  <polygon points="218,185 209,180 209,190" fill="#9badba"/>
+  <path d="M150 259H218" fill="none" stroke="#9badba" stroke-width="2"/>
+  <polygon points="218,259 209,254 209,264" fill="#9badba"/>
+
+  <!-- Center hub -->
+  <g filter="url(#shadow)">
+    <rect x="218" y="75" width="190" height="220" rx="28" fill="#ffffff"/>
+    <rect x="234" y="91" width="158" height="54" rx="17" fill="url(#core)"/>
+    <path d="M258 117h22M269 106v22" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="294" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Yerel Merkez</text>
+    <text x="294" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eaf1ff">Ortak dil katmanı</text>
+
+    <rect x="234" y="158" width="158" height="35" rx="11" fill="#edf4ff"/>
+    <text x="249" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4d6e9d">Bağlantı</text>
+    <text x="330" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6681a4">IP · Ağ</text>
+
+    <rect x="234" y="202" width="158" height="35" rx="11" fill="#eaf7ef"/>
+    <text x="249" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4b7b60">Dönüştürme</text>
+    <text x="330" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668d75">MQTT</text>
+
+    <rect x="234" y="246" width="158" height="35" rx="11" fill="#f6effd"/>
+    <text x="249" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#76538f">Anlamsal Uyum</text>
+    <circle cx="372" cy="263" r="8" fill="#b596d5"/>
+    <path d="M368 263l3 3 5-6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- outgoing -->
+  <path d="M408 142C435 142 434 108 459 108" fill="none" stroke="#879bac" stroke-width="2"/>
+  <polygon points="459,108 451,104 452,113" fill="#879bac"/>
+  <path d="M408 185H459" fill="none" stroke="#879bac" stroke-width="2"/>
+  <polygon points="459,185 450,180 450,190" fill="#879bac"/>
+  <path d="M408 228C435 228 434 262 459 262" fill="none" stroke="#879bac" stroke-width="2"/>
+  <polygon points="459,262 451,257 452,266" fill="#879bac"/>
+
+  <!-- right destinations -->
+  <g filter="url(#soft)">
+    <rect x="459" y="80" width="151" height="57" rx="16" fill="#e8f0ff"/>
+    <circle cx="486" cy="108" r="15" fill="#b7ccf4"/>
+    <path d="M478 111c4-10 12-10 16 0M480 104c3-5 9-5 12 0" fill="none" stroke="#45699e" stroke-width="2" stroke-linecap="round"/>
+    <text x="512" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#435f8a">Matter</text>
+    <text x="512" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7084a3">Çoklu yönetim</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="459" y="157" width="151" height="57" rx="16" fill="#fff0e8"/>
+    <circle cx="486" cy="185" r="15" fill="#f4c2a9"/>
+    <path d="M478 188h16M486 177v16" stroke="#a85c3f" stroke-width="2" stroke-linecap="round"/>
+    <text x="512" y="182" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#88523f">Otomasyon</text>
+    <text x="512" y="199" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a1705e">Yerel tepki</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="459" y="234" width="151" height="57" rx="16" fill="#e9f6f5"/>
+    <circle cx="486" cy="262" r="15" fill="#a9ded9"/>
+    <path d="M478 264l5 5 11-13" fill="none" stroke="#347a76" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="512" y="259" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#39716f">Uyumlu Ev</text>
+    <text x="512" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c8a87">Tek sistem</text>
+  </g>
+</svg>
