@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cfe5fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#45627d" flood-opacity="0.16"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#45627d" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="70" cy="44" r="50" fill="#dff2ec" opacity="0.58"/>
+  <circle cx="593" cy="275" r="78" fill="#e3edf9" opacity="0.64"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35536a">ŞEHRİN SİNİR SİSTEMİ</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718496">Ölçümden güvenilir karara</text>
+
+  <!-- connection paths -->
+  <path d="M145 110 C175 110 170 137 197 137" fill="none" stroke="#9ab5c7" stroke-width="2"/>
+  <polygon points="197,137 188,132 189,142" fill="#7898ad"/>
+  <path d="M145 181 C175 181 173 160 197 160" fill="none" stroke="#9ab5c7" stroke-width="2"/>
+  <polygon points="197,160 188,155 189,165" fill="#7898ad"/>
+  <path d="M145 252 C177 252 173 183 197 183" fill="none" stroke="#9ab5c7" stroke-width="2"/>
+  <polygon points="197,183 188,178 189,188" fill="#7898ad"/>
+
+  <path d="M302 160 L330 160" fill="none" stroke="#729ab4" stroke-width="2.5"/>
+  <polygon points="330,160 321,154 321,166" fill="#527b97"/>
+
+  <path d="M440 160 L467 160" fill="none" stroke="#729ab4" stroke-width="2.5"/>
+  <polygon points="467,160 458,154 458,166" fill="#527b97"/>
+
+  <path d="M538 142 C562 134 564 104 574 93" fill="none" stroke="#9ab5c7" stroke-width="2"/>
+  <polygon points="574,93 564,97 572,104" fill="#7898ad"/>
+  <path d="M538 178 C561 187 565 214 575 224" fill="none" stroke="#9ab5c7" stroke-width="2"/>
+  <polygon points="575,224 567,214 562,222" fill="#7898ad"/>
+
+  <!-- sensor cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="82" width="117" height="56" rx="15" fill="#fff7e6"/>
+    <circle cx="51" cy="110" r="13" fill="#f8d995"/>
+    <path d="M44 111 L49 106 L54 110 L59 102" fill="none" stroke="#a97725" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="106" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5e4b2b">Trafik</text>
+    <text x="72" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#847254">Hız · sayım</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="153" width="117" height="56" rx="15" fill="#e7f5ed"/>
+    <circle cx="51" cy="181" r="13" fill="#bfe5cf"/>
+    <circle cx="47" cy="178" r="3" fill="#4c9b71"/>
+    <circle cx="55" cy="184" r="4" fill="#4c9b71"/>
+    <circle cx="57" cy="176" r="2.5" fill="#4c9b71"/>
+    <text x="72" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355f4a">Hava</text>
+    <text x="72" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63806e">PM2.5 · gaz</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="224" width="117" height="56" rx="15" fill="#f0eafd"/>
+    <circle cx="51" cy="252" r="13" fill="#d9caf7"/>
+    <path d="M44 252 C47 247 48 257 51 252 C54 247 55 257 59 250" fill="none" stroke="#7654ad" stroke-width="2" stroke-linecap="round"/>
+    <text x="72" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#563b7d">Gürültü</text>
+    <text x="72" y="264" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78648f">Seviye</text>
+  </g>
+
+  <!-- gateway -->
+  <g filter="url(#shadow)">
+    <rect x="197" y="111" width="105" height="98" rx="20" fill="#e8f4f1"/>
+    <rect x="217" y="132" width="65" height="39" rx="10" fill="#bfe2d7"/>
+    <path d="M227 151 L239 142 L250 151 L264 137 L273 146" fill="none" stroke="#397a6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="229" cy="184" r="4" fill="#68b99f"/>
+    <circle cx="241" cy="184" r="4" fill="#68b99f"/>
+    <text x="249.5" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35675e">Ağ Geçidi</text>
+  </g>
+  <text x="249" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718496">Tampon · iletim</text>
+
+  <!-- core platform -->
+  <g filter="url(#shadow)">
+    <rect x="330" y="94" width="110" height="132" rx="24" fill="url(#core)"/>
+    <circle cx="385" cy="131" r="25" fill="#f8fcff" opacity="0.9"/>
+    <ellipse cx="385" cy="124" rx="13" ry="5" fill="#75a6c9"/>
+    <path d="M372 124 V143 C372 149 398 149 398 143 V124" fill="#9cc4df"/>
+    <path d="M372 133 C372 139 398 139 398 133" fill="none" stroke="#6296bb" stroke-width="1.5"/>
+    <text x="385" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a78">Veri Platformu</text>
+    <text x="385" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#577892">Zaman · konum · kalite</text>
+    <rect x="355" y="202" width="60" height="7" rx="3.5" fill="#aacce0"/>
+  </g>
+
+  <!-- analysis -->
+  <g filter="url(#shadow)">
+    <rect x="467" y="111" width="71" height="98" rx="20" fill="#fbecee"/>
+    <circle cx="502.5" cy="143" r="19" fill="#f7d0d7"/>
+    <path d="M490 151 L497 143 L503 147 L514 134" fill="none" stroke="#b85b70" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="490" cy="151" r="2.5" fill="#b85b70"/>
+    <circle cx="497" cy="143" r="2.5" fill="#b85b70"/>
+    <circle cx="503" cy="147" r="2.5" fill="#b85b70"/>
+    <circle cx="514" cy="134" r="2.5" fill="#b85b70"/>
+    <text x="502.5" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#874052">Analiz</text>
+    <text x="502.5" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a16a77">Bağlam · kontrol</text>
+  </g>
+
+  <!-- outcome cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="574" y="64" width="51" height="57" rx="14" fill="#fff6d9"/>
+    <rect x="585" y="76" width="29" height="18" rx="3" fill="#e7bc54"/>
+    <path d="M590 88 H596 V83 H602 V88 H609" fill="none" stroke="#fff9ea" stroke-width="2"/>
+    <text x="599.5" y="110" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#76581d">Pano</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="574" y="198" width="51" height="57" rx="14" fill="#e7f2ff"/>
+    <path d="M587 215 H612 V235 H587 Z" fill="#8cb7df"/>
+    <path d="M587 216 L599.5 226 L612 216" fill="none" stroke="#f7fbff" stroke-width="1.8"/>
+    <text x="599.5" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#426a8b">Uyarı</text>
+  </g>
+
+  <text x="319" y="286" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668094">Güvenilir ölçüm</text>
+  <circle cx="394" cy="282" r="3" fill="#83af9e"/>
+  <text x="405" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668094">Doğru karar</text>
+</svg>

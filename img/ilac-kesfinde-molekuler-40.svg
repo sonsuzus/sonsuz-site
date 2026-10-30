@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="protein" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b9d7f5"/>
+      <stop offset="100%" stop-color="#86b7df"/>
+    </linearGradient>
+    <linearGradient id="ligand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7c6be"/>
+      <stop offset="100%" stop-color="#e99d95"/>
+    </linearGradient>
+    <linearGradient id="dynamic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d5c8f1"/>
+      <stop offset="100%" stop-color="#ad96d7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5d7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5d7890" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="81" cy="54" r="58" fill="#d9edfa" opacity="0.42"/>
+  <circle cx="566" cy="273" r="76" fill="#dcefd6" opacity="0.46"/>
+
+  <text x="320" y="31" text-anchor="middle" fill="#40596d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">İlaç Keşfinde Dijital Prova</text>
+
+  <path d="M145 161 C161 161 171 161 185 161" fill="none" stroke="#89a5b5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="184,155 196,161 184,167" fill="#89a5b5"/>
+  <path d="M359 161 C374 161 383 161 396 161" fill="none" stroke="#89a5b5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="395,155 407,161 395,167" fill="#89a5b5"/>
+  <path d="M537 161 C550 161 560 161 571 161" fill="none" stroke="#89a5b5" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="570,155 582,161 570,167" fill="#89a5b5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="101" width="115" height="120" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="87" y="126" text-anchor="middle" fill="#476278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Hazırlık</text>
+  <path d="M55 169 C52 148 68 138 84 145 C99 132 119 145 116 162 C130 173 117 193 100 188 C87 202 67 193 70 178 C60 179 53 176 55 169Z" fill="url(#protein)" stroke="#659bc5" stroke-width="1.5"/>
+  <path d="M94 155 C103 151 108 157 106 165 C102 169 96 168 91 166" fill="none" stroke="#f8fbfd" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="82" cy="164" r="5" fill="url(#ligand)" stroke="#d77e78" stroke-width="1.2"/>
+  <circle cx="72" cy="172" r="4" fill="url(#ligand)" stroke="#d77e78" stroke-width="1.2"/>
+  <path d="M76 169 L79 167" stroke="#d77e78" stroke-width="2"/>
+  <text x="87" y="207" text-anchor="middle" fill="#61798b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Protein ve ligand</text>
+
+  <g filter="url(#shadow)">
+    <rect x="196" y="82" width="163" height="158" rx="23" fill="#ffffff"/>
+  </g>
+  <text x="277" y="108" text-anchor="middle" fill="#476278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kenetlenme</text>
+  <circle cx="277" cy="161" r="47" fill="#edf6fc" stroke="#bfd9eb" stroke-width="1.5"/>
+  <path d="M252 145 C248 127 267 119 279 132 C297 121 311 140 300 153 C314 165 300 186 283 179 C271 193 249 181 254 164 C242 160 243 150 252 145Z" fill="url(#protein)" stroke="#659bc5" stroke-width="1.5"/>
+  <path d="M280 144 C290 139 297 146 294 155 C291 161 282 159 277 155" fill="none" stroke="#f8fbfd" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="283" cy="151" r="7" fill="url(#ligand)" stroke="#d77e78" stroke-width="1.5"/>
+  <circle cx="306" cy="127" r="4.5" fill="#f5b9b2" opacity="0.7"/>
+  <circle cx="239" cy="178" r="4.5" fill="#f5b9b2" opacity="0.7"/>
+  <circle cx="314" cy="184" r="4.5" fill="#f5b9b2" opacity="0.7"/>
+  <text x="277" y="222" text-anchor="middle" fill="#61798b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Olası yerleşimler</text>
+
+  <g filter="url(#shadow)">
+    <rect x="407" y="101" width="130" height="120" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="472" y="126" text-anchor="middle" fill="#476278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Moleküler dinamik</text>
+  <path d="M430 178 C441 145 462 192 473 159 C484 127 497 174 513 145" fill="none" stroke="url(#dynamic)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M430 188 C442 162 454 194 466 176 C479 155 490 187 513 166" fill="none" stroke="#9bc7b5" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="444" cy="164" r="7" fill="url(#ligand)" stroke="#d77e78" stroke-width="1.3"/>
+  <circle cx="482" cy="159" r="7" fill="url(#ligand)" stroke="#d77e78" stroke-width="1.3"/>
+  <circle cx="502" cy="151" r="7" fill="url(#ligand)" stroke="#d77e78" stroke-width="1.3"/>
+  <text x="472" y="207" text-anchor="middle" fill="#61798b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Yörünge ve hareket</text>
+
+  <g filter="url(#shadow)">
+    <rect x="582" y="113" width="42" height="96" rx="18" fill="#ffffff"/>
+  </g>
+  <path d="M594 146 L600 152 L613 137" fill="none" stroke="#68aa88" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M594 169 L600 175 L613 160" fill="none" stroke="#68aa88" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="603" y="193" text-anchor="middle" fill="#61798b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Deney</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="153" y="261" width="334" height="35" rx="17.5" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <circle cx="178" cy="278.5" r="8" fill="#9fc9b3"/>
+  <path d="M175 279 L178 282 L183 275" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="321" y="283" text-anchor="middle" fill="#516d7e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Skor → davranış → doğrulama</text>
+</svg>
