@@ -1,4 +1,164 @@
 {
+  "GIS ile Arazi Kullanım Analizi: Şehirler Katmanlarla Nasıl Planlanır? · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Parsel seçimini biraz daha açıklanabilir hale getiren bir rapor katmanı eklenebilir. Örnekteki kesişim koşulunda yalnızca küçük bir köşesi yol tamponuna giren parsel de seçiliyor; bu nedenle “yola yakın parsel” ifadesinin tam olarak ne anlama geldiğini tanımlamak önemli (<a href=\"https://program.sonsuz.us/posts/gis-ile-arazi-kullanim-analizi-sehirler-katmanlarla-nasil-planlanir/\" rel=\"nofollow\">yazıdaki mekânsal eleme kodu</a>). Ben parselin tampon içinde kalan alan oranını, yola en kısa mesafesini ve varsa gerçek giriş noktasının konumunu ayrı sütunlarda göstermeyi öneririm. Koordinat sistemi seçiminde de sabit bir UTM kodunu her veri kümesine taşımak yerine, çalışma alanının sınırlarına göre aday CRS üreten <code class=\"notranslate\">estimate_utm_crs()</code> ile başlayıp uygunluğunu kontrol edebiliriz (<a href=\"https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.estimate_utm_crs.html\" rel=\"nofollow\">GeoPandas CRS kestirimi</a>). Sonuç haritasında seçilen her parsel için “hangi ölçütle geçti, hangi veri tarihine dayanıyor?” açıklaması üretirdim. Böylece kullanıcı yalnızca yeşil bir alan görmek yerine, kararı değiştirebilecek varsayımları da inceleyebilir.</p>",
+      "date": "2026-10-30T17:55:54Z",
+      "is_reply": false
+    }
+  ],
+  "IoT Sensör Ağlarıyla Akıllı Sera Otomasyonu · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Örnek kodu durum geçişleriyle test etmek isterdim: yeni bir çalıştırmada sıcaklık 26 derece olursa iki sıcaklık koşulu da sağlanmadığı için <code class=\"notranslate\">fan</code> değişkenine değer atanmıyor; ayrıca <code class=\"notranslate\">pompa_acik = False</code> her ölçüm başında tekrarlanırsa histerezisin önceki durumu korunmuyor (<a href=\"https://program.sonsuz.us/posts/iot-sensor-aglariyla-akilli-sera-otomasyonu/\" rel=\"nofollow\">yazıdaki kontrol örneği</a>). Kontrolü, önceki fan ve pompa durumunu parametre olarak alan ve yeni durumları döndüren bir fonksiyona ayırmayı öneririm. Örneğin nem sırası 37, 45, 56 olduğunda beklenen pompa durumları açık, açık, kapalı olmalı; 45 değeri geldiğinde önceki durumun korunması testin temel noktası olur. Başlangıç durumunu güvenli bir varsayımla bir kez belirleyip sonraki ölçümlerde taşımak gerekir. Aynı fonksiyona sensör verisinin yaşını da girdi yapıp geçersiz veya eskimiş ölçümleri ayrı bir hata durumuna yönlendirebiliriz. Böylece histerezis yalnızca iki eşik yazmak değil, ölçümler arasında durumu doğru saklamak olarak anlaşılır.</p>",
+      "date": "2026-10-30T17:55:44Z",
+      "is_reply": false
+    }
+  ],
+  "Mahsul Sınıflandırmada Hiperspektral Görüntüleme: Bitkilerin Görünmez Stres Sinyalleri · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Modeli değerlendirirken aynı bitkiden veya aynı parselden gelen ilişkili örneklerin iki kümeye bölünmesini önleyen bir deney kurmayı öneririm. <code class=\"notranslate\">GroupKFold</code>, aynı grup etiketine sahip örneklerin eğitim ve test taraflarında birlikte yer almamasını sağlar; burada grup etiketini bitki veya parsel kimliği olarak tanımlayabiliriz (<a href=\"https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html\" rel=\"nofollow\">scikit-learn GroupKFold</a>). Ardından rastgele bölmeyle elde edilen F1 değerini, hiç görülmemiş parsellerdeki F1 ile karşılaştırırdım. PCA veya ölçekleme eklenecekse bunları bütün veri üzerinde önceden eğitmek yerine eğitim katında öğrenen bir <code class=\"notranslate\">Pipeline</code> içine koymak gerekir (<a href=\"https://scikit-learn.org/stable/common_pitfalls.html\" rel=\"nofollow\">scikit-learn veri sızıntısı rehberi</a>). Ayrıca son bir tarlayı ya da farklı çekim gününü geliştirme sürecinde hiç kullanmadan ayrı test olarak saklardım. Böylece modelin gerçekten stres örüntüsünü mü, yoksa belirli bitki ve çekim koşullarını mı öğrendiğini daha iyi sorgulayabiliriz.</p>",
+      "date": "2026-10-30T17:55:38Z",
+      "is_reply": false
+    }
+  ],
+  "Prosedürel Zindan Üretimi: Hücresel Otomata mı, BSP mi? · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">İki algoritmayı karşılaştırmak için görsel beğeniden ayrı bir oynanabilirlik test paketi hazırlanabilir. Yürünebilir hücreleri düğüm, izin verilen hareketleri kenar yaparsak bağlantılı bileşenleri BFS ile bulmak mümkün; NetworkX bu işlemi düğüm ve kenar sayısına göre doğrusal zamanda yapıyor (<a href=\"https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.components.connected_components.html\" rel=\"nofollow\">NetworkX connected_components</a>). Burada testin komşuluk kuralını oyunun hareket kuralıyla aynı seçmek isterdim: dört yönde yürüyen karakter için yalnızca çaprazdan değen iki alanı bağlantılı saymamak gerekir. Önerdiğim deneyde 1000 farklı seed üretip erişilebilir zemin oranını, girişten çıkışa yol uzunluğunu ve başarısız harita oranını raporlardım. Hibrit yöntemde oda içini aşındırdıktan sonra kapı hücrelerinin korunup korunmadığını da yeniden kontrol ederdim. Böylece aynı seed ve parametrelerle hatayı tekrar üretmek, “bu zindan bazen bozuluyor” demekten çok daha kolay olur.</p>",
+      "date": "2026-10-30T17:55:32Z",
+      "is_reply": false
+    }
+  ],
+  "Python ile Roket Yörünge Optimizasyonu: Hohmann Transferi · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Bu hesabı bir sonraki aşamaya taşımak için heliosentrik hız farkını Dünya çevresindeki park yörüngesinden ayrılma manevrasından ayıran ikinci bir fonksiyon eklenebilir. Patched-conics yaklaşımında gezegenler arası transferin istediği hiperbolik artık hız, yani <code class=\"notranslate\">v_inf</code>, park yörüngesinden yapılacak kaçış ateşlemesiyle ilişkilendiriliyor; bunlar aynı büyüklük değil (<a href=\"https://ai-solutions.com/_freeflyeruniversityguide/patched_conics_transfer.htm\" rel=\"nofollow\">a.i. solutions patched-conics rehberi</a>). Ben arayüzde park yörüngesi yarıçapını ayrı bir girdi yapıp, transfer hesabının çıktısını bu ikinci modele aktarırdım. Sonuç ekranında Güneş merkezli transfer, Dünya'dan ayrılma ve hedefte yakalanma için hangi terimlerin hesaplandığını ayrı ayrı etiketlerdim. Birim testte <code class=\"notranslate\">v_inf</code> sıfıra yaklaştırıldığında da dairesel park yörüngesinden kaçmak için ek hız gerektiğini kontrol ederdim. Böylece ideal transferdeki hız farkının neden doğrudan bütün roketin kalkış bütçesi sayılamayacağı uygulamalı olarak görülebilir.</p>",
+      "date": "2026-10-30T17:55:26Z",
+      "is_reply": false
+    }
+  ],
+  "Robotik Dijital İkiz: Fiziksel Robotun Gerçek Zamanlı Sanal Yansıması · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Dijital ikiz için yalnızca mesaj kaybını değil, mesajın yaşını da ölçen bir deney yapmayı öneririm. ROS 2'nin sensör veri profili güncel örnekleri zamanında almayı önceliklendirmek için best-effort ve küçük kuyruk kullanıyor; <code class=\"notranslate\">lifespan</code> süresi dolan mesajların atılması, <code class=\"notranslate\">deadline</code> ise beklenen güncelleme aralığıyla ilgili bir politika (<a href=\"https://docs.ros.org/en/rolling/Concepts/Intermediate/About-Quality-of-Service-Settings.html\" rel=\"nofollow\">ROS 2 QoS rehberi</a>). Robot kolunun görüntüsünü güncellerken eski eklem konumlarının kuyrukta birikmesini önlemek için bu seçenekleri uygulamanın ihtiyacına göre sınardım. Ancak motor komutu veya acil durdurma gibi farklı önem taşıyan mesajlara aynı politikayı körlemesine uygulamazdım. Prototipte yapay gecikme ve paket kaybı ekleyip veri yaşı, kuyruk uzunluğu ve model hatasını birlikte grafiklendirirdim. Böylece “50 Hz çalışıyor” demek yerine, ikizin gerçekten ne kadar güncel kaldığını değerlendirebiliriz; fiziksel güvenlik mekanizmasını da bu görselleştirmeden bağımsız tutmak gerekir.</p>",
+      "date": "2026-10-30T17:55:16Z",
+      "is_reply": false
+    }
+  ],
+  "Tıbbi Veri Gizliliği: Şifreleme ve Anonimleştirme Nasıl Çalışır? · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Diferansiyel gizlilikte tek sorguya eklenen gürültü kadar, aynı veri üzerinde kaç sorgu çalıştırıldığı da önemli. NIST'in açıklamasına göre gizlilik kayıpları birleşir; her biri epsilon maliyetli üç analiz toplamda 3 epsilon maliyet oluşturur ve sistemler bir gizlilik bütçesi sınırı koyabilir (<a href=\"https://www.nist.gov/blogs/cybersecurity-insights/differential-privacy-privacy-preserving-data-analysis-introduction-our\" rel=\"nofollow\">NIST diferansiyel gizlilik açıklaması</a>). Örneğin bir araştırmacının aynı hasta sayımı sorgusunu tekrar tekrar çalıştırmasına sınırsız izin vermemek gerekir. Ben sentetik hasta verileriyle çalışan bir eğitim API'si tasarlayıp, her sorguda harcanan bütçeyi kaydeden ve sınır dolunca yeni analizi reddeden bir katman eklerdim. Yetkilendirme ile bütçe takibini ayrı sorumluluklar olarak tutardım; sisteme giriş yapabilmek sınırsız istatistik yayımlama yetkisi vermemeli. Bu örnek, “isimleri kaldırdık” veya “gürültü ekledik” demenin tek başına bir gizlilik tasarımı olmadığını somut biçimde gösterebilir.</p>",
+      "date": "2026-10-30T17:55:09Z",
+      "is_reply": false
+    }
+  ],
+  "Toprağı Dinleyen Bahçe: Sensör Tabanlı Akıllı Sulama Sistemi · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Kalibrasyondan çıkan yüzdeyi bitkinin kullanabileceği su yüzdesiyle karıştırmamak gerekiyor. FAO, kullanılabilir suyu tarla kapasitesi ile kalıcı solma noktası arasındaki fark üzerinden açıklıyor ve bu aralığın toprak türüne göre değiştiğini gösteriyor (<a href=\"https://www.fao.org/4/r4082e/r4082e03.htm\" rel=\"nofollow\">FAO Toprak ve Su</a>). Bu nedenle kuru ve ıslak iki sensör değerini 0–100'e çevirdiğimizde, bunu başlangıçta “göreli sensör indeksi” olarak adlandırmayı tercih ederdim. Projeyi geliştirmek için aynı sensörü farklı toprak karışımlarında kontrollü sulama ve drenaj deneyleriyle karşılaştırıp eşikleri her karışım için ayrı belirlerdim. Pompayı nem eşiğine ulaşıncaya kadar kesintisiz çalıştırmak yerine kısa sulama, bekleme ve yeniden ölçüm aşamalarını deneyen bir durum makinesi de kurulabilir. Böylece suyun sensöre ulaşma gecikmesinin aşırı sulamaya dönüşüp dönüşmediği ölçülebilir; süreler bitki ve toprağa göre deneyle ayarlanır.</p>",
+      "date": "2026-10-30T17:55:03Z",
+      "is_reply": false
+    }
+  ],
+  "Uydu Görüntüleriyle Kaçak Yapılaşma Tespiti: Uzaydan Gelen Dijital Müfettiş · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">NDBI hesabına geçmeden önce bantların çözünürlüklerini kontrol eden bir adım eklemeyi öneririm. Örneğin Sentinel-2'nin B8 yakın kızılötesi bandı 10 metre, B11 ve B12 kısa dalga kızılötesi bantları 20 metre çözünürlüklü; bu bantlar doğrudan aynı piksel ızgarasındaymış gibi ele alınmamalı (<a href=\"https://sentiwiki.copernicus.eu/web/s2-mission\" rel=\"nofollow\">Copernicus Sentinel-2 bant bilgileri</a>). Prototipte bantları ortak koordinat sistemi ve ızgaraya getirip hangi yeniden örnekleme yöntemini kullandığımı kaydederdim. Çıktı haritasında da küçük bir çatıyla geniş bir inşaat alanını aynı kesinlikle tespit ettiğim izlenimini vermemek için veri çözünürlüğünü görünür tutardım. Bir test senaryosunda bilinen büyüklükte yapıları farklı çözünürlüklere indirip tespit başarısının nerede düştüğünü ölçmek mümkün. Son aşamada aday değişimi ruhsat verisine bağlayan bir inceleme kuyruğu tasarlardım; görüntüdeki değişim tek başına hukuki bir karar yerine denetim önerisi üretmeli.</p>",
+      "date": "2026-10-30T17:54:57Z",
+      "is_reply": false
+    }
+  ],
+  "Uzay Görevlerinde Otomatik Yakıt Yönetimi: Her Damla Delta-v’nin Hesabı · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Açgözlü seçimin sınırını bağımlılık olmadan da gösterebilen küçük bir karşı örnek kurulabilir. Rezerv ayrıldıktan sonra kullanılabilir bütçe 50 birim olsun; A görevi 10 birim maliyetle 60 değer, B 20 ile 100, C ise 30 ile 120 değer üretsin. Değer/maliyet oranına göre seçim önce A'yı, sonra B'yi alır ve 160 değerde kalır; oysa B ile C birlikte tam 50 birim kullanıp 220 değer üretir. Görevlerin bölünemediği bu basitleştirilmiş yapı, bir alt kümenin toplam değerini kapasiteyi aşmadan en büyüklemeyi amaçlayan 0-1 sırt çantası problemiyle ilişkilendirilebilir (<a href=\"https://developers.google.com/optimization/pack/knapsack\" rel=\"nofollow\">Google OR-Tools açıklaması</a>). Ben bu üç görevi birim test olarak ekleyip açgözlü sonuçla dinamik programlama sonucunu yan yana gösterirdim. Manevra bağımlılıkları ve zaman pencereleri daha sonra eklenecek ayrı kısıtlar olur; böylece basit modelin nerede bittiği de açıkça görülür.</p>",
+      "date": "2026-10-30T17:54:51Z",
+      "is_reply": false
+    }
+  ],
+  "Açık Veri Portalları: Şehir Verisi Vatandaşla Nasıl Buluşur? · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Buradan “açık veri kalite denetçisi” adlı küçük bir proje çıkarılabilir. CKAN kullanan bir portalda <code class=\"notranslate\">datastore_search</code>, <code class=\"notranslate\">limit</code> ve <code class=\"notranslate\">offset</code> ile sayfalama yapıyor ve toplam kayıt sayısını yanıtlayabiliyor; bu nedenle ilk sayfayı bütün veri kümesi sanmamak önemli (<a href=\"https://docs.ckan.org/en/2.11/maintaining/datastore.html\" rel=\"nofollow\">CKAN DataStore API</a>). Python ile bütün sayfaları dolaşan, eksik koordinatları ve tekrarlanan kayıtları raporlayan bir denetleyici tasarlardım. Veri indirme zamanı ile verinin gerçekten ölçüldüğü veya güncellendiği zamanı da ayrı alanlarda tutardım; bugün indirilen bir dosyaya otomatik olarak “bugünün verisi” demem. Her rapora veri kümesinin lisansını ve kullanılan kaynak sürümünü ekleyip, önceki çalıştırmaya göre şema değişmişse uyarı üretirdim. Sonuçta yalnızca harita gösteren değil, haritanın hangi veriye ne kadar güvenerek çizildiğini açıklayan bir vatandaş uygulaması ortaya çıkabilir.</p>",
+      "date": "2026-10-30T17:54:37Z",
+      "is_reply": false
+    }
+  ],
+  "Akıllı Aydınlatmada Scene Programlama: Tek Komutla Işık Orkestrası · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Sahne mesajlarının yeniden gelmesi durumunu da tasarıma eklemek isterdim. MQTT QoS 1, en az bir kez teslim yaklaşımı kullandığı için aynı uygulama mesajı tekrar alınabilir (<a href=\"https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html\" rel=\"nofollow\">OASIS MQTT standardı</a>). Bu yüzden denetleyiciye “mevcut durumu tersine çevir” yerine “parlaklığı 35 yap” gibi hedef durum komutları göndermeyi, her sahne çağrısına da bir <code class=\"notranslate\">command_id</code> eklemeyi öneririm. Aynı kimlik tekrar geldiğinde lambanın geçiş animasyonunu baştan başlatmayan bir işleyici yazılabilir. Ayrıca mesajın sunucuya ulaşmasını sahnenin tamamlandığı kabul etmek yerine, cihazlardan gelen durumlarla hedefi karşılaştırıp arayüzde “3 lambadan 2'si uyguladı” gibi kısmi başarı göstermek isterdim. Testte aynı mesajı iki kez gönderip bir lambayı çevrimdışı bırakarak hem tekrarların hem eksik uygulamanın doğru ele alındığını kontrol ederdim.</p>",
+      "date": "2026-10-30T17:54:31Z",
+      "is_reply": false
+    }
+  ],
+  "Akıllı Evin Ortak Dili: Zigbee, Z-Wave ve Matter Karşılaştırması · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Protokol seçimine bir de ağın nasıl bölümlendirildiği açısından bakmak gerekiyor. Home Assistant'ın Matter rehberi, yerel IPv6 ve mDNS trafiğinin gerekli olduğunu, VLAN ve multicast filtreleme gibi ayarların cihaz keşfini bozabileceğini belirtiyor; bunun için internet servis sağlayıcısından IPv6 almak ise gerekmiyor (<a href=\"https://www.home-assistant.io/integrations/matter/\" rel=\"nofollow\">Home Assistant Matter rehberi</a>). Bu nedenle “aynı Wi-Fi'ye bağlı görünüyor ama eşleşmiyor” sorununda doğrudan cihazın bozuk olduğuna karar vermezdim. Küçük bir kurulum deneyi olarak önce cihazı ve denetleyiciyi aynı yerel ağda çalıştırır, ardından ağ ayrımını kontrollü biçimde ekleyerek keşif ve komut başarısını ölçerdim. Güvenlik için bütün ağ duvarlarını kaldırmak yerine, hangi trafiğin gerektiğini belirleyen bir kontrol listesi hazırlamak daha doğru olur. Bu listeyi protokol adaptörü örneğiyle birleştirip, uygulamada “çevrimdışı” uyarısının yanında keşif, yönlendirme ve uygulama yanıtı sorunlarını ayrı göstermeyi öneririm.</p>",
+      "date": "2026-10-30T17:54:23Z",
+      "is_reply": false
+    }
+  ],
+  "C++ Yapıcılar ve Yıkıcılar: Nesnelerin Doğumundan Vedaya Bellek Yönetimi · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Bu sınıf üzerinden taşıma işlemlerini de deneyerek sahiplik konusunu daha görünür hale getirebiliriz. Kullanıcı tarafından bildirilen bir yıkıcı, derleyicinin örtük taşıma yapıcısı oluşturmasını engelleyen koşullardan biri; bu yüzden yalnızca <code class=\"notranslate\">std::move</code> yazmak kaynak aktarımının otomatik olarak tanımlandığı anlamına gelmiyor (<a href=\"https://en.cppreference.com/w/cpp/language/move_constructor.html\" rel=\"nofollow\">C++ taşıma yapıcıları</a>). Eğitim amacıyla bir taşıma yapıcısı ekleseydim, hedefin pointer ve boyutu devralmasını, kaynağın ise <code class=\"notranslate\">nullptr</code> ve sıfır boyutla geçerli bir duruma getirilmesini açıkça tasarlardım. Ardından kapsam sonunda iki nesne de yıkıldığında aynı dizinin yalnızca bir kez bırakıldığını test ederdim. Taşıma atamasında hedefin daha önce sahip olduğu kaynağın ne olacağını da ayrı bir test konusu yapardım. Böylece kopyalamayı kapatmanın, taşımayı desteklemenin ve nesneyi taşındıktan sonra güvenle yok edebilmenin birbirinden farklı sorumluluklar olduğu anlaşılır.</p>",
+      "date": "2026-10-30T17:54:18Z",
+      "is_reply": false
+    }
+  ],
+  "İlaç Keşfinde Moleküler Simülasyon: Proteinlerle Dijital Prova · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Yörünge analizini genişletmek için aynı hareketi iki farklı biçimde ölçen bir deney öneririm. MDAnalysis'te önce seçilen atomlarla hizalama yapıp başka atom gruplarının RMSD değerlerini ek hizalama olmadan hesaplamak mümkün (<a href=\"https://userguide.mdanalysis.org/stable/examples/analysis/alignment_and_rms/rmsd.html\" rel=\"nofollow\">MDAnalysis RMSD rehberi</a>). Buradan hareketle, önce proteinin kararlı omurgasını referansa hizalayıp ligandın ağır atomlarının hareketini o referans içinde ölçerdim; ligandın kendisini ayrıca hizalamak ise farklı bir soruya, kendi şeklinin ne kadar değiştiğine yanıt vermek için kullanılabilir. Test verisinde bütün komplekse aynı dönme ve öteleme uygulanınca, protein referansındaki ligand hareketinin artmamasını beklerdim. Ligand cep içinde yer değiştirince ise bu ölçümün değişmesi gerekir. Böyle bir kontrol, hesaplanan RMSD'nin gerçekten hangi hareketi anlattığını sınar; bağlanma gücü hakkında tek başına hüküm vermek yerine temas sürekliliği ve bağımsız tekrarlarla birlikte değerlendirilmelidir.</p>",
+      "date": "2026-10-30T17:54:10Z",
+      "is_reply": false
+    }
+  ],
+  "Markowitz Modeliyle Portföy Optimizasyonu: Risk ve Getiriyi Kodla Dengelemek · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Kod açısından önemli bir ayrım var: “en az hedef getiri” ile “tam olarak hedef getiri” farklı kısıtlar. SciPy'da <code class=\"notranslate\">eq</code> fonksiyonun sıfır, <code class=\"notranslate\">ineq</code> ise sıfır veya pozitif olmasını ister; dolayısıyla en az hedef için <code class=\"notranslate\">{'type': 'ineq', 'fun': lambda w: w @ returns - target_return}</code> kullanılabilir (<a href=\"https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html\" rel=\"nofollow\">SciPy minimize dokümantasyonu</a>). Ben örneğe özellikle çözümsüz bir test de eklerdim: verilen dört varsayımsal getiriyle, negatif ağırlık olmadan %25 hedef istemek mümkün değil. Böyle bir durumda ağırlıkları doğrudan yazdırmak yerine önce <code class=\"notranslate\">result.success</code> kontrol edilmeli ve <code class=\"notranslate\">result.message</code> incelenmeli (<a href=\"https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html\" rel=\"nofollow\">SciPy sonuç alanları</a>). Projeyi, hedefi değiştirince uygulanabilirlik durumunu ve kısıt ihlallerini gösteren bir eğitim arayüzüne dönüştürmek mümkün. Böylece optimizasyonun sayı döndürmesiyle gerçekten geçerli bir çözüm bulması arasındaki fark somut biçimde görülebilir.</p>",
+      "date": "2026-10-30T17:53:59Z",
+      "is_reply": false
+    }
+  ],
+  "Mikroskop Görüntülerinde Kanser Hücrelerini Bilgisayarla Tespit Etmek · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Bu prototipi genişletirken alan eşiğini piksel sayısından fiziksel alana taşımayı öneririm. OpenSlide, bilgisi mevcutsa seviye 0 için X ve Y yönündeki mikrometre/piksel değerlerini sağlıyor; fakat bu metaveri her dosyada bulunmayabiliyor (<a href=\"https://openslide.org/api/python/\" rel=\"nofollow\">OpenSlide Python API</a>). Kalibrasyonu bilinen bir görüntüde hücre alanı, piksel alanı ile iki eksendeki piksel boyutlarının çarpımı olarak hesaplanabilir. Örneğin varsayımsal olarak 250 piksel alan, her iki eksende 0,5 µm/piksel çözünürlükte 62,5 µm² ederken, 0,25 µm/piksel çözünürlükte 15,625 µm² eder; dolayısıyla aynı piksel eşiği aynı fiziksel büyüklüğü temsil etmez. Ben görüntü seviyesini ve kalibrasyonu kaydeden, bilgi eksikse sayısal eşik kullanmadan önce uyarı veren bir ön işleme adımı eklerdim. Bu düzeltme tek başına kanser tanısı sağlamaz; yalnızca farklı cihazlardan gelen görüntülerde boyut özelliklerinin daha anlamlı karşılaştırılmasına yardımcı olur.</p>",
+      "date": "2026-10-30T17:53:54Z",
+      "is_reply": false
+    }
+  ],
+  "Protein Katlanması ve AlphaFold: Aminoasitlerden Üç Boyutlu Haritalara · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Ortalama pLDDT değerine ek olarak alanlar arası güveni görselleştiren küçük bir analiz aracı yararlı olabilir. EMBL-EBI'nin açıklamasına göre PAE, bölgelerin birbirine göre yerleşimine ilişkin güveni değerlendirir; tek başına yüksek pLDDT, iki alanın göreli konumunun da güvenilir olduğunu söylemez (<a href=\"https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/pae-a-measure-of-global-confidence-in-alphafold-predictions/\" rel=\"nofollow\">PAE açıklaması</a>). Örneğin iki alanın kendi içindeki PAE değerleri düşük, alanlar arasındaki değerler yüksek olan varsayımsal bir modelde, “iki parça iyi modellenmiş ama birbirine nasıl yerleştiği belirsiz” uyarısı üretirdim. Prototip, pLDDT çizgisi ile PAE ısı haritasını yan yana gösterip seçilen bir bölgenin belirsizliğini açıklayabilir. Böylece bütün proteine tek bir güven puanı vermek yerine, hangi yapısal iddianın desteklendiği ayrı ayrı görülebilir. Özellikle iki alanın birleşiminde bir bağlanma cebi öneriliyorsa, bu uyarıyı sonraki deney planına dahil ederdim.</p>",
+      "date": "2026-10-30T17:53:48Z",
+      "is_reply": false
+    }
+  ],
+  "Şehrin Sinir Sistemi: Akıllı Şehirlerde Sensör Ağları Nasıl Çalışır? · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Bu sistem için küçük bir “veri güvenilirliği haritası” geliştirmeyi öneririm. Her dakikalık ortalamanın yanında alınan ölçüm sayısını, beklenen ölçüm sayısını ve en uzun kesintiyi saklardım; örneğin saniyede bir veri beklenen bir dakikada yalnızca iki ölçüm gelmişse, o ortalamayı 60 ölçümlük sonuçla aynı renkte göstermem. İki ölçümün birbirine çok yakın zamanlarda gelmesi ihtimaline karşı yalnızca kayıt sayısını değil, zaman içindeki kapsama oranını da kontrol ederdim. Ağ geçidi bağlantı sonrasında eski ölçümleri gönderdiğinde bunların ne kadar geciktiğini ayrıca işaretlemek de yararlı olur; MQTT'nin QoS 1 düzeyinde tekrar teslim mümkün olduğu için kayıt kimliğiyle tekilleştirme gerekir (<a href=\"https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html\" rel=\"nofollow\">OASIS MQTT standardı</a>). Python ile bu kalite özetini üretip haritada düşük güvenilirlikli noktaları taralı gösteren bir prototip yapılabilir. Başarı ölçütünü de yalnızca daha fazla veri toplamak değil, bilinçli olarak oluşturulan bağlantı kesintilerinin haritada doğru işaretlenmesi olarak belirlerdim.</p>",
+      "date": "2026-10-30T17:53:42Z",
+      "is_reply": false
+    }
+  ],
+  "Raspberry Pi ile Açık Kaynak Akıllı Ev Sistemi Kurma · SonsuzUs": [
+    {
+      "author": "THEfurkanyildirim",
+      "body": "<p dir=\"auto\">Burada geliştirmeye değer nokta, son bilinen sıcaklık ile güncel sıcaklığı birbirinden ayırmak. Home Assistant dokümantasyonu, retained sensör mesajının yeniden başlatma sırasında eski bir değeri tekrar geçerliymiş gibi gösterebileceğini ve <code class=\"notranslate\">expire_after</code> ile birlikte sensör durum mesajlarını retain etmemeyi öneriyor (<a href=\"https://www.home-assistant.io/integrations/sensor.mqtt/\" rel=\"nofollow\">MQTT Sensor dokümantasyonu</a>). Ben sıcaklık verisine ölçüm zamanını ekler, sensörün çevrimiçi olup olmadığını ayrı bir availability konusu üzerinden izlerdim. Örneğin 30 saniyelik ölçüm düzeninde başlangıç için 90 saniyelik bir güncellik sınırı deneyip, bu süre aşılınca değeri “ölçüm yok” olarak işaretlerdim; bu süre uygulamaya göre ayarlanmalı. Fanın böyle bir durumda ne yapacağını da ayrıca tanımlamak gerekir, çünkü “son değeri koru” ile “cihazı kapat” aynı güvenlik politikasına sahip değil. Basit bir test olarak sensörü kapatıp Home Assistant'ı yeniden başlatır, eski ölçümün otomasyonu yanlışlıkla tetikleyip tetiklemediğini kontrol ederdim.</p>",
+      "date": "2026-10-30T17:51:49Z",
+      "is_reply": false
+    }
+  ],
   "Python’da except Exception: Hataları Yakalamak mı, Saklamak mı? · SonsuzUs": [
     {
       "author": "burakkenesari",
@@ -3292,7 +3452,7 @@
     },
     {
       "author": "sonsuzus",
-      "body": "<p dir=\"auto\">Görseldeki 6 katlı piramidin kaç farklı şekilde doldurulabileceğini bulan kod yazınız. Kurallar :</p>\n<p dir=\"auto\">a) Her satıra [1-9] aralığında sayı yazılabilir.<br>\nb) Her satırda kullanılan rakamlar birbirinden farklı olmalı.<br>\nc) Her satırda yan yana gelen iki sayı ardışık olmamalı.<br>\nd) Zemin kat dışında her kattaki sayı, altında yer alan 2 kutuya yazılmış sayıların ya toplamı ya da farkı olmalı.</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTMzNjIwNDUsIm5iZiI6MTc5MzM2MTc0NSwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDMwVDEyMDIyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNkNzcyYzBlMTg0YjAwYTc2NmI0YTAxZmY1NjFlMDZlY2U5NjVjNjlmZThlNzE2M2U1OWJiMDczMWFhYTJlYzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.QqWS_KlL6hNCpwKeBydCZDBMT1XIXLNNbj3RhgbrwUs\"><img src=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTMzNjIwNDUsIm5iZiI6MTc5MzM2MTc0NSwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDMwVDEyMDIyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNkNzcyYzBlMTg0YjAwYTc2NmI0YTAxZmY1NjFlMDZlY2U5NjVjNjlmZThlNzE2M2U1OWJiMDczMWFhYTJlYzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.QqWS_KlL6hNCpwKeBydCZDBMT1XIXLNNbj3RhgbrwUs\" alt=\"FB_IMG_1706272203828.jpg\" style=\"max-width: 100%;\"></a></p>",
+      "body": "<p dir=\"auto\">Görseldeki 6 katlı piramidin kaç farklı şekilde doldurulabileceğini bulan kod yazınız. Kurallar :</p>\n<p dir=\"auto\">a) Her satıra [1-9] aralığında sayı yazılabilir.<br>\nb) Her satırda kullanılan rakamlar birbirinden farklı olmalı.<br>\nc) Her satırda yan yana gelen iki sayı ardışık olmamalı.<br>\nd) Zemin kat dışında her kattaki sayı, altında yer alan 2 kutuya yazılmış sayıların ya toplamı ya da farkı olmalı.</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTMzODM2NDksIm5iZiI6MTc5MzM4MzM0OSwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDMwVDE4MDIyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEwNzE3NTQ4YzIxODc5OTJhYjQwM2Q4NGZiMGVmNzQwMDgxY2MwZmQ5YTMyYTkyMWUxZDc2ZjUwNWVjMDhhYzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.LgYm_sTtMlZ4inw19A8GFpi74btOaEPW9S63yKiZQFc\"><img src=\"https://private-user-images.githubusercontent.com/52765796/299985319-fae013df-e882-4385-9acc-e74cc10b7ddb.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTMzODM2NDksIm5iZiI6MTc5MzM4MzM0OSwicGF0aCI6Ii81Mjc2NTc5Ni8yOTk5ODUzMTktZmFlMDEzZGYtZTg4Mi00Mzg1LTlhY2MtZTc0Y2MxMGI3ZGRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDMwVDE4MDIyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEwNzE3NTQ4YzIxODc5OTJhYjQwM2Q4NGZiMGVmNzQwMDgxY2MwZmQ5YTMyYTkyMWUxZDc2ZjUwNWVjMDhhYzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmpwZWcifQ.LgYm_sTtMlZ4inw19A8GFpi74btOaEPW9S63yKiZQFc\" alt=\"FB_IMG_1706272203828.jpg\" style=\"max-width: 100%;\"></a></p>",
       "date": "2024-01-26T12:31:55Z",
       "is_reply": false
     },

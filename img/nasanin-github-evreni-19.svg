@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ddeaff"/>
+      <stop offset="100%" stop-color="#cbdcf7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55718f" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#59728a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="61" r="68" fill="#dceef3" opacity="0.42"/>
+  <circle cx="578" cy="270" r="86" fill="#e2f1d5" opacity="0.40"/>
+  <path d="M44 157 C111 105 153 101 218 134" fill="none" stroke="#b8cfdf" stroke-width="2" stroke-dasharray="5 7" opacity="0.7"/>
+  <path d="M424 134 C486 103 535 113 600 158" fill="none" stroke="#b8cfdf" stroke-width="2" stroke-dasharray="5 7" opacity="0.7"/>
+
+  <path d="M289 132 C247 112 213 98 177 84" fill="none" stroke="#7893ab" stroke-width="2.5"/>
+  <polygon points="174,77 185,80 178,88" fill="#7893ab"/>
+  <path d="M351 132 C392 112 426 98 463 84" fill="none" stroke="#7893ab" stroke-width="2.5"/>
+  <polygon points="466,77 462,88 455,80" fill="#7893ab"/>
+  <path d="M278 178 C233 198 205 214 175 230" fill="none" stroke="#7893ab" stroke-width="2.5"/>
+  <polygon points="171,223 181,226 177,235" fill="#7893ab"/>
+  <path d="M362 178 C407 198 435 214 465 230" fill="none" stroke="#7893ab" stroke-width="2.5"/>
+  <polygon points="469,223 463,235 459,226" fill="#7893ab"/>
+
+  <g filter="url(#soft)">
+    <rect x="73" y="45" width="116" height="67" rx="17" fill="#fff4d8"/>
+    <rect x="82" y="55" width="31" height="31" rx="10" fill="#f3cb72"/>
+    <path d="M93 63 L87 70 L93 77 M103 63 L109 70 L103 77" fill="none" stroke="#80612c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="124" y="72" fill="#3d5060" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Uçuş</text>
+    <text x="124" y="89" fill="#637581" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">cFS · F´</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="451" y="45" width="116" height="67" rx="17" fill="#e3f3ea"/>
+    <rect x="460" y="55" width="31" height="31" rx="10" fill="#9bd1b2"/>
+    <path d="M468 77 C470 66 483 66 484 77 M468 77 L484 77 M476 61 L476 81" fill="none" stroke="#3d7760" stroke-width="2" stroke-linecap="round"/>
+    <text x="501" y="72" fill="#3d5060" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Simülasyon</text>
+    <text x="501" y="89" fill="#637581" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Model · Deney</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="70" y="214" width="120" height="68" rx="17" fill="#eee5f8"/>
+    <rect x="79" y="224" width="31" height="31" rx="10" fill="#c7addf"/>
+    <path d="M86 246 L91 240 L95 244 L102 234" fill="none" stroke="#73528e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="120" y="241" fill="#3d5060" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Telemetri</text>
+    <text x="120" y="258" fill="#637581" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Open MCT</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="450" y="214" width="120" height="68" rx="17" fill="#fde8e2"/>
+    <rect x="459" y="224" width="31" height="31" rx="10" fill="#efb29d"/>
+    <path d="M467 236 H482 M467 242 H478 M467 248 H481" fill="none" stroke="#9a5948" stroke-width="2.1" stroke-linecap="round"/>
+    <text x="500" y="241" fill="#3d5060" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Doğrulama</text>
+    <text x="500" y="258" fill="#637581" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Test · Katkı</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="252" y="105" width="136" height="104" rx="25" fill="url(#core)" stroke="#b3c8e1" stroke-width="1.2"/>
+    <circle cx="320" cy="142" r="27" fill="#ffffff" opacity="0.82"/>
+    <path d="M309 134 L302 142 L309 150 M331 134 L338 142 L331 150 M324 130 L316 154" fill="none" stroke="#4f7297" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="320" y="181" text-anchor="middle" fill="#36556f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Açık Kaynak</text>
+    <text x="320" y="197" text-anchor="middle" fill="#5e7890" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">NASA Depoları</text>
+  </g>
+
+  <path d="M320 211 L320 232" fill="none" stroke="#6e8da5" stroke-width="2.5"/>
+  <polygon points="314,229 326,229 320,239" fill="#6e8da5"/>
+
+  <g filter="url(#soft)">
+    <rect x="225" y="239" width="190" height="57" rx="18" fill="#ffffff"/>
+    <circle cx="247" cy="267" r="15" fill="#dceef0"/>
+    <path d="M247 256 A11 11 0 1 1 237 270" fill="none" stroke="#548497" stroke-width="1.8"/>
+    <path d="M237 270 L236 264 L242 267" fill="#548497"/>
+    <text x="274" y="262" fill="#3b596c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yeniden Üretilebilirlik</text>
+    <text x="274" y="280" fill="#637b89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Veri · Sürüm · Ortam</text>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="320" cy="34" r="12" fill="#d9edf5"/>
+    <path d="M313 34 H327 M320 27 V41 M315 29 L325 39 M325 29 L315 39" stroke="#6691a8" stroke-width="1.3"/>
+    <text x="320" y="17" text-anchor="middle" fill="#638091" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Bilimsel Kod</text>
+  </g>
+</svg>

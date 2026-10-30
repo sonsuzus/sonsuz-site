@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="appGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5efff"/>
+      <stop offset="100%" stop-color="#d6e5fb"/>
+    </linearGradient>
+    <linearGradient id="bankGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff5ec"/>
+      <stop offset="100%" stop-color="#caeadc"/>
+    </linearGradient>
+    <linearGradient id="secureGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3d9"/>
+      <stop offset="100%" stop-color="#fbe5ba"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-35%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66809a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="47" cy="42" r="74" fill="#dceeff" opacity="0.48"/>
+  <circle cx="590" cy="287" r="93" fill="#dcf2df" opacity="0.43"/>
+
+  <text x="320" y="29" text-anchor="middle" fill="#294765" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Açık Bankacılık API Akışı</text>
+  <text x="320" y="47" text-anchor="middle" fill="#6c8295" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İzinli, güvenli ve doğrulanabilir iletişim</text>
+
+  <path d="M169 151 H213" fill="none" stroke="#7191ad" stroke-width="2.2"/>
+  <polygon points="213,151 204,146 204,156" fill="#7191ad"/>
+  <path d="M331 151 H378" fill="none" stroke="#7191ad" stroke-width="2.2"/>
+  <polygon points="378,151 369,146 369,156" fill="#7191ad"/>
+  <path d="M494 151 H535" fill="none" stroke="#7191ad" stroke-width="2.2"/>
+  <polygon points="535,151 526,146 526,156" fill="#7191ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="46" y="105" width="123" height="93" rx="18" fill="url(#appGrad)" stroke="#bfd4ed"/>
+  </g>
+  <rect x="72" y="120" width="42" height="31" rx="6" fill="#ffffff" stroke="#779bc1" stroke-width="1.5"/>
+  <path d="M79 145 H107 M85 151 H101" stroke="#779bc1" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="124" cy="137" r="13" fill="#8eb1d7"/>
+  <path d="M118 137 L123 142 L131 132" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="108" y="174" text-anchor="middle" fill="#294765" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Uygulama</text>
+  <text x="108" y="188" text-anchor="middle" fill="#58738b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İstek oluşturur</text>
+
+  <g filter="url(#shadow)">
+    <rect x="213" y="105" width="118" height="93" rx="18" fill="url(#secureGrad)" stroke="#efd39b"/>
+  </g>
+  <path d="M259 122 C249 122 244 129 244 136 V144 H274 V136 C274 129 269 122 259 122Z" fill="#e4ae52"/>
+  <rect x="240" y="138" width="38" height="28" rx="6" fill="#f7c96e"/>
+  <circle cx="259" cy="151" r="3.5" fill="#8c6427"/>
+  <path d="M259 154 V159" stroke="#8c6427" stroke-width="2" stroke-linecap="round"/>
+  <text x="272" y="174" text-anchor="middle" fill="#684c1d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">OAuth 2.0</text>
+  <text x="272" y="188" text-anchor="middle" fill="#876b3d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İzin ve belirteç</text>
+
+  <g filter="url(#shadow)">
+    <rect x="378" y="95" width="116" height="113" rx="18" fill="url(#bankGrad)" stroke="#b4dccb"/>
+  </g>
+  <path d="M407 131 L436 115 L465 131 Z" fill="#61a983"/>
+  <path d="M411 133 V161 M423 133 V161 M436 133 V161 M449 133 V161 M461 133 V161" stroke="#478c6b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M404 164 H468" stroke="#478c6b" stroke-width="5" stroke-linecap="round"/>
+  <text x="436" y="183" text-anchor="middle" fill="#245c46" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Banka API</text>
+  <text x="436" y="197" text-anchor="middle" fill="#4f7c6b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kontrol ve işlem</text>
+
+  <g filter="url(#shadow)">
+    <rect x="535" y="105" width="70" height="93" rx="18" fill="#f1e6fb" stroke="#d8c2ec"/>
+  </g>
+  <circle cx="570" cy="137" r="18" fill="#b38ad4"/>
+  <path d="M561 137 L568 144 L580 130" fill="none" stroke="#ffffff" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="570" y="174" text-anchor="middle" fill="#5e3d79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Yanıt</text>
+  <text x="570" y="188" text-anchor="middle" fill="#826598" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Durum</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="48" y="237" width="154" height="48" rx="14" fill="#ffffff" stroke="#d6e2ed"/>
+  </g>
+  <path d="M69 251 V270 M62 258 H76 M83 255 H111 M83 265 H104" stroke="#5791bf" stroke-width="2" stroke-linecap="round"/>
+  <text x="131" y="258" text-anchor="middle" fill="#315c7e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">REST İsteği</text>
+  <text x="131" y="273" text-anchor="middle" fill="#6b8293" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">GET veya POST</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="243" y="237" width="154" height="48" rx="14" fill="#ffffff" stroke="#d6e2ed"/>
+  </g>
+  <path d="M264 269 C264 254 279 252 281 258 C284 250 297 254 297 263 C297 271 286 272 281 272 H270" fill="none" stroke="#d08a53" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="270,272 276,267 276,277" fill="#d08a53"/>
+  <text x="332" y="258" text-anchor="middle" fill="#725338" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Webhook</text>
+  <text x="332" y="273" text-anchor="middle" fill="#88725e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Durum bildirimi</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="438" y="237" width="154" height="48" rx="14" fill="#ffffff" stroke="#d6e2ed"/>
+  </g>
+  <path d="M458 254 H477 V273 H458 Z M462 259 H473 M462 264 H473" fill="none" stroke="#69966f" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M484 260 H503 M499 256 L503 260 L499 264 M503 269 H484 M488 265 L484 269 L488 273" fill="none" stroke="#69966f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="528" y="258" text-anchor="middle" fill="#406748" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Mutabakat</text>
+  <text x="528" y="273" text-anchor="middle" fill="#6e8872" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kayıt karşılaştırma</text>
+
+  <path d="M108 207 V222 H320 V230" fill="none" stroke="#a6b8c7" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <polygon points="320,230 315,222 325,222" fill="#a6b8c7"/>
+  <path d="M436 217 V228" fill="none" stroke="#a6b8c7" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <polygon points="436,228 431,220 441,220" fill="#a6b8c7"/>
+</svg>
