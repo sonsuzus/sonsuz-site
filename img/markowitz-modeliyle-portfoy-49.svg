@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfe9ff"/>
+      <stop offset="100%" stop-color="#cadcff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7184a6" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#69807a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="560" cy="46" r="74" fill="#d8f1e5" opacity="0.42"/>
+  <circle cx="78" cy="286" r="80" fill="#dce9ff" opacity="0.45"/>
+
+  <text x="28" y="31" fill="#42536e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">MARKOWITZ PORTFÖY OPTİMİZASYONU</text>
+  <path d="M28 40 H612" stroke="#cbd9e5" stroke-width="1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="72" width="132" height="63" rx="16" fill="#ffffff"/>
+    <rect x="28" y="149" width="132" height="63" rx="16" fill="#ffffff"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34445e">
+    <text x="51" y="98" font-weight="700">Beklenen Getiri</text>
+    <text x="51" y="117" fill="#69809a">μ vektörü</text>
+    <text x="51" y="175" font-weight="700">Kovaryans</text>
+    <text x="51" y="194" fill="#69809a">Σ matrisi</text>
+  </g>
+
+  <g stroke="#8cb3a6" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M177 103 H216"/>
+    <path d="M177 180 H216"/>
+  </g>
+  <polygon points="216,103 207,98 207,108" fill="#8cb3a6"/>
+  <polygon points="216,180 207,175 207,185" fill="#8cb3a6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="222" y="73" width="183" height="139" rx="23" fill="url(#core)" stroke="#b8cbed"/>
+  </g>
+  <circle cx="313.5" cy="114" r="25" fill="#ffffff" opacity="0.82"/>
+  <path d="M299 114 C304 103 314 102 320 108 C327 115 324 126 315 130 C304 128 297 123 299 114Z" fill="#7897d5"/>
+  <path d="M305 113 L311 119 L322 108" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="313.5" y="158" text-anchor="middle" fill="#344867" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">SLSQP Optimizasyon</text>
+  <text x="313.5" y="180" text-anchor="middle" fill="#58708f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">min: wᵀΣw</text>
+  <text x="313.5" y="199" text-anchor="middle" fill="#58708f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Σw = 1 · w ≥ 0</text>
+
+  <g stroke="#829bcd" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M411 112 H446"/>
+    <path d="M411 175 H446"/>
+  </g>
+  <polygon points="446,112 437,107 437,117" fill="#829bcd"/>
+  <polygon points="446,175 437,170 437,180" fill="#829bcd"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="452" y="75" width="160" height="57" rx="16" fill="#fffdf6"/>
+    <rect x="452" y="146" width="160" height="57" rx="16" fill="#ffffff"/>
+  </g>
+  <circle cx="476" cy="104" r="12" fill="#f8dca0"/>
+  <path d="M470 105 L475 110 L484 98" fill="none" stroke="#a56b24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="496" y="100" fill="#40536e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Ağırlıklar</text>
+  <text x="496" y="117" fill="#71819a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Dağıtım oranları</text>
+
+  <circle cx="476" cy="175" r="12" fill="#bce6d2"/>
+  <path d="M469 178 C472 169 476 181 480 172 C483 168 485 171 486 173" fill="none" stroke="#39856d" stroke-width="2" stroke-linecap="round"/>
+  <text x="496" y="171" fill="#40536e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Risk ve Getiri</text>
+  <text x="496" y="188" fill="#71819a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Dengeli portföy</text>
+
+  <g filter="url(#shadow)">
+    <rect x="97" y="239" width="446" height="62" rx="18" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <text x="121" y="263" fill="#50617b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Etkin Sınır</text>
+  <path d="M208 283 H497 M208 283 V249" stroke="#b8c9d5" stroke-width="1.4"/>
+  <text x="201" y="250" text-anchor="end" fill="#82909f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Getiri</text>
+  <text x="499" y="297" fill="#82909f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Risk</text>
+  <path d="M224 279 C253 276 274 267 292 256 C311 244 333 244 349 254 C370 267 394 264 421 253 C445 243 465 236 486 232" fill="none" stroke="#5e9d88" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="292" cy="256" r="5" fill="#ffffff" stroke="#4e8b78" stroke-width="3"/>
+  <circle cx="421" cy="253" r="5" fill="#ffffff" stroke="#4e8b78" stroke-width="3"/>
+  <text x="258" y="297" fill="#658275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">En düşük risk</text>
+</svg>

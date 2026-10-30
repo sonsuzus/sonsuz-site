@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f2faef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfe8ff"/>
+      <stop offset="1" stop-color="#ccefe4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#70859a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71869a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="78" cy="46" r="82" fill="#dcefff" opacity="0.42"/>
+  <circle cx="574" cy="277" r="106" fill="#dff3d9" opacity="0.45"/>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40566b">YEREL AÇIK KAYNAK AKILLI EV</text>
+
+  <path d="M172 104 C208 104 213 118 238 130" fill="none" stroke="#82a5b9" stroke-width="2"/>
+  <polygon points="238,130 229,125 231,135" fill="#82a5b9"/>
+  <path d="M172 216 C208 216 213 202 238 190" fill="none" stroke="#82a5b9" stroke-width="2"/>
+  <polygon points="238,190 231,185 229,195" fill="#82a5b9"/>
+
+  <path d="M402 130 C429 117 443 104 469 104" fill="none" stroke="#729cb1" stroke-width="2"/>
+  <polygon points="469,104 459,99 461,109" fill="#729cb1"/>
+  <path d="M402 190 C429 203 443 216 469 216" fill="none" stroke="#729cb1" stroke-width="2"/>
+  <polygon points="469,216 461,211 459,221" fill="#729cb1"/>
+
+  <path d="M320 243 L320 269" fill="none" stroke="#79a48d" stroke-width="2"/>
+  <polygon points="320,269 315,259 325,259" fill="#79a48d"/>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="67" width="144" height="75" rx="17" fill="#ffffff"/>
+    <rect x="28" y="67" width="7" height="75" rx="3.5" fill="#84cdbd"/>
+    <circle cx="62" cy="104" r="18" fill="#def4ee"/>
+    <path d="M62 91 L62 108" stroke="#4c9f91" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="62" cy="113" r="5" fill="#4c9f91"/>
+    <path d="M52 95 C48 101 48 108 52 114" fill="none" stroke="#4c9f91" stroke-width="2" stroke-linecap="round"/>
+    <text x="92" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556a">Sensörler</text>
+    <text x="92" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637b89">Sıcaklık • Hareket</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="179" width="144" height="75" rx="17" fill="#ffffff"/>
+    <rect x="28" y="179" width="7" height="75" rx="3.5" fill="#9bb8ec"/>
+    <circle cx="62" cy="216" r="18" fill="#e5edff"/>
+    <path d="M52 217 C52 208 57 203 64 203 C70 203 73 207 73 212 C78 212 81 215 81 220 C81 225 77 228 72 228 L55 228 C51 228 48 224 48 221 C48 219 50 217 52 217Z" fill="#7297dc"/>
+    <text x="92" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556a">Yerel Veri</text>
+    <text x="92" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637b89">İnternetsiz çalışma</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="238" y="84" width="164" height="138" rx="24" fill="url(#core)" stroke="#b4d5d1"/>
+    <rect x="260" y="103" width="120" height="36" rx="11" fill="#ffffff" opacity="0.82"/>
+    <circle cx="278" cy="121" r="9" fill="#dc6e82"/>
+    <circle cx="278" cy="121" r="3" fill="#ffffff"/>
+    <text x="294" y="125" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556a">Raspberry Pi</text>
+    <path d="M270 155 H370" stroke="#93b7b2" stroke-width="1"/>
+    <text x="320" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416176">MQTT • Otomasyon</text>
+    <text x="320" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547080">Home Assistant</text>
+    <circle cx="270" cy="207" r="3" fill="#71bba9"/>
+    <circle cx="282" cy="207" r="3" fill="#7fa9e1"/>
+    <circle cx="294" cy="207" r="3" fill="#e4a367"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="469" y="67" width="143" height="75" rx="17" fill="#ffffff"/>
+    <rect x="605" y="67" width="7" height="75" rx="3.5" fill="#f0b570"/>
+    <circle cx="502" cy="104" r="18" fill="#fff0d8"/>
+    <path d="M502 89 C495 96 493 103 496 111 C498 116 498 120 495 123 H509 C506 120 506 116 508 111 C511 103 509 96 502 89Z" fill="#e8a64e"/>
+    <path d="M497 126 H507" stroke="#c17d2b" stroke-width="3" stroke-linecap="round"/>
+    <text x="531" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556a">Eyleyiciler</text>
+    <text x="531" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637b89">Lamba • Röle</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="469" y="179" width="143" height="75" rx="17" fill="#ffffff"/>
+    <rect x="605" y="179" width="7" height="75" rx="3.5" fill="#bd9dde"/>
+    <circle cx="502" cy="216" r="18" fill="#f0e7fb"/>
+    <path d="M493 213 H511 V222 H493Z" fill="#9672bd"/>
+    <path d="M497 209 V205 H507 V209" fill="none" stroke="#9672bd" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="498" cy="217" r="1.5" fill="#ffffff"/>
+    <circle cx="506" cy="217" r="1.5" fill="#ffffff"/>
+    <text x="531" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556a">Tek Panel</text>
+    <text x="531" y="229" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637b89">Uzaktan kontrol</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="219" y="269" width="202" height="35" rx="14" fill="#ffffff"/>
+    <path d="M242 287 L248 293 L260 280" fill="none" stroke="#62a77b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="274" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486b5a">Güvenli • Yedekli • Özgür</text>
+  </g>
+
+  <text x="188" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">ölçüm</text>
+  <text x="417" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">komut</text>
+</svg>
