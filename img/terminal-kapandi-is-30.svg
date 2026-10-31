@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b6f86"/>
+      <stop offset="100%" stop-color="#405369"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#5d7890" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#57708a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="590" cy="42" r="70" fill="#dceff0" opacity="0.46"/>
+  <circle cx="55" cy="287" r="84" fill="#e5eafa" opacity="0.52"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536a">Arka plan ve oturum bağımsızlığı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="222" y="48" width="196" height="78" rx="16" fill="url(#terminal)"/>
+    <circle cx="244" cy="67" r="4" fill="#ffb7ad"/>
+    <circle cx="258" cy="67" r="4" fill="#f9d888"/>
+    <circle cx="272" cy="67" r="4" fill="#a8dfb0"/>
+    <text x="320" y="93" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Terminal ve Kabuk</text>
+    <text x="320" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#dce8f2">uzun süren görev</text>
+  </g>
+
+  <path d="M283 128 L193 162" fill="none" stroke="#8093aa" stroke-width="2.5"/>
+  <polygon points="187,165 199,166 194,156" fill="#8093aa"/>
+  <path d="M357 128 L447 162" fill="none" stroke="#8093aa" stroke-width="2.5"/>
+  <polygon points="453,165 446,156 441,166" fill="#8093aa"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="50" y="169" width="244" height="91" rx="18" fill="#fff4f1" stroke="#f2d3cc"/>
+    <rect x="69" y="186" width="72" height="29" rx="10" fill="#f5b7ab"/>
+    <text x="105" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#743d3b">&amp; işareti</text>
+    <text x="158" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c6570">Kabuk beklemez</text>
+    <line x1="72" y1="227" x2="272" y2="227" stroke="#ead4d0"/>
+    <path d="M95 240 L206 240" fill="none" stroke="#d78072" stroke-width="2.5"/>
+    <polygon points="213,240 203,234 203,246" fill="#d78072"/>
+    <text x="226" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#b2544b">SIGHUP</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="346" y="169" width="244" height="91" rx="18" fill="#edfaf2" stroke="#cae9d5"/>
+    <rect x="365" y="186" width="78" height="29" rx="10" fill="#9bd8b2"/>
+    <text x="404" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245c43">nohup</text>
+    <text x="460" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b60">Sinyali yok say</text>
+    <line x1="368" y1="227" x2="568" y2="227" stroke="#d4e9da"/>
+    <path d="M391 240 L441 240" fill="none" stroke="#59a77a" stroke-width="2.5"/>
+    <polygon points="448,240 438,234 438,246" fill="#59a77a"/>
+    <rect x="460" y="231" width="82" height="19" rx="7" fill="#d8f1e1"/>
+    <text x="501" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#337451">Çalışmaya devam</text>
+  </g>
+
+  <path d="M171 263 L171 281" fill="none" stroke="#bd796f" stroke-width="2"/>
+  <polygon points="171,287 166,278 176,278" fill="#bd796f"/>
+  <path d="M469 263 L469 281" fill="none" stroke="#5a9a75" stroke-width="2"/>
+  <polygon points="469,287 464,278 474,278" fill="#5a9a75"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="84" y="288" width="174" height="24" rx="10" fill="#f9deda"/>
+    <circle cx="102" cy="300" r="6" fill="#d96f64"/>
+    <path d="M99 297 L105 303 M105 297 L99 303" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="177" y="304" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8e4843">Terminal kapanırsa bitebilir</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="382" y="288" width="174" height="24" rx="10" fill="#dff3e6"/>
+    <circle cx="400" cy="300" r="6" fill="#58aa78"/>
+    <path d="M397 300 L399 302 L404 297" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="475" y="304" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#317050">Günlük dosyasına yaz</text>
+  </g>
+</svg>

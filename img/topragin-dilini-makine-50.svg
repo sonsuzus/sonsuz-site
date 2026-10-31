@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="soilGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cfa976"/>
+      <stop offset="100%" stop-color="#a97851"/>
+    </linearGradient>
+    <linearGradient id="modelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8e9be8"/>
+      <stop offset="100%" stop-color="#707fc9"/>
+    </linearGradient>
+    <linearGradient id="planGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b7df99"/>
+      <stop offset="100%" stop-color="#89bd70"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#60728b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#60728b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="48" r="80" fill="#dceeff" opacity="0.42"/>
+  <circle cx="586" cy="284" r="105" fill="#dff2d7" opacity="0.45"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#486078">TOPRAKTAN AKILLI KARARA</text>
+  <path d="M32 39 H608" stroke="#cbdbe4" stroke-width="1"/>
+
+  <path d="M178 164 H218" stroke="#88a0b0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="218,164 209,158 209,170" fill="#88a0b0"/>
+  <path d="M405 164 H442" stroke="#88a0b0" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="442,164 433,158 433,170" fill="#88a0b0"/>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="75" width="146" height="180" rx="22" fill="#ffffff"/>
+  </g>
+  <text x="54" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6475">Tarla verileri</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="49" y="119" width="112" height="43" rx="12" fill="#e6d2b9"/>
+    <path d="M60 151 C72 140 83 156 95 146 S119 153 132 144 S145 150 151 142" fill="none" stroke="#9a6d50" stroke-width="2"/>
+    <text x="106" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#654a3a">Toprak analizi</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="49" y="174" width="52" height="54" rx="12" fill="#d9edcf"/>
+    <path d="M74 211 V186 M74 196 C62 190 61 182 70 185 C75 187 76 191 74 196 M74 204 C86 198 89 190 80 192 C75 193 73 198 74 204" fill="none" stroke="#5c9566" stroke-width="2" stroke-linecap="round"/>
+    <text x="75" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c5a">Ürün</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="109" y="174" width="52" height="54" rx="12" fill="#d9eafa"/>
+    <circle cx="135" cy="194" r="8" fill="#f7c968"/>
+    <path d="M135 181 V177 M135 211 V207 M122 194 H118 M152 194 H148 M126 185 L123 182 M144 203 L147 206 M144 185 L147 182 M126 203 L123 206" stroke="#728aa0" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="135" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526c6d">İklim</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="63" width="187" height="201" rx="26" fill="#ffffff"/>
+  </g>
+  <text x="311.5" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6475">Öğrenme ve tahmin</text>
+
+  <circle cx="311" cy="160" r="49" fill="url(#modelGrad)" filter="url(#softShadow)"/>
+  <circle cx="311" cy="160" r="36" fill="#ffffff" opacity="0.18"/>
+  <circle cx="291" cy="145" r="5" fill="#ffffff"/>
+  <circle cx="329" cy="141" r="5" fill="#dbe6ff"/>
+  <circle cx="320" cy="178" r="5" fill="#e5f1de"/>
+  <path d="M295 147 L325 142 L318 175 L295 147 M295 147 L318 175" fill="none" stroke="#ffffff" stroke-width="1.7" opacity="0.9"/>
+  <text x="311" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Model</text>
+
+  <rect x="242" y="224" width="139" height="23" rx="11" fill="#eef2ff"/>
+  <text x="311.5" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#596aa6">Verim tahmini</text>
+
+  <g filter="url(#shadow)">
+    <rect x="442" y="75" width="166" height="180" rx="22" fill="#ffffff"/>
+  </g>
+  <text x="463" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6475">Aday stratejiler</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="462" y="120" width="126" height="32" rx="10" fill="#eff6eb"/>
+    <rect x="471" y="128" width="15" height="15" rx="4" fill="#91c574"/>
+    <text x="496" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#546f55">Doz seçenekleri</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="462" y="161" width="126" height="32" rx="10" fill="#fff3db"/>
+    <path d="M472 184 V171 H481 V184 M470 184 H483" fill="none" stroke="#c59548" stroke-width="1.5"/>
+    <text x="496" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#786142">Maliyet ve getiri</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="462" y="203" width="126" height="35" rx="10" fill="url(#planGrad)"/>
+    <path d="M475 221 L480 226 L490 214" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="501" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Önerilen plan</text>
+  </g>
+
+  <path d="M85 276 H554" stroke="#d2e0df" stroke-width="1"/>
+  <g transform="translate(101 286)">
+    <circle cx="0" cy="0" r="5" fill="#cfa976"/>
+    <text x="11" y="4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647887">Ölçüm</text>
+  </g>
+  <g transform="translate(237 286)">
+    <circle cx="0" cy="0" r="5" fill="#7b89d4"/>
+    <text x="11" y="4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647887">Tahmin</text>
+  </g>
+  <g transform="translate(375 286)">
+    <circle cx="0" cy="0" r="5" fill="#90c574"/>
+    <text x="11" y="4" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647887">Ekonomik seçim</text>
+  </g>
+</svg>
