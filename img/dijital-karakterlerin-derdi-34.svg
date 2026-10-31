@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="agent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#ccefdc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d8797" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6d8797" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="158" r="121" fill="#dceffa" opacity="0.40"/>
+  <circle cx="319" cy="158" r="91" fill="#ffffff" opacity="0.38"/>
+
+  <path d="M171 86 C199 86 202 111 218 124" fill="none" stroke="#8aa6bc" stroke-width="2"/>
+  <polygon points="218,124 208,119 211,130" fill="#8aa6bc"/>
+  <path d="M170 160 L211 160" fill="none" stroke="#8aa6bc" stroke-width="2"/>
+  <polygon points="211,160 201,155 201,165" fill="#8aa6bc"/>
+  <path d="M171 234 C198 234 203 207 218 194" fill="none" stroke="#8aa6bc" stroke-width="2"/>
+  <polygon points="218,194 209,198 216,205" fill="#8aa6bc"/>
+
+  <path d="M356 126 C381 111 390 86 416 86" fill="none" stroke="#829bab" stroke-width="2"/>
+  <polygon points="416,86 406,81 409,92" fill="#829bab"/>
+  <path d="M363 160 L416 160" fill="none" stroke="#829bab" stroke-width="2"/>
+  <polygon points="416,160 406,155 406,165" fill="#829bab"/>
+  <path d="M356 194 C381 208 389 234 416 234" fill="none" stroke="#829bab" stroke-width="2"/>
+  <polygon points="416,234 406,229 409,240" fill="#829bab"/>
+
+  <path d="M494 111 C548 119 560 177 515 211" fill="none" stroke="#9ab29f" stroke-width="2" stroke-dasharray="5 5"/>
+  <polygon points="515,211 519,201 525,210" fill="#9ab29f"/>
+
+  <g filter="url(#shadow)">
+    <rect x="31" y="55" width="140" height="62" rx="16" fill="#fff4d9"/>
+    <rect x="31" y="129" width="140" height="62" rx="16" fill="#fce5e6"/>
+    <rect x="31" y="203" width="140" height="62" rx="16" fill="#eee6fb"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405267">
+    <text x="52" y="79" font-weight="700">İhtiyaçlar</text>
+    <text x="52" y="101">Açlık · Enerji · Sosyallik</text>
+    <text x="52" y="153" font-weight="700">Çevre</text>
+    <text x="52" y="175">Nesne · Mesafe · Yol</text>
+    <text x="52" y="227" font-weight="700">Kişilik</text>
+    <text x="52" y="249">Ağırlıklar · İlişkiler</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="100" width="145" height="121" rx="25" fill="url(#agent)" stroke="#b4d4dc"/>
+  </g>
+  <circle cx="290" cy="137" r="22" fill="#ffffff" opacity="0.78"/>
+  <circle cx="282" cy="134" r="3" fill="#66899a"/>
+  <circle cx="298" cy="134" r="3" fill="#66899a"/>
+  <path d="M281 145 Q290 152 299 145" fill="none" stroke="#66899a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M270 172 Q290 159 310 172 L315 194 Q290 207 265 194 Z" fill="#ffffff" opacity="0.72"/>
+  <text x="290" y="213" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385569">Ajan Durumu</text>
+
+  <g filter="url(#soft)">
+    <rect x="416" y="54" width="158" height="64" rx="16" fill="#e6f2ff"/>
+    <rect x="416" y="128" width="158" height="64" rx="16" fill="#e9f7e9"/>
+    <rect x="416" y="202" width="158" height="64" rx="16" fill="#fff0df"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405267">
+    <text x="437" y="78" font-weight="700">Fayda Puanı</text>
+    <text x="437" y="100">İhtiyaç × Etki − Süre</text>
+    <text x="437" y="152" font-weight="700">Eylem Seçimi</text>
+    <text x="437" y="174">En yüksek fayda</text>
+    <text x="437" y="226" font-weight="700">Sonuç ve Geri Bildirim</text>
+    <text x="437" y="248">İhtiyaçlar güncellenir</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="586" y="104" width="41" height="112" rx="14" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="11" fill="#536b75" text-anchor="middle">
+    <text x="606" y="129">Ye</text>
+    <text x="606" y="160">Uyu</text>
+    <text x="606" y="191">Sohbet</text>
+  </g>
+  <path d="M574 160 L584 160" stroke="#829bab" stroke-width="2"/>
+  <polygon points="584,160 576,155 576,165" fill="#829bab"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#547182">Yapay Yaşam · Dinamik Karar Döngüsü</text>
+  <text x="319" y="293" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8190">Tutarlı ihtiyaçlar · Beklenmedik hikâyeler</text>
+</svg>
