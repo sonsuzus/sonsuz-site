@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="sim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8edff"/>
+      <stop offset="100%" stop-color="#c7e5f4"/>
+    </linearGradient>
+    <linearGradient id="flight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8dcff"/>
+      <stop offset="100%" stop-color="#d7c5f4"/>
+    </linearGradient>
+    <linearGradient id="io" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff5dc"/>
+      <stop offset="100%" stop-color="#bee7c1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#52718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#52718a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="41" r="70" fill="#cbeafb" opacity="0.32"/>
+  <circle cx="579" cy="274" r="92" fill="#d9efd0" opacity="0.34"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">HARDWARE-IN-THE-LOOP DİJİTAL PROVA</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8090">Gerçek donanım · sanal araç · kapalı geri besleme</text>
+
+  <path d="M215 137 C238 106 261 97 286 98" fill="none" stroke="#5e87a5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="286,98 276,93 278,104" fill="#5e87a5"/>
+  <path d="M355 99 C385 99 407 109 425 137" fill="none" stroke="#5e87a5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="425,137 416,128 414,139" fill="#5e87a5"/>
+
+  <path d="M425 183 C401 211 380 220 354 221" fill="none" stroke="#5e87a5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="354,221 364,226 362,215" fill="#5e87a5"/>
+  <path d="M286 221 C257 219 235 208 215 183" fill="none" stroke="#5e87a5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="215,183 224,192 226,181" fill="#5e87a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="45" y="119" width="171" height="82" rx="19" fill="url(#sim)" stroke="#a6cfe5"/>
+    <rect x="255" y="76" width="130" height="70" rx="19" fill="url(#flight)" stroke="#c6afe8"/>
+    <rect x="424" y="119" width="171" height="82" rx="19" fill="url(#io)" stroke="#a5d5aa"/>
+    <rect x="255" y="180" width="130" height="70" rx="19" fill="#fff0d7" stroke="#eccd99"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#345066">
+    <text x="130" y="151" text-anchor="middle" font-weight="700">Gerçek Zamanlı</text>
+    <text x="130" y="169" text-anchor="middle" font-weight="700">Simülatör</text>
+    <text x="130" y="188" text-anchor="middle" fill="#587487">Araç ve çevre modeli</text>
+
+    <text x="320" y="106" text-anchor="middle" font-weight="700">Uçuş Bilgisayarı</text>
+    <text x="320" y="125" text-anchor="middle" fill="#654b86">Gerçek kart ve yazılım</text>
+
+    <text x="510" y="151" text-anchor="middle" font-weight="700">Arayüz Katmanı</text>
+    <text x="510" y="170" text-anchor="middle" fill="#4d7653">Giriş ve çıkış</text>
+    <text x="510" y="188" text-anchor="middle" fill="#4d7653">Dijital · analog</text>
+
+    <text x="320" y="210" text-anchor="middle" font-weight="700">Kayıt ve Doğrulama</text>
+    <text x="320" y="229" text-anchor="middle" fill="#84633a">İz · ölçüt · rapor</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="89" y="88" width="100" height="25" rx="12" fill="#ffffff" opacity="0.94"/>
+    <rect x="391" y="88" width="96" height="25" rx="12" fill="#ffffff" opacity="0.94"/>
+    <rect x="390" y="211" width="107" height="25" rx="12" fill="#ffffff" opacity="0.94"/>
+    <rect x="142" y="211" width="99" height="25" rx="12" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#49677b">
+    <text x="139" y="105" text-anchor="middle">Sensör verisi</text>
+    <text x="439" y="105" text-anchor="middle">Komutlar</text>
+    <text x="443" y="228" text-anchor="middle">Çıkış kayıtları</text>
+    <text x="191" y="228" text-anchor="middle">Model durumu</text>
+  </g>
+
+  <path d="M320 147 L320 178" stroke="#b58338" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="320,178 314,168 326,168" fill="#b58338"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="36" y="266" width="167" height="34" rx="14" fill="#ffe6e2" stroke="#efb7ae"/>
+    <rect x="220" y="266" width="199" height="34" rx="14" fill="#e8f1ff" stroke="#b9d1ee"/>
+    <rect x="437" y="266" width="167" height="34" rx="14" fill="#e5f5e3" stroke="#b8dfb6"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405d70">
+    <text x="119" y="288" text-anchor="middle" font-weight="600">Arıza enjeksiyonu</text>
+    <text x="319" y="288" text-anchor="middle" font-weight="600">Zaman bütçesi: model + iletişim + GÇ</text>
+    <text x="520" y="288" text-anchor="middle" font-weight="600">Tekrarlanabilir test</text>
+  </g>
+
+  <path d="M119 264 L119 248 L83 248 L83 202" fill="none" stroke="#d18a80" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="83,202 78,211 88,211" fill="#d18a80"/>
+  <path d="M319 264 L319 251" fill="none" stroke="#779cc3" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="319,251 314,260 324,260" fill="#779cc3"/>
+  <path d="M520 264 L520 247 L384 247" fill="none" stroke="#78a878" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="384,247 393,242 393,252" fill="#78a878"/>
+</svg>

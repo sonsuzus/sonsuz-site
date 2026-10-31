@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="sensor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9edff"/>
+      <stop offset="100%" stop-color="#c7dcf5"/>
+    </linearGradient>
+    <linearGradient id="bus" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8dcff"/>
+      <stop offset="100%" stop-color="#d4c2f2"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1c9"/>
+      <stop offset="100%" stop-color="#f5d998"/>
+    </linearGradient>
+    <linearGradient id="device" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3d5"/>
+      <stop offset="100%" stop-color="#bfe3bb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a2" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="48" r="74" fill="#d8edff" opacity="0.35"/>
+  <circle cx="583" cy="269" r="94" fill="#dff1d7" opacity="0.42"/>
+
+  <text x="36" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#526779">OLAY TABANLI EV OTOMASYONU</text>
+  <line x1="36" y1="42" x2="604" y2="42" stroke="#cbd9df" stroke-width="1"/>
+
+  <!-- connections -->
+  <path d="M151 157 H192" fill="none" stroke="#7795a7" stroke-width="2.2"/>
+  <polygon points="192,157 184,152 184,162" fill="#7795a7"/>
+  <path d="M303 157 H337" fill="none" stroke="#7795a7" stroke-width="2.2"/>
+  <polygon points="337,157 329,152 329,162" fill="#7795a7"/>
+  <path d="M455 143 H490" fill="none" stroke="#7795a7" stroke-width="2.2"/>
+  <polygon points="490,143 482,138 482,148" fill="#7795a7"/>
+  <path d="M455 171 C470 171 475 228 490 228" fill="none" stroke="#7795a7" stroke-width="2.2"/>
+  <polygon points="490,228 482,223 482,233" fill="#7795a7"/>
+
+  <!-- sensor -->
+  <g filter="url(#shadow)">
+    <rect x="37" y="111" width="114" height="92" rx="18" fill="url(#sensor)"/>
+    <rect x="47" y="121" width="94" height="72" rx="13" fill="#ffffff" opacity="0.42"/>
+  </g>
+  <circle cx="94" cy="145" r="18" fill="#7fa5ca" opacity="0.27"/>
+  <circle cx="94" cy="145" r="10" fill="#5a85ad"/>
+  <path d="M112 133 Q125 145 112 157" fill="none" stroke="#5a85ad" stroke-width="2" stroke-linecap="round"/>
+  <path d="M118 127 Q137 145 118 163" fill="none" stroke="#5a85ad" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <text x="94" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#355875">Hareket sensörü</text>
+
+  <!-- event bus -->
+  <g filter="url(#shadow)">
+    <rect x="192" y="111" width="111" height="92" rx="18" fill="url(#bus)"/>
+    <rect x="202" y="121" width="91" height="72" rx="13" fill="#ffffff" opacity="0.4"/>
+  </g>
+  <path d="M221 141 H274" fill="none" stroke="#705e9e" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="226" cy="141" r="5" fill="#8a70b9"/>
+  <circle cx="247" cy="141" r="5" fill="#8a70b9"/>
+  <circle cx="268" cy="141" r="5" fill="#8a70b9"/>
+  <path d="M221 154 H274" fill="none" stroke="#705e9e" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+  <circle cx="226" cy="154" r="5" fill="#8a70b9"/>
+  <circle cx="247" cy="154" r="5" fill="#8a70b9"/>
+  <circle cx="268" cy="154" r="5" fill="#8a70b9"/>
+  <text x="247" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#504173">Olay kuyruğu</text>
+
+  <!-- rule engine -->
+  <g filter="url(#shadow)">
+    <rect x="337" y="96" width="118" height="122" rx="18" fill="url(#rule)"/>
+    <rect x="347" y="106" width="98" height="102" rx="13" fill="#ffffff" opacity="0.38"/>
+  </g>
+  <path d="M373 132 H419" fill="none" stroke="#9a7428" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M396 118 V154" fill="none" stroke="#9a7428" stroke-width="2.3" stroke-linecap="round"/>
+  <circle cx="373" cy="132" r="5" fill="#bd912f"/>
+  <circle cx="419" cy="132" r="5" fill="#bd912f"/>
+  <circle cx="396" cy="118" r="5" fill="#bd912f"/>
+  <circle cx="396" cy="154" r="5" fill="#bd912f"/>
+  <text x="396" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#76551b">Kural motoru</text>
+  <text x="396" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#876b32">Gece ve durum</text>
+
+  <!-- lamp -->
+  <g filter="url(#shadow)">
+    <rect x="490" y="96" width="113" height="94" rx="18" fill="url(#device)"/>
+    <rect x="500" y="106" width="93" height="74" rx="13" fill="#ffffff" opacity="0.42"/>
+  </g>
+  <path d="M546 118 C532 118 525 128 525 140 C525 148 530 153 535 157 H557 C562 153 567 148 567 140 C567 128 560 118 546 118Z" fill="#f5c95f"/>
+  <rect x="537" y="157" width="18" height="5" rx="2.5" fill="#8b7956"/>
+  <rect x="539" y="164" width="14" height="4" rx="2" fill="#8b7956"/>
+  <path d="M546 108 V101 M522 116 L517 111 M570 116 L575 111" stroke="#d49e35" stroke-width="2" stroke-linecap="round"/>
+  <text x="546" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#416b43">Koridor lambası</text>
+
+  <!-- notification -->
+  <g filter="url(#smallShadow)">
+    <rect x="490" y="205" width="113" height="55" rx="16" fill="#dbeaff"/>
+    <rect x="499" y="213" width="95" height="39" rx="11" fill="#ffffff" opacity="0.4"/>
+  </g>
+  <rect x="510" y="218" width="17" height="25" rx="4" fill="#6692c2"/>
+  <rect x="513" y="221" width="11" height="16" rx="1.5" fill="#ecf6ff"/>
+  <circle cx="518.5" cy="240" r="1.5" fill="#ecf6ff"/>
+  <path d="M539 223 H577 M539 231 H568 M539 239 H573" stroke="#547ba4" stroke-width="2" stroke-linecap="round"/>
+  <text x="557" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#416786">Telefon bildirimi</text>
+
+  <!-- labels -->
+  <g filter="url(#smallShadow)">
+    <rect x="151" y="132" width="42" height="19" rx="8" fill="#ffffff"/>
+    <rect x="303" y="132" width="34" height="19" rx="8" fill="#ffffff"/>
+    <rect x="455" y="116" width="35" height="19" rx="8" fill="#ffffff"/>
+  </g>
+  <text x="172" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607382">olay</text>
+  <text x="320" y="146" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607382">işle</text>
+  <text x="472" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607382">komut</text>
+
+  <!-- verification loop -->
+  <path d="M546 190 V195 C546 201 473 201 473 189 V185" fill="none" stroke="#82aa88" stroke-width="1.7" stroke-dasharray="4 4"/>
+  <polygon points="473,185 469,192 477,192" fill="#82aa88"/>
+  <text x="510" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b8561">durum doğrulama</text>
+</svg>

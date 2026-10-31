@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dceafe"/>
+      <stop offset="100%" stop-color="#c9dcf7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7390a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f8c88" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="570" cy="52" r="92" fill="#d9f1e6" opacity="0.38"/>
+  <circle cx="85" cy="281" r="110" fill="#dcecff" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385268">Tarımsal Tedarik Karar Döngüsü</text>
+  <line x1="28" y1="41" x2="612" y2="41" stroke="#cadce1" stroke-width="1"/>
+
+  <!-- connector lines -->
+  <path d="M143 129 C171 129 178 131 202 139" fill="none" stroke="#74a78a" stroke-width="2.2"/>
+  <polygon points="202,139 194,134 195,143" fill="#74a78a"/>
+  <path d="M338 139 C366 129 378 111 403 103" fill="none" stroke="#668bb5" stroke-width="2.2"/>
+  <polygon points="403,103 394,100 397,109" fill="#668bb5"/>
+  <path d="M338 164 C369 177 379 199 403 207" fill="none" stroke="#668bb5" stroke-width="2.2"/>
+  <polygon points="403,207 397,200 394,209" fill="#668bb5"/>
+  <path d="M499 104 C525 108 534 124 554 133" fill="none" stroke="#d39165" stroke-width="2.2"/>
+  <polygon points="554,133 545,129 548,138" fill="#d39165"/>
+  <path d="M499 207 C523 203 535 188 554 181" fill="none" stroke="#d39165" stroke-width="2.2"/>
+  <polygon points="554,181 548,176 545,185" fill="#d39165"/>
+
+  <!-- feedback -->
+  <path d="M578 229 C557 282 405 290 317 258" fill="none" stroke="#aa79ae" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <polygon points="317,258 326,258 322,250" fill="#aa79ae"/>
+
+  <!-- farm -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="91" width="115" height="76" rx="16" fill="#e1f3e7"/>
+    <rect x="40" y="104" width="91" height="49" rx="11" fill="#f7fcf7" opacity="0.75"/>
+  </g>
+  <path d="M55 139 C57 126 62 118 70 114 C68 127 65 135 55 139Z" fill="#6eae74"/>
+  <path d="M73 142 C76 127 84 121 94 120 C89 133 84 140 73 142Z" fill="#80ba7c"/>
+  <path d="M51 143 H106" stroke="#71a96d" stroke-width="2"/>
+  <path d="M59 143 V151 M78 143 V151 M97 143 V151" stroke="#71a96d" stroke-width="1.5"/>
+  <text x="85.5" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416c4b">Çiftlik</text>
+  <text x="85.5" y="78" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#63816d">Hasat ve arz</text>
+
+  <!-- core -->
+  <g filter="url(#shadow)">
+    <rect x="202" y="96" width="136" height="132" rx="22" fill="url(#core)"/>
+    <rect x="214" y="108" width="112" height="108" rx="16" fill="#f8fbff" opacity="0.72"/>
+  </g>
+  <circle cx="270" cy="139" r="24" fill="#8eadd2"/>
+  <circle cx="270" cy="139" r="16" fill="#eaf3ff"/>
+  <path d="M258 139 H282 M270 127 V151" stroke="#5f84b0" stroke-width="2"/>
+  <circle cx="258" cy="139" r="3" fill="#5f84b0"/>
+  <circle cx="282" cy="139" r="3" fill="#5f84b0"/>
+  <circle cx="270" cy="127" r="3" fill="#5f84b0"/>
+  <circle cx="270" cy="151" r="3" fill="#5f84b0"/>
+  <text x="270" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385977">Optimizasyon</text>
+  <text x="270" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7691">maliyet · kapasite · kayıp</text>
+
+  <!-- warehouse K -->
+  <g filter="url(#smallShadow)">
+    <rect x="403" y="67" width="96" height="75" rx="15" fill="#fff0d8"/>
+    <rect x="414" y="78" width="74" height="43" rx="8" fill="#fff9ed"/>
+  </g>
+  <path d="M425 104 L438 91 L451 104 V114 H425Z" fill="#d79959"/>
+  <path d="M451 104 L464 91 L477 104 V114 H451Z" fill="#e5ac6f"/>
+  <path d="M432 106 V114 M458 106 V114 M470 106 V114" stroke="#fff4e3" stroke-width="1.5"/>
+  <text x="451" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#8a5b31">Depo K</text>
+
+  <!-- warehouse G -->
+  <g filter="url(#smallShadow)">
+    <rect x="403" y="174" width="96" height="75" rx="15" fill="#e4f2ed"/>
+    <rect x="414" y="185" width="74" height="43" rx="8" fill="#f6fcf9"/>
+  </g>
+  <path d="M425 211 L438 198 L451 211 V221 H425Z" fill="#6fa68c"/>
+  <path d="M451 211 L464 198 L477 211 V221 H451Z" fill="#8ab9a0"/>
+  <path d="M432 213 V221 M458 213 V221 M470 213 V221" stroke="#effaf4" stroke-width="1.5"/>
+  <text x="451" y="242" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#48745f">Depo G</text>
+
+  <!-- customers -->
+  <g filter="url(#shadow)">
+    <rect x="554" y="113" width="61" height="89" rx="17" fill="#fce6de"/>
+    <rect x="564" y="125" width="41" height="45" rx="8" fill="#fff7f3"/>
+  </g>
+  <circle cx="576" cy="140" r="5" fill="#d47c68"/>
+  <circle cx="594" cy="140" r="5" fill="#d47c68"/>
+  <path d="M568 158 C570 149 582 149 584 158 M586 158 C588 149 600 149 602 158" fill="none" stroke="#d47c68" stroke-width="2"/>
+  <text x="584.5" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#98584c">Müşteri</text>
+
+  <!-- simulation -->
+  <g filter="url(#smallShadow)">
+    <rect x="178" y="251" width="152" height="47" rx="14" fill="#eee4f5"/>
+  </g>
+  <path d="M197 275 C201 266 208 266 212 275 C216 284 223 284 227 275 C231 266 238 266 242 275" fill="none" stroke="#9674a2" stroke-width="2"/>
+  <text x="272" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#71527d">Senaryo Simülasyonu</text>
+  <text x="272" y="287" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6b94">talep · sıcaklık · gecikme</text>
+
+  <text x="544" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806787">Belirsizlik geri bildirimi</text>
+</svg>
