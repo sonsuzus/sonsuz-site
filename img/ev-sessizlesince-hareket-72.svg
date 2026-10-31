@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="sensorGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cce9fb"/>
+      <stop offset="100%" stop-color="#a9d8ee"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5ddfb"/>
+      <stop offset="100%" stop-color="#cabcf1"/>
+    </linearGradient>
+    <linearGradient id="scoreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0bd"/>
+      <stop offset="100%" stop-color="#f6d682"/>
+    </linearGradient>
+    <linearGradient id="careGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d5f2da"/>
+      <stop offset="100%" stop-color="#a9dfb5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5f7891" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5f7891" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="124" fill="#ffffff" opacity="0.35"/>
+  <circle cx="320" cy="160" r="103" fill="none" stroke="#c8dcea" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <path d="M158 160 L216 160" fill="none" stroke="#86a9bb" stroke-width="2.5"/>
+  <polygon points="216,160 207,155 207,165" fill="#86a9bb"/>
+  <path d="M302 160 L338 160" fill="none" stroke="#86a9bb" stroke-width="2.5"/>
+  <polygon points="338,160 329,155 329,165" fill="#86a9bb"/>
+  <path d="M424 160 L481 160" fill="none" stroke="#86a9bb" stroke-width="2.5"/>
+  <polygon points="481,160 472,155 472,165" fill="#86a9bb"/>
+
+  <path d="M259 111 C281 88 355 88 380 111" fill="none" stroke="#aa9bd5" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="380,111 371,107 374,116" fill="#aa9bd5"/>
+  <text x="319" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d6687">geçmiş rutin</text>
+
+  <path d="M380 210 C352 234 286 234 259 210" fill="none" stroke="#87b79a" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <polygon points="259,210 268,214 265,205" fill="#87b79a"/>
+  <text x="320" y="244" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d806c">kontrollü güncelleme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="112" width="123" height="96" rx="19" fill="url(#sensorGrad)"/>
+  </g>
+  <rect x="52" y="128" width="33" height="32" rx="10" fill="#f8fdff" opacity="0.9"/>
+  <circle cx="68.5" cy="143.5" r="7" fill="none" stroke="#5597b7" stroke-width="2"/>
+  <path d="M91 137 C103 142 103 150 91 155" fill="none" stroke="#5597b7" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M97 132 C115 141 115 151 97 160" fill="none" stroke="#5597b7" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="96.5" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#24546b">Hareket sensörü</text>
+  <text x="96.5" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477587">oda ve zaman</text>
+
+  <g filter="url(#shadow)">
+    <rect x="216" y="112" width="86" height="96" rx="19" fill="url(#dataGrad)"/>
+  </g>
+  <rect x="237" y="128" width="44" height="35" rx="8" fill="#faf8ff" opacity="0.9"/>
+  <path d="M247 141 H272 M247 149 H266 M247 157 H258" stroke="#7c69af" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="259" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#54447e">Yerel özet</text>
+  <text x="259" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71648f">aktif dakika</text>
+
+  <g filter="url(#shadow)">
+    <rect x="338" y="112" width="86" height="96" rx="19" fill="url(#scoreGrad)"/>
+  </g>
+  <path d="M356 158 L365 149 L373 153 L384 137 L402 144" fill="none" stroke="#a87824" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="356" cy="158" r="3" fill="#a87824"/>
+  <circle cx="365" cy="149" r="3" fill="#a87824"/>
+  <circle cx="373" cy="153" r="3" fill="#a87824"/>
+  <circle cx="384" cy="137" r="3" fill="#a87824"/>
+  <circle cx="402" cy="144" r="3" fill="#a87824"/>
+  <text x="381" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#78551a">Sapma puanı</text>
+  <text x="381" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#96722f">medyan ve MAD</text>
+
+  <g filter="url(#shadow)">
+    <rect x="481" y="112" width="124" height="96" rx="19" fill="url(#careGrad)"/>
+  </g>
+  <path d="M514 138 C514 132 523 130 527 136 C531 130 540 132 540 138 C540 147 527 154 527 154 C527 154 514 147 514 138Z" fill="#6aae7b"/>
+  <path d="M552 134 H578 C583 134 586 137 586 142 V154 C586 159 583 162 578 162 H562 L555 169 V162 H552 C547 162 544 159 544 154 V142 C544 137 547 134 552 134Z" fill="#f8fffa" stroke="#62a879" stroke-width="1.5"/>
+  <path d="M554 145 H578 M554 152 H570" stroke="#62a879" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="543" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#3f7150">Nazik iletişim</text>
+  <text x="543" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e8a6d">inceleme adayı</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="58" y="40" width="145" height="46" rx="14" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <path d="M77 66 L83 57 L89 66 L89 74 L77 74Z" fill="#82b8ca"/>
+  <path d="M80 66 H86" stroke="#f7ffff" stroke-width="1.4"/>
+  <text x="100" y="61" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#416575">Durum mesajı</text>
+  <text x="100" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66818c">sensör çevrimiçi</text>
+  <path d="M130 86 L183 111" fill="none" stroke="#86a9bb" stroke-width="1.6"/>
+  <polygon points="183,111 175,105 172,113" fill="#86a9bb"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="432" y="40" width="153" height="46" rx="14" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <path d="M453 54 L464 50 L475 54 V63 C475 70 464 76 464 76 C464 76 453 70 453 63Z" fill="#90c79c"/>
+  <path d="M459 62 L463 66 L470 58" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="484" y="61" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4d7558">Mahremiyet</text>
+  <text x="484" y="76" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8b74">yerelde özetleme</text>
+  <path d="M482 86 L408 111" fill="none" stroke="#86a9bb" stroke-width="1.6"/>
+  <polygon points="408,111 415,103 418,112" fill="#86a9bb"/>
+
+  <text x="320" y="281" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627b87">Sessizlik bir sonuç değil, değerlendirme bağlamıdır</text>
+</svg>

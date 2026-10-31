@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="simGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cae8ed"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#53708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#53708a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="39" r="55" fill="#d8edff" opacity="0.48"/>
+  <circle cx="597" cy="282" r="76" fill="#dcefd8" opacity="0.5"/>
+
+  <text x="30" y="30" fill="#3c5872" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">MONTE CARLO • FİNANSAL RİSK</text>
+  <text x="30" y="48" fill="#718598" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Binlerce olası gelecekten risk dağılımı</text>
+
+  <!-- flow lines -->
+  <path d="M158 158 L184 158" fill="none" stroke="#8ba6b8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="184,158 176,153 176,163" fill="#8ba6b8"/>
+  <path d="M347 158 L373 158" fill="none" stroke="#8ba6b8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="373,158 365,153 365,163" fill="#8ba6b8"/>
+  <path d="M478 158 L504 158" fill="none" stroke="#8ba6b8" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="504,158 496,153 496,163" fill="#8ba6b8"/>
+
+  <!-- inputs -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="94" width="128" height="128" rx="18" fill="#fffdf9"/>
+    <rect x="30" y="94" width="128" height="36" rx="18" fill="#eadff9"/>
+    <rect x="30" y="112" width="128" height="18" fill="#eadff9"/>
+  </g>
+  <text x="94" y="117" text-anchor="middle" fill="#5e4b79" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Model Girdileri</text>
+  <circle cx="53" cy="151" r="7" fill="#8c76b5"/>
+  <text x="68" y="155" fill="#506174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Portföy</text>
+  <circle cx="53" cy="178" r="7" fill="#80b6c8"/>
+  <text x="68" y="182" fill="#506174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Getiri ve oynaklık</text>
+  <circle cx="53" cy="205" r="7" fill="#db9e77"/>
+  <text x="68" y="209" fill="#506174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Korelasyon</text>
+
+  <!-- simulation -->
+  <g filter="url(#shadow)">
+    <rect x="184" y="77" width="163" height="162" rx="21" fill="url(#simGrad)"/>
+  </g>
+  <text x="265.5" y="107" text-anchor="middle" fill="#345b78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Rastgele Senaryolar</text>
+  <text x="265.5" y="125" text-anchor="middle" fill="#618098" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">N adet olası yol</text>
+  <rect x="204" y="142" width="123" height="70" rx="12" fill="#f9fdff" opacity="0.82"/>
+  <path d="M214 193 C225 174 230 190 239 165 S255 192 265 155 S279 180 289 150 S305 176 317 146" fill="none" stroke="#718eb6" stroke-width="2" stroke-linecap="round"/>
+  <path d="M214 199 C226 188 233 156 243 181 S258 144 270 188 S282 162 293 181 S304 151 317 171" fill="none" stroke="#dd9871" stroke-width="2" stroke-linecap="round"/>
+  <path d="M214 181 C226 183 233 170 244 173 S258 162 269 167 S284 152 294 159 S306 144 317 149" fill="none" stroke="#6da891" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="216" cy="222" r="3" fill="#7d9fbe"/>
+  <circle cx="229" cy="222" r="3" fill="#7d9fbe" opacity="0.7"/>
+  <circle cx="242" cy="222" r="3" fill="#7d9fbe" opacity="0.45"/>
+  <text x="255" y="226" fill="#638198" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">örnekleme</text>
+
+  <!-- terminal values -->
+  <g filter="url(#shadow)">
+    <rect x="373" y="94" width="105" height="128" rx="18" fill="#fffdf9"/>
+  </g>
+  <text x="425.5" y="119" text-anchor="middle" fill="#4e697b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Sonuçlar</text>
+  <line x1="395" y1="193" x2="460" y2="193" stroke="#abc0c8" stroke-width="1.4"/>
+  <rect x="398" y="171" width="8" height="22" rx="3" fill="#a4cae3"/>
+  <rect x="411" y="155" width="8" height="38" rx="3" fill="#8cbcd8"/>
+  <rect x="424" y="139" width="8" height="54" rx="3" fill="#74adc8"/>
+  <rect x="437" y="160" width="8" height="33" rx="3" fill="#91c2d6"/>
+  <rect x="450" y="177" width="8" height="16" rx="3" fill="#b1d4de"/>
+  <text x="425.5" y="210" text-anchor="middle" fill="#718596" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kayıp dağılımı</text>
+
+  <!-- risk -->
+  <g filter="url(#shadow)">
+    <rect x="504" y="77" width="108" height="162" rx="21" fill="#fff9f1"/>
+  </g>
+  <text x="558" y="107" text-anchor="middle" fill="#8a5d45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Risk Ölçümü</text>
+  <path d="M520 183 C528 180 530 164 536 151 C542 137 550 130 558 129 C568 128 575 144 580 160 C585 175 589 181 596 184" fill="none" stroke="#91a8bd" stroke-width="2.2"/>
+  <path d="M575 138 L575 190" stroke="#dd9b71" stroke-width="2" stroke-dasharray="4 3"/>
+  <path d="M587 154 L587 190" stroke="#ba7059" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="575" y="205" text-anchor="middle" fill="#a76d52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">VaR</text>
+  <text x="587" y="221" text-anchor="middle" fill="#945943" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">ES</text>
+
+  <!-- bottom insight -->
+  <g filter="url(#soft)">
+    <rect x="184" y="263" width="428" height="33" rx="13" fill="#e6f2e4"/>
+  </g>
+  <circle cx="205" cy="279.5" r="8" fill="#78aa83"/>
+  <path d="M201 280 L204 283 L210 276" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="221" y="284" fill="#4d7257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Stres testi: oynaklık ve korelasyon senaryolarını karşılaştır</text>
+</svg>

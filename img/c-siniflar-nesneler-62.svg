@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arka" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="kartMavi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6f1ff"/>
+      <stop offset="100%" stop-color="#d6e8fa"/>
+    </linearGradient>
+    <linearGradient id="kartYesil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f7ee"/>
+      <stop offset="100%" stop-color="#d1eddf"/>
+    </linearGradient>
+    <linearGradient id="kartTuruncu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3db"/>
+      <stop offset="100%" stop-color="#f9e4bd"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#71849a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#71849a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arka)"/>
+  <circle cx="548" cy="45" r="86" fill="#dff2ec" opacity="0.45"/>
+  <circle cx="73" cy="278" r="100" fill="#dfebfa" opacity="0.46"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38516b">C# REFERANS ve DURUM MODELİ</text>
+  <line x1="28" y1="39" x2="612" y2="39" stroke="#cfdae5" stroke-width="1"/>
+
+  <!-- Sol değişkenler -->
+  <g filter="url(#golge)">
+    <rect x="27" y="76" width="132" height="58" rx="15" fill="url(#kartMavi)" stroke="#b8d2ee"/>
+    <rect x="27" y="153" width="132" height="58" rx="15" fill="url(#kartMavi)" stroke="#b8d2ee"/>
+  </g>
+  <circle cx="49" cy="105" r="12" fill="#75aee4"/>
+  <path d="M44 104h10M49 99v10" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="70" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315678">hesap</text>
+  <text x="70" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53718b">referans</text>
+
+  <circle cx="49" cy="182" r="12" fill="#75aee4"/>
+  <path d="M44 181h10M49 176v10" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="70" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315678">ortak</text>
+  <text x="70" y="194" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53718b">aynı referans</text>
+
+  <!-- Bağlantılar ortak nesne -->
+  <path d="M159 105 C183 105 182 126 204 126" fill="none" stroke="#6398ca" stroke-width="2.2"/>
+  <polygon points="204,126 196,121 196,131" fill="#6398ca"/>
+  <path d="M159 182 C184 182 181 154 204 154" fill="none" stroke="#6398ca" stroke-width="2.2"/>
+  <polygon points="204,154 196,149 196,159" fill="#6398ca"/>
+
+  <!-- Ana nesne -->
+  <g filter="url(#golge)">
+    <rect x="205" y="77" width="204" height="133" rx="20" fill="url(#kartYesil)" stroke="#abd5bf" stroke-width="1.2"/>
+  </g>
+  <rect x="221" y="93" width="172" height="29" rx="10" fill="#a8d9bb"/>
+  <circle cx="240" cy="107.5" r="8" fill="#4f9b70"/>
+  <path d="M236 108h8M240 104v8" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="256" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#245f42">Hesap nesnesi</text>
+
+  <text x="225" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35634d">Bakiye</text>
+  <rect x="314" y="129" width="65" height="25" rx="8" fill="#fff" opacity="0.82"/>
+  <text x="328" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#27724c">60 ₺</text>
+  <line x1="224" y1="164" x2="390" y2="164" stroke="#b6dac5"/>
+  <rect x="224" y="174" width="166" height="24" rx="8" fill="#f8fffb" stroke="#b9dac7"/>
+  <text x="239" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#35634d">ParaCek(tutar, out kalan)</text>
+
+  <!-- İşlem oku -->
+  <path d="M410 144 C429 144 432 144 446 144" fill="none" stroke="#629879" stroke-width="2.2"/>
+  <polygon points="446,144 438,139 438,149" fill="#629879"/>
+
+  <!-- Metot kartı -->
+  <g filter="url(#hafifGolge)">
+    <rect x="447" y="101" width="165" height="87" rx="17" fill="url(#kartTuruncu)" stroke="#ead09a"/>
+  </g>
+  <text x="466" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7c5930">Metot sonucu</text>
+  <rect x="463" y="136" width="132" height="18" rx="7" fill="#fff8e9"/>
+  <text x="474" y="149" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6234">başarılı: doğru</text>
+  <rect x="463" y="160" width="132" height="18" rx="7" fill="#fff8e9"/>
+  <text x="474" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6234">out kalan: 60 ₺</text>
+
+  <!-- Alt ref senaryosu -->
+  <g filter="url(#golge)">
+    <rect x="27" y="239" width="583" height="59" rx="17" fill="#f8fbff" stroke="#cfdae8"/>
+  </g>
+  <text x="45" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#526a83">ref Yenile</text>
+  <text x="45" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718399">değişkenin referansı değişir</text>
+
+  <path d="M166 269 H245" fill="none" stroke="#8b75bf" stroke-width="2.2"/>
+  <polygon points="245,269 237,264 237,274" fill="#8b75bf"/>
+
+  <rect x="250" y="249" width="119" height="39" rx="11" fill="#eee7fa" stroke="#d0bfeb"/>
+  <text x="266" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#604685">hesap</text>
+  <text x="266" y="281" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765d98">yeni hedef</text>
+
+  <path d="M370 269 H416" fill="none" stroke="#8b75bf" stroke-width="2.2"/>
+  <polygon points="416,269 408,264 408,274" fill="#8b75bf"/>
+
+  <rect x="421" y="247" width="166" height="43" rx="12" fill="#e8f5ed" stroke="#b7d9c4"/>
+  <text x="438" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35634d">Yeni Hesap</text>
+  <text x="438" y="282" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547263">Bakiye: 0 ₺</text>
+
+  <path d="M534 227 C534 212 508 207 409 207" fill="none" stroke="#8ca3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="457" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687e93">ortak eski nesnede kalır</text>
+</svg>
