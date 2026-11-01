@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="camera" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bddcff"/>
+      <stop offset="100%" stop-color="#d7c9ff"/>
+    </linearGradient>
+    <linearGradient id="detect" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c9f0dc"/>
+      <stop offset="100%" stop-color="#abdfd0"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe6bd"/>
+      <stop offset="100%" stop-color="#f8cda9"/>
+    </linearGradient>
+    <linearGradient id="vector" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dfd2ff"/>
+      <stop offset="100%" stop-color="#c4b3ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6d8090" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#607080" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="83" cy="45" r="80" fill="#dceeff" opacity="0.48"/>
+  <circle cx="584" cy="288" r="105" fill="#dff0d6" opacity="0.48"/>
+  <path d="M40 160 C130 90 201 232 306 161 S467 88 597 160" fill="none" stroke="#b8cad1" stroke-width="2" stroke-dasharray="5 7" opacity="0.7"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526878" font-weight="600">EV GÜVENLİĞİ · KARAR AKIŞI</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="100" width="112" height="122" rx="22" fill="url(#camera)"/>
+  </g>
+  <rect x="42" y="122" width="57" height="42" rx="10" fill="#55799d"/>
+  <rect x="48" y="128" width="45" height="30" rx="7" fill="#bddffa"/>
+  <circle cx="70" cy="143" r="10" fill="#55799d"/>
+  <circle cx="70" cy="143" r="5" fill="#e8f7ff"/>
+  <path d="M100 133 L117 124 L117 162 L100 153 Z" fill="#55799d"/>
+  <path d="M51 183 Q70 165 91 183 L91 201 L51 201 Z" fill="#ffffff" opacity="0.78"/>
+  <circle cx="71" cy="178" r="8" fill="#8d6b5b" opacity="0.9"/>
+  <text x="84" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#314b61" font-weight="600">Kamera</text>
+
+  <path d="M145 160 L164 160" stroke="#7494a4" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="171,160 160,154 160,166" fill="#7494a4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="174" y="81" width="124" height="157" rx="22" fill="url(#detect)"/>
+  </g>
+  <rect x="190" y="105" width="92" height="78" rx="12" fill="#f8fffb" opacity="0.76"/>
+  <path d="M202 166 L202 129 L221 129 M270 129 L270 166 L251 166" fill="none" stroke="#4f9b83" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="236" cy="136" r="10" fill="#537d70"/>
+  <path d="M218 166 Q219 145 236 145 Q253 145 254 166 Z" fill="#7eaf9a"/>
+  <rect x="198" y="192" width="76" height="22" rx="11" fill="#ffffff" opacity="0.72"/>
+  <text x="236" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356e5d" font-weight="600">İnsan bulundu</text>
+  <text x="236" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d51">Nesne algılama</text>
+
+  <path d="M303 160 L322 160" stroke="#7494a4" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="329,160 318,154 318,166" fill="#7494a4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="332" y="81" width="124" height="157" rx="22" fill="url(#face)"/>
+  </g>
+  <rect x="349" y="102" width="90" height="84" rx="14" fill="#fffaf1" opacity="0.78"/>
+  <ellipse cx="394" cy="144" rx="24" ry="30" fill="#d99f7d"/>
+  <path d="M371 137 Q374 111 394 112 Q415 112 418 137 Q407 127 394 128 Q381 127 371 137" fill="#6d6271"/>
+  <circle cx="385" cy="143" r="2.2" fill="#4e4650"/>
+  <circle cx="403" cy="143" r="2.2" fill="#4e4650"/>
+  <path d="M388 158 Q394 162 400 158" fill="none" stroke="#9b5f58" stroke-width="2" stroke-linecap="round"/>
+  <path d="M358 119 L368 119 M358 119 L358 129 M430 119 L420 119 M430 119 L430 129 M358 169 L368 169 M358 169 L358 159 M430 169 L420 169 M430 169 L430 159" fill="none" stroke="#df805a" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="394" y="208" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#915c43" font-weight="600">Yüz ve hizalama</text>
+  <text x="394" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#915c43">Kalite kontrolü</text>
+
+  <path d="M461 160 L480 160" stroke="#7494a4" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="487,160 476,154 476,166" fill="#7494a4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="490" y="81" width="122" height="157" rx="22" fill="url(#vector)"/>
+  </g>
+  <text x="551" y="111" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#594981" font-weight="600">Özellik vektörü</text>
+  <g fill="#715f9d">
+    <rect x="510" y="126" width="9" height="25" rx="4"/>
+    <rect x="523" y="119" width="9" height="32" rx="4"/>
+    <rect x="536" y="133" width="9" height="18" rx="4"/>
+    <rect x="549" y="115" width="9" height="36" rx="4"/>
+    <rect x="562" y="128" width="9" height="23" rx="4"/>
+    <rect x="575" y="121" width="9" height="30" rx="4"/>
+  </g>
+  <path d="M509 169 C529 155 550 181 572 164 C581 158 589 158 596 164" fill="none" stroke="#7966a9" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="506" y="184" width="90" height="27" rx="13" fill="#fff" opacity="0.72"/>
+  <text x="551" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#594981" font-weight="600">Benzerlik skoru</text>
+
+  <path d="M551 242 L551 256" stroke="#7494a4" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="551,263 545,252 557,252" fill="#7494a4"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="430" y="266" width="102" height="38" rx="18" fill="#d3efda"/>
+    <circle cx="449" cy="285" r="8" fill="#54a875"/>
+    <path d="M445 285 L448 288 L454 281" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="486" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#367452" font-weight="600">Tanıdık</text>
+  </g>
+  <g filter="url(#smallShadow)">
+    <rect x="542" y="266" width="80" height="38" rx="18" fill="#ffe1d8"/>
+    <circle cx="560" cy="285" r="8" fill="#d7755f"/>
+    <path d="M557 282 L563 288 M563 282 L557 288" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="592" y="289" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a5145" font-weight="600">Bilinmiyor</text>
+  </g>
+
+  <path d="M531 248 C505 256 485 258 470 263" fill="none" stroke="#77a58b" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="465,266 473,257 475,268" fill="#77a58b"/>
+  <path d="M570 248 C582 254 589 257 592 263" fill="none" stroke="#c98a7c" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="593,266 586,257 598,258" fill="#c98a7c"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="257" width="355" height="43" rx="18" fill="#ffffff" opacity="0.78"/>
+  </g>
+  <circle cx="51" cy="278" r="11" fill="#f4c96a"/>
+  <path d="M51 271 L51 280 M51 285 L51 285" stroke="#795c19" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M45 276 Q51 267 57 276" fill="none" stroke="#795c19" stroke-width="2" stroke-linecap="round"/>
+  <text x="70" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526878" font-weight="600">Eşik ve tutarlılık</text>
+  <text x="70" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d7f8a">Emin değilse karar ertelenir</text>
+</svg>

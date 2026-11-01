@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c9ee8"/>
+      <stop offset="100%" stop-color="#5f7fd0"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708c" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" rx="20" fill="url(#bg)"/>
+  <path d="M22 261 C110 220 151 287 232 248 S375 228 454 260 S557 271 621 229" fill="none" stroke="#cde4d8" stroke-width="2" opacity="0.65"/>
+  <path d="M19 274 C103 238 158 299 245 266 S377 242 445 277 S552 288 621 249" fill="none" stroke="#d7e8f6" stroke-width="2" opacity="0.85"/>
+
+  <text x="28" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52657d" font-weight="600">KONUT FİYAT TAHMİNİ</text>
+  <text x="28" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8998aa">Şehir verisinden karar desteğine</text>
+
+  <!-- connectors -->
+  <path d="M159 111 C193 111 196 134 221 145" fill="none" stroke="#91a6bd" stroke-width="2"/>
+  <polygon points="221,145 211,139 214,151" fill="#91a6bd"/>
+  <path d="M159 194 C192 194 199 174 221 163" fill="none" stroke="#91a6bd" stroke-width="2"/>
+  <polygon points="221,163 214,157 217,169" fill="#91a6bd"/>
+  <path d="M363 153 L394 153" fill="none" stroke="#7795bd" stroke-width="2.5"/>
+  <polygon points="394,153 384,147 384,159" fill="#7795bd"/>
+  <path d="M478 199 L478 231" fill="none" stroke="#91a6bd" stroke-width="2"/>
+  <polygon points="478,231 472,221 484,221" fill="#91a6bd"/>
+
+  <!-- data cards -->
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="77" width="129" height="69" rx="15" fill="#fffdf8"/>
+    <rect x="30" y="77" width="7" height="69" rx="4" fill="#ecaa79"/>
+  </g>
+  <circle cx="58" cy="103" r="14" fill="#fde5d5"/>
+  <path d="M51 107 L51 98 L58 94 L65 98 L65 107 M55 107 L55 102 L61 102 L61 107" fill="none" stroke="#c97443" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="80" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f536c" font-weight="600">Konut kaydı</text>
+  <text x="80" y="121" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718198">Alan · yaş · tip</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="30" y="159" width="129" height="69" rx="15" fill="#fffdf8"/>
+    <rect x="30" y="159" width="7" height="69" rx="4" fill="#6ebca4"/>
+  </g>
+  <circle cx="58" cy="185" r="14" fill="#dff3e9"/>
+  <path d="M58 176 C53 176 50 180 50 185 C50 191 58 196 58 196 C58 196 66 191 66 185 C66 180 63 176 58 176 Z M58 182.5 A2.5 2.5 0 1 1 57.9 182.5" fill="none" stroke="#438c75" stroke-width="1.8"/>
+  <text x="80" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f536c" font-weight="600">Konum verisi</text>
+  <text x="80" y="203" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718198">Metro · okul · merkez</text>
+
+  <!-- feature construction -->
+  <g filter="url(#shadow)">
+    <rect x="221" y="104" width="142" height="99" rx="20" fill="#eaf2ff"/>
+  </g>
+  <circle cx="292" cy="133" r="22" fill="#d1e1fc"/>
+  <path d="M280 136 L287 129 L292 133 L302 122 M302 122 L302 128 M302 122 L296 122" fill="none" stroke="#527bc5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="292" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365986" font-weight="700">Özellik üretimi</text>
+  <text x="292" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6f88a9">Mesafe ve altyapı</text>
+
+  <!-- model -->
+  <g filter="url(#shadow)">
+    <rect x="394" y="88" width="168" height="111" rx="20" fill="url(#core)"/>
+  </g>
+  <rect x="413" y="108" width="38" height="38" rx="11" fill="#ffffff" opacity="0.2"/>
+  <path d="M422 136 L429 128 L435 132 L443 118 M421 142 L445 142" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="464" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">Regresyon modeli</text>
+  <text x="464" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e7efff">İlişkileri öğrenir</text>
+  <rect x="414" y="164" width="128" height="18" rx="9" fill="#ffffff" opacity="0.16"/>
+  <text x="478" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Ridge · Orman · Artırma</text>
+
+  <!-- forecast -->
+  <g filter="url(#smallShadow)">
+    <rect x="394" y="231" width="168" height="59" rx="16" fill="#fffdf8"/>
+  </g>
+  <circle cx="422" cy="260" r="17" fill="#fce7c9"/>
+  <text x="422" y="265" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ad7034" font-weight="700">₺</text>
+  <text x="451" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#43566f" font-weight="700">Fiyat tahmini</text>
+  <text x="451" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b899a">Karar desteği</text>
+
+  <!-- validation badge -->
+  <g filter="url(#smallShadow)">
+    <rect x="570" y="112" width="51" height="82" rx="16" fill="#edf8f3"/>
+  </g>
+  <path d="M595 128 L607 132 L605 150 C603 159 595 164 595 164 C595 164 587 159 585 150 L583 132 Z" fill="#ccebdc" stroke="#5ca784" stroke-width="1.5"/>
+  <path d="M589 146 L593 150 L601 141" fill="none" stroke="#398264" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="595" y="181" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4e7b68">MAE</text>
+
+  <path d="M562 153 L570 153" fill="none" stroke="#91a6bd" stroke-width="2"/>
+  <polygon points="570,153 560,147 560,159" fill="#91a6bd"/>
+
+  <text x="28" y="301" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8b9d">Bölgesel test</text>
+  <circle cx="119" cy="297" r="4" fill="#76b89d"/>
+  <text x="130" y="301" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8b9d">Veri sızıntısını önle</text>
+  <circle cx="278" cy="297" r="4" fill="#e6a56f"/>
+  <text x="289" y="301" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a8b9d">Hataları incele</text>
+</svg>
