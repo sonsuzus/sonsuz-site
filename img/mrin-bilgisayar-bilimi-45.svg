@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9fcbef"/>
+      <stop offset="100%" stop-color="#b7dfcb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7893a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#607b91" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M28 46 C130 10 177 38 232 25" fill="none" stroke="#c9e4ef" stroke-width="2" opacity="0.65"/>
+  <path d="M424 291 C502 263 564 281 619 240" fill="none" stroke="#cce8d2" stroke-width="2" opacity="0.7"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426278" font-weight="600">MR: sinyalden görüntüye</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="83" width="116" height="126" rx="18" fill="#dceefa"/>
+    <rect x="38" y="93" width="96" height="106" rx="13" fill="#edf7fd" stroke="#bddced"/>
+  </g>
+  <circle cx="86" cy="127" r="25" fill="#a9d3ed" opacity="0.62"/>
+  <ellipse cx="86" cy="127" rx="13" ry="25" fill="none" stroke="#477e9e" stroke-width="1.5"/>
+  <ellipse cx="86" cy="127" rx="25" ry="9" fill="none" stroke="#477e9e" stroke-width="1.5"/>
+  <path d="M56 155 C65 146 75 164 86 155 S106 146 116 155" fill="none" stroke="#6c9bb4" stroke-width="2"/>
+  <text x="86" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34576d" font-weight="600">Manyetik sinyal</text>
+
+  <path d="M150 146 L183 146" stroke="#789fb1" stroke-width="2.5"/>
+  <polygon points="183,140 194,146 183,152" fill="#789fb1"/>
+
+  <g filter="url(#soft)">
+    <rect x="195" y="96" width="116" height="100" rx="18" fill="#f7e9c9"/>
+    <rect x="205" y="106" width="96" height="80" rx="13" fill="#fff8e8" stroke="#ecd5a7"/>
+  </g>
+  <path d="M218 137 L232 137 L239 119 L248 158 L259 128 L268 145 L282 145" fill="none" stroke="#c48d34" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="222" cy="165" r="3" fill="#d7ab5c"/>
+  <circle cx="238" cy="165" r="3" fill="#d7ab5c"/>
+  <circle cx="254" cy="165" r="3" fill="#d7ab5c"/>
+  <circle cx="270" cy="165" r="3" fill="#d7ab5c"/>
+  <circle cx="286" cy="165" r="3" fill="#d7ab5c"/>
+  <text x="253" y="179" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#795b2e" font-weight="600">Örnekleme</text>
+
+  <path d="M317 146 L347 146" stroke="#789fb1" stroke-width="2.5"/>
+  <polygon points="347,140 358,146 347,152" fill="#789fb1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="359" y="72" width="124" height="148" rx="20" fill="#e5dcf5"/>
+    <rect x="370" y="83" width="102" height="126" rx="14" fill="#f5f1fc" stroke="#d2c4e9"/>
+  </g>
+  <text x="421" y="106" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#67517f" font-weight="600">K-uzayı</text>
+  <g opacity="0.94">
+    <path d="M389 122 H453 M389 134 H453 M389 146 H453 M389 158 H453 M389 170 H453 M389 182 H453" stroke="#b39ccc" stroke-width="1"/>
+    <path d="M389 122 V182 M402 122 V182 M415 122 V182 M428 122 V182 M441 122 V182 M453 122 V182" stroke="#b39ccc" stroke-width="1"/>
+    <circle cx="421" cy="152" r="14" fill="#7d61a9" opacity="0.75"/>
+    <circle cx="421" cy="152" r="6" fill="#f6d56f"/>
+    <circle cx="402" cy="134" r="3" fill="#9d82c0"/>
+    <circle cx="441" cy="170" r="3" fill="#9d82c0"/>
+    <circle cx="441" cy="134" r="2.5" fill="#9d82c0"/>
+    <circle cx="402" cy="170" r="2.5" fill="#9d82c0"/>
+  </g>
+  <text x="421" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#67517f">faz ve frekans</text>
+
+  <path d="M489 146 L519 146" stroke="#789fb1" stroke-width="2.5"/>
+  <polygon points="519,140 530,146 519,152" fill="#789fb1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="531" y="83" width="82" height="126" rx="18" fill="#d9edda"/>
+    <rect x="541" y="93" width="62" height="106" rx="12" fill="#eff9ef" stroke="#bdddbf"/>
+  </g>
+  <text x="572" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e704d" font-weight="600">Ters FFT</text>
+  <path d="M552 134 C558 124 568 128 572 138 C576 128 587 124 593 134 L593 174 L552 174 Z" fill="#77ae88" opacity="0.5"/>
+  <path d="M552 174 C558 154 565 163 572 145 C579 163 586 154 593 174" fill="none" stroke="#4b8a60" stroke-width="2"/>
+  <text x="572" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3e704d">Görüntü</text>
+
+  <g filter="url(#soft)">
+    <rect x="188" y="244" width="265" height="47" rx="15" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <path d="M218 259 L218 277 M214 259 L222 259 M214 277 L222 277" stroke="#7191a3" stroke-width="1.5"/>
+  <path d="M244 259 C256 266 256 270 244 277 M258 259 C270 266 270 270 258 277" fill="none" stroke="#7191a3" stroke-width="1.7"/>
+  <path d="M287 268 H310" stroke="#7191a3" stroke-width="1.7"/>
+  <polygon points="310,263 319,268 310,273" fill="#7191a3"/>
+  <circle cx="344" cy="268" r="12" fill="#e2d7f3"/>
+  <path d="M338 268 H350 M344 262 V274" stroke="#765c9c" stroke-width="1.5"/>
+  <text x="378" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496879">Algoritma ve düzeltme</text>
+</svg>
