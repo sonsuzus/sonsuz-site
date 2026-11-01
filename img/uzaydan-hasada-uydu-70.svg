@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="sat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e8ff"/>
+      <stop offset="100%" stop-color="#bcd5f5"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ddf2d2"/>
+      <stop offset="100%" stop-color="#bde0ad"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3e1ff"/>
+      <stop offset="100%" stop-color="#d8c2ed"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c8"/>
+      <stop offset="100%" stop-color="#f5d896"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#70869a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8491" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="38" r="84" fill="#dcecff" opacity="0.48"/>
+  <circle cx="590" cy="282" r="105" fill="#dff0d8" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40596a">UYDUDAN HASADA</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718592">Sezon ritminden verim tahmini</text>
+
+  <path d="M151 151 C170 151 177 151 194 151" fill="none" stroke="#7f9fac" stroke-width="2.2"/>
+  <polygon points="194,151 185,146 185,156" fill="#7f9fac"/>
+  <path d="M323 151 C341 151 349 151 366 151" fill="none" stroke="#7f9fac" stroke-width="2.2"/>
+  <polygon points="366,151 357,146 357,156" fill="#7f9fac"/>
+  <path d="M482 151 C499 151 507 151 521 151" fill="none" stroke="#7f9fac" stroke-width="2.2"/>
+  <polygon points="521,151 512,146 512,156" fill="#7f9fac"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="93" width="123" height="119" rx="20" fill="url(#sat)"/>
+  </g>
+  <text x="89.5" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536c">Uydu gözlemi</text>
+  <g transform="translate(56 125)">
+    <path d="M32 16 L51 7 L61 17 L42 26 Z" fill="#627f99"/>
+    <path d="M17 19 L32 16 L42 26 L27 30 Z" fill="#87a9c8"/>
+    <path d="M51 7 L67 11 L61 17 Z" fill="#4d6881"/>
+    <rect x="0" y="18" width="19" height="12" rx="2" fill="#6d9eb7"/>
+    <rect x="63" y="13" width="19" height="12" rx="2" fill="#6d9eb7"/>
+    <path d="M41 26 L38 41" stroke="#4d6881" stroke-width="2"/>
+    <circle cx="37" cy="43" r="3" fill="#f1b95f"/>
+  </g>
+  <path d="M55 183 C66 168 78 192 89 175 C100 158 112 176 124 159" fill="none" stroke="#3f9e75" stroke-width="2.5"/>
+  <text x="89.5" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426276">NDVI • radar • yağış</text>
+
+  <g filter="url(#shadow)">
+    <rect x="194" y="82" width="129" height="138" rx="20" fill="url(#field)"/>
+  </g>
+  <text x="258.5" y="104" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355c43">Zaman serisi</text>
+  <rect x="213" y="117" width="91" height="70" rx="10" fill="#f9fdf6" opacity="0.86"/>
+  <path d="M222 171 L237 157 L249 162 L264 132 L278 143 L295 121" fill="none" stroke="#4d9f71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="237" cy="157" r="3" fill="#4d9f71"/>
+  <circle cx="264" cy="132" r="3" fill="#4d9f71"/>
+  <circle cx="295" cy="121" r="3" fill="#4d9f71"/>
+  <path d="M222 177 H295" stroke="#afcda9" stroke-width="1.5"/>
+  <text x="258.5" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42654d">Bulut maskesi • hizalama</text>
+
+  <g filter="url(#shadow)">
+    <rect x="366" y="93" width="116" height="119" rx="20" fill="url(#model)"/>
+  </g>
+  <text x="424" y="114" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d416f">Özellik ve model</text>
+  <g transform="translate(386 126)">
+    <rect x="0" y="35" width="12" height="20" rx="3" fill="#a97cc2"/>
+    <rect x="18" y="22" width="12" height="33" rx="3" fill="#9269b2"/>
+    <rect x="36" y="10" width="12" height="45" rx="3" fill="#7d58a0"/>
+    <path d="M57 14 C67 18 61 28 72 31 C82 35 77 45 88 49" fill="none" stroke="#6c4a8b" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="57" cy="14" r="3" fill="#6c4a8b"/>
+    <circle cx="72" cy="31" r="3" fill="#6c4a8b"/>
+    <circle cx="88" cy="49" r="3" fill="#6c4a8b"/>
+  </g>
+  <text x="424" y="201" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#624a70">Tepe • ortalama • yağış</text>
+
+  <g filter="url(#shadow)">
+    <rect x="521" y="82" width="91" height="138" rx="20" fill="url(#result)"/>
+  </g>
+  <text x="566.5" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#75562a">Verim tahmini</text>
+  <text x="566.5" y="129" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6734">ton / hektar</text>
+  <path d="M545 174 L552 154 L558 163 L566 143 L574 158 L584 134 L590 174 Z" fill="#dbad55" opacity="0.8"/>
+  <path d="M544 174 H591" stroke="#92713b" stroke-width="2"/>
+  <path d="M550 185 C558 180 568 190 577 183 C583 179 588 180 592 177" fill="none" stroke="#bf8742" stroke-width="2"/>
+  <text x="566.5" y="207" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806337">Hata aralığı</text>
+
+  <g filter="url(#soft)">
+    <rect x="165" y="252" width="310" height="40" rx="16" fill="#ffffff" opacity="0.88"/>
+  </g>
+  <circle cx="189" cy="272" r="10" fill="#77b58b"/>
+  <path d="M185 272 L188 275 L194 268" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="208" y="276" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496270">Yalnızca tahmin tarihine kadar bilinen veri</text>
+</svg>
