@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c9e8ff"/>
+      <stop offset="100%" stop-color="#d8f1d3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#66839a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#66839a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <path d="M126 90 C170 47 236 41 278 70" fill="none" stroke="#8eb9d6" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <polygon points="274,63 286,72 271,76" fill="#8eb9d6"/>
+  <path d="M357 70 C423 40 493 56 527 104" fill="none" stroke="#9cbf9c" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <polygon points="520,98 532,108 517,112" fill="#9cbf9c"/>
+  <path d="M531 195 C490 246 414 263 357 239" fill="none" stroke="#d9a87b" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <polygon points="363,233 350,239 359,249" fill="#d9a87b"/>
+  <path d="M280 242 C207 269 137 241 108 194" fill="none" stroke="#b5a4d6" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <polygon points="116,201 103,188 102,205" fill="#b5a4d6"/>
+  <path d="M105 126 C111 112 116 102 126 91" fill="none" stroke="#8eb9d6" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <polygon points="128,101 132,84 118,93" fill="#8eb9d6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="250" y="105" width="140" height="110" rx="27" fill="url(#core)" stroke="#a9ccce" stroke-width="1.5"/>
+  </g>
+  <circle cx="320" cy="145" r="25" fill="#fafdff" stroke="#8dbbc1" stroke-width="1.5"/>
+  <path d="M309 148 L318 137 L329 142 L334 154 L319 160 L309 154 Z" fill="#78b7ca"/>
+  <circle cx="319" cy="148" r="4" fill="#f7c98b"/>
+  <text x="320" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31596b">SLAM ÇEKİRDEĞİ</text>
+  <text x="320" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527281">Konum + Harita</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="67" width="150" height="67" rx="17" fill="#e1f1ff" stroke="#b6d5ea"/>
+  </g>
+  <circle cx="69" cy="100" r="15" fill="#a8d5f2"/>
+  <path d="M61 102 L65 96 L69 100 L74 93 L79 104 L61 104 Z" fill="#fafdff"/>
+  <text x="91" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a6079">Sensörler</text>
+  <text x="91" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58788a">Kamera · LiDAR · IMU</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="447" y="68" width="151" height="67" rx="17" fill="#e8f5df" stroke="#c5ddaf"/>
+  </g>
+  <circle cx="475" cy="101" r="15" fill="#b7d99c"/>
+  <path d="M466 105 L470 99 L475 103 L481 94 L485 105 Z" fill="none" stroke="#fbfffa" stroke-width="2"/>
+  <text x="497" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b6a3c">Özellikler</text>
+  <text x="497" y="112" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69815a">Eşleştirme</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="445" y="193" width="154" height="68" rx="17" fill="#fff0df" stroke="#edc89e"/>
+  </g>
+  <circle cx="474" cy="227" r="15" fill="#f1c58b"/>
+  <path d="M465 232 L465 223 L474 217 L483 223 L483 232 Z" fill="none" stroke="#fffaf4" stroke-width="2"/>
+  <text x="496" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#875b32">Harita</text>
+  <text x="496" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a724c">Noktalar ve alanlar</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="42" y="192" width="157" height="69" rx="17" fill="#f0eaff" stroke="#d3c2ed"/>
+  </g>
+  <circle cx="71" cy="227" r="15" fill="#c4afe5"/>
+  <path d="M62 229 C66 220 71 235 76 225 C79 221 81 222 82 222" fill="none" stroke="#fffaff" stroke-width="2.3"/>
+  <text x="94" y="220" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#685382">Tahmin</text>
+  <text x="94" y="238" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b688f">Odometri ve belirsizlik</text>
+
+  <path d="M193 112 L245 132" fill="none" stroke="#789caf" stroke-width="2"/>
+  <polygon points="238,126 250,134 236,138" fill="#789caf"/>
+  <path d="M394 134 L442 113" fill="none" stroke="#82a579" stroke-width="2"/>
+  <polygon points="437,108 449,110 441,119" fill="#82a579"/>
+  <path d="M442 218 L395 196" fill="none" stroke="#c59665" stroke-width="2"/>
+  <polygon points="402,191 389,194 398,202" fill="#c59665"/>
+  <path d="M246 196 L202 220" fill="none" stroke="#9b84bd" stroke-width="2"/>
+  <polygon points="209,214 197,223 211,224" fill="#9b84bd"/>
+
+  <path d="M198 275 C285 293 405 291 445 264" fill="none" stroke="#6c9eb1" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="435,261 449,259 441,271" fill="#6c9eb1"/>
+  <rect x="256" y="274" width="129" height="25" rx="12" fill="#ffffff" opacity="0.85"/>
+  <text x="320" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#476978">Döngü kapatma</text>
+</svg>
