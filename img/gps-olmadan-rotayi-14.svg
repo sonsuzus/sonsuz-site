@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9e9ff"/>
+      <stop offset="100%" stop-color="#bfd9f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6c8298" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8298" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="321" cy="154" r="111" fill="#dceef2" opacity="0.34"/>
+  <circle cx="321" cy="154" r="81" fill="#ffffff" opacity="0.40"/>
+
+  <text x="28" y="30" fill="#526b7e" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">GPS'siz otonom uçuş</text>
+  <rect x="505" y="17" width="106" height="25" rx="12" fill="#ffe7c7" filter="url(#soft)"/>
+  <circle cx="521" cy="29.5" r="5" fill="#e89554"/>
+  <text x="532" y="34" fill="#8c5a32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">GPS yok</text>
+
+  <path d="M157 121 C188 117 197 128 222 139" fill="none" stroke="#8ba9bb" stroke-width="2"/>
+  <polygon points="222,139 213,134 215,144" fill="#8ba9bb"/>
+  <path d="M157 188 C187 192 198 181 222 169" fill="none" stroke="#8ba9bb" stroke-width="2"/>
+  <polygon points="222,169 215,164 213,174" fill="#8ba9bb"/>
+
+  <path d="M383 145 C405 133 416 121 439 114" fill="none" stroke="#8ba9bb" stroke-width="2"/>
+  <polygon points="439,114 430,112 433,121" fill="#8ba9bb"/>
+  <path d="M383 164 C408 177 415 189 439 197" fill="none" stroke="#8ba9bb" stroke-width="2"/>
+  <polygon points="439,197 433,189 430,198" fill="#8ba9bb"/>
+
+  <path d="M491 145 L491 162" fill="none" stroke="#789cab" stroke-width="2"/>
+  <polygon points="491,162 486,154 496,154" fill="#789cab"/>
+
+  <path d="M320 216 L320 245" fill="none" stroke="#789cab" stroke-width="2"/>
+  <polygon points="320,245 315,237 325,237" fill="#789cab"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="82" width="129" height="74" rx="18" fill="#e4f0ff"/>
+    <rect x="28" y="166" width="129" height="74" rx="18" fill="#e7f5e8"/>
+  </g>
+
+  <circle cx="55" cy="113" r="15" fill="#9cc9ef"/>
+  <circle cx="55" cy="197" r="15" fill="#9ed8ad"/>
+  <path d="M47 113 L63 113 M55 105 L55 121" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M49 199 C52 190 58 190 61 199 M49 202 L61 202" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+
+  <text x="78" y="110" fill="#38556b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Kamera</text>
+  <text x="78" y="128" fill="#637f91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Görsel iz</text>
+  <text x="78" y="194" fill="#3d6748" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">IMU</text>
+  <text x="78" y="212" fill="#66846d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">İvme ve dönüş</text>
+
+  <g filter="url(#shadow)">
+    <rect x="222" y="96" width="161" height="120" rx="24" fill="url(#core)"/>
+  </g>
+  <circle cx="302" cy="142" r="35" fill="#eef7ff" opacity="0.86"/>
+  <circle cx="302" cy="142" r="25" fill="#c4e0f5"/>
+  <path d="M286 139 L302 128 L318 139 L302 149 Z" fill="#5c91ba"/>
+  <path d="M302 149 L302 164 M291 157 L302 164 L313 157" fill="none" stroke="#5c91ba" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M275 130 L263 123 M329 130 L341 123 M276 153 L264 160 M328 153 L340 160" stroke="#5c91ba" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="263" cy="123" r="3" fill="#5c91ba"/>
+  <circle cx="341" cy="123" r="3" fill="#5c91ba"/>
+  <circle cx="264" cy="160" r="3" fill="#5c91ba"/>
+  <circle cx="340" cy="160" r="3" fill="#5c91ba"/>
+  <text x="322" y="128" fill="#365d7d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Sensör</text>
+  <text x="322" y="146" fill="#365d7d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">füzyonu</text>
+  <text x="247" y="196" fill="#56778f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Konum · hız · yönelim</text>
+
+  <g filter="url(#shadow)">
+    <rect x="439" y="76" width="145" height="77" rx="18" fill="#f1e7ff"/>
+    <rect x="439" y="164" width="145" height="77" rx="18" fill="#ffeccc"/>
+  </g>
+  <circle cx="465" cy="113" r="14" fill="#c8aceb"/>
+  <path d="M458 116 L464 107 L471 116 M464 107 L464 121" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="489" y="110" fill="#684a8c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Durum</text>
+  <text x="489" y="128" fill="#876ca3" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">kestirimi</text>
+
+  <circle cx="465" cy="202" r="14" fill="#f0b96d"/>
+  <path d="M457 204 C461 194 469 194 473 204 M458 207 L472 207" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="489" y="199" fill="#895c27" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Kontrol</text>
+  <text x="489" y="217" fill="#a1743d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Hedef ve hata</text>
+
+  <g filter="url(#shadow)">
+    <rect x="218" y="245" width="204" height="55" rx="18" fill="#dff1eb"/>
+  </g>
+  <circle cx="245" cy="272" r="14" fill="#7ec6b0"/>
+  <path d="M239 272 L243 276 L251 267" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="270" y="269" fill="#356c61" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600">Güvenli uçuş</text>
+  <text x="270" y="286" fill="#5b8b81" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Belirsizlik artarsa yavaşla</text>
+
+  <path d="M584 202 C605 201 611 191 611 174" fill="none" stroke="#789cab" stroke-width="2"/>
+  <polygon points="611,174 606,182 616,182" fill="#789cab"/>
+  <text x="590" y="226" fill="#69808d" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Motorlar</text>
+</svg>
