@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#7aa7e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#57708d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#52647a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <path d="M0 264 C115 224 149 304 278 267 S487 215 640 264 L640 320 L0 320 Z" fill="#dff2e5" opacity="0.55"/>
+  <circle cx="67" cy="44" r="48" fill="#dcecff" opacity="0.56"/>
+  <circle cx="585" cy="273" r="66" fill="#d9f1df" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#486078" font-weight="600">ŞEHİR SİMÜLASYONU</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7890a3">Geri beslemeli durum güncellemesi</text>
+
+  <!-- feedback links -->
+  <path d="M211 133 C235 81 275 68 305 83" fill="none" stroke="#9aabc0" stroke-width="2.2"/>
+  <polygon points="301,76 315,87 298,91" fill="#9aabc0"/>
+  <path d="M390 90 C450 70 482 94 493 126" fill="none" stroke="#9aabc0" stroke-width="2.2"/>
+  <polygon points="487,121 498,137 480,132" fill="#9aabc0"/>
+  <path d="M499 193 C475 242 424 256 388 241" fill="none" stroke="#9aabc0" stroke-width="2.2"/>
+  <polygon points="393,235 376,237 387,250" fill="#9aabc0"/>
+  <path d="M302 242 C244 256 191 237 174 193" fill="none" stroke="#9aabc0" stroke-width="2.2"/>
+  <polygon points="181,198 169,181 165,199" fill="#9aabc0"/>
+
+  <!-- traffic -->
+  <g filter="url(#soft)">
+    <rect x="70" y="104" width="145" height="91" rx="18" fill="#e2efff"/>
+    <rect x="70" y="104" width="145" height="91" rx="18" fill="none" stroke="#bed5ef"/>
+  </g>
+  <circle cx="96" cy="130" r="14" fill="#80aee7"/>
+  <path d="M88 130 H104 M96 122 V138" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="119" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35536f" font-weight="700">Trafik</text>
+  <text x="119" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607b91">Yoğunluk · süre</text>
+  <path d="M89 169 H191" stroke="#9ab9d9" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="109" cy="169" r="6" fill="#f29b7b"/>
+  <circle cx="140" cy="169" r="6" fill="#f6c36e"/>
+  <circle cx="171" cy="169" r="6" fill="#7ca9dd"/>
+
+  <!-- economy -->
+  <g filter="url(#soft)">
+    <rect x="303" y="55" width="145" height="91" rx="18" fill="#fdf0d8"/>
+    <rect x="303" y="55" width="145" height="91" rx="18" fill="none" stroke="#efd3a0"/>
+  </g>
+  <circle cx="329" cy="81" r="14" fill="#e9ad55"/>
+  <path d="M322 85 L327 78 L332 83 L337 75" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="352" y="80" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#725326" font-weight="700">Ekonomi</text>
+  <text x="352" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#947244">Üretim · vergi</text>
+  <rect x="322" y="112" width="18" height="13" rx="3" fill="#f4c875"/>
+  <rect x="346" y="104" width="18" height="21" rx="3" fill="#edb35b"/>
+  <rect x="370" y="95" width="18" height="30" rx="3" fill="#e69b4e"/>
+  <path d="M397 120 H428" stroke="#d79844" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="424,115 434,120 424,125" fill="#d79844"/>
+
+  <!-- population -->
+  <g filter="url(#soft)">
+    <rect x="425" y="135" width="145" height="91" rx="18" fill="#e4f4e6"/>
+    <rect x="425" y="135" width="145" height="91" rx="18" fill="none" stroke="#bddfbe"/>
+  </g>
+  <circle cx="451" cy="161" r="14" fill="#72b77c"/>
+  <circle cx="447" cy="157" r="3.2" fill="#fff"/>
+  <circle cx="456" cy="157" r="3.2" fill="#fff"/>
+  <path d="M443 168 C445 163 450 162 451 162 C454 162 458 164 460 168" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="474" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#376440" font-weight="700">Nüfus</text>
+  <text x="474" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#618467">Göç · konut</text>
+  <path d="M444 201 H477 M491 201 H524 M538 201 H551" stroke="#92c79a" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="483" cy="201" r="8" fill="#72b77c"/>
+  <circle cx="530" cy="201" r="8" fill="#8bc894"/>
+
+  <!-- core -->
+  <g filter="url(#shadow)">
+    <rect x="244" y="161" width="151" height="83" rx="22" fill="url(#core)"/>
+  </g>
+  <circle cx="273" cy="190" r="16" fill="#ffffff" opacity="0.2"/>
+  <path d="M265 190 H281 M273 182 V198" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="301" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff" font-weight="700">Durum Motoru</text>
+  <text x="301" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf4ff">Zaman adımı</text>
+  <text x="301" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf4ff">Karar · denge</text>
+
+  <!-- connector into center -->
+  <path d="M215 178 H234" stroke="#91a7bc" stroke-width="2"/>
+  <polygon points="230,172 242,178 230,184" fill="#91a7bc"/>
+  <path d="M375 151 V143" stroke="#91a7bc" stroke-width="2"/>
+  <polygon points="369,147 375,135 381,147" fill="#91a7bc"/>
+  <path d="M416 192 H403" stroke="#91a7bc" stroke-width="2"/>
+  <polygon points="407,186 395,192 407,198" fill="#91a7bc"/>
+
+  <!-- bottom update strip -->
+  <g filter="url(#soft)">
+    <rect x="72" y="270" width="496" height="31" rx="15" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="94" cy="285.5" r="7" fill="#779ce0"/>
+  <text x="109" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b82">Sık: araçlar</text>
+  <path d="M207 285 H236" stroke="#b2c1cf" stroke-width="1.8"/>
+  <polygon points="232,280 242,285 232,290" fill="#b2c1cf"/>
+  <circle cx="259" cy="285.5" r="7" fill="#e2aa55"/>
+  <text x="274" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b82">Orta: ekonomi</text>
+  <path d="M395 285 H424" stroke="#b2c1cf" stroke-width="1.8"/>
+  <polygon points="420,280 430,285 420,290" fill="#b2c1cf"/>
+  <circle cx="447" cy="285.5" r="7" fill="#75b77e"/>
+  <text x="462" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b82">Seyrek: göç</text>
+</svg>
