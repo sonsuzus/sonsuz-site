@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dce6eb"/>
+      <stop offset="100%" stop-color="#aebec8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#5c7180" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#597184" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="68" cy="36" r="64" fill="#dceef5" opacity="0.45"/>
+  <circle cx="591" cy="284" r="90" fill="#dff0db" opacity="0.5"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36556a">TAŞIN DİJİTAL HAFIZASI</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8490">Fotogrametri ile değişim takibi</text>
+
+  <!-- Epoch cards -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="76" width="116" height="86" rx="16" fill="#ffffff"/>
+    <rect x="28" y="185" width="116" height="86" rx="16" fill="#ffffff"/>
+  </g>
+
+  <rect x="40" y="89" width="39" height="29" rx="6" fill="#b9dcea"/>
+  <circle cx="49" cy="98" r="4" fill="#f8faf5"/>
+  <path d="M42 114 L54 103 L62 110 L69 101 L77 114 Z" fill="#6f9dad"/>
+  <path d="M87 94 h32 a5 5 0 0 1 5 5 v15 a5 5 0 0 1-5 5 H87 a5 5 0 0 1-5-5 V99 a5 5 0 0 1 5-5z" fill="#e5f0f5"/>
+  <circle cx="103" cy="106" r="8" fill="none" stroke="#5d8fa4" stroke-width="2"/>
+  <path d="M112 115 l7 7" stroke="#5d8fa4" stroke-width="2" stroke-linecap="round"/>
+  <text x="40" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416276">T0 Fotoğraflar</text>
+  <text x="40" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a919d">ilk kayıt</text>
+
+  <rect x="40" y="198" width="39" height="29" rx="6" fill="#c5e1cc"/>
+  <circle cx="49" cy="207" r="4" fill="#f8faf5"/>
+  <path d="M42 223 L53 212 L61 219 L69 208 L77 223 Z" fill="#73a78b"/>
+  <path d="M87 203 h32 a5 5 0 0 1 5 5 v15 a5 5 0 0 1-5 5 H87 a5 5 0 0 1-5-5 V208 a5 5 0 0 1 5-5z" fill="#eaf5eb"/>
+  <circle cx="103" cy="215" r="8" fill="none" stroke="#659778" stroke-width="2"/>
+  <path d="M112 224 l7 7" stroke="#659778" stroke-width="2" stroke-linecap="round"/>
+  <text x="40" y="249" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416276">T1 Fotoğraflar</text>
+  <text x="40" y="263" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a919d">tekrarlı kayıt</text>
+
+  <!-- arrows to reconstruction -->
+  <path d="M145 119 C157 119 158 137 169 137" fill="none" stroke="#85a9bb" stroke-width="2"/>
+  <polygon points="176,137 167,132 169,142" fill="#85a9bb"/>
+  <path d="M145 228 C158 228 158 207 169 207" fill="none" stroke="#85a9bb" stroke-width="2"/>
+  <polygon points="176,207 167,202 169,212" fill="#85a9bb"/>
+
+  <!-- reconstruction -->
+  <g filter="url(#shadow)">
+    <rect x="177" y="97" width="132" height="142" rx="18" fill="#eaf3fa"/>
+  </g>
+  <text x="202" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3c647a">3B Üretim</text>
+  <text x="201" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8796">SfM ve yoğun</text>
+  <text x="207" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8796">eşleştirme</text>
+  <path d="M210 187 L240 170 L274 188 L244 207 Z" fill="#bdd7e5" stroke="#7198ad" stroke-width="1.5"/>
+  <path d="M210 187 v17 l34 19 v-16 Z" fill="#9dbdcd" stroke="#7198ad" stroke-width="1.5"/>
+  <path d="M244 207 v16 l30-17 v-18 Z" fill="#d3e5ee" stroke="#7198ad" stroke-width="1.5"/>
+  <circle cx="223" cy="181" r="2.5" fill="#f9c77d"/>
+  <circle cx="243" cy="178" r="2.5" fill="#f9c77d"/>
+  <circle cx="261" cy="188" r="2.5" fill="#f9c77d"/>
+  <circle cx="233" cy="195" r="2.5" fill="#f9c77d"/>
+
+  <path d="M310 168 H327" fill="none" stroke="#6d98ab" stroke-width="2"/>
+  <polygon points="334,168 325,163 325,173" fill="#6d98ab"/>
+
+  <!-- alignment core -->
+  <g filter="url(#shadow)">
+    <rect x="335" y="71" width="145" height="190" rx="20" fill="#ffffff"/>
+  </g>
+  <text x="365" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3a6176">Hizalama</text>
+  <text x="353" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728b97">Sabit referanslar</text>
+  <path d="M369 145 C369 130 388 125 403 133 C417 119 442 130 439 148 L439 177 C439 195 423 207 404 204 C385 210 367 195 369 177 Z" fill="url(#stone)" stroke="#819ba8" stroke-width="1.5"/>
+  <path d="M382 148 C394 140 402 144 408 156 M414 136 C425 146 424 160 416 170 M383 181 C397 173 409 181 419 193" fill="none" stroke="#8fa4ae" stroke-width="2" opacity="0.8"/>
+  <circle cx="376" cy="134" r="5" fill="#f4b96c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="431" cy="147" r="5" fill="#f4b96c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="398" cy="198" r="5" fill="#f4b96c" stroke="#ffffff" stroke-width="2"/>
+  <text x="359" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617d8b">Kontrol noktası</text>
+
+  <path d="M481 168 H497" fill="none" stroke="#6d98ab" stroke-width="2"/>
+  <polygon points="504,168 495,163 495,173" fill="#6d98ab"/>
+
+  <!-- analysis -->
+  <g filter="url(#shadow)">
+    <rect x="505" y="76" width="108" height="178" rx="18" fill="#fdfefd"/>
+  </g>
+  <text x="521" y="102" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6274">Değişim</text>
+  <text x="527" y="118" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e8895">analizi</text>
+
+  <rect x="522" y="135" width="74" height="13" rx="6.5" fill="#e4edf0"/>
+  <rect x="522" y="135" width="46" height="13" rx="6.5" fill="#e6a5a1"/>
+  <line x1="559" y1="130" x2="559" y2="153" stroke="#617e8c" stroke-width="1.5"/>
+  <text x="522" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8793">d ve LoD₉₅</text>
+
+  <rect x="520" y="184" width="78" height="23" rx="8" fill="#f9e5e3"/>
+  <circle cx="533" cy="195.5" r="5" fill="#db7470"/>
+  <text x="544" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a4c4a">Kayıp adayı</text>
+
+  <rect x="520" y="215" width="78" height="23" rx="8" fill="#e5f1e5"/>
+  <circle cx="533" cy="226.5" r="5" fill="#75a879"/>
+  <text x="544" y="231" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7d58">Doğrulama</text>
+
+  <path d="M407 264 V280 H566" fill="none" stroke="#b6cbd2" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <polygon points="573,280 564,275 564,285" fill="#b6cbd2"/>
+  <text x="371" y="300" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68818c">Arşiv • izlenebilir hafıza</text>
+</svg>

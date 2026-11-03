@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="windGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#bce8f2"/>
+      <stop offset="100%" stop-color="#d9f2df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#66829a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#66829a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="85" cy="50" r="72" fill="#dcedf8" opacity="0.45"/>
+  <circle cx="574" cy="274" r="92" fill="#dff1da" opacity="0.42"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#526b7c" font-weight="600">AKILLI KANAT AÇISI KONTROLÜ</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="70" width="118" height="76" rx="17" fill="url(#windGrad)"/>
+    <path d="M49 98 C63 91 76 105 90 98 S116 91 128 98" fill="none" stroke="#4e9db3" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M49 111 C62 104 76 118 89 111 S115 104 127 111" fill="none" stroke="#4e9db3" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M49 124 C61 118 74 130 87 124 S113 117 126 124" fill="none" stroke="#4e9db3" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="87" y="139" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315b6b" font-weight="600">Rüzgâr verisi</text>
+  </g>
+
+  <path d="M147 108 H180" fill="none" stroke="#77a7b2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="180,108 171,103 171,113" fill="#77a7b2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="184" y="57" width="175" height="105" rx="20" fill="#fffdf9"/>
+    <rect x="201" y="73" width="141" height="29" rx="10" fill="#e8efff"/>
+    <text x="271" y="92" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6390" font-weight="600">Ön besleme</text>
+    <path d="M271 103 V112" stroke="#8a9bbf" stroke-width="2"/>
+    <polygon points="271,117 266,109 276,109" fill="#8a9bbf"/>
+    <rect x="201" y="117" width="141" height="29" rx="10" fill="#ede6fb"/>
+    <text x="271" y="136" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#69538d" font-weight="600">PI denetleyici</text>
+  </g>
+
+  <path d="M360 110 H390" fill="none" stroke="#8c82ae" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="390,110 381,105 381,115" fill="#8c82ae"/>
+
+  <g filter="url(#shadow)">
+    <rect x="394" y="58" width="135" height="104" rx="20" fill="#fffdf9"/>
+    <text x="461" y="84" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#485d72" font-weight="600">Sınır yönetimi</text>
+    <rect x="410" y="96" width="103" height="23" rx="8" fill="#fff0d9"/>
+    <text x="461" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6330">Açı ve hız</text>
+    <rect x="410" y="126" width="103" height="22" rx="8" fill="#e1f1e6"/>
+    <text x="461" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#47745a">Anti-windup</text>
+  </g>
+
+  <path d="M530 110 H553" fill="none" stroke="#78a087" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="553,110 544,105 544,115" fill="#78a087"/>
+
+  <g filter="url(#shadow)">
+    <rect x="557" y="69" width="58" height="82" rx="17" fill="#fdfcff"/>
+    <circle cx="586" cy="109" r="13" fill="none" stroke="#779d89" stroke-width="3"/>
+    <path d="M586 96 L586 82 M575 115 L563 122 M597 115 L609 122" stroke="#779d89" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="586" cy="109" r="4" fill="#779d89"/>
+    <text x="586" y="140" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426453" font-weight="600">Türbin</text>
+  </g>
+
+  <path d="M586 152 V184 H271 V164" fill="none" stroke="#76a393" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="271,164 266,173 276,173" fill="#76a393"/>
+  <text x="423" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a8174">Rotor hızı geri beslemesi</text>
+
+  <g filter="url(#soft)">
+    <rect x="72" y="222" width="151" height="67" rx="16" fill="#dff1ea"/>
+    <circle cx="96" cy="246" r="11" fill="#78b69b"/>
+    <path d="M91 246 L95 250 L102 241" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="151" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#386d59" font-weight="600">Nominal altı</text>
+    <text x="151" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b806a">Enerji yakalama</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="245" y="222" width="151" height="67" rx="16" fill="#fff0d9"/>
+    <circle cx="269" cy="246" r="11" fill="#e1a85f"/>
+    <path d="M269 239 V247 M269 252 V253" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="324" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6031" font-weight="600">Nominal üstü</text>
+    <text x="324" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#997144">Güç sınırlama</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="418" y="222" width="151" height="67" rx="16" fill="#f8e2e5"/>
+    <circle cx="442" cy="246" r="11" fill="#d47c87"/>
+    <path d="M442 240 V247 M442 252 V253" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="497" y="246" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#92505a" font-weight="600">Güvenlik sınırı</text>
+    <text x="497" y="267" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a3646c">Güvenli duruş</text>
+  </g>
+
+  <path d="M461 163 V198 H148 V220" fill="none" stroke="#77a18e" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="148,220 143,211 153,211" fill="#77a18e"/>
+  <path d="M461 163 V211 H321 V220" fill="none" stroke="#d3a065" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="321,220 316,211 326,211" fill="#d3a065"/>
+  <path d="M461 163 V220" fill="none" stroke="#cc7d87" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="461,220 456,211 466,211" fill="#cc7d87"/>
+</svg>

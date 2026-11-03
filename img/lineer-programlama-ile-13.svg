@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef5ff"/>
+    </linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#effaf1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6d8498" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#6d8498" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="608" cy="28" r="70" fill="#dceffc" opacity="0.55"/>
+  <circle cx="33" cy="299" r="76" fill="#dff2df" opacity="0.48"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#385269">ÜRETİM PLANLAMA</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718596">Lineer programlama ile en iyi karma</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="72" width="150" height="182" rx="18" fill="url(#cardA)" stroke="#d4e2ed"/>
+  </g>
+  <rect x="45" y="90" width="48" height="27" rx="10" fill="#dcecff"/>
+  <path d="M58 108 L58 98 L63 98 L63 108 M68 108 L68 94 L73 94 L73 108 M78 108 L78 100 L83 100 L83 108" fill="none" stroke="#4f82ac" stroke-width="2" stroke-linejoin="round"/>
+  <text x="104" y="101" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36566f">Kaynaklar</text>
+  <text x="104" y="116" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909f">Sınırlı kapasite</text>
+
+  <rect x="45" y="135" width="116" height="43" rx="11" fill="#fff4e4" stroke="#f1d7aa"/>
+  <circle cx="61" cy="156" r="7" fill="#f0ae55"/>
+  <text x="76" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#765329">İşçilik</text>
+  <text x="76" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8f7958">100 saat</text>
+
+  <rect x="45" y="188" width="116" height="43" rx="11" fill="#e8f5ef" stroke="#bfe1d1"/>
+  <circle cx="61" cy="209" r="7" fill="#63b58c"/>
+  <text x="76" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#386954">Makine</text>
+  <text x="76" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668a79">90 saat</text>
+
+  <path d="M182 163 L209 163" fill="none" stroke="#83a2b7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="210,163 201,157 201,169" fill="#83a2b7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="216" y="64" width="205" height="198" rx="20" fill="#ffffff" stroke="#d5e5e8"/>
+  </g>
+  <rect x="237" y="84" width="162" height="30" rx="11" fill="#e8f2ff"/>
+  <path d="M253 103 L259 92 L265 103 Z" fill="#5b89bc"/>
+  <path d="M274 103 L280 92 L286 103 Z" fill="#75a58b"/>
+  <text x="297" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365d7d">Optimizasyon</text>
+
+  <text x="241" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587184">Amaç</text>
+  <rect x="293" y="122" width="103" height="27" rx="9" fill="#f2edff"/>
+  <text x="307" y="140" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#655384">Maksimum Z</text>
+
+  <line x1="241" y1="164" x2="396" y2="164" stroke="#dbe5eb"/>
+  <text x="241" y="185" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#587184">Karar</text>
+  <rect x="293" y="171" width="45" height="27" rx="9" fill="#eaf4ff"/>
+  <text x="307" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e719c">A: x</text>
+  <rect x="346" y="171" width="45" height="27" rx="9" fill="#ecf8ef"/>
+  <text x="360" y="189" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40775c">B: y</text>
+
+  <line x1="241" y1="214" x2="396" y2="214" stroke="#dbe5eb"/>
+  <text x="241" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637d8d">Kısıtlar</text>
+  <text x="303" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b687c">2x+y   x+3y</text>
+
+  <path d="M425 163 L450 163" fill="none" stroke="#83a2b7" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="451,163 442,157 442,169" fill="#83a2b7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="457" y="72" width="155" height="182" rx="18" fill="url(#cardB)" stroke="#cee5d5"/>
+  </g>
+  <text x="477" y="100" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6b56">En iyi plan</text>
+  <text x="477" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#759485">Kaynaklar tam kullanım</text>
+
+  <rect x="476" y="136" width="116" height="40" rx="11" fill="#e7f4ff"/>
+  <rect x="488" y="147" width="19" height="19" rx="5" fill="#6b9ed0"/>
+  <text x="514" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6688">A ürünü</text>
+  <text x="548" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#356e9d">42</text>
+
+  <rect x="476" y="183" width="116" height="40" rx="11" fill="#e7f7eb"/>
+  <rect x="488" y="194" width="19" height="19" rx="5" fill="#70b68d"/>
+  <text x="514" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45745a">B ürünü</text>
+  <text x="548" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38734f">16</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="457" y="266" width="155" height="35" rx="14" fill="#456f87"/>
+  </g>
+  <text x="477" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Toplam çıktı: 58</text>
+
+  <path d="M91 257 C145 286 197 286 240 268" fill="none" stroke="#b4cbd2" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <path d="M400 267 C422 281 436 283 456 281" fill="none" stroke="#b4cbd2" stroke-width="1.5" stroke-dasharray="4 5"/>
+</svg>
