@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f1e5"/>
+      <stop offset="100%" stop-color="#bfe6d4"/>
+    </linearGradient>
+    <linearGradient id="control" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c8ddf5"/>
+    </linearGradient>
+    <linearGradient id="data" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9e8c8"/>
+      <stop offset="100%" stop-color="#f1d39e"/>
+    </linearGradient>
+    <linearGradient id="app" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eadcf7"/>
+      <stop offset="100%" stop-color="#d8c5ed"/>
+    </linearGradient>
+    <linearGradient id="hmi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7dce1"/>
+      <stop offset="100%" stop-color="#ecc4ce"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#66829a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-35%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#557086" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="571" cy="38" r="78" fill="#dceff0" opacity="0.38"/>
+  <circle cx="57" cy="288" r="88" fill="#e1edf9" opacity="0.42"/>
+
+  <text x="30" y="28" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516a">SCADA KATMANLI MİMARİ</text>
+  <text x="30" y="45" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8191">Enerji santralinde veri, gözetim ve güvenli komut akışı</text>
+
+  <!-- flow connectors -->
+  <path d="M137 186 L164 186" fill="none" stroke="#6f8998" stroke-width="2"/>
+  <polygon points="164,186 157,181 157,191" fill="#6f8998"/>
+  <path d="M258 186 L284 186" fill="none" stroke="#6f8998" stroke-width="2"/>
+  <polygon points="284,186 277,181 277,191" fill="#6f8998"/>
+  <path d="M378 186 L404 186" fill="none" stroke="#6f8998" stroke-width="2"/>
+  <polygon points="404,186 397,181 397,191" fill="#6f8998"/>
+  <path d="M498 186 L524 186" fill="none" stroke="#6f8998" stroke-width="2"/>
+  <polygon points="524,186 517,181 517,191" fill="#6f8998"/>
+
+  <!-- feedback command path -->
+  <path d="M570 225 C570 276, 103 277, 103 225" fill="none" stroke="#bf7182" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="103,225 98,234 108,232" fill="#bf7182"/>
+  <text x="271" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a5969">Yetkili komut geri akışı</text>
+
+  <!-- field -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="130" width="107" height="96" rx="17" fill="url(#field)"/>
+  </g>
+  <rect x="44" y="145" width="29" height="28" rx="8" fill="#effaf5" filter="url(#smallShadow)"/>
+  <path d="M52 160 L65 160 M58.5 153.5 L58.5 166.5" stroke="#478b70" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="99" cy="159" r="14" fill="#f4fcf8" filter="url(#smallShadow)"/>
+  <path d="M99 150 L99 159 L106 163" fill="none" stroke="#478b70" stroke-width="2" stroke-linecap="round"/>
+  <text x="49" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#295b49">Saha</text>
+  <text x="49" y="212" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7768">Sensör ve aktüatör</text>
+
+  <!-- local control -->
+  <g filter="url(#shadow)">
+    <rect x="164" y="130" width="94" height="96" rx="17" fill="url(#control)"/>
+  </g>
+  <rect x="182" y="146" width="58" height="30" rx="7" fill="#f4f9ff" filter="url(#smallShadow)"/>
+  <text x="198" y="165" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#477493">PLC</text>
+  <circle cx="189" cy="185" r="3.5" fill="#4fa17e"/>
+  <circle cx="202" cy="185" r="3.5" fill="#e5a654"/>
+  <circle cx="215" cy="185" r="3.5" fill="#d97378"/>
+  <text x="178" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315f80">Yerel kontrol</text>
+
+  <!-- acquisition -->
+  <g filter="url(#shadow)">
+    <rect x="284" y="130" width="94" height="96" rx="17" fill="url(#data)"/>
+  </g>
+  <path d="M304 152 L323 143 L342 152 L342 173 L323 182 L304 173 Z" fill="#fff9ed" filter="url(#smallShadow)"/>
+  <path d="M323 143 L323 182 M304 152 L323 161 L342 152" fill="none" stroke="#bd8a3e" stroke-width="1.5"/>
+  <text x="296" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#81602e">Veri edinimi</text>
+  <text x="299" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#967442">Geçit ve model</text>
+
+  <!-- services -->
+  <g filter="url(#shadow)">
+    <rect x="404" y="130" width="94" height="96" rx="17" fill="url(#app)"/>
+  </g>
+  <rect x="419" y="145" width="64" height="14" rx="5" fill="#faf6fe"/>
+  <rect x="419" y="164" width="64" height="14" rx="5" fill="#faf6fe"/>
+  <rect x="419" y="183" width="64" height="14" rx="5" fill="#faf6fe"/>
+  <circle cx="428" cy="152" r="3" fill="#d46f77"/>
+  <circle cx="428" cy="171" r="3" fill="#8d73ba"/>
+  <circle cx="428" cy="190" r="3" fill="#618cb4"/>
+  <text x="416" y="215" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#634a80">Alarm ve tarihçe</text>
+
+  <!-- hmi -->
+  <g filter="url(#shadow)">
+    <rect x="524" y="130" width="86" height="96" rx="17" fill="url(#hmi)"/>
+  </g>
+  <rect x="539" y="145" width="56" height="38" rx="5" fill="#fff8f9" filter="url(#smallShadow)"/>
+  <path d="M546 174 L554 165 L562 169 L570 155 L587 160" fill="none" stroke="#c66b7d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M559 189 L575 189" stroke="#ad6876" stroke-width="2" stroke-linecap="round"/>
+  <path d="M567 183 L567 189" stroke="#ad6876" stroke-width="2"/>
+  <text x="548" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#874958">Operatör HMI</text>
+
+  <!-- protocols -->
+  <g filter="url(#smallShadow)">
+    <rect x="153" y="78" width="99" height="29" rx="14" fill="#ffffff" opacity="0.94"/>
+    <rect x="271" y="78" width="99" height="29" rx="14" fill="#ffffff" opacity="0.94"/>
+    <rect x="389" y="78" width="99" height="29" rx="14" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <text x="172" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496879">IEC 61850</text>
+  <text x="295" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496879">OPC UA</text>
+  <text x="410" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496879">MQTT ve 104</text>
+
+  <!-- security boundary -->
+  <path d="M20 118 L20 65 Q20 56 29 56 L611 56 Q620 56 620 65 L620 245 Q620 254 611 254 L29 254 Q20 254 20 245 L20 238" fill="none" stroke="#6f9a91" stroke-width="1.5" stroke-dasharray="6 5" opacity="0.75"/>
+  <rect x="475" y="43" width="125" height="25" rx="12" fill="#e1f0ec" filter="url(#smallShadow)"/>
+  <path d="M488 49 L496 46 L504 49 L504 55 Q504 61 496 64 Q488 61 488 55 Z" fill="#589581"/>
+  <text x="513" y="60" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#447565">OT güvenlik sınırı</text>
+</svg>
