@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7b9fe8"/>
+      <stop offset="100%" stop-color="#637ec9"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#64748b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#64748b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="324" cy="159" r="118" fill="#dbeafe" opacity="0.30"/>
+  <circle cx="324" cy="159" r="85" fill="#e9f7e9" opacity="0.34"/>
+
+  <!-- Tesis girişi -->
+  <g filter="url(#soft)">
+    <rect x="28" y="42" width="142" height="62" rx="16" fill="#ffffff"/>
+    <rect x="39" y="54" width="33" height="38" rx="9" fill="#d7e8ff"/>
+    <path d="M55 59 L47 75 L55 75 L51 87 L65 69 L57 69 L62 59 Z" fill="#4f7ed4"/>
+    <text x="83" y="68" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#334155" font-weight="600">Tesis Sınırı</text>
+    <text x="83" y="87" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">120 kW</text>
+  </g>
+
+  <!-- Bina yükleri -->
+  <g filter="url(#soft)">
+    <rect x="28" y="209" width="142" height="68" rx="16" fill="#ffffff"/>
+    <rect x="39" y="222" width="34" height="42" rx="9" fill="#fde9c8"/>
+    <path d="M48 255 L48 234 L56 228 L65 234 L65 255 Z M53 241 L57 241 L57 246 L53 246 Z M60 241 L63 241 L63 246 L60 246 Z" fill="#ce8a31"/>
+    <text x="83" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#334155" font-weight="600">Diğer Yükler</text>
+    <text x="83" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#64748b">Anlık ölçüm</text>
+  </g>
+
+  <!-- Bağlantılar -->
+  <path d="M170 73 C209 73 209 116 251 127" fill="none" stroke="#91a9d8" stroke-width="2.5"/>
+  <polygon points="250,121 263,130 247,134" fill="#91a9d8"/>
+  <path d="M170 243 C211 243 214 204 251 190" fill="none" stroke="#d1a365" stroke-width="2.5"/>
+  <polygon points="248,183 263,187 253,198" fill="#d1a365"/>
+
+  <!-- Kontrol çekirdeği -->
+  <g filter="url(#shadow)">
+    <rect x="258" y="105" width="145" height="112" rx="25" fill="url(#core)"/>
+    <circle cx="330" cy="139" r="21" fill="#ffffff" opacity="0.20"/>
+    <path d="M330 120 L322 139 L330 139 L326 157 L340 135 L332 135 L337 120 Z" fill="#ffffff"/>
+    <text x="330" y="178" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">Akıllı Dengeleme</text>
+    <text x="330" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#e8efff">Bütçe ve öncelik</text>
+  </g>
+
+  <!-- Sağ dağıtım omurgası -->
+  <path d="M404 161 L447 161" fill="none" stroke="#6985cb" stroke-width="3"/>
+  <polygon points="445,154 459,161 445,168" fill="#6985cb"/>
+  <path d="M459 74 L459 248" fill="none" stroke="#9bb0df" stroke-width="2.5"/>
+
+  <!-- Araçlar -->
+  <g filter="url(#soft)">
+    <rect x="480" y="38" width="130" height="43" rx="13" fill="#ffffff"/>
+    <rect x="491" y="48" width="23" height="22" rx="7" fill="#d8f2e1"/>
+    <path d="M494 65 L497 55 L507 55 L511 65 Z M496 65 L496 68 L500 68 L500 65 M506 65 L506 68 L510 68 L510 65" fill="none" stroke="#3f9871" stroke-width="1.7"/>
+    <text x="525" y="57" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#334155" font-weight="600">Araçlar</text>
+    <text x="525" y="73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b9a72">8 × 8,125 kW</text>
+
+    <rect x="480" y="101" width="130" height="43" rx="13" fill="#ffffff"/>
+    <rect x="491" y="111" width="23" height="22" rx="7" fill="#fbe0e6"/>
+    <path d="M494 128 L497 118 L507 118 L511 128 Z M496 128 L496 131 L500 131 L500 128 M506 128 L506 131 L510 131 L510 128" fill="none" stroke="#c6637e" stroke-width="1.7"/>
+    <text x="525" y="120" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#334155" font-weight="600">Öncelik</text>
+    <text x="525" y="136" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a74f69">Ağırlıklı paylaşım</text>
+
+    <rect x="480" y="176" width="130" height="43" rx="13" fill="#ffffff"/>
+    <rect x="491" y="186" width="23" height="22" rx="7" fill="#e7defb"/>
+    <path d="M495 201 C497 192 508 192 510 201 M498 196 L503 191 L508 196 M503 191 L503 204" fill="none" stroke="#8065bc" stroke-width="1.7"/>
+    <text x="525" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#334155" font-weight="600">Güvenlik Payı</text>
+    <text x="525" y="211" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7258a7">Rezerv korunur</text>
+
+    <rect x="480" y="239" width="130" height="43" rx="13" fill="#ffffff"/>
+    <rect x="491" y="249" width="23" height="22" rx="7" fill="#d9f0f4"/>
+    <path d="M496 260 L510 260 M503 253 L503 267 M497 267 L509 267" fill="none" stroke="#438b9a" stroke-width="1.7"/>
+    <text x="525" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#334155" font-weight="600">Şebeke</text>
+    <text x="525" y="274" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#418090">Tepe talep azalır</text>
+  </g>
+
+  <!-- Dal çizgileri -->
+  <path d="M459 60 L480 60 M459 123 L480 123 M459 198 L480 198 M459 261 L480 261" fill="none" stroke="#9bb0df" stroke-width="2"/>
+  <polygon points="477,55 486,60 477,65" fill="#9bb0df"/>
+  <polygon points="477,118 486,123 477,128" fill="#9bb0df"/>
+  <polygon points="477,193 486,198 477,203" fill="#9bb0df"/>
+  <polygon points="477,256 486,261 477,266" fill="#9bb0df"/>
+
+  <!-- Alt bilgi -->
+  <g filter="url(#soft)">
+    <rect x="202" y="267" width="218" height="33" rx="14" fill="#ffffff" opacity="0.94"/>
+    <circle cx="221" cy="283.5" r="7" fill="#73b98d"/>
+    <path d="M218 284 L221 287 L226 280" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="237" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6070">Güvenli • Adil • Zamanında</text>
+  </g>
+</svg>
