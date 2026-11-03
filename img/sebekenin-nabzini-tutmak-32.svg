@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#d9f3df"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d8294" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6d8294" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="160" r="126" fill="#dceefa" opacity="0.35"/>
+  <circle cx="319" cy="160" r="98" fill="#eff8f4" opacity="0.65"/>
+
+  <text x="30" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#496174">Gerçek Zamanlı Durum Tahmini</text>
+
+  <!-- Sol veri kaynakları -->
+  <g filter="url(#softShadow)">
+    <rect x="28" y="65" width="118" height="48" rx="14" fill="#fff4dc"/>
+    <rect x="28" y="136" width="118" height="48" rx="14" fill="#e8e1fb"/>
+    <rect x="28" y="207" width="118" height="48" rx="14" fill="#dff3f2"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405766">
+    <text x="74" y="86" text-anchor="middle" font-weight="600">SCADA</text>
+    <text x="87" y="103" text-anchor="middle" font-size="11">Güç ve gerilim</text>
+    <text x="74" y="157" text-anchor="middle" font-weight="600">PMU</text>
+    <text x="87" y="174" text-anchor="middle" font-size="11">Fazör ve zaman</text>
+    <text x="74" y="228" text-anchor="middle" font-weight="600">Sözde ölçüm</text>
+    <text x="87" y="245" text-anchor="middle" font-size="11">Yaklaşık bilgi</text>
+  </g>
+
+  <!-- Veri okları -->
+  <g fill="none" stroke="#7c9aab" stroke-width="2" stroke-linecap="round">
+    <path d="M146 89 C172 89 178 111 203 120"/>
+    <path d="M146 160 L196 160"/>
+    <path d="M146 231 C172 231 178 209 203 200"/>
+  </g>
+  <g fill="#7c9aab">
+    <path d="M201 114 L211 122 L198 124 Z"/>
+    <path d="M195 154 L205 160 L195 166 Z"/>
+    <path d="M201 206 L211 198 L198 196 Z"/>
+  </g>
+
+  <!-- Merkez çekirdek -->
+  <g filter="url(#shadow)">
+    <rect x="207" y="91" width="224" height="138" rx="28" fill="url(#core)" stroke="#b9d8d4" stroke-width="1.5"/>
+    <circle cx="319" cy="150" r="40" fill="#f9fffd" stroke="#a9d1ca" stroke-width="2"/>
+    <circle cx="319" cy="150" r="25" fill="#d7f0e5"/>
+  </g>
+
+  <!-- Şebeke mini simgesi -->
+  <g stroke="#4f8a86" stroke-width="2" fill="none">
+    <path d="M301 157 L313 139 L331 145 L337 163 L317 169 Z"/>
+    <path d="M313 139 L317 169"/>
+    <path d="M331 145 L317 169"/>
+  </g>
+  <g fill="#4f8a86">
+    <circle cx="301" cy="157" r="3"/>
+    <circle cx="313" cy="139" r="3"/>
+    <circle cx="331" cy="145" r="3"/>
+    <circle cx="337" cy="163" r="3"/>
+    <circle cx="317" cy="169" r="3"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" fill="#355866" text-anchor="middle">
+    <text x="319" y="116" font-size="12" font-weight="600">Fiziksel Model</text>
+    <text x="319" y="199" font-size="12" font-weight="600">Ağırlıklı En Küçük Kareler</text>
+    <text x="319" y="216" font-size="11">Ölçüm + belirsizlik</text>
+  </g>
+
+  <!-- Topoloji geri besleme -->
+  <g filter="url(#softShadow)">
+    <rect x="249" y="249" width="140" height="40" rx="13" fill="#edf3ff"/>
+  </g>
+  <text x="319" y="273" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#536b88">Şebeke topolojisi</text>
+  <path d="M319 249 L319 236" fill="none" stroke="#7c9aab" stroke-width="2" stroke-linecap="round"/>
+  <path d="M313 239 L319 229 L325 239 Z" fill="#7c9aab"/>
+
+  <!-- Sağ sonuçlar -->
+  <g filter="url(#softShadow)">
+    <rect x="478" y="57" width="132" height="57" rx="15" fill="#dff1ff"/>
+    <rect x="478" y="132" width="132" height="57" rx="15" fill="#e6f5df"/>
+    <rect x="478" y="207" width="132" height="57" rx="15" fill="#ffe9df"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" fill="#405766" text-anchor="middle">
+    <text x="544" y="81" font-size="12" font-weight="600">Durum tahmini</text>
+    <text x="544" y="99" font-size="11">Gerilim ve açı</text>
+    <text x="544" y="156" font-size="12" font-weight="600">Kritik bölgeler</text>
+    <text x="544" y="174" font-size="11">Güç akışı</text>
+    <text x="544" y="231" font-size="12" font-weight="600">Güven kontrolü</text>
+    <text x="544" y="249" font-size="11">Artık ve belirsizlik</text>
+  </g>
+
+  <!-- Sağ akışlar -->
+  <g fill="none" stroke="#7095a4" stroke-width="2" stroke-linecap="round">
+    <path d="M431 122 C450 105 455 87 478 86"/>
+    <path d="M431 160 L468 160"/>
+    <path d="M431 198 C450 215 455 235 478 235"/>
+  </g>
+  <g fill="#7095a4">
+    <path d="M468 80 L478 86 L468 92 Z"/>
+    <path d="M468 154 L478 160 L468 166 Z"/>
+    <path d="M468 229 L478 235 L468 241 Z"/>
+  </g>
+
+  <!-- Alt açıklayıcı rozetler -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="11">
+    <rect x="43" y="280" width="100" height="22" rx="11" fill="#ffffff" opacity="0.8"/>
+    <text x="93" y="295" text-anchor="middle" fill="#637b87">Sınırlı sensör</text>
+    <rect x="485" y="280" width="108" height="22" rx="11" fill="#ffffff" opacity="0.8"/>
+    <text x="539" y="295" text-anchor="middle" fill="#637b87">Anlık görünüm</text>
+  </g>
+</svg>
