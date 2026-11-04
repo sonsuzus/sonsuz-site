@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bcd7ff"/>
+      <stop offset="100%" stop-color="#c9efda"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6d8296" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7990a0" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="58" cy="43" r="48" fill="#dff0ff" opacity="0.50"/>
+  <circle cx="598" cy="280" r="66" fill="#dff4df" opacity="0.55"/>
+  <path d="M33 161 C88 127 109 197 154 162" fill="none" stroke="#b7d8e7" stroke-width="2" opacity="0.55"/>
+  <path d="M478 56 C529 23 568 74 621 43" fill="none" stroke="#c2e4c9" stroke-width="2" opacity="0.6"/>
+
+  <!-- Öğrenci -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="116" width="116" height="91" rx="18" fill="#fffdf9" stroke="#dbe7ec"/>
+    <circle cx="57" cy="147" r="14" fill="#ffdcb8"/>
+    <path d="M45 145 C47 127 68 126 70 145 C64 140 52 140 45 145" fill="#697fa0"/>
+    <path d="M40 181 C43 164 72 164 76 181" fill="#a8c9ed"/>
+    <rect x="83" y="139" width="38" height="28" rx="7" fill="#e7f3ff"/>
+    <path d="M91 147 H114 M91 153 H108 M91 159 H111" stroke="#6d96bd" stroke-width="2" stroke-linecap="round"/>
+    <text x="85" y="191" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#38546d">Öğrenci Sorusu</text>
+  </g>
+
+  <!-- arrow 1 -->
+  <path d="M148 161 H180" fill="none" stroke="#719cb9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="180,161 172,156 172,166" fill="#719cb9"/>
+
+  <!-- RAG kaynak katmanı -->
+  <g filter="url(#shadow)">
+    <rect x="185" y="72" width="139" height="178" rx="20" fill="#fefefe" stroke="#d8e5e8"/>
+    <text x="254" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#415c68">Kaynak Katmanı</text>
+
+    <rect x="203" y="112" width="102" height="29" rx="9" fill="#fff0cf"/>
+    <path d="M213 121 H236 M213 127 H244 M213 133 H231" stroke="#b5843c" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="270" y="130" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79572d">Ders Notları</text>
+
+    <rect x="203" y="151" width="102" height="29" rx="9" fill="#e2f2ff"/>
+    <circle cx="218" cy="165" r="6" fill="none" stroke="#568ab2" stroke-width="1.8"/>
+    <path d="M223 170 L229 176" stroke="#568ab2" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="270" y="170" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426d91">Vektör Arama</text>
+
+    <rect x="203" y="190" width="102" height="29" rx="9" fill="#e2f6e9"/>
+    <path d="M214 205 L219 210 L229 199" fill="none" stroke="#4e9872" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="269" y="209" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#397255">Eşik Kontrolü</text>
+  </g>
+
+  <!-- internal flow -->
+  <path d="M254 142 V149" stroke="#8aabb7" stroke-width="1.8"/>
+  <polygon points="254,151 250,145 258,145" fill="#8aabb7"/>
+  <path d="M254 181 V188" stroke="#8aabb7" stroke-width="1.8"/>
+  <polygon points="254,190 250,184 258,184" fill="#8aabb7"/>
+
+  <!-- to core -->
+  <path d="M329 161 H355" fill="none" stroke="#719cb9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="355,161 347,156 347,166" fill="#719cb9"/>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <rect x="360" y="99" width="142" height="124" rx="24" fill="url(#core)" stroke="#b9dbe1"/>
+    <circle cx="431" cy="135" r="24" fill="#f8fffc" opacity="0.92"/>
+    <path d="M420 135 C420 129 424 125 431 125 C438 125 442 129 442 135 C442 141 438 145 432 145 L426 151 L427 145 C423 143 420 140 420 135Z" fill="#6999b5"/>
+    <circle cx="426" cy="135" r="1.7" fill="#ffffff"/>
+    <circle cx="431" cy="135" r="1.7" fill="#ffffff"/>
+    <circle cx="436" cy="135" r="1.7" fill="#ffffff"/>
+    <text x="431" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#31586b">Öğretmen Asistanı</text>
+    <text x="431" y="197" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#416879">İpucu • Adım • Kaynak</text>
+  </g>
+
+  <!-- top pedagogy -->
+  <g filter="url(#soft)">
+    <rect x="373" y="35" width="116" height="43" rx="14" fill="#f4eaff" stroke="#dfcff1"/>
+    <path d="M390 57 C390 50 396 47 401 51 C406 47 412 50 412 57 C412 64 401 69 401 69 C401 69 390 64 390 57Z" fill="#aa83cc"/>
+    <text x="450" y="61" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#654780">Kademeli Destek</text>
+  </g>
+  <path d="M431 81 V94" fill="none" stroke="#9b80b6" stroke-width="2"/>
+  <polygon points="431,96 427,90 435,90" fill="#9b80b6"/>
+
+  <!-- bottom security -->
+  <g filter="url(#soft)">
+    <rect x="370" y="247" width="122" height="43" rx="14" fill="#fff0ef" stroke="#f0d1ce"/>
+    <path d="M390 261 L400 256 L410 261 V269 C410 275 406 279 400 282 C394 279 390 275 390 269Z" fill="#dc847b"/>
+    <path d="M396 269 L399 272 L405 265" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="452" y="272" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b504c">Güvenlik ve Mahremiyet</text>
+  </g>
+  <path d="M431 226 V242" fill="none" stroke="#ca887f" stroke-width="2"/>
+  <polygon points="431,244 427,238 435,238" fill="#ca887f"/>
+
+  <!-- output arrow -->
+  <path d="M507 161 H530" fill="none" stroke="#719cb9" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="530,161 522,156 522,166" fill="#719cb9"/>
+
+  <!-- Response -->
+  <g filter="url(#shadow)">
+    <rect x="535" y="108" width="81" height="106" rx="18" fill="#fffefd" stroke="#dce8e2"/>
+    <rect x="550" y="124" width="51" height="38" rx="9" fill="#dff4e7"/>
+    <path d="M560 143 L566 149 L579 135" fill="none" stroke="#49946b" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M552 176 H599 M552 184 H592 M552 192 H596" stroke="#8aac9b" stroke-width="2" stroke-linecap="round"/>
+    <text x="575" y="204" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d6956">Kaynaklı Yanıt</text>
+  </g>
+
+  <!-- feedback loop -->
+  <path d="M574 221 C573 276 287 288 130 225" fill="none" stroke="#9fc7b1" stroke-width="2" stroke-dasharray="5 5" opacity="0.9"/>
+  <polygon points="130,225 138,221 136,230" fill="#79aa90"/>
+  <text x="286" y="298" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a8870">Geri Bildirim ve Öğretmen Denetimi</text>
+</svg>

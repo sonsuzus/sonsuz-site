@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="lidar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfeaff"/>
+      <stop offset="100%" stop-color="#bfd5f4"/>
+    </linearGradient>
+    <linearGradient id="terrain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7efd9"/>
+      <stop offset="100%" stop-color="#a9d5b3"/>
+    </linearGradient>
+    <linearGradient id="relief" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="48%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#f3c9c4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#4c6980" flood-opacity="0.17"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#547084" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="38" r="56" fill="#d9edf4" opacity="0.42"/>
+  <circle cx="594" cy="279" r="75" fill="#dcefd7" opacity="0.5"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34536b">ORMAN ALTINDAKİ İZLER</text>
+  <text x="28" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8591">LIDAR ölçümünden arkeolojik ipucuna</text>
+
+  <g filter="url(#shadow)">
+    <rect x="25" y="75" width="130" height="193" rx="18" fill="#ffffff"/>
+    <rect x="176" y="75" width="126" height="193" rx="18" fill="#ffffff"/>
+    <rect x="323" y="75" width="126" height="193" rx="18" fill="#ffffff"/>
+    <rect x="470" y="75" width="145" height="193" rx="18" fill="#ffffff"/>
+  </g>
+
+  <!-- arrows -->
+  <path d="M158 171 L170 171 L170 166 L176 174 L170 182 L170 177 L158 177 Z" fill="#7395a7"/>
+  <path d="M305 171 L317 171 L317 166 L323 174 L317 182 L317 177 L305 177 Z" fill="#7395a7"/>
+  <path d="M452 171 L464 171 L464 166 L470 174 L464 182 L464 177 L452 177 Z" fill="#7395a7"/>
+
+  <!-- panel 1 -->
+  <text x="42" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536c">1 · Hava taraması</text>
+  <rect x="43" y="114" width="90" height="35" rx="12" fill="url(#lidar)" filter="url(#soft)"/>
+  <path d="M67 131 L81 122 L108 122 L119 131 L108 139 L81 139 Z" fill="#5f83a0"/>
+  <rect x="83" y="127" width="21" height="6" rx="3" fill="#f8fbff"/>
+  <path d="M94 145 L76 207 M94 145 L94 214 M94 145 L115 207" stroke="#7daade" stroke-width="1.4" opacity="0.75"/>
+  <circle cx="76" cy="207" r="2.2" fill="#4b95ba"/>
+  <circle cx="94" cy="214" r="2.2" fill="#4b95ba"/>
+  <circle cx="115" cy="207" r="2.2" fill="#4b95ba"/>
+  <path d="M39 219 C52 207 60 219 70 210 C81 198 91 217 101 208 C112 199 121 213 140 205 L140 236 L39 236 Z" fill="url(#terrain)"/>
+  <path d="M44 219 L50 190 L56 219 M66 212 L73 177 L80 214 M106 210 L114 181 L123 209 M126 207 L132 190 L138 205" stroke="#508a66" stroke-width="3" stroke-linecap="round"/>
+  <text x="47" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7180">Çoklu dönüş</text>
+
+  <!-- panel 2 -->
+  <text x="192" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536c">2 · Nokta bulutu</text>
+  <rect x="192" y="114" width="94" height="111" rx="13" fill="#f5faff" stroke="#d5e6ef"/>
+  <g fill="#609db7">
+    <circle cx="207" cy="132" r="2.3"/><circle cx="225" cy="125" r="2.3"/><circle cx="244" cy="137" r="2.3"/><circle cx="264" cy="128" r="2.3"/>
+    <circle cx="215" cy="147" r="2.3"/><circle cx="234" cy="153" r="2.3"/><circle cx="255" cy="146" r="2.3"/><circle cx="275" cy="158" r="2.3"/>
+  </g>
+  <g fill="#71a86b">
+    <circle cx="202" cy="181" r="2.4"/><circle cx="218" cy="190" r="2.4"/><circle cx="233" cy="180" r="2.4"/><circle cx="247" cy="197" r="2.4"/>
+    <circle cx="263" cy="185" r="2.4"/><circle cx="278" cy="202" r="2.4"/><circle cx="221" cy="210" r="2.4"/><circle cx="255" cy="213" r="2.4"/>
+  </g>
+  <path d="M202 169 C224 159 248 165 278 172" fill="none" stroke="#c9dbe5" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="195" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7180">Zemin ayırma</text>
+  <rect x="199" y="251" width="10" height="6" rx="3" fill="#609db7"/>
+  <text x="213" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728792">örtü</text>
+  <rect x="248" y="251" width="10" height="6" rx="3" fill="#71a86b"/>
+  <text x="262" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#728792">zemin</text>
+
+  <!-- panel 3 -->
+  <text x="339" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536c">3 · Arazi modeli</text>
+  <rect x="340" y="114" width="92" height="111" rx="13" fill="#eff8ed" stroke="#d3e6d0"/>
+  <g stroke="#9bcaa3" stroke-width="1">
+    <path d="M351 124 V215 M367 124 V215 M383 124 V215 M399 124 V215 M415 124 V215"/>
+    <path d="M348 132 H425 M348 149 H425 M348 166 H425 M348 183 H425 M348 200 H425"/>
+  </g>
+  <path d="M348 195 C363 190 367 177 381 181 C397 186 399 159 425 153 L425 215 L348 215 Z" fill="#9dcc9e" opacity="0.75"/>
+  <path d="M348 195 C363 190 367 177 381 181 C397 186 399 159 425 153" fill="none" stroke="#4d9363" stroke-width="2"/>
+  <text x="351" y="244" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7180">Izgara · DTM</text>
+  <path d="M352 255 H420" stroke="#9bb6c1" stroke-width="1.3"/>
+  <text x="365" y="259" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#628191">ölçek seçimi</text>
+
+  <!-- panel 4 -->
+  <text x="486" y="99" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31536c">4 · Mikro rölyef</text>
+  <rect x="485" y="114" width="115" height="89" rx="13" fill="url(#relief)" stroke="#d6e1ea"/>
+  <path d="M493 184 C508 170 517 180 529 169 C541 158 549 181 562 171 C575 160 583 167 594 150" fill="none" stroke="#6b91aa" stroke-width="2"/>
+  <path d="M494 145 C510 138 518 150 530 143 C542 135 552 145 566 137 C577 131 586 137 595 128" fill="none" stroke="#cc8378" stroke-width="1.7"/>
+  <path d="M518 119 L518 198 M551 119 L551 198 M584 119 L584 198" stroke="#ffffff" stroke-width="1" opacity="0.55"/>
+  <path d="M486 160 H599" stroke="#ffffff" stroke-width="1" opacity="0.55"/>
+  <rect x="507" y="151" width="36" height="25" rx="4" fill="none" stroke="#655c79" stroke-width="2" stroke-dasharray="4 2"/>
+  <path d="M524 181 L524 190 L518 190 L526 197 L534 190 L528 190 L528 181 Z" fill="#655c79"/>
+  <text x="486" y="221" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b7180">Teras · yol · hendek</text>
+  <rect x="485" y="237" width="115" height="20" rx="10" fill="#f8e8c5"/>
+  <circle cx="497" cy="247" r="4" fill="#d5964f"/>
+  <text x="507" y="251" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806641">Doğrulama gerekli</text>
+
+  <path d="M30 290 H610" stroke="#cfdee3" stroke-width="1"/>
+  <circle cx="35" cy="290" r="4" fill="#609db7"/>
+  <text x="45" y="294" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7683">Lazer toprağın içini değil, zemin biçimlerini ölçer</text>
+</svg>
