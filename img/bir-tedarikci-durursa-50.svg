@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="supplier" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7e7ff"/>
+      <stop offset="100%" stop-color="#bcd5f5"/>
+    </linearGradient>
+    <linearGradient id="warehouse" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f3e7"/>
+      <stop offset="100%" stop-color="#bce4d0"/>
+    </linearGradient>
+    <linearGradient id="customer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d5"/>
+      <stop offset="100%" stop-color="#f6d7a7"/>
+    </linearGradient>
+    <linearGradient id="risk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe1df"/>
+      <stop offset="100%" stop-color="#f7beb9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55708b" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="91" cy="43" r="58" fill="#dcecfb" opacity="0.48"/>
+  <circle cx="579" cy="286" r="82" fill="#dcefd8" opacity="0.48"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36516d">KESİNTİ SENARYOSU</text>
+  <text x="32" y="48" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8194">Tamponlar etkileri geciktirir, kuyruklar görünür kılar</text>
+
+  <path d="M158 116 H224" stroke="#77a3c6" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="224,116 215,110 215,122" fill="#77a3c6"/>
+  <path d="M384 116 H450" stroke="#77a3c6" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="450,116 441,110 441,122" fill="#77a3c6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="78" width="124" height="77" rx="17" fill="url(#supplier)"/>
+    <rect x="224" y="78" width="160" height="77" rx="17" fill="url(#warehouse)"/>
+    <rect x="450" y="78" width="124" height="77" rx="17" fill="url(#customer)"/>
+  </g>
+
+  <g fill="none" stroke="#41647d" stroke-width="2" stroke-linejoin="round">
+    <path d="M65 125 V105 H96 V125 M61 125 H100 V136 H61 Z"/>
+    <path d="M72 112 H78 M84 112 H90"/>
+    <path d="M270 115 L304 96 L338 115 V136 H270 Z"/>
+    <path d="M281 115 V104 H327 V115 M287 123 H297 M304 123 H314 M321 123 H329"/>
+    <circle cx="512" cy="108" r="10"/>
+    <path d="M495 136 C496 122 505 118 512 118 C519 118 528 122 529 136 M485 129 C487 120 494 117 499 117 M539 129 C537 120 530 117 525 117"/>
+  </g>
+
+  <text x="96" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#274a68">Tedarikçi</text>
+  <text x="304" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#285a4a">Dağıtım Deposu</text>
+  <text x="512" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#6d4d1e">Müşteri</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="169" y="92" width="46" height="47" rx="12" fill="#edf6ff"/>
+  </g>
+  <path d="M181 113 H203" stroke="#6494bb" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M181 122 H197" stroke="#6494bb" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="192" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52738d">Yolda</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="395" y="92" width="46" height="47" rx="12" fill="#edf6ff"/>
+  </g>
+  <path d="M406 122 H429" stroke="#6494bb" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M406 113 H423" stroke="#6494bb" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="418" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52738d">Teslim</text>
+
+  <path d="M96 167 V188 H251" fill="none" stroke="#cb6d67" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
+  <polygon points="251,188 242,182 242,194" fill="#cb6d67"/>
+  <g filter="url(#softShadow)">
+    <rect x="55" y="174" width="90" height="29" rx="12" fill="url(#risk)"/>
+  </g>
+  <path d="M76 184 L87 195 M87 184 L76 195" stroke="#b84f50" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="109" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#914243">Kesinti</text>
+
+  <g filter="url(#shadow)">
+    <rect x="226" y="178" width="156" height="91" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="304" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#335a57">Depo Tamponu</text>
+  <rect x="248" y="215" width="112" height="12" rx="6" fill="#e5edf1"/>
+  <rect x="248" y="215" width="76" height="12" rx="6" fill="#79c3a6"/>
+  <text x="248" y="249" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#57717b">Stok azalır</text>
+  <text x="360" y="249" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#477e6d">Tampon</text>
+
+  <path d="M382 222 H419" stroke="#d18370" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="419,222 410,216 410,228" fill="#d18370"/>
+
+  <g filter="url(#shadow)">
+    <rect x="419" y="178" width="161" height="91" rx="18" fill="#fffafa"/>
+  </g>
+  <text x="499" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#854b4c">Bekleyen Sipariş</text>
+  <path d="M445 244 V230 H456 V223 H467 V216 H478 V209 H489 V202" fill="none" stroke="#d16d6c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M445 246 H551" stroke="#d9e3e7" stroke-width="2" stroke-linecap="round"/>
+  <text x="532" y="249" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a45354">Kuyruk büyür</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="47" y="231" width="144" height="51" rx="16" fill="#e8f1ff"/>
+  </g>
+  <circle cx="72" cy="256" r="14" fill="#a9cbed"/>
+  <path d="M66 256 L71 261 L79 250" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="99" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6590">Yedek kaynak</text>
+  <text x="99" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66809a">Akışı destekler</text>
+
+  <path d="M191 256 H214 V143 H223" fill="none" stroke="#6c9bc2" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="223,143 214,137 214,149" fill="#6c9bc2"/>
+
+  <text x="32" y="305" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617a88">Önlem: güvenlik stoku • yedek tedarikçi • hızlı taşıma</text>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceaff"/>
+      <stop offset="100%" stop-color="#dff5e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f879b" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6f879b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="69" cy="56" r="72" fill="#dceeff" opacity="0.42"/>
+  <circle cx="578" cy="267" r="96" fill="#ddf3df" opacity="0.43"/>
+
+  <!-- Bağlantılar -->
+  <path d="M164 78 C203 78 213 112 247 129" fill="none" stroke="#91aac0" stroke-width="2.2"/>
+  <polygon points="247,129 237,123 239,135" fill="#91aac0"/>
+  <path d="M164 162 C204 162 213 159 242 159" fill="none" stroke="#91aac0" stroke-width="2.2"/>
+  <polygon points="247,159 237,153 237,165" fill="#91aac0"/>
+  <path d="M164 245 C203 245 215 208 247 190" fill="none" stroke="#91aac0" stroke-width="2.2"/>
+  <polygon points="247,190 237,189 243,200" fill="#91aac0"/>
+
+  <path d="M396 137 C426 116 438 92 468 82" fill="none" stroke="#7ba99a" stroke-width="2.2"/>
+  <polygon points="468,82 457,80 461,91" fill="#7ba99a"/>
+  <path d="M398 166 C429 166 438 163 468 163" fill="none" stroke="#7ba99a" stroke-width="2.2"/>
+  <polygon points="468,163 458,157 458,169" fill="#7ba99a"/>
+  <path d="M396 190 C427 213 440 239 468 245" fill="none" stroke="#7ba99a" stroke-width="2.2"/>
+  <polygon points="468,245 458,238 457,250" fill="#7ba99a"/>
+
+  <!-- Sol girişler -->
+  <g filter="url(#soft)">
+    <rect x="27" y="43" width="137" height="70" rx="16" fill="#e9f2ff" stroke="#c8daf1"/>
+    <circle cx="53" cy="75" r="15" fill="#8db8e8"/>
+    <path d="M44 77 C47 71 53 70 56 75 C60 71 67 74 67 80 C67 84 64 86 59 86 L47 86 C42 86 40 80 44 77Z" fill="#ffffff"/>
+    <text x="78" y="71" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#31536d" font-weight="600">Hava tahmini</text>
+    <text x="78" y="89" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668092">Rüzgâr, ışınım</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="27" y="127" width="137" height="70" rx="16" fill="#fff4dc" stroke="#f0d8a3"/>
+    <circle cx="53" cy="159" r="15" fill="#efbc62"/>
+    <path d="M53 148 L56 155 L63 155 L57 160 L59 168 L53 163 L47 168 L49 160 L43 155 L50 155Z" fill="#fffdf7"/>
+    <text x="78" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70552b" font-weight="600">Fizik katmanı</text>
+    <text x="78" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8c7653">Güç eğrileri</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="27" y="211" width="137" height="70" rx="16" fill="#f0eaff" stroke="#d9cbed"/>
+    <circle cx="53" cy="243" r="15" fill="#b59bdb"/>
+    <path d="M45 247 L50 242 L54 245 L62 236" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="45" cy="247" r="2" fill="#ffffff"/>
+    <circle cx="50" cy="242" r="2" fill="#ffffff"/>
+    <circle cx="54" cy="245" r="2" fill="#ffffff"/>
+    <circle cx="62" cy="236" r="2" fill="#ffffff"/>
+    <text x="78" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#594578" font-weight="600">Zaman serisi</text>
+    <text x="78" y="257" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#817091">Arşiv ve boşluk</text>
+  </g>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <rect x="247" y="95" width="150" height="130" rx="24" fill="url(#core)" stroke="#b8d5d0" stroke-width="1.2"/>
+    <circle cx="322" cy="134" r="26" fill="#ffffff" opacity="0.9"/>
+    <path d="M307 137 C311 128 317 126 322 132 C327 123 339 128 338 138 C337 145 331 147 324 147 L313 147 C307 147 304 142 307 137Z" fill="#78a9d7"/>
+    <path d="M321 119 L321 113 M308 124 L304 120 M334 124 L338 120" stroke="#e7ad4f" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="322" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315d66" font-weight="700">Tahmin modeli</text>
+    <text x="322" y="196" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d7b80">Makine öğrenmesi</text>
+    <rect x="277" y="205" width="90" height="7" rx="3.5" fill="#a5cfc3"/>
+  </g>
+
+  <!-- Sağ çıktılar -->
+  <g filter="url(#soft)">
+    <rect x="468" y="43" width="145" height="70" rx="16" fill="#e5f4fa" stroke="#c4e0e9"/>
+    <circle cx="494" cy="78" r="16" fill="#78b8d2"/>
+    <path d="M494 65 L494 91 M481 78 L507 78 M485 69 L503 87 M503 69 L485 87" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="494" cy="78" r="5" fill="#e9f8fb"/>
+    <text x="520" y="72" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2d5d6d" font-weight="600">Rüzgâr üretimi</text>
+    <text x="520" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#62808b">MW tahmini</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="468" y="128" width="145" height="70" rx="16" fill="#fff3d8" stroke="#f1d9a0"/>
+    <circle cx="494" cy="163" r="16" fill="#f0bb53"/>
+    <circle cx="494" cy="163" r="7" fill="#fffdf5"/>
+    <path d="M494 143 L494 149 M494 177 L494 183 M474 163 L480 163 M508 163 L514 163 M480 149 L484 153 M504 173 L508 177 M508 149 L504 153 M480 177 L484 173" stroke="#fffdf5" stroke-width="2" stroke-linecap="round"/>
+    <text x="520" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765622" font-weight="600">Güneş üretimi</text>
+    <text x="520" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#927845">MW tahmini</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="468" y="213" width="145" height="70" rx="16" fill="#eaf4ea" stroke="#c8e1ca"/>
+    <circle cx="494" cy="248" r="16" fill="#81bb8a"/>
+    <path d="M484 253 C488 247 489 242 494 242 C499 242 500 247 504 253" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M482 243 C487 237 491 234 494 234 C499 234 503 238 507 244" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="520" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c6945" font-weight="600">Belirsizlik bandı</text>
+    <text x="520" y="261" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66856b">Şebeke planı</text>
+  </g>
+</svg>
