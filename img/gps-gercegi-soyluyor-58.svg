@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="gpsGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dceeff"/>
+      <stop offset="100%" stop-color="#c8e2f7"/>
+    </linearGradient>
+    <linearGradient id="sensorGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4f6e9"/>
+      <stop offset="100%" stop-color="#ccebd7"/>
+    </linearGradient>
+    <linearGradient id="warnGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0cf"/>
+      <stop offset="100%" stop-color="#f8d8a7"/>
+    </linearGradient>
+    <linearGradient id="alertGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe2e2"/>
+      <stop offset="100%" stop-color="#f7c4c8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7190a0" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7190a0" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="59" cy="49" r="74" fill="#dceeff" opacity="0.34"/>
+  <circle cx="590" cy="280" r="105" fill="#dff2df" opacity="0.38"/>
+  <path d="M22 278 C126 240 126 300 226 272 S404 235 485 268 S570 296 623 244" fill="none" stroke="#b5d9da" stroke-width="1.5" opacity="0.48"/>
+
+  <text x="28" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36536a">GNSS GÜVEN DOĞRULAMA</text>
+  <text x="28" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e8493">Bağımsız ölçümler birbirini denetler</text>
+
+  <!-- GPS source -->
+  <g filter="url(#shadow)">
+    <rect x="29" y="100" width="130" height="79" rx="18" fill="url(#gpsGrad)" stroke="#a6cde5"/>
+    <circle cx="57" cy="128" r="15" fill="#eff8ff" stroke="#76afd0" stroke-width="1.5"/>
+    <path d="M48 133 L57 117 L66 133 Z" fill="#5598c3"/>
+    <circle cx="57" cy="129" r="3.2" fill="#f7fbff"/>
+    <text x="81" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a74">GNSS</text>
+    <text x="81" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#537488">Konum ve zaman</text>
+    <text x="49" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#537488">Uydu ölçümleri</text>
+  </g>
+
+  <!-- RF branch -->
+  <g filter="url(#softShadow)">
+    <rect x="184" y="73" width="133" height="67" rx="16" fill="url(#warnGrad)" stroke="#e7bd78"/>
+    <path d="M204 114 C211 106 211 96 204 89" fill="none" stroke="#c78b34" stroke-width="2" stroke-linecap="round"/>
+    <path d="M211 120 C222 107 222 94 211 82" fill="none" stroke="#c78b34" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="199" cy="102" r="4" fill="#c78b34"/>
+    <text x="231" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#775421">RF sağlığı</text>
+    <text x="231" y="117" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8b6b35">C/N0 ve gürültü</text>
+  </g>
+
+  <!-- prediction source -->
+  <g filter="url(#softShadow)">
+    <rect x="184" y="181" width="133" height="67" rx="16" fill="url(#sensorGrad)" stroke="#a8d5b7"/>
+    <circle cx="205" cy="213" r="15" fill="#f4fff6" stroke="#75b98b" stroke-width="1.5"/>
+    <path d="M199 216 L204 207 L211 212 L207 220 Z" fill="#5d9c72"/>
+    <text x="231" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e6c4c">Hareket tahmini</text>
+    <text x="231" y="226" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d8067">IMU ve tekerlek</text>
+  </g>
+
+  <!-- manual arrows -->
+  <path d="M159 126 L176 106" fill="none" stroke="#7ba2b7" stroke-width="2"/>
+  <polygon points="176,106 168,109 174,115" fill="#7ba2b7"/>
+  <path d="M159 158 L176 205" fill="none" stroke="#7ba2b7" stroke-width="2"/>
+  <polygon points="176,205 168,198 166,207" fill="#7ba2b7"/>
+  <path d="M317 107 L338 133" fill="none" stroke="#b38b47" stroke-width="2"/>
+  <polygon points="338,133 330,128 330,137" fill="#b38b47"/>
+  <path d="M317 214 L338 185" fill="none" stroke="#6fa080" stroke-width="2"/>
+  <polygon points="338,185 329,190 337,195" fill="#6fa080"/>
+
+  <!-- fusion center -->
+  <g filter="url(#shadow)">
+    <rect x="344" y="112" width="143" height="103" rx="23" fill="#eff5ff" stroke="#aabfdd" stroke-width="1.3"/>
+    <circle cx="415" cy="145" r="23" fill="#d5e5fb" stroke="#8fafd2"/>
+    <path d="M405 145 L412 152 L426 137" fill="none" stroke="#507fa9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="372" y="181" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395b7a">Tutarlılık denetimi</text>
+    <text x="371" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637b91">Artık ve sayaç</text>
+  </g>
+
+  <path d="M487 151 L512 151" fill="none" stroke="#718ba0" stroke-width="2.2"/>
+  <polygon points="512,151 503,146 503,156" fill="#718ba0"/>
+
+  <!-- output panel -->
+  <g filter="url(#shadow)">
+    <rect x="519" y="82" width="95" height="139" rx="19" fill="#ffffff" stroke="#c9d9db"/>
+    <text x="540" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45606e">Güven</text>
+    <rect x="536" y="120" width="61" height="22" rx="11" fill="#dff3e4"/>
+    <circle cx="547" cy="131" r="5" fill="#61af78"/>
+    <text x="559" y="135" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#427151">Normal</text>
+    <rect x="536" y="151" width="61" height="22" rx="11" fill="#fff0d5"/>
+    <circle cx="547" cy="162" r="5" fill="#d69a3d"/>
+    <text x="559" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#855e24">Şüphe</text>
+    <rect x="536" y="182" width="61" height="22" rx="11" fill="#ffe1e1"/>
+    <circle cx="547" cy="193" r="5" fill="#d5656d"/>
+    <text x="559" y="197" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#91474d">Alarm</text>
+  </g>
+
+  <!-- bottom alert cues -->
+  <g filter="url(#softShadow)">
+    <rect x="61" y="265" width="170" height="31" rx="15" fill="#fff8e9" stroke="#edd7a7"/>
+    <path d="M79 286 L86 273 L93 286 Z" fill="#d59a3d"/>
+    <rect x="85" y="277" width="2" height="5" rx="1" fill="#fff8e9"/>
+    <circle cx="86" cy="283" r="1.2" fill="#fff8e9"/>
+    <text x="105" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#76592e">Jamming: sinyal bastırma</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="252" y="265" width="179" height="31" rx="15" fill="#fff0f0" stroke="#ecc4c6"/>
+    <path d="M270 275 L282 281 L270 287 Z" fill="#cf6870"/>
+    <path d="M283 276 L290 281 L283 286" fill="none" stroke="#cf6870" stroke-width="2"/>
+    <text x="302" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#80484d">Spoofing: sahte ölçüm</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="451" y="265" width="137" height="31" rx="15" fill="#e8f5ed" stroke="#bdddc8"/>
+    <path d="M470 281 L475 286 L485 274" fill="none" stroke="#5c9e72" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="497" y="285" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#467354">Güvenli tepki</text>
+  </g>
+</svg>
