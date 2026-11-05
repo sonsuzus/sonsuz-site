@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e1e9ff"/>
+      <stop offset="100%" stop-color="#d8f1e5"/>
+    </linearGradient>
+    <filter id="golge" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5c7191" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5c7191" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="318" cy="160" r="123" fill="#dceeff" opacity="0.32"/>
+  <circle cx="318" cy="160" r="94" fill="none" stroke="#9fc4d9" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.55"/>
+
+  <!-- Bağlantılar -->
+  <path d="M158 89 C196 91 210 108 235 126" fill="none" stroke="#7898b3" stroke-width="2"/>
+  <polygon points="235,126 225,124 230,116" fill="#7898b3"/>
+  <path d="M160 222 C195 215 211 204 236 190" fill="none" stroke="#7898b3" stroke-width="2"/>
+  <polygon points="236,190 227,197 225,188" fill="#7898b3"/>
+  <path d="M401 127 C428 108 447 91 479 88" fill="none" stroke="#7898b3" stroke-width="2"/>
+  <polygon points="479,88 469,94 470,84" fill="#7898b3"/>
+  <path d="M401 191 C431 209 450 223 480 225" fill="none" stroke="#7898b3" stroke-width="2"/>
+  <polygon points="480,225 470,229 471,219" fill="#7898b3"/>
+
+  <!-- Sol üst teklif -->
+  <g filter="url(#golge)">
+    <rect x="27" y="49" width="133" height="80" rx="17" fill="#ffffff"/>
+    <rect x="27" y="49" width="7" height="80" rx="3.5" fill="#83aefa"/>
+  </g>
+  <circle cx="56" cy="76" r="14" fill="#e6eeff"/>
+  <path d="M50 80 L56 69 L62 80 Z" fill="#759df0"/>
+  <path d="M51 84 H61" stroke="#759df0" stroke-width="2" stroke-linecap="round"/>
+  <text x="79" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#324563">Üreticiler</text>
+  <text x="79" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60738d">Fiyat ve miktar</text>
+  <text x="48" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54739b">A · B · C teklifleri</text>
+
+  <!-- Sol alt talep -->
+  <g filter="url(#golge)">
+    <rect x="27" y="190" width="133" height="80" rx="17" fill="#ffffff"/>
+    <rect x="27" y="190" width="7" height="80" rx="3.5" fill="#72c5aa"/>
+  </g>
+  <circle cx="56" cy="217" r="14" fill="#e0f5ec"/>
+  <path d="M49 220 C52 211 60 211 63 220" fill="none" stroke="#54ab8f" stroke-width="2"/>
+  <circle cx="56" cy="211" r="4" fill="none" stroke="#54ab8f" stroke-width="2"/>
+  <text x="79" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#324563">Talep</text>
+  <text x="79" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60738d">60 MWh ihtiyacı</text>
+  <text x="48" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54739b">Teslimat saati</text>
+
+  <!-- Merkez motor -->
+  <g filter="url(#golge)">
+    <rect x="235" y="104" width="166" height="112" rx="25" fill="url(#merkez)" stroke="#b8d4df" stroke-width="1.2"/>
+  </g>
+  <circle cx="318" cy="133" r="20" fill="#ffffff" opacity="0.78"/>
+  <path d="M308 135 L315 142 L329 124" fill="none" stroke="#4d88a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="318" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#294861">Piyasa Takas Motoru</text>
+  <text x="318" y="189" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557286">Ekonomik öncelik sırası</text>
+  <text x="318" y="205" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557286">Maliyet en aza indir</text>
+
+  <!-- Sağ üst fiyat -->
+  <g filter="url(#golge)">
+    <rect x="480" y="49" width="133" height="80" rx="17" fill="#ffffff"/>
+    <rect x="606" y="49" width="7" height="80" rx="3.5" fill="#efab70"/>
+  </g>
+  <circle cx="510" cy="76" r="14" fill="#fff0e2"/>
+  <text x="510" y="81" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#dd8c50">₺</text>
+  <text x="533" y="75" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#324563">Piyasa Fiyatı</text>
+  <text x="533" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60738d">Marjinal teklif</text>
+  <text x="500" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#c17842">1.200 TL/MWh</text>
+
+  <!-- Sağ alt sonuç -->
+  <g filter="url(#golge)">
+    <rect x="480" y="190" width="133" height="80" rx="17" fill="#ffffff"/>
+    <rect x="606" y="190" width="7" height="80" rx="3.5" fill="#b28ad8"/>
+  </g>
+  <circle cx="510" cy="217" r="14" fill="#f1e8fb"/>
+  <path d="M504 212 H516 M504 217 H516 M504 222 H512" stroke="#9974bc" stroke-width="2" stroke-linecap="round"/>
+  <text x="533" y="216" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#324563">Yayımlama</text>
+  <text x="533" y="235" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60738d">Kabul ve uzlaştırma</text>
+  <text x="500" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#806298">Kayıtlı kural sürümü</text>
+
+  <!-- Alt bilgi şeridi -->
+  <g filter="url(#hafifGolge)">
+    <rect x="178" y="279" width="284" height="25" rx="12.5" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <circle cx="198" cy="291.5" r="4" fill="#74b99f"/>
+  <text x="209" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d7c">Doğrulama</text>
+  <circle cx="292" cy="291.5" r="4" fill="#80a7e6"/>
+  <text x="303" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d7c">Optimizasyon</text>
+  <circle cx="406" cy="291.5" r="4" fill="#d89a6c"/>
+  <text x="417" y="296" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536d7c">İzlenebilirlik</text>
+</svg>
