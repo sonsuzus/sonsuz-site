@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7299d9"/>
+      <stop offset="100%" stop-color="#57b89b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#58718c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#58718c" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="76" cy="42" r="70" fill="#cde8f1" opacity="0.28"/>
+  <circle cx="590" cy="282" r="90" fill="#d8edd3" opacity="0.32"/>
+  <path d="M35 260 C140 215 168 294 272 257 S448 206 608 248" fill="none" stroke="#b8d7d4" stroke-width="2" opacity="0.45"/>
+
+  <text x="34" y="39" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#45627a">AKILLI ŞEBEKE</text>
+  <text x="34" y="58" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Talep tahmin döngüsü</text>
+
+  <path d="M149 158 H184" fill="none" stroke="url(#flow)" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="184,158 175,152 175,164" fill="#639eae"/>
+  <path d="M304 158 H339" fill="none" stroke="url(#flow)" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="339,158 330,152 330,164" fill="#5baa9f"/>
+  <path d="M459 158 H494" fill="none" stroke="url(#flow)" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="494,158 485,152 485,164" fill="#5baa9f"/>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="109" width="115" height="98" rx="18" fill="#ffffff"/>
+    <rect x="34" y="109" width="115" height="9" rx="4.5" fill="#91bae8"/>
+  </g>
+  <circle cx="61" cy="142" r="14" fill="#e3f1ff"/>
+  <path d="M52 145 L57 137 L62 142 L68 132 L73 138" fill="none" stroke="#5c91c8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395872">Geçmiş</text>
+  <text x="84" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8394">Tüketim</text>
+  <text x="50" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60788b">Saatlik MWh</text>
+
+  <g filter="url(#shadow)">
+    <rect x="184" y="109" width="120" height="98" rx="18" fill="#ffffff"/>
+    <rect x="184" y="109" width="120" height="9" rx="4.5" fill="#b4d99b"/>
+  </g>
+  <circle cx="211" cy="142" r="14" fill="#edf8e8"/>
+  <path d="M202 147 V139 M207 147 V135 M212 147 V140 M217 147 V132 M222 147 V137" stroke="#74a461" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="234" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395872">Özellikler</text>
+  <text x="234" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8394">Saat ve hava</text>
+  <text x="200" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60788b">Gecikme • Takvim</text>
+
+  <g filter="url(#shadow)">
+    <rect x="339" y="96" width="120" height="124" rx="22" fill="#ffffff"/>
+    <rect x="339" y="96" width="120" height="9" rx="4.5" fill="#bca9e7"/>
+  </g>
+  <circle cx="399" cy="145" r="27" fill="#f0ebfb"/>
+  <circle cx="387" cy="136" r="5" fill="#8e78c4"/>
+  <circle cx="411" cy="136" r="5" fill="#8e78c4"/>
+  <circle cx="387" cy="155" r="5" fill="#8e78c4"/>
+  <circle cx="411" cy="155" r="5" fill="#8e78c4"/>
+  <path d="M392 139 L406 139 M391 151 L407 141 M392 154 L406 154" stroke="#8e78c4" stroke-width="1.7" fill="none"/>
+  <text x="372" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395872">Tahmin modeli</text>
+  <text x="375" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8394">Öğrenme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="494" y="109" width="112" height="98" rx="18" fill="#ffffff"/>
+    <rect x="494" y="109" width="112" height="9" rx="4.5" fill="#73c6ae"/>
+  </g>
+  <circle cx="522" cy="142" r="14" fill="#e4f7f0"/>
+  <path d="M514 148 C517 143 519 145 522 138 S527 142 531 133" fill="none" stroke="#399d81" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="545" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#395872">Yarın</text>
+  <text x="545" y="160" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8394">Talep</text>
+  <text x="511" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#60788b">Aralık ve rezerv</text>
+
+  <path d="M551 222 C549 268 424 278 404 231" fill="none" stroke="#8ca9bc" stroke-width="2" stroke-dasharray="5 5" opacity="0.85"/>
+  <polygon points="403,231 412,237 411,226" fill="#8ca9bc"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="233" y="251" width="173" height="42" rx="14" fill="#ffffff"/>
+  </g>
+  <circle cx="255" cy="272" r="10" fill="#fff1d9"/>
+  <path d="M251 272 L254 275 L260 268" fill="none" stroke="#d29447" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="273" y="269" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c687d">Hata izleme</text>
+  <text x="273" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718799">Yeniden eğitim</text>
+</svg>
