@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="sourceGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce2fa"/>
+    </linearGradient>
+    <linearGradient id="kafkaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7ddff"/>
+      <stop offset="100%" stop-color="#d8c9f6"/>
+    </linearGradient>
+    <linearGradient id="flinkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7f2e9"/>
+      <stop offset="100%" stop-color="#c4e7dc"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d5"/>
+      <stop offset="100%" stop-color="#f8dfb3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#58718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58718a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="80" cy="38" r="70" fill="#dceeff" opacity="0.45"/>
+  <circle cx="587" cy="283" r="88" fill="#dff2db" opacity="0.48"/>
+  <path d="M28 196 C117 174, 174 215, 257 193 S410 174, 493 193 S571 208, 618 180" fill="none" stroke="#c9e2dd" stroke-width="2" opacity="0.55"/>
+
+  <text x="28" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546b">GERÇEK ZAMANLI PİYASA AKIŞI</text>
+  <text x="28" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718895">Olaylar akar • durum artımlı güncellenir</text>
+
+  <path d="M139 148 L166 148" stroke="#7197ad" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="166,148 157,142 157,154" fill="#7197ad"/>
+  <path d="M284 148 L311 148" stroke="#7197ad" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="311,148 302,142 302,154" fill="#7197ad"/>
+  <path d="M458 148 L485 148" stroke="#7197ad" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="485,148 476,142 476,154" fill="#7197ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="103" width="111" height="91" rx="18" fill="url(#sourceGrad)" stroke="#bad4eb"/>
+  </g>
+  <rect x="43" y="119" width="31" height="24" rx="7" fill="#ffffff" opacity="0.82"/>
+  <path d="M50 135 L56 128 L62 132 L68 123" fill="none" stroke="#4f8eb4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="51" cy="135" r="2" fill="#4f8eb4"/>
+  <circle cx="68" cy="123" r="2" fill="#4f8eb4"/>
+  <text x="84" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#31566e">Piyasa</text>
+  <text x="84" y="145" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527288">olayları</text>
+  <text x="43" y="169" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56778d">Fiyat • emir • işlem</text>
+
+  <g filter="url(#shadow)">
+    <rect x="166" y="103" width="118" height="91" rx="18" fill="url(#kafkaGrad)" stroke="#c8b8e8"/>
+  </g>
+  <circle cx="192" cy="132" r="15" fill="#ffffff" opacity="0.76"/>
+  <circle cx="187" cy="128" r="3" fill="#805fb2"/>
+  <circle cx="198" cy="126" r="3" fill="#805fb2"/>
+  <circle cx="198" cy="138" r="3" fill="#805fb2"/>
+  <path d="M189 129 L196 127 M189 130 L196 137" stroke="#805fb2" stroke-width="1.6"/>
+  <text x="216" y="132" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#59427d">Kafka</text>
+  <text x="216" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#705b91">Konu ve kuyruk</text>
+  <rect x="181" y="164" width="87" height="13" rx="6.5" fill="#ffffff" opacity="0.58"/>
+  <path d="M189 170.5 L259 170.5" stroke="#967bbd" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="311" y="87" width="147" height="122" rx="20" fill="url(#flinkGrad)" stroke="#a8d8ca"/>
+  </g>
+  <text x="329" y="113" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#2d6c61">Flink</text>
+  <text x="329" y="129" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c8278">Akış hesaplama</text>
+  <rect x="327" y="141" width="51" height="43" rx="10" fill="#ffffff" opacity="0.75"/>
+  <path d="M338 162 L345 155 L352 162 L359 151 L368 158" fill="none" stroke="#40a58e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="386" y="141" width="55" height="20" rx="8" fill="#b8dfd2"/>
+  <text x="396" y="155" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c6d60">Durum</text>
+  <rect x="386" y="166" width="55" height="20" rx="8" fill="#a7d5c7"/>
+  <text x="394" y="180" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#2c6d60">1 sn</text>
+
+  <g filter="url(#shadow)">
+    <rect x="485" y="103" width="127" height="91" rx="18" fill="url(#resultGrad)" stroke="#e8c990"/>
+  </g>
+  <rect x="501" y="120" width="31" height="31" rx="8" fill="#ffffff" opacity="0.78"/>
+  <path d="M508 143 L508 135 M515 143 L515 127 M522 143 L522 132" stroke="#c88b37" stroke-width="3" stroke-linecap="round"/>
+  <text x="543" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805d2c">Canlı sonuç</text>
+  <text x="543" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#927448">VWAP ve hacim</text>
+  <text x="501" y="171" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a7943">Gösterge paneli</text>
+
+  <path d="M384 75 L384 62 L306 62 L306 71" fill="none" stroke="#7bb3a5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="306,71 301,63 311,63" fill="#7bb3a5"/>
+  <g filter="url(#smallShadow)">
+    <rect x="253" y="35" width="132" height="27" rx="13" fill="#ffffff" stroke="#c6e1da"/>
+  </g>
+  <circle cx="270" cy="48.5" r="5" fill="#62ad99"/>
+  <text x="281" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#42766d">Watermark: 2 sn</text>
+
+  <path d="M375 210 L375 235" stroke="#7bb3a5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="375,235 370,227 380,227" fill="#7bb3a5"/>
+  <g filter="url(#smallShadow)">
+    <rect x="301" y="235" width="149" height="45" rx="14" fill="#ffffff" stroke="#c6e1da"/>
+  </g>
+  <path d="M319 258 C319 251, 329 249, 333 254 C338 247, 350 251, 349 259 C358 259, 359 270, 350 270 L322 270 C313 270, 311 260, 319 258Z" fill="#d5eee7" stroke="#72ae9f"/>
+  <text x="365" y="256" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#41786d">Checkpoint</text>
+  <text x="365" y="272" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638b83">Kurtarma</text>
+
+  <path d="M105 238 C157 224, 219 227, 287 246" fill="none" stroke="#e39886" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="287,246 278,240 279,251" fill="#e39886"/>
+  <g filter="url(#smallShadow)">
+    <rect x="40" y="221" width="134" height="42" rx="14" fill="#fff8f5" stroke="#f0c0b4"/>
+  </g>
+  <circle cx="59" cy="242" r="8" fill="#f4b2a1"/>
+  <path d="M59 237 L59 242 L63 245" fill="none" stroke="#a85c50" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="76" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9b5b51">Geç olay</text>
+  <text x="76" y="255" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a77a71">Düzeltme politikası</text>
+</svg>

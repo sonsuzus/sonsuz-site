@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8caef5"/>
+      <stop offset="100%" stop-color="#7cd4c5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#5d7890" flood-opacity="0.20"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#728599" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="160" r="126" fill="#dceefa" opacity="0.42"/>
+  <circle cx="320" cy="160" r="88" fill="#ffffff" opacity="0.44"/>
+
+  <!-- iletişim bağları -->
+  <g stroke="#89a7bd" stroke-width="2" stroke-linecap="round" opacity="0.72">
+    <line x1="211" y1="91" x2="268" y2="133"/>
+    <line x1="268" y1="133" x2="320" y2="105"/>
+    <line x1="320" y1="105" x2="379" y2="127"/>
+    <line x1="379" y1="127" x2="437" y2="90"/>
+    <line x1="211" y1="91" x2="194" y2="169"/>
+    <line x1="194" y1="169" x2="252" y2="209"/>
+    <line x1="252" y1="209" x2="320" y2="222"/>
+    <line x1="320" y1="222" x2="390" y2="211"/>
+    <line x1="390" y1="211" x2="446" y2="168"/>
+    <line x1="446" y1="168" x2="437" y2="90"/>
+    <line x1="268" y1="133" x2="252" y2="209"/>
+    <line x1="379" y1="127" x2="390" y2="211"/>
+    <line x1="268" y1="133" x2="379" y2="127"/>
+    <line x1="252" y1="209" x2="390" y2="211"/>
+  </g>
+
+  <!-- dış akış çizgileri -->
+  <g fill="none" stroke="#7798af" stroke-width="2" stroke-linecap="round">
+    <path d="M151 79 C168 79 175 85 187 89"/>
+    <path d="M471 87 C485 83 491 79 505 76"/>
+    <path d="M163 247 C177 236 183 222 192 208"/>
+    <path d="M471 218 C487 232 495 242 508 248"/>
+  </g>
+  <g fill="#7798af">
+    <polygon points="187,89 180,84 181,93"/>
+    <polygon points="505,76 496,74 500,82"/>
+    <polygon points="192,208 184,211 190,217"/>
+    <polygon points="508,248 499,242 499,251"/>
+  </g>
+
+  <!-- merkez -->
+  <g filter="url(#shadow)">
+    <circle cx="320" cy="160" r="47" fill="url(#core)"/>
+    <circle cx="320" cy="160" r="38" fill="#ffffff" opacity="0.18"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9">
+    <circle cx="320" cy="146" r="7"/>
+    <path d="M307 174 Q320 161 333 174"/>
+    <path d="M302 154 L292 149"/>
+    <path d="M338 154 L348 149"/>
+  </g>
+  <text x="320" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Yerel karar</text>
+
+  <!-- robot düğümleri -->
+  <g filter="url(#softShadow)">
+    <g>
+      <circle cx="211" cy="91" r="16" fill="#ffe2b6"/>
+      <circle cx="211" cy="91" r="7" fill="#f1a84c"/>
+      <path d="M200 82 L194 76 M222 82 L228 76" stroke="#d68c36" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="268" cy="133" r="16" fill="#d8e7ff"/>
+      <circle cx="268" cy="133" r="7" fill="#719ee5"/>
+      <path d="M257 124 L251 118 M279 124 L285 118" stroke="#5b88ce" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="320" cy="105" r="16" fill="#d8f2e8"/>
+      <circle cx="320" cy="105" r="7" fill="#55b99c"/>
+      <path d="M309 96 L303 90 M331 96 L337 90" stroke="#409b81" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="379" cy="127" r="16" fill="#efdffc"/>
+      <circle cx="379" cy="127" r="7" fill="#ac7bd7"/>
+      <path d="M368 118 L362 112 M390 118 L396 112" stroke="#9462c0" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="437" cy="90" r="16" fill="#ffe0e4"/>
+      <circle cx="437" cy="90" r="7" fill="#e48392"/>
+      <path d="M426 81 L420 75 M448 81 L454 75" stroke="#ca6878" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="194" cy="169" r="16" fill="#d8f2e8"/>
+      <circle cx="194" cy="169" r="7" fill="#55b99c"/>
+      <path d="M183 160 L177 154 M205 160 L211 154" stroke="#409b81" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="252" cy="209" r="16" fill="#ffe2b6"/>
+      <circle cx="252" cy="209" r="7" fill="#f1a84c"/>
+      <path d="M241 200 L235 194 M263 200 L269 194" stroke="#d68c36" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="320" cy="222" r="16" fill="#d8e7ff"/>
+      <circle cx="320" cy="222" r="7" fill="#719ee5"/>
+      <path d="M309 213 L303 207 M331 213 L337 207" stroke="#5b88ce" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="390" cy="211" r="16" fill="#efdffc"/>
+      <circle cx="390" cy="211" r="7" fill="#ac7bd7"/>
+      <path d="M379 202 L373 196 M401 202 L407 196" stroke="#9462c0" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="446" cy="168" r="16" fill="#ffe0e4"/>
+      <circle cx="446" cy="168" r="7" fill="#e48392"/>
+      <path d="M435 159 L429 153 M457 159 L463 153" stroke="#ca6878" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- özellik kartları -->
+  <g filter="url(#softShadow)">
+    <rect x="24" y="45" width="130" height="67" rx="15" fill="#ffffff"/>
+    <rect x="486" y="43" width="130" height="67" rx="15" fill="#ffffff"/>
+    <rect x="24" y="222" width="145" height="68" rx="15" fill="#ffffff"/>
+    <rect x="486" y="221" width="130" height="68" rx="15" fill="#ffffff"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385166">
+    <circle cx="45" cy="68" r="9" fill="#ffe0b0"/>
+    <path d="M41 68 L45 64 L49 68 L45 72 Z" fill="#df953a"/>
+    <text x="62" y="72" font-weight="600">Komşu algısı</text>
+    <text x="45" y="94" fill="#6c8191">Sınırlı bilgi</text>
+
+    <circle cx="507" cy="66" r="9" fill="#d9e7ff"/>
+    <path d="M502 66 L510 66 M507 61 L507 71" stroke="#5c8ed5" stroke-width="2" stroke-linecap="round"/>
+    <text x="524" y="70" font-weight="600">Yerel kurallar</text>
+    <text x="507" y="92" fill="#6c8191">Ayrışma · hizalanma</text>
+
+    <circle cx="45" cy="245" r="9" fill="#d6f1e6"/>
+    <path d="M40 245 Q45 239 50 245 Q45 251 40 245" fill="none" stroke="#48a78b" stroke-width="2"/>
+    <text x="62" y="249" font-weight="600">Bilgi yayılımı</text>
+    <text x="45" y="271" fill="#6c8191">Komşudan komşuya</text>
+
+    <circle cx="507" cy="244" r="9" fill="#eadbfa"/>
+    <path d="M503 248 L511 240 M511 248 L503 240" stroke="#9a6bc5" stroke-width="2" stroke-linecap="round"/>
+    <text x="524" y="248" font-weight="600">Kolektif düzen</text>
+    <text x="507" y="270" fill="#6c8191">Merkezsiz sürü</text>
+  </g>
+
+  <text x="320" y="27" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#4d6b7d">Sürü Robotikleri</text>
+</svg>
