@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#d9f2e2"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#70829a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#70829a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="71" cy="46" r="58" fill="#dceeff" opacity="0.5"/>
+  <circle cx="587" cy="277" r="78" fill="#dff3df" opacity="0.52"/>
+  <path d="M45 270 C125 235, 153 297, 225 277 S364 237, 423 273 S531 302, 603 244" fill="none" stroke="#b7d9d5" stroke-width="2" opacity="0.42"/>
+
+  <!-- Sol: öğrenme girdisi -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="105" width="126" height="108" rx="20" fill="#ffffff"/>
+    <rect x="28" y="105" width="126" height="31" rx="20" fill="#ddecff"/>
+    <path d="M28 126 H154" stroke="#c6daf2"/>
+    <circle cx="53" cy="158" r="13" fill="#8eb8ef"/>
+    <path d="M47 158 L51 162 L59 153" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="74" y="149" width="57" height="8" rx="4" fill="#c8dcf3"/>
+    <rect x="74" y="164" width="43" height="7" rx="3.5" fill="#e1ebf7"/>
+    <rect x="45" y="186" width="90" height="10" rx="5" fill="#eaf3ff"/>
+    <text x="91" y="126" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#345372">Öğrenci işlemi</text>
+    <text x="91" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#54708b">Sınav ve teslim</text>
+  </g>
+
+  <!-- Manuel ok sol-orta -->
+  <path d="M160 159 H199" fill="none" stroke="#6e95b4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M199 159 L190 153 L190 165 Z" fill="#6e95b4"/>
+  <text x="179" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66819b">doğrula</text>
+
+  <!-- Merkez çekirdek -->
+  <g filter="url(#shadow)">
+    <rect x="205" y="66" width="220" height="188" rx="28" fill="url(#core)" stroke="#b9d9d5" stroke-width="1.2"/>
+    <rect x="225" y="84" width="180" height="35" rx="13" fill="#ffffff" opacity="0.88"/>
+    <circle cx="247" cy="101" r="10" fill="#91c4af"/>
+    <path d="M243 101 H251 M247 97 V105" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="316" y="105" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#315c55">Modüler LMS çekirdeği</text>
+
+    <g filter="url(#smallShadow)">
+      <rect x="225" y="134" width="82" height="43" rx="12" fill="#fffdf7"/>
+      <rect x="323" y="134" width="82" height="43" rx="12" fill="#fffdf7"/>
+      <rect x="225" y="191" width="82" height="43" rx="12" fill="#fffdf7"/>
+      <rect x="323" y="191" width="82" height="43" rx="12" fill="#fffdf7"/>
+    </g>
+
+    <circle cx="242" cy="151" r="6" fill="#9cbce6"/>
+    <text x="266" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d5b76">Ders kaydı</text>
+
+    <circle cx="340" cy="151" r="6" fill="#e6b779"/>
+    <text x="364" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b5230">Etkinlik</text>
+
+    <circle cx="242" cy="208" r="6" fill="#c693d8"/>
+    <text x="267" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#654474">Yetki</text>
+
+    <circle cx="340" cy="208" r="6" fill="#8fc5a1"/>
+    <text x="367" y="212" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f694d">Dosya API</text>
+  </g>
+
+  <!-- Merkezden sağ akış -->
+  <path d="M432 130 H455 V104 H472" fill="none" stroke="#779ca1" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M472 104 L463 98 L463 110 Z" fill="#779ca1"/>
+  <path d="M432 183 H455 V161 H472" fill="none" stroke="#779ca1" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M472 161 L463 155 L463 167 Z" fill="#779ca1"/>
+  <path d="M432 229 H455 V223 H472" fill="none" stroke="#779ca1" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M472 223 L463 217 L463 229 Z" fill="#779ca1"/>
+
+  <!-- Sağ sonuç alanları -->
+  <g filter="url(#shadow)">
+    <rect x="478" y="72" width="132" height="64" rx="17" fill="#fff8e9"/>
+    <circle cx="503" cy="104" r="15" fill="#f2c980"/>
+    <path d="M496 105 L501 110 L510 98" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="555" y="98" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#75562a">Değerlendirme</text>
+    <text x="555" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a7048">Puanlama</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="478" y="143" width="132" height="64" rx="17" fill="#f4ebfb"/>
+    <circle cx="503" cy="175" r="15" fill="#c99cdd"/>
+    <path d="M496 180 H510 M498 175 H508 M501 170 H505" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="555" y="169" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#684677">Not defteri</text>
+    <text x="555" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#84648f">Birleştirme</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="478" y="214" width="132" height="64" rx="17" fill="#e9f7ee"/>
+    <circle cx="503" cy="246" r="15" fill="#91c8a2"/>
+    <path d="M496 246 L501 251 L510 240" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="555" y="240" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#426e50">Tamamlama</text>
+    <text x="555" y="258" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668372">İlerleme</text>
+  </g>
+
+  <!-- Alttaki olay hattı -->
+  <path d="M358 257 V285 H476" fill="none" stroke="#7b92ac" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <path d="M476 285 L467 279 L467 291 Z" fill="#7b92ac"/>
+  <rect x="253" y="274" width="111" height="25" rx="12" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="308" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536c86">İşlem ve olay</text>
+  <rect x="481" y="273" width="111" height="25" rx="12" fill="#ffffff" filter="url(#smallShadow)"/>
+  <text x="536" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#536c86">Arka plan görevi</text>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="iqGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#cce4f7"/>
+    </linearGradient>
+    <linearGradient id="fftGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7ddff"/>
+      <stop offset="100%" stop-color="#d9cbf5"/>
+    </linearGradient>
+    <linearGradient id="featGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f4e6"/>
+      <stop offset="100%" stop-color="#c6e9d9"/>
+    </linearGradient>
+    <linearGradient id="modelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe8cb"/>
+      <stop offset="100%" stop-color="#f7d7ae"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6c8290" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8290" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="73" cy="48" r="74" fill="#dceeff" opacity="0.42"/>
+  <circle cx="584" cy="280" r="94" fill="#dff1d5" opacity="0.42"/>
+
+  <text x="32" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#355368">Sinyal Analiz Zinciri</text>
+  <text x="32" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8490">Ölçümden belirsizlik farkındalığına</text>
+
+  <path d="M133 151 H157" stroke="#83a0ad" stroke-width="2.2" fill="none"/>
+  <polygon points="157,151 149,146 149,156" fill="#83a0ad"/>
+  <path d="M270 151 H294" stroke="#83a0ad" stroke-width="2.2" fill="none"/>
+  <polygon points="294,151 286,146 286,156" fill="#83a0ad"/>
+  <path d="M407 151 H431" stroke="#83a0ad" stroke-width="2.2" fill="none"/>
+  <polygon points="431,151 423,146 423,156" fill="#83a0ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="103" width="105" height="97" rx="18" fill="url(#iqGrad)"/>
+    <rect x="28" y="103" width="105" height="97" rx="18" fill="none" stroke="#b6d2e8"/>
+  </g>
+  <text x="80.5" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#34576e">I/Q Örnekleri</text>
+  <path d="M43 158 C50 137 57 179 64 157 S78 136 85 158 S99 177 106 157 S120 138 125 153" fill="none" stroke="#397d9e" stroke-width="2.2"/>
+  <line x1="43" y1="174" x2="119" y2="174" stroke="#8ab4cb" stroke-width="1"/>
+  <text x="80.5" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547486">sinyal + gürültü</text>
+
+  <g filter="url(#shadow)">
+    <rect x="157" y="103" width="113" height="97" rx="18" fill="url(#fftGrad)"/>
+    <rect x="157" y="103" width="113" height="97" rx="18" fill="none" stroke="#c9bde6"/>
+  </g>
+  <text x="213.5" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d4d84">Ön İşleme ve FFT</text>
+  <line x1="176" y1="176" x2="252" y2="176" stroke="#9c8bb8" stroke-width="1.2"/>
+  <rect x="181" y="161" width="7" height="15" rx="2" fill="#8872ac"/>
+  <rect x="192" y="153" width="7" height="23" rx="2" fill="#8872ac"/>
+  <rect x="203" y="132" width="7" height="44" rx="2" fill="#6f579a"/>
+  <rect x="214" y="145" width="7" height="31" rx="2" fill="#8872ac"/>
+  <rect x="225" y="158" width="7" height="18" rx="2" fill="#8872ac"/>
+  <rect x="236" y="166" width="7" height="10" rx="2" fill="#8872ac"/>
+  <text x="213.5" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#70658b">spektrum</text>
+
+  <g filter="url(#shadow)">
+    <rect x="294" y="103" width="113" height="97" rx="18" fill="url(#featGrad)"/>
+    <rect x="294" y="103" width="113" height="97" rx="18" fill="none" stroke="#b6dac9"/>
+  </g>
+  <text x="350.5" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#376b58">Özellikler</text>
+  <g fill="#5f9e83">
+    <circle cx="316" cy="151" r="8"/>
+    <circle cx="351" cy="151" r="8"/>
+    <circle cx="386" cy="151" r="8"/>
+  </g>
+  <text x="316" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">E</text>
+  <text x="351" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">H</text>
+  <text x="386" y="155" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">B</text>
+  <text x="350.5" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#547969">enerji · entropi · bant</text>
+
+  <g filter="url(#shadow)">
+    <rect x="431" y="103" width="111" height="97" rx="18" fill="url(#modelGrad)"/>
+    <rect x="431" y="103" width="111" height="97" rx="18" fill="none" stroke="#e8c796"/>
+  </g>
+  <text x="486.5" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7b5733">Sınıflandırıcı</text>
+  <circle cx="459" cy="153" r="8" fill="#c88949"/>
+  <circle cx="486" cy="143" r="8" fill="#c88949"/>
+  <circle cx="486" cy="164" r="8" fill="#c88949"/>
+  <circle cx="514" cy="153" r="8" fill="#a96f38"/>
+  <path d="M467 153 L478 143 M467 153 L478 164 M494 143 L506 153 M494 164 L506 153" stroke="#9b6838" stroke-width="1.5"/>
+  <text x="486.5" y="190" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#846847">örüntü kararı</text>
+
+  <path d="M542 132 H561 V101 H572" stroke="#83a0ad" stroke-width="2" fill="none"/>
+  <polygon points="572,101 564,96 564,106" fill="#83a0ad"/>
+  <path d="M542 169 H561 V211 H572" stroke="#83a0ad" stroke-width="2" fill="none"/>
+  <polygon points="572,211 564,206 564,216" fill="#83a0ad"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="572" y="74" width="53" height="54" rx="14" fill="#d9f1e1" stroke="#b9dbc5"/>
+    <circle cx="588" cy="101" r="8" fill="#73ad88"/>
+    <path d="M584 101 L587 104 L593 97" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+    <text x="602" y="98" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f7655">Bilinen</text>
+    <text x="602" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#598068">örüntü</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="572" y="184" width="53" height="54" rx="14" fill="#fde2de" stroke="#ecc2bc"/>
+    <circle cx="588" cy="211" r="8" fill="#d47d72"/>
+    <path d="M584 207 L592 215 M592 207 L584 215" stroke="#ffffff" stroke-width="1.8"/>
+    <text x="602" y="208" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#97554d">Bilinmeyen</text>
+    <text x="602" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#9a655e">belirsizlik</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="71" y="242" width="497" height="43" rx="15" fill="#ffffff" opacity="0.88"/>
+    <rect x="71" y="242" width="497" height="43" rx="15" fill="none" stroke="#d7e5e2"/>
+  </g>
+  <circle cx="96" cy="263.5" r="11" fill="#d8ecf8"/>
+  <path d="M91 264 L95 268 L102 258" fill="none" stroke="#4380a0" stroke-width="2"/>
+  <text x="117" y="267.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456777">Doğru örnekleme</text>
+  <line x1="232" y1="253" x2="232" y2="275" stroke="#d2e1df"/>
+  <circle cx="256" cy="263.5" r="11" fill="#e4dbf7"/>
+  <path d="M251 264 H261 M256 259 V269" stroke="#725c99" stroke-width="1.8"/>
+  <text x="277" y="267.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#60517f">Açıklanabilir özellik</text>
+  <line x1="424" y1="253" x2="424" y2="275" stroke="#d2e1df"/>
+  <circle cx="448" cy="263.5" r="11" fill="#fae3cb"/>
+  <path d="M443 264 C446 258 450 258 453 264 C451 269 446 270 443 264Z" fill="none" stroke="#a16f3f" stroke-width="1.5"/>
+  <text x="469" y="267.5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7c6246">Bağlam ve doğrulama</text>
+</svg>
