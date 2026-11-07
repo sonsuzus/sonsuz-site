@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="bat" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a9d9bd"/>
+      <stop offset="100%" stop-color="#72bd98"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a0" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7890a0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="86" cy="39" r="66" fill="#dceeff" opacity="0.48"/>
+  <circle cx="584" cy="276" r="78" fill="#dff2d8" opacity="0.52"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36556a">ENERJİ DEPOLAMA OPTİMİZASYONU</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6e8493">Ucuzken şarj et · pahalıyken kullan</text>
+
+  <!-- Fiyat ve tahmin paneli -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="77" width="154" height="174" rx="18" fill="#ffffff"/>
+  </g>
+  <text x="48" y="104" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f5d70">Tahminler</text>
+  <line x1="48" y1="116" x2="162" y2="116" stroke="#dce8ee" stroke-width="1"/>
+
+  <text x="48" y="139" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637e8d">Elektrik fiyatı</text>
+  <polyline points="49,166 65,158 81,164 97,139 113,130 129,145 145,151 160,142" fill="none" stroke="#ee9d7a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="113" cy="130" r="4" fill="#ef8863"/>
+  <text x="120" y="126" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#bd694e">Pahalı</text>
+
+  <text x="48" y="193" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#637e8d">Yük ve güneş</text>
+  <rect x="49" y="207" width="12" height="20" rx="3" fill="#a9cfe9"/>
+  <rect x="67" y="199" width="12" height="28" rx="3" fill="#a9cfe9"/>
+  <rect x="85" y="211" width="12" height="16" rx="3" fill="#a9cfe9"/>
+  <path d="M111 224 C118 203,128 203,135 224" fill="none" stroke="#f2c75d" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="123" cy="200" r="8" fill="#f9df87"/>
+  <text x="48" y="243" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668191">Fiyat · tüketim · üretim</text>
+
+  <!-- Arrow left to engine -->
+  <path d="M187 164 L218 164" stroke="#7195a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="221,164 212,158 212,170" fill="#7195a8"/>
+
+  <!-- Optimizer -->
+  <g filter="url(#shadow)">
+    <rect x="224" y="99" width="191" height="130" rx="22" fill="#e8f1ff" stroke="#cddff4"/>
+  </g>
+  <circle cx="260" cy="137" r="20" fill="#8bb8e7"/>
+  <path d="M251 137 L258 144 L270 130" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="291" y="130" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365b7d">Planlayıcı</text>
+  <text x="291" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#628096">Karma tamsayılı model</text>
+  <line x1="246" y1="170" x2="393" y2="170" stroke="#c8daec" stroke-width="1"/>
+  <rect x="246" y="184" width="42" height="23" rx="8" fill="#ffffff"/>
+  <rect x="296" y="184" width="42" height="23" rx="8" fill="#ffffff"/>
+  <rect x="346" y="184" width="47" height="23" rx="8" fill="#ffffff"/>
+  <text x="254" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b718a">Maliyet</text>
+  <text x="304" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b718a">Sınır</text>
+  <text x="354" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b718a">Verim</text>
+
+  <!-- Arrow optimizer to battery -->
+  <path d="M418 164 L447 164" stroke="#7195a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="450,164 441,158 441,170" fill="#7195a8"/>
+
+  <!-- Battery center -->
+  <g filter="url(#shadow)">
+    <rect x="453" y="91" width="157" height="148" rx="22" fill="#ffffff"/>
+  </g>
+  <text x="475" y="119" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3b6655">Batarya Durumu</text>
+  <text x="475" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a887c">Enerji dengesi</text>
+
+  <rect x="477" y="155" width="91" height="47" rx="9" fill="#e1f1e5" stroke="#77b592" stroke-width="2"/>
+  <rect x="568" y="168" width="7" height="21" rx="2" fill="#77b592"/>
+  <rect x="482" y="160" width="63" height="37" rx="5" fill="url(#bat)"/>
+  <text x="494" y="184" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">SOC %72</text>
+  <text x="476" y="222" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#638476">1–9 kWh · güç sınırı</text>
+
+  <!-- lower output decisions -->
+  <path d="M320 233 L320 259" stroke="#7195a8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="320,263 314,254 326,254" fill="#7195a8"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="211" y="266" width="105" height="34" rx="12" fill="#dff2e7"/>
+    <rect x="326" y="266" width="105" height="34" rx="12" fill="#fff0dc"/>
+  </g>
+  <path d="M320 283 L316 283" stroke="#7195a8" stroke-width="2"/>
+  <polygon points="313,283 320,278 320,288" fill="#7195a8"/>
+  <path d="M320 283 L323 283" stroke="#7195a8" stroke-width="2"/>
+  <polygon points="326,283 319,278 319,288" fill="#7195a8"/>
+  <text x="230" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46745f">Şarj</text>
+  <text x="342" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#a36a38">Deşarj</text>
+
+  <!-- update loop -->
+  <path d="M527 244 C527 276,431 281,393 251" fill="none" stroke="#91adba" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <polygon points="390,248 401,249 396,258" fill="#91adba"/>
+  <text x="449" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6c8795">Düzenli güncelleme</text>
+</svg>

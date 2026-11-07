@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8cc9e8"/>
+      <stop offset="100%" stop-color="#5d9fca"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#65809a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6c8698" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="550" cy="48" r="90" fill="#dff2ea" opacity="0.52"/>
+  <circle cx="88" cy="290" r="112" fill="#e3efff" opacity="0.62"/>
+
+  <text x="32" y="35" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35506a">SANTRALİN DİJİTAL KALKANI</text>
+  <text x="32" y="53" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b8190">Katmanlı koruma ve güvenli müdahale</text>
+
+  <!-- left IT -->
+  <g filter="url(#soft)">
+    <rect x="32" y="100" width="118" height="95" rx="18" fill="#e8f0ff" stroke="#b6cae7"/>
+    <rect x="50" y="119" width="82" height="29" rx="8" fill="#ffffff"/>
+    <rect x="57" y="126" width="21" height="14" rx="3" fill="#87aee8"/>
+    <line x1="83" y1="130" x2="121" y2="130" stroke="#8ea4bb" stroke-width="3" stroke-linecap="round"/>
+    <line x1="83" y1="138" x2="111" y2="138" stroke="#c1cddd" stroke-width="3" stroke-linecap="round"/>
+    <text x="91" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#42617c">Kurumsal ağ</text>
+    <text x="91" y="185" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#668096">IT</text>
+  </g>
+
+  <!-- connection 1 -->
+  <line x1="150" y1="148" x2="184" y2="148" stroke="#7194af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="184,148 176,143 176,153" fill="#7194af"/>
+
+  <!-- DMZ -->
+  <g filter="url(#shadow)">
+    <rect x="185" y="88" width="108" height="120" rx="19" fill="#fff4dd" stroke="#edcb8f"/>
+    <path d="M239 108 L266 119 L261 158 Q255 180 239 187 Q223 180 217 158 L212 119 Z" fill="#f2bc63" opacity="0.32"/>
+    <path d="M239 111 L262 121 L258 156 Q253 174 239 181 Q225 174 220 156 L216 121 Z" fill="none" stroke="#bd7d21" stroke-width="2"/>
+    <path d="M229 145 L236 152 L250 136" fill="none" stroke="#bd7d21" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="239" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#805820">Endüstriyel DMZ</text>
+  </g>
+
+  <!-- connection 2 -->
+  <line x1="293" y1="148" x2="326" y2="148" stroke="#7194af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="326,148 318,143 318,153" fill="#7194af"/>
+
+  <!-- Core zone -->
+  <g filter="url(#shadow)">
+    <rect x="327" y="70" width="164" height="156" rx="24" fill="#e6f5ed" stroke="#abd7bc"/>
+    <text x="409" y="96" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397157">Kontrol Bölgesi</text>
+    
+    <rect x="348" y="112" width="61" height="70" rx="12" fill="#ffffff" stroke="#b9d9c6"/>
+    <rect x="419" y="112" width="51" height="70" rx="12" fill="#ffffff" stroke="#b9d9c6"/>
+    
+    <rect x="362" y="124" width="33" height="9" rx="3" fill="#74b78e"/>
+    <rect x="362" y="140" width="33" height="9" rx="3" fill="#b8d9c4"/>
+    <rect x="362" y="156" width="33" height="9" rx="3" fill="#b8d9c4"/>
+    <circle cx="432" cy="129" r="6" fill="#6aaed3"/>
+    <path d="M432 139 L432 163 M422 151 L442 151" stroke="#6aaed3" stroke-width="3" stroke-linecap="round"/>
+    
+    <text x="378" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426c58">SCADA</text>
+    <text x="444" y="199" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#426c58">PLC</text>
+  </g>
+
+  <!-- telemetry path -->
+  <path d="M492 148 C510 148 510 120 526 120" fill="none" stroke="#7194af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="526,120 518,115 518,125" fill="#7194af"/>
+
+  <!-- monitoring -->
+  <g filter="url(#soft)">
+    <rect x="527" y="76" width="84" height="88" rx="17" fill="#eee9fa" stroke="#cbbde5"/>
+    <path d="M543 128 L552 128 L558 112 L566 143 L574 119 L582 128 L597 128" fill="none" stroke="#8b70bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="569" y="147" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#655087">Pasif izleme</text>
+  </g>
+
+  <!-- alert path -->
+  <path d="M569 164 L569 201 L491 201" fill="none" stroke="#a87b61" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="491,201 499,196 499,206" fill="#a87b61"/>
+
+  <!-- recovery lower -->
+  <g filter="url(#soft)">
+    <rect x="363" y="243" width="132" height="48" rx="16" fill="#fcebe5" stroke="#e9b8a5"/>
+    <circle cx="387" cy="267" r="12" fill="#ef9876"/>
+    <path d="M387 260 L387 268 L393 272" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="440" y="264" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#935b46">Onaylı müdahale</text>
+    <text x="440" y="279" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#a27160">Yedek ve geri dönüş</text>
+  </g>
+
+  <!-- link down -->
+  <path d="M409 226 L409 242" fill="none" stroke="#7194af" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="409,242 404,234 414,234" fill="#7194af"/>
+
+  <!-- annotations -->
+  <g>
+    <rect x="43" y="235" width="235" height="39" rx="13" fill="#ffffff" opacity="0.78"/>
+    <circle cx="62" cy="254" r="8" fill="#70b995"/>
+    <path d="M58 254 L61 257 L67 250" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b6874">En az yetki · kayıtlı erişim</text>
+  </g>
+
+  <g>
+    <rect x="506" y="244" width="107" height="30" rx="12" fill="#ffffff" opacity="0.78"/>
+    <text x="559" y="263" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5f7182">Emniyet önce</text>
+  </g>
+</svg>
