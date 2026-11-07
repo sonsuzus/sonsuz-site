@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#816de3"/>
+      <stop offset="100%" stop-color="#a98de8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#51647c" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#51647c" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="86" cy="45" r="74" fill="#dff1ef" opacity="0.48"/>
+  <circle cx="576" cy="277" r="106" fill="#e8def8" opacity="0.42"/>
+
+  <text x="28" y="34" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40516a">MONTE CARLO İLE RİSK YÖNETİMİ</text>
+  <text x="28" y="52" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708095">Binlerce olası gelecekten risk ölçümü</text>
+
+  <!-- left inputs -->
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="91" width="136" height="55" rx="15" fill="#ffffff"/>
+    <circle cx="52" cy="118" r="13" fill="#d9f0ea"/>
+    <path d="M46 121 L51 115 L55 118 L60 110" fill="none" stroke="#3a9b85" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33445c">Başlangıç Değeri</text>
+    <text x="74" y="131" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66778d">100.000 TL</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="28" y="164" width="136" height="55" rx="15" fill="#ffffff"/>
+    <circle cx="52" cy="191" r="13" fill="#fde9c7"/>
+    <path d="M45 194 C48 184 56 184 59 194 M47 188 L50 185 M55 188 L58 185" fill="none" stroke="#d79032" stroke-width="2" stroke-linecap="round"/>
+    <text x="74" y="187" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#33445c">Parametreler</text>
+    <text x="74" y="204" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66778d">Getiri · Oynaklık</text>
+  </g>
+
+  <!-- arrows to central -->
+  <path d="M164 118 H197" fill="none" stroke="#91a4b8" stroke-width="2"/>
+  <polygon points="205,118 196,113 196,123" fill="#91a4b8"/>
+  <path d="M164 191 H197" fill="none" stroke="#91a4b8" stroke-width="2"/>
+  <polygon points="205,191 196,186 196,196" fill="#91a4b8"/>
+
+  <!-- central engine -->
+  <g filter="url(#shadow)">
+    <rect x="205" y="79" width="184" height="157" rx="24" fill="url(#core)"/>
+    <circle cx="297" cy="126" r="30" fill="#ffffff" opacity="0.2"/>
+    <circle cx="297" cy="126" r="21" fill="#ffffff" opacity="0.95"/>
+    <path d="M285 130 C290 116 298 140 304 120 C307 111 311 115 313 108" fill="none" stroke="#7564cf" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="283" cy="148" r="3" fill="#ffffff" opacity="0.82"/>
+    <circle cx="315" cy="147" r="4" fill="#ffffff" opacity="0.72"/>
+    <circle cx="326" cy="132" r="2.5" fill="#ffffff" opacity="0.78"/>
+    <text x="297" y="175" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Monte Carlo</text>
+    <text x="297" y="194" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#f2efff">20.000 Senaryo</text>
+    <rect x="236" y="207" width="122" height="15" rx="7.5" fill="#ffffff" opacity="0.17"/>
+    <text x="297" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff">Rastgele fiyat yolları</text>
+  </g>
+
+  <!-- to paths -->
+  <path d="M389 157 H416" fill="none" stroke="#91a4b8" stroke-width="2"/>
+  <polygon points="424,157 415,152 415,162" fill="#91a4b8"/>
+
+  <!-- paths panel -->
+  <g filter="url(#smallShadow)">
+    <rect x="424" y="79" width="188" height="157" rx="20" fill="#ffffff"/>
+    <text x="444" y="108" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#394b63">Olası Gelecekler</text>
+    <line x1="446" y1="204" x2="592" y2="204" stroke="#d9e1e8" stroke-width="1.4"/>
+    <line x1="446" y1="125" x2="446" y2="204" stroke="#d9e1e8" stroke-width="1.4"/>
+    <path d="M447 173 C462 166 469 170 480 149 S503 156 514 132 S532 142 543 123 S568 127 589 104" fill="none" stroke="#72b8a8" stroke-width="2" opacity="0.85"/>
+    <path d="M447 169 C462 176 475 150 486 164 S505 130 518 149 S537 159 549 141 S570 134 589 151" fill="none" stroke="#729fe2" stroke-width="2" opacity="0.78"/>
+    <path d="M447 159 C462 151 474 163 487 154 S506 174 519 177 S537 162 551 181 S572 171 589 190" fill="none" stroke="#e29b87" stroke-width="2" opacity="0.85"/>
+    <path d="M447 181 C460 160 474 177 488 159 S506 146 518 157 S540 119 552 133 S573 116 589 127" fill="none" stroke="#a98bd5" stroke-width="2" opacity="0.72"/>
+    <path d="M447 156 C466 157 471 143 486 139 S504 150 517 142 S537 145 548 151 S570 154 589 141" fill="none" stroke="#f0bd65" stroke-width="2" opacity="0.78"/>
+    <text x="446" y="223" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#708095">Yıl sonu dağılımı</text>
+  </g>
+
+  <!-- bottom flow -->
+  <path d="M518 236 V258" fill="none" stroke="#91a4b8" stroke-width="2"/>
+  <polygon points="518,266 513,257 523,257" fill="#91a4b8"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="178" y="267" width="116" height="38" rx="13" fill="#fff4df"/>
+    <text x="236" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#9a6723">Zarar Olasılığı</text>
+  </g>
+  <g filter="url(#smallShadow)">
+    <rect x="307" y="267" width="116" height="38" rx="13" fill="#f1eafe"/>
+    <text x="365" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7254ab">%95 VaR</text>
+  </g>
+  <g filter="url(#smallShadow)">
+    <rect x="436" y="267" width="116" height="38" rx="13" fill="#e2f3ed"/>
+    <text x="494" y="291" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#397d6c">%95 ES</text>
+  </g>
+
+  <path d="M518 266 H494" fill="none" stroke="#91a4b8" stroke-width="1.8"/>
+  <polygon points="486,266 495,261 495,271" fill="#91a4b8"/>
+  <path d="M486 266 H365" fill="none" stroke="#91a4b8" stroke-width="1.8"/>
+  <polygon points="357,266 366,261 366,271" fill="#91a4b8"/>
+  <path d="M357 266 H236" fill="none" stroke="#91a4b8" stroke-width="1.8"/>
+  <polygon points="228,266 237,261 237,271" fill="#91a4b8"/>
+</svg>

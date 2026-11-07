@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#c9e8dd"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7ddff"/>
+      <stop offset="100%" stop-color="#d9e9ff"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe6d6"/>
+      <stop offset="100%" stop-color="#f7dff0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a5" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8395" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="32" r="58" fill="#d9eeff" opacity="0.45"/>
+  <circle cx="580" cy="278" r="82" fill="#dff1d6" opacity="0.42"/>
+  <path d="M28 268 C125 230 154 303 244 272 S413 221 604 249" fill="none" stroke="#bdd8d0" stroke-width="1.5" opacity="0.55"/>
+
+  <text x="34" y="33" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#496174">KEMİKTEN DİJİTAL PORTREYE</text>
+  <text x="34" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909c">Ölçüm, model ve belirsizlik akışı</text>
+
+  <path d="M149 158 L183 158" stroke="#7d9aab" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="183,158 175,153 175,163" fill="#7d9aab"/>
+  <path d="M294 158 L329 158" stroke="#7d9aab" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="329,158 321,153 321,163" fill="#7d9aab"/>
+  <path d="M442 158 L474 158" stroke="#7d9aab" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="474,158 466,153 466,163" fill="#7d9aab"/>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="95" width="115" height="128" rx="22" fill="#fdfefe"/>
+  </g>
+  <rect x="45" y="107" width="93" height="27" rx="13.5" fill="#e4f1e8"/>
+  <text x="91.5" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4b7164">Kafatası</text>
+  <path d="M88 145
+           C69 145 60 158 61 176
+           C62 189 69 198 78 202
+           L78 211
+           C78 215 82 218 87 218
+           L100 218
+           C104 218 107 215 107 211
+           L107 203
+           C117 197 122 187 121 174
+           C120 157 108 145 88 145Z"
+        fill="#ead9c8" stroke="#aa8f79" stroke-width="2"/>
+  <path d="M82 165 C87 160 96 160 102 165" fill="none" stroke="#9f806a" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="78" cy="176" r="4" fill="#f8f3ed" stroke="#aa8f79" stroke-width="1.5"/>
+  <circle cx="103" cy="176" r="4" fill="#f8f3ed" stroke="#aa8f79" stroke-width="1.5"/>
+  <path d="M91 177 L88 189 L94 189" fill="none" stroke="#aa8f79" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M79 198 Q91 204 103 198" fill="none" stroke="#aa8f79" stroke-width="1.6"/>
+  <text x="91.5" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617887">Geometrik ipuçları</text>
+
+  <g filter="url(#shadow)">
+    <rect x="183" y="95" width="111" height="128" rx="22" fill="#fdfefe"/>
+  </g>
+  <rect x="194" y="107" width="89" height="27" rx="13.5" fill="url(#scan)"/>
+  <text x="238.5" y="125" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#46728a">Dijital ağ</text>
+  <path d="M209 153 L232 143 L263 151 L271 178 L250 202 L217 193 Z" fill="#d8eff0" stroke="#5c9baa" stroke-width="1.8"/>
+  <path d="M209 153 L250 202 M232 143 L217 193 M232 143 L263 151 M232 143 L250 202 M263 151 L217 193 M263 151 L250 202 M209 153 L271 178 M271 178 L217 193" fill="none" stroke="#6cabb2" stroke-width="1.1"/>
+  <circle cx="209" cy="153" r="3" fill="#5799a8"/>
+  <circle cx="232" cy="143" r="3" fill="#5799a8"/>
+  <circle cx="263" cy="151" r="3" fill="#5799a8"/>
+  <circle cx="271" cy="178" r="3" fill="#5799a8"/>
+  <circle cx="250" cy="202" r="3" fill="#5799a8"/>
+  <circle cx="217" cy="193" r="3" fill="#5799a8"/>
+  <text x="238.5" y="239" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617887">Tarama ve işaretleme</text>
+
+  <g filter="url(#shadow)">
+    <rect x="329" y="78" width="113" height="162" rx="24" fill="#fdfefe"/>
+  </g>
+  <rect x="340" y="91" width="91" height="27" rx="13.5" fill="url(#model)"/>
+  <text x="385.5" y="109" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#66588c">Yapay zekâ</text>
+  <circle cx="385.5" cy="158" r="34" fill="#eee9ff" stroke="#9988c4" stroke-width="1.8"/>
+  <circle cx="385.5" cy="158" r="11" fill="#faf9ff" stroke="#816eb1" stroke-width="1.7"/>
+  <circle cx="357" cy="141" r="5" fill="#8f7cc0"/>
+  <circle cx="414" cy="141" r="5" fill="#8f7cc0"/>
+  <circle cx="419" cy="174" r="5" fill="#8f7cc0"/>
+  <circle cx="355" cy="177" r="5" fill="#8f7cc0"/>
+  <path d="M361 143 L377 153 M410 143 L394 153 M414 172 L396 162 M359 175 L376 163" stroke="#8d7bb8" stroke-width="1.7"/>
+  <text x="385.5" y="211" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617887">Model uydurma</text>
+  <text x="385.5" y="226" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a9ca7">ve kısıtlar</text>
+
+  <g filter="url(#shadow)">
+    <rect x="474" y="78" width="132" height="162" rx="24" fill="#fdfefe"/>
+  </g>
+  <rect x="486" y="91" width="108" height="27" rx="13.5" fill="url(#result)"/>
+  <text x="540" y="109" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#96655e">Olası portreler</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="490" y="133" width="27" height="55" rx="12" fill="#f6dbc9"/>
+    <circle cx="503.5" cy="151" r="9" fill="#d7a88d"/>
+    <path d="M495 171 Q503 161 512 171 L512 181 L495 181Z" fill="#a8c6b5"/>
+  </g>
+  <g filter="url(#smallShadow)">
+    <rect x="526" y="126" width="29" height="62" rx="13" fill="#f0dff3"/>
+    <circle cx="540.5" cy="146" r="10" fill="#c99075"/>
+    <path d="M531 169 Q540 157 550 169 L550 181 L531 181Z" fill="#9db9db"/>
+  </g>
+  <g filter="url(#smallShadow)">
+    <rect x="564" y="133" width="27" height="55" rx="12" fill="#fae8d8"/>
+    <circle cx="577.5" cy="151" r="9" fill="#b9856d"/>
+    <path d="M569 171 Q577 161 586 171 L586 181 L569 181Z" fill="#d5b179"/>
+  </g>
+  <path d="M494 202 L586 202" stroke="#c8b5ae" stroke-width="1.4" stroke-dasharray="3 4"/>
+  <text x="540" y="219" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#617887">Tek sonuç değil</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="176" y="263" width="292" height="34" rx="17" fill="#ffffff" opacity="0.94"/>
+  </g>
+  <circle cx="198" cy="280" r="9" fill="#f4d76c"/>
+  <path d="M198 275 L198 281 M193.5 280 L202.5 280 M194.6 276.6 L201.4 283.4 M201.4 276.6 L194.6 283.4" stroke="#8d7830" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="218" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5d7280">Kanıt</text>
+  <path d="M263 280 L285 280" stroke="#b0c1c7" stroke-width="1.4"/>
+  <circle cx="307" cy="280" r="9" fill="#cfe6f8"/>
+  <path d="M303 280 L306 283 L312 276" fill="none" stroke="#5381a0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="326" y="284" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5d7280">Uzman kontrolü</text>
+  <path d="M425 280 L447 280" stroke="#b0c1c7" stroke-width="1.4"/>
+</svg>
