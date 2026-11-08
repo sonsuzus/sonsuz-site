@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#eff9f1"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#78b9f4"/>
+      <stop offset="100%" stop-color="#77ceb0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#637a94" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#6a879b" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="47" r="76" fill="#dceeff" opacity="0.52"/>
+  <circle cx="585" cy="275" r="105" fill="#dff4e6" opacity="0.58"/>
+
+  <text x="32" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38556d">GERÇEK ZAMANLI FİLO AKIŞI</text>
+  <text x="32" y="50" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71879a">Araçtan canlı operasyona</text>
+
+  <!-- connection lines -->
+  <path d="M139 154 H164" fill="none" stroke="#79a8c9" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="164,148 175,154 164,160" fill="#79a8c9"/>
+  <path d="M281 154 H305" fill="none" stroke="#79a8c9" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="305,148 316,154 305,160" fill="#79a8c9"/>
+  <path d="M422 154 H446" fill="none" stroke="#79a8c9" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="446,148 457,154 446,160" fill="#79a8c9"/>
+  <path d="M549 154 H566" fill="none" stroke="#79a8c9" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="566,148 577,154 566,160" fill="#79a8c9"/>
+
+  <!-- vehicle -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="112" width="107" height="84" rx="18" fill="#e6f1ff"/>
+    <rect x="32" y="112" width="107" height="84" rx="18" fill="none" stroke="#c6def4"/>
+  </g>
+  <rect x="53" y="146" width="59" height="22" rx="6" fill="#5f9ed8"/>
+  <path d="M62 146 L72 134 H95 L105 146" fill="#86bced"/>
+  <rect x="75" y="137" width="15" height="8" rx="2" fill="#d8edff"/>
+  <circle cx="66" cy="170" r="8" fill="#3f5e76"/>
+  <circle cx="101" cy="170" r="8" fill="#3f5e76"/>
+  <circle cx="66" cy="170" r="3" fill="#dcecff"/>
+  <circle cx="101" cy="170" r="3" fill="#dcecff"/>
+  <path d="M119 126 C125 121 130 121 134 126" fill="none" stroke="#4f92cc" stroke-width="2"/>
+  <circle cx="119" cy="126" r="2.5" fill="#4f92cc"/>
+  <text x="85" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#36536a">Telematik</text>
+
+  <!-- intake -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="112" width="106" height="84" rx="18" fill="#fff2d9"/>
+    <rect x="175" y="112" width="106" height="84" rx="18" fill="none" stroke="#f0d5a7"/>
+  </g>
+  <path d="M211 141 C211 135 216 131 222 131 C228 131 232 135 233 141 C238 141 242 145 242 150 C242 156 237 160 231 160 H210 C203 160 198 156 198 150 C198 145 203 141 211 141Z" fill="#f2b961"/>
+  <path d="M211 168 H246" stroke="#d59a3e" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M228 164 V174" stroke="#d59a3e" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="228" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#6c5130">Mesaj Kabul</text>
+
+  <!-- processing -->
+  <g filter="url(#shadow)">
+    <rect x="316" y="112" width="106" height="84" rx="18" fill="#eee6ff"/>
+    <rect x="316" y="112" width="106" height="84" rx="18" fill="none" stroke="#d9c8f5"/>
+  </g>
+  <circle cx="369" cy="149" r="22" fill="#9d82dc"/>
+  <path d="M369 132 V139 M369 159 V166 M352 149 H359 M379 149 H386 M357 137 L362 142 M376 156 L381 161 M381 137 L376 142 M362 156 L357 161" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="369" cy="149" r="7" fill="#e9ddff"/>
+  <text x="369" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#574678">Olay İşleme</text>
+
+  <!-- storage -->
+  <g filter="url(#shadow)">
+    <rect x="457" y="112" width="92" height="84" rx="18" fill="#dff4eb"/>
+    <rect x="457" y="112" width="92" height="84" rx="18" fill="none" stroke="#bfe5d3"/>
+  </g>
+  <ellipse cx="503" cy="134" rx="23" ry="8" fill="#68b896"/>
+  <path d="M480 134 V161 C480 166 490 170 503 170 C516 170 526 166 526 161 V134" fill="#8ad0b0"/>
+  <path d="M480 147 C480 152 490 156 503 156 C516 156 526 152 526 147" fill="none" stroke="#d9f6e9" stroke-width="2"/>
+  <ellipse cx="503" cy="134" rx="23" ry="8" fill="none" stroke="#4da481" stroke-width="1.5"/>
+  <text x="503" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#356d59">Veri Deposu</text>
+
+  <!-- dashboard -->
+  <g filter="url(#shadow)">
+    <rect x="577" y="112" width="43" height="84" rx="16" fill="#e3f0ff"/>
+    <rect x="577" y="112" width="43" height="84" rx="16" fill="none" stroke="#c0dbf1"/>
+  </g>
+  <rect x="584" y="127" width="29" height="39" rx="4" fill="#ffffff"/>
+  <path d="M587 158 C592 151 594 155 598 147 C602 141 605 150 610 137" fill="none" stroke="#57a4dc" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="596" cy="148" r="3" fill="#f2a65d"/>
+  <circle cx="608" cy="138" r="3" fill="#74c69d"/>
+  <path d="M588 172 H609" stroke="#7ba5c6" stroke-width="2" stroke-linecap="round"/>
+  <text x="598" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#355a77">Canlı</text>
+
+  <!-- lower quality controls -->
+  <path d="M228 208 V224 H369 V208" fill="none" stroke="#b7cbd9" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="364,208 374,208 369,218" fill="#9cb8c9"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="162" y="227" width="132" height="61" rx="15" fill="#ffffff"/>
+  </g>
+  <circle cx="187" cy="250" r="13" fill="#fff0d5"/>
+  <path d="M187 242 V250 L193 254" fill="none" stroke="#d79443" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="208" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#425b6e">Gecikme</text>
+  <text x="208" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b91a1">Veri yaşı</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="309" y="227" width="132" height="61" rx="15" fill="#ffffff"/>
+  </g>
+  <path d="M332 260 L342 241 L352 260 Z" fill="#eee4ff" stroke="#9577d1" stroke-width="1.5"/>
+  <path d="M342 247 V253" stroke="#795ab7" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="342" cy="256" r="1.5" fill="#795ab7"/>
+  <text x="363" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#425b6e">Kalite</text>
+  <text x="363" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b91a1">Sıra ve hız</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="456" y="227" width="132" height="61" rx="15" fill="#ffffff"/>
+  </g>
+  <path d="M479 263 V247 M479 247 L474 252 M479 247 L484 252" fill="none" stroke="#57a782" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M491 263 V241 M491 241 L486 246 M491 241 L496 246" fill="none" stroke="#57a782" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="509" y="248" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#425b6e">Ölçekleme</text>
+  <text x="509" y="267" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b91a1">Kuyruk ve tüketim</text>
+</svg>
