@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="truckFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e7f1f8"/>
+    </linearGradient>
+    <linearGradient id="optFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eeeaff"/>
+      <stop offset="100%" stop-color="#dfeeff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7890a8" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6d8497" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="548" cy="48" r="74" fill="#dff2e4" opacity="0.45"/>
+  <circle cx="80" cy="278" r="88" fill="#dbeeff" opacity="0.5"/>
+
+  <text x="28" y="31" fill="#38516a" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Rota odaklı yükleme optimizasyonu</text>
+  <text x="28" y="49" fill="#7890a1" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Son teslimat derinde, ilk teslimat kapıda</text>
+
+  <!-- Left constraints -->
+  <g filter="url(#shadow)">
+    <rect x="27" y="82" width="142" height="148" rx="18" fill="#ffffff"/>
+    <rect x="27" y="82" width="142" height="35" rx="18" fill="#dff4e8"/>
+    <path d="M27 100 H169 V117 H27 Z" fill="#dff4e8"/>
+  </g>
+  <text x="47" y="104" fill="#33634c" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Kısıtlar</text>
+
+  <circle cx="49" cy="137" r="10" fill="#a9dec0"/>
+  <path d="M45 137 L48 140 L54 133" fill="none" stroke="#39785b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="67" y="141" fill="#4f6877" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Teslimat sırası</text>
+
+  <circle cx="49" cy="169" r="10" fill="#b9dff0"/>
+  <path d="M45 169 H53 M49 165 V173" fill="none" stroke="#41718a" stroke-width="2" stroke-linecap="round"/>
+  <text x="67" y="173" fill="#4f6877" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Ağırlık dengesi</text>
+
+  <circle cx="49" cy="201" r="10" fill="#f5d9a5"/>
+  <path d="M44 204 L49 197 L54 204 Z" fill="none" stroke="#9c7130" stroke-width="1.6" stroke-linejoin="round"/>
+  <text x="67" y="205" fill="#4f6877" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kapasite</text>
+
+  <!-- arrow left to optimization -->
+  <path d="M177 156 H205" fill="none" stroke="#7395a7" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="211,156 202,151 202,161" fill="#7395a7"/>
+
+  <!-- Optimizer -->
+  <g filter="url(#shadow)">
+    <rect x="214" y="105" width="137" height="104" rx="22" fill="url(#optFill)"/>
+  </g>
+  <circle cx="282" cy="139" r="22" fill="#ffffff" opacity="0.78"/>
+  <path d="M270 140 H294 M282 128 V152" stroke="#6575b0" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="282" cy="140" r="7" fill="none" stroke="#6575b0" stroke-width="1.8"/>
+  <text x="238" y="181" fill="#4d5d9b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Çözüm arama</text>
+  <text x="242" y="197" fill="#7081a5" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">En iyi yerleşim</text>
+
+  <!-- arrow to truck -->
+  <path d="M359 156 H384" fill="none" stroke="#7395a7" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="390,156 381,151 381,161" fill="#7395a7"/>
+
+  <!-- Truck -->
+  <g filter="url(#shadow)">
+    <rect x="393" y="82" width="214" height="142" rx="18" fill="url(#truckFill)"/>
+  </g>
+  <text x="411" y="105" fill="#405d73" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">Uygulanabilir yükleme</text>
+
+  <!-- cargo bed -->
+  <rect x="410" y="119" width="164" height="71" rx="8" fill="#d7e6ed" stroke="#88a5b6" stroke-width="1.5"/>
+  <rect x="418" y="126" width="47" height="57" rx="6" fill="#c6b8ef"/>
+  <rect x="468" y="126" width="47" height="57" rx="6" fill="#a8d8d0"/>
+  <rect x="518" y="126" width="47" height="57" rx="6" fill="#f4ca9d"/>
+  <text x="435" y="158" fill="#514278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">C</text>
+  <text x="485" y="158" fill="#356e68" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">B</text>
+  <text x="535" y="158" fill="#8d5d2f" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">A</text>
+
+  <path d="M575 125 V184" stroke="#547386" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="558" y="207" fill="#597588" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Kapı</text>
+
+  <circle cx="438" cy="224" r="13" fill="#556f81"/>
+  <circle cx="438" cy="224" r="6" fill="#dce8ed"/>
+  <circle cx="549" cy="224" r="13" fill="#556f81"/>
+  <circle cx="549" cy="224" r="6" fill="#dce8ed"/>
+
+  <!-- route strip -->
+  <g filter="url(#softShadow)">
+    <rect x="72" y="259" width="483" height="40" rx="18" fill="#ffffff" opacity="0.92"/>
+  </g>
+  <text x="91" y="284" fill="#6e8491" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Rota</text>
+  <circle cx="157" cy="279" r="11" fill="#f4ca9d"/>
+  <text x="153" y="283" fill="#80552b" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">A</text>
+  <path d="M171 279 H220" stroke="#92aab7" stroke-width="2"/>
+  <polygon points="226,279 217,274 217,284" fill="#92aab7"/>
+  <circle cx="242" cy="279" r="11" fill="#a8d8d0"/>
+  <text x="238" y="283" fill="#356e68" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">B</text>
+  <path d="M256 279 H305" stroke="#92aab7" stroke-width="2"/>
+  <polygon points="311,279 302,274 302,284" fill="#92aab7"/>
+  <circle cx="327" cy="279" r="11" fill="#c6b8ef"/>
+  <text x="323" y="283" fill="#514278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700">C</text>
+  <path d="M357 279 H386" stroke="#b1bfca" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="402" y="284" fill="#597588" font-family="Segoe UI, Tahoma, sans-serif" font-size="12">Yükleme: C → B → A</text>
+</svg>
