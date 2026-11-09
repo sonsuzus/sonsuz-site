@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8faef5"/>
+      <stop offset="1" stop-color="#7fd1bd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#55718a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55718a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="82" cy="54" r="72" fill="#dcecff" opacity="0.48"/>
+  <circle cx="564" cy="273" r="98" fill="#dff3e7" opacity="0.52"/>
+  <path d="M45 251 C116 210 131 288 200 251 S304 220 360 266" fill="none" stroke="#c7dded" stroke-width="2" opacity="0.55"/>
+  <path d="M430 45 C480 20 535 68 601 36" fill="none" stroke="#c8e7d8" stroke-width="2" opacity="0.7"/>
+
+  <!-- outer learning cycle -->
+  <path d="M227 83 C276 38 365 37 414 84" fill="none" stroke="#a8c6e7" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="414,84 403,81 408,92" fill="#7ca4d2"/>
+  <path d="M455 118 C477 164 458 215 413 239" fill="none" stroke="#a8c6e7" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="413,239 419,229 425,239" fill="#7ca4d2"/>
+  <path d="M375 264 C320 285 263 269 226 230" fill="none" stroke="#a8c6e7" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="226,230 237,233 231,222" fill="#7ca4d2"/>
+  <path d="M190 195 C167 151 181 112 220 83" fill="none" stroke="#a8c6e7" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="220,83 215,94 207,85" fill="#7ca4d2"/>
+
+  <!-- top card -->
+  <g filter="url(#shadow)">
+    <rect x="240" y="22" width="160" height="55" rx="16" fill="#ffffff"/>
+    <circle cx="265" cy="49" r="14" fill="#e4efff"/>
+    <path d="M258 49 L264 55 L274 42" fill="none" stroke="#618bd1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="286" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35506c" font-weight="600">Tahmin et</text>
+    <text x="286" y="63" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Hipotez kur</text>
+  </g>
+
+  <!-- right card -->
+  <g filter="url(#shadow)">
+    <rect x="461" y="116" width="150" height="64" rx="16" fill="#ffffff"/>
+    <circle cx="486" cy="145" r="14" fill="#dff5ed"/>
+    <path d="M479 149 L479 142 L486 138 L493 142 L493 149" fill="none" stroke="#55a888" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M482 135 L490 135" stroke="#55a888" stroke-width="2" stroke-linecap="round"/>
+    <text x="509" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35506c" font-weight="600">Deney yap</text>
+    <text x="509" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Değişkenleri ayarla</text>
+  </g>
+
+  <!-- bottom card -->
+  <g filter="url(#shadow)">
+    <rect x="240" y="250" width="160" height="54" rx="16" fill="#ffffff"/>
+    <circle cx="265" cy="277" r="14" fill="#fff0cf"/>
+    <path d="M258 281 L258 275 L263 270 L269 273 L272 280" fill="none" stroke="#d09a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M263 270 L265 265" stroke="#d09a42" stroke-width="2" stroke-linecap="round"/>
+    <text x="286" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35506c" font-weight="600">Açıkla</text>
+    <text x="286" y="291" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Yeni duruma aktar</text>
+  </g>
+
+  <!-- left card -->
+  <g filter="url(#shadow)">
+    <rect x="29" y="116" width="151" height="64" rx="16" fill="#ffffff"/>
+    <circle cx="54" cy="145" r="14" fill="#f2e8ff"/>
+    <path d="M48 149 C51 143 56 141 61 139" fill="none" stroke="#a477ca" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="48" cy="150" r="2" fill="#a477ca"/>
+    <circle cx="55" cy="143" r="2" fill="#a477ca"/>
+    <circle cx="62" cy="139" r="2" fill="#a477ca"/>
+    <text x="77" y="143" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35506c" font-weight="600">Gözlemle</text>
+    <text x="77" y="159" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">Sonucu karşılaştır</text>
+  </g>
+
+  <!-- central VR lab -->
+  <g filter="url(#shadow)">
+    <rect x="207" y="91" width="226" height="145" rx="26" fill="#ffffff"/>
+    <rect x="224" y="108" width="192" height="33" rx="11" fill="#eef6ff"/>
+    <circle cx="245" cy="124.5" r="11" fill="#b9d6ff"/>
+    <path d="M238 125 C241 118 249 118 252 125 C249 131 241 131 238 125Z" fill="#5d8fd0"/>
+    <text x="265" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#35506c" font-weight="600">Sanal fizik laboratuvarı</text>
+
+    <rect x="225" y="153" width="84" height="64" rx="12" fill="#f5f9ff"/>
+    <text x="239" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708a">Kuvvet</text>
+    <rect x="238" y="184" width="57" height="6" rx="3" fill="#d1dfef"/>
+    <rect x="238" y="184" width="39" height="6" rx="3" fill="#7aa8e6"/>
+    <circle cx="278" cy="187" r="7" fill="#ffffff" stroke="#6e9bda" stroke-width="2"/>
+    <text x="240" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">F sabit</text>
+
+    <rect x="324" y="153" width="92" height="64" rx="12" fill="#f3fbf6"/>
+    <text x="339" y="174" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52708a">Kütle</text>
+    <rect x="338" y="184" width="61" height="6" rx="3" fill="#d0e8dc"/>
+    <rect x="338" y="184" width="45" height="6" rx="3" fill="#74bea0"/>
+    <circle cx="383" cy="187" r="7" fill="#ffffff" stroke="#63ae91" stroke-width="2"/>
+    <text x="340" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71869a">m değişir</text>
+  </g>
+
+  <!-- formula and motion -->
+  <g filter="url(#smallShadow)">
+    <rect x="275" y="220" width="90" height="28" rx="10" fill="url(#core)"/>
+    <text x="298" y="239" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="600">F = m a</text>
+  </g>
+  <path d="M386 220 L411 220" stroke="#6b9cc8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="411,220 402,215 402,225" fill="#6b9cc8"/>
+  <rect x="392" y="210" width="14" height="18" rx="4" fill="#f3b66d" filter="url(#smallShadow)"/>
+</svg>

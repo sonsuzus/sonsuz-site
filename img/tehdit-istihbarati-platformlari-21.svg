@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dfeaff"/>
+      <stop offset="100%" stop-color="#d9f4e7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#53677f" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#53677f" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="155" r="116" fill="#dcecff" opacity="0.35"/>
+  <circle cx="320" cy="155" r="89" fill="#eef7f1" opacity="0.62"/>
+
+  <!-- Bağlantılar -->
+  <path d="M143 74 C181 89, 196 103, 223 119" fill="none" stroke="#86a5cb" stroke-width="2"/>
+  <polygon points="222,113 235,126 218,125" fill="#86a5cb"/>
+  <path d="M141 154 C174 154, 193 154, 223 154" fill="none" stroke="#86a5cb" stroke-width="2"/>
+  <polygon points="220,148 235,154 220,160" fill="#86a5cb"/>
+  <path d="M143 239 C179 218, 196 202, 223 187" fill="none" stroke="#86a5cb" stroke-width="2"/>
+  <polygon points="218,181 235,181 224,194" fill="#86a5cb"/>
+
+  <path d="M405 145 C428 128, 438 110, 459 93" fill="none" stroke="#739c9d" stroke-width="2"/>
+  <polygon points="455,89 470,84 463,99" fill="#739c9d"/>
+  <path d="M405 164 C430 177, 438 192, 459 207" fill="none" stroke="#739c9d" stroke-width="2"/>
+  <polygon points="463,201 470,216 455,211" fill="#739c9d"/>
+
+  <!-- Kaynaklar -->
+  <g filter="url(#softShadow)">
+    <rect x="28" y="47" width="116" height="53" rx="14" fill="#fff7dc"/>
+    <circle cx="49" cy="73" r="11" fill="#f5cd7e"/>
+    <path d="M44 73h10M49 68v10" stroke="#8a6426" stroke-width="1.5"/>
+    <text x="66" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405367" font-weight="600">Açık kaynak</text>
+    <text x="66" y="86" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687889">Raporlar</text>
+
+    <rect x="28" y="127" width="116" height="53" rx="14" fill="#f5e9ff"/>
+    <circle cx="49" cy="153" r="11" fill="#cf9be3"/>
+    <path d="M43 153h12M46 148h6v10" stroke="#754187" stroke-width="1.5"/>
+    <text x="66" y="150" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405367" font-weight="600">Beslemeler</text>
+    <text x="66" y="166" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687889">STIX · TAXII</text>
+
+    <rect x="28" y="207" width="116" height="53" rx="14" fill="#def4ef"/>
+    <circle cx="49" cy="233" r="11" fill="#80cdb9"/>
+    <path d="M43 236l5-6 4 3 5-7" fill="none" stroke="#276c62" stroke-width="1.7"/>
+    <text x="66" y="230" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405367" font-weight="600">İç gözlemler</text>
+    <text x="66" y="246" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687889">Sensörler</text>
+  </g>
+
+  <!-- Merkez -->
+  <g filter="url(#shadow)">
+    <rect x="235" y="104" width="170" height="104" rx="24" fill="url(#hub)" stroke="#b9d3df"/>
+    <circle cx="320" cy="135" r="21" fill="#7fa9d9"/>
+    <path d="M310 136c4-10 16-10 20 0M311 142h18M316 148h8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="320" y="171" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#304d68" font-weight="700">Tehdit İstihbaratı</text>
+    <text x="320" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5c7488">Bağlam · ilişki · güven</text>
+  </g>
+
+  <!-- Sağ üst: eşleştirme -->
+  <g filter="url(#softShadow)">
+    <rect x="470" y="52" width="142" height="82" rx="16" fill="#e4f0ff"/>
+    <rect x="486" y="68" width="28" height="24" rx="5" fill="#83aad6"/>
+    <path d="M492 80h16M500 72v16" stroke="#fff" stroke-width="1.4"/>
+    <text x="526" y="78" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3d5974" font-weight="700">Varlık eşleşmesi</text>
+    <text x="526" y="96" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647c91">Maruziyet</text>
+    <text x="526" y="114" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#647c91">Kritiklik</text>
+  </g>
+
+  <!-- Sağ alt: risk -->
+  <g filter="url(#shadow)">
+    <rect x="470" y="180" width="142" height="91" rx="16" fill="#e4f6e9"/>
+    <circle cx="497" cy="210" r="15" fill="#6db68a"/>
+    <text x="497" y="214" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">R</text>
+    <text x="522" y="207" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#365d49" font-weight="700">Risk puanı</text>
+    <text x="522" y="224" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607b6b">Güncellik</text>
+    <rect x="486" y="242" width="110" height="10" rx="5" fill="#cce8d5"/>
+    <rect x="486" y="242" width="83" height="10" rx="5" fill="#e99b72"/>
+    <text x="577" y="252" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">82</text>
+  </g>
+
+  <!-- Alt süreç -->
+  <path d="M320 208 L320 243" stroke="#6d9cac" stroke-width="2"/>
+  <polygon points="314,239 320,252 326,239" fill="#6d9cac"/>
+  <g filter="url(#softShadow)">
+    <rect x="228" y="253" width="184" height="46" rx="15" fill="#ffffff"/>
+    <circle cx="253" cy="276" r="11" fill="#f0b87b"/>
+    <path d="M248 276l3 3 6-7" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="273" y="273" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#405367" font-weight="700">Analist doğrulaması</text>
+    <text x="273" y="289" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#687889">İnceleme · önlem · geri bildirim</text>
+  </g>
+</svg>

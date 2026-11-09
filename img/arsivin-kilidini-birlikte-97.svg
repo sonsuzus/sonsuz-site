@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="archive" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9dcf5"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8dfff"/>
+      <stop offset="100%" stop-color="#d7c8f4"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9f4df"/>
+      <stop offset="100%" stop-color="#bde8cb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8197" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#718197" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="49" r="50" fill="#d7edff" opacity="0.38"/>
+  <circle cx="583" cy="274" r="70" fill="#d8f1d5" opacity="0.42"/>
+  <path d="M35 275 C135 245 162 299 249 275 S414 246 606 280" fill="none" stroke="#bcd9e0" stroke-width="1.2" opacity="0.55"/>
+
+  <!-- archive -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="82" width="145" height="147" rx="20" fill="url(#archive)"/>
+    <rect x="47" y="99" width="115" height="97" rx="11" fill="#f9fcff" stroke="#aec7e1"/>
+    <path d="M63 120 C79 111 91 129 108 119 S137 130 148 117" fill="none" stroke="#7e9fc2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M62 137 C76 128 93 147 109 136 S136 146 149 135" fill="none" stroke="#91adca" stroke-width="2" stroke-linecap="round"/>
+    <path d="M62 154 C79 144 92 161 111 151 S135 163 149 151" fill="none" stroke="#91adca" stroke-width="2" stroke-linecap="round"/>
+    <path d="M62 171 C73 165 88 176 100 168" fill="none" stroke="#91adca" stroke-width="2" stroke-linecap="round"/>
+    <rect x="72" y="187" width="63" height="18" rx="9" fill="#cbe9ef"/>
+    <text x="104" y="200" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34566d">Satır bölgesi</text>
+    <text x="104" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#264660">Dijital arşiv</text>
+  </g>
+
+  <!-- flow left to core -->
+  <path d="M180 154 H222" fill="none" stroke="#8099b0" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="222,154 213,148 213,160" fill="#8099b0"/>
+  <text x="201" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#667d91">görev</text>
+
+  <!-- central platform -->
+  <g filter="url(#shadow)">
+    <rect x="228" y="51" width="185" height="193" rx="24" fill="url(#core)"/>
+    <rect x="246" y="70" width="149" height="33" rx="12" fill="#f9f7ff" opacity="0.92"/>
+    <text x="320" y="91" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#514272">Transkripsiyon platformu</text>
+
+    <rect x="248" y="117" width="65" height="75" rx="14" fill="#fff" opacity="0.86" filter="url(#smallShadow)"/>
+    <circle cx="280" cy="140" r="13" fill="#c9e8f7"/>
+    <circle cx="280" cy="137" r="5" fill="#638da9"/>
+    <path d="M269 153 C272 145 288 145 291 153" fill="#638da9"/>
+    <text x="280" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d627b">Gönüllü</text>
+
+    <rect x="328" y="117" width="65" height="75" rx="14" fill="#fff" opacity="0.86" filter="url(#smallShadow)"/>
+    <path d="M343 135 H378 M343 144 H371 M343 153 H376" stroke="#8b78af" stroke-width="2" stroke-linecap="round"/>
+    <rect x="342" y="161" width="35" height="13" rx="5" fill="#eadffc"/>
+    <text x="360" y="187" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d627b">Katkı</text>
+
+    <path d="M280 199 V211 H360 V199" fill="none" stroke="#8a7aaa" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="360,199 355,206 365,206" fill="#8a7aaa"/>
+    <rect x="266" y="210" width="108" height="20" rx="10" fill="#bdaee0"/>
+    <text x="320" y="224" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#fff">Sürüm ve iz</text>
+  </g>
+
+  <!-- upper contributors -->
+  <g filter="url(#smallShadow)">
+    <rect x="219" y="17" width="69" height="27" rx="13" fill="#fff" stroke="#d3c9e9"/>
+    <circle cx="235" cy="30.5" r="7" fill="#a6d6e9"/>
+    <text x="263" y="34.5" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56677d">Oku</text>
+    <rect x="352" y="17" width="69" height="27" rx="13" fill="#fff" stroke="#d3c9e9"/>
+    <circle cx="368" cy="30.5" r="7" fill="#f2ca9a"/>
+    <text x="396" y="34.5" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56677d">Düzelt</text>
+  </g>
+  <path d="M254 45 L273 61" fill="none" stroke="#9a89b9" stroke-width="1.6"/>
+  <polygon points="273,61 264,58 267,67" fill="#9a89b9"/>
+  <path d="M386 45 L367 61" fill="none" stroke="#9a89b9" stroke-width="1.6"/>
+  <polygon points="367,61 373,67 376,58" fill="#9a89b9"/>
+
+  <!-- core to consensus -->
+  <path d="M416 154 H455" fill="none" stroke="#8099b0" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="455,154 446,148 446,160" fill="#8099b0"/>
+
+  <!-- right validation -->
+  <g filter="url(#shadow)">
+    <rect x="461" y="75" width="147" height="159" rx="21" fill="url(#result)"/>
+    <text x="534.5" y="101" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#315d49">Uzlaşma motoru</text>
+    <rect x="480" y="115" width="108" height="40" rx="12" fill="#fff" opacity="0.85"/>
+    <rect x="491" y="125" width="15" height="18" rx="4" fill="#94c9ae"/>
+    <rect x="512" y="120" width="15" height="23" rx="4" fill="#70b38e"/>
+    <rect x="533" y="116" width="15" height="27" rx="4" fill="#4a9e72"/>
+    <path d="M556 134 L563 141 L576 124" fill="none" stroke="#3b9366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="534" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#496c5a">Destek ve inceleme</text>
+    <rect x="485" y="188" width="99" height="27" rx="13" fill="#f7fffa" stroke="#9bceb0"/>
+    <text x="534.5" y="206" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#367152">Yayın kaydı</text>
+  </g>
+
+  <!-- bottom services -->
+  <path d="M320 248 V267" fill="none" stroke="#8a9bad" stroke-width="1.8"/>
+  <polygon points="320,267 315,259 325,259" fill="#8a9bad"/>
+  <path d="M160 278 H475" fill="none" stroke="#a9bbc5" stroke-width="1.4" opacity="0.75"/>
+  <g filter="url(#smallShadow)">
+    <rect x="116" y="263" width="101" height="39" rx="15" fill="#fff" stroke="#c8dce5"/>
+    <rect x="129" y="274" width="15" height="15" rx="4" fill="#9dd0e7"/>
+    <text x="174" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456274">Görsel depo</text>
+
+    <rect x="250" y="263" width="140" height="39" rx="15" fill="#fff" stroke="#d6cdea"/>
+    <ellipse cx="270" cy="276" rx="10" ry="4.5" fill="#b9a9d8"/>
+    <path d="M260 276 V285 C260 291 280 291 280 285 V276" fill="#b9a9d8"/>
+    <text x="331" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5b4a78">Sürüm veritabanı</text>
+
+    <rect x="423" y="263" width="101" height="39" rx="15" fill="#fff" stroke="#c4dfca"/>
+    <path d="M438 277 H450 M447 273 L451 277 L447 281" fill="none" stroke="#68aa7d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="483" y="288" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#456b51">Dışa aktarım</text>
+  </g>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f1"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcecff"/>
+      <stop offset="100%" stop-color="#c9f2e7"/>
+    </linearGradient>
+    <linearGradient id="lstmGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7ddff"/>
+      <stop offset="100%" stop-color="#d4e9ff"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0cf"/>
+      <stop offset="100%" stop-color="#dff4d8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#57708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#57708a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="48" cy="38" r="55" fill="#d7edff" opacity="0.38"/>
+  <circle cx="606" cy="282" r="72" fill="#d8f1d1" opacity="0.42"/>
+  <path d="M22 274 C108 239 128 294 198 269 S312 234 377 269 S500 297 618 230" fill="none" stroke="#b9d9d3" stroke-width="1.5" opacity="0.42"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#41546c">Zaman Serisi Tahmini</text>
+  <text x="612" y="31" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718295">Olasılık Laboratuvarı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="28" y="76" width="142" height="166" rx="18" fill="url(#dataGrad)" stroke="#b9d8df"/>
+  </g>
+  <text x="48" y="105" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#36556b">Geçmiş Veriler</text>
+  <text x="48" y="124" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7184">Düzeltilmiş fiyat</text>
+
+  <g transform="translate(48 143)">
+    <line x1="0" y1="69" x2="101" y2="69" stroke="#92b7c2" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0" y2="69" stroke="#92b7c2" stroke-width="1"/>
+    <path d="M4 51 L16 43 L28 48 L40 29 L52 38 L64 18 L76 33 L88 21 L100 12" fill="none" stroke="#4e9ca5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="43" r="2.5" fill="#4e9ca5"/>
+    <circle cx="40" cy="29" r="2.5" fill="#4e9ca5"/>
+    <circle cx="64" cy="18" r="2.5" fill="#4e9ca5"/>
+    <circle cx="88" cy="21" r="2.5" fill="#4e9ca5"/>
+  </g>
+  <rect x="47" y="222" width="100" height="1" fill="#b4d4d4"/>
+  <text x="48" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a7184">Log getiri</text>
+
+  <path d="M177 158 L198 158" stroke="#8098ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="204,158 195,153 195,163" fill="#8098ad"/>
+
+  <g filter="url(#smallShadow)">
+    <rect x="210" y="107" width="106" height="102" rx="16" fill="#fffdfa" stroke="#e3d9c7"/>
+  </g>
+  <text x="263" y="135" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#6b5d48">Kronolojik</text>
+  <text x="263" y="153" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6b5d48">ayrım</text>
+  <rect x="228" y="171" width="26" height="12" rx="4" fill="#9fd5ed"/>
+  <rect x="257" y="171" width="20" height="12" rx="4" fill="#f6d58c"/>
+  <rect x="280" y="171" width="18" height="12" rx="4" fill="#b6dfab"/>
+  <text x="241" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7384">Eğitim</text>
+  <text x="287" y="198" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f7384">Test</text>
+
+  <path d="M323 158 L344 158" stroke="#8098ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="350,158 341,153 341,163" fill="#8098ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="356" y="65" width="132" height="184" rx="22" fill="url(#lstmGrad)" stroke="#c6b9e4"/>
+  </g>
+  <text x="422" y="94" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#514775">LSTM Hücresi</text>
+  <text x="422" y="113" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71668e">30 günlük pencere</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="376" y="130" width="92" height="27" rx="10" fill="#f8f5ff" stroke="#d0c6eb"/>
+    <text x="422" y="148" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#645882">Unutma kapısı</text>
+    <rect x="376" y="164" width="92" height="27" rx="10" fill="#f8f5ff" stroke="#d0c6eb"/>
+    <text x="422" y="182" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#645882">Giriş kapısı</text>
+    <rect x="376" y="198" width="92" height="27" rx="10" fill="#f8f5ff" stroke="#d0c6eb"/>
+    <text x="422" y="216" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#645882">Çıkış kapısı</text>
+  </g>
+  <path d="M367 143 L376 143 M367 177 L376 177 M367 211 L376 211" stroke="#9f8ec5" stroke-width="2"/>
+  <path d="M468 143 L478 143 M468 177 L478 177 M468 211 L478 211" stroke="#9f8ec5" stroke-width="2"/>
+
+  <path d="M495 158 L516 158" stroke="#8098ad" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="522,158 513,153 513,163" fill="#8098ad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="528" y="84" width="86" height="148" rx="18" fill="url(#outGrad)" stroke="#d7d9aa"/>
+  </g>
+  <text x="571" y="112" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#5d6240">Tahmin</text>
+  <text x="571" y="131" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#717758">Getiri olasılığı</text>
+
+  <g transform="translate(545 146)">
+    <rect x="0" y="39" width="13" height="20" rx="4" fill="#aedac7"/>
+    <rect x="18" y="27" width="13" height="32" rx="4" fill="#8fc8b0"/>
+    <rect x="36" y="12" width="13" height="47" rx="4" fill="#6fae9b"/>
+    <rect x="54" y="31" width="13" height="28" rx="4" fill="#a7d4aa"/>
+    <path d="M0 61 L68 61" stroke="#91a282" stroke-width="1.2"/>
+  </g>
+  <text x="571" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#677153">MSE ve naif kıyas</text>
+
+  <path d="M212 266 C272 292 350 293 408 264" fill="none" stroke="#9ab6c4" stroke-width="1.6" stroke-dasharray="5 5"/>
+  <polygon points="413,261 404,261 408,270" fill="#9ab6c4"/>
+  <text x="311" y="294" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#698092">İleriye yürüyen değerlendirme</text>
+</svg>

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f1f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeaff"/>
+      <stop offset="100%" stop-color="#ccefe0"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#698cdb"/>
+      <stop offset="100%" stop-color="#4cad82"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6f89a0" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#658098" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="45" r="55" fill="#dceeff" opacity="0.48"/>
+  <circle cx="588" cy="282" r="75" fill="#d9f2dd" opacity="0.48"/>
+
+  <!-- Sol girdi kartları -->
+  <g filter="url(#soft)">
+    <rect x="28" y="54" width="140" height="52" rx="15" fill="#fffdfb"/>
+    <rect x="28" y="54" width="8" height="52" rx="4" fill="#f0a65f"/>
+    <circle cx="54" cy="80" r="13" fill="#fff0dd"/>
+    <path d="M47 82 C49 73 58 72 61 77 C64 83 58 88 54 91 C50 88 45 86 47 82Z" fill="none" stroke="#d88646" stroke-width="1.8"/>
+    <text x="76" y="77" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34505e" font-weight="600">Trafik</text>
+    <text x="76" y="93" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71818a">zamana bağlı</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="134" width="140" height="52" rx="15" fill="#fffdfb"/>
+    <rect x="28" y="134" width="8" height="52" rx="4" fill="#a98bdb"/>
+    <circle cx="54" cy="160" r="13" fill="#eee8fb"/>
+    <circle cx="54" cy="160" r="7" fill="none" stroke="#856bb3" stroke-width="1.8"/>
+    <path d="M54 155 L54 160 L59 163" fill="none" stroke="#856bb3" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="76" y="157" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34505e" font-weight="600">Zaman penceresi</text>
+    <text x="76" y="173" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71818a">uygun saat</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="214" width="140" height="52" rx="15" fill="#fffdfb"/>
+    <rect x="28" y="214" width="8" height="52" rx="4" fill="#59b99a"/>
+    <circle cx="54" cy="240" r="13" fill="#ddf4ed"/>
+    <path d="M47 244 L47 237 L51 234 L58 234 L62 238 L62 244 Z" fill="none" stroke="#3e997d" stroke-width="1.7" stroke-linejoin="round"/>
+    <circle cx="51" cy="245" r="2" fill="#3e997d"/>
+    <circle cx="59" cy="245" r="2" fill="#3e997d"/>
+    <text x="76" y="237" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34505e" font-weight="600">Araç sınırları</text>
+    <text x="76" y="253" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#71818a">kapasite ve mesai</text>
+  </g>
+
+  <!-- Girdi bağlantıları -->
+  <path d="M168 80 C190 80 190 119 214 126" fill="none" stroke="#a7bac3" stroke-width="2"/>
+  <polygon points="212,120 222,128 210,131" fill="#8ba2ad"/>
+  <path d="M168 160 L210 160" fill="none" stroke="#a7bac3" stroke-width="2"/>
+  <polygon points="208,155 219,160 208,165" fill="#8ba2ad"/>
+  <path d="M168 240 C190 240 192 202 214 194" fill="none" stroke="#a7bac3" stroke-width="2"/>
+  <polygon points="210,189 222,192 214,200" fill="#8ba2ad"/>
+
+  <!-- Merkezi karar motoru -->
+  <g filter="url(#shadow)">
+    <rect x="216" y="76" width="204" height="166" rx="27" fill="url(#core)" stroke="#bfd6e5" stroke-width="1.2"/>
+    <rect x="241" y="96" width="154" height="31" rx="12" fill="#fafdff" opacity="0.88"/>
+    <text x="318" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#36566a" font-weight="700">ROTA PLANLAYICI</text>
+
+    <circle cx="274" cy="166" r="25" fill="#ffffff" opacity="0.90"/>
+    <path d="M262 171 C269 154 281 150 288 158 C294 165 287 177 276 181" fill="none" stroke="#537dc4" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="273,174 277,183 267,181" fill="#537dc4"/>
+    <circle cx="264" cy="155" r="3.5" fill="#f19b61"/>
+    <circle cx="289" cy="160" r="3.5" fill="#58a984"/>
+
+    <path d="M314 151 L366 151" stroke="#9cc7b4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M314 166 L351 166" stroke="#7899d4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M314 181 L376 181" stroke="#d9a36b" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="372" cy="151" r="8" fill="#4daa80"/>
+    <circle cx="357" cy="166" r="8" fill="#668ad0"/>
+    <circle cx="382" cy="181" r="8" fill="#e39a55"/>
+
+    <text x="318" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#53707d">en erken uygun teslimat</text>
+  </g>
+
+  <!-- Çıkış bağlantısı -->
+  <path d="M420 159 C441 159 447 159 462 159" fill="none" stroke="#779baf" stroke-width="2.2"/>
+  <polygon points="459,153 471,159 459,165" fill="#668b9e"/>
+
+  <!-- Sağ rota kartı -->
+  <g filter="url(#shadow)">
+    <rect x="470" y="43" width="142" height="230" rx="22" fill="#fffefd" stroke="#d5e4dc"/>
+    <text x="491" y="70" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#385462" font-weight="700">Uygulanabilir rota</text>
+    <text x="491" y="88" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78909a">teslimat sırası</text>
+
+    <path d="M501 118 C542 100 570 126 550 150 C535 167 511 158 522 184 C530 204 571 202 573 234" fill="none" stroke="url(#route)" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="567,228 574,240 579,227" fill="#4cad82"/>
+
+    <circle cx="501" cy="118" r="12" fill="#557ec6"/>
+    <path d="M496 121 L496 115 L500 112 L506 112 L509 116 L509 121 Z" fill="none" stroke="#ffffff" stroke-width="1.3"/>
+    <circle cx="500" cy="122" r="1.6" fill="#ffffff"/>
+    <circle cx="506" cy="122" r="1.6" fill="#ffffff"/>
+    <text x="520" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4f6975">Depo</text>
+
+    <circle cx="550" cy="150" r="11" fill="#e59a58"/>
+    <text x="550" y="154" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">A</text>
+    <text x="570" y="154" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607681">09:10</text>
+
+    <circle cx="522" cy="184" r="11" fill="#8a73ba"/>
+    <text x="522" y="188" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">B</text>
+    <text x="542" y="188" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607681">09:35</text>
+
+    <circle cx="573" cy="234" r="11" fill="#4cab80"/>
+    <text x="573" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#ffffff" font-weight="700">C</text>
+    <text x="491" y="258" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4b8f72" font-weight="600">daha az bekleme</text>
+  </g>
+</svg>
