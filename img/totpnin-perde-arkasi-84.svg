@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfe9ff"/>
+      <stop offset="100%" stop-color="#c9dcfa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6d87a5" flood-opacity="0.20"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#718b84" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="320" cy="157" r="119" fill="#d9edeb" opacity="0.34"/>
+  <circle cx="320" cy="157" r="92" fill="none" stroke="#bfd9d7" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <path d="M156 103 C190 103 207 119 232 132" fill="none" stroke="#8296b5" stroke-width="2"/>
+  <polygon points="232,132 222,126 225,137" fill="#8296b5"/>
+  <path d="M156 214 C188 214 207 197 232 184" fill="none" stroke="#8296b5" stroke-width="2"/>
+  <polygon points="232,184 225,179 223,190" fill="#8296b5"/>
+  <path d="M407 151 C429 151 445 151 466 151" fill="none" stroke="#8296b5" stroke-width="2"/>
+  <polygon points="466,151 456,145 456,157" fill="#8296b5"/>
+  <path d="M529 199 C529 222 518 238 499 252" fill="none" stroke="#8296b5" stroke-width="2"/>
+  <polygon points="499,252 502,241 510,250" fill="#8296b5"/>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="65" width="128" height="76" rx="17" fill="#fff7e9"/>
+    <rect x="40" y="78" width="34" height="45" rx="7" fill="#f4c979"/>
+    <rect x="45" y="85" width="24" height="24" rx="3" fill="#fffaf1"/>
+    <circle cx="57" cy="116" r="3" fill="#ba8540"/>
+    <text x="87" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d4b32" font-weight="600">Telefon</text>
+    <text x="87" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75644c">Ortak sır</text>
+    <text x="87" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75644c">Base32</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="28" y="178" width="128" height="74" rx="17" fill="#ebf8f2"/>
+    <circle cx="59" cy="215" r="21" fill="#a9dcc8"/>
+    <path d="M59 199 L59 215 L70 221" fill="none" stroke="#397b68" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="91" y="206" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315f54" font-weight="600">Zaman</text>
+    <text x="91" y="225" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52776d">30 saniye</text>
+    <text x="91" y="242" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#52776d">Sayaç T</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="232" y="94" width="175" height="123" rx="24" fill="url(#core)"/>
+    <circle cx="320" cy="129" r="22" fill="#8eaddb"/>
+    <path d="M309 130 L316 137 L332 119" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="320" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#344e73" font-weight="700">TOTP MOTORU</text>
+    <text x="320" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506988">HMAC · dinamik kesme</text>
+    <text x="320" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#506988">6 haneli kod</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="466" y="105" width="137" height="93" rx="18" fill="#f3ecfb"/>
+    <rect x="480" y="120" width="35" height="48" rx="5" fill="#c8afe3"/>
+    <rect x="485" y="126" width="25" height="6" rx="2" fill="#ffffff"/>
+    <rect x="485" y="138" width="25" height="6" rx="2" fill="#ffffff"/>
+    <rect x="485" y="150" width="25" height="6" rx="2" fill="#ffffff"/>
+    <text x="529" y="133" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#56416d" font-weight="700">Sunucu</text>
+    <text x="529" y="153" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#705c85">Doğrulama</text>
+    <text x="529" y="172" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#705c85">−1 · 0 · +1</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="421" y="247" width="177" height="51" rx="16" fill="#fff1ef"/>
+    <circle cx="446" cy="272" r="13" fill="#eeaaa1"/>
+    <path d="M446 264 L446 272 M446 277 L446 280" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="469" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#794c49" font-weight="600">Koruma katmanı</text>
+    <text x="469" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8a6460">Tekrar · hız sınırı</text>
+  </g>
+
+  <g opacity="0.85">
+    <rect x="240" y="245" width="142" height="39" rx="14" fill="#ffffff"/>
+    <text x="311" y="261" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6970" font-weight="600">Saat senkronu</text>
+    <text x="311" y="276" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#648087">aynı dilim, aynı kod</text>
+  </g>
+</svg>

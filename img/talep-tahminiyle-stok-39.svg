@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9edff"/>
+      <stop offset="100%" stop-color="#c9def7"/>
+    </linearGradient>
+    <linearGradient id="forecastGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5dcff"/>
+      <stop offset="100%" stop-color="#d2c3f4"/>
+    </linearGradient>
+    <linearGradient id="stockGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f3e4"/>
+      <stop offset="100%" stop-color="#bee7d0"/>
+    </linearGradient>
+    <linearGradient id="orderGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe7bd"/>
+      <stop offset="100%" stop-color="#f6d29a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#66809a" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="65" cy="45" r="58" fill="#cfe9f5" opacity="0.35"/>
+  <circle cx="585" cy="274" r="82" fill="#d8edd2" opacity="0.42"/>
+
+  <text x="320" y="31" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#38536b">TALEP TAHMİNİNDEN SİPARİŞ KARARINA</text>
+  <text x="320" y="49" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8290">Geçmiş veriyi belirsizlikle birlikte stoğa dönüştür</text>
+
+  <path d="M145 156 L173 156" stroke="#7190a5" stroke-width="2.5" fill="none"/>
+  <polygon points="173,150 184,156 173,162" fill="#7190a5"/>
+
+  <path d="M295 156 L323 156" stroke="#7190a5" stroke-width="2.5" fill="none"/>
+  <polygon points="323,150 334,156 323,162" fill="#7190a5"/>
+
+  <path d="M445 156 L473 156" stroke="#7190a5" stroke-width="2.5" fill="none"/>
+  <polygon points="473,150 484,156 473,162" fill="#7190a5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="101" width="110" height="110" rx="20" fill="url(#dataGrad)"/>
+  </g>
+  <rect x="48" y="115" width="30" height="27" rx="7" fill="#ffffff" opacity="0.82"/>
+  <path d="M55 134 L61 127 L66 131 L72 121" fill="none" stroke="#5184ab" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="55" y1="137" x2="73" y2="137" stroke="#8bb4d0" stroke-width="1.5"/>
+  <text x="90" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#36546d">Satış Verisi</text>
+  <text x="90" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">Geçmiş talep</text>
+  <text x="55" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">Stok dışı</text>
+  <text x="55" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#527087">Kampanya</text>
+
+  <g filter="url(#shadow)">
+    <rect x="185" y="87" width="110" height="138" rx="20" fill="url(#forecastGrad)"/>
+  </g>
+  <circle cx="240" cy="119" r="22" fill="#ffffff" opacity="0.76"/>
+  <path d="M226 125 C230 116,234 121,238 113 C242 105,246 119,253 108" fill="none" stroke="#7b65ad" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="226" cy="125" r="2.5" fill="#7b65ad"/>
+  <circle cx="238" cy="113" r="2.5" fill="#7b65ad"/>
+  <circle cx="253" cy="108" r="2.5" fill="#7b65ad"/>
+  <text x="240" y="160" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#55447d">Tahmin Modeli</text>
+  <text x="240" y="180" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#695a89">Ortalama ve ritim</text>
+  <text x="240" y="202" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#695a89">μ + hata</text>
+
+  <g filter="url(#shadow)">
+    <rect x="335" y="87" width="110" height="138" rx="20" fill="url(#stockGrad)"/>
+  </g>
+  <path d="M371 126 L390 107 L409 126 L409 142 L371 142 Z" fill="#ffffff" opacity="0.82"/>
+  <rect x="376" y="126" width="28" height="20" rx="2" fill="#ffffff" opacity="0.75"/>
+  <rect x="381" y="132" width="7" height="6" fill="#79b998"/>
+  <rect x="392" y="132" width="7" height="6" fill="#79b998"/>
+  <text x="390" y="164" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3e705b">Hedef Stok</text>
+  <text x="390" y="183" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51816b">Beklenen tüketim</text>
+  <text x="390" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#51816b">+ güvenlik stoğu</text>
+
+  <g filter="url(#shadow)">
+    <rect x="485" y="101" width="120" height="110" rx="20" fill="url(#orderGrad)"/>
+  </g>
+  <rect x="501" y="116" width="34" height="32" rx="6" fill="#ffffff" opacity="0.78"/>
+  <path d="M508 130 L514 136 L528 121" fill="none" stroke="#b57d35" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="548" y="128" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#855922">Sipariş</text>
+  <text x="548" y="146" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#956b35">Önerisi</text>
+  <text x="500" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#956b35">Hedef − pozisyon</text>
+  <text x="500" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#956b35">Q ≥ 0</text>
+
+  <path d="M240 236 L240 254 C240 262,248 267,256 267 L372 267 C380 267,390 260,390 251 L390 236" fill="none" stroke="#90a5b1" stroke-width="1.7" stroke-dasharray="4 4"/>
+  <polygon points="384,238 390,227 396,238" fill="#90a5b1"/>
+  <rect x="261" y="252" width="108" height="29" rx="14" fill="#ffffff" opacity="0.72"/>
+  <text x="315" y="271" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#58707d">Hata ölçümü ve güncelleme</text>
+</svg>
