@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6faee8"/>
+      <stop offset="100%" stop-color="#76c7a4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#55718b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-25%" width="140%" height="155%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#55718b" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="88" cy="42" r="70" fill="#dceefb" opacity="0.45"/>
+  <circle cx="588" cy="276" r="92" fill="#ddefd9" opacity="0.48"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#35516b">Ağ Akışı ile Kapasite Planlama</text>
+  <text x="28" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6d8293">Darboğaz: depo çıkış kapasitesi</text>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M118 145 L193 103" stroke="#8fb9dc" stroke-width="5"/>
+    <path d="M118 166 L193 211" stroke="#8fb9dc" stroke-width="5"/>
+    <path d="M263 103 L346 103" stroke="#76b99f" stroke-width="5"/>
+    <path d="M263 112 L346 205" stroke="#76b99f" stroke-width="5"/>
+    <path d="M263 211 L346 112" stroke="#76b99f" stroke-width="5"/>
+    <path d="M263 220 L346 220" stroke="#76b99f" stroke-width="5"/>
+    <path d="M416 103 L505 145" stroke="#ea9a79" stroke-width="9"/>
+    <path d="M416 220 L505 166" stroke="#ea9a79" stroke-width="9"/>
+  </g>
+
+  <g fill="#6b9ec6">
+    <polygon points="186,98 194,103 186,109"/>
+    <polygon points="186,206 194,211 185,216"/>
+  </g>
+  <g fill="#5fa986">
+    <polygon points="339,98 347,103 339,108"/>
+    <polygon points="338,198 347,205 340,207"/>
+    <polygon points="338,108 347,112 343,120"/>
+    <polygon points="339,215 347,220 339,225"/>
+  </g>
+  <g fill="#d97958">
+    <polygon points="497,139 506,145 496,150"/>
+    <polygon points="497,160 506,166 496,171"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="128" width="78" height="54" rx="16" fill="#d8ebfa" stroke="#9ac5e5"/>
+    <rect x="193" y="76" width="70" height="54" rx="16" fill="#def1e5" stroke="#9acfb1"/>
+    <rect x="193" y="184" width="70" height="54" rx="16" fill="#def1e5" stroke="#9acfb1"/>
+    <rect x="346" y="76" width="70" height="54" rx="16" fill="#fff0d8" stroke="#edc58c"/>
+    <rect x="346" y="184" width="70" height="54" rx="16" fill="#fff0d8" stroke="#edc58c"/>
+    <rect x="505" y="128" width="83" height="54" rx="16" fill="#dce9fb" stroke="#9dbde0"/>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <text x="79" y="151" font-weight="700" fill="#315974">Kaynak</text>
+    <text x="79" y="169" fill="#54748b">K · 120</text>
+
+    <text x="228" y="99" font-weight="700" fill="#35664d">Üretici 1</text>
+    <text x="228" y="117" fill="#568069">70 ton</text>
+    <text x="228" y="207" font-weight="700" fill="#35664d">Üretici 2</text>
+    <text x="228" y="225" fill="#568069">50 ton</text>
+
+    <text x="381" y="99" font-weight="700" fill="#805b28">Depo 1</text>
+    <text x="381" y="117" fill="#9a7644">50 ton</text>
+    <text x="381" y="207" font-weight="700" fill="#805b28">Depo 2</text>
+    <text x="381" y="225" fill="#9a7644">40 ton</text>
+
+    <text x="546.5" y="151" font-weight="700" fill="#345b7c">Hedef</text>
+    <text x="546.5" y="169" fill="#54748b">M</text>
+  </g>
+
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle">
+    <rect x="128" y="113" width="36" height="20" rx="8" fill="#ffffff" opacity="0.92"/>
+    <text x="146" y="127" fill="#4a718d">70</text>
+    <rect x="130" y="183" width="36" height="20" rx="8" fill="#ffffff" opacity="0.92"/>
+    <text x="148" y="197" fill="#4a718d">50</text>
+
+    <rect x="284" y="82" width="36" height="20" rx="8" fill="#ffffff" opacity="0.92"/>
+    <text x="302" y="96" fill="#4b7e65">40</text>
+    <rect x="284" y="144" width="36" height="20" rx="8" fill="#ffffff" opacity="0.92"/>
+    <text x="302" y="158" fill="#4b7e65">30</text>
+    <rect x="284" y="176" width="36" height="20" rx="8" fill="#ffffff" opacity="0.92"/>
+    <text x="302" y="190" fill="#4b7e65">20</text>
+    <rect x="284" y="220" width="36" height="20" rx="8" fill="#ffffff" opacity="0.92"/>
+    <text x="302" y="234" fill="#4b7e65">30</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="438" y="67" width="92" height="27" rx="13" fill="#fff7eb" stroke="#efbc98"/>
+    <rect x="438" y="224" width="92" height="27" rx="13" fill="#fff7eb" stroke="#efbc98"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" fill="#a6543f">
+    <text x="484" y="85" font-weight="700">50 ton/gün</text>
+    <text x="484" y="242" font-weight="700">40 ton/gün</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="38" y="266" width="244" height="35" rx="15" fill="#ffffff" opacity="0.96"/>
+    <rect x="358" y="266" width="244" height="35" rx="15" fill="#e5f4e7" stroke="#a8d2ad"/>
+  </g>
+  <text x="160" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#ba6348">Minimum kesit = 90 ton/gün</text>
+
+  <path d="M291 283 L345 283" fill="none" stroke="#71a98a" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="345,278 355,283 345,288" fill="#71a98a"/>
+  <text x="480" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#397151">Depo yatırımı → 110 ton/gün</text>
+</svg>

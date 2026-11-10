@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9f0"/>
+    </linearGradient>
+    <linearGradient id="cold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9f0ff"/>
+      <stop offset="100%" stop-color="#bce1f7"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7e0ff"/>
+      <stop offset="100%" stop-color="#d4caf8"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2f6dc"/>
+      <stop offset="100%" stop-color="#c9e9c5"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6f8491" flood-opacity="0.2"/>
+    </filter>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#708494" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="65" cy="28" r="58" fill="#dcefff" opacity="0.48"/>
+  <circle cx="591" cy="286" r="72" fill="#dff1d8" opacity="0.45"/>
+
+  <text x="28" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#365064">SOĞUK ZİNCİR • DİJİTAL NÖBETÇİ</text>
+  <text x="28" y="51" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#6a8291">Ölçümden güvenilir uyarıya</text>
+
+  <!-- connection lines -->
+  <path d="M151 145 H181" fill="none" stroke="#7eafc8" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="181,145 172,140 172,150" fill="#7eafc8"/>
+  <path d="M275 145 H307" fill="none" stroke="#8e91c5" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="307,145 298,140 298,150" fill="#8e91c5"/>
+  <path d="M411 145 H443" fill="none" stroke="#72ad8c" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="443,145 434,140 434,150" fill="#72ad8c"/>
+  <path d="M539 145 H566" fill="none" stroke="#d08a71" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="566,145 557,140 557,150" fill="#d08a71"/>
+
+  <!-- truck sensor -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="101" width="123" height="91" rx="18" fill="#ffffff"/>
+    <rect x="40" y="114" width="47" height="37" rx="7" fill="url(#cold)" stroke="#91c4df"/>
+    <path d="M47 151 V159 H81 V151 M51 159 A8 8 0 1 0 67 159 M71 159 A8 8 0 1 0 87 159" fill="none" stroke="#477d99" stroke-width="2"/>
+    <rect x="91" y="118" width="43" height="28" rx="7" fill="#ffffff" stroke="#8cbad1"/>
+    <path d="M109 123 V136 M104 130 H114" stroke="#4694be" stroke-width="2" stroke-linecap="round"/>
+    <text x="47" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#375467">Sensörlü araç</text>
+  </g>
+
+  <!-- gateway -->
+  <g filter="url(#shadow)">
+    <rect x="181" y="101" width="94" height="91" rx="18" fill="#ffffff"/>
+    <rect x="203" y="117" width="50" height="35" rx="9" fill="#e4f5ff" stroke="#9fcde2"/>
+    <circle cx="215" cy="134" r="4" fill="#4ba1c9"/>
+    <path d="M225 139 C230 133 234 133 240 139 M225 132 C230 126 236 126 244 133" fill="none" stroke="#4b91b6" stroke-width="2" stroke-linecap="round"/>
+    <path d="M221 157 H235" stroke="#8babc0" stroke-width="2" stroke-linecap="round"/>
+    <text x="198" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#375467">Ağ geçidi</text>
+  </g>
+
+  <!-- cloud / mqtt -->
+  <g filter="url(#shadow)">
+    <rect x="307" y="101" width="104" height="91" rx="18" fill="#ffffff"/>
+    <path d="M334 143 H383 C391 143 395 138 395 132 C395 125 390 120 383 120 C380 112 373 109 367 112 C363 105 352 105 347 113 C338 111 332 117 332 125 C326 127 326 140 334 143Z" fill="url(#cloud)" stroke="#a99bd5"/>
+    <path d="M350 153 H370 M350 159 H379" stroke="#9486c3" stroke-width="2" stroke-linecap="round"/>
+    <text x="327" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#4c4970">MQTT ve kayıt</text>
+  </g>
+
+  <!-- rule engine -->
+  <g filter="url(#shadow)">
+    <rect x="443" y="101" width="96" height="91" rx="18" fill="#ffffff"/>
+    <rect x="462" y="116" width="58" height="41" rx="9" fill="url(#rule)" stroke="#9cc89a"/>
+    <path d="M473 127 H509 M473 136 H500 M473 145 H491" stroke="#579462" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="505" cy="145" r="4" fill="#6da86d"/>
+    <text x="456" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#416348">Kural motoru</text>
+  </g>
+
+  <!-- alert -->
+  <g filter="url(#shadow)">
+    <rect x="566" y="101" width="55" height="91" rx="18" fill="#ffffff"/>
+    <path d="M593 117 C584 117 580 124 580 132 V143 L576 149 H610 L606 143 V132 C606 124 602 117 593 117Z" fill="#ffd7cb" stroke="#d47c65"/>
+    <path d="M589 155 Q593 160 597 155" fill="none" stroke="#cc735d" stroke-width="2" stroke-linecap="round"/>
+    <path d="M593 124 V137 M593 142 V143" stroke="#c85d4d" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="575" y="177" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#7e4a42">Uyarı</text>
+  </g>
+
+  <!-- main data labels -->
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66808e">
+    <rect x="154" y="126" width="25" height="20" rx="8" fill="#edf8fc"/>
+    <text x="160" y="140">BLE</text>
+    <rect x="277" y="126" width="28" height="20" rx="8" fill="#f0effa"/>
+    <text x="282" y="140">TLS</text>
+    <rect x="413" y="126" width="28" height="20" rx="8" fill="#edf8ef"/>
+    <text x="418" y="140">ölç</text>
+    <rect x="540" y="126" width="24" height="20" rx="8" fill="#fff3ed"/>
+    <text x="545" y="140">an</text>
+  </g>
+
+  <!-- temperature profile -->
+  <g filter="url(#soft)">
+    <rect x="28" y="219" width="196" height="73" rx="16" fill="#ffffff"/>
+    <text x="45" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d6176">Ürün profili</text>
+    <rect x="45" y="251" width="102" height="21" rx="10" fill="#e1f3ff"/>
+    <text x="59" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#357395">2°C</text>
+    <path d="M89 261 H105" stroke="#6fa9c6" stroke-width="2"/>
+    <text x="110" y="266" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#357395">8°C</text>
+    <circle cx="171" cy="261" r="10" fill="#dcf1db"/>
+    <path d="M167 261 L170 264 L176 257" fill="none" stroke="#52945c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- offline buffer -->
+  <g filter="url(#soft)">
+    <rect x="244" y="219" width="170" height="73" rx="16" fill="#ffffff"/>
+    <text x="260" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#56627d">Bağlantı kesilirse</text>
+    <rect x="260" y="251" width="31" height="22" rx="5" fill="#ede9ff" stroke="#b6a9e5"/>
+    <path d="M268 257 H284 M268 263 H284 M268 269 H279" stroke="#8275b6" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M302 262 H355" stroke="#8e83bf" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="355,262 347,257 347,267" fill="#8e83bf"/>
+    <text x="313" y="278" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#68718a">Yerel tampon</text>
+  </g>
+
+  <!-- audit -->
+  <g filter="url(#soft)">
+    <rect x="434" y="219" width="187" height="73" rx="16" fill="#ffffff"/>
+    <text x="451" y="241" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53666c">Denetlenebilir geçmiş</text>
+    <path d="M452 267 C464 253 475 274 487 260 S510 253 523 265 S546 272 557 255" fill="none" stroke="#67aa98" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="487" cy="260" r="3.5" fill="#e79375"/>
+    <circle cx="557" cy="255" r="3.5" fill="#5e9d89"/>
+    <text x="568" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4c7e70">kayıt</text>
+  </g>
+
+  <!-- lower relation lines -->
+  <path d="M89 192 V211" fill="none" stroke="#a1c6d7" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M228 255 H235" fill="none" stroke="#aab5c1" stroke-width="2"/>
+  <polygon points="235,255 228,251 228,259" fill="#aab5c1"/>
+  <path d="M417 255 H425" fill="none" stroke="#aab5c1" stroke-width="2"/>
+  <polygon points="425,255 418,251 418,259" fill="#aab5c1"/>
+</svg>

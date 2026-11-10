@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f8ef"/>
+    </linearGradient>
+    <linearGradient id="command" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c91d9"/>
+      <stop offset="100%" stop-color="#657fc5"/>
+    </linearGradient>
+    <linearGradient id="coord" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#87cdbd"/>
+      <stop offset="100%" stop-color="#62ae9e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#526778" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#526778" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="574" cy="47" r="90" fill="#dceff1" opacity="0.42"/>
+  <circle cx="47" cy="293" r="102" fill="#e7e4f6" opacity="0.48"/>
+  <path d="M32 70 C115 38 174 57 231 31" fill="none" stroke="#c9dcdf" stroke-width="1.5" opacity="0.6"/>
+  <path d="M443 292 C510 264 570 285 620 244" fill="none" stroke="#c9dcdf" stroke-width="1.5" opacity="0.6"/>
+
+  <text x="30" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#40536b">ÇOK ARAÇ, TEK PLAN</text>
+  <text x="30" y="49" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77889a">Merkezi hedefler • yerel kararlar</text>
+
+  <!-- Komuta -->
+  <rect x="210" y="58" width="220" height="64" rx="18" fill="url(#command)" filter="url(#shadow)"/>
+  <circle cx="241" cy="90" r="16" fill="#ffffff" opacity="0.2"/>
+  <path d="M234 91 L240 97 L251 82" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="270" y="84" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Komuta Katmanı</text>
+  <text x="270" y="103" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#eef1ff">Hedef • öncelik • görev</text>
+
+  <!-- command to coordination -->
+  <path d="M320 123 L320 145" fill="none" stroke="#657fc5" stroke-width="2.2" stroke-linecap="round"/>
+  <polygon points="314,140 326,140 320,149" fill="#657fc5"/>
+
+  <!-- Koordinasyon -->
+  <rect x="185" y="151" width="270" height="60" rx="18" fill="url(#coord)" filter="url(#shadow)"/>
+  <circle cx="217" cy="181" r="16" fill="#ffffff" opacity="0.21"/>
+  <path d="M209 182 L217 176 L225 182 L217 188 Z" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="246" y="176" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Koordinasyon</text>
+  <text x="246" y="195" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#effffb">Uygunluk • kaynak • sıra</text>
+
+  <!-- status return -->
+  <path d="M174 178 C135 162 136 109 198 93" fill="none" stroke="#93a5bd" stroke-width="1.7" stroke-dasharray="4 4"/>
+  <polygon points="191,88 202,92 194,99" fill="#93a5bd"/>
+  <text x="88" y="137" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718398">Durum raporu</text>
+
+  <!-- Split connectors -->
+  <path d="M320 212 L320 228 L113 228 L113 241" fill="none" stroke="#69aa9d" stroke-width="2"/>
+  <path d="M320 212 L320 241" fill="none" stroke="#69aa9d" stroke-width="2"/>
+  <path d="M320 212 L320 228 L527 228 L527 241" fill="none" stroke="#69aa9d" stroke-width="2"/>
+  <polygon points="107,237 119,237 113,246" fill="#69aa9d"/>
+  <polygon points="314,237 326,237 320,246" fill="#69aa9d"/>
+  <polygon points="521,237 533,237 527,246" fill="#69aa9d"/>
+
+  <!-- Vehicle 1 -->
+  <rect x="42" y="246" width="142" height="57" rx="15" fill="#ffffff" filter="url(#smallShadow)"/>
+  <rect x="42" y="246" width="7" height="57" rx="3.5" fill="#edb875"/>
+  <circle cx="72" cy="269" r="13" fill="#fff1dc"/>
+  <rect x="64" y="264" width="16" height="10" rx="3" fill="#d99c4d"/>
+  <circle cx="67" cy="276" r="3" fill="#875c35"/>
+  <circle cx="77" cy="276" r="3" fill="#875c35"/>
+  <text x="94" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#475a70">Araç 01</text>
+  <text x="94" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77889a">Yerel kontrol</text>
+
+  <!-- Vehicle 2 -->
+  <rect x="249" y="246" width="142" height="57" rx="15" fill="#ffffff" filter="url(#smallShadow)"/>
+  <rect x="249" y="246" width="7" height="57" rx="3.5" fill="#879cdf"/>
+  <circle cx="279" cy="269" r="13" fill="#e8edff"/>
+  <rect x="271" y="264" width="16" height="10" rx="3" fill="#7288cf"/>
+  <circle cx="274" cy="276" r="3" fill="#485b9d"/>
+  <circle cx="284" cy="276" r="3" fill="#485b9d"/>
+  <text x="301" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#475a70">Araç 02</text>
+  <text x="301" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77889a">Güvenli hareket</text>
+
+  <!-- Vehicle 3 -->
+  <rect x="456" y="246" width="142" height="57" rx="15" fill="#ffffff" filter="url(#smallShadow)"/>
+  <rect x="456" y="246" width="7" height="57" rx="3.5" fill="#7fc4ae"/>
+  <circle cx="486" cy="269" r="13" fill="#e1f5ec"/>
+  <rect x="478" y="264" width="16" height="10" rx="3" fill="#59aa8f"/>
+  <circle cx="481" cy="276" r="3" fill="#397763"/>
+  <circle cx="491" cy="276" r="3" fill="#397763"/>
+  <text x="508" y="268" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#475a70">Araç 03</text>
+  <text x="508" y="286" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77889a">Bağlantı kaybı: güvenli</text>
+
+  <!-- Network indicator -->
+  <rect x="483" y="76" width="117" height="48" rx="14" fill="#ffffff" opacity="0.9" filter="url(#smallShadow)"/>
+  <circle cx="505" cy="93" r="5" fill="#74bea8"/>
+  <circle cx="523" cy="87" r="5" fill="#74bea8"/>
+  <circle cx="523" cy="105" r="5" fill="#74bea8"/>
+  <path d="M509 92 L518 88 M509 95 L518 103" stroke="#74bea8" stroke-width="1.6"/>
+  <text x="541" y="94" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#53677b">Ağ</text>
+  <text x="541" y="111" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#78899a">Gecikme izle</text>
+
+  <path d="M482 120 C457 132 444 145 430 155" fill="none" stroke="#9aabbc" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <polygon points="429,149 438,158 426,161" fill="#9aabbc"/>
+</svg>
