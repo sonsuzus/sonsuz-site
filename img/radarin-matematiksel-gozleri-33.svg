@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="radarFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cfe9ff"/>
+      <stop offset="100%" stop-color="#b9d9f5"/>
+    </linearGradient>
+    <linearGradient id="fftFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5d9ff"/>
+      <stop offset="100%" stop-color="#d0bff3"/>
+    </linearGradient>
+    <linearGradient id="detectFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7f2d2"/>
+      <stop offset="100%" stop-color="#bde4bc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7891a8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-35%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7891a8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <circle cx="70" cy="50" r="72" fill="#dceeff" opacity="0.42"/>
+  <circle cx="595" cy="284" r="88" fill="#dff2d5" opacity="0.42"/>
+  <path d="M22 280 C130 238 165 307 266 279 S453 233 620 269" fill="none" stroke="#bad7e6" stroke-width="2" opacity="0.42"/>
+
+  <text x="30" y="30" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#456075">HAM YANKIDAN ÖLÇÜME</text>
+  <text x="30" y="47" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718899">FMCW radar sinyal işleme akışı</text>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="91" width="118" height="145" rx="18" fill="url(#radarFill)" stroke="#9bc4df"/>
+  </g>
+  <text x="89" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#345a73">Radar</text>
+  <text x="89" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7087">Chirp gönderir</text>
+
+  <g transform="translate(89 174)">
+    <circle cx="0" cy="0" r="10" fill="#5d9ec8"/>
+    <path d="M-1 -6 L5 0 L-1 6 Z" fill="#f5fbff"/>
+    <path d="M13 -17 Q32 0 13 17" fill="none" stroke="#5d9ec8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M21 -25 Q47 0 21 25" fill="none" stroke="#5d9ec8" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <path d="M113 169 C137 151 148 143 169 137" fill="none" stroke="#6198bd" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <path d="M167 131 L180 133 L171 142 Z" fill="#6198bd"/>
+  <circle cx="185" cy="132" r="11" fill="#f8b9a9" filter="url(#smallShadow)"/>
+  <circle cx="181" cy="128" r="3" fill="#fff7f3" opacity="0.9"/>
+  <path d="M174 149 C151 166 138 182 113 187" fill="none" stroke="#e58d7c" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <path d="M116 181 L104 187 L115 193 Z" fill="#e58d7c"/>
+  <text x="89" y="217" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7087">Yankı ve gecikme</text>
+
+  <path d="M150 163 L175 163" fill="none" stroke="#7f9aad" stroke-width="2.5"/>
+  <polygon points="175,157 187,163 175,169" fill="#7f9aad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="188" y="91" width="120" height="145" rx="18" fill="#fffdf9" stroke="#d8dde1"/>
+  </g>
+  <text x="248" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#516574">I/Q Örnekleri</text>
+  <text x="248" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#788a96">ADC ve karıştırma</text>
+  <rect x="208" y="150" width="80" height="52" rx="9" fill="#edf5f8" stroke="#cbdde5"/>
+  <path d="M215 177 C222 158 229 196 236 172 S250 158 257 181 S271 194 281 164" fill="none" stroke="#5e9fbc" stroke-width="2.2"/>
+  <path d="M215 184 C222 172 229 191 236 181 S250 171 257 186 S271 193 281 176" fill="none" stroke="#b683c8" stroke-width="2" opacity="0.9"/>
+  <text x="248" y="220" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#627b8b">Genlik + faz</text>
+
+  <path d="M310 163 L335 163" fill="none" stroke="#7f9aad" stroke-width="2.5"/>
+  <polygon points="335,157 347,163 335,169" fill="#7f9aad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="348" y="72" width="132" height="182" rx="18" fill="url(#fftFill)" stroke="#beaee0"/>
+  </g>
+  <text x="414" y="99" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#584879">İki Boyutlu FFT</text>
+  <text x="414" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75668e">Menzil ve Doppler</text>
+  <rect x="371" y="132" width="86" height="86" rx="8" fill="#faf8ff" stroke="#bdb0d8"/>
+  <g stroke="#d7cdea" stroke-width="1">
+    <path d="M388 133 V217 M405 133 V217 M422 133 V217 M439 133 V217"/>
+    <path d="M372 149 H456 M372 166 H456 M372 183 H456 M372 200 H456"/>
+  </g>
+  <rect x="422" y="149" width="16" height="16" rx="3" fill="#f98c72"/>
+  <rect x="405" y="166" width="16" height="16" rx="3" fill="#e9c45d"/>
+  <rect x="422" y="166" width="16" height="16" rx="3" fill="#f4a360"/>
+  <circle cx="430" cy="157" r="4" fill="#fff8d7"/>
+  <text x="414" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66577e">Menzil-Doppler haritası</text>
+
+  <path d="M482 163 L507 163" fill="none" stroke="#7f9aad" stroke-width="2.5"/>
+  <polygon points="507,157 519,163 507,169" fill="#7f9aad"/>
+
+  <g filter="url(#shadow)">
+    <rect x="520" y="91" width="92" height="145" rx="18" fill="url(#detectFill)" stroke="#a9d3aa"/>
+  </g>
+  <text x="566" y="116" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3f6d47">CFAR</text>
+  <text x="566" y="133" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5e8064">Eşik ve tespit</text>
+  <path d="M538 185 L548 176 L556 181 L566 153 L576 173 L586 168 L596 177" fill="none" stroke="#5c9c67" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M538 166 H596" stroke="#e8996d" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="566" cy="153" r="5" fill="#f48468"/>
+  <text x="566" y="218" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d7654">Güvenilir hedef</text>
+
+  <g filter="url(#smallShadow)">
+    <rect x="118" y="270" width="112" height="32" rx="14" fill="#ffffff" stroke="#d8e3e9"/>
+    <rect x="264" y="270" width="112" height="32" rx="14" fill="#ffffff" stroke="#d8e3e9"/>
+    <rect x="410" y="270" width="112" height="32" rx="14" fill="#ffffff" stroke="#d8e3e9"/>
+  </g>
+  <circle cx="137" cy="286" r="7" fill="#7cb5d8"/>
+  <text x="151" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6575">Menzil</text>
+  <text x="207" y="290" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#315a71">R</text>
+
+  <circle cx="283" cy="286" r="7" fill="#a787cf"/>
+  <text x="297" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6575">Radyal hız</text>
+  <text x="354" y="290" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#614784">v</text>
+
+  <circle cx="429" cy="286" r="7" fill="#78b77e"/>
+  <text x="443" y="290" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6575">Açı</text>
+  <text x="502" y="290" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#3d7447">θ</text>
+</svg>

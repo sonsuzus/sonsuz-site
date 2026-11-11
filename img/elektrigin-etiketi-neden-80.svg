@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="arkaPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="merkez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7774c9"/>
+      <stop offset="100%" stop-color="#5b9bc2"/>
+    </linearGradient>
+    <filter id="golge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#58708a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="hafifGolge" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#58708a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#arkaPlan)"/>
+  <circle cx="77" cy="52" r="68" fill="#cfe8f2" opacity="0.34"/>
+  <circle cx="578" cy="276" r="96" fill="#d9eed3" opacity="0.4"/>
+
+  <text x="320" y="29" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#43566b">Dinamik Fiyatlandırma Döngüsü</text>
+
+  <path d="M170 105 C192 105 198 126 214 136" fill="none" stroke="#8a9eb0" stroke-width="2"/>
+  <polygon points="214,136 204,133 209,143" fill="#8a9eb0"/>
+
+  <path d="M426 136 C442 126 448 105 470 105" fill="none" stroke="#8a9eb0" stroke-width="2"/>
+  <polygon points="470,105 460,100 461,111" fill="#8a9eb0"/>
+
+  <path d="M482 167 C472 192 446 209 423 216" fill="none" stroke="#8a9eb0" stroke-width="2"/>
+  <polygon points="423,216 430,207 434,217" fill="#8a9eb0"/>
+
+  <path d="M213 216 C190 207 168 191 158 168" fill="none" stroke="#8a9eb0" stroke-width="2"/>
+  <polygon points="158,168 157,179 167,174" fill="#8a9eb0"/>
+
+  <g filter="url(#golge)">
+    <rect x="214" y="93" width="212" height="128" rx="24" fill="url(#merkez)"/>
+    <rect x="225" y="104" width="190" height="106" rx="18" fill="#ffffff" opacity="0.13"/>
+  </g>
+  <circle cx="320" cy="133" r="25" fill="#ffffff" opacity="0.18"/>
+  <path d="M305 139 L314 129 L322 135 L336 118" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="336,118 327,119 333,126" fill="#ffffff"/>
+  <text x="320" y="174" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Fiyat Motoru</text>
+  <text x="320" y="193" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#edf7ff">maliyet + sıkışıklık</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="39" y="65" width="131" height="81" rx="18" fill="#fff8e8"/>
+    <rect x="51" y="77" width="34" height="34" rx="10" fill="#f7c66b"/>
+    <path d="M62 101 L68 85 L74 101 Z" fill="#ffffff"/>
+    <path d="M101 91 H151" stroke="#d49b36" stroke-width="3" stroke-linecap="round"/>
+    <path d="M101 104 H137" stroke="#e1b75e" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="104" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5e5860">Şebeke Durumu</text>
+  <text x="104" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7b7374">talep ve kapasite</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="470" y="65" width="131" height="81" rx="18" fill="#f0edff"/>
+    <rect x="483" y="77" width="39" height="34" rx="10" fill="#a89be4"/>
+    <text x="502" y="100" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#ffffff">TL</text>
+    <path d="M537 87 H580" stroke="#8777cc" stroke-width="3" stroke-linecap="round"/>
+    <path d="M537 102 H566" stroke="#afa5df" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="535" y="127" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#5e5877">Fiyat Sinyali</text>
+  <text x="535" y="143" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#77718f">sınırlar içinde</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="470" y="191" width="131" height="81" rx="18" fill="#e9f8f1"/>
+    <rect x="483" y="203" width="38" height="34" rx="10" fill="#72c9a6"/>
+    <path d="M493 226 V214 H511 V226" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="502" cy="226" r="2" fill="#ffffff"/>
+    <path d="M537 214 H580" stroke="#51a985" stroke-width="3" stroke-linecap="round"/>
+    <path d="M537 228 H566" stroke="#8bd1b5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="535" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#466c60">Akıllı Cihaz</text>
+  <text x="535" y="269" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66877c">çalışma zamanı</text>
+
+  <g filter="url(#hafifGolge)">
+    <rect x="39" y="191" width="131" height="81" rx="18" fill="#eaf5ff"/>
+    <rect x="51" y="203" width="38" height="34" rx="10" fill="#75add8"/>
+    <path d="M60 226 H80" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M60 219 H74" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M101 214 H151" stroke="#5d9ccb" stroke-width="3" stroke-linecap="round"/>
+    <path d="M101 228 H137" stroke="#91bee0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="104" y="253" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" font-weight="600" fill="#46677e">Esnek Tüketim</text>
+  <text x="104" y="269" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#67859b">yük kaydırma</text>
+
+  <path d="M183 285 H457" stroke="#c3d4d9" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <text x="320" y="303" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#66807d">Denge: düşük zirve, uygun maliyet</text>
+</svg>
