@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbe9ff"/>
+      <stop offset="100%" stop-color="#d9f3e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7891a6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7891a6" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="72" cy="51" r="70" fill="#dcedff" opacity="0.38"/>
+  <circle cx="584" cy="274" r="92" fill="#dff3df" opacity="0.42"/>
+
+  <text x="32" y="31" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#49657a" font-weight="600">Depo Robot Trafiği</text>
+  <text x="608" y="31" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718394">Kayan ufuk</text>
+
+  <!-- connectors -->
+  <path d="M150 105 C174 105 180 137 204 145" fill="none" stroke="#89a8bd" stroke-width="2"/>
+  <polygon points="202,139 215,149 199,152" fill="#89a8bd"/>
+  <path d="M150 215 C174 215 180 184 204 176" fill="none" stroke="#89a8bd" stroke-width="2"/>
+  <polygon points="199,169 215,172 203,182" fill="#89a8bd"/>
+
+  <path d="M366 151 L396 151" fill="none" stroke="#79a593" stroke-width="2.5"/>
+  <polygon points="394,144 408,151 394,158" fill="#79a593"/>
+
+  <path d="M506 127 C526 116 536 99 547 88" fill="none" stroke="#9a9abe" stroke-width="2"/>
+  <polygon points="540,88 555,80 549,95" fill="#9a9abe"/>
+  <path d="M506 176 C527 188 536 207 547 219" fill="none" stroke="#9a9abe" stroke-width="2"/>
+  <polygon points="548,212 555,227 540,220" fill="#9a9abe"/>
+
+  <!-- left top orders -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="65" width="118" height="82" rx="16" fill="#fffdf9"/>
+    <rect x="43" y="78" width="25" height="25" rx="8" fill="#ffe3b8"/>
+    <path d="M50 86 h11 M50 92 h11 M50 98 h7" stroke="#b67d36" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="78" y="91" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f5869" font-weight="600">Siparişler</text>
+    <text x="43" y="122" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748393">Raf ziyaretleri</text>
+    <circle cx="123" cy="121" r="5" fill="#f2b867"/>
+  </g>
+
+  <!-- left bottom fleet -->
+  <g filter="url(#shadow)">
+    <rect x="32" y="174" width="118" height="82" rx="16" fill="#fffdf9"/>
+    <rect x="43" y="187" width="28" height="24" rx="8" fill="#d7e9ff"/>
+    <rect x="48" y="192" width="18" height="11" rx="3" fill="#76a9d5"/>
+    <circle cx="51" cy="207" r="3" fill="#547f9f"/>
+    <circle cx="63" cy="207" r="3" fill="#547f9f"/>
+    <text x="78" y="200" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3f5869" font-weight="600">Robot Filosu</text>
+    <text x="43" y="233" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#748393">Batarya · kapasite</text>
+    <circle cx="123" cy="232" r="5" fill="#79b998"/>
+  </g>
+
+  <!-- central planning -->
+  <g filter="url(#shadow)">
+    <rect x="215" y="87" width="151" height="130" rx="22" fill="url(#core)" stroke="#c2ddeb"/>
+    <circle cx="290" cy="125" r="25" fill="#ffffff" opacity="0.78"/>
+    <path d="M277 126 L287 136 L304 115" fill="none" stroke="#4a8c79" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="290" y="166" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#355b63" font-weight="700">Görev Atama</text>
+    <text x="290" y="186" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597789">Maliyet · öncelik</text>
+    <text x="290" y="203" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#597789">Kuyruk · teslim</text>
+  </g>
+
+  <!-- mapf -->
+  <g filter="url(#shadow)">
+    <rect x="408" y="96" width="98" height="111" rx="18" fill="#fffdf9"/>
+    <text x="457" y="122" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#465b70" font-weight="700">Yol Planı</text>
+    <text x="457" y="141" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718293">Çakışmasız</text>
+    <g stroke="#98b6c7" stroke-width="1.5" fill="none">
+      <path d="M428 158 H486 M428 174 H486 M428 190 H486"/>
+      <path d="M435 151 V197 M457 151 V197 M479 151 V197"/>
+    </g>
+    <path d="M435 190 L457 174 L479 158" fill="none" stroke="#e28b61" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="435" cy="190" r="4" fill="#e28b61"/>
+    <circle cx="479" cy="158" r="4" fill="#5cad7a"/>
+  </g>
+
+  <!-- outputs -->
+  <g filter="url(#smallShadow)">
+    <rect x="555" y="54" width="61" height="63" rx="15" fill="#f4efff"/>
+    <circle cx="585" cy="76" r="12" fill="#cbb9ee"/>
+    <path d="M579 77 h12 M585 71 v12" stroke="#6c5c9b" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="585" y="103" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5d527c">İstasyon</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="555" y="195" width="61" height="63" rx="15" fill="#fff3e5"/>
+    <path d="M571 226 h27" stroke="#d48b4d" stroke-width="2" stroke-linecap="round"/>
+    <rect x="574" y="214" width="21" height="11" rx="3" fill="#f1b271"/>
+    <circle cx="578" cy="230" r="3" fill="#91633c"/>
+    <circle cx="591" cy="230" r="3" fill="#91633c"/>
+    <text x="585" y="245" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#765d49">Raf Taşıma</text>
+  </g>
+
+  <!-- feedback loop -->
+  <path d="M585 263 C585 289 439 295 363 242" fill="none" stroke="#a7bdad" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <polygon points="367,234 352,238 362,248" fill="#a7bdad"/>
+  <text x="466" y="292" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#789080">Yeni bilgi ile güncelle</text>
+</svg>
