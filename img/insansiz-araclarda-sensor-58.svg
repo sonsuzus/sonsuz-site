@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#f2f9ef"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbe9ff"/>
+      <stop offset="100%" stop-color="#d8f3e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#71849a" flood-opacity="0.20"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#71849a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="319" cy="160" r="119" fill="#dceef5" opacity="0.34"/>
+  <circle cx="319" cy="160" r="86" fill="none" stroke="#a9cbd3" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.62"/>
+
+  <text x="28" y="32" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#4d6475" font-weight="600">SENSÖR FÜZYONU</text>
+  <text x="612" y="32" text-anchor="end" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#718594">Ortak zaman • ortak konum</text>
+
+  <!-- Kamera -->
+  <g filter="url(#smallShadow)">
+    <rect x="32" y="71" width="143" height="67" rx="16" fill="#fff1dc"/>
+    <rect x="32" y="71" width="143" height="67" rx="16" fill="none" stroke="#efd1a3"/>
+    <rect x="48" y="89" width="31" height="22" rx="5" fill="#f3b96d"/>
+    <path d="M52 106 L60 98 L66 104 L70 100 L75 106 Z" fill="#fff8ea"/>
+    <circle cx="70" cy="94" r="3" fill="#fff8ea"/>
+    <text x="91" y="97" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#79542c" font-weight="600">Kamera</text>
+    <text x="91" y="115" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#94724b">Sınıf ve şerit</text>
+  </g>
+
+  <!-- Lidar -->
+  <g filter="url(#smallShadow)">
+    <rect x="32" y="183" width="143" height="67" rx="16" fill="#e5f6ed"/>
+    <rect x="32" y="183" width="143" height="67" rx="16" fill="none" stroke="#b8dfc8"/>
+    <path d="M49 220 C49 203 78 203 78 220" fill="none" stroke="#55ad83" stroke-width="2"/>
+    <path d="M53 220 C53 209 74 209 74 220" fill="none" stroke="#55ad83" stroke-width="2"/>
+    <circle cx="63.5" cy="220" r="3" fill="#55ad83"/>
+    <text x="91" y="209" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#356f58" font-weight="600">Lidar</text>
+    <text x="91" y="227" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#5a8a70">3B geometri</text>
+  </g>
+
+  <!-- Radar -->
+  <g filter="url(#smallShadow)">
+    <rect x="214" y="245" width="143" height="58" rx="16" fill="#f1eafa"/>
+    <rect x="214" y="245" width="143" height="58" rx="16" fill="none" stroke="#d8c5ed"/>
+    <circle cx="239" cy="274" r="5" fill="#9775c9"/>
+    <path d="M246 266 C258 270 258 278 246 282 M251 261 C270 268 270 280 251 287" fill="none" stroke="#9775c9" stroke-width="2"/>
+    <text x="278" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#65478c" font-weight="600">Radar</text>
+    <text x="278" y="288" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8064a3">Mesafe ve hız</text>
+  </g>
+
+  <!-- incoming paths -->
+  <path d="M175 104 C204 105 210 117 233 130" fill="none" stroke="#c88e40" stroke-width="2.2"/>
+  <polygon points="239,134 229,133 234,125" fill="#c88e40"/>
+  <path d="M175 216 C201 211 211 196 233 188" fill="none" stroke="#55a67f" stroke-width="2.2"/>
+  <polygon points="240,185 231,193 230,183" fill="#55a67f"/>
+  <path d="M284 245 C284 230 292 222 299 213" fill="none" stroke="#9473c0" stroke-width="2.2"/>
+  <polygon points="303,207 304,217 294,214" fill="#9473c0"/>
+
+  <!-- synchronization -->
+  <g filter="url(#shadow)">
+    <rect x="234" y="108" width="170" height="104" rx="24" fill="url(#core)"/>
+    <rect x="234" y="108" width="170" height="104" rx="24" fill="none" stroke="#a9cbd6"/>
+    <circle cx="319" cy="139" r="20" fill="#ffffff" opacity="0.8"/>
+    <path d="M319 126 L319 139 L329 145" fill="none" stroke="#4d8ba1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="319" cy="139" r="3" fill="#4d8ba1"/>
+    <text x="319" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#315c70" font-weight="700">Hizalama</text>
+    <text x="319" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#557989">Zaman ve dönüşüm</text>
+  </g>
+
+  <!-- to Kalman -->
+  <path d="M404 160 L440 160" fill="none" stroke="#5f94a5" stroke-width="2.5"/>
+  <polygon points="447,160 438,155 438,165" fill="#5f94a5"/>
+
+  <!-- Kalman -->
+  <g filter="url(#shadow)">
+    <rect x="447" y="108" width="154" height="104" rx="24" fill="#e7efff"/>
+    <rect x="447" y="108" width="154" height="104" rx="24" fill="none" stroke="#bacce8"/>
+    <path d="M476 146 C484 133 499 132 507 143 C515 154 527 153 535 142" fill="none" stroke="#5f86c9" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="477" cy="146" r="4" fill="#668dcc"/>
+    <circle cx="506" cy="143" r="4" fill="#668dcc"/>
+    <circle cx="535" cy="142" r="4" fill="#668dcc"/>
+    <text x="524" y="177" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#3c609b" font-weight="700">Kalman filtresi</text>
+    <text x="524" y="195" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#607ba7">Tahmin ve düzeltme</text>
+  </g>
+
+  <!-- output -->
+  <path d="M524 212 L524 246" fill="none" stroke="#668dcc" stroke-width="2.3"/>
+  <polygon points="524,253 519,244 529,244" fill="#668dcc"/>
+
+  <!-- world model -->
+  <g filter="url(#shadow)">
+    <rect x="408" y="253" width="202" height="51" rx="17" fill="#fffdf2"/>
+    <rect x="408" y="253" width="202" height="51" rx="17" fill="none" stroke="#e3d7a8"/>
+    <rect x="425" y="268" width="24" height="20" rx="4" fill="#a8cfae"/>
+    <path d="M433 268 L433 288 M441 268 L441 288 M425 276 L449 276" stroke="#fffdf2" stroke-width="1"/>
+    <circle cx="459" cy="277" r="5" fill="#e99a70"/>
+    <path d="M459 282 L459 289 M454 286 L464 286" stroke="#e99a70" stroke-width="2" stroke-linecap="round"/>
+    <text x="480" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#75632d" font-weight="700">Dünya modeli</text>
+    <text x="480" y="292" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#8d7b45">Konum • hız • belirsizlik</text>
+  </g>
+</svg>
