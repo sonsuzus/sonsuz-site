@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#8ba3b2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#30465a">
+    <text x="28" y="32" font-weight="600">Ağ trafiğinde tespit ve önleme</text>
+    <text x="390" y="32" fill="#718596">Tespit:</text>
+    <rect x="430" y="15" width="62" height="26" rx="13" fill="#e7efff"/>
+    <text x="461" y="32" text-anchor="middle" fill="#526f9f">İmza</text>
+    <rect x="499" y="15" width="82" height="26" rx="13" fill="#e7f4eb"/>
+    <text x="540" y="32" text-anchor="middle" fill="#56866b">Anomali</text>
+
+    <path d="M160 115 H247" fill="none" stroke="#90a9ba" stroke-width="2.5"/>
+    <path d="M247 110 L255 115 L247 120 Z" fill="#90a9ba"/>
+    <path d="M395 115 H469" fill="none" stroke="#90a9ba" stroke-width="2.5"/>
+    <path d="M469 110 L477 115 L469 120 Z" fill="#90a9ba"/>
+
+    <path d="M190 115 V239 H247" fill="none" stroke="#8ca8c8" stroke-width="2" stroke-dasharray="5 5"/>
+    <circle cx="190" cy="115" r="4" fill="#8ca8c8"/>
+    <path d="M247 234 L255 239 L247 244 Z" fill="#8ca8c8"/>
+    <text x="104" y="191" fill="#758da2">Trafik kopyası</text>
+
+    <path d="M325 147 V183 H407" fill="none" stroke="#d39c9c" stroke-width="2"/>
+    <path d="M407 178 L415 183 L407 188 Z" fill="#d39c9c"/>
+    <path d="M395 239 H469" fill="none" stroke="#8ca8c8" stroke-width="2"/>
+    <path d="M469 234 L477 239 L469 244 Z" fill="#8ca8c8"/>
+
+    <g filter="url(#shadow)">
+      <rect x="28" y="85" width="132" height="60" rx="16" fill="#ffffff"/>
+      <rect x="255" y="81" width="140" height="66" rx="17" fill="#e4f2ee"/>
+      <rect x="477" y="85" width="135" height="60" rx="16" fill="#ffffff"/>
+      <rect x="255" y="208" width="140" height="62" rx="17" fill="#e8effb"/>
+      <rect x="477" y="211" width="135" height="56" rx="16" fill="#fff8e6"/>
+      <rect x="415" y="165" width="100" height="36" rx="14" fill="#fdebea"/>
+    </g>
+
+    <circle cx="50" cy="115" r="10" fill="#e6f0f6"/>
+    <path d="M45 115 H55 M51 111 L55 115 L51 119" fill="none" stroke="#6d91aa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="68" y="119">Ağ trafiği</text>
+
+    <text x="325" y="106" text-anchor="middle" font-weight="700" fill="#3a7666">IPS</text>
+    <text x="325" y="126" text-anchor="middle" fill="#54796e">İncele ve müdahale et</text>
+
+    <circle cx="499" cy="115" r="10" fill="#e8f4e9"/>
+    <path d="M499 108 L505 111 V115 C505 119 502 121 499 122 C496 121 493 119 493 115 V111 Z" fill="none" stroke="#73a17d" stroke-width="1.4" stroke-linejoin="round"/>
+    <text x="517" y="119">Korunan ağ</text>
+
+    <text x="465" y="187" text-anchor="middle" fill="#ad6265">Engelle</text>
+    <text x="325" y="233" text-anchor="middle" font-weight="700" fill="#5274a2">IDS</text>
+    <text x="325" y="252" text-anchor="middle" fill="#607d9e">İzle ve tespit et</text>
+
+    <circle cx="499" cy="239" r="10" fill="#f9eac0"/>
+    <path d="M499 233 V240 M499 244 V244" fill="none" stroke="#b58d36" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="517" y="243" fill="#806b3c">Alarm ve kayıt</text>
+
+    <text x="325" y="295" text-anchor="middle" fill="#8a9ba8">Pasif izleme</text>
+  </g>
+</svg>
