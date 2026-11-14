@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
+  <defs>
+    <linearGradient id="zemin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#f3f8ef"/>
+    </linearGradient>
+    <filter id="golge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#8095a6" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="320" fill="url(#zemin)"/>
+  <g font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#34495b">
+    <text x="20" y="30" font-weight="600">Gerçek zamanlı sismik veri akışı</text>
+    <circle cx="500" cy="26" r="4" fill="#70b9a2"/>
+    <text x="510" y="30" fill="#628078">Sürekli izleme</text>
+
+    <g fill="none" stroke="#9aafbe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M115 122 H133"/>
+      <path d="M225 122 H243"/>
+      <path d="M311 122 H329"/>
+      <path d="M462 122 H480 V95 H500"/>
+      <path d="M480 122 V160 H500"/>
+    </g>
+    <g fill="#9aafbe">
+      <path d="M133 122 l-6 -4 v8 z"/>
+      <path d="M243 122 l-6 -4 v8 z"/>
+      <path d="M329 122 l-6 -4 v8 z"/>
+      <path d="M500 95 l-6 -4 v8 z"/>
+      <path d="M500 160 l-6 -4 v8 z"/>
+    </g>
+
+    <g filter="url(#golge)">
+      <rect x="20" y="76" width="95" height="92" rx="14" fill="#ffffff"/>
+      <rect x="133" y="76" width="92" height="92" rx="14" fill="#ffffff"/>
+      <rect x="243" y="76" width="68" height="92" rx="14" fill="#ffffff"/>
+      <rect x="329" y="76" width="133" height="92" rx="14" fill="#ffffff"/>
+      <rect x="500" y="76" width="120" height="38" rx="12" fill="#ffffff"/>
+      <rect x="500" y="130" width="120" height="60" rx="12" fill="#ffffff"/>
+      <rect x="20" y="210" width="288" height="90" rx="15" fill="#ffffff"/>
+      <rect x="320" y="210" width="300" height="90" rx="15" fill="#ffffff"/>
+    </g>
+
+    <rect x="31" y="87" width="73" height="33" rx="9" fill="#e8f3f7"/>
+    <path d="M37 104 H45 l3 -7 4 14 4 -11 4 6 3 -2 H98" fill="none" stroke="#5d9dae" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="67.5" y="139" text-anchor="middle" font-weight="600">İstasyonlar</text>
+    <text x="67.5" y="155" text-anchor="middle" fill="#738896">Üç kanal</text>
+
+    <rect x="164" y="88" width="30" height="27" rx="8" fill="#e9eefb"/>
+    <path d="M170 97 H188 M170 103 H184 M170 109 H188" fill="none" stroke="#8598c9" stroke-width="2" stroke-linecap="round"/>
+    <text x="179" y="139" text-anchor="middle" font-weight="600">Toplayıcı</text>
+    <text x="179" y="155" text-anchor="middle" fill="#738896">SeedLink</text>
+
+    <rect x="258" y="88" width="38" height="27" rx="8" fill="#f1eafa"/>
+    <circle cx="267" cy="101.5" r="2.5" fill="#ad91c9"/>
+    <circle cx="277" cy="101.5" r="2.5" fill="#ad91c9"/>
+    <circle cx="287" cy="101.5" r="2.5" fill="#ad91c9"/>
+    <text x="277" y="139" text-anchor="middle" font-weight="600">Kafka</text>
+    <text x="277" y="155" text-anchor="middle" fill="#738896">Tampon</text>
+
+    <text x="395.5" y="98" text-anchor="middle" font-weight="600">Akış işlemcisi</text>
+    <rect x="340" y="108" width="111" height="22" rx="8" fill="#e7f4ef"/>
+    <text x="395.5" y="123" text-anchor="middle" fill="#4c8a76">Olay zamanı</text>
+    <text x="395.5" y="151" text-anchor="middle" fill="#738896">STA/LTA analizi</text>
+
+    <circle cx="516" cy="95" r="5" fill="#a0bdd4"/>
+    <text x="529" y="99" font-weight="600">Arşiv</text>
+    <circle cx="516" cy="148" r="5" fill="#e3b879"/>
+    <text x="529" y="152" font-weight="600">Eşleştirme</text>
+    <text x="529" y="174" fill="#a36e46">Olay uyarısı</text>
+
+    <text x="35" y="232" font-weight="600">Sinyalden adaya</text>
+    <path d="M36 268 H51 l4 -5 5 10 5 -8 4 4 6 -2 5 1 5 -4 5 7 5 -18 5 26 5 -34 5 38 5 -22 5 9 5 -6 5 4 H150" fill="none" stroke="#6eaaad" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="165" y="244" width="59" height="22" rx="8" fill="#eaf4f0"/>
+    <text x="194.5" y="259" text-anchor="middle" fill="#548b78">Kısa</text>
+    <rect x="231" y="244" width="59" height="22" rx="8" fill="#edf0fa"/>
+    <text x="260.5" y="259" text-anchor="middle" fill="#7789b0">Uzun</text>
+    <text x="165" y="285" fill="#738896">Enerji oranı ve eşik</text>
+
+    <text x="335" y="232" font-weight="600">Güvenilirlik ve izleme</text>
+    <rect x="335" y="244" width="120" height="22" rx="8" fill="#eaf3f8"/>
+    <text x="395" y="259" text-anchor="middle" fill="#688ca2">Paket kaybı</text>
+    <rect x="463" y="244" width="141" height="22" rx="8" fill="#f5f0e7"/>
+    <text x="533.5" y="259" text-anchor="middle" fill="#a18a66">Gecikme ve saat</text>
+    <circle cx="340" cy="282" r="3" fill="#8bbfa9"/>
+    <text x="349" y="286" fill="#738896">Kontrol noktası ve yeniden oynatma</text>
+  </g>
+</svg>
